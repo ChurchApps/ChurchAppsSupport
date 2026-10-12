@@ -49,6 +49,8 @@ Le schede disponibili sono:
 Se sei un leader del gruppo, hai capacità di modifica aggiuntive:
 
 - **Crea e modifica eventi** -- Aggiungi eventi al calendario del gruppo dalla scheda **Eventi**. Quando crei un evento, puoi prenotare stanze e risorse insieme ad esso — seleziona da stanze e risorse disponibili, imposta orari di setup e teardown facoltativi, e la richiesta di prenotazione viene automaticamente inviata per l'approvazione.
+- **Modifica eventi ricorrenti** -- Quando apri un evento ricorrente per modificarlo, B1 chiede prima quali date cambiare: **Solo questa data**, **Questa e tutte le date successive** o **Tutte le date**. Scegline una e fai clic su **Salva** per aprire l'evento. Se scegli **Solo questa data**, l'interruttore **Ricorrente** è nascosto e le tue modifiche (o un'eliminazione) si applicano solo a quella data.
+- **Imposta promemoria per gli eventi** -- Quando modifichi un evento esistente, attiva **Invia promemoria** per ricordare alle persone l'evento prima che inizi. Scegli quando vanno inviati, l'**Ora del giorno**, **Chi deve ricevere il promemoria?** e un **Messaggio** facoltativo, poi scegli **Push**, **Email** o, se la tua chiesa ha attivato gli SMS, **Testo** in **Invia tramite**. Gli SMS vanno solo alle persone che hanno attivato i promemoria via SMS nelle loro [Preferenze di notifica](../getting-started/notification-preferences.md).
 - **Gestisci risorse** -- Carica file (fino a 100 MB di spazio di archiviazione), aggiungi link o elimina risorse esistenti.
 - **Traccia presenze** -- Registra le presenze per le sessioni del gruppo dalla scheda **Presenze**.
 

@@ -14,13 +14,7 @@ Sa seksyong **Groups**, maaari mong ayusin ang mga miyembro ng simbahan ninyo sa
 
 Ang mga grupo ay inaayos ayon sa **kategorya**. Ang kategorya ay isang pangunahing label tulad ng "Small Groups," "Mga Ministeryo," o "Mga Komite." Maaaring maglaman ng maraming grupo ang bawat kategorya, kaya madaling pagsama-samahin ang magkakaugnay na mga grupo.
 
-Kapag binuksan mo ang pahina ng Groups, makikita mo sa itaas ang buod na nagpapakita ng:
-
-- **Total Groups** -- ang bilang ng mga grupo sa lahat ng kategorya
-- **Categories** -- ang bilang ng mga kategorya ng grupo na nalikha mo
-- **Total Members** -- ang kabuuang bilang ng mga miyembro sa lahat ng grupo
-
-Sa ibaba ng buod, nakalista ang iyong mga grupo ayon sa kategorya, at makikita ang bilang ng miyembro ng bawat grupo.
+Kapag binuksan mo ang pahina ng Groups, makikita mo ang kahon na **Search groups...**, isang hanay ng mga button ng kategorya, at isang talahanayan ng iyong mga grupo. Ipinapakita ng bawat grupo ang kategorya at mga label nito sa ilalim ng pangalan, kasama ang bilang ng miyembro nito. I-click ang **All** o ang pangalan ng isang kategorya para i-filter ang listahan (may mga karagdagang kategorya sa ilalim ng **More categories**), at i-click ang heading ng column na **Name** o **People** para i-sort.
 
 ## Ano ang Magagawa Mo
 
@@ -38,7 +32,7 @@ Narito ang mga magagawa mo sa seksyong Groups:
 
 ## Pagsisimula
 
-Para buksan ang Groups, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin), i-expand ang **People**, at i-click ang **Groups**. Makikita mo ang lahat ng iyong umiiral na grupo na nakaayos ayon sa kategorya.
+Para buksan ang Groups, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin), i-expand ang **People**, at i-click ang **Groups**. Makikita mo ang lahat ng iyong umiiral na grupo, na maaari mong i-filter ayon sa kategorya.
 
 :::tip
 Kung nagsisimula ka pa lang, magsimula sa paglikha ng ilang kategorya na tumutugma sa istruktura ng inyong simbahan (halimbawa, "Mga Ministeryo," "Small Groups," "Mga Komite"). Pagkatapos, magdagdag ng mga indibidwal na grupo sa bawat kategorya. Tingnan ang [Paglikha ng mga Grupo](./creating-groups.md) para sa hakbang-hakbang na gabay.

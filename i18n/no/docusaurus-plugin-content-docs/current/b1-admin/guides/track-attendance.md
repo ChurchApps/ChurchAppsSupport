@@ -48,7 +48,7 @@ Kryss av for hvem som møtte opp på hver samling og i hver gruppe.
 
 Følg veiledningen [Registrere oppmøte](../attendance/recording-attendance.md) for å:
 
-1. Åpne fanen **Økter** i en gruppe og legg til en økt for datoen og samlingstiden. Merk av for **Legg også til for de andre gruppene** for å opprette økter for alle klasser på den samlingstiden samtidig.
+1. Åpne en gruppe, klikk på **Alle økter** i seksjonen **Økter**, og legg til en økt for datoen og samlingstiden. Merk av for **Legg også til for de andre gruppene** for å opprette økter for alle klasser på den samlingstiden samtidig.
 2. Kryss av for hvem som møtte opp i hver gruppe
 
 :::tip

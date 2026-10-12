@@ -1,75 +1,78 @@
 ---
-title: "Managing Your Profile"
+title: "अपनी प्रोफ़ाइल प्रबंधित करना"
 ---
 
-# Managing Your Profile
+# अपनी प्रोफ़ाइल प्रबंधित करना {#managing-your-profile}
 
 <div class="article-intro">
 
-The Profile page lets you edit your personal account settings. Your profile is shared across all ChurchApps products, so any changes you make here will be reflected everywhere you use ChurchApps.
+Profile पेज आपको अपनी व्यक्तिगत खाता सेटिंग्स संपादित करने देता है। आपकी प्रोफ़ाइल सभी ChurchApps उत्पादों में साझा होती है, इसलिए यहाँ किए गए कोई भी बदलाव वहाँ दिखेंगे जहाँ भी आप ChurchApps का उपयोग करते हैं।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- You must be logged in to your ChurchApps account
-- Have your new email address or password ready if you plan to update them
+- आपने अपने ChurchApps खाते में लॉग इन किया होना चाहिए
+- यदि आप अपना email या password बदलने की योजना बना रहे हैं, तो नया email पता या password तैयार रखें
 
 </div>
 
-## Profile Information
+## प्रोफ़ाइल जानकारी {#profile-information}
 
-The top section of the Profile page contains your basic account details:
+Profile पेज बाईं ओर आपका नाम और email पता दिखाता है, और उनके नीचे एक **Edit** बटन होता है। **Edit Account** फ़ॉर्म खोलने के लिए **Edit** पर क्लिक करें, जिसमें आपकी बुनियादी खाता जानकारी होती है:
 
-1. **Email** -- Your email address used for logging in and receiving notifications.
-2. **First Name** and **Last Name** -- Your display name across ChurchApps.
-3. **Password** -- Update your account password.
+1. **Email** -- आपका email पता, जो लॉग इन करने और सूचनाएँ पाने के लिए उपयोग होता है।
+2. **First Name** और **Last Name** -- ChurchApps में आपका प्रदर्शित नाम।
+3. **Password** -- अपना खाता password अपडेट करें।
 
-To update your information, edit the fields and click the **Save Changes** button.
+अपनी जानकारी अपडेट करने के लिए, fields संपादित करें और **Save Changes** बटन पर क्लिक करें। बिना सहेजे प्रोफ़ाइल पर लौटने के लिए **Cancel** (या अपने नाम वाले **Back to** लिंक) पर क्लिक करें।
 
-## Changing Your Password
+## अपना Password बदलना {#changing-your-password}
 
-1. Scroll to the password fields on the Profile page.
-2. Enter your **Current Password**.
-3. Enter your new password in the **Password** field.
-4. Re-enter it in the **Confirm Password** field.
-5. Click **Save Changes**.
+1. Profile पेज पर, **Edit** पर क्लिक करें।
+2. अपना **Current password** दर्ज करें।
+3. **New password** फ़ील्ड में नया password दर्ज करें।
+4. **Verify password** फ़ील्ड में उसे फिर से दर्ज करें।
+5. **Save Changes** पर क्लिक करें।
 
 :::info
-Your password must be at least 8 characters long. Make sure both the password and confirmation fields match exactly. You must confirm your current password to change it -- if you don't know it, use the **Forgot Password** link on the login page instead.
+आपका password कम से कम 8 अक्षरों का होना चाहिए। सुनिश्चित करें कि password और पुष्टि के fields बिल्कुल मेल खाते हों। password बदलने के लिए आपको अपना मौजूदा password पुष्ट करना होगा -- यदि वह आपको याद नहीं, तो इसके बजाय लॉगिन पेज पर **Forgot Password** लिंक का उपयोग करें।
 :::
 
-## Linked Accounts
+## जुड़े हुए खाते {#linked-accounts}
 
-The **Linked Accounts** section shows any external services connected to your ChurchApps account. You can view which accounts are linked and manage those connections from this section.
+**Linked Accounts** सेक्शन उन सभी बाहरी सेवाओं को दिखाता है जो आपके ChurchApps खाते से जुड़ी हैं। आप देख सकते हैं कि कौन-से खाते जुड़े हैं, और इस सेक्शन से उन कनेक्शनों को प्रबंधित कर सकते हैं।
 
-## Theme Preferences
+## थीम प्राथमिकताएँ {#theme-preferences}
 
-ChurchApps supports both light and dark display modes:
+B1 Admin light और dark, दोनों display modes को सपोर्ट करता है:
 
-1. Find the **Theme** toggle on your Profile page.
-2. Switch between **Light** and **Dark** mode.
-3. The interface will update immediately to reflect your choice.
+1. B1 Admin के ऊपर दाईं ओर अपनी profile picture पर क्लिक करके अपना user menu खोलें।
+2. **Theme Preferences** के तहत **Light Mode** या **Dark Mode** चुनें।
+3. इंटरफ़ेस आपकी पसंद को तुरंत दर्शाने के लिए अपडेट हो जाएगा।
 
-Your theme preference is saved to your account and will apply across all your sessions.
+आपकी पसंद उस डिवाइस और ब्राउज़र में याद रखी जाती है।
 
-## Account Deletion
+## खाता हटाना {#account-deletion}
 
-At the bottom of the Profile page, you will find the option to permanently delete your account. This action removes your account and associated data and cannot be undone.
+Profile पेज के **Account Deletion** सेक्शन में आपको अपना खाता हटाने का विकल्प मिलेगा।
+
+- यदि आपके चर्च ने **Directory Approval Group** कॉन्फ़िगर नहीं किया है, तो **Delete my account** पर क्लिक करने से आपका खाता और उससे जुड़ा डेटा तुरंत हट जाता है, और इसे पलटा नहीं जा सकता।
+- यदि आपके चर्च ने **Directory Approval Group** कॉन्फ़िगर किया है, तो आपका अनुरोध समीक्षा के लिए उस समूह को भेजा जाता है। अनुरोध लंबित रहने तक बटन निष्क्रिय रहता है, और चर्च द्वारा स्वीकृत या अस्वीकृत किए जाने पर आपको सूचना मिलेगी। आगे क्या होता है, यह जानने के लिए [खाता हटाने के अनुरोधों की समीक्षा](./account-deletion.md) देखें।
 
 :::warning
-Account deletion is permanent and cannot be reversed. Make sure you truly want to remove your account before proceeding.
+खाता हटाना -- चाहे तुरंत हो या चर्च द्वारा स्वीकृत -- स्थायी है और इसे पलटा नहीं जा सकता।
 :::
 
 :::info
-If you are a **Domain Admin**, make sure to transfer administrative responsibilities to another user before deleting your account. See [Roles & Permissions](../settings/roles-permissions.md) for details on managing admin roles.
+यदि आप **Domain Admin** हैं, तो अपना खाता हटाने से पहले प्रशासनिक ज़िम्मेदारियाँ किसी और उपयोगकर्ता को सौंपना सुनिश्चित करें। Admin भूमिकाओं के प्रबंधन के विवरण के लिए [Roles & Permissions](../settings/roles-permissions.md) देखें।
 :::
 
 :::info
-Profile editing is disabled in demo mode. If you are using a demo account, you will not be able to make changes to your profile settings.
+Demo mode में प्रोफ़ाइल संपादन अक्षम है। यदि आप demo खाते का उपयोग कर रहे हैं, तो आप अपनी प्रोफ़ाइल सेटिंग्स में बदलाव नहीं कर पाएँगे।
 :::
 
-## Next Steps
+## अगले कदम {#next-steps}
 
-- [Managing Devices](./devices.md) -- View and manage your connected ChurchAppsPlayer devices
+- [Devices प्रबंधित करना](./devices.md) -- अपने जुड़े हुए ChurchAppsPlayer devices देखें और प्रबंधित करें

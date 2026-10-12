@@ -15,10 +15,11 @@ La sezione Impostazioni è dove configuri l'account della tua chiesa, il marchio
 L'area Impostazioni è organizzata nelle seguenti sottosezioni:
 
 1. **Impostazioni** -- Configura le informazioni di base della tua chiesa, il marchio, il sottodominio, la regione (formato della data e del telefono), il provider di messaggistica di testo e l'archiviazione dei file. Vedi [Church Settings](./church-settings.md) per i dettagli. Per utilizzare il tuo nome di dominio (ad esempio yourchurch.org), vedi [Custom Domain](./custom-domain.md).
-2. **Campus** -- Aggiungi e gestisci più sedi fisiche per la tua chiesa. Una volta creati, i campus appaiono nei profili delle persone, nella configurazione della partecipazione e nella dashboard dei dati demografici. Raggiunto come una scheda sulla pagina Impostazioni principale piuttosto che come elemento di navigazione separato. Vedi [Campuses](./campuses.md) per i dettagli.
-3. **Campi personalizzati** -- Definisci i tuoi campi da tracciare sulle persone (una data, numero, risposta sì/no, o lista di scelta), quindi compilali nei profili e cercali. Raggiunto anche come una scheda sulla pagina Impostazioni principale. Vedi [Custom Fields](./custom-fields.md) per i dettagli.
+2. **Campus** -- Aggiungi e gestisci più sedi fisiche per la tua chiesa. Una volta creati, i campus appaiono nei profili delle persone, nella configurazione della partecipazione e nella dashboard dei dati demografici. Raggiunto come una sezione sulla pagina Impostazioni principale piuttosto che come elemento di navigazione separato. Vedi [Campuses](./campuses.md) per i dettagli.
+3. **Campi personalizzati** -- Definisci i tuoi campi da tracciare sulle persone (una data, numero, risposta sì/no, o lista di scelta), quindi compilali nei profili e cercali. Raggiunto anche come una sezione sulla pagina Impostazioni principale. Vedi [Custom Fields](./custom-fields.md) per i dettagli.
 4. **Modelli di email** -- Salva il contenuto dell'email riutilizzabile per inviarlo manualmente o da un flusso di lavoro. Vedi [Email Templates](./email-templates.md) per i dettagli.
-5. **Server Admin** -- Accedi a strumenti di amministrazione avanzati per gestire le impostazioni a livello di server della tua chiesa.
+5. **Audit Log** e **Batches** -- Rivedi le modifiche apportate al tuo account ([Audit Log](../reports/audit-log.md)), e rivedi o annulla le importazioni e le azioni in blocco (**Batches**).
+6. **Server Admin** -- Accedi a strumenti di amministrazione avanzati per gestire le impostazioni a livello di server della tua chiesa.
 
 :::info
 La configurazione di **App mobile** e **Moduli** hanno ora i propri elementi di navigazione di livello superiore, **Mobile** e **Forms** (trovati in **People**), piuttosto che stare dentro Impostazioni. Vedi [Mobile App Settings](./mobile-app.md) e [Creating Forms](/docs/b1-admin/forms/creating-forms) per i dettagli.
@@ -26,14 +27,13 @@ La configurazione di **App mobile** e **Moduli** hanno ora i propri elementi di 
 
 ## La pagina Impostazioni principale
 
-Quando apri per la prima volta la pagina Impostazioni, vedrai il **nome della chiesa** e il **sottodominio** visualizzati in alto. L'intestazione fornisce pulsanti di accesso rapido per le attività comuni:
+Quando apri per la prima volta la pagina Impostazioni, il pannello a sinistra mostra il **nome della chiesa**, il **sottodominio** e l'indirizzo, insieme a un link **Import/Export** che apre lo strumento di importazione/esportazione per trasferire i dati tra i sistemi.
 
-- **Modelli di email** -- Vai direttamente alla gestione dei modelli di email.
-- **Audit Log** -- Visualizza un registro delle modifiche apportate all'account della tua chiesa.
-- **Batches** -- Vai direttamente ai batch di donazioni.
-- **Import/Export** -- Trasferisci i dati tra i sistemi utilizzando lo strumento import/export.
+Sotto, un elenco **Configuration** collega a ciascuna sezione delle impostazioni: **Church Information**, **General**, **Region**, **Giving**, **Texting**, **File Storage**, **Domains**, **Grade Promotion**, **Check-In**, **Campuses**, **Custom Fields** e **Developer**. Le sezioni che devono ancora essere configurate (come Giving, Texting o Domains) sono contrassegnate da un piccolo punto. Tutte le sezioni sono su un'unica pagina -- fai clic su un nome nell'elenco per scorrere fino a esso, oppure scorri semplicemente verso il basso. Ogni sezione mostra le sue impostazioni attuali; fai clic su **Edit** in una sezione per modificarle.
 
-Sotto l'intestazione, apri la sezione **Church Information** per modificare il nome della tua chiesa, l'indirizzo, le informazioni di contatto e il marchio, vedi [Church Settings](./church-settings.md). Per gestire i ruoli degli utenti, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) e scegli **Settings > Roles**, vedi [Roles & Permissions](./roles-permissions.md).
+**Modelli di email**, **Audit Log** e **Batches** sono pagine separate -- trovale nel [menu Jump](../introduction.md#getting-around-with-the-jump-menu) sotto **Settings**.
+
+Inizia dalla sezione **Church Information** per modificare il nome della tua chiesa, l'indirizzo e le informazioni di contatto, vedi [Church Settings](./church-settings.md). Per gestire i ruoli degli utenti, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) e scegli **Settings > Roles**, vedi [Roles & Permissions](./roles-permissions.md).
 
 :::tip
 Inizia configurando il nome della tua chiesa e il marchio in **Church Information**, quindi configura [Roles](./roles-permissions.md) per invitare i tuoi membri del team con il livello di accesso giusto.

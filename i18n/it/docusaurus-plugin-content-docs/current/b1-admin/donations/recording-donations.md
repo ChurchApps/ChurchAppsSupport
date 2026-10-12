@@ -22,28 +22,38 @@ La registrazione delle donazioni in B1 Admin viene effettuata attraverso il sist
 ## Creazione di un lotto e aggiunta di donazioni
 
 1. In **B1 Admin**, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Donazioni** e fai clic su **Lotti**.
-2. Fai clic su **Aggiungi lotto**.
+2. Fai clic su **Aggiungi lotto** in alto nella pagina.
 3. Inserisci un nome per il lotto (ad esempio, "Offerta domenicale - 5 gennaio") e seleziona la data. Fai clic su **Salva**.
 4. Il tuo nuovo lotto appare nell'elenco mostrando zero donazioni e $0,00.
 5. Fai clic sul **nome del lotto** per aprirlo.
 
 ## Inserimento di singole donazioni
 
-1. Nella pagina dei dettagli del lotto, digita il nome del donatore nel **campo di ricerca** per trovarlo.
-2. Dopo aver selezionato una persona, appare il modulo di inserimento della donazione con campi per **Data**, **Metodo di pagamento**, **Fondo**, **Importo** e **Numero di assegno**.
-3. Compila i dettagli e fai clic su **Aggiungi donazione**.
-4. La donazione viene aggiunta alla tabella sottostante e il modulo si ripristina in modo da poter inserire quella successiva.
+1. Nella pagina dei dettagli del lotto, il pannello di inserimento delle donazioni appare accanto all'elenco delle donazioni. Sotto **Seleziona persona o anonimo**, digita il nome del donatore nel **campo di ricerca** per trovarlo, oppure fai clic su **Anonimo**. (Fare clic su **Aggiungi donazione** in alto nella pagina porta a questo pannello.)
+2. Dopo aver selezionato una persona, il modulo di inserimento mostra i campi per **Data**, **Metodo** (Assegno, Contanti, Carta o In natura), **Fondo**, **Note**, **Importo** e **Numero assegno** (o **Ultime 4 cifre** per le donazioni con carta). Fai clic su **Cambia** accanto al nome del donatore per sceglierne un altro.
+3. Compila i dettagli e fai clic su **Aggiungi donazione** (oppure premi Invio).
+4. La donazione viene aggiunta all'elenco delle donazioni e il modulo si ripristina in modo da poter inserire quella successiva.
 
 :::tip
 Puoi inserire rapidamente più donazioni di seguito senza lasciare la pagina del lotto. Il modulo si ripristina dopo ogni voce in modo da poter scorrere efficientemente uno stack di assegni o buste.
 :::
 
+## Registrare un'offerta dalla scheda di una persona {#logging-a-gift-from-a-persons-record}
+
+Per registrare una singola offerta senza aprire un lotto, apri la scheda del donatore in **Persone** e fai clic su **Registra un'offerta** (nel riepilogo delle donazioni, o nella vista delle donazioni della persona).
+
+1. Imposta la **Data** e l'**Importo**.
+2. Scegli il **Fondo** e il **Metodo** (Assegno, Contanti, Carta o In natura), e inserisci il **Numero assegno** o le **Ultime 4 cifre** se necessario.
+3. Facoltativamente aggiungi le **Note**, quindi fai clic su **Salva**.
+
+L'offerta viene salvata nel lotto di quella data. Se per quella data non esiste ancora un lotto, ne viene creato uno automaticamente, con il nome della data.
+
 ## Suddivisione di una donazione tra più fondi
 
 A volte un singolo donatore dona più di un fondo in una transazione. Per gestire ciò:
 
-1. Fai clic sul pulsante **Modifica** sulla riga di donazione.
-2. Nel modulo di modifica, aggiungi importi a fondi diversi. Il totale verrà calcolato automaticamente dagli importi dei fondi individuali.
+1. Sotto il pannello di inserimento, fai clic sul link **editor completo della donazione** (oppure fai clic su **Modifica** sulla riga di una donazione esistente).
+2. Nell'editor completo, aggiungi importi a fondi diversi. Il totale verrà calcolato automaticamente dagli importi dei fondi individuali.
 3. Fai clic su **Salva** per aggiornare la donazione.
 
 :::info
@@ -55,7 +65,7 @@ Suddividere le donazioni tra i fondi è comune quando un donatore scrive un asse
 Per modificare una donazione, fai clic sul pulsante **Modifica** sulla sua riga nel lotto. Puoi modificare la data, l'importo, il fondo, il metodo di pagamento o qualsiasi altro dettaglio. Fai clic su **Salva** al termine.
 
 :::tip
-L'intestazione della pagina del lotto si aggiorna automaticamente per mostrare il numero totale di donazioni e l'importo in dollari combinato mentre aggiungi o modifichi le voci. Utilizzalo per riconciliare contro il tuo foglio di deposito.
+La riga sotto il nome del lotto in alto nella pagina si aggiorna automaticamente per mostrare la data del lotto, il numero di offerte e l'importo in dollari combinato mentre aggiungi o modifichi le voci. Utilizzalo per riconciliare contro il tuo foglio di deposito.
 :::
 
 ## Rimborso di una donazione

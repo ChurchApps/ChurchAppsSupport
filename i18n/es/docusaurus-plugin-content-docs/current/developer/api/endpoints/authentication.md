@@ -94,6 +94,8 @@ POST /membership/users/register
 
 Crea un usuario con una contraseña temporal y envía un correo de bienvenida con un enlace de autenticación. El primer usuario registrado en una nueva instancia recibe automáticamente acceso de administrador del servidor.
 
+Se aceptan dos campos opcionales contra bots: `website` (un campo oculto tipo trampa que los usuarios reales dejan vacío) y `fillMs` (cuánto tiempo estuvo abierto el formulario, en milisegundos). Si `website` tiene contenido o `fillMs` es menor de 2000, no se crea ninguna cuenta, pero el extremo sigue devolviendo una respuesta `200` normal para que los bots no puedan saber que fueron rechazados. Los clientes que omiten ambos campos se registran como de costumbre.
+
 ### Registrar una Nueva Iglesia
 
 ```

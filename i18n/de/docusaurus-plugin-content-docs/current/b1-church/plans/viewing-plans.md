@@ -35,7 +35,7 @@ Ihre Pläne sind in zwei Registerkarten aufgeteilt: **Anstehend** und **Vergange
 Unter der Liste befindet sich ein Bereich **Sperrtermine**. Verwenden Sie ihn, um Daten zu verwalten, an denen Sie nicht verfügbar sind. Sie können Bereiche mit Blockierungsterminen hinzufügen, bearbeiten und entfernen, damit Ihre Teamleiter wissen, wann sie um Sie herum planen können.
 
 :::info
-Ihre Kirche kann **Erinnerungen** vor den Diensten, für die Sie eingeplant sind, per E-Mail und als App-Benachrichtigung senden. Wenn Sie noch nicht reagiert haben, können Sie direkt aus der Erinnerungs-E-Mail **Akzeptieren** oder **Ablehnen** – keine Anmeldung erforderlich.
+Ihre Kirche kann **Erinnerungen** vor den Diensten, für die Sie eingeplant sind, per E-Mail und als App-Benachrichtigung senden. Wenn Ihre Kirche Textnachrichten versendet, können Sie diese auch per Textnachricht erhalten, indem Sie **Textnachrichten** in Ihren [Benachrichtigungseinstellungen](../getting-started/notification-preferences.md) einschalten. Wenn Sie noch nicht reagiert haben, können Sie direkt aus der Erinnerungs-E-Mail **Akzeptieren** oder **Ablehnen** – keine Anmeldung erforderlich.
 :::
 
 ## Anzeigen von Plandetails

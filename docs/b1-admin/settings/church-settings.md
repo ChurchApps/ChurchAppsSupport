@@ -21,7 +21,7 @@ The Church Settings page is where you configure your church's basic information,
 ## Editing Your Church Information
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Settings**, and click **Settings**.
-2. Open the **Church Information** section and click its edit (pencil) icon.
+2. In the **Church Information** section (at the top of the page), click **Edit**.
 3. Update any of the following fields:
    - **Church Name** -- The name displayed across all ChurchApps products.
    - **Address** -- Your church's physical address.
@@ -32,7 +32,7 @@ The Church Settings page is where you configure your church's basic information,
 
 Your church gets a free subdomain at **yourchurch.1.church**. This is the web address where members and visitors can access your church's online presence.
 
-1. On the Settings page, locate the **Subdomain** field.
+1. On the Settings page, click **Edit** in the **Church Information** section and locate the **Subdomain** field.
 2. Enter your preferred subdomain (for example, "gracechurch" for gracechurch.1.church).
 3. Save your changes.
 
@@ -61,20 +61,20 @@ Choose which day your calendars start on. The **First Day of Week** dropdown on 
 
 The **Region** setting controls how dates and times are written throughout B1. By default dates use the United States format (for example, "Sep 28, 2026" and "9/28/2026"). Churches outside the US can switch to their own format -- for example, choosing English (United Kingdom) shows "28 Sept 2026" and "28/09/2026" instead.
 
-1. On the Settings page, find the **Region** card and click to edit it.
+1. On the Settings page, click **Region** in the left-hand list, then click **Edit** in the **Region** section.
 2. Choose your region from the **Region** dropdown. Each option shows a sample date so you can see exactly how dates will look.
 3. Click **Save**.
 
-The Region card then shows your selected region, a sample of the **Date format**, and your **Phone numbers** format.
+The Region section then shows your selected region, a sample of the **Date format**, and your **Phone numbers** format.
 
 ### Phone Number Format
 
-The same Region card has a **Phone numbers** setting that controls how phone numbers are entered on a person's record:
+The same Region section has a **Phone numbers** setting that controls how phone numbers are entered on a person's record:
 
 - **International (with country code)** -- the default. Phone fields show a country flag picker and save numbers with the country code (for example, +1 918 555 1234).
 - **Local (as typed)** -- phone fields become plain text boxes and save numbers exactly as you type them, with no country code added (for example, 0701 234 5678). Choose this if your church writes numbers in a local format and doesn't want B1 to add a country code.
 
-When **Local** is selected, the Region card also shows "Local phone numbers" next to your region.
+When **Local** is selected, the Region section also shows "Local phone numbers" next to your region.
 
 :::tip
 Texting works best when numbers include the country code. If you send texts from B1, keep the **International** format, or make sure numbers you type in Local mode include the country code.
@@ -86,7 +86,7 @@ Your region applies to dates and times across B1 Admin and on your B1.church web
 
 Connect a texting provider to send SMS messages to a person or a whole group from B1 Admin. Texts are sent through your own account with the provider, so their pricing and limits apply.
 
-1. On the Settings page, find the **Texting** card and click to edit it.
+1. On the Settings page, click **Texting** in the left-hand list, then click **Edit** in the **Texting** section.
 2. Choose a **Provider**:
    - **Clearstream** -- enter an **API Key**. Create one in your Clearstream Account Settings under API Keys.
    - **Text In Church** -- enter an **API Key**. Ask Text In Church Support for developer API access first, then create a key in your Account Settings > Developer API section.
@@ -95,7 +95,17 @@ Connect a texting provider to send SMS messages to a person or a whole group fro
 
 To stop texting, set **Provider** to **None** and save. This removes the saved provider.
 
-Once a provider is connected, staff with permission to send texts see a text icon in the header of a group (**Text this group**) and of a person with a mobile phone (**Send text message**). Type your message and click **Send**. The dialog counts characters and SMS segments. For a group, it shows how many members will get the text before you send:
+### Opting Out People Who Reply STOP
+
+Once a provider is saved, reopen the Texting section with **Edit**. Below the provider settings, a read-only **Inbound (STOP) webhook URL** field shows a web address unique to your church. Click the field to select the address, copy it, and paste it into your texting provider's inbound message (reply) webhook setting. This works with any of the providers above that can forward incoming replies to a webhook.
+
+After that, when someone replies **STOP** (or STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT, or REVOKE) to one of your texts, B1 finds everyone whose mobile number matches, marks them as opted out, and turns off their text reminders. They are then skipped by group texts. Other replies are ignored.
+
+:::info
+This uses the same opt-out setting as **Hide me from the member directory**, so people who reply STOP also show as **Hidden from directory** on their profile. The field only appears while the saved provider is selected -- if you switch the dropdown to a different provider, save first to see the URL again.
+:::
+
+Once a provider is connected, staff with permission to send texts see a **Text** button on the page of a group (**Text this group**) and of a person with a mobile phone (**Send text message**). Type your message and click **Send**. The dialog counts characters and SMS segments. For a group, it shows how many members will get the text before you send:
 
 - Members with no mobile phone on file are skipped.
 - Members who chose **Hide me from the member directory** are counted as opted out and skipped.
@@ -115,7 +125,7 @@ Texts can also go out automatically from a [workflow](../serving/workflows.md#se
 
 By default, files you upload to your website (through [Files](../website/files.md)) and other content areas use B1's free hosted storage, up to 100MB. If you need more room, you can connect your own cloud storage instead -- new uploads then go straight to your account with no platform limit.
 
-1. On the Settings page, find the **File Storage** card and click to edit it.
+1. On the Settings page, click **File Storage** in the left-hand list, then click **Edit** in the **File Storage** section.
 2. Choose a provider: **Google Drive**, **Dropbox**, **OneDrive**, or an **S3-compatible bucket** (AWS S3, Cloudflare R2, Backblaze B2, etc.).
 3. For Google Drive, Dropbox, or OneDrive, click **Connect** and sign in to authorize access. For an S3-compatible bucket, enter your access key, secret, bucket name, and public URL base.
 4. Click **Save**.
@@ -128,7 +138,7 @@ This only affects new uploads to your website Files and similar content areas. G
 
 If you track **Grade** on children and students, B1 can automatically bump everyone up a grade on a date you choose (for example, August 1st) rather than requiring you to edit each profile by hand.
 
-1. On the Settings page, find the **Grade Promotion** option.
+1. On the Settings page, click **Grade Promotion** in the left-hand list, then click **Edit** in the **Grade Promotion** section.
 2. Turn the switch on (it shows **Enabled**) and choose the **Month** and **Day** to promote grades each year. On that date, everyone with a grade moves up one grade, and 12th graders become **Graduated**.
 3. Save your changes.
 
@@ -136,7 +146,7 @@ To stop automatic promotion, turn the switch off so it shows **Disabled** and sa
 
 ## Import and Export
 
-The **Import/Export** button in the Settings header opens a dedicated tool in a new browser window. Use this to:
+The **Import/Export** link under your church's name on the Settings page opens a dedicated tool in a new browser window. Use this to:
 
 - Import member data from another church management system.
 - Export your ChurchApps data for backup or migration purposes.

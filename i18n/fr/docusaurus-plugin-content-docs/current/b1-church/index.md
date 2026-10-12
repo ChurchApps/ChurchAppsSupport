@@ -18,7 +18,7 @@ Lorsque les membres visitent votre site B1.church, ils voient le site Web public
 - **Groupes** -- Consultez les groupes auxquels vous appartenez, voyez les membres du groupe, rejoignez les conversations et suivez la présence.
 - **Dons** -- Faites des dons à votre église en ligne et consultez votre historique de dons.
 - **Événements** -- Parcourez les événements à venir et inscrivez-vous, ainsi que votre famille.
-- **Service** -- Consultez les plans de service, vos postes de bénévole et inscrivez-vous aux opportunités de bénévolat ouvertes.
+- **Service** -- Consultez les plans de service, vos postes de bénévole et inscrivez-vous aux opportunités de bénévolat ouvertes. Choisissez de recevoir des rappels de service et d'événements par texto dans vos [préférences de notification](./getting-started/notification-preferences.md) (répondez STOP à tout moment pour arrêter).
 - **Plans** -- Consultez les plans de service à venir, consultez vos postes assignés et accédez aux détails des chansons et aux ordres de service.
 - **Check-In** -- Enregistrez-vous vous-même et vos membres du ménage pour les services et les événements. Les invités peuvent s'inscrire via code QR.
 - **Annuaire communautaire** -- Parcourez l'annuaire des membres de votre église, consultez les profils et envoyez des messages directs. Contrôlez qui peut voir vos propres coordonnées à partir de l'[onglet Confidentialité de votre profil](./getting-started/editing-your-profile.md#privacy-tab).

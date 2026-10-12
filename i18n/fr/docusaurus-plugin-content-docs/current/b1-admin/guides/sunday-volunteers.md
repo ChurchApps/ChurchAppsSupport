@@ -29,7 +29,7 @@ Suivez les guides [Créer des groupes](../groups/creating-groups.md) et [Membres
 3. Ajouter des bénévoles à chaque groupe en recherchant leur nom et en cliquant sur Ajouter
 
 :::tip
-Désignez les responsables d'équipe en utilisant l'icône de clé verte sur l'onglet Membres. Les responsables peuvent gérer le calendrier de leur propre groupe et coordonner leur équipe.
+Désignez les responsables d'équipe avec l'icône en forme d'étoile (**Nommer responsable**) dans la liste des membres du groupe (cliquez sur **All members** sur la page du groupe). Les responsables peuvent gérer le calendrier de leur propre groupe et coordonner leur équipe.
 :::
 
 ## Étape 2 : créer votre bibliothèque de chansons
@@ -52,10 +52,11 @@ Les plans sont les assignations hebdomadaires qui indiquent aux bénévoles où 
 
 Suivez le guide [Plans](../serving/plans.md) pour :
 
-1. Accéder à Service, sélectionnez votre onglet ministériel
-2. Cliquez sur « Ajouter un plan » et choisissez la date du service
-3. Dans l'onglet Assignations, développez chaque équipe et assignez des bénévoles à leurs postes
+1. Accédez à Service, sélectionnez votre onglet ministériel, et ouvrez votre type de plan
+2. Cliquez sur **New Plan** et choisissez la date du service. Pour configurer plusieurs dimanches à la fois, copiez depuis le plan précédent et indiquez le nombre de semaines dans **Repeat weekly for this many weeks**
+3. Dans la section **Serving Team Assignments** du plan, ajoutez des postes et assignez-y des bénévoles
 4. Les bénévoles verront leur statut d'assignation (Demandé, Confirmé, En attente)
+5. Activez les [rappels aux bénévoles](../serving/plans.md#volunteer-reminders) pour le type de plan afin que les bénévoles soient rappelés par notification push, e-mail ou texto avant chaque service
 
 ## Étape 4 : créer l'ordre de service
 
@@ -63,8 +64,8 @@ Définissez le flux de votre service du début à la fin.
 
 Suivez le guide [Ordre de service](../serving/service-order.md) pour :
 
-1. Basculez vers l'onglet « Ordre de service » de votre plan
-2. Cliquez sur « Ajouter un élément » pour ajouter des éléments : chansons de culte (de votre bibliothèque), prières, lectures bibliques, annonces, sermon, offrande, clôture
+1. Ouvrez votre plan et repérez la section **Order of Service** en haut
+2. Cliquez sur **Add** pour ajouter des éléments : chansons de culte (de votre bibliothèque), prières, lectures bibliques, annonces, sermon, offrande, clôture
 3. Faites glisser et déposez les éléments pour réorganiser le flux du service
 
 :::info
@@ -89,7 +90,7 @@ B1 Admin ne crée plus de tâches selon un calendrier répétitif. Pour les proc
 
 Laissez les bénévoles s'inscrire pour les positions eux-mêmes au lieu d'attendre les assignations administrateur.
 
-1. Lors de la modification d'un plan, définissez une **Date limite d'inscription** (heures avant le service) pour contrôler quand l'auto-inscription se ferme. Laissez vide pour pas de limite.
+1. Lors de la création ou de la modification d'un plan, définissez une **Date limite d'inscription** (heures avant le service) pour contrôler quand l'auto-inscription se ferme. Laissez vide pour pas de limite. Les nouveaux plans reprennent la date limite du plan précédent.
 2. Basculez éventuellement **Afficher les noms des bénévoles sur la page d'inscription** pour permettre aux bénévoles de voir qui d'autre est inscrit.
 3. Pour chaque position, cochez la case **Autoriser l'auto-inscription** pour la rendre disponible pour le libre-service.
 4. Ajoutez une **Description** à chaque position afin que les bénévoles sachent en quoi consiste le rôle.

@@ -24,8 +24,8 @@ Le processus d'importation utilise un flux de travail en deux étapes : d'abord 
 
 ## Importer des transactions
 
-1. Dans **B1 Admin**, accédez à **Dons > Lots**.
-2. Cliquez sur le lien **Import Stripe** en bas de la page des Lots.
+1. Dans **B1 Admin**, accédez à **Dons > Import Stripe**. (Vous pouvez aussi cliquer sur **Importer les transactions Stripe manquantes** en haut de la page **Lots**.)
+2. La page **Import Stripe** s'ouvre.
 3. Sélectionnez une **plage de dates** pour les transactions que vous souhaitez importer.
 4. Cliquez sur **Aperçu** pour lancer une vérification de simulation.
 
@@ -47,7 +47,7 @@ L'étape d'aperçu ne crée aucun enregistrement. C'est une vérification en lec
 
 1. Examinez les résultats de l'aperçu et les totaux du résumé.
 2. Cliquez sur **Importer les manquants** pour importer toutes les transactions marquées comme **Nouveau**.
-3. Une fois l'importation terminée, les indicateurs de statut à côté de chaque transaction se mettent à jour pour afficher le résultat.
+3. Une fois l'importation terminée, les badges de statut à côté de chaque transaction se mettent à jour pour afficher le résultat.
 
 ## Conseils pour utiliser l'Import Stripe
 

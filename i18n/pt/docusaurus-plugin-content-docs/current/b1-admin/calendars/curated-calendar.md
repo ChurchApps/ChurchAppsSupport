@@ -28,8 +28,8 @@ Um calendário selecionado agrega eventos de múltiplos grupos em uma visualiza�
 
 ## Adicionando Grupos ao Seu Calendário
 
-1. Clique em seu novo calendário para abri-lo.
-2. Na seção **Grupos no Calendário** no lado direito, clique em **Adicionar**.
+1. Clique em **Gerenciar Eventos** no seu novo calendário para abri-lo.
+2. Clique em **Adicionar Grupo** acima do calendário. Os grupos que você adicionar aparecem na lista **Grupos no Calendário** no lado esquerdo da página.
 3. Selecione um grupo no menu suspenso.
 4. Escolha se deseja adicionar **todos os eventos** desse grupo ou apenas **eventos específicos**.
 5. Clique em **Salvar**.

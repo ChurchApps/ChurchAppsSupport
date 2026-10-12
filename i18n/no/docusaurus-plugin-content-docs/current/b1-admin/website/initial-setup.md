@@ -29,7 +29,7 @@ Kirken din får automatisk et underdomene på B1.church (for eksempel `yourchurc
 4. Hvis du vil bruke et eget domene, logger du inn hos DNS-leverandøren din (for eksempel GoDaddy, Cloudflare eller AWS) og legger til to oppføringer:
    - En **A-oppføring** for rotdomenet som peker til `3.23.251.61`
    - En **CNAME-oppføring** for `www` som peker til `proxy.b1.church`
-5. Gå tilbake til B1.church Admin, legg til det egne domenet i listen og klikk på **Legg til** og deretter **Lagre**. Nettstedet blir tilgjengelig fra ditt eget domene i løpet av få minutter.
+5. Gå tilbake til B1.church Admin, åpne delen **Domener** på samme innstillingsside, legg til det egne domenet i listen og klikk på **Legg til** og deretter **Lagre**. Nettstedet blir tilgjengelig fra ditt eget domene i løpet av få minutter.
 
 :::tip
 Hvis du ikke ser alternativet Innstillinger, ber du personen som opprettet kirkekontoen om å gi deg tillatelsen «Rediger kirkeinnstillinger». Se [Roller og tillatelser](../settings/roles-permissions.md) for mer informasjon.
@@ -52,7 +52,7 @@ Du finner en detaljert veiledning om sider og navigasjon under [Administrere sid
 
 1. Velg **Nettsted > Utseende** i Jump-menyen.
 2. Bruk **Fargepalett** til å angi profilfargene for primære, sekundære og aksenttoner.
-3. Under **Typografiinnstillinger** velger du skrifttyper for overskrifter og brødtekst i skriftleseren.
+3. Under **Skrifter** velger du skrifttyper for overskrifter og brødtekst i skriftleseren.
 4. Last opp kirkens logo under **Logo** i Stilinnstillinger. Legg inn både en versjon for lys bakgrunn og en for mørk bakgrunn.
 5. Sett opp **Nettstedets bunntekst** med kirkens kontaktinformasjon og lenker.
 

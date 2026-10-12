@@ -28,8 +28,8 @@ En kuratert kalender samler arrangementer fra flere grupper i én felles kalende
 
 ## Legge grupper til kalenderen
 
-1. Klikk på den nye kalenderen for å åpne den.
-2. Klikk på **Legg til** i delen **Grupper i kalenderen** på høyre side.
+1. Klikk på **Administrer arrangementer** på den nye kalenderen for å åpne den.
+2. Klikk på **Legg til gruppe** over kalenderen. Grupper du legger til, vises i listen **Grupper i kalenderen** på venstre side av siden.
 3. Velg en gruppe fra nedtrekksmenyen.
 4. Velg om du vil legge til **alle arrangementer** fra gruppen eller bare **bestemte arrangementer**.
 5. Klikk på **Lagre**.

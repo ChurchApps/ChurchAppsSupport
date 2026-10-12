@@ -38,11 +38,11 @@ Hovering over an event shows the event title and the room or resource it is atta
 
 ## Filtering by Room or Resource
 
-Use the **Filter** dropdown at the top left to narrow the calendar to a single room or resource. Select **All Rooms & Resources** to return to the full view.
+Use the **Room / Resource** dropdown at the top left to narrow the calendar to a single room or resource. Select **All Rooms & Resources** to return to the full view.
 
 ## Booking a Room or Resource
 
-1. Click the **Book** button in the top right corner of the page.
+1. Click the **Book** button at the top of the page.
 2. In the dialog that opens, fill in the event details:
    - **Title** — the name of the event
    - **Start** and **End** date/time

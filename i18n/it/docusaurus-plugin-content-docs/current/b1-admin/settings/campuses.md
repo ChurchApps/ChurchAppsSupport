@@ -19,11 +19,11 @@ Se la tua chiesa si riunisce in più di una sede, i **Campus** ti permettono di 
 
 ## Apertura delle impostazioni del campus
 
-In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), scegli **Settings > Settings**, e seleziona la scheda **Campuses**. Puoi anche andare direttamente a **/settings/campuses**. Vedrai un elenco di tutti i campus configurati con il loro nome, posizione e fuso orario.
+In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), scegli **Settings > Settings**, e fai clic su **Campuses** nell'elenco a sinistra per scorrere fino alla sezione **Campuses**. Puoi anche andare direttamente a **/settings/campuses**. Vedrai un elenco di tutti i campus configurati con il loro nome, posizione e fuso orario.
 
 ## Aggiunta di un campus
 
-1. Fai clic su **Add Campus** (o il pulsante **+** se non esistono ancora campus).
+1. Fai clic su **Add Campus**.
 2. Compila i dettagli del campus:
    - **Nome** *(obbligatorio)* — il nome visualizzato mostrato in tutto B1 Admin (ad esempio, "Campus principale" o "Campus nord").
    - **Indirizzo** — l'indirizzo stradale del campus (utilizzato per la visualizzazione informativa; non è lo stesso dell'indirizzo principale della chiesa nelle Impostazioni della chiesa).

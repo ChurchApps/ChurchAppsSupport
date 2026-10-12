@@ -18,7 +18,7 @@ Quando i membri visitano il tuo sito B1.church, vedono il sito web pubblico dell
 - **Gruppi** -- Visualizza i gruppi a cui appartieni, vedi i membri del gruppo, partecipa alle conversazioni e traccia le presenze.
 - **Donazioni** -- Fai donazioni alla tua chiesa online e visualizza la tua cronologia di donazioni.
 - **Eventi** -- Sfoglia gli eventi imminenti e registra te stesso e la tua famiglia.
-- **Servizio** -- Visualizza i piani di servizio, le tue posizioni di volontariato e iscriviti alle opportunità di volontariato aperte.
+- **Servizio** -- Visualizza i piani di servizio, le tue posizioni di volontariato e iscriviti alle opportunità di volontariato aperte. Scegli di ricevere promemoria di servizio ed eventi via SMS nelle tue [preferenze di notifica](./getting-started/notification-preferences.md) (rispondi STOP in qualsiasi momento per interromperli).
 - **Piani** -- Visualizza i piani di servizio imminenti, visualizza le tue posizioni assegnate e accedi ai dettagli delle canzoni e agli ordini di servizio.
 - **Check-In** -- Fai il check-in di te stesso e dei tuoi familiari per i servizi e gli eventi. I visitatori possono registrarsi tramite codice QR.
 - **Directory della Comunità** -- Sfoglia la directory dei membri della tua chiesa, visualizza i profili e invia messaggi diretti. Controlla chi può vedere le tue informazioni di contatto dalla [scheda Privacy del tuo profilo](./getting-started/editing-your-profile.md#privacy-tab).

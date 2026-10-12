@@ -24,8 +24,8 @@ Quando un membro invia una modifica del profilo, appare come un'attività assegn
 
 **Dal Dashboard (la tua home page):**
 1. Accedi a B1 Admin — la Dashboard si carica automaticamente.
-2. Nella sezione **Tasks** sul lato destro, fai clic sulla scheda **Assigned to My Groups**.
-3. Tutte le richieste di modifica del profilo in sospeso saranno elencate lì.
+2. Nella sezione **Le mie attività**, fai clic su **Tutte le attività**. (Le mie attività elenca solo le attività aperte assegnate a te personalmente.)
+3. Fai clic sulla scheda **Assigned to My Groups**. Tutte le richieste di modifica del profilo in sospeso saranno elencate lì.
 
 **Da Serving &rarr; My Work:**
 1. Apri il [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin) ed espandi **Serving**.

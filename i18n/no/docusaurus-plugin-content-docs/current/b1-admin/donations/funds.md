@@ -20,7 +20,7 @@ Fond lar deg kategorisere gaver etter formål, slik at du kan spore hvor mye men
 
 ## Fond-siden
 
-Naviger til **Gaver > Fond** for å se en liste over alle fondene dine. Hver rad viser fondets navn og dets **fradragsberettiget**-status, som avgjør om gaver til det fondet vises på årlige [givererklæringer](giving-statements.md).
+Naviger til **Gaver > Fond** for å se en liste over alle fondene dine. Hver rad viser fondets navn og dets **Skattestatus** (fradragsberettiget eller ikke fradragsberettiget), som avgjør om gaver til det fondet vises på årlige [givererklæringer](giving-statements.md).
 
 ## Opprette et nytt fond
 
@@ -34,7 +34,7 @@ Det nye fondet vises umiddelbart i listen din og er tilgjengelig når du registr
 
 ## Redigere og slette fond
 
-- For å redigere et fond, klikk **Rediger**-knappen ved siden av det. Du kan endre navnet, slå av/på innstillingen for fradragsberettigelse, eller slå av/på **Synlig for givere** for å vise eller skjule det fra giveformularene.
+- For å redigere et fond, klikk **Rediger** på raden. Du kan endre navnet, slå av/på innstillingen for fradragsberettigelse, eller slå av/på **Synlig for givere** for å vise eller skjule det fra giveformularene.
 - For å slette et fond, åpne redigeringsskjemaet og klikk **Slett**.
 
 :::warning
@@ -49,16 +49,16 @@ Fond som er skjult for givere, viser et **Skjult**-merke ved siden av navnet sit
 
 Klikk på et **fondnavn** for å åpne detaljsiden. Denne siden viser:
 
-- **Gavehistorikk** -- en liste over alle gaver til dette fondet
-- **Datoperiodefilter** -- avgrens resultatene til en bestemt tidsperiode
-- **Sammendragsstatistikk** -- totale gaver, unike givere og totalt beløp
+- **Sammendrag** -- en linje under sidetittelen med antall gaver, antall givere og totalt beløp
+- **Datoperiodefilter** -- angi en **Startdato** og **Sluttdato** og klikk på **Filter** for å avgrense resultatene til en bestemt tidsperiode
+- **Gavehistorikk** -- en liste over gaver til dette fondet med dato, gavebunt, giver og beløp. Klikk på **Eksporter** over listen for å laste den ned som CSV.
 
 Denne visningen er nyttig når du trenger å rapportere om et bestemt giverinitiativ eller sjekke fremdrift mot et innsamlingsmål.
 
 ## Sortering og eksport
 
 - Bruk kolonneoverskriftene til å sortere fond etter navn.
-- Klikk **Eksporter til CSV** for å laste ned fondlisten din som et regneark.
+- Klikk **Eksporter** øverst på siden for å laste ned fondlisten din som et regneark (CSV).
 
 :::tip
 Sett opp fondene dine før du begynner å [registrere gaver](recording-donations.md). Å ha alle fond på plass sikrer at gaver kategoriseres riktig fra starten av.

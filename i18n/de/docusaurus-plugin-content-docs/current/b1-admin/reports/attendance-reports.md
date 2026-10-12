@@ -23,7 +23,7 @@ B1 Admin bietet drei Anwesenheitsberichte, die Ihnen helfen, zu verstehen, wie M
 
 Der Bericht „Anwesenheitstrend" zeigt, wie sich die Anwesenheit im Laufe der Zeit für Ihre Gottesdienste ändert.
 
-1. Navigieren Sie direkt zu **admin.b1.church/reports/attendanceTrend** in Ihrem Browser (Berichte haben keinen Eintrag im Navigationsmenü -- das Lesezeichen der Adresse ist der einfachste Weg, um zurück zu navigieren). Der gleiche Bericht befindet sich auch auf der Registerkarte **Anwesenheitstrend** der Seite „Anwesenheit".
+1. Navigieren Sie direkt zu **admin.b1.church/reports/attendanceTrend** in Ihrem Browser (Berichte haben keinen Eintrag im Navigationsmenü -- das Lesezeichen der Adresse ist der einfachste Weg, um zurück zu navigieren). Der gleiche Bericht befindet sich auch auf der Seite „Anwesenheit": Klicken Sie auf **Alle Jahre** und wählen Sie dann die Registerkarte **Anwesenheitstrend**.
 2. Wählen Sie optional einen **Campus**, einen **Gottesdienst**, eine **Gottesdienstzeit** oder eine **Gruppe** aus, um die Ergebnisse zu filtern.
 3. Legen Sie **Startdatum** und **Enddatum** fest. Standardmäßig deckt der Bericht das vergangene Jahr ab, vom vor einem Jahr bis heute, und das Enddatum wird vollständig enthalten. Klicken Sie auf **Bericht ausführen**.
 4. Der Bericht zeigt ein Balkendiagramm und eine Tabelle mit den Gesamtbesuchen pro Woche an. Jede Woche ist mit dem Datum des Sonntags dieser Woche gekennzeichnet, und die Spalte **Sitzungsdaten** der Tabelle listet die tatsächlichen Daten in dieser Woche auf, an denen Anwesenheit registriert wurde (z. B. „9/27, 9/30").
@@ -34,7 +34,7 @@ Dieser Bericht ist nützlich, um Muster wie saisonale Rückgänge, Wachstumstren
 
 Der Bericht „Gruppenanwesenheit" zeigt, wer in einem Datumsbereich an jeder Gruppensitzung teilgenommen hat.
 
-1. Navigieren Sie direkt zu **admin.b1.church/reports/groupAttendance** in Ihrem Browser oder öffnen Sie die Registerkarte **Gruppenanwesenheit** der Seite „Anwesenheit".
+1. Navigieren Sie direkt zu **admin.b1.church/reports/groupAttendance** in Ihrem Browser oder klicken Sie auf der Seite „Anwesenheit" auf **Alle Jahre** und wählen Sie die Registerkarte **Gruppenanwesenheit**.
 2. Wählen Sie optional einen **Campus** und einen **Gottesdienst** aus.
 3. Legen Sie **Startdatum** und **Enddatum** fest. Standardmäßig deckt der Bericht letzten Sonntag bis heute ab, und das Enddatum wird vollständig enthalten.
 4. Klicken Sie auf **Bericht ausführen**.

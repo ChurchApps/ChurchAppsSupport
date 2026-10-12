@@ -23,7 +23,7 @@ La pagina Aspetto ti permette di personalizzare l'aspetto generale del tuo sito 
 
 1. In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra) e espandi **Website**.
 2. Fai clic su **Appearance**.
-3. La pagina Stili del Sito si carica con un'anteprima dal vivo del tuo sito web a sinistra e le opzioni **Impostazioni Stile** a destra.
+3. La pagina Stili del Sito si carica. La scheda **Theme, fonts & footer** mostra l'elenco **Impostazioni Stile** a sinistra e un'anteprima di un sito di esempio a destra. Sotto ci sono le schede **Announcement & widgets** e **Redirects & analytics**.
 
 ## Tavolozza Colori
 
@@ -32,15 +32,14 @@ La pagina Aspetto ti permette di personalizzare l'aspetto generale del tuo sito 
 3. Fai clic su qualsiasi campione di colore per aprire il selezionatore di colore. Trascina il selettore o inserisci un valore esadecimale per scegliere il tuo colore.
 4. L'**Anteprima Combinazioni Colori** mostra come i tuoi colori selezionati funzionano insieme.
 5. Usa le **Tavolozze Suggerite** per applicare rapidamente uno schema di colore pre-progettato.
-6. Fai clic su **Salva** quando sei soddisfatto.
+6. Fai clic su **Save Palette** quando sei soddisfatto.
 
 ## Tipografia
 
-1. Fai clic su **Impostazioni Tipografia** nel pannello Impostazioni Stile.
-2. Fai clic su **Seleziona un Carattere** per aprire il browser dei caratteri. Puoi cercare per nome o sfogliare categorie come Serif, Sans Serif, Display, Handwriting e Monospace.
-3. Imposta i caratteri sia per i titoli che per il testo del corpo.
-4. Fai clic su **Scala Tipografica** per regolare la gerarchia della dimensione per Titolo 1 fino a Titolo 4. Utilizza i campi moltiplicatore di scala e dimensione base per un fine-tuning.
-5. Fai clic su **Salva** per applicare le tue scelte di carattere.
+1. Fai clic su **Fonts** nel pannello Impostazioni Stile.
+2. Fai clic sul pulsante **Heading Font** o **Body Font** per aprire il browser dei caratteri. Puoi cercare per nome o sfogliare categorie come Serif, Sans Serif, Display, Handwriting e Monospace. Puoi anche scegliere una delle **Popular Font Combinations**.
+3. Fai clic su **Save Fonts** per applicare le tue scelte di carattere.
+4. Per regolare la gerarchia della dimensione per Titolo 1 fino a Titolo 4, fai clic su **Scala Tipografica** nel pannello Impostazioni Stile. Usa i campi **Type Scale** (moltiplicatore), **Base Size** e **Line Height** per un fine-tuning, quindi fai clic su **Save Typography**.
 
 ## Spaziatura
 
@@ -62,10 +61,9 @@ Per i migliori risultati, usa un logo con sfondo trasparente in formato PNG. Que
 
 Personalizza i colori della barra di navigazione del tuo sito web sia per la modalità solida che trasparente:
 
-1. Scorri fino alla sezione **Stili Navigazione**
-2. Fai clic su **Modifica Stili Navigazione**
-3. Configura i colori per la navigazione solida (con sfondo) e la navigazione trasparente (modalità overlay)
-4. Fai clic su **Salva** per applicare i colori della navigazione
+1. Fai clic su **Navigation** nel pannello Impostazioni Stile
+2. Configura i colori per **Header (solid)** (con sfondo) e **Header over hero (transparent)** (modalità overlay)
+3. Fai clic su **Save Navigation** per applicare i colori della navigazione
 
 Per istruzioni dettagliate, vedi [Stili Navigazione](./navigation-styles.md).
 
@@ -76,20 +74,20 @@ I widget del sito compaiono su ogni pagina del tuo sito, fluttuando sopra il con
 - **Banner Annuncio** -- Una barra dismissibile in cima al tuo sito per messaggi sensibili al tempo, come un evento imminente o un cambio di servizio.
 - **Launcher** -- Un pulsante fluttuante che apre un menu di accesso rapido, ad esempio link per donare, fare check-in o visualizzare il bollettino.
 
-1. Fai clic su **Annuncio e Widget** nel pannello Impostazioni Stile.
+1. Trova la scheda **Announcement & widgets** sotto le Impostazioni Stile.
 2. Attiva i widget che desideri e configura il loro testo, link e colori.
 3. Fai clic su **Salva**.
 
 ## Reindirizzamenti e Analitiche
 
-Il pannello **Reindirizzamenti e Analitiche** nelle Impostazioni Stile contiene due impostazioni non correlate ma comunemente necessarie:
+La scheda **Redirects & analytics** (sotto le Impostazioni Stile) contiene due impostazioni non correlate ma comunemente necessarie:
 
-- **Analitiche** -- Aggiungi il tuo **ID Misura Google Analytics 4** per tracciare il traffico dei visitatori sul tuo sito web.
+- **Analitiche** -- Aggiungi il tuo **GA4 Measurement ID** (formato `G-XXXXXXXXXX`) per tracciare il traffico dei visitatori sul tuo sito web. Lo stesso ID traccia anche le visualizzazioni di pagina nell'app B1 della tua chiesa (il portale membri su `/mobile`, inclusa l'app installata), con un `display_mode` di `installed` o `browser`, così puoi distinguere in Google Analytics le visite dall'app installata da quelle dal browser.
 - **Reindirizzamenti** -- Mappa un vecchio percorso URL a uno nuovo, in modo che i link a una pagina che hai spostato o rinominato continuino a funzionare invece di 404ing. Inserisci il vecchio percorso **Da** e il nuovo percorso **A**, quindi fai clic su **Salva**. Un reindirizzamento ha anche la priorità sulle pagine integrate di B1 (`/sermons`, `/stream`, `/donate`, `/bible` e `/votd`), quindi puoi inviare quell'indirizzo altrove (ad esempio, alla tua pagina dei sermoni o a un canale YouTube). Non sostituisce una pagina che hai creato tu allo stesso indirizzo. Elimina prima quella pagina se vuoi che il reindirizzamento venga applicato.
 
 ## CSS e JavaScript Personalizzati
 
-1. Fai clic su **CSS e Javascript** nel pannello Impostazioni Stile.
+1. Fai clic su **CSS & Javascript** nel pannello Impostazioni Stile.
 2. Aggiungi **CSS Personalizzato** per sovrascrivere gli stili predefiniti per una personalizzazione avanzata.
 3. Aggiungi **HTML Personalizzato** per codici di tracciamento o altri script.
 4. Utilizza la sezione **Esempi Javascript Comuni** per frammenti come l'integrazione di Google Analytics.
@@ -99,7 +97,7 @@ Il CSS personalizzato è potente ma può rompere il layout del tuo sito se usato
 :::
 
 :::info
-Il tuo sito applica una Politica di Sicurezza dei Contenuti che blocca gli script inline da qualsiasi altra fonte. Il campo **JavaScript Personalizzato** è l'unica eccezione affidabile -- il codice che salvi lì viene eseguito così com'è, quindi incolla solo script da fonti di cui ti fidi (tag di analitiche, widget di chat e incorporate simili).
+Il tuo sito applica una Politica di Sicurezza dei Contenuti che blocca gli script inline da qualsiasi altra fonte. Il campo **HTML Personalizzato** qui, e l'[elemento HTML](page-editor#using-the-html-element) nelle singole pagine, sono le eccezioni affidabili -- il codice che salvi lì viene eseguito così com'è, quindi incolla solo script da fonti di cui ti fidi (tag di analitiche, widget di chat e incorporate simili).
 :::
 
 ## Temi di Stile

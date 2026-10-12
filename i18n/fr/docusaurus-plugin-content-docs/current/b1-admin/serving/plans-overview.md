@@ -23,8 +23,9 @@ L'aperçu des plans vous donne une vue d'ensemble de toutes vos assignations de 
 
 1. Dans B1 Admin, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Service**, et cliquez sur **Plans**.
 2. Sélectionnez un **onglet ministère** en haut de la page.
-3. Cliquez sur un **type de plan** pour ouvrir sa liste de plans.
-4. Cliquez sur le bouton **Aperçu** près du haut de la page.
+3. Cliquez sur **Aperçu** à côté du type de plan dans la liste **Types de plans**, ou ouvrez le type de plan et cliquez sur **Aperçu** près du haut de la page.
+
+L'aperçu porte sur le type de plan à partir duquel vous l'avez ouvert. Cliquez sur le nom du type de plan en haut de l'aperçu pour revenir à sa liste de plans.
 
 ## Lecture de la grille d'aperçu
 
@@ -62,20 +63,31 @@ La planification automatique remplit uniquement les emplacements qui sont déjà
 
 Cliquez sur **E-mail des bénévoles** pour envoyer une notification à chaque bénévole assigné n'importe où dans la plage de dates et le ministère actuellement filtrés, en une seule action, plutôt que par plan. B1 signale combien d'e-mails ont été envoyés et combien ont échoué.
 
+## Envoi de SMS à tout le monde planifié {#texting-everyone-scheduled}
+
+Si votre église a connecté un [fournisseur de SMS](../settings/church-settings.md#texting) et que vous pouvez à la fois modifier les plans et envoyer des SMS, un bouton **Envoyer un SMS aux bénévoles** apparaît en haut de l'aperçu.
+
+1. Cliquez sur **Envoyer un SMS aux bénévoles**.
+2. La boîte de dialogue indique combien de bénévoles recevront le message (par exemple, « 12 bénévoles sur 14 recevront ce message »), ainsi que le nombre de personnes qui ont refusé les SMS et le nombre de personnes sans numéro de téléphone enregistré.
+3. Saisissez votre **message**. Vous pouvez cliquer sur un espace réservé pour insérer le nom de chaque bénévole ou le nom de votre église.
+4. Cliquez sur **Envoyer**. B1 indique combien de SMS ont été envoyés.
+
+Chaque bénévole assigné dans la plage de dates reçoit un seul SMS, envoyé au numéro de mobile de son profil, même s'il sert à plusieurs dates. Les personnes qui partagent un même numéro de téléphone (par exemple, un téléphone familial) ne reçoivent qu'un seul SMS. Les bénévoles qui ont répondu STOP à un SMS précédent sont ignorés.
+
+:::info
+Les SMS sont envoyés par le fournisseur de SMS propre à votre église, donc sa tarification s'applique. Si votre église n'a plus de crédits SMS, l'envoi s'arrête et la boîte de dialogue vous en informe. Un seul envoi atteint au maximum 200 bénévoles ; réduisez la plage de dates si vous en avez davantage.
+:::
+
 ## Mise en surbrillance du calendrier d'un bénévole
 
 Utilisez le menu déroulant **Mettre en surbrillance** pour choisir une personne de votre équipe -- chaque cellule où elle est assignée est mise en évidence dans la grille, afin que vous puissiez voir partout où elle sert déjà avant de l'ajouter à un autre emplacement. Choisissez **Tout le monde** pour désactiver la mise en surbrillance.
 
 ## Filtrage de l'aperçu
 
-Vous pouvez ajuster ce que l'aperçu affiche à l'aide des contrôles de filtre en haut :
+Vous pouvez ajuster ce que l'aperçu affiche à l'aide des commandes situées au-dessus de la grille. La grille se met à jour dès que vous les modifiez.
 
+- **Toutes les positions / Non remplies uniquement** -- Choisissez **Non remplies uniquement** pour masquer les lignes où chaque date est déjà remplie, afin de pouvoir vous concentrer uniquement sur les positions qui ont encore besoin d'un bénévole.
 - **Date de début / Date de fin** -- Par défaut, l'aperçu affiche 12 semaines à l'avance. Entrez des dates personnalisées pour élargir ou réduire la plage.
-- **Ministère** -- Basculez vers un autre ministère sans quitter l'aperçu.
-- **Type de plan** -- Filtrez vers un type de plan spécifique au sein du ministère sélectionné.
-- **Non remplis uniquement** -- Activez-le pour masquer les lignes où chaque date est déjà remplie, afin de pouvoir vous concentrer uniquement sur les positions qui ont encore besoin d'un bénévole.
-
-Cliquez sur **Filtrer** après avoir apporté des modifications pour mettre à jour la grille.
 
 ## Exportation en CSV
 

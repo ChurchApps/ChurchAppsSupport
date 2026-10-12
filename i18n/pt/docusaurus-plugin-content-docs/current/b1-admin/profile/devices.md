@@ -29,7 +29,7 @@ Ao abrir a página Dispositivos, você verá uma tabela listando todos os dispos
 
 ## Adicionando um novo dispositivo
 
-1. Clique no botão **Add Device** no topo da página Dispositivos.
+1. Clique no botão **Add Screen** no topo da página Dispositivos.
 2. Será solicitado que você insira um **código de pareamento**.
 3. Encontre o código de pareamento exibido no dispositivo ChurchAppsPlayer que deseja conectar.
 4. Insira o código e confirme.
@@ -41,7 +41,7 @@ Certifique-se de que o dispositivo ChurchAppsPlayer esteja ligado e conectado à
 
 ## Editando o rótulo de um dispositivo
 
-1. Clique no **nome do dispositivo** na tabela de dispositivos.
+1. Clique em **Editar** ao lado do dispositivo na tabela de dispositivos.
 2. Atualize o rótulo para algo descritivo (por exemplo, "Tela Principal do Santuário" ou "Display do Lobby").
 3. Salve suas alterações.
 

@@ -48,7 +48,7 @@ Marque quem frequentou cada serviço e grupo.
 
 Siga o guia de [Registrando Frequência](../attendance/recording-attendance.md) para:
 
-1. Abra a guia **Sessions** de um grupo e adicione uma sessão para a data e horário do serviço. Marque **Also add for the other groups** para criar sessões para todos os cursos naquele horário de serviço de uma vez.
+1. Abra um grupo, clique em **Todas as sessões** na seção **Sessions** dele e adicione uma sessão para a data e horário do serviço. Marque **Also add for the other groups** para criar sessões para todos os cursos naquele horário de serviço de uma vez.
 2. Marque quem frequentou cada grupo
 
 :::tip

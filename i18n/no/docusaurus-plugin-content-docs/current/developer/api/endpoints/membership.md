@@ -85,6 +85,7 @@ Se [Autentisering og tillatelser](./authentication) for innlogging, registrering
 | POST | `/updateEmail` | JWT | — | Endre brukerens e-postadresse |
 | POST | `/updatePassword` | JWT | — | Endre brukerens passord (min. 6 tegn) |
 | POST | `/updateOptedOut` | JWT | — | Sett en persons reservasjonsstatus |
+| POST | `/sendInviteEmail` | JWT | People.Edit | Send en invitasjons-e-post til en person i denne menigheten (`email`, `personName`, `contextName`). Knappen står som **Registrer deg** for noen uten konto og **Logg inn** for en eksisterende bruker. En bruker som aldri har logget inn, får i stedet en lenke **Sett passordet ditt** som utløper etter 7 dager. Teller mot menighetens daglige e-postgrense (`429` når den er nådd) |
 | GET | `/search?term=` | JWT | Server.Admin | Søk alle brukere etter navn/e-post |
 | DELETE | `/` | JWT | — | Slett gjeldende brukerkonto |
 

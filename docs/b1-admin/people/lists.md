@@ -6,7 +6,7 @@ title: "Saved Lists"
 
 <div class="article-intro">
 
-**Saved Lists** let you store a search query under a name and re-run it with one click at any time. Build a list once — "Active Members in Campus North," "Visitors in the last 90 days," or any advanced filter — and it stays in the **Saved Lists** panel on the People page so you never have to rebuild the query again.
+**Saved Lists** let you store a search query under a name and re-run it with one click at any time. Build a list once — "Active Members in Campus North," "Visitors in the last 90 days," or any advanced filter — and it stays at the top of the People page so you never have to rebuild the query again.
 
 </div>
 
@@ -20,21 +20,22 @@ title: "Saved Lists"
 ## Saving a Search as a List
 
 1. Run a search on the **People** page — a quick search, an AI search, or an advanced filter search.
-2. When results appear, a **Save as List** button (bookmark icon) shows in the People page header.
+2. When results appear, a **Save as List** button shows in the People page header.
 3. Click **Save as List**.
-4. Enter a **Name** for the list (required).
-5. Optionally enter a **Category** to group related lists together in the **Saved Lists** panel (for example, "Outreach" or "Membership").
-6. Click **Save**.
+4. Enter a **List Name** (required).
+5. Optionally enter a **Category** to group related lists together (for example, "Outreach" or "Membership").
+6. Under **Who can see this list**, choose **All staff** or **Only me**.
+7. Click **Save**.
 
-The list is now saved to your church's account and will appear in the **Saved Lists** panel on the left side of the People page.
+The list is now saved and appears as a button in the row of saved lists at the top of the People page, next to **Everyone**. Lists marked **Only me** show a small lock icon.
 
 :::info
-Lists are shared across your church — anyone with People access can see and load them. Only staff with the appropriate permission can rename or delete lists.
+Lists set to **All staff** are shared across your church — anyone with People access can see and load them. Only staff with the appropriate permission can change or delete lists.
 :::
 
 ## Loading a Saved List
 
-In the **Saved Lists** panel on the left side of the People page, click any list name. The search re-runs instantly with the stored query, updating the results table.
+At the top of the People page, click any list name. The search re-runs instantly with the stored query, updating the results. Click **Everyone** to go back to your whole directory.
 
 Lists are grouped by category (if you assigned one), with uncategorized lists appearing last.
 
@@ -44,10 +45,10 @@ Lists are **live queries**, not snapshots. Every time you load a list, the searc
 
 ## Renaming and Deleting Lists
 
-Staff with manage permission can rename or delete any list directly from the Saved Lists panel.
+Staff with manage permission can rename or delete any list from the People page. First click the list to load it — two icons then appear next to its name:
 
-- Click the **pencil icon** next to a list name to rename it.
-- Click the **trash icon** to delete it (you will be asked to confirm).
+- Click the **List Settings** (gear) icon to rename it or change its category, sharing, and other settings.
+- Click the **Delete** (trash) icon to delete it (you will be asked to confirm).
 
 ## Use Cases
 

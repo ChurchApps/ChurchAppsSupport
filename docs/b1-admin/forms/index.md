@@ -24,6 +24,7 @@ Each form in the list displays its name and, if configured, a public URL that yo
 From the Forms page, you can:
 
 - **Add a form** -- Click **Add Form** to create a new custom form.
+- **Find a form** -- Type in the **Find a form** box to filter the list by name.
 - **Edit a form** -- Click on a form name to open it and modify its questions, members, or settings.
 - **Archive a form** -- Move forms you no longer need to the **Archived Forms** tab to keep your list clean.
 - **Restore a form** -- Switch to the **Archived Forms** tab and restore any form you want to make active again.

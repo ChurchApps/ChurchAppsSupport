@@ -22,9 +22,9 @@ Hvis du trenger mer hjelp, kan du sende e-post til [support@churchapps.org](mail
 ## Gjennomgang
 
 1. Gå til [admin.b1.church](https://admin.b1.church) i Google Chrome og logg inn med brukernavn og passord.
-2. Da kommer du til **Dashboard**, startsiden i B1.church Admin. Her ser du denne ukens gudstjeneste og hvem som er sjekket inn og tjenestegjør, sammen med oppgavene og gruppene dine. Bruk **Jump-menyen** (søkefeltet øverst til venstre, se nedenfor) for å komme til Personer, Gaver, Nettsted og resten av appen. Klikk på den lille menighetslogoen ved siden av for å gå tilbake til Dashboard når som helst.
+2. Da kommer du til **Dashboard**, startsiden i B1.church Admin. Her ser du denne ukens gudstjeneste og hvem som er sjekket inn og tjenestegjør, sammen med **Mine oppgaver** (dine åpne oppgaver) og **Mine grupper**. Bruk **Jump-menyen** (søkefeltet øverst til venstre, se nedenfor) for å komme til Personer, Gaver, Nettsted og resten av appen. Klikk på den lille menighetslogoen ved siden av for å gå tilbake til Dashboard når som helst.
 3. Åpne Jump-menyen og velg **Innstillinger** for å sette opp menighetens informasjon, administrative roller og andre detaljer.
-4. Klikk på **blyanten for redigering** for å sette opp menighetsinformasjonen.
+4. Klikk på **Rediger** i seksjonen **Menighetsinformasjon** for å sette opp menighetsinformasjonen.
 5. Tilbake på søndag klikker du på **spørsmålstegnet** øverst til høyre for å få hjelp og opplæring.
 6. Klikk på **Vis dokumentasjon** for å se en liste over veiledninger som hjelper deg i gang med B1.church.
 7. Gå tilbake til Dashboard, klikk på **pilen ved siden av profilbildet ditt** og velg **Bytt app**.

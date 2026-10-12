@@ -24,7 +24,7 @@ Un rôle est un ensemble de permissions que vous attribuez à un ou plusieurs ut
 
 Chaque rôle contrôle l'accès à des domaines spécifiques de B1 Admin, notamment :
 
-- **Personnes** -- visualisation et édition des profils de membres. L'onglet Notes sur un enregistrement de personne nécessite **Modifier les personnes**, et une permission séparée **Voir les notes confidentielles** contrôle l'accès à la section Notes confidentielles (pour les soins pastoraux, l'historique personnel et d'autres notes sensibles similaires).
+- **Personnes** -- visualisation et édition des profils de membres. La section Notes sur un enregistrement de personne nécessite **Modifier les personnes**, et une permission séparée **Voir les notes confidentielles** contrôle l'accès à la section Notes confidentielles (pour les soins pastoraux, l'historique personnel et d'autres notes sensibles similaires).
 - **Dons** -- gestion des contributions et des rapports financiers
 - **Participation** -- enregistrement et consultation des données de participation
 - **Formulaires** -- création et gestion des [formulaires personnalisés](../forms/creating-forms.md)

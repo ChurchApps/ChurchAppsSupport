@@ -23,7 +23,7 @@ I flussi di lavoro spostano le persone attraverso una serie di passaggi su una b
 
 ## Visualizzazione dei flussi di lavoro
 
-Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Serving**, e fai clic su **Workflows**. Vedrai i tuoi flussi di lavoro elencati e raggruppati per categoria, con i flussi di lavoro attivi evidenziati. Fai clic su qualsiasi flusso di lavoro per aprire la sua bacheca.
+Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Serving**, e fai clic su **Workflows**. Vedrai i tuoi flussi di lavoro in una tabella che mostra la **Categoria** e lo **Stato** (**Attivo** o **Inattivo**) di ciascuno. Se usi le categorie, le schede sopra l'elenco permettono di filtrarlo per categoria. Fai clic su qualsiasi flusso di lavoro per aprire la sua bacheca.
 
 ## Creazione di un flusso di lavoro
 
@@ -51,7 +51,7 @@ Quando aggiungi o modifici un passaggio, puoi configurare:
 
 - **Nome passaggio** -- l'intestazione della colonna (ad esempio, "Chiamata di benvenuto" o "In attesa di registrazione").
 - **Dovuta in (giorni)** -- imposta automaticamente una data di scadenza quando una scheda entra in questo passaggio. Le schede che superano la data di scadenza sono contrassegnate come **Scadute**.
-- **Assegnatario predefinito** -- la persona o il gruppo a cui vengono automaticamente assegnate le nuove schede su questo passaggio.
+- **Assegnatario predefinito** -- la persona o il gruppo a cui vengono automaticamente assegnate le nuove schede su questo passaggio. Quando l'assegnatario predefinito è una persona, riceve una notifica che una scheda le è stata assegnata.
 - **Azioni automatizzate** -- cose che il sistema fa da solo quando una scheda arriva (vedi sotto).
 - **Instradamento** -- dove va la scheda quando lascia il passaggio (vedi [Instradamento](#routing-cards-with-outcomes-and-conditions)).
 
@@ -140,11 +140,15 @@ Dal cassetto della scheda puoi:
 - **Invia indietro** al passaggio precedente o **Salta** al passaggio successivo.
 - **Fissa assegnazione** -- mantieni lo stesso proprietario sulla scheda mentre si sposta tra i passaggi. Per impostazione predefinita, lo spostamento di una scheda a un nuovo passaggio la riassegna all'assegnatario predefinito di quel passaggio; il fissaggio mantiene la persona attuale responsabile durante tutto il processo.
 - **Completa** la scheda per finirla, o scegli un pulsante **Risultato** se il passaggio ha risultati configurati (vedi [Instradamento](#routing-cards-with-outcomes-and-conditions)).
-- **Aggiungi note** e rivedi la **cronologia** della scheda, incluso un registro delle azioni automatizzate che sono state eseguite (email inviate, attese, ecc.).
+- **Aggiungi note** e rivedi l'**Attività** della scheda, cioè un registro delle azioni automatizzate eseguite (email inviate, attese, ecc.).
+
+Per una scheda relativa a una persona, il cassetto mostra anche il cellulare e l'email della persona come link su cui puoi fare clic per chiamarla o scriverle, più un link **View profile** se hai il permesso di vedere le persone. La persona a cui la scheda è assegnata vede telefono ed email anche senza accesso a People.
+
+Le note vengono salvate con la scheda. Chiunque possa aprire la scheda -- inclusa la persona o il gruppo a cui è assegnata -- può leggere le note e aggiungerne di proprie. Chi non può aprire la scheda non vede le sue note.
 
 ### Azioni in blocco
 
-Seleziona le caselle di controllo su più schede per agire su di loro insieme. Appare una barra degli strumenti che ti consente di **Completare**, **Sospendere**, **Riassegnare** o **Spostare** tutte le schede selezionate in un altro passaggio in una volta.
+Seleziona le caselle di controllo su più schede per agire su di loro insieme. Appare una barra degli strumenti che ti consente di **Completare**, **Sospendere**, **Assegnare** (riassegnare) o **Sposta in…** tutte le schede selezionate in un altro passaggio in una volta.
 
 ## Instradamento delle schede con risultati e condizioni
 
@@ -162,7 +166,9 @@ Questo permette a una decisione di dirammare la persona giù per percorsi divers
 
 ### Instradamento automatico (condizionale)
 
-Le route automatiche spostano una scheda avanti **nel momento in cui entra in un passaggio** (e dopo che le sue azioni automatizzate finiscono), senza che nessuno faccia clic, se la persona corrisponde a un set di condizioni. Aggiungi una route, scegli il passaggio di destinazione, e definisci una o più **condizioni** (ad esempio, il campus, l'età o lo stato di iscrizione di una persona). Una route senza condizioni corrisponde a tutti.
+Le route automatiche spostano una scheda avanti **nel momento in cui entra in un passaggio** (e dopo che le sue azioni automatizzate finiscono), senza che nessuno faccia clic, se la persona corrisponde a un set di condizioni. Aggiungi una route, scegli il passaggio di destinazione, e definisci una o più **condizioni** (ad esempio, il campus, l'età o lo stato di iscrizione di una persona). Il testo può essere confrontato esattamente oppure con **contiene**, **inizia con** o **termina con**. Una route senza condizioni corrisponde a tutti.
+
+Se le condizioni di una route non possono essere verificate per qualche motivo, quella route è considerata non corrispondente. La scheda resta sul passaggio (o segue un'altra route che corrisponde) invece di bloccarsi.
 
 :::info
 Sulla bacheca, ogni colonna di passaggio mostra piccole annotazioni che descrivono il suo instradamento, ad esempio un'etichetta di risultato o "se corrisponde" seguito da una freccia al passaggio di destinazione o al flusso di lavoro.
@@ -195,8 +201,8 @@ Esegui su base ricorrente -- giornaliera, settimanale, mensile o annuale -- risp
 
 Per qualsiasi trigger puoi anche impostare:
 
-- Il **passaggio di ingresso** su cui inizia la nuova scheda (per impostazione predefinita il primo passaggio).
-- **Una volta per persona** -- in modo che la stessa persona non sia aggiunta al flusso di lavoro due volte dal trigger.
+- Il **Passaggio iniziale** su cui atterra la nuova scheda (per impostazione predefinita il primo passaggio).
+- **Solo una volta per persona** -- in modo che la stessa persona non sia aggiunta al flusso di lavoro due volte dal trigger.
 - **Attivo** -- attiva o disattiva il trigger senza eliminarlo.
 
 :::tip
@@ -205,7 +211,7 @@ Abbina un trigger **Modulo · Inviato** al modello **Seguiti per visitatori nuov
 
 ## Le mie schede
 
-I volontari e lo staff non hanno bisogno di scavare attraverso ogni bacheca per trovare il loro lavoro. La pagina **Le mie schede** (collegata dalla pagina Flussi di lavoro) elenca ogni scheda assegnata all'utente attuale su tutti i flussi di lavoro. Fare clic su una scheda apre la bacheca a cui appartiene.
+I volontari e lo staff non hanno bisogno di scavare attraverso ogni bacheca per trovare il loro lavoro. La sezione **My Cards** della pagina **My Work** elenca ogni scheda assegnata all'utente attuale su tutti i flussi di lavoro. Per arrivarci, fai clic su **My Cards** in alto nella pagina Flussi di lavoro, oppure apri **Serving > My Work** nel menu Jump. Fare clic su una scheda apre la bacheca a cui appartiene.
 
 ## Rapporti
 

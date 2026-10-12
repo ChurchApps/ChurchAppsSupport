@@ -21,27 +21,29 @@ title: "Relevés de dons"
 ## Accès aux relevés de dons
 
 1. Dans **B1 Admin**, ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche) et développez **Dons**.
-2. Cliquez sur **Relevés de dons**.
+2. Cliquez sur **Relevés de dons**. La page **Relevés de dons par lot** s'ouvre.
 
 ## Génération des relevés
 
-1. Sélectionnez l'**année** dans la liste déroulante en haut de la page. Vous pouvez choisir l'année en cours ou l'une des cinq années précédentes.
-2. La page affiche les statistiques de synthèse pour cette année, notamment :
-   - **Nombre total de donateurs** -- le nombre de personnes qui ont donné
-   - **Nombre total de dons** -- le nombre de dossiers de don individuels
+1. Dans le panneau **Sélectionner l'année**, choisissez l'**année** dans la liste déroulante. Vous pouvez choisir l'année en cours ou l'une des cinq années précédentes.
+2. Le panneau **Résumé** situé dessous affiche les statistiques de cette année, notamment :
+   - **Total des donateurs** -- le nombre de personnes qui ont donné
+   - **Total des dons** -- le nombre de dossiers de don individuels
    - **Montant total** -- le montant en dollars combiné de tous les dons
 
 ## Téléchargement des relevés
 
-Vous avez deux options pour transmettre les relevés à vos donateurs :
+Le panneau **Options de téléchargement** vous offre deux options pour transmettre les relevés à vos donateurs :
 
 ### Télécharger en tant que fichiers CSV
 
-Cliquez sur **Télécharger ZIP** pour télécharger un fichier ZIP contenant un fichier CSV individuel pour chaque donateur. C'est utile si vous souhaitez envoyer par e-mail des relevés individuellement ou les importer dans un autre système.
+Sous **Fichiers CSV individuels**, cliquez sur **Télécharger ZIP** pour télécharger un fichier ZIP contenant un fichier CSV individuel pour chaque donateur. C'est utile si vous souhaitez envoyer par e-mail des relevés individuellement ou les importer dans un autre système.
 
 ### Imprimer tous les relevés
 
-Cliquez sur **Imprimer tous** pour ouvrir une vue imprimable du relevé de chaque donateur dans votre navigateur. À partir de là, utilisez la fonction d'impression de votre navigateur pour les envoyer à une imprimante. Chaque relevé commence sur une nouvelle page pour qu'ils soient prêts à être pliés et envoyés par la poste.
+Sous **Relevés imprimables**, cliquez sur **Imprimer tous** (le bouton indique le nombre de relevés) pour ouvrir une vue imprimable du relevé de chaque donateur dans votre navigateur. À partir de là, utilisez la fonction d'impression de votre navigateur pour les envoyer à une imprimante. Chaque relevé commence sur une nouvelle page pour qu'ils soient prêts à être pliés et envoyés par la poste.
+
+Si vous avez téléversé un **Logo sur fond clair** dans [Site Web > Apparence](../website/appearance.md), il est imprimé centré en haut de chaque relevé, au-dessus du titre. Cela s'applique à la fois à **Imprimer tous** et au relevé d'un seul donateur imprimé depuis sa fiche.
 
 :::tip
 Exécutez vos relevés au début janvier tandis que vos dossiers sont frais. Double-vérifiez que vos fonds sont correctement marqués comme déductibles fiscalement avant de générer des relevés -- seuls les dons aux fonds déductibles fiscalement sont inclus.
@@ -53,7 +55,7 @@ Les relevés de dons incluent seulement les dons assignés aux fonds qui ont le 
 
 ## Formats de reçus pour le Canada, l'Australie et la Nouvelle-Zélande
 
-Les églises en dehors des États-Unis peuvent passer le relevé à la présentation de reçu officielle de leur pays. Allez à **Paramètres**, ouvrez la section **Dons**, et définissez **Format du relevé** à **Canada**, **Australie** ou **Nouvelle-Zélande**, puis remplissez les champs qui apparaissent : votre numéro d'enregistrement (numéro d'enregistrement ARC, ABN ou numéro d'enregistrement de bienfaisance NZ), l'adresse de votre organisation, le nom de la personne autorisée à signer les reçus, et pour le Canada la ville où les reçus sont émis.
+Les églises en dehors des États-Unis peuvent passer le relevé à la présentation de reçu officielle de leur pays. Cliquez sur **Format du relevé** en haut de la page Relevés de dons (ou allez à **Paramètres**, ouvrez la section **Dons**), et définissez **Format du relevé** à **Canada**, **Australie** ou **Nouvelle-Zélande**, puis remplissez les champs qui apparaissent : votre numéro d'enregistrement (numéro d'enregistrement ARC, ABN ou numéro d'enregistrement de bienfaisance NZ), l'adresse de votre organisation, le nom de la personne autorisée à signer les reçus, et pour le Canada la ville où les reçus sont émis.
 
 Les relevés portent ensuite le libellé que votre autorité fiscale attend (pour le Canada, « Reçu officiel à des fins d'impôt sur le revenu » avec la référence ARC), un numéro de reçu sous la forme `ANNÉE-ID-DONATEUR`, le montant admissible compté à partir des fonds déductibles fiscalement seulement, et une ligne séparée pour tout don aux fonds non déductibles. Les donateurs voient le même bloc de reçu quand ils impriment leur propre relevé à partir de B1.church.
 

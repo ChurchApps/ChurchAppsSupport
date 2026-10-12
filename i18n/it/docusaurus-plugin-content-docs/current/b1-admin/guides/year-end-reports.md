@@ -25,7 +25,7 @@ Assicurati che tutte le donazioni online dalla fine dell'anno siano nel tuo sist
 
 Segui la guida [Importazione Stripe](../donations/stripe-import.md) per:
 
-1. Naviga su Donazioni > Batch > Importazione Stripe
+1. Naviga su Donazioni > Importazione Stripe
 2. Seleziona un intervallo di date che copra la fine dell'anno (ad es. 1-31 dicembre)
 3. Fai clic su Anteprima prima per rivedere, quindi Importa Mancanti per finalizzare
 
@@ -65,7 +65,7 @@ Segui la guida [Dichiarazioni di Donazione](../donations/giving-statements.md) p
 2. Seleziona l'anno dal menu a discesa e rivedi le statistiche di riepilogo
 3. Scegli il tuo metodo di download:
    - **Scarica ZIP** - file CSV individuali, uno per donatore
-   - **Stampa Tutto** - visualizzazione stampabile con ogni dichiarazione su una nuova pagina
+   - **Stampa Tutto** - visualizzazione stampabile con ogni dichiarazione su una nuova pagina, con il logo della tua chiesa in cima (se ne hai caricato uno)
 
 :::tip
 Genera dichiarazioni all'inizio di gennaio mentre i record sono freschi. Questo ti dà il tempo di individuare eventuali problemi prima di spedirli.

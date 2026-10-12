@@ -24,6 +24,7 @@ Cada formulário na lista exibe seu nome e, se configurado, uma URL pública que
 Na página de Formulários, você pode:
 
 - **Adicionar um formulário** -- Clique em **Adicionar Formulário** para criar um novo formulário personalizado.
+- **Encontrar um formulário** -- Digite na caixa **Encontrar um formulário** para filtrar a lista por nome.
 - **Editar um formulário** -- Clique no nome de um formulário para abri-lo e modificar suas perguntas, membros ou configurações.
 - **Arquivar um formulário** -- Mova formulários que você não precisa mais para a aba **Formulários Arquivados** para manter sua lista limpa.
 - **Restaurar um formulário** -- Mude para a aba **Formulários Arquivados** e restaure qualquer formulário que deseja tornar ativo novamente.

@@ -6,7 +6,7 @@ title: "Listas Guardadas"
 
 <div class="article-intro">
 
-**Listas Guardadas** te permiten guardar una consulta de búsqueda bajo un nombre y re-ejecutarla con un clic en cualquier momento. Construye una lista una vez -- "Miembros Activos en Campus Norte", "Visitantes en los últimos 90 días", o cualquier filtro avanzado -- y permanece en el panel **Listas Guardadas** en la página de Personas para que nunca tengas que reconstruir la consulta nuevamente.
+**Listas Guardadas** te permiten guardar una consulta de búsqueda bajo un nombre y re-ejecutarla con un clic en cualquier momento. Construye una lista una vez -- "Miembros Activos en Campus Norte", "Visitantes en los últimos 90 días", o cualquier filtro avanzado -- y permanece en la parte superior de la página de Personas para que nunca tengas que reconstruir la consulta nuevamente.
 
 </div>
 
@@ -22,19 +22,20 @@ title: "Listas Guardadas"
 1. Ejecuta una búsqueda en la página **Personas** -- una búsqueda rápida, una búsqueda de IA, o una búsqueda de filtro avanzado.
 2. Cuando aparecen resultados, un botón **Guardar como Lista** (icono de marcador) aparece en el encabezado de la página de Personas.
 3. Haz clic en **Guardar como Lista**.
-4. Ingresa un **Nombre** para la lista (requerido).
-5. Opcionalmente ingresa una **Categoría** para agrupar listas relacionadas juntas en el panel **Listas Guardadas** (por ejemplo, "Alcance" o "Membresía").
-6. Haz clic en **Guardar**.
+4. Ingresa un **List Name** para la lista (requerido).
+5. Opcionalmente ingresa una **Categoría** para agrupar listas relacionadas juntas (por ejemplo, "Alcance" o "Membresía").
+6. En **Who can see this list**, elige **All staff** o **Only me**.
+7. Haz clic en **Guardar**.
 
-La lista ahora se guarda en la cuenta de tu iglesia y aparecerá en el panel **Listas Guardadas** en el lado izquierdo de la página de Personas.
+La lista ahora se guarda y aparece como un botón en la fila de listas guardadas en la parte superior de la página de Personas, junto a **Everyone**. Las listas marcadas como **Only me** muestran un pequeño icono de candado.
 
 :::info
-Las listas se comparten en toda tu iglesia -- cualquiera con acceso a Personas puede verlas y cargarlas. Solo el personal con el permiso apropiado puede renombrar o eliminar listas.
+Las listas configuradas como **All staff** se comparten en toda tu iglesia -- cualquiera con acceso a Personas puede verlas y cargarlas. Solo el personal con el permiso apropiado puede cambiar o eliminar listas.
 :::
 
 ## Cargar una Lista Guardada
 
-En el panel **Listas Guardadas** en el lado izquierdo de la página de Personas, haz clic en cualquier nombre de lista. La búsqueda se re-ejecuta instantáneamente con la consulta guardada, actualizando la tabla de resultados.
+En la parte superior de la página de Personas, haz clic en cualquier nombre de lista. La búsqueda se re-ejecuta instantáneamente con la consulta guardada, actualizando los resultados. Haz clic en **Everyone** para volver a todo tu directorio.
 
 Las listas se agrupan por categoría (si asignaste una), con listas sin categorizar apareciendo al final.
 
@@ -44,10 +45,10 @@ Las listas son **consultas activas**, no instantáneas. Cada vez que cargas una 
 
 ## Renombrar y Eliminar Listas
 
-El personal con permiso de gestión puede renombrar o eliminar cualquier lista directamente desde el panel de Listas Guardadas.
+El personal con permiso de gestión puede renombrar o eliminar cualquier lista desde la página de Personas. Primero haz clic en la lista para cargarla; aparecerán dos iconos junto a su nombre:
 
-- Haz clic en el **icono de lápiz** junto a un nombre de lista para renombrarlo.
-- Haz clic en el **icono de papelera** para eliminarlo (se te pedirá que confirmes).
+- Haz clic en el icono **List Settings** (engranaje) para renombrarla o cambiar su categoría, uso compartido y otras configuraciones.
+- Haz clic en el icono **Delete** (papelera) para eliminarla (se te pedirá que confirmes).
 
 ## Casos de Uso
 

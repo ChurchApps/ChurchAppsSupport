@@ -33,6 +33,10 @@ Percorso base: `/messaging/conversations`
 
 Le conversazioni con `contentType: "person"` (la scheda Note su un record di persona) o `contentType: "personConfidential"` (la sezione Note Riservate) sono protette su ogni percorso di lettura e scrittura, inclusi i percorsi altrimenti pubblici sopra, che restituiscono `401` per questi tipi di contenuto. `person` richiede l'autorizzazione MembershipApi **Persone / Modifica**; `personConfidential` richiede **Persone / Visualizza Note Riservate**. Per le chiavi API con ambito, `people:write` copre entrambe le azioni (l'utente della chiave deve comunque detenere l'autorizzazione del ruolo sottostante).
 
+### Controllo dell'accesso alle note delle schede del workflow {#workflow-card-notes-access-control}
+
+Le conversazioni con `contentType: "workflowCard"` (le note di una scheda del workflow, dove `contentId` è l'ID attività della scheda) sono leggibili e scrivibili solo da chi può aprire quella scheda: un utente con il permesso **Tasks / View** di DoingApi, oppure la persona o il gruppo a cui la scheda è assegnata, da cui è stata creata o a cui si riferisce. Tutti gli altri ricevono `401` su ogni percorso di lettura, incluse le route pubbliche sopra. La conversazione di una scheda viene collegata tramite la scheda stessa con `POST /doing/tasks/:id/conversation` (body `{ "conversationId": "..." }`; vince la prima conversazione collegata), che possono chiamare gli editor della scheda e il suo assegnatario.
+
 ### Esempio: Avvia una Conversazione
 
 ```
@@ -168,12 +172,11 @@ Authorization: Bearer <token>
 
 Percorso base: `/messaging/notificationpreferences`
 
-Estende CRUD standard. La classe base fornisce POST `/` (crea o aggiorna, nessuna autorizzazione richiesta).
-
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| POST | `/` | JWT | — | Crea o aggiorna le preferenze di notifica (dalla classe base CRUD) |
+| GET | `/categories` | JWT | — | Elenca le categorie di notifica con i canali predefiniti e consentiti |
 | GET | `/my` | JWT | — | Carica le preferenze di notifica per l'utente corrente (crea automaticamente i valori predefiniti se non esistono) |
+| POST | `/` | JWT | — | Salva le preferenze dell'utente corrente. Corpo: qualsiasi tra `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, più `overrides: [{ categoryKey, channel, optedIn }]` facoltativo (channel può essere `push`, `email`, `in_app` o `sms`; le categorie bloccate vengono ignorate). `allowSms` è il consenso del membro ai promemoria via SMS. Viene ancora accettato il corpo legacy come array di righe |
 
 ## Connessioni
 
@@ -254,6 +257,9 @@ Gestisce i provider di servizi di messaggistica SMS, la messaggistica di testo d
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
 | GET | `/providers` | JWT | — | Carica i provider di servizi di testo per la chiesa (le credenziali sono mascherate) |
+| GET | `/status` | JWT | — | `{ enabled }` — indica se la chiesa ha un provider di testo attivo. Qualsiasi utente della chiesa registrato; usato per mostrare le opzioni **Text** solo quando si possono inviare messaggi di testo |
+| GET | `/inboundUrl` | JWT | `texting.send` o `settings.edit` | `{ url }` — l'URL webhook in arrivo (STOP) della chiesa da incollare nel provider |
+| POST | `/inbound/:churchId/:token` | Public | — | Webhook dei messaggi in arrivo del provider. `token` è un HMAC dell'id della chiesa. Una risposta che è esattamente una parola di stop (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`) imposta `optedOut` per ogni persona corrispondente e disattiva il loro `allowSms`. Restituisce `{ optedOut: <count> }`; altre risposte restituiscono `{ optedOut: 0 }` |
 | GET | `/preview/:groupId` | JWT | — | Visualizza l'anteprima dei destinatari per un messaggio di testo di gruppo (conti idonei, esclusi, senza telefono) |
 | GET | `/sent` | JWT | — | Carica tutti i record di messaggi di testo inviati per la chiesa |
 | GET | `/sent/:id/details` | JWT | — | Carica un messaggio di testo inviato con registri di consegna per destinatario |

@@ -24,7 +24,7 @@ Une session représente une occurrence d'une réunion de groupe -- par exemple, 
 
 1. Ouvrez **B1 Admin**, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Personnes**, et cliquez sur **Groupes**.
 2. Sélectionnez le groupe pour lequel vous souhaitez enregistrer la présence.
-3. Cliquez sur l'onglet **Sessions**.
+3. Dans la section **Sessions** de la page du groupe, cliquez sur **Toutes les sessions**.
 4. Cliquez sur **Nouveau** pour créer une nouvelle session.
 5. Si le groupe est assigné à une heure de service, choisissez l'**Heure de service**. Si c'est un groupe non planifié, ce champ n'apparaîtra pas.
 6. Sélectionnez la **Date de la session** -- cela peut être aujourd'hui, une date passée ou une date future.
@@ -76,11 +76,11 @@ Associez ceci avec **Imprimer Toutes les Classes** et [ajouter des sessions pour
 
 ## Impression d'une feuille d'appel
 
-Une feuille d'appel est une liste de classe imprimable que les enseignants peuvent marquer à la main et vous rendre pour l'entrer plus tard. Chaque feuille affiche le nom de l'église, la classe, l'heure du service et une ligne de date. Chaque membre a des cases **Présent** et **Absent**, et il y a des lignes vierges pour les visiteurs et une zone **Enseignant / Notes**.
+Une feuille d'appel est une liste de classe imprimable que les enseignants peuvent marquer à la main et vous rendre pour l'entrer plus tard. Chaque feuille affiche votre logo d'église (le **Logo sur fond clair** de [Site Web > Apparence](../website/appearance.md), si vous en avez téléchargé un) avec le nom de l'église en dessous, la classe, une ligne de date **Date** bien visible sous le nom de la classe, et l'heure du service. Chaque membre a des cases **Présent** et **Absent**, et il y a des lignes vierges pour les visiteurs et une zone **Enseignant / Notes**.
 
 - **À partir d'une session** -- Cliquez sur l'icône **Imprimer la Feuille d'Appel** (imprimante) en haut de la liste de présence de la session. La feuille est datée avec la date de la session.
 - **Toutes les classes pour un service** -- Si la session a une heure de service, cliquez sur **Imprimer Toutes les Classes** pour imprimer une feuille par classe assignée à cette heure de service. Chaque classe s'imprime sur sa propre page.
-- **À partir de l'onglet Membres** -- Cliquez sur l'icône **Imprimer la Feuille d'Appel** au-dessus de la liste des membres du groupe et choisissez **Feuille de présence** pour imprimer une feuille sans date. Le même menu propose une mise en page **Liste de contacts** avec le téléphone, l'e-mail et l'adresse de chaque membre -- voir [Printing the Member List](../groups/group-members.md#printing-the-member-list).
+- **À partir de la liste des membres** -- Sur la page du groupe, cliquez sur **Tous les membres**, puis sur l'icône **Imprimer la Feuille d'Appel** au-dessus de la liste des membres et choisissez **Feuille de présence** pour imprimer une feuille sans date. Le même menu propose une mise en page **Liste de contacts** avec le téléphone, l'e-mail et l'adresse de chaque membre -- voir [Printing the Member List](../groups/group-members.md#printing-the-member-list).
 
 La feuille s'ouvre dans un nouvel onglet et la boîte de dialogue d'impression de votre navigateur apparaît automatiquement.
 
@@ -96,7 +96,7 @@ Vous pouvez télécharger un enregistrement de la session sous la forme d'un fic
 
 Après avoir enregistré les sessions, les données apparaissent dans vos rapports de présence.
 
-- **Onglet Tendance de Présence** -- affiche les tendances à l'échelle de l'église au fil du temps. Voir [Suivi de la Présence](tracking-attendance.md).
+- **Onglet Tendance de la présence** (sous **Toutes les années** sur la page Présence) -- affiche les tendances à l'échelle de l'église au fil du temps. Voir [Suivi de la Présence](tracking-attendance.md).
 - **Onglet Présence du Groupe** -- affiche la présence ventilée par groupe individuel. Voir [Rapports de Présence](../reports/attendance-reports.md#group-attendance).
 
 :::tip

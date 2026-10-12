@@ -31,6 +31,7 @@ Det er alt som skal til. Familiens oppmøte er registrert.
 Hvis kirken din har konfigurert [sikkerhetsgrenser](../../b1-admin/attendance/checkin-safety) på rommene sine, sjekker serveren dem før lagring:
 
 - Hvis et valgt rom er **fullt eller lukket**, gjennomføres ikke innsjekkingen, og appen navngir rommet slik at du kan velge et annet.
+- Hvis gudstjenestetiden har en [innsjekkingsplan](../../b1-admin/attendance/setup#setting-a-check-in-schedule) og innsjekkingsvinduet ikke er åpent akkurat nå, avvises også innsjekking til rommene for den gudstjenestetiden. Skjermen **Kan ikke sjekke inn ennå** viser rommet som «rommet er fullt eller lukket». Trykk på **Endre rom** for å velge en annen gudstjenestetid eller gruppe.
 - Hvis et barnerom er **kort på frivillige** for sitt forhold, viser appen enten en advarsel som en ansatt kan bekrefte for å fortsette, eller blokkerer innsjekkingen helt -- avhengig av hvordan kirken din har konfigurert håndhevelse av forhold.
 
 ## Etikettutskrift

@@ -20,8 +20,8 @@ Send leksjonsinnholdet ditt til en TV i lobbyen eller i en gang ved å bruke en 
 
 ## Hente feed-URL-en
 
-1. Gå til **Serving** og åpne ministeriet som inneholder plantypen din.
-2. Klikk **Digital skilting**-knappen (RSS-ikonet) på plantypesiden.
+1. Gå til **Serving**, velg ministeriet som inneholder plantypen din, og klikk på plantypen for å åpne den.
+2. Klikk på **Digital skilting** (TV-ikonet) øverst på plantypesiden.
 3. Kopier feed-URL-en som vises i dialogboksen.
 
 :::info

@@ -6,59 +6,64 @@ title: "Modelos de Plano"
 
 <div class="article-intro">
 
-Plan templates let you save a reusable snapshot of a plan's order of service or positions and apply it to future plans in one click. Instead of rebuilding the same structure every week, you save it once and stamp it onto as many upcoming plans as you need.
+Os modelos de plano permitem salvar um registro reutilizável da ordem de culto ou das posições de um plano e aplicá-lo a planos futuros com um único clique. Em vez de montar a mesma estrutura toda semana, você a salva uma vez e a aplica a quantos planos futuros precisar.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- Create at least one [service plan](plans.md) with a service order or positions defined
-- You need access to the Serving area in B1 Admin
+- Crie pelo menos um [plano de culto](plans.md) com uma ordem de culto ou posições definidas
+- Você precisa de acesso à área de Serviço no B1 Admin
 
 </div>
 
-## Saving a Plan as a Template
+## Salvando um Plano como Modelo
 
-1. Open an existing plan from the **Serving** area.
-2. Click the **Templates** button (top of the plan page).
-3. Choose **Save as Template**.
-4. Give the template a name (for example, "Standard Sunday" or "Worship + Sermon").
-5. Save. The template captures the plan's current order of service and positions at that moment.
+1. Abra um plano existente na área **Serviço**.
+2. Na seção **Ordem do Culto** do plano, clique em **Salvar como Modelo**.
+3. Dê um nome ao modelo (por exemplo, "Domingo Padrão" ou "Louvor + Mensagem").
+4. Salve. O modelo captura a ordem do culto, as posições e as observações do plano naquele momento.
 
-## Managing Templates
+## Gerenciando Modelos
 
-From the **Templates** button on any plan type page you can:
+Clique em **Modelos** acima da lista de planos em qualquer página de tipo de plano para abrir **Modelos de Plano**. A partir dali, você pode:
 
-- **Rename** — change the template's display name
-- **Update from plan** — replace the template's content with a plan's current state (useful after you refine your standard structure)
-- **Apply** — stamp the template onto one or more upcoming plans
-- **Delete** — remove a template you no longer need
+- **Renomear** — alterar o nome de exibição do modelo
+- **Atualizar a partir do plano** — substituir o conteúdo do modelo pelo estado atual de um plano (útil depois que você refinar sua estrutura padrão)
+- **Aplicar** — aplicar o modelo a um ou mais planos futuros
+- **Excluir** — remover um modelo que você não precisa mais
 
-## Applying a Template to Plans
+## Aplicando um Modelo a Planos
 
-1. Click the **Templates** button on the plan type page.
-2. Click the **Apply** icon (copy icon) next to the template you want to use.
-3. Select which upcoming plans to apply it to by checking their boxes.
-4. Choose what to copy:
-   - **Order of Service** — replaces the selected plans' service order items with the template's items
-   - **Positions** — replaces the selected plans' positions (and their assignments) with the template's positions
-5. Click **Apply**.
+1. Clique em **Modelos** acima da lista de planos na página do tipo de plano.
+2. Clique no ícone **Aplicar** (ícone de cópia) ao lado do modelo que deseja usar.
+3. Selecione os planos futuros aos quais deseja aplicá-lo marcando as caixas correspondentes.
+4. Escolha o que copiar:
+   - **Ordem do Culto** — substitui os itens da ordem do culto dos planos selecionados pelos itens do modelo
+   - **Posições** — substitui as posições dos planos selecionados (e suas atribuições) pelas posições do modelo
+5. Clique em **Aplicar**.
+
+Se o modelo tiver observações, aplicá-lo também substituirá as observações dos planos selecionados pelas observações do modelo.
 
 :::warning
-Applying positions replaces all existing positions and assignments on the selected plans. Make sure you have not already scheduled volunteers for those positions before applying.
+Aplicar posições substitui todas as posições e atribuições existentes nos planos selecionados. Certifique-se de que você ainda não escalou voluntários para essas posições antes de aplicar.
 :::
 
 :::tip
-Apply the Order of Service without Positions when you want a consistent song/sermon structure but volunteers are already assigned differently each week.
+Aplique a Ordem do Culto sem as Posições quando quiser manter uma estrutura consistente de músicas/mensagem, mas os voluntários já estiverem escalados de forma diferente a cada semana.
 :::
 
-## Keeping Templates Up to Date
+## Iniciando um Novo Plano a Partir de um Modelo {#starting-a-new-plan-from-a-template}
 
-If your standard service structure changes, open the template manager and use **Update from plan** to sync the template from your latest plan rather than rebuilding it from scratch.
+Os modelos são compartilhados entre os tipos de plano de um ministério. Ao clicar em **Novo Plano** e o ministério tiver modelos, o formulário de novo plano inclui uma lista **Começar a partir de modelo**. Escolha um modelo e salve, e o novo plano será criado com a ordem do culto, as posições e as observações do modelo. Escolher um modelo substitui as opções **Copiar do Plano Anterior** para esse plano.
+
+## Mantendo os Modelos Atualizados
+
+Se a estrutura padrão do seu culto mudar, abra o gerenciador de modelos e use **Atualizar a partir do plano** para sincronizar o modelo com o seu plano mais recente, em vez de recriá-lo do zero.
 
 ## Artigos Relacionados
 
-- [Service Plans](plans.md) — Create and manage individual service plans
-- [Plans Overview](plans-overview.md) — See all upcoming assignments across plans in one grid
-- [Service Order](service-order.md) — Build the order of service within a plan
+- [Planos de Culto](plans.md) — Crie e gerencie planos de culto individuais
+- [Visão Geral dos Planos](plans-overview.md) — Veja todas as escalas futuras de todos os planos em uma única grade
+- [Ordem do Culto](service-order.md) — Monte a ordem do culto dentro de um plano

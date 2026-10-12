@@ -23,10 +23,16 @@ Ang feature na **AI Search** ay nagbibigay-daan sa iyo na maghanap sa direktoryo
 Ang AI Search ay gumagamit ng artificial intelligence upang bigyang-kahulugan ang iyong tanong at ibalik ang mga tumutugmang resulta mula sa iyong database ng mga tao. Maaari kang magtanong sa paraan na itatanong mo sa isang kasamahan.
 
 1. Mag-navigate sa pahina ng **People** sa B1 Admin.
-2. Hanapin ang opsyon na **AI Search** sa ilalim ng mga kontrol ng paghahanap.
+2. I-click ang **Ask** sa ilalim ng search box para buksan ang kahon ng **AI Search**.
 3. I-type ang iyong tanong sa natural na wika.
-4. Pindutin ang **Enter** o i-click ang **Search** upang patakbuhin ang iyong query.
-5. Ang talahanayan ng mga resulta ay mag-a-update upang ipakita ang mga tumutugmang tao.
+4. I-click ang **Search** upang patakbuhin ang iyong query.
+5. Ang listahan ng mga resulta ay mag-a-update upang ipakita ang mga tumutugmang tao.
+
+I-click ang **Clear Search** para burahin ang iyong tanong at bumalik sa buong direktoryo.
+
+:::info
+Kung hindi maabot ang AI Search, ipinapakita nito ang *"AI Search is temporarily unavailable. Please try again later, or use the search above."* Nananatili ang iyong tanong, kaya maaari mo itong subukang muli sa sandaling maya-maya -- o gamitin ang quick search o **Advanced** search sa ngayon.
+:::
 
 ## Mga Halimbawa ng Query
 
@@ -52,7 +58,7 @@ Ang AI Search ay partikular na kapaki-pakinabang kapag:
 - Gusto mo ng mabilis na sagot sa isang tanong tungkol sa iyong kongregasyon nang hindi gumagawa ng report.
 
 :::info
-Ang AI Search ay gumagana kasabay ng standard na quick search at column filter. Gamitin ang anumang paraan na pinakaangkop sa iyong mga pangangailangan. Para sa simpleng name lookup, ang [quick search](searching-people.md) ang pinakamabilis na opsyon. Para sa mas nuanced na mga tanong, doon nagniningning ang AI Search.
+Ang AI Search ay gumagana kasabay ng standard na quick search at mga **Advanced** filter. Gamitin ang anumang paraan na pinakaangkop sa iyong mga pangangailangan. Para sa simpleng name lookup, ang [quick search](searching-people.md) ang pinakamabilis na opsyon. Para sa mas nuanced na mga tanong, doon nagniningning ang AI Search.
 :::
 
 Para sa iba pang mga opsyon sa paghahanap, tingnan ang [Paghahanap ng mga Tao](./searching-people.md).

@@ -21,8 +21,8 @@ After creating your account and church, there are a few important steps to confi
 ## Step 1: Configure Your Church Information
 
 1. Open the [Jump menu](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **Settings**, and click **Settings**.
-2. Click **Edit Settings**.
-3. Enter your church's **name**, **address**, and **contact details**.
+2. In the **Church Information** section, click **Edit**.
+3. Enter your church's **name**, **subdomain**, and **address**.
 4. Click **Save** to apply your changes.
 
 ## Step 2: Set Up Your Branding
@@ -47,7 +47,7 @@ Having your logo and branding ready before inviting team members gives a polishe
 
 With your team in place, start building out the core areas of B1 Admin:
 
-1. **People** -- Add members to your church directory. This is the foundation for everything else, so start here. You can add people manually or use the **Import** tool from **Settings**.
+1. **People** -- Add members to your church directory. This is the foundation for everything else, so start here. You can add people manually or use the **Import/Export** tool from **Settings**.
 2. **Groups** -- Create groups for small groups, ministry teams, classes, and other gatherings.
 3. **Attendance** -- Configure your campuses, services, and service times for tracking attendance.
 4. **Donations** -- Set up donation funds and connect your payment gateway (Stripe) to accept online giving.

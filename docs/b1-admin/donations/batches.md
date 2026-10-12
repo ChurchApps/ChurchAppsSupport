@@ -20,14 +20,14 @@ Batches group your donations together for easier tracking and reconciliation. A 
 
 ## The Batches Page
 
-When you navigate to **Donations > Batches**, you will see a list of all your batches. Each row displays:
+When you navigate to **Donations > Batches**, you will see a list of your batches. Each row displays:
 
 - **Name** -- the label you gave the batch
 - **Date** -- the date of the collection
 - **Donations** -- the number of individual donations in the batch
 - **Total** -- the combined dollar amount
 
-The header at the top shows summary statistics including the total number of batches, the total number of donations across all batches, and the overall dollar amount.
+Above the list, year buttons let you show only the batches from one year, or **All** batches. A one-line summary shows the number of batches, the number of gifts, and the total amount for the batches shown.
 
 ## Creating a New Batch
 
@@ -43,22 +43,24 @@ Your new batch appears in the list, ready for you to add donations.
 - **View donations** -- click a batch name to open it and see all the individual donations it contains. From there you can add, edit, or remove donations.
 - **Edit batch details** -- click the **Edit** button on a batch row to change its name or date.
 - **Sort** -- use the column headers to sort batches by name or date.
-- **Export** -- click **Export** to download your batch list as a spreadsheet (CSV).
+- **Export** -- click **Export** at the top of the page to download the batches shown as a spreadsheet (CSV).
+- **Failed events** -- if your payment gateway has reported problems, a **Failed events** button (with the number of unresolved events) appears at the top of the page. Click it to show or hide the list of events below the batches.
+- **Import from Stripe** -- click **Import missing Stripe transactions** at the top of the page to open the [Stripe Import](stripe-import.md) tool.
 
 ## Printing a Batch
 
-Open a batch and click the **Print** (printer) icon at the top of the donations list to print a paper copy for your counting team or deposit records. The printout includes:
+Open a batch and click **Print** above the donations list to print a paper copy for your counting team or deposit records. The printout includes:
 
 - Your church's name, the batch name, and the batch date
 - Every donation in the batch, with the donor's name, method, notes, date, and amount (refunded gifts are crossed out and marked as refunded)
 - **Fund Subtotals** -- the total given to each fund in the batch
 - **Batch Total** -- the combined amount for the whole batch
 
-The Print icon only appears once the batch has at least one donation.
+The **Print** button only appears once the batch has at least one donation.
 
 ### Printing Several Batches at Once
 
-To print every batch from a period in one go -- for example, all of last month's deposits -- click the **Print** (printer) icon in the header of the **Batches** list, next to **Export**. The **Print Batches** page opens with a **Start Date** and **End Date** that default to the last 30 days. Change either date to choose a different range.
+To print every batch from a period in one go -- for example, all of last month's deposits -- click **Print** at the top of the **Batches** page, next to **Export**. The **Print Batches** page opens with a **Start Date** and **End Date** that default to the last 30 days. Change either date to choose a different range.
 
 Every batch dated within the range (including the start and end dates) prints in date order, one batch per page, using the same layout as a single-batch printout. Batches with no donations are left out, and if none of the batches in the range have donations you will see "No batches with donations in this date range." Click **Print** to open your browser's print dialog, or **Close** to return to the batch list.
 

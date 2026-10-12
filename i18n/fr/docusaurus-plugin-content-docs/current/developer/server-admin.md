@@ -20,7 +20,7 @@ Les utilisateurs disposant de la permission Server.Admin peuvent accéder au pan
 
 1. Connectez-vous à [admin.b1.church](https://admin.b1.church)
 2. Ouvrez le [menu Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu), développez **Settings**, et cliquez sur **Server Admin**. (Vous pouvez aussi aller directement à `admin.b1.church/admin`.)
-3. Le panneau Server Admin contient des sections pour Churches, Users, Impersonate User, Background Jobs, Commons, Usage Trends, Translation Lookups, Server Health, et Database Migrations
+3. Le panneau Server Admin affiche ses sections sur le côté gauche, en trois groupes : **Directory** (Churches, Users, Impersonate User), **Operations** (Background Jobs, Commons, Usage Trends) et **System** (Translation Lookups, Server Health, Database Migrations)
 
 ## Usurpation d'utilisateur
 

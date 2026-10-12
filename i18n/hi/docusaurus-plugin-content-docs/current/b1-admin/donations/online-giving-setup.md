@@ -26,7 +26,7 @@ B1 Admin **Stripe**, **PayPal**, **Kingdom Funding**, और **Paystack** (अ�
 3. अपनी **Publishable Key** कॉपी करें।
 4. [B1 Admin](https://admin.b1.church/) में लॉगिन करें।
 5. **Settings** पर जाएं और **Giving** सेक्शन खोलें।
-6. **Giving** सेक्शन पर संपादन आइकन पर क्लिक करें।
+6. **Giving** सेक्शन पर **Edit** पर क्लिक करें।
 7. **Provider** को **Stripe** पर सेट करें।
 8. अपनी Publishable Key को **Public Key** फील्ड में पेस्ट करें।
 9. Stripe पर वापस जाएं और अपनी **Secret Key** प्रकट करें (आप इसे केवल एक बार देख सकते हैं, इसलिए एक बैकअप सहेजें)।

@@ -31,6 +31,7 @@ Eso es todo lo que se necesita. La asistencia de tu familia ha sido registrada.
 Si tu iglesia ha configurado [límites de seguridad](../../b1-admin/attendance/checkin-safety) en sus salas, el servidor los verifica antes de guardar:
 
 - Si una sala seleccionada está **llena o cerrada**, el registro no se procesa y la aplicación nombra la sala para que puedas elegir una diferente.
+- Si la hora del servicio tiene un [horario de registro](../../b1-admin/attendance/setup#setting-a-check-in-schedule) y su ventana de registro no está abierta en este momento, el registro en las salas de esa hora del servicio también se rechaza. La pantalla **Can't check in yet** muestra la sala como "room is full or closed"; toca **Change Rooms** para elegir otra hora de servicio o grupo.
 - Si una sala de niños está **corta de voluntarios** para su proporción, la aplicación muestra una advertencia que un miembro del personal puede confirmar para proceder, o bloquea el registro completamente, dependiendo de cómo tu iglesia configuró la aplicación de proporción.
 
 ## Impresión de etiquetas

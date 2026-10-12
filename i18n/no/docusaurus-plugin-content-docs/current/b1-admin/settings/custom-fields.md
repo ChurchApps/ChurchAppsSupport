@@ -20,7 +20,7 @@ Med **Egendefinerte felt** kan du registrere din egen informasjon på hver perso
 
 ## Åpne egendefinerte felt
 
-I B1 Admin åpner du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), velger **Innstillinger > Innstillinger** og klikker på kortet **Egendefinerte felt**. Du kan også gå direkte til **/settings/custom-fields**. Du ser en liste over alle feltene du har definert, med **Navn** og **Felttype**. Hvis du ikke har opprettet noen ennå, står det *«Ingen egendefinerte felt er lagt til ennå.»*
+I B1 Admin åpner du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), velger **Innstillinger > Innstillinger** og klikker på **Egendefinerte felt** i listen til venstre for å gå til seksjonen **Egendefinerte felt**. Du kan også gå direkte til **/settings/custom-fields**. Du ser en liste over alle feltene du har definert, med **Navn** og **Felttype**. Hvis du ikke har opprettet noen ennå, står det *«Ingen egendefinerte felt er lagt til ennå.»*
 
 ## Legge til et felt
 
@@ -55,14 +55,14 @@ Hvis du endrer **Felttype** for et felt som allerede har verdier (for eksempel f
 
 ## Fylle inn verdier på en person
 
-Så snart det finnes minst ett egendefinert felt, ligger verdiene rett ved siden av de innebygde opplysningene på hver persons profil — du ser dem under **Personopplysninger** og redigerer dem i samme skjema som resten av personens informasjon. Ingenting ekstra vises før du har definert det første feltet.
+Så snart det finnes minst ett egendefinert felt, ligger verdiene rett ved siden av de innebygde opplysningene på hver persons profil — du ser dem sammen med personens kontaktopplysninger til venstre på profilen, og redigerer dem i samme skjema som resten av personens informasjon. Ingenting ekstra vises før du har definert det første feltet.
 
 1. Åpne personens profil under **Personer**.
-2. I delen **Personopplysninger** klikker du på **Rediger**-knappen (blyanten).
+2. Klikk på **Rediger**-knappen til venstre på profilen, under personens kontaktopplysninger.
 3. Bla til området **Egendefinerte felt** nederst i redigeringsskjemaet og fyll inn en verdi for hvert felt. Hvert felt viser inndataelementet som passer til typen — en datovelger for Dato-felt, en ja/nei-nedtrekksmeny for Ja/Nei-felt, en nedtrekksliste for Flervalg, og så videre.
 4. Klikk på **Lagre**. Verdiene i de egendefinerte feltene lagres sammen med resten av personens opplysninger.
 
-Tilbake på profilen vises alle felt som har en verdi nå i delen **Personopplysninger** (Ja/Nei-svar vises som *Ja* eller *Nei*, og Flervalg viser alternativets etikett). Felt som er tomme, skjules. For å fjerne en verdi redigerer du personen, tømmer feltet og lagrer — en tom verdi slettes fra posten i stedet for å lagres som tom.
+Tilbake på profilen vises alle felt som har en verdi nå under personens kontaktopplysninger, på formen *Feltnavn: verdi* (Ja/Nei-svar vises som *Ja* eller *Nei*, og Flervalg viser alternativets etikett). Felt som er tomme, skjules. For å fjerne en verdi redigerer du personen, tømmer feltet og lagrer — en tom verdi slettes fra posten i stedet for å lagres som tom.
 
 :::tip
 Det klassiske bruksområdet er frivilliges sikkerhet: opprett et **Dato**-felt kalt *Politiattest utløper*, registrer datoen for hver frivillig, og bygg deretter en [lagret liste](../people/lists.md) som markerer alle som har passert datoen.
@@ -85,7 +85,7 @@ Lagre ethvert søk på egendefinerte felt som en [liste](../people/lists.md). Li
 
 ## Vise et egendefinert felt som kolonne
 
-For å se et felts verdier for alle på én gang legger du det til som kolonne på siden **Personer**. Åpne kolonnevelgeren, bytt til fanen **Egendefinert** og kryss av for feltet. Hver persons verdi vises i en egen kolonne ved siden av de innebygde. Se [Vise egendefinerte felt som kolonner](../people/searching-people.md#showing-custom-fields-as-columns).
+For å se et felts verdier for alle på én gang legger du det til som kolonne på siden **Personer**. Sett **Vis som** til **Tabell**, klikk på ikonet **Velg kolonner** i sidehodet, bytt til fanen **Egendefinert** og kryss av for feltet. Hver persons verdi vises i en egen kolonne ved siden av de innebygde. Se [Vise egendefinerte felt som kolonner](../people/searching-people.md#showing-custom-fields-as-columns).
 
 ## Hva skjer ved sammenslåing
 

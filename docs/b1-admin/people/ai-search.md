@@ -23,10 +23,16 @@ The **AI Search** feature lets you search your church directory using plain, nat
 AI Search uses artificial intelligence to interpret your question and return the matching results from your people database. You can ask questions the way you would ask a colleague.
 
 1. Navigate to the **People** page in B1 Admin.
-2. Look for the **AI Search** option under the search controls.
+2. Click **Ask** below the search box to open the **AI Search** box.
 3. Type your question in plain language.
-4. Press **Enter** or click **Search** to run your query.
-5. The results table will update to show the matching people.
+4. Click **Search** to run your query.
+5. The results list will update to show the matching people.
+
+Click **Clear Search** to clear your question and return to the full directory.
+
+:::info
+If AI Search can't be reached, it shows *"AI Search is temporarily unavailable. Please try again later, or use the search above."* Your question is kept, so you can try again in a moment -- or use the quick search or **Advanced** search in the meantime.
+:::
 
 ## Example Queries
 
@@ -52,7 +58,7 @@ AI Search is especially helpful when:
 - You want a quick answer to a question about your congregation without building a report.
 
 :::info
-AI Search works alongside the standard quick search and column filters. Use whichever approach fits your needs best. For simple name lookups, the [quick search](searching-people.md) is the fastest option. For more nuanced questions, AI Search shines.
+AI Search works alongside the standard quick search and **Advanced** filters. Use whichever approach fits your needs best. For simple name lookups, the [quick search](searching-people.md) is the fastest option. For more nuanced questions, AI Search shines.
 :::
 
 For other search options, see [Searching People](./searching-people.md).

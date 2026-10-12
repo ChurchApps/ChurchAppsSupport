@@ -24,6 +24,7 @@ Ipinapakita ng bawat form sa listahan ang pangalan nito at, kung na-configure, a
 Mula sa Forms page, maaari ninyong:
 
 - **Magdagdag ng form** -- I-click ang **Add Form** para gumawa ng bagong custom na form.
+- **Maghanap ng form** -- I-type sa kahon na **Find a form** para i-filter ang listahan ayon sa pangalan.
 - **Mag-edit ng form** -- I-click ang pangalan ng form para buksan ito at baguhin ang mga tanong, miyembro, o setting nito.
 - **Mag-archive ng form** -- Ilipat sa tab na **Archived Forms** ang mga form na hindi na ninyo kailangan para manatiling malinis ang inyong listahan.
 - **Mag-restore ng form** -- Lumipat sa tab na **Archived Forms** at ibalik ang anumang form na gusto ninyong gawing aktibo muli.

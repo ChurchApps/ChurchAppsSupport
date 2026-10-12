@@ -25,7 +25,7 @@ B1 Checkin-appen er koblet til oppsettet for oppmøte i B1 Admin. Når et medlem
 
 ## Sette opp innsjekking
 
-1. **Sett opp strukturen for oppmøte først.** Gå til **Oppmøte > Oppsett** i B1 Admin og kontroller at campuser, samlingstidspunkter og grupper er på plass. Innsjekkingsappen bygger på dette oppsettet. Se [Oppsett av oppmøte](setup.md) for detaljer.
+1. **Sett opp strukturen for oppmøte først.** Gå til **Personer > Oppmøte** i B1 Admin og klikk på **Oppsett** for å kontrollere at campuser, samlingstidspunkter og grupper er på plass. Innsjekkingsappen bygger på dette oppsettet. Du kan eventuelt gi hvert samlingstidspunkt en [innsjekkingsplan](setup.md#setting-a-check-in-schedule), slik at innsjekkingen åpner og stenger automatisk hver uke. Se [Oppsett av oppmøte](setup.md) for detaljer.
 2. **Installer B1 Checkin-appen** på enhetene du planlegger å bruke. Appen er tilgjengelig på disse plattformene:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung-nettbrett:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
@@ -110,7 +110,7 @@ Slik slår du på visningen av QR-koden:
 3. Slå på **QR-gjesteregistrering** og klikk på **Lagre**.
 
 :::note
-Denne innstillingen finner du under **Mobil > B1 CheckIn** (samme side som kortet **Kiosktema**), ikke under Oppmøte.
+Denne innstillingen finner du under **Mobil > B1 CheckIn** (samme side som kortet **Kiosktema**), ikke under Oppmøte. Handlingen **Kiosk** på oppmøtesiden har en lenke til denne siden.
 :::
 
 ### Dele registreringslenken
@@ -126,4 +126,4 @@ Legg registreringslenken på menighetens nettside for «Planlegg besøket» elle
 
 ## Hva som registreres
 
-Hver innsjekking oppretter en oppmøteregistrering i B1 Admin. Du kan se disse registreringene i fanene [Oppmøte](tracking-attendance.md) og [Grupper](../groups/group-members.md), akkurat som manuelt registrert oppmøte. Dataene vises på samme måte uansett – begge metodene mater de samme rapportene.
+Hver innsjekking oppretter en oppmøteregistrering i B1 Admin. Du kan se disse registreringene på siden [Oppmøte](tracking-attendance.md) og i hver [gruppes](../groups/group-members.md) samlinger, akkurat som manuelt registrert oppmøte. Dataene vises på samme måte uansett – begge metodene mater de samme rapportene.

@@ -22,10 +22,10 @@ La pagina Bulk Import ti consente di popolare rapidamente la tua libreria di ser
 ## Scelta della Tua Fonte
 
 1. In B1 Admin, apri il [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Sermons**, e fai clic su **Sermons**. Fai clic su **Add Sermon** e scegli **Bulk Import** dal menu.
-2. Vedrai due schede cliccabili:
-   - **YouTube** (rosso) -- Importa video da un canale YouTube
-   - **Vimeo** (blu) -- Importa video da un account Vimeo
-3. Fai clic sulla scheda per la piattaforma in cui sono ospitati i tuoi sermoni.
+2. Sotto **Choose Import Source** vedrai due opzioni:
+   - **YouTube** -- Importa video da un canale YouTube
+   - **Vimeo** -- Importa video da un account Vimeo
+3. Fai clic sull'opzione per la piattaforma in cui sono ospitati i tuoi sermoni (oppure fai clic su **Import from YouTube** / **Import from Vimeo** sotto la sua descrizione). Fai clic su **Back** in alto nella pagina per tornare alla scelta della fonte.
 
 :::tip
 Puoi tornare indietro e cambiare fonte in qualsiasi momento se hai video su entrambe le piattaforme.

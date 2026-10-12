@@ -53,7 +53,7 @@ Siga o guia [Configuração de Presença](../attendance/setup.md) para:
 
 1. Adicionar seu campus (ex.: "Campus Principal")
 2. Adicionar um culto (ex.: "Culto de Domingo pela Manhã")
-3. Definir o horário do culto (ex.: "9:00")
+3. Definir o horário do culto (ex.: "9:00") e, opcionalmente, um [cronograma de check-in](../attendance/setup.md#setting-a-check-in-schedule) para que o check-in abra automaticamente antes de cada culto e feche depois dele
 4. Atribuir seus grupos infantis ao culto
 
 ## Passo 4: Configure o Aplicativo de Check-In

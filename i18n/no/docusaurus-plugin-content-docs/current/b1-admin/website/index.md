@@ -12,13 +12,17 @@ Nettsideavsnittet i B1 Admin gir deg en full-featured nettstedbygger for kirken 
 
 ## Hva du kan gjøre
 
-Nettstedbyggeren er organisert i fem hovedområder:
+Nettstedbyggeren er organisert i disse hovedområdene:
 
 ### Sider
 
-Opprett og administrer alle sidene på kirkens nettsted. **Sider**-tabellen viser hver side sammen med statusen -- enten **Generert** (automatisk opprettet av systemet) eller **Egendefinert** (opprettet av deg). Du kan legge til nye egendefinerte sider, redigere eksisterende eller konvertere autogenererte sider til egendefinerte sider for full kontroll over innholdet deres.
+Opprett og administrer alle sidene på kirkens nettsted. **Sider**-tabellen lister hver side -- sider som systemet har opprettet automatisk har et **Generert**-merke, og resten er egendefinerte sider du har laget. Du kan legge til nye egendefinerte sider, redigere eksisterende eller konvertere autogenererte sider til egendefinerte sider for full kontroll over innholdet deres.
 
 Navigasjonslenkene dine vises i en trestruktur. Du kan sortere lenker ved hjelp av dra-og-slipp for å angi det eksakte hierarkiet og rekkefølgen besøkende vil se.
+
+### Blogg {#blog}
+
+Publiser nyheter, oppdateringer og andakter som blogginnlegg på `/blog` på nettstedet ditt, med en RSS-feed. Se veiledningen [Blogg](blog).
 
 ### Blokker
 
@@ -30,11 +34,11 @@ Tilpass nettsideens tema, farger, skrifter, logo og mellomrom. Du kan bruke forh
 
 ### Filer
 
-Last opp og organiser alle mediaobjektene dine -- bilder, dokumenter og andre filer -- på ett sentralt sted. Bruk mapper for å holde ting ryddig og kopier fil-URLer for bruk hvor som helst på nettstedet ditt. Se [Filer](files) for mer informasjon.
+Last opp og administrer alle mediaobjektene dine -- bilder, dokumenter og andre filer -- på ett sentralt sted, og kopier fillenker for bruk hvor som helst på nettstedet ditt. Se [Filer](files) for mer informasjon.
 
 ### Kalendre
 
-Publiser hendelseskalendere på nettstedet ditt slik at besøkende kan se hva som skjer i kirken din. Opprett kuraterte kalendere som trekker hendelser fra flere grupper inn i en enkelt visning.
+Publiser hendelseskalendere på nettstedet ditt slik at besøkende kan se hva som skjer i kirken din. Opprett kuraterte kalendere som trekker hendelser fra flere grupper inn i en enkelt visning. Kalendere har et eget **Kalendere**-punkt i B1 Admin-menyen, atskilt fra **Nettsted**.
 
 :::tip
 Start med [Startoppsett](initial-setup) hvis du konfigurerer nettstedet for første gang. Det gjennomgår domeneoppsett, oppretter din første side og konfigurerer nettsideens utseende.

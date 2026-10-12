@@ -85,6 +85,7 @@ See [Authentication & Permissions](./authentication) for login, registration, an
 | POST | `/updateEmail` | JWT | — | Change user's email address |
 | POST | `/updatePassword` | JWT | — | Change user's password (min 6 chars) |
 | POST | `/updateOptedOut` | JWT | — | Set a person's opted-out status |
+| POST | `/sendInviteEmail` | JWT | People.Edit | Email an invite to a person in this church (`email`, `personName`, `contextName`). The button reads **Sign Up** for someone with no account and **Log In** for an existing user. A user who has never logged in instead gets a **Set Your Password** link that expires in 7 days. Counts toward the church's daily email limit (`429` when reached) |
 | GET | `/search?term=` | JWT | Server.Admin | Search all users by name/email |
 | DELETE | `/` | JWT | — | Delete the current user account |
 

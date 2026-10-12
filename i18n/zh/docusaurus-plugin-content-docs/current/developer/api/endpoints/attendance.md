@@ -65,11 +65,11 @@ Authorization: Bearer <token>
 
 | 方法 | 路径 | 认证 | 权限 | 描述 |
 |------|------|------|------|------|
-| GET | `/` | JWT | — | 列出所有服务时间。按 `?serviceId=` 过滤。添加 `?include=groups` 以追加小组数据 |
+| GET | `/` | JWT | — | 列出所有服务时间。按 `?serviceId=` 过滤。添加 `?include=groups` 以追加小组数据。每行都包含一个计算得出的 `checkinOpen` 布尔值（仅当服务时间设有签到计划且其签到窗口当前关闭时为 false，以教会当地时间计算） |
 | GET | `/:id` | JWT | — | 按 ID 获取服务时间 |
 | GET | `/search?campusId=&serviceId=` | JWT | — | 按校园和服务搜索服务时间 |
 | GET | `/public/:churchId` | Public | — | 获取教会的校园 → 服务 → 时间树。为网站生成器的 `serviceTimes` 元素提供动力 |
-| POST | `/` | JWT | Services.Edit | 创建或更新服务时间 |
+| POST | `/` | JWT | Services.Edit | 创建或更新服务时间。可选的计划字段：`dayOfWeek`（0 = 周日 … 6）、`startTime` / `endTime`（`HH:mm`）、`checkinOpenMinutes`（开始之前）、`checkinCloseMinutes`（结束之后）。仅当同时设置了 `dayOfWeek` 和 `startTime` 时，签到才受时间限制 |
 | DELETE | `/:id` | JWT | Services.Edit | 删除服务时间 |
 
 ## 小组服务时间
@@ -192,6 +192,8 @@ Authorization: Bearer <token>
   }
 ]
 ```
+
+如果目标服务时间设有签到计划且其签到窗口已关闭，则不会保存任何内容，响应为 `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }`。容量和志愿者比例违规同样返回 409（`error: "capacity"` 或 `"ratio"`）。
 
 ## 访问会话
 

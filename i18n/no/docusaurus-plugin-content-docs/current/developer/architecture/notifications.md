@@ -15,7 +15,9 @@ Hver melding et kirkemedlem ser utenfor siden vedkommende er på – en merketel
 ```
 scheduled anything ──▶ ReminderEngine (definitions → occurrences → scan) ─┐
 chat / requests / workflow / bulk sends ──────────────────────────────────┼─▶ createNotifications()
-                                                                          │    in_app gate → socket → push → email (→ sms slot)
+                                                                          │    in_app gate → socket → push → email
+     (reminder channels include sms) ──▶ ReminderEngine.sendSms() ──▶ sms gate → sendPersonText() via church provider
+provider STOP reply ──▶ POST /messaging/texting/inbound/:churchId/:token ──▶ SmsOptOutHelper.optOut()
 account/legal mail ──▶ TransactionalEmailHelper.sendTransactional()  [allowlisted, lint-enforced]
 ```
 
@@ -62,7 +64,7 @@ Leveringen starter på et nivå (0 som standard, eller høyere for påminnelser 
 | 0 | **in_app / socket** | `in_app`-porten sjekkes først. Hvis den undertrykkes (dempet), lagres raden med `isNew=false` og leveringen stopper helt – ingen socket-ping, ingen merke, ingen videre eskalering. Ellers slår serveren opp åpne socket-tilkoblinger for personens `alerts`-rom og sender en `notification`-ramme (eller `privateMessage`). For vanlige varsler stopper en vellykket socket-levering kjeden her – 30-minutterstimeren sjekker uleste elementer på nytt og eskalerer dem senere. Direktemeldinger stopper aldri ved socket: en installert PWA kan holde alerts-socketen åpen i bakgrunnen, noe som ellers ville undertrykt push-varselet på OS-nivå. |
 | 1 | **push** | Styres av `allowPush` / reservasjon per kategori / stille timer. Sender til både Expo-pushtokener og Web Push-abonnementer som finnes på personens `devices`-rader, fjerner duplikater per endepunkt og rydder bort utdaterte tokener underveis. |
 | 2 | **e-post** | Styres av `emailFrequency` og reservasjon per kategori. Umiddelbare utsendelser (`emailImmediate`) genereres med en gang og skriver en `deliveryLogs`-rad; ellers blir varselet liggende ventende for samlesendingen (sammendraget), beskrevet nedenfor. |
-| — | **sms** | Preferanseoppsettet (`allowSms`, kanallister per kategori) tar allerede høyde for en SMS-kanal, men ingen produsent sender gjennom den i dag – den er reservert for produktet for masse-SMS, som kjører som en egen, avskilt flyt via `TextingController` / `@churchapps/texting`. Arbeidsflyttrinnets handling **Send Text** (`StepActionHelper.sendText` → `MessagingModuleGateway.sendPersonText`) går også utenom denne trakten: den sender tekstmelding direkte til kortets person gjennom kirkens leverandør, så varselpreferanser og stille timer gjelder ikke – bare personens `optedOut`-flagg respekteres. |
+| — | **sms** | Ikke et nivå i eskaleringsrekken. Den eneste SMS-produsenten bak porter er påminnelsesmotoren: når en definisjons `channels` inkluderer `sms`, sender `ReminderEngine.sendSms()` en tekstmelding til hver mottaker **i tillegg til** push-/e-postvarselet (se [Tekstpåminnelser](#text-reminders)). Masse-SMS (`TextingController` / `@churchapps/texting`), oversikten over tjenester **Send tekst til frivillige** (`MatrixTextHelper` → `MessagingModuleGateway.sendPersonText`) og arbeidsflyttrinnet **Send Text** (`StepActionHelper.sendText` → `sendPersonText`) sender alle direkte gjennom kirkens leverandør, så varselpreferanser og stille timer gjelder ikke for dem – bare personens `optedOut`-flagg respekteres. |
 
 Uleste varsler som er blitt stående på socket eller push, eskaleres av 30-minutterstimeren (`NotificationHelper.escalateDelivery`). Samle-e-post sendes av `NotificationHelper.sendEmailNotifications(frequency)`, styrt av hver persons `emailFrequency`-preferanse: `individual` kjører på 30-minutterstimeren, `daily` kjører på nattetimeren. (`weekly` er en gyldig preferanseverdi, men har ingen egen samlekjøring ennå.)
 
@@ -83,6 +85,19 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 **Utvidelse** materialiserer utløserrader for horisonten fremover (et rullerende vindu på flere dager). Den kjører på nattetimeren, og synkront hver gang en definisjon lagres, slik at en påminnelse for et arrangement i siste liten fortsatt utløses. Omfangsdefinisjoner fordeles via adapterens `loadScopeEntities` og gir ett forekomstsett per konkret enhet; forekomster på enhetsnivå bruker nøkkelen `definitionId:occurrenceISO:offset`, mens forekomster på omfangsnivå bruker enhetens id som navnerom slik at de aldri kolliderer. Å upserte en forekomst **gjenoppliver** en tidligere kansellert rad – kansellere og så utvide på nytt er standardmåten å resynkronisere en påminnelse på når den underliggende enheten endres; rader som allerede er `sent`, `failed` eller `processing`, røres ikke.
 
 **Utsendelse** (`ReminderEngine.scan()`) kjører på 30-minutterstimeren. Den krever forfalte forekomster (en lease hindrer dobbeltbehandling), laster mottakere gjennom enhetens adapter, filtrerer bort alle som allerede er registrert i `reminderSentLog` for den forekomsten, og kaller `createNotifications` med `deliveryStartLevel: 1` (hopper rett til push) pluss `emailImmediate`/`emailByPerson` når definisjonens kanaler inkluderer e-post.
+
+### Tekstpåminnelser {#text-reminders}
+
+Når en definisjons `channels` inkluderer `sms`, kaller `scan()` `ReminderEngine.sendSms()` etter at push-/e-postvarslene er opprettet, for de samme nye mottakerne. Tekstmeldinger er opt-in per medlem:
+
+- Hver mottaker går gjennom `PreferenceGateHelper.evaluate(..., "sms", ...)`, så `allowSms` må være på (den er av som standard og settes fra B1Apps bryter **Tekstmeldinger**), og kategoriens `sms`-kanal må ikke være overstyrt til av. `event_reminders`, `serving_schedule` og `tasks` oppgir `sms` i både `defaultChannels` og `allowedChannels`.
+- Personer uten `mobilePhone` eller med `optedOut` satt undertrykkes. Hvis kirken ikke har noen leverandør for tekstmeldinger, undertrykkes resten av batchen med årsaken `no_provider`.
+- Teksten bygges av `ReminderEngine.smsBody()`: `"<Kirkens navn>: <melding> Reply STOP to opt out."`, kuttet til ett segment på 160 tegn.
+- Hver mottaker får sin egen `reminderSentLog`-rad med `channel: "sms"` og status `sent` / `suppressed` / `failed`, adskilt fra push-/e-postraden, slik at en mislykket tekstmelding aldri sender push-/e-postvarselet på nytt.
+
+Redaktørene tilbyr bare **Tekst** når `GET /messaging/texting/status` returnerer `{ enabled: true }` (kirkens første leverandør for tekstmeldinger er aktivert).
+
+**STOP-avmelding.** `POST /messaging/texting/inbound/:churchId/:token` er et anonymt webhook som kirken limer inn hos leverandøren sin (B1Admin viser URL-en fra `GET /messaging/texting/inboundUrl` i innstillingene for tekstmeldinger). Tokenet er en HMAC av kirke-ID-en (`SmsOptOutHelper.token`). `SmsOptOutHelper.parse` godtar Twilio-lignende skjemafelt og Clearstream/TextInChurch-lignende JSON. Hvis svaret er nøyaktig et stoppord (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`), får alle ikke-fjernede personer i kirken som har et matchende mobilnummer `people.optedOut = true` og `allowSms = false`. Andre svar bekreftes og ignoreres.
 
 En intern hendelsesbuss reagerer på endringer i enheter uten å vente på nattlig utvidelse: innholdshendelser (via webhook-dispatcheren) og oppdateringshendelser for planer og oppgaver utløser umiddelbar ny utvidelse eller kansellering for den berørte enheten, og en planoppdatering utvider også på nytt alle omfangsdefinisjoner knyttet til planens type.
 
@@ -120,14 +135,14 @@ Skyggeradene er usynlige for varselklokken: de utelates fra spørringen for anta
 Hver utsendelse går gjennom `PreferenceGateHelper.evaluate()`, en ren funksjon (all tilstand sendes inn, ingen databasekall på den kritiske stien) som returnerer `allow`, `suppress` eller `defer`. Lagene kjøres i rekkefølge, og det første som avgjør, vinner:
 
 1. **Låst kategori** – noen kategorier er obligatoriske (nivå 0) og går utenom alle andre lag.
-2. **Hoveddemping / kanalstans** – `masterMute`, `allowPush`, `allowSms` eller `emailFrequency='never'` undertrykker direkte.
+2. **Hoveddemping / kanalstans** – `masterMute`, `allowPush`, `allowSms` (av som standard – medlemmene slår det selv på) eller `emailFrequency='never'` undertrykker direkte.
 3. **Stille timer** – bare push og SMS (e-post regnes som lite påtrengende). Hvis klokkeslettet i personens tidssone faller i vedkommendes stille vindu, kommer en transaksjonell kategori likevel gjennom; en ikke-transaksjonell utsettes til slutten av det stille vinduet, beregnet som et sommertidskorrekt UTC-tidspunkt via `TimezoneHelper.wallClockToUtc`.
 4. **Overstyring av preferanse per kategori** – en eksplisitt reservasjon for ett kategori × kanal-par; fravær betyr kategoriens standard.
 5. **Demping per enhet** – en demping registrert mot en bestemt enhet (f.eks. ett arrangement, én plan) begrenser mer enn innstillingen på kategorinivå, men gjelder bare når kalleren oppgir en enhets-id/-type sammen med varselet.
 
 Involverte tabeller: `notificationPreferences` (global – `masterMute`, `emailFrequency` med `individual|daily|weekly|never`, `allowPush`, stille vindu + tidssone, `allowSms`), `notificationPreferenceOverrides` (per kategori × kanal) og `notificationEntityMutes` (per enhet).
 
-Denne porten håndheves for in-app (nivå 0), push (nivå 1) og e-post (nivå 2) inne i trakten – inkludert umiddelbare påminnelses- og sammendrags-e-poster. Transaksjonell e-post (autentiseringskoder, tilbakestilling av passord, invitasjoner, giverkvitteringer) går utenom den med vilje; det er hele poenget med den andre døren.
+Denne porten håndheves for in-app (nivå 0), push (nivå 1) og e-post (nivå 2) inne i trakten – inkludert umiddelbare påminnelses- og sammendrags-e-poster, og for påminnelsestekster i `ReminderEngine.sendSms()`. Transaksjonell e-post (autentiseringskoder, tilbakestilling av passord, invitasjoner, giverkvitteringer) går utenom den med vilje; det er hele poenget med den andre døren.
 
 ## Grenser for e-post skrevet av kirken
 
@@ -158,9 +173,10 @@ Lokalt kan den samme logikken utløses ved behov med `npm run timer:30min` og `n
 | Transaksjonell dør | `Api/src/shared/helpers/TransactionalEmailHelper.ts`, lint-regel `Api/tools/eslint-rules/email-door.cjs` |
 | Grenser for kirke-e-post | `Api/src/shared/helpers/ChurchEmailLimiter.ts`, `Api/src/lambda/ses-feedback-handler.ts`, `Api/src/modules/messaging/repositories/DeliveryLogRepo.ts` |
 | Påminnelsesmotor | `Api/src/modules/messaging/helpers/ReminderEngine.ts`, `ReminderBootstrap.ts`, `helpers/adapters/*`, `controllers/ReminderController.ts` |
+| Tekstmeldinger / STOP-avmelding | `Api/src/modules/messaging/helpers/SmsOptOutHelper.ts`, `controllers/TextingController.ts` (`/status`, `/inboundUrl`, `/inbound/:churchId/:token`), `Api/src/modules/doing/helpers/MatrixTextHelper.ts` (oversikten over tjenester **Send tekst til frivillige**) |
 | Påminnelsesrepositorier | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`, `ReminderOccurrenceRepo.ts`, `ReminderSentLogRepo.ts` |
 | E-post for tjeneste/plan | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`, `ReminderTokenHelper.ts`, `Api/src/shared/modules/DoingModuleGateway.ts` |
-| Påminnelseseditorer (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx` |
+| Påminnelseseditorer (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx`, `hooks/useTextingEnabled.ts` |
 | Påminnelseseditor / preferanser (B1App) | `EventReminderEdit.tsx`, `NotificationPrefsPage.tsx`, `useRealtimeNotifications.ts` |
 
 ## Relaterte sider

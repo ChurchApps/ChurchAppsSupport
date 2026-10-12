@@ -21,7 +21,7 @@ La page Paramètres de l'église est l'endroit où vous configurez les informati
 ## Modification de vos informations d'église
 
 1. Dans B1 Admin, ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Paramètres**, et cliquez sur **Paramètres**.
-2. Ouvrez la section **Informations de l'église** et cliquez sur son icône de modification (crayon).
+2. Dans la section **Informations de l'église** (en haut de la page), cliquez sur **Modifier**.
 3. Mettez à jour l'un des champs suivants :
    - **Nom de l'église** -- Le nom affiché dans tous les produits ChurchApps.
    - **Adresse** -- L'adresse physique de votre église.
@@ -32,7 +32,7 @@ La page Paramètres de l'église est l'endroit où vous configurez les informati
 
 Votre église obtient un sous-domaine gratuit à **votreeglise.1.church**. C'est l'adresse web où les membres et les visiteurs peuvent accéder à la présence en ligne de votre église.
 
-1. Sur la page Paramètres, localisez le champ **Sous-domaine**.
+1. Sur la page Paramètres, cliquez sur **Modifier** dans la section **Informations de l'église**, puis localisez le champ **Sous-domaine**.
 2. Entrez votre sous-domaine préféré (par exemple, « eglisedesgrace » pour eglisedesgrace.1.church).
 3. Enregistrez vos modifications.
 
@@ -61,20 +61,20 @@ Choisissez le jour par lequel vos calendriers commencent. La liste déroulante *
 
 Le paramètre **Région** contrôle la façon dont les dates et les heures sont écrites dans tout B1. Par défaut, les dates utilisent le format américain (par exemple, « 28 sept 2026 » et « 28/09/2026 »). Les églises en dehors des États-Unis peuvent passer à leur propre format -- par exemple, en choisissant Anglais (Royaume-Uni), on affiche « 28 Sept 2026 » et « 28/09/2026 » à la place.
 
-1. Sur la page Paramètres, trouvez la fiche **Région** et cliquez pour la modifier.
+1. Sur la page Paramètres, cliquez sur **Région** dans la liste de gauche, puis cliquez sur **Modifier** dans la section **Région**.
 2. Choisissez votre région dans la liste déroulante **Région**. Chaque option affiche une date d'exemple pour que vous puissiez voir exactement comment les dates seront affichées.
 3. Cliquez sur **Enregistrer**.
 
-La fiche Région affiche alors votre région sélectionnée, un échantillon du **format de date** et votre format de **numéros de téléphone**.
+La section Région affiche alors votre région sélectionnée, un échantillon du **format de date** et votre format de **numéros de téléphone**.
 
 ### Format des numéros de téléphone
 
-La même fiche Région comporte un paramètre **Numéros de téléphone** qui contrôle la façon dont les numéros de téléphone sont saisis dans la fiche d'une personne :
+La même section Région comporte un paramètre **Numéros de téléphone** qui contrôle la façon dont les numéros de téléphone sont saisis dans la fiche d'une personne :
 
 - **International (avec indicatif du pays)** -- la valeur par défaut. Les champs de téléphone affichent un sélecteur de drapeau de pays et enregistrent les numéros avec l'indicatif du pays (par exemple, +1 918 555 1234).
 - **Local (tel que saisi)** -- les champs de téléphone deviennent de simples zones de texte et enregistrent les numéros exactement comme vous les saisissez, sans ajouter d'indicatif du pays (par exemple, 0701 234 5678). Choisissez cette option si votre église écrit les numéros dans un format local et ne veut pas que B1 ajoute un indicatif du pays.
 
-Lorsque **Local** est sélectionné, la fiche Région affiche aussi « Numéros de téléphone locaux » à côté de votre région.
+Lorsque **Local** est sélectionné, la section Région affiche aussi « Numéros de téléphone locaux » à côté de votre région.
 
 :::tip
 Les SMS fonctionnent mieux lorsque les numéros comprennent l'indicatif du pays. Si vous envoyez des textos depuis B1, gardez le format **International**, ou assurez-vous que les numéros saisis en mode Local comprennent l'indicatif du pays.
@@ -86,7 +86,7 @@ Votre région s'applique aux dates et heures dans tout B1 Admin et sur votre sit
 
 Connectez un fournisseur de SMS pour envoyer des messages texte à une personne ou à un groupe entier à partir de B1 Admin. Les textes sont envoyés via votre propre compte auprès du fournisseur, de sorte que ses tarifs et limites s'appliquent.
 
-1. Sur la page Paramètres, trouvez la fiche **SMS** et cliquez pour la modifier.
+1. Sur la page Paramètres, cliquez sur **SMS** dans la liste de gauche, puis cliquez sur **Modifier** dans la section **SMS**.
 2. Choisissez un **Fournisseur** :
    - **Clearstream** -- entrez une **Clé API**. Créez-en une dans Paramètres du compte Clearstream sous Clés API.
    - **Text In Church** -- entrez une **Clé API**. Demandez d'abord l'accès à l'API de développement au support Text In Church, puis créez une clé dans vos Paramètres du compte > section API de développeur.
@@ -95,7 +95,17 @@ Connectez un fournisseur de SMS pour envoyer des messages texte à une personne 
 
 Pour arrêter la messagerie texte, définissez **Fournisseur** sur **Aucun** et enregistrez. Cela supprime le fournisseur enregistré.
 
-Une fois qu'un fournisseur est connecté, le personnel autorisé à envoyer des textes voir une icône de texte dans l'en-tête d'un groupe (**Texte à ce groupe**) et d'une personne avec un téléphone mobile (**Envoyer un message texte**). Tapez votre message et cliquez sur **Envoyer**. La boîte de dialogue compte les caractères et les segments SMS. Pour un groupe, elle affiche combien de membres recevront le texte avant que vous l'envoyiez :
+### Désabonnement des personnes qui répondent STOP {#opting-out-people-who-reply-stop}
+
+Une fois le fournisseur enregistré, rouvrez la section SMS avec **Modifier**. Sous les paramètres du fournisseur, un champ en lecture seule **URL du webhook des messages entrants (STOP)** affiche une adresse web propre à votre église. Cliquez sur le champ pour sélectionner l'adresse, copiez-la et collez-la dans le paramètre de webhook de messages entrants (réponses) de votre fournisseur de SMS. Cela fonctionne avec l'un des fournisseurs ci-dessus qui peut transférer les réponses entrantes vers un webhook.
+
+Ensuite, lorsqu'une personne répond **STOP** (ou STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT ou REVOKE) à l'un de vos textes, B1 trouve toutes les personnes dont le numéro de mobile correspond, les marque comme désabonnées et désactive leurs rappels par SMS. Elles sont alors ignorées lors des envois de textes de groupe. Les autres réponses sont ignorées.
+
+:::info
+Ceci utilise le même paramètre de désabonnement que **Me cacher de l'annuaire des membres**, de sorte que les personnes qui répondent STOP apparaissent aussi comme **Masqué de l'annuaire** sur leur profil. Le champ n'apparaît que lorsque le fournisseur enregistré est sélectionné -- si vous changez le menu déroulant pour un autre fournisseur, enregistrez d'abord pour revoir l'URL.
+:::
+
+Une fois qu'un fournisseur est connecté, le personnel autorisé à envoyer des textes voit un bouton **Texte** sur la page d'un groupe (**Texte à ce groupe**) et d'une personne avec un téléphone mobile (**Envoyer un message texte**). Tapez votre message et cliquez sur **Envoyer**. La boîte de dialogue compte les caractères et les segments SMS. Pour un groupe, elle affiche combien de membres recevront le texte avant que vous l'envoyiez :
 
 - Les membres sans numéro de téléphone mobile archivé sont ignorés.
 - Les membres qui ont choisi **Me cacher de l'annuaire des membres** sont comptés comme désabonnés et ignorés.
@@ -115,7 +125,7 @@ Les textes peuvent également être envoyés automatiquement à partir d'une ét
 
 Par défaut, les fichiers que vous téléchargez sur votre site web (via [Fichiers](../website/files.md)) et d'autres zones de contenu utilisent le stockage hébergé gratuit de B1, jusqu'à 100 Mo. Si vous avez besoin de plus d'espace, vous pouvez connecter votre propre stockage cloud à la place -- les nouveaux téléchargements vont alors directement sur votre compte sans limite de plate-forme.
 
-1. Sur la page Paramètres, trouvez la fiche **Stockage de fichiers** et cliquez pour la modifier.
+1. Sur la page Paramètres, cliquez sur **Stockage de fichiers** dans la liste de gauche, puis cliquez sur **Modifier** dans la section **Stockage de fichiers**.
 2. Choisissez un fournisseur : **Google Drive**, **Dropbox**, **OneDrive**, ou un **bucket compatible S3** (AWS S3, Cloudflare R2, Backblaze B2, etc.).
 3. Pour Google Drive, Dropbox ou OneDrive, cliquez sur **Connecter** et connectez-vous pour autoriser l'accès. Pour un bucket compatible S3, entrez votre clé d'accès, secret, nom du bucket et base d'URL publique.
 4. Cliquez sur **Enregistrer**.
@@ -128,7 +138,7 @@ Cela affecte uniquement les nouveaux téléchargements vers les Fichiers de votr
 
 Si vous suivez la **classe** sur les enfants et les étudiants, B1 peut automatiquement promouvoir tout le monde une classe à une date que vous choisissez (par exemple, le 1er août) plutôt que de vous obliger à modifier chaque profil à la main.
 
-1. Sur la page Paramètres, trouvez l'option **Promotion de classe**.
+1. Sur la page Paramètres, cliquez sur **Promotion de classe** dans la liste de gauche, puis cliquez sur **Modifier** dans la section **Promotion de classe**.
 2. Activez le commutateur (il affiche **Activé**) et choisissez le **Mois** et le **Jour** pour promouvoir les classes chaque année. À cette date, chacun avec une classe monte d'une classe, et les élèves de 12e année deviennent **Diplômés**.
 3. Enregistrez vos modifications.
 
@@ -136,7 +146,7 @@ Pour arrêter la promotion automatique, éteignez le commutateur pour qu'il affi
 
 ## Importation et exportation
 
-Le bouton **Importation/Exportation** dans l'en-tête des Paramètres ouvre un outil dédié dans une nouvelle fenêtre de navigateur. Utilisez ceci pour :
+Le lien **Importation/Exportation** sous le nom de votre église sur la page Paramètres ouvre un outil dédié dans une nouvelle fenêtre de navigateur. Utilisez ceci pour :
 
 - Importer les données des membres d'un autre système de gestion d'église.
 - Exporter vos données ChurchApps pour la sauvegarde ou à titre de migration.

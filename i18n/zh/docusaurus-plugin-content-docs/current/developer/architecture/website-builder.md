@@ -74,6 +74,8 @@ B1App 提供的每个教会网站都从内容树（页面、部分、元素）�
 
 `sermons` 元素是教会类型中配置最多的：`layout` 答案选择 `browse`（旧版完整浏览器）、`grid`、`list` 或 `featuredLatest`，其中 `playlistId`、`itemCount`、`showTitles` 和 `showDates` 细化非浏览布局。
 
+`rawHTML` 元素有两个答案：`rawHTML`（标记）和 `javascript`。通过 `innerHTML` 插入的脚本永远不会执行，因此 `RawHTMLElement` 会将标记中的每个 `<script>` 节点重新创建为新元素。这些非解析器插入的节点在 CSP 的 `strict-dynamic` 下被信任。以 `<` 开头的 `javascript` 答案（粘贴的带有 `<script>` 标签的供应商代码段）会被解析为标记并获得相同的处理。否则它作为普通的内联脚本运行。B1Admin 会标记 JavaScript 框中的裸 URL，因为单独的 URL 会作为无操作脚本运行。当未配置 Maps API 密钥时，`map` 元素不渲染任何内容，也不加载 Google Maps 脚本。
+
 ### 渲染器（`@churchapps/apphelper`）
 
 渲染器位于 `Packages/apphelper/src/website/components/elementTypes/` 中，每种类型一个组件，通过 `ElementRegistry.ts` 进行解析——一个两层的地图，其中 `Element.tsx` 为所有 35 种类型注册默认渲染器（`registerDefaultElementRenderer`），而主机应用可以在运行时覆盖任何类型（`registerElementRenderer`）而不用分叉包。
@@ -137,11 +139,11 @@ B1App 提供的每个教会网站都从内容树（页面、部分、元素）�
 |---------|--------------|
 | 元描述 | `pages.metaDescription`（≤300 个字符）通过 `MetaHelper.getMetaData()` 流入 Next.js `Metadata`（描述 + Open Graph），在每个构建器渲染的路由上。B1Admin 的页面设置包括一个 AI"生成"按钮（见下文） |
 | 重定向 | 每个教会 `redirects` 行在 `/content/redirects` 管理（`content.edit`，200 行上限，规范化路径）。在可能的 404 上，B1App 的页面路由根据 `GET /content/redirects/public/:churchId` 解析路径，并通过 Next 的 `permanentRedirect` 发出 HTTP 308；不匹配的路径掉入 `notFound()` |
-| 品牌 404 | `not-found.tsx` 呈现 `BrandedNotFound`，带有教会的徽标、名称和主题，而不是通用错误 |
+| 品牌 404 | `not-found.tsx` 呈现 `BrandedNotFound`，带有教会的徽标、名称和主题，而不是通用错误。无法识别的 `/register/[eventId]` 也会返回真正的 404 |
 | 结构化数据 | 博客文章上的 `BlogPosting` JSON-LD；`VideoObject` 在每节课页面上（`/{sdSlug}/sermons/[sermonId]`）和在包含 `sermons` 元素的页面上；来自构建器页面上的日历/事件元素的 `Event`；来自 `serviceTimes` 元素的 schema.org `Event` |
 | 讲道页面 | 每个公开讲道获得一个在 `/sermons/[sermonId]` 的可爬行页面，包含完整元数据——讲道不再锁定在客户端浏览器元素内 |
-| 分析 | 公共设置键 `ga4MeasurementId`（在 B1Admin 中的重定向旁边管理）通过 `next/script` 注入每个教会的 GA4 gtag |
-| 网站地图和源 | 每个教会的 `sitemap.xml` 路由包括构建器页面和博客 URL；博客列表宣传 RSS 源 |
+| 分析 | 公共设置键 `ga4MeasurementId`（在 B1Admin 中的重定向旁边管理）通过 `next/script` 注入每个教会的 GA4 gtag。当它是有效的 `G-` ID 时（GTM 容器 ID 仅限网站），B1 应用（`/{sdSlug}/mobile`）也会将其页面浏览量发送到该 ID，同时发送 ChurchApps 自己的标签。每个 `gtag('config')` 都带有 `display_mode`，其值为 `installed` 或 `browser`，基于 `navigator.standalone` 或 `(display-mode: standalone)` 媒体查询（`B1App/src/helpers/mobileAnalytics.ts`） |
+| 网站地图和源 | 每个教会的 `sitemap.xml` 路由包括构建器页面、博客 URL 以及最近的 50 个讲道页面（其 `<lastmod>` 来自每个讲道的发布日期）。当它们有内容时（公开小组、报名计划），它还会列出内置的 `/sermons`、`/groups` 和 `/volunteer` 页面，除非已保存的重定向替换了该路径。博客列表宣传 RSS 源 |
 | 可访问性 | 公共 chrome 呈现在每个布局包装中针对 `<main id="main-content">` 地标的跳过链接 |
 
 ## AI 生成（AskApi）

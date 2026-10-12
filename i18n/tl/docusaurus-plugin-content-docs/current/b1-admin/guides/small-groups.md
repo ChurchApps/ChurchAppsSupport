@@ -35,7 +35,7 @@ Punuin ang inyong mga grupo ng mga miyembro at italaga ang mga lider na maaaring
 Sundin ang gabay sa [Mga Miyembro ng Grupo](../groups/group-members.md) para:
 
 1. Maghanap ng mga tao at idagdag sila sa naaangkop na mga grupo
-2. Italaga ang mga lider ng grupo gamit ang berdeng icon ng susi — nakakakuha ang mga lider ng karagdagang mga pahintulot
+2. Italaga ang mga lider ng grupo gamit ang star icon (**Make Leader**) — nakakakuha ang mga lider ng karagdagang mga pahintulot
 
 :::tip
 Maaaring pamahalaan ng mga lider ng grupo ang kanilang sariling kalendaryo ng grupo, mag-post ng mga pag-uusap, at mag-coordinate ng mga kaganapan nang hindi kailangan ng buong admin access.

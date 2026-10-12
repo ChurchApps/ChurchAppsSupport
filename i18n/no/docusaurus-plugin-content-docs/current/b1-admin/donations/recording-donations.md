@@ -22,28 +22,38 @@ Gaver registreres i B1 Admin via gavebuntsystemet. Du oppretter en gavebunt som 
 ## Opprette en gavebunt og legge til gaver
 
 1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i **B1 Admin** (søkefeltet øverst til venstre), utvid **Gaver** og klikk på **Gavebunter**.
-2. Klikk på **Legg til gavebunt**.
+2. Klikk på **Legg til gavebunt** øverst på siden.
 3. Skriv inn et navn på gavebunten (for eksempel «Søndagsoffer – 5. jan») og velg dato. Klikk på **Lagre**.
 4. Den nye gavebunten vises i listen med null gaver og 0,00 kr.
 5. Klikk på **navnet på gavebunten** for å åpne den.
 
 ## Registrere enkeltgaver
 
-1. På detaljsiden for gavebunten skriver du giverens navn i **søkefeltet** for å finne vedkommende.
-2. Etter at du har valgt en person, vises skjemaet for gaveregistrering med feltene **Dato**, **Betalingsmåte**, **Fond**, **Beløp** og **Sjekknummer**.
-3. Fyll ut opplysningene og klikk på **Legg til gave**.
-4. Gaven legges til i tabellen nedenfor, og skjemaet nullstilles slik at du kan registrere neste gave.
+1. På detaljsiden for gavebunten vises registreringspanelet for gaver ved siden av listen over gaver. Under **Velg person eller anonym** skriver du giverens navn i søkefeltet for å finne vedkommende, eller klikker på **Anonym**. (Å klikke på **Legg til gave** øverst på siden hopper til dette panelet.)
+2. Etter at du har valgt en person, viser skjemaet feltene **Dato**, **Metode** (Sjekk, Kontant, Kort eller Naturalgave), **Fond**, **Notater**, **Beløp** og **Sjekknr.** (eller **Siste 4 siffer** for kortgaver). Klikk på **Endre** ved siden av giverens navn for å velge en annen person.
+3. Fyll ut opplysningene og klikk på **Legg til gave** (eller trykk Enter).
+4. Gaven legges til i listen over gaver, og skjemaet nullstilles slik at du kan registrere neste gave.
 
 :::tip
 Du kan raskt registrere flere gaver på rad uten å forlate gavebuntsiden. Skjemaet nullstilles etter hver registrering, slik at du effektivt kan jobbe deg gjennom en bunke med sjekker eller konvolutter.
 :::
 
+## Registrere en gave fra en persons post {#logging-a-gift-from-a-persons-record}
+
+For å registrere en enkelt gave uten å åpne en gavebunt, åpner du giverens post under **Personer** og klikker på **Registrer gave** (i giveroversikten, eller på personens giveside).
+
+1. Angi **Dato** og **Beløp**.
+2. Velg **Fond** og **Metode** (Sjekk, Kontant, Kort eller Naturalgave), og skriv inn **Sjekknr.** eller **Siste 4 siffer** om nødvendig.
+3. Legg eventuelt til **Notater**, og klikk deretter på **Lagre**.
+
+Gaven lagres i gavebunten for den datoen. Finnes det ikke en gavebunt for den datoen ennå, opprettes en for deg, med datoen som navn.
+
 ## Dele en gave mellom flere fond
 
 Noen ganger gir en giver til mer enn ett fond i samme transaksjon. Slik gjør du det:
 
-1. Klikk på knappen **Rediger** på gaverader.
-2. Legg til beløp på ulike fond i redigeringsskjemaet. Totalen beregnes automatisk ut fra beløpene på de enkelte fondene.
+1. Under registreringspanelet klikker du på lenken **full redigering av gave** (eller klikker på **Rediger** på en eksisterende gaverad).
+2. I den fullstendige redigeringen legger du til beløp på ulike fond. Totalen beregnes automatisk ut fra beløpene på de enkelte fondene.
 3. Klikk på **Lagre** for å oppdatere gaven.
 
 :::info
@@ -55,7 +65,7 @@ Det er vanlig å dele gaver mellom fond når en giver skriver én sjekk som er �
 For å redigere en gave klikker du på knappen **Rediger** på raden i gavebunten. Du kan endre dato, beløp, fond, betalingsmåte eller andre detaljer. Klikk på **Lagre** når du er ferdig.
 
 :::tip
-Overskriften på gavebuntsiden oppdateres automatisk og viser totalt antall gaver og samlet beløp etter hvert som du legger til eller redigerer registreringer. Bruk dette til å avstemme mot innskuddsslippen.
+Linjen under navnet på gavebunten øverst på siden oppdateres automatisk og viser gavebuntens dato, antall gaver og samlet beløp etter hvert som du legger til eller redigerer registreringer. Bruk dette til å avstemme mot innskuddsslippen.
 :::
 
 ## Refundere en gave

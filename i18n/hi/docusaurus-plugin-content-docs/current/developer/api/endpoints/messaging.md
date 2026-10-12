@@ -33,6 +33,10 @@ Base path: `/messaging/conversations`
 
 `contentType: "person"` (किसी व्यक्ति रिकॉर्ड पर Notes टैब) या `contentType: "personConfidential"` (Confidential Notes सेक्शन) के साथ वार्तालाप सभी read और write पाथ पर gated हैं, अन्यथा-public routes सहित, जो इन content types के लिए `401` लौटाते हैं। `person` को MembershipApi **People / Edit** अनुमति की आवश्यकता होती है; `personConfidential` को **People / View Confidential Notes** की आवश्यकता होती है। scoped API keys के लिए, `people:write` दोनों actions को carries करता है (key के उपयोगकर्ता को अभी भी अंतर्निहित role अनुमति को hold करना होगा)।
 
+### Workflow card notes access control {#workflow-card-notes-access-control}
+
+`contentType: "workflowCard"` वाले वार्तालाप (वर्कफ़्लो कार्ड के notes, जहाँ `contentId` कार्ड का task ID है) केवल वही व्यक्ति पढ़ और लिख सकता है जो उस कार्ड को खोल सकता है: DoingApi **Tasks / View** अनुमति वाला उपयोगकर्ता, या वह व्यक्ति या समूह जिसे कार्ड असाइन किया गया है, जिसने उसे बनाया है, या जिसके बारे में वह है। अन्य सभी को हर read path पर `401` मिलता है, ऊपर के public routes सहित। कार्ड का वार्तालाप कार्ड के माध्यम से `POST /doing/tasks/:id/conversation` से संलग्न किया जाता है (body `{ "conversationId": "..." }`; जो वार्तालाप पहले संलग्न होता है वही रहता है), जिसे कार्ड के editors और उसका असाइनी कॉल कर सकते हैं।
+
 ### उदाहरण: एक वार्तालाप शुरू करें
 
 ```
@@ -168,12 +172,11 @@ Authorization: Bearer <token>
 
 Base path: `/messaging/notificationpreferences`
 
-Standard CRUD को extend करता है। Base class `POST /` (create या update, कोई अनुमति की आवश्यकता नहीं) प्रदान करता है।
-
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| POST | `/` | JWT | — | सूचना preferences बनाएं या अपडेट करें (CRUD base class से) |
+| GET | `/categories` | JWT | — | सूचना categories को उनके default और अनुमत channels के साथ सूचीबद्ध करें |
 | GET | `/my` | JWT | — | वर्तमान उपयोगकर्ता के लिए सूचना preferences लोड करें (यदि कोई मौजूद नहीं है तो स्वचालित रूप से defaults बनाता है) |
+| POST | `/` | JWT | — | वर्तमान उपयोगकर्ता की preferences सहेजें। Body: `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay` में से कोई भी, plus वैकल्पिक `overrides: [{ categoryKey, channel, optedIn }]` (channel `push`, `email`, `in_app`, या `sms` हो सकता है; locked categories अनदेखी की जाती हैं)। `allowSms` सदस्य की text reminders के लिए opt-in है। पुराने array-of-rows body अभी भी स्वीकार किया जाता है |
 
 ## Connections
 
@@ -254,6 +257,9 @@ SMS texting providers, समूह text messaging, और delivery tracking क
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
 | GET | `/providers` | JWT | — | चर्च के लिए texting providers लोड करें (credentials को mask किया गया है) |
+| GET | `/status` | JWT | — | `{ enabled }` -- क्या चर्च के पास एक enabled texting provider है। कोई भी signed-in चर्च उपयोगकर्ता; **Text** विकल्प केवल तभी दिखाने के लिए उपयोग होता है जब texts भेजे जा सकें |
+| GET | `/inboundUrl` | JWT | `texting.send` या `settings.edit` | `{ url }` -- provider में चिपकाने के लिए चर्च का inbound (STOP) webhook URL |
+| POST | `/inbound/:churchId/:token` | Public | — | Provider inbound-message webhook। `token` चर्च ID का HMAC है। ठीक एक stop word (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`) वाला reply मेल खाने वाले हर व्यक्ति को `optedOut` चिह्नित करता है और उनका `allowSms` बंद करता है। `{ optedOut: <count> }` लौटाता है; अन्य replies `{ optedOut: 0 }` लौटाते हैं |
 | GET | `/preview/:groupId` | JWT | — | एक समूह text के लिए प्राप्तकर्ताओं को preview करें (eligible, opted-out, no-phone counts) |
 | GET | `/sent` | JWT | — | चर्च के लिए सभी sent text संदेश रिकॉर्ड लोड करें |
 | GET | `/sent/:id/details` | JWT | — | एक sent text को per-recipient delivery logs के साथ लोड करें |

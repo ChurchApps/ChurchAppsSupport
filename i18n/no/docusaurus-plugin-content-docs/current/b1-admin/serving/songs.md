@@ -20,19 +20,19 @@ På Sanger-siden administrerer du lovsangsbiblioteket ditt. Samle alle sangdetal
 
 ## Bla i sangbiblioteket
 
-Når du åpner siden **Sanger**, vises sangene dine som kort. Hvert kort viser sangens miniatyrbilde, tittel, artist og varighet. Bla gjennom biblioteket eller bruk søk for å finne det du trenger.
+Når du åpner siden **Sanger**, vises sangene dine i en tabell. Hver rad viser sangens miniatyrbilde, tittel, artist og varighet. Bruk sidekontrollene under listen for å bla gjennom et stort bibliotek, eller søk for å finne det du trenger.
 
 ## Søke etter sanger
 
-1. Klikk på knappen **Søk** på Sanger-siden.
+1. Klikk i boksen **Søk i sanger** øverst på Sanger-siden.
 2. Skriv inn en sangs **tittel** eller **artist**.
-3. Resultatene filtreres mens du skriver, og viser samsvarende sanger fra biblioteket ditt.
+3. Listen filtreres mens du skriver, og viser samsvarende sanger fra biblioteket ditt og hvor mange som passer. Klikk på **Tøm** for å vise alle sangene igjen.
 
 ## Legge til en sang
 
-1. Klikk på **Legg til sang** på Sanger-siden.
-2. Søk i den eksterne sangdatabasen etter tittel eller artist.
-3. Velg sangen du vil legge til.
+1. Klikk på **Legg til sang** øverst på Sanger-siden.
+2. Søk i den eksterne sangdatabasen under **Søk etter en sang** etter **Tittel eller artist**.
+3. Velg sangen du vil legge til, eller klikk på **Opprett manuelt** hvis du ikke finner den.
 4. Sangen legges til i biblioteket ditt med grunnleggende detaljer ferdig utfylt.
 
 :::tip
@@ -48,12 +48,16 @@ Søkeresultatene dine kan også inneholde en seksjon **WorshipCommons — gratis
 
 Bare sanger som har bestått WorshipCommons' vurderingsprosess, vises her, så utvalget kan være mindre enn i hovedsangdatabasen.
 
+## Slette sanger {#deleting-songs}
+
+Merk av i boksen ved siden av én eller flere sanger (eller boksen i overskriften for å velge alle sangene som vises), klikk deretter på **Slett valgte** i linjen som dukker opp, og bekreft. Klikk på **Tøm** for å fjerne valget.
+
 ## Vise og redigere en sang
 
-Klikk på et sangkort for å åpne detaljsiden. Herfra kan du:
+Klikk på tittelen til en sang for å åpne detaljsiden. Tittel, artist og detaljer som album, toneart, lengde, BPM og taktart vises til venstre, sammen med arrangementene og eksterne lenker. Herfra kan du:
 
-- **Redigere sangdetaljer** -- Oppdatere tittel, artist, varighet og andre metadata.
-- **Administrere arrangementer** -- Hver sang kan ha flere arrangementer (for eksempel ulike tonearter eller versjoner). Legg til, rediger eller fjern arrangementer etter behov.
+- **Redigere sangdetaljer** -- Klikk på **Rediger** for å oppdatere tittel, artist, varighet og andre metadata. Klikk på **Ferdig** når du er ferdig. For å fjerne sangen fra biblioteket ditt, klikk på **Rediger** og deretter **Slett sang**.
+- **Administrere arrangementer** -- Hver sang kan ha flere arrangementer (for eksempel ulike tonearter eller versjoner). Klikk på **Legg til arrangement** for å opprette ett, og klikk på navnet til et arrangement under **Arrangementer** for å åpne det.
 - **Legge til tekster** -- Skriv inn eller oppdater teksten for hvert arrangement med ChordPro-notasjon (for eksempel `[G]Amazing grace`). En live forhåndsvisning ved siden av redigeringsfeltet viser det formaterte akkordarket mens du skriver, slik at du ser nøyaktig det laget ditt vil se.
 - **Angi toneart** -- Angi toneart for hvert arrangement med toneartsvelgeren ved siden av teksten. Når du endrer toneart, transponeres de viste akkordene umiddelbart, både på arrangementssiden og når du åpner sangen fra en gudstjenesteplan, slik at laget ditt alltid ser akkordene i den tonearten de faktisk spiller i.
 - **Legge til eksterne lenker** -- Legg ved lenker til ressurser som YouTube-videoer, akkordark eller noter som ligger andre steder.

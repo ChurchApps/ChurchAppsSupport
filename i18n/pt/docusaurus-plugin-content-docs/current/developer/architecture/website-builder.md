@@ -74,6 +74,8 @@ A árvore inteira para uma URL volta de uma única chamada anônima — `GET /co
 
 O elemento `sermons` é o mais configurável dos tipos de igreja: uma resposta `layout` seleciona `browse` (o navegador completo legado), `grid`, `list` ou `featuredLatest`, com `playlistId`, `itemCount`, `showTitles` e `showDates` refinando os layouts não-navegadores.
 
+O elemento `rawHTML` tem duas respostas: `rawHTML` (marcação) e `javascript`. Scripts inseridos via `innerHTML` nunca são executados, então `RawHTMLElement` recria cada nó `<script>` da marcação como um elemento novo. Esses nós não inseridos pelo parser são confiáveis sob o `strict-dynamic` da CSP. Uma resposta `javascript` que começa com `<` (um snippet de fornecedor colado com suas tags `<script>`) é interpretada como marcação e recebe o mesmo tratamento. Caso contrário, ela é executada como um script inline simples. O B1Admin sinaliza uma URL pura na caixa JavaScript, já que uma URL isolada executa como um script sem efeito. O elemento `map` não renderiza nada e não carrega o script do Google Maps quando nenhuma chave da API de Maps está configurada.
+
 ### Renderizadores (`@churchapps/apphelper`)
 
 Os renderizadores residem em `Packages/apphelper/src/website/components/elementTypes/`, um componente por tipo, resolvido através de `ElementRegistry.ts` — um mapa de duas camadas onde `Element.tsx` registra o renderizador padrão para todos os 35 tipos (`registerDefaultElementRenderer`) e um aplicativo hospedeiro pode substituir qualquer um deles em tempo de execução (`registerElementRenderer`) sem fazer fork do pacote.
@@ -137,11 +139,12 @@ Tudo isso é renderização no lado B1App sobre dados do ContentApi — a API ar
 |---------|--------------|
 | Meta descrições | `pages.metaDescription` (≤300 chars) flui através de `MetaHelper.getMetaData()` nos metadados Next.js `Metadata` (descrição + Open Graph) em cada rota renderizada pelo construtor. As configurações de página do B1Admin incluem um botão "Gerar" de IA (veja abaixo) |
 | Redirecionamentos | Linhas `redirects` por igreja gerenciadas em `/content/redirects` (`content.edit`, limite de 200 linhas, caminhos normalizados). Em um possível 404, a rota de página do B1App resolve o caminho contra `GET /content/redirects/public/:churchId` e emite um HTTP 308 através do `permanentRedirect` do Next; os caminhos não correspondidos caem através de `notFound()` |
-| 404 marcado | `not-found.tsx` renderiza `BrandedNotFound` com o logo, nome e tema da igreja em vez de um erro genérico |
+| 404 marcado | `not-found.tsx` renderiza `BrandedNotFound` com o logo, nome e tema da igreja em vez de um erro genérico. Uma `/register/[eventId]` desconhecida também retorna um 404 real |
 | Dados estruturados | JSON-LD `BlogPosting` em posts de blog; `VideoObject` nas páginas por sermão (`/{sdSlug}/sermons/[sermonId]`) e em páginas contendo um elemento `sermons`; `Event` de elementos de calendário/evento em páginas do construtor; `Event` schema.org a partir do elemento `serviceTimes` |
 | Páginas de sermão | Todo sermão público obtém uma página rastreável em `/sermons/[sermonId]` com metadados completos — os sermões não estão mais bloqueados dentro do elemento de navegador do lado do cliente |
-| Análise | A chave de configuração pública `ga4MeasurementId` (gerenciada ao lado de redirecionamentos no B1Admin) injeta um gtag GA4 por igreja via `next/script` |
-| Sitemap & feeds | A rota `sitemap.xml` por igreja inclui páginas do construtor e URLs de blog; a listagem de blog anuncia o feed RSS |
+| Análise | A chave de configuração pública `ga4MeasurementId` (gerenciada ao lado de redirecionamentos no B1Admin) injeta um gtag GA4 por igreja via `next/script`. O app B1 (`/{sdSlug}/mobile`) também envia suas visualizações de página para esse ID, junto com a tag própria da ChurchApps, quando é um ID `G-` válido (IDs de contêiner GTM permanecem apenas no site). Cada `gtag('config')` carrega um `display_mode` de `installed` ou `browser`, com base em `navigator.standalone` ou na media query `(display-mode: standalone)` (`B1App/src/helpers/mobileAnalytics.ts`) |
+| Sitemap & feeds | A rota `sitemap.xml` por igreja inclui páginas do construtor, URLs de blog e as 50 páginas de sermão mais recentes (com `<lastmod>` da data de publicação de cada sermão). Também lista as páginas integradas `/sermons`, `/groups` e `/volunteer` quando têm conteúdo (grupos públicos, planos de inscrição), a menos que um redirecionamento salvo substitua esse caminho;
+ a listagem de blog anuncia o feed RSS |
 | Acessibilidade | O chrome público renderiza um link de salto direcionado para o marco `<main id="main-content">` em cada wrapper de layout |
 
 ## Geração de IA (AskApi)

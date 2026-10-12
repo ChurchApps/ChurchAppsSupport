@@ -14,13 +14,7 @@ A seção **Grupos** permite organizar os membros da sua igreja em ministérios,
 
 Os grupos são organizados por **categoria**. Uma categoria é um rótulo de nível superior, como "Pequenos Grupos", "Ministérios" ou "Comitês". Cada categoria pode conter vários grupos, facilitando manter grupos relacionados juntos.
 
-Quando você abre a página de Grupos, verá um resumo no topo mostrando:
-
-- **Total de Grupos** — o número de grupos em todas as categorias
-- **Categorias** — o número de categorias de grupos que você criou
-- **Total de Membros** — a contagem combinada de membros em todos os grupos
-
-Abaixo do resumo, seus grupos estão listados por categoria com a contagem de membros mostrada para cada grupo.
+Quando você abre a página de Grupos, verá uma caixa **Pesquisar grupos...**, uma linha de botões de categoria e uma tabela dos seus grupos. Cada grupo mostra sua categoria e seus rótulos abaixo do nome, junto com a contagem de membros. Clique em **Todos** ou no nome de uma categoria para filtrar a lista (categorias extras ficam em **Mais categorias**), e clique no cabeçalho da coluna **Nome** ou **Pessoas** para ordenar.
 
 ## O Que Você Pode Fazer
 
@@ -38,7 +32,7 @@ Aqui está o que você pode realizar na seção Grupos:
 
 ## Primeiros Passos
 
-Para acessar Grupos, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo do B1 Admin), expanda **People**, e clique em **Groups**. Você verá todos os seus grupos existentes organizados por categoria.
+Para acessar Grupos, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo do B1 Admin), expanda **People**, e clique em **Groups**. Você verá todos os seus grupos existentes, que podem ser filtrados por categoria.
 
 :::tip
 Se você está apenas começando, comece criando algumas categorias que correspondam à estrutura da sua igreja (por exemplo, "Ministérios", "Pequenos Grupos", "Comitês"). Em seguida, adicione grupos individuais dentro de cada categoria. Veja [Criando Grupos](./creating-groups.md) para um passo a passo.

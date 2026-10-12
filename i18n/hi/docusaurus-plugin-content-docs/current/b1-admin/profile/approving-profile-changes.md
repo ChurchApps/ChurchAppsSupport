@@ -24,8 +24,8 @@ title: "प्रोफाइल परिवर्तनों को approve �
 
 **Dashboard से (आपका home page):**
 1. B1 Admin में लॉगिन करें — Dashboard automatically load होगा।
-2. दाईं ओर **Tasks** section में, **Assigned to My Groups** tab पर क्लिक करें।
-3. कोई भी pending profile change requests वहां listed होंगे।
+2. **My tasks** section में, **All tasks** पर क्लिक करें। (My tasks में केवल वे खुले कार्य सूचीबद्ध होते हैं जो आपको व्यक्तिगत रूप से सौंपे गए हैं।)
+3. **Assigned to My Groups** tab पर क्लिक करें। कोई भी pending profile change requests वहां listed होंगे।
 
 **Serving → My Work से:**
 1. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin के ऊपरी-बाएं में खोज बार) और **Serving** को expand करें।

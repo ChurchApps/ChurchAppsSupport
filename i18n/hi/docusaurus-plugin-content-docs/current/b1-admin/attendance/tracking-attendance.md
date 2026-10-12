@@ -6,7 +6,7 @@ title: "उपस्थिति की ट्रैकिंग"
 
 <div class="article-intro">
 
-एक बार जब आपके कैंपस, सेवा समय, और समूह कॉन्फ़िगर हो जाते हैं, तो B1 Admin उपस्थिति डेटा को review करना और trends को spot करना आसान बनाता है। Attendance page दो reporting views प्रदान करता है -- **Attendance Trend** tab चर्च-व्यापी trends के लिए और **Group Attendance** tab group-level detail के लिए। इन tools का उपयोग करके growth patterns को समझें, declining engagement को identify करें, और अपने चर्च के लिए data-driven decisions लें।
+एक बार जब आपके कैंपस, सेवा समय, और समूह कॉन्फ़िगर हो जाते हैं, तो B1 Admin उपस्थिति डेटा को review करना और trends को spot करना आसान बनाता है। Attendance page इस सप्ताह की attendance का सारांश खोलता है, और इसकी **All years** reports दो मुख्य views प्रदान करती हैं -- **Attendance Trend** tab चर्च-व्यापी trends के लिए और **Group Attendance** tab group-level detail के लिए। इन tools का उपयोग करके growth patterns को समझें, declining engagement को identify करें, और अपने चर्च के लिए data-driven decisions लें।
 
 </div>
 
@@ -21,8 +21,12 @@ title: "उपस्थिति की ट्रैकिंग"
 ## Attendance Trends को Viewing करना
 
 1. **B1 Admin** खोलें, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (शीर्ष-बाएं खोज बार) खोलें, **People** विस्तृत करें, और **Attendance** पर क्लिक करें।
-2. **Attendance Trend** tab पर क्लिक करें।
+2. बाएं कॉलम में **All years** पर क्लिक करें। **Attendance Trend** tab डिफ़ॉल्ट रूप से चुना होता है।
 3. Report स्वचालित रूप से tab खुलने पर चलता है, प्रत्येक week के लिए कुल attendance दिखाता है।
+
+:::tip
+इस सप्ताह का त्वरित अवलोकन पाने के लिए, मुख्य Attendance पृष्ठ दिखाता है कि इस सप्ताह कमरे में कितने लोग हैं, प्रति कमरा (समूह) विभाजन, कोई भी अतिथि, और चेक-इन का 13-सप्ताह का बार चार्ट -- किसी report की आवश्यकता नहीं।
+:::
 
 ## अपने Data को Filter करना
 
@@ -44,7 +48,7 @@ Reports हर बार जब आप Attendance Trend tab खोलते ह�
 
 **Group Attendance** tab दिखाता है कि हर group session में कौन attend किया। यह useful है जब आप overall service numbers को देखने के बजाय एक specific class, ministry team, या small group को monitor करना चाहते हैं।
 
-1. **Group Attendance** tab को select करें।
+1. **All years** reports में **Group Attendance** tab को select करें।
 2. Optionally एक **Campus** और **Service** choose करें।
 3. **Start Date** और **End Date** सेट करें। डिफ़ॉल्ट रूप से report last Sunday से आज का सिलसिला देता है।
 4. **Run Report** पर क्लिक करें।

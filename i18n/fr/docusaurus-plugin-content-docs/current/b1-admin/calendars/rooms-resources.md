@@ -20,7 +20,7 @@ Les salles et ressources vous permettent de suivre les espaces réservables et l
 
 ## Ouverture des salles et ressources
 
-Dans B1 Admin, ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Calendriers**, et cliquez sur **Salles et ressources**. La page a quatre onglets : **Salles**, **Ressources**, **Blocages**, et **Modèles**.
+Dans B1 Admin, ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Calendriers**, et cliquez sur **Salles et ressources**. La page a quatre onglets : **Salles**, **Ressources**, **Blocages**, et **Modèles**. Le bouton d'ajout en haut de la page change selon l'onglet sélectionné, et une zone **Rechercher** vous permet de filtrer la liste en cours.
 
 ## Salles
 
@@ -28,7 +28,7 @@ Les salles sont des espaces physiques qui peuvent être réservés avec des év�
 
 ### Ajouter une salle
 
-1. Sous l'onglet **Salles**, cliquez sur **Ajouter une salle**.
+1. Sous l'onglet **Salles**, cliquez sur **Ajouter une salle** en haut de la page.
 2. Entrez un **nom** pour la salle.
 3. Optionnellement définissez une **capacité** (nombre maximum de personnes).
 4. Définissez un **groupe d'approbation** — quand un groupe demande cette salle, les responsables du groupe choisi sont notifiés et doivent approuver la réservation. Laissez vide si aucune approbation n'est nécessaire.
@@ -36,7 +36,7 @@ Les salles sont des espaces physiques qui peuvent être réservés avec des év�
 
 ### Modification ou suppression d'une salle
 
-Cliquez sur l'icône de modification en regard de n'importe quelle salle, effectuez vos modifications, et cliquez sur **Enregistrer**. Utilisez **Supprimer** pour supprimer définitivement une salle.
+Cliquez sur **Modifier** en regard de n'importe quelle salle, effectuez vos modifications, et cliquez sur **Enregistrer**. Utilisez **Supprimer** pour supprimer définitivement une salle.
 
 ## Ressources
 

@@ -16,7 +16,7 @@ La section Profil vous permet de gérer les paramètres de votre compte personne
 
 - **Mettre à jour votre nom et votre e-mail** -- Gardez vos informations de contact à jour.
 - **Modifier votre mot de passe** -- Définissez un nouveau mot de passe pour votre compte.
-- **Changer les thèmes** -- Basculez entre le mode clair et le mode sombre selon votre préférence.
+- **Changer les thèmes** -- Basculez entre le mode clair et le mode sombre depuis le menu utilisateur (cliquez sur votre photo de profil dans le coin supérieur droit).
 - **Gérer les appareils connectés** -- Affichage et contrôle des appareils ChurchAppsPlayer liés à votre compte.
 - **Afficher les comptes liés** -- Voir et gérer tous les services externes connectés à votre compte ChurchApps.
 - **Approuver les demandes de modification de profil** -- Consulter et appliquer les mises à jour soumises par les membres.

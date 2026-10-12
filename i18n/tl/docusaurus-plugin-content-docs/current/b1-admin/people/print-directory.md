@@ -21,7 +21,7 @@ Ang tampok na Print Directory ay gumagawa ng naka-format at napi-print na direkt
 ## Pagbubukas ng Print Directory
 
 1. Pumunta sa **People** sa B1 Admin.
-2. I-click ang **icon ng print** (icon ng printer) sa toolbar sa itaas ng results card ng People. Lumilitaw ito sa tabi ng button na Export.
+2. I-click ang **Print Directory** sa header ng page ng People.
 3. Magbubukas ang Print Directory sa bagong tab ng browser at magsisimulang i-load ang datos ng iyong direktoryo.
 4. Pagkaraan ng mga 1.5 segundo, awtomatikong lilitaw ang print dialog ng iyong browser.
 
@@ -33,13 +33,13 @@ Nagbubukas ang direktoryo sa hiwalay na tab para makapag-print ka nang hindi uma
 
 Kasama sa print directory ang lahat ng **aktibong miyembro** ng inyong simbahan. Partikular:
 
-- Awtomatikong hindi isinasama ang mga taong may katayuang **Inactive** o **Visitor** sa pagiging miyembro.
+- Awtomatikong hindi isinasama ang mga taong may katayuang **Inactive**, **Visitor**, o **Deceased** sa pagiging miyembro.
 - Hindi isinasama ang mga taong **nag-opt out** sa direktoryo.
 - Ang lahat ng iba pa ay pinagpapangkat ayon sa **sambahayan**.
 
 ### Pag-print ng Iyong mga Resulta ng Paghahanap Lamang
 
-Pagkatapos mong magpatakbo ng paghahanap sa pahina ng People -- isang quick search, isang [Advanced Search](./searching-people.md#advanced-search), isang [Saved List](./lists.md), o isang [AI Search](./ai-search.md) -- magiging **Print Results** ang icon ng print. Kapag na-click ito, magpi-print ng direktoryo ng mga taong nasa iyong mga resulta lamang sa halip na ng buong simbahan, gamit ang parehong layout.
+Pagkatapos mong magpatakbo ng paghahanap sa pahina ng People -- isang quick search, isang [Advanced Search](./searching-people.md#advanced-search), isang [Saved List](./lists.md), o isang [AI Search](./ai-search.md) -- magiging **Print Results** ang button na **Print Directory**. Kapag na-click ito, magpi-print ng direktoryo ng mga taong nasa iyong mga resulta lamang sa halip na ng buong simbahan, gamit ang parehong layout.
 
 Kapag nagpi-print ng mga resulta ng paghahanap, hindi nalalapat ang filter ng katayuan ng pagiging miyembro sa itaas: kasama ang lahat ng hinanap mo, kahit ang mga Visitor o Inactive. Hindi pa rin isinasama ang mga taong nag-opt out sa direktoryo. Para bumalik sa pag-print ng buong direktoryo, i-clear muna ang iyong paghahanap.
 

@@ -22,7 +22,7 @@ L'ordine di servizio definisce la sequenza di elementi nel tuo servizio di culto
 
 1. Naviga a **Servizio** e seleziona il tuo ministero.
 2. Fai clic su un **tipo di piano**, quindi apri un **piano** specifico.
-3. Fai clic sulla scheda **Ordine di Servizio** nella pagina dei dettagli del piano.
+3. La sezione **Order of Service** si trova in alto nella pagina del piano, sopra **Serving Team Assignments**.
 
 ## Costruzione del Tuo Ordine di Servizio
 
@@ -38,8 +38,8 @@ L'ordine di servizio è un elenco di elementi disposti nella sequenza in cui si 
 
 ## Aggiunta di Elementi all'Ordine di Servizio
 
-1. Nella scheda **Ordine di Servizio**, fai clic su **Aggiungi Elemento**.
-2. Scegli il tipo di elemento che vuoi aggiungere (ad esempio, una canzone dalla tua libreria, un elemento personalizzato, un titolo, o un **Elemento Esterno**).
+1. Nella sezione **Order of Service**, fai clic su **Add** e scegli cosa aggiungere: **Add Section** (un titolo che raggruppa gli elementi), **Item** (un elemento personalizzato), **Song** (dalla tua libreria) o **Add From Lesson**. Puoi anche fare clic direttamente su **Add Section**.
+2. Per aggiungere qualcosa all'interno di una sezione, usa il menu di aggiunta nell'intestazione di quella sezione e scegli **Song**, **Item** o **External Item**.
 3. Inserisci i dettagli per l'elemento, come il titolo e qualsiasi nota.
 4. Fai clic su **Salva**.
 
@@ -49,7 +49,7 @@ Puoi aggiungere canzoni direttamente dalla tua libreria di [Canzoni](./songs.md)
 
 ### Importazione di Più Elementi da un Provider Esterno
 
-La scelta di **Elemento Esterno** apre un browser per i tuoi provider di lezioni collegati invece di un modulo di elemento singolo. Sfoglia (o cerca) il contenuto di un provider e seleziona la casella accanto a ogni sezione o azione che desideri. La finestra di dialogo tiene traccia di quanti hai selezionato (ad esempio, "3 selezionati") -- fai clic su **Importa (3)** per aggiungerli tutti all'ordine di servizio contemporaneamente, invece di ripetere il flusso aggiungi elemento per ognuno.
+La scelta di **Elemento Esterno** (o **Add From Lesson**) apre un browser per i tuoi provider di lezioni collegati invece di un modulo di elemento singolo. Sfoglia (o cerca) il contenuto di un provider e seleziona la casella accanto a ogni sezione o azione che desideri. La finestra di dialogo tiene traccia di quanti hai selezionato (ad esempio, "3 selezionati") -- fai clic su **Importa (3)** per aggiungerli tutti all'ordine di servizio contemporaneamente, invece di ripetere il flusso aggiungi elemento per ognuno.
 
 :::tip
 Questo è il modo più veloce per estrarre il contenuto di un'intera lezione di sezioni e spunti in un ordine di servizio in una sola volta, piuttosto che aggiungere ogni elemento individualmente.
@@ -108,8 +108,8 @@ La selezione in blocco si applica solo ai figli diretti di una sezione, non agli
 
 Se il tuo piano ha più di un orario di servizio (ad esempio, un servizio alle 8 e alle 10), puoi scegliere in quali servizi ogni elemento dovrebbe apparire. Questo è utile quando un annuncio è rilevante solo per un servizio, o quando una canzone viene cantata in un servizio ma non in un altro.
 
-1. Apri un piano che ha due o più orari di servizio definiti nella carta **Orari** nella scheda **Incarichi**.
-2. Sulla scheda **Ordine di Servizio**, fai clic su un elemento per modificarlo.
+1. Apri un piano che ha due o più orari di servizio. Fai clic su **Times** nella sezione **Serving Team Assignments** per vederli o aggiungerli.
+2. Nella sezione **Order of Service**, fai clic su un elemento per modificarlo.
 3. In **Includi nei Servizi**, vedrai una casella di controllo per ogni orario di servizio, etichettata con l'ora.
 4. Deseleziona qualsiasi servizio dove l'elemento dovrebbe essere saltato.
 5. Fai clic su **Salva**.
@@ -117,7 +117,7 @@ Se il tuo piano ha più di un orario di servizio (ad esempio, un servizio alle 8
 Per impostazione predefinita, ogni elemento è incluso in ogni servizio. Gli orari di servizio esclusi sono nascosti quando stampi il piano filtrato per quel servizio, quindi ogni servizio riceve un foglio di esecuzione pulito con solo gli elementi rilevanti.
 
 :::tip
-La sezione **Includi nei Servizi** appare solo quando il piano ha più di un orario di servizio. Se vedi solo un servizio, utilizza la carta **Orari** nella scheda **Incarichi** del piano per aggiungere servizi aggiuntivi prima.
+La sezione **Includi nei Servizi** appare solo quando il piano ha più di un orario di servizio. Se vedi solo un servizio, fai clic su **Times** nella sezione **Serving Team Assignments** del piano per aggiungere prima i servizi aggiuntivi.
 :::
 
 ### Mostrare una Posizione Diversa per Servizio
@@ -126,10 +126,10 @@ Se un elemento ha una **Posizione** impostata, ogni orario di servizio seleziona
 
 ## Condivisione dell'Ordine di Servizio
 
-Una volta che il tuo ordine di servizio è completo, puoi stampare il piano completo (incluso l'ordine di servizio) dalla pagina dei dettagli del piano. Questo dà al tuo team un'esecuzione completa del servizio, intestata con il nome della tua chiesa e il nome del piano. Quando **Mostra Nomi dei Volontari** è attivo per la stampa, ogni intestazione di sezione stampa anche con la posizione del volontario assegnato accanto a esso, in modo che il tuo team possa vedere chi sta coprendo quella sezione senza aprire l'app. Se la posizione di un'intestazione è sovrascritta per servizi specifici, la stampa mostra ogni nome di posizione distinto che si risolve in quei servizi (ad esempio, "Team di Culto / Team Giovani").
+Una volta che il tuo ordine di servizio è completo, puoi stampare il piano completo (incluso l'ordine di servizio) con il pulsante **Print** in alto nella pagina del piano. Questo dà al tuo team un'esecuzione completa del servizio, intestata con il nome della tua chiesa e il nome del piano. Quando **Mostra Nomi dei Volontari** è attivo per la stampa, ogni intestazione di sezione stampa anche con la posizione del volontario assegnato accanto a esso, in modo che il tuo team possa vedere chi sta coprendo quella sezione senza aprire l'app. Se la posizione di un'intestazione è sovrascritta per servizi specifici, la stampa mostra ogni nome di posizione distinto che si risolve in quei servizi (ad esempio, "Team di Culto / Team Giovani").
 
 ## Passi Successivi
 
 - Gestisci il tuo repertorio di culto nella pagina [Canzoni](./songs.md)
-- Assegna i volontari al servizio nella scheda [Piani](./plans.md) Incarichi
+- Assegna i volontari al servizio nella sezione [Serving Team Assignments](./plans.md#assigning-team-members) del piano
 - Crea [Attività](./tasks.md) per qualsiasi articolo di follow-up correlato al servizio

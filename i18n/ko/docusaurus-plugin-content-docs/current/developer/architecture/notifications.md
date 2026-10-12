@@ -15,7 +15,9 @@ title: "알림 및 미리 알림 아키텍처"
 ```
 scheduled anything ──▶ ReminderEngine (definitions → occurrences → scan) ─┐
 chat / requests / workflow / bulk sends ──────────────────────────────────┼─▶ createNotifications()
-                                                                          │    in_app gate → socket → push → email (→ sms slot)
+                                                                          │    in_app gate → socket → push → email
+     (reminder channels include sms) ──▶ ReminderEngine.sendSms() ──▶ sms gate → sendPersonText() via church provider
+provider STOP reply ──▶ POST /messaging/texting/inbound/:churchId/:token ──▶ SmsOptOutHelper.optOut()
 account/legal mail ──▶ TransactionalEmailHelper.sendTransactional()  [allowlisted, lint-enforced]
 ```
 
@@ -62,7 +64,7 @@ createNotifications(
 | 0 | **in_app / socket** | `in_app` 게이트를 먼저 확인합니다. 억제되면(음소거) 행은 `isNew=false`로 유지되고 배달이 완전히 중지됩니다 - 소켓 핑 없음, 배지 없음, 추가 에스컬레이션 없음. 그렇지 않으면 서버는 사람의 `alerts` 방에 대한 열린 소켓 연결을 찾고 `notification`(또는 `privateMessage`) 프레임을 푸시합니다. 일반 알림의 경우 성공적인 소켓 배달이 여기서 체인을 중지합니다 - 30분 타이머가 읽지 않은 항목을 다시 확인하고 나중에 에스컬레이션합니다. 직접 메시지는 소켓에서 절대 중지하지 않습니다: 설치된 PWA는 백그라운드에서 경고 소켓을 열어 둘 수 있으므로 OS 수준의 푸시를 억제합니다. |
 | 1 | **push** | `allowPush` / 카테고리 옵트 아웃 / 조용한 시간에 게이팅됩니다. 사람의 `devices` 행에서 찾은 Expo 푸시 토큰 및 웹 푸시 구독 모두에 보내며, 엔드포인트로 중복 제거하고 경로를 따라 오래된 토큰을 정리합니다. |
 | 2 | **email** | `emailFrequency` 및 카테고리 옵트 아웃에 게이팅됩니다. 즉시 송신(`emailImmediate`)은 즉시 렌더링되고 `deliveryLogs` 행을 작성합니다; 그렇지 않으면 알림은 배치 다이제스트를 위해 pending 상태로 유지되며, 아래에 설명되어 있습니다. |
-| — | **sms** | 기본 설정 배관(`allowSms`, 카테고리당 채널 목록)은 이미 SMS 채널을 고려하고 있지만 오늘날 어떤 생산자도 이를 통해 보내지 않습니다 - 그것은 `TextingController` / `@churchapps/texting`을 통해 별도의 격리된 흐름으로 실행되는 대량 SMS 제품을 위해 예약되어 있습니다. 워크플로우 **텍스트 보내기** 단계 작업(`StepActionHelper.sendText` → `MessagingModuleGateway.sendPersonText`)도 이 경로를 우회합니다: 이는 교회의 제공자를 통해 카드의 사람에게 직접 텍스트를 보내므로 알림 기본 설정과 조용한 시간이 적용되지 않습니다 - 사람의 `optedOut` 플래그만 존경됩니다. |
+| — | **sms** | 에스컬레이션 사다리의 수준이 아닙니다. 게이트가 적용되는 유일한 SMS 생산자는 미리 알림 엔진입니다: 정의의 `channels`에 `sms`가 포함되면 `ReminderEngine.sendSms()`가 푸시/이메일 알림**에 더해** 각 수신자에게 문자를 보냅니다([텍스트 미리 알림](#text-reminders) 참조). 대량 문자(`TextingController` / `@churchapps/texting`), 봉사 개요 **봉사자에게 문자** 발송(`MatrixTextHelper` → `MessagingModuleGateway.sendPersonText`), 그리고 워크플로우 **문자 보내기** 단계 작업(`StepActionHelper.sendText` → `sendPersonText`)은 모두 교회의 제공자를 통해 직접 문자를 보내므로 알림 기본 설정과 조용한 시간이 적용되지 않습니다 - 사람의 `optedOut` 플래그만 존중됩니다. |
 
 소켓이나 푸시에서 남겨진 읽지 않은 알림은 30분 타이머(`NotificationHelper.escalateDelivery`)로 에스컬레이션됩니다. 배치 이메일은 `NotificationHelper.sendEmailNotifications(frequency)`로 보내지며, 각 사람의 `emailFrequency` 기본 설정에 의해 주도됩니다: `individual`은 30분 타이머에서 실행되고, `daily`는 밤 타이머에서 실행됩니다. (`weekly`는 유효한 기본 설정 값이지만 아직 전용 배치 실행이 없습니다.)
 
@@ -83,6 +85,19 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 **확장**은 앞서 있는 지평선(순환 다중 일 창)에 대한 파이어 행을 구체화합니다. 밤 타이머에서 실행되고 정의가 저장될 때마다 동기식으로 실행되므로 마지막 순간 이벤트에 대한 미리 알림은 여전히 실행됩니다. 범위 정의는 어댑터의 `loadScopeEntities`를 통해 실행되어 구체적인 엔티티당 하나의 발생 집합을 생성합니다; 엔티티 수준의 발생은 `definitionId:occurrenceISO:offset` 키를 사용하는 반면, 범위이 발생은 엔티티 ID로 네임스페이스되어 충돌하지 않습니다. 발생을 업서트하면 **이전에 취소된 행을 부활**시킵니다 - cancel-then-re-expand는 기본 엔티티 변경 후 미리 알림을 다시 동기화하는 표준 방법입니다; 이미 `sent`, `failed`, 또는 `processing` 상태인 행은 그대로 유지됩니다.
 
 **발송**(`ReminderEngine.scan()`)은 30분 타이머에서 실행됩니다. 이는 만료된 발생을 청구합니다(리스를 통해 이중 처리 방지), 엔티티의 어댑터를 통해 수신자를 로드하고, 그 발생에 대한 `reminderSentLog`에 이미 기록된 사람을 필터링하고, `deliveryStartLevel: 1`(푸시로 직접 건너뛰기)과 함께 `createNotifications`를 호출합니다 정의의 채널에 이메일이 포함될 때 `emailImmediate`/`emailByPerson`.
+
+### 텍스트 미리 알림 {#text-reminders}
+
+정의의 `channels`에 `sms`가 포함되면 `scan()`은 새로 발송할 동일 수신자에 대해 푸시/이메일 알림을 만든 후 `ReminderEngine.sendSms()`를 호출합니다. 문자는 회원별로 옵트인입니다:
+
+- 각 수신자는 `PreferenceGateHelper.evaluate(..., "sms", ...)`를 거치므로 `allowSms`가 켜져 있어야 하며(기본값은 꺼짐이고 B1App의 **문자 메시지** 스위치에서 설정됨), 해당 카테고리의 `sms` 채널이 꺼지도록 재정의되어 있으면 안 됩니다. `event_reminders`, `serving_schedule`, `tasks`는 `defaultChannels`와 `allowedChannels` 모두에 `sms`를 나열합니다.
+- `mobilePhone`이 없거나 `optedOut`이 설정된 사람은 억제됩니다. 교회에 문자 제공자가 없으면 나머지 배치 전체가 `no_provider` 사유로 억제됩니다.
+- 본문은 `ReminderEngine.smsBody()`가 만들며 `"<Church name>: <message> Reply STOP to opt out."` 형식이고, 160자 세그먼트 하나로 잘립니다.
+- 각 수신자는 `channel: "sms"`와 상태 `sent` / `suppressed` / `failed`를 가진 자신의 `reminderSentLog` 행을 받으며, 푸시/이메일 행과 별도로 키가 지정되므로 실패한 문자가 푸시나 이메일을 다시 보내는 일은 없습니다.
+
+편집자는 `GET /messaging/texting/status`가 `{ enabled: true }`를 반환할 때만(교회의 첫 번째 문자 제공자가 활성화된 경우) **문자**를 제공합니다.
+
+**STOP 수신 거부.** `POST /messaging/texting/inbound/:churchId/:token`은 교회가 제공자에 붙여넣는 익명 웹훅입니다(B1Admin은 문자 설정에서 `GET /messaging/texting/inboundUrl`의 URL을 보여 줍니다). 토큰은 교회 ID의 HMAC입니다(`SmsOptOutHelper.token`). `SmsOptOutHelper.parse`는 Twilio 스타일 폼 필드와 Clearstream/TextInChurch 스타일 JSON을 받으며, 답장이 정확히 통신사 중지 단어(`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`)이면 휴대폰 번호가 일치하는 교회 내 제거되지 않은 모든 사람은 `people.optedOut = true`와 `allowSms = false`가 됩니다. 다른 답장은 확인만 되고 무시됩니다.
 
 내부 이벤트 버스는 밤 확장을 기다리지 않고 엔티티 변경에 반응합니다: 콘텐츠 이벤트(웹훅 디스패처를 통해) 및 계획/작업 업데이트 이벤트는 영향을 받는 엔티티에 대한 즉각적인 재확장 또는 취소를 트리거하고, 계획 업데이트는 또한 그 계획 유형과 연결된 모든 범위 정의를 재확장합니다.
 
@@ -120,14 +135,14 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 모든 송신은 `PreferenceGateHelper.evaluate()`을 통과합니다, 순수 함수(모든 상태가 전달되고 핫 경로에서 DB 호출 없음)는 `allow`, `suppress`, 또는 `defer`를 반환합니다. 계층은 순서대로 실행되고 먼저 결정하는 것이 이깁니다:
 
 1. **고정 카테고리** - 일부 카테고리는 필수(계층 0)이고 다른 모든 계층을 우회합니다.
-2. **마스터 음소거 / 채널 킬** - `masterMute`, `allowPush`, `allowSms`, 또는 `emailFrequency='never'`는 완전히 억제합니다.
+2. **마스터 음소거 / 채널 킬** - `masterMute`, `allowPush`, `allowSms`(기본적으로 꺼져 있음 - 회원이 옵트인함), 또는 `emailFrequency='never'`는 완전히 억제합니다.
 3. **조용한 시간** - 푸시 및 SMS만(이메일은 비침습적인 것으로 간주됨). 사람의 타임존에서 현재 벽시계 시간이 그들의 조용한 창에 떨어지면, 트랜잭션 카테고리는 여전히 통과합니다; 비트랜잭션 카테고리는 조용한 창의 끝으로 연기되며, `TimezoneHelper.wallClockToUtc`를 통해 DST 정정 UTC 순간으로 계산됩니다.
 4. **카테고리별 기본 설정 재정의** - 하나의 카테고리 × 채널 쌍에 대한 명시적 옵트 아웃; 부재는 카테고리의 기본값을 의미합니다.
 5. **엔티티별 음소거** - 특정 엔티티(예: 하나의 이벤트, 하나의 계획)에 대해 기록된 음소거는 카테고리 수준 설정보다 추가로 제한하지만, 발신자가 알림과 함께 엔티티 ID/유형을 제공할 때만 적용됩니다.
 
 관련 테이블: `notificationPreferences`(전역 - `masterMute`, `emailFrequency` of `individual|daily|weekly|never`, `allowPush`, 조용한 시간 창 + 타임존, `allowSms`), `notificationPreferenceOverrides`(카테고리 × 채널당), 그리고 `notificationEntityMutes`(엔티티당).
 
-이 게이트는 in-app(레벨 0), 푸시(레벨 1) 및 이메일(레벨 2) 내에서 경로 내에서 강제됩니다 - 즉시 미리 알림/다이제스트 이메일 포함. 트랜잭션 이메일(인증 코드, 비밀번호 재설정, 초대, 기부금 영수증)은 설계상 이를 우회합니다; 그것이 두 번째 경로의 전체 요점입니다.
+이 게이트는 in-app(레벨 0), 푸시(레벨 1) 및 이메일(레벨 2) 내에서 경로 내에서 강제됩니다 - 즉시 미리 알림/다이제스트 이메일 포함, 그리고 `ReminderEngine.sendSms()`의 미리 알림 문자에 대해서도 강제됩니다. 트랜잭션 이메일(인증 코드, 비밀번호 재설정, 초대, 기부금 영수증)은 설계상 이를 우회합니다; 그것이 두 번째 경로의 전체 요점입니다.
 
 ## 교회 저작 이메일 제한
 
@@ -158,9 +173,10 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 | 트랜잭션 경로 | `Api/src/shared/helpers/TransactionalEmailHelper.ts`, 린트 규칙 `Api/tools/eslint-rules/email-door.cjs` |
 | 교회 이메일 제한 | `Api/src/shared/helpers/ChurchEmailLimiter.ts`, `Api/src/lambda/ses-feedback-handler.ts`, `Api/src/modules/messaging/repositories/DeliveryLogRepo.ts` |
 | 미리 알림 엔진 | `Api/src/modules/messaging/helpers/ReminderEngine.ts`, `ReminderBootstrap.ts`, `helpers/adapters/*`, `controllers/ReminderController.ts` |
+| 문자 / STOP 수신 거부 | `Api/src/modules/messaging/helpers/SmsOptOutHelper.ts`, `controllers/TextingController.ts` (`/status`, `/inboundUrl`, `/inbound/:churchId/:token`), `Api/src/modules/doing/helpers/MatrixTextHelper.ts` (봉사 개요 **봉사자에게 문자**) |
 | 미리 알림 저장소 | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`, `ReminderOccurrenceRepo.ts`, `ReminderSentLogRepo.ts` |
 | 봉사/계획 이메일 | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`, `ReminderTokenHelper.ts`, `Api/src/shared/modules/DoingModuleGateway.ts` |
-| 미리 알림 편집자(B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx` |
+| 미리 알림 편집자(B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx`, `hooks/useTextingEnabled.ts` |
 | 미리 알림 편집자 / 기본 설정(B1App) | `EventReminderEdit.tsx`, `NotificationPrefsPage.tsx`, `useRealtimeNotifications.ts` |
 
 ## 관련 페이지

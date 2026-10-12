@@ -22,28 +22,38 @@ Das Aufzeichnen von Spenden in B1 Admin erfolgt über das Batches-System. Sie er
 ## Erstellen eines Batch und Hinzufügen von Spenden
 
 1. Öffnen Sie in **B1 Admin** das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Donations** (Spenden) und klicken Sie auf **Batches**.
-2. Klicken Sie auf **Add Batch** (Batch hinzufügen).
+2. Klicken Sie oben auf der Seite auf **Add Batch** (Batch hinzufügen).
 3. Geben Sie einen Namen für den Batch ein (z. B. "Sonntagsopfer - 5. Jan") und wählen Sie das Datum. Klicken Sie auf **Save** (Speichern).
 4. Ihr neuer Batch wird in der Liste mit null Spenden und 0,00 USD angezeigt.
 5. Klicken Sie auf den **Batch-Namen**, um ihn zu öffnen.
 
 ## Eingeben einzelner Spenden
 
-1. Geben Sie auf der Batch-Detailseite den Namen des Spenders in das **Suchfeld** ein, um ihn zu finden.
-2. Nachdem Sie eine Person ausgewählt haben, wird das Spendeneingabeformular mit Feldern für **Date** (Datum), **Payment Method** (Zahlungsmethode), **Fund** (Fonds), **Amount** (Betrag) und **Check Number** (Schecknummer) angezeigt.
-3. Füllen Sie die Details aus und klicken Sie auf **Add Donation** (Spende hinzufügen).
-4. Die Spende wird der Tabelle unten hinzugefügt, und das Formular wird zurückgesetzt, sodass Sie die nächste eingeben können.
+1. Auf der Batch-Detailseite erscheint das Eingabefeld für Spenden neben der Spendenliste. Geben Sie unter **Select Person or Anonymous** (Person oder anonym auswählen) den Namen des Spenders in das **Suchfeld** ein, um ihn zu finden, oder klicken Sie auf **Anonymous** (Anonym). (Ein Klick auf **Add Donation** oben auf der Seite springt zu diesem Feld.)
+2. Nachdem Sie eine Person ausgewählt haben, zeigt das Eingabeformular Felder für **Date** (Datum), **Method** (Methode: Check, Cash, Card oder In-Kind), **Fund** (Fonds), **Notes** (Notizen), **Amount** (Betrag) und **Check #** (Schecknummer) bzw. bei Kartengeschenken **Last 4 digits** (letzte 4 Ziffern). Klicken Sie neben dem Namen des Spenders auf **Change** (Ändern), um eine andere Person auszuwählen.
+3. Füllen Sie die Details aus und klicken Sie auf **Add Donation** (Spende hinzufügen) oder drücken Sie die Eingabetaste.
+4. Die Spende wird der Spendenliste hinzugefügt, und das Formular wird zurückgesetzt, sodass Sie die nächste eingeben können.
 
 :::tip
 Sie können schnell mehrere Spenden hintereinander eingeben, ohne die Batch-Seite zu verlassen. Das Formular wird nach jeder Eingabe zurückgesetzt, sodass Sie effizient durch einen Stapel von Schecks oder Umschlägen gehen können.
 :::
 
+## Eine Spende aus dem Datensatz einer Person erfassen
+
+Um eine einzelne Spende zu erfassen, ohne ein Bündel zu öffnen, öffnen Sie den Datensatz des Spenders unter **People** (Personen) und klicken Sie auf **Log a gift** (Spende erfassen), in der Übersicht der Spenden oder in der Giving-Ansicht der Person.
+
+1. Legen Sie das **Date** (Datum) und den **Amount** (Betrag) fest.
+2. Wählen Sie den **Fund** (Fonds) und die **Method** (Methode: Check, Cash, Card oder In-Kind) und geben Sie bei Bedarf die **Check #** (Schecknummer) oder die **Last 4 digits** (letzte 4 Ziffern) ein.
+3. Fügen Sie optional **Notes** (Notizen) hinzu und klicken Sie dann auf **Save** (Speichern).
+
+Die Spende wird für dieses Datum im Bündel gespeichert. Wenn es für dieses Datum noch kein Bündel gibt, wird automatisch eines erstellt, benannt nach dem Datum.
+
 ## Aufteilen einer Spende auf mehrere Fonds
 
 Manchmal gibt ein einzelner Spender in einer Transaktion an mehr als einen Fonds. Gehen Sie so vor:
 
-1. Klicken Sie auf die Schaltfläche **Edit** (Bearbeiten) in der Spendenzeile.
-2. Fügen Sie im Bearbeitungsformular Beträge zu verschiedenen Fonds hinzu. Die Gesamtsumme wird automatisch aus den einzelnen Fonds-Beträgen berechnet.
+1. Klicken Sie unter dem Eingabefeld auf den Link **full donation editor** (vollständiger Spendeneditor) oder klicken Sie in der Spendenzeile auf **Edit** (Bearbeiten).
+2. Fügen Sie im vollständigen Editor Beträge zu verschiedenen Fonds hinzu. Die Gesamtsumme wird automatisch aus den einzelnen Fonds-Beträgen berechnet.
 3. Klicken Sie auf **Save** (Speichern), um die Spende zu aktualisieren.
 
 :::info
@@ -55,7 +65,7 @@ Das Aufteilen von Spenden über Fonds ist üblich, wenn ein Spender einen einzel
 Um eine Spende zu bearbeiten, klicken Sie auf die Schaltfläche **Edit** (Bearbeiten) in ihrer Zeile im Batch. Sie können das Datum, den Betrag, den Fonds, die Zahlungsmethode oder ein anderes Detail ändern. Klicken Sie auf **Save** (Speichern), wenn Sie fertig sind.
 
 :::tip
-Die Kopfzeile der Batch-Seite wird automatisch aktualisiert, um die Gesamtzahl der Spenden und den kombinierten Dollarbetrag anzuzeigen, während Sie Einträge hinzufügen oder bearbeiten. Verwenden Sie dies, um gegen Ihren Einzahlungsschein zu reconcilieren.
+Die Zeile unter dem Batch-Namen oben auf der Seite wird automatisch aktualisiert, um das Batch-Datum, die Anzahl der Spenden und den kombinierten Dollarbetrag anzuzeigen, während Sie Einträge hinzufügen oder bearbeiten. Verwenden Sie dies, um gegen Ihren Einzahlungsschein zu reconcilieren.
 :::
 
 ## Rückerstattung einer Spende

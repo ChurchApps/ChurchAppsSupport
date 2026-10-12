@@ -65,11 +65,11 @@ GenericCrudController를 확장하여 `getById`, `post`, `delete` CRUD 경로를
 
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | 모든 예배 시간 목록을 가져옵니다. `?serviceId=`로 필터링합니다. `?include=groups`를 추가하면 그룹 데이터가 함께 반환됩니다 |
+| GET | `/` | JWT | — | 모든 예배 시간 목록을 가져옵니다. `?serviceId=`로 필터링합니다. `?include=groups`를 추가하면 그룹 데이터가 함께 반환됩니다. 각 행에는 계산된 `checkinOpen` 불리언이 포함됩니다(체크인 일정이 있고 그 기간이 지금 닫혀 있을 때만 false이며, 교회 현지 시간 기준) |
 | GET | `/:id` | JWT | — | ID로 예배 시간을 가져옵니다 |
 | GET | `/search?campusId=&serviceId=` | JWT | — | 캠퍼스와 예배로 예배 시간을 검색합니다 |
 | GET | `/public/:churchId` | Public | — | 교회의 캠퍼스 → 예배 → 시간 트리를 가져옵니다. 웹사이트 빌더의 `serviceTimes` 요소를 지원합니다 |
-| POST | `/` | JWT | Services.Edit | 예배 시간을 생성하거나 업데이트합니다 |
+| POST | `/` | JWT | Services.Edit | 예배 시간을 생성하거나 업데이트합니다. 선택적 일정 필드: `dayOfWeek`(0 = 일요일 … 6), `startTime` / `endTime`(`HH:mm`), `checkinOpenMinutes`(시작 전), `checkinCloseMinutes`(종료 후). `dayOfWeek`와 `startTime`이 모두 설정된 경우에만 체크인 시간이 제한됩니다 |
 | DELETE | `/:id` | JWT | Services.Edit | 예배 시간을 삭제합니다 |
 
 ## Group Service Times
@@ -192,6 +192,8 @@ Authorization: Bearer <token>
   }
 ]
 ```
+
+대상 예배 시간에 체크인 일정이 있고 체크인 기간이 닫혀 있으면 아무것도 저장되지 않으며, 응답은 `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }`입니다. 정원 및 자원봉사자 비율 위반도 409를 반환합니다(`error: "capacity"` 또는 `"ratio"`).
 
 ## Visit Sessions
 

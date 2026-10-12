@@ -28,13 +28,13 @@ Aquí está una descripción general de las características clave disponibles e
 
 7. **Importa y exporta datos** -- Trae datos de miembros desde un archivo CSV o migra desde otro sistema de gestión de iglesia como Breeze. También puedes exportar tu directorio a CSV en cualquier momento. Ver [Importar Datos](./importing-data.md) e [Exportar Datos](./exporting-data.md).
 
-8. **Gestiona perfiles** -- Ve y edita perfiles detallados para cada persona, incluyendo información de contacto, miembros del hogar, [membresías de grupo](../groups/group-members.md), [historial de asistencia](../attendance/tracking-attendance.md), [donaciones](../donations/recording-donations.md), y [formularios personalizados](../forms/creating-forms.md). Pasa el ratón sobre un correo electrónico, dirección o número de teléfono en el encabezado de perfil azul para copiarlo con un clic.
+8. **Gestiona perfiles** -- Ve y edita perfiles detallados para cada persona, incluyendo información de contacto, miembros del hogar, [membresías de grupo](../groups/group-members.md), [historial de asistencia](../attendance/tracking-attendance.md), [donaciones](../donations/recording-donations.md), y [formularios personalizados](../forms/creating-forms.md). Los datos de contacto y el hogar de la persona están a la izquierda del perfil, con resúmenes de su asistencia, donaciones, grupos, notas y formularios a su lado. Pasa el ratón sobre una dirección o un número de teléfono de casa o trabajo para copiarlo con un clic.
 
 9. **Asigna roles y permisos** -- Controla quién en tu equipo puede acceder a diferentes partes de B1 Admin asignando roles. Ver [Asignar Roles](./roles-permissions.md).
 
 ## Comenzar
 
-Para acceder a la sección de Personas, abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expande **People**, y haz clic en **Personas**. Verás tu directorio de iglesia completo con una barra de búsqueda en la parte superior y una lista de miembros debajo.
+Para acceder a la sección de Personas, abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expande **People**, y haz clic en **Personas**. Verás tu directorio de iglesia organizado por hogar, con una barra de búsqueda en la parte superior. Usa el selector **View as** para cambiar entre la lista de **Households** y una **Table** de personas individuales.
 
 :::tip
 Si estás configurando B1 por primera vez, comienza por [importar tus datos de miembros existentes](./importing-data.md). Luego revisa y limpia perfiles según sea necesario.

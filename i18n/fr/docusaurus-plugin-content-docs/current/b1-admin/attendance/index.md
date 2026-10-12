@@ -12,32 +12,36 @@ La section Présence dans B1 Admin vous donne une vue complète de qui assiste �
 
 ## Aperçu de la page
 
-Lorsque vous ouvrez la page Présence, vous verrez un en-tête avec les statistiques clés concernant la configuration de la présence de votre église :
+Pour ouvrir la page, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Personnes** et cliquez sur **Présence**. La page s'ouvre sur un résumé de **cette semaine** (du dimanche au samedi).
 
-- **Campus** -- le nombre d'emplacements physiques que vous avez configurés
-- **Heures de service** -- le nombre total de services sur tous les campus
-- **Groupes planifiés** -- groupes assignés à une heure de service spécifique
-- **Groupes non planifiés** -- groupes qui suivent la présence indépendamment d'une heure de service
+La colonne de gauche affiche les dates de la semaine et le nombre total de personnes **présentes dans la salle** : votre total de décomptes si des décomptes ont été saisis cette semaine, sinon le nombre de personnes enregistrées. Sous ce total, vous voyez combien ont été enregistrées, comptées et combien étaient des invités, ainsi qu'une répartition par service lorsque vous en avez plusieurs. Si personne ne s'est encore enregistré cette semaine, la page affiche la dernière semaine ayant eu de la présence.
 
-Sous l'en-tête, trois onglets organisent vos outils de suivi de la présence.
+La zone principale de la page affiche :
 
-## Onglets
+- **Salles** -- chaque groupe dans lequel des personnes se sont enregistrées cette semaine, avec le nombre d'enregistrements (et une barre de capacité pour les groupes ayant une capacité d'enregistrement). Cliquez sur un groupe pour l'ouvrir.
+- **Invités** -- personnes enregistrées comme invités cette semaine. Cliquez sur un nom pour ouvrir sa fiche.
+- **13 dernières semaines** -- un petit graphique à barres des enregistrements hebdomadaires, avec le nombre de semaines ayant eu des enregistrements.
+- **Décomptes cette semaine** -- décomptes saisis pour les services de cette semaine.
+
+## Actions {#actions}
+
+La colonne de gauche contient aussi les actions de la page. Chacune s'ouvre dans la zone principale ; cliquez sur le lien de retour **Présence** pour revenir au résumé hebdomadaire.
 
 ### Configuration
 
-L'onglet **Configuration** est l'endroit où vous configurez les éléments de base du suivi de la présence. Ici, vous définissez vos campus, ajoutez des heures de service à chaque campus et assignez des [groupes](../groups/creating-groups.md) à ces heures de service. Vous ne devez faire cela qu'une seule fois, bien que vous puissiez le mettre à jour chaque fois que votre horaire change. Voir [Configuration de la Présence](setup.md) pour une procédure pas à pas complète.
+Cliquez sur **Configuration** pour configurer les éléments de base du suivi de la présence. Ici, vous définissez vos campus, ajoutez des services et des heures de service à chaque campus (y compris un calendrier d'enregistrement facultatif pour chaque heure de service) et voyez quels [groupes](../groups/creating-groups.md) sont assignés à ces heures de service. Les nombres de campus, d'heures de service, de groupes planifiés et non planifiés, et de groupes au total apparaissent en haut. Vous n'avez besoin de le faire qu'une seule fois, bien que vous puissiez le mettre à jour chaque fois que votre horaire change. Voir [Configuration de la Présence](setup.md) pour une procédure pas à pas complète.
 
-### Présence
+### Toutes les années (Rapports) {#all-years-reports}
 
-L'onglet **Présence** affiche les tendances de présence au fil du temps. Utilisez les filtres pour affiner les résultats par plage de dates, campus ou heure de service et repérer rapidement les modèles dans vos données. Voir [Suivi de la Présence](tracking-attendance.md) pour les détails sur l'utilisation des rapports et des filtres.
+Cliquez sur **Toutes les années** pour ouvrir les rapports de présence. Les onglets en haut permettent de basculer entre **Tendance de la présence** (tendances de l'église au fil du temps), **Tendance des décomptes** (totaux de décomptes par semaine) et **Présence des groupes** (présence ventilée par groupe). Utilisez les filtres pour affiner les résultats par plage de dates, campus ou heure de service. Voir [Suivi de la Présence](tracking-attendance.md) pour les détails sur l'utilisation des rapports et des filtres.
 
-### Groupes
+### Entrer un décompte {#enter-headcount}
 
-L'onglet **Groupes** ventile la présence par groupe individuel. Ceci est utile lorsque vous souhaitez voir comment un groupe de petite taille, une classe ou une équipe de ministère spécifique se porte plutôt que de regarder les chiffres à l'échelle de l'église.
+Cliquez sur **Entrer un décompte** pour enregistrer un simple total pour un service, une heure de service ou un groupe au lieu d'une liste nommée. Voir [Entrée et Tendance des Décomptes](headcount-entry.md) pour les détails.
 
-### Comptages et tendance des comptages
+### Kiosque {#kiosk}
 
-L'onglet **Comptages** vous permet d'enregistrer un simple nombre total pour un service, une heure de service ou un groupe au lieu d'une liste nommée, et l'onglet **Tendance des comptages** trace ces totaux par semaine. Voir [Entrée et Tendance des Comptages](headcount-entry.md) pour les détails.
+Cliquez sur **Kiosque** pour ouvrir les paramètres du **Thème du kiosque**, où vous définissez les images de fond de la borne d'enregistrement et le comportement de l'écran inactif. Un lien **Borne d'enregistrement, QR et étiquettes** vous mène aux [paramètres complets de B1 CheckIn](check-in.md).
 
 ## Prochaines étapes
 

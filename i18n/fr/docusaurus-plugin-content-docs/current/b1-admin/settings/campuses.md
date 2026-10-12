@@ -19,11 +19,11 @@ Si votre église se réunit à plus d'un endroit, les **Lieux d'implantation** v
 
 ## Ouverture des paramètres de lieux d'implantation
 
-Dans B1 Admin, ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), choisissez **Paramètres > Paramètres**, et sélectionnez la fiche **Lieux d'implantation**. Vous pouvez également y aller directement à **/settings/campuses**. Vous verrez une liste de tous les lieux d'implantation configurés avec leur nom, emplacement et fuseau horaire.
+Dans B1 Admin, ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), choisissez **Paramètres > Paramètres**, et cliquez sur **Lieux d'implantation** dans la liste de gauche pour défiler jusqu'à la section **Lieux d'implantation**. Vous pouvez également y aller directement à **/settings/campuses**. Vous verrez une liste de tous les lieux d'implantation configurés avec leur nom, emplacement et fuseau horaire.
 
 ## Ajout d'un lieu d'implantation
 
-1. Cliquez sur **Ajouter un lieu d'implantation** (ou le bouton **+** s'il n'y a pas encore de lieux d'implantation).
+1. Cliquez sur **Ajouter un lieu d'implantation**.
 2. Remplissez les détails du lieu d'implantation :
    - **Nom** *(obligatoire)* — le nom d'affichage affiché dans tout B1 Admin (par exemple, « Lieu principal » ou « Lieu Nord »).
    - **Adresse** — l'adresse de rue du lieu d'implantation (utilisée pour l'affichage informatif ; pas la même que votre adresse d'église principale dans Paramètres d'église).

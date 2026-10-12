@@ -20,7 +20,7 @@ Users with Server.Admin permission can access the server admin panel from B1 Adm
 
 1. Log in to [admin.b1.church](https://admin.b1.church)
 2. Open the [Jump menu](../b1-admin/introduction.md#getting-around-with-the-jump-menu), expand **Settings**, and click **Server Admin**. (You can also go straight to `admin.b1.church/admin`.)
-3. The Server Admin panel has sections for Churches, Users, Impersonate User, Background Jobs, Commons, Usage Trends, Translation Lookups, Server Health, and Database Migrations
+3. The Server Admin panel lists its sections down the left side in three groups: **Directory** (Churches, Users, Impersonate User), **Operations** (Background Jobs, Commons, Usage Trends), and **System** (Translation Lookups, Server Health, Database Migrations)
 
 ## User Impersonation
 

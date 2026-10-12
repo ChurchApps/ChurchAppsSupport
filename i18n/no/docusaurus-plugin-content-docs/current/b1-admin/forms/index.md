@@ -24,6 +24,7 @@ Hvert skjema i listen viser navnet sitt og, hvis det er satt opp, en offentlig U
 Fra skjemasiden kan du:
 
 - **Legge til et skjema** -- Klikk på **Legg til skjema** for å opprette et nytt skjema.
+- **Finne et skjema** -- Skriv i feltet **Finn et skjema** for å filtrere listen etter navn.
 - **Redigere et skjema** -- Klikk på et skjemanavn for å åpne det og endre spørsmål, medlemmer eller innstillinger.
 - **Arkivere et skjema** -- Flytt skjemaer du ikke lenger trenger til fanen **Arkiverte skjemaer** for å holde listen ryddig.
 - **Gjenopprette et skjema** -- Bytt til fanen **Arkiverte skjemaer** og gjenopprett skjemaer du vil gjøre aktive igjen.

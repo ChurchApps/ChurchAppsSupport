@@ -94,6 +94,8 @@ POST /membership/users/register
 
 Crea un utente con una password temporanea e invia un'email di benvenuto con un link di autenticazione. Il primo utente registrato su una nuova istanza ottiene automaticamente l'accesso di amministratore del server.
 
+Sono accettati due campi facoltativi anti-bot: `website` (un campo nascosto honeypot che gli utenti reali lasciano vuoto) e `fillMs` (per quanti millisecondi è rimasto aperto il modulo). Se `website` è compilato oppure `fillMs` è inferiore a 2000, non viene creato alcun account, ma l'endpoint restituisce comunque un normale `200` così i bot non possono capire di essere stati rifiutati. I client che omettono entrambi i campi si registrano come di consueto.
+
 ### Registra una Nuova Chiesa
 
 ```

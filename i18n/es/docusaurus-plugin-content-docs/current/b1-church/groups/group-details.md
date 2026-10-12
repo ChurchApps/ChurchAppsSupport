@@ -49,6 +49,8 @@ Las pestañas disponibles son:
 Si es líder del grupo, tiene capacidades de edición adicionales:
 
 - **Crear y editar eventos** -- Agregue eventos al calendario del grupo desde la pestaña **Eventos**. Cuando crea un evento, puede reservar salas y recursos junto con él — seleccione entre salas y recursos disponibles, establezca tiempos de configuración y desmontaje opcionales, y la solicitud de reserva se envía automáticamente para aprobación.
+- **Editar eventos repetitivos** -- Cuando abres un evento repetitivo para editarlo, B1 primero pregunta qué fechas cambiar: **Solo esta fecha**, **Esta y todas las fechas siguientes** o **Todas las fechas**. Elige una y haz clic en **Guardar** para abrir el evento. Si elegiste **Solo esta fecha**, el interruptor **Recurrente** se oculta y tus cambios (o una eliminación) se aplican solo a esa fecha.
+- **Establecer recordatorios de eventos** -- Al editar un evento existente, activa **Enviar recordatorios** para recordar a las personas antes de que comience. Elige cuándo se envían, la **Hora del día**, **¿Quién debe recibir el recordatorio?** y un **Mensaje** opcional; luego elige **Push**, **Correo electrónico** o, si tu iglesia tiene mensajes de texto configurados, **Texto** en **Enviar por**. Los textos solo se envían a las personas que activaron los recordatorios de texto en sus [Preferencias de notificación](../getting-started/notification-preferences.md).
 - **Administrar recursos** -- Cargue archivos (hasta 100 MB de almacenamiento), agregue enlaces o elimine recursos existentes.
 - **Seguimiento de asistencia** -- Registre asistencia para sesiones de grupo desde la pestaña **Asistencia**.
 

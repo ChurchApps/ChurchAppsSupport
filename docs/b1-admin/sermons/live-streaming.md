@@ -19,14 +19,14 @@ The Live Stream Times page lets you configure your church's streaming schedule, 
 
 </div>
 
-The page has two main tabs: **Services** for managing your live stream schedule and **Settings** for configuring your streaming page.
+Live streaming is managed from two pages in the **Sermons** section of the Jump menu: **Live Stream Times** for managing your live stream schedule and **Settings** for configuring the tabs on your streaming page.
 
 ## Managing Services
 
 ### Adding a Service
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Sermons**, and click **Live Stream Times**.
-2. Click the **Add Service** button to create a new scheduled service.
+2. Click the **Add Service** button at the top of the page to create a new scheduled service. Existing services are listed in a table showing each service's name, time, provider, and duration; click the edit icon on a row to change it.
 3. Enter a **Service Name** (for example, "Sunday Morning").
 4. Set the **Service Time** -- choose the day and time your service begins.
 5. Set **Recurs Weekly** to **Yes** for regular weekly services, or **No** for a one-time event.
@@ -47,19 +47,19 @@ Your service will automatically update each week if set to recurring. You can ad
 
 ## Streaming Page Settings
 
-Click the **Settings** tab to customize the tabs and links that appear alongside your live stream.
+To customize the tabs and links that appear alongside your live stream, open the Jump menu, expand **Sermons**, and click **Settings**. The **Stream Settings** page shows your **Content Tabs** list.
 
 ### Adding Tabs
 
 1. Click the **Add** button to add a new tab to your live stream page.
-2. Choose the **Chat** pre-designed tab or add a custom tab with an external URL.
+2. Choose a **Link Type**: **External URL** for a custom link, or one of the pre-designed **Chat** or **Prayer** tabs.
 3. For the Chat tab, just give it a name in the **Tab Text** box and the setup is complete.
 4. For a linked tab, enter the tab name, choose an icon by clicking the icon button, and enter the URL.
 5. Your configured tabs will appear on the live streaming page for viewers to access additional resources and interactive features.
 
 ### Previewing Your Stream
 
-Click the **View Your Stream** button to see exactly how your live streaming page will look to visitors, including your logo, service times, and configured tabs.
+On the **Live Stream Times** page, click **View Your Stream** at the top of the page to see exactly how your live streaming page will look to visitors, including your logo, service times, and configured tabs.
 
 ## Setting Up Your YouTube Live Stream
 

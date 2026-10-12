@@ -20,7 +20,7 @@ Funds let you categorize donations by purpose so you can track how much your chu
 
 ## The Funds Page
 
-Navigate to **Donations > Funds** to see a list of all your funds. Each row shows the fund name and its **tax-deductible** status, which determines whether donations to that fund appear on year-end [giving statements](giving-statements.md).
+Navigate to **Donations > Funds** to see a list of all your funds. Each row shows the fund name and its **Tax Status** (tax-deductible or non-deductible), which determines whether donations to that fund appear on year-end [giving statements](giving-statements.md).
 
 ## Creating a New Fund
 
@@ -34,7 +34,7 @@ The new fund immediately appears in your list and is available when entering don
 
 ## Editing and Deleting Funds
 
-- To edit a fund, click the **Edit** button next to it. You can change the name, toggle the tax-deductible setting, or toggle **Visible to Donors** to show or hide it from donation forms.
+- To edit a fund, click **Edit** on its row. You can change the name, toggle the tax-deductible setting, or toggle **Visible to Donors** to show or hide it from donation forms.
 - To delete a fund, open the edit form and click **Delete**.
 
 :::warning
@@ -42,23 +42,23 @@ Deleting a fund does not remove donations that were previously assigned to it. T
 :::
 
 :::info
-Funds hidden from donors show a **Hidden** chip next to their name in this list. Hidden funds still work for donations recorded manually in B1 Admin -- they just don't appear as an option on the public or member donation forms.
+Funds hidden from donors show a **Hidden** badge next to their name in this list. Hidden funds still work for donations recorded manually in B1 Admin -- they just don't appear as an option on the public or member donation forms.
 :::
 
 ## Viewing Fund Details
 
 Click on a **fund name** to open its detail page. This page shows:
 
-- **Donation history** -- a list of all donations to this fund
-- **Date range filter** -- narrow the results to a specific time period
-- **Summary statistics** -- total donations, unique donors, and total dollar amount
+- **Summary** -- a line under the page title with the number of gifts, the number of donors, and the total dollar amount
+- **Date range filter** -- set a **Start Date** and **End Date** and click **Filter** to narrow the results to a specific time period
+- **Donation history** -- a list of donations to this fund with the date, batch, donor, and amount. Click **Export** above the list to download it as a CSV.
 
 This view is helpful when you need to report on a specific giving initiative or check progress toward a fundraising goal.
 
 ## Sorting and Exporting
 
 - Use the column headers to sort funds by name.
-- Click **Export to CSV** to download your fund list as a spreadsheet.
+- Click **Export** at the top of the page to download your fund list as a spreadsheet (CSV).
 
 :::tip
 Set up your funds before you start [recording donations](recording-donations.md). Having all funds in place ensures donations are categorized correctly from the start.

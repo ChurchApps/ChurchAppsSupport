@@ -24,7 +24,7 @@ title: "जन्मदिन और वर्षगांठ सूचिया
 2. Search box के नीचे, **Advanced** पर क्लिक करें।
 3. **Demographics** section को expand करें और **Birth Month** को check करें, फिर महीने को चुनें।
 4. Search को run करें — जिन सभी लोगों का जन्मदिन उस महीने में है वे results में दिखाई देते हैं।
-5. Dates को देखने के लिए, results के शीर्ष दाईं ओर **columns icon** पर क्लिक करें और **Birthday** column को enable करें। यदि आप वहां sort या print करना पसंद करते हैं तो list को spreadsheet के रूप में download करने के लिए **Export** का उपयोग करें।
+5. Dates को देखने के लिए, **View as** को **Table** पर स्विच करें, फिर page header में **Select columns** icon पर क्लिक करें और **Birthday** column को enable करें। यदि आप वहां sort या print करना पसंद करते हैं तो list को spreadsheet के रूप में download करने के लिए **Export** का उपयोग करें।
 
 ## एक वर्षगांठ सूची प्राप्त करना
 

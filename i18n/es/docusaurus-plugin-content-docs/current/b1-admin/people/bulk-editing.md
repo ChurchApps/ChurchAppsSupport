@@ -19,10 +19,11 @@ La edición masiva le permite actualizar varias personas a la vez, ahorrando tie
 
 1. Navegue a **Personas** en B1 Admin
 2. Use las herramientas de búsqueda o filtro para encontrar las personas que desea actualizar
-3. Marque las casillas junto al nombre de cada persona para seleccionarlas
-   - Puede seleccionar personas individualmente
-   - O use la casilla de verificación del encabezado para seleccionar todas las personas visibles en la página actual
-4. Una vez que haya seleccionado al menos una persona, aparecerá el botón **Acciones masivas**
+3. Marque las casillas para seleccionar personas
+   - En la vista **Households**, marcar un hogar selecciona a todos sus miembros
+   - En la vista **Table** (cambie con el selector **View as**), puede seleccionar personas individualmente
+   - O use la casilla de verificación encima de la lista para seleccionar todas las personas visibles
+4. Una vez que haya seleccionado al menos una persona, la barra encima de la lista mostrará cuántas están seleccionadas, junto con **Borrar selección** y un botón **Acciones**
 
 :::tip
 Si necesita actualizar un grupo grande de personas según criterios específicos, use la función de [Búsqueda con IA](./ai-search.md) o filtros para reducir su lista primero, luego seleccione todas las personas coincidentes.
@@ -30,19 +31,21 @@ Si necesita actualizar un grupo grande de personas según criterios específicos
 
 ## Acciones masivas disponibles
 
-El menú de **Acciones masivas** proporciona varias opciones:
+El menú de **Acciones** proporciona varias opciones:
 
 ### Actualizar estado de membresía
 
 Actualice el estado de membresía de todas las personas seleccionadas:
 
-1. Haga clic en **Acciones masivas** → **Establecer estado de membresía**
+1. Haga clic en **Acciones** → **Establecer estado de membresía**
 2. Elija el nuevo estado:
    - **Visitante** -- Asistentes por primera vez u ocasionales
+   - **Invitado** -- Invitados, como familias registradas en un quiosco de registro
    - **Asistente regular** -- Asistentes frecuentes que no son miembros
    - **Miembro** -- Miembros oficiales de la iglesia
    - **Personal** -- Miembros del personal de la iglesia
    - **Inactivo** -- Personas que ya no asisten
+   - **Fallecido** -- Personas que han fallecido
 3. Elija el modo de actualización:
    - **Sobrescribir todo** -- Reemplazar el estado actual de todas las personas seleccionadas
    - **Solo actualizar vacíos** -- Solo establecer el estado para personas que no tienen uno
@@ -52,7 +55,7 @@ Actualice el estado de membresía de todas las personas seleccionadas:
 
 Actualice el estado civil de forma masiva:
 
-1. Haga clic en **Acciones masivas** → **Establecer estado civil**
+1. Haga clic en **Acciones** → **Establecer estado civil**
 2. Seleccione el nuevo estado:
    - **Desconocido**
    - **Soltero**
@@ -66,7 +69,7 @@ Actualice el estado civil de forma masiva:
 
 Actualice la información de género de varias personas:
 
-1. Haga clic en **Acciones masivas** → **Establecer género**
+1. Haga clic en **Acciones** → **Establecer género**
 2. Seleccione el valor:
    - **No especificado**
    - **Masculino**
@@ -78,7 +81,7 @@ Actualice la información de género de varias personas:
 
 Controle si las personas han optado por no recibir comunicaciones:
 
-1. Haga clic en **Acciones masivas** → **Establecer exclusión**
+1. Haga clic en **Acciones** → **Establecer exclusión de directorio**
 2. Elija:
    - **No** -- Permitir comunicaciones (eliminar exclusión)
    - **Sí** -- Bloquear comunicaciones (establecer exclusión)
@@ -93,7 +96,7 @@ Tenga cuidado al cambiar el estado de exclusión. Las personas que se han exclui
 
 Agregue todas las personas seleccionadas a uno o más grupos:
 
-1. Haga clic en **Acciones masivas** → **Agregar a grupo**
+1. Haga clic en **Acciones** → **Agregar a grupo**
 2. Busque y seleccione el/los grupo(s) al que desea agregar personas
 3. Puede seleccionar múltiples grupos para agregar personas a todos ellos
 4. Haga clic en **Agregar a grupos**
@@ -104,7 +107,7 @@ Cada persona se agregará como miembro regular del/los grupo(s) seleccionado(s).
 
 Elimine todas las personas seleccionadas de uno o más grupos:
 
-1. Haga clic en **Acciones masivas** → **Eliminar de grupo**
+1. Haga clic en **Acciones** → **Eliminar de grupo**
 2. Busque y seleccione el/los grupo(s) del que desea eliminar personas
 3. Puede seleccionar múltiples grupos
 4. Haga clic en **Eliminar de grupos**
@@ -117,10 +120,9 @@ Esta acción solo elimina personas de los grupos especificados. No elimina sus r
 
 Elimine permanentemente las personas seleccionadas de su base de datos de la iglesia:
 
-1. Haga clic en **Acciones masivas** → **Eliminar**
-2. Revise la lista de personas que se eliminarán
-3. Escriba **DELETE** en el campo de confirmación
-4. Haga clic en **Confirmar eliminación**
+1. Haga clic en **Acciones** → **Eliminar**
+2. El cuadro **Eliminar personas seleccionadas** le pide que confirme cuántas personas se eliminarán
+3. Haga clic en **Eliminar**
 
 :::danger
 Eliminar personas es permanente y no se puede deshacer. Esto eliminará todos sus datos, incluidos:
@@ -161,7 +163,7 @@ Después de una clase de membresía, actualice a todos los asistentes al estado 
 
 1. Busque las personas que asistieron a la clase
 2. Selecciónelas todas
-3. Use **Acciones masivas** → **Establecer estado de membresía** → **Miembro**
+3. Use **Acciones** → **Establecer estado de membresía** → **Miembro**
 
 ### Organizar grupos pequeños
 
@@ -169,7 +171,7 @@ Agregue varias personas a un nuevo grupo pequeño:
 
 1. Busque las personas que desea en el grupo
 2. Selecciónelas
-3. Use **Acciones masivas** → **Agregar a grupo** y seleccione el grupo pequeño
+3. Use **Acciones** → **Agregar a grupo** y seleccione el grupo pequeño
 
 ### Limpiar datos
 
@@ -177,7 +179,7 @@ Complete el estado civil faltante para parejas casadas:
 
 1. Filtre por personas que están casadas (usando información del hogar)
 2. Seleccione aquellas con estado civil en blanco
-3. Use **Acciones masivas** → **Establecer estado civil** → **Casado** → **Solo actualizar vacíos**
+3. Use **Acciones** → **Establecer estado civil** → **Casado** → **Solo actualizar vacíos**
 
 ## Artículos relacionados
 

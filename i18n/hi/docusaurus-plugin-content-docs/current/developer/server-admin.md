@@ -20,7 +20,7 @@ Server.Admin permission वाले उपयोगकर्ता B1 Admin स
 
 1. [admin.b1.church](https://admin.b1.church) में लॉग इन करें
 2. [Jump menu](../b1-admin/introduction.md#getting-around-with-the-jump-menu) को खोलें, **Settings** को expand करें, और **Server Admin** को click करें। (आप `admin.b1.church/admin` पर सीधे भी जा सकते हैं।)
-3. Server Admin panel में Churches, Users, Impersonate User, Background Jobs, Commons, Usage Trends, Translation Lookups, Server Health, और Database Migrations के sections हैं।
+3. Server Admin panel बाईं ओर अपने sections को तीन समूहों में सूचीबद्ध करता है: **Directory** (Churches, Users, Impersonate User), **Operations** (Background Jobs, Commons, Usage Trends), और **System** (Translation Lookups, Server Health, Database Migrations)।
 
 ## User Impersonation
 

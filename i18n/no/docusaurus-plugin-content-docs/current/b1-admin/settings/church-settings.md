@@ -21,7 +21,7 @@ På siden Kirkeinnstillinger konfigurerer du grunnleggende informasjon om kirken
 ## Redigere kirkeinformasjonen
 
 1. I B1 Admin åpner du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvider **Innstillinger** og klikker på **Innstillinger**.
-2. Åpne delen **Kirkeinformasjon** og klikk på rediger-ikonet (blyanten).
+2. I delen **Kirkeinformasjon** (øverst på siden) klikker du på **Rediger**.
 3. Oppdater feltene du ønsker:
    - **Kirkens navn** -- Navnet som vises i alle ChurchApps-produkter.
    - **Adresse** -- Kirkens fysiske adresse.
@@ -32,7 +32,7 @@ På siden Kirkeinnstillinger konfigurerer du grunnleggende informasjon om kirken
 
 Kirken din får et gratis underdomene på **dinkirke.1.church**. Dette er nettadressen der medlemmer og besøkende finner kirkens tilstedeværelse på nett.
 
-1. På siden Innstillinger finner du feltet **Underdomene**.
+1. På siden Innstillinger klikker du på **Rediger** i delen **Kirkeinformasjon** og finner feltet **Underdomene**.
 2. Skriv inn ønsket underdomene (for eksempel «gracechurch» for gracechurch.1.church).
 3. Lagre endringene.
 
@@ -61,20 +61,20 @@ Velg hvilken dag kalenderne dine starter på. Nedtrekksmenyen **Første dag i uk
 
 Innstillingen **Region** styrer hvordan datoer og klokkeslett skrives i hele B1. Som standard bruker datoer amerikansk format (for eksempel «Sep 28, 2026» og «9/28/2026»). Kirker utenfor USA kan bytte til sitt eget format -- for eksempel viser valget engelsk (Storbritannia) «28 Sept 2026» og «28/09/2026» i stedet.
 
-1. På siden Innstillinger finner du kortet **Region** og klikker for å redigere det.
+1. På siden Innstillinger klikker du på **Region** i listen til venstre, og deretter på **Rediger** i delen **Region**.
 2. Velg region i nedtrekksmenyen **Region**. Hvert alternativ viser en eksempeldato, slik at du ser nøyaktig hvordan datoene kommer til å se ut.
 3. Klikk på **Lagre**.
 
-Kortet Region viser deretter den valgte regionen, et eksempel på **Datoformat** og formatet for **Telefonnumre**.
+Delen Region viser deretter den valgte regionen, et eksempel på **Datoformat** og formatet for **Telefonnumre**.
 
 ### Format for telefonnumre
 
-Det samme Region-kortet har en innstilling for **Telefonnumre** som styrer hvordan telefonnumre skrives inn på en persons profil:
+Den samme Region-delen har en innstilling for **Telefonnumre** som styrer hvordan telefonnumre skrives inn på en persons profil:
 
 - **Internasjonalt (med landskode)** -- standardvalget. Telefonfeltene viser en landsflagg-velger og lagrer numrene med landskode (for eksempel +1 918 555 1234).
 - **Lokalt (som skrevet)** -- telefonfeltene blir vanlige tekstfelt og lagrer numrene nøyaktig slik du skriver dem, uten at det legges til landskode (for eksempel 0701 234 5678). Velg dette hvis menigheten din skriver numre i et lokalt format og ikke vil at B1 skal legge til landskode.
 
-Når **Lokalt** er valgt, viser Region-kortet også «Lokale telefonnumre» ved siden av regionen din.
+Når **Lokalt** er valgt, viser Region-delen også «Lokale telefonnumre» ved siden av regionen din.
 
 :::tip
 Tekstmeldinger fungerer best når numrene inneholder landskode. Hvis du sender tekstmeldinger fra B1, bør du beholde formatet **Internasjonalt**, eller sørge for at numre du skriver inn i Lokalt-modus inneholder landskode.
@@ -86,7 +86,7 @@ Regionen din gjelder for datoer og klokkeslett i hele B1 Admin og på B1.church-
 
 Koble til en tekstmeldingsleverandør for å sende SMS til en person eller en hel gruppe fra B1 Admin. Meldingene sendes via din egen konto hos leverandøren, så leverandørens priser og begrensninger gjelder.
 
-1. På siden Innstillinger finner du kortet **Tekstmeldinger** og klikker for å redigere det.
+1. På siden Innstillinger klikker du på **Tekstmeldinger** i listen til venstre, og deretter på **Rediger** i delen **Tekstmeldinger**.
 2. Velg en **Leverandør**:
    - **Clearstream** -- skriv inn en **API-nøkkel**. Opprett en i Clearstream-kontoinnstillingene under API Keys.
    - **Text In Church** -- skriv inn en **API-nøkkel**. Be først Text In Church Support om tilgang til utvikler-API, og opprett deretter en nøkkel i kontoinnstillingene under Developer API.
@@ -95,7 +95,17 @@ Koble til en tekstmeldingsleverandør for å sende SMS til en person eller en he
 
 For å slutte å sende tekstmeldinger setter du **Leverandør** til **Ingen** og lagrer. Da fjernes den lagrede leverandøren.
 
-Når en leverandør er koblet til, ser medarbeidere med tillatelse til å sende tekstmeldinger et tekstikon i toppen av en gruppe (**Send SMS til denne gruppen**) og av en person med mobiltelefon (**Send tekstmelding**). Skriv meldingen og klikk på **Send**. Dialogen teller tegn og SMS-segmenter. For en gruppe viser den hvor mange medlemmer som får meldingen før du sender:
+### Melde av personer som svarer STOP {#opting-out-people-who-reply-stop}
+
+Når en leverandør er lagret, åpner du tekstmeldingsdelen igjen med **Rediger**. Under leverandørinnstillingene vises et skrivebeskyttet felt **URL for innkommende STOP-webhook** med en nettadresse som er unik for menigheten din. Klikk i feltet for å markere adressen, kopier den og lim den inn i leverandørens innstilling for innkommende meldinger (svar) som webhook. Dette fungerer med alle leverandørene ovenfor som kan videresende innkommende svar til en webhook.
+
+Etter det, når noen svarer **STOP** (eller STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT eller REVOKE) på en av meldingene dine, finner B1 alle med et mobilnummer som stemmer, markerer dem som reservert og slår av tekstpåminnelsene deres. De hoppes deretter over i gruppemeldinger. Andre svar ignoreres.
+
+:::info
+Dette bruker samme reservasjonsinnstilling som **Skjul meg fra medlemsregisteret**, så personer som svarer STOP vises også som **Skjult fra register** på profilen sin. Feltet vises bare når den lagrede leverandøren er valgt -- hvis du bytter til en annen leverandør i nedtrekksmenyen, må du lagre først for å se URL-en igjen.
+:::
+
+Når en leverandør er koblet til, ser medarbeidere med tillatelse til å sende tekstmeldinger en **Tekst**-knapp på siden til en gruppe (**Send SMS til denne gruppen**) og til en person med mobiltelefon (**Send tekstmelding**). Skriv meldingen og klikk på **Send**. Dialogen teller tegn og SMS-segmenter. For en gruppe viser den hvor mange medlemmer som får meldingen før du sender:
 
 - Medlemmer uten registrert mobiltelefon hoppes over.
 - Medlemmer som valgte **Skjul meg fra medlemsregisteret** regnes som reservert og hoppes over.
@@ -115,7 +125,7 @@ Tekstmeldinger kan også sendes automatisk fra et trinn i en [arbeidsflyt](../se
 
 Som standard bruker filer du laster opp til nettstedet ditt (via [Filer](../website/files.md)) og andre innholdsområder B1s gratis vertsbaserte lagring, opptil 100 MB. Hvis du trenger mer plass, kan du koble til din egen skylagring i stedet -- nye opplastinger går da rett til kontoen din uten grense fra plattformen.
 
-1. På siden Innstillinger finner du kortet **Fillagring** og klikker for å redigere det.
+1. På siden Innstillinger klikker du på **Fillagring** i listen til venstre, og deretter på **Rediger** i delen **Fillagring**.
 2. Velg en leverandør: **Google Drive**, **Dropbox**, **OneDrive** eller en **S3-kompatibel bøtte** (AWS S3, Cloudflare R2, Backblaze B2 osv.).
 3. For Google Drive, Dropbox eller OneDrive klikker du på **Koble til** og logger inn for å gi tilgang. For en S3-kompatibel bøtte skriver du inn tilgangsnøkkel, hemmelig nøkkel, bøttenavn og offentlig URL-base.
 4. Klikk på **Lagre**.
@@ -128,7 +138,7 @@ Dette påvirker bare nye opplastinger til Filer på nettstedet ditt og lignende 
 
 Hvis du registrerer **Klassetrinn** på barn og ungdom, kan B1 automatisk rykke alle opp ett klassetrinn på en dato du velger (for eksempel 1. august), i stedet for at du må redigere hver profil for hånd.
 
-1. På siden Innstillinger finner du alternativet **Klassetrinnsopprykk**.
+1. På siden Innstillinger klikker du på **Klassetrinnsopprykk** i listen til venstre, og deretter på **Rediger** i delen **Klassetrinnsopprykk**.
 2. Slå på bryteren (den viser **Aktivert**) og velg **Måned** og **Dag** for opprykk hvert år. På den datoen rykker alle med et klassetrinn opp ett trinn, og elever på 12. trinn blir **Uteksaminert**.
 3. Lagre endringene.
 
@@ -136,7 +146,7 @@ For å stoppe automatisk opprykk slår du bryteren av slik at den viser **Deakti
 
 ## Import og eksport
 
-Knappen **Import/eksport** i toppen av Innstillinger åpner et eget verktøy i et nytt nettleservindu. Bruk det til å:
+Lenken **Import/eksport** under navnet til kirken din på siden Innstillinger åpner et eget verktøy i et nytt nettleservindu. Bruk det til å:
 
 - Importere medlemsdata fra et annet kirkeadministrasjonssystem.
 - Eksportere ChurchApps-dataene dine for sikkerhetskopiering eller flytting.

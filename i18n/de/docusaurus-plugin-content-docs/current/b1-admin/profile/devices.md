@@ -29,7 +29,7 @@ Wenn du die Seite Geräte öffnest, siehst du eine Tabelle mit allen registriert
 
 ## Ein neues Gerät hinzufügen
 
-1. Klicke auf die Schaltfläche **Gerät hinzufügen** oben auf der Seite Geräte.
+1. Klicke auf die Schaltfläche **Add Screen** (Bildschirm hinzufügen) oben auf der Seite Geräte.
 2. Du wirst aufgefordert, einen **Pairing-Code** einzugeben.
 3. Finde den Pairing-Code, der auf dem ChurchAppsPlayer- oder FreePlay-Gerät angezeigt wird, das du verbinden möchtest.
 4. Gib den Code ein. Wenn es ein FreePlay TV ist, können Sie mit einem Dropdown-Menü **Pläne anzeigen für** den Plantyp auswählen, dem der Bildschirm folgen soll - lasse es auf **Keine**, um das Gerät nur zum Durchsuchen und für Benachrichtigungen zu verwenden.
@@ -41,7 +41,7 @@ Stelle sicher, dass das Gerät eingeschaltet und mit dem Internet verbunden ist,
 
 ## Bearbeitung einer Gerätebezeichnung
 
-1. Klicke auf den **Gerätenamen** in der Gerätetabelle.
+1. Klicke in der Gerätetabelle neben dem Gerät auf **Edit** (Bearbeiten).
 2. Aktualisiere das Label auf etwas Aussagekräftiges (z. B. "Sanctuary Main Screen" oder "Lobby Display").
 3. Speichern Sie deine Änderungen.
 

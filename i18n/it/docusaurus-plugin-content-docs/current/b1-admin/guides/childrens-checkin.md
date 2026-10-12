@@ -53,7 +53,7 @@ Segui la guida [Configurazione Presenze](../attendance/setup.md) per:
 
 1. Aggiungere il tuo campus (es. "Campus Principale")
 2. Aggiungere un servizio (es. "Culto della Domenica Mattina")
-3. Impostare l'orario del servizio (es. "9:00")
+3. Impostare l'orario del servizio (es. "9:00") e, facoltativamente, una [pianificazione del check-in](../attendance/setup.md#setting-a-check-in-schedule) in modo che il check-in si apra automaticamente prima di ogni servizio e si chiuda dopo di esso
 4. Assegnare i tuoi gruppi per bambini al servizio
 
 ## Passaggio 4: Configura l'App di Check-In

@@ -23,8 +23,9 @@ The Plans Overview gives you a bird's-eye view of all your volunteer assignments
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Serving**, and click **Plans**.
 2. Select a **ministry tab** at the top of the page.
-3. Click on a **plan type** to open its plan list.
-4. Click the **Overview** button near the top of the page.
+3. Click **Overview** next to the plan type in the **Plan Types** list, or open the plan type and click **Overview** at the top of the page.
+
+The overview covers the plan type you opened it from. Click the plan type's name at the top of the overview to go back to its plan list.
 
 ## Reading the Overview Grid
 
@@ -52,15 +53,30 @@ This makes it possible to staff an entire schedule in one pass — work across w
 
 ## Auto-Scheduling from the Overview
 
-Click **Auto-Schedule** to have B1 fill every open, unfilled slot in the current grid at once. For each plan in view, it pulls candidates from the group linked to each position and fills empty slots automatically, reporting how many of the visible plans it was able to fill. Plans are filled one at a time so the same volunteer isn't double-booked across two dates in the same pass.
+Click **Auto-schedule** to have B1 fill every open, unfilled slot in the current grid at once. For each plan in view, it pulls candidates from the group linked to each position and fills empty slots automatically, reporting how many of the visible plans it was able to fill. Plans are filled one at a time so the same volunteer isn't double-booked across two dates in the same pass.
 
 :::info
-Auto-Schedule only fills slots that are already empty — it never replaces an existing assignment.
+Auto-schedule only fills slots that are already empty — it never replaces an existing assignment.
 :::
 
 ## Emailing Everyone Scheduled
 
 Click **Email Volunteers** to send a notification to every volunteer assigned anywhere in the currently filtered date range and ministry, in one action, rather than emailing plan-by-plan. B1 reports how many emails were sent and how many failed.
+
+## Texting Everyone Scheduled
+
+If your church has a [texting provider](../settings/church-settings.md#texting) connected and you can both edit plans and send texts, a **Text Volunteers** button appears at the top of the overview.
+
+1. Click **Text Volunteers**.
+2. The dialog shows how many volunteers will receive the text (for example, "12 of 14 volunteers will receive this text"), plus how many have opted out of texts and how many have no phone number on file.
+3. Type your **Message**. You can click a placeholder to insert each volunteer's name or your church name.
+4. Click **Send**. B1 reports how many texts were sent.
+
+Each volunteer assigned in the date range gets one text at the mobile number on their profile, even if they serve on several dates. People who share a phone number (such as a family phone) get only one text. Volunteers who replied STOP to an earlier text are skipped.
+
+:::info
+Texts are sent through your church's own texting provider, so its pricing applies. If your church is out of texting credits, sending stops and the dialog tells you. A single send reaches at most 200 volunteers; narrow the date range if you have more.
+:::
 
 ## Highlighting a Volunteer's Schedule
 
@@ -68,14 +84,10 @@ Use the **Highlight** dropdown to pick a person from your team — every cell wh
 
 ## Filtering the Overview
 
-You can adjust what the overview shows using the filter controls at the top:
+You can adjust what the overview shows using the controls above the grid. The grid updates as soon as you change them.
 
+- **All positions / Unfilled only** — Choose **Unfilled only** to hide rows where every date is already filled, so you can focus only on positions that still need a volunteer.
 - **Start Date / End Date** — By default the overview shows 12 weeks into the future. Enter custom dates to expand or narrow the range.
-- **Ministry** — Switch to a different ministry without leaving the overview.
-- **Plan Type** — Filter to a specific plan type within the selected ministry.
-- **Unfilled only** — Toggle this on to hide rows where every date is already filled, so you can focus only on positions that still need a volunteer.
-
-Click **Filter** after making changes to update the grid.
 
 ## Exporting to CSV
 

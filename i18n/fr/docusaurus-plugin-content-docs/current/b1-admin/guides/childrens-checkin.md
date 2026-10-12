@@ -53,7 +53,7 @@ Suivez le guide [Configuration des présences](../attendance/setup.md) pour :
 
 1. Ajouter votre campus (par exemple, « Campus principal »)
 2. Ajouter un culte (par exemple, « Culte du dimanche matin »)
-3. Définir l'horaire du culte (par exemple, « 9h00 »)
+3. Définir l'horaire du culte (par exemple, « 9h00 ») et, en option, un [calendrier d'enregistrement](../attendance/setup.md#setting-a-check-in-schedule) pour que l'enregistrement s'ouvre automatiquement avant chaque culte et se ferme après
 4. Affecter vos groupes d'enfants au culte
 
 ## Étape 4 : Configurer l'application d'enregistrement

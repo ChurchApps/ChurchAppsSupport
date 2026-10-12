@@ -33,6 +33,10 @@ Chemin de base : `/messaging/conversations`
 
 Les conversations avec `contentType: "person"` (l'onglet Notes sur un enregistrement de personne) ou `contentType: "personConfidential"` (la section Notes confidentielles) sont contrôlées à chaque chemin de lecture et d'écriture, y compris les itinéraires autrement publics ci-dessus, qui retournent `401` pour ces types de contenu. `person` nécessite la permission **People / Edit** de MembershipApi ; `personConfidential` nécessite **People / View Confidential Notes**. Pour les clés API avec portée, `people:write` porte les deux actions (l'utilisateur de la clé doit toujours détenir la permission de rôle sous-jacente).
 
+### Contrôle d'accès aux notes de carte de workflow
+
+Les conversations avec `contentType: "workflowCard"` (les notes d'une carte de workflow, où `contentId` est l'ID de la tâche de la carte) ne peuvent être lues et écrites que par une personne pouvant ouvrir cette carte : un utilisateur ayant la permission DoingApi **Tasks / View**, ou la personne ou le groupe auquel la carte est assignée, par qui elle a été créée ou qui en est l'objet. Toute autre personne reçoit `401` sur chaque chemin de lecture, y compris les itinéraires publics ci-dessus. La conversation d'une carte est rattachée via la carte elle-même avec `POST /doing/tasks/:id/conversation` (corps `{ "conversationId": "..." }` ; la première conversation rattachée l'emporte), que peuvent appeler les éditeurs de la carte et son assigné.
+
 ### Exemple : Commencer une conversation
 
 ```
@@ -168,12 +172,11 @@ Authorization: Bearer <token>
 
 Chemin de base : `/messaging/notificationpreferences`
 
-Étend CRUD standard. La classe de base fournit POST `/` (créer ou mettre à jour, pas de permission requise).
-
 | Méthode | Chemin | Auth | Permission | Description |
 |---------|--------|------|-----------|-------------|
-| POST | `/` | JWT | — | Créer ou mettre à jour les préférences de notification (à partir de la classe de base CRUD) |
+| GET | `/categories` | JWT | — | Lister les catégories de notification avec leurs canaux par défaut et autorisés |
 | GET | `/my` | JWT | — | Charger les préférences de notification pour l'utilisateur actuel (crée automatiquement les valeurs par défaut s'il n'en existe pas) |
+| POST | `/` | JWT | — | Enregistrer les préférences de l'utilisateur actuel. Corps : l'un des champs `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, plus `overrides: [{ categoryKey, channel, optedIn }]` facultatif (le canal peut être `push`, `email`, `in_app` ou `sms` ; les catégories verrouillées sont ignorées). `allowSms` est l'accord du membre pour les rappels par texto. Un corps au format tableau de lignes hérité est toujours accepté |
 
 ## Connexions
 
@@ -254,6 +257,9 @@ Gère les fournisseurs SMS, la messagerie texte en groupe et le suivi de la livr
 | Méthode | Chemin | Auth | Permission | Description |
 |---------|--------|------|-----------|-------------|
 | GET | `/providers` | JWT | — | Charger les fournisseurs de texte pour l'église (les credentials sont masqués) |
+| GET | `/status` | JWT | — | `{ enabled }` -- indique si l'église dispose d'un fournisseur de texte activé. Tout utilisateur connecté de l'église ; sert à n'afficher les options **Text** que lorsque des textos peuvent être envoyés |
+| GET | `/inboundUrl` | JWT | `texting.send` ou `settings.edit` | `{ url }` -- l'URL du webhook entrant (STOP) de l'église à coller dans le fournisseur |
+| POST | `/inbound/:churchId/:token` | Public | — | Webhook de messages entrants du fournisseur. `token` est un HMAC de l'ID de l'église. Une réponse qui est exactement un mot d'arrêt (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`) marque chaque personne correspondante comme `optedOut` et désactive son `allowSms`. Renvoie `{ optedOut: <count> }` ; les autres réponses renvoient `{ optedOut: 0 }` |
 | GET | `/preview/:groupId` | JWT | — | Aperçu des destinataires pour un texte de groupe (nombre admissible, nombre de refusés, nombre sans téléphone) |
 | GET | `/sent` | JWT | — | Charger tous les enregistrements de messages texte envoyés pour l'église |
 | GET | `/sent/:id/details` | JWT | — | Charger un texte envoyé avec les journaux de livraison par destinataire |

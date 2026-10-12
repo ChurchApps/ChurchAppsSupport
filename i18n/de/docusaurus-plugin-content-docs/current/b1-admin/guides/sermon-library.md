@@ -60,7 +60,7 @@ Folgen Sie der Anleitung [Live-Streaming](../sermons/live-streaming.md) zu:
 
 1. Geben Sie Ihre YouTube-Kanal-ID in die Streaming-Einstellungen ein
 2. Konfigurieren Sie Ihren wiederkehrenden Service-Plan (z.B. Sonntags um 10:00 Uhr)
-3. Passen Sie die Tabs der Streaming-Seite an: Chat, Gebetsanfragen und benutzerdefinierte Links
+3. Passen Sie die Tabs der Streaming-Seite (Chat, Gebetsanfragen und benutzerdefinierte Links) auf der Seite **Sermons > Settings** (Predigten > Einstellungen) an
 
 :::info
 Wenn Sie auf YouTube live gehen, nimmt die B1-Streaming-Seite automatisch den Stream auf. Sonntag morgens sind keine zusätzlichen Schritte erforderlich.

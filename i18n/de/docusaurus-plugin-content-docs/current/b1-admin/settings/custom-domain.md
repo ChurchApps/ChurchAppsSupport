@@ -30,7 +30,7 @@ DNS-Änderungen können von wenigen Minuten bis zu einigen Stunden dauern.
 Sobald DNS auf B1 verweist:
 
 1. Gehen Sie zu **Settings** in B1 Admin.
-2. Klicken Sie auf **Domains**.
+2. Klicken Sie in der linken Liste auf **Domains** und dann im Abschnitt **Domains** auf **Edit**.
 3. Geben Sie Ihre Domain in das Feld ein und klicken Sie auf **Save**.
 
 Sie müssen nicht zuerst auf die **+**-Schaltfläche klicken – eine Domain, die im Feld eingegeben wird, wird hinzugefügt, wenn Sie speichern. Verwenden Sie **+** (oder drücken Sie **Enter**), wenn Sie mehrere Domains zur Liste hinzufügen möchten, bevor Sie speichern.

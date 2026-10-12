@@ -24,20 +24,20 @@ If your church has more than one website (for example, separate sites per campus
 
 ## Understanding Page Types
 
-The **Pages** table lists every page on your site along with its status:
+The **Pages** table lists every page on your site by **Path** and **Title**. There are two kinds of pages:
 
-- **Generated** -- Pages that were automatically created by the system based on your church's data (for example, a Groups page, a Sermons page, or an individual page for each sermon in your library). These pages update themselves as your data changes.
+- **Generated** -- Pages that were automatically created by the system based on your church's data (for example, a Groups page, a Sermons page, or an individual page for each sermon in your library). These pages show a **Generated** badge and update themselves as your data changes.
 - **Custom** -- Pages that you created yourself with your own content and layout.
 
-You can convert any auto-generated page into a custom page if you want full control over its content and design.
+You can convert any auto-generated page into a custom page if you want full control over its content and design. Click **Convert** next to the generated page and confirm.
 
 ## Adding and Editing Pages
 
-1. Click the **Add Page** button in the top right corner of the Pages table.
+1. Click the **Add Page** button at the top right of the Website Pages view.
 2. Choose a page type (blank or a template) and give it a name.
 3. Click **Edit Content** next to any page to open the [page editor](page-editor), where you can add sections, text, images, and other elements.
-4. Click **Page Settings** (the gear icon) to update the page title, URL path, and other metadata.
-5. Use the **View live page** button to open your page in a new window and see exactly how it will look to visitors.
+4. Click **Page Settings** next to a page to update the page title, URL path, and other metadata.
+5. Click a page's path in the **Path** column to open the live page in a new tab and see exactly how it will look to visitors.
 
 :::tip
 For your home page, set the URL path to just `/`. For all other pages, use a descriptive path like `/about` or `/contact`.
@@ -54,12 +54,12 @@ Open **Page Settings** on any page to configure:
 
 ## Managing Navigation
 
-The Website Pages view displays your navigation links. These links control the menu that visitors see on your website.
+The **Main Navigation** panel on the right side of the Website Pages view displays your navigation links. These links control the menu that visitors see on your website.
 
 1. Click **Add** to create a new navigation link. You can point it to any page on your site or to an external URL.
 2. To reorder links, drag and drop them into the order you want. You can also nest links under a parent item to create dropdown menus.
-3. Click the **Edit** icon next to any link to change its label, URL, or position.
-4. To remove a link from the navigation, click the **Delete** icon.
+3. Click any link to open its **Link Settings**, where you can change its text, URL, or parent page.
+4. To remove a link from the navigation, open its **Link Settings** and click **Delete**.
 
 :::info
 Removing a navigation link does not delete the page itself. The page still exists and can be accessed directly by its URL -- it simply will not appear in the menu.
@@ -67,7 +67,7 @@ Removing a navigation link does not delete the page itself. The page still exist
 
 ## Site-Wide Switches
 
-Above **Main Navigation** on the left side of the Website Pages view are two switches that apply to your whole church website:
+Below the links in the **Main Navigation** panel are two switches that apply to your whole church website:
 
 - **Show Login** -- Shows a **Login** button in your website's navigation bar.
 - **Disable Public Website** -- Turns off your public website. Use it if your church uses B1 only for its member portal, giving, and registrations, and keeps its main website somewhere else.
@@ -96,7 +96,7 @@ This setting applies to your whole church. If you have more than one site, it tu
 
 - Keep your top-level navigation to five or six items so visitors can find things quickly.
 - Use nested links for related sub-pages (for example, an "About" dropdown with "Our Team," "Beliefs," and "History").
-- Review your navigation on mobile by clicking **Mobile Preview** to make sure it works well on smaller screens.
+- Review your navigation on a phone to make sure it works well on smaller screens.
 - Give pages clear, descriptive names that help visitors understand what they will find.
 
 :::tip
@@ -107,7 +107,7 @@ You can add [forms](../forms/creating-forms.md) to your pages to collect registr
 
 If you are building your site from scratch, you can bootstrap it using a **Site Template** instead of creating pages one at a time. A site template creates a set of pre-built pages — home, about, connect, give, and others — with placeholder content and navigation links already wired up.
 
-1. On the Pages screen, click the **Site Templates** button (beside the **Add Page** button).
+1. On the Pages screen, click the **Start From a Template** button (beside the **Add Page** button).
 2. Browse the available templates and click one to preview its page structure.
 3. When you find one you like, click **Apply Template**.
 4. Pages that do not already exist are created and added to your navigation. Existing pages are left as-is.

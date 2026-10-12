@@ -20,9 +20,9 @@ B1 Admin te brinda varias formas de ver y analizar los datos de donación de tu 
 
 ## Panel de Donaciones
 
-El panel de donaciones es la pestaña **Panel** de la página de **Resumen**, la primera página que ves cuando abres la sección **Donaciones**.
+El panel de donaciones es la vista **Panel** de la página de **Resumen**, la primera página que ves cuando abres la sección **Donaciones**.
 
-1. Abre el [menú Salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expande **Donaciones**, y haz clic en **Resumen**. La página de **Resumen** se abre en la pestaña **Panel**.
+1. Abre el [menú Salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expande **Donaciones**, y haz clic en **Resumen**. La página de **Resumen** se abre en la vista **Panel**. El botón **View** en la parte superior derecha alterna entre **Dashboard** y **Lapsed Givers**.
 2. Usa el botón **Semanal**, **Mensual** y **Trimestral** sobre el informe para elegir cómo se agrupan las donaciones.
 3. En el panel **Filtrar Informe**, establece la **Fecha de Inicio** y **Fecha de Fin** (por defecto, el año pasado hasta ayer) y opcionalmente elige un **Fondo**, luego haz clic en **Ejecutar Informe**. El informe se ejecuta automáticamente con los valores predeterminados cuando la página se abre.
 4. Cuatro **tarjetas KPI** muestran tus métricas de donación para el rango seleccionado:
@@ -41,7 +41,7 @@ El panel muestra datos de donación agregada. No incluye nombres de donantes ind
 
 ## Donantes Inactivos
 
-La pestaña **Donantes Inactivos** junto a la pestaña **Panel** enumera personas que dieron durante un período pero no desde entonces. Por defecto compara el año calendario pasado con este año hasta la fecha; cambia cualquier rango de fechas para ampliar o reducir la búsqueda. Cada fila muestra la persona, la fecha de su último regalo y su total para el período anterior, y **Opciones de Descarga > Resumen** descarga la lista como un CSV para una campaña de seguimiento o lista de llamadas.
+Elige **Lapsed Givers** en el botón **View** para enumerar personas que dieron durante un período pero no desde entonces. Por defecto compara el año calendario pasado con este año hasta la fecha; cambia cualquier rango de fechas para ampliar o reducir la búsqueda. Cada fila muestra la persona, la fecha de su último regalo y su total para el período anterior, y **Opciones de Descarga > Resumen** descarga la lista como un CSV para una campaña de seguimiento o lista de llamadas.
 
 ## Ver Detalles a Nivel de Donante
 
@@ -49,17 +49,16 @@ Para un desglose de quién dio, cuánto y a qué fondo:
 
 1. Navega a **Donaciones > Lotes**.
 2. Haz clic en un **nombre de lote** para abrirlo.
-3. La página de detalle de lote enumera cada donación con el nombre del donante, cantidad, fondo, fecha y método de pago.
-4. Haz clic en el **nombre de un donante** para ver un desglose de cuántas veces donaron y cuánto cada vez.
-5. Haz clic en una **ID de donación** para abrir un panel lateral con los detalles completos de esa donación individual.
-6. Haz clic en **Descargar** para exportar un CSV con toda la información de donante y donación para ese lote.
+3. La página de detalle de lote enumera cada donación con su método (y número de cheque o últimos dígitos de la tarjeta), el nombre del donante, fecha, notas y monto, con un total al final.
+4. Haz clic en **Edit** en una fila de donación para abrir los detalles completos de esa donación individual, incluido su fondo.
+5. Haz clic en **Export** encima de la lista para descargar un CSV con toda la información de donante y donación para ese lote.
 
 ## Informe de Resumen de Donaciones
 
 Los reportes de donación están integrados directamente en la sección Donaciones -- la página Resumen sirve como tu informe de resumen de donaciones:
 
 1. En el menú Salto, elige **Donaciones > Resumen**.
-2. En la pestaña **Panel**, establece la **Fecha de Inicio** y **Fecha de Fin** en el panel **Filtrar Informe** y haz clic en **Ejecutar Informe**.
+2. En la vista **Panel**, establece la **Fecha de Inicio** y **Fecha de Fin** en el panel **Filtrar Informe** y haz clic en **Ejecutar Informe**.
 3. Haz clic en **Opciones de Descarga** y elige **Resumen** para exportar el informe como un archivo CSV.
 
 ## Exportar Datos

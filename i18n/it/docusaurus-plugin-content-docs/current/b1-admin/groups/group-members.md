@@ -21,14 +21,16 @@ Una volta creato un gruppo, il passo successivo è aggiungere membri. Dalla pagi
 ## Aggiunta di membri a un gruppo
 
 1. Nel [menu Jump](../introduction.md#getting-around-with-the-jump-menu), scegli **Persone > Gruppi** e fai clic sul gruppo che desideri gestire.
-2. Fai clic sulla scheda **Membri**.
-3. Nella casella di ricerca, digita il nome della persona che desideri aggiungere.
-4. Fai clic su **Aggiungi** accanto al nome della persona nei risultati della ricerca.
+2. Nella sezione **Membri** della pagina del gruppo, fai clic su **Tutti i membri**. (Team e ministeri si aprono direttamente nel loro elenco di membri.)
+3. Nella casella **Aggiungi persona** sotto l'elenco dei membri, digita il nome della persona che desideri aggiungere e premi **Invio** o fai clic sull'icona di ricerca.
+4. Fai clic sul nome della persona, o sull'icona di aggiunta accanto ad esso, nei risultati della ricerca.
 5. La persona ora appare nell'elenco dei membri del gruppo.
 
 :::tip
-Lascia la casella di ricerca vuota e fai clic su **Cerca** per sfogliare l'intera directory. Ciò è utile se non sei sicuro dell'ortografia esatta del nome di qualcuno.
+Prima di digitare qualsiasi cosa, la casella **Aggiungi persona** mostra un breve elenco di **Persone recenti** che puoi aggiungere con un clic.
 :::
+
+Quando hai finito, fai clic sul link **Torna a** con il nome del gruppo per tornare alla pagina del gruppo. La pagina del gruppo mostra un riepilogo di **Membri**, **Sessioni**, **Calendario** e **Salute**, ciascuno con un link alla sua vista completa.
 
 ### Aggiunta di qualcuno che non è ancora in B1
 
@@ -38,13 +40,11 @@ Se la tua ricerca non trova nessuno, la ricerca mostra **Nessun record trovato**
 
 I leader del gruppo hanno privilegi speciali - possono modificare il [calendario del gruppo](group-calendar.md), gestire gli eventi e aiutare a coordinare il gruppo.
 
-I leader del gruppo hanno privilegi speciali - possono modificare il [calendario del gruppo](group-calendar.md), gestire gli eventi e aiutare a coordinare il gruppo.
-
 1. Nell'elenco dei membri del gruppo, trova la persona che desideri rendere leader.
-2. Fai clic sull'**icona della chiave verde** accanto al suo nome.
-3. La persona è ora designata come leader del gruppo.
+2. Fai clic sull'**icona a stella** (**Rendi leader**) accanto al suo nome.
+3. La persona è ora designata come leader del gruppo e mostra un badge **Leader**.
 
-Per rimuovere lo stato di leader, fai clic di nuovo sull'icona della chiave verde.
+Per rimuovere lo stato di leader, fai clic di nuovo sull'icona a stella (**Rimuovi accesso leader**).
 
 :::info
 Qualsiasi membro del gruppo può visualizzare il calendario del gruppo e gli eventi, ma solo i leader possono aggiungere o modificare gli eventi del calendario.
@@ -54,8 +54,8 @@ Qualsiasi membro del gruppo può visualizzare il calendario del gruppo e gli eve
 
 Puoi comunicare con tutti i membri di un gruppo direttamente da B1 Admin:
 
-1. Dalla pagina dei dettagli del gruppo, cerca l'area di messaggistica.
-2. Digita il tuo messaggio nella casella di testo.
+1. Nell'elenco dei membri del gruppo, fai clic sull'icona **Invia un messaggio ai membri** sopra l'elenco.
+2. Digita il tuo messaggio nella casella di testo (o scegline uno da **Modelli**).
 3. Fai clic su **Invia**.
 
 Il tuo messaggio sarà consegnato a tutti i membri del gruppo.
@@ -64,7 +64,7 @@ Il tuo messaggio sarà consegnato a tutti i membri del gruppo.
 
 Puoi inviare email formattate a tutti i membri di un gruppo:
 
-1. Dalla pagina dei dettagli del gruppo, fai clic sull'**icona email**.
+1. Dalla pagina dei dettagli del gruppo, fai clic sul pulsante **Email** sul lato sinistro della pagina.
 2. Si apre la finestra di dialogo Invia Email, mostrando quanti membri riceveranno l'email e quanti non hanno un indirizzo email in archivio.
 3. Facoltativamente seleziona un **modello di email** dal menu a discesa, o componi un messaggio da zero. Fai clic su **Gestisci modelli** per creare o modificare modelli.
 4. Immetti una **riga dell'oggetto**. Puoi inserire campi di unione facendo clic sui chip del campo: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`.
@@ -94,9 +94,9 @@ Dopo l'approvazione, una chiesa può inviare fino a 150 email scritte dalla chie
 
 ## Invio di SMS ai membri del gruppo
 
-Una volta che la tua chiesa ha connesso un [provider di SMS](../settings/church-settings.md#texting), un'icona SMS (**Invia SMS a questo gruppo**) appare nell'intestazione del gruppo.
+Una volta che la tua chiesa ha connesso un [provider di SMS](../settings/church-settings.md#texting), un pulsante **SMS** (**Invia SMS a questo gruppo**) appare accanto al pulsante **Email** nella pagina del gruppo.
 
-1. Dalla pagina dei dettagli del gruppo, fai clic su **icona SMS**.
+1. Dalla pagina dei dettagli del gruppo, fai clic su **SMS**.
 2. La finestra di dialogo mostra quanti membri riceveranno l'SMS. I membri senza numero di telefono mobile in archivio o che hanno rinunciato vengono saltati.
 3. Digita il tuo messaggio. Per personalizzarlo, fai clic su un chip segnaposto sotto la casella del messaggio -- **Nome**, **Cognome**, **Nome visualizzato** o **Nome chiesa** -- per inserirlo al tuo cursore. Ogni segnaposto viene compilato con i dettagli del destinatario quando l'SMS viene inviato.
 4. Fai clic su **Invia**.
@@ -107,14 +107,14 @@ Vedi [Personalizzazione degli SMS con campi di unione](../settings/church-settin
 
 Per scaricare l'elenco dei membri del gruppo come file:
 
-1. Dalla pagina dei dettagli del gruppo, fai clic sull'**icona di download**.
+1. Nell'elenco dei membri del gruppo, fai clic su **Esporta** sopra l'elenco.
 2. Un file CSV contenente le informazioni dei membri del gruppo verrà scaricato sul tuo computer.
 
 Un'esportazione CSV è utile per importare dati in altri strumenti o mantenere record offline. Per più opzioni di esportazione, vedi [Esportazione dei Dati](../people/exporting-data.md).
 
 ## Stampa dell'elenco dei membri {#printing-the-member-list}
 
-Fai clic sull'icona **Stampa Foglio di Presenza** (stampante) sopra l'elenco dei membri e scegli un layout. La pagina si apre in una nuova scheda e la finestra di stampa del tuo browser appare automaticamente.
+Nell'elenco dei membri del gruppo, fai clic sull'icona **Stampa Foglio di Presenza** (stampante) sopra l'elenco e scegli un layout. La pagina si apre in una nuova scheda e la finestra di stampa del tuo browser appare automaticamente.
 
 - **Foglio di presenza** -- un elenco di classe senza data con caselle **Presente** e **Assente** che gli insegnanti possono segnare a mano. Vedi [Stampa di un Foglio di Presenza](../attendance/recording-attendance.md#printing-a-roll-sheet).
 - **Rubrica dei contatti** -- un elenco di contatti per il gruppo, con la data di oggi e intestato con il nome della tua chiesa e il nome del gruppo. Ogni membro ha una riga con il suo **Nome**, **Telefono**, **Email** e **Indirizzo**. I leader sono elencati per primi e contrassegnati come **Leader**, poi tutti gli altri in ordine di cognome. Il telefono mostrato è il numero di cellulare del membro, oppure il numero di casa o di lavoro se non c'è un cellulare. I dati di contatto sono lasciati vuoti per chi ha rinunciato.
@@ -127,7 +127,7 @@ Una rubrica dei contatti contiene le informazioni di contatto personali dei memb
 
 Puoi inviare una notifica push direttamente a tutti i membri del gruppo che hanno l'app B1.church installata sul loro dispositivo con le notifiche push abilitate.
 
-1. Dalla pagina dei dettagli del gruppo, fai clic sull'**icona della campana** nella barra degli strumenti dell'intestazione (accanto alle icone email e SMS - l'icona SMS appare una volta che un [provider di SMS](../settings/church-settings.md#texting) è connesso).
+1. Dalla pagina dei dettagli del gruppo, fai clic su **Notifica** (sotto i pulsanti **Email** e **SMS** -- il pulsante **SMS** appare una volta che un [provider di SMS](../settings/church-settings.md#texting) è connesso).
 2. Si apre una finestra di dialogo che mostra quanti membri del tuo gruppo hanno le notifiche push abilitate.
 3. Riempi i dettagli della notifica:
    - **Titolo** *(obbligatorio)* -- Un breve riepilogo, fino a 80 caratteri.

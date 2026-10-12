@@ -48,7 +48,7 @@ Markieren Sie, wer den jeweiligen Gottesdienst und jede Gruppe besuchte.
 
 Folgen Sie der [Anleitung zur Besuchererfassung](../attendance/recording-attendance.md):
 
-1. Öffnen Sie die Registerkarte **Sitzungen** einer Gruppe und fügen Sie eine Sitzung für das Datum und die Gottesdienstzeit hinzu. Kreuzen Sie **Auch für die anderen Gruppen hinzufügen** an, um Sitzungen für jede Klasse dieses Gottesdienstes gleichzeitig zu erstellen.
+1. Öffnen Sie eine Gruppe, klicken Sie im Bereich **Sitzungen** auf **All sessions** (Alle Sitzungen) und fügen Sie eine Sitzung für das Datum und die Gottesdienstzeit hinzu. Kreuzen Sie **Auch für die anderen Gruppen hinzufügen** an, um Sitzungen für jede Klasse dieses Gottesdienstes gleichzeitig zu erstellen.
 2. Markieren Sie, wer jede Gruppe besuchte
 
 :::tip

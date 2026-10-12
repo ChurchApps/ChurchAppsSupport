@@ -49,7 +49,7 @@ Ang lahat ng tatlo ay tumatawag sa parehong dalawang API module sa pamamagitan n
 |----------------|-----------|---------|
 | `campuses` | name, address | Hindi na ginagamit dito -- ang mga campus ay minamaster sa membership module (`/membership/campuses`); ang kopya sa attendance ay naka-freeze bilang read-only para sa mga lumang reader (`models/Campus.ts`) |
 | `services` | campusId, name | Isang paulit-ulit na pagtitipon, hal. "Sunday Morning" (`models/Service.ts`) |
-| `serviceTimes` | serviceId, name | Isang time slot sa loob ng isang serbisyo, hal. "9:00 AM" (`models/ServiceTime.ts`) |
+| `serviceTimes` | serviceId, name, dayOfWeek, startTime, endTime, checkinOpenMinutes, checkinCloseMinutes | Isang time slot sa loob ng isang serbisyo, hal. "9:00 AM" (`models/ServiceTime.ts`). Opsyonal ang mga column ng schedule (migration `tools/migrations/attendance/2026-10-10_service_time_schedule.ts`) at ang mga ito ang nagpapatakbo ng [check-in window](#scheduled-check-in-windows) |
 | `groupServiceTimes` | groupId, serviceTimeId | Join table: kung aling mga grupo (silid-aralan) ang nagtitipon sa aling mga oras ng serbisyo (`models/GroupServiceTime.ts`) |
 | `sessions` | groupId, serviceTimeId, sessionDate | Isang pagtitipon ng isang grupo sa isang petsa -- lazy na nililikha sa oras ng check-in (`models/Session.ts`) |
 | `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | Isang taong dumalo sa isang petsa (`models/Visit.ts`). Ang `checkinType` ay `member` / `guest` / `volunteer` (NULL = lumang member), itinatakda ng kiosk at ginagamit ng mga gate sa kapasidad/ratio |
@@ -110,6 +110,15 @@ Ang `CheckinGateHelper.evaluate()` (`Api/src/modules/attendance/helpers/CheckinG
 
 - **Matindi (laging humaharang):** `checkinClosed`, `current + incoming > capacity`, bilang ng bisita na lampas sa `guestCapacity`. Tinatanggihan ang batch ng `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` -- ipinapakita ng kiosk ang pinangalanang silid.
 - **Ratio (magbabala o hahadlang):** mga papasok na hindi boluntaryo sa silid na ang `volunteers < minVolunteers`, walang boluntaryo, o `children > volunteers × volunteerRatio`. Ang tindi ay sumusunod sa setting ng bawat simbahan na `ratioEnforcement` (`"warn"` default / `"block"`, ine-edit sa B1Admin Manage Church → Check-In, `CheckinSettingsEdit.tsx`). Ang warn-mode ay nagbabalik ng `409 { warning: true, error: "ratio", … }` maliban kung muling isumite ng client na may `acknowledgeWarnings=true` -- ang muling pagsumite na iyon ang staff-confirm override ng kiosk.
+
+### Mga naka-schedule na check-in window {#scheduled-check-in-windows}
+
+Maaaring magdala ang isang service time ng opsyonal na lingguhang schedule (`dayOfWeek` 0–6 kung saan 0 = Linggo, `startTime`/`endTime` bilang `HH:mm`, `checkinOpenMinutes`, `checkinCloseMinutes`), na ine-edit sa service-time form ng B1Admin na **Attendance → Setup** (`B1Admin/src/attendance/components/ServiceTimeEdit.tsx`, "Check-in Schedule"). Itinuturing lamang ng `CheckinGateHelper.hasSchedule()` na naka-schedule ang isang service time kapag parehong nakatakda ang `dayOfWeek` at `startTime`; hindi kailanman tinatakdaan ng oras ang mga hindi naka-schedule na oras. Kinakalkula ng `isServiceTimeOpen()` ang window sa lokal na oras ng simbahan (`DateHelper.toChurchTime` gamit ang `timeZone` ng simbahan) mula `checkinOpenMinutes` bago ang simula hanggang `checkinCloseMinutes` pagkatapos ng pagtatapos (o pagkatapos ng simula kung walang pagtatapos), at hinahawakan nito ang mga window na lumalampas sa hatinggabi o sa hangganan ng linggo.
+
+Ipinapatupad ang window sa dalawang lugar:
+
+- **Listing:** Nilalagyan ng computed na `checkinOpen` boolean ng `GET /attendance/servicetimes` ang bawat row. Tinatanggal ng self check-in ng B1App (`CheckinPage.tsx`) ang mga oras na may `checkinOpen === false` at nagpapakita ng "Check-in isn't open for this service right now." kapag wala nang natitira. Hindi pa sinasala ng B1Checkin ang batayang ito.
+- **Pag-post:** sa loob ng `evaluateGates()`, bago ang pagsusuri ng capacity/ratio, tinatanggihan ng `findClosedServiceTimeGroups()` ang batch gamit ang `409 { error: "notOpen", groups: [{ groupId, groupName, reason: "notOpen" }] }` kung ang service time ng alinmang target na session ay nasa labas ng window nito. Ipinapakita ito ng B1Checkin sa umiiral nitong hard-gate screen ("room is full or closed").
 
 ### Pagiging karapat-dapat ayon sa edad/grado (sa panig ng kiosk)
 

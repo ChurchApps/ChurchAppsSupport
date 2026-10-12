@@ -17,14 +17,14 @@ When you open the **Serving** page, you will see your ministries displayed as ta
 Non-admin staff who are members of a ministry can also access the Serving page. They will see only the ministries they belong to and can create and edit plans, assignments, plan types, and the service order for their ministry without needing full admin permissions.
 
 :::tip
-If you are an admin, toggle **Show All** to view all ministries at once. This is helpful when you need to check assignments across multiple teams.
+If you are an admin, the tabs show the ministries you belong to (**Mine**). Choose **All** to see every ministry. This is helpful when you need to check assignments across multiple teams. If your church has many ministries, a **Find a ministry** box appears so you can filter the tabs by name.
 :::
 
 ## Sub-Sections
 
 The Serving section includes these key areas:
 
-- **[Plans](./plans.md)** -- Create service plans for specific dates and assign volunteers to teams. Plans help you organize who is serving when, so everyone knows their role ahead of time. Set up automatic [volunteer reminders](./plans.md#volunteer-reminders) so your team is notified before each service, and use the **[Plans Overview](./plans-overview.md)** to see all upcoming assignments across multiple weeks in one grid.
+- **[Plans](./plans.md)** -- Create service plans for specific dates and assign volunteers to teams. Plans help you organize who is serving when, so everyone knows their role ahead of time. Set up automatic [volunteer reminders](./plans.md#volunteer-reminders) by push, email, or text so your team is notified before each service, and use the **[Plans Overview](./plans-overview.md)** to see all upcoming assignments across multiple weeks in one grid.
 - **[Songs](./songs.md)** -- Manage your worship song library with lyrics, arrangements, and external links. Your worship team can use this to prepare for upcoming services.
 - **[Tasks](./tasks.md)** -- Assign and track tasks for your team members from **My Work**.
 - **[Workflows](./workflows.md)** -- Move people through a series of steps on a visual Kanban board, such as new-visitor follow-up or a membership process. Steps can run automated actions (send an email, wait a few days, add to a group), and cards advance by outcome buttons, conditional routing, or event and schedule triggers -- with built-in reports.
@@ -32,8 +32,8 @@ The Serving section includes these key areas:
 ## Getting Started
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Serving**, and click **Plans**.
-2. Click the add ministry button to create a new ministry or toggle "show all" to view existing ministry tabs. Select a **ministry tab** to view its plan types and teams.
-3. Choose "create a plan type" or choose an existing plan type to start [creating service plans](./plans.md), or explore the [Songs](./songs.md) and [Tasks](./tasks.md) sub-sections.
+2. Click **Add Ministry** to create a new ministry, or choose **All** to view every existing ministry. Select a **ministry tab** to view its plan types and serving teams.
+3. Click **Create Plan Type** (or **Add Plan Type**) or choose an existing plan type to start [creating service plans](./plans.md), or explore the [Songs](./songs.md) and [Tasks](./tasks.md) sub-sections.
 
 :::info
 Before you can create plans, you will need to create your Ministries in the Serving area and Teams within each Ministry . 

@@ -20,14 +20,14 @@ I lotti raggruppano le tue donazioni insieme per un tracciamento e una riconcili
 
 ## La Pagina dei Lotti
 
-Quando navighi a **Donazioni > Lotti**, vedrai un elenco di tutti i tuoi lotti. Ogni riga visualizza:
+Quando navighi a **Donazioni > Lotti**, vedrai un elenco dei tuoi lotti. Ogni riga visualizza:
 
 - **Nome** -- l'etichetta che hai dato al lotto
 - **Data** -- la data della raccolta
 - **Donazioni** -- il numero di donazioni individuali nel lotto
 - **Totale** -- l'importo in dollari combinato
 
-L'intestazione in alto mostra statistiche di riepilogo incluso il numero totale di lotti, il numero totale di donazioni in tutti i lotti, e l'importo totale in dollari.
+Sopra l'elenco, i pulsanti per anno ti permettono di mostrare solo i lotti di un anno, oppure **Tutti** i lotti. Una riga di riepilogo mostra il numero di lotti, il numero di donazioni e l'importo totale dei lotti visualizzati.
 
 ## Creazione di un Nuovo Lotto
 
@@ -43,22 +43,24 @@ Il tuo nuovo lotto appare nell'elenco, pronto per aggiungere le donazioni.
 - **Visualizza donazioni** -- fai clic su un nome di lotto per aprirlo e vedere tutte le donazioni individuali che contiene. Da lì puoi aggiungere, modificare, o rimuovere le donazioni.
 - **Modifica i dettagli del lotto** -- fai clic sul pulsante **Modifica** su una riga di lotto per cambiarne il nome o la data.
 - **Ordina** -- usa le intestazioni delle colonne per ordinare i lotti per nome o data.
-- **Esporta** -- fai clic su **Esporta** per scaricare il tuo elenco di lotti come un foglio di calcolo (CSV).
+- **Esporta** -- fai clic su **Esporta** in alto nella pagina per scaricare i lotti visualizzati come un foglio di calcolo (CSV).
+- **Eventi non riusciti** -- se il tuo gateway di pagamento ha segnalato problemi, in alto nella pagina compare un pulsante **Eventi non riusciti** (con il numero di eventi non risolti). Fai clic per mostrare o nascondere l'elenco degli eventi sotto i lotti.
+- **Importa da Stripe** -- fai clic su **Importa transazioni Stripe mancanti** in alto nella pagina per aprire lo strumento [Importazione Stripe](stripe-import.md).
 
 ## Stampa di un Lotto
 
-Apri un lotto e fai clic sull'icona **Stampa** (stampante) nella parte superiore dell'elenco di donazioni per stampare una copia cartacea per il tuo team di conteggio o i record di deposito. La stampa include:
+Apri un lotto e fai clic su **Stampa** sopra l'elenco delle donazioni per stampare una copia cartacea per il tuo team di conteggio o i record di deposito. La stampa include:
 
 - Il nome della tua chiesa, il nome del lotto e la data del lotto
 - Ogni donazione nel lotto, con il nome del donatore, il metodo, le note, la data e l'importo (i doni rimborsati sono barruti e contrassegnati come rimborsati)
 - **Sottototali Fondo** -- il totale dato a ogni fondo nel lotto
 - **Totale Lotto** -- l'importo combinato per l'intero lotto
 
-L'icona Stampa appare solo una volta che il lotto ha almeno una donazione.
+Il pulsante **Stampa** appare solo una volta che il lotto ha almeno una donazione.
 
 ### Stampa di Più Lotti in Una Volta
 
-Per stampare in un colpo solo tutti i lotti di un periodo -- ad esempio, tutti i depositi del mese scorso -- fai clic sull'icona **Stampa** (stampante) nell'intestazione dell'elenco **Lotti**, accanto a **Esporta**. Si apre la pagina **Stampa Lotti** con una **Data di inizio** e una **Data di fine** che per impostazione predefinita coprono gli ultimi 30 giorni. Modifica una delle due date per scegliere un intervallo diverso.
+Per stampare in un colpo solo tutti i lotti di un periodo -- ad esempio, tutti i depositi del mese scorso -- fai clic su **Stampa** in alto nella pagina **Lotti**, accanto a **Esporta**. Si apre la pagina **Stampa Lotti** con una **Data di inizio** e una **Data di fine** che per impostazione predefinita coprono gli ultimi 30 giorni. Modifica una delle due date per scegliere un intervallo diverso.
 
 Ogni lotto con data compresa nell'intervallo (incluse la data di inizio e quella di fine) viene stampato in ordine di data, un lotto per pagina, con lo stesso layout della stampa di un singolo lotto. I lotti senza donazioni vengono esclusi, e se nessuno dei lotti nell'intervallo ha donazioni vedrai "Nessun lotto con donazioni in questo intervallo di date." Fai clic su **Stampa** per aprire la finestra di stampa del tuo browser, oppure su **Chiudi** per tornare all'elenco dei lotti.
 

@@ -20,7 +20,7 @@ La dashboard **Dati Demografici** ti offre un'istantanea visiva della tua congre
 
 ## Apertura dei Dati Demografici
 
-Dalla pagina **People**, fai clic sul pulsante **Demographics** nell'intestazione della pagina (l'icona del grafico a barre). La pagina mostra il tuo conteggio totale di persone in alto, seguito dai grafici descritti di seguito.
+Dalla pagina **People**, fai clic su **Demographics** nell'intestazione della pagina. La pagina mostra il tuo conteggio totale di persone in alto, seguito dai grafici descritti di seguito.
 
 ## Grafici
 

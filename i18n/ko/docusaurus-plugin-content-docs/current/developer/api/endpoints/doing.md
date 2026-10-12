@@ -22,12 +22,14 @@ Doing 모듈은 예배 계획, 봉사자 일정 관리, 작업 관리, 자동화
 | GET | `/:id` | JWT | — | ID로 계획을 가져옵니다 |
 | GET | `/ids?ids=` | JWT | — | 쉼표로 구분된 ID로 여러 계획을 가져옵니다 |
 | GET | `/types/:planTypeId` | JWT | — | 계획 유형별로 계획을 가져옵니다 |
+| GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + 사역 편집 | **봉사자에게 문자** 보내기 개요를 미리 봅니다: 범위 내 배정된 봉사자에 대해 `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }`를 반환합니다(1인당 1회, 수신 거부 및 번호 없는 사람은 건너뛰고, 공유 번호는 중복 제거, 200명으로 제한) |
 | GET | `/presenter` | JWT | — | 향후 7일간의 계획을 가져옵니다(발표자 보기) |
 | GET | `/public/current/:planTypeId` | Public | — | 계획 유형의 현재 계획을 가져옵니다 |
 | GET | `/public/signup/:churchId` | Public | — | 자율 신청이 열려 있는 계획을 각 계획의 자율 신청 포지션(수락됨/미확인 배정의 `filledCount` 포함)과 시간과 함께 가져옵니다. 봉사자 이름은 포함되지 않습니다 |
 | GET | `/signup/:planId/volunteers` | JWT | — | 계획의 자율 신청 포지션에 대한 `[{ positionId, names }]`입니다(수락됨/미확인 배정자의 표시 이름). 계획의 `showVolunteerNames`가 켜져 있지 않으면 `[]`를 반환합니다 |
 | POST | `/` | JWT | — | 계획을 생성하거나 업데이트합니다(단일 객체 또는 배열 허용) |
-| POST | `/copy/:id` | JWT | — | 포지션, 시간, 배정, 예배 순서 항목을 포함하여 계획을 복사합니다. 본문에는 `copyMode`("none", "positions", "all")와 `copyServiceOrder`(불리언)가 포함됩니다. `notes`와 `signupDeadlineHours`는 본문에서 제공하지 않으면 원본 계획에서 이어집니다 |
+| POST | `/copy/:id` | JWT | 사역 편집 | 포지션, 시간, 배정, 예배 순서 항목을 포함하여 계획을 복사합니다. 본문에는 `ministryId`, `serviceDate`, `copyMode`("none", "positions", "all"), `copyServiceOrder`(불리언)가 포함됩니다. `targetPlanId`가 없으면 새 계획이 만들어지며, `notes`, `signupDeadlineHours`, `showVolunteerNames`, `autoReplaceOnDecline`은 본문에서 제공하지 않으면 원본 계획에서 이어집니다. `targetPlanId`가 있으면 기존 계획을 대신 채웁니다(호출자는 해당 계획을 편집할 수 있어야 합니다). B1Admin의 **매주 반복** 옵션은 매주 한 번씩 이를 호출하며, 매번 전 주에 만들어진 계획에서 복사합니다 |
+| POST | `/textRange` | JWT | `texting.send` + 사역 편집 | 날짜 범위 내 배정된 모든 봉사자에게 교회의 문자 제공자를 통해 문자를 보냅니다. 본문: `{ startDate, endDate, ministryId, planTypeId?, message }`(메시지는 최대 1600자, 병합 필드는 수신자별로 해결됩니다). 미리보기 수치와 함께 `recipientCount`, `successCount`, `failCount`를 반환하며, 전송이 조기에 중단되면 `error`(`no_provider` 또는 `insufficient_credits`)를 반환합니다 |
 | POST | `/autofill/:id` | JWT | — | 계획의 봉사자 배정을 자동으로 채웁니다. 본문: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | 계획과 관련된 모든 시간, 배정, 포지션, 계획 항목을 삭제합니다 |
 
@@ -176,10 +178,12 @@ CRUD 기본 클래스를 확장합니다(GET `/:id`, DELETE `/:id` — 권한 �
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | 현재 사용자의 진행 중인 작업을 가져옵니다 |
 | GET | `/:id` | JWT | — | ID로 작업을 가져옵니다 |
+| GET | `/:id/contact` | JWT | 카드 보기 가능 | 작업 카드의 대상자에 대한 연락처 정보: `{ personId, displayName, mobilePhone, email }`. 배정된 호출자가 People 액세스 권한이 없어도 해당 사람에게 연락할 수 있게 합니다 |
 | GET | `/closed` | JWT | — | 현재 사용자의 완료된 작업을 가져옵니다 |
 | GET | `/timeline?taskIds=` | JWT | — | 쉼표로 구분된 작업 ID로 작업의 타임라인 데이터를 가져옵니다 |
 | GET | `/directoryUpdate/:personId` | JWT | — | 사람의 주소록 업데이트 작업을 가져옵니다 |
 | POST | `/` | JWT | — | 작업을 생성하거나 업데이트합니다. 주소록 업데이트 작업을 처리하려면 `?type=directoryUpdate`를 추가합니다(사진 자동 업로드) |
+| POST | `/:id/conversation` | JWT | `tasks.edit` 또는 카드 담당자 | 카드에 노트 대화를 첨부합니다. 본문: `{ conversationId }`. 처음 첨부된 대화가 유지되며, 이후 호출은 카드를 변경 없이 반환합니다 |
 | POST | `/loadForGroups` | JWT | — | 특정 그룹의 작업을 불러옵니다. 본문: `{ groupIds: [], status: "Open" }` |
 
 ## Automations

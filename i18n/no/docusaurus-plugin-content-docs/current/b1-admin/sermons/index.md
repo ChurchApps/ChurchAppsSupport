@@ -28,7 +28,7 @@ Organiser prekenene i serier eller samlinger. Spillelister gjor det enkelt for m
 
 ### Direktesendingstider
 
-Konfigurer menighetens direktesendingsplan. Sett opp regelmessige ukentlige gudstjenester eller engangshendelser, administrer chat- og videoinnstillinger, og kontroller nar sendingen gar direkte. Besokende vil se neste planlagte gudstjenestetid pa sendingssiden. Se [Direktesending](live-streaming) for oppsettsinstruksjoner.
+Konfigurer menighetens direktesendingsplan. Sett opp regelmessige ukentlige gudstjenester eller engangshendelser, administrer chat- og videoinnstillinger, og kontroller nar sendingen gar direkte. Besokende vil se neste planlagte gudstjenestetid pa sendingssiden. En egen **Innstillinger**-side under **Prekener** styrer fanene (chat, bønn og egendefinerte lenker) som vises ved siden av direktesendingen. Se [Direktesending](live-streaming) for oppsettsinstruksjoner.
 
 ### Masseimport
 

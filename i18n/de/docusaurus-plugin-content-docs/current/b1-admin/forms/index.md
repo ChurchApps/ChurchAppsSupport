@@ -24,6 +24,7 @@ Jedes Formular in der Liste zeigt seinen Namen und, falls konfiguriert, eine öf
 Von der Seite "Formulare" aus können Sie:
 
 - **Ein Formular hinzufügen** -- Klicken Sie auf **Add Form** (Formular hinzufügen), um ein neues benutzerdefiniertes Formular zu erstellen.
+- **Ein Formular suchen** -- Geben Sie im Feld **Find a form** (Formular suchen) einen Namen ein, um die Liste zu filtern.
 - **Ein Formular bearbeiten** -- Klicken Sie auf einen Formularnamen, um ihn zu öffnen und seine Fragen, Mitglieder oder Einstellungen zu ändern.
 - **Ein Formular archivieren** -- Verschieben Sie Formulare, die Sie nicht mehr benötigen, zur Registerkarte **Archived Forms** (Archivierte Formulare), um Ihre Liste sauber zu halten.
 - **Ein Formular wiederherstellen** -- Wechseln Sie zur Registerkarte **Archived Forms** (Archivierte Formulare) und stellen Sie jedes Formular wieder her, das Sie wieder aktiv machen möchten.

@@ -20,11 +20,11 @@ Med kampanjer kan du gjennomføre en innsamlingsaksjon mot et bestemt mål — e
 
 ## Åpne kampanjer
 
-Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Donasjoner** og klikk på **Kampanjer**. Du ser en liste over alle kampanjer med målbeløp, totalt tilsagt beløp og totalt gitt beløp så langt.
+Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Donasjoner** og klikk på **Kampanjer**. Du ser en tabell over alle kampanjer med fond, datoer, målbeløp, totalt tilsagt beløp og totalt gitt beløp så langt. En oppsummeringslinje over tabellen viser antall kampanjer og de samlede tilsagt- og gitt-beløpene.
 
 ## Opprette en kampanje
 
-1. Klikk på **Legg til kampanje**.
+1. Klikk på **Legg til kampanje** øverst på siden.
 2. Fyll ut kampanjedetaljene:
    - **Navn** *(påkrevd)* — visningsnavnet på kampanjen (for eksempel «Byggefond 2026»).
    - **Fond** — donasjonsfondet kampanjen er knyttet til.
@@ -34,27 +34,27 @@ Med kampanjer kan du gjennomføre en innsamlingsaksjon mot et bestemt mål — e
 
 ## Følge fremdriften
 
-Hvert kampanjekort viser:
+Hver kampanjerad viser:
 
 - **Mål** — målbeløpet ditt
 - **Tilsagt** — det totale beløpet medlemmene har lovet å gi
 - **Gitt** — det totale beløpet som faktisk er gitt til kampanjens fond i kampanjeperioden
-- En **fremdriftslinje** som viser hvor langt du har kommet mot målet
+- **Fremdrift** — en linje og prosentandel som viser hvor langt du har kommet mot målet
 
-Klikk på en kampanje for å åpne detaljvisningen, som viser de enkelte givertilsagnene og status for oppfyllelsen av dem.
+Klikk på navnet på en kampanje for å åpne detaljvisningen. Den viser hvor stor prosentandel av målet som er nådd, og lister opp de enkelte givertilsagnene med hver givers tilsagte og gitte beløp og en status (**Ikke startet**, **Pågår**, **Oppfylt**, **Over tilsagn** eller **Uten tilsagn** for givere som ga uten å gi tilsagn). Klikk på **Eksporter** øverst i detaljvisningen for å laste ned givertilsagnslisten som CSV.
 
 ## Legge til givertilsagn
 
 Givertilsagn er forpliktelser fra medlemmer om å gi til en kampanje. Slik registrerer du et givertilsagn:
 
 1. Åpne en kampanje.
-2. Klikk på **Legg til givertilsagn**.
+2. Klikk på **Legg til givertilsagn** øverst på siden.
 3. Velg **personen** som gir tilsagnet.
 4. Skriv inn **beløpet** for tilsagnet.
 5. Du kan angi en **dato** for tilsagnet.
 6. Klikk på **Lagre**.
 
-Givertilsagn vises i kampanjedetaljene og bidrar til totalen **Tilsagt** på kampanjekortet.
+Givertilsagn vises i kampanjedetaljene og bidrar til totalen **Tilsagt** i kampanjelisten. For å endre et givertilsagn klikker du på **Rediger** på raden.
 
 :::tip
 Givertilsagn er atskilt fra faktiske donasjoner. Et givertilsagn registrerer en forpliktelse, mens en donasjon registrerer selve gaven. Begge vises på kampanjen, slik at du ser hvor godt tilsagnene blir oppfylt.
@@ -62,7 +62,7 @@ Givertilsagn er atskilt fra faktiske donasjoner. Et givertilsagn registrerer en 
 
 ## Redigere eller slette en kampanje
 
-Klikk på redigeringsikonet på et kampanjekort for å endre navn, mål, datoer eller fond. Klikk på **Slett** for å fjerne kampanjen og givertilsagnene permanent. Når du sletter en kampanje, slettes ikke donasjonene som er registrert på fondet.
+Klikk på **Rediger** på en kampanjerad (eller **Rediger kampanje** øverst i kampanjens detaljvisning) for å endre navn, mål, datoer eller fond. Klikk på **Slett** for å fjerne kampanjen og givertilsagnene permanent. Når du sletter en kampanje, slettes ikke donasjonene som er registrert på fondet.
 
 ## Relaterte artikler
 

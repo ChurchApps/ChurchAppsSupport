@@ -27,7 +27,7 @@ The Blog page lets you publish news, updates, and devotionals to your church web
 ## Adding a Post
 
 1. Click **Add Post** in the top right corner.
-2. Enter a **Title**. A URL-friendly slug is generated for you automatically as you type -- you can edit it directly if you want a different address.
+2. Enter a **Title**. A URL-friendly **Web address** (slug) is generated for you automatically as you type -- you can edit it directly if you want a different address.
 3. Add an **Excerpt** -- a short summary shown in the post listing, meta descriptions, and RSS feed. If you leave it blank, one is generated automatically from the start of your post content.
 4. Write the post body in the **Content** editor using Markdown. Click **Preview** to see how the formatted post will look.
 5. Choose a **Category** (pick an existing one or type a new one) and optional comma-separated **Tags**.
@@ -49,9 +49,9 @@ Each post in the list shows one of three states:
 
 ## Editing, Previewing, and Deleting Posts
 
-- Click the **Edit** icon next to a post to make changes.
-- Click the **View** icon (visible on published posts) to open the live post on your website in a new tab.
-- Click the **Delete** icon to permanently remove a post.
+- Click **Edit** next to a post to make changes.
+- Click **View on Site** (shown on published posts) to open the live post on your website in a new tab.
+- Click **Delete** to permanently remove a post.
 
 ## How Visitors See Your Blog
 

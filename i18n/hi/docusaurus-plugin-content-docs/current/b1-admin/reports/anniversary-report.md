@@ -24,7 +24,7 @@ title: "वर्षगांठ सूची"
 2. Search box के नीचे, **Advanced** पर क्लिक करें।
 3. **Demographics** section को expand करें और **Anniversary Month** को check करें, फिर महीने को चुनें।
 4. Search को run करें — जिन सभी लोगों की वर्षगांठ उस महीने में है वे results में दिखाई देते हैं।
-5. Dates को देखने के लिए, results के शीर्ष दाईं ओर **columns icon** पर क्लिक करें और **Anniversary** column को enable करें। यदि आप spreadsheet के रूप में sort या print करना पसंद करते हैं तो list को download करने के लिए **Export** का उपयोग करें।
+5. Dates को देखने के लिए, **View as** को **Table** पर स्विच करें, फिर page header में **Select columns** icon पर क्लिक करें और **Anniversary** column को enable करें। यदि आप spreadsheet के रूप में sort या print करना पसंद करते हैं तो list को download करने के लिए **Export** का उपयोग करें।
 
 ## व्यावहारिक उपयोग
 

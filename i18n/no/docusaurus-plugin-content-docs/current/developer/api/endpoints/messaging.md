@@ -33,6 +33,10 @@ Basissti: `/messaging/conversations`
 
 Samtaler med `contentType: "person"` (fanen Notater på en personpost) eller `contentType: "personConfidential"` (seksjonen Konfidensielle notater) er beskyttet på alle lese- og skrivestier, også de ellers offentlige rutene ovenfor, som returnerer `401` for disse innholdstypene. `person` krever MembershipApi-tillatelsen **People / Edit**; `personConfidential` krever **People / View Confidential Notes**. For API-nøkler med begrenset omfang gir `people:write` begge handlingene (nøkkelens bruker må fortsatt ha den underliggende rolletillatelsen).
 
+### Tilgangskontroll for notater på arbeidsflytkort {#workflow-card-notes-access-control}
+
+Samtaler med `contentType: "workflowCard"` (notatene på et arbeidsflytkort, der `contentId` er kortets oppgave-ID) kan bare leses og skrives av den som kan åpne kortet: en bruker med DoingApi-tillatelsen **Tasks / View**, eller personen eller gruppen kortet er tildelt, opprettet av eller gjelder. Alle andre får `401` på hver lesesti, også de offentlige rutene ovenfor. Kortets samtale legges til gjennom selve kortet med `POST /doing/tasks/:id/conversation` (body `{ "conversationId": "..." }`; den første samtalen som legges til, gjelder), som kortets redaktører og den tildelte kan kalle.
+
 ### Eksempel: start en samtale
 
 ```
@@ -168,12 +172,11 @@ Authorization: Bearer <token>
 
 Basissti: `/messaging/notificationpreferences`
 
-Utvider standard CRUD. Baseklassen tilbyr POST `/` (opprett eller oppdater, ingen tillatelse kreves).
-
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| POST | `/` | JWT | — | Opprett eller oppdater varselinnstillinger (fra CRUD-baseklassen) |
+| GET | `/categories` | JWT | — | List varselkategorier med standard og tillatte kanaler |
 | GET | `/my` | JWT | — | Last inn varselinnstillinger for den nåværende brukeren (oppretter standardverdier automatisk hvis ingen finnes) |
+| POST | `/` | JWT | — | Lagre den nåværende brukerens innstillinger. Body: en eller flere av `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, pluss valgfri `overrides: [{ categoryKey, channel, optedIn }]` (channel kan være `push`, `email`, `in_app` eller `sms`; låste kategorier ignoreres). `allowSms` er medlemmets samtykke til tekstpåminnelser. En eldre body med en liste av rader godtas fortsatt |
 
 ## Tilkoblinger
 
@@ -254,6 +257,9 @@ Håndterer SMS-leverandører, gruppetekstmeldinger og sporing av levering.
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
 | GET | `/providers` | JWT | — | Last inn tekstmeldingsleverandører for menigheten (legitimasjon er maskert) |
+| GET | `/status` | JWT | — | `{ enabled }` -- om menigheten har en aktivert tekstmeldingsleverandør. Alle innloggede medlemmer i menigheten; brukes til bare å vise **Tekst**-alternativer når tekst kan sendes |
+| GET | `/inboundUrl` | JWT | `texting.send` eller `settings.edit` | `{ url }` -- menighetens innkommende (STOP) webhook-URL som limes inn hos leverandøren |
+| POST | `/inbound/:churchId/:token` | Offentlig | — | Webhook for innkommende meldinger fra leverandøren. `token` er en HMAC av menighetens ID. Et svar som er nøyaktig et stoppord (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`) markerer alle aktuelle personer som `optedOut` og slår av deres `allowSms`. Returnerer `{ optedOut: <antall> }`; andre svar returnerer `{ optedOut: 0 }` |
 | GET | `/preview/:groupId` | JWT | — | Forhåndsvis mottakere for en gruppetekstmelding (antall som kan motta, som har reservert seg og som mangler telefonnummer) |
 | GET | `/sent` | JWT | — | Last inn alle registreringer av sendte tekstmeldinger for menigheten |
 | GET | `/sent/:id/details` | JWT | — | Last inn en sendt tekstmelding med leveringslogger per mottaker |

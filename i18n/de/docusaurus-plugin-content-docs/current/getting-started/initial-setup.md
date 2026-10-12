@@ -21,8 +21,8 @@ Nach der Erstellung Ihres Kontos und Ihrer Kirche gibt es einige wichtige Schrit
 ## Schritt 1: Konfigurieren Sie die Informationen Ihrer Kirche
 
 1. Öffnen Sie das [Jump-Menü](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **Settings** und klicken Sie auf **Settings**.
-2. Klicken Sie auf **Edit Settings**.
-3. Geben Sie den **Namen** Ihrer Kirche, **Adresse** und **Kontaktdetails** ein.
+2. Klicken Sie im Abschnitt **Church Information** auf **Edit**.
+3. Geben Sie den **Namen** Ihrer Kirche, Ihre **Subdomäne** und **Adresse** ein.
 4. Klicken Sie auf **Save**, um Ihre Änderungen anzuwenden.
 
 ## Schritt 2: Richten Sie Ihr Branding ein
@@ -47,7 +47,7 @@ Wenn Sie Ihr Logo und Branding bereit haben, bevor Sie Teammitglieder einladen, 
 
 Mit Ihrem Team an Ort und Stelle beginnen Sie, die Kernbereiche von B1 Admin zu entwickeln:
 
-1. **People** -- Fügen Sie Mitglieder zu Ihrem Kirchenverzeichnis hinzu. Dies ist die Grundlage für alles andere, also fangen Sie hier an. Sie können Personen manuell hinzufügen oder das Werkzeug **Import** unter **Settings** verwenden.
+1. **People** -- Fügen Sie Mitglieder zu Ihrem Kirchenverzeichnis hinzu. Dies ist die Grundlage für alles andere, also fangen Sie hier an. Sie können Personen manuell hinzufügen oder das Werkzeug **Import/Export** unter **Settings** verwenden.
 2. **Groups** -- Erstellen Sie Gruppen für Kleingruppen, Ministerieteams, Klassen und andere Versammlungen.
 3. **Attendance** -- Konfigurieren Sie Ihre Campusse, Dienstleistungen und Service-Zeiten zum Verfolgen von Anwesenheit.
 4. **Donations** -- Richten Sie Spendenfonds ein und verbinden Sie Ihr Payment Gateway (Stripe), um Online-Spenden anzunehmen.

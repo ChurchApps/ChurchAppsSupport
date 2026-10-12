@@ -29,7 +29,7 @@ Your church automatically receives a subdomain on B1.church (for example, `yourc
 4. To use a custom domain, log into your DNS provider (such as GoDaddy, Cloudflare, or AWS) and add two records:
    - An **A record** for your root domain pointing to `3.23.251.61`
    - A **CNAME record** for `www` pointing to `proxy.b1.church`
-5. Return to B1.church Admin, add your custom domain to the list, and click **Add** then **Save**. Your site will be accessible from your custom domain within a few minutes.
+5. Return to B1.church Admin, open the **Domains** section on the same Settings page, add your custom domain to the list, and click **Add** then **Save**. Your site will be accessible from your custom domain within a few minutes.
 
 :::tip
 If you do not see the Settings option, ask the person who set up your church account to grant you the "Edit Church Settings" permission. See [Roles & Permissions](../settings/roles-permissions.md) for details.
@@ -52,7 +52,7 @@ For detailed instructions on working with pages and navigation, see [Managing Pa
 
 1. In the Jump menu, choose **Website > Appearance**.
 2. Use the **Color Palette** to set your brand colors for primary, secondary, and accent tones.
-3. Under **Typography Settings**, choose your heading and body fonts from the font browser.
+3. Under **Fonts**, choose your heading and body fonts from the font browser.
 4. Upload your church logo under **Logo** in the Style Settings. Provide both a light background and dark background version.
 5. Configure your **Site Footer** with your church's contact information and links.
 

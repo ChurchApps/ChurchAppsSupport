@@ -21,14 +21,16 @@ Kapag nagawa na ninyo ang isang group, ang susunod na hakbang ay ang pagdaragdag
 ## Pagdaragdag ng mga Miyembro sa Group
 
 1. Sa [Jump menu](../introduction.md#getting-around-with-the-jump-menu), piliin ang **People > Groups** at i-click ang group na nais ninyong pamahalaan.
-2. I-click ang tab na **Members**.
-3. Sa search box, i-type ang pangalan ng taong nais ninyong idagdag.
-4. I-click ang **Add** sa tabi ng pangalan ng tao sa mga resulta ng paghahanap.
+2. Sa seksyong **Members** ng group page, i-click ang **All members**. (Direktang bumubukas sa listahan ng miyembro ang mga team at ministeryo.)
+3. Sa kahon na **Add Person** sa ibaba ng listahan ng miyembro, i-type ang pangalan ng taong nais ninyong idagdag at pindutin ang **Enter** o i-click ang search icon.
+4. I-click ang pangalan ng tao, o ang add icon sa tabi nito, sa mga resulta ng paghahanap.
 5. Lalabas na ang tao sa listahan ng mga miyembro ng group.
 
 :::tip
-Iwanang blangko ang search box at i-click ang **Search** para i-browse ang inyong buong directory. Kapaki-pakinabang ito kung hindi kayo sigurado sa eksaktong baybay ng pangalan ng isang tao.
+Bago kayo mag-type ng kahit ano, ipinapakita ng kahon na **Add Person** ang maikling listahan ng mga **Recent people** na maaari ninyong idagdag sa isang click.
 :::
+
+Kapag tapos na kayo, i-click ang link na **Back to** kasama ang pangalan ng group para bumalik sa group page. Ipinapakita ng group page ang buod ng mga **Members**, **Sessions**, **Calendar**, at **Health** ng group, bawat isa ay may link sa buong view nito.
 
 ### Pagdaragdag ng Taong Wala pa sa B1
 
@@ -39,10 +41,10 @@ Kung walang makita sa inyong paghahanap, ipapakita ng search ang **No records fo
 May mga espesyal na pribilehiyo ang mga group leader -- maaari nilang i-edit ang [calendar ng group](group-calendar.md), pamahalaan ang mga event, at tumulong sa pag-uugnay ng group.
 
 1. Sa listahan ng mga miyembro ng group, hanapin ang taong nais ninyong gawing leader.
-2. I-click ang **green key icon** sa tabi ng pangalan niya.
-3. Naitalaga na ang tao bilang group leader.
+2. I-click ang **star icon** (**Make Leader**) sa tabi ng pangalan niya.
+3. Naitalaga na ang tao bilang group leader at magpapakita ng **Leader** badge.
 
-Para alisin ang pagiging leader, i-click muli ang green key icon.
+Para alisin ang pagiging leader, i-click muli ang star icon (**Remove Leader Access**).
 
 :::info
 Sinumang miyembro ng group ay maaaring tumingin ng calendar at mga event ng group, pero mga leader lang ang maaaring magdagdag o mag-edit ng mga calendar event.
@@ -52,8 +54,8 @@ Sinumang miyembro ng group ay maaaring tumingin ng calendar at mga event ng grou
 
 Maaari kayong makipag-ugnayan sa lahat ng miyembro ng isang group direkta mula sa B1 Admin:
 
-1. Mula sa group detail page, hanapin ang messaging area.
-2. I-type ang inyong mensahe sa text box.
+1. Sa listahan ng miyembro ng group, i-click ang icon na **Send a message to members** sa itaas ng listahan.
+2. I-type ang inyong mensahe sa text box (o pumili ng isa mula sa **Templates**).
 3. I-click ang **Send**.
 
 Maihahatid ang inyong mensahe sa lahat ng miyembro ng group.
@@ -62,7 +64,7 @@ Maihahatid ang inyong mensahe sa lahat ng miyembro ng group.
 
 Maaari kayong magpadala ng mga naka-format na email sa lahat ng miyembro ng isang group:
 
-1. Mula sa group detail page, i-click ang **email icon**.
+1. Mula sa group detail page, i-click ang button na **Email** sa kaliwang bahagi ng page.
 2. Magbubukas ang Send Email dialog, na nagpapakita kung ilang miyembro ang makakatanggap ng email at kung ilan ang walang email address na naka-file.
 3. Opsyonal na pumili ng **email template** mula sa dropdown, o sumulat ng mensahe mula sa simula. I-click ang **Manage Templates** para gumawa o mag-edit ng mga template.
 4. Maglagay ng **subject line**. Maaari kayong magsingit ng mga merge field sa pamamagitan ng pag-click sa mga field chip: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`.
@@ -92,9 +94,9 @@ Pagkatapos maaprubahan, ang isang simbahan ay maaaring magpadala ng hanggang 150
 
 ## Pag-text sa mga Miyembro ng Group
 
-Kapag nakakonekta na ng inyong simbahan ang isang [texting provider](../settings/church-settings.md#texting), lalabas sa header ng group ang isang text icon (**Text this group**).
+Kapag nakakonekta na ng inyong simbahan ang isang [texting provider](../settings/church-settings.md#texting), lalabas ang isang button na **Text** (**Text this group**) sa tabi ng button na **Email** sa group page.
 
-1. Mula sa group detail page, i-click ang **text icon**.
+1. Mula sa group detail page, i-click ang **Text**.
 2. Ipinapakita ng dialog kung ilang miyembro ang makakatanggap ng text. Lalaktawan ang mga miyembrong walang mobile phone na naka-file o nag-opt out.
 3. I-type ang inyong mensahe. Para i-personalize ito, i-click ang isang placeholder chip sa ibaba ng message box -- **First Name**, **Last Name**, **Display Name**, o **Church Name** -- para isingit ito sa kinaroroonan ng inyong cursor. Pupunan ang bawat placeholder ng sariling detalye ng tatanggap kapag ipinadala ang text.
 4. I-click ang **Send**.
@@ -105,14 +107,14 @@ Tingnan ang [Pag-personalize ng mga Text gamit ang Merge Field](../settings/chur
 
 Para i-download ang listahan ng mga miyembro ng group bilang file:
 
-1. Mula sa group detail page, i-click ang **download icon**.
+1. Sa listahan ng miyembro ng group, i-click ang **Export** sa itaas ng listahan.
 2. Magda-download sa inyong computer ang isang CSV file na naglalaman ng impormasyon ng mga miyembro ng group.
 
 Kapaki-pakinabang ang CSV export para mag-import ng datos sa ibang mga tool, o magtago ng mga offline na record. Para sa higit pang opsyon sa pag-export, tingnan ang [Pag-export ng Datos](../people/exporting-data.md).
 
 ## Pag-print ng Listahan ng mga Miyembro {#printing-the-member-list}
 
-I-click ang icon na **Print Roll Sheet** (printer) sa itaas ng listahan ng mga miyembro at pumili ng layout. Magbubukas ang pahina sa bagong tab at awtomatikong lalabas ang print dialog ng iyong browser.
+Sa listahan ng miyembro ng group, i-click ang icon na **Print Roll Sheet** (printer) sa itaas ng listahan ng mga miyembro at pumili ng layout. Magbubukas ang pahina sa bagong tab at awtomatikong lalabas ang print dialog ng iyong browser.
 
 - **Attendance Sheet** -- isang listahan ng klase na walang petsa, na may mga kahong **Present** at **Absent** para markahan ng mga guro nang mano-mano. Tingnan ang [Pag-print ng Roll Sheet](../attendance/recording-attendance.md#printing-a-roll-sheet).
 - **Contact Roster** -- isang listahan ng contact para sa group, may petsa ngayong araw at may heading na pangalan ng iyong simbahan at pangalan ng group. May row ang bawat miyembro na may kanyang **Name**, **Phone**, **Email**, at **Address**. Nauuna sa listahan ang mga lider at minamarkahan ng **Leader**, kasunod ang iba pa ayon sa apelyido. Ang ipinapakitang telepono ay ang mobile number ng miyembro, o ang kanyang numero sa bahay o trabaho kung walang mobile. Iniiwang blangko ang mga detalye ng contact ng sinumang nag-opt out.
@@ -125,7 +127,7 @@ Naglalaman ang contact roster ng personal na impormasyon sa pakikipag-ugnayan ng
 
 Maaari kayong magpadala ng push notification direkta sa lahat ng miyembro ng group na may naka-install na B1.church app sa kanilang device at naka-enable ang push notification.
 
-1. Mula sa group detail page, i-click ang **bell icon** sa header toolbar (sa tabi ng mga email at text icon -- lalabas ang text icon kapag nakakonekta na ang isang [texting provider](../settings/church-settings.md#texting)).
+1. Mula sa group detail page, i-click ang **Notify** (sa ibaba ng mga button na **Email** at **Text** -- lalabas ang button na **Text** kapag nakakonekta na ang isang [texting provider](../settings/church-settings.md#texting)).
 2. Magbubukas ang isang dialog na nagpapakita kung ilan sa mga miyembro ng inyong group ang naka-enable ang push.
 3. Punan ang mga detalye ng notification:
    - **Title** *(kinakailangan)* -- Maikling buod, hanggang 80 character.

@@ -21,7 +21,7 @@ Funksjonen Skriv ut katalog lager en formatert, utskrivbar medlemskatalog for me
 ## Åpne utskriftskatalogen
 
 1. Gå til **Personer** i B1 Admin.
-2. Klikk på **utskriftsikonet** (skriverikonet) i verktøylinjen øverst i resultatkortet for Personer. Det står ved siden av knappen Eksporter.
+2. Klikk på **Skriv ut katalog** i sidetoppen på Personer-siden.
 3. Utskriftskatalogen åpnes i en ny nettleserfane og begynner å laste registerdataene.
 4. Etter omtrent 1,5 sekunder vises utskriftsdialogen i nettleseren automatisk.
 
@@ -33,13 +33,13 @@ Katalogen åpnes i en egen fane slik at du kan skrive den ut uten å forlate sid
 
 Utskriftskatalogen inkluderer alle **aktive medlemmer** i menigheten. Nærmere bestemt:
 
-- Personer med medlemsstatusen **Inaktiv** eller **Besøkende** utelates automatisk.
+- Personer med medlemsstatusen **Inaktiv**, **Besøkende** eller **Avdød** utelates automatisk.
 - Personer som har **reservert seg** mot å stå i katalogen, utelates.
 - Alle andre grupperes etter **husstand**.
 
 ### Skrive ut bare søkeresultatene
 
-Etter at du har kjørt et søk på siden Personer -- et hurtigsøk, et [avansert søk](./searching-people.md#advanced-search), en [lagret liste](./lists.md) eller et [AI-søk](./ai-search.md) -- endres utskriftsikonet til **Skriv ut resultater**. Når du klikker på det, skrives det ut en katalog med bare personene i resultatene i stedet for hele menigheten, med samme layout.
+Etter at du har kjørt et søk på siden Personer -- et hurtigsøk, et [avansert søk](./searching-people.md#advanced-search), en [lagret liste](./lists.md) eller et [AI-søk](./ai-search.md) -- endres knappen **Skriv ut katalog** til **Skriv ut resultater**. Når du klikker på den, skrives det ut en katalog med bare personene i resultatene i stedet for hele menigheten, med samme layout.
 
 Når du skriver ut søkeresultater, gjelder ikke filteret for medlemsstatus ovenfor: alle du har søkt opp, tas med, også besøkende eller inaktive. Personer som har reservert seg mot å stå i katalogen, utelates fortsatt. For å gå tilbake til å skrive ut hele katalogen tømmer du søket først.
 

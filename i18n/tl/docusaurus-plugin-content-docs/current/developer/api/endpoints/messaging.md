@@ -33,6 +33,10 @@ Base path: `/messaging/conversations`
 
 Ang mga usapang may `contentType: "person"` (ang tab na Notes sa tala ng isang tao) o `contentType: "personConfidential"` (ang seksyon ng Confidential Notes) ay may bantay sa bawat read at write path, kasama ang mga route sa itaas na karaniwang pampubliko, na nagbabalik ng `401` para sa mga uri ng content na ito. Ang `person` ay nangangailangan ng permission na MembershipApi **People / Edit**; ang `personConfidential` ay nangangailangan ng **People / View Confidential Notes**. Para sa mga scoped API key, ang `people:write` ay sumasaklaw sa dalawang aksyon (kailangan pa ring hawak ng user ng key ang pinagbabatayang permission ng role).
 
+### Kontrol sa access sa mga workflow card note {#workflow-card-notes-access-control}
+
+Ang mga usapang may `contentType: "workflowCard"` (ang mga note sa isang workflow card, kung saan ang `contentId` ay ang task ID ng card) ay mababasa at masusulatan lamang ng sinumang makakapagbukas ng card na iyon: isang user na may DoingApi **Tasks / View** permission, o ang taong o grupong naka-assign sa card, gumawa nito, o tungkol dito. Ang iba ay makakakuha ng `401` sa bawat read path, kasama ang mga public route sa itaas. Ikinakabit ang usapan ng card sa mismong card gamit ang `POST /doing/tasks/:id/conversation` (body `{ "conversationId": "..." }`; ang unang usapang naikabit ang nananaig), na maaaring tawagin ng mga editor ng card at ng assignee nito.
+
 ### Halimbawa: Magsimula ng Usapan
 
 ```
@@ -168,12 +172,11 @@ Authorization: Bearer <token>
 
 Base path: `/messaging/notificationpreferences`
 
-Nag-e-extend ng karaniwang CRUD. Ang base class ang nagbibigay ng POST `/` (gumawa o mag-update, walang kailangang permission).
-
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| POST | `/` | JWT | — | Gumawa o mag-update ng mga kagustuhan sa notification (mula sa CRUD base class) |
+| GET | `/categories` | JWT | — | Ilista ang mga kategorya ng notification kasama ang kanilang default at pinapayagang channel |
 | GET | `/my` | JWT | — | Kunin ang mga kagustuhan sa notification ng kasalukuyang user (awtomatikong gumagawa ng mga default kung wala pa) |
+| POST | `/` | JWT | — | I-save ang mga kagustuhan ng kasalukuyang user. Body: alinman sa `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, kasama ang opsyonal na `overrides: [{ categoryKey, channel, optedIn }]` (maaaring `push`, `email`, `in_app`, o `sms` ang channel; hindi pinapansin ang mga naka-lock na kategorya). Ang `allowSms` ang opt-in ng miyembro para sa mga paalala sa text. Tinatanggap pa rin ang lumang body na array ng mga row |
 
 ## Mga Koneksyon
 
@@ -254,6 +257,9 @@ Pinamamahalaan ang mga provider ng SMS texting, group text messaging, at pagsuba
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/providers` | JWT | — | Kunin ang mga provider ng texting ng simbahan (nakatago ang mga credential) |
+| GET | `/status` | JWT | — | `{ enabled }` — kung may naka-enable na texting provider ang simbahan. Sinumang naka-sign in na user ng simbahan; ginagamit para ipakita ang mga opsyong **Text** lamang kapag maaaring magpadala ng text |
+| GET | `/inboundUrl` | JWT | `texting.send` o `settings.edit` | `{ url }` — ang inbound (STOP) webhook URL ng simbahan na ipe-paste sa provider |
+| POST | `/inbound/:churchId/:token` | Public | — | Inbound-message webhook ng provider. Ang `token` ay isang HMAC ng church id. Ang reply na eksaktong stop word (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`) ay nagmamarka sa bawat tugmang tao bilang `optedOut` at ina-off ang kanilang `allowSms`. Nagbabalik ng `{ optedOut: <count> }`; ang ibang reply ay nagbabalik ng `{ optedOut: 0 }` |
 | GET | `/preview/:groupId` | JWT | — | I-preview ang mga tatanggap ng group text (bilang ng eligible, nag-opt-out, at walang telepono) |
 | GET | `/sent` | JWT | — | Kunin ang lahat ng tala ng naipadalang text message ng simbahan |
 | GET | `/sent/:id/details` | JWT | — | Kunin ang isang naipadalang text kasama ang mga delivery log bawat tatanggap |

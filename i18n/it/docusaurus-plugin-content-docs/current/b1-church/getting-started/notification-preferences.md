@@ -6,7 +6,7 @@ title: "Preferenze di Notifica"
 
 <div class="article-intro">
 
-Le preferenze di notifica ti permettono di decidere quali notifiche ricevi dalla tua chiesa e come le ricevi - notifiche push, email o il campanello in-app. Puoi ottimizzare ogni tipo di notifica, impostare ore silenziose o silenziare tutto in una volta, il tutto da una sola schermata.
+Le preferenze di notifica ti permettono di decidere quali notifiche ricevi dalla tua chiesa e come le ricevi - notifiche push, email, il campanello in-app o (se la tua chiesa invia messaggi) SMS. Puoi ottimizzare ogni tipo di notifica, impostare ore silenziose o silenziare tutto in una volta, il tutto da una sola schermata.
 
 </div>
 
@@ -22,6 +22,7 @@ Nella parte superiore dello schermo troverai impostazioni che si applicano a tut
 
 - **Silenzia tutto** -- Mette temporaneamente in pausa tutte le notifiche non essenziali.
 - **Notifiche push** -- Attiva o disattiva le notifiche push sul tuo dispositivo.
+- **Messaggi di testo** -- Visibile solo se la tua chiesa ha attivato gli SMS. Attivalo per ricevere promemoria di servizio ed eventi via SMS al numero di cellulare nel tuo profilo. È disattivato finché non lo attivi.
 - **Frequenza di email** -- Scegli come arrivano le notifiche di email:
   - **Per notifica** -- Invia un'email mentre le cose accadono.
   - **Digest giornaliero** -- Raggruppa tutto in un'email giornaliera.
@@ -35,6 +36,7 @@ Sotto i controlli globali c'è una griglia di tipi di notifica. Per ognuno puoi 
 - **Push** -- Una notifica sul tuo dispositivo.
 - **Email** -- Un messaggio nella tua casella di posta.
 - **In-App** -- Il campanello/badge dentro l'app.
+- **Testo** -- Un SMS sul tuo cellulare. Questa colonna appare solo se la tua chiesa ha attivato gli SMS, e solo alcuni tipi (come **Promemoria di Evento**, **Servizio e Programma** e **Attività e Follow-Up**) possono essere inviati via SMS. Gli SMS arrivano solo se è attivo anche **Messaggi di testo**.
 
 I tipi comuni includono **Promemoria di Evento**, **Servizio e Programma**, **Messaggi Diretti**, **Chat di Gruppo**, **Richieste di Preghiera** e **Annunci della Chiesa**. Ad esempio, potresti mantenere le notifiche push attive per i Messaggi Diretti ma disattivarle per gli Annunci.
 
@@ -43,6 +45,10 @@ Alcuni tipi di notifica sono **sempre attivi** e non possono essere disattivati 
 :::
 
 Alcuni tipi sono **disattivati per impostazione predefinita** (come messaggi promozionali o di raccolta fondi) e ti raggiungono solo se scegli di accettarli.
+
+## Interrompere i Messaggi di Testo
+
+Per smettere di ricevere SMS, disattiva **Messaggi di testo** e salva. Puoi anche rispondere **STOP** a qualsiasi SMS della tua chiesa per escludere il tuo numero dai suoi messaggi.
 
 ## Salvataggio delle Tue Modifiche
 

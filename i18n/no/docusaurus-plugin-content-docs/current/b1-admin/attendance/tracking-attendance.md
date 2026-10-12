@@ -6,7 +6,7 @@ title: "Følge opp oppmøte"
 
 <div class="article-intro">
 
-Når campuser, samlingstidspunkter og grupper er satt opp, gjør B1 Admin det enkelt å gå gjennom oppmøtedata og se trender. Oppmøtesiden har to rapportvisninger -- fanen **Oppmøtetrend** for trender i hele menigheten og fanen **Gruppeoppmøte** for detaljer på gruppenivå. Bruk disse verktøyene til å forstå vekstmønstre, oppdage synkende engasjement og ta datadrevne beslutninger for menigheten.
+Når campuser, samlingstidspunkter og grupper er satt opp, gjør B1 Admin det enkelt å gå gjennom oppmøtedata og se trender. Oppmøtesiden åpnes med en oppsummering av denne ukens oppmøte, og rapportene under **Alle år** har to hovedvisninger -- fanen **Oppmøtetrend** for trender i hele menigheten og fanen **Gruppeoppmøte** for detaljer på gruppenivå. Bruk disse verktøyene til å forstå vekstmønstre, oppdage synkende engasjement og ta datadrevne beslutninger for menigheten.
 
 </div>
 
@@ -21,8 +21,12 @@ Når campuser, samlingstidspunkter og grupper er satt opp, gjør B1 Admin det en
 ## Se oppmøtetrender
 
 1. Åpne **B1 Admin**, åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvid **Personer** og klikk på **Oppmøte**.
-2. Klikk på fanen **Oppmøtetrend**.
+2. Klikk på **Alle år** i venstre kolonne. Fanen **Oppmøtetrend** er valgt som standard.
 3. Rapporten kjøres automatisk når fanen åpnes, og viser totalt oppmøte for hver uke.
+
+:::tip
+For en rask oversikt over inneværende uke viser hovedsiden for Oppmøte hvor mange som er i rommet denne uken, en fordeling per rom (gruppe), eventuelle gjester og et søylediagram over innsjekkinger de siste 13 ukene -- uten at du trenger å kjøre en rapport.
+:::
 
 ## Filtrere dataene
 
@@ -44,7 +48,7 @@ Rapportene kjøres automatisk hver gang du åpner fanen Oppmøtetrend, så du se
 
 Fanen **Gruppeoppmøte** viser hvem som var til stede på hver gruppeøkt. Dette er nyttig når du vil følge en bestemt klasse, et tjenesteteam eller en smågruppe i stedet for å se på de samlede tallene for gudstjenesten.
 
-1. Velg fanen **Gruppeoppmøte**.
+1. Velg fanen **Gruppeoppmøte** under **Alle år**.
 2. Velg eventuelt en **Campus** og en **Gudstjeneste**.
 3. Angi **Startdato** og **Sluttdato**. Som standard dekker rapporten fra siste søndag til i dag.
 4. Klikk på **Kjør rapport**.

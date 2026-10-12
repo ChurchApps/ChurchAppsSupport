@@ -35,7 +35,7 @@ Tus planes se dividen en dos pestañas: **Próximos** y **Pasados**. Cada entrad
 Debajo de la lista hay una sección **Fechas de Bloqueo**. Úsala para gestionar fechas cuando no estés disponible para servir. Puedes agregar, editar y eliminar rangos de fechas de bloqueo para que tus líderes de equipo sepan cuándo programar alrededor de ti.
 
 :::info
-Tu iglesia puede enviar **recordatorios** antes de los servicios en los que estás programado, por correo electrónico y como notificación de aplicación. Si aún no has respondido, puedes **Aceptar** o **Rechazar** directamente desde el correo electrónico de recordatorio — no se requiere iniciar sesión.
+Tu iglesia puede enviar **recordatorios** antes de los servicios en los que estás programado, por correo electrónico y como notificación de aplicación. Si tu iglesia envía mensajes de texto, también puedes recibirlos por texto activando **Mensajes de texto** en tus [Preferencias de notificación](../getting-started/notification-preferences.md). Si aún no has respondido, puedes **Aceptar** o **Rechazar** directamente desde el correo electrónico de recordatorio — no se requiere iniciar sesión.
 :::
 
 ## Viendo Detalles del Plan

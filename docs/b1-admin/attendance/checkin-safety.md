@@ -21,7 +21,7 @@ B1 includes a set of child-safety controls for check-in: room capacity limits an
 
 ## Room Capacity and Closing a Room
 
-Each check-in room (group) can enforce its own limits. Open the group, click the **pencil icon** to edit its settings, and find the **Check-In Capacity** section:
+Each check-in room (group) can enforce its own limits. Open the group, click **Edit** to edit its settings, and find the **Check-In Capacity** section:
 
 - **Capacity** -- The maximum number of people who can be checked in to this room at once. When the room is full, check-in to it is blocked and the kiosk names the full room.
 - **Guest Capacity** -- An optional separate cap on how many guests the room can hold.

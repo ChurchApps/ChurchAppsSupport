@@ -29,19 +29,19 @@ Før du kan følge opp oppmøte, må du fortelle B1 Admin om menighetens fysiske
 ## Sette opp strukturen for oppmøte
 
 1. Åpne **B1 Admin**, åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) og utvid **Personer**.
-2. Klikk på **Oppmøte**. Fanen **Oppsett** er valgt som standard.
-3. Klikk på **Administrer campuser** (øverst til høyre i oppsettpanelet). Da kommer du til **Innstillinger → Campuser**. Klikk på **Legg til campus**, skriv inn navnet på lokasjonen (adresse og tidssone er valgfritt) og klikk på **Lagre**.
-4. Gå tilbake til **Personer → Oppmøte → Oppsett**. Campusen din vises nå i oppsettstabellen.
+2. Klikk på **Oppmøte**, og klikk deretter på **Oppsett** i venstre kolonne. Tabellen **Gudstjenestestruktur** åpnes, med antall campuser, samlingstidspunkter og planlagte og uplanlagte grupper øverst.
+3. Klikk på **Administrer campuser** (øverst til høyre i panelet **Gudstjenestestruktur**). Da kommer du til **Innstillinger → Campuser**. Klikk på **Legg til campus**, skriv inn navnet på lokasjonen (adresse og tidssone er valgfritt) og klikk på **Lagre**.
+4. Gå tilbake til **Personer → Oppmøte** og klikk på **Oppsett**. Campusen din vises nå i oppsettstabellen.
 5. Klikk på **+-knappen i kolonnen Gudstjeneste** under campusen din. Skriv inn et gudstjenestenavn som «Søndagsgudstjeneste» og klikk på **Lagre**.
-6. Klikk på **+-knappen i kolonnen Tidspunkt** under gudstjenesten. Skriv inn et klokkeslett som «9.00» og klikk på **Lagre**. Gjenta for hvert samlingstidspunkt.
-7. For å koble en gruppe til et samlingstidspunkt åpner du gruppen fra **Personer > Grupper**, klikker på blyanten **Rediger** og bruker **Legg til samlingstidspunkt** — se neste avsnitt.
+6. Klikk på **+-knappen i kolonnen Tidspunkt** under gudstjenesten. Skriv inn et navn på samlingstidspunktet, for eksempel «9.00», eventuelt fyll ut [innsjekkingsplanen](#setting-a-check-in-schedule), og klikk på **Lagre**. Gjenta for hvert samlingstidspunkt.
+7. For å koble en gruppe til et samlingstidspunkt åpner du gruppen fra **Personer > Grupper**, klikker på **Rediger** og bruker **Legg til samlingstidspunkt** — se neste avsnitt.
 
 ### Aktivere Registrer oppmøte for en gruppe
 
 Før oppmøte kan registreres for en gruppe, må Registrer oppmøte være slått på for den gruppen.
 
 1. Velg **Personer > Grupper** i Jump-menyen og velg gruppen.
-2. Klikk på blyantikonet **Rediger**.
+2. Klikk på knappen **Rediger** under gruppens navn.
 3. Sett **Registrer oppmøte** til **Ja**.
 4. Klikk på **Lagre**.
 
@@ -50,7 +50,29 @@ Hvis du tilordnet gruppen til et samlingstidspunkt i forrige trinn, bruker du og
 :::
 
 :::tip
-Hvis en gruppe møtes utenfor en vanlig gudstjeneste -- for eksempel en smågruppe midt i uken som registrerer sitt eget oppmøte -- kan du la den være en uplanlagt gruppe. Den vises likevel i fanen Grupper for oppmøterapportering.
+Hvis en gruppe møtes utenfor en vanlig gudstjeneste -- for eksempel en smågruppe midt i uken som registrerer sitt eget oppmøte -- kan du la den være en uplanlagt gruppe. Den vises likevel i rapporten **Gruppeoppmøte** for oppmøterapportering.
+:::
+
+## Angi en innsjekkingsplan {#setting-a-check-in-schedule}
+
+Hvert samlingstidspunkt kan ha en valgfri innsjekkingsplan, slik at [selvinnsjekking](check-in.md) åpner og stenger automatisk hver uke. Uten plan er innsjekking for samlingstidspunktet tilgjengelig til enhver tid (så lenge rommet ikke er stengt av andre grunner, for eksempel fordi det er fullt).
+
+1. I **Oppsett**-visningen klikker du på et samlingstidspunkts navn i kolonnen **Tidspunkt** (eller legger til et nytt).
+2. Under **Innsjekkingsplan** velger du **Dag** for ukedagen samlingstidspunktet holdes.
+3. Angi **Starttidspunkt** og eventuelt **Sluttidspunkt**.
+4. Skriv inn **Åpne innsjekking (minutter før start)** -- for eksempel åpner `30` innsjekking en halv time før gudstjenesten starter.
+5. Skriv inn **Steng innsjekking (minutter etter slutt)** -- for eksempel holder `15` innsjekking åpen i 15 minutter etter sluttidspunktet. Hvis du ikke har angitt sluttidspunkt, telles dette fra starttidspunktet.
+6. Klikk på **Lagre**.
+
+Planen bruker menighetens lokale tid og gjentas hver uke. For å fjerne en plan setter du **Dag** tilbake til **Ingen plan** og klikker på **Lagre**. En plan trer bare i kraft når både **Dag** og **Starttidspunkt** er angitt.
+
+Mens innsjekkingsvinduet for et samlingstidspunkt er stengt:
+
+- **Selvinnsjekking på B1.church** skjuler det samlingstidspunktet. Hvis ingen av en gudstjenestes tidspunkter er åpne, ser familiene «Innsjekking er ikke åpen for denne gudstjenesten akkurat nå.»
+- **B1 Checkin-kioskappen** fullfører ikke en innsjekking til gruppene for det samlingstidspunktet; kiosken viser en skjerm **Kan ikke sjekke inn ennå** med det berørte rommet, slik at familien kan velge et annet.
+
+:::tip
+Sett et romslig åpningsvindu (for eksempel 45 minutter før start), slik at familier og frivillige som kommer tidlig kan sjekke inn, og et kort stengingsvindu, slik at de som kommer for sent fortsatt kan sjekke inn etter at gudstjenesten har startet.
 :::
 
 ## Redigere oppsettet

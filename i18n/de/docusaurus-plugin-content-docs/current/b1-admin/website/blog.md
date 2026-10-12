@@ -27,7 +27,7 @@ Die Blog-Seite ermöglicht es Ihnen, Nachrichten, Updates und Andachten auf Ihre
 ## Einen Post hinzufügen
 
 1. Klicken Sie auf **Add Post** in der oberen rechten Ecke.
-2. Geben Sie einen **Title** ein. Ein URL-freundlicher Slug wird beim Tippen automatisch für Sie generiert -- Sie können ihn direkt bearbeiten, wenn Sie eine andere Adresse möchten.
+2. Geben Sie einen **Title** ein. Eine URL-freundliche **Web address** (Slug) wird beim Tippen automatisch für Sie generiert -- Sie können ihn direkt bearbeiten, wenn Sie eine andere Adresse möchten.
 3. Fügen Sie ein **Excerpt** hinzu -- eine kurze Zusammenfassung, die in der Post-Liste, Meta-Beschreibungen und RSS-Feeds angezeigt wird. Wenn Sie es leer lassen, wird eines automatisch vom Anfang Ihres Post-Inhalts generiert.
 4. Schreiben Sie den Post-Body im **Content**-Editor mit Markdown. Klicken Sie auf **Preview**, um zu sehen, wie der formatierte Post aussieht.
 5. Wählen Sie eine **Category** (wählen Sie eine bestehende oder geben Sie eine neue ein) und optional kommagetrennte **Tags**.
@@ -49,9 +49,9 @@ Jeder Post in der Liste zeigt einen von drei Zuständen:
 
 ## Posts bearbeiten, in der Vorschau anzeigen und löschen
 
-- Klicken Sie auf das **Edit**-Symbol neben einem Post, um Änderungen vorzunehmen.
-- Klicken Sie auf das **View**-Symbol (sichtbar auf veröffentlichten Posts), um den Live-Post auf Ihrer Website in einem neuen Tab zu öffnen.
-- Klicken Sie auf das **Delete**-Symbol, um einen Post dauerhaft zu entfernen.
+- Klicken Sie neben einem Post auf **Edit**, um Änderungen vorzunehmen.
+- Klicken Sie auf **View on Site** (bei veröffentlichten Posts sichtbar), um den Live-Post auf Ihrer Website in einem neuen Tab zu öffnen.
+- Klicken Sie auf **Delete**, um einen Post dauerhaft zu entfernen.
 
 ## Wie Besucher Ihren Blog sehen
 

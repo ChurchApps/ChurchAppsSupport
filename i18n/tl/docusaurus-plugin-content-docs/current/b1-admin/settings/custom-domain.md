@@ -30,7 +30,7 @@ Maaaring abutin ng ilang minuto hanggang ilang oras bago magkabisa ang mga pagba
 Kapag nakaturo na ang DNS sa B1:
 
 1. Pumunta sa **Settings** sa B1 Admin.
-2. I-click ang **Domains**.
+2. I-click ang **Domains** sa listahan sa kaliwa, pagkatapos i-click ang **Edit** sa seksyong **Domains**.
 3. I-type ang iyong domain sa field at i-click ang **Save**.
 
 Hindi mo kailangang i-click muna ang button na **+** -- ang domain na naiwang naka-type sa field ay idinaragdag kapag nag-save ka. Gamitin ang **+** (o pindutin ang **Enter**) kapag gusto mong magdagdag ng ilang domain sa listahan bago mag-save.

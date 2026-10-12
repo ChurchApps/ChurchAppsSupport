@@ -6,81 +6,81 @@ title: "Mailchimp"
 
 <div class="article-intro">
 
-Keep a Mailchimp audience in sync with B1 automatically: people flow in with their name, email, and phone; group and list membership becomes Mailchimp tags; deleted people are archived. The sync is built into B1 — no third-party service, no per-task metering, and changes arrive in near-realtime rather than on a nightly schedule.
+Mantenha uma audiência do Mailchimp sincronizada com o B1 automaticamente: as pessoas entram com nome, e-mail e telefone; a participação em grupos e listas se torna tags do Mailchimp; pessoas excluídas são arquivadas. A sincronização faz parte do B1 — sem serviço de terceiros, sem cobrança por tarefa, e as mudanças chegam quase em tempo real em vez de em um cronograma noturno.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- A [Mailchimp](https://mailchimp.com) account with the audience you want B1 to manage
-- A Mailchimp **API key** (Mailchimp: profile icon → **Account & billing → Extras → API keys**)
-- Your **Audience ID** (Mailchimp: **Audience → Settings → Audience name and defaults**)
-- A B1Admin user with **Edit Settings** permission
+- Uma conta do [Mailchimp](https://mailchimp.com) com a audiência que você deseja que o B1 gerencie
+- Uma **chave de API** do Mailchimp (Mailchimp: ícone de perfil → **Account & billing → Extras → API keys**)
+- Seu **Audience ID** (Mailchimp: **Audience → Settings → Audience name and defaults**)
+- Um usuário do B1Admin com permissão **Edit Settings**
 
 </div>
 
-## What Syncs
+## O Que Sincroniza
 
-| B1 change | Mailchimp effect |
+| Mudança no B1 | Efeito no Mailchimp |
 |---|---|
-| Person added or updated | Subscriber added/updated (first name, last name, phone; new subscribers arrive as `subscribed`) |
-| Person deleted (or GDPR-erased) | Subscriber archived |
-| Person joins a group | Tag named after the group added |
-| Person leaves a group | That tag removed |
-| Person enters a saved list | Tag named after the list added |
-| Person leaves a saved list | That tag removed |
+| Pessoa adicionada ou atualizada | Assinante adicionado/atualizado (nome, sobrenome, telefone; novos assinantes entram como `subscribed`) |
+| Pessoa excluída (ou apagada por LGPD/GDPR) | Assinante arquivado |
+| Pessoa entra em um grupo | Tag com o nome do grupo adicionada |
+| Pessoa sai de um grupo | Essa tag removida |
+| Pessoa entra em uma lista salva | Tag com o nome da lista adicionada |
+| Pessoa sai de uma lista salva | Essa tag removida |
 
-**Saved lists are usually the better tag source.** A B1 [saved list](/docs/b1-admin/people/lists) is a rule-based audience that re-evaluates itself — "everyone at the North campus," "members who opted into pastoral emails." Point your Mailchimp segments at list tags and the sync maintains them; use group tags for ministry-team mailings.
+**Listas salvas costumam ser a melhor fonte de tags.** Uma [lista salva](/docs/b1-admin/people/lists) do B1 é uma audiência baseada em regras que se reavalia sozinha — "todos do campus Norte", "membros que aceitaram e-mails pastorais". Aponte seus segmentos do Mailchimp para as tags das listas e a sincronização os mantém atualizados; use as tags de grupo para envios a equipes de ministério.
 
-The sync is **one-way** (B1 → Mailchimp) and only touches Mailchimp's standard fields, so it can't conflict with merge fields or segments you manage inside Mailchimp.
+A sincronização é **unidirecional** (B1 → Mailchimp) e altera apenas os campos padrão do Mailchimp, então não entra em conflito com campos de mesclagem ou segmentos que você gerencia dentro do Mailchimp.
 
 ## Configuração
 
-1. In B1Admin go to **Settings → Developer → Webhooks → Add Webhook**.
-2. Set **Connector Type** to **Mailchimp**.
-3. Paste your **Mailchimp API Key** and **Audience ID**. The key is stored encrypted and never shown again.
-4. The relevant events are pre-selected; uncheck any you don't want (e.g. leave person events on but skip group tags).
-5. Save. B1 verifies the key and audience against Mailchimp before accepting — a typo fails immediately with a reason.
+1. No B1Admin, vá para **Settings → Developer → Webhooks → New Webhook**.
+2. Defina **Connector Type** como **Mailchimp**.
+3. Cole sua **Mailchimp API Key** e seu **Audience ID**. A chave é armazenada criptografada e nunca é mostrada novamente.
+4. Os eventos relevantes já vêm selecionados; desmarque os que não quiser (por exemplo, mantenha os eventos de pessoa, mas desligue as tags de grupo).
+5. Salve. O B1 verifica a chave e a audiência no Mailchimp antes de aceitar — um erro de digitação falha imediatamente, com o motivo.
 
-Use **Send Test** at any time to re-verify the connection. Every sync attempt is logged in the webhook's delivery history with Mailchimp's actual response, and failed deliveries retry automatically with backoff for about five days.
+Use **Send Test** a qualquer momento para verificar novamente a conexão. Cada tentativa de sincronização é registrada no histórico de entregas do webhook, com a resposta real do Mailchimp, e entregas com falha são repetidas automaticamente, com intervalos crescentes, por cerca de cinco dias.
 
-## Initial Import
+## Importação Inicial
 
-The connector syncs *changes* from the moment it's on; it doesn't backfill your existing directory. For setup day:
+O conector sincroniza *mudanças* a partir do momento em que é ativado; ele não preenche retroativamente o seu diretório existente. Para o dia da configuração:
 
-1. In B1Admin go to **People**, search for the people you want (or run a saved list), and click **Export** to download a CSV.
-2. In Mailchimp use **Audience → Import contacts** to load the CSV, applying any tags during import.
+1. No B1Admin, vá para **People**, pesquise as pessoas que deseja (ou execute uma lista salva) e clique em **Export** para baixar um CSV.
+2. No Mailchimp, use **Audience → Import contacts** para carregar o CSV, aplicando as tags que desejar durante a importação.
 
-Doing the initial load through Mailchimp's importer keeps you in control of the consent question — only import people who have actually agreed to receive your emails. Bulk-importing a whole directory as subscribed contacts can violate Mailchimp's terms and anti-spam law (CAN-SPAM/GDPR).
+Fazer a carga inicial pelo importador do Mailchimp mantém o controle sobre a questão do consentimento — importe apenas pessoas que de fato concordaram em receber seus e-mails. Importar em massa um diretório inteiro como contatos assinantes pode violar os termos do Mailchimp e as leis antispam (CAN-SPAM/GDPR).
 
-## Limits & Notes
+## Limites e Observações
 
-- **One-way sync.** Unsubscribes, bounces, and edits made in Mailchimp do not flow back to B1. Someone who unsubscribes in Mailchimp can still receive email sent directly from B1 — treat Mailchimp as the source of truth for bulk-mail consent.
-- **People without an email address are skipped** (logged as such in the delivery history) — Mailchimp subscribers are keyed by email.
-- **Email address changes create a new subscriber.** Mailchimp identifies people by email, so changing someone's email in B1 adds them under the new address; the old subscriber stays until you archive it in Mailchimp.
-- **Only standard fields sync** — first name, last name, phone. Membership status, campus, and custom B1 fields don't map to Mailchimp merge fields in this version; use list tags to segment instead.
-- **Tag names are the group/list names.** Renaming a group or list starts tagging under the new name; the old tag remains on existing subscribers until removed in Mailchimp.
-- **Mailchimp's contact limits still apply** — a sync that pushes a free-tier audience past its cap will log `Member limit reached` errors in the delivery history.
+- **Sincronização unidirecional.** Cancelamentos de assinatura, devoluções (bounces) e edições feitas no Mailchimp não voltam para o B1. Quem cancela a assinatura no Mailchimp ainda pode receber e-mails enviados diretamente pelo B1 — trate o Mailchimp como a fonte da verdade para o consentimento de e-mails em massa.
+- **Pessoas sem endereço de e-mail são ignoradas** (registradas como tal no histórico de entregas) — os assinantes do Mailchimp são identificados pelo e-mail.
+- **Mudanças de endereço de e-mail criam um novo assinante.** O Mailchimp identifica as pessoas pelo e-mail, então alterar o e-mail de alguém no B1 a adiciona com o novo endereço; o assinante antigo permanece até você arquivá-lo no Mailchimp.
+- **Apenas os campos padrão são sincronizados** — nome, sobrenome e telefone. Status de membro, campus e campos personalizados do B1 não são mapeados para campos de mesclagem do Mailchimp nesta versão; use tags de lista para segmentar.
+- **Os nomes das tags são os nomes dos grupos/listas.** Renomear um grupo ou lista faz a marcação começar com o novo nome; a tag antiga permanece nos assinantes existentes até ser removida no Mailchimp.
+- **Os limites de contatos do Mailchimp continuam valendo** — uma sincronização que leve uma audiência do plano gratuito além do limite registrará erros `Member limit reached` no histórico de entregas.
 
-## Other Recipes (Zapier / Make)
+## Outras Receitas (Zapier / Make)
 
-Anything beyond audience sync — tagging givers on `donation.created`, a Mailchimp → B1 reverse direction, or syncing to a different email platform entirely (Constant Contact, Brevo, etc.) — is still available through [Zapier](../zapier) or [Make](../make), which trigger on the same webhook events:
+Qualquer coisa além da sincronização de audiência — marcar doadores em `donation.created`, o sentido inverso do Mailchimp → B1, ou sincronizar com outra plataforma de e-mail (Constant Contact, Brevo etc.) — ainda está disponível pelo [Zapier](../zapier) ou pelo [Make](../make), que disparam com os mesmos eventos de webhook:
 
-- **Tag givers:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
-- **Two-way:** Mailchimp *New Subscriber* → B1 *Create Person*
+- **Marcar doadores:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
+- **Duas vias:** Mailchimp *New Subscriber* → B1 *Create Person*
 
-If you previously wired person/group sync through Zapier, switch those Zaps off after enabling the native connector — running both double-processes every event and burns Zapier tasks for nothing.
+Se você já tinha configurado a sincronização de pessoas/grupos pelo Zapier, desligue esses Zaps depois de ativar o conector nativo — executar os dois processa cada evento duas vezes e gasta tarefas do Zapier à toa.
 
 ## Solução de Problemas
 
-- **Save fails with "Mailchimp rejected the API key"** — the key was revoked or mistyped. Keys must end in a data-center suffix like `-us21`.
-- **Save fails with "audience not found"** — the Audience ID doesn't exist under that account. Copy it from **Audience → Settings → Audience name and defaults** (it's not the audience's name).
-- **A person never appeared in Mailchimp** — check the webhook's delivery history. "Skipped: person has no email address" means exactly that; a `4xx` from Mailchimp shows the reason in the response body.
-- **Deliveries stopped entirely** — after repeated exhausted deliveries the webhook auto-disables. Fix the cause (usually a revoked key), re-enable it, and use **Send Test** to confirm.
+- **Salvar falha com "Mailchimp rejected the API key"** — a chave foi revogada ou digitada incorretamente. As chaves devem terminar com um sufixo de data center, como `-us21`.
+- **Salvar falha com "audience not found"** — o Audience ID não existe nessa conta. Copie-o em **Audience → Settings → Audience name and defaults** (não é o nome da audiência).
+- **Uma pessoa nunca apareceu no Mailchimp** — verifique o histórico de entregas do webhook. "Skipped: person has no email address" significa exatamente isso; um `4xx` do Mailchimp mostra o motivo no corpo da resposta.
+- **As entregas pararam completamente** — após falhas repetidas esgotarem as tentativas, o webhook se desativa automaticamente. Corrija a causa (geralmente uma chave revogada), reative-o e use **Send Test** para confirmar.
 
-## See Also
+## Veja Também
 
-- [Webhooks (developer reference)](/docs/developer/api/webhooks) — the engine underneath, event catalog, delivery/retry semantics
-- [Saved Lists](/docs/b1-admin/people/lists) — rule-based audiences that map naturally onto Mailchimp tags
-- [Zapier (overview)](../zapier) — for recipes beyond audience sync
+- [Webhooks (referência do desenvolvedor)](/docs/developer/api/webhooks) — o motor por trás disso, o catálogo de eventos e a semântica de entrega/repetição
+- [Listas Salvas](/docs/b1-admin/people/lists) — audiências baseadas em regras que se encaixam naturalmente nas tags do Mailchimp
+- [Zapier (visão geral)](../zapier) — para receitas além da sincronização de audiência

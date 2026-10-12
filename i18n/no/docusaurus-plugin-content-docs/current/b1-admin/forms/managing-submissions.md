@@ -72,7 +72,7 @@ Skjemamedlemmer med rollen **Administrator** eller **Bare visning** har tilgang 
 :::
 
 :::tip
-Hvis et **Frittstående** skjema er satt til å opprette en personpost, vises alle innsendinger som er koblet til en eksisterende person også i personens egen fane **Skjemaer** i Personer-delen, ikke bare for skjemaer av typen Personer.
+Hvis et **Frittstående** skjema er satt til å opprette en personpost, vises alle innsendinger som er koblet til en eksisterende person også i delen **Skjemaer** på personens side i Personer, ikke bare for skjemaer av typen Personer.
 :::
 
 ## Neste steg

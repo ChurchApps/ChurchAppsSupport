@@ -19,14 +19,14 @@ A página Horários de Transmissão ao Vivo permite que você configure o cronog
 
 </div>
 
-A página tem duas abas principais: **Serviços** para gerenciar seu cronograma de transmissão ao vivo e **Configurações** para configurar sua página de transmissão.
+A transmissão ao vivo é gerenciada em duas páginas da seção **Sermões** do menu Jump: **Horários de Transmissão ao Vivo** para gerenciar seu cronograma de transmissão ao vivo e **Configurações** para configurar as abas da sua página de transmissão.
 
 ## Gerenciando Serviços
 
 ### Adicionando um Serviço
 
 1. No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Sermões** e clique em **Horários de Transmissão ao Vivo**.
-2. Clique no botão **Adicionar Serviço** para criar um novo serviço agendado.
+2. Clique no botão **Adicionar Serviço** no topo da página para criar um novo serviço agendado. Os serviços existentes são listados em uma tabela que mostra o nome, o horário, o provedor e a duração de cada serviço; clique no ícone de edição de uma linha para alterá-la.
 3. Insira um **Nome do Serviço** (por exemplo, "Domingo de Manhã").
 4. Defina o **Horário do Serviço** -- escolha o dia e a hora em que seu serviço começa.
 5. Defina **Recorre Semanalmente** como **Sim** para serviços semanais regulares, ou **Não** para um evento único.
@@ -47,19 +47,19 @@ Seu serviço será atualizado automaticamente a cada semana se definido como rec
 
 ## Configurações de Página de Transmissão
 
-Clique na aba **Configurações** para personalizar as abas e links que aparecem ao lado de sua transmissão ao vivo.
+Para personalizar as abas e links que aparecem ao lado de sua transmissão ao vivo, abra o menu Jump, expanda **Sermões** e clique em **Configurações**. A página **Configurações de Transmissão** mostra sua lista de **Abas de Conteúdo**.
 
 ### Adicionando Abas
 
 1. Clique no botão **Adicionar** para adicionar uma nova aba à sua página de transmissão ao vivo.
-2. Escolha a aba **Chat** pré-projetada ou adicione uma aba personalizada com uma URL externa.
+2. Escolha um **Tipo de Link**: **URL Externa** para um link personalizado, ou uma das abas pré-configuradas **Chat** ou **Oração**.
 3. Para a aba Chat, apenas dê a ela um nome na caixa **Texto da Aba** e a configuração estará concluída.
 4. Para uma aba vinculada, insira o nome da aba, escolha um ícone clicando no botão de ícone e insira a URL.
 5. Suas abas configuradas aparecerão na página de transmissão ao vivo para os espectadores acessarem recursos adicionais e recursos interativos.
 
 ### Visualizando Sua Transmissão
 
-Clique no botão **Visualizar Sua Transmissão** para ver exatamente como sua página de transmissão ao vivo parecerá aos visitantes, incluindo seu logotipo, horários de serviço e abas configuradas.
+Na página **Horários de Transmissão ao Vivo**, clique em **Visualizar Sua Transmissão** no topo da página para ver exatamente como sua página de transmissão ao vivo parecerá aos visitantes, incluindo seu logotipo, horários de serviço e abas configuradas.
 
 ## Configurando Sua Transmissão ao Vivo do YouTube
 

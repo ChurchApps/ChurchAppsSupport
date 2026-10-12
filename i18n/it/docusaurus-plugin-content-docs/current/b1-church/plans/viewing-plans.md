@@ -35,7 +35,7 @@ I tuoi piani sono divisi in due schede: **Imminenti** e **Passati**. Ogni voce m
 Sotto l'elenco c'è una sezione **Date di Blocco**. Usala per gestire le date quando non sei disponibile per il servizio. Puoi aggiungere, modificare e rimuovere intervalli di date di blocco in modo che i leader del tuo team sappiano quando programmare intorno a te.
 
 :::info
-La tua chiesa può inviare **promemoria** prima dei servizi a cui sei programmato, via email e come notifica dell'app. Se non hai ancora risposto, puoi **Accettare** o **Rifiutare** direttamente dal promemoria email - nessun accesso necessario.
+La tua chiesa può inviare **promemoria** prima dei servizi a cui sei programmato, via email e come notifica dell'app. Se la tua chiesa invia SMS, puoi riceverli anche via SMS attivando **Messaggi di testo** nelle tue [Preferenze di notifica](../getting-started/notification-preferences.md). Se non hai ancora risposto, puoi **Accettare** o **Rifiutare** direttamente dal promemoria email - nessun accesso necessario.
 :::
 
 ## Visualizzazione dei Dettagli del Piano

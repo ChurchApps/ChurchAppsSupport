@@ -21,23 +21,23 @@ Når du oppretter en kalender i B1 Admin, kan du bygge en kuratert oversikt over
 ## Opprette en ny kalender
 
 1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Kalendere** og klikk på **Kalendere**.
-2. Klikk på **Legg til kalender**.
+2. Klikk på **Legg til kalender** øverst på siden. Skjemaet for ny kalender åpnes under kalenderlisten.
 3. Skriv inn et **navn** på kalenderen (for eksempel «Ungdomsarrangementer» eller «Menighetens hovedkalender»).
 4. Du kan legge til en **beskrivelse** som hjelper teamet ditt å forstå hva kalenderen brukes til.
 5. Klikk på **Opprett** for å lagre den nye kalenderen.
 
 ## Kalenderens detaljside
 
-Når du har opprettet en kalender, klikker du på den for å åpne detaljsiden. Siden har to hovedområder:
+Når du har opprettet en kalender, klikker du på **Administrer arrangementer** på raden for kalenderen for å åpne detaljsiden. Siden har to hovedområder:
 
-- **Venstre kolonne** -- En kalendervisning med arrangementer hentet fra de tilkoblede gruppene.
-- **Høyre kolonne** -- Listen over tilknyttede grupper. Her bestemmer du hvilke grupper som skal inngå i kalenderen.
+- **Venstre kolonne** -- Kalenderens navn med handlingene (**Nytt arrangement**, **Rediger**, **Importer .ics** og **Skriv ut**), etterfulgt av listen **Grupper i kalenderen** som viser hvilke grupper som er med i kalenderen. Klikk på **Fjern** ved siden av en gruppe for å ta den ut av kalenderen.
+- **Hovedområdet** -- Visningen **Kalenderarrangementer** med arrangementer hentet fra de tilkoblede gruppene, med knappene **Abonner** og **Legg til gruppe** over.
 
 ## Koble til grupper
 
-Grupper som har arrangementer i kalenderen, vises automatisk i gruppelisten til høyre på detaljsiden.
+Grupper som har arrangementer i kalenderen, vises automatisk i listen **Grupper i kalenderen** til venstre på detaljsiden.
 
-1. Klikk på **Legg til** i gruppeseksjonen for å knytte en gruppe til kalenderen.
+1. Klikk på **Legg til gruppe** over kalenderen for å knytte en gruppe til kalenderen.
 2. Velg gruppen fra nedtrekkslisten.
 3. Velg om du vil ta med **alle arrangementer** fra gruppen eller bare **bestemte arrangementer**.
 4. Klikk på **Lagre**.

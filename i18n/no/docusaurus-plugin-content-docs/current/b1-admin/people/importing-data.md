@@ -23,7 +23,7 @@ Verktøyet B1 Transfer gjør det enkelt å hente inn eksisterende data i B1, ent
 
 1. Logg inn på **B1 Admin**.
 2. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvid **Innstillinger** og klikk på **Innstillinger**.
-3. Klikk på knappen **Import/eksport** øverst til høyre i sidehodet.
+3. Klikk på lenken **Import/eksport** under menighetens navn øverst i den venstre innstillingsmenyen.
 4. Da åpnes verktøyet **B1 Transfer** i en ny fane på [transfer.b1.church](https://transfer.b1.church).
 
 Overføringsverktøyet tar deg gjennom fire trinn: Kilde, Forhåndsvisning, Mål og Kjør.

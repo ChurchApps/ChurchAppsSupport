@@ -14,13 +14,7 @@ La sección **Grupos** te permite organizar a los miembros de tu iglesia en mini
 
 Los grupos están organizados por **categoría**. Una categoría es una etiqueta de nivel superior como "Grupos Pequeños", "Ministerios" o "Comités". Cada categoría puede contener múltiples grupos, lo que facilita mantener los grupos relacionados juntos.
 
-Cuando abres la página de Grupos, verás un resumen en la parte superior que muestra:
-
-- **Total de Grupos** -- el número de grupos en todas las categorías
-- **Categorías** -- el número de categorías de grupos que has creado
-- **Miembros Totales** -- el recuento combinado de miembros en todos los grupos
-
-Debajo del resumen, tus grupos están listados por categoría con el recuento de miembros mostrado para cada grupo.
+Cuando abres la página de Grupos, verás un cuadro **Search groups...**, una fila de botones de categoría y una tabla de tus grupos. Cada grupo muestra su categoría y etiquetas debajo de su nombre, junto con su recuento de miembros. Haz clic en **All** o en el nombre de una categoría para filtrar la lista (las categorías adicionales están en **More categories**), y haz clic en el encabezado de columna **Name** o **People** para ordenar.
 
 ## Lo que puedes hacer
 
@@ -38,7 +32,7 @@ Aquí está lo que puedes lograr en la sección de Grupos:
 
 ## Comenzar
 
-Para acceder a Grupos, abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expande **People**, y haz clic en **Grupos**. Verás todos tus grupos existentes organizados por categoría.
+Para acceder a Grupos, abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expande **People**, y haz clic en **Grupos**. Verás todos tus grupos existentes, que puedes filtrar por categoría.
 
 :::tip
 Si recién estás comenzando, comienza creando algunas categorías que coincidan con la estructura de tu iglesia (por ejemplo, "Ministerios", "Grupos Pequeños", "Comités"). Luego agrega grupos individuales dentro de cada categoría. Ver [Crear Grupos](./creating-groups.md) para un tutorial paso a paso.

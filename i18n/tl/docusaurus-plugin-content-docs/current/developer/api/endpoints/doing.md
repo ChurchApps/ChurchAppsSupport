@@ -22,12 +22,14 @@ Base path: `/doing/plans`
 | GET | `/:id` | JWT | — | Kunin ang isang plano ayon sa ID |
 | GET | `/ids?ids=` | JWT | — | Kunin ang maraming plano ayon sa mga ID na pinaghiwalay ng kuwit |
 | GET | `/types/:planTypeId` | JWT | — | Kunin ang mga plano ayon sa uri ng plano |
+| GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + ministry edit | I-preview ang serving overview na **Text Volunteers** ipapadala: `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }` para sa mga boluntaryong naka-assign sa range (isa bawat tao, nilalaktawan ang mga nag-opt out at walang numero, dinededup ang mga shared na numero, may limit na 200) |
 | GET | `/presenter` | JWT | — | Kunin ang mga plano para sa susunod na 7 araw (presenter view) |
 | GET | `/public/current/:planTypeId` | Pampubliko | — | Kunin ang kasalukuyang plano para sa isang uri ng plano |
 | GET | `/public/signup/:churchId` | Pampubliko | — | Mga planong bukas para sa self-signup, bawat isa may mga posisyon nito para sa self-signup (kasama ang `filledCount` ng mga assignment na Accepted/Unconfirmed) at mga oras. Walang pangalan ng boluntaryo |
 | GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` para sa mga posisyon ng plano para sa self-signup (mga display name ng mga naka-assign na Accepted/Unconfirmed). Nagbabalik ng `[]` maliban kung naka-on ang `showVolunteerNames` ng plano |
 | POST | `/` | JWT | — | Lumikha o mag-update ng mga plano (tumatanggap ng isang object o array) |
-| POST | `/copy/:id` | JWT | — | Kopyahin ang isang plano kasama ang mga posisyon, oras, takdang-aralin, at mga item ng service order. Kasama sa body ang `copyMode` ("none", "positions", "all") at `copyServiceOrder` (boolean). Ang `notes` at `signupDeadlineHours` ay dinadala mula sa pinagmulang plano maliban kung ibigay ang mga ito ng body |
+| POST | `/copy/:id` | JWT | Ministry edit | Kopyahin ang isang plano kasama ang mga posisyon, oras, assignment, at mga item ng service order. Kasama sa body ang `ministryId`, `serviceDate`, `copyMode` ("none", "positions", "all") at `copyServiceOrder` (boolean). Kung walang `targetPlanId`, gagawa ng bagong plano, at ang `notes`, `signupDeadlineHours`, `showVolunteerNames`, at `autoReplaceOnDecline` ay dinadala mula sa pinagmulang plano maliban kung ang body ang magbibigay ng mga ito. Kapag may `targetPlanId`, ang kopya ay pupunan ang umiiral na planong iyon (dapat kaya mong i-edit ito). Tinatawag ng opsyong **Repeat weekly** ng B1Admin ang endpoint na ito minsan kada linggo, at bawat tawag ay kumokopya mula sa planong ginawa noong nakaraang linggo |
+| POST | `/textRange` | JWT | `texting.send` + ministry edit | I-text ang bawat boluntaryong naka-assign sa isang date range sa pamamagitan ng texting provider ng simbahan. Body: `{ startDate, endDate, ministryId, planTypeId?, message }` (hanggang 1600 characters ang message; nireresolba ang merge fields para sa bawat recipient). Ibinabalik ang preview counts kasama ang `recipientCount`, `successCount`, `failCount`, at `error` (`no_provider` o `insufficient_credits`) kapag maagang huminto ang pagpapadala |
 | POST | `/autofill/:id` | JWT | — | Awtomatikong punan ang mga takdang-aralin ng boluntaryo para sa isang plano. Body: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Burahin ang isang plano at lahat ng kaugnay na oras, takdang-aralin, posisyon, at mga item ng plano |
 
@@ -176,10 +178,12 @@ Base path: `/doing/tasks`
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | Kunin ang mga bukas na gawain para sa kasalukuyang gumagamit |
 | GET | `/:id` | JWT | — | Kunin ang isang gawain ayon sa ID |
+| GET | `/:id/contact` | JWT | Can view the card | Contact info para sa taong tungkol sa workflow card: `{ personId, displayName, mobilePhone, email }`. Nagbibigay-daan sa assigned na caller na walang access sa People na maabot ang tao |
 | GET | `/closed` | JWT | — | Kunin ang mga saradong gawain para sa kasalukuyang gumagamit |
 | GET | `/timeline?taskIds=` | JWT | — | Kunin ang data ng timeline para sa mga gawain ayon sa mga task ID na pinaghiwalay ng kuwit |
 | GET | `/directoryUpdate/:personId` | JWT | — | Kunin ang gawain ng pag-update ng direktoryo para sa isang tao |
 | POST | `/` | JWT | — | Lumikha o mag-update ng mga gawain. Magdagdag ng `?type=directoryUpdate` para pangasiwaan ang mga gawain ng pag-update ng direktoryo (awtomatikong nag-a-upload ng mga larawan) |
+| POST | `/:id/conversation` | JWT | `tasks.edit` o assignee ng card | Ikabit ang notes conversation sa card. Body: `{ conversationId }`. Ang unang conversation na naikabit ang nananaig; ang mga susunod na tawag ay ibinabalik ang card nang walang pagbabago |
 | POST | `/loadForGroups` | JWT | — | I-load ang mga gawain para sa mga partikular na grupo. Body: `{ groupIds: [], status: "Open" }` |
 
 ## Mga Automation

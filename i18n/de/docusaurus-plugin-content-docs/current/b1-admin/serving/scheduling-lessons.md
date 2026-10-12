@@ -28,15 +28,15 @@ Dies ist eine einmalige Einrichtung pro Ministerium. Sie müssen Ihr Lessons.chu
 
 1. Melden Sie sich bei [B1 Admin](https://admin.b1.church/) an und gehen Sie zu **Dienst**
 2. Öffnen Sie das Ministerium, das Sie verbinden möchten (z. B. Kindergottesdienst)
-3. Scrollen Sie nach unten zum Abschnitt **Content-Provider-Konten**
+3. Scrollen Sie nach unten zum Abschnitt **Content-Provider**
 4. Klicken Sie auf **Neuen Provider verlinken**
 5. Wählen Sie **Lessons.church** aus der Liste aus
 6. Ein Geräteautorisierungsbildschirm mit einem Code wird angezeigt
 7. Gehen Sie zu [lessons.church](https://lessons.church), melden Sie sich an und geben Sie den Code ein, um die Verbindung zu autorisieren
-8. Nach der Genehmigung wird "Konto verlinkt" unter Lessons.church in B1 Admin angezeigt
+8. Nach der Genehmigung sehen Sie **Verlinkt** unter Lessons.church in B1 Admin
 
 :::info
-Der Abschnitt Content-Provider-Konten ist pro Ministerium. Wenn Sie mehrere Ministerien betreiben (z. B. Kinder- und Jugendministerium), müssen Sie Lessons.church für jedes einzeln verlinken.
+Der Abschnitt Content-Provider ist pro Ministerium. Wenn Sie mehrere Ministerien betreiben (z. B. Kinder- und Jugendministerium), müssen Sie Lessons.church für jedes einzeln verlinken.
 :::
 
 ## Schritt 2 -- Eine Lektion planen
@@ -44,7 +44,7 @@ Der Abschnitt Content-Provider-Konten ist pro Ministerium. Wenn Sie mehrere Mini
 Einmal verlinkt, können Sie Lektionen direkt von Plänen aus planen.
 
 1. Gehen Sie in B1 Admin zu **Dienst → Pläne**
-2. Wählen Sie Ihre Ministerium-Registerkarte und klicken Sie auf **Plantyp hinzufügen** -- geben Sie dem Plantyp einen Namen wie Kindergottesdienst oder Sonntagsschule
+2. Wählen Sie Ihre Ministerium-Registerkarte und klicken Sie auf **Plantyp hinzufügen** (oder **Plantyp erstellen**, wenn das Ministerium noch keinen hat) -- geben Sie dem Plantyp einen Namen wie Kindergottesdienst oder Sonntagsschule
 3. Klicken Sie auf den gerade erstellten Plantyp und klicken Sie auf **Lektion planen**. Von diesem Menü aus können Sie eine Lektion planen, eine Serie massiv planen, oder **Year-Plan anwenden**, um eine veröffentlichte Jahresfolge von Lessons.church einzufügen.
 4. Wählen Sie das **Datum** für die Lektion (standardmäßig der kommende Sonntag)
 5. Klicken Sie auf **Lektion auswählen** -- ein Inhaltsbrowser-Dialog wird geöffnet

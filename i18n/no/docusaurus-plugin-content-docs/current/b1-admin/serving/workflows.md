@@ -23,7 +23,7 @@ Arbeidsflyter fører mennesker gjennom en rekke trinn på en visuell tavle. Hver
 
 ## Vise arbeidsflyter
 
-Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **Tjeneste** og klikk på **Arbeidsflyter**. Du ser arbeidsflytene dine gruppert etter kategori, med aktive arbeidsflyter uthevet. Klikk på en arbeidsflyt for å åpne tavlen.
+Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **Tjeneste** og klikk på **Arbeidsflyter**. Arbeidsflytene dine vises i en tabell som viser **Kategori** og **Status** (**Aktiv** eller **Inaktiv**) for hver. Hvis du bruker kategorier, kan du filtrere listen etter kategori med fanene over den. Klikk på en arbeidsflyt for å åpne tavlen.
 
 ## Opprette en arbeidsflyt
 
@@ -51,7 +51,7 @@ Når du legger til eller redigerer et trinn, kan du konfigurere:
 
 - **Trinnnavn** -- kolonneoverskriften (for eksempel «Velkomstsamtale» eller «Venter på registrering»).
 - **Frist om (dager)** -- setter automatisk en frist når et kort kommer inn i dette trinnet. Kort som har passert fristen markeres som **Forfalt**.
-- **Standard ansvarlig** -- personen eller gruppen som nye kort i dette trinnet automatisk tildeles.
+- **Standard ansvarlig** -- personen eller gruppen som nye kort i dette trinnet automatisk tildeles. Når standard ansvarlig er en person, får de et varsel om at et kort er tildelt dem.
 - **Automatiske handlinger** -- ting systemet gjør av seg selv når et kort kommer inn (se nedenfor).
 - **Ruting** -- hvor kortet går når det forlater trinnet (se [Ruting](#routing-cards-with-outcomes-and-conditions)).
 
@@ -140,11 +140,15 @@ Fra kortpanelet kan du:
 - **Sende tilbake** til forrige trinn eller **Hoppe over** til neste trinn.
 - **Feste tildeling** -- la samme eier beholde kortet selv om det flyttes mellom trinn. Som standard tildeles et kort på nytt til det nye trinnets standard ansvarlige når det flyttes; ved å feste beholder den nåværende personen ansvaret hele veien.
 - **Fullføre** kortet for å avslutte det, eller velge en **Utfall**-knapp hvis trinnet har utfall konfigurert (se [Ruting](#routing-cards-with-outcomes-and-conditions)).
-- **Legge til notater** og se kortets **historikk** -- inkludert en logg over automatiske handlinger som har kjørt (sendte e-poster, ventetider osv.).
+- **Legge til notater** og se kortets **Aktivitet** -- en logg over automatiske handlinger som har kjørt (sendte e-poster, ventetider osv.).
+
+For et kort om en person viser panelet også personens mobilnummer og e-postadresse som lenker du kan trykke på for å ringe eller sende e-post, pluss en lenke **Vis profil** hvis du har tilgang til å se personer. Personen kortet er tildelt, ser telefonnummeret og e-postadressen selv uten tilgang til Personer.
+
+Notater lagres sammen med kortet. Alle som kan åpne kortet -- inkludert personen eller gruppen det er tildelt -- kan lese notatene og legge til egne. Personer som ikke kan åpne kortet, kan ikke se notatene.
 
 ### Massehandlinger
 
-Merk avmerkingsboksene på flere kort for å behandle dem samlet. En verktøylinje vises der du kan **Fullføre**, **Utsette**, **Tildele på nytt** eller **Flytte** alle valgte kort til et annet trinn på én gang.
+Merk avmerkingsboksene på flere kort for å behandle dem samlet. En verktøylinje vises der du kan **Fullføre**, **Utsette**, **Tildele** (på nytt) eller **Flytt til…** alle valgte kort til et annet trinn på én gang.
 
 ## Ruting av kort med utfall og betingelser
 
@@ -163,6 +167,10 @@ Dermed kan én beslutning sende personen videre på ulike veier.
 ### Automatisk ruting (betinget)
 
 Automatiske ruter flytter et kort videre **i det øyeblikket det kommer inn i et trinn** (og etter at de automatiske handlingene er ferdige), uten at noen klikker, hvis personen oppfyller et sett med betingelser. Legg til en rute, velg målsteget og definer én eller flere **betingelser** (for eksempel en persons menighetssted, alder eller medlemsstatus). En rute uten betingelser passer for alle.
+
+Tekstfelt kan matches eksakt eller med **inneholder**, **starter med** eller **slutter med**.
+
+Hvis betingelsene til en rute ikke kan kontrolleres av en eller annen grunn, regnes ruten som ikke-treff. Kortet blir stående på trinnet (eller følger en annen rute som treffer) i stedet for å sitte fast.
 
 :::info
 På tavlen viser hver trinnkolonne små merknader som beskriver rutingen -- for eksempel en utfallsetikett eller «hvis treff» etterfulgt av en pil til målsteget eller målarbeidsflyten.
@@ -195,8 +203,8 @@ Kjører regelmessig -- daglig, ukentlig, månedlig eller årlig -- mot et sett m
 
 For alle utløsere kan du også angi:
 
-- **Inngangstrinnet** det nye kortet starter på (standard er det første trinnet).
-- **Én gang per person** -- slik at samme person ikke legges til i arbeidsflyten to ganger av utløseren.
+- **Startsteget** det nye kortet havner på (standard er det første trinnet).
+- **Bare én gang per person** -- slik at samme person ikke legges til i arbeidsflyten to ganger av utløseren.
 - **Aktiv** -- slå utløseren av eller på uten å slette den.
 
 :::tip
@@ -205,7 +213,7 @@ Kombiner en **Skjema · Sendt inn**-utløser med malen **Oppfølging av nye bes�
 
 ## Mine kort
 
-Frivillige og ansatte trenger ikke grave gjennom hver tavle for å finne oppgavene sine. Siden **Mine kort** (lenket fra siden Arbeidsflyter) viser alle kort som er tildelt den innloggede brukeren på tvers av alle arbeidsflyter. Når du klikker på et kort, åpnes tavlen det hører til.
+Frivillige og ansatte trenger ikke grave gjennom hver tavle for å finne oppgavene sine. Listen **Mine kort** på siden **Mitt arbeid** viser alle kort som er tildelt den innloggede brukeren på tvers av alle arbeidsflyter. For å komme dit klikker du på **Mine kort** øverst på siden Arbeidsflyter, eller åpner **Tjeneste > Mitt arbeid** i Jump-menyen. Når du klikker på et kort, åpnes tavlen det hører til.
 
 ## Rapporter
 

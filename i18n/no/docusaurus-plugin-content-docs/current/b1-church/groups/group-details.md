@@ -49,6 +49,8 @@ Følgende faner er tilgjengelige:
 Hvis du er leder i gruppen, har du flere redigeringsmuligheter:
 
 - **Opprett og rediger hendelser** -- Legg til hendelser i gruppekalenderen fra fanen **Hendelser**. Når du oppretter en hendelse, kan du samtidig reservere rom og ressurser — velg blant tilgjengelige rom og ressurser, angi eventuelt tid for oppsett og nedrigging, så sendes bookingforespørselen automatisk inn til godkjenning.
+- **Rediger gjentakende hendelser** -- Når du åpner en gjentakende hendelse for å redigere den, spør B1 først hvilke datoer som skal endres: **Bare denne datoen**, **Denne og alle følgende datoer** eller **Alle datoer**. Velg ett og klikk på **Lagre** for å åpne hendelsen. Hvis du valgte **Bare denne datoen**, er bryteren **Gjentakende** skjult, og endringene dine (eller en sletting) gjelder bare for den ene datoen.
+- **Angi påminnelser for hendelser** -- Når du redigerer en eksisterende hendelse, slår du på **Send påminnelser** for å minne folk før den starter. Velg når de sendes, **Tidspunkt på dagen**, **Hvem skal få påminnelse?** og eventuelt en **Melding**, og velg deretter **Push**, **E-post** eller, hvis kirken din har satt opp tekstmeldinger, **Tekst** under **Send via**. Tekstmeldinger går bare til personer som har slått på tekstpåminnelser i sine [varselpreferanser](../getting-started/notification-preferences.md).
 - **Administrer ressurser** -- Last opp filer (opptil 100 MB lagringsplass), legg til lenker eller slett eksisterende ressurser.
 - **Før oppmøte** -- Registrer oppmøte for gruppesamlinger fra fanen **Oppmøte**.
 

@@ -24,7 +24,7 @@ Ang session ay kumakatawan sa isang pagpupulong ng grupo -- halimbawa, ang klase
 
 1. Buksan ang **B1 Admin**, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **People**, at i-click ang **Groups**.
 2. Piliin ang grupong nais ninyong talaan ng attendance.
-3. I-click ang tab na **Sessions**.
+3. Sa seksyong **Sessions** ng pahina ng grupo, i-click ang **All sessions**.
 4. I-click ang **New** para lumikha ng bagong session.
 5. Kung nakatalaga ang grupo sa isang oras ng serbisyo, piliin ang **Service Time**. Kung hindi nakaiskedyul ang grupo, hindi lalabas ang field na ito.
 6. Piliin ang **Session Date** -- maaaring ngayon, nakaraang petsa, o susunod na petsa.
@@ -76,11 +76,11 @@ Isabay ito sa **Print All Classes** at sa [pagdaragdag ng mga session para sa ba
 
 ## Pag-print ng Roll Sheet
 
-Ang roll sheet ay nai-print na listahan ng klase na maaaring markahan ng mga guro gamit ang kamay at ibalik sa inyo para ipasok sa ibang pagkakataon. Ipinapakita ng bawat sheet ang pangalan ng simbahan, ang klase, isang malaking linya ng **Date** sa ilalim ng pangalan ng klase, at ang oras ng serbisyo. Nakalista ang mga miyembro sa dalawang column (basahin pababa sa kaliwang column, saka sa kanan) para mas maraming pangalan ang magkasya sa isang pahina, at may mga kahon na **Present** at **Absent** ang bawat miyembro. May mga blangkong linya para sa mga bisita at isang lugar para sa **Teacher / Notes**.
+Ang roll sheet ay nai-print na listahan ng klase na maaaring markahan ng mga guro gamit ang kamay at ibalik sa inyo para ipasok sa ibang pagkakataon. Ipinapakita ng bawat sheet ang logo ng inyong simbahan (ang **Light Background Logo** mula sa [Website > Appearance](../website/appearance.md), kung nag-upload kayo nito) na may pangalan ng simbahan sa ilalim, ang klase, isang malaking linya ng **Date** sa ilalim ng pangalan ng klase, at ang oras ng serbisyo. Nakalista ang mga miyembro sa dalawang column (basahin pababa sa kaliwang column, saka sa kanan) para mas maraming pangalan ang magkasya sa isang pahina, at may mga kahon na **Present** at **Absent** ang bawat miyembro. May mga blangkong linya para sa mga bisita at isang lugar para sa **Teacher / Notes**.
 
 - **Mula sa isang session** -- I-click ang icon na **Print Roll Sheet** (printer) sa itaas ng listahan ng attendance ng session. May petsa ng session ang sheet.
 - **Lahat ng klase para sa isang serbisyo** -- Kung may oras ng serbisyo ang session, i-click ang **Print All Classes** para mag-print ng isang sheet kada klase na nakatalaga sa oras ng serbisyong iyon. Bawat klase ay nagpi-print sa sarili nitong pahina.
-- **Mula sa tab na Members** -- I-click ang icon na **Print Roll Sheet** sa itaas ng listahan ng miyembro ng grupo at piliin ang **Attendance Sheet** para mag-print ng sheet na walang petsa. May **Contact Roster** na layout din ang parehong menu, na may telepono, email, at address ng bawat miyembro -- tingnan ang [Pag-print ng Listahan ng mga Miyembro](../groups/group-members.md#printing-the-member-list).
+- **Mula sa listahan ng miyembro** -- Sa pahina ng grupo, i-click ang **All members**, pagkatapos ay i-click ang icon na **Print Roll Sheet** sa itaas ng listahan ng miyembro at piliin ang **Attendance Sheet** para mag-print ng sheet na walang petsa. May **Contact Roster** na layout din ang parehong menu, na may telepono, email, at address ng bawat miyembro -- tingnan ang [Pag-print ng Listahan ng mga Miyembro](../groups/group-members.md#printing-the-member-list).
 
 Bubukas ang sheet sa bagong tab at awtomatikong lalabas ang print dialog ng inyong browser.
 
@@ -96,7 +96,7 @@ Maaari ninyong i-download ang talaan ng session bilang CSV file na magagamit sa 
 
 Pagkatapos magtala ng mga session, lalabas ang datos sa inyong mga attendance report.
 
-- **Tab na Attendance Trend** -- nagpapakita ng mga trend ng buong simbahan sa paglipas ng panahon. Tingnan ang [Pagsubaybay sa Attendance](tracking-attendance.md).
+- **Tab na Attendance Trend** (sa ilalim ng **All years** sa pahina ng Attendance) -- nagpapakita ng mga trend ng buong simbahan sa paglipas ng panahon. Tingnan ang [Pagsubaybay sa Attendance](tracking-attendance.md).
 - **Tab na Group Attendance** -- nagpapakita ng attendance na hinati kada grupo. Tingnan ang [Mga Attendance Report](../reports/attendance-reports.md#group-attendance).
 
 :::tip

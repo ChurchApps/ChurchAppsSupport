@@ -13,13 +13,13 @@ Ang seksyong Calendars sa B1 Admin ay nagbibigay-daan sa iyong gumawa ng mga cur
 ## Pagtingin sa Iyong mga Kalendaryo
 
 1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), palawakin ang **Calendars**, at i-click ang **Calendars**.
-2. Inililista ng pahina ng Calendars ang lahat ng kalendaryo mo kasama ang kanilang pangalan at katayuan.
-3. Ipinapakita rin ng bawat kalendaryo ang mga grupong kaugnay nito.
+2. Inililista ng pahina ng Calendars ang lahat ng kalendaryo mo sa isang talahanayan, kasama ang kanilang pangalan at katayuan. Gamitin ang kahon na **Find a calendar** para i-filter ang listahan.
+3. May link na **Manage Events** ang bawat hilera para buksan ang kalendaryo, at link na **Edit** para palitan ang pangalan o burahin ito.
 
 ## Ano ang Magagawa Mo
 
-- **Magdagdag ng bagong kalendaryo** -- I-click ang add button para gumawa ng kalendaryo para sa isang partikular na ministeryo, uri ng event, o layunin. Tingnan ang [Paggawa ng mga Kalendaryo](creating-calendars) para sa hakbang-hakbang na tagubilin.
-- **Mag-edit ng kalendaryo** -- I-click ang anumang kalendaryo para buksan ito at pamahalaan kung aling mga grupo ang kasama rito.
+- **Magdagdag ng bagong kalendaryo** -- I-click ang **Add Calendar** sa itaas ng pahina para gumawa ng kalendaryo para sa isang partikular na ministeryo, uri ng event, o layunin. Tingnan ang [Paggawa ng mga Kalendaryo](creating-calendars) para sa hakbang-hakbang na tagubilin.
+- **Mag-edit ng kalendaryo** -- I-click ang **Manage Events** sa anumang kalendaryo para buksan ito at pamahalaan kung aling mga grupo ang kasama rito.
 - **Mag-publish ng mga kalendaryo** -- Maaaring ipakita ang mga kalendaryo sa B1.church website mo para makita ng mga bisita ang mga paparating na event sa simbahan mo.
 - **Gumawa ng mga curated na kalendaryo** -- Pagsama-samahin ang mga event mula sa maraming grupo sa iisang tanaw ng kalendaryo para sa kumpletong pagtingin sa lahat ng nangyayari sa simbahan mo. Tingnan ang [Curated Calendar](curated-calendar) para sa mga detalye.
 - **Pamahalaan ang mga kuwarto at resources** -- Subaybayan ang mga espasyo at kagamitang maaaring i-book at asikasuhin ang mga kahilingan para sa pag-apruba. Tingnan ang [Rooms & Resources](rooms-resources) para sa mga detalye.

@@ -20,7 +20,7 @@ title: "Custom Fields"
 
 ## Öffnen von Custom Fields
 
-Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), wählen Sie **Settings > Settings** und wählen Sie die **Custom Fields**-Karte. Sie können auch direkt unter **/settings/custom-fields** dorthin gehen. Sie sehen eine Liste aller Felder, die Sie definiert haben, mit ihrem **Name** und **Field Type**. Wenn Sie noch keine erstellt haben, liest sich das Fenster *"No custom fields have been added yet."*
+Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), wählen Sie **Settings > Settings** und klicken Sie in der linken Liste auf **Custom Fields**, um zum Abschnitt **Custom Fields** zu scrollen. Sie können auch direkt unter **/settings/custom-fields** dorthin gehen. Sie sehen eine Liste aller Felder, die Sie definiert haben, mit ihrem **Name** und **Field Type**. Wenn Sie noch keine erstellt haben, liest sich das Fenster *"No custom fields have been added yet."*
 
 ## Ein Feld hinzufügen
 
@@ -55,14 +55,14 @@ Das Ändern des **Field Type** eines Feldes, das bereits Werte hat (z. B. von Te
 
 ## Werte auf einer Person ausfüllen
 
-Sobald mindestens ein Custom Field existiert, befinden sich seine Werte direkt neben den eingebauten Details auf jedem Personendatensatz – Sie sehen sie in **Personal Details** und bearbeiten sie im gleichen Formular, das Sie für den Rest der Personendetails verwenden. Nichts zusätzliches wird angezeigt, bis Sie Ihr erstes Feld definiert haben.
+Sobald mindestens ein Custom Field existiert, befinden sich seine Werte direkt neben den eingebauten Details auf jedem Personendatensatz – Sie sehen sie zusammen mit den Kontaktdaten der Person links im Profil und bearbeiten sie im gleichen Formular, das Sie für den Rest der Personendetails verwenden. Nichts zusätzliches wird angezeigt, bis Sie Ihr erstes Feld definiert haben.
 
 1. Öffnen Sie die Datei einer Person unter **People**.
-2. Klicken Sie im Abschnitt **Personal Details** auf die Schaltfläche **Edit** (Stift).
+2. Klicken Sie links im Profil unterhalb der Kontaktdaten der Person auf die Schaltfläche **Edit**.
 3. Scrollen Sie zum Bereich **Custom Fields** am unteren Ende des Bearbeitungsformulars und füllen Sie einen Wert für jedes Feld aus. Jedes Feld zeigt die Eingabe, die seinem Typ entspricht – einen Datepicker für Date-Felder, ein Ja/Nein-Dropdown für Yes/No-Felder, eine Pick-List für Multiple Choice usw.
 4. Klicken Sie auf **Save**. Ihre Custom-Field-Werte werden zusammen mit dem Rest der Personendetails gespeichert.
 
-Zurück auf dem Profil zeigt jedes Feld, das einen Wert hat, jetzt im Abschnitt **Personal Details** an (Ja/Nein-Antworten lesen als *Yes* oder *No*, und Multiple Choice zeigt das Label der Option). Leere Felder sind einfach verborgen. Um einen Wert zu entfernen, bearbeiten Sie die Person, löschen Sie das Feld und speichern Sie – ein leerer Wert wird aus dem Datensatz gelöscht, anstatt als leer gespeichert zu werden.
+Zurück auf dem Profil zeigt jedes Feld, das einen Wert hat, jetzt unterhalb der Kontaktdaten der Person als *Feldname: Wert* an (Ja/Nein-Antworten lesen als *Yes* oder *No*, und Multiple Choice zeigt das Label der Option). Leere Felder sind einfach verborgen. Um einen Wert zu entfernen, bearbeiten Sie die Person, löschen Sie das Feld und speichern Sie – ein leerer Wert wird aus dem Datensatz gelöscht, anstatt als leer gespeichert zu werden.
 
 :::tip
 Der klassische Anwendungsfall ist die Sicherheit von Freiwilligen: erstellen Sie ein **Date**-Feld namens *Background check expires*, notieren Sie das Datum jedes Freiwilligen, dann erstellen Sie eine [Saved List](../people/lists.md), die jeden kennzeichnet, dessen Datum überschritten ist.
@@ -85,7 +85,7 @@ Speichern Sie jede Custom-Field-Suche als [List](../people/lists.md). Listen sin
 
 ## Anzeige eines Custom Fields als Spalte
 
-Um die Werte eines Feldes für alle auf einmal zu sehen, fügen Sie es als Spalte auf der **People**-Seite hinzu. Öffnen Sie die Column Chooser, wechseln Sie zur **Custom**-Registerkarte und aktivieren Sie das Feld. Der Wert jeder Person wird in seiner eigenen Spalte neben den eingebauten angezeigt. Siehe [Showing Custom Fields as Columns](../people/searching-people.md#showing-custom-fields-as-columns).
+Um die Werte eines Feldes für alle auf einmal zu sehen, fügen Sie es als Spalte auf der **People**-Seite hinzu. Stellen Sie **View as** auf **Table** um, klicken Sie in der Seitenkopfzeile auf das Symbol **Select columns**, wechseln Sie zur **Custom**-Registerkarte und aktivieren Sie das Feld. Der Wert jeder Person wird in seiner eigenen Spalte neben den eingebauten angezeigt. Siehe [Showing Custom Fields as Columns](../people/searching-people.md#showing-custom-fields-as-columns).
 
 ## Was beim Zusammenführen passiert
 

@@ -20,7 +20,7 @@ title: "Администрирование сервера"
 
 1. Войдите в [admin.b1.church](https://admin.b1.church)
 2. Откройте [Jump меню](../b1-admin/introduction.md#getting-around-with-the-jump-menu), разверните **Settings** и нажмите **Server Admin**. (Вы также можете перейти непосредственно на `admin.b1.church/admin`.)
-3. Панель Server Admin содержит разделы для Churches, Users, Impersonate User, Background Jobs, Commons, Usage Trends, Translation Lookups, Server Health и Database Migrations
+3. Панель Server Admin перечисляет свои разделы слева в трех группах: **Каталог** (Churches, Users, Impersonate User), **Операции** (Background Jobs, Commons, Usage Trends) и **Система** (Translation Lookups, Server Health, Database Migrations)
 
 ## Импersonations пользователя
 

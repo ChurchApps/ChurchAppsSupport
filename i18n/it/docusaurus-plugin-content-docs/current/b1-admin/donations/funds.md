@@ -20,7 +20,7 @@ I fondi ti permettono di categorizzare le donazioni per finalità in modo da pot
 
 ## La pagina dei fondi
 
-Vai su **Donazioni > Fondi** per vedere un elenco di tutti i tuoi fondi. Ogni riga mostra il nome del fondo e il suo stato **deducibile dalle tasse**, che determina se le donazioni a quel fondo appaiono negli [estratti conto di fine anno](giving-statements.md).
+Vai su **Donazioni > Fondi** per vedere un elenco di tutti i tuoi fondi. Ogni riga mostra il nome del fondo e il suo **Stato fiscale** (deducibile o non deducibile dalle tasse), che determina se le donazioni a quel fondo appaiono negli [estratti conto di fine anno](giving-statements.md).
 
 ## Creazione di un nuovo fondo
 
@@ -34,7 +34,7 @@ Il nuovo fondo appare immediatamente nel tuo elenco ed è disponibile durante l'
 
 ## Modifica ed eliminazione dei fondi
 
-- Per modificare un fondo, fai clic sul pulsante **Modifica** accanto ad esso. Puoi cambiare il nome, attivare/disattivare l'impostazione di deducibilità fiscale, oppure attivare/disattivare **Visibile ai donatori** per mostrarlo o nasconderlo dai moduli di donazione.
+- Per modificare un fondo, fai clic su **Modifica** sulla sua riga. Puoi cambiare il nome, attivare/disattivare l'impostazione di deducibilità fiscale, oppure attivare/disattivare **Visibile ai donatori** per mostrarlo o nasconderlo dai moduli di donazione.
 - Per eliminare un fondo, apri il modulo di modifica e fai clic su **Elimina**.
 
 :::warning
@@ -42,23 +42,23 @@ Eliminare un fondo non rimuove le donazioni che erano state precedentemente asse
 :::
 
 :::info
-I fondi nascosti ai donatori mostrano un chip **Nascosto** accanto al loro nome in questo elenco. I fondi nascosti funzionano comunque per le donazioni registrate manualmente in B1 Admin -- semplicemente non appaiono come opzione nei moduli di donazione pubblici o dei membri.
+I fondi nascosti ai donatori mostrano un badge **Nascosto** accanto al loro nome in questo elenco. I fondi nascosti funzionano comunque per le donazioni registrate manualmente in B1 Admin -- semplicemente non appaiono come opzione nei moduli di donazione pubblici o dei membri.
 :::
 
 ## Visualizzazione dei dettagli del fondo
 
 Fai clic su un **nome di fondo** per aprire la sua pagina di dettaglio. Questa pagina mostra:
 
-- **Cronologia delle donazioni** -- un elenco di tutte le donazioni a questo fondo
-- **Filtro per intervallo di date** -- restringi i risultati a un periodo di tempo specifico
-- **Statistiche riassuntive** -- totale donazioni, donatori unici e importo totale in dollari
+- **Riepilogo** -- una riga sotto il titolo della pagina con il numero di donazioni, il numero di donatori e l'importo totale in dollari
+- **Filtro per intervallo di date** -- imposta una **Data di inizio** e una **Data di fine** e fai clic su **Filtra** per restringere i risultati a un periodo di tempo specifico
+- **Cronologia delle donazioni** -- un elenco di donazioni a questo fondo con data, lotto, donatore e importo. Fai clic su **Esporta** sopra l'elenco per scaricarlo come CSV.
 
 Questa vista è utile quando devi fare un report su un'iniziativa di raccolta fondi specifica o verificare i progressi verso un obiettivo di raccolta fondi.
 
 ## Ordinamento ed esportazione
 
 - Usa le intestazioni di colonna per ordinare i fondi per nome.
-- Fai clic su **Esporta in CSV** per scaricare il tuo elenco di fondi come foglio di calcolo.
+- Fai clic su **Esporta** in alto nella pagina per scaricare il tuo elenco di fondi come foglio di calcolo (CSV).
 
 :::tip
 Configura i tuoi fondi prima di iniziare a [registrare le donazioni](recording-donations.md). Avere tutti i fondi in posizione garantisce che le donazioni siano categorizzate correttamente fin dall'inizio.

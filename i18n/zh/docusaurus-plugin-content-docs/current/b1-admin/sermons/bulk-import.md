@@ -22,10 +22,10 @@ title: "批量导入"
 ## 选择您的源
 
 1. 在 B1 Admin 中，打开 [Jump 菜单](../introduction.md#getting-around-with-the-jump-menu)（左上角的搜索栏），展开 **Sermons**，然后点击 **Sermons**。点击 **Add Sermon** 并从菜单中选择 **Bulk Import**。
-2. 您会看到两张可点击的卡片：
-   - **YouTube**（红色）-- 从 YouTube 频道导入视频
-   - **Vimeo**（蓝色）-- 从 Vimeo 账户导入视频
-3. 点击您的讲道所在平台的卡片。
+2. 在 **Choose Import Source** 下，您会看到两个选项：
+   - **YouTube** -- 从 YouTube 频道导入视频
+   - **Vimeo** -- 从 Vimeo 账户导入视频
+3. 点击您的讲道所在平台的选项（或点击其描述下方的 **Import from YouTube** / **Import from Vimeo**）。点击页面顶部的 **Back** 可返回来源选择页面。
 
 :::tip
 您可以随时返回并切换源，如果您在两个平台上都有视频的话。

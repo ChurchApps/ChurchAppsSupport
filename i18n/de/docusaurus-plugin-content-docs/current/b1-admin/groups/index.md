@@ -14,13 +14,7 @@ Der Bereich **Gruppen** ermöglicht es Ihnen, Ihre Gemeindeglieder in Dienste, K
 
 Gruppen sind nach **Kategorien** organisiert. Eine Kategorie ist eine Bezeichnung auf oberster Ebene wie „Kleingruppen", „Dienste" oder „Ausschüsse". Jede Kategorie kann mehrere Gruppen enthalten, was es einfach macht, zusammenhängende Gruppen zusammenzuhalten.
 
-Wenn Sie die Gruppenseite öffnen, sehen Sie eine Zusammenfassung oben mit:
-
-- **Gesamtzahl der Gruppen** – die Anzahl der Gruppen über alle Kategorien hinweg
-- **Kategorien** – die Anzahl der Gruppenkategorien, die Sie erstellt haben
-- **Gesamtzahl der Mitglieder** – die kombinierte Anzahl der Mitglieder aller Gruppen
-
-Unter der Zusammenfassung sind Ihre Gruppen nach Kategorie mit der Mitgliederzahl für jede Gruppe aufgelistet.
+Wenn Sie die Gruppenseite öffnen, sehen Sie ein Feld **Search groups...** (Gruppen suchen...), eine Reihe von Kategorieschaltflächen und eine Tabelle Ihrer Gruppen. Jede Gruppe zeigt ihre Kategorie und Etiketten unter ihrem Namen sowie ihre Mitgliederzahl. Klicken Sie auf **All** (Alle) oder einen Kategorienamen, um die Liste zu filtern (weitere Kategorien finden Sie unter **More categories** (Weitere Kategorien)), und klicken Sie auf die Spaltenüberschrift **Name** oder **People** (Personen), um zu sortieren.
 
 ## Was Sie tun können
 
@@ -38,7 +32,7 @@ Hier ist, was Sie im Bereich Gruppen erreichen können:
 
 ## Erste Schritte
 
-Um auf Gruppen zuzugreifen, öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **Personen** und klicken Sie auf **Gruppen**. Sie sehen alle Ihre vorhandenen Gruppen, organisiert nach Kategorie.
+Um auf Gruppen zuzugreifen, öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **Personen** und klicken Sie auf **Gruppen**. Sie sehen alle Ihre vorhandenen Gruppen, die Sie nach Kategorie filtern können.
 
 :::tip
 Wenn Sie gerade anfangen, beginnen Sie mit dem Erstellen einiger Kategorien, die Ihrer Kirchenstruktur entsprechen (z. B. „Dienste", „Kleingruppen", „Ausschüsse"). Fügen Sie dann einzelne Gruppen in jede Kategorie ein. Siehe [Gruppen erstellen](./creating-groups.md) für eine schrittweise Anleitung.

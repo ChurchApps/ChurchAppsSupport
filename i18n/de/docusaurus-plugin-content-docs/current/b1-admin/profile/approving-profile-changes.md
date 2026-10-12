@@ -24,8 +24,8 @@ Wenn ein Mitglied eine Profiländerung übermittelt, wird dies als Aufgabe angez
 
 **Vom Dashboard (Ihre Startseite):**
 1. Melden Sie sich bei B1 Admin an -- das Dashboard wird automatisch geladen.
-2. Klicken Sie im Bereich **Aufgaben** auf der rechten Seite auf die Registerkarte **Meinen Gruppen zugewiesen**.
-3. Alle ausstehenden Profiländerungsanforderungen werden dort aufgelistet.
+2. Klicken Sie im Bereich **My tasks** (Meine Aufgaben) auf **All tasks** (Alle Aufgaben). (My tasks zeigt nur offene Aufgaben, die Ihnen persönlich zugewiesen sind.)
+3. Klicken Sie auf die Registerkarte **Meinen Gruppen zugewiesen**. Alle ausstehenden Profiänderungsanforderungen werden dort aufgelistet.
 
 **Von Serving → Meine Arbeit:**
 1. Öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin) und erweitern Sie **Serving**.

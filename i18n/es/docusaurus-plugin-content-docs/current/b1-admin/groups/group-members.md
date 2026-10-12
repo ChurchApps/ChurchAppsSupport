@@ -21,14 +21,16 @@ Una vez que ha creado un grupo, el siguiente paso es añadir miembros. Desde la 
 ## Añadir miembros a un grupo
 
 1. En el [menú Jump](../introduction.md#getting-around-with-the-jump-menu), elija **People > Groups** y haga clic en el grupo que desea gestionar.
-2. Haga clic en la pestaña **Members**.
-3. En el cuadro de búsqueda, escriba el nombre de la persona que desea añadir.
-4. Haga clic en **Add** junto al nombre de la persona en los resultados de búsqueda.
+2. En la sección **Members** de la página del grupo, haga clic en **All members**. (Los equipos y ministerios se abren directamente en su lista de miembros.)
+3. En el cuadro **Add Person** debajo de la lista de miembros, escriba el nombre de la persona que desea añadir y presione **Enter** o haga clic en el icono de búsqueda.
+4. Haga clic en el nombre de la persona, o en el icono de añadir junto a él, en los resultados de búsqueda.
 5. La persona ahora aparece en la lista de miembros del grupo.
 
 :::tip
-Deje el cuadro de búsqueda en blanco y haga clic en **Search** para navegar a través de todo su directorio. Esto es útil si no está seguro de la ortografía exacta del nombre de alguien.
+Antes de escribir algo, el cuadro **Add Person** muestra una breve lista de **Recent people** que puede añadir con un solo clic.
 :::
+
+Cuando termine, haga clic en el enlace **Back to** con el nombre del grupo para volver a la página del grupo. La página del grupo muestra un resumen de **Members**, **Sessions**, **Calendar** y **Health** del grupo, cada uno con un enlace a su vista completa.
 
 ### Añadir a alguien que aún no está en B1
 
@@ -39,10 +41,10 @@ Si su búsqueda no encuentra a nadie, la búsqueda muestra **No records found** 
 Los líderes del grupo tienen privilegios especiales; pueden editar el [calendario del grupo](group-calendar.md), gestionar eventos y ayudar a coordinar el grupo.
 
 1. En la lista de miembros del grupo, encuentre a la persona que desea hacer líder.
-2. Haga clic en el **icono de llave verde** junto a su nombre.
-3. La persona ahora está designada como líder del grupo.
+2. Haga clic en el **icono de estrella** (**Make Leader**) junto a su nombre.
+3. La persona ahora está designada como líder del grupo y muestra una insignia **Leader**.
 
-Para eliminar el estado de líder, haga clic en el icono de llave verde de nuevo.
+Para eliminar el estado de líder, haga clic en el icono de estrella (**Remove Leader Access**) de nuevo.
 
 :::info
 Cualquier miembro del grupo puede ver el calendario del grupo y los eventos, pero solo los líderes pueden agregar o editar eventos del calendario.
@@ -52,8 +54,8 @@ Cualquier miembro del grupo puede ver el calendario del grupo y los eventos, per
 
 Puede comunicarse con todos los miembros de un grupo directamente desde B1 Admin:
 
-1. Desde la página de detalle del grupo, busque el área de mensajería.
-2. Escriba su mensaje en el cuadro de texto.
+1. En la lista de miembros del grupo, haga clic en el icono **Send a message to members** encima de la lista.
+2. Escriba su mensaje en el cuadro de texto (o elija uno de **Templates**).
 3. Haga clic en **Send**.
 
 Su mensaje se entregará a todos los miembros del grupo.
@@ -62,7 +64,7 @@ Su mensaje se entregará a todos los miembros del grupo.
 
 Puede enviar correos electrónicos con formato a todos los miembros de un grupo:
 
-1. Desde la página de detalle del grupo, haga clic en el **icono de correo electrónico**.
+1. Desde la página de detalle del grupo, haga clic en el botón **Email** en el lado izquierdo de la página.
 2. Se abre el diálogo Enviar correo electrónico, mostrando cuántos miembros recibirán el correo electrónico y cuántos no tienen dirección de correo electrónico en archivo.
 3. Opcionalmente seleccione una **plantilla de correo electrónico** del menú desplegable o componga un mensaje desde cero. Haga clic en **Manage Templates** para crear o editar plantillas.
 4. Ingrese una **línea de asunto**. Puede insertar campos de fusión haciendo clic en los chips de campo: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`.
@@ -92,9 +94,9 @@ Después de la aprobación, una iglesia puede enviar hasta 150 correos electrón
 
 ## Envío de mensajes de texto a miembros del grupo
 
-Una vez que su iglesia ha conectado un [proveedor de mensajes de texto](../settings/church-settings.md#texting), aparece un icono de texto (**Text this group**) en el encabezado del grupo.
+Una vez que su iglesia ha conectado un [proveedor de mensajes de texto](../settings/church-settings.md#texting), aparece un botón **Text** (**Text this group**) junto al botón **Email** en la página del grupo.
 
-1. Desde la página de detalle del grupo, haga clic en el **icono de texto**.
+1. Desde la página de detalle del grupo, haga clic en **Text**.
 2. El diálogo muestra cuántos miembros recibirán el texto. Los miembros sin teléfono móvil en archivo o que han optado por no participar se omiten.
 3. Escriba su mensaje. Para personalizarlo, haga clic en un chip de marcador de posición debajo del cuadro de mensaje; **First Name**, **Last Name**, **Display Name** o **Church Name**; para insertarlo en su cursor. Cada marcador de posición se completa con los detalles propios del destinatario cuando se envía el texto.
 4. Haga clic en **Send**.
@@ -105,14 +107,14 @@ Vea [Personalización de textos con campos de fusión](../settings/church-settin
 
 Para descargar la lista de miembros del grupo como archivo:
 
-1. Desde la página de detalle del grupo, haga clic en el **icono de descarga**.
+1. En la lista de miembros del grupo, haga clic en **Export** encima de la lista.
 2. Un archivo CSV que contiene la información del miembro del grupo se descargará a su computadora.
 
 Una exportación CSV es útil para importar datos a otras herramientas o mantener registros sin conexión. Para más opciones de exportación, vea [Exportar datos](../people/exporting-data.md).
 
 ## Imprimir la lista de miembros {#printing-the-member-list}
 
-Haga clic en el icono **Print Roll Sheet** (impresora) arriba de la lista de miembros y elija un diseño. La página se abre en una nueva pestaña y el cuadro de diálogo de impresión de su navegador aparece automáticamente.
+En la lista de miembros del grupo, haga clic en el icono **Print Roll Sheet** (impresora) encima de la lista y elija un diseño. La página se abre en una nueva pestaña y el cuadro de diálogo de impresión de su navegador aparece automáticamente.
 
 - **Attendance Sheet** -- una lista de clase sin fecha con casillas **Present** y **Absent** para que los maestros marquen a mano. Vea [Imprimir una hoja de asistencia](../attendance/recording-attendance.md#printing-a-roll-sheet).
 - **Contact Roster** -- una lista de contactos del grupo, con la fecha de hoy y encabezada con el nombre de su iglesia y el nombre del grupo. Cada miembro tiene una fila con su **Name**, **Phone**, **Email** y **Address**. Los líderes aparecen primero y están marcados como **Leader**, y luego todos los demás por apellido. El teléfono que se muestra es el número móvil del miembro, o su número de casa o trabajo si no tiene móvil. Los datos de contacto se dejan en blanco para quienes han optado por no compartirlos.
@@ -125,7 +127,7 @@ Una lista de contactos contiene información de contacto personal de los miembro
 
 Puede enviar una notificación push directamente a todos los miembros del grupo que tengan la aplicación B1.church instalada en su dispositivo con notificaciones push habilitadas.
 
-1. Desde la página de detalle del grupo, haga clic en el **icono de campana** en la barra de herramientas de encabezado (junto a los iconos de correo electrónico y texto; el icono de texto aparece una vez que se ha conectado un [proveedor de mensajes de texto](../settings/church-settings.md#texting)).
+1. Desde la página de detalle del grupo, haga clic en **Notify** (debajo de los botones **Email** y **Text** — el botón **Text** aparece una vez que se ha conectado un [proveedor de mensajes de texto](../settings/church-settings.md#texting)).
 2. Se abre un diálogo mostrando cuántos miembros de su grupo tienen push habilitado.
 3. Complete los detalles de notificación:
    - **Title** *(requerido)* — Un resumen breve, hasta 80 caracteres.

@@ -57,10 +57,10 @@ Per un gruppo che si incontra ogni sabato, imposta la frequenza su "settimana" e
 
 ## Creazione in blocco di eventi in B1 Admin
 
-La pagina del gruppo in B1 Admin ha anche una scheda **Calendario** dove lo staff può programmare un'intera stagione di incontri in una sola volta:
+La pagina del gruppo in B1 Admin ha anche una sezione **Calendario** dove lo staff può programmare un'intera stagione di incontri in una sola volta:
 
-1. Apri il gruppo in B1 Admin e seleziona la scheda **Calendario**.
-2. Fai clic su **Aggiungi eventi** per aprire la finestra di dialogo **Aggiungi eventi ricorrenti**.
+1. Apri il gruppo in B1 Admin e, nella sezione **Calendario**, fai clic su **Tutti gli eventi**.
+2. Fai clic su **+ Aggiungi eventi** per aprire la finestra di dialogo **Aggiungi eventi ricorrenti**.
 3. Scegli il programma (settimanale, ogni 2 settimane, mensile o una tantum), le date del **Primo incontro** e dell'**Ultimo incontro**, e facoltativamente **Salta festività**.
 4. Rivedi l'anteprima delle date degli incontri e deseleziona quelle da saltare.
 5. Lascia selezionato **Consenti RSVP** se vuoi che i membri possano rispondere a questi eventi (vedi sotto), quindi salva.
@@ -69,8 +69,8 @@ La pagina del gruppo in B1 Admin ha anche una scheda **Calendario** dove lo staf
 
 Gli eventi di gruppo possono raccogliere RSVP — un **Sì**, **No** o **Forse** per ogni occorrenza dell'evento.
 
-- **Consenti RSVP** è attivo per impostazione predefinita per gli eventi creati tramite la finestra di dialogo di aggiunta in blocco; deselezionalo per disattivare le risposte per quegli eventi. Gli eventi con RSVP disattivati mostrano lo stato **Disabilitato** nella scheda del calendario.
-- Nella scheda calendario del gruppo di B1 Admin, ogni evento mostra un riepilogo delle risposte (ad esempio, "5 sì · 2 forse · 1 no"). Fai clic per aprire l'elenco **Risposte RSVP**, che elenca chi ha risposto sì, forse e no per quella occorrenza.
+- **Consenti RSVP** è attivo per impostazione predefinita per gli eventi creati tramite la finestra di dialogo di aggiunta in blocco; deselezionalo per disattivare le risposte per quegli eventi. Gli eventi con RSVP disattivati mostrano lo stato **Disabilitato** nell'elenco eventi del gruppo.
+- Nell'elenco eventi del gruppo in B1 Admin, ogni evento mostra un riepilogo delle risposte (ad esempio, "5 sì · 2 forse · 1 no"). Fai clic per aprire l'elenco **Risposte RSVP**, che elenca chi ha risposto sì, forse e no per quella occorrenza.
 
 :::tip
 Gli RSVP danno ai leader un conteggio dei partecipanti senza la formalità di una registrazione completa dell'evento. Per iscrizioni a pagamento o eventi con gestione della capacità, usa invece la [registrazione eventi](../calendars/creating-calendars.md#enabling-event-registration).

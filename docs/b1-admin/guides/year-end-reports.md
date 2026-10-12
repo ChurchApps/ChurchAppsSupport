@@ -25,7 +25,7 @@ Make sure all online donations from the end of the year are in your system.
 
 Follow the [Stripe Import](../donations/stripe-import.md) guide to:
 
-1. Navigate to Donations > Batches > Stripe Import
+1. Navigate to Donations > Stripe Import
 2. Select a date range covering the end of the year (e.g., December 1 - December 31)
 3. Click Preview first to review, then Import Missing to finalize
 
@@ -65,7 +65,7 @@ Follow the [Giving Statements](../donations/giving-statements.md) guide to:
 2. Select the year from the dropdown and review the summary statistics
 3. Choose your download method:
    - **Download ZIP** — individual CSV files, one per donor
-   - **Print All** — printable view with each statement on a new page
+   - **Print All** — printable view with each statement on a new page, with your church logo at the top (if you've uploaded one)
 
 :::tip
 Generate statements early in January while records are fresh. This gives you time to catch any issues before mailing them out.

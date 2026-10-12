@@ -28,8 +28,8 @@ A curated calendar aggregates events from multiple groups into one unified calen
 
 ## Adding Groups to Your Calendar
 
-1. Click on your new calendar to open it.
-2. In the **Groups in Calendar** section on the right side, click **Add**.
+1. Click **Manage Events** on your new calendar to open it.
+2. Click **Add Group** above the calendar. Groups you add appear in the **Groups in Calendar** list on the left side of the page.
 3. Select a group from the dropdown menu.
 4. Choose whether to add **all events** from that group or only **specific events**.
 5. Click **Save**.

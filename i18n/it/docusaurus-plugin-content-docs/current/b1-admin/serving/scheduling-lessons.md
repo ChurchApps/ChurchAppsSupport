@@ -28,15 +28,15 @@ Questa è una configurazione una tantum per ministero. Devi collegare il tuo acc
 
 1. Accedi a [B1 Admin](https://admin.b1.church/) e vai a **Servizio**
 2. Apri il ministero che vuoi collegare (ad esempio, Ministero per i Bambini)
-3. Scorri verso il basso fino alla sezione **Account dei Provider di Contenuto**
+3. Scorri verso il basso fino alla sezione **Content Providers**
 4. Fai clic su **Collega Nuovo Provider**
 5. Seleziona **Lessons.church** dall'elenco
 6. Apparirà una schermata di autorizzazione del dispositivo con un codice
 7. Vai a [lessons.church](https://lessons.church), accedi e inserisci il codice per autorizzare la connessione
-8. Una volta approvato, vedrai **"Account collegato"** sotto Lessons.church in B1 Admin
+8. Una volta approvato, vedrai **Linked** sotto Lessons.church in B1 Admin
 
 :::info
-La sezione Account dei Provider di Contenuto è per ministero. Se gestisci più ministeri (ad esempio, Bambini e Giovani), dovrai collegare Lessons.church separatamente per ognuno.
+La sezione Content Providers è per ministero. Se gestisci più ministeri (ad esempio, Bambini e Giovani), dovrai collegare Lessons.church separatamente per ognuno.
 :::
 
 ## Passaggio 2 -- Pianificazione di una Lezione
@@ -44,7 +44,7 @@ La sezione Account dei Provider di Contenuto è per ministero. Se gestisci più 
 Una volta collegato, puoi pianificare le lezioni direttamente dai Piani.
 
 1. In B1 Admin, vai a **Servizio → Piani**
-2. Seleziona la scheda del tuo ministero e fai clic su **Aggiungi Tipo di Piano** -- dai al tipo di piano un nome come Chiesa dei Bambini o Scuola Domenicale
+2. Seleziona la scheda del tuo ministero e fai clic su **Aggiungi Tipo di Piano** (o **Create Plan Type** se il ministero non ne ha ancora) -- dai al tipo di piano un nome come Chiesa dei Bambini o Scuola Domenicale
 3. Fai clic sul tipo di piano che hai appena creato e fai clic su **Pianifica Lezione**. Da quel menu puoi pianificare una lezione, pianificare in massa una serie, o **Applica Piano Annuale** per far cadere una sequenza annuale pubblicata da Lessons.church.
 4. Seleziona la **data** per la lezione (per impostazione predefinita la prossima domenica)
 5. Fai clic su **Seleziona Lezione** -- si apre una finestra di dialogo del browser dei contenuti

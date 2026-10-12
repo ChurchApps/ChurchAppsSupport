@@ -33,6 +33,10 @@ Caminho base: `/messaging/conversations`
 
 Conversas com `contentType: "person"` (a aba Notas em um registro de pessoa) ou `contentType: "personConfidential"` (a seção Notas Confidenciais) são fechadas a leitura e escrita em todos os caminhos, incluindo as rotas públicas acima, que retornam `401` para esses tipos de conteúdo. `person` requer a permissão **People / Edit** do MembershipApi; `personConfidential` requer **People / View Confidential Notes**. Para chaves de API com escopo, `people:write` realiza ambas as ações (o usuário da chave ainda deve conter a permissão de papel subjacente).
 
+### Controle de acesso para notas de cards de fluxo de trabalho {#workflow-card-notes-access-control}
+
+Conversas com `contentType: "workflowCard"` (as notas de um card de fluxo de trabalho, onde `contentId` é o ID da tarefa do card) só podem ser lidas e escritas por quem pode abrir esse card: um usuário com a permissão **Tasks / View** do DoingApi, ou a pessoa ou grupo ao qual o card está atribuído, que o criou ou sobre o qual ele trata. Todos os demais recebem `401` em todos os caminhos de leitura, incluindo as rotas públicas acima. A conversa de um card é anexada pelo próprio card com `POST /doing/tasks/:id/conversation` (body `{ "conversationId": "..." }`; a primeira conversa anexada prevalece), que podem ser chamados pelos editores do card e por seu responsável.
+
 ### Exemplo: Iniciar uma Conversa
 
 ```
@@ -168,12 +172,11 @@ Authorization: Bearer <token>
 
 Caminho base: `/messaging/notificationpreferences`
 
-Estende CRUD padrão. A classe base fornece POST `/` (criar ou atualizar, sem permissão necessária).
-
 | Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|---------|---|------------|-------------|
-| POST | `/` | JWT | — | Criar ou atualizar preferências de notificação (da classe CRUD base) |
+| GET | `/categories` | JWT | — | Listar categorias de notificação com seus canais padrão e permitidos |
 | GET | `/my` | JWT | — | Carregar preferências de notificação para o usuário atual (cria padrões automaticamente se não existirem) |
+| POST | `/` | JWT | — | Salvar as preferências do usuário atual. Corpo: qualquer um de `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, além de `overrides: [{ categoryKey, channel, optedIn }]` opcional (channel pode ser `push`, `email`, `in_app` ou `sms`; categorias bloqueadas são ignoradas). `allowSms` é a opção do membro para lembretes por texto. Um corpo legado em array de linhas ainda é aceito |
 
 ## Conexões
 
@@ -254,6 +257,10 @@ Gerencia provedores de SMS, mensagens de texto em grupo e rastreamento de entreg
 | Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|---------|---|------------|-------------|
 | GET | `/providers` | JWT | — | Carregar provedores de SMS para a igreja (credenciais estão mascaradas) |
+| GET | `/status` | JWT | — | `{ enabled }` — se a igreja tem um provedor de texto habilitado. Qualquer usuário conectado da igreja; usado para mostrar opções **Text** apenas quando textos podem ser enviados |
+| GET | `/inboundUrl` | JWT | `texting.send` ou `settings.edit` | `{ url }` — a URL de webhook de entrada (STOP) da igreja para colar no provedor |
+| POST | `/inbound/:churchId/:token` | Público | — | Webhook de mensagens recebidas do provedor. `token` é um HMAC do ID da igreja. Uma resposta que seja exatamente uma palavra de parada (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`) marca cada pessoa correspondente como `optedOut` e desativa o `allowSms` dela. Retorna `{ optedOut: <count> }`; outras respostas retornam `{ optedOut: 0 }` |
+
 | GET | `/preview/:groupId` | JWT | — | Visualizar destinatários para um texto de grupo (contagem elegível, optou sair, sem telefone) |
 | GET | `/sent` | JWT | — | Carregar todos os registros de mensagens de texto enviadas para a igreja |
 | GET | `/sent/:id/details` | JWT | — | Carregar um texto enviado com registros de entrega por destinatário |

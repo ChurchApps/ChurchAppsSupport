@@ -6,7 +6,7 @@ title: "Pagsubaybay sa Attendance"
 
 <div class="article-intro">
 
-Kapag naka-configure na ang inyong mga campus, oras ng serbisyo, at mga grupo, madali nang suriin ng B1 Admin ang datos ng attendance at makita ang mga trend. May dalawang view sa pag-uulat ang pahinang Attendance -- ang tab na **Attendance Trend** para sa mga trend ng buong simbahan at ang tab na **Group Attendance** para sa detalye sa antas ng grupo. Gamitin ang mga kasangkapang ito para maunawaan ang mga pattern ng paglago, matukoy ang pagbaba ng pakikilahok, at makagawa ng mga desisyong batay sa datos para sa inyong simbahan.
+Kapag naka-configure na ang inyong mga campus, oras ng serbisyo, at mga grupo, madali nang suriin ng B1 Admin ang datos ng attendance at makita ang mga trend. Nagbubukas ang pahinang Attendance sa buod ng attendance ngayong linggo, at ang mga ulat nitong **All years** ay may dalawang pangunahing view -- ang tab na **Attendance Trend** para sa mga trend ng buong simbahan at ang tab na **Group Attendance** para sa detalye sa antas ng grupo. Gamitin ang mga kasangkapang ito para maunawaan ang mga pattern ng paglago, matukoy ang pagbaba ng pakikilahok, at makagawa ng mga desisyong batay sa datos para sa inyong simbahan.
 
 </div>
 
@@ -21,8 +21,12 @@ Kapag naka-configure na ang inyong mga campus, oras ng serbisyo, at mga grupo, m
 ## Pagtingin sa mga Trend ng Attendance
 
 1. Buksan ang **B1 Admin**, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **People**, at i-click ang **Attendance**.
-2. I-click ang tab na **Attendance Trend**.
+2. I-click ang **All years** sa kaliwang column. Nakapili bilang default ang tab na **Attendance Trend**.
 3. Awtomatikong tatakbo ang report kapag nabuksan ang tab, na nagpapakita ng kabuuang attendance kada linggo.
+
+:::tip
+Para sa mabilisang pagtingin sa kasalukuyang linggo, ipinapakita ng pangunahing pahina ng Attendance kung ilan ang nasa silid ngayong linggo, breakdown ayon sa kwarto (grupo), anumang bisita, at 13-linggong bar chart ng mga check-in -- walang kailangang report.
+:::
 
 ## Pag-filter ng Inyong Datos
 
@@ -44,7 +48,7 @@ Awtomatikong tumatakbo ang mga report tuwing bubuksan ninyo ang tab na Attendanc
 
 Ipinapakita ng tab na **Group Attendance** kung sino ang dumalo sa bawat session ng grupo. Kapaki-pakinabang ito kapag nais ninyong subaybayan ang isang partikular na klase, ministry team, o small group sa halip na tingnan ang pangkalahatang bilang ng serbisyo.
 
-1. Piliin ang tab na **Group Attendance**.
+1. Sa mga ulat na **All years**, piliin ang tab na **Group Attendance**.
 2. Opsyonal na pumili ng **Campus** at **Service**.
 3. Itakda ang **Start Date** at **End Date**. Bilang default, sakop ng report ang nakaraang Linggo hanggang ngayon.
 4. I-click ang **Run Report**.

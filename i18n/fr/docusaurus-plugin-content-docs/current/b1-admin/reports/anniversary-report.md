@@ -24,7 +24,7 @@ Besoin d'une liste de tous ceux qui ont un anniversaire de mariage le mois donn�
 2. Sous la boîte de recherche, cliquez sur **Avancée**.
 3. Développez la section **Démographie** et cochez **Mois d'anniversaire**, puis choisissez le mois.
 4. Exécutez la recherche -- tous ceux avec un anniversaire ce mois-ci apparaissent dans les résultats.
-5. Pour voir les dates, cliquez sur l'**icône de colonnes** en haut à droite des résultats et activez la colonne **Anniversaire**. Utilisez **Exporter** pour télécharger la liste en tant que feuille de calcul si vous préférez la trier ou l'imprimer.
+5. Pour voir les dates, définissez **Afficher en tant que** sur **Tableau**, puis cliquez sur l'icône **Sélectionner les colonnes** dans l'en-tête de la page et activez la colonne **Anniversaire**. Utilisez **Exporter** pour télécharger la liste en tant que feuille de calcul si vous préférez la trier ou l'imprimer.
 
 ## Utilisations pratiques
 

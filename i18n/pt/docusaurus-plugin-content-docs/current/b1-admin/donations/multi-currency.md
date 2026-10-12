@@ -61,8 +61,8 @@ Quando um membro faz uma doação online através do Stripe:
 
 Para registrar uma doação em dinheiro ou cheque em uma moeda diferente:
 
-1. Navegue até **Doações** no B1 Admin
-2. Clique em **Adicionar Doação**
+1. Navegue até **Doações > Lotes** no B1 Admin e abra o lote
+2. Clique em **Adicionar Doação** no topo da página do lote
 3. Selecione a moeda no menu suspenso de moeda
 4. Insira o valor nessa moeda
 5. Conclua os detalhes restantes da doação

@@ -32,7 +32,7 @@ Lalabas ang inyong bagong form sa listahan. I-click ito para magsimulang magdagd
 
 ## Pag-print ng Blangkong Form
 
-Kailangan ng papel na kopya na ipamimigay -- para sa visitor card sa welcome desk, o form na maaaring sulatan ng kamay ng taong walang internet? I-click ang **print icon** sa tabi ng isang form sa pangunahing listahan ng Forms para magbukas ng preview, pagkatapos ay i-click ang **Print**. Ipi-print ang mga blangkong field na may guhit o checkbox sa bawat tanong para masulatan ito ng kamay; may asterisk ang mga kinakailangang tanong. Nakaprint sa itaas ang pangalan ng inyong simbahan, sa ibabaw ng pangalan ng form. Wala nang ibang opsyon sa pag-print -- i-print ang buong form o huwag na lang.
+Kailangan ng papel na kopya na ipamimigay -- para sa visitor card sa welcome desk, o form na maaaring sulatan ng kamay ng taong walang internet? I-click ang **Print** sa tabi ng isang form sa pangunahing listahan ng Forms para magbukas ng preview, pagkatapos ay i-click ang **Print**. Ipi-print ang mga blangkong field na may guhit o checkbox sa bawat tanong para masulatan ito ng kamay; may asterisk ang mga kinakailangang tanong. Nakaprint sa itaas ang pangalan ng inyong simbahan, sa ibabaw ng pangalan ng form. Wala nang ibang opsyon sa pag-print -- i-print ang buong form o huwag na lang.
 
 ## Pagdaragdag ng mga Tanong
 
@@ -81,7 +81,7 @@ Lalabas lang ang mga follow-up email pagkatapos maaprubahan ang inyong simbahan 
 
 ## Pag-duplicate ng Form
 
-Para gamitin ang isang form bilang panimulang punto ng bago, i-click ang **Duplicate** icon (copy icon) sa tabi ng form sa listahan ng Forms. Gagawa ang B1 ng eksaktong kopya ng form — kasama ang lahat ng tanong — na maaari ninyong palitan ng pangalan at i-edit nang hiwalay.
+Para gamitin ang isang form bilang panimulang punto ng bago, i-click ang **Duplicate** sa tabi ng form sa listahan ng Forms at kumpirmahin. Gagawa ang B1 ng eksaktong kopya ng form — kasama ang lahat ng tanong — na maaari ninyong palitan ng pangalan at i-edit nang hiwalay.
 
 :::tip
 Madaling gamitin ang pag-duplicate para sa mga paulit-ulit na event kung saan pareho ang mga tanong sa registration taon-taon. I-duplicate ang form noong nakaraang taon, i-update ang pangalan at mga petsa, at handa na kayo.

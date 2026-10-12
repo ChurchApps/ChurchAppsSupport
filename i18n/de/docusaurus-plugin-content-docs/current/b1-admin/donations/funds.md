@@ -20,7 +20,7 @@ Fonds ermöglichen es dir, Spenden nach Zweck zu kategorisieren, damit du verfol
 
 ## Die Seite "Fonds"
 
-Navigiere zu **Spenden > Fonds**, um eine Liste aller deiner Fonds zu sehen. Jede Zeile zeigt den Fondsname und seinen Status **Steuerlich absetzbar**, der bestimmt, ob Spenden für diesen Fonds in den Jahresend-[Spendenerklärungen](giving-statements.md) erscheinen.
+Navigiere zu **Spenden > Fonds**, um eine Liste aller deiner Fonds zu sehen. Jede Zeile zeigt den Fondsnamen und seinen **Steuerstatus** (steuerlich absetzbar oder nicht absetzbar), der bestimmt, ob Spenden für diesen Fonds in den Jahresend-[Spendenerklärungen](giving-statements.md) erscheinen.
 
 ## Erstelle einen neuen Fonds
 
@@ -34,7 +34,7 @@ Der neue Fonds erscheint sofort in deiner Liste und ist verfügbar, wenn du Spen
 
 ## Bearbeiten und Löschen von Fonds
 
-- Um einen Fonds zu bearbeiten, klicke auf die Schaltfläche **Bearbeiten** neben ihm. Du kannst den Namen ändern, die Einstellung "Steuerlich absetzbar" umschalten oder **Für Spender sichtbar** umschalten, um ihn in Spendenformularen anzuzeigen oder auszublenden.
+- Um einen Fonds zu bearbeiten, klicke in seiner Zeile auf **Bearbeiten**. Du kannst den Namen ändern, die Einstellung "Steuerlich absetzbar" umschalten oder **Für Spender sichtbar** umschalten, um ihn in Spendenformularen anzuzeigen oder auszublenden.
 - Um einen Fonds zu löschen, öffne das Bearbeitungsformular und klicke auf **Löschen**.
 
 :::warning
@@ -42,23 +42,23 @@ Das Löschen eines Fonds entfernt Spenden nicht, die zuvor ihm zugewiesen wurden
 :::
 
 :::info
-Von Spendern versteckte Fonds zeigen in dieser Liste neben ihrem Namen ein **verstecktes** Abzeichen an. Versteckte Fonds funktionieren immer noch für Spenden, die manuell in B1 Admin erfasst werden. Sie werden nur nicht als Option in den Formularen öffentlicher oder Mitgliederspenden angezeigt.
+Von Spendern versteckte Fonds zeigen in dieser Liste neben ihrem Namen ein **Versteckt**-Abzeichen an. Versteckte Fonds funktionieren immer noch für Spenden, die manuell in B1 Admin erfasst werden. Sie werden nur nicht als Option in den Formularen öffentlicher oder Mitgliederspenden angezeigt.
 :::
 
 ## Anzeigen von Fondsdetails
 
 Klicke auf einen **Fondsname**, um seine Detailseite zu öffnen. Diese Seite zeigt:
 
-- **Spendenverlauf** -- eine Liste aller Spenden für diesen Fonds
-- **Datumsbereich-Filter** -- begrenzen Sie die Ergebnisse auf einen bestimmten Zeitraum
-- **Zusammenfassende Statistiken** -- Gesamtspenden, eindeutige Spender und Gesamtdollarwert
+- **Zusammenfassung** -- eine Zeile unter dem Seitentitel mit der Anzahl der Spenden, der Anzahl der Spender und dem Gesamtdollarbetrag
+- **Datumsbereich-Filter** -- lege ein **Startdatum** und ein **Enddatum** fest und klicke auf **Filtern**, um die Ergebnisse auf einen bestimmten Zeitraum einzugrenzen
+- **Spendenverlauf** -- eine Liste der Spenden für diesen Fonds mit Datum, Bündel, Spender und Betrag. Klicke oberhalb der Liste auf **Exportieren**, um sie als CSV herunterzuladen.
 
 Diese Ansicht ist hilfreich, wenn du über eine bestimmte Spendenaktion berichten musst oder den Fortschritt gegenüber einem Fundraising-Ziel überprüfst.
 
 ## Sortieren und Exportieren
 
 - Verwende die Spaltenüberschriften, um Fonds nach Name zu sortieren.
-- Klicke auf **In CSV exportieren**, um deine Fondsliste als Tabellenkalkulation herunterzuladen.
+- Klicke oben auf der Seite auf **Exportieren**, um deine Fondsliste als Tabellenkalkulation (CSV) herunterzuladen.
 
 :::tip
 Richte deine Fonds ein, bevor du damit beginnst, [Spenden zu erfassen](recording-donations.md). Mit allen Fonds auf dem Platz wird sichergestellt, dass Spenden von Anfang an richtig kategorisiert werden.

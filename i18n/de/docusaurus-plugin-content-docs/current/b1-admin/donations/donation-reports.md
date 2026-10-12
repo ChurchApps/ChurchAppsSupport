@@ -20,9 +20,9 @@ B1 Admin bietet Ihnen mehrere Möglichkeiten, die Spendendaten Ihrer Kirche anzu
 
 ## Spenden-Dashboard
 
-Das Spenden-Dashboard ist die Registerkarte **Dashboard** der Seite **Zusammenfassung**, die erste Seite, wenn Sie den Bereich **Spenden** öffnen.
+Das Spenden-Dashboard ist die Ansicht **Dashboard** der Seite **Zusammenfassung**, die erste Seite, wenn Sie den Bereich **Spenden** öffnen.
 
-1. Öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **Spenden** und klicken Sie auf **Zusammenfassung**. Die Seite **Zusammenfassung** öffnet sich auf der Registerkarte **Dashboard**.
+1. Öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **Spenden** und klicken Sie auf **Zusammenfassung**. Die Seite **Zusammenfassung** öffnet sich auf der Ansicht **Dashboard**. Der Umschalter **Ansicht** oben rechts wechselt zwischen **Dashboard** und **Lapsed Givers**.
 2. Verwenden Sie die Umschalter **Wöchentlich**, **Monatlich** und **Vierteljährlich** über dem Bericht, um zu wählen, wie Spenden gruppiert werden.
 3. In dem Panel **Bericht filtern** legen Sie das **Startdatum** und **Enddatum** fest (standardmäßig das letzte Jahr bis gestern) und wählen Sie optional einen **Fonds** aus, dann klicken Sie auf **Bericht ausführen**. Der Bericht läuft automatisch mit den Standardeinstellungen, wenn die Seite öffnet.
 4. Vier **KPI-Karten** zeigen Ihre Spenden-Metriken für den ausgewählten Bereich an:
@@ -41,7 +41,7 @@ Das Dashboard zeigt aggregierte Spendendaten. Es enthält keine einzelnen Spende
 
 ## Lapsed Givers
 
-Die Registerkarte **Lapsed Givers** neben der Registerkarte **Dashboard** listet Personen auf, die in einem Zeitraum gegeben haben, aber nicht seitdem. Standardmäßig vergleicht es das letzte Kalenderjahr mit diesem Jahr bis heute; ändern Sie einen oder beide Datumsbereiche, um die Suche zu erweitern oder einzuschränken. Jede Reihe zeigt die Person, das Datum ihres letzten Geschenks und ihre Gesamtsumme für den früheren Zeitraum, und **Download-Optionen > Zusammenfassung** lädt die Liste als CSV für einen Follow-up-Mailing oder Anrufliste herunter.
+Wählen Sie im Umschalter **Ansicht** die Option **Lapsed Givers**, um Personen aufzulisten, die in einem Zeitraum gegeben haben, aber nicht seitdem. Standardmäßig vergleicht es das letzte Kalenderjahr mit diesem Jahr bis heute; ändern Sie einen oder beide Datumsbereiche, um die Suche zu erweitern oder einzuschränken. Jede Reihe zeigt die Person, das Datum ihres letzten Geschenks und ihre Gesamtsumme für den früheren Zeitraum, und **Download-Optionen > Zusammenfassung** lädt die Liste als CSV für einen Follow-up-Mailing oder Anrufliste herunter.
 
 ## Spender-Level-Details anzeigen
 
@@ -49,17 +49,16 @@ Für eine Aufschlüsselung darüber, wer gegeben hat, wie viel und zu welchem Fo
 
 1. Navigieren Sie zu **Spenden > Bündel**.
 2. Klicken Sie auf einen **Bündelnamen**, um ihn zu öffnen.
-3. Die Bündel-Detailseite listet jede Spende mit dem Namen des Spenders, dem Betrag, Fonds, Datum und Zahlungsmethode auf.
-4. Klicken Sie auf einen **Namen des Spenders**, um einen Zusammenbruch zu sehen, wie viele Male sie gegeben haben und wie viel jedes Mal.
-5. Klicken Sie auf eine **Spenden-ID**, um ein Seitenpanel mit den vollständigen Details für diese einzelne Spende zu öffnen.
-6. Klicken Sie auf **Herunterladen**, um ein CSV mit allen Spender- und Spendendaten für dieses Bündel zu exportieren.
+3. Die Bündel-Detailseite listet jede Spende mit ihrer Methode (und Scheck-Nummer oder Kartenziffern), dem Namen des Spenders, Datum, Notizen und Betrag auf, mit einer Gesamtsumme unten.
+4. Klicken Sie in der Zeile einer Spende auf **Bearbeiten**, um die vollständigen Details dieser einzelnen Spende einschließlich ihres Fonds zu öffnen.
+5. Klicken Sie oberhalb der Liste auf **Exportieren**, um ein CSV mit allen Spender- und Spendendaten für dieses Bündel herunterzuladen.
 
 ## Spendenbericht Zusammenfassung
 
 Die Spenden-Berichterstattung ist direkt in den Spenden-Bereich eingebaut -- die Zusammenfassungsseite dient als Ihre Spendenbericht-Zusammenfassung:
 
 1. Im Jump-Menü wählen Sie **Spenden > Zusammenfassung**.
-2. In der Registerkarte **Dashboard** legen Sie das **Startdatum** und **Enddatum** im Panel **Bericht filtern** fest und klicken Sie auf **Bericht ausführen**.
+2. In der Ansicht **Dashboard** legen Sie das **Startdatum** und **Enddatum** im Panel **Bericht filtern** fest und klicken Sie auf **Bericht ausführen**.
 3. Klicken Sie auf **Download-Optionen** und wählen Sie **Zusammenfassung**, um den Bericht als CSV-Datei zu exportieren.
 
 ## Daten exportieren

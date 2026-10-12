@@ -20,8 +20,8 @@ Ipadala ang iyong lesson content sa isang lobby o hallway TV gamit ang isang dig
 
 ## Pagkuha ng feed URL
 
-1. Mag-navigate sa **Serving** at buksan ang ministry na naglalaman ng iyong plan type.
-2. I-click ang **Digital Signage** button (ang RSS icon) sa plan type page.
+1. Pumunta sa **Serving**, piliin ang ministry na naglalaman ng iyong plan type, at i-click ang plan type para buksan ito.
+2. I-click ang **Digital Signage** (ang TV icon) sa itaas ng plan type page.
 3. Kopyahin ang feed URL na ipinapakita sa dialog.
 
 :::info

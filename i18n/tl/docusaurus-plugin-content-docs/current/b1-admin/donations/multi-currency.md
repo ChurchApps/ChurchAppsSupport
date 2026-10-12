@@ -61,8 +61,8 @@ Kapag ang isang miyembro ay nag-donate online sa pamamagitan ng Stripe:
 
 Upang magtatla ng cash o check donation sa isang iba't ibang currency:
 
-1. Mag-navigate sa **Donations** sa B1 Admin
-2. I-click ang **Add Donation**
+1. Mag-navigate sa **Donations > Batches** sa B1 Admin at buksan ang batch
+2. I-click ang **Add Donation** sa itaas ng batch page
 3. Pumili ng currency mula sa currency dropdown
 4. Ipasok ang halaga sa currency na iyon
 5. Tapusin ang natitirang mga detalye ng donasyon

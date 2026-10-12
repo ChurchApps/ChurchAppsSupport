@@ -23,7 +23,7 @@ title: "Импорт данных"
 
 1. Войдите в **B1 Admin**.
 2. Откройте [меню Jump](../introduction.md#getting-around-with-the-jump-menu) (поисковую строку в верхнем левом углу), разверните **Settings** и щелкните **Settings**.
-3. Щелкните кнопку **Import/Export** в верхнем правом углу заголовка страницы.
+3. Щелкните ссылку **Import/Export** под названием вашей церкви в верхней части левого меню настроек.
 4. Это откроет инструмент **B1 Transfer** в новой вкладке на [transfer.b1.church](https://transfer.b1.church).
 
 Инструмент transfer проводит вас через четыре шага: Source, Preview, Destination и Run.

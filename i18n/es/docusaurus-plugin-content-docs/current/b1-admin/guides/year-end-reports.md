@@ -25,7 +25,7 @@ Asegúrate de que todas las donaciones en línea del final del año estén en tu
 
 Sigue la guía [Importación de Stripe](../donations/stripe-import.md) para:
 
-1. Navega a Donaciones > Lotes > Importación de Stripe
+1. Navega a Donaciones > Importación de Stripe
 2. Selecciona un rango de fechas que cubra el final del año (por ejemplo, 1 de diciembre - 31 de diciembre)
 3. Haz clic en Vista Previa primero para revisar, luego en Importar Faltantes para finalizar
 
@@ -65,7 +65,7 @@ Sigue la guía [Declaraciones de Donación](../donations/giving-statements.md) p
 2. Selecciona el año del menú desplegable y revisa las estadísticas de resumen
 3. Elige tu método de descarga:
    - **Descargar ZIP** -- archivos CSV individuales, uno por donante
-   - **Imprimir Todo** -- vista imprimible con cada declaración en una página nueva
+   - **Imprimir Todo** -- vista imprimible con cada declaración en una página nueva, con el logotipo de su iglesia en la parte superior (si ha subido uno)
 
 :::tip
 Genera declaraciones a principios de enero mientras los registros están frescos. Esto te da tiempo para detectar cualquier problema antes de enviarlos por correo.

@@ -49,7 +49,7 @@ Alle tre kaller de samme to API-modulene via `ApiHelper`: **MembershipApi** (`/m
 |----------------|-----------|---------|
 | `campuses` | name, address | Utgått her — campuser administreres i medlemskapsmodulen (`/membership/campuses`); oppmøtekopien er frosset og skrivebeskyttet for eldre lesere (`models/Campus.ts`) |
 | `services` | campusId, name | En gjentakende samling, f.eks. «Sunday Morning» (`models/Service.ts`) |
-| `serviceTimes` | serviceId, name | Et tidsrom innenfor en gudstjeneste, f.eks. «9:00 AM» (`models/ServiceTime.ts`) |
+| `serviceTimes` | serviceId, name, dayOfWeek, startTime, endTime, checkinOpenMinutes, checkinCloseMinutes | Et tidsrom innenfor en gudstjeneste, f.eks. «9:00 AM» (`models/ServiceTime.ts`). Tidsplankolonnene er valgfrie (migrering `tools/migrations/attendance/2026-10-10_service_time_schedule.ts`) og styrer [innsjekkingsvinduet](#scheduled-check-in-windows) |
 | `groupServiceTimes` | groupId, serviceTimeId | Koblingstabell: hvilke grupper (klasserom) som møtes på hvilke gudstjenestetidspunkter (`models/GroupServiceTime.ts`) |
 | `sessions` | groupId, serviceTimeId, sessionDate | Ett møte i én gruppe på én dato — opprettes ved behov under innsjekking (`models/Session.ts`) |
 | `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | Én person som møter opp på én dato (`models/Visit.ts`). `checkinType` er `member` / `guest` / `volunteer` (NULL = eldre medlem), settes av kiosken og brukes av kapasitets- og forholdssperrene |
@@ -110,6 +110,15 @@ Hvert besøk har en `checkinType` — `member`, `guest` eller `volunteer` (NULL 
 
 - **Hard (blokkerer alltid):** `checkinClosed`, `current + incoming > capacity`, antall gjester over `guestCapacity`. Batchen avvises med `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` — kiosken viser det aktuelle rommet med navn.
 - **Forhold (advar eller blokker):** innkommende ikke-frivillige til et rom der `volunteers < minVolunteers`, ingen frivillige i det hele tatt, eller `children > volunteers × volunteerRatio`. Alvorlighetsgraden følger menighetsinnstillingen `ratioEnforcement` (`"warn"` som standard / `"block"`, redigeres i B1Admin under Administrer menighet → Innsjekking, `CheckinSettingsEdit.tsx`). I advarselsmodus returneres `409 { warning: true, error: "ratio", … }` med mindre klienten sender på nytt med `acknowledgeWarnings=true` — den nye innsendingen er kioskens bekreftelse fra ansatte som overstyrer advarselen.
+
+### Planlagte innsjekkingsvinduer {#scheduled-check-in-windows}
+
+Et gudstjenestetidspunkt kan ha en valgfri ukentlig plan (`dayOfWeek` 0–6 der 0 = søndag, `startTime`/`endTime` som `HH:mm`, `checkinOpenMinutes`, `checkinCloseMinutes`), redigert i B1Admins skjema for gudstjenestetidspunkt under **Oppmøte → Oppsett** (`B1Admin/src/attendance/components/ServiceTimeEdit.tsx`, «Check-in Schedule»). `CheckinGateHelper.hasSchedule()` regner et gudstjenestetidspunkt som planlagt bare når både `dayOfWeek` og `startTime` er satt; uplanlagte tidspunkter er aldri tidsstyrt. `isServiceTimeOpen()` beregner vinduet i menighetens lokale tid (`DateHelper.toChurchTime` med menighetens `timeZone`) fra `checkinOpenMinutes` før start til `checkinCloseMinutes` etter slutt (eller etter start når det ikke finnes slutt), og håndterer vinduer som går over midnatt eller over ukeskiftet.
+
+Vinduet håndheves to steder:
+
+- **Listing:** `GET /attendance/servicetimes` legger til en beregnet boolsk verdi `checkinOpen` på hver rad. B1Apps selvinnsjekking (`CheckinPage.tsx`) fjerner tidspunkter der `checkinOpen === false`, og viser «Innsjekking er ikke åpen for denne gudstjenesten akkurat nå.» når ingen gjenstår. B1Checkin filtrerer ikke på den ennå.
+- **Posting:** inne i `evaluateGates()`, før kapasitets- og forholdsvurderingen, avviser `findClosedServiceTimeGroups()` batchen med `409 { error: "notOpen", groups: [{ groupId, groupName, reason: "notOpen" }] }` hvis en av de aktuelle øktenes gudstjenestetidspunkt er utenfor vinduet. B1Checkin viser dette gjennom sin eksisterende skjerm for harde sperrer («rommet er fullt eller lukket»).
 
 ### Kvalifikasjon etter alder/klassetrinn (på kiosken) {#agegrade-eligibility-kiosk-side}
 

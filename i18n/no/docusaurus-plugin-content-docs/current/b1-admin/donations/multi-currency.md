@@ -61,8 +61,8 @@ Når et medlem gir elektronisk gjennom Stripe:
 
 For å registrere en kontant eller sjekkdonasjon i en annen valuta:
 
-1. Gå til **Donasjoner** i B1 Admin
-2. Klikk **Legg til donasjon**
+1. Gå til **Donasjoner > Gavebunter** i B1 Admin og åpne gavebunten
+2. Klikk **Legg til donasjon** øverst på gavebunt-siden
 3. Velg valuta fra valutarullegardinlisten
 4. Skriv inn beløpet i denne valutaen
 5. Fullfør resten av donasjonsdetaljene

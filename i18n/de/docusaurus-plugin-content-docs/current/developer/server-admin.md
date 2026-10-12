@@ -20,7 +20,7 @@ Benutzer mit Server.Admin-Berechtigung können auf den Server-Admin-Panel aus B1
 
 1. Melden Sie sich bei [admin.b1.church](https://admin.b1.church) an
 2. Öffnen Sie das [Jump-Menü](../b1-admin/introduction.md#getting-around-with-the-jump-menu), erweitern Sie **Einstellungen** und klicken Sie auf **Server Admin**. (Sie können auch direkt zu `admin.b1.church/admin` gehen.)
-3. Der Server-Admin-Panel hat Abschnitte für Kirchen, Benutzer, Benutzer-Identitätswechsel, Hintergrund-Jobs, Commons, Nutzungstrends, Übersetzungs-Lookups, Serverbehältnisse und Datenbank-Migrationen
+3. Das Server-Admin-Panel listet seine Abschnitte links in drei Gruppen auf: **Directory** (Kirchen, Benutzer, Benutzer-Identitätswechsel), **Operations** (Hintergrund-Jobs, Commons, Nutzungstrends) und **System** (Übersetzungs-Lookups, Serverzustand, Datenbank-Migrationen)
 
 ## Benutzer-Identitätswechsel
 

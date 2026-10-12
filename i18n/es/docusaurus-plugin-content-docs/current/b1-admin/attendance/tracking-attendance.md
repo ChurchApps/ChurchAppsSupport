@@ -6,7 +6,7 @@ title: "Seguimiento de Asistencia"
 
 <div class="article-intro">
 
-Una vez que sus sedes, horarios de servicio y grupos estén configurados, B1 Admin facilita la revisión de datos de asistencia e identificar tendencias. La página Attendance proporciona dos vistas de informes -- la pestaña **Attendance Trend** para tendencias de toda la iglesia y la pestaña **Group Attendance** para detalles a nivel de grupo. Use estas herramientas para entender patrones de crecimiento, identificar disminución de participación, y tomar decisiones basadas en datos para su iglesia.
+Una vez que sus sedes, horarios de servicio y grupos estén configurados, B1 Admin facilita la revisión de datos de asistencia e identificar tendencias. La página Attendance se abre con un resumen de la asistencia de esta semana, y sus informes **All years** proporcionan dos vistas principales -- la pestaña **Attendance Trend** para tendencias de toda la iglesia y la pestaña **Group Attendance** para detalles a nivel de grupo. Use estas herramientas para entender patrones de crecimiento, identificar disminución de participación, y tomar decisiones basadas en datos para su iglesia.
 
 </div>
 
@@ -21,8 +21,12 @@ Una vez que sus sedes, horarios de servicio y grupos estén configurados, B1 Adm
 ## Ver Tendencias de Asistencia
 
 1. Abra **B1 Admin**, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda), expanda **People**, y haga clic en **Attendance**.
-2. Haga clic en la pestaña **Attendance Trend**.
+2. Haga clic en **All years** en la columna izquierda. La pestaña **Attendance Trend** está seleccionada de forma predeterminada.
 3. El informe se ejecuta automáticamente cuando se abre la pestaña, mostrando la asistencia total para cada semana.
+
+:::tip
+Para una vista rápida de la semana actual, la página principal de Attendance muestra cuántas personas están en la sala esta semana, un desglose por sala (grupo), los huéspedes y un gráfico de barras de 13 semanas con los registros -- sin necesidad de un informe.
+:::
 
 ## Filtrando Sus Datos
 
@@ -44,7 +48,7 @@ Los informes se ejecutan automáticamente cada vez que abre la pestaña Attendan
 
 La pestaña **Group Attendance** muestra quién asistió a cada sesión de grupo. Esto es útil cuando desea monitorear una clase específica, equipo ministerial o grupo pequeño en lugar de ver números de servicio generales.
 
-1. Seleccione la pestaña **Group Attendance**.
+1. En los informes **All years**, seleccione la pestaña **Group Attendance**.
 2. Opcionalmente elija un **Campus** y **Service**.
 3. Configure el **Start Date** y **End Date**. Por defecto el informe cubre el domingo pasado hasta hoy.
 4. Haga clic en **Run Report**.

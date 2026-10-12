@@ -22,7 +22,7 @@ Sideredigeringen i B1 er et visuelt dra-og-slipp-verktøy som lar deg utforme si
 ## Åpne redigeringen
 
 1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Nettsted** og klikk på **Sider**.
-2. Finn siden du vil redigere i tabellen Sider og klikk på **Rediger**.
+2. Finn siden du vil redigere i tabellen Sider og klikk på **Rediger innhold**.
 
 Redigeringen åpnes i fullskjermmodus. Panelet til venstre viser sidestrukturen og tilgjengelige innholdselementer, og midtpartiet viser en live forhåndsvisning av siden.
 
@@ -79,9 +79,18 @@ Har du allerede bygget ut en seksjon, men vil ha en annen struktur? Bruk oppsett
    - **Direktesending** -- Direktesendingsspilleren, bygd inn direkte på siden
    - **Podkast** -- En liste over episoder hentet fra en ekstern RSS-strøm for podkaster som du oppgir, med innstillinger for hvor mange episoder som vises og om datoer og beskrivelser skal vises. Dette er for å vise en hvilken som helst podkaststrøm på nettstedet; hvis du vil publisere dine egne prekener som podkast, se i stedet [Administrere prekener](../sermons/managing-sermons.md#your-podcast-feed).
    - **Donasjon** -- En gaveknapp eller et innebygd donasjonsskjema
-   - **Rå HTML** -- Egendefinert HTML-kode til avanserte formål
+   - **HTML** -- Din egen rå HTML, til avanserte formål som innbygging av en tredjepartswidget (se [Bruke HTML-elementet](#using-the-html-element))
    - **iFrame** -- Bygg inn eksternt innhold med URL
 3. Konfigurer elementet i innstillingspanelet som vises.
+
+### Bruke HTML-elementet {#using-the-html-element}
+
+**HTML**-elementet har to bokser:
+
+- **HTML-innhold** -- Markupen som skal vises på siden. Alle `<script>`-koder du legger inn her, kjøres på det live nettstedet.
+- **JavaScript (uten script-tagg)** -- Skriptkode som kjøres når siden lastes. Du kan også lime inn en leverandørs innbyggingskode her med `<script>`-taggene, og den kjøres på det live nettstedet.
+
+Hvis du limer inn bare en nettadresse (for eksempel en bildelenke) i JavaScript-boksen, blir boksen rød med advarselen *«Dette er en nettadresse, ikke JavaScript.»* En nettadresse alene i den boksen gjør ingenting. For å vise et bilde bruker du et **Bilde**-element, eller legger `<img src="...">` i **HTML-innhold**.
 
 ### Endre rekkefølgen på innhold
 
@@ -117,7 +126,7 @@ Bruk forhåndsvisningskontrollene i verktøylinjen for å se hvordan siden ser u
 - **Skrivebord** -- Nettleservisning i full bredde
 - **Mobil** -- Smal visning i telefonstørrelse
 
-Klikk på **Forhåndsvis** for å åpne en live versjon av siden i en ny nettleserfane, nøyaktig slik besøkende vil se den.
+For å se den live siden nøyaktig slik besøkende ser den, går du tilbake til sidelisten og klikker på sidens bane. Den åpnes i en ny nettleserfane.
 
 ## Kontrollere tilgjengelighet
 
@@ -128,9 +137,9 @@ Klikk på ikonet **Tilgjengelighet** i verktøylinjen for å kjøre en rask kont
 Redigeringen holder automatisk rede på redigeringshistorikken. Bruk knappene i verktøylinjen eller tastatursnarveiene for å navigere:
 
 - **Angre** (Ctrl+Z / Cmd+Z) -- Tilbakestill siste handling
-- **Gjør om** (Ctrl+Y / Cmd+Y) -- Utfør en angret handling på nytt
+- **Gjør om** (Ctrl+Shift+Z eller Ctrl+Y / Cmd+Shift+Z) -- Utfør en angret handling på nytt
 
-Du kan også gjenopprette siden til et tidligere øyeblikksbilde. Klikk på **Historikk** i verktøylinjen for å se en liste over lagrede øyeblikksbilder med beskrivelser, og klikk på en oppføring for å gjenopprette til det tidspunktet.
+Du kan også gjenopprette siden til et tidligere øyeblikksbilde. Klikk på **Vis historikk** i verktøylinjen for å se en liste over lagrede øyeblikksbilder med beskrivelser, og klikk på en oppføring for å gjenopprette til det tidspunktet.
 
 :::warning
 Når du gjenoppretter et øyeblikksbilde, erstattes det gjeldende sideinnholdet med versjonen fra øyeblikksbildet. Dette kan ikke angres med den vanlige angreknappen. Lagre et øyeblikksbilde av gjeldende tilstand før du gjenoppretter et gammelt, hvis du vil beholde muligheten til å gå tilbake.
@@ -150,9 +159,9 @@ Sider kan ha en **publisert** tilstand, som styrer når besøkende ser endringen
 
 For å publisere endringene klikker du på knappen **Publiser** i verktøylinjen. Siden går live umiddelbart.
 
-For å gå tilbake til siste publiserte versjon uten å påvirke det besøkende ser, åpner du overflytsmenyen (⋮) og klikker på **Forkast endringer**.
+For å gå tilbake til siste publiserte versjon uten å påvirke det besøkende ser, åpner du overflytsmenyen (⋮) og klikker på **Forkast ikke-publiserte endringer**.
 
-For å ta en side helt av nett åpner du overflytsmenyen og klikker på **Avpubliser**. Besøkende ser ikke siden før du publiserer den igjen.
+For å slutte å bruke publiseringsflyten åpner du overflytsmenyen og klikker på **Slå av publisering**. Endringer går deretter live igjen med en gang.
 
 :::tip
 Bruk utkast/publiser-flyten når du vil forberede en side -- for eksempel til et kommende arrangement -- og først gjøre den live til rett tid. Bygg og forhåndsvis siden, og klikk på Publiser når du er klar.

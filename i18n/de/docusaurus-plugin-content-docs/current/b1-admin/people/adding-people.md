@@ -22,8 +22,8 @@ Der Bereich Personen ist das Fundament von B1 Admin – es ist die Mitgliederdat
 
 1. Navigieren Sie zum B1.church Admin-Dashboard.
 2. Öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Personen** und klicken Sie auf **Personen**.
-3. Klicken Sie auf die Schaltfläche **Person hinzufügen** in der oberen rechten Ecke.
-4. Geben Sie den Vornamen, Nachnamen und die E-Mail-Adresse der Person ein und klicken Sie auf **Hinzufügen**.
+3. Klicken Sie im Seitenkopf auf die Schaltfläche **Person hinzufügen**. Die Seite scrollt zum Formular **Neue Person hinzufügen** unterhalb des Verzeichnisses.
+4. Geben Sie den **Vornamen**, **Nachnamen** und die **E-Mail**-Adresse der Person ein und klicken Sie auf **Hinzufügen**.
 
 Die Profilseite der Person wird geöffnet, um weitere Details hinzuzufügen.
 
@@ -42,22 +42,27 @@ Dies überprüft Duplikate nur, wenn Sie eine brandneue Person erstellen – das
 
 ## Details bearbeiten
 
-1. Auf der Profilseite der Person klicken Sie auf den **Bearbeitungs-Stift** neben ihrem Namen.
-2. Geben Sie zusätzliche Informationen wie Mittelnamen, Mitgliedschaftsstatus, Daten, Adresse, Telefonnummern und (für Kinder und Jugendliche) Klassenstufe und Schule ein.
+1. Klicken Sie auf der Profilseite der Person links unter ihren Kontaktdaten auf **Edit** (Bearbeiten).
+2. Geben Sie im Formular **Personal Details** (Persönliche Daten) zusätzliche Informationen wie Mittelnamen, Mitgliedschaftsstatus (**Visitor** (Besucher), **Guest** (Gast), **Regular Attendee** (Regelmäßiger Teilnehmer), **Member** (Mitglied), **Staff** (Mitarbeiter), **Inactive** (Inaktiv) oder **Deceased** (Verstorben)), Daten, Adresse, Telefonnummern und (für Kinder und Jugendliche) Klassenstufe und Schule ein.
 3. Klicken Sie auf **Speichern**, um die persönlichen Informationen zu speichern.
 
-Das Profil enthält auch mehrere Registerkarten für verwandte Informationen:
+Auf der linken Seite des Profils werden das Foto, der Name, der Mitgliedschaftsstatus, die Kontaktdaten, Werte von [Benutzerdefinierten Feldern](../settings/custom-fields.md) und der Haushalt der Person angezeigt. Klicken Sie auf das Foto, um es zu ändern. Unter der Schaltfläche **Edit** (Bearbeiten) finden Sie weitere Aktionen: **Workflow** (die Person zu einem [Workflow](../serving/workflows.md) hinzufügen), **Merge** (Zusammenführen), **Export** und **Export Data** (Daten exportieren).
 
-- **Notizen** – Fügen Sie Notizen über die Person hinzu (seelsorgliche Betreuung, Nachverfolgung, usw.)
-- **Gruppen** – Sehen Sie und verwalten Sie [Gruppenmitgliedschaften](../groups/group-members.md)
-- **Besucherzahlen** – Sehen Sie die individuelle Besuchshistorie dieser Person, einschließlich Standort, Gottesdienst, Gottesdienstzeit, Gruppe und einer Spalte **Eingecheckt** mit der Kiosk-Check-in-Zeit (angezeigt als Strich für Besuche, die ohne Kiosk-Check-in erfasst wurden). Für Trends in der gesamten Kirche anstatt der Besuchshistorie einer Person siehe [Besucherzahlen verfolgen](../attendance/tracking-attendance.md)
-- **Spenden** – Sehen Sie die [Spendenhistorie](../donations/recording-donations.md)
+Der restliche Bereich des Profils zeigt eine Zusammenfassung für jede Art verwandter Informationen:
+
+- **Besucherzahlen** – Zeigt, an welchen der letzten Wochen die Person teilgenommen hat, sowie ihre letzten Besuche. Klicken Sie auf **All years** (Alle Jahre) für die vollständige Besuchshistorie, einschließlich Standort, Gottesdienst, Gottesdienstzeit, Gruppe und einer Spalte **Eingecheckt** mit der Kiosk-Check-in-Zeit (angezeigt als Strich für Besuche, die ohne Kiosk-Check-in erfasst wurden), oder auf **Print** (Drucken), um sie zu drucken. Für Trends in der gesamten Kirche anstatt der Besuchshistorie einer Person siehe [Besucherzahlen verfolgen](../attendance/tracking-attendance.md)
+- **Spenden** – Zeigt die Spenden dieses Jahres. Klicken Sie auf **All years** (Alle Jahre) für die vollständige [Spendenhistorie](../donations/recording-donations.md) oder auf **Log a gift** (Spende erfassen), um eine neue zu erfassen
+- **Gruppen** – Listet die [Gruppenmitgliedschaften](../groups/group-members.md) der Person auf
+- **Notizen** – Zeigt aktuelle Notizen über die Person (seelsorgliche Betreuung, Nachverfolgung usw.). Klicken Sie auf **All notes** (Alle Notizen), um Notizen zu lesen und hinzuzufügen
+- **Formulare** – Listet die Formulare der Person und ob jedes eingereicht wurde (siehe unten [Mit Formularen arbeiten](#working-with-forms))
+
+Wenn Sie eine dieser vollständigen Ansichten öffnen, klicken Sie oben auf den Link **Back to** (Zurück zu) mit dem Namen der Person, um zum Profil zurückzukehren.
 
 ## E-Mail an eine Person senden
 
-Wenn die Person eine E-Mail-Adresse in der Datei hat, wird eine Schaltfläche **E-Mail an diese Person** (Umschlag-Symbol) in der Profilkopfzeile angezeigt.
+Wenn die Person eine E-Mail-Adresse in der Datei hat, wird unter ihren Kontaktdaten links im Profil eine Schaltfläche **E-Mail** angezeigt.
 
-1. Klicken Sie auf der Profilseite der Person auf das **Umschlag-Symbol**.
+1. Klicken Sie auf der Profilseite der Person auf **E-Mail**.
 2. Ein Dialogfeld **E-Mail** mit dem Namen der Person wird geöffnet und zeigt **An** mit der Adresse der Person.
 3. Wählen Sie optional eine gespeicherte Vorlage aus **Vorlage laden (optional)**.
 4. Geben Sie einen **Betreff** ein und verfassen Sie die Nachricht.
@@ -66,16 +71,16 @@ Wenn die Person eine E-Mail-Adresse in der Datei hat, wird eine Schaltfläche **
 Um die Nachricht stattdessen in Ihrem eigenen Mail-Programm zu schreiben, klicken Sie auf **Im meinem E-Mail-Programm öffnen**.
 
 :::info
-Das Senden von B1 verwendet die gleichen Genehmigungen und täglichen Limits wie Gruppen-E-Mail. Wenn Ihre Kirche noch nicht genehmigt wurde, fordert das Dialogfeld Sie auf, eine Überprüfung anzufordern – Sie können unterdessen immer noch auf **In meinem E-Mail-Programm öffnen** klicken. Siehe [Gruppen-E-Mail für Ihre Kirche aktivieren](../groups/group-members.md#turning-on-group-email-for-your-church). Benutzer ohne Berechtigung zur Bearbeitung von Gruppenmitgliedern gehen direkt zu ihrem E-Mail-Programm, wenn sie auf das Umschlag-Symbol klicken.
+Das Senden von B1 verwendet die gleichen Genehmigungen und täglichen Limits wie Gruppen-E-Mail. Wenn Ihre Kirche noch nicht genehmigt wurde, fordert das Dialogfeld Sie auf, eine Überprüfung anzufordern – Sie können unterdessen immer noch auf **In meinem E-Mail-Programm öffnen** klicken. Siehe [Gruppen-E-Mail für Ihre Kirche aktivieren](../groups/group-members.md#turning-on-group-email-for-your-church). Benutzer ohne Berechtigung zur Bearbeitung von Gruppenmitgliedern gehen direkt zu ihrem E-Mail-Programm, wenn sie auf **E-Mail** klicken.
 :::
 
-## Mit Formularen arbeiten
+## Mit Formularen arbeiten {#working-with-forms}
 
 Sie können benutzerdefinierte Formulare direkt von der Profilseite einer Person ausfüllen. Dies sind benutzerdefinierte Formulare, die Sie erstellen können, indem Sie der [Anleitung zum Erstellen von Formularen](../forms/creating-forms.md) folgen.
 
-1. Klicken Sie auf der Profilseite der Person auf das Dropdown-Menü **Formulare**, um ein Formular auszuwählen.
-2. Klicken Sie auf **Formular hinzufügen**, um es zu öffnen.
-3. Füllen Sie die Formulardetails aus und klicken Sie auf **Speichern**.
+1. Suchen Sie auf der Profilseite der Person den Bereich **Formulare**. Er listet jedes Formular zusammen mit dem Status **Eingereicht** oder **Nicht eingereicht** auf.
+2. Klicken Sie auf den Namen eines Formulars, um es zu öffnen (oder auf **All forms** (Alle Formulare), um die vollständige Liste zu sehen).
+3. Klicken Sie auf das **Bearbeitungssymbol** (Stift) des Formulars, füllen Sie die Details aus und klicken Sie auf **Speichern**.
 
 Sobald ein Formular eingereicht ist, klicken Sie auf das **Druck-Symbol** daneben, um die ausgefüllten Antworten dieser Person zu drucken.
 
@@ -93,9 +98,9 @@ Wenn Sie nur ein oder zwei zusätzliche Informationen zu Personen nachverfolgen 
 
 Haushalte ermöglichen es Ihnen, Familienmitglieder zusammen zu verknüpfen. Dies ist besonders nützlich für [Check-in](../attendance/check-in.md), wo ein Elternteil alle seine Kinder auf einmal einchecken kann.
 
-1. Klicken Sie auf der Profilseite einer Person auf den **Bearbeitungs-Stift** neben dem Haushaltsnamen.
-2. Der Haushalts-Editor wird geöffnet. Wählen Sie die **Haushaltsrolle** für die aktuelle Person (z. B. Haupt, Ehegatte, Kind).
-3. Klicken Sie auf **Hinzufügen**, um ein anderes Haushaltsmitglied hinzuzufügen.
-4. Geben Sie den Namen der Person in das Suchfeld ein und klicken Sie auf **Suchen**.
-5. Wenn die Person in den Suchergebnissen angezeigt wird, klicken Sie auf **Auswählen**.
+1. Klicken Sie auf der Profilseite einer Person links neben der Überschrift **Household** (Haushalt) auf **Edit** (Bearbeiten).
+2. Der Haushalts-Editor wird geöffnet. Wählen Sie die **Haushaltsrolle** für die aktuelle Person (z. B. Haupt, Ehegatte, Kind, Sonstige).
+3. Klicken Sie auf das Symbol **Hinzufügen**, um ein anderes Haushaltsmitglied hinzuzufügen.
+4. Geben Sie unter **Add Household Member** (Haushaltsmitglied hinzufügen) den Namen der Person in das Suchfeld ein und drücken Sie **Enter** oder klicken Sie auf das Suchsymbol. (Bevor Sie etwas eingeben, wird eine kurze Liste **Recent people** (Zuletzt verwendete Personen) angezeigt.)
+5. Wenn die Person in den Ergebnissen angezeigt wird, klicken Sie auf ihren Namen oder das Hinzufügen-Symbol daneben.
 6. Wählen Sie ihre Haushaltsrolle aus und klicken Sie auf **Speichern**, um die Haushaltseinrichtung abzuschließen.

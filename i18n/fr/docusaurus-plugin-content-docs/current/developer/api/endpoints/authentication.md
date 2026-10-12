@@ -94,6 +94,8 @@ POST /membership/users/register
 
 Crée un utilisateur avec un mot de passe temporaire et envoie un e-mail de bienvenue avec un lien d'authentification. Le premier utilisateur enregistré sur une nouvelle instance reçoit automatiquement un accès administrateur serveur.
 
+Deux champs facultatifs de piège à robots sont acceptés : `website` (un champ masqué que les vrais utilisateurs laissent vide) et `fillMs` (durée d'ouverture du formulaire, en millisecondes). Si `website` est rempli ou si `fillMs` est inférieur à 2000, aucun compte n'est créé, mais le point de terminaison renvoie tout de même un `200` d'apparence normale afin que les robots ne puissent pas savoir qu'ils ont été rejetés. Les clients qui omettent ces deux champs s'enregistrent normalement.
+
 ### Enregistrer une nouvelle église
 
 ```

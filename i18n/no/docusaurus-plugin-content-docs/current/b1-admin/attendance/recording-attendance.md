@@ -24,7 +24,7 @@ En økt er ett møte i en gruppe -- for eksempel klassen for 1.–3. trinn en be
 
 1. Åpne **B1 Admin**, åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvid **Personer** og klikk på **Grupper**.
 2. Velg gruppen du vil registrere oppmøte for.
-3. Klikk på fanen **Økter**.
+3. I **Økter**-delen på gruppens side klikker du på **Alle økter**.
 4. Klikk på **Ny** for å opprette en ny økt.
 5. Hvis gruppen er tilordnet et samlingstidspunkt, velger du **Samlingstidspunkt**. Hvis gruppen ikke har noen tidsplan, vises ikke dette feltet.
 6. Velg **Øktdato** -- det kan være i dag, en tidligere dato eller en fremtidig dato.
@@ -76,11 +76,11 @@ Bruk dette sammen med **Skriv ut alle klasser** og [å legge til økter for alle
 
 ## Skrive ut en oppmøteliste
 
-En oppmøteliste er en utskrivbar klasseliste som lærere kan fylle ut for hånd og gi tilbake til deg for registrering senere. Hver liste viser menighetens navn, klassen, en stor **Dato**-linje under klassenavnet og samlingstidspunktet. Medlemmene vises i to spalter (les nedover i venstre spalte, deretter i høyre), slik at flere navn får plass på en side, og hvert medlem har ruter for **Til stede** og **Fraværende**. Det er tomme linjer til besøkende og et felt for **Lærer / Merknader**.
+En oppmøteliste er en utskrivbar klasseliste som lærere kan fylle ut for hånd og gi tilbake til deg for registrering senere. Hver liste viser menighetens logo (**Logo for lys bakgrunn** fra [Nettsted > Utseende](../website/appearance.md), hvis du har lastet opp en) med menighetens navn under, klassen, en stor **Dato**-linje under klassenavnet og samlingstidspunktet. Medlemmene vises i to spalter (les nedover i venstre spalte, deretter i høyre), slik at flere navn får plass på en side, og hvert medlem har ruter for **Til stede** og **Fraværende**. Det er tomme linjer til besøkende og et felt for **Lærer / Merknader**.
 
 - **Fra en økt** -- Klikk på ikonet **Skriv ut oppmøteliste** (skriver) øverst i øktens oppmøteliste. Listen får øktens dato.
 - **Alle klasser for en gudstjeneste** -- Hvis økten har et samlingstidspunkt, klikker du på **Skriv ut alle klasser** for å skrive ut én liste per klasse som er tilordnet samlingstidspunktet. Hver klasse skrives ut på sin egen side.
-- **Fra fanen Medlemmer** -- Klikk på ikonet **Skriv ut oppmøteliste** over gruppens medlemsliste og velg **Oppmøteliste** for å skrive ut en liste uten dato. Den samme menyen har også oppsettet **Kontaktliste** med hvert medlems telefonnummer, e-postadresse og adresse. Se [Skrive ut medlemslisten](../groups/group-members.md#printing-the-member-list).
+- **Fra medlemslisten** -- På gruppens side klikker du på **Alle medlemmer**, deretter på ikonet **Skriv ut oppmøteliste** over medlemslisten og velger **Oppmøteliste** for å skrive ut en liste uten dato. Den samme menyen har også oppsettet **Kontaktliste** med hvert medlems telefonnummer, e-postadresse og adresse. Se [Skrive ut medlemslisten](../groups/group-members.md#printing-the-member-list).
 
 Listen åpnes i en ny fane, og nettleserens utskriftsdialog vises automatisk.
 
@@ -96,7 +96,7 @@ Du kan laste ned en oversikt over økten som en CSV-fil som kan brukes i Excel, 
 
 Etter at du har registrert økter, vises dataene i oppmøterapportene dine.
 
-- **Fanen Oppmøtetrend** -- viser trender for hele menigheten over tid. Se [Følge opp oppmøte](tracking-attendance.md).
+- **Fanen Oppmøtetrend** (under **Alle år** på Oppmøte-siden) -- viser trender for hele menigheten over tid. Se [Følge opp oppmøte](tracking-attendance.md).
 - **Fanen Gruppeoppmøte** -- viser oppmøte fordelt på enkeltgrupper. Se [Oppmøterapporter](../reports/attendance-reports.md#group-attendance).
 
 :::tip

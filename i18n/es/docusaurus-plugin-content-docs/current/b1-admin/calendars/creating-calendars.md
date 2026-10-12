@@ -21,23 +21,23 @@ Crear un calendario en B1 Admin te permite construir una vista curada de eventos
 ## Crear un Nuevo Calendario
 
 1. En B1 Admin, abre el [menú Salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expande **Calendarios**, y haz clic en **Calendarios**.
-2. Haz clic en **Agregar Calendario**.
+2. Haz clic en **Agregar Calendario** en la parte superior de la página. El formulario del nuevo calendario se abre debajo de la lista de calendarios.
 3. Ingresa un **nombre** para tu calendario (por ejemplo, "Eventos del Ministerio de Jóvenes" o "Calendario Principal de la Iglesia").
 4. Agrega una **descripción** opcional para ayudar a tu equipo a entender para qué es este calendario.
 5. Haz clic en **Crear** para guardar tu nuevo calendario.
 
 ## La Página de Detalle del Calendario
 
-Después de crear un calendario, haz clic en él para abrir la página de detalle. Esta página tiene dos áreas principales:
+Después de crear un calendario, haz clic en **Manage Events** en su fila para abrir la página de detalle. Esta página tiene dos áreas principales:
 
-- **Columna izquierda** -- Una vista del calendario que muestra eventos extraídos de los grupos conectados.
-- **Columna derecha** -- La lista de grupos asociados. Aquí es donde administras qué grupos se incluyen en este calendario.
+- **Columna izquierda** -- El nombre del calendario con sus acciones (**New Event**, **Edit**, **Import .ics** y **Print**), seguido de la lista **Groups in Calendar** que muestra qué grupos se incluyen en este calendario. Haz clic en **Remove** junto a un grupo para quitarlo del calendario.
+- **Área principal** -- La vista **Calendar Events** con los eventos extraídos de los grupos conectados, con los botones **Subscribe** y **Add Group** encima.
 
 ## Conectar Grupos
 
-Los grupos que tienen eventos en el calendario aparecen automáticamente en la lista de grupos en el lado derecho de la página de detalle.
+Los grupos que tienen eventos en el calendario aparecen automáticamente en la lista **Groups in Calendar** en el lado izquierdo de la página de detalle.
 
-1. Haz clic en **Agregar** en la sección de grupos para asociar un grupo con tu calendario.
+1. Haz clic en **Add Group** encima del calendario para asociar un grupo con tu calendario.
 2. Selecciona el grupo del menú desplegable.
 3. Elige si incluir **todos los eventos** de ese grupo o solo **eventos específicos**.
 4. Haz clic en **Guardar**.

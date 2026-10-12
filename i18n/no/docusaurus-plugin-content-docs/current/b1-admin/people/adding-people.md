@@ -22,8 +22,8 @@ Delen Personer er grunnmuren i B1 Admin – det er menighetens medlemsdatabase. 
 
 1. Gå til dashbordet i B1.church Admin.
 2. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvid **Personer** og klikk på **Personer**.
-3. Klikk på knappen **Legg til person** øverst til høyre.
-4. Fyll inn personens fornavn, etternavn og e-postadresse, og klikk deretter på **Legg til**.
+3. Klikk på knappen **Legg til person** i sidetoppen. Siden ruller ned til skjemaet **Legg til ny person** under katalogen.
+4. Fyll inn personens **Fornavn**, **Etternavn** og **E-post**, og klikk deretter på **Legg til**.
 
 Personens profilside åpnes, klar for at du kan legge til flere opplysninger.
 
@@ -42,22 +42,27 @@ Dette kontrolleres bare når du oppretter en helt ny person – redigering av en
 
 ## Redigere opplysninger
 
-1. På personens profilside klikker du på **blyanten for redigering** ved siden av navnet.
-2. Fyll inn tilleggsopplysninger som mellomnavn, medlemsstatus, datoer, adresse, telefonnumre og (for barn og elever) klassetrinn og skole.
+1. På personens profilside klikker du på **Rediger** under kontaktopplysningene til venstre.
+2. I skjemaet **Personlige opplysninger** fyller du inn tilleggsopplysninger som mellomnavn, medlemsstatus (**Besøkende**, **Gjest**, **Fast deltaker**, **Medlem**, **Ansatt**, **Inaktiv** eller **Avdød**), datoer, adresse, telefonnumre og (for barn og elever) klassetrinn og skole.
 3. Klikk på **Lagre** for å lagre de personlige opplysningene.
 
-Profilen har også flere faner for relatert informasjon:
+Venstre side av profilen viser personens bilde, navn, medlemsstatus, kontaktopplysninger, eventuelle verdier for [egendefinerte felt](../settings/custom-fields.md) og husstanden. Klikk på bildet for å endre det. Under knappen **Rediger** finner du flere handlinger: **Arbeidsflyt** (legg personen til i en [arbeidsflyt](../serving/workflows.md)), **Slå sammen**, **Eksporter** og **Eksporter data**.
 
-- **Notater** — Legg til notater om personen (sjelesorg, oppfølging osv.)
-- **Grupper** — Se og administrer [gruppemedlemskap](../groups/group-members.md)
-- **Oppmøte** — Se personens egen besøkshistorikk, inkludert avdeling, samling, samlingstid, gruppe og en kolonne **Sjekket inn** med tidspunktet for innsjekking på kiosken (vises som en strek for besøk som er registrert uten kioskinnsjekking). For utvikling i hele menigheten i stedet for én persons historikk, se [Følge opp oppmøte](../attendance/tracking-attendance.md)
-- **Gaver** — Se [giverhistorikk](../donations/recording-donations.md)
+Resten av profilen viser et sammendrag for hver type relatert informasjon:
+
+- **Oppmøte** — Viser hvilke av de siste ukene personen var til stede, og de siste besøkene. Klikk på **Alle år** for hele besøkshistorikken, inkludert avdeling, samling, samlingstid, gruppe og en kolonne **Sjekket inn** med tidspunktet for innsjekking på kiosken (vises som en strek for besøk som er registrert uten kioskinnsjekking), eller på **Skriv ut** for å skrive den ut. For utvikling i hele menigheten i stedet for én persons historikk, se [Følge opp oppmøte](../attendance/tracking-attendance.md)
+- **Gaver** — Viser gavene i år. Klikk på **Alle år** for hele [giverhistorikken](../donations/recording-donations.md), eller **Registrer en gave** for å registrere en ny
+- **Grupper** — Viser personens [gruppemedlemskap](../groups/group-members.md)
+- **Notater** — Viser nylige notater om personen (sjelesorg, oppfølging osv.). Klikk på **Alle notater** for å lese og legge til notater
+- **Skjemaer** — Viser personens skjemaer og om hvert enkelt er sendt inn (se [Arbeide med skjemaer](#working-with-forms) nedenfor)
+
+Når du åpner en av de fullstendige visningene, klikker du på lenken **Tilbake til** med personens navn øverst for å gå tilbake til profilen.
 
 ## Sende e-post til en person
 
-Hvis personen har en e-postadresse registrert, vises en knapp **Send e-post til denne personen** (konvoluttikon) i profilhodet.
+Hvis personen har en e-postadresse registrert, vises en knapp **E-post** under kontaktopplysningene til venstre i profilen.
 
-1. Klikk på **konvoluttikonet** i personens profil.
+1. Klikk på **E-post** i personens profil.
 2. En dialog **E-post** med personens navn som tittel åpnes, og viser **Sendes til** med personens adresse.
 3. Velg eventuelt en lagret mal under **Last inn mal (valgfritt)**.
 4. Skriv inn et **Emne** og skriv meldingen.
@@ -66,16 +71,16 @@ Hvis personen har en e-postadresse registrert, vises en knapp **Send e-post til 
 Hvis du heller vil skrive meldingen i ditt eget e-postprogram, klikker du på **Åpne i e-postappen min**.
 
 :::info
-Sending fra B1 bruker samme godkjenning og daglige grenser som gruppe-e-post. Hvis menigheten din ikke er godkjent ennå, ber dialogen deg om å be om en gjennomgang – du kan fortsatt klikke på **Åpne i e-postappen min** i mellomtiden. Se [Slå på gruppe-e-post for menigheten din](../groups/group-members.md#turning-on-group-email-for-your-church). Brukere som ikke har tillatelse til å redigere gruppemedlemmer, går rett til e-postappen sin når de klikker på konvoluttikonet.
+Sending fra B1 bruker samme godkjenning og daglige grenser som gruppe-e-post. Hvis menigheten din ikke er godkjent ennå, ber dialogen deg om å be om en gjennomgang – du kan fortsatt klikke på **Åpne i e-postappen min** i mellomtiden. Se [Slå på gruppe-e-post for menigheten din](../groups/group-members.md#turning-on-group-email-for-your-church). Brukere som ikke har tillatelse til å redigere gruppemedlemmer, går rett til e-postappen sin når de klikker på **E-post**.
 :::
 
-## Arbeide med skjemaer
+## Arbeide med skjemaer {#working-with-forms}
 
 Du kan fylle ut egendefinerte skjemaer direkte fra en persons profil. Dette er brukerdefinerte skjemaer som du kan bygge ved å følge veiledningen [Opprette skjemaer](../forms/creating-forms.md).
 
-1. Klikk på nedtrekkslisten **Skjemaer** i personens profil for å velge et skjema.
-2. Klikk på **Legg til skjema** for å åpne det.
-3. Fyll inn opplysningene i skjemaet og klikk på **Lagre**.
+1. Finn seksjonen **Skjemaer** i personens profil. Den viser hvert skjema og om det er **Sendt inn** eller **Ikke sendt inn**.
+2. Klikk på navnet på et skjema for å åpne det (eller klikk på **Alle skjemaer** for å se hele listen).
+3. Klikk på **redigeringsikonet** (blyant) på skjemaet, fyll inn opplysningene og klikk på **Lagre**.
 
 Når et skjema er sendt inn, klikker du på **utskriftsikonet** ved siden av det for å skrive ut personens utfylte svar.
 
@@ -93,9 +98,9 @@ Hvis du bare trenger å registrere én eller to ekstra opplysninger om personer 
 
 Med husstander kan du knytte familiemedlemmer sammen. Det er særlig nyttig for [innsjekking](../attendance/check-in.md), der en forelder kan sjekke inn alle barna sine samtidig.
 
-1. Klikk på **blyanten for redigering** ved siden av husstandsnavnet i en persons profil.
-2. Husstandsredigereren åpnes. Velg **husstandsrollen** for den aktuelle personen (for eksempel Hode, Ektefelle, Barn).
-3. Klikk på **Legg til** for å legge til et nytt husstandsmedlem.
-4. Skriv inn personens navn i søkefeltet og klikk på **Søk**.
-5. Når personen vises i søkeresultatene, klikker du på **Velg**.
+1. Klikk på **Rediger** ved siden av overskriften **Husstand** til venstre i en persons profil.
+2. Husstandsredigereren åpnes. Velg **husstandsrollen** for den aktuelle personen (for eksempel Hode, Ektefelle, Barn, Annen).
+3. Klikk på **Legg til**-ikonet for å legge til et nytt husstandsmedlem.
+4. Under **Legg til husstandsmedlem** skriver du inn personens navn i søkefeltet og trykker **Enter** eller klikker på søkeikonet. (Før du skriver noe, vises en kort liste over **Nylige personer**.)
+5. Når personen vises i resultatene, klikker du på navnet eller legg-til-ikonet ved siden av.
 6. Velg husstandsrollen til personen og klikk på **Lagre** for å fullføre husstandsoppsettet.

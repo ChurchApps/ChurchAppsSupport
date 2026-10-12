@@ -65,11 +65,11 @@ Estende GenericCrudController com rotas CRUD `getById`, `post` e `delete`. Os en
 
 | Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|---------|---|------------|-------------|
-| GET | `/` | JWT | — | Listar todos os horários de serviço. Filtrar por `?serviceId=`. Adicionar `?include=groups` para incluir dados de grupos |
+| GET | `/` | JWT | — | Listar todos os horários de serviço. Filtrar por `?serviceId=`. Adicionar `?include=groups` para incluir dados de grupos. Cada linha inclui um booleano calculado `checkinOpen` (falso apenas quando o horário de serviço tem um cronograma de check-in cuja janela está fechada neste momento, no horário local da igreja) |
 | GET | `/:id` | JWT | — | Obter um horário de serviço por ID |
 | GET | `/search?campusId=&serviceId=` | JWT | — | Pesquisar horários de serviço por campus e serviço |
 | GET | `/public/:churchId` | Público | — | Obter a árvore campus → serviço → tempo para uma igreja. Alimenta o elemento `serviceTimes` do construtor de sites |
-| POST | `/` | JWT | Services.Edit | Criar ou atualizar horários de serviço |
+| POST | `/` | JWT | Services.Edit | Criar ou atualizar horários de serviço. Campos opcionais de cronograma: `dayOfWeek` (0 = domingo … 6), `startTime` / `endTime` (`HH:mm`), `checkinOpenMinutes` (antes do início), `checkinCloseMinutes` (após o término). O check-in só é limitado por horário quando `dayOfWeek` e `startTime` são definidos |
 | DELETE | `/:id` | JWT | Services.Edit | Deletar um horário de serviço |
 
 ## Horários de Serviço do Grupo
@@ -193,7 +193,10 @@ Authorization: Bearer <token>
 ]
 ```
 
+Se um horário de serviço direcionado tiver um cronograma de check-in e sua janela estiver fechada, nada é salvo e a resposta é `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }`. Violações de capacidade e de proporção de voluntários também retornam 409 (`error: "capacity"` ou `"ratio"`).
+
 ## Sessões de Visita
+
 
 Caminho base: `/attendance/visitsessions`
 

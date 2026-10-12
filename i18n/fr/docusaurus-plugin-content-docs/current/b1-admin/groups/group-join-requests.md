@@ -34,7 +34,7 @@ Quand un groupe utilise la politique **Request**, toutes les tentatives d'adhés
 
 1. Dans B1 Admin, ouvrez le [menu de saut](../introduction.md#getting-around-with-the-jump-menu) et choisissez **People > Groups**
 2. Cliquez sur le nom du groupe
-3. Les demandes en attente pour ce groupe apparaissent en haut de l'onglet **Members**
+3. La section **Members** indique le nombre de demandes en attente. Cliquez sur **All members** -- les demandes en attente pour ce groupe apparaissent en haut de la liste des membres
 
 ### Pour les administrateurs
 
@@ -85,9 +85,9 @@ Fournir une raison de refus aide la personne à comprendre pourquoi sa demande n
 
 Chaque demande d'adhésion crée également une tâche sous **Serving → My Work**, intitulée « *Person* requested to join *Group*. » Elle est assignée aux leaders du groupe. Si le groupe n'a pas encore de leader, elle va à n'importe quel membre du personnel ayant la permission **Group Members > Edit**, ou aux administrateurs du domaine de votre église s'il y a personne avec cette permission. Le personnel et les administrateurs qui reçoivent la tâche de cette façon reçoivent également une notification qui les relie directement à elle.
 
-Ouvrir la tâche affiche le nom de la personne qui demande, le groupe et son message optionnel, avec des boutons **Approve** et **Decline** directement sur la carte de tâche (Decline ouvre le même champ de raison optionnel décrit ci-dessus). Ceci donne aux leaders un deuxième moyen piloté par notification d'agir sur une demande sans naviguer jusqu'à l'onglet Join Requests du groupe.
+Ouvrir la tâche affiche le nom de la personne qui demande, le groupe et son message optionnel, avec des boutons **Approve** et **Decline** directement sur la carte de tâche (Decline ouvre le même champ de raison optionnel décrit ci-dessus). Ceci donne aux leaders un deuxième moyen piloté par notification d'agir sur une demande sans ouvrir la liste des membres du groupe.
 
-Décider une demande de l'un ou l'autre endroit -- l'onglet Join Requests du groupe ou sa carte de tâches -- la ferme partout, pour que les leaders ne voient jamais une tâche obsolète pour une demande que quelqu'un a déjà traitée.
+Décider une demande de l'un ou l'autre endroit -- la liste des membres du groupe ou sa carte de tâches -- la ferme partout, pour que les leaders ne voient jamais une tâche obsolète pour une demande que quelqu'un a déjà traitée.
 
 ## Notifications
 

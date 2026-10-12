@@ -29,7 +29,7 @@ Cuando abre la página Dispositivos, verá una tabla que enumera todos los dispo
 
 ## Agregar un Nuevo Dispositivo
 
-1. Haga clic en el botón **Agregar Dispositivo** en la parte superior de la página Dispositivos.
+1. Haga clic en el botón **Add Screen** en la parte superior de la página Dispositivos.
 2. Se le pedirá que ingrese un **código de emparejamiento**.
 3. Encuentre el código de emparejamiento que se muestra en el dispositivo ChurchAppsPlayer o FreePlay que desea conectar.
 4. Ingrese el código. Si es un TV con FreePlay, un menú desplegable **Mostrar Planes Para** le permite elegir el tipo de plan que debe seguir la pantalla — déjelo en **Ninguno** para usar el dispositivo solo para navegación y notificaciones.
@@ -41,7 +41,7 @@ Asegúrese de que el dispositivo esté encendido y conectado a internet antes de
 
 ## Editar la Etiqueta de un Dispositivo
 
-1. Haga clic en el **nombre del dispositivo** en la tabla de dispositivos.
+1. Haga clic en **Edit** junto al dispositivo en la tabla de dispositivos.
 2. Actualice la etiqueta a algo descriptivo (por ejemplo, "Pantalla Principal del Santuario" o "Pantalla del Vestíbulo").
 3. Guarde sus cambios.
 

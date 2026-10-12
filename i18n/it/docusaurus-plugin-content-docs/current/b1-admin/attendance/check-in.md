@@ -25,7 +25,7 @@ L'app B1 Checkin si connette alla configurazione delle presenze di B1 Admin. Qua
 
 ## Configurazione del Check-In
 
-1. **Configurate prima la vostra struttura di presenze.** In B1 Admin, andate a **Presenze > Configurazione** e assicuratevi che i vostri campus, gli orari dei servizi e i gruppi siano al loro posto. L'app di check-in si basa su questa configurazione. Vedere [Configurazione delle presenze](setup.md) per i dettagli.
+1. **Configurate prima la vostra struttura di presenze.** In B1 Admin, andate a **Persone > Presenze** e fate clic su **Configurazione** per assicurarvi che i vostri campus, gli orari dei servizi e i gruppi siano al loro posto. Facoltativamente, assegnate a ogni orario del servizio un [programma di check-in](setup.md#setting-a-check-in-schedule) in modo che il check-in si apra e si chiuda automaticamente ogni settimana. L'app di check-in si basa su questa configurazione. Vedere [Configurazione delle presenze](setup.md) per i dettagli.
 2. **Installate l'app B1 Checkin** sui dispositivi che intendete utilizzare. L'app è disponibile sulle seguenti piattaforme:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
@@ -110,7 +110,7 @@ Per attivare la visualizzazione del codice QR:
 3. Attivate **Registrazione visitatori QR** e fate clic su **Salva**.
 
 :::note
-Questa impostazione è sotto **Mobile > B1 CheckIn** (la stessa pagina della scheda **Tema del chiosco**), non sotto Presenze.
+Questa impostazione è sotto **Mobile > B1 CheckIn** (la stessa pagina della scheda **Tema del chiosco**), non sotto Presenze. Anche l'azione **Chiosco** nella pagina Presenze contiene un collegamento a questa pagina.
 :::
 
 ### Condivisione del collegamento di registrazione
@@ -126,4 +126,4 @@ Aggiungete il collegamento di registrazione alla pagina "Piano la tua visita" o 
 
 ## Cosa viene registrato
 
-Ogni check-in crea un record di presenze in B1 Admin. Potete visualizzare questi record nelle schede [Presenze](tracking-attendance.md) e [Gruppi](../groups/group-members.md) proprio come le presenze inserite manualmente. Non c'è alcuna differenza nel modo in cui i dati appaiono -- entrambi i metodi alimentano gli stessi report.
+Ogni check-in crea un record di presenze in B1 Admin. Potete visualizzare questi record nella pagina [Presenze](tracking-attendance.md) e nelle sessioni di ogni [gruppo](../groups/group-members.md) proprio come le presenze inserite manualmente. Non c'è alcuna differenza nel modo in cui i dati appaiono -- entrambi i metodi alimentano gli stessi report.

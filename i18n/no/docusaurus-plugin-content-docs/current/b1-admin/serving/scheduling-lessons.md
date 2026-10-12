@@ -28,15 +28,15 @@ Dette er et engangsoppsett per tjenesteområde. Du må koble til Lessons.church-
 
 1. Logg inn på [B1 Admin](https://admin.b1.church/) og gå til **Tjeneste**
 2. Åpne tjenesteområdet du vil koble til (f.eks. barnearbeid)
-3. Rull ned til delen **Kontoer hos innholdsleverandører**
+3. Rull ned til delen **Innholdsleverandører**
 4. Klikk på **Koble til ny leverandør**
 5. Velg **Lessons.church** fra listen
 6. En skjerm for enhetsgodkjenning vises med en kode
 7. Gå til [lessons.church](https://lessons.church), logg inn og skriv inn koden for å godkjenne tilkoblingen
-8. Når den er godkjent, ser du **«Konto tilkoblet»** under Lessons.church i B1 Admin
+8. Når den er godkjent, ser du **Tilkoblet** under Lessons.church i B1 Admin
 
 :::info
-Delen Kontoer hos innholdsleverandører gjelder per tjenesteområde. Hvis du driver flere tjenesteområder (f.eks. barne- og ungdomsarbeid), må du koble til Lessons.church for hvert enkelt.
+Delen Innholdsleverandører gjelder per tjenesteområde. Hvis du driver flere tjenesteområder (f.eks. barne- og ungdomsarbeid), må du koble til Lessons.church for hvert enkelt.
 :::
 
 ## Trinn 2 — Planlegg en leksjon
@@ -44,7 +44,7 @@ Delen Kontoer hos innholdsleverandører gjelder per tjenesteområde. Hvis du dri
 Når kontoen er koblet til, kan du planlegge leksjoner direkte fra Planer.
 
 1. Gå til **Tjeneste → Planer** i B1 Admin
-2. Velg tjenesteområdefanen din og klikk på **Legg til plantype** — gi plantypen et navn, for eksempel Barnekirke eller Søndagsskole
+2. Velg tjenesteområdefanen din og klikk på **Legg til plantype** (eller **Opprett plantype** hvis tjenesteområdet ikke har noen ennå) — gi plantypen et navn, for eksempel Barnekirke eller Søndagsskole
 3. Klikk på plantypen du nettopp opprettet, og klikk på **Planlegg leksjon**. Fra den menyen kan du planlegge én leksjon, masseplanlegge en serie eller bruke **Bruk årsplan** for å legge inn en publisert årssekvens fra Lessons.church.
 4. Velg **datoen** for leksjonen (standard er kommende søndag)
 5. Klikk på **Velg leksjon** — en dialogboks med innholdsleser åpnes

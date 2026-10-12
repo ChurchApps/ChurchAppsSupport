@@ -26,7 +26,7 @@ Playlists let you organize your sermons into series or collections. When visitor
 
 ## Creating a Playlist
 
-1. Click the **Create First Playlist** button (if you have no playlists yet) or click the **Add** (+) button in the **Playlists** panel header.
+1. Click the **Create First Playlist** button (if you have no playlists yet) or click the **Add playlist** button in the **Playlists** panel.
 2. Enter a **name** for the playlist -- for example, the sermon series title like "Faith Foundations" or "Summer in the Psalms."
 3. Add a **description** to give visitors a brief overview of the series.
 4. Set a **publish date** to control when the playlist becomes visible.

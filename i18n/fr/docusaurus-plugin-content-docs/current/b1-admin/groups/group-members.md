@@ -21,14 +21,16 @@ Une fois que vous avez créé un groupe, l'étape suivante consiste à ajouter d
 ## Ajouter des membres à un groupe
 
 1. Dans le [menu de saut](../introduction.md#getting-around-with-the-jump-menu), choisissez **People > Groups** et cliquez sur le groupe que vous voulez gérer.
-2. Cliquez sur l'onglet **Members**.
-3. Dans la boîte de recherche, tapez le nom de la personne que vous voulez ajouter.
-4. Cliquez sur **Add** à côté du nom de la personne dans les résultats de la recherche.
+2. Dans la section **Members** de la page du groupe, cliquez sur **All members**. (Les équipes et les ministères s'ouvrent directement sur leur liste de membres.)
+3. Dans la boîte **Add Person** sous la liste des membres, tapez le nom de la personne que vous voulez ajouter et appuyez sur **Enter** ou cliquez sur l'icône de recherche.
+4. Cliquez sur le nom de la personne, ou sur l'icône d'ajout à côté, dans les résultats de la recherche.
 5. La personne apparaît maintenant dans la liste des membres du groupe.
 
 :::tip
-Laissez la boîte de recherche vide et cliquez sur **Search** pour parcourir votre répertoire entier. Cela est utile si vous n'êtes pas sûr de l'orthographe exacte du nom de quelqu'un.
+Avant de taper quoi que ce soit, la boîte **Add Person** affiche une courte liste de **Recent people** que vous pouvez ajouter en un clic.
 :::
+
+Une fois terminé, cliquez sur le lien **Back to** avec le nom du groupe pour revenir à la page du groupe. La page du groupe affiche un résumé des **Members**, **Sessions**, **Calendar** et **Health** du groupe, chacun avec un lien vers sa vue complète.
 
 ### Ajouter quelqu'un qui n'est pas encore dans B1
 
@@ -39,10 +41,10 @@ Si votre recherche ne trouve personne, la recherche affiche **No records found**
 Les leaders de groupe ont des privilèges spéciaux -- ils peuvent modifier le [calendrier du groupe](group-calendar.md), gérer les événements et aider à coordonner le groupe.
 
 1. Dans la liste des membres du groupe, trouvez la personne que vous voulez faire leader.
-2. Cliquez sur l'**icône de clé verte** à côté de son nom.
-3. La personne est maintenant désignée en tant que leader de groupe.
+2. Cliquez sur l'**icône en forme d'étoile** (**Nommer responsable**) à côté de son nom.
+3. La personne est maintenant désignée en tant que leader de groupe et affiche un badge **Leader**.
 
-Pour supprimer le statut de leader, cliquez à nouveau sur l'icône de clé verte.
+Pour supprimer le statut de leader, cliquez à nouveau sur l'icône en forme d'étoile (**Retirer l'accès responsable**).
 
 :::info
 N'importe quel membre du groupe peut consulter le calendrier du groupe et les événements, mais seuls les leaders peuvent ajouter ou modifier les événements du calendrier.
@@ -52,8 +54,8 @@ N'importe quel membre du groupe peut consulter le calendrier du groupe et les é
 
 Vous pouvez communiquer avec tous les membres d'un groupe directement depuis B1 Admin :
 
-1. Depuis la page de détail du groupe, cherchez la zone de messagerie.
-2. Tapez votre message dans la boîte de texte.
+1. Dans la liste des membres du groupe, cliquez sur l'icône **Send a message to members** au-dessus de la liste.
+2. Tapez votre message dans la boîte de texte (ou choisissez-en un dans **Templates**).
 3. Cliquez sur **Send**.
 
 Votre message sera livré à tous les membres du groupe.
@@ -62,7 +64,7 @@ Votre message sera livré à tous les membres du groupe.
 
 Vous pouvez envoyer des emails formatés à tous les membres d'un groupe :
 
-1. Depuis la page de détail du groupe, cliquez sur l'**icône d'email**.
+1. Depuis la page de détail du groupe, cliquez sur le bouton **Email** à gauche de la page.
 2. La boîte de dialogue Envoyer un email s'ouvre, affichant combien de membres recevront l'email et combien n'ont pas d'adresse email enregistrée.
 3. Sélectionnez optionnellement un **email template** dans la liste déroulante, ou composez un message à partir de zéro. Cliquez sur **Manage Templates** pour créer ou modifier les templates.
 4. Entrez une **subject line**. Vous pouvez insérer les champs de fusion en cliquant sur les chips de champ : `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`.
@@ -92,9 +94,9 @@ Après approbation, une église peut envoyer jusqu'à 150 emails écrits par l'�
 
 ## Envoyer des messages texte aux membres du groupe
 
-Une fois que votre église a connecté un [prestataire de textos](../settings/church-settings.md#texting), une icône de texte (**Text this group**) apparaît dans l'en-tête du groupe.
+Une fois que votre église a connecté un [prestataire de textos](../settings/church-settings.md#texting), un bouton **Text** (**Text this group**) apparaît à côté du bouton **Email** sur la page du groupe.
 
-1. Depuis la page de détail du groupe, cliquez sur l'**icône de texte**.
+1. Depuis la page de détail du groupe, cliquez sur **Text**.
 2. La boîte de dialogue affiche combien de membres recevront le texte. Les membres sans numéro de téléphone mobile enregistré ou qui se sont désinscrits sont ignorés.
 3. Tapez votre message. Pour le personnaliser, cliquez sur une chip d'espace réservé sous la boîte de message -- **First Name**, **Last Name**, **Display Name** ou **Church Name** -- pour l'insérer à votre curseur. Chaque espace réservé est rempli avec les propres détails du destinataire quand le texte est envoyé.
 4. Cliquez sur **Send**.
@@ -105,14 +107,14 @@ Voir [Personalizing Texts with Merge Fields](../settings/church-settings.md#pers
 
 Pour télécharger la liste des membres du groupe en tant que fichier :
 
-1. Depuis la page de détail du groupe, cliquez sur l'**icône de téléchargement**.
+1. Dans la liste des membres du groupe, cliquez sur **Export** au-dessus de la liste.
 2. Un fichier CSV contenant les informations des membres du groupe sera téléchargé sur votre ordinateur.
 
 Un export CSV est utile pour importer des données dans d'autres outils, ou pour conserver des enregistrements hors ligne. Pour plus d'options d'export, voir [Exporting Data](../people/exporting-data.md).
 
 ## Impression de la liste des membres {#printing-the-member-list}
 
-Cliquez sur l'icône **Print Roll Sheet** (imprimante) au-dessus de la liste des membres et choisissez une mise en page. La page s'ouvre dans un nouvel onglet et la boîte de dialogue d'impression de votre navigateur apparaît automatiquement.
+Dans la liste des membres du groupe, cliquez sur l'icône **Print Roll Sheet** (imprimante) au-dessus de la liste et choisissez une mise en page. La page s'ouvre dans un nouvel onglet et la boîte de dialogue d'impression de votre navigateur apparaît automatiquement.
 
 - **Feuille de présence** -- une liste de classe sans date avec des cases **Présent** et **Absent** que les enseignants peuvent cocher à la main. Voir [Printing a Roll Sheet](../attendance/recording-attendance.md#printing-a-roll-sheet).
 - **Liste de contacts** -- une liste de contacts du groupe, datée d'aujourd'hui et titrée avec le nom de votre église et le nom du groupe. Chaque membre a une ligne avec son **Nom**, son **Téléphone**, son **E-mail** et son **Adresse**. Les leaders sont listés en premier et marqués **Leader**, puis tous les autres par nom de famille. Le téléphone affiché est le numéro de mobile du membre, ou son numéro de domicile ou de travail s'il n'a pas de mobile. Les coordonnées sont laissées vides pour toute personne qui s'est désinscrite.
@@ -125,7 +127,7 @@ Une liste de contacts contient les coordonnées personnelles des membres. Ne par
 
 Vous pouvez envoyer une notification push directement à tous les membres du groupe qui ont l'application B1.church installée sur leur appareil avec les notifications push activées.
 
-1. Depuis la page de détail du groupe, cliquez sur l'**icône de cloche** dans la barre d'outils d'en-tête (à côté des icônes email et texte -- l'icône de texte apparaît une fois qu'un [prestataire de textos](../settings/church-settings.md#texting) est connecté).
+1. Depuis la page de détail du groupe, cliquez sur **Notify** (sous les boutons **Email** et **Text** -- le bouton **Text** apparaît une fois qu'un [prestataire de textos](../settings/church-settings.md#texting) est connecté).
 2. Une boîte de dialogue s'ouvre affichant combien de membres de votre groupe ont le push activé.
 3. Remplissez les détails de la notification :
    - **Title** *(requis)* -- Un bref résumé, jusqu'à 80 caractères.

@@ -57,10 +57,10 @@ Para un grupo que se reúne todos los sábados, establezca la frecuencia en "sem
 
 ## Creación Masiva de Eventos en B1 Admin
 
-La página del grupo en B1 Admin también tiene una pestaña **Calendario** donde el personal puede programar toda una temporada de reuniones a la vez:
+La página del grupo en B1 Admin también tiene una sección **Calendario** donde el personal puede programar toda una temporada de reuniones a la vez:
 
-1. Abra el grupo en B1 Admin y seleccione la pestaña **Calendario**.
-2. Haga clic en **Agregar Eventos** para abrir el cuadro de diálogo **Agregar Eventos Recurrentes**.
+1. Abra el grupo en B1 Admin y, en la sección **Calendario**, haga clic en **All events**.
+2. Haga clic en **+ Add Events** para abrir el cuadro de diálogo **Agregar Eventos Recurrentes**.
 3. Elija el horario (semanal, cada 2 semanas, mensual o una vez), las fechas de **Primera Reunión** y **Última Reunión**, y opcionalmente **Omitir días festivos**.
 4. Revise la vista previa de las fechas de reunión y desmarque las que desee omitir.
 5. Deje marcado **Permitir RSVP** si desea que los miembros puedan responder a estos eventos (vea abajo), luego guarde.
@@ -69,8 +69,8 @@ La página del grupo en B1 Admin también tiene una pestaña **Calendario** dond
 
 Los eventos de grupo pueden recopilar RSVP — un **Sí**, **No**, o **Tal vez** para cada ocurrencia del evento.
 
-- **Permitir RSVP** está activado de forma predeterminada para los eventos creados a través del cuadro de diálogo de agregado masivo; desmárquelo para desactivar las respuestas para esos eventos. Los eventos con RSVP desactivado se muestran como **Deshabilitado** en la pestaña del calendario.
-- En la pestaña del calendario de grupo de B1 Admin, cada evento muestra un resumen de respuestas (por ejemplo, "5 sí · 2 tal vez · 1 no"). Haga clic para abrir la lista de **Respuestas RSVP**, que enumera quién respondió sí, tal vez y no para esa ocurrencia.
+- **Permitir RSVP** está activado de forma predeterminada para los eventos creados a través del cuadro de diálogo de agregado masivo; desmárquelo para desactivar las respuestas para esos eventos. Los eventos con RSVP desactivado se muestran como **Deshabilitado** en la lista de eventos del grupo.
+- En la lista de eventos del grupo de B1 Admin, cada evento muestra un resumen de respuestas (por ejemplo, "5 sí · 2 tal vez · 1 no"). Haga clic para abrir la lista de **Respuestas RSVP**, que enumera quién respondió sí, tal vez y no para esa ocurrencia.
 
 :::tip
 Los RSVP le dan a los líderes un conteo de asistentes sin la formalidad de un registro de evento completo. Para inscripciones pagadas o eventos con capacidad gestionada, use el [registro de eventos](../calendars/creating-calendars.md#enabling-event-registration) en su lugar.

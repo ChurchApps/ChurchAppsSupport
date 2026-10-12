@@ -6,7 +6,7 @@ title: "Fichiers"
 
 <div class="article-intro">
 
-La page Fichiers est le référentiel central de tous les médias et documents utilisés sur le site web de votre église. À partir de là, vous pouvez télécharger, organiser, parcourir et gérer chaque image, document et fichier multimédia dont votre site a besoin.
+La page Fichiers est le référentiel central de tous les médias et documents utilisés sur le site web de votre église. À partir de là, vous pouvez télécharger, parcourir et gérer chaque image, document et fichier multimédia dont votre site a besoin.
 
 </div>
 
@@ -22,29 +22,23 @@ La page Fichiers est le référentiel central de tous les médias et documents u
 ## Téléchargement de fichiers
 
 1. Dans B1 Admin, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Site web** et cliquez sur **Fichiers**.
-2. Faites glisser et déposez des fichiers directement sur la zone de téléchargement, ou cliquez sur le bouton de téléchargement pour parcourir votre ordinateur.
-3. Vos fichiers se téléchargeront et apparaîtront immédiatement dans la bibliothèque de fichiers.
+2. Dans le panneau **Télécharger des fichiers** à droite, cliquez sur **Choisir un fichier** et sélectionnez un fichier sur votre ordinateur. (Le bouton **Télécharger des fichiers** en haut de la page ouvre le même panneau.)
+3. Votre fichier se télécharge et apparaît dans le tableau des fichiers.
+
+Le panneau Télécharger des fichiers indique également l'espace de stockage utilisé. 100 Mo sont fournis gratuitement ; pour en obtenir davantage, reliez votre propre Google Drive, Dropbox, OneDrive ou compartiment S3 sous **Paramètres**, dans la section **Stockage des fichiers**.
 
 :::tip
 Pour de meilleurs résultats, optimisez les images avant de les télécharger. Des tailles de fichier plus petites aident votre site web à se charger plus rapidement pour les visiteurs. Des outils comme TinyPNG ou Squoosh peuvent compresser les images sans perte de qualité notable.
 :::
 
-## Organisation avec des dossiers
+## Parcourir les fichiers {#browsing-files}
 
-1. Créez des dossiers pour regrouper les fichiers connexes -- par exemple, « Graphiques de sermon », « Banneau d'événements » ou « Photos du personnel ».
-2. Déplacez les fichiers entre les dossiers pour garder votre bibliothèque organisée à mesure qu'elle grandit.
-3. Utilisez des noms de dossiers clairs et descriptifs afin que votre équipe puisse trouver rapidement les fichiers.
-
-## Parcourir et rechercher
-
-- Faites défiler la bibliothèque de fichiers pour voir des vignettes de tous vos fichiers téléchargés.
-- Utilisez la fonction de **recherche** pour trouver des fichiers par nom lorsque votre bibliothèque devient importante.
-- Cliquez sur n'importe quel fichier pour afficher ses détails, notamment le nom du fichier, la taille et l'URL.
+Le tableau des fichiers répertorie chaque fichier téléchargé avec son **nom** et sa **taille**. Cliquez sur le nom d'un fichier pour l'ouvrir dans un nouvel onglet. Donnez à vos fichiers des noms clairs et descriptifs avant de les télécharger, afin que votre équipe puisse les retrouver rapidement.
 
 ## Utilisation de fichiers sur votre site web
 
-1. Cliquez sur un fichier pour afficher ses détails.
-2. **Copiez l'URL du fichier** pour l'utiliser dans vos pages de site web. Vous pouvez coller cette URL dans des éléments d'image, des liens de téléchargement ou n'importe où ailleurs qui accepte une URL de fichier.
+1. Repérez le fichier dans le tableau des fichiers.
+2. Cliquez sur **Copier le lien** pour copier l'URL du fichier et l'utiliser dans vos pages de site web. Vous pouvez coller cette URL dans des éléments d'image, des liens de téléchargement ou n'importe où ailleurs qui accepte une URL de fichier.
 3. Les fichiers que vous téléchargez ici sont disponibles pour utilisation sur tous vos pages et blocs de contenu de site web.
 
 :::info
@@ -53,8 +47,8 @@ Lors de la création de pages dans [Gestion des pages](managing-pages), vous pou
 
 ## Suppression de fichiers
 
-1. Sélectionnez le fichier que vous souhaitez supprimer.
-2. Cliquez sur le bouton **Supprimer** pour le supprimer définitivement de votre bibliothèque.
+1. Repérez le fichier que vous souhaitez supprimer dans le tableau des fichiers.
+2. Cliquez sur **Supprimer** à côté du fichier, puis confirmez pour le supprimer définitivement de votre bibliothèque.
 3. Assurez-vous que le fichier n'est actuellement utilisé sur aucune page avant de le supprimer, car cela cassera tous les liens ou images qui le référencent.
 
 :::warning

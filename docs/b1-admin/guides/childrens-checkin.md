@@ -53,7 +53,7 @@ Follow the [Attendance Setup](../attendance/setup.md) guide to:
 
 1. Add your campus (e.g., "Main Campus")
 2. Add a service (e.g., "Sunday Morning")
-3. Set the service time (e.g., "9:00 AM")
+3. Set the service time (e.g., "9:00 AM") and, optionally, a [check-in schedule](../attendance/setup.md#setting-a-check-in-schedule) so check-in opens automatically before each service and closes after it
 4. Assign your children's groups to the service
 
 ## Step 4: Set Up the Check-In App

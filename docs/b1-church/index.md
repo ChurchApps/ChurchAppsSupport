@@ -18,7 +18,7 @@ When members visit your B1.church site, they see your church's public website wi
 - **Groups** -- View the groups you belong to, see group members, join conversations, and track attendance.
 - **Giving** -- Make donations to your church online and view your giving history.
 - **Events** -- Browse upcoming events and register yourself and your family.
-- **Serving** -- View service plans, your volunteer positions, and sign up for open volunteer opportunities.
+- **Serving** -- View service plans, your volunteer positions, and sign up for open volunteer opportunities. Choose to get serving and event reminders by text in your [notification preferences](./getting-started/notification-preferences.md) (reply STOP at any time to stop).
 - **Plans** -- See upcoming service plans, view your assigned positions, and access song details and service orders.
 - **Check-In** -- Check in yourself and your household members for services and events. Guests can register via QR code.
 - **Community Directory** -- Browse your church's member directory, view profiles, and send direct messages. Control who can see your own contact info from your [profile's Privacy tab](./getting-started/editing-your-profile.md#privacy-tab).

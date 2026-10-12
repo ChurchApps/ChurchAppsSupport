@@ -20,19 +20,21 @@ Hinahayaan kayo ng mga gawain (tasks) na magtalaga ng mga action item sa mga tao
 
 ## Pagtingin sa mga Gawain
 
-Sa Jump menu, piliin ang **Serving > My Work** (o hanapin ang "My Work"). Makikita ninyo ang listahan ng inyong mga bukas na gawain. Ipinapakita ng bawat gawain ang pamagat, assignee, at status nito.
+Sa Jump menu, piliin ang **Serving > My Work** (o hanapin ang "My Work"). Ipinapakita ng listahan ng **Tasks** ang pamagat ng bawat gawain, kung kanino ito nauugnay, kung sino ang nakatalaga, kailan ito binuksan, at ang status nito. Lalabas katabi nito ang inyong mga [workflow](./workflows.md) card sa ilalim ng **My Cards**.
+
+Gamitin ang mga tab sa itaas ng listahan para lumipat sa mga gawaing **Assigned to Me**, **Assigned to My Groups**, at **Requested by Me**. Ipinapakita ng bawat tab kung ilang gawain ang nasa loob nito.
 
 :::tip
-Bilang default, mga bukas na gawain lamang ang ipinapakita. I-toggle ang **Show Closed** para makita rin ang mga natapos na gawain.
+Bilang default, mga bukas na gawain lamang ang ipinapakita. Piliin ang **Closed** sa itaas ng listahan para makita ang mga natapos na gawain.
 :::
 
 ## Paggawa ng Gawain
 
-1. Sa pahina ng Tasks, i-click ang **Add Task**.
-2. Maglagay ng **pamagat** para sa gawain.
-3. I-click ang kahong **Assign To** at i-type ang pangalan ng isang tao, o lumipat sa **Group** at i-type ang pangalan ng grupo.
-4. I-click ang **Search** at piliin ang tao o grupo mula sa mga resulta.
-5. Magdagdag ng **tala** na may anumang detalye o tagubilin para sa assignee.
+1. Sa pahina ng **My Work**, i-click ang **Add Task**. Magbubukas ang form na **New Task**.
+2. I-click ang kahong **Associate with** at piliin ang taong tungkol sa gawain.
+3. I-click ang kahong **Assign to**. Sa window na **Select a Person or Group**, maghanap sa tab na **Person**, o lumipat sa tab na **Group** at maghanap ng grupo, pagkatapos piliin ang resulta.
+4. Maglagay ng **Title** para sa gawain.
+5. Magdagdag ng **Notes** na may anumang detalye o tagubilin para sa assignee.
 6. I-click ang **Save**.
 
 Lalabas na ngayon ang gawain sa listahan ng mga gawain at makikita ito ng assignee sa kanilang dashboard at mobile app.
@@ -41,17 +43,31 @@ Lalabas na ngayon ang gawain sa listahan ng mga gawain at makikita ito ng assign
 
 I-click ang anumang gawain para buksan ang pahina ng detalye nito. Mula rito maaari ninyong:
 
-- **Palitan ang status** -- Lumipat sa pagitan ng **Open** at **Closed** gamit ang status dropdown.
-- **Italaga muli ang gawain** -- I-update ang assignee sa ibang tao o grupo.
-- **Magdagdag ng mga tala** -- Maglagay ng karagdagang impormasyon o update para sa assignee.
-- **I-edit ang pamagat** -- I-update ang pamagat ng gawain ayon sa kailangan.
+- **Isara o buksang muli ang gawain** -- I-click ang **Close task** kapag tapos na ang trabaho, o **Reopen task** para buksan itong muli.
+- **Italaga muli ang gawain** -- I-click ang **Assign** para pumili ng ibang tao o grupo.
+- **Baguhin kung sino ang tungkol dito** -- I-click ang **Associate** para pumili ng ibang tao.
+- **Magdagdag ng mga tala** -- Mag-post ng mga update o detalye para sa assignee sa mga tala ng gawain.
+- **Magtakda ng mga paalala** -- Tingnan ang [Mga Paalala sa Gawain](#task-reminders) sa ibaba.
+
+## Mga Paalala sa Gawain {#task-reminders}
+
+Ang gawaing may due date ay maaaring magpaalala sa assignee bago ito ma-due.
+
+1. Sa pahina ng gawain, i-click ang **Edit** sa tabi ng **Reminders**.
+2. I-on ang **Send reminders for this task**.
+3. Sa ilalim ng **When should reminders go out?**, pumili ng hanggang tatlong oras: **7 days before**, **3 days before**, **1 day before**, o **Day of**.
+4. Itakda ang **Time of Day** at, opsyonal, ang **Message**.
+5. Sa ilalim ng **Send By**, piliin ang **Push**, **Email**, at, kung may nakakabit na [texting provider](../settings/church-settings.md#texting) ang inyong simbahan, **Text**.
+6. I-click ang **Save Reminders**.
+
+Kung walang due date ang gawain, babalaan kayo ng B1 na walang ipapadalang paalala hangga't walang nakatakda. Ang mga text na paalala ay umaabot lamang sa mga taong naka-on ang **Text messages** sa kanilang [Notification Preferences](../../b1-church/getting-started/notification-preferences.md), at maaaring may bayad ang bawat text para sa inyong simbahan.
 
 ## Siklo ng Gawain
 
 1. Nagsisimula ang bagong gawain sa status na **Open**.
 2. Nakakatanggap ng abiso ang assignee at maaari nilang makita ang gawain mula sa kanilang dashboard, **Serving > My Work**, o mobile app.
-3. Kapag tapos na ang trabaho, pinapalitan ng assignee (o ng admin) ang status sa **Closed**.
-4. Ang mga saradong gawain ay inaalis sa default na view ngunit maaari pa ring ma-access sa pamamagitan ng pag-enable ng **Show Closed**.
+3. Kapag tapos na ang trabaho, i-click ng assignee (o ng admin) ang **Close task**.
+4. Ang mga saradong gawain ay inaalis sa default na view ngunit makikita pa rin sa pamamagitan ng pagpili sa **Closed** sa itaas ng listahan ng gawain.
 
 :::info
 Hindi na gumagawa ang B1 Admin ng paulit-ulit na mga gawain ayon sa iskedyul. Para sa paulit-ulit na follow-up sa mga tao, gumamit ng [workflow](./workflows.md) na may [schedule trigger](./workflows.md#schedule-triggers).

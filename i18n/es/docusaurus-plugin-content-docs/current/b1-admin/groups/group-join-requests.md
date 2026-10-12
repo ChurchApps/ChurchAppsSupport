@@ -34,7 +34,7 @@ Cuando un grupo usa la política **Request**, todos los intentos de unión pasan
 
 1. En B1 Admin, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) y elija **People > Groups**
 2. Haga clic en el nombre del grupo
-3. Las solicitudes pendientes de este grupo aparecen en la parte superior de la pestaña **Members**
+3. La sección **Members** muestra cuántas solicitudes están pendientes. Haga clic en **All members** — las solicitudes pendientes de este grupo aparecen en la parte superior de la lista de miembros
 
 ### Para administradores
 
@@ -85,9 +85,9 @@ Proporcionar una razón de rechazo ayuda a la persona a entender por qué su sol
 
 Cada solicitud de unión también crea una tarea en **Serving → My Work**, titulada "*Person* solicitó unirse a *Group*." Se asigna a los líderes del grupo. Si el grupo aún no tiene líder, va a cualquier personal con el permiso **Group Members > Edit**, o a los administradores de dominio de su iglesia si nadie tiene ese permiso. El personal y los administradores que reciben la tarea de esta manera también reciben una notificación que los vincula directamente a ella.
 
-Abrir la tarea muestra el nombre del solicitante, el grupo y su mensaje opcional, con botones **Approve** y **Decline** directamente en la tarjeta de la tarea (Decline abre el mismo campo de razón opcional descrito anteriormente). Esto da a los líderes una segunda forma impulsada por notificaciones de actuar en una solicitud sin navegar a la pestaña Solicitudes de unión del grupo.
+Abrir la tarea muestra el nombre del solicitante, el grupo y su mensaje opcional, con botones **Approve** y **Decline** directamente en la tarjeta de la tarea (Decline abre el mismo campo de razón opcional descrito anteriormente). Esto da a los líderes una segunda forma impulsada por notificaciones de actuar en una solicitud sin abrir la lista de miembros del grupo.
 
-Decidir una solicitud desde cualquiera de estos lugares; la pestaña Solicitudes de unión del grupo o su tarjeta de Tareas; la cierra en todas partes, por lo que los líderes nunca ven una tarea antigua para una solicitud que alguien ya manejó.
+Decidir una solicitud desde cualquiera de estos lugares; la lista de miembros del grupo o su tarjeta de Tareas; la cierra en todas partes, por lo que los líderes nunca ven una tarea antigua para una solicitud que alguien ya manejó.
 
 ## Notificaciones
 

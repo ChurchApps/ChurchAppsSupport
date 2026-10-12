@@ -13,13 +13,13 @@ Der Kalenderbereich in B1 Admin ermöglicht es Ihnen, kuratierte Kalender für I
 ## Ihre Kalender anzeigen
 
 1. In B1 Admin öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Kalender** und klicken Sie auf **Kalender**.
-2. Die Kalenderseite listet alle Ihre Kalender mit ihrem Namen und Status auf.
-3. Jeder Kalender zeigt auch die damit verbundenen Gruppen.
+2. Die Kalenderseite listet alle Ihre Kalender in einer Tabelle mit Namen und Status auf. Verwenden Sie das Feld **Kalender finden**, um die Liste zu filtern.
+3. Jede Zeile hat einen Link **Ereignisse verwalten**, um den Kalender zu öffnen, und einen Link **Bearbeiten**, um ihn umzubenennen oder zu löschen.
 
 ## Was Sie tun können
 
-- **Einen neuen Kalender hinzufügen** -- Klicken Sie auf die Schaltfläche „Hinzufügen", um einen Kalender für ein bestimmtes Ministerium, einen Ereignistyp oder einen Zweck zu erstellen. Siehe [Kalender erstellen](creating-calendars) für schrittweise Anweisungen.
-- **Einen Kalender bearbeiten** -- Klicken Sie auf einen beliebigen Kalender, um ihn zu öffnen und zu verwalten, welche Gruppen darin enthalten sind.
+- **Einen neuen Kalender hinzufügen** -- Klicken Sie oben auf der Seite auf **Kalender hinzufügen**, um einen Kalender für ein bestimmtes Ministerium, einen Ereignistyp oder einen Zweck zu erstellen. Siehe [Kalender erstellen](creating-calendars) für schrittweise Anweisungen.
+- **Einen Kalender bearbeiten** -- Klicken Sie bei einem beliebigen Kalender auf **Ereignisse verwalten**, um ihn zu öffnen und zu verwalten, welche Gruppen darin enthalten sind.
 - **Kalender veröffentlichen** -- Kalender können auf Ihrer B1.church-Website angezeigt werden, damit Besucher kommende Ereignisse in Ihrer Kirche sehen können.
 - **Kuratierte Kalender erstellen** -- Ziehen Sie Ereignisse von mehreren Gruppen in eine einzelne Kalenderansicht für einen umfassenden Überblick über alles, was in Ihrer Kirche passiert. Siehe [Kuratierter Kalender](curated-calendar) für Details.
 - **Räume und Ressourcen verwalten** -- Verfolgen Sie buchbare Räume und Ausrüstung und bearbeiten Sie Genehmigungsanfragen. Siehe [Räume & Ressourcen](rooms-resources) für Details.

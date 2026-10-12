@@ -29,7 +29,7 @@ L'onglet Profil contient les informations que votre église voit sur votre dossi
 - **Nom** — Prénom, deuxième prénom et nom de famille.
 - **Contact** — Email et date de naissance.
 - **Adresse** — Rue, ville, état et code postal.
-- **Téléphone** — Numéros de téléphone portable, domicile et travail.
+- **Téléphone** — Numéros de téléphone portable, domicile et travail. Si vous activez les rappels par SMS dans [Préférences de notification](./notification-preferences.md), ils sont envoyés à votre numéro de portable.
 
 Modifiez n'importe quel champ et enregistrez vos modifications à partir de la barre en bas de l'écran.
 

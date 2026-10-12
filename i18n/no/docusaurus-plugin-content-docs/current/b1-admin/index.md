@@ -14,7 +14,7 @@ B1 Admin er menighetens administrasjonspanel. Det gir deg verktøy for å styre 
 
 1. Åpne nettleseren og gå til [admin.b1.church](https://admin.b1.church)
 2. Logg inn med brukernavn og passord
-3. Du havner på **Dashboard**, startsiden din. Her ser du denne ukens gudstjenesteopplegg, hvem som er sjekket inn og tjenestegjør i sanntid, oppgaver som trenger oppmerksomhet (som ventende godkjenninger eller forespørsler om å bli med i grupper), gruppene dine og de åpne oppgavene dine
+3. Du havner på **Dashboard**, startsiden din. Her ser du denne ukens gudstjenesteopplegg, hvem som er sjekket inn og tjenestegjør i sanntid, ting som trenger oppmerksomhet (som ventende godkjenninger eller forespørsler om å bli med i grupper), dine åpne oppgaver og gruppene dine
 
 :::tip
 Ny i B1 Admin? Start med [Introduksjon](./introduction) for en videogjennomgang, og gå deretter til [Innstillinger](./settings/) for å konfigurere menighetsinformasjonen og invitere teamet ditt.
@@ -27,7 +27,7 @@ Dashboard er startsiden din i B1 Admin (`/`). Det er bygget rundt menighetens uk
 - **Denne ukens gudstjeneste** -- navnet og programmet for den gjeldende eller neste planen, med en lenke til hele planen
 - **Direkte status** -- når folk begynner å sjekke inn på søndag, viser siden hvor mange som er i lokalet, hvem som tjenestegjør i denne timen, førstegangsbesøkende og en oversikt rom for rom med kapasitetsfelt
 - **Trenger oppmerksomhet** -- ventende godkjenninger og forespørsler om å bli med i grupper som krever handling
-- **Dine grupper** og **Åpne oppgaver** -- gruppene du tilhører og oppgaver som er tildelt deg eller gruppene dine
+- **Mine oppgaver** og **Mine grupper** -- dine åpne oppgaver (legg til en med **Legg til oppgave**, eller klikk på **Alle oppgaver** for hele listen) og gruppene du tilhører
 
 :::tip
 Alle deler, inkludert Prekener, Kalendere, Mobil og Innstillinger, finner du i [Jump-menyen](./introduction.md#getting-around-with-the-jump-menu) øverst til venstre i B1 Admin. Klikk på den eller trykk **Ctrl+K** (eller **Cmd+K**), og bla deg fram eller begynn å skrive.
@@ -35,20 +35,20 @@ Alle deler, inkludert Prekener, Kalendere, Mobil og Innstillinger, finner du i [
 
 ## Viktige funksjoner
 
-- **[Personer](./people/)** - Administrer menighetsregisteret, legg til medlemmer, rediger data i bulk og hold oversikt over husstander
-- **[Grupper](./groups/)** - Opprett og organiser menighetens grupper med forespørsler om å bli med, medlemsadministrasjon, gruppe-e-post, personlige gruppetekstmeldinger og utskrivbare kontaktlister
-- **[Oppmøte](./attendance/)** - Sett opp avdelinger og samlingstider, følg navngitt oppmøte med utskrivbare klasselister, se hvilke klasser som fortsatt mangler registrert oppmøte, og før enkle opptellinger med utviklingsrapporter
-- **[Gaver](./donations/)** - Registrer gaver i flere valutaer, administrer fond, skriv ut gavebunter (én om gangen eller alle gavebunter i et datointervall) med delsummer per fond og lag giveroppgaver
-- **[Tjeneste](./serving/)** - Koordiner frivillige, lag gudstjenesteplaner, administrer oppgaver og led folk gjennom trinnvise arbeidsflyter som kan sende e-post og tekstmeldinger automatisk
+- **[Personer](./people/)** - Administrer menighetsregisteret, legg til medlemmer, rediger data i bulk, og bla etter husstand eller i en sorterbar tabell. Hver person åpnes på én postside med detaljene til venstre og oppsummeringer av oppmøte, gaver, grupper, notater og skjemaer ved siden av
+- **[Grupper](./groups/)** - Opprett og organiser menighetens grupper med forespørsler om å bli med, medlemsadministrasjon, gruppe-e-post, personlige gruppetekstmeldinger og utskrivbare kontaktlister. Hver gruppe åpnes på én side med handlingene til venstre og oppsummeringer av medlemmer, økter, kalender og helse ved siden av
+- **[Oppmøte](./attendance/)** - Sett opp avdelinger og samlingstider, følg navngitt oppmøte med utskrivbare klasselister, se hvilke klasser som fortsatt mangler registrert oppmøte, før enkle opptellinger med utviklingsrapporter, og gi hver samlingstid en innsjekkingsplan slik at selvbetjent innsjekking åpnes og lukkes av seg selv
+- **[Gaver](./donations/)** - Registrer gaver i flere valutaer, administrer fond, skriv ut gavebunter (én om gangen eller alle gavebunter i et datointervall) med delsummer per fond, før én gave fra en persons postside, og lag giveroppgaver som skrives ut med menighetens logo
+- **[Tjeneste](./serving/)** - Koordiner frivillige, lag gudstjenesteplaner (eller kopier en plan fremover ukentlig i opptil 12 uker), send påminnelser med push, e-post eller tekst, send tekst til alle som er satt opp med **Tekst frivillige**, administrer oppgaver og led folk gjennom trinnvise arbeidsflyter som kan sende e-post og tekstmeldinger automatisk
 - **[Skjemaer](./forms/)** - Bygg egendefinerte skjemaer for påmeldinger og datainnsamling
 - **[Rapporter](./reports/)** - Se rapporter om bursdager, oppmøte og gaver
-- **[Nettsted](./website/)** - Bygg og administrer menighetens nettsted med egendefinerte navigasjonsstiler, eller slå av det offentlige nettstedet og behold bare medlemsportalen
+- **[Nettsted](./website/)** - Bygg og administrer menighetens nettsted med egendefinerte navigasjonsstiler, spor besøk på nettstedet og B1-appen med GA4-ID-en din, eller slå av det offentlige nettstedet og behold bare medlemsportalen
 - **[Prekener](./sermons/)** - Administrer prekenbiblioteket, direktesendinger og en automatisk podkastkanal
 - **[Kalendere](./calendars/)** - Lag kuraterte kalendere, administrer booking av rom og ressurser, og se tilgjengelighet
-- **[Innstillinger](./settings/)** - Konfigurer menighetsinformasjon, region, dato- og telefonnummerformat, tekstmeldinger, roller, tillatelser og egendefinerte personfelt
+- **[Innstillinger](./settings/)** - Konfigurer alt fra én rullende side med en hurtigliste: menighetsinformasjon, region, dato- og telefonnummerformat, tekstmeldinger, roller, tillatelser og egendefinerte personfelt
 
 :::info
-Klikk på spørsmålstegnet øverst til høyre på en hvilken som helst side for rask tilgang til hjelp og dokumentasjon.
+Klikk på spørsmålstegnet øverst til høyre på en hvilken som helst side for rask tilgang til hjelp og dokumentasjon. For å bytte mellom lys og mørk modus åpner du brukermenyen din og velger **Temainnstillinger**.
 :::
 
 For brukerstøtte kan du sende e-post til [support@churchapps.org](mailto:support@churchapps.org).

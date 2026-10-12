@@ -22,28 +22,38 @@ L'enregistrement des donations dans B1 Admin se fait via le système Batches. Vo
 ## Créer un lot et ajouter des donations
 
 1. Dans **B1 Admin**, ouvrez le [menu de saut](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Donations**, et cliquez sur **Batches**.
-2. Cliquez sur **Add Batch**.
+2. Cliquez sur **Add Batch** en haut de la page.
 3. Entrez un nom pour le lot (par exemple, « Sunday Offering - Jan 5 ») et sélectionnez la date. Cliquez sur **Save**.
 4. Votre nouveau lot apparaît dans la liste affichant zéro donation et $0.00.
 5. Cliquez sur le **nom du lot** pour l'ouvrir.
 
 ## Entrer des donations individuelles
 
-1. Dans la page de détail du lot, tapez le nom du donateur dans le **champ de recherche** pour le trouver.
-2. Après avoir sélectionné une personne, le formulaire d'entrée de donation apparaît avec des champs pour **Date**, **Payment Method**, **Fund**, **Amount**, et **Check Number**.
-3. Remplissez les détails et cliquez sur **Add Donation**.
-4. La donation est ajoutée au tableau ci-dessous, et le formulaire se réinitialise pour que vous puissiez en entrer une autre.
+1. Sur la page de détail du lot, le panneau de saisie des dons apparaît à côté de la liste des dons. Sous **Sélectionner une personne ou anonyme**, tapez le nom du donateur dans le champ de recherche pour le trouver, ou cliquez sur **Anonyme**. (Cliquer sur **Add Donation** en haut de la page vous amène à ce panneau.)
+2. Après avoir sélectionné une personne, le formulaire affiche les champs **Date**, **Method** (Check, Cash, Card ou In-Kind), **Fund**, **Notes**, **Amount** et **Check #** (ou **Last 4 digits** pour les dons par carte). Cliquez sur **Change** à côté du nom du donateur pour en choisir un autre.
+3. Remplissez les détails et cliquez sur **Add Donation** (ou appuyez sur Entrée).
+4. La donation est ajoutée à la liste des dons, et le formulaire se réinitialise pour que vous puissiez en entrer une autre.
 
 :::tip
 Vous pouvez rapidement entrer plusieurs donations d'affilée sans quitter la page du lot. Le formulaire se réinitialise après chaque entrée pour que vous puissiez traiter rapidement une pile de chèques ou d'enveloppes.
 :::
 
+## Enregistrer un don depuis la fiche d'une personne {#logging-a-gift-from-a-persons-record}
+
+Pour enregistrer un seul don sans ouvrir de lot, ouvrez la fiche du donateur dans **Personnes** et cliquez sur **Log a gift** (dans le résumé des dons, ou dans la vue des dons de la personne).
+
+1. Définissez la **Date** et le **Montant**.
+2. Choisissez le **Fonds** et la **Méthode** (Check, Cash, Card ou In-Kind), puis saisissez le **Check #** ou les **Last 4 digits** si nécessaire.
+3. Ajoutez éventuellement des **Notes**, puis cliquez sur **Save**.
+
+Le don est enregistré dans le lot de cette date. Si aucun lot n'existe encore pour cette date, un lot est créé automatiquement, nommé d'après la date.
+
 ## Répartir une donation entre plusieurs fonds
 
 Parfois, un seul donateur donne à plus d'un fonds en une seule transaction. Pour gérer cela :
 
-1. Cliquez sur le bouton **Edit** dans la ligne de donation.
-2. Dans le formulaire d'édition, ajoutez des montants à différents fonds. Le total sera automatiquement calculé à partir des montants des fonds individuels.
+1. Sous le panneau de saisie, cliquez sur le lien **éditeur complet de don** (ou cliquez sur **Edit** sur une ligne de don existante).
+2. Dans l'éditeur complet, ajoutez des montants à différents fonds. Le total sera automatiquement calculé à partir des montants des fonds individuels.
 3. Cliquez sur **Save** pour mettre à jour la donation.
 
 :::info
@@ -55,7 +65,7 @@ La répartition des donations entre les fonds est courante quand un donateur éc
 Pour modifier une donation, cliquez sur le bouton **Edit** dans sa ligne du lot. Vous pouvez modifier la date, le montant, le fonds, la méthode de paiement ou tout autre détail. Cliquez sur **Save** une fois terminé.
 
 :::tip
-L'en-tête de la page du lot se met à jour automatiquement pour afficher le nombre total de donations et le montant en dollars combiné à mesure que vous ajoutez ou modifiez les entrées. Utilisez cela pour rapprocher avec votre bordereau de dépôt.
+La ligne sous le nom du lot en haut de la page se met à jour automatiquement pour afficher la date du lot, le nombre de dons et le montant en dollars combiné à mesure que vous ajoutez ou modifiez les entrées. Utilisez cela pour rapprocher avec votre bordereau de dépôt.
 :::
 
 ## Rembourser une donation

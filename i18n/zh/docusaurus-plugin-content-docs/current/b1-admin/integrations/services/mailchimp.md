@@ -37,7 +37,7 @@ title: "Mailchimp"
 
 ## 设置
 
-1. 在 B1Admin 中转到**设置 > 开发人员 > Webhooks > 添加 Webhook**。
+1. 在 B1Admin 中转到**设置 > 开发人员 > Webhooks > 新建 Webhook**。
 2. 将**连接器类型**设置为 **Mailchimp**。
 3. 粘贴您的**Mailchimp API 密钥**和**受众 ID**。密钥存储为加密形式，永远不会再显示。
 4. 相关事件是预先选择的；取消勾选您不想要的（例如保持人员事件开启但跳过小组标签）。

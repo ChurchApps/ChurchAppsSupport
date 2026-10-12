@@ -32,12 +32,13 @@ Vous pouvez personnaliser les couleurs pour les deux modes indépendamment.
 
 1. Dans B1 Admin, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche) et développez **Site web**
 2. Cliquez sur **Apparence**
-3. Faites défiler jusqu'à la section **Styles de navigation**
-4. Cliquez sur **Éditer les styles de navigation**
+3. Dans la liste **Paramètres de style**, cliquez sur **Navigation**
+
+L'éditeur **Style de navigation** comporte deux cartes : **En-tête (solide)** et **En-tête sur le héros (transparent)**.
 
 ## Configuration de la navigation solide
 
-La navigation solide apparaît avec une couleur de fond derrière la barre de navigation. Vous pouvez personnaliser :
+La navigation solide apparaît avec une couleur de fond derrière la barre de navigation. Ces paramètres se trouvent dans la carte **En-tête (solide)**. Vous pouvez personnaliser :
 
 ### Couleur de fond
 
@@ -69,7 +70,7 @@ La navigation solide apparaît avec une couleur de fond derrière la barre de na
 
 ## Configuration de la navigation transparente
 
-La navigation transparente s'affiche sur votre contenu de page sans fond. Vous pouvez personnaliser :
+La navigation transparente s'affiche sur votre contenu de page sans fond. Ces paramètres se trouvent dans la carte **En-tête sur le héros (transparent)**. Vous pouvez personnaliser :
 
 ### Couleur des liens
 
@@ -98,7 +99,7 @@ La navigation transparente n'a pas de paramètre de couleur de fond puisqu'elle 
 
 ## Enregistrement de vos modifications
 
-1. Après avoir configuré vos couleurs, cliquez sur **Enregistrer les styles de navigation**
+1. Après avoir configuré vos couleurs, cliquez sur **Enregistrer la navigation**
 2. Vos modifications s'appliquent immédiatement à votre site web en direct
 3. Visitez votre site web pour voir la navigation dans les deux modes
 
@@ -107,7 +108,7 @@ La navigation transparente n'a pas de paramètre de couleur de fond puisqu'elle 
 Si vous souhaitez revenir aux couleurs par défaut :
 
 1. Désactivez les commutateurs **Remplacer** pour les couleurs personnalisées
-2. Cliquez sur **Enregistrer les styles de navigation**
+2. Cliquez sur **Enregistrer la navigation**
 3. La navigation revient au schéma de couleurs par défaut
 
 Ou cliquez sur **Annuler** pour ignorer toutes les modifications sans les enregistrer.

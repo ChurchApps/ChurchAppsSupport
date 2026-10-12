@@ -22,9 +22,9 @@ Para mais suporte, envie um e-mail para [support@churchapps.org](mailto:support@
 ## Passo a Passo
 
 1. Usando Google Chrome, vá para [admin.b1.church](https://admin.b1.church) e faça login com seu nome de usuário e senha.
-2. Isso o levará ao **Dashboard**, a página inicial do B1.church Admin. Ele mostra o serviço desta semana e quem está marcado e servindo, juntamente com suas tarefas e grupos. Use o **menu Jump** (a barra de pesquisa no canto superior esquerdo, veja abaixo) para alcançar Pessoas, Doações, Website e o resto do aplicativo. Clique no pequeno logotipo da igreja ao lado dele para retornar ao Dashboard a qualquer momento.
+2. Isso o levará ao **Dashboard**, a página inicial do B1.church Admin. Ele mostra o serviço desta semana e quem está marcado e servindo, juntamente com **Minhas tarefas** (suas tarefas abertas) e **Meus Grupos**. Use o **menu Jump** (a barra de pesquisa no canto superior esquerdo, veja abaixo) para alcançar Pessoas, Doações, Website e o resto do aplicativo. Clique no pequeno logotipo da igreja ao lado dele para retornar ao Dashboard a qualquer momento.
 3. Abra o menu Jump e escolha **Settings** para configurar as informações da sua igreja, funções administrativas e outros detalhes.
-4. Clique no **lápis de edição** para configurar as informações da sua igreja.
+4. Clique em **Editar** na seção **Informações da Igreja** para configurar as informações da sua igreja.
 5. De volta no domingo, clique no **ícone de interrogação** no canto superior direito para obter ajuda e tutoriais.
 6. Clique em **View Documentation** para ver uma lista de tutoriais para ajudá-lo a começar com B1.church.
 7. Navegue de volta ao Dashboard e clique na **seta ao lado de sua foto de perfil** e escolha **Switch App**.

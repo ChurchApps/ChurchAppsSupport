@@ -20,11 +20,11 @@ Pinapahintulutan ka ng mga campaign na magsagawa ng fundraising drive para sa is
 
 ## Pagbubukas ng Campaigns
 
-Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), palawakin ang **Donations**, at i-click ang **Campaigns**. Makikita mo ang listahan ng lahat ng campaign kasama ang halaga ng goal, kabuuang na-pledge, at kabuuang naibigay na hanggang ngayon.
+Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), palawakin ang **Donations**, at i-click ang **Campaigns**. Makikita mo ang talahanayan ng lahat ng campaign kasama ang fund, petsa, halaga ng goal, kabuuang na-pledge, at kabuuang naibigay na hanggang ngayon. May buod na linya sa itaas ng talahanayan na nagpapakita ng bilang ng mga campaign at pinagsamang halagang na-pledge at naibigay.
 
 ## Paggawa ng Campaign
 
-1. I-click ang **Add Campaign**.
+1. I-click ang **Add Campaign** sa itaas ng pahina.
 2. Punan ang mga detalye ng campaign:
    - **Name** *(kinakailangan)* — ang pangalang ipapakita para sa campaign na ito (halimbawa, "Building Fund 2026").
    - **Fund** — ang fund ng donasyon na iniuugnay sa campaign na ito.
@@ -34,27 +34,27 @@ Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-j
 
 ## Pagsubaybay sa Progreso
 
-Ipinapakita ng bawat campaign card ang:
+Ipinapakita ng bawat hilera ng campaign ang:
 
 - **Goal** — ang target mong halaga
 - **Pledged** — ang kabuuang halagang ipinangako ng mga miyembro na ibibigay
 - **Given** — ang kabuuang halagang aktwal na naidonasyon sa fund ng campaign na ito sa loob ng panahon ng campaign
-- Isang **progress bar** na nagpapakita kung gaano na kalapit ang narating mo sa goal
+- **Progress** — isang bar at porsyento na nagpapakita kung gaano na kalapit ang narating mo sa goal
 
-I-click ang anumang campaign para buksan ang detalyadong tanaw, na naglilista ng mga indibidwal na pledge at ang katayuan ng pagtupad sa mga ito.
+I-click ang pangalan ng campaign para buksan ang detalyadong tanaw. Ipinapakita nito ang porsyento ng naabot na goal at naglilista ng mga indibidwal na pledge kasama ang ipinangakong halaga at naibigay ng bawat donor, at isang katayuan (**Not Started**, **In Progress**, **Fulfilled**, **Beyond Pledged**, o **Non-Pledged** para sa mga donor na nagbigay nang walang pledge). I-click ang **Export** sa itaas ng detalyadong tanaw para i-download ang listahan ng pledge bilang CSV.
 
 ## Pagdaragdag ng mga Pledge
 
 Ang mga pledge ay mga pangako ng mga miyembro na magbibigay para sa isang campaign. Para magtala ng pledge:
 
 1. Magbukas ng campaign.
-2. I-click ang **Add Pledge**.
+2. I-click ang **Add Pledge** sa itaas ng pahina.
 3. Piliin ang **taong** nagpa-pledge.
 4. Ilagay ang **halaga** ng pledge.
 5. Opsyonal na magtakda ng **petsa** para sa pangako ng pledge.
 6. I-click ang **Save**.
 
-Lumalabas ang mga pledge sa detalye ng campaign at nakadaragdag sa kabuuang **Pledged** sa campaign card.
+Lumalabas ang mga pledge sa detalye ng campaign at nakadaragdag sa kabuuang **Pledged** sa listahan ng campaign. Para baguhin ang pledge, i-click ang **Edit** sa hilera nito.
 
 :::tip
 Magkahiwalay ang mga pledge at ang aktwal na mga donasyon. Ang pledge ay sumusubaybay sa isang pangako; ang donasyon ay nagtatala ng aktwal na handog. Parehong ipinapakita ang mga ito sa campaign para makita mo kung gaano katupad ang mga pledge.
@@ -62,7 +62,7 @@ Magkahiwalay ang mga pledge at ang aktwal na mga donasyon. Ang pledge ay sumusub
 
 ## Pag-edit o Pagtanggal ng Campaign
 
-I-click ang edit icon sa anumang campaign card para baguhin ang pangalan, goal, mga petsa, o fund nito. I-click ang **Delete** para permanenteng alisin ang campaign at ang mga pledge nito. Hindi binubura ng pagtanggal ng campaign ang anumang donasyong naitala sa fund nito.
+I-click ang **Edit** sa anumang hilera ng campaign (o ang **Edit Campaign** sa itaas ng detalyadong tanaw ng campaign) para baguhin ang pangalan, goal, mga petsa, o fund nito. I-click ang **Delete** para permanenteng alisin ang campaign at ang mga pledge nito. Hindi binubura ng pagtanggal ng campaign ang anumang donasyong naitala sa fund nito.
 
 ## Mga Kaugnay na Artikulo
 

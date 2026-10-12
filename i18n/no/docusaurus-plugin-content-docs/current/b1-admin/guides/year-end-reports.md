@@ -25,7 +25,7 @@ Sørg for at alle online donasjoner fra slutten av året er i systemet ditt.
 
 Følg [Stripe-import](../donations/stripe-import.md)-veiledningen for å:
 
-1. Gå til Donasjoner > Batcher > Stripe-import
+1. Gå til Donasjoner > Stripe-import
 2. Velg et datoområde som dekker slutten av året (f.eks. 1. desember - 31. desember)
 3. Klikk Forhåndsvis først for å gjennomgå, deretter Importer manglende for å fullføre
 
@@ -65,7 +65,7 @@ Følg [Donasjonserklæringer](../donations/giving-statements.md)-veiledningen fo
 2. Velg året fra rullegardinmenyen og se over oppsummeringsstatistikken
 3. Velg nedlastingsmetode:
    - **Last ned ZIP** -- individuelle CSV-filer, en per donor
-   - **Skriv ut alt** -- utskrivbar visning med hver erklæring på en ny side
+   - **Skriv ut alt** -- utskrivbar visning med hver erklæring på en ny side, med menighetens logo øverst (hvis du har lastet den opp)
 
 :::tip
 Generer erklæringer tidlig i januar mens postene er friske. Dette gir deg tid til å fange eventuelle problemer før du sender dem ut.

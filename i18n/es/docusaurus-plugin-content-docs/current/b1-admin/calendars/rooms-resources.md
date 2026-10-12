@@ -20,7 +20,7 @@ Las Salas y Recursos te permiten rastrear los espacios y equipos reservables de 
 
 ## Abriendo Salas y Recursos
 
-En B1 Admin, abre el [menú Salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expande **Calendarios**, y haz clic en **Salas y Recursos**. La página tiene cuatro pestañas: **Salas**, **Recursos**, **Bloqueos** y **Plantillas**.
+En B1 Admin, abre el [menú Salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expande **Calendarios**, y haz clic en **Salas y Recursos**. La página tiene cuatro pestañas: **Salas**, **Recursos**, **Bloqueos** y **Plantillas**. El botón de agregar en la parte superior de la página cambia según la pestaña seleccionada, y un cuadro **Find** te permite filtrar la lista actual.
 
 ## Salas
 
@@ -28,7 +28,7 @@ Las salas son espacios físicos que pueden ser reservados junto con eventos del 
 
 ### Agregar una Sala
 
-1. En la pestaña **Salas**, haz clic en **Agregar Sala**.
+1. En la pestaña **Salas**, haz clic en **Agregar Sala** en la parte superior de la página.
 2. Ingresa un **nombre** para la sala.
 3. Opcionalmente establece una **capacidad** (número máximo de personas).
 4. Establece un **Grupo de Aprobación** -- cuando un grupo solicita esta sala, los líderes del grupo elegido son notificados y deben aprobar la reserva. Déjalo en blanco si no se necesita aprobación.
@@ -36,7 +36,7 @@ Las salas son espacios físicos que pueden ser reservados junto con eventos del 
 
 ### Editar o Eliminar una Sala
 
-Haz clic en el icono de edición junto a cualquier sala, haz tus cambios y haz clic en **Guardar**. Usa **Eliminar** para eliminar una sala permanentemente.
+Haz clic en **Edit** junto a cualquier sala, haz tus cambios y haz clic en **Guardar**. Usa **Eliminar** para eliminar una sala permanentemente.
 
 ## Recursos
 

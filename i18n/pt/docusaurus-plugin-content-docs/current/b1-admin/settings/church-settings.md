@@ -21,7 +21,7 @@ A página Church Settings (Configurações da Igreja) é onde você configura as
 ## Editando suas Informações da Igreja
 
 1. No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Settings** (Configurações) e clique em **Settings** (Configurações).
-2. Abra a seção **Church Information** (Informações da Igreja) e clique em seu ícone de edição (lápis).
+2. Na seção **Church Information** (Informações da Igreja), no topo da página, clique em **Edit** (Editar).
 3. Atualize qualquer um dos seguintes campos:
    - **Church Name** (Nome da Igreja) -- O nome exibido em todos os produtos ChurchApps.
    - **Address** (Endereço) -- O endereço físico de sua igreja.
@@ -32,7 +32,7 @@ A página Church Settings (Configurações da Igreja) é onde você configura as
 
 Sua igreja obtém um subdomínio gratuito em **yourchurch.1.church**. Este é o endereço web onde membros e visitantes podem acessar a presença online de sua igreja.
 
-1. Na página Configurações, localize o campo **Subdomain** (Subdomínio).
+1. Na página Configurações, clique em **Edit** (Editar) na seção **Church Information** (Informações da Igreja) e localize o campo **Subdomain** (Subdomínio).
 2. Digite seu subdomínio preferido (por exemplo, "gracechurch" para gracechurch.1.church).
 3. Salve suas alterações.
 
@@ -61,20 +61,20 @@ Escolha qual dia seus calendários começam. O menu suspenso **First Day of Week
 
 A configuração **Region** (Região) controla como datas e horas são escritas em todo o B1. Por padrão, as datas usam o formato dos Estados Unidos (por exemplo, "Sep 28, 2026" (28 de setembro de 2026) e "9/28/2026"). Igrejas fora dos EUA podem mudar para seu próprio formato -- por exemplo, escolher English (United Kingdom) (Inglês (Reino Unido)) mostra "28 Sept 2026" (28 de setembro de 2026) e "28/09/2026" em vez disso.
 
-1. Na página Configurações, encontre o cartão **Region** (Região) e clique para editar.
+1. Na página Configurações, clique em **Region** (Região) na lista à esquerda e depois em **Edit** (Editar) na seção **Region** (Região).
 2. Escolha sua região no menu suspenso **Region** (Região). Cada opção mostra uma amostra de data para que você possa ver exatamente como as datas parecerão.
 3. Clique em **Save** (Salvar).
 
-O cartão Region então mostra sua região selecionada, uma amostra do **Date format** (Formato de Data) e o formato de **Phone numbers** (Números de telefone).
+A seção Region então mostra sua região selecionada, uma amostra do **Date format** (Formato de Data) e o formato de **Phone numbers** (Números de telefone).
 
 ### Formato de Número de Telefone
 
-O mesmo cartão Region tem uma configuração **Phone numbers** (Números de telefone) que controla como os números de telefone são digitados no registro de uma pessoa:
+A mesma seção Region tem uma configuração **Phone numbers** (Números de telefone) que controla como os números de telefone são digitados no registro de uma pessoa:
 
 - **International (with country code)** (Internacional, com código do país) -- o padrão. Os campos de telefone mostram um seletor de bandeira do país e salvam os números com o código do país (por exemplo, +1 918 555 1234).
 - **Local (as typed)** (Local, como digitado) -- os campos de telefone viram caixas de texto simples e salvam os números exatamente como você os digita, sem adicionar código do país (por exemplo, 0701 234 5678). Escolha esta opção se sua igreja escreve os números em formato local e não quer que o B1 adicione um código do país.
 
-Quando **Local** está selecionado, o cartão Region também mostra "Local phone numbers" (Números de telefone locais) ao lado da sua região.
+Quando **Local** está selecionado, a seção Region também mostra "Local phone numbers" (Números de telefone locais) ao lado da sua região.
 
 :::tip
 As mensagens de texto funcionam melhor quando os números incluem o código do país. Se você envia textos pelo B1, mantenha o formato **International**, ou certifique-se de que os números digitados no modo Local incluam o código do país.
@@ -86,7 +86,7 @@ Sua região se aplica a datas e horas em todo o B1 Admin e em seu site B1.church
 
 Conecte um provedor de mensagens de texto para enviar mensagens SMS para uma pessoa ou um grupo inteiro a partir do B1 Admin. Os textos são enviados através de sua própria conta com o provedor, portanto seus preços e limites se aplicam.
 
-1. Na página Configurações, encontre o cartão **Texting** (Mensagens de Texto) e clique para editar.
+1. Na página Configurações, clique em **Texting** (Mensagens de Texto) na lista à esquerda e depois em **Edit** (Editar) na seção **Texting** (Mensagens de Texto).
 2. Escolha um **Provider** (Provedor):
    - **Clearstream** -- digite uma **API Key** (Chave de API). Crie uma em suas Configurações de Conta Clearstream em API Keys.
    - **Text In Church** -- digite uma **API Key** (Chave de API). Peça ao Suporte do Text In Church para acessar o desenvolvedor API primeiro, depois crie uma chave em suas Configurações de Conta > seção API do Desenvolvedor.
@@ -95,7 +95,17 @@ Conecte um provedor de mensagens de texto para enviar mensagens SMS para uma pes
 
 Para parar as mensagens de texto, defina **Provider** (Provedor) como **None** (Nenhum) e salve. Isso remove o provedor salvo.
 
-Uma vez que um provedor está conectado, a equipe com permissão para enviar textos vê um ícone de texto no cabeçalho de um grupo (**Text this group** (Texto neste grupo)) e de uma pessoa com um telefone celular (**Send text message** (Enviar mensagem de texto)). Digite sua mensagem e clique em **Send** (Enviar). O diálogo conta caracteres e segmentos SMS. Para um grupo, mostra quantos membros receberão o texto antes de você enviar:
+### Excluindo Pessoas que Respondem STOP {#opting-out-people-who-reply-stop}
+
+Depois que um provedor é salvo, reabra a seção Texting com **Edit** (Editar). Abaixo das configurações do provedor, um campo somente leitura **Inbound (STOP) webhook URL** (URL do webhook de entrada (STOP)) mostra um endereço web exclusivo da sua igreja. Clique no campo para selecionar o endereço, copie-o e cole-o na configuração de webhook de mensagens de entrada (respostas) do seu provedor de mensagens de texto. Isso funciona com qualquer um dos provedores acima que possa encaminhar respostas recebidas para um webhook.
+
+Depois disso, quando alguém responder **STOP** (ou STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT ou REVOKE) a um dos seus textos, o B1 encontra todas as pessoas cujo número de celular corresponde, as marca como excluídas e desativa seus lembretes por texto. Elas são então ignoradas nos textos de grupo. Outras respostas são ignoradas.
+
+:::info
+Isso usa a mesma configuração de **Hide me from the member directory** (Esconda-me do diretório de membros), portanto as pessoas que respondem STOP também aparecem como **Hidden from directory** (Oculto do diretório) em seu perfil. O campo só aparece enquanto o provedor salvo estiver selecionado -- se você mudar o menu suspenso para outro provedor, salve primeiro para ver a URL novamente.
+:::
+
+Uma vez que um provedor está conectado, a equipe com permissão para enviar textos vê um botão **Text** (Texto) na página de um grupo (**Text this group** (Texto neste grupo)) e de uma pessoa com um telefone celular (**Send text message** (Enviar mensagem de texto)). Digite sua mensagem e clique em **Send** (Enviar). O diálogo conta caracteres e segmentos SMS. Para um grupo, mostra quantos membros receberão o texto antes de você enviar:
 
 - Membros sem telefone celular em arquivo são ignorados.
 - Membros que escolheram **Hide me from the member directory** (Esconda-me do diretório de membros) são contados como optando por não receber e ignorados.
@@ -115,7 +125,7 @@ Os textos também podem sair automaticamente de uma etapa de [fluxo de trabalho]
 
 Por padrão, os arquivos que você carrega em seu site (através de [Files](../website/files.md)) e outras áreas de conteúdo usam armazenamento hospedado gratuito do B1, até 100 MB. Se você precisar de mais espaço, você pode conectar seu próprio armazenamento em nuvem em vez disso -- os novos uploads então vão direto para sua conta sem limite de plataforma.
 
-1. Na página Configurações, encontre o cartão **File Storage** (Armazenamento de Arquivo) e clique para editar.
+1. Na página Configurações, clique em **File Storage** (Armazenamento de Arquivo) na lista à esquerda e depois em **Edit** (Editar) na seção **File Storage** (Armazenamento de Arquivo).
 2. Escolha um provedor: **Google Drive**, **Dropbox**, **OneDrive** ou um **S3-compatible bucket** (bucket compatível com S3) (AWS S3, Cloudflare R2, Backblaze B2, etc.).
 3. Para Google Drive, Dropbox ou OneDrive, clique em **Connect** (Conectar) e entre para autorizar o acesso. Para um bucket compatível com S3, digite sua chave de acesso, segredo, nome do bucket e URL base pública.
 4. Clique em **Save** (Salvar).
@@ -128,7 +138,7 @@ Isso afeta apenas novos uploads para seus Arquivos de Site e áreas de conteúdo
 
 Se você acompanha **Grade** (Série) em crianças e alunos, o B1 pode automaticamente promover todos em uma série em uma data que você escolher (por exemplo, 1º de agosto) em vez de exigir que você edite cada perfil manualmente.
 
-1. Na página Configurações, encontre a opção **Grade Promotion** (Promoção de Série).
+1. Na página Configurações, clique em **Grade Promotion** (Promoção de Série) na lista à esquerda e depois em **Edit** (Editar) na seção **Grade Promotion** (Promoção de Série).
 2. Ligue a chave (ela mostra **Enabled** (Habilitado)) e escolha o **Month** (Mês) e **Day** (Dia) para promover séries a cada ano. Nessa data, todos com uma série se movem para uma série, e os alunos de 12ª série se tornam **Graduated** (Formados).
 3. Salve suas alterações.
 
@@ -136,7 +146,7 @@ Para parar a promoção automática, desligue a chave para que ela mostre **Disa
 
 ## Importar e Exportar
 
-O botão **Import/Export** (Importar/Exportar) no cabeçalho Configurações abre uma ferramenta dedicada em uma nova janela do navegador. Use-o para:
+O link **Import/Export** (Importar/Exportar) abaixo do nome da sua igreja na página Configurações abre uma ferramenta dedicada em uma nova janela do navegador. Use-o para:
 
 - Importar dados de membros de outro sistema de gerenciamento de igrejas.
 - Exportar seus dados do ChurchApps para fins de backup ou migração.

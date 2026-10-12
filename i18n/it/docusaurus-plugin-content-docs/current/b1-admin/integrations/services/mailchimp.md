@@ -37,7 +37,7 @@ La sincronizzazione è **unidirezionale** (B1 → Mailchimp) e tocca solo i camp
 
 ## Configurazione
 
-1. In B1Admin vai a **Settings → Developer → Webhooks → Add Webhook**.
+1. In B1Admin vai a **Settings → Developer → Webhooks → New Webhook**.
 2. Imposta **Connector Type** su **Mailchimp**.
 3. Incolla la tua **chiave API di Mailchimp** e **Audience ID**. La chiave viene archiviata crittografata e non viene mai più visualizzata.
 4. Gli eventi rilevanti sono preselezionati; deseleziona quelli che non desideri (ad esempio, mantieni gli eventi di persona ma salta i tag di gruppo).

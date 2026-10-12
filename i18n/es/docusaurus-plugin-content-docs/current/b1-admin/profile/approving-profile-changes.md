@@ -24,8 +24,8 @@ Cuando un miembro envía un cambio de perfil, aparece como una tarea asignada a 
 
 **Desde el Dashboard (tu página de inicio):**
 1. Inicia sesión en B1 Admin -- el Dashboard se carga automáticamente.
-2. En la sección **Tasks** en el lado derecho, haz clic en la pestaña **Assigned to My Groups**.
-3. Las solicitudes de cambio de perfil pendientes se enumerarán allí.
+2. En la sección **My tasks**, haz clic en **All tasks**. (My tasks solo muestra las tareas abiertas asignadas personalmente a ti.)
+3. Haz clic en la pestaña **Assigned to My Groups**. Las solicitudes de cambio de perfil pendientes se enumerarán allí.
 
 **Desde Serving → My Work:**
 1. Abre el [Menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda de B1 Admin) y expande **Serving**.

@@ -33,7 +33,7 @@ I-click ang isang service para piliin ito at magpatuloy sa susunod na hakbang.
 Pagkatapos pumili ng service, makikita mo ang listahan ng mga miyembro ng iyong sambahayan. Para sa bawat taong dadalo:
 
 1. I-tap ang miyembro ng sambahayan para palawakin ang kanyang entry.
-2. Makikita mo ang mga available na **oras ng service** para sa service na pinili mo.
+2. Makikita mo ang mga available na **oras ng service** para sa service na pinili mo. Kung may check-in schedule na nakatakda ang iyong simbahan para sa isang oras ng service, lalabas lamang ito habang bukas ang check-in para dito (halimbawa, mula 30 minuto bago magsimula ang service hanggang sa maikling panahon pagkatapos nitong matapos).
 3. I-click ang **Select Group** sa tabi ng oras ng service para piliin kung saang grupo i-check in ang tao (gaya ng "Main Worship," "Kids Room 1," o "Youth Group").
 4. Ulitin para sa bawat miyembro ng sambahayan na dadalo.
 
@@ -57,6 +57,8 @@ Kung kailangan mong baguhin ang napiling grupo bago kumpletuhin ang check-in, i-
 
 - Maaari mo lamang i-check in ang mga miyembro ng sambahayan na naka-link sa iyong account. Kung may nawawalang miyembro ng pamilya, hilingin sa administrator ng inyong simbahan na idagdag sila sa iyong sambahayan.
 - Kung walang lumalabas na service sa pahina ng check-in, maaaring wala pang service na naka-configure para sa check-in ang inyong simbahan sa ngayon.
+- Kung pumili ka ng service at makita mo ang "Check-in isn't open for this service right now," wala sa mga oras ng service na iyon ang nasa loob ng check-in window nila sa ngayon. Subukan ulit malapit sa oras ng service.
+- Kung puno o sarado ang kuwartong napili mo, makikita mo ang "A room you picked is full or closed for check-in. Please see a volunteer."
 
 :::warning
 Available lang ang check-in kapag may mga aktibong service na naka-configure ang inyong simbahan. Kung wala kang nakikitang service sa listahan, makipag-ugnayan sa opisina ng simbahan para alamin kung naka-enable ang self check-in.

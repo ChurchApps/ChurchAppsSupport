@@ -24,8 +24,8 @@ title: "프로필 변경 승인"
 
 **Dashboard(홈 페이지)에서:**
 1. B1 Admin에 로그인하세요 -- Dashboard가 자동으로 로드됩니다.
-2. 오른쪽의 **Tasks** 섹션에서 **Assigned to My Groups** 탭을 클릭하세요.
-3. 보류 중인 프로필 변경 요청이 나열됩니다.
+2. **My tasks** 섹션에서 **All tasks**를 클릭하세요. (My tasks에는 나에게 할당된 열린 작업만 나열됩니다.)
+3. **Assigned to My Groups** 탭을 클릭하세요. 보류 중인 프로필 변경 요청이 나열됩니다.
 
 **Serving → My Work에서:**
 1. B1 Admin의 왼쪽 상단에 있는 검색 모음인 [Jump 메뉴](../introduction.md#getting-around-with-the-jump-menu)를 열고 **Serving**을 확장하세요.

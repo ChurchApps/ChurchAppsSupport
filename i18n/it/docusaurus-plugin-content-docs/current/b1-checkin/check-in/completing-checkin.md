@@ -31,6 +31,7 @@ Una volta che hai rivisto il tuo nucleo familiare e hai fatto qualsiasi assegnaz
 Se la tua chiesa ha configurato [limiti di sicurezza](../../b1-admin/attendance/checkin-safety) sulle sue stanze, il server li verifica prima di salvare:
 
 - Se una stanza selezionata è **piena o chiusa**, il check-in non va avanti e l'app nomina la stanza in modo che tu possa sceglierne una diversa.
+- Se l'orario di servizio ha una [pianificazione del check-in](../../b1-admin/attendance/setup#setting-a-check-in-schedule) e la sua finestra di check-in non è aperta in questo momento, anche il check-in nelle stanze di quell'orario di servizio viene rifiutato. La schermata **Can't check in yet** elenca la stanza come "room is full or closed"; tocca **Change Rooms** per scegliere un altro orario di servizio o un altro gruppo.
 - Se una stanza per bambini è **a corto di volontari** per il suo rapporto, l'app mostra un avviso che un membro dello staff può confermare per procedere, o blocca completamente il check-in -- a seconda di come la tua chiesa ha configurato l'applicazione del rapporto.
 
 ## Stampa etichette

@@ -20,7 +20,7 @@ Les **Champs personnalisés** vous permettent de suivre vos propres informations
 
 ## Ouverture des champs personnalisés
 
-Dans B1 Admin, ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), choisissez **Paramètres > Paramètres**, et sélectionnez la fiche **Champs personnalisés**. Vous pouvez également y aller directement à **/settings/custom-fields**. Vous verrez une liste de chaque champ que vous avez défini, affichant son **Nom** et son **Type de champ**. Si vous n'en avez pas encore créé, le panneau lit *« Aucun champ personnalisé n'a été ajouté pour le moment. »*
+Dans B1 Admin, ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), choisissez **Paramètres > Paramètres**, et cliquez sur **Champs personnalisés** dans la liste de gauche pour défiler jusqu'à la section **Champs personnalisés**. Vous pouvez également y aller directement à **/settings/custom-fields**. Vous verrez une liste de chaque champ que vous avez défini, affichant son **Nom** et son **Type de champ**. Si vous n'en avez pas encore créé, le panneau lit *« Aucun champ personnalisé n'a été ajouté pour le moment. »*
 
 ## Ajout d'un champ
 
@@ -55,14 +55,14 @@ Ouvrez un champ pour le modifier et cliquez sur **Supprimer**. Vous serez invit�
 
 ## Remplissage des valeurs sur une personne
 
-Une fois qu'au moins un champ personnalisé existe, ses valeurs vivent juste à côté des détails intégrés sur chaque dossier de personne -- vous les regardez dans **Détails personnels** et les modifiez sur le même formulaire que vous utilisez pour le reste des informations de la personne. Rien d'extra n'apparaît jusqu'à ce que vous ayez défini votre premier champ.
+Une fois qu'au moins un champ personnalisé existe, ses valeurs vivent juste à côté des détails intégrés sur chaque dossier de personne -- vous les regardez à gauche du profil, avec les coordonnées de la personne, et les modifiez sur le même formulaire que vous utilisez pour le reste des informations de la personne. Rien d'extra n'apparaît jusqu'à ce que vous ayez défini votre premier champ.
 
 1. Ouvrez un dossier de personne dans **Personnes**.
-2. Dans la section **Détails personnels**, cliquez sur le bouton **Modifier** (crayon).
+2. Cliquez sur le bouton **Modifier** à gauche du profil, sous les coordonnées de la personne.
 3. Faites défiler la zone **Champs personnalisés** au bas du formulaire de modification et remplissez une valeur pour chaque champ. Chaque champ affiche l'entrée qui correspond à son type -- un sélecteur de date pour les champs Date, une liste déroulante oui/non pour les champs Oui/Non, une liste de choix pour Choix multiples, etc.
 4. Cliquez sur **Enregistrer**. Vos valeurs de champ personnalisé sont enregistrées avec le reste des détails de la personne.
 
-De retour sur le profil, tout champ qui a une valeur apparaît maintenant dans la section **Détails personnels** (les réponses Oui/Non se lisent comme *Oui* ou *Non*, et Choix multiples affiche le libellé de l'option). Les champs laissés vierges sont simplement masqués. Pour supprimer une valeur, modifiez la personne, effacez le champ et enregistrez -- une valeur vide est supprimée du dossier plutôt que stockée en tant que vierge.
+De retour sur le profil, tout champ qui a une valeur apparaît maintenant sous les coordonnées de la personne, au format *Nom du champ : valeur* (les réponses Oui/Non se lisent comme *Oui* ou *Non*, et Choix multiples affiche le libellé de l'option). Les champs laissés vierges sont simplement masqués. Pour supprimer une valeur, modifiez la personne, effacez le champ et enregistrez -- une valeur vide est supprimée du dossier plutôt que stockée en tant que vierge.
 
 :::tip
 Le cas d'usage classique est la sécurité des bénévoles : créez un champ **Date** appelé *Vérification de dossier expire*, enregistrez la date de chaque bénévole, puis construisez une [Liste enregistrée](../people/lists.md) qui signale toute personne dont la date a dépassé.
@@ -85,7 +85,7 @@ Enregistrez tout recherche de champ personnalisé comme une [Liste](../people/li
 
 ## Affichage d'un champ personnalisé en tant que colonne
 
-Pour voir les valeurs d'un champ pour tout le monde à la fois, ajoutez-le en tant que colonne sur la page **Personnes**. Ouvrez le sélecteur de colonnes, basculez vers l'onglet **Personnalisé**, et vérifiez le champ. La valeur de chaque personne apparaît dans sa propre colonne à côté des champs intégrés. Voir [Affichage des champs personnalisés en tant que colonnes](../people/searching-people.md#showing-custom-fields-as-columns).
+Pour voir les valeurs d'un champ pour tout le monde à la fois, ajoutez-le en tant que colonne sur la page **Personnes**. Définissez **Afficher en tant que** sur **Tableau**, cliquez sur l'icône **Sélectionner les colonnes** dans l'en-tête de la page, passez à l'onglet **Personnalisé**, et cochez le champ. La valeur de chaque personne apparaît dans sa propre colonne à côté des champs intégrés. Voir [Affichage des champs personnalisés en tant que colonnes](../people/searching-people.md#showing-custom-fields-as-columns).
 
 ## Ce qui se passe lors d'une fusion
 

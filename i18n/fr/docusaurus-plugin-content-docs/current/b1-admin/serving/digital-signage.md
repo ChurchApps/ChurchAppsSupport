@@ -20,8 +20,8 @@ Envoyez le contenu de votre leçon vers un téléviseur dans un hall ou un coulo
 
 ## Obtenir l'URL du flux
 
-1. Accédez à **Service** et ouvrez le ministère contenant votre type de plan.
-2. Cliquez sur le bouton **Signalisation numérique** (l'icône RSS) sur la page du type de plan.
+1. Accédez à **Service**, sélectionnez le ministère contenant votre type de plan, puis cliquez sur le type de plan pour l'ouvrir.
+2. Cliquez sur **Signalisation numérique** (l'icône de téléviseur) en haut de la page du type de plan.
 3. Copiez l'URL du flux affichée dans la boîte de dialogue.
 
 :::info

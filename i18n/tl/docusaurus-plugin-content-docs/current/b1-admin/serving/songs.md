@@ -20,19 +20,19 @@ Pinamamahalaan ng pahina ng Songs ang inyong library ng mga awit sa pagsamba. It
 
 ## Pag-browse sa Inyong Library ng Kanta
 
-Kapag binuksan ninyo ang pahina ng **Songs**, ipinapakita ang inyong mga kanta bilang mga card. Ipinapakita ng bawat card ang thumbnail na larawan, pamagat, artist, at haba ng kanta. Mag-scroll sa library o gamitin ang search para mahanap ang kailangan ninyo.
+Kapag binuksan ninyo ang pahina ng **Songs**, ipinapakita ang inyong mga kanta sa isang table. Ipinapakita ng bawat row ang thumbnail na larawan, pamagat, artist, at haba ng kanta. Gamitin ang mga kontrol ng pahina sa ilalim ng listahan para mag-navigate sa malaking library, o mag-search para mahanap ang kailangan ninyo.
 
 ## Paghahanap ng mga Kanta
 
-1. I-click ang button na **Search** sa pahina ng Songs.
+1. I-click ang kahon na **Search Songs** sa itaas ng pahina ng Songs.
 2. I-type ang **pamagat** ng kanta o pangalan ng **artist**.
-3. Magfi-filter ang mga resulta habang nagta-type kayo, at ipapakita ang mga tumutugmang kanta mula sa inyong library.
+3. Magfi-filter ang listahan habang nagta-type kayo, at ipapakita ang mga tumutugmang kanta mula sa inyong library at kung ilan ang tumugma. I-click ang **Clear** para ipakitang muli ang lahat ng kanta.
 
 ## Pagdaragdag ng Kanta
 
-1. I-click ang **Add Song** sa pahina ng Songs.
-2. Hanapin sa external na database ng kanta ayon sa pamagat o artist.
-3. Piliin ang kantang nais ninyong idagdag.
+1. I-click ang **Add Song** sa itaas ng pahina ng Songs.
+2. Sa **Search for a Song**, hanapin sa external na database ng kanta ayon sa **Title or Artist**.
+3. Piliin ang kantang nais ninyong idagdag, o i-click ang **Create Manually** kung hindi ninyo ito makita.
 4. Idaragdag ang kanta sa inyong library na may paunang napunan nang pangunahing mga detalye.
 
 :::tip
@@ -48,12 +48,16 @@ Maaaring may kasama ring seksyong **WorshipCommons — free** ang inyong mga res
 
 Tanging ang mga kantang nakapasa sa proseso ng pagsusuri ng WorshipCommons ang lumalabas dito, kaya maaaring mas maliit ang pagpipilian kaysa sa pangunahing database ng kanta.
 
+## Pagbura ng mga Kanta {#deleting-songs}
+
+Lagyan ng check ang kahon sa tabi ng isa o higit pang kanta (o ang kahon sa header para piliin ang bawat kantang ipinapakita), pagkatapos i-click ang **Delete Selected** sa bar na lalabas at kumpirmahin. I-click ang **Clear** para alisin ang pagkakapili.
+
 ## Pagtingin at Pag-edit ng Kanta
 
-I-click ang anumang card ng kanta para buksan ang pahina ng detalye nito. Mula rito maaari ninyong:
+I-click ang pamagat ng kanta para buksan ang pahina ng detalye nito. Makikita sa kaliwa ang pamagat, artist, at mga detalye ng kanta tulad ng album, key, haba, BPM, at meter, kasama ang mga arrangement at external link nito. Mula rito maaari ninyong:
 
-- **I-edit ang mga detalye ng kanta** -- I-update ang pamagat, artist, haba, at iba pang metadata.
-- **Pamahalaan ang mga arrangement** -- Ang bawat kanta ay maaaring magkaroon ng maraming arrangement (halimbawa, iba't ibang key o bersyon). Magdagdag, mag-edit, o mag-alis ng mga arrangement ayon sa kailangan.
+- **I-edit ang mga detalye ng kanta** -- I-click ang **Edit** para i-update ang pamagat, artist, haba, at iba pang metadata. I-click ang **Done** kapag tapos na kayo. Para alisin ang kanta sa inyong library, i-click ang **Edit** at pagkatapos ang **Delete song**.
+- **Pamahalaan ang mga arrangement** -- Ang bawat kanta ay maaaring magkaroon ng maraming arrangement (halimbawa, iba't ibang key o bersyon). I-click ang **Add Arrangement** para gumawa ng isa, at i-click ang pangalan ng arrangement sa ilalim ng **Arrangements** para buksan ito.
 - **Magdagdag ng lyrics** -- Ilagay o i-update ang lyrics para sa bawat arrangement gamit ang ChordPro notation (halimbawa, `[G]Amazing grace`). Ang live preview sa tabi ng editor ay nagre-render ng naka-format na chord chart habang nagta-type kayo, para makita ninyo mismo kung ano ang makikita ng inyong team.
 - **Itakda ang key** -- Tukuyin ang musical key ng bawat arrangement gamit ang key picker sa tabi ng lyrics. Ang pagpapalit ng key ay agad na nagta-transpose ng mga ipinapakitang chord, kapwa sa pahina ng arrangement at kapag binubuksan ang kanta mula sa plano ng service, kaya palaging nakikita ng inyong team ang mga chord sa key na aktwal nilang tinutugtog.
 - **Magdagdag ng mga external link** -- Maglakip ng mga link sa mga resource tulad ng mga YouTube video, chord chart, o sheet music na naka-host sa ibang lugar.

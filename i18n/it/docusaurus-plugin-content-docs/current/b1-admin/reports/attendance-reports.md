@@ -23,7 +23,7 @@ B1 Admin fornisce tre rapporti di presenza per aiutarti a capire come le persone
 
 Il rapporto Attendance Trend mostra come la presenza cambia nel tempo per i tuoi servizi.
 
-1. Vai direttamente a **admin.b1.church/reports/attendanceTrend** nel tuo browser (i rapporti non hanno una voce nel menu di navigazione — aggiungere l'indirizzo ai segnalibri è il modo più semplice per tornare indietro). Lo stesso rapporto è anche nella scheda **Attendance Trend** della pagina Attendance.
+1. Vai direttamente a **admin.b1.church/reports/attendanceTrend** nel tuo browser (i rapporti non hanno una voce nel menu di navigazione — aggiungere l'indirizzo ai segnalibri è il modo più semplice per tornare indietro). Lo stesso rapporto è anche nella pagina Attendance: fai clic su **All years**, quindi scegli la scheda **Attendance Trend**.
 2. Opzionalmente seleziona un **Campus**, **Service**, **Service Time**, o **Group** per filtrare i risultati.
 3. Imposta la **Start Date** e la **End Date**. Per impostazione predefinita il rapporto copre l'anno scorso, da un anno fa ad oggi, e la data di fine è inclusa completamente. Fai clic su **Run Report**.
 4. Il rapporto visualizza un grafico a barre e una tabella delle visite totali per settimana. Ogni settimana è etichettata con la data della domenica di quella settimana, e la colonna **Session Dates** della tabella elenca le date effettive in quella settimana che avevano presenza (ad esempio, "9/27, 9/30").
@@ -34,7 +34,7 @@ Questo rapporto è utile per individuare modelli come cali stagionali, tendenze 
 
 Il rapporto Group Attendance mostra chi ha partecipato a ogni sessione di gruppo in un intervallo di date.
 
-1. Vai direttamente a **admin.b1.church/reports/groupAttendance** nel tuo browser, o apri la scheda **Group Attendance** della pagina Attendance.
+1. Vai direttamente a **admin.b1.church/reports/groupAttendance** nel tuo browser, oppure nella pagina Attendance fai clic su **All years** e scegli la scheda **Group Attendance**.
 2. Opzionalmente seleziona un **Campus** e **Service**.
 3. Imposta la **Start Date** e la **End Date**. Per impostazione predefinita il rapporto copre l'ultima domenica ad oggi, e la data di fine è inclusa completamente.
 4. Fai clic su **Run Report**.

@@ -6,7 +6,7 @@ title: "Lembretes de evento"
 
 <div class="article-intro">
 
-Lembretes de evento notificam automaticamente as pessoas certas antes de um evento acontecer -- por exemplo, "Não perca! O workshop de saúde começa amanhã às 9h". Você configura um lembrete uma vez no evento e B1 o envia conforme agendado através de notificações push e email. Os membros podem controlar quais lembretes recebem de suas próprias [Preferências de Notificação](../../b1-church/getting-started/notification-preferences).
+Lembretes de evento notificam automaticamente as pessoas certas antes de um evento acontecer -- por exemplo, "Não perca! O workshop de saúde começa amanhã às 9h". Você configura um lembrete uma vez no evento e B1 o envia conforme agendado através de notificações push, email e, se sua igreja tiver mensagens de texto configuradas, mensagens de texto. Os membros podem controlar quais lembretes recebem de suas próprias [Preferências de Notificação](../../b1-church/getting-started/notification-preferences).
 
 </div>
 
@@ -31,7 +31,7 @@ Você configura lembretes na seção **Lembretes** do evento.
 3. Defina a **Hora do dia** que o lembrete deve sair (o padrão é **9:00 AM**, no fuso horário local da sua igreja).
 4. Escolha **Quem** deve ser lembrado (veja [Quem recebe lembretes](#quem-recebe-lembretes) abaixo).
 5. Opcionalmente adicione uma **Mensagem**. Deixe em branco para usar a redação padrão ou escreva a sua própria -- você pode incluir `{{eventTitle}}` e será substituído pelo nome do evento.
-6. Escolha os **Canais**: notificação **Push**, **Email** ou ambos.
+6. Escolha os **Canais**: notificação **Push**, **Email** e, se sua igreja tiver um [provedor de mensagens de texto](../settings/church-settings.md#texting) conectado, **Texto**.
 7. Salve o evento.
 
 Conforme você faz alterações, uma **visualização ao vivo** mostra aproximadamente quantas pessoas serão lembradas, quantos inscritos não podem ser alcançados e as próximas vezes de envio programadas -- para que você possa confirmar que o lembrete ficará correto antes de salvar.
@@ -60,18 +60,28 @@ Convidados adicionados apenas por nome (sem um registro de pessoa vinculado) nã
 Os lembretes são enviados **push primeiro, com email como fallback**. Se um membro tiver notificações push ativadas, receberá um push; caso contrário, receberá um email. Os membros escolhem quais canais desejam por tipo de notificação em suas [Preferências de Notificação](../../b1-church/getting-started/notification-preferences).
 :::
 
+## Lembretes por texto {#text-reminders}
+
+O canal **Texto** só aparece quando sua igreja tem um provedor de mensagens de texto conectado. As mensagens são enviadas pelo provedor de mensagens de texto da sua igreja, e cada mensagem pode gerar custo para sua igreja. Elas são enviadas além de qualquer lembrete push ou email, e somente para pessoas que:
+
+- Ativaram **Mensagens de texto** em suas [Preferências de Notificação](../../b1-church/getting-started/notification-preferences), e
+- Têm um número de celular em seu perfil.
+
+Cada mensagem começa com o nome da sua igreja, é mantida em uma única mensagem de texto e termina com "Responda STOP para cancelar." Quem responder STOP deixa de receber mensagens de texto da sua igreja. Para que as respostas STOP cheguem ao B1, cole a **URL do webhook de entrada (STOP)** das suas [configurações de mensagens de texto](../settings/church-settings.md#texting) no webhook de mensagens de entrada do seu provedor.
+
 ## O que os membros podem controlar
 
 Os lembretes sempre respeitam as [Preferências de Notificação](../../b1-church/getting-started/notification-preferences) de cada membro. Um membro pode:
 
-- Desativar **Lembretes de Evento** para push ou email enquanto mantém outras notificações ativadas.
+- Desativar **Lembretes de Evento** para push, email ou texto enquanto mantém outras notificações ativadas.
+- Ativar ou desativar lembretes por texto com **Mensagens de texto**.
 - Definir **horários silenciosos** para que notificações não urgentes esperem até um horário razoável.
 
 Você não pode substituir a escolha de um membro de optar por não receber lembretes de eventos -- isso mantém B1 em conformidade com regras anti-spam e mantém os membros no controle de sua caixa de entrada.
 
 ## Lembretes de serviço
 
-Os voluntários agendados em um plano recebem um **lembrete de serviço** separado com os detalhes do plano e, quando ainda não responderam, botões **Aceitar / Recusar** direto no email. Esses lembretes são configurados no tipo de plano em vez de em um evento de calendário -- veja [Voluntários no Domingo](../guides/sunday-volunteers) para como funcionam a programação e os lembretes de voluntários.
+Os voluntários agendados em um plano recebem um **lembrete de serviço** separado com os detalhes do plano e, quando ainda não responderam, botões **Aceitar / Recusar** direto no email. Esses lembretes são configurados no tipo de plano em vez de em um evento de calendário, e também podem ser enviados por texto -- veja [Lembretes de voluntários](../serving/plans#volunteer-reminders) e [Voluntários no Domingo](../guides/sunday-volunteers) para como funcionam a programação e os lembretes de voluntários.
 
 ## Próximas etapas
 

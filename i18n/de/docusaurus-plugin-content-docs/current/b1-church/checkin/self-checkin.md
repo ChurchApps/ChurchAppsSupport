@@ -33,7 +33,7 @@ Klicken Sie auf einen Gottesdienst, um ihn auszuwählen und zum nächsten Schrit
 Nach Auswahl eines Gottesdienstes wird eine Liste Ihrer Haushaltsangehörigen angezeigt. Für jede Person, die teilnimmt:
 
 1. Tippen Sie auf ein Haushaltsangehörigem, um den Eintrag zu erweitern.
-2. Sie sehen die verfügbaren **Gottesdienstzeiten** für den ausgewählten Gottesdienst.
+2. Sie sehen die verfügbaren **Gottesdienstzeiten** für den ausgewählten Gottesdienst. Wenn Ihre Kirche für eine Gottesdienstzeit einen Anmeldeplan festgelegt hat, wird sie nur angezeigt, während die Anmeldung dafür geöffnet ist (zum Beispiel von 30 Minuten vor dem Gottesdienst bis kurz nach dessen Ende).
 3. Klicken Sie auf **Gruppe auswählen** neben einer Gottesdienstzeit, um zu wählen, in welche Gruppe die Person eingecheckt werden soll (z. B. „Hauptgottesdienst", „Kinderraum 1" oder „Jugendgruppe").
 4. Wiederholen Sie dies für jedes Haushaltsangehörigem, das teilnimmt.
 
@@ -57,6 +57,8 @@ Falls Sie eine Gruppenzuweisung vor Abschluss der Anmeldung ändern müssen, tip
 
 - Sie können nur Haushaltsangehörigem anmelden, die mit Ihrem Konto verknüpft sind. Falls ein Familienmitglied fehlt, bitten Sie Ihren Kirchenadministrator, es zu Ihrem Haushalt hinzuzufügen.
 - Falls auf der Anmeldungsseite keine Gottesdienste angezeigt werden, hat Ihre Kirche möglicherweise noch keine Gottesdienste für die Anmeldung konfiguriert.
+- Wenn Sie einen Gottesdienst auswählen und die Meldung „Check-in isn't open for this service right now“ sehen, liegt derzeit keine der Gottesdienstzeiten dieses Gottesdienstes in ihrem Check-in-Fenster. Versuchen Sie es näher an der Gottesdienstzeit erneut.
+- Wenn ein von Ihnen gewählter Raum voll oder geschlossen ist, sehen Sie: „A room you picked is full or closed for check-in. Please see a volunteer.“
 
 :::warning
 Die Anmeldung ist nur verfügbar, wenn Ihre Kirche aktive Gottesdienste konfiguriert hat. Falls keine Gottesdienste aufgelistet sind, überprüfen Sie mit Ihrem Kirchenbüro, ob die Selbstanmeldung aktiviert ist.

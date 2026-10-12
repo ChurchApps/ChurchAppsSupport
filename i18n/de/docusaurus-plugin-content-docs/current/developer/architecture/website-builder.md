@@ -74,6 +74,8 @@ Der gesamte Baum für eine URL kommt von einem einzelnen anonymen Aufruf – `GE
 
 Das `sermons`-Element ist das konfigurierbarste der Kirchen-Typen: Eine `layout`-Antwort wählt `browse` (der Legacy-Vollbrowser), `grid`, `list` oder `featuredLatest`, wobei `playlistId`, `itemCount`, `showTitles` und `showDates` die Nicht-Browse-Layouts verfeinern.
 
+Das `rawHTML`-Element hat zwei Antworten: `rawHTML` (Markup) und `javascript`. Skripte, die über `innerHTML` eingefügt werden, werden nie ausgeführt. Daher erstellt `RawHTMLElement` jeden `<script>`-Knoten im Markup als neues Element neu. Diese nicht vom Parser eingefügten Knoten sind unter dem `strict-dynamic` der CSP vertrauenswürdig. Eine `javascript`-Antwort, die mit `<` beginnt (ein Anbieter-Snippet mit seinen `<script>`-Tags), wird als Markup geparst und genauso behandelt. Andernfalls läuft sie als einfaches Inline-Skript. B1Admin markiert eine nackte URL im JavaScript-Feld, da eine einzelne URL als No-op-Skript läuft. Das `map`-Element rendert nichts und lädt kein Google-Maps-Skript, wenn kein Maps-API-Schlüssel konfiguriert ist.
+
 ### Renderer (`@churchapps/apphelper`)
 
 Renderer befinden sich in `Packages/apphelper/src/website/components/elementTypes/`, eine Komponente pro Typ, die durch `ElementRegistry.ts` aufgelöst wird – eine zweischichtige Map, wobei `Element.tsx` den Standard-Renderer für alle 35 Typen registriert (`registerDefaultElementRenderer`) und eine Host-App jeden zur Laufzeit überschreiben kann (`registerElementRenderer`) ohne die Packe zu forken.
@@ -137,11 +139,11 @@ Dies ist alles B1App-seitige Rendering über ContentApi-Daten – die API speich
 |---------|--------------|
 | Meta-Beschreibungen | `pages.metaDescription` (≤300 Zeichen) fließt durch `MetaHelper.getMetaData()` in die Next.js `Metadata` (Beschreibung + Open Graph) auf jeder Builder-gerenderten Route. B1Admin's Seiteneinstellungen beinhalten einen KI-Button „Generieren" (siehe unten) |
 | Weiterleitungen | Pro-Kirche `redirects`-Zeilen verwaltet unter `/content/redirects` (`content.edit`, 200-Zeilen-Kappe, normalisierte Pfade). In einer würde-sein-404, B1App's Seite Route löst den Pfad gegen `GET /content/redirects/public/:churchId` auf und gibt ein HTTP 308 via Next's `permanentRedirect` aus; unabgepasste Pfade fallen durch zu `notFound()` |
-| Gebrandmarkte 404 | `not-found.tsx` rendert `BrandedNotFound` mit dem Logo der Kirche, Name und Designmarken statt eines generischen Fehlers |
+| Gebrandmarkte 404 | `not-found.tsx` rendert `BrandedNotFound` mit dem Logo der Kirche, Name und Designmarken statt eines generischen Fehlers. Eine unbekannte `/register/[eventId]`-Route liefert ebenfalls eine echte 404 |
 | Strukturierte Daten | `BlogPosting` JSON-LD auf Blog-Posts; `VideoObject` auf den Pro-Predigtseiten (`/{sdSlug}/sermons/[sermonId]`) und auf Seiten, die ein `sermons`-Element enthalten; `Event` aus Kalender-/Event-Elementen auf Builder-Seiten; schema.org `Event` aus dem `serviceTimes`-Element |
 | Predigt-Seiten | Jede öffentliche Predigt erhält eine crawlbar-Seite unter `/sermons/[sermonId]` mit vollständigen Metadaten – Predigten sind nicht mehr in der Client-Seiten-Browser-Element gesperrt |
-| Analytik | Der Einstellung öffentliche Schlüssel `ga4MeasurementId` (neben Umleitungen in B1Admin verwaltet) injiziert einen Pro-Kirche GA4 gtag via `next/script` |
-| Sitemap & Feeds | Die Pro-Kirche `sitemap.xml`-Route umfasst Builder-Seiten und Blog-URLs; die Blog-Liste bewirbt den RSS-Feed |
+| Analytik | Der Einstellung öffentliche Schlüssel `ga4MeasurementId` (neben Umleitungen in B1Admin verwaltet) injiziert einen Pro-Kirche GA4 gtag via `next/script`. Die B1-App (`/{sdSlug}/mobile`) sendet ihre Seitenaufrufe ebenfalls an diese ID, zusammen mit dem eigenen Tag von ChurchApps, wenn sie eine gültige `G-`-ID ist (GTM-Container-IDs bleiben nur auf der Website). Jeder `gtag('config')`-Aufruf trägt ein `display_mode` von `installed` oder `browser`, basierend auf `navigator.standalone` oder der Medienabfrage `(display-mode: standalone)` (`B1App/src/helpers/mobileAnalytics.ts`) |
+| Sitemap & Feeds | Die Pro-Kirche `sitemap.xml`-Route umfasst Builder-Seiten, Blog-URLs und die 50 neuesten Predigtseiten (mit `<lastmod>` aus dem Veröffentlichungsdatum jeder Predigt). Sie listet auch die eingebauten Seiten `/sermons`, `/groups` und `/volunteer` auf, wenn sie Inhalte haben (öffentliche Gruppen, Anmeldepläne), sofern keine gespeicherte Umleitung diesen Pfad ersetzt. Die Blog-Liste bewirbt den RSS-Feed |
 | Barrierefreiheit | Die öffentliche Chrome rendert einen Skip-Link, der auf das `<main id="main-content">`-Landmarke in jedem Layout-Wrapper zielt |
 
 ## KI-Generierung (AskApi)

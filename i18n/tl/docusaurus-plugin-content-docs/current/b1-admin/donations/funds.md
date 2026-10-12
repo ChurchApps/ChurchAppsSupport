@@ -20,7 +20,7 @@ Ang mga Fund ay nagbibigay-daan sa iyong i-categorize ang mga donasyon ayon sa l
 
 ## Ang Funds Page
 
-Pumunta sa **Donations > Funds** para makita ang listahan ng lahat ng iyong fund. Ipinapakita ng bawat row ang pangalan ng fund at ang status nitong **tax-deductible**, na tumutukoy kung lalabas ang mga donasyon sa fund na iyon sa year-end na [giving statements](giving-statements.md).
+Pumunta sa **Donations > Funds** para makita ang listahan ng lahat ng iyong fund. Ipinapakita ng bawat row ang pangalan ng fund at ang **Tax Status** nito (tax-deductible o non-deductible), na tumutukoy kung lalabas ang mga donasyon sa fund na iyon sa year-end na [giving statements](giving-statements.md).
 
 ## Paggawa ng Bagong Fund
 
@@ -34,7 +34,7 @@ Agad na lalabas ang bagong fund sa iyong listahan at magiging available kapag na
 
 ## Pag-edit at Pagtanggal ng mga Fund
 
-- Para i-edit ang isang fund, i-click ang button na **Edit** sa tabi nito. Puwede mong palitan ang pangalan, i-toggle ang setting na tax-deductible, o i-toggle ang **Visible to Donors** para ipakita o itago ito mula sa donation forms.
+- Para i-edit ang isang fund, i-click ang **Edit** sa hilera nito. Puwede mong palitan ang pangalan, i-toggle ang setting na tax-deductible, o i-toggle ang **Visible to Donors** para ipakita o itago ito mula sa donation forms.
 - Para tanggalin ang isang fund, buksan ang edit form at i-click ang **Delete**.
 
 :::warning
@@ -42,23 +42,23 @@ Ang pagtanggal ng isang fund ay hindi nag-aalis ng mga donasyong dati nang naita
 :::
 
 :::info
-Ang mga fund na nakatago sa mga donor ay nagpapakita ng chip na **Hidden** sa tabi ng kanilang pangalan sa listahang ito. Gumagana pa rin ang mga hidden fund para sa mga donasyong manu-manong nirerecord sa B1 Admin -- hindi lang sila lumalabas bilang opsyon sa public o member donation forms.
+Ang mga fund na nakatago sa mga donor ay nagpapakita ng badge na **Hidden** sa tabi ng kanilang pangalan sa listahang ito. Gumagana pa rin ang mga hidden fund para sa mga donasyong manu-manong nirerecord sa B1 Admin -- hindi lang sila lumalabas bilang opsyon sa public o member donation forms.
 :::
 
 ## Pagtingin sa mga Detalye ng Fund
 
 I-click ang **pangalan ng fund** para buksan ang detail page nito. Ipinapakita ng page na ito ang:
 
-- **Kasaysayan ng donasyon** -- listahan ng lahat ng donasyon sa fund na ito
-- **Date range filter** -- paliitin ang mga resulta sa isang partikular na panahon
-- **Buod na istatistika** -- kabuuang bilang ng donasyon, natatanging donor, at kabuuang halaga
+- **Buod** -- isang linya sa ilalim ng pamagat ng pahina na may bilang ng handog, bilang ng donor, at kabuuang halaga sa dolyar
+- **Date range filter** -- magtakda ng **Start Date** at **End Date** at i-click ang **Filter** para paliitin ang mga resulta sa isang partikular na panahon
+- **Kasaysayan ng donasyon** -- listahan ng mga donasyon sa fund na ito, kasama ang petsa, batch, donor, at halaga. I-click ang **Export** sa itaas ng listahan para i-download ito bilang CSV.
 
 Kapaki-pakinabang ang view na ito kapag kailangan mong mag-report tungkol sa isang partikular na giving initiative o suriin ang progreso patungo sa isang layunin sa pangangalap ng pondo.
 
 ## Pag-sort at Pag-export
 
 - Gamitin ang mga column header para i-sort ang mga fund ayon sa pangalan.
-- I-click ang **Export to CSV** para i-download ang listahan ng iyong fund bilang spreadsheet.
+- I-click ang **Export** sa itaas ng pahina para i-download ang listahan ng iyong fund bilang spreadsheet (CSV).
 
 :::tip
 I-set up ang iyong mga fund bago ka magsimulang [magrecord ng mga donasyon](recording-donations.md). Tinitiyak ng pagkakaroon ng lahat ng fund na maayos na na-categorize ang mga donasyon mula sa simula pa lang.

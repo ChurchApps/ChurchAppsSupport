@@ -22,12 +22,14 @@ Base path: `/doing/plans`
 | GET | `/:id` | JWT | — | ID द्वारा एक योजना प्राप्त करें |
 | GET | `/ids?ids=` | JWT | — | अल्पविराम से अलग की गई IDs द्वारा कई योजनाएं प्राप्त करें |
 | GET | `/types/:planTypeId` | JWT | — | योजना प्रकार द्वारा योजनाएं प्राप्त करें |
+| GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + ministry edit | सेवा अवलोकन **Text Volunteers** जो भेजता है उसका preview: `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }` श्रेणी में असाइन किए गए स्वयंसेवकों के लिए (प्रति व्यक्ति एक, opted-out और बिना नंबर वाले छोड़े गए, साझा नंबर deduplicate किए गए, 200 तक सीमित) |
 | GET | `/presenter` | JWT | — | अगले 7 दिनों की योजनाएं प्राप्त करें (presenter दृश्य) |
 | GET | `/public/current/:planTypeId` | Public | — | किसी योजना प्रकार की वर्तमान योजना प्राप्त करें |
 | GET | `/public/signup/:churchId` | Public | — | स्वयं-साइनअप के लिए खुली योजनाएं, प्रत्येक के साथ उसके स्वयं-साइनअप पद (और Accepted/Unconfirmed असाइनमेंट की `filledCount`) तथा समय। स्वयंसेवकों के नाम शामिल नहीं |
 | GET | `/signup/:planId/volunteers` | JWT | — | योजना के स्वयं-साइनअप पदों के लिए `[{ positionId, names }]` (Accepted/Unconfirmed असाइनी के प्रदर्शन नाम)। जब तक योजना का `showVolunteerNames` चालू न हो, `[]` लौटाता है |
 | POST | `/` | JWT | — | योजनाएं बनाएं या अपडेट करें (एकल ऑब्जेक्ट या array स्वीकार करता है) |
-| POST | `/copy/:id` | JWT | — | पदों, समय, असाइनमेंट, और सेवा क्रम आइटम सहित एक योजना की प्रतिलिपि बनाएं। Body में `copyMode` ("none", "positions", "all") और `copyServiceOrder` (boolean) शामिल हैं। `notes` और `signupDeadlineHours` स्रोत योजना से आगे लाए जाते हैं, जब तक body उन्हें न दे |
+| POST | `/copy/:id` | JWT | Ministry edit | पदों, समय, असाइनमेंट, और सेवा क्रम आइटम सहित एक योजना की प्रतिलिपि बनाएं। Body में `ministryId`, `serviceDate`, `copyMode` ("none", "positions", "all") और `copyServiceOrder` (boolean) शामिल हैं। `targetPlanId` के बिना एक नई योजना बनती है, और `notes`, `signupDeadlineHours`, `showVolunteerNames`, और `autoReplaceOnDecline` स्रोत योजना से आगे लाए जाते हैं, जब तक body उन्हें न दे। `targetPlanId` के साथ, प्रतिलिपि उस मौजूदा योजना को भरती है (कॉलर को उसे संपादित करने में सक्षम होना चाहिए)। B1Admin का **Repeat weekly** विकल्प हर सप्ताह इसे एक बार कॉल करता है, हर बार पिछले सप्ताह बनाई गई योजना से प्रतिलिपि करते हुए |
+| POST | `/textRange` | JWT | `texting.send` + ministry edit | एक तिथि श्रेणी में असाइन किए गए हर स्वयंसेवक को चर्च के texting provider के माध्यम से text भेजें। Body: `{ startDate, endDate, ministryId, planTypeId?, message }` (message 1600 characters तक; merge fields प्रत्येक प्राप्तकर्ता के लिए resolved होते हैं)। Preview counts के साथ `recipientCount`, `successCount`, `failCount`, और `error` (`no_provider` या `insufficient_credits`) लौटाता है जब भेजना जल्दी रुकता है |
 | POST | `/autofill/:id` | JWT | — | किसी योजना के लिए स्वयंसेवक असाइनमेंट स्वतः भरें। Body: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | एक योजना और सभी संबंधित समय, असाइनमेंट, पद, और योजना आइटम हटाएं |
 
@@ -176,10 +178,12 @@ Base path: `/doing/tasks`
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | वर्तमान उपयोगकर्ता के खुले कार्य प्राप्त करें |
 | GET | `/:id` | JWT | — | ID द्वारा एक कार्य प्राप्त करें |
+| GET | `/:id/contact` | JWT | Can view the card | वर्कफ़्लो कार्ड जिस व्यक्ति के बारे में है उसकी संपर्क जानकारी: `{ personId, displayName, mobilePhone, email }`। People तक पहुंच न रखने वाले असाइन किए गए caller को व्यक्ति से संपर्क करने देता है |
 | GET | `/closed` | JWT | — | वर्तमान उपयोगकर्ता के बंद कार्य प्राप्त करें |
 | GET | `/timeline?taskIds=` | JWT | — | अल्पविराम से अलग की गई कार्य IDs द्वारा कार्यों का टाइमलाइन डेटा प्राप्त करें |
 | GET | `/directoryUpdate/:personId` | JWT | — | किसी व्यक्ति के लिए डायरेक्टरी अपडेट कार्य प्राप्त करें |
 | POST | `/` | JWT | — | कार्य बनाएं या अपडेट करें। डायरेक्टरी अपडेट कार्यों को संभालने के लिए `?type=directoryUpdate` जोड़ें (फ़ोटो स्वतः अपलोड करता है) |
+| POST | `/:id/conversation` | JWT | `tasks.edit` या कार्ड असाइनी | कार्ड से notes वार्तालाप संलग्न करें। Body: `{ conversationId }`। जो वार्तालाप पहले संलग्न होता है वही रहता है; बाद के calls कार्ड को अपरिवर्तित लौटाते हैं |
 | POST | `/loadForGroups` | JWT | — | विशिष्ट समूहों के लिए कार्य लोड करें। Body: `{ groupIds: [], status: "Open" }` |
 
 ## Automations

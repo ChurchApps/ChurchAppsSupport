@@ -21,27 +21,29 @@ Sa katapusan ng bawat taon, kailangan ng mga nagbibigay mo ng buod ng kanilang m
 ## Pag-access sa Giving Statements
 
 1. Sa **B1 Admin**, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas) at palawakin ang **Donations**.
-2. I-click ang **Giving Statements**.
+2. I-click ang **Giving Statements**. Bubukas ang pahinang **Batch Giving Statements**.
 
 ## Paggawa ng mga Statement
 
-1. Piliin ang **taon** mula sa dropdown sa itaas ng pahina. Maaari mong piliin ang kasalukuyang taon o alinman sa nakaraang limang taon.
-2. Ipinapakita ng pahina ang buod na estadistika para sa taong iyon, kasama ang:
-   - **Total donors** -- ang bilang ng mga taong nagbigay
-   - **Total donations** -- ang bilang ng mga indibidwal na talaan ng donasyon
-   - **Total amount** -- ang pinagsamang halaga sa dolyar ng lahat ng handog
+1. Sa panel na **Select Year**, piliin ang **Year** mula sa dropdown. Maaari mong piliin ang kasalukuyang taon o alinman sa nakaraang limang taon.
+2. Ipinapakita ng panel na **Summary** sa ibaba nito ang estadistika para sa taong iyon, kasama ang:
+   - **Total Donors** -- ang bilang ng mga taong nagbigay
+   - **Total Donations** -- ang bilang ng mga indibidwal na talaan ng donasyon
+   - **Total Amount** -- ang pinagsamang halaga sa dolyar ng lahat ng handog
 
 ## Pag-download ng mga Statement
 
-May dalawang opsyon ka para maipadala ang mga statement sa mga nagbigay mo:
+Ang panel na **Download Options** ay nagbibigay sa iyo ng dalawang opsyon para maipadala ang mga statement sa mga nagbigay mo:
 
 ### I-download bilang mga CSV File
 
-I-click ang **Download ZIP** para mag-download ng ZIP file na naglalaman ng indibidwal na CSV file para sa bawat nagbigay. Kapaki-pakinabang ito kung gusto mong i-email nang isa-isa ang mga statement o i-import ang mga ito sa ibang sistema.
+Sa ilalim ng **Individual CSV Files**, i-click ang **Download ZIP** para mag-download ng ZIP file na naglalaman ng indibidwal na CSV file para sa bawat nagbigay. Kapaki-pakinabang ito kung gusto mong i-email nang isa-isa ang mga statement o i-import ang mga ito sa ibang sistema.
 
 ### I-print ang Lahat ng Statement
 
-I-click ang **Print All** para magbukas ng napi-print na tanaw ng statement ng bawat nagbigay sa browser mo. Mula rito, gamitin ang print function ng browser mo para ipadala ang mga ito sa printer. Bawat statement ay nagsisimula sa bagong pahina kaya handa na itong tiklupin at i-mail.
+Sa ilalim ng **Printable Statements**, i-click ang **Print All** (ipinapakita nito ang bilang ng mga statement) para magbukas ng napi-print na tanaw ng statement ng bawat nagbigay sa browser mo. Mula rito, gamitin ang print function ng browser mo para ipadala ang mga ito sa printer. Bawat statement ay nagsisimula sa bagong pahina kaya handa na itong tiklupin at i-mail.
+
+Kung nag-upload ka ng **Light Background Logo** sa ilalim ng [Website > Appearance](../website/appearance.md), ito ay ipi-print sa gitna ng itaas ng bawat statement, sa itaas ng pamagat ng statement. Nalalapat ito sa **Print All** at sa statement ng isang nagbigay na ipi-print mula sa kanyang record.
 
 :::tip
 Gawin ang mga statement mo nang maaga sa Enero habang sariwa pa ang mga talaan mo. Doblehin ang pagsusuri na tama ang pagkakamarka ng mga fund mo bilang tax-deductible bago gumawa ng mga statement -- tanging mga donasyon sa mga fund na tax-deductible ang kasama.
@@ -53,7 +55,7 @@ Kasama lamang sa mga giving statement ang mga donasyong nakatalaga sa mga fund n
 
 ## Mga Format ng Resibo para sa Canada, Australia at New Zealand
 
-Ang mga simbahang nasa labas ng Estados Unidos ay maaaring ilipat ang statement sa opisyal na layout ng resibo ng kanilang bansa. Pumunta sa **Settings**, buksan ang seksyong **Giving**, at itakda ang **Statement Format** sa **Canada**, **Australia** o **New Zealand**, pagkatapos ay punan ang mga lalabas na field: ang iyong registration number (CRA registration number, ABN, o NZ charity registration number), ang address ng organisasyon mo, ang pangalan ng taong awtorisadong pumirma ng mga resibo, at para sa Canada, ang lungsod kung saan inilalabas ang mga resibo.
+Ang mga simbahang nasa labas ng Estados Unidos ay maaaring ilipat ang statement sa opisyal na layout ng resibo ng kanilang bansa. I-click ang **Statement format** sa itaas ng pahina ng Giving Statements (o pumunta sa **Settings**, buksan ang seksyong **Giving**), at itakda ang **Statement Format** sa **Canada**, **Australia** o **New Zealand**, pagkatapos ay punan ang mga lalabas na field: ang iyong registration number (CRA registration number, ABN, o NZ charity registration number), ang address ng organisasyon mo, ang pangalan ng taong awtorisadong pumirma ng mga resibo, at para sa Canada, ang lungsod kung saan inilalabas ang mga resibo.
 
 Pagkatapos, taglay na ng mga statement ang pananalitang inaasahan ng iyong tax authority (para sa Canada, "Official Receipt for Income Tax Purposes" kasama ang CRA reference), isang receipt number sa anyong `YEAR-DONORID`, ang eligible na halagang binilang mula lamang sa mga fund na tax-deductible, at hiwalay na linya para sa anumang handog sa mga fund na hindi deductible. Makikita ng mga nagbigay ang parehong bloke ng resibo kapag ini-print nila ang sarili nilang statement mula sa B1.church.
 

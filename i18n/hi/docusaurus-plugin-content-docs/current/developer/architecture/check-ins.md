@@ -49,7 +49,7 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 |----------------|-----------|---------|
 | `campuses` | name, address | यहां deprecated है — campuses को membership module में master किया जाता है (`/membership/campuses`); attendance copy को frozen read-only रखा गया है legacy readers के लिए (`models/Campus.ts`) |
 | `services` | campusId, name | एक recurring gathering, उदाहरण के लिए "Sunday Morning" (`models/Service.ts`) |
-| `serviceTimes` | serviceId, name | एक service के भीतर एक time slot, उदाहरण के लिए "9:00 AM" (`models/ServiceTime.ts`) |
+| `serviceTimes` | serviceId, name, dayOfWeek, startTime, endTime, checkinOpenMinutes, checkinCloseMinutes | एक service के भीतर एक time slot, उदाहरण के लिए "9:00 AM" (`models/ServiceTime.ts`)। शेड्यूल कॉलम वैकल्पिक हैं (migration `tools/migrations/attendance/2026-10-10_service_time_schedule.ts`) और [check-in window](#scheduled-check-in-windows) को संचालित करते हैं |
 | `groupServiceTimes` | groupId, serviceTimeId | Join table: कौन से समूह (classrooms) किन service times पर मिलते हैं (`models/GroupServiceTime.ts`) |
 | `sessions` | groupId, serviceTimeId, sessionDate | एक समूह की एक बैठक एक दिन पर — check-in time पर lazily बनाया जाता है (`models/Session.ts`) |
 | `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | एक दिन पर एक व्यक्ति attending (`models/Visit.ts`)। `checkinType` है `member` / `guest` / `volunteer` (NULL = legacy member), kiosk द्वारा set किया गया है और capacity/ratio gates द्वारा consumed किया गया है |
@@ -110,6 +110,15 @@ Assignments को edit किया जाता है B1Admin में group
 
 - **Hard (always block):** `checkinClosed`, `current + incoming > capacity`, guest count over `guestCapacity`। Batch को `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` के साथ reject करता है — kiosk named room को show करता है।
 - **Ratio (warn या block):** incoming non-volunteers को एक room में जहां `volunteers < minVolunteers`, कोई volunteers नहीं, या `children > volunteers × volunteerRatio`। Severity को per-church setting `ratioEnforcement` follow करता है (`"warn"` default / `"block"`, B1Admin Manage Church में edited → Check-In, `CheckinSettingsEdit.tsx`)। Warn-mode को `409 { warning: true, error: "ratio", … }` return करता है जब तक client को resubmit नहीं करता `acknowledgeWarnings=true` के साथ — वह resubmit kiosk का staff-confirm override है।
+
+### निर्धारित चेक-इन विंडो {#scheduled-check-in-windows}
+
+एक सेवा समय में वैकल्पिक साप्ताहिक शेड्यूल हो सकता है (`dayOfWeek` 0–6, जहाँ 0 = रविवार, `startTime`/`endTime` `HH:mm` के रूप में, `checkinOpenMinutes`, `checkinCloseMinutes`), जिसे B1Admin के **Attendance → Setup** सेवा-समय फ़ॉर्म (`B1Admin/src/attendance/components/ServiceTimeEdit.tsx`, "Check-in Schedule") में संपादित किया जाता है। `CheckinGateHelper.hasSchedule()` किसी सेवा समय को तभी निर्धारित मानता है जब `dayOfWeek` और `startTime` दोनों सेट हों; बिना शेड्यूल वाले समयों पर कभी समय-नियंत्रण नहीं होता। `isServiceTimeOpen()` चर्च के स्थानीय समय में (चर्च के `timeZone` के साथ `DateHelper.toChurchTime`) विंडो की गणना करता है: शुरू होने से `checkinOpenMinutes` पहले से लेकर समाप्त होने के `checkinCloseMinutes` बाद तक (या समाप्ति न होने पर शुरू होने के बाद तक), और आधी रात या सप्ताह की सीमा पार करने वाली विंडो को संभालता है।
+
+विंडो दो स्थानों पर लागू होती है:
+
+- **सूची:** `GET /attendance/servicetimes` हर पंक्ति पर एक गणना किया गया `checkinOpen` boolean लगाता है। B1App का स्व-चेक-इन (`CheckinPage.tsx`) उन समयों को हटाता है जहाँ `checkinOpen === false` है, और जब कोई शेष न रहे तो "Check-in isn't open for this service right now." दिखाता है। B1Checkin अभी इस पर फ़िल्टर नहीं करता।
+- **पोस्टिंग:** `evaluateGates()` के अंदर, क्षमता/अनुपात मूल्यांकन से पहले, `findClosedServiceTimeGroups()` batch को `409 { error: "notOpen", groups: [{ groupId, groupName, reason: "notOpen" }] }` के साथ अस्वीकार करता है यदि किसी लक्षित सत्र का सेवा समय उसकी विंडो से बाहर है। B1Checkin इसे अपनी मौजूदा hard-gate स्क्रीन ("room is full or closed") के माध्यम से दिखाता है।
 
 ### Age/grade eligibility (kiosk-side)
 

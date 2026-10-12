@@ -23,7 +23,7 @@ Workflows bewegen Personen durch eine Reihe von Schritten auf einer visuellen Ta
 
 ## Workflows anzeigen
 
-Öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **Serving** und klicken Sie auf **Workflows**. Sie sehen Ihre Workflows aufgelistet und nach Kategorie gruppiert, wobei aktive Workflows hervorgehoben werden. Klicken Sie auf einen Workflow, um sein Board zu öffnen.
+Öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **Serving** und klicken Sie auf **Workflows**. Ihre Workflows sind in einer Tabelle aufgelistet, die für jeden die **Category** und den **Status** (**Active** oder **Inactive**) anzeigt. Wenn Sie Kategorien verwenden, können Sie die Liste über die Registerkarten oberhalb der Liste nach Kategorie filtern. Klicken Sie auf einen Workflow, um sein Board zu öffnen.
 
 ## Einen Workflow erstellen
 
@@ -51,7 +51,7 @@ Wenn Sie einen Schritt hinzufügen oder bearbeiten, können Sie Folgendes konfig
 
 - **Step Name** – die Spaltenüberschrift (z. B. "Welcome Call" oder "Awaiting Registration").
 - **Due in (days)** – legt automatisch ein Fälligkeitsdatum fest, wenn eine Karte diesen Schritt betritt. Karten, deren Fälligkeitsdatum überschritten ist, werden als **Overdue** gekennzeichnet.
-- **Default assignee** – die Person oder Gruppe, der neue Karten in diesem Schritt automatisch zugewiesen werden.
+- **Default assignee** – die Person oder Gruppe, der neue Karten in diesem Schritt automatisch zugewiesen werden. Ist der Standard-Zuständige eine Person, erhält sie eine Benachrichtigung, dass ihr eine Karte zugewiesen wurde.
 - **Automated actions** – Dinge, die das System von selbst tut, wenn eine Karte ankommt (siehe unten).
 - **Routing** – wohin die Karte geht, wenn sie den Schritt verlässt (siehe [Routing](#routing-cards-with-outcomes-and-conditions)).
 
@@ -140,11 +140,15 @@ Aus der Kartenschublade können Sie:
 - **Send Back** zum vorherigen Schritt oder **Skip** zum nächsten Schritt.
 - **Pin assignment** – behalte denselben Besitzer der Karte bei, während sie zwischen Schritten wechselt. Standardmäßig wird eine Karte auf einen neuen Schritt dem Standard-Bevollmächtigten des Schritts neu zugewiesen; das Anheften behält die aktuelle verantwortliche Person durchgehend bei.
 - **Complete** die Karte, um sie zu beenden, oder wählen Sie eine **Outcome**-Schaltfläche, wenn der Schritt Ergebnisse konfiguriert hat (siehe [Routing](#routing-cards-with-outcomes-and-conditions)).
-- **Add notes** und überprüfen Sie den **history** der Karte – einschließlich eines Protokolls von automatisierten Aktionen, die ausgeführt wurden (E-Mails versendet, Wartezeiten usw.).
+- **Add notes** und überprüfen Sie die **Activity** der Karte – ein Protokoll der automatisierten Aktionen, die ausgeführt wurden (E-Mails versendet, Wartezeiten usw.).
+
+Bei einer Karte für eine Person zeigt die Schublade außerdem deren Mobiltelefonnummer und E-Mail-Adresse als Links, über die Sie direkt anrufen oder eine E-Mail schreiben können, sowie einen Link **View profile**, wenn Sie die Berechtigung haben, Personen anzuzeigen. Die Person, der die Karte zugewiesen ist, sieht Telefonnummer und E-Mail-Adresse auch ohne Zugriff auf Personen.
+
+Notizen werden mit der Karte gespeichert. Jeder, der die Karte öffnen kann – einschließlich der Person oder Gruppe, der sie zugewiesen ist – kann die Notizen lesen und eigene hinzufügen. Wer die Karte nicht öffnen kann, sieht ihre Notizen nicht.
 
 ### Massenaktionen
 
-Wählen Sie die Kontrollkästchen auf mehreren Karten, um mit ihnen zusammen zu arbeiten. Eine Symbolleiste wird angezeigt, mit der Sie alle ausgewählten Karten auf einmal **Complete**, **Snooze**, **Reassign** oder **Move** zu einem anderen Schritt verschieben können.
+Wählen Sie die Kontrollkästchen auf mehreren Karten, um mit ihnen zusammen zu arbeiten. Eine Symbolleiste wird angezeigt, mit der Sie für alle ausgewählten Karten gleichzeitig **Complete**, **Snooze**, **Assign** (neu zuweisen) oder **Move to…** (zu einem anderen Schritt verschieben) ausführen können.
 
 ## Routing-Karten mit Ergebnissen und Bedingungen
 
@@ -162,7 +166,9 @@ Dies ermöglicht es einer Entscheidung, die Person auf verschiedene Wege zu verz
 
 ### Automatisches Routing (bedingt)
 
-Automatische Routen bewegen eine Karte vorwärts **in dem Moment, in dem sie einen Schritt betritt** (und nachdem ihre automatisierten Aktionen abgeschlossen sind), ohne dass jemand klickt, wenn die Person eine Reihe von Bedingungen erfüllt. Fügen Sie eine Route hinzu, wählen Sie den Zielschritt und definieren Sie eine oder mehrere **Bedingungen** (z. B. den Campus einer Person, das Alter oder den Mitgliedschaftsstatus). Eine Route ohne Bedingungen passt zu jedem.
+Automatische Routen bewegen eine Karte vorwärts **in dem Moment, in dem sie einen Schritt betritt** (und nachdem ihre automatisierten Aktionen abgeschlossen sind), ohne dass jemand klickt, wenn die Person eine Reihe von Bedingungen erfüllt. Fügen Sie eine Route hinzu, wählen Sie den Zielschritt und definieren Sie eine oder mehrere **Bedingungen** (z. B. den Campus einer Person, das Alter oder den Mitgliedschaftsstatus). Textfelder können exakt oder mit **contains**, **starts with** oder **ends with** abgeglichen werden. Eine Route ohne Bedingungen passt zu jedem.
+
+Kann die Bedingung einer Route aus irgendeinem Grund nicht geprüft werden, gilt diese Route als nicht passend. Die Karte bleibt im Schritt (oder folgt einer anderen passenden Route), statt festzuhängen.
 
 :::info
 Auf der Tafel zeigt jede Schrittsspalte kleine Anmerkungen, die sein Routing beschreiben – zum Beispiel ein Ergebnis-Label oder "if matches" gefolgt von einem Pfeil zum Zielschritt oder Workflow.
@@ -195,8 +201,8 @@ Werden regelmäßig ausgeführt – täglich, wöchentlich, monatlich oder jähr
 
 Für jeden Trigger können Sie auch folgende Einstellungen vornehmen:
 
-- Der **entry step**, auf dem die neue Karte beginnt (standardmäßig der erste Schritt).
-- **Once per person** – damit dieselbe Person nicht zweimal vom Trigger zu dem Workflow hinzugefügt wird.
+- Der **Starting step**, auf dem die neue Karte landet (standardmäßig der erste Schritt).
+- **Only once per person** – damit dieselbe Person nicht zweimal vom Trigger zu dem Workflow hinzugefügt wird.
 - **Active** – Aktivieren oder deaktivieren Sie den Trigger, ohne ihn zu löschen.
 
 :::tip
@@ -205,7 +211,7 @@ Kombinieren Sie einen **Form · Submitted**-Trigger mit der **New Visitor Follow
 
 ## Meine Karten
 
-Freiwillige und Mitarbeiter müssen nicht durch jedes Board graben, um ihre Arbeit zu finden. Die Seite **My Cards** (verlinkt von der Workflows-Seite) listet alle Karten auf, die dem aktuellen Benutzer über alle Workflows hinweg zugewiesen sind. Wenn Sie auf eine Karte klicken, wird das Board geöffnet, zu dem sie gehört.
+Freiwillige und Mitarbeiter müssen nicht durch jedes Board graben, um ihre Arbeit zu finden. Die Liste **My Cards** auf der Seite **My Work** zeigt alle Karten, die dem aktuellen Benutzer über alle Workflows hinweg zugewiesen sind. Um dorthin zu gelangen, klicken Sie oben auf der Workflows-Seite auf **My Cards** oder öffnen Sie **Dienst > My Work** im Sprungmenü. Wenn Sie auf eine Karte klicken, wird das Board geöffnet, zu dem sie gehört.
 
 ## Reports
 

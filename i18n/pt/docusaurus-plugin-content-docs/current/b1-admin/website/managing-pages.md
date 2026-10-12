@@ -24,20 +24,20 @@ Se sua igreja tem mais de um site (por exemplo, sites separados por campus), use
 
 ## Compreendendo Tipos de Página
 
-A tabela **Pages** lista todas as páginas do seu site junto com seu status:
+A tabela **Pages** lista todas as páginas do seu site por **Path** e **Title**. Há dois tipos de páginas:
 
-- **Generated** -- Páginas que foram criadas automaticamente pelo sistema com base nos dados da sua igreja (por exemplo, uma página Groups, uma página Sermons ou uma página individual para cada sermão em sua biblioteca). Essas páginas se atualizam enquanto seus dados mudam.
+- **Generated** -- Páginas que foram criadas automaticamente pelo sistema com base nos dados da sua igreja (por exemplo, uma página Groups, uma página Sermons ou uma página individual para cada sermão em sua biblioteca). Essas páginas exibem um selo **Generated** e se atualizam enquanto seus dados mudam.
 - **Custom** -- Páginas que você criou com seu próprio conteúdo e layout.
 
-Você pode converter qualquer página gerada automaticamente em uma página personalizada se quiser controle total sobre seu conteúdo e design.
+Você pode converter qualquer página gerada automaticamente em uma página personalizada se quiser controle total sobre seu conteúdo e design. Clique em **Convert** ao lado da página gerada e confirme.
 
 ## Adicionando e Editando Páginas
 
-1. Clique no botão **Add Page** no canto superior direito da tabela Pages.
+1. Clique no botão **Add Page** no canto superior direito da visualização Website Pages.
 2. Escolha um tipo de página (em branco ou um modelo) e nomeie.
 3. Clique em **Edit Content** ao lado de qualquer página para abrir o [editor de página](page-editor), onde você pode adicionar seções, texto, imagens e outros elementos.
-4. Clique em **Page Settings** (o ícone de engrenagem) para atualizar o título da página, caminho de URL e outros metadados.
-5. Use o botão **View live page** para abrir sua página em uma nova janela e ver exatamente como se parecerá para os visitantes.
+4. Clique em **Page Settings** ao lado de uma página para atualizar o título, caminho de URL e outros metadados.
+5. Clique no caminho de uma página na coluna **Path** para abrir a página ao vivo em uma nova aba e ver exatamente como ela se parecerá para os visitantes.
 
 :::tip
 Para sua página inicial, defina o caminho da URL como apenas `/`. Para todas as outras páginas, use um caminho descritivo como `/about` ou `/contact`.
@@ -54,12 +54,12 @@ Abra **Page Settings** em qualquer página para configurar:
 
 ## Gerenciando Navegação
 
-A visualização Website Pages exibe seus links de navegação. Esses links controlam o menu que os visitantes veem no seu site.
+O painel **Main Navigation** à direita da visualização Website Pages exibe seus links de navegação. Esses links controlam o menu que os visitantes veem no seu site.
 
 1. Clique em **Add** para criar um novo link de navegação. Você pode apontá-lo para qualquer página do seu site ou para uma URL externa.
 2. Para reordenar links, arraste e solte-os na ordem desejada. Você também pode aninhar links sob um item pai para criar menus suspensos.
-3. Clique no ícone **Edit** ao lado de qualquer link para alterar seu rótulo, URL ou posição.
-4. Para remover um link da navegação, clique no ícone **Delete**.
+3. Clique em qualquer link para abrir suas **Link Settings**, onde você pode alterar seu texto, URL ou página pai.
+4. Para remover um link da navegação, abra suas **Link Settings** e clique em **Delete**.
 
 :::info
 Remover um link de navegação não deleta a página em si. A página ainda existe e pode ser acessada diretamente por sua URL -- ela simplesmente não aparecerá no menu.
@@ -67,7 +67,7 @@ Remover um link de navegação não deleta a página em si. A página ainda exis
 
 ## Opções do Site
 
-Acima de **Main Navigation** no lado esquerdo da visualização Website Pages estão dois switches que se aplicam a todo seu site de igreja:
+Abaixo dos links do painel **Main Navigation** estão dois switches que se aplicam a todo seu site de igreja:
 
 - **Show Login** -- Mostra um botão **Login** na barra de navegação do seu site.
 - **Disable Public Website** -- Desativa seu site público. Use se sua igreja usar B1 apenas para seu portal de membros, doação e registros, e manter seu site principal em outro lugar.
@@ -96,7 +96,7 @@ Esta configuração se aplica a toda sua igreja. Se você tiver mais de um site,
 
 - Mantenha sua navegação de nível superior em cinco ou seis itens para que visitantes encontrem coisas rapidamente.
 - Use links aninhados para sub-páginas relacionadas (por exemplo, um dropdown "About" com "Our Team", "Beliefs" e "History").
-- Revise sua navegação em mobile clicando em **Mobile Preview** para certificar-se de que funciona bem em telas menores.
+- Revise sua navegação em um celular para certificar-se de que funciona bem em telas menores.
 - Dê às páginas nomes claros e descritivos que ajudem visitantes a entender o que encontrarão.
 
 :::tip
@@ -107,7 +107,8 @@ Você pode adicionar [formulários](../forms/creating-forms.md) a suas páginas 
 
 Se você está construindo seu site do zero, você pode iniciá-lo usando um **Site Template** em vez de criar páginas uma por uma. Um modelo de site cria um conjunto de páginas pré-construídas -- home, about, connect, give e outras -- com conteúdo de espaço reservado e links de navegação já ligados.
 
-1. Na tela Pages, clique no botão **Site Templates** (ao lado do botão **Add Page**).
+1. Na tela Pages, clique no botão **Start From a Template** (ao lado do botão **Add Page**).
+
 2. Navegue pelos templates disponíveis e clique em um para visualizar sua estrutura de página.
 3. Quando encontrar um que gosta, clique em **Apply Template**.
 4. Páginas que não existem já são criadas e adicionadas à sua navegação. Páginas existentes são deixadas como estão.

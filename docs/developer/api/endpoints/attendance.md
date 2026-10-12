@@ -65,11 +65,11 @@ Extends GenericCrudController with CRUD routes `getById`, `post`, and `delete`. 
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | List all service times. Filter by `?serviceId=`. Add `?include=groups` to append group data |
+| GET | `/` | JWT | — | List all service times. Filter by `?serviceId=`. Add `?include=groups` to append group data. Each row includes a computed `checkinOpen` boolean (false only when the service time has a check-in schedule whose window is closed right now, in church-local time) |
 | GET | `/:id` | JWT | — | Get a service time by ID |
 | GET | `/search?campusId=&serviceId=` | JWT | — | Search service times by campus and service |
 | GET | `/public/:churchId` | Public | — | Get the campus → service → time tree for a church. Powers the website builder's `serviceTimes` element |
-| POST | `/` | JWT | Services.Edit | Create or update service times |
+| POST | `/` | JWT | Services.Edit | Create or update service times. Optional schedule fields: `dayOfWeek` (0 = Sunday … 6), `startTime` / `endTime` (`HH:mm`), `checkinOpenMinutes` (before start), `checkinCloseMinutes` (after end). Check-in is only time-gated when both `dayOfWeek` and `startTime` are set |
 | DELETE | `/:id` | JWT | Services.Edit | Delete a service time |
 
 ## Group Service Times
@@ -192,6 +192,8 @@ Authorization: Bearer <token>
   }
 ]
 ```
+
+If a targeted service time has a check-in schedule and its window is closed, nothing is saved and the response is `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }`. Capacity and volunteer-ratio violations also return 409 (`error: "capacity"` or `"ratio"`).
 
 ## Visit Sessions
 

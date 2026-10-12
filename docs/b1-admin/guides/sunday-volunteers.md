@@ -29,7 +29,7 @@ Follow the [Creating Groups](../groups/creating-groups.md) and [Group Members](.
 3. Add volunteers to each group by searching for their name and clicking Add
 
 :::tip
-Designate team leaders using the green key icon on the Members tab. Leaders can manage their own group calendar and coordinate their team.
+Designate team leaders with the star icon (**Make Leader**) in the group's member list (click **All members** on the group page). Leaders can manage their own group calendar and coordinate their team.
 :::
 
 ## Step 2: Build Your Song Library
@@ -52,10 +52,11 @@ Plans are the weekly assignments that tell volunteers where they're needed.
 
 Follow the [Plans](../serving/plans.md) guide to:
 
-1. Navigate to Serving, select your ministry tab
-2. Click "Add Plan" and pick the service date
-3. On the Assignments tab, expand each team and assign volunteers to their positions
+1. Go to Serving, select your ministry tab, and open your plan type
+2. Click **New Plan** and pick the service date. To set up several Sundays at once, copy from the previous plan and enter how many weeks in **Repeat weekly for this many weeks**
+3. In the plan's **Serving Team Assignments** section, add positions and assign volunteers to them
 4. Volunteers will see their assignment status (Requested, Confirmed, Pending)
+5. Turn on [volunteer reminders](../serving/plans.md#volunteer-reminders) for the plan type so volunteers are reminded by push, email, or text before each service
 
 ## Step 4: Build the Service Order
 
@@ -63,8 +64,8 @@ Lay out the flow of your service from start to finish.
 
 Follow the [Service Order](../serving/service-order.md) guide to:
 
-1. Switch to the "Service Order" tab in your plan
-2. Click "Add Item" to add elements: worship songs (from your library), prayers, scripture readings, announcements, sermon, offering, closing
+1. Open your plan and find the **Order of Service** section at the top
+2. Click **Add** to add elements: worship songs (from your library), prayers, scripture readings, announcements, sermon, offering, closing
 3. Drag and drop items to reorder the service flow
 
 :::info
@@ -89,7 +90,7 @@ B1 Admin no longer creates tasks on a repeating schedule. For repeating processe
 
 Let volunteers sign up for positions themselves instead of waiting for admin assignments.
 
-1. When editing a plan, set a **Signup Deadline** (hours before service) to control when self-signup closes. Leave blank for no deadline.
+1. When creating or editing a plan, set a **Signup Deadline** (hours before service) to control when self-signup closes. Leave blank for no deadline. New plans start with the previous plan's deadline.
 2. Optionally toggle **Show volunteer names on signup page** to let volunteers see who else is signed up.
 3. For each position, check the **Allow Self-Signup** checkbox to make it available for self-service.
 4. Add a **Description** to each position so volunteers know what the role involves.

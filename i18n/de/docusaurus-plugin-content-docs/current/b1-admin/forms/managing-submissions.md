@@ -72,7 +72,7 @@ Formularmitglieder mit **Admin**- oder **View Only** (Nur anzeigen)-Rollen könn
 :::
 
 :::tip
-Wenn ein **Stand Alone**-Formular so eingestellt ist, dass es einen Personendatensatz erstellt, werden alle mit einer vorhandenen Person übereinstimmenden Übermittlungen auch auf der eigenen Registerkarte **Forms** (Formulare) dieser Person im Bereich "People" angezeigt – nicht nur Formulare vom Typ "People" (Personen).
+Wenn ein **Stand Alone**-Formular so eingestellt ist, dass es einen Personendatensatz erstellt, werden alle mit einer vorhandenen Person übereinstimmenden Übermittlungen auch im Abschnitt **Forms** (Formulare) auf der Seite dieser Person im Bereich "People" angezeigt – nicht nur Formulare vom Typ "People" (Personen).
 :::
 
 ## Nächste Schritte

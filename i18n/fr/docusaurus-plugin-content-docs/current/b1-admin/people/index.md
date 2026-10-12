@@ -28,13 +28,13 @@ Voici un aperçu des fonctionnalités clés disponibles dans la section Personne
 
 7. **Importer et exporter des données** -- Importer des données de membres à partir d'un fichier CSV ou migrer d'un autre système de gestion d'église comme Breeze. Vous pouvez également exporter votre répertoire en CSV à tout moment. Voir [Importation de données](./importing-data.md) et [Exportation des données](./exporting-data.md).
 
-8. **Gérer les profils** -- Afficher et éditer les profils détaillés de chaque personne, y compris les informations de contact, les membres du ménage, les [appartenances aux groupes](../groups/group-members.md), l' [historique de présence](../attendance/tracking-attendance.md), les [dons](../donations/recording-donations.md) et les [formulaires personnalisés](../forms/creating-forms.md). Survolez un e-mail, une adresse ou un numéro de téléphone dans l'en-tête de profil bleu pour le copier en un seul clic.
+8. **Gérer les profils** -- Afficher et éditer les profils détaillés de chaque personne, y compris les informations de contact, les membres du ménage, les [appartenances aux groupes](../groups/group-members.md), l' [historique de présence](../attendance/tracking-attendance.md), les [dons](../donations/recording-donations.md) et les [formulaires personnalisés](../forms/creating-forms.md). Le nom, les coordonnées et le ménage de la personne se trouvent à gauche du profil, avec des résumés de sa présence, de ses dons, de ses groupes, de ses notes et de ses formulaires à côté. Survolez une adresse ou un numéro de téléphone du domicile ou du travail pour le copier en un seul clic.
 
 9. **Assigner des rôles et des permissions** -- Contrôlez qui sur votre équipe peut accéder à différentes parties de B1 Admin en assignant des rôles. Voir [Attribution de rôles](./roles-permissions.md).
 
 ## Commencer
 
-Pour accéder à la section Personnes, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche de B1 Admin), développez **Personnes**, et cliquez sur **Personnes**. Vous verrez votre répertoire d'église complet avec une barre de recherche en haut et une liste de membres ci-dessous.
+Pour accéder à la section Personnes, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche de B1 Admin), développez **Personnes**, et cliquez sur **Personnes**. Vous verrez votre répertoire d'église classé par ménage, avec une barre de recherche en haut. Utilisez le sélecteur **View as** pour basculer entre la liste **Households** et la vue **Table** des personnes individuelles.
 
 :::tip
 Si vous configurez B1 pour la première fois, commencez par [importer vos données de membres existantes](./importing-data.md). Ensuite, examinez et nettoyez les profils selon vos besoins.

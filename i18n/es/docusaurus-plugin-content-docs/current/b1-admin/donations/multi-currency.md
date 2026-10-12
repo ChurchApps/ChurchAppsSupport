@@ -61,8 +61,8 @@ Cuando un miembro da en línea a través de Stripe:
 
 Para registrar una donación en efectivo o cheque en una moneda diferente:
 
-1. Ve a **Donaciones** en B1 Admin
-2. Haz clic en **Añadir Donación**
+1. Ve a **Donaciones > Lotes** en B1 Admin y abre el lote
+2. Haz clic en **Añadir Donación** en la parte superior de la página del lote
 3. Selecciona la moneda del menú desplegable de moneda
 4. Ingresa el monto en esa moneda
 5. Completa el resto de los detalles de la donación

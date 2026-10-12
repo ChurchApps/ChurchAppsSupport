@@ -21,8 +21,8 @@ Matapos gawin ang inyong account at simbahan, may ilang mahahalagang hakbang na 
 ## Hakbang 1: I-configure ang Impormasyon ng Inyong Simbahan
 
 1. Buksan ang [Jump menu](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas na kaliwa ng B1 Admin), i-expand ang **Settings**, at i-click ang **Settings**.
-2. I-click ang **Edit Settings**.
-3. Ilagay ang **pangalan**, **address**, at **mga detalye ng contact** ng inyong simbahan.
+2. Sa seksyong **Church Information**, i-click ang **Edit**.
+3. Ilagay ang **pangalan**, **subdomain**, at **address** ng inyong simbahan.
 4. I-click ang **Save** para ilapat ang inyong mga pagbabago.
 
 ## Hakbang 2: I-set Up ang Inyong Branding
@@ -47,7 +47,7 @@ Ang pagkakaroon ng handa nang logo at branding bago mag-imbita ng mga miyembro n
 
 Kapag buo na ang inyong team, simulang buuin ang mga pangunahing bahagi ng B1 Admin:
 
-1. **People** -- Magdagdag ng mga miyembro sa direktoryo ng inyong simbahan. Ito ang pundasyon ng lahat ng iba pa, kaya dito magsimula. Maaari kayong magdagdag ng tao nang manu-mano o gamitin ang tool na **Import** mula sa **Settings**.
+1. **People** -- Magdagdag ng mga miyembro sa direktoryo ng inyong simbahan. Ito ang pundasyon ng lahat ng iba pa, kaya dito magsimula. Maaari kayong magdagdag ng tao nang manu-mano o gamitin ang tool na **Import/Export** mula sa **Settings**.
 2. **Groups** -- Gumawa ng mga grupo para sa maliliit na grupo, mga ministry team, mga klase, at iba pang pagtitipon.
 3. **Attendance** -- I-configure ang inyong mga campus, serbisyo, at oras ng serbisyo para masubaybayan ang attendance.
 4. **Donations** -- I-set up ang mga donation fund at ikonekta ang inyong payment gateway (Stripe) para makatanggap ng online giving.

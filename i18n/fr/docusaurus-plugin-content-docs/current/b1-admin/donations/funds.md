@@ -20,7 +20,7 @@ Les fonds vous permettent de catégoriser les dons par objectif afin de suivre l
 
 ## La page Fonds
 
-Allez dans **Dons > Fonds** pour voir la liste de tous vos fonds. Chaque ligne affiche le nom du fonds et son statut **déductible d'impôt**, qui détermine si les dons à ce fonds apparaissent sur les [reçus de dons](giving-statements.md) de fin d'année.
+Allez dans **Dons > Fonds** pour voir la liste de tous vos fonds. Chaque ligne affiche le nom du fonds et son **Statut fiscal** (déductible ou non déductible), qui détermine si les dons à ce fonds apparaissent sur les [reçus de dons](giving-statements.md) de fin d'année.
 
 ## Créer un nouveau fonds
 
@@ -34,7 +34,7 @@ Le nouveau fonds apparaît immédiatement dans votre liste et est disponible lor
 
 ## Modifier et supprimer des fonds
 
-- Pour modifier un fonds, cliquez sur le bouton **Modifier** à côté de celui-ci. Vous pouvez changer le nom, basculer le paramètre déductible d'impôt, ou basculer **Visible par les donateurs** pour l'afficher ou le masquer sur les formulaires de don.
+- Pour modifier un fonds, cliquez sur **Modifier** sur sa ligne. Vous pouvez changer le nom, basculer le paramètre déductible d'impôt, ou basculer **Visible par les donateurs** pour l'afficher ou le masquer sur les formulaires de don.
 - Pour supprimer un fonds, ouvrez le formulaire de modification et cliquez sur **Supprimer**.
 
 :::warning
@@ -42,23 +42,23 @@ La suppression d'un fonds ne supprime pas les dons qui lui étaient précédemme
 :::
 
 :::info
-Les fonds masqués aux donateurs affichent une puce **Masqué** à côté de leur nom dans cette liste. Les fonds masqués fonctionnent toujours pour les dons enregistrés manuellement dans B1 Admin -- ils n'apparaissent simplement pas comme option sur les formulaires de don publics ou pour les membres.
+Les fonds masqués aux donateurs affichent un badge **Masqué** à côté de leur nom dans cette liste. Les fonds masqués fonctionnent toujours pour les dons enregistrés manuellement dans B1 Admin -- ils n'apparaissent simplement pas comme option sur les formulaires de don publics ou pour les membres.
 :::
 
 ## Consulter les détails d'un fonds
 
 Cliquez sur un **nom de fonds** pour ouvrir sa page de détail. Cette page affiche :
 
-- **Historique des dons** -- une liste de tous les dons vers ce fonds
-- **Filtre de période** -- restreindre les résultats à une période spécifique
-- **Statistiques récapitulatives** -- total des dons, donateurs uniques, et montant total en dollars
+- **Résumé** -- une ligne sous le titre de la page indiquant le nombre de dons, le nombre de donateurs et le montant total en dollars
+- **Filtre de période** -- définissez une **Date de début** et une **Date de fin**, puis cliquez sur **Filtrer** pour restreindre les résultats à une période spécifique
+- **Historique des dons** -- une liste des dons à ce fonds avec la date, le lot, le donateur et le montant. Cliquez sur **Exporter** au-dessus de la liste pour la télécharger en CSV.
 
 Cette vue est utile lorsque vous devez produire un rapport sur une initiative de don spécifique ou vérifier la progression vers un objectif de collecte de fonds.
 
 ## Tri et export
 
 - Utilisez les en-têtes de colonnes pour trier les fonds par nom.
-- Cliquez sur **Exporter en CSV** pour télécharger votre liste de fonds sous forme de feuille de calcul.
+- Cliquez sur **Exporter** en haut de la page pour télécharger votre liste de fonds sous forme de feuille de calcul (CSV).
 
 :::tip
 Configurez vos fonds avant de commencer à [enregistrer des dons](recording-donations.md). Avoir tous les fonds en place garantit que les dons sont correctement catégorisés dès le départ.

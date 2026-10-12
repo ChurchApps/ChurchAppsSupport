@@ -28,8 +28,8 @@ Un calendario curado agrega eventos de múltiples grupos en una única vista de 
 
 ## Agregar Grupos a Tu Calendario
 
-1. Haz clic en tu nuevo calendario para abrirlo.
-2. En la sección **Grupos en el Calendario** en el lado derecho, haz clic en **Agregar**.
+1. Haz clic en **Manage Events** en tu nuevo calendario para abrirlo.
+2. Haz clic en **Add Group** encima del calendario. Los grupos que agregues aparecen en la lista **Groups in Calendar** en el lado izquierdo de la página.
 3. Selecciona un grupo del menú desplegable.
 4. Elige si agregar **todos los eventos** de ese grupo o solo **eventos específicos**.
 5. Haz clic en **Guardar**.

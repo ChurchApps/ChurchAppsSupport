@@ -6,7 +6,7 @@ title: "Lagrede lister"
 
 <div class="article-intro">
 
-**Lagrede lister** lar deg lagre en søkeforespørsel under et navn og kjøre den igjen med ett klikk når som helst. Bygg en liste en gang — "Aktive medlemmer på Campus Nord," "Besøkende de siste 90 dagene," eller en avansert filter — og den forblir i **Lagrede lister**-panelet på People-siden slik at du aldri trenger å bygge opp forespørselen igjen.
+**Lagrede lister** lar deg lagre en søkeforespørsel under et navn og kjøre den igjen med ett klikk når som helst. Bygg en liste en gang — "Aktive medlemmer på Campus Nord," "Besøkende de siste 90 dagene," eller en avansert filter — og den forblir øverst på People-siden slik at du aldri trenger å bygge opp forespørselen igjen.
 
 </div>
 
@@ -20,21 +20,22 @@ title: "Lagrede lister"
 ## Lagring av et søk som en liste
 
 1. Kjør et søk på **People**-siden — et raskt søk, et AI-søk, eller et avansert filter-søk.
-2. Når resultater vises, en **Lagre som liste**-knapp (bokmerke-ikon) vises i People-sidesoverskriften.
+2. Når resultater vises, en **Lagre som liste**-knapp vises i sidetoppen på People-siden.
 3. Klikk **Lagre som liste**.
-4. Skriv inn et **navn** for listen (obligatorisk).
-5. Angi eventuelt en **kategori** for å gruppere relaterte lister sammen i **Lagrede lister**-panelet (for eksempel "Utreach" eller "Medlemskap").
-6. Klikk **Lagre**.
+4. Skriv inn et **Listenavn** (obligatorisk).
+5. Angi eventuelt en **kategori** for å gruppere relaterte lister sammen (for eksempel "Utreach" eller "Medlemskap").
+6. Under **Hvem kan se denne listen**, velger du **Alle ansatte** eller **Bare meg**.
+7. Klikk **Lagre**.
 
-Listen lagres nå på kirkens konto og vises i **Lagrede lister**-panelet på venstre siden av People-siden.
+Listen lagres nå og vises som en knapp i raden med lagrede lister øverst på People-siden, ved siden av **Alle**. Lister merket **Bare meg** har et lite låsikon.
 
 :::info
-Lister deles på tvers av kirken — alle med People-tilgang kan se og laste dem. Bare stab med passende tilgang kan omdøpe eller slette lister.
+Lister satt til **Alle ansatte** deles på tvers av kirken — alle med People-tilgang kan se og laste dem. Bare stab med passende tilgang kan endre eller slette lister.
 :::
 
 ## Lasting av en lagret liste
 
-I **Lagrede lister**-panelet på venstre siden av People-siden klikk et listenavn. Søket kjøres igjen umiddelbart med den lagrede forespørselen, oppdaterer resultattabellen.
+Øverst på People-siden klikker du på et listenavn. Søket kjøres igjen umiddelbart med den lagrede forespørselen, og oppdaterer resultatene. Klikk på **Alle** for å gå tilbake til hele registeret.
 
 Lister er gruppert etter kategori (hvis du tildelte en), med ukategoriserte lister vises sist.
 
@@ -44,10 +45,10 @@ Lister er **live queries**, ikke øyeblikksbilder. Hver gang du laster en liste,
 
 ## Omdøping og sletting av lister
 
-Stab med administrer-tilgang kan omdøpe eller slette en liste direkte fra Lagrede lister-panelet.
+Stab med administrer-tilgang kan omdøpe eller slette en liste fra People-siden. Klikk først på listen for å laste den — to ikoner vises da ved siden av navnet:
 
-- Klikk **blyant-ikonet** ved siden av et listenavn for å omdøpe det.
-- Klikk **papirkurv-ikonet** for å slette det (du blir bedt om å bekrefte).
+- Klikk på **Listeinnstillinger**-ikonet (tannhjul) for å gi listen nytt navn eller endre kategori, deling og andre innstillinger.
+- Klikk på **Slett**-ikonet (papirkurv) for å slette den (du blir bedt om å bekrefte).
 
 ## Brukstilfeller
 

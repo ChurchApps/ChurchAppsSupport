@@ -20,7 +20,7 @@ Brukere med tillatelsen Server.Admin får tilgang til serveradministrasjonspanel
 
 1. Logg inn på [admin.b1.church](https://admin.b1.church)
 2. Åpne [Jump-menyen](../b1-admin/introduction.md#getting-around-with-the-jump-menu), utvid **Innstillinger** og klikk på **Server Admin**. (Du kan også gå rett til `admin.b1.church/admin`.)
-3. Server Admin-panelet har seksjoner for Kirker, Brukere, Utgi seg for bruker, Bakgrunnsjobber, Commons, Bruksutvikling, Oversettelsesoppslag, Serverhelse og Databasemigreringer
+3. Server Admin-panelet lister seksjonene sine nedover venstre side i tre grupper: **Katalog** (Kirker, Brukere, Utgi seg for bruker), **Drift** (Bakgrunnsjobber, Commons, Bruksutvikling) og **System** (Oversettelsesoppslag, Serverhelse, Databasemigreringer)
 
 ## Utgi seg for en bruker
 

@@ -29,19 +29,19 @@ Bago kayo makapagsubaybay ng attendance, kailangan ninyong ipaalam sa B1 Admin a
 ## Pag-set Up ng Inyong Attendance Structure
 
 1. Buksan ang **B1 Admin**, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), at i-expand ang **People**.
-2. I-click ang **Attendance**. Ang tab na **Setup** ang napipili bilang default.
-3. I-click ang **Manage Campuses** (kanang itaas ng Setup panel). Dadalhin kayo nito sa **Settings → Campuses**. I-click ang **Add Campus**, ilagay ang pangalan ng inyong lokasyon (opsyonal ang address at time zone), at i-click ang **Save**.
-4. Bumalik sa **People → Attendance → Setup**. Lalabas na ngayon ang inyong campus sa setup table.
+2. I-click ang **Attendance**, pagkatapos ay i-click ang **Setup** sa kaliwang column. Bubukas ang talahanayang **Service structure**, kasama ang mga bilang ng inyong mga campus, oras ng serbisyo, at naka-iskedyul at walang iskedyul na grupo sa itaas.
+3. I-click ang **Manage Campuses** (kanang itaas ng panel na **Service structure**). Dadalhin kayo nito sa **Settings → Campuses**. I-click ang **Add Campus**, ilagay ang pangalan ng inyong lokasyon (opsyonal ang address at time zone), at i-click ang **Save**.
+4. Bumalik sa **People → Attendance** at i-click ang **Setup**. Lalabas na ngayon ang inyong campus sa setup table.
 5. I-click ang **+ button sa column na Service** sa ilalim ng inyong campus. Maglagay ng pangalan ng serbisyo tulad ng "Sunday Service" at i-click ang **Save**.
-6. I-click ang **+ button sa column na Time** sa ilalim ng serbisyo. Maglagay ng oras tulad ng "9:00 AM" at i-click ang **Save**. Ulitin para sa bawat oras ng serbisyo.
-7. Para ikonekta ang isang grupo sa oras ng serbisyo, buksan ang grupo mula sa **People > Groups**, i-click ang **Edit** na lapis, at gamitin ang **Add Service Time** — tingnan ang susunod na seksyon.
+6. I-click ang **+ button sa column na Time** sa ilalim ng serbisyo. Maglagay ng pangalan ng **Service Time** tulad ng "9:00 AM", opsyonal na punan ang [check-in schedule](#setting-a-check-in-schedule), at i-click ang **Save**. Ulitin para sa bawat oras ng serbisyo.
+7. Para ikonekta ang isang grupo sa oras ng serbisyo, buksan ang grupo mula sa **People > Groups**, i-click ang **Edit**, at gamitin ang **Add Service Time** — tingnan ang susunod na seksyon.
 
 ### Pag-enable ng Track Attendance sa Isang Grupo
 
 Bago makapagtala ng attendance ang isang grupo, dapat munang naka-on ang Track Attendance para sa grupong iyon.
 
 1. Sa Jump menu, piliin ang **People > Groups** at piliin ang grupo.
-2. I-click ang icon na **Edit** na lapis.
+2. I-click ang button na **Edit** sa ilalim ng pangalan ng grupo.
 3. Itakda ang **Track Attendance** sa **Yes**.
 4. I-click ang **Save**.
 
@@ -50,7 +50,29 @@ Kung itinalaga ninyo ang grupo sa isang oras ng serbisyo sa nakaraang hakbang, g
 :::
 
 :::tip
-Kung nagpupulong ang isang grupo sa labas ng regular na serbisyo -- tulad ng midweek small group na sumusubaybay ng sarili nitong attendance -- maaari ninyo itong iwanang unscheduled group. Lalabas pa rin ito sa tab na Groups para sa pag-uulat ng attendance.
+Kung nagpupulong ang isang grupo sa labas ng regular na serbisyo -- tulad ng midweek small group na sumusubaybay ng sarili nitong attendance -- maaari ninyo itong iwanang unscheduled group. Lalabas pa rin ito sa ulat na **Group Attendance** para sa pag-uulat ng attendance.
+:::
+
+## Pagtatakda ng Check-in Schedule {#setting-a-check-in-schedule}
+
+Maaaring magkaroon ng opsyonal na check-in schedule ang bawat oras ng serbisyo para awtomatikong magbukas at magsara ang [self check-in](check-in.md) bawat linggo. Kapag walang schedule, nananatiling available ang check-in para sa oras ng serbisyong iyon anumang oras (basta hindi sarado ang kwarto dahil sa ibang dahilan, gaya ng pagiging puno nito).
+
+1. Sa view na **Setup**, i-click ang pangalan ng oras ng serbisyo sa column na **Time** (o magdagdag ng bago).
+2. Sa ilalim ng **Check-in Schedule**, piliin ang **Day** ng linggo kung kailan ginaganap ang oras ng serbisyo.
+3. Itakda ang **Start Time** at, kung nais, ang **End Time**.
+4. Maglagay ng **Open check-in (minutes before start)** -- halimbawa, ang `30` ay magbubukas ng check-in kalahating oras bago magsimula ang serbisyo.
+5. Maglagay ng **Close check-in (minutes after end)** -- halimbawa, ang `15` ay magpapanatiling bukas ng check-in hanggang 15 minuto pagkatapos ng end time. Kung walang itinakdang end time, bibilangin ito mula sa start time.
+6. I-click ang **Save**.
+
+Ginagamit ng schedule ang lokal na oras ng inyong simbahan at inuulit kada linggo. Para alisin ang schedule, itakda ulit ang **Day** sa **No schedule** at i-click ang **Save**. Gumagana lamang ang schedule kapag nakatakda ang **Day** at **Start Time**.
+
+Habang sarado ang check-in window ng isang oras ng serbisyo:
+
+- **Self check-in sa B1.church** ay itinatago ang oras ng serbisyong iyon. Kung walang bukas na oras ang isang serbisyo, makikita ng mga pamilya ang "Check-in isn't open for this service right now."
+- **Ang B1 Checkin kiosk app** ay hindi makukumpleto ang check-in sa mga grupo ng oras ng serbisyong iyon; ipinapakita ng kiosk ang screen na **Can't check in yet** na naglilista ng apektadong kwarto para makapili ng ibang kwarto ang pamilya.
+
+:::tip
+Magtakda ng malawak na open window (halimbawa, 45 minuto bago magsimula) para makapag-check in ang mga pamilyang maagang dumating at mga boluntaryo, at maikling close window para makapag-check in pa rin ang mga huling dumating kahit nagsimula na ang serbisyo.
 :::
 
 ## Pag-edit ng Inyong Setup

@@ -22,9 +22,9 @@ Para sa karagdagang suporta, mag-email sa [support@churchapps.org](mailto:suppor
 ## Walkthrough
 
 1. Gamit ang Google Chrome, pumunta sa [admin.b1.church](https://admin.b1.church) at mag-sign in gamit ang iyong username at password.
-2. Dadalhin ka nito sa **Dashboard**, ang home page ng B1.church Admin. Ipinapakita nito ang serbisyo ngayong linggo at kung sino ang naka-check in at naglilingkod, kasama ang iyong mga gawain at grupo. Gamitin ang **Jump menu** (ang search bar sa kaliwang itaas, tingnan sa ibaba) para makapunta sa People, Donations, Website, at iba pang bahagi ng app. I-click ang maliit na logo ng simbahan sa tabi nito para bumalik sa Dashboard anumang oras.
+2. Dadalhin ka nito sa **Dashboard**, ang home page ng B1.church Admin. Ipinapakita nito ang serbisyo ngayong linggo at kung sino ang naka-check in at naglilingkod, kasama ang **My tasks** (ang iyong mga bukas na gawain) at **My Groups**. Gamitin ang **Jump menu** (ang search bar sa kaliwang itaas, tingnan sa ibaba) para makapunta sa People, Donations, Website, at iba pang bahagi ng app. I-click ang maliit na logo ng simbahan sa tabi nito para bumalik sa Dashboard anumang oras.
 3. Buksan ang Jump menu at piliin ang **Settings** para i-set up ang impormasyon ng inyong simbahan, mga administratibong tungkulin, at iba pang detalye.
-4. I-click ang **edit pencil** para i-set up ang impormasyon ng inyong simbahan.
+4. I-click ang **Edit** sa seksyong **Church Information** para i-set up ang impormasyon ng inyong simbahan.
 5. Pagbalik sa Linggo, i-click ang **icon na tandang pananong** sa kanang itaas para sa tulong at mga tutorial.
 6. I-click ang **View Documentation** para makita ang listahan ng mga tutorial na tutulong sa iyong makapagsimula sa B1.church.
 7. Bumalik sa Dashboard at i-click ang **arrow sa tabi ng iyong profile picture** at piliin ang **Switch App**.

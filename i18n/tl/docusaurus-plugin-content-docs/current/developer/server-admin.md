@@ -20,7 +20,7 @@ Ang mga user na may Server.Admin permission ay maaaring mag-access ng server adm
 
 1. Mag-log in sa [admin.b1.church](https://admin.b1.church)
 2. Buksan ang [Jump menu](../b1-admin/introduction.md#getting-around-with-the-jump-menu), i-expand ang **Settings**, at i-click ang **Server Admin**. (Maaari ka ring dumiretso sa `admin.b1.church/admin`.)
-3. Ang Server Admin panel ay may mga seksyon para sa Churches, Users, Impersonate User, Background Jobs, Commons, Usage Trends, Translation Lookups, Server Health, at Database Migrations
+3. Ang Server Admin panel ay naglilista ng mga seksyon nito sa kaliwang bahagi sa tatlong grupo: **Directory** (Churches, Users, Impersonate User), **Operations** (Background Jobs, Commons, Usage Trends), at **System** (Translation Lookups, Server Health, Database Migrations)
 
 ## User Impersonation
 

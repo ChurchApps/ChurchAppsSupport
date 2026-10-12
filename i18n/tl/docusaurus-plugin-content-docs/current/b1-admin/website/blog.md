@@ -27,7 +27,7 @@ Ang pahinang Blog ay nagbibigay-daan sa iyong mag-publish ng mga balita, update,
 ## Pagdaragdag ng Post
 
 1. I-click ang **Add Post** sa kanang itaas na sulok.
-2. Maglagay ng **Title**. Awtomatikong ginagawa ang isang URL-friendly na slug habang nagta-type ka -- maaari mo itong i-edit nang direkta kung gusto mo ng ibang address.
+2. Maglagay ng **Title**. Awtomatikong ginagawa ang isang URL-friendly na **Web address** (slug) habang nagta-type ka -- maaari mo itong i-edit nang direkta kung gusto mo ng ibang address.
 3. Magdagdag ng **Excerpt** -- isang maikling buod na makikita sa listahan ng mga post, sa meta descriptions, at sa RSS feed. Kung iiwan mo itong blangko, awtomatiko itong gagawin mula sa simula ng nilalaman ng iyong post.
 4. Isulat ang katawan ng post sa **Content** editor gamit ang Markdown. I-click ang **Preview** para makita kung ano ang magiging itsura ng naka-format na post.
 5. Pumili ng **Category** (pumili ng dati na o mag-type ng bago) at opsyonal na **Tags** na pinaghihiwalay ng kuwit.
@@ -49,9 +49,9 @@ Ang bawat post sa listahan ay nagpapakita ng isa sa tatlong estado:
 
 ## Pag-edit, Pag-preview, at Pagtanggal ng mga Post
 
-- I-click ang **Edit** icon sa tabi ng isang post para gumawa ng mga pagbabago.
-- I-click ang **View** icon (makikita sa mga naka-publish na post) para buksan sa bagong tab ang live na post sa iyong website.
-- I-click ang **Delete** icon para permanenteng tanggalin ang isang post.
+- I-click ang **Edit** sa tabi ng isang post para gumawa ng mga pagbabago.
+- I-click ang **View on Site** (makikita sa mga naka-publish na post) para buksan sa bagong tab ang live na post sa iyong website.
+- I-click ang **Delete** para permanenteng tanggalin ang isang post.
 
 ## Paano Nakikita ng mga Bisita ang Iyong Blog
 

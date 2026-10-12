@@ -74,6 +74,8 @@ B1App으로 제공되는 모든 교회 웹사이트는 ContentApi에 저장되�
 
 `sermons` 요소는 교회 유형 중 가장 구성 가능합니다: `layout` 답변이 `browse`(레거시 전체 브라우저), `grid`, `list` 또는 `featuredLatest`를 선택하며, `playlistId`, `itemCount`, `showTitles` 및 `showDates`가 비-브라우저 레이아웃을 정제합니다.
 
+`rawHTML` 요소에는 두 가지 답변이 있습니다: `rawHTML`(마크업)과 `javascript`. `innerHTML`로 삽입된 스크립트는 실행되지 않으므로, `RawHTMLElement`는 마크업의 모든 `<script>` 노드를 새 요소로 다시 만듭니다. 이 파서가 삽입하지 않은 노드는 CSP의 `strict-dynamic` 하에서 신뢰됩니다. `<`로 시작하는 `javascript` 답변(`<script>` 태그가 포함된 채 붙여넣은 공급업체 스니펫)은 마크업으로 구문 분석되어 같은 처리를 받습니다. 그렇지 않으면 일반 인라인 스크립트로 실행됩니다. B1Admin은 JavaScript 상자의 단독 URL을 표시합니다. 단독 URL은 아무 작업도 하지 않는 스크립트로 실행되기 때문입니다. `map` 요소는 Google Maps API 키가 구성되지 않은 경우 아무것도 렌더링하지 않으며 Google Maps 스크립트도 로드하지 않습니다.
+
 ### 렌더러 (`@churchapps/apphelper`)
 
 렌더러는 `Packages/apphelper/src/website/components/elementTypes/`에 있으며, 유형당 하나의 컴포넌트, `ElementRegistry.ts`를 통해 해석됩니다. 이는 2계층 맵입니다. `Element.tsx`는 모든 35가지 유형에 대한 기본 렌더러를 등록하고(`registerDefaultElementRenderer`), 호스트 앱은 패키지를 포킹하지 않고 런타임에 그 중 하나를 오버라이드할 수 있습니다(`registerElementRenderer`).
@@ -137,11 +139,11 @@ B1App으로 제공되는 모든 교회 웹사이트는 ContentApi에 저장되�
 |---------|--------------|
 | 메타 설명 | `pages.metaDescription`(≤300자)은 `MetaHelper.getMetaData()`를 통해 Next.js `Metadata`(설명 + Open Graph)로 모든 빌더 렌더링 경로로 흐릅니다. B1Admin의 페이지 설정에는 AI "생성" 버튼이 포함됩니다(아래 참고) |
 | 리디렉션 | `/content/redirects`에서 관리되는 교회별 `redirects` 행(`content.edit`, 200행 상한, 정규화된 경로). 404가 될 경우 B1App의 페이지 경로는 `GET /content/redirects/public/:churchId`에 대해 경로를 해석하고 Next의 `permanentRedirect`를 통해 HTTP 308을 발행합니다. 일치하지 않는 경로는 `notFound()`로 넘어갑니다 |
-| 브랜드 404 | `not-found.tsx`는 일반적인 오류 대신 교회의 로고, 이름 및 테마를 사용하여 `BrandedNotFound`를 렌더링합니다 |
+| 브랜드 404 | `not-found.tsx`는 일반적인 오류 대신 교회의 로고, 이름 및 테마를 사용하여 `BrandedNotFound`를 렌더링합니다. 알 수 없는 `/register/[eventId]`도 실제 404를 반환합니다 |
 | 구조화된 데이터 | 블로그 게시물의 `BlogPosting` JSON-LD; 설교 페이지(`/{sdSlug}/sermons/[sermonId]`) 및 `sermons` 요소를 포함하는 페이지의 `VideoObject`; 빌더 페이지의 달력/이벤트 요소에서 `Event`; `serviceTimes` 요소의 schema.org `Event` |
 | 설교 페이지 | 모든 공개 설교는 `/sermons/[sermonId]`에서 완전한 메타데이터가 있는 크롤 가능한 페이지를 가져옵니다. 설교는 더 이상 클라이언트 측 브라우저 요소 내에 잠기지 않습니다 |
-| 분석 | 공개 설정 키 `ga4MeasurementId`(B1Admin의 리디렉션 다음에 관리됨)은 `next/script`를 통해 교회별 GA4 gtag를 주입합니다 |
-| 사이트맵 및 피드 | 교회별 `sitemap.xml` 경로에는 빌더 페이지 및 블로그 URL이 포함됩니다. 블로그 나열은 RSS 피드를 광고합니다 |
+| 분석 | 공개 설정 키 `ga4MeasurementId`(B1Admin의 리디렉션 다음에 관리됨)은 `next/script`를 통해 교회별 GA4 gtag를 주입합니다. B1 앱(`/{sdSlug}/mobile`)도 유효한 `G-` ID인 경우 ChurchApps 자체 태그와 함께 페이지뷰를 해당 ID로 보내며(GTM 컨테이너 ID는 웹사이트 전용), 각 `gtag('config')`에는 `navigator.standalone` 또는 `(display-mode: standalone)` 미디어 쿼리에 따라 `installed` 또는 `browser`의 `display_mode`가 포함됩니다(`B1App/src/helpers/mobileAnalytics.ts`) |
+| 사이트맵 및 피드 | 교회별 `sitemap.xml` 경로에는 빌더 페이지, 블로그 URL, 그리고 최근 설교 페이지 50개(각 설교의 게시일에서 가져온 `<lastmod>` 포함)가 포함됩니다. 콘텐츠가 있는 경우(공개 그룹, 자원봉사 등록 계획) 내장 `/sermons`, `/groups`, `/volunteer` 페이지도 나열하며, 저장된 리디렉션이 해당 경로를 대체하는 경우는 제외합니다. 블로그 나열은 RSS 피드를 광고합니다 |
 | 접근성 | 공개 크롬은 모든 레이아웃 래퍼의 `<main id="main-content">` 랜드마크를 대상으로 하는 건너뛰기 링크를 렌더링합니다 |
 
 ## AI 생성 (AskApi)

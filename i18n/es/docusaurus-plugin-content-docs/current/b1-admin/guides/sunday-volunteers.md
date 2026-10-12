@@ -29,7 +29,7 @@ Sigue las guías [Crear Grupos](../groups/creating-groups.md) y [Miembros del Gr
 3. Agrega voluntarios a cada grupo buscando su nombre y haciendo clic en Agregar
 
 :::tip
-Designa líderes de equipo usando el icono de llave verde en la pestaña Miembros. Los líderes pueden administrar el calendario de su propio grupo y coordinar su equipo.
+Designa líderes de equipo con el icono de estrella (**Make Leader**) en la lista de miembros del grupo (haz clic en **All members** en la página del grupo). Los líderes pueden administrar el calendario de su propio grupo y coordinar su equipo.
 :::
 
 ## Paso 2: Construye tu Biblioteca de Canciones
@@ -52,10 +52,11 @@ Los planes son las asignaciones semanales que dicen a los voluntarios dónde se 
 
 Sigue la guía [Planes](../serving/plans.md) para:
 
-1. Navega a Servicio, selecciona tu pestaña de ministerio
-2. Haz clic en "Agregar Plan" y elige la fecha del servicio
-3. En la pestaña Asignaciones, expande cada equipo y asigna voluntarios a sus posiciones
+1. Ve a Servicio, selecciona tu pestaña de ministerio y abre tu tipo de plan
+2. Haz clic en **New Plan** y elige la fecha del servicio. Para configurar varios domingos a la vez, copia desde el plan anterior e ingresa cuántas semanas en **Repeat weekly for this many weeks**
+3. En la sección **Serving Team Assignments** del plan, agrega posiciones y asigna voluntarios a ellas
 4. Los voluntarios verán su estado de asignación (Solicitado, Confirmado, Pendiente)
+5. Activa los [recordatorios para voluntarios](../serving/plans.md#volunteer-reminders) para el tipo de plan, para que los voluntarios reciban un recordatorio por notificación push, correo electrónico o texto antes de cada servicio
 
 ## Paso 4: Construye el Orden del Servicio
 
@@ -63,8 +64,8 @@ Diseña el flujo de tu servicio de principio a fin.
 
 Sigue la guía [Orden del Servicio](../serving/service-order.md) para:
 
-1. Cambia a la pestaña "Orden del Servicio" en tu plan
-2. Haz clic en "Agregar Elemento" para agregar elementos: canciones de adoración (de tu biblioteca), oraciones, lecturas de escritura, anuncios, sermón, ofrenda, cierre
+1. Abre tu plan y busca la sección **Order of Service** en la parte superior
+2. Haz clic en **Add** para agregar elementos: canciones de adoración (de tu biblioteca), oraciones, lecturas de escritura, anuncios, sermón, ofrenda, cierre
 3. Arrastra y suelta elementos para reordenar el flujo del servicio
 
 :::info
@@ -89,7 +90,7 @@ B1 Admin ya no crea tareas en horarios repetidos. Para procesos repetidos que mu
 
 Permite que los voluntarios se registren para posiciones ellos mismos en lugar de esperar asignaciones de administrador.
 
-1. Al editar un plan, establece una **Fecha Límite de Registro** (horas antes del servicio) para controlar cuándo se cierra el registro automático. Déjalo en blanco para sin límite.
+1. Al crear o editar un plan, establece una **Fecha Límite de Registro** (horas antes del servicio) para controlar cuándo se cierra el registro automático. Déjalo en blanco para sin límite. Los planes nuevos empiezan con la fecha límite del plan anterior.
 2. Opcionalmente activa **Mostrar nombres de voluntarios en la página de registro** para permitir que los voluntarios vean quién más está registrado.
 3. Para cada posición, marca la casilla **Permitir Registro Automático** para hacerla disponible para autoservicio.
 4. Agrega una **Descripción** a cada posición para que los voluntarios sepan en qué consiste el rol.

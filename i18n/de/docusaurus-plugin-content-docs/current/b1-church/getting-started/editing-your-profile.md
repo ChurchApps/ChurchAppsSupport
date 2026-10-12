@@ -29,7 +29,7 @@ Die Registerkarte Profil enthält die Informationen, die Ihre Gemeinde auf Ihrer
 - **Name** – Vor-, Mittel- und Nachname.
 - **Contact** – E-Mail und Geburtsdatum.
 - **Address** – Straße, Stadt, Bundesland und Postleitzahl.
-- **Phone** – Mobil-, Privat- und Arbeitsnummern.
+- **Phone** – Mobil-, Privat- und Arbeitsnummern. Wenn Sie Textnachrichten-Erinnerungen in den [Benachrichtigungseinstellungen](./notification-preferences.md) aktivieren, werden sie an Ihre Mobilnummer gesendet.
 
 Bearbeiten Sie alle Felder und speichern Sie Ihre Änderungen in der Leiste unten auf dem Bildschirm.
 

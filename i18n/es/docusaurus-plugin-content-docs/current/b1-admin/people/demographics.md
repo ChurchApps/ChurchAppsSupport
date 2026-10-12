@@ -20,7 +20,7 @@ El panel de **Datos Demográficos** te da una vista visual de tu congregación �
 
 ## Abriendo Datos Demográficos
 
-Desde la página **Personas**, haz clic en el botón **Datos Demográficos** en el encabezado de la página (el icono de gráfico de barras). La página muestra tu recuento total de personas en la parte superior, seguida por los gráficos descritos a continuación.
+Desde la página **Personas**, haz clic en **Datos Demográficos** en el encabezado de la página. La página muestra tu recuento total de personas en la parte superior, seguida por los gráficos descritos a continuación.
 
 ## Gráficos
 

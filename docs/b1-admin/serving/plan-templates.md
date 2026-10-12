@@ -21,14 +21,13 @@ Plan templates let you save a reusable snapshot of a plan's order of service or 
 ## Saving a Plan as a Template
 
 1. Open an existing plan from the **Serving** area.
-2. Click the **Templates** button (top of the plan page).
-3. Choose **Save as Template**.
-4. Give the template a name (for example, "Standard Sunday" or "Worship + Sermon").
-5. Save. The template captures the plan's current order of service and positions at that moment.
+2. In the plan's **Order of Service** section, click **Save as Template**.
+3. Give the template a name (for example, "Standard Sunday" or "Worship + Sermon").
+4. Save. The template captures the plan's current order of service, positions, and notes at that moment.
 
 ## Managing Templates
 
-From the **Templates** button on any plan type page you can:
+Click **Templates** above the plan list on any plan type page to open **Plan Templates**. From there you can:
 
 - **Rename** — change the template's display name
 - **Update from plan** — replace the template's content with a plan's current state (useful after you refine your standard structure)
@@ -37,13 +36,15 @@ From the **Templates** button on any plan type page you can:
 
 ## Applying a Template to Plans
 
-1. Click the **Templates** button on the plan type page.
+1. Click **Templates** above the plan list on the plan type page.
 2. Click the **Apply** icon (copy icon) next to the template you want to use.
 3. Select which upcoming plans to apply it to by checking their boxes.
 4. Choose what to copy:
    - **Order of Service** — replaces the selected plans' service order items with the template's items
    - **Positions** — replaces the selected plans' positions (and their assignments) with the template's positions
 5. Click **Apply**.
+
+If the template has notes, applying it also replaces the selected plans' notes with the template's notes.
 
 :::warning
 Applying positions replaces all existing positions and assignments on the selected plans. Make sure you have not already scheduled volunteers for those positions before applying.
@@ -52,6 +53,10 @@ Applying positions replaces all existing positions and assignments on the select
 :::tip
 Apply the Order of Service without Positions when you want a consistent song/sermon structure but volunteers are already assigned differently each week.
 :::
+
+## Starting a New Plan from a Template
+
+Templates are shared across the plan types in a ministry. When you click **New Plan** and the ministry has templates, the new plan form includes a **Start from template** list. Pick a template and save, and the new plan is created with the template's order of service, positions, and notes. Choosing a template replaces the **Copy from Previous Plan** options for that plan.
 
 ## Keeping Templates Up to Date
 

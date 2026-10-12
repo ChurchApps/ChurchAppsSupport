@@ -24,7 +24,7 @@ title: "Lista de Aniversarios"
 2. Bajo la caja de búsqueda, haz clic en **Advanced**.
 3. Expande la sección **Demographics** y marca **Anniversary Month**, luego elige el mes.
 4. Ejecuta la búsqueda -- todos los que tengan un aniversario ese mes aparecerán en los resultados.
-5. Para ver las fechas, haz clic en el **icono de columnas** en la parte superior derecha de los resultados y activa la columna **Anniversary**. Usa **Export** para descargar la lista como una hoja de cálculo si prefieres ordenarla o imprimirla.
+5. Para ver las fechas, cambia **View as** a **Table**, luego haz clic en el icono **Select columns** en el encabezado de la página y activa la columna **Anniversary**. Usa **Export** para descargar la lista como una hoja de cálculo si prefieres ordenarla o imprimirla.
 
 ## Usos Prácticos
 

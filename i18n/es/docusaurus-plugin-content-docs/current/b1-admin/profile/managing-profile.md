@@ -20,20 +20,20 @@ La página de Perfil te permite editar la configuración de tu cuenta personal. 
 
 ## Información del Perfil
 
-La sección superior de la página de Perfil contiene los detalles básicos de tu cuenta:
+La página de Perfil muestra tu nombre y correo electrónico a la izquierda, con un botón **Editar** debajo de ellos. Haz clic en **Editar** para abrir el formulario **Editar Cuenta**, que contiene los detalles básicos de tu cuenta:
 
 1. **Correo Electrónico** -- Tu dirección de correo electrónico usado para iniciar sesión y recibir notificaciones.
 2. **Nombre de Pila** y **Apellido** -- Tu nombre de visualización en ChurchApps.
 3. **Contraseña** -- Actualiza la contraseña de tu cuenta.
 
-Para actualizar tu información, edita los campos y haz clic en el botón **Guardar Cambios**.
+Para actualizar tu información, edita los campos y haz clic en el botón **Guardar Cambios**. Haz clic en **Cancelar** (o en el enlace **Volver a** con tu nombre) para regresar a tu perfil sin guardar.
 
 ## Cambiar tu Contraseña
 
-1. Desplázate a los campos de contraseña en la página de Perfil.
+1. En la página de Perfil, haz clic en **Editar**.
 2. Ingresa tu **Contraseña Actual**.
-3. Ingresa tu nueva contraseña en el campo **Contraseña**.
-4. Vuelve a ingresarla en el campo **Confirmar Contraseña**.
+3. Ingresa tu nueva contraseña en el campo **Nueva contraseña**.
+4. Vuelve a ingresarla en el campo **Verificar contraseña**.
 5. Haz clic en **Guardar Cambios**.
 
 :::info
@@ -46,17 +46,17 @@ La sección **Cuentas Vinculadas** muestra cualquier servicio externo conectado 
 
 ## Preferencias de Tema
 
-ChurchApps admite modos de visualización claro y oscuro:
+B1 Admin admite modos de visualización claro y oscuro:
 
-1. Encuentra el alternador de **Tema** en tu página de Perfil.
-2. Cambia entre modo **Claro** y **Oscuro**.
+1. Haz clic en tu foto de perfil en la esquina superior derecha de B1 Admin para abrir tu menú de usuario.
+2. En **Preferencias de Tema**, elige **Modo Claro** o **Modo Oscuro**.
 3. La interfaz se actualizará inmediatamente para reflejar tu elección.
 
-Tu preferencia de tema se guarda en tu cuenta y se aplicará en todas tus sesiones.
+Tu elección se recuerda en ese dispositivo y navegador.
 
 ## Eliminación de Cuenta
 
-En la parte inferior de la página de Perfil, encontrarás la opción para eliminar permanentemente tu cuenta. Esta acción elimina tu cuenta y datos asociados y no se puede deshacer.
+En la sección **Eliminación de Cuenta** de la página de Perfil, encontrarás la opción para eliminar permanentemente tu cuenta. Esta acción elimina tu cuenta y datos asociados y no se puede deshacer.
 
 :::warning
 La eliminación de cuenta es permanente y no se puede revertir. Asegúrate de que realmente deseas eliminar tu cuenta antes de proceder.

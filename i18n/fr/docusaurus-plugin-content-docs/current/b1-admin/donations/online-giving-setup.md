@@ -26,7 +26,7 @@ B1 Admin s'intègre avec **Stripe**, **PayPal**, **Kingdom Funding** et **Paysta
 3. Copiez votre **Publishable Key**.
 4. Connectez-vous à [B1 Admin](https://admin.b1.church/).
 5. Allez à **Settings** et ouvrez la section **Giving**.
-6. Cliquez sur l'icône d'édition dans la section **Giving**.
+6. Cliquez sur **Modifier** dans la section **Giving**.
 7. Définissez le **Provider** sur **Stripe**.
 8. Collez votre Publishable Key dans le champ **Public Key**.
 9. Retournez à Stripe et révélez votre **Secret Key** (vous ne pouvez voir cela qu'une seule fois, alors sauvegardez une copie).

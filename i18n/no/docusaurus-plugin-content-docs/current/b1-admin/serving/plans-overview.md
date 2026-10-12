@@ -23,8 +23,9 @@ Planoversikten gir deg et fugleperspektiv på alle oppgavene til frivillige over
 
 1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Tjeneste** og klikk på **Planer**.
 2. Velg en **tjenesteområdefane** øverst på siden.
-3. Klikk på en **plantype** for å åpne planlisten.
-4. Klikk på knappen **Oversikt** nær toppen av siden.
+3. Klikk på **Oversikt** ved siden av plantypen i listen **Plantyper**, eller åpne plantypen og klikk på **Oversikt** øverst på siden.
+
+Oversikten gjelder plantypen du åpnet den fra. Klikk på navnet til plantypen øverst i oversikten for å gå tilbake til planlisten.
 
 ## Lese oversiktsrutenettet
 
@@ -62,20 +63,31 @@ Automatisk planlegging fyller bare plasser som allerede er tomme -- den erstatte
 
 Klikk på **Send e-post til frivillige** for å sende et varsel til alle frivillige som er tildelt noe sted i det filtrerte datoområdet og tjenesteområdet, i én handling i stedet for å sende e-post plan for plan. B1 rapporterer hvor mange e-poster som ble sendt, og hvor mange som mislyktes.
 
+## Sende tekstmelding til alle som er satt opp {#texting-everyone-scheduled}
+
+Hvis menigheten din har en [tekstmeldingsleverandør](../settings/church-settings.md#texting) koblet til, og du både kan redigere planer og sende tekstmeldinger, vises en knapp **Send tekstmelding til frivillige** øverst i oversikten.
+
+1. Klikk på **Send tekstmelding til frivillige**.
+2. Dialogen viser hvor mange frivillige som får meldingen (for eksempel «12 av 14 frivillige får denne meldingen»), i tillegg til hvor mange som har reservert seg mot tekstmeldinger, og hvor mange som ikke har et telefonnummer registrert.
+3. Skriv inn **meldingen** din. Du kan klikke på en plassholder for å sette inn navnet til hver frivillig eller navnet på menigheten din.
+4. Klikk på **Send**. B1 rapporterer hvor mange tekstmeldinger som ble sendt.
+
+Hver frivillig som er satt opp i datoperioden får én tekstmelding på mobilnummeret på profilen sin, selv om de tjenestegjør på flere datoer. Personer som deler et telefonnummer (for eksempel en familietelefon) får bare én melding. Frivillige som svarte STOP på en tidligere melding, hoppes over.
+
+:::info
+Tekstmeldinger sendes via menighetens egen tekstmeldingsleverandør, så prisene den har gjelder. Hvis menigheten er tom for tekstmeldingskreditt, stopper utsendingen, og dialogen forteller deg det. Én utsending når maks 200 frivillige; snever inn datoperioden hvis du har flere.
+:::
+
 ## Utheve en frivilligs timeplan
 
 Bruk nedtrekksmenyen **Utheve** til å velge en person fra laget ditt -- alle celler der vedkommende er tildelt, markeres i rutenettet, slik at du ser hvor personen allerede tjenestegjør før du legger vedkommende til på en ny plass. Velg **Alle** for å slå utheving av.
 
 ## Filtrere oversikten
 
-Du kan justere hva oversikten viser, med filterkontrollene øverst:
+Du kan justere hva oversikten viser med kontrollene over rutenettet. Rutenettet oppdateres så snart du endrer dem.
 
+- **Alle posisjoner / Bare ubesatte** — Velg **Bare ubesatte** for å skjule rader der alle datoer allerede er fylt, slik at du kan fokusere på posisjoner som fortsatt trenger en frivillig.
 - **Startdato / sluttdato** -- Som standard viser oversikten 12 uker frem i tid. Skriv inn egne datoer for å utvide eller snevre inn området.
-- **Tjenesteområde** -- Bytt til et annet tjenesteområde uten å forlate oversikten.
-- **Plantype** -- Filtrer på en bestemt plantype innenfor det valgte tjenesteområdet.
-- **Bare ubesatte** -- Slå dette på for å skjule rader der alle datoer allerede er fylt, slik at du kan fokusere på posisjoner som fortsatt trenger en frivillig.
-
-Klikk på **Filtrer** etter at du har gjort endringer, for å oppdatere rutenettet.
 
 ## Eksportere til CSV
 

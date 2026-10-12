@@ -24,21 +24,21 @@ In B1 Admin, aprite il [menu Jump](../introduction.md#getting-around-with-the-ju
 
 ## Richieste di prenotazione
 
-Quando un gruppo crea un evento e richiede una stanza o una risorsa, la richiesta appare nel pannello **Richieste di stanza e risorse**. Ogni riga mostra:
+Quando un gruppo crea un evento e richiede una stanza o una risorsa, la richiesta appare nella sezione **Richieste di stanza e risorse**. Ogni riga mostra:
 
-- La stanza o la risorsa richiesta
 - Il nome dell'evento e la data/ora
-- Il gruppo richiedente
+- La stanza o la risorsa richiesta (con la quantità per le risorse con più unità)
+- Un badge di stato che indica se la richiesta presenta conflitti
 
 ### Indicatori di conflitto
 
-Se due richieste si sovrappongono per la stessa stanza o risorsa, appare un'icona di avvertimento di conflitto. Esaminate attentamente le richieste in conflitto prima di approvare una qualsiasi.
+Se una richiesta si sovrappone a un'altra prenotazione o blocco per la stessa stanza o risorsa, il suo stato mostra un badge **Conflitti**; passateci sopra il mouse per vedere i dettagli. Le richieste senza sovrapposizioni mostrano **Nessun conflitto**. Esaminate attentamente le richieste in conflitto prima di approvare una qualsiasi.
 
 ### Approvazione o rifiuto
 
-Fate clic sull'icona **✓** (approva) o **✗** (rifiuta) su qualsiasi richiesta di prenotazione. Il gruppo richiedente viene notificato della decisione. Le prenotazioni approvate vengono bloccate a quella stanza o risorsa per l'evento; le prenotazioni rifiutate liberano lo slot per gli altri.
+Fate clic su **Approva** o **Rifiuta** su qualsiasi richiesta di prenotazione (il rifiuto richiede prima una conferma). Il gruppo richiedente viene notificato della decisione. Le prenotazioni approvate vengono bloccate a quella stanza o risorsa per l'evento; le prenotazioni rifiutate liberano lo slot per gli altri.
 
-Quando fate clic su approva, si apre una finestra di dialogo **Approva prenotazione** in modo da poter pubblicare anche l'evento nello stesso passaggio:
+Quando fate clic su **Approva**, si apre una finestra di dialogo **Approva prenotazione** in modo da poter pubblicare anche l'evento nello stesso passaggio:
 
 1. Spuntate **Pubblica nel calendario pubblico** per rendere l'evento pubblico sul calendario del gruppo. Lasciate deselezionato per approvare la prenotazione senza modificare la visibilità dell'evento.
 2. Una volta spuntato **Pubblica nel calendario pubblico**, potete opzionalmente scegliere un calendario curato da **Aggiungi anche al calendario** per aggiungere l'evento anche a uno dei vostri [calendari curati](curated-calendar). Lasciatelo impostato su **Nessuno** per saltare questo. (Questa opzione appare solo se avete il permesso **content.edit**.)
@@ -46,7 +46,7 @@ Quando fate clic su approva, si apre una finestra di dialogo **Approva prenotazi
 
 ## Eventi in sospeso
 
-Se il vostro flusso di lavoro del calendario richiede l'approvazione dell'evento prima che gli eventi diventino visibili al pubblico, gli eventi in sospeso appaiono nel pannello **Richieste di evento**. Approvate un evento per pubblicarlo nel calendario, o rifiutatelo per notificare al presentatore che sono necessarie modifiche.
+Se il vostro flusso di lavoro del calendario richiede l'approvazione dell'evento prima che gli eventi diventino visibili al pubblico, gli eventi in sospeso appaiono nella sezione **Richieste di evento**. Fate clic su **Approva** per pubblicare un evento nel calendario, o su **Rifiuta** per notificare al presentatore che sono necessarie modifiche.
 
 :::tip
 Configurate un Gruppo di approvazione su una stanza in [Stanze e risorse](rooms-resources) per richiedere l'approvazione per quella stanza. I gruppi con accesso possono quindi richiedere la stanza quando creano eventi, e quelle richieste fluiscono in questa pagina.

@@ -32,7 +32,7 @@ Su nuevo formulario aparecerá en la lista. Haga clic en él para comenzar a añ
 
 ## Imprimir un formulario en blanco
 
-¿Necesita una copia en papel para distribuir; para una tarjeta de visitante en la mesa de bienvenida o un formulario que alguien sin acceso a Internet pueda completar a mano? Haga clic en el **icono de impresión** junto a un formulario en la lista principal de Formularios para abrir una vista previa y luego haga clic en **Print**. Los campos en blanco se imprimen con un subrayado o casilla de verificación para cada pregunta para que las personas puedan completarlos a mano; las preguntas requeridas se marcan con un asterisco. El nombre de su iglesia se imprime en la parte superior del nombre del formulario. No hay otras opciones de impresión; imprima todo el formulario o nada.
+¿Necesita una copia en papel para distribuir; para una tarjeta de visitante en la mesa de bienvenida o un formulario que alguien sin acceso a Internet pueda completar a mano? Haga clic en **Print** junto a un formulario en la lista principal de Formularios para abrir una vista previa y luego haga clic en **Print**. Los campos en blanco se imprimen con un subrayado o casilla de verificación para cada pregunta para que las personas puedan completarlos a mano; las preguntas requeridas se marcan con un asterisco. El nombre de su iglesia se imprime en la parte superior del nombre del formulario. No hay otras opciones de impresión; imprima todo el formulario o nada.
 
 ## Agregar preguntas
 
@@ -81,7 +81,7 @@ Los correos electrónicos de seguimiento solo se envían después de que su igle
 
 ## Duplicar un formulario
 
-Para reutilizar un formulario como punto de partida para uno nuevo, haga clic en el **icono Duplicate** (icono de copia) junto al formulario en la lista de Formularios. B1 crea una copia exacta del formulario, incluyendo todas las preguntas, que luego puede renombrar y editar independientemente.
+Para reutilizar un formulario como punto de partida para uno nuevo, haga clic en **Duplicate** junto al formulario en la lista de Formularios y confirme. B1 crea una copia exacta del formulario, incluyendo todas las preguntas, que luego puede renombrar y editar independientemente.
 
 :::tip
 La duplicación es práctica para eventos recurrentes donde las preguntas de registro siguen siendo las mismas año tras año. Duplique el formulario del año pasado, actualice el nombre y las fechas, y está listo.

@@ -24,7 +24,7 @@ Una sesión representa una ocurrencia de una reunión de grupo -- por ejemplo, s
 
 1. Abra **B1 Admin**, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda), expanda **People**, y haga clic en **Groups**.
 2. Seleccione el grupo para el que desea registrar la asistencia.
-3. Haga clic en la pestaña **Sessions**.
+3. En la sección **Sessions** de la página del grupo, haga clic en **All sessions**.
 4. Haga clic en **New** para crear una nueva sesión.
 5. Si el grupo se asigna a un horario de servicio, elija el **Service Time**. Si es un grupo sin programación, este campo no aparecerá.
 6. Seleccione la **Session Date** -- puede ser hoy, una fecha pasada o una fecha futura.
@@ -76,11 +76,11 @@ Empareje esto con **Print All Classes** y [agregar sesiones para cada clase en u
 
 ## Imprimiendo una Hoja de Rol
 
-Una hoja de rol es una lista de clase imprimible que los maestros pueden marcar a mano y devolverle para que la ingrese más tarde. Cada hoja muestra el nombre de la iglesia, la clase, una línea **Date** grande debajo del nombre de la clase y el horario de servicio. Los miembros se enumeran en dos columnas (lea hacia abajo la columna izquierda, luego la derecha) para que quepan más nombres en una página, y cada miembro tiene casillas **Present** y **Absent**. Hay líneas en blanco para visitantes y un área **Teacher / Notes**.
+Una hoja de rol es una lista de clase imprimible que los maestros pueden marcar a mano y devolverle para que la ingrese más tarde. Cada hoja muestra el logotipo de su iglesia (el **Light Background Logo** de [Website > Appearance](../website/appearance.md), si ha subido uno) con el nombre de la iglesia debajo, la clase, una línea **Date** grande debajo del nombre de la clase y el horario de servicio. Los miembros se enumeran en dos columnas (lea hacia abajo la columna izquierda, luego la derecha) para que quepan más nombres en una página, y cada miembro tiene casillas **Present** y **Absent**. Hay líneas en blanco para visitantes y un área **Teacher / Notes**.
 
 - **Desde una sesión** -- Haga clic en el icono **Print Roll Sheet** (impresora) en la parte superior de la lista de asistencia de la sesión. La hoja está fechada con la fecha de la sesión.
 - **Todas las clases para un servicio** -- Si la sesión tiene un horario de servicio, haga clic en **Print All Classes** para imprimir una hoja por cada clase asignada a ese horario de servicio. Cada clase se imprime en su propia página.
-- **Desde la pestaña Members** -- Haga clic en el icono **Print Roll Sheet** arriba de la lista de miembros del grupo y elija **Attendance Sheet** para imprimir una hoja sin fecha. El mismo menú tiene un diseño **Contact Roster** con el teléfono, correo electrónico y dirección de cada miembro; vea [Imprimir la lista de miembros](../groups/group-members.md#printing-the-member-list).
+- **Desde la lista de miembros** -- En la página del grupo, haga clic en **All members**, luego en el icono **Print Roll Sheet** arriba de la lista de miembros y elija **Attendance Sheet** para imprimir una hoja sin fecha. El mismo menú tiene un diseño **Contact Roster** con el teléfono, correo electrónico y dirección de cada miembro; vea [Imprimir la lista de miembros](../groups/group-members.md#printing-the-member-list).
 
 La hoja se abre en una nueva pestaña y el diálogo de impresión de su navegador aparece automáticamente.
 
@@ -96,7 +96,7 @@ Puede descargar un registro de la sesión como un archivo CSV para usar en Excel
 
 Después de registrar sesiones, los datos aparecen en sus informes de asistencia.
 
-- **Pestaña Attendance Trend** -- muestra tendencias de toda la iglesia a lo largo del tiempo. Consulte [Seguimiento de Asistencia](tracking-attendance.md).
+- **Pestaña Attendance Trend** (bajo **All years** en la página de Attendance) -- muestra tendencias de toda la iglesia a lo largo del tiempo. Consulte [Seguimiento de Asistencia](tracking-attendance.md).
 - **Pestaña Group Attendance** -- muestra asistencia desglosada por grupo individual. Consulte [Informes de Asistencia](../reports/attendance-reports.md#group-attendance).
 
 :::tip

@@ -21,8 +21,8 @@ Después de crear tu cuenta e iglesia, hay algunos pasos importantes para config
 ## Paso 1: Configurar la información de tu iglesia
 
 1. Abre el [Menú de salto](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda de B1 Admin), expande **Configuración**, y haz clic en **Configuración**.
-2. Haz clic en **Editar configuración**.
-3. Ingresa el **nombre**, **dirección** y **detalles de contacto** de tu iglesia.
+2. En la sección **Church Information**, haz clic en **Edit**.
+3. Ingresa el **nombre**, el **subdominio** y la **dirección** de tu iglesia.
 4. Haz clic en **Guardar** para aplicar tus cambios.
 
 ## Paso 2: Configurar tu marca
@@ -47,7 +47,7 @@ Tener tu logotipo y marca listos antes de invitar a miembros del equipo da una p
 
 Con tu equipo en su lugar, comienza a construir las áreas principales de B1 Admin:
 
-1. **Personas** -- Añade miembros a tu directorio de iglesia. Esta es la base para todo lo demás, así que comienza aquí. Puedes añadir personas manualmente o usar la herramienta **Importar** desde **Configuración**.
+1. **Personas** -- Añade miembros a tu directorio de iglesia. Esta es la base para todo lo demás, así que comienza aquí. Puedes añadir personas manualmente o usar la herramienta **Import/Export** desde **Configuración**.
 2. **Grupos** -- Crea grupos para grupos pequeños, equipos de ministerio, clases y otros encuentros.
 3. **Asistencia** -- Configura tus sedes, servicios y horarios de servicio para seguimiento de asistencia.
 4. **Donaciones** -- Configura fondos de donación y conecta tu puerta de pago (Stripe) para aceptar donaciones en línea.

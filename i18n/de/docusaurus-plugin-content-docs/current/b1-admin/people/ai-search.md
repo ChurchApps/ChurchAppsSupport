@@ -23,10 +23,16 @@ Die **KI-Suche** ermöglicht es Ihnen, Ihr Gemeindeverzeichnis mit einfachen, na
 Die KI-Suche verwendet künstliche Intelligenz, um Ihre Frage zu interpretieren und die passenden Ergebnisse aus Ihrer Personendatenbank zurückzugeben. Sie können Fragen so stellen, wie Sie einen Kollegen fragen würden.
 
 1. Navigieren Sie zur Seite **Personen** in B1 Admin.
-2. Suchen Sie die Option **KI-Suche** unter den Suchsteuerungen.
+2. Klicken Sie unter dem Suchfeld auf **Ask** (Fragen), um das Feld **KI-Suche** zu öffnen.
 3. Geben Sie Ihre Frage in natürlicher Sprache ein.
-4. Drücken Sie **Enter** oder klicken Sie auf **Suchen**, um Ihre Abfrage auszuführen.
-5. Die Ergebnistabelle wird aktualisiert und zeigt die passenden Personen an.
+4. Klicken Sie auf **Suchen**, um Ihre Abfrage auszuführen.
+5. Die Ergebnisliste wird aktualisiert und zeigt die passenden Personen an.
+
+Klicken Sie auf **Clear Search** (Suche zurücksetzen), um Ihre Frage zu löschen und zum vollständigen Verzeichnis zurückzukehren.
+
+:::info
+Wenn die KI-Suche nicht erreichbar ist, wird angezeigt: *"KI-Suche ist vorübergehend nicht verfügbar. Bitte versuchen Sie es später erneut oder verwenden Sie die Suche oben."* Ihre Frage bleibt erhalten, sodass Sie es gleich noch einmal versuchen können -- oder verwenden in der Zwischenzeit die Schnellsuche oder die erweiterte Suche **Advanced** (Erweitert).
+:::
 
 ## Beispielabfragen
 
@@ -52,7 +58,7 @@ Die KI-Suche ist besonders hilfreich, wenn:
 - Sie schnell eine Frage über Ihre Gemeinde beantworten möchten, ohne einen Bericht zu erstellen.
 
 :::info
-Die KI-Suche funktioniert zusammen mit der Standard-Schnellsuche und den Spaltenfiltern. Verwenden Sie den Ansatz, der am besten zu Ihren Bedürfnissen passt. Für einfache Namenssuchen ist die [Schnellsuche](searching-people.md) die schnellste Option. Für differenziertere Fragen glänzt die KI-Suche.
+Die KI-Suche funktioniert zusammen mit der Standard-Schnellsuche und den **Advanced** (Erweiterten) Filtern. Verwenden Sie den Ansatz, der am besten zu Ihren Bedürfnissen passt. Für einfache Namenssuchen ist die [Schnellsuche](searching-people.md) die schnellste Option. Für differenziertere Fragen glänzt die KI-Suche.
 :::
 
 Für weitere Suchoptionen siehe [Personen suchen](./searching-people.md).

@@ -20,9 +20,9 @@ B1 Admin ti fornisce diversi modi di visualizzare e analizzare i dati sulle dona
 
 ## Dashboard di Donazioni
 
-La dashboard di donazioni è la scheda **Dashboard** della pagina **Riepilogo**, la prima pagina che vedi quando apri la sezione **Donazioni**.
+La dashboard di donazioni è la vista **Dashboard** della pagina **Riepilogo**, la prima pagina che vedi quando apri la sezione **Donazioni**.
 
-1. Apri il [Menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Donazioni**, e fai clic su **Riepilogo**. La pagina **Riepilogo** si apre sulla scheda **Dashboard**.
+1. Apri il [Menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Donazioni**, e fai clic su **Riepilogo**. La pagina **Riepilogo** si apre sulla vista **Dashboard**. L'interruttore **Vista** in alto a destra passa tra **Dashboard** e **Donatori Inattivi**.
 2. Usa l'interruttore **Settimanale**, **Mensile**, e **Trimestrale** sopra il rapporto per scegliere come le donazioni sono raggruppate.
 3. Nel pannello **Filtra Rapporto**, imposta la **Data di Inizio** e la **Data di Fine** (per impostazione predefinita, l'anno passato fino a ieri) e facoltativamente scegli un **Fondo**, quindi fai clic su **Esegui Rapporto**. Il rapporto viene eseguito automaticamente con i valori predefiniti quando la pagina si apre.
 4. Quattro **schede KPI** visualizzano le metriche di donazione per l'intervallo selezionato:
@@ -41,7 +41,7 @@ La dashboard mostra i dati aggregati sulle donazioni. Non include i nomi dei sin
 
 ## Donatori Inattivi
 
-La scheda **Donatori Inattivi** accanto alla scheda **Dashboard** elenca le persone che hanno donato durante un periodo ma non da allora. Per impostazione predefinita confronta l'anno solare scorso con questo anno fino ad oggi; cambia uno qualsiasi degli intervalli di data per ampliare o restringere la ricerca. Ogni riga mostra la persona, la data del loro ultimo dono e il totale per il periodo precedente, e **Opzioni di Download > Riepilogo** scarica l'elenco come un CSV per una mailing di follow-up o una lista di chiamate.
+Scegli **Donatori Inattivi** nell'interruttore **Vista** per elencare le persone che hanno donato durante un periodo ma non da allora. Per impostazione predefinita confronta l'anno solare scorso con questo anno fino ad oggi; cambia uno qualsiasi degli intervalli di data per ampliare o restringere la ricerca. Ogni riga mostra la persona, la data del loro ultimo dono e il totale per il periodo precedente, e **Opzioni di Download > Riepilogo** scarica l'elenco come un CSV per una mailing di follow-up o una lista di chiamate.
 
 ## Visualizzazione dei Dettagli a Livello di Donatore
 
@@ -49,17 +49,16 @@ Per un breakdown di chi ha donato, quanto, e a quale fondo:
 
 1. Naviga a **Donazioni > Lotti**.
 2. Fai clic su un **nome di lotto** per aprirlo.
-3. La pagina di dettaglio del lotto elenca ogni donazione con il nome del donatore, l'importo, il fondo, la data, e il metodo di pagamento.
-4. Fai clic sul **nome di un donatore** per vedere un breakdown di quante volte hanno donato e quanto ogni volta.
-5. Fai clic su un **ID di donazione** per aprire un pannello laterale con i dettagli completi per quella donazione individuale.
-6. Fai clic su **Download** per esportare un CSV con tutte le informazioni di donatore e donazione per quel lotto.
+3. La pagina di dettaglio del lotto elenca ogni donazione con il metodo (e il numero dell'assegno o le ultime cifre della carta), il nome del donatore, la data, le note e l'importo, con un totale in fondo.
+4. Fai clic su **Modifica** sulla riga di una donazione per aprire i dettagli completi di quella donazione, incluso il suo fondo.
+5. Fai clic su **Esporta** sopra l'elenco per scaricare un CSV con tutte le informazioni di donatore e donazione per quel lotto.
 
 ## Rapporto Riepilogo di Donazione
 
 I rapporti di donazione sono costruiti direttamente nella sezione Donazioni -- la pagina Riepilogo serve come tuo rapporto di riepilogo di donazione:
 
 1. Nel Menu Jump, scegli **Donazioni > Riepilogo**.
-2. Sulla scheda **Dashboard**, imposta la **Data di Inizio** e la **Data di Fine** nel pannello **Filtra Rapporto** e fai clic su **Esegui Rapporto**.
+2. Sulla vista **Dashboard**, imposta la **Data di Inizio** e la **Data di Fine** nel pannello **Filtra Rapporto** e fai clic su **Esegui Rapporto**.
 3. Fai clic su **Opzioni di Download** e scegli **Riepilogo** per esportare il rapporto come un file CSV.
 
 ## Esportazione dei Dati

@@ -32,62 +32,63 @@ You can customize colors for both modes independently.
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left) and expand **Website**
 2. Click **Appearance**
-3. Scroll to the **Navigation Styles** section
-4. Click **Edit Navigation Styles**
+3. In the **Style Settings** list, click **Navigation**
+
+The **Navigation Styling** editor has two cards: **Header (solid)** and **Header over hero (transparent)**.
 
 ## Configuring Solid Navigation
 
-Solid navigation appears with a background color behind the navigation bar. You can customize:
+Solid navigation appears with a background color behind the navigation bar. These settings are in the **Header (solid)** card. You can customize:
 
 ### Background Color
 
-1. Toggle the **Override** switch for **Background Color**
+1. Toggle the **Override** switch for **Background color**
 2. Click the color picker
 3. Choose your desired background color
 4. The default is white (#FFFFFF)
 
 ### Link Color
 
-1. Toggle the **Override** switch for **Link Color**
+1. Toggle the **Override** switch for **Link color**
 2. Choose the color for navigation link text
 3. This affects links in their default state
 4. The default is dark gray (#555555)
 
 ### Link Hover Color
 
-1. Toggle the **Override** switch for **Link Hover Color**
+1. Toggle the **Override** switch for **Link hover color**
 2. Choose the color links change to when users hover over them
 3. This provides visual feedback for clickable links
 4. The default is light blue (#03A9F4)
 
 ### Active Color
 
-1. Toggle the **Override** switch for **Active Color**
+1. Toggle the **Override** switch for **Active link color**
 2. Choose the color for the currently active page link
 3. This helps users know which page they're on
 4. The default is light blue (#03A9F4)
 
 ## Configuring Transparent Navigation
 
-Transparent navigation overlays your page content with no background. You can customize:
+Transparent navigation overlays your page content with no background. These settings are in the **Header over hero (transparent)** card. You can customize:
 
 ### Link Color
 
-1. Toggle the **Override** switch for **Link Color**
+1. Toggle the **Override** switch for **Link color**
 2. Choose a color that contrasts well with your page background
 3. Often white or light colors work best over dark backgrounds
 4. The default is dark gray (#555555)
 
 ### Link Hover Color
 
-1. Toggle the **Override** switch for **Link Hover Color**
+1. Toggle the **Override** switch for **Link hover color**
 2. Choose the hover state color
 3. Ensure it's visible against your page background
 4. The default is light blue (#03A9F4)
 
 ### Active Color
 
-1. Toggle the **Override** switch for **Active Color**
+1. Toggle the **Override** switch for **Active link color**
 2. Choose the active page indicator color
 3. Should stand out while still fitting your design
 4. The default is light blue (#03A9F4)
@@ -98,7 +99,7 @@ Transparent navigation does not have a background color setting since it overlay
 
 ## Saving Your Changes
 
-1. After configuring your colors, click **Save Navigation Styles**
+1. After configuring your colors, click **Save Navigation**
 2. Your changes apply immediately to your live website
 3. Visit your website to see the navigation in both modes
 
@@ -107,7 +108,7 @@ Transparent navigation does not have a background color setting since it overlay
 If you want to go back to the default colors:
 
 1. Toggle off the **Override** switches for any custom colors
-2. Click **Save Navigation Styles**
+2. Click **Save Navigation**
 3. The navigation returns to the default color scheme
 
 Or click **Cancel** to discard all changes without saving.

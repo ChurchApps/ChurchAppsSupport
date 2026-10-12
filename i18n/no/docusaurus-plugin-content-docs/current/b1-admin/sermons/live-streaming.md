@@ -19,14 +19,14 @@ Siden Tidspunkter for direktesending lar deg konfigurere menighetens sendeplan, 
 
 </div>
 
-Siden har to hovedfaner: **Gudstjenester** for å administrere sendeplanen din og **Innstillinger** for å konfigurere sendesiden din.
+Direktesending administreres fra to sider i **Prekener**-delen i Jump-menyen: **Tidspunkter for direktesending** for å administrere sendeplanen din, og **Innstillinger** for å konfigurere fanene på sendesiden din.
 
 ## Administrere gudstjenester
 
 ### Legge til en gudstjeneste
 
 1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) i B1 Admin, utvid **Prekener** og klikk på **Tidspunkter for direktesending**.
-2. Klikk på knappen **Legg til gudstjeneste** for å opprette en ny planlagt gudstjeneste.
+2. Klikk på knappen **Legg til gudstjeneste** øverst på siden for å opprette en ny planlagt gudstjeneste. Eksisterende gudstjenester vises i en tabell med navn, tidspunkt, leverandør og varighet for hver gudstjeneste; klikk på redigeringsikonet på en rad for å endre den.
 3. Skriv inn et **Gudstjenestenavn** (for eksempel «Søndag formiddag»).
 4. Angi **Gudstjenestetidspunkt** -- velg dagen og klokkeslettet gudstjenesten begynner.
 5. Sett **Gjentas ukentlig** til **Ja** for faste ukentlige gudstjenester, eller **Nei** for et enkeltstående arrangement.
@@ -47,19 +47,19 @@ Gudstjenesten oppdateres automatisk hver uke hvis den er satt til å gjentas. Du
 
 ## Innstillinger for sendesiden
 
-Klikk på fanen **Innstillinger** for å tilpasse fanene og lenkene som vises ved siden av direktesendingen.
+For å tilpasse fanene og lenkene som vises ved siden av direktesendingen, åpner du Jump-menyen, utvider **Prekener** og klikker på **Innstillinger**. Siden **Innstillinger for sending** viser listen din over **Fane-innhold**.
 
 ### Legge til faner
 
 1. Klikk på knappen **Legg til** for å legge til en ny fane på direktesendingssiden din.
-2. Velg den ferdigdesignede **Chat**-fanen, eller legg til en egendefinert fane med en ekstern URL.
+2. Velg en **Lenketype**: **Ekstern URL** for en egendefinert lenke, eller en av de ferdigdesignede fanene **Chat** eller **Bønn**.
 3. For Chat-fanen gir du den bare et navn i boksen **Fanetekst**, så er oppsettet ferdig.
 4. For en lenkefane skriver du inn fanenavnet, velger et ikon ved å klikke på ikonknappen, og skriver inn URL-en.
 5. De konfigurerte fanene vises på direktesendingssiden, slik at seerne får tilgang til flere ressurser og interaktive funksjoner.
 
 ### Forhåndsvise sendingen
 
-Klikk på knappen **Se sendingen din** for å se nøyaktig hvordan direktesendingssiden vil se ut for besøkende, med logo, gudstjenestetidspunkter og de konfigurerte fanene.
+På siden **Tidspunkter for direktesending** klikker du på **Se sendingen din** øverst på siden for å se nøyaktig hvordan direktesendingssiden vil se ut for besøkende, med logo, gudstjenestetidspunkter og de konfigurerte fanene.
 
 ## Sette opp YouTube-direktesendingen din
 

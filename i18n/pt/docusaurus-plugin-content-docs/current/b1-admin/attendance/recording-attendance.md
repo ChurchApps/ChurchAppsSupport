@@ -24,7 +24,7 @@ Uma sessão representa uma ocorrência de uma reunião de grupo -- por exemplo, 
 
 1. Abra **B1 Admin**, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Pessoas**, e clique em **Grupos**.
 2. Selecione o grupo que você quer registrar presença.
-3. Clique na aba **Sessões**.
+3. Na seção **Sessões** da página do grupo, clique em **Todas as sessões**.
 4. Clique em **Nova** para criar uma nova sessão.
 5. Se o grupo é atribuído a um horário de serviço, escolha o **Horário do Serviço**. Se é um grupo não agendado, este campo não aparecerá.
 6. Selecione a **Data da Sessão** -- isto pode ser hoje, uma data passada, ou uma data futura.
@@ -76,11 +76,11 @@ Combine isso com **Imprimir Todas as Classes** e [adicionando sessões para cada
 
 ## Imprimindo uma Folha de Presença
 
-Uma folha de presença é uma lista de classe imprimível que professores podem marcar à mão e devolver para você registrar depois. Cada folha mostra o nome da igreja, a classe, uma grande linha de **Data** sob o nome da classe, e o horário de serviço. Membros são listados em duas colunas (leia para baixo a coluna esquerda, depois a direita) para que mais nomes caibam em uma página, e cada membro tem caixas **Presente** e **Ausente**. Há linhas em branco para visitantes e uma área de **Professor / Notas**.
+Uma folha de presença é uma lista de classe imprimível que professores podem marcar à mão e devolver para você registrar depois. Cada folha mostra o logotipo da sua igreja (o **Logotipo para Fundo Claro** de [Site > Aparência](../website/appearance.md), se você tiver enviado um) com o nome da igreja abaixo dele, a classe, uma grande linha de **Data** sob o nome da classe, e o horário de serviço. Membros são listados em duas colunas (leia para baixo a coluna esquerda, depois a direita) para que mais nomes caibam em uma página, e cada membro tem caixas **Presente** e **Ausente**. Há linhas em branco para visitantes e uma área de **Professor / Notas**.
 
 - **De uma sessão** -- Clique no ícone **Imprimir Folha de Presença** (impressora) no topo da lista de presença da sessão. A folha é datada com a data da sessão.
 - **Todas as classes para um serviço** -- Se a sessão tem um horário de serviço, clique em **Imprimir Todas as Classes** para imprimir uma folha por classe atribuída àquele horário de serviço. Cada classe imprime em sua própria página.
-- **Da aba Membros** -- Clique no ícone **Imprimir Folha de Presença** acima da lista de membros do grupo e escolha **Folha de Presença** para imprimir uma folha sem data. O mesmo menu tem um layout **Lista de Contatos** com o telefone, e-mail e endereço de cada membro -- consulte [Imprimindo a Lista de Membros](../groups/group-members.md#printing-the-member-list).
+- **Da lista de membros** -- Na página do grupo, clique em **Todos os membros**, depois clique no ícone **Imprimir Folha de Presença** acima da lista de membros e escolha **Folha de Presença** para imprimir uma folha sem data. O mesmo menu tem um layout **Lista de Contatos** com o telefone, e-mail e endereço de cada membro -- consulte [Imprimindo a Lista de Membros](../groups/group-members.md#printing-the-member-list).
 
 A folha abre em uma nova aba e o diálogo de impressão do seu navegador aparece automaticamente.
 
@@ -96,7 +96,7 @@ Você pode baixar um registro da sessão como um arquivo CSV para usar no Excel,
 
 Depois de registrar sessões, os dados aparecem em seus relatórios de presença.
 
-- **Aba Tendência de Presença** -- mostra tendências de toda a igreja ao longo do tempo. Veja [Rastreando Presença](tracking-attendance.md).
+- **Aba Tendência de Presença** (em **Todos os anos** na página Presença) -- mostra tendências de toda a igreja ao longo do tempo. Veja [Rastreando Presença](tracking-attendance.md).
 - **Aba Presença do Grupo** -- mostra presença dividida por grupo individual. Veja [Relatórios de Presença](../reports/attendance-reports.md#group-attendance).
 
 :::tip

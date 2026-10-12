@@ -22,8 +22,8 @@ Prekensiden viser hele prekenbiblioteket ditt. Her kan du legge til nye prekener
 ## Vise prekenbiblioteket
 
 1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Prekener** og klikk på **Prekener**.
-2. Prekensiden viser alle prekenoppføringene dine, organisert etter spilleliste. Hver preken vises med miniatyrbilde, tittel og dato.
-3. Klikk på en preken for å se eller redigere detaljene.
+2. Prekensiden viser prekenoppføringene dine i en tabell med **Spilleliste**, tittel og **Publiseringsdato** for hver preken. Bruk søkefeltet over tabellen for å filtrere listen. Spillelistene dine vises i panelet **Spillelister** ved siden av tabellen.
+3. Klikk på **Rediger** på raden til en preken for å se eller redigere detaljene.
 
 ## Legge til en preken
 
@@ -40,7 +40,7 @@ Du kan også legge til en permanent direktestrøm-URL ved å velge **Legg til pe
 
 ## Redigere en preken
 
-1. Klikk på en preken i biblioteket for å åpne detaljene.
+1. Klikk på **Rediger** på raden til en preken i biblioteket for å åpne detaljene.
 2. Oppdater tittel, taler, dato, beskrivelse, miniatyrbilde eller medielenker etter behov.
 3. Klikk på **Lagre** for å bruke endringene.
 

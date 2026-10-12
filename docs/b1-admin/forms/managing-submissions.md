@@ -72,7 +72,7 @@ Form members with **Admin** or **View Only** roles can access the **Form Submiss
 :::
 
 :::tip
-If a **Stand Alone** form is set to create a person record, any submissions matched to an existing person also show up on that person's own **Forms** tab in the People section — not just People-type forms.
+If a **Stand Alone** form is set to create a person record, any submissions matched to an existing person also show up in the **Forms** section of that person's page in People — not just People-type forms.
 :::
 
 ## Next Steps

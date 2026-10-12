@@ -24,8 +24,8 @@ Quando um membro envia uma alteração de perfil, ela aparece como uma tarefa at
 
 **A partir do Dashboard (sua página inicial):**
 1. Faça login no B1 Admin -- o Dashboard é carregado automaticamente.
-2. Na seção **Tarefas** no lado direito, clique na aba **Atribuído aos Meus Grupos**.
-3. Qualquer solicitação de alteração de perfil pendente será listada lá.
+2. Na seção **Minhas tarefas**, clique em **Todas as tarefas**. (Minhas tarefas lista apenas as tarefas abertas atribuídas a você pessoalmente.)
+3. Clique na aba **Atribuído aos Meus Grupos**. Qualquer solicitação de alteração de perfil pendente será listada lá.
 
 **A partir de Serving &rarr; Meu Trabalho:**
 1. Abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo do B1 Admin) e expanda **Serving**.

@@ -57,10 +57,10 @@ Para um grupo que se reúne todos os sábados, defina a frequência como "semana
 
 ## Criação em Massa de Eventos no B1 Admin
 
-A página do grupo no B1 Admin também tem uma aba **Calendário** onde a equipe pode agendar uma temporada inteira de reuniões de uma vez:
+A página do grupo no B1 Admin também tem uma seção **Calendário** onde a equipe pode agendar uma temporada inteira de reuniões de uma vez:
 
-1. Abra o grupo no B1 Admin e selecione a aba **Calendário**.
-2. Clique em **Adicionar Eventos** para abrir o diálogo **Adicionar Eventos Recorrentes**.
+1. Abra o grupo no B1 Admin e, na seção **Calendário**, clique em **Todos os eventos**.
+2. Clique em **+ Adicionar Eventos** para abrir o diálogo **Adicionar Eventos Recorrentes**.
 3. Escolha a programação (semanal, a cada 2 semanas, mensal ou uma vez), as datas da **Primeira Reunião** e **Última Reunião** e, opcionalmente, **Pular feriados**.
 4. Revise a visualização das datas de reunião e desmarque qualquer uma para pular.
 5. Deixe **Permitir RSVPs** marcado se você quer que os membros possam responder a esses eventos (veja abaixo), depois salve.
@@ -69,8 +69,8 @@ A página do grupo no B1 Admin também tem uma aba **Calendário** onde a equipe
 
 Os eventos do grupo podem coletar RSVPs — um **Sim**, **Não** ou **Talvez** para cada ocorrência do evento.
 
-- **Permitir RSVPs** está ligado por padrão para eventos criados através do diálogo de adição em massa; desmarque para desativar respostas para esses eventos. Eventos com RSVPs desativados aparecem como **Desabilitado** na aba de calendário.
-- Na aba de calendário de grupo do B1 Admin, cada evento mostra um resumo de respostas (por exemplo, "5 sim · 2 talvez · 1 não"). Clique para abrir a lista de **Respostas RSVP**, que lista quem respondeu sim, talvez e não para essa ocorrência.
+- **Permitir RSVPs** está ligado por padrão para eventos criados através do diálogo de adição em massa; desmarque para desativar respostas para esses eventos. Eventos com RSVPs desativados aparecem como **Desabilitado** na lista de eventos do grupo.
+- Na lista de eventos do grupo no B1 Admin, cada evento mostra um resumo de respostas (por exemplo, "5 sim · 2 talvez · 1 não"). Clique para abrir a lista de **Respostas RSVP**, que lista quem respondeu sim, talvez e não para essa ocorrência.
 
 :::tip
 RSVPs dão aos líderes uma contagem de cabeças sem a formalidade do registro completo de eventos. Para inscrições pagas ou eventos gerenciados por capacidade, use [registro de eventos](../calendars/creating-calendars.md#enabling-event-registration) em vez disso.

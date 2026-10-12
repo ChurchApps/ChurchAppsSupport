@@ -24,8 +24,8 @@ Der Importvorgang verwendet einen zweistufigen Arbeitsablauf: Zuerst sehen Sie e
 
 ## Transaktionen importieren
 
-1. Navigieren Sie in **B1 Admin** zu **Spenden > Stapel**.
-2. Klicken Sie auf den Link **Stripe-Import** am unteren Rand der Stapelseite.
+1. Navigieren Sie in **B1 Admin** zu **Spenden > Stripe-Import**. (Sie können auch oben auf der Seite **Bündel** auf **Fehlende Stripe-Transaktionen importieren** klicken.)
+2. Die Seite **Stripe-Import** öffnet sich.
 3. Wählen Sie einen **Zeitraum** für die Transaktionen, die Sie importieren möchten.
 4. Klicken Sie auf **Vorschau**, um einen Probelauf durchzuführen.
 
@@ -47,7 +47,7 @@ Der Vorschauschritt erstellt keine Einträge. Es ist eine reine Leseprüfung, da
 
 1. Überprüfen Sie die Vorschauergebnisse und die Zusammenfassungssummen.
 2. Klicken Sie auf **Fehlende importieren**, um alle als **Neu** markierten Transaktionen zu importieren.
-3. Nach Abschluss des Imports werden die Statusanzeigen neben jeder Transaktion aktualisiert, um das Ergebnis anzuzeigen.
+3. Nach Abschluss des Imports werden die Statusabzeichen neben jeder Transaktion aktualisiert, um das Ergebnis anzuzeigen.
 
 ## Tipps zur Nutzung des Stripe-Imports
 

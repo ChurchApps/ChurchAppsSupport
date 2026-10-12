@@ -38,11 +38,11 @@ Passar o mouse sobre um evento mostra o título do evento e a sala ou recurso ao
 
 ## Filtrando por Sala ou Recurso
 
-Use o menu suspenso **Filtro** no canto superior esquerdo para estreitar o calendário para uma sala ou recurso único. Selecione **Todas as Salas & Recursos** para retornar à visualização completa.
+Use o menu suspenso **Sala / Recurso** no canto superior esquerdo para estreitar o calendário para uma sala ou recurso único. Selecione **Todas as Salas & Recursos** para retornar à visualização completa.
 
 ## Reservando uma Sala ou Recurso
 
-1. Clique no botão **Reservar** no canto superior direito da página.
+1. Clique no botão **Reservar** no topo da página.
 2. No diálogo que se abre, preencha os detalhes do evento:
    - **Título** — o nome do evento
    - **Início** e **Fim** data/hora

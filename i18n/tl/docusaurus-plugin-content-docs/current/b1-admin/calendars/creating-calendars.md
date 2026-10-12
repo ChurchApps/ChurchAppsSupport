@@ -21,23 +21,23 @@ Sa pamamagitan ng paggawa ng kalendaryo sa B1 Admin, makakabuo ka ng piniling ta
 ## Paggawa ng Bagong Kalendaryo
 
 1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), palawakin ang **Calendars**, at i-click ang **Calendars**.
-2. I-click ang **Add Calendar**.
+2. I-click ang **Add Calendar** sa itaas ng pahina. Lalabas ang form ng bagong kalendaryo sa ilalim ng listahan ng mga kalendaryo.
 3. Maglagay ng **pangalan** para sa kalendaryo mo (halimbawa, "Youth Ministry Events" o "Main Church Calendar").
 4. Magdagdag ng opsyonal na **paglalarawan** para maintindihan ng iyong team kung para saan ang kalendaryong ito.
 5. I-click ang **Create** para i-save ang bago mong kalendaryo.
 
 ## Ang Pahina ng Detalye ng Kalendaryo
 
-Pagkatapos gumawa ng kalendaryo, i-click ito para buksan ang pahina ng detalye. May dalawang pangunahing bahagi ang pahinang ito:
+Pagkatapos gumawa ng kalendaryo, i-click ang **Manage Events** sa hilera nito para buksan ang pahina ng detalye. May dalawang pangunahing bahagi ang pahinang ito:
 
-- **Kaliwang column** -- Isang tanaw ng kalendaryo na nagpapakita ng mga event na kinuha mula sa mga nakakonektang grupo.
-- **Kanang column** -- Ang listahan ng mga kaugnay na grupo. Dito mo pinamamahalaan kung aling mga grupo ang kasama sa kalendaryong ito.
+- **Kaliwang column** -- Ang pangalan ng kalendaryo kasama ang mga aksyon nito (**New Event**, **Edit**, **Import .ics**, at **Print**), kasunod ang listahan ng **Groups in Calendar** na nagpapakita kung aling mga grupo ang kasama sa kalendaryong ito. I-click ang **Remove** sa tabi ng grupo para alisin ito sa kalendaryo.
+- **Pangunahing bahagi** -- Ang view ng **Calendar Events** na nagpapakita ng mga event na kinuha mula sa mga nakakonektang grupo, kasama ang mga button na **Subscribe** at **Add Group** sa itaas nito.
 
 ## Pagkonekta ng mga Grupo
 
-Ang mga grupong may event sa kalendaryo ay awtomatikong lumalabas sa listahan ng mga grupo sa kanang bahagi ng pahina ng detalye.
+Ang mga grupong may event sa kalendaryo ay awtomatikong lumalabas sa listahan ng **Groups in Calendar** sa kaliwang bahagi ng pahina ng detalye.
 
-1. I-click ang **Add** sa seksyon ng mga grupo para iugnay ang isang grupo sa kalendaryo mo.
+1. I-click ang **Add Group** sa itaas ng kalendaryo para iugnay ang isang grupo dito.
 2. Piliin ang grupo mula sa dropdown.
 3. Piliin kung isasama ang **lahat ng event** mula sa grupong iyon o ang **mga partikular na event** lamang.
 4. I-click ang **Save**.

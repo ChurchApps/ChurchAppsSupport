@@ -35,7 +35,8 @@ Seus planos são divididos em duas abas: **Próximos** e **Passados**. Cada entr
 Abaixo da lista há uma seção **Datas de Bloqueio**. Use-a para gerenciar datas quando você está indisponível para serviço. Você pode adicionar, editar e remover intervalos de datas de bloqueio para que seus líderes de equipe saibam quando agendar ao seu redor.
 
 :::info
-Sua igreja pode enviar **lembretes** antes dos serviços que você está agendado, por email e como uma notificação do app. Se você ainda não respondeu, você pode **Aceitar** ou **Recusar** direto do email de lembrete — sem necessidade de sign-in.
+Sua igreja pode enviar **lembretes** antes dos serviços que você está agendado, por email e como uma notificação do app. Se sua igreja enviar textos, você também pode recebê-los por texto ativando **Text messages** em suas [Preferências de Notificação](../getting-started/notification-preferences.md). Se você ainda não respondeu
+, você pode **Aceitar** ou **Recusar** direto do email de lembrete — sem necessidade de sign-in.
 :::
 
 ## Visualizando Detalhes do Plano

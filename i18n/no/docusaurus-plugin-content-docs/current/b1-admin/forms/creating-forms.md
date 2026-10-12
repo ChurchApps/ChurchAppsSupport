@@ -32,7 +32,7 @@ Det nye skjemaet vises i listen. Klikk på det for å begynne å legge til spør
 
 ## Skrive ut et tomt skjema
 
-Trenger du en papirkopi å dele ut, for eksempel et besøkskort i vestibylen eller et skjema som noen uten internett kan fylle ut for hånd? Klikk på **utskriftsikonet** ved siden av et skjema i hovedlisten over skjemaer for å åpne en forhåndsvisning, og klikk deretter på **Skriv ut**. Tomme felt skrives ut med en strek eller en avkrysningsboks for hvert spørsmål, slik at folk kan fylle dem ut for hånd. Obligatoriske spørsmål er merket med en stjerne. Menighetens navn skrives ut øverst, over skjemanavnet. Det finnes ingen andre utskriftsvalg. Du skriver ut hele skjemaet eller ingenting.
+Trenger du en papirkopi å dele ut, for eksempel et besøkskort i vestibylen eller et skjema som noen uten internett kan fylle ut for hånd? Klikk på **Skriv ut** ved siden av et skjema i hovedlisten over skjemaer for å åpne en forhåndsvisning, og klikk deretter på **Skriv ut**. Tomme felt skrives ut med en strek eller en avkrysningsboks for hvert spørsmål, slik at folk kan fylle dem ut for hånd. Obligatoriske spørsmål er merket med en stjerne. Menighetens navn skrives ut øverst, over skjemanavnet. Det finnes ingen andre utskriftsvalg. Du skriver ut hele skjemaet eller ingenting.
 
 ## Legge til spørsmål
 
@@ -81,7 +81,7 @@ Oppfølgings-e-poster sendes først etter at menigheten din er godkjent for å s
 
 ## Duplisere et skjema
 
-For å bruke et skjema som utgangspunkt for et nytt klikker du på ikonet **Dupliser** (kopiikonet) ved siden av skjemaet i skjemalisten. B1 oppretter en eksakt kopi av skjemaet, inkludert alle spørsmål, som du deretter kan gi nytt navn og redigere uavhengig av originalen.
+For å bruke et skjema som utgangspunkt for et nytt klikker du på **Dupliser** ved siden av skjemaet i skjemalisten og bekrefter. B1 oppretter en eksakt kopi av skjemaet, inkludert alle spørsmål, som du deretter kan gi nytt navn og redigere uavhengig av originalen.
 
 :::tip
 Duplisering er praktisk for tilbakevendende arrangementer der påmeldingsspørsmålene er de samme fra år til år. Dupliser fjorårets skjema, oppdater navn og datoer, så er du klar.

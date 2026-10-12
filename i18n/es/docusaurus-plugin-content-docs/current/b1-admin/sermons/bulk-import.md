@@ -22,10 +22,10 @@ La página Bulk Import te permite rellenar rápidamente tu biblioteca de sermone
 ## Elegir Tu Fuente
 
 1. En B1 Admin, abre el [Menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expande **Sermons** y haz clic en **Sermons**. Haz clic en **Add Sermon** y elige **Bulk Import** del menú.
-2. Verás dos tarjetas clickeables:
-   - **YouTube** (rojo) -- Importa videos de un canal de YouTube
-   - **Vimeo** (azul) -- Importa videos de una cuenta de Vimeo
-3. Haz clic en la tarjeta para la plataforma donde se alojan tus sermones.
+2. Bajo **Choose Import Source**, verás dos opciones:
+   - **YouTube** -- Importa videos de un canal de YouTube
+   - **Vimeo** -- Importa videos de una cuenta de Vimeo
+3. Haz clic en la opción de la plataforma donde se alojan tus sermones (o haz clic en **Import from YouTube** / **Import from Vimeo** debajo de su descripción). Haz clic en **Back** en la parte superior de la página para volver a la elección de fuente.
 
 :::tip
 Puedes volver y cambiar de fuente en cualquier momento si tienes videos en ambas plataformas.

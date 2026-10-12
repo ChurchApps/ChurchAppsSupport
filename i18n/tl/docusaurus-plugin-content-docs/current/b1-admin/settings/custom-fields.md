@@ -20,7 +20,7 @@ Hinahayaan ka ng **Custom Fields** na subaybayan ang sarili mong impormasyon sa 
 
 ## Pagbubukas ng Custom Fields
 
-Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas na kaliwa), piliin ang **Settings > Settings**, at piliin ang card na **Custom Fields**. Maaari ka ring dumiretso rito sa **/settings/custom-fields**. Makikita mo ang listahan ng bawat field na na-define mo, na nagpapakita ng **Name** at **Field Type** nito. Kung wala ka pang nagagawa, ang nakasulat sa panel ay *"No custom fields have been added yet."*
+Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas na kaliwa), piliin ang **Settings > Settings**, at i-click ang **Custom Fields** sa listahan sa kaliwa para mag-scroll sa seksyong **Custom Fields**. Maaari ka ring dumiretso rito sa **/settings/custom-fields**. Makikita mo ang listahan ng bawat field na na-define mo, na nagpapakita ng **Name** at **Field Type** nito. Kung wala ka pang nagagawa, ang nakasulat sa panel ay *"No custom fields have been added yet."*
 
 ## Pagdaragdag ng Field
 
@@ -55,14 +55,14 @@ Buksan ang isang field para i-edit at i-click ang **Delete**. Hihingan ka ng kum
 
 ## Paglalagay ng mga Value sa isang Tao
 
-Kapag may kahit isang custom field na, ang mga value nito ay nasa tabi mismo ng mga built-in na detalye sa record ng bawat tao — makikita mo ang mga ito sa **Personal Details** at ine-edit sa parehong form na ginagamit mo para sa iba pang impormasyon ng tao. Walang dagdag na lilitaw hangga't hindi mo pa na-define ang unang field mo.
+Kapag may kahit isang custom field na, ang mga value nito ay nasa tabi mismo ng mga built-in na detalye sa record ng bawat tao — makikita mo ang mga ito kasama ng contact details ng tao sa kaliwa ng profile at ine-edit sa parehong form na ginagamit mo para sa iba pang impormasyon ng tao. Walang dagdag na lilitaw hangga't hindi mo pa na-define ang unang field mo.
 
 1. Buksan ang record ng isang tao sa **People**.
-2. Sa seksyong **Personal Details**, i-click ang button na **Edit** (lapis).
+2. I-click ang button na **Edit** sa kaliwa ng profile, sa ibaba ng contact details ng tao.
 3. Mag-scroll sa lugar ng **Custom Fields** sa ibaba ng edit form at maglagay ng value para sa bawat field. Ipinapakita ng bawat field ang input na tugma sa uri nito — date picker para sa mga Date field, yes/no dropdown para sa mga Yes/No field, pick-list para sa Multiple Choice, at iba pa.
 4. I-click ang **Save**. Sabay na sine-save ang iyong mga custom-field value kasama ng iba pang detalye ng tao.
 
-Pagbalik sa profile, ang anumang field na may value ay makikita na sa seksyong **Personal Details** (ang mga sagot na Yes/No ay mababasa bilang *Yes* o *No*, at ang Multiple Choice ay nagpapakita ng label ng opsyon). Ang mga field na naiwang blangko ay itinatago lang. Para mag-alis ng value, i-edit ang tao, i-clear ang field, at i-save — ang walang lamang value ay binubura sa record sa halip na iimbak bilang blangko.
+Pagbalik sa profile, ang anumang field na may value ay makikita na sa ilalim ng contact details ng tao bilang *Field name: value* (ang mga sagot na Yes/No ay mababasa bilang *Yes* o *No*, at ang Multiple Choice ay nagpapakita ng label ng opsyon). Ang mga field na naiwang blangko ay itinatago lang. Para mag-alis ng value, i-edit ang tao, i-clear ang field, at i-save — ang walang lamang value ay binubura sa record sa halip na iimbak bilang blangko.
 
 :::tip
 Ang klasikong gamit nito ay kaligtasan ng mga volunteer: gumawa ng **Date** field na tinatawag na *Background check expires*, itala ang petsa ng bawat volunteer, pagkatapos ay bumuo ng [Saved List](../people/lists.md) na magmamarka sa sinumang lumampas na ang petsa.
@@ -85,7 +85,7 @@ I-save ang anumang custom-field na paghahanap bilang [List](../people/lists.md).
 
 ## Pagpapakita ng Custom Field bilang Column
 
-Para makita ang mga value ng isang field para sa lahat nang sabay-sabay, idagdag ito bilang column sa pahina ng **People**. Buksan ang column chooser, lumipat sa tab na **Custom**, at lagyan ng check ang field. Lalabas ang value ng bawat tao sa sarili nitong column sa tabi ng mga built-in. Tingnan ang [Pagpapakita ng Custom Fields bilang mga Column](../people/searching-people.md#showing-custom-fields-as-columns).
+Para makita ang mga value ng isang field para sa lahat nang sabay-sabay, idagdag ito bilang column sa pahina ng **People**. Lumipat sa **View as** na **Table**, i-click ang icon na **Select columns** sa header ng pahina, lumipat sa tab na **Custom**, at lagyan ng check ang field. Lalabas ang value ng bawat tao sa sarili nitong column sa tabi ng mga built-in. Tingnan ang [Pagpapakita ng Custom Fields bilang mga Column](../people/searching-people.md#showing-custom-fields-as-columns).
 
 ## Ano ang Nangyayari sa Merge
 

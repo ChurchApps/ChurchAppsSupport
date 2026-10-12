@@ -19,11 +19,11 @@ Si tu iglesia se reúne en más de una ubicación, **Sedes** te permite rastrear
 
 ## Abrir configuración de sedes
 
-En B1 Admin, abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), elige **Configuración > Configuración**, y selecciona la tarjeta **Sedes**. También puedes ir directamente a **/settings/campuses**. Verás una lista de todas las sedes configuradas con su nombre, ubicación y zona horaria.
+En B1 Admin, abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), elige **Configuración > Configuración**, y haz clic en **Sedes** en la lista de la izquierda para desplazarte a la sección **Sedes**. También puedes ir directamente a **/settings/campuses**. Verás una lista de todas las sedes configuradas con su nombre, ubicación y zona horaria.
 
 ## Agregar una sede
 
-1. Haz clic en **Agregar sede** (o el botón **+** si aún no existen sedes).
+1. Haz clic en **Agregar sede**.
 2. Completa los detalles de la sede:
    - **Nombre** *(requerido)* — el nombre de visualización que se muestra en todo B1 Admin (por ejemplo, "Sede principal" o "Sede norte").
    - **Dirección** — la dirección de la calle de la sede (utilizada para visualización informativa; no es lo mismo que tu dirección de iglesia principal en Configuración de iglesia).

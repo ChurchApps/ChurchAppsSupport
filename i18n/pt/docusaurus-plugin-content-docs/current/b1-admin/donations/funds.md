@@ -20,7 +20,7 @@ Fundos permitem que você categorize doações por finalidade para que possa ras
 
 ## A Página de Fundos
 
-Navegue até **Doações > Fundos** para ver uma lista de todos os seus fundos. Cada linha mostra o nome do fundo e seu status **dedutível de imposto**, que determina se as doações para esse fundo aparecem nas [declarações de doações](giving-statements.md) de final de ano.
+Navegue até **Doações > Fundos** para ver uma lista de todos os seus fundos. Cada linha mostra o nome do fundo e seu **Status Fiscal** (dedutível ou não dedutível de imposto), que determina se as doações para esse fundo aparecem nas [declarações de doações](giving-statements.md) de final de ano.
 
 ## Criando um Novo Fundo
 
@@ -34,7 +34,7 @@ O novo fundo aparece imediatamente em sua lista e fica disponível ao inserir do
 
 ## Editando e Deletando Fundos
 
-- Para editar um fundo, clique no botão **Editar** ao lado dele. Você pode alterar o nome, alternar a configuração dedutível de imposto ou alternar **Visível para Doadores** para mostrar ou ocultar dos formulários de doação.
+- Para editar um fundo, clique em **Editar** na sua linha. Você pode alterar o nome, alternar a configuração dedutível de imposto ou alternar **Visível para Doadores** para mostrar ou ocultar dos formulários de doação.
 - Para deletar um fundo, abra o formulário de edição e clique em **Deletar**.
 
 :::warning
@@ -42,23 +42,23 @@ Deletar um fundo não remove doações que foram previamente atribuídas a ele. 
 :::
 
 :::info
-Fundos ocultos de doadores mostram uma etiqueta **Oculto** ao lado de seu nome nesta lista. Fundos ocultos ainda funcionam para doações registradas manualmente no B1 Admin -- eles simplesmente não aparecem como uma opção nos formulários de doação públicos ou de membros.
+Fundos ocultos de doadores mostram um distintivo **Oculto** ao lado de seu nome nesta lista. Fundos ocultos ainda funcionam para doações registradas manualmente no B1 Admin -- eles simplesmente não aparecem como uma opção nos formulários de doação públicos ou de membros.
 :::
 
 ## Visualizando Detalhes do Fundo
 
 Clique em um **nome de fundo** para abrir sua página de detalhe. Esta página mostra:
 
-- **Histórico de doações** -- uma lista de todas as doações para este fundo
-- **Filtro de intervalo de datas** -- restrinja os resultados a um período específico
-- **Estatísticas de resumo** -- doações totais, doadores únicos e valor em dólares total
+- **Resumo** -- uma linha abaixo do título da página com o número de presentes, o número de doadores e o valor total em dólares
+- **Filtro de intervalo de datas** -- defina uma **Data de Início** e uma **Data de Término** e clique em **Filtrar** para restringir os resultados a um período específico
+- **Histórico de doações** -- uma lista de doações para este fundo com a data, o lote, o doador e o valor. Clique em **Exportar** acima da lista para baixá-la como CSV.
 
 Esta visualização é útil quando você precisa relatar uma iniciativa de doação específica ou verificar o progresso em direção a uma meta de arrecadação de fundos.
 
 ## Classificando e Exportando
 
 - Use os cabeçalhos das colunas para classificar fundos por nome.
-- Clique em **Exportar para CSV** para baixar sua lista de fundos como uma planilha.
+- Clique em **Exportar** no topo da página para baixar sua lista de fundos como uma planilha (CSV).
 
 :::tip
 Configure seus fundos antes de começar a [registrar doações](recording-donations.md). Ter todos os fundos em vigor garante que as doações sejam categorizadas corretamente desde o início.

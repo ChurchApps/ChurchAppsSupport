@@ -28,7 +28,7 @@ Organisieren Sie Ihre Predigten in Serien oder Sammlungen. Playlists erleichtern
 
 ### Live-Stream-Zeiten
 
-Konfigurieren Sie den Live-Streaming-Zeitplan Ihrer Gemeinde. Richten Sie wiederkehrende wöchentliche Gottesdienste oder einmalige Veranstaltungen ein, verwalten Sie Chat- und Videoeinstellungen und steuern Sie, wann Ihr Stream live geht. Besucher sehen die nächste geplante Gottesdienstzeit auf Ihrer Streaming-Seite. Siehe [Live-Streaming](live-streaming) für Einrichtungsanweisungen.
+Konfigurieren Sie den Live-Streaming-Zeitplan Ihrer Gemeinde. Richten Sie wiederkehrende wöchentliche Gottesdienste oder einmalige Veranstaltungen ein, verwalten Sie Chat- und Videoeinstellungen und steuern Sie, wann Ihr Stream live geht. Besucher sehen die nächste geplante Gottesdienstzeit auf Ihrer Streaming-Seite. Eine separate Seite **Einstellungen** unter **Predigten** steuert die Registerkarten (Chat, Gebet und benutzerdefinierte Links), die neben Ihrem Live-Stream angezeigt werden. Siehe [Live-Streaming](live-streaming) für Einrichtungsanweisungen.
 
 ### Massenimport
 

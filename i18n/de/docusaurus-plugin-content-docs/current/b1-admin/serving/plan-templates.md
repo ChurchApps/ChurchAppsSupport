@@ -21,14 +21,13 @@ Mit Plan-Vorlagen können Sie einen wiederverwendbaren Snapshot des Serviceauftr
 ## Speichern eines Plans als Vorlage
 
 1. Öffnen Sie einen vorhandenen Plan aus dem Bereich **Serving**.
-2. Klicken Sie auf die Schaltfläche **Templates** (oben auf der Planseite).
-3. Wählen Sie **Save as Template**.
-4. Geben Sie der Vorlage einen Namen (z. B. „Standard Sunday" oder „Worship + Sermon").
-5. Speichern Sie. Die Vorlage erfasst den aktuellen Serviceauftrag und die Positionen des Plans zu diesem Zeitpunkt.
+2. Klicken Sie im Abschnitt **Order of Service** des Plans auf **Save as Template**.
+3. Geben Sie der Vorlage einen Namen (z. B. „Standard Sunday" oder „Worship + Sermon").
+4. Speichern Sie. Die Vorlage erfasst den aktuellen Serviceauftrag, die Positionen und Notizen des Plans zu diesem Zeitpunkt.
 
 ## Verwaltung von Vorlagen
 
-Über die Schaltfläche **Templates** auf einer beliebigen Plantypseite können Sie:
+Klicken Sie auf einer beliebigen Plantypseite über der Planliste auf **Templates**, um **Plan Templates** zu öffnen. Dort können Sie:
 
 - **Rename** — Namen des Anzeigenamens der Vorlage ändern
 - **Update from plan** — ersetzen Sie den Inhalt der Vorlage durch den aktuellen Status eines Plans (nützlich, nachdem Sie Ihre Standardstruktur verfeinert haben)
@@ -37,13 +36,15 @@ Mit Plan-Vorlagen können Sie einen wiederverwendbaren Snapshot des Serviceauftr
 
 ## Anwenden einer Vorlage auf Pläne
 
-1. Klicken Sie auf die Schaltfläche **Templates** auf der Seite Plantyp.
+1. Klicken Sie auf der Seite Plantyp über der Planliste auf **Templates**.
 2. Klicken Sie auf das Symbol **Apply** (Kopiersymbol) neben der Vorlage, die Sie verwenden möchten.
 3. Wählen Sie, welche kommenden Pläne angewendet werden sollen, indem Sie ihre Kontrollkästchen aktivieren.
 4. Wählen Sie, was kopiert werden soll:
    - **Order of Service** — ersetzt die Serviceauftragselemente der ausgewählten Pläne durch die Elemente der Vorlage
    - **Positions** — ersetzt die Positionen der ausgewählten Pläne (und ihre Zuweisungen) durch die Positionen der Vorlage
 5. Klicken Sie auf **Apply**.
+
+Wenn die Vorlage Notizen enthält, werden durch das Anwenden auch die Notizen der ausgewählten Pläne durch die Notizen der Vorlage ersetzt.
 
 :::warning
 Das Anwenden von Positionen ersetzt alle vorhandenen Positionen und Zuweisungen auf den ausgewählten Plänen. Stellen Sie sicher, dass Sie noch nicht Freiwillige für diese Positionen geplant haben.
@@ -52,6 +53,10 @@ Das Anwenden von Positionen ersetzt alle vorhandenen Positionen und Zuweisungen 
 :::tip
 Wenden Sie die Serviceordnung ohne Positionen an, wenn Sie eine konsistente Lied-/Predigtstruktur wünschen, aber Freiwillige jede Woche unterschiedlich eingeplant sind.
 :::
+
+## Einen neuen Plan aus einer Vorlage starten
+
+Vorlagen werden über die Plantypen eines Ministeriums hinweg geteilt. Wenn Sie auf **New Plan** klicken und das Ministerium Vorlagen hat, enthält das Formular für neue Pläne eine Liste **Start from template**. Wählen Sie eine Vorlage aus und speichern Sie. Der neue Plan wird dann mit dem Serviceauftrag, den Positionen und Notizen der Vorlage erstellt. Die Auswahl einer Vorlage ersetzt die Optionen **Copy from Previous Plan** für diesen Plan.
 
 ## Halten Sie die Vorlagen auf dem Laufenden
 

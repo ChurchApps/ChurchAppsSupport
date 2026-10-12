@@ -22,7 +22,7 @@ L'editor di pagine B1 è un costruttore visuale drag-and-drop che ti permette di
 ## Apertura dell'Editor
 
 1. In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Website** e fai clic su **Pages**.
-2. Trova la pagina che desideri modificare nella tabella Pagine e fai clic su **Modifica**.
+2. Trova la pagina che desideri modificare nella tabella Pagine e fai clic su **Modifica Contenuto**.
 
 L'editor si apre in modalità a schermo intero. Il pannello sinistro mostra la struttura della tua pagina e gli elementi di contenuto disponibili; l'area centrale mostra un'anteprima dal vivo della tua pagina.
 
@@ -79,9 +79,18 @@ Hai già costruito una sezione ma desideri una struttura diversa? Usa lo strumen
    - **Live Stream** -- Il tuo lettore live stream, incorporato direttamente sulla pagina
    - **Podcast** -- Un elenco di episodi estratti da un URL feed RSS podcast esterno che fornisci, con impostazioni per quanti episodi mostrare e se visualizzare date e descrizioni. Questo è per presentare qualsiasi feed podcast sul tuo sito; per pubblicare i tuoi sermoni come podcast, vedi [Gestione Sermoni](../sermons/managing-sermons.md#your-podcast-feed) invece.
    - **Donazione** -- Un pulsante di donazione o un modulo di donazione incorporato
-   - **HTML Grezzo** -- Markup HTML personalizzato per casi di utilizzo avanzati
+   - **HTML** -- Il tuo HTML personalizzato, per casi d'uso avanzati come l'incorporamento di un widget di terze parti (vedi [Uso dell'elemento HTML](#using-the-html-element))
    - **iFrame** -- Incorpora contenuto esterno per URL
 3. Configura l'elemento utilizzando il pannello di impostazioni che appare.
+
+### Uso dell'elemento HTML {#using-the-html-element}
+
+L'elemento **HTML** ha due campi:
+
+- **HTML Content** -- Il markup da mostrare nella pagina. Eventuali tag `<script>` che inserisci qui vengono eseguiti sul tuo sito live.
+- **JavaScript (exclude script tag)** -- Codice script eseguito al caricamento della pagina. Puoi anche incollare qui lo snippet di incorporamento di un fornitore, con i suoi tag `<script>` inclusi, e verrà eseguito sul sito live.
+
+Se incolli nella casella JavaScript solo un indirizzo web (come il link di un'immagine), la casella diventa rossa con l'avviso *"This is a web address, not JavaScript."* Un indirizzo semplice in quella casella non fa nulla. Per mostrare un'immagine, usa un elemento **Immagine** oppure inserisci `<img src="...">` in **HTML Content**.
 
 ### Riordino del Contenuto
 
@@ -117,7 +126,7 @@ Usa i controlli di anteprima nella barra degli strumenti per verificare come la 
 - **Desktop** -- Visualizzazione browser a larghezza intera
 - **Mobile** -- Visualizzazione ristretta di dimensioni telefoniche
 
-Fai clic su **Anteprima** per aprire una versione dal vivo della pagina in una nuova scheda del browser, esattamente come la vedranno i visitatori.
+Per vedere la pagina dal vivo esattamente come la vedranno i visitatori, torna all'elenco Pagine e fai clic sul percorso della pagina. Si apre in una nuova scheda del browser.
 
 ## Verifica dell'Accessibilità
 
@@ -128,9 +137,9 @@ Fai clic sull'icona **Accessibilità** nella barra degli strumenti per eseguire 
 L'editor traccia automaticamente la tua cronologia di editing. Usa i pulsanti della barra degli strumenti o i tasti di scelta rapida per navigare:
 
 - **Annulla** (Ctrl+Z / Cmd+Z) -- Ripristina l'ultima azione
-- **Ripeti** (Ctrl+Y / Cmd+Y) -- Ri-applica un'azione annullata
+- **Ripeti** (Ctrl+Shift+Z o Ctrl+Y / Cmd+Shift+Z) -- Ri-applica un'azione annullata
 
-Puoi anche ripristinare la pagina a uno snapshot precedente. Fai clic su **Cronologia** nella barra degli strumenti per vedere un elenco di snapshot salvati con descrizioni, e fai clic su qualsiasi voce per ripristinare a quel punto.
+Puoi anche ripristinare la pagina a uno snapshot precedente. Fai clic su **Visualizza cronologia** nella barra degli strumenti per vedere un elenco di snapshot salvati con descrizioni, e fai clic su qualsiasi voce per ripristinare a quel punto.
 
 :::warning
 Ripristinare uno snapshot sostituisce il contenuto della tua pagina corrente con la versione dello snapshot. Questo non può essere annullato con il pulsante undo standard. Salva uno snapshot del tuo stato attuale prima di ripristinare uno vecchio se desideri mantenere l'opzione di tornare.
@@ -144,15 +153,15 @@ Le modifiche vengono salvate automaticamente mentre lavori. Un indicatore di sta
 
 Le pagine possono avere uno stato **pubblicato**, che controlla quando i visitatori vedono le tue modifiche. La barra degli strumenti visualizza un chip di stato che mostra lo stato attuale:
 
-- **Live al Salvataggio** -- La pagina non utilizza un flusso di lavoro di pubblicazione. Ogni modifica salvata viene pubblicata immediatamente. Questo è l'impostazione predefinita per le nuove pagine.
-- **Modifiche Non Pubblicate** -- La pagina è stata pubblicata in precedenza, ma hai apportato modifiche dall'ultima pubblicazione. I visitatori vedono ancora la versione precedentemente pubblicata.
+- **Live al salvataggio** -- La pagina non utilizza un flusso di lavoro di pubblicazione. Ogni modifica salvata viene pubblicata immediatamente. Questo è l'impostazione predefinita per le nuove pagine.
+- **Modifiche non pubblicate** -- La pagina è stata pubblicata in precedenza, ma hai apportato modifiche dall'ultima pubblicazione. I visitatori vedono ancora la versione precedentemente pubblicata.
 - **Pubblicato** -- La pagina è live e il tuo contenuto salvato corrisponde a quello che i visitatori vedono.
 
 Per pubblicare le tue modifiche, fai clic sul pulsante **Pubblica** nella barra degli strumenti. La pagina viene pubblicata immediatamente.
 
-Per tornare all'ultima versione pubblicata senza influire su quello che i visitatori vedono, apri il menu overflow (⋮) e fai clic su **Scarta Modifiche**.
+Per tornare all'ultima versione pubblicata senza influire su quello che i visitatori vedono, apri il menu overflow (⋮) e fai clic su **Scarta modifiche non pubblicate**.
 
-Per disattivare completamente una pagina, apri il menu overflow e fai clic su **Annulla Pubblicazione**. I visitatori non vedranno più quella pagina finché non la pubblichi di nuovo.
+Per smettere di usare il flusso di pubblicazione, apri il menu overflow e fai clic su **Disattiva pubblicazione**. Le modifiche tornano poi subito live a ogni salvataggio.
 
 :::tip
 Usa il flusso di lavoro bozza/pubblicazione quando desideri preparare una pagina -- ad esempio, per un evento imminente -- e fai che sia live solo al momento giusto. Costruisci e visualizza l'anteprima della pagina, poi fai clic su Pubblica quando sei pronto.

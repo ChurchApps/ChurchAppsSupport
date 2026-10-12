@@ -6,7 +6,7 @@ title: "Recherche"
 
 <div class="article-intro">
 
-Lorsque vous savez quel sujet vous souhaitez enseigner mais que vous n'êtes pas sûr(e) de quel programme ou quelle étude le contient, la fonction de recherche vous aide à trouver le bon contenu rapidement. La recherche fonctionne dans l'ensemble de la bibliothèque Lessons.church, y compris le contenu des fournisseurs externes.
+Lorsque vous savez quel sujet vous souhaitez enseigner mais que vous n'êtes pas sûr(e) de quel programme ou quelle étude le contient, la fonction de recherche vous aide à trouver le bon contenu rapidement. La recherche fonctionne dans les programmes, les études et les leçons de la bibliothèque Lessons.church.
 
 </div>
 
@@ -19,17 +19,17 @@ Lorsque vous savez quel sujet vous souhaitez enseigner mais que vous n'êtes pas
 
 ## Comment effectuer une recherche
 
-1. Accédez à la **page de recherche** depuis le haut du site Lessons.church.
-2. Saisissez un mot-clé ou une expression dans la **zone de recherche** (par exemple, « pardon », « David et Goliath » ou « prière »).
-3. Appuyez sur **Entrée** ou cliquez sur le bouton de recherche pour voir vos résultats.
+1. Cliquez sur l'icône de **recherche** en haut du site Lessons.church pour ouvrir la zone de recherche.
+2. Saisissez un mot-clé ou une expression (par exemple, « pardon », « David et Goliath » ou « prière »). Les résultats correspondants apparaissent dans une liste sous la zone pendant que vous tapez -- cliquez sur l'un d'eux pour y accéder directement.
+3. Appuyez sur **Entrée** pour ouvrir la page complète des résultats de recherche.
 
 ## Fonctionnement de la recherche
 
-La recherche est alimentée par une recherche en texte intégral dans l'ensemble de la bibliothèque Lessons.church. Elle examine les titres, les descriptions et le contenu des leçons pour trouver des correspondances avec vos mots-clés. Les résultats incluent des leçons de tous les programmes et fournisseurs disponibles, ce qui vous donne une vue complète de ce qui est disponible sur un sujet donné.
+La recherche examine les noms, les descriptions, les catégories et les tranches d'âge de chaque programme, étude et leçon de la bibliothèque Lessons.church. Elle trouve aussi le début d'un mot, ainsi « bapt » trouve « baptême ». Les correspondances dans un nom comptent le plus, et les programmes et études sont classés légèrement au-dessus des leçons individuelles. Le contenu des fournisseurs externes n'est pas inclus dans les résultats de recherche.
 
 ## Naviguer dans les résultats
 
-Les résultats de recherche affichent les leçons correspondantes ainsi que des informations sur le programme et l'étude auxquels chacune appartient. Cliquez sur n'importe quel résultat pour accéder directement à la page de cette leçon, où vous pouvez consulter le contenu complet, les sections, les rôles et les documents téléchargeables.
+Chaque résultat est étiqueté comme **programme**, **étude** ou **leçon**, accompagné de sa tranche d'âge lorsqu'elle est définie. Les études indiquent le programme auquel elles appartiennent, et les leçons indiquent leur étude et leur programme. Cliquez sur n'importe quel résultat pour accéder directement à cette page. La page d'une leçon affiche le contenu complet, les sections, les rôles et les documents téléchargeables.
 
 ## Quand utiliser la recherche
 
@@ -40,7 +40,7 @@ La recherche est particulièrement utile lorsque :
 - Vous ne connaissez pas encore les programmes disponibles et souhaitez un moyen rapide d'explorer ce qui est proposé.
 
 :::tip
-Si votre mot-clé renvoie trop de résultats, essayez une expression plus précise. Par exemple, recherchez « Bon Samaritain » au lieu de simplement « Samaritain » pour affiner les résultats.
+Les résultats qui correspondent à davantage de vos mots sont classés plus haut. Si le résultat recherché est enfoui, ajoutez un autre mot précis. Par exemple, « Bon Samaritain » place en tête les leçons sur cette parabole.
 :::
 
 Si vous savez déjà quel programme vous souhaitez, la navigation par programme est généralement plus rapide. Consultez [Programmes et études](./programs-and-studies.md) pour plus de détails sur la navigation dans la hiérarchie du contenu.

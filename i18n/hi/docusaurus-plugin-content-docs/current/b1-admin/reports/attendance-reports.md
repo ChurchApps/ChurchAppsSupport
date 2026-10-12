@@ -23,7 +23,7 @@ B1 Admin attendance को समझने में मदद करने क�
 
 Attendance Trend report दिखाता है कि आपकी services के लिए attendance समय के साथ कैसे बदलता है।
 
-1. अपने browser में सीधे **admin.b1.church/reports/attendanceTrend** पर जाएं (reports के navigation menu में कोई entry नहीं है — address को bookmark करना सबसे आसान तरीका है इस पर वापस आने के लिए)। समान report Attendance page के **Attendance Trend** tab पर भी है।
+1. अपने browser में सीधे **admin.b1.church/reports/attendanceTrend** पर जाएं (reports के navigation menu में कोई entry नहीं है — address को bookmark करना सबसे आसान तरीका है इस पर वापस आने के लिए)। समान report Attendance page पर भी है: **All years** पर क्लिक करें, फिर **Attendance Trend** tab चुनें।
 2. Optional रूप से परिणामों को filter करने के लिए **Campus**, **Service**, **Service Time**, या **Group** चुनें।
 3. **Start Date** और **End Date** सेट करें। Default रूप से report पिछले year को cover करता है, एक year ago से लेकर आज तक, और end date को पूरी तरह से include किया जाता है। **Run Report** पर क्लिक करें।
 4. Report एक bar chart और total visits per week की table दिखाता है। हर week को उस week के Sunday के date के साथ label किया जाता है, और table का **Session Dates** column actual dates को list करता है जिन्हें attendance था उस week में (उदाहरण के लिए, "9/27, 9/30")।
@@ -34,7 +34,7 @@ Attendance Trend report दिखाता है कि आपकी services �
 
 Group Attendance report दिखाता है कि date range में हर group session को किसने attend किया।
 
-1. अपने browser में सीधे **admin.b1.church/reports/groupAttendance** पर जाएं, या Attendance page के **Group Attendance** tab को खोलें।
+1. अपने browser में सीधे **admin.b1.church/reports/groupAttendance** पर जाएं, या Attendance page पर **All years** पर क्लिक करके **Group Attendance** tab चुनें।
 2. Optional रूप से **Campus** और **Service** चुनें।
 3. **Start Date** और **End Date** सेट करें। Default रूप से report last Sunday से लेकर आज तक को cover करता है, और end date को पूरी तरह से include किया जाता है।
 4. **Run Report** पर क्लिक करें।

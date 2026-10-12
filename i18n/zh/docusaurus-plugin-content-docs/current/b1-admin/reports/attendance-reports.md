@@ -23,7 +23,7 @@ B1 Admin 提供三份出勤报告，帮助您了解人员如何与您的服务�
 
 出勤趋势报告显示您的服务出勤如何随时间变化。
 
-1. 直接在浏览器中转到 **admin.b1.church/reports/attendanceTrend**（报告在导航菜单中没有条目 -- 将地址加入书签是返回的最简单方法）。同样的报告也在出勤页面的 **Attendance Trend** 标签页上。
+1. 直接在浏览器中转到 **admin.b1.church/reports/attendanceTrend**（报告在导航菜单中没有条目 -- 将地址加入书签是返回的最简单方法）。同样的报告也在出勤页面上：点击 **All years**，然后选择 **Attendance Trend** 标签页。
 2. 可选地选择 **Campus**、**Service**、**Service Time** 或 **Group** 以过滤结果。
 3. 设置 **Start Date** 和 **End Date**。默认情况下，报告涵盖过去一年，从一年前到今天，包括结束日期。点击 **Run Report**。
 4. 报告显示一张柱状图和每周总访问量表。每周标记为该周日期的日期，表格的 **Session Dates** 列列出该周有出勤的实际日期（例如"9/27, 9/30"）。
@@ -34,7 +34,7 @@ B1 Admin 提供三份出勤报告，帮助您了解人员如何与您的服务�
 
 小组出勤报告显示谁在一个日期范围内参加了每个小组会议。
 
-1. 直接在浏览器中转到 **admin.b1.church/reports/groupAttendance**，或打开出勤页面的 **Group Attendance** 标签页。
+1. 直接在浏览器中转到 **admin.b1.church/reports/groupAttendance**，或在出勤页面上点击 **All years**，然后选择 **Group Attendance** 标签页。
 2. 可选地选择 **Campus** 和 **Service**。
 3. 设置 **Start Date** 和 **End Date**。默认情况下，报告涵盖上周日到今天，包括结束日期。
 4. 点击 **Run Report**。

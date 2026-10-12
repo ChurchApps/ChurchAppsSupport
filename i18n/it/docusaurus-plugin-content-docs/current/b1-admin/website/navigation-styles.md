@@ -32,12 +32,13 @@ Puoi personalizzare i colori per entrambe le modalità indipendentemente.
 
 1. In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra) e espandi **Website**
 2. Fai clic su **Appearance**
-3. Scorri fino alla sezione **Stili Navigazione**
-4. Fai clic su **Modifica Stili Navigazione**
+3. Nell'elenco **Impostazioni Stile**, fai clic su **Navigation**
+
+L'editor **Navigation Styling** ha due schede: **Header (solid)** e **Header over hero (transparent)**.
 
 ## Configurazione Navigazione Solida
 
-La navigazione solida appare con un colore di sfondo dietro la barra di navigazione. Puoi personalizzare:
+La navigazione solida appare con un colore di sfondo dietro la barra di navigazione. Queste impostazioni si trovano nella scheda **Header (solid)**. Puoi personalizzare:
 
 ### Colore Sfondo
 
@@ -62,14 +63,14 @@ La navigazione solida appare con un colore di sfondo dietro la barra di navigazi
 
 ### Colore Attivo
 
-1. Attiva l'interruttore **Sovrascrivi** per il **Colore Attivo**
+1. Attiva l'interruttore **Sovrascrivi** per il **Colore link attivo**
 2. Scegli il colore per il link della pagina attualmente attiva
 3. Questo aiuta gli utenti a sapere su quale pagina si trovano
 4. L'impostazione predefinita è blu chiaro (#03A9F4)
 
 ## Configurazione Navigazione Trasparente
 
-La navigazione trasparente si sovrappone al contenuto della tua pagina senza sfondo. Puoi personalizzare:
+La navigazione trasparente si sovrappone al contenuto della tua pagina senza sfondo. Queste impostazioni si trovano nella scheda **Header over hero (transparent)**. Puoi personalizzare:
 
 ### Colore Link
 
@@ -87,7 +88,7 @@ La navigazione trasparente si sovrappone al contenuto della tua pagina senza sfo
 
 ### Colore Attivo
 
-1. Attiva l'interruttore **Sovrascrivi** per il **Colore Attivo**
+1. Attiva l'interruttore **Sovrascrivi** per il **Colore link attivo**
 2. Scegli il colore dell'indicatore di pagina attiva
 3. Dovrebbe risaltare mentre si adatta ancora al tuo design
 4. L'impostazione predefinita è blu chiaro (#03A9F4)
@@ -98,7 +99,7 @@ La navigazione trasparente non ha un'impostazione del colore di sfondo poiché s
 
 ## Salvataggio delle Modifiche
 
-1. Dopo aver configurato i tuoi colori, fai clic su **Salva Stili Navigazione**
+1. Dopo aver configurato i tuoi colori, fai clic su **Salva Navigazione**
 2. Le tue modifiche si applicano immediatamente al tuo sito web live
 3. Visita il tuo sito web per vedere la navigazione in entrambe le modalità
 
@@ -107,7 +108,7 @@ La navigazione trasparente non ha un'impostazione del colore di sfondo poiché s
 Se desideri tornare ai colori predefiniti:
 
 1. Disattiva gli interruttori **Sovrascrivi** per eventuali colori personalizzati
-2. Fai clic su **Salva Stili Navigazione**
+2. Fai clic su **Salva Navigazione**
 3. La navigazione torna allo schema di colore predefinito
 
 Oppure fai clic su **Annulla** per scartare tutte le modifiche senza salvarle.

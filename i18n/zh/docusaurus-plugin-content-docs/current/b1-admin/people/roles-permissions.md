@@ -24,7 +24,7 @@ B1 Admin 使用基于角色的权限系统来控制团队中每个用户可以�
 
 每个角色控制对 B1 Admin 特定区域的访问权限，包括：
 
-- **People** -- 查看和编辑成员资料。人员记录上的备注标签页需要 **Edit People** 权限，单独的 **View Confidential Notes** 权限控制对机密备注部分的访问（用于牧养关怀、个人历史和类似的敏感备注）。
+- **People** -- 查看和编辑成员资料。人员记录上的备注部分需要 **Edit People** 权限，单独的 **View Confidential Notes** 权限控制对机密备注部分的访问（用于牧养关怀、个人历史和类似的敏感备注）。
 - **Donations** -- 管理捐献和财务报告
 - **Attendance** -- 记录和查看出勤数据
 - **Forms** -- 创建和管理 [自定义表单](../forms/creating-forms.md)

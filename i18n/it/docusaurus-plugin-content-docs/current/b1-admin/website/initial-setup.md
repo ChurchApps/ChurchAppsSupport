@@ -29,7 +29,7 @@ La tua chiesa riceve automaticamente un sottodominio su B1.church (ad esempio, `
 4. Per utilizzare un dominio personalizzato, accedi al tuo provider DNS (come GoDaddy, Cloudflare o AWS) e aggiungi due record:
    - Un **record A** per il tuo dominio root che punta a `3.23.251.61`
    - Un **record CNAME** per `www` che punta a `proxy.b1.church`
-5. Torna a B1.church Admin, aggiungi il tuo dominio personalizzato all'elenco, e fai clic su **Aggiungi** quindi **Salva**. Il tuo sito sarà accessibile dal tuo dominio personalizzato entro pochi minuti.
+5. Torna a B1.church Admin, apri la sezione **Domini** nella stessa pagina Impostazioni, aggiungi il tuo dominio personalizzato all'elenco, e fai clic su **Aggiungi** quindi **Salva**. Il tuo sito sarà accessibile dal tuo dominio personalizzato entro pochi minuti.
 
 :::tip
 Se non vedi l'opzione Impostazioni, chiedi alla persona che ha configurato il tuo account chiesa di concederti il permesso "Modifica Impostazioni Chiesa". Vedi [Ruoli e Permessi](../settings/roles-permissions.md) per i dettagli.
@@ -52,7 +52,7 @@ Per istruzioni dettagliate su come lavorare con le pagine e la navigazione, vedi
 
 1. Nel menu Jump, scegli **Website > Aspetto**.
 2. Usa la **Tavolozza Colori** per impostare i colori del tuo marchio per i toni primario, secondario e di accento.
-3. Sotto **Impostazioni Tipografia**, scegli i tuoi caratteri di titolo e corpo dal browser dei caratteri.
+3. Sotto **Caratteri**, scegli i tuoi caratteri di titolo e corpo dal browser dei caratteri.
 4. Carica il logo della tua chiesa sotto **Logo** nelle Impostazioni Stile. Fornisci sia una versione con sfondo chiaro che con sfondo scuro.
 5. Configura il tuo **Piè di Pagina Sito** con le informazioni di contatto e i link della tua chiesa.
 

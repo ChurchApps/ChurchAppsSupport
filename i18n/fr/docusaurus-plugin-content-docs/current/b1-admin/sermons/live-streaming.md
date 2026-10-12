@@ -19,14 +19,14 @@ La page Horaires de diffusion en direct vous permet de configurer le calendrier 
 
 </div>
 
-La page a deux onglets principaux : **Services** pour gérer votre calendrier de diffusion en direct et **Paramètres** pour configurer votre page de diffusion.
+La diffusion en direct se gère depuis deux pages de la section **Sermons** du menu de saut : **Horaires de diffusion en direct** pour gérer votre calendrier de diffusion en direct et **Paramètres** pour configurer les onglets de votre page de diffusion.
 
 ## Gestion des services
 
 ### Ajout d'un service
 
 1. Dans B1 Admin, ouvrez le [menu de saut](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Sermons**, et cliquez sur **Horaires de diffusion en direct**.
-2. Cliquez sur le bouton **Ajouter un service** pour créer un nouveau service planifié.
+2. Cliquez sur le bouton **Ajouter un service** en haut de la page pour créer un nouveau service planifié. Les services existants sont listés dans un tableau indiquant le nom, l'heure, le fournisseur et la durée de chaque service ; cliquez sur l'icône de modification d'une ligne pour la changer.
 3. Entrez un **Nom du service** (par exemple, « Dimanche matin »).
 4. Définissez l'**Heure du service** -- choisissez le jour et l'heure du début de votre service.
 5. Définissez **Récurrence hebdomadaire** sur **Oui** pour les services hebdomadaires réguliers, ou **Non** pour un événement ponctuel.
@@ -47,19 +47,19 @@ Votre service sera automatiquement mis à jour chaque semaine s'il est défini c
 
 ## Paramètres de la page de diffusion
 
-Cliquez sur l'onglet **Paramètres** pour personnaliser les onglets et les liens qui apparaissent aux côtés de votre diffusion en direct.
+Pour personnaliser les onglets et les liens qui apparaissent aux côtés de votre diffusion en direct, ouvrez le menu de saut, développez **Sermons**, et cliquez sur **Paramètres**. La page **Paramètres de diffusion** affiche votre liste **Onglets de contenu**.
 
 ### Ajout d'onglets
 
 1. Cliquez sur le bouton **Ajouter** pour ajouter un nouvel onglet à votre page de diffusion en direct.
-2. Choisissez l'onglet prédéfini **Chat** ou ajoutez un onglet personnalisé avec une URL externe.
+2. Choisissez un **Type de lien** : **URL externe** pour un lien personnalisé, ou l'un des onglets prédéfinis **Chat** ou **Prière**.
 3. Pour l'onglet Chat, donnez-lui simplement un nom dans la boîte **Texte de l'onglet** et la configuration est terminée.
 4. Pour un onglet lié, entrez le nom de l'onglet, choisissez une icône en cliquant sur le bouton d'icône, et entrez l'URL.
 5. Vos onglets configurés apparaîtront sur la page de diffusion en direct pour que les spectateurs accèdent aux ressources supplémentaires et aux fonctionnalités interactives.
 
 ### Aperçu de votre diffusion
 
-Cliquez sur le bouton **Voir votre diffusion** pour voir exactement comment votre page de diffusion en direct apparaîtra aux visiteurs, y compris votre logo, les horaires de service et les onglets configurés.
+Sur la page **Horaires de diffusion en direct**, cliquez sur le bouton **Voir votre diffusion** en haut de la page pour voir exactement comment votre page de diffusion en direct apparaîtra aux visiteurs, y compris votre logo, les horaires de service et les onglets configurés.
 
 ## Configuration de votre diffusion en direct YouTube
 

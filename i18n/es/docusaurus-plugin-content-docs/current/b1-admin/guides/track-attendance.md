@@ -48,7 +48,7 @@ Marca quién asistió a cada servicio y grupo.
 
 Sigue la guía [Registrar Asistencia](../attendance/recording-attendance.md) para:
 
-1. Abre la pestaña **Sessions** del grupo y agrega una sesión para la fecha y horario de servicio. Marca **También agregar para los otros grupos** para crear sesiones para cada clase en ese horario de servicio de una vez.
+1. Abre un grupo, haz clic en **All sessions** en su sección **Sessions** y agrega una sesión para la fecha y horario de servicio. Marca **También agregar para los otros grupos** para crear sesiones para cada clase en ese horario de servicio de una vez.
 2. Marca quién asistió a cada grupo
 
 :::tip

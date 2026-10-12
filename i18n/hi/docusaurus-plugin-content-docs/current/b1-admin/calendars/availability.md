@@ -38,11 +38,11 @@ Calendar डिफ़ॉल्ट रूप से current month को display 
 
 ## Room या Resource द्वारा Filter करना
 
-Calendar को एक single room या resource तक narrow करने के लिए शीर्ष left में **Filter** dropdown का उपयोग करें। पूर्ण view में वापस लौटने के लिए **All Rooms & Resources** select करें।
+Calendar को एक single room या resource तक narrow करने के लिए शीर्ष left में **Room / Resource** dropdown का उपयोग करें। पूर्ण view में वापस लौटने के लिए **All Rooms & Resources** select करें।
 
 ## एक Room या Resource को Book करना
 
-1. page के top right corner में **Book** बटन पर क्लिक करें।
+1. page के शीर्ष पर **Book** बटन पर क्लिक करें।
 2. जो dialog खुल जाता है उसमें, event details को fill करें:
    - **Title** — event का नाम
    - **Start** और **End** date/time

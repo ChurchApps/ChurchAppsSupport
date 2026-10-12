@@ -57,10 +57,10 @@ For en gruppe som møtes hver lørdag, sett frekvensen til «uke» og velg lørd
 
 ## Bulk-opprette hendelser i B1 Admin
 
-Gruppens side i B1 Admin har også en **Kalender**-fane der ansatte kan planlegge en hel sesong med møter samtidig:
+Gruppens side i B1 Admin har også en **Kalender**-seksjon der ansatte kan planlegge en hel sesong med møter samtidig:
 
-1. Åpne gruppen i B1 Admin og velg **Kalender**-fanen.
-2. Klikk **Legg til hendelser** for å åpne dialogboksen **Legg til tilbakevendende hendelser**.
+1. Åpne gruppen i B1 Admin og klikk på **Alle hendelser** i **Kalender**-seksjonen.
+2. Klikk **+ Legg til hendelser** for å åpne dialogboksen **Legg til tilbakevendende hendelser**.
 3. Velg timeplanen (ukentlig, hver 2. uke, månedlig, eller én gang), datoene for **Første møte** og **Siste møte**, og eventuelt **Hopp over helligdager**.
 4. Se gjennom forhåndsvisningen av møtedatoer og fjern avkrysningen for eventuelle du vil hoppe over.
 5. La **Tillat RSVP** stå avkrysset hvis du vil at medlemmer skal kunne svare på disse hendelsene (se nedenfor), og lagre deretter.
@@ -69,8 +69,8 @@ Gruppens side i B1 Admin har også en **Kalender**-fane der ansatte kan planlegg
 
 Gruppehendelser kan samle inn RSVP-svar — et **Ja**, **Nei** eller **Kanskje** for hver forekomst av hendelsen.
 
-- **Tillat RSVP** er slått på som standard for hendelser opprettet gjennom bulk-dialogen; fjern avkrysningen for å slå av svar for disse hendelsene. Hendelser med RSVP slått av vises som **Deaktivert** på kalenderfanen.
-- På B1 Admins gruppekalenderfane viser hver hendelse et svaroppsummering (for eksempel «5 ja · 2 kanskje · 1 nei»). Klikk deg videre for å åpne **RSVP-svar**-listen, som viser hvem som svarte ja, kanskje og nei for den forekomsten.
+- **Tillat RSVP** er slått på som standard for hendelser opprettet gjennom bulk-dialogen; fjern avkrysningen for å slå av svar for disse hendelsene. Hendelser med RSVP slått av vises som **Deaktivert** i gruppens hendelsesliste.
+- I hendelseslisten for gruppen i B1 Admin viser hver hendelse et svaroppsummering (for eksempel «5 ja · 2 kanskje · 1 nei»). Klikk deg videre for å åpne **RSVP-svar**-listen, som viser hvem som svarte ja, kanskje og nei for den forekomsten.
 
 :::tip
 RSVP gir ledere et hodetall uten formaliteten til en fullstendig hendelsespåmelding. For betalte påmeldinger eller kapasitetsstyrte hendelser, bruk [hendelsespåmelding](../calendars/creating-calendars.md#enabling-event-registration) i stedet.

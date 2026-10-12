@@ -22,9 +22,9 @@ Pour plus d'assistance, veuillez envoyer un e-mail à [support@churchapps.org](m
 ## Procédure pas à pas
 
 1. Utilisant Google Chrome, allez à [admin.b1.church](https://admin.b1.church) et connectez-vous avec votre nom d'utilisateur et mot de passe.
-2. Cela vous mènera au **Tableau de bord**, la page d'accueil de B1.church Admin. Il affiche le service de cette semaine et qui s'est enregistré et qui sert, ainsi que vos tâches et groupes. Utilisez le **menu Sauter** (la barre de recherche en haut à gauche, voir ci-dessous) pour accéder à Personnes, Dons, Site Web et le reste de l'application. Cliquez sur le petit logo d'église à côté pour revenir au Tableau de bord à tout moment.
+2. Cela vous mènera au **Tableau de bord**, la page d'accueil de B1.church Admin. Il affiche le service de cette semaine et qui s'est enregistré et qui sert, ainsi que **Mes tâches** (vos tâches ouvertes) et **Mes groupes**. Utilisez le **menu Sauter** (la barre de recherche en haut à gauche, voir ci-dessous) pour accéder à Personnes, Dons, Site Web et le reste de l'application. Cliquez sur le petit logo d'église à côté pour revenir au Tableau de bord à tout moment.
 3. Ouvrez le menu Sauter et choisissez **Paramètres** pour configurer les informations de votre église, les rôles administratifs et d'autres détails.
-4. Cliquez sur le **crayon de modification** pour configurer les informations de votre église.
+4. Cliquez sur **Edit** dans la section **Informations sur l'église** pour configurer les informations de votre église.
 5. De retour le dimanche, cliquez sur l' **icône du point d'interrogation** dans le coin supérieur droit pour obtenir de l'aide et des tutoriels.
 6. Cliquez sur **Afficher la documentation** pour voir une liste de tutoriels pour vous aider à commencer avec B1.church.
 7. Accédez au Tableau de bord et cliquez sur la **flèche à côté de votre photo de profil** et choisissez **Changer d'application**.

@@ -26,7 +26,7 @@ Las listas de reproducción te permiten organizar tus sermones en series o colec
 
 ## Crear una Lista de Reproducción
 
-1. Haz clic en el botón **Crear Primera Lista de Reproducción** (si aún no tienes listas de reproducción) o haz clic en el botón **Añadir** (+) en el encabezado del panel **Listas de Reproducción**.
+1. Haz clic en el botón **Crear Primera Lista de Reproducción** (si aún no tienes listas de reproducción) o haz clic en el botón **Añadir lista de reproducción** en el panel **Listas de Reproducción**.
 2. Ingresa un **nombre** para la lista de reproducción -- por ejemplo, el título de la serie de sermones como "Fundamentos de la Fe" o "Verano en los Salmos."
 3. Añade una **descripción** para dar a los visitantes un breve resumen de la serie.
 4. Establece una **fecha de publicación** para controlar cuándo la lista de reproducción se vuelve visible.

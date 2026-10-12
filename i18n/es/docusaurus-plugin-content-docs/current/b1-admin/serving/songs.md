@@ -20,19 +20,19 @@ La página de Canciones gestiona tu biblioteca de canciones de adoración. Mant�
 
 ## Explorar Tu Biblioteca de Canciones
 
-Cuando abres la página **Canciones**, tus canciones se muestran como tarjetas. Cada tarjeta muestra la imagen en miniatura de la canción, título, artista y duración. Desplázate por la biblioteca o usa la búsqueda para encontrar lo que necesitas.
+Cuando abres la página **Canciones**, tus canciones se muestran en una tabla. Cada fila muestra la imagen en miniatura de la canción, título, artista y duración. Usa los controles de la página debajo de la lista para recorrer una biblioteca grande, o busca para encontrar lo que necesitas.
 
 ## Buscar Canciones
 
-1. Haz clic en el botón **Buscar** en la página de Canciones.
+1. Haz clic en el cuadro **Buscar Canciones** en la parte superior de la página de Canciones.
 2. Escribe un **título** de canción o nombre del **artista**.
-3. Los resultados se filtrarán mientras escribes, mostrando canciones coincidentes de tu biblioteca.
+3. La lista se filtra mientras escribes, mostrando canciones coincidentes de tu biblioteca y cuántas coinciden. Haz clic en **Limpiar** para mostrar todas las canciones de nuevo.
 
 ## Añadir una Canción
 
-1. Haz clic en **Añadir Canción** en la página de Canciones.
-2. Busca en la base de datos de canciones externa por título o artista.
-3. Selecciona la canción que quieres añadir.
+1. Haz clic en **Añadir Canción** en la parte superior de la página de Canciones.
+2. En **Buscar una Canción**, busca en la base de datos de canciones externa por **Título o Artista**.
+3. Selecciona la canción que quieres añadir, o haz clic en **Crear Manualmente** si no la encuentras.
 4. La canción se añadirá a tu biblioteca con sus detalles básicos previamente rellenados.
 
 :::tip
@@ -48,12 +48,16 @@ Tus resultados de búsqueda también pueden incluir una sección **WorshipCommon
 
 Solo las canciones que han pasado el proceso de revisión de WorshipCommons aparecen aquí, por lo que la selección puede ser más pequeña que la base de datos principal de canciones.
 
+## Eliminar Canciones {#deleting-songs}
+
+Marca la casilla junto a una o más canciones (o la casilla del encabezado para seleccionar todas las canciones mostradas), luego haz clic en **Eliminar Seleccionadas** en la barra que aparece y confirma. Haz clic en **Limpiar** para deseleccionar.
+
 ## Visualizar y Editar una Canción
 
-Haz clic en cualquier tarjeta de canción para abrir su página de detalle. Desde aquí puedes:
+Haz clic en el título de una canción para abrir su página de detalle. El título, artista y detalles como álbum, clave, duración, BPM y compás aparecen a la izquierda, junto con sus arreglos y enlaces externos. Desde aquí puedes:
 
-- **Editar detalles de canción** -- Actualiza el título, artista, duración y otros metadatos.
-- **Gestionar arreglos** -- Cada canción puede tener múltiples arreglos (por ejemplo, diferentes claves o versiones). Añade, edita o elimina arreglos según sea necesario.
+- **Editar detalles de canción** -- Haz clic en **Editar** para actualizar el título, artista, duración y otros metadatos. Haz clic en **Listo** cuando termines. Para quitar la canción de tu biblioteca, haz clic en **Editar** y luego en **Eliminar canción**.
+- **Gestionar arreglos** -- Cada canción puede tener múltiples arreglos (por ejemplo, diferentes claves o versiones). Haz clic en **Añadir Arreglo** para crear uno, y haz clic en el nombre de un arreglo bajo **Arreglos** para abrirlo.
 - **Añadir letras** -- Ingresa o actualiza las letras para cada arreglo usando notación ChordPro (por ejemplo, `[G]Amazing grace`). Una vista previa en vivo al lado del editor renderiza la tabla de acordes formateada mientras escribes, para que puedas ver exactamente lo que tu equipo verá.
 - **Establecer la clave** -- Especifica la clave musical para cada arreglo usando el selector de clave al lado de las letras. Cambiar la clave transpone los acordes mostrados inmediatamente, tanto en la página de arreglos como cuando abres la canción desde un plan de servicio, para que tu equipo siempre vea acordes en la clave que en realidad están tocando.
 - **Añadir enlaces externos** -- Adjunta enlaces a recursos como videos de YouTube, gráficos de acordes o partituras alojadas en otros lugares.

@@ -28,8 +28,8 @@ Ein kuratierter Kalender aggregiert Ereignisse von mehreren Gruppen in eine einh
 
 ## Gruppen zu Ihrem Kalender hinzufügen
 
-1. Klicken Sie auf Ihren neuen Kalender, um ihn zu öffnen.
-2. Klicken Sie im Bereich **Gruppen im Kalender** auf der rechten Seite auf **Hinzufügen**.
+1. Klicken Sie bei Ihrem neuen Kalender auf **Ereignisse verwalten**, um ihn zu öffnen.
+2. Klicken Sie über dem Kalender auf **Gruppe hinzufügen**. Hinzugefügte Gruppen erscheinen in der Liste **Gruppen im Kalender** auf der linken Seite der Seite.
 3. Wählen Sie eine Gruppe aus dem Dropdown-Menü.
 4. Wählen Sie, ob Sie **alle Ereignisse** aus dieser Gruppe oder nur **bestimmte Ereignisse** hinzufügen möchten.
 5. Klicken Sie auf **Speichern**.

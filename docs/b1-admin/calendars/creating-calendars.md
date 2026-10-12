@@ -21,23 +21,23 @@ Creating a calendar in B1 Admin lets you build a curated view of events by conne
 ## Creating a New Calendar
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Calendars**, and click **Calendars**.
-2. Click **Add Calendar**.
+2. Click **Add Calendar** at the top of the page. The new calendar form opens below the calendar list.
 3. Enter a **name** for your calendar (for example, "Youth Ministry Events" or "Main Church Calendar").
 4. Add an optional **description** to help your team understand what this calendar is for.
 5. Click **Create** to save your new calendar.
 
 ## The Calendar Detail Page
 
-After creating a calendar, click on it to open the detail page. This page has two main areas:
+After creating a calendar, click **Manage Events** on its row to open the detail page. This page has two main areas:
 
-- **Left column** -- A view of the calendar showing events pulled in from connected groups.
-- **Right column** -- The associated groups list. This is where you manage which groups are included in this calendar.
+- **Left column** -- The calendar's name with its actions (**New Event**, **Edit**, **Import .ics**, and **Print**), followed by the **Groups in Calendar** list showing which groups are included in this calendar. Click **Remove** next to a group to take it off the calendar.
+- **Main area** -- The **Calendar Events** view showing events pulled in from connected groups, with the **Subscribe** and **Add Group** buttons above it.
 
 ## Connecting Groups
 
-Groups that have events in the calendar automatically appear in the groups list on the right side of the detail page.
+Groups that have events in the calendar automatically appear in the **Groups in Calendar** list on the left side of the detail page.
 
-1. Click **Add** in the groups section to associate a group with your calendar.
+1. Click **Add Group** above the calendar to associate a group with your calendar.
 2. Select the group from the dropdown.
 3. Choose whether to include **all events** from that group or only **specific events**.
 4. Click **Save**.

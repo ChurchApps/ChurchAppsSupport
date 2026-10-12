@@ -22,28 +22,38 @@ Registrar doações no B1 Admin é feito através do sistema de Lotes. Você cri
 ## Criando um Lote e Adicionando Doações
 
 1. Em **B1 Admin**, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Doações** e clique em **Lotes**.
-2. Clique em **Adicionar Lote**.
+2. Clique em **Adicionar Lote** no topo da página.
 3. Digite um nome para o lote (por exemplo, "Oferta de Domingo - 5 Jan") e selecione a data. Clique em **Salvar**.
 4. Seu novo lote aparece na lista mostrando zero doações e $0,00.
 5. Clique no **nome do lote** para abri-lo.
 
 ## Inserindo Doações Individuais
 
-1. Na página de detalhes do lote, digite o nome do doador no **campo de pesquisa** para encontrá-lo.
-2. Após selecionar uma pessoa, o formulário de entrada de doação aparece com campos para **Data**, **Método de Pagamento**, **Fundo**, **Valor** e **Número do Cheque**.
-3. Preencha os detalhes e clique em **Adicionar Doação**.
-4. A doação é adicionada à tabela abaixo e o formulário é redefinido para que você possa inserir a próxima.
+1. Na página de detalhes do lote, o painel de entrada de doações aparece ao lado da lista de doações. Em **Selecionar Pessoa ou Anônimo**, digite o nome do doador no campo de pesquisa para encontrá-lo, ou clique em **Anônimo**. (Clicar em **Adicionar Doação** no topo da página leva a este painel.)
+2. Após selecionar uma pessoa, o formulário de entrada mostra campos para **Data**, **Método** (Cheque, Dinheiro, Cartão ou Em Espécie), **Fundo**, **Notas**, **Valor** e **Nº do Cheque** (ou **Últimos 4 dígitos** para ofertas em cartão). Clique em **Alterar** ao lado do nome do doador para escolher outra pessoa.
+3. Preencha os detalhes e clique em **Adicionar Doação** (ou pressione Enter).
+4. A doação é adicionada à lista de doações e o formulário é redefinido para que você possa inserir a próxima.
 
 :::tip
 Você pode inserir rapidamente várias doações em sequência sem deixar a página do lote. O formulário é redefinido após cada entrada para que você possa passar por uma pilha de cheques ou envelopes com eficiência.
 :::
 
+## Registrando uma Oferta a partir do Registro de uma Pessoa {#logging-a-gift-from-a-persons-record}
+
+Para registrar uma única oferta sem abrir um lote, abra o registro do doador em **Pessoas** e clique em **Registrar oferta** (no resumo de ofertas, ou na visualização de ofertas da pessoa).
+
+1. Defina a **Data** e o **Valor**.
+2. Escolha o **Fundo** e o **Método** (Cheque, Dinheiro, Cartão ou Em Espécie) e digite o **Nº do Cheque** ou os **Últimos 4 dígitos**, se necessário.
+3. Opcionalmente adicione **Notas**, depois clique em **Salvar**.
+
+A oferta é salva no lote da data. Se ainda não existir um lote para essa data, um é criado automaticamente, com o nome da data.
+
 ## Dividindo uma Doação em Vários Fundos
 
 Às vezes um único doador dá para mais de um fundo em uma transação. Para lidar com isso:
 
-1. Clique no botão **Editar** na linha de doação.
-2. No formulário de edição, adicione valores para diferentes fundos. O total será calculado automaticamente a partir dos valores de fundos individuais.
+1. Abaixo do painel de entrada, clique no link **editor completo de doação** (ou clique em **Editar** na linha de uma doação existente).
+2. No editor completo, adicione valores para diferentes fundos. O total será calculado automaticamente a partir dos valores de fundos individuais.
 3. Clique em **Salvar** para atualizar a doação.
 
 :::info
@@ -55,7 +65,7 @@ Dividir doações em fundos é comum quando um doador escreve um único cheque d
 Para editar uma doação, clique no botão **Editar** na sua linha no lote. Você pode alterar a data, valor, fundo, método de pagamento ou qualquer outro detalhe. Clique em **Salvar** quando terminar.
 
 :::tip
-O cabeçalho da página do lote é atualizado automaticamente para mostrar o número total de doações e o valor total em dólar conforme você adiciona ou edita entradas. Use isso para reconciliar com seu comprovante de depósito.
+A linha abaixo do nome do lote no topo da página é atualizada automaticamente para mostrar a data do lote, o número de ofertas e o valor total em dólar conforme você adiciona ou edita entradas. Use isso para reconciliar com seu comprovante de depósito.
 :::
 
 ## Reembolsando uma Doação

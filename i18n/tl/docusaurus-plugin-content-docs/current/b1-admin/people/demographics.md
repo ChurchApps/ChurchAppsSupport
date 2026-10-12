@@ -20,7 +20,7 @@ Ang **Demographics** dashboard ay nagbibigay sa iyo ng visual snapshot ng iyong 
 
 ## Pagbubukas ng Demographics
 
-Mula sa **People** page, i-click ang **Demographics** button sa page header (ang bar chart icon). Ang pahina ay nagpapakita ng iyong kabuuang person count sa tuktok, sinusundan ng mga chart na inilarawan sa ibaba.
+Mula sa **People** page, i-click ang **Demographics** sa page header. Ang pahina ay nagpapakita ng iyong kabuuang person count sa tuktok, sinusundan ng mga chart na inilarawan sa ibaba.
 
 ## Mga Chart
 

@@ -24,20 +24,20 @@ Se la tua chiesa ha più di un sito web (ad esempio, siti separati per campus), 
 
 ## Comprensione dei Tipi di Pagina
 
-La tabella **Pagine** elenca ogni pagina sul tuo sito insieme al suo stato:
+La tabella **Pagine** elenca ogni pagina sul tuo sito tramite **Percorso** e **Titolo**. Esistono due tipi di pagine:
 
-- **Generato** -- Pagine create automaticamente dal sistema in base ai dati della tua chiesa (ad esempio, una pagina Gruppi, una pagina Sermoni, o una pagina individuale per ogni sermone nella tua libreria). Queste pagine si aggiornano man mano che i tuoi dati cambiano.
+- **Generato** -- Pagine create automaticamente dal sistema in base ai dati della tua chiesa (ad esempio, una pagina Gruppi, una pagina Sermoni, o una pagina individuale per ogni sermone nella tua libreria). Queste pagine mostrano un badge **Generato** e si aggiornano man mano che i tuoi dati cambiano.
 - **Personalizzato** -- Pagine che hai creato tu stesso con il tuo contenuto e layout.
 
-Puoi convertire qualsiasi pagina generata automaticamente in una pagina personalizzata se desideri il pieno controllo sul suo contenuto e design.
+Puoi convertire qualsiasi pagina generata automaticamente in una pagina personalizzata se desideri il pieno controllo sul suo contenuto e design. Fai clic su **Converti** accanto alla pagina generata e conferma.
 
 ## Aggiunta e Modifica Pagine
 
-1. Fai clic sul pulsante **Aggiungi Pagina** nell'angolo in alto a destra della tabella Pagine.
+1. Fai clic sul pulsante **Aggiungi Pagina** in alto a destra della visualizzazione Pagine Sito Web.
 2. Scegli un tipo di pagina (vuoto o un modello) e dagli un nome.
 3. Fai clic su **Modifica Contenuto** accanto a qualsiasi pagina per aprire l'[editor di pagine](page-editor), dove puoi aggiungere sezioni, testo, immagini e altri elementi.
-4. Fai clic su **Impostazioni Pagina** (l'icona a forma di ingranaggio) per aggiornare il titolo della pagina, il percorso URL e altri metadati.
-5. Usa il pulsante **Visualizza pagina dal vivo** per aprire la tua pagina in una nuova finestra e vedi esattamente come apparirà ai visitatori.
+4. Fai clic su **Impostazioni Pagina** accanto a una pagina per aggiornare il titolo della pagina, il percorso URL e altri metadati.
+5. Fai clic sul percorso di una pagina nella colonna **Percorso** per aprire la pagina dal vivo in una nuova scheda e vedere esattamente come apparirà ai visitatori.
 
 :::tip
 Per la tua home page, imposta il percorso URL su solo `/`. Per tutte le altre pagine, usa un percorso descrittivo come `/chi-siamo` o `/contatti`.
@@ -54,12 +54,12 @@ Apri **Impostazioni Pagina** su qualsiasi pagina per configurare:
 
 ## Gestione Navigazione
 
-La visualizzazione Pagine Sito Web mostra i tuoi link di navigazione. Questi link controllano il menu che i visitatori vedono sul tuo sito web.
+Il pannello **Navigazione Principale** sul lato destro della visualizzazione Pagine Sito Web mostra i tuoi link di navigazione. Questi link controllano il menu che i visitatori vedono sul tuo sito web.
 
 1. Fai clic su **Aggiungi** per creare un nuovo link di navigazione. Puoi puntarlo a qualsiasi pagina sul tuo sito o a un URL esterno.
 2. Per riordinare i link, trascinali e rilasciali nell'ordine che desideri. Puoi anche annidare i link sotto un elemento padre per creare menu a discesa.
-3. Fai clic sull'icona **Modifica** accanto a qualsiasi link per cambiare l'etichetta, l'URL o la posizione.
-4. Per rimuovere un link dalla navigazione, fai clic sull'icona **Elimina**.
+3. Fai clic su un link qualsiasi per aprirne le **Impostazioni Link**, dove puoi cambiarne il testo, l'URL o la pagina padre.
+4. Per rimuovere un link dalla navigazione, apri le sue **Impostazioni Link** e fai clic su **Elimina**.
 
 :::info
 Rimuovere un link di navigazione non cancella la pagina stessa. La pagina esiste ancora e può essere accessibile direttamente dal suo URL -- semplicemente non apparirà nel menu.
@@ -67,7 +67,7 @@ Rimuovere un link di navigazione non cancella la pagina stessa. La pagina esiste
 
 ## Interruttori a Livello di Sito
 
-Sopra **Navigazione Principale** sul lato sinistro della visualizzazione Pagine Sito Web ci sono due interruttori che si applicano all'intero sito web della tua chiesa:
+Sotto i link nel pannello **Navigazione Principale** ci sono due interruttori che si applicano all'intero sito web della tua chiesa:
 
 - **Mostra Accesso** -- Mostra un pulsante **Accesso** nella barra di navigazione del tuo sito web.
 - **Disabilita Sito Web Pubblico** -- Disattiva il tuo sito web pubblico. Usalo se la tua chiesa usa B1 solo per il suo portale dei membri, le donazioni e le registrazioni, e mantiene il suo sito web principale altrove.
@@ -96,7 +96,7 @@ Questa impostazione si applica a tutta la tua chiesa. Se hai più di un sito, di
 
 - Mantieni la tua navigazione di livello superiore a cinque o sei elementi in modo che i visitatori possono trovare le cose rapidamente.
 - Usa link annidati per sub-pagine correlate (ad esempio, un menu a discesa "Chi Siamo" con "Il Nostro Team", "Credenze" e "Storia").
-- Rivedi la tua navigazione su dispositivi mobili facendo clic su **Anteprima Mobile** per assicurarti che funzioni bene su schermi più piccoli.
+- Verifica la tua navigazione su un telefono per assicurarti che funzioni bene su schermi più piccoli.
 - Dai alle pagine nomi chiari e descrittivi che aiutino i visitatori a capire cosa troveranno.
 
 :::tip
@@ -107,7 +107,7 @@ Puoi aggiungere [moduli](../forms/creating-forms.md) alle tue pagine per raccogl
 
 Se stai costruendo il tuo sito da zero, puoi inizializzarlo usando un **Modello di Sito** invece di creare pagine una per una. Un modello di sito crea un insieme di pagine pre-costruite -- home, chi siamo, collegati, dona e altri -- con contenuti segnaposto e link di navigazione già cablati.
 
-1. Nella schermata Pagine, fai clic sul pulsante **Modelli Sito** (accanto al pulsante **Aggiungi Pagina**).
+1. Nella schermata Pagine, fai clic sul pulsante **Inizia da un Modello** (accanto al pulsante **Aggiungi Pagina**).
 2. Sfoglia i modelli disponibili e fai clic su uno per visualizzare l'anteprima della sua struttura di pagina.
 3. Quando ne trovi uno che ti piace, fai clic su **Applica Modello**.
 4. Le pagine che non esistono già vengono create e aggiunte alla tua navigazione. Le pagine esistenti rimangono così come sono.

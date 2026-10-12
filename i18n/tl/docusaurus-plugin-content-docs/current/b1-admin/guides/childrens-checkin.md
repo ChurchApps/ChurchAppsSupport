@@ -53,7 +53,7 @@ Sundin ang gabay na [Pag-setup ng Attendance](../attendance/setup.md) para:
 
 1. Idagdag ang iyong campus (hal., "Pangunahing Campus")
 2. Magdagdag ng serbisyo (hal., "Linggo ng Umaga")
-3. I-set ang oras ng serbisyo (hal., "9:00 AM")
+3. I-set ang oras ng serbisyo (hal., "9:00 AM") at, opsyonal, isang [iskedyul ng check-in](../attendance/setup.md#setting-a-check-in-schedule) para awtomatikong magbukas ang check-in bago ang bawat serbisyo at magsara pagkatapos nito
 4. I-assign ang iyong mga grupo ng bata sa serbisyo
 
 ## Hakbang 4: I-set Up ang Check-In App

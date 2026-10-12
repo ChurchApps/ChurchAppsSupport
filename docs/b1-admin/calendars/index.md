@@ -13,13 +13,13 @@ The Calendars section in B1 Admin lets you create curated calendars for your chu
 ## Viewing Your Calendars
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Calendars**, and click **Calendars**.
-2. The Calendars page lists all your calendars with their name and status.
-3. Each calendar also shows the groups associated with it.
+2. The Calendars page lists all your calendars in a table with their name and status. Use the **Find a calendar** box to filter the list.
+3. Each row has a **Manage Events** link to open the calendar and an **Edit** link to rename or delete it.
 
 ## What You Can Do
 
-- **Add a new calendar** -- Click the add button to create a calendar for a specific ministry, event type, or purpose. See [Creating Calendars](creating-calendars) for step-by-step instructions.
-- **Edit a calendar** -- Click on any calendar to open it and manage which groups are included in it.
+- **Add a new calendar** -- Click **Add Calendar** at the top of the page to create a calendar for a specific ministry, event type, or purpose. See [Creating Calendars](creating-calendars) for step-by-step instructions.
+- **Edit a calendar** -- Click **Manage Events** on any calendar to open it and manage which groups are included in it.
 - **Publish calendars** -- Calendars can be displayed on your B1.church website so visitors can see upcoming events at your church.
 - **Create curated calendars** -- Pull events from multiple groups into a single calendar view for a comprehensive look at everything happening at your church. See [Curated Calendar](curated-calendar) for details.
 - **Manage rooms and resources** -- Track bookable spaces and equipment and handle approval requests. See [Rooms & Resources](rooms-resources) for details.

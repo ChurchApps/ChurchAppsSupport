@@ -14,7 +14,7 @@ Ang B1 Admin ang dashboard mo sa pamamahala ng simbahan. Nagbibigay ito ng mga k
 
 1. Buksan ang iyong browser at pumunta sa [admin.b1.church](https://admin.b1.church)
 2. Mag-sign in gamit ang iyong username at password
-3. Mapupunta ka sa **Dashboard**, ang iyong home page. Ipinapakita nito ang order ng serbisyo ngayong linggo, kung sino ang naka-check in at naglilingkod nang real time, anumang gawain na kailangan ng iyong atensyon (tulad ng mga nakabinbing pag-apruba o kahilingang sumali), ang iyong mga grupo, at ang iyong mga bukas na gawain
+3. Mapupunta ka sa **Dashboard**, ang iyong home page. Ipinapakita nito ang order ng serbisyo ngayong linggo, kung sino ang naka-check in at naglilingkod nang real time, anumang bagay na kailangan ng iyong atensyon (tulad ng mga nakabinbing pag-apruba o kahilingang sumali), ang iyong mga bukas na gawain, at ang iyong mga grupo
 
 :::tip
 Bago ka ba sa B1 Admin? Magsimula sa [Panimula](./introduction) para sa video walkthrough, pagkatapos ay bisitahin ang [Settings](./settings/) para i-configure ang impormasyon ng inyong simbahan at imbitahan ang iyong team.
@@ -27,7 +27,7 @@ Ang Dashboard ang home page mo sa B1 Admin (`/`). Nakabatay ito sa lingguhang se
 - **Serbisyo ngayong linggo** -- ang pangalan at order of service ng kasalukuyan o paparating na plano, na may link papunta sa buong plano
 - **Live status** -- kapag nagsimulang mag-check in ang mga tao tuwing Linggo, ipinapakita ng pahina kung ilan ang nasa silid, sino ang naglilingkod sa oras na ito, mga unang beses na bisita, at detalye bawat silid na may capacity bar
 - **Needs Attention** -- mga nakabinbing pag-apruba at kahilingang sumali sa grupo na kailangang aksyunan
-- **Your Groups** at **Open Tasks** -- ang mga grupong kinabibilangan mo at mga gawaing nakatalaga sa iyo o sa iyong mga grupo
+- **My tasks** at **My Groups** -- ang iyong mga bukas na gawain (magdagdag ng isa gamit ang **Add Task**, o i-click ang **All tasks** para sa buong listahan) at ang mga grupong kinabibilangan mo
 
 :::tip
 Ang bawat seksyon, kasama ang Sermons, Calendars, Mobile, at Settings, ay nasa [Jump menu](./introduction.md#getting-around-with-the-jump-menu) sa kaliwang itaas ng B1 Admin. I-click ito o pindutin ang **Ctrl+K** (o **Cmd+K**), pagkatapos ay mag-browse o magsimulang mag-type.
@@ -35,20 +35,20 @@ Ang bawat seksyon, kasama ang Sermons, Calendars, Mobile, at Settings, ay nasa [
 
 ## Mga Pangunahing Tampok
 
-- **[People](./people/)** - Pamahalaan ang direktoryo ng inyong simbahan, magdagdag ng mga miyembro, mag-bulk edit ng datos, subaybayan ang mga sambahayan
-- **[Groups](./groups/)** - Lumikha at mag-ayos ng mga grupo sa simbahan na may mga kahilingang sumali, pamamahala ng miyembro, group email, personalized na group text, at mga napi-print na contact roster
-- **[Attendance](./attendance/)** - Mag-set up ng mga campus at oras ng serbisyo, subaybayan ang named attendance gamit ang mga napi-print na class roll sheet, tingnan kung aling mga klase ang kailangan pang lagyan ng attendance, at itala ang simpleng headcount na may mga trend report
-- **[Donations](./donations/)** - I-record ang mga handog sa iba't ibang currency, pamahalaan ang mga pondo, mag-print ng mga batch (isa-isa o bawat batch sa isang saklaw ng petsa) na may subtotal ng bawat pondo, gumawa ng mga statement
-- **[Serving](./serving/)** - I-coordinate ang mga boluntaryo, gumawa ng mga plano ng serbisyo, pamahalaan ang mga gawain, at gabayan ang mga tao sa mga hakbang-hakbang na workflow na kayang awtomatikong magpadala ng mga email at text
+- **[People](./people/)** - Pamahalaan ang direktoryo ng inyong simbahan, magdagdag ng mga miyembro, mag-bulk edit ng datos, at mag-browse ayon sa sambahayan o bilang sortable na table. Bawat tao ay may iisang record page na may detalye sa kaliwa, at sa tabi nito ang buod ng attendance, donasyon, grupo, notes, at form
+- **[Groups](./groups/)** - Lumikha at mag-ayos ng mga grupo sa simbahan na may mga kahilingang sumali, pamamahala ng miyembro, group email, personalized na group text, at mga napi-print na contact roster. Bawat grupo ay may iisang page na may mga aksyon sa kaliwa, at sa tabi nito ang buod ng miyembro, session, calendar, at health
+- **[Attendance](./attendance/)** - Mag-set up ng mga campus at oras ng serbisyo, subaybayan ang named attendance gamit ang mga napi-print na class roll sheet, tingnan kung aling mga klase ang kailangan pang lagyan ng attendance, itala ang simpleng headcount na may mga trend report, at magtakda ng check-in schedule para sa bawat oras ng serbisyo para awtomatikong magbukas at magsara ang self check-in
+- **[Donations](./donations/)** - I-record ang mga handog sa iba't ibang currency, pamahalaan ang mga pondo, mag-log ng iisang handog mula sa record ng isang tao, mag-print ng mga batch (isa-isa o bawat batch sa isang saklaw ng petsa) na may subtotal ng bawat pondo, gumawa ng mga statement na naka-print kasama ang logo ng inyong simbahan
+- **[Serving](./serving/)** - I-coordinate ang mga boluntaryo, gumawa ng mga plano ng serbisyo (o kopyahin ito pasulong nang lingguhan hanggang 12 linggo), magpadala ng mga paalala sa pamamagitan ng push, email, o text, mag-text sa lahat ng naka-iskedyul gamit ang **Text Volunteers**, pamahalaan ang mga gawain, at gabayan ang mga tao sa mga hakbang-hakbang na workflow na kayang awtomatikong magpadala ng mga email at text
 - **[Forms](./forms/)** - Gumawa ng mga custom na form para sa mga rehistrasyon at pangangalap ng datos
 - **[Reports](./reports/)** - Tingnan ang mga report ng kaarawan, attendance, at donasyon
-- **[Website](./website/)** - Buuin at pamahalaan ang website ng inyong simbahan na may mga custom na estilo ng nabigasyon, o i-off ang pampublikong site at iwanan lamang ang member portal
+- **[Website](./website/)** - Buuin at pamahalaan ang website ng inyong simbahan na may mga custom na estilo ng nabigasyon, subaybayan ang mga bisita sa iyong site at sa iyong B1 app gamit ang iyong GA4 ID, o i-off ang pampublikong site at iwanan lamang ang member portal
 - **[Sermons](./sermons/)** - Pamahalaan ang inyong library ng mga sermon, live streaming, at awtomatikong podcast feed
 - **[Calendars](./calendars/)** - Gumawa ng mga piniling kalendaryo, pamahalaan ang pag-book ng mga silid/kagamitan, at tingnan ang availability
-- **[Settings](./settings/)** - I-configure ang impormasyon ng simbahan, rehiyon, format ng petsa at numero ng telepono, texting, mga tungkulin, mga pahintulot, at custom na field ng tao
+- **[Settings](./settings/)** - I-configure ang lahat mula sa iisang scrolling page na may quick-jump list: impormasyon ng simbahan, rehiyon, format ng petsa at numero ng telepono, texting, mga tungkulin, mga pahintulot, at custom na field ng tao
 
 :::info
-I-click ang icon na tandang pananong sa kanang itaas ng anumang pahina para mabilis na makapunta sa tulong at dokumentasyon.
+I-click ang icon na tandang pananong sa kanang itaas ng anumang pahina para mabilis na makapunta sa tulong at dokumentasyon. Para lumipat sa light at dark mode, buksan ang iyong user menu at piliin ang **Theme Preferences**.
 :::
 
 Para sa suporta, mag-email sa [support@churchapps.org](mailto:support@churchapps.org).

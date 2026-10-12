@@ -13,13 +13,13 @@ La section Calendriers dans B1 Admin vous permet de créer des calendriers organ
 ## Afficher vos calendriers
 
 1. Dans B1 Admin, ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Calendriers**, et cliquez sur **Calendriers**.
-2. La page Calendriers répertorie tous vos calendriers avec leur nom et leur statut.
-3. Chaque calendrier affiche également les groupes associés à celui-ci.
+2. La page Calendriers répertorie tous vos calendriers dans un tableau avec leur nom et leur statut. Utilisez la zone **Rechercher un calendrier** pour filtrer la liste.
+3. Chaque ligne comporte un lien **Gérer les événements** pour ouvrir le calendrier et un lien **Modifier** pour le renommer ou le supprimer.
 
 ## Ce que vous pouvez faire
 
-- **Ajouter un nouveau calendrier** – Cliquez sur le bouton d'ajout pour créer un calendrier pour un ministère, un type d'événement ou un objectif spécifique. Voir [Créer des calendriers](creating-calendars) pour des instructions étape par étape.
-- **Modifier un calendrier** – Cliquez sur n'importe quel calendrier pour l'ouvrir et gérer les groupes qui y sont inclus.
+- **Ajouter un nouveau calendrier** – Cliquez sur **Ajouter un calendrier** en haut de la page pour créer un calendrier pour un ministère, un type d'événement ou un objectif spécifique. Voir [Créer des calendriers](creating-calendars) pour des instructions étape par étape.
+- **Modifier un calendrier** – Cliquez sur **Gérer les événements** pour n'importe quel calendrier afin de l'ouvrir et gérer les groupes qui y sont inclus.
 - **Publier des calendriers** – Les calendriers peuvent être affichés sur votre site Web B1.church afin que les visiteurs puissent voir les événements à venir de votre église.
 - **Créer des calendriers organisés** – Regroupez les événements de plusieurs groupes en une seule vue de calendrier pour une vue d'ensemble complète de tout ce qui se passe dans votre église. Voir [Calendrier organisé](curated-calendar) pour plus de détails.
 - **Gérer les salles et les ressources** – Suivi des espaces réservables et des équipements et gestion des demandes d'approbation. Voir [Salles et ressources](rooms-resources) pour plus de détails.

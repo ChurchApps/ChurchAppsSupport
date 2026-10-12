@@ -23,7 +23,7 @@ Los flujos de trabajo mueven a las personas a través de una serie de pasos en u
 
 ## Ver flujos de trabajo
 
-Abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expande **Sirviendo**, y haz clic en **Flujos de trabajo**. Verás tus flujos de trabajo listados y agrupados por categoría, con los flujos activos destacados. Haz clic en cualquier flujo de trabajo para abrir su tablero.
+Abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expande **Sirviendo**, y haz clic en **Flujos de trabajo**. Tus flujos de trabajo aparecen en una tabla que muestra la **Categoría** y el **Estado** de cada uno (**Activo** o **Inactivo**). Si usas categorías, las pestañas encima de la lista te permiten filtrarla por categoría. Haz clic en cualquier flujo de trabajo para abrir su tablero.
 
 ## Crear un flujo de trabajo
 
@@ -51,7 +51,7 @@ Cuando agregas o editas un paso, puedes configurar:
 
 - **Nombre del paso**: el encabezado de la columna (por ejemplo, "Llamada de bienvenida" o "Esperando registro").
 - **Vence en (días)**: establece automáticamente una fecha de vencimiento cuando una tarjeta entra en este paso. Las tarjetas después de su fecha de vencimiento se marcan como **Vencidas**.
-- **Asignado por defecto**: la persona o grupo a la que se asignan automáticamente las nuevas tarjetas en este paso.
+- **Asignado por defecto**: la persona o grupo a la que se asignan automáticamente las nuevas tarjetas en este paso. Cuando el asignado por defecto es una persona, recibe una notificación de que se le ha asignado una tarjeta.
 - **Acciones automatizadas**: cosas que el sistema hace por su cuenta cuando una tarjeta llega (ver más abajo).
 - **Enrutamiento**: a dónde va la tarjeta cuando sale del paso (ver [Enrutamiento](#routing-cards-with-outcomes-and-conditions)).
 
@@ -140,11 +140,15 @@ Desde el panel de tarjeta puedes:
 - **Enviar atrás** al paso anterior o **Saltar** al siguiente paso.
 - **Asignación de pines**: mantén el mismo propietario en la tarjeta incluso cuando se mueve entre pasos. Por defecto, mover una tarjeta a un nuevo paso la reasigna al asignado por defecto del paso; el fijación mantiene al responsable actual.
 - **Completar** la tarjeta para terminarla, o elige un botón **Resultado** si el paso tiene resultados configurados (ver [Enrutamiento](#routing-cards-with-outcomes-and-conditions)).
-- **Agregar notas** y revisar el **historial** de la tarjeta, incluyendo un registro de acciones automatizadas que se han ejecutado (correos electrónicos enviados, esperas, etc.).
+- **Agregar notas** y revisar la **Actividad** de la tarjeta, es decir, un registro de acciones automatizadas que se han ejecutado (correos electrónicos enviados, esperas, etc.).
+
+Para una tarjeta sobre una persona, el panel también muestra el teléfono móvil y el correo electrónico de esa persona como enlaces en los que puedes hacer clic para llamarla o escribirle, además de un enlace **Ver perfil** si tienes permiso para ver personas. La persona a la que se asigna la tarjeta ve el teléfono y el correo electrónico incluso sin acceso a Personas.
+
+Las notas se guardan con la tarjeta. Cualquiera que pueda abrir la tarjeta, incluida la persona o grupo asignado, puede leer las notas y añadir las suyas. Quienes no pueden abrir la tarjeta no ven sus notas.
 
 ### Acciones en lote
 
-Selecciona las casillas de verificación en múltiples tarjetas para actuar sobre ellas juntas. Aparece una barra de herramientas que te permite **Completar**, **Aplazar**, **Reasignar**, o **Mover** todas las tarjetas seleccionadas a otro paso a la vez.
+Selecciona las casillas de verificación en múltiples tarjetas para actuar sobre ellas juntas. Aparece una barra de herramientas que te permite **Completar**, **Aplazar**, **Asignar** (reasignar) o **Mover a…** otro paso para todas las tarjetas seleccionadas a la vez.
 
 ## Enrutamiento de tarjetas con resultados y condiciones
 
@@ -162,7 +166,9 @@ Esto permite que una decisión ramifique a la persona por diferentes caminos.
 
 ### Enrutamiento automático (condicional)
 
-Las rutas automáticas mueven una tarjeta adelante **en el momento en que entra en un paso** (y después de que terminen sus acciones automatizadas), sin que nadie haga clic, si la persona cumple un conjunto de condiciones. Agrega una ruta, elige el paso de destino, y define una o más **condiciones** (por ejemplo, campus, edad o estado de membresía de una persona). Una ruta sin condiciones coincide con todos.
+Las rutas automáticas mueven una tarjeta adelante **en el momento en que entra en un paso** (y después de que terminen sus acciones automatizadas), sin que nadie haga clic, si la persona cumple un conjunto de condiciones. Agrega una ruta, elige el paso de destino, y define una o más **condiciones** (por ejemplo, campus, edad o estado de membresía de una persona). Los campos de texto pueden coincidir exactamente o con **contiene**, **empieza con** o **termina con**. Una ruta sin condiciones coincide con todos.
+
+Si las condiciones de una ruta no se pueden verificar por alguna razón, esa ruta se considera que no coincide. La tarjeta permanece en el paso (o sigue otra ruta que sí coincida) en lugar de quedarse atascada.
 
 :::info
 En el tablero, cada columna de paso muestra pequeñas anotaciones describiendo su enrutamiento, por ejemplo, una etiqueta de resultado o "si coincide" seguido de una flecha al paso de destino o flujo de trabajo.
@@ -195,8 +201,8 @@ Se ejecutan de forma recurrente (diaria, semanal, mensual o anualmente) en un co
 
 Para cualquier disparador también puedes establecer:
 
-- El **paso de entrada** en el que comienza la nueva tarjeta (por defecto es el primer paso).
-- **Una vez por persona**: para que la misma persona no sea agregada al flujo de trabajo dos veces por el disparador.
+- El **paso inicial** en el que cae la nueva tarjeta (por defecto es el primer paso).
+- **Solo una vez por persona**: para que la misma persona no sea agregada al flujo de trabajo dos veces por el disparador.
 - **Activo**: enciende o apaga el disparador sin eliminarlo.
 
 :::tip
@@ -205,7 +211,7 @@ Empareja un disparador **Formulario · Enviado** con la plantilla **Seguimiento 
 
 ## Mis tarjetas
 
-Los voluntarios y el personal no necesitan explorar cada tablero para encontrar su trabajo. La página **Mis tarjetas** (vinculada desde la página de Flujos de trabajo) enumera todas las tarjetas asignadas al usuario actual en todos los flujos de trabajo. Hacer clic en una tarjeta abre el tablero al que pertenece.
+Los voluntarios y el personal no necesitan explorar cada tablero para encontrar su trabajo. La lista **Mis tarjetas** de la página **Mi Trabajo** muestra todas las tarjetas asignadas al usuario actual en todos los flujos de trabajo. Para llegar ahí, haz clic en **Mis tarjetas** en la parte superior de la página de Flujos de trabajo, o abre **Sirviendo > Mi Trabajo** en el menú Saltar. Hacer clic en una tarjeta abre el tablero al que pertenece.
 
 ## Informes
 

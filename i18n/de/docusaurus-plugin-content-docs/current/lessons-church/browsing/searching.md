@@ -6,7 +6,7 @@ title: "Suchen"
 
 <div class="article-intro">
 
-Wenn Sie wissen, welches Thema Sie unterrichten möchten, aber nicht sicher sind, welches Programm oder welche Studienreihe es enthält, hilft Ihnen die Suchfunktion, die richtigen Inhalte schnell zu finden. Die Suche funktioniert über die gesamte Lessons.church-Bibliothek, einschließlich Inhalten externer Anbieter.
+Wenn Sie wissen, welches Thema Sie unterrichten möchten, aber nicht sicher sind, welches Programm oder welche Studienreihe es enthält, hilft Ihnen die Suchfunktion, die richtigen Inhalte schnell zu finden. Die Suche funktioniert über die Programme, Studienreihen und Lektionen der Lessons.church-Bibliothek.
 
 </div>
 
@@ -19,17 +19,17 @@ Wenn Sie wissen, welches Thema Sie unterrichten möchten, aber nicht sicher sind
 
 ## So suchen Sie
 
-1. Navigieren Sie zur **Suchseite** oben auf der Lessons.church-Seite.
-2. Geben Sie ein Stichwort oder eine Phrase in das **Suchfeld** ein (zum Beispiel „Vergebung", „David und Goliath" oder „Gebet").
-3. Drücken Sie **Enter** oder klicken Sie auf die Suchschaltfläche, um Ihre Ergebnisse zu sehen.
+1. Klicken Sie oben auf der Lessons.church-Seite auf das Symbol **Suche**, um das Suchfeld zu öffnen.
+2. Geben Sie ein Stichwort oder eine Phrase ein (zum Beispiel „Vergebung", „David und Goliath" oder „Gebet"). Passende Ergebnisse erscheinen während der Eingabe in einer Liste unter dem Feld -- klicken Sie auf eines, um direkt dorthin zu gelangen.
+3. Drücken Sie **Enter**, um die vollständige Ergebnisseite zu öffnen.
 
 ## Wie die Suche funktioniert
 
-Die Suche basiert auf einer Volltextsuche über die gesamte Lessons.church-Bibliothek. Sie durchsucht Lektionstitel, Beschreibungen und Inhalte, um Übereinstimmungen mit Ihren Stichwörtern zu finden. Die Ergebnisse umfassen Lektionen aus allen verfügbaren Programmen und von allen Anbietern, sodass Sie einen umfassenden Überblick darüber erhalten, was zu einem bestimmten Thema verfügbar ist.
+Die Suche durchsucht die Namen, Beschreibungen, Kategorien und Altersgruppen jedes Programms, jeder Studienreihe und jeder Lektion der Lessons.church-Bibliothek. Sie findet auch den Anfang eines Wortes, sodass „bapt“ „baptism“ findet. Übereinstimmungen im Namen zählen am meisten, und Programme und Studienreihen stehen etwas vor einzelnen Lektionen. Inhalte externer Anbieter sind nicht in den Suchergebnissen enthalten.
 
 ## Ergebnisse navigieren
 
-Suchergebnisse zeigen die übereinstimmenden Lektionen zusammen mit Informationen darüber an, zu welchem Programm und welcher Studienreihe jede gehört. Klicken Sie auf ein beliebiges Ergebnis, um direkt zur Lektionsseite zu gelangen, wo Sie den vollständigen Inhalt, Abschnitte, Rollen und herunterladbare Materialien einsehen können.
+Jedes Ergebnis ist als **Programm**, **Studienreihe** oder **Lektion** gekennzeichnet, zusammen mit seiner Altersgruppe, falls eine festgelegt ist. Studienreihen zeigen, zu welchem Programm sie gehören, und Lektionen zeigen ihre Studienreihe und ihr Programm. Klicken Sie auf ein beliebiges Ergebnis, um direkt zu dieser Seite zu gelangen. Eine Lektionsseite zeigt den vollständigen Inhalt, Abschnitte, Rollen und herunterladbare Materialien.
 
 ## Wann die Suche sinnvoll ist
 
@@ -40,7 +40,7 @@ Die Suche ist am nützlichsten, wenn:
 - Sie mit den verfügbaren Programmen noch nicht vertraut sind und eine schnelle Möglichkeit suchen, das Angebot zu erkunden.
 
 :::tip
-Wenn Ihr Stichwort zu viele Ergebnisse liefert, versuchen Sie eine spezifischere Phrase. Suchen Sie zum Beispiel nach „Barmherziger Samariter" statt nur nach „Samariter", um die Ergebnisse einzugrenzen.
+Ergebnisse, die mehr Ihrer Wörter enthalten, stehen weiter oben. Wenn das gewünschte Ergebnis weit unten steht, fügen Sie ein weiteres spezifisches Wort hinzu. Zum Beispiel bringt „Barmherziger Samariter" die Lektionen zu diesem Gleichnis an die Spitze.
 :::
 
 Wenn Sie bereits wissen, welches Programm Sie möchten, ist das Durchsuchen nach Programm normalerweise schneller. Siehe [Programme und Studienreihen](./programs-and-studies.md) für Details zur Navigation durch die Inhaltshierarchie.

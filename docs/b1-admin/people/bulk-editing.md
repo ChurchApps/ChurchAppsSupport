@@ -19,10 +19,11 @@ Bulk editing allows you to update multiple people at once, saving time when maki
 
 1. Navigate to **People** in B1 Admin
 2. Use the search or filter tools to find the people you want to update
-3. Check the boxes next to each person's name to select them
-   - You can select people individually
-   - Or use the header checkbox to select all visible people on the current page
-4. Once you have selected at least one person, the **Bulk Actions** button will appear
+3. Check the boxes to select people
+   - In the **Households** view, checking a household selects everyone in it
+   - In the **Table** view (switch with the **View as** toggle), you can select people individually
+   - Or use the checkbox above the list to select all visible people
+4. Once you have selected at least one person, the bar above the list shows how many are selected, along with **Clear Selection** and an **Actions** button
 
 :::tip
 If you need to update a large group of people based on specific criteria, use the [AI Search](./ai-search.md) feature or filters to narrow down your list first, then select all matching people.
@@ -30,19 +31,21 @@ If you need to update a large group of people based on specific criteria, use th
 
 ## Available Bulk Actions
 
-The **Bulk Actions** menu provides several options:
+The **Actions** menu provides several options:
 
 ### Update Membership Status
 
 Update the membership status for all selected people:
 
-1. Click **Bulk Actions** → **Set Membership Status**
+1. Click **Actions** → **Set Membership Status**
 2. Choose the new status:
    - **Visitor** -- First-time or occasional attendees
+   - **Guest** -- Guests, such as families registered at a check-in kiosk
    - **Regular Attendee** -- Frequent attendees who aren't members
    - **Member** -- Official church members
    - **Staff** -- Church staff members
    - **Inactive** -- People who are no longer attending
+   - **Deceased** -- People who have passed away
 3. Choose update mode:
    - **Overwrite all** -- Replace the current status for all selected people
    - **Only update empty** -- Only set the status for people who don't have one
@@ -52,7 +55,7 @@ Update the membership status for all selected people:
 
 Update marital status in bulk:
 
-1. Click **Bulk Actions** → **Set Marital Status**
+1. Click **Actions** → **Set Marital Status**
 2. Select the new status:
    - **Unknown**
    - **Single**
@@ -66,7 +69,7 @@ Update marital status in bulk:
 
 Update gender information for multiple people:
 
-1. Click **Bulk Actions** → **Set Gender**
+1. Click **Actions** → **Set Gender**
 2. Select the value:
    - **Unspecified**
    - **Male**
@@ -78,7 +81,7 @@ Update gender information for multiple people:
 
 Control whether people have opted out of communications:
 
-1. Click **Bulk Actions** → **Set Opted Out**
+1. Click **Actions** → **Set Directory Opt-Out**
 2. Choose:
    - **No** -- Allow communications (remove opt-out)
    - **Yes** -- Block communications (set opt-out)
@@ -93,7 +96,7 @@ Be careful when changing opt-out status. People who have explicitly opted out sh
 
 Set a Yes/No [custom field](../settings/custom-fields.md) value for all selected people at once:
 
-1. Click **Bulk Actions** → **Set Custom Field**.
+1. Click **Actions** → **Set Custom Field**.
 2. Choose the Yes/No custom field you want to set.
 3. Choose the value (**Yes** or **No**) to apply.
 4. Click **Update**.
@@ -106,7 +109,7 @@ Only Yes/No custom fields are available for this bulk action. To set other field
 
 Add all selected people to one or more groups:
 
-1. Click **Bulk Actions** → **Add to Group**
+1. Click **Actions** → **Add to Group**
 2. Search for and select the group(s) to add people to
 3. You can select multiple groups to add people to all of them
 4. Click **Add to Groups**
@@ -117,7 +120,7 @@ Each person will be added as a regular member of the selected group(s). You can 
 
 Remove all selected people from one or more groups:
 
-1. Click **Bulk Actions** → **Remove from Group**
+1. Click **Actions** → **Remove from Group**
 2. Search for and select the group(s) to remove people from
 3. You can select multiple groups
 4. Click **Remove from Groups**
@@ -130,10 +133,9 @@ This action only removes people from the specified groups. It does not delete th
 
 Permanently delete the selected people from your church database:
 
-1. Click **Bulk Actions** → **Delete**
-2. Review the list of people who will be deleted
-3. Type **DELETE** in the confirmation field
-4. Click **Confirm Delete**
+1. Click **Actions** → **Delete**
+2. The **Delete Selected People** dialog asks you to confirm how many people will be deleted
+3. Click **Delete**
 
 :::danger
 Deleting people is permanent and cannot be undone. This will remove all their data including:
@@ -174,7 +176,7 @@ After a membership class, update all attendees to Member status:
 
 1. Search for the people who attended the class
 2. Select them all
-3. Use **Bulk Actions** → **Set Membership Status** → **Member**
+3. Use **Actions** → **Set Membership Status** → **Member**
 
 ### Organizing Small Groups
 
@@ -182,7 +184,7 @@ Add multiple people to a new small group:
 
 1. Search for the people you want in the group
 2. Select them
-3. Use **Bulk Actions** → **Add to Group** and select the small group
+3. Use **Actions** → **Add to Group** and select the small group
 
 ### Cleaning Up Data
 
@@ -190,7 +192,7 @@ Fill in missing marital status for married couples:
 
 1. Filter for people who are married (using household information)
 2. Select those with blank marital status
-3. Use **Bulk Actions** → **Set Marital Status** → **Married** → **Only update empty**
+3. Use **Actions** → **Set Marital Status** → **Married** → **Only update empty**
 
 ## Related Articles
 

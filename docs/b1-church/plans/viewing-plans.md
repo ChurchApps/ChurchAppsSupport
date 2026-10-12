@@ -35,7 +35,7 @@ Your plans are split into two tabs: **Upcoming** and **Past**. Each entry shows:
 Below the list is a **Blockout Dates** section. Use it to manage dates when you are unavailable for serving. You can add, edit, and remove blockout date ranges so your team leaders know when to schedule around you.
 
 :::info
-Your church may send **reminders** before the services you are scheduled for, by email and as an app notification. If you have not responded yet, you can **Accept** or **Decline** right from the reminder email — no sign-in needed.
+Your church may send **reminders** before the services you are scheduled for, by email and as an app notification. If your church sends texts, you can also get them by text by turning on **Text messages** in your [Notification Preferences](../getting-started/notification-preferences.md). If you have not responded yet, you can **Accept** or **Decline** right from the reminder email — no sign-in needed.
 :::
 
 ## Viewing Plan Details

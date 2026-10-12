@@ -49,7 +49,7 @@ Todos os três chamam os mesmos dois módulos API através de `ApiHelper`: **Mem
 |----------------|-----------|---------|
 | `campuses` | nome, endereço | Descontinuado aqui — campus são mestres no módulo de associação (`/membership/campuses`); a cópia de presença é congelada somente leitura para leitores legados (`models/Campus.ts`) |
 | `services` | campusId, nome | Um encontro recorrente, por exemplo "Sunday Morning" (`models/Service.ts`) |
-| `serviceTimes` | serviceId, nome | Um intervalo de tempo dentro de um serviço, por exemplo "9:00 AM" (`models/ServiceTime.ts`) |
+| `serviceTimes` | serviceId, nome, dayOfWeek, startTime, endTime, checkinOpenMinutes, checkinCloseMinutes | Um intervalo de tempo dentro de um serviço, por exemplo "9:00 AM" (`models/ServiceTime.ts`). As colunas de cronograma são opcionais (migração `tools/migrations/attendance/2026-10-10_service_time_schedule.ts`) e definem a [janela de check-in](#scheduled-check-in-windows) |
 | `groupServiceTimes` | groupId, serviceTimeId | Tabela de junção: quais grupos (salas de aula) se reúnem em quais horários de serviço (`models/GroupServiceTime.ts`) |
 | `sessions` | groupId, serviceTimeId, sessionDate | Um encontro de um grupo em uma data -- criado preguiçosamente no momento da verificação de entrada (`models/Session.ts`) |
 | `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | Uma pessoa frequentando em uma data (`models/Visit.ts`). `checkinType` é `member` / `guest` / `volunteer` (NULL = membro legado), definido pelo kiosk e consumido pelos portões de capacidade/proporção |
@@ -111,7 +111,17 @@ Cada visita carrega um `checkinType` — `member`, `guest` ou `volunteer` (NULL 
 - **Difícil (sempre bloquear):** `checkinClosed`, `current + incoming > capacity`, contagem de convidado sobre `guestCapacity`. O lote é rejeitado com `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` — o kiosk mostra a sala nomeada.
 - **Proporção (aviso ou bloquio):** não-voluntários recebidos em uma sala onde `volunteers < minVolunteers`, nenhum voluntário algum, ou `children > volunteers × volunteerRatio`. A severidade segue a configuração por-igreja `ratioEnforcement` (`"warn"` padrão / `"block"`, editado em B1Admin Manage Church → Check-In, `CheckinSettingsEdit.tsx`). Modo de aviso retorna `409 { warning: true, error: "ratio", … }` a menos que o cliente reenvie com `acknowledgeWarnings=true` — esse reenvio é a confirmação de pessoal do kiosk override.
 
+### Janelas de check-in agendadas {#scheduled-check-in-windows}
+
+Um horário de serviço pode ter um cronograma semanal opcional (`dayOfWeek` de 0 a 6, com 0 = domingo; `startTime`/`endTime` em `HH:mm`; `checkinOpenMinutes`; `checkinCloseMinutes`), editado no formulário de horário de serviço em **Attendance → Setup** do B1Admin (`B1Admin/src/attendance/components/ServiceTimeEdit.tsx`, "Check-in Schedule"). `CheckinGateHelper.hasSchedule()` considera um horário de serviço agendado somente quando `dayOfWeek` e `startTime` estão definidos; horários sem agendamento nunca são limitados por tempo. `isServiceTimeOpen()` calcula a janela no horário local da igreja (`DateHelper.toChurchTime` com o `timeZone` da igreja), de `checkinOpenMinutes` antes do início até `checkinCloseMinutes` após o término (ou após o início quando não há término), tratando janelas que atravessam a meia-noite ou o limite da semana.
+
+A janela é aplicada em dois lugares:
+
+- **Listagem:** `GET /attendance/servicetimes` adiciona a cada linha um booleano calculado `checkinOpen`. O check-in próprio do B1App (`CheckinPage.tsx`) remove os horários em que `checkinOpen === false` e mostra "Check-in isn't open for this service right now." quando nenhum restar. O B1Checkin ainda não filtra por esse campo.
+- **Envio:** dentro de `evaluateGates()`, antes da avaliação de capacidade/proporção, `findClosedServiceTimeGroups()` rejeita o lote com `409 { error: "notOpen", groups: [{ groupId, groupName, reason: "notOpen" }] }` se o horário de serviço de alguma sessão alvo estiver fora da janela. O B1Checkin exibe isso pela sua tela existente de bloqueio ("room is full or closed").
+
 ### Elegibilidade de idade/série (no lado do kiosk)
+
 
 Elegibilidade de sala é UI consultivo, avaliado no kiosk, não aplicado pelo servidor. `B1Checkin/src/helpers/EligibilityHelper.ts` compara data de nascimento/série de uma pessoa contra o `minAgeMonths`/`maxAgeMonths`/`minGrade`/`maxGrade` do grupo (ordem de série: PreK, K, 1–12, Graduado) e retorna `eligible` / `ineligible` / `unknown` — dados faltando produzem `unknown` e nunca escondem uma sala. Idades e séries são computadas como da **data de promoção de série** da igreja (`gradePromotionDate` configuração, `"MM-DD"`, editado em `B1Admin/src/settings/components/GradePromotionSettingsEdit.tsx`); o kiosk a carrega de `GET /attendance/checkin/settings`, e `resolveAsOfDate` pega a ocorrência mais recente em ou antes de hoje. O seletor de sala destaca salas elegíveis e escurece as inelegíveis; selecionar uma sala escurecida requer uma confirmação de pessoal.
 

@@ -29,7 +29,7 @@ Sundin ang [Creating Groups](../groups/creating-groups.md) at [Group Members](..
 3. Magdagdag ng mga volunteer sa bawat grupo sa pamamagitan ng paghahanap ng kanilang pangalan at pag-click ng Idagdag
 
 :::tip
-Tukuyin ang mga lider ng team gamit ang green key icon sa Members tab. Ang mga lider ay maaaring pamahalaan ang kanilang sariling group calendar at mag-coordinate ng kanilang team.
+Tukuyin ang mga lider ng team gamit ang star icon (**Make Leader**) sa listahan ng miyembro ng group (i-click ang **All members** sa group page). Ang mga lider ay maaaring pamahalaan ang kanilang sariling group calendar at mag-coordinate ng kanilang team.
 :::
 
 ## Hakbang 2: Bumuo ng Iyong Song Library
@@ -52,10 +52,11 @@ Ang mga plano ay ang mga weekly assignments na nagsasabi sa mga volunteer kung s
 
 Sundin ang [Plans](../serving/plans.md) gabay upang:
 
-1. Mag-navigate sa Serving, piliin ang iyong ministry tab
-2. I-click ang "Add Plan" at piliin ang service date
-3. Sa Assignments tab, palawakin ang bawat team at magtakda ng mga volunteer sa kanilang mga posisyon
+1. Mag-navigate sa Serving, piliin ang iyong ministry tab, at buksan ang iyong uri ng plano
+2. I-click ang **New Plan** at piliin ang service date. Para mag-set up ng ilang Linggo nang sabay-sabay, kopyahin mula sa nakaraang plano at ilagay kung ilang linggo sa **Repeat weekly for this many weeks**
+3. Sa seksyong **Serving Team Assignments** ng plano, magdagdag ng mga posisyon at magtakda ng mga volunteer sa mga ito
 4. Ang mga volunteer ay makikita ang kanilang assignment status (Requested, Confirmed, Pending)
+5. I-on ang [volunteer reminders](../serving/plans.md#volunteer-reminders) para sa uri ng plano upang maipaalala sa mga volunteer sa pamamagitan ng push, email, o text bago ang bawat serbisyo
 
 ## Hakbang 4: Bumuo ng Service Order
 
@@ -63,8 +64,8 @@ Ilatag ang daloy ng iyong serbisyo mula simula hanggang dulo.
 
 Sundin ang [Service Order](../serving/service-order.md) gabay upang:
 
-1. Lumipat sa "Service Order" tab sa iyong plano
-2. I-click ang "Add Item" upang magdagdag ng mga elemento: worship songs (mula sa iyong library), panalangin, scripture readings, announcements, sermon, offering, closing
+1. Buksan ang iyong plano at hanapin ang seksyong **Order of Service** sa itaas
+2. I-click ang **Add** upang magdagdag ng mga elemento: worship songs (mula sa iyong library), panalangin, scripture readings, announcements, sermon, offering, closing
 3. I-drag at i-drop ang mga item upang baguhin ang daloy ng serbisyo
 
 :::info
@@ -89,7 +90,7 @@ Ang B1 Admin ay hindi na lumilikha ng mga task sa isang paulit-ulit na schedule.
 
 Payagan ang mga volunteer na mag-sign up para sa mga posisyon sa kanilang sarili sa halip na maghintay para sa admin assignments.
 
-1. Kapag nag-edit ng plano, itakda ang isang **Signup Deadline** (mga oras bago ang serbisyo) upang kontrolin kung kailan ang self-signup ay nagsasara. Iwanan ang blangko para sa walang deadline.
+1. Kapag gumagawa o nag-e-edit ng plano, itakda ang isang **Signup Deadline** (mga oras bago ang serbisyo) upang kontrolin kung kailan ang self-signup ay nagsasara. Iwanan ang blangko para sa walang deadline. Ang mga bagong plano ay nagsisimula sa deadline ng nakaraang plano.
 2. Opsyonal na i-toggle ang **Ipakita ang mga pangalan ng volunteer sa signup page** upang hayaang makita ng mga volunteer kung sino ang iba pang nag-sign up.
 3. Para sa bawat posisyon, suriin ang **Allow Self-Signup** checkbox upang gawin itong available para sa self-service.
 4. Magdagdag ng **Paglalarawan** sa bawat posisyon upang ang mga volunteer ay alam kung ano ang kasamahan ng papel.

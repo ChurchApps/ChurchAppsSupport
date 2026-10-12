@@ -23,7 +23,7 @@ B1 Admin은 세 개의 출석 보고서를 제공하여 사람들이 서비스�
 
 출석 추세 보고서는 시간에 따른 서비스의 출석 변화를 보여줍니다.
 
-1. 브라우저에서 직접 **admin.b1.church/reports/attendanceTrend**로 이동하세요(보고서는 네비게이션 메뉴에 항목이 없습니다 -- 주소를 북마크하는 것이 돌아오는 가장 쉬운 방법입니다). 같은 보고서는 또한 Attendance 페이지의 **Attendance Trend** 탭에도 있습니다.
+1. 브라우저에서 직접 **admin.b1.church/reports/attendanceTrend**로 이동하세요(보고서는 네비게이션 메뉴에 항목이 없습니다 -- 주소를 북마크하는 것이 돌아오는 가장 쉬운 방법입니다). 같은 보고서는 Attendance 페이지에도 있습니다: **All years**를 클릭한 다음 **Attendance Trend** 탭을 선택하세요.
 2. 선택적으로 **Campus**, **Service**, **Service Time** 또는 **Group**을 선택하여 결과를 필터링하세요.
 3. **Start Date**와 **End Date**를 설정하세요. 기본적으로 보고서는 지난 1년(1년 전부터 오늘까지)을 다루며, 종료 날짜는 완전히 포함됩니다. **Run Report**를 클릭하세요.
 4. 보고서는 주당 총 방문 횟수의 막대 차트와 표를 표시합니다. 각 주는 그 주의 일요일 날짜로 표시되며, 표의 **Session Dates** 열은 그 주에 출석이 있었던 실제 날짜를 나열합니다(예: "9/27, 9/30").
@@ -34,7 +34,7 @@ B1 Admin은 세 개의 출석 보고서를 제공하여 사람들이 서비스�
 
 그룹 출석 보고서는 날짜 범위의 각 그룹 세션에 참석한 사람을 보여줍니다.
 
-1. 브라우저에서 직접 **admin.b1.church/reports/groupAttendance**로 이동하거나, Attendance 페이지의 **Group Attendance** 탭을 열으세요.
+1. 브라우저에서 직접 **admin.b1.church/reports/groupAttendance**로 이동하거나, Attendance 페이지에서 **All years**를 클릭한 다음 **Group Attendance** 탭을 선택하세요.
 2. 선택적으로 **Campus**와 **Service**를 선택하세요.
 3. **Start Date**와 **End Date**를 설정하세요. 기본적으로 보고서는 지난 일요일부터 오늘까지를 다루며, 종료 날짜는 완전히 포함됩니다.
 4. **Run Report**를 클릭하세요.

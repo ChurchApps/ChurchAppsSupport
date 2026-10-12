@@ -25,7 +25,7 @@ Nakakonekta ang B1 Checkin app sa attendance setup ninyo sa B1 Admin. Kapag nag-
 
 ## Pag-set Up ng Check-In
 
-1. **I-configure muna ang inyong attendance structure.** Sa B1 Admin, pumunta sa **Attendance > Setup** at tiyaking nakalagay na ang inyong mga campus, oras ng serbisyo, at mga grupo. Umaasa ang check-in app sa configuration na ito. Tingnan ang [Attendance Setup](setup.md) para sa mga detalye.
+1. **I-configure muna ang inyong attendance structure.** Sa B1 Admin, pumunta sa **People > Attendance** at i-click ang **Setup** para tiyaking nakalagay na ang inyong mga campus, oras ng serbisyo, at mga grupo. Opsyonal, bigyan ang bawat oras ng serbisyo ng [check-in schedule](setup.md#setting-a-check-in-schedule) para awtomatikong magbukas at magsara ang check-in linggu-linggo. Umaasa ang check-in app sa configuration na ito. Tingnan ang [Attendance Setup](setup.md) para sa mga detalye.
 2. **I-install ang B1 Checkin app** sa mga device na balak ninyong gamitin. Available ang app sa mga sumusunod na platform:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
@@ -110,7 +110,7 @@ Para i-on ang pagpapakita ng QR code:
 3. I-toggle na on ang **QR Guest Registration** at i-click ang **Save**.
 
 :::note
-Ang setting na ito ay nasa **Mobile > B1 CheckIn** (parehong pahina ng card na **Kiosk Theme**), hindi sa Attendance.
+Ang setting na ito ay nasa **Mobile > B1 CheckIn** (parehong pahina ng card na **Kiosk Theme**), hindi sa Attendance. Ang aksyon na **Kiosk** sa pahina ng Attendance ay may link papunta sa pahinang ito.
 :::
 
 ### Pagbabahagi ng Registration Link
@@ -126,4 +126,4 @@ Idagdag ang registration link sa pahinang "Plan Your Visit" o "I'm New" ng websi
 
 ## Ano ang Naitatala
 
-Bawat check-in ay lumilikha ng attendance record sa B1 Admin. Makikita ninyo ang mga record na ito sa mga tab na [Attendance](tracking-attendance.md) at [Groups](../groups/group-members.md), gaya ng attendance na manu-manong inilagay. Walang pagkakaiba sa paraan ng paglabas ng datos -- pareho silang napupunta sa iisang mga report.
+Bawat check-in ay lumilikha ng attendance record sa B1 Admin. Makikita ninyo ang mga record na ito sa pahina ng [Attendance](tracking-attendance.md) at sa mga sesyon ng bawat [grupo](../groups/group-members.md), gaya ng attendance na manu-manong inilagay. Walang pagkakaiba sa paraan ng paglabas ng datos -- pareho silang napupunta sa iisang mga report.

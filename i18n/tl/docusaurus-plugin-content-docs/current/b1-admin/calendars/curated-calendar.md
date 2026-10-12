@@ -28,8 +28,8 @@ Pinagsasama ng curated calendar ang mga event mula sa maraming grupo sa iisang p
 
 ## Pagdaragdag ng mga Grupo sa Kalendaryo Mo
 
-1. I-click ang bago mong kalendaryo para buksan ito.
-2. Sa seksyong **Groups in Calendar** sa kanang bahagi, i-click ang **Add**.
+1. I-click ang **Manage Events** sa bago mong kalendaryo para buksan ito.
+2. I-click ang **Add Group** sa itaas ng kalendaryo. Ang mga grupong idinagdag mo ay lumalabas sa listahan ng **Groups in Calendar** sa kaliwang bahagi ng pahina.
 3. Pumili ng grupo mula sa dropdown menu.
 4. Piliin kung idadagdag ang **lahat ng event** mula sa grupong iyon o ang **mga partikular na event** lamang.
 5. I-click ang **Save**.

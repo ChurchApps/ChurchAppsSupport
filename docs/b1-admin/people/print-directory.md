@@ -21,7 +21,7 @@ The Print Directory feature generates a formatted, printable member directory fo
 ## Opening the Print Directory
 
 1. Navigate to **People** in B1 Admin.
-2. Click the **print icon** (printer icon) in the toolbar at the top of the People results card. It appears next to the Export button.
+2. Click **Print Directory** in the People page header.
 3. The Print Directory opens in a new browser tab and begins loading your directory data.
 4. After about 1.5 seconds, your browser's print dialog will appear automatically.
 
@@ -33,13 +33,13 @@ The directory opens in a separate tab so you can print it without leaving the Pe
 
 The print directory includes all **active members** of your church. Specifically:
 
-- People with an **Inactive** or **Visitor** membership status are automatically excluded.
+- People with an **Inactive**, **Visitor**, or **Deceased** membership status are automatically excluded.
 - People who have **opted out** of the directory are excluded.
 - Everyone else is grouped by **household**.
 
 ### Printing Only Your Search Results
 
-After you run a search on the People page -- a quick search, an [Advanced Search](./searching-people.md#advanced-search), a [Saved List](./lists.md), or an [AI Search](./ai-search.md) -- the print icon changes to **Print Results**. Clicking it prints a directory of just the people in your results instead of the whole church, using the same layout.
+After you run a search on the People page -- a quick search, an [Advanced Search](./searching-people.md#advanced-search), a [Saved List](./lists.md), or an [AI Search](./ai-search.md) -- the **Print Directory** button changes to **Print Results**. Clicking it prints a directory of just the people in your results instead of the whole church, using the same layout.
 
 When printing search results, the membership-status filter above does not apply: everyone you searched for is included, even Visitors or Inactive people. People who have opted out of the directory are still left out. To go back to printing the full directory, clear your search first.
 

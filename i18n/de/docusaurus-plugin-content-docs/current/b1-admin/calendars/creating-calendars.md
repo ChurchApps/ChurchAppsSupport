@@ -21,23 +21,23 @@ Wenn Sie einen Kalender in B1 Admin erstellen, können Sie eine kuratierte Ansic
 ## Neuen Kalender erstellen
 
 1. In B1 Admin öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Kalender** und klicken Sie auf **Kalender**.
-2. Klicken Sie auf **Kalender hinzufügen**.
+2. Klicken Sie oben auf der Seite auf **Kalender hinzufügen**. Das Formular für den neuen Kalender öffnet sich unterhalb der Kalenderliste.
 3. Geben Sie einen **Namen** für Ihren Kalender ein (zum Beispiel „Jugendbeteiligung Ereignisse" oder „Hauptkirchen-Kalender").
 4. Fügen Sie optional eine **Beschreibung** hinzu, um Ihrem Team zu helfen, den Zweck dieses Kalenders zu verstehen.
 5. Klicken Sie auf **Erstellen**, um Ihren neuen Kalender zu speichern.
 
 ## Die Seite Kalenderdetails
 
-Nach dem Erstellen eines Kalenders klicken Sie darauf, um die Detailseite zu öffnen. Diese Seite hat zwei Hauptbereiche:
+Nach dem Erstellen eines Kalenders klicken Sie in seiner Zeile auf **Ereignisse verwalten**, um die Detailseite zu öffnen. Diese Seite hat zwei Hauptbereiche:
 
-- **Linke Spalte** -- Eine Ansicht des Kalenders mit Ereignissen, die von verbundenen Gruppen eingezogen werden.
-- **Rechte Spalte** -- Die Liste der zugeordneten Gruppen. Hier können Sie verwalten, welche Gruppen in diesem Kalender enthalten sind.
+- **Linke Spalte** -- Der Name des Kalenders mit seinen Aktionen (**Neues Ereignis**, **Bearbeiten**, **.ics importieren** und **Drucken**), gefolgt von der Liste **Gruppen im Kalender**, die zeigt, welche Gruppen in diesem Kalender enthalten sind. Klicken Sie neben einer Gruppe auf **Entfernen**, um sie aus dem Kalender zu nehmen.
+- **Hauptbereich** -- Die Ansicht **Kalenderereignisse** mit Ereignissen, die von verbundenen Gruppen eingezogen werden, mit den Schaltflächen **Abonnieren** und **Gruppe hinzufügen** darüber.
 
 ## Gruppen verbinden
 
-Gruppen, die Ereignisse im Kalender haben, werden automatisch in der Gruppenliste auf der rechten Seite der Detailseite angezeigt.
+Gruppen, die Ereignisse im Kalender haben, werden automatisch in der Liste **Gruppen im Kalender** auf der linken Seite der Detailseite angezeigt.
 
-1. Klicken Sie auf **Hinzufügen** im Bereich Gruppen, um eine Gruppe mit Ihrem Kalender zu verknüpfen.
+1. Klicken Sie über dem Kalender auf **Gruppe hinzufügen**, um eine Gruppe mit Ihrem Kalender zu verknüpfen.
 2. Wählen Sie die Gruppe aus der Dropdown-Liste.
 3. Wählen Sie, ob Sie **alle Ereignisse** aus dieser Gruppe oder nur **bestimmte Ereignisse** einbeziehen möchten.
 4. Klicken Sie auf **Speichern**.

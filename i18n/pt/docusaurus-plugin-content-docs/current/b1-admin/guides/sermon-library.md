@@ -60,7 +60,7 @@ Siga o guia de [Live Streaming](../sermons/live-streaming.md) para:
 
 1. Insira seu ID do Canal YouTube nas configurações de transmissão
 2. Configure sua programação de serviço recorrente (por exemplo, Domingos às 10:00 AM)
-3. Customize as abas da página de transmissão: Chat, pedidos de oração e links personalizados
+3. Personalize as abas da página de transmissão (Chat, pedidos de oração e links personalizados) na página **Sermões > Configurações**
 
 :::info
 Quando você vai ao vivo no YouTube, a página de transmissão B1 automaticamente pega o stream. Nenhum passo extra necessário no domingo de manhã.

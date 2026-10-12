@@ -21,7 +21,7 @@ Ang pahina ng Church Settings ay kung saan mo isinasaayos ang pangunahing imporm
 ## Pag-edit ng Impormasyon ng Iyong Simbahan
 
 1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas na kaliwa), i-expand ang **Settings**, at i-click ang **Settings**.
-2. Buksan ang seksyong **Church Information** at i-click ang edit (lapis) icon nito.
+2. Sa seksyong **Church Information** (sa itaas ng pahina), i-click ang **Edit**.
 3. I-update ang alinman sa mga sumusunod na field:
    - **Church Name** -- Ang pangalang ipinapakita sa lahat ng produkto ng ChurchApps.
    - **Address** -- Ang pisikal na address ng iyong simbahan.
@@ -32,7 +32,7 @@ Ang pahina ng Church Settings ay kung saan mo isinasaayos ang pangunahing imporm
 
 Nakakakuha ang iyong simbahan ng libreng subdomain sa **yourchurch.1.church**. Ito ang web address kung saan maaaring puntahan ng mga miyembro at bisita ang online na presensya ng iyong simbahan.
 
-1. Sa pahina ng Settings, hanapin ang field na **Subdomain**.
+1. Sa pahina ng Settings, i-click ang **Edit** sa seksyong **Church Information** at hanapin ang field na **Subdomain**.
 2. Ilagay ang gusto mong subdomain (halimbawa, "gracechurch" para sa gracechurch.1.church).
 3. I-save ang iyong mga pagbabago.
 
@@ -61,20 +61,20 @@ Piliin kung anong araw nagsisimula ang iyong mga kalendaryo. Ang dropdown na **F
 
 Kinokontrol ng setting na **Region** kung paano isinusulat ang mga petsa at oras sa buong B1. Bilang default, gumagamit ang mga petsa ng format ng Estados Unidos (halimbawa, "Sep 28, 2026" at "9/28/2026"). Ang mga simbahang nasa labas ng US ay maaaring lumipat sa sarili nilang format -- halimbawa, kapag pinili ang English (United Kingdom), ipapakita ang "28 Sept 2026" at "28/09/2026".
 
-1. Sa pahina ng Settings, hanapin ang card na **Region** at i-click para i-edit ito.
+1. Sa pahina ng Settings, i-click ang **Region** sa listahan sa kaliwa, pagkatapos i-click ang **Edit** sa seksyong **Region**.
 2. Piliin ang iyong rehiyon mula sa dropdown na **Region**. Ang bawat opsyon ay may sample na petsa para makita mo nang eksakto kung paano lalabas ang mga petsa.
 3. I-click ang **Save**.
 
-Ipapakita na ng card na Region ang napili mong rehiyon, isang sample ng **Date format**, at ang iyong format ng **Phone numbers**.
+Ipapakita na ng seksyong Region ang napili mong rehiyon, isang sample ng **Date format**, at ang iyong format ng **Phone numbers**.
 
 ### Format ng Numero ng Telepono
 
-May setting na **Phone numbers** ang parehong Region card na kumokontrol kung paano inilalagay ang mga numero ng telepono sa record ng isang tao:
+May setting na **Phone numbers** ang parehong seksyong Region na kumokontrol kung paano inilalagay ang mga numero ng telepono sa record ng isang tao:
 
 - **International (with country code)** -- ang default. Ang mga phone field ay may country flag picker at sine-save ang mga numero kasama ang country code (halimbawa, +1 918 555 1234).
 - **Local (as typed)** -- nagiging simpleng text box ang mga phone field at sine-save ang mga numero nang eksakto sa pagkaka-type mo, nang walang idinaragdag na country code (halimbawa, 0701 234 5678). Piliin ito kung lokal na format ang gamit ng simbahan mo sa pagsulat ng mga numero at ayaw mong magdagdag ang B1 ng country code.
 
-Kapag napili ang **Local**, ipinapakita rin ng Region card ang "Local phone numbers" sa tabi ng iyong rehiyon.
+Kapag napili ang **Local**, ipinapakita rin ng seksyong Region ang "Local phone numbers" sa tabi ng iyong rehiyon.
 
 :::tip
 Pinakamahusay gumana ang texting kapag may country code ang mga numero. Kung nagpapadala ka ng mga text mula sa B1, panatilihin ang **International** na format, o tiyaking may country code ang mga numerong tina-type mo sa Local mode.
@@ -86,7 +86,7 @@ Naaangkop ang iyong rehiyon sa mga petsa at oras sa buong B1 Admin at sa iyong B
 
 Mag-connect ng texting provider para makapagpadala ng SMS sa isang tao o sa buong grupo mula sa B1 Admin. Ipinapadala ang mga text sa pamamagitan ng sarili mong account sa provider, kaya umiiral ang kanilang presyo at mga limitasyon.
 
-1. Sa pahina ng Settings, hanapin ang card na **Texting** at i-click para i-edit ito.
+1. Sa pahina ng Settings, i-click ang **Texting** sa listahan sa kaliwa, pagkatapos i-click ang **Edit** sa seksyong **Texting**.
 2. Pumili ng **Provider**:
    - **Clearstream** -- ilagay ang **API Key**. Gumawa nito sa iyong Clearstream Account Settings sa ilalim ng API Keys.
    - **Text In Church** -- ilagay ang **API Key**. Humingi muna sa Text In Church Support ng developer API access, pagkatapos ay gumawa ng key sa iyong Account Settings > seksyong Developer API.
@@ -95,7 +95,17 @@ Mag-connect ng texting provider para makapagpadala ng SMS sa isang tao o sa buon
 
 Para itigil ang pag-text, itakda ang **Provider** sa **None** at i-save. Aalisin nito ang naka-save na provider.
 
-Kapag may naka-connect nang provider, ang staff na may pahintulot na magpadala ng text ay makakakita ng text icon sa header ng isang grupo (**Text this group**) at ng isang taong may mobile phone (**Send text message**). I-type ang iyong mensahe at i-click ang **Send**. Binibilang ng dialog ang mga character at SMS segment. Para sa grupo, ipinapakita nito kung ilang miyembro ang makakatanggap ng text bago mo ipadala:
+### Pag-opt Out ng mga Taong Sumasagot ng STOP {#opting-out-people-who-reply-stop}
+
+Kapag na-save na ang provider, buksan muli ang seksyong Texting gamit ang **Edit**. Sa ilalim ng mga setting ng provider, may read-only na field na **Inbound (STOP) webhook URL** na nagpapakita ng web address na natatangi para sa inyong simbahan. I-click ang field para mapili ang address, kopyahin ito, at i-paste sa inbound message (reply) webhook setting ng inyong texting provider. Gumagana ito sa alinman sa mga provider sa itaas na kayang ipasa ang mga papasok na sagot sa isang webhook.
+
+Pagkatapos nito, kapag may sumagot ng **STOP** (o STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT, o REVOKE) sa isa sa inyong mga text, hahanapin ng B1 ang lahat ng may mobile number na tugma, mamarkahan silang nag-opt out, at io-off ang kanilang mga text reminder. Lalaktawan na sila sa mga group text. Hindi pinapansin ang iba pang sagot.
+
+:::info
+Ginagamit nito ang parehong opt-out setting ng **Hide me from the member directory**, kaya ang mga sumasagot ng STOP ay makikita ring **Hidden from directory** sa kanilang profile. Lalabas lamang ang field habang napili ang naka-save na provider -- kung palitan ninyo ang dropdown sa ibang provider, i-save muna para makita ulit ang URL.
+:::
+
+Kapag may naka-connect nang provider, ang staff na may pahintulot na magpadala ng text ay makakakita ng button na **Text** sa pahina ng isang grupo (**Text this group**) at ng isang taong may mobile phone (**Send text message**). I-type ang iyong mensahe at i-click ang **Send**. Binibilang ng dialog ang mga character at SMS segment. Para sa grupo, ipinapakita nito kung ilang miyembro ang makakatanggap ng text bago mo ipadala:
 
 - Lalaktawan ang mga miyembrong walang nakatalang mobile phone.
 - Ang mga miyembrong pumili ng **Hide me from the member directory** ay ibibilang na nag-opt out at lalaktawan.
@@ -115,7 +125,7 @@ Maaari ring awtomatikong lumabas ang mga text mula sa isang hakbang ng [workflow
 
 Bilang default, ang mga file na ina-upload mo sa iyong website (sa pamamagitan ng [Files](../website/files.md)) at iba pang content area ay gumagamit ng libreng hosted storage ng B1, hanggang 100MB. Kung kailangan mo ng mas malaking espasyo, maaari mong i-connect ang sarili mong cloud storage -- ang mga bagong upload ay diretso nang mapupunta sa iyong account nang walang limitasyon mula sa platform.
 
-1. Sa pahina ng Settings, hanapin ang card na **File Storage** at i-click para i-edit ito.
+1. Sa pahina ng Settings, i-click ang **File Storage** sa listahan sa kaliwa, pagkatapos i-click ang **Edit** sa seksyong **File Storage**.
 2. Pumili ng provider: **Google Drive**, **Dropbox**, **OneDrive**, o isang **S3-compatible bucket** (AWS S3, Cloudflare R2, Backblaze B2, atbp.).
 3. Para sa Google Drive, Dropbox, o OneDrive, i-click ang **Connect** at mag-sign in para pahintulutan ang access. Para sa S3-compatible bucket, ilagay ang iyong access key, secret, pangalan ng bucket, at public URL base.
 4. I-click ang **Save**.
@@ -128,7 +138,7 @@ Naaapektuhan lang nito ang mga bagong upload sa Files ng iyong website at mga ka
 
 Kung sinusubaybayan mo ang **Grade** ng mga bata at estudyante, maaaring awtomatikong i-akyat ng B1 ang lahat ng isang grade sa petsang pipiliin mo (halimbawa, Agosto 1) kaysa sa mano-manong pag-edit ng bawat profile.
 
-1. Sa pahina ng Settings, hanapin ang opsyong **Grade Promotion**.
+1. Sa pahina ng Settings, i-click ang **Grade Promotion** sa listahan sa kaliwa, pagkatapos i-click ang **Edit** sa seksyong **Grade Promotion**.
 2. I-on ang switch (ipapakita nitong **Enabled**) at piliin ang **Month** at **Day** ng pag-akyat ng grade bawat taon. Sa petsang iyon, ang lahat ng may grade ay aakyat ng isang grade, at ang mga 12th grader ay magiging **Graduated**.
 3. I-save ang iyong mga pagbabago.
 
@@ -136,7 +146,7 @@ Para itigil ang awtomatikong pag-akyat, i-off ang switch para ipakita nitong **D
 
 ## Import at Export
 
-Ang button na **Import/Export** sa header ng Settings ay nagbubukas ng hiwalay na tool sa bagong browser window. Gamitin ito para:
+Ang link na **Import/Export** sa ilalim ng pangalan ng inyong simbahan sa pahina ng Settings ay nagbubukas ng hiwalay na tool sa bagong browser window. Gamitin ito para:
 
 - Mag-import ng datos ng mga miyembro mula sa ibang church management system.
 - Mag-export ng iyong datos sa ChurchApps para sa backup o paglipat.

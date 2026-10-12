@@ -24,8 +24,8 @@ The import process uses a two-step workflow: first you preview what would be imp
 
 ## Importing Transactions
 
-1. In **B1 Admin**, navigate to **Donations > Batches**.
-2. Click the **Stripe Import** link at the bottom of the Batches page.
+1. In **B1 Admin**, navigate to **Donations > Stripe Import**. (You can also click **Import missing Stripe transactions** at the top of the **Batches** page.)
+2. The **Stripe Import** page opens.
 3. Select a **date range** for the transactions you want to import.
 4. Click **Preview** to run a dry-run check.
 
@@ -47,7 +47,7 @@ The preview step does not create any records. It is a read-only check so you can
 
 1. Review the preview results and the summary totals.
 2. Click **Import Missing** to import all transactions marked as **New**.
-3. After the import completes, status chips next to each transaction update to show the result.
+3. After the import completes, the status badges next to each transaction update to show the result.
 
 ## Tips for Using Stripe Import
 

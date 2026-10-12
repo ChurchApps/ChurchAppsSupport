@@ -20,9 +20,9 @@ A ordem de serviço define a sequência de elementos em seu serviço de adoraç�
 
 ## Acessando a Ordem de Serviço
 
-1. Navegue para **Servindo** e selecione seu ministério.
+1. Vá para **Servindo** e selecione seu ministério.
 2. Clique em um **tipo de plano**, depois abra um **plano** específico.
-3. Clique na aba **Ordem de Serviço** na página de detalhes do plano.
+3. A seção **Ordem de Serviço** fica no topo da página do plano, acima de **Atribuições da Equipe de Serviço**.
 
 ## Construindo sua Ordem de Serviço
 
@@ -38,8 +38,8 @@ A ordem de serviço é uma lista de itens dispostos na sequência em que ocorrer
 
 ## Adicionando Itens à Ordem de Serviço
 
-1. Na aba **Ordem de Serviço**, clique em **Adicionar Item**.
-2. Escolha o tipo de elemento que você quer adicionar (por exemplo, uma música de sua biblioteca, um item personalizado, um título ou um **Item Externo**).
+1. Na seção **Ordem de Serviço**, clique em **Adicionar** e escolha o que incluir: **Adicionar Seção** (um título que agrupa itens), **Item** (um item personalizado), **Música** (da sua biblioteca) ou **Adicionar da Aula**. Você também pode clicar diretamente em **Adicionar Seção**.
+2. Para adicionar algo dentro de uma seção, use o menu de adição no cabeçalho dessa seção e escolha **Música**, **Item** ou **Item Externo**.
 3. Digite os detalhes do item, como o título e quaisquer notas.
 4. Clique em **Salvar**.
 
@@ -49,7 +49,7 @@ Você pode adicionar músicas diretamente de sua biblioteca [Músicas](./songs.m
 
 ### Importando Múltiplos Itens de um Provedor Externo
 
-Escolher **Item Externo** abre um navegador para seus provedores de aula vinculados em vez de um formulário de item único. Navegue (ou procure) no conteúdo de um provedor e marque a caixa ao lado de cada seção ou ação que você quer. O diálogo rastreia quantos você tem selecionados (por exemplo, "3 selecionados") -- clique em **Importar (3)** para adicionar todos eles à ordem de serviço de uma vez, em vez de repetir o fluxo de adição de item para cada um.
+Escolher **Item Externo** (ou **Adicionar da Aula**) abre um navegador para seus provedores de aula vinculados em vez de um formulário de item único. Navegue (ou procure) no conteúdo de um provedor e marque a caixa ao lado de cada seção ou ação que você quer. O diálogo rastreia quantos você tem selecionados (por exemplo, "3 selecionados") -- clique em **Importar (3)** para adicionar todos eles à ordem de serviço de uma vez, em vez de repetir o fluxo de adição de item para cada um.
 
 :::tip
 Esta é a forma mais rápida de puxar um vale inteiro de aula de seções e pistas para uma ordem de serviço em uma passagem, em vez de adicionar cada item individualmente.
@@ -108,8 +108,8 @@ Seleção em lote só se aplica aos filhos diretos de uma seção, não itens an
 
 Se seu plano tiver mais de um horário de serviço (por exemplo, um serviço de 8h e 10h), você pode escolher em quais serviços cada item deve aparecer. Isso é útil quando um anúncio é relevante apenas para um serviço, ou quando uma música é cantada em um serviço mas não em outro.
 
-1. Abra um plano que tenha dois ou mais horários de serviço definidos no cartão **Horários** na aba **Atribuições**.
-2. Na aba **Ordem de Serviço**, clique em um item para editá-lo.
+1. Abra um plano que tenha dois ou mais horários de serviço. Clique em **Horários** na seção **Atribuições da Equipe de Serviço** para vê-los ou adicioná-los.
+2. Na seção **Ordem de Serviço**, clique em um item para editá-lo.
 3. Em **Incluir em Serviços**, você verá uma caixa de seleção para cada horário de serviço, rotulada com o horário.
 4. Desmarque qualquer serviço onde o item deve ser pulado.
 5. Clique em **Salvar**.
@@ -117,7 +117,7 @@ Se seu plano tiver mais de um horário de serviço (por exemplo, um serviço de 
 Por padrão, cada item é incluído em cada serviço. Horários de serviço excluídos são ocultos quando você imprime o plano filtrado para aquele serviço, para que cada serviço receba uma folha de execução limpa com apenas os itens relevantes.
 
 :::tip
-A seção **Incluir em Serviços** só aparece quando o plano tiver mais de um horário de serviço. Se você só vir um serviço, use o cartão **Horários** na aba **Atribuições** do plano para adicionar serviços adicionais primeiro.
+A seção **Incluir em Serviços** só aparece quando o plano tiver mais de um horário de serviço. Se você só vir um serviço, clique em **Horários** na seção **Atribuições da Equipe de Serviço** do plano para adicionar serviços adicionais primeiro.
 :::
 
 ### Mostrando uma Posição Diferente por Serviço
@@ -126,10 +126,10 @@ Se um item tiver uma **Posição** definida, cada horário de serviço marcado e
 
 ## Compartilhando a Ordem de Serviço
 
-Uma vez que sua ordem de serviço está completa, você pode imprimir o plano completo (incluindo a ordem de serviço) na página de detalhes do plano. Isso dá à sua equipe um resumo completo do serviço, encabeçado com o nome de sua igreja e o nome do plano. Quando **Mostrar Nomes de Voluntários** está ativado para a impressão, cada cabeçalho de seção também imprime com a posição do voluntário atribuído ao lado dele, para que sua equipe possa ver quem está cobrindo aquela seção sem abrir o aplicativo. Se a posição de um título é sobrescrita para serviços específicos, a impressão mostra cada nome de posição distinto que ele se resolve em todos os serviços naquele plano (por exemplo, "Equipe de Adoração / Equipe Juvenil").
+Uma vez que sua ordem de serviço está completa, você pode imprimir o plano completo (incluindo a ordem de serviço) com o botão **Imprimir** no topo da página do plano. Isso dá à sua equipe um resumo completo do serviço, encabeçado com o nome de sua igreja e o nome do plano. Quando **Mostrar Nomes de Voluntários** está ativado para a impressão, cada cabeçalho de seção também imprime com a posição do voluntário atribuído ao lado dele, para que sua equipe possa ver quem está cobrindo aquela seção sem abrir o aplicativo. Se a posição de um título é sobrescrita para serviços específicos, a impressão mostra cada nome de posição distinto que ele se resolve em todos os serviços naquele plano (por exemplo, "Equipe de Adoração / Equipe Juvenil").
 
 ## Próximas Etapas
 
 - Gerencie seu repertório de adoração na página [Músicas](./songs.md)
-- Atribua voluntários ao serviço na aba [Planos](./plans.md) Atribuições
+- Atribua voluntários ao serviço na seção [Atribuições da Equipe de Serviço](./plans.md#assigning-team-members) do plano
 - Crie [Tarefas](./tasks.md) para qualquer item de acompanhamento relacionado ao serviço

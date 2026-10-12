@@ -33,6 +33,10 @@ Basispfad: `/messaging/conversations`
 
 Gespräche mit `contentType: "person"` (der Notizenreiter auf einem Personendatensatz) oder `contentType: "personConfidential"` (der Abschnitt mit vertraulichen Notizen) werden auf jedem Lese- und Schreibpfad, einschließlich der oben erwähnten öffentlichen Routen, die für diese Inhaltstypen `401` zurückgeben, gated. `person` erfordert die MembershipApi-Berechtigung **People / Edit**; `personConfidential` erfordert **People / View Confidential Notes**. Für scoped API-Schlüssel trägt `people:write` beide Aktionen (der Benutzer des Schlüssels muss immer noch die zugrunde liegende Rollenberechtigung halten).
 
+### Zugriffskontrolle für Notizen von Workflow-Karten
+
+Gespräche mit `contentType: "workflowCard"` (die Notizen zu einer Workflow-Karte, wobei `contentId` die Aufgaben-ID der Karte ist) können nur von Personen gelesen und geschrieben werden, die diese Karte öffnen können: ein Benutzer mit der DoingApi-Berechtigung **Tasks / View** oder die Person bzw. Gruppe, der die Karte zugewiesen ist, von der sie erstellt wurde oder um die es geht. Alle anderen erhalten bei jedem Lesepfad `401`, einschließlich der oben genannten öffentlichen Routen. Das Gespräch einer Karte wird über die Karte selbst angehängt, mit `POST /doing/tasks/:id/conversation` (Body `{ "conversationId": "..." }`; das zuerst angehängte Gespräch gewinnt), was die Bearbeiter der Karte und ihr Zugewiesener aufrufen können.
+
 ### Beispiel: Ein Gespräch starten
 
 ```
@@ -168,12 +172,11 @@ Authorization: Bearer <token>
 
 Basispfad: `/messaging/notificationpreferences`
 
-Erweitert Standard-CRUD. Die Basisklasse bietet POST `/` (erstellen oder aktualisieren, keine Berechtigung erforderlich).
-
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |---------|------|------|--------------|-------------|
-| POST | `/` | JWT | — | Benachrichtigungseinstellungen erstellen oder aktualisieren (aus CRUD-Basisklasse) |
+| GET | `/categories` | JWT | — | Benachrichtigungskategorien mit ihren Standard- und erlaubten Kanälen auflisten |
 | GET | `/my` | JWT | — | Benachrichtigungseinstellungen für den aktuellen Benutzer laden (erstellt automatisch Standardeinstellungen, falls keine vorhanden) |
+| POST | `/` | JWT | — | Die Einstellungen des aktuellen Benutzers speichern. Body: beliebige von `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, plus optional `overrides: [{ categoryKey, channel, optedIn }]` (channel kann `push`, `email`, `in_app` oder `sms` sein; gesperrte Kategorien werden ignoriert). `allowSms` ist die Zustimmung des Mitglieds zu Textnachricht-Erinnerungen. Ein älterer Body als Zeilen-Array wird weiterhin akzeptiert |
 
 ## Verbindungen
 
@@ -254,6 +257,9 @@ Verwaltet SMS-SMS-Anbieter, Gruppen-SMS und Zustellungsverfolgung.
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |---------|------|------|--------------|-------------|
 | GET | `/providers` | JWT | — | SMS-Anbieter für die Kirche laden (Anmeldedaten sind maskiert) |
+| GET | `/status` | JWT | — | `{ enabled }` — ob die Kirche einen aktivierten SMS-Anbieter hat. Jeder angemeldete Kirchenbenutzer; wird verwendet, um **Text**-Optionen nur anzuzeigen, wenn SMS gesendet werden können |
+| GET | `/inboundUrl` | JWT | `texting.send` oder `settings.edit` | `{ url }` — die eingehende (STOP-)Webhook-URL der Kirche, die beim Anbieter eingefügt wird |
+| POST | `/inbound/:churchId/:token` | Public | — | Webhook für eingehende Nachrichten des Anbieters. `token` ist ein HMAC der Kirchen-ID. Eine Antwort, die genau einem Stopp-Wort entspricht (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`), markiert jede passende Person als `optedOut` und schaltet deren `allowSms` aus. Gibt `{ optedOut: <count> }` zurück; andere Antworten geben `{ optedOut: 0 }` zurück |
 | GET | `/preview/:groupId` | JWT | — | Vorschau der Empfänger für eine Gruppen-SMS (berechtigt, abmelden, keine Telefonnummern) |
 | GET | `/sent` | JWT | — | Alle gesendeten SMS-Datensätze für die Kirche laden |
 | GET | `/sent/:id/details` | JWT | — | Eine gesendete SMS mit Pro-Empfänger-Zustellungsprotokollen laden |

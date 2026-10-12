@@ -65,11 +65,11 @@ Chemin de base : `/attendance/servicetimes`
 
 | Méthode | Chemin | Auth | Permission | Description |
 |---------|--------|------|-----------|-------------|
-| GET | `/` | JWT | — | Lister toutes les heures de service. Filtrez par `?serviceId=`. Ajoutez `?include=groups` pour ajouter des données de groupe |
+| GET | `/` | JWT | — | Lister toutes les heures de service. Filtrez par `?serviceId=`. Ajoutez `?include=groups` pour ajouter des données de groupe. Chaque ligne comprend un booléen calculé `checkinOpen` (faux uniquement lorsque l'heure de service dispose d'un calendrier d'enregistrement dont la fenêtre est fermée en ce moment, à l'heure locale de l'église) |
 | GET | `/:id` | JWT | — | Obtenir une heure de service par ID |
 | GET | `/search?campusId=&serviceId=` | JWT | — | Rechercher les heures de service par campus et service |
 | GET | `/public/:churchId` | Public | — | Obtenir l'arborescence campus → service → heure pour une église. Alimente l'élément `serviceTimes` du générateur de site Web |
-| POST | `/` | JWT | Services.Edit | Créer ou mettre à jour les heures de service |
+| POST | `/` | JWT | Services.Edit | Créer ou mettre à jour les heures de service. Champs de calendrier facultatifs : `dayOfWeek` (0 = dimanche … 6), `startTime` / `endTime` (`HH:mm`), `checkinOpenMinutes` (avant le début), `checkinCloseMinutes` (après la fin). L'enregistrement n'est limité par l'horaire que si `dayOfWeek` et `startTime` sont tous deux définis |
 | DELETE | `/:id` | JWT | Services.Edit | Supprimer une heure de service |
 
 ## Heures de service de groupe
@@ -192,6 +192,8 @@ Authorization: Bearer <token>
   }
 ]
 ```
+
+Si une heure de service ciblée dispose d'un calendrier d'enregistrement et que sa fenêtre est fermée, rien n'est enregistré et la réponse est `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }`. Les dépassements de capacité et de ratio de bénévoles renvoient également 409 (`error: "capacity"` ou `"ratio"`).
 
 ## Sessions de visite
 

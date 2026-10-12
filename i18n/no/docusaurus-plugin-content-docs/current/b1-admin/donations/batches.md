@@ -20,14 +20,14 @@ Gavebunter samler donasjonene dine, slik at de blir lettere å følge opp og avs
 
 ## Gavebunt-siden
 
-Når du går til **Donasjoner > Gavebunter**, ser du en liste over alle gavebuntene dine. Hver rad viser:
+Når du går til **Donasjoner > Gavebunter**, ser du en liste over gavebuntene dine. Hver rad viser:
 
 - **Navn** -- navnet du ga gavebunten
 - **Dato** -- datoen for innsamlingen
 - **Donasjoner** -- antall enkeltdonasjoner i gavebunten
 - **Totalt** -- det samlede beløpet
 
-Overskriften øverst viser sammendragstall, blant annet totalt antall gavebunter, totalt antall donasjoner på tvers av alle gavebunter og det samlede beløpet.
+Over listen finner du årsknapper som lar deg vise bare gavebuntene fra ett år, eller **Alle** gavebunter. En oppsummeringslinje viser antall gavebunter, antall gaver og totalbeløpet for gavebuntene som vises.
 
 ## Opprette en ny gavebunt
 
@@ -43,22 +43,24 @@ Den nye gavebunten vises i listen, klar til at du legger til donasjoner.
 - **Se donasjoner** -- klikk på navnet til en gavebunt for å åpne den og se alle enkeltdonasjonene den inneholder. Derfra kan du legge til, redigere eller fjerne donasjoner.
 - **Redigere gavebuntdetaljer** -- klikk på knappen **Rediger** på en gavebuntrad for å endre navn eller dato.
 - **Sortere** -- bruk kolonneoverskriftene til å sortere gavebuntene etter navn eller dato.
-- **Eksportere** -- klikk på **Eksporter** for å laste ned gavebuntlisten som et regneark (CSV).
+- **Eksportere** -- klikk på **Eksporter** øverst på siden for å laste ned gavebuntene som vises, som et regneark (CSV).
+- **Feilede hendelser** -- hvis betalingsløsningen din har rapportert problemer, vises en knapp **Feilede hendelser** (med antall uløste hendelser) øverst på siden. Klikk på den for å vise eller skjule listen over hendelser under gavebuntene.
+- **Importere fra Stripe** -- klikk på **Importer manglende Stripe-transaksjoner** øverst på siden for å åpne verktøyet [Stripe-import](stripe-import.md).
 
 ## Skrive ut en gavebunt
 
-Åpne en gavebunt og klikk på **Skriv ut**-ikonet (skriveren) øverst i donasjonslisten for å skrive ut en papirkopi til telleteamet eller til innskuddsdokumentasjonen. Utskriften inneholder:
+Åpne en gavebunt og klikk på **Skriv ut** over donasjonslisten for å skrive ut en papirkopi til telleteamet eller til innskuddsdokumentasjonen. Utskriften inneholder:
 
 - Menighetens navn, gavebuntens navn og gavebuntens dato
 - Alle donasjoner i gavebunten, med giverens navn, metode, notater, dato og beløp (refunderte gaver er overstreket og merket som refundert)
 - **Delsummer per fond** -- totalbeløpet gitt til hvert fond i gavebunten
 - **Gavebunttotal** -- det samlede beløpet for hele gavebunten
 
-Skriv ut-ikonet vises først når gavebunten har minst én donasjon.
+**Skriv ut**-knappen vises først når gavebunten har minst én donasjon.
 
 ### Skrive ut flere gavebunter samtidig
 
-For å skrive ut alle gavebunter fra en periode i én operasjon -- for eksempel alle innskudd fra forrige måned -- klikker du på **Skriv ut**-ikonet (skriveren) i overskriften på listen **Gavebunter**, ved siden av **Eksporter**. Siden **Skriv ut gavebunter** åpnes med en **Startdato** og en **Sluttdato** som som standard dekker de siste 30 dagene. Endre en av datoene for å velge et annet tidsrom.
+For å skrive ut alle gavebunter fra en periode i én operasjon -- for eksempel alle innskudd fra forrige måned -- klikker du på **Skriv ut** øverst på siden **Gavebunter**, ved siden av **Eksporter**. Siden **Skriv ut gavebunter** åpnes med en **Startdato** og en **Sluttdato** som som standard dekker de siste 30 dagene. Endre en av datoene for å velge et annet tidsrom.
 
 Hver gavebunt med dato innenfor tidsrommet (inkludert start- og sluttdatoen) skrives ut i datorekkefølge, én gavebunt per side, med samme oppsett som utskriften av en enkelt gavebunt. Gavebunter uten donasjoner utelates, og hvis ingen av gavebuntene i tidsrommet har donasjoner, ser du teksten «No batches with donations in this date range.» Klikk på **Skriv ut** for å åpne utskriftsdialogen i nettleseren, eller på **Lukk** for å gå tilbake til gavebuntlisten.
 

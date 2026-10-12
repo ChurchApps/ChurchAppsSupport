@@ -38,11 +38,11 @@ Hvis du holder musepekeren over et arrangement, vises arrangementets tittel og r
 
 ## Filtrere etter rom eller ressurs
 
-Bruk nedtrekksmenyen **Filter** øverst til venstre for å begrense kalenderen til ett enkelt rom eller én ressurs. Velg **Alle rom og ressurser** for å gå tilbake til hele visningen.
+Bruk nedtrekksmenyen **Rom / ressurs** øverst til venstre for å begrense kalenderen til ett enkelt rom eller én ressurs. Velg **Alle rom og ressurser** for å gå tilbake til hele visningen.
 
 ## Booke et rom eller en ressurs
 
-1. Klikk på knappen **Book** øverst til høyre på siden.
+1. Klikk på knappen **Book** øverst på siden.
 2. Fyll ut arrangementsdetaljene i dialogboksen som åpnes:
    - **Tittel** — arrangementets navn
    - **Start** og **Slutt** dato/klokkeslett

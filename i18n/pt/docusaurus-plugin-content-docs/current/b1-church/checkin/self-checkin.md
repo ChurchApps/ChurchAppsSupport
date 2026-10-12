@@ -33,7 +33,7 @@ Clique em um serviço para selecioná-lo e passar para a próxima etapa.
 Após selecionar um serviço, você verá uma lista de seus membros da família. Para cada pessoa que está comparecendo:
 
 1. Toque em um membro da família para expandir sua entrada.
-2. Você verá os **horários de serviço** disponíveis para o serviço que selecionou.
+2. Você verá os **horários de serviço** disponíveis para o serviço que selecionou. Se sua igreja definiu um cronograma de check-in para um horário de serviço, ele só aparece enquanto o check-in para ele estiver aberto (por exemplo, de 30 minutos antes do serviço até pouco depois de seu término).
 3. Clique em **Selecionar Grupo** próximo a um horário de serviço para escolher qual grupo a pessoa deve fazer check-in (como "Culto Principal", "Sala de Crianças 1" ou "Grupo de Jovens").
 4. Repita para cada membro da família que está comparecendo.
 
@@ -57,6 +57,9 @@ Se você precisar mudar uma seleção de grupo antes de completar o check-in, to
 
 - Você só pode fazer check-in de membros da família vinculados à sua conta. Se um membro da família está faltando, peça ao administrador da sua igreja para adicioná-lo à sua família.
 - Se nenhum serviço aparecer na página de check-in, sua igreja pode não ter nenhum serviço configurado para check-in neste momento.
+- Se você selecionar um serviço e vir "Check-in isn't open for this service right now", nenhum dos horários desse serviço está atualmente dentro da janela de check-in. Tente novamente mais perto do horário do serviço.
+- Se uma sala que você escolheu estiver cheia ou fechada, você verá "A room you picked is full or closed for check-in. Please see a volunteer."
+
 
 :::warning
 O check-in está disponível apenas quando sua igreja tem serviços ativos configurados. Se você não ver serviços listados, verifique com o escritório da sua igreja para confirmar se o autoatendimento de check-in está ativado.

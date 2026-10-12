@@ -49,7 +49,7 @@ Les trois appellent les deux mêmes modules API via `ApiHelper` : **MembershipAp
 |----------------|-----------|---------|
 | `campuses` | name, address | Obsolète ici -- les campus sont maîtrisés dans le module d'adhésion (`/membership/campuses`) ; la copie de présence est gelée en lecture seule pour les lecteurs hérités (`models/Campus.ts`) |
 | `services` | campusId, name | Un rassemblement récurrent, par ex. "Sunday Morning" (`models/Service.ts`) |
-| `serviceTimes` | serviceId, name | Une tranche horaire au sein d'un service, par ex. "9:00 AM" (`models/ServiceTime.ts`) |
+| `serviceTimes` | serviceId, name, dayOfWeek, startTime, endTime, checkinOpenMinutes, checkinCloseMinutes | Une tranche horaire au sein d'un service, par ex. "9:00 AM" (`models/ServiceTime.ts`). Les colonnes de calendrier sont facultatives (migration `tools/migrations/attendance/2026-10-10_service_time_schedule.ts`) et déterminent la [fenêtre d'enregistrement](#scheduled-check-in-windows) |
 | `groupServiceTimes` | groupId, serviceTimeId | Tableau de jointure : quels groupes (salles de classe) se réunissent à quelles heures de service (`models/GroupServiceTime.ts`) |
 | `sessions` | groupId, serviceTimeId, sessionDate | Une réunion d'un groupe à une date -- créée paresseusement au moment du check-in (`models/Session.ts`) |
 | `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | Une personne assistant à une date (`models/Visit.ts`). `checkinType` est `member` / `guest` / `volunteer` (NULL = legacy member), défini par le kiosque et consommé par les portes de capacité/ratio |
@@ -108,6 +108,15 @@ Chaque visite porte un `checkinType` -- `member`, `guest` ou `volunteer` (NULL s
 
 - **Dur (toujours bloquer) :** `checkinClosed`, `current + incoming > capacity`, le nombre d'invités dépasse `guestCapacity`. Le lot est rejeté avec `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` -- le kiosque affiche la salle nommée.
 - **Ratio (avertir ou bloquer) :** les non-bénévoles entrants dans une salle où `volunteers < minVolunteers`, pas de bénévoles du tout, ou `children > volunteers × volunteerRatio`. La gravité suit le paramètre par église `ratioEnforcement` (`"warn"` par défaut / `"block"`, modifié dans B1Admin Manage Church → Check-In, `CheckinSettingsEdit.tsx`). Le mode avertir retourne `409 { warning: true, error: "ratio", … }` sauf si le client le renvoie avec `acknowledgeWarnings=true` -- ce renvoi est l'override de confirmation du personnel du kiosque.
+
+### Fenêtres d'enregistrement planifiées {#scheduled-check-in-windows}
+
+Une heure de service peut comporter un calendrier hebdomadaire facultatif (`dayOfWeek` de 0 à 6, avec 0 = dimanche, `startTime`/`endTime` au format `HH:mm`, `checkinOpenMinutes`, `checkinCloseMinutes`), modifiable dans le formulaire d'heure de service **Attendance → Setup** de B1Admin (`B1Admin/src/attendance/components/ServiceTimeEdit.tsx`, « Check-in Schedule »). `CheckinGateHelper.hasSchedule()` considère une heure de service comme planifiée uniquement lorsque `dayOfWeek` et `startTime` sont tous deux définis ; les heures non planifiées ne sont jamais limitées dans le temps. `isServiceTimeOpen()` calcule la fenêtre à l'heure locale de l'église (`DateHelper.toChurchTime` avec le `timeZone` de l'église), de `checkinOpenMinutes` avant le début jusqu'à `checkinCloseMinutes` après la fin (ou après le début s'il n'y a pas de fin), en gérant les fenêtres qui traversent minuit ou la limite de la semaine.
+
+La fenêtre est appliquée à deux endroits :
+
+- **Liste :** `GET /attendance/servicetimes` ajoute à chaque ligne un booléen calculé `checkinOpen`. L'enregistrement en libre-service de B1App (`CheckinPage.tsx`) retire les heures où `checkinOpen === false` et affiche « Check-in isn't open for this service right now. » lorsqu'il n'en reste aucune. B1Checkin ne filtre pas encore sur ce champ.
+- **Envoi :** dans `evaluateGates()`, avant l'évaluation de capacité/ratio, `findClosedServiceTimeGroups()` rejette le lot avec `409 { error: "notOpen", groups: [{ groupId, groupName, reason: "notOpen" }] }` si l'heure de service de l'une des sessions ciblées se trouve en dehors de sa fenêtre. B1Checkin affiche cela via son écran existant de porte stricte (« room is full or closed »).
 
 ### Admissibilité d'âge/grade (côté kiosque)
 

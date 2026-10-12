@@ -6,7 +6,7 @@ title: "Monitoraggio delle presenze"
 
 <div class="article-intro">
 
-Una volta configurati i campus, gli orari dei servizi e i gruppi, B1 Admin rende facile esaminare i dati di presenze e individuare tendenze. La pagina Presenze fornisce due viste di reporting -- la scheda **Andamento presenze** per tendenze a livello di chiesa e la scheda **Presenze per gruppo** per dettagli a livello di gruppo. Utilizzate questi strumenti per comprendere i modelli di crescita, identificare il calo del coinvolgimento, e prendere decisioni basate sui dati per la vostra chiesa.
+Una volta configurati i campus, gli orari dei servizi e i gruppi, B1 Admin rende facile esaminare i dati di presenze e individuare tendenze. La pagina Presenze si apre con un riepilogo delle presenze di questa settimana, e i suoi report **Tutti gli anni** forniscono due viste principali -- la scheda **Andamento presenze** per tendenze a livello di chiesa e la scheda **Presenze per gruppo** per dettagli a livello di gruppo. Utilizzate questi strumenti per comprendere i modelli di crescita, identificare il calo del coinvolgimento, e prendere decisioni basate sui dati per la vostra chiesa.
 
 </div>
 
@@ -21,8 +21,12 @@ Una volta configurati i campus, gli orari dei servizi e i gruppi, B1 Admin rende
 ## Visualizzazione degli andamenti di presenze
 
 1. Aprite **B1 Admin**, aprite il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandete **Persone**, e fate clic su **Presenze**.
-2. Fate clic sulla scheda **Andamento presenze**.
+2. Fate clic su **Tutti gli anni** nella colonna di sinistra. La scheda **Andamento presenze** è selezionata per impostazione predefinita.
 3. Il report si esegue automaticamente quando si apre la scheda, mostrando il totale delle presenze per ogni settimana.
+
+:::tip
+Per una rapida occhiata alla settimana corrente, la pagina principale delle Presenze mostra quante persone sono nella stanza questa settimana, una suddivisione per stanza (gruppo), eventuali ospiti e un grafico a barre di 13 settimane dei check-in -- senza bisogno di un report.
+:::
 
 ## Filtraggio dei vostri dati
 
@@ -44,7 +48,7 @@ I report si eseguono automaticamente ogni volta che aprite la scheda Andamento p
 
 La scheda **Presenze per gruppo** mostra chi ha frequentato ogni sessione di gruppo. Ciò è utile quando volete monitorare una classe specifica, un team di ministero, o un piccolo gruppo piuttosto che osservare i numeri complessivi dei servizi.
 
-1. Selezionate la scheda **Presenze per gruppo**.
+1. Nei report **Tutti gli anni**, selezionate la scheda **Presenze per gruppo**.
 2. Opzionalmente scegliete un **Campus** e un **Servizio**.
 3. Impostate la **Data di inizio** e la **Data di fine**. Per impostazione predefinita il report copre la domenica scorsa fino ad oggi.
 4. Fate clic su **Esegui report**.

@@ -35,7 +35,7 @@ Planene dine er delt inn i to faner: **Kommende** og **Tidligere**. Hver oppfør
 Under listen er en **Blokkeringsdatoer**-seksjon. Bruk den til å administrere datoer når du er utilgjengelig for tjeneste. Du kan legge til, redigere og fjerne blokkeringsdatointervaller slik at teamlederene dine vet når de skal planlegge rundt deg.
 
 :::info
-Kirken din kan sende **påminnelser** før tjenestene du er planlagt for, via e-post og som appvarsel. Hvis du ikke har svart ennå, kan du **Akseptere** eller **Avslå** rett fra påminnelses-e-posten -- ingen innlogging nødvendig.
+Kirken din kan sende **påminnelser** før tjenestene du er planlagt for, via e-post og som appvarsel. Hvis kirken din sender tekst, kan du også få dem som tekstmelding ved å slå på **Tekstmeldinger** i [Varselpreferanser](../getting-started/notification-preferences.md). Hvis du ikke har svart ennå, kan du **Akseptere** eller **Avslå** rett fra påminnelses-e-posten -- ingen innlogging nødvendig.
 :::
 
 ## Visning av Plandetaljer

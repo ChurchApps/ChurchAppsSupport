@@ -61,8 +61,8 @@ Quando un membro dona online tramite Stripe:
 
 Per registrare una donazione in contanti o assegni in una valuta diversa:
 
-1. Vai a **Donazioni** in B1 Admin
-2. Fai clic su **Aggiungi Donazione**
+1. Vai a **Donazioni > Lotti** in B1 Admin e apri il lotto
+2. Fai clic su **Aggiungi Donazione** in alto nella pagina del lotto
 3. Seleziona la valuta dal menu a discesa della valuta
 4. Immetti l'importo in quella valuta
 5. Completa il resto dei dettagli della donazione

@@ -18,7 +18,8 @@ Quando membros visitam seu site B1.church, veem o site público da sua igreja co
 - **Grupos** -- Visualize os grupos aos quais você pertence, veja membros do grupo, participe de conversas e rastreie presença.
 - **Ofertório** -- Faça doações para sua igreja online e visualize seu histórico de ofertório.
 - **Eventos** -- Navegue em eventos futuros e registre você e sua família.
-- **Serviço** -- Visualize planos de serviço, suas posições de voluntariado e inscreva-se em oportunidades de voluntariado abertas.
+- **Serviço** -- Visualize planos de serviço, suas posições de voluntariado e inscreva-se em oportunidades de voluntariado abertas. Escolha receber lembretes de escala e eventos por texto em suas [preferências de notificação](./getting-started/notification-preferences.md) (responda STOP a qualquer momento para parar).
+
 - **Planos** -- Veja planos de serviço futuros, visualize suas posições atribuídas e acesse detalhes de músicas e ordens de serviço.
 - **Verificação de Entrada** -- Registre você e os membros de sua casa para serviços e eventos. Visitantes podem se registrar por código QR.
 - **Diretório da Comunidade** -- Navegue no diretório de membros da sua igreja, visualize perfis e envie mensagens diretas. Controle quem pode ver suas informações de contato a partir do seu [perfil aba de Privacidade](./getting-started/editing-your-profile.md#privacy-tab).

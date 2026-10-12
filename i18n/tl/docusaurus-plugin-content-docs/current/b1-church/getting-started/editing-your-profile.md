@@ -29,7 +29,7 @@ Ang Profile tab ay naglalaman ng impormasyon na makikita ng iyong simbahan sa iy
 - **Name** — First, Middle, at Last name.
 - **Contact** — Email at petsa ng kaarawan.
 - **Address** — Kalye, lungsod, estado, at zip.
-- **Phone** — Mobile, home, at work numbers.
+- **Phone** — Mobile, home, at work numbers. Kung i-on mo ang text reminders sa [Mga Kagustuhan sa Notipikasyon](./notification-preferences.md), ipapadala ang mga ito sa iyong mobile number.
 
 I-edit ang anumang larangan at i-save ang iyong mga pagbabago mula sa bar sa ibaba ng screen.
 

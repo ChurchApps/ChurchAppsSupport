@@ -23,10 +23,16 @@ title: "AI-søk"
 AI-søk bruker kunstig intelligens til å tolke spørsmålet ditt og returnere matchende resultater fra persondatabasen din. Du kan stille spørsmål på samme måte som du ville spurt en kollega.
 
 1. Naviger til **Personer**-siden i B1 Admin.
-2. Se etter **AI-søk**-alternativet under søkekontrollene.
+2. Klikk på **Spør** under søkefeltet for å åpne **AI-søk**-boksen.
 3. Skriv inn spørsmålet ditt med vanlig språk.
-4. Trykk **Enter** eller klikk **Søk** for å kjøre spørringen.
-5. Resultattabellen oppdateres for å vise de matchende personene.
+4. Klikk **Søk** for å kjøre spørringen.
+5. Resultatlisten oppdateres for å vise de matchende personene.
+
+Klikk på **Tøm søk** for å fjerne spørsmålet ditt og gå tilbake til hele registeret.
+
+:::info
+Hvis AI-søk ikke kan nås, vises *«AI-søk er midlertidig utilgjengelig. Prøv igjen senere, eller bruk søket ovenfor.»* Spørsmålet ditt beholdes, slik at du kan prøve igjen om et øyeblikk – eller bruke hurtigsøk eller **Avansert** søk i mellomtiden.
+:::
 
 ## Eksempelspørringer
 
@@ -52,7 +58,7 @@ AI-søk er spesielt nyttig når:
 - Du vil ha et raskt svar på et spørsmål om menigheten uten å lage en rapport.
 
 :::info
-AI-søk fungerer sammen med standard hurtigsøk og kolonnefiltre. Bruk den tilnærmingen som passer best for dine behov. For enkle navneoppslag er [hurtigsøk](searching-people.md) det raskeste alternativet. For mer nyanserte spørsmål utmerker AI-søk seg.
+AI-søk fungerer sammen med standard hurtigsøk og **Avansert**-filtre. Bruk den tilnærmingen som passer best for dine behov. For enkle navneoppslag er [hurtigsøk](searching-people.md) det raskeste alternativet. For mer nyanserte spørsmål utmerker AI-søk seg.
 :::
 
 For andre søkealternativer, se [Søke etter personer](./searching-people.md).

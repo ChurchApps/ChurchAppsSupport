@@ -22,9 +22,9 @@ For further support, please email [support@churchapps.org](mailto:support@church
 ## Walkthrough
 
 1. Using Google Chrome, go to [admin.b1.church](https://admin.b1.church) and sign in with your username and password.
-2. This will take you to the **Dashboard**, the B1.church Admin home page. It shows this week's service and who's checked in and serving, along with your tasks and groups. Use the **Jump menu** (the search bar at the top-left, see below) to reach People, Donations, Website, and the rest of the app. Click the small church logo next to it to return to the Dashboard at any time.
+2. This will take you to the **Dashboard**, the B1.church Admin home page. It shows this week's service and who's checked in and serving, along with **My tasks** (your open tasks) and **My Groups**. Use the **Jump menu** (the search bar at the top-left, see below) to reach People, Donations, Website, and the rest of the app. Click the small church logo next to it to return to the Dashboard at any time.
 3. Open the Jump menu and choose **Settings** to set up your church's information, administrative roles, and other details.
-4. Click on the **edit pencil** to set up your church information.
+4. Click **Edit** in the **Church Information** section to set up your church information.
 5. Back on Sunday, click the **question mark icon** in the top right corner for help and tutorials.
 6. Click **View Documentation** to see a list of tutorials to help you get started with B1.church.
 7. Navigate back to the Dashboard and click the **arrow next to your profile picture** and choose **Switch App**.

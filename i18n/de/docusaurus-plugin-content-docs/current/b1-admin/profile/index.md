@@ -16,7 +16,7 @@ Im Abschnitt Profil können Sie:
 
 - **Name und E-Mail aktualisieren** – Halten Sie Ihre Kontaktinformationen aktuell.
 - **Passwort ändern** – Legen Sie ein neues Passwort für Ihr Konto fest.
-- **Designs wechseln** – Wechseln Sie zwischen hellem und dunklem Modus, je nach Vorliebe.
+- **Designs wechseln** – Wechseln Sie zwischen hellem und dunklem Modus über das Benutzermenü (klicken Sie oben rechts auf Ihr Profilbild).
 - **Verbundene Geräte verwalten** – Zeigen Sie an und kontrollieren Sie, welche ChurchAppsPlayer-Geräte mit Ihrem Konto verbunden sind.
 - **Verknüpfte Konten anzeigen** – Sehen und verwalten Sie alle externen Dienste, die mit Ihrem ChurchApps-Konto verbunden sind.
 - **Genehmigen Sie Profiländerungsanfragen** – Überprüfen und wenden Sie von Mitgliedern eingereichte Updates an.

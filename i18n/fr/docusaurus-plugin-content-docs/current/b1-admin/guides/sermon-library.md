@@ -60,7 +60,7 @@ Suivez le guide [Diffusion en direct](../sermons/live-streaming.md) pour :
 
 1. Entrez votre ID de chaîne YouTube dans les paramètres de diffusion
 2. Configurez votre horaire de service récurrent (par exemple, dimanches à 10h00)
-3. Personnalisez les onglets de la page de diffusion : Discussion, demandes de prière et liens personnalisés
+3. Personnalisez les onglets de la page de diffusion (Discussion, demandes de prière et liens personnalisés) sur la page **Sermons > Settings**
 
 :::info
 Lorsque vous êtes en direct sur YouTube, la page de diffusion B1 capte automatiquement le flux. Aucune étape supplémentaire requise le dimanche matin.

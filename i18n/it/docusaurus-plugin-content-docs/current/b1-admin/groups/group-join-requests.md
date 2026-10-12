@@ -34,7 +34,7 @@ Quando un gruppo utilizza la politica **Richiesta**, tutti i tentativi di adesio
 
 1. In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) e scegli **Persone > Gruppi**
 2. Fai clic sul nome del gruppo
-3. Le richieste in sospeso per questo gruppo appaiono nella parte superiore della scheda **Membri**
+3. La sezione **Membri** mostra quante richieste sono in sospeso. Fai clic su **Tutti i membri** -- le richieste in sospeso per questo gruppo appaiono nella parte superiore dell'elenco dei membri
 
 ### Per gli amministratori
 
@@ -85,9 +85,9 @@ Fornire un motivo di rifiuto aiuta la persona a comprendere perché la sua richi
 
 Ogni richiesta di adesione crea anche un'attività in **Servire &rarr; Il mio lavoro**, intitolata "*Persona* ha richiesto di aderire a *Gruppo*." È assegnata ai leader del gruppo. Se il gruppo non ha ancora un leader, va a qualsiasi staff con l'autorizzazione **Membri Gruppo > Modifica**, o agli amministratori del dominio della tua chiesa se nessuno ha quell'autorizzazione. Lo staff e gli amministratori che ricevono l'attività in questo modo ricevono anche una notifica che collega direttamente ad essa.
 
-L'apertura dell'attività mostra il nome del richiedente, il gruppo e il suo messaggio opzionale, con i pulsanti **Approva** e **Rifiuta** direttamente sulla scheda dell'attività (Rifiuta apre lo stesso campo di motivo opzionale descritto sopra). Ciò dà ai leader un secondo modo, guidato da notifiche, per agire su una richiesta senza navigare alla scheda Richieste di Adesione del gruppo.
+L'apertura dell'attività mostra il nome del richiedente, il gruppo e il suo messaggio opzionale, con i pulsanti **Approva** e **Rifiuta** direttamente sulla scheda dell'attività (Rifiuta apre lo stesso campo di motivo opzionale descritto sopra). Ciò dà ai leader un secondo modo, guidato da notifiche, per agire su una richiesta senza aprire l'elenco dei membri del gruppo.
 
-Decidere una richiesta da entrambi i luoghi -- la scheda Richieste di Adesione del gruppo o la sua scheda Attività -- la chiude ovunque, in modo che i leader non vedano mai un'attività obsoleta per una richiesta che qualcuno ha già gestito.
+Decidere una richiesta da entrambi i luoghi -- l'elenco dei membri del gruppo o la sua scheda Attività -- la chiude ovunque, in modo che i leader non vedano mai un'attività obsoleta per una richiesta che qualcuno ha già gestito.
 
 ## Notifiche
 

@@ -28,15 +28,15 @@ C'est une configuration unique par ministère. Vous devez connecter votre compte
 
 1. Connectez-vous à [B1 Admin](https://admin.b1.church/) et allez à **Service**
 2. Ouvrez le ministère que vous souhaitez connecter (par exemple, Ministère des enfants)
-3. Faites défiler jusqu'à la section **Comptes des fournisseurs de contenu**
+3. Faites défiler jusqu'à la section **Fournisseurs de contenu**
 4. Cliquez sur **Lier un nouveau fournisseur**
 5. Sélectionnez **Lessons.church** dans la liste
 6. Un écran d'autorisation de périphérique apparaîtra avec un code
 7. Allez à [lessons.church](https://lessons.church), connectez-vous et entrez le code pour autoriser la connexion
-8. Une fois approuvé, vous verrez **« Compte lié »** sous Lessons.church dans B1 Admin
+8. Une fois approuvé, vous verrez **Lié** sous Lessons.church dans B1 Admin
 
 :::info
-La section Comptes des fournisseurs de contenu est par ministère. Si vous exécutez plusieurs ministères (par exemple, Enfants et Jeunes), vous devrez lier Lessons.church pour chacun séparément.
+La section Fournisseurs de contenu est par ministère. Si vous exécutez plusieurs ministères (par exemple, Enfants et Jeunes), vous devrez lier Lessons.church pour chacun séparément.
 :::
 
 ## Étape 2 -- Planifiez une leçon
@@ -44,7 +44,7 @@ La section Comptes des fournisseurs de contenu est par ministère. Si vous exéc
 Une fois liée, vous pouvez planifier des leçons directement depuis Plans.
 
 1. Dans B1 Admin, allez à **Service → Plans**
-2. Sélectionnez votre onglet ministère et cliquez sur **Ajouter un type de plan** -- donnez au type de plan un nom tel que Église des enfants ou École du dimanche
+2. Sélectionnez votre onglet ministère et cliquez sur **Ajouter un type de plan** (ou **Créer un type de plan** si le ministère n'en a pas encore) -- donnez au type de plan un nom tel que Église des enfants ou École du dimanche
 3. Cliquez sur le type de plan que vous venez de faire et cliquez sur **Planifier une leçon**. À partir de ce menu, vous pouvez planifier une leçon, planifier en masse une série, ou **Appliquer le plan annuel** pour déposer une séquence annuelle publiée de Lessons.church.
 4. Sélectionnez la **date** de la leçon (par défaut le dimanche prochain)
 5. Cliquez sur **Sélectionner une leçon** -- une boîte de dialogue du navigateur de contenu s'ouvre

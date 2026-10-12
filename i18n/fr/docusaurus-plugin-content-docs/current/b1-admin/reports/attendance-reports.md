@@ -23,7 +23,7 @@ B1 Admin fournit trois rapports de participation pour vous aider à comprendre c
 
 Le rapport Tendance de la participation montre comment la participation change au fil du temps pour vos services.
 
-1. Allez directement à **admin.b1.church/reports/attendanceTrend** dans votre navigateur (les rapports n'ont pas d'entrée dans le menu de navigation -- ajouter l'adresse en favori est le moyen le plus facile de revenir). Le même rapport est également dans l'onglet **Tendance de la participation** de la page Participation.
+1. Allez directement à **admin.b1.church/reports/attendanceTrend** dans votre navigateur (les rapports n'ont pas d'entrée dans le menu de navigation -- ajouter l'adresse en favori est le moyen le plus facile de revenir). Le même rapport est également sur la page Participation : cliquez sur **Toutes les années**, puis choisissez l'onglet **Tendance de la participation**.
 2. Optionnellement sélectionnez un **Campus**, **Service**, **Heure de service** ou **Groupe** pour filtrer les résultats.
 3. Définissez la **Date de début** et la **Date de fin**. Par défaut, le rapport couvre l'année passée, d'il y a un an jusqu'à aujourd'hui, et la date de fin est incluse complètement. Cliquez sur **Exécuter le rapport**.
 4. Le rapport affiche un graphique en barres et un tableau du nombre total de visites par semaine. Chaque semaine est étiquetée avec la date du dimanche de cette semaine, et la colonne **Dates de la session** du tableau énumère les dates réelles de cette semaine qui ont eu une participation (par exemple, « 27/9, 30/9 »).
@@ -34,7 +34,7 @@ Ce rapport est utile pour identifier des modèles tels que les baisses saisonni�
 
 Le rapport Participation au groupe montre qui a assisté à chaque session de groupe dans une plage de dates.
 
-1. Allez directement à **admin.b1.church/reports/groupAttendance** dans votre navigateur, ou ouvrez l'onglet **Participation au groupe** de la page Participation.
+1. Allez directement à **admin.b1.church/reports/groupAttendance** dans votre navigateur, ou, sur la page Participation, cliquez sur **Toutes les années** et choisissez l'onglet **Participation au groupe**.
 2. Optionnellement sélectionnez un **Campus** et **Service**.
 3. Définissez la **Date de début** et la **Date de fin**. Par défaut, le rapport couvre le dernier dimanche à aujourd'hui, et la date de fin est incluse complètement.
 4. Cliquez sur **Exécuter le rapport**.

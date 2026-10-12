@@ -33,7 +33,7 @@ Fai clic su un servizio per selezionarlo e passare alla fase successiva.
 Dopo aver selezionato un servizio, vedrai un elenco dei membri del tuo nucleo familiare. Per ogni persona che partecipa:
 
 1. Tocca un membro del nucleo familiare per espandere la sua voce.
-2. Vedrai gli **orari di servizio** disponibili per il servizio che hai selezionato.
+2. Vedrai gli **orari di servizio** disponibili per il servizio che hai selezionato. Se la tua chiesa ha impostato una pianificazione del check-in per un orario di servizio, questo compare solo mentre il check-in per esso è aperto (ad esempio, da 30 minuti prima del servizio fino a poco dopo la sua fine).
 3. Fai clic su **Seleziona Gruppo** accanto a un orario di servizio per scegliere a quale gruppo la persona dovrebbe fare il check-in (come "Culto Principale", "Stanza dei Bambini 1" o "Gruppo Giovani").
 4. Ripeti per ogni membro del nucleo familiare che partecipa.
 
@@ -57,6 +57,8 @@ Se hai bisogno di cambiare una selezione di gruppo prima di completare il check-
 
 - Puoi solo fare il check-in dei membri del nucleo familiare che sono collegati al tuo account. Se manca un membro della famiglia, chiedi al tuo amministratore della chiesa di aggiungerli al tuo nucleo familiare.
 - Se nessun servizio appare sulla pagina di check-in, la tua chiesa potrebbe non avere servizi configurati per il check-in in questo momento.
+- Se selezioni un servizio e vedi "Check-in isn't open for this service right now", nessuno degli orari di quel servizio rientra al momento nella propria finestra di check-in. Riprova più vicino all'orario del servizio.
+- Se una stanza che hai scelto è piena o chiusa, vedrai "A room you picked is full or closed for check-in. Please see a volunteer."
 
 :::warning
 Il check-in è disponibile solo quando la tua chiesa ha servizi attivi configurati. Se non vedi alcun servizio elencato, contatta l'ufficio della tua chiesa per confermare se l'auto-check-in è abilitato.

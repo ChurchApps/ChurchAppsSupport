@@ -6,7 +6,7 @@ title: "Benachrichtigungseinstellungen"
 
 <div class="article-intro">
 
-Mit Benachrichtigungseinstellungen können Sie entscheiden, welche Benachrichtigungen Sie von Ihrer Kirche erhalten und wie Sie sie erhalten – Push-Benachrichtigungen, E-Mail oder die In-App-Glocke. Sie können jeden Benachrichtigungstyp verfeinern, Ruhezeiten festlegen oder alles auf einmal stummschalten, alles von einem Bildschirm aus.
+Mit Benachrichtigungseinstellungen können Sie entscheiden, welche Benachrichtigungen Sie von Ihrer Kirche erhalten und wie Sie sie erhalten – Push-Benachrichtigungen, E-Mail, die In-App-Glocke oder (wenn Ihre Kirche Textnachrichten versendet) Textnachrichten. Sie können jeden Benachrichtigungstyp verfeinern, Ruhezeiten festlegen oder alles auf einmal stummschalten, alles von einem Bildschirm aus.
 
 </div>
 
@@ -22,6 +22,7 @@ Oben auf dem Bildschirm finden Sie Einstellungen, die für alles gelten:
 
 - **Alle stummschalten** – Stoppt vorübergehend alle nicht wesentlichen Benachrichtigungen.
 - **Push-Benachrichtigungen** – Aktiviert oder deaktiviert Push-Benachrichtigungen auf Ihrem Gerät.
+- **Textnachrichten** – Nur sichtbar, wenn Ihre Kirche Textnachrichten eingerichtet hat. Schalten Sie dies ein, um Dienst- und Veranstaltungserinnerungen per Textnachricht an die Mobilnummer in Ihrem Profil zu erhalten. Es ist ausgeschaltet, bis Sie es einschalten.
 - **E-Mail-Häufigkeit** – Wählen Sie, wie E-Mail-Benachrichtigungen ankommen:
   - **Pro Benachrichtigung** – Senden Sie eine E-Mail, wenn Dinge passieren.
   - **Tägliche Zusammenfassung** – Fassen Sie sie in einer täglichen E-Mail zusammen.
@@ -35,6 +36,7 @@ Unter den globalen Steuerelementen befindet sich ein Raster von Benachrichtigung
 - **Push** – Eine Benachrichtigung auf Ihrem Gerät.
 - **E-Mail** – Eine Nachricht in Ihrem Posteingang.
 - **In-App** – Die Glocke/das Badge in der App.
+- **Text** – Eine Textnachricht an Ihr Mobiltelefon. Diese Spalte erscheint nur, wenn Ihre Kirche Textnachrichten eingerichtet hat, und nur einige Typen (wie **Ereigniserinnerungen**, **Dienst & Zeitplan** und **Aufgaben & Nachverfolgung**) können per Textnachricht gesendet werden. Textnachrichten kommen nur an, wenn **Textnachrichten** ebenfalls eingeschaltet ist.
 
 Häufige Typen sind **Ereigniserinnerungen**, **Dienst & Zeitplan**, **Direktnachrichten**, **Gruppenchat**, **Gebetsanliegen** und **Kirchenankündigungen**. Sie können beispielsweise Push-Benachrichtigungen für Direktnachrichten aktivieren, sie aber für Ankündigungen deaktivieren.
 
@@ -43,6 +45,10 @@ Einige Benachrichtigungstypen sind **immer aktiv** und können nicht deaktiviert
 :::
 
 Einige Typen sind **standardmäßig deaktiviert** (z. B. Werbe- oder Fundraising-Nachrichten) und erreichen Sie nur, wenn Sie sich entscheiden, sich anzumelden.
+
+## Textnachrichten beenden
+
+Um keine Textnachrichten mehr zu erhalten, schalten Sie **Textnachrichten** aus und speichern Sie. Sie können auch mit **STOP** auf eine Textnachricht Ihrer Kirche antworten, um Ihre Nummer von deren Textnachrichten abzumelden.
 
 ## Speichern Ihrer Änderungen
 

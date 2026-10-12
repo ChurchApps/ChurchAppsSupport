@@ -24,7 +24,7 @@ En rolle er et sett med tillatelser som du tildeler til én eller flere brukere.
 
 Hver rolle styrer tilgangen til bestemte områder av B1 Admin, blant annet:
 
-- **Personer** -- vise og redigere medlemsprofiler. Fanen Notater på en personprofil krever **Rediger personer**, og en egen tillatelse, **Se konfidensielle notater**, styrer tilgangen til delen Konfidensielle notater (for sjelesorg, personlig historikk og lignende sensitive notater).
+- **Personer** -- vise og redigere medlemsprofiler. Seksjonen Notater på en personprofil krever **Rediger personer**, og en egen tillatelse, **Se konfidensielle notater**, styrer tilgangen til delen Konfidensielle notater (for sjelesorg, personlig historikk og lignende sensitive notater).
 - **Donasjoner** -- administrere gaver og økonomirapporter
 - **Oppmøte** -- registrere og se oppmøtedata
 - **Skjemaer** -- opprette og administrere [egendefinerte skjemaer](../forms/creating-forms.md)

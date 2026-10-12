@@ -35,7 +35,7 @@ Füllen Sie Ihre Gruppen mit Mitgliedern und bestimmen Sie Leiter, die ihre eige
 Folgen Sie der Anleitung [Gruppenmitglieder](../groups/group-members.md), um:
 
 1. Personen zu suchen und den entsprechenden Gruppen hinzuzufügen
-2. Gruppenleiter über das grüne Schlüsselsymbol zu bestimmen -- Leiter erhalten erweiterte Berechtigungen
+2. Gruppenleiter über das Sternsymbol (**Make Leader** (Zum Leiter machen)) zu bestimmen -- Leiter erhalten erweiterte Berechtigungen
 
 :::tip
 Gruppenleiter können ihren eigenen Gruppenkalender verwalten, Gespräche führen und Veranstaltungen koordinieren, ohne vollen Admin-Zugang zu benötigen.

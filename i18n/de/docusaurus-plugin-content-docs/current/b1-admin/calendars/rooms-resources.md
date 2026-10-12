@@ -20,7 +20,7 @@ Räume und Ressourcen ermöglichen es Ihnen, die buchbaren Räume und Ausrüstun
 
 ## Räume & Ressourcen öffnen
 
-In B1 Admin öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Kalender** und klicken Sie auf **Räume & Ressourcen**. Die Seite hat vier Reiter: **Räume**, **Ressourcen**, **Blockouts** und **Vorlagen**.
+In B1 Admin öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Kalender** und klicken Sie auf **Räume & Ressourcen**. Die Seite hat vier Reiter: **Räume**, **Ressourcen**, **Blockouts** und **Vorlagen**. Die Hinzufügen-Schaltfläche oben auf der Seite passt sich dem ausgewählten Reiter an, und ein Feld **Suchen** ermöglicht es, die aktuelle Liste zu filtern.
 
 ## Räume
 
@@ -28,7 +28,7 @@ Räume sind physische Räume, die zusammen mit Kalenderereignissen reserviert we
 
 ### Einen Raum hinzufügen
 
-1. Klicken Sie auf der Registerkarte **Räume** auf **Raum hinzufügen**.
+1. Klicken Sie auf der Registerkarte **Räume** oben auf der Seite auf **Raum hinzufügen**.
 2. Geben Sie einen **Namen** für den Raum ein.
 3. Legen Sie optional eine **Kapazität** (maximale Personenzahl) fest.
 4. Legen Sie eine **Genehmigungsgruppe** fest -- wenn eine Gruppe diesen Raum anfordert, werden die Führungskräfte der gewählten Gruppe benachrichtigt und müssen die Buchung genehmigen. Lassen Sie leer, wenn keine Genehmigung erforderlich ist.
@@ -36,7 +36,7 @@ Räume sind physische Räume, die zusammen mit Kalenderereignissen reserviert we
 
 ### Einen Raum bearbeiten oder löschen
 
-Klicken Sie auf das Bearbeitungssymbol neben einem beliebigen Raum, nehmen Sie Ihre Änderungen vor und klicken Sie auf **Speichern**. Verwenden Sie **Löschen**, um einen Raum dauerhaft zu entfernen.
+Klicken Sie neben einem beliebigen Raum auf **Bearbeiten**, nehmen Sie Ihre Änderungen vor und klicken Sie auf **Speichern**. Verwenden Sie **Löschen**, um einen Raum dauerhaft zu entfernen.
 
 ## Ressourcen
 

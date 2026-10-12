@@ -20,11 +20,11 @@ Le campagne ti permettono di condurre una raccolta fondi verso un obiettivo spec
 
 ## Apertura delle Campagne
 
-In B1 Admin, apri il [Menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Donazioni**, e fai clic su **Campagne**. Vedrai un elenco di tutte le campagne con il loro importo obiettivo, totale promesso, e totale dato finora.
+In B1 Admin, apri il [Menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Donazioni**, e fai clic su **Campagne**. Vedrai una tabella di tutte le campagne con il loro fondo, le date, l'importo obiettivo, il totale promesso e il totale dato finora. Una riga di riepilogo sopra la tabella mostra il numero di campagne e gli importi combinati promessi e donati.
 
 ## Creazione di una Campagna
 
-1. Fai clic su **Aggiungi Campagna**.
+1. Fai clic su **Aggiungi Campagna** in alto nella pagina.
 2. Compila i dettagli della campagna:
    - **Nome** *(obbligatorio)* — il nome di visualizzazione per questa campagna (ad esempio, "Fondo di Costruzione 2026").
    - **Fondo** — il fondo di donazione a cui questa campagna è associata.
@@ -34,27 +34,27 @@ In B1 Admin, apri il [Menu Jump](../introduction.md#getting-around-with-the-jump
 
 ## Tracciamento del Progresso
 
-Ogni scheda campagna mostra:
+Ogni riga della campagna mostra:
 
 - **Obiettivo** -- il tuo importo target
 - **Promesso** -- l'importo totale che i membri hanno promesso di dare
 - **Dato** -- l'importo totale effettivamente donato a questa campagna fondo durante la finestra di campagna
-- Una **barra di progresso** che mostra quanto sei avanzato verso il tuo obiettivo
+- **Progresso** -- una barra e una percentuale che mostrano quanto sei avanzato verso il tuo obiettivo
 
-Fai clic su qualsiasi campagna per aprire la vista dei dettagli, che elenca le promesse individuali e il loro stato di adempimento.
+Fai clic sul nome di una campagna per aprire la vista dei dettagli. Mostra la percentuale dell'obiettivo raggiunta ed elenca le promesse individuali con l'importo promesso e donato da ciascun donatore e uno stato (**Non iniziata**, **In corso**, **Adempiuta**, **Oltre la promessa**, oppure **Non promessa** per i donatori che hanno donato senza promettere). Fai clic su **Esporta** in alto nella vista dei dettagli per scaricare l'elenco delle promesse come CSV.
 
 ## Aggiunta di Promesse
 
 Le promesse sono impegni dai membri di dare verso una campagna. Per registrare una promessa:
 
 1. Apri una campagna.
-2. Fai clic su **Aggiungi Promessa**.
+2. Fai clic su **Aggiungi Promessa** in alto nella pagina.
 3. Seleziona la **persona** che fa la promessa.
 4. Inserisci l'importo della **promessa**.
 5. Facoltativamente imposta una **data** per l'impegno della promessa.
 6. Fai clic su **Salva**.
 
-Le promesse appaiono nel dettaglio della campagna e contribuiscono al totale **Promesso** sulla scheda della campagna.
+Le promesse appaiono nel dettaglio della campagna e contribuiscono al totale **Promesso** nell'elenco delle campagne. Per modificare una promessa, fai clic su **Modifica** sulla sua riga.
 
 :::tip
 Le promesse sono separate dalle donazioni effettive. Una promessa traccia un impegno; una donazione registra il dono effettivo. Entrambi sono mostrati sulla campagna così puoi vedere come bene le promesse vengono adempite.
@@ -62,7 +62,7 @@ Le promesse sono separate dalle donazioni effettive. Una promessa traccia un imp
 
 ## Modifica o Eliminazione di una Campagna
 
-Fai clic sull'icona di modifica su qualsiasi scheda campagna per aggiornarne il nome, l'obiettivo, le date, o il fondo. Fai clic su **Elimina** per rimuovere permanentemente la campagna e le sue promesse. L'eliminazione di una campagna non elimina alcuna donazione che sia stata registrata al suo fondo.
+Fai clic su **Modifica** su qualsiasi riga campagna (oppure su **Modifica campagna** in alto nella vista dei dettagli) per aggiornarne il nome, l'obiettivo, le date, o il fondo. Fai clic su **Elimina** per rimuovere permanentemente la campagna e le sue promesse. L'eliminazione di una campagna non elimina alcuna donazione che sia stata registrata al suo fondo.
 
 ## Articoli Correlati
 

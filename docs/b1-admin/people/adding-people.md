@@ -22,8 +22,8 @@ The People section is the foundation of B1 Admin — it's your church's member d
 
 1. Navigate to the B1.church Admin dashboard.
 2. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **People**, and click **People**.
-3. Click the **Add Person** button in the upper right corner.
-4. Fill in the person's first name, last name, and email address, then click **Add**.
+3. Click the **Add Person** button in the page header. The page scrolls down to the **Add New Person** form below the directory.
+4. Fill in the person's **First Name**, **Last Name**, and **Email**, then click **Add**.
 
 The person's profile page will open, ready for you to add more details.
 
@@ -42,22 +42,27 @@ This only checks for duplicates when you're creating a brand-new person — edit
 
 ## Editing Details
 
-1. On the person's profile page, click the **edit pencil** next to their name.
-2. Fill in additional information such as middle name, membership status, dates, address, phone numbers, and (for children and students) grade and school.
+1. On the person's profile page, click the **Edit** button below their contact details on the left.
+2. In the **Personal Details** form, fill in additional information such as middle name, membership status (**Visitor**, **Guest**, **Regular Attendee**, **Member**, **Staff**, **Inactive**, or **Deceased**), dates, address, phone numbers, and (for children and students) grade and school.
 3. Click **Save** to store the personal information.
 
-The profile also includes several tabs for related information:
+The left side of the profile shows the person's photo, name, membership status, contact details, any [custom field](../settings/custom-fields.md) values, and their household. Click the photo to change it. Below the **Edit** button are a few more actions: **Workflow** (add the person to a [workflow](../serving/workflows.md)), **Merge**, **Export**, and **Export Data**.
 
-- **Notes** — Add notes about the person (pastoral care, follow-ups, etc.)
-- **Groups** — View and manage [group memberships](../groups/group-members.md)
-- **Attendance** — View this person's individual visit history, including the campus, service, service time, group, and a **Checked In** column with the kiosk check-in time (shown as a dash for visits recorded without a kiosk check-in). For church-wide trends rather than one person's history, see [Tracking Attendance](../attendance/tracking-attendance.md)
-- **Donations** — View [donation history](../donations/recording-donations.md)
+The rest of the profile shows a summary section for each kind of related information:
+
+- **Attendance** — Shows which of the last several weeks the person attended and their most recent visits. Click **All years** for their full visit history, including the campus, service, service time, group, and a **Checked In** column with the kiosk check-in time (shown as a dash for visits recorded without a kiosk check-in), or **Print** to print it. For church-wide trends rather than one person's history, see [Tracking Attendance](../attendance/tracking-attendance.md)
+- **Donations** — Shows this year's gifts. Click **All years** for their full [donation history](../donations/recording-donations.md), or **Log a gift** to record a new one
+- **Groups** — Lists the person's [group memberships](../groups/group-members.md)
+- **Notes** — Shows recent notes about the person (pastoral care, follow-ups, etc.). Click **All notes** to read and add notes
+- **Forms** — Lists the person's forms and whether each one has been submitted (see [Working with Forms](#working-with-forms) below)
+
+When you open one of these full views, click the **Back to** link with the person's name at the top to return to the profile.
 
 ## Emailing a Person
 
-If the person has an email address on file, an **Email this person** button (envelope icon) appears in the profile header.
+If the person has an email address on file, an **Email** button appears below their contact details on the left of the profile.
 
-1. On the person's profile, click the **envelope icon**.
+1. On the person's profile, click **Email**.
 2. An **Email** dialog titled with the person's name opens, showing **Sending to** with the person's address.
 3. Optionally choose a saved template from **Load Template (optional)**.
 4. Enter a **Subject** and compose the message.
@@ -66,16 +71,16 @@ If the person has an email address on file, an **Email this person** button (env
 To write the message in your own mail program instead, click **Open in my email app**.
 
 :::info
-Sending from B1 uses the same approval and daily limits as group email. If your church hasn't been approved yet, the dialog asks you to request a review — you can still click **Open in my email app** in the meantime. See [Turning On Group Email for Your Church](../groups/group-members.md#turning-on-group-email-for-your-church). Users without permission to edit group members go straight to their email app when they click the envelope icon.
+Sending from B1 uses the same approval and daily limits as group email. If your church hasn't been approved yet, the dialog asks you to request a review — you can still click **Open in my email app** in the meantime. See [Turning On Group Email for Your Church](../groups/group-members.md#turning-on-group-email-for-your-church). Users without permission to edit group members go straight to their email app when they click **Email**.
 :::
 
 ## Working with Forms
 
 You can fill out custom forms directly from a person's profile. These are user-defined forms that you can build by following the [Creating Forms](../forms/creating-forms.md) guide.
 
-1. On the person's profile, click the **Forms** dropdown to select a form.
-2. Click **Add Form** to open it.
-3. Fill in the form details and click **Save**.
+1. On the person's profile, find the **Forms** section. It lists each form along with whether it has been **Submitted** or **Not submitted**.
+2. Click a form's name to open it (or click **All forms** to see the full list).
+3. Click the **edit icon** (pencil) on the form, fill in the details, and click **Save**.
 
 Once a form is submitted, click the **print icon** next to it to print that person's filled-in answers.
 
@@ -93,9 +98,9 @@ If you only need to track one or two extra pieces of information on people — a
 
 Households let you link family members together. This is especially useful for [check-in](../attendance/check-in.md), where a parent can check in all their children at once.
 
-1. On a person's profile, click the **edit pencil** next to the household name.
-2. The household editor will open. Select the **household role** for the current person (e.g., Head, Spouse, Child).
-3. Click **Add** to add another household member.
-4. Type the person's name in the search box and click **Search**.
-5. When the person appears in the search results, click **Select**.
+1. On a person's profile, click **Edit** next to the **Household** heading on the left.
+2. The household editor will open. Select the **household role** for the current person (e.g., Head, Spouse, Child, Other).
+3. Click the **Add** icon to add another household member.
+4. Under **Add Household Member**, type the person's name in the search box and press **Enter** or click the search icon. (Before you type, a short list of **Recent people** is shown.)
+5. When the person appears in the results, click their name or the add icon next to it.
 6. Choose their household role and click **Save** to complete the household setup.

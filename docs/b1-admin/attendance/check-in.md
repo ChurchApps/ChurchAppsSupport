@@ -25,7 +25,7 @@ The B1 Checkin app connects to your B1 Admin attendance setup. When a member che
 
 ## Setting Up Check-In
 
-1. **Configure your attendance structure first.** In B1 Admin, go to **Attendance > Setup** and make sure your campuses, service times, and groups are in place. The check-in app relies on this configuration. See [Attendance Setup](setup.md) for details.
+1. **Configure your attendance structure first.** In B1 Admin, go to **People > Attendance** and click **Setup** to make sure your campuses, service times, and groups are in place. The check-in app relies on this configuration. Optionally give each service time a [check-in schedule](setup.md#setting-a-check-in-schedule) so check-in opens and closes automatically each week. See [Attendance Setup](setup.md) for details.
 2. **Install the B1 Checkin app** on the devices you plan to use. The app is available on the following platforms:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
@@ -110,7 +110,7 @@ To turn on the QR code display:
 3. Toggle **QR Guest Registration** on and click **Save**.
 
 :::note
-This setting is under **Mobile > B1 CheckIn** (the same page as the **Kiosk Theme** card), not under Attendance.
+This setting is under **Mobile > B1 CheckIn** (the same page as the **Kiosk Theme** card), not under Attendance. The **Kiosk** action on the Attendance page has a link to this page.
 :::
 
 ### Sharing the Registration Link
@@ -126,4 +126,4 @@ Add the registration link to your church website's "Plan Your Visit" or "I'm New
 
 ## What Gets Recorded
 
-Every check-in creates an attendance record in B1 Admin. You can view these records on the [Attendance](tracking-attendance.md) and [Groups](../groups/group-members.md) tabs just like manually entered attendance. There is no difference in how the data appears — both methods feed into the same reports.
+Every check-in creates an attendance record in B1 Admin. You can view these records on the [Attendance](tracking-attendance.md) page and in each [group's](../groups/group-members.md) sessions just like manually entered attendance. There is no difference in how the data appears — both methods feed into the same reports.

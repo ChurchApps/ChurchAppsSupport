@@ -12,13 +12,17 @@ The Website section in B1 Admin gives you a full-featured website builder for yo
 
 ## What You Can Do
 
-The Website builder is organized into five main areas:
+The Website builder is organized into these main areas:
 
 ### Pages
 
-Create and manage all the pages on your church website. The **Pages** table shows each page along with its status -- either **Generated** (automatically created by the system) or **Custom** (created by you). You can add new custom pages, edit existing ones, or convert auto-generated pages into custom pages for full control over their content.
+Create and manage all the pages on your church website. The **Pages** table lists each page -- pages automatically created by the system carry a **Generated** badge, and the rest are custom pages you created. You can add new custom pages, edit existing ones, or convert auto-generated pages into custom pages for full control over their content.
 
 Your navigation links are displayed in a tree structure. You can reorder links using drag-and-drop to set the exact hierarchy and order you want visitors to see.
+
+### Blog
+
+Publish news, updates, and devotionals as blog posts at `/blog` on your site, with an RSS feed. See the [Blog](blog) guide.
 
 ### Blocks
 
@@ -30,11 +34,11 @@ Customize your website's theme, colors, fonts, logo, and spacing. You can apply 
 
 ### Files
 
-Upload and organize all your media assets -- images, documents, and other files -- in one central location. Use folders to keep things tidy and copy file URLs for use anywhere on your site. See [Files](files) for more information.
+Upload and manage all your media assets -- images, documents, and other files -- in one central location, and copy file links for use anywhere on your site. See [Files](files) for more information.
 
 ### Calendars
 
-Publish event calendars on your website so visitors can see what is happening at your church. Create curated calendars that pull events from multiple groups into a single view.
+Publish event calendars on your website so visitors can see what is happening at your church. Create curated calendars that pull events from multiple groups into a single view. Calendars have their own **Calendars** item in the B1 Admin menu, separate from **Website**.
 
 :::tip
 Start with [Initial Setup](initial-setup) if you are configuring your website for the first time. It walks you through domain setup, creating your first page, and configuring your site's appearance.

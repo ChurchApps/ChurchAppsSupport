@@ -49,7 +49,7 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 |---------|--------|------|
 | `campuses` | name，address | 这里已弃用 -- 校园在成员资格模块（`/membership/campuses`）中管理；参与副本为已冻结的只读（`models/Campus.ts`） |
 | `services` | campusId，name | 定期集聚，例如"Sunday Morning"（`models/Service.ts`） |
-| `serviceTimes` | serviceId，name | 服务内的时间段，例如"9:00 AM"（`models/ServiceTime.ts`） |
+| `serviceTimes` | serviceId，name，dayOfWeek，startTime，endTime，checkinOpenMinutes，checkinCloseMinutes | 服务内的时间段，例如"9:00 AM"（`models/ServiceTime.ts`）。计划列是可选的（迁移 `tools/migrations/attendance/2026-10-10_service_time_schedule.ts`），并驱动[签到窗口](#scheduled-check-in-windows) |
 | `groupServiceTimes` | groupId，serviceTimeId | 联接表：哪些小组（教室）在哪些服务时间满足（`models/GroupServiceTime.ts`） |
 | `sessions` | groupId，serviceTimeId，sessionDate | 一个小组在一个日期的一次会议 -- 在签到时懒创建（`models/Session.ts`） |
 | `visits` | personId，serviceId，visitDate，checkinTime，securityCode，checkinType，checkedInById，checkoutTime，checkedOutBy，checkedOutById | 一个人在一个日期参与（`models/Visit.ts`）。`checkinType` 是 `member` / `guest` / `volunteer`（NULL = 旧成员），由亭设置并由容量/比率门使用 |
@@ -110,6 +110,15 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 
 - **硬（总是阻止）：** `checkinClosed`、`current + incoming > capacity`、访客计数超过 `guestCapacity`。批次被拒绝为 `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` -- 亭显示命名房间。
 - **比率（警告或阻止）：** 传入非志愿者到一个房间，其中 `volunteers < minVolunteers`，没有志愿者或 `children > volunteers × volunteerRatio`。严重性遵循每教会设置 `ratioEnforcement`（`"warn"` 默认 / `"block"`，在 B1Admin Manage Church → 签到中编辑，`CheckinSettingsEdit.tsx`）。警告模式返回 `409 { warning: true, error: "ratio", … }` 除非客户端用 `acknowledgeWarnings=true` 重新提交 -- 那个重新提交是亭的工作人员确认覆盖。
+
+### 定时签到窗口 {#scheduled-check-in-windows}
+
+服务时间可以带有可选的每周计划（`dayOfWeek` 为 0–6，0 表示周日；`startTime`/`endTime` 为 `HH:mm`；`checkinOpenMinutes`；`checkinCloseMinutes`），在 B1Admin 的**出勤 → 设置**服务时间表单（`B1Admin/src/attendance/components/ServiceTimeEdit.tsx`，"签到计划"）中编辑。`CheckinGateHelper.hasSchedule()` 仅当 `dayOfWeek` 和 `startTime` 都已设置时，才将服务时间视为已计划；未计划的时间永远不受时间限制。`isServiceTimeOpen()` 以教会当地时间（`DateHelper.toChurchTime` 配合教会的 `timeZone`）计算窗口，从开始前 `checkinOpenMinutes` 到结束后 `checkinCloseMinutes`（如果没有结束时间，则为开始后），并处理跨越午夜或周边界的窗口。
+
+窗口在两处强制执行：
+
+- **列表：** `GET /attendance/servicetimes` 为每一行标注一个计算得出的 `checkinOpen` 布尔值。B1App 的自助签到（`CheckinPage.tsx`）会过滤掉 `checkinOpen === false` 的时间，当没有剩余时间时显示"此服务目前无法签到"。B1Checkin 目前尚未按此字段过滤。
+- **提交：** 在 `evaluateGates()` 内，早于容量/比率评估，如果任何目标会话的服务时间在其窗口之外，`findClosedServiceTimeGroups()` 会以 `409 { error: "notOpen", groups: [{ groupId, groupName, reason: "notOpen" }] }` 拒绝该批次。B1Checkin 通过其现有的硬门控屏幕（"房间已满或关闭"）呈现此结果。
 
 ### 年龄/年级资格（亭端）
 

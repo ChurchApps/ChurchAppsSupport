@@ -24,7 +24,7 @@ Hai bisogno di un elenco di tutti coloro che hanno un compleanno o un anniversar
 2. Sotto la casella di ricerca, fai clic su **Advanced**.
 3. Espandi la sezione **Demographics** e seleziona **Birth Month**, quindi scegli il mese.
 4. Esegui la ricerca — tutti coloro che hanno un compleanno in quel mese appaiono nei risultati.
-5. Per vedere le date, fai clic sull'**icona colonne** in alto a destra dei risultati e abilita la colonna **Birthday**. Usa **Export** per scaricare l'elenco come foglio di calcolo se preferisci ordinarlo o stamparlo lì.
+5. Per vedere le date, imposta **View as** su **Table**, quindi fai clic sull'icona **Select columns** nell'intestazione della pagina e abilita la colonna **Birthday**. Usa **Export** per scaricare l'elenco come foglio di calcolo se preferisci ordinarlo o stamparlo lì.
 
 ## Ottenimento di un Elenco Anniversari
 

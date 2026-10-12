@@ -24,20 +24,20 @@ Kung may higit sa isang website ang inyong simbahan (halimbawa, magkakahiwalay n
 
 ## Pag-unawa sa mga Uri ng Pahina
 
-Inililista ng **Pages** table ang bawat pahina sa iyong site kasama ang status nito:
+Inililista ng **Pages** table ang bawat pahina sa iyong site ayon sa **Path** at **Title**. May dalawang uri ng pahina:
 
-- **Generated** -- Mga pahinang awtomatikong ginawa ng sistema batay sa data ng inyong simbahan (halimbawa, isang Groups page, isang Sermons page, o isang indibidwal na pahina para sa bawat sermon sa iyong library). Ang mga pahinang ito ay kusang nag-a-update habang nagbabago ang iyong data.
+- **Generated** -- Mga pahinang awtomatikong ginawa ng sistema batay sa data ng inyong simbahan (halimbawa, isang Groups page, isang Sermons page, o isang indibidwal na pahina para sa bawat sermon sa iyong library). Ipinapakita ng mga pahinang ito ang **Generated** badge at kusang nag-a-update habang nagbabago ang iyong data.
 - **Custom** -- Mga pahinang ikaw mismo ang gumawa gamit ang sarili mong nilalaman at layout.
 
-Maaari mong gawing custom na pahina ang anumang auto-generated na pahina kung gusto mo ng ganap na kontrol sa nilalaman at disenyo nito.
+Maaari mong gawing custom na pahina ang anumang auto-generated na pahina kung gusto mo ng ganap na kontrol sa nilalaman at disenyo nito. I-click ang **Convert** sa tabi ng generated na pahina at kumpirmahin.
 
 ## Pagdaragdag at Pag-edit ng mga Pahina
 
-1. I-click ang **Add Page** na button sa kanang itaas na sulok ng Pages table.
+1. I-click ang **Add Page** na button sa kanang itaas ng Website Pages view.
 2. Pumili ng uri ng pahina (blank o isang template) at bigyan ito ng pangalan.
 3. I-click ang **Edit Content** sa tabi ng anumang pahina para buksan ang [page editor](page-editor), kung saan maaari kang magdagdag ng mga section, text, larawan, at iba pang element.
-4. I-click ang **Page Settings** (ang gear icon) para i-update ang pamagat ng pahina, URL path, at iba pang metadata.
-5. Gamitin ang **View live page** na button para buksan ang iyong pahina sa bagong window at makita nang eksakto kung ano ang itsura nito sa mga bisita.
+4. I-click ang **Page Settings** sa tabi ng isang pahina para i-update ang pamagat ng pahina, URL path, at iba pang metadata.
+5. I-click ang path ng pahina sa **Path** column para buksan ang live na pahina sa bagong tab at makita nang eksakto kung ano ang itsura nito sa mga bisita.
 
 :::tip
 Para sa iyong home page, itakda ang URL path sa `/` lamang. Para sa lahat ng iba pang pahina, gumamit ng naglalarawang path tulad ng `/about` o `/contact`.
@@ -54,12 +54,12 @@ Buksan ang **Page Settings** sa anumang pahina para i-configure ang:
 
 ## Pamamahala ng Navigation
 
-Ipinapakita ng Website Pages view ang iyong mga navigation link. Kinokontrol ng mga link na ito ang menu na nakikita ng mga bisita sa iyong website.
+Ipinapakita ng **Main Navigation** panel sa kanan ng Website Pages view ang iyong mga navigation link. Kinokontrol ng mga link na ito ang menu na nakikita ng mga bisita sa iyong website.
 
 1. I-click ang **Add** para gumawa ng bagong navigation link. Maaari mo itong ituro sa anumang pahina sa iyong site o sa isang external na URL.
 2. Para baguhin ang pagkakasunod-sunod ng mga link, i-drag at i-drop ang mga ito sa gusto mong ayos. Maaari mo ring isama ang mga link sa ilalim ng isang parent item para gumawa ng mga dropdown menu.
-3. I-click ang **Edit** icon sa tabi ng anumang link para baguhin ang label, URL, o posisyon nito.
-4. Para alisin ang isang link sa navigation, i-click ang **Delete** icon.
+3. I-click ang anumang link para buksan ang **Link Settings** nito, kung saan maaari mong baguhin ang text, URL, o parent page nito.
+4. Para alisin ang isang link sa navigation, buksan ang **Link Settings** nito at i-click ang **Delete**.
 
 :::info
 Hindi nade-delete ang mismong pahina kapag tinanggal ang isang navigation link. Nariyan pa rin ang pahina at maaari pa ring puntahan nang direkta sa pamamagitan ng URL nito -- hindi lang ito lalabas sa menu.
@@ -67,7 +67,7 @@ Hindi nade-delete ang mismong pahina kapag tinanggal ang isang navigation link. 
 
 ## Mga Switch para sa Buong Site
 
-Sa itaas ng **Main Navigation** sa kaliwang bahagi ng Website Pages view ay may dalawang switch na umiiral sa buong website ng inyong simbahan:
+Sa ibaba ng mga link sa **Main Navigation** panel ay may dalawang switch na umiiral sa buong website ng inyong simbahan:
 
 - **Show Login** -- Nagpapakita ng **Login** button sa navigation bar ng iyong website.
 - **Disable Public Website** -- Pinapatay ang iyong pampublikong website. Gamitin ito kung B1 lamang ang ginagamit ng inyong simbahan para sa member portal, pagbibigay, at mga registration, at nasa ibang lugar ang pangunahing website nito.
@@ -96,7 +96,7 @@ Umiiral ang setting na ito sa buong simbahan ninyo. Kung may higit sa isang site
 
 - Panatilihing lima o anim lamang ang mga item sa iyong top-level na navigation para mabilis makahanap ang mga bisita.
 - Gumamit ng mga nested na link para sa magkakaugnay na sub-page (halimbawa, isang "About" dropdown na may "Our Team," "Beliefs," at "History").
-- Suriin ang iyong navigation sa mobile sa pamamagitan ng pag-click sa **Mobile Preview** para matiyak na maayos itong gumagana sa mas maliliit na screen.
+- Suriin ang iyong navigation sa telepono para matiyak na maayos itong gumagana sa mas maliliit na screen.
 - Bigyan ang mga pahina ng malinaw at naglalarawang pangalan na tutulong sa mga bisitang maunawaan kung ano ang makikita nila.
 
 :::tip
@@ -107,7 +107,7 @@ Maaari kang magdagdag ng mga [form](../forms/creating-forms.md) sa iyong mga pah
 
 Kung bumubuo ka ng iyong site mula sa simula, maaari mo itong simulan gamit ang isang **Site Template** sa halip na gumawa ng mga pahina nang isa-isa. Gumagawa ang site template ng isang set ng mga handang pahina — home, about, connect, give, at iba pa — na may placeholder na nilalaman at mga navigation link na nakakabit na.
 
-1. Sa Pages screen, i-click ang **Site Templates** na button (katabi ng **Add Page** na button).
+1. Sa Pages screen, i-click ang **Start From a Template** na button (katabi ng **Add Page** na button).
 2. Mag-browse sa mga available na template at mag-click ng isa para i-preview ang istruktura ng mga pahina nito.
 3. Kapag nakakita ka ng gusto mo, i-click ang **Apply Template**.
 4. Ang mga pahinang wala pa ay gagawin at idaragdag sa iyong navigation. Hindi gagalawin ang mga umiiral nang pahina.

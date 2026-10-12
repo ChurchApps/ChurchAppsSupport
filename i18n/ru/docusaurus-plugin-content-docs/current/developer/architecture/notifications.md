@@ -15,7 +15,9 @@ title: "Архитектура уведомлений и напоминаний"
 ```
 scheduled anything ──▶ ReminderEngine (definitions → occurrences → scan) ─┐
 chat / requests / workflow / bulk sends ──────────────────────────────────┼─▶ createNotifications()
-                                                                          │    in_app gate → socket → push → email (→ sms slot)
+                                                                          │    in_app gate → socket → push → email
+     (reminder channels include sms) ──▶ ReminderEngine.sendSms() ──▶ sms gate → sendPersonText() via church provider
+provider STOP reply ──▶ POST /messaging/texting/inbound/:churchId/:token ──▶ SmsOptOutHelper.optOut()
 account/legal mail ──▶ TransactionalEmailHelper.sendTransactional()  [allowlisted, lint-enforced]
 ```
 
@@ -62,7 +64,7 @@ createNotifications(
 | 0 | **in_app / socket** | Сначала проверяется gate `in_app`. Если подавлено (отключено), строка сохраняется с `isNew=false` и доставка полностью прекращается — нет пинга сокета, нет значка, без дальнейшей эскалации. В противном случае сервер ищет открытые соединения сокета для комнаты `alerts` человека и отправляет фрейм `notification` (или `privateMessage`). Для обычных уведомлений успешная доставка по сокету прекращает цепь здесь — 30-минутный таймер повторно проверяет непрочитанные элементы и масштабирует их позже. Прямые сообщения никогда не останавливаются на сокете: установленное PWA может держать сокет оповещений открытым в фоне, что в противном случае подавило бы push-уведомление на уровне ОС. |
 | 1 | **push** | Защищено на `allowPush` / категория отказа / тихие часы. Отправляет на токены Expo push и подписки Web Push, найденные в строках `devices` человека, дедублируя по конечной точке и удаляя устаревшие токены по пути. |
 | 2 | **email** | Защищено на `emailFrequency` и категория отказа. Немедленные отправки (`emailImmediate`) отображаются сразу и записывают строку `deliveryLogs`; в противном случае уведомление остается в ожидании для пакетной сводки, описанной ниже. |
-| — | **sms** | Предпочтительная коммуникация (`allowSms`, списки каналов для каждой категории) уже учитывают SMS-канал, но ни один производитель не отправляет через него сегодня — он остается зарезервирован для продукта массовой SMS, который работает как отдельный изолированный поток через `TextingController` / `@churchapps/texting`. Действие шага рабочего процесса **Send Text** (`StepActionHelper.sendText` → `MessagingModuleGateway.sendPersonText`) также обходит эту воронку: он отправляет текст человека на карточке напрямую через поставщика церкви, поэтому предпочтения уведомлений и тихие часы не применяются — уважается только флаг `optedOut` человека. |
+| — | **sms** | Не уровень в лестнице эскалации. Единственный производитель SMS с гейтом — механизм напоминаний: когда `channels` определения включают `sms`, `ReminderEngine.sendSms()` отправляет текст каждому получателю **в дополнение** к push/email уведомлению (см. [Текстовые напоминания](#text-reminders)). Массовые текстовые сообщения (`TextingController` / `@churchapps/texting`), отправка **Text Volunteers** в обзоре служения (`MatrixTextHelper` → `MessagingModuleGateway.sendPersonText`) и действие шага рабочего процесса **Send Text** (`StepActionHelper.sendText` → `sendPersonText`) отправляют текст напрямую через провайдера церкви, поэтому предпочтения уведомлений и тихие часы к ним не применяются — учитывается только флаг `optedOut` человека. |
 
 Непрочитанные уведомления, оставленные на сокете или push, масштабируются 30-минутным таймером (`NotificationHelper.escalateDelivery`). Пакетная почта отправляется `NotificationHelper.sendEmailNotifications(frequency)`, управляемая предпочтением `emailFrequency` каждого человека: `individual` работает на 30-минутном таймере, `daily` работает на ночном таймере. (`weekly` — допустимое значение предпочтения, но у него нет специального пакетного запуска.)
 
@@ -83,6 +85,19 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 **Расширение** материализует строки срабатывания для горизонта вперед (окно с прокручиванием на несколько дней). Это работает на ночном таймере и синхронно при каждом сохранении определения, так что напоминание о последнем событии все равно срабатывает. Определения области развертываются через `loadScopeEntities` адаптера, создавая один набор событий на конкретную сущность; события на уровне сущности используют ключ `definitionId:occurrenceISO:offset`, в то время как события в области имеют пространство имен по id сущности, поэтому они никогда не сталкиваются. Повышение события **воскрешает** ранее отмененную строку — отмена-затем-переразложение — стандартный способ пересинхронизации напоминания после изменения базовой сущности; строки, уже `sent`, `failed` или `processing`, остаются нетронутыми.
 
 **Диспетчеризация** (`ReminderEngine.scan()`) работает на 30-минутном таймере. Это требует обработки непокрытых событий (аренда предотвращает двойную обработку), загружает получателей через адаптер сущности, отфильтровывает любого, уже записанного в `reminderSentLog` для этого события, и вызывает `createNotifications` с `deliveryStartLevel: 1` (переход прямо к push) плюс `emailImmediate`/`emailByPerson`, когда каналы определения включают почту.
+
+### Текстовые напоминания {#text-reminders}
+
+Когда `channels` определения включают `sms`, `scan()` вызывает `ReminderEngine.sendSms()` после создания push/email уведомлений для тех же новых получателей. Текст отправляется только тем, кто на это согласился:
+
+- Каждый получатель проходит через `PreferenceGateHelper.evaluate(..., "sms", ...)`, поэтому `allowSms` должен быть включен (по умолчанию выключено, устанавливается переключателем **Text messages** в B1App), а канал `sms` категории не должен быть отключен через переопределение. `event_reminders`, `serving_schedule` и `tasks` перечисляют `sms` и в `defaultChannels`, и в `allowedChannels`.
+- Люди без `mobilePhone` или с установленным `optedOut` исключаются. Если у церкви нет провайдера текстовых сообщений, остальная часть пакета подавляется с причиной `no_provider`.
+- Текст формируется `ReminderEngine.smsBody()`: `"<Church name>: <message> Reply STOP to opt out."`, обрезается до одного сегмента в 160 символов.
+- Каждый получатель получает собственную строку `reminderSentLog` с `channel: "sms"` и статусом `sent` / `suppressed` / `failed`, которая хранится отдельно от строки push/email, поэтому неудачный текст никогда не повторяет push или email.
+
+Редакторы предлагают **Text** только когда `GET /messaging/texting/status` возвращает `{ enabled: true }` (включен первый провайдер текстовых сообщений церкви).
+
+**Отказ через STOP.** `POST /messaging/texting/inbound/:churchId/:token` — анонимный webhook, который церковь вставляет в своего провайдера (B1Admin показывает URL из `GET /messaging/texting/inboundUrl` в настройках текстовых сообщений). Токен — это HMAC от ID церкви (`SmsOptOutHelper.token`). `SmsOptOutHelper.parse` принимает поля формы в стиле Twilio и JSON в стиле Clearstream/TextInChurch; если ответ точно совпадает со стоп-словом (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`), каждому не удаленному человеку в церкви, чей мобильный номер совпадает, устанавливаются `people.optedOut = true` и `allowSms = false`. Другие ответы подтверждаются и игнорируются.
 
 Внутренняя шина событий реагирует на мутации сущности без ожидания ночного расширения: события содержимого (через диспетчер webhook) и события обновления плана/задачи запускают немедленное переразложение или отмену для затронутой сущности, и обновление плана также переразлагает любые определения области, привязанные к его типу плана.
 
@@ -120,14 +135,14 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 Каждая отправка проходит через `PreferenceGateHelper.evaluate()`, чистую функцию (все состояние передано, без вызовов БД на горячем пути), которая возвращает `allow`, `suppress` или `defer`. Слои работают по порядку, и первый, который решает, побеждает:
 
 1. **Заблокированная категория** — некоторые категории являются обязательными (уровень 0) и обходят все остальные слои.
-2. **Основное отключение / убийство канала** — `masterMute`, `allowPush`, `allowSms` или `emailFrequency='never'` подавляют безоговорочно.
+2. **Основное отключение / убийство канала** — `masterMute`, `allowPush`, `allowSms` (по умолчанию выключено — участники включают его сами) или `emailFrequency='never'` подавляют безоговорочно.
 3. **Тихие часы** — только push и SMS (почта считается неинтрузивной). Если текущее настенное время в часовом поясе человека попадает в его тихое окно, трансакционная категория все равно проходит; нетрансакционная отсрочивается до конца тихого окна, рассчитывается как правильная с DST UTC-метка через `TimezoneHelper.wallClockToUtc`.
 4. **Переопределение предпочтений по категориям** — явный отказ для одной пары категория × канал; отсутствие означает значение по умолчанию для категории.
 5. **Отключение для конкретной сущности** — отключение, записанное для конкретной сущности (например, одного события, одного плана), ограничивает дальше, чем параметр на уровне категории, но применяется только когда вызывающий объект предоставляет идентификатор сущности/тип вместе с уведомлением.
 
 Задействованные таблицы: `notificationPreferences` (глобальные — `masterMute`, `emailFrequency` из `individual|daily|weekly|never`, `allowPush`, окно тихих часов + часовой пояс, `allowSms`), `notificationPreferenceOverrides` (по категориям × канал) и `notificationEntityMutes` (по сущностям).
 
-Эти gate обеспечиваются для in-app (уровень 0), push (уровень 1) и email (уровень 2) внутри воронки — включая немедленную почту напоминаний/сводок. Трансакционная почта (коды аутентификации, сброс пароля, приглашения, квитанции о пожертвованиях) обходит ее по замыслу; это вся цель второй двери.
+Эти gate обеспечиваются для in-app (уровень 0), push (уровень 1) и email (уровень 2) внутри воронки — включая немедленную почту напоминаний/сводок, и для текстов-напоминаний в `ReminderEngine.sendSms()`. Трансакционная почта (коды аутентификации, сброс пароля, приглашения, квитанции о пожертвованиях) обходит ее по замыслу; это вся цель второй двери.
 
 ## Ограничения на почту, составленную церковью
 
@@ -158,9 +173,10 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 | Transactional door | `Api/src/shared/helpers/TransactionalEmailHelper.ts`, lint rule `Api/tools/eslint-rules/email-door.cjs` |
 | Church email limits | `Api/src/shared/helpers/ChurchEmailLimiter.ts`, `Api/src/lambda/ses-feedback-handler.ts`, `Api/src/modules/messaging/repositories/DeliveryLogRepo.ts` |
 | Reminder engine | `Api/src/modules/messaging/helpers/ReminderEngine.ts`, `ReminderBootstrap.ts`, `helpers/adapters/*`, `controllers/ReminderController.ts` |
+| Texting / STOP opt-out | `Api/src/modules/messaging/helpers/SmsOptOutHelper.ts`, `controllers/TextingController.ts` (`/status`, `/inboundUrl`, `/inbound/:churchId/:token`), `Api/src/modules/doing/helpers/MatrixTextHelper.ts` (serving overview **Text Volunteers**) |
 | Reminder repositories | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`, `ReminderOccurrenceRepo.ts`, `ReminderSentLogRepo.ts` |
 | Serving/plan email | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`, `ReminderTokenHelper.ts`, `Api/src/shared/modules/DoingModuleGateway.ts` |
-| Reminder editors (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx` |
+| Reminder editors (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx`, `hooks/useTextingEnabled.ts` |
 | Reminder editor / preferences (B1App) | `EventReminderEdit.tsx`, `NotificationPrefsPage.tsx`, `useRealtimeNotifications.ts` |
 
 ## Related Pages

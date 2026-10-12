@@ -6,7 +6,7 @@ title: "Tracking Attendance"
 
 <div class="article-intro">
 
-Once your campuses, service times, and groups are configured, B1 Admin makes it easy to review attendance data and spot trends. The Attendance page provides two reporting views -- the **Attendance Trend** tab for church-wide trends and the **Group Attendance** tab for group-level detail. Use these tools to understand growth patterns, identify declining engagement, and make data-driven decisions for your church.
+Once your campuses, service times, and groups are configured, B1 Admin makes it easy to review attendance data and spot trends. The Attendance page opens on a summary of this week's attendance, and its **All years** reports provide two main views -- the **Attendance Trend** tab for church-wide trends and the **Group Attendance** tab for group-level detail. Use these tools to understand growth patterns, identify declining engagement, and make data-driven decisions for your church.
 
 </div>
 
@@ -21,8 +21,12 @@ Once your campuses, service times, and groups are configured, B1 Admin makes it 
 ## Viewing Attendance Trends
 
 1. Open **B1 Admin**, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **People**, and click **Attendance**.
-2. Click the **Attendance Trend** tab.
+2. Click **All years** in the left column. The **Attendance Trend** tab is selected by default.
 3. The report runs automatically when the tab opens, showing total attendance for each week.
+
+:::tip
+For a quick look at the current week, the main Attendance page shows how many people are in the room this week, a breakdown by room (group), any guests, and a 13-week bar chart of check-ins -- no report needed.
+:::
 
 ## Filtering Your Data
 
@@ -44,7 +48,7 @@ Reports auto-run each time you open the Attendance Trend tab, so you will always
 
 The **Group Attendance** tab shows who attended each group session. This is useful when you want to monitor a specific class, ministry team, or small group rather than looking at overall service numbers.
 
-1. Select the **Group Attendance** tab.
+1. On the **All years** reports, select the **Group Attendance** tab.
 2. Optionally choose a **Campus** and **Service**.
 3. Set the **Start Date** and **End Date**. By default the report covers last Sunday through today.
 4. Click **Run Report**.

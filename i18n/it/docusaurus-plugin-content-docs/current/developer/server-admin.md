@@ -20,7 +20,7 @@ Gli utenti con permissione Server.Admin possono accedere al pannello di amminist
 
 1. Accedi a [admin.b1.church](https://admin.b1.church)
 2. Apri il [menu Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu), espandi **Settings** e fai clic su **Server Admin**. (Puoi anche andare direttamente a `admin.b1.church/admin`.)
-3. Il pannello Server Admin ha sezioni per Chiese, Utenti, Personifica Utente, Lavori in Background, Commons, Tendenze di Utilizzo, Ricerche di Traduzione, Salute del Server e Migrazioni del Database
+3. Il pannello Server Admin elenca le sue sezioni sul lato sinistro in tre gruppi: **Directory** (Chiese, Utenti, Personifica Utente), **Operazioni** (Lavori in Background, Commons, Tendenze di Utilizzo) e **Sistema** (Ricerche di Traduzione, Salute del Server, Migrazioni del Database)
 
 ## Rappresentazione dell'Utente
 

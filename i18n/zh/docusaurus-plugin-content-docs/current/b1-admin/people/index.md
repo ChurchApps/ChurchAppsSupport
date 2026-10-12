@@ -28,13 +28,13 @@ title: "人员"
 
 7. **导入和导出数据** -- 从CSV文件导入成员数据或从另一个教会管理系统(如Breeze)迁移。你也可以随时将目录导出到CSV。见[导入数据](./importing-data.md)和[导出数据](./exporting-data.md)。
 
-8. **管理资料** -- 查看和编辑每个人的详细资料,包括联系信息、家庭成员、[小组成员](../groups/group-members.md)、[出席历史](../attendance/tracking-attendance.md)、[捐献](../donations/recording-donations.md)和[自定义表单](../forms/creating-forms.md)。悬停在蓝色资料标题中的电子邮件、地址或电话号码上以单击一次复制它。
+8. **管理资料** -- 查看和编辑每个人的详细资料,包括联系信息、家庭成员、[小组成员](../groups/group-members.md)、[出席历史](../attendance/tracking-attendance.md)、[捐献](../donations/recording-donations.md)和[自定义表单](../forms/creating-forms.md)。人员的姓名、联系方式和家庭显示在资料左侧,其出席、奉献、小组、笔记和表单的摘要显示在右侧。悬停在地址或住宅/工作电话上,即可单击一次复制。
 
 9. **分配角色和权限** -- 通过分配角色来控制团队中谁可以访问B1 Admin的不同部分。见[分配角色](./roles-permissions.md)。
 
 ## 快速开始
 
-要访问人员部分,打开[Jump 菜单](../introduction.md#getting-around-with-the-jump-menu)(B1 Admin左上角的搜索栏),展开**人员**,然后点击**人员**。你将看到完整的教会目录,顶部有搜索栏,下方有成员列表。
+要访问人员部分,打开[Jump 菜单](../introduction.md#getting-around-with-the-jump-menu)(B1 Admin左上角的搜索栏),展开**人员**,然后点击**人员**。你将看到按家庭列出的教会目录,顶部有搜索栏。使用**查看方式**切换按钮可在**家庭**列表和单个人员的**表格**之间切换。
 
 :::tip
 如果你是首次设置B1,首先[导入你现有的成员数据](./importing-data.md)。然后根据需要查看和清理资料。

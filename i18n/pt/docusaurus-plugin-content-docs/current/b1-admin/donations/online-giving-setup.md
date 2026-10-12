@@ -26,7 +26,7 @@ B1 Admin se integra com **Stripe**, **PayPal**, **Kingdom Funding** e **Paystack
 3. Copie sua **Chave Publicável**.
 4. Faça login em [B1 Admin](https://admin.b1.church/).
 5. Vá para **Configurações** e abra a seção **Doações**.
-6. Clique no ícone de edição na seção **Doações**.
+6. Clique em **Editar** na seção **Doações**.
 7. Configure o **Provedor** para **Stripe**.
 8. Cole sua Chave Publicável no campo **Chave Pública**.
 9. Volte para o Stripe e revele sua **Chave Secreta** (você pode visualizá-la apenas uma vez, então salve um backup).

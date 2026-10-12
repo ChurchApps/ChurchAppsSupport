@@ -14,13 +14,7 @@ La sezione **Gruppi** ti consente di organizzare i membri della tua chiesa in mi
 
 I gruppi sono organizzati per **categoria**. Una categoria è un'etichetta di primo livello come "Piccoli Gruppi", "Ministeri" o "Comitati". Ogni categoria può contenere più gruppi, rendendo semplice mantenere i gruppi correlati insieme.
 
-Quando apri la pagina Gruppi, vedrai un riepilogo in alto che mostra:
-
-- **Gruppi Totali** -- il numero di gruppi in tutte le categorie
-- **Categorie** -- il numero di categorie di gruppi che hai creato
-- **Membri Totali** -- il conteggio combinato dei membri in tutti i gruppi
-
-Sotto il riepilogo, i tuoi gruppi sono elencati per categoria con il numero di membri mostrato per ogni gruppo.
+Quando apri la pagina Gruppi, vedrai una casella **Cerca gruppi...**, una riga di pulsanti per categoria e una tabella dei tuoi gruppi. Ogni gruppo mostra la sua categoria e le sue etichette sotto il nome, insieme al numero di membri. Fai clic su **Tutti** o sul nome di una categoria per filtrare l'elenco (le categorie aggiuntive si trovano sotto **Altre categorie**), e fai clic sull'intestazione della colonna **Nome** o **Persone** per ordinare.
 
 ## Cosa Puoi Fare
 
@@ -38,7 +32,7 @@ Ecco cosa puoi realizzare nella sezione Gruppi:
 
 ## Primi Passi
 
-Per accedere a Gruppi, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Persone** e fai clic su **Gruppi**. Vedrai tutti i tuoi gruppi esistenti organizzati per categoria.
+Per accedere a Gruppi, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Persone** e fai clic su **Gruppi**. Vedrai tutti i tuoi gruppi esistenti, che puoi filtrare per categoria.
 
 :::tip
 Se stai appena iniziando, inizia creando alcune categorie che corrispondono alla struttura della tua chiesa (ad esempio, "Ministeri", "Piccoli Gruppi", "Comitati"). Quindi aggiungi singoli gruppi all'interno di ogni categoria. Vedi [Creazione di Gruppi](./creating-groups.md) per una procedura dettagliata.

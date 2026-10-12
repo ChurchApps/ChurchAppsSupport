@@ -19,14 +19,14 @@ Hinahayaan kayo ng pahinang Live Stream Times na i-configure ang iskedyul ng str
 
 </div>
 
-May dalawang pangunahing tab ang pahina: **Services** para sa pamamahala ng inyong iskedyul ng live stream at **Settings** para sa pag-configure ng inyong streaming page.
+Ang live streaming ay pinamamahalaan mula sa dalawang pahina sa seksyong **Sermons** ng Jump menu: **Live Stream Times** para sa pamamahala ng iskedyul ng inyong live stream at **Settings** para sa pag-configure ng mga tab sa inyong streaming page.
 
 ## Pamamahala ng mga Serbisyo
 
 ### Pagdaragdag ng Serbisyo
 
 1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), palawakin ang **Sermons**, at i-click ang **Live Stream Times**.
-2. I-click ang button na **Add Service** para gumawa ng bagong naka-iskedyul na serbisyo.
+2. I-click ang button na **Add Service** sa itaas ng pahina para gumawa ng bagong naka-iskedyul na serbisyo. Nakalista ang mga umiiral na serbisyo sa isang table na nagpapakita ng pangalan, oras, provider, at tagal ng bawat serbisyo; i-click ang edit icon sa isang row para baguhin ito.
 3. Maglagay ng **Service Name** (halimbawa, "Sunday Morning").
 4. I-set ang **Service Time** -- piliin ang araw at oras ng pagsisimula ng inyong serbisyo.
 5. I-set ang **Recurs Weekly** sa **Yes** para sa regular na lingguhang serbisyo, o **No** para sa minsanang kaganapan.
@@ -47,19 +47,19 @@ Awtomatikong mag-a-update ang inyong serbisyo kada linggo kung naka-set ito bila
 
 ## Mga Setting ng Streaming Page
 
-I-click ang tab na **Settings** para i-customize ang mga tab at link na lalabas kasabay ng inyong live stream.
+Para i-customize ang mga tab at link na lalabas kasabay ng inyong live stream, buksan ang Jump menu, palawakin ang **Sermons**, at i-click ang **Settings**. Makikita sa pahinang **Stream Settings** ang inyong listahan ng **Content Tabs**.
 
 ### Pagdaragdag ng mga Tab
 
 1. I-click ang button na **Add** para magdagdag ng bagong tab sa inyong live stream page.
-2. Piliin ang pre-designed na tab na **Chat** o magdagdag ng custom na tab na may external URL.
+2. Pumili ng **Link Type**: **External URL** para sa custom na link, o isa sa mga pre-designed na tab na **Chat** o **Prayer**.
 3. Para sa tab na Chat, bigyan lang ito ng pangalan sa kahon na **Tab Text** at tapos na ang setup.
 4. Para sa tab na may link, ilagay ang pangalan ng tab, pumili ng icon sa pamamagitan ng pag-click sa icon button, at ilagay ang URL.
 5. Lalabas ang inyong mga na-configure na tab sa live streaming page para ma-access ng mga manonood ang karagdagang resource at interactive na mga tampok.
 
 ### Pag-preview ng Inyong Stream
 
-I-click ang button na **View Your Stream** para makita nang eksakto kung paano lalabas ang inyong live streaming page sa mga bisita, kasama ang inyong logo, mga oras ng serbisyo, at mga na-configure na tab.
+Sa pahinang **Live Stream Times**, i-click ang **View Your Stream** sa itaas ng pahina para makita nang eksakto kung paano lalabas ang inyong live streaming page sa mga bisita, kasama ang inyong logo, mga oras ng serbisyo, at mga na-configure na tab.
 
 ## Pag-set Up ng Inyong YouTube Live Stream
 

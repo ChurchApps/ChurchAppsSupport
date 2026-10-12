@@ -20,19 +20,19 @@ La pagina Canzoni gestisce la tua libreria di canzoni di culto. Mantieni tutti i
 
 ## Sfoglia la Tua Libreria di Canzoni
 
-Quando apri la pagina **Canzoni**, le tue canzoni vengono visualizzate come schede. Ogni scheda mostra l'immagine della miniatura della canzone, il titolo, l'artista e la durata. Scorri la libreria o utilizza la ricerca per trovare quello che ti serve.
+Quando apri la pagina **Canzoni**, le tue canzoni sono elencate in una tabella. Ogni riga mostra l'immagine della miniatura della canzone, il titolo, l'artista e la durata. Usa i controlli di pagina sotto l'elenco per scorrere una libreria ampia, oppure cerca quello che ti serve.
 
 ## Ricerca di Canzoni
 
-1. Fai clic sul pulsante **Ricerca** nella pagina Canzoni.
+1. Fai clic nella casella **Search Songs** in alto nella pagina Canzoni.
 2. Digita un **titolo** della canzone o un nome di **artista**.
-3. I risultati si filtreranno mentre digiti, mostrando le canzoni corrispondenti dalla tua libreria.
+3. L'elenco si filtra mentre digiti, mostrando le canzoni corrispondenti dalla tua libreria e quante ne corrispondono. Fai clic su **Clear** per mostrare di nuovo tutte le canzoni.
 
 ## Aggiunta di una Canzone
 
-1. Fai clic su **Aggiungi Canzone** nella pagina Canzoni.
-2. Cerca il database esterno di canzoni per titolo o artista.
-3. Seleziona la canzone che vuoi aggiungere.
+1. Fai clic su **Add Song** in alto nella pagina Canzoni.
+2. In **Search for a Song**, cerca nel database esterno di canzoni per **Title or Artist**.
+3. Seleziona la canzone che vuoi aggiungere, oppure fai clic su **Create Manually** se non la trovi.
 4. La canzone verrà aggiunta alla tua libreria con i suoi dettagli di base precompilati.
 
 :::tip
@@ -48,12 +48,16 @@ I tuoi risultati di ricerca possono anche includere una sezione **WorshipCommons
 
 Solo le canzoni che hanno superato il processo di revisione di WorshipCommons appaiono qui, quindi la selezione può essere inferiore al database di canzoni principale.
 
+## Eliminazione di Canzoni {#deleting-songs}
+
+Seleziona la casella accanto a una o più canzoni (oppure la casella nell'intestazione per selezionare ogni canzone mostrata), quindi fai clic su **Delete Selected** nella barra che compare e conferma. Fai clic su **Clear** per deselezionare.
+
 ## Visualizzazione e Modifica di una Canzone
 
-Fai clic su qualsiasi scheda di canzone per aprire la sua pagina di dettagli. Da qui puoi:
+Fai clic sul titolo di una canzone per aprire la sua pagina di dettagli. Il titolo, l'artista e i dettagli come album, chiave, durata, BPM e tempo compaiono a sinistra, insieme agli arrangiamenti e ai link esterni. Da qui puoi:
 
-- **Modifica dettagli della canzone** -- Aggiorna il titolo, l'artista, la durata e altri metadati.
-- **Gestisci arrangiamenti** -- Ogni canzone può avere più arrangiamenti (ad esempio, chiavi diverse o versioni). Aggiungi, modifica o rimuovi arrangiamenti secondo le tue esigenze.
+- **Modifica dettagli della canzone** -- Fai clic su **Edit** per aggiornare il titolo, l'artista, la durata e altri metadati. Fai clic su **Done** quando hai finito. Per rimuovere la canzone dalla tua libreria, fai clic su **Edit** e poi su **Delete song**.
+- **Gestisci arrangiamenti** -- Ogni canzone può avere più arrangiamenti (ad esempio, chiavi diverse o versioni). Fai clic su **Add Arrangement** per crearne uno, e sul nome di un arrangiamento sotto **Arrangements** per aprirlo.
 - **Aggiungi testi** -- Inserisci o aggiorna i testi per ogni arrangiamento utilizzando la notazione ChordPro (ad esempio, `[G]Amazing grace`). Un'anteprima dal vivo accanto all'editor rende il grafico degli accordi formattato mentre digiti, in modo da poter vedere esattamente quello che il tuo team vedrà.
 - **Imposta la chiave** -- Specifica la chiave musicale per ogni arrangiamento utilizzando il selettore di chiavi accanto ai testi. La modifica della chiave traspone immediatamente gli accordi visualizzati, sia nella pagina dell'arrangiamento che quando si apre la canzone da un piano di servizio, in modo che il tuo team veda sempre gli accordi nella chiave che stanno effettivamente suonando.
 - **Aggiungi link esterni** -- Allega i link alle risorse come video YouTube, grafici degli accordi o fogli musicali ospitati altrove.

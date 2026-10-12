@@ -48,7 +48,7 @@ Check off who attended each service and group.
 
 Follow the [Recording Attendance](../attendance/recording-attendance.md) guide to:
 
-1. Open a group's **Sessions** tab and add a session for the date and service time. Check **Also add for the other groups** to create sessions for every class at that service time at once.
+1. Open a group, click **All sessions** in its **Sessions** section, and add a session for the date and service time. Check **Also add for the other groups** to create sessions for every class at that service time at once.
 2. Check off who attended each group
 
 :::tip

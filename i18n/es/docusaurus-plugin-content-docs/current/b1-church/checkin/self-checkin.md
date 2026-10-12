@@ -33,7 +33,7 @@ Haz clic en un servicio para seleccionarlo y pasar al siguiente paso.
 Después de seleccionar un servicio, verás una lista de los miembros de tu hogar. Para cada persona que asista:
 
 1. Toca un miembro del hogar para expandir su entrada.
-2. Verás los **horarios de servicio** disponibles para el servicio que seleccionaste.
+2. Verás los **horarios de servicio** disponibles para el servicio que seleccionaste. Si tu iglesia ha establecido un horario de registro para una hora de servicio, esta solo aparece mientras el registro para ella está abierto (por ejemplo, desde 30 minutos antes del servicio hasta poco después de que termine).
 3. Haz clic en **Seleccionar Grupo** junto a un horario de servicio para elegir a qué grupo la persona debe ser registrada (como "Adoración Principal", "Sala de Niños 1" o "Grupo de Jóvenes").
 4. Repite para cada miembro del hogar que está asistiendo.
 
@@ -57,6 +57,8 @@ Si necesitas cambiar una selección de grupo antes de completar el registro, toc
 
 - Solo puedes registrar miembros del hogar que están vinculados a tu cuenta. Si falta un miembro de la familia, pide al administrador de tu iglesia que lo añada a tu hogar.
 - Si no aparecen servicios en la página de registro, tu iglesia puede no tener servicios configurados para registro en este momento.
+- Si seleccionas un servicio y ves "Check-in isn't open for this service right now", ninguna de las horas de ese servicio está dentro de su ventana de registro en este momento. Inténtalo de nuevo más cerca de la hora del servicio.
+- Si una sala que elegiste está llena o cerrada, verás "A room you picked is full or closed for check-in. Please see a volunteer."
 
 :::warning
 El registro solo está disponible cuando tu iglesia tiene servicios activos configurados. Si no ves servicios listados, verifica con la oficina de tu iglesia para confirmar si el auto-registro está habilitado.

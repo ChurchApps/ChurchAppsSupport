@@ -21,8 +21,8 @@ Dopo aver creato il tuo account e la tua chiesa, ci sono alcuni passaggi importa
 ## Passaggio 1: Configura le informazioni della tua chiesa
 
 1. Apri il [menu Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Settings** e fai clic su **Settings**.
-2. Fai clic su **Edit Settings**.
-3. Inserisci il **nome**, l'**indirizzo** e i **dettagli di contatto** della tua chiesa.
+2. Nella sezione **Church Information**, fai clic su **Edit**.
+3. Inserisci il **nome**, il **sottodominio** e l'**indirizzo** della tua chiesa.
 4. Fai clic su **Save** per applicare le tue modifiche.
 
 ## Passaggio 2: Configura il tuo branding
@@ -47,7 +47,7 @@ Avere il tuo logo e il branding pronti prima di invitare i membri del team forni
 
 Con il tuo team in posizione, inizia a costruire le aree principali di B1 Admin:
 
-1. **People** -- Aggiungi i membri al tuo elenco della chiesa. Questa è la base per tutto il resto, quindi inizia da qui. Puoi aggiungere persone manualmente o utilizzare lo strumento **Import** da **Settings**.
+1. **People** -- Aggiungi i membri al tuo elenco della chiesa. Questa è la base per tutto il resto, quindi inizia da qui. Puoi aggiungere persone manualmente o utilizzare lo strumento **Import/Export** da **Settings**.
 2. **Groups** -- Crea gruppi per piccoli gruppi, team di ministero, classi e altre riunioni.
 3. **Attendance** -- Configura i tuoi campus, i servizi e gli orari dei servizi per il tracciamento della partecipazione.
 4. **Donations** -- Configura i fondi di donazione e collega il tuo gateway di pagamento (Stripe) per accettare donazioni online.

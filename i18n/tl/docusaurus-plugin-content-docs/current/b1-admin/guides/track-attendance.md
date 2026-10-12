@@ -48,7 +48,7 @@ Markahan kung sino ang dumalo sa bawat serbisyo at grupo.
 
 Sundin ang gabay sa [Pag-record ng Attendance](../attendance/recording-attendance.md) para:
 
-1. Buksan ang tab na **Sessions** ng isang grupo at magdagdag ng session para sa petsa at oras ng serbisyo. I-check ang **Also add for the other groups** para lumikha ng mga session para sa bawat klase sa oras ng serbisyong iyon nang sabay-sabay.
+1. Buksan ang isang grupo, i-click ang **All sessions** sa seksyong **Sessions** nito, at magdagdag ng session para sa petsa at oras ng serbisyo. I-check ang **Also add for the other groups** para lumikha ng mga session para sa bawat klase sa oras ng serbisyong iyon nang sabay-sabay.
 2. Markahan kung sino ang dumalo sa bawat grupo
 
 :::tip

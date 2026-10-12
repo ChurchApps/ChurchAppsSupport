@@ -23,8 +23,9 @@ Die Planübersicht bietet Ihnen einen Überblick über alle Ihre Freiwilligen-Zu
 
 1. Öffnen Sie in B1 Admin das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Dienst** und klicken Sie auf **Pläne**.
 2. Wählen Sie oben auf der Seite eine **Ministerium-Registerkarte** aus.
-3. Klicken Sie auf einen **Plantyp**, um seine Planliste zu öffnen.
-4. Klicken Sie auf die Schaltfläche **Übersicht** oben auf der Seite.
+3. Klicken Sie neben dem Plantyp in der Liste **Plantypen** auf **Übersicht** oder öffnen Sie den Plantyp und klicken Sie oben auf der Seite auf **Übersicht**.
+
+Die Übersicht bezieht sich auf den Plantyp, aus dem Sie sie geöffnet haben. Klicken Sie oben in der Übersicht auf den Namen des Plantyps, um zurück zu dessen Planliste zu gelangen.
 
 ## Das Übersicht-Raster lesen
 
@@ -62,20 +63,31 @@ Auto-Planung füllt nur Plätze, die bereits leer sind -- es ersetzt nie eine vo
 
 Klicken Sie auf **Freiwillige per E-Mail benachrichtigen**, um eine Benachrichtigung an jeden Freiwilligen zu senden, der überall im aktuell gefilterten Datumsbereich und im Ministerium zugewiesen ist, anstatt Plan für Plan zu versenden. B1 meldet, wie viele E-Mails gesendet wurden und wie viele fehlgeschlagen sind.
 
+## Alle eingeplanten Freiwilligen per Text erreichen {#texting-everyone-scheduled}
+
+Wenn Ihre Kirche einen [Texting-Anbieter](../settings/church-settings.md#texting) verbunden hat und Sie sowohl Pläne bearbeiten als auch Texte senden dürfen, erscheint oben in der Übersicht die Schaltfläche **Freiwillige texten**.
+
+1. Klicken Sie auf **Freiwillige texten**.
+2. Der Dialog zeigt an, wie viele Freiwillige die Nachricht erhalten (z. B. "12 von 14 Freiwilligen erhalten diesen Text"), sowie wie viele sich von Texten abgemeldet haben und wie viele keine Telefonnummer hinterlegt haben.
+3. Geben Sie Ihre **Nachricht** ein. Sie können auf einen Platzhalter klicken, um den Namen jedes Freiwilligen oder den Namen Ihrer Kirche einzufügen.
+4. Klicken Sie auf **Senden**. B1 meldet, wie viele Texte gesendet wurden.
+
+Jeder im Datumsbereich eingeplante Freiwillige erhält einen Text an die Mobilnummer in seinem Profil, auch wenn er an mehreren Daten dient. Personen, die sich eine Telefonnummer teilen (etwa ein Familientelefon), erhalten nur einen Text. Freiwillige, die auf einen früheren Text mit STOP geantwortet haben, werden übersprungen.
+
+:::info
+Texte werden über den Texting-Anbieter Ihrer Kirche versendet, daher gelten dessen Preise. Wenn Ihrer Kirche die Textguthaben ausgehen, wird der Versand gestoppt und der Dialog informiert Sie darüber. Ein einzelner Versand erreicht höchstens 200 Freiwillige; grenzen Sie den Datumsbereich ein, wenn Sie mehr haben.
+:::
+
 ## Zeitplan eines Freiwilligen hervorheben
 
 Verwenden Sie das Dropdown-Menü **Hervorheben**, um eine Person aus Ihrem Team auszuwählen -- jede Zelle, in der sie zugewiesen ist, wird im Raster hervorgehoben, damit Sie sehen können, wo sie bereits dient, bevor Sie sie einem anderen Platz hinzufügen. Wählen Sie **Alle**, um die Hervorhebung auszuschalten.
 
 ## Filtern der Übersicht
 
-Sie können anpassen, was die Übersicht anzeigt, indem Sie die Filtersteuerungen oben verwenden:
+Sie können anpassen, was die Übersicht anzeigt, indem Sie die Steuerelemente über dem Raster verwenden. Das Raster wird sofort aktualisiert, sobald Sie sie ändern.
 
+- **Alle Positionen / Nur unfüllt** -- Wählen Sie **Nur unfüllt**, um Zeilen auszublenden, in denen jedes Datum bereits besetzt ist, damit Sie sich nur auf Positionen konzentrieren können, die noch einen Freiwilligen benötigen.
 - **Startdatum / Enddatum** -- Standardmäßig zeigt die Übersicht 12 Wochen in die Zukunft. Geben Sie benutzerdefinierte Daten ein, um den Bereich zu erweitern oder zu verengen.
-- **Ministerium** -- Wechseln Sie zu einem anderen Ministerium, ohne die Übersicht zu verlassen.
-- **Plantyp** -- Filtern Sie zu einem bestimmten Plantyp im ausgewählten Ministerium.
-- **Nur unfüllt** -- Aktivieren Sie diese Option, um Zeilen auszublenden, in denen jedes Datum bereits gefüllt ist, damit Sie sich nur auf Positionen konzentrieren können, die noch einen Freiwilligen benötigen.
-
-Klicken Sie auf **Filter**, nachdem Sie Änderungen vorgenommen haben, um das Raster zu aktualisieren.
 
 ## In CSV exportieren
 

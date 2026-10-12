@@ -24,7 +24,7 @@ Need a list of everyone with a wedding anniversary in a given month — for the 
 2. Under the search box, click **Advanced**.
 3. Expand the **Demographics** section and check **Anniversary Month**, then choose the month.
 4. Run the search — everyone with an anniversary that month appears in the results.
-5. To see the dates, click the **columns icon** at the top right of the results and enable the **Anniversary** column. Use **Export** to download the list as a spreadsheet if you prefer to sort or print it.
+5. To see the dates, switch **View as** to **Table**, then click the **Select columns** icon in the page header and enable the **Anniversary** column. Use **Export** to download the list as a spreadsheet if you prefer to sort or print it.
 
 ## Practical Uses
 

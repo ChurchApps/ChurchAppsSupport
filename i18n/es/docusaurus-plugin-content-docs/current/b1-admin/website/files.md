@@ -6,7 +6,7 @@ title: "Archivos"
 
 <div class="article-intro">
 
-La página Archivos es el repositorio central para todos los medios y documentos utilizados en tu sitio web de iglesia. Desde aquí puedes cargar, organizar, explorar y administrar cada imagen, documento y archivo multimedia que tu sitio necesita.
+La página Archivos es el repositorio central para todos los medios y documentos utilizados en tu sitio web de iglesia. Desde aquí puedes cargar, explorar y administrar cada imagen, documento y archivo multimedia que tu sitio necesita.
 
 </div>
 
@@ -22,29 +22,23 @@ La página Archivos es el repositorio central para todos los medios y documentos
 ## Carga de Archivos
 
 1. En B1 Admin, abre el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda), expande **Website** y haz clic en **Files**.
-2. Arrastra y suelta archivos directamente en el área de carga, o haz clic en el botón de carga para explorar tu computadora.
-3. Tus archivos se cargarán y aparecerán en la biblioteca de archivos inmediatamente.
+2. En el panel **Upload Files** de la derecha, haz clic en **Choose File** y selecciona un archivo de tu computadora. (El botón **Upload Files** en la parte superior de la página lleva al mismo panel).
+3. Tu archivo se cargará y aparecerá en la tabla de archivos.
+
+El panel Upload Files también muestra cuánto almacenamiento estás usando. Se incluyen 100 MB gratis; para obtener más, vincula tu propio Google Drive, Dropbox, OneDrive o bucket de S3 en **Settings**, en la sección **File Storage**.
 
 :::tip
 Para obtener los mejores resultados, optimiza las imágenes antes de cargarlas. Los tamaños de archivo más pequeños ayudan a que tu sitio web cargue más rápido para los visitantes. Herramientas como TinyPNG o Squoosh pueden comprimir imágenes sin pérdida de calidad notable.
 :::
 
-## Organización con Carpetas
+## Exploración de Archivos
 
-1. Crea carpetas para agrupar archivos relacionados -- por ejemplo, "Gráficos de Sermones," "Banners de Eventos," o "Fotos de Personal."
-2. Mueve archivos entre carpetas para mantener tu biblioteca ordenada a medida que crece.
-3. Usa nombres de carpeta claros y descriptivos para que tu equipo pueda encontrar archivos rápidamente.
-
-## Exploración y Búsqueda
-
-- Desplázate a través de la biblioteca de archivos para ver miniaturas de todos tus archivos cargados.
-- Usa la función **search** para encontrar archivos por nombre cuando tu biblioteca se agranda.
-- Haz clic en cualquier archivo para ver sus detalles, incluyendo el nombre del archivo, tamaño y URL.
+La tabla de archivos muestra todos los archivos cargados con su **Name** y **Size**. Haz clic en el nombre de un archivo para abrirlo en una nueva pestaña. Asigna nombres claros y descriptivos a los archivos antes de cargarlos para que tu equipo pueda encontrarlos rápidamente.
 
 ## Uso de Archivos en tu Sitio Web
 
-1. Haz clic en un archivo para ver sus detalles.
-2. **Copia la URL del archivo** para usarla en tus páginas web. Puedes pegar esta URL en elementos de imagen, enlaces de descarga o cualquier otro lugar que acepte una URL de archivo.
+1. Busca el archivo en la tabla de archivos.
+2. Haz clic en **Copy link** para copiar la URL del archivo. Puedes pegar esta URL en elementos de imagen, enlaces de descarga o cualquier otro lugar que acepte una URL de archivo.
 3. Los archivos que cargues aquí están disponibles para usarse en todas tus páginas web y bloques de contenido.
 
 :::info
@@ -53,8 +47,8 @@ Al construir páginas en [Administración de Páginas](managing-pages), puedes r
 
 ## Eliminación de Archivos
 
-1. Selecciona el archivo que deseas eliminar.
-2. Haz clic en el botón **Delete** para eliminarlo permanentemente de tu biblioteca.
+1. Busca el archivo que deseas eliminar en la tabla de archivos.
+2. Haz clic en **Delete** junto a él y confirma para eliminarlo permanentemente de tu biblioteca.
 3. Asegúrate de que el archivo no esté siendo utilizado actualmente en ninguna página antes de eliminarlo, ya que esto romperá cualquier enlace o imagen que lo referencie.
 
 :::warning

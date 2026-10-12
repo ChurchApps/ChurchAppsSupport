@@ -24,7 +24,7 @@ title: "उपस्थिति दर्ज करना"
 
 1. **B1 Admin** खोलें, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (शीर्ष-बाएं खोज बार) खोलें, **People** विस्तृत करें, और **Groups** पर क्लिक करें।
 2. उस समूह को चुनें जिसके लिए आप उपस्थिति दर्ज करना चाहते हैं।
-3. **Sessions** टैब पर क्लिक करें।
+3. समूह के पृष्ठ पर **Sessions** अनुभाग में **All sessions** पर क्लिक करें।
 4. एक नया session बनाने के लिए **New** पर क्लिक करें।
 5. यदि समूह को एक सेवा समय से assign किया गया है, तो **Service Time** चुनें। यदि यह एक unscheduled समूह है, तो यह field दिखाई नहीं देगा।
 6. **Session Date** चुनें -- यह आज, एक पिछली तारीख, या एक भविष्य की तारीख हो सकती है।
@@ -76,11 +76,11 @@ title: "उपस्थिति दर्ज करना"
 
 ## एक Roll Sheet को प्रिंट करना
 
-एक roll sheet एक printable class list है जिसे teachers हाथ से mark कर सकते हैं और बाद में enter करने के लिए आपको वापस दे सकते हैं। प्रत्येक sheet चर्च का नाम, class, class के नाम के तहत एक large **Date** line, और सेवा समय दिखाता है। सदस्यों को दो columns में सूचीबद्ध किया जाता है (left column पढ़ें, फिर right) ताकि अधिक नाम एक page पर fit हों, और हर सदस्य के पास **Present** और **Absent** boxes हैं। visitors के लिए blank lines और एक **Teacher / Notes** area हैं।
+एक roll sheet एक printable class list है जिसे teachers हाथ से mark कर सकते हैं और बाद में enter करने के लिए आपको वापस दे सकते हैं। प्रत्येक sheet पर आपके चर्च का लोगो ([Website > Appearance](../website/appearance.md) से **Light Background Logo**, यदि आपने एक अपलोड किया है) उसके नीचे चर्च के नाम के साथ, class, class के नाम के तहत एक large **Date** line, और सेवा समय दिखाता है। सदस्यों को दो columns में सूचीबद्ध किया जाता है (left column पढ़ें, फिर right) ताकि अधिक नाम एक page पर fit हों, और हर सदस्य के पास **Present** और **Absent** boxes हैं। visitors के लिए blank lines और एक **Teacher / Notes** area हैं।
 
 - **एक session से** -- session की attendance list के शीर्ष पर **Print Roll Sheet** (printer) icon पर क्लिक करें। sheet को session की date के साथ dated किया जाता है।
 - **एक सेवा के लिए सभी classes** -- यदि session का एक सेवा समय है, तो **Print All Classes** पर क्लिक करके उस सेवा समय को assign किए गए प्रत्येक class के लिए एक sheet print करें। हर class अपने ही page पर print होता है।
-- **Members tab से** -- समूह की member list के ऊपर **Print Roll Sheet** icon पर क्लिक करें और एक undated sheet print करने के लिए **Attendance Sheet** चुनें। उसी menu में **Contact Roster** layout भी है, जिसमें हर सदस्य का फ़ोन, ईमेल और पता होता है -- [सदस्य सूची प्रिंट करना](../groups/group-members.md#printing-the-member-list) देखें।
+- **Member list से** -- समूह के पृष्ठ पर **All members** पर क्लिक करें, फिर member list के ऊपर **Print Roll Sheet** icon पर क्लिक करें और एक undated sheet print करने के लिए **Attendance Sheet** चुनें। उसी menu में **Contact Roster** layout भी है, जिसमें हर सदस्य का फ़ोन, ईमेल और पता होता है -- [सदस्य सूची प्रिंट करना](../groups/group-members.md#printing-the-member-list) देखें।
 
 sheet एक नए tab में खुल जाता है और आपके browser की print dialog स्वचालित रूप से दिखाई देता है।
 
@@ -96,7 +96,7 @@ sheet एक नए tab में खुल जाता है और आपक
 
 Sessions को record करने के बाद, डेटा आपकी attendance रिपोर्ट में दिखाई देता है।
 
-- **Attendance Trend tab** -- चर्च-व्यापी trends को समय के साथ दिखाता है। [Tracking Attendance](tracking-attendance.md) देखें।
+- **Attendance Trend tab** (Attendance पृष्ठ पर **All years** के अंतर्गत) -- चर्च-व्यापी trends को समय के साथ दिखाता है। [Tracking Attendance](tracking-attendance.md) देखें।
 - **Group Attendance tab** -- व्यक्तिगत समूह द्वारा विभाजित attendance दिखाता है। [Attendance Reports](../reports/attendance-reports.md#group-attendance) देखें।
 
 :::tip

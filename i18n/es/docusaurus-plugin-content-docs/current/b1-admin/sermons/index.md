@@ -28,7 +28,7 @@ Organice sus sermones en series o colecciones. Las listas de reproducción facil
 
 ### Horarios de Transmisión en Vivo
 
-Configure el horario de transmisión en vivo de su iglesia. Establezca servicios semanales recurrentes o eventos únicos, gestione la configuración de chat y video, y controle cuándo su transmisión sale al aire. Los visitantes verán el próximo horario de servicio programado en su página de transmisión. Consulte [Transmisión en Vivo](live-streaming) para instrucciones de configuración.
+Configure el horario de transmisión en vivo de su iglesia. Establezca servicios semanales recurrentes o eventos únicos, gestione la configuración de chat y video, y controle cuándo su transmisión sale al aire. Los visitantes verán el próximo horario de servicio programado en su página de transmisión. Una página **Settings** separada bajo **Sermones** controla las pestañas (chat, oración y enlaces personalizados) que se muestran junto a su transmisión en vivo. Consulte [Transmisión en Vivo](live-streaming) para instrucciones de configuración.
 
 ### Importación Masiva
 

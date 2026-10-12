@@ -24,8 +24,8 @@ Importprosessen bruker en to-trinns arbeidsflyt: først forhåndsviser du hva so
 
 ## Importere transaksjoner
 
-1. I **B1 Admin**, naviger til **Donasjoner > Grupper**.
-2. Klikk **Stripe Import**-lenken nederst på Gruppesiden.
+1. I **B1 Admin**, naviger til **Donasjoner > Stripe-import**. (Du kan også klikke på **Importer manglende Stripe-transaksjoner** øverst på siden **Gavebunter**.)
+2. Siden **Stripe-import** åpnes.
 3. Velg en **datoperiode** for transaksjonene du vil importere.
 4. Klikk **Preview** for å kjøre en prøvekontroll.
 

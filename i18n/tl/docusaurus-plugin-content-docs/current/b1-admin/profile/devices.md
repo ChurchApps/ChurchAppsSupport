@@ -29,7 +29,7 @@ Kapag binuksan mo ang Devices page, makikita mo ang isang talahanayan na naglili
 
 ## Pagdaragdag ng Bagong Device
 
-1. I-click ang button na **Add Device** sa itaas ng Devices page.
+1. I-click ang button na **Add Screen** sa itaas ng Devices page.
 2. Hihilingin sa iyong maglagay ng **pairing code**.
 3. Hanapin ang pairing code na ipinapakita sa ChurchAppsPlayer o FreePlay device na gusto mong ikonekta.
 4. Ilagay ang code. Kung ito ay isang FreePlay TV, ang dropdown na **Show Plans For** ay nagbibigay-daan sa iyong piliin ang uri ng plan na dapat sundin ng screen — iwanan itong nasa **None** para gamitin ang device para sa pag-browse at mga notification lamang.
@@ -41,7 +41,7 @@ Siguraduhing naka-on at nakakonekta sa internet ang device bago subukang i-pair 
 
 ## Pag-edit ng Label ng Device
 
-1. I-click ang **pangalan ng device** sa talahanayan ng mga device.
+1. I-click ang **Edit** sa tabi ng device sa talahanayan ng mga device.
 2. I-update ang label sa mas naglalarawang pangalan (halimbawa, "Sanctuary Main Screen" o "Lobby Display").
 3. I-save ang iyong mga pagbabago.
 

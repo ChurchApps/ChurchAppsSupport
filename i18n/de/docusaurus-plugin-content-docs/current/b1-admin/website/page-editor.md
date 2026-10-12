@@ -22,7 +22,7 @@ Der B1-Seiten-Editor ist ein visueller Drag-and-Drop-Builder, mit dem Sie Websit
 ## Editor öffnen
 
 1. Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Website** und klicken Sie auf **Pages**.
-2. Finden Sie die Seite, die Sie bearbeiten möchten, in der Pages-Tabelle und klicken Sie auf **Edit**.
+2. Finden Sie die Seite, die Sie bearbeiten möchten, in der Pages-Tabelle und klicken Sie auf **Edit Content**.
 
 Der Editor wird im Vollbild-Modus geöffnet. Das linke Panel zeigt Ihre Seitenstruktur und verfügbare Inhalts-Elemente; der mittlere Bereich zeigt eine Live-Vorschau Ihrer Seite.
 
@@ -79,9 +79,18 @@ Haben Sie einen Abschnitt bereits ausgebaut, möchten aber eine andere Struktur?
    - **Live Stream** -- Ihr Live-Stream-Player, direkt auf der Seite eingebettet
    - **Podcast** -- Eine Liste von Episoden, abgerufen von einer externen Podcast-RSS-Feed-URL, die Sie bereitstellen, mit Einstellungen für die Anzahl der angezeigten Episoden und ob Daten und Beschreibungen angezeigt werden. Dies ist zum Präsentieren eines beliebigen Podcast-Feeds auf Ihrer Website; zum Veröffentlichen Ihrer eigenen Predigten als Podcast, siehe [Managing Sermons](../sermons/managing-sermons.md#your-podcast-feed) stattdessen.
    - **Donation** -- Ein Spenden-Button oder eingebettetes Spenden-Formular
-   - **Raw HTML** -- Benutzerdefiniertes HTML-Markup für fortgeschrittene Anwendungsfälle
+   - **HTML** -- Ihr eigenes rohes HTML, für fortgeschrittene Anwendungsfälle wie das Einbetten eines Drittanbieter-Widgets (siehe [Verwenden des HTML-Elements](#verwenden-des-html-elements))
    - **iFrame** -- Betten Sie externen Inhalt über URL ein
 3. Konfigurieren Sie das Element mit dem angezeigten Settings-Panel.
+
+### Verwenden des HTML-Elements {#using-the-html-element}
+
+Das Element **HTML** hat zwei Felder:
+
+- **HTML Content** -- Das Markup, das auf der Seite angezeigt wird. Alle `<script>`-Tags, die Sie hier einfügen, werden auf Ihrer Live-Website ausgeführt.
+- **JavaScript (exclude script tag)** -- Skriptcode, der beim Laden der Seite ausgeführt wird. Sie können hier auch den Einbettungs-Snippet eines Anbieters mit seinen `<script>`-Tags einfügen; er wird auf Ihrer Live-Website ausgeführt.
+
+Wenn Sie nur eine Webadresse (etwa einen Bildlink) in das JavaScript-Feld einfügen, wird das Feld rot und zeigt die Warnung *"This is a web address, not JavaScript."* an. Eine bloße Adresse in diesem Feld bewirkt nichts. Um ein Bild anzuzeigen, verwenden Sie ein **Image**-Element oder fügen Sie `<img src="...">` in **HTML Content** ein.
 
 ### Inhalte neu ordnen
 
@@ -117,7 +126,7 @@ Verwenden Sie die Vorschau-Steuerelemente in der Werkzeugleiste, um zu überprü
 - **Desktop** -- Vollbreiten-Browser-Ansicht
 - **Mobile** -- Schmale Telefon-Ansicht
 
-Klicken Sie auf **Preview**, um eine Live-Version der Seite in einem neuen Browser-Tab zu öffnen, genau wie Besucher sie sehen werden.
+Um die Live-Seite genau so zu sehen, wie Besucher sie sehen werden, gehen Sie zurück zur Seitenliste und klicken Sie auf den Pfad der Seite. Sie öffnet sich in einem neuen Browser-Tab.
 
 ## Barrierefreiheit überprüfen
 
@@ -128,9 +137,9 @@ Klicken Sie auf das **Accessibility**-Symbol in der Werkzeugleiste, um eine schn
 Der Editor verfolgt Ihren Bearbeitungsverlauf automatisch. Verwenden Sie die Werkzeugleisten-Schaltflächen oder Tastaturkürzel, um zu navigieren:
 
 - **Undo** (Strg+Z / Cmd+Z) -- Machen Sie Ihre letzte Aktion rückgängig
-- **Redo** (Strg+Y / Cmd+Y) -- Wenden Sie eine rückgängig gemachte Aktion erneut an
+- **Redo** (Strg+Shift+Z oder Strg+Y / Cmd+Shift+Z) -- Wenden Sie eine rückgängig gemachte Aktion erneut an
 
-Sie können auch die Seite zu einem früheren Snapshot wiederherstellen. Klicken Sie auf **History** in der Werkzeugleiste, um eine Liste der gespeicherten Snapshots mit Beschreibungen zu sehen, und klicken Sie auf einen Eintrag, um zu diesem Punkt wiederherzustellen.
+Sie können auch die Seite zu einem früheren Snapshot wiederherstellen. Klicken Sie auf **View history** in der Werkzeugleiste, um eine Liste der gespeicherten Snapshots mit Beschreibungen zu sehen, und klicken Sie auf einen Eintrag, um zu diesem Punkt wiederherzustellen.
 
 :::warning
 Das Wiederherstellen eines Snapshots ersetzt Ihren aktuellen Seiten-Inhalt durch die Snapshot-Version. Dies kann nicht mit der Standard-Rückgängig-Schaltfläche rückgängig gemacht werden. Speichern Sie einen Snapshot Ihres aktuellen Zustands, bevor Sie einen alten wiederherstellen, wenn Sie die Option haben möchten, zurückzukehren.
@@ -144,15 +153,15 @@ Das Wiederherstellen eines Snapshots ersetzt Ihren aktuellen Seiten-Inhalt durch
 
 Seiten können einen **Published**-Status haben, der steuert, wann Besucher Ihre Änderungen sehen. Die Werkzeugleiste zeigt einen Status-Chip mit dem aktuellen Status:
 
-- **Live on Save** -- Die Seite verwendet keinen Veröffentlichungs-Workflow. Jede gespeicherte Änderung wird sofort live. Dies ist die Voreinstellung für neue Seiten.
-- **Unpublished Changes** -- Die Seite wurde zuvor veröffentlicht, aber Sie haben Änderungen seit der letzten Veröffentlichung vorgenommen. Besucher sehen weiterhin die zuvor veröffentlichte Version.
+- **Live on save** -- Die Seite verwendet keinen Veröffentlichungs-Workflow. Jede gespeicherte Änderung wird sofort live. Dies ist die Voreinstellung für neue Seiten.
+- **Unpublished changes** -- Die Seite wurde zuvor veröffentlicht, aber Sie haben Änderungen seit der letzten Veröffentlichung vorgenommen. Besucher sehen weiterhin die zuvor veröffentlichte Version.
 - **Published** -- Die Seite ist live und Ihr gespeicherter Inhalt stimmt mit dem überein, das Besucher sehen.
 
 Um Ihre Änderungen zu veröffentlichen, klicken Sie auf die **Publish**-Schaltfläche in der Werkzeugleiste. Die Seite wird sofort live.
 
-Um zur letzten veröffentlichten Version zurückzukehren, ohne zu beeinflussen, was Besucher sehen, öffnen Sie das Overflow-Menü (⋮) und klicken Sie auf **Discard Changes**.
+Um zur letzten veröffentlichten Version zurückzukehren, ohne zu beeinflussen, was Besucher sehen, öffnen Sie das Overflow-Menü (⋮) und klicken Sie auf **Discard unpublished changes**.
 
-Um eine Seite ganz offline zu nehmen, öffnen Sie das Overflow-Menü und klicken Sie auf **Unpublish**. Besucher werden diese Seite nicht mehr sehen, bis Sie sie erneut veröffentlichen.
+Um die Nutzung des Veröffentlichungs-Workflows zu beenden, öffnen Sie das Overflow-Menü und klicken Sie auf **Turn off publishing**. Änderungen werden danach wieder sofort live veröffentlicht.
 
 :::tip
 Verwenden Sie den Draft/Publish-Workflow, wenn Sie eine Seite vorbereiten möchten -- zum Beispiel für ein bevorstehendes Ereignis -- und machen Sie sie nur live, wenn der richtige Moment kommt. Erstellen und zeigen Sie eine Vorschau der Seite an, und klicken Sie dann auf Publish, wenn Sie bereit sind.

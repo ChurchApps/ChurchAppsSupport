@@ -49,7 +49,7 @@ Alle drei rufen die gleichen zwei API-Module durch `ApiHelper` auf: **Membership
 |----------------|-----------|---------|
 | `campuses` | name, address | Veraltet hier -- Campusse werden im Mitgliedschafts-Modul (`/membership/campuses`) gemastert; die Anwesenheitskopie ist für Legacy-Leser eingefroren (`models/Campus.ts`) |
 | `services` | campusId, name | Ein regelmäßiger Treffen, z.B. "Sonntagmorgen" (`models/Service.ts`) |
-| `serviceTimes` | serviceId, name | Ein Zeitslot innerhalb eines Service, z.B. "9:00 Uhr" (`models/ServiceTime.ts`) |
+| `serviceTimes` | serviceId, name, dayOfWeek, startTime, endTime, checkinOpenMinutes, checkinCloseMinutes | Ein Zeitslot innerhalb eines Service, z.B. "9:00 Uhr" (`models/ServiceTime.ts`). Die Zeitplan-Spalten sind optional (Migration `tools/migrations/attendance/2026-10-10_service_time_schedule.ts`) und steuern das [Check-in-Fenster](#geplante-check-in-fenster) |
 | `groupServiceTimes` | groupId, serviceTimeId | Join-Tabelle: welche Gruppen (Klassenzimmer) treffen sich zu welcher Service-Zeit (`models/GroupServiceTime.ts`) |
 | `sessions` | groupId, serviceTimeId, sessionDate | Eines Gruppentreffen an einem Datum -- faulhaft bei Check-in-Zeit erstellt (`models/Session.ts`) |
 | `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | Eine Person besucht an einem Datum (`models/Visit.ts`). `checkinType` ist `member` / `guest` / `volunteer` (NULL = legacy member), set by the kiosk and consumed by the capacity/ratio gates |
@@ -110,6 +110,15 @@ Jeder Besuch trägt einen `checkinType` -- `member`, `guest` oder `volunteer` (N
 
 - **Hart (immer blockieren):** `checkinClosed`, `current + incoming > capacity`, Gastanzahl über `guestCapacity`. Der Batch wird mit `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` abgelehnt -- der Kiosk zeigt den benannten Raum.
 - **Verhältnis (warnen oder blockieren):** Eingehende Nicht-Freiwillige in einen Raum wo `volunteers < minVolunteers`, überhaupt keine Freiwilligen oder `children > volunteers × volunteerRatio`. Schweregrad folgt der pro-Kirchen Einstellung `ratioEnforcement` (`"warn"` Standard / `"block"`, bearbeitet in B1Admin Kirche Verwalten → Check-In, `CheckinSettingsEdit.tsx`). Warn-Modus gibt `409 { warning: true, error: "ratio", … }` zurück, es sei denn der Client reicht mit `acknowledgeWarnings=true` erneut ein -- das Erneut-Einreichen ist die Kiosk-Personal-Bestätigungs-Überschreibung.
+
+### Geplante Check-in-Fenster {#scheduled-check-in-windows}
+
+Eine Service-Zeit kann einen optionalen wöchentlichen Zeitplan haben (`dayOfWeek` 0–6 mit 0 = Sonntag, `startTime`/`endTime` als `HH:mm`, `checkinOpenMinutes`, `checkinCloseMinutes`). Er wird im Formular der Service-Zeit unter **Attendance → Setup** in B1Admin bearbeitet (`B1Admin/src/attendance/components/ServiceTimeEdit.tsx`, „Check-in Schedule“). `CheckinGateHelper.hasSchedule()` behandelt eine Service-Zeit nur dann als geplant, wenn sowohl `dayOfWeek` als auch `startTime` gesetzt sind; ungeplante Zeiten werden niemals zeitlich begrenzt. `isServiceTimeOpen()` berechnet das Fenster in der Ortszeit der Kirche (`DateHelper.toChurchTime` mit der `timeZone` der Kirche), von `checkinOpenMinutes` vor dem Beginn bis `checkinCloseMinutes` nach dem Ende (oder nach dem Beginn, wenn es kein Ende gibt). Dabei werden Fenster behandelt, die über Mitternacht oder die Wochengrenze reichen.
+
+Das Fenster wird an zwei Stellen durchgesetzt:
+
+- **Auflistung:** `GET /attendance/servicetimes` versieht jede Zeile mit einem berechneten booleschen Wert `checkinOpen`. Der Selbst-Check-in der B1App (`CheckinPage.tsx`) entfernt Zeiten mit `checkinOpen === false` und zeigt „Check-in isn't open for this service right now.“, wenn keine übrig bleiben. B1Checkin filtert noch nicht danach.
+- **Senden:** Innerhalb von `evaluateGates()`, vor der Kapazitäts- und Verhältnisprüfung, lehnt `findClosedServiceTimeGroups()` den Batch mit `409 { error: "notOpen", groups: [{ groupId, groupName, reason: "notOpen" }] }` ab, wenn die Service-Zeit einer angestrebten Sitzung außerhalb ihres Fensters liegt. B1Checkin zeigt dies über den bestehenden Harte-Gate-Bildschirm an („room is full or closed“).
 
 ### Alters-/Klassenstufen-Berechtigung (Kiosk-seitig)
 

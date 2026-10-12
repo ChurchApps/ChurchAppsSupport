@@ -20,7 +20,7 @@ Salas e Recursos permitem que você rastreie os espaços e equipamentos reservá
 
 ## Abrindo Salas e Recursos
 
-Em B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Calendários** e clique em **Salas e Recursos**. A página tem quatro abas: **Salas**, **Recursos**, **Bloqueios** e **Modelos**.
+Em B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Calendários** e clique em **Salas e Recursos**. A página tem quatro abas: **Salas**, **Recursos**, **Bloqueios** e **Modelos**. O botão de adicionar no topo da página muda para corresponder à aba selecionada, e uma caixa **Buscar** permite filtrar a lista atual.
 
 ## Salas
 
@@ -28,7 +28,7 @@ Salas são espaços físicos que podem ser reservados junto com eventos de calen
 
 ### Adicionando uma Sala
 
-1. Na aba **Salas**, clique em **Adicionar Sala**.
+1. Na aba **Salas**, clique em **Adicionar Sala** no topo da página.
 2. Digite um **nome** para a sala.
 3. Opcionalmente defina uma **capacidade** (número máximo de pessoas).
 4. Defina um **Grupo de Aprovação** -- quando um grupo solicita esta sala, os líderes do grupo escolhido são notificados e devem aprovar a reserva. Deixe em branco se nenhuma aprovação for necessária.
@@ -36,7 +36,7 @@ Salas são espaços físicos que podem ser reservados junto com eventos de calen
 
 ### Editando ou Deletando uma Sala
 
-Clique no ícone de edição ao lado de qualquer sala, faça suas mudanças e clique em **Salvar**. Use **Deletar** para remover uma sala permanentemente.
+Clique em **Editar** ao lado de qualquer sala, faça suas mudanças e clique em **Salvar**. Use **Deletar** para remover uma sala permanentemente.
 
 ## Recursos
 

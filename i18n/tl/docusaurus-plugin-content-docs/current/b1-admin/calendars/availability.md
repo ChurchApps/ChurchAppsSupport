@@ -38,11 +38,11 @@ Kapag itinapat ang cursor sa isang event, makikita ang pamagat ng event at ang s
 
 ## Pag-filter ayon sa Silid o Resource
 
-Gamitin ang dropdown na **Filter** sa kaliwang itaas para paliitin ang kalendaryo sa isang silid o resource lamang. Piliin ang **All Rooms & Resources** para bumalik sa buong view.
+Gamitin ang dropdown na **Room / Resource** sa kaliwang itaas para paliitin ang kalendaryo sa isang silid o resource lamang. Piliin ang **All Rooms & Resources** para bumalik sa buong view.
 
 ## Pag-book ng Silid o Resource
 
-1. I-click ang button na **Book** sa kanang itaas na sulok ng pahina.
+1. I-click ang button na **Book** sa itaas ng pahina.
 2. Sa dialog na magbubukas, punan ang mga detalye ng event:
    - **Title** — ang pangalan ng event
    - **Start** at **End** na petsa/oras

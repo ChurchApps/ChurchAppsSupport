@@ -22,28 +22,38 @@ Recording donations in B1 Admin is done through the Batches system. You create a
 ## Creating a Batch and Adding Donations
 
 1. In **B1 Admin**, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Donations**, and click **Batches**.
-2. Click **Add Batch**.
+2. Click **Add Batch** at the top of the page.
 3. Enter a name for the batch (e.g., "Sunday Offering - Jan 5") and select the date. Click **Save**.
 4. Your new batch appears in the list showing zero donations and $0.00.
 5. Click on the **batch name** to open it.
 
 ## Entering Individual Donations
 
-1. In the batch detail page, type the donor's name in the **search field** to find them.
-2. After selecting a person, the donation entry form appears with fields for **Date**, **Payment Method**, **Fund**, **Amount**, and **Check Number**.
-3. Fill in the details and click **Add Donation**.
-4. The donation is added to the table below, and the form resets so you can enter the next one.
+1. On the batch detail page, the donation entry panel appears beside the donations list. Under **Select Person or Anonymous**, type the donor's name in the search field to find them, or click **Anonymous**. (Clicking **Add Donation** at the top of the page jumps to this panel.)
+2. After selecting a person, the entry form shows fields for **Date**, **Method** (Check, Cash, Card, or In-Kind), **Fund**, **Notes**, **Amount**, and **Check #** (or **Last 4 digits** for card gifts). Click **Change** next to the donor's name to pick someone else.
+3. Fill in the details and click **Add Donation** (or press Enter).
+4. The donation is added to the donations list, and the form resets so you can enter the next one.
 
 :::tip
 You can quickly enter multiple donations in a row without leaving the batch page. The form resets after each entry so you can move through a stack of checks or envelopes efficiently.
 :::
 
+## Logging a Gift from a Person's Record
+
+To record a single gift without opening a batch, open the donor's record in **People** and click **Log a gift** (in the giving summary, or on the person's giving view).
+
+1. Set the **Date** and **Amount**.
+2. Choose the **Fund** and **Method** (Check, Cash, Card, or In-Kind), and enter the **Check #** or **Last 4 digits** if needed.
+3. Optionally add **Notes**, then click **Save**.
+
+The gift is saved to the batch for that date. If no batch exists for that date yet, one is created for you, named with the date.
+
 ## Splitting a Donation Across Multiple Funds
 
 Sometimes a single donor gives to more than one fund in one transaction. To handle this:
 
-1. Click the **Edit** button on the donation row.
-2. In the edit form, add amounts to different funds. The total will automatically calculate from the individual fund amounts.
+1. Below the entry panel, click the **full donation editor** link (or click **Edit** on an existing donation row).
+2. In the full editor, add amounts to different funds. The total will automatically calculate from the individual fund amounts.
 3. Click **Save** to update the donation.
 
 :::info
@@ -55,7 +65,7 @@ Splitting donations across funds is common when a donor writes a single check de
 To edit a donation, click the **Edit** button on its row in the batch. You can change the date, amount, fund, payment method, or any other detail. Click **Save** when you are done.
 
 :::tip
-The batch page header updates automatically to show the total number of donations and the combined dollar amount as you add or edit entries. Use this to reconcile against your deposit slip.
+The line under the batch name at the top of the page updates automatically to show the batch date, the number of gifts, and the combined dollar amount as you add or edit entries. Use this to reconcile against your deposit slip.
 :::
 
 ## Refunding a Donation

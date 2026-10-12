@@ -26,7 +26,7 @@ Listas de reprodução permitem que você organize seus sermões em séries ou c
 
 ## Criando uma Lista de Reprodução
 
-1. Clique no botão **Criar Primeira Lista de Reprodução** (se você não tiver listas de reprodução ainda) ou clique no botão **Adicionar** (+) no cabeçalho do painel **Listas de Reprodução**.
+1. Clique no botão **Criar Primeira Lista de Reprodução** (se você não tiver listas de reprodução ainda) ou clique no botão **Adicionar lista de reprodução** no painel **Listas de Reprodução**.
 2. Digite um **nome** para a lista de reprodução -- por exemplo, o título da série de sermões como "Fundações da Fé" ou "Verão nos Salmos".
 3. Adicione uma **descrição** para dar aos visitantes uma breve visão geral da série.
 4. Defina uma **data de publicação** para controlar quando a lista de reprodução fica visível.

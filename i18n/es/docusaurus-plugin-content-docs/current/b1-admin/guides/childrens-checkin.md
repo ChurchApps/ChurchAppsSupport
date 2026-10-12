@@ -53,7 +53,7 @@ Sigue la guía [Configuración de asistencia](../attendance/setup.md) para:
 
 1. Agregar tu campus (por ejemplo, "Campus Principal")
 2. Agregar un servicio (por ejemplo, "Domingo por la Mañana")
-3. Configurar el horario del servicio (por ejemplo, "9:00 AM")
+3. Configurar el horario del servicio (por ejemplo, "9:00 AM") y, opcionalmente, un [horario de registro](../attendance/setup.md#setting-a-check-in-schedule) para que el registro se abra automáticamente antes de cada servicio y se cierre después de este
 4. Asignar tus grupos infantiles al servicio
 
 ## Paso 4: Configurar la aplicación de registro

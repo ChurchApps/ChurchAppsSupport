@@ -27,7 +27,7 @@ På siden Blogg kan du publisere nyheter, oppdateringer og andakter på kirkens 
 ## Legge til et innlegg
 
 1. Klikk på **Legg til innlegg** øverst til høyre.
-2. Skriv inn en **Tittel**. En nettvennlig slug genereres automatisk mens du skriver -- du kan redigere den direkte hvis du vil ha en annen adresse.
+2. Skriv inn en **Tittel**. En nettvennlig **Webadresse** (slug) genereres automatisk mens du skriver -- du kan redigere den direkte hvis du vil ha en annen adresse.
 3. Legg til et **Utdrag** -- et kort sammendrag som vises i innleggsoversikten, i metabeskrivelser og i RSS-strømmen. Hvis du lar det stå tomt, genereres det automatisk fra begynnelsen av innholdet.
 4. Skriv innleggsteksten i redigeringsfeltet **Innhold** med Markdown. Klikk på **Forhåndsvis** for å se hvordan det ferdige innlegget blir seende ut.
 5. Velg en **Kategori** (velg en eksisterende eller skriv inn en ny) og eventuelle **Stikkord** adskilt med komma.
@@ -49,9 +49,9 @@ Hvert innlegg i oversikten har én av tre statuser:
 
 ## Redigere, forhåndsvise og slette innlegg
 
-- Klikk på ikonet **Rediger** ved siden av et innlegg for å gjøre endringer.
-- Klikk på ikonet **Vis** (vises på publiserte innlegg) for å åpne det live innlegget på nettstedet i en ny fane.
-- Klikk på ikonet **Slett** for å fjerne et innlegg permanent.
+- Klikk på **Rediger** ved siden av et innlegg for å gjøre endringer.
+- Klikk på **Vis på nettstedet** (vises på publiserte innlegg) for å åpne det live innlegget på nettstedet i en ny fane.
+- Klikk på **Slett** for å fjerne et innlegg permanent.
 
 ## Slik ser besøkende bloggen din
 

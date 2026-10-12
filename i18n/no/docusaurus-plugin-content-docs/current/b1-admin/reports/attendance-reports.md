@@ -23,7 +23,7 @@ B1 Admin har tre oppmøterapporter som hjelper deg å forstå hvordan folk engas
 
 Rapporten Oppmøtetrend viser hvordan oppmøtet endrer seg over tid for gudstjenestene dine.
 
-1. Gå direkte til **admin.b1.church/reports/attendanceTrend** i nettleseren (rapporter har ingen oppføring i navigasjonsmenyen — det enkleste er å lage et bokmerke for adressen). Den samme rapporten finnes også i fanen **Oppmøtetrend** på siden Oppmøte.
+1. Gå direkte til **admin.b1.church/reports/attendanceTrend** i nettleseren (rapporter har ingen oppføring i navigasjonsmenyen — det enkleste er å lage et bokmerke for adressen). Den samme rapporten finnes også på siden Oppmøte: klikk på **Alle år**, og velg deretter fanen **Oppmøtetrend**.
 2. Velg eventuelt en **Menighet**, **Gudstjeneste**, **Gudstjenestetidspunkt** eller **Gruppe** for å filtrere resultatene.
 3. Angi **Startdato** og **Sluttdato**. Som standard dekker rapporten det siste året, fra ett år siden til og med i dag, og sluttdatoen er med i sin helhet. Klikk på **Kjør rapport**.
 4. Rapporten viser et stolpediagram og en tabell over totalt antall besøk per uke. Hver uke er merket med datoen for ukens søndag, og kolonnen **Øktdatoer** i tabellen viser de faktiske datoene i uken som hadde oppmøte (for eksempel «9/27, 9/30»).
@@ -34,7 +34,7 @@ Denne rapporten er nyttig for å oppdage mønstre som sesongbaserte nedganger, v
 
 Rapporten Gruppeoppmøte viser hvem som var til stede på hver gruppesamling i en datoperiode.
 
-1. Gå direkte til **admin.b1.church/reports/groupAttendance** i nettleseren, eller åpne fanen **Gruppeoppmøte** på siden Oppmøte.
+1. Gå direkte til **admin.b1.church/reports/groupAttendance** i nettleseren, eller klikk på **Alle år** på siden Oppmøte og velg fanen **Gruppeoppmøte**.
 2. Velg eventuelt en **Menighet** og en **Gudstjeneste**.
 3. Angi **Startdato** og **Sluttdato**. Som standard dekker rapporten fra siste søndag til og med i dag, og sluttdatoen er med i sin helhet.
 4. Klikk på **Kjør rapport**.

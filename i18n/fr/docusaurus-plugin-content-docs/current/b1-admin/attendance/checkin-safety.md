@@ -21,7 +21,7 @@ B1 comprend un ensemble de contrôles de sécurité pour enfants lors du pointag
 
 ## Capacité de la Salle et Fermeture d'une Salle
 
-Chaque salle de pointage (groupe) peut imposer ses propres limites. Ouvrez le groupe, cliquez sur l'**icône crayon** pour modifier ses paramètres, et trouvez la section **Capacité de Pointage** :
+Chaque salle de pointage (groupe) peut imposer ses propres limites. Ouvrez le groupe, cliquez sur **Modifier** pour modifier ses paramètres, et trouvez la section **Capacité de Pointage** :
 
 - **Capacité** -- Le nombre maximal de personnes qui peuvent être pointées dans cette salle à la fois. Lorsque la salle est pleine, le pointage y est bloqué et la borne nomme la salle pleine.
 - **Capacité des Invités** -- Un plafond facultatif séparé sur le nombre d'invités que la salle peut accueillir.

@@ -13,13 +13,13 @@ La sezione Calendari in B1 Admin ti consente di creare calendari curati per la t
 ## Visualizzazione dei Tuoi Calendari
 
 1. In B1 Admin, apri il [Menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Calendari**, e fai clic su **Calendari**.
-2. La pagina Calendari elenca tutti i tuoi calendari con il loro nome e stato.
-3. Ogni calendario mostra anche i gruppi ad esso associati.
+2. La pagina Calendari elenca tutti i tuoi calendari in una tabella con il loro nome e stato. Usa la casella **Trova un calendario** per filtrare l'elenco.
+3. Ogni riga ha un collegamento **Gestisci Eventi** per aprire il calendario e un collegamento **Modifica** per rinominarlo o eliminarlo.
 
 ## Quello che Puoi Fare
 
-- **Aggiungi un nuovo calendario** -- Fai clic sul pulsante Aggiungi per creare un calendario per un ministero specifico, tipo di evento o scopo. Vedi [Creazione di Calendari](creating-calendars) per istruzioni passo dopo passo.
-- **Modifica un calendario** -- Fai clic su qualsiasi calendario per aprirlo e gestire quali gruppi sono inclusi in esso.
+- **Aggiungi un nuovo calendario** -- Fai clic su **Aggiungi Calendario** in alto nella pagina per creare un calendario per un ministero specifico, tipo di evento o scopo. Vedi [Creazione di Calendari](creating-calendars) per istruzioni passo dopo passo.
+- **Modifica un calendario** -- Fai clic su **Gestisci Eventi** su qualsiasi calendario per aprirlo e gestire quali gruppi sono inclusi in esso.
 - **Pubblica calendari** -- I calendari possono essere visualizzati sul tuo sito web B1.church in modo che i visitatori possano vedere gli imminenti eventi nella tua chiesa.
 - **Crea calendari curati** -- Estrai gli eventi da più gruppi in una singola visualizzazione di calendario per un quadro completo di tutto ciò che accade nella tua chiesa. Vedi [Calendario Curato](curated-calendar) per i dettagli.
 - **Gestisci stanze e risorse** -- Traccia spazi prenotabili e attrezzature e gestisci le richieste di approvazione. Vedi [Stanze e Risorse](rooms-resources) per i dettagli.

@@ -24,8 +24,8 @@ Il processo di importazione utilizza un flusso di lavoro in due fasi: prima visu
 
 ## Importare le transazioni
 
-1. In **B1 Admin**, naviga su **Donazioni > Lotti**.
-2. Clicca il link **Stripe Import** in fondo alla pagina Lotti.
+1. In **B1 Admin**, naviga su **Donazioni > Importazione Stripe**. (Puoi anche fare clic su **Importa transazioni Stripe mancanti** in alto nella pagina **Lotti**.)
+2. Si apre la pagina **Importazione Stripe**.
 3. Seleziona un **intervallo di date** per le transazioni che desideri importare.
 4. Clicca **Preview** per eseguire un controllo di prova.
 

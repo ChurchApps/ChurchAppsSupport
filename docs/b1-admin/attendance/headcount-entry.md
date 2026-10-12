@@ -19,13 +19,13 @@ Headcounts let you record a simple total attendance number -- for a service, a s
 </div>
 
 :::info
-Headcounts are a total-only alternative to [Recording Attendance](recording-attendance.md). If you need to know **who** attended -- for example, to follow up with people who haven't been back -- keep using named session attendance on a group's Sessions tab. Headcounts only store a number.
+Headcounts are a total-only alternative to [Recording Attendance](recording-attendance.md). If you need to know **who** attended -- for example, to follow up with people who haven't been back -- keep using named session attendance in a group's Sessions. Headcounts only store a number.
 :::
 
 ## Recording a Headcount
 
 1. Open **B1 Admin**, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **People**, and click **Attendance**.
-2. Select the **Headcounts** sub-tab.
+2. Click **Enter headcount** in the left column.
 3. Fill in the form:
    - **Service** *(required)*
    - **Service Time** -- leave blank to record a total across all service times
@@ -34,14 +34,14 @@ Headcounts are a total-only alternative to [Recording Attendance](recording-atte
    - **Headcount** -- the total number of people present
 4. Click **Save**.
 
-The **Recent Headcounts** table on the right lists your last several entries with their date, service, service time, group, and count. Click a row to load it back into the form if you need to correct or delete it.
+The **Recent Headcounts** table beside the form lists your last several entries with their date, service, service time, group, and count. Click a row to load it back into the form if you need to correct or delete it.
 
 ## Headcount Trend Report
 
-1. From the same **Attendance** page, select the **Headcount Trend** tab.
+1. From the same **Attendance** page, click **All years** in the left column, then select the **Headcount Trend** tab.
 2. Use the **Campus**, **Service**, **Service Time**, and **Group** filters to narrow the report.
 
-The report shows your recorded headcounts summed by week, as both a line chart and a table -- the same report style used by the [Attendance and Groups trend tabs](tracking-attendance.md).
+The report shows your recorded headcounts summed by week, as both a line chart and a table -- the same report style used by the [Attendance Trend and Group Attendance tabs](tracking-attendance.md). Headcounts entered for the current week also appear under **Headcounts this week** on the main Attendance page.
 
 ## Related Pages
 

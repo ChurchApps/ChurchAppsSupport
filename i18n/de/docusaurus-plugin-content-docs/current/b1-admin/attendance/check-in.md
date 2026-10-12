@@ -25,7 +25,7 @@ Die B1 Checkin-App verbindet sich mit Ihrem B1 Admin-Anwesenheits-Setup. Wenn si
 
 ## Anmeldung einrichten
 
-1. **Konfigurieren Sie zunächst Ihre Anwesenheitsstruktur.** Gehen Sie in B1 Admin zu **Teilnahme > Einrichtung** und stellen Sie sicher, dass Ihre Standorte, Gottesdienstzeiten und Gruppen vorhanden sind. Die Anmelde-App basiert auf dieser Konfiguration. Weitere Informationen finden Sie unter [Anwesenheitseinrichtung](setup.md).
+1. **Konfigurieren Sie zunächst Ihre Anwesenheitsstruktur.** Gehen Sie in B1 Admin zu **Personen > Teilnahme** und klicken Sie auf **Einrichtung**, um sicherzustellen, dass Ihre Standorte, Gottesdienstzeiten und Gruppen vorhanden sind. Die Anmelde-App basiert auf dieser Konfiguration. Optional können Sie jeder Gottesdienstzeit einen [Anmeldeplan](setup.md#setting-a-check-in-schedule) zuweisen, damit die Anmeldung jede Woche automatisch öffnet und schließt. Weitere Informationen finden Sie unter [Anwesenheitseinrichtung](setup.md).
 2. **Installieren Sie die B1 Checkin-App** auf den Geräten, die Sie verwenden möchten. Die App ist auf den folgenden Plattformen verfügbar:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
@@ -110,7 +110,7 @@ Um die QR-Code-Anzeige einzuschalten:
 3. Aktivieren Sie **QR-Gastregistrierung** und klicken Sie auf **Speichern**.
 
 :::note
-Diese Einstellung befindet sich unter **Mobil > B1 CheckIn** (dieselbe Seite wie die Karte **Kiosk-Design**), nicht unter Teilnahme.
+Diese Einstellung befindet sich unter **Mobil > B1 CheckIn** (dieselbe Seite wie die Karte **Kiosk-Design**), nicht unter Teilnahme. Die Aktion **Kiosk** auf der Teilnahmeseite enthält einen Link zu dieser Seite.
 :::
 
 ### Registrierungslink freigeben
@@ -126,4 +126,4 @@ Fügen Sie den Registrierungslink zur Seite "Plan Your Visit" oder "I'm New" Ihr
 
 ## Was wird aufgezeichnet
 
-Jede Anmeldung erstellt einen Teilnahmeeintrag in B1 Admin. Sie können diese Einträge auf den Registerkarten [Teilnahme](tracking-attendance.md) und [Gruppen](../groups/group-members.md) genau wie manuell eingegebene Teilnahmen anzeigen. Es gibt keinen Unterschied in der Anzeige der Daten – beide Methoden führen zu denselben Berichten.
+Jede Anmeldung erstellt einen Teilnahmeeintrag in B1 Admin. Sie können diese Einträge auf der Seite [Teilnahme](tracking-attendance.md) und in den Sitzungen jeder [Gruppe](../groups/group-members.md) genau wie manuell eingegebene Teilnahmen anzeigen. Es gibt keinen Unterschied in der Anzeige der Daten – beide Methoden führen zu denselben Berichten.

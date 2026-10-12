@@ -28,7 +28,7 @@ Organize seus sermões em séries ou coleções. As playlists facilitam para sua
 
 ### Horários de Transmissão ao Vivo
 
-Configure o horário de transmissão ao vivo da sua igreja. Configure cultos semanais recorrentes ou eventos únicos, gerencie configurações de chat e vídeo, e controle quando sua transmissão vai ao ar. Os visitantes verão o próximo horário de culto agendado na sua página de transmissão. Veja [Transmissão ao Vivo](live-streaming) para instruções de configuração.
+Configure o horário de transmissão ao vivo da sua igreja. Configure cultos semanais recorrentes ou eventos únicos, gerencie configurações de chat e vídeo, e controle quando sua transmissão vai ao ar. Os visitantes verão o próximo horário de culto agendado na sua página de transmissão. Uma página separada **Configurações** em **Sermões** controla as abas (chat, oração e links personalizados) exibidas ao lado da sua transmissão ao vivo. Veja [Transmissão ao Vivo](live-streaming) para instruções de configuração.
 
 ### Importação em Massa
 

@@ -23,7 +23,7 @@ B1 Transfer 도구는 기존 데이터를 B1로 가져오기를 쉽게 만듭니
 
 1. **B1 Admin**에 로그인합니다.
 2. [Jump 메뉴](../introduction.md#getting-around-with-the-jump-menu)(왼쪽 위의 검색 창)를 열고, **설정**을 확장한 후 **설정**을 클릭합니다.
-3. 페이지 헤더의 오른쪽 위에서 **가져오기/내보내기** 버튼을 클릭합니다.
+3. 왼쪽 설정 메뉴의 교회 이름 아래에 있는 **가져오기/내보내기** 링크를 클릭합니다.
 4. 이것은 **B1 Transfer** 도구를 새 탭에서 [transfer.b1.church](https://transfer.b1.church)에 엽니다.
 
 Transfer 도구는 네 단계를 거칩니다: 소스, 미리보기, 대상, 그리고 실행.

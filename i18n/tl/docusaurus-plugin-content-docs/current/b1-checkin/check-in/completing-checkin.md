@@ -31,6 +31,7 @@ Iyon lang ang kailangan. Naitala na ang attendance ng iyong pamilya.
 Kung nakonpigura ng iyong simbahan ang [safety limits](../../b1-admin/attendance/checkin-safety) sa mga kuwarto nito, sinusuri ito ng server bago mag-save:
 
 - Kung ang napiling kuwarto ay **puno o sarado**, hindi sumusunod ang check-in at binabanggit ng app ang pangalan ng kuwarto upang makapili ka ng iba.
+- Kung ang service time ay may [check-in schedule](../../b1-admin/attendance/setup#setting-a-check-in-schedule) at wala pa sa bukas nitong check-in window sa sandaling ito, hindi rin tatanggapin ang check-in sa mga kuwarto ng service time na iyon. Ipinapakita ng screen na **Can't check in yet** ang kuwarto bilang "room is full or closed"; i-tap ang **Change Rooms** para pumili ng ibang service time o grupo.
 - Kung **kulang sa mga boluntaryo** ang isang kuwarto ng mga bata para sa kanyang ratio, magpapakita ang app ng isang babala na maaaring kumpirmahin ng isang staff member upang magpatuloy, o ganap na binablokan ang check-in -- depende sa kung paano nakonpigura ng iyong simbahan ang ratio enforcement.
 
 ## Label Printing

@@ -72,7 +72,7 @@ Los miembros del formulario con roles de **Admin** o **View Only** pueden accede
 :::
 
 :::tip
-Si un formulario **Stand Alone** está configurado para crear un registro de persona, cualquier envío que coincida con una persona existente también aparece en la pestaña **Forms** de esa persona en la sección Personas; no solo formularios de tipo Personas.
+Si un formulario **Stand Alone** está configurado para crear un registro de persona, cualquier envío que coincida con una persona existente también aparece en la sección **Forms** de la página de esa persona en People; no solo formularios de tipo Personas.
 :::
 
 ## Próximos pasos

@@ -1,68 +1,69 @@
 ---
-title: "सूचियां"
+title: "सहेजी गई सूचियाँ"
 ---
 
-# Saved Lists
+# सहेजी गई सूचियाँ {#saved-lists}
 
 <div class="article-intro">
 
-**Saved Lists** let you store a search query under a name and re-run it with one click at any time. Build a list once — "Active Members in Campus North," "Visitors in the last 90 days," or any advanced filter — and it stays in the **Saved Lists** panel on the People page so you never have to rebuild the query again.
+**Saved Lists** आपको किसी search query को एक नाम के तहत सहेजने और उसे किसी भी समय एक क्लिक में फिर से चलाने देती हैं। एक बार सूची बनाएँ — "Active Members in Campus North," "पिछले 90 दिनों के Visitors," या कोई भी advanced filter — और वह People पेज के सबसे ऊपर बनी रहती है, ताकि आपको query दोबारा बनानी न पड़े।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- Run at least one search in the People section so you have results to save. See [Searching People](./searching-people.md) or [AI Search](./ai-search.md).
+- सहेजने के लिए परिणाम पाने हेतु People सेक्शन में कम से कम एक search चलाएँ। देखें [Searching People](./searching-people.md) या [AI Search](./ai-search.md)।
 
 </div>
 
-## Saving a Search as a List
+## Search को सूची के रूप में सहेजना {#saving-a-search-as-a-list}
 
-1. Run a search on the **People** page — a quick search, an AI search, or an advanced filter search.
-2. When results appear, a **Save as List** button (bookmark icon) shows in the People page header.
-3. Click **Save as List**.
-4. Enter a **Name** for the list (required).
-5. Optionally enter a **Category** to group related lists together in the **Saved Lists** panel (for example, "Outreach" or "Membership").
-6. Click **Save**.
+1. **People** पेज पर एक search चलाएँ — quick search, AI search, या advanced filter search।
+2. जब परिणाम दिखें, तो People पेज के हेडर में **Save as List** बटन दिखता है।
+3. **Save as List** पर क्लिक करें।
+4. **List Name** दर्ज करें (अनिवार्य)।
+5. वैकल्पिक रूप से, संबंधित सूचियों को एक साथ समूहित करने के लिए **Category** दर्ज करें (उदाहरण के लिए, "Outreach" या "Membership")।
+6. **Who can see this list** के तहत **All staff** या **Only me** चुनें।
+7. **Save** पर क्लिक करें।
 
-The list is now saved to your church's account and will appear in the **Saved Lists** panel on the left side of the People page.
+सूची अब सहेजी जा चुकी है और People पेज के ऊपर, **Everyone** के बगल में सहेजी गई सूचियों की पंक्ति में एक बटन के रूप में दिखती है। **Only me** वाली सूचियों पर एक छोटा lock icon दिखता है।
 
 :::info
-Lists are shared across your church — anyone with People access can see and load them. Only staff with the appropriate permission can rename or delete lists.
+**All staff** पर सेट सूचियाँ पूरे चर्च में साझा होती हैं — People की पहुँच वाला कोई भी स्टाफ सदस्य उन्हें देख और लोड कर सकता है। केवल उचित permission वाले स्टाफ ही सूचियों को बदल या हटा सकते हैं।
 :::
 
-## Loading a Saved List
+## सहेजी गई सूची लोड करना {#loading-a-saved-list}
 
-In the **Saved Lists** panel on the left side of the People page, click any list name. The search re-runs instantly with the stored query, updating the results table.
+People पेज के ऊपर, किसी भी सूची के नाम पर क्लिक करें। Search सहेजी गई query के साथ तुरंत फिर से चलेगा और परिणाम अपडेट करेगा। अपनी पूरी directory पर वापस जाने के लिए **Everyone** पर क्लिक करें।
 
-Lists are grouped by category (if you assigned one), with uncategorized lists appearing last.
+सूचियाँ श्रेणी के अनुसार समूहित होती हैं (यदि आपने कोई श्रेणी दी हो), और बिना श्रेणी वाली सूचियाँ सबसे अंत में दिखती हैं।
 
 :::tip
-Lists are **live queries**, not snapshots. Every time you load a list, the search runs fresh against your current data, so new people who now match the criteria will appear.
+सूचियाँ **लाइव queries** होती हैं, snapshots नहीं। हर बार जब आप कोई सूची लोड करते हैं, search आपके वर्तमान डेटा पर नए सिरे से चलता है, इसलिए जो नए लोग अब मानदंड पर खरे उतरते हैं, वे दिखाई देंगे।
 :::
 
-## Renaming and Deleting Lists
+## सूचियों का नाम बदलना और हटाना {#renaming-and-deleting-lists}
 
-Staff with manage permission can rename or delete any list directly from the Saved Lists panel.
+Manage permission वाले स्टाफ People पेज से किसी भी सूची का नाम बदल सकते हैं या उसे हटा सकते हैं। पहले सूची पर क्लिक करके उसे लोड करें — फिर उसके नाम के बगल में दो icons दिखेंगे:
 
-- Click the **pencil icon** next to a list name to rename it.
-- Click the **trash icon** to delete it (you will be asked to confirm).
+- उसका नाम या श्रेणी, साझाकरण और अन्य सेटिंग्स बदलने के लिए **List Settings** (gear) icon पर क्लिक करें।
+- उसे हटाने के लिए **Delete** (trash) icon पर क्लिक करें (आपसे पुष्टि माँगी जाएगी)।
 
-## Use Cases
+## उपयोग के मामले {#use-cases}
 
-| Scenario | How to build the list |
+| परिदृश्य | सूची कैसे बनाएँ |
 |---|---|
-| All visitors | Advanced search: Membership Status = Visitor |
-| Members at a specific campus | Advanced search: Campus = [your campus] |
-| People without an email address | Advanced search: Email is empty |
-| Volunteers with an expired background check | Advanced search: [Custom Field](../settings/custom-fields.md) "Background check expires" is before today |
-| Results from an AI question | Ask a question in AI Search, then save |
+| सभी visitors | Advanced search: Membership Status = Visitor |
+| किसी विशेष campus के members | Advanced search: Campus = [आपका campus] |
+| बिना email पते वाले लोग | Advanced search: Email is empty |
+| जिन volunteers की background check की अवधि समाप्त हो गई है | Advanced search: [Custom Field](../settings/custom-fields.md) "Background check expires" is before today |
+| AI प्रश्न के परिणाम | AI Search में कोई प्रश्न पूछें, फिर सहेजें |
 
-## Related Articles
+## संबंधित लेख {#related-articles}
 
-- [Searching People](./searching-people.md) — quick search and column customization
-- [AI Search](./ai-search.md) — natural-language queries you can save as lists
-- [Custom Fields](../settings/custom-fields.md) — define your own person fields, then filter and save lists on them
-- [Demographics](./demographics.md) — drill a demographic chart into a People filter, then save it as a list
-- [Bulk Editing](./bulk-editing.md) — after loading a list, bulk-update all its members at once
+- [Searching People](./searching-people.md) — quick search और column customization
+- [AI Search](./ai-search.md) — प्राकृतिक-भाषा queries जिन्हें आप सूचियों के रूप में सहेज सकते हैं
+- [Custom Fields](../settings/custom-fields.md) — अपने व्यक्ति fields परिभाषित करें, फिर उन पर filter करके सूचियाँ सहेजें
+- [Demographics](./demographics.md) — किसी जनसांख्यिकीय चार्ट को People filter में बदलें, फिर उसे सूची के रूप में सहेजें
+- [Bulk Editing](./bulk-editing.md) — कोई सूची लोड करने के बाद, उसके सभी सदस्यों को एक साथ बल्क में अपडेट करें

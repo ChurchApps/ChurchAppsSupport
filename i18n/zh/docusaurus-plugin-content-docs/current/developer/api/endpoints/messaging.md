@@ -33,6 +33,10 @@ title: "消息端点"
 
 `contentType: "person"`（人员记录上的笔记选项卡）或 `contentType: "personConfidential"`（机密笔记部分）的对话在每个读取和写入路径上进行门控，包括上述公开路由，对这些内容类型返回 `401`。`person` 需要 MembershipApi **People / Edit** 权限；`personConfidential` 需要 **People / View Confidential Notes**。对于作用域 API 密钥，`people:write` 承载两个操作（密钥的用户必须仍持有基础角色权限）。
 
+### 工作流卡片笔记访问控制 {#workflow-card-notes-access-control}
+
+带有 `contentType: "workflowCard"`（工作流卡片上的笔记，其中 `contentId` 是卡片的任务 ID）的对话，只能由有权打开该卡片的人读取和写入：拥有 DoingApi **Tasks / View** 权限的用户，或卡片所分配给、由其创建或与其相关的人员或小组。其他人在每个读取路径上（包括上述公开路由）都会收到 `401`。卡片的对话通过卡片本身使用 `POST /doing/tasks/:id/conversation` 附加（请求体 `{ "conversationId": "..." }`；首个附加的对话生效），卡片的编辑者及其负责人可以调用该接口。
+
 ### 示例：启动对话
 
 ```
@@ -168,12 +172,11 @@ Authorization: Bearer <token>
 
 基础路径：`/messaging/notificationpreferences`
 
-扩展标准 CRUD。基类提供 POST `/`（创建或更新，不需要权限）。
-
 | 方法 | 路径 | 认证 | 权限 | 描述 |
 |------|------|------|------|------|
-| POST | `/` | JWT | — | 创建或更新通知偏好设置（来自 CRUD 基类） |
+| GET | `/categories` | JWT | — | 列出通知类别及其默认和允许的渠道 |
 | GET | `/my` | JWT | — | 加载当前用户的通知偏好设置（如果不存在则自动创建默认值） |
+| POST | `/` | JWT | — | 保存当前用户的偏好设置。请求体可包含 `allowPush`、`allowSms`、`emailFrequency`、`masterMute`、`quietHoursStart`、`quietHoursEnd`、`timeZone`、`maxPushPerDay`，以及可选的 `overrides: [{ categoryKey, channel, optedIn }]`（渠道可为 `push`、`email`、`in_app` 或 `sms`；锁定的类别会被忽略）。`allowSms` 是成员接收短信提醒的同意选项。仍接受旧版的行数组请求体 |
 
 ## 连接
 
@@ -254,6 +257,9 @@ Authorization: Bearer <token>
 | 方法 | 路径 | 认证 | 权限 | 描述 |
 |------|------|------|------|------|
 | GET | `/providers` | JWT | — | 加载教会的短信提供商（凭据被屏蔽） |
+| GET | `/status` | JWT | — | `{ enabled }` —— 教会是否有已启用的短信提供商。任何已登录的教会用户均可访问；仅在可以发送短信时用于显示**短信**选项 |
+| GET | `/inboundUrl` | JWT | `texting.send` or `settings.edit` | `{ url }` —— 教会的入站（STOP）webhook URL，用于粘贴到提供商中 |
+| POST | `/inbound/:churchId/:token` | 公开 | — | 提供商入站消息 webhook。`token` 是教会 ID 的 HMAC。内容恰好为停止词（`STOP`、`STOPALL`、`UNSUBSCRIBE`、`CANCEL`、`END`、`QUIT`、`OPTOUT`、`REVOKE`）的回复会将每个匹配的人标记为 `optedOut` 并关闭其 `allowSms`。返回 `{ optedOut: <count> }`；其他回复返回 `{ optedOut: 0 }` |
 | GET | `/preview/:groupId` | JWT | — | 预览小组短信的接收者（符合条件、已退出、无电话计数） |
 | GET | `/sent` | JWT | — | 加载教会的所有已发送短信记录 |
 | GET | `/sent/:id/details` | JWT | — | 加载带有每个接收者传递日志的已发送短信 |

@@ -22,12 +22,14 @@ Percorso base: `/doing/plans`
 | GET | `/:id` | JWT | — | Ottieni un piano per ID |
 | GET | `/ids?ids=` | JWT | — | Ottieni più piani per ID separati da virgola |
 | GET | `/types/:planTypeId` | JWT | — | Ottieni i piani per tipo di piano |
+| GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + modifica ministero | Anteprima dei **Text Volunteers** dell'overview del servizio: `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }` per i volontari assegnati nell'intervallo (uno per persona, esclusi quelli che hanno rinunciato e i numeri mancanti, numeri condivisi deduplicati, limitato a 200) |
 | GET | `/presenter` | JWT | — | Ottieni i piani per i prossimi 7 giorni (vista presentatore) |
 | GET | `/public/current/:planTypeId` | Pubblico | — | Ottieni il piano corrente per un tipo di piano |
 | GET | `/public/signup/:churchId` | Pubblico | — | Piani aperti all'auto-iscrizione, ciascuno con le sue posizioni di auto-iscrizione (più `filledCount` degli incarichi Accepted/Unconfirmed) e gli orari. Nessun nome di volontario |
 | GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` per le posizioni di auto-iscrizione del piano (nomi visualizzati degli assegnatari Accepted/Unconfirmed). Restituisce `[]` a meno che `showVolunteerNames` del piano non sia attivo |
 | POST | `/` | JWT | — | Crea o aggiorna piani (accetta oggetto singolo o array) |
-| POST | `/copy/:id` | JWT | — | Copia un piano includendo posizioni, orari, assegnazioni ed elementi dell'ordine del servizio. Il body include `copyMode` ("none", "positions", "all") e `copyServiceOrder` (booleano). `notes` e `signupDeadlineHours` vengono riportati dal piano di origine a meno che il body non li fornisca |
+| POST | `/copy/:id` | JWT | Modifica ministero | Copia un piano includendo posizioni, orari, assegnazioni ed elementi dell'ordine del servizio. Il body include `ministryId`, `serviceDate`, `copyMode` ("none", "positions", "all") e `copyServiceOrder` (booleano). Senza `targetPlanId` viene creato un nuovo piano e `notes`, `signupDeadlineHours`, `showVolunteerNames` e `autoReplaceOnDecline` vengono riportati dal piano di origine a meno che il body non li fornisca. Con `targetPlanId`, la copia riempie invece quel piano esistente (il chiamante deve poterlo modificare). L'opzione **Repeat weekly** di B1Admin chiama questo endpoint una volta per settimana, ogni volta copiando dal piano creato la settimana precedente |
+| POST | `/textRange` | JWT | `texting.send` + modifica ministero | Invia un messaggio a ogni volontario assegnato in un intervallo di date tramite il provider di messaggistica della chiesa. Body: `{ startDate, endDate, ministryId, planTypeId?, message }` (messaggio fino a 1600 caratteri; i campi unione vengono risolti per ogni destinatario). Restituisce i conteggi di anteprima più `recipientCount`, `successCount`, `failCount` e `error` (`no_provider` o `insufficient_credits`) quando l'invio si interrompe prima del previsto |
 | POST | `/autofill/:id` | JWT | — | Compila automaticamente le assegnazioni dei volontari per un piano. Body: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Elimina un piano e tutti gli orari, assegnazioni, posizioni ed elementi correlati |
 
@@ -176,10 +178,12 @@ Percorso base: `/doing/tasks`
 |--------|----------|------|----------|-------------|
 | GET | `/` | JWT | — | Ottieni le attività aperte per l'utente corrente |
 | GET | `/:id` | JWT | — | Ottieni un'attività per ID |
+| GET | `/:id/contact` | JWT | Può visualizzare la scheda | Contatto della persona a cui si riferisce una scheda del workflow: `{ personId, displayName, mobilePhone, email }`. Permette a un assegnatario senza accesso a Persone di raggiungere la persona |
 | GET | `/closed` | JWT | — | Ottieni le attività chiuse per l'utente corrente |
 | GET | `/timeline?taskIds=` | JWT | — | Ottieni i dati della timeline per le attività per ID attività separati da virgola |
 | GET | `/directoryUpdate/:personId` | JWT | — | Ottieni l'attività di aggiornamento directory per una persona |
 | POST | `/` | JWT | — | Crea o aggiorna attività. Aggiungi `?type=directoryUpdate` per gestire le attività di aggiornamento directory (carica automaticamente le foto) |
+| POST | `/:id/conversation` | JWT | `tasks.edit` o assegnatario della scheda | Collega la conversazione delle note alla scheda. Body: `{ conversationId }`. Vince la prima conversazione collegata; le chiamate successive restituiscono la scheda invariata |
 | POST | `/loadForGroups` | JWT | — | Carica le attività per gruppi specifici. Body: `{ groupIds: [], status: "Open" }` |
 
 ## Automazioni

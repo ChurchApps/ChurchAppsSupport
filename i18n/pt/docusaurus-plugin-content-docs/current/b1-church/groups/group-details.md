@@ -49,7 +49,10 @@ As abas disponíveis são:
 Se você é líder do grupo, tem capacidades de edição adicionais:
 
 - **Criar e editar eventos** -- Adicione eventos ao calendário do grupo a partir da aba **Eventos**. Ao criar um evento, você pode reservar salas e recursos junto com ele — selecione entre salas e recursos disponíveis, defina tempos opcionais de configuração e desmontagem, e a solicitação de reserva é automaticamente submetida para aprovação.
-- **Gerenciar recursos** -- Carregue arquivos (até 100 MB de armazenamento), adicione links ou delete recursos existentes.
+- **Editar eventos recorrentes** -- Ao abrir um evento recorrente para editá-lo, o B1 primeiro pergunta quais datas alterar: **Just this date**, **This and all following dates** ou **All dates**. Escolha uma opção e clique em **Save** para abrir o evento. Se você escolheu **Just this date**, o switch **Recurring** fica oculto e suas alterações (ou uma exclusão) se aplicam apenas àquela data.
+- **Definir lembretes de evento** -- Ao editar um evento existente, ative **Send reminders** para lembrar as pessoas antes de começar. Escolha quando eles são enviados, o **Time of Day**, **Who should be reminded?** e uma **Message** opcional, depois escolha **Push**, **Email** ou, se sua igreja tiver envio de textos configurado, **Text** em **Send By**. Textos só são enviados para pessoas que ativaram lembretes por texto em suas [Preferências de Notificação](../getting-started/notification-preferences.md).
+- **Gerenciar recursos** -- Carregue arquivos
+ (até 100 MB de armazenamento), adicione links ou delete recursos existentes.
 - **Rastrear presença** -- Registre presença para sessões do grupo a partir da aba **Presença**.
 
 Para alterar o nome, descrição ou lista de membros do grupo, use B1 Admin. Veja [Membros do Grupo](../../b1-admin/groups/group-members.md).

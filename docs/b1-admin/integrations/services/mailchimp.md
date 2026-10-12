@@ -37,7 +37,7 @@ The sync is **one-way** (B1 → Mailchimp) and only touches Mailchimp's standard
 
 ## Setup
 
-1. In B1Admin go to **Settings → Developer → Webhooks → Add Webhook**.
+1. In B1Admin go to **Settings → Developer → Webhooks → New Webhook**.
 2. Set **Connector Type** to **Mailchimp**.
 3. Paste your **Mailchimp API Key** and **Audience ID**. The key is stored encrypted and never shown again.
 4. The relevant events are pre-selected; uncheck any you don't want (e.g. leave person events on but skip group tags).

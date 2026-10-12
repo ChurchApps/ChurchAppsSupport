@@ -25,7 +25,7 @@ L'application B1 Checkin se connecte à votre configuration de présence B1 Admi
 
 ## Configuration de l'enregistrement
 
-1. **Configurez d'abord votre structure de présence.** Dans B1 Admin, allez à **Présence > Configuration** et assurez-vous que vos campus, heures de service et groupes sont en place. L'application d'enregistrement dépend de cette configuration. Voir [Configuration de la présence](setup.md) pour les détails.
+1. **Configurez d'abord votre structure de présence.** Dans B1 Admin, allez à **Personnes > Présence** et cliquez sur **Configuration** pour vous assurer que vos campus, heures de service et groupes sont en place. L'application d'enregistrement dépend de cette configuration. Vous pouvez également attribuer à chaque heure de service un [calendrier d'enregistrement](setup.md#setting-a-check-in-schedule) afin que l'enregistrement s'ouvre et se ferme automatiquement chaque semaine. Voir [Configuration de la présence](setup.md) pour les détails.
 2. **Installez l'application B1 Checkin** sur les appareils que vous prévoyez d'utiliser. L'application est disponible sur les plates-formes suivantes :
    - **iPad/iOS :** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung Tablets :** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
@@ -110,7 +110,7 @@ Pour activer l'affichage du code QR :
 3. Activez **Enregistrement des visiteurs par code QR** et cliquez sur **Enregistrer**.
 
 :::note
-Ce paramètre se trouve sous **Mobile > B1 CheckIn** (la même page que la carte **Thème du kiosque**), pas sous Présence.
+Ce paramètre se trouve sous **Mobile > B1 CheckIn** (la même page que la carte **Thème du kiosque**), pas sous Présence. L'action **Kiosque** de la page Présence contient un lien vers cette page.
 :::
 
 ### Partage du lien d'enregistrement
@@ -126,4 +126,4 @@ Ajoutez le lien d'enregistrement à la page "Planifier votre visite" ou "Je suis
 
 ## Ce qui est enregistré
 
-Chaque enregistrement crée un dossier de présence dans B1 Admin. Vous pouvez consulter ces dossiers sur les onglets [Présence](tracking-attendance.md) et [Groupes](../groups/group-members.md) tout comme les présences saisies manuellement. Il n'y a aucune différence dans la façon dont les données apparaissent -- les deux méthodes alimentent les mêmes rapports.
+Chaque enregistrement crée un dossier de présence dans B1 Admin. Vous pouvez consulter ces dossiers sur la page [Présence](tracking-attendance.md) et dans les sessions de chaque [groupe](../groups/group-members.md), tout comme les présences saisies manuellement. Il n'y a aucune différence dans la façon dont les données apparaissent -- les deux méthodes alimentent les mêmes rapports.

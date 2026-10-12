@@ -85,6 +85,7 @@ Vedi [Autenticazione e permessi](./authentication) per gli endpoint di login, re
 | POST | `/updateEmail` | JWT | — | Cambia l'indirizzo email dell'utente |
 | POST | `/updatePassword` | JWT | — | Cambia la password dell'utente (minimo 6 caratteri) |
 | POST | `/updateOptedOut` | JWT | — | Imposta lo stato di opt-out di una persona |
+| POST | `/sendInviteEmail` | JWT | People.Edit | Invia per email un invito a una persona di questa chiesa (`email`, `personName`, `contextName`). Il pulsante riporta **Sign Up** per una persona senza account e **Log In** per un utente esistente. Un utente che non ha mai effettuato l'accesso riceve invece un link **Set Your Password** che scade dopo 7 giorni. Conta nel limite giornaliero di email della chiesa (`429` quando raggiunto) |
 | GET | `/search?term=` | JWT | Server.Admin | Cerca tutti gli utenti per nome/email |
 | DELETE | `/` | JWT | — | Elimina l'account dell'utente corrente |
 

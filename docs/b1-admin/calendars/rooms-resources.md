@@ -20,7 +20,7 @@ Rooms and Resources let you track your church's bookable spaces and equipment. W
 
 ## Opening Rooms & Resources
 
-In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Calendars**, and click **Rooms & Resources**. The page has four tabs: **Rooms**, **Resources**, **Blockouts**, and **Templates**.
+In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Calendars**, and click **Rooms & Resources**. The page has four tabs: **Rooms**, **Resources**, **Blockouts**, and **Templates**. The add button at the top of the page changes to match the selected tab, and a **Find** box lets you filter the current list.
 
 ## Rooms
 
@@ -28,7 +28,7 @@ Rooms are physical spaces that can be reserved alongside calendar events — a s
 
 ### Adding a Room
 
-1. On the **Rooms** tab, click **Add Room**.
+1. On the **Rooms** tab, click **Add Room** at the top of the page.
 2. Enter a **name** for the room.
 3. Optionally set a **capacity** (maximum number of people).
 4. Set an **Approval Group** — when a group requests this room, the chosen group's leaders are notified and must approve the booking. Leave blank if no approval is needed.
@@ -36,7 +36,7 @@ Rooms are physical spaces that can be reserved alongside calendar events — a s
 
 ### Editing or Deleting a Room
 
-Click the edit icon next to any room, make your changes, and click **Save**. Use **Delete** to remove a room permanently.
+Click **Edit** next to any room, make your changes, and click **Save**. Use **Delete** to remove a room permanently.
 
 ## Resources
 

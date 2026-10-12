@@ -20,8 +20,8 @@ Envie seu conteúdo de lição para uma TV de saguão ou corredor usando um feed
 
 ## Obtendo a URL do Feed
 
-1. Navegue até **Servindo** e abra o ministério contendo seu tipo de plano.
-2. Clique no botão **Sinalização Digital** (o ícone RSS) na página do tipo de plano.
+1. Vá para **Servindo**, selecione o ministério que contém seu tipo de plano e clique no tipo de plano para abri-lo.
+2. Clique em **Sinalização Digital** (o ícone de TV) no topo da página do tipo de plano.
 3. Copie a URL do feed mostrada na caixa de diálogo.
 
 :::info

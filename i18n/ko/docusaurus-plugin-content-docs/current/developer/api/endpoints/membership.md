@@ -85,6 +85,7 @@ Authorization: Bearer <token>
 | POST | `/updateEmail` | JWT | — | 사용자의 이메일 주소를 변경합니다 |
 | POST | `/updatePassword` | JWT | — | 사용자의 비밀번호를 변경합니다(최소 6자) |
 | POST | `/updateOptedOut` | JWT | — | 인물의 수신 거부 상태를 설정합니다 |
+| POST | `/sendInviteEmail` | JWT | People.Edit | 이 교회의 인물에게 초대 이메일을 보냅니다(`email`, `personName`, `contextName`). 버튼은 계정이 없는 사람에게는 **가입**, 기존 사용자에게는 **로그인**으로 표시됩니다. 한 번도 로그인하지 않은 사용자에게는 대신 7일 후 만료되는 **비밀번호 설정** 링크가 제공됩니다. 교회의 일일 이메일 한도에 포함되며, 한도에 도달하면 `429`를 반환합니다 |
 | GET | `/search?term=` | JWT | Server.Admin | 이름/이메일로 모든 사용자를 검색합니다 |
 | DELETE | `/` | JWT | — | 현재 사용자 계정을 삭제합니다 |
 

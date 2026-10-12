@@ -20,9 +20,9 @@ B1 Admin vous donne plusieurs façons de visualiser et d'analyser les données d
 
 ## Tableau de bord des dons
 
-Le tableau de bord des dons est l'onglet **Tableau de bord** de la page **Résumé**, la première page que vous voyez quand vous ouvrez la section **Dons**.
+Le tableau de bord des dons est la vue **Tableau de bord** de la page **Résumé**, la première page que vous voyez quand vous ouvrez la section **Dons**.
 
-1. Ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche de B1 Admin), développez **Dons**, et cliquez sur **Résumé**. La page **Résumé** s'ouvre sur l'onglet **Tableau de bord**.
+1. Ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche de B1 Admin), développez **Dons**, et cliquez sur **Résumé**. La page **Résumé** s'ouvre sur la vue **Tableau de bord**. Le bouton bascule **Vue** en haut à droite permet de passer de **Tableau de bord** à **Donateurs inactifs**.
 2. Utilisez le bouton bascule **Hebdomadaire**, **Mensuel**, et **Trimestriel** au-dessus du rapport pour choisir comment les dons sont regroupés.
 3. Dans le panneau **Filtre du rapport**, définissez la **Date de début** et la **Date de fin** (par défaut, l'année passée jusqu'à hier) et optionnellement choisissez un **Fonds**, puis cliquez sur **Exécuter le rapport**. Le rapport s'exécute automatiquement avec les paramètres par défaut quand la page s'ouvre.
 4. Quatre **cartes KPI** affichent vos métriques de dons pour la plage sélectionnée :
@@ -41,7 +41,7 @@ Le tableau de bord affiche les données de dons agrégées. Il n'inclut pas les 
 
 ## Donateurs inactifs
 
-L'onglet **Donateurs inactifs** à côté de l'onglet **Tableau de bord** répertorie les personnes qui ont donné pendant une période mais pas depuis. Par défaut, il compare l'année civile dernière à cette année à ce jour ; modifiez l'une ou l'autre plage de dates pour élargir ou réduire la recherche. Chaque ligne affiche la personne, la date de son dernier don et son total pour la période antérieure, et **Options de téléchargement > Résumé** télécharge la liste en CSV pour un courrier de suivi ou une liste d'appels.
+Choisissez **Donateurs inactifs** dans le bouton bascule **Vue** pour répertorier les personnes qui ont donné pendant une période mais pas depuis. Par défaut, il compare l'année civile dernière à cette année à ce jour ; modifiez l'une ou l'autre plage de dates pour élargir ou réduire la recherche. Chaque ligne affiche la personne, la date de son dernier don et son total pour la période antérieure, et **Options de téléchargement > Résumé** télécharge la liste en CSV pour un courrier de suivi ou une liste d'appels.
 
 ## Affichage des détails au niveau du donateur
 
@@ -49,17 +49,16 @@ Pour une ventilation de qui a donné, combien, et à quel fonds :
 
 1. Naviguez vers **Dons > Lots**.
 2. Cliquez sur un **nom de lot** pour l'ouvrir.
-3. La page de détail du lot répertorie chaque don avec le nom du donateur, le montant, le fonds, la date, et la méthode de paiement.
-4. Cliquez sur le **nom d'un donateur** pour voir une ventilation de combien de fois il a donné et combien chaque fois.
-5. Cliquez sur un **ID de don** pour ouvrir un panneau latéral avec les détails complets de ce don individuel.
-6. Cliquez sur **Télécharger** pour exporter un CSV avec toutes les informations de donateur et de don pour ce lot.
+3. La page de détail du lot répertorie chaque don avec son mode de paiement (et le numéro de chèque ou les derniers chiffres de la carte), le nom du donateur, la date, les notes et le montant, avec un total en bas.
+4. Cliquez sur **Modifier** sur une ligne de don pour ouvrir les détails complets de ce don, y compris son fonds.
+5. Cliquez sur **Exporter** au-dessus de la liste pour télécharger un CSV contenant toutes les informations des donateurs et des dons pour ce lot.
 
 ## Rapport de résumé des dons
 
 La génération de rapports de dons est intégrée directement dans la section Dons -- la page Résumé sert de rapport de résumé des dons :
 
 1. Dans le menu Accès rapide, choisissez **Dons > Résumé**.
-2. Sur l'onglet **Tableau de bord**, définissez la **Date de début** et la **Date de fin** dans le panneau **Filtre du rapport** et cliquez sur **Exécuter le rapport**.
+2. Sur la vue **Tableau de bord**, définissez la **Date de début** et la **Date de fin** dans le panneau **Filtre du rapport** et cliquez sur **Exécuter le rapport**.
 3. Cliquez sur **Options de téléchargement** et choisissez **Résumé** pour exporter le rapport en tant que fichier CSV.
 
 ## Exportation de données

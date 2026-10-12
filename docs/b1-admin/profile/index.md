@@ -16,7 +16,7 @@ From the Profile section, you can:
 
 - **Update your name and email** -- Keep your contact information current.
 - **Change your password** -- Set a new password for your account.
-- **Switch themes** -- Toggle between light and dark mode to match your preference.
+- **Switch themes** -- Toggle between light and dark mode from the user menu (click your profile picture in the top right corner).
 - **Manage connected devices** -- View and control which ChurchAppsPlayer devices are linked to your account.
 - **View linked accounts** -- See and manage any external services connected to your ChurchApps account.
 - **Approve profile change requests** -- Review and apply updates submitted by members.

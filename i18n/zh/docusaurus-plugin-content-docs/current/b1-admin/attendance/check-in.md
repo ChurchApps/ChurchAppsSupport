@@ -25,7 +25,7 @@ B1 Checkin 应用程序连接到您的 B1 Admin 出勤设置。当成员签到�
 
 ## 设置签到
 
-1. **首先配置您的出勤结构。** 在 B1 Admin 中，转到**出勤 > 设置**，并确保您的校园、服务时间和小组已就位。签到应用程序依赖于此配置。有关详细信息，请参阅[出勤设置](setup.md)。
+1. **首先配置您的出勤结构。** 在 B1 Admin 中，转到**人员 > 出勤**并单击**设置**，以确保您的校园、服务时间和小组已就位。签到应用程序依赖于此配置。您还可以为每个服务时间设置[签到时间表](setup.md#setting-a-check-in-schedule)，使签到每周自动开放和关闭。有关详细信息，请参阅[出勤设置](setup.md)。
 2. **在您计划使用的设备上安装 B1 Checkin 应用程序**。该应用程序可在以下平台上使用：
    - **iPad/iOS：** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung 平板电脑：** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
@@ -110,7 +110,7 @@ B1 Checkin 应用程序连接到您的 B1 Admin 出勤设置。当成员签到�
 3. 打开**二维码访客注册**并单击**保存**。
 
 :::note
-此设置位于**移动 > B1 CheckIn**（与**自助服务终端主题**卡相同的页面）下，而不是出勤下。
+此设置位于**移动 > B1 CheckIn**（与**自助服务终端主题**卡相同的页面）下，而不是出勤下。出勤页面上的**自助服务终端**操作中有指向此页面的链接。
 :::
 
 ### 共享注册链接
@@ -126,4 +126,4 @@ B1 Checkin 应用程序连接到您的 B1 Admin 出勤设置。当成员签到�
 
 ## 记录的内容
 
-每次签到都会在 B1 Admin 中创建出勤记录。您可以在[出勤](tracking-attendance.md)和[小组](../groups/group-members.md)选项卡上查看这些记录，就像手动输入的出勤率一样。数据显示方式没有区别 — 两种方法都会进入相同的报告。
+每次签到都会在 B1 Admin 中创建出勤记录。您可以在[出勤](tracking-attendance.md)页面以及各[小组](../groups/group-members.md)的出勤场次中查看这些记录，就像手动输入的出勤率一样。数据显示方式没有区别 — 两种方法都会进入相同的报告。

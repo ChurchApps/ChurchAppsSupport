@@ -6,7 +6,7 @@ title: "Mga Kagustuhan sa Notipikasyon"
 
 <div class="article-intro">
 
-Ang mga kagustuhan sa notipikasyon ay nagbibigay-daan sa iyo na magdesisyon kung aling mga notipikasyon ang iyong makakatanggap mula sa iyong simbahan at paano mo ito matatanggap -- push notifications, email, o ang in-app na kampana. Maaari mong i-fine-tune ang bawat uri ng notipikasyon, magtakda ng mahimbing na oras, o i-mute ang lahat nang sabay-sabay, lahat mula sa isang screen.
+Ang mga kagustuhan sa notipikasyon ay nagbibigay-daan sa iyo na magdesisyon kung aling mga notipikasyon ang iyong makakatanggap mula sa iyong simbahan at paano mo ito matatanggap -- push notifications, email, ang in-app na kampana, o (kung nagpapadala ng text ang iyong simbahan) text messages. Maaari mong i-fine-tune ang bawat uri ng notipikasyon, magtakda ng mahimbing na oras, o i-mute ang lahat nang sabay-sabay, lahat mula sa isang screen.
 
 </div>
 
@@ -22,6 +22,7 @@ Sa tuktok ng screen ay makikita mo ang mga setting na natatangi sa lahat:
 
 - **I-mute ang lahat** -- Pansamantalang diniwalaan ang lahat ng hindi-kritikal na notipikasyon.
 - **Push notifications** -- Binabago ang push notifications on o off para sa iyong device.
+- **Text messages** -- Lalabas lamang kung may nakahandang texting ang iyong simbahan. I-on ito para makatanggap ng mga paalala sa paglilingkod at event sa pamamagitan ng text sa mobile number sa iyong profile. Naka-off ito hanggang sa i-on mo.
 - **Dalas ng email** -- Pumili kung paano darating ang mga notipikasyon ng email:
   - **Bawat notipikasyon** -- Magpadala ng email habang nangyayari ang mga bagay.
   - **Pang-araw-araw na buod** -- Ipahiwalay ang mga ito sa isang pang-araw-araw na email.
@@ -35,6 +36,7 @@ Sa ibaba ng pandaigdigang kontrol ay isang grid ng mga uri ng notipikasyon. Para
 - **Push** -- Isang notipikasyon sa iyong device.
 - **Email** -- Isang mensahe sa iyong inbox.
 - **In-App** -- Ang kampana/badge sa loob ng app.
+- **Text** -- Isang text message sa iyong mobile phone. Lalabas lamang ang column na ito kung may nakahandang texting ang iyong simbahan, at ilang uri lamang (tulad ng **Mga Pagaalala ng Kaganapan**, **Paglilingkod at Iskedyul**, at **Mga Gawain at Follow-Up**) ang maaaring ipadala bilang text. Dumarating lamang ang mga text kapag naka-on din ang **Text messages**.
 
 Ang mga karaniwang uri ay kinabibilangan ng **Mga Pagaalala ng Kaganapan**, **Paglilingkod at Iskedyul**, **Mga Direktang Mensahe**, **Pang-grupo na Usap**, **Mga Kahilingan ng Panalangin**, at **Mga Pahayag ng Simbahan**. Halimbawa, maaari mong panatilihing bukas ang push notifications para sa Mga Direktang Mensahe ngunit ibukas ang mga ito para sa Mga Pahayag.
 
@@ -43,6 +45,10 @@ Ang ilang mga uri ng notipikasyon ay **palaging bukas** at hindi maaaring ibukas
 :::
 
 Ang ilang mga uri ay **pagsisimula ay bukas** (tulad ng promotional o fundraising na mga mensahe) at lamang na umaabot sa iyo kung pumili kang mag-opt in.
+
+## Pagtigil sa Text Messages {#stopping-text-messages}
+
+Para tumigil sa pagtanggap ng mga text, i-off ang **Text messages** at i-save. Maaari ka ring mag-reply ng **STOP** sa anumang text mula sa iyong simbahan para i-opt out ang iyong numero sa mga text nito.
 
 ## Pag-save ng Iyong mga Pagbabago
 

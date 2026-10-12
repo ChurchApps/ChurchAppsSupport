@@ -19,13 +19,13 @@ Les décomptes vous permettent d'enregistrer un nombre total simple d'assistance
 </div>
 
 :::info
-Les décomptes sont une alternative totale uniquement à [Enregistrer l'assistance](recording-attendance.md). Si vous avez besoin de savoir **qui** a assisté - par exemple, pour assurer le suivi des personnes qui ne sont pas revenues - continuez à utiliser l'assistance de session nommée sur l'onglet Sessions d'un groupe. Les décomptes stockent uniquement un nombre.
+Les décomptes sont une alternative totale uniquement à [Enregistrer l'assistance](recording-attendance.md). Si vous avez besoin de savoir **qui** a assisté - par exemple, pour assurer le suivi des personnes qui ne sont pas revenues - continuez à utiliser l'assistance de session nommée dans les Sessions d'un groupe. Les décomptes stockent uniquement un nombre.
 :::
 
 ## Enregistrement d'un décompte
 
 1. Ouvrez **B1 Admin**, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Personnes**, et cliquez sur **Assistance**.
-2. Sélectionnez le sous-onglet **Décomptes**.
+2. Cliquez sur **Entrer un décompte** dans la colonne de gauche.
 3. Remplissez le formulaire :
    - **Service** *(requis)*
    - **Heure de service** -- laissez vide pour enregistrer un total sur toutes les heures de service
@@ -34,14 +34,14 @@ Les décomptes sont une alternative totale uniquement à [Enregistrer l'assistan
    - **Décompte** -- le nombre total de personnes présentes
 4. Cliquez sur **Enregistrer**.
 
-Le tableau **Décomptes récents** sur la droite répertorie vos dernières entrées avec leur date, service, heure de service, groupe et décompte. Cliquez sur une ligne pour la recharger dans le formulaire si vous avez besoin de la corriger ou de la supprimer.
+Le tableau **Décomptes récents** à côté du formulaire répertorie vos dernières entrées avec leur date, service, heure de service, groupe et décompte. Cliquez sur une ligne pour la recharger dans le formulaire si vous avez besoin de la corriger ou de la supprimer.
 
 ## Rapport de tendance du décompte
 
-1. À partir du même onglet **Assistance**, sélectionnez le sous-onglet **Tendance du décompte**.
+1. Depuis la même page **Assistance**, cliquez sur **Toutes les années** dans la colonne de gauche, puis sélectionnez l'onglet **Tendance du décompte**.
 2. Utilisez les filtres **Campus**, **Service**, **Heure de service** et **Groupe** pour affiner le rapport.
 
-Le rapport affiche vos décomptes enregistrés sommés par semaine, à la fois sous forme de graphique linéaire et de tableau - le même style de rapport utilisé par les [onglets de tendance de l'assistance et des groupes](tracking-attendance.md).
+Le rapport affiche vos décomptes enregistrés sommés par semaine, à la fois sous forme de graphique linéaire et de tableau - le même style de rapport utilisé par les [onglets Tendance de l'assistance et Assistance des groupes](tracking-attendance.md). Les décomptes saisis pour la semaine en cours apparaissent aussi sous **Décomptes cette semaine** sur la page principale Assistance.
 
 ## Pages connexes
 

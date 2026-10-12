@@ -24,7 +24,7 @@ Una sessione rappresenta un'occorrenza di una riunione di gruppo -- ad esempio, 
 
 1. Aprite **B1 Admin**, aprite il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandete **Persone**, e fate clic su **Gruppi**.
 2. Selezionate il gruppo per il quale volete registrare le presenze.
-3. Fate clic sulla scheda **Sessioni**.
+3. Nella sezione **Sessioni** della pagina del gruppo, fate clic su **Tutte le sessioni**.
 4. Fate clic su **Nuovo** per creare una nuova sessione.
 5. Se il gruppo è assegnato a un orario di servizio, scegliete l'**Orario del servizio**. Se è un gruppo non programmato, questo campo non apparirà.
 6. Selezionate la **Data della sessione** -- può essere oggi, una data passata, o una data futura.
@@ -76,11 +76,11 @@ Abbinate questo a **Stampa tutte le classi** e [aggiunta di sessioni per ogni cl
 
 ## Stampa di un foglio di controllo
 
-Un foglio di controllo è un elenco di classe stampabile che gli insegnanti possono segnare a mano e riconsegnarvi per inserire in seguito. Ogni foglio mostra il nome della chiesa, la classe, una grande riga **Data** sotto il nome della classe, e l'orario del servizio. I membri sono elencati in due colonne (leggi la colonna sinistra, poi la destra) in modo che più nomi si adattino a una pagina, e ogni membro ha caselle **Presente** e **Assente**. Ci sono righe vuote per i visitatori e un'area **Insegnante / Note**.
+Un foglio di controllo è un elenco di classe stampabile che gli insegnanti possono segnare a mano e riconsegnarvi per inserire in seguito. Ogni foglio mostra il logo della vostra chiesa (il **Logo per sfondo chiaro** di [Sito web > Aspetto](../website/appearance.md), se ne avete caricato uno) con il nome della chiesa sotto, la classe, una grande riga **Data** sotto il nome della classe, e l'orario del servizio. I membri sono elencati in due colonne (leggi la colonna sinistra, poi la destra) in modo che più nomi si adattino a una pagina, e ogni membro ha caselle **Presente** e **Assente**. Ci sono righe vuote per i visitatori e un'area **Insegnante / Note**.
 
 - **Da una sessione** -- Fate clic sull'icona **Stampa foglio di controllo** (stampante) in cima all'elenco delle presenze della sessione. Il foglio è datato con la data della sessione.
 - **Tutte le classi per un servizio** -- Se la sessione ha un orario di servizio, fate clic su **Stampa tutte le classi** per stampare un foglio per classe assegnata a quell'orario di servizio. Ogni classe stampa sulla sua propria pagina.
-- **Dalla scheda Membri** -- Fate clic sull'icona **Stampa foglio di controllo** sopra l'elenco dei membri del gruppo e scegliete **Foglio di presenza** per stampare un foglio senza data. Lo stesso menu offre un layout **Rubrica dei contatti** con telefono, email e indirizzo di ogni membro -- vedi [Stampa dell'elenco dei membri](../groups/group-members.md#printing-the-member-list).
+- **Dall'elenco dei membri** -- Nella pagina del gruppo, fate clic su **Tutti i membri**, quindi fate clic sull'icona **Stampa foglio di controllo** sopra l'elenco dei membri e scegliete **Foglio di presenza** per stampare un foglio senza data. Lo stesso menu offre un layout **Rubrica dei contatti** con telefono, email e indirizzo di ogni membro -- vedi [Stampa dell'elenco dei membri](../groups/group-members.md#printing-the-member-list).
 
 Il foglio si apre in una nuova scheda e la finestra di dialogo di stampa del vostro browser appare automaticamente.
 
@@ -96,7 +96,7 @@ Potete scaricare un record della sessione come file CSV da utilizzare in Excel, 
 
 Dopo la registrazione delle sessioni, i dati appaiono nei vostri report di presenze.
 
-- **Scheda Andamento presenze** -- mostra tendenze a livello di chiesa nel tempo. Vedere [Monitoraggio delle presenze](tracking-attendance.md).
+- **Scheda Andamento presenze** (sotto **Tutti gli anni** nella pagina Presenze) -- mostra tendenze a livello di chiesa nel tempo. Vedere [Monitoraggio delle presenze](tracking-attendance.md).
 - **Scheda Presenze per gruppo** -- mostra le presenze suddivise per singolo gruppo. Vedere [Report di presenze](../reports/attendance-reports.md#group-attendance).
 
 :::tip

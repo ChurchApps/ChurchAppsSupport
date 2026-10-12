@@ -31,6 +31,7 @@ That is all it takes. Your family's attendance has been recorded.
 If your church has configured [safety limits](../../b1-admin/attendance/checkin-safety) on its rooms, the server checks them before saving:
 
 - If a selected room is **full or closed**, check-in does not go through and the app names the room so you can pick a different one.
+- If the service time has a [check-in schedule](../../b1-admin/attendance/setup#setting-a-check-in-schedule) and its check-in window isn't open right now, check-in into that service time's rooms is also refused. The **Can't check in yet** screen lists the room as "room is full or closed"; tap **Change Rooms** to pick a different service time or group.
 - If a children's room is **short on volunteers** for its ratio, the app either shows a warning that a staff member can confirm to proceed, or blocks the check-in entirely — depending on how your church configured ratio enforcement.
 
 ## Label Printing

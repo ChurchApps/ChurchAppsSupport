@@ -20,14 +20,14 @@ Bündel fassen Ihre Spenden zusammen, um die Verfolgung und Abstimmung zu erleic
 
 ## Die Seite Bündel
 
-Wenn Sie zu **Spenden > Bündel** navigieren, sehen Sie eine Liste aller Ihrer Bündel. Jede Reihe zeigt:
+Wenn Sie zu **Spenden > Bündel** navigieren, sehen Sie eine Liste Ihrer Bündel. Jede Reihe zeigt:
 
 - **Name** -- das Label, das Sie dem Bündel gegeben haben
 - **Datum** -- das Datum der Sammlung
 - **Spenden** -- die Anzahl der einzelnen Spenden im Bündel
 - **Gesamt** -- der kombinierte Dollarbetrag
 
-Die Kopfzeile oben zeigt Zusammenfassungsstatistiken einschließlich der Gesamtzahl der Bündel, der Gesamtzahl der Spenden über alle Bündel und des Gesamtdollarbetrags.
+Oberhalb der Liste können Sie über Jahresschaltflächen nur die Bündel eines Jahres oder **Alle** Bündel anzeigen. Eine einzeilige Zusammenfassung zeigt die Anzahl der Bündel, die Anzahl der Spenden und den Gesamtbetrag der angezeigten Bündel.
 
 ## Neues Bündel erstellen
 
@@ -43,22 +43,24 @@ Ihr neues Bündel wird in der Liste angezeigt und ist bereit, dass Sie Spenden h
 - **Spenden anzeigen** -- klicken Sie auf einen Bündelnamen, um ihn zu öffnen und alle darin enthaltenen einzelnen Spenden zu sehen. Von dort aus können Sie Spenden hinzufügen, bearbeiten oder entfernen.
 - **Bündeldetails bearbeiten** -- klicken Sie auf die Schaltfläche **Bearbeiten** auf einer Bündelreihe, um seinen Namen oder Datum zu ändern.
 - **Sortieren** -- verwenden Sie die Spaltenköpfe, um Bündel nach Name oder Datum zu sortieren.
-- **Exportieren** -- klicken Sie auf **Exportieren**, um Ihre Bündelliste als Tabelle (CSV) herunterzuladen.
+- **Exportieren** -- klicken Sie oben auf der Seite auf **Exportieren**, um die angezeigten Bündel als Tabelle (CSV) herunterzuladen.
+- **Fehlgeschlagene Ereignisse** -- wenn Ihr Zahlungsanbieter Probleme gemeldet hat, erscheint oben auf der Seite eine Schaltfläche **Fehlgeschlagene Ereignisse** (mit der Anzahl ungelöster Ereignisse). Klicken Sie darauf, um die Liste der Ereignisse unter den Bündeln ein- oder auszublenden.
+- **Aus Stripe importieren** -- klicken Sie oben auf der Seite auf **Fehlende Stripe-Transaktionen importieren**, um das Werkzeug [Stripe-Import](stripe-import.md) zu öffnen.
 
 ## Bündel drucken
 
-Öffnen Sie ein Bündel und klicken Sie auf das **Druck**-Symbol oben in der Spendenliste, um eine Papierkopie für Ihr Zählteam oder Einzahlungsunterlagen zu drucken. Der Ausdruck enthält:
+Öffnen Sie ein Bündel und klicken Sie oberhalb der Spendenliste auf **Drucken**, um eine Papierkopie für Ihr Zählteam oder Einzahlungsunterlagen zu drucken. Der Ausdruck enthält:
 
 - Den Namen Ihrer Kirche, den Bündelnamen und das Bündeldatum
 - Jede Spende im Bündel mit dem Namen des Spenders, Methode, Notizen, Datum und Betrag (rückgängig gemachte Geschenke sind durchgestrichen und als rückgängig gemacht gekennzeichnet)
 - **Fonds-Zwischensummen** -- der Gesamtbetrag, der jedem Fonds im Bündel gegeben wurde
 - **Bündel-Gesamt** -- der kombinierte Betrag für das ganze Bündel
 
-Das Druck-Symbol wird erst angezeigt, nachdem das Bündel mindestens eine Spende hat.
+Die Schaltfläche **Drucken** wird erst angezeigt, nachdem das Bündel mindestens eine Spende hat.
 
 ### Mehrere Bündel auf einmal drucken
 
-Um alle Bündel eines Zeitraums in einem Durchgang zu drucken – zum Beispiel alle Einzahlungen des letzten Monats – klicken Sie in der Kopfzeile der **Bündel**-Liste neben **Exportieren** auf das **Druck**-Symbol (Drucker). Die Seite **Bündel drucken** öffnet sich mit einem **Startdatum** und einem **Enddatum**, die standardmäßig auf die letzten 30 Tage eingestellt sind. Ändern Sie eines der beiden Daten, um einen anderen Zeitraum auszuwählen.
+Um alle Bündel eines Zeitraums in einem Durchgang zu drucken – zum Beispiel alle Einzahlungen des letzten Monats – klicken Sie oben auf der Seite **Bündel** neben **Exportieren** auf **Drucken**. Die Seite **Bündel drucken** öffnet sich mit einem **Startdatum** und einem **Enddatum**, die standardmäßig auf die letzten 30 Tage eingestellt sind. Ändern Sie eines der beiden Daten, um einen anderen Zeitraum auszuwählen.
 
 Jedes Bündel, dessen Datum im Zeitraum liegt (einschließlich Start- und Enddatum), wird in Datumsreihenfolge gedruckt, ein Bündel pro Seite, im gleichen Layout wie der Ausdruck eines einzelnen Bündels. Bündel ohne Spenden werden ausgelassen, und wenn keines der Bündel im Zeitraum Spenden enthält, sehen Sie „Keine Bündel mit Spenden in diesem Zeitraum.“ Klicken Sie auf **Drucken**, um den Druckdialog Ihres Browsers zu öffnen, oder auf **Schließen**, um zur Bündelliste zurückzukehren.
 

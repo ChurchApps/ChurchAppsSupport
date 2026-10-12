@@ -29,7 +29,7 @@ Følg [Opprett grupper](../groups/creating-groups.md) og [Gruppemedlemmer](../gr
 3. Legg frivillige til hver gruppe ved å søke etter navnet deres og klikke Legg til
 
 :::tip
-Utnevn teamledere ved hjelp av grønn nøkkelikon på Medlemmer-fanen. Ledere kan administrere sitt eget gruppens kalender og koordinere sitt team.
+Utnevn teamledere med stjerneikonet (**Gjør til leder**) i gruppens medlemsliste (klikk på **Alle medlemmer** på gruppesiden). Ledere kan administrere sitt eget gruppens kalender og koordinere sitt team.
 :::
 
 ## Trinn 2: Bygg sangbiblioteket ditt
@@ -52,10 +52,11 @@ Planer er ukentlige oppdraget som forteller frivillige hvor de er nødvendig.
 
 Følg [Planer](../serving/plans.md)-veiledningen for å:
 
-1. Gå til Tjenestegørende, velg ministeriet ditt
-2. Klikk "Legg til plan" og velg servicedatoen
-3. På Oppdrag-fanen, utvid hvert team og tildel frivillige til deres posisjoner
+1. Gå til Tjenestegørende, velg ministeriet ditt og åpne plantypen din
+2. Klikk **Ny plan** og velg datoen for gudstjenesten. For å sette opp flere søndager samtidig kopierer du fra forrige plan og angir antall uker i **Gjenta ukentlig for dette antall uker**
+3. I planens seksjon **Tjenesteteamtildelinger** legger du til posisjoner og tildeler frivillige til dem
 4. Frivillige vil se oppdrags-status (Forespurt, Bekreftet, Venter)
+5. Slå på [påminnelser til frivillige](../serving/plans.md#volunteer-reminders) for plantypen, slik at frivillige får påminnelse via push, e-post eller tekstmelding før hver gudstjeneste
 
 ## Trinn 4: Bygg servicerekkefølgen
 
@@ -63,8 +64,8 @@ Legg ut flyten av servicen din fra start til slutt.
 
 Følg [Servicerekkefølge](../serving/service-order.md)-veiledningen for å:
 
-1. Bytt til "Servicerekkefølge"-fanen i planen din
-2. Klikk "Legg til element" for å legge til elementer: worshipsanger (fra biblioteket ditt), bønner, skriftlesinger, kunngjøringer, preken, kollekt, avslutning
+1. Åpne planen din og finn seksjonen **Servicerekkefølge** øverst
+2. Klikk **Legg til** for å legge til elementer: worshipsanger (fra biblioteket ditt), bønner, skriftlesinger, kunngjøringer, preken, kollekt, avslutning
 3. Dra og slipp elementer for å omordne serviceflyt
 
 :::info
@@ -89,7 +90,7 @@ B1 Admin oppretter ikke lenger oppgaver på en gjentakende tidsplan. For gjentak
 
 La frivillige melde seg på posisjoner selv i stedet for å vente på administratoroppdraget.
 
-1. Når du redigerer en plan, angi et **Påmeldingsfristen** (timer før service) for å kontrollere når egenbetjent påmelding lukkes. La stå tomt for ingen frist.
+1. Når du oppretter eller redigerer en plan, angi en **Påmeldingsfrist** (timer før gudstjenesten) for å kontrollere når selvpåmeldingen stenger. La stå tomt for ingen frist. Nye planer starter med forrige plans påmeldingsfrist.
 2. Velg eventuelt å **Vis frivilligenes navn på påmeldingssiden** for å la frivillige se hvem andre som har meldt seg på.
 3. For hver posisjon, merk **Tillat egenpåmelding**-avkryssingsboksen for å gjøre den tilgjengelig for selvbetjening.
 4. Legg til en **Beskrivelse** for hver posisjon slik at frivillige vet hva rollen innebærer.

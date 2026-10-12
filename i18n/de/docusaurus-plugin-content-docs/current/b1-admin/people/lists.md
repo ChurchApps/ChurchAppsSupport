@@ -6,7 +6,7 @@ title: "Gespeicherte Listen"
 
 <div class="article-intro">
 
-**Gespeicherte Listen** ermöglichen es Ihnen, eine Suchabfrage unter einem Namen zu speichern und sie jederzeit mit einem Klick erneut auszuführen. Erstellen Sie eine Liste einmalig — „Active Members in Campus North", „Visitors in the last 90 days" oder einen beliebigen fortgeschrittenen Filter — und sie bleibt im Panel **Saved Lists** auf der Personenseite, damit Sie die Abfrage nie wieder neu aufbauen müssen.
+**Gespeicherte Listen** ermöglichen es Ihnen, eine Suchabfrage unter einem Namen zu speichern und sie jederzeit mit einem Klick erneut auszuführen. Erstellen Sie eine Liste einmalig — „Active Members in Campus North", „Visitors in the last 90 days" oder einen beliebigen fortgeschrittenen Filter — und sie bleibt oben auf der Personenseite, damit Sie die Abfrage nie wieder neu aufbauen müssen.
 
 </div>
 
@@ -20,21 +20,22 @@ title: "Gespeicherte Listen"
 ## Speichern einer Suche als Liste
 
 1. Führen Sie eine Suche auf der Seite **People** durch — eine schnelle Suche, eine KI-Suche oder eine fortgeschrittene Filter-Suche.
-2. Wenn Ergebnisse angezeigt werden, wird eine Schaltfläche **Save as List** (Lesezeichen-Symbol) in der Kopfzeile der Personenseite angezeigt.
+2. Wenn Ergebnisse angezeigt werden, wird eine Schaltfläche **Save as List** in der Kopfzeile der Personenseite angezeigt.
 3. Klicken Sie auf **Save as List**.
-4. Geben Sie einen **Name** für die Liste ein (erforderlich).
-5. Geben Sie optional eine **Category** ein, um zugehörige Listen im Panel **Saved Lists** zu gruppieren (z. B. „Outreach" oder „Membership").
-6. Klicken Sie auf **Save**.
+4. Geben Sie einen **List Name** (Listennamen) für die Liste ein (erforderlich).
+5. Geben Sie optional eine **Category** ein, um zugehörige Listen zu gruppieren (z. B. „Outreach" oder „Membership").
+6. Wählen Sie unter **Who can see this list** (Wer diese Liste sehen kann) **All staff** (Alle Mitarbeiter) oder **Only me** (Nur ich).
+7. Klicken Sie auf **Save**.
 
-Die Liste wird nun auf dem Konto Ihrer Kirche gespeichert und wird im Panel **Saved Lists** auf der linken Seite der Personenseite angezeigt.
+Die Liste wird nun gespeichert und erscheint als Schaltfläche in der Reihe gespeicherter Listen oben auf der Personenseite, neben **Everyone** (Alle). Listen mit der Einstellung **Only me** (Nur ich) zeigen ein kleines Schlosssymbol.
 
 :::info
-Listen werden in Ihrer Kirche geteilt — Jeder mit Zugriff auf Personen kann sie sehen und laden. Nur Mitarbeiter mit entsprechender Berechtigung können Listen umbenennen oder löschen.
+Listen mit der Einstellung **All staff** (Alle Mitarbeiter) werden in Ihrer Kirche geteilt — Jeder mit Zugriff auf Personen kann sie sehen und laden. Nur Mitarbeiter mit entsprechender Berechtigung können Listen ändern oder löschen.
 :::
 
 ## Laden einer gespeicherten Liste
 
-Klicken Sie im Panel **Saved Lists** auf der linken Seite der Personenseite auf einen beliebigen Listennamen. Die Suche wird sofort mit der gespeicherten Abfrage erneut ausgeführt, wobei die Ergebnistabelle aktualisiert wird.
+Klicken Sie oben auf der Personenseite auf einen beliebigen Listennamen. Die Suche wird sofort mit der gespeicherten Abfrage erneut ausgeführt, wobei die Ergebnisse aktualisiert werden. Klicken Sie auf **Everyone** (Alle), um zu Ihrem gesamten Verzeichnis zurückzukehren.
 
 Listen werden nach Kategorie gruppiert (falls Sie eine zugewiesen haben), wobei nicht kategorisierte Listen zuletzt angezeigt werden.
 
@@ -44,10 +45,10 @@ Listen sind **Live-Abfragen**, keine Schnappschüsse. Jedes Mal, wenn Sie eine L
 
 ## Umbenennen und Löschen von Listen
 
-Mitarbeiter mit Verwaltungsberechtigung können alle Listen direkt aus dem Panel Gespeicherte Listen umbenennen oder löschen.
+Mitarbeiter mit Verwaltungsberechtigung können alle Listen auf der Personenseite umbenennen oder löschen. Klicken Sie zuerst auf die Liste, um sie zu laden – danach erscheinen neben ihrem Namen zwei Symbole:
 
-- Klicken Sie auf das **pencil icon** neben einem Listennamen, um es umzubenennen.
-- Klicken Sie auf das **trash icon**, um es zu löschen (Sie werden aufgefordert, zu bestätigen).
+- Klicken Sie auf das Symbol **List Settings** (Listeneinstellungen, Zahnrad), um sie umzubenennen oder Kategorie, Freigabe und weitere Einstellungen zu ändern.
+- Klicken Sie auf das Symbol **Delete** (Löschen, Papierkorb), um sie zu löschen (Sie werden aufgefordert, zu bestätigen).
 
 ## Anwendungsfälle
 

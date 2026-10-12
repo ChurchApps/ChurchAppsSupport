@@ -34,7 +34,7 @@ Kapag **Request** ang policy ng isang group, dumadaan sa approval workflow na in
 
 1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) at piliin ang **People > Groups**
 2. I-click ang pangalan ng group
-3. Lalabas sa itaas ng tab na **Members** ang mga nakabinbing request para sa group na ito
+3. Ipinapakita ng seksyong **Members** kung ilan ang nakabinbing request. I-click ang **All members** -- lalabas sa itaas ng listahan ng miyembro ang mga nakabinbing request para sa group na ito
 
 ### Para sa mga Administrator
 
@@ -85,9 +85,9 @@ Ang pagbibigay ng dahilan ng pagtanggi ay tumutulong sa tao na maunawaan kung ba
 
 Gumagawa rin ang bawat join request ng task sa ilalim ng **Serving &rarr; My Work**, na may pamagat na "*Person* requested to join *Group*." Itinatalaga ito sa mga leader ng group. Kung wala pang leader ang group, mapupunta ito sa sinumang staff na may pahintulot na **Group Members &gt; Edit**, o sa mga domain admin ng inyong simbahan kung walang may pahintulot na iyon. Ang mga staff at admin na nakatanggap ng task sa ganitong paraan ay makakatanggap din ng abiso na direktang naka-link dito.
 
-Kapag binuksan ang task, makikita ang pangalan ng nag-request, ang group, at ang kanyang opsyonal na mensahe, na may mga button na **Approve** at **Decline** mismo sa task card (binubuksan ng Decline ang parehong opsyonal na field ng dahilan na inilarawan sa itaas). Nagbibigay ito sa mga leader ng pangalawang paraan, na pinasisimulan ng notification, para kumilos sa isang request nang hindi pumupunta sa tab na Join Requests ng group.
+Kapag binuksan ang task, makikita ang pangalan ng nag-request, ang group, at ang kanyang opsyonal na mensahe, na may mga button na **Approve** at **Decline** mismo sa task card (binubuksan ng Decline ang parehong opsyonal na field ng dahilan na inilarawan sa itaas). Nagbibigay ito sa mga leader ng pangalawang paraan, na pinasisimulan ng notification, para kumilos sa isang request nang hindi binubuksan ang listahan ng miyembro ng group.
 
-Ang pagpapasya sa isang request mula sa alinmang lugar -- ang tab na Join Requests ng group o ang Tasks card nito -- ay magsasara nito sa lahat ng dako, kaya hindi na makakakita ang mga leader ng lipas nang task para sa request na naasikaso na ng iba.
+Ang pagpapasya sa isang request mula sa alinmang lugar -- ang listahan ng miyembro ng group o ang Tasks card nito -- ay magsasara nito sa lahat ng dako, kaya hindi na makakakita ang mga leader ng lipas nang task para sa request na naasikaso na ng iba.
 
 ## Mga Notification
 

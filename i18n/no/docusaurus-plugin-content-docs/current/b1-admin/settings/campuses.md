@@ -19,11 +19,11 @@ Hvis kirken din samles på flere steder, lar **Menighetssteder** deg følge med 
 
 ## Åpne innstillingene for menighetssteder
 
-I B1 Admin åpner du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), velger **Innstillinger > Innstillinger** og klikker på kortet **Menighetssteder**. Du kan også gå direkte til **/settings/campuses**. Du ser en liste over alle konfigurerte menighetssteder med navn, sted og tidssone.
+I B1 Admin åpner du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), velger **Innstillinger > Innstillinger** og klikker på **Menighetssteder** i listen til venstre for å gå til seksjonen **Menighetssteder**. Du kan også gå direkte til **/settings/campuses**. Du ser en liste over alle konfigurerte menighetssteder med navn, sted og tidssone.
 
 ## Legge til et menighetssted
 
-1. Klikk på **Legg til menighetssted** (eller **+**-knappen hvis det ikke finnes noen menighetssteder ennå).
+1. Klikk på **Legg til menighetssted**.
 2. Fyll ut detaljene om menighetsstedet:
    - **Navn** *(obligatorisk)* — visningsnavnet som vises i hele B1 Admin (for eksempel «Hovedkirken» eller «Nordkirken»).
    - **Adresse** — gateadressen til menighetsstedet (brukes til informasjon; ikke det samme som hovedadressen til kirken i kirkeinnstillingene).

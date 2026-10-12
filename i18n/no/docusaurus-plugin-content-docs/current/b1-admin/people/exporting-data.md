@@ -24,12 +24,11 @@ Den raskeste måten å eksportere registeret på er direkte fra siden **Personer
 
 1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **Personer** og klikk på **Personer**.
 2. Bruk søkefeltet eller filtrene for å avgrense resultatene du vil eksportere (eller la det stå ufiltrert for å eksportere alle). Se [Søke etter personer](searching-people.md) for tips om filtrering.
-3. Bruk **kolonnevelgeren** for å velge hvilke kolonner som skal være med i eksporten (for eksempel Navn, E-post, Telefon, Adresse).
-4. Klikk på knappen **Eksporter**.
-5. En CSV-fil lastes ned til datamaskinen din med dataene som vises i tabellen akkurat nå.
+3. Klikk på knappen **Eksporter** i sidetoppen på Personer-siden.
+4. En CSV-fil lastes ned til datamaskinen din med personene som er i resultatene dine nå, inkludert navn, kontaktinformasjon, adresse og andre standardfelt.
 
 :::tip
-Tilpass kolonnene før du eksporterer. CSV-filen inneholder nøyaktig de kolonnene som er synlige, slik at du kan tilpasse eksporten uten å redigere filen etterpå.
+Eksporten inneholder alle i de gjeldende resultatene dine. Kjør et søk, last inn en [lagret liste](./lists.md), eller bruk **Avansert** søk først for å eksportere bare de du trenger.
 :::
 
 ## Fullstendig dataeksport fra Innstillinger
@@ -37,7 +36,7 @@ Tilpass kolonnene før du eksporterer. CSV-filen inneholder nøyaktig de kolonne
 For en komplett eksport av alle B1-dataene dine (ikke bare personer) bruker du eksportverktøyet i Innstillinger:
 
 1. I Jump-menyen velger du **Innstillinger > Innstillinger**.
-2. Klikk på knappen **Import/eksport** øverst til høyre i sidehodet.
+2. Klikk på lenken **Import/eksport** under menighetens navn øverst i den venstre innstillingsmenyen.
 3. Velg **B1 Database** i nedtrekkslisten **Datakilde**.
 4. Se gjennom dataforhåndsvisningen og klikk på **Fortsett til mål**.
 5. Velg **B1 Export Zip** som eksportmål.

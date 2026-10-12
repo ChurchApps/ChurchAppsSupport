@@ -94,6 +94,9 @@ POST /membership/users/register
 
 Cria um usuário com uma senha temporária e envia um email de boas-vindas com um link de autenticação. O primeiro usuário registrado em uma nova instância recebe automaticamente acesso de administrador do servidor.
 
+Dois campos opcionais de armadilha para bots são aceitos: `website` (um campo honeypot oculto que usuários reais deixam vazio) e `fillMs` (quanto tempo o formulário ficou aberto, em milissegundos). Se `website` estiver preenchido ou `fillMs` for menor que 2000, nenhuma conta é criada, mas o endpoint ainda retorna um `200` com aparência normal para que bots não percebam que foram rejeitados. Clientes que omitem ambos os campos se registram normalmente.
+
+
 ### Registrar uma Nova Igreja
 
 ```

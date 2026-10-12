@@ -22,8 +22,8 @@ La page Sermons affiche votre bibliothèque complète de sermons. De là, vous p
 ## Affichage de votre bibliothèque de sermons
 
 1. Dans B1 Admin, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Sermons**, et cliquez sur **Sermons**.
-2. La page Sermons affiche toutes vos entrées de sermons, organisées par playlist. Chaque sermon affiche sa miniature, son titre et sa date.
-3. Cliquez sur n'importe quel sermon pour afficher ou modifier ses détails.
+2. La page Sermons affiche vos entrées de sermons dans un tableau avec la **playlist**, le titre et la **date de publication** de chaque sermon. Utilisez la zone de recherche au-dessus du tableau pour filtrer la liste. Vos playlists sont listées dans un panneau **Playlists** à côté du tableau.
+3. Cliquez sur **Modifier** sur la ligne d'un sermon pour afficher ou modifier ses détails.
 
 ## Ajout d'un sermon
 
@@ -40,7 +40,7 @@ Vous pouvez également ajouter une URL de diffusion en direct permanente en sél
 
 ## Modification d'un sermon
 
-1. Cliquez sur n'importe quel sermon de votre bibliothèque pour ouvrir ses détails.
+1. Cliquez sur **Modifier** sur la ligne d'un sermon de votre bibliothèque pour ouvrir ses détails.
 2. Mettez à jour le titre, l'orateur, la date, la description, la miniature ou les liens médias selon vos besoins.
 3. Cliquez sur **Enregistrer** pour appliquer vos modifications.
 

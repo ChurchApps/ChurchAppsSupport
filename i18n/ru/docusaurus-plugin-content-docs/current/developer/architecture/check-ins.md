@@ -49,7 +49,7 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 |----------------|-----------|---------|
 | `campuses` | name, address | Deprecated здесь — кампусы мастерятся в модуле membership (`/membership/campuses`); копия attendance заморожена только для чтения для наследованных читателей (`models/Campus.ts`) |
 | `services` | campusId, name | Повторяющееся собрание, например "Sunday Morning" (`models/Service.ts`) |
-| `serviceTimes` | serviceId, name | Временной слот в рамках сервиса, например "9:00 AM" (`models/ServiceTime.ts`) |
+| `serviceTimes` | serviceId, name, dayOfWeek, startTime, endTime, checkinOpenMinutes, checkinCloseMinutes | Временной слот в рамках сервиса, например "9:00 AM" (`models/ServiceTime.ts`). Необязательные поля расписания (миграция `tools/migrations/attendance/2026-10-10_service_time_schedule.ts`) управляют [окном регистрации](#scheduled-check-in-windows) |
 | `groupServiceTimes` | groupId, serviceTimeId | Join table: какие группы (классы) встречаются в какое время обслуживания (`models/GroupServiceTime.ts`) |
 | `sessions` | groupId, serviceTimeId, sessionDate | Одно собрание одной группы в одну дату — создается лениво при проверке времени (`models/Session.ts`) |
 | `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | Один человек посещает в одну дату (`models/Visit.ts`). `checkinType` это `member` / `guest` / `volunteer` (NULL = наследование member), установленный kiosk и потребляемый воротами емкости/коэффициента |
@@ -110,6 +110,15 @@ Assignments редактируются со страницы группы в B1A
 
 - **Hard (всегда блокирует):** `checkinClosed`, `current + incoming > capacity`, guest count over `guestCapacity`. Batch rejected с `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` — kiosk показывает named room.
 - **Ratio (warn или block):** incoming non-volunteers в room где `volunteers < minVolunteers`, нет волонтеров вообще, или `children > volunteers × volunteerRatio`. Severity следует per-church setting `ratioEnforcement` (`"warn"` default / `"block"`, edited в B1Admin Manage Church → Check-In, `CheckinSettingsEdit.tsx`). Warn-mode возвращает `409 { warning: true, error: "ratio", … }` если клиент не resubmits с `acknowledgeWarnings=true` — это resubmit это kiosk's staff-confirm override.
+
+### Расписание окон регистрации {#scheduled-check-in-windows}
+
+Время служения может содержать необязательное еженедельное расписание (`dayOfWeek` 0–6, где 0 = воскресенье; `startTime`/`endTime` в формате `HH:mm`; `checkinOpenMinutes`, `checkinCloseMinutes`), которое редактируется в форме времени служения B1Admin **Attendance → Setup** (`B1Admin/src/attendance/components/ServiceTimeEdit.tsx`, «Check-in Schedule»). `CheckinGateHelper.hasSchedule()` считает время служения запланированным только тогда, когда заданы оба поля `dayOfWeek` и `startTime`; незапланированные времена никогда не ограничиваются по времени. `isServiceTimeOpen()` вычисляет окно по местному времени церкви (`DateHelper.toChurchTime` с `timeZone` церкви): от `checkinOpenMinutes` до начала до `checkinCloseMinutes` после окончания (или после начала, если окончания нет), включая окна, которые переходят через полночь или границу недели.
+
+Окно применяется в двух местах:
+
+- **Список:** `GET /attendance/servicetimes` добавляет каждой строке вычисляемое логическое поле `checkinOpen`. Самостоятельная регистрация в B1App (`CheckinPage.tsx`) убирает времена, где `checkinOpen === false`, и показывает «Check-in isn't open for this service right now.», когда ни одного не осталось. B1Checkin пока по этому полю не фильтрует.
+- **Отправка:** внутри `evaluateGates()`, до оценки емкости и коэффициентов, `findClosedServiceTimeGroups()` отклоняет пакет с `409 { error: "notOpen", groups: [{ groupId, groupName, reason: "notOpen" }] }`, если время служения любой целевой сессии находится вне своего окна. B1Checkin показывает это на существующем экране жесткого ограничения ("room is full or closed").
 
 ### Age/grade eligibility (kiosk-side)
 

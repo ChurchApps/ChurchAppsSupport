@@ -12,13 +12,17 @@ La section Site web dans B1 Admin vous offre un constructeur de site web complet
 
 ## Ce que vous pouvez faire
 
-Le constructeur de site web est organisé en cinq domaines principaux :
+Le constructeur de site web est organisé en plusieurs domaines principaux :
 
 ### Pages
 
-Créez et gérez toutes les pages de votre site web d'église. Le tableau **Pages** affiche chaque page avec son statut -- soit **Généré** (automatiquement créé par le système) soit **Personnalisé** (créé par vous). Vous pouvez ajouter de nouvelles pages personnalisées, modifier les pages existantes ou convertir les pages générées automatiquement en pages personnalisées pour avoir un contrôle total sur leur contenu.
+Créez et gérez toutes les pages de votre site web d'église. Le tableau **Pages** répertorie chaque page -- les pages créées automatiquement par le système portent un badge **Généré**, et les autres sont des pages personnalisées que vous avez créées. Vous pouvez ajouter de nouvelles pages personnalisées, modifier les pages existantes ou convertir les pages générées automatiquement en pages personnalisées pour avoir un contrôle total sur leur contenu.
 
 Vos liens de navigation sont affichés dans une structure arborescente. Vous pouvez réorganiser les liens en utilisant le glisser-déposer pour définir la hiérarchie exacte et l'ordre que vous souhaitez que les visiteurs voient.
+
+### Blog {#blog}
+
+Publiez des actualités, des mises à jour et des méditations sous forme d'articles de blog à l'adresse `/blog` de votre site, avec un flux RSS. Voir le guide [Blog](blog).
 
 ### Blocs
 
@@ -30,11 +34,11 @@ Personnalisez le thème, les couleurs, les polices, le logo et l'espacement de v
 
 ### Fichiers
 
-Téléchargez et organisez tous vos ressources multimédias -- images, documents et autres fichiers -- dans un seul emplacement central. Utilisez les dossiers pour garder les choses organisées et copiez les URL des fichiers pour les utiliser n'importe où sur votre site. Voir [Fichiers](files) pour plus d'informations.
+Téléchargez et gérez toutes vos ressources multimédias -- images, documents et autres fichiers -- dans un seul emplacement central, et copiez les liens des fichiers pour les utiliser n'importe où sur votre site. Voir [Fichiers](files) pour plus d'informations.
 
 ### Calendriers
 
-Publiez des calendriers d'événements sur votre site web pour que les visiteurs puissent voir ce qui se passe à votre église. Créez des calendriers sélectionnés qui tirent les événements de plusieurs groupes dans une seule vue.
+Publiez des calendriers d'événements sur votre site web pour que les visiteurs puissent voir ce qui se passe à votre église. Créez des calendriers sélectionnés qui tirent les événements de plusieurs groupes dans une seule vue. Les calendriers ont leur propre élément **Calendriers** dans le menu B1 Admin, distinct de **Site web**.
 
 :::tip
 Commencez par [Configuration initiale](initial-setup) si vous configurez votre site web pour la première fois. Cela vous guide dans la configuration du domaine, la création de votre première page et la configuration de l'apparence de votre site.

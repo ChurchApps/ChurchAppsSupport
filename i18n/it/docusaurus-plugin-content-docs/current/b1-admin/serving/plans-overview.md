@@ -23,8 +23,9 @@ La Panoramica dei Piani ti dà una visione complessiva di tutti i tuoi incarichi
 
 1. In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Servizio** e fai clic su **Piani**.
 2. Seleziona una **scheda ministero** nella parte superiore della pagina.
-3. Fai clic su un **tipo di piano** per aprire il suo elenco di piani.
-4. Fai clic sul pulsante **Panoramica** vicino alla parte superiore della pagina.
+3. Fai clic su **Overview** accanto al tipo di piano nell'elenco **Plan Types**, oppure apri il tipo di piano e fai clic su **Overview** in alto nella pagina.
+
+La panoramica riguarda il tipo di piano da cui l'hai aperta. Fai clic sul nome del tipo di piano in alto nella panoramica per tornare al suo elenco di piani.
 
 ## Lettura della Griglia Panoramica
 
@@ -62,20 +63,31 @@ La Pianificazione Automatica riempie solo gli slot che sono già vuoti -- non so
 
 Fai clic su **Email Volontari** per inviare una notifica a ogni volontario assegnato da qualsiasi parte nell'intervallo di date e ministeri attualmente filtrati, in un'azione sola, piuttosto che inviare email piano per piano. B1 segnala quante email sono state inviate e quante non riuscite.
 
+## Invio di SMS a Tutti i Programmati {#texting-everyone-scheduled}
+
+Se la tua chiesa ha collegato un [provider SMS](../settings/church-settings.md#texting) e puoi sia modificare i piani sia inviare SMS, nella parte superiore della panoramica compare il pulsante **Text Volunteers**.
+
+1. Fai clic su **Text Volunteers**.
+2. La finestra di dialogo mostra quanti volontari riceveranno il messaggio (ad esempio, "12 of 14 volunteers will receive this text"), oltre a quanti hanno annullato l'iscrizione agli SMS e quanti non hanno un numero di telefono registrato.
+3. Scrivi il tuo **Message**. Puoi fare clic su un segnaposto per inserire il nome di ciascun volontario o il nome della tua chiesa.
+4. Fai clic su **Send**. B1 segnala quanti SMS sono stati inviati.
+
+Ogni volontario assegnato nell'intervallo di date riceve un solo SMS al numero di cellulare del suo profilo, anche se presta servizio in più date. Le persone che condividono un numero di telefono (come il telefono di famiglia) ricevono un solo SMS. I volontari che hanno risposto STOP a un SMS precedente vengono saltati.
+
+:::info
+Gli SMS vengono inviati tramite il provider SMS della tua chiesa, quindi si applicano le sue tariffe. Se la tua chiesa esaurisce i crediti SMS, l'invio si interrompe e la finestra di dialogo te lo segnala. Un singolo invio raggiunge al massimo 200 volontari; restringi l'intervallo di date se ne hai di più.
+:::
+
 ## Evidenziazione del Programma di un Volontario
 
 Utilizza il menu a discesa **Evidenzia** per scegliere una persona dal tuo team -- ogni cella dove sono assegnati è evidenziata nella griglia, in modo da poter vedere ovunque stiano già servendo prima di aggiungerli a un altro slot. Scegli **Tutti** per disattivare l'evidenziazione.
 
 ## Filtraggio della Panoramica
 
-Puoi regolare ciò che la panoramica mostra utilizzando i controlli dei filtri nella parte superiore:
+Puoi regolare ciò che la panoramica mostra utilizzando i controlli sopra la griglia. La griglia si aggiorna non appena li modifichi:
 
+- **All positions / Unfilled only** -- Scegli **Unfilled only** per nascondere le righe in cui ogni data è già riempita, in modo da poterti concentrare solo sulle posizioni che hanno ancora bisogno di un volontario.
 - **Data Inizio / Data Fine** -- Per impostazione predefinita, la panoramica mostra 12 settimane nel futuro. Inserisci date personalizzate per espandere o restringere l'intervallo.
-- **Ministero** -- Passa a un ministero diverso senza lasciare la panoramica.
-- **Tipo di Piano** -- Filtra a un tipo di piano specifico all'interno del ministero selezionato.
-- **Solo non riempiti** -- Attivalo per nascondere le righe dove ogni data è già riempita, in modo da poterti concentrare solo sulle posizioni che hanno ancora bisogno di un volontario.
-
-Fai clic su **Filtra** dopo aver apportato modifiche per aggiornare la griglia.
 
 ## Esportazione in CSV
 

@@ -31,6 +31,8 @@ Depois de revisar sua família e fazer qualquer atribuição de grupo necessári
 Se sua igreja configurou [limites de segurança](../../b1-admin/attendance/checkin-safety) em suas salas, o servidor as verifica antes de salvar:
 
 - Se uma sala selecionada estiver **cheia ou fechada**, o check-in não passa e o aplicativo nomeia a sala para que você possa escolher uma diferente.
+- Se o horário do serviço tiver um [cronograma de check-in](../../b1-admin/attendance/setup#setting-a-check-in-schedule) e sua janela de check-in não estiver aberta agora, o check-in nas salas desse horário também é recusado. A tela **Can't check in yet** lista a sala como "room is full or closed"; toque em **Change Rooms** para escolher outro horário de serviço ou grupo.
+
 - Se uma sala de crianças estiver **com falta de voluntários** para sua proporção, o aplicativo mostra um aviso que um membro da equipe pode confirmar para continuar, ou bloqueia o check-in completamente -- dependendo de como sua igreja configurou a aplicação de proporção.
 
 ## Impressão de Rótulos

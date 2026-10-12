@@ -21,16 +21,16 @@ Das Erstellen einer Gruppe in B1 Admin ist unkompliziert. Sie werden eine Katego
 ## Hinzufügen einer neuen Gruppe
 
 1. Öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **People** (Personen) und klicken Sie auf **Groups** (Gruppen).
-2. Klicken Sie auf **Add Group** (Gruppe hinzufügen) und geben Sie einen **Category Name** (Kategorienamen) ein. Kategorien helfen Ihnen, zugehörige Gruppen zusammen zu organisieren (z. B. "Kleingruppen", "Ministerien" oder "Komitees"). Wenn eine Kategorie bereits vorhanden ist, können Sie sie aus der Liste auswählen.
-3. Geben Sie den **Group Name** (Gruppennamen) ein.
-4. Klicken Sie auf **Add** (Hinzufügen). Ihre neue Gruppe wird in der Liste unter der ausgewählten Kategorie angezeigt.
+2. Klicken Sie im Seitenkopf auf **Add Group** (Gruppe hinzufügen). Darunter, unterhalb der Liste, öffnet sich das Formular **New Group** (Neue Gruppe). Geben Sie einen **Category Name** (Kategorienamen) ein. Kategorien helfen Ihnen, zugehörige Gruppen zusammen zu organisieren (z. B. "Kleingruppen", "Ministerien" oder "Komitees"). Wenn eine Kategorie bereits vorhanden ist, können Sie sie aus der Liste auswählen.
+3. Geben Sie den **Name** (Gruppennamen) ein.
+4. Klicken Sie auf **Add** (Hinzufügen). Ihre neue Gruppe wird in der Liste angezeigt, wobei ihre Kategorie unter dem Namen angezeigt wird.
 
 ## Konfigurieren von Gruppeneinstellungen
 
 Nachdem Ihre Gruppe erstellt wurde, können Sie zusätzliche Details ausfüllen:
 
 1. Klicken Sie auf den **Gruppennamen** in der Liste, um ihn zu öffnen.
-2. Klicken Sie auf das **Stiftsymbol**, um die Gruppeneinstellungen zu bearbeiten.
+2. Klicken Sie unter den Gruppendetails auf der linken Seite der Gruppenseite auf **Edit** (Bearbeiten), um die Gruppeneinstellungen zu bearbeiten.
 3. Konfigurieren Sie die folgenden Optionen:
    - **Description** (Beschreibung) -- Eine kurze Zusammenfassung, worum es in der Gruppe geht. Dies ist für Mitglieder sichtbar.
    - **Meeting Times** (Treffzeiten) -- Wann sich die Gruppe typischerweise trifft (z. B. "Mittwochs um 19 Uhr").
@@ -58,7 +58,7 @@ Das Ausschalten von Diskussionen und Ankündigungen entfernt die Registerkarte "
 
 Starten Sie eine neue Sitzung einer wiederkehrenden Klasse oder eines Ministeriums? Duplizieren Sie anstelle der Neueinstellung aller Einstellungen eine vorhandene Gruppe:
 
-1. Öffnen Sie die Gruppe und klicken Sie auf das Symbol **duplicate** (Duplizieren) im Gruppenbanner (neben Bearbeiten).
+1. Öffnen Sie die Gruppe und klicken Sie auf **Duplicate** (Duplizieren) (unterhalb der Schaltfläche **Edit** (Bearbeiten) auf der linken Seite der Gruppenseite).
 2. Bestätigen Sie die Duplizierung.
 
 Die Kopie übernimmt die Einstellungen der Original – Kategorie, Beschreibung, Treffzeit/Ort, Beitrittrichtlinie, Etiketten und Campus – aber **nicht** ihre Mitglieder. Die neue Gruppe wird nach dem Original mit "(Copy)" (Kopie) benannt; benennen Sie sie in den Gruppeneinstellungen um.
@@ -67,10 +67,10 @@ Die Kopie übernimmt die Einstellungen der Original – Kategorie, Beschreibung,
 
 Wenn eine Gruppe nicht mehr aktiv ist, Sie aber ihre Geschichte beibehalten möchten, statt sie zu löschen:
 
-1. Öffnen Sie die Gruppe und klicken Sie auf das **Stiftsymbol**, um ihre Einstellungen zu bearbeiten.
+1. Öffnen Sie die Gruppe und klicken Sie auf **Edit** (Bearbeiten), um ihre Einstellungen zu bearbeiten.
 2. Klicken Sie auf **Archive** (Archiv) und bestätigen Sie.
 
-Archivierte Gruppen werden aus der Hauptgruppenliste entfernt. Um eine Gruppe wiederzufinden, aktivieren Sie den Umschalter **Show archived** (Archivierte anzeigen) oben auf der Gruppenseite und klicken Sie dann auf **Restore** (Wiederherstellen) neben der Gruppe, um sie zurückzubringen.
+Archivierte Gruppen werden aus der Hauptgruppenliste entfernt. Um eine Gruppe wiederzufinden, klicken Sie auf die Schaltfläche **Show archived** (Archivierte anzeigen) neben den Kategorieschaltflächen oben auf der Gruppenseite und klicken Sie dann auf **Restore** (Wiederherstellen) neben der Gruppe, um sie zurückzubringen.
 
 :::info
 Das Archivieren einer Gruppe löscht nicht ihre Mitglieder, Anwesenheitshistorie oder Kalenderereignisse – es versteckt die Gruppe nur in der Standardliste, bis Sie sie wiederherstellen.
@@ -80,11 +80,11 @@ Das Archivieren einer Gruppe löscht nicht ihre Mitglieder, Anwesenheitshistorie
 
 Nach dem Erstellen und Konfigurieren Ihrer Gruppe können Sie folgende Schritte ausführen:
 
-- **Mitglieder hinzufügen** – Suchen Sie nach Personen und fügen Sie sie der Gruppe hinzu. Verwenden Sie das grüne Schlüsselsymbol, um Gruppenleiter zu designieren. Siehe [Group Members](./group-members.md).
+- **Mitglieder hinzufügen** – Suchen Sie nach Personen und fügen Sie sie der Gruppe hinzu. Verwenden Sie das Sternsymbol (**Make Leader** (Zum Leiter machen)), um Gruppenleiter zu designieren. Siehe [Group Members](./group-members.md).
 - **Einen Kalender einrichten** – Erstellen Sie Veranstaltungen und wiederkehrende Treffen für die Gruppe. Siehe [Group Calendar](./group-calendar.md).
 - **Kommunizieren** – Senden Sie Nachrichten an alle Gruppenmitglieder direkt von der Gruppenseite.
-- **Daten exportieren** – Klicken Sie auf das Download-Symbol, um die Mitgliederliste Ihrer Gruppe zu exportieren.
+- **Daten exportieren** – Klicken Sie oberhalb der Mitgliederliste der Gruppe auf **Export** (Exportieren), um sie herunterzuladen.
 
 :::info
-Alle Ihre Kirchengruppen sind auf der Hauptgruppenseite nach Kategorien organisiert. Sie können Kategorien jederzeit umarrangieren oder umbenennen, wenn Ihre Kirche wächst.
+Jede Gruppe gehört zu einer Kategorie, und auf der Hauptgruppenseite können Sie die Liste nach Kategorie filtern. Sie können Kategorien jederzeit umarrangieren oder umbenennen, wenn Ihre Kirche wächst.
 :::

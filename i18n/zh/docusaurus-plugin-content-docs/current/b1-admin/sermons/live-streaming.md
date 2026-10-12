@@ -19,14 +19,14 @@ title: "直播"
 
 </div>
 
-该页面有两个主要标签页：**Services** 用于管理您的直播时间表，**Settings** 用于配置您的流媒体页面。
+直播功能通过 Jump 菜单中 **Sermons** 版块下的两个页面进行管理：**Live Stream Times** 用于管理您的直播时间表，**Settings** 用于配置您流媒体页面上的标签页。
 
 ## 管理服务
 
 ### 添加服务
 
 1. 在 B1 Admin 中，打开 [Jump 菜单](../introduction.md#getting-around-with-the-jump-menu)（左上角的搜索栏），展开 **Sermons**，然后点击 **Live Stream Times**。
-2. 点击 **Add Service** 按钮以创建新的预定服务。
+2. 点击页面顶部的 **Add Service** 按钮以创建新的预定服务。现有服务以表格形式列出，显示每个服务的名称、时间、提供程序和时长；点击某行的编辑图标即可更改。
 3. 输入 **Service Name**（例如"Sunday Morning"）。
 4. 设置 **Service Time** -- 选择您的服务开始的日期和时间。
 5. 将 **Recurs Weekly** 设置为 **Yes** 以进行定期每周服务，或 **No** 以进行一次性活动。
@@ -47,19 +47,19 @@ title: "直播"
 
 ## 流媒体页面设置
 
-点击 **Settings** 标签页以自定义在直播旁显示的标签页和链接。
+要自定义在直播旁显示的标签页和链接，请打开 Jump 菜单，展开 **Sermons**，然后点击 **Settings**。**Stream Settings** 页面会显示您的 **Content Tabs** 列表。
 
 ### 添加标签页
 
 1. 点击 **Add** 按钮为您的直播页面添加新标签页。
-2. 选择 **Chat** 预设计标签页或使用外部 URL 添加自定义标签页。
+2. 选择 **Link Type**：**External URL** 用于自定义链接，或选择预设计的 **Chat** 或 **Prayer** 标签页之一。
 3. 对于聊天标签页，只需在 **Tab Text** 框中为其提供名称，设置即完成。
 4. 对于链接标签页，输入标签页名称，通过点击图标按钮选择图标，然后输入 URL。
 5. 您配置的标签页将出现在直播页面上，供观众访问其他资源和交互功能。
 
 ### 预览您的流
 
-点击 **View Your Stream** 按钮以准确看到您的直播页面对访问者的样子，包括您的徽标、服务时间和配置的标签页。
+在 **Live Stream Times** 页面上，点击页面顶部的 **View Your Stream** 按钮以准确看到您的直播页面对访问者的样子，包括您的徽标、服务时间和配置的标签页。
 
 ## 设置 YouTube 直播
 

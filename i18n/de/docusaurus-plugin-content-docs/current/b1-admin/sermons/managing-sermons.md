@@ -22,8 +22,8 @@ Die Seite Predigten zeigt Ihre gesamte Predigtensammlung an. Von hier aus könne
 ## Ihre Predigtensammlung anzeigen
 
 1. Öffnen Sie in B1 Admin das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Predigten** und klicken Sie auf **Predigten**.
-2. Die Seite Predigten zeigt alle Ihre Predigteneinträge, organisiert nach Playlisten. Jede Predigt zeigt ihr Vorschaubild, Titel und Datum an.
-3. Klicken Sie auf eine beliebige Predigt, um ihre Details anzusehen oder zu bearbeiten.
+2. Die Seite Predigten zeigt Ihre Predigteneinträge in einer Tabelle mit der **Playlist**, dem Titel und dem **Veröffentlichungsdatum** jeder Predigt. Verwenden Sie das Suchfeld über der Tabelle, um die Liste zu filtern. Ihre Playlisten werden in einem Panel **Playlisten** neben der Tabelle aufgelistet.
+3. Klicken Sie in der Zeile einer Predigt auf **Bearbeiten**, um ihre Details anzusehen oder zu bearbeiten.
 
 ## Eine Predigt hinzufügen
 
@@ -40,7 +40,7 @@ Sie können auch eine permanente Live-Stream-URL hinzufügen, indem Sie im Dropd
 
 ## Eine Predigt bearbeiten
 
-1. Klicken Sie auf eine beliebige Predigt in Ihrer Sammlung, um ihre Details zu öffnen.
+1. Klicken Sie in der Zeile einer beliebigen Predigt in Ihrer Sammlung auf **Bearbeiten**, um ihre Details zu öffnen.
 2. Aktualisieren Sie den Titel, den Sprecher, das Datum, die Beschreibung, das Vorschaubild oder die Medienlinks nach Bedarf.
 3. Klicken Sie auf **Speichern**, um Ihre Änderungen zu übernehmen.
 

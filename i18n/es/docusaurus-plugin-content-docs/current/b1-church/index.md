@@ -18,7 +18,7 @@ Cuando los miembros visitan su sitio B1.church, ven el sitio web público de su 
 - **Grupos** -- Ver los grupos a los que pertenece, ver miembros del grupo, unirse a conversaciones y registrar asistencia.
 - **Donaciones** -- Haga donaciones a su iglesia en línea y vea su historial de donaciones.
 - **Eventos** -- Busque eventos próximos y regístrese a usted mismo y a su familia.
-- **Servicio** -- Ver planes de servicio, sus posiciones de voluntariado e inscribirse para oportunidades de voluntariado abiertas.
+- **Servicio** -- Ver planes de servicio, sus posiciones de voluntariado e inscribirse para oportunidades de voluntariado abiertas. Elige recibir recordatorios de servicio y eventos por texto en tus [preferencias de notificación](./getting-started/notification-preferences.md) (responde STOP en cualquier momento para dejar de recibirlos).
 - **Planes** -- Vea planes de servicio próximos, vea sus posiciones asignadas y acceda a detalles de canciones y órdenes de servicio.
 - **Registro de Asistencia** -- Regístrese a usted mismo y a los miembros de su hogar para servicios y eventos. Los invitados pueden registrarse a través de código QR.
 - **Directorio Comunitario** -- Busque el directorio de miembros de su iglesia, vea perfiles y envíe mensajes directos. Controle quién puede ver su información de contacto desde la [pestaña Privacidad de su perfil](./getting-started/editing-your-profile.md#privacy-tab).

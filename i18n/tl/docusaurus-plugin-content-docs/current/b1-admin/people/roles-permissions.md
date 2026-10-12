@@ -24,7 +24,7 @@ Ang role ay isang set ng mga pahintulot na itinatalaga ninyo sa isa o higit pang
 
 Kinokontrol ng bawat role ang access sa mga partikular na bahagi ng B1 Admin, kabilang ang:
 
-- **People** -- pagtingin at pag-edit ng mga profile ng miyembro. Ang tab na Notes sa talaan ng isang tao ay nangangailangan ng **Edit People**, at hiwalay na pahintulot na **View Confidential Notes** ang kumokontrol sa access sa seksyon ng Confidential Notes (para sa pastoral care, personal na kasaysayan, at iba pang katulad na sensitibong tala).
+- **People** -- pagtingin at pag-edit ng mga profile ng miyembro. Ang seksyong Notes sa talaan ng isang tao ay nangangailangan ng **Edit People**, at hiwalay na pahintulot na **View Confidential Notes** ang kumokontrol sa access sa seksyon ng Confidential Notes (para sa pastoral care, personal na kasaysayan, at iba pang katulad na sensitibong tala).
 - **Donations** -- pamamahala ng mga handog at ulat pinansyal
 - **Attendance** -- pagrerehistro at pagtingin ng datos ng attendance
 - **Forms** -- paggawa at pamamahala ng [mga custom form](../forms/creating-forms.md)

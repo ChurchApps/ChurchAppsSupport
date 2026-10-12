@@ -33,6 +33,10 @@ title: "메시징 엔드포인트"
 
 `contentType: "person"`(개인 기록의 노트 탭) 또는 `contentType: "personConfidential"`(기밀 노트 섹션)의 대화는 모든 읽기 및 쓰기 경로에서 제어됩니다. 이러한 콘텐츠 유형에 대해 그 외의 공개 경로는 `401`을 반환합니다. `person`은 MembershipApi **사람 / 편집** 권한이 필요하고, `personConfidential`은 **사람 / 기밀 노트 보기**가 필요합니다. 범위가 지정된 API 키의 경우 `people:write`는 두 작업을 모두 수행합니다(키의 사용자는 여전히 기본 역할 권한을 보유해야 함).
 
+### 워크플로 카드 노트 액세스 제어 {#workflow-card-notes-access-control}
+
+`contentType: "workflowCard"`(워크플로 카드의 노트, `contentId`는 카드의 작업 ID)인 대화는 해당 카드를 열 수 있는 사용자만 읽고 쓸 수 있습니다. 즉 DoingApi **Tasks / View** 권한이 있는 사용자, 또는 카드가 배정되었거나, 카드를 만들었거나, 카드의 대상이 된 사람 또는 그룹입니다. 그 밖의 사용자는 위의 공개 경로를 포함한 모든 읽기 경로에서 `401`을 받습니다. 카드의 대화는 카드 자체를 통해 `POST /doing/tasks/:id/conversation`(본문 `{ "conversationId": "..." }`, 처음 첨부된 대화가 유지됨)으로 첨부되며, 이는 카드 편집자와 담당자가 호출할 수 있습니다.
+
 ### 예시: 대화 시작
 
 ```
@@ -168,12 +172,11 @@ Authorization: Bearer <token>
 
 기본 경로: `/messaging/notificationpreferences`
 
-표준 CRUD를 확장합니다. 기본 클래스는 POST `/`(생성 또는 업데이트, 권한 필요 없음)을 제공합니다.
-
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
 |--------|------|------|------------|-------------|
-| POST | `/` | JWT | — | 알림 설정을 생성하거나 업데이트합니다(CRUD 기본 클래스에서) |
+| GET | `/categories` | JWT | — | 기본 및 허용 채널이 포함된 알림 카테고리를 나열합니다 |
 | GET | `/my` | JWT | — | 현재 사용자의 알림 설정을 로드합니다(없으면 자동으로 기본값을 만듭니다) |
+| POST | `/` | JWT | — | 현재 사용자의 설정을 저장합니다. 본문: `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay` 중 아무것이나, 그리고 선택적 `overrides: [{ categoryKey, channel, optedIn }]`(channel은 `push`, `email`, `in_app`, `sms` 중 하나이며, 잠긴 카테고리는 무시됩니다). `allowSms`는 회원의 문자 알림 수신 동의입니다. 이전 방식의 행 배열 본문도 여전히 허용됩니다 |
 
 ## 연결
 
@@ -254,6 +257,9 @@ SMS 문자 제공자, 그룹 문자 메시징, 배달 추적을 관리합니다.
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
 |--------|------|------|------------|-------------|
 | GET | `/providers` | JWT | — | 교회의 문자 제공자를 로드합니다(자격 증명은 마스킹됨) |
+| GET | `/status` | JWT | — | `{ enabled }` — 교회에 활성화된 문자 제공자가 있는지 여부입니다. 로그인한 모든 교회 사용자가 사용할 수 있으며, 문자를 보낼 수 있을 때만 **문자** 옵션을 표시하는 데 쓰입니다 |
+| GET | `/inboundUrl` | JWT | `texting.send` 또는 `settings.edit` | `{ url }` — 제공자에 붙여넣을 교회의 수신(STOP) 웹훅 URL입니다 |
+| POST | `/inbound/:churchId/:token` | Public | — | 제공자의 수신 메시지 웹훅입니다. `token`은 교회 ID의 HMAC입니다. 답장이 정확히 중지 단어(`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`)이면 일치하는 모든 사람을 `optedOut`으로 표시하고 `allowSms`를 끕니다. `{ optedOut: <count> }`를 반환하며, 다른 답장은 `{ optedOut: 0 }`을 반환합니다 |
 | GET | `/preview/:groupId` | JWT | — | 그룹 문자의 수신자를 미리 봅니다(적격, 옵트아웃, 전화번호 없음 수) |
 | GET | `/sent` | JWT | — | 교회의 모든 전송된 문자 메시지 기록을 로드합니다 |
 | GET | `/sent/:id/details` | JWT | — | 수신자별 배달 로그와 함께 전송된 문자를 로드합니다 |

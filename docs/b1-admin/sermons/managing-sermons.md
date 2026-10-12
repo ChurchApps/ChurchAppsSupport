@@ -22,8 +22,8 @@ The Sermons page displays your entire sermon library. From here you can add new 
 ## Viewing Your Sermon Library
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Sermons**, and click **Sermons**.
-2. The Sermons page shows all your sermon entries, organized by playlist. Each sermon displays its thumbnail, title, and date.
-3. Click on any sermon to view or edit its details.
+2. The Sermons page shows your sermon entries in a table with each sermon's **Playlist**, title, and **Publish Date**. Use the search box above the table to filter the list. Your playlists are listed in a **Playlists** panel beside the table.
+3. Click **Edit** on any sermon row to view or edit its details.
 
 ## Adding a Sermon
 
@@ -40,7 +40,7 @@ You can also add a permanent live stream URL by selecting **Add Permanent Live U
 
 ## Editing a Sermon
 
-1. Click on any sermon in your library to open its details.
+1. Click **Edit** on any sermon row in your library to open its details.
 2. Update the title, speaker, date, description, thumbnail, or media links as needed.
 3. Click **Save** to apply your changes.
 

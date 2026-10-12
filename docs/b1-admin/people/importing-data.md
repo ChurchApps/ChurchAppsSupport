@@ -23,7 +23,7 @@ The B1 Transfer tool makes it easy to bring your existing data into B1, whether 
 
 1. Log in to **B1 Admin**.
 2. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Settings**, and click **Settings**.
-3. Click the **Import/Export** button in the top right of the page header.
+3. Click the **Import/Export** link under your church's name at the top of the left-hand settings menu.
 4. This will open the **B1 Transfer** tool in a new tab at [transfer.b1.church](https://transfer.b1.church).
 
 The transfer tool walks you through four steps: Source, Preview, Destination, and Run.

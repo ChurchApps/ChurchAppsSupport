@@ -35,7 +35,7 @@ Vos plans sont divisés en deux onglets : **À venir** et **Passé**. Chaque ent
 Sous la liste se trouve une section **Dates de blocage**. Utilisez-la pour gérer les dates lorsque vous ne pouvez pas servir. Vous pouvez ajouter, modifier et supprimer des plages de dates de blocage pour que vos responsables d'équipe sachent quand programmer autour de vous.
 
 :::info
-Votre église peut envoyer des **rappels** avant les services pour lesquels vous êtes programmé, par e-mail et par notification d'application. Si vous n'avez pas encore répondu, vous pouvez **Accepter** ou **Décliner** directement à partir de l'e-mail de rappel -- pas besoin de vous connecter.
+Votre église peut envoyer des **rappels** avant les services pour lesquels vous êtes programmé, par e-mail et par notification d'application. Si votre église envoie des textos, vous pouvez aussi les recevoir par texto en activant **Messages texte** dans vos [préférences de notification](../getting-started/notification-preferences.md). Si vous n'avez pas encore répondu, vous pouvez **Accepter** ou **Décliner** directement à partir de l'e-mail de rappel -- pas besoin de vous connecter.
 :::
 
 ## Consulter les détails du plan

@@ -57,10 +57,10 @@ Für eine Gruppe, die sich jeden Samstag trifft, lege die Häufigkeit auf "Woche
 
 ## Massenerstellen von Ereignissen in B1 Admin
 
-Die Seite der Gruppe in B1 Admin hat auch eine Registerkarte **Kalender**, auf der Mitarbeiter eine ganze Saison von Treffen auf einmal planen können:
+Die Seite der Gruppe in B1 Admin hat auch einen Bereich **Kalender**, in dem Mitarbeiter eine ganze Saison von Treffen auf einmal planen können:
 
-1. Öffne die Gruppe in B1 Admin und wähle die Registerkarte **Kalender**.
-2. Klicke auf **Ereignisse hinzufügen**, um den Dialog **Wiederkehrende Ereignisse hinzufügen** zu öffnen.
+1. Öffne die Gruppe in B1 Admin und klicke im Bereich **Kalender** auf **All events** (Alle Ereignisse).
+2. Klicke auf **+ Add Events** (+ Ereignisse hinzufügen), um den Dialog **Wiederkehrende Ereignisse hinzufügen** zu öffnen.
 3. Wähle den Zeitplan (wöchentlich, alle 2 Wochen, monatlich oder einmalig), die Daten des **Ersten Treffens** und des **Letzten Treffens** und optional **Feiertage überspringen**.
 4. Überprüfe die Vorschau der Treffendaten und deaktiviere alle zum Überspringen.
 5. Lasse **RSVPs erlauben** aktiviert, wenn Mitglieder auf diese Ereignisse reagieren können (siehe unten), speichere dann.
@@ -69,8 +69,8 @@ Die Seite der Gruppe in B1 Admin hat auch eine Registerkarte **Kalender**, auf d
 
 Gruppenereignisse können RSVPs sammeln - ein **Ja**, **Nein** oder **Vielleicht** für jedes Ereignisvorkommen.
 
-- **RSVPs erlauben** ist standardmäßig für Ereignisse aktiviert, die über den Massenhinzufügen-Dialog erstellt wurden; deaktiviere dies, um Antworten für diese Ereignisse auszuschalten. Ereignisse mit deaktiviertem RSVP werden auf der Kalenderregisterkarte als **Deaktiviert** angezeigt.
-- Auf der Gruppenkalender-Registerkarte von B1 Admin zeigt jedes Ereignis eine Antwortzusammenfassung an (z. B. "5 ja · 2 vielleicht · 1 nein"). Klicke durch, um das Klassenbuch **RSVP-Antworten** zu öffnen, das auflistet, wer für diese Veranstaltung mit ja, vielleicht und nein geantwortet hat.
+- **RSVPs erlauben** ist standardmäßig für Ereignisse aktiviert, die über den Massenhinzufügen-Dialog erstellt wurden; deaktiviere dies, um Antworten für diese Ereignisse auszuschalten. Ereignisse mit deaktiviertem RSVP werden in der Ereignisliste der Gruppe als **Deaktiviert** angezeigt.
+- In der Ereignisliste der Gruppe in B1 Admin zeigt jedes Ereignis eine Antwortzusammenfassung an (z. B. "5 ja · 2 vielleicht · 1 nein"). Klicke durch, um das Klassenbuch **RSVP-Antworten** zu öffnen, das auflistet, wer für diese Veranstaltung mit ja, vielleicht und nein geantwortet hat.
 
 :::tip
 RSVPs geben Führungskräften eine Kopfzahl ohne die Formalität der vollständigen Ereignisregistrierung. Verwende für bezahlte Anmeldungen oder kapazitätsverwaltete Ereignisse stattdessen [Ereignisregistrierung](../calendars/creating-calendars.md#enabling-event-registration).

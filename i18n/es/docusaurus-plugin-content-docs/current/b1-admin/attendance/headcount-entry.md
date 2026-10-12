@@ -19,13 +19,13 @@ Los conteos le permiten registrar un número total simple de asistencia -- para 
 </div>
 
 :::info
-Los conteos son una alternativa de total a [Registro de Asistencia](recording-attendance.md). Si necesita saber **quién** asistió -- por ejemplo, para hacer seguimiento a las personas que no han regresado -- siga usando asistencia de sesión nominada en la pestaña Sessions de un grupo. Los conteos solo almacenan un número.
+Los conteos son una alternativa de total a [Registro de Asistencia](recording-attendance.md). Si necesita saber **quién** asistió -- por ejemplo, para hacer seguimiento a las personas que no han regresado -- siga usando asistencia de sesión nominada en las Sessions de un grupo. Los conteos solo almacenan un número.
 :::
 
 ## Registrar un Conteo
 
 1. Abra **B1 Admin**, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda), expanda **People**, y haga clic en **Attendance**.
-2. Seleccione la subpestaña **Headcounts**.
+2. Haga clic en **Enter headcount** en la columna izquierda.
 3. Complete el formulario:
    - **Service** *(requerido)*
    - **Service Time** -- deje en blanco para registrar un total en todos los horarios de servicio
@@ -34,14 +34,14 @@ Los conteos son una alternativa de total a [Registro de Asistencia](recording-at
    - **Headcount** -- el número total de personas presentes
 4. Haga clic en **Save**.
 
-La tabla **Recent Headcounts** a la derecha enumera sus últimas entradas con su fecha, servicio, horario de servicio, grupo y recuento. Haga clic en una fila para cargarla en el formulario si necesita corregirla o eliminarla.
+La tabla **Recent Headcounts** junto al formulario enumera sus últimas entradas con su fecha, servicio, horario de servicio, grupo y recuento. Haga clic en una fila para cargarla en el formulario si necesita corregirla o eliminarla.
 
 ## Informe de Tendencia de Conteo
 
-1. Desde la misma página **Attendance**, seleccione la pestaña **Headcount Trend**.
+1. Desde la misma página **Attendance**, haga clic en **All years** en la columna izquierda y, a continuación, seleccione la pestaña **Headcount Trend**.
 2. Use los filtros **Campus**, **Service**, **Service Time** y **Group** para reducir el informe.
 
-El informe muestra sus conteos registrados sumados por semana, tanto como un gráfico de líneas como una tabla -- el mismo estilo de informe utilizado por las [pestañas de tendencia de Asistencia y Grupos](tracking-attendance.md).
+El informe muestra sus conteos registrados sumados por semana, tanto como un gráfico de líneas como una tabla -- el mismo estilo de informe utilizado por las pestañas [Attendance Trend y Group Attendance](tracking-attendance.md). Los conteos registrados para la semana actual también aparecen bajo **Headcounts this week** en la página principal de Attendance.
 
 ## Páginas Relacionadas
 

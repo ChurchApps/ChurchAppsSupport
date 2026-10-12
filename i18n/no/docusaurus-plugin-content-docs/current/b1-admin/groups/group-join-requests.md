@@ -34,7 +34,7 @@ Når en gruppe bruker regelen **Forespørsel**, går alle forsøk på å bli med
 
 1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin og velg **Personer > Grupper**
 2. Klikk på gruppenavnet
-3. Ventende forespørsler for denne gruppen vises øverst i fanen **Medlemmer**
+3. Seksjonen **Medlemmer** viser hvor mange forespørsler som venter. Klikk på **Alle medlemmer** -- ventende forespørsler for denne gruppen vises øverst i medlemslisten
 
 ### For administratorer
 
@@ -85,9 +85,9 @@ Når du oppgir en begrunnelse for avslaget, hjelper du personen å forstå hvorf
 
 Hver forespørsel om å bli med oppretter også en oppgave under **Tjeneste &rarr; Mitt arbeid** med tittelen «*Person* ba om å bli med i *Gruppe*». Den tildeles gruppens ledere. Hvis gruppen ikke har noen leder ennå, går den til ansatte med tillatelsen **Gruppemedlemmer &gt; Rediger**, eller til menighetens domeneadministratorer hvis ingen har den tillatelsen. Ansatte og administratorer som får oppgaven på denne måten, får også et varsel som lenker rett til den.
 
-Når du åpner oppgaven, ser du navnet til den som ba om å bli med, gruppen og eventuell melding, med knappene **Godkjenn** og **Avslå** rett på oppgavekortet (Avslå åpner det samme valgfrie begrunnelsesfeltet som beskrevet ovenfor). Dette gir lederne en ekstra, varselbasert måte å behandle en forespørsel på uten å gå til gruppens fane for forespørsler.
+Når du åpner oppgaven, ser du navnet til den som ba om å bli med, gruppen og eventuell melding, med knappene **Godkjenn** og **Avslå** rett på oppgavekortet (Avslå åpner det samme valgfrie begrunnelsesfeltet som beskrevet ovenfor). Dette gir lederne en ekstra, varselbasert måte å behandle en forespørsel på uten å åpne gruppens medlemsliste.
 
-Når en forespørsel avgjøres fra ett av stedene, enten gruppens fane for forespørsler eller oppgavekortet, lukkes den overalt, slik at ledere aldri ser en utdatert oppgave for en forespørsel som allerede er behandlet.
+Når en forespørsel avgjøres fra ett av stedene, enten gruppens medlemsliste eller oppgavekortet, lukkes den overalt, slik at ledere aldri ser en utdatert oppgave for en forespørsel som allerede er behandlet.
 
 ## Varsler
 

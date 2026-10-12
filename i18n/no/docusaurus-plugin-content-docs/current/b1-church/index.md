@@ -18,7 +18,7 @@ Når medlemmer besøker B1.church-nettstedet ditt, ser de menighetens offentlige
 - **Grupper** -- Se gruppene du tilhører, se gruppemedlemmer, delta i samtaler og følg med på oppmøte.
 - **Givertjeneste** -- Gi gaver til menigheten din på nett og se giverhistorikken din.
 - **Arrangementer** -- Bla gjennom kommende arrangementer og meld deg selv og familien din på.
-- **Tjeneste** -- Se tjenesteplaner og dine frivillige oppgaver, og meld deg på ledige frivillige oppgaver.
+- **Tjeneste** -- Se tjenesteplaner og dine frivillige oppgaver, og meld deg på ledige frivillige oppgaver. Velg å få tjeneste- og arrangementspåminnelser som tekst i [varselpreferansene dine](./getting-started/notification-preferences.md) (svar STOP når som helst for å slutte).
 - **Planer** -- Se kommende tjenesteplaner, dine tildelte oppgaver, og få tilgang til sangdetaljer og gudstjenesteopplegg.
 - **Innsjekking** -- Sjekk inn deg selv og andre i husstanden til gudstjenester og arrangementer. Gjester kan registrere seg via QR-kode.
 - **Menighetskatalog** -- Bla gjennom menighetens medlemskatalog, se profiler og send direktemeldinger. Styr hvem som kan se din egen kontaktinformasjon fra [profilens fane for personvern](./getting-started/editing-your-profile.md#privacy-tab).

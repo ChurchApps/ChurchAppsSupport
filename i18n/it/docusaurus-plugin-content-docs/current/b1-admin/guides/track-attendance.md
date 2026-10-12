@@ -48,7 +48,7 @@ Contrassegna chi ha frequentato ogni servizio e gruppo.
 
 Segui la guida [Registrazione della Frequenza](../attendance/recording-attendance.md) per:
 
-1. Apri la scheda **Sessioni** di un gruppo e aggiungi una sessione per la data e l'orario del servizio. Seleziona **Aggiungi anche per gli altri gruppi** per creare sessioni per ogni classe a quel orario di servizio contemporaneamente.
+1. Apri un gruppo, fai clic su **Tutte le sessioni** nella sezione **Sessioni**, e aggiungi una sessione per la data e l'orario del servizio. Seleziona **Aggiungi anche per gli altri gruppi** per creare sessioni per ogni classe a quel orario di servizio contemporaneamente.
 2. Contrassegna chi ha frequentato ogni gruppo
 
 :::tip

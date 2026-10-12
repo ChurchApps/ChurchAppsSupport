@@ -28,13 +28,13 @@ title: "사람"
 
 7. **데이터 가져오기 및 내보내기** -- CSV 파일에서 회원 데이터를 가져오거나 Breeze와 같은 다른 교회 관리 시스템에서 마이그레이션합니다. 언제든지 디렉토리를 CSV로 내보낼 수 있습니다. [데이터 가져오기](./importing-data.md) 및 [데이터 내보내기](./exporting-data.md)를 참조하세요.
 
-8. **프로필 관리** -- 연락처 정보, 가구 구성원, [그룹 회원](../groups/group-members.md), [참석 기록](../attendance/tracking-attendance.md), [기부금](../donations/recording-donations.md) 및 [사용자 정의 양식](../forms/creating-forms.md)을 포함한 각 사람의 상세 프로필을 보고 편집합니다. 파란색 프로필 헤더의 이메일, 주소 또는 전화 번호 위로 마우스를 가져가면 한 번의 클릭으로 복사할 수 있습니다.
+8. **프로필 관리** -- 연락처 정보, 가구 구성원, [그룹 회원](../groups/group-members.md), [참석 기록](../attendance/tracking-attendance.md), [기부금](../donations/recording-donations.md) 및 [사용자 정의 양식](../forms/creating-forms.md)을 포함한 각 사람의 상세 프로필을 보고 편집합니다. 사람의 이름, 연락처 정보 및 가구는 프로필 왼쪽에 표시되고, 참석, 기부, 그룹, 메모 및 양식 요약은 그 옆에 표시됩니다. 주소, 집 또는 직장 전화번호 위로 마우스를 가져가면 한 번의 클릭으로 복사할 수 있습니다.
 
 9. **역할 및 권한 할당** -- 역할을 할당하여 팀의 누가 B1 Admin의 어느 부분에 액세스할 수 있는지 제어합니다. [역할 할당](./roles-permissions.md)을 참조하세요.
 
 ## 시작하기
 
-사람 섹션에 액세스하려면 [Jump 메뉴](../introduction.md#getting-around-with-the-jump-menu) (B1 Admin의 왼쪽 상단의 검색창)를 열고, **사람**을 확장한 후 **사람**을 클릭합니다. 위의 검색창과 아래의 회원 목록이 있는 전체 교회 디렉토리가 표시됩니다.
+사람 섹션에 액세스하려면 [Jump 메뉴](../introduction.md#getting-around-with-the-jump-menu) (B1 Admin의 왼쪽 상단의 검색창)를 열고, **사람**을 확장한 후 **사람**을 클릭합니다. 가구별로 정리된 교회 디렉토리가 표시되며, 위에는 검색창이 있습니다. **View as** 토글을 사용하여 **Households** 목록과 개인별 **Table** 사이를 전환합니다.
 
 :::tip
 B1을 처음 설정하는 경우 [기존 회원 데이터를 가져오세요](./importing-data.md). 그런 다음 필요에 따라 프로필을 검토하고 정리합니다.

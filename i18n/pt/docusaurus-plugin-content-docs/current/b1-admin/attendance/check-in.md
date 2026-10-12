@@ -25,7 +25,7 @@ O aplicativo B1 Checkin se conecta à sua configuração de presença no B1 Admi
 
 ## Configurando Check-In
 
-1. **Configure sua estrutura de presença primeiro.** No B1 Admin, vá para **Presença > Configuração** e certifique-se de que seus campi, horários de serviço e grupos estão em vigor. O aplicativo de check-in depende dessa configuração. Veja [Configuração de Presença](setup.md) para mais detalhes.
+1. **Configure sua estrutura de presença primeiro.** No B1 Admin, vá para **Pessoas > Presença** e clique em **Configuração** para certificar-se de que seus campi, horários de serviço e grupos estão em vigor. O aplicativo de check-in depende dessa configuração. Opcionalmente, defina um [cronograma de check-in](setup.md#setting-a-check-in-schedule) para cada horário de serviço, para que o check-in abra e feche automaticamente toda semana. Veja [Configuração de Presença](setup.md) para mais detalhes.
 2. **Instale o aplicativo B1 Checkin** nos dispositivos que você planeja usar. O aplicativo está disponível nas seguintes plataformas:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
@@ -110,7 +110,7 @@ Para ativar a exibição do código QR:
 3. Ative **Registro de Hóspedes por QR** e clique em **Salvar**.
 
 :::note
-Esta configuração está em **Celular > B1 CheckIn** (a mesma página que o card **Tema do Quiosque**), não em Presença.
+Esta configuração está em **Celular > B1 CheckIn** (a mesma página que o card **Tema do Quiosque**), não em Presença. A ação **Quiosque** na página de Presença tem um link para esta página.
 :::
 
 ### Compartilhando o Link de Registro
@@ -126,4 +126,4 @@ Adicione o link de registro à página "Planeje Sua Visita" ou "Sou Novo" do sit
 
 ## O que é Registrado
 
-Cada check-in cria um registro de presença no B1 Admin. Você pode visualizar esses registros nas abas [Presença](tracking-attendance.md) e [Grupos](../groups/group-members.md) como qualquer presença registrada manualmente. Não há diferença em como os dados aparecem -- ambos os métodos alimentam os mesmos relatórios.
+Cada check-in cria um registro de presença no B1 Admin. Você pode visualizar esses registros na página [Presença](tracking-attendance.md) e nas sessões de cada [grupo](../groups/group-members.md) como qualquer presença registrada manualmente. Não há diferença em como os dados aparecem -- ambos os métodos alimentam os mesmos relatórios.

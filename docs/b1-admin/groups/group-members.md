@@ -21,14 +21,16 @@ Once you have created a group, the next step is adding members. From a group's d
 ## Adding Members to a Group
 
 1. In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), choose **People > Groups** and click on the group you want to manage.
-2. Click the **Members** tab.
-3. In the search box, type the name of the person you want to add.
-4. Click **Add** next to the person's name in the search results.
+2. In the **Members** section of the group page, click **All members**. (Teams and ministries open straight to their member list.)
+3. In the **Add Person** box below the member list, type the name of the person you want to add and press **Enter** or click the search icon.
+4. Click the person's name, or the add icon next to it, in the search results.
 5. The person now appears in the group member list.
 
 :::tip
-Leave the search box blank and click **Search** to browse through your entire directory. This is helpful if you are not sure of the exact spelling of someone's name.
+Before you type anything, the **Add Person** box shows a short list of **Recent people** you can add with one click.
 :::
+
+When you are done, click the **Back to** link with the group's name to return to the group page. The group page shows a summary of the group's **Members**, **Sessions**, **Calendar**, and **Health**, each with a link to its full view.
 
 ### Adding Someone Who Isn't in B1 Yet
 
@@ -39,10 +41,10 @@ If your search finds no one, the search shows **No records found** with an **Add
 Group leaders have special privileges -- they can edit the [group calendar](group-calendar.md), manage events, and help coordinate the group.
 
 1. In the group member list, find the person you want to make a leader.
-2. Click the **green key icon** next to their name.
-3. The person is now designated as a group leader.
+2. Click the **star icon** (**Make Leader**) next to their name.
+3. The person is now designated as a group leader and shows a **Leader** badge.
 
-To remove leader status, click the green key icon again.
+To remove leader status, click the star icon (**Remove Leader Access**) again.
 
 :::info
 Any group member can view the group calendar and events, but only leaders can add or edit calendar events.
@@ -52,8 +54,8 @@ Any group member can view the group calendar and events, but only leaders can ad
 
 You can communicate with all members of a group directly from B1 Admin:
 
-1. From the group detail page, look for the messaging area.
-2. Type your message in the text box.
+1. In the group's member list, click the **Send a message to members** icon above the list.
+2. Type your message in the text box (or pick one from **Templates**).
 3. Click **Send**.
 
 Your message will be delivered to all members of the group.
@@ -62,7 +64,7 @@ Your message will be delivered to all members of the group.
 
 You can send formatted emails to all members of a group:
 
-1. From the group detail page, click the **email icon**.
+1. From the group detail page, click the **Email** button on the left side of the page.
 2. The Send Email dialog opens, showing how many members will receive the email and how many have no email address on file.
 3. Optionally select an **email template** from the dropdown, or compose a message from scratch. Click **Manage Templates** to create or edit templates.
 4. Enter a **subject line**. You can insert merge fields by clicking the field chips: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`.
@@ -92,9 +94,9 @@ After approval, a church can send up to 150 church-written emails a day. The lim
 
 ## Texting Group Members
 
-Once your church has connected a [texting provider](../settings/church-settings.md#texting), a text icon (**Text this group**) appears in the group's header.
+Once your church has connected a [texting provider](../settings/church-settings.md#texting), a **Text** button (**Text this group**) appears next to the **Email** button on the group page.
 
-1. From the group detail page, click the **text icon**.
+1. From the group detail page, click **Text**.
 2. The dialog shows how many members will get the text. Members with no mobile phone on file or who have opted out are skipped.
 3. Type your message. To personalize it, click a placeholder chip below the message box -- **First Name**, **Last Name**, **Display Name**, or **Church Name** -- to insert it at your cursor. Each placeholder is filled in with the recipient's own details when the text is sent.
 4. Click **Send**.
@@ -105,14 +107,14 @@ See [Personalizing Texts with Merge Fields](../settings/church-settings.md#perso
 
 To download the group member list as a file:
 
-1. From the group detail page, click the **download icon**.
+1. In the group's member list, click **Export** above the list.
 2. A CSV file containing the group's member information will download to your computer.
 
 A CSV export is useful for importing data into other tools, or keeping offline records. For more export options, see [Exporting Data](../people/exporting-data.md).
 
 ## Printing the Member List
 
-Click the **Print Roll Sheet** (printer) icon above the member list and choose a layout. The page opens in a new tab and your browser's print dialog appears automatically.
+In the group's member list, click the **Print Roll Sheet** (printer) icon above the list and choose a layout. The page opens in a new tab and your browser's print dialog appears automatically.
 
 - **Attendance Sheet** -- an undated class list with **Present** and **Absent** boxes for teachers to mark by hand. See [Printing a Roll Sheet](../attendance/recording-attendance.md#printing-a-roll-sheet).
 - **Contact Roster** -- a contact list for the group, dated today and headed with your church's name and the group name. Each member has a row with their **Name**, **Phone**, **Email**, and **Address**. Leaders are listed first and marked **Leader**, then everyone else by last name. The phone shown is the member's mobile number, or their home or work number if there is no mobile. Contact details are left blank for anyone who has opted out.
@@ -125,7 +127,7 @@ A contact roster contains members' personal contact information. Share printed c
 
 You can send a push notification directly to all group members who have the B1.church app installed on their device with push notifications enabled.
 
-1. From the group detail page, click the **bell icon** in the header toolbar (next to the email and text icons -- the text icon appears once a [texting provider](../settings/church-settings.md#texting) is connected).
+1. From the group detail page, click **Notify** (below the **Email** and **Text** buttons -- the **Text** button appears once a [texting provider](../settings/church-settings.md#texting) is connected).
 2. A dialog opens showing how many of your group's members have push enabled.
 3. Fill in the notification details:
    - **Title** *(required)* -- A short summary, up to 80 characters.

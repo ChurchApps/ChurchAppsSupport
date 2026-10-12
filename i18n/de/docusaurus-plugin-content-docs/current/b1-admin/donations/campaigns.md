@@ -20,11 +20,11 @@ Kampagnen ermöglichen es Ihnen, eine Spendensammlung für ein spezifisches Ziel
 
 ## Kampagnen öffnen
 
-In B1 Admin öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Spenden** und klicken Sie auf **Kampagnen**. Sie sehen eine Liste aller Kampagnen mit ihrem Zielbetraga, Gesamtzusagen und bisheriger Gesamtspende.
+In B1 Admin öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Spenden** und klicken Sie auf **Kampagnen**. Sie sehen eine Tabelle aller Kampagnen mit Fonds, Daten, Zielbetrag, Gesamtzusagen und bisheriger Gesamtspende. Eine Zusammenfassungszeile über der Tabelle zeigt die Anzahl der Kampagnen sowie die zusammengefassten Zusagen- und Spendenbeträge.
 
 ## Kampagne erstellen
 
-1. Klicken Sie auf **Kampagne hinzufügen**.
+1. Klicken Sie oben auf der Seite auf **Kampagne hinzufügen**.
 2. Füllen Sie die Kampagnendetails aus:
    - **Name** *(erforderlich)* -- der Anzeigename für diese Kampagne (zum Beispiel „Gebäudefonds 2026").
    - **Fonds** -- der Spendenfonds, mit dem diese Kampagne verknüpft ist.
@@ -34,27 +34,27 @@ In B1 Admin öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-
 
 ## Fortschritt verfolgen
 
-Jede Kampagnenkarte zeigt:
+Jede Kampagnenzeile zeigt:
 
 - **Ziel** -- Ihr Zielbetraga
 - **Zugesagt** -- der Gesamtbetrag, den Mitglieder zur Gabe zusagen
 - **Gegeben** -- der Gesamtbetrag, der tatsächlich zu diesem Kampagnenfonds während des Kampagnenfensters gespendet wurde
-- Eine **Fortschrittsleiste**, die zeigt, wie weit Sie sich Ihrem Ziel genähert haben
+- **Fortschritt** -- eine Leiste und ein Prozentwert, der zeigt, wie weit Sie sich Ihrem Ziel genähert haben
 
-Klicken Sie auf eine beliebige Kampagne, um die Detailansicht zu öffnen, die einzelne Zusagen und ihren Erfüllungsstatus auflistet.
+Klicken Sie auf den Namen einer Kampagne, um die Detailansicht zu öffnen. Sie zeigt den Prozentsatz des erreichten Ziels und listet einzelne Zusagen mit dem zugesagten und gegebenen Betrag jedes Spenders sowie einem Status auf (**Nicht begonnen**, **In Bearbeitung**, **Erfüllt**, **Über Zusage hinaus** oder **Nicht zugesagt** für Spender, die ohne Zusage gegeben haben). Klicken Sie oben in der Detailansicht auf **Exportieren**, um die Zusageliste als CSV herunterzuladen.
 
 ## Zusagen hinzufügen
 
 Zusagen sind Verpflichtungen von Mitgliedern, zu einer Kampagne zu geben. Um eine Zusage zu eintragen:
 
 1. Öffnen Sie eine Kampagne.
-2. Klicken Sie auf **Zusage hinzufügen**.
+2. Klicken Sie oben auf der Seite auf **Zusage hinzufügen**.
 3. Wählen Sie die **Person**, die die Zusage macht.
 4. Geben Sie den Zugesagt-**Betrag** ein.
 5. Legen Sie optional ein **Datum** für die Zusage-Verpflichtung fest.
 6. Klicken Sie auf **Speichern**.
 
-Zusagen werden in der Kampagnendetail angezeigt und tragen zu dem **Zugesagt**-Gesamt auf der Kampagnenkarte bei.
+Zusagen werden in der Kampagnendetail angezeigt und tragen zu dem **Zugesagt**-Gesamt in der Kampagnenliste bei. Um eine Zusage zu ändern, klicken Sie in ihrer Zeile auf **Bearbeiten**.
 
 :::tip
 Zusagen sind von tatsächlichen Spenden getrennt. Eine Zusage verfolgt eine Verpflichtung; eine Spende eintragen ist das tatsächliche Geschenk. Beide werden in der Kampagne angezeigt, daher können Sie sehen, wie gut Zusagen erfüllt werden.
@@ -62,7 +62,7 @@ Zusagen sind von tatsächlichen Spenden getrennt. Eine Zusage verfolgt eine Verp
 
 ## Kampagne bearbeiten oder löschen
 
-Klicken Sie auf das Bearbeitungssymbol auf einer beliebigen Kampagnenkarte, um seinen Namen, Ziel, Daten oder Fonds zu aktualisieren. Klicken Sie auf **Löschen**, um die Kampagne und ihre Zusagen dauerhaft zu entfernen. Das Löschen einer Kampagne löscht nicht alle Spenden, die zu ihrem Fonds eingetragen wurden.
+Klicken Sie in der Zeile einer beliebigen Kampagne auf **Bearbeiten** (oder auf **Kampagne bearbeiten** oben in der Detailansicht der Kampagne), um ihren Namen, Ziel, Daten oder Fonds zu aktualisieren. Klicken Sie auf **Löschen**, um die Kampagne und ihre Zusagen dauerhaft zu entfernen. Das Löschen einer Kampagne löscht nicht alle Spenden, die zu ihrem Fonds eingetragen wurden.
 
 ## Verwandte Artikel
 

@@ -22,10 +22,10 @@ På siden Masseimport kan du raskt fylle opp prekenbiblioteket ditt ved å impor
 ## Velge kilde
 
 1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) i B1 Admin, utvid **Prekener** og klikk på **Prekener**. Klikk på **Legg til preken** og velg **Masseimport** fra menyen.
-2. Du ser to klikkbare kort:
-   - **YouTube** (rød) -- Importer videoer fra en YouTube-kanal
-   - **Vimeo** (blå) -- Importer videoer fra en Vimeo-konto
-3. Klikk på kortet for plattformen der prekenene dine ligger.
+2. Under **Velg importkilde** ser du to alternativer:
+   - **YouTube** -- Importer videoer fra en YouTube-kanal
+   - **Vimeo** -- Importer videoer fra en Vimeo-konto
+3. Klikk på alternativet for plattformen der prekenene dine ligger (eller klikk på **Importer fra YouTube** / **Importer fra Vimeo** under beskrivelsen). Klikk på **Tilbake** øverst på siden for å gå tilbake til valget av kilde.
 
 :::tip
 Du kan gå tilbake og bytte kilde når som helst hvis du har videoer på begge plattformene.

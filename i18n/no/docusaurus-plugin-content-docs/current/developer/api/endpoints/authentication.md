@@ -94,6 +94,8 @@ POST /membership/users/register
 
 Oppretter en bruker med et midlertidig passord og sender en velkomst-e-post med en autentiseringslenke. Den første brukeren som registreres på en ny instans får automatisk serveradministratortilgang.
 
+To valgfrie felt mot bots godtas: `website` (et skjult honeypot-felt som ekte brukere lar stå tomt) og `fillMs` (hvor lenge skjemaet var åpent, i millisekunder). Hvis `website` er fylt ut eller `fillMs` er under 2000, opprettes ingen konto, men endepunktet returnerer likevel en normal `200`-respons, slik at bots ikke kan se at de ble avvist. Klienter som utelater begge feltene, registrerer seg som vanlig.
+
 ### Registrer en ny kirke
 
 ```

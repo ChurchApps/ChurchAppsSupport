@@ -6,7 +6,7 @@ title: "Promemoria Eventi"
 
 <div class="article-intro">
 
-I promemoria degli eventi notificano automaticamente le persone giuste prima che si verifichi un evento, ad esempio "Non perderlo! Il workshop sanitario inizia domani alle 9:00 AM". Configuri un promemoria una volta sull'evento e B1 lo invia secondo il programma tramite notifiche push e email. I membri possono controllare quali promemoria ricevono dalle loro [Preferenze di Notifica](../../b1-church/getting-started/notification-preferences).
+I promemoria degli eventi notificano automaticamente le persone giuste prima che si verifichi un evento, ad esempio "Non perderlo! Il workshop sanitario inizia domani alle 9:00 AM". Configuri un promemoria una volta sull'evento e B1 lo invia secondo il programma tramite notifiche push, email e, se la tua chiesa ha attivato gli SMS, messaggi di testo. I membri possono controllare quali promemoria ricevono dalle loro [Preferenze di Notifica](../../b1-church/getting-started/notification-preferences).
 
 </div>
 
@@ -31,7 +31,7 @@ Configuri i promemoria nella sezione **Reminders** dell'evento.
 3. Imposta il **Time of day** in cui il promemoria deve essere inviato (l'impostazione predefinita è **9:00 AM**, nel fuso orario locale della chiesa).
 4. Scegli **Who** dovrebbe essere ricordato (vedi [Chi Riceve il Promemoria](#chi-riceve-il-promemoria) di seguito).
 5. Facoltativamente aggiungi un **Message**. Lascialo vuoto per usare la formulazione predefinita, oppure scrivi la tua — puoi includere `{{eventTitle}}` e verrà sostituito con il nome dell'evento.
-6. Scegli i **Channels**: notifica **Push**, **Email** o entrambi.
+6. Scegli i **Channels**: notifica **Push**, **Email** e, se la tua chiesa ha un [provider di SMS](../settings/church-settings.md#texting) collegato, **Text**.
 7. Salva l'evento.
 
 Man mano che apporti modifiche, un'**anteprima dal vivo** mostra approssimativamente quante persone verranno ricordate, quanti partecipanti non possono essere raggiunti e i tempi di invio programmati successivi — così puoi confermare che il promemoria sia corretto prima di salvare.
@@ -60,18 +60,28 @@ Gli ospiti aggiunti solo per nome (senza un record di persona collegato) non pos
 I promemoria vengono inviati **push prima, con email come fallback**. Se un membro ha le notifiche push abilitate, riceverà un push; se no, riceverà un'email invece. I membri scelgono quali canali desiderano per tipo di notifica nelle loro [Preferenze di Notifica](../../b1-church/getting-started/notification-preferences).
 :::
 
+## Promemoria via SMS {#text-reminders}
+
+Il canale **Text** appare solo quando la tua chiesa ha un provider di SMS collegato. Gli SMS vengono inviati tramite il provider di SMS della tua chiesa, e ogni messaggio può avere un costo per la tua chiesa. Vengono inviati in aggiunta a qualsiasi promemoria push o email, e solo alle persone che:
+
+- Hanno attivato **Messaggi di testo** nelle loro [Preferenze di Notifica](../../b1-church/getting-started/notification-preferences), e
+- Hanno un numero di cellulare nel loro profilo.
+
+Ogni SMS inizia con il nome della tua chiesa, è contenuto in un singolo messaggio di testo e termina con "Rispondi STOP per disiscriverti." Chi risponde STOP smette di ricevere SMS dalla tua chiesa. Perché le risposte STOP arrivino a B1, incolla l'**URL del webhook dei messaggi in arrivo (STOP)** dalle tue [impostazioni SMS](../settings/church-settings.md#texting) nel webhook dei messaggi in arrivo del tuo provider.
+
 ## Cosa Possono Controllare i Membri
 
 I promemoria rispettano sempre le [Preferenze di Notifica](../../b1-church/getting-started/notification-preferences) di ogni membro. Un membro può:
 
-- Disattivare **Event Reminders** per push o email mantenendo attive altre notifiche.
+- Disattivare **Event Reminders** per push, email o SMS mantenendo attive altre notifiche.
+- Attivare o disattivare i promemoria via SMS con **Messaggi di testo**.
 - Impostare **quiet hours** in modo che le notifiche non urgenti aspettino un orario ragionevole.
 
 Non puoi ignorare la scelta di un membro di rinunciare ai promemoria degli eventi — ciò mantiene B1 conforme alle regole anti-spam e mantiene i membri in controllo della loro casella di posta.
 
 ## Promemoria di Servizio
 
-I volontari programmati in un piano ricevono un **promemoria di servizio** separato con i dettagli del piano e, quando non hanno ancora risposto, i pulsanti **Accept / Decline** direttamente nell'email. Questi promemoria sono configurati sul tipo di piano piuttosto che su un evento del calendario — vedi [Sunday Volunteers](../guides/sunday-volunteers) per il funzionamento della programmazione e dei promemoria dei volontari.
+I volontari programmati in un piano ricevono un **promemoria di servizio** separato con i dettagli del piano e, quando non hanno ancora risposto, i pulsanti **Accept / Decline** direttamente nell'email. Questi promemoria sono configurati sul tipo di piano piuttosto che su un evento del calendario, e possono anche essere inviati via SMS — vedi [Promemoria volontari](../serving/plans#volunteer-reminders) e [Sunday Volunteers](../guides/sunday-volunteers) per il funzionamento della programmazione e dei promemoria dei volontari.
 
 ## Prossimi Passaggi
 

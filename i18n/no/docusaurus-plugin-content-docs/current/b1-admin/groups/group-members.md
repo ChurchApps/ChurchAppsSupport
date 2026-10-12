@@ -21,14 +21,16 @@ Når du har opprettet en gruppe, er neste steg å legge til medlemmer. På grupp
 ## Legge til medlemmer i en gruppe
 
 1. Velg **Personer > Grupper** i [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) og klikk på gruppen du vil administrere.
-2. Klikk på fanen **Medlemmer**.
-3. Skriv navnet på personen du vil legge til i søkefeltet.
-4. Klikk på **Legg til** ved siden av personens navn i søkeresultatene.
+2. I seksjonen **Medlemmer** på gruppens side klikker du på **Alle medlemmer**. (Team og tjenestegrener åpner direkte på medlemslisten.)
+3. Skriv navnet på personen du vil legge til i feltet **Legg til person** under medlemslisten, og trykk **Enter** eller klikk på søkeikonet.
+4. Klikk på personens navn, eller på legg-til-ikonet ved siden av, i søkeresultatene.
 5. Personen vises nå i gruppens medlemsliste.
 
 :::tip
-La søkefeltet stå tomt og klikk på **Søk** for å bla gjennom hele registeret ditt. Det er nyttig hvis du ikke er sikker på hvordan et navn staves.
+Før du skriver noe, viser feltet **Legg til person** en kort liste over **Nylige personer** som du kan legge til med ett klikk.
 :::
+
+Når du er ferdig, klikker du på lenken **Tilbake til** med gruppens navn for å gå tilbake til gruppesiden. Gruppesiden viser et sammendrag av gruppens **Medlemmer**, **Økter**, **Kalender** og **Helse**, hver med en lenke til full visning.
 
 ### Legge til noen som ikke finnes i B1 ennå
 
@@ -39,10 +41,10 @@ Hvis søket ikke finner noen, viser det **Ingen poster funnet** med en lenke **L
 Gruppeledere har spesielle rettigheter. De kan redigere [gruppekalenderen](group-calendar.md), administrere arrangementer og hjelpe til med å koordinere gruppen.
 
 1. Finn personen du vil gjøre til leder i gruppens medlemsliste.
-2. Klikk på det **grønne nøkkelikonet** ved siden av navnet.
-3. Personen er nå utpekt som gruppeleder.
+2. Klikk på **stjerneikonet** (**Gjør til leder**) ved siden av navnet.
+3. Personen er nå utpekt som gruppeleder og viser et merke **Leder**.
 
-For å fjerne lederstatusen klikker du på det grønne nøkkelikonet igjen.
+For å fjerne lederstatusen klikker du på stjerneikonet (**Fjern lederrettigheter**) igjen.
 
 :::info
 Alle gruppemedlemmer kan se gruppekalenderen og arrangementene, men bare ledere kan legge til eller redigere kalenderarrangementer.
@@ -52,8 +54,8 @@ Alle gruppemedlemmer kan se gruppekalenderen og arrangementene, men bare ledere 
 
 Du kan kommunisere med alle medlemmene i en gruppe direkte fra B1 Admin:
 
-1. Finn meldingsfeltet på gruppens detaljside.
-2. Skriv meldingen i tekstboksen.
+1. Klikk på ikonet **Send en melding til medlemmene** over medlemslisten i gruppen.
+2. Skriv meldingen i tekstboksen (eller velg en fra **Maler**).
 3. Klikk på **Send**.
 
 Meldingen leveres til alle medlemmene i gruppen.
@@ -62,7 +64,7 @@ Meldingen leveres til alle medlemmene i gruppen.
 
 Du kan sende formaterte e-poster til alle medlemmene i en gruppe:
 
-1. Klikk på **e-postikonet** på gruppens detaljside.
+1. Klikk på knappen **E-post** på venstre side av gruppesiden.
 2. Dialogen Send e-post åpnes og viser hvor mange medlemmer som får e-posten, og hvor mange som ikke har registrert e-postadresse.
 3. Velg eventuelt en **e-postmal** fra nedtrekksmenyen, eller skriv en melding fra bunnen av. Klikk på **Administrer maler** for å opprette eller redigere maler.
 4. Skriv inn en **emnelinje**. Du kan sette inn flettefelt ved å klikke på feltbrikkene: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`.
@@ -92,9 +94,9 @@ Etter godkjenning kan en menighet sende opptil 150 e-poster skrevet av menighete
 
 ## Sende tekstmeldinger til gruppemedlemmer
 
-Når menigheten din har koblet til en [tekstmeldingsleverandør](../settings/church-settings.md#texting), vises et tekstikon (**Send tekstmelding til denne gruppen**) i gruppens overskrift.
+Når menigheten din har koblet til en [tekstmeldingsleverandør](../settings/church-settings.md#texting), vises en knapp **Tekst** (**Send tekstmelding til denne gruppen**) ved siden av knappen **E-post** på gruppesiden.
 
-1. Klikk på **tekstikonet** på gruppens detaljside.
+1. Klikk på **Tekst** på gruppens detaljside.
 2. Dialogen viser hvor mange medlemmer som får tekstmeldingen. Medlemmer uten registrert mobilnummer eller som har reservert seg, hoppes over.
 3. Skriv meldingen. For å personalisere den klikker du på en plassholderbrikke under meldingsboksen (**Fornavn**, **Etternavn**, **Visningsnavn** eller **Menighetsnavn**) for å sette den inn ved markøren. Hver plassholder fylles ut med mottakerens egne opplysninger når tekstmeldingen sendes.
 4. Klikk på **Send**.
@@ -105,14 +107,14 @@ Se [Personalisere tekstmeldinger med flettefelt](../settings/church-settings.md#
 
 For å laste ned gruppens medlemsliste som en fil:
 
-1. Klikk på **nedlastingsikonet** på gruppens detaljside.
+1. Klikk på **Eksporter** over listen i gruppens medlemsliste.
 2. En CSV-fil med gruppens medlemsinformasjon lastes ned til datamaskinen din.
 
 En CSV-eksport er nyttig for å importere data til andre verktøy eller for å ha offline-registre. For flere eksportalternativer, se [Eksportere data](../people/exporting-data.md).
 
 ## Skrive ut medlemslisten {#printing-the-member-list}
 
-Klikk på ikonet **Skriv ut oppmøteliste** (skriveren) over medlemslisten og velg et oppsett. Siden åpnes i en ny fane, og utskriftsdialogen i nettleseren vises automatisk.
+I gruppens medlemsliste klikker du på ikonet **Skriv ut oppmøteliste** (skriveren) over listen og velger et oppsett. Siden åpnes i en ny fane, og utskriftsdialogen i nettleseren vises automatisk.
 
 - **Oppmøteliste** -- en klasseliste uten dato med ruter for **Til stede** og **Fraværende** som lærere kan krysse av for hånd. Se [Skrive ut en oppmøteliste](../attendance/recording-attendance.md#printing-a-roll-sheet).
 - **Kontaktliste** -- en kontaktliste for gruppen, datert med dagens dato og med menighetens navn og gruppens navn i overskriften. Hvert medlem har en rad med **Navn**, **Telefon**, **E-post** og **Adresse**. Ledere står først og er merket **Leder**, deretter kommer alle andre sortert etter etternavn. Telefonnummeret som vises er medlemmets mobilnummer, eller hjemme- eller jobbnummeret hvis det ikke finnes noe mobilnummer. Kontaktopplysninger er blanke for alle som har reservert seg.
@@ -125,7 +127,7 @@ En kontaktliste inneholder medlemmenes personlige kontaktopplysninger. Del utskr
 
 Du kan sende et pushvarsel direkte til alle gruppemedlemmer som har B1.church-appen installert på enheten sin med pushvarsler slått på.
 
-1. Klikk på **bjelleikonet** i verktøylinjen i overskriften på gruppens detaljside (ved siden av e-post- og tekstikonene. Tekstikonet vises når en [tekstmeldingsleverandør](../settings/church-settings.md#texting) er koblet til).
+1. Klikk på **Varsle** på gruppens detaljside (under knappene **E-post** og **Tekst** -- knappen **Tekst** vises når en [tekstmeldingsleverandør](../settings/church-settings.md#texting) er koblet til).
 2. En dialog åpnes og viser hvor mange av gruppens medlemmer som har push slått på.
 3. Fyll ut detaljene for varselet:
    - **Tittel** *(påkrevd)* -- En kort oppsummering, opptil 80 tegn.

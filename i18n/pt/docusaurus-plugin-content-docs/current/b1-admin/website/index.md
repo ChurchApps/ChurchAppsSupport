@@ -12,13 +12,17 @@ A seção Website em B1 Admin oferece um construtor de website completo para sua
 
 ## O que Você Pode Fazer
 
-O construtor de Website é organizado em cinco áreas principais:
+O construtor de Website é organizado nestas áreas principais:
 
 ### Páginas
 
-Crie e gerencie todas as páginas de seu website de igreja. A tabela **Páginas** mostra cada página junto com seu status -- **Gerada** (criada automaticamente pelo sistema) ou **Personalizada** (criada por você). Você pode adicionar novas páginas personalizadas, editar páginas existentes ou converter páginas geradas automaticamente em páginas personalizadas para controle total sobre seu conteúdo.
+Crie e gerencie todas as páginas de seu website de igreja. A tabela **Páginas** lista cada página -- páginas criadas automaticamente pelo sistema têm um selo **Gerada**, e as demais são páginas **Personalizadas** criadas por você. Você pode adicionar novas páginas personalizadas, editar páginas existentes ou converter páginas geradas automaticamente em páginas personalizadas para controle total sobre seu conteúdo.
 
 Seus links de navegação são exibidos em uma estrutura de árvore. Você pode reorganizar links usando arrastar e soltar para definir a hierarquia e ordem exatas que você deseja que os visitantes vejam.
+
+### Blog {#blog}
+
+Publique notícias, atualizações e devocionais como posts de blog em `/blog` no seu site, com um feed RSS. Consulte o guia [Blog](blog).
 
 ### Blocos
 
@@ -30,11 +34,11 @@ Personalize o tema, cores, fontes, logotipo e espaçamento de seu website. Você
 
 ### Arquivos
 
-Carregue e organize todos os seus ativos de mídia -- imagens, documentos e outros arquivos -- em um local central. Use pastas para manter as coisas organizadas e copie URLs de arquivo para uso em qualquer lugar do seu site. Consulte [Arquivos](files) para mais informações.
+Carregue e gerencie todos os seus ativos de mídia -- imagens, documentos e outros arquivos -- em um local central, e copie links de arquivos para uso em qualquer lugar do seu site. Consulte [Arquivos](files) para mais informações.
 
 ### Calendários
 
-Publique calendários de eventos em seu website para que os visitantes possam ver o que está acontecendo em sua igreja. Crie calendários curados que extraem eventos de vários grupos em uma única visualização.
+Publique calendários de eventos em seu website para que os visitantes possam ver o que está acontecendo em sua igreja. Crie calendários curados que extraem eventos de vários grupos em uma única visualização. Os calendários têm seu próprio item **Calendars** no menu do B1 Admin, separado de **Website**.
 
 :::tip
 Comece com [Configuração Inicial](initial-setup) se você estiver configurando seu website pela primeira vez. Ele o orienta através da configuração do domínio, criação de sua primeira página e configuração da aparência de seu site.

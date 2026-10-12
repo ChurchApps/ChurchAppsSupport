@@ -20,7 +20,7 @@ Server.Admin 권한이 있는 사용자는 B1 Admin에서 서버 관리 패널�
 
 1. [admin.b1.church](https://admin.b1.church)에 로그인합니다
 2. [Jump 메뉴](../b1-admin/introduction.md#getting-around-with-the-jump-menu)를 열고 **Settings**를 확장한 다음 **Server Admin**을 클릭합니다. (직접 `admin.b1.church/admin`으로 이동할 수도 있습니다.)
-3. Server Admin 패널에는 Churches, Users, Impersonate User, Background Jobs, Commons, Usage Trends, Translation Lookups, Server Health, 그리고 Database Migrations에 대한 섹션이 있습니다
+3. Server Admin 패널은 섹션을 왼쪽에 세 그룹으로 나열합니다: **Directory**(Churches, Users, Impersonate User), **Operations**(Background Jobs, Commons, Usage Trends), **System**(Translation Lookups, Server Health, Database Migrations)
 
 ## 사용자 가장하기
 

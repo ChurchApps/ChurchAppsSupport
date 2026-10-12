@@ -29,7 +29,7 @@ Lorsque vous ouvrez la page Appareils, vous voyez un tableau répertoriant tous 
 
 ## Ajouter un nouvel appareil
 
-1. Cliquez sur le bouton **Ajouter un appareil** en haut de la page Appareils.
+1. Cliquez sur le bouton **Add Screen** en haut de la page Appareils.
 2. Il vous sera demandé de saisir un **code d'appairage**.
 3. Trouvez le code d'appairage affiché sur l'appareil ChurchAppsPlayer ou FreePlay que vous voulez connecter.
 4. Saisissez le code. S'il s'agit d'une TV FreePlay, un menu déroulant **Afficher les plans pour** vous permet de choisir le type de plan que l'écran doit suivre — laissez-le sur **Aucun** pour utiliser l'appareil uniquement pour la navigation et les notifications.
@@ -41,7 +41,7 @@ Assurez-vous que l'appareil est allumé et connecté à internet avant de tenter
 
 ## Modifier l'étiquette d'un appareil
 
-1. Cliquez sur le **nom de l'appareil** dans le tableau des appareils.
+1. Cliquez sur **Edit** à côté de l'appareil dans le tableau des appareils.
 2. Mettez à jour l'étiquette avec quelque chose de descriptif (par exemple, « Écran principal du sanctuaire » ou « Affichage du hall »).
 3. Enregistrez vos modifications.
 

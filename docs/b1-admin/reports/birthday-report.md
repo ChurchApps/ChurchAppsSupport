@@ -24,7 +24,7 @@ Need a list of everyone with a birthday or anniversary in a given month — for 
 2. Under the search box, click **Advanced**.
 3. Expand the **Demographics** section and check **Birth Month**, then choose the month.
 4. Run the search — everyone with a birthday that month appears in the results.
-5. To see the dates, click the **columns icon** at the top right of the results and enable the **Birthday** column. Use **Export** to download the list as a spreadsheet if you prefer to sort or print it there.
+5. To see the dates, switch **View as** to **Table**, then click the **Select columns** icon in the page header and enable the **Birthday** column. Use **Export** to download the list as a spreadsheet if you prefer to sort or print it there.
 
 ## Getting an Anniversary List
 

@@ -6,7 +6,7 @@ title: "Listes Enregistrées"
 
 <div class="article-intro">
 
-**Les Listes Enregistrées** vous permettent de stocker une requête de recherche sous un nom et de la réexécuter en un clic à tout moment. Construisez une liste une fois — "Membres Actifs au Campus Nord", "Visiteurs au cours des 90 derniers jours", ou n'importe quel filtre avancé — et elle reste dans le panneau **Listes Enregistrées** sur la page Personnes pour que vous n'ayez jamais à reconstruire la requête à nouveau.
+**Les Listes Enregistrées** vous permettent de stocker une requête de recherche sous un nom et de la réexécuter en un clic à tout moment. Construisez une liste une fois — "Membres Actifs au Campus Nord", "Visiteurs au cours des 90 derniers jours", ou n'importe quel filtre avancé — et elle reste en haut de la page Personnes pour que vous n'ayez jamais à reconstruire la requête à nouveau.
 
 </div>
 
@@ -20,21 +20,22 @@ title: "Listes Enregistrées"
 ## Enregistrement d'une Recherche en tant que Liste
 
 1. Exécutez une recherche sur la page **Personnes** — une recherche rapide, une recherche par IA, ou une recherche de filtre avancé.
-2. Lorsque les résultats apparaissent, un bouton **Enregistrer en tant que Liste** (icône de signet) s'affiche dans l'en-tête de la page Personnes.
+2. Lorsque les résultats apparaissent, un bouton **Enregistrer en tant que Liste** s'affiche dans l'en-tête de la page Personnes.
 3. Cliquez sur **Enregistrer en tant que Liste**.
-4. Entrez un **Nom** pour la liste (requis).
-5. Éventuellement, entrez une **Catégorie** pour regrouper les listes connexes ensemble dans le panneau **Listes Enregistrées** (par exemple, "Sensibilisation" ou "Adhésion").
-6. Cliquez sur **Enregistrer**.
+4. Entrez un **Nom de la liste** (requis).
+5. Éventuellement, entrez une **Catégorie** pour regrouper les listes connexes (par exemple, "Sensibilisation" ou "Adhésion").
+6. Sous **Qui peut voir cette liste**, choisissez **Tout le personnel** ou **Moi uniquement**.
+7. Cliquez sur **Enregistrer**.
 
-La liste est maintenant enregistrée sur le compte de votre église et apparaîtra dans le panneau **Listes Enregistrées** sur le côté gauche de la page Personnes.
+La liste est maintenant enregistrée et apparaît sous forme de bouton dans la rangée des listes enregistrées en haut de la page Personnes, à côté de **Everyone**. Les listes marquées **Moi uniquement** affichent une petite icône de cadenas.
 
 :::info
-Les listes sont partagées dans votre église — quiconque ayant accès à Personnes peut les voir et les charger. Seul le personnel ayant la permission appropriée peut renommer ou supprimer les listes.
+Les listes réglées sur **Tout le personnel** sont partagées dans votre église — quiconque ayant accès à Personnes peut les voir et les charger. Seul le personnel ayant la permission appropriée peut modifier ou supprimer les listes.
 :::
 
 ## Chargement d'une Liste Enregistrée
 
-Dans le panneau **Listes Enregistrées** sur le côté gauche de la page Personnes, cliquez sur n'importe quel nom de liste. La recherche se réexécute instantanément avec la requête stockée, mettant à jour le tableau des résultats.
+En haut de la page Personnes, cliquez sur n'importe quel nom de liste. La recherche se réexécute instantanément avec la requête stockée, mettant à jour les résultats. Cliquez sur **Everyone** pour revenir à tout votre répertoire.
 
 Les listes sont groupées par catégorie (si vous en avez assigné une), les listes non catégorisées apparaissant en dernier.
 
@@ -44,10 +45,10 @@ Les listes sont des **requêtes en direct**, pas des clichés. Chaque fois que v
 
 ## Renommage et Suppression de Listes
 
-Le personnel ayant la permission de gestion peut renommer ou supprimer n'importe quelle liste directement à partir du panneau Listes Enregistrées.
+Le personnel ayant la permission de gestion peut renommer ou supprimer n'importe quelle liste depuis la page Personnes. Cliquez d'abord sur la liste pour la charger : deux icônes apparaissent alors à côté de son nom :
 
-- Cliquez sur l'**icône crayon** à côté du nom d'une liste pour le renommer.
-- Cliquez sur l'**icône corbeille** pour la supprimer (on vous demandera de confirmer).
+- Cliquez sur l'**icône Paramètres de la liste** (engrenage) pour la renommer ou modifier sa catégorie, son partage et ses autres paramètres.
+- Cliquez sur l'**icône Supprimer** (corbeille) pour la supprimer (on vous demandera de confirmer).
 
 ## Cas d'Usage
 

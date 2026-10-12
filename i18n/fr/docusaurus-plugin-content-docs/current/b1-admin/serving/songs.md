@@ -20,19 +20,19 @@ La page Chansons gère votre bibliothèque de chansons d'adoration. Gardez tous 
 
 ## Parcours de votre bibliothèque de chansons
 
-Lorsque vous ouvrez la page **Chansons**, vos chansons sont affichées sous forme de cartes. Chaque carte affiche l'image miniature de la chanson, le titre, l'artiste et la durée. Faites défiler la bibliothèque ou utilisez la recherche pour trouver ce que vous avez besoin.
+Lorsque vous ouvrez la page **Chansons**, vos chansons sont affichées dans un tableau. Chaque ligne affiche l'image miniature de la chanson, le titre, l'artiste et la durée. Utilisez les commandes de pagination sous la liste pour parcourir une grande bibliothèque, ou utilisez la recherche pour trouver ce que vous avez besoin.
 
 ## Recherche de chansons
 
-1. Cliquez sur le bouton **Recherche** sur la page Chansons.
+1. Cliquez dans la zone **Rechercher des chansons** en haut de la page Chansons.
 2. Tapez le **titre** d'une chanson ou le nom de l'**artiste**.
-3. Les résultats se filtreront au fur et à mesure que vous tapez, affichant les chansons correspondantes de votre bibliothèque.
+3. La liste se filtre au fur et à mesure que vous tapez, affichant les chansons correspondantes de votre bibliothèque et leur nombre. Cliquez sur **Effacer** pour afficher à nouveau toutes les chansons.
 
 ## Ajout d'une chanson
 
-1. Cliquez sur **Ajouter une chanson** sur la page Chansons.
-2. Recherchez dans la base de données de chansons externe par titre ou artiste.
-3. Sélectionnez la chanson que vous souhaitez ajouter.
+1. Cliquez sur **Ajouter une chanson** en haut de la page Chansons.
+2. Dans **Rechercher une chanson**, recherchez dans la base de données de chansons externe par **titre ou artiste**.
+3. Sélectionnez la chanson que vous souhaitez ajouter, ou cliquez sur **Créer manuellement** si vous ne la trouvez pas.
 4. La chanson sera ajoutée à votre bibliothèque avec ses détails de base pré-remplis.
 
 :::tip
@@ -48,12 +48,16 @@ Vos résultats de recherche peuvent également inclure une section **WorshipComm
 
 Seules les chansons qui ont passé le processus d'examen de WorshipCommons apparaissent ici, la sélection peut donc être plus petite que la base de données de chansons principale.
 
+## Suppression de chansons {#deleting-songs}
+
+Cochez la case à côté d'une ou plusieurs chansons (ou la case de l'en-tête pour sélectionner toutes les chansons affichées), puis cliquez sur **Supprimer la sélection** dans la barre qui apparaît et confirmez. Cliquez sur **Effacer** pour désélectionner.
+
 ## Affichage et édition d'une chanson
 
-Cliquez sur n'importe quelle carte de chanson pour ouvrir sa page de détail. De là, vous pouvez :
+Cliquez sur le titre d'une chanson pour ouvrir sa page de détail. Le titre, l'artiste et les détails tels que l'album, la clé, la longueur, le BPM et le mètre apparaissent à gauche, avec ses arrangements et ses liens externes. De là, vous pouvez :
 
-- **Éditer les détails de la chanson** -- Mettez à jour le titre, l'artiste, la durée et autres métadonnées.
-- **Gérer les arrangements** -- Chaque chanson peut avoir plusieurs arrangements (par exemple, différentes clés ou versions). Ajoutez, modifiez ou supprimez les arrangements selon vos besoins.
+- **Éditer les détails de la chanson** -- Cliquez sur **Modifier** pour mettre à jour le titre, l'artiste, la durée et autres métadonnées. Cliquez sur **Terminé** lorsque vous avez fini. Pour retirer la chanson de votre bibliothèque, cliquez sur **Modifier** puis sur **Supprimer la chanson**.
+- **Gérer les arrangements** -- Chaque chanson peut avoir plusieurs arrangements (par exemple, différentes clés ou versions). Cliquez sur **Ajouter un arrangement** pour en créer un, et cliquez sur le nom d'un arrangement sous **Arrangements** pour l'ouvrir.
 - **Ajouter des paroles** -- Entrez ou mettez à jour les paroles de chaque arrangement en utilisant la notation ChordPro (par exemple, `[G]Amazing grace`). Un aperçu en direct à côté de l'éditeur rend le diagramme d'accords formaté au fur et à mesure que vous tapez, afin que vous puissiez voir exactement ce que votre équipe verra.
 - **Définir la clé** -- Spécifiez la clé musicale pour chaque arrangement en utilisant le sélecteur de clé à côté des paroles. Changer la clé transpose les accords affichés immédiatement, à la fois sur la page d'arrangement et lors de l'ouverture de la chanson à partir d'un plan de service, afin que votre équipe voit toujours les accords dans la clé dans laquelle ils jouent réellement.
 - **Ajouter des liens externes** -- Joignez les liens vers des ressources comme les vidéos YouTube, les diagrammes d'accords ou les partitions hébergées ailleurs.

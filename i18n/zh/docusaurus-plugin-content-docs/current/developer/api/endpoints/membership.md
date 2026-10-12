@@ -85,6 +85,7 @@ Authorization: Bearer <token>
 | POST | `/updateEmail` | JWT | — | 更改用户的邮箱地址 |
 | POST | `/updatePassword` | JWT | — | 更改用户密码（至少 6 个字符） |
 | POST | `/updateOptedOut` | JWT | — | 设置某人的退订状态 |
+| POST | `/sendInviteEmail` | JWT | People.Edit | 向本教会中的某人发送邀请邮件（`email`、`personName`、`contextName`）。对于没有账户的人，按钮显示为**注册**；对于现有用户，显示为**登录**。从未登录过的用户会收到一个7天后过期的**设置您的密码**链接。计入教会的每日邮件限额（达到上限时返回 `429`） |
 | GET | `/search?term=` | JWT | Server.Admin | 按姓名/邮箱搜索所有用户 |
 | DELETE | `/` | JWT | — | 删除当前用户账户 |
 

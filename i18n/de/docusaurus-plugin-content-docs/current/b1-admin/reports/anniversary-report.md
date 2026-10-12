@@ -24,7 +24,7 @@ Benötigen Sie eine Liste aller Personen mit einem Hochzeitstag in einem bestimm
 2. Klicken Sie unter dem Suchfeld auf **Erweitert**.
 3. Erweitern Sie den Bereich **Demografische Daten** und aktivieren Sie **Jubiläumsmonat**, dann wählen Sie den Monat aus.
 4. Führen Sie die Suche aus -- alle Personen mit einem Jubiläum in diesem Monat werden in den Ergebnissen angezeigt.
-5. Um die Daten anzuzeigen, klicken Sie auf das **Spaltensymbol** oben rechts der Ergebnisse und aktivieren Sie die Spalte **Jubiläum**. Verwenden Sie **Exportieren**, um die Liste als Kalkulationstabelle herunterzuladen, falls Sie sie lieber sortieren oder drucken möchten.
+5. Um die Daten anzuzeigen, stellen Sie **Ansicht als** auf **Tabelle** um, klicken Sie dann auf das Symbol **Spalten auswählen** in der Seitenkopfzeile und aktivieren Sie die Spalte **Jubiläum**. Verwenden Sie **Exportieren**, um die Liste als Kalkulationstabelle herunterzuladen, falls Sie sie lieber sortieren oder drucken möchten.
 
 ## Praktische Anwendungen
 

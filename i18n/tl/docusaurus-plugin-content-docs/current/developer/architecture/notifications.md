@@ -15,7 +15,9 @@ Bawat mensaheng nakikita ng isang miyembro ng simbahan sa labas ng pahinang tini
 ```
 scheduled anything ──▶ ReminderEngine (definitions → occurrences → scan) ─┐
 chat / requests / workflow / bulk sends ──────────────────────────────────┼─▶ createNotifications()
-                                                                          │    in_app gate → socket → push → email (→ sms slot)
+                                                                          │    in_app gate → socket → push → email
+     (reminder channels include sms) ──▶ ReminderEngine.sendSms() ──▶ sms gate → sendPersonText() via church provider
+provider STOP reply ──▶ POST /messaging/texting/inbound/:churchId/:token ──▶ SmsOptOutHelper.optOut()
 account/legal mail ──▶ TransactionalEmailHelper.sendTransactional()  [allowlisted, lint-enforced]
 ```
 
@@ -62,7 +64,7 @@ Nagsisimula ang delivery sa isang level (0 bilang default, o mas mataas para sa 
 | 0 | **in_app / socket** | Unang sinusuri ang `in_app` gate. Kung suppressed (naka-mute), ise-save ang row na may `isNew=false` at titigil nang tuluyan ang delivery — walang socket ping, walang badge, walang karagdagang escalation. Kung hindi, hahanapin ng server ang mga bukas na socket connection para sa `alerts` room ng tao at magpu-push ng `notification` (o `privateMessage`) frame. Sa mga ordinaryong notification, ang matagumpay na socket delivery ay tumitigil sa chain dito — ang 30-minutong timer ang muling susuri sa mga hindi pa nababasa at mag-e-escalate ng mga ito mamaya. Ang mga direct message ay hindi kailanman humihinto sa socket: ang naka-install na PWA ay maaaring panatilihing bukas ang alerts socket sa background, na kung hindi ay magpipigil sa OS-level push. |
 | 1 | **push** | Naka-gate sa `allowPush` / category opt-out / quiet hours. Nagpapadala sa parehong Expo push token at Web Push subscription na nasa `devices` rows ng tao, inaalis ang mga duplicate ayon sa endpoint at binubura ang mga lumang token habang tumatakbo. |
 | 2 | **email** | Naka-gate sa `emailFrequency` at category opt-out. Ang mga immediate send (`emailImmediate`) ay agad na nire-render at nagsusulat ng row sa `deliveryLogs`; kung hindi, ang notification ay naiiwang nakabinbin para sa batch digest, na inilalarawan sa ibaba. |
-| — | **sms** | Ang preference plumbing (`allowSms`, per-category channel lists) ay may puwang na para sa SMS channel, pero wala pang producer na nagpapadala rito ngayon — nananatili itong nakareserba para sa bulk SMS product, na tumatakbo bilang hiwalay at nakahiwalay na flow sa pamamagitan ng `TextingController` / `@churchapps/texting`. Ang workflow na **Send Text** step action (`StepActionHelper.sendText` → `MessagingModuleGateway.sendPersonText`) ay lumalampas din sa funnel na ito: direktang nagte-text ito sa tao ng card gamit ang provider ng simbahan, kaya hindi nalalapat ang notification preferences at quiet hours — ang `optedOut` flag lang ng tao ang iginagalang. |
+| — | **sms** | Hindi ito level sa escalation ladder. Ang tanging naka-gate na SMS producer ay ang reminder engine: kapag kasama sa `channels` ng isang definition ang `sms`, tinatawagan ng `ReminderEngine.sendSms()` ang bawat tatanggap **bukod pa** sa push/email notification (tingnan ang [Text reminders](#text-reminders)). Ang bulk texting (`TextingController` / `@churchapps/texting`), ang serving overview na **Text Volunteers** send (`MatrixTextHelper` → `MessagingModuleGateway.sendPersonText`), at ang workflow na **Send Text** step action (`StepActionHelper.sendText` → `sendPersonText`) ay direktang nagte-text sa pamamagitan ng provider ng simbahan, kaya hindi nalalapat dito ang notification preferences at quiet hours — ang `optedOut` flag lang ng tao ang iginagalang. |
 
 Ang mga hindi pa nababasang notification na naiwan sa socket o push ay ine-escalate ng 30-minutong timer (`NotificationHelper.escalateDelivery`). Ang batch email ay ipinapadala ng `NotificationHelper.sendEmailNotifications(frequency)`, na idinidikta ng `emailFrequency` preference ng bawat tao: ang `individual` ay tumatakbo sa 30-minutong timer, ang `daily` ay tumatakbo sa nightly timer. (Ang `weekly` ay wastong halaga ng preference pero wala pang nakalaang batch run.)
 
@@ -83,6 +85,19 @@ Ang **Definitions** (`reminderDefinitions`) ay maaaring entity-level (may `entit
 Ang **Expansion** ay gumagawa ng mga fire row para sa horizon sa hinaharap (isang rolling na multi-day window). Tumatakbo ito sa nightly timer, at kasabay (synchronously) tuwing may na-save na definition para tumunog pa rin ang reminder para sa event na huling-minuto. Ang mga scope definition ay kumakalat sa pamamagitan ng `loadScopeEntities` ng adapter, na gumagawa ng isang set ng occurrence para sa bawat konkretong entity; ang mga entity-level occurrence ay gumagamit ng key na `definitionId:occurrenceISO:offset`, habang ang mga scoped occurrence ay may namespace ayon sa entity id para hindi sila magbanggaan. Ang pag-upsert ng occurrence ay **bumubuhay muli** sa dating na-cancel na row — ang cancel-then-re-expand ang karaniwang paraan para i-sync muli ang reminder pagkatapos magbago ang pinagbabatayang entity; ang mga row na `sent`, `failed`, o `processing` na ay hindi ginagalaw.
 
 Ang **Dispatch** (`ReminderEngine.scan()`) ay tumatakbo sa 30-minutong timer. Kinukuha nito ang mga occurrence na due na (pinipigilan ng lease ang dobleng pagproseso), nilo-load ang mga tatanggap sa pamamagitan ng adapter ng entity, inaalis ang sinumang nakatala na sa `reminderSentLog` para sa occurrence na iyon, at tinatawag ang `createNotifications` na may `deliveryStartLevel: 1` (diretso sa push) kasama ang `emailImmediate`/`emailByPerson` kapag kasama ang email sa mga channel ng definition.
+
+### Text reminders {#text-reminders}
+
+Kapag kasama sa `channels` ng isang definition ang `sms`, tinatawagan ng `scan()` ang `ReminderEngine.sendSms()` pagkatapos likhain ang push/email notification, para sa parehong bagong tatanggap. Opt-in ang texting para sa bawat miyembro:
+
+- Dumadaan ang bawat tatanggap sa `PreferenceGateHelper.evaluate(..., "sms", ...)`, kaya dapat naka-on ang `allowSms` (naka-off ito bilang default at itinatakda mula sa switch na **Text messages** ng B1App) at hindi naka-override na naka-off ang `sms` channel ng kategorya. Nakalista ang `sms` sa `defaultChannels` at `allowedChannels` ng `event_reminders`, `serving_schedule`, at `tasks`.
+- Sinusupil ang mga taong walang `mobilePhone` o may nakatakdang `optedOut`. Kung walang texting provider ang simbahan, sinusupil ang natitirang batch na may reason na `no_provider`.
+- Binubuo ang body ng `ReminderEngine.smsBody()`: `"<Church name>: <message> Reply STOP to opt out."`, pinutol sa isang 160-character na segment.
+- Bawat tatanggap ay may sariling row sa `reminderSentLog` na may `channel: "sms"` at status na `sent` / `suppressed` / `failed`, hiwalay sa push/email row, kaya hindi kailanman muling ipapadala ng text na pumalpak ang push o email.
+
+Lumalabas lamang ang **Text** sa mga editor kapag ang `GET /messaging/texting/status` ay nagbabalik ng `{ enabled: true }` (naka-enable ang unang texting provider ng simbahan).
+
+**STOP opt-out.** Ang `POST /messaging/texting/inbound/:churchId/:token` ay isang anonymous na webhook na ipe-paste ng simbahan sa provider nito (ipinapakita ng B1Admin ang URL mula sa `GET /messaging/texting/inboundUrl` sa texting settings). Ang token ay HMAC ng church id (`SmsOptOutHelper.token`). Tinatanggap ng `SmsOptOutHelper.parse` ang mga form field na istilong Twilio at JSON na istilong Clearstream/TextInChurch; kapag ang reply ay eksaktong stop word ng carrier (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`), bawat hindi naalis na tao sa simbahan na tugma ang mobile number ay makakatanggap ng `people.optedOut = true` at `allowSms = false`. Kinikilala at binabalewala ang ibang reply.
 
 Ang isang internal event bus ay tumutugon sa mga pagbabago sa entity nang hindi naghihintay sa nightly expansion: ang mga content event (sa pamamagitan ng webhook dispatcher) at plan/task update event ay nagti-trigger ng agarang re-expansion o cancellation para sa apektadong entity, at ang pag-update ng plan ay nagre-re-expand din ng anumang scope definition na nakatali sa plan type nito.
 
@@ -120,14 +135,14 @@ Ang mga shadow row ay hindi nakikita ng notifications bell: hindi sila kasama sa
 Bawat padala ay dumadaan sa `PreferenceGateHelper.evaluate()`, isang pure function (lahat ng state ay ipinapasa, walang DB call sa hot path) na nagbabalik ng `allow`, `suppress`, o `defer`. Sunud-sunod na tumatakbo ang mga layer, at ang unang magpasya ang nananaig:
 
 1. **Locked category** — ang ilang kategorya ay sapilitan (tier 0) at nilalampasan ang lahat ng ibang layer.
-2. **Master mute / channel kill** — ang `masterMute`, `allowPush`, `allowSms`, o `emailFrequency='never'` ay tuwirang nagsu-suppress.
+2. **Master mute / channel kill** — ang `masterMute`, `allowPush`, `allowSms` (naka-off bilang default — nag-o-opt in ang mga miyembro), o `emailFrequency='never'` ay tuwirang nagsu-suppress.
 3. **Quiet hours** — push at SMS lang (ang email ay itinuturing na hindi nakakaistorbo). Kung ang kasalukuyang wall-clock time sa timezone ng tao ay nasa quiet window niya, ang transactional na kategorya ay makakalusot pa rin; ang hindi transactional ay ide-defer hanggang sa katapusan ng quiet window, na kinukuwenta bilang DST-correct na UTC instant sa pamamagitan ng `TimezoneHelper.wallClockToUtc`.
 4. **Per-category preference override** — tahasang opt-out para sa isang pares ng category × channel; ang kawalan nito ay nangangahulugang default ng kategorya.
 5. **Per-entity mute** — ang mute na nakatala sa isang tiyak na entity (hal. isang event, isang plan) ay mas mahigpit kaysa sa setting sa antas ng kategorya, pero nalalapat lang kapag nagbigay ang caller ng entity id/type kasama ng notification.
 
 Mga table na kasangkot: `notificationPreferences` (global — `masterMute`, `emailFrequency` na `individual|daily|weekly|never`, `allowPush`, quiet-hours window + timezone, `allowSms`), `notificationPreferenceOverrides` (bawat category × channel), at `notificationEntityMutes` (bawat entity).
 
-Ipinapatupad ang gate na ito para sa in-app (level 0), push (level 1), at email (level 2) sa loob ng funnel — kasama ang mga immediate reminder/digest email. Ang transactional email (auth code, password reset, imbitasyon, resibo ng donasyon) ay lumalampas dito sa disenyo; iyon mismo ang layunin ng ikalawang pintuan.
+Ipinapatupad ang gate na ito para sa in-app (level 0), push (level 1), at email (level 2) sa loob ng funnel — kasama ang mga immediate reminder/digest email, at para sa mga reminder text sa `ReminderEngine.sendSms()`. Ang transactional email (auth code, password reset, imbitasyon, resibo ng donasyon) ay lumalampas dito sa disenyo; iyon mismo ang layunin ng ikalawang pintuan.
 
 ## Mga limitasyon sa email na isinulat ng simbahan
 
@@ -158,9 +173,10 @@ Sa lokal, ang parehong logic ay maaaring i-trigger kapag kailangan gamit ang `np
 | Transactional door | `Api/src/shared/helpers/TransactionalEmailHelper.ts`, lint rule `Api/tools/eslint-rules/email-door.cjs` |
 | Mga limitasyon sa email ng simbahan | `Api/src/shared/helpers/ChurchEmailLimiter.ts`, `Api/src/lambda/ses-feedback-handler.ts`, `Api/src/modules/messaging/repositories/DeliveryLogRepo.ts` |
 | Reminder engine | `Api/src/modules/messaging/helpers/ReminderEngine.ts`, `ReminderBootstrap.ts`, `helpers/adapters/*`, `controllers/ReminderController.ts` |
+| Texting / STOP opt-out | `Api/src/modules/messaging/helpers/SmsOptOutHelper.ts`, `controllers/TextingController.ts` (`/status`, `/inboundUrl`, `/inbound/:churchId/:token`), `Api/src/modules/doing/helpers/MatrixTextHelper.ts` (serving overview **Text Volunteers**) |
 | Mga reminder repository | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`, `ReminderOccurrenceRepo.ts`, `ReminderSentLogRepo.ts` |
 | Serving/plan email | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`, `ReminderTokenHelper.ts`, `Api/src/shared/modules/DoingModuleGateway.ts` |
-| Mga reminder editor (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx` |
+| Mga reminder editor (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx`, `hooks/useTextingEnabled.ts` |
 | Reminder editor / mga preference (B1App) | `EventReminderEdit.tsx`, `NotificationPrefsPage.tsx`, `useRealtimeNotifications.ts` |
 
 ## Mga Kaugnay na Pahina

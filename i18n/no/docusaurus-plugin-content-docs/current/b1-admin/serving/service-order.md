@@ -22,7 +22,7 @@ Gudstjenesteforløpet definerer rekkefølgen på elementene i gudstjenesten. Bru
 
 1. Gå til **Tjeneste** og velg tjenesteområdet ditt.
 2. Klikk på en **plantype**, og åpne deretter en bestemt **plan**.
-3. Klikk på fanen **Gudstjenesteforløp** på plandetaljsiden.
+3. Seksjonen **Gudstjenesteforløp** står øverst på plansiden, over **Tjenestetildelinger**.
 
 ## Bygge gudstjenesteforløpet
 
@@ -38,8 +38,8 @@ Gudstjenesteforløpet er en liste over elementer ordnet i den rekkefølgen de ko
 
 ## Legge til elementer i gudstjenesteforløpet
 
-1. Klikk på **Legg til element** i fanen **Gudstjenesteforløp**.
-2. Velg typen element du vil legge til (for eksempel en sang fra biblioteket ditt, et egendefinert element, en overskrift eller et **eksternt element**).
+1. I seksjonen **Gudstjenesteforløp** klikker du på **Legg til** og velger hva du vil legge til: **Legg til seksjon** (en overskrift som grupperer elementer), **Element** (et egendefinert element), **Sang** (fra biblioteket ditt) eller **Legg til fra leksjon**. Du kan også klikke direkte på **Legg til seksjon**.
+2. Hvis du vil legge til noe inne i en seksjon, bruker du add-menyen i seksjonens overskrift og velger **Sang**, **Element** eller **Eksternt element**.
 3. Fyll inn detaljene for elementet, som tittel og eventuelle notater.
 4. Klikk på **Lagre**.
 
@@ -49,7 +49,7 @@ Du kan legge til sanger direkte fra [Sanger](./songs.md)-biblioteket ditt. Da kn
 
 ### Importere flere elementer fra en ekstern leverandør
 
-Hvis du velger **Eksternt element**, åpnes en leser for de tilkoblede leksjonsleverandørene dine i stedet for et skjema for ett enkelt element. Bla (eller søk) i leverandørens innhold, og kryss av for hver del eller handling du vil ha. Dialogboksen holder oversikt over hvor mange du har valgt (for eksempel «3 valgt») -- klikk på **Importer (3)** for å legge til alle på én gang i gudstjenesteforløpet, i stedet for å gjenta prosessen for å legge til element for hvert enkelt.
+Hvis du velger **Eksternt element** (eller **Legg til fra leksjon**), åpnes en leser for de tilkoblede leksjonsleverandørene dine i stedet for et skjema for ett enkelt element. Bla (eller søk) i leverandørens innhold, og kryss av for hver del eller handling du vil ha. Dialogboksen holder oversikt over hvor mange du har valgt (for eksempel «3 valgt») -- klikk på **Importer (3)** for å legge til alle på én gang i gudstjenesteforløpet, i stedet for å gjenta prosessen for å legge til element for hvert enkelt.
 
 :::tip
 Dette er den raskeste måten å hente inn alle delene og innsatsene fra en hel leksjon i et gudstjenesteforløp i én omgang, i stedet for å legge til hvert element for seg.
@@ -108,8 +108,8 @@ Valg av flere gjelder bare for en seksjons direkte underordnede elementer, ikke 
 
 Hvis planen din har mer enn ett gudstjenestetidspunkt (for eksempel en gudstjeneste kl. 08 og en kl. 10), kan du velge hvilke gudstjenester hvert element skal vises i. Det er nyttig når en kunngjøring bare er relevant for én gudstjeneste, eller når en sang synges i den ene gudstjenesten, men ikke i den andre.
 
-1. Åpne en plan som har to eller flere gudstjenestetidspunkter definert i kortet **Tidspunkter** i fanen **Tildelinger**.
-2. Klikk på et element i fanen **Gudstjenesteforløp** for å redigere det.
+1. Åpne en plan som har to eller flere gudstjenestetidspunkter. Klikk på **Tidspunkter** i seksjonen **Tjenestetildelinger** for å se eller legge dem til.
+2. Klikk på et element i seksjonen **Gudstjenesteforløp** for å redigere det.
 3. Under **Ta med i gudstjenester** ser du en avkrysningsboks for hvert gudstjenestetidspunkt, merket med klokkeslettet.
 4. Fjern avkrysningen for gudstjenester der elementet skal hoppes over.
 5. Klikk på **Lagre**.
@@ -117,7 +117,7 @@ Hvis planen din har mer enn ett gudstjenestetidspunkt (for eksempel en gudstjene
 Som standard er hvert element med i alle gudstjenester. Utelatte gudstjenestetidspunkter skjules når du skriver ut planen filtrert på den gudstjenesten, slik at hver gudstjeneste får et rent løpeark med bare de relevante elementene.
 
 :::tip
-Delen **Ta med i gudstjenester** vises bare når planen har mer enn ett gudstjenestetidspunkt. Hvis du bare ser én gudstjeneste, bruker du først kortet **Tidspunkter** i planens fane **Tildelinger** for å legge til flere gudstjenester.
+Delen **Ta med i gudstjenester** vises bare når planen har mer enn ett gudstjenestetidspunkt. Hvis du bare ser én gudstjeneste, klikker du først på **Tidspunkter** i seksjonen **Tjenestetildelinger** i planen for å legge til flere gudstjenester.
 :::
 
 ### Vise en annen posisjon per gudstjeneste
@@ -126,10 +126,10 @@ Hvis et element har en **posisjon** satt, får hvert avkrysset gudstjenestetidsp
 
 ## Dele gudstjenesteforløpet
 
-Når gudstjenesteforløpet er ferdig, kan du skrive ut hele planen (inkludert gudstjenesteforløpet) fra plandetaljsiden. Dette gir laget ditt en fullstendig oversikt over gudstjenesten, med menighetens navn og planens navn øverst. Når **Vis navn på frivillige** er slått på for utskriften, skrives hver seksjonsoverskrift også ut med den tildelte frivilliges posisjon ved siden av, slik at laget ditt kan se hvem som dekker den delen uten å åpne appen. Hvis posisjonen til en overskrift er overstyrt for bestemte gudstjenester, viser utskriften alle de ulike posisjonsnavnene den løses til på tvers av gudstjenestene i planen (for eksempel «Lovsangsteam / Ungdomsteam»).
+Når gudstjenesteforløpet er ferdig, kan du skrive ut hele planen (inkludert gudstjenesteforløpet) med knappen **Skriv ut** øverst på plansiden. Dette gir laget ditt en fullstendig oversikt over gudstjenesten, med menighetens navn og planens navn øverst. Når **Vis navn på frivillige** er slått på for utskriften, skrives hver seksjonsoverskrift også ut med den tildelte frivilliges posisjon ved siden av, slik at laget ditt kan se hvem som dekker den delen uten å åpne appen. Hvis posisjonen til en overskrift er overstyrt for bestemte gudstjenester, viser utskriften alle de ulike posisjonsnavnene den løses til på tvers av gudstjenestene i planen (for eksempel «Lovsangsteam / Ungdomsteam»).
 
 ## Neste steg
 
 - Administrer lovsangsrepertoaret ditt på siden [Sanger](./songs.md)
-- Tildel frivillige til gudstjenesten i fanen Tildelinger under [Planer](./plans.md)
+- Tildel frivillige til gudstjenesten i plannens seksjon [Tjenestetildelinger](./plans.md#assigning-team-members)
 - Opprett [Oppgaver](./tasks.md) for oppfølgingspunkter knyttet til gudstjenesten

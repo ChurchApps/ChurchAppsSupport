@@ -22,8 +22,8 @@ La section Personnes est la base de B1 Admin — c'est la base de données des m
 
 1. Accédez au tableau de bord B1.church Admin.
 2. Ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Personnes**, et cliquez sur **Personnes**.
-3. Cliquez sur le bouton **Ajouter une personne** dans le coin supérieur droit.
-4. Remplissez le prénom, le nom de famille et l'adresse e-mail de la personne, puis cliquez sur **Ajouter**.
+3. Cliquez sur le bouton **Ajouter une personne** dans l'en-tête de la page. La page défile vers le bas jusqu'au formulaire **Ajouter une nouvelle personne** situé sous le répertoire.
+4. Remplissez le **Prénom**, le **Nom** et l'**E-mail** de la personne, puis cliquez sur **Ajouter**.
 
 La page de profil de la personne s'ouvrira, prête pour que vous ajoutiez plus de détails.
 
@@ -42,22 +42,27 @@ Cela ne vérifie que les doublons lors de la création d'une toute nouvelle pers
 
 ## Éditer les détails
 
-1. Sur la page de profil de la personne, cliquez sur le **crayon de modification** à côté de son nom.
-2. Remplissez des informations supplémentaires telles que le deuxième prénom, le statut d'adhésion, les dates, l'adresse, les numéros de téléphone et (pour les enfants et les étudiants) le niveau scolaire et l'école.
+1. Sur la page de profil de la personne, cliquez sur le bouton **Edit** sous ses coordonnées à gauche.
+2. Dans le formulaire **Personal Details**, remplissez des informations supplémentaires telles que le deuxième prénom, le statut d'adhésion (**Visitor**, **Guest**, **Regular Attendee**, **Member**, **Staff**, **Inactive** ou **Deceased**), les dates, l'adresse, les numéros de téléphone et (pour les enfants et les étudiants) le niveau scolaire et l'école.
 3. Cliquez sur **Enregistrer** pour stocker les informations personnelles.
 
-Le profil inclut également plusieurs onglets pour les informations connexes :
+La partie gauche du profil affiche la photo, le nom, le statut d'adhésion, les coordonnées, les valeurs de tout [champ personnalisé](../settings/custom-fields.md) et le ménage de la personne. Cliquez sur la photo pour la modifier. Sous le bouton **Edit**, quelques autres actions sont disponibles : **Workflow** (ajouter la personne à un [flux de travail](../serving/workflows.md)), **Merge**, **Export** et **Export Data**.
 
-- **Notes** — Ajouter des notes sur la personne (soins pastoraux, suivi, etc.)
-- **Groupes** — Afficher et gérer les [appartenances aux groupes](../groups/group-members.md)
-- **Présence** — Afficher l'historique des visites individuelles de cette personne, y compris le site, le service, l'heure du service, le groupe, et une colonne **Enregistré** avec l'heure d'enregistrement au kiosque (affichée en tiret pour les visites enregistrées sans enregistrement au kiosque). Pour les tendances au niveau de l'église plutôt que l'historique d'une personne, voir [Suivi de la présence](../attendance/tracking-attendance.md)
-- **Dons** — Afficher l'[historique des dons](../donations/recording-donations.md)
+La suite du profil affiche une section récapitulative pour chaque type d'information associée :
+
+- **Présence** — Indique lesquelles des dernières semaines la personne a suivies et ses visites les plus récentes. Cliquez sur **All years** pour afficher tout son historique de visites, y compris le site, le service, l'heure du service, le groupe, et une colonne **Enregistré** avec l'heure d'enregistrement au kiosque (affichée en tiret pour les visites enregistrées sans enregistrement au kiosque), ou sur **Print** pour l'imprimer. Pour les tendances au niveau de l'église plutôt que l'historique d'une personne, voir [Suivi de la présence](../attendance/tracking-attendance.md)
+- **Dons** — Affiche les dons de cette année. Cliquez sur **All years** pour voir tout l'[historique des dons](../donations/recording-donations.md), ou sur **Log a gift** pour en enregistrer un nouveau
+- **Groupes** — Liste les [appartenances aux groupes](../groups/group-members.md) de la personne
+- **Notes** — Affiche les notes récentes sur la personne (soins pastoraux, suivi, etc.). Cliquez sur **All notes** pour lire et ajouter des notes
+- **Formulaires** — Liste les formulaires de la personne et indique si chacun a été soumis (voir [Travailler avec les formulaires](#working-with-forms) ci-dessous)
+
+Lorsque vous ouvrez l'une de ces vues complètes, cliquez sur le lien **Back to** avec le nom de la personne en haut pour revenir au profil.
 
 ## Envoyer un e-mail à une personne
 
-Si la personne a une adresse e-mail en dossier, un bouton **Envoyer un e-mail à cette personne** (icône d'enveloppe) apparaît dans l'en-tête du profil.
+Si la personne a une adresse e-mail enregistrée, un bouton **Email** apparaît sous ses coordonnées, à gauche du profil.
 
-1. Sur le profil de la personne, cliquez sur l' **icône de l'enveloppe**.
+1. Sur le profil de la personne, cliquez sur **Email**.
 2. Une boîte de dialogue **E-mail** intitulée avec le nom de la personne s'ouvre, affichant **Envoi à** avec l'adresse de la personne.
 3. Optionnellement, choisissez un modèle enregistré à partir de **Charger le modèle (optionnel)**.
 4. Entrez un **Sujet** et composez le message.
@@ -66,16 +71,16 @@ Si la personne a une adresse e-mail en dossier, un bouton **Envoyer un e-mail à
 Pour écrire le message dans votre propre programme de courrier à la place, cliquez sur **Ouvrir dans mon application de messagerie**.
 
 :::info
-L'envoi depuis B1 utilise les mêmes approbations et limites quotidiennes que l'e-mail de groupe. Si votre église n'a pas encore été approuvée, la boîte de dialogue vous demande de demander un examen — vous pouvez toujours cliquer sur **Ouvrir dans mon application de messagerie** en attendant. Voir [Activation de l'e-mail de groupe pour votre église](../groups/group-members.md#turning-on-group-email-for-your-church). Les utilisateurs sans permission d'éditer les membres du groupe vont directement à leur application de messagerie lorsqu'ils cliquent sur l'icône de l'enveloppe.
+L'envoi depuis B1 utilise les mêmes approbations et limites quotidiennes que l'e-mail de groupe. Si votre église n'a pas encore été approuvée, la boîte de dialogue vous demande de demander un examen — vous pouvez toujours cliquer sur **Ouvrir dans mon application de messagerie** en attendant. Voir [Activation de l'e-mail de groupe pour votre église](../groups/group-members.md#turning-on-group-email-for-your-church). Les utilisateurs sans permission d'éditer les membres du groupe vont directement à leur application de messagerie lorsqu'ils cliquent sur **Email**.
 :::
 
-## Travailler avec les formulaires
+## Travailler avec les formulaires {#working-with-forms}
 
 Vous pouvez remplir des formulaires personnalisés directement à partir du profil d'une personne. Ce sont des formulaires définis par l'utilisateur que vous pouvez créer en suivant le guide [Création de formulaires](../forms/creating-forms.md).
 
-1. Sur le profil de la personne, cliquez sur la liste déroulante **Formulaires** pour sélectionner un formulaire.
-2. Cliquez sur **Ajouter un formulaire** pour l'ouvrir.
-3. Remplissez les détails du formulaire et cliquez sur **Enregistrer**.
+1. Sur le profil de la personne, repérez la section **Formulaires**. Elle liste chaque formulaire avec la mention **Submitted** ou **Not submitted**.
+2. Cliquez sur le nom d'un formulaire pour l'ouvrir (ou cliquez sur **All forms** pour voir la liste complète).
+3. Cliquez sur l'**icône de modification** (crayon) du formulaire, remplissez les détails et cliquez sur **Enregistrer**.
 
 Une fois qu'un formulaire est soumis, cliquez sur l' **icône d'impression** à côté de celui-ci pour imprimer les réponses remplies de cette personne.
 
@@ -93,9 +98,9 @@ Si vous devez uniquement suivre une ou deux pièces d'information supplémentair
 
 Les ménages vous permettent de lier les membres de la famille ensemble. Cela est particulièrement utile pour l' [enregistrement](../attendance/check-in.md), où un parent peut enregistrer tous ses enfants à la fois.
 
-1. Sur le profil d'une personne, cliquez sur le **crayon de modification** à côté du nom du ménage.
-2. L'éditeur de ménage s'ouvrira. Sélectionnez le **rôle du ménage** pour la personne actuelle (p. ex., Chef, Conjoint, Enfant).
-3. Cliquez sur **Ajouter** pour ajouter un autre membre du ménage.
-4. Tapez le nom de la personne dans la zone de recherche et cliquez sur **Rechercher**.
-5. Lorsque la personne apparaît dans les résultats de la recherche, cliquez sur **Sélectionner**.
+1. Sur le profil d'une personne, cliquez sur **Edit** à côté du titre **Household**, à gauche.
+2. L'éditeur de ménage s'ouvrira. Sélectionnez le **rôle du ménage** pour la personne actuelle (p. ex., Chef, Conjoint, Enfant, Autre).
+3. Cliquez sur l'icône **Ajouter** pour ajouter un autre membre du ménage.
+4. Sous **Add Household Member**, tapez le nom de la personne dans la zone de recherche et appuyez sur **Entrée** ou cliquez sur l'icône de recherche. (Avant de taper, une courte liste de **Recent people** s'affiche.)
+5. Lorsque la personne apparaît dans les résultats, cliquez sur son nom ou sur l'icône d'ajout à côté.
 6. Choisissez leur rôle de ménage et cliquez sur **Enregistrer** pour terminer la configuration du ménage.

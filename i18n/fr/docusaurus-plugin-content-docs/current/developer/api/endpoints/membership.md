@@ -85,6 +85,7 @@ Voir [Authentification et permissions](./authentication) pour les points de term
 | POST | `/updateEmail` | JWT | — | Changer l'adresse e-mail de l'utilisateur |
 | POST | `/updatePassword` | JWT | — | Changer le mot de passe de l'utilisateur (6 caractères min.) |
 | POST | `/updateOptedOut` | JWT | — | Définir le statut de désabonnement d'une personne |
+| POST | `/sendInviteEmail` | JWT | People.Edit | Envoyer une invitation par e-mail à une personne de cette église (`email`, `personName`, `contextName`). Le bouton affiche **Sign Up** pour une personne sans compte et **Log In** pour un utilisateur existant. Un utilisateur qui ne s'est jamais connecté reçoit plutôt un lien **Set Your Password** valable 7 jours. Compte dans la limite quotidienne d'e-mails de l'église (`429` lorsqu'elle est atteinte) |
 | GET | `/search?term=` | JWT | Server.Admin | Rechercher tous les utilisateurs par nom/e-mail |
 | DELETE | `/` | JWT | — | Supprimer le compte utilisateur actuel |
 

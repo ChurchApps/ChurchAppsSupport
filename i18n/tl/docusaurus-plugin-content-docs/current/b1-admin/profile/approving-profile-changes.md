@@ -24,8 +24,8 @@ Kapag nagsumite ang isang miyembro ng pagbabago sa profile, lalabas ito bilang t
 
 **Mula sa Dashboard (inyong home page):**
 1. Mag-log in sa B1 Admin — awtomatikong magbubukas ang Dashboard.
-2. Sa seksyong **Tasks** sa kanang bahagi, i-click ang tab na **Assigned to My Groups**.
-3. Nakalista roon ang anumang nakabinbing kahilingan sa pagbabago ng profile.
+2. Sa seksyong **My tasks**, i-click ang **All tasks**. (Ang My tasks ay naglilista lamang ng mga bukas na task na nakatalaga sa inyo nang personal.)
+3. I-click ang tab na **Assigned to My Groups**. Nakalista roon ang anumang nakabinbing kahilingan sa pagbabago ng profile.
 
 **Mula sa Serving &rarr; My Work:**
 1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin) at palawakin ang **Serving**.

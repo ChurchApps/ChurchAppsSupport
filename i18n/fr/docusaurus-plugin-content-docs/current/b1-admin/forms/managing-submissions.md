@@ -72,7 +72,7 @@ Les membres du formulaire avec les rôles **Admin** ou **View Only** peuvent acc
 :::
 
 :::tip
-Si un formulaire **Stand Alone** est défini pour créer un dossier de personne, les soumissions appariées à une personne existante apparaissent également dans l'onglet **Forms** de cette personne dans la section People — pas seulement les formulaires de type People.
+Si un formulaire **Stand Alone** est défini pour créer un dossier de personne, les soumissions appariées à une personne existante apparaissent également dans la section **Forms** de la page de cette personne dans People — pas seulement les formulaires de type People.
 :::
 
 ## Prochaines étapes

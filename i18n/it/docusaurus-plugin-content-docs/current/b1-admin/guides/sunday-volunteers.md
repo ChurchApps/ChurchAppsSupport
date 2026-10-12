@@ -29,7 +29,7 @@ Segui le guide [Creazione di Gruppi](../groups/creating-groups.md) e [Membri del
 3. Aggiungi volontari a ogni gruppo cercando il loro nome e facendo clic su Aggiungi
 
 :::tip
-Designa i leader del team usando l'icona della chiave verde nella scheda Membri. I leader possono gestire il loro calendario di gruppo e coordinare il loro team.
+Designa i leader del team con l'icona a stella (**Rendi leader**) nell'elenco dei membri del gruppo (fai clic su **Tutti i membri** nella pagina del gruppo). I leader possono gestire il loro calendario di gruppo e coordinare il loro team.
 :::
 
 ## Passaggio 2: Costruisci la Tua Biblioteca di Canzoni
@@ -52,10 +52,11 @@ I piani sono i compiti settimanali che dicono ai volontari dove sono necessari.
 
 Segui la guida [Piani](../serving/plans.md) per:
 
-1. Naviga su Servizio, seleziona la tua scheda di ministero
-2. Fai clic su "Aggiungi Piano" e scegli la data del servizio
-3. Nella scheda Incarichi, espandi ogni team e assegna volontari alle loro posizioni
+1. Vai su Servizio, seleziona la tua scheda di ministero e apri il tuo tipo di piano
+2. Fai clic su **Nuovo piano** e scegli la data del servizio. Per impostare più domeniche in una volta, copia dal piano precedente e inserisci quante settimane in **Ripeti settimanalmente per questo numero di settimane**
+3. Nella sezione **Assegnazioni del team di servizio** del piano, aggiungi posizioni e assegna volontari a esse
 4. I volontari vedranno il loro stato di incarico (Richiesto, Confermato, In Sospeso)
+5. Attiva i [promemoria per i volontari](../serving/plans.md#volunteer-reminders) per il tipo di piano così i volontari ricevono un promemoria via push, email o SMS prima di ogni servizio
 
 ## Passaggio 4: Costruisci l'Ordine del Servizio
 
@@ -63,8 +64,8 @@ Delinea il flusso del tuo servizio dall'inizio alla fine.
 
 Segui la guida [Ordine del Servizio](../serving/service-order.md) per:
 
-1. Passa alla scheda "Ordine del Servizio" nel tuo piano
-2. Fai clic su "Aggiungi Elemento" per aggiungere elementi: canzoni di culto (dalla tua biblioteca), preghiere, letture di scritture, annunci, sermone, offerta, chiusura
+1. Apri il tuo piano e trova la sezione **Ordine del servizio** in cima
+2. Fai clic su **Aggiungi** per aggiungere elementi: canzoni di culto (dalla tua biblioteca), preghiere, letture di scritture, annunci, sermone, offerta, chiusura
 3. Trascina e rilascia elementi per riordinare il flusso del servizio
 
 :::info
@@ -89,7 +90,7 @@ B1 Admin non crea più compiti su base ricorrente. Per processi ricorrenti che s
 
 Consenti ai volontari di iscriversi autonomamente alle posizioni invece di aspettare i compiti amministrativi.
 
-1. Quando modifichi un piano, imposta una **Scadenza di Iscrizione** (ore prima del servizio) per controllare quando la registrazione autonoma si chiude. Lascia vuoto per nessuna scadenza.
+1. Quando crei o modifichi un piano, imposta una **Scadenza di Iscrizione** (ore prima del servizio) per controllare quando la registrazione autonoma si chiude. Lascia vuoto per nessuna scadenza. I nuovi piani iniziano con la scadenza del piano precedente.
 2. Facoltativamente attiva **Mostra nomi dei volontari nella pagina di iscrizione** per consentire ai volontari di vedere chi altro si è iscritto.
 3. Per ogni posizione, seleziona la casella di controllo **Consenti Iscrizione Autonoma** per renderla disponibile per il self-service.
 4. Aggiungi una **Descrizione** a ogni posizione in modo che i volontari sappiano cosa comporta il ruolo.

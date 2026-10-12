@@ -60,7 +60,7 @@ Følg veiledningen [Direktekringkasting](../sermons/live-streaming.md) for å:
 
 1. Skriv inn YouTube-kanal-ID-en i direktekringkastingsinnstillingene
 2. Konfigurer gjentakende servicetidsplan (f.eks. søndager kl. 10:00)
-3. Tilpass direktekringkastingsfanene: Chat, Begjæringer om bønn og egendefinerte lenker
+3. Tilpass fanene på direktekringkastingssiden (Chat, Begjæringer om bønn og egendefinerte lenker) på siden **Prekener > Innstillinger**
 
 :::info
 Når du går live på YouTube, plukker B1 direktekringkastingssiden automatisk opp strømmen. Ingen ekstra trinn trengs søndagsmorgen.

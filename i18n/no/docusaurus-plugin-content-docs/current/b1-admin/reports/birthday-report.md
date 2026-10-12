@@ -24,7 +24,7 @@ Trenger du en liste over alle som har fødselsdag eller bryllupsdag i en bestemt
 2. Klikk på **Avansert** under søkefeltet.
 3. Utvid delen **Demografi**, huk av for **Fødselsmåned** og velg måneden.
 4. Kjør søket — alle som har fødselsdag den måneden, vises i resultatene.
-5. For å se datoene klikker du på **kolonneikonet** øverst til høyre i resultatene og slår på kolonnen **Fødselsdag**. Bruk **Eksporter** for å laste ned listen som et regneark hvis du heller vil sortere eller skrive den ut der.
+5. For å se datoene setter du **Vis som** til **Tabell**, klikker deretter på ikonet **Velg kolonner** i sidehodet og slår på kolonnen **Fødselsdag**. Bruk **Eksporter** for å laste ned listen som et regneark hvis du heller vil sortere eller skrive den ut der.
 
 ## Hente en bryllupsdagsliste
 

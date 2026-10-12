@@ -61,8 +61,8 @@ Lorsqu'un membre fait un don en ligne via Stripe :
 
 Pour enregistrer un don en espèces ou par chèque en devise différente :
 
-1. Accédez à **Dons** dans B1 Admin
-2. Cliquez sur **Ajouter un don**
+1. Accédez à **Dons > Lots** dans B1 Admin et ouvrez le lot
+2. Cliquez sur **Ajouter un don** en haut de la page du lot
 3. Sélectionnez la devise dans la liste déroulante des devises
 4. Entrez le montant dans cette devise
 5. Complétez le reste des détails du don

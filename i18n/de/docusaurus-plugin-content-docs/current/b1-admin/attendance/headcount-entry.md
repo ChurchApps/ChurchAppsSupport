@@ -19,13 +19,13 @@ Mit Kopfzahlen können Sie eine einfache Gesamtbesucherzahl aufzeichnen – für
 </div>
 
 :::info
-Kopfzahlen sind eine nur-Total-Alternative zu [Teilnahme aufzeichnen](recording-attendance.md). Wenn Sie wissen müssen, **wer** anwesend war – zum Beispiel, um Personen zu kontaktieren, die nicht zurückgekehrt sind – verwenden Sie weiterhin benannte Sitzungsteilnahme auf einer Gruppen-Registerkarte "Sitzungen". Kopfzahlen speichern nur eine Zahl.
+Kopfzahlen sind eine nur-Total-Alternative zu [Teilnahme aufzeichnen](recording-attendance.md). Wenn Sie wissen müssen, **wer** anwesend war – zum Beispiel, um Personen zu kontaktieren, die nicht zurückgekehrt sind – verwenden Sie weiterhin benannte Sitzungsteilnahme in den Sitzungen einer Gruppe. Kopfzahlen speichern nur eine Zahl.
 :::
 
 ## Kopfzahl aufzeichnen
 
 1. Öffnen Sie **B1 Admin**, öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Personen**, und klicken Sie auf **Teilnahme**.
-2. Wählen Sie die Registerkarte **Kopfzahlen** aus.
+2. Klicken Sie links auf **Kopfzahl eintragen**.
 3. Füllen Sie das Formular aus:
    - **Gottesdienst** *(erforderlich)*
    - **Gottesdienstzeit** – leer lassen, um einen Gesamtwert über alle Gottesdienstzeiten aufzuzeichnen
@@ -34,14 +34,14 @@ Kopfzahlen sind eine nur-Total-Alternative zu [Teilnahme aufzeichnen](recording-
    - **Kopfzahl** – die Gesamtzahl der anwesenden Personen
 4. Klicken Sie auf **Speichern**.
 
-Die Tabelle **Aktuelle Kopfzahlen** auf der rechten Seite listet Ihre letzten Einträge mit Datum, Gottesdienst, Gottesdienstzeit, Gruppe und Zahl auf. Klicken Sie auf eine Zeile, um sie zurück in das Formular zu laden, wenn Sie sie korrigieren oder löschen müssen.
+Die Tabelle **Aktuelle Kopfzahlen** neben dem Formular listet Ihre letzten Einträge mit Datum, Gottesdienst, Gottesdienstzeit, Gruppe und Zahl auf. Klicken Sie auf eine Zeile, um sie zurück in das Formular zu laden, wenn Sie sie korrigieren oder löschen müssen.
 
 ## Kopfzahl-Trendbericht
 
-1. Wählen Sie auf der gleichen Seite **Teilnahme** die Registerkarte **Kopfzahl-Trend** aus.
+1. Klicken Sie auf der gleichen Seite **Teilnahme** links auf **Alle Jahre** und wählen Sie dann die Registerkarte **Kopfzahl-Trend** aus.
 2. Verwenden Sie die Filter **Standort**, **Gottesdienst**, **Gottesdienstzeit** und **Gruppe**, um den Bericht zu verfeinern.
 
-Der Bericht zeigt Ihre aufgezeichneten Kopfzahlen pro Woche zusammengefasst, sowohl als Liniendiagramm als auch als Tabelle – der gleiche Berichtstil, der von den [Trendregisterkarten für Teilnahme und Gruppen](tracking-attendance.md) verwendet wird.
+Der Bericht zeigt Ihre aufgezeichneten Kopfzahlen pro Woche zusammengefasst, sowohl als Liniendiagramm als auch als Tabelle – der gleiche Berichtstil, der von den [Registerkarten Anwesenheitstrend und Gruppenteilnahme](tracking-attendance.md) verwendet wird. Für die aktuelle Woche eingetragene Kopfzahlen erscheinen außerdem unter **Kopfzahlen diese Woche** auf der Hauptseite Teilnahme.
 
 ## Verwandte Seiten
 

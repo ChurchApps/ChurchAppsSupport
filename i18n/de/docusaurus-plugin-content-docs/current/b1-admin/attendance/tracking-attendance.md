@@ -6,7 +6,7 @@ title: "Teilnahme verfolgen"
 
 <div class="article-intro">
 
-Sobald Ihre Standorte, Gottesdienstzeiten und Gruppen konfiguriert sind, macht es B1 Admin einfach, Teilnahmendaten zu überprüfen und Trends zu erkennen. Die Seite "Teilnahme" bietet zwei Berichtansichten – die Registerkarte **Teilnahme-Trend** für kirchenweite Trends und die Registerkarte **Gruppenteilnahme** für Gruppenebenen-Details. Verwenden Sie diese Tools, um Wachstumsmuster zu verstehen, rückläufiges Engagement zu erkennen und datengesteuerte Entscheidungen für Ihre Kirche zu treffen.
+Sobald Ihre Standorte, Gottesdienstzeiten und Gruppen konfiguriert sind, macht es B1 Admin einfach, Teilnahmendaten zu überprüfen und Trends zu erkennen. Die Seite "Teilnahme" öffnet sich mit einer Zusammenfassung der Teilnahme dieser Woche, und ihre Berichte unter **Alle Jahre** bieten zwei Hauptansichten – die Registerkarte **Teilnahme-Trend** für kirchenweite Trends und die Registerkarte **Gruppenteilnahme** für Gruppenebenen-Details. Verwenden Sie diese Tools, um Wachstumsmuster zu verstehen, rückläufiges Engagement zu erkennen und datengesteuerte Entscheidungen für Ihre Kirche zu treffen.
 
 </div>
 
@@ -21,8 +21,12 @@ Sobald Ihre Standorte, Gottesdienstzeiten und Gruppen konfiguriert sind, macht e
 ## Teilnahe-Trends anzeigen
 
 1. Öffnen Sie **B1 Admin**, öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Personen**, und klicken Sie auf **Teilnahme**.
-2. Klicken Sie auf die Registerkarte **Teilnahme-Trend**.
+2. Klicken Sie links auf **Alle Jahre**. Die Registerkarte **Teilnahme-Trend** ist standardmäßig ausgewählt.
 3. Der Bericht wird automatisch ausgeführt, wenn die Registerkarte geöffnet wird, und zeigt die Gesamtteilnahme für jede Woche.
+
+:::tip
+Für einen schnellen Überblick über die aktuelle Woche zeigt die Hauptseite Teilnahme, wie viele Personen diese Woche im Raum sind, eine Aufschlüsselung nach Raum (Gruppe), eventuelle Gäste und ein 13-Wochen-Balkendiagramm der Anmeldungen – ohne dass ein Bericht nötig ist.
+:::
 
 ## Ihre Daten filtern
 
@@ -44,7 +48,7 @@ Berichte werden automatisch ausgeführt, wenn Sie die Registerkarte Teilnahme-Tr
 
 Die Registerkarte **Gruppenteilnahme** zeigt, wer jede Gruppensiezzung besucht hat. Dies ist nützlich, wenn Sie eine bestimmte Klasse, ein Ministerium-Team oder eine kleine Gruppe überwachen möchten, anstatt auf die allgemeinen Service-Zahlen zu schauen.
 
-1. Wählen Sie die Registerkarte **Gruppenteilnahme**.
+1. Wählen Sie in den Berichten unter **Alle Jahre** die Registerkarte **Gruppenteilnahme**.
 2. Wählen Sie optional einen **Standort** und einen **Service**.
 3. Legen Sie das **Startdatum** und **Enddatum** fest. Der Bericht deckt standardmäßig den letzten Sonntag bis heute ab.
 4. Klicken Sie auf **Bericht ausführen**.

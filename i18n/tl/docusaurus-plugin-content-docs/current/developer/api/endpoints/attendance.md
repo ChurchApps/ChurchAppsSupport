@@ -65,11 +65,11 @@ Nag-e-extend ng GenericCrudController na may mga CRUD route na `getById`, `post`
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Ilista ang lahat ng oras ng serbisyo. I-filter gamit ang `?serviceId=`. Idagdag ang `?include=groups` para isama ang data ng grupo |
+| GET | `/` | JWT | — | Ilista ang lahat ng oras ng serbisyo. I-filter gamit ang `?serviceId=`. Idagdag ang `?include=groups` para isama ang data ng grupo. Bawat row ay may computed na `checkinOpen` boolean (false lamang kapag ang oras ng serbisyo ay may check-in schedule na sarado ang window sa sandaling ito, ayon sa lokal na oras ng simbahan) |
 | GET | `/:id` | JWT | — | Kunin ang isang oras ng serbisyo ayon sa ID |
 | GET | `/search?campusId=&serviceId=` | JWT | — | Maghanap ng mga oras ng serbisyo ayon sa campus at serbisyo |
 | GET | `/public/:churchId` | Public | — | Kunin ang puno ng campus → serbisyo → oras para sa isang simbahan. Ito ang nagpapagana sa elementong `serviceTimes` ng website builder |
-| POST | `/` | JWT | Services.Edit | Gumawa o mag-update ng mga oras ng serbisyo |
+| POST | `/` | JWT | Services.Edit | Gumawa o mag-update ng mga oras ng serbisyo. Opsyonal na schedule field: `dayOfWeek` (0 = Linggo … 6), `startTime` / `endTime` (`HH:mm`), `checkinOpenMinutes` (bago magsimula), `checkinCloseMinutes` (pagkatapos matapos). Nililimitahan lamang ng oras ang check-in kapag parehong nakatakda ang `dayOfWeek` at `startTime` |
 | DELETE | `/:id` | JWT | Services.Edit | Magtanggal ng oras ng serbisyo |
 
 ## Mga Oras ng Serbisyo ng Grupo
@@ -192,6 +192,8 @@ Authorization: Bearer <token>
   }
 ]
 ```
+
+Kung ang target na oras ng serbisyo ay may check-in schedule at sarado ang window nito, walang na-save at ang response ay `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }`. Ang mga paglabag sa capacity at volunteer ratio ay nagbabalik din ng 409 (`error: "capacity"` o `"ratio"`).
 
 ## Mga Visit Session
 

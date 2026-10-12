@@ -20,19 +20,19 @@ The Songs page manages your worship song library. Keep all your song details, ly
 
 ## Browsing Your Song Library
 
-When you open the **Songs** page, your songs are displayed as cards. Each card shows the song's thumbnail image, title, artist, and duration. Scroll through the library or use search to find what you need.
+When you open the **Songs** page, your songs are listed in a table. Each row shows the song's thumbnail image, title, artist, and duration. Use the page controls under the list to move through a large library, or search to find what you need.
 
 ## Searching for Songs
 
-1. Click the **Search** button on the Songs page.
+1. Click in the **Search Songs** box at the top of the Songs page.
 2. Type a song **title** or **artist** name.
-3. The results will filter as you type, showing matching songs from your library.
+3. The list filters as you type, showing matching songs from your library and how many matched. Click **Clear** to show every song again.
 
 ## Adding a Song
 
-1. Click **Add Song** on the Songs page.
-2. Search the external song database by title or artist.
-3. Select the song you want to add.
+1. Click **Add Song** at the top of the Songs page.
+2. In **Search for a Song**, search the external song database by **Title or Artist**.
+3. Select the song you want to add, or click **Create Manually** if you can't find it.
 4. The song will be added to your library with its basic details pre-filled.
 
 :::tip
@@ -48,12 +48,16 @@ Your search results may also include a **WorshipCommons — free** section along
 
 Only songs that have passed WorshipCommons' review process appear here, so the selection may be smaller than the main song database.
 
+## Deleting Songs
+
+Check the box next to one or more songs (or the box in the header to select every song shown), then click **Delete Selected** in the bar that appears and confirm. Click **Clear** to deselect.
+
 ## Viewing and Editing a Song
 
-Click on any song card to open its detail page. From here you can:
+Click a song's title to open its detail page. The song's title, artist, and details such as album, key, length, BPM, and meter appear on the left, along with its arrangements and external links. From here you can:
 
-- **Edit song details** -- Update the title, artist, duration, and other metadata.
-- **Manage arrangements** -- Each song can have multiple arrangements (for example, different keys or versions). Add, edit, or remove arrangements as needed.
+- **Edit song details** -- Click **Edit** to update the title, artist, duration, and other metadata. Click **Done** when you're finished. To remove the song from your library, click **Edit** and then **Delete song**.
+- **Manage arrangements** -- Each song can have multiple arrangements (for example, different keys or versions). Click **Add Arrangement** to create one, and click an arrangement's name under **Arrangements** to open it.
 - **Add lyrics** -- Enter or update the lyrics for each arrangement using ChordPro notation (for example, `[G]Amazing grace`). A live preview next to the editor renders the formatted chord chart as you type, so you can see exactly what your team will see.
 - **Set the key** -- Specify the musical key for each arrangement using the key picker next to the lyrics. Changing the key transposes the displayed chords immediately, both on the arrangement page and when opening the song from a service plan, so your team always sees chords in the key they're actually playing.
 - **Add external links** -- Attach links to resources like YouTube videos, chord charts, or sheet music hosted elsewhere.

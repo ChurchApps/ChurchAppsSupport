@@ -38,11 +38,11 @@ Pasar el mouse sobre un evento muestra el título del evento y la sala o recurso
 
 ## Filtrando por Sala o Recurso
 
-Use el menú desplegable **Filter** en la esquina superior izquierda para reducir el calendario a una sola sala o recurso. Seleccione **All Rooms & Resources** para volver a la vista completa.
+Use el menú desplegable **Room / Resource** en la esquina superior izquierda para reducir el calendario a una sola sala o recurso. Seleccione **All Rooms & Resources** para volver a la vista completa.
 
 ## Reservar una Sala o Recurso
 
-1. Haga clic en el botón **Book** en la esquina superior derecha de la página.
+1. Haga clic en el botón **Book** en la parte superior de la página.
 2. En el diálogo que se abre, complete los detalles del evento:
    - **Title** — el nombre del evento
    - **Start** y **End** fecha/hora

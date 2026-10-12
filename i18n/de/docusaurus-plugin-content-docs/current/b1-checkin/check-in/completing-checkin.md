@@ -31,6 +31,7 @@ Das ist alles, was erforderlich ist. Die Anwesenheit deiner Familie wurde aufgez
 Wenn deine Kirche [Sicherheitsgrenzen](../../b1-admin/attendance/checkin-safety) für ihre Zimmer konfiguriert hat, überprüft der Server sie vor dem Speichern:
 
 - Wenn ein ausgewähltes Zimmer **voll oder geschlossen** ist, wird das Check-In nicht durchgeführt und die App nennt das Zimmer, damit du ein anderes auswählen kannst.
+- Wenn die Gottesdienstzeit einen [Anmeldeplan](../../b1-admin/attendance/setup#setting-a-check-in-schedule) hat und das Check-in-Fenster gerade nicht geöffnet ist, wird das Check-In in die Räume dieser Gottesdienstzeit ebenfalls abgelehnt. Der Bildschirm **Check-in noch nicht möglich** führt den Raum als „room is full or closed“ auf; tippe auf **Räume ändern**, um eine andere Gottesdienstzeit oder Gruppe auszuwählen.
 - Wenn ein Kinderzimmer **zu wenige Freiwillige** für sein Verhältnis hat, zeigt die App entweder eine Warnung an, die ein Mitarbeiter bestätigen kann, um fortzufahren, oder blockiert das Check-In vollständig – abhängig davon, wie deine Kirche die Durchsetzung des Verhältnisses konfiguriert hat.
 
 ## Etikettendruck

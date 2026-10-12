@@ -20,19 +20,21 @@ Med oppgaver kan du tildele gjøremål til personer eller grupper i menigheten d
 
 ## Vise oppgaver
 
-Velg **Tjeneste > Mitt arbeid** i Jump-menyen (eller søk etter «Mitt arbeid»). Du ser en liste over dine åpne oppgaver. Hver oppgave viser tittel, ansvarlig og status.
+Velg **Tjeneste > Mitt arbeid** i Jump-menyen (eller søk etter «Mitt arbeid»). Listen **Oppgaver** viser tittelen til hver oppgave, hvem den gjelder, hvem den er tildelt, når den ble åpnet og statusen. Kortene dine fra [arbeidsflyter](./workflows.md) vises ved siden av under **Mine kort**.
+
+Bruk fanene over listen for å bytte mellom oppgavene **Tildelt meg**, **Tildelt mine grupper** og **Bedt om av meg**. Hver fane viser hvor mange oppgaver den inneholder.
 
 :::tip
-Som standard vises bare åpne oppgaver. Slå på **Vis lukkede** for å se fullførte oppgaver også.
+Som standard vises bare åpne oppgaver. Velg **Lukket** over listen for å se fullførte oppgaver i stedet.
 :::
 
 ## Opprette en oppgave
 
-1. Klikk på **Legg til oppgave** på Oppgaver-siden.
-2. Skriv inn en **tittel** for oppgaven.
-3. Klikk på feltet **Tildel til** og skriv navnet på en person, eller bytt til **Gruppe** og skriv et gruppenavn.
-4. Klikk på **Søk** og velg personen eller gruppen fra resultatene.
-5. Legg til et **notat** med detaljer eller instruksjoner til den ansvarlige.
+1. Klikk på **Legg til oppgave** på siden **Mitt arbeid**. Et skjema **Ny oppgave** åpnes.
+2. Klikk på feltet **Knytt til** og velg personen oppgaven gjelder.
+3. Klikk på feltet **Tildel til**. I vinduet **Velg en person eller gruppe** søker du på fanen **Person**, eller bytter til fanen **Gruppe** og søker etter en gruppe, og velger resultatet.
+4. Skriv inn en **tittel** for oppgaven.
+5. Legg til **notater** med detaljer eller instruksjoner til den ansvarlige.
 6. Klikk på **Lagre**.
 
 Oppgaven vises nå i oppgavelisten og er synlig for den ansvarlige på dashbordet og i mobilappen.
@@ -41,17 +43,31 @@ Oppgaven vises nå i oppgavelisten og er synlig for den ansvarlige på dashborde
 
 Klikk på en oppgave for å åpne detaljsiden. Herfra kan du:
 
-- **Endre status** -- Bytt mellom **Åpen** og **Lukket** med statusmenyen.
-- **Tildele oppgaven på nytt** -- Endre den ansvarlige til en annen person eller gruppe.
+- **Lukke eller åpne oppgaven igjen** -- Klikk på **Lukk oppgave** når arbeidet er gjort, eller **Åpne oppgaven igjen** for å åpne den på nytt.
+- **Tildele oppgaven på nytt** -- Klikk på **Tildel** for å velge en annen person eller gruppe.
+- **Endre hvem den gjelder** -- Klikk på **Knytt til** for å velge en annen person.
 - **Legge til notater** -- Ta med tilleggsinformasjon eller oppdateringer til den ansvarlige.
-- **Redigere tittelen** -- Oppdater oppgavetittelen etter behov.
+- **Angi påminnelser** -- Se [Påminnelser for oppgaver](#task-reminders) nedenfor.
+
+## Påminnelser for oppgaver {#task-reminders}
+
+En oppgave med forfallsdato kan minne den ansvarlige før den forfaller.
+
+1. Klikk på **Rediger** ved siden av **Påminnelser** på oppgavens side.
+2. Slå på **Send påminnelser for denne oppgaven**.
+3. Under **Når skal påminnelsene sendes?** velger du opptil tre tidspunkter: **7 dager før**, **3 dager før**, **1 dag før** eller **Samme dag**.
+4. Angi **Klokkeslett** og eventuelt en **Melding**.
+5. Under **Send via** velger du **Push**, **E-post** og, hvis menigheten din har en [tekstmeldingsleverandør](../settings/church-settings.md#texting) koblet til, **Tekstmelding**.
+6. Klikk på **Lagre påminnelser**.
+
+Hvis oppgaven ikke har en forfallsdato, varsler B1 deg om at ingen påminnelser sendes før en dato er satt. Tekstmeldingspåminnelser når bare personer som har slått på **Tekstmeldinger** i sine [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences.md), og hver tekstmelding kan koste menigheten din noe.
 
 ## Oppgavens livssyklus
 
 1. En ny oppgave starter med statusen **Åpen**.
 2. Den ansvarlige får et varsel og kan se oppgaven fra dashbordet sitt, fra **Tjeneste > Mitt arbeid** eller fra mobilappen.
-3. Når arbeidet er fullført, setter den ansvarlige (eller en administrator) statusen til **Lukket**.
-4. Lukkede oppgaver fjernes fra standardvisningen, men er fortsatt tilgjengelige ved å slå på **Vis lukkede**.
+3. Når arbeidet er fullført, klikker den ansvarlige (eller en administrator) på **Lukk oppgave**.
+4. Lukkede oppgaver fjernes fra standardvisningen, men finnes fortsatt ved å velge **Lukket** over oppgavelisten.
 
 :::info
 B1 Admin oppretter ikke lenger gjentakende oppgaver etter en tidsplan. For gjentakende oppfølging av personer kan du bruke en [arbeidsflyt](./workflows.md) med en [tidsplanutløser](./workflows.md#schedule-triggers).

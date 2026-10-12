@@ -53,7 +53,7 @@ Folgen Sie der Anleitung [Anwesenheit einrichten](../attendance/setup.md), um:
 
 1. Ihren Standort hinzuzufügen (z. B. „Hauptstandort")
 2. Einen Gottesdienst hinzuzufügen (z. B. „Sonntagmorgen")
-3. Die Gottesdienstzeit festzulegen (z. B. „9:00 Uhr")
+3. Die Gottesdienstzeit festzulegen (z. B. „9:00 Uhr") und optional einen [Check-in-Zeitplan](../attendance/setup.md#setting-a-check-in-schedule), damit der Check-in sich vor jedem Gottesdienst automatisch öffnet und danach schließt
 4. Ihre Kindergruppen dem Gottesdienst zuzuweisen
 
 ## Schritt 4: Die Check-in-App einrichten

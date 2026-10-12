@@ -20,7 +20,7 @@ Los usuarios con permiso Server.Admin pueden acceder al panel de administración
 
 1. Inicia sesión en [admin.b1.church](https://admin.b1.church)
 2. Abre el [menú Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu), expande **Configuración**, y haz clic en **Server Admin**. (También puedes ir directamente a `admin.b1.church/admin`.)
-3. El panel de administración del servidor tiene secciones para Iglesias, Usuarios, Suplantar Usuario, Trabajos de Fondo, Commons, Tendencias de Uso, Búsquedas de Traducción, Salud del Servidor, y Migraciones de Base de Datos
+3. El panel de administración del servidor enumera sus secciones en el lado izquierdo en tres grupos: **Directory** (Iglesias, Usuarios, Suplantar Usuario), **Operations** (Trabajos de Fondo, Commons, Tendencias de Uso) y **System** (Búsquedas de Traducción, Salud del Servidor, Migraciones de Base de Datos)
 
 ## Suplantación de Usuario
 

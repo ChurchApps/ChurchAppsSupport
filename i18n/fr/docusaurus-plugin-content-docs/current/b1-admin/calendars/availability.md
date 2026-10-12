@@ -38,11 +38,11 @@ Le survol d'un événement affiche le titre de l'événement et la salle ou la r
 
 ## Filtrage par Salle ou Ressource
 
-Utilisez la liste déroulante **Filtrer** en haut à gauche pour réduire le calendrier à une seule salle ou ressource. Sélectionnez **Toutes les Salles et Ressources** pour revenir à la vue complète.
+Utilisez la liste déroulante **Salle / Ressource** en haut à gauche pour réduire le calendrier à une seule salle ou ressource. Sélectionnez **Toutes les Salles et Ressources** pour revenir à la vue complète.
 
 ## Réservation d'une Salle ou Ressource
 
-1. Cliquez sur le bouton **Réserver** dans le coin supérieur droit de la page.
+1. Cliquez sur le bouton **Réserver** en haut de la page.
 2. Dans la boîte de dialogue qui s'ouvre, remplissez les détails de l'événement :
    - **Titre** — le nom de l'événement
    - **Début** et **Fin** date/heure

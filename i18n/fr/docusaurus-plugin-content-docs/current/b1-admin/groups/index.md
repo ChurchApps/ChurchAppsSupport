@@ -14,13 +14,7 @@ La section **Groupes** vous permet d'organiser les membres de votre église en m
 
 Les groupes sont organisés par **catégorie**. Une catégorie est un libellé de haut niveau tel que « Petits Groupes », « Ministères » ou « Comités ». Chaque catégorie peut contenir plusieurs groupes, ce qui facilite le maintien des groupes associés ensemble.
 
-Lorsque vous ouvrez la page Groupes, vous verrez un résumé en haut affichant :
-
-- **Total de groupes** -- le nombre de groupes dans toutes les catégories
-- **Catégories** -- le nombre de catégories de groupes que vous avez créées
-- **Total de membres** -- le nombre combiné de membres dans tous les groupes
-
-Sous le résumé, vos groupes sont répertoriés par catégorie avec le nombre de membres indiqué pour chaque groupe.
+Lorsque vous ouvrez la page Groupes, vous verrez une boîte **Search groups...**, une rangée de boutons de catégories et un tableau de vos groupes. Chaque groupe affiche sa catégorie et ses labels sous son nom, ainsi que son nombre de membres. Cliquez sur **All** ou sur le nom d'une catégorie pour filtrer la liste (les catégories supplémentaires se trouvent sous **More categories**), et cliquez sur l'en-tête de colonne **Name** ou **People** pour trier.
 
 ## Ce que vous pouvez faire
 
@@ -38,7 +32,7 @@ Voici ce que vous pouvez accomplir dans la section Groupes :
 
 ## Commencer
 
-Pour accéder aux Groupes, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche de B1 Admin), développez **Personnes**, et cliquez sur **Groupes**. Vous verrez tous vos groupes existants organisés par catégorie.
+Pour accéder aux Groupes, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche de B1 Admin), développez **Personnes**, et cliquez sur **Groupes**. Vous verrez tous vos groupes existants, que vous pouvez filtrer par catégorie.
 
 :::tip
 Si vous commencez tout juste, commencez par créer quelques catégories qui correspondent à la structure de votre église (par exemple, « Ministères », « Petits Groupes », « Comités »). Ensuite, ajoutez des groupes individuels dans chaque catégorie. Voir [Création de groupes](./creating-groups.md) pour une procédure pas à pas.

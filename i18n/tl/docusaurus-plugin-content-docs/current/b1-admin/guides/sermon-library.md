@@ -60,7 +60,7 @@ Sundin ang gabay sa [Live Streaming](../sermons/live-streaming.md) para:
 
 1. Ilagay ang inyong YouTube Channel ID sa mga streaming setting
 2. I-configure ang inyong paulit-ulit na iskedyul ng serbisyo (hal., Linggo ng 10:00 AM)
-3. I-customize ang mga tab ng streaming page: Chat, mga kahilingan sa panalangin, at mga custom na link
+3. I-customize ang mga tab ng streaming page (Chat, mga kahilingan sa panalangin, at mga custom na link) sa pahinang **Sermons > Settings**
 
 :::info
 Kapag nag-live ka sa YouTube, awtomatikong kinukuha ng B1 streaming page ang stream. Walang karagdagang hakbang na kinakailangan tuwing umaga ng Linggo.

@@ -15,7 +15,9 @@ Cada mensaje que un miembro de la iglesia ve fuera de la página que está miran
 ```
 scheduled anything ──▶ ReminderEngine (definitions → occurrences → scan) ─┐
 chat / requests / workflow / bulk sends ──────────────────────────────────┼─▶ createNotifications()
-                                                                          │    in_app gate → socket → push → email (→ sms slot)
+                                                                          │    in_app gate → socket → push → email
+     (canales de recordatorio incluyen sms) ──▶ ReminderEngine.sendSms() ──▶ sms gate → sendPersonText() vía el proveedor de la iglesia
+respuesta STOP del proveedor ──▶ POST /messaging/texting/inbound/:churchId/:token ──▶ SmsOptOutHelper.optOut()
 account/legal mail ──▶ TransactionalEmailHelper.sendTransactional()  [allowlisted, lint-enforced]
 ```
 
@@ -62,7 +64,7 @@ La entrega comienza en un nivel (0 por defecto, o superior para recordatorios/en
 | 0 | **in_app / socket** | La puerta `in_app` se comprueba primero. Si se suprime (silencia), la fila se persiste con `isNew=false` y la entrega se detiene completamente — sin ping de socket, sin insignia, sin escalación adicional. De lo contrario, el servidor busca conexiones de socket abiertas para la sala `alerts` de la persona y presiona un marco `notification` (o `privateMessage`). Para notificaciones ordinarias, una entrega de socket exitosa detiene la cadena aquí — el temporizador de 30 minutos vuelve a verificar elementos no leídos y los escala más tarde. Los mensajes directos nunca se detienen en socket: una PWA instalada puede mantener abierto el socket de alertas en segundo plano, lo que de otro modo suprimiría el push a nivel del SO. |
 | 1 | **push** | Bloqueado en `allowPush` / opción de categoría fuera / horas de silencio. Envía tanto a tokens de push de Expo como a suscripciones de Web Push encontradas en las filas `devices` de la persona, deduplicando por punto final y eliminando tokens obsoletos en el camino. |
 | 2 | **email** | Bloqueado en `emailFrequency` y opción de categoría fuera. Los envíos inmediatos (`emailImmediate`) se renderizan de inmediato y escriben una fila `deliveryLogs`; de lo contrario, la notificación se deja pendiente para el resumen del lote, descrito a continuación. |
-| — | **sms** | El cableado de preferencia (`allowSms`, listas de canales por categoría) ya cuenta con un canal SMS, pero ningún productor envía a través de él hoy — se mantiene reservado para el producto SMS masivo, que se ejecuta como un flujo separado y aislado a través de `TextingController` / `@churchapps/texting`. El paso de acción de flujo de trabajo **Enviar texto** (`StepActionHelper.sendText` → `MessagingModuleGateway.sendPersonText`) también omite este embudo: envía un texto a la persona de la tarjeta directamente a través del proveedor de la iglesia, así que las preferencias de notificación y horas de silencio no se aplican — solo se honra la bandera `optedOut` de la persona. |
+| — | **sms** | No es un nivel de la escalera de escalación. El único productor de SMS controlado es el motor de recordatorios: cuando los `channels` de una definición incluyen `sms`, `ReminderEngine.sendSms()` envía un texto a cada destinatario **además** de la notificación push/correo electrónico (consulta [Recordatorios de texto](#text-reminders)). El envío masivo de textos (`TextingController` / `@churchapps/texting`), el envío **Text Volunteers** del resumen de servicio (`MatrixTextHelper` → `MessagingModuleGateway.sendPersonText`) y el paso de acción de flujo de trabajo **Enviar texto** (`StepActionHelper.sendText` → `sendPersonText`) envían textos directamente a través del proveedor de la iglesia, así que las preferencias de notificación y las horas de silencio no se aplican a ellos — solo se respeta la bandera `optedOut` de la persona. |
 
 Las notificaciones no leídas dejadas en socket o push se escalan por el temporizador de 30 minutos (`NotificationHelper.escalateDelivery`). El correo electrónico del lote se envía por `NotificationHelper.sendEmailNotifications(frequency)`, impulsado por la preferencia `emailFrequency` de cada persona: `individual` se ejecuta en el temporizador de 30 minutos, `daily` se ejecuta en el temporizador nocturno. (`weekly` es un valor de preferencia válido pero aún no tiene una ejecución dedicada.)
 
@@ -83,6 +85,19 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 **Expansión** materializa filas de fuego para el horizonte adelante (una ventana de múltiples días rodante). Se ejecuta en el temporizador nocturno, y sincrónicamente cada vez que se guarda una definición para que un recordatorio para un evento de último minuto aún dispare. Las definiciones de alcance se expanden a través del `loadScopeEntities` del adaptador, produciendo un conjunto de ocurrencias por entidad concreta; las ocurrencias a nivel de entidad usan la clave `definitionId:occurrenceISO:offset`, mientras que las ocurrencias de ámbito se espacian por id de entidad para que nunca choquen. Hacer una ocurrencia de upsert **resucita** una fila previamente cancelada — cancelar-luego-re-expandir es la forma estándar de re-sincronizar un recordatorio después de que la entidad subyacente cambia; las filas ya `sent`, `failed`, o `processing` se dejan sin tocar.
 
 **Despacho** (`ReminderEngine.scan()`) se ejecuta en el temporizador de 30 minutos. Reclama ocurrencias debidas (un arrendamiento evita el doble procesamiento), carga destinatarios a través del adaptador de la entidad, filtra a cualquiera que ya se haya registrado en `reminderSentLog` para esa ocurrencia, y llama a `createNotifications` con `deliveryStartLevel: 1` (saltar directamente a push) más `emailImmediate`/`emailByPerson` cuando los canales de la definición incluyen correo electrónico.
+
+### Recordatorios de texto {#text-reminders}
+
+Cuando los `channels` de una definición incluyen `sms`, `scan()` llama a `ReminderEngine.sendSms()` después de crear las notificaciones push/correo electrónico, para los mismos destinatarios nuevos. El envío de textos es opcional por miembro:
+
+- Cada destinatario pasa por `PreferenceGateHelper.evaluate(..., "sms", ...)`, así que `allowSms` debe estar activado (está desactivado por defecto y se configura desde el interruptor **Text messages** de B1App) y el canal `sms` de la categoría no debe estar desactivado por una anulación. `event_reminders`, `serving_schedule` y `tasks` incluyen `sms` tanto en `defaultChannels` como en `allowedChannels`.
+- Las personas sin `mobilePhone` o con `optedOut` activado se suprimen. Si la iglesia no tiene un proveedor de mensajes de texto, el resto del lote se suprime con el motivo `no_provider`.
+- El cuerpo lo construye `ReminderEngine.smsBody()`: `"<Nombre de la iglesia>: <mensaje> Reply STOP to opt out."`, recortado a un solo segmento de 160 caracteres.
+- Cada destinatario recibe su propia fila en `reminderSentLog` con `channel: "sms"` y estado `sent` / `suppressed` / `failed`, con clave separada de la fila de push/correo electrónico, así que un texto fallido nunca vuelve a enviar el push o el correo electrónico.
+
+Los editores solo ofrecen **Text** cuando `GET /messaging/texting/status` devuelve `{ enabled: true }` (el primer proveedor de mensajes de texto de la iglesia está habilitado).
+
+**Baja por STOP.** `POST /messaging/texting/inbound/:churchId/:token` es un webhook anónimo que la iglesia pega en su proveedor (B1Admin muestra la URL de `GET /messaging/texting/inboundUrl` en la configuración de mensajes de texto). El token es un HMAC del id de la iglesia (`SmsOptOutHelper.token`). `SmsOptOutHelper.parse` acepta campos de formulario estilo Twilio y JSON estilo Clearstream/TextInChurch; si la respuesta es exactamente una palabra de parada del operador (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`), cada persona no eliminada de la iglesia cuyo número móvil coincida recibe `people.optedOut = true` y `allowSms = false`. Las demás respuestas se reconocen y se ignoran.
 
 Un bus de eventos interno reacciona a mutaciones de entidades sin esperar a la expansión nocturna: eventos de contenido (a través del despachador de webhook) y eventos de actualización de plan/tarea desencadenan re-expansión o cancelación inmediata para la entidad afectada, y una actualización de plan también re-expande cualquier definición de alcance vinculada a su tipo de plan.
 
@@ -120,14 +135,14 @@ Las filas de sombra son invisibles para la campana de notificaciones: se excluye
 Cada envío pasa a través de `PreferenceGateHelper.evaluate()`, una función pura (todo el estado se pasa adentro, sin llamadas a BD en la ruta caliente) que devuelve `allow`, `suppress`, o `defer`. Las capas se ejecutan en orden, y la primera que decide gana:
 
 1. **Categoría bloqueada** — algunas categorías son obligatorias (nivel 0) y eluden todas las otras capas.
-2. **Silencio maestro / apagón de canal** — `masterMute`, `allowPush`, `allowSms`, o `emailFrequency='never'` suprimen rotundamente.
+2. **Silencio maestro / apagón de canal** — `masterMute`, `allowPush`, `allowSms` (desactivado por defecto — los miembros optan por recibirlo), o `emailFrequency='never'` suprimen rotundamente.
 3. **Horas de silencio** — solo push y SMS (el correo electrónico se considera no intrusivo). Si la hora actual del reloj de pared en la zona horaria de la persona cae en su ventana de silencio, una categoría transaccional aún pasa; una no transaccional se aplaza hasta el final de la ventana de silencio, computada como un instante UTC correcto de DST a través de `TimezoneHelper.wallClockToUtc`.
 4. **Anulación de preferencia por categoría** — una exclusión explícita para un par de categoría × canal; la ausencia significa el predeterminado de la categoría.
 5. **Silencio por entidad** — un silencio registrado contra una entidad específica (p. ej. un evento, un plan) restringe más allá de la configuración a nivel de categoría, pero solo se aplica cuando el llamador suministra un id/tipo de entidad junto con la notificación.
 
 Tablas involucradas: `notificationPreferences` (global — `masterMute`, `emailFrequency` de `individual|daily|weekly|never`, `allowPush`, ventana de horas de silencio + zona horaria, `allowSms`), `notificationPreferenceOverrides` (por categoría × canal), y `notificationEntityMutes` (por entidad).
 
-Este bloqueo se aplica para in-app (nivel 0), push (nivel 1), y correo electrónico (nivel 2) dentro del embudo — incluyendo correos electrónicos de recordatorio/resumen inmediatos. El correo electrónico transaccional (códigos de autenticación, restablecimiento de contraseña, invitaciones, recibos de donación) lo omite por diseño; ese es el punto entero de la segunda puerta.
+Este bloqueo se aplica para in-app (nivel 0), push (nivel 1), y correo electrónico (nivel 2) dentro del embudo — incluyendo correos electrónicos de recordatorio/resumen inmediatos — y para los textos de recordatorio en `ReminderEngine.sendSms()`. El correo electrónico transaccional (códigos de autenticación, restablecimiento de contraseña, invitaciones, recibos de donación) lo omite por diseño; ese es el punto entero de la segunda puerta.
 
 ## Límites de correo electrónico redactados por iglesia
 
@@ -158,9 +173,10 @@ Localmente, la misma lógica se puede desencadenar bajo demanda con `npm run tim
 | Puerta transaccional | `Api/src/shared/helpers/TransactionalEmailHelper.ts`, regla lint `Api/tools/eslint-rules/email-door.cjs` |
 | Límites de correo electrónico de iglesia | `Api/src/shared/helpers/ChurchEmailLimiter.ts`, `Api/src/lambda/ses-feedback-handler.ts`, `Api/src/modules/messaging/repositories/DeliveryLogRepo.ts` |
 | Motor de recordatorios | `Api/src/modules/messaging/helpers/ReminderEngine.ts`, `ReminderBootstrap.ts`, `helpers/adapters/*`, `controllers/ReminderController.ts` |
+| Mensajes de texto / baja por STOP | `Api/src/modules/messaging/helpers/SmsOptOutHelper.ts`, `controllers/TextingController.ts` (`/status`, `/inboundUrl`, `/inbound/:churchId/:token`), `Api/src/modules/doing/helpers/MatrixTextHelper.ts` (resumen de servicio **Text Volunteers**) |
 | Repositorios de recordatorios | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`, `ReminderOccurrenceRepo.ts`, `ReminderSentLogRepo.ts` |
 | Correo electrónico de servicio/plan | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`, `ReminderTokenHelper.ts`, `Api/src/shared/modules/DoingModuleGateway.ts` |
-| Editores de recordatorios (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx` |
+| Editores de recordatorios (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx`, `hooks/useTextingEnabled.ts` |
 | Editor de recordatorios / preferencias (B1App) | `EventReminderEdit.tsx`, `NotificationPrefsPage.tsx`, `useRealtimeNotifications.ts` |
 
 ## Páginas Relacionadas

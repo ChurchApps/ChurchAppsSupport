@@ -21,7 +21,7 @@ B1 enthält eine Reihe von Kindsicherheitsmaßnahmen für die Anmeldung: Raumkap
 
 ## Raumkapazität und Schließung eines Raums
 
-Jeder Anmeldungsraum (Gruppe) kann seine eigenen Limits durchsetzen. Öffnen Sie die Gruppe, klicken Sie auf das **Stift-Symbol**, um ihre Einstellungen zu bearbeiten, und finden Sie den Abschnitt **Anmeldungskapazität**:
+Jeder Anmeldungsraum (Gruppe) kann seine eigenen Limits durchsetzen. Öffnen Sie die Gruppe, klicken Sie auf **Bearbeiten**, um ihre Einstellungen zu bearbeiten, und finden Sie den Abschnitt **Anmeldungskapazität**:
 
 - **Kapazität** – Die maximale Anzahl von Personen, die gleichzeitig in diesem Raum angemeldet sein können. Wenn der Raum voll ist, wird die Anmeldung darin blockiert und der Kiosk zeigt den vollen Raum an.
 - **Gastkapazität** – Eine optionale separate Obergrenze für die Anzahl der Gäste, die der Raum aufnehmen kann.

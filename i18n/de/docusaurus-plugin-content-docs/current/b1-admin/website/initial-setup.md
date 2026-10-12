@@ -29,7 +29,7 @@ Ihre Kirche erhält automatisch eine Subdomäne auf B1.church (zum Beispiel `you
 4. Um eine benutzerdefinierte Domäne zu verwenden, melden Sie sich bei Ihrem DNS-Anbieter an (z. B. GoDaddy, Cloudflare oder AWS) und fügen Sie zwei Einträge hinzu:
    - Einen **A record** für Ihre Root-Domäne mit Verweis auf `3.23.251.61`
    - Einen **CNAME record** für `www` mit Verweis auf `proxy.b1.church`
-5. Kehren Sie zu B1.church Admin zurück, fügen Sie Ihre benutzerdefinierte Domäne zur Liste hinzu und klicken Sie auf **Add** und dann **Save**. Ihre Website ist in wenigen Minuten über Ihre benutzerdefinierte Domäne erreichbar.
+5. Kehren Sie zu B1.church Admin zurück, öffnen Sie den Abschnitt **Domains** auf derselben Settings-Seite, fügen Sie Ihre benutzerdefinierte Domäne zur Liste hinzu und klicken Sie auf **Add** und dann **Save**. Ihre Website ist in wenigen Minuten über Ihre benutzerdefinierte Domäne erreichbar.
 
 :::tip
 Wenn Sie die Settings-Option nicht sehen, bitten Sie die Person, die Ihr Kirchenkonto eingerichtet hat, Ihnen die Berechtigung "Edit Church Settings" zu erteilen. Siehe [Roles & Permissions](../settings/roles-permissions.md) für Details.
@@ -52,7 +52,7 @@ Ausführliche Anweisungen zum Arbeiten mit Seiten und Navigation finden Sie unte
 
 1. Wählen Sie im Jump-Menü **Website > Appearance**.
 2. Verwenden Sie die **Color Palette**, um Ihre Markenfarben für primäre, sekundäre und Akzentfarben festzulegen.
-3. Unter **Typography Settings** wählen Sie Ihre Überschriften- und Textkörperfonts aus dem Schriftartenbrowser.
+3. Unter **Fonts** wählen Sie Ihre Überschriften- und Textkörperfonts aus dem Schriftartenbrowser.
 4. Laden Sie Ihr Kirchenlogo unter **Logo** in den Style Settings hoch. Geben Sie sowohl eine Hell- als auch eine Dunkelversion an.
 5. Konfigurieren Sie Ihren **Site Footer** mit den Kontaktinformationen und Links Ihrer Kirche.
 

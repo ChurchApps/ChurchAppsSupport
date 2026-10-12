@@ -18,7 +18,7 @@ Wenn Mitglieder Ihre B1.church-Website besuchen, sehen sie Ihre öffentliche Web
 - **Gruppen** -- Zeigen Sie die Gruppen an, denen Sie angehören, sehen Sie Gruppenmitglieder, nehmen Sie an Gesprächen teil und verfolgen Sie die Anwesenheit.
 - **Geben** -- Machen Sie Spenden an Ihre Kirche online und zeigen Sie Ihren Spendenverlauf an.
 - **Events** -- Durchsuchen Sie bevorstehende Events und registrieren Sie sich selbst und Ihre Familie.
-- **Dienst** -- Zeigen Sie Servicepläne, Ihre Freiwilligenpositionen an und melden Sie sich für offene Freiwilligengelegenheiten an.
+- **Dienst** -- Zeigen Sie Servicepläne, Ihre Freiwilligenpositionen an und melden Sie sich für offene Freiwilligengelegenheiten an. Wählen Sie in Ihren [Benachrichtigungseinstellungen](./getting-started/notification-preferences.md), ob Sie Dienst- und Veranstaltungserinnerungen per Textnachricht erhalten möchten (antworten Sie jederzeit mit STOP, um sie zu beenden).
 - **Pläne** -- Zeigen Sie bevorstehende Servicepläne an, sehen Sie Ihre zugewiesenen Positionen und greifen Sie auf Songdetails und Serviceaufträge zu.
 - **Check-In** -- Checken Sie sich selbst und Ihre Haushaltsmitglieder für Services und Events ein. Gäste können sich per QR-Code anmelden.
 - **Gemeindeverzeichnis** -- Durchsuchen Sie das Mitgliedsverzeichnis Ihrer Kirche, sehen Sie Profilbilder und senden Sie direkte Nachrichten. Kontrollieren Sie, wer Ihre Kontaktinformationen sehen kann, über [den Datenschutz-Reiter Ihres Profils](./getting-started/editing-your-profile.md#privacy-tab).

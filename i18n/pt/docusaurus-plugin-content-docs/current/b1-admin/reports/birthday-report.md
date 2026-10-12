@@ -24,7 +24,7 @@ Precisa de uma lista de todos com aniversário de nascimento ou de casamento em 
 2. Abaixo da caixa de pesquisa, clique em **Avançado**.
 3. Expanda a seção **Demografia** e marque **Mês de Nascimento**, em seguida escolha o mês.
 4. Execute a busca -- todos com um aniversário naquele mês aparecerão nos resultados.
-5. Para ver as datas, clique no **ícone de colunas** na parte superior direita dos resultados e habilite a coluna **Aniversário de Nascimento**. Use **Exportar** para baixar a lista como uma planilha se preferir classificá-la ou imprimi-la lá.
+5. Para ver as datas, mude **Exibir como** para **Tabela**, depois clique no ícone **Selecionar colunas** no cabeçalho da página e habilite a coluna **Aniversário de Nascimento**. Use **Exportar** para baixar a lista como uma planilha se preferir classificá-la ou imprimi-la lá.
 
 ## Obtendo uma Lista de Aniversários de Casamento
 

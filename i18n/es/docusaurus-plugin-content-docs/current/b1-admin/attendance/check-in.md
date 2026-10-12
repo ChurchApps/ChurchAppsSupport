@@ -25,7 +25,7 @@ La aplicación B1 Checkin se conecta a su configuración de asistencia de B1 Adm
 
 ## Configurar el Registro de Entrada
 
-1. **Configure primero su estructura de asistencia.** En B1 Admin, vaya a **Attendance > Setup** y asegúrese de que sus sedes, horarios de servicios y grupos estén en su lugar. La aplicación de registro depende de esta configuración. Consulte [Configuración de Asistencia](setup.md) para más detalles.
+1. **Configure primero su estructura de asistencia.** En B1 Admin, vaya a **People > Attendance** y haga clic en **Setup** para asegurarse de que sus sedes, horarios de servicios y grupos estén en su lugar. La aplicación de registro depende de esta configuración. Opcionalmente, asigne a cada horario de servicio un [horario de registro](setup.md#setting-a-check-in-schedule) para que el registro se abra y cierre automáticamente cada semana. Consulte [Configuración de Asistencia](setup.md) para más detalles.
 2. **Instale la aplicación B1 Checkin** en los dispositivos que planea usar. La aplicación está disponible en las siguientes plataformas:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
@@ -110,7 +110,7 @@ Para activar la visualización del código QR:
 3. Activa el **QR Guest Registration** y haz clic en **Save**.
 
 :::note
-Esta configuración está en **Mobile > B1 CheckIn** (la misma página que la tarjeta **Kiosk Theme**), no en Attendance.
+Esta configuración está en **Mobile > B1 CheckIn** (la misma página que la tarjeta **Kiosk Theme**), no en Attendance. La acción **Kiosk** en la página de Attendance tiene un enlace a esta página.
 :::
 
 ### Compartir el Enlace de Registro
@@ -126,4 +126,4 @@ Agregue el enlace de registro a la página "Plan Your Visit" o "I'm New" del sit
 
 ## Lo Que Se Graba
 
-Cada registro crea un registro de asistencia en B1 Admin. Puede ver estos registros en las pestañas [Attendance](tracking-attendance.md) y [Groups](../groups/group-members.md) tal como lo haría con la asistencia ingresada manualmente. No hay diferencia en cómo aparecen los datos — ambos métodos se introducen en los mismos informes.
+Cada registro crea un registro de asistencia en B1 Admin. Puede ver estos registros en la página [Attendance](tracking-attendance.md) y en las sesiones de cada [grupo](../groups/group-members.md), tal como lo haría con la asistencia ingresada manualmente. No hay diferencia en cómo aparecen los datos — ambos métodos se introducen en los mismos informes.

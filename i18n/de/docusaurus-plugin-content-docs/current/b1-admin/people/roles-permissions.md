@@ -24,7 +24,7 @@ Eine Rolle ist ein Satz von Berechtigungen, die Sie einem oder mehreren Benutzer
 
 Jede Rolle kontrolliert den Zugriff auf bestimmte Bereiche von B1 Admin, einschließlich:
 
-- **Personen** -- Anzeige und Bearbeitung von Mitgliederprofilen. Die Registerkarte „Notizen" in einem Personendatensatz erfordert **Personen bearbeiten**, und eine separate Berechtigung **Vertrauliche Notizen anzeigen** kontrolliert den Zugriff auf den Bereich „Vertrauliche Notizen" (für Seelsorge, persönliche Geschichte und ähnliche sensible Notizen).
+- **Personen** -- Anzeige und Bearbeitung von Mitgliederprofilen. Der Bereich „Notizen" in einem Personendatensatz erfordert **Personen bearbeiten**, und eine separate Berechtigung **Vertrauliche Notizen anzeigen** kontrolliert den Zugriff auf den Bereich „Vertrauliche Notizen" (für Seelsorge, persönliche Geschichte und ähnliche sensible Notizen).
 - **Spenden** -- Verwaltung von Beiträgen und Finanzberichten
 - **Anwesenheit** -- Aufzeichnung und Anzeige von Anwesenheitsdaten
 - **Formulare** -- Erstellung und Verwaltung von [benutzerdefinierten Formularen](../forms/creating-forms.md)

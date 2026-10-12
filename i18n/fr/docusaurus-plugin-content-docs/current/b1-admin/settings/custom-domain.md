@@ -30,7 +30,7 @@ Les modifications DNS peuvent prendre quelques minutes à quelques heures pour p
 Une fois que DNS pointe vers B1 :
 
 1. Allez à **Paramètres** dans B1 Admin.
-2. Cliquez sur **Domaines**.
+2. Cliquez sur **Domaines** dans la liste de gauche, puis cliquez sur **Modifier** dans la section **Domaines**.
 3. Tapez votre domaine dans le champ et cliquez sur **Enregistrer**.
 
 Vous n'avez pas besoin de cliquer d'abord sur le bouton **+** -- un domaine laissé saisi dans le champ est ajouté lorsque vous enregistrez. Utilisez **+** (ou appuyez sur **Entrée**) lorsque vous souhaitez ajouter plusieurs domaines à la liste avant d'enregistrer.

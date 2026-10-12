@@ -38,11 +38,11 @@ Passando il mouse sopra un evento mostra il titolo dell'evento e la stanza o la 
 
 ## Filtraggio per stanza o risorsa
 
-Utilizzate il menu a discesa **Filtro** in alto a sinistra per restringere il calendario a una singola stanza o risorsa. Selezionate **Tutte le stanze e risorse** per tornare alla vista completa.
+Utilizzate il menu a discesa **Stanza / Risorsa** in alto a sinistra per restringere il calendario a una singola stanza o risorsa. Selezionate **Tutte le stanze e risorse** per tornare alla vista completa.
 
 ## Prenotazione di una stanza o risorsa
 
-1. Fate clic sul pulsante **Prenota** nell'angolo in alto a destra della pagina.
+1. Fate clic sul pulsante **Prenota** in alto nella pagina.
 2. Nella finestra di dialogo che si apre, compilate i dettagli dell'evento:
    - **Titolo** — il nome dell'evento
    - **Data/ora** di inizio e fine

@@ -33,7 +33,7 @@ Klikk på en gudstjeneste for å velge den og gå videre til neste trinn.
 Etter at du har valgt en gudstjeneste, ser du en liste over husstandsmedlemmene dine. For hver person som kommer:
 
 1. Trykk på et husstandsmedlem for å åpne oppføringen.
-2. Du ser de tilgjengelige **gudstjenestetidene** for gudstjenesten du valgte.
+2. Du ser de tilgjengelige **gudstjenestetidene** for gudstjenesten du valgte. Hvis menigheten din har satt en innsjekkingsplan for en gudstjenestetid, vises den bare mens innsjekking for den er åpen (for eksempel fra 30 minutter før gudstjenesten til kort tid etter at den er slutt).
 3. Klikk på **Velg gruppe** ved siden av en gudstjenestetid for å velge hvilken gruppe personen skal sjekkes inn i (for eksempel «Hovedgudstjeneste», «Barnerom 1» eller «Ungdomsgruppe»).
 4. Gjenta for hvert husstandsmedlem som kommer.
 
@@ -57,6 +57,8 @@ Hvis du vil endre et gruppevalg før du fullfører innsjekkingen, trykker du på
 
 - Du kan bare sjekke inn husstandsmedlemmer som er koblet til kontoen din. Hvis et familiemedlem mangler, ber du administratoren i menigheten om å legge vedkommende til i husstanden din.
 - Hvis ingen gudstjenester vises på innsjekkingssiden, har kanskje ikke menigheten noen gudstjenester satt opp for innsjekking akkurat nå.
+- Hvis du velger en gudstjeneste og ser «Innsjekking er ikke åpen for denne gudstjenesten akkurat nå», er ingen av gudstjenestetidene innenfor innsjekkingsvinduet akkurat nå. Prøv igjen nærmere gudstjenestetiden.
+- Hvis et rom du valgte er fullt eller lukket, ser du «Et rom du valgte er fullt eller lukket for innsjekking. Vennligst se en frivillig.»
 
 :::warning
 Innsjekking er bare tilgjengelig når menigheten din har aktive gudstjenester satt opp. Hvis du ikke ser noen gudstjenester i listen, tar du kontakt med menighetskontoret for å få bekreftet om selvinnsjekking er slått på.

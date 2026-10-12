@@ -57,10 +57,10 @@ Para sa isang grupong nagmimiting tuwing Sabado, itakda ang frequency sa "week" 
 
 ## Bulk-Creating ng mga Event sa B1 Admin
 
-Ang page ng grupo sa B1 Admin ay may tab na **Calendar** din kung saan puwedeng mag-iskedyul ang staff ng buong season ng miting nang sabay-sabay:
+Ang page ng grupo sa B1 Admin ay may seksyong **Calendar** din kung saan puwedeng mag-iskedyul ang staff ng buong season ng miting nang sabay-sabay:
 
-1. Buksan ang grupo sa B1 Admin at piliin ang tab na **Calendar**.
-2. I-click ang **Add Events** para buksan ang dialog na **Add Recurring Events**.
+1. Buksan ang grupo sa B1 Admin at, sa seksyong **Calendar**, i-click ang **All events**.
+2. I-click ang **+ Add Events** para buksan ang dialog na **Add Recurring Events**.
 3. Piliin ang iskedyul (weekly, every 2 weeks, monthly, o one time), ang petsa ng **First Meeting** at **Last Meeting**, at opsyonal na **Skip holidays**.
 4. Suriin ang preview ng mga petsa ng miting at i-uncheck ang anumang gustong laktawan.
 5. Iwanang naka-check ang **Allow RSVPs** kung gusto mong makasagot ang mga miyembro sa mga event na ito (tingnan sa ibaba), pagkatapos ay i-save.
@@ -69,8 +69,8 @@ Ang page ng grupo sa B1 Admin ay may tab na **Calendar** din kung saan puwedeng 
 
 Puwedeng mangolekta ng RSVP ang mga event ng grupo — isang **Yes**, **No**, o **Maybe** para sa bawat pagkakataon ng event.
 
-- Naka-on bilang default ang **Allow RSVPs** para sa mga event na ginawa sa pamamagitan ng bulk-add dialog; i-uncheck ito para patayin ang mga sagot para sa mga event na iyon. Ang mga event na naka-off ang RSVP ay lumalabas bilang **Disabled** sa calendar tab.
-- Sa B1 Admin group calendar tab, ipinapakita ng bawat event ang buod ng sagot (halimbawa, "5 yes · 2 maybe · 1 no"). I-click ito para buksan ang roster na **RSVP Responses**, na naglilista kung sino ang sumagot ng yes, maybe, at no para sa pagkakataong iyon.
+- Naka-on bilang default ang **Allow RSVPs** para sa mga event na ginawa sa pamamagitan ng bulk-add dialog; i-uncheck ito para patayin ang mga sagot para sa mga event na iyon. Ang mga event na naka-off ang RSVP ay lumalabas bilang **Disabled** sa listahan ng event ng grupo.
+- Sa listahan ng event ng grupo sa B1 Admin, ipinapakita ng bawat event ang buod ng sagot (halimbawa, "5 yes · 2 maybe · 1 no"). I-click ito para buksan ang roster na **RSVP Responses**, na naglilista kung sino ang sumagot ng yes, maybe, at no para sa pagkakataong iyon.
 
 :::tip
 Nagbibigay ang mga RSVP sa mga leader ng bilang ng tao nang walang pormalidad ng buong event registration. Para sa mga bayad na sign-up o mga event na may capacity management, gamitin ang [event registration](../calendars/creating-calendars.md#enabling-event-registration) sa halip.

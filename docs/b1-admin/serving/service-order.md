@@ -20,9 +20,9 @@ The service order defines the sequence of elements in your worship service. Use 
 
 ## Accessing the Service Order
 
-1. Navigate to **Serving** and select your ministry.
+1. Go to **Serving** and select your ministry.
 2. Click on a **plan type**, then open a specific **plan**.
-3. Click the **Service Order** tab on the plan detail page.
+3. The **Order of Service** section is at the top of the plan page, above **Serving Team Assignments**.
 
 ## Building Your Service Order
 
@@ -38,8 +38,8 @@ The service order is a list of items arranged in the sequence they will occur du
 
 ## Adding Items to the Service Order
 
-1. On the **Service Order** tab, click **Add Item**.
-2. Choose the type of element you want to add (for example, a song from your library, a custom item, a heading, or an **External Item**).
+1. In the **Order of Service** section, click **Add** and choose what to add: **Add Section** (a heading that groups items), **Item** (a custom item), **Song** (from your library), or **Add From Lesson**. You can also click **Add Section** directly.
+2. To add something inside a section, use the add menu on that section's header and choose **Song**, **Item**, or **External Item**.
 3. Enter the details for the item, such as the title and any notes.
 4. Click **Save**.
 
@@ -49,7 +49,7 @@ You can add songs directly from your [Songs](./songs.md) library. This links the
 
 ### Importing Multiple Items from an External Provider
 
-Choosing **External Item** opens a browser for your linked lesson providers instead of a single-item form. Browse (or search) into a provider's content, and check the box next to each section or action you want. The dialog tracks how many you have selected (for example, "3 selected") -- click **Import (3)** to add all of them to the service order at once, instead of repeating the add-item flow for each one.
+Choosing **External Item** (or **Add From Lesson**) opens a browser for your linked lesson providers instead of a single-item form. Browse (or search) into a provider's content, and check the box next to each section or action you want. The dialog tracks how many you have selected (for example, "3 selected") -- click **Import (3)** to add all of them to the service order at once, instead of repeating the add-item flow for each one.
 
 :::tip
 This is the fastest way to pull a whole lesson's worth of sections and cues into a service order in one pass, rather than adding each item individually.
@@ -108,8 +108,8 @@ Bulk select only applies to a section's direct children, not items nested inside
 
 If your plan has more than one service time (for example, an 8 a.m. and 10 a.m. service), you can choose which services each item should appear in. This is useful when an announcement is only relevant to one service, or when a song is sung in one service but not another.
 
-1. Open a plan that has two or more service times defined in the **Times** card on the **Assignments** tab.
-2. On the **Service Order** tab, click an item to edit it.
+1. Open a plan that has two or more service times. Click **Times** in the **Serving Team Assignments** section to see or add them.
+2. In the **Order of Service** section, click an item to edit it.
 3. Under **Include in Services**, you will see a checkbox for each service time, labeled with the time.
 4. Uncheck any service where the item should be skipped.
 5. Click **Save**.
@@ -117,7 +117,7 @@ If your plan has more than one service time (for example, an 8 a.m. and 10 a.m. 
 By default, every item is included in every service. Excluded service times are hidden when you print the plan filtered to that service, so each service receives a clean run sheet with only the relevant items.
 
 :::tip
-The **Include in Services** section only appears when the plan has more than one service time. If you only see one service, use the **Times** card on the plan's **Assignments** tab to add additional services first.
+The **Include in Services** section only appears when the plan has more than one service time. If you only see one service, click **Times** in the plan's **Serving Team Assignments** section to add additional services first.
 :::
 
 ### Showing a Different Position per Service
@@ -126,10 +126,10 @@ If an item has a **Position** set, each checked service time in **Include in Ser
 
 ## Sharing the Service Order
 
-Once your service order is complete, you can print the full plan (including the service order) from the plan detail page. This gives your team a complete rundown of the service, headed with your church's name and the plan's name. When **Show Volunteer Names** is on for the print, each section header also prints with the assigned volunteer's position next to it, so your team can see who's covering that section without opening the app. If a heading's position is overridden for specific services, the print shows every distinct position name it resolves to across the services on that plan (for example, "Worship Team / Youth Team").
+Once your service order is complete, you can print the full plan (including the service order) with the **Print** button at the top of the plan page. This gives your team a complete rundown of the service, headed with your church's name and the plan's name. When **Show Volunteer Names** is on for the print, each section header also prints with the assigned volunteer's position next to it, so your team can see who's covering that section without opening the app. If a heading's position is overridden for specific services, the print shows every distinct position name it resolves to across the services on that plan (for example, "Worship Team / Youth Team").
 
 ## Next Steps
 
 - Manage your worship repertoire on the [Songs](./songs.md) page
-- Assign volunteers to the service on the [Plans](./plans.md) Assignments tab
+- Assign volunteers to the service in the plan's [Serving Team Assignments](./plans.md#assigning-team-members) section
 - Create [Tasks](./tasks.md) for any follow-up items related to the service

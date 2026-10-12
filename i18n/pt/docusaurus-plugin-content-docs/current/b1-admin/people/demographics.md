@@ -6,54 +6,54 @@ title: "Demografia"
 
 <div class="article-intro">
 
-The **Demographics** dashboard gives you a visual snapshot of your congregation — who they are, how many there are, and how your membership is distributed across age groups, genders, marital statuses, and campuses. Every chart is interactive: click any segment to jump straight to a filtered People search showing exactly those people.
+O painel de **Demografia** oferece uma visão geral visual da sua congregação — quem são, quantas são e como seus membros estão distribuídos por faixa etária, gênero, estado civil e campus. Cada gráfico é interativo: clique em qualquer segmento para ir direto a uma pesquisa filtrada de Pessoas mostrando exatamente essas pessoas.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- People must exist in your directory. See [Adding People](./adding-people.md) or [Importing Data](./importing-data.md) to get started.
-- To see the Campus chart, you first need campuses configured in [Settings → Campuses](../settings/campuses.md).
+- As pessoas precisam existir no seu diretório. Consulte [Adicionando Pessoas](./adding-people.md) ou [Importando Dados](./importing-data.md) para começar.
+- Para ver o gráfico de Campus, primeiro você precisa ter campi configurados em [Configurações → Campi](../settings/campuses.md).
 
 </div>
 
-## Opening Demographics
+## Abrindo a Demografia
 
-From the **People** page, click the **Demographics** button in the page header (the bar chart icon). The page shows your total person count at the top, followed by the charts described below.
+Na página **Pessoas**, clique em **Demografia** no cabeçalho da página. A página mostra a contagem total de pessoas no topo, seguida pelos gráficos descritos abaixo.
 
-## Charts
+## Gráficos
 
-### Age Distribution
+### Distribuição por Idade
 
-A grouped bar chart showing how many people fall into each age bracket (for example, 0–9, 10–17, 18–24, and so on through 65+). Each bar is split into three series — **Female**, **Male**, and **Unassigned** — so you can see the gender breakdown within each age group at a glance.
+Um gráfico de barras agrupadas mostrando quantas pessoas se encaixam em cada faixa etária (por exemplo, 0–9, 10–17, 18–24, e assim por diante até 65+). Cada barra é dividida em três séries — **Feminino**, **Masculino** e **Não atribuído** — para que você veja a divisão por gênero dentro de cada faixa etária de relance.
 
-### Membership Status
+### Status de Membro
 
-A donut chart breaking down your congregation by membership status (for example, Member, Regular Attender, Visitor, and so on).
+Um gráfico de rosca que divide sua congregação por status de membro (por exemplo, Membro, Frequentador Regular, Visitante e assim por diante).
 
-### Gender
+### Gênero
 
-A donut chart showing the proportion of female, male, and unassigned records in your directory.
+Um gráfico de rosca mostrando a proporção de registros femininos, masculinos e não atribuídos no seu diretório.
 
-### Marital Status
+### Estado Civil
 
-A donut chart showing the breakdown across marital status values (for example, Married, Single, Widowed).
+Um gráfico de rosca mostrando a divisão entre os valores de estado civil (por exemplo, Casado, Solteiro, Viúvo).
 
 ### Campus
 
-A donut chart showing how people are distributed across your church's campuses. This chart only appears if you have campuses configured and at least one person assigned to a campus. People with no campus assigned appear as **Unassigned**.
+Um gráfico de rosca mostrando como as pessoas estão distribuídas pelos campi da sua igreja. Este gráfico só aparece se você tiver campi configurados e pelo menos uma pessoa atribuída a um campus. Pessoas sem campus atribuído aparecem como **Não atribuído**.
 
-## Drilling Into the Data
+## Explorando os Dados
 
-Click any slice of a donut chart or any bar segment on the age chart to navigate to the **People** page pre-filtered to show exactly those people. Use this to quickly build a contact list, run a bulk action, or export a segment — for example, click the **Visitor** slice in Membership Status to see all visitors and then send them to a workflow.
+Clique em qualquer fatia de um gráfico de rosca ou em qualquer segmento de barra do gráfico de idade para ir até a página **Pessoas** já filtrada para mostrar exatamente essas pessoas. Use isso para montar rapidamente uma lista de contatos, executar uma ação em massa ou exportar um segmento — por exemplo, clique na fatia **Visitor** em Status de Membro para ver todos os visitantes e depois enviá-los a um fluxo de trabalho.
 
 :::tip
-After drilling into a filtered result, use **Save as List** in the People search to save that filter for future use. See [Saved Lists](./lists.md).
+Depois de explorar um resultado filtrado, use **Save as List** na pesquisa de Pessoas para salvar esse filtro para uso futuro. Consulte [Listas Salvas](./lists.md).
 :::
 
 ## Artigos Relacionados
 
-- [Searching People](./searching-people.md) — the People page you land on when drilling into a chart
-- [Saved Lists](./lists.md) — save a demographic segment as a reusable list
-- [Campuses](../settings/campuses.md) — configure campuses so the Campus chart appears
+- [Pesquisando Pessoas](./searching-people.md) — a página Pessoas em que você chega ao explorar um gráfico
+- [Listas Salvas](./lists.md) — salve um segmento demográfico como uma lista reutilizável
+- [Campi](../settings/campuses.md) — configure campi para que o gráfico de Campus apareça

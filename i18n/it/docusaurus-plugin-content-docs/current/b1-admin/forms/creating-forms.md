@@ -32,7 +32,7 @@ Il tuo nuovo modulo apparirà nell'elenco. Fai clic su di esso per iniziare ad a
 
 ## Stampa di un modulo vuoto
 
-Hai bisogno di una copia cartacea da distribuire -- per una scheda di visitatore al banco di accoglienza, o un modulo che qualcuno senza accesso a internet può compilare a mano? Fai clic sull'**icona di stampa** accanto a un modulo nell'elenco principale di Moduli per aprire un'anteprima, quindi fai clic su **Stampa**. I campi vuoti vengono stampati con una sottolineatura o una casella di controllo per ogni domanda in modo che le persone possono compilarli a mano; le domande obbligatorie sono contrassegnate con un asterisco. Non ci sono altre opzioni di stampa -- stampa il modulo intero o niente.
+Hai bisogno di una copia cartacea da distribuire -- per una scheda di visitatore al banco di accoglienza, o un modulo che qualcuno senza accesso a internet può compilare a mano? Fai clic su **Stampa** accanto a un modulo nell'elenco principale di Moduli per aprire un'anteprima, quindi fai clic su **Stampa**. I campi vuoti vengono stampati con una sottolineatura o una casella di controllo per ogni domanda in modo che le persone possono compilarli a mano; le domande obbligatorie sono contrassegnate con un asterisco. Non ci sono altre opzioni di stampa -- stampa il modulo intero o niente.
 
 ## Aggiunta di domande
 
@@ -81,7 +81,7 @@ Le email di follow-up vengono inviate solo dopo che la tua chiesa è stata appro
 
 ## Duplicazione di un modulo
 
-Per riutilizzare un modulo come punto di partenza per uno nuovo, fai clic sull'**icona Duplica** (icona di copia) accanto al modulo nell'elenco di Moduli. B1 crea una copia esatta del modulo — incluse tutte le domande — che puoi quindi rinominare e modificare indipendentemente.
+Per riutilizzare un modulo come punto di partenza per uno nuovo, fai clic su **Duplica** accanto al modulo nell'elenco di Moduli e conferma. B1 crea una copia esatta del modulo — incluse tutte le domande — che puoi quindi rinominare e modificare indipendentemente.
 
 :::tip
 La duplicazione è utile per eventi ricorrenti in cui le domande di registrazione rimangono le stesse di anno in anno. Duplica il modulo dell'anno scorso, aggiorna il nome e le date, e sei pronto.

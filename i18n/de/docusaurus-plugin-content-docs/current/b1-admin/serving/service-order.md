@@ -20,9 +20,9 @@ Die Service-Reihenfolge definiert die Abfolge der Elemente in Ihrem Gottesdienst
 
 ## Zugriff auf die Service-Reihenfolge
 
-1. Navigieren Sie zu **Dienst** und wählen Sie Ihr Ministerium aus.
+1. Gehen Sie zu **Dienst** und wählen Sie Ihr Ministerium aus.
 2. Klicken Sie auf einen **Plantyp** und öffnen Sie dann einen bestimmten **Plan**.
-3. Klicken Sie auf die Registerkarte **Service-Reihenfolge** auf der Plan-Detailseite.
+3. Der Abschnitt **Service-Reihenfolge** steht oben auf der Planseite, über **Dienstteam-Zuweisungen**.
 
 ## Erstellen Sie Ihre Service-Reihenfolge
 
@@ -38,8 +38,8 @@ Die Service-Reihenfolge ist eine Liste von Elementen, die in der Reihenfolge ang
 
 ## Elemente zur Service-Reihenfolge hinzufügen
 
-1. Klicken Sie auf der Registerkarte **Service-Reihenfolge** auf **Element hinzufügen**.
-2. Wählen Sie die Art des Elements aus, das Sie hinzufügen möchten (z. B. ein Lied aus Ihrer Sammlung, einen benutzerdefinierten Artikel, eine Überschrift oder ein **Externes Element**).
+1. Klicken Sie im Abschnitt **Service-Reihenfolge** auf **Hinzufügen** und wählen Sie, was hinzugefügt werden soll: **Abschnitt hinzufügen** (eine Überschrift, die Elemente gruppiert), **Element** (ein benutzerdefiniertes Element), **Lied** (aus Ihrer Sammlung) oder **Aus Lektion hinzufügen**. Sie können auch direkt auf **Abschnitt hinzufügen** klicken.
+2. Um etwas innerhalb eines Abschnitts hinzuzufügen, verwenden Sie das Hinzufügen-Menü in der Kopfzeile des Abschnitts und wählen Sie **Lied**, **Element** oder **Externes Element**.
 3. Geben Sie die Details für das Element ein, wie den Titel und alle Notizen.
 4. Klicken Sie auf **Speichern**.
 
@@ -49,7 +49,7 @@ Sie können Lieder direkt aus Ihrer [Songs](./songs.md)-Sammlung hinzufügen. Di
 
 ### Mehrere Elemente von einem externen Provider importieren
 
-Die Auswahl von **Externes Element** öffnet einen Browser für Ihre verbundenen Lektionsanbieter anstelle eines einzelnen Artikel-Formulars. Durchsuchen Sie (oder suchen Sie) in den Inhalten eines Providers und aktivieren Sie das Kontrollkästchen neben jedem Abschnitt oder jeder Aktion, die Sie möchten. Der Dialog verfolgt, wie viele Sie ausgewählt haben (z. B. "3 ausgewählt") -- klicken Sie auf **Importieren (3)**, um alle auf einmal zur Service-Reihenfolge hinzuzufügen, anstatt den Zusatz-Element-Ablauf für jeden zu wiederholen.
+Die Auswahl von **Externes Element** (oder **Aus Lektion hinzufügen**) öffnet einen Browser für Ihre verbundenen Lektionsanbieter anstelle eines einzelnen Artikel-Formulars. Durchsuchen Sie (oder suchen Sie) in den Inhalten eines Providers und aktivieren Sie das Kontrollkästchen neben jedem Abschnitt oder jeder Aktion, die Sie möchten. Der Dialog verfolgt, wie viele Sie ausgewählt haben (z. B. "3 ausgewählt") -- klicken Sie auf **Importieren (3)**, um alle auf einmal zur Service-Reihenfolge hinzuzufügen, anstatt den Zusatz-Element-Ablauf für jeden zu wiederholen.
 
 :::tip
 Dies ist die schnellste Möglichkeit, den Inhalt einer ganzen Lektion bestehend aus Abschnitten und Cues in einer Service-Reihenfolge auf einmal zu ziehen, anstatt jedes Element einzeln hinzuzufügen.
@@ -108,8 +108,8 @@ Die Mehrfachauswahl gilt nur für direkte untergeordnete Elemente eines Abschnit
 
 Wenn Ihr Plan mehr als eine Service-Zeit hat (z. B. einen 8-Uhr- und 10-Uhr-Service), können Sie wählen, in welchen Services jedes Element angezeigt werden soll. Dies ist nützlich, wenn eine Ankündigung nur für einen Service relevant ist, oder wenn ein Lied in einem Service gesungen wird, aber nicht in einem anderen.
 
-1. Öffnen Sie einen Plan, der zwei oder mehr Service-Zeiten im **Zeiten**-Feld auf der Registerkarte **Zuweisungen** definiert hat.
-2. Klicken Sie auf der Registerkarte **Service-Reihenfolge** auf ein Element, um es zu bearbeiten.
+1. Öffnen Sie einen Plan mit zwei oder mehr Service-Zeiten. Klicken Sie im Abschnitt **Dienstteam-Zuweisungen** auf **Zeiten**, um sie anzusehen oder hinzuzufügen.
+2. Klicken Sie im Abschnitt **Service-Reihenfolge** auf ein Element, um es zu bearbeiten.
 3. Unter **In Services einbeziehen** sehen Sie ein Kontrollkästchen für jede Service-Zeit, mit der Zeit gekennzeichnet.
 4. Deaktivieren Sie alle Services, in denen das Element übersprungen werden soll.
 5. Klicken Sie auf **Speichern**.
@@ -117,7 +117,7 @@ Wenn Ihr Plan mehr als eine Service-Zeit hat (z. B. einen 8-Uhr- und 10-Uhr-Serv
 Standardmäßig ist jedes Element in jedem Service enthalten. Ausgeschlossene Service-Zeiten sind ausgeblendet, wenn Sie den Plan gefiltert auf diesen Service drucken, sodass jeder Service ein sauberes Ablaufblatt nur mit den relevanten Elementen erhält.
 
 :::tip
-Der Abschnitt **In Services einbeziehen** wird nur angezeigt, wenn der Plan mehr als eine Service-Zeit hat. Wenn Sie nur einen Service sehen, verwenden Sie das Feld **Zeiten** auf der Registerkarte **Zuweisungen** des Plans, um erste zusätzliche Services hinzuzufügen.
+Der Abschnitt **In Services einbeziehen** wird nur angezeigt, wenn der Plan mehr als eine Service-Zeit hat. Wenn Sie nur einen Service sehen, klicken Sie im Abschnitt **Dienstteam-Zuweisungen** des Plans auf **Zeiten**, um zusätzliche Services hinzuzufügen.
 :::
 
 ### Anzeigen einer anderen Position pro Service
@@ -126,10 +126,10 @@ Wenn ein Element eine **Position** gesetzt hat, erhält auch jede aktivierte Ser
 
 ## Die Service-Reihenfolge teilen
 
-Sobald Ihre Service-Reihenfolge fertig ist, können Sie den vollständigen Plan (einschließlich der Service-Reihenfolge) von der Plan-Detailseite aus drucken. Dies gibt Ihrem Team einen vollständigen Überblick über den Dienst, angezeigt mit dem Namen Ihrer Kirche und dem Namen des Plans. Wenn **Show Volunteer Names** für den Druck aktiviert ist, wird jeder Abschnittskopf auch mit der zugewiesenen Position des Freiwilligen daneben gedruckt, damit Ihr Team sehen kann, wer diesen Abschnitt abdeckt, ohne die App zu öffnen. Wenn die Position eines Kopfes für bestimmte Services überschrieben wird, zeigt der Druck jeden unterschiedlichen Positionsnamen an, zu dem es sich über die Services auf diesem Plan auflöst (z. B. "Anbetungsteam / Jugendteam").
+Sobald Ihre Service-Reihenfolge fertig ist, können Sie den vollständigen Plan (einschließlich der Service-Reihenfolge) mit der Schaltfläche **Drucken** oben auf der Planseite drucken. Dies gibt Ihrem Team einen vollständigen Überblick über den Dienst, angezeigt mit dem Namen Ihrer Kirche und dem Namen des Plans. Wenn **Show Volunteer Names** für den Druck aktiviert ist, wird jeder Abschnittskopf auch mit der zugewiesenen Position des Freiwilligen daneben gedruckt, damit Ihr Team sehen kann, wer diesen Abschnitt abdeckt, ohne die App zu öffnen. Wenn die Position eines Kopfes für bestimmte Services überschrieben wird, zeigt der Druck jeden unterschiedlichen Positionsnamen an, zu dem es sich über die Services auf diesem Plan auflöst (z. B. "Anbetungsteam / Jugendteam").
 
 ## Nächste Schritte
 
 - Verwalten Sie Ihr Anbetungs-Repertoire auf der Seite [Songs](./songs.md)
-- Weisen Sie Freiwillige zum Dienst auf der Registerkarte [Pläne](./plans.md) Zuweisungen zu
+- Weisen Sie Freiwillige zum Dienst im Abschnitt [Dienstteam-Zuweisungen](./plans.md#assigning-team-members) des Plans zu
 - Erstellen Sie [Aufgaben](./tasks.md) für alle Follow-up-Elemente im Zusammenhang mit dem Dienst

@@ -22,12 +22,14 @@ Base path: `/doing/plans`
 | GET | `/:id` | JWT | — | Get a plan by ID |
 | GET | `/ids?ids=` | JWT | — | Get multiple plans by comma-separated IDs |
 | GET | `/types/:planTypeId` | JWT | — | Get plans by plan type |
+| GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + ministry edit | Preview the serving overview **Text Volunteers** send: `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }` for the volunteers assigned in the range (one per person, opted-out and missing numbers skipped, shared numbers deduplicated, capped at 200) |
 | GET | `/presenter` | JWT | — | Get plans for the next 7 days (presenter view) |
 | GET | `/public/current/:planTypeId` | Public | — | Get the current plan for a plan type |
 | GET | `/public/signup/:churchId` | Public | — | Plans open for self-signup, each with its self-signup positions (plus `filledCount` of Accepted/Unconfirmed assignments) and times. No volunteer names |
 | GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` for the plan's self-signup positions (display names of Accepted/Unconfirmed assignees). Returns `[]` unless the plan's `showVolunteerNames` is on |
 | POST | `/` | JWT | — | Create or update plans (accepts single object or array) |
-| POST | `/copy/:id` | JWT | — | Copy a plan including positions, times, assignments, and service order items. Body includes `copyMode` ("none", "positions", "all") and `copyServiceOrder` (boolean). `notes` and `signupDeadlineHours` carry over from the source plan unless the body supplies them |
+| POST | `/copy/:id` | JWT | Ministry edit | Copy a plan including positions, times, assignments, and service order items. Body includes `ministryId`, `serviceDate`, `copyMode` ("none", "positions", "all") and `copyServiceOrder` (boolean). Without `targetPlanId` a new plan is created, and `notes`, `signupDeadlineHours`, `showVolunteerNames`, and `autoReplaceOnDecline` carry over from the source plan unless the body supplies them. With `targetPlanId`, the copy fills that existing plan instead (the caller must be able to edit it). B1Admin's **Repeat weekly** option calls this once per week, each time copying from the plan created the week before |
+| POST | `/textRange` | JWT | `texting.send` + ministry edit | Text every volunteer assigned in a date range through the church's texting provider. Body: `{ startDate, endDate, ministryId, planTypeId?, message }` (message up to 1600 characters; merge fields resolved per recipient). Returns the preview counts plus `recipientCount`, `successCount`, `failCount`, and `error` (`no_provider` or `insufficient_credits`) when sending stops early |
 | POST | `/autofill/:id` | JWT | — | Auto-fill volunteer assignments for a plan. Body: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Delete a plan and all related times, assignments, positions, and plan items |
 
@@ -176,10 +178,12 @@ Base path: `/doing/tasks`
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | Get open tasks for the current user |
 | GET | `/:id` | JWT | — | Get a task by ID |
+| GET | `/:id/contact` | JWT | Can view the card | Contact info for the person a workflow card is about: `{ personId, displayName, mobilePhone, email }`. Lets an assigned caller without People access reach the person |
 | GET | `/closed` | JWT | — | Get closed tasks for the current user |
 | GET | `/timeline?taskIds=` | JWT | — | Get timeline data for tasks by comma-separated task IDs |
 | GET | `/directoryUpdate/:personId` | JWT | — | Get directory update task for a person |
 | POST | `/` | JWT | — | Create or update tasks. Add `?type=directoryUpdate` to handle directory update tasks (auto-uploads photos) |
+| POST | `/:id/conversation` | JWT | `tasks.edit` or card assignee | Attach the notes conversation to a card. Body: `{ conversationId }`. The first conversation attached wins; later calls return the card unchanged |
 | POST | `/loadForGroups` | JWT | — | Load tasks for specific groups. Body: `{ groupIds: [], status: "Open" }` |
 
 ## Automations

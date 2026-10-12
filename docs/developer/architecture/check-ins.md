@@ -49,7 +49,7 @@ All three call the same two API modules through `ApiHelper`: **MembershipApi** (
 |----------------|-----------|---------|
 | `campuses` | name, address | Deprecated here — campuses are mastered in the membership module (`/membership/campuses`); the attendance copy is frozen read-only for legacy readers (`models/Campus.ts`) |
 | `services` | campusId, name | A recurring gathering, e.g. "Sunday Morning" (`models/Service.ts`) |
-| `serviceTimes` | serviceId, name | A time slot within a service, e.g. "9:00 AM" (`models/ServiceTime.ts`) |
+| `serviceTimes` | serviceId, name, dayOfWeek, startTime, endTime, checkinOpenMinutes, checkinCloseMinutes | A time slot within a service, e.g. "9:00 AM" (`models/ServiceTime.ts`). The schedule columns are optional (migration `tools/migrations/attendance/2026-10-10_service_time_schedule.ts`) and drive the [check-in window](#scheduled-check-in-windows) |
 | `groupServiceTimes` | groupId, serviceTimeId | Join table: which groups (classrooms) meet at which service times (`models/GroupServiceTime.ts`) |
 | `sessions` | groupId, serviceTimeId, sessionDate | One meeting of one group on one date — created lazily at check-in time (`models/Session.ts`) |
 | `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | One person attending on one date (`models/Visit.ts`). `checkinType` is `member` / `guest` / `volunteer` (NULL = legacy member), set by the kiosk and consumed by the capacity/ratio gates |
@@ -110,6 +110,15 @@ Every visit carries a `checkinType` — `member`, `guest`, or `volunteer` (NULL 
 
 - **Hard (always block):** `checkinClosed`, `current + incoming > capacity`, guest count over `guestCapacity`. The batch is rejected with `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` — the kiosk shows the named room.
 - **Ratio (warn or block):** incoming non-volunteers into a room where `volunteers < minVolunteers`, no volunteers at all, or `children > volunteers × volunteerRatio`. Severity follows the per-church setting `ratioEnforcement` (`"warn"` default / `"block"`, edited in B1Admin Manage Church → Check-In, `CheckinSettingsEdit.tsx`). Warn-mode returns `409 { warning: true, error: "ratio", … }` unless the client resubmits with `acknowledgeWarnings=true` — that resubmit is the kiosk's staff-confirm override.
+
+### Scheduled check-in windows
+
+A service time may carry an optional weekly schedule (`dayOfWeek` 0–6 with 0 = Sunday, `startTime`/`endTime` as `HH:mm`, `checkinOpenMinutes`, `checkinCloseMinutes`), edited in B1Admin's **Attendance → Setup** service-time form (`B1Admin/src/attendance/components/ServiceTimeEdit.tsx`, "Check-in Schedule"). `CheckinGateHelper.hasSchedule()` treats a service time as scheduled only when both `dayOfWeek` and `startTime` are set; unscheduled times are never time-gated. `isServiceTimeOpen()` computes the window in church-local time (`DateHelper.toChurchTime` with the church's `timeZone`) from `checkinOpenMinutes` before the start to `checkinCloseMinutes` after the end (or after the start when there is no end), handling windows that cross midnight or the week boundary.
+
+The window is enforced in two places:
+
+- **Listing:** `GET /attendance/servicetimes` stamps each row with a computed `checkinOpen` boolean. B1App's self check-in (`CheckinPage.tsx`) drops times where `checkinOpen === false` and shows "Check-in isn't open for this service right now." when none remain. B1Checkin does not filter on it yet.
+- **Posting:** inside `evaluateGates()`, before the capacity/ratio evaluation, `findClosedServiceTimeGroups()` rejects the batch with `409 { error: "notOpen", groups: [{ groupId, groupName, reason: "notOpen" }] }` if any targeted session's service time is outside its window. B1Checkin renders this through its existing hard-gate screen ("room is full or closed").
 
 ### Age/grade eligibility (kiosk-side)
 

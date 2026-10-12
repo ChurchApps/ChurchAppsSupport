@@ -29,7 +29,7 @@ Votre église reçoit automatiquement un sous-domaine sur B1.church (par exemple
 4. Pour utiliser un domaine personnalisé, connectez-vous à votre fournisseur DNS (tel que GoDaddy, Cloudflare ou AWS) et ajoutez deux enregistrements :
    - Un **enregistrement A** pour votre domaine racine pointant vers `3.23.251.61`
    - Un **enregistrement CNAME** pour `www` pointant vers `proxy.b1.church`
-5. Retournez à B1.church Admin, ajoutez votre domaine personnalisé à la liste et cliquez sur **Ajouter** puis **Enregistrer**. Votre site sera accessible à partir de votre domaine personnalisé dans quelques minutes.
+5. Retournez à B1.church Admin, ouvrez la section **Domaines** sur la même page Paramètres, ajoutez votre domaine personnalisé à la liste et cliquez sur **Ajouter** puis **Enregistrer**. Votre site sera accessible à partir de votre domaine personnalisé dans quelques minutes.
 
 :::tip
 Si vous ne voyez pas l'option Paramètres, demandez à la personne qui a configuré votre compte d'église de vous accorder la permission « Modifier les paramètres de l'église ». Consultez [Rôles et permissions](../settings/roles-permissions.md) pour plus de détails.
@@ -52,7 +52,7 @@ Pour des instructions détaillées sur l'utilisation des pages et de la navigati
 
 1. Dans le menu Sauter, choisissez **Site web > Apparence**.
 2. Utilisez la **Palette de couleurs** pour définir vos couleurs de marque pour les tons principaux, secondaires et d'accent.
-3. Sous **Paramètres de typographie**, choisissez vos polices de titre et de corps dans le navigateur de polices.
+3. Sous **Polices**, choisissez vos polices de titre et de corps dans le navigateur de polices.
 4. Téléchargez le logo de votre église sous **Logo** dans les paramètres de style. Fournissez une version pour fond clair et une version pour fond sombre.
 5. Configurez votre **Pied de page du site** avec les informations de contact et les liens de votre église.
 

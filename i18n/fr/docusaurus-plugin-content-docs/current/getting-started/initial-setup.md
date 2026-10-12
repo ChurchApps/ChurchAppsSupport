@@ -21,8 +21,8 @@ Après avoir créé votre compte et votre église, il y a quelques étapes impor
 ## Étape 1 : Configurez les informations de votre église
 
 1. Ouvrez le [menu Sauter](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche de B1 Admin), développez **Paramètres**, et cliquez sur **Paramètres**.
-2. Cliquez sur **Modifier les paramètres**.
-3. Entrez le **nom**, l'**adresse** et les **détails de contact** de votre église.
+2. Dans la section **Informations de l'église**, cliquez sur **Modifier**.
+3. Entrez le **nom**, le **sous-domaine** et l'**adresse** de votre église.
 4. Cliquez sur **Enregistrer** pour appliquer vos modifications.
 
 ## Étape 2 : Configurez votre marque
@@ -47,7 +47,7 @@ Avoir votre logo et votre marque prêts avant d'inviter les membres de l'équipe
 
 Avec votre équipe en place, commencez à construire les domaines clés de B1 Admin :
 
-1. **Personnes** -- Ajoutez des membres à l'annuaire de votre église. C'est la base pour tout le reste, alors commencez ici. Vous pouvez ajouter des personnes manuellement ou utiliser l'outil **Importer** à partir de **Paramètres**.
+1. **Personnes** -- Ajoutez des membres à l'annuaire de votre église. C'est la base pour tout le reste, alors commencez ici. Vous pouvez ajouter des personnes manuellement ou utiliser l'outil **Importer/Exporter** à partir de **Paramètres**.
 2. **Groupes** -- Créez des groupes pour les petits groupes, les équipes de ministère, les classes et d'autres réunions.
 3. **Présence** -- Configurez vos campus, services et horaires de service pour le suivi de la présence.
 4. **Dons** -- Configurez les fonds de dons et connectez votre passerelle de paiement (Stripe) pour accepter les dons en ligne.

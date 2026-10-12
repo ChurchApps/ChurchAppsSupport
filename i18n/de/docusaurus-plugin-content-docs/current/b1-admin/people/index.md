@@ -28,13 +28,13 @@ Hier ist ein Überblick über die Hauptfunktionen im Bereich Personen:
 
 7. **Importieren und exportieren Sie Daten** – Bringen Sie Mitgliederdaten aus einer CSV-Datei herein oder migrieren Sie von einer anderen Kirchenverwaltungsplattform wie Breeze. Sie können Ihr Verzeichnis jederzeit als CSV exportieren. Siehe [Daten importieren](./importing-data.md) und [Daten exportieren](./exporting-data.md).
 
-8. **Verwalten Sie Profile** – Zeigen Sie detaillierte Profile für jede Person an und bearbeiten Sie sie, einschließlich Kontaktinformationen, Haushaltsmitglieder, [Gruppenmitgliedschaften](../groups/group-members.md), [Besuchshistorie](../attendance/tracking-attendance.md), [Spenden](../donations/recording-donations.md) und [benutzerdefinierte Formulare](../forms/creating-forms.md). Bewegen Sie Ihren Cursor über eine E-Mail, Adresse oder Telefonnummer in der blauen Profilkopfzeile, um sie mit einem Klick zu kopieren.
+8. **Verwalten Sie Profile** – Zeigen Sie detaillierte Profile für jede Person an und bearbeiten Sie sie, einschließlich Kontaktinformationen, Haushaltsmitglieder, [Gruppenmitgliedschaften](../groups/group-members.md), [Besuchshistorie](../attendance/tracking-attendance.md), [Spenden](../donations/recording-donations.md) und [benutzerdefinierte Formulare](../forms/creating-forms.md). Name, Kontaktdaten und Haushalt der Person stehen links im Profil, daneben finden Sie Zusammenfassungen zu Besuchen, Spenden, Gruppen, Notizen und Formularen. Bewegen Sie den Cursor über eine Adresse oder eine Telefonnummer (privat oder geschäftlich), um sie mit einem Klick zu kopieren.
 
 9. **Weisen Sie Rollen und Berechtigungen zu** – Kontrollieren Sie, wer in Ihrem Team auf verschiedene Teile von B1 Admin zugreifen kann, indem Sie Rollen zuweisen. Siehe [Rollen zuweisen](./roles-permissions.md).
 
 ## Erste Schritte
 
-Um auf den Bereich Personen zuzugreifen, öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **Personen** und klicken Sie auf **Personen**. Sie sehen Ihr vollständiges Kirchenverzeichnis mit einer Suchleiste oben und einer Mitgliederliste darunter.
+Um auf den Bereich Personen zuzugreifen, öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **Personen** und klicken Sie auf **Personen**. Sie sehen Ihr Kirchenverzeichnis, nach Haushalten aufgelistet, mit einer Suchleiste oben. Über den Schalter **View as** (Ansicht) wechseln Sie zwischen der Liste **Households** (Haushalte) und einer **Table** (Tabelle) mit einzelnen Personen.
 
 :::tip
 Wenn Sie B1 zum ersten Mal einrichten, beginnen Sie mit [Ihren vorhandenen Mitgliederdaten importieren](./importing-data.md). Überprüfen und bereinigen Sie dann Profile nach Bedarf.

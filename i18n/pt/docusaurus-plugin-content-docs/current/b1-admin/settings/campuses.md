@@ -19,11 +19,11 @@ Se sua igreja se reúne em mais de um local, **Campuses** (Campi) permitem que v
 
 ## Abrindo Configurações de Campus
 
-No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), escolha **Settings > Settings** (Configurações > Configurações) e selecione o cartão **Campuses** (Campi). Você também pode ir diretamente para lá em **/settings/campuses**. Você verá uma lista de todos os campi configurados com seu nome, local e fuso horário.
+No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), escolha **Settings > Settings** (Configurações > Configurações) e clique em **Campuses** (Campi) na lista à esquerda para rolar até a seção **Campuses**. Você também pode ir diretamente para lá em **/settings/campuses**. Você verá uma lista de todos os campi configurados com seu nome, local e fuso horário.
 
 ## Adicionando um Campus
 
-1. Clique em **Add Campus** (Adicionar Campus) (ou no botão **+** se nenhum campus existir ainda).
+1. Clique em **Add Campus** (Adicionar Campus).
 2. Preencha os detalhes do campus:
    - **Name** (Nome) *(required)* (obrigatório) — o nome de exibição mostrado em todo o B1 Admin (por exemplo, "Main Campus" (Campus Principal) ou "North Campus" (Campus Norte)).
    - **Address** (Endereço) — o endereço de rua do campus (usado para exibição informativa; não é o mesmo que seu endereço de igreja principal nas Configurações da Igreja).

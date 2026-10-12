@@ -19,11 +19,11 @@ Wenn Ihre Kirche sich an mehreren Orten trifft, können Sie mit **Campuses** ver
 
 ## Öffnen der Campus-Einstellungen
 
-Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), wählen Sie **Settings > Settings** und wählen Sie die **Campuses**-Karte. Sie können auch direkt unter **/settings/campuses** dorthin gehen. Sie sehen eine Liste aller konfigurierten Campuses mit Name, Standort und Zeitzone.
+Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), wählen Sie **Settings > Settings** und klicken Sie in der linken Liste auf **Campuses**, um zum Abschnitt **Campuses** zu scrollen. Sie können auch direkt unter **/settings/campuses** dorthin gehen. Sie sehen eine Liste aller konfigurierten Campuses mit Name, Standort und Zeitzone.
 
 ## Einen Campus hinzufügen
 
-1. Klicken Sie auf **Add Campus** (oder die **+**-Schaltfläche, wenn noch keine Campuses existieren).
+1. Klicken Sie auf **Add Campus**.
 2. Füllen Sie die Campus-Details aus:
    - **Name** *(erforderlich)* — der Anzeigename in B1 Admin (z. B. "Main Campus" oder "North Campus").
    - **Address** — die Straße des Campus (wird zur Information angezeigt; ist nicht dasselbe wie Ihre Hauptadresse der Kirche in Church Settings).

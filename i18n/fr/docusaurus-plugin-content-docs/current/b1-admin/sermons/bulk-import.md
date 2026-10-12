@@ -22,10 +22,10 @@ La page Importation en masse vous permet de remplir rapidement votre bibliothèq
 ## Choisir votre source
 
 1. Dans B1 Admin, ouvrez le [menu de saut](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Sermons**, et cliquez sur **Sermons**. Cliquez sur **Ajouter un sermon** et choisissez **Importation en masse** dans le menu.
-2. Vous verrez deux cartes cliquables :
-   - **YouTube** (rouge) -- Importer des vidéos depuis un canal YouTube
-   - **Vimeo** (bleu) -- Importer des vidéos depuis un compte Vimeo
-3. Cliquez sur la carte pour la plateforme où vos sermons sont hébergés.
+2. Sous **Choisir la source d'importation**, vous verrez deux options :
+   - **YouTube** -- Importer des vidéos depuis un canal YouTube
+   - **Vimeo** -- Importer des vidéos depuis un compte Vimeo
+3. Cliquez sur l'option de la plateforme où vos sermons sont hébergés (ou cliquez sur **Importer depuis YouTube** / **Importer depuis Vimeo** sous sa description). Cliquez sur **Retour** en haut de la page pour revenir au choix de la source.
 
 :::tip
 Vous pouvez revenir en arrière et changer de source à tout moment si vous avez des vidéos sur les deux plates-formes.

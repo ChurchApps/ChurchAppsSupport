@@ -19,14 +19,14 @@ Live Stream Times page आपको अपनी चर्च की streaming s
 
 </div>
 
-Page के दो मुख्य tabs हैं: आपकी live stream schedule को manage करने के लिए **Services** और अपने streaming page को configure करने के लिए **Settings**।
+Live streaming को Jump menu में **Sermons** के दो pages से manage किया जाता है: आपकी live stream schedule को manage करने के लिए **Live Stream Times** और आपके streaming page पर tabs को configure करने के लिए **Settings**।
 
 ## Services को Manage करना
 
 ### एक Service जोड़ना
 
 1. B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (ऊपरी-बाएं में खोज बार), **Sermons** को expand करें, और **Live Stream Times** पर क्लिक करें।
-2. एक नई scheduled service बनाने के लिए **Add Service** बटन पर क्लिक करें।
+2. एक नई scheduled service बनाने के लिए page के शीर्ष पर **Add Service** बटन पर क्लिक करें। मौजूदा services एक table में दिखाई जाती हैं जिसमें हर service का name, time, provider, और duration होता है; किसी service को बदलने के लिए उसकी row पर edit icon पर क्लिक करें।
 3. एक **Service Name** enter करें (उदाहरण के लिए, "Sunday Morning")।
 4. **Service Time** सेट करें -- अपनी service शुरू होने का दिन और समय चुनें।
 5. **Recurs Weekly** को **Yes** पर set करें regular weekly services के लिए, या **No** एक one-time event के लिए।
@@ -47,19 +47,19 @@ Page के दो मुख्य tabs हैं: आपकी live stream sche
 
 ## Streaming Page Settings
 
-अपने live stream के साथ दिखने वाले tabs और links को customize करने के लिए **Settings** tab पर क्लिक करें।
+अपने live stream के साथ दिखने वाले tabs और links को customize करने के लिए Jump menu खोलें, **Sermons** को expand करें, और **Settings** पर क्लिक करें। **Stream Settings** page पर आपकी **Content Tabs** सूची दिखाई देती है।
 
 ### Tabs जोड़ना
 
 1. अपने live stream page में एक नया tab जोड़ने के लिए **Add** बटन पर क्लिक करें।
-2. पूर्व-डिज़ाइन किए गए **Chat** tab को चुनें या एक बाहरी URL के साथ एक कस्टम tab जोड़ें।
+2. एक **Link Type** चुनें: कस्टम link के लिए **External URL**, या पूर्व-डिज़ाइन किए गए **Chat** या **Prayer** tabs में से एक।
 3. Chat tab के लिए, बस **Tab Text** box में इसे एक नाम दें और setup complete है।
 4. एक linked tab के लिए, tab का नाम enter करें, icon button पर क्लिक करके एक icon चुनें, और URL enter करें।
 5. आपके configured tabs आपके live streaming page पर viewers के लिए additional resources और interactive features को access करने के लिए दिखाई देंगे।
 
 ### अपनी Stream को Preview करना
 
-अपनी live streaming page को देखने के लिए **View Your Stream** बटन पर क्लिक करें कि यह visitors को कैसे दिखाई देगा, आपका logo, service times, और configured tabs सहित।
+**Live Stream Times** page पर, शीर्ष पर **View Your Stream** बटन पर क्लिक करें ताकि आप देख सकें कि आपका live streaming page visitors को कैसा दिखेगा, जिसमें आपका logo, service times, और configured tabs शामिल हैं।
 
 ## अपनी YouTube Live Stream को Setup करना
 

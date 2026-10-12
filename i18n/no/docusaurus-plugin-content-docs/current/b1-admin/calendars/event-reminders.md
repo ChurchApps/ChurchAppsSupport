@@ -6,7 +6,7 @@ title: "Arrangement-påminnelser"
 
 <div class="article-intro">
 
-Arrangement-påminnelser varsler automatisk rett personer før et arrangement skjer -- for eksempel, "Ikke gå glipp av det! Helseworkshoppen starter i morgen klokken 09:00." Du konfigurerer en påminnelse på arrangementet, og B1 sender den ut etter planen via push-meldinger og e-post. Medlemmer kan kontrollere hvilke påminnelser de mottar fra sine egne [Varselsinnstillinger](../../b1-church/getting-started/notification-preferences).
+Arrangement-påminnelser varsler automatisk rett personer før et arrangement skjer -- for eksempel, "Ikke gå glipp av det! Helseworkshoppen starter i morgen klokken 09:00." Du konfigurerer en påminnelse på arrangementet, og B1 sender den ut etter planen via push-meldinger, e-post og, hvis menigheten har tekstmeldinger satt opp, SMS. Medlemmer kan kontrollere hvilke påminnelser de mottar fra sine egne [Varselsinnstillinger](../../b1-church/getting-started/notification-preferences).
 
 </div>
 
@@ -31,7 +31,7 @@ Du konfigurerer påminnelser i **Påminnelser**-seksjonen av arrangementet.
 3. Sett **Tidspunktet på dagen** påminnelsen skal sendes (standarden er **09:00**, i kirkens lokale tidssone).
 4. Velg **Hvem** som skal påminnes (se [Hvem får påminnelser](#hvem-får-påminnelser) nedenfor).
 5. Legg eventuelt til en **Melding**. La den stå tom for å bruke standardformuleringen, eller skriv din egen -- du kan inkludere `{{eventTitle}}` og den vil bli erstattet med arrangementets navn.
-6. Velg **Kanaler**: **Push**-melding, **E-post**, eller begge.
+6. Velg **Kanaler**: **Push**-melding, **E-post** og, hvis menigheten har en [tekstmeldingstjeneste](../settings/church-settings.md#texting) koblet til, **Tekst**.
 7. Lagre arrangementet.
 
 Mens du gjør endringer, viser en **direkte forhåndsvisning** omtrent hvor mange mennesker som vil bli påminnet, hvor mange deltakere som ikke kan nås, og neste planlagte sendingstider -- slik at du kan bekrefte at påminnelsen ser riktig ut før du lagrer.
@@ -60,18 +60,28 @@ Gjester som bare er lagt til etter navn (uten en knyttet personpost) kan ikke mo
 Påminnelser sendes **push først, med e-post som reserve**. Hvis et medlem har push-meldinger aktivert, får de en push; hvis ikke, får de en e-post i stedet. Medlemmer velger hvilke kanaler de vil ha per varseltype i deres [Varselsinnstillinger](../../b1-church/getting-started/notification-preferences).
 :::
 
+## Tekstpåminnelser {#text-reminders}
+
+Kanalen **Tekst** vises bare når menigheten har en tekstmeldingstjeneste koblet til. Tekstmeldinger sendes via menighetens tekstmeldingstjeneste, og hver melding kan koste menigheten penger. De sendes i tillegg til eventuelle push- eller e-postpåminnelser, og bare til personer som:
+
+- Har slått på **Tekstmeldinger** i sine [Varselsinnstillinger](../../b1-church/getting-started/notification-preferences), og
+- Har et mobilnummer på profilen sin.
+
+Hver tekstmelding begynner med menighetens navn, holdes innenfor én tekstmelding og avsluttes med «Svar STOP for å melde deg av.» Den som svarer STOP, slutter å motta tekstmeldinger fra menigheten. For at STOP-svar skal nå B1, limer du inn **URL for innkommende STOP-webhook** fra dine [tekstmeldingsinnstillinger](../settings/church-settings.md#texting) i leverandørens webhook for innkommende meldinger.
+
 ## Hva medlemmer kan kontrollere
 
 Påminnelser respekterer alltid hvert medlems [Varselsinnstillinger](../../b1-church/getting-started/notification-preferences). Et medlem kan:
 
-- Slå **Arrangement-påminnelser** av for push eller e-post mens andre varslinger holdes på.
+- Slå **Arrangement-påminnelser** av for push, e-post eller tekst mens andre varslinger holdes på.
+- Slå tekstpåminnelser av eller på med **Tekstmeldinger**.
 - Sette **stille timer** slik at ikke-kritiske meldinger venter til en fornuftig tid.
 
 Du kan ikke åsidosette et medlems valg om å velge bort arrangement-påminnelser -- dette holder B1 kompatibel med antispam-regler og holder medlemmer kontroll over innboksen sin.
 
 ## Frivillig-påminnelser
 
-Frivillige som er planlagt på en plan mottar en separat **frivillig-påminnelse** med plandetaljer og, når de ikke har svart ennå, **Godta / Avslå**-knapper rett i e-posten. Disse påminnelsene er konfigurert på plantypene i stedet for på et arrangementskalender -- se [Søndagsfribilige](../guides/sunday-volunteers) for hvordan frivilligniste-planlegging og påminnelser fungerer.
+Frivillige som er planlagt på en plan mottar en separat **frivillig-påminnelse** med plandetaljer og, når de ikke har svart ennå, **Godta / Avslå**-knapper rett i e-posten. Disse påminnelsene er konfigurert på plantypene i stedet for på et kalenderarrangement, og de kan også sendes som tekstmelding -- se [Frivillig-påminnelser](../serving/plans#volunteer-reminders) og [Søndagsfribilige](../guides/sunday-volunteers) for hvordan frivilligniste-planlegging og påminnelser fungerer.
 
 ## Neste trinn
 

@@ -22,7 +22,7 @@ El editor de páginas B1 es un constructor visual de arrastrar y soltar que te p
 ## Abriendo el Editor
 
 1. En B1 Admin, abre el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda), expande **Website** y haz clic en **Pages**.
-2. Encuentra la página que deseas editar en la tabla Pages y haz clic en **Edit**.
+2. Encuentra la página que deseas editar en la tabla Pages y haz clic en **Edit Content**.
 
 El editor se abre en modo de pantalla completa. El panel izquierdo muestra la estructura de tu página y los elementos de contenido disponibles; el área central muestra una vista previa en vivo de tu página.
 
@@ -79,9 +79,18 @@ Cada página se construye a partir de dos niveles:
    - **Live Stream** -- Tu reproductor de transmisión en vivo, incrustado directamente en la página
    - **Podcast** -- Una lista de episodios extraídos de una URL de feed RSS de podcast externo que proporcionas, con configuración para cuántos episodios mostrar y si mostrar fechas y descripciones. Esto es para destacar cualquier feed de podcast en tu sitio; para publicar tus propios sermones como un podcast, consulta [Administración de Sermones](../sermons/managing-sermons.md#your-podcast-feed) en su lugar.
    - **Donation** -- Un botón de donación o formulario de donación incrustado
-   - **Raw HTML** -- Marcado HTML personalizado para casos de uso avanzados
+   - **HTML** -- Tu propio HTML sin procesar, para casos de uso avanzados como incrustar un widget de terceros (consulta [Uso del elemento HTML](#using-the-html-element))
    - **iFrame** -- Incrustar contenido externo por URL
 3. Configura el elemento usando el panel de configuración que aparece.
+
+### Uso del elemento HTML {#using-the-html-element}
+
+El elemento **HTML** tiene dos cuadros:
+
+- **HTML Content** -- El marcado que se muestra en la página. Cualquier etiqueta `<script>` que incluyas aquí se ejecuta en tu sitio en vivo.
+- **JavaScript (exclude script tag)** -- Código de script que se ejecuta cuando se carga la página. También puedes pegar aquí el fragmento de incrustación de un proveedor con sus etiquetas `<script>` incluidas, y se ejecutará en el sitio en vivo.
+
+Si pegas solo una dirección web (como el enlace de una imagen) en el cuadro de JavaScript, el cuadro se vuelve rojo con la advertencia *"Esto es una dirección web, no JavaScript."* Una dirección sola en ese cuadro no hace nada. Para mostrar una imagen, usa un elemento **Image** o pon `<img src="...">` en **HTML Content**.
 
 ### Reordenamiento de Contenido
 
@@ -117,7 +126,7 @@ Usa los controles de vista previa en la barra de herramientas para verificar có
 - **Desktop** -- Vista de navegador de ancho completo
 - **Mobile** -- Vista de tamaño de teléfono estrecho
 
-Haz clic en **Preview** para abrir una versión en vivo de la página en una nueva pestaña del navegador, exactamente como la verán los visitantes.
+Para ver la página en vivo exactamente como la verán los visitantes, vuelve a la lista de Pages y haz clic en la ruta de la página. Se abre en una nueva pestaña del navegador.
 
 ## Verificación de Accesibilidad
 
@@ -128,9 +137,9 @@ Haz clic en el icono **Accessibility** en la barra de herramientas para ejecutar
 El editor rastrear tu historial de edición automáticamente. Usa los botones de la barra de herramientas o atajos de teclado para navegar:
 
 - **Undo** (Ctrl+Z / Cmd+Z) -- Revierte tu última acción
-- **Redo** (Ctrl+Y / Cmd+Y) -- Reaplicar una acción deshecha
+- **Redo** (Ctrl+Shift+Z o Ctrl+Y / Cmd+Shift+Z) -- Reaplicar una acción deshecha
 
-También puedes restaurar la página a una instantánea anterior. Haz clic en **History** en la barra de herramientas para ver una lista de instantáneas guardadas con descripciones, y haz clic en cualquier entrada para restaurar a ese punto.
+También puedes restaurar la página a una instantánea anterior. Haz clic en **View history** en la barra de herramientas para ver una lista de instantáneas guardadas con descripciones, y haz clic en cualquier entrada para restaurar a ese punto.
 
 :::warning
 Restaurar una instantánea reemplaza tu contenido de página actual con la versión de instantánea. Esto no se puede deshacer con el botón deshacer estándar. Guarda una instantánea de tu estado actual antes de restaurar una antigua si deseas mantener la opción de volver.
@@ -144,15 +153,15 @@ Los cambios se guardan automáticamente a medida que trabajas. Un indicador de e
 
 Las páginas pueden tener un estado **published**, que controla cuándo los visitantes ven tus cambios. La barra de herramientas muestra un chip de estado que muestra el estado actual:
 
-- **Live on Save** -- La página no utiliza un flujo de trabajo de publicación. Cada cambio guardado se activa inmediatamente. Este es el predeterminado para nuevas páginas.
-- **Unpublished Changes** -- La página se ha publicado antes, pero has hecho cambios desde la última publicación. Los visitantes aún ven la versión publicada anteriormente.
+- **Live on save** -- La página no utiliza un flujo de trabajo de publicación. Cada cambio guardado se activa inmediatamente. Este es el predeterminado para nuevas páginas.
+- **Unpublished changes** -- La página se ha publicado antes, pero has hecho cambios desde la última publicación. Los visitantes aún ven la versión publicada anteriormente.
 - **Published** -- La página está en vivo y tu contenido guardado coincide con lo que ven los visitantes.
 
 Para publicar tus cambios, haz clic en el botón **Publish** en la barra de herramientas. La página se activa inmediatamente.
 
-Para revertir a la última versión publicada sin afectar lo que ven los visitantes, abre el menú de desbordamiento (⋮) y haz clic en **Discard Changes**.
+Para revertir a la última versión publicada sin afectar lo que ven los visitantes, abre el menú de desbordamiento (⋮) y haz clic en **Discard unpublished changes**.
 
-Para desconectar una página completamente, abre el menú de desbordamiento y haz clic en **Unpublish**. Los visitantes ya no verán esa página hasta que la publiques de nuevo.
+Para dejar de usar el flujo de trabajo de publicación, abre el menú de desbordamiento y haz clic en **Turn off publishing**. Los cambios vuelven a publicarse inmediatamente al guardar.
 
 :::tip
 Usa el flujo de trabajo borrador/publicación cuando desees preparar una página -- por ejemplo, para un próximo evento -- y solo hazla activa en el momento adecuado. Construye y obtén una vista previa de la página, luego haz clic en Publish cuando estés listo.

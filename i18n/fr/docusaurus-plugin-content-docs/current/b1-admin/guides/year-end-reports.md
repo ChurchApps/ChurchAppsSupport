@@ -25,7 +25,7 @@ Assurez-vous que tous les dons en ligne de la fin de l'année se trouvent dans v
 
 Suivez le guide [Importation Stripe](../donations/stripe-import.md) pour :
 
-1. Accédez à Dons > Lots > Importation Stripe
+1. Accédez à Dons > Importation Stripe
 2. Sélectionnez une plage de dates couvrant la fin de l'année (par exemple, 1er décembre - 31 décembre)
 3. Cliquez d'abord sur Aperçu pour examiner, puis sur Importer les manquants pour finaliser
 
@@ -65,7 +65,7 @@ Suivez le guide [Relevés de dons](../donations/giving-statements.md) pour :
 2. Sélectionnez l'année dans la liste déroulante et consultez les statistiques du résumé
 3. Choisissez votre méthode de téléchargement :
    - **Télécharger ZIP** — fichiers CSV individuels, un par donateur
-   - **Tout imprimer** — vue imprimable avec chaque relevé sur une nouvelle page
+   - **Tout imprimer** — vue imprimable avec chaque relevé sur une nouvelle page, avec le logo de votre église en haut (si vous en avez téléversé un)
 
 :::tip
 Générez les relevés en début janvier lorsque les enregistrements sont à jour. Cela vous donne le temps de détecter tout problème avant de les envoyer par la poste.

@@ -28,15 +28,15 @@ Esta é uma configuração única por ministério. Você precisa conectar sua co
 
 1. Faça login em [B1 Admin](https://admin.b1.church/) e vá para **Servindo**
 2. Abra o ministério que você quer conectar (por exemplo, Ministério Infantil)
-3. Role para baixo até a seção **Contas de Provedor de Conteúdo**
+3. Role para baixo até a seção **Provedores de Conteúdo**
 4. Clique em **Vincular Novo Provedor**
 5. Selecione **Lessons.church** da lista
 6. Uma tela de autorização de dispositivo aparecerá com um código
 7. Vá para [lessons.church](https://lessons.church), faça login e digite o código para autorizar a conexão
-8. Uma vez aprovado, você verá **"Conta vinculada"** em Lessons.church em B1 Admin
+8. Uma vez aprovado, você verá **Vinculado** em Lessons.church em B1 Admin
 
 :::info
-A seção Contas de Provedor de Conteúdo é por ministério. Se você executa múltiplos ministérios (por exemplo, Infantil e Juventude), você precisará vincular Lessons.church para cada um separadamente.
+A seção Provedores de Conteúdo é por ministério. Se você executa múltiplos ministérios (por exemplo, Infantil e Juventude), você precisará vincular Lessons.church para cada um separadamente.
 :::
 
 ## Passo 2 -- Agende uma Aula
@@ -44,7 +44,7 @@ A seção Contas de Provedor de Conteúdo é por ministério. Se você executa m
 Uma vez vinculado, você pode agendar aulas diretamente a partir dos Planos.
 
 1. Em B1 Admin, vá para **Servindo → Planos**
-2. Selecione sua aba de ministério e clique em **Adicionar Tipo de Plano** -- dê ao tipo de plano um nome como Igreja Infantil ou Escola Dominical
+2. Selecione sua aba de ministério e clique em **Adicionar Tipo de Plano** (ou **Criar Tipo de Plano** se o ministério ainda não tiver nenhum) -- dê ao tipo de plano um nome como Igreja Infantil ou Escola Dominical
 3. Clique no tipo de plano que você acabou de fazer e clique em **Agendar Aula**. A partir desse menu você pode agendar uma aula, agendar em lote uma série ou **Aplicar Plano do Ano** para soltar uma sequência anual publicada de Lessons.church.
 4. Selecione a **data** para a aula (padrão é o próximo domingo)
 5. Clique em **Selecionar Aula** -- um diálogo navegador de conteúdo se abre

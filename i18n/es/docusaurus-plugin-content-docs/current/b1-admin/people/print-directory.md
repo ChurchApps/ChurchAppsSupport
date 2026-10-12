@@ -21,7 +21,7 @@ La característica Imprimir Directorio genera un directorio de miembros formatea
 ## Abrir Imprimir Directorio
 
 1. Navega a **Personas** en B1 Admin.
-2. Haz clic en el **icono de impresión** (icono de impresora) en la barra de herramientas en la parte superior de la tarjeta de resultados de Personas. Aparece junto al botón Exportar.
+2. Haz clic en **Print Directory** en el encabezado de la página de Personas.
 3. El Directorio de Impresión se abre en una nueva pestaña del navegador y comienza a cargar los datos del directorio.
 4. Después de aproximadamente 1.5 segundos, el diálogo de impresión de tu navegador aparecerá automáticamente.
 
@@ -33,13 +33,13 @@ El directorio se abre en una pestaña separada para que puedas imprimirlo sin de
 
 El directorio de impresión incluye todos los **miembros activos** de tu iglesia. Específicamente:
 
-- Las personas con estado de membresía **Inactivo** o **Visitante** se excluyen automáticamente.
+- Las personas con estado de membresía **Inactivo**, **Visitante** o **Fallecido** se excluyen automáticamente.
 - Las personas que han **optado por no contactar** para el directorio se excluyen.
 - Todos los demás se agrupan por **hogar**.
 
 ### Imprimir Solo tus Resultados de Búsqueda
 
-Después de ejecutar una búsqueda en la página de Personas -- una búsqueda rápida, una [Búsqueda Avanzada](./searching-people.md#advanced-search), una [Lista Guardada](./lists.md), o una [Búsqueda IA](./ai-search.md) -- el icono de impresión cambia a **Imprimir Resultados**. Hacer clic imprime un directorio de solo las personas en tus resultados en lugar de toda la iglesia, usando el mismo diseño.
+Después de ejecutar una búsqueda en la página de Personas -- una búsqueda rápida, una [Búsqueda Avanzada](./searching-people.md#advanced-search), una [Lista Guardada](./lists.md), o una [Búsqueda IA](./ai-search.md) -- el botón **Print Directory** cambia a **Imprimir Resultados**. Hacer clic imprime un directorio de solo las personas en tus resultados en lugar de toda la iglesia, usando el mismo diseño.
 
 Cuando se imprimen resultados de búsqueda, el filtro de estado de membresía arriba no se aplica: todos los que buscaste se incluyen, incluso Visitantes o personas Inactivas. Las personas que han optado por no contactar para el directorio aún se dejan afuera. Para volver a imprimir el directorio completo, limpia tu búsqueda primero.
 

@@ -20,14 +20,14 @@ Lotes agrupam suas doações juntas para rastreamento e reconciliação mais fá
 
 ## A Página de Lotes
 
-Quando você navega para **Doações > Lotes**, você verá uma lista de todos os seus lotes. Cada linha exibe:
+Quando você navega para **Doações > Lotes**, você verá uma lista de seus lotes. Cada linha exibe:
 
 - **Nome** -- o rótulo que você deu ao lote
 - **Data** -- a data da coleta
 - **Doações** -- o número de doações individuais no lote
 - **Total** -- o valor em dólares combinado
 
-O cabeçalho no topo mostra estatísticas resumidas incluindo o número total de lotes, o número total de doações em todos os lotes, e o valor em dólares geral.
+Acima da lista, botões de ano permitem mostrar apenas os lotes de um ano, ou **Todos** os lotes. Um resumo de uma linha mostra o número de lotes, o número de doações e o valor total dos lotes exibidos.
 
 ## Criando um Novo Lote
 
@@ -43,22 +43,24 @@ Seu novo lote aparece na lista, pronto para você adicionar doações.
 - **Ver doações** -- clique em um nome de lote para abri-lo e ver todas as doações individuais que contém. De lá você pode adicionar, editar ou remover doações.
 - **Editar detalhes do lote** -- clique no botão **Editar** em uma linha de lote para alterar seu nome ou data.
 - **Ordenar** -- use os cabeçalhos de coluna para ordenar lotes por nome ou data.
-- **Exportar** -- clique em **Exportar** para baixar sua lista de lotes como uma planilha (CSV).
+- **Exportar** -- clique em **Exportar** no topo da página para baixar os lotes exibidos como uma planilha (CSV).
+- **Eventos com falha** -- se seu gateway de pagamento reportou problemas, um botão **Eventos com falha** (com o número de eventos não resolvidos) aparece no topo da página. Clique nele para mostrar ou ocultar a lista de eventos abaixo dos lotes.
+- **Importar do Stripe** -- clique em **Importar transações do Stripe ausentes** no topo da página para abrir a ferramenta de [Importação do Stripe](stripe-import.md).
 
 ## Imprimindo um Lote
 
-Abra um lote e clique no ícone **Imprimir** (impressora) no topo da lista de doações para imprimir uma cópia em papel para sua equipe de contagem ou registros de depósito. O impresso inclui:
+Abra um lote e clique em **Imprimir** acima da lista de doações para imprimir uma cópia em papel para sua equipe de contagem ou registros de depósito. O impresso inclui:
 
 - O nome da sua igreja, o nome do lote e a data do lote
 - Cada doação no lote, com o nome do doador, método, notas, data e valor (doações reembolsadas são riscadas e marcadas como reembolsadas)
 - **Subtotais de Fundos** -- o total dado a cada fundo no lote
 - **Total do Lote** -- o valor combinado para o lote inteiro
 
-O ícone de Imprimir só aparece uma vez que o lote tem pelo menos uma doação.
+O botão **Imprimir** só aparece uma vez que o lote tem pelo menos uma doação.
 
 ### Imprimindo Vários Lotes de Uma Vez
 
-Para imprimir todos os lotes de um período de uma só vez -- por exemplo, todos os depósitos do mês passado -- clique no ícone **Imprimir** (impressora) no cabeçalho da lista **Lotes**, ao lado de **Exportar**. A página **Imprimir Lotes** abre com uma **Data Inicial** e uma **Data Final** que, por padrão, cobrem os últimos 30 dias. Altere qualquer uma das datas para escolher um intervalo diferente.
+Para imprimir todos os lotes de um período de uma só vez -- por exemplo, todos os depósitos do mês passado -- clique em **Imprimir** no topo da página **Lotes**, ao lado de **Exportar**. A página **Imprimir Lotes** abre com uma **Data Inicial** e uma **Data Final** que, por padrão, cobrem os últimos 30 dias. Altere qualquer uma das datas para escolher um intervalo diferente.
 
 Todos os lotes com data dentro do intervalo (incluindo as datas inicial e final) são impressos em ordem de data, um lote por página, usando o mesmo layout da impressão de um único lote. Lotes sem doações ficam de fora, e se nenhum dos lotes do intervalo tiver doações você verá "Nenhum lote com doações neste intervalo de datas." Clique em **Imprimir** para abrir a caixa de diálogo de impressão do seu navegador, ou em **Fechar** para voltar à lista de lotes.
 

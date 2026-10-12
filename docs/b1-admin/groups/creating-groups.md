@@ -21,16 +21,16 @@ Creating a group in B1 Admin is straightforward. You will set up a category, nam
 ## Adding a New Group
 
 1. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **People**, and click **Groups**.
-2. Click **Add Group** and enter a **Category Name**. Categories help you organize related groups together (for example, "Small Groups," "Ministries," or "Committees"). If a category already exists, you can select it from the list.
-3. Enter the **Group Name**.
-4. Click **Add**. Your new group will appear in the list under the chosen category.
+2. Click **Add Group** in the page header. A **New Group** form opens below the list. Enter a **Category Name**. Categories help you organize related groups together (for example, "Small Groups," "Ministries," or "Committees"). If a category already exists, you can select it from the list.
+3. Enter the group's **Name**.
+4. Click **Add**. Your new group will appear in the list, with its category shown under its name.
 
 ## Configuring Group Settings
 
 Once your group is created, you can fill in additional details:
 
 1. Click on the **group name** in the list to open it.
-2. Click the **pencil icon** to edit the group settings.
+2. Click the **Edit** button on the left side of the group page, below the group's details.
 3. Configure the following options:
    - **Description** -- A brief summary of what the group is about. This is visible to members.
    - **Meeting Times** -- When the group typically meets (for example, "Wednesdays at 7 PM").
@@ -58,7 +58,7 @@ Turning off both Discussions and Announcements removes the Messages tab from the
 
 Starting a new session of a recurring class or ministry? Instead of re-entering all the settings, duplicate an existing group:
 
-1. Open the group and click the **duplicate** icon in the group banner (next to Edit).
+1. Open the group and click **Duplicate** (below the **Edit** button on the left side of the group page).
 2. Confirm the duplication.
 
 The copy carries over the original's settings -- category, description, meeting time/location, join policy, labels, and campus -- but **not** its members. The new group is named after the original with " (Copy)" appended; rename it from the group settings.
@@ -67,10 +67,10 @@ The copy carries over the original's settings -- category, description, meeting 
 
 When a group is no longer active but you want to keep its history instead of deleting it:
 
-1. Open the group and click the **pencil icon** to edit its settings.
+1. Open the group and click **Edit** to edit its settings.
 2. Click **Archive** and confirm.
 
-Archived groups drop off the main Groups list. To find one again, turn on the **Show archived** toggle at the top of the Groups page, then click **Restore** next to the group to bring it back.
+Archived groups drop off the main Groups list. To find one again, click the **Show archived** button next to the category buttons at the top of the Groups page, then click **Restore** next to the group to bring it back.
 
 :::info
 Archiving a group does not delete its members, attendance history, or calendar events -- it only hides the group from the default list until you restore it.
@@ -80,11 +80,11 @@ Archiving a group does not delete its members, attendance history, or calendar e
 
 After creating and configuring your group, you are ready to:
 
-- **Add members** -- Search for people and add them to the group. Use the green key icon to designate group leaders. See [Group Members](./group-members.md).
+- **Add members** -- Search for people and add them to the group. Use the star icon (**Make Leader**) to designate group leaders. See [Group Members](./group-members.md).
 - **Set up a calendar** -- Create events and recurring meetings for the group. See [Group Calendar](./group-calendar.md).
 - **Communicate** -- Send messages to all group members directly from the group page.
-- **Export data** -- Click the download icon to export your group's member list.
+- **Export data** -- Click **Export** above the group's member list to download it.
 
 :::info
-All your church groups are organized by categories on the main Groups page. You can always rearrange or rename categories as your church grows.
+Every group belongs to a category, and the main Groups page lets you filter the list by category. You can always rearrange or rename categories as your church grows.
 :::

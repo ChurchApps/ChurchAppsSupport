@@ -19,11 +19,11 @@ If your church meets at more than one location, **Campuses** let you track which
 
 ## Opening Campus Settings
 
-In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), choose **Settings > Settings**, and select the **Campuses** card. You can also go straight there at **/settings/campuses**. You will see a list of all configured campuses with their name, location, and timezone.
+In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), choose **Settings > Settings**, and click **Campuses** in the left-hand list to scroll to the **Campuses** section. You can also go straight there at **/settings/campuses**. You will see a list of all configured campuses with their name, location, and timezone.
 
 ## Adding a Campus
 
-1. Click **Add Campus** (or the **+** button if no campuses exist yet).
+1. Click **Add Campus**.
 2. Fill in the campus details:
    - **Name** *(required)* — the display name shown throughout B1 Admin (for example, "Main Campus" or "North Campus").
    - **Address** — the campus street address (used for informational display; not the same as your main church address in Church Settings).

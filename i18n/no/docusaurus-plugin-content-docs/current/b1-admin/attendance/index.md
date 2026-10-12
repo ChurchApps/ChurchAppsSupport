@@ -12,32 +12,36 @@ Frammøte-delen i B1 Admin gir deg en fullstendig oversikt over hvem som møter 
 
 ## Sideoversikt
 
-Når du åpner siden for Frammøte, vil du se en header med viktig statistikk om kirkas frammøteoppsett:
+For å åpne siden, åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvid **Personer** og klikk på **Oppmøte**. Siden åpnes med en oversikt over **denne uken** (søndag til lørdag).
 
-- **Samlinger** -- antallet fysiske steder du har konfigurert
-- **Tjenestider** -- totalt antall tjenester på tvers av alle samlinger
-- **Planlagte grupper** -- grupper som er tildelt en bestemt tjenestid
-- **Uplanlagte grupper** -- grupper som sporer frammøte uavhengig av en tjenestid
+Venstre kolonne viser ukens datoer og det totale antallet personer **i rommet** -- ditt totale antall opptellinger hvis opptellinger er registrert denne uken, ellers antallet personer som har sjekket inn. Under totalen ser du hvor mange som er innsjekket, talt opp og gjester, pluss en fordeling per gudstjeneste hvis du har mer enn én. Hvis ingen har sjekket inn denne uken ennå, vises den siste uken som hadde frammøte.
 
-Under headeren organiserer tre faner dine frammøteverktøy.
+Hovedområdet på siden viser:
 
-## Faner
+- **Rom** -- hver gruppe folk har sjekket inn til denne uken, med antallet innsjekkede (og en kapasitetsindikator for grupper med innsjekkingskapasitet). Klikk på en gruppe for å åpne den.
+- **Gjester** -- personer som har sjekket inn som gjester denne uken. Klikk på et navn for å åpne vedkommendes post.
+- **Siste 13 uker** -- et lite søylediagram over innsjekkinger per uke, med hvor mange av ukene som hadde innsjekkinger.
+- **Opptellinger denne uken** -- opptellinger registrert for ukens gudstjenester.
+
+## Handlinger
+
+Venstre kolonne inneholder også sidens handlinger. Hver enkelt åpnes i hovedområdet; klikk på tilbakelenken **Oppmøte** for å gå tilbake til ukesoversikten.
 
 ### Oppsett
 
-Fanen **Oppsett** er der du konfigurerer byggesteinene for frammøtesporing. Her definerer du samlingene dine, legger til tjenestider for hver samling og tildeler [grupper](../groups/creating-groups.md) til disse tjenestidene. Du trenger bare å gjøre dette en gang, selv om du kan oppdatere det når som helst når planen din endres. Se [Frammøteoppsett](setup.md) for en fullstendig gjennomgang.
+Klikk på **Oppsett** for å konfigurere byggesteinene for frammøtesporing. Her definerer du samlingene dine, legger til gudstjenester og samlingstidspunkter for hver samling (med en valgfri innsjekkingsplan for hvert samlingstidspunkt), og ser hvilke [grupper](../groups/creating-groups.md) som er tildelt samlingstidspunktene. Antall samlinger, samlingstidspunkter, planlagte og uplanlagte grupper og totalt antall grupper vises øverst. Du trenger bare å gjøre dette en gang, selv om du kan oppdatere det når som helst når planen din endres. Se [Frammøteoppsett](setup.md) for en fullstendig gjennomgang.
 
-### Frammøte
+### Alle år (rapporter) {#all-years-reports}
 
-Fanen **Frammøte** viser frammøtetrender over tid. Bruk filtrene til å begrense resultatene etter dato, samling eller tjenestid og oppdage raskt mønstre i dataene dine. Se [Sporing av frammøte](tracking-attendance.md) for detaljer om bruk av rapporter og filtre.
+Klikk på **Alle år** for å åpne frammøterapportene. Fanene øverst bytter mellom **Frammøtetrend** (trender for hele menigheten over tid), **Opptellingstrend** (opptellinger summert per uke) og **Gruppeoppmøte** (frammøte fordelt på enkeltgrupper). Bruk filtrene til å begrense resultatene etter datointervall, samling eller samlingstidspunkt. Se [Sporing av frammøte](tracking-attendance.md) for detaljer om bruk av rapporter og filtre.
 
-### Grupper
+### Registrer opptelling {#enter-headcount}
 
-Fanen **Grupper** bryter ned frammøte etter individuell gruppe. Dette er nyttig når du vil se hvordan en bestemt smågruppe, klasse eller laggruppe gjør det i stedet for å se på kirkebrede tall.
+Klikk på **Registrer opptelling** for å registrere et enkelt totalt antall for en gudstjeneste, et samlingstidspunkt eller en gruppe i stedet for en navngitt liste. Se [Registrering av opptelling og trend](headcount-entry.md) for detaljer.
 
-### Manntall og manntallstrend
+### Kiosk {#kiosk}
 
-Fanen **Manntall** lar deg registrere en enkel totalopprekking for en tjeneste, tjenestid eller gruppe i stedet for en navngitt liste, og fanen **Manntallstrend** kartlegger disse totalene etter uke. Se [Manntallregistrering og trend](headcount-entry.md) for detaljer.
+Klikk på **Kiosk** for å åpne innstillingene for **Kiosktema**, der du angir bakgrunnsbilder og hvordan kioskens hvileskjerm oppfører seg. En lenke **Innsjekkingskiosk, QR og etiketter** tar deg til de fullstendige [B1 CheckIn-innstillingene](check-in.md).
 
 ## Neste steg
 

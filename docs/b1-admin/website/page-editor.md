@@ -22,7 +22,7 @@ The B1 page editor is a visual drag-and-drop builder that lets you design your c
 ## Opening the Editor
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Website**, and click **Pages**.
-2. Find the page you want to edit in the Pages table and click **Edit**.
+2. Find the page you want to edit in the Pages table and click **Edit Content**.
 
 The editor opens in full-screen mode. The left panel shows your page structure and available content elements; the center area shows a live preview of your page.
 
@@ -79,9 +79,18 @@ Already built out a section but want a different structure? Use the layout switc
    - **Live Stream** -- Your live stream player, embedded directly on the page
    - **Podcast** -- A list of episodes pulled from an external podcast RSS feed URL you provide, with settings for how many episodes to show and whether to display dates and descriptions. This is for featuring any podcast feed on your site; to publish your own sermons as a podcast, see [Managing Sermons](../sermons/managing-sermons.md#your-podcast-feed) instead.
    - **Donation** -- A giving button or embedded donation form
-   - **Raw HTML** -- Custom HTML markup for advanced use cases
+   - **HTML** -- Your own raw HTML, for advanced use cases such as embedding a third-party widget (see [Using the HTML element](#using-the-html-element))
    - **iFrame** -- Embed external content by URL
 3. Configure the element using the settings panel that appears.
+
+### Using the HTML element
+
+The **HTML** element has two boxes:
+
+- **HTML Content** -- The markup to show on the page. Any `<script>` tags you include here run on your live site.
+- **JavaScript (exclude script tag)** -- Script code that runs when the page loads. You can also paste a vendor's embed snippet here with its `<script>` tags included, and it will run on the live site.
+
+If you paste only a web address (such as an image link) into the JavaScript box, the box turns red with the warning *"This is a web address, not JavaScript."* A bare address in that box does nothing. To show a picture, use an **Image** element or put `<img src="...">` in **HTML Content**.
 
 ### Reordering Content
 
@@ -117,7 +126,7 @@ Use the preview controls in the toolbar to check how your page looks at differen
 - **Desktop** -- Full-width browser view
 - **Mobile** -- Narrow phone-sized view
 
-Click **Preview** to open a live version of the page in a new browser tab, exactly as visitors will see it.
+To see the live page exactly as visitors will, go back to the Pages list and click the page's path. It opens in a new browser tab.
 
 ## Checking Accessibility
 
@@ -128,9 +137,9 @@ Click the **Accessibility** icon in the toolbar to run a quick check for common 
 The editor tracks your editing history automatically. Use the toolbar buttons or keyboard shortcuts to navigate:
 
 - **Undo** (Ctrl+Z / Cmd+Z) -- Revert your last action
-- **Redo** (Ctrl+Y / Cmd+Y) -- Re-apply an undone action
+- **Redo** (Ctrl+Shift+Z or Ctrl+Y / Cmd+Shift+Z) -- Re-apply an undone action
 
-You can also restore the page to an earlier snapshot. Click **History** in the toolbar to see a list of saved snapshots with descriptions, and click any entry to restore to that point.
+You can also restore the page to an earlier snapshot. Click **View history** in the toolbar to see a list of saved snapshots with descriptions, and click any entry to restore to that point.
 
 :::warning
 Restoring a snapshot replaces your current page content with the snapshot version. This cannot be undone with the standard undo button. Save a snapshot of your current state before restoring an old one if you want to keep the option to return.
@@ -144,15 +153,15 @@ Changes are saved automatically as you work. A status indicator in the toolbar s
 
 Pages can have a **published** state, which controls when visitors see your changes. The toolbar displays a status chip showing the current state:
 
-- **Live on Save** -- The page does not use a publish workflow. Every saved change goes live immediately. This is the default for new pages.
-- **Unpublished Changes** -- The page has been published before, but you have made changes since the last publish. Visitors still see the previously published version.
+- **Live on save** -- The page does not use a publish workflow. Every saved change goes live immediately. This is the default for new pages.
+- **Unpublished changes** -- The page has been published before, but you have made changes since the last publish. Visitors still see the previously published version.
 - **Published** -- The page is live and your saved content matches what visitors see.
 
 To publish your changes, click the **Publish** button in the toolbar. The page becomes live immediately.
 
-To revert to the last published version without affecting what visitors see, open the overflow menu (⋮) and click **Discard Changes**.
+To revert to the last published version without affecting what visitors see, open the overflow menu (⋮) and click **Discard unpublished changes**.
 
-To take a page offline entirely, open the overflow menu and click **Unpublish**. Visitors will no longer see that page until you publish it again.
+To stop using the publish workflow, open the overflow menu and click **Turn off publishing**. Edits then go live immediately again.
 
 :::tip
 Use the draft/publish workflow when you want to prepare a page -- for example, for an upcoming event -- and only make it live at the right moment. Build and preview the page, then click Publish when you are ready.

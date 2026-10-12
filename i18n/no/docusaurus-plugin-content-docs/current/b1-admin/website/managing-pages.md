@@ -24,20 +24,20 @@ Hvis kirken har mer enn ett nettsted (for eksempel egne nettsteder for hver meni
 
 ## Forstå sidetyper
 
-Tabellen **Sider** viser alle sidene på nettstedet sammen med status:
+Tabellen **Sider** viser alle sidene på nettstedet med **Bane** og **Tittel**. Det finnes to typer sider:
 
-- **Generert** -- Sider som systemet har opprettet automatisk ut fra kirkens data (for eksempel en gruppeside, en preken-side eller en egen side for hver preken i biblioteket). Disse sidene oppdaterer seg selv når dataene endres.
+- **Generert** -- Sider som systemet har opprettet automatisk ut fra kirkens data (for eksempel en gruppeside, en preken-side eller en egen side for hver preken i biblioteket). Disse sidene har et **Generert**-merke og oppdaterer seg selv når dataene endres.
 - **Egendefinert** -- Sider du har opprettet selv med eget innhold og eget oppsett.
 
-Du kan gjøre om en hvilken som helst automatisk generert side til en egendefinert side hvis du vil ha full kontroll over innhold og design.
+Du kan gjøre om en hvilken som helst automatisk generert side til en egendefinert side hvis du vil ha full kontroll over innhold og design. Klikk på **Konverter** ved siden av den genererte siden og bekreft.
 
 ## Legge til og redigere sider
 
-1. Klikk på knappen **Legg til side** øverst til høyre i tabellen Sider.
+1. Klikk på knappen **Legg til side** øverst til høyre i visningen Nettstedssider.
 2. Velg en sidetype (tom eller en mal) og gi siden et navn.
 3. Klikk på **Rediger innhold** ved siden av en side for å åpne [sideredigeringen](page-editor), der du kan legge til seksjoner, tekst, bilder og andre elementer.
-4. Klikk på **Sideinnstillinger** (tannhjulikonet) for å oppdatere sidetittel, URL-bane og andre metadata.
-5. Bruk knappen **Vis live side** for å åpne siden i et nytt vindu og se nøyaktig hvordan den ser ut for besøkende.
+4. Klikk på **Sideinnstillinger** ved siden av en side for å oppdatere sidetittel, URL-bane og andre metadata.
+5. Klikk på sidens bane i kolonnen **Bane** for å åpne den levende siden i en ny fane og se nøyaktig hvordan den ser ut for besøkende.
 
 :::tip
 For hjemmesiden setter du URL-banen til bare `/`. For alle andre sider bruker du en beskrivende bane som `/about` eller `/contact`.
@@ -54,12 +54,12 @@ For hjemmesiden setter du URL-banen til bare `/`. For alle andre sider bruker du
 
 ## Administrere navigasjon
 
-Visningen Nettstedssider viser navigasjonslenkene dine. Disse lenkene styrer menyen besøkende ser på nettstedet.
+Panelet **Hovednavigasjon** til høyre i visningen Nettstedssider viser navigasjonslenkene dine. Disse lenkene styrer menyen besøkende ser på nettstedet.
 
 1. Klikk på **Legg til** for å opprette en ny navigasjonslenke. Den kan peke til en hvilken som helst side på nettstedet eller til en ekstern URL.
 2. Dra og slipp lenkene i ønsket rekkefølge for å endre rekkefølgen. Du kan også legge lenker under et overordnet element for å lage nedtrekksmenyer.
-3. Klikk på ikonet **Rediger** ved siden av en lenke for å endre navn, URL eller plassering.
-4. Klikk på ikonet **Slett** for å fjerne en lenke fra navigasjonen.
+3. Klikk på en lenke for å åpne **Lenkeinnstillinger**, der du kan endre teksten, URL-en eller overordnet side.
+4. For å fjerne en lenke fra navigasjonen åpner du **Lenkeinnstillinger** og klikker på **Slett**.
 
 :::info
 Når du fjerner en navigasjonslenke, slettes ikke selve siden. Siden finnes fortsatt og kan nås direkte med URL-en -- den vises bare ikke i menyen.
@@ -67,7 +67,7 @@ Når du fjerner en navigasjonslenke, slettes ikke selve siden. Siden finnes fort
 
 ## Bryterne for hele nettstedet
 
-Over **Hovednavigasjon** på venstre side av visningen Nettstedssider finner du to brytere som gjelder hele kirkens nettsted:
+Under lenkene i panelet **Hovednavigasjon** finner du to brytere som gjelder hele kirkens nettsted:
 
 - **Vis innlogging** -- Viser en **Logg inn**-knapp i nettstedets navigasjonslinje.
 - **Deaktiver offentlig nettsted** -- Slår av det offentlige nettstedet. Bruk den hvis kirken bare bruker B1 til medlemsportalen, giving og påmeldinger, og har hovednettstedet et annet sted.
@@ -96,7 +96,7 @@ Denne innstillingen gjelder hele kirken. Hvis du har mer enn ett nettsted, slås
 
 - Hold hovednavigasjonen til fem eller seks elementer, slik at besøkende raskt finner frem.
 - Bruk nøstede lenker for relaterte undersider (for eksempel en nedtrekksmeny «Om oss» med «Teamet vårt», «Tro» og «Historie»).
-- Sjekk navigasjonen på mobil ved å klikke på **Mobilforhåndsvisning**, så du ser at den fungerer godt på mindre skjermer.
+- Sjekk navigasjonen på en telefon, så du ser at den fungerer godt på mindre skjermer.
 - Gi sidene klare, beskrivende navn som hjelper besøkende å forstå hva de finner.
 
 :::tip
@@ -107,7 +107,7 @@ Du kan legge til [skjemaer](../forms/creating-forms.md) på sidene for å samle 
 
 Hvis du bygger nettstedet fra grunnen av, kan du komme raskt i gang med en **nettstedsmal** i stedet for å opprette sider én og én. En nettstedsmal oppretter et sett ferdige sider -- hjem, om oss, kontakt, gi og flere -- med plassholderinnhold og navigasjonslenker som allerede er koblet sammen.
 
-1. På skjermen Sider klikker du på knappen **Nettstedsmaler** (ved siden av knappen **Legg til side**).
+1. På skjermen Sider klikker du på knappen **Start fra en mal** (ved siden av knappen **Legg til side**).
 2. Bla gjennom tilgjengelige maler og klikk på en for å forhåndsvise sidestrukturen.
 3. Når du har funnet en du liker, klikker du på **Bruk mal**.
 4. Sider som ikke finnes fra før, opprettes og legges til i navigasjonen. Eksisterende sider blir stående som de er.

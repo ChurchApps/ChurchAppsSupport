@@ -24,8 +24,8 @@ title: "批准资料更改"
 
 **从仪表板（您的主页）：**
 1. 登录 B1 Admin -- 仪表板会自动加载。
-2. 在右侧的 **Tasks** 部分，点击 **Assigned to My Groups** 标签页。
-3. 任何待处理的资料更改请求都会列在那里。
+2. 在 **My tasks** 部分，点击 **All tasks**。（My tasks 仅列出分配给您个人的未完成任务。）
+3. 点击 **Assigned to My Groups** 标签页。任何待处理的资料更改请求都会列在那里。
 
 **从 Serving &rarr; My Work：**
 1. 打开 [Jump 菜单](../introduction.md#getting-around-with-the-jump-menu)（B1 Admin 左上角的搜索栏）并展开 **Serving**。

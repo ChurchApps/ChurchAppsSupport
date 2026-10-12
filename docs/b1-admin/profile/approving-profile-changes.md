@@ -24,8 +24,8 @@ When a member submits a profile change, it appears as a task assigned to your ap
 
 **From the Dashboard (your home page):**
 1. Log in to B1 Admin — the Dashboard loads automatically.
-2. In the **Tasks** section on the right side, click the **Assigned to My Groups** tab.
-3. Any pending profile change requests will be listed there.
+2. In the **My tasks** section, click **All tasks**. (My tasks lists only open tasks assigned to you personally.)
+3. Click the **Assigned to My Groups** tab. Any pending profile change requests will be listed there.
 
 **From Serving &rarr; My Work:**
 1. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin) and expand **Serving**.

@@ -20,7 +20,7 @@ Le Stanze e le Risorse ti permettono di tracciare gli spazi e le attrezzature pr
 
 ## Apertura di Stanze e Risorse
 
-In B1 Admin, apri il [Menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Calendari**, e fai clic su **Stanze e Risorse**. La pagina ha quattro schede: **Stanze**, **Risorse**, **Blocchi**, e **Modelli**.
+In B1 Admin, apri il [Menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Calendari**, e fai clic su **Stanze e Risorse**. La pagina ha quattro schede: **Stanze**, **Risorse**, **Blocchi**, e **Modelli**. Il pulsante di aggiunta in alto nella pagina cambia in base alla scheda selezionata, e una casella **Trova** ti permette di filtrare l'elenco corrente.
 
 ## Stanze
 
@@ -28,7 +28,7 @@ Le stanze sono spazi fisici che possono essere prenotati insieme agli eventi del
 
 ### Aggiunta di una Stanza
 
-1. Sulla scheda **Stanze**, fai clic su **Aggiungi Stanza**.
+1. Sulla scheda **Stanze**, fai clic su **Aggiungi Stanza** in alto nella pagina.
 2. Inserisci un **nome** per la stanza.
 3. Facoltativamente imposta una **capacità** (numero massimo di persone).
 4. Imposta un **Gruppo di Approvazione** -- quando un gruppo richiede questa stanza, i leader del gruppo scelto vengono notificati e devono approvare la prenotazione. Lascia vuoto se non è necessaria alcuna approvazione.
@@ -36,7 +36,7 @@ Le stanze sono spazi fisici che possono essere prenotati insieme agli eventi del
 
 ### Modifica o Eliminazione di una Stanza
 
-Fai clic sull'icona di modifica accanto a qualsiasi stanza, apporta le tue modifiche, e fai clic su **Salva**. Usa **Elimina** per rimuovere una stanza permanentemente.
+Fai clic su **Modifica** accanto a qualsiasi stanza, apporta le tue modifiche, e fai clic su **Salva**. Usa **Elimina** per rimuovere una stanza permanentemente.
 
 ## Risorse
 

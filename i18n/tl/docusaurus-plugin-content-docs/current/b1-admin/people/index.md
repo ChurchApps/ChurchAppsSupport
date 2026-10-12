@@ -28,13 +28,13 @@ Narito ang pangkalahatang-ideya ng mga pangunahing tampok sa seksyong People:
 
 7. **Mag-import at mag-export ng datos** -- Magdala ng datos ng mga miyembro mula sa CSV file o lumipat mula sa ibang church management system tulad ng Breeze. Maaari mo ring i-export ang iyong direktoryo sa CSV anumang oras. Tingnan ang [Pag-import ng Datos](./importing-data.md) at [Pag-export ng Datos](./exporting-data.md).
 
-8. **Pamahalaan ang mga profile** -- Tingnan at i-edit ang detalyadong profile ng bawat tao, kasama ang impormasyon sa pakikipag-ugnayan, mga miyembro ng sambahayan, [pagiging miyembro sa mga grupo](../groups/group-members.md), [kasaysayan ng attendance](../attendance/tracking-attendance.md), [mga donasyon](../donations/recording-donations.md), at [mga custom na form](../forms/creating-forms.md). Ilagay ang cursor sa isang email, address, o numero ng telepono sa asul na header ng profile para makopya ito sa isang click.
+8. **Pamahalaan ang mga profile** -- Tingnan at i-edit ang detalyadong profile ng bawat tao, kasama ang impormasyon sa pakikipag-ugnayan, mga miyembro ng sambahayan, [pagiging miyembro sa mga grupo](../groups/group-members.md), [kasaysayan ng attendance](../attendance/tracking-attendance.md), [mga donasyon](../donations/recording-donations.md), at [mga custom na form](../forms/creating-forms.md). Ang pangalan, detalye ng pakikipag-ugnayan, at sambahayan ng tao ay nasa kaliwa ng profile, habang ang mga buod ng kanilang attendance, pagbibigay, grupo, notes, at form ay nasa tabi nito. Ilagay ang cursor sa isang address o sa numero ng telepono sa bahay o trabaho para makopya ito sa isang click.
 
 9. **Magtalaga ng mga tungkulin at pahintulot** -- Kontrolin kung sino sa iyong team ang makaka-access sa iba't ibang bahagi ng B1 Admin sa pamamagitan ng pagtatalaga ng mga tungkulin. Tingnan ang [Pagtatalaga ng mga Tungkulin](./roles-permissions.md).
 
 ## Pagsisimula
 
-Para buksan ang seksyong People, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin), i-expand ang **People**, at i-click ang **People**. Makikita mo ang buong direktoryo ng inyong simbahan na may search bar sa itaas at listahan ng mga miyembro sa ibaba.
+Para buksan ang seksyong People, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin), i-expand ang **People**, at i-click ang **People**. Makikita mo ang direktoryo ng inyong simbahan na nakalista ayon sa sambahayan, na may search bar sa itaas. Gamitin ang toggle na **View as** para lumipat sa pagitan ng listahang **Households** at **Table** ng mga indibidwal na tao.
 
 :::tip
 Kung unang beses mong ise-set up ang B1, magsimula sa [pag-import ng umiiral mong datos ng mga miyembro](./importing-data.md). Pagkatapos, suriin at ayusin ang mga profile kung kinakailangan.

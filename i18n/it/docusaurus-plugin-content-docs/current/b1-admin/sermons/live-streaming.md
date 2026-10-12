@@ -19,14 +19,14 @@ La pagina Live Stream Times ti consente di configurare il programma di streaming
 
 </div>
 
-La pagina ha due schede principali: **Services** per gestire il programma dello streaming live e **Settings** per configurare la tua pagina di streaming.
+Lo streaming live si gestisce da due pagine nella sezione **Sermons** del Jump menu: **Live Stream Times** per gestire il programma dello streaming live e **Settings** per configurare le schede della tua pagina di streaming.
 
 ## Gestione dei Servizi
 
 ### Aggiunta di un Servizio
 
 1. In B1 Admin, apri il [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Sermons**, e fai clic su **Live Stream Times**.
-2. Fai clic sul pulsante **Add Service** per creare un nuovo servizio pianificato.
+2. Fai clic sul pulsante **Add Service** in alto nella pagina per creare un nuovo servizio pianificato. I servizi esistenti sono elencati in una tabella che mostra il nome, l'orario, il fornitore e la durata di ciascun servizio; fai clic sull'icona di modifica su una riga per cambiarlo.
 3. Immetti un **Service Name** (ad esempio, "Sunday Morning").
 4. Imposta il **Service Time** -- scegli il giorno e l'ora in cui inizia il tuo servizio.
 5. Imposta **Recurs Weekly** su **Yes** per i servizi settimanali regolari, o **No** per un evento una tantum.
@@ -47,19 +47,19 @@ Il tuo servizio si aggiornerà automaticamente ogni settimana se impostato su ri
 
 ## Impostazioni della Pagina di Streaming
 
-Fai clic sulla scheda **Settings** per personalizzare le schede e i link che appaiono accanto al tuo streaming live.
+Per personalizzare le schede e i link che appaiono accanto al tuo streaming live, apri il Jump menu, espandi **Sermons** e fai clic su **Settings**. La pagina **Stream Settings** mostra il tuo elenco **Content Tabs**.
 
 ### Aggiunta di Schede
 
 1. Fai clic sul pulsante **Add** per aggiungere una nuova scheda alla tua pagina di streaming live.
-2. Scegli la scheda pre-progettata **Chat** o aggiungi una scheda personalizzata con un URL esterno.
+2. Scegli un **Link Type**: **External URL** per un link personalizzato, oppure una delle schede predefinite **Chat** o **Prayer**.
 3. Per la scheda Chat, basta assegnarle un nome nella casella **Tab Text** e la configurazione è completa.
 4. Per una scheda collegata, inserisci il nome della scheda, scegli un'icona facendo clic sul pulsante icona, e inserisci l'URL.
 5. Le tue schede configurate appariranno sulla pagina di streaming live per consentire ai visualizzatori di accedere a risorse aggiuntive e funzionalità interattive.
 
 ### Anteprima del Tuo Streaming
 
-Fai clic sul pulsante **View Your Stream** per vedere esattamente come apparirà la tua pagina di streaming live ai visitatori, incluso il tuo logo, gli orari dei servizi e le schede configurate.
+Nella pagina **Live Stream Times**, fai clic su **View Your Stream** in alto nella pagina per vedere esattamente come apparirà la tua pagina di streaming live ai visitatori, incluso il tuo logo, gli orari dei servizi e le schede configurate.
 
 ## Configurazione del Tuo Streaming Live di YouTube
 

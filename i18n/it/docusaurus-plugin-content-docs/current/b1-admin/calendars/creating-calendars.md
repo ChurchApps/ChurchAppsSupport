@@ -21,23 +21,23 @@ La creazione di un calendario in B1 Admin ti consente di creare una visualizzazi
 ## Creazione di un Nuovo Calendario
 
 1. In B1 Admin, apri il [Menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Calendari**, e fai clic su **Calendari**.
-2. Fai clic su **Aggiungi Calendario**.
+2. Fai clic su **Aggiungi Calendario** in alto nella pagina. Il modulo del nuovo calendario si apre sotto l'elenco dei calendari.
 3. Inserisci un **nome** per il tuo calendario (ad esempio, "Eventi di Youth Ministry" o "Calendario Principale della Chiesa").
 4. Aggiungi una **descrizione** facoltativa per aiutare il tuo team a capire a cosa serve questo calendario.
 5. Fai clic su **Crea** per salvare il tuo nuovo calendario.
 
 ## La Pagina di Dettaglio del Calendario
 
-Dopo aver creato un calendario, fai clic su di esso per aprire la pagina di dettaglio. Questa pagina ha due aree principali:
+Dopo aver creato un calendario, fai clic su **Gestisci Eventi** sulla sua riga per aprire la pagina di dettaglio. Questa pagina ha due aree principali:
 
-- **Colonna sinistra** -- Una visualizzazione del calendario che mostra gli eventi provenienti dai gruppi collegati.
-- **Colonna destra** -- L'elenco dei gruppi associati. Qui gestisci quali gruppi sono inclusi in questo calendario.
+- **Colonna sinistra** -- Il nome del calendario con le sue azioni (**Nuovo Evento**, **Modifica**, **Importa .ics** e **Stampa**), seguito dall'elenco **Gruppi nel Calendario** che mostra quali gruppi sono inclusi in questo calendario. Fai clic su **Rimuovi** accanto a un gruppo per toglierlo dal calendario.
+- **Area principale** -- La vista **Eventi del Calendario** con gli eventi provenienti dai gruppi collegati, con i pulsanti **Sottoscrivi** e **Aggiungi Gruppo** sopra di essa.
 
 ## Collegamento di Gruppi
 
-I gruppi che hanno eventi nel calendario appaiono automaticamente nell'elenco dei gruppi sul lato destro della pagina di dettaglio.
+I gruppi che hanno eventi nel calendario appaiono automaticamente nell'elenco **Gruppi nel Calendario** sul lato sinistro della pagina di dettaglio.
 
-1. Fai clic su **Aggiungi** nella sezione dei gruppi per associare un gruppo al tuo calendario.
+1. Fai clic su **Aggiungi Gruppo** sopra il calendario per associare un gruppo al tuo calendario.
 2. Seleziona il gruppo dal menu a discesa.
 3. Scegli se includere **tutti gli eventi** da quel gruppo o solo **eventi specifici**.
 4. Fai clic su **Salva**.

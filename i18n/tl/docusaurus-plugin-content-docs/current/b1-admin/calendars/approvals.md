@@ -24,21 +24,21 @@ Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-j
 
 ## Mga Kahilingan sa Pag-book
 
-Kapag lumikha ang isang grupo ng event at humiling ng silid o resource, lalabas ang kahilingan sa panel na **Room & Resource Requests**. Ipinapakita ng bawat hilera ang:
+Kapag lumikha ang isang grupo ng event at humiling ng silid o resource, lalabas ang kahilingan sa seksyong **Room & Resource Requests**. Ipinapakita ng bawat hilera ang:
 
-- Ang silid o resource na hinihiling
 - Ang pangalan at petsa/oras ng event
-- Ang humihiling na grupo
+- Ang silid o resource na hinihiling (kasama ang dami para sa mga resource na maraming yunit)
+- Badge ng status na nagpapakita kung may conflict ang kahilingan
 
 ### Mga Indikasyon ng Conflict
 
-Kung may dalawang kahilingang nagsasapawan para sa parehong silid o resource, may lalabas na icon ng babala ng conflict. Maingat na suriin ang mga nagbabanggaang kahilingan bago aprubahan ang alinman sa mga ito.
+Kung may sumasapaw na ibang booking o blockout para sa parehong silid o resource ang isang kahilingan, ipapakita ng status nito ang badge na **Conflicts**; i-hover ang mouse dito para makita ang mga detalye. Ang mga kahilingang walang sapaw ay nagpapakita ng **No conflicts**. Maingat na suriin ang mga nagbabanggaang kahilingan bago aprubahan ang alinman sa mga ito.
 
 ### Pag-apruba o Pagtanggi
 
-I-click ang icon na **✓** (aprubahan) o **✗** (tanggihan) sa anumang kahilingan sa pag-book. Aabisuhan ang humihiling na grupo tungkol sa desisyon. Ang mga aprubadong booking ay nakakandado sa silid o resource na iyon para sa event; ang mga tinanggihang booking ay nagbibigay-laya sa slot para sa iba.
+I-click ang **Approve** o **Reject** sa anumang kahilingan sa pag-book (kailangan pang kumpirmahin ang pagtanggi). Aabisuhan ang humihiling na grupo tungkol sa desisyon. Ang mga aprubadong booking ay nakakandado sa silid o resource na iyon para sa event; ang mga tinanggihang booking ay nagbibigay-laya sa slot para sa iba.
 
-Kapag nag-click kayo ng aprubahan, magbubukas ang dialog na **Approve booking** para mailathala rin ninyo ang event sa parehong hakbang:
+Kapag nag-click kayo ng **Approve**, magbubukas ang dialog na **Approve booking** para mailathala rin ninyo ang event sa parehong hakbang:
 
 1. Lagyan ng check ang **Publish to public calendar** para gawing pampubliko ang event sa kalendaryo ng grupo nito. Iwanang walang check para aprubahan ang booking nang hindi binabago ang visibility ng event.
 2. Kapag may check na ang **Publish to public calendar**, maaari kayong opsyonal na pumili ng curated calendar mula sa **Also add to calendar** para idagdag din ang event sa isa sa inyong [mga curated calendar](curated-calendar). Iwanang nakatakda sa **None** para laktawan ito. (Lumalabas lamang ang opsyong ito kung mayroon kayong pahintulot na **content.edit**.)
@@ -46,7 +46,7 @@ Kapag nag-click kayo ng aprubahan, magbubukas ang dialog na **Approve booking** 
 
 ## Mga Nakabinbing Event
 
-Kung nangangailangan ang workflow ng inyong kalendaryo ng pag-apruba sa event bago ito makita ng publiko, lalabas ang mga nakabinbing event sa panel na **Event Requests**. Aprubahan ang isang event para mailathala ito sa kalendaryo, o tanggihan ito para ipaalam sa nagsumite na may mga pagbabagong kailangan.
+Kung nangangailangan ang workflow ng inyong kalendaryo ng pag-apruba sa event bago ito makita ng publiko, lalabas ang mga nakabinbing event sa seksyong **Event Requests**. I-click ang **Approve** para mailathala ang event sa kalendaryo, o ang **Reject** para ipaalam sa nagsumite na may mga pagbabagong kailangan.
 
 :::tip
 Mag-set up ng Approval Group sa isang silid sa [Rooms & Resources](rooms-resources) para mangailangan ng pag-apruba para sa silid na iyon. Maaari nang humiling ng silid ang mga grupong may access kapag lumilikha ng mga event, at mapupunta sa pahinang ito ang mga kahilingang iyon.

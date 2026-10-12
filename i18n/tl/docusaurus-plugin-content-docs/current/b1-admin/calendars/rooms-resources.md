@@ -20,7 +20,7 @@ Pinapahintulutan ka ng Rooms at Resources na subaybayan ang mga espasyo at kagam
 
 ## Pagbubukas ng Rooms & Resources
 
-Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), palawakin ang **Calendars**, at i-click ang **Rooms & Resources**. May apat na tab ang pahina: **Rooms**, **Resources**, **Blockouts**, at **Templates**.
+Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), palawakin ang **Calendars**, at i-click ang **Rooms & Resources**. May apat na tab ang pahina: **Rooms**, **Resources**, **Blockouts**, at **Templates**. Nagbabago ang add button sa itaas ng pahina ayon sa napiling tab, at may kahon na **Find** para i-filter ang kasalukuyang listahan.
 
 ## Mga Kuwarto (Rooms)
 
@@ -28,7 +28,7 @@ Ang mga kuwarto ay mga pisikal na espasyong maaaring i-reserve kasabay ng mga ev
 
 ### Pagdaragdag ng Kuwarto
 
-1. Sa tab na **Rooms**, i-click ang **Add Room**.
+1. Sa tab na **Rooms**, i-click ang **Add Room** sa itaas ng pahina.
 2. Maglagay ng **pangalan** para sa kuwarto.
 3. Opsyonal na magtakda ng **capacity** (pinakamaraming bilang ng tao).
 4. Magtakda ng **Approval Group** — kapag humiling ang isang grupo ng kuwartong ito, aabisuhan ang mga lider ng napiling grupo at kailangan nilang aprubahan ang booking. Iwanang blangko kung hindi kailangan ng pag-apruba.
@@ -36,7 +36,7 @@ Ang mga kuwarto ay mga pisikal na espasyong maaaring i-reserve kasabay ng mga ev
 
 ### Pag-edit o Pagtanggal ng Kuwarto
 
-I-click ang edit icon sa tabi ng anumang kuwarto, gawin ang mga pagbabago, at i-click ang **Save**. Gamitin ang **Delete** para permanenteng alisin ang kuwarto.
+I-click ang **Edit** sa tabi ng anumang kuwarto, gawin ang mga pagbabago, at i-click ang **Save**. Gamitin ang **Delete** para permanenteng alisin ang kuwarto.
 
 ## Mga Resource
 

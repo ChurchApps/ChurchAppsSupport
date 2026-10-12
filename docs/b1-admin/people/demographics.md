@@ -20,7 +20,7 @@ The **Demographics** dashboard gives you a visual snapshot of your congregation 
 
 ## Opening Demographics
 
-From the **People** page, click the **Demographics** button in the page header (the bar chart icon). The page shows your total person count at the top, followed by the charts described below.
+From the **People** page, click **Demographics** in the page header. The page shows your total person count at the top, followed by the charts described below.
 
 ## Charts
 

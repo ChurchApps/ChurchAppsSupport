@@ -22,12 +22,14 @@ title: "事务端点"
 | GET | `/:id` | JWT | — | 按 ID 获取计划 |
 | GET | `/ids?ids=` | JWT | — | 按逗号分隔的 ID 获取多个计划 |
 | GET | `/types/:planTypeId` | JWT | — | 按计划类型获取计划 |
+| GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + ministry edit | 预览服务概览中**向志愿者发送短信**的效果：`{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }`，针对日期范围内分配的志愿者（每人一条，跳过已退订和没有号码的人，共享号码去重，上限为200人） |
 | GET | `/presenter` | JWT | — | 获取未来 7 天的计划（演示视图） |
 | GET | `/public/current/:planTypeId` | 公开 | — | 获取某计划类型的当前计划 |
 | GET | `/public/signup/:churchId` | 公开 | — | 开放自助报名的计划，每个计划附带其自助报名职位（以及已接受/未确认分配的 `filledCount`）和时间。不含志愿者姓名 |
 | GET | `/signup/:planId/volunteers` | JWT | — | 该计划自助报名职位的 `[{ positionId, names }]`（已接受/未确认分配人员的显示名称）。除非该计划的 `showVolunteerNames` 已开启，否则返回 `[]` |
 | POST | `/` | JWT | — | 创建或更新计划（接受单个对象或数组） |
-| POST | `/copy/:id` | JWT | — | 复制计划，包括职位、时间、分配和礼拜流程项目。请求体包含 `copyMode`（"none"、"positions"、"all"）和 `copyServiceOrder`（布尔值）。除非请求体中提供了 `notes` 和 `signupDeadlineHours`，否则它们会从源计划沿用 |
+| POST | `/copy/:id` | JWT | Ministry edit | 复制计划，包括职位、时间、分配和礼拜流程项目。请求体包含 `ministryId`、`serviceDate`、`copyMode`（"none"、"positions"、"all"）和 `copyServiceOrder`（布尔值）。如果没有 `targetPlanId`，则创建新计划，并且 `notes`、`signupDeadlineHours`、`showVolunteerNames` 和 `autoReplaceOnDecline` 会从源计划沿用，除非请求体中提供了这些值。如果提供了 `targetPlanId`，则复制内容会填充该现有计划（调用者必须有权编辑它）。B1Admin 的**每周重复**选项会每周调用一次，每次都从前一周创建的计划复制 |
+| POST | `/textRange` | JWT | `texting.send` + ministry edit | 通过教会的短信提供商向日期范围内分配的每位志愿者发送短信。请求体：`{ startDate, endDate, ministryId, planTypeId?, message }`（消息最多1600个字符；合并字段按接收者解析）。返回预览计数，以及 `recipientCount`、`successCount`、`failCount`，并且在发送提前停止时返回 `error`（`no_provider` 或 `insufficient_credits`） |
 | POST | `/autofill/:id` | JWT | — | 自动填充计划的志愿者分配。请求体：`{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | 删除计划及所有相关的时间、分配、职位和计划项目 |
 
@@ -176,10 +178,12 @@ Authorization: Bearer <token>
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | 获取当前用户的待办任务 |
 | GET | `/:id` | JWT | — | 按 ID 获取任务 |
+| GET | `/:id/contact` | JWT | 可查看卡片 | 工作流卡片所涉人员的联系信息：`{ personId, displayName, mobilePhone, email }`。让已分配的调用者（无人员访问权限）也能联系该人 |
 | GET | `/closed` | JWT | — | 获取当前用户的已完成任务 |
 | GET | `/timeline?taskIds=` | JWT | — | 按逗号分隔的任务 ID 获取任务的时间线数据 |
 | GET | `/directoryUpdate/:personId` | JWT | — | 获取某人的通讯录更新任务 |
 | POST | `/` | JWT | — | 创建或更新任务。添加 `?type=directoryUpdate` 处理通讯录更新任务（自动上传照片） |
+| POST | `/:id/conversation` | JWT | `tasks.edit` 或卡片负责人 | 将备注对话附加到卡片。请求体：`{ conversationId }`。首个附加的对话生效；之后的调用会原样返回卡片 |
 | POST | `/loadForGroups` | JWT | — | 加载特定群组的任务。请求体：`{ groupIds: [], status: "Open" }` |
 
 ## 自动化

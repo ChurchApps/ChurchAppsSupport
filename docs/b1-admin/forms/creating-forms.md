@@ -32,7 +32,7 @@ Your new form will appear in the list. Click on it to start adding questions.
 
 ## Printing a Blank Form
 
-Need a paper copy to hand out -- for a visitor card at the welcome desk, or a form someone without internet access can fill in by hand? Click the **print icon** next to a form on the main Forms list to open a preview, then click **Print**. Blank fields print with an underline or checkbox for each question so people can fill them in by hand; required questions are marked with an asterisk. Your church's name prints at the top above the form name. There are no other print options -- print the whole form or nothing.
+Need a paper copy to hand out -- for a visitor card at the welcome desk, or a form someone without internet access can fill in by hand? Click **Print** next to a form on the main Forms list to open a preview, then click **Print**. Blank fields print with an underline or checkbox for each question so people can fill them in by hand; required questions are marked with an asterisk. Your church's name prints at the top above the form name. There are no other print options -- print the whole form or nothing.
 
 ## Adding Questions
 
@@ -81,7 +81,7 @@ Follow-up emails only go out after your church has been approved to send group e
 
 ## Duplicating a Form
 
-To reuse a form as a starting point for a new one, click the **Duplicate** icon (copy icon) next to the form in the Forms list. B1 creates an exact copy of the form — including all questions — which you can then rename and edit independently.
+To reuse a form as a starting point for a new one, click **Duplicate** next to the form in the Forms list and confirm. B1 creates an exact copy of the form — including all questions — which you can then rename and edit independently.
 
 :::tip
 Duplication is handy for recurring events where the registration questions stay the same from year to year. Duplicate last year's form, update the name and dates, and you're ready to go.

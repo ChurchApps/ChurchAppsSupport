@@ -74,6 +74,8 @@ The whole tree for one URL comes back from a single anonymous call — `GET /con
 
 The `sermons` element is the most configurable of the church types: a `layout` answer selects `browse` (the legacy full browser), `grid`, `list`, or `featuredLatest`, with `playlistId`, `itemCount`, `showTitles`, and `showDates` refining the non-browse layouts.
 
+The `rawHTML` element has two answers: `rawHTML` (markup) and `javascript`. Scripts inserted through `innerHTML` never execute, so `RawHTMLElement` recreates every `<script>` node in the markup as a fresh element. These non-parser-inserted nodes are trusted under the CSP's `strict-dynamic`. A `javascript` answer that starts with `<` (a vendor snippet pasted with its `<script>` tags) is parsed as markup and gets the same treatment. Otherwise it runs as a plain inline script. B1Admin flags a bare URL in the JavaScript box, since a lone URL runs as a no-op script. The `map` element renders nothing, and loads no Google Maps script, when no Maps API key is configured.
+
 ### Renderers (`@churchapps/apphelper`)
 
 Renderers live in `Packages/apphelper/src/website/components/elementTypes/`, one component per type, resolved through `ElementRegistry.ts` — a two-layer map where `Element.tsx` registers the default renderer for all 35 types (`registerDefaultElementRenderer`) and a host app can override any of them at runtime (`registerElementRenderer`) without forking the package.
@@ -137,11 +139,11 @@ All of this is B1App-side rendering over ContentApi data — the API stores, the
 |---------|--------------|
 | Meta descriptions | `pages.metaDescription` (≤300 chars) flows through `MetaHelper.getMetaData()` into the Next.js `Metadata` (description + Open Graph) on every builder-rendered route. B1Admin's page settings include an AI "Generate" button (see below) |
 | Redirects | Per-church `redirects` rows managed at `/content/redirects` (`content.edit`, 200-row cap, normalized paths). On a would-be 404, B1App's page route resolves the path against `GET /content/redirects/public/:churchId` and issues an HTTP 308 via Next's `permanentRedirect`; unmatched paths fall through to `notFound()` |
-| Branded 404 | `not-found.tsx` renders `BrandedNotFound` with the church's logo, name, and theme instead of a generic error |
+| Branded 404 | `not-found.tsx` renders `BrandedNotFound` with the church's logo, name, and theme instead of a generic error. An unknown `/register/[eventId]` also returns a real 404 |
 | Structured data | `BlogPosting` JSON-LD on blog posts; `VideoObject` on the per-sermon pages (`/{sdSlug}/sermons/[sermonId]`) and on pages containing a `sermons` element; `Event` from calendar/event elements on builder pages; schema.org `Event` from the `serviceTimes` element |
 | Sermon pages | Every public sermon gets a crawlable page at `/sermons/[sermonId]` with full metadata — sermons are no longer locked inside the client-side browser element |
-| Analytics | The public settings key `ga4MeasurementId` (managed next to redirects in B1Admin) injects a per-church GA4 gtag via `next/script` |
-| Sitemap & feeds | The per-church `sitemap.xml` route includes builder pages and blog URLs; the blog listing advertises the RSS feed |
+| Analytics | The public settings key `ga4MeasurementId` (managed next to redirects in B1Admin) injects a per-church GA4 gtag via `next/script`. The B1 app (`/{sdSlug}/mobile`) also sends its page views to that ID, alongside ChurchApps' own tag, when it is a valid `G-` ID (GTM container IDs stay website-only). Each `gtag('config')` carries a `display_mode` of `installed` or `browser`, based on `navigator.standalone` or the `(display-mode: standalone)` media query (`B1App/src/helpers/mobileAnalytics.ts`) |
+| Sitemap & feeds | The per-church `sitemap.xml` route includes builder pages, blog URLs, and the 50 most recent sermon pages (with `<lastmod>` from each sermon's publish date). It also lists the built-in `/sermons`, `/groups`, and `/volunteer` pages when they have content (public groups, signup plans), unless a saved redirect replaces that path. The blog listing advertises the RSS feed |
 | Accessibility | The public chrome renders a skip link targeting the `<main id="main-content">` landmark in every layout wrapper |
 
 ## AI generation (AskApi)

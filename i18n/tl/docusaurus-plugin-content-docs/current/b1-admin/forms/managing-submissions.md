@@ -72,7 +72,7 @@ Maaaring ma-access ng mga form member na may role na **Admin** o **View Only** a
 :::
 
 :::tip
-Kung ang isang **Stand Alone** na form ay naka-set na gumawa ng person record, ang anumang submission na natugma sa isang umiiral na tao ay lalabas din sa sarili niyang tab na **Forms** sa seksyong People — hindi lang ang mga form na uri ng People.
+Kung ang isang **Stand Alone** na form ay naka-set na gumawa ng person record, ang anumang submission na natugma sa isang umiiral na tao ay lalabas din sa seksyong **Forms** ng pahina ng taong iyon sa People — hindi lang ang mga form na uri ng People.
 :::
 
 ## Mga Susunod na Hakbang

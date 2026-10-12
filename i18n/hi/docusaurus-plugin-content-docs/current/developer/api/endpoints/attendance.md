@@ -65,11 +65,11 @@ GenericCrudController को extend करता है जिसमें CRUD 
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | सभी सेवा समय की सूची। `?serviceId=` द्वारा फ़िल्टर करें। समूह डेटा जोड़ने के लिए `?include=groups` जोड़ें |
+| GET | `/` | JWT | — | सभी सेवा समय की सूची। `?serviceId=` द्वारा फ़िल्टर करें। समूह डेटा जोड़ने के लिए `?include=groups` जोड़ें। प्रत्येक पंक्ति में एक गणना किया गया `checkinOpen` boolean शामिल है (यह केवल तब false होता है जब सेवा समय का एक चेक-इन शेड्यूल हो और उसकी विंडो अभी बंद हो, चर्च के स्थानीय समय में) |
 | GET | `/:id` | JWT | — | ID द्वारा एक सेवा समय प्राप्त करें |
 | GET | `/search?campusId=&serviceId=` | JWT | — | परिसर और सेवा द्वारा सेवा समय की खोज करें |
 | GET | `/public/:churchId` | Public | — | एक चर्च के लिए परिसर → सेवा → समय का पेड़ प्राप्त करें। वेबसाइट बिल्डर के `serviceTimes` element को शक्ति देता है |
-| POST | `/` | JWT | Services.Edit | सेवा समय को बनाएं या अपडेट करें |
+| POST | `/` | JWT | Services.Edit | सेवा समय को बनाएं या अपडेट करें। वैकल्पिक शेड्यूल फ़ील्ड: `dayOfWeek` (0 = रविवार … 6), `startTime` / `endTime` (`HH:mm`), `checkinOpenMinutes` (आरंभ से पहले), `checkinCloseMinutes` (समाप्ति के बाद)। चेक-इन केवल तभी समय-नियंत्रित होता है जब `dayOfWeek` और `startTime` दोनों सेट हों |
 | DELETE | `/:id` | JWT | Services.Edit | एक सेवा समय हटाएं |
 
 ## Group Service Times
@@ -192,6 +192,8 @@ Authorization: Bearer <token>
   }
 ]
 ```
+
+यदि लक्षित सेवा समय का एक चेक-इन शेड्यूल है और उसकी विंडो बंद है, तो कुछ भी सहेजा नहीं जाता और प्रतिक्रिया `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }` होती है। क्षमता और स्वयंसेवक-अनुपात के उल्लंघन भी 409 लौटाते हैं (`error: "capacity"` या `"ratio"`)।
 
 ## दौरे सत्र
 

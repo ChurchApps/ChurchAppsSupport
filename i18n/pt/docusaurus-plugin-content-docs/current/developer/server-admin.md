@@ -20,7 +20,7 @@ Usuários com permissão Server.Admin podem acessar o painel de administração 
 
 1. Faça login em [admin.b1.church](https://admin.b1.church)
 2. Abra o [menu Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu), expanda **Settings** e clique em **Server Admin**. (Você também pode ir direto para `admin.b1.church/admin`.)
-3. O painel Server Admin possui seções para Churches, Users, Impersonate User, Background Jobs, Commons, Usage Trends, Translation Lookups, Server Health e Database Migrations
+3. O painel Server Admin lista suas seções na lateral esquerda em três grupos: **Directory** (Churches, Users, Impersonate User), **Operations** (Background Jobs, Commons, Usage Trends) e **System** (Translation Lookups, Server Health, Database Migrations)
 
 ## Representação de Usuário
 

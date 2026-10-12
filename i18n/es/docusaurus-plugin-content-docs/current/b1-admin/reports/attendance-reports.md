@@ -23,7 +23,7 @@ B1 Admin proporciona tres informes de asistencia para ayudarte a entender cómo 
 
 El informe Attendance Trend muestra cómo cambia la asistencia a lo largo del tiempo para tus servicios.
 
-1. Ve directamente a **admin.b1.church/reports/attendanceTrend** en tu navegador (los informes no tienen entrada en el menú de navegación -- marcar la dirección es la forma más fácil de volver a ella). El mismo informe también está en la pestaña **Attendance Trend** de la página Attendance.
+1. Ve directamente a **admin.b1.church/reports/attendanceTrend** en tu navegador (los informes no tienen entrada en el menú de navegación -- marcar la dirección es la forma más fácil de volver a ella). El mismo informe también está en la página Attendance: haz clic en **All years**, luego elige la pestaña **Attendance Trend**.
 2. Opcionalmente, selecciona un **Campus**, **Service**, **Service Time** o **Group** para filtrar los resultados.
 3. Establece la **Start Date** y **End Date**. De forma predeterminada, el informe cubre el año pasado, desde hace un año hasta hoy, y la fecha de finalización se incluye completamente. Haz clic en **Run Report**.
 4. El informe muestra un gráfico de barras y tabla del total de visitas por semana. Cada semana se etiqueta con la fecha del domingo de esa semana, y la columna **Session Dates** de la tabla enumera las fechas reales en esa semana que tuvieron asistencia (por ejemplo, "9/27, 9/30").
@@ -34,7 +34,7 @@ Este informe es útil para detectar patrones como caídas estacionales, tendenci
 
 El informe Group Attendance muestra quién asistió a cada sesión de grupo en un rango de fechas.
 
-1. Ve directamente a **admin.b1.church/reports/groupAttendance** en tu navegador, o abre la pestaña **Group Attendance** de la página Attendance.
+1. Ve directamente a **admin.b1.church/reports/groupAttendance** en tu navegador, o en la página Attendance haz clic en **All years** y elige la pestaña **Group Attendance**.
 2. Opcionalmente, selecciona un **Campus** y **Service**.
 3. Establece la **Start Date** y **End Date**. De forma predeterminada, el informe cubre desde el último domingo hasta hoy, y la fecha de finalización se incluye completamente.
 4. Haz clic en **Run Report**.

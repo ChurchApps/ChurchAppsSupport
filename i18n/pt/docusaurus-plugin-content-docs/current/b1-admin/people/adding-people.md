@@ -22,8 +22,8 @@ A seção Pessoas é a fundação do B1 Admin — é o banco de dados de membros
 
 1. Navegue até o painel do B1.church Admin.
 2. Abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **People** e clique em **People**.
-3. Clique no botão **Add Person** no canto superior direito.
-4. Preencha o primeiro nome, sobrenome e endereço de email da pessoa, depois clique em **Add**.
+3. Clique no botão **Add Person** no cabeçalho da página. A página rola para baixo até o formulário **Add New Person** abaixo do diretório.
+4. Preencha o **First Name**, o **Last Name** e o **Email** da pessoa, depois clique em **Add**.
 
 A página de perfil da pessoa será aberta, pronta para você adicionar mais detalhes.
 
@@ -42,22 +42,27 @@ Isso apenas verifica duplicatas quando você está criando uma pessoa completame
 
 ## Editando Detalhes
 
-1. Na página de perfil da pessoa, clique no **lápis de edição** ao lado do nome dela.
-2. Preencha informações adicionais como nome do meio, status de afiliação, datas, endereço, números de telefone e (para crianças e alunos) série e escola.
+1. Na página de perfil da pessoa, clique no botão **Edit** abaixo dos dados de contato dela, à esquerda.
+2. No formulário **Personal Details**, preencha informações adicionais como nome do meio, status de afiliação (**Visitor**, **Guest**, **Regular Attendee**, **Member**, **Staff**, **Inactive** ou **Deceased**), datas, endereço, números de telefone e (para crianças e alunos) série e escola.
 3. Clique em **Save** para armazenar as informações pessoais.
 
-O perfil também inclui várias abas para informações relacionadas:
+O lado esquerdo do perfil mostra a foto, o nome, o status de afiliação, os dados de contato, os valores de quaisquer [campos personalizados](../settings/custom-fields.md) e a família da pessoa. Clique na foto para alterá-la. Abaixo do botão **Edit** há algumas ações a mais: **Workflow** (adicionar a pessoa a um [fluxo de trabalho](../serving/workflows.md)), **Merge**, **Export** e **Export Data**.
 
-- **Notes** — Adicionar notas sobre a pessoa (cuidado pastoral, acompanhamentos, etc.)
-- **Groups** — Ver e gerenciar [filiações de grupo](../groups/group-members.md)
-- **Attendance** — Ver histórico individual de visitas dessa pessoa, incluindo campi, serviço, horário de serviço, grupo e uma coluna **Checked In** com a hora do check-in do quiosque (mostrada como um travessão para visitas registradas sem check-in de quiosque). Para tendências em toda a igreja em vez do histórico de uma pessoa, veja [Acompanhando Frequência](../attendance/tracking-attendance.md)
-- **Donations** — Ver [histórico de doações](../donations/recording-donations.md)
+O restante do perfil mostra uma seção de resumo para cada tipo de informação relacionada:
+
+- **Attendance** — Mostra em quais das últimas semanas a pessoa compareceu e suas visitas mais recentes. Clique em **All years** para ver o histórico completo de visitas, incluindo campus, serviço, horário de serviço, grupo e uma coluna **Checked In** com a hora do check-in no quiosque (mostrada como um travessão para visitas registradas sem check-in no quiosque), ou em **Print** para imprimi-lo. Para tendências da igreja como um todo em vez do histórico de uma pessoa, veja [Acompanhando Frequência](../attendance/tracking-attendance.md)
+- **Donations** — Mostra as doações deste ano. Clique em **All years** para ver o [histórico de doações](../donations/recording-donations.md) completo, ou em **Log a gift** para registrar uma nova
+- **Groups** — Lista as [filiações de grupo](../groups/group-members.md) da pessoa
+- **Notes** — Mostra notas recentes sobre a pessoa (cuidado pastoral, acompanhamentos, etc.). Clique em **All notes** para ler e adicionar notas
+- **Forms** — Lista os formulários da pessoa e se cada um foi enviado (veja [Trabalhando com Formulários](#working-with-forms) abaixo)
+
+Ao abrir uma dessas visualizações completas, clique no link **Back to** com o nome da pessoa no topo para voltar ao perfil.
 
 ## Enviando um E-mail para uma Pessoa
 
-Se a pessoa tiver um endereço de email registrado, um botão **Email this person** (ícone de envelope) aparece no cabeçalho do perfil.
+Se a pessoa tiver um endereço de email registrado, um botão **Email** aparece abaixo dos dados de contato dela, à esquerda do perfil.
 
-1. No perfil da pessoa, clique no **ícone de envelope**.
+1. No perfil da pessoa, clique em **Email**.
 2. Um diálogo de **Email** intitulado com o nome da pessoa abre, mostrando **Sending to** com o endereço da pessoa.
 3. Opcionalmente escolha um modelo salvo de **Load Template (optional)**.
 4. Digite um **Subject** e componha a mensagem.
@@ -66,16 +71,16 @@ Se a pessoa tiver um endereço de email registrado, um botão **Email this perso
 Para escrever a mensagem em seu próprio programa de correio, clique em **Open in my email app**.
 
 :::info
-Enviar do B1 usa os mesmos limites de aprovação e diários que email de grupo. Se sua igreja ainda não foi aprovada, o diálogo pede para você solicitar uma revisão — você ainda pode clicar em **Open in my email app** enquanto isso. Veja [Ativando Email de Grupo para Sua Igreja](../groups/group-members.md#turning-on-group-email-for-your-church). Usuários sem permissão para editar membros de grupo vão direto para seu aplicativo de email quando clicam no ícone de envelope.
+Enviar do B1 usa os mesmos limites de aprovação e diários que email de grupo. Se sua igreja ainda não foi aprovada, o diálogo pede para você solicitar uma revisão — você ainda pode clicar em **Open in my email app** enquanto isso. Veja [Ativando Email de Grupo para Sua Igreja](../groups/group-members.md#turning-on-group-email-for-your-church). Usuários sem permissão para editar membros de grupo vão direto para seu aplicativo de email quando clicam em **Email**.
 :::
 
-## Trabalhando com Formulários
+## Trabalhando com Formulários {#working-with-forms}
 
 Você pode preencher formulários personalizados diretamente do perfil de uma pessoa. Estes são formulários definidos pelo usuário que você pode construir seguindo o guia de [Criando Formulários](../forms/creating-forms.md).
 
-1. No perfil da pessoa, clique no dropdown **Forms** para selecionar um formulário.
-2. Clique em **Add Form** para abri-lo.
-3. Preencha os detalhes do formulário e clique em **Save**.
+1. No perfil da pessoa, localize a seção **Forms**. Ela lista cada formulário junto com o indicativo **Submitted** ou **Not submitted**.
+2. Clique no nome de um formulário para abri-lo (ou clique em **All forms** para ver a lista completa).
+3. Clique no **ícone de edição** (lápis) do formulário, preencha os detalhes e clique em **Save**.
 
 Uma vez que um formulário é submetido, clique no **ícone de impressão** ao lado dele para imprimir as respostas preenchidas dessa pessoa.
 
@@ -93,9 +98,9 @@ Se você apenas precisar rastrear uma ou duas informações extras em pessoas �
 
 Famílias permitem que você vincule membros da família juntos. Isso é especialmente útil para [check-in](../attendance/check-in.md), onde um pai pode fazer check-in de todos seus filhos de uma vez.
 
-1. No perfil de uma pessoa, clique no **lápis de edição** ao lado do nome da família.
-2. O editor de família abrirá. Selecione o **household role** para a pessoa atual (ex., Cabeça, Cônjuge, Filho).
-3. Clique em **Add** para adicionar outro membro da família.
-4. Digite o nome da pessoa na caixa de pesquisa e clique em **Search**.
-5. Quando a pessoa aparecer nos resultados de pesquisa, clique em **Select**.
+1. No perfil de uma pessoa, clique em **Edit** ao lado do título **Household** à esquerda.
+2. O editor de família abrirá. Selecione o **household role** para a pessoa atual (ex., Cabeça, Cônjuge, Filho, Outro).
+3. Clique no ícone **Add** para adicionar outro membro da família.
+4. Em **Add Household Member**, digite o nome da pessoa na caixa de pesquisa e pressione **Enter** ou clique no ícone de pesquisa. (Antes de digitar, aparece uma pequena lista de **Pessoas recentes**.)
+5. Quando a pessoa aparecer nos resultados, clique no nome dela ou no ícone de adicionar ao lado dele.
 6. Escolha seu household role e clique em **Save** para completar a configuração de família.

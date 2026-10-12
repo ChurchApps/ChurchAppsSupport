@@ -20,8 +20,8 @@ Sende deinen Unterrichtsinhalt mithilfe eines Digital-Signage-Feeds an einen Lob
 
 ## Bekomme die Feed-URL
 
-1. Navigiere zu **Serving** und öffne das Ministerium, das deinen Plan-Typ enthält.
-2. Klicke auf die Schaltfläche **Digitale Beschilderung** (das RSS-Symbol) auf der Plan-Typ-Seite.
+1. Navigiere zu **Serving**, wähle das Ministerium, das deinen Plan-Typ enthält, und klicke auf den Plan-Typ, um ihn zu öffnen.
+2. Klicke oben auf der Plan-Typ-Seite auf **Digitale Beschilderung** (das TV-Symbol).
 3. Kopiere die im Dialogfeld angezeigte Feed-URL.
 
 :::info

@@ -15,7 +15,9 @@ Every message a church member sees outside the page they're looking at — a bad
 ```
 scheduled anything ──▶ ReminderEngine (definitions → occurrences → scan) ─┐
 chat / requests / workflow / bulk sends ──────────────────────────────────┼─▶ createNotifications()
-                                                                          │    in_app gate → socket → push → email (→ sms slot)
+                                                                          │    in_app gate → socket → push → email
+     (reminder channels include sms) ──▶ ReminderEngine.sendSms() ──▶ sms gate → sendPersonText() via church provider
+provider STOP reply ──▶ POST /messaging/texting/inbound/:churchId/:token ──▶ SmsOptOutHelper.optOut()
 account/legal mail ──▶ TransactionalEmailHelper.sendTransactional()  [allowlisted, lint-enforced]
 ```
 
@@ -62,7 +64,7 @@ Delivery starts at a level (0 by default, or higher for reminders/explicit sends
 | 0 | **in_app / socket** | The `in_app` gate is checked first. If suppressed (muted), the row is persisted with `isNew=false` and delivery stops entirely — no socket ping, no badge, no further escalation. Otherwise the server looks up open socket connections for the person's `alerts` room and pushes a `notification` (or `privateMessage`) frame. For ordinary notifications, a successful socket delivery stops the chain here — the 30-minute timer re-checks unread items and escalates them later. Direct messages never stop at socket: an installed PWA can hold the alerts socket open in the background, which would otherwise suppress the OS-level push. |
 | 1 | **push** | Gated on `allowPush` / category opt-out / quiet hours. Sends to both Expo push tokens and Web Push subscriptions found on the person's `devices` rows, deduplicating by endpoint and pruning stale tokens along the way. |
 | 2 | **email** | Gated on `emailFrequency` and category opt-out. Immediate sends (`emailImmediate`) render right away and write a `deliveryLogs` row; otherwise the notification is left pending for the batch digest, described below. |
-| — | **sms** | Preference plumbing (`allowSms`, per-category channel lists) already accounts for an SMS channel, but no producer sends through it today — it stays reserved for the bulk SMS product, which runs as a separate, siloed flow via `TextingController` / `@churchapps/texting`. The workflow **Send Text** step action (`StepActionHelper.sendText` → `MessagingModuleGateway.sendPersonText`) also bypasses this funnel: it texts the card's person directly through the church's provider, so notification preferences and quiet hours do not apply — only the person's `optedOut` flag is honored. |
+| — | **sms** | Not a level in the escalation ladder. The only gated SMS producer is the reminder engine: when a definition's `channels` include `sms`, `ReminderEngine.sendSms()` texts each recipient **in addition to** the push/email notification (see [Text reminders](#text-reminders)). Bulk texting (`TextingController` / `@churchapps/texting`), the serving overview **Text Volunteers** send (`MatrixTextHelper` → `MessagingModuleGateway.sendPersonText`), and the workflow **Send Text** step action (`StepActionHelper.sendText` → `sendPersonText`) all text directly through the church's provider, so notification preferences and quiet hours do not apply to them — only the person's `optedOut` flag is honored. |
 
 Unread notifications left at socket or push are escalated by the 30-minute timer (`NotificationHelper.escalateDelivery`). Batch email is sent by `NotificationHelper.sendEmailNotifications(frequency)`, driven by each person's `emailFrequency` preference: `individual` runs on the 30-minute timer, `daily` runs at the nightly timer. (`weekly` is a valid preference value but has no dedicated batch run yet.)
 
@@ -83,6 +85,19 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 **Expansion** materializes fire rows for the horizon ahead (a rolling multi-day window). It runs on the nightly timer, and synchronously whenever a definition is saved so a reminder for a last-minute event still fires. Scope definitions fan out via the adapter's `loadScopeEntities`, producing one occurrence set per concrete entity; entity-level occurrences use the key `definitionId:occurrenceISO:offset`, while scoped occurrences namespace by entity id so they never collide. Upserting an occurrence **resurrects** a previously-cancelled row — cancel-then-re-expand is the standard way to re-sync a reminder after the underlying entity changes; rows already `sent`, `failed`, or `processing` are left untouched.
 
 **Dispatch** (`ReminderEngine.scan()`) runs on the 30-minute timer. It claims due occurrences (a lease prevents double-processing), loads recipients through the entity's adapter, filters out anyone already recorded in `reminderSentLog` for that occurrence, and calls `createNotifications` with `deliveryStartLevel: 1` (skip straight to push) plus `emailImmediate`/`emailByPerson` when the definition's channels include email.
+
+### Text reminders
+
+When a definition's `channels` include `sms`, `scan()` calls `ReminderEngine.sendSms()` after the push/email notifications are created, for the same fresh recipients. Texting is opt-in per member:
+
+- Each recipient runs through `PreferenceGateHelper.evaluate(..., "sms", ...)`, so `allowSms` must be on (it defaults off and is set from B1App's **Text messages** switch) and the category's `sms` channel must not be overridden off. `event_reminders`, `serving_schedule`, and `tasks` list `sms` in both `defaultChannels` and `allowedChannels`.
+- People with no `mobilePhone` or with `optedOut` set are suppressed. If the church has no texting provider the rest of the batch is suppressed with reason `no_provider`.
+- The body is built by `ReminderEngine.smsBody()`: `"<Church name>: <message> Reply STOP to opt out."`, trimmed to one 160-character segment.
+- Each recipient gets its own `reminderSentLog` row with `channel: "sms"` and status `sent` / `suppressed` / `failed`, keyed separately from the push/email row, so a failed text never re-sends the push or email.
+
+Editors only offer **Text** when `GET /messaging/texting/status` returns `{ enabled: true }` (the church's first texting provider is enabled).
+
+**STOP opt-out.** `POST /messaging/texting/inbound/:churchId/:token` is an anonymous webhook the church pastes into its provider (B1Admin shows the URL from `GET /messaging/texting/inboundUrl` in texting settings). The token is an HMAC of the church id (`SmsOptOutHelper.token`). `SmsOptOutHelper.parse` accepts Twilio-style form fields and Clearstream/TextInChurch-style JSON; if the reply is exactly a carrier stop word (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`), every non-removed person in the church whose mobile number matches gets `people.optedOut = true` and `allowSms = false`. Other replies are acknowledged and ignored.
 
 An internal event bus reacts to entity mutations without waiting for the nightly expansion: content events (via the webhook dispatcher) and plan/task update events trigger immediate re-expansion or cancellation for the affected entity, and a plan update also re-expands any scope definitions tied to its plan type.
 
@@ -120,14 +135,14 @@ Shadow rows are invisible to the notifications bell: they're excluded from the u
 Every send passes through `PreferenceGateHelper.evaluate()`, a pure function (all state passed in, no DB calls on the hot path) that returns `allow`, `suppress`, or `defer`. The layers run in order, and the first one that decides wins:
 
 1. **Locked category** — some categories are mandatory (tier 0) and bypass every other layer.
-2. **Master mute / channel kill** — `masterMute`, `allowPush`, `allowSms`, or `emailFrequency='never'` suppress outright.
+2. **Master mute / channel kill** — `masterMute`, `allowPush`, `allowSms` (off by default — members opt in), or `emailFrequency='never'` suppress outright.
 3. **Quiet hours** — push and SMS only (email is considered non-intrusive). If the current wall-clock time in the person's timezone falls in their quiet window, a transactional category still gets through; a non-transactional one is deferred to the end of the quiet window, computed as a DST-correct UTC instant via `TimezoneHelper.wallClockToUtc`.
 4. **Per-category preference override** — an explicit opt-out for one category × channel pair; absence means the category's default.
 5. **Per-entity mute** — a mute recorded against a specific entity (e.g. one event, one plan) restricts further than the category-level setting, but only applies when the caller supplies an entity id/type alongside the notification.
 
 Tables involved: `notificationPreferences` (global — `masterMute`, `emailFrequency` of `individual|daily|weekly|never`, `allowPush`, quiet-hours window + timezone, `allowSms`), `notificationPreferenceOverrides` (per category × channel), and `notificationEntityMutes` (per entity).
 
-This gate is enforced for in-app (level 0), push (level 1), and email (level 2) inside the funnel — including immediate reminder/digest emails. Transactional email (auth codes, password resets, invites, donation receipts) bypasses it by design; that's the whole point of the second door.
+This gate is enforced for in-app (level 0), push (level 1), and email (level 2) inside the funnel — including immediate reminder/digest emails — and for reminder texts in `ReminderEngine.sendSms()`. Transactional email (auth codes, password resets, invites, donation receipts) bypasses it by design; that's the whole point of the second door.
 
 ## Church-authored email limits
 
@@ -158,9 +173,10 @@ Locally, the same logic can be triggered on demand with `npm run timer:30min` an
 | Transactional door | `Api/src/shared/helpers/TransactionalEmailHelper.ts`, lint rule `Api/tools/eslint-rules/email-door.cjs` |
 | Church email limits | `Api/src/shared/helpers/ChurchEmailLimiter.ts`, `Api/src/lambda/ses-feedback-handler.ts`, `Api/src/modules/messaging/repositories/DeliveryLogRepo.ts` |
 | Reminder engine | `Api/src/modules/messaging/helpers/ReminderEngine.ts`, `ReminderBootstrap.ts`, `helpers/adapters/*`, `controllers/ReminderController.ts` |
+| Texting / STOP opt-out | `Api/src/modules/messaging/helpers/SmsOptOutHelper.ts`, `controllers/TextingController.ts` (`/status`, `/inboundUrl`, `/inbound/:churchId/:token`), `Api/src/modules/doing/helpers/MatrixTextHelper.ts` (serving overview **Text Volunteers**) |
 | Reminder repositories | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`, `ReminderOccurrenceRepo.ts`, `ReminderSentLogRepo.ts` |
 | Serving/plan email | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`, `ReminderTokenHelper.ts`, `Api/src/shared/modules/DoingModuleGateway.ts` |
-| Reminder editors (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx` |
+| Reminder editors (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx`, `hooks/useTextingEnabled.ts` |
 | Reminder editor / preferences (B1App) | `EventReminderEdit.tsx`, `NotificationPrefsPage.tsx`, `useRealtimeNotifications.ts` |
 
 ## Related Pages

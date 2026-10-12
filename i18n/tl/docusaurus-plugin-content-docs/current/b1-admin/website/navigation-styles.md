@@ -32,62 +32,63 @@ Maaari mong i-customize nang hiwalay ang mga kulay para sa bawat mode.
 
 1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas) at i-expand ang **Website**
 2. I-click ang **Appearance**
-3. Mag-scroll sa seksyong **Navigation Styles**
-4. I-click ang **Edit Navigation Styles**
+3. Sa listahan ng **Style Settings**, i-click ang **Navigation**
+
+Ang **Navigation Styling** editor ay may dalawang card: **Header (solid)** at **Header over hero (transparent)**.
 
 ## Pag-configure ng Solid Navigation
 
-Lumalabas ang solid navigation na may background color sa likod ng navigation bar. Maaari mong i-customize ang:
+Lumalabas ang solid navigation na may background color sa likod ng navigation bar. Ang mga setting na ito ay nasa **Header (solid)** card. Maaari mong i-customize ang:
 
 ### Background Color
 
-1. I-toggle ang **Override** switch para sa **Background Color**
+1. I-toggle ang **Override** switch para sa **Background color**
 2. I-click ang color picker
 3. Piliin ang gusto mong background color
 4. Ang default ay puti (#FFFFFF)
 
 ### Link Color
 
-1. I-toggle ang **Override** switch para sa **Link Color**
+1. I-toggle ang **Override** switch para sa **Link color**
 2. Piliin ang kulay para sa text ng mga navigation link
 3. Nakakaapekto ito sa mga link sa kanilang default na estado
 4. Ang default ay dark gray (#555555)
 
 ### Link Hover Color
 
-1. I-toggle ang **Override** switch para sa **Link Hover Color**
+1. I-toggle ang **Override** switch para sa **Link hover color**
 2. Piliin ang kulay na lilipatan ng mga link kapag itinapat ng mga user ang cursor sa mga ito
 3. Nagbibigay ito ng visual na tugon para sa mga link na maaaring i-click
 4. Ang default ay light blue (#03A9F4)
 
 ### Active Color
 
-1. I-toggle ang **Override** switch para sa **Active Color**
+1. I-toggle ang **Override** switch para sa **Active link color**
 2. Piliin ang kulay para sa link ng kasalukuyang aktibong pahina
 3. Tinutulungan nito ang mga user na malaman kung nasaang pahina sila
 4. Ang default ay light blue (#03A9F4)
 
 ## Pag-configure ng Transparent Navigation
 
-Nakapatong ang transparent navigation sa nilalaman ng iyong pahina nang walang background. Maaari mong i-customize ang:
+Nakapatong ang transparent navigation sa nilalaman ng iyong pahina nang walang background. Ang mga setting na ito ay nasa **Header over hero (transparent)** card. Maaari mong i-customize ang:
 
 ### Link Color
 
-1. I-toggle ang **Override** switch para sa **Link Color**
+1. I-toggle ang **Override** switch para sa **Link color**
 2. Pumili ng kulay na malinaw ang contrast sa background ng iyong pahina
 3. Kadalasan, puti o mapusyaw na mga kulay ang pinakamainam sa ibabaw ng madilim na background
 4. Ang default ay dark gray (#555555)
 
 ### Link Hover Color
 
-1. I-toggle ang **Override** switch para sa **Link Hover Color**
+1. I-toggle ang **Override** switch para sa **Link hover color**
 2. Piliin ang kulay para sa hover state
 3. Tiyaking nakikita ito laban sa background ng iyong pahina
 4. Ang default ay light blue (#03A9F4)
 
 ### Active Color
 
-1. I-toggle ang **Override** switch para sa **Active Color**
+1. I-toggle ang **Override** switch para sa **Active link color**
 2. Piliin ang kulay ng indicator ng aktibong pahina
 3. Dapat itong angat pero bagay pa rin sa iyong disenyo
 4. Ang default ay light blue (#03A9F4)
@@ -98,7 +99,7 @@ Walang setting ng background color ang transparent navigation dahil direkta iton
 
 ## Pag-save ng Iyong mga Pagbabago
 
-1. Pagkatapos i-configure ang iyong mga kulay, i-click ang **Save Navigation Styles**
+1. Pagkatapos i-configure ang iyong mga kulay, i-click ang **Save Navigation**
 2. Agad na umiiral ang iyong mga pagbabago sa iyong live na website
 3. Bisitahin ang iyong website para makita ang navigation sa parehong mode
 
@@ -107,7 +108,7 @@ Walang setting ng background color ang transparent navigation dahil direkta iton
 Kung gusto mong bumalik sa mga default na kulay:
 
 1. I-toggle off ang mga **Override** switch para sa anumang custom na kulay
-2. I-click ang **Save Navigation Styles**
+2. I-click ang **Save Navigation**
 3. Babalik ang navigation sa default na color scheme
 
 O i-click ang **Cancel** para itapon ang lahat ng pagbabago nang hindi sine-save.

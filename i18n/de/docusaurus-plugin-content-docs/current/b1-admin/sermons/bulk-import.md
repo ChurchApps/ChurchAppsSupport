@@ -22,10 +22,10 @@ Auf der Seite „Massenimport" können Sie schnell Ihre Predigtbibliothek mit Vi
 ## Wählen Sie Ihre Quelle
 
 1. In B1 Admin öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern **Predigten** und klicken auf **Predigten**. Klicken Sie auf **Predigt hinzufügen** und wählen Sie **Massenimport** aus dem Menü.
-2. Sie werden zwei anklickbare Karten sehen:
-   - **YouTube** (rot) -- Videos von einem YouTube-Kanal importieren
-   - **Vimeo** (blau) -- Videos von einem Vimeo-Konto importieren
-3. Klicken Sie auf die Karte für die Plattform, auf der Ihre Predigten gehostet werden.
+2. Unter **Importquelle wählen** sehen Sie zwei Optionen:
+   - **YouTube** -- Videos von einem YouTube-Kanal importieren
+   - **Vimeo** -- Videos von einem Vimeo-Konto importieren
+3. Klicken Sie auf die Option für die Plattform, auf der Ihre Predigten gehostet werden (oder klicken Sie unten in der Beschreibung auf **Von YouTube importieren** bzw. **Von Vimeo importieren**). Klicken Sie oben auf der Seite auf **Zurück**, um zur Auswahl der Quelle zurückzukehren.
 
 :::tip
 Sie können jederzeit zurückgehen und Quellen wechseln, wenn Sie Videos auf beiden Plattformen haben.

@@ -24,7 +24,7 @@ title: "Listas de Cumpleaños y Aniversarios"
 2. Bajo la caja de búsqueda, haz clic en **Advanced**.
 3. Expande la sección **Demographics** y marca **Birth Month**, luego elige el mes.
 4. Ejecuta la búsqueda -- todos los que tengan un cumpleaños ese mes aparecerán en los resultados.
-5. Para ver las fechas, haz clic en el **icono de columnas** en la parte superior derecha de los resultados y activa la columna **Birthday**. Usa **Export** para descargar la lista como una hoja de cálculo si prefieres ordenarla o imprimirla allí.
+5. Para ver las fechas, cambia **View as** a **Table**, luego haz clic en el icono **Select columns** en el encabezado de la página y activa la columna **Birthday**. Usa **Export** para descargar la lista como una hoja de cálculo si prefieres ordenarla o imprimirla allí.
 
 ## Obtener una Lista de Aniversarios
 

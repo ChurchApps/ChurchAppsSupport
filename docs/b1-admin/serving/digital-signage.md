@@ -20,8 +20,8 @@ Send your lesson content to a lobby or hallway TV using a digital signage feed. 
 
 ## Getting the Feed URL
 
-1. Navigate to **Serving** and open the ministry containing your plan type.
-2. Click the **Digital Signage** button (the RSS icon) on the plan type page.
+1. Go to **Serving**, select the ministry containing your plan type, and click the plan type to open it.
+2. Click **Digital Signage** (the TV icon) at the top of the plan type page.
 3. Copy the feed URL shown in the dialog.
 
 :::info

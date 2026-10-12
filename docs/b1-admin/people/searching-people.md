@@ -6,7 +6,7 @@ title: "Searching People"
 
 <div class="article-intro">
 
-The **People** page displays your church directory in a searchable, sortable table. You can quickly find anyone in your congregation, customize which information is shown, and export your results. Efficient searching is essential for day-to-day church administration tasks like following up with visitors, preparing contact lists, and managing member records.
+The **People** page displays your church directory as a searchable list of households, or as a sortable table of individual people. You can quickly find anyone in your congregation, customize which information is shown, and export your results. Efficient searching is essential for day-to-day church administration tasks like following up with visitors, preparing contact lists, and managing member records.
 
 </div>
 
@@ -18,14 +18,24 @@ The **People** page displays your church directory in a searchable, sortable tab
 
 </div>
 
+## Households and Table Views
+
+The People page lists your directory by **household**, grouped alphabetically. Each row shows the household's photos, its name (for example, "The Smith Family"), and the names of everyone in it. Click a household to open the head of household's profile, or click any member's name to open that person. A count above the list shows how many households and people are showing.
+
+Use the **View as** toggle above the list to switch between **Households** and **Table**. The **Table** view lists one person per row and is where you can sort and choose columns (see below). B1 remembers your choice on that device.
+
+By default the page loads the first part of your directory. If you have more people, click **Show All Members** below the list to load everyone.
+
 ## Quick Search
 
-The search bar at the top of the People page lets you find members in real time:
+The **Find a household or person** box at the top of the People page lets you find members in real time:
 
 1. Click the **search box** at the top of the People page.
-2. Start typing a name, email, or other keyword.
+2. Start typing a name.
 3. Results will filter automatically as you type (there is a brief delay of about half a second so the search does not fire on every keystroke).
-4. The table below updates to show only the matching results.
+4. The list below updates to show only the matching results.
+
+Click **Clear** (below the search box) to reset the search and show your whole directory again.
 
 :::tip
 You do not need to press Enter. The search runs automatically after you stop typing.
@@ -33,7 +43,7 @@ You do not need to press Enter. The search runs automatically after you stop typ
 
 ## Sorting Results
 
-You can sort the directory by clicking any column header in the table:
+In the **Table** view, you can sort the directory by clicking any column header:
 
 1. Click a **column header** (for example, **Name** or **Email**) to sort by that column.
 2. Click the same header again to reverse the sort order.
@@ -44,7 +54,7 @@ This makes it easy to find people alphabetically, by age, or by any other visibl
 
 Not every piece of information needs to be visible at once. You can choose which columns appear in the table:
 
-1. Look for the **column selector dropdown** near the top of the table.
+1. Click the **Select columns** icon in the People page header. (Columns apply to the **Table** view.)
 2. Check or uncheck columns to show or hide them. Available columns include:
    - **Photo**
    - **Name**
@@ -62,26 +72,14 @@ Not every piece of information needs to be visible at once. You can choose which
 
 The column chooser has two tabs: **Standard** holds the built-in columns listed above, and **Custom** holds your church's [Custom Fields](../settings/custom-fields.md) along with the questions from any People forms. Check a custom field on the **Custom** tab to add it as a column, and each person's value for that field appears in the table. Values are shown the same way as on the person's profile -- Yes/No fields read *Yes* or *No*, Multiple Choice fields show the option's label, and dates are shown as short dates. People with no value for the field show a blank cell.
 
-:::info
-Your column choices affect what is included when you export to CSV. Customize columns before exporting to get exactly the data you need.
-:::
-
-## Pagination
-
-When your directory has many records, results are split across pages. Use the **pagination controls** at the bottom of the table to move between pages. The current page and total record count are displayed so you always know where you are in the list.
-
-:::tip
-If you want to see more results at once, refine your search to narrow down the list rather than paging through a large directory.
-:::
 
 ## Exporting Search Results
 
 You can download your current search results as a CSV file at any time:
 
 1. Apply any search or filters you want.
-2. Customize your columns to include the data you need.
-3. Click the **Export** button.
-4. A CSV file will download to your computer, ready to open in Excel, Google Sheets, or any spreadsheet application.
+2. Click the **Export** button in the People page header.
+3. A CSV file will download to your computer, ready to open in Excel, Google Sheets, or any spreadsheet application.
 
 For more details on exporting, see [Exporting Data](./exporting-data.md).
 
@@ -91,10 +89,10 @@ For more advanced queries -- like finding everyone who hasn't attended in the la
 
 ## Advanced Search
 
-Advanced Search lets you build precise filters by combining conditions. Open it from the People page, then expand a category and check the fields you want to filter on, choosing an operator and value for each. Categories include **Names**, **Demographics**, **Contact**, **Membership**, **Activity** (donations and attendance), and **Custom Fields**.
+Advanced Search lets you build precise filters by combining conditions. Open it by clicking **Advanced** below the search box on the People page, then expand a category and check the fields you want to filter on, choosing an operator and value for each. Categories include **Names**, **Demographics**, **Contact**, **Membership**, **Activity** (donations and attendance), and **Custom Fields**.
 
 The **Custom Fields** category lists your church's [Custom Fields](../settings/custom-fields.md) — the fields you define in Settings to track your own information (such as a background-check expiration date). The operators offered match each field's type: text fields support *contains / equals / starts with / ends with*, number fields support the comparison operators, date fields support *equals / after / before*, and Yes/No and Multiple Choice fields let you pick a value. Any field you can filter on here can be saved as a live [List](./lists.md).
 
 ## Saving Searches as Lists
 
-After running a search, a **Save as List** button (bookmark icon) appears in the People page header. Click it to store your current query under a name and optional category, so you can reload it instantly in future sessions. See [Saved Lists](./lists.md) for full details.
+After running a search, a **Save as List** button appears in the People page header. Click it to store your current query under a name and optional category, so you can reload it instantly in future sessions. See [Saved Lists](./lists.md) for full details.

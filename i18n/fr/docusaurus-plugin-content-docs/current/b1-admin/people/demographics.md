@@ -20,7 +20,7 @@ Le tableau de bord **Démographie** vous donne un aperçu visuel de votre congr�
 
 ## Ouverture de Démographie
 
-À partir de la page **Personnes**, cliquez sur le bouton **Démographie** dans l'en-tête de la page (l'icône du graphique en barres). La page affiche votre comptage total de personnes en haut, suivi par les graphiques décrits ci-dessous.
+À partir de la page **Personnes**, cliquez sur **Démographie** dans l'en-tête de la page. La page affiche votre comptage total de personnes en haut, suivi par les graphiques décrits ci-dessous.
 
 ## Graphiques
 

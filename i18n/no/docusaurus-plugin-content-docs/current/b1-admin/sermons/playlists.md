@@ -26,7 +26,7 @@ Med spillelister kan du organisere prekenene dine i serier eller samlinger. Når
 
 ## Opprette en spilleliste
 
-1. Klikk på knappen **Opprett første spilleliste** (hvis du ikke har noen spillelister ennå), eller klikk på **Legg til** (+) i overskriften på panelet **Spillelister**.
+1. Klikk på knappen **Opprett første spilleliste** (hvis du ikke har noen spillelister ennå), eller klikk på knappen **Legg til spilleliste** i panelet **Spillelister**.
 2. Skriv inn et **navn** på spillelisten -- for eksempel tittelen på prekenserien, som «Troens grunnvoll» eller «Sommer i Salmene».
 3. Legg til en **beskrivelse** som gir besøkende en kort oversikt over serien.
 4. Angi en **publiseringsdato** for å styre når spillelisten blir synlig.

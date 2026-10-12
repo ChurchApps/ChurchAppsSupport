@@ -20,9 +20,9 @@ B1 Admin oferece várias maneiras de visualizar e analisar os dados de doações
 
 ## Painel de Doações
 
-O painel de doações é a aba **Painel** da página **Resumo**, a primeira página que você vê quando abre a seção **Doações**.
+O painel de doações é a visualização **Painel** da página **Resumo**, a primeira página que você vê quando abre a seção **Doações**.
 
-1. Abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo de B1 Admin), expanda **Doações** e clique em **Resumo**. A página **Resumo** abre na aba **Painel**.
+1. Abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo de B1 Admin), expanda **Doações** e clique em **Resumo**. A página **Resumo** abre na visualização **Painel**. O botão **Visualização** no canto superior direito alterna entre **Painel** e **Doadores Inativos**.
 2. Use o toggle **Semanal**, **Mensal** e **Trimestral** acima do relatório para escolher como as doações são agrupadas.
 3. No painel **Filtrar Relatório**, defina a **Data de Início** e **Data de Término** (por padrão, o ano passado até ontem) e opcionalmente escolha um **Fundo**, depois clique em **Executar Relatório**. O relatório é executado automaticamente com os padrões quando a página abre.
 4. Quatro **cards KPI** exibem suas métricas de doações para o intervalo selecionado:
@@ -41,7 +41,7 @@ O painel mostra dados de doações agregadas. Não inclui nomes individuais de d
 
 ## Doadores Inativos
 
-A aba **Doadores Inativos** ao lado da aba **Painel** lista pessoas que doaram durante um período mas não desde então. Por padrão, compara o ano calendário passado com este ano até a data; altere qualquer intervalo de data para ampliar ou estreitar a pesquisa. Cada linha mostra a pessoa, a data de seu último presente e seu total para o período anterior, e **Opções de Download > Resumo** baixa a lista como um CSV para uma correspondência de acompanhamento ou lista de chamadas.
+Escolha **Doadores Inativos** no botão **Visualização** para listar pessoas que doaram durante um período mas não desde então. Por padrão, compara o ano calendário passado com este ano até a data; altere qualquer intervalo de data para ampliar ou estreitar a pesquisa. Cada linha mostra a pessoa, a data de seu último presente e seu total para o período anterior, e **Opções de Download > Resumo** baixa a lista como um CSV para uma correspondência de acompanhamento ou lista de chamadas.
 
 ## Visualizando Detalhes em Nível de Doador
 
@@ -49,17 +49,16 @@ Para uma divisão de quem doou, quanto e para qual fundo:
 
 1. Navegue para **Doações > Lotes**.
 2. Clique em um **nome de lote** para abri-lo.
-3. A página de detalhes do lote lista cada doação com o nome do doador, valor, fundo, data e método de pagamento.
-4. Clique em um **nome de doador** para ver uma divisão de quantas vezes eles doaram e quanto cada vez.
-5. Clique em um **ID de doação** para abrir um painel lateral com os detalhes completos para essa doação individual.
-6. Clique em **Baixar** para exportar um CSV com todas as informações de doador e doação para esse lote.
+3. A página de detalhes do lote lista cada doação com seu método (e número do cheque ou últimos dígitos do cartão), o nome do doador, data, notas e valor, com um total na parte inferior.
+4. Clique em **Editar** na linha de uma doação para abrir os detalhes completos dessa doação individual, incluindo seu fundo.
+5. Clique em **Exportar** acima da lista para baixar um CSV com todas as informações de doador e doação desse lote.
 
 ## Relatório de Resumo de Doações
 
 Os relatórios de doações são construídos diretamente na seção de Doações -- a página Resumo serve como seu relatório de resumo de doações:
 
 1. No menu Jump, escolha **Doações > Resumo**.
-2. Na aba **Painel**, defina a **Data de Início** e **Data de Término** no painel **Filtrar Relatório** e clique em **Executar Relatório**.
+2. Na visualização **Painel**, defina a **Data de Início** e **Data de Término** no painel **Filtrar Relatório** e clique em **Executar Relatório**.
 3. Clique em **Opções de Download** e escolha **Resumo** para exportar o relatório como um arquivo CSV.
 
 ## Exportando Dados

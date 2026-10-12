@@ -6,7 +6,7 @@ title: "Rastreando Presença"
 
 <div class="article-intro">
 
-Uma vez que seus campi, horários de serviço e grupos estão configurados, o B1 Admin facilita revisar dados de presença e perceber tendências. A página Presença fornece duas visualizações de relatório -- a aba **Tendência de Presença** para tendências de toda a igreja e a aba **Presença do Grupo** para detalhe no nível de grupo. Use essas ferramentas para entender padrões de crescimento, identificar engajamento em declínio, e fazer decisões baseadas em dados para sua igreja.
+Uma vez que seus campi, horários de serviço e grupos estão configurados, o B1 Admin facilita revisar dados de presença e perceber tendências. A página Presença abre com um resumo da presença desta semana, e seus relatórios **Todos os anos** fornecem duas visualizações principais -- a aba **Tendência de Presença** para tendências de toda a igreja e a aba **Presença do Grupo** para detalhe no nível de grupo. Use essas ferramentas para entender padrões de crescimento, identificar engajamento em declínio, e fazer decisões baseadas em dados para sua igreja.
 
 </div>
 
@@ -21,8 +21,12 @@ Uma vez que seus campi, horários de serviço e grupos estão configurados, o B1
 ## Visualizando Tendências de Presença
 
 1. Abra **B1 Admin**, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Pessoas**, e clique em **Presença**.
-2. Clique na aba **Tendência de Presença**.
+2. Clique em **Todos os anos** na coluna da esquerda. A aba **Tendência de Presença** é selecionada por padrão.
 3. O relatório é executado automaticamente quando a aba abre, mostrando presença total para cada semana.
+
+:::tip
+Para uma visão rápida da semana atual, a página principal de Presença mostra quantas pessoas estão na sala esta semana, uma divisão por sala (grupo), quaisquer visitantes e um gráfico de barras de 13 semanas dos check-ins -- sem necessidade de relatório.
+:::
 
 ## Filtrando Seus Dados
 
@@ -44,7 +48,7 @@ Relatórios executam automaticamente cada vez que você abre a aba Tendência de
 
 A aba **Presença do Grupo** mostra quem compareceu a cada sessão de grupo. Isso é útil quando você quer monitorar uma classe específica, equipe de ministério, ou pequeno grupo em vez de olhar números de serviço geral.
 
-1. Selecione a aba **Presença do Grupo**.
+1. Nos relatórios **Todos os anos**, selecione a aba **Presença do Grupo**.
 2. Opcionalmente escolha um **Campus** e **Serviço**.
 3. Defina a **Data de Início** e **Data de Fim**. Por padrão o relatório cobre domingo passado até hoje.
 4. Clique em **Executar Relatório**.

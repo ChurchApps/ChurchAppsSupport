@@ -22,8 +22,8 @@ A página de Sermões exibe toda a sua biblioteca de sermões. A partir daqui vo
 ## Visualizando sua biblioteca de sermões
 
 1. Em B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Sermões** e clique em **Sermões**.
-2. A página de Sermões mostra todas as suas entradas de sermões, organizadas por playlist. Cada sermão exibe sua miniatura, título e data.
-3. Clique em qualquer sermão para visualizar ou editar seus detalhes.
+2. A página de Sermões mostra suas entradas de sermões em uma tabela com a **Lista de Reprodução**, o título e a **Data de Publicação** de cada sermão. Use a caixa de pesquisa acima da tabela para filtrar a lista. Suas listas de reprodução aparecem em um painel **Listas de Reprodução** ao lado da tabela.
+3. Clique em **Editar** na linha de qualquer sermão para visualizar ou editar seus detalhes.
 
 ## Adicionando um Sermão
 
@@ -40,7 +40,7 @@ Você também pode adicionar uma URL de transmissão ao vivo permanente selecion
 
 ## Editando um Sermão
 
-1. Clique em qualquer sermão em sua biblioteca para abrir seus detalhes.
+1. Clique em **Editar** na linha de qualquer sermão em sua biblioteca para abrir seus detalhes.
 2. Atualize o título, palestrante, data, descrição, miniatura ou links de mídia conforme necessário.
 3. Clique em **Salvar** para aplicar suas alterações.
 

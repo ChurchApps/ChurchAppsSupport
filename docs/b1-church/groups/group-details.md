@@ -49,6 +49,8 @@ The available tabs are:
 If you are a leader of the group, you have additional editing capabilities:
 
 - **Create and edit events** -- Add events to the group calendar from the **Events** tab. When creating an event, you can reserve rooms and resources alongside it — select from available rooms and resources, set optional setup and teardown times, and the booking request is automatically submitted for approval.
+- **Edit repeating events** -- When you open a repeating event to edit it, B1 first asks which dates to change: **Just this date**, **This and all following dates**, or **All dates**. Choose one and click **Save** to open the event. If you chose **Just this date**, the **Recurring** switch is hidden and your changes (or a delete) apply only to that one date.
+- **Set event reminders** -- When editing an existing event, turn on **Send reminders** to remind people before it starts. Pick when they go out, the **Time of Day**, **Who should be reminded?**, and an optional **Message**, then choose **Push**, **Email**, or, if your church has texting set up, **Text** under **Send By**. Texts only go to people who turned on text reminders in their [Notification Preferences](../getting-started/notification-preferences.md).
 - **Manage resources** -- Upload files (up to 100 MB of storage), add links, or delete existing resources.
 - **Track attendance** -- Record attendance for group sessions from the **Attendance** tab.
 

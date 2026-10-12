@@ -31,6 +31,7 @@ C'est tout ce qu'il faut. L'assistance de votre famille a été enregistrée.
 Si votre église a configuré des [limites de sécurité](../../b1-admin/attendance/checkin-safety) sur ses salles, le serveur les vérifie avant l'enregistrement:
 
 - Si une salle sélectionnée est **pleine ou fermée**, l'enregistrement ne se fait pas et l'application nomme la salle pour que vous puissiez en choisir une autre.
+- Si l'heure du service dispose d'un [calendrier d'enregistrement](../../b1-admin/attendance/setup#setting-a-check-in-schedule) et que sa fenêtre d'enregistrement n'est pas ouverte en ce moment, l'enregistrement dans les salles de cette heure de service est également refusé. L'écran **Impossible de s'enregistrer pour le moment** indique la salle comme « salle pleine ou fermée » ; appuyez sur **Change Rooms** pour choisir une autre heure de service ou un autre groupe.
 - Si une salle pour enfants est **à court de bénévoles** pour son ratio, l'application affiche soit un avertissement qu'un membre du personnel peut confirmer pour continuer, soit bloque complètement l'enregistrement -- selon la façon dont votre église a configuré l'application des ratios.
 
 ## Impression d'étiquettes

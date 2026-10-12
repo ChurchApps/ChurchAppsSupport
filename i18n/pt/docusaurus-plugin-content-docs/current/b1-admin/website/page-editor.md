@@ -22,7 +22,7 @@ O editor de página B1 é um construtor visual de arrastar-soltar que permite qu
 ## Abrindo o Editor
 
 1. No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Website**, e clique em **Pages**.
-2. Encontre a página que deseja editar na tabela Pages e clique em **Edit**.
+2. Encontre a página que deseja editar na tabela Pages e clique em **Edit Content**.
 
 O editor abre em modo de tela inteira. O painel esquerdo mostra sua estrutura de página e elementos de conteúdo disponíveis; a área central mostra uma visualização ao vivo de sua página.
 
@@ -79,9 +79,18 @@ Já construiu uma seção mas quer uma estrutura diferente? Use o alternador de 
    - **Live Stream** -- Seu player de transmissão ao vivo, incorporado diretamente na página
    - **Podcast** -- Uma lista de episódios puxados de uma URL de feed RSS de podcast externo que você fornece, com configurações para quantos episódios mostrar e se exibir datas e descrições. Isto é para apresentar qualquer feed de podcast no seu site; para publicar seus próprios sermões como um podcast, consulte [Managing Sermons](../sermons/managing-sermons.md#your-podcast-feed) em seu lugar.
    - **Donation** -- Um botão de doação ou formulário de doação incorporado
-   - **Raw HTML** -- Marcação HTML personalizada para casos de uso avançados
+   - **HTML** -- Seu próprio HTML bruto, para casos de uso avançados, como incorporar um widget de terceiros (consulte [Usando o elemento HTML](#using-the-html-element))
    - **iFrame** -- Incorpore conteúdo externo por URL
 3. Configure o elemento usando o painel de configurações que aparece.
+
+### Usando o elemento HTML {#using-the-html-element}
+
+O elemento **HTML** tem duas caixas:
+
+- **HTML Content** -- A marcação a exibir na página. Quaisquer tags `<script>` que você incluir aqui são executadas no seu site ao vivo.
+- **JavaScript (exclude script tag)** -- Código de script que roda quando a página carrega. Você também pode colar aqui o snippet de incorporação de um fornecedor com suas tags `<script>` incluídas, e ele será executado no site ao vivo.
+
+Se você colar apenas um endereço web (como um link de imagem) na caixa JavaScript, a caixa fica vermelha com o aviso *"This is a web address, not JavaScript."* Um endereço sozinho nessa caixa não faz nada. Para mostrar uma imagem, use um elemento **Image** ou coloque `<img src="...">` em **HTML Content**.
 
 ### Reordenando Conteúdo
 
@@ -117,7 +126,7 @@ Use os controles de visualização na barra de ferramentas para verificar como s
 - **Desktop** -- Visualização de navegador em largura completa
 - **Mobile** -- Visualização de tamanho de telefone estreito
 
-Clique em **Preview** para abrir uma versão ao vivo da página em uma nova aba de navegador, exatamente como visitantes a verão.
+Para ver a página ao vivo exatamente como os visitantes a veem, volte à lista de Pages e clique no caminho da página. Ela abre em uma nova aba do navegador.
 
 ## Verificando Acessibilidade
 
@@ -128,9 +137,9 @@ Clique no ícone **Accessibility** na barra de ferramentas para executar uma ver
 O editor rastreia seu histórico de edição automaticamente. Use os botões da barra de ferramentas ou atalhos de teclado para navegar:
 
 - **Undo** (Ctrl+Z / Cmd+Z) -- Reverta sua última ação
-- **Redo** (Ctrl+Y / Cmd+Y) -- Reaplicar uma ação desfeita
+- **Redo** (Ctrl+Shift+Z ou Ctrl+Y / Cmd+Shift+Z) -- Reaplicar uma ação desfeita
 
-Você também pode restaurar a página para um snapshot anterior. Clique em **History** na barra de ferramentas para ver uma lista de snapshots salvos com descrições, e clique em qualquer entrada para restaurar para aquele ponto.
+Você também pode restaurar a página para um snapshot anterior. Clique em **View history** na barra de ferramentas para ver uma lista de snapshots salvos com descrições, e clique em qualquer entrada para restaurar para aquele ponto.
 
 :::warning
 Restaurar um snapshot substitui seu conteúdo de página atual pela versão de snapshot. Isso não pode ser desfeito com o botão desfazer padrão. Salve um snapshot de seu estado atual antes de restaurar um antigo se quiser manter a opção de retornar.
@@ -144,15 +153,16 @@ As mudanças são salvas automaticamente conforme você trabalha. Um indicador d
 
 Páginas podem ter um estado **published**, que controla quando visitantes veem suas mudanças. A barra de ferramentas exibe um chip de status mostrando o estado atual:
 
-- **Live on Save** -- A página não usa um fluxo de trabalho de publicação. Cada mudança salva entra ao vivo imediatamente. Este é o padrão para novas páginas.
-- **Unpublished Changes** -- A página foi publicada antes, mas você fez mudanças desde a última publicação. Visitantes ainda veem a versão anteriormente publicada.
+- **Live on save** -- A página não usa um fluxo de trabalho de publicação. Cada mudança salva entra ao vivo imediatamente. Este é o padrão para novas páginas.
+- **Unpublished changes** -- A página foi publicada antes, mas você fez mudanças desde a última publicação. Visitantes ainda veem a versão anteriormente publicada.
 - **Published** -- A página está ao vivo e seu conteúdo salvo corresponde ao que visitantes veem.
 
 Para publicar suas mudanças, clique no botão **Publish** na barra de ferramentas. A página fica ao vivo imediatamente.
 
-Para reverter para a última versão publicada sem afetar o que visitantes veem, abra o menu de overflow (⋮) e clique em **Discard Changes**.
+Para reverter para a última versão publicada sem afetar o que visitantes veem, abra o menu de overflow (⋮) e clique em **Discard unpublished changes**.
 
-Para tirar uma página do ar completamente, abra o menu de overflow e clique em **Unpublish**. Visitantes não verão mais aquela página até que você a publique novamente.
+Para deixar de usar o fluxo de publicação, abra o menu de overflow e clique em **Turn off publishing**. As edições então entram ao vivo imediatamente novamente.
+
 
 :::tip
 Use o fluxo de trabalho de rascunho/publicação quando quiser preparar uma página -- por exemplo, para um evento futuro -- e fazer ao vivo apenas no momento certo. Construa e visualize a página, depois clique em Publish quando estiver pronto.

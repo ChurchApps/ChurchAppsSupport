@@ -22,7 +22,7 @@ Ang B1 page editor ay isang visual na drag-and-drop builder na nagbibigay-daan s
 ## Pagbubukas ng Editor
 
 1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **Website**, at i-click ang **Pages**.
-2. Hanapin ang pahinang gusto mong i-edit sa Pages table at i-click ang **Edit**.
+2. Hanapin ang pahinang gusto mong i-edit sa Pages table at i-click ang **Edit Content**.
 
 Bubukas ang editor sa full-screen mode. Ipinapakita ng kaliwang panel ang istruktura ng iyong pahina at ang mga available na content element; ipinapakita naman ng gitnang bahagi ang live preview ng iyong pahina.
 
@@ -79,9 +79,18 @@ Nakabuo mo na ba ang isang section pero gusto mo ng ibang istruktura? Gamitin an
    - **Live Stream** -- Ang iyong live stream player, naka-embed direkta sa pahina
    - **Podcast** -- Isang listahan ng mga episode na kinukuha mula sa isang external na podcast RSS feed URL na ibibigay mo, na may mga setting kung ilang episode ang ipapakita at kung ipapakita ang mga petsa at paglalarawan. Para ito sa pagtatampok ng anumang podcast feed sa iyong site; para i-publish ang sarili mong mga sermon bilang podcast, tingnan na lamang ang [Pamamahala ng mga Sermon](../sermons/managing-sermons.md#your-podcast-feed).
    - **Donation** -- Isang giving button o naka-embed na donation form
-   - **Raw HTML** -- Custom na HTML markup para sa mga advanced na gamit
+   - **HTML** -- Sarili mong raw HTML, para sa mga advanced na gamit tulad ng pag-embed ng third-party widget (tingnan ang [Paggamit ng HTML element](#using-the-html-element))
    - **iFrame** -- Mag-embed ng external na nilalaman gamit ang URL
 3. I-configure ang element gamit ang settings panel na lalabas.
+
+### Paggamit ng HTML element {#using-the-html-element}
+
+Ang **HTML** element ay may dalawang box:
+
+- **HTML Content** -- Ang markup na ipapakita sa pahina. Anumang `<script>` tag na ilalagay mo rito ay tatakbo sa iyong live na site.
+- **JavaScript (exclude script tag)** -- Script code na tatakbo kapag na-load ang pahina. Maaari mo ring i-paste dito ang embed snippet ng isang vendor kasama ang mga `<script>` tag nito, at tatakbo ito sa live na site.
+
+Kung web address lamang (tulad ng link ng larawan) ang i-paste mo sa JavaScript box, mamumula ang box at lalabas ang babalang *"This is a web address, not JavaScript."* Walang gagawin ang address na nasa box na iyon. Para magpakita ng larawan, gamitin ang **Image** element o ilagay ang `<img src="...">` sa **HTML Content**.
 
 ### Pagbabago ng Ayos ng Nilalaman
 
@@ -117,7 +126,7 @@ Gamitin ang mga preview control sa toolbar para tingnan kung ano ang itsura ng i
 - **Desktop** -- Full-width na view ng browser
 - **Mobile** -- Makitid na view na kasinlaki ng telepono
 
-I-click ang **Preview** para magbukas ng live na bersyon ng pahina sa bagong browser tab, eksakto kung paano ito makikita ng mga bisita.
+Para makita ang live na pahina nang eksakto gaya ng makikita ng mga bisita, bumalik sa listahan ng Pages at i-click ang path ng pahina. Magbubukas ito sa bagong browser tab.
 
 ## Pagsusuri ng Accessibility
 
@@ -128,9 +137,9 @@ I-click ang **Accessibility** icon sa toolbar para magpatakbo ng mabilis na pags
 Awtomatikong sinusubaybayan ng editor ang iyong kasaysayan ng pag-edit. Gamitin ang mga button sa toolbar o mga keyboard shortcut para mag-navigate:
 
 - **Undo** (Ctrl+Z / Cmd+Z) -- Ibalik ang huli mong ginawa
-- **Redo** (Ctrl+Y / Cmd+Y) -- I-apply muli ang isang na-undo na aksyon
+- **Redo** (Ctrl+Shift+Z o Ctrl+Y / Cmd+Shift+Z) -- I-apply muli ang isang na-undo na aksyon
 
-Maaari mo ring ibalik ang pahina sa naunang snapshot. I-click ang **History** sa toolbar para makita ang listahan ng mga na-save na snapshot na may mga paglalarawan, at i-click ang anumang entry para bumalik sa puntong iyon.
+Maaari mo ring ibalik ang pahina sa naunang snapshot. I-click ang **View history** sa toolbar para makita ang listahan ng mga na-save na snapshot na may mga paglalarawan, at i-click ang anumang entry para bumalik sa puntong iyon.
 
 :::warning
 Pinapalitan ng pagbabalik ng snapshot ang kasalukuyang nilalaman ng iyong pahina ng bersyon ng snapshot. Hindi ito maaaring i-undo gamit ang karaniwang undo button. Mag-save ng snapshot ng kasalukuyan mong estado bago magbalik sa luma kung gusto mong may pagkakataon ka pang bumalik.
@@ -144,15 +153,15 @@ Awtomatikong sine-save ang mga pagbabago habang nagtatrabaho ka. Ipinapakita ng 
 
 Ang mga pahina ay maaaring magkaroon ng **published** na estado, na kumokontrol kung kailan makikita ng mga bisita ang iyong mga pagbabago. Ipinapakita ng toolbar ang isang status chip na nagsasaad ng kasalukuyang estado:
 
-- **Live on Save** -- Hindi gumagamit ng publish workflow ang pahina. Bawat na-save na pagbabago ay agad na nagiging live. Ito ang default para sa mga bagong pahina.
-- **Unpublished Changes** -- Na-publish na dati ang pahina, ngunit may mga pagbabago kang ginawa mula noong huling publish. Nakikita pa rin ng mga bisita ang dating na-publish na bersyon.
+- **Live on save** -- Hindi gumagamit ng publish workflow ang pahina. Bawat na-save na pagbabago ay agad na nagiging live. Ito ang default para sa mga bagong pahina.
+- **Unpublished changes** -- Na-publish na dati ang pahina, ngunit may mga pagbabago kang ginawa mula noong huling publish. Nakikita pa rin ng mga bisita ang dating na-publish na bersyon.
 - **Published** -- Live ang pahina at tumutugma ang na-save mong nilalaman sa nakikita ng mga bisita.
 
 Para i-publish ang iyong mga pagbabago, i-click ang **Publish** na button sa toolbar. Agad na magiging live ang pahina.
 
-Para bumalik sa huling na-publish na bersyon nang hindi naaapektuhan ang nakikita ng mga bisita, buksan ang overflow menu (⋮) at i-click ang **Discard Changes**.
+Para bumalik sa huling na-publish na bersyon nang hindi naaapektuhan ang nakikita ng mga bisita, buksan ang overflow menu (⋮) at i-click ang **Discard unpublished changes**.
 
-Para tuluyang i-offline ang isang pahina, buksan ang overflow menu at i-click ang **Unpublish**. Hindi na makikita ng mga bisita ang pahinang iyon hanggang sa i-publish mo itong muli.
+Para ihinto ang paggamit ng publish workflow, buksan ang overflow menu at i-click ang **Turn off publishing**. Agad na muling magiging live ang mga edit.
 
 :::tip
 Gamitin ang draft/publish workflow kapag gusto mong ihanda ang isang pahina -- halimbawa, para sa paparating na event -- at gawin lamang itong live sa tamang sandali. Buuin at i-preview ang pahina, pagkatapos ay i-click ang Publish kapag handa ka na.

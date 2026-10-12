@@ -61,8 +61,8 @@ Wenn ein Mitglied online über Stripe spendet:
 
 Um eine Bar- oder Scheckspende in einer anderen Währung aufzuzeichnen:
 
-1. Navigiere zu **Spenden** in B1 Admin
-2. Klicke auf **Spende hinzufügen**
+1. Navigiere zu **Spenden > Bündel** in B1 Admin und öffne das Bündel
+2. Klicke oben auf der Bündelseite auf **Spende hinzufügen**
 3. Wähle die Währung aus der Dropdown-Liste Währung
 4. Gib den Betrag in dieser Währung ein
 5. Vervollständige die übrigen Spendendetails

@@ -6,7 +6,7 @@ title: "Event Reminders"
 
 <div class="article-intro">
 
-Ang mga event reminder ay awtomatikong nagbibigay ng abiso sa tamang mga tao bago ang isang event ay mangyari -- halimbawa, "Huwag palampasin! Ang healthcare workshop ay magsisimula bukas sa 9:00 AM." Isa kang nag-configure ng reminder sa event, at ang B1 ay ipinapadala ito ayon sa iskedyul sa pamamagitan ng push notification at email. Ang mga miyembro ay maaaring kontrolin kung aling mga reminder ang kanilang natatanggap mula sa kanilang sariling [Notification Preferences](../../b1-church/getting-started/notification-preferences).
+Ang mga event reminder ay awtomatikong nagbibigay ng abiso sa tamang mga tao bago ang isang event ay mangyari -- halimbawa, "Huwag palampasin! Ang healthcare workshop ay magsisimula bukas sa 9:00 AM." Isa kang nag-configure ng reminder sa event, at ang B1 ay ipinapadala ito ayon sa iskedyul sa pamamagitan ng push notification, email, at, kung may naka-set up na texting ang simbahan, text message. Ang mga miyembro ay maaaring kontrolin kung aling mga reminder ang kanilang natatanggap mula sa kanilang sariling [Notification Preferences](../../b1-church/getting-started/notification-preferences).
 
 </div>
 
@@ -31,7 +31,7 @@ Nag-configure ka ng mga reminder sa **Reminders** section ng event.
 3. Itakda ang **Time of day** na dapat ang reminder ay lumabas (default ay **9:00 AM**, sa local time zone ng iyong simbahan).
 4. Pumili ng **Who** dapat na ma-remind (tingnan ang [Who Gets Reminded](#who-gets-reminded) sa ibaba).
 5. Opsyonal na magdagdag ng **Message**. Iwanan itong blangko upang gamitin ang default na pagpapahayag, o isulat ang iyong sarili -- maaari kang magsama ng `{{eventTitle}}` at ito ay papalitan ng pangalan ng event.
-6. Pumili ng **Channels**: **Push** notification, **Email**, o pareho.
+6. Pumili ng **Channels**: **Push** notification, **Email**, at, kung may naka-connect na [texting provider](../settings/church-settings.md#texting) ang simbahan mo, **Text**.
 7. I-save ang event.
 
 Habang gumagawa ka ng mga pagbabago, isang **live preview** ay nagpapakita ng humigit-kumulang kung gaano karaming tao ang mare-remind, gaano karaming attendees ang hindi maaabot, at ang susunod na naka-schedule na send times -- upang maaari mong kumpirmahin ang reminder ay mukhang tama bago mo i-save.
@@ -60,18 +60,28 @@ Ang mga bisita na idinagdag ayon sa pangalan lamang (nang walang linked na perso
 Ang mga reminder ay ipinadala **push una, na may email bilang fallback**. Kung ang isang miyembro ay may enabled na push notification, makakakuha sila ng push; kung hindi, makakakuha sila ng email sa halip. Ang mga miyembro ay pumipili kung aling mga channel ang gusto nila bawat notification type sa kanilang [Notification Preferences](../../b1-church/getting-started/notification-preferences).
 :::
 
+## Mga Text Reminder {#text-reminders}
+
+Lalabas lamang ang channel na **Text** kapag may naka-connect na texting provider ang simbahan mo. Ipinapadala ang mga text sa pamamagitan ng texting provider ng simbahan mo, at maaaring may bayad ang bawat text para sa simbahan. Ipinapadala ang mga ito bilang karagdagan sa anumang push o email reminder, at sa mga taong lamang na:
+
+- Nag-on ng **Text messages** sa kanilang [Notification Preferences](../../b1-church/getting-started/notification-preferences), at
+- May mobile number sa kanilang profile.
+
+Nagsisimula ang bawat text sa pangalan ng simbahan ninyo, nananatili sa iisang text message, at nagtatapos sa "Reply STOP to opt out." Ang sinumang sumagot ng STOP ay titigil na sa pagtanggap ng text mula sa simbahan ninyo. Para makarating sa B1 ang mga STOP reply, i-paste ang **Inbound (STOP) webhook URL** mula sa iyong [texting settings](../settings/church-settings.md#texting) sa inbound message webhook ng provider mo.
+
 ## Kung Ano Ang Maaaring Kontrolin ng Mga Miyembro
 
 Ang mga reminder ay palaging nirerespeto ang [Notification Preferences](../../b1-church/getting-started/notification-preferences) ng bawat miyembro. Ang isang miyembro ay maaaring:
 
-- I-turn ang **Event Reminders** off para sa push o email habang pinapanatili ang ibang mga notification sa on.
+- I-turn ang **Event Reminders** off para sa push, email, o text habang pinapanatili ang ibang mga notification sa on.
+- I-on o i-off ang text reminders gamit ang **Text messages**.
 - Itakda ang **quiet hours** upang ang mga non-urgent notification ay maghintay hanggang sa isang maaasahang oras.
 
 Hindi mo maaaring i-override ang pagpili ng isang miyembro na mag-opt out ng mga event reminder -- ito ay nagpapanatili ng B1 compliant sa mga anti-spam na panuntunan at nagpapanatili sa mga miyembro sa kontrol ng kanilang inbox.
 
 ## Serving Reminders
 
-Ang mga volunteer na na-schedule sa isang plan ay makakatanggap ng isang hiwalay na **serving reminder** na may detalye ng plan at, kapag hindi pa sila tumugon, **Accept / Decline** buttons nang direkta sa email. Ang mga reminder na ito ay na-configure sa uri ng plan sa halip na sa isang calendar event -- tingnan ang [Sunday Volunteers](../guides/sunday-volunteers) para sa kung paano gumagana ang volunteer scheduling at mga reminder.
+Ang mga volunteer na na-schedule sa isang plan ay makakatanggap ng isang hiwalay na **serving reminder** na may detalye ng plan at, kapag hindi pa sila tumugon, **Accept / Decline** buttons nang direkta sa email. Ang mga reminder na ito ay na-configure sa uri ng plan sa halip na sa isang calendar event, at maaari ring ipadala sa pamamagitan ng text -- tingnan ang [Volunteer Reminders](../serving/plans#volunteer-reminders) at [Sunday Volunteers](../guides/sunday-volunteers) para sa kung paano gumagana ang volunteer scheduling at mga reminder.
 
 ## Susunod na Mga Hakbang
 

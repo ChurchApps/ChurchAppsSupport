@@ -28,15 +28,15 @@ Minsanan lamang itong setup bawat ministry. Kailangan ninyong ikonekta ang inyon
 
 1. Mag-log in sa [B1 Admin](https://admin.b1.church/) at pumunta sa **Serving**
 2. Buksan ang ministry na nais ninyong ikonekta (hal., Children's Ministry)
-3. Mag-scroll pababa sa seksyong **Content Provider Accounts**
+3. Mag-scroll pababa sa seksyong **Content Providers**
 4. I-click ang **Link New Provider**
 5. Piliin ang **Lessons.church** mula sa listahan
 6. Lalabas ang isang device authorization screen na may code
 7. Pumunta sa [lessons.church](https://lessons.church), mag-log in, at ilagay ang code para pahintulutan ang koneksyon
-8. Kapag naaprubahan na, makikita ninyo ang **"Account linked"** sa ilalim ng Lessons.church sa B1 Admin
+8. Kapag naaprubahan na, makikita ninyo ang **Linked** sa ilalim ng Lessons.church sa B1 Admin
 
 :::info
-Bawat ministry ang seksyong Content Provider Accounts. Kung may pinapatakbo kayong maraming ministry (hal., Children's at Youth), kailangan ninyong i-link nang hiwalay ang Lessons.church para sa bawat isa.
+Bawat ministry ang seksyong Content Providers. Kung may pinapatakbo kayong maraming ministry (hal., Children's at Youth), kailangan ninyong i-link nang hiwalay ang Lessons.church para sa bawat isa.
 :::
 
 ## Hakbang 2 — Mag-iskedyul ng Lesson
@@ -44,7 +44,7 @@ Bawat ministry ang seksyong Content Provider Accounts. Kung may pinapatakbo kayo
 Kapag naka-link na, maaari kayong mag-iskedyul ng mga lesson nang direkta mula sa Plans.
 
 1. Sa B1 Admin, pumunta sa **Serving → Plans**
-2. Piliin ang tab ng inyong ministry at i-click ang **Add Plan Type** -- bigyan ng pangalan ang plan type tulad ng Children's Church o Sunday School
+2. Piliin ang tab ng inyong ministry at i-click ang **Add Plan Type** (o **Create Plan Type** kung wala pang plan type ang ministry) -- bigyan ng pangalan ang plan type tulad ng Children's Church o Sunday School
 3. I-click ang plan type na kagagawa lang ninyo at i-click ang **Schedule Lesson**. Mula sa menu na iyon, maaari kayong mag-iskedyul ng isang lesson, mag-bulk-schedule ng isang serye, o mag-**Apply Year Plan** para ilagay ang naka-publish na year sequence mula sa Lessons.church.
 4. Piliin ang **petsa** para sa lesson (default ay ang susunod na Linggo)
 5. I-click ang **Select Lesson** -- magbubukas ang isang content browser dialog

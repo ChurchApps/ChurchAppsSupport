@@ -26,7 +26,7 @@ Le playlist ti permettono di organizzare i tuoi sermoni in serie o collezioni. Q
 
 ## Creazione di una Playlist
 
-1. Fai clic sul pulsante **Crea Prima Playlist** (se non hai ancora playlist) o fai clic sul pulsante **Aggiungi** (+) nell'intestazione del pannello **Playlist**.
+1. Fai clic sul pulsante **Crea Prima Playlist** (se non hai ancora playlist) o fai clic sul pulsante **Add playlist** nel pannello **Playlist**.
 2. Inserisci un **nome** per la playlist -- ad esempio, il titolo della serie di sermoni come "Fondamenti della Fede" o "Estate nei Salmi".
 3. Aggiungi una **descrizione** per dare ai visitatori una breve panoramica della serie.
 4. Imposta una **data di pubblicazione** per controllare quando la playlist diventa visibile.

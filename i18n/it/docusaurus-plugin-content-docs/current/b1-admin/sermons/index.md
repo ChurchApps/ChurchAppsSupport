@@ -28,7 +28,7 @@ Organizza i tuoi sermoni in serie o raccolte. Le playlist rendono facile per la 
 
 ### Orari streaming dal vivo
 
-Configura il programma di streaming dal vivo della tua chiesa. Imposta servizi settimanali ricorrenti o eventi unici, gestisci le impostazioni di chat e video, e controlla quando il tuo stream va in diretta. I visitatori vedranno il prossimo orario di servizio programmato sulla tua pagina di streaming. Vedi [Streaming dal vivo](live-streaming) per le istruzioni di configurazione.
+Configura il programma di streaming dal vivo della tua chiesa. Imposta servizi settimanali ricorrenti o eventi unici, gestisci le impostazioni di chat e video, e controlla quando il tuo stream va in diretta. I visitatori vedranno il prossimo orario di servizio programmato sulla tua pagina di streaming. Una pagina separata **Settings** in **Sermons** controlla le schede (chat, preghiera e link personalizzati) mostrate accanto al tuo live stream. Vedi [Streaming dal vivo](live-streaming) per le istruzioni di configurazione.
 
 ### Importazione in blocco
 

@@ -24,7 +24,7 @@ A session represents one occurrence of a group meeting -- for example, your K--3
 
 1. Open **B1 Admin**, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **People**, and click **Groups**.
 2. Select the group you want to record attendance for.
-3. Click the **Sessions** tab.
+3. In the **Sessions** section of the group's page, click **All sessions**.
 4. Click **New** to create a new session.
 5. If the group is assigned to a service time, choose the **Service Time**. If it is an unscheduled group, this field will not appear.
 6. Select the **Session Date** -- this can be today, a past date, or a future date.
@@ -76,11 +76,11 @@ Pair this with **Print All Classes** and [adding sessions for every class in a s
 
 ## Printing a Roll Sheet
 
-A roll sheet is a printable class list that teachers can mark by hand and give back to you to enter later. Each sheet shows the church name, the class, a large **Date** line under the class name, and the service time. Members are listed in two columns (read down the left column, then the right) so more names fit on a page, and every member has **Present** and **Absent** boxes. There are blank lines for visitors and a **Teacher / Notes** area.
+A roll sheet is a printable class list that teachers can mark by hand and give back to you to enter later. Each sheet shows your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) with the church name beneath it, the class, a large **Date** line under the class name, and the service time. Members are listed in two columns (read down the left column, then the right) so more names fit on a page, and every member has **Present** and **Absent** boxes. There are blank lines for visitors and a **Teacher / Notes** area.
 
 - **From a session** -- Click the **Print Roll Sheet** (printer) icon at the top of the session's attendance list. The sheet is dated with the session's date.
 - **All classes for a service** -- If the session has a service time, click **Print All Classes** to print one sheet per class assigned to that service time. Each class prints on its own page.
-- **From the Members tab** -- Click the **Print Roll Sheet** icon above the group's member list and choose **Attendance Sheet** to print an undated sheet. The same menu has a **Contact Roster** layout with each member's phone, email, and address -- see [Printing the Member List](../groups/group-members.md#printing-the-member-list).
+- **From the member list** -- On the group's page, click **All members**, then click the **Print Roll Sheet** icon above the member list and choose **Attendance Sheet** to print an undated sheet. The same menu has a **Contact Roster** layout with each member's phone, email, and address -- see [Printing the Member List](../groups/group-members.md#printing-the-member-list).
 
 The sheet opens in a new tab and your browser's print dialog appears automatically.
 
@@ -96,7 +96,7 @@ You can download a record of the session as a CSV file to use in Excel, Numbers,
 
 After recording sessions, the data appears in your attendance reports.
 
-- **Attendance Trend tab** -- shows church-wide trends over time. See [Tracking Attendance](tracking-attendance.md).
+- **Attendance Trend tab** (under **All years** on the Attendance page) -- shows church-wide trends over time. See [Tracking Attendance](tracking-attendance.md).
 - **Group Attendance tab** -- shows attendance broken down by individual group. See [Attendance Reports](../reports/attendance-reports.md#group-attendance).
 
 :::tip

@@ -24,8 +24,8 @@ Ang proseso ng import ay gumagamit ng two-step workflow: una ay mag-preview ka k
 
 ## Pag-import ng mga Transaksyon
 
-1. Sa **B1 Admin**, mag-navigate sa **Donations > Batches**.
-2. I-click ang **Stripe Import** link sa ibaba ng Batches page.
+1. Sa **B1 Admin**, mag-navigate sa **Donations > Stripe Import**. (Maaari mo ring i-click ang **Import missing Stripe transactions** sa itaas ng pahina ng **Batches**.)
+2. Bubukas ang pahinang **Stripe Import**.
 3. Pumili ng **date range** para sa mga transaksyon na gusto mong i-import.
 4. I-click ang **Preview** para mag-run ng dry-run check.
 
@@ -47,7 +47,7 @@ Ang preview step ay hindi gumagawa ng anumang record. Ito ay read-only na pagsus
 
 1. Suriin ang mga preview result at summary total.
 2. I-click ang **Import Missing** para i-import ang lahat ng transaksyon na namarkahan bilang **New**.
-3. Pagkatapos makumpleto ang import, ang mga status chip sa tabi ng bawat transaksyon ay mag-a-update para ipakita ang resulta.
+3. Pagkatapos makumpleto ang import, ang mga status badge sa tabi ng bawat transaksyon ay mag-a-update para ipakita ang resulta.
 
 ## Mga Tip para sa Paggamit ng Stripe Import
 

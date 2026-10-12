@@ -29,7 +29,7 @@ Folge den Anleitungen [Gruppen erstellen](../groups/creating-groups.md) und [Gru
 3. Füge Freiwillige zu jeder Gruppe hinzu, indem du nach ihrem Namen suchst und Hinzufügen klickst
 
 :::tip
-Bestimme Teamleiter mit dem grünen Schlüsselsymbol auf der Registerkarte Mitglieder. Leiter können ihren eigenen Gruppenkalender verwalten und ihr Team koordinieren.
+Bestimme Teamleiter mit dem Sternsymbol (**Make Leader** (Zum Leiter machen)) in der Mitgliederliste der Gruppe (klicke auf der Gruppenseite auf **All members** (Alle Mitglieder)). Leiter können ihren eigenen Gruppenkalender verwalten und ihr Team koordinieren.
 :::
 
 ## Schritt 2: Erstelle deine Liederbibliothek
@@ -52,10 +52,11 @@ Pläne sind die wöchentlichen Zuweisungen, die den Freiwilligen sagen, wo sie g
 
 Folge der Anleitung [Pläne](../serving/plans.md):
 
-1. Navigiere zu Serving, wähle dein Ministeriums-Tab
-2. Klicke auf „Plan hinzufügen" und wähle das Servicedatum
-3. Auf der Registerkarte Zuweisungen, erweitere jedes Team und weise Freiwillige ihren Positionen zu
+1. Navigiere zu Serving, wähle dein Ministeriums-Tab und öffne deinen Plantyp
+2. Klicke auf **New Plan** (Neuer Plan) und wähle das Servicedatum. Um mehrere Sonntage auf einmal einzurichten, kopiere vom vorherigen Plan und gib unter **Repeat weekly for this many weeks** (Wöchentlich wiederholen für so viele Wochen) ein, wie viele Wochen es sein sollen
+3. Füge im Bereich **Serving Team Assignments** (Zuweisungen des Serviceteams) des Plans Positionen hinzu und weise Freiwillige ihnen zu
 4. Freiwillige sehen ihren Zuweisungsstatus (Angefordert, Bestätigt, Ausstehend)
+5. Aktiviere [Freiwilligen-Erinnerungen](../serving/plans.md#volunteer-reminders) für den Plantyp, damit Freiwillige vor jedem Service per Push, E-Mail oder Text erinnert werden
 
 ## Schritt 4: Erstelle die Servicebestellung
 
@@ -63,8 +64,8 @@ Lege den Ablauf deines Dienstes von Anfang bis Ende fest.
 
 Folge der Anleitung [Servicebestellung](../serving/service-order.md):
 
-1. Wechsle zur Registerkarte „Servicebestellung" in deinem Plan
-2. Klicke auf „Element hinzufügen", um Elemente hinzuzufügen: Lobgesänge (aus deiner Bibliothek), Gebete, Schriftversen, Ankündigungen, Predigt, Opferung, Schluss
+1. Öffne deinen Plan und finde den Bereich **Order of Service** (Gottesdienstablauf) oben
+2. Klicke auf **Add** (Hinzufügen), um Elemente hinzuzufügen: Lobgesänge (aus deiner Bibliothek), Gebete, Schriftversen, Ankündigungen, Predigt, Opferung, Schluss
 3. Ziehe und ersetze Elemente, um den Servicefluss zu neuordnen
 
 :::info
@@ -89,7 +90,7 @@ B1 Admin erstellt keine Aufgaben nach einem wiederkehrenden Plan. Für wiederkeh
 
 Lasse Freiwillige sich selbst für Positionen anmelden, anstatt auf Admin-Zuweisungen zu warten.
 
-1. Wenn du einen Plan bearbeitest, setze ein **Anmelde-Frist** (Stunden vor dem Service), um zu kontrollieren, wann sich die Selbstanmeldung schließt. Lasse leer für keine Frist.
+1. Wenn du einen Plan erstellst oder bearbeitest, setze ein **Anmelde-Frist** (Stunden vor dem Service), um zu kontrollieren, wann sich die Selbstanmeldung schließt. Lasse leer für keine Frist. Neue Pläne übernehmen die Frist des vorherigen Plans.
 2. Optional schalte **Freiwilligennamen auf der Anmelde-Seite anzeigen** um, damit Freiwillige sehen können, wer sich sonst noch angemeldet hat.
 3. Für jede Position, aktiviere das Kontrollkästchen **Selbstanmeldung erlauben**, um es für Selbstservice verfügbar zu machen.
 4. Füge eine **Beschreibung** zu jeder Position hinzu, damit Freiwillige wissen, was die Rolle mit sich bringt.

@@ -22,8 +22,8 @@ La página de Sermones muestra tu biblioteca completa de sermones. Desde aquí p
 ## Visualizar Tu Biblioteca de Sermones
 
 1. En B1 Admin, abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda), expande **Sermones** y haz clic en **Sermones**.
-2. La página de Sermones muestra todas tus entradas de sermones, organizadas por lista de reproducción. Cada sermón muestra su miniatura, título y fecha.
-3. Haz clic en cualquier sermón para ver o editar sus detalles.
+2. La página de Sermones muestra tus entradas de sermones en una tabla con la **Lista de Reproducción**, el título y la **Fecha de Publicación** de cada sermón. Usa la caja de búsqueda sobre la tabla para filtrar la lista. Tus listas de reproducción aparecen en un panel **Listas de Reproducción** junto a la tabla.
+3. Haz clic en **Editar** en la fila de cualquier sermón para ver o editar sus detalles.
 
 ## Añadir un Sermón
 
@@ -40,7 +40,7 @@ También puedes añadir una URL de transmisión en vivo permanente seleccionando
 
 ## Editar un Sermón
 
-1. Haz clic en cualquier sermón en tu biblioteca para abrir sus detalles.
+1. Haz clic en **Editar** en la fila de cualquier sermón de tu biblioteca para abrir sus detalles.
 2. Actualiza el título, orador, fecha, descripción, miniatura o enlaces de medios según sea necesario.
 3. Haz clic en **Guardar** para aplicar tus cambios.
 

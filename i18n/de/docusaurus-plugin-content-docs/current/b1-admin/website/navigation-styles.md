@@ -32,62 +32,63 @@ Sie können Farben für beide Modi unabhängig voneinander anpassen.
 
 1. Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links) und erweitern Sie **Website**
 2. Klicken Sie auf **Appearance**
-3. Scrollen Sie zum Abschnitt **Navigation Styles**
-4. Klicken Sie auf **Edit Navigation Styles**
+3. Klicken Sie in der Liste **Style Settings** auf **Navigation**
+
+Der Editor **Navigation Styling** enthält zwei Karten: **Header (solid)** und **Header over hero (transparent)**.
 
 ## Konfigurieren von Solid Navigation
 
-Solid Navigation erscheint mit einer Hintergrundfarbe hinter der Navigationsleiste. Sie können Folgendes anpassen:
+Solid Navigation erscheint mit einer Hintergrundfarbe hinter der Navigationsleiste. Diese Einstellungen befinden sich in der Karte **Header (solid)**. Sie können Folgendes anpassen:
 
 ### Background Color
 
-1. Aktivieren Sie den **Override**-Schalter für **Background Color**
+1. Aktivieren Sie den **Override**-Schalter für **Background color**
 2. Klicken Sie auf die Farbauswahl
 3. Wählen Sie Ihre gewünschte Hintergrundfarbe
 4. Der Standard ist Weiß (#FFFFFF)
 
 ### Link Color
 
-1. Aktivieren Sie den **Override**-Schalter für **Link Color**
+1. Aktivieren Sie den **Override**-Schalter für **Link color**
 2. Wählen Sie die Farbe für Navigations-Link-Text
 3. Dies wirkt sich auf Links in ihrem Standard-Zustand aus
 4. Der Standard ist Dunkelgrau (#555555)
 
 ### Link Hover Color
 
-1. Aktivieren Sie den **Override**-Schalter für **Link Hover Color**
+1. Aktivieren Sie den **Override**-Schalter für **Link hover color**
 2. Wählen Sie die Farbe, auf die Links wechseln, wenn Benutzer darüber fahren
 3. Dies bietet visuelles Feedback für anklickbare Links
 4. Der Standard ist Hellblau (#03A9F4)
 
 ### Active Color
 
-1. Aktivieren Sie den **Override**-Schalter für **Active Color**
+1. Aktivieren Sie den **Override**-Schalter für **Active link color**
 2. Wählen Sie die Farbe für den derzeit aktiven Seiten-Link
 3. Dies hilft Benutzern zu wissen, auf welcher Seite sie sich befinden
 4. Der Standard ist Hellblau (#03A9F4)
 
 ## Konfigurieren von Transparent Navigation
 
-Transparent Navigation überlagert Ihren Seiteninhalt ohne Hintergrund. Sie können Folgendes anpassen:
+Transparent Navigation überlagert Ihren Seiteninhalt ohne Hintergrund. Diese Einstellungen befinden sich in der Karte **Header over hero (transparent)**. Sie können Folgendes anpassen:
 
 ### Link Color
 
-1. Aktivieren Sie den **Override**-Schalter für **Link Color**
+1. Aktivieren Sie den **Override**-Schalter für **Link color**
 2. Wählen Sie eine Farbe, die gut zu Ihrem Seitenhintergrund kontrastiert
 3. Oft funktionieren weiße oder helle Farben gut über dunklen Hintergründen
 4. Der Standard ist Dunkelgrau (#555555)
 
 ### Link Hover Color
 
-1. Aktivieren Sie den **Override**-Schalter für **Link Hover Color**
+1. Aktivieren Sie den **Override**-Schalter für **Link hover color**
 2. Wählen Sie die Hover-Status-Farbe
 3. Stellen Sie sicher, dass sie gegen Ihren Seitenhintergrund sichtbar ist
 4. Der Standard ist Hellblau (#03A9F4)
 
 ### Active Color
 
-1. Aktivieren Sie den **Override**-Schalter für **Active Color**
+1. Aktivieren Sie den **Override**-Schalter für **Active link color**
 2. Wählen Sie die Farbe des aktiven Seiten-Indikators
 3. Sollte auffallen, während das Design weiterhin passt
 4. Der Standard ist Hellblau (#03A9F4)
@@ -98,7 +99,7 @@ Transparent Navigation hat keine Hintergrundfarb-Einstellung, da sie den Seiteni
 
 ## Speichern Ihrer Änderungen
 
-1. Nachdem Sie Ihre Farben konfiguriert haben, klicken Sie auf **Save Navigation Styles**
+1. Nachdem Sie Ihre Farben konfiguriert haben, klicken Sie auf **Save Navigation**
 2. Ihre Änderungen werden sofort auf Ihre Live-Website angewendet
 3. Besuchen Sie Ihre Website, um die Navigation in beiden Modi zu sehen
 
@@ -107,7 +108,7 @@ Transparent Navigation hat keine Hintergrundfarb-Einstellung, da sie den Seiteni
 Wenn Sie zu den Standard-Farben zurückkehren möchten:
 
 1. Deaktivieren Sie die **Override**-Schalter für alle benutzerdefinierten Farben
-2. Klicken Sie auf **Save Navigation Styles**
+2. Klicken Sie auf **Save Navigation**
 3. Die Navigation kehrt zum Standard-Farbschema zurück
 
 Oder klicken Sie auf **Cancel**, um alle Änderungen zu verwerfen, ohne sie zu speichern.

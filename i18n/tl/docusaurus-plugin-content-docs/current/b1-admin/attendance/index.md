@@ -12,32 +12,36 @@ Ang Dumalo na seksyon sa B1 Admin ay nagbibigay sa iyo ng kumpletong paningin ku
 
 ## Pangkalahatang Pagsusuri ng Pahina
 
-Kapag binuksan mo ang pahina ng Dumalo, makikita mo ang isang header na may mga pangunahing istatistika tungkol sa setup ng dumalo ng iyong simbahan:
+Upang buksan ang pahina, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **People**, at i-click ang **Attendance**. Nagbubukas ang pahina sa buod ng **linggong ito** (Linggo hanggang Sabado).
 
-- **Mga Campus** -- ang bilang ng mga pisikal na lokasyon na iyong na-configure
-- **Oras ng Serbisyo** -- ang kabuuang bilang ng mga serbisyo sa lahat ng mga campus
-- **Mga Naplanong Grupo** -- mga grupo na nakatalagang may tiyak na oras ng serbisyo
-- **Mga Walang Plano na Grupo** -- mga grupo na sumusubaybay sa dumalo nang independyente mula sa isang oras ng serbisyo
+Ipinapakita ng kaliwang column ang mga petsa ng linggo at ang kabuuang bilang ng mga taong **nasa loob ng silid** -- ang kabuuang headcount kung may naitalang headcount ngayong linggo, o kung wala, ang bilang ng mga nag-check in. Sa ilalim ng kabuuan, makikita ninyo kung ilan ang nag-check in, nabilang, at bisita, at hiwalay kada serbisyo kung higit sa isa ang serbisyo. Kung wala pang nag-check in ngayong linggo, ipinapakita nito ang huling linggong may dumalo.
 
-Sa ibaba ng header, tatlong tab ang nag-oorganisa ng iyong mga tool sa dumalo.
+Ipinapakita ng pangunahing bahagi ng pahina ang:
 
-## Mga Tab
+- **Rooms** -- ang bawat grupo kung saan nag-check in ang mga tao ngayong linggo, kasama ang bilang ng mga nag-check in (at capacity bar para sa mga grupong may check-in capacity). I-click ang isang grupo para buksan ito.
+- **Guests** -- mga taong nag-check in bilang bisita ngayong linggo. I-click ang pangalan para buksan ang kanilang record.
+- **Last 13 weeks** -- maliit na bar chart ng lingguhang check-in, kasama kung ilang linggo ang may check-in.
+- **Headcounts this week** -- mga headcount na inilagay para sa mga serbisyo ngayong linggo.
+
+## Mga Aksyon {#actions}
+
+Nasa kaliwang column din ang mga aksyon ng pahina. Bawat isa ay bumubukas sa pangunahing bahagi; i-click ang back link na **Attendance** para bumalik sa buod ng linggo.
 
 ### Setup
 
-Ang tab na **Setup** ay kung saan mo iko-configure ang mga bloke ng bumubuo sa pagsubaybay sa dumalo. Dito mo tinutukoy ang iyong mga campus, idinaragdag ang oras ng serbisyo sa bawat campus, at nagtatalaga ng [mga grupo](../groups/creating-groups.md) sa mga oras na iyon ng serbisyo. Kailangan mo lamang gawin ito minsan, kahit na maaari mo itong i-update kapag nagbago ang iyong iskedyul. Makita ang [Attendance Setup](setup.md) para sa buong paglalakbay.
+I-click ang **Setup** para i-configure ang mga bloke ng pagsubaybay sa dumalo. Dito ninyo tinutukoy ang mga campus, idinaragdag ang mga serbisyo at oras ng serbisyo sa bawat campus (kasama ang opsyonal na check-in schedule para sa bawat oras ng serbisyo), at nakikita kung aling mga [grupo](../groups/creating-groups.md) ang nakatalaga sa mga oras ng serbisyo. Lumalabas sa itaas ang mga bilang ng mga campus, oras ng serbisyo, naka-iskedyul at walang iskedyul na grupo, at kabuuang grupo. Kailangan ninyo lamang itong gawin minsan, kahit na maaari ninyo itong i-update kapag nagbago ang iskedyul. Tingnan ang [Attendance Setup](setup.md) para sa buong gabay.
 
-### Dumalo
+### All years (Mga Ulat) {#all-years-reports}
 
-Ang tab na **Dumalo** ay nagpapakita ng mga uso sa dumalo sa paglipas ng panahon. Gamitin ang mga filter upang maangkop ang mga resulta ayon sa saklaw ng petsa, campus, o oras ng serbisyo at mabilis na tukuyin ang mga pattern sa iyong data. Makita ang [Pagsusubaybay sa Dumalo](tracking-attendance.md) para sa mga detalye sa paggamit ng mga ulat at filter.
+I-click ang **All years** para buksan ang mga ulat ng attendance. Lumilipat ang mga tab sa itaas sa pagitan ng **Attendance Trend** (mga trend ng buong simbahan sa paglipas ng panahon), **Headcount Trend** (kabuuan ng headcount kada linggo), at **Group Attendance** (attendance ayon sa bawat grupo). Gamitin ang mga filter para paliitin ang resulta ayon sa saklaw ng petsa, campus, o oras ng serbisyo. Tingnan ang [Pagsusubaybay sa Dumalo](tracking-attendance.md) para sa mga detalye sa paggamit ng mga ulat at filter.
 
-### Mga Grupo
+### Maglagay ng headcount {#enter-headcount}
 
-Ang tab na **Mga Grupo** ay binabawasan ang dumalo sa pamamagitan ng indibidwal na grupo. Ito ay kapaki-pakinabang kapag nais mong makita kung paano gumagana ang isang tiyak na maliit na grupo, klase, o koponan ng ministeri kaysa sa pagtingin sa mga numerong pangbuong-simbahan.
+I-click ang **Enter headcount** para magtala ng simpleng kabuuang bilang para sa isang serbisyo, oras ng serbisyo, o grupo sa halip na may pangalang listahan. Tingnan ang [Pagpasok ng Bilang ng Ulo at Uso](headcount-entry.md) para sa mga detalye.
 
-### Mga Bilang ng Ulo at Uso ng Bilang ng Ulo
+### Kiosk {#kiosk}
 
-Ang tab na **Mga Bilang ng Ulo** ay nagpapahintulot sa iyo na magtatala ng isang simpleng kabuuang bilang para sa isang serbisyo, oras ng serbisyo, o grupo sa halip na isang nakarangal na listahan, at ang tab na **Uso ng Bilang ng Ulo** ay nag-chart ng mga kabuuang iyon sa pamamagitan ng linggo. Makita ang [Pagpasok ng Bilang ng Ulo at Uso](headcount-entry.md) para sa mga detalye.
+I-click ang **Kiosk** para buksan ang mga setting ng **Kiosk Theme**, kung saan itinatakda ang mga background image at idle screen behavior ng check-in kiosk. Dinadala ka ng link na **Check-in kiosk, QR, and labels** sa buong [mga setting ng B1 CheckIn](check-in.md).
 
 ## Mga Susunod na Hakbang
 

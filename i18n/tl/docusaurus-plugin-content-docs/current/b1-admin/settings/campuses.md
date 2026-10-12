@@ -19,11 +19,11 @@ Kung nagtitipon ang iyong simbahan sa higit sa isang lokasyon, hinahayaan ka ng 
 
 ## Pagbubukas ng Campus Settings
 
-Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas na kaliwa), piliin ang **Settings > Settings**, at piliin ang card na **Campuses**. Maaari ka ring dumiretso rito sa **/settings/campuses**. Makikita mo ang listahan ng lahat ng naka-configure na campus kasama ang pangalan, lokasyon, at timezone ng mga ito.
+Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas na kaliwa), piliin ang **Settings > Settings**, at i-click ang **Campuses** sa listahan sa kaliwa para mag-scroll sa seksyong **Campuses**. Maaari ka ring dumiretso rito sa **/settings/campuses**. Makikita mo ang listahan ng lahat ng naka-configure na campus kasama ang pangalan, lokasyon, at timezone ng mga ito.
 
 ## Pagdaragdag ng Campus
 
-1. I-click ang **Add Campus** (o ang button na **+** kung wala pang campus).
+1. I-click ang **Add Campus**.
 2. Punan ang mga detalye ng campus:
    - **Name** *(kinakailangan)* — ang pangalang ipinapakita sa buong B1 Admin (halimbawa, "Main Campus" o "North Campus").
    - **Address** — ang street address ng campus (para sa impormasyon lamang; hindi ito pareho ng pangunahing address ng iyong simbahan sa Church Settings).

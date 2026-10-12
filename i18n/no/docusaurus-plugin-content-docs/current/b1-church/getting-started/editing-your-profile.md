@@ -29,7 +29,7 @@ Profilfanen inneholder informasjonen kirken din ser på personoppføringen din:
 - **Navn** -- Fornavn, mellomnavn og etternavn.
 - **Kontakt** -- E-postadresse og fødselsdato.
 - **Adresse** -- Gateadresse, by, stat og postnummer.
-- **Telefon** -- Mobil-, hjem- og arbeidstelefonnumre.
+- **Telefon** -- Mobil-, hjem- og arbeidstelefonnumre. Hvis du slår på tekstvarsler i [Varselpreferanser](./notification-preferences.md), sendes de til mobilnummeret ditt.
 
 Rediger hvilket som helst felt og lagre endringene fra linjen nederst på skjermen.
 

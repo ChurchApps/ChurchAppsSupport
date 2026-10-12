@@ -29,7 +29,8 @@ A aba Perfil contém as informações que sua igreja vê no seu registro de pess
 - **Nome** - Primeiro, Meio e Sobrenome.
 - **Contato** - Email e data de nascimento.
 - **Endereço** - Endereço, cidade, estado e CEP.
-- **Telefone** - Números de celular, casa e trabalho.
+- **Telefone** - Números de celular, casa e trabalho. Se você ativar lembretes por texto em [Preferências de Notificação](./notification-preferences.md), eles serão enviados para seu número de celular.
+
 
 Edite qualquer campo e salve suas alterações na barra na parte inferior da tela.
 

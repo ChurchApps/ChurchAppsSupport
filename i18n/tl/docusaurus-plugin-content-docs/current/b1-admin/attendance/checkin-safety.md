@@ -21,7 +21,7 @@ May kasamang mga kontrol sa kaligtasan ng mga bata ang B1 para sa check-in: limi
 
 ## Kapasidad ng Silid at Pagsasara ng Silid
 
-Maaaring magpatupad ng sariling limitasyon ang bawat check-in room (grupo). Buksan ang grupo, i-click ang **pencil icon** para i-edit ang mga setting nito, at hanapin ang seksyong **Check-In Capacity**:
+Maaaring magpatupad ng sariling limitasyon ang bawat check-in room (grupo). Buksan ang grupo, i-click ang **Edit** para i-edit ang mga setting nito, at hanapin ang seksyong **Check-In Capacity**:
 
 - **Capacity** -- Ang pinakamaraming taong maaaring naka-check in sa silid na ito nang sabay-sabay. Kapag puno na ang silid, hinaharangan ang check-in dito at pinangangalanan ng kiosk ang punong silid.
 - **Guest Capacity** -- Opsyonal na hiwalay na limitasyon sa dami ng bisitang kayang tanggapin ng silid.

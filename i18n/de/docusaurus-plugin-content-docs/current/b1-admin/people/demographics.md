@@ -20,7 +20,7 @@ Das Dashboard **Demographics** bietet Ihnen einen visuellen Überblick über Ihr
 
 ## Öffnen von Demografische Daten
 
-Klicken Sie auf der Seite **People** auf die Schaltfläche **Demographics** in der Seitenkopfzeile (das Balkendiagramm-Symbol). Die Seite zeigt Ihre Gesamtpersonenzahl oben, gefolgt von den unten beschriebenen Diagrammen.
+Klicken Sie auf der Seite **People** in der Seitenkopfzeile auf **Demographics**. Die Seite zeigt Ihre Gesamtpersonenzahl oben, gefolgt von den unten beschriebenen Diagrammen.
 
 ## Diagramme
 

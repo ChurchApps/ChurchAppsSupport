@@ -24,12 +24,11 @@ Ang pinakamabilis na paraan para i-export ang iyong direktoryo ay direkta mula s
 
 1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin), i-expand ang **People**, at i-click ang **People**.
 2. Gamitin ang search bar o mga filter para paliitin ang mga resultang gusto mong i-export (o iwanang walang filter para i-export ang lahat). Tingnan ang [Paghahanap ng mga Tao](searching-people.md) para sa mga tip sa pag-filter.
-3. Gamitin ang **column selector** para piliin kung aling mga column ang isasama sa export (halimbawa, Name, Email, Phone, Address).
-4. I-click ang button na **Export**.
-5. Magda-download sa iyong computer ang isang CSV file na may datos na kasalukuyang ipinapakita sa talahanayan.
+3. I-click ang button na **Export** sa header ng pahina ng People.
+4. Magda-download sa iyong computer ang isang CSV file na may mga taong nasa kasalukuyan ninyong resulta, kasama ang kanilang pangalan, impormasyon sa pakikipag-ugnayan, address, at iba pang karaniwang field.
 
 :::tip
-I-customize ang iyong mga column bago mag-export. Isasama ng CSV file ang eksaktong mga column na nakikita mo, kaya maaari mong iangkop ang export sa pangangailangan mo nang hindi na ine-edit ang file pagkatapos.
+Kasama sa export ang lahat ng tao sa inyong kasalukuyang mga resulta. Magpatakbo muna ng paghahanap, mag-load ng [Saved List](./lists.md), o gamitin ang **Advanced** search para i-export lamang ang mga taong kailangan ninyo.
 :::
 
 ## Buong Export ng Datos mula sa Settings
@@ -37,7 +36,7 @@ I-customize ang iyong mga column bago mag-export. Isasama ng CSV file ang eksakt
 Para sa kumpletong export ng lahat ng iyong datos sa B1 (hindi lang ng mga tao), gamitin ang export tool sa Settings:
 
 1. Sa Jump menu, piliin ang **Settings > Settings**.
-2. I-click ang button na **Import/Export** sa kanang itaas ng header ng pahina.
+2. I-click ang link na **Import/Export** sa ilalim ng pangalan ng inyong simbahan sa itaas ng kaliwang settings menu.
 3. Piliin ang **B1 Database** mula sa dropdown na **Data Source**.
 4. Suriin ang preview ng datos at i-click ang **Continue to Destination**.
 5. Piliin ang **B1 Export Zip** bilang destinasyon ng export.

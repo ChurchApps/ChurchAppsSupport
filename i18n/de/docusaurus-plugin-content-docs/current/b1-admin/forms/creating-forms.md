@@ -32,7 +32,7 @@ Ihr neues Formular wird in der Liste angezeigt. Klicken Sie darauf, um mit dem H
 
 ## Drucken eines leeren Formulars
 
-Benötigen Sie eine Papierkopie zum Austeilen – für eine Besucherkarte am Willkommensschalter oder ein Formular, das jemand ohne Internetzugang von Hand ausfüllen kann? Klicken Sie auf das **Druckersymbol** neben einem Formular in der Hauptformularliste, um eine Vorschau zu öffnen, und klicken Sie dann auf **Print** (Drucken). Leere Felder werden mit einer Unterstriche oder Kontrollkästchen für jede Frage gedruckt, damit Personen sie von Hand ausfüllen können; erforderliche Fragen sind mit einem Sternchen gekennzeichnet. Der Name Ihrer Kirche wird oben über dem Formularnamen gedruckt. Es gibt keine anderen Druckoptionen – drucken Sie das ganze Formular oder gar nichts.
+Benötigen Sie eine Papierkopie zum Austeilen – für eine Besucherkarte am Willkommensschalter oder ein Formular, das jemand ohne Internetzugang von Hand ausfüllen kann? Klicken Sie in der Hauptformularliste neben einem Formular auf **Print** (Drucken), um eine Vorschau zu öffnen, und klicken Sie dann erneut auf **Print** (Drucken). Leere Felder werden mit einer Unterstriche oder Kontrollkästchen für jede Frage gedruckt, damit Personen sie von Hand ausfüllen können; erforderliche Fragen sind mit einem Sternchen gekennzeichnet. Der Name Ihrer Kirche wird oben über dem Formularnamen gedruckt. Es gibt keine anderen Druckoptionen – drucken Sie das ganze Formular oder gar nichts.
 
 ## Fragen hinzufügen
 
@@ -81,7 +81,7 @@ Follow-up-E-Mails werden nur versendet, nachdem Ihre Kirche genehmigt wurde, um 
 
 ## Duplizieren eines Formulars
 
-Um ein Formular als Ausgangspunkt für ein neues zu verwenden, klicken Sie auf das Symbol **Duplicate** (Duplizieren) (Kopiersymbol) neben dem Formular in der Formularliste. B1 erstellt eine exakte Kopie des Formulars – einschließlich aller Fragen – die Sie dann unabhängig umbenennen und bearbeiten können.
+Um ein Formular als Ausgangspunkt für ein neues zu verwenden, klicken Sie in der Formularliste neben dem Formular auf **Duplicate** (Duplizieren) und bestätigen Sie. B1 erstellt eine exakte Kopie des Formulars – einschließlich aller Fragen – die Sie dann unabhängig umbenennen und bearbeiten können.
 
 :::tip
 Die Duplizierung ist praktisch für wiederkehrende Veranstaltungen, bei denen die Registrierungsfragen von Jahr zu Jahr gleich bleiben. Duplizieren Sie das Formular des letzten Jahres, aktualisieren Sie den Namen und die Daten, und schon geht es los.

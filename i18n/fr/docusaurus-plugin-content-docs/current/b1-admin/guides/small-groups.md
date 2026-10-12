@@ -35,7 +35,7 @@ Remplissez vos groupes avec des membres et désignez des responsables qui pourro
 Suivez le guide [Membres du groupe](../groups/group-members.md) pour :
 
 1. Rechercher des personnes et les ajouter aux groupes appropriés
-2. Désigner les responsables de groupe à l'aide de l'icône de clé verte -- les responsables obtiennent des permissions supplémentaires
+2. Désigner les responsables de groupe à l'aide de l'icône en forme d'étoile (**Nommer responsable**) -- les responsables obtiennent des permissions supplémentaires
 
 :::tip
 Les responsables de groupe peuvent gérer le calendrier de leur propre groupe, publier des conversations et coordonner des événements sans avoir besoin d'un accès administrateur complet.

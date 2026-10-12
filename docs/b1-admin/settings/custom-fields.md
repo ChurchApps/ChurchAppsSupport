@@ -20,7 +20,7 @@ title: "Custom Fields"
 
 ## Opening Custom Fields
 
-In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), choose **Settings > Settings**, and select the **Custom Fields** card. You can also go straight there at **/settings/custom-fields**. You'll see a list of every field you've defined, showing its **Name** and **Field Type**. If you haven't created any yet, the panel reads *"No custom fields have been added yet."*
+In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), choose **Settings > Settings**, and click **Custom Fields** in the left-hand list to scroll to the **Custom Fields** section. You can also go straight there at **/settings/custom-fields**. You'll see a list of every field you've defined, showing its **Name** and **Field Type**. If you haven't created any yet, the panel reads *"No custom fields have been added yet."*
 
 ## Adding a Field
 
@@ -55,14 +55,14 @@ Open a field for editing and click **Delete**. You'll be asked to confirm: *"Are
 
 ## Filling In Values on a Person
 
-Once at least one custom field exists, its values live right alongside the built-in details on each person's record — you view them in **Personal Details** and edit them on the same form you use for the rest of the person's information. Nothing extra appears until you've defined your first field.
+Once at least one custom field exists, its values live right alongside the built-in details on each person's record — you view them with the person's contact details on the left of their profile and edit them on the same form you use for the rest of the person's information. Nothing extra appears until you've defined your first field.
 
 1. Open a person's record in **People**.
-2. In the **Personal Details** section, click the **Edit** (pencil) button.
+2. Click the **Edit** button on the left of the profile, below the person's contact details.
 3. Scroll to the **Custom Fields** area at the bottom of the edit form and fill in a value for each field. Each field shows the input that matches its type — a date picker for Date fields, a yes/no dropdown for Yes/No fields, a pick-list for Multiple Choice, and so on.
 4. Click **Save**. Your custom-field values are saved together with the rest of the person's details.
 
-Back on the profile, any field that has a value now shows in the **Personal Details** section (Yes/No answers read as *Yes* or *No*, and Multiple Choice shows the option's label). Fields left blank are simply hidden. To remove a value, edit the person, clear the field, and save — an empty value is deleted from the record rather than stored as blank.
+Back on the profile, any field that has a value now shows below the person's contact details as *Field name: value* (Yes/No answers read as *Yes* or *No*, and Multiple Choice shows the option's label). Fields left blank are simply hidden. To remove a value, edit the person, clear the field, and save — an empty value is deleted from the record rather than stored as blank.
 
 :::tip
 The classic use case is volunteer safety: create a **Date** field called *Background check expires*, record each volunteer's date, then build a [Saved List](../people/lists.md) that flags anyone whose date has passed.
@@ -85,7 +85,7 @@ Save any custom-field search as a [List](../people/lists.md). Lists are live que
 
 ## Showing a Custom Field as a Column
 
-To see a field's values for everyone at once, add it as a column on the **People** page. Open the column chooser, switch to the **Custom** tab, and check the field. Each person's value appears in its own column next to the built-in ones. See [Showing Custom Fields as Columns](../people/searching-people.md#showing-custom-fields-as-columns).
+To see a field's values for everyone at once, add it as a column on the **People** page. Switch **View as** to **Table**, click the **Select columns** icon in the page header, switch to the **Custom** tab, and check the field. Each person's value appears in its own column next to the built-in ones. See [Showing Custom Fields as Columns](../people/searching-people.md#showing-custom-fields-as-columns).
 
 ## What Happens on Merge
 

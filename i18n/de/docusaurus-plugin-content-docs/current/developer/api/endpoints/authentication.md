@@ -94,6 +94,8 @@ POST /membership/users/register
 
 Erstellt einen Benutzer mit temporärem Passwort und sendet eine Willkommens-E-Mail mit einem Auth-Link. Der erste registrierte Benutzer auf einer neuen Instanz erhält automatisch Server-Admin-Zugriff.
 
+Zwei optionale Bot-Fallen-Felder werden akzeptiert: `website` (ein verstecktes Honeypot-Feld, das echte Benutzer leer lassen) und `fillMs` (wie lange das Formular geöffnet war, in Millisekunden). Wenn `website` ausgefüllt ist oder `fillMs` unter 2000 liegt, wird kein Konto erstellt, der Endpunkt gibt aber dennoch eine normal aussehende `200` zurück, damit Bots nicht erkennen können, dass sie abgelehnt wurden. Clients, die beide Felder weglassen, registrieren sich wie gewohnt.
+
 ### Neue Kirche registrieren
 
 ```

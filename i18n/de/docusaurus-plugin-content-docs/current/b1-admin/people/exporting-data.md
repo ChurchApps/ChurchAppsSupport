@@ -24,12 +24,11 @@ Der schnellste Weg zum Exportieren Ihres Verzeichnisses ist direkt von der Seite
 
 1. Öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **Personen** und klicken Sie auf **Personen**.
 2. Verwenden Sie die Suchleiste oder Filter, um die Ergebnisse zu begrenzen, die Sie exportieren möchten (oder lassen Sie es ungefiltert, um alle zu exportieren). Siehe [Personen suchen](searching-people.md) für Tipps zum Filtern.
-3. Verwenden Sie den **Spaltenselektor**, um auszuwählen, welche Spalten Sie in den Export einbeziehen möchten (z. B. Name, E-Mail, Telefon, Adresse).
-4. Klicken Sie auf die Schaltfläche **Exportieren**.
-5. Eine CSV-Datei wird auf Ihren Computer heruntergeladen mit den Daten, die derzeit in der Tabelle angezeigt werden.
+3. Klicken Sie im Seitenkopf der Seite Personen auf die Schaltfläche **Exportieren**.
+4. Eine CSV-Datei wird auf Ihren Computer heruntergeladen, mit den Personen aus Ihren aktuellen Ergebnissen, einschließlich Name, Kontaktdaten, Adresse und weiteren Standardfeldern.
 
 :::tip
-Passen Sie Ihre Spalten vor dem Export an. Die CSV-Datei enthält genau die Spalten, die Sie sichtbar haben, sodass Sie den Export nach Ihren Anforderungen anpassen können, ohne die Datei danach zu bearbeiten.
+Der Export enthält alle Personen in Ihren aktuellen Ergebnissen. Führen Sie zuerst eine Suche aus, laden Sie eine [gespeicherte Liste](./lists.md) oder verwenden Sie die erweiterte Suche **Advanced** (Erweitert), um nur die Personen zu exportieren, die Sie benötigen.
 :::
 
 ## Vollständiger Datenexport aus Einstellungen
@@ -37,7 +36,7 @@ Passen Sie Ihre Spalten vor dem Export an. Die CSV-Datei enthält genau die Spal
 Für einen vollständigen Export aller Ihrer B1-Daten (nicht nur Personen) verwenden Sie das Export-Tool in Einstellungen:
 
 1. Wählen Sie im Jump-Menü **Einstellungen > Einstellungen** aus.
-2. Klicken Sie auf die Schaltfläche **Import/Export** oben rechts in der Kopfzeile der Seite.
+2. Klicken Sie auf den Link **Import/Export** unter dem Namen Ihrer Kirche oben im linken Einstellungsmenü.
 3. Wählen Sie **B1-Datenbank** aus der Dropdown-Liste **Datenquelle**.
 4. Überprüfen Sie die Datenvorschau und klicken Sie auf **Zum Ziel fortfahren**.
 5. Wählen Sie **B1 Export Zip** als Exportziel.

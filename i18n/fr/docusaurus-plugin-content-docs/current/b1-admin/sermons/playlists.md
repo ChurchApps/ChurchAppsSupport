@@ -26,7 +26,7 @@ Les playlists vous permettent d'organiser vos sermons en séries ou en collectio
 
 ## Création d'une playlist
 
-1. Cliquez sur le bouton **Créer la première playlist** (si vous n'avez pas encore de playlists) ou cliquez sur le bouton **Ajouter** (+) dans l'en-tête du panneau **Playlists**.
+1. Cliquez sur le bouton **Créer la première playlist** (si vous n'avez pas encore de playlists) ou cliquez sur le bouton **Ajouter une playlist** dans le panneau **Playlists**.
 2. Entrez un **nom** pour la playlist -- par exemple, le titre de la série de sermons comme « Fondements de la foi » ou « L'été dans les Psaumes ».
 3. Ajoutez une **description** pour donner aux visiteurs un bref aperçu de la série.
 4. Définissez une **date de publication** pour contrôler quand la playlist devient visible.

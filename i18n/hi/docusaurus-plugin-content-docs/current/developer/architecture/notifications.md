@@ -15,7 +15,9 @@ title: "सूचनाएं और अनुस्मारक आर्कि
 ```
 scheduled anything ──▶ ReminderEngine (definitions → occurrences → scan) ─┐
 chat / requests / workflow / bulk sends ──────────────────────────────────┼─▶ createNotifications()
-                                                                          │    in_app gate → socket → push → email (→ sms slot)
+                                                                          │    in_app gate → socket → push → email
+     (reminder channels include sms) ──▶ ReminderEngine.sendSms() ──▶ sms gate → sendPersonText() via church provider
+provider STOP reply ──▶ POST /messaging/texting/inbound/:churchId/:token ──▶ SmsOptOutHelper.optOut()
 account/legal mail ──▶ TransactionalEmailHelper.sendTransactional()  [allowlisted, lint-enforced]
 ```
 
@@ -62,7 +64,7 @@ Delivery एक स्तर पर शुरू होता है (डिफ�
 | 0 | **in_app / socket** | `in_app` gate पहले checked है। यदि suppressed (muted), पंक्ति `isNew=false` के साथ persist है और delivery पूरी तरह से रुक जाती है — कोई socket ping नहीं, कोई badge नहीं, कोई further escalation नहीं। अन्यथा server व्यक्ति के `alerts` room के लिए खुले socket connections को देखता है और एक `notification` (या `privateMessage`) frame push करता है। सामान्य सूचनाओं के लिए, एक सफल socket delivery chain को यहीं रोक देता है — 30-मिनट का टाइमर unread items को फिर से check करता है और बाद में उन्हें escalate करता है। Direct messages कभी socket पर रुकते नहीं: एक installed PWA alerts socket को background में hold कर सकता है, जो अन्यथा OS-level push को suppress करेगा। |
 | 1 | **push** | `allowPush` / category opt-out / quiet hours पर gated। व्यक्ति की `devices` पंक्तियों पर पाए गए Expo push tokens और Web Push subscriptions दोनों को भेजता है, endpoint द्वारा deduplicating और रास्ते में stale tokens को pruning करता है। |
 | 2 | **email** | `emailFrequency` और category opt-out पर gated। Immediate भेजने (`emailImmediate`) तुरंत render करते हैं और एक `deliveryLogs` पंक्ति write करते हैं; अन्यथा notification को batch digest के लिए pending छोड़ा जाता है, नीचे described। |
-| — | **sms** | Preference plumbing (`allowSms`, per-category channel lists) पहले से एक SMS channel के लिए accounts करता है, लेकिन कोई भी producer आज इसके माध्यम से भेजता नहीं — यह bulk SMS product के लिए reserved रहता है, जो `TextingController` / `@churchapps/texting` के माध्यम से एक separate, siloed flow के रूप में चलता है। workflow **Send Text** step action (`StepActionHelper.sendText` → `MessagingModuleGateway.sendPersonText`) भी इस funnel को bypass करता है: यह church के provider के माध्यम से directly व्यक्ति को texts करता है, इसलिए notification preferences और quiet hours लागू नहीं होते — केवल व्यक्ति की `optedOut` flag को honor किया जाता है। |
+| — | **sms** | escalation ladder में एक level नहीं। एकमात्र gated SMS producer reminder engine है: जब एक definition के `channels` में `sms` शामिल है, तो `ReminderEngine.sendSms()` push/email notification **के अतिरिक्त** हर recipient को text करता है (देखें [Text reminders](#text-reminders))। Bulk texting (`TextingController` / `@churchapps/texting`), serving overview **Text Volunteers** भेजना (`MatrixTextHelper` → `MessagingModuleGateway.sendPersonText`), और workflow **Send Text** step action (`StepActionHelper.sendText` → `sendPersonText`) सभी church के provider के माध्यम से सीधे texts करते हैं, इसलिए notification preferences और quiet hours उन पर लागू नहीं होते — केवल व्यक्ति की `optedOut` flag को honor किया जाता है। |
 
 Unread notifications को socket या push पर छोड़ा जाता है 30-मिनट के टाइमर द्वारा escalate किया जाता है (`NotificationHelper.escalateDelivery`)। Batch email को `NotificationHelper.sendEmailNotifications(frequency)` द्वारा भेजा जाता है, प्रत्येक व्यक्ति की `emailFrequency` preference द्वारा driven: `individual` 30-मिनट के टाइमर पर चलता है, `daily` nightly टाइमर पर चलता है। (`weekly` एक valid preference value है लेकिन अभी तक कोई dedicated batch run नहीं है।)
 
@@ -83,6 +85,19 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 **Expansion** आगे के horizon के लिए fire rows को materialize करता है (एक rolling multi-day window)। यह nightly timer पर चलता है, और synchronously जब भी एक definition को save किया जाता है तो एक last-minute event के लिए reminder अभी भी fire होता है। Scope definitions adapter के `loadScopeEntities` के माध्यम से fan out करते हैं, प्रत्येक concrete entity के लिए एक occurrence set produce करते हैं; entity-level occurrences key `definitionId:occurrenceISO:offset` का उपयोग करते हैं, जबकि scoped occurrences entity id द्वारा namespace करते हैं तो वे कभी collide नहीं करते। एक occurrence को upsert करना एक previously-cancelled पंक्ति को **resurrects** करता है — cancel-then-re-expand underlying entity परिवर्तन के बाद एक reminder को re-sync करने का standard तरीका है; पंक्तियां जो पहले से `sent`, `failed`, या `processing` हैं untouched छोड़ी जाती हैं।
 
 **Dispatch** (`ReminderEngine.scan()`) 30-मिनट के टाइमर पर चलता है। यह due occurrences को claim करता है (एक lease double-processing को prevent करता है), entity के adapter के माध्यम से recipients को load करता है, किसी को भी पहले से `reminderSentLog` में recorded के out को filter करता है, और `createNotifications` को `deliveryStartLevel: 1` (socket को skip straight to push) के साथ कॉल करता है साथ ही `emailImmediate`/`emailByPerson` जब definition के channels email को include करते हैं।
+
+### Text reminders {#text-reminders}
+
+जब एक definition के `channels` में `sms` शामिल है, तो `scan()` push/email notifications बनने के बाद उन्हीं नए recipients के लिए `ReminderEngine.sendSms()` कॉल करता है। Texting हर सदस्य के लिए opt-in है:
+
+- हर recipient `PreferenceGateHelper.evaluate(..., "sms", ...)` से गुज़रता है, इसलिए `allowSms` चालू होना चाहिए (यह default रूप से बंद होता है और B1App के **Text messages** स्विच से सेट होता है) और category का `sms` channel off से override नहीं होना चाहिए। `event_reminders`, `serving_schedule`, और `tasks` दोनों `defaultChannels` और `allowedChannels` में `sms` सूचीबद्ध करते हैं।
+- जिन लोगों के पास `mobilePhone` नहीं है या जिनका `optedOut` सेट है, उन्हें suppress किया जाता है। यदि चर्च के पास texting provider नहीं है, तो batch के शेष हिस्से को reason `no_provider` के साथ suppress किया जाता है।
+- Body `ReminderEngine.smsBody()` द्वारा बनाई जाती है: `"<Church name>: <message> Reply STOP to opt out."`, एक 160-character segment तक trimmed।
+- हर recipient को अपनी `reminderSentLog` पंक्ति मिलती है, `channel: "sms"` और status `sent` / `suppressed` / `failed` के साथ, जो push/email पंक्ति से अलग key की जाती है, ताकि एक विफल text कभी push या email को दोबारा न भेजे।
+
+Editors **Text** तभी देते हैं जब `GET /messaging/texting/status` `{ enabled: true }` लौटाता है (चर्च का पहला texting provider सक्रिय है)।
+
+**STOP opt-out.** `POST /messaging/texting/inbound/:churchId/:token` एक anonymous webhook है जिसे चर्च अपने provider में चिपकाता है (B1Admin texting settings में `GET /messaging/texting/inboundUrl` से URL दिखाता है)। Token चर्च ID का HMAC है (`SmsOptOutHelper.token`)। `SmsOptOutHelper.parse` Twilio-style form fields और Clearstream/TextInChurch-style JSON स्वीकार करता है; यदि reply ठीक एक carrier stop word (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`) है, तो चर्च में हर non-removed व्यक्ति जिसका mobile नंबर मेल खाता है उसे `people.optedOut = true` और `allowSms = false` मिलता है। अन्य replies को acknowledge किया जाता है और अनदेखा किया जाता है।
 
 एक internal event bus entity mutations पर reacts nightly expansion के लिए wait किए बिना: content events (webhook dispatcher के माध्यम से) और plan/task update events affected entity के लिए immediate re-expansion या cancellation को trigger करते हैं, और एक plan update अपने plan type के लिए tied किए गए scope definitions को भी re-expand करता है।
 
@@ -120,14 +135,14 @@ Shadow rows notification bell के लिए invisible हैं: वे unrea
 हर भेजना `PreferenceGateHelper.evaluate()` के माध्यम से जाता है, एक pure function (सभी state passed in, hot path पर कोई DB calls नहीं) जो `allow`, `suppress`, या `defer` को return करता है। Layers order में चलते हैं, और पहला जो decide करता है wins:
 
 1. **Locked category** — कुछ categories mandatory हैं (tier 0) और हर दूसरे layer को bypass करते हैं।
-2. **Master mute / channel kill** — `masterMute`, `allowPush`, `allowSms`, या `emailFrequency='never'` outright को suppress करते हैं।
+2. **Master mute / channel kill** — `masterMute`, `allowPush`, `allowSms` (default रूप से बंद -- सदस्य opt in करते हैं), या `emailFrequency='never'` outright को suppress करते हैं।
 3. **Quiet hours** — push और SMS only (email को non-intrusive माना जाता है)। यदि wall-clock time person के timezone में उनके quiet window में fall करता है, एक transactional category अभी भी through होता है; एक non-transactional one quiet window के end के लिए deferred होता है, `TimezoneHelper.wallClockToUtc` के माध्यम से DST-correct UTC instant के रूप में computed।
 4. **Per-category preference override** — एक explicit opt-out एक category × channel pair के लिए; absence का मतलब category का default है।
 5. **Per-entity mute** — एक mute एक specific entity के against recorded (उदाहरण के लिए एक event, एक plan) further restrict करता है category-level setting से, लेकिन केवल apply होता है जब caller एक entity id/type को notification के साथ supply करता है।
 
 Tables involved: `notificationPreferences` (global — `masterMute`, `emailFrequency` of `individual|daily|weekly|never`, `allowPush`, quiet-hours window + timezone, `allowSms`), `notificationPreferenceOverrides` (per category × channel), और `notificationEntityMutes` (per entity)।
 
-यह gate in-app (level 0), push (level 1), और email (level 2) के अंदर funnel में enforced होता है — including immediate reminder/digest emails। Transactional email (auth codes, password resets, invites, donation receipts) design के द्वारा bypass होता है; दूसरे door का पूरा point है।
+यह gate in-app (level 0), push (level 1), और email (level 2) के अंदर funnel में enforced होता है — including immediate reminder/digest emails — और `ReminderEngine.sendSms()` में reminder texts के लिए भी। Transactional email (auth codes, password resets, invites, donation receipts) design के द्वारा bypass होता है; दूसरे door का पूरा point है।
 
 ## Church-authored email limits
 
@@ -160,7 +175,8 @@ Locally, same logic को demand पर `Api` project से `npm run timer:30m
 | Reminder engine | `Api/src/modules/messaging/helpers/ReminderEngine.ts`, `ReminderBootstrap.ts`, `helpers/adapters/*`, `controllers/ReminderController.ts` |
 | Reminder repositories | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`, `ReminderOccurrenceRepo.ts`, `ReminderSentLogRepo.ts` |
 | Serving/plan email | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`, `ReminderTokenHelper.ts`, `Api/src/shared/modules/DoingModuleGateway.ts` |
-| Reminder editors (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx` |
+| Texting / STOP opt-out | `Api/src/modules/messaging/helpers/SmsOptOutHelper.ts`, `controllers/TextingController.ts` (`/status`, `/inboundUrl`, `/inbound/:churchId/:token`), `Api/src/modules/doing/helpers/MatrixTextHelper.ts` (serving overview **Text Volunteers**) |
+| Reminder editors (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx`, `hooks/useTextingEnabled.ts` |
 | Reminder editor / preferences (B1App) | `EventReminderEdit.tsx`, `NotificationPrefsPage.tsx`, `useRealtimeNotifications.ts` |
 
 ## Related Pages

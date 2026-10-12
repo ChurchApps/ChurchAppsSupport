@@ -30,7 +30,7 @@ DNS-endringer kan ta fra noen minutter til noen timer før de trer i kraft.
 Når DNS peker til B1:
 
 1. Gå til **Innstillinger** i B1 Admin.
-2. Klikk på **Domener**.
+2. Klikk på **Domener** i listen til venstre, klikk deretter på **Rediger** i delen **Domener**.
 3. Skriv inn domenet ditt i feltet og klikk på **Lagre**.
 
 Du trenger ikke klikke på **+**-knappen først -- et domene som står skrevet i feltet, legges til når du lagrer. Bruk **+** (eller trykk **Enter**) når du vil legge til flere domener i listen før du lagrer.

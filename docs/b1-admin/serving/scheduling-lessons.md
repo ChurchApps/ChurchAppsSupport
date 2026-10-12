@@ -28,15 +28,15 @@ This is a one-time setup per ministry. You need to connect your Lessons.church a
 
 1. Log in to [B1 Admin](https://admin.b1.church/) and go to **Serving**
 2. Open the ministry you want to connect (e.g., Children's Ministry)
-3. Scroll down to the **Content Provider Accounts** section
+3. Scroll down to the **Content Providers** section
 4. Click **Link New Provider**
 5. Select **Lessons.church** from the list
 6. A device authorization screen will appear with a code
 7. Go to [lessons.church](https://lessons.church), log in, and enter the code to authorize the connection
-8. Once approved, you will see **"Account linked"** under Lessons.church in B1 Admin
+8. Once approved, you will see **Linked** under Lessons.church in B1 Admin
 
 :::info
-The Content Provider Accounts section is per ministry. If you run multiple ministries (e.g., Children's and Youth), you will need to link Lessons.church for each one separately.
+The Content Providers section is per ministry. If you run multiple ministries (e.g., Children's and Youth), you will need to link Lessons.church for each one separately.
 :::
 
 ## Step 2 — Schedule a Lesson
@@ -44,7 +44,7 @@ The Content Provider Accounts section is per ministry. If you run multiple minis
 Once linked, you can schedule lessons directly from Plans.
 
 1. In B1 Admin, go to **Serving → Plans**
-2. Select your ministry tab and click **Add Plan Type** — give the plan type a name such as Children's Church or Sunday School
+2. Select your ministry tab and click **Add Plan Type** (or **Create Plan Type** if the ministry has none yet) — give the plan type a name such as Children's Church or Sunday School
 3. Click on the plan type you just made and click **Schedule Lesson**. From that menu you can schedule one lesson, bulk-schedule a series, or **Apply Year Plan** to drop in a published year sequence from Lessons.church.
 4. Select the **date** for the lesson (defaults to the upcoming Sunday)
 5. Click **Select Lesson** — a content browser dialog opens

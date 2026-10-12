@@ -22,12 +22,14 @@ Basissti: `/doing/plans`
 | GET | `/:id` | JWT | — | Hent en plan etter ID |
 | GET | `/ids?ids=` | JWT | — | Hent flere planer etter kommaseparerte ID-er |
 | GET | `/types/:planTypeId` | JWT | — | Hent planer etter plantype |
+| GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + ministry-redigering | Forhåndsvis tjenesteoversikten **Send tekst til frivillige** sender: `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }` for frivillige som er tildelt i perioden (én per person, de som har reservert seg og manglende numre hoppes over, delte numre dedupliseres, maks 200) |
 | GET | `/presenter` | JWT | — | Hent planer for de neste 7 dagene (presentasjonsvisning) |
 | GET | `/public/current/:planTypeId` | Public | — | Hent gjeldende plan for en plantype |
 | GET | `/public/signup/:churchId` | Public | — | Planer som er åpne for selvpåmelding, hver med sine selvpåmeldingsposisjoner (pluss `filledCount` for tildelinger med status Accepted/Unconfirmed) og tider. Ingen frivilligenavn |
 | GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` for planens selvpåmeldingsposisjoner (visningsnavn på dem som er tildelt med status Accepted/Unconfirmed). Returnerer `[]` med mindre planens `showVolunteerNames` er slått på |
 | POST | `/` | JWT | — | Opprett eller oppdater planer (aksepterer enkeltobjekt eller liste) |
-| POST | `/copy/:id` | JWT | — | Kopier en plan inkludert posisjoner, tider, tildelinger og gudstjenesterekkefølge-elementer. Body inkluderer `copyMode` ("none", "positions", "all") og `copyServiceOrder` (boolean). `notes` og `signupDeadlineHours` overføres fra kildeplanen med mindre body oppgir dem |
+| POST | `/copy/:id` | JWT | Ministry-redigering | Kopier en plan inkludert posisjoner, tider, tildelinger og gudstjenesterekkefølge-elementer. Body inkluderer `ministryId`, `serviceDate`, `copyMode` ("none", "positions", "all") og `copyServiceOrder` (boolean). Uten `targetPlanId` opprettes en ny plan, og `notes`, `signupDeadlineHours`, `showVolunteerNames` og `autoReplaceOnDecline` overføres fra kildeplanen med mindre body oppgir dem. Med `targetPlanId` fylles den eksisterende planen i stedet (den som kaller må kunne redigere den). B1Admin-alternativet **Gjenta ukentlig** kaller dette én gang per uke, og hver gang kopieres fra planen som ble opprettet uken før |
+| POST | `/textRange` | JWT | `texting.send` + ministry-redigering | Send tekst til alle frivillige som er tildelt i en datoperiode, via kirkens teksttjeneste. Body: `{ startDate, endDate, ministryId, planTypeId?, message }` (melding på opptil 1600 tegn; flettefelt løses for hver mottaker). Returnerer forhåndsvisningstallene pluss `recipientCount`, `successCount`, `failCount`, og `error` (`no_provider` eller `insufficient_credits`) når sending stopper tidlig |
 | POST | `/autofill/:id` | JWT | — | Autofyll frivilligtildelinger for en plan. Body: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Slett en plan og alle relaterte tider, tildelinger, posisjoner og planelementer |
 
@@ -176,10 +178,12 @@ Basissti: `/doing/tasks`
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | Hent åpne oppgaver for gjeldende bruker |
 | GET | `/:id` | JWT | — | Hent en oppgave etter ID |
+| GET | `/:id/contact` | JWT | Kan se kortet | Kontaktinfo for personen et arbeidsflytkort gjelder: `{ personId, displayName, mobilePhone, email }`. Lar en tildelt oppringer uten People-tilgang nå personen |
 | GET | `/closed` | JWT | — | Hent lukkede oppgaver for gjeldende bruker |
 | GET | `/timeline?taskIds=` | JWT | — | Hent tidslinjedata for oppgaver etter kommaseparerte oppgave-ID-er |
 | GET | `/directoryUpdate/:personId` | JWT | — | Hent katalogoppdateringsoppgave for en person |
 | POST | `/` | JWT | — | Opprett eller oppdater oppgaver. Legg til `?type=directoryUpdate` for å håndtere katalogoppdateringsoppgaver (laster opp bilder automatisk) |
+| POST | `/:id/conversation` | JWT | `tasks.edit` eller kortets tildelte | Legg notatsamtalen til et kort. Body: `{ conversationId }`. Den første samtalen som legges til, gjelder; senere kall returnerer kortet uendret |
 | POST | `/loadForGroups` | JWT | — | Last oppgaver for spesifikke grupper. Body: `{ groupIds: [], status: "Open" }` |
 
 ## Automatiseringer

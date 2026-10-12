@@ -60,7 +60,7 @@ Siga la guía de [Transmisión en Vivo](../sermons/live-streaming.md) para:
 
 1. Ingrese su ID de Canal de YouTube en la configuración de transmisión
 2. Configure su horario de servicio recurrente (por ejemplo, domingos a las 10:00 AM)
-3. Personalice las pestañas de la página de transmisión: Chat, Solicitudes de oración y enlaces personalizados
+3. Personalice las pestañas de la página de transmisión (Chat, Solicitudes de oración y enlaces personalizados) en la página **Sermons > Settings**
 
 :::info
 Cuando va en vivo en YouTube, la página de transmisión B1 recoge automáticamente la transmisión. Sin pasos adicionales necesarios el domingo por la mañana.

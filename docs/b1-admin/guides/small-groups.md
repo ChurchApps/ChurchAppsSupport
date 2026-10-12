@@ -35,7 +35,7 @@ Populate your groups with members and designate leaders who can manage their own
 Follow the [Group Members](../groups/group-members.md) guide to:
 
 1. Search for people and add them to the appropriate groups
-2. Designate group leaders using the green key icon — leaders get extra permissions
+2. Designate group leaders using the star icon (**Make Leader**) — leaders get extra permissions
 
 :::tip
 Group leaders can manage their own group calendar, post conversations, and coordinate events without needing full admin access.

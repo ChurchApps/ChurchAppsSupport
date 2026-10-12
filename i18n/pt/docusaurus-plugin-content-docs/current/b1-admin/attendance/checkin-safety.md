@@ -21,7 +21,7 @@ O B1 inclui um conjunto de controles de segurança infantil para check-in: limit
 
 ## Capacidade de Sala e Fechamento de Uma Sala
 
-Cada sala de check-in (grupo) pode aplicar seus próprios limites. Abra o grupo, clique no **ícone de lápis** para editar suas configurações, e encontre a seção **Capacidade de Check-In**:
+Cada sala de check-in (grupo) pode aplicar seus próprios limites. Abra o grupo, clique em **Editar** para editar suas configurações, e encontre a seção **Capacidade de Check-In**:
 
 - **Capacidade** -- O número máximo de pessoas que podem fazer check-in nesta sala de uma vez. Quando a sala está cheia, o check-in para ela é bloqueado e o quiosque nomeia a sala cheia.
 - **Capacidade de Hóspedes** -- Um limite opcional separado sobre quantos hóspedes a sala pode acomodar.

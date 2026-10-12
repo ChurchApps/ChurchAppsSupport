@@ -12,32 +12,36 @@ Der Bereich Anwesenheit in B1 Admin gibt dir einen vollständigen Überblick dar
 
 ## Seitenübersicht
 
-Wenn du die Seite Anwesenheit öffnest, siehst du einen Header mit wichtigen Statistiken zur Anwesenheitseinrichtung deiner Kirche:
+Um die Seite zu öffnen, öffnest du das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweiterst **Personen** und klickst auf **Anwesenheit**. Die Seite öffnet sich mit einer Übersicht über **diese Woche** (Sonntag bis Samstag).
 
-- **Standorte** -- die Anzahl der physischen Orte, die du konfiguriert hast
-- **Gottesdienstzeiten** -- die Gesamtzahl der Gottesdienste auf allen Standorten
-- **Geplante Gruppen** -- Gruppen, die einer bestimmten Gottesdienstzeit zugeordnet sind
-- **Ungeplante Gruppen** -- Gruppen, die die Anwesenheit unabhängig von einer Gottesdienstzeit verfolgen
+Die linke Spalte zeigt die Daten der Woche und die Gesamtzahl der Personen **im Raum** – deine Kopfzahl-Summe, wenn in dieser Woche Kopfzahlen eingetragen wurden, andernfalls die Anzahl der eingecheckten Personen. Unter der Gesamtzahl siehst du, wie viele eingecheckt, gezählt und Gäste waren, sowie eine Aufteilung nach Gottesdienst, wenn du mehr als einen hast. Wenn in dieser Woche noch niemand eingecheckt ist, wird die letzte Woche mit Anwesenheit angezeigt.
 
-Unterhalb des Headers organisieren drei Registerkarten deine Anwesenheitswerkzeuge.
+Der Hauptbereich der Seite zeigt:
 
-## Registerkarten
+- **Räume** -- jede Gruppe, in die Personen in dieser Woche eingecheckt wurden, mit der Anzahl der Eingecheckten (und einer Kapazitätsanzeige für Gruppen mit einer Anmeldekapazität). Klicke auf eine Gruppe, um sie zu öffnen.
+- **Gäste** -- Personen, die in dieser Woche als Gäste eingecheckt wurden. Klicke auf einen Namen, um seinen Datensatz zu öffnen.
+- **Letzte 13 Wochen** -- ein kleines Balkendiagramm der wöchentlichen Anmeldungen, mit der Anzahl der Wochen, in denen es Anmeldungen gab.
+- **Kopfzahlen diese Woche** -- Kopfzahlen, die für die Gottesdienste dieser Woche eingetragen wurden.
+
+## Aktionen
+
+Die linke Spalte enthält auch die Aktionen der Seite. Jede öffnet sich im Hauptbereich; klicke auf den Zurück-Link **Anwesenheit**, um zur Wochenübersicht zurückzukehren.
 
 ### Einrichtung
 
-Die Registerkarte **Einrichtung** ist der Ort, wo du die Bausteine der Anwesenheitsverfolgung konfigurierst. Hier legst du deine Standorte fest, fügst Gottesdienstzeiten für jeden Standort hinzu und ordnest [Gruppen](../groups/creating-groups.md) diesen Gottesdienstzeiten zu. Du musst dies nur einmal tun, kannst es aber jederzeit aktualisieren, wenn sich dein Zeitplan ändert. Siehe [Anwesenheitseinrichtung](setup.md) für eine vollständige Anleitung.
+Klicke auf **Einrichtung**, um die Bausteine der Anwesenheitsverfolgung zu konfigurieren. Hier legst du deine Standorte fest, fügst Gottesdienste und Gottesdienstzeiten zu jedem Standort hinzu (einschließlich eines optionalen Anmeldeplans für jede Gottesdienstzeit) und ordnest [Gruppen](../groups/creating-groups.md) diesen Gottesdienstzeiten zu. Die Anzahlen von Standorten, Gottesdienstzeiten, geplanten und ungeplanten Gruppen sowie aller Gruppen werden oben angezeigt. Du musst dies nur einmal tun, kannst es aber jederzeit aktualisieren, wenn sich dein Zeitplan ändert. Siehe [Anwesenheitseinrichtung](setup.md) für eine vollständige Anleitung.
 
-### Anwesenheit
+### Alle Jahre (Berichte)
 
-Die Registerkarte **Anwesenheit** zeigt Anwesenheitstrends im Laufe der Zeit an. Verwende die Filter, um die Ergebnisse nach Datumsbereich, Standort oder Gottesdienstzeit zu begrenzen, und erkenne schnell Muster in deinen Daten. Siehe [Anwesenheit verfolgen](tracking-attendance.md) für Details zur Verwendung von Berichten und Filtern.
+Klicke auf **Alle Jahre**, um die Anwesenheitsberichte zu öffnen. Die Registerkarten oben wechseln zwischen **Anwesenheitstrend** (kirchenweite Trends im Laufe der Zeit), **Kopfzahl-Trend** (Kopfzahl-Summen pro Woche) und **Gruppenteilnahme** (Anwesenheit aufgeschlüsselt nach einzelnen Gruppen). Verwende die Filter, um die Ergebnisse nach Datumsbereich, Standort oder Gottesdienstzeit einzugrenzen. Siehe [Anwesenheit verfolgen](tracking-attendance.md) für Details zur Verwendung von Berichten und Filtern.
 
-### Gruppen
+### Kopfzahl eintragen
 
-Die Registerkarte **Gruppen** schlüsselt die Anwesenheit nach einzelner Gruppe auf. Dies ist hilfreich, wenn du sehen möchtest, wie es einer bestimmten Kleingruppe, Klasse oder einem Dienst-Team geht, anstatt Zahlen für die ganze Kirche zu betrachten.
+Klicke auf **Kopfzahl eintragen**, um eine einfache Gesamtzahl für einen Gottesdienst, eine Gottesdienstzeit oder eine Gruppe aufzuzeichnen, statt einer benannten Liste. Siehe [Kopfzahl-Eingabe und Trend](headcount-entry.md) für Details.
 
-### Anwesenheitszahlen und Anwesenheitstrend
+### Kiosk
 
-Die Registerkarte **Anwesenheitszahlen** ermöglicht dir, eine einfache Gesamtzahl für einen Gottesdienst, eine Gottesdienstzeit oder eine Gruppe zu erfassen, und die Registerkarte **Anwesenheitstrend** zeigt diese Zahlen wöchentlich an. Siehe [Anwesenheitszahl-Eingabe und Trend](headcount-entry.md) für Details.
+Klicke auf **Kiosk**, um die Einstellungen für das **Kiosk-Design** zu öffnen, in denen du die Hintergrundbilder und das Verhalten des Leerlaufbildschirms des Kiosks festlegst. Ein Link **Anmeldekiosk, QR und Etiketten** führt dich zu den vollständigen [B1 CheckIn-Einstellungen](check-in.md).
 
 ## Nächste Schritte
 

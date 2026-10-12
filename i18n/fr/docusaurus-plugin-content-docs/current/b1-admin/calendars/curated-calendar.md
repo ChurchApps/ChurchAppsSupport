@@ -28,8 +28,8 @@ Un calendrier organisé regroupe les événements de plusieurs groupes en une se
 
 ## Ajouter des groupes à votre calendrier
 
-1. Cliquez sur votre nouveau calendrier pour l'ouvrir.
-2. Dans la section **Groupes dans le calendrier** sur le côté droit, cliquez sur **Ajouter**.
+1. Cliquez sur **Gérer les événements** sur votre nouveau calendrier pour l'ouvrir.
+2. Cliquez sur **Ajouter un groupe** au-dessus du calendrier. Les groupes ajoutés apparaissent dans la liste **Groupes dans le calendrier** sur le côté gauche de la page.
 3. Sélectionnez un groupe dans la liste déroulante.
 4. Choisissez d'ajouter **tous les événements** de ce groupe ou seulement **des événements spécifiques**.
 5. Cliquez sur **Enregistrer**.

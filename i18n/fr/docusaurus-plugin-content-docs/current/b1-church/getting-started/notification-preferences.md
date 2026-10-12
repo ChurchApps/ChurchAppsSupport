@@ -6,7 +6,7 @@ title: "Préférences de notification"
 
 <div class="article-intro">
 
-Les préférences de notification vous permettent de décider quelles notifications vous recevez de votre église et comment vous les recevez -- notifications push, e-mail ou cloche intégrée à l'application. Vous pouvez affiner chaque type de notification, définir les heures de silence ou tout mettre en sourdine en une seule fois, le tout à partir d'un seul écran.
+Les préférences de notification vous permettent de décider quelles notifications vous recevez de votre église et comment vous les recevez -- notifications push, e-mail, cloche intégrée à l'application ou (si votre église envoie des textos) messages texte. Vous pouvez affiner chaque type de notification, définir les heures de silence ou tout mettre en sourdine en une seule fois, le tout à partir d'un seul écran.
 
 </div>
 
@@ -22,6 +22,7 @@ En haut de l'écran, vous trouverez les paramètres qui s'appliquent à tout :
 
 - **Tout mettre en sourdine** -- Mettez temporairement en pause toutes les notifications non essentielles.
 - **Notifications push** -- Active ou désactive les notifications push pour votre appareil.
+- **Messages texte** -- Affiché uniquement si votre église a configuré l'envoi de textos. Activez-le pour recevoir des rappels de service et d'événements par texto, au numéro de portable indiqué dans votre profil. Il est désactivé tant que vous ne l'activez pas.
 - **Fréquence des e-mails** -- Choisissez comment les notifications par e-mail arrivent :
   - **Par notification** -- Envoie un e-mail au fur et à mesure que les choses se produisent.
   - **Résumé quotidien** -- Regroupez-les en un seul e-mail quotidien.
@@ -35,6 +36,7 @@ Sous les contrôles globaux se trouve une grille de types de notification. Pour 
 - **Push** -- Une notification sur votre appareil.
 - **E-mail** -- Un message dans votre boîte de réception.
 - **Intégrée à l'application** -- La cloche/badge intégrée à l'application.
+- **Texte** -- Un message texte sur votre téléphone portable. Cette colonne n'apparaît que si votre église a configuré l'envoi de textos, et seuls certains types (comme **Rappels d'événement**, **Service et calendrier** et **Suivis et tâches**) peuvent être envoyés par texto. Les textos ne parviennent que si **Messages texte** est également activé.
 
 Les types courants incluent **Rappels d'événement**, **Service et calendrier**, **Messages directs**, **Chat de groupe**, **Demandes de prière** et **Annonces de l'église**. Par exemple, vous pourriez garder les notifications push activées pour les Messages directs mais les désactiver pour les Annonces.
 
@@ -43,6 +45,10 @@ Quelques types de notification sont **toujours activés** et ne peuvent pas êtr
 :::
 
 Certains types sont **désactivés par défaut** (comme les messages promotionnels ou de levée de fonds) et ne vous parviennent que si vous choisissez de vous inscrire.
+
+## Arrêter les messages texte {#stopping-text-messages}
+
+Pour cesser de recevoir des textos, désactivez **Messages texte** puis enregistrez. Vous pouvez aussi répondre **STOP** à n'importe quel texto de votre église pour retirer votre numéro de ses envois.
 
 ## Enregistrer vos modifications
 

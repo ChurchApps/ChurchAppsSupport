@@ -20,14 +20,14 @@ Los lotes agrupan tus donaciones juntas para un seguimiento y reconciliación m�
 
 ## La Página de Lotes
 
-Cuando navegas a **Donaciones > Lotes**, verás una lista de todos tus lotes. Cada fila muestra:
+Cuando navegas a **Donaciones > Lotes**, verás una lista de tus lotes. Cada fila muestra:
 
 - **Nombre** -- la etiqueta que diste al lote
 - **Fecha** -- la fecha de la colección
 - **Donaciones** -- el número de donaciones individuales en el lote
 - **Total** -- el monto en dólares combinado
 
-El encabezado en la parte superior muestra estadísticas de resumen incluyendo el número total de lotes, el número total de donaciones en todos los lotes y la cantidad total en dólares.
+Encima de la lista, los botones de año te permiten mostrar solo los lotes de un año, o **All** para todos los lotes. Una línea de resumen muestra el número de lotes, de regalos y el monto total de los lotes mostrados.
 
 ## Crear un Nuevo Lote
 
@@ -43,22 +43,24 @@ Tu nuevo lote aparece en la lista, listo para que agregues donaciones.
 - **Ver donaciones** -- haz clic en un nombre de lote para abrirlo y ver todas las donaciones individuales que contiene. Desde allí puedes agregar, editar o eliminar donaciones.
 - **Editar detalles del lote** -- haz clic en el botón **Editar** en una fila de lote para cambiar su nombre o fecha.
 - **Ordenar** -- usa los encabezados de columna para ordenar lotes por nombre o fecha.
-- **Exportar** -- haz clic en **Exportar** para descargar tu lista de lotes como una hoja de cálculo (CSV).
+- **Exportar** -- haz clic en **Exportar** en la parte superior de la página para descargar los lotes mostrados como una hoja de cálculo (CSV).
+- **Eventos fallidos** -- si tu pasarela de pagos ha reportado problemas, aparece un botón **Failed events** (con el número de eventos sin resolver) en la parte superior de la página. Haz clic en él para mostrar u ocultar la lista de eventos debajo de los lotes.
+- **Importar desde Stripe** -- haz clic en **Import missing Stripe transactions** en la parte superior de la página para abrir la herramienta [Importación de Stripe](stripe-import.md).
 
 ## Imprimir un Lote
 
-Abre un lote y haz clic en el icono **Imprimir** (impresora) en la parte superior de la lista de donaciones para imprimir una copia en papel para tu equipo de conteo o registros de depósito. La impresión incluye:
+Abre un lote y haz clic en **Imprimir** encima de la lista de donaciones para imprimir una copia en papel para tu equipo de conteo o registros de depósito. La impresión incluye:
 
 - El nombre de tu iglesia, el nombre del lote y la fecha del lote
 - Cada donación en el lote, con el nombre del donante, método, notas, fecha y monto (los regalos reembolsados están tachados y marcados como reembolsados)
 - **Subtotales por Fondo** -- el total donado a cada fondo en el lote
 - **Total del Lote** -- la cantidad combinada para todo el lote
 
-El icono Imprimir solo aparece una vez que el lote tiene al menos una donación.
+El botón **Imprimir** solo aparece una vez que el lote tiene al menos una donación.
 
 ### Imprimir Varios Lotes a la Vez
 
-Para imprimir todos los lotes de un período de una sola vez, por ejemplo, todos los depósitos del mes pasado, haz clic en el icono **Imprimir** (impresora) en el encabezado de la lista **Lotes**, junto a **Exportar**. Se abre la página **Imprimir Lotes** con una **Fecha de Inicio** y una **Fecha de Fin** que por defecto abarcan los últimos 30 días. Cambia cualquiera de las dos fechas para elegir un rango diferente.
+Para imprimir todos los lotes de un período de una sola vez, por ejemplo, todos los depósitos del mes pasado, haz clic en **Imprimir** en la parte superior de la página **Lotes**, junto a **Exportar**. Se abre la página **Imprimir Lotes** con una **Fecha de Inicio** y una **Fecha de Fin** que por defecto abarcan los últimos 30 días. Cambia cualquiera de las dos fechas para elegir un rango diferente.
 
 Cada lote con fecha dentro del rango (incluyendo las fechas de inicio y fin) se imprime en orden de fecha, un lote por página, con el mismo diseño que la impresión de un solo lote. Los lotes sin donaciones se omiten, y si ninguno de los lotes del rango tiene donaciones verás "No hay lotes con donaciones en este rango de fechas." Haz clic en **Imprimir** para abrir el cuadro de diálogo de impresión de tu navegador, o en **Cerrar** para volver a la lista de lotes.
 

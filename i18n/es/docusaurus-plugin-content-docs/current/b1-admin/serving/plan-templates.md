@@ -21,14 +21,13 @@ Las plantillas de planes te permiten guardar una instantánea reutilizable del o
 ## Guardar un Plan como Plantilla
 
 1. Abre un plan existente desde el área de **Serving**.
-2. Haz clic en el botón **Templates** (en la parte superior de la página del plan).
-3. Elige **Save as Template**.
-4. Dale un nombre a la plantilla (por ejemplo, "Standard Sunday" o "Worship + Sermon").
-5. Guarda. La plantilla captura el orden del servicio y posiciones actuales del plan en ese momento.
+2. En la sección **Order of Service** del plan, haz clic en **Save as Template**.
+3. Dale un nombre a la plantilla (por ejemplo, "Standard Sunday" o "Worship + Sermon").
+4. Guarda. La plantilla captura el orden del servicio, las posiciones y las notas actuales del plan en ese momento.
 
 ## Gestionar Plantillas
 
-Desde el botón de **Templates** en cualquier página de tipo de plan puedes:
+Haz clic en **Templates** encima de la lista de planes en cualquier página de tipo de plan para abrir **Plan Templates**. Desde ahí puedes:
 
 - **Rename** — cambiar el nombre de visualización de la plantilla
 - **Update from plan** — reemplazar el contenido de la plantilla con el estado actual de un plan (útil después de refinar tu estructura estándar)
@@ -37,13 +36,15 @@ Desde el botón de **Templates** en cualquier página de tipo de plan puedes:
 
 ## Aplicar una Plantilla a Planes
 
-1. Haz clic en el botón **Templates** en la página del tipo de plan.
+1. Haz clic en **Templates** encima de la lista de planes en la página del tipo de plan.
 2. Haz clic en el icono **Apply** (icono de copia) junto a la plantilla que deseas usar.
 3. Selecciona a cuáles planes próximos aplicarla marcando sus casillas.
 4. Elige qué copiar:
    - **Order of Service** — reemplaza los elementos del orden del servicio de los planes seleccionados con los elementos de la plantilla
    - **Positions** — reemplaza las posiciones de los planes seleccionados (y sus asignaciones) con las posiciones de la plantilla
 5. Haz clic en **Apply**.
+
+Si la plantilla tiene notas, al aplicarla también se reemplazan las notas de los planes seleccionados con las notas de la plantilla.
 
 :::warning
 Aplicar posiciones reemplaza todas las posiciones existentes y asignaciones en los planes seleccionados. Asegúrate de que no hayas programado voluntarios para esas posiciones antes de aplicar.
@@ -52,6 +53,10 @@ Aplicar posiciones reemplaza todas las posiciones existentes y asignaciones en l
 :::tip
 Aplica el Orden del Servicio sin Posiciones cuando desees una estructura consistente de canción/sermón pero los voluntarios ya están asignados de manera diferente cada semana.
 :::
+
+## Iniciar un Plan Nuevo desde una Plantilla {#starting-a-new-plan-from-a-template}
+
+Las plantillas se comparten entre los tipos de plan de un ministerio. Cuando haces clic en **New Plan** y el ministerio tiene plantillas, el formulario de nuevo plan incluye una lista **Start from template**. Elige una plantilla y guarda, y el nuevo plan se creará con el orden del servicio, las posiciones y las notas de la plantilla. Elegir una plantilla reemplaza las opciones **Copy from Previous Plan** para ese plan.
 
 ## Mantener Plantillas Actualizadas
 

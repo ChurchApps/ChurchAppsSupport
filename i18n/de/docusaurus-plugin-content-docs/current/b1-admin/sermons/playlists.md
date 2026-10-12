@@ -26,7 +26,7 @@ Playlisten ermöglichen es Ihnen, Ihre Predigten in Serien oder Sammlungen zu or
 
 ## Eine Playlist erstellen
 
-1. Klicken Sie auf die Schaltfläche **Erste Playlist erstellen** (falls Sie noch keine Playlisten haben) oder klicken Sie auf die Schaltfläche **Hinzufügen** (+) im Header des Panels **Playlisten**.
+1. Klicken Sie auf die Schaltfläche **Erste Playlist erstellen** (falls Sie noch keine Playlisten haben) oder klicken Sie im Panel **Playlisten** auf die Schaltfläche **Playlist hinzufügen**.
 2. Geben Sie einen **Namen** für die Playlist ein -- zum Beispiel den Titel der Predigtserie wie "Grundlagen des Glaubens" oder "Sommer in den Psalmen."
 3. Fügen Sie eine **Beschreibung** hinzu, um den Besuchern einen kurzen Überblick über die Serie zu geben.
 4. Legen Sie ein **Veröffentlichungsdatum** fest, um zu steuern, wann die Playlist sichtbar wird.

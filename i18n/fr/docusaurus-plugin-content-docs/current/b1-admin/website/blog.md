@@ -27,7 +27,7 @@ La page Blog vous permet de publier des actualités, des mises à jour et des d�
 ## Ajouter un article
 
 1. Cliquez sur **Ajouter un article** dans le coin supérieur droit.
-2. Entrez un **Titre**. Un slug convivial pour les URL est généré automatiquement au fur et à mesure que vous tapez -- vous pouvez le modifier directement si vous souhaitez une adresse différente.
+2. Entrez un **Titre**. Une **adresse web** (slug) conviviale pour les URL est générée automatiquement au fur et à mesure que vous tapez -- vous pouvez la modifier directement si vous souhaitez une adresse différente.
 3. Ajoutez un **Extrait** -- un court résumé affiché dans la liste des articles, les métadescriptions et le flux RSS. Si vous le laissez vide, un est généré automatiquement à partir du début du contenu de votre article.
 4. Écrivez le corps de l'article dans l'éditeur de **Contenu** en utilisant Markdown. Cliquez sur **Aperçu** pour voir comment l'article formaté ressemblera.
 5. Choisissez une **Catégorie** (sélectionnez une existante ou tapez-en une nouvelle) et optionnellement des **Étiquettes** séparées par des virgules.
@@ -49,9 +49,9 @@ Chaque article de la liste affiche l'un des trois états :
 
 ## Édition, aperçu et suppression d'articles
 
-- Cliquez sur l'icône **Éditer** à côté d'un article pour apporter des modifications.
-- Cliquez sur l'icône **Afficher** (visible sur les articles publiés) pour ouvrir l'article en direct sur votre site web dans un nouvel onglet.
-- Cliquez sur l'icône **Supprimer** pour supprimer définitivement un article.
+- Cliquez sur **Modifier** à côté d'un article pour apporter des modifications.
+- Cliquez sur **Voir sur le site** (affiché sur les articles publiés) pour ouvrir l'article en direct sur votre site web dans un nouvel onglet.
+- Cliquez sur **Supprimer** pour supprimer définitivement un article.
 
 ## Comment les visiteurs voient votre blog
 

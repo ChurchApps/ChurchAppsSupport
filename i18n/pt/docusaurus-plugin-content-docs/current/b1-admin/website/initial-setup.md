@@ -29,7 +29,7 @@ Sua igreja recebe automaticamente um subdomínio em B1.church (por exemplo, `you
 4. Para usar um domínio personalizado, faça login em seu provedor DNS (como GoDaddy, Cloudflare ou AWS) e adicione dois registros:
    - Um **A record** para seu domínio raiz apontando para `3.23.251.61`
    - Um **CNAME record** para `www` apontando para `proxy.b1.church`
-5. Retorne ao B1.church Admin, adicione seu domínio personalizado à lista e clique em **Add** depois **Save**. Seu site será acessível a partir de seu domínio personalizado em alguns minutos.
+5. Retorne ao B1.church Admin, abra a seção **Domains** na mesma página de Settings, adicione seu domínio personalizado à lista e clique em **Add** depois **Save**. Seu site será acessível a partir de seu domínio personalizado em alguns minutos.
 
 :::tip
 Se você não vir a opção Settings, peça à pessoa que configurou sua conta de igreja para conceder a você a permissão "Edit Church Settings". Consulte [Roles & Permissions](../settings/roles-permissions.md) para detalhes.
@@ -52,7 +52,8 @@ Para instruções detalhadas sobre como trabalhar com páginas e navegação, co
 
 1. No menu Jump, escolha **Website > Appearance**.
 2. Use a **Color Palette** para definir suas cores de marca para tons primário, secundário e destaque.
-3. Em **Typography Settings**, escolha suas fontes de título e corpo no navegador de fontes.
+3. Em **Fonts**, escolha suas fontes de título e corpo no navegador de fontes.
+
 4. Envie sua logo da igreja em **Logo** nas Configurações de Estilo. Forneça versões de fundo claro e fundo escuro.
 5. Configure seu **Site Footer** com informações de contato e links de sua igreja.
 

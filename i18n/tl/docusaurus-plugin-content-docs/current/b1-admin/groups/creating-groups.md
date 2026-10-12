@@ -21,16 +21,16 @@ Madali lang ang paggawa ng group sa B1 Admin. Mag-set up kayo ng category, panga
 ## Pagdaragdag ng Bagong Group
 
 1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin), i-expand ang **People**, at i-click ang **Groups**.
-2. I-click ang **Add Group** at maglagay ng **Category Name**. Tinutulungan ng mga category na maipangkat ang magkakaugnay na group (halimbawa, "Small Groups," "Ministries," o "Committees"). Kung may umiiral nang category, maaari ninyo itong piliin mula sa listahan.
-3. Ilagay ang **Group Name**.
-4. I-click ang **Add**. Lalabas ang inyong bagong group sa listahan sa ilalim ng napiling category.
+2. I-click ang **Add Group** sa header ng page. Magbubukas ang isang **New Group** form sa ibaba ng listahan. Ilagay ang **Category Name**. Tinutulungan ng mga category na maipangkat ang magkakaugnay na group (halimbawa, "Small Groups," "Ministries," o "Committees"). Kung may umiiral nang category, maaari ninyo itong piliin mula sa listahan.
+3. Ilagay ang **Name** ng group.
+4. I-click ang **Add**. Lalabas ang inyong bagong group sa listahan, kasama ang category nito sa ilalim ng pangalan.
 
 ## Pag-configure ng mga Setting ng Group
 
 Kapag nagawa na ang inyong group, maaari na kayong maglagay ng karagdagang detalye:
 
 1. I-click ang **pangalan ng group** sa listahan para buksan ito.
-2. I-click ang **pencil icon** para i-edit ang mga setting ng group.
+2. I-click ang **Edit** button sa kaliwang bahagi ng group page, sa ibaba ng mga detalye ng group.
 3. I-configure ang mga sumusunod na opsyon:
    - **Description** -- Maikling buod kung tungkol saan ang group. Nakikita ito ng mga miyembro.
    - **Meeting Times** -- Kung kailan karaniwang nagkikita ang group (halimbawa, "Wednesdays at 7 PM").
@@ -58,7 +58,7 @@ Kapag in-off ang parehong Discussions at Announcements, tuluyang mawawala ang ta
 
 Magsisimula ng bagong session ng paulit-ulit na klase o ministeryo? Sa halip na ipasok muli ang lahat ng setting, i-duplicate ang isang umiiral na group:
 
-1. Buksan ang group at i-click ang **duplicate** icon sa group banner (sa tabi ng Edit).
+1. Buksan ang group at i-click ang **Duplicate** (sa ibaba ng **Edit** button sa kaliwang bahagi ng group page).
 2. Kumpirmahin ang pag-duplicate.
 
 Dadalhin ng kopya ang mga setting ng orihinal -- category, description, oras/lugar ng pagkikita, join policy, mga label, at campus -- pero **hindi** ang mga miyembro nito. Ang bagong group ay papangalanan ayon sa orihinal na may dagdag na " (Copy)"; palitan ang pangalan nito sa mga setting ng group.
@@ -67,10 +67,10 @@ Dadalhin ng kopya ang mga setting ng orihinal -- category, description, oras/lug
 
 Kapag hindi na aktibo ang isang group pero nais ninyong itago ang kasaysayan nito sa halip na i-delete:
 
-1. Buksan ang group at i-click ang **pencil icon** para i-edit ang mga setting nito.
+1. Buksan ang group at i-click ang **Edit** para i-edit ang mga setting nito.
 2. I-click ang **Archive** at kumpirmahin.
 
-Mawawala sa pangunahing listahan ng Groups ang mga naka-archive na group. Para mahanap muli ang isa, i-on ang toggle na **Show archived** sa itaas ng Groups page, pagkatapos ay i-click ang **Restore** sa tabi ng group para ibalik ito.
+Mawawala sa pangunahing listahan ng Groups ang mga naka-archive na group. Para mahanap muli ang isa, i-click ang button na **Show archived** sa tabi ng mga category button sa itaas ng Groups page, pagkatapos ay i-click ang **Restore** sa tabi ng group para ibalik ito.
 
 :::info
 Hindi nade-delete ng pag-archive ng group ang mga miyembro, kasaysayan ng attendance, o mga calendar event nito -- itinatago lang nito ang group sa default na listahan hanggang sa i-restore ninyo ito.
@@ -80,11 +80,11 @@ Hindi nade-delete ng pag-archive ng group ang mga miyembro, kasaysayan ng attend
 
 Pagkatapos gawin at i-configure ang inyong group, handa na kayong:
 
-- **Magdagdag ng mga miyembro** -- Maghanap ng mga tao at idagdag sila sa group. Gamitin ang green key icon para italaga ang mga group leader. Tingnan ang [Mga Miyembro ng Group](./group-members.md).
+- **Magdagdag ng mga miyembro** -- Maghanap ng mga tao at idagdag sila sa group. Gamitin ang star icon (**Make Leader**) para italaga ang mga group leader. Tingnan ang [Mga Miyembro ng Group](./group-members.md).
 - **Mag-set up ng calendar** -- Gumawa ng mga event at paulit-ulit na pagkikita para sa group. Tingnan ang [Calendar ng Group](./group-calendar.md).
 - **Makipag-ugnayan** -- Magpadala ng mga mensahe sa lahat ng miyembro ng group direkta mula sa group page.
-- **I-export ang datos** -- I-click ang download icon para i-export ang listahan ng mga miyembro ng inyong group.
+- **I-export ang datos** -- I-click ang **Export** sa itaas ng listahan ng mga miyembro ng inyong group para i-download ito.
 
 :::info
-Lahat ng group ng inyong simbahan ay nakaayos ayon sa mga category sa pangunahing Groups page. Maaari ninyong palaging ayusin muli o palitan ang pangalan ng mga category habang lumalago ang inyong simbahan.
+Bawat group ay may kabilang na category, at hinahayaan kayo ng pangunahing Groups page na i-filter ang listahan ayon sa category. Maaari ninyong palaging ayusin muli o palitan ang pangalan ng mga category habang lumalago ang inyong simbahan.
 :::

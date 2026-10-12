@@ -32,12 +32,13 @@ Du kan tilpasse fargene for de to modusene hver for seg.
 
 1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre) og utvid **Nettsted**
 2. Klikk på **Utseende**
-3. Bla til delen **Navigasjonsstiler**
-4. Klikk på **Rediger navigasjonsstiler**
+3. I listen **Stilinnstillinger** klikker du på **Navigasjon**
+
+Redigeringsverktøyet **Navigasjonsstiler** har to kort: **Topptekst (solid)** og **Topptekst over hero (gjennomsiktig)**.
 
 ## Konfigurere solid navigasjon
 
-Solid navigasjon vises med en bakgrunnsfarge bak navigasjonslinjen. Du kan tilpasse:
+Solid navigasjon vises med en bakgrunnsfarge bak navigasjonslinjen. Disse innstillingene finner du i kortet **Topptekst (solid)**. Du kan tilpasse:
 
 ### Bakgrunnsfarge
 
@@ -62,14 +63,14 @@ Solid navigasjon vises med en bakgrunnsfarge bak navigasjonslinjen. Du kan tilpa
 
 ### Aktiv farge
 
-1. Slå på bryteren **Overstyr** for **Aktiv farge**
+1. Slå på bryteren **Overstyr** for **Aktiv lenkefarge**
 2. Velg fargen for lenken til siden som er aktiv
 3. Dette hjelper brukerne å se hvilken side de er på
 4. Standard er lyseblå (#03A9F4)
 
 ## Konfigurere gjennomsiktig navigasjon
 
-Gjennomsiktig navigasjon ligger over sideinnholdet uten bakgrunn. Du kan tilpasse:
+Gjennomsiktig navigasjon ligger over sideinnholdet uten bakgrunn. Disse innstillingene finner du i kortet **Topptekst over hero (gjennomsiktig)**. Du kan tilpasse:
 
 ### Lenkefarge
 
@@ -87,7 +88,7 @@ Gjennomsiktig navigasjon ligger over sideinnholdet uten bakgrunn. Du kan tilpass
 
 ### Aktiv farge
 
-1. Slå på bryteren **Overstyr** for **Aktiv farge**
+1. Slå på bryteren **Overstyr** for **Aktiv lenkefarge**
 2. Velg fargen som markerer den aktive siden
 3. Den bør skille seg ut og samtidig passe til designet
 4. Standard er lyseblå (#03A9F4)
@@ -98,7 +99,7 @@ Gjennomsiktig navigasjon har ingen innstilling for bakgrunnsfarge, siden den lig
 
 ## Lagre endringene
 
-1. Når du har satt opp fargene, klikker du på **Lagre navigasjonsstiler**
+1. Når du har satt opp fargene, klikker du på **Lagre navigasjon**
 2. Endringene gjelder umiddelbart på det live nettstedet
 3. Besøk nettstedet for å se navigasjonen i begge modusene
 
@@ -107,7 +108,7 @@ Gjennomsiktig navigasjon har ingen innstilling for bakgrunnsfarge, siden den lig
 Hvis du vil gå tilbake til standardfargene:
 
 1. Slå av bryterne **Overstyr** for alle egendefinerte farger
-2. Klikk på **Lagre navigasjonsstiler**
+2. Klikk på **Lagre navigasjon**
 3. Navigasjonen går tilbake til standard fargevalg
 
 Du kan også klikke på **Avbryt** for å forkaste alle endringer uten å lagre.

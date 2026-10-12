@@ -20,9 +20,9 @@ El orden del servicio define la secuencia de elementos en tu servicio de adoraci
 
 ## Acceder al Orden del Servicio
 
-1. Navega a **Servicio** y selecciona tu ministerio.
+1. Ve a **Servicio** y selecciona tu ministerio.
 2. Haz clic en un **tipo de plan**, luego abre un **plan** específico.
-3. Haz clic en la pestaña **Orden del Servicio** en la página de detalle del plan.
+3. La sección **Orden del Servicio** está en la parte superior de la página del plan, encima de **Asignaciones del Equipo de Servicio**.
 
 ## Construir Tu Orden del Servicio
 
@@ -38,8 +38,8 @@ El orden del servicio es una lista de elementos dispuestos en la secuencia en qu
 
 ## Añadir Elementos al Orden del Servicio
 
-1. En la pestaña **Orden del Servicio**, haz clic en **Añadir Elemento**.
-2. Elige el tipo de elemento que quieres añadir (por ejemplo, una canción de tu biblioteca, un elemento personalizado, un encabezado, o un **Elemento Externo**).
+1. En la sección **Orden del Servicio**, haz clic en **Añadir** y elige qué añadir: **Añadir Sección** (un encabezado que agrupa elementos), **Elemento** (un elemento personalizado), **Canción** (de tu biblioteca) o **Añadir desde Lección**. También puedes hacer clic en **Añadir Sección** directamente.
+2. Para añadir algo dentro de una sección, usa el menú de añadir en el encabezado de esa sección y elige **Canción**, **Elemento** o **Elemento Externo**.
 3. Ingresa los detalles para el elemento, como el título y cualquier nota.
 4. Haz clic en **Guardar**.
 
@@ -49,7 +49,7 @@ Puedes añadir canciones directamente de tu biblioteca de [Canciones](./songs.md
 
 ### Importar Múltiples Elementos de un Proveedor Externo
 
-Elegir **Elemento Externo** abre un navegador para tus proveedores de lecciones vinculados en lugar de un formulario de elemento único. Navega (o busca) en el contenido de un proveedor y marca la casilla al lado de cada sección o acción que desees. El diálogo rastrea cuántos has seleccionado (por ejemplo, "3 seleccionados") -- haz clic en **Importar (3)** para añadirlos todos al orden del servicio a la vez, en lugar de repetir el flujo de añadir elemento para cada uno.
+Elegir **Elemento Externo** (o **Añadir desde Lección**) abre un navegador para tus proveedores de lecciones vinculados en lugar de un formulario de elemento único. Navega (o busca) en el contenido de un proveedor y marca la casilla al lado de cada sección o acción que desees. El diálogo rastrea cuántos has seleccionado (por ejemplo, "3 seleccionados") -- haz clic en **Importar (3)** para añadirlos todos al orden del servicio a la vez, en lugar de repetir el flujo de añadir elemento para cada uno.
 
 :::tip
 Esta es la forma más rápida de extraer todos los elementos de lecciones completos en un orden del servicio en una pasada, en lugar de añadir cada elemento individualmente.
@@ -108,8 +108,8 @@ La selección en lote solo se aplica a los hijos directos de una sección, no a 
 
 Si tu plan tiene más de un horario de servicio (por ejemplo, un servicio a las 8 a.m. y a las 10 a.m.), puedes elegir en qué servicios debe aparecer cada elemento. Esto es útil cuando un anuncio solo es relevante para un servicio, o cuando se canta una canción en un servicio pero no en otro.
 
-1. Abre un plan que tenga dos o más tiempos de servicio definidos en la tarjeta **Tiempos** en la pestaña **Asignaciones**.
-2. En la pestaña **Orden del Servicio**, haz clic en un elemento para editarlo.
+1. Abre un plan que tenga dos o más tiempos de servicio. Haz clic en **Tiempos** en la sección **Asignaciones del Equipo de Servicio** para verlos o añadirlos.
+2. En la sección **Orden del Servicio**, haz clic en un elemento para editarlo.
 3. Bajo **Incluir en Servicios**, verás una casilla para cada hora de servicio, etiquetada con la hora.
 4. Desmarca cualquier servicio donde el elemento debe saltarse.
 5. Haz clic en **Guardar**.
@@ -117,7 +117,7 @@ Si tu plan tiene más de un horario de servicio (por ejemplo, un servicio a las 
 Por defecto, cada elemento se incluye en cada servicio. Los tiempos de servicio excluidos se ocultan cuando imprimes el plan filtrado a ese servicio, para que cada servicio reciba una hoja de ejecución limpia con solo los elementos relevantes.
 
 :::tip
-La sección **Incluir en Servicios** solo aparece cuando el plan tiene más de un horario de servicio. Si solo ves un servicio, usa la tarjeta **Tiempos** en la pestaña **Asignaciones** del plan para añadir servicios adicionales primero.
+La sección **Incluir en Servicios** solo aparece cuando el plan tiene más de un horario de servicio. Si solo ves un servicio, haz clic en **Tiempos** en la sección **Asignaciones del Equipo de Servicio** del plan para añadir servicios adicionales primero.
 :::
 
 ### Mostrar una Posición Diferente por Servicio
@@ -126,10 +126,10 @@ Si un elemento tiene un **Posición** establecida, cada hora de servicio marcada
 
 ## Compartir el Orden del Servicio
 
-Una vez que tu orden del servicio está completo, puedes imprimir el plan completo (incluyendo el orden del servicio) desde la página de detalle del plan. Esto le da a tu equipo un resumen completo del servicio, encabezado con el nombre de tu iglesia y el nombre del plan. Cuando **Mostrar Nombres de Voluntarios** está activado para la impresión, cada encabezado de sección también se imprime con la posición del voluntario asignado al lado, para que tu equipo pueda ver quién está cubriendo esa sección sin abrir la aplicación. Si la posición de un encabezado se anula para servicios específicos, la impresión muestra cada nombre de posición distinto al que se resuelve en los servicios en ese plan (por ejemplo, "Equipo de Adoración / Equipo Juvenil").
+Una vez que tu orden del servicio está completo, puedes imprimir el plan completo (incluyendo el orden del servicio) con el botón **Imprimir** en la parte superior de la página del plan. Esto le da a tu equipo un resumen completo del servicio, encabezado con el nombre de tu iglesia y el nombre del plan. Cuando **Mostrar Nombres de Voluntarios** está activado para la impresión, cada encabezado de sección también se imprime con la posición del voluntario asignado al lado, para que tu equipo pueda ver quién está cubriendo esa sección sin abrir la aplicación. Si la posición de un encabezado se anula para servicios específicos, la impresión muestra cada nombre de posición distinto al que se resuelve en los servicios en ese plan (por ejemplo, "Equipo de Adoración / Equipo Juvenil").
 
 ## Próximos Pasos
 
 - Gestiona tu repertorio de adoración en la página [Canciones](./songs.md)
-- Asigna voluntarios al servicio en la pestaña [Planes](./plans.md) Asignaciones
+- Asigna voluntarios al servicio en la sección [Asignaciones del Equipo de Servicio](./plans.md#assigning-team-members) del plan
 - Crea [Tareas](./tasks.md) para cualquier elemento de seguimiento relacionado con el servicio

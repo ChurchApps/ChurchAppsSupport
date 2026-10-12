@@ -34,7 +34,7 @@ Wenn eine Gruppe die Richtlinie **Request** (Anfrage) verwendet, gehen alle Beit
 
 1. Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) und wählen Sie **People > Groups** (Personen > Gruppen)
 2. Klicken Sie auf den Gruppennamen
-3. Ausstehende Anfragen für diese Gruppe werden oben auf der Registerkarte **Members** (Mitglieder) angezeigt
+3. Im Bereich **Members** (Mitglieder) wird angezeigt, wie viele Anfragen ausstehen. Klicken Sie auf **All members** (Alle Mitglieder) – ausstehende Anfragen für diese Gruppe werden oben in der Mitgliederliste angezeigt
 
 ### Für Administratoren
 
@@ -85,9 +85,9 @@ Die Angabe eines Ablehnungsgrundes hilft der Person zu verstehen, warum ihre Anf
 
 Jede Beitrittanfrage erstellt auch eine Aufgabe unter **Serving → My Work** (Dienen → Meine Arbeit) mit dem Titel "*Person* requested to join *Group*" (*Person* fordert zum Beitreten zu *Gruppe* an). Sie wird den Leitern der Gruppe zugewiesen. Wenn die Gruppe noch keinen Leiter hat, geht sie an jeden Mitarbeiter mit der Berechtigung **Group Members > Edit** (Gruppenmitglieder > Bearbeiten) oder an die Domain-Administratoren Ihrer Kirche, wenn niemand diese Berechtigung hat. Mitarbeiter und Administratoren, die die Aufgabe auf diese Weise erhalten, erhalten auch eine Benachrichtigung, die direkt darauf verweist.
 
-Wenn Sie die Aufgabe öffnen, werden der Name des Anfragenstellers, die Gruppe und seine optionale Nachricht mit den Schaltflächen **Approve** (Genehmigen) und **Decline** (Ablehnen) direkt auf der Aufgabenkarte angezeigt (Ablehnen öffnet das gleiche optionale Grundfeld wie oben beschrieben). Dies gibt Leitern eine zweite, benachrichtigungsgesteuerte Möglichkeit, auf eine Anfrage zu reagieren, ohne zur Registerkarte "Beitrittanfragen" der Gruppe zu navigieren.
+Wenn Sie die Aufgabe öffnen, werden der Name des Anfragenstellers, die Gruppe und seine optionale Nachricht mit den Schaltflächen **Approve** (Genehmigen) und **Decline** (Ablehnen) direkt auf der Aufgabenkarte angezeigt (Ablehnen öffnet das gleiche optionale Grundfeld wie oben beschrieben). Dies gibt Leitern eine zweite, benachrichtigungsgesteuerte Möglichkeit, auf eine Anfrage zu reagieren, ohne die Mitgliederliste der Gruppe öffnen zu müssen.
 
-Wenn Sie eine Anfrage von beiden Stellen entscheiden – der Registerkarte "Beitrittanfragen" der Gruppe oder ihrer Aufgabenkarte – wird sie überall geschlossen, sodass Anführer nie eine veraltete Aufgabe für eine Anfrage sehen, die jemand anderes bereits behandelt hat.
+Wenn Sie eine Anfrage von beiden Stellen entscheiden – der Mitgliederliste der Gruppe oder ihrer Aufgabenkarte – wird sie überall geschlossen, sodass Anführer nie eine veraltete Aufgabe für eine Anfrage sehen, die jemand anderes bereits behandelt hat.
 
 ## Benachrichtigungen
 

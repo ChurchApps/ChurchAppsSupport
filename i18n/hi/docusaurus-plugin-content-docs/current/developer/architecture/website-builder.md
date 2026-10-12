@@ -74,6 +74,8 @@ B1App द्वारा परोसी जाने वाली प्रत�
 
 `sermons` तत्व चर्च प्रकारों में सबसे अधिक कॉन्फ़िगर करने योग्य है: एक `layout` उत्तर `browse` (विरासत पूर्ण ब्राउजर), `grid`, `list`, या `featuredLatest` का चयन करता है, `playlistId`, `itemCount`, `showTitles`, और `showDates` के साथ गैर-ब्राउज़ लेआउट को परिष्कृत करते हैं।
 
+`rawHTML` तत्व के दो उत्तर हैं: `rawHTML` (markup) और `javascript`। `innerHTML` के माध्यम से डाली गई scripts कभी execute नहीं होतीं, इसलिए `RawHTMLElement` markup में हर `<script>` node को एक नए element के रूप में पुनः बनाता है। ये non-parser-inserted nodes CSP के `strict-dynamic` के तहत trusted हैं। `<` से शुरू होने वाला `javascript` उत्तर (`<script>` tags के साथ चिपकाया गया vendor snippet) markup के रूप में parse किया जाता है और उसी treatment को पाता है। अन्यथा वह एक सादे inline script के रूप में चलता है। B1Admin JavaScript बॉक्स में बेयर URL को flag करता है, क्योंकि अकेला URL no-op script के रूप में चलता है। `map` तत्व कुछ render नहीं करता, और कोई Google Maps API key कॉन्फ़िगर न होने पर Google Maps script लोड नहीं करता।
+
 ### रेंडरर (`@churchapps/apphelper`)
 
 रेंडरर `Packages/apphelper/src/website/components/elementTypes/` में रहते हैं, प्रकार के प्रति एक घटक, `ElementRegistry.ts` के माध्यम से हल किए गए — एक दो-स्तरीय नक्शा जहाँ `Element.tsx` सभी 35 प्रकारों के लिए डिफ़ॉल्ट रेंडरर रजिस्टर करता है (`registerDefaultElementRenderer`) और एक होस्ट ऐप रनटाइम पर किसी को भी ओवरराइड कर सकता है (`registerElementRenderer`) पैकेज को फोर्क किए बिना।
@@ -137,11 +139,11 @@ B1App द्वारा परोसी जाने वाली प्रत�
 |---------|--------------|
 | मेटा विवरण | `pages.metaDescription` (≤300 chars) `MetaHelper.getMetaData()` के माध्यम से हर बिल्डर-प्रदान मार्ग पर Next.js `Metadata` (विवरण + Open Graph) में प्रवाह करता है। B1Admin के पृष्ठ सेटिंग्स में एक AI "Generate" बटन शामिल है (नीचे देखें) |
 | रीडायरेक्ट | प्रति-चर्च `redirects` पंक्तियां `/content/redirects` पर प्रबंधित (पिछली पट्टी 200-पंक्ति राजधानी, सामान्यीकृत पथ)। एक वुल्फ़-बी 404 पर, B1App का पृष्ठ मार्ग `GET /content/redirects/public/:churchId` के विरुद्ध पथ को हल करता है और Next के `permanentRedirect` के माध्यम से एक HTTP 308 जारी करता है; बेजोड़ पथ `notFound()` के माध्यम से गिरते हैं |
-| ब्रांडेड 404 | `not-found.tsx` `BrandedNotFound` को चर्च के लोगो, नाम, और थीम के साथ एक सामान्य त्रुटि के बजाय प्रदान करता है |
+| ब्रांडेड 404 | `not-found.tsx` `BrandedNotFound` को चर्च के लोगो, नाम, और थीम के साथ एक सामान्य त्रुटि के बजाय प्रदान करता है। अज्ञात `/register/[eventId]` भी एक वास्तविक 404 लौटाता है |
 | संरचित डेटा | ब्लॉग पोस्ट पर `BlogPosting` JSON-LD; प्रति-उपदेश पृष्ठों पर `VideoObject` (`/{sdSlug}/sermons/[sermonId]`) और `sermons` तत्व युक्त बिल्डर पृष्ठों पर; कैलेंडर/घटना तत्वों पर बिल्डर पृष्ठों पर `Event`; `serviceTimes` तत्व से स्कीमा.org `Event` |
 | उपदेश पृष्ठ | हर सार्वजनिक उपदेश पूर्ण मेटाडेटा के साथ `/sermons/[sermonId]` पर एक क्रॉलेबल पृष्ठ प्राप्त करता है — उपदेश अब क्लायंट-पक्षीय ब्राउजर तत्व के अंदर लॉक नहीं हैं |
-| विश्लेषण | सार्वजनिक सेटिंग्स कुंजी `ga4MeasurementId` (रीडायरेक्ट के आगे B1Admin में प्रबंधित) प्रति-चर्च GA4 gtag को `next/script` के माध्यम से इंजेक्ट करता है |
-| साइटमैप और फ़ीड | प्रति-चर्च `sitemap.xml` मार्ग बिल्डर पृष्ठ और ब्लॉग URL शामिल करता है; ब्लॉग सूची RSS फ़ीड विज्ञापित करता है |
+| विश्लेषण | सार्वजनिक सेटिंग्स कुंजी `ga4MeasurementId` (रीडायरेक्ट के आगे B1Admin में प्रबंधित) प्रति-चर्च GA4 gtag को `next/script` के माध्यम से इंजेक्ट करता है। B1 ऐप (`/{sdSlug}/mobile`) भी अपने page views उस ID पर भेजता है, ChurchApps के अपने tag के साथ, जब वह एक valid `G-` ID हो (GTM container IDs केवल website तक सीमित रहते हैं)। हर `gtag('config')` के साथ `display_mode` जाता है, `installed` या `browser`, जो `navigator.standalone` या `(display-mode: standalone)` media query पर आधारित है (`B1App/src/helpers/mobileAnalytics.ts`) |
+| साइटमैप और फ़ीड | प्रति-चर्च `sitemap.xml` मार्ग बिल्डर पृष्ठ, ब्लॉग URL, और 50 सबसे हाल के उपदेश पृष्ठ शामिल करता है (हर उपदेश की प्रकाशन तिथि से `<lastmod>` के साथ)। यह built-in `/sermons`, `/groups`, और `/volunteer` पृष्ठों को भी सूचीबद्ध करता है जब उनमें सामग्री हो (सार्वजनिक groups, signup plans), जब तक कोई सहेजा गया redirect उस पथ को न बदले। ब्लॉग सूची RSS फ़ीड विज्ञापित करती है |
 | सुलभता | सार्वजनिक chrome हर लेआउट रैपर में `<main id="main-content">` लैंडमार्क को लक्षित करने वाली एक स्किप लिंक प्रदान करता है |
 
 ## AI पीढ़ी (AskApi)

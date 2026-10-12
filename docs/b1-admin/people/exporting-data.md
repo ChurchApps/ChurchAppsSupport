@@ -24,12 +24,11 @@ The fastest way to export your directory is directly from the **People** page:
 
 1. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **People**, and click **People**.
 2. Use the search bar or filters to narrow down the results you want to export (or leave it unfiltered to export everyone). See [Searching People](searching-people.md) for tips on filtering.
-3. Use the **column selector** to choose which columns you want included in the export (for example, Name, Email, Phone, Address).
-4. Click the **Export** button.
-5. A CSV file will download to your computer with the data currently shown in the table.
+3. Click the **Export** button in the People page header.
+4. A CSV file will download to your computer with the people currently in your results, including their name, contact information, address, and other standard fields.
 
 :::tip
-Customize your columns before exporting. The CSV file will include exactly the columns you have visible, so you can tailor the export to your needs without editing the file afterward.
+The export includes everyone in your current results. Run a search, load a [Saved List](./lists.md), or use **Advanced** search first to export just the people you need.
 :::
 
 ## Full Data Export from Settings
@@ -37,7 +36,7 @@ Customize your columns before exporting. The CSV file will include exactly the c
 For a complete export of all your B1 data (not just people), use the export tool in Settings:
 
 1. In the Jump menu, choose **Settings > Settings**.
-2. Click the **Import/Export** button in the top right of the page header.
+2. Click the **Import/Export** link under your church's name at the top of the left-hand settings menu.
 3. Select **B1 Database** from the **Data Source** dropdown.
 4. Review the data preview and click **Continue to Destination**.
 5. Select **B1 Export Zip** as the export destination.

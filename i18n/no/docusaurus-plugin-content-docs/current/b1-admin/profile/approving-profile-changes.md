@@ -24,8 +24,8 @@ Når et medlem sender inn en profilendring, vises den som en oppgave tildelt god
 
 **Fra dashbordet (startsiden din):**
 1. Logg inn på B1 Admin — dashbordet lastes automatisk.
-2. Klikk på fanen **Tildelt mine grupper** i delen **Oppgaver** til høyre.
-3. Alle ventende forespørsler om profilendring vises der.
+2. I delen **Mine oppgaver** klikker du på **Alle oppgaver**. (Mine oppgaver viser bare åpne oppgaver som er tildelt deg personlig.)
+3. Klikk på fanen **Tildelt mine grupper**. Alle ventende forespørsler om profilendring vises der.
 
 **Fra Tjeneste &rarr; Mitt arbeid:**
 1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin) og utvid **Tjeneste**.

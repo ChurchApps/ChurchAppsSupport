@@ -24,6 +24,7 @@ Chaque formulaire dans la liste affiche son nom et, s'il est configuré, une URL
 À partir de la page Formulaires, vous pouvez :
 
 - **Ajouter un formulaire** -- Cliquez sur **Add Form** pour créer un nouveau formulaire personnalisé.
+- **Rechercher un formulaire** -- Saisissez dans la zone **Find a form** pour filtrer la liste par nom.
 - **Modifier un formulaire** -- Cliquez sur un nom de formulaire pour l'ouvrir et modifier ses questions, ses membres ou ses paramètres.
 - **Archiver un formulaire** -- Déplacez les formulaires dont vous n'avez plus besoin vers l'onglet **Archived Forms** pour garder votre liste propre.
 - **Restaurer un formulaire** -- Basculez vers l'onglet **Archived Forms** et restaurez n'importe quel formulaire que vous voulez rendre actif à nouveau.

@@ -21,14 +21,13 @@ Les modèles de plan vous permettent d'enregistrer un cliché réutilisable de l
 ## Enregistrement d'un Plan en tant que Modèle
 
 1. Ouvrez un plan existant à partir de la zone **Serving**.
-2. Cliquez sur le bouton **Modèles** (en haut de la page du plan).
-3. Choisissez **Enregistrer en tant que Modèle**.
-4. Donnez au modèle un nom (par exemple, "Dimanche Standard" ou "Culte + Sermon").
-5. Enregistrer. Le modèle capture l'ordre de service actuel et les positions du plan à ce moment-là.
+2. Dans la section **Ordre de service** du plan, cliquez sur **Enregistrer en tant que modèle**.
+3. Donnez au modèle un nom (par exemple, "Dimanche Standard" ou "Culte + Sermon").
+4. Enregistrer. Le modèle capture l'ordre de service actuel, les positions et les notes du plan à ce moment-là.
 
 ## Gestion des Modèles
 
-À partir du bouton **Modèles** sur n'importe quelle page de type de plan, vous pouvez :
+Cliquez sur **Modèles** au-dessus de la liste des plans sur n'importe quelle page de type de plan pour ouvrir **Modèles de plan**. Vous pouvez alors :
 
 - **Renommer** — modifier le nom d'affichage du modèle
 - **Mettre à jour à partir du plan** — remplacer le contenu du modèle par l'état actuel d'un plan (utile après avoir affiné votre structure standard)
@@ -37,13 +36,15 @@ Les modèles de plan vous permettent d'enregistrer un cliché réutilisable de l
 
 ## Application d'un Modèle aux Plans
 
-1. Cliquez sur le bouton **Modèles** sur la page du type de plan.
+1. Cliquez sur **Modèles** au-dessus de la liste des plans sur la page du type de plan.
 2. Cliquez sur l'icône **Appliquer** (icône de copie) à côté du modèle que vous voulez utiliser.
 3. Sélectionnez les plans à venir auxquels l'appliquer en cochant leurs boîtes.
 4. Choisissez ce qu'il faut copier :
    - **Ordre de Service** — remplace les éléments d'ordre de service des plans sélectionnés par les éléments du modèle
    - **Positions** — remplace les positions des plans sélectionnés (et leurs affectations) par les positions du modèle
 5. Cliquez sur **Appliquer**.
+
+Si le modèle contient des notes, son application remplace aussi les notes des plans sélectionnés par les notes du modèle.
 
 :::warning
 L'application des positions remplace toutes les positions et affectations existantes sur les plans sélectionnés. Assurez-vous que vous n'avez pas déjà programmé des bénévoles pour ces positions avant d'appliquer.
@@ -52,6 +53,10 @@ L'application des positions remplace toutes les positions et affectations exista
 :::tip
 Appliquez l'Ordre de Service sans Positions lorsque vous voulez une structure chanson/sermon cohérente mais que les bénévoles sont déjà affectés différemment chaque semaine.
 :::
+
+## Démarrer un Nouveau Plan à partir d'un Modèle {#starting-a-new-plan-from-a-template}
+
+Les modèles sont partagés entre les types de plans d'un ministère. Lorsque vous cliquez sur **Nouveau plan** et que le ministère dispose de modèles, le formulaire de nouveau plan comprend une liste **Démarrer à partir d'un modèle**. Choisissez un modèle et enregistrez : le nouveau plan est créé avec l'ordre de service, les positions et les notes du modèle. Choisir un modèle remplace les options **Copier depuis le plan précédent** pour ce plan.
 
 ## Maintien des Modèles à Jour
 

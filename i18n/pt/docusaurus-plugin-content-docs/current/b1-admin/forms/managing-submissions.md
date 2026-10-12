@@ -72,7 +72,7 @@ Membros do formulário com funções **Admin** ou **Apenas Visualizar** podem ac
 :::
 
 :::tip
-Se um formulário **Autônomo** está definido para criar um registro de pessoa, quaisquer submissões correspondidas a uma pessoa existente também aparecem na guia **Formulários** dessa pessoa na seção Pessoas -- não apenas formulários do tipo Pessoas.
+Se um formulário **Autônomo** está definido para criar um registro de pessoa, quaisquer submissões correspondidas a uma pessoa existente também aparecem na seção **Formulários** da página dessa pessoa em Pessoas -- não apenas formulários do tipo Pessoas.
 :::
 
 ## Próximos Passos

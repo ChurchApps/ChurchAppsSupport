@@ -28,7 +28,7 @@ Organize your sermons into series or collections. Playlists make it easy for you
 
 ### Live Stream Times
 
-Configure your church's live streaming schedule. Set up recurring weekly services or one-time events, manage chat and video settings, and control when your stream goes live. Visitors will see the next scheduled service time on your streaming page. See [Live Streaming](live-streaming) for setup instructions.
+Configure your church's live streaming schedule. Set up recurring weekly services or one-time events, manage chat and video settings, and control when your stream goes live. Visitors will see the next scheduled service time on your streaming page. A separate **Settings** page under **Sermons** controls the tabs (chat, prayer, and custom links) shown beside your live stream. See [Live Streaming](live-streaming) for setup instructions.
 
 ### Bulk Import
 

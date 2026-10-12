@@ -21,7 +21,7 @@ La fonctionnalité Imprimer le répertoire génère un répertoire de membres fo
 ## Ouverture du répertoire d'impression
 
 1. Accédez à **Personnes** dans B1 Admin.
-2. Cliquez sur l' **icône d'impression** (icône d'imprimante) dans la barre d'outils en haut de la carte des résultats Personnes. Il apparaît à côté du bouton Exporter.
+2. Cliquez sur **Print Directory** dans l'en-tête de la page Personnes.
 3. Le répertoire d'impression s'ouvre dans un nouvel onglet du navigateur et commence à charger les données de votre répertoire.
 4. Après environ 1.5 secondes, la boîte de dialogue d'impression de votre navigateur apparaît automatiquement.
 
@@ -33,13 +33,13 @@ Le répertoire s'ouvre dans un onglet séparé afin que vous puissiez l'imprimer
 
 Le répertoire d'impression inclut tous les **membres actifs** de votre église. Spécifiquement :
 
-- Les personnes avec un statut d'adhésion **Inactif** ou **Visiteur** sont automatiquement exclues.
+- Les personnes avec un statut d'adhésion **Inactif**, **Visiteur** ou **Décédé** sont automatiquement exclues.
 - Les personnes qui se sont **désabonnées** du répertoire sont exclues.
 - Tous les autres sont regroupés par **ménage**.
 
 ### Impression uniquement de vos résultats de recherche
 
-Après avoir exécuté une recherche sur la page Personnes -- une recherche rapide, une [Recherche avancée](./searching-people.md#advanced-search), une [Liste enregistrée](./lists.md) ou une [Recherche par IA](./ai-search.md) -- l'icône d'impression change en **Imprimer les résultats**. Cliquer dessus imprime un répertoire de juste les personnes de vos résultats au lieu de toute l'église, en utilisant la même mise en page.
+Après avoir exécuté une recherche sur la page Personnes -- une recherche rapide, une [Recherche avancée](./searching-people.md#advanced-search), une [Liste enregistrée](./lists.md) ou une [Recherche par IA](./ai-search.md) -- le bouton **Print Directory** devient **Imprimer les résultats**. Cliquer dessus imprime un répertoire de juste les personnes de vos résultats au lieu de toute l'église, en utilisant la même mise en page.
 
 Lors de l'impression des résultats de recherche, le filtre de statut d'adhésion ci-dessus ne s'applique pas : tous les personnes que vous avez recherchées sont incluses, même les visiteurs ou les personnes inactives. Les personnes qui se sont désabonnées du répertoire sont toujours exclues. Pour revenir à l'impression du répertoire complet, effacez d'abord votre recherche.
 

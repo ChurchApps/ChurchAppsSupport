@@ -21,7 +21,7 @@ O recurso Print Directory gera um diretório de membros formatado e imprimível 
 ## Abrindo o Imprimir Diretório
 
 1. Navegue até **Pessoas** em B1 Admin.
-2. Clique no **ícone de impressão** (ícone de impressora) na barra de ferramentas no topo do cartão de resultados de Pessoas. Ele aparece ao lado do botão Exportar.
+2. Clique em **Imprimir Diretório** no cabeçalho da página Pessoas.
 3. O Print Directory abre em uma nova aba do navegador e começa a carregar dados do seu diretório.
 4. Após cerca de 1,5 segundos, o diálogo de impressão do seu navegador aparecerá automaticamente.
 
@@ -33,13 +33,13 @@ O diretório abre em uma aba separada para que você possa imprimi-lo sem sair d
 
 O diretório impresso inclui todos os **membros ativos** da sua igreja. Especificamente:
 
-- Pessoas com status de filiação **Inactive** ou **Visitor** são automaticamente excluídas.
+- Pessoas com status de filiação **Inactive**, **Visitor** ou **Deceased** são automaticamente excluídas.
 - Pessoas que **optaram por não participar** do diretório são excluídas.
 - Todos os outros estão agrupados por **família**.
 
 ### Imprimindo Apenas Seus Resultados de Pesquisa
 
-Após você executar uma pesquisa na página de Pessoas — uma pesquisa rápida, uma [Pesquisa Avançada](./searching-people.md#advanced-search), uma [Lista Salva](./lists.md) ou uma [Pesquisa por IA](./ai-search.md) — o ícone de impressão muda para **Print Results**. Clicando nele imprime um diretório de apenas as pessoas em seus resultados em vez de toda a igreja, usando o mesmo layout.
+Após você executar uma pesquisa na página de Pessoas — uma pesquisa rápida, uma [Pesquisa Avançada](./searching-people.md#advanced-search), uma [Lista Salva](./lists.md) ou uma [Pesquisa por IA](./ai-search.md) — o botão **Imprimir Diretório** muda para **Print Results**. Clicando nele imprime um diretório de apenas as pessoas em seus resultados em vez de toda a igreja, usando o mesmo layout.
 
 Ao imprimir resultados de pesquisa, o filtro de status de filiação acima não se aplica: todos que você pesquisou estão incluídos, mesmo Visitantes ou pessoas Inativas. Pessoas que optaram por não participar do diretório ainda são deixadas de fora. Para voltar a imprimir o diretório completo, limpe sua pesquisa primeiro.
 

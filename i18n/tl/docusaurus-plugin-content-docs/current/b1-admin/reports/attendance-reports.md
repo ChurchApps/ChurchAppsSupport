@@ -23,7 +23,7 @@ Nagbibigay ang B1 Admin ng tatlong ulat sa attendance para matulungan kayong mau
 
 Ipinapakita ng ulat na Attendance Trend kung paano nagbabago ang attendance sa paglipas ng panahon para sa inyong mga serbisyo.
 
-1. Pumunta nang direkta sa **admin.b1.church/reports/attendanceTrend** sa inyong browser (walang entry ang mga ulat sa navigation menu — ang pinakamadaling paraan para makabalik ay i-bookmark ang address). Makikita rin ang parehong ulat sa tab na **Attendance Trend** ng pahinang Attendance.
+1. Pumunta nang direkta sa **admin.b1.church/reports/attendanceTrend** sa inyong browser (walang entry ang mga ulat sa navigation menu — ang pinakamadaling paraan para makabalik ay i-bookmark ang address). Makikita rin ang parehong ulat sa pahinang Attendance: i-click ang **All years**, pagkatapos piliin ang tab na **Attendance Trend**.
 2. Opsyonal na pumili ng **Campus**, **Service**, **Service Time**, o **Group** para i-filter ang mga resulta.
 3. I-set ang **Start Date** at **End Date**. Bilang default, sakop ng ulat ang nakaraang isang taon, mula isang taon na ang nakalipas hanggang ngayon, at buong isinasama ang end date. I-click ang **Run Report**.
 4. Ipinapakita ng ulat ang bar chart at talahanayan ng kabuuang bilang ng pagdalo bawat linggo. Ang bawat linggo ay may label na petsa ng Linggo ng linggong iyon, at ang column na **Session Dates** ng talahanayan ay naglilista ng mga aktwal na petsa sa linggong iyon na may attendance (halimbawa, "9/27, 9/30").
@@ -34,7 +34,7 @@ Kapaki-pakinabang ang ulat na ito para makita ang mga pattern tulad ng pana-pana
 
 Ipinapakita ng ulat na Group Attendance kung sino ang dumalo sa bawat session ng group sa isang saklaw ng petsa.
 
-1. Pumunta nang direkta sa **admin.b1.church/reports/groupAttendance** sa inyong browser, o buksan ang tab na **Group Attendance** ng pahinang Attendance.
+1. Pumunta nang direkta sa **admin.b1.church/reports/groupAttendance** sa inyong browser, o sa pahinang Attendance, i-click ang **All years** at piliin ang tab na **Group Attendance**.
 2. Opsyonal na pumili ng **Campus** at **Service**.
 3. I-set ang **Start Date** at **End Date**. Bilang default, sakop ng ulat ang nakaraang Linggo hanggang ngayon, at buong isinasama ang end date.
 4. I-click ang **Run Report**.

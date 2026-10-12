@@ -33,7 +33,7 @@ Cliquez sur un service pour le sélectionner et passer à l'étape suivante.
 Après avoir sélectionné un service, vous verrez une liste de vos membres du ménage. Pour chaque personne qui assiste :
 
 1. Appuyez sur un membre du ménage pour développer son entrée.
-2. Vous verrez les **créneaux horaires du service** disponibles pour le service que vous avez sélectionné.
+2. Vous verrez les **créneaux horaires du service** disponibles pour le service que vous avez sélectionné. Si votre église a défini un calendrier d'enregistrement pour un créneau horaire, celui-ci n'apparaît que pendant que l'enregistrement est ouvert (par exemple, de 30 minutes avant le service jusqu'à peu de temps après sa fin).
 3. Cliquez sur **Sélectionner un groupe** à côté d'un créneau horaire pour choisir le groupe dans lequel la personne doit être enregistrée (tel que « Culte principal », « Salle pour enfants 1 » ou « Groupe de jeunes »).
 4. Répétez pour chaque membre du ménage qui assiste.
 
@@ -57,6 +57,8 @@ Si vous devez modifier une sélection de groupe avant de terminer l'enregistreme
 
 - Vous ne pouvez enregistrer que les membres du ménage qui sont liés à votre compte. Si un membre de la famille est manquant, demandez à l'administrateur de votre église de l'ajouter à votre ménage.
 - Si aucun service n'apparaît sur la page d'enregistrement, votre église n'a peut-être pas de services configurés pour l'enregistrement pour le moment.
+- Si vous sélectionnez un service et voyez « L'enregistrement n'est pas ouvert pour ce service pour le moment », aucun des créneaux de ce service ne se trouve actuellement dans sa fenêtre d'enregistrement. Réessayez plus près de l'heure du service.
+- Si une salle que vous avez choisie est pleine ou fermée, vous verrez : « Une salle que vous avez choisie est pleine ou fermée pour l'enregistrement. Veuillez vous adresser à un bénévole. »
 
 :::warning
 L'enregistrement n'est disponible que lorsque votre église a des services actifs configurés. Si vous ne voyez aucun service listé, vérifiez auprès du bureau de votre église pour confirmer si l'auto-enregistrement est activé.

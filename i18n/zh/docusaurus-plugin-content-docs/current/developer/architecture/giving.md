@@ -140,9 +140,9 @@ Paystack 与其他不同，金钱在 GivingApi 涉及之前移动：弹出收费
 
 ### 管理员录制和 Stripe 导入（B1Admin）
 
-B1Admin 捐款部分（`B1Admin/src/donations/`）是金融团队工作的地方。批量条目（`components/BulkDonationEntry.tsx`）通过发布 `/giving/donations` 然后 `/giving/funddonations` 记录现金/支票/实物礼物 -- 没有网关涉及。基金、批次、活动和声明每个映射到他们的 `/giving/*` CRUD 路由。
+B1Admin 捐款部分（`B1Admin/src/donations/`）是金融团队工作的地方。批量条目（`components/BulkDonationEntry.tsx`）通过发布 `/giving/donations` 然后 `/giving/funddonations` 记录现金/支票/实物礼物 -- 没有网关涉及。人员记录上的**记录捐赠**面板（`components/LogGiftDialog.tsx`）为单笔捐赠执行相同操作：先查找 `batchDate` 与捐赠日期匹配的批次，若没有则创建一个以该日期命名的批次（`POST /giving/donationbatches`），如果后续步骤失败，则再删除该捐赠/新建的批次。基金、批次、活动和声明每个映射到他们的 `/giving/*` CRUD 路由。
 
-报告和会计交接是客户端或报告运行器工作，不是网关工作：批次页面的 QuickBooks 导出从批次的 `donations` + `fundDonations` 构建日记条目 CSV（借用未存款的基金，每个基金一个信用），"失效捐献者"选项卡运行 `Api/reports/lapsedGivers.json` 通过通用报告运行器与人员名称由 `ReportOutput` 解决，国家收据格式（加拿大/澳大利亚/新西兰）是教会设置在成员资格键/值存储中由 `GivingStatementDocument` 呈现并复制在 B1App 打印页面。
+报告和会计交接是客户端或报告运行器工作，不是网关工作：批次页面的 QuickBooks 导出从批次的 `donations` + `fundDonations` 构建日记条目 CSV（借用未存款的基金，每个基金一个信用），汇总页面的"失效捐献者"视图运行 `Api/reports/lapsedGivers.json` 通过通用报告运行器与人员名称由 `ReportOutput` 解决，国家收据格式（加拿大/澳大利亚/新西兰）是教会设置在成员资格键/值存储中由 `GivingStatementDocument` 呈现并复制在 B1App 打印页面。B1Admin 的声明打印页面（`PrintDonationPage`、`PrintAllStatementsPage`）会传递教会的 `logoLight` 设置（通过 `B1Admin/src/components/PrintChurchHeader.tsx` 中的 `usePrintLogo`），使 logo 打印在每份声明的顶部，并在自动打印前等待图片加载完成。
 
 ### 转换混合货币总计
 

@@ -24,8 +24,8 @@ Lorsqu'un membre soumet une modification de profil, elle apparaît en tant que t
 
 **À partir du Tableau de bord (votre page d'accueil) :**
 1. Connectez-vous à B1 Admin — le Tableau de bord se charge automatiquement.
-2. Dans la section **Tâches** sur le côté droit, cliquez sur l'onglet **Assignées à mes groupes**.
-3. Toutes les demandes de modification de profil en attente seront listées ici.
+2. Dans la section **My tasks**, cliquez sur **All tasks**. (**Mes tâches** ne liste que les tâches ouvertes qui vous sont assignées personnellement.)
+3. Cliquez sur l'onglet **Assignées à mes groupes**. Toutes les demandes de modification de profil en attente y seront listées.
 
 **À partir de Activités → Mon travail :**
 1. Ouvrez le [menu de saut](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche de B1 Admin) et développez **Activités**.

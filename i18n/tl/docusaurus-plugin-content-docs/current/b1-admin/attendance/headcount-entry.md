@@ -19,13 +19,13 @@ Hinahayaan kayo ng mga headcount na itala ang simpleng kabuuang bilang ng attend
 </div>
 
 :::info
-Ang mga headcount ay alternatibong kabuuan lamang ng [Pagtatala ng Attendance](recording-attendance.md). Kung kailangan ninyong malaman kung **sino** ang dumalo -- halimbawa, para kumustahin ang mga hindi na bumabalik -- ipagpatuloy ang paggamit ng may pangalang session attendance sa tab na Sessions ng isang grupo. Bilang lamang ang iniimbak ng mga headcount.
+Ang mga headcount ay alternatibong kabuuan lamang ng [Pagtatala ng Attendance](recording-attendance.md). Kung kailangan ninyong malaman kung **sino** ang dumalo -- halimbawa, para kumustahin ang mga hindi na bumabalik -- ipagpatuloy ang paggamit ng may pangalang session attendance sa Sessions ng isang grupo. Bilang lamang ang iniimbak ng mga headcount.
 :::
 
 ## Pagtatala ng Headcount
 
 1. Buksan ang **B1 Admin**, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **People**, at i-click ang **Attendance**.
-2. Piliin ang sub-tab na **Headcounts**.
+2. I-click ang **Enter headcount** sa kaliwang column.
 3. Punan ang form:
    - **Service** *(kinakailangan)*
    - **Service Time** -- iwanang blangko para itala ang kabuuan sa lahat ng oras ng serbisyo
@@ -34,14 +34,14 @@ Ang mga headcount ay alternatibong kabuuan lamang ng [Pagtatala ng Attendance](r
    - **Headcount** -- ang kabuuang bilang ng mga taong dumalo
 4. I-click ang **Save**.
 
-Ang talahanayang **Recent Headcounts** sa kanan ay naglilista ng huli ninyong mga entry kasama ang petsa, serbisyo, oras ng serbisyo, grupo, at bilang. I-click ang isang hilera para i-load itong muli sa form kung kailangan ninyo itong itama o tanggalin.
+Ang talahanayang **Recent Headcounts** sa tabi ng form ay naglilista ng huli ninyong mga entry kasama ang petsa, serbisyo, oras ng serbisyo, grupo, at bilang. I-click ang isang hilera para i-load itong muli sa form kung kailangan ninyo itong itama o tanggalin.
 
 ## Headcount Trend Report
 
-1. Mula sa parehong pahina ng **Attendance**, piliin ang tab na **Headcount Trend**.
+1. Mula sa parehong pahina ng **Attendance**, i-click ang **All years** sa kaliwang column, pagkatapos ay piliin ang tab na **Headcount Trend**.
 2. Gamitin ang mga filter na **Campus**, **Service**, **Service Time**, at **Group** para paliitin ang report.
 
-Ipinapakita ng report ang mga naitalang headcount na pinagsama kada linggo, bilang line chart at talahanayan -- ang parehong istilo ng report na ginagamit sa [mga trend tab ng Attendance at Groups](tracking-attendance.md).
+Ipinapakita ng report ang mga naitalang headcount na pinagsama kada linggo, bilang line chart at talahanayan -- ang parehong istilo ng report na ginagamit sa [mga tab na Attendance Trend at Group Attendance](tracking-attendance.md). Ang mga headcount na naitala para sa kasalukuyang linggo ay lumalabas din sa ilalim ng **Headcounts this week** sa pangunahing pahina ng Attendance.
 
 ## Mga Kaugnay na Pahina
 

@@ -24,12 +24,11 @@ La forma más rápida de exportar tu directorio es directamente desde la página
 
 1. Abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expande **People**, y haz clic en **People**.
 2. Usa la barra de búsqueda o filtros para reducir los resultados que deseas exportar (o déjalo sin filtrar para exportar a todos). Ver [Buscar Personas](searching-people.md) para consejos de filtrado.
-3. Usa el **selector de columnas** para elegir qué columnas deseas incluir en la exportación (por ejemplo, Nombre, Correo Electrónico, Teléfono, Dirección).
-4. Haz clic en el botón **Exportar**.
-5. Un archivo CSV se descargará a tu computadora con los datos actualmente mostrados en la tabla.
+3. Haz clic en el botón **Exportar** en el encabezado de la página de Personas.
+4. Un archivo CSV se descargará a tu computadora con las personas que están actualmente en tus resultados, incluyendo su nombre, información de contacto, dirección y otros campos estándar.
 
 :::tip
-Personaliza tus columnas antes de exportar. El archivo CSV incluirá exactamente las columnas que tienes visibles, para que puedas adaptar la exportación a tus necesidades sin editar el archivo después.
+La exportación incluye a todas las personas en tus resultados actuales. Haz una búsqueda, carga una [Lista guardada](./lists.md) o usa primero la búsqueda **Avanzada** para exportar solo las personas que necesitas.
 :::
 
 ## Exportación Completa de Datos desde Configuración
@@ -37,7 +36,7 @@ Personaliza tus columnas antes de exportar. El archivo CSV incluirá exactamente
 Para una exportación completa de todos tus datos B1 (no solo personas), usa la herramienta de exportación en Configuración:
 
 1. En el menú Saltar, elige **Configuración > Configuración**.
-2. Haz clic en el botón **Importar/Exportar** en la esquina superior derecha del encabezado de la página.
+2. Haz clic en el enlace **Importar/Exportar** debajo del nombre de tu iglesia, en la parte superior del menú de configuración de la izquierda.
 3. Selecciona **B1 Database** del menú desplegable **Fuente de Datos**.
 4. Revisa la vista previa de datos y haz clic en **Continuar al Destino**.
 5. Selecciona **Zip de Exportación B1** como destino de exportación.

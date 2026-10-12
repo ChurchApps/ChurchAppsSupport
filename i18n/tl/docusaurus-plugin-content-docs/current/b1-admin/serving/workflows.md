@@ -23,7 +23,7 @@ Ang mga Workflow ay nagpapausad sa mga tao sa serye ng mga hakbang sa isang visu
 
 ## Pagtingin sa mga Workflow
 
-Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas na kaliwa ng B1 Admin), i-expand ang **Serving**, at i-click ang **Workflows**. Makikita mo ang listahan ng iyong mga workflow na naka-grupo ayon sa kategorya, at naka-highlight ang mga aktibong workflow. I-click ang anumang workflow para buksan ang board nito.
+Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas na kaliwa ng B1 Admin), i-expand ang **Serving**, at i-click ang **Workflows**. Nakalista ang iyong mga workflow sa isang table na nagpapakita ng **Category** at **Status** ng bawat isa (**Active** o **Inactive**). Kung gumagamit ka ng mga kategorya, may mga tab sa itaas ng listahan na nagfi-filter dito ayon sa kategorya. I-click ang anumang workflow para buksan ang board nito.
 
 ## Paggawa ng Workflow
 
@@ -51,7 +51,7 @@ Kapag nagdagdag o nag-edit ka ng hakbang, maaari mong i-configure ang:
 
 - **Step Name** -- ang pamagat ng column (halimbawa, "Welcome Call" o "Awaiting Registration").
 - **Due in (days)** -- awtomatikong nagtatakda ng due date kapag pumasok ang isang card sa hakbang na ito. Ang mga card na lampas na sa due date ay minamarkahang **Overdue**.
-- **Default assignee** -- ang taong o grupong awtomatikong pagtatalagahan ng mga bagong card sa hakbang na ito.
+- **Default assignee** -- ang taong o grupong awtomatikong pagtatalagahan ng mga bagong card sa hakbang na ito. Kapag isang tao ang default assignee, makakatanggap siya ng abiso na may card na naitalaga sa kanya.
 - **Automated actions** -- mga bagay na kusang ginagawa ng sistema kapag dumating ang isang card (tingnan sa ibaba).
 - **Routing** -- kung saan pupunta ang card kapag umalis ito sa hakbang (tingnan ang [Routing](#routing-cards-with-outcomes-and-conditions)).
 
@@ -140,11 +140,15 @@ Mula sa drawer ng card, maaari mong:
 - **Send Back** sa nakaraang hakbang o **Skip** sa susunod na hakbang.
 - **Pin assignment** -- panatilihin ang parehong may-ari ng card kahit lumipat ito sa iba't ibang hakbang. Bilang default, ang paglipat ng card sa bagong hakbang ay nagtatalaga ulit nito sa default assignee ng hakbang na iyon; pinapanatili ng pag-pin ang kasalukuyang tao bilang responsable hanggang dulo.
 - **Complete** ang card para tapusin ito, o pumili ng button na **Outcome** kung may naka-configure na mga outcome ang hakbang (tingnan ang [Routing](#routing-cards-with-outcomes-and-conditions)).
-- **Magdagdag ng mga tala** at suriin ang **kasaysayan** ng card -- kasama ang log ng mga awtomatikong aksyong tumakbo na (mga naipadalang email, paghihintay, atbp.).
+- **Magdagdag ng mga tala** at suriin ang **Activity** ng card -- ang log ng mga awtomatikong aksyong tumakbo na (mga naipadalang email, paghihintay, atbp.).
+
+Para sa card tungkol sa isang tao, ipinapakita rin ng drawer ang mobile phone at email ng taong iyon bilang mga link na maaari ninyong i-tap para tawagan o i-email, kasama ang link na **View profile** kung may pahintulot kayong tingnan ang mga tao. Nakikita ng taong nakatalaga sa card ang phone at email kahit walang access sa People.
+
+Nase-save ang mga tala kasama ng card. Ang sinumang makakabukas ng card -- kasama ang taong o grupong nakatalaga rito -- ay makakabasa ng mga tala at makakapagdagdag ng sarili nila. Ang mga hindi makakabukas ng card ay hindi makikita ang mga tala nito.
 
 ### Mga bulk na aksyon
 
-Piliin ang mga checkbox sa maraming card para sabay-sabay silang magawan ng aksyon. Lalabas ang isang toolbar na nagbibigay-daan sa iyong **Complete**, **Snooze**, **Reassign**, o **Move** ang lahat ng napiling card sa ibang hakbang nang sabay-sabay.
+Piliin ang mga checkbox sa maraming card para sabay-sabay silang magawan ng aksyon. Lalabas ang isang toolbar na nagbibigay-daan sa iyong **Complete**, **Snooze**, **Assign** (reassign), o **Move to…** ang lahat ng napiling card sa ibang hakbang nang sabay-sabay.
 
 ## Pag-route ng mga Card gamit ang mga Outcome at Kondisyon
 
@@ -162,7 +166,9 @@ Dahil dito, ang isang desisyon ay maaaring magdala sa tao sa iba't ibang landas.
 
 ### Awtomatikong routing (may kondisyon)
 
-Inililipat ng mga awtomatikong route ang card **sa sandaling pumasok ito sa isang hakbang** (at pagkatapos matapos ang mga awtomatikong aksyon nito), nang walang nagki-click, kung tumutugma ang tao sa isang set ng mga kondisyon. Magdagdag ng route, piliin ang target na hakbang, at tukuyin ang isa o higit pang **kondisyon** (halimbawa, campus, edad, o membership status ng tao). Ang route na walang kondisyon ay tumutugma sa lahat.
+Inililipat ng mga awtomatikong route ang card **sa sandaling pumasok ito sa isang hakbang** (at pagkatapos matapos ang mga awtomatikong aksyon nito), nang walang nagki-click, kung tumutugma ang tao sa isang set ng mga kondisyon. Magdagdag ng route, piliin ang target na hakbang, at tukuyin ang isa o higit pang **kondisyon** (halimbawa, campus, edad, o membership status ng tao). Ang mga text field ay maaaring itugma nang eksakto o gamit ang **contains**, **starts with**, o **ends with**. Ang route na walang kondisyon ay tumutugma sa lahat.
+
+Kung hindi masuri ang mga kondisyon ng isang route sa anumang dahilan, ituturing na hindi tumutugma ang route na iyon. Mananatili ang card sa hakbang (o susunod sa ibang route na tumutugma) sa halip na maipit.
 
 :::info
 Sa board, ang bawat column ng hakbang ay nagpapakita ng maliliit na anotasyon na naglalarawan sa routing nito -- halimbawa, isang label ng outcome o "if matches" na sinusundan ng arrow patungo sa destinasyong hakbang o workflow.
@@ -195,8 +201,8 @@ Tumatakbo nang paulit-ulit -- araw-araw, lingguhan, buwanan, o taunan -- laban s
 
 Para sa anumang trigger, maaari mo ring itakda ang:
 
-- Ang **entry step** kung saan magsisimula ang bagong card (default ay ang unang hakbang).
-- **Once per person** -- para hindi madagdag nang dalawang beses sa workflow ang parehong tao ng trigger.
+- Ang **Starting step** kung saan lalapag ang bagong card (default ay ang unang hakbang).
+- **Only once per person** -- para hindi madagdag nang dalawang beses sa workflow ang parehong tao ng trigger.
 - **Active** -- i-on o i-off ang trigger nang hindi ito binubura.
 
 :::tip
@@ -205,7 +211,7 @@ Ipares ang trigger na **Form · Submitted** sa template na **New Visitor Follow-
 
 ## My Cards
 
-Hindi na kailangang halughugin ng mga volunteer at staff ang bawat board para hanapin ang kanilang gawain. Ang pahinang **My Cards** (may link mula sa pahina ng Workflows) ay naglilista ng bawat card na nakatalaga sa kasalukuyang user sa lahat ng workflow. Ang pag-click sa isang card ay magbubukas ng board na kinabibilangan nito.
+Hindi na kailangang halughugin ng mga volunteer at staff ang bawat board para hanapin ang kanilang gawain. Ang listahang **My Cards** sa pahina ng **My Work** ay nagpapakita ng bawat card na nakatalaga sa kasalukuyang user sa lahat ng workflow. Para makarating doon, i-click ang **My Cards** sa itaas ng pahina ng Workflows, o buksan ang **Serving > My Work** sa Jump menu. Ang pag-click sa isang card ay magbubukas ng board na kinabibilangan nito.
 
 ## Mga Ulat
 

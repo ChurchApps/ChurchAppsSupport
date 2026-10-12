@@ -20,8 +20,8 @@ Envíe su contenido de lecciones a un televisor en la sala de espera o pasillo u
 
 ## Obtención de la URL de Fuente
 
-1. Navegue a **Servicio** y abra el ministerio que contiene su tipo de plan.
-2. Haga clic en el botón **Señalización Digital** (el icono RSS) en la página del tipo de plan.
+1. Vaya a **Servicio**, seleccione el ministerio que contiene su tipo de plan y haga clic en el tipo de plan para abrirlo.
+2. Haga clic en **Señalización Digital** (el icono de televisor) en la parte superior de la página del tipo de plan.
 3. Copie la URL de fuente que se muestra en el diálogo.
 
 :::info

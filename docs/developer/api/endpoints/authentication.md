@@ -94,6 +94,8 @@ POST /membership/users/register
 
 Creates a user with a temporary password and sends a welcome email with an auth link. The first user registered on a new instance is automatically granted server admin access.
 
+Two optional bot-trap fields are accepted: `website` (a hidden honeypot field that real users leave empty) and `fillMs` (how long the form was open, in milliseconds). If `website` is filled in or `fillMs` is under 2000, no account is created, but the endpoint still returns a normal-looking `200` so bots can't tell they were rejected. Clients that omit both fields register as usual.
+
 ### Register a New Church
 
 ```

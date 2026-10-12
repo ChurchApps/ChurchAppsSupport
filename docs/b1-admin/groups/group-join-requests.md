@@ -34,7 +34,7 @@ When a group uses the **Request** policy, all join attempts go through the appro
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) and choose **People > Groups**
 2. Click on the group name
-3. Pending requests for this group appear at the top of the **Members** tab
+3. The **Members** section shows how many requests are pending. Click **All members** -- pending requests for this group appear at the top of the member list
 
 ### For Administrators
 
@@ -85,9 +85,9 @@ Providing a decline reason helps the person understand why their request wasn't 
 
 Every join request also creates a task under **Serving &rarr; My Work**, titled "*Person* requested to join *Group*." It's assigned to the group's leaders. If the group has no leader yet, it goes to any staff with the **Group Members &gt; Edit** permission, or to your church's domain admins if no one has that permission. Staff and admins who get the task this way also receive a notification that links straight to it.
 
-Opening the task shows the requester's name, the group, and their optional message, with **Approve** and **Decline** buttons right on the task card (Decline opens the same optional reason field described above). This gives leaders a second, notification-driven way to act on a request without navigating to the group's Join Requests tab.
+Opening the task shows the requester's name, the group, and their optional message, with **Approve** and **Decline** buttons right on the task card (Decline opens the same optional reason field described above). This gives leaders a second, notification-driven way to act on a request without opening the group's member list.
 
-Deciding a request from either place -- the group's Join Requests tab or its Tasks card -- closes it everywhere, so leaders never see a stale task for a request someone already handled.
+Deciding a request from either place -- the group's member list or its Tasks card -- closes it everywhere, so leaders never see a stale task for a request someone already handled.
 
 ## Notifications
 

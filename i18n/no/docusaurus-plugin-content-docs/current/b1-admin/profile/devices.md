@@ -29,7 +29,7 @@ Når du åpner Enheter-siden, ser du en tabell som viser alle registrerte enhete
 
 ## Legge til en ny enhet
 
-1. Klikk på **Add Device**-knappen øverst på Enheter-siden.
+1. Klikk på **Legg til skjerm**-knappen øverst på Enheter-siden.
 2. Du blir bedt om å skrive inn en **parkoblingskode**.
 3. Finn parkoblingskoden som vises på ChurchAppsPlayer- eller FreePlay-enheten du vil koble til.
 4. Skriv inn koden. Hvis det er en FreePlay-TV, lar en **Show Plans For**-nedtrekksmeny deg velge hvilken plantype skjermen skal følge -- la den stå på **None** for å bruke enheten kun til nettlesing og varsler.
@@ -41,7 +41,7 @@ Sørg for at enheten er slått på og koblet til internett før du forsøker å 
 
 ## Redigere en enhetsetikett
 
-1. Klikk på **enhetsnavnet** i enhetstabellen.
+1. Klikk på **Rediger** ved siden av enheten i enhetstabellen.
 2. Oppdater etiketten til noe beskrivende (for eksempel «Hovedskjerm i kirkerommet» eller «Vestibyleskjerm»).
 3. Lagre endringene dine.
 

@@ -21,27 +21,29 @@ Ved slutten av hvert år trenger giverne dine en oppsummering av skattefradragsb
 ## Åpne giveroppgaver
 
 1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i **B1 Admin** (søkefeltet øverst til venstre) og utvid **Donasjoner**.
-2. Klikk på **Giveroppgaver**.
+2. Klikk på **Giveroppgaver**. Siden **Giveroppgaver for gavebunter** åpnes.
 
 ## Lage giveroppgaver
 
-1. Velg **år** fra nedtrekkslisten øverst på siden. Du kan velge inneværende år eller et av de fem foregående årene.
-2. Siden viser sammendragstall for det året, blant annet:
+1. I panelet **Velg år** velger du **År** fra nedtrekkslisten. Du kan velge inneværende år eller et av de fem foregående årene.
+2. Panelet **Sammendrag** under viser tall for det året, blant annet:
    - **Totalt antall givere** -- antall personer som har gitt
    - **Totalt antall donasjoner** -- antall enkeltdonasjoner som er registrert
    - **Totalbeløp** -- det samlede beløpet for all giving
 
 ## Laste ned oppgaver
 
-Du har to alternativer for å få oppgavene til giverne:
+Panelet **Nedlastingsalternativer** gir deg to måter å få oppgavene til giverne:
 
 ### Last ned som CSV-filer
 
-Klikk på **Last ned ZIP** for å laste ned en ZIP-fil med en egen CSV-fil for hver giver. Dette er nyttig hvis du vil sende oppgavene på e-post enkeltvis eller importere dem til et annet system.
+Under **Individuelle CSV-filer** klikker du på **Last ned ZIP** for å laste ned en ZIP-fil med en egen CSV-fil for hver giver. Dette er nyttig hvis du vil sende oppgavene på e-post enkeltvis eller importere dem til et annet system.
 
 ### Skriv ut alle oppgaver
 
-Klikk på **Skriv ut alle** for å åpne en utskriftsvennlig visning av alle giveres oppgaver i nettleseren. Derfra bruker du utskriftsfunksjonen i nettleseren til å sende dem til en skriver. Hver oppgave starter på en ny side, så de er klare til å brettes og sendes i posten.
+Under **Utskriftsvennlige oppgaver** klikker du på **Skriv ut alle** (knappen viser antall oppgaver) for å åpne en utskriftsvennlig visning av alle giveres oppgaver i nettleseren. Derfra bruker du utskriftsfunksjonen i nettleseren til å sende dem til en skriver. Hver oppgave starter på en ny side, så de er klare til å brettes og sendes i posten.
+
+Hvis du har lastet opp en **Logo for lys bakgrunn** under [Nettsted > Utseende](../website/appearance.md), skrives den ut midtstilt øverst på hver oppgave, over tittelen på oppgaven. Dette gjelder både **Skriv ut alle** og oppgaven til én giver når den skrives ut fra vedkommendes post.
 
 :::tip
 Lag oppgavene tidlig i januar, mens registreringene er ferske. Dobbeltsjekk at fondene er riktig merket som skattefradragsberettigede før du lager oppgavene -- bare donasjoner til skattefradragsberettigede fond tas med.
@@ -53,7 +55,7 @@ Giveroppgaver inneholder bare donasjoner som er knyttet til fond med innstilling
 
 ## Kvitteringsformater for Canada, Australia og New Zealand
 
-Menigheter utenfor USA kan bytte oppgaven til landets offisielle kvitteringsoppsett. Gå til **Innstillinger**, åpne **Giving**-delen og sett **Oppgaveformat** til **Canada**, **Australia** eller **New Zealand**. Fyll deretter ut feltene som vises: registreringsnummer (CRA-registreringsnummer, ABN eller New Zealands veldedighetsregistreringsnummer), organisasjonens adresse, navnet på personen som har fullmakt til å signere kvitteringer, og for Canada byen der kvitteringene utstedes.
+Menigheter utenfor USA kan bytte oppgaven til landets offisielle kvitteringsoppsett. Klikk på **Oppgaveformat** øverst på siden for giveroppgaver (eller gå til **Innstillinger** og åpne **Giving**-delen), og sett **Oppgaveformat** til **Canada**, **Australia** eller **New Zealand**. Fyll deretter ut feltene som vises: registreringsnummer (CRA-registreringsnummer, ABN eller New Zealands veldedighetsregistreringsnummer), organisasjonens adresse, navnet på personen som har fullmakt til å signere kvitteringer, og for Canada byen der kvitteringene utstedes.
 
 Oppgavene får da ordlyden skattemyndighetene forventer (for Canada «Official Receipt for Income Tax Purposes» med CRA-referansen), et kvitteringsnummer på formen `YEAR-DONORID`, det kvalifiserte beløpet regnet bare fra skattefradragsberettigede fond, og en egen linje for eventuelle gaver til fond som ikke er fradragsberettigede. Giverne ser den samme kvitteringsblokken når de skriver ut sin egen oppgave fra B1.church.
 

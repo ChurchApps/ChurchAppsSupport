@@ -22,12 +22,14 @@ Ruta base: `/doing/plans`
 | GET | `/:id` | JWT | — | Obtener un plan por ID |
 | GET | `/ids?ids=` | JWT | — | Obtener múltiples planes por IDs separados por comas |
 | GET | `/types/:planTypeId` | JWT | — | Obtener planes por tipo de plan |
+| GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + edición de ministerio | Vista previa del resumen de servicio que envía **Text Volunteers**: `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }` para los voluntarios asignados en el rango (uno por persona; se omiten los que cancelaron la suscripción y los números faltantes; los números compartidos se deduplican; máximo 200) |
 | GET | `/presenter` | JWT | — | Obtener planes para los próximos 7 días (vista de presentador) |
 | GET | `/public/current/:planTypeId` | Público | — | Obtener el plan actual para un tipo de plan |
 | GET | `/public/signup/:churchId` | Público | — | Planes abiertos para autoinscripción, cada uno con sus posiciones de autoinscripción (más `filledCount` de asignaciones Accepted/Unconfirmed) y horarios. Sin nombres de voluntarios |
 | GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` para las posiciones de autoinscripción del plan (nombres para mostrar de las personas asignadas Accepted/Unconfirmed). Devuelve `[]` a menos que `showVolunteerNames` del plan esté activado |
 | POST | `/` | JWT | — | Crear o actualizar planes (acepta objeto único o matriz) |
-| POST | `/copy/:id` | JWT | — | Copiar un plan incluyendo posiciones, horarios, asignaciones y elementos del orden del servicio. El cuerpo incluye `copyMode` ("none", "positions", "all") y `copyServiceOrder` (booleano). `notes` y `signupDeadlineHours` se trasladan desde el plan de origen a menos que el cuerpo los proporcione |
+| POST | `/copy/:id` | JWT | Edición de ministerio | Copiar un plan incluyendo posiciones, horarios, asignaciones y elementos del orden del servicio. El cuerpo incluye `ministryId`, `serviceDate`, `copyMode` ("none", "positions", "all") y `copyServiceOrder` (booleano). Sin `targetPlanId` se crea un plan nuevo, y `notes`, `signupDeadlineHours`, `showVolunteerNames` y `autoReplaceOnDecline` se trasladan desde el plan de origen a menos que el cuerpo los proporcione. Con `targetPlanId`, la copia llena ese plan existente (quien llama debe poder editarlo). La opción **Repeat weekly** de B1Admin llama a esto una vez por semana, copiando cada vez desde el plan creado la semana anterior |
+| POST | `/textRange` | JWT | `texting.send` + edición de ministerio | Enviar un mensaje de texto a cada voluntario asignado en un rango de fechas a través del proveedor de mensajes de texto de la iglesia. Cuerpo: `{ startDate, endDate, ministryId, planTypeId?, message }` (mensaje de hasta 1600 caracteres; los campos de combinación se resuelven por destinatario). Devuelve los conteos de vista previa más `recipientCount`, `successCount`, `failCount` y `error` (`no_provider` o `insufficient_credits`) cuando el envío se detiene antes de tiempo |
 | POST | `/autofill/:id` | JWT | — | Rellenar automáticamente asignaciones de voluntarios para un plan. Cuerpo: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Eliminar un plan y todos los horarios, asignaciones, posiciones y elementos del plan relacionados |
 
@@ -176,10 +178,12 @@ Ruta base: `/doing/tasks`
 |--------|------|---------------|---------|-------------|
 | GET | `/` | JWT | — | Obtener tareas abiertas para el usuario actual |
 | GET | `/:id` | JWT | — | Obtener una tarea por ID |
+| GET | `/:id/contact` | JWT | Puede ver la tarjeta | Información de contacto de la persona a la que se refiere una tarjeta de flujo de trabajo: `{ personId, displayName, mobilePhone, email }`. Permite que una persona asignada que llama sin acceso a Personas contacte a la persona |
 | GET | `/closed` | JWT | — | Obtener tareas cerradas para el usuario actual |
 | GET | `/timeline?taskIds=` | JWT | — | Obtener datos de cronología para tareas por IDs de tarea separados por comas |
 | GET | `/directoryUpdate/:personId` | JWT | — | Obtener tarea de actualización de directorio para una persona |
 | POST | `/` | JWT | — | Crear o actualizar tareas. Agregue `?type=directoryUpdate` para manejar tareas de actualización de directorio (carga automática de fotos) |
+| POST | `/:id/conversation` | JWT | `tasks.edit` o asignado a la tarjeta | Adjuntar la conversación de notas a una tarjeta. Cuerpo: `{ conversationId }`. La primera conversación adjuntada prevalece; las llamadas posteriores devuelven la tarjeta sin cambios |
 | POST | `/loadForGroups` | JWT | — | Cargar tareas para grupos específicos. Cuerpo: `{ groupIds: [], status: "Open" }` |
 
 ## Automatizaciones

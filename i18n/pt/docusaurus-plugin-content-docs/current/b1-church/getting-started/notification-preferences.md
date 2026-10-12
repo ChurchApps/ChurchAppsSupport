@@ -6,7 +6,7 @@ title: "Preferências de Notificação"
 
 <div class="article-intro">
 
-Preferências de notificação permitem que você decida quais notificações você recebe de sua igreja e como você as recebe -- notificações push, email ou o sino no-app. Você pode ajustar bem cada tipo de notificação, definir horários de silêncio, ou silenciar tudo de uma vez, tudo a partir de uma tela.
+Preferências de notificação permitem que você decida quais notificações você recebe de sua igreja e como você as recebe -- notificações push, email, o sino no-app ou (se sua igreja enviar textos) mensagens de texto. Você pode ajustar bem cada tipo de notificação, definir horários de silêncio, ou silenciar tudo de uma vez, tudo a partir de uma tela.
 
 </div>
 
@@ -22,6 +22,7 @@ Na parte superior da tela você encontrará configurações que se aplicam a tud
 
 - **Silenciar tudo** -- Pausa temporariamente todas as notificações não essenciais.
 - **Notificações push** -- Ativa ou desativa notificações push para seu dispositivo.
+- **Mensagens de texto** -- Mostrado apenas se sua igreja tiver envio de textos configurado. Ative para receber lembretes de escala e eventos por texto no número de celular do seu perfil. Ele fica desativado até que você o ative.
 - **Frequência de email** -- Escolha como as notificações de email chegam:
   - **Por notificação** -- Envie um email conforme as coisas acontecem.
   - **Resumo diário** -- Agrupe-as em um email diário.
@@ -35,6 +36,7 @@ Abaixo dos controles globais há uma grade de tipos de notificação. Para cada 
 - **Push** -- Uma notificação em seu dispositivo.
 - **Email** -- Uma mensagem para sua caixa de entrada.
 - **No-App** -- O sino/badge dentro do app.
+- **Texto** -- Uma mensagem de texto para seu celular. Esta coluna só aparece se sua igreja tiver envio de textos configurado, e apenas alguns tipos (como **Lembretes de Evento**, **Serviço e Agendamento** e **Tarefas e Acompanhamentos**) podem receber texto. Os textos só chegam quando **Mensagens de texto** também estiver ativado.
 
 Tipos comuns incluem **Lembretes de Evento**, **Serviço e Agendamento**, **Mensagens Diretas**, **Chat de Grupo**, **Pedidos de Oração** e **Anúncios da Igreja**. Por exemplo, você pode manter notificações push ativadas para Mensagens Diretas, mas desativá-las para Anúncios.
 
@@ -44,7 +46,12 @@ Alguns tipos de notificação estão **sempre ativados** e não podem ser desati
 
 Alguns tipos estão **desativados por padrão** (como mensagens promocionais ou de arrecadação de fundos) e apenas chegam a você se você escolher aceitar.
 
+## Interromper Mensagens de Texto {#stopping-text-messages}
+
+Para deixar de receber textos, desative **Mensagens de texto** e salve. Você também pode responder **STOP** a qualquer texto da sua igreja para excluir seu número dos textos dela.
+
 ## Salvando Suas Alterações
+
 
 Depois de ajustar suas preferências, toque em **Salvar Preferências**. Suas mudanças entram em vigor imediatamente e se aplicam em todos os lugares onde você usa B1.
 

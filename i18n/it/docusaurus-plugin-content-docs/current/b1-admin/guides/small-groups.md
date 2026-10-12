@@ -35,7 +35,7 @@ Popola i tuoi gruppi con membri e designa i leader che possono gestire i propri 
 Segui la guida [Membri del gruppo](../groups/group-members.md) per:
 
 1. Cercare persone e aggiungerle ai gruppi appropriati
-2. Designare i leader del gruppo usando l'icona della chiave verde — i leader ottengono permessi aggiuntivi
+2. Designare i leader del gruppo usando l'icona a stella (**Rendi leader**) — i leader ottengono permessi aggiuntivi
 
 :::tip
 I leader del gruppo possono gestire il calendario del proprio gruppo, pubblicare conversazioni e coordinare eventi senza bisogno di accesso amministratore completo.

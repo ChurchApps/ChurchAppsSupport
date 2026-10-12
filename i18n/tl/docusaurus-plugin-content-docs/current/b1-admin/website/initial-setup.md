@@ -29,7 +29,7 @@ Awtomatikong nakakatanggap ang inyong simbahan ng subdomain sa B1.church (halimb
 4. Para gumamit ng custom domain, mag-log in sa iyong DNS provider (tulad ng GoDaddy, Cloudflare, o AWS) at magdagdag ng dalawang record:
    - Isang **A record** para sa iyong root domain na nakaturo sa `3.23.251.61`
    - Isang **CNAME record** para sa `www` na nakaturo sa `proxy.b1.church`
-5. Bumalik sa B1.church Admin, idagdag ang iyong custom domain sa listahan, at i-click ang **Add** at pagkatapos ay **Save**. Magiging accessible ang iyong site mula sa iyong custom domain sa loob ng ilang minuto.
+5. Bumalik sa B1.church Admin, buksan ang seksyong **Domains** sa parehong Settings page, idagdag ang iyong custom domain sa listahan, at i-click ang **Add** at pagkatapos ay **Save**. Magiging accessible ang iyong site mula sa iyong custom domain sa loob ng ilang minuto.
 
 :::tip
 Kung hindi mo makita ang opsyong Settings, hilingin sa taong nag-setup ng account ng inyong simbahan na bigyan ka ng "Edit Church Settings" na pahintulot. Tingnan ang [Mga Role at Pahintulot](../settings/roles-permissions.md) para sa mga detalye.
@@ -52,7 +52,7 @@ Para sa detalyadong tagubilin sa pagtatrabaho sa mga pahina at navigation, tingn
 
 1. Sa Jump menu, piliin ang **Website > Appearance**.
 2. Gamitin ang **Color Palette** para itakda ang mga brand color mo para sa primary, secondary, at accent na mga tono.
-3. Sa ilalim ng **Typography Settings**, piliin ang iyong heading at body na mga font mula sa font browser.
+3. Sa ilalim ng **Fonts**, piliin ang iyong heading at body na mga font mula sa font browser.
 4. I-upload ang logo ng inyong simbahan sa ilalim ng **Logo** sa Style Settings. Magbigay ng bersyon para sa light na background at para sa dark na background.
 5. I-configure ang iyong **Site Footer** gamit ang contact information at mga link ng inyong simbahan.
 

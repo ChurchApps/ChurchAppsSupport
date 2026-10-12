@@ -29,7 +29,7 @@ The Profile tab holds the information your church sees on your person record:
 - **Name** — First, Middle, and Last name.
 - **Contact** — Email and birth date.
 - **Address** — Street address, city, state, and zip.
-- **Phone** — Mobile, home, and work numbers.
+- **Phone** — Mobile, home, and work numbers. If you turn on text reminders in [Notification Preferences](./notification-preferences.md), they go to your mobile number.
 
 Edit any field and save your changes from the bar at the bottom of the screen.
 

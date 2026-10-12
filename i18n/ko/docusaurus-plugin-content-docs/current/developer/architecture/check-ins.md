@@ -49,7 +49,7 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 |----------------|-----------|---------|
 | `campuses` | name, address | 여기서는 더 이상 사용되지 않음 — 캠퍼스는 멤버십 모듈 (`/membership/campuses`)에서 관리됨; 출석 복사본은 레거시 판독기용으로 고정 읽기 전용 (`models/Campus.ts`) |
 | `services` | campusId, name | 반복되는 모임, 예: "Sunday Morning" (`models/Service.ts`) |
-| `serviceTimes` | serviceId, name | 서비스 내 시간 슬롯, 예: "9:00 AM" (`models/ServiceTime.ts`) |
+| `serviceTimes` | serviceId, name, dayOfWeek, startTime, endTime, checkinOpenMinutes, checkinCloseMinutes | 서비스 내 시간 슬롯, 예: "9:00 AM" (`models/ServiceTime.ts`). 일정 열은 선택 사항이며(마이그레이션 `tools/migrations/attendance/2026-10-10_service_time_schedule.ts`), [체크인 기간](#scheduled-check-in-windows)을 제어합니다 |
 | `groupServiceTimes` | groupId, serviceTimeId | 결합 표: 어느 그룹(교실)이 어느 서비스 시간에 만나는지 (`models/GroupServiceTime.ts`) |
 | `sessions` | groupId, serviceTimeId, sessionDate | 한 날짜에 한 그룹의 한 번의 모임 — 체크인 시간에 게으르게 생성됨 (`models/Session.ts`) |
 | `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | 한 사람이 한 날짜에 참석한 것 (`models/Visit.ts`). `checkinType`은 `member` / `guest` / `volunteer` (NULL = 레거시 멤버)이며, 키오스크에서 설정되고 용량/비율 제한에서 소비됨 |
@@ -110,6 +110,15 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 
 - **하드 (항상 차단):** `checkinClosed`, `current + incoming > capacity`, 손님 수 초과 `guestCapacity`. 배치는 `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }`로 거부됩니다 — 키오스크는 명명된 방을 보여줍니다.
 - **비율 (경고 또는 차단):** 자원봉사자가 아닌 들어오는 사람이 `volunteers < minVolunteers`, 자원봉사자가 전혀 없거나, `children > volunteers × volunteerRatio`인 방으로. 심각도는 교회별 설정 `ratioEnforcement` (`"warn"` 기본값 / `"block"`, B1Admin Manage Church → Check-In, `CheckinSettingsEdit.tsx`에서 편집)를 따릅니다. 경고 모드는 클라이언트가 `acknowledgeWarnings=true`로 다시 제출하지 않으면 `409 { warning: true, error: "ratio", … }`를 반환합니다 — 그 재제출은 키오스크의 직원 확인 재정의입니다.
+
+### 예약된 체크인 기간 {#scheduled-check-in-windows}
+
+서비스 시간에는 선택적인 주간 일정이 있을 수 있습니다(`dayOfWeek` 0–6, 0 = 일요일; `startTime`/`endTime`은 `HH:mm`; `checkinOpenMinutes`, `checkinCloseMinutes`). 이는 B1Admin의 **Attendance → Setup** 서비스 시간 양식(`B1Admin/src/attendance/components/ServiceTimeEdit.tsx`, "Check-in Schedule")에서 편집합니다. `CheckinGateHelper.hasSchedule()`은 `dayOfWeek`와 `startTime`이 모두 설정된 경우에만 서비스 시간을 일정이 있는 것으로 취급하며, 일정이 없는 시간은 시간으로 제한되지 않습니다. `isServiceTimeOpen()`은 교회 현지 시간(교회의 `timeZone`을 사용하는 `DateHelper.toChurchTime`)으로 기간을 계산합니다. 시작 전 `checkinOpenMinutes`부터 종료 후 `checkinCloseMinutes`까지이며(종료 시간이 없으면 시작 후), 자정 또는 주 경계를 넘는 기간도 처리합니다.
+
+기간은 두 곳에서 적용됩니다:
+
+- **목록:** `GET /attendance/servicetimes`는 각 행에 계산된 `checkinOpen` 불리언을 붙입니다. B1App 셀프 체크인(`CheckinPage.tsx`)은 `checkinOpen === false`인 시간을 제외하며, 남은 시간이 없으면 "Check-in isn't open for this service right now."를 표시합니다. B1Checkin은 아직 이 값으로 필터링하지 않습니다.
+- **게시:** `evaluateGates()` 내부, 용량/비율 평가 전에 `findClosedServiceTimeGroups()`가 대상 세션의 서비스 시간이 기간 밖에 있으면 배치를 `409 { error: "notOpen", groups: [{ groupId, groupName, reason: "notOpen" }] }`로 거부합니다. B1Checkin은 이를 기존 하드 게이트 화면("방이 정원 초과 또는 마감")으로 표시합니다.
 
 ### 나이/학년 적격성 (키오스크 측)
 

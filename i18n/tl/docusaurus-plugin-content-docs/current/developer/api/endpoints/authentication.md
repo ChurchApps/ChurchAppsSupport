@@ -94,6 +94,8 @@ POST /membership/users/register
 
 Lumilikha ng gumagamit na may pansamantalang password at nagpapadala ng welcome email na may auth link. Ang unang gumagamit na nagrehistro sa bagong instance ay awtomatikong binibigyan ng server admin access.
 
+Dalawang opsyonal na bot-trap field ang tinatanggap: `website` (isang nakatagong honeypot field na iniiwang walang laman ng mga totoong user) at `fillMs` (gaano katagal bukas ang form, sa milliseconds). Kapag may laman ang `website` o mas mababa sa 2000 ang `fillMs`, walang account na nalilikha, ngunit nagbabalik pa rin ang endpoint ng normal na mukhang `200` para hindi malaman ng mga bot na tinanggihan sila. Ang mga client na walang ibinibigay sa dalawang field na ito ay nagre-register gaya ng dati.
+
 ### Magrehistro ng Bagong Simbahan
 
 ```

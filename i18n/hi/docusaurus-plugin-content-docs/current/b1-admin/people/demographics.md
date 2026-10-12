@@ -2,58 +2,58 @@
 title: "जनसांख्यिकी"
 ---
 
-# Demographics
+# जनसांख्यिकी {#demographics}
 
 <div class="article-intro">
 
-The **Demographics** dashboard gives you a visual snapshot of your congregation — who they are, how many there are, and how your membership is distributed across age groups, genders, marital statuses, and campuses. Every chart is interactive: click any segment to jump straight to a filtered People search showing exactly those people.
+**Demographics** डैशबोर्ड आपकी मंडली का एक दृश्य सारांश देता है — वे कौन हैं, कितने हैं, और आपकी सदस्यता आयु वर्गों, लिंग, वैवाहिक स्थिति और campuses में कैसे बँटी है। हर चार्ट interactive है: किसी भी हिस्से पर क्लिक करें और सीधे उन्हीं लोगों को दिखाने वाली filtered People search पर पहुँच जाएँगे।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- People must exist in your directory. See [Adding People](./adding-people.md) or [Importing Data](./importing-data.md) to get started.
-- To see the Campus chart, you first need campuses configured in [Settings → Campuses](../settings/campuses.md).
+- आपकी directory में लोग मौजूद होने चाहिए। शुरुआत करने के लिए [Adding People](./adding-people.md) या [Importing Data](./importing-data.md) देखें।
+- Campus चार्ट देखने के लिए, पहले [Settings → Campuses](../settings/campuses.md) में campuses कॉन्फ़िगर करने होंगे।
 
 </div>
 
-## Opening Demographics
+## Demographics खोलना {#opening-demographics}
 
-From the **People** page, click the **Demographics** button in the page header (the bar chart icon). The page shows your total person count at the top, followed by the charts described below.
+**People** पेज से, पेज हेडर में **Demographics** पर क्लिक करें। पेज के सबसे ऊपर आपकी कुल व्यक्ति संख्या दिखती है, उसके नीचे नीचे वर्णित चार्ट।
 
-## Charts
+## चार्ट {#charts}
 
-### Age Distribution
+### आयु वितरण {#age-distribution}
 
-A grouped bar chart showing how many people fall into each age bracket (for example, 0–9, 10–17, 18–24, and so on through 65+). Each bar is split into three series — **Female**, **Male**, and **Unassigned** — so you can see the gender breakdown within each age group at a glance.
+एक समूहबद्ध बार चार्ट जो दिखाता है कि हर आयु वर्ग में कितने लोग हैं (उदाहरण के लिए, 0–9, 10–17, 18–24, और इसी तरह 65+ तक)। हर बार तीन श्रेणियों में बँटा है — **Female**, **Male**, और **Unassigned** — ताकि आप एक नज़र में हर आयु समूह में लिंग के अनुपात को देख सकें।
 
-### Membership Status
+### सदस्यता स्थिति {#membership-status}
 
-A donut chart breaking down your congregation by membership status (for example, Member, Regular Attender, Visitor, and so on).
+एक donut चार्ट जो आपकी मंडली को सदस्यता स्थिति के अनुसार बाँटता है (उदाहरण के लिए, Member, Regular Attender, Visitor, और इसी तरह)।
 
-### Gender
+### लिंग {#gender}
 
-A donut chart showing the proportion of female, male, and unassigned records in your directory.
+एक donut चार्ट जो आपकी directory में female, male और unassigned रिकॉर्ड्स का अनुपात दिखाता है।
 
-### Marital Status
+### वैवाहिक स्थिति {#marital-status}
 
-A donut chart showing the breakdown across marital status values (for example, Married, Single, Widowed).
+एक donut चार्ट जो वैवाहिक स्थिति के मानों में बँटवारा दिखाता है (उदाहरण के लिए, Married, Single, Widowed)।
 
-### Campus
+### Campus {#campus}
 
-A donut chart showing how people are distributed across your church's campuses. This chart only appears if you have campuses configured and at least one person assigned to a campus. People with no campus assigned appear as **Unassigned**.
+एक donut चार्ट जो दिखाता है कि लोग आपके चर्च के campuses में कैसे बँटे हैं। यह चार्ट तभी दिखता है जब आपके पास campuses कॉन्फ़िगर हों और कम से कम एक व्यक्ति किसी campus को सौंपा गया हो। जिन लोगों को कोई campus नहीं सौंपा गया, वे **Unassigned** के रूप में दिखते हैं।
 
-## Drilling Into the Data
+## डेटा में गहराई से जाना {#drilling-into-the-data}
 
-Click any slice of a donut chart or any bar segment on the age chart to navigate to the **People** page pre-filtered to show exactly those people. Use this to quickly build a contact list, run a bulk action, or export a segment — for example, click the **Visitor** slice in Membership Status to see all visitors and then send them to a workflow.
+किसी donut चार्ट के किसी भी हिस्से पर, या आयु चार्ट के किसी भी bar segment पर क्लिक करें, और आप ठीक उन्हीं लोगों को दिखाने वाले पूर्व-filtered **People** पेज पर पहुँच जाएँगे। इसका उपयोग करके आप जल्दी से संपर्क सूची बना सकते हैं, कोई बल्क क्रिया चला सकते हैं, या किसी segment को export कर सकते हैं — उदाहरण के लिए, सभी visitors को देखने और फिर उन्हें किसी workflow में भेजने के लिए Membership Status में **Visitor** वाले हिस्से पर क्लिक करें।
 
 :::tip
-After drilling into a filtered result, use **Save as List** in the People search to save that filter for future use. See [Saved Lists](./lists.md).
+किसी filtered परिणाम में गहराई से जाने के बाद, उस filter को भविष्य में उपयोग के लिए सहेजने हेतु People search में **Save as List** का उपयोग करें। देखें [Saved Lists](./lists.md)।
 :::
 
-## Related Articles
+## संबंधित लेख {#related-articles}
 
-- [Searching People](./searching-people.md) — the People page you land on when drilling into a chart
-- [Saved Lists](./lists.md) — save a demographic segment as a reusable list
-- [Campuses](../settings/campuses.md) — configure campuses so the Campus chart appears
+- [Searching People](./searching-people.md) — वह People पेज जहाँ आप चार्ट में गहराई से जाने पर पहुँचते हैं
+- [Saved Lists](./lists.md) — किसी जनसांख्यिकीय segment को पुनः उपयोग योग्य list के रूप में सहेजें
+- [Campuses](../settings/campuses.md) — campuses कॉन्फ़िगर करें ताकि Campus चार्ट दिखे

@@ -37,7 +37,7 @@ Synkroniseringen er **enveis** (B1 → Mailchimp) og berører bare Mailchimp-sta
 
 ## Oppsett
 
-1. Gå til **Innstillinger → Utvikler → Webhooks → Legg til Webhook** i B1Admin.
+1. Gå til **Innstillinger → Utvikler → Webhooks → Ny Webhook** i B1Admin.
 2. Sett **Koblingtype** til **Mailchimp**.
 3. Lim inn din **Mailchimp API-nøkkel** og **publikum-ID**. Nøkkelen lagres kryptert og vises aldri igjen.
 4. De relevante hendelsene er forhåndsvalgte; avmerke eventuelle du ikke vil ha (f.eks. la person-hendelser være påslått men hopp over gruppe-tagger).

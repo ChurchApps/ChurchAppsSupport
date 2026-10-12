@@ -20,20 +20,20 @@ The Profile page lets you edit your personal account settings. Your profile is s
 
 ## Profile Information
 
-The top section of the Profile page contains your basic account details:
+The Profile page shows your name and email address on the left, with an **Edit** button below them. Click **Edit** to open the **Edit Account** form, which contains your basic account details:
 
 1. **Email** -- Your email address used for logging in and receiving notifications.
 2. **First Name** and **Last Name** -- Your display name across ChurchApps.
 3. **Password** -- Update your account password.
 
-To update your information, edit the fields and click the **Save Changes** button.
+To update your information, edit the fields and click the **Save Changes** button. Click **Cancel** (or the **Back to** link with your name) to return to your profile without saving.
 
 ## Changing Your Password
 
-1. Scroll to the password fields on the Profile page.
-2. Enter your **Current Password**.
-3. Enter your new password in the **Password** field.
-4. Re-enter it in the **Confirm Password** field.
+1. On the Profile page, click **Edit**.
+2. Enter your **Current password**.
+3. Enter your new password in the **New password** field.
+4. Re-enter it in the **Verify password** field.
 5. Click **Save Changes**.
 
 :::info
@@ -46,17 +46,17 @@ The **Linked Accounts** section shows any external services connected to your Ch
 
 ## Theme Preferences
 
-ChurchApps supports both light and dark display modes:
+B1 Admin supports both light and dark display modes:
 
-1. Find the **Theme** toggle on your Profile page.
-2. Switch between **Light** and **Dark** mode.
+1. Click your profile picture in the top right corner of B1 Admin to open your user menu.
+2. Under **Theme Preferences**, choose **Light Mode** or **Dark Mode**.
 3. The interface will update immediately to reflect your choice.
 
-Your theme preference is saved to your account and will apply across all your sessions.
+Your choice is remembered on that device and browser.
 
 ## Account Deletion
 
-At the bottom of the Profile page, you will find the option to delete your account.
+In the **Account Deletion** section of the Profile page, you will find the option to delete your account.
 
 - If your church has **not** configured a Directory Approval Group, clicking **Delete my account** removes your account and associated data immediately, and this cannot be undone.
 - If your church **has** configured a Directory Approval Group, your request is sent to that group for review instead. The button is disabled while the request is pending, and you'll be notified once your church approves or declines it. See [Reviewing Account Deletion Requests](./account-deletion.md) for what happens next.

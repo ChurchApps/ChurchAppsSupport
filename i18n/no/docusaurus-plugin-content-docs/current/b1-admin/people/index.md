@@ -28,13 +28,13 @@ Her er en oversikt over de viktigste funksjonene i delen Personer:
 
 7. **Importere og eksportere data** -- Hent inn medlemsdata fra en CSV-fil eller flytt over fra et annet system for menighetsadministrasjon som Breeze. Du kan også eksportere registeret til CSV når som helst. Se [Importere data](./importing-data.md) og [Eksportere data](./exporting-data.md).
 
-8. **Administrere profiler** -- Se og rediger detaljerte profiler for hver person, inkludert kontaktinfo, husstandsmedlemmer, [gruppemedlemskap](../groups/group-members.md), [oppmøtehistorikk](../attendance/tracking-attendance.md), [gaver](../donations/recording-donations.md) og [egendefinerte skjemaer](../forms/creating-forms.md). Hold musepekeren over en e-postadresse, adresse eller et telefonnummer i den blå profilbanneren for å kopiere det med ett klikk.
+8. **Administrere profiler** -- Se og rediger detaljerte profiler for hver person, inkludert kontaktinfo, husstandsmedlemmer, [gruppemedlemskap](../groups/group-members.md), [oppmøtehistorikk](../attendance/tracking-attendance.md), [gaver](../donations/recording-donations.md) og [egendefinerte skjemaer](../forms/creating-forms.md). Personens navn, kontaktopplysninger og husstand står til venstre i profilen, med oppsummeringer av oppmøte, gaver, grupper, notater og skjemaer ved siden av. Hold musepekeren over en adresse eller et hjemme- eller arbeidstelefonnummer for å kopiere det med ett klikk.
 
 9. **Tildele roller og tillatelser** -- Bestem hvem i teamet ditt som har tilgang til ulike deler av B1 Admin ved å tildele roller. Se [Tildele roller](./roles-permissions.md).
 
 ## Komme i gang
 
-For å åpne delen Personer bruker du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvider **Personer** og klikker på **Personer**. Du ser hele menighetsregisteret med et søkefelt øverst og en liste over medlemmer under.
+For å åpne delen Personer bruker du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvider **Personer** og klikker på **Personer**. Du ser menighetsregisteret listet etter husstand, med et søkefelt øverst. Bruk **Vis som**-bryteren for å bytte mellom listen **Husstander** og en **Tabell** over enkeltpersoner.
 
 :::tip
 Hvis du setter opp B1 for første gang, bør du starte med å [importere eksisterende medlemsdata](./importing-data.md). Deretter kan du se gjennom og rydde i profilene etter behov.

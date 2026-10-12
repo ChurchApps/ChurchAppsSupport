@@ -20,7 +20,7 @@ Med rom og ressurser kan du holde oversikt over menighetens lokaler og utstyr so
 
 ## Åpne rom og ressurser
 
-Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Kalendere** og klikk på **Rom og ressurser**. Siden har fire faner: **Rom**, **Ressurser**, **Sperrede perioder** og **Maler**.
+Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Kalendere** og klikk på **Rom og ressurser**. Siden har fire faner: **Rom**, **Ressurser**, **Sperrede perioder** og **Maler**. Knappen for å legge til øverst på siden endres etter hvilken fane som er valgt, og feltet **Finn** lar deg filtrere den aktuelle listen.
 
 ## Rom
 
@@ -28,7 +28,7 @@ Rom er fysiske lokaler som kan reserveres sammen med kalenderarrangementer -- et
 
 ### Legge til et rom
 
-1. Klikk på **Legg til rom** i fanen **Rom**.
+1. Klikk på **Legg til rom** øverst på siden i fanen **Rom**.
 2. Skriv inn et **navn** på rommet.
 3. Du kan angi en **kapasitet** (maksimalt antall personer).
 4. Angi en **godkjenningsgruppe** -- når en gruppe ber om dette rommet, får lederne i den valgte gruppen beskjed og må godkjenne bookingen. La feltet stå tomt hvis det ikke trengs godkjenning.
@@ -36,7 +36,7 @@ Rom er fysiske lokaler som kan reserveres sammen med kalenderarrangementer -- et
 
 ### Redigere eller slette et rom
 
-Klikk på redigeringsikonet ved siden av et rom, gjør endringene dine og klikk på **Lagre**. Bruk **Slett** for å fjerne et rom permanent.
+Klikk på **Rediger** ved siden av et rom, gjør endringene dine og klikk på **Lagre**. Bruk **Slett** for å fjerne et rom permanent.
 
 ## Ressurser
 

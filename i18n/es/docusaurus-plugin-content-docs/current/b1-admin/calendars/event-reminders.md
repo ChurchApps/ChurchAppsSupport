@@ -6,7 +6,7 @@ title: "Recordatorios de Eventos"
 
 <div class="article-intro">
 
-Los recordatorios de evento notifican automáticamente a las personas correctas antes de que suceda un evento — por ejemplo, "¡No te lo pierdas! El taller de salud comienza mañana a las 9:00 AM." Configuras un recordatorio una sola vez en el evento, y B1 lo envía en el horario programado a través de notificaciones push y correo electrónico. Los miembros pueden controlar qué recordatorios reciben desde sus [Preferencias de Notificación](../../b1-church/getting-started/notification-preferences).
+Los recordatorios de evento notifican automáticamente a las personas correctas antes de que suceda un evento — por ejemplo, "¡No te lo pierdas! El taller de salud comienza mañana a las 9:00 AM." Configuras un recordatorio una sola vez en el evento, y B1 lo envía en el horario programado a través de notificaciones push, correo electrónico y, si tu iglesia tiene mensajes de texto configurados, mensajes de texto. Los miembros pueden controlar qué recordatorios reciben desde sus [Preferencias de Notificación](../../b1-church/getting-started/notification-preferences).
 
 </div>
 
@@ -31,7 +31,7 @@ Configuras recordatorios en la sección **Recordatorios** del evento.
 3. Establece la **Hora del día** en que debe enviarse el recordatorio (el valor predeterminado es **9:00 AM**, en la zona horaria local de tu iglesia).
 4. Elige **A quién** recordarle (ver [Quién Recibe Recordatorios](#quién-recibe-recordatorios) a continuación).
 5. Opcionalmente agrega un **Mensaje**. Déjalo en blanco para usar el texto predeterminado, o escribe el tuyo propio — puedes incluir `{{eventTitle}}` y se reemplazará con el nombre del evento.
-6. Elige los **Canales**: notificación **Push**, **Correo Electrónico**, o ambos.
+6. Elige los **Canales**: notificación **Push**, **Correo Electrónico** y, si tu iglesia tiene un [proveedor de mensajes de texto](../settings/church-settings.md#texting) conectado, **Texto**.
 7. Guarda el evento.
 
 A medida que haces cambios, una **vista previa en vivo** muestra aproximadamente cuántas personas serán recordadas, cuántos asistentes no se pueden alcanzar y los próximos horarios de envío programados — para que puedas confirmar que el recordatorio se ve bien antes de guardar.
@@ -60,18 +60,28 @@ Los invitados agregados solo por nombre (sin un registro de persona vinculado) n
 Los recordatorios se envían **push primero, con correo electrónico como alternativa**. Si un miembro tiene notificaciones push habilitadas, recibirá un push; si no, recibirá un correo electrónico en su lugar. Los miembros eligen qué canales desean por tipo de notificación en sus [Preferencias de Notificación](../../b1-church/getting-started/notification-preferences).
 :::
 
+## Recordatorios por Texto
+
+El canal **Texto** solo aparece cuando tu iglesia tiene conectado un proveedor de mensajes de texto. Los textos se envían a través del proveedor de mensajes de texto de tu iglesia, y cada mensaje puede tener un costo para tu iglesia. Se envían además de cualquier recordatorio push o por correo electrónico, y solo a las personas que:
+
+- Activaron **Mensajes de texto** en sus [Preferencias de Notificación](../../b1-church/getting-started/notification-preferences), y
+- Tienen un número de celular en su perfil.
+
+Cada texto comienza con el nombre de tu iglesia, se mantiene en un solo mensaje de texto y termina con "Reply STOP to opt out." Quien responda STOP deja de recibir textos de tu iglesia. Para que las respuestas STOP lleguen a B1, pega la **Inbound (STOP) webhook URL** de tus [ajustes de mensajes de texto](../settings/church-settings.md#texting) en el webhook de mensajes entrantes de tu proveedor.
+
 ## Lo Que Los Miembros Pueden Controlar
 
 Los recordatorios siempre respetan las [Preferencias de Notificación](../../b1-church/getting-started/notification-preferences) de cada miembro. Un miembro puede:
 
-- Desactivar **Recordatorios de Evento** para push o correo electrónico mientras mantiene otras notificaciones activadas.
+- Desactivar **Recordatorios de Evento** para push, correo electrónico o texto mientras mantiene otras notificaciones activadas.
+- Activar o desactivar los recordatorios por texto con **Mensajes de texto**.
 - Establecer **horas tranquilas** para que las notificaciones no urgentes esperen hasta una hora razonable.
 
 No puedes anular la opción de un miembro de optar por no recibir recordatorios de eventos — esto mantiene B1 conforme con las reglas contra spam y mantiene a los miembros en control de su bandeja de entrada.
 
 ## Recordatorios de Servicio
 
-Los voluntarios programados en un plan reciben un **recordatorio de servicio** separado con los detalles del plan y, cuando aún no han respondido, botones **Aceptar / Rechazar** directamente en el correo electrónico. Esos recordatorios se configuran en el tipo de plan en lugar de en un evento del calendario — ver [Voluntarios del Domingo](../guides/sunday-volunteers) para saber cómo funcionan la programación de voluntarios y los recordatorios.
+Los voluntarios programados en un plan reciben un **recordatorio de servicio** separado con los detalles del plan y, cuando aún no han respondido, botones **Aceptar / Rechazar** directamente en el correo electrónico. Esos recordatorios se configuran en el tipo de plan en lugar de en un evento del calendario, y también pueden enviarse por texto — ver [Recordatorios de Voluntarios](../serving/plans#volunteer-reminders) y [Voluntarios del Domingo](../guides/sunday-volunteers) para saber cómo funcionan la programación de voluntarios y los recordatorios.
 
 ## Próximos Pasos
 

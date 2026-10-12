@@ -20,19 +20,21 @@ Tarefas permitem que você atribua itens de ação a pessoas ou grupos em sua ig
 
 ## Visualizando Tarefas
 
-No menu Jump, escolha **Servindo > Meu Trabalho** (ou procure por "Meu Trabalho"). Você verá uma lista de suas tarefas abertas. Cada tarefa mostra seu título, designado e status.
+No menu Jump, escolha **Servindo > Meu Trabalho** (ou procure por "Meu Trabalho"). A lista **Tarefas** mostra o título de cada tarefa, a quem ela está associada, a quem está atribuída, quando foi aberta e seu status. Seus cards de [fluxo de trabalho](./workflows.md) aparecem ao lado dela, em **Meus Cards**.
+
+Use as abas acima da lista para alternar entre tarefas **Atribuídas a Mim**, **Atribuídas aos Meus Grupos** e **Solicitadas por Mim**. Cada aba mostra quantas tarefas contém.
 
 :::tip
-Por padrão, apenas tarefas abertas são mostradas. Alterne **Mostrar Fechado** para ver tarefas concluídas também.
+Por padrão, apenas tarefas abertas são mostradas. Escolha **Fechadas** acima da lista para ver as tarefas concluídas.
 :::
 
 ## Criando uma Tarefa
 
-1. Na página de Tarefas, clique em **Adicionar Tarefa**.
-2. Digite um **título** para a tarefa.
-3. Clique na caixa **Atribuir Para** e digite o nome de uma pessoa, ou mude para **Grupo** e digite um nome de grupo.
-4. Clique em **Procurar** e selecione a pessoa ou grupo dos resultados.
-5. Adicione uma **nota** com quaisquer detalhes ou instruções para o designado.
+1. Na página **Meu Trabalho**, clique em **Adicionar Tarefa**. Um formulário **Nova Tarefa** se abre.
+2. Clique na caixa **Associar a** e escolha a pessoa à qual a tarefa se refere.
+3. Clique na caixa **Atribuir a**. Na janela **Selecione uma Pessoa ou Grupo**, pesquise na aba **Pessoa**, ou mude para a aba **Grupo** e pesquise um grupo, depois selecione o resultado.
+4. Digite um **Título** para a tarefa.
+5. Adicione **Notas** com quaisquer detalhes ou instruções para o designado.
 6. Clique em **Salvar**.
 
 A tarefa agora aparecerá na lista de tarefas e será visível para o designado em seu painel e aplicativo móvel.
@@ -41,17 +43,31 @@ A tarefa agora aparecerá na lista de tarefas e será visível para o designado 
 
 Clique em qualquer tarefa para abrir sua página de detalhes. A partir daqui você pode:
 
-- **Mudar o status** -- Alterne entre **Aberto** e **Fechado** usando o menu suspenso de status.
-- **Reatribuir a tarefa** -- Atualize o designado para uma pessoa ou grupo diferente.
-- **Adicionar notas** -- Inclua informações adicionais ou atualizações para o designado.
-- **Editar o título** -- Atualize o título da tarefa conforme necessário.
+- **Fechar ou reabrir a tarefa** -- Clique em **Fechar tarefa** quando o trabalho estiver concluído, ou em **Reabrir tarefa** para abri-la novamente.
+- **Reatribuir a tarefa** -- Clique em **Atribuir** para escolher uma pessoa ou grupo diferente.
+- **Mudar a quem ela se refere** -- Clique em **Associar** para escolher outra pessoa.
+- **Adicionar notas** -- Publique atualizações ou detalhes para o designado nas notas da tarefa.
+- **Definir lembretes** -- Veja [Lembretes de Tarefas](#task-reminders) abaixo.
+
+## Lembretes de Tarefas {#task-reminders}
+
+Uma tarefa com data de vencimento pode lembrar seu designado antes do prazo.
+
+1. Na página da tarefa, clique em **Editar** ao lado de **Lembretes**.
+2. Ative **Enviar lembretes para esta tarefa**.
+3. Em **Quando os lembretes devem ser enviados?**, escolha até três momentos: **7 dias antes**, **3 dias antes**, **1 dia antes** ou **No dia**.
+4. Defina a **Hora do Dia** e, opcionalmente, uma **Mensagem**.
+5. Em **Enviar Por**, escolha **Push**, **Email** e, se sua igreja tiver um [provedor de SMS](../settings/church-settings.md#texting) conectado, **Texto**.
+6. Clique em **Salvar Lembretes**.
+
+Se a tarefa não tiver data de vencimento, o B1 avisa que nenhum lembrete será enviado até que uma seja definida. Lembretes por texto só chegam às pessoas que ativaram **Mensagens de texto** em suas [Preferências de Notificação](../../b1-church/getting-started/notification-preferences.md), e cada texto pode gerar custos para sua igreja.
 
 ## Ciclo de Vida da Tarefa
 
 1. Uma nova tarefa começa com um status de **Aberto**.
 2. O designado recebe uma notificação e pode visualizar a tarefa de seu painel, **Servindo > Meu Trabalho** ou o aplicativo móvel.
-3. Uma vez que o trabalho está completo, o designado (ou um administrador) muda o status para **Fechado**.
-4. Tarefas fechadas são removidas da visualização padrão mas ainda podem ser acessadas ativando **Mostrar Fechado**.
+3. Uma vez que o trabalho está completo, o designado (ou um administrador) clica em **Fechar tarefa**.
+4. Tarefas fechadas são removidas da visualização padrão, mas ainda podem ser encontradas escolhendo **Fechadas** acima da lista de tarefas.
 
 :::info
 B1 Admin não cria mais tarefas recorrentes em um cronograma. Para acompanhamento repetido com pessoas, use um [fluxo de trabalho](./workflows.md) com um [gatilho de cronograma](./workflows.md#schedule-triggers).

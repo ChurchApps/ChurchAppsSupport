@@ -21,7 +21,7 @@ Die Druckfunktion für das Verzeichnis erstellt ein formatiertes, druckbares Gem
 ## Öffnen Sie das Verzeichnisdrucken
 
 1. Navigieren Sie zu **Personen** in B1 Admin.
-2. Klicken Sie auf das **Druck-Symbol** (Druckersymbol) in der Symbolleiste oben auf der Karte mit den Personenergebnissen. Es wird neben der Schaltfläche Exportieren angezeigt.
+2. Klicken Sie im Seitenkopf auf **Print Directory** (Verzeichnis drucken).
 3. Das Verzeichnisdrucken wird in einem neuen Browsertab geöffnet und lädt die Verzeichnisdaten.
 4. Nach etwa 1,5 Sekunden wird Ihr Druckdialog des Browsers automatisch angezeigt.
 
@@ -33,13 +33,13 @@ Das Verzeichnis wird in einem separaten Tab geöffnet, damit Sie es drucken kön
 
 Das Druckverzeichnis enthält alle **aktiven Mitglieder** Ihrer Kirche. Speziell:
 
-- Personen mit dem Mitgliedschaftsstatus **Inaktiv** oder **Besucher** werden automatisch ausgeschlossen.
+- Personen mit dem Mitgliedschaftsstatus **Inaktiv**, **Besucher** oder **Verstorben** werden automatisch ausgeschlossen.
 - Personen, die sich aus dem Verzeichnis **abgemeldet** haben, werden ausgeschlossen.
 - Alle anderen werden nach **Haushalt** gruppiert.
 
 ### Drucken Sie nur Ihre Suchergebnisse
 
-Nachdem Sie eine Suche auf der Seite Personen durchführen – eine schnelle Suche, eine [erweiterte Suche](./searching-people.md#advanced-search), eine [gespeicherte Liste](./lists.md) oder eine [KI-Suche](./ai-search.md) – ändert sich das Druck-Symbol zu **Ergebnisse drucken**. Wenn Sie darauf klicken, wird ein Verzeichnis nur der Personen in Ihren Ergebnissen statt der ganzen Kirche gedruckt, mit dem gleichen Layout.
+Nachdem Sie eine Suche auf der Seite Personen durchführen – eine schnelle Suche, eine [erweiterte Suche](./searching-people.md#advanced-search), eine [gespeicherte Liste](./lists.md) oder eine [KI-Suche](./ai-search.md) – ändert sich die Schaltfläche **Verzeichnis drucken** zu **Ergebnisse drucken**. Wenn Sie darauf klicken, wird ein Verzeichnis nur der Personen in Ihren Ergebnissen statt der ganzen Kirche gedruckt, mit dem gleichen Layout.
 
 Beim Drucken von Suchergebnissen wird der Filter für Mitgliedschaftsstatus oben nicht angewendet: Alle Personen, nach denen Sie gesucht haben, werden einbezogen, auch Besucher oder inaktive Personen. Personen, die sich aus dem Verzeichnis abgemeldet haben, werden immer noch ausgeschlossen. Um zurück zum Drucken des vollständigen Verzeichnisses zu gehen, löschen Sie zuerst Ihre Suche.
 

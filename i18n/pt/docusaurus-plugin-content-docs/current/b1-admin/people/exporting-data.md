@@ -24,12 +24,11 @@ A maneira mais rápida de exportar seu diretório é diretamente da página **Pe
 
 1. Abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo do B1 Admin), expanda **People** e clique em **People**.
 2. Use a barra de pesquisa ou filtros para estreitar os resultados que você deseja exportar (ou deixe sem filtro para exportar todos). Veja [Pesquisando Pessoas](searching-people.md) para dicas sobre filtragem.
-3. Use o **column selector** para escolher quais colunas você deseja incluir na exportação (por exemplo, Name, Email, Phone, Address).
-4. Clique no botão **Export**.
-5. Um arquivo CSV será baixado para seu computador com os dados atualmente mostrados na tabela.
+3. Clique no botão **Export** no cabeçalho da página Pessoas.
+4. Um arquivo CSV será baixado para seu computador com as pessoas atualmente presentes nos seus resultados, incluindo nome, informações de contato, endereço e outros campos padrão.
 
 :::tip
-Personalize suas colunas antes de exportar. O arquivo CSV incluirá exatamente as colunas que você tem visíveis, para que você possa adequar a exportação às suas necessidades sem editar o arquivo depois.
+A exportação inclui todas as pessoas nos seus resultados atuais. Faça uma pesquisa, carregue uma [Lista Salva](./lists.md) ou use a pesquisa **Avançada** antes para exportar apenas as pessoas de que você precisa.
 :::
 
 ## Exportação Completa de Dados das Configurações
@@ -37,7 +36,7 @@ Personalize suas colunas antes de exportar. O arquivo CSV incluirá exatamente a
 Para uma exportação completa de todos os seus dados B1 (não apenas pessoas), use a ferramenta de exportação em Configurações:
 
 1. No menu Jump, escolha **Settings > Settings**.
-2. Clique no botão **Import/Export** no canto superior direito do cabeçalho da página.
+2. Clique no link **Import/Export** abaixo do nome da sua igreja, no topo do menu de configurações à esquerda.
 3. Selecione **B1 Database** do dropdown **Data Source**.
 4. Revise a visualização de dados e clique em **Continue to Destination**.
 5. Selecione **B1 Export Zip** como destino de exportação.
@@ -51,7 +50,7 @@ Exportações completas de dados incluem pessoas, grupos, doações, frequência
 
 ## Exportando Dados do Grupo
 
-Você também pode exportar listas de membros para grupos individuais. A partir da página **Groups**, abra um grupo e clique no **ícone de download** para exportar a lista de membros desse grupo. Veja [Membros do Grupo](../groups/group-members.md) para mais detalhes.
+Você também pode exportar listas de membros para grupos individuais. A partir da página **Groups**, abra um grupo e clique em **Exportar** acima da lista de membros do grupo para baixá-la. Veja [Membros do Grupo](../groups/group-members.md) para mais detalhes.
 
 :::info
 Arquivos CSV exportados funcionam com todos os principais aplicativos de planilha, incluindo Microsoft Excel, Google Sheets e Apple Numbers.

@@ -2,63 +2,68 @@
 title: "योजना टेम्पलेट"
 ---
 
-# Plan Templates
+# योजना टेम्पलेट {#plan-templates}
 
 <div class="article-intro">
 
-Plan templates let you save a reusable snapshot of a plan's order of service or positions and apply it to future plans in one click. Instead of rebuilding the same structure every week, you save it once and stamp it onto as many upcoming plans as you need.
+योजना टेम्पलेट आपको किसी योजना के order of service या positions का पुन: उपयोग योग्य snapshot सहेजने और उसे एक क्लिक में आने वाली योजनाओं पर लागू करने देते हैं। हर सप्ताह एक ही संरचना दोबारा बनाने के बजाय, आप उसे एक बार सहेजते हैं और जितनी भी आगामी योजनाओं की ज़रूरत हो उन पर लगा देते हैं।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- Create at least one [service plan](plans.md) with a service order or positions defined
-- You need access to the Serving area in B1 Admin
+- कम से कम एक [सेवा योजना](plans.md) बनाएँ जिसमें service order या positions परिभाषित हों
+- आपको B1 Admin में Serving क्षेत्र तक पहुँच चाहिए
 
 </div>
 
-## Saving a Plan as a Template
+## योजना को टेम्पलेट के रूप में सहेजना {#saving-a-plan-as-a-template}
 
-1. Open an existing plan from the **Serving** area.
-2. Click the **Templates** button (top of the plan page).
-3. Choose **Save as Template**.
-4. Give the template a name (for example, "Standard Sunday" or "Worship + Sermon").
-5. Save. The template captures the plan's current order of service and positions at that moment.
+1. **Serving** क्षेत्र से कोई मौजूदा योजना खोलें।
+2. योजना के **Order of Service** सेक्शन में, **Save as Template** पर क्लिक करें।
+3. टेम्पलेट को एक नाम दें (उदाहरण के लिए, "Standard Sunday" या "Worship + Sermon")।
+4. सहेजें। टेम्पलेट उस क्षण की योजना का वर्तमान order of service, positions, और notes कैप्चर करता है।
 
-## Managing Templates
+## टेम्पलेट प्रबंधित करना {#managing-templates}
 
-From the **Templates** button on any plan type page you can:
+किसी भी योजना प्रकार के पेज पर योजना सूची के ऊपर **Templates** पर क्लिक करके **Plan Templates** खोलें। वहाँ से आप:
 
-- **Rename** — change the template's display name
-- **Update from plan** — replace the template's content with a plan's current state (useful after you refine your standard structure)
-- **Apply** — stamp the template onto one or more upcoming plans
-- **Delete** — remove a template you no longer need
+- **Rename** — टेम्पलेट का प्रदर्शित नाम बदलें
+- **Update from plan** — टेम्पलेट की सामग्री को किसी योजना की वर्तमान स्थिति से बदलें (अपनी मानक संरचना को परिष्कृत करने के बाद उपयोगी)
+- **Apply** — टेम्पलेट को एक या अधिक आगामी योजनाओं पर लागू करें
+- **Delete** — ऐसा टेम्पलेट हटाएँ जिसकी अब ज़रूरत नहीं है
 
-## Applying a Template to Plans
+## टेम्पलेट को योजनाओं पर लागू करना {#applying-a-template-to-plans}
 
-1. Click the **Templates** button on the plan type page.
-2. Click the **Apply** icon (copy icon) next to the template you want to use.
-3. Select which upcoming plans to apply it to by checking their boxes.
-4. Choose what to copy:
-   - **Order of Service** — replaces the selected plans' service order items with the template's items
-   - **Positions** — replaces the selected plans' positions (and their assignments) with the template's positions
-5. Click **Apply**.
+1. योजना प्रकार के पेज पर योजना सूची के ऊपर **Templates** पर क्लिक करें।
+2. जिस टेम्पलेट का उपयोग करना है उसके बगल में **Apply** icon (copy icon) पर क्लिक करें।
+3. जिन आगामी योजनाओं पर उसे लागू करना है, उनके checkboxes पर निशान लगाकर चुनें।
+4. चुनें कि क्या कॉपी करना है:
+   - **Order of Service** — चुनी गई योजनाओं के service order items को टेम्पलेट के items से बदल देता है
+   - **Positions** — चुनी गई योजनाओं के positions (और उनके assignments) को टेम्पलेट के positions से बदल देता है
+5. **Apply** पर क्लिक करें।
+
+यदि टेम्पलेट में notes हैं, तो उसे लागू करने पर चुनी गई योजनाओं के notes भी टेम्पलेट के notes से बदल जाते हैं।
 
 :::warning
-Applying positions replaces all existing positions and assignments on the selected plans. Make sure you have not already scheduled volunteers for those positions before applying.
+Positions लागू करने से चुनी गई योजनाओं के सभी मौजूदा positions और assignments बदल जाते हैं। लागू करने से पहले सुनिश्चित करें कि उन positions के लिए आपने पहले से स्वयंसेवक तय नहीं किए हैं।
 :::
 
 :::tip
-Apply the Order of Service without Positions when you want a consistent song/sermon structure but volunteers are already assigned differently each week.
+जब आप एक सुसंगत गीत/उपदेश संरचना चाहते हैं लेकिन स्वयंसेवक हर सप्ताह अलग-अलग तय होते हैं, तब Positions के बिना Order of Service लागू करें।
 :::
 
-## Keeping Templates Up to Date
+## टेम्पलेट से नई योजना शुरू करना {#starting-a-new-plan-from-a-template}
 
-If your standard service structure changes, open the template manager and use **Update from plan** to sync the template from your latest plan rather than rebuilding it from scratch.
+टेम्पलेट किसी मंत्रालय के सभी योजना प्रकारों में साझा होते हैं। जब आप **New Plan** पर क्लिक करते हैं और मंत्रालय के पास टेम्पलेट हों, तो नए योजना फ़ॉर्म में **Start from template** सूची दिखती है। एक टेम्पलेट चुनें और सहेजें, और नई योजना टेम्पलेट के order of service, positions और notes के साथ बनेगी। टेम्पलेट चुनने पर उस योजना के लिए **Copy from Previous Plan** विकल्प बदल जाते हैं।
 
-## Related Articles
+## टेम्पलेट को अद्यतन रखना {#keeping-templates-up-to-date}
 
-- [Service Plans](plans.md) — Create and manage individual service plans
-- [Plans Overview](plans-overview.md) — See all upcoming assignments across plans in one grid
-- [Service Order](service-order.md) — Build the order of service within a plan
+यदि आपकी मानक सेवा संरचना बदलती है, तो टेम्पलेट मैनेजर खोलें और **Update from plan** का उपयोग करके टेम्पलेट को अपनी नवीनतम योजना से सिंक करें, बजाय इसके कि उसे शुरू से दोबारा बनाएँ।
+
+## संबंधित लेख {#related-articles}
+
+- [सेवा योजनाएँ](plans.md) — व्यक्तिगत सेवा योजनाएँ बनाएँ और प्रबंधित करें
+- [योजनाओं का अवलोकन](plans-overview.md) — सभी आगामी असाइनमेंट एक ग्रिड में देखें
+- [सेवा क्रम](service-order.md) — किसी योजना के भीतर order of service बनाएँ

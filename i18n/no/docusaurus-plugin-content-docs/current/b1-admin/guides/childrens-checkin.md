@@ -53,7 +53,7 @@ Følg guiden [Oppmøteoppsett](../attendance/setup.md) for å:
 
 1. Legge til din campus (f.eks. "Hovedcampus")
 2. Legge til en gudstjeneste (f.eks. "Søndagsgudstjeneste")
-3. Sette gudstjenestetiden (f.eks. "09:00")
+3. Sette gudstjenestetiden (f.eks. "09:00") og eventuelt en [innsjekkingsplan](../attendance/setup.md#setting-a-check-in-schedule) slik at innsjekkingen åpnes automatisk før hver gudstjeneste og lukkes etter den
 4. Tildele barnegruppene dine til gudstjenesten
 
 ## Trinn 4: Sett opp innsjekkingsappen

@@ -20,7 +20,7 @@ title: "Campos Personalizados"
 
 ## Abrindo Campos Personalizados
 
-No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), escolha **Settings > Settings** (Configurações > Configurações) e selecione o cartão **Custom Fields** (Campos Personalizados). Você também pode ir diretamente para lá em **/settings/custom-fields**. Você verá uma lista de cada campo que definiu, mostrando seu **Name** (Nome) e **Field Type** (Tipo de Campo). Se você não tiver criado nenhum ainda, o painel lerá *"No custom fields have been added yet."* (Nenhum campo personalizado foi adicionado ainda.)
+No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), escolha **Settings > Settings** (Configurações > Configurações) e clique em **Custom Fields** (Campos Personalizados) na lista à esquerda para rolar até a seção **Custom Fields** (Campos Personalizados). Você também pode ir diretamente para lá em **/settings/custom-fields**. Você verá uma lista de cada campo que definiu, mostrando seu **Name** (Nome) e **Field Type** (Tipo de Campo). Se você não tiver criado nenhum ainda, o painel lerá *"No custom fields have been added yet."* (Nenhum campo personalizado foi adicionado ainda.)
 
 ## Adicionando um Campo
 
@@ -55,14 +55,14 @@ Abra um campo para edição e clique em **Delete** (Deletar). Você será solici
 
 ## Preenchendo Valores em uma Pessoa
 
-Uma vez que pelo menos um campo personalizado exista, seus valores vivem bem ao lado dos detalhes integrados em cada registro de pessoa -- você os visualiza em **Personal Details** (Detalhes Pessoais) e os edita no mesmo formulário que usa para o resto das informações da pessoa. Nada extra aparece até você ter definido seu primeiro campo.
+Uma vez que pelo menos um campo personalizado exista, seus valores vivem bem ao lado dos detalhes integrados em cada registro de pessoa -- você os visualiza com os detalhes de contato da pessoa, à esquerda do perfil, e os edita no mesmo formulário que usa para o resto das informações da pessoa. Nada extra aparece até você ter definido seu primeiro campo.
 
 1. Abra o registro de uma pessoa em **People** (Pessoas).
-2. Na seção **Personal Details** (Detalhes Pessoais), clique no botão **Edit** (Editar) (lápis).
+2. Clique no botão **Edit** (Editar) à esquerda do perfil, abaixo dos detalhes de contato da pessoa.
 3. Role para a área **Custom Fields** (Campos Personalizados) na parte inferior do formulário de edição e preencha um valor para cada campo. Cada campo mostra a entrada que corresponde ao seu tipo -- um seletor de data para campos Date, um menu suspenso sim/não para campos Yes/No, uma lista de seleção para Multiple Choice, e assim por diante.
 4. Clique em **Save** (Salvar). Seus valores de campo personalizado são salvos junto com o resto dos detalhes da pessoa.
 
-De volta ao perfil, qualquer campo que tenha um valor agora mostra na seção **Personal Details** (Detalhes Pessoais) (respostas Sim/Não são lidas como *Yes* (Sim) ou *No* (Não), e Multiple Choice mostra o rótulo da opção). Campos deixados em branco são simplesmente ocultados. Para remover um valor, edite a pessoa, limpe o campo e salve -- um valor vazio é deletado do registro em vez de ser armazenado em branco.
+De volta ao perfil, qualquer campo que tenha um valor agora mostra abaixo dos detalhes de contato da pessoa, no formato *Nome do campo: valor* (respostas Sim/Não são lidas como *Yes* (Sim) ou *No* (Não), e Multiple Choice mostra o rótulo da opção). Campos deixados em branco são simplesmente ocultados. Para remover um valor, edite a pessoa, limpe o campo e salve -- um valor vazio é deletado do registro em vez de ser armazenado em branco.
 
 :::tip
 O caso de uso clássico é segurança de voluntários: crie um campo **Date** (Data) chamado *Background check expires* (Verificação de antecedentes expira), registre a data de cada voluntário, depois construa uma [Lista Salva](../people/lists.md) que sinaliza qualquer pessoa cuja data tenha passado.
@@ -85,7 +85,7 @@ Salve qualquer pesquisa de campo personalizado como uma [List](../people/lists.m
 
 ## Mostrando um Campo Personalizado como uma Coluna
 
-Para ver os valores de um campo para todos de uma vez, adicione-o como uma coluna na página **People** (Pessoas). Abra o seletor de coluna, alterne para a aba **Custom** (Personalizado) e marque o campo. O valor de cada pessoa aparece em sua própria coluna ao lado dos valores integrados. Consulte [Mostrando Campos Personalizados como Colunas](../people/searching-people.md#showing-custom-fields-as-columns).
+Para ver os valores de um campo para todos de uma vez, adicione-o como uma coluna na página **People** (Pessoas). Alterne **View as** (Exibir como) para **Table** (Tabela), clique no ícone **Select columns** (Selecionar colunas) no cabeçalho da página, alterne para a aba **Custom** (Personalizado) e marque o campo. O valor de cada pessoa aparece em sua própria coluna ao lado dos valores integrados. Consulte [Mostrando Campos Personalizados como Colunas](../people/searching-people.md#showing-custom-fields-as-columns).
 
 ## O que Acontece na Mesclagem
 

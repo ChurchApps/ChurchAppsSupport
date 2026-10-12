@@ -14,13 +14,7 @@ The **Groups** section lets you organize your church members into ministries, sm
 
 Groups are organized by **category**. A category is a top-level label such as "Small Groups," "Ministries," or "Committees." Each category can contain multiple groups, making it simple to keep related groups together.
 
-When you open the Groups page, you will see a summary at the top showing:
-
-- **Total Groups** -- the number of groups across all categories
-- **Categories** -- the number of group categories you have created
-- **Total Members** -- the combined count of members across all groups
-
-Below the summary, your groups are listed by category with the member count shown for each group.
+When you open the Groups page, you will see a **Search groups...** box, a row of category buttons, and a table of your groups. Each group shows its category and labels under its name, along with its member count. Click **All** or a category name to filter the list (extra categories are under **More categories**), and click the **Name** or **People** column heading to sort.
 
 ## What You Can Do
 
@@ -38,7 +32,7 @@ Here is what you can accomplish in the Groups section:
 
 ## Getting Started
 
-To access Groups, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **People**, and click **Groups**. You will see all of your existing groups organized by category.
+To access Groups, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **People**, and click **Groups**. You will see all of your existing groups, which you can filter by category.
 
 :::tip
 If you are just getting started, begin by creating a few categories that match your church structure (for example, "Ministries," "Small Groups," "Committees"). Then add individual groups within each category. See [Creating Groups](./creating-groups.md) for a step-by-step walkthrough.

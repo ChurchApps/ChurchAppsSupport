@@ -20,7 +20,7 @@ title: "Demografi"
 
 ## Åpning av demografi
 
-Fra **Menschen**-siden klikk **Demografi**-knappen i sidesoverskriften (stolpe-diagramikonet). Siden viser ditt totale person-telling øverst, etterfulgt av diagrammene beskrevet nedenfor.
+Fra **Personer**-siden klikker du på **Demografi** i sidetoppen. Siden viser ditt totale person-telling øverst, etterfulgt av diagrammene beskrevet nedenfor.
 
 ## Diagrammer
 

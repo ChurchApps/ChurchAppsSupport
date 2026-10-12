@@ -14,13 +14,7 @@ I delen **Grupper** kan du organisere menighetens medlemmer i tjenestegrener, sm
 
 Gruppene er organisert etter **kategori**. En kategori er en overordnet merkelapp, for eksempel «Smågrupper», «Tjenestegrener» eller «Komiteer». Hver kategori kan inneholde flere grupper, slik at det er enkelt å holde beslektede grupper samlet.
 
-Når du åpner siden Grupper, ser du en oppsummering øverst som viser:
-
-- **Grupper totalt** -- antall grupper på tvers av alle kategorier
-- **Kategorier** -- antall gruppekategorier du har opprettet
-- **Medlemmer totalt** -- samlet antall medlemmer i alle grupper
-
-Under oppsummeringen vises gruppene dine sortert etter kategori, med antall medlemmer for hver gruppe.
+Når du åpner siden Grupper, ser du et søkefelt **Søk i grupper...**, en rad med kategoriknapper og en tabell over gruppene dine. Hver gruppe viser kategorien og etiketter under navnet, sammen med antall medlemmer. Klikk på **Alle** eller et kategorinavn for å filtrere listen (flere kategorier finner du under **Flere kategorier**), og klikk på kolonneoverskriften **Navn** eller **Personer** for å sortere.
 
 ## Dette kan du gjøre
 
@@ -38,7 +32,7 @@ Dette kan du gjøre i delen Grupper:
 
 ## Komme i gang
 
-For å åpne Grupper bruker du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvider **Personer** og klikker på **Grupper**. Da ser du alle eksisterende grupper organisert etter kategori.
+For å åpne Grupper bruker du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvider **Personer** og klikker på **Grupper**. Da ser du alle eksisterende grupper, som du kan filtrere etter kategori.
 
 :::tip
 Hvis du akkurat har begynt, kan du starte med å opprette noen kategorier som passer til menighetens struktur (for eksempel «Tjenestegrener», «Smågrupper», «Komiteer»). Legg deretter til enkeltgrupper i hver kategori. Se [Opprette grupper](./creating-groups.md) for en trinnvis gjennomgang.

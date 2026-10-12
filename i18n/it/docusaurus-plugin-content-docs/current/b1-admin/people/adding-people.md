@@ -22,8 +22,8 @@ La sezione Persone è il fondamento di B1 Admin — è il database dei membri de
 
 1. Accedi al dashboard B1.church Admin.
 2. Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Persone** e fai clic su **Persone**.
-3. Fai clic sul pulsante **Aggiungi Persona** nell'angolo superiore destro.
-4. Inserisci il nome, il cognome e l'indirizzo email della persona, quindi fai clic su **Aggiungi**.
+3. Fai clic sul pulsante **Aggiungi Persona** nell'intestazione della pagina. La pagina scorre fino al modulo **Aggiungi nuova persona** sotto la directory.
+4. Inserisci il **Nome**, il **Cognome** e l'**Email** della persona, quindi fai clic su **Aggiungi**.
 
 La pagina del profilo della persona si aprirà, pronta per aggiungere più dettagli.
 
@@ -42,22 +42,27 @@ Questo controlla i duplicati solo quando stai creando una persona completamente 
 
 ## Modifica dei Dettagli
 
-1. Nella pagina del profilo della persona, fai clic sulla **matita di modifica** accanto al suo nome.
-2. Inserisci informazioni aggiuntive come il secondo nome, lo stato di iscrizione, le date, l'indirizzo, i numeri di telefono e (per i bambini e gli studenti) il voto e la scuola.
+1. Nella pagina del profilo della persona, fai clic sul pulsante **Modifica** sotto i suoi dettagli di contatto a sinistra.
+2. Nel modulo **Dettagli personali**, inserisci informazioni aggiuntive come il secondo nome, lo stato di iscrizione (**Visitatore**, **Ospite**, **Frequentatore abituale**, **Membro**, **Staff**, **Inattivo** o **Deceduto**), le date, l'indirizzo, i numeri di telefono e (per i bambini e gli studenti) il voto e la scuola.
 3. Fai clic su **Salva** per archiviare le informazioni personali.
 
-Il profilo include anche diverse schede per le informazioni correlate:
+A sinistra del profilo ci sono la foto della persona, il nome, lo stato di iscrizione, i dettagli di contatto, gli eventuali valori dei [campi personalizzati](../settings/custom-fields.md) e il nucleo familiare. Fai clic sulla foto per cambiarla. Sotto il pulsante **Modifica** ci sono altre azioni: **Workflow** (aggiungi la persona a un [workflow](../serving/workflows.md)), **Unisci**, **Esporta** ed **Esporta dati**.
 
-- **Note** — Aggiungi note sulla persona (cura pastorale, seguiti, ecc.)
-- **Gruppi** — Visualizza e gestisci le [appartenenze ai gruppi](../groups/group-members.md)
-- **Frequenza** — Visualizza la cronologia delle visite individuali di questa persona, inclusi il campus, il servizio, l'orario del servizio, il gruppo e una colonna **Arrivato** con l'orario del check-in del chiosco (mostrato come un trattino per le visite registrate senza check-in del chiosco). Per le tendenze a livello di chiesa anziché la storia di una persona, vedi [Tracciamento della Frequenza](../attendance/tracking-attendance.md)
-- **Donazioni** — Visualizza la [cronologia delle donazioni](../donations/recording-donations.md)
+Il resto del profilo mostra un riepilogo per ciascun tipo di informazione correlata:
+
+- **Frequenza** — Mostra quali delle ultime settimane la persona ha frequentato e le sue visite più recenti. Fai clic su **Tutti gli anni** per la cronologia completa delle visite, incluso il campus, il servizio, l'orario del servizio, il gruppo e una colonna **Arrivato** con l'orario del check-in al chiosco (mostrato come un trattino per le visite registrate senza check-in al chiosco), oppure su **Stampa** per stamparla. Per le tendenze a livello di chiesa anziché la storia di una persona, vedi [Tracciamento della Frequenza](../attendance/tracking-attendance.md)
+- **Donazioni** — Mostra le offerte di quest'anno. Fai clic su **Tutti gli anni** per la [cronologia completa delle donazioni](../donations/recording-donations.md), oppure su **Registra un'offerta** per registrarne una nuova
+- **Gruppi** — Elenca le [appartenenze ai gruppi](../groups/group-members.md) della persona
+- **Note** — Mostra le note recenti sulla persona (cura pastorale, seguiti, ecc.). Fai clic su **Tutte le note** per leggere e aggiungere note
+- **Moduli** — Elenca i moduli della persona e indica se ciascuno è stato inviato (vedi [Utilizzo dei Moduli](#working-with-forms) qui sotto)
+
+Quando apri una di queste viste complete, fai clic sul link **Torna a** con il nome della persona in cima per tornare al profilo.
 
 ## Invio di Email a una Persona
 
-Se la persona ha un indirizzo email nel file, nella intestazione del profilo compare un pulsante **Invia un'email a questa persona** (icona di busta).
+Se la persona ha un indirizzo email nel file, nella colonna a sinistra del profilo, sotto i dettagli di contatto, compare un pulsante **Email**.
 
-1. Nel profilo della persona, fai clic sull'**icona della busta**.
+1. Nel profilo della persona, fai clic su **Email**.
 2. Si apre una finestra di dialogo **Email** intitolata con il nome della persona, mostrando **Invio a** con l'indirizzo della persona.
 3. Facoltativamente scegli un modello salvato da **Carica Modello (facoltativo)**.
 4. Inserisci un **Oggetto** e componi il messaggio.
@@ -66,16 +71,16 @@ Se la persona ha un indirizzo email nel file, nella intestazione del profilo com
 Per scrivere il messaggio nel tuo programma di posta invece, fai clic su **Apri nella mia app di posta**.
 
 :::info
-L'invio da B1 utilizza gli stessi limiti di approvazione e giornalieri della posta del gruppo. Se la tua chiesa non è ancora stata approvata, la finestra di dialogo ti chiede di richiedere una revisione — puoi comunque fare clic su **Apri nella mia app di posta** nel frattempo. Vedi [Attivazione della Posta di Gruppo per la Tua Chiesa](../groups/group-members.md#turning-on-group-email-for-your-church). Gli utenti senza il permesso di modificare i membri del gruppo vanno direttamente alla loro app di posta quando fanno clic sull'icona della busta.
+L'invio da B1 utilizza gli stessi limiti di approvazione e giornalieri della posta del gruppo. Se la tua chiesa non è ancora stata approvata, la finestra di dialogo ti chiede di richiedere una revisione — puoi comunque fare clic su **Apri nella mia app di posta** nel frattempo. Vedi [Attivazione della Posta di Gruppo per la Tua Chiesa](../groups/group-members.md#turning-on-group-email-for-your-church). Gli utenti senza il permesso di modificare i membri del gruppo vanno direttamente alla loro app di posta quando fanno clic su **Email**.
 :::
 
-## Utilizzo dei Moduli
+## Utilizzo dei Moduli {#working-with-forms}
 
 Puoi compilare i moduli personalizzati direttamente dal profilo di una persona. Si tratta di moduli definiti dall'utente che puoi creare seguendo la guida [Creazione di Moduli](../forms/creating-forms.md).
 
-1. Nel profilo della persona, fai clic sul dropdown **Moduli** per selezionare un modulo.
-2. Fai clic su **Aggiungi Modulo** per aprirlo.
-3. Compila i dettagli del modulo e fai clic su **Salva**.
+1. Nel profilo della persona, trova la sezione **Moduli**. Elenca ogni modulo insieme al fatto che sia stato **Inviato** o **Non inviato**.
+2. Fai clic sul nome di un modulo per aprirlo (oppure fai clic su **Tutti i moduli** per vedere l'elenco completo).
+3. Fai clic sull'**icona di modifica** (matita) del modulo, compila i dettagli e fai clic su **Salva**.
 
 Una volta inviato un modulo, fai clic sull'**icona di stampa** accanto ad esso per stampare le risposte riempite di quella persona.
 
@@ -93,9 +98,9 @@ Se hai solo bisogno di tracciare uno o due pezzi di informazioni aggiuntive sull
 
 I nuclei familiari ti permettono di collegare i familiari insieme. Questo è particolarmente utile per il [check-in](../attendance/check-in.md), dove un genitore può eseguire il check-in di tutti i suoi figli in una volta.
 
-1. Nel profilo di una persona, fai clic sulla **matita di modifica** accanto al nome del nucleo familiare.
-2. Si aprirà l'editor del nucleo familiare. Seleziona il **ruolo del nucleo familiare** per la persona corrente (ad es. Capo, Coniuge, Figlio).
-3. Fai clic su **Aggiungi** per aggiungere un altro membro del nucleo familiare.
-4. Digita il nome della persona nella casella di ricerca e fai clic su **Cerca**.
-5. Quando la persona appare nei risultati della ricerca, fai clic su **Seleziona**.
+1. Nel profilo di una persona, fai clic su **Modifica** accanto all'intestazione **Nucleo familiare** a sinistra.
+2. Si aprirà l'editor del nucleo familiare. Seleziona il **ruolo del nucleo familiare** per la persona corrente (ad es. Capo, Coniuge, Figlio, Altro).
+3. Fai clic sull'icona **Aggiungi** per aggiungere un altro membro del nucleo familiare.
+4. Sotto **Aggiungi membro del nucleo familiare**, digita il nome della persona nella casella di ricerca e premi **Invio** o fai clic sull'icona di ricerca. (Prima di digitare, viene mostrato un breve elenco di **Persone recenti**.)
+5. Quando la persona appare nei risultati, fai clic sul suo nome o sull'icona di aggiunta accanto ad esso.
 6. Scegli il loro ruolo nel nucleo familiare e fai clic su **Salva** per completare la configurazione del nucleo familiare.

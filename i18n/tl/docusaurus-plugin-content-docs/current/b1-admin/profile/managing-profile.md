@@ -20,20 +20,21 @@ Ang pahina ng Profile ay nagbibigay-daan sa iyo na i-edit ang mga personal na se
 
 ## Impormasyon ng Profile
 
-Ang itaas na bahagi ng pahina ng Profile ay naglalaman ng iyong mga pangunahing detalye ng account:
+Ipinapakita ng pahina ng Profile ang iyong pangalan at email address sa kaliwa, na may **Edit** na button sa ibaba ng mga ito. I-click ang **Edit** upang buksan ang **Edit Account** na form, na naglalaman ng iyong mga pangunahing detalye ng account:
 
 1. **Email** -- Ang iyong email address na ginagamit para sa pag-log in at pagtanggap ng mga abiso.
 2. **Unang Pangalan** at **Apelyido** -- Ang iyong display name sa ChurchApps.
 3. **Password** -- I-update ang password ng iyong account.
 
-Upang i-update ang iyong impormasyon, i-edit ang mga field at i-click ang **Save Changes** na button.
+Upang i-update ang iyong impormasyon, i-edit ang mga field at i-click ang **Save Changes** na button. I-click ang **Cancel** (o ang **Back to** na link na may iyong pangalan) upang bumalik sa iyong profile nang hindi nagse-save.
 
 ## Pagpapalit ng Iyong Password
 
-1. Mag-scroll sa mga password field sa pahina ng Profile.
-2. Ilagay ang iyong bagong password sa **Password** na field.
-3. Ilagay itong muli sa **Confirm Password** na field.
-4. I-click ang **Save Changes**.
+1. Sa pahina ng Profile, i-click ang **Edit**.
+2. Ilagay ang iyong **Current password**.
+3. Ilagay ang iyong bagong password sa **New password** na field.
+4. Ilagay itong muli sa **Verify password** na field.
+5. I-click ang **Save Changes**.
 
 :::info
 Ang iyong password ay dapat hindi bababa sa 8 character ang haba. Tiyaking ang password at confirmation field ay eksaktong magkatugma.
@@ -45,20 +46,23 @@ Ang seksyon ng **Mga Naka-link na Account** ay nagpapakita ng anumang mga panlab
 
 ## Mga Kagustuhan sa Tema
 
-Sinusuportahan ng ChurchApps ang parehong light at dark na display mode:
+Sinusuportahan ng B1 Admin ang parehong light at dark na display mode:
 
-1. Hanapin ang **Theme** na toggle sa iyong pahina ng Profile.
-2. Lumipat sa pagitan ng **Light** at **Dark** na mode.
-3. Ang interface ay agad na mag-a-update upang ipakita ang iyong pinili.
+1. I-click ang iyong larawan ng profile sa kanang itaas na sulok ng B1 Admin upang buksan ang iyong user menu.
+2. Sa ilalim ng **Theme Preferences**, piliin ang **Light Mode** o **Dark Mode**.
+3. Agad na mag-a-update ang interface upang ipakita ang iyong pinili.
 
-Ang iyong kagustuhan sa tema ay nai-save sa iyong account at ilalapat sa lahat ng iyong mga session.
+Naaalala ang iyong pinili sa device at browser na iyon.
 
 ## Pagtanggal ng Account
 
-Sa ibaba ng pahina ng Profile, makikita mo ang opsyon na permanenteng tanggalin ang iyong account. Tinatanggal ng aksyong ito ang iyong account at mga kaugnay na data at hindi na maaaring i-undo.
+Sa seksyong **Account Deletion** ng pahina ng Profile, makikita mo ang opsyon na tanggalin ang iyong account.
+
+- Kung ang iyong simbahan ay **hindi** nag-configure ng Directory Approval Group, ang pag-click sa **Delete my account** ay agad na aalisin ang iyong account at kaugnay na data, at hindi na ito maaaring i-undo.
+- Kung ang iyong simbahan ay **may** naka-configure na Directory Approval Group, ang iyong kahilingan ay ipapadala sa grupong iyon para sa pagsusuri. Naka-disable ang button habang nakabinbin ang kahilingan, at aabisuhan ka kapag inaprubahan o tinanggihan ito ng iyong simbahan. Tingnan ang [Pagsusuri ng mga Kahilingan sa Pagtanggal ng Account](./account-deletion.md) para sa susunod na mangyayari.
 
 :::warning
-Ang pagtanggal ng account ay permanente at hindi na maibabalik. Tiyaking talagang gusto mong alisin ang iyong account bago magpatuloy.
+Ang pagtanggal ng account — maging agad o inaprubahan ng iyong simbahan — ay permanente at hindi na maibabalik.
 :::
 
 :::info

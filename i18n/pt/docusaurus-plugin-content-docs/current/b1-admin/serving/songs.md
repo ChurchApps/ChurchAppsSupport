@@ -20,19 +20,19 @@ A página de Músicas gerencia sua biblioteca de músicas de adoração. Mantenh
 
 ## Navegando sua Biblioteca de Músicas
 
-Quando você abre a página **Músicas**, suas músicas são exibidas como cartões. Cada cartão mostra a imagem de miniatura da música, título, artista e duração. Role pela biblioteca ou use a busca para encontrar o que você precisa.
+Quando você abre a página **Músicas**, suas músicas são listadas em uma tabela. Cada linha mostra a imagem de miniatura da música, título, artista e duração. Use os controles da página abaixo da lista para percorrer uma biblioteca grande, ou use a busca para encontrar o que você precisa.
 
 ## Procurando Músicas
 
-1. Clique no botão **Procurar** na página de Músicas.
+1. Clique na caixa **Pesquisar Músicas** no topo da página de Músicas.
 2. Digite um **título** de música ou nome de **artista**.
-3. Os resultados filtrarão conforme você digita, mostrando músicas correspondentes de sua biblioteca.
+3. A lista é filtrada conforme você digita, mostrando as músicas correspondentes de sua biblioteca e quantas corresponderam. Clique em **Limpar** para mostrar todas as músicas novamente.
 
 ## Adicionando uma Música
 
-1. Clique em **Adicionar Música** na página de Músicas.
-2. Procure o banco de dados externo de músicas por título ou artista.
-3. Selecione a música que você quer adicionar.
+1. Clique em **Adicionar Música** no topo da página de Músicas.
+2. Em **Pesquisar uma Música**, procure no banco de dados externo de músicas por **Título ou Artista**.
+3. Selecione a música que você quer adicionar, ou clique em **Criar Manualmente** se não a encontrar.
 4. A música será adicionada à sua biblioteca com seus detalhes básicos pré-preenchidos.
 
 :::tip
@@ -48,12 +48,16 @@ Seus resultados de busca também podem incluir uma seção **WorshipCommons — 
 
 Apenas músicas que passaram pelo processo de revisão de WorshipCommons aparecem aqui, então a seleção pode ser menor que o banco de dados de música principal.
 
+## Excluindo Músicas {#deleting-songs}
+
+Marque a caixa ao lado de uma ou mais músicas (ou a caixa no cabeçalho para selecionar todas as músicas exibidas), depois clique em **Excluir Selecionadas** na barra que aparece e confirme. Clique em **Limpar** para desmarcar.
+
 ## Visualizando e Editando uma Música
 
-Clique em qualquer cartão de música para abrir sua página de detalhes. A partir daqui você pode:
+Clique no título de uma música para abrir sua página de detalhes. O título, o artista e os detalhes da música, como álbum, tom, duração, BPM e compasso, aparecem à esquerda, junto com seus arranjos e links externos. A partir daqui você pode:
 
-- **Editar detalhes da música** -- Atualize o título, artista, duração e outros metadados.
-- **Gerenciar arranjos** -- Cada música pode ter múltiplos arranjos (por exemplo, diferentes chaves ou versões). Adicione, edite ou remova arranjos conforme necessário.
+- **Editar detalhes da música** -- Clique em **Editar** para atualizar o título, artista, duração e outros metadados. Clique em **Concluído** quando terminar. Para remover a música da sua biblioteca, clique em **Editar** e depois em **Excluir música**.
+- **Gerenciar arranjos** -- Cada música pode ter múltiplos arranjos (por exemplo, diferentes chaves ou versões). Clique em **Adicionar Arranjo** para criar um, e clique no nome de um arranjo em **Arranjos** para abri-lo.
 - **Adicionar letras** -- Digite ou atualize as letras para cada arranjo usando notação ChordPro (por exemplo, `[G]Graça Incrível`). Uma visualização ao vivo ao lado do editor renderiza o gráfico de acordes formatado conforme você digita, para que você possa ver exatamente o que sua equipe verá.
 - **Defina a chave** -- Especifique a chave musical para cada arranjo usando o seletor de chave ao lado das letras. Mudar a chave transpõe os acordes exibidos imediatamente, tanto na página do arranjo quanto ao abrir a música de um plano de serviço, para que sua equipe sempre veja acordes na chave que eles realmente estão tocando.
 - **Adicionar links externos** -- Anexe links para recursos como vídeos do YouTube, gráficos de acordes ou partituras hospedadas em outro lugar.

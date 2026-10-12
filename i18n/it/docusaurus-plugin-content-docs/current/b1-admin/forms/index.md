@@ -24,6 +24,7 @@ Ogni modulo nell'elenco mostra il suo nome e, se configurato, un URL pubblico ch
 Dalla pagina Moduli, puoi:
 
 - **Aggiungere un modulo** -- Fai clic su **Aggiungi modulo** per creare un nuovo modulo personalizzato.
+- **Trovare un modulo** -- Digita nella casella **Trova un modulo** per filtrare l'elenco per nome.
 - **Modificare un modulo** -- Fai clic sul nome di un modulo per aprirlo e modificare le sue domande, i membri o le impostazioni.
 - **Archiviare un modulo** -- Sposta i moduli che non ti servono più nella scheda **Moduli archiviati** per mantenere pulito il tuo elenco.
 - **Ripristinare un modulo** -- Passa alla scheda **Moduli archiviati** e ripristina qualsiasi modulo che vuoi rendere nuovamente attivo.

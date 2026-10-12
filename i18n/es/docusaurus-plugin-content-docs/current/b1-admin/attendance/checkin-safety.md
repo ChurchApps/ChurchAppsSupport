@@ -21,7 +21,7 @@ B1 incluye un conjunto de controles de seguridad infantil para el registro de en
 
 ## Capacidad de la Sala y Cierre de una Sala
 
-Cada sala de registro (grupo) puede aplicar sus propios límites. Abra el grupo, haga clic en el **icono de lápiz** para editar su configuración, y encuentre la sección **Check-In Capacity**:
+Cada sala de registro (grupo) puede aplicar sus propios límites. Abra el grupo, haga clic en **Edit** para editar su configuración, y encuentre la sección **Check-In Capacity**:
 
 - **Capacity** -- El número máximo de personas que pueden registrarse en esta sala a la vez. Cuando la sala está llena, el registro se bloquea y el quiosco nombra la sala llena.
 - **Guest Capacity** -- Un límite opcional separado sobre cuántos huéspedes puede contener la sala.

@@ -38,11 +38,11 @@ Wenn Sie mit der Maus über ein Ereignis fahren, werden der Ereignistitel und de
 
 ## Nach Raum oder Ressource filtern
 
-Verwenden Sie das Dropdown-Menü **Filter** oben links, um den Kalender auf einen einzelnen Raum oder eine Ressource zu begrenzen. Wählen Sie **Alle Räume & Ressourcen** aus, um zur vollständigen Ansicht zurückzukehren.
+Verwenden Sie das Dropdown-Menü **Raum / Ressource** oben links, um den Kalender auf einen einzelnen Raum oder eine Ressource zu begrenzen. Wählen Sie **Alle Räume & Ressourcen** aus, um zur vollständigen Ansicht zurückzukehren.
 
 ## Raum oder Ressource buchen
 
-1. Klicken Sie auf die Schaltfläche **Buchen** in der oberen rechten Ecke der Seite.
+1. Klicken Sie auf die Schaltfläche **Buchen** oben auf der Seite.
 2. Füllen Sie im geöffneten Dialog die Ereignisdetails aus:
    - **Titel** – der Name des Ereignisses
    - **Start-** und **End-Datum/Uhrzeit**

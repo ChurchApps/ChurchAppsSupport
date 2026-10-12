@@ -35,7 +35,7 @@ Ang iyong mga plano ay nahahati sa dalawang tab: **Paparating** at **Nakaraang**
 Sa ibaba ng listahan ay isang seksyon ng **Mga Petsa ng Blockout**. Gamitin ito upang pamahalaan ang mga petsa kung kailan ikaw ay unavailable para sa paglilingkod. Maaari kang magdagdag, mag-edit, at mag-alisin ng mga range ng petsa ng blockout upang ang iyong mga lider ng koponan ay alam kung kailan upang mag-schedule sa paligid mo.
 
 :::info
-Ang iyong simbahan ay maaaring magpadala ng **mga pagaalala** bago ang mga serbisyo na ikaw ay naka-schedule, sa pamamagian ng email at bilang isang notification ng app. Kung hindi ka pa nakaresponde, maaari kang **Tumanggap** o **Tumukoy** nang direkta mula sa email ng pagaalala — walang kailangang mag-sign in.
+Ang iyong simbahan ay maaaring magpadala ng **mga pagaalala** bago ang mga serbisyo na ikaw ay naka-schedule, sa pamamagian ng email at bilang isang notification ng app. Kung nagpapadala ng text ang iyong simbahan, maaari mo rin itong matanggap sa pamamagitan ng text sa pag-on ng **Text messages** sa iyong [Mga Kagustuhan sa Notipikasyon](../getting-started/notification-preferences.md). Kung hindi ka pa nakaresponde, maaari kang **Tumanggap** o **Tumukoy** nang direkta mula sa email ng pagaalala — walang kailangang mag-sign in.
 :::
 
 ## Pagtingin ng mga Detalye ng Plano

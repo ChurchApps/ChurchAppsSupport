@@ -22,7 +22,7 @@ L'éditeur de page B1 est un constructeur visuel de glisser-déposer qui vous pe
 ## Ouverture de l'éditeur
 
 1. Dans B1 Admin, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Site web** et cliquez sur **Pages**.
-2. Trouvez la page que vous souhaitez éditer dans le tableau Pages et cliquez sur **Éditer**.
+2. Trouvez la page que vous souhaitez éditer dans le tableau Pages et cliquez sur **Éditer le contenu**.
 
 L'éditeur s'ouvre en mode plein écran. Le panneau de gauche affiche la structure de votre page et les éléments de contenu disponibles ; la zone centrale affiche un aperçu en direct de votre page.
 
@@ -79,9 +79,18 @@ Vous avez déjà construit une section mais vous voulez une structure différent
    - **Diffusion en direct** -- Votre lecteur de diffusion en direct, intégré directement sur la page
    - **Podcast** -- Une liste d'épisodes tirées d'une URL de flux RSS de podcast externe que vous fournissez, avec des paramètres pour le nombre d'épisodes à afficher et s'il faut afficher les dates et descriptions. Ceci est pour mettre en vedette n'importe quel flux de podcast sur votre site ; pour publier vos propres sermons en tant que podcast, consultez [Gestion des sermons](../sermons/managing-sermons.md#your-podcast-feed) à la place.
    - **Donation** -- Un bouton de don ou un formulaire de donation intégré
-   - **HTML brut** -- Balisage HTML personnalisé pour les cas d'usage avancés
+   - **HTML** -- Votre propre HTML brut, pour les cas d'usage avancés comme l'intégration d'un widget tiers (voir [Utilisation de l'élément HTML](#using-the-html-element))
    - **iFrame** -- Intégrez du contenu externe par URL
 3. Configurez l'élément à l'aide du panneau de paramètres qui apparaît.
+
+### Utilisation de l'élément HTML {#using-the-html-element}
+
+L'élément **HTML** comporte deux zones :
+
+- **Contenu HTML** -- Le balisage à afficher sur la page. Toutes les balises `<script>` que vous incluez ici s'exécutent sur votre site en direct.
+- **JavaScript (sans la balise script)** -- Le code de script exécuté au chargement de la page. Vous pouvez également coller ici l'extrait d'intégration d'un fournisseur avec ses balises `<script>`, et il s'exécutera sur le site en direct.
+
+Si vous collez uniquement une adresse web (comme un lien vers une image) dans la zone JavaScript, la zone devient rouge avec l'avertissement *« Ceci est une adresse web, pas du JavaScript. »* Une adresse seule dans cette zone ne fait rien. Pour afficher une image, utilisez un élément **Image** ou placez `<img src="...">` dans **Contenu HTML**.
 
 ### Réorganisation du contenu
 
@@ -117,7 +126,7 @@ Utilisez les contrôles d'aperçu de la barre d'outils pour vérifier comment vo
 - **Bureau** -- Vue de navigateur pleine largeur
 - **Mobile** -- Vue étroite de la taille du téléphone
 
-Cliquez sur **Aperçu** pour ouvrir une version en direct de la page dans un nouvel onglet du navigateur, exactement comme les visiteurs la verront.
+Pour voir la page en direct exactement comme les visiteurs, revenez à la liste des pages et cliquez sur le chemin de la page. Elle s'ouvre dans un nouvel onglet du navigateur.
 
 ## Vérification de l'accessibilité
 
@@ -128,9 +137,9 @@ Cliquez sur l'icône **Accessibilité** dans la barre d'outils pour exécuter un
 L'éditeur suit automatiquement votre historique d'édition. Utilisez les boutons de la barre d'outils ou les raccourcis clavier pour naviguer :
 
 - **Annuler** (Ctrl+Z / Cmd+Z) -- Annulez votre dernière action
-- **Refaire** (Ctrl+Y / Cmd+Y) -- Réappliquez une action annulée
+- **Refaire** (Ctrl+Maj+Z ou Ctrl+Y / Cmd+Maj+Z) -- Réappliquez une action annulée
 
-Vous pouvez également restaurer la page vers un instantané antérieur. Cliquez sur **Historique** dans la barre d'outils pour voir une liste des instantanés enregistrés avec descriptions, et cliquez sur n'importe quelle entrée pour restaurer à ce point.
+Vous pouvez également restaurer la page vers un instantané antérieur. Cliquez sur **Voir l'historique** dans la barre d'outils pour voir une liste des instantanés enregistrés avec descriptions, et cliquez sur n'importe quelle entrée pour restaurer à ce point.
 
 :::warning
 La restauration d'un instantané remplace le contenu de votre page actuelle par la version d'instantané. Cela ne peut pas être annulé avec le bouton d'annulation standard. Enregistrez un instantané de votre état actuel avant de restaurer une ancienne version si vous souhaitez conserver l'option de retour.
@@ -150,9 +159,9 @@ Les pages peuvent avoir un état **publié**, qui contrôle quand les visiteurs 
 
 Pour publier vos modifications, cliquez sur le bouton **Publier** dans la barre d'outils. La page devient en direct immédiatement.
 
-Pour revenir à la dernière version publiée sans affecter ce que les visiteurs voient, ouvrez le menu de débordement (⋮) et cliquez sur **Annuler les modifications**.
+Pour revenir à la dernière version publiée sans affecter ce que les visiteurs voient, ouvrez le menu de débordement (⋮) et cliquez sur **Annuler les modifications non publiées**.
 
-Pour retirer une page complètement du web, ouvrez le menu de débordement et cliquez sur **Dépublier**. Les visiteurs ne verront plus cette page jusqu'à ce que vous la publiiez à nouveau.
+Pour arrêter d'utiliser le flux de publication, ouvrez le menu de débordement et cliquez sur **Désactiver la publication**. Les modifications sont alors à nouveau mises en direct immédiatement.
 
 :::tip
 Utilisez le flux de travail brouillon/publication lorsque vous souhaitez préparer une page -- par exemple, pour un événement à venir -- et ne la mettez en direct que au moment opportun. Construisez et prévisualisez la page, puis cliquez sur Publier lorsque vous êtes prêt.

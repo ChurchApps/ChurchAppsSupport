@@ -28,13 +28,13 @@ title: "लोग"
 
 7. **डेटा import और export करें** -- एक CSV file से member data लाएं या Breeze जैसी दूसरी चर्च प्रबंधन system से migrate करें। आप अपनी निर्देशिका को भी किसी भी समय CSV में export कर सकते हैं। [डेटा आयात करना](./importing-data.md) और [डेटा निर्यात करना](./exporting-data.md) देखें।
 
-8. **Profiles को manage करें** -- प्रत्येक व्यक्ति के लिए detailed profiles को देखें और संपादित करें, जिसमें contact info, household members, [group memberships](../groups/group-members.md), [attendance history](../attendance/tracking-attendance.md), [donations](../donations/recording-donations.md), और [custom forms](../forms/creating-forms.md) शामिल हैं। एक email, address, या phone number को blue profile header में copy करने के लिए hover करें एक क्लिक के साथ।
+8. **Profiles को manage करें** -- प्रत्येक व्यक्ति के लिए detailed profiles को देखें और संपादित करें, जिसमें contact info, household members, [group memberships](../groups/group-members.md), [attendance history](../attendance/tracking-attendance.md), [donations](../donations/recording-donations.md), और [custom forms](../forms/creating-forms.md) शामिल हैं। व्यक्ति का नाम, contact विवरण, और household profile के बाईं ओर हैं, और उनके बगल में उपस्थिति, दान, समूह, notes, और forms के सारांश हैं। एक address या home या work phone number पर hover करें ताकि एक क्लिक में उसे copy किया जा सके।
 
 9. **Roles और permissions assign करें** -- नियंत्रित करें कि आपकी टीम में कौन B1 Admin के विभिन्न हिस्सों तक पहुंच सकता है roles assign करके। [Assigning Roles](./roles-permissions.md) देखें।
 
 ## शुरुआत करें
 
-लोग अनुभाग तक पहुंचने के लिए, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin के शीर्ष-बाएं में खोज पट्टी), **People** को विस्तृत करें, और **People** पर क्लिक करें। आप अपनी पूरी चर्च निर्देशिका को शीर्ष पर एक search bar और नीचे सदस्यों की एक list के साथ देखेंगे।
+लोग अनुभाग तक पहुंचने के लिए, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin के शीर्ष-बाएं में खोज पट्टी), **People** को विस्तृत करें, और **People** पर क्लिक करें। आप अपनी चर्च निर्देशिका को households की सूची के रूप में देखेंगे, शीर्ष पर एक search bar के साथ। व्यक्तिगत लोगों की **Table** और **Households** सूची के बीच स्विच करने के लिए **View as** toggle का उपयोग करें।
 
 :::tip
 यदि आप B1 को पहली बार सेट अप कर रहे हैं, तो [अपने मौजूदा member data को आयात करना](./importing-data.md) से शुरू करें। फिर आवश्यकतानुसार profiles की समीक्षा करें और साफ करें।

@@ -28,15 +28,15 @@ Esta es una configuración única por ministerio. Necesitas conectar tu cuenta d
 
 1. Inicia sesión en [B1 Admin](https://admin.b1.church/) y ve a **Servicio**
 2. Abre el ministerio que quieres conectar (por ejemplo, Ministerio Infantil)
-3. Desplázate hasta la sección **Cuentas de Proveedor de Contenido**
+3. Desplázate hasta la sección **Proveedores de Contenido**
 4. Haz clic en **Vincular Nuevo Proveedor**
 5. Selecciona **Lessons.church** de la lista
 6. Aparecerá una pantalla de autorización de dispositivo con un código
 7. Ve a [lessons.church](https://lessons.church), inicia sesión e ingresa el código para autorizar la conexión
-8. Una vez aprobado, verás **"Cuenta vinculada"** bajo Lessons.church en B1 Admin
+8. Una vez aprobado, verás **"Vinculado"** bajo Lessons.church en B1 Admin
 
 :::info
-La sección Cuentas de Proveedor de Contenido es por ministerio. Si ejecutas múltiples ministerios (por ejemplo, Infantil y Adolescentes), necesitarás vincular Lessons.church para cada uno por separado.
+La sección Proveedores de Contenido es por ministerio. Si ejecutas múltiples ministerios (por ejemplo, Infantil y Adolescentes), necesitarás vincular Lessons.church para cada uno por separado.
 :::
 
 ## Paso 2 -- Programa una Lección
@@ -44,7 +44,7 @@ La sección Cuentas de Proveedor de Contenido es por ministerio. Si ejecutas mú
 Una vez vinculado, puedes programar lecciones directamente desde Planes.
 
 1. En B1 Admin, ve a **Servicio → Planes**
-2. Selecciona tu pestaña de ministerio y haz clic en **Añadir Tipo de Plan** -- dale al tipo de plan un nombre como Iglesia Infantil o Escuela Dominical
+2. Selecciona tu pestaña de ministerio y haz clic en **Añadir Tipo de Plan** (o **Crear Tipo de Plan** si el ministerio aún no tiene ninguno) -- dale al tipo de plan un nombre como Iglesia Infantil o Escuela Dominical
 3. Haz clic en el tipo de plan que acabas de crear y haz clic en **Programar Lección**. Desde ese menú puedes programar una lección, programar en lote una serie, o **Aplicar Plan de Año** para desplegar una secuencia de año publicada desde Lessons.church.
 4. Selecciona la **fecha** para la lección (por defecto el próximo domingo)
 5. Haz clic en **Seleccionar Lección** -- se abre un diálogo del navegador de contenido

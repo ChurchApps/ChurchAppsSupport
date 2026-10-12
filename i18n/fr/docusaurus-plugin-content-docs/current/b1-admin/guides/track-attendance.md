@@ -48,7 +48,7 @@ Cochez qui a assisté à chaque service et groupe.
 
 Suivez le guide [Enregistrement de la présence](../attendance/recording-attendance.md) pour :
 
-1. Ouvrez l'onglet **Sessions** du groupe et ajoutez une session pour la date et l'heure du service. Cochez **Ajouter aussi pour les autres groupes** pour créer des sessions pour chaque classe à cette heure de service à la fois.
+1. Ouvrez un groupe, cliquez sur **All sessions** dans sa section **Sessions**, et ajoutez une session pour la date et l'heure du service. Cochez **Ajouter aussi pour les autres groupes** pour créer des sessions pour chaque classe à cette heure de service à la fois.
 2. Cochez qui a assisté à chaque groupe
 
 :::tip

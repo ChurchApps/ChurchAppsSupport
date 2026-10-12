@@ -65,11 +65,11 @@ Utvider GenericCrudController med CRUD-rutene `getById`, `post` og `delete`. End
 
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | List alle gudstjenestetidspunkter. Filtrer med `?serviceId=`. Legg til `?include=groups` for å føye til gruppedata |
+| GET | `/` | JWT | — | List alle gudstjenestetidspunkter. Filtrer med `?serviceId=`. Legg til `?include=groups` for å føye til gruppedata. Hver rad inkluderer en beregnet boolsk verdi `checkinOpen` (false bare når gudstjenestetidspunktet har en innsjekkingsplan der vinduet er stengt akkurat nå, i menighetens lokale tid) |
 | GET | `/:id` | JWT | — | Hent et gudstjenestetidspunkt etter ID |
 | GET | `/search?campusId=&serviceId=` | JWT | — | Søk etter gudstjenestetidspunkter på campus og gudstjeneste |
 | GET | `/public/:churchId` | Offentlig | — | Hent treet campus → gudstjeneste → tidspunkt for en menighet. Driver nettstedsbyggerens `serviceTimes`-element |
-| POST | `/` | JWT | Services.Edit | Opprett eller oppdater gudstjenestetidspunkter |
+| POST | `/` | JWT | Services.Edit | Opprett eller oppdater gudstjenestetidspunkter. Valgfrie planfelt: `dayOfWeek` (0 = søndag … 6), `startTime` / `endTime` (`HH:mm`), `checkinOpenMinutes` (før start), `checkinCloseMinutes` (etter slutt). Innsjekking er bare tidsstyrt når både `dayOfWeek` og `startTime` er satt |
 | DELETE | `/:id` | JWT | Services.Edit | Slett et gudstjenestetidspunkt |
 
 ## Gruppetidspunkter for gudstjenester
@@ -192,6 +192,8 @@ Authorization: Bearer <token>
   }
 ]
 ```
+
+Hvis et målrettet gudstjenestetidspunkt har en innsjekkingsplan og vinduet er stengt, lagres ingenting, og svaret er `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }`. Kapasitets- og frivilligforholdsbrudd gir også 409 (`error: "capacity"` eller `"ratio"`).
 
 ## Besøksøkter
 

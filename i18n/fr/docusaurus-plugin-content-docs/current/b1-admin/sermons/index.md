@@ -28,7 +28,7 @@ Organisez vos prédications en séries ou collections. Les playlists permettent 
 
 ### Horaires de diffusion en direct
 
-Configurez le programme de diffusion en direct de votre église. Définissez des services hebdomadaires récurrents ou des événements ponctuels, gérez les paramètres de chat et de vidéo, et contrôlez le moment où votre diffusion passe en direct. Les visiteurs verront le prochain horaire de service prévu sur votre page de diffusion. Consultez [Diffusion en direct](live-streaming) pour les instructions de configuration.
+Configurez le programme de diffusion en direct de votre église. Définissez des services hebdomadaires récurrents ou des événements ponctuels, gérez les paramètres de chat et de vidéo, et contrôlez le moment où votre diffusion passe en direct. Les visiteurs verront le prochain horaire de service prévu sur votre page de diffusion. Une page **Paramètres** distincte, sous **Sermons**, contrôle les onglets (chat, prière et liens personnalisés) affichés à côté de votre diffusion en direct. Consultez [Diffusion en direct](live-streaming) pour les instructions de configuration.
 
 ### Import en masse
 

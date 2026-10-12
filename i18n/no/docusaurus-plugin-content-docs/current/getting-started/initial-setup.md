@@ -21,8 +21,8 @@ Etter at du har opprettet konto og menighet, er det noen viktige trinn du bør g
 ## Trinn 1: Legg inn menighetsinformasjon
 
 1. Åpne [Jump-menyen](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **Innstillinger** og klikk på **Innstillinger**.
-2. Klikk på **Rediger innstillinger**.
-3. Skriv inn menighetens **navn**, **adresse** og **kontaktinformasjon**.
+2. I delen **Kirkeinformasjon** klikker du på **Rediger**.
+3. Skriv inn menighetens **navn**, **underdomene** og **adresse**.
 4. Klikk på **Lagre** for å ta i bruk endringene.
 
 ## Trinn 2: Sett opp profilen din
@@ -47,7 +47,7 @@ Når logoen og profilen er på plass før du inviterer teammedlemmer, gir det et
 
 Når teamet er på plass, kan du begynne å bygge ut kjerneområdene i B1 Admin:
 
-1. **Personer** -- Legg medlemmer inn i menighetens medlemsregister. Dette er grunnlaget for alt annet, så begynn her. Du kan legge til personer manuelt eller bruke verktøyet **Importer** under **Innstillinger**.
+1. **Personer** -- Legg medlemmer inn i menighetens medlemsregister. Dette er grunnlaget for alt annet, så begynn her. Du kan legge til personer manuelt eller bruke verktøyet **Importer/eksporter** under **Innstillinger**.
 2. **Grupper** -- Opprett grupper for smågrupper, tjenestelag, klasser og andre samlinger.
 3. **Oppmøte** -- Sett opp avdelinger, gudstjenester og gudstjenestetidspunkter for å registrere oppmøte.
 4. **Gaver** -- Sett opp gavefond og koble til betalingsløsningen din (Stripe) for å ta imot nettgaver.

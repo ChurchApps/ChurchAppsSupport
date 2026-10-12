@@ -24,7 +24,7 @@ Un rol es un conjunto de permisos que asignas a uno o más usuarios. Por ejemplo
 
 Cada rol controla el acceso a áreas específicas de B1 Admin, incluyendo:
 
-- **People** -- visualización y edición de perfiles de miembros. La pestaña Notes en un registro de persona requiere **Edit People**, y un permiso separado **View Confidential Notes** controla el acceso a la sección de Notas Confidenciales (para cuidado pastoral, historial personal y notas confidenciales similares).
+- **People** -- visualización y edición de perfiles de miembros. La sección Notes en un registro de persona requiere **Edit People**, y un permiso separado **View Confidential Notes** controla el acceso a la sección de Notas Confidenciales (para cuidado pastoral, historial personal y notas confidenciales similares).
 - **Donations** -- gestión de contribuciones e informes financieros
 - **Attendance** -- registro y visualización de datos de asistencia
 - **Forms** -- creación y gestión de [formularios personalizados](../forms/creating-forms.md)

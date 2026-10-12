@@ -20,19 +20,19 @@ Die Seite Profil ermöglicht es Ihnen, Ihre persönlichen Kontoeinstellungen zu 
 
 ## Profilinformation
 
-Der obere Bereich der Seite Profil enthält Ihre grundlegenden Kontodetails:
+Die Seite Profil zeigt links Ihren Namen und Ihre E-Mail-Adresse, darunter befindet sich eine Schaltfläche **Bearbeiten**. Klicken Sie auf **Bearbeiten**, um das Formular **Konto bearbeiten** zu öffnen, das Ihre grundlegenden Kontodetails enthält:
 
 1. **E-Mail** – Ihre E-Mail-Adresse für die Anmeldung und den Empfang von Benachrichtigungen.
 2. **Vorname** und **Nachname** – Ihr Anzeigename in ChurchApps.
 3. **Passwort** – Aktualisieren Sie Ihr Kontopasswort.
 
-Um Ihre Informationen zu aktualisieren, bearbeiten Sie die Felder und klicken Sie auf die Schaltfläche **Änderungen speichern**.
+Um Ihre Informationen zu aktualisieren, bearbeiten Sie die Felder und klicken Sie auf die Schaltfläche **Änderungen speichern**. Klicken Sie auf **Abbrechen** (oder den Link **Zurück zu** mit Ihrem Namen), um zur Profilseite zurückzukehren, ohne zu speichern.
 
 ## Ändern Sie Ihr Passwort
 
-1. Scrollen Sie zu den Passwortfeldern auf der Seite Profil.
+1. Klicken Sie auf der Seite Profil auf **Bearbeiten**.
 2. Geben Sie Ihr **aktuelles Passwort** ein.
-3. Geben Sie Ihr neues Passwort in das Feld **Passwort** ein.
+3. Geben Sie Ihr neues Passwort in das Feld **Neues Passwort** ein.
 4. Geben Sie es erneut in das Feld **Passwort bestätigen** ein.
 5. Klicken Sie auf **Änderungen speichern**.
 
@@ -46,17 +46,17 @@ Der Abschnitt **Verknüpfte Konten** zeigt alle externen Dienste an, die mit Ihr
 
 ## Design-Einstellungen
 
-ChurchApps unterstützt sowohl helle als auch dunkle Anzeigemodi:
+B1 Admin unterstützt sowohl helle als auch dunkle Anzeigemodi:
 
-1. Finden Sie den Schalter **Design** auf Ihrer Seite Profil.
-2. Wechseln Sie zwischen **Hell** und **Dunkel** Modus.
+1. Klicken Sie oben rechts in B1 Admin auf Ihr Profilbild, um Ihr Benutzermenü zu öffnen.
+2. Wählen Sie unter **Design-Einstellungen** **Heller Modus** oder **Dunkler Modus**.
 3. Die Benutzeroberfläche wird sofort aktualisiert, um Ihre Wahl widerzuspiegeln.
 
-Ihre Design-Voreinstellung wird in Ihrem Konto gespeichert und gilt für alle Ihre Sitzungen.
+Ihre Auswahl wird auf diesem Gerät und in diesem Browser gespeichert.
 
 ## Kontolöschung
 
-Am unteren Ende der Seite Profil finden Sie die Option zum permanenten Löschen Ihres Kontos. Diese Aktion entfernt Ihr Konto und zugehörige Daten und kann nicht rückgängig gemacht werden.
+Im Abschnitt **Kontolöschung** der Seite Profil finden Sie die Option zum permanenten Löschen Ihres Kontos. Diese Aktion entfernt Ihr Konto und zugehörige Daten und kann nicht rückgängig gemacht werden.
 
 :::warning
 Die Kontolöschung ist dauerhaft und kann nicht rückgängig gemacht werden. Stellen Sie sicher, dass Sie Ihr Konto wirklich entfernen möchten, bevor Sie fortfahren.

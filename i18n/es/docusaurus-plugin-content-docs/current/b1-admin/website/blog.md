@@ -27,7 +27,7 @@ La página Blog te permite publicar noticias, actualizaciones y devocionales en 
 ## Agregar un Post
 
 1. Haz clic en **Add Post** en la esquina superior derecha.
-2. Ingresa un **Title**. Se genera automáticamente un slug amigable con URL mientras escribes -- puedes editarlo directamente si deseas una dirección diferente.
+2. Ingresa un **Title**. Se genera automáticamente una **Dirección web** (slug) amigable con URL mientras escribes -- puedes editarla directamente si deseas una dirección diferente.
 3. Agrega un **Excerpt** -- un resumen corto mostrado en la lista de posts, descripciones meta y feed RSS. Si lo dejas en blanco, se genera uno automáticamente desde el inicio del contenido de tu post.
 4. Escribe el cuerpo del post en el editor **Content** usando Markdown. Haz clic en **Preview** para ver cómo se verá el post formateado.
 5. Elige una **Category** (elige una existente o escribe una nueva) y **Tags** opcionales separadas por comas.
@@ -49,9 +49,9 @@ Cada post en la lista muestra uno de tres estados:
 
 ## Edición, Vista Previa y Eliminación de Posts
 
-- Haz clic en el icono **Edit** junto a un post para hacer cambios.
-- Haz clic en el icono **View** (visible en posts publicados) para abrir el post en vivo en tu sitio web en una nueva pestaña.
-- Haz clic en el icono **Delete** para eliminar permanentemente un post.
+- Haz clic en **Edit** junto a un post para hacer cambios.
+- Haz clic en **View on Site** (visible en posts publicados) para abrir el post en vivo en tu sitio web en una nueva pestaña.
+- Haz clic en **Delete** para eliminar permanentemente un post.
 
 ## Cómo los Visitantes Ven tu Blog
 

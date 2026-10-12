@@ -85,6 +85,7 @@ Consulta [Autenticación y Permisos](./authentication) para puntos finales de in
 | POST | `/updateEmail` | JWT | — | Cambiar la dirección de correo del usuario |
 | POST | `/updatePassword` | JWT | — | Cambiar la contraseña del usuario (mín. 6 caracteres) |
 | POST | `/updateOptedOut` | JWT | — | Establecer el estado de exclusión de una persona |
+| POST | `/sendInviteEmail` | JWT | People.Edit | Enviar por correo una invitación a una persona de esta iglesia (`email`, `personName`, `contextName`). El botón dice **Sign Up** para alguien sin cuenta y **Log In** para un usuario existente. Un usuario que nunca ha iniciado sesión recibe en cambio un enlace **Set Your Password** que caduca en 7 días. Cuenta para el límite diario de correos de la iglesia (`429` cuando se alcanza) |
 | GET | `/search?term=` | JWT | Server.Admin | Buscar todos los usuarios por nombre/correo |
 | DELETE | `/` | JWT | — | Eliminar la cuenta del usuario actual |
 

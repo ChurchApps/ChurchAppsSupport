@@ -34,7 +34,7 @@ Quando um grupo usa a política de **Pedido**, todas as tentativas de ingresso p
 
 1. Em B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) e escolha **Pessoas > Grupos**
 2. Clique no nome do grupo
-3. Os pedidos pendentes para este grupo aparecem no topo da guia **Membros**
+3. A seção **Membros** mostra quantos pedidos estão pendentes. Clique em **Todos os membros** -- os pedidos pendentes para este grupo aparecem no topo da lista de membros
 
 ### Para Administradores
 
@@ -85,9 +85,9 @@ Fornecer uma razão de recusa ajuda a pessoa a entender por que seu pedido não 
 
 Cada pedido de ingresso também cria uma tarefa em **Servindo → Meu Trabalho**, intitulada "*Pessoa* solicitou ingresso em *Grupo*." É atribuída aos líderes do grupo. Se o grupo ainda não tiver um líder, vai para qualquer funcionário com a permissão **Membros do Grupo > Editar**, ou para os administradores do domínio de sua igreja se ninguém tiver essa permissão. Funcionários e administradores que recebem a tarefa desta forma também recebem uma notificação que os vincula direto a ela.
 
-Abrir a tarefa mostra o nome do solicitante, o grupo e sua mensagem opcional, com botões **Aprovar** e **Recusar** direto no cartão de tarefas (Recusar abre o mesmo campo de razão opcional descrito acima). Isso dá aos líderes uma segunda maneira orientada por notificação de agir em um pedido sem navegar até a guia Pedidos de Ingresso do grupo.
+Abrir a tarefa mostra o nome do solicitante, o grupo e sua mensagem opcional, com botões **Aprovar** e **Recusar** direto no cartão de tarefas (Recusar abre o mesmo campo de razão opcional descrito acima). Isso dá aos líderes uma segunda maneira orientada por notificação de agir em um pedido sem abrir a lista de membros do grupo.
 
-Decidir um pedido de qualquer lugar -- a guia Pedidos de Ingresso do grupo ou seu cartão de Tarefas -- fecha-o em todos os lugares, para que os líderes nunca vejam uma tarefa obsoleta para um pedido que alguém já cuidou.
+Decidir um pedido de qualquer lugar -- a lista de membros do grupo ou seu cartão de Tarefas -- fecha-o em todos os lugares, para que os líderes nunca vejam uma tarefa obsoleta para um pedido que alguém já cuidou.
 
 ## Notificações
 

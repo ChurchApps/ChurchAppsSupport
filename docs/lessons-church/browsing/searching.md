@@ -6,7 +6,7 @@ title: "Searching"
 
 <div class="article-intro">
 
-When you know what topic you want to teach but are not sure which program or study contains it, the search feature helps you find the right content quickly. Search works across the entire Lessons.church library, including content from external providers.
+When you know what topic you want to teach but are not sure which program or study contains it, the search feature helps you find the right content quickly. Search works across the programs, studies, and lessons in the Lessons.church library.
 
 </div>
 
@@ -19,17 +19,17 @@ When you know what topic you want to teach but are not sure which program or stu
 
 ## How to Search
 
-1. Navigate to the **search page** from the top of the Lessons.church site.
-2. Type a keyword or phrase into the **search box** (for example, "forgiveness," "David and Goliath," or "prayer").
-3. Press **Enter** or click the search button to see your results.
+1. Click the **search** icon at the top of the Lessons.church site to open the search box.
+2. Type a keyword or phrase (for example, "forgiveness," "David and Goliath," or "prayer"). Matching results appear in a list below the box as you type -- click one to go straight to it.
+3. Press **Enter** to open the full search results page.
 
 ## How Search Works
 
-Search is powered by full-text search across the entire Lessons.church library. It looks through lesson titles, descriptions, and content to find matches for your keywords. Results include lessons from all available programs and providers, so you get a comprehensive view of what is available on a given topic.
+Search looks through the names, descriptions, categories, and age groups of every program, study, and lesson in the Lessons.church library. It also matches the start of a word, so "bapt" finds "baptism." Matches in a name count the most, and programs and studies rank slightly ahead of individual lessons. Content from external providers is not included in search results.
 
 ## Navigating Results
 
-Search results display the matching lessons along with information about which program and study each one belongs to. Click on any result to go directly to that lesson page, where you can view the full content, sections, roles, and downloadable materials.
+Each result is labeled as a **program**, **study**, or **lesson**, along with its age group when one is set. Studies show which program they belong to, and lessons show their study and program. Click any result to go directly to that page. A lesson page shows the full content, sections, roles, and downloadable materials.
 
 ## When to Use Search
 
@@ -40,7 +40,7 @@ Search is most useful when:
 - You are not yet familiar with the available programs and want a quick way to explore what is offered.
 
 :::tip
-If your keyword returns too many results, try a more specific phrase. For example, search for "Good Samaritan" instead of just "Samaritan" to narrow things down.
+Results that match more of your words rank higher. If the result you want is buried, add another specific word. For example, "Good Samaritan" moves the lessons about that parable to the top.
 :::
 
 If you already know which program you want, browsing by program is usually faster. See [Programs and Studies](./programs-and-studies.md) for details on navigating the content hierarchy.

@@ -16,7 +16,7 @@ Desde la sección de Perfil, puedes:
 
 - **Actualizar tu nombre y correo electrónico** -- Mantén tu información de contacto actual.
 - **Cambiar tu contraseña** -- Establece una nueva contraseña para tu cuenta.
-- **Cambiar temas** -- Alterna entre modo claro y oscuro para que coincida con tu preferencia.
+- **Cambiar temas** -- Alterna entre modo claro y oscuro desde el menú de usuario (haz clic en tu foto de perfil en la esquina superior derecha).
 - **Manejar dispositivos conectados** -- Ver y controlar qué dispositivos de ChurchAppsPlayer están vinculados a tu cuenta.
 - **Ver cuentas vinculadas** -- Ve y maneja cualquier servicio externo conectado a tu cuenta de ChurchApps.
 - **Aprobar solicitudes de cambio de perfil** -- Revisa y aplica actualizaciones enviadas por miembros.

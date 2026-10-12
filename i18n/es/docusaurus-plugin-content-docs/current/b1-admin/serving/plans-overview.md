@@ -23,8 +23,9 @@ La Descripción General de Planes te da una vista de pájaro de todas tus asigna
 
 1. En B1 Admin, abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda), expande **Servicio** y haz clic en **Planes**.
 2. Selecciona una **pestaña de ministerio** en la parte superior de la página.
-3. Haz clic en un **tipo de plan** para abrir su lista de planes.
-4. Haz clic en el botón **Descripción General** cerca de la parte superior de la página.
+3. Haz clic en **Descripción General** junto al tipo de plan en la lista **Tipos de Plan**, o abre el tipo de plan y haz clic en **Descripción General** en la parte superior de la página.
+
+La descripción general cubre el tipo de plan desde el que la abriste. Haz clic en el nombre del tipo de plan en la parte superior de la descripción general para volver a su lista de planes.
 
 ## Leer la Cuadrícula de Descripción General
 
@@ -62,20 +63,31 @@ Auto-Programación solo llena ranuras que ya están vacías -- nunca reemplaza u
 
 Haz clic en **Enviar Correo a Voluntarios** para enviar una notificación a cada voluntario asignado en cualquier lugar del rango de fechas actualmente filtrado y ministerio, en una acción, en lugar de enviar correo plan por plan. B1 informa cuántos correos fueron enviados y cuántos fallaron.
 
+## Enviar Mensaje de Texto a Todos los Programados {#texting-everyone-scheduled}
+
+Si tu iglesia tiene un [proveedor de mensajes de texto](../settings/church-settings.md#texting) conectado y puedes editar planes y enviar mensajes de texto, aparece un botón **Enviar Texto a Voluntarios** en la parte superior de la descripción general.
+
+1. Haz clic en **Enviar Texto a Voluntarios**.
+2. El cuadro de diálogo muestra cuántos voluntarios recibirán el texto (por ejemplo, "12 de 14 voluntarios recibirán este texto"), además de cuántos han optado por no recibir textos y cuántos no tienen un número de teléfono registrado.
+3. Escribe tu **Mensaje**. Puedes hacer clic en un marcador de posición para insertar el nombre de cada voluntario o el nombre de tu iglesia.
+4. Haz clic en **Enviar**. B1 informa cuántos textos fueron enviados.
+
+Cada voluntario asignado en el rango de fechas recibe un texto en el número de móvil de su perfil, incluso si sirve en varias fechas. Las personas que comparten un número de teléfono (como un teléfono familiar) reciben solo un texto. Los voluntarios que respondieron STOP a un texto anterior se omiten.
+
+:::info
+Los textos se envían a través del proveedor de mensajes de texto de tu iglesia, por lo que se aplica su tarifa. Si tu iglesia se queda sin créditos de mensajes de texto, el envío se detiene y el cuadro de diálogo te lo indica. Un solo envío llega a un máximo de 200 voluntarios; reduce el rango de fechas si tienes más.
+:::
+
 ## Resaltar el Horario de un Voluntario
 
 Usa el menú desplegable **Resaltar** para elegir una persona de tu equipo -- cada celda donde está asignada se resalta en la cuadrícula, para que puedas ver en todas partes donde ya están sirviendo antes de añadirlos a otra ranura. Elige **Todos** para apagar el resaltado.
 
 ## Filtrar la Descripción General
 
-Puedes ajustar lo que la descripción general muestra usando los controles de filtro en la parte superior:
+Puedes ajustar lo que la descripción general muestra usando los controles situados encima de la cuadrícula. La cuadrícula se actualiza en cuanto los cambias.
 
+- **Todas las posiciones / Solo sin llenar** -- Elige **Solo sin llenar** para ocultar las filas donde cada fecha ya está llena, para que puedas enfocarte solo en posiciones que aún necesitan un voluntario.
 - **Fecha de Inicio / Fecha de Finalización** -- Por defecto la descripción general muestra 12 semanas en el futuro. Ingresa fechas personalizadas para expandir o reducir el rango.
-- **Ministerio** -- Cambia a un ministerio diferente sin salir de la descripción general.
-- **Tipo de Plan** -- Filtra a un tipo de plan específico dentro del ministerio seleccionado.
-- **Solo sin llenar** -- Alterna esto para ocultar filas donde cada fecha ya está llena, para que puedas enfocarte solo en posiciones que aún necesitan un voluntario.
-
-Haz clic en **Filtrar** después de hacer cambios para actualizar la cuadrícula.
 
 ## Exportar a CSV
 

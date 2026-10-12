@@ -24,7 +24,7 @@ B1 Admin은 역할 기반 권한 체계를 사용하여 팀의 각 사용자가 
 
 각 역할은 B1 Admin의 특정 영역에 대한 접근을 제어하며, 다음을 포함합니다:
 
-- **People** -- 회원 프로필 보기 및 편집. 사람 기록의 Notes 탭은 **Edit People**이 필요하며, 별도의 **View Confidential Notes** 권한은 기밀 노트 섹션(목회 관리, 개인 기록 등의 민감한 노트)에 대한 접근을 제어합니다.
+- **People** -- 회원 프로필 보기 및 편집. 사람 기록의 Notes 섹션은 **Edit People**이 필요하며, 별도의 **View Confidential Notes** 권한은 기밀 노트 섹션(목회 관리, 개인 기록 등의 민감한 노트)에 대한 접근을 제어합니다.
 - **Donations** -- 기부금 및 재무 보고서 관리
 - **Attendance** -- 출석 데이터 기록 및 보기
 - **Forms** -- [사용자 지정 양식](../forms/creating-forms.md) 생성 및 관리

@@ -23,7 +23,7 @@ Lo strumento B1 Transfer rende facile portare i tuoi dati esistenti in B1, sia c
 
 1. Accedi a **B1 Admin**.
 2. Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Impostazioni** e fai clic su **Impostazioni**.
-3. Fai clic sul pulsante **Importazione/Esportazione** in alto a destra dell'intestazione della pagina.
+3. Fai clic sul link **Importazione/Esportazione** sotto il nome della tua chiesa in cima al menu delle impostazioni a sinistra.
 4. Questo aprirà lo strumento **B1 Transfer** in una nuova scheda in [transfer.b1.church](https://transfer.b1.church).
 
 Lo strumento di trasferimento ti guida attraverso quattro passaggi: Sorgente, Anteprima, Destinazione ed Esecuzione.

@@ -24,7 +24,7 @@ Uma função é um conjunto de permissões que você atribui a um ou mais usuár
 
 Cada função controla o acesso a áreas específicas do B1 Admin, incluindo:
 
-- **Pessoas** -- visualizar e editar perfis de membros. A guia Notas em um registro de pessoa requer **Editar Pessoas**, e uma permissão separada **Visualizar Notas Confidenciais** controla o acesso à seção de Notas Confidenciais (para cuidados pastorais, histórico pessoal e notas sensíveis semelhantes).
+- **Pessoas** -- visualizar e editar perfis de membros. A seção Notas em um registro de pessoa requer **Editar Pessoas**, e uma permissão separada **Visualizar Notas Confidenciais** controla o acesso à seção de Notas Confidenciais (para cuidados pastorais, histórico pessoal e notas sensíveis semelhantes).
 - **Doações** -- gerenciar contribuições e relatórios financeiros
 - **Presença** -- registrar e visualizar dados de presença
 - **Formulários** -- criar e gerenciar [formulários personalizados](../forms/creating-forms.md)

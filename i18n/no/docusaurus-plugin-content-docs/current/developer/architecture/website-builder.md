@@ -74,6 +74,8 @@ Hele treet for en URL kommer tilbake fra ett enkelt anonymt kall — `GET /conte
 
 `sermons`-elementet er det mest konfigurerbare av kirketype-typene: et `layout`-svar velger `browse` (den gamle fulle nettleseren), `grid`, `list` eller `featuredLatest`, med `playlistId`, `itemCount`, `showTitles` og `showDates` som foredles på ikke-browse-layoutene.
 
+`rawHTML`-elementet har to svar: `rawHTML` (markup) og `javascript`. Skript som settes inn gjennom `innerHTML`, kjøres aldri, så `RawHTMLElement` gjenskaper hver `<script>`-node i markupen som et nytt element. Disse ikke-parser-innsatte nodene er betrodde under CSP-en `strict-dynamic`. Et `javascript`-svar som starter med `<` (et leverandørutdrag limt inn med sine `<script>`-tagger) tolkes som markup og behandles likt. Ellers kjøres det som et vanlig inline-skript. B1Admin flagger en bar URL i JavaScript-boksen, siden en alene URL kjøres som et skript uten virkning. `map`-elementet gjengir ingenting og laster ikke noe Google Maps-skript når ingen Maps API-nøkkel er konfigurert.
+
 ### Gjengivere (`@churchapps/apphelper`)
 
 Gjengivere lever i `Packages/apphelper/src/website/components/elementTypes/`, en komponent per type, løst gjennom `ElementRegistry.ts` — et to-lags kart der `Element.tsx` registrerer standardgjengiver for alle 35 typer (`registerDefaultElementRenderer`) og en vertapplikasjon kan overstyre hvilken som helst av dem under kjøring (`registerElementRenderer`) uten å forgrene pakken.
@@ -137,11 +139,11 @@ Alt av dette er B1App-sidet gjengiving over ContentApi-data — API-en lagrer, a
 |---------|--------------|
 | Metabeskrivelser | `pages.metaDescription` (≤300 tegn) flyter gjennom `MetaHelper.getMetaData()` til Next.js `Metadata` (beskrivelse + Open Graph) på hvert byggergjengitt rute. B1Admin's sidesinnstillinger inkluderer en AI «Generate»-knapp (se nedenfor) |
 | Omdirigeringer | Per-kirke `redirects`-rader administrert på `/content/redirects` (`content.edit`, 200-radgrense, normaliserte baner). På en ville-være 404, B1App's siderute løser banen mot `GET /content/redirects/public/:churchId` og utsteder en HTTP 308 via Next's `permanentRedirect`; uskarpe baner faller gjennom til `notFound()` |
-| Merkeblasert 404 | `not-found.tsx` gjengir `BrandedNotFound` med kirkens logo, navn og tema i stedet for en generisk feil |
+| Merkeblasert 404 | `not-found.tsx` gjengir `BrandedNotFound` med kirkens logo, navn og tema i stedet for en generisk feil. En ukjent `/register/[eventId]` returnerer også en ekte 404 |
 | Strukturert data | `BlogPosting` JSON-LD på blogginnlegg; `VideoObject` på per-preken sider (`/{sdSlug}/sermons/[sermonId]`) og på sider som inneholder et `sermons`-element; `Event` fra kalender-/hendelseelementer på byggesider; schema.org `Event` fra `serviceTimes`-elementet |
 | Prekesider | Hvert offentlig preken får en søkbar side på `/sermons/[sermonId]` med full metadata — prekener er ikke lenger låst inne i elementet på klientsiden |
-| Analyser | Den offentlige innstillingsnøkkelen `ga4MeasurementId` (administrert ved siden av omdirigeringer i B1Admin) injiserer en per-kirke GA4 gtag via `next/script` |
-| Sitemap og feeds | Per-kirke `sitemap.xml`-ruten inkluderer byggesider og blogg-URLer; blogglisten reklamerer RSS-feeden |
+| Analyser | Den offentlige innstillingsnøkkelen `ga4MeasurementId` (administrert ved siden av omdirigeringer i B1Admin) injiserer en per-kirke GA4 gtag via `next/script`. B1-appen (`/{sdSlug}/mobile`) sender også sine sidevisninger til den ID-en, sammen med ChurchApps' egen tagg, når den er en gyldig `G-`-ID (GTM-containere forblir bare på nettstedet). Hver `gtag('config')` har en `display_mode` på `installed` eller `browser`, basert på `navigator.standalone` eller medieforespørselen `(display-mode: standalone)` (`B1App/src/helpers/mobileAnalytics.ts`) |
+| Sitemap og feeds | Per-kirke `sitemap.xml`-ruten inkluderer byggesider, blogg-URLer og de 50 nyeste prekensidene (med `<lastmod>` fra hver prekens publiseringsdato). Den lister også de innebygde sidene `/sermons`, `/groups` og `/volunteer` når de har innhold (offentlige grupper, påmeldingsplaner), med mindre en lagret omdirigering erstatter den banen; blogglisten reklamerer RSS-feeden |
 | Tilgjengelighet | Det offentlige kromen gjengir en hoppekobbling som målretter `<main id="main-content">`-landemerkene i hver layout-wrapper |
 
 ## AI-generering (AskApi)

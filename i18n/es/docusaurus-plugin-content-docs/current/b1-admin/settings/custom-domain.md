@@ -30,7 +30,7 @@ Los cambios de DNS pueden tomar desde unos minutos hasta unas pocas horas para s
 Una vez que DNS está apuntando a B1:
 
 1. Ve a **Configuración** en B1 Admin.
-2. Haz clic en **Dominios**.
+2. Haz clic en **Dominios** en la lista de la izquierda, luego haz clic en **Editar** en la sección **Dominios**.
 3. Escribe tu dominio en el campo y haz clic en **Guardar**.
 
 No necesitas hacer clic en el botón **+** primero: un dominio dejado escrito en el campo se agrega cuando guardas. Usa **+** (o presiona **Intro**) cuando desees agregar varios dominios a la lista antes de guardar.

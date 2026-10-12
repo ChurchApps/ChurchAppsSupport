@@ -29,7 +29,7 @@ Siga os guias [Criando Grupos](../groups/creating-groups.md) e [Membros do Grupo
 3. Adicione voluntários a cada grupo pesquisando por nome e clicando em Adicionar
 
 :::tip
-Designe líderes de equipe usando o ícone de chave verde na aba Membros. Os líderes podem gerenciar o calendário de seu próprio grupo e coordenar sua equipe.
+Designe líderes de equipe com o ícone de estrela (**Tornar Líder**) na lista de membros do grupo (clique em **Todos os membros** na página do grupo). Os líderes podem gerenciar o calendário de seu próprio grupo e coordenar sua equipe.
 :::
 
 ## Passo 2: Construa Sua Biblioteca de Músicas
@@ -52,10 +52,11 @@ Os planos são as atribuições semanais que dizem aos voluntários onde eles s�
 
 Siga o guia [Planos](../serving/plans.md) para:
 
-1. Navegue até Serviço, selecione sua aba de ministério
-2. Clique em "Adicionar Plano" e escolha a data do serviço
-3. Na aba Atribuições, expanda cada equipe e atribua voluntários às suas posições
+1. Vá para Serviço, selecione sua aba de ministério e abra seu tipo de plano
+2. Clique em **Novo Plano** e escolha a data do serviço. Para configurar vários domingos de uma vez, copie do plano anterior e informe quantas semanas em **Repetir semanalmente por este número de semanas**
+3. Na seção **Atribuições de Equipe de Serviço** do plano, adicione posições e atribua voluntários a elas
 4. Os voluntários verão seu status de atribuição (Solicitado, Confirmado, Pendente)
+5. Ative os [lembretes para voluntários](../serving/plans.md#volunteer-reminders) para o tipo de plano, para que os voluntários sejam lembrados por push, e-mail ou texto antes de cada culto
 
 ## Passo 4: Construa a Ordem de Serviço
 
@@ -63,8 +64,8 @@ Organize o fluxo de seu serviço do início ao fim.
 
 Siga o guia [Ordem de Serviço](../serving/service-order.md) para:
 
-1. Alterne para a aba "Ordem de Serviço" em seu plano
-2. Clique em "Adicionar Item" para adicionar elementos: músicas de adoração (de sua biblioteca), orações, leituras de escritura, anúncios, sermão, oferta, encerramento
+1. Abra seu plano e localize a seção **Ordem de Serviço** no topo
+2. Clique em **Adicionar** para adicionar elementos: músicas de adoração (de sua biblioteca), orações, leituras de escritura, anúncios, sermão, oferta, encerramento
 3. Arraste e solte itens para reordenar o fluxo do serviço
 
 :::info
@@ -89,7 +90,7 @@ B1 Admin não cria mais tarefas em um cronograma repetido. Para processos repeti
 
 Deixe os voluntários se inscreverem em posições em vez de esperar por atribuições de administrador.
 
-1. Ao editar um plano, defina um **Prazo de Inscrição** (horas antes do serviço) para controlar quando o auto-registro é encerrado. Deixe em branco para nenhum prazo.
+1. Ao criar ou editar um plano, defina um **Prazo de Inscrição** (horas antes do serviço) para controlar quando o auto-registro é encerrado. Deixe em branco para nenhum prazo. Novos planos começam com o prazo do plano anterior.
 2. Opcionalmente, ative **Mostrar nomes de voluntários na página de inscrição** para deixar os voluntários ver quem mais está inscrito.
 3. Para cada posição, marque a caixa de seleção **Permitir Inscrição de Auto-Serviço** para torná-la disponível para auto-serviço.
 4. Adicione uma **Descrição** a cada posição para que os voluntários saibam em que consiste a função.

@@ -140,9 +140,9 @@ Paystack는 GivingApi가 관여하기 전에 자금이 이동한다는 점에서
 
 ### 관리 기록 및 Stripe 임포트(B1Admin)
 
-B1Admin 기부 섹션(`B1Admin/src/donations/`)은 금융 팀이 작업하는 곳입니다. 배치 입력(`components/BulkDonationEntry.tsx`)은 `/giving/donations`에 포스트한 다음 `/giving/funddonations`로 현금/수표/현물 선물을 기록합니다 — 게이트웨이가 관여하지 않습니다. 펀드, 배치, 캠페인, 진술은 각각 자신의 `/giving/*` CRUD 라우트에 매핑됩니다. 회원 스타일 기부 패널(`B1Admin/src/donationComponents/`)은 B1App과 동일한 apphelper 컴포넌트를 재사용합니다.
+B1Admin 기부 섹션(`B1Admin/src/donations/`)은 금융 팀이 작업하는 곳입니다. 배치 입력(`components/BulkDonationEntry.tsx`)은 `/giving/donations`에 포스트한 다음 `/giving/funddonations`로 현금/수표/현물 선물을 기록합니다 — 게이트웨이가 관여하지 않습니다. 사람 기록의 **Log a gift** 시트(`components/LogGiftDialog.tsx`)는 단일 선물에 대해 같은 작업을 수행하며, 먼저 `batchDate`가 선물 날짜와 일치하는 배치를 찾거나 그 날짜 이름의 배치를 만듭니다(`POST /giving/donationbatches`). 이후 단계가 실패하면 기부 및 새로 만든 배치를 다시 삭제합니다. 펀드, 배치, 캠페인, 진술은 각각 자신의 `/giving/*` CRUD 라우트에 매핑됩니다. 회원 스타일 기부 패널(`B1Admin/src/donationComponents/`)은 B1App과 동일한 apphelper 컴포넌트를 재사용합니다.
 
-보고 및 회계 인수는 클라이언트 측 또는 보고서 실행자 작업이지, 게이트웨이 작업이 아닙니다. 배치 페이지의 QuickBooks 내보내기는 배치의 `donations` + `fundDonations`에서 일지 항목 CSV를 구축합니다(미예금 펀드 차변, 펀드당 하나의 신용). Lapsed Givers 탭은 사람 이름이 `ReportOutput`로 해결된 일반 보고서 실행자를 통해 `Api/reports/lapsedGivers.json`을 실행합니다. 국가 영수증 형식(캐나다 / 호주 / 뉴질랜드)은 `GivingStatementDocument`에서 렌더링되고 B1App 인쇄 페이지에서 복제되는 멤버십 키/값 스토어의 교회 설정입니다.
+보고 및 회계 인수는 클라이언트 측 또는 보고서 실행자 작업이지, 게이트웨이 작업이 아닙니다. 배치 페이지의 QuickBooks 내보내기는 배치의 `donations` + `fundDonations`에서 일지 항목 CSV를 구축합니다(미예금 펀드 차변, 펀드당 하나의 신용). Summary 페이지의 Lapsed Givers 보기는 사람 이름이 `ReportOutput`로 해결된 일반 보고서 실행자를 통해 `Api/reports/lapsedGivers.json`을 실행합니다. 국가 영수증 형식(캐나다 / 호주 / 뉴질랜드)은 `GivingStatementDocument`에서 렌더링되고 B1App 인쇄 페이지에서 복제되는 멤버십 키/값 스토어의 교회 설정입니다. B1Admin의 명세서 인쇄 페이지(`PrintDonationPage`, `PrintAllStatementsPage`)는 교회의 `logoLight` 설정을 전달하므로(`B1Admin/src/components/PrintChurchHeader.tsx`의 `usePrintLogo`를 통해) 각 명세서 상단에 로고가 인쇄되며, 자동 인쇄 전에 이미지를 기다립니다.
 
 ### 혼합 통화 총계 변환
 

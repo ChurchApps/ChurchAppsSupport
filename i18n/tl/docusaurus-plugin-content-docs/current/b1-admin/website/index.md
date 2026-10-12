@@ -12,13 +12,17 @@ Ang seksyon ng Website sa B1 Admin ay nagbibigay sa iyo ng isang full-featured w
 
 ## Ano ang Maaari Mong Gawin
 
-Ang Website builder ay inorganisa sa limang pangunahing lugar:
+Ang Website builder ay inorganisa sa mga pangunahing lugar na ito:
 
 ### Mga Pahina
 
-Lumikha at pamahalaan ang lahat ng mga pahina sa iyong website ng simbahan. Ang **Mga Pahina** na talahanayan ay nagpapakita ng bawat pahina kasama ang kanyang status -- alinman ay **Nabuo** (awtomatikong ginawa ng system) o **Custom** (ginawa mo). Maaari kang magdagdag ng mga bagong custom na pahina, mag-edit ng mga umiiral, o ikonberta ang auto-generated na mga pahina sa custom na mga pahina para sa buong kontrol sa kanilang nilalaman.
+Lumikha at pamahalaan ang lahat ng mga pahina sa iyong website ng simbahan. Ang **Mga Pahina** na talahanayan ay naglilista ng bawat pahina -- ang mga pahinang awtomatikong ginawa ng system ay may **Nabuo** na badge, at ang iba ay mga custom na pahinang ginawa mo. Maaari kang magdagdag ng mga bagong custom na pahina, mag-edit ng mga umiiral, o ikonberta ang auto-generated na mga pahina sa custom na mga pahina para sa buong kontrol sa kanilang nilalaman.
 
 Ang iyong mga link sa navigation ay ipinapakita sa isang tree structure. Maaari mong baguhin ang mga link gamit ang drag-and-drop upang itakda ang eksaktong hierarchy at pagkakasunod-sunod na nais mong makita ng mga bisita.
+
+### Blog {#blog}
+
+Maglathala ng balita, update, at devotional bilang mga blog post sa `/blog` ng iyong site, kasama ang RSS feed. Tingnan ang [Blog](blog) guide.
 
 ### Mga Bloke
 
@@ -30,11 +34,11 @@ I-customize ang tema, kulay, font, logo, at spacing ng iyong website. Maaari kan
 
 ### Mga File
 
-I-upload at ayusin ang lahat ng iyong mga asset ng media -- mga larawan, dokumento, at iba pang mga file -- sa isang sentral na lokasyon. Gamitin ang mga folder upang mapanatili ang mga bagay na malinis at kopyahin ang mga URL ng file para sa paggamit saanman sa iyong site. Tingnan ang [Mga File](files) para sa higit pang impormasyon.
+I-upload at pamahalaan ang lahat ng iyong mga asset ng media -- mga larawan, dokumento, at iba pang mga file -- sa isang sentral na lokasyon, at kopyahin ang mga link ng file para sa paggamit saanman sa iyong site. Tingnan ang [Mga File](files) para sa higit pang impormasyon.
 
 ### Mga Kalendaryo
 
-Maglathala ng mga kalendaryo ng event sa iyong website upang ang mga bisita ay makita kung ano ang nangyayari sa iyong simbahan. Lumikha ng mga curated na kalendaryo na nagsasaad ng mga event mula sa maraming mga grupo sa isang solong view.
+Maglathala ng mga kalendaryo ng event sa iyong website upang ang mga bisita ay makita kung ano ang nangyayari sa iyong simbahan. Lumikha ng mga curated na kalendaryo na nagsasaad ng mga event mula sa maraming mga grupo sa isang solong view. Ang mga kalendaryo ay may sarili nilang **Calendars** item sa B1 Admin menu, hiwalay sa **Website**.
 
 :::tip
 Magsimula sa [Paunang Setup](initial-setup) kung ikaw ay nag-configure ng iyong website sa unang pagkakataon. Ito ay gagabay sa iyo sa setup ng domain, paglikha ng iyong unang pahina, at pag-configure ng hitsura ng iyong site.

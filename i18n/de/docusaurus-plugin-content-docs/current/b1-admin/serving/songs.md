@@ -20,19 +20,19 @@ Die Seite Lieder verwaltet Ihre Anbetungsliedsammlung. Halten Sie alle Ihre Lied
 
 ## Ihre Liedsammlung durchsuchen
 
-Wenn Sie die Seite **Lieder** öffnen, werden Ihre Lieder als Karten angezeigt. Jede Karte zeigt das Vorschaubild des Liedes, den Titel, den Künstler und die Dauer an. Scrollen Sie durch die Sammlung oder verwenden Sie die Suche, um zu finden, was Sie benötigen.
+Wenn Sie die Seite **Lieder** öffnen, werden Ihre Lieder in einer Tabelle aufgelistet. Jede Zeile zeigt das Vorschaubild, den Titel, den Künstler und die Dauer des Liedes an. Verwenden Sie die Seitensteuerung unter der Liste, um durch eine große Sammlung zu blättern, oder suchen Sie nach dem, was Sie benötigen.
 
 ## Nach Liedern suchen
 
-1. Klicken Sie auf die Schaltfläche **Suchen** auf der Seite Lieder.
+1. Klicken Sie in das Feld **Lieder suchen** oben auf der Seite Lieder.
 2. Geben Sie einen Lied**titel** oder **Künstler**-Namen ein.
-3. Die Ergebnisse werden während des Tippens gefiltert und zeigen übereinstimmende Lieder aus Ihrer Sammlung.
+3. Die Liste wird während des Tippens gefiltert und zeigt übereinstimmende Lieder aus Ihrer Sammlung sowie die Anzahl der Treffer. Klicken Sie auf **Leeren**, um wieder alle Lieder anzuzeigen.
 
 ## Ein Lied hinzufügen
 
-1. Klicken Sie auf **Lied hinzufügen** auf der Seite Lieder.
-2. Durchsuchen Sie die externe Lied-Datenbank nach Titel oder Künstler.
-3. Wählen Sie das Lied aus, das Sie hinzufügen möchten.
+1. Klicken Sie oben auf der Seite Lieder auf **Lied hinzufügen**.
+2. Suchen Sie unter **Nach einem Lied suchen** in der externen Lied-Datenbank nach **Titel oder Künstler**.
+3. Wählen Sie das Lied aus, das Sie hinzufügen möchten, oder klicken Sie auf **Manuell erstellen**, wenn Sie es nicht finden.
 4. Das Lied wird Ihrer Sammlung mit vorausgefüllten Grunddetails hinzugefügt.
 
 :::tip
@@ -48,12 +48,16 @@ Ihre Suchergebnisse können auch einen Abschnitt **WorshipCommons -- kostenlos**
 
 Nur Lieder, die den Überprüfungsprozess von WorshipCommons bestanden haben, werden hier angezeigt, daher kann die Auswahl kleiner sein als die Haupt-Lied-Datenbank.
 
+## Lieder löschen
+
+Aktivieren Sie das Kästchen neben einem oder mehreren Liedern (oder das Kästchen in der Kopfzeile, um alle angezeigten Lieder auszuwählen) und klicken Sie dann in der erscheinenden Leiste auf **Ausgewählte löschen** und bestätigen Sie. Klicken Sie auf **Leeren**, um die Auswahl aufzuheben.
+
 ## Ein Lied anzeigen und bearbeiten
 
-Klicken Sie auf eine beliebige Liedkarte, um ihre Detailseite zu öffnen. Von hier aus können Sie:
+Klicken Sie auf den Titel eines Liedes, um seine Detailseite zu öffnen. Links erscheinen der Titel, der Künstler und Details wie Album, Tonart, Länge, BPM und Takt sowie darunter die Arrangements und externen Links. Von hier aus können Sie:
 
-- **Lieddetails bearbeiten** -- Aktualisieren Sie den Titel, den Künstler, die Dauer und andere Metadaten.
-- **Arrangements verwalten** -- Jedes Lied kann mehrere Arrangements haben (z. B. verschiedene Tonarten oder Versionen). Fügen Sie Arrangements nach Bedarf hinzu, bearbeiten Sie sie oder entfernen Sie sie.
+- **Lieddetails bearbeiten** -- Klicken Sie auf **Bearbeiten**, um den Titel, den Künstler, die Dauer und andere Metadaten zu aktualisieren. Klicken Sie auf **Fertig**, wenn Sie fertig sind. Um das Lied aus Ihrer Sammlung zu entfernen, klicken Sie auf **Bearbeiten** und dann auf **Lied löschen**.
+- **Arrangements verwalten** -- Jedes Lied kann mehrere Arrangements haben (z. B. verschiedene Tonarten oder Versionen). Klicken Sie auf **Arrangement hinzufügen**, um eines zu erstellen, und klicken Sie auf den Namen eines Arrangements unter **Arrangements**, um es zu öffnen.
 - **Texte hinzufügen** -- Geben Sie Texte für jedes Arrangement mit ChordPro-Notation ein oder aktualisieren Sie sie (z. B. `[G]Amazing grace`). Eine Live-Vorschau neben dem Editor rendert das formatierte Akkord-Diagramm während des Tippens, sodass Sie genau sehen können, was Ihr Team sehen wird.
 - **Tonart festlegen** -- Geben Sie die musikalische Tonart für jedes Arrangement mit der Tonart-Auswahl neben den Texten an. Das Ändern der Tonart transponiert die angezeigten Akkorde sofort, sowohl auf der Arrangement-Seite als auch beim Öffnen des Liedes von einem Serviceplan, sodass Ihr Team Akkorde immer in der Tonart sieht, in der sie tatsächlich spielen.
 - **Externe Links hinzufügen** -- Fügen Sie Links zu Ressourcen wie YouTube-Videos, Akkord-Diagramme oder anderswo gehostete Notenblätter ein.

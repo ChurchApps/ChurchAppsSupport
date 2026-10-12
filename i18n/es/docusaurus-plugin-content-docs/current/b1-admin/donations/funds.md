@@ -20,7 +20,7 @@ Los fondos le permiten categorizar las donaciones por propósito para que pueda 
 
 ## La Página de Fondos
 
-Navegue a **Donaciones > Fondos** para ver una lista de todos sus fondos. Cada fila muestra el nombre del fondo y su estado de **deducible de impuestos**, que determina si las donaciones a ese fondo aparecen en los [estados de cuenta de fin de año](giving-statements.md).
+Navegue a **Donaciones > Fondos** para ver una lista de todos sus fondos. Cada fila muestra el nombre del fondo y su **Tax Status** (deducible o no deducible de impuestos), que determina si las donaciones a ese fondo aparecen en los [estados de cuenta de fin de año](giving-statements.md).
 
 ## Crear un Nuevo Fondo
 
@@ -34,7 +34,7 @@ El nuevo fondo aparece de inmediato en su lista y está disponible al ingresar d
 
 ## Editar y Eliminar Fondos
 
-- Para editar un fondo, haga clic en el botón **Editar** junto a él. Puede cambiar el nombre, activar o desactivar el ajuste de deducible de impuestos, o activar o desactivar **Visible para Donantes** para mostrarlo u ocultarlo de los formularios de donación.
+- Para editar un fondo, haga clic en **Editar** en su fila. Puede cambiar el nombre, activar o desactivar el ajuste de deducible de impuestos, o activar o desactivar **Visible para Donantes** para mostrarlo u ocultarlo de los formularios de donación.
 - Para eliminar un fondo, abra el formulario de edición y haga clic en **Eliminar**.
 
 :::warning
@@ -42,23 +42,23 @@ Eliminar un fondo no elimina las donaciones que se le asignaron previamente. Eso
 :::
 
 :::info
-Los fondos ocultos a los donantes muestran una etiqueta **Oculto** junto a su nombre en esta lista. Los fondos ocultos siguen funcionando para donaciones registradas manualmente en B1 Admin -- simplemente no aparecen como una opción en los formularios de donación públicos o de miembros.
+Los fondos ocultos a los donantes muestran una insignia **Oculto** junto a su nombre en esta lista. Los fondos ocultos siguen funcionando para donaciones registradas manualmente en B1 Admin -- simplemente no aparecen como una opción en los formularios de donación públicos o de miembros.
 :::
 
 ## Ver Detalles del Fondo
 
 Haga clic en el **nombre de un fondo** para abrir su página de detalles. Esta página muestra:
 
-- **Historial de donaciones** -- una lista de todas las donaciones a este fondo
-- **Filtro de rango de fechas** -- acote los resultados a un período de tiempo específico
-- **Estadísticas resumidas** -- total de donaciones, donantes únicos y monto total en dólares
+- **Resumen** -- una línea debajo del título de la página con el número de regalos, el número de donantes y el monto total en dólares
+- **Filtro de rango de fechas** -- establezca una **Fecha de Inicio** y una **Fecha de Fin** y haga clic en **Filter** para acotar los resultados a un período de tiempo específico
+- **Historial de donaciones** -- una lista de las donaciones a este fondo, con la fecha, el lote, el donante y el monto. Haga clic en **Export** encima de la lista para descargarla como CSV.
 
 Esta vista es útil cuando necesita informar sobre una iniciativa de recaudación específica o verificar el progreso hacia una meta de recaudación de fondos.
 
 ## Ordenar y Exportar
 
 - Use los encabezados de columna para ordenar los fondos por nombre.
-- Haga clic en **Exportar a CSV** para descargar su lista de fondos como una hoja de cálculo.
+- Haga clic en **Exportar** en la parte superior de la página para descargar su lista de fondos como una hoja de cálculo (CSV).
 
 :::tip
 Configure sus fondos antes de comenzar a [registrar donaciones](recording-donations.md). Tener todos los fondos en su lugar garantiza que las donaciones se categoricen correctamente desde el principio.

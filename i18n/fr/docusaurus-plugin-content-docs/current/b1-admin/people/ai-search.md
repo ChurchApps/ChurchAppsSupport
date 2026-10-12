@@ -23,10 +23,16 @@ La fonctionnalité **Recherche IA** vous permet de rechercher dans l'annuaire de
 La Recherche IA utilise l'intelligence artificielle pour interpréter votre question et renvoyer les résultats correspondants de votre base de données de personnes. Vous pouvez poser des questions comme vous le feriez avec un collègue.
 
 1. Accédez à la page **Personnes** dans B1 Admin.
-2. Recherchez l'option **Recherche IA** sous les contrôles de recherche.
+2. Cliquez sur **Ask** sous la zone de recherche pour ouvrir la zone **Recherche IA**.
 3. Tapez votre question en langage courant.
-4. Appuyez sur **Entrée** ou cliquez sur **Rechercher** pour lancer votre requête.
-5. Le tableau des résultats se mettra à jour pour afficher les personnes correspondantes.
+4. Cliquez sur **Rechercher** pour lancer votre requête.
+5. La liste des résultats se mettra à jour pour afficher les personnes correspondantes.
+
+Cliquez sur **Clear Search** pour effacer votre question et revenir à l'annuaire complet.
+
+:::info
+Si la Recherche IA est inaccessible, elle affiche *"AI Search is temporarily unavailable. Please try again later, or use the search above."* Votre question est conservée : vous pouvez donc réessayer dans un instant, ou utiliser en attendant la recherche rapide ou la recherche **Advanced**.
+:::
 
 ## Exemples de requêtes
 
@@ -52,7 +58,7 @@ La Recherche IA est particulièrement utile lorsque :
 - Vous voulez une réponse rapide à une question sur votre congrégation sans créer un rapport.
 
 :::info
-La Recherche IA fonctionne en parallèle avec la recherche rapide standard et les filtres de colonnes. Utilisez l'approche qui correspond le mieux à vos besoins. Pour de simples recherches par nom, la [recherche rapide](searching-people.md) est l'option la plus rapide. Pour des questions plus nuancées, la Recherche IA excelle.
+La Recherche IA fonctionne en parallèle avec la recherche rapide standard et les filtres **Advanced**. Utilisez l'approche qui correspond le mieux à vos besoins. Pour de simples recherches par nom, la [recherche rapide](searching-people.md) est l'option la plus rapide. Pour des questions plus nuancées, la Recherche IA excelle.
 :::
 
 Pour d'autres options de recherche, consultez [Rechercher des personnes](./searching-people.md).

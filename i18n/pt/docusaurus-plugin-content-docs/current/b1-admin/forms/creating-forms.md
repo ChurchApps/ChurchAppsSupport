@@ -32,7 +32,7 @@ Seu novo formulário aparecerá na lista. Clique nele para começar a adicionar 
 
 ## Imprimindo um Formulário em Branco
 
-Precisa de uma cópia em papel para distribuir -- para um cartão de visitante na mesa de boas-vindas ou um formulário que alguém sem acesso à internet possa preencher manualmente? Clique no **ícone de impressão** próximo a um formulário na lista principal de Formulários para abrir uma visualização, depois clique em **Imprimir**. Os campos em branco são impressos com uma linha ou caixa de seleção para cada pergunta para que as pessoas possam preenchê-los manualmente; perguntas obrigatórias são marcadas com um asterisco. Não há outras opções de impressão -- imprima o formulário inteiro ou nada.
+Precisa de uma cópia em papel para distribuir -- para um cartão de visitante na mesa de boas-vindas ou um formulário que alguém sem acesso à internet possa preencher manualmente? Clique em **Imprimir** ao lado de um formulário na lista principal de Formulários para abrir uma visualização, depois clique em **Imprimir**. Os campos em branco são impressos com uma linha ou caixa de seleção para cada pergunta para que as pessoas possam preenchê-los manualmente; perguntas obrigatórias são marcadas com um asterisco. Não há outras opções de impressão -- imprima o formulário inteiro ou nada.
 
 ## Adicionando Perguntas
 
@@ -81,7 +81,7 @@ Os e-mails de acompanhamento são enviados apenas após sua igreja ser aprovada 
 
 ## Duplicando um Formulário
 
-Para reutilizar um formulário como ponto de partida para um novo, clique no ícone **Duplicar** (ícone de cópia) próximo ao formulário na lista de Formulários. B1 cria uma cópia exata do formulário — incluindo todas as perguntas — que você pode então renomear e editar independentemente.
+Para reutilizar um formulário como ponto de partida para um novo, clique em **Duplicar** ao lado do formulário na lista de Formulários e confirme. B1 cria uma cópia exata do formulário — incluindo todas as perguntas — que você pode então renomear e editar independentemente.
 
 :::tip
 A duplicação é útil para eventos recorrentes onde as perguntas de inscrição permanecem iguais de ano para ano. Duplique o formulário do ano passado, atualize o nome e as datas e você está pronto.

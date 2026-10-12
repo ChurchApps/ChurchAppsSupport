@@ -24,7 +24,7 @@ Un ruolo è un insieme di autorizzazioni che assegni a uno o più utenti. Ad ese
 
 Ogni ruolo controlla l'accesso a aree specifiche di B1 Admin, incluse:
 
-- **People** -- visualizzazione e modifica dei profili dei membri. La scheda Notes su un record di persona richiede **Edit People**, e un'autorizzazione separata **View Confidential Notes** controlla l'accesso alla sezione Note Confidenziali (per la cura pastorale, la storia personale e note sensibili simili).
+- **People** -- visualizzazione e modifica dei profili dei membri. La sezione Notes su un record di persona richiede **Edit People**, e un'autorizzazione separata **View Confidential Notes** controlla l'accesso alla sezione Note Confidenziali (per la cura pastorale, la storia personale e note sensibili simili).
 - **Donations** -- gestione dei contributi e rapporti finanziari
 - **Attendance** -- registrazione e visualizzazione dei dati di presenza
 - **Forms** -- creazione e gestione di [moduli personalizzati](../forms/creating-forms.md)

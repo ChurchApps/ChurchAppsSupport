@@ -19,14 +19,14 @@ Auf der Seite „Live-Stream-Zeiten" können Sie den Streaming-Zeitplan Ihrer Ki
 
 </div>
 
-Die Seite hat zwei Hauptregisterkarten: **Services** zum Verwalten Ihres Live-Stream-Zeitplans und **Einstellungen** zum Konfigurieren Ihrer Streaming-Seite.
+Das Streaming wird auf zwei Seiten im Bereich **Predigten** des Jump-Menüs verwaltet: **Live-Stream-Zeiten** für die Verwaltung Ihres Live-Stream-Zeitplans und **Einstellungen** für die Konfiguration der Registerkarten auf Ihrer Streaming-Seite.
 
 ## Dienste verwalten
 
 ### Einen Service hinzufügen
 
 1. In B1 Admin öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern **Predigten** und klicken auf **Live-Stream-Zeiten**.
-2. Klicken Sie auf die Schaltfläche **Service hinzufügen**, um einen neuen geplanten Service zu erstellen.
+2. Klicken Sie oben auf der Seite auf die Schaltfläche **Service hinzufügen**, um einen neuen geplanten Service zu erstellen. Vorhandene Services werden in einer Tabelle mit Name, Zeit, Anbieter und Dauer jedes Services aufgelistet; klicken Sie auf das Bearbeitungssymbol in einer Zeile, um sie zu ändern.
 3. Geben Sie einen **Service-Namen** ein (z. B. „Sonntags Morgen").
 4. Legen Sie die **Service-Zeit** fest -- wählen Sie den Tag und die Uhrzeit, zu der Ihr Service beginnt.
 5. Stellen Sie **Wöchentlich wiederkehren** auf **Ja** für regelmäßige wöchentliche Services oder **Nein** für eine einmalige Veranstaltung.
@@ -47,19 +47,19 @@ Ihr Service wird automatisch aktualisiert, wenn er auf wiederkehrend eingestellt
 
 ## Streaming-Seite Einstellungen
 
-Klicken Sie auf die Registerkarte **Einstellungen**, um die Registerkarten und Links, die neben Ihrem Live-Stream angezeigt werden, anzupassen.
+Um die Registerkarten und Links anzupassen, die neben Ihrem Live-Stream angezeigt werden, öffnen Sie das Jump-Menü, erweitern Sie **Predigten** und klicken Sie auf **Einstellungen**. Auf der Seite **Stream-Einstellungen** sehen Sie Ihre Liste **Inhalts-Registerkarten**.
 
 ### Registerkarten hinzufügen
 
 1. Klicken Sie auf die Schaltfläche **Hinzufügen**, um eine neue Registerkarte zu Ihrer Live-Stream-Seite hinzuzufügen.
-2. Wählen Sie die vordefinierte Registerkarte **Chat** oder fügen Sie eine benutzerdefinierte Registerkarte mit einer externen URL hinzu.
+2. Wählen Sie einen **Link-Typ**: **Externe URL** für einen benutzerdefinierten Link oder eine der vordefinierten Registerkarten **Chat** oder **Gebet**.
 3. Für die Chat-Registerkarte geben Sie einfach einen Namen in das Feld **Registerkartentext** ein und die Konfiguration ist abgeschlossen.
 4. Geben Sie für eine verlinkte Registerkarte den Namen der Registerkarte ein, wählen Sie ein Symbol aus, indem Sie auf die Symbol-Schaltfläche klicken, und geben Sie die URL ein.
 5. Ihre konfigurierten Registerkarten werden auf der Live-Streaming-Seite für Zuschauer angezeigt, um auf zusätzliche Ressourcen und interaktive Funktionen zuzugreifen.
 
 ### Vorschau Ihres Streams
 
-Klicken Sie auf die Schaltfläche **Stream anzeigen**, um genau zu sehen, wie Ihre Live-Streaming-Seite für Besucher aussieht, einschließlich Ihres Logos, Service-Zeiten und konfigurierten Registerkarten.
+Klicken Sie auf der Seite **Live-Stream-Zeiten** oben auf die Schaltfläche **Stream anzeigen**, um genau zu sehen, wie Ihre Live-Streaming-Seite für Besucher aussieht, einschließlich Ihres Logos, Service-Zeiten und konfigurierten Registerkarten.
 
 ## YouTube Live-Stream einrichten
 

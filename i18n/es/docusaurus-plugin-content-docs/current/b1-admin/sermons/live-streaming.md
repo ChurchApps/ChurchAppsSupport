@@ -19,14 +19,14 @@ La página Live Stream Times te permite configurar el cronograma de transmisión
 
 </div>
 
-La página tiene dos pestañas principales: **Services** para gestionar tu cronograma de transmisión en vivo y **Settings** para configurar tu página de transmisión.
+La transmisión en vivo se gestiona desde dos páginas en la sección **Sermons** del Menú Jump: **Live Stream Times** para gestionar tu cronograma de transmisión en vivo y **Settings** para configurar las pestañas de tu página de transmisión.
 
 ## Gestión de Servicios
 
 ### Agregar un Servicio
 
 1. En B1 Admin, abre el [Menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expande **Sermons** y haz clic en **Live Stream Times**.
-2. Haz clic en el botón **Add Service** para crear un nuevo servicio programado.
+2. Haz clic en el botón **Add Service** en la parte superior de la página para crear un nuevo servicio programado. Los servicios existentes aparecen en una tabla que muestra el nombre, la hora, el proveedor y la duración de cada servicio; haz clic en el icono de editar de una fila para cambiarlo.
 3. Ingresa un **Service Name** (por ejemplo, "Sunday Morning").
 4. Establece la **Service Time** -- elige el día y la hora en que comienza tu servicio.
 5. Establece **Recurs Weekly** en **Yes** para servicios semanales regulares, o **No** para un evento único.
@@ -47,19 +47,19 @@ Tu servicio se actualizará automáticamente cada semana si se establece como re
 
 ## Configuración de Página de Transmisión
 
-Haz clic en la pestaña **Settings** para personalizar las pestañas y los enlaces que aparecen junto a tu transmisión en vivo.
+Para personalizar las pestañas y los enlaces que aparecen junto a tu transmisión en vivo, abre el Menú Jump, expande **Sermons** y haz clic en **Settings**. La página **Stream Settings** muestra tu lista de **Content Tabs**.
 
 ### Agregar Pestañas
 
 1. Haz clic en el botón **Add** para agregar una nueva pestaña a tu página de transmisión en vivo.
-2. Elige la pestaña prediseñada **Chat** o agrega una pestaña personalizada con una URL externa.
+2. Elige un **Link Type**: **External URL** para un enlace personalizado, o una de las pestañas prediseñadas **Chat** o **Prayer**.
 3. Para la pestaña Chat, solo dale un nombre en la caja **Tab Text** y la configuración está completa.
 4. Para una pestaña vinculada, ingresa el nombre de la pestaña, elige un icono haciendo clic en el botón de icono, e ingresa la URL.
 5. Tus pestañas configuradas aparecerán en la página de transmisión en vivo para que los espectadores accedan a recursos adicionales y características interactivas.
 
 ### Visualización Previa de Tu Transmisión
 
-Haz clic en el botón **View Your Stream** para ver exactamente cómo se verá tu página de transmisión en vivo para los visitantes, incluyendo tu logo, horarios de servicio y pestañas configuradas.
+En la página **Live Stream Times**, haz clic en el botón **View Your Stream** en la parte superior de la página para ver exactamente cómo se verá tu página de transmisión en vivo para los visitantes, incluyendo tu logo, horarios de servicio y pestañas configuradas.
 
 ## Configurar Tu Transmisión en Vivo de YouTube
 

@@ -19,13 +19,13 @@ Il conteggio dei presenti vi consente di registrare un semplice numero totale di
 </div>
 
 :::info
-Il conteggio dei presenti è un'alternativa solo totale a [Registrazione delle presenze](recording-attendance.md). Se avete bisogno di conoscere **chi** ha frequentato -- ad esempio, per seguire le persone che non sono tornate -- continuate a utilizzare la presenze di sessione nominativa sulla scheda Sessioni di un gruppo. Il conteggio dei presenti memorizza solo un numero.
+Il conteggio dei presenti è un'alternativa solo totale a [Registrazione delle presenze](recording-attendance.md). Se avete bisogno di conoscere **chi** ha frequentato -- ad esempio, per seguire le persone che non sono tornate -- continuate a utilizzare la presenze di sessione nominativa nelle Sessioni di un gruppo. Il conteggio dei presenti memorizza solo un numero.
 :::
 
 ## Registrazione di un conteggio dei presenti
 
 1. Aprite **B1 Admin**, aprite il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandete **Persone**, e fate clic su **Presenze**.
-2. Selezionate la sub-scheda **Conteggio dei presenti**.
+2. Fate clic su **Inserisci conteggio** nella colonna di sinistra.
 3. Compilate il modulo:
    - **Servizio** *(obbligatorio)*
    - **Orario del servizio** -- lasciate vuoto per registrare un totale su tutti gli orari dei servizi
@@ -34,14 +34,14 @@ Il conteggio dei presenti è un'alternativa solo totale a [Registrazione delle p
    - **Conteggio dei presenti** -- il numero totale di persone presenti
 4. Fate clic su **Salva**.
 
-La tabella **Conteggi dei presenti recenti** a destra elenca i vostri ultimi inserienti con la loro data, servizio, orario del servizio, gruppo, e conteggio. Fate clic su una riga per ricaricarla nel modulo se avete bisogno di correggerla o eliminarla.
+La tabella **Conteggi dei presenti recenti** accanto al modulo elenca i vostri ultimi inserienti con la loro data, servizio, orario del servizio, gruppo, e conteggio. Fate clic su una riga per ricaricarla nel modulo se avete bisogno di correggerla o eliminarla.
 
 ## Rapporto di andamento del conteggio dei presenti
 
-1. Dalla stessa pagina **Presenze**, selezionate la scheda **Andamento del conteggio dei presenti**.
+1. Dalla stessa pagina **Presenze**, fate clic su **Tutti gli anni** nella colonna di sinistra, quindi selezionate la scheda **Andamento del conteggio dei presenti**.
 2. Utilizzate i filtri **Campus**, **Servizio**, **Orario del servizio**, e **Gruppo** per restringere il rapporto.
 
-Il rapporto mostra i vostri conteggi dei presenti registrati sommati per settimana, sia come grafico a linee che come tabella -- lo stesso stile di rapporto utilizzato dalle [schede di andamento delle presenze e dei gruppi](tracking-attendance.md).
+Il rapporto mostra i vostri conteggi dei presenti registrati sommati per settimana, sia come grafico a linee che come tabella -- lo stesso stile di rapporto utilizzato dalle schede [Andamento presenze e Presenze di gruppo](tracking-attendance.md). I conteggi inseriti per la settimana corrente appaiono anche in **Conteggi dei presenti questa settimana** nella pagina principale delle Presenze.
 
 ## Pagine correlate
 

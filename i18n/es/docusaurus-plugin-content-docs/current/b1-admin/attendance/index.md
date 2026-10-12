@@ -12,32 +12,36 @@ La sección de Asistencia en B1 Admin te brinda una vista completa de quién est
 
 ## Descripción General de la Página
 
-Cuando abres la página de Asistencia, verás un encabezado con estadísticas clave sobre la configuración de asistencia de tu iglesia:
+Para abrir la página, abre el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda), expande **People** y haz clic en **Attendance**. La página se abre con un resumen de **esta semana** (de domingo a sábado).
 
-- **Sedes** -- el número de ubicaciones físicas que has configurado
-- **Horarios de Servicio** -- el número total de servicios en todas las sedes
-- **Grupos Programados** -- grupos que están asignados a un horario de servicio específico
-- **Grupos Sin Programar** -- grupos que rastrean la asistencia independientemente de un horario de servicio
+La columna izquierda muestra las fechas de la semana y el número total de personas **en la sala**: tu total de conteos si se registraron conteos esta semana, o de lo contrario, el número de personas registradas. Debajo del total verás cuántas se registraron, se contaron y cuántas fueron huéspedes, además de un desglose por servicio si tienes más de uno. Si nadie se ha registrado todavía esta semana, se muestra la última semana que tuvo asistencia.
 
-Debajo del encabezado, tres pestañas organizan tus herramientas de asistencia.
+El área principal de la página muestra:
 
-## Pestañas
+- **Rooms** -- cada grupo en el que las personas se registraron esta semana, con el número de registros (y una barra de capacidad para los grupos con capacidad de registro). Haz clic en un grupo para abrirlo.
+- **Guests** -- personas que se registraron como huéspedes esta semana. Haz clic en un nombre para abrir su registro.
+- **Last 13 weeks** -- un pequeño gráfico de barras con los registros semanales, y cuántas de esas semanas tuvieron registros.
+- **Headcounts this week** -- conteos registrados para los servicios de esta semana.
 
-### Configuración
+## Acciones
 
-La pestaña **Configuración** es donde configuras los bloques de construcción del seguimiento de asistencia. Aquí defines tus sedes, añades horarios de servicio a cada sede y asignas [grupos](../groups/creating-groups.md) a esos horarios de servicio. Solo necesitas hacer esto una vez, aunque puedes actualizarlo cuando cambie tu horario. Consulta [Configuración de Asistencia](setup.md) para un recorrido completo.
+La columna izquierda también contiene las acciones de la página. Cada una se abre en el área principal; haz clic en el enlace de regreso **Attendance** para volver al resumen semanal.
 
-### Asistencia
+### Setup
 
-La pestaña **Asistencia** muestra las tendencias de asistencia a lo largo del tiempo. Usa los filtros para limitar los resultados por rango de fechas, sede u horario de servicio e identifica rápidamente patrones en tus datos. Consulta [Rastreando Asistencia](tracking-attendance.md) para obtener detalles sobre cómo usar reportes y filtros.
+Haz clic en **Setup** para configurar los elementos básicos del seguimiento de asistencia. Aquí defines tus sedes, añades servicios y horarios de servicio a cada sede (incluido un horario de registro opcional para cada horario de servicio) y ves qué [grupos](../groups/creating-groups.md) están asignados a esos horarios de servicio. En la parte superior aparecen los recuentos de sedes, horarios de servicio, grupos programados y no programados, y el total de grupos. Solo necesitas hacer esto una vez, aunque puedes actualizarlo cuando cambie tu horario. Consulta [Configuración de Asistencia](setup.md) para un recorrido completo.
 
-### Grupos
+### All years (Reports)
 
-La pestaña **Grupos** desglosa la asistencia por grupo individual. Esto es útil cuando quieres ver cómo está funcionando un grupo pequeño específico, clase o equipo ministerial en lugar de ver números de toda la iglesia.
+Haz clic en **All years** para abrir los informes de asistencia. Las pestañas en la parte superior cambian entre **Attendance Trend** (tendencias de toda la iglesia a lo largo del tiempo), **Headcount Trend** (totales de conteos por semana) y **Group Attendance** (asistencia desglosada por grupo individual). Usa los filtros para limitar los resultados por rango de fechas, sede u horario de servicio. Consulta [Rastreando Asistencia](tracking-attendance.md) para obtener detalles sobre cómo usar informes y filtros.
 
-### Conteos de Asistentes y Tendencia de Conteos
+### Enter headcount
 
-La pestaña **Conteos de Asistentes** te permite registrar un simple conteo total para un servicio, horario de servicio o grupo en lugar de un registro nominal, y la pestaña **Tendencia de Conteos** grafica esos totales por semana. Consulta [Entrada y Tendencia de Conteos](headcount-entry.md) para obtener detalles.
+Haz clic en **Enter headcount** para registrar un total simple para un servicio, horario de servicio o grupo, en lugar de un registro nominal. Consulta [Entrada y Tendencia de Conteos](headcount-entry.md) para obtener detalles.
+
+### Kiosk
+
+Haz clic en **Kiosk** para abrir la configuración de **Kiosk Theme**, donde defines las imágenes de fondo del quiosco de registro y el comportamiento de la pantalla de inactividad. Un enlace **Check-in kiosk, QR, and labels** te lleva a la configuración completa de [B1 CheckIn](check-in.md).
 
 ## Próximos Pasos
 

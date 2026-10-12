@@ -20,8 +20,8 @@ Invia il contenuto della tua lezione a una TV in una hall o un corridoio utilizz
 
 ## Ottenere l'URL del feed
 
-1. Passa a **Serving** e apri il ministero che contiene il tuo tipo di piano.
-2. Fai clic sul pulsante **Digital Signage** (l'icona RSS) nella pagina del tipo di piano.
+1. Vai a **Serving**, seleziona il ministero che contiene il tuo tipo di piano e fai clic sul tipo di piano per aprirlo.
+2. Fai clic su **Digital Signage** (l'icona TV) in alto nella pagina del tipo di piano.
 3. Copia l'URL del feed visualizzato nella finestra di dialogo.
 
 :::info

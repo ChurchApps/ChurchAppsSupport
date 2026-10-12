@@ -12,32 +12,36 @@ The Attendance section in B1 Admin gives you a complete view of who is showing u
 
 ## Page Overview
 
-When you open the Attendance page, you will see a header with key statistics about your church's attendance setup:
+To open the page, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **People**, and click **Attendance**. The page opens on a summary of **this week** (Sunday through Saturday).
 
-- **Campuses** -- the number of physical locations you have configured
-- **Service Times** -- the total number of services across all campuses
-- **Scheduled Groups** -- groups that are assigned to a specific service time
-- **Unscheduled Groups** -- groups that track attendance independently of a service time
+The left column shows the week's dates and the total number of people **in the room** -- your headcount total if headcounts were entered this week, otherwise the number of people checked in. Below the total you'll see how many were checked in, counted, and guests, plus a split by service when you have more than one. If no one has checked in yet this week, it shows the last week that had attendance.
 
-Below the header, three tabs organize your attendance tools.
+The main area of the page shows:
 
-## Tabs
+- **Rooms** -- each group people checked in to this week, with the number checked in (and a capacity bar for groups with a check-in capacity). Click a group to open it.
+- **Guests** -- people who checked in as guests this week. Click a name to open their record.
+- **Last 13 weeks** -- a small bar chart of weekly check-ins, with how many of those weeks had check-ins.
+- **Headcounts this week** -- headcounts entered for this week's services.
+
+## Actions
+
+The left column also holds the page's actions. Each one opens in the main area; click the **Attendance** back link to return to the weekly summary.
 
 ### Setup
 
-The **Setup** tab is where you configure the building blocks of attendance tracking. Here you define your campuses, add service times to each campus, and assign [groups](../groups/creating-groups.md) to those service times. You only need to do this once, though you can update it whenever your schedule changes. See [Attendance Setup](setup.md) for a full walkthrough.
+Click **Setup** to configure the building blocks of attendance tracking. Here you define your campuses, add services and service times to each campus (including an optional check-in schedule for each service time), and see which [groups](../groups/creating-groups.md) are assigned to those service times. Counts of campuses, service times, scheduled and unscheduled groups, and total groups appear across the top. You only need to do this once, though you can update it whenever your schedule changes. See [Attendance Setup](setup.md) for a full walkthrough.
 
-### Attendance
+### All years (Reports)
 
-The **Attendance** tab displays attendance trends over time. Use the filters to narrow results by date range, campus, or service time and quickly spot patterns in your data. See [Tracking Attendance](tracking-attendance.md) for details on using reports and filters.
+Click **All years** to open the attendance reports. Tabs across the top switch between **Attendance Trend** (church-wide trends over time), **Headcount Trend** (headcount totals by week), and **Group Attendance** (attendance broken down by individual group). Use the filters to narrow results by date range, campus, or service time. See [Tracking Attendance](tracking-attendance.md) for details on using reports and filters.
 
-### Groups
+### Enter headcount
 
-The **Groups** tab breaks attendance down by individual group. This is helpful when you want to see how a specific small group, class, or ministry team is doing rather than looking at church-wide numbers.
+Click **Enter headcount** to record a simple total count for a service, service time, or group instead of a named roster. See [Headcount Entry & Trend](headcount-entry.md) for details.
 
-### Headcounts and Headcount Trend
+### Kiosk
 
-The **Headcounts** tab lets you record a simple total count for a service, service time, or group instead of a named roster, and the **Headcount Trend** tab charts those totals by week. See [Headcount Entry & Trend](headcount-entry.md) for details.
+Click **Kiosk** to open the **Kiosk Theme** settings, where you set the check-in kiosk's background images and idle screen behavior. A **Check-in kiosk, QR, and labels** link takes you to the full [B1 CheckIn settings](check-in.md).
 
 ## Next Steps
 

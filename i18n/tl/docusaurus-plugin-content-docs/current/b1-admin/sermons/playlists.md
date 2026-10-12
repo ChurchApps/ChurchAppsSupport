@@ -26,7 +26,7 @@ Hinahayaan kayo ng mga playlist na ayusin ang inyong mga sermon sa mga serye o k
 
 ## Paggawa ng Playlist
 
-1. I-click ang button na **Create First Playlist** (kung wala pa kayong playlist) o i-click ang button na **Add** (+) sa header ng panel na **Playlists**.
+1. I-click ang button na **Create First Playlist** (kung wala pa kayong playlist) o i-click ang button na **Add playlist** sa panel na **Playlists**.
 2. Maglagay ng **pangalan** para sa playlist -- halimbawa, ang pamagat ng serye ng sermon tulad ng "Faith Foundations" o "Summer in the Psalms."
 3. Magdagdag ng **paglalarawan** para magbigay sa mga bisita ng maikling pangkalahatang-ideya ng serye.
 4. Magtakda ng **petsa ng pag-publish** para kontrolin kung kailan makikita ang playlist.

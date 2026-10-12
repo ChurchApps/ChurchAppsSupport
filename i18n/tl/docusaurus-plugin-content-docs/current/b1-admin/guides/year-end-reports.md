@@ -25,7 +25,7 @@ Siguraduhin na ang lahat ng online donations mula sa dulo ng taon ay nasa iyong 
 
 Sundin ang [Stripe Import](../donations/stripe-import.md) gabay upang:
 
-1. Mag-navigate sa Donations > Batches > Stripe Import
+1. Mag-navigate sa Donations > Stripe Import
 2. Piliin ang date range na sumasaklaw sa dulo ng taon (hal., Disyembre 1 - Disyembre 31)
 3. I-click ang Preview una upang suriin, pagkatapos ay Import Missing upang tapusin
 
@@ -65,7 +65,7 @@ Sundin ang [Giving Statements](../donations/giving-statements.md) gabay upang:
 2. Piliin ang taon mula sa dropdown at suriin ang mga istatistika ng summary
 3. Piliin ang iyong pamamaraan ng pag-download:
    - **Download ZIP** -- mga indibidwal na CSV files, isa bawat donor
-   - **Print All** -- printable view na may bawat statement sa isang bagong pahina
+   - **Print All** -- printable view na may bawat statement sa isang bagong pahina, kasama ang logo ng inyong simbahan sa itaas (kung nag-upload na kayo nito)
 
 :::tip
 Lumikha ng mga statement sa simula ng Enero habang ang mga record ay sariwa. Ito ay nagbibigay sa iyo ng oras upang makuha ang anumang mga isyu bago i-mail ang mga ito.

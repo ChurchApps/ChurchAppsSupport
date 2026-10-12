@@ -21,7 +21,7 @@ B1 include una serie di controlli di sicurezza per i bambini per il check-in: li
 
 ## Capacità della stanza e chiusura di una stanza
 
-Ogni stanza di check-in (gruppo) può applicare i propri limiti. Aprite il gruppo, fate clic sull'**icona della matita** per modificare le sue impostazioni, e trovate la sezione **Capacità del Check-In**:
+Ogni stanza di check-in (gruppo) può applicare i propri limiti. Aprite il gruppo, fate clic su **Modifica** per modificare le sue impostazioni, e trovate la sezione **Capacità del Check-In**:
 
 - **Capacità** -- Il numero massimo di persone che possono essere registrate in questa stanza contemporaneamente. Quando la stanza è piena, il check-in è bloccato e il chiosco identifica la stanza piena.
 - **Capacità ospiti** -- Un limite opzionale separato su quanti ospiti la stanza può contenere.

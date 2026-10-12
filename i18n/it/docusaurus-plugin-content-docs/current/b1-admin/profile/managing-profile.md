@@ -1,75 +1,78 @@
 ---
-title: "Managing Your Profile"
+title: "Gestione del Tuo Profilo"
 ---
 
-# Managing Your Profilo
+# Gestione del Tuo Profilo
 
 <div class="article-intro">
 
-The Profilo page lets you Modifica your personal Account Impostazioni. Your Profilo is shared across all ChurchApps products, so any changes you make here will be reflected everywhere you use ChurchApps.
+La pagina Profilo ti permette di modificare le impostazioni del tuo account personale. Il tuo profilo è condiviso tra tutti i prodotti ChurchApps, quindi le modifiche che fai qui si riflettono ovunque usi ChurchApps.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- You must be logged in Per your ChurchApps Account
-- Have your new email address or password ready if you plan Per update them
+- Devi aver effettuato l'accesso al tuo account ChurchApps
+- Tieni pronti il nuovo indirizzo email o la nuova password se intendi aggiornarli
 
 </div>
 
-## Profilo Information
+## Informazioni del Profilo
 
-The top section of the Profilo page contains your basic Account details:
+La pagina Profilo mostra il tuo nome e il tuo indirizzo email a sinistra, con un pulsante **Edit** sotto di essi. Fai clic su **Edit** per aprire il modulo **Edit Account**, che contiene i tuoi dettagli di base:
 
-1. **Email** -- Your email address used for logging in and receiving notifications.
-2. **First Name** and **Last Name** -- Your display name across ChurchApps.
-3. **Password** -- Update your Account password.
+1. **Email** -- Il tuo indirizzo email usato per l'accesso e per la ricezione delle notifiche.
+2. **First Name** e **Last Name** -- Il tuo nome visualizzato in ChurchApps.
+3. **Password** -- Aggiorna la password del tuo account.
 
-Per update your information, Modifica the fields and Fai clic the **Salva Changes** button.
+Per aggiornare le tue informazioni, modifica i campi e fai clic sul pulsante **Save Changes**. Fai clic su **Cancel** (o sul link **Back to** con il tuo nome) per tornare al tuo profilo senza salvare.
 
-## Changing Your Password
+## Cambiare la Password
 
-1. Scroll Per the password fields on the Profilo page.
-2. Inserisci your **Current Password**.
-3. Inserisci your new password in the **Password** field.
-4. Re-Inserisci it in the **Confirm Password** field.
-5. Fai clic **Salva Changes**.
+1. Nella pagina Profilo, fai clic su **Edit**.
+2. Inserisci la tua **Current password**.
+3. Inserisci la nuova password nel campo **New password**.
+4. Reinserisci la password nel campo **Verify password**.
+5. Fai clic su **Save Changes**.
 
 :::info
-Your password must be at least 8 characters long. Make sure both the password and confirmation fields match exactly. You must confirm your current password Per change it -- if you don't know it, use the **Forgot Password** link on the login page instead.
+La password deve contenere almeno 8 caratteri. Assicurati che i campi della password e della conferma coincidano esattamente. Devi confermare la password attuale per cambiarla -- se non la ricordi, usa invece il link **Forgot Password** nella pagina di accesso.
 :::
 
-## Linked Account
+## Account Collegati
 
-The **Linked Account** section shows any external Servizi connected Per your ChurchApps Account. You can Visualizza which Account are linked and manage those connections from this section.
+La sezione **Linked Accounts** mostra eventuali servizi esterni collegati al tuo account ChurchApps. Da questa sezione puoi vedere quali account sono collegati e gestire queste connessioni.
 
-## Theme Preferences
+## Preferenze del Tema
 
-ChurchApps supports both light and dark display modes:
+B1 Admin supporta sia la modalità di visualizzazione chiara sia quella scura:
 
-1. Trova the **Theme** toggle on your Profilo page.
-2. Switch between **Light** and **Dark** mode.
-3. The interface will update immediately Per reflect your choice.
+1. Fai clic sulla tua foto profilo nell'angolo in alto a destra di B1 Admin per aprire il menu utente.
+2. Sotto **Theme Preferences**, scegli **Light Mode** o **Dark Mode**.
+3. L'interfaccia si aggiornerà immediatamente per riflettere la tua scelta.
 
-Your theme preference is saved Per your Account and will apply across all your Sessioni.
+La tua scelta viene ricordata su quel dispositivo e browser.
 
-## Account Deletion
+## Eliminazione dell'Account
 
-At the bottom of the Profilo page, you will Trova the option Per permanently Elimina your Account. This action removes your Account and associated data and cannot be undone.
+Nella sezione **Account Deletion** della pagina Profilo troverai l'opzione per eliminare il tuo account.
+
+- Se la tua chiesa **non** ha configurato un Directory Approval Group, facendo clic su **Delete my account** il tuo account e i dati associati vengono rimossi immediatamente, e l'operazione non può essere annullata.
+- Se la tua chiesa **ha** configurato un Directory Approval Group, la tua richiesta viene invece inviata a quel gruppo per la revisione. Il pulsante resta disattivato finché la richiesta è in sospeso, e riceverai una notifica appena la tua chiesa la approva o la rifiuta. Vedi [Revisione delle Richieste di Eliminazione dell'Account](./account-deletion.md) per sapere cosa succede dopo.
 
 :::warning
-Account deletion is permanent and cannot be reversed. Make sure you truly want Per Rimuovi your Account before proceeding.
+L'eliminazione dell'account -- sia immediata sia approvata dalla tua chiesa -- è permanente e non può essere annullata.
 :::
 
 :::info
-If you are a **Domain Admin**, make sure Per transfer administrative responsibilities Per another Utente before deleting your Account. See [Roles & Permissions](../settings/roles-permissions.md) for details on managing admin Ruoli.
+Se sei un **Domain Admin**, assicurati di trasferire le responsabilità amministrative a un altro utente prima di eliminare il tuo account. Vedi [Ruoli e Autorizzazioni](../settings/roles-permissions.md) per i dettagli sulla gestione dei ruoli di amministratore.
 :::
 
 :::info
-Profilo editing is Disabilitato in demo mode. If you are using a demo Account, you will not be able Per make changes Per your Profilo Impostazioni.
+La modifica del profilo è disattivata in modalità demo. Se stai usando un account demo, non potrai apportare modifiche alle impostazioni del tuo profilo.
 :::
 
-## Avanti Steps
+## Passaggi Successivi
 
-- [Managing Devices](./devices.md) -- Visualizza and manage your connected ChurchAppsPlayer devices
+- [Gestione dei Dispositivi](./devices.md) -- Visualizza e gestisci i dispositivi ChurchAppsPlayer collegati

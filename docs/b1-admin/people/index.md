@@ -28,13 +28,13 @@ Here is an overview of the key features available in the People section:
 
 7. **Import and export data** -- Bring in member data from a CSV file or migrate from another church management system like Breeze. You can also export your directory to CSV at any time. See [Importing Data](./importing-data.md) and [Exporting Data](./exporting-data.md).
 
-8. **Manage profiles** -- View and edit detailed profiles for each person, including contact info, household members, [group memberships](../groups/group-members.md), [attendance history](../attendance/tracking-attendance.md), [donations](../donations/recording-donations.md), and [custom forms](../forms/creating-forms.md). Hover over an email, address, or phone number in the blue profile header to copy it with one click.
+8. **Manage profiles** -- View and edit detailed profiles for each person, including contact info, household members, [group memberships](../groups/group-members.md), [attendance history](../attendance/tracking-attendance.md), [donations](../donations/recording-donations.md), and [custom forms](../forms/creating-forms.md). The person's name, contact details, and household are on the left of the profile, with summaries of their attendance, giving, groups, notes, and forms beside them. Hover over an address or a home or work phone number to copy it with one click.
 
 9. **Assign roles and permissions** -- Control who on your team can access different parts of B1 Admin by assigning roles. See [Assigning Roles](./roles-permissions.md).
 
 ## Getting Started
 
-To access the People section, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **People**, and click **People**. You will see your full church directory with a search bar at the top and a list of members below.
+To access the People section, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **People**, and click **People**. You will see your church directory listed by household, with a search bar at the top. Use the **View as** toggle to switch between the **Households** list and a **Table** of individual people.
 
 :::tip
 If you are setting up B1 for the first time, start by [importing your existing member data](./importing-data.md). Then review and clean up profiles as needed.

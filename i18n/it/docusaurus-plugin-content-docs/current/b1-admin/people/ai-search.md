@@ -23,10 +23,16 @@ La funzione **Ricerca AI** ti permette di cercare nell'elenco della tua chiesa u
 La Ricerca AI utilizza l'intelligenza artificiale per interpretare la tua domanda e restituire i risultati corrispondenti dal database delle persone. Puoi fare domande come le faresti a un collega.
 
 1. Accedi alla pagina **Persone** in B1 Admin.
-2. Cerca l'opzione **Ricerca AI** sotto i controlli di ricerca.
+2. Clicca su **Chiedi** sotto la casella di ricerca per aprire la casella **Ricerca AI**.
 3. Digita la tua domanda in linguaggio naturale.
-4. Premi **Invio** o clicca su **Cerca** per eseguire la query.
-5. La tabella dei risultati si aggiornerà per mostrare le persone corrispondenti.
+4. Clicca su **Cerca** per eseguire la query.
+5. La lista dei risultati si aggiornerà per mostrare le persone corrispondenti.
+
+Clicca su **Cancella ricerca** per cancellare la tua domanda e tornare all'intera directory.
+
+:::info
+Se la Ricerca AI non è raggiungibile, mostra *"La Ricerca AI non è al momento disponibile. Riprova più tardi, oppure usa la ricerca qui sopra."* La tua domanda viene conservata, così puoi riprovare tra poco -- oppure usa nel frattempo la ricerca rapida o la ricerca **Avanzata**.
+:::
 
 ## Query di esempio
 
@@ -52,7 +58,7 @@ La Ricerca AI è particolarmente utile quando:
 - Vuoi una risposta rapida a una domanda sulla tua congregazione senza creare un report.
 
 :::info
-La Ricerca AI funziona insieme alla ricerca rapida standard e ai filtri delle colonne. Usa l'approccio che meglio si adatta alle tue esigenze. Per semplici ricerche per nome, la [ricerca rapida](searching-people.md) è l'opzione più veloce. Per domande più articolate, la Ricerca AI eccelle.
+La Ricerca AI funziona insieme alla ricerca rapida standard e ai filtri **Avanzata**. Usa l'approccio che meglio si adatta alle tue esigenze. Per semplici ricerche per nome, la [ricerca rapida](searching-people.md) è l'opzione più veloce. Per domande più articolate, la Ricerca AI eccelle.
 :::
 
 Per altre opzioni di ricerca, consulta [Ricerca persone](./searching-people.md).

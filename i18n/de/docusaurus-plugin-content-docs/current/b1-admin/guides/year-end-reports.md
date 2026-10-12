@@ -25,7 +25,7 @@ Stelle sicher, dass alle Online-Spenden vom Ende des Jahres in deinem System sin
 
 Folge der Anleitung [Stripe-Import](../donations/stripe-import.md):
 
-1. Navigiere zu Spenden > Chargen > Stripe-Import
+1. Navigiere zu Spenden > Stripe-Import
 2. Wähle einen Datumsbereich, der das Ende des Jahres abdeckt (z. B. 1. Dezember - 31. Dezember)
 3. Klicke zuerst auf Vorschau, um zu überprüfen, dann Import fehlender zum Finalisieren
 
@@ -65,7 +65,7 @@ Folge der Anleitung [Spendendbestätigungen](../donations/giving-statements.md):
 2. Wähle das Jahr aus der Dropdown-Liste und überprüfe die Zusammenfassungsstatistiken
 3. Wähle deine Download-Methode:
    - **ZIP herunterladen** -- einzelne CSV-Dateien, eine pro Spender
-   - **Alle drucken** -- druckbare Ansicht mit jeder Bestätigung auf einer neuen Seite
+   - **Alle drucken** -- druckbare Ansicht mit jeder Bestätigung auf einer neuen Seite, mit dem Logo deiner Kirche oben (falls du eines hochgeladen hast)
 
 :::tip
 Generiere Bestätigungen Anfang Januar, während Aufzeichnungen frisch sind. Dies gibt dir Zeit, Probleme zu erkennen, bevor du sie verschickst.

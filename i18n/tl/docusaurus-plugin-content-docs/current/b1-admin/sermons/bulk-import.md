@@ -22,10 +22,10 @@ Hinahayaan kayo ng pahinang Bulk Import na mabilis na mapunan ang inyong sermon 
 ## Pagpili ng Pinagmulan
 
 1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), palawakin ang **Sermons**, at i-click ang **Sermons**. I-click ang **Add Sermon** at piliin ang **Bulk Import** mula sa menu.
-2. Makikita ninyo ang dalawang card na maaaring i-click:
-   - **YouTube** (pula) -- Mag-import ng mga video mula sa isang YouTube channel
-   - **Vimeo** (asul) -- Mag-import ng mga video mula sa isang Vimeo account
-3. I-click ang card ng platform kung saan naka-host ang inyong mga sermon.
+2. Sa ilalim ng **Choose Import Source**, makikita ninyo ang dalawang opsyon:
+   - **YouTube** -- Mag-import ng mga video mula sa isang YouTube channel
+   - **Vimeo** -- Mag-import ng mga video mula sa isang Vimeo account
+3. I-click ang opsyon ng platform kung saan naka-host ang inyong mga sermon (o i-click ang **Import from YouTube** / **Import from Vimeo** sa ibaba ng paglalarawan nito). I-click ang **Back** sa itaas ng pahina upang bumalik sa pagpili ng pinagmulan.
 
 :::tip
 Maaari kayong bumalik at magpalit ng pinagmulan anumang oras kung may mga video kayo sa parehong platform.

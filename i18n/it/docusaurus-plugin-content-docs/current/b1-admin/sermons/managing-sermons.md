@@ -22,8 +22,8 @@ La pagina Sermoni visualizza l'intera libreria di sermoni. Da qui puoi aggiunger
 ## Visualizzazione della Libreria di Sermoni
 
 1. In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Sermoni** e fai clic su **Sermoni**.
-2. La pagina Sermoni mostra tutti i tuoi sermoni, organizzati per playlist. Ogni sermone mostra la sua miniatura, titolo e data.
-3. Fai clic su un qualsiasi sermone per visualizzare o modificare i suoi dettagli.
+2. La pagina Sermoni mostra i tuoi sermoni in una tabella con la **Playlist** di ciascun sermone, il titolo e la **Publish Date**. Usa la casella di ricerca sopra la tabella per filtrare l'elenco. Le tue playlist sono elencate in un pannello **Playlists** accanto alla tabella.
+3. Fai clic su **Edit** nella riga di un sermone per visualizzarne o modificarne i dettagli.
 
 ## Aggiungere un Sermone
 
@@ -40,7 +40,7 @@ Puoi anche aggiungere un URL di live stream permanente selezionando **Aggiungi U
 
 ## Modifica di un Sermone
 
-1. Fai clic su un qualsiasi sermone nella tua libreria per aprire i suoi dettagli.
+1. Fai clic su **Edit** nella riga di un qualsiasi sermone della tua libreria per aprire i suoi dettagli.
 2. Aggiorna il titolo, il relatore, la data, la descrizione, la miniatura o i link multimediali secondo le tue esigenze.
 3. Fai clic su **Salva** per applicare le tue modifiche.
 

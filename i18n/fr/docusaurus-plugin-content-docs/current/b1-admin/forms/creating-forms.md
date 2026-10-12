@@ -32,7 +32,7 @@ Votre nouveau formulaire apparaîtra dans la liste. Cliquez dessus pour commence
 
 ## Imprimer un formulaire vierge
 
-Vous avez besoin d'une copie papier à distribuer -- pour une carte de visite à l'accueil, ou un formulaire que quelqu'un sans accès Internet peut remplir à la main ? Cliquez sur l'**icône d'impression** à côté d'un formulaire dans la liste principale des formulaires pour ouvrir un aperçu, puis cliquez sur **Print**. Les champs vierges s'impriment avec un trait de soulignement ou une case à cocher pour chaque question afin que les gens puissent les remplir à la main ; les questions requises sont marquées d'un astérisque. Le nom de votre église s'imprime en haut au-dessus du nom du formulaire. Il n'y a pas d'autres options d'impression -- imprimez le formulaire complet ou rien.
+Vous avez besoin d'une copie papier à distribuer -- pour une carte de visite à l'accueil, ou un formulaire que quelqu'un sans accès Internet peut remplir à la main ? Cliquez sur **Print** à côté d'un formulaire dans la liste principale des formulaires pour ouvrir un aperçu, puis cliquez sur **Print**. Les champs vierges s'impriment avec un trait de soulignement ou une case à cocher pour chaque question afin que les gens puissent les remplir à la main ; les questions requises sont marquées d'un astérisque. Le nom de votre église s'imprime en haut au-dessus du nom du formulaire. Il n'y a pas d'autres options d'impression -- imprimez le formulaire complet ou rien.
 
 ## Ajouter des questions
 
@@ -81,7 +81,7 @@ Les emails de suivi ne sont envoyés qu'après que votre église a été approuv
 
 ## Dupliquer un formulaire
 
-Pour réutiliser un formulaire comme point de départ pour un nouveau, cliquez sur l'**icône Duplicate** (icône de copie) à côté du formulaire dans la liste des formulaires. B1 crée une copie exacte du formulaire — y compris toutes les questions — que vous pouvez ensuite renommer et modifier indépendamment.
+Pour réutiliser un formulaire comme point de départ pour un nouveau, cliquez sur **Duplicate** à côté du formulaire dans la liste des formulaires, puis confirmez. B1 crée une copie exacte du formulaire — y compris toutes les questions — que vous pouvez ensuite renommer et modifier indépendamment.
 
 :::tip
 La duplication est pratique pour les événements récurrents où les questions d'inscription restent les mêmes d'année en année. Dupliquez le formulaire de l'année dernière, mettez à jour le nom et les dates, et vous êtes prêt.

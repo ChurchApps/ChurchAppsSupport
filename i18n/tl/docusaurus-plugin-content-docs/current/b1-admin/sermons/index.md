@@ -28,7 +28,7 @@ Ayusin ang inyong mga sermon sa mga serye o koleksyon. Pinapadali ng mga playlis
 
 ### Mga Oras ng Live Stream
 
-I-configure ang iskedyul ng live streaming ng inyong simbahan. Mag-set up ng mga paulit-ulit na lingguhang serbisyo o isahang kaganapan, pamahalaan ang mga setting ng chat at video, at kontrolin kung kailan mag-live ang inyong stream. Makikita ng mga bisita ang susunod na naka-iskedyul na oras ng serbisyo sa inyong streaming page. Tingnan ang [Live Streaming](live-streaming) para sa mga tagubilin sa pag-setup.
+I-configure ang iskedyul ng live streaming ng inyong simbahan. Mag-set up ng mga paulit-ulit na lingguhang serbisyo o isahang kaganapan, pamahalaan ang mga setting ng chat at video, at kontrolin kung kailan mag-live ang inyong stream. Makikita ng mga bisita ang susunod na naka-iskedyul na oras ng serbisyo sa inyong streaming page. Kinokontrol ng hiwalay na pahinang **Settings** sa ilalim ng **Sermons** ang mga tab (chat, prayer, at custom links) na makikita sa tabi ng inyong live stream. Tingnan ang [Live Streaming](live-streaming) para sa mga tagubilin sa pag-setup.
 
 ### Bulk Import
 

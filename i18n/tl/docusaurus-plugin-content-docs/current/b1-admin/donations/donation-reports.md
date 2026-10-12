@@ -20,9 +20,9 @@ Nagbibigay ang B1 Admin ng iba't ibang paraan para tingnan at suriin ang giving 
 
 ## Giving Dashboard
 
-Ang giving dashboard ay ang tab na **Dashboard** ng pahinang **Summary**, ang unang pahinang makikita mo kapag binuksan ang seksyong **Donations**.
+Ang giving dashboard ay ang view na **Dashboard** ng pahinang **Summary**, ang unang pahinang makikita mo kapag binuksan ang seksyong **Donations**.
 
-1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin), palawakin ang **Donations**, at i-click ang **Summary**. Magbubukas ang pahinang **Summary** sa tab na **Dashboard**.
+1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin), palawakin ang **Donations**, at i-click ang **Summary**. Magbubukas ang pahinang **Summary** sa view na **Dashboard**. Ang toggle na **View** sa kanang itaas ay lumilipat sa pagitan ng **Dashboard** at **Lapsed Givers**.
 2. Gamitin ang toggle na **Weekly**, **Monthly**, at **Quarterly** sa itaas ng ulat para piliin kung paano pagsasama-samahin ang mga handog.
 3. Sa panel na **Filter Report**, itakda ang **Start Date** at **End Date** (bilang default, ang nakaraang taon hanggang kahapon) at opsyonal na pumili ng **Fund**, pagkatapos ay i-click ang **Run Report**. Awtomatikong tumatakbo ang ulat gamit ang mga default kapag nagbukas ang pahina.
 4. Apat na **KPI card** ang nagpapakita ng mga sukatan ng pagbibigay para sa napiling saklaw:
@@ -41,7 +41,7 @@ Ipinapakita ng dashboard ang pinagsama-samang giving data. Hindi nito kasama ang
 
 ## Mga Lapsed Giver
 
-Ang tab na **Lapsed Givers** sa tabi ng tab na **Dashboard** ay naglilista ng mga taong nagbigay sa isang panahon ngunit hindi na simula noon. Bilang default, inihahambing nito ang nakaraang taon sa kasalukuyang taon hanggang ngayon; baguhin ang alinmang saklaw ng petsa para palawakin o paliitin ang paghahanap. Ipinapakita ng bawat row ang tao, ang petsa ng huli nilang handog at ang kabuuan nila sa naunang panahon, at ang **Download Options > Summary** ay nagda-download ng listahan bilang CSV para sa follow-up na mailing o listahan ng tatawagan.
+Piliin ang **Lapsed Givers** sa toggle na **View** para ilista ang mga taong nagbigay sa isang panahon ngunit hindi na simula noon. Bilang default, inihahambing nito ang nakaraang taon sa kasalukuyang taon hanggang ngayon; baguhin ang alinmang saklaw ng petsa para palawakin o paliitin ang paghahanap. Ipinapakita ng bawat row ang tao, ang petsa ng huli nilang handog at ang kabuuan nila sa naunang panahon, at ang **Download Options > Summary** ay nagda-download ng listahan bilang CSV para sa follow-up na mailing o listahan ng tatawagan.
 
 ## Pagtingin sa Detalye sa Antas ng Nagbigay
 
@@ -49,17 +49,16 @@ Para sa detalye kung sino ang nagbigay, magkano, at para sa aling fund:
 
 1. Pumunta sa **Donations > Batches**.
 2. I-click ang **pangalan ng batch** para buksan ito.
-3. Inililista ng pahina ng detalye ng batch ang bawat donasyon kasama ang pangalan ng nagbigay, halaga, fund, petsa, at paraan ng pagbabayad.
-4. I-click ang **pangalan ng nagbigay** para makita ang detalye kung ilang beses siyang nagdonasyon at magkano sa bawat pagkakataon.
-5. I-click ang **donation ID** para magbukas ng side panel na may buong detalye ng indibidwal na donasyong iyon.
-6. I-click ang **Download** para mag-export ng CSV na may lahat ng impormasyon ng nagbigay at donasyon para sa batch na iyon.
+3. Inililista ng pahina ng detalye ng batch ang bawat donasyon kasama ang paraan nito (at numero ng check o huling mga digit ng card), pangalan ng nagbigay, petsa, mga tala, at halaga, na may kabuuan sa ibaba.
+4. I-click ang **Edit** sa hilera ng donasyon para buksan ang buong detalye ng indibidwal na donasyong iyon, kasama ang fund nito.
+5. I-click ang **Export** sa itaas ng listahan para mag-download ng CSV na may lahat ng impormasyon ng nagbigay at donasyon para sa batch na iyon.
 
 ## Donation Summary Report
 
 Nakapaloob na mismo sa seksyong Donations ang pag-uulat ng donasyon -- ang pahinang Summary ang nagsisilbing donation summary report mo:
 
 1. Sa Jump menu, piliin ang **Donations > Summary**.
-2. Sa tab na **Dashboard**, itakda ang **Start Date** at **End Date** sa panel na **Filter Report** at i-click ang **Run Report**.
+2. Sa view na **Dashboard**, itakda ang **Start Date** at **End Date** sa panel na **Filter Report** at i-click ang **Run Report**.
 3. I-click ang **Download Options** at piliin ang **Summary** para i-export ang ulat bilang CSV file.
 
 ## Pag-export ng Data

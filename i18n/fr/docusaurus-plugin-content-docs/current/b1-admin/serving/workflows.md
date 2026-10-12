@@ -23,7 +23,7 @@ Les flux de travail font avancer les gens à travers une série d'étapes sur un
 
 ## Affichage des flux de travail
 
-Ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche de B1 Admin), développez **Service**, et cliquez sur **Flux de travail**. Vous verrez vos flux de travail listés et groupés par catégorie, les flux de travail actifs étant mis en surbrillance. Cliquez sur n'importe quel flux de travail pour ouvrir son tableau.
+Ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche de B1 Admin), développez **Service**, et cliquez sur **Flux de travail**. Vos flux de travail sont listés dans un tableau indiquant la **Catégorie** et le **Statut** (**Actif** ou **Inactif**) de chacun. Si vous utilisez des catégories, des onglets au-dessus de la liste permettent de la filtrer par catégorie. Cliquez sur n'importe quel flux de travail pour ouvrir son tableau.
 
 ## Création d'un flux de travail
 
@@ -51,7 +51,7 @@ Lorsque vous ajoutez ou modifiez une étape, vous pouvez configurer :
 
 - **Nom de l'étape** -- le titre de la colonne (par exemple, « Appel de bienvenue » ou « En attente d'enregistrement »).
 - **Échéance (jours)** -- définit automatiquement une date d'échéance lorsqu'une carte entre dans cette étape. Les cartes passées leur date d'échéance sont signalées comme **En retard**.
-- **Responsable par défaut** -- la personne ou le groupe aux lesquels les nouvelles cartes de cette étape sont automatiquement attribuées.
+- **Responsable par défaut** -- la personne ou le groupe aux lesquels les nouvelles cartes de cette étape sont automatiquement attribuées. Lorsque le responsable par défaut est une personne, elle reçoit une notification indiquant qu'une carte lui a été attribuée.
 - **Actions automatisées** -- les choses que le système fait de lui-même lorsqu'une carte arrive (voir ci-dessous).
 - **Routage** -- où la carte va lorsqu'elle quitte l'étape (voir [Routage](#routing-cards-with-outcomes-and-conditions)).
 
@@ -140,11 +140,15 @@ Ouvrez un flux de travail pour voir son tableau. Chaque carte affiche le nom de 
 - **Envoyer en arrière** à l'étape précédente ou **Ignorer** à l'étape suivante.
 - **Épingler l'affectation** -- gardez le même propriétaire sur la carte même si elle se déplace entre les étapes. Par défaut, le déplacement d'une carte vers une nouvelle étape la réattribue au responsable par défaut de cette étape ; l'épinglage garde la personne actuelle responsable tout au long.
 - **Terminer** la carte pour la finir, ou choisir un bouton **Résultat** si l'étape a des résultats configurés (voir [Routage](#routing-cards-with-outcomes-and-conditions)).
-- **Ajouter des notes** et examiner l'**historique** de la carte -- y compris un journal des actions automatisées qui ont été exécutées (e-mails envoyés, attentes, etc.).
+- **Ajouter des notes** et examiner l'**activité** de la carte -- un journal des actions automatisées qui ont été exécutées (e-mails envoyés, attentes, etc.).
+
+Pour une carte concernant une personne, le tiroir affiche également le téléphone mobile et l'e-mail de cette personne sous forme de liens sur lesquels vous pouvez cliquer pour l'appeler ou lui écrire, ainsi qu'un lien **Voir le profil** si vous avez l'autorisation de consulter les personnes. La personne à qui la carte est attribuée voit le téléphone et l'e-mail même sans accès à Personnes.
+
+Les notes sont enregistrées avec la carte. Toute personne pouvant ouvrir la carte -- y compris la personne ou le groupe auquel elle est attribuée -- peut lire les notes et ajouter les siennes. Les personnes qui ne peuvent pas ouvrir la carte ne voient pas ses notes.
 
 ### Actions en masse
 
-Cochez les cases sur plusieurs cartes pour agir sur elles ensemble. Une barre d'outils apparaît vous permettant de **Terminer**, **Mettre en attente**, **Réattribuer**, ou **Déplacer** toutes les cartes sélectionnées vers une autre étape à la fois.
+Cochez les cases sur plusieurs cartes pour agir sur elles ensemble. Une barre d'outils apparaît vous permettant de **Terminer**, **Mettre en attente**, **Attribuer** (réattribuer) ou **Déplacer vers…** une autre étape, pour toutes les cartes sélectionnées à la fois.
 
 ## Routage des cartes avec résultats et conditions
 
@@ -162,7 +166,9 @@ Cela permet à une décision de brancher la personne sur différents chemins.
 
 ### Routage automatique (conditionnel)
 
-Les itinéraires automatiques déplacent une carte vers l'avant **dès qu'elle entre dans une étape** (et après que ses actions automatisées soient terminées), sans que quelqu'un ne clique, si la personne correspond à un ensemble de conditions. Ajoutez un itinéraire, choisissez l'étape cible et définissez une ou plusieurs **conditions** (par exemple, le campus, l'âge ou le statut d'adhésion d'une personne). Un itinéraire sans conditions correspond à tous.
+Les itinéraires automatiques déplacent une carte vers l'avant **dès qu'elle entre dans une étape** (et après que ses actions automatisées soient terminées), sans que quelqu'un ne clique, si la personne correspond à un ensemble de conditions. Ajoutez un itinéraire, choisissez l'étape cible et définissez une ou plusieurs **conditions** (par exemple, le campus, l'âge ou le statut d'adhésion d'une personne). Les champs texte peuvent correspondre exactement ou avec **contient**, **commence par** ou **se termine par**. Un itinéraire sans conditions correspond à tous.
+
+Si les conditions d'un itinéraire ne peuvent pas être vérifiées pour une raison quelconque, cet itinéraire est considéré comme ne correspondant pas. La carte reste sur l'étape (ou suit un autre itinéraire qui correspond) au lieu de rester bloquée.
 
 :::info
 Sur le tableau, chaque colonne d'étape affiche de petites annotations décrivant son routage -- par exemple, un libellé de résultat ou « si correspond » suivi d'une flèche vers l'étape ou le flux de travail de destination.
@@ -195,8 +201,8 @@ S'exécuter de manière récurrente -- quotidiennement, hebdomadairement, mensue
 
 Pour tout déclencheur, vous pouvez également définir :
 
-- L'**étape d'entrée** sur laquelle la nouvelle carte commence (par défaut, la première étape).
-- **Une fois par personne** -- pour que la même personne ne soit pas ajoutée au flux de travail deux fois par le déclencheur.
+- L'**Étape de départ** sur laquelle la nouvelle carte arrive (par défaut, la première étape).
+- **Une seule fois par personne** -- pour que la même personne ne soit pas ajoutée au flux de travail deux fois par le déclencheur.
 - **Actif** -- activez ou désactivez le déclencheur sans le supprimer.
 
 :::tip
@@ -205,7 +211,7 @@ Associez un déclencheur **Formulaire · Soumis** au modèle **Suivi de nouveau 
 
 ## Mes cartes
 
-Les bénévoles et le personnel n'ont pas besoin de fouiller chaque tableau pour trouver leur travail. La page **Mes cartes** (liée depuis la page Flux de travail) répertorie toutes les cartes attribuées à l'utilisateur actuel dans tous les flux de travail. Cliquer sur une carte ouvre le tableau auquel elle appartient.
+Les bénévoles et le personnel n'ont pas besoin de fouiller chaque tableau pour trouver leur travail. La liste **Mes cartes** de la page **Mon travail** répertorie toutes les cartes attribuées à l'utilisateur actuel dans tous les flux de travail. Pour y accéder, cliquez sur **Mes cartes** en haut de la page Flux de travail, ou ouvrez **Service > Mon travail** dans le menu Accès rapide. Cliquer sur une carte ouvre le tableau auquel elle appartient.
 
 ## Rapports
 

@@ -72,7 +72,7 @@ I membri del modulo con ruoli **Admin** o **Solo visualizzazione** possono acced
 :::
 
 :::tip
-Se un modulo **Autonomo** è impostato per creare un record di persona, gli invii corrispondenti a una persona esistente appaiono anche nella propria scheda **Moduli** della persona nella sezione Persone -- non solo i moduli di tipo Persone.
+Se un modulo **Autonomo** è impostato per creare un record di persona, gli invii corrispondenti a una persona esistente appaiono anche nella sezione **Moduli** della pagina della persona in Persone -- non solo i moduli di tipo Persone.
 :::
 
 ## Passaggi successivi

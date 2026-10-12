@@ -23,7 +23,7 @@ Pinapadali ng B1 Transfer tool ang pagdadala ng iyong umiiral na datos sa B1, na
 
 1. Mag-log in sa **B1 Admin**.
 2. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **Settings**, at i-click ang **Settings**.
-3. I-click ang button na **Import/Export** sa kanang itaas ng header ng pahina.
+3. I-click ang link na **Import/Export** sa ilalim ng pangalan ng inyong simbahan sa itaas ng kaliwang settings menu.
 4. Bubuksan nito ang **B1 Transfer** tool sa bagong tab sa [transfer.b1.church](https://transfer.b1.church).
 
 Ginagabayan ka ng transfer tool sa apat na hakbang: Source, Preview, Destination, at Run.

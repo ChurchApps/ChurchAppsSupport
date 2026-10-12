@@ -23,7 +23,7 @@ B1 Transfer tool आपके मौजूदा डेटा को B1 मे�
 
 1. **B1 Admin** में लॉग इन करें।
 2. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (शीर्ष-बाएं में खोज पट्टी), **Settings** को विस्तृत करें, और **Settings** पर क्लिक करें।
-3. पृष्ठ हेडर के शीर्ष दाएं में **Import/Export** बटन पर क्लिक करें।
+3. बाएं हाथ की सेटिंग मेनू के शीर्ष पर, आपके चर्च के नाम के नीचे **Import/Export** लिंक पर क्लिक करें।
 4. यह **B1 Transfer** tool को [transfer.b1.church](https://transfer.b1.church) पर एक नए टैब में खोल देगा।
 
 Transfer tool आपको चार चरणों के माध्यम से ले जाता है: Source, Preview, Destination, और Run।

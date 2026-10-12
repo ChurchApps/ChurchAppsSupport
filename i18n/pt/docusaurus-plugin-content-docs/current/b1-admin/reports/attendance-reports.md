@@ -23,7 +23,7 @@ O B1 Admin fornece três relatórios de presença para ajudá-lo a entender como
 
 O relatório Tendência de Presença mostra como a presença muda ao longo do tempo para seus serviços.
 
-1. Vá diretamente para **admin.b1.church/reports/attendanceTrend** em seu navegador (relatórios não têm entrada no menu de navegação -- marcar o endereço é a maneira mais fácil de voltar a ele). O mesmo relatório também está na aba **Tendência de Presença** da página Presença.
+1. Vá diretamente para **admin.b1.church/reports/attendanceTrend** em seu navegador (relatórios não têm entrada no menu de navegação -- marcar o endereço é a maneira mais fácil de voltar a ele). O mesmo relatório também está na página Presença: clique em **Todos os anos** e escolha a aba **Tendência de Presença**.
 2. Opcionalmente selecione um **Campus**, **Serviço**, **Horário do Serviço** ou **Grupo** para filtrar os resultados.
 3. Defina a **Data de Início** e a **Data de Término**. Por padrão, o relatório cobre o ano passado, de um ano atrás até hoje, e a data final é incluída completamente. Clique em **Executar Relatório**.
 4. O relatório exibe um gráfico de barras e uma tabela de visitas totais por semana. Cada semana é rotulada com a data do domingo daquela semana, e a coluna **Datas da Sessão** da tabela lista as datas reais naquela semana que tiveram presença (por exemplo, "27/9, 30/9").
@@ -34,7 +34,7 @@ Este relatório é útil para detectar padrões como quedas sazonais, tendência
 
 O relatório de Presença de Grupo mostra quem compareceu a cada sessão de grupo em um intervalo de datas.
 
-1. Vá diretamente para **admin.b1.church/reports/groupAttendance** em seu navegador, ou abra a aba **Presença de Grupo** da página Presença.
+1. Vá diretamente para **admin.b1.church/reports/groupAttendance** em seu navegador, ou, na página Presença, clique em **Todos os anos** e escolha a aba **Presença de Grupo**.
 2. Opcionalmente selecione um **Campus** e **Serviço**.
 3. Defina a **Data de Início** e a **Data de Término**. Por padrão, o relatório cobre o último domingo até hoje, e a data final é incluída completamente.
 4. Clique em **Executar Relatório**.

@@ -19,13 +19,13 @@ As contagens de presentes permitem que você registre um número de presença to
 </div>
 
 :::info
-Contagens de presentes são uma alternativa apenas-total para [Registrando Presença](recording-attendance.md). Se você precisa saber **quem** compareceu -- por exemplo, para acompanhar pessoas que não voltaram -- continue usando presença de sessão nomeada na aba Sessions do grupo. Contagens de presentes apenas armazenam um número.
+Contagens de presentes são uma alternativa apenas-total para [Registrando Presença](recording-attendance.md). Se você precisa saber **quem** compareceu -- por exemplo, para acompanhar pessoas que não voltaram -- continue usando presença de sessão nomeada nas sessões do grupo. Contagens de presentes apenas armazenam um número.
 :::
 
 ## Registrando uma Contagem de Presentes
 
 1. Abra **B1 Admin**, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Pessoas**, e clique em **Presença**.
-2. Selecione a sub-aba **Contagens de Presentes**.
+2. Clique em **Inserir contagem de presentes** na coluna da esquerda.
 3. Preencha o formulário:
    - **Serviço** *(obrigatório)*
    - **Horário do Serviço** -- deixe em branco para registrar um total em todos os horários de serviço
@@ -34,14 +34,14 @@ Contagens de presentes são uma alternativa apenas-total para [Registrando Prese
    - **Contagem de Presentes** -- o número total de pessoas presentes
 4. Clique em **Salvar**.
 
-A tabela **Contagens de Presentes Recentes** à direita lista suas últimas entradas com data, serviço, horário do serviço, grupo e contagem. Clique em uma linha para carregá-la de volta no formulário se precisar corrigi-la ou deletá-la.
+A tabela **Contagens de Presentes Recentes** ao lado do formulário lista suas últimas entradas com data, serviço, horário do serviço, grupo e contagem. Clique em uma linha para carregá-la de volta no formulário se precisar corrigi-la ou deletá-la.
 
 ## Relatório de Tendência de Contagem de Presentes
 
-1. Da mesma página **Presença**, selecione a aba **Tendência de Contagem de Presentes**.
+1. Da mesma página **Presença**, clique em **Todos os anos** na coluna da esquerda e depois selecione a aba **Tendência de Contagem de Presentes**.
 2. Use os filtros **Campus**, **Serviço**, **Horário do Serviço** e **Grupo** para estreitar o relatório.
 
-O relatório mostra suas contagens de presentes registradas somadas por semana, tanto como um gráfico de linhas quanto como uma tabela -- o mesmo estilo de relatório usado pelas [abas de tendência de Presença e Grupos](tracking-attendance.md).
+O relatório mostra suas contagens de presentes registradas somadas por semana, tanto como um gráfico de linhas quanto como uma tabela -- o mesmo estilo de relatório usado pelas [abas Tendência de Presença e Presença de Grupos](tracking-attendance.md). Contagens de presentes registradas para a semana atual também aparecem em **Contagens de presentes esta semana** na página principal de Presença.
 
 ## Páginas Relacionadas
 

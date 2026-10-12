@@ -64,7 +64,7 @@ Segui la guida [Streaming dal vivo](../sermons/live-streaming.md) per:
 
 1. Inserire il tuo YouTube Channel ID nelle impostazioni di streaming
 2. Configurare il programma ricorrente dei servizi (es. domeniche alle 10:00)
-3. Personalizzare le schede della pagina streaming: Chat, Richieste di preghiera e link personalizzati
+3. Personalizzare le schede della pagina streaming (Chat, Richieste di preghiera e link personalizzati) nella pagina **Sermoni > Impostazioni**
 
 :::info
 Quando vai in diretta su YouTube, la pagina streaming di B1 rileva automaticamente lo stream. Nessun passaggio aggiuntivo necessario la domenica mattina.

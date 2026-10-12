@@ -22,28 +22,38 @@ La grabación de donaciones en B1 Admin se realiza a través del sistema de lote
 ## Crear un lote y agregar donaciones
 
 1. En **B1 Admin**, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda), expanda **Donations** y haga clic en **Batches**.
-2. Haga clic en **Add Batch**.
+2. Haga clic en **Add Batch** en la parte superior de la página.
 3. Ingrese un nombre para el lote (por ejemplo, "Sunday Offering - Jan 5") y seleccione la fecha. Haga clic en **Save**.
 4. Su nuevo lote aparece en la lista mostrando cero donaciones y $0.00.
 5. Haga clic en el **nombre del lote** para abrirlo.
 
 ## Entrada de donaciones individuales
 
-1. En la página de detalle del lote, escriba el nombre del donante en el **campo de búsqueda** para encontrarlo.
-2. Después de seleccionar una persona, aparece el formulario de entrada de donación con campos para **Date**, **Payment Method**, **Fund**, **Amount** y **Check Number**.
-3. Complete los detalles y haga clic en **Add Donation**.
-4. La donación se añade a la tabla a continuación, y el formulario se reinicia para que pueda ingresar la siguiente.
+1. En la página de detalle del lote, el panel de entrada de donaciones aparece junto a la lista de donaciones. Bajo **Select Person or Anonymous**, escriba el nombre del donante en el **campo de búsqueda** para encontrarlo, o haga clic en **Anonymous**. (Al hacer clic en **Add Donation** en la parte superior de la página se lleva a este panel).
+2. Después de seleccionar una persona, el formulario de entrada muestra los campos **Date**, **Method** (Check, Cash, Card o In-Kind), **Fund**, **Notes**, **Amount** y **Check #** (o **Last 4 digits** para regalos con tarjeta). Haga clic en **Change** junto al nombre del donante para elegir a otra persona.
+3. Complete los detalles y haga clic en **Add Donation** (o presione Enter).
+4. La donación se añade a la lista de donaciones, y el formulario se reinicia para que pueda ingresar la siguiente.
 
 :::tip
 Puede ingresar rápidamente varias donaciones seguidas sin dejar la página del lote. El formulario se reinicia después de cada entrada para que pueda pasar por un paquete de cheques o sobres de manera eficiente.
 :::
 
+## Registrar un regalo desde el registro de una persona
+
+Para registrar un solo regalo sin abrir un lote, abra el registro del donante en **People** y haga clic en **Log a gift** (en el resumen de donaciones, o en la vista de donaciones de la persona).
+
+1. Establezca la **Date** y el **Amount**.
+2. Elija el **Fund** y el **Method** (Check, Cash, Card o In-Kind), e ingrese el **Check #** o los **Last 4 digits** si es necesario.
+3. Opcionalmente agregue **Notes** y haga clic en **Save**.
+
+El regalo se guarda en el lote de esa fecha. Si todavía no existe un lote para esa fecha, se crea uno automáticamente, con la fecha como nombre.
+
 ## División de una donación entre múltiples fondos
 
 A veces, un donante da más de un fondo en una transacción. Para manejar esto:
 
-1. Haga clic en el botón **Edit** en la fila de donación.
-2. En el formulario de edición, agregue cantidades a diferentes fondos. El total se calculará automáticamente a partir de los montos de fondos individuales.
+1. Debajo del panel de entrada, haga clic en el enlace **full donation editor** (o haga clic en **Edit** en la fila de una donación existente).
+2. En el editor completo, agregue cantidades a diferentes fondos. El total se calculará automáticamente a partir de los montos de fondos individuales.
 3. Haga clic en **Save** para actualizar la donación.
 
 :::info
@@ -55,7 +65,7 @@ Dividir donaciones entre fondos es común cuando un donante escribe un solo cheq
 Para editar una donación, haga clic en el botón **Edit** en su fila en el lote. Puede cambiar la fecha, cantidad, fondo, método de pago o cualquier otro detalle. Haga clic en **Save** cuando termine.
 
 :::tip
-El encabezado de la página del lote se actualiza automáticamente para mostrar el número total de donaciones y el monto de dólar combinado mientras agrega o edita entradas. Úselo para reconciliar contra su comprobante de depósito.
+La línea debajo del nombre del lote en la parte superior de la página se actualiza automáticamente para mostrar la fecha del lote, el número de regalos y el monto de dólar combinado mientras agrega o edita entradas. Úselo para reconciliar contra su comprobante de depósito.
 :::
 
 ## Reembolso de una donación

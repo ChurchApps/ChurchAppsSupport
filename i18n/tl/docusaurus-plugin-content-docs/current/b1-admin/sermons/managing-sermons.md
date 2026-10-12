@@ -22,8 +22,8 @@ Ipinapakita ng pahina ng Sermons ang buong library ng inyong mga sermon. Dito ma
 ## Pagtingin sa Inyong Library ng mga Sermon
 
 1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **Sermons**, at i-click ang **Sermons**.
-2. Ipinapakita ng pahina ng Sermons ang lahat ng inyong sermon entry, nakaayos ayon sa playlist. Ipinapakita ng bawat sermon ang thumbnail, pamagat, at petsa nito.
-3. I-click ang anumang sermon para tingnan o i-edit ang mga detalye nito.
+2. Ipinapakita ng pahina ng Sermons ang inyong mga sermon entry sa isang table na may **Playlist**, pamagat, at **Publish Date** ng bawat sermon. Gamitin ang search box sa itaas ng table para i-filter ang listahan. Nakalista ang inyong mga playlist sa panel na **Playlists** sa tabi ng table.
+3. I-click ang **Edit** sa row ng anumang sermon para tingnan o i-edit ang mga detalye nito.
 
 ## Pagdaragdag ng Sermon
 
@@ -40,7 +40,7 @@ Maaari rin kayong magdagdag ng permanenteng URL ng live stream sa pamamagitan ng
 
 ## Pag-edit ng Sermon
 
-1. I-click ang anumang sermon sa inyong library para buksan ang mga detalye nito.
+1. I-click ang **Edit** sa row ng anumang sermon sa inyong library para buksan ang mga detalye nito.
 2. I-update ang pamagat, tagapagsalita, petsa, paglalarawan, thumbnail, o mga media link ayon sa kailangan.
 3. I-click ang **Save** para i-apply ang inyong mga pagbabago.
 

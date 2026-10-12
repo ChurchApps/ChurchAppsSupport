@@ -6,7 +6,7 @@ title: "Suivi de la Présence"
 
 <div class="article-intro">
 
-Une fois que vos campus, heures de service et groupes sont configurés, B1 Admin facilite l'examen des données de présence et l'identification des tendances. La page Présence fournit deux vues de rapport -- l'onglet **Tendance de Présence** pour les tendances à l'échelle de l'église et l'onglet **Présence du Groupe** pour les détails au niveau du groupe. Utilisez ces outils pour comprendre les modèles de croissance, identifier l'engagement en déclin et prendre des décisions fondées sur les données pour votre église.
+Une fois que vos campus, heures de service et groupes sont configurés, B1 Admin facilite l'examen des données de présence et l'identification des tendances. La page Présence s'ouvre sur un résumé de la présence de cette semaine, et ses rapports **Toutes les années** fournissent deux vues principales -- l'onglet **Tendance de Présence** pour les tendances à l'échelle de l'église et l'onglet **Présence du Groupe** pour les détails au niveau du groupe. Utilisez ces outils pour comprendre les modèles de croissance, identifier l'engagement en déclin et prendre des décisions fondées sur les données pour votre église.
 
 </div>
 
@@ -21,8 +21,12 @@ Une fois que vos campus, heures de service et groupes sont configurés, B1 Admin
 ## Affichage des tendances de présence
 
 1. Ouvrez **B1 Admin**, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Personnes**, et cliquez sur **Présence**.
-2. Cliquez sur l'onglet **Tendance de Présence**.
+2. Cliquez sur **Toutes les années** dans la colonne de gauche. L'onglet **Tendance de Présence** est sélectionné par défaut.
 3. Le rapport s'exécute automatiquement à l'ouverture de l'onglet, montrant la présence totale pour chaque semaine.
+
+:::tip
+Pour un aperçu rapide de la semaine en cours, la page Présence principale indique combien de personnes sont dans la salle cette semaine, une répartition par salle (groupe), les invités éventuels et un graphique à barres des enregistrements sur 13 semaines -- sans rapport nécessaire.
+:::
 
 ## Filtrage de vos données
 
@@ -44,7 +48,7 @@ Les rapports s'exécutent automatiquement chaque fois que vous ouvrez l'onglet T
 
 L'onglet **Présence du Groupe** affiche qui a assisté à chaque session de groupe. Ceci est utile lorsque vous souhaitez surveiller une classe spécifique, une équipe de ministère ou un petit groupe plutôt que de regarder les chiffres de service globaux.
 
-1. Sélectionnez l'onglet **Présence du Groupe**.
+1. Dans les rapports **Toutes les années**, sélectionnez l'onglet **Présence du Groupe**.
 2. Optionnellement choisissez un **Campus** et un **Service**.
 3. Définissez la **Date de début** et la **Date de fin**. Par défaut, le rapport couvre le dimanche dernier jusqu'à aujourd'hui.
 4. Cliquez sur **Exécuter le rapport**.

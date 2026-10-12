@@ -6,7 +6,7 @@ title: "Varselpreferanser"
 
 <div class="article-intro">
 
-Varselpreferanser lar deg bestemme hvilke varsler du mottar fra kirken din og hvordan du mottar dem -- push-varsler, e-post eller i-app-klokken. Du kan finstille hver type varsel, angi stille-timer, eller deaktivere alt på en gang, alt fra en skjerm.
+Varselpreferanser lar deg bestemme hvilke varsler du mottar fra kirken din og hvordan du mottar dem -- push-varsler, e-post, i-app-klokken eller (hvis kirken din sender tekstmeldinger) tekstmeldinger. Du kan finstille hver type varsel, angi stille-timer, eller deaktivere alt på en gang, alt fra en skjerm.
 
 </div>
 
@@ -22,6 +22,7 @@ Du kan også trykke på klokke-ikonet, åpne **Varsler**-fanen, trykk **Se alle 
 
 - **Deaktiver alle** -- Pauser midlertidig alle ikke-esensielle varsler.
 - **Push-varsler** -- Slår push-varsler på eller av for enheten din.
+- **Tekstmeldinger** -- Vises bare hvis kirken din har satt opp tekstmeldinger. Slå dette på for å få tjeneste- og arrangementspåminnelser som tekstmelding på mobilnummeret i profilen din. Det er av til du slår det på.
 - **E-postfrekvens** -- Velg hvordan e-postvarsler ankommer:
   - **Per varsel** -- Send en e-post når ting skjer.
   - **Daglig sammendrag** -- Samle dem i en daglig e-post.
@@ -35,6 +36,7 @@ Nedenfor de globale kontrollene er et rutenett av varseltyper. For hver kan du s
 - **Push** -- Et varsel på enheten din.
 - **E-post** -- En melding til innboksen din.
 - **I-App** -- Klokken/merket inne i appen.
+- **Tekst** -- En tekstmelding til mobiltelefonen din. Denne kolonnen vises bare hvis kirken din har satt opp tekstmeldinger, og bare noen typer (for eksempel **Arrangementspåminnelser**, **Tjeneste og Schedule** og **Oppgaver og oppfølging**) kan sendes som tekst. Tekstmeldinger kommer bare hvis **Tekstmeldinger** også er slått på.
 
 Vanlige typer inkluderer **Arrangementspåminnelser**, **Tjeneste og Schedule**, **Direkte Meldinger**, **Gruppechat**, **Bønnskrav** og **Kirkemeddelelser**. For eksempel kan du holde push-varsler på for Direkte Meldinger, men slå dem av for Meddelelser.
 
@@ -43,6 +45,10 @@ Noen varseltyper er **alltid på** og kan ikke slås av -- **Konto- og Sikkerhet
 :::
 
 Noen typer er **deaktivert som standard** (for eksempel promoterings- eller innsamlingsmeldinger) og når deg bare hvis du velger å velge inn.
+
+## Slutte å få tekstmeldinger {#stopping-text-messages}
+
+For å slutte å få tekstmeldinger slår du av **Tekstmeldinger** og lagrer. Du kan også svare **STOP** på en tekstmelding fra kirken din for å melde nummeret ditt av tekstmeldingene.
 
 ## Lagring av Endringene Dine
 

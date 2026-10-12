@@ -16,7 +16,7 @@ Mula sa seksyon ng Profile, maaari kang:
 
 - **Mag-update ng iyong pangalan at email** -- Panatilihing napapanahon ang iyong impormasyon sa pakikipag-ugnayan.
 - **Magpalit ng password** -- Magtakda ng bagong password para sa iyong account.
-- **Magpalit ng tema** -- Lumipat sa pagitan ng light at dark mode ayon sa iyong kagustuhan.
+- **Magpalit ng tema** -- Lumipat sa pagitan ng light at dark mode mula sa user menu (i-click ang iyong larawan ng profile sa kanang itaas na sulok).
 - **Pamahalaan ang mga nakakonektang device** -- Tingnan at kontrolin kung aling mga ChurchAppsPlayer device ang naka-link sa iyong account.
 - **Tingnan ang mga naka-link na account** -- Tingnan at pamahalaan ang anumang mga panlabas na serbisyo na nakakonekta sa iyong ChurchApps account.
 

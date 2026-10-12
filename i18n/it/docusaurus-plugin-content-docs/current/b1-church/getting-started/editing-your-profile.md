@@ -29,7 +29,7 @@ La scheda Profilo contiene le informazioni che la tua chiesa vede nel tuo record
 - **Nome** — Nome, Secondo Nome e Cognome.
 - **Contatto** — Email e data di nascita.
 - **Indirizzo** — Indirizzo stradale, città, stato e CAP.
-- **Telefono** — Numeri di cellulare, casa e ufficio.
+- **Telefono** — Numeri di cellulare, casa e ufficio. Se attivi gli avvisi di testo in [Preferenze di notifica](./notification-preferences.md), vengono inviati al tuo numero di cellulare.
 
 Modifica qualsiasi campo e salva le tue modifiche dalla barra in fondo allo schermo.
 

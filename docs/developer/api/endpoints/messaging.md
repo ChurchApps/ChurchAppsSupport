@@ -33,6 +33,10 @@ Base path: `/messaging/conversations`
 
 Conversations with `contentType: "person"` (the Notes tab on a person record) or `contentType: "personConfidential"` (the Confidential Notes section) are gated on every read and write path, including the otherwise-public routes above, which return `401` for these content types. `person` requires the MembershipApi **People / Edit** permission; `personConfidential` requires **People / View Confidential Notes**. For scoped API keys, `people:write` carries both actions (the key's user must still hold the underlying role permission).
 
+### Workflow card notes access control
+
+Conversations with `contentType: "workflowCard"` (the notes on a workflow card, where `contentId` is the card's task ID) are readable and writable only by someone who can open that card: a user with the DoingApi **Tasks / View** permission, or the person or group the card is assigned to, created by, or about. Everyone else gets `401` on every read path, including the public routes above. A card's conversation is attached through the card itself with `POST /doing/tasks/:id/conversation` (body `{ "conversationId": "..." }`; the first conversation attached wins), which the card's editors and its assignee can call.
+
 ### Example: Start a Conversation
 
 ```
@@ -168,12 +172,11 @@ Authorization: Bearer <token>
 
 Base path: `/messaging/notificationpreferences`
 
-Extends standard CRUD. The base class provides POST `/` (create or update, no permission required).
-
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| POST | `/` | JWT | — | Create or update notification preferences (from CRUD base class) |
+| GET | `/categories` | JWT | — | List notification categories with their default and allowed channels |
 | GET | `/my` | JWT | — | Load notification preferences for the current user (auto-creates defaults if none exist) |
+| POST | `/` | JWT | — | Save the current user's preferences. Body: any of `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, plus optional `overrides: [{ categoryKey, channel, optedIn }]` (channel may be `push`, `email`, `in_app`, or `sms`; locked categories are ignored). `allowSms` is the member's opt-in for text reminders. A legacy array-of-rows body is still accepted |
 
 ## Connections
 
@@ -254,6 +257,9 @@ Manages SMS texting providers, group text messaging, and delivery tracking.
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
 | GET | `/providers` | JWT | — | Load texting providers for the church (credentials are masked) |
+| GET | `/status` | JWT | — | `{ enabled }` — whether the church has an enabled texting provider. Any signed-in church user; used to show **Text** options only when texts can be sent |
+| GET | `/inboundUrl` | JWT | `texting.send` or `settings.edit` | `{ url }` — the church's inbound (STOP) webhook URL to paste into the provider |
+| POST | `/inbound/:churchId/:token` | Public | — | Provider inbound-message webhook. `token` is an HMAC of the church id. A reply that is exactly a stop word (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`) marks every matching person `optedOut` and turns off their `allowSms`. Returns `{ optedOut: <count> }`; other replies return `{ optedOut: 0 }` |
 | GET | `/preview/:groupId` | JWT | — | Preview recipients for a group text (eligible, opted-out, no-phone counts) |
 | GET | `/sent` | JWT | — | Load all sent text message records for the church |
 | GET | `/sent/:id/details` | JWT | — | Load a sent text with per-recipient delivery logs |

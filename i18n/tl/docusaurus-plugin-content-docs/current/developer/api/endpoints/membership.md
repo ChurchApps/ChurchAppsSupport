@@ -85,6 +85,7 @@ Tingnan ang [Authentication & Permissions](./authentication) para sa mga endpoin
 | POST | `/updateEmail` | JWT | — | Baguhin ang email address ng user |
 | POST | `/updatePassword` | JWT | — | Baguhin ang password ng user (minimum 6 na karakter) |
 | POST | `/updateOptedOut` | JWT | — | Itakda ang opted-out na katayuan ng isang tao |
+| POST | `/sendInviteEmail` | JWT | People.Edit | Mag-email ng imbitasyon sa isang tao sa simbahang ito (`email`, `personName`, `contextName`). Ang button ay nagsasabing **Sign Up** para sa taong walang account at **Log In** para sa umiiral na user. Ang user na hindi pa nakapag-log in ay makakatanggap ng **Set Your Password** link na mag-e-expire sa loob ng 7 araw. Binibilang ito sa daily email limit ng simbahan (`429` kapag naabot na) |
 | GET | `/search?term=` | JWT | Server.Admin | Maghanap ng lahat ng user ayon sa pangalan/email |
 | DELETE | `/` | JWT | — | Tanggalin ang kasalukuyang user account |
 

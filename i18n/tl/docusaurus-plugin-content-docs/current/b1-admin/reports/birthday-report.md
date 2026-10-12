@@ -24,7 +24,7 @@ Kailangan ba ninyo ng listahan ng lahat ng may kaarawan o anibersaryo sa isang p
 2. Sa ilalim ng search box, i-click ang **Advanced**.
 3. Palawakin ang seksyong **Demographics** at lagyan ng check ang **Birth Month**, pagkatapos piliin ang buwan.
 4. Patakbuhin ang paghahanap — lalabas sa mga resulta ang lahat ng may kaarawan sa buwang iyon.
-5. Para makita ang mga petsa, i-click ang **icon ng columns** sa kanang itaas ng mga resulta at i-enable ang column na **Birthday**. Gamitin ang **Export** para i-download ang listahan bilang spreadsheet kung mas gusto ninyong i-sort o i-print ito roon.
+5. Para makita ang mga petsa, piliin ang **View as** na **Table**, pagkatapos i-click ang icon na **Select columns** sa header ng pahina at i-enable ang column na **Birthday**. Gamitin ang **Export** para i-download ang listahan bilang spreadsheet kung mas gusto ninyong i-sort o i-print ito roon.
 
 ## Pagkuha ng Listahan ng Anibersaryo
 

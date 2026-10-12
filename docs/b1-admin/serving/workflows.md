@@ -23,7 +23,7 @@ Workflows move people through a series of steps on a visual board. Each person b
 
 ## Viewing Workflows
 
-Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **Serving**, and click **Workflows**. You will see your workflows listed and grouped by category, with active workflows highlighted. Click any workflow to open its board.
+Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **Serving**, and click **Workflows**. Your workflows are listed in a table showing each one's **Category** and **Status** (**Active** or **Inactive**). If you use categories, tabs above the list let you filter it by category. Click any workflow to open its board.
 
 ## Creating a Workflow
 
@@ -51,7 +51,7 @@ When you add or edit a step, you can configure:
 
 - **Step Name** -- the column heading (for example, "Welcome Call" or "Awaiting Registration").
 - **Due in (days)** -- automatically sets a due date when a card enters this step. Cards past their due date are flagged as **Overdue**.
-- **Default assignee** -- the person or group new cards on this step are assigned to automatically.
+- **Default assignee** -- the person or group new cards on this step are assigned to automatically. When the default assignee is a person, they get a notification that a card has been assigned to them.
 - **Automated actions** -- things the system does on its own when a card arrives (see below).
 - **Routing** -- where the card goes when it leaves the step (see [Routing](#routing-cards-with-outcomes-and-conditions)).
 
@@ -140,11 +140,15 @@ From the card drawer you can:
 - **Send Back** to the previous step or **Skip** to the next step.
 - **Pin assignment** -- keep the same owner on the card even as it moves between steps. By default, moving a card to a new step reassigns it to that step's default assignee; pinning keeps the current person responsible throughout.
 - **Complete** the card to finish it, or choose an **Outcome** button if the step has outcomes configured (see [Routing](#routing-cards-with-outcomes-and-conditions)).
-- **Add notes** and review the card's **history** -- including a log of automated actions that have run (emails sent, waits, etc.).
+- **Add notes** and review the card's **Activity** -- a log of automated actions that have run (emails sent, waits, etc.).
+
+For a card about a person, the drawer also shows that person's mobile phone and email as links you can tap to call or email them, plus a **View profile** link if you have permission to view people. The person a card is assigned to sees the phone and email even without access to People.
+
+Notes are saved with the card. Anyone who can open the card -- including the person or group it's assigned to -- can read the notes and add their own. People who can't open the card can't see its notes.
 
 ### Bulk actions
 
-Select the checkboxes on multiple cards to act on them together. A toolbar appears letting you **Complete**, **Snooze**, **Reassign**, or **Move** all selected cards to another step at once.
+Select the checkboxes on multiple cards to act on them together. A toolbar appears letting you **Complete**, **Snooze**, **Assign** (reassign), or **Move to…** another step for all selected cards at once.
 
 ## Routing Cards with Outcomes and Conditions
 
@@ -162,7 +166,9 @@ This lets one decision branch the person down different paths.
 
 ### Automatic routing (conditional)
 
-Automatic routes move a card onward **the moment it enters a step** (and after its automated actions finish), without anyone clicking, if the person matches a set of conditions. Add a route, choose the target step, and define one or more **conditions** (for example, a person's campus, age, or membership status). A route with no conditions matches everyone.
+Automatic routes move a card onward **the moment it enters a step** (and after its automated actions finish), without anyone clicking, if the person matches a set of conditions. Add a route, choose the target step, and define one or more **conditions** (for example, a person's campus, age, or membership status). Text fields can be matched exactly or with **contains**, **starts with**, or **ends with**. A route with no conditions matches everyone.
+
+If a route's conditions can't be checked for some reason, that route is treated as not matching. The card stays on the step (or follows another route that does match) instead of getting stuck.
 
 :::info
 On the board, each step column shows small annotations describing its routing -- for example, an outcome label or "if matches" followed by an arrow to the destination step or workflow.
@@ -195,8 +201,8 @@ Run on a recurring basis -- daily, weekly, monthly, or yearly -- against a set o
 
 For any trigger you can also set:
 
-- The **entry step** the new card starts on (defaults to the first step).
-- **Once per person** -- so the same person isn't added to the workflow twice by the trigger.
+- The **Starting step** the new card lands on (defaults to the first step).
+- **Only once per person** -- so the same person isn't added to the workflow twice by the trigger.
 - **Active** -- turn the trigger on or off without deleting it.
 
 :::tip
@@ -205,7 +211,7 @@ Pair a **Form · Submitted** trigger with the **New Visitor Follow-up** template
 
 ## My Cards
 
-Volunteers and staff do not need to dig through every board to find their work. The **My Cards** page (linked from the Workflows page) lists every card assigned to the current user across all workflows. Clicking a card opens the board it belongs to.
+Volunteers and staff do not need to dig through every board to find their work. The **My Cards** list on the **My Work** page shows every card assigned to the current user across all workflows. To get there, click **My Cards** at the top of the Workflows page, or open **Serving > My Work** in the Jump menu. Clicking a card opens the board it belongs to.
 
 ## Reports
 

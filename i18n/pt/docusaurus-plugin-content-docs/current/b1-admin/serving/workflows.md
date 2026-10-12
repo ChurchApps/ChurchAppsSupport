@@ -23,7 +23,7 @@ Os Fluxos de Trabalho movem pessoas através de uma série de etapas em um paine
 
 ## Visualizando Fluxos de Trabalho
 
-Abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo do B1 Admin), expanda **Serving** (Serviço), e clique em **Workflows** (Fluxos de Trabalho). Você verá seus fluxos de trabalho listados e agrupados por categoria, com fluxos de trabalho ativos destacados. Clique em qualquer fluxo de trabalho para abrir seu painel.
+Abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo do B1 Admin), expanda **Serving** (Serviço), e clique em **Workflows** (Fluxos de Trabalho). Seus fluxos de trabalho são listados em uma tabela mostrando a **Categoria** e o **Status** (**Active** (Ativo) ou **Inactive** (Inativo)) de cada um. Se você usar categorias, as abas acima da lista permitem filtrá-la por categoria. Clique em qualquer fluxo de trabalho para abrir seu painel.
 
 ## Criando um Fluxo de Trabalho
 
@@ -51,7 +51,7 @@ Quando você adiciona ou edita uma etapa, você pode configurar:
 
 - **Step Name** (Nome da Etapa) -- o cabeçalho da coluna (por exemplo, "Welcome Call" (Ligação de Boas-vindas) ou "Awaiting Registration" (Aguardando Registro)).
 - **Due in (days)** (Prazo em dias) -- define automaticamente uma data de vencimento quando um cartão entra nesta etapa. Cartões após sua data de vencimento são sinalizados como **Overdue** (Vencido).
-- **Default assignee** (Responsável padrão) -- a pessoa ou grupo que os novos cartões nesta etapa são atribuídos automaticamente.
+- **Default assignee** (Responsável padrão) -- a pessoa ou grupo que os novos cartões nesta etapa são atribuídos automaticamente. Quando o responsável padrão é uma pessoa, ela recebe uma notificação de que um cartão foi atribuído a ela.
 - **Automated actions** (Ações automatizadas) -- coisas que o sistema faz por conta própria quando um cartão chega (veja abaixo).
 - **Routing** (Roteamento) -- para onde o cartão vai quando sai da etapa (consulte [Roteamento](#routing-cards-with-outcomes-and-conditions)).
 
@@ -140,11 +140,15 @@ Na gaveta do cartão você pode:
 - **Send Back** (Enviar de Volta) para a etapa anterior ou **Skip** (Pular) para a próxima etapa.
 - **Pin assignment** (Atribuição de pino) -- mantenha o mesmo proprietário no cartão enquanto ele se move entre etapas. Por padrão, mover um cartão para uma nova etapa o reatribui ao responsável padrão dessa etapa; o pino mantém a pessoa atual responsável durante todo o período.
 - **Complete** (Concluir) o cartão para finalizá-lo, ou escolha um botão **Outcome** (Resultado) se a etapa tiver resultados configurados (consulte [Roteamento](#routing-cards-with-outcomes-and-conditions)).
-- **Add notes** (Adicionar notas) e revisar o **history** (histórico) do cartão -- incluindo um registro de ações automatizadas que foram executadas (emails enviados, esperas, etc.).
+- **Add notes** (Adicionar notas) e revisar a **Activity** (Atividade) do cartão -- um registro de ações automatizadas que foram executadas (emails enviados, esperas, etc.).
+
+Para um cartão sobre uma pessoa, a gaveta também mostra o celular e o e-mail dessa pessoa como links que você pode tocar para ligar ou enviar e-mail, além de um link **View profile** (Ver perfil) se você tiver permissão para visualizar pessoas. A pessoa à qual o cartão está atribuído vê o telefone e o e-mail mesmo sem acesso a Pessoas.
+
+As notas são salvas com o cartão. Qualquer pessoa que possa abrir o cartão -- incluindo a pessoa ou grupo ao qual ele está atribuído -- pode ler as notas e adicionar as suas. Quem não pode abrir o cartão não vê suas notas.
 
 ### Ações em massa
 
-Selecione as caixas de seleção em vários cartões para agir sobre eles juntos. Uma barra de ferramentas aparece permitindo que você **Complete** (Conclua), **Snooze** (Suspenda), **Reassign** (Reatribua) ou **Move** (Mova) todos os cartões selecionados para outra etapa de uma vez.
+Selecione as caixas de seleção em vários cartões para agir sobre eles juntos. Uma barra de ferramentas aparece permitindo que você **Complete** (Conclua), **Snooze** (Suspenda), **Assign** (Atribua) ou **Move to…** (Mova para…) outra etapa para todos os cartões selecionados de uma vez.
 
 ## Roteando Cartões com Resultados e Condições
 
@@ -162,7 +166,9 @@ Isso permite que uma decisão ramifique a pessoa em diferentes caminhos.
 
 ### Roteamento automático (condicional)
 
-Rotas automáticas movem um cartão adiante **no momento em que ele entra em uma etapa** (e depois que suas ações automatizadas terminam), sem que alguém clique, se a pessoa corresponder a um conjunto de condições. Adicione uma rota, escolha a etapa de destino e defina uma ou mais **conditions** (condições) (por exemplo, campus, idade ou status de associação de uma pessoa). Uma rota sem condições corresponde a todos.
+Rotas automáticas movem um cartão adiante **no momento em que ele entra em uma etapa** (e depois que suas ações automatizadas terminam), sem que alguém clique, se a pessoa corresponder a um conjunto de condições. Adicione uma rota, escolha a etapa de destino e defina uma ou mais **conditions** (condições) (por exemplo, campus, idade ou status de associação de uma pessoa). Campos de texto podem ser comparados exatamente ou com **contains** (contém), **starts with** (começa com) ou **ends with** (termina com). Uma rota sem condições corresponde a todos.
+
+Se as condições de uma rota não puderem ser verificadas por algum motivo, essa rota é tratada como não correspondente. O cartão permanece na etapa (ou segue outra rota que corresponda) em vez de ficar travado.
 
 :::info
 No painel, cada coluna de etapa mostra pequenas anotações descrevendo seu roteamento -- por exemplo, um rótulo de resultado ou "if matches" (se corresponder) seguido por uma seta para a etapa ou fluxo de trabalho de destino.
@@ -195,8 +201,8 @@ Executado regularmente -- diariamente, semanalmente, mensalmente ou anualmente -
 
 Para qualquer gatilho, você também pode definir:
 
-- A **entry step** (etapa de entrada) do novo cartão começa (padrão é a primeira etapa).
-- **Once per person** (Uma vez por pessoa) -- para que a mesma pessoa não seja adicionada ao fluxo de trabalho duas vezes pelo gatilho.
+- A **Starting step** (etapa inicial) em que o novo cartão cai (padrão é a primeira etapa).
+- **Only once per person** (Apenas uma vez por pessoa) -- para que a mesma pessoa não seja adicionada ao fluxo de trabalho duas vezes pelo gatilho.
 - **Active** (Ativo) -- ative ou desative o gatilho sem deletá-lo.
 
 :::tip
@@ -205,7 +211,7 @@ Emparelhe um gatilho **Form · Submitted** (Formulário · Enviado) com o modelo
 
 ## Meus Cartões
 
-Voluntários e equipe não precisam procurar em cada painel para encontrar seu trabalho. A página **My Cards** (Meus Cartões) (vinculada da página Fluxos de Trabalho) lista todos os cartões atribuídos ao usuário atual em todos os fluxos de trabalho. Clicar em um cartão abre o painel a que ele pertence.
+Voluntários e equipe não precisam procurar em cada painel para encontrar seu trabalho. A lista **My Cards** (Meus Cartões) na página **My Work** (Meu Trabalho) mostra todos os cartões atribuídos ao usuário atual em todos os fluxos de trabalho. Para chegar lá, clique em **My Cards** (Meus Cartões) no topo da página Fluxos de Trabalho, ou abra **Serving > My Work** (Serviço > Meu Trabalho) no menu Jump. Clicar em um cartão abre o painel a que ele pertence.
 
 ## Relatórios
 

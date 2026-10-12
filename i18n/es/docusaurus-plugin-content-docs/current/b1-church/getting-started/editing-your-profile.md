@@ -29,7 +29,7 @@ La pestaña de Perfil contiene la información que tu iglesia ve en tu registro 
 - **Nombre** -- Nombre, Segundo Nombre y Apellido.
 - **Contacto** -- Correo electrónico y fecha de nacimiento.
 - **Dirección** -- Dirección de calle, ciudad, estado y código postal.
-- **Teléfono** -- Números de móvil, casa y trabajo.
+- **Teléfono** -- Números de móvil, casa y trabajo. Si activas los recordatorios de texto en [Preferencias de notificación](./notification-preferences.md), se envían a tu número móvil.
 
 Edita cualquier campo y guarda tus cambios desde la barra en la parte inferior de la pantalla.
 

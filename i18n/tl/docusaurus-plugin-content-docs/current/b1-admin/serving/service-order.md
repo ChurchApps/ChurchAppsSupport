@@ -22,7 +22,7 @@ Tinutukoy ng service order ang pagkakasunod-sunod ng mga elemento sa inyong serv
 
 1. Pumunta sa **Serving** at piliin ang inyong ministry.
 2. I-click ang isang **plan type**, saka buksan ang isang partikular na **plano**.
-3. I-click ang tab na **Service Order** sa pahina ng detalye ng plano.
+3. Ang seksyong **Order of Service** ay nasa itaas ng pahina ng plano, sa itaas ng **Serving Team Assignments**.
 
 ## Pagbuo ng Inyong Service Order
 
@@ -38,8 +38,8 @@ Ang service order ay listahan ng mga item na nakaayos ayon sa pagkakasunod-sunod
 
 ## Pagdaragdag ng mga Item sa Service Order
 
-1. Sa tab na **Service Order**, i-click ang **Add Item**.
-2. Piliin ang uri ng elementong nais ninyong idagdag (halimbawa, isang kanta mula sa inyong library, isang custom na item, isang heading, o isang **External Item**).
+1. Sa seksyong **Order of Service**, i-click ang **Add** at piliin ang idadagdag: **Add Section** (isang heading na nagpapangkat ng mga item), **Item** (isang custom na item), **Song** (mula sa inyong library), o **Add From Lesson**. Maaari rin ninyong i-click nang direkta ang **Add Section**.
+2. Para magdagdag ng isang bagay sa loob ng seksyon, gamitin ang add menu sa header ng seksyong iyon at piliin ang **Song**, **Item**, o **External Item**.
 3. Ilagay ang mga detalye ng item, tulad ng pamagat at anumang tala.
 4. I-click ang **Save**.
 
@@ -49,7 +49,7 @@ Maaari kayong magdagdag ng mga kanta nang direkta mula sa inyong library ng [Mga
 
 ### Pag-import ng Maraming Item mula sa External Provider
 
-Kapag pinili ang **External Item**, magbubukas ang isang browser para sa inyong mga naka-link na lesson provider sa halip na form para sa iisang item. Mag-browse (o maghanap) sa nilalaman ng isang provider, at lagyan ng check ang kahon sa tabi ng bawat seksyon o aksyon na nais ninyo. Binibilang ng dialog kung ilan ang napili ninyo (halimbawa, "3 selected") -- i-click ang **Import (3)** para idagdag silang lahat sa service order nang sabay-sabay, sa halip na ulitin ang proseso ng pagdaragdag ng item para sa bawat isa.
+Kapag pinili ang **External Item** (o **Add From Lesson**), magbubukas ang isang browser para sa inyong mga naka-link na lesson provider sa halip na form para sa iisang item. Mag-browse (o maghanap) sa nilalaman ng isang provider, at lagyan ng check ang kahon sa tabi ng bawat seksyon o aksyon na nais ninyo. Binibilang ng dialog kung ilan ang napili ninyo (halimbawa, "3 selected") -- i-click ang **Import (3)** para idagdag silang lahat sa service order nang sabay-sabay, sa halip na ulitin ang proseso ng pagdaragdag ng item para sa bawat isa.
 
 :::tip
 Ito ang pinakamabilis na paraan para dalhin ang buong hanay ng mga seksyon at cue ng isang lesson sa isang service order nang minsanan, sa halip na isa-isang magdagdag ng bawat item.
@@ -108,8 +108,8 @@ Ang bulk select ay nalalapat lamang sa mga direktang anak ng isang seksyon, hind
 
 Kung may higit sa isang oras ng service ang inyong plano (halimbawa, service ng 8 a.m. at 10 a.m.), maaari ninyong piliin kung aling mga service dapat lumabas ang bawat item. Kapaki-pakinabang ito kapag ang isang anunsyo ay may kinalaman lamang sa isang service, o kapag inaawit ang isang kanta sa isang service ngunit hindi sa isa pa.
 
-1. Magbukas ng planong may dalawa o higit pang oras ng service na nakatakda sa card na **Times** sa tab na **Assignments**.
-2. Sa tab na **Service Order**, i-click ang isang item para i-edit ito.
+1. Magbukas ng planong may dalawa o higit pang oras ng service. I-click ang **Times** sa seksyong **Serving Team Assignments** para makita o idagdag ang mga ito.
+2. Sa seksyong **Order of Service**, i-click ang isang item para i-edit ito.
 3. Sa ilalim ng **Include in Services**, makikita ninyo ang checkbox para sa bawat oras ng service, na may label na oras.
 4. I-uncheck ang anumang service kung saan dapat laktawan ang item.
 5. I-click ang **Save**.
@@ -117,7 +117,7 @@ Kung may higit sa isang oras ng service ang inyong plano (halimbawa, service ng 
 Bilang default, kasama ang bawat item sa bawat service. Ang mga hindi isinamang oras ng service ay itinatago kapag ipinrint ninyo ang plano na naka-filter sa service na iyon, kaya bawat service ay nakakatanggap ng malinis na run sheet na may mga kaugnay na item lamang.
 
 :::tip
-Lumalabas lamang ang seksyong **Include in Services** kapag may higit sa isang oras ng service ang plano. Kung isang service lamang ang nakikita ninyo, gamitin muna ang card na **Times** sa tab na **Assignments** ng plano para magdagdag ng karagdagang mga service.
+Lumalabas lamang ang seksyong **Include in Services** kapag may higit sa isang oras ng service ang plano. Kung isang service lamang ang nakikita ninyo, i-click muna ang **Times** sa seksyong **Serving Team Assignments** ng plano para magdagdag ng karagdagang mga service.
 :::
 
 ### Pagpapakita ng Ibang Posisyon sa Bawat Service
@@ -126,10 +126,10 @@ Kung may nakatakdang **Position** ang isang item, ang bawat naka-check na oras n
 
 ## Pagbabahagi ng Service Order
 
-Kapag kumpleto na ang inyong service order, maaari ninyong i-print ang buong plano (kasama ang service order) mula sa pahina ng detalye ng plano. Nagbibigay ito sa inyong team ng kumpletong buod ng service, na may heading ng pangalan ng inyong simbahan at pangalan ng plano. Kapag naka-on ang **Show Volunteer Names** para sa print, ang bawat header ng seksyon ay ipi-print din kasama ang posisyon ng nakatalagang boluntaryo sa tabi nito, para makita ng inyong team kung sino ang sumasaklaw sa seksyong iyon nang hindi binubuksan ang app. Kung na-override ang posisyon ng isang heading para sa mga partikular na service, ipinapakita ng print ang bawat natatanging pangalan ng posisyon na nalulutas nito sa mga service ng planong iyon (halimbawa, "Worship Team / Youth Team").
+Kapag kumpleto na ang inyong service order, maaari ninyong i-print ang buong plano (kasama ang service order) gamit ang button na **Print** sa itaas ng pahina ng plano. Nagbibigay ito sa inyong team ng kumpletong buod ng service, na may heading ng pangalan ng inyong simbahan at pangalan ng plano. Kapag naka-on ang **Show Volunteer Names** para sa print, ang bawat header ng seksyon ay ipi-print din kasama ang posisyon ng nakatalagang boluntaryo sa tabi nito, para makita ng inyong team kung sino ang sumasaklaw sa seksyong iyon nang hindi binubuksan ang app. Kung na-override ang posisyon ng isang heading para sa mga partikular na service, ipinapakita ng print ang bawat natatanging pangalan ng posisyon na nalulutas nito sa mga service ng planong iyon (halimbawa, "Worship Team / Youth Team").
 
 ## Mga Susunod na Hakbang
 
 - Pamahalaan ang inyong repertoire sa pagsamba sa pahina ng [Mga Kanta](./songs.md)
-- Magtalaga ng mga boluntaryo sa service sa tab na Assignments ng [Mga Plano](./plans.md)
+- Magtalaga ng mga boluntaryo sa service sa seksyong [Serving Team Assignments](./plans.md#assigning-team-members) ng plano
 - Gumawa ng [Mga Gawain](./tasks.md) para sa anumang follow-up na kaugnay ng service

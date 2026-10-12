@@ -21,7 +21,7 @@ La funzionalità Stampa Directory genera una directory dei membri formattata e s
 ## Apertura della Directory di Stampa
 
 1. Vai a **Persone** in B1 Admin.
-2. Fai clic sull'**icona di stampa** (icona della stampante) nella barra degli strumenti in alto della scheda dei risultati Persone. Appare accanto al pulsante Esporta.
+2. Fai clic su **Stampa Directory** nell'intestazione della pagina Persone.
 3. La Directory di Stampa si apre in una nuova scheda del browser e inizia a caricare i dati della tua directory.
 4. Dopo circa 1,5 secondi, la finestra di dialogo di stampa del tuo browser apparirà automaticamente.
 
@@ -33,13 +33,13 @@ La directory si apre in una scheda separata in modo da poterla stampare senza la
 
 La directory stampata include tutti i **membri attivi** della tua chiesa. Specificamente:
 
-- Le persone con uno stato di iscrizione **Inattivo** o **Visitatore** sono automaticamente escluse.
+- Le persone con uno stato di iscrizione **Inattivo**, **Visitatore** o **Deceduto** sono automaticamente escluse.
 - Le persone che hanno **rinunciato** alla directory sono escluse.
 - Tutti gli altri sono raggruppati per **nucleo familiare**.
 
 ### Stampa Solo dei Tuoi Risultati di Ricerca
 
-Dopo aver eseguito una ricerca sulla pagina Persone -- una ricerca veloce, una [Ricerca Avanzata](./searching-people.md#advanced-search), un [Elenco Salvato](./lists.md) o una [Ricerca IA](./ai-search.md) -- l'icona di stampa cambia in **Stampa Risultati**. Facendo clic su di esso stampa una directory solo delle persone nei tuoi risultati invece dell'intera chiesa, utilizzando lo stesso layout.
+Dopo aver eseguito una ricerca sulla pagina Persone -- una ricerca veloce, una [Ricerca Avanzata](./searching-people.md#advanced-search), un [Elenco Salvato](./lists.md) o una [Ricerca IA](./ai-search.md) -- il pulsante **Stampa Directory** cambia in **Stampa Risultati**. Facendo clic su di esso stampa una directory solo delle persone nei tuoi risultati invece dell'intera chiesa, utilizzando lo stesso layout.
 
 Quando stampi i risultati della ricerca, il filtro dello stato di iscrizione sopra non si applica: tutti coloro che hai cercato sono inclusi, anche i Visitatori o le persone Inattive. Le persone che hanno rinunciato alla directory sono comunque escluse. Per tornare alla stampa della directory completa, cancella prima la tua ricerca.
 

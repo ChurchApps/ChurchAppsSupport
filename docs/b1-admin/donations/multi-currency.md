@@ -61,8 +61,8 @@ When a member gives online through Stripe:
 
 To record a cash or check donation in a different currency:
 
-1. Navigate to **Donations** in B1 Admin
-2. Click **Add Donation**
+1. Navigate to **Donations > Batches** in B1 Admin and open the batch
+2. Click **Add Donation** at the top of the batch page
 3. Select the currency from the currency dropdown
 4. Enter the amount in that currency
 5. Complete the rest of the donation details

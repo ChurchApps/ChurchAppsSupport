@@ -22,10 +22,10 @@ Bulk Import 페이지를 사용하면 YouTube 또는 Vimeo에서 동영상을 �
 ## 소스 선택
 
 1. B1 Admin에서 B1 Admin의 왼쪽 상단에 있는 검색 모음인 [Jump 메뉴](../introduction.md#getting-around-with-the-jump-menu)를 열고 **Sermons**을 확장한 다음 **Sermons**을 클릭하세요. **Add Sermon**을 클릭하고 메뉴에서 **Bulk Import**를 선택하세요.
-2. 두 개의 클릭 가능한 카드가 표시됩니다:
-   - **YouTube**(빨강) -- YouTube 채널에서 동영상을 가져오기
-   - **Vimeo**(파랑) -- Vimeo 계정에서 동영상을 가져오기
-3. 설교가 호스팅되는 플랫폼의 카드를 클릭하세요.
+2. **Choose Import Source** 아래에 두 가지 옵션이 표시됩니다:
+   - **YouTube** -- YouTube 채널에서 동영상을 가져오기
+   - **Vimeo** -- Vimeo 계정에서 동영상을 가져오기
+3. 설교가 호스팅되는 플랫폼의 옵션을 클릭하세요(또는 설명 아래의 **Import from YouTube** / **Import from Vimeo**를 클릭하세요). 소스 선택 화면으로 돌아가려면 페이지 상단의 **Back**을 클릭하세요.
 
 :::tip
 언제든지 돌아가서 소스를 바꿀 수 있습니다. 두 플랫폼에 동영상이 있으면 말입니다.

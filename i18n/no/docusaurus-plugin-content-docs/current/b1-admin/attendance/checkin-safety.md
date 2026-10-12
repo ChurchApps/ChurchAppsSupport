@@ -21,7 +21,7 @@ B1 har en rekke sikkerhetsfunksjoner for barn ved innsjekking: kapasitetsgrenser
 
 ## Romkapasitet og stenging av rom
 
-Hvert innsjekkingsrom (gruppe) kan ha sine egne grenser. Åpne gruppen, klikk på **blyantikonet** for å redigere innstillingene og finn seksjonen **Innsjekkingskapasitet**:
+Hvert innsjekkingsrom (gruppe) kan ha sine egne grenser. Åpne gruppen, klikk på **Rediger** for å redigere innstillingene og finn seksjonen **Innsjekkingskapasitet**:
 
 - **Kapasitet** -- Det høyeste antallet personer som kan være sjekket inn i rommet samtidig. Når rommet er fullt, blokkeres innsjekking dit, og kiosken viser navnet på det fulle rommet.
 - **Gjestekapasitet** -- En valgfri, egen grense for hvor mange gjester rommet kan romme.

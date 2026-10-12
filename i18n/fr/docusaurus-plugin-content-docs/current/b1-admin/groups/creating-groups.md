@@ -21,16 +21,16 @@ Créer un groupe dans B1 Admin est simple. Vous configurez une catégorie, nomme
 ## Ajouter un nouveau groupe
 
 1. Ouvrez le [menu de saut](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche de B1 Admin), développez **People**, et cliquez sur **Groups**.
-2. Cliquez sur **Add Group** et entrez un **Category Name**. Les catégories vous aident à organiser les groupes associés ensemble (par exemple, « Small Groups », « Ministries » ou « Committees »). Si une catégorie existe déjà, vous pouvez la sélectionner dans la liste.
-3. Entrez le **Group Name**.
-4. Cliquez sur **Add**. Votre nouveau groupe apparaîtra dans la liste sous la catégorie choisie.
+2. Cliquez sur **Add Group** dans l'en-tête de la page. Un formulaire **New Group** s'ouvre sous la liste. Entrez un **Category Name**. Les catégories vous aident à organiser les groupes associés ensemble (par exemple, « Small Groups », « Ministries » ou « Committees »). Si une catégorie existe déjà, vous pouvez la sélectionner dans la liste.
+3. Entrez le **Name** du groupe.
+4. Cliquez sur **Add**. Votre nouveau groupe apparaîtra dans la liste, avec sa catégorie affichée sous son nom.
 
 ## Configurer les paramètres du groupe
 
 Une fois votre groupe créé, vous pouvez remplir d'autres détails :
 
 1. Cliquez sur le **nom du groupe** dans la liste pour l'ouvrir.
-2. Cliquez sur l'**icône crayon** pour modifier les paramètres du groupe.
+2. Cliquez sur le bouton **Edit** à gauche de la page du groupe, sous les détails du groupe.
 3. Configurez les options suivantes :
    - **Description** -- Un bref résumé du groupe. C'est visible pour les membres.
    - **Meeting Times** -- Quand le groupe se réunit généralement (par exemple, « Wednesdays at 7 PM »).
@@ -58,7 +58,7 @@ Si vous désactivez à la fois Discussions et Announcements, l'onglet Messages e
 
 Vous lancez une nouvelle session d'une classe ou d'un ministère récurrent ? Au lieu de réentrer tous les paramètres, dupliquez un groupe existant :
 
-1. Ouvrez le groupe et cliquez sur l'**icône duplicate** dans la bannière du groupe (à côté de Edit).
+1. Ouvrez le groupe et cliquez sur **Duplicate** (sous le bouton **Edit** à gauche de la page du groupe).
 2. Confirmez la duplication.
 
 La copie reprend les paramètres de l'original -- catégorie, description, heure/lieu de réunion, politique d'adhésion, labels et campus -- mais **pas** ses membres. Le nouveau groupe est nommé d'après l'original avec « (Copy) » ajouté ; renommez-le depuis les paramètres du groupe.
@@ -67,10 +67,10 @@ La copie reprend les paramètres de l'original -- catégorie, description, heure
 
 Quand un groupe n'est plus actif mais que vous voulez conserver son historique au lieu de le supprimer :
 
-1. Ouvrez le groupe et cliquez sur l'**icône crayon** pour modifier ses paramètres.
+1. Ouvrez le groupe et cliquez sur **Edit** pour modifier ses paramètres.
 2. Cliquez sur **Archive** et confirmez.
 
-Les groupes archivés disparaissent de la liste principale des groupes. Pour en trouver un à nouveau, activez la bascule **Show archived** en haut de la page Groups, puis cliquez sur **Restore** à côté du groupe pour le ramener.
+Les groupes archivés disparaissent de la liste principale des groupes. Pour en trouver un à nouveau, cliquez sur le bouton **Show archived** à côté des boutons de catégories en haut de la page Groups, puis cliquez sur **Restore** à côté du groupe pour le ramener.
 
 :::info
 Archiver un groupe ne supprime pas ses membres, son historique d'attendance ou ses événements de calendrier -- il cache juste le groupe de la liste par défaut jusqu'à ce que vous le restauriez.
@@ -80,11 +80,11 @@ Archiver un groupe ne supprime pas ses membres, son historique d'attendance ou s
 
 Après avoir créé et configuré votre groupe, vous êtes prêt à :
 
-- **Ajouter des membres** -- Recherchez des personnes et ajoutez-les au groupe. Utilisez l'icône de clé verte pour désigner les leaders de groupe. Voir [Group Members](./group-members.md).
+- **Ajouter des membres** -- Recherchez des personnes et ajoutez-les au groupe. Utilisez l'icône en forme d'étoile (**Nommer responsable**) pour désigner les leaders de groupe. Voir [Group Members](./group-members.md).
 - **Configurer un calendrier** -- Créez des événements et des réunions récurrentes pour le groupe. Voir [Group Calendar](./group-calendar.md).
 - **Communiquer** -- Envoyez des messages à tous les membres du groupe directement depuis la page du groupe.
-- **Exporter les données** -- Cliquez sur l'icône de téléchargement pour exporter la liste des membres de votre groupe.
+- **Exporter les données** -- Cliquez sur **Export** au-dessus de la liste des membres du groupe pour la télécharger.
 
 :::info
-Tous vos groupes d'église sont organisés par catégories sur la page principale des groupes. Vous pouvez toujours réorganiser ou renommer les catégories à mesure que votre église grandit.
+Chaque groupe appartient à une catégorie, et la page principale des groupes vous permet de filtrer la liste par catégorie. Vous pouvez toujours réorganiser ou renommer les catégories à mesure que votre église grandit.
 :::

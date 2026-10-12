@@ -6,7 +6,7 @@ title: "Event Reminders"
 
 <div class="article-intro">
 
-Event reminders automatically notify the right people before an event happens -- for example, "Don't miss it! The healthcare workshop starts tomorrow at 9:00 AM." You configure a reminder once on the event, and B1 sends it out on schedule through push notifications and email. Members can control which reminders they receive from their own [Notification Preferences](../../b1-church/getting-started/notification-preferences).
+Event reminders automatically notify the right people before an event happens -- for example, "Don't miss it! The healthcare workshop starts tomorrow at 9:00 AM." You configure a reminder once on the event, and B1 sends it out on schedule through push notifications, email, and, if your church has texting set up, text messages. Members can control which reminders they receive from their own [Notification Preferences](../../b1-church/getting-started/notification-preferences).
 
 </div>
 
@@ -31,7 +31,7 @@ You configure reminders in the **Reminders** section of the event.
 3. Set the **Time of day** the reminder should go out (default is **9:00 AM**, in your church's local time zone).
 4. Choose **Who** should be reminded (see [Who Gets Reminded](#who-gets-reminded) below).
 5. Optionally add a **Message**. Leave it blank to use the default wording, or write your own -- you can include `{{eventTitle}}` and it will be replaced with the event's name.
-6. Choose the **Channels**: **Push** notification, **Email**, or both.
+6. Choose the **Channels**: **Push** notification, **Email**, and, if your church has a [texting provider](../settings/church-settings.md#texting) connected, **Text**.
 7. Save the event.
 
 As you make changes, a **live preview** shows roughly how many people will be reminded, how many attendees can't be reached, and the next scheduled send times -- so you can confirm the reminder looks right before you save.
@@ -60,18 +60,28 @@ Guests added by name only (without a linked person record) can't receive a remin
 Reminders are sent **push first, with email as a fallback**. If a member has push notifications enabled, they'll get a push; if not, they'll get an email instead. Members choose which channels they want per notification type in their [Notification Preferences](../../b1-church/getting-started/notification-preferences).
 :::
 
+## Text Reminders
+
+The **Text** channel only appears when your church has a texting provider connected. Texts go out through your church's texting provider, and each text may cost your church. They are sent in addition to any push or email reminder, and only to people who:
+
+- Turned on **Text messages** in their [Notification Preferences](../../b1-church/getting-started/notification-preferences), and
+- Have a mobile number on their profile.
+
+Each text starts with your church's name, is kept to a single text message, and ends with "Reply STOP to opt out." Anyone who replies STOP stops receiving texts from your church. For STOP replies to reach B1, paste the **Inbound (STOP) webhook URL** from your [texting settings](../settings/church-settings.md#texting) into your provider's inbound message webhook.
+
 ## What Members Can Control
 
 Reminders always respect each member's [Notification Preferences](../../b1-church/getting-started/notification-preferences). A member can:
 
-- Turn **Event Reminders** off for push or email while keeping other notifications on.
+- Turn **Event Reminders** off for push, email, or text while keeping other notifications on.
+- Turn text reminders on or off with **Text messages**.
 - Set **quiet hours** so non-urgent notifications wait until a reasonable time.
 
 You can't override a member's choice to opt out of event reminders -- this keeps B1 compliant with anti-spam rules and keeps members in control of their inbox.
 
 ## Serving Reminders
 
-Volunteers scheduled on a plan receive a separate **serving reminder** with the plan details and, when they haven't responded yet, **Accept / Decline** buttons right in the email. Those reminders are configured on the plan type rather than on a calendar event -- see [Sunday Volunteers](../guides/sunday-volunteers) for how volunteer scheduling and reminders work.
+Volunteers scheduled on a plan receive a separate **serving reminder** with the plan details and, when they haven't responded yet, **Accept / Decline** buttons right in the email. Those reminders are configured on the plan type rather than on a calendar event, and can also go out by text -- see [Volunteer Reminders](../serving/plans#volunteer-reminders) and [Sunday Volunteers](../guides/sunday-volunteers) for how volunteer scheduling and reminders work.
 
 ## Next Steps
 

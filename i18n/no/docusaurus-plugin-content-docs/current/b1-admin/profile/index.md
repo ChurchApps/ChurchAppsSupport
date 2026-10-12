@@ -6,18 +6,35 @@ title: "Profil"
 
 <div class="article-intro">
 
-Profil delen lar deg administrere personlige konto innstillinger i ChurchApps. Profilen ditt er delt på tvers av alle ChurchApps verktøy, slik at endringer du gjør her gjelder overalt.
+Profilseksjonen lar deg administrere dine personlige kontoinnstillinger i ChurchApps. Profilen din deles på tvers av alle ChurchApps-verktøy, så endringer du gjør her gjelder overalt -- fra B1 Admin til B1 Mobile-appen.
 
 </div>
 
 ## Hva du kan gjøre
 
-Fra profil delen kan du:
+I profilseksjonen kan du:
 
-- Oppdater navn og e-post
-- Endre passord
-- Bytte temaer
-- Administrere tilkoblede enheter
-- Vise tilknyttede kontoer
-- Godkjenn profil endring forespørsler
+- **Oppdatere navn og e-post** -- Hold kontaktinformasjonen din oppdatert.
+- **Endre passord** -- Angi et nytt passord for kontoen din.
+- **Bytte tema** -- Veksle mellom lys og mørk modus fra brukermenyen (klikk på profilbildet ditt øverst til høyre).
+- **Administrere tilkoblede enheter** -- Se og styr hvilke ChurchAppsPlayer-enheter som er koblet til kontoen din.
+- **Vise tilknyttede kontoer** -- Se og administrer eksterne tjenester som er koblet til ChurchApps-kontoen din.
+- **Godkjenne forespørsler om profilendringer** -- Gå gjennom og bruk oppdateringer som medlemmer har sendt inn.
 
+## Underseksjoner for profil
+
+Profilområdet har følgende sider:
+
+1. **[Administrere profilen din](./managing-profile.md)** -- Rediger personlig informasjon, endre passord, administrer tilknyttede kontoer, juster temainnstillinger og håndter sletting av konto.
+2. **[Godkjenne profilendringer](./approving-profile-changes.md)** -- Gå gjennom og godkjenn forespørsler om profiloppdateringer som medlemmer har sendt inn via B1 Mobile.
+3. **[Administrere enheter](./devices.md)** -- Se, legg til og administrer ChurchAppsPlayer-enheter som er koblet til kontoen din.
+
+:::tip
+Hold e-postadressen din oppdatert. Den brukes til kontogjenoppretting og viktige varsler fra menigheten din.
+:::
+
+## Neste steg
+
+- [Administrere profilen din](./managing-profile.md) -- Rediger dine personlige innstillinger
+- [Godkjenne profilendringer](./approving-profile-changes.md) -- Gå gjennom forespørsler om profilendringer fra medlemmer
+- [Administrere enheter](./devices.md) -- Administrer tilkoblede enheter

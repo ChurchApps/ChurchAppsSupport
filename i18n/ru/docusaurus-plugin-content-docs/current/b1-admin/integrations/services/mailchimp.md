@@ -37,7 +37,7 @@ title: "Mailchimp"
 
 ## Установка
 
-1. В B1Admin перейдите к **Settings → Developer → Webhooks → Add Webhook**.
+1. В B1Admin перейдите к **Settings → Developer → Webhooks → New Webhook**.
 2. Установите **Connector Type** на **Mailchimp**.
 3. Вставьте ваш **Mailchimp API Key** и **Audience ID**. Ключ хранится зашифрованным и больше никогда не показывается.
 4. Соответствующие события предварительно выбраны; отмените выбор тех, которые вы не хотите (например, оставьте события людей, но пропустите теги групп).

@@ -60,7 +60,7 @@ Follow the [Live Streaming](../sermons/live-streaming.md) guide to:
 
 1. Enter your YouTube Channel ID in the streaming settings
 2. Configure your recurring service schedule (e.g., Sundays at 10:00 AM)
-3. Customize the streaming page tabs: Chat, Prayer requests, and custom links
+3. Customize the streaming page tabs (Chat, Prayer requests, and custom links) on the **Sermons > Settings** page
 
 :::info
 When you go live on YouTube, the B1 streaming page automatically picks up the stream. No extra steps needed on Sunday morning.

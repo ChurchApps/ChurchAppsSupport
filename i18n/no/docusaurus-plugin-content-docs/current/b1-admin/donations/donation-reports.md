@@ -20,9 +20,9 @@ B1 Admin gir deg flere måter å se på og analysere menighetens givingdata. Giv
 
 ## Givingdashbord
 
-Givingdashbordet er fanen **Dashbord** på **Oppsummering**-siden, som er den første siden du ser når du åpner **Donasjoner**-delen.
+Givingdashbordet er visningen **Dashbord** på **Oppsummering**-siden, som er den første siden du ser når du åpner **Donasjoner**-delen.
 
-1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **Donasjoner** og klikk på **Oppsummering**. **Oppsummering**-siden åpnes på fanen **Dashbord**.
+1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **Donasjoner** og klikk på **Oppsummering**. **Oppsummering**-siden åpnes i visningen **Dashbord**. Bryteren **Visning** øverst til høyre veksler mellom **Dashbord** og **Givere som har sluttet å gi**.
 2. Bruk bryteren **Ukentlig**, **Månedlig** og **Kvartalsvis** over rapporten for å velge hvordan givingen grupperes.
 3. I panelet **Filtrer rapport** angir du **startdato** og **sluttdato** (som standard det siste året frem til i går) og kan velge et **fond**, og klikker deretter på **Kjør rapport**. Rapporten kjøres automatisk med standardverdiene når siden åpnes.
 4. Fire **KPI-kort** viser givingtallene for det valgte tidsrommet:
@@ -41,7 +41,7 @@ Dashbordet viser samlede givingdata. Det inneholder ikke navn på enkeltgivere. 
 
 ## Givere som har sluttet å gi
 
-Fanen **Givere som har sluttet å gi** ved siden av fanen **Dashbord** viser personer som ga i én periode, men ikke siden. Som standard sammenlignes fjorårets kalenderår med inneværende år frem til i dag. Endre en av datoperiodene for å utvide eller snevre inn søket. Hver rad viser personen, datoen for siste gave og totalbeløpet for den tidligere perioden, og **Nedlastingsalternativer > Oppsummering** laster ned listen som en CSV til bruk i en oppfølgingsutsendelse eller ringeliste.
+Velg **Givere som har sluttet å gi** i bryteren **Visning** for å se personer som ga i én periode, men ikke siden. Som standard sammenlignes fjorårets kalenderår med inneværende år frem til i dag. Endre en av datoperiodene for å utvide eller snevre inn søket. Hver rad viser personen, datoen for siste gave og totalbeløpet for den tidligere perioden, og **Nedlastingsalternativer > Oppsummering** laster ned listen som en CSV til bruk i en oppfølgingsutsendelse eller ringeliste.
 
 ## Se detaljer på giver-nivå
 
@@ -49,17 +49,16 @@ For en oversikt over hvem som ga, hvor mye og til hvilket fond:
 
 1. Gå til **Donasjoner > Gavebunter**.
 2. Klikk på **navnet på en gavebunt** for å åpne den.
-3. Detaljsiden for gavebunten viser hver donasjon med giverens navn, beløp, fond, dato og betalingsmetode.
-4. Klikk på **giverens navn** for å se hvor mange ganger vedkommende har gitt og hvor mye hver gang.
-5. Klikk på en **donasjons-ID** for å åpne et sidepanel med alle detaljer om den enkelte donasjonen.
-6. Klikk på **Last ned** for å eksportere en CSV med all gaver- og giverinformasjon for den gavebunten.
+3. Detaljsiden for gavebunten viser hver donasjon med betalingsmetode (og sjekknummer eller kortsiffer), giverens navn, dato, notater og beløp, med en totalsum nederst.
+4. Klikk på **Rediger** på en donasjonsrad for å åpne alle detaljer om den enkelte donasjonen, inkludert fondet.
+5. Klikk på **Eksporter** over listen for å laste ned en CSV med all giver- og donasjonsinformasjon for den gavebunten.
 
 ## Donasjonsoppsummering
 
 Donasjonsrapportering er bygget rett inn i Donasjoner-delen -- Oppsummering-siden fungerer som donasjonsoppsummeringen din:
 
 1. Velg **Donasjoner > Oppsummering** i Jump-menyen.
-2. På fanen **Dashbord** angir du **startdato** og **sluttdato** i panelet **Filtrer rapport** og klikker på **Kjør rapport**.
+2. I visningen **Dashbord** angir du **startdato** og **sluttdato** i panelet **Filtrer rapport** og klikker på **Kjør rapport**.
 3. Klikk på **Nedlastingsalternativer** og velg **Oppsummering** for å eksportere rapporten som en CSV-fil.
 
 ## Eksportere data

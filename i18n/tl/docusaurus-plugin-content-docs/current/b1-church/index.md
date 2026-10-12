@@ -18,7 +18,7 @@ Kapag binisita ng mga miyembro ang inyong B1.church site, makikita nila ang pamp
 - **Mga Grupo** -- Tingnan ang mga grupong kinabibilangan mo, tingnan ang mga miyembro ng grupo, sumali sa mga usapan, at subaybayan ang attendance.
 - **Pagbibigay** -- Magbigay ng donasyon sa iyong simbahan online at tingnan ang iyong kasaysayan ng pagbibigay.
 - **Mga Event** -- Mag-browse ng mga paparating na event at iparehistro ang iyong sarili at pamilya.
-- **Pagseserbisyo** -- Tingnan ang mga plano ng serbisyo, ang iyong mga posisyon bilang boluntaryo, at mag-sign up para sa mga bukas na pagkakataong magboluntaryo.
+- **Pagseserbisyo** -- Tingnan ang mga plano ng serbisyo, ang iyong mga posisyon bilang boluntaryo, at mag-sign up para sa mga bukas na pagkakataong magboluntaryo. Piliin na makatanggap ng mga paalala sa paglilingkod at event sa pamamagitan ng text sa iyong [mga kagustuhan sa notipikasyon](./getting-started/notification-preferences.md) (mag-reply ng STOP anumang oras para huminto).
 - **Mga Plano** -- Tingnan ang mga paparating na plano ng serbisyo, ang mga posisyong naatas sa iyo, at i-access ang mga detalye ng awit at order of service.
 - **Check-In** -- I-check in ang iyong sarili at ang mga kasama mo sa sambahayan para sa mga serbisyo at event. Ang mga bisita ay maaaring magparehistro sa pamamagitan ng QR code.
 - **Direktoryo ng Komunidad** -- Mag-browse sa direktoryo ng mga miyembro ng inyong simbahan, tingnan ang mga profile, at magpadala ng direktang mensahe. Kontrolin kung sino ang makakakita ng iyong contact info mula sa [tab na Privacy ng iyong profile](./getting-started/editing-your-profile.md#privacy-tab).

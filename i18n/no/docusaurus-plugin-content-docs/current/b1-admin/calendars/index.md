@@ -13,13 +13,13 @@ I Kalendere-delen i B1 Admin kan du lage kuraterte kalendere for menigheten din 
 ## Vise kalendrene dine
 
 1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Kalendere** og klikk på **Kalendere**.
-2. Kalendersiden viser alle kalendrene dine med navn og status.
-3. Hver kalender viser også gruppene som er knyttet til den.
+2. Kalendersiden viser alle kalendrene dine i en tabell med navn og status. Bruk feltet **Finn en kalender** for å filtrere listen.
+3. Hver rad har en lenke **Administrer arrangementer** for å åpne kalenderen og en lenke **Rediger** for å gi den nytt navn eller slette den.
 
 ## Hva du kan gjøre
 
-- **Legge til en ny kalender** -- Klikk på legg til-knappen for å opprette en kalender for en bestemt tjeneste, en type arrangement eller et formål. Se [Opprette kalendere](creating-calendars) for trinnvise instruksjoner.
-- **Redigere en kalender** -- Klikk på en kalender for å åpne den og bestemme hvilke grupper som skal inngå.
+- **Legge til en ny kalender** -- Klikk på **Legg til kalender** øverst på siden for å opprette en kalender for en bestemt tjeneste, en type arrangement eller et formål. Se [Opprette kalendere](creating-calendars) for trinnvise instruksjoner.
+- **Redigere en kalender** -- Klikk på **Administrer arrangementer** på en kalender for å åpne den og bestemme hvilke grupper som skal inngå.
 - **Publisere kalendere** -- Kalendere kan vises på B1.church-nettstedet ditt, slik at besøkende kan se kommende arrangementer i menigheten.
 - **Lage kuraterte kalendere** -- Samle arrangementer fra flere grupper i én kalendervisning for en helhetlig oversikt over alt som skjer i menigheten. Se [Kuratert kalender](curated-calendar) for mer informasjon.
 - **Administrere rom og ressurser** -- Hold oversikt over lokaler og utstyr som kan bookes, og håndter godkjenningsforespørsler. Se [Rom og ressurser](rooms-resources) for mer informasjon.

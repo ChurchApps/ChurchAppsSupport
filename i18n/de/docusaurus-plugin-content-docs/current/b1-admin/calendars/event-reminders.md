@@ -5,7 +5,7 @@ title: "Erinnerungen zu Veranstaltungen"
 
 <div class="article-intro">
 
-Veranstaltungserinnerungen benachrichtigen automatisch die richtigen Personen, bevor eine Veranstaltung stattfindet -- zum Beispiel: „Nicht verpassen! Der Workshop für Pflegekräfte beginnt morgen um 9:00 Uhr." Sie richten eine Erinnerung einmal für die Veranstaltung ein, und B1 versendet sie planmäßig über Push-Benachrichtigungen und E-Mail. Mitglieder können in ihren eigenen [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences) festlegen, welche Erinnerungen sie erhalten.
+Veranstaltungserinnerungen benachrichtigen automatisch die richtigen Personen, bevor eine Veranstaltung stattfindet -- zum Beispiel: „Nicht verpassen! Der Workshop für Pflegekräfte beginnt morgen um 9:00 Uhr." Sie richten eine Erinnerung einmal für die Veranstaltung ein, und B1 versendet sie planmäßig über Push-Benachrichtigungen, E-Mail und, wenn Ihre Gemeinde den Textversand eingerichtet hat, Textnachrichten. Mitglieder können in ihren eigenen [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences) festlegen, welche Erinnerungen sie erhalten.
 
 </div>
 
@@ -30,7 +30,7 @@ Erinnerungen konfigurieren Sie im Bereich **Erinnerungen** der Veranstaltung.
 3. Legen Sie die **Tageszeit** fest, zu der die Erinnerung verschickt werden soll (Standard ist **9:00 Uhr**, in der lokalen Zeitzone Ihrer Gemeinde).
 4. Wählen Sie, **wer** erinnert werden soll (siehe [Wer wird erinnert](#who-gets-reminded) unten).
 5. Fügen Sie optional eine **Nachricht** hinzu. Lassen Sie sie leer, um den Standardtext zu verwenden, oder schreiben Sie Ihren eigenen -- Sie können `{{eventTitle}}` einfügen, was durch den Namen der Veranstaltung ersetzt wird.
-6. Wählen Sie die **Kanäle**: **Push**-Benachrichtigung, **E-Mail** oder beides.
+6. Wählen Sie die **Kanäle**: **Push**-Benachrichtigung, **E-Mail** und, wenn Ihre Gemeinde einen [Anbieter für Textnachrichten](../settings/church-settings.md#texting) verbunden hat, **Text**.
 7. Speichern Sie die Veranstaltung.
 
 Während Sie Änderungen vornehmen, zeigt eine **Live-Vorschau** ungefähr, wie viele Personen erinnert werden, wie viele Teilnehmende nicht erreicht werden können und die nächsten geplanten Versandzeiten -- so können Sie vor dem Speichern prüfen, ob die Erinnerung stimmt.
@@ -59,18 +59,28 @@ Gäste, die nur namentlich hinzugefügt wurden (ohne verknüpften Personendatens
 Erinnerungen werden **zuerst per Push gesendet, mit E-Mail als Rückfalloption**. Wenn ein Mitglied Push-Benachrichtigungen aktiviert hat, erhält es eine Push-Nachricht; andernfalls erhält es stattdessen eine E-Mail. Mitglieder wählen in ihren [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences) pro Benachrichtigungstyp aus, welche Kanäle sie wünschen.
 :::
 
+## Textnachrichten als Erinnerung
+
+Der Kanal **Text** erscheint nur, wenn Ihre Gemeinde einen Anbieter für Textnachrichten verbunden hat. Textnachrichten werden über den Anbieter Ihrer Gemeinde versendet, und jede Nachricht kann Ihre Gemeinde etwas kosten. Sie werden zusätzlich zu allen Push- oder E-Mail-Erinnerungen gesendet, und nur an Personen, die:
+
+- in ihren [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences) **Textnachrichten** aktiviert haben und
+- eine Mobilnummer in ihrem Profil haben.
+
+Jede Nachricht beginnt mit dem Namen Ihrer Gemeinde, bleibt bei einer einzigen Textnachricht und endet mit "Reply STOP to opt out." Wer mit STOP antwortet, erhält keine Texte mehr von Ihrer Gemeinde. Damit STOP-Antworten B1 erreichen, fügen Sie die **Webhook-URL für eingehende STOP-Nachrichten** aus Ihren [Texteinstellungen](../settings/church-settings.md#texting) in den Webhook für eingehende Nachrichten Ihres Anbieters ein.
+
 ## Was Mitglieder steuern können
 
 Erinnerungen berücksichtigen immer die [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences) des jeweiligen Mitglieds. Ein Mitglied kann:
 
-- **Veranstaltungserinnerungen** für Push oder E-Mail deaktivieren und andere Benachrichtigungen aktiviert lassen.
+- **Veranstaltungserinnerungen** für Push, E-Mail oder Text deaktivieren und andere Benachrichtigungen aktiviert lassen.
+- Texterinnerungen mit **Textnachrichten** ein- oder ausschalten.
 - **Ruhezeiten** festlegen, damit nicht dringende Benachrichtigungen bis zu einer angemessenen Zeit warten.
 
 Sie können die Entscheidung eines Mitglieds, Veranstaltungserinnerungen abzubestellen, nicht übergehen -- so bleibt B1 konform mit den Anti-Spam-Vorschriften und Mitglieder behalten die Kontrolle über ihren Posteingang.
 
 ## Erinnerungen für Dienste
 
-Freiwillige, die in einem Plan eingeteilt sind, erhalten eine separate **Diensterinnerung** mit den Plandetails und, sofern sie noch nicht geantwortet haben, den Schaltflächen **Annehmen / Ablehnen** direkt in der E-Mail. Diese Erinnerungen werden am Plantyp konfiguriert und nicht an einem Kalendertermin -- siehe [Freiwillige am Sonntag](../guides/sunday-volunteers) für die Funktionsweise von Einteilung und Erinnerungen für Freiwillige.
+Freiwillige, die in einem Plan eingeteilt sind, erhalten eine separate **Diensterinnerung** mit den Plandetails und, sofern sie noch nicht geantwortet haben, den Schaltflächen **Annehmen / Ablehnen** direkt in der E-Mail. Diese Erinnerungen werden am Plantyp konfiguriert und nicht an einem Kalendertermin und können auch per Text versendet werden -- siehe [Freiwilligen-Erinnerungen](../serving/plans#volunteer-reminders) und [Freiwillige am Sonntag](../guides/sunday-volunteers) für die Funktionsweise von Einteilung und Erinnerungen für Freiwillige.
 
 ## Nächste Schritte
 

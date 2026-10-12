@@ -65,11 +65,11 @@ Erweitert GenericCrudController mit CRUD-Routen `getById`, `post` und `delete`. 
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |---------|------|------|--------------|-------------|
-| GET | `/` | JWT | — | Alle Service-Zeiten auflisten. Filtern nach `?serviceId=`. Fügen Sie `?include=groups` hinzu, um Gruppendaten hinzuzufügen |
+| GET | `/` | JWT | — | Alle Service-Zeiten auflisten. Filtern nach `?serviceId=`. Fügen Sie `?include=groups` hinzu, um Gruppendaten hinzuzufügen. Jede Zeile enthält einen berechneten booleschen Wert `checkinOpen` (nur `false`, wenn die Service-Zeit einen Check-in-Plan hat, dessen Fenster gerade geschlossen ist, in der Ortszeit der Kirche) |
 | GET | `/:id` | JWT | — | Service-Zeit nach ID abrufen |
 | GET | `/search?campusId=&serviceId=` | JWT | — | Service-Zeiten nach Campus und Service durchsuchen |
 | GET | `/public/:churchId` | Public | — | Das Campus → Service → Zeit-Baum für eine Kirche abrufen. Wird vom Website-Builder-Element `serviceTimes` verwendet |
-| POST | `/` | JWT | Services.Edit | Service-Zeiten erstellen oder aktualisieren |
+| POST | `/` | JWT | Services.Edit | Service-Zeiten erstellen oder aktualisieren. Optionale Plan-Felder: `dayOfWeek` (0 = Sonntag … 6), `startTime` / `endTime` (`HH:mm`), `checkinOpenMinutes` (vor Beginn), `checkinCloseMinutes` (nach Ende). Der Check-in ist nur zeitgesteuert, wenn sowohl `dayOfWeek` als auch `startTime` gesetzt sind |
 | DELETE | `/:id` | JWT | Services.Edit | Service-Zeit löschen |
 
 ## Gruppen-Service-Zeiten
@@ -192,6 +192,8 @@ Authorization: Bearer <token>
   }
 ]
 ```
+
+Wenn eine angesteuerte Service-Zeit einen Check-in-Plan hat und ihr Fenster geschlossen ist, wird nichts gespeichert, und die Antwort ist `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }`. Verstöße gegen Kapazität und Freiwilligenverhältnis geben ebenfalls 409 zurück (`error: "capacity"` oder `"ratio"`).
 
 ## Besuchssitzungen
 

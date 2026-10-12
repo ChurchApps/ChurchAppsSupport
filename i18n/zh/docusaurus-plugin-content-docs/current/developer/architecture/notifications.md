@@ -15,7 +15,9 @@ title: "通知和提醒架构"
 ```
 scheduled anything ──▶ ReminderEngine (definitions → occurrences → scan) ─┐
 chat / requests / workflow / bulk sends ──────────────────────────────────┼─▶ createNotifications()
-                                                                          │    in_app gate → socket → push → email (→ sms slot)
+                                                                          │    in_app gate → socket → push → email
+     (reminder channels include sms) ──▶ ReminderEngine.sendSms() ──▶ sms gate → sendPersonText() via church provider
+provider STOP reply ──▶ POST /messaging/texting/inbound/:churchId/:token ──▶ SmsOptOutHelper.optOut()
 account/legal mail ──▶ TransactionalEmailHelper.sendTransactional()  [allowlisted, lint-enforced]
 ```
 
@@ -62,7 +64,7 @@ createNotifications(
 | 0 | **in_app / socket** | 首先检查 `in_app` 门。如果被抑制（静音），该行被保存为 `isNew=false` 并且传递完全停止 — 没有 socket 平移、没有徽章、没有进一步升级。否则服务器查找一个人的 `alerts` 房间的开放 socket 连接并推送 `notification`（或 `privateMessage`）帧。对于普通通知，成功的 socket 传递在此处停止链 — 30 分钟计时器重新检查未读项目并稍后升级它们。直接消息从不在 socket 处停止：已安装的 PWA 可以在后台保持 alerts socket 打开，这会以其他方式抑制操作系统级推送。 |
 | 1 | **push** | 在 `allowPush` / 类别选择退出 / 安静时间上门控。发送到一个人的 `devices` 行上找到的 Expo 推送令牌和 Web Push 订阅，按端点去重并在过程中修剪过时的令牌。 |
 | 2 | **email** | 在 `emailFrequency` 和类别选择退出上门控。立即发送（`emailImmediate`）立即渲染并写入 `deliveryLogs` 行；否则通知被留在待处理以进行批量摘要，如下所述。 |
-| — | **sms** | 偏好管道（`allowSms`、每类别频道列表）已说明了 SMS 频道，但今天没有生产者通过它发送 — 它保留用于批量 SMS 产品，该产品通过 `TextingController` / `@churchapps/texting` 作为单独的、孤立的流运行。工作流**发送文本**步骤操作（`StepActionHelper.sendText` → `MessagingModuleGateway.sendPersonText`）也绕过这个漏斗：它通过教会的提供商直接给卡片的人发短信，所以通知偏好和安静时间不适用 — 仅尊重人的 `optedOut` 标志。 |
+| — | **sms** | 不是升级链中的一个级别。唯一受门控的短信生产者是提醒引擎：当定义的 `channels` 包含 `sms` 时，`ReminderEngine.sendSms()` 会在推送/电子邮件通知**之外**，再向每个接收者发送短信（参见[文本提醒](#text-reminders)）。批量短信（`TextingController` / `@churchapps/texting`）、服务概览的**向志愿者发送短信**操作（`MatrixTextHelper` → `MessagingModuleGateway.sendPersonText`），以及工作流的**发送短信**步骤操作（`StepActionHelper.sendText` → `sendPersonText`）都直接通过教会的提供商发送短信，因此通知偏好和安静时间不适用于它们 — 只遵守该人的 `optedOut` 标志。 |
 
 socket 或 push 处留下的未读通知通过 30 分钟计时器（`NotificationHelper.escalateDelivery`）升级。批量电子邮件由 `NotificationHelper.sendEmailNotifications(frequency)` 发送，由每个人的 `emailFrequency` 偏好驱动：`individual` 在 30 分钟计时器上运行，`daily` 在夜间计时器上运行。（`weekly` 是有效的偏好值但还没有专用批量运行。）
 
@@ -83,6 +85,19 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 **扩展**为前景（滚动多天窗口）实现消防行。它在夜间计时器上运行，以及每当定义被保存时同步运行，所以最后一分钟事件的提醒仍然会触发。作用域定义通过适配器的 `loadScopeEntities` 扇出，为每个具体实体生成一个发生集；实体级发生使用键 `definitionId:occurrenceISO:offset`，而作用域发生按实体 id 命名空间，所以他们永远不会碰撞。Upsetting 一个发生**复活**一个以前取消的行 — 取消然后重新扩展是在底层实体更改后重新同步提醒的标准方法；已 `sent`、`failed` 或 `processing` 的行保持不变。
 
 **分派**（`ReminderEngine.scan()`）在 30 分钟计时器上运行。它声称到期的发生（租约防止双重处理），通过实体的适配器加载收件人，过滤掉该发生的 `reminderSentLog` 中任何已记录的人，并使用 `deliveryStartLevel: 1` 调用 `createNotifications`（跳过直接推送）加上 `emailImmediate`/`emailByPerson` 当定义的频道包括电子邮件时。
+
+### 文本提醒 {#text-reminders}
+
+当定义的 `channels` 包含 `sms` 时，`scan()` 会在创建推送/电子邮件通知之后，对同一批新接收者调用 `ReminderEngine.sendSms()`。短信需要每位成员单独选择加入：
+
+- 每个接收者都会经过 `PreferenceGateHelper.evaluate(..., "sms", ...)`，因此 `allowSms` 必须开启（默认关闭，由 B1App 的**短信**开关设置），并且该类别的 `sms` 频道不能被覆盖为关闭。`event_reminders`、`serving_schedule` 和 `tasks` 在 `defaultChannels` 和 `allowedChannels` 中都列出了 `sms`。
+- 没有 `mobilePhone` 或设置了 `optedOut` 的人会被抑制。如果教会没有短信提供商，则批次中其余的接收者会以原因 `no_provider` 被抑制。
+- 短信正文由 `ReminderEngine.smsBody()` 构建：`"<教会名称>: <消息> Reply STOP to opt out."`，并裁剪为一个160字符的段。
+- 每个接收者都有自己的 `reminderSentLog` 行，其 `channel` 为 `"sms"`，状态为 `sent` / `suppressed` / `failed`，与推送/电子邮件行分开记录，因此失败的短信永远不会导致重新发送推送或电子邮件。
+
+编辑器仅当 `GET /messaging/texting/status` 返回 `{ enabled: true }`（教会的第一个短信提供商已启用）时才提供**短信**选项。
+
+**STOP 退订。** `POST /messaging/texting/inbound/:churchId/:token` 是教会粘贴到其提供商中的匿名 webhook（B1Admin 在短信设置中显示来自 `GET /messaging/texting/inboundUrl` 的 URL）。令牌是教会 ID 的 HMAC（`SmsOptOutHelper.token`）。`SmsOptOutHelper.parse` 接受 Twilio 风格的表单字段和 Clearstream/TextInChurch 风格的 JSON。如果回复恰好是运营商停止词（`STOP`、`STOPALL`、`UNSUBSCRIBE`、`CANCEL`、`END`、`QUIT`、`OPTOUT`、`REVOKE`），则教会中手机号码匹配的每个未移除的人都会被设置 `people.optedOut = true` 和 `allowSms = false`。其他回复会被确认并忽略。
 
 内部事件总线对实体突变做出反应，无需等待夜间扩展：内容事件（通过 webhook 分派器）和计划/任务更新事件触发受影响实体的立即重新扩展或取消，计划更新也重新扩展任何范围的定义与其计划类型相关。
 
@@ -120,14 +135,14 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 每个发送都通过 `PreferenceGateHelper.evaluate()`，一个纯函数（所有状态传递，热路径上没有 DB 调用）返回 `allow`、`suppress` 或 `defer`。图层按顺序运行，第一个决定赢的：
 
 1. **锁定类别** — 一些类别是强制性的（等级 0）并绕过每一个其他层。
-2. **主静音 / 频道杀死** — `masterMute`、`allowPush`、`allowSms` 或 `emailFrequency='never'` 完全抑制。
+2. **主静音 / 频道杀死** — `masterMute`、`allowPush`、`allowSms`（默认关闭 — 成员需选择加入）或 `emailFrequency='never'` 完全抑制。
 3. **安静时间** — 仅推送和 SMS（电子邮件被认为是非侵入性的）。如果当前挂钟时间在一个人的时区处于他们的安静窗口中，事务性类别仍然可以通过；非事务性的被推迟到安静窗口的末端，通过 `TimezoneHelper.wallClockToUtc` 计算为 DST 正确的 UTC 瞬间。
 4. **每类别偏好覆盖** — 一个类别 × 频道对的显式选择退出；缺失意味着类别的默认。
 5. **每实体静音** — 对特定实体（例如一个事件、一个计划）记录的静音比类别级别设置更限制，但仅在调用者提供实体 id/type 以及通知时适用。
 
 涉及的表：`notificationPreferences`（全局 — `masterMute`、`individual|daily|weekly|never` 的 `emailFrequency`、`allowPush`、安静时间窗口 + 时区、`allowSms`）、`notificationPreferenceOverrides`（每类别 × 频道）和 `notificationEntityMutes`（每实体）。
 
-这个门对 in-app（第 0 级）、push（第 1 级）和电子邮件（第 2 级）在漏斗内强制 — 包括立即提醒/摘要电子邮件。事务性电子邮件（身份验证码、密码重置、邀请、捐赠收据）按设计绕过它；那是第二道门的全部要点。
+这个门对 in-app（第 0 级）、push（第 1 级）和电子邮件（第 2 级）在漏斗内强制 — 包括立即提醒/摘要电子邮件，以及 `ReminderEngine.sendSms()` 中的提醒短信。事务性电子邮件（身份验证码、密码重置、邀请、捐赠收据）按设计绕过它；那是第二道门的全部要点。
 
 ## 教会编写的电子邮件限制
 
@@ -158,9 +173,10 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 | 事务性门 | `Api/src/shared/helpers/TransactionalEmailHelper.ts`、lint rule `Api/tools/eslint-rules/email-door.cjs` |
 | 教会电子邮件限制 | `Api/src/shared/helpers/ChurchEmailLimiter.ts`、`Api/src/lambda/ses-feedback-handler.ts`、`Api/src/modules/messaging/repositories/DeliveryLogRepo.ts` |
 | 提醒引擎 | `Api/src/modules/messaging/helpers/ReminderEngine.ts`、`ReminderBootstrap.ts`、`helpers/adapters/*`、`controllers/ReminderController.ts` |
+| 文本 / STOP 退订 | `Api/src/modules/messaging/helpers/SmsOptOutHelper.ts`、`controllers/TextingController.ts`（`/status`、`/inboundUrl`、`/inbound/:churchId/:token`）、`Api/src/modules/doing/helpers/MatrixTextHelper.ts`（服务概览**向志愿者发送短信**） |
 | 提醒存储库 | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`、`ReminderOccurrenceRepo.ts`、`ReminderSentLogRepo.ts` |
 | Serving/plan 电子邮件 | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`、`ReminderTokenHelper.ts`、`Api/src/shared/modules/DoingModuleGateway.ts` |
-| 提醒编辑器（B1Admin） | `serving/components/PlanTypeReminderEdit.tsx`、`calendars/components/EventReminderEdit.tsx`、`serving/tasks/components/TaskReminderEdit.tsx` |
+| 提醒编辑器（B1Admin） | `serving/components/PlanTypeReminderEdit.tsx`、`calendars/components/EventReminderEdit.tsx`、`serving/tasks/components/TaskReminderEdit.tsx`、`hooks/useTextingEnabled.ts` |
 | 提醒编辑器 / 偏好（B1App） | `EventReminderEdit.tsx`、`NotificationPrefsPage.tsx`、`useRealtimeNotifications.ts` |
 
 ## 相关页面

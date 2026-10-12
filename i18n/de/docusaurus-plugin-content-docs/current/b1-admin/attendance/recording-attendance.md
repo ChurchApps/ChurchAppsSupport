@@ -24,7 +24,7 @@ Eine Sitzung stellt ein Vorkommen eines Gruppentreffens dar – zum Beispiel Ihr
 
 1. Öffnen Sie **B1 Admin**, öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Personen**, und klicken Sie auf **Gruppen**.
 2. Wählen Sie die Gruppe aus, für die Sie Teilnahme aufzeichnen möchten.
-3. Klicken Sie auf die Registerkarte **Sitzungen**.
+3. Klicken Sie im Bereich **Sitzungen** der Gruppenseite auf **Alle Sitzungen**.
 4. Klicken Sie auf **Neu**, um eine neue Sitzung zu erstellen.
 5. Wenn die Gruppe einer Gottesdienstzeit zugeordnet ist, wählen Sie die **Gottesdienstzeit** aus. Wenn es sich um eine ungeplante Gruppe handelt, wird dieses Feld nicht angezeigt.
 6. Wählen Sie das **Sitzungsdatum** – dies kann heute, ein früheres Datum oder ein zukünftiges Datum sein.
@@ -76,11 +76,11 @@ Koppeln Sie dies mit **Alle Klassen drucken** und [Sitzungen für jede Klasse in
 
 ## Anwesenheitsliste drucken
 
-Eine Anwesenheitsliste ist eine druckbare Klassenliste, die Lehrer mit der Hand markieren und Ihnen zum späteren Eintragen zurückgeben können. Jedes Blatt zeigt den Kirchennamen, die Klasse, eine große **Datum**-Zeile unter dem Klassennamen und die Gottesdienstzeit. Mitglieder werden in zwei Spalten aufgelistet (lesen Sie die linke Spalte nach unten, dann die rechte), damit mehr Namen auf einer Seite passen, und jedes Mitglied hat Kästchen für **Anwesend** und **Abwesend**. Es gibt leere Zeilen für Besucher und einen Bereich **Lehrer / Notizen**.
+Eine Anwesenheitsliste ist eine druckbare Klassenliste, die Lehrer mit der Hand markieren und Ihnen zum späteren Eintragen zurückgeben können. Jedes Blatt zeigt Ihr Kirchenlogo (das **Logo für helle Hintergründe** aus [Website > Erscheinungsbild](../website/appearance.md), falls Sie eines hochgeladen haben) mit dem Kirchennamen darunter, die Klasse, eine große **Datum**-Zeile unter dem Klassennamen und die Gottesdienstzeit. Mitglieder werden in zwei Spalten aufgelistet (lesen Sie die linke Spalte nach unten, dann die rechte), damit mehr Namen auf einer Seite passen, und jedes Mitglied hat Kästchen für **Anwesend** und **Abwesend**. Es gibt leere Zeilen für Besucher und einen Bereich **Lehrer / Notizen**.
 
 - **Aus einer Sitzung** – Klicken Sie auf das Symbol **Anwesenheitsliste drucken** (Drucker) oben in der Teilnahmeliste der Sitzung. Das Blatt ist mit dem Sitzungsdatum datiert.
 - **Alle Klassen für einen Service** – Wenn die Sitzung eine Gottesdienstzeit hat, klicken Sie auf **Alle Klassen drucken**, um ein Blatt pro Klasse zu drucken, die dieser Gottesdienstzeit zugeordnet ist. Jede Klasse wird auf ihrer eigenen Seite gedruckt.
-- **Aus der Registerkarte Mitglieder** – Klicken Sie auf das Symbol **Anwesenheitsliste drucken** über der Mitgliederliste der Gruppe und wählen Sie **Anwesenheitsblatt**, um ein undatiertes Blatt zu drucken. Dasselbe Menü bietet ein Layout **Kontaktliste** mit Telefonnummer, E-Mail und Adresse jedes Mitglieds – siehe [Mitgliederliste drucken](../groups/group-members.md#printing-the-member-list).
+- **Aus der Mitgliederliste** – Klicken Sie auf der Gruppenseite auf **Alle Mitglieder** und dann auf das Symbol **Anwesenheitsliste drucken** über der Mitgliederliste und wählen Sie **Anwesenheitsblatt**, um ein undatiertes Blatt zu drucken. Dasselbe Menü bietet ein Layout **Kontaktliste** mit Telefonnummer, E-Mail und Adresse jedes Mitglieds – siehe [Mitgliederliste drucken](../groups/group-members.md#printing-the-member-list).
 
 Das Blatt wird in einer neuen Registerkarte geöffnet und der Druckdialog Ihres Browsers erscheint automatisch.
 
@@ -96,7 +96,7 @@ Sie können einen Eintrag der Sitzung als CSV-Datei herunterladen, um sie in Exc
 
 Nach dem Aufzeichnen von Sitzungen erscheinen die Daten in Ihren Teilnahmeberichten.
 
-- **Registerkarte Teilnahme-Trend** – zeigt kirchenweite Trends im Laufe der Zeit. Siehe [Teilnahme verfolgen](tracking-attendance.md).
+- **Registerkarte Teilnahme-Trend** (unter **Alle Jahre** auf der Seite Teilnahme) – zeigt kirchenweite Trends im Laufe der Zeit. Siehe [Teilnahme verfolgen](tracking-attendance.md).
 - **Registerkarte Gruppenteilnahme** – zeigt Teilnahme nach Einzelgruppe aufgebrochen. Siehe [Teilnahmeberichte](../reports/attendance-reports.md#group-attendance).
 
 :::tip
