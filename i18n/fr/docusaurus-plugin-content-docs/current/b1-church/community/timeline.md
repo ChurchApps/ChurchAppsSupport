@@ -6,39 +6,28 @@ title: "Fil d'actualité"
 
 <div class="article-intro">
 
-Le **Fil d'actualité** est la page d'accueil par défaut de votre portail membre B1.church. Il fournit un flux d'activité affichant les dernières mises à jour de vos groupes et de votre église, rassemblant tout en un seul endroit pratique.
+L'onglet autonome **Fil d'actualité** a été retiré. Le portail membre s'ouvre désormais sur le [tableau de bord d'accueil](../getting-started/navigating.md), et l'activité qui s'affichait autrefois dans un fil combiné apparaît à présent à sa place : sur la page Me, dans les notifications et dans chaque groupe.
 
 </div>
 
-<div class="prereqs">
-<h4>Avant de commencer</h4>
+## Où se trouve désormais l'activité du fil
 
-- Vous devez être [connecté](../getting-started/logging-in.md) à votre compte B1.church.
+| Ce que vous voyiez dans le fil | Où le trouver maintenant |
+| --- | --- |
+| Conversations et annonces de groupe | Le chat de chaque [groupe](../groups/conversations.md) (**Ouvrir le chat**) |
+| Événements à venir pour vous et vos groupes | La page **Me** (`/mobile/me`) et la section **Prochain événement** de chaque groupe |
+| Tâches et affectations de service | La page **Me** et les [Plans](../plans/) |
+| Nouvelles prédications | La section **Dernière prédication** sur l'accueil et l'onglet [Prédications](../content/sermons.md) |
+| Tout ce qui vous a sollicité | L'icône **cloche** dans la barre d'application, ou `/mobile/notifications` |
 
-</div>
+## La page Me
 
-## Ce que le fil d'actualité affiche
+[La page Me](../getting-started/me-page) est le remplacement le plus proche de l'ancien fil. Elle répertorie ce qui vous attend -- affectations de service, inscriptions aux événements et événements de groupe -- ainsi que vos notifications les plus récentes, et donne un accès direct à votre profil, à vos préférences de notification, à vos messages, aux dons et à vos inscriptions.
 
-Le fil d'actualité présente un flux de publications et de mises à jour, pouvant inclure :
+## Notifications
 
-- **Conversations de groupe** -- Messages et discussions des [groupes](../groups/) auxquels vous appartenez.
-- **Tâches** -- Tâches qui vous sont assignées ou assignées à vos groupes.
-- **Événements** -- Événements à venir pertinents pour vous et vos groupes.
-- **Leçons** -- Programmes et [contenu de leçons](../content/lessons.md) partagés avec vos groupes.
-- **Prédications** -- [Prédications](../content/sermons.md) récentes publiées par votre église.
-
-Chaque publication dans le flux affiche le titre de la publication, le groupe auquel elle appartient (le cas échéant) et depuis combien de temps elle a été publiée.
-
-## Consulter les détails d'une publication
-
-Le fil d'actualité utilise une mise en page maître-détail. Votre flux est listé sur le côté gauche de la page. Cliquez sur n'importe quelle publication pour ouvrir ses détails complets dans le panneau de droite. Depuis la vue détaillée, vous pouvez lire le contenu complet de la publication et interagir avec elle.
-
-Cliquez sur **Retour aux mises à jour** en haut du panneau de détails pour revenir à la liste du flux.
-
-## Rester connecté
-
-Le fil d'actualité rassemble l'activité de tous vos groupes en un seul flux, vous n'avez donc pas besoin de vérifier chaque groupe individuellement. C'est une bonne habitude de consulter votre fil d'actualité régulièrement pour rester informé de ce qui se passe dans votre église.
+Tout ce qui serait apparu auparavant comme élément du fil et nécessitait votre attention arrive désormais sous forme de notification. Appuyez sur la cloche dans la barre d'application pour voir les plus récentes, ou sur **Voir tout** (ou ouvrez `/mobile/notifications`) pour la liste complète. Appuyer sur une notification vous mène au groupe, au plan ou à la conversation d'où elle provient. Vous pouvez contrôler les notifications que vous recevez, et leur mode d'envoi, dans les [Préférences de notification](../getting-started/notification-preferences.md).
 
 :::tip
-Si votre fil d'actualité est vide, vous n'êtes peut-être pas encore membre d'un groupe. Visitez la page [Groupes](../groups/browsing-groups.md) pour trouver des groupes à rejoindre, ou demandez à l'administrateur de votre église ou au responsable d'un groupe de vous ajouter.
+Si votre page Me semble vide, vous n'êtes peut-être encore membre d'aucun groupe. Visitez la page [Groupes](../groups/browsing-groups.md) pour trouver des groupes à rejoindre, ou demandez à l'administrateur de votre église ou au responsable de groupe de vous ajouter.
 :::

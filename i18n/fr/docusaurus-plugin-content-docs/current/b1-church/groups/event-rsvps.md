@@ -1,43 +1,43 @@
 ---
-title: "Réponses d'Événement"
+title: "Confirmations de présence aux événements"
 ---
 
-# Réponses d'Événement
+# Confirmations de présence aux événements
 
 <div class="article-intro">
 
-Les événements de groupe peuvent collecter des réponses pour que les leaders sachent qui vient. Sur le calendrier de votre groupe, chaque événement à venir demande "Allez-vous participer?" — répondez avec un appui, changez d'avis à tout moment, et voyez en un coup d'œil combien d'autres y vont.
+Les événements de groupe peuvent recueillir des confirmations de présence (RSVP) afin que les responsables sachent qui viendra. Sur la page et le calendrier de votre groupe, chaque événement à venir comporte les boutons **Présent**, **Peut-être** et **Absent** -- répondez d'une simple pression, changez d'avis à tout moment, et voyez en un coup d'œil combien d'autres personnes seront présentes.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vous devez être [connecté](../getting-started/logging-in.md) et un membre du groupe
-- L'événement doit avoir les réponses autorisées (elles sont activées par défaut ; les leaders peuvent les désactiver par événement)
+- Vous devez être [connecté](../getting-started/logging-in.md) et membre du groupe
+- L'événement doit autoriser les confirmations de présence (elles sont activées par défaut ; les responsables peuvent les désactiver événement par événement)
 
 </div>
 
-## Réponse à un Événement
+## Répondre à un événement
 
-1. Ouvrez votre groupe dans le portail des membres et allez à son onglet **Événements**. En **vue Mois**, touchez un jour pour voir ses événements, ou passez à la **vue Liste** pour voir d'un coup tous les événements à venir de ce mois.
-2. Chaque carte d'événement à venir affiche **Allez-vous participer?** avec trois boutons : **Y vais**, **Peut-être**, et **Impossible**.
-3. Appuyez sur votre réponse. Votre choix se met en évidence, et chaque bouton affiche un comptage en direct du nombre de personnes qui ont donné cette réponse.
-4. Appuyez à nouveau sur votre réponse mise en évidence pour l'effacer, ou appuyez sur un bouton différent pour modifier votre réponse.
+1. Ouvrez votre groupe dans le portail des membres. Le prochain événement du groupe apparaît dans la section **Prochain événement**. Pour les autres événements, touchez **Tous les événements** : en vue **Calendrier**, touchez un jour pour voir ses événements, ou passez à **Liste** pour voir d'un coup tous les événements à venir du mois.
+2. Chaque événement à venir affiche trois boutons : **Présent**, **Peut-être** et **Absent**.
+3. Touchez votre réponse. Votre choix est mis en évidence, et chaque bouton affiche un compteur en direct du nombre de personnes ayant donné cette réponse.
+4. Touchez de nouveau votre réponse mise en évidence pour l'annuler, ou touchez un autre bouton pour modifier votre réponse.
 
-Votre réponse s'applique à cette occurrence spécifique — pour une réunion hebdomadaire, vous répondez à l'événement de chaque semaine séparément.
+Votre confirmation s'applique à cette occurrence précise -- pour une réunion hebdomadaire, vous répondez séparément à l'événement de chaque semaine.
 
-## Pour les Directeurs de Groupe
+## Pour les responsables de groupe
 
-- **Affichage des réponses** -- Les leaders voient un bouton **Voir les réponses** sur chaque carte d'événement. Il ouvre la feuille **Réponses** énumérant tout le monde par réponse — Y vais, Peut-être, et Impossible. Si personne n'a encore répondu, il affiche "Aucune réponse pour le moment."
-- **Activation ou désactivation des réponses** -- Lors de la création ou l'édition d'un événement, utilisez l'interrupteur **Autoriser les Réponses**. Les événements avec les réponses désactivées n'affichent aucun bouton de réponse. Le personnel créant des événements en masse à partir de B1 Admin a la même option — voir [Calendrier de Groupe](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Consulter les réponses** -- Les responsables voient un lien **Voir les réponses** sur chaque événement du calendrier du groupe (**Tous les événements**). Il ouvre la fiche **Réponses**, qui liste toutes les personnes selon leur réponse -- Présent, Peut-être et Absent. Si personne n'a encore répondu, elle affiche « Aucune réponse pour le moment ».
+- **Activer ou désactiver les confirmations de présence** -- Lors de la création ou de la modification d'un événement, utilisez le commutateur **Autoriser les confirmations de présence**. Les événements pour lesquels les confirmations sont désactivées n'affichent aucun bouton de réponse. Le personnel qui crée des événements en masse depuis B1 Admin dispose de la même option -- voir [Calendrier du groupe](../../b1-admin/groups/group-calendar#event-rsvps).
 
 :::tip
-Les réponses sont un comptage de têtes léger. Si votre événement a besoin de détails d'inscription, de gestion de capacité, ou de paiement, utilisez [l'inscription d'événement](../events/registering) à la place.
+Les confirmations de présence servent à faire un simple décompte. Si votre événement nécessite des détails d'inscription, une gestion de la capacité ou un paiement, utilisez plutôt l'[inscription à un événement](../events/registering).
 :::
 
-## Articles Connexes
+## Articles connexes
 
-- [Détails du Groupe](./group-details.md) -- Tout sur la page de détail du groupe
-- [Calendrier de Groupe (B1 Admin)](../../b1-admin/groups/group-calendar) -- Comment le personnel et les leaders gèrent les événements de groupe et les réponses
-- [Inscription aux Événements](../events/registering) -- Inscription d'événement complète avec capacité et paiements
+- [Détails du groupe](./group-details.md) -- Tout ce qui se trouve sur la page de détails du groupe
+- [Calendrier du groupe (B1 Admin)](../../b1-admin/groups/group-calendar) -- Comment le personnel et les responsables gèrent les événements et les confirmations de présence du groupe
+- [Inscription aux événements](../events/registering) -- Inscription complète à un événement avec gestion de la capacité et des paiements

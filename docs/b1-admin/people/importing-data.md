@@ -35,7 +35,7 @@ The transfer tool walks you through four steps: Source, Preview, Destination, an
 Select where your data is coming from. There are seven options:
 
 - **B1 Database** — Pulls data directly from your existing B1 church. Useful for making a backup or converting your data to another format. You must be logged in to use this option.
-- **B1 Import Zip** — A zip file in B1's own format. This is primarily used to restore a previous B1 export.
+- **B1 Import Zip** — A zip file in B1's own format. This is primarily used to restore a previous B1 export. Loading a B1 Export Zip back into the **B1 Database** restores everything the export carries (see [Exporting Data](./exporting-data.md#full-data-export-from-settings)). If the file can't be read, the tool shows the error instead of starting over.
 - **Breeze Import Zip** — A zip file containing exported files from Breeze ChMS.
 - **Planning Center Zip** — A zip or CSV file exported from Planning Center.
 - **Custom CSV / Excel** — Any CSV or Excel file containing people data. After uploading, you will map your columns to B1 fields before the import proceeds.
@@ -94,7 +94,7 @@ Review this carefully before proceeding. If something looks wrong, click **Start
 Select where you want the data to go:
 
 - **B1 Database** — Imports directly into your church's B1 database. After selecting this, the tool will show a final count of records to be added. Click **Start Transfer** to confirm.
-- **B1 Export Zip** — Downloads your data as a B1-format zip file. Good for backups.
+- **B1 Export Zip** — Downloads your data as a B1-format zip file that can be restored later with **B1 Import Zip**. Good for backups.
 - **Breeze Export Zip** — Converts your data to Breeze format.
 - **Planning Center Zip** — Converts your data to Planning Center format.
 

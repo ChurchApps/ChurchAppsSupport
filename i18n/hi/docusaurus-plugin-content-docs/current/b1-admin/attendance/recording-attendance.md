@@ -6,99 +6,99 @@ title: "उपस्थिति दर्ज करना"
 
 <div class="article-intro">
 
-एक बार जब आपके कैंपस, सेवा समय, और समूह सेट अप हो जाते हैं, तो आप प्रत्येक सभा के बाद मैन्युअल रूप से उपस्थिति दर्ज कर सकते हैं। B1 Admin **sessions** के चारों ओर उपस्थिति को organize करता है -- एक session प्रति समूह प्रति मीटिंग date। आप session बनाते हैं, चिह्नित करते हैं कि कौन दिखाई दिया, और डेटा सीधे आपकी उपस्थिति रिपोर्ट में चला जाता है।
+एक बार जब आपके campuses, service times, और groups सेट अप हो जाते हैं, तो आप हर सभा के बाद मैन्युअल रूप से उपस्थिति दर्ज कर सकते हैं। B1 Admin उपस्थिति को **sessions** के आधार पर व्यवस्थित करता है -- हर group के लिए हर मीटिंग की तारीख पर एक session। आप session बनाते हैं, चिह्नित करते हैं कि कौन उपस्थित था, और डेटा सीधे आपकी attendance reports में चला जाता है।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- आपके कैंपस, सेवा समय, और समूह को कॉन्फ़िगर किया जाना चाहिए। यदि आपने अभी तक ऐसा नहीं किया है तो [Attendance Setup](setup.md) देखें।
-- जिन समूहों को आप track करना चाहते हैं उनके पास **Track Attendance** सक्षम होना चाहिए। विवरण के लिए [Attendance Setup](setup.md) देखें।
+- आपके campuses, service times, और groups कॉन्फ़िगर होने चाहिए। यदि आपने अभी तक यह नहीं किया है, तो [Attendance Setup](setup.md) देखें।
+- जिन groups को आप track करना चाहते हैं, उनमें **Track Attendance** सक्षम होना चाहिए। विवरण के लिए [Attendance Setup](setup.md) देखें।
 
 </div>
 
 ## एक Session बनाना
 
-एक session एक समूह मीटिंग की एक घटना का प्रतिनिधित्व करता है -- उदाहरण के लिए, आपकी K--3rd grade class एक विशेष रविवार को।
+एक session किसी group की मीटिंग की एक घटना को दर्शाता है -- उदाहरण के लिए, किसी विशेष रविवार को आपकी K--3rd grade class।
 
-1. **B1 Admin** खोलें, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (शीर्ष-बाएं खोज बार) खोलें, **People** विस्तृत करें, और **Groups** पर क्लिक करें।
-2. उस समूह को चुनें जिसके लिए आप उपस्थिति दर्ज करना चाहते हैं।
-3. समूह के पृष्ठ पर **Sessions** अनुभाग में **All sessions** पर क्लिक करें।
-4. एक नया session बनाने के लिए **New** पर क्लिक करें।
-5. यदि समूह को एक सेवा समय से assign किया गया है, तो **Service Time** चुनें। यदि यह एक unscheduled समूह है, तो यह field दिखाई नहीं देगा।
-6. **Session Date** चुनें -- यह आज, एक पिछली तारीख, या एक भविष्य की तारीख हो सकती है।
-7. **Save** पर क्लिक करें।
+1. **B1 Admin** खोलें, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ऊपर-बाईं ओर का search bar) खोलें, **People** को expand करें, और **Groups** पर click करें।
+2. वह group चुनें जिसके लिए आप उपस्थिति दर्ज करना चाहते हैं।
+3. group के page पर **Sessions** section में **All sessions** पर click करें।
+4. नया session बनाने के लिए **New** पर click करें।
+5. यदि group किसी service time को assign है, तो **Service Time** चुनें। यदि यह एक unscheduled group है, तो यह field दिखाई नहीं देगा।
+6. **Session Date** चुनें -- यह आज, कोई पिछली तारीख, या कोई आने वाली तारीख हो सकती है।
+7. **Save** पर click करें।
 
-### एक Service Time में हर Class के लिए Sessions जोड़ना
+### एक Service Time की हर Class के लिए Sessions जोड़ना
 
-यदि अन्य समूह एक ही सेवा समय पर मिलते हैं (उदाहरण के लिए, आपकी सभी बाल classes रविवार 9:00 AM पर), तो आप एक step में उनके sessions बना सकते हैं, प्रत्येक समूह को visit करने के बजाय।
+यदि उसी service time पर अन्य groups भी मिलते हैं (उदाहरण के लिए, रविवार सुबह 9:00 बजे आपकी सभी बच्चों की classes), तो आप हर group पर जाने के बजाय एक ही step में उनके sessions बना सकते हैं।
 
-1. उपरोक्त step का पालन करें और एक **Service Time** चुनें।
-2. **Also add for the other _N_ groups in _service time_** check करें। checkbox दिखाता है कि कितने अन्य समूह उस सेवा समय को assign किए गए हैं। यह केवल तब दिखाई देता है जब एक नया session जोड़ते हैं और कम से कम एक अन्य समूह उस समय पर मिलता है।
-3. **Save** पर क्लिक करें।
+1. ऊपर दिए steps का पालन करें और एक **Service Time** चुनें।
+2. **Also add for the other _N_ groups in _service time_** पर checkmark लगाएं। यह checkbox दिखाता है कि उस service time को कितने अन्य groups assign हैं। यह केवल तब दिखता है जब आप नया session जोड़ रहे हों और उस समय पर कम से कम एक और group मिलता हो।
+3. **Save** पर click करें।
 
-एक session current समूह के लिए और उसी date और सेवा समय पर मिलने वाले प्रत्येक अन्य समूह के लिए बनाया जाता है। जिन समूहों के पास उस date और सेवा समय के लिए पहले से एक session है, उन्हें छोड़ दिया जाता है, इसलिए आपको duplicates नहीं मिलेंगे।
+एक session वर्तमान group के लिए और उसी तारीख व service time पर मिलने वाले हर अन्य group के लिए बनाया जाता है। जिन groups के पास उस तारीख और service time के लिए पहले से session है, उन्हें छोड़ दिया जाता है, इसलिए आपको duplicates नहीं मिलेंगे।
 
 :::tip
-आप पिछली तारीखों के लिए sessions बना सकते हैं ताकि आप उपस्थिति को catch up कर सकें जिसे आपने दर्ज नहीं किया है, या advance में उन्हें बना सकते हैं ताकि जब आपका समूह मिले तो वे तैयार हों।
+आप पिछली तारीखों के लिए sessions बना सकते हैं ताकि जो उपस्थिति आपने अभी तक दर्ज नहीं की है उसे पूरा कर सकें, या पहले से बनाकर रख सकते हैं ताकि जब आपका group मिले तो वे तैयार हों।
 :::
 
-## Attendance को चिह्नित करना
+## Attendance चिह्नित करना
 
-एक session चुनें ताकि इसकी attendance list देख सकें। हर समूह सदस्य एक checkbox के साथ सूचीबद्ध होता है, अंतिम नाम द्वारा sorted, और जो कोई भी पहले से present के रूप में दर्ज है उसे check किया जाता है।
+उसकी attendance list देखने के लिए एक session चुनें। हर group सदस्य एक checkbox के साथ सूचीबद्ध होता है, last name के अनुसार sorted, और जो कोई पहले से present दर्ज है, उसका checkbox चिह्नित होता है।
 
-1. उपस्थित हर व्यक्ति के पास box check करें। **Select All** या **Select None** का उपयोग करके एक ही बार में सभी को change करें।
-2. सूची के ऊपर की गणना (उदाहरण के लिए, "12 of 15 present") जैसे-जैसे आप boxes check करते हैं, update होती है।
-3. **Save Attendance** पर क्लिक करें। कुछ भी तब तक दर्ज नहीं किया जाता है जब तक आप save न करें, और एक message confirm करता है जब save complete हो।
+1. हर उपस्थित व्यक्ति के आगे box पर checkmark लगाएं। सभी को एक साथ बदलने के लिए **Select All** या **Select None** का उपयोग करें।
+2. सूची के ऊपर की गिनती (उदाहरण के लिए, "12 of 15 present") आपके boxes चिह्नित करने के साथ update होती है।
+3. **Save Attendance** पर click करें। Save करने तक कुछ भी दर्ज नहीं होता, और save पूरा होने पर एक message पुष्टि करता है।
 
-किसी को uncheck करना जो पहले से present के रूप में दर्ज था और फिर save करना उन्हें session से हटा देता है।
+किसी ऐसे व्यक्ति का checkmark हटाकर save करना जो पहले से present दर्ज था, उन्हें session से हटा देता है।
 
-### Visitors को जोड़ना
+### Visitors जोड़ना
 
-किसी को record करने के लिए जो समूह का सदस्य नहीं है, attendance list के आगे person search में उन्हें खोजें। यदि वे आपके database में अभी तक नहीं हैं, तो आप search से उन्हें बना सकते हैं। उन्हें already checked के साथ सूची में जोड़ा जाता है। उन्हें record करने के लिए **Save Attendance** पर क्लिक करें।
+किसी ऐसे व्यक्ति को दर्ज करने के लिए जो group का सदस्य नहीं है, attendance list के बगल में person search में उन्हें खोजें। यदि वे अभी तक आपके database में नहीं हैं, तो आप search से ही उन्हें बना सकते हैं। दोनों ही स्थितियों में, उन्हें पहले से checked के रूप में सूची में जोड़ दिया जाता है। उन्हें दर्ज करने के लिए **Save Attendance** पर click करें।
 
-जिन लोगों ने एक किस्क पर चेक-इन किया है वह एक **Volunteer** या **Guest** chip दिखाते हैं। जो लोग समूह सदस्य नहीं हैं वह एक **Guest** chip दिखाते हैं।
+किसी kiosk पर check in करने वाले लोगों के आगे **Volunteer** या **Guest** chip दिखता है। जो लोग group के सदस्य नहीं हैं, उनके आगे **Guest** chip दिखता है।
 
-## यह Check करना कि किन Groups को अभी भी Attendance की आवश्यकता है
+## कौन-से Groups को अभी भी Attendance चाहिए, यह जाँचना
 
-जब कई classes एक ही सेवा समय पर मिलते हैं, तो आप एक नज़र में देख सकते हैं कि किन्हें उस date के लिए अभी भी attendance दर्ज करने की आवश्यकता है।
+जब एक ही service time पर कई classes मिलती हैं, तो आप एक नज़र में देख सकते हैं कि किन classes की उस तारीख की उपस्थिति अभी भी दर्ज होनी बाकी है।
 
-1. एक session खोलें जिसका एक सेवा समय है।
-2. attendance list के शीर्ष पर **Who Still Needs Attendance** पर क्लिक करें।
-3. एक dialog हर समूह को list करता है जो उस सेवा समय को assign किया गया है, शीर्ष पर एक summary के साथ जैसे "5 of 8 groups entered"।
+1. एक ऐसा session खोलें जिसकी service time हो।
+2. attendance list के ऊपर **Who Still Needs Attendance** पर click करें।
+3. एक dialog उस service time को assign हर group को सूचीबद्ध करता है, ऊपर "5 of 8 groups entered" जैसे सारांश के साथ।
 
-जिन समूहों के पास उस date के लिए कोई भी person marked present नहीं है वह एक **Not entered** chip दिखाते हैं और पहले list किए जाते हैं। जिन समूहों के पास attendance है वह **Entered** के साथ present के रूप में marked लोगों की संख्या के साथ दिखाते हैं (उदाहरण के लिए, "Entered (12)")। उस समूह का उपस्थिति दर्ज करने के लिए एक समूह के नाम पर क्लिक करें।
+जिस group में उस तारीख के लिए किसी को भी present चिह्नित नहीं किया गया है, वह **Not entered** chip दिखाता है और सबसे पहले सूचीबद्ध होता है। जिन groups की उपस्थिति दर्ज है, वे उपस्थित लोगों की संख्या के साथ **Entered** दिखाते हैं (उदाहरण के लिए, "Entered (12)")। उस group के sessions खोलने के लिए उसके नाम पर click करें, जिसमें उसी तारीख का session पहले से चुना होगा, ताकि आप तुरंत उसकी उपस्थिति दर्ज कर सकें। यदि उस तारीख के लिए group का अभी तक कोई session नहीं है, तो उसकी sessions list खुलती है ताकि आप एक जोड़ सकें।
 
 :::tip
-इसे **Print All Classes** के साथ जोड़ें और [एक सेवा समय में हर class के लिए sessions जोड़ना](#adding-sessions-for-every-class-in-a-service-time): sessions बनाएं, roll sheets देते हैं, फिर **Who Still Needs Attendance** का उपयोग करें यह देखने के लिए कि कौन सी sheets अभी तक enter नहीं हुई हैं।
+इसे **Print All Classes** और [service time की हर class के लिए sessions जोड़ने](#adding-sessions-for-every-class-in-a-service-time) के साथ इस्तेमाल करें: sessions बनाएं, roll sheets बांटें, फिर **Who Still Needs Attendance** से देखें कि कौन-सी sheets की प्रविष्टि अभी बाकी है।
 :::
 
-## एक Roll Sheet को प्रिंट करना
+## Roll Sheet प्रिंट करना
 
-एक roll sheet एक printable class list है जिसे teachers हाथ से mark कर सकते हैं और बाद में enter करने के लिए आपको वापस दे सकते हैं। प्रत्येक sheet पर आपके चर्च का लोगो ([Website > Appearance](../website/appearance.md) से **Light Background Logo**, यदि आपने एक अपलोड किया है) उसके नीचे चर्च के नाम के साथ, class, class के नाम के तहत एक large **Date** line, और सेवा समय दिखाता है। सदस्यों को दो columns में सूचीबद्ध किया जाता है (left column पढ़ें, फिर right) ताकि अधिक नाम एक page पर fit हों, और हर सदस्य के पास **Present** और **Absent** boxes हैं। visitors के लिए blank lines और एक **Teacher / Notes** area हैं।
+roll sheet एक प्रिंट करने योग्य class list है, जिसे शिक्षक हाथ से चिह्नित करके बाद में आपको वापस दे सकते हैं ताकि आप उसे दर्ज कर सकें। हर sheet पर आपके church का logo दिखता है ([Website > Appearance](../website/appearance.md) से **Light Background Logo**, यदि आपने एक अपलोड किया है), उसके नीचे church का नाम, class, class के नाम के नीचे एक बड़ी **Date** line, और service time। Members दो columns में सूचीबद्ध होते हैं (पहले बाएं column को नीचे की ओर पढ़ें, फिर दाएं), ताकि एक page पर अधिक नाम आ सकें, और हर member के लिए **Present** और **Absent** boxes होते हैं। visitors के लिए खाली lines और एक **Teacher / Notes** क्षेत्र होता है।
 
-- **एक session से** -- session की attendance list के शीर्ष पर **Print Roll Sheet** (printer) icon पर क्लिक करें। sheet को session की date के साथ dated किया जाता है।
-- **एक सेवा के लिए सभी classes** -- यदि session का एक सेवा समय है, तो **Print All Classes** पर क्लिक करके उस सेवा समय को assign किए गए प्रत्येक class के लिए एक sheet print करें। हर class अपने ही page पर print होता है।
-- **Member list से** -- समूह के पृष्ठ पर **All members** पर क्लिक करें, फिर member list के ऊपर **Print Roll Sheet** icon पर क्लिक करें और एक undated sheet print करने के लिए **Attendance Sheet** चुनें। उसी menu में **Contact Roster** layout भी है, जिसमें हर सदस्य का फ़ोन, ईमेल और पता होता है -- [सदस्य सूची प्रिंट करना](../groups/group-members.md#printing-the-member-list) देखें।
+- **एक session से** -- session की attendance list के ऊपर **Print Roll Sheet** (printer) icon पर click करें। sheet पर session की तारीख लिखी होती है।
+- **एक service की सभी classes** -- यदि session की service time है, तो **Print All Classes** पर click करें ताकि उस service time को assign हर class की एक sheet प्रिंट हो। हर class अपने अलग page पर प्रिंट होती है।
+- **Member list से** -- group के page पर **All members** पर click करें, फिर member list के ऊपर **Print Roll Sheet** icon पर click करें और बिना तारीख वाली sheet प्रिंट करने के लिए **Attendance Sheet** चुनें। उसी menu में **Contact Roster** layout भी है, जिसमें हर member का phone, email, और address होता है -- देखें [Printing the Member List](../groups/group-members.md#printing-the-member-list)।
 
-sheet एक नए tab में खुल जाता है और आपके browser की print dialog स्वचालित रूप से दिखाई देता है।
+sheet एक नए tab में खुलती है और आपके browser का print dialog अपने-आप दिखाई देता है।
 
-## Attendance को एक Spreadsheet में Export करना
+## Attendance को Spreadsheet में Export करना
 
-आप session का एक record CSV file के रूप में download कर सकते हैं ताकि Excel, Numbers, या Google Sheets में उपयोग किया जा सके।
+Excel, Numbers, या Google Sheets में उपयोग के लिए आप session का रिकॉर्ड CSV file के रूप में download कर सकते हैं।
 
-1. उस session को खोलें जिसे आप export करना चाहते हैं।
-2. attendance list के शीर्ष पर **Export** बटन पर क्लिक करें।
-3. अपनी spreadsheet application में downloaded file को खोलें।
+1. वह session खोलें जिसे आप export करना चाहते हैं।
+2. attendance list के ऊपर **Export** button पर click करें।
+3. download हुई file को अपने spreadsheet application में खोलें।
 
-## Recorded Attendance को Viewing करना
+## दर्ज की गई Attendance देखना
 
-Sessions को record करने के बाद, डेटा आपकी attendance रिपोर्ट में दिखाई देता है।
+sessions दर्ज करने के बाद, डेटा आपकी attendance reports में दिखाई देता है।
 
-- **Attendance Trend tab** (Attendance पृष्ठ पर **All years** के अंतर्गत) -- चर्च-व्यापी trends को समय के साथ दिखाता है। [Tracking Attendance](tracking-attendance.md) देखें।
-- **Group Attendance tab** -- व्यक्तिगत समूह द्वारा विभाजित attendance दिखाता है। [Attendance Reports](../reports/attendance-reports.md#group-attendance) देखें।
+- **Attendance Trend tab** (Attendance page पर **All years** के अंतर्गत) -- समय के साथ church-wide trends दिखाता है। देखें [Tracking Attendance](tracking-attendance.md)।
+- **Group Attendance tab** -- हर व्यक्तिगत group के अनुसार बंटी हुई attendance दिखाता है। देखें [Attendance Reports](../reports/attendance-reports.md#group-attendance)।
 
 :::tip
-यदि एक session जिसे आपने बनाया है वह तुरंत रिपोर्ट में दिखाई नहीं देता है, तो सुनिश्चित करें कि session की date रिपोर्ट फ़िल्टर में selected date range में आता है।
+यदि आपके द्वारा अभी बनाया गया session reports में तुरंत नहीं दिखता, तो सुनिश्चित करें कि session की तारीख report filters में चुनी गई date range के भीतर आती है।
 :::

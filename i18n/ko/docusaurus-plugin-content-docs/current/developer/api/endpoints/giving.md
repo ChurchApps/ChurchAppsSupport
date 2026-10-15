@@ -1,32 +1,33 @@
 ---
-title: "헌금 엔드포인트"
+title: "Giving 엔드포인트"
 ---
 
-# 헌금 엔드포인트
+# Giving 엔드포인트
 
 <div class="article-intro">
 
-Giving 모듈은 헌금, 기금, 결제 처리, 구독, 관련 재무 운영을 관리합니다. 여러 결제 게이트웨이(Stripe, PayPal)를 지원하며, 일회성 및 정기 헌금을 처리하고, 헌금 배치(batch)를 추적하며, 비동기 결제 이벤트에 대한 웹훅 처리를 제공합니다.
+Giving 모듈은 헌금, 기금, 결제 처리, 구독 및 관련 재무 작업을 관리합니다. 여러 결제 게이트웨이(Stripe, PayPal)를 지원하며, 일회성 및 정기 헌금을 처리하고, 헌금 배치를 추적하며, 비동기 결제 이벤트를 위한 webhook 처리를 제공합니다.
 
 </div>
 
 **기본 경로:** `/giving`
 
-## Donations
+## 헌금
 
 기본 경로: `/giving/donations`
 
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.View 또는 본인 personId | 모든 헌금 목록을 가져옵니다. `?batchId=` 또는 `?personId=`로 필터링합니다 |
-| GET | `/:id` | JWT | Donations.View | ID로 헌금을 가져옵니다 |
-| GET | `/my` | JWT | — | 현재 사용자의 헌금 내역을 가져옵니다 |
-| GET | `/summary` | JWT | Donations.ViewSummary | 헌금 요약을 가져옵니다. `?startDate=&endDate=&type=`로 필터링합니다. 인물별 분류는 `type=person`을 사용합니다 |
-| GET | `/testEmail` | Public | — | 테스트 이메일을 발송합니다(개발/디버깅용) |
-| POST | `/` | JWT | Donations.Edit | 헌금을 생성하거나 업데이트합니다(일괄 처리) |
-| DELETE | `/:id` | JWT | Donations.Edit | 헌금을 삭제합니다 |
+|--------|------|------|------|------|
+| GET | `/` | JWT | Donations.View 또는 본인 personId | 모든 헌금 나열. `?batchId=` 또는 `?personId=`로 필터링. `?personId=`를 사용하면 비과세 기금에 대한 헌금은 (헌금 명세서와 마찬가지로) 제외되며, 단 Donations.View 권한이 있는 호출자가 `&includeNonDeductible=1`을 추가하면 포함됨(B1Admin의 사람 기록이 이 방식을 사용) |
+| GET | `/:id` | JWT | Donations.View | ID로 헌금 조회 |
+| GET | `/my` | JWT | — | 현재 사용자의 헌금 조회 |
+| GET | `/my/summary?year=` | JWT | — | 현재 사용자의 연간 헌금 합계(기본값은 올해): `{ year, total, count, currency, isConverted }`, 합계는 교회 통화로 환산됨. 회원 홈 화면의 헌금 미리보기를 지원 |
+| GET | `/summary` | JWT | Donations.ViewSummary | 헌금 요약 조회. `?startDate=&endDate=&type=`로 필터링. 사람별 내역은 `type=person` 사용 |
+| GET | `/testEmail` | 공개 | — | 테스트 이메일 발송(개발/디버깅용) |
+| POST | `/` | JWT | Donations.Edit | 헌금 생성 또는 업데이트(배치) |
+| DELETE | `/:id` | JWT | Donations.Edit | 헌금 삭제 |
 
-### 예시: 배치별 헌금 목록 조회
+### 예시: 배치별 헌금 나열
 
 ```
 GET /giving/donations?batchId=abc-123
@@ -64,37 +65,37 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Donation Batches
+## 헌금 배치
 
 기본 경로: `/giving/donationbatches`
 
-`GenericCrudController`를 확장하여 `getById`, `getAll`, `post`, `delete` CRUD 경로를 제공합니다. 삭제 작업 시 배치 내 모든 헌금도 함께 제거됩니다.
+`getById`, `getAll`, `post`, `delete` CRUD 라우트를 가진 `GenericCrudController`를 확장합니다. 삭제 작업은 배치 안의 모든 헌금도 함께 삭제합니다.
 
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.ViewSummary | 모든 헌금 배치 목록을 가져옵니다 |
-| GET | `/:id` | JWT | Donations.ViewSummary | ID로 헌금 배치를 가져옵니다 |
-| POST | `/` | JWT | Donations.Edit | 헌금 배치를 생성하거나 업데이트합니다 |
-| DELETE | `/:id` | JWT | Donations.Edit | 배치와 그 안의 모든 헌금을 삭제합니다 |
+|--------|------|------|------|------|
+| GET | `/` | JWT | Donations.ViewSummary | 모든 헌금 배치 나열 |
+| GET | `/:id` | JWT | Donations.ViewSummary | ID로 헌금 배치 조회 |
+| POST | `/` | JWT | Donations.Edit | 헌금 배치 생성 또는 업데이트 |
+| DELETE | `/:id` | JWT | Donations.Edit | 배치와 그 안의 모든 헌금 삭제 |
 
-## Donate
+## 헌금 (Donate)
 
 기본 경로: `/giving/donate`
 
-청구, 구독, 웹훅, 수수료 계산을 포함한 공개 헌금 흐름을 처리합니다. 기본 CRUD 경로는 제공되지 않으며 모든 엔드포인트는 사용자 정의입니다.
+청구, 구독, webhook, 수수료 계산을 포함한 공개 헌금 흐름을 처리합니다. 기본 CRUD 라우트는 활성화되어 있지 않으며, 모든 엔드포인트가 사용자 정의입니다.
 
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
-|--------|------|------|------------|-------------|
-| GET | `/gateways/:churchId` | Public | — | 교회에서 사용 가능한 결제 게이트웨이를 가져옵니다(공개 키만) |
-| POST | `/client-token` | JWT | — | 게이트웨이 초기화를 위한 클라이언트 토큰을 생성합니다 |
-| POST | `/create-order` | JWT | — | 결제 주문을 생성합니다(PayPal 방식 결제) |
-| POST | `/charge` | JWT | — | 일회성 헌금 청구를 처리합니다 |
-| POST | `/subscribe` | JWT | — | 정기 헌금 구독을 생성합니다 |
-| POST | `/log` | Public | — | 헌금을 기록합니다. 본문: `{ donation, fundData }` |
-| POST | `/webhook/:provider` | Public | — | 결제 웹훅 이벤트를 수신합니다(Stripe, PayPal). `?churchId=`가 필요합니다 |
-| POST | `/replay-stripe-events` | JWT | Donations.Edit | 특정 날짜 범위의 Stripe 이벤트를 재실행합니다. 본문: `{ startDate, endDate, dryRun }` |
-| POST | `/fee` | Public | — | 거래 수수료를 계산합니다. 본문: `{ type, provider, gatewayId, amount, currency }`. `?churchId=`가 필요합니다 |
-| POST | `/captcha-verify` | Public | — | reCAPTCHA 토큰을 검증합니다. 본문: `{ token }` |
+|--------|------|------|------|------|
+| GET | `/gateways/:churchId` | 공개 | — | 교회의 사용 가능한 결제 게이트웨이 조회(공개 키만) |
+| POST | `/client-token` | JWT | — | 게이트웨이 초기화를 위한 클라이언트 토큰 생성 |
+| POST | `/create-order` | JWT | — | 결제 주문 생성(PayPal 방식 결제) |
+| POST | `/charge` | JWT | — | 일회성 헌금 청구 처리 |
+| POST | `/subscribe` | JWT | — | 정기 헌금 구독 생성 |
+| POST | `/log` | 공개 | — | 헌금 기록. 본문: `{ donation, fundData }` |
+| POST | `/webhook/:provider` | 공개 | — | 결제 webhook 이벤트 수신(Stripe, PayPal). `?churchId=` 필요 |
+| POST | `/replay-stripe-events` | JWT | Donations.Edit | 날짜 범위의 Stripe 이벤트 재생. 본문: `{ startDate, endDate, dryRun }` |
+| POST | `/fee` | 공개 | — | 거래 수수료 계산. 본문: `{ type, provider, gatewayId, amount, currency }`. `?churchId=` 필요 |
+| POST | `/captcha-verify` | 공개 | — | reCAPTCHA 토큰 검증. 본문: `{ token }` |
 
 ### 예시: 헌금 청구 처리
 
@@ -146,50 +147,50 @@ Authorization: Bearer <token>
 }
 ```
 
-## Funds
+## 기금
 
 기본 경로: `/giving/funds`
 
-`GenericCrudController`를 확장하여 `getById`, `getAll`, `post`, `delete` CRUD 경로를 제공합니다. `view` 권한은 `null`입니다(기금 조회에는 권한이 필요 없습니다).
+`getById`, `getAll`, `post`, `delete` CRUD 라우트를 가진 `GenericCrudController`를 확장합니다. `view` 권한은 `null`입니다(기금 조회에 권한이 필요하지 않음).
 
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | 모든 기금 목록을 가져옵니다 |
-| GET | `/:id` | JWT | — | ID로 기금을 가져옵니다 |
-| GET | `/churchId/:churchId` | Public | — | 특정 교회의 모든 기금을 가져옵니다(공개) |
-| GET | `/public/:churchId/:fundId/total?startDate=&endDate=` | Public | — | 기금의 헌금 총액을 가져옵니다: `{ fundId, totalAmount, donationCount }`. 웹사이트 빌더의 `campaignProgress` 요소를 지원합니다 |
-| POST | `/` | JWT | Donations.Edit | 기금을 생성하거나 업데이트합니다 |
-| DELETE | `/:id` | JWT | Donations.Edit | 기금을 삭제합니다 |
+|--------|------|------|------|------|
+| GET | `/` | JWT | — | 모든 기금 나열 |
+| GET | `/:id` | JWT | — | ID로 기금 조회 |
+| GET | `/churchId/:churchId` | 공개 | — | 특정 교회의 모든 기금 조회(공개) |
+| GET | `/public/:churchId/:fundId/total?startDate=&endDate=` | 공개 | — | 기금의 헌금 합계 조회: `{ fundId, totalAmount, donationCount }`. 웹사이트 빌더의 `campaignProgress` 요소를 지원 |
+| POST | `/` | JWT | Donations.Edit | 기금 생성 또는 업데이트 |
+| DELETE | `/:id` | JWT | Donations.Edit | 기금 삭제 |
 
-## Fund Donations
+## 기금별 헌금
 
 기본 경로: `/giving/funddonations`
 
-개별 헌금이 여러 기금에 어떻게 배분되는지 추적합니다. 기본 CRUD 경로는 제공되지 않으며 모든 엔드포인트는 사용자 정의입니다.
+개별 헌금이 기금별로 어떻게 배분되는지 추적합니다. 기본 CRUD 라우트는 활성화되어 있지 않으며, 모든 엔드포인트가 사용자 정의입니다.
 
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.View | 기금별 헌금 목록을 가져옵니다. `?donationId=`, `?personId=`, `?fundId=`, 또는 `?fundName=`으로 필터링합니다. 선택적으로 `?startDate=&endDate=`를 추가해 날짜로 필터링할 수 있습니다 |
-| GET | `/:id` | JWT | Donations.View | ID로 기금별 헌금을 가져옵니다 |
-| GET | `/my` | JWT | — | 현재 사용자의 기금별 헌금 내역을 가져옵니다 |
-| POST | `/` | JWT | Donations.Edit | 기금별 헌금을 생성하거나 업데이트합니다(일괄 처리) |
-| DELETE | `/:id` | JWT | Donations.Edit | 기금별 헌금을 삭제합니다 |
+|--------|------|------|------|------|
+| GET | `/` | JWT | Donations.View | 기금별 헌금 나열. `?donationId=`, `?personId=`, `?fundId=`, `?fundName=`으로 필터링. 날짜 필터링을 위해 `?startDate=&endDate=`를 선택적으로 추가 가능 |
+| GET | `/:id` | JWT | Donations.View | ID로 기금별 헌금 조회 |
+| GET | `/my` | JWT | — | 현재 사용자의 기금별 헌금 조회 |
+| POST | `/` | JWT | Donations.Edit | 기금별 헌금 생성 또는 업데이트(배치) |
+| DELETE | `/:id` | JWT | Donations.Edit | 기금별 헌금 삭제 |
 
-## Gateways
+## 게이트웨이
 
 기본 경로: `/giving/gateways`
 
-결제 게이트웨이 설정(Stripe, PayPal 등)을 관리합니다. 기본 CRUD 경로는 제공되지 않으며 모든 엔드포인트는 사용자 정의입니다. 게이트웨이 비밀 정보는 저장 시 암호화됩니다.
+결제 게이트웨이 설정(Stripe, PayPal 등)을 관리합니다. 기본 CRUD 라우트는 활성화되어 있지 않으며, 모든 엔드포인트가 사용자 정의입니다. 게이트웨이의 비밀 값은 저장 시 암호화됩니다.
 
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | 교회의 모든 게이트웨이 목록을 가져옵니다 |
-| GET | `/:id` | JWT | Settings.Edit | ID로 게이트웨이를 가져옵니다 |
-| GET | `/churchId/:churchId` | Public | — | 교회의 게이트웨이를 가져옵니다(공개 키만) |
-| GET | `/configured/:churchId` | Public | — | 교회에 설정된 결제 게이트웨이가 있는지 확인합니다 |
-| POST | `/` | JWT | Settings.Edit | 게이트웨이를 생성하거나 업데이트합니다(키 암호화, 웹훅 및 상품 프로비저닝) |
-| PATCH | `/:id` | JWT | Settings.Edit | 게이트웨이를 부분적으로 업데이트합니다 |
-| DELETE | `/:id` | JWT | Settings.Edit | 게이트웨이를 삭제합니다(관련 웹훅도 함께 제거) |
+|--------|------|------|------|------|
+| GET | `/` | JWT | — | 교회의 모든 게이트웨이 나열 |
+| GET | `/:id` | JWT | Settings.Edit | ID로 게이트웨이 조회 |
+| GET | `/churchId/:churchId` | 공개 | — | 교회의 게이트웨이 조회(공개 키만) |
+| GET | `/configured/:churchId` | 공개 | — | 교회에 결제 게이트웨이가 설정되어 있는지 확인 |
+| POST | `/` | JWT | Settings.Edit | 게이트웨이 생성 또는 업데이트(키 암호화, webhook 및 제품 프로비저닝) |
+| PATCH | `/:id` | JWT | Settings.Edit | 게이트웨이 부분 업데이트 |
+| DELETE | `/:id` | JWT | Settings.Edit | 게이트웨이 삭제(그 webhook도 함께 삭제) |
 
 ### 예시: 게이트웨이 설정 확인
 
@@ -203,79 +204,79 @@ GET /giving/gateways/configured/church-123
 }
 ```
 
-## Customers
+## 고객
 
 기본 경로: `/giving/customers`
 
-`GenericCrudController`를 확장하여 `getAll`, `delete` CRUD 경로를 제공합니다. 인물을 결제 게이트웨이의 고객 레코드와 연결합니다.
+`getAll`, `delete` CRUD 라우트를 가진 `GenericCrudController`를 확장합니다. 사람을 결제 게이트웨이의 고객 기록과 연결합니다.
 
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.ViewSummary | 모든 고객 목록을 가져옵니다 |
-| GET | `/:id` | JWT | Donations.ViewSummary 또는 본인 레코드 | ID로 고객을 가져옵니다 |
-| GET | `/:id/subscriptions` | JWT | Donations.ViewSummary 또는 본인 레코드 | 고객의 게이트웨이 구독 정보를 가져옵니다 |
-| DELETE | `/:id` | JWT | Donations.Edit | 고객을 삭제합니다 |
+|--------|------|------|------|------|
+| GET | `/` | JWT | Donations.ViewSummary | 모든 고객 나열 |
+| GET | `/:id` | JWT | Donations.ViewSummary 또는 본인 기록 | ID로 고객 조회 |
+| GET | `/:id/subscriptions` | JWT | Donations.ViewSummary 또는 본인 기록 | 고객의 게이트웨이 구독 조회 |
+| DELETE | `/:id` | JWT | Donations.Edit | 고객 삭제 |
 
-## Subscriptions
+## 구독
 
 기본 경로: `/giving/subscriptions`
 
-정기 헌금 구독을 관리합니다. 기본 CRUD 경로는 제공되지 않으며 모든 엔드포인트는 사용자 정의입니다.
+정기 헌금 구독을 관리합니다. 기본 CRUD 라우트는 활성화되어 있지 않으며, 모든 엔드포인트가 사용자 정의입니다.
 
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.ViewSummary | 모든 구독 목록을 가져옵니다 |
-| GET | `/:id` | JWT | Donations.ViewSummary | ID로 구독을 가져옵니다 |
-| POST | `/` | JWT | Donations.Edit 또는 본인 구독 | 결제 게이트웨이의 구독 정보를 업데이트합니다 |
-| DELETE | `/:id` | JWT | Donations.Edit 또는 본인 구독 | 구독을 취소하고 데이터베이스에서 제거합니다. 본문: `{ provider, reason }` |
+|--------|------|------|------|------|
+| GET | `/` | JWT | Donations.ViewSummary | 모든 구독 나열 |
+| GET | `/:id` | JWT | Donations.ViewSummary | ID로 구독 조회 |
+| POST | `/` | JWT | Donations.Edit 또는 본인 구독 | 결제 게이트웨이를 통해 구독 업데이트 |
+| DELETE | `/:id` | JWT | Donations.Edit 또는 본인 구독 | 구독 취소 및 데이터베이스에서 삭제. 본문: `{ provider, reason }` |
 
-## Subscription Funds
+## 구독 기금
 
 기본 경로: `/giving/subscriptionfunds`
 
-정기 구독의 기금 배분을 추적합니다. 기본 CRUD 경로는 제공되지 않으며 모든 엔드포인트는 사용자 정의입니다.
+정기 구독의 기금 배분을 추적합니다. 기본 CRUD 라우트는 활성화되어 있지 않으며, 모든 엔드포인트가 사용자 정의입니다.
 
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.View 또는 본인 구독 | 구독 기금 목록을 가져옵니다. `?subscriptionId=`로 필터링합니다 |
-| GET | `/:id` | JWT | Donations.ViewSummary | ID로 구독 기금을 가져옵니다 |
-| DELETE | `/:id` | JWT | Donations.Edit | 구독 기금을 삭제합니다 |
-| DELETE | `/subscription/:id` | JWT | Donations.Edit 또는 본인 구독 | 구독의 모든 기금을 삭제합니다 |
+|--------|------|------|------|------|
+| GET | `/` | JWT | Donations.View 또는 본인 구독 | 구독 기금 나열. `?subscriptionId=`로 필터링 |
+| GET | `/:id` | JWT | Donations.ViewSummary | ID로 구독 기금 조회 |
+| DELETE | `/:id` | JWT | Donations.Edit | 구독 기금 삭제 |
+| DELETE | `/subscription/:id` | JWT | Donations.Edit 또는 본인 구독 | 구독의 모든 기금 삭제 |
 
-## Payment Methods
+## 결제 수단
 
 기본 경로: `/giving/paymentmethods`
 
-결제 게이트웨이 API를 통해 저장된 결제 수단(카드, 계좌)을 관리합니다. 기본 CRUD 경로는 제공되지 않으며 모든 엔드포인트는 사용자 정의입니다.
+결제 게이트웨이 API를 통해 저장된 결제 수단(카드, 은행 계좌)을 관리합니다. 기본 CRUD 라우트는 활성화되어 있지 않으며, 모든 엔드포인트가 사용자 정의입니다.
 
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
-|--------|------|------|------------|-------------|
-| GET | `/personid/:id` | JWT | Donations.View 또는 본인 personId | 특정 인물의 저장된 모든 결제 수단(카드, 계좌)을 가져옵니다 |
-| POST | `/addcard` | JWT | — | 카드 결제 수단을 연결합니다. 본문: `{ id, personId, customerId, email, name, churchId, provider }` |
-| POST | `/updatecard` | JWT | Donations.Edit 또는 본인 personId | 카드 정보를 업데이트합니다. 본문: `{ personId, paymentMethodId, cardData, provider }` |
-| POST | `/ach-setup-intent` | JWT | Donations.Edit 또는 본인 personId | 계좌 연결을 위한 Stripe ACH SetupIntent를 생성합니다. 본문: `{ personId, customerId, email, name, churchId }` |
-| POST | `/ach-setup-intent-anon` | Public | — | 게스트 헌금을 위한 익명 ACH SetupIntent를 생성합니다. 본문: `{ email, name, churchId, gatewayId }` |
-| POST | `/addbankaccount` | JWT | Donations.Edit 또는 본인 personId | 토큰을 통해 계좌를 추가합니다(더 이상 사용되지 않음; `ach-setup-intent` 사용 권장). 본문: `{ id, personId, customerId, email, name }` |
-| POST | `/updatebank` | JWT | Donations.Edit 또는 본인 personId | 계좌 정보를 업데이트합니다. 본문: `{ paymentMethodId, personId, bankData, customerId }` |
-| POST | `/verifybank` | JWT | Donations.Edit 또는 본인 고객 | 소액 입금으로 계좌를 검증합니다. 본문: `{ paymentMethodId, customerId, amountData }` |
-| DELETE | `/:id/:customerid` | JWT | Donations.Edit 또는 본인 고객 | 결제 수단(카드 또는 계좌)을 삭제합니다 |
+|--------|------|------|------|------|
+| GET | `/personid/:id` | JWT | Donations.View 또는 본인 personId | 사람의 저장된 모든 결제 수단(카드, 은행 계좌) 조회 |
+| POST | `/addcard` | JWT | — | 카드 결제 수단 연결. 본문: `{ id, personId, customerId, email, name, churchId, provider }` |
+| POST | `/updatecard` | JWT | Donations.Edit 또는 본인 personId | 카드 정보 업데이트. 본문: `{ personId, paymentMethodId, cardData, provider }` |
+| POST | `/ach-setup-intent` | JWT | Donations.Edit 또는 본인 personId | 은행 계좌 연결을 위한 Stripe ACH SetupIntent 생성. 본문: `{ personId, customerId, email, name, churchId }` |
+| POST | `/ach-setup-intent-anon` | 공개 | — | 손님 헌금을 위한 익명 ACH SetupIntent 생성. 본문: `{ email, name, churchId, gatewayId }` |
+| POST | `/addbankaccount` | JWT | Donations.Edit 또는 본인 personId | 토큰으로 은행 계좌 추가(지원 중단됨. `ach-setup-intent` 사용). 본문: `{ id, personId, customerId, email, name }` |
+| POST | `/updatebank` | JWT | Donations.Edit 또는 본인 personId | 은행 계좌 정보 업데이트. 본문: `{ paymentMethodId, personId, bankData, customerId }` |
+| POST | `/verifybank` | JWT | Donations.Edit 또는 본인 고객 | 소액 입금으로 은행 계좌 인증. 본문: `{ paymentMethodId, customerId, amountData }` |
+| DELETE | `/:id/:customerid` | JWT | Donations.Edit 또는 본인 고객 | 결제 수단(카드 또는 은행 계좌) 삭제 |
 
-## Event Log
+## 이벤트 로그
 
 기본 경로: `/giving/eventLog`
 
-`GenericCrudController`를 확장하여 `getById`, `getAll`, `post`, `delete` CRUD 경로를 제공합니다. 감사 및 중복 제거를 위해 결제 게이트웨이 웹훅 이벤트를 추적합니다.
+`getById`, `getAll`, `post`, `delete` CRUD 라우트를 가진 `GenericCrudController`를 확장합니다. 감사 및 중복 제거를 위해 결제 게이트웨이 webhook 이벤트를 추적합니다.
 
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.ViewSummary | 모든 이벤트 로그 목록을 가져옵니다 |
-| GET | `/:id` | JWT | Donations.ViewSummary | ID로 이벤트 로그를 가져옵니다 |
-| GET | `/type/:type` | JWT | Donations.ViewSummary | 이벤트 유형별로 필터링된 이벤트 로그를 가져옵니다 |
-| POST | `/` | JWT | Donations.Edit | 이벤트 로그를 생성하거나 업데이트합니다 |
-| DELETE | `/:id` | JWT | Donations.Edit | 이벤트 로그를 삭제합니다 |
+|--------|------|------|------|------|
+| GET | `/` | JWT | Donations.ViewSummary | 모든 이벤트 로그 나열 |
+| GET | `/:id` | JWT | Donations.ViewSummary | ID로 이벤트 로그 조회 |
+| GET | `/type/:type` | JWT | Donations.ViewSummary | 이벤트 유형별 이벤트 로그 조회 |
+| POST | `/` | JWT | Donations.Edit | 이벤트 로그 생성 또는 업데이트 |
+| DELETE | `/:id` | JWT | Donations.Edit | 이벤트 로그 삭제 |
 
 ## 관련 페이지
 
-- [Membership 엔드포인트](./membership) — 인물, 교회, 그룹, 역할, 권한
+- [Membership 엔드포인트](./membership) — 사람, 교회, 그룹, 역할, 권한
 - [인증 및 권한](./authentication) — 로그인 흐름, JWT, OAuth, 권한 모델
 - [모듈 구조](../module-structure) — 코드 구성 패턴

@@ -1,81 +1,102 @@
 ---
-title: "B1App को नेविगेट करना"
+title: "B1App में नेविगेट करना"
 ---
 
-# B1App को नेविगेट करना
+# B1App में नेविगेट करना
 
 <div class="article-intro">
 
-B1.church में सदस्य पोर्टल एक फोन-पहली वेब ऐप है जो `/mobile` के तहत रहती है। यह किसी भी ब्राउज़र में काम करती है और इसे आपकी होम स्क्रीन पर इंस्टॉल किया जा सकता है। यह पृष्ठ होम डैशबोर्ड, निचले टैब बार, अधिक मेनू और मुझे पृष्ठ की व्याख्या करता है।
+B1.church का member portal एक phone-first web app है, जो `/mobile` के अंतर्गत रहता है। यह किसी भी browser में काम करता है और इसे आपकी home screen पर install किया जा सकता है। यह पेज Home dashboard, नीचे का tab bar, More page, और Me page समझाता है।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- अपनी व्यक्तिगत जानकारी देखने के लिए आपको [लॉगिन](./logging-in.md) करना होगा। साइन आउट किए गए आगंतुक अभी भी सार्वजनिक सामग्री ब्राउज़ कर सकते हैं और जहां एक सुविधा के लिए खाता आवश्यक है वहां **साइन इन** बटन दिया जाता है।
+- अपनी व्यक्तिगत जानकारी देखने के लिए आपको [logged in](./logging-in.md) होना चाहिए। Sign out किए हुए visitors सार्वजनिक content ब्राउज़ कर सकते हैं, और जहां किसी feature के लिए account चाहिए वहां उन्हें **Sign In** button दिया जाता है।
 
 </div>
 
-## होम
+## Home
 
-`https://yourchurchname.b1.church/mobile` को खोलने से आप **होम** डैशबोर्ड पर `/mobile/dashboard` पर पहुंचते हैं। होम सदस्य पोर्टल का लैंडिंग पेज है और निम्नलिखित दिखाता है:
+`https://yourchurchname.b1.church/mobile` खोलने पर आप **Home** dashboard पर पहुंचते हैं, जो `/mobile/dashboard` पर है। Home member portal का landing page है। यह एक अभिवादन ("Good morning", "Good afternoon", या "Good evening" आपके पहले नाम के साथ) और आज की तारीख से शुरू होता है, उसके बाद ऐसे sections आते हैं जो केवल तभी दिखते हैं जब वे लागू हों:
 
-- आपके नाम के साथ एक अभिनंदन
-- दिन का पद्य
-- आपकी चर्च द्वारा हाइलाइट की गई किसी भी चीज़ के लिए एक फीचर कार्ड
-- **अन्वेषण** ग्रिड आपकी चर्च ने चालू किए गए उपकरणों के -- समूह, दान, चेक-इन, उपदेश, योजनाएं, और अधिक
+- **Latest sermon** -- आपके church का नवीनतम sermon, **All sermons** link के साथ
+- **Verse of the Day** -- आज का verse; पूरा [Verse of the Day](../content/verse-of-the-day.md) page खोलने के लिए उस पर tap करें
+- **You're serving** -- आपकी अगली आने वाली serving assignments, **All plans** link के साथ। यदि किसी assignment को अभी भी आपके उत्तर की ज़रूरत है, तो वे पहले **Needs reply** badge और **Accept** / **Decline** buttons के साथ दिखती हैं ताकि आप Home से ही जवाब दे सकें; अन्यथा आपकी अगली assignments पर **Accepted** या **Confirmed** badge दिखता है। assignment का plan खोलने के लिए उस पर tap करें।
+- **Your groups** -- आपके अधिकतम तीन groups उनके meeting time और location के साथ, और **All groups** link
+- **Giving** -- इस साल (वर्तमान वर्ष के लिए "Given in") आपने कितना दिया है, एक **Give** button, और आपके [donation history](../giving/donation-history.md) का **History** link
+- **More from** *आपके church* से -- आपके church द्वारा चालू किए गए बाकी tools के buttons, जो पहले से tab bar में या ऊपर नहीं दिखाए गए हैं। जिनका आप सबसे अधिक उपयोग करते हैं वे आगे आ जाते हैं।
 
-अन्वेषण में एक कार्ड को टैप करने से वह उपकरण खुलता है। यदि आपकी चर्च के पास डैशबोर्ड पर फिट होने से अधिक उपकरण हैं, तो अंतिम कार्ड **अधिक** है, जो `/mobile/more` पर पूर्ण सूची खोलता है।
+serving, groups, और giving sections केवल तभी दिखते हैं जब आप sign in हों, आपके church ने वह tool चालू किया हो, और दिखाने के लिए कुछ हो -- उदाहरण के लिए, कोई आने वाली assignment या कम से कम एक group। कंप्यूटर पर, Home दो columns में व्यवस्थित होता है।
 
-यदि आप साइन आउट हैं, तो होम अभिनंदन के स्थान पर **स्वागत है** शीर्षक दिखाता है, एक संक्षिप्त प्रेरणा ("अपने समूह, दान, और अधिक देखने के लिए साइन इन करें।") और **साइन इन** बटन के साथ। आपकी चर्च इस संकेत को फिर से शब्द दे सकती है या इसे छिपा सकती है -- [मोबाइल ऐप सेटिंग्स](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt) देखें। जब यह छिपा हुआ हो, तो आप अभी भी मेनू या मुझे टैब से साइन इन कर सकते हैं।
+यदि आप sign out हैं, तो Home अभिवादन के स्थान पर **Welcome** heading दिखाता है, एक छोटे prompt ("Sign in to see your groups, giving, and more.") और एक **Sign In** button के साथ। आपका church इस prompt के शब्द बदल सकता है या इसे छिपा सकता है -- देखें [Mobile App Settings](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt)। जब यह छिपा होता है, तब भी आप **More** page या **Me** page से sign in कर सकते हैं।
 
-## निचला टैब बार
+## नीचे का Tab Bar
 
-एक फोन पर, एक टैब बार स्क्रीन के नीचे तय होता है:
+phone पर, screen के नीचे एक tab bar स्थिर रहता है:
 
-- **होम** -- हमेशा पहला टैब
-- आपकी चर्च द्वारा कॉन्फ़िगर किए गए तीन तक के टैब
-- **अधिक** -- नेविगेशन मेनू खोलता है
+- **Home** -- हमेशा पहला tab
+- आपके church द्वारा कॉन्फ़िगर किए गए tabs में से अधिकतम तीन
+- **More** -- More page खोलता है
 
-यदि आपकी चर्च ने तीन से अधिक टैब कॉन्फ़िगर किए हैं, तो बाकी खो नहीं जाते हैं: वे **अधिक** मेनू और डैशबोर्ड के अन्वेषण ग्रिड में दिखाई देते हैं। चर्च प्रशासक **मोबाइल → नेविगेशन** के तहत B1 Admin में टैब ऑर्डर सेट करते हैं।
+बाहरी websites, custom pages, और Verse of the Day के links को कभी tab नहीं मिलता। यदि आपके church ने फिट होने से अधिक tabs कॉन्फ़िगर किए हैं, तो बाकी खोते नहीं हैं: वे **More** page पर और Home पर **More from** section में दिखते हैं। church administrators B1 Admin में **Mobile → Navigation** के अंतर्गत tab का क्रम सेट करते हैं।
 
-## मेनू
+## Computer पर
 
-**अधिक** को टैप करने से नेविगेशन मेनू खुलता है। एक टैबलेट या डेस्कटॉप पर वही मेनू हमेशा स्क्रीन के बाईं ओर दिखाई देती है। इसमें शामिल है:
+किसी बड़ी screen, जैसे computer या बड़े tablet पर, नीचे का tab bar screen के ऊपर एक header से बदल जाता है, जो आपके church के रंग में होता है। इसमें आपके church का नाम दिखता है (उस पर click करके Home पर लौटें), **Home**, आपके church द्वारा कॉन्फ़िगर किए गए अधिकतम पांच tabs, और **More**, और दाईं ओर bell और आपकी profile photo। जब आप कोई detail screen खोलते हैं, तो page content के ऊपर एक **Back** link दिखता है।
 
-- आपका नाम और फोटो, एक **प्रोफाइल संपादित करें** शॉर्टकट के साथ — [अपनी प्रोफाइल संपादित करना](./editing-your-profile.md) देखें
-- **होम** और **मुझे**
-- **व्यवस्थापक पोर्टल** -- केवल दिखाया जाता है यदि आपके पास आपकी चर्च में व्यवस्थापक अनुमतियां हैं; यह B1 Admin खोलता है
-- हर टैब आपकी चर्च द्वारा क्रम में कॉन्फ़िगर किए गए
-- **ऐप इंस्टॉल करें** -- [इंस्टॉलेशन निर्देश](./installing-pwa.md) को `/mobile/install` पर खोलता है
-- एक लाइट/डार्क मोड टॉगल
-- **साइन इन** या **लॉगआउट**
-- आपकी चर्च का नाम और गोपनीयता नीति का लिंक
+## More Page
 
-## ऐप बार
+**More** पर tap करने से `/mobile/more` पर More page खुलता है। इसमें शामिल है:
 
-हर स्क्रीन के शीर्ष पर बार निम्नलिखित दिखाती है:
+- आपका नाम और photo, **Edit Profile** link के साथ -- देखें [Editing Your Profile](./editing-your-profile.md)
+- आपके church के नाम के नीचे, क्रम में, आपके church द्वारा कॉन्फ़िगर किए गए हर tab। बाहरी websites के links एक नए browser tab में खुलते हैं।
+- एक **Account** section, जिसमें:
+  - **Me** -- आपका व्यक्तिगत page (केवल sign in होने पर)
+  - **Appearance** -- **Light Mode** और **Dark Mode** के बीच switch करें
+  - **Admin Portal** -- केवल तभी दिखता है जब आपके church में आपके पास administrator permissions हों; यह B1 Admin को एक नए tab में खोलता है
+  - **Install App** -- `/mobile/install` पर [install निर्देश](./installing-pwa.md) खोलता है (ऐप install होने के बाद यह छिप जाता है)
+- **Sign out**, या यदि आप sign out हैं तो **Sign In** button
+- आपके church का नाम और privacy policy का link
 
-- स्क्रीन शीर्षक, या होम पर आपकी चर्च का नाम
-- एक पिछड़ा तीर जब आप विवरण स्क्रीन में ड्रिल किए हों
-- अपठित आइटमों के लिए बैज के साथ सूचनाओं और संदेशों के लिए **घंटी** आइकन
-- आपकी **प्रोफाइल फोटो**, जो आपकी प्रोफाइल को `/mobile/profileEdit` पर खोलता है — [अपनी प्रोफाइल संपादित करना](./editing-your-profile.md) देखें
+## App Bar
 
-## मुझे पृष्ठ
+phone पर, हर screen के ऊपर की bar में दिखता है:
 
-**मुझे** (`/mobile/me`) आपका व्यक्तिगत हब है। यह आपकी प्रोफाइल, [सूचना प्राथमिकताएं](./notification-preferences.md), संदेश, [दान](../giving/), और [पंजीकरण](../events/my-registrations.md) के शॉर्टकट सूचीबद्ध करता है, इसके बाद आपके लिए क्या आ रहा है -- सेवा असाइनमेंट, इवेंट पंजीकरण, और समूह इवेंट -- और आपकी सबसे हाल की सूचनाएं। विवरण के लिए [मुझे पृष्ठ](./me-page) देखें।
+- Home और अन्य मुख्य screens पर आपके church का नाम, या जब आप किसी detail screen में गहराई तक गए हों तो एक back arrow। screen का शीर्षक page के ऊपर स्वयं दिखता है।
+- notifications और messages के लिए एक **bell** icon, जिस पर न पढ़े गए items का badge होता है -- नीचे [Notifications and Messages](#notifications-and-messages) देखें
+- आपकी **profile photo**, जो `/mobile/profileEdit` पर आपकी profile खोलती है -- देखें [Editing Your Profile](./editing-your-profile.md)
 
-यदि आप साइन आउट हैं, तो मुझे पृष्ठ इसके बजाय **साइन इन** बटन दिखाता है।
+bell और profile photo केवल तभी दिखते हैं जब आप sign in हों।
 
-## अपनी होम स्क्रीन पर इंस्टॉल करना
+## Notifications और Messages
 
-सदस्य पोर्टल एक प्रगतिशील वेब ऐप है। अपने डिवाइस के लिए चरण-दर-चरण निर्देशों के लिए `/mobile/install` पर जाएं (या मेनू में **ऐप इंस्टॉल करें** चुनें)। एक बार इंस्टॉल हो जाने के बाद, यह ब्राउज़र क्रोम के बिना आपकी होम स्क्रीन से पूर्ण-स्क्रीन खुलता है। [ऐप के रूप में इंस्टॉल करना (PWA)](./installing-pwa.md) देखें।
+bell पर tap करने से दो sections वाला एक panel खुलता है:
 
-## आपकी चर्च की सार्वजनिक वेबसाइट
+- **Messages** -- आपकी सबसे हाल की निजी बातचीत, एक नई शुरू करने के लिए **New message** link के साथ
+- **Notifications** -- आपकी सबसे हाल की notifications, जिन्हें नहीं पढ़ा गया उन पर **New** badge के साथ। जिस group, plan, या conversation से notification आई है उस पर जाने के लिए उस पर tap करें।
 
-सदस्य पोर्टल के बाहर, आपकी चर्च की सार्वजनिक वेबसाइट की अपनी हेडर नेविगेशन है जिसमें आपके प्रशासकों द्वारा कॉन्फ़िगर किए गए लिंक हैं -- [उपदेश](../content/sermons.md), [बाइबल](../content/bible.md), [लाइव स्ट्रीमिंग](../content/live-streaming.md), और एक सार्वजनिक समूह सूची जैसे पृष्ठ। एक फोन पर वे लिंक हेडर के शीर्ष-दाईं ओर हैम्बर्गर आइकन के पीछे रहते हैं।
+हर section दिखाता है कि उसमें कितने न पढ़े गए items हैं। अपना पूरा inbox `/mobile/notifications` पर खोलने के लिए नीचे **See all** पर tap करें।
+
+## Sections वाले Pages
+
+detail pages -- एक group, एक plan, आपका Me page, और Plans व Giving screens -- tabs के बजाय sections के एक page के रूप में व्यवस्थित होते हैं। हर section एक छोटा preview दिखाता है, और section के header में एक link (जैसे **All members**, **All events**, या **Full service order**) पूरी सूची खोलता है। उस view के ऊपर का **Back to** link आपको उस page पर वापस ले जाता है जहां से आप आए थे।
+
+## Me Page
+
+**Me** (`/mobile/me`) आपका व्यक्तिगत केंद्र है। यह आपका नाम और photo, **Edit Profile** और **Settings** ([notification preferences](./notification-preferences.md)) buttons के साथ दिखाता है, फिर आपके लिए आने वाली चीज़ें -- serving assignments, event registrations, और group events -- उसके बाद आपका household, आपके groups, इस साल आपकी [giving](../giving/), आपके [registrations](../events/my-registrations.md), और हाल की notifications और messages। विवरण के लिए [The Me Page](./me-page) देखें।
+
+यदि आप sign out हैं, तो Me page इसके बजाय **Sign In** button दिखाता है।
+
+## अपनी Home Screen पर Install करना
+
+member portal एक Progressive Web App है। अपने device के लिए चरण-दर-चरण निर्देशों के लिए `/mobile/install` पर जाएं (या More page पर **Install App** चुनें)। install होने के बाद, यह आपकी home screen से browser के ढांचे के बिना पूर्ण-स्क्रीन खुलता है। देखें [Installing as an App (PWA)](./installing-pwa.md)।
+
+## आपके Church की Public Website
+
+member portal के बाहर, आपके church की public website का अपना header navigation होता है, जिसमें आपके administrators द्वारा कॉन्फ़िगर किए गए links हैं -- जैसे [sermons](../content/sermons.md), [Bible](../content/bible.md), [live streaming](../content/live-streaming.md) वाले pages, और एक public group list। phone पर ये links header के ऊपर-दाईं ओर hamburger icon के पीछे होते हैं।
 
 :::info
-आप देखते हैं कि टैब और उपकरण चर्च के अनुसार अलग-अलग होते हैं। व्यवस्थापक B1 Admin के माध्यम से सदस्यों को कौन से सेक्शन दिखाई देते हैं यह नियंत्रित करते हैं, इसलिए यदि आप यहां वर्णित कोई सुविधा नहीं देखते हैं, तो आपकी चर्च शायद इसे चालू नहीं किया होगा।
+आप जो tabs और tools देखते हैं वे church के अनुसार अलग होते हैं। Administrators B1 Admin के माध्यम से नियंत्रित करते हैं कि members को कौन-से sections दिखें, इसलिए यदि आपको यहां वर्णित कोई feature नहीं दिखता, तो हो सकता है कि आपके church ने उसे चालू न किया हो।
 :::

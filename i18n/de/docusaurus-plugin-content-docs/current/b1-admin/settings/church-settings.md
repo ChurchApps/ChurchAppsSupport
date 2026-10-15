@@ -1,158 +1,178 @@
 ---
-title: "Church Settings"
+title: "Gemeindeeinstellungen"
 ---
 
-# Church Settings
+# Gemeindeeinstellungen
 
 <div class="article-intro">
 
-Die Seite Church Settings ist der Ort, an dem Sie die grundlegenden Informationen, Kontaktdaten und das Branding Ihrer Kirche konfigurieren. Diese Details werden in allen ChurchApps-Tools verwendet, einschließlich Ihrer B1.church-Website und der B1 Mobile-App.
+Auf der Seite Gemeindeeinstellungen konfigurieren Sie die Grundangaben Ihrer Gemeinde, Kontaktdaten und das Erscheinungsbild. Diese Angaben werden in allen ChurchApps-Werkzeugen verwendet, einschließlich Ihrer B1.church-Website und der B1-Mobile-App.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie benötigen die Berechtigung "Edit Church Settings". Siehe [Rollen & Berechtigungen](./roles-permissions.md), wenn Sie keinen Zugriff haben.
-- Halten Sie die Adresse, Kontaktinformationen und das Logo Ihrer Kirche bereit
+- Sie benötigen die Berechtigung „Gemeindeeinstellungen bearbeiten“. Wenn Sie keinen Zugriff haben, lesen Sie [Rollen & Berechtigungen](./roles-permissions.md).
+- Halten Sie die Anschrift, die Kontaktdaten und das Logo Ihrer Gemeinde bereit
 
 </div>
 
-## Bearbeitung Ihrer Kircheninformationen
+## Gemeindeangaben bearbeiten
 
-1. Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Settings** und klicken Sie auf **Settings**.
-2. Klicken Sie im Abschnitt **Church Information** (oben auf der Seite) auf **Edit**.
+1. Öffnen Sie in B1 Admin das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), klappen Sie **Einstellungen** auf und klicken Sie auf **Einstellungen**.
+2. Klicken Sie im Abschnitt **Gemeindeangaben** (oben auf der Seite) auf **Bearbeiten**.
 3. Aktualisieren Sie eines der folgenden Felder:
-   - **Church Name** -- Der Name, der in allen ChurchApps-Produkten angezeigt wird.
-   - **Address** -- Die physische Adresse Ihrer Kirche.
-   - **Contact Information** -- Telefonnummer, E-Mail und weitere Kontaktdaten.
-4. Klicken Sie auf **Save**, um Ihre Änderungen zu übernehmen.
+   - **Name der Gemeinde** -- Der Name, der in allen ChurchApps-Produkten angezeigt wird.
+   - **Anschrift** -- Die physische Anschrift Ihrer Gemeinde.
+   - **Kontaktangaben** -- Telefonnummer, E-Mail-Adresse und weitere Kontaktdaten.
+4. Klicken Sie auf **Speichern**, um Ihre Änderungen zu übernehmen.
 
-## Einrichtung Ihrer Subdomain
+## Ihre Subdomain einrichten
 
-Ihre Kirche erhält eine kostenlose Subdomain bei **yourchurch.1.church**. Dies ist die Web-Adresse, unter der Mitglieder und Besucher auf die Online-Präsenz Ihrer Kirche zugreifen können.
+Ihre Gemeinde erhält kostenlos eine Subdomain unter **ihregemeinde.1.church**. Unter dieser Webadresse können Mitglieder und Besucher den Online-Auftritt Ihrer Gemeinde aufrufen.
 
-1. Klicken Sie auf der Seite Settings im Abschnitt **Church Information** auf **Edit** und suchen Sie das Feld **Subdomain**.
-2. Geben Sie Ihre bevorzugte Subdomain ein (z. B. "gracechurch" für gracechurch.1.church).
+1. Klicken Sie auf der Seite Einstellungen im Abschnitt **Gemeindeangaben** auf **Bearbeiten** und suchen Sie das Feld **Subdomain**.
+2. Geben Sie Ihre gewünschte Subdomain ein (zum Beispiel „gracechurch“ für gracechurch.1.church).
 3. Speichern Sie Ihre Änderungen.
 
 :::info
-Ihre Subdomain muss über alle ChurchApps-Kirchen hinweg eindeutig sein. Wenn Ihr bevorzugter Name bereits vergeben ist, versuchen Sie, Ihre Stadt oder Ihren Staat hinzuzufügen (z. B. "gracechurch-dallas").
+Ihre Subdomain muss in allen ChurchApps-Gemeinden eindeutig sein. Ist Ihr Wunschname bereits vergeben, fügen Sie etwa Ihre Stadt oder Ihr Bundesland hinzu (zum Beispiel „gracechurch-dallas“).
 :::
 
-Wenn Sie möchten, dass Besucher Ihre Website unter Ihrer eigenen Domain aufrufen (z. B. **www.gracechurch.org**), lesen Sie [Custom Domain](./custom-domain.md).
+Wenn Besucher Ihre Website unter einer eigenen Domain erreichen sollen (zum Beispiel **www.gracechurch.org**), lesen Sie [Eigene Domain](./custom-domain.md).
 
-## Konfiguration des Brandings
+## Erscheinungsbild anpassen
 
-Passen Sie an, wie Ihre Kirche in allen ChurchApps-Tools erscheint:
+Passen Sie an, wie Ihre Gemeinde in allen ChurchApps-Werkzeugen erscheint:
 
-1. Laden Sie Ihr **church logo** hoch, indem Sie auf den Logo-Bereich klicken und eine Bilddatei auswählen.
-2. Fügen Sie alle weiteren **church images** hinzu, die auf Ihrer Website und in der [mobilen App](./mobile-app.md) verwendet werden.
+1. Laden Sie Ihr **Gemeindelogo** hoch, indem Sie auf den Logobereich klicken und eine Bilddatei auswählen.
+2. Fügen Sie weitere **Gemeindebilder** hinzu, die auf Ihrer Website und in der [mobilen App](./mobile-app.md) verwendet werden.
 
 :::tip
-Verwenden Sie für beste Ergebnisse ein Logo mit transparentem Hintergrund im PNG-Format. Dies stellt sicher, dass es auf hellen und dunklen Hintergründen großartig aussieht.
+Für die besten Ergebnisse verwenden Sie ein Logo im PNG-Format mit transparentem Hintergrund. So wirkt es sowohl auf hellen als auch auf dunklen Hintergründen gut.
 :::
 
-## First Day of Week
+## Erster Tag der Woche
 
-Wählen Sie, mit welchem Tag Ihre Kalender beginnen. Die **First Day of Week**-Dropdown im Abschnitt Church Info ist standardmäßig auf **Sunday** eingestellt, kann aber auf jeden beliebigen Tag eingestellt werden. Nach der Änderung wird sie in Calendar-Gittern in B1 Admin und im B1.church-Mitgliederportal berücksichtigt – Gruppenkalender, kuratierte Kalender und der Event-Editor layouten Wochen alle ab dem Tag, den Sie wählen.
+Legen Sie fest, mit welchem Tag Ihre Kalender beginnen. Das Dropdown-Menü **Erster Tag der Woche** im Bereich Gemeindeangaben steht standardmäßig auf **Sonntag**, lässt sich aber auf jeden beliebigen Tag einstellen. Nach einer Änderung wird sie in den Kalenderansichten von B1 Admin und im Mitgliederportal von B1.church berücksichtigt. Gruppenkalender, kuratierte Kalender und der Veranstaltungseditor beginnen die Wochen alle mit dem von Ihnen gewählten Tag.
 
 ## Region (Datums- und Telefonformat)
 
-Die **Region**-Einstellung steuert, wie Daten und Uhrzeiten in B1 geschrieben werden. Standardmäßig verwenden Daten das Format der Vereinigten Staaten (z. B. "Sep 28, 2026" und "9/28/2026"). Kirchen außerhalb der USA können zu ihrem eigenen Format wechseln – zum Beispiel zeigt die Auswahl von English (United Kingdom) stattdessen "28 Sept 2026" und "28/09/2026".
+Die Einstellung **Region** bestimmt, wie Datum und Uhrzeit in B1 geschrieben werden. Standardmäßig werden Daten im US-amerikanischen Format angezeigt (zum Beispiel „Sep 28, 2026“ und „9/28/2026“). Gemeinden außerhalb der USA können auf ihr eigenes Format umstellen. Wählen Sie zum Beispiel Englisch (Vereinigtes Königreich), erscheinen stattdessen „28 Sept 2026“ und „28/09/2026“.
 
-1. Klicken Sie auf der Seite Settings in der linken Liste auf **Region** und dann im Abschnitt **Region** auf **Edit**.
-2. Wählen Sie Ihre Region aus der **Region**-Dropdown aus. Jede Option zeigt ein Beispieldatum, damit Sie genau sehen können, wie Daten aussehen werden.
-3. Klicken Sie auf **Save**.
+1. Klicken Sie auf der Seite Einstellungen in der linken Liste auf **Region** und dann im Abschnitt **Region** auf **Bearbeiten**.
+2. Wählen Sie Ihre Region im Dropdown-Menü **Region**. Jede Option zeigt ein Beispieldatum, damit Sie genau sehen, wie Daten dargestellt werden.
+3. Klicken Sie auf **Speichern**.
 
-Der Abschnitt Region zeigt dann Ihre ausgewählte Region, ein Beispiel des **Date format** und das Format Ihrer **Phone numbers**.
+Der Abschnitt Region zeigt danach Ihre gewählte Region, ein Beispiel für das **Datumsformat** und Ihr Format für **Telefonnummern**.
 
-### Telefonnummernformat
+### Format der Telefonnummern
 
-Der gleiche Abschnitt Region enthält eine Einstellung **Phone numbers**, die steuert, wie Telefonnummern im Datensatz einer Person eingegeben werden:
+Im selben Abschnitt Region steht die Einstellung **Telefonnummern**, die festlegt, wie Telefonnummern im Datensatz einer Person eingegeben werden:
 
-- **International (with country code)** -- die Standardeinstellung. Telefonfelder zeigen eine Länderflaggen-Auswahl und speichern Nummern mit der Landesvorwahl (zum Beispiel +1 918 555 1234).
-- **Local (as typed)** -- Telefonfelder werden zu einfachen Textfeldern und speichern Nummern genau so, wie Sie sie eingeben, ohne hinzugefügte Landesvorwahl (zum Beispiel 0701 234 5678). Wählen Sie dies, wenn Ihre Kirche Nummern in einem lokalen Format schreibt und nicht möchte, dass B1 eine Landesvorwahl hinzufügt.
+- **International (mit Ländervorwahl)** -- der Standard. Die Telefonfelder zeigen eine Länderflagge zur Auswahl und speichern Nummern mit Ländervorwahl (zum Beispiel +1 918 555 1234).
+- **Lokal (wie eingegeben)** -- Die Telefonfelder werden zu einfachen Textfeldern und speichern Nummern genau so, wie Sie sie eingeben, ohne Ländervorwahl (zum Beispiel 0701 234 5678). Wählen Sie dies, wenn Ihre Gemeinde Nummern in einem lokalen Format schreibt und B1 keine Ländervorwahl hinzufügen soll.
 
-Wenn **Local** ausgewählt ist, zeigt der Abschnitt Region neben Ihrer Region zusätzlich „Local phone numbers“ an.
+Wenn **Lokal** ausgewählt ist, zeigt der Abschnitt Region neben Ihrer Region außerdem den Hinweis „Lokale Telefonnummern“.
 
 :::tip
-Textnachrichten funktionieren am besten, wenn Nummern die Landesvorwahl enthalten. Wenn Sie Textnachrichten aus B1 versenden, behalten Sie das Format **International** bei, oder stellen Sie sicher, dass Nummern, die Sie im Local-Modus eingeben, die Landesvorwahl enthalten.
+Textnachrichten funktionieren am besten, wenn die Nummern die Ländervorwahl enthalten. Wenn Sie Textnachrichten aus B1 versenden, behalten Sie das Format **International** bei oder achten Sie im Modus Lokal darauf, dass die eingegebenen Nummern die Ländervorwahl enthalten.
 :::
 
-Ihre Region gilt für Daten und Uhrzeiten in B1 Admin und auf Ihrer B1.church-Website und Ihrem Mitgliederportal, einschließlich Predigten, Blog-Beiträgen, Gruppenkalendern und Dienst-Plänen, damit Mitglieder Daten im gleichen Format wie Ihre Mitarbeiter sehen.
+Ihre Region gilt für Datums- und Zeitangaben in B1 Admin sowie auf Ihrer B1.church-Website und im Mitgliederportal, einschließlich Predigten, Blogbeiträgen, Gruppenkalendern und Dienstplänen. So sehen Mitglieder Daten im selben Format wie Ihre Mitarbeitenden.
 
-## Texting {#texting}
+## Textnachrichten {#texting}
 
-Verbinden Sie einen Texting-Anbieter, um SMS-Nachrichten an eine Person oder eine ganze Gruppe von B1 Admin aus zu senden. Texte werden über Ihr eigenes Konto mit dem Anbieter versendet, daher gelten dessen Preise und Limits.
+Verbinden Sie einen Textnachrichten-Anbieter, um SMS aus B1 Admin an eine Person oder eine ganze Gruppe zu senden. Die Nachrichten werden über Ihr eigenes Konto beim Anbieter versendet, daher gelten dessen Preise und Limits.
 
-1. Klicken Sie auf der Seite Settings in der linken Liste auf **Texting** und dann im Abschnitt **Texting** auf **Edit**.
-2. Wählen Sie einen **Provider**:
-   - **Clearstream** -- geben Sie einen **API Key** ein. Erstellen Sie einen in Ihren Clearstream-Kontoeinstellungen unter API Keys.
-   - **Text In Church** -- geben Sie einen **API Key** ein. Fragen Sie zuerst Text In Church Support um Developer API Zugriff an, dann erstellen Sie einen Schlüssel in Ihren Account Settings > Developer API Abschnitt.
-   - **Nalo Solutions** (Ghana) -- geben Sie den auth key aus Ihrem Nalo Solutions Konto als **API Key** ein, und eine **Sender ID** (bis zu 11 Zeichen), die Nalo für Sie genehmigt hat.
-3. Klicken Sie auf **Save**.
+1. Klicken Sie auf der Seite Einstellungen in der linken Liste auf **Textnachrichten** und dann im Abschnitt **Textnachrichten** auf **Bearbeiten**.
+2. Wählen Sie einen **Anbieter**:
+   - **Clearstream** -- geben Sie einen **API-Schlüssel** ein. Sie erstellen ihn in Ihren Clearstream-Kontoeinstellungen unter API-Schlüssel.
+   - **Text In Church** -- geben Sie einen **API-Schlüssel** ein. Bitten Sie zuerst den Support von Text In Church um Zugang zur Entwickler-API und erstellen Sie dann einen Schlüssel unter Kontoeinstellungen > Bereich Entwickler-API.
+   - **Nalo Solutions** (Ghana) -- geben Sie den Authentifizierungsschlüssel Ihres Nalo-Solutions-Kontos als **API-Schlüssel** ein sowie eine **Absender-ID** (bis zu 11 Zeichen), die Nalo für Sie freigegeben hat.
+3. Klicken Sie auf **Speichern**.
 
-Um das Texting zu beenden, stellen Sie **Provider** auf **None** ein und speichern Sie. Dies entfernt den gespeicherten Anbieter.
+Um das Versenden von Textnachrichten zu beenden, setzen Sie **Anbieter** auf **Keiner** und speichern Sie. Damit wird der gespeicherte Anbieter entfernt.
 
-### Abmeldung von Personen, die mit STOP antworten
+### Personen, die mit STOP antworten, abmelden
 
-Sobald ein Anbieter gespeichert ist, öffnen Sie den Abschnitt Texting erneut mit **Edit**. Unterhalb der Anbietereinstellungen zeigt ein schreibgeschütztes Feld **Inbound (STOP) webhook URL** eine Web-Adresse, die nur für Ihre Kirche gilt. Klicken Sie in das Feld, um die Adresse auszuwählen, kopieren Sie sie und fügen Sie sie in die Einstellung für Webhooks für eingehende Nachrichten (Antworten) Ihres Texting-Anbieters ein. Dies funktioniert mit allen oben genannten Anbietern, die eingehende Antworten an einen Webhook weiterleiten können.
+Sobald ein Anbieter gespeichert ist, öffnen Sie den Abschnitt Textnachrichten erneut über **Bearbeiten**. Unterhalb der Anbietereinstellungen zeigt ein schreibgeschütztes Feld **Eingehende (STOP-)Webhook-URL** eine Webadresse, die nur für Ihre Gemeinde gilt. Klicken Sie in das Feld, um die Adresse auszuwählen, zu kopieren und in die Einstellung für eingehende Nachrichten (Antworten) Webhook Ihres Textnachrichten-Anbieters einzufügen. Dies funktioniert mit allen oben genannten Anbietern, die eingehende Antworten an einen Webhook weiterleiten können.
 
-Danach gilt: Wenn jemand **STOP** (oder STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT oder REVOKE) auf eine Ihrer Textnachrichten antwortet, findet B1 alle Personen, deren Mobilnummer übereinstimmt, markiert sie als abgemeldet und schaltet ihre Texterinnerungen aus. Bei Gruppentexten werden sie anschließend übersprungen. Andere Antworten werden ignoriert.
+Antwortet danach jemand mit **STOP** (oder STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT oder REVOKE) auf eine Ihrer Nachrichten, findet B1 alle Personen mit übereinstimmender Mobilnummer, markiert sie als abgemeldet und schaltet ihre Textnachricht-Erinnerungen aus. Sie werden anschließend bei Gruppen-Textnachrichten übersprungen. Andere Antworten werden ignoriert.
 
 :::info
-Dies verwendet dieselbe Abmelde-Einstellung wie **Hide me from the member directory**, daher werden Personen, die mit STOP antworten, in ihrem Profil auch als **Hidden from directory** angezeigt. Das Feld erscheint nur, wenn der gespeicherte Anbieter ausgewählt ist – wenn Sie das Dropdown auf einen anderen Anbieter umstellen, speichern Sie zuerst, um die URL erneut zu sehen.
+Dies verwendet dieselbe Abmeldeeinstellung wie **Mich im Mitgliederverzeichnis ausblenden**. Personen, die mit STOP antworten, werden daher in ihrem Profil auch als **Im Verzeichnis ausgeblendet** angezeigt. Das Feld erscheint nur, während der gespeicherte Anbieter ausgewählt ist. Wenn Sie das Dropdown-Menü auf einen anderen Anbieter umstellen, speichern Sie zuerst, um die URL wieder zu sehen.
 :::
 
-Sobald ein Anbieter verbunden ist, sehen Mitarbeiter mit der Berechtigung zum Versenden von Texten eine Schaltfläche **Text** auf der Seite einer Gruppe (**Text this group**) und einer Person mit Mobiltelefon (**Send text message**). Geben Sie Ihre Nachricht ein und klicken Sie auf **Send**. Das Dialogfeld zählt Zeichen und SMS-Segmente. Für eine Gruppe zeigt es, wie viele Mitglieder den Text erhalten, bevor Sie ihn senden:
+Sobald ein Anbieter verbunden ist, sehen Mitarbeitende mit der Berechtigung zum Versenden von Textnachrichten auf der Seite einer Gruppe (**Dieser Gruppe eine Textnachricht senden**) und auf der Seite einer Person mit Mobiltelefon (**Textnachricht senden**) eine Schaltfläche **Textnachricht**. Geben Sie Ihre Nachricht ein und klicken Sie auf **Senden**. Der Dialog zählt Zeichen und SMS-Segmente. Bei einer Gruppe zeigt er vor dem Senden an, wie viele Mitglieder die Nachricht erhalten:
 
-- Mitglieder ohne Mobiltelefonnummer in der Datei werden übersprungen.
-- Mitglieder, die sich für **Hide me from the member directory** entschieden haben, werden als abgemeldet gezählt und übersprungen.
-- Familienmitglieder, die eine Mobilnummer teilen, erhalten den Text nur einmal.
+- Mitglieder ohne hinterlegte Mobilnummer werden übersprungen.
+- Mitglieder, die **Mich im Mitgliederverzeichnis ausblenden** gewählt haben, gelten als abgemeldet und werden übersprungen.
+- Familienmitglieder, die sich eine Mobilnummer teilen, erhalten die Nachricht nur einmal.
 
-### Personalisierung von Texten mit Merge Fields {#personalizing-texts-with-merge-fields}
+### Textnachrichten mit Platzhaltern personalisieren {#personalizing-texts-with-merge-fields}
 
-Unter der Nachrichtenbox zeigt das Text-Dialogfeld Platzhalter-Chips: **First Name**, **Last Name**, **Display Name** und **Church Name**. Klicken Sie auf einen Chip, um seinen Platzhalter (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` oder `{{churchName}}`) an Ihrem Cursor einzufügen. Wenn der Text versendet wird, wird jeder Platzhalter durch die Details des Empfängers ersetzt, daher erreicht eine Gruppentext wie `Hi {{firstName}}, see you Sunday!` jedes Mitglied mit seinem eigenen Namen. Platzhalter funktionieren sowohl für Gruppentext als auch für Text an eine einzelne Person.
+Unterhalb des Nachrichtenfelds zeigt der Dialog Textnachricht Platzhalter-Schaltflächen: **Vorname**, **Nachname**, **Anzeigename** und **Name der Gemeinde**. Klicken Sie auf eine Schaltfläche, um ihren Platzhalter (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` oder `{{churchName}}`) an der Cursorposition einzufügen. Beim Versand wird jeder Platzhalter durch die Angaben des jeweiligen Empfängers ersetzt. So erreicht eine Gruppennachricht wie `Hallo {{firstName}}, bis Sonntag!` jedes Mitglied mit dem eigenen Vornamen. Platzhalter funktionieren sowohl bei Gruppen-Textnachrichten als auch bei Nachrichten an eine einzelne Person.
 
 :::info
-Das 1.600-Zeichen-Limit gilt für die Nachricht, wie Sie sie eingeben. Nachdem die Platzhalter gefüllt sind, wird jeder Text, der länger als 1.600 Zeichen ist, auf dieser Länge abgeschnitten.
+Die Grenze von 1.600 Zeichen gilt für die Nachricht, so wie Sie sie eingeben. Nachdem die Platzhalter ersetzt wurden, wird jeder Text, der länger als 1.600 Zeichen ist, an dieser Länge abgeschnitten.
 :::
 
-Texte können auch automatisch aus einem [Workflow](../serving/workflows.md#sending-a-text)-Schritt mit der Aktion **Send Text** versendet werden, die denselben Anbieter und Platzhalter verwendet.
+Textnachrichten können auch automatisch aus einem Schritt eines [Workflows](../serving/workflows.md#sending-a-text) mit der Aktion **Textnachricht senden** versendet werden. Diese verwendet denselben Anbieter und dieselben Platzhalter.
 
-## File Storage
+## Dateispeicher
 
-Standardmäßig verwenden Dateien, die Sie auf Ihre Website hochladen (über [Files](../website/files.md)) und andere Inhaltsbereiche den kostenlosen gehosteten Speicher von B1 bis zu 100 MB. Wenn Sie mehr Platz benötigen, können Sie stattdessen Ihren eigenen Cloud-Speicher verbinden – neue Uploads gehen dann direkt auf Ihr Konto ohne Plattformlimit.
+Standardmäßig nutzen Dateien, die Sie auf Ihre Website hochladen (über [Dateien](../website/files.md)) und in anderen Inhaltsbereichen, den kostenlosen Speicher von B1 mit bis zu 100 MB. Wenn Sie mehr Platz benötigen, können Sie stattdessen Ihren eigenen Cloud-Speicher verbinden. Neue Uploads gehen dann direkt in Ihr Konto, ohne Begrenzung durch die Plattform.
 
-1. Klicken Sie auf der Seite Settings in der linken Liste auf **File Storage** und dann im Abschnitt **File Storage** auf **Edit**.
+1. Klicken Sie auf der Seite Einstellungen in der linken Liste auf **Dateispeicher** und dann im Abschnitt **Dateispeicher** auf **Bearbeiten**.
 2. Wählen Sie einen Anbieter: **Google Drive**, **Dropbox**, **OneDrive** oder einen **S3-kompatiblen Bucket** (AWS S3, Cloudflare R2, Backblaze B2 usw.).
-3. Für Google Drive, Dropbox oder OneDrive klicken Sie auf **Connect** und melden Sie sich an, um den Zugriff zu autorisieren. Für einen S3-kompatiblen Bucket geben Sie Ihren Zugangsschlüssel, Geheimnis, Bucket-Namen und die öffentliche URL-Basis ein.
-4. Klicken Sie auf **Save**.
+3. Bei Google Drive, Dropbox oder OneDrive klicken Sie auf **Verbinden** und melden sich an, um den Zugriff zu autorisieren. Bei einem S3-kompatiblen Bucket geben Sie Ihren Zugriffsschlüssel, den geheimen Schlüssel, den Bucket-Namen und die Basis-URL für den öffentlichen Zugriff ein.
+4. Klicken Sie auf **Speichern**.
 
 :::info
-Dies betrifft nur neue Uploads auf Ihre Website-Dateien und ähnliche Inhaltsbereiche. Galerie-Bilder, Miniaturbilder, Logos und Personenfotos bleiben immer auf dem Standard-Speicher von B1.
+Dies betrifft nur neue Uploads für Dateien Ihrer Website und ähnliche Inhaltsbereiche. Galeriebilder, Vorschaubilder, Logos und Personenfotos bleiben immer im Standardspeicher von B1.
 :::
 
-## Grade Promotion
+## Versetzung in die nächste Klasse
 
-Wenn Sie **Grade** auf Kindern und Schülern verfolgen, kann B1 automatisch alle an einem von Ihnen gewählten Datum (z. B. 1. August) um eine Note erhöhen, anstatt dass Sie jedes Profil manuell bearbeiten müssen.
+Wenn Sie bei Kindern und Jugendlichen die **Klassenstufe** erfassen, kann B1 an einem von Ihnen gewählten Datum (zum Beispiel am 1. August) alle automatisch eine Stufe höher setzen, statt dass Sie jeden Profil einzeln bearbeiten müssen.
 
-1. Klicken Sie auf der Seite Settings in der linken Liste auf **Grade Promotion** und dann im Abschnitt **Grade Promotion** auf **Edit**.
-2. Schalten Sie den Schalter ein (er zeigt **Enabled**) und wählen Sie den **Month** und **Day**, um Noten jedes Jahr zu fördern. An diesem Datum wird jeder mit einer Note um eine Note erhöht, und Schüler der 12. Klasse werden zu **Graduated**.
+1. Klicken Sie auf der Seite Einstellungen in der linken Liste auf **Versetzung** und dann im Abschnitt **Versetzung** auf **Bearbeiten**.
+2. Schalten Sie den Schalter ein (er zeigt **Aktiviert**) und wählen Sie den **Monat** und den **Tag**, an denen jedes Jahr versetzt wird. An diesem Datum rückt jede Person mit einer Klassenstufe eine Stufe auf, und Schüler der 12. Klasse werden als **Abgeschlossen** markiert.
 3. Speichern Sie Ihre Änderungen.
 
-Um die automatische Förderung zu beenden, schalten Sie den Schalter aus, damit er **Disabled** anzeigt und speichern Sie. Das Promotionsdatum wird entfernt und Noten ändern sich nicht mehr von selbst.
+Um die automatische Versetzung zu beenden, schalten Sie den Schalter aus, sodass er **Deaktiviert** anzeigt, und speichern Sie. Das Versetzungsdatum wird entfernt und Klassenstufen ändern sich nicht mehr von selbst.
+
+## Freiwilligen-Anmeldung {#volunteer-signup}
+
+Standardmäßig sehen Mitglieder, die sich [Freiwilligen-Anmeldungen](../../b1-church/serving/volunteer-signup.md) ansehen, jede kommende Woche mit offenen Positionen. Ist diese Liste sehr lang, können Sie stattdessen nur die nächste Woche jeder Planart anzeigen.
+
+1. Klicken Sie auf der Seite Einstellungen in der linken Liste auf **Freiwilligen-Anmeldung** und dann im Abschnitt **Freiwilligen-Anmeldung** auf **Bearbeiten**.
+2. Aktivieren Sie **Nur die nächste Woche jeder Planart anzeigen**.
+3. Speichern Sie Ihre Änderungen.
+
+Mit dieser Einstellung zeigt jede Planart nur ihren nächsten kommenden Plan. Die folgende Woche erscheint, sobald dieses Datum vergangen ist. In der Zeile **Angezeigte Wochen** des Abschnitts steht dann **Nur die nächste Woche jeder Planart** oder **Alle kommenden Wochen**.
+
+## Datenschutz bei Spenden {#giving-privacy}
+
+Personen mit Zugriff auf Spenden sehen normalerweise die Spendensummen auf dem [Personendatensatz](../people/adding-people.md#editing-details). Wenn Sie nicht möchten, dass die Beträge bei jedem Öffnen eines Datensatzes angezeigt werden, können Sie sie ausblenden, bis jemand sie anfordert.
+
+1. Klicken Sie auf der Seite Einstellungen in der linken Liste auf **Datenschutz bei Spenden** und dann im Abschnitt **Datenschutz bei Spenden** auf **Bearbeiten**.
+2. Aktivieren Sie **Spenden auf Personendatensätzen ausblenden, bis darauf geklickt wird**.
+3. Speichern Sie Ihre Änderungen.
+
+Mit dieser Einstellung steht auf der Spendenkarte eines Personendatensatzes „Spenden sind auf Personendatensätzen ausgeblendet.“ Klicken Sie auf **Spenden anzeigen**, um die Spenden dieser Person zu laden und anzuzeigen. Beim Öffnen einer anderen Person werden sie wieder ausgeblendet. Wer Spenden sehen darf, ändert sich dadurch nicht: Nur Personen mit Zugriff auf Spenden sehen die Karte überhaupt.
 
 ## Import und Export
 
-Der Link **Import/Export** unter dem Namen Ihrer Kirche auf der Seite Settings öffnet ein separates Tool in einem neuen Browserfenster. Verwenden Sie dies zu:
+Der Link **Import/Export** unter dem Namen Ihrer Gemeinde auf der Seite Einstellungen öffnet ein eigenes Werkzeug in einem neuen Browserfenster. Damit können Sie:
 
-- Importieren von Mitgliederdaten aus einem anderen Kirchenmanagementsystem.
-- Exportieren Sie Ihre ChurchApps-Daten zur Sicherung oder Migration.
+- Mitgliederdaten aus einem anderen Gemeindeverwaltungssystem importieren.
+- Ihre ChurchApps-Daten für Sicherungs- oder Umzugszwecke exportieren.
 
-Dies ist besonders hilfreich, wenn Sie Ihre Kirche zum ersten Mal einrichten und bestehende Datensätze in ChurchApps übertragen müssen.
+Das ist besonders hilfreich, wenn Sie Ihre Gemeinde erstmals einrichten und bestehende Datensätze in ChurchApps übernehmen müssen.
 
 :::warning
-Wenn Sie Daten importieren, sichern Sie immer zunächst Ihre bestehenden Datensätze. Importvorgänge fügen Daten zu Ihrem System hinzu und können doppelte Einträge erstellen, wenn sie mehrfach ausgeführt werden.
+Sichern Sie beim Importieren von Daten zuerst immer Ihre bestehenden Datensätze. Importvorgänge fügen Daten zu Ihrem System hinzu und können bei mehrfacher Ausführung doppelte Einträge erzeugen.
 :::

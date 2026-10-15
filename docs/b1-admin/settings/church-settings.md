@@ -144,6 +144,26 @@ If you track **Grade** on children and students, B1 can automatically bump every
 
 To stop automatic promotion, turn the switch off so it shows **Disabled** and save. The promotion date is removed and grades will no longer change on their own.
 
+## Volunteer Signup {#volunteer-signup}
+
+By default, members who browse [volunteer signups](../../b1-church/serving/volunteer-signup.md) see every upcoming week that has open positions. If that list gets long, you can show just the next week of each plan type instead.
+
+1. On the Settings page, click **Volunteer Signup** in the left-hand list, then click **Edit** in the **Volunteer Signup** section.
+2. Turn on **Show only the next week of each plan type**.
+3. Save your changes.
+
+With this on, each plan type shows only its next upcoming plan. The following week appears once that date passes. The section's **Weeks shown** row reads **Only the next week of each plan type** or **All upcoming weeks**.
+
+## Giving Privacy {#giving-privacy}
+
+People with giving access normally see a person's giving totals on their [person record](../people/adding-people.md#editing-details). If you'd rather not have amounts on screen every time a record is opened, you can hide them until someone asks.
+
+1. On the Settings page, click **Giving privacy** in the left-hand list, then click **Edit** in the **Giving privacy** section.
+2. Turn on **Hide giving on person records until clicked**.
+3. Save your changes.
+
+With this on, the giving card on a person record says "Giving is hidden on person records." Click **Show giving** to load and display that person's giving. It hides again when you open a different person. Who can see giving doesn't change: only people with giving access ever see the card.
+
 ## Import and Export
 
 The **Import/Export** link under your church's name on the Settings page opens a dedicated tool in a new browser window. Use this to:

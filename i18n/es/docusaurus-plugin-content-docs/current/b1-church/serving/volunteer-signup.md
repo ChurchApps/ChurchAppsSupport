@@ -1,77 +1,77 @@
 ---
-title: "Inscripción de Voluntarios"
+title: "Inscripción de voluntarios"
 ---
 
-# Inscripción de Voluntarios
+# Inscripción de voluntarios
 
 <div class="article-intro">
 
-Explora posiciones de voluntarios disponibles e inscríbete a ti mismo para servicios próximos directamente desde B1.church. Las posiciones están organizadas por categoría para que puedas encontrar rápidamente dónde se necesita ayuda y unirte a un equipo.
+Explora las posiciones de voluntariado disponibles e inscríbete tú mismo en los próximos servicios directamente desde B1.church. Las posiciones están organizadas por categoría para que encuentres rápidamente dónde hace falta ayuda y te unas a un equipo.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Una cuenta en B1.church -- debes estar conectado para inscribirte
-- Tu administrador de iglesia debe haber habilitado auto-inscripción en al menos una posición
+- Una cuenta de B1.church: debes haber iniciado sesión para inscribirte
+- El administrador de tu iglesia debe haber habilitado la inscripción propia en al menos una posición
 
 </div>
 
-## Explorando Posiciones Disponibles
+## Explorar las posiciones disponibles
 
-1. Navega a la página **Voluntario** en el sitio web B1.church de tu iglesia.
-2. Verás una lista de próximos planes de servicio que tienen posiciones de voluntarios abiertas.
-3. Cada plan muestra el **nombre del plan**, **fecha del servicio**, y **horarios del servicio**.
+1. Ve a la página **Volunteer** del sitio de B1.church de tu iglesia.
+2. Verás una lista de los próximos planes de servicio que tienen posiciones de voluntariado abiertas. Dentro de cada plan, las posiciones se enumeran por categoría y luego por nombre. Si tu iglesia muestra solo la siguiente semana de cada tipo de plan, las semanas posteriores aparecen cuando la actual ya ha pasado.
+3. Cada plan muestra el **plan name** (nombre del plan), la **service date** (fecha del servicio) y los **service times** (horarios de servicio).
 
-Las posiciones están agrupadas por categoría (por ejemplo, "Banda", "Hospitalidad", "Ministerio de Niños"). Cada posición muestra:
+Las posiciones se agrupan por categoría (por ejemplo, "Band", "Hospitality", "Kids Ministry"). Cada posición muestra:
 
-- **Nombre de la posición** -- El rol que llenarías (p. ej., "Baterista", "Anfitrión", "Servidor de Café").
-- **Descripción** -- Detalles sobre el rol, si el administrador los proporcionó.
-- **Lugares disponibles** -- Una barra de progreso mostrando cuántos espacios están llenos y cuántos quedan.
-- **Quién se ha inscrito** -- Si tu iglesia ha activado **Mostrar nombres de voluntarios en la página de inscripción** para el plan, una línea "Inscritos:" enumera los nombres de las personas que ya sirven en esa posición. Los nombres solo se muestran cuando has iniciado sesión.
+- **Nombre de la posición**: el rol que ocuparías (por ejemplo, "Drummer", "Greeter", "Coffee Server").
+- **Descripción**: detalles sobre el rol, si el administrador los proporcionó.
+- **Lugares disponibles**: una barra de progreso que muestra cuántos lugares están ocupados y cuántos quedan.
+- **Quién se ha inscrito**: si tu iglesia activó **Show volunteer names on signup page** para el plan, una línea "Signed up:" enumera los nombres de las personas que ya sirven en esa posición. Los nombres solo se muestran cuando has iniciado sesión.
 
-## Inscribiéndose
+## Inscribirse
 
-1. Encuentra una posición para la que desees voluntariado.
-2. Haz clic en el botón **Inscribirse** junto a la posición.
-3. Aparece un mensaje de confirmación: "¡Estás inscrito! Gracias por ofrecerte como voluntario."
-4. La posición ahora muestra un indicador verde confirmando que estás inscrito.
+1. Busca una posición en la que quieras servir como voluntario.
+2. Haz clic en el botón **Sign Up** junto a la posición.
+3. Aparece un mensaje de confirmación: "You're signed up! Thank you for volunteering."
+4. La posición ahora muestra un indicador verde que confirma que estás inscrito.
 
 :::info
-Debes estar conectado para inscribirte. Si no estás conectado, se te pedirá que inicies sesión primero.
+Debes haber iniciado sesión para inscribirte. Si no has iniciado sesión, se te pedirá que lo hagas primero.
 :::
 
-## Eliminando una Inscripción
+## Cancelar una inscripción
 
 Si tus planes cambian y ya no puedes servir:
 
-1. Encuentra la posición para la que te inscribiste -- mostrará un indicador verde "Estás inscrito".
-2. Haz clic en el botón **Eliminar**.
-3. Confirma que deseas eliminarte a ti mismo de la posición.
-4. Un mensaje confirma: "Has sido eliminado de esta posición."
+1. Busca la posición en la que te inscribiste; mostrará un indicador verde "You're signed up".
+2. Haz clic en el botón **Remove**.
+3. Confirma que quieres retirarte de la posición.
+4. Un mensaje confirma: "You have been removed from this position."
 
-## Fechas Límite
+## Fechas límite
 
-Tu administrador de iglesia puede establecer una fecha límite de inscripción para cada plan. La fecha límite es un número establecido de horas antes de la fecha del servicio. Una vez que pasa la fecha límite:
+El administrador de tu iglesia puede definir una fecha límite de inscripción para cada plan. La fecha límite es una cantidad fija de horas antes de la fecha del servicio. Una vez que pasa la fecha límite:
 
-- No puedes inscribirse para nuevas posiciones.
-- No puedes eliminar inscripciones existentes.
-- Un mensaje en la parte superior del plan indica que la fecha límite de inscripción ha pasado.
+- No puedes inscribirte en nuevas posiciones.
+- No puedes cancelar inscripciones existentes.
+- Un mensaje en la parte superior del plan indica que la fecha límite de inscripción ya pasó.
 
-## Capacidad de la Posición
+## Capacidad de las posiciones
 
-Cada posición tiene un número limitado de espacios. Cuando todos los espacios están llenos:
+Cada posición tiene un número limitado de lugares. Cuando todos están ocupados:
 
-- La posición se muestra como **Llena**.
-- El botón de inscripción está deshabilitado.
-- Si alguien elimina su inscripción, el espacio se abre de nuevo.
+- La posición aparece como **Full**.
+- El botón de inscripción se desactiva.
+- Si alguien cancela su inscripción, el lugar vuelve a quedar disponible.
 
 :::tip
-Comprueba la página de voluntarios regularmente, especialmente al principio de la semana. Las posiciones populares se llenan rápidamente, así que inscribirse temprano te da la mejor selección.
+Revisa la página de voluntarios con regularidad, sobre todo al principio de la semana. Las posiciones más populares se llenan rápido, así que inscribirte temprano te da la mejor selección.
 :::
 
-## Artículos Relacionados
+## Artículos relacionados
 
-- [Descripción General de Sirviendo](./index.md) -- Descripción general de características de servicio en B1.church
-- [Viendo Planes](../plans/viewing-plans) -- Ve tus planes asignados y órdenes de servicio
+- [Resumen de servicio](./index.md): resumen de las funciones de servicio en B1.church
+- [Ver planes](../plans/viewing-plans): consulta tus planes asignados y los órdenes de servicio

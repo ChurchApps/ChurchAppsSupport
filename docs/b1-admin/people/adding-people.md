@@ -51,7 +51,7 @@ The left side of the profile shows the person's photo, name, membership status, 
 The rest of the profile shows a summary section for each kind of related information:
 
 - **Attendance** — Shows which of the last several weeks the person attended and their most recent visits. Click **All years** for their full visit history, including the campus, service, service time, group, and a **Checked In** column with the kiosk check-in time (shown as a dash for visits recorded without a kiosk check-in), or **Print** to print it. For church-wide trends rather than one person's history, see [Tracking Attendance](../attendance/tracking-attendance.md)
-- **Donations** — Shows this year's gifts. Click **All years** for their full [donation history](../donations/recording-donations.md), or **Log a gift** to record a new one
+- **Donations** — Shows this year's gifts, including gifts to non-deductible funds. Click **All years** for their full [donation history](../donations/recording-donations.md), or **Log a gift** to record a new one. If your church turned on [Giving Privacy](../settings/church-settings.md#giving-privacy), amounts stay hidden until you click **Show giving**
 - **Groups** — Lists the person's [group memberships](../groups/group-members.md)
 - **Notes** — Shows recent notes about the person (pastoral care, follow-ups, etc.). Click **All notes** to read and add notes
 - **Forms** — Lists the person's forms and whether each one has been submitted (see [Working with Forms](#working-with-forms) below)

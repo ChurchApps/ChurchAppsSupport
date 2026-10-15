@@ -6,26 +6,27 @@ title: "Service"
 
 <div class="article-intro">
 
-La section Service sur B1.church vous permet de parcourir les opportunités de bénévolat et de vous inscrire pour les postes dans votre église. En plus de consulter vos plans assignés et vos ordres de service, vous pouvez maintenant auto-sélectionner les positions qui doivent être pourvues.
+La section Service de B1.church vous permet de parcourir les opportunités de bénévolat et de vous inscrire à des postes dans votre église. En plus de consulter vos plans et ordres de service assignés, vous pouvez désormais choisir vous-même les postes à pourvoir.
 
 </div>
 
 ## Ce que vous pouvez faire
 
-- **Parcourir les opportunités de bénévolat** — Consultez les plans de service à venir avec les positions ouvertes qui ont besoin de bénévoles.
-- **S'inscrire pour les positions** — Choisissez une position et inscrivez-vous avec un seul clic.
-- **Consulter vos plans** — Consultez vos [affectations de service](../plans/viewing-plans) à venir et passées.
-- **Supprimer les inscriptions** — Annulez une auto-inscription si vos plans changent (avant la date limite).
+- **Parcourir les opportunités de bénévolat** -- Consultez les plans de service à venir qui ont des postes ouverts à pourvoir.
+- **S'inscrire à un poste** -- Choisissez un poste et inscrivez-vous en un seul clic.
+- **Consulter vos plans** -- Voyez vos [affectations de service](../plans/viewing-plans) à venir et passées.
+- **Répondre aux affectations** -- Acceptez ou refusez les postes auxquels vous êtes programmé, depuis la page Plans ou la section **Vous servez** de l'accueil. Si vos plans changent après avoir accepté, vous pouvez [refuser une affectation acceptée](../plans/viewing-plans#declining-an-accepted-assignment) jusqu'à la fin du service.
+- **Annuler les inscriptions** -- Annulez une inscription volontaire si vos plans changent (avant la date limite).
 
-## Comment cela fonctionne
+## Fonctionnement
 
-Votre administrateur d'église crée des plans de service et marque certaines positions comme disponibles pour l'auto-inscription. Ces positions apparaissent sur la page d'inscription des bénévoles, organisées par catégorie (telle que « Bande », « Hospitalité » ou « Ministère des enfants »). Vous pouvez voir combien de spots sont ouverts pour chaque position et vous inscrire pour celles auxquelles vous êtes disponible.
+Votre administrateur d'église crée les plans de service et marque certains postes comme disponibles pour une inscription volontaire. Ces postes apparaissent sur la page d'inscription des bénévoles, organisés par catégorie (comme « Groupe musical », « Accueil » ou « Ministère des enfants »). Vous pouvez voir le nombre de places disponibles pour chaque poste et vous inscrire à ceux pour lesquels vous êtes disponible.
 
 :::info
-Seules les positions que votre administrateur d'église a activées pour l'auto-inscription apparaissent sur la page des bénévoles. Certaines positions peuvent n'être pourvues que par affectation directe.
+Seuls les postes que votre administrateur d'église a activés pour l'inscription volontaire apparaissent sur la page des bénévoles. Certains postes ne peuvent être pourvus que par affectation directe.
 :::
 
 ## En savoir plus
 
-- [Inscription des bénévoles](./volunteer-signup) — Guide étape par étape pour parcourir et s'inscrire aux positions de bénévolat
-- [Consultation des plans](../plans/viewing-plans) — Consultez vos plans de service assignés et les ordres de service
+- [Inscription des bénévoles](./volunteer-signup) -- Guide étape par étape pour parcourir et vous inscrire aux postes de bénévolat
+- [Consulter les plans](../plans/viewing-plans) -- Consultez vos plans de service assignés et leurs ordres de service

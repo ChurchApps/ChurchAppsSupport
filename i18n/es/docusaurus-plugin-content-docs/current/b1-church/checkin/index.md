@@ -1,28 +1,28 @@
 ---
-title: "Registro de Entrada"
+title: "Registro de entrada"
 ---
 
-# Registro de Entrada
+# Registro de entrada
 
 <div class="article-intro">
 
-La función de **Registro de Entrada** en B1.church le permite registrarse a usted y a los miembros de su hogar para servicios de iglesia directamente desde el portal de miembros. Esta es una forma conveniente de registrar su asistencia sin necesidad de visitar un quiosco de registro de entrada físico.
+La función **Check-In** de B1.church te permite registrarte a ti y a los miembros de tu hogar para los servicios de la iglesia directamente desde el portal de miembros. Es una forma cómoda de registrar tu asistencia sin tener que ir a un kiosco físico de registro.
 
 </div>
 
-## Cómo Funciona
+## Cómo funciona
 
-Cuando utiliza el auto-registro de entrada, selecciona un servicio, elige qué miembros del hogar asisten y asigna a cada persona al grupo apropiado para cada hora de servicio. Una vez que confirma, su asistencia se registra automáticamente.
+Cuando usas el registro de entrada automático, seleccionas un servicio, eliges qué miembros del hogar asisten y asignas a cada persona al grupo correspondiente para cada horario de servicio. Una vez que confirmas, tu asistencia se registra automáticamente.
 
-## Primeros Pasos
+## Primeros pasos
 
-Para acceder al registro de entrada, haga clic en **Registro de Entrada** en la [navegación de barra lateral](../getting-started/navigating.md) de su portal de miembros. Debe estar [conectado](../getting-started/logging-in.md) para usar esta función -- si no ha iniciado sesión, se le pedirá que inicie sesión primero.
+Para acceder al registro de entrada, toca **Check-In** en la [barra de pestañas o en la página More](../getting-started/navigating.md) de tu portal de miembros. Debes [haber iniciado sesión](../getting-started/logging-in.md) para usar esta función; si no has iniciado sesión, se te pedirá que lo hagas primero.
 
 :::info
-La función de registro de entrada requiere que su iglesia haya configurado servicios y grupos de asistencia en su configuración de administración. Si no hay servicios disponibles cuando abre la página de registro de entrada, su iglesia puede no tener esta función configurada aún. Póngase en contacto con su administrador de iglesia para obtener ayuda.
+La función de registro de entrada requiere que tu iglesia haya configurado servicios y grupos de asistencia en su configuración de administración. Si no hay servicios disponibles al abrir la página de registro, es posible que tu iglesia todavía no tenga esta función configurada. Comunícate con el administrador de tu iglesia para obtener ayuda.
 :::
 
-## Próximos Pasos
+## Próximos pasos
 
-- [Auto-Registro de Entrada](./self-checkin.md) -- Guía paso a paso para registrar su hogar para un servicio.
-- [Registro de Huéspedes](./guest-registration.md) -- Regístrese como visitante e los miembros de su familia.
+- [Registro de entrada automático](./self-checkin.md): guía paso a paso para registrar a tu hogar en un servicio.
+- [Registro de invitados](./guest-registration.md): regístrate como visitante invitado junto con los miembros de tu familia.

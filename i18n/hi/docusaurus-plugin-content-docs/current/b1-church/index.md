@@ -6,36 +6,36 @@ title: "B1.church"
 
 <div class="article-intro">
 
-B1.church आपकी चर्च के लिए सदस्य-सामना पोर्टल है। यह वह जगह है जहां आपकी मण्डली सप्ताह भर जुड़े रहने के लिए, चर्च उपकरणों तक पहुंचने के लिए, और आपकी समुदाय के साथ जुड़ने के लिए जाती है। प्रत्येक चर्च को `https://yourchurchname.b1.church` पर अपना खुद का URL मिलता है।
+B1.church आपके church का सदस्यों के लिए बना portal है। यह वह जगह है जहां आपका congregation जुड़े रहने, church के tools तक पहुंचने, और पूरे हफ्ते अपने समुदाय से जुड़ने के लिए आता है। हर church को `https://yourchurchname.b1.church` पर अपना अलग URL मिलता है।
 
 </div>
 
-जब सदस्य आपकी B1.church साइट पर जाते हैं, तो वे आपकी चर्च की सार्वजनिक वेबसाइट को आपके ब्रांडिंग, नेविगेशन लिंक और सामग्री पृष्ठों के साथ देखते हैं। लॉगिन करने के बाद, वे **सदस्य पोर्टल** तक पहुंच सकते हैं जहां सभी व्यक्तिगत चर्च उपकरण एक जगह रहते हैं।
+जब members आपकी B1.church site पर जाते हैं, तो वे आपके church की public website देखते हैं, जिसमें आपकी branding, navigation links, और content pages होते हैं। sign in करने के बाद, वे **Member Portal** तक पहुंच सकते हैं, जहां उनके सभी व्यक्तिगत church tools एक ही जगह होते हैं।
 
-## मुख्य सुविधाएं
+## मुख्य Features
 
-- **होम और मुझे** -- सदस्य पोर्टल एक [होम डैशबोर्ड](./getting-started/navigating.md) पर खुलता है, और [मुझे पृष्ठ](./getting-started/me-page.md) आपके लिए क्या आ रहा है सूचीबद्ध करता है -- सेवा असाइनमेंट, इवेंट पंजीकरण, समूह इवेंट -- आपकी हाल की सूचनाओं के साथ।
-- **समूह** -- जिन समूहों में आप हैं उन्हें देखें, समूह सदस्यों को देखें, बातचीत में शामिल हों, और उपस्थिति को ट्रैक करें।
-- **दान** -- अपनी चर्च को ऑनलाइन दान दें और अपने दान इतिहास को देखें।
-- **इवेंट** -- आने वाले इवेंट ब्राउज़ करें और अपने और अपने परिवार को पंजीकृत करें।
-- **सेवा** -- सेवा योजनाएं, आपकी स्वेच्छासेवक स्थिति देखें, और खुली स्वेच्छासेवक अवसरों के लिए साइन अप करें। अपनी [सूचना वरीयताओं](./getting-started/notification-preferences.md) में टेक्स्ट द्वारा सेवा और इवेंट रिमाइंडर पाने का चुनाव करें (किसी भी समय रोकने के लिए STOP लिखें)।
-- **योजनाएं** -- आने वाली सेवा योजनाएं देखें, अपनी असाइन की गई स्थिति को देखें, और गीत विवरण और सेवा ऑर्डर तक पहुंचें।
-- **चेक-इन** -- सेवाओं और इवेंटों के लिए अपने और अपने घर के सदस्यों को चेक इन करें। अतिथि QR कोड के माध्यम से पंजीकृत हो सकते हैं।
-- **सामुदायिक निर्देशिका** -- अपनी चर्च की सदस्य निर्देशिका ब्राउज़ करें, प्रोफाइल देखें, और सीधे संदेश भेजें। अपने [प्रोफाइल के गोपनीयता टैब](./getting-started/editing-your-profile.md#privacy-tab) से नियंत्रित करें कि कौन आपकी संपर्क जानकारी देख सकता है।
-- **सामग्री** -- उपदेश तक पहुंचें, बाइबल पढ़ें, लाइव स्ट्रीम देखें, और आपकी चर्च की साइट से दैनिक छंद देखें। (पाठ्यक्रम प्लेबैक अब [FreePlay](/docs/freeplay/) में रहता है -- इन-पोर्टल पाठ टैब अब हटाया जा चुका है।)
+- **Home और Me** -- member portal [Home dashboard](./getting-started/navigating.md) पर खुलता है, जिसमें आपकी आने वाली serving assignments, आपके groups, और इस साल आपकी giving के preview होते हैं, और [Me page](./getting-started/me-page.md) आपके लिए आने वाली चीज़ें सूचीबद्ध करता है -- serving assignments, event registrations, group events -- साथ में आपकी हाल की notifications।
+- **Groups** -- अपने सदस्य groups देखें, group members देखें, conversations में भाग लें, और attendance ट्रैक करें।
+- **Giving** -- अपने church को ऑनलाइन donations दें और अपना giving history देखें।
+- **Events** -- आने वाले events ब्राउज़ करें और स्वयं तथा अपने परिवार का registration करें।
+- **Serving** -- service plans, अपनी volunteer positions देखें, और खुले volunteer अवसरों के लिए sign up करें। अपनी [notification preferences](./getting-started/notification-preferences.md) में text द्वारा serving और event reminders प्राप्त करना चुनें (बंद करने के लिए कभी भी STOP का उत्तर दें)।
+- **Plans** -- आने वाले service plans देखें, अपनी सौंपी गई positions स्वीकार या अस्वीकार करें, और गानों के विवरण व service orders तक पहुंचें।
+- **Check-In** -- services और events के लिए स्वयं और अपने परिवार के सदस्यों को check in करें। Guests QR code के माध्यम से registration कर सकते हैं।
+- **Community Directory** -- अपने church की member directory ब्राउज़ करें, profiles देखें, और direct messages भेजें। [अपनी profile के Privacy section](./getting-started/editing-your-profile.md#privacy) से नियंत्रित करें कि आपकी अपनी contact जानकारी कौन देख सकता है।
+- **Content** -- sermons देखें, Bible पढ़ें, live streams देखें, और दैनिक verse देखें -- सब कुछ अपने church की site से। (Curriculum playback अब [FreePlay](/docs/freeplay/) में है -- portal के अंदर का Lessons tab deprecated है।)
 
-## अधिक जानें
+## और जानें
 
-- [शुरू करना](./getting-started/) -- अपना खाता बनाएं, लॉगिन करें, और B1.church को नेविगेट करना सीखें।
-- [समूह](./groups/) -- अपनी चर्च के समूहों में शामिल हों और भाग लें।
-- [दान](./giving/) -- दान दें और अपने दान को प्रबंधित करें।
-- [इवेंट](./events/) -- आने वाले चर्च इवेंट ब्राउज़ करें और पंजीकृत करें।
-- [सेवा](./serving/) -- योजनाएं देखें और स्वेच्छासेवक स्थिति के लिए साइन अप करें।
-- [योजनाएं](./plans/) -- सेवा योजनाएं और अपनी स्वेच्छासेवक स्थिति देखें।
-- [चेक-इन](./checkin/) -- सेवाओं, इवेंटों, और अतिथि पंजीकरण के लिए चेक इन करें।
-- [सामुदायिक निर्देशिका](./community/) -- अन्य सदस्यों को खोजें और जुड़ें।
-- [सामग्री](./content/) -- उपदेश, बाइबल, दैनिक छंद, और लाइव स्ट्रीमिंग। (पाठ प्लेबैक [FreePlay](/docs/freeplay/) में स्थानांतरित हो गया है।)
+- [Getting Started](./getting-started/) -- अपना account बनाएं, log in करें, और B1.church पर नेविगेट करना सीखें।
+- [Groups](./groups/) -- अपने church के groups से जुड़ें और उनमें भाग लें।
+- [Giving](./giving/) -- donations करें और अपनी giving प्रबंधित करें।
+- [Events](./events/) -- आने वाले church events ब्राउज़ करें और उनके लिए registration करें।
+- [Serving](./serving/) -- plans देखें और volunteer positions के लिए sign up करें।
+- [Plans](./plans/) -- service plans और अपनी volunteer positions देखें।
+- [Check-In](./checkin/) -- services, events, और guest registration के लिए check in करें।
+- [Community Directory](./community/) -- अन्य members को खोजें और उनसे जुड़ें।
+- [Content](./content/) -- Sermons, Bible, दैनिक verse, और live streaming। (Lessons playback [FreePlay](/docs/freeplay/) में चला गया है।)
 
 :::info
-B1.church चर्चों और सदस्यों के लिए पूरी तरह से मुफ्त है। आपके चर्च व्यवस्थापक B1 Admin के माध्यम से साइट को सेट अप और कस्टमाइज़ करते हैं। एक सदस्य के रूप में, आप बस शुरू करने के लिए अपनी चर्च के B1.church URL पर जाएं।
+B1.church churches और members के लिए पूरी तरह निःशुल्क है। आपके church के administrator B1 Admin के माध्यम से site सेट अप और अनुकूलित करते हैं। एक member के रूप में, शुरू करने के लिए बस अपने church का B1.church URL खोलें।
 :::

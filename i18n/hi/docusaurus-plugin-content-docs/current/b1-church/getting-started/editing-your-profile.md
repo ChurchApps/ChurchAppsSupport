@@ -1,79 +1,78 @@
 ---
-title: "अपनी प्रोफ़ाइल संपादित करना"
+title: "अपनी Profile संपादित करना"
 ---
 
-# अपनी प्रोफ़ाइल संपादित करना
+# अपनी Profile संपादित करना
 
 <div class="article-intro">
 
-सदस्य पोर्टल में आपकी प्रोफ़ाइल पृष्ठ आपको अपनी संपर्क जानकारी अपडेट करने, अपने परिवार को प्रबंधित करने, अपने खाते का ईमेल और पासवर्ड बदलने, और नियंत्रण करने देता है कि कौन आपका पता, फोन नंबर, और ईमेल पता देख सकता है।
+member portal में आपका profile page आपको अपनी contact जानकारी अपडेट करने, अपने household को प्रबंधित करने, अपना account email और password बदलने, और यह नियंत्रित करने देता है कि आपका address, phone number, और email address कौन देख सकता है।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- आपको [logged in](./logging-in.md) होने की आवश्यकता है — प्रोफ़ाइल संपादन के लिए खाता आवश्यक है
+- आपको [logged in](./logging-in.md) होना चाहिए -- profile संपादित करने के लिए एक account आवश्यक है
 
 </div>
 
-## अपनी प्रोफ़ाइल खोलना
+## अपनी Profile खोलना
 
-अपनी प्रोफ़ाइल फोटो को शीर्ष ऐप बार में टैप करें, या `/mobile/profileEdit` पर अपनी प्रोफ़ाइल खोलने के लिए नेविगेशन मेनू से **Edit Profile** चुनें। पृष्ठ में चार टैब हैं: **Profile**, **Household**, **Account**, और **Privacy**।
+ऊपर के app bar में अपनी profile photo पर tap करें, या **More** page के ऊपर या अपने [Me page](./me-page.md) पर **Edit Profile** पर tap करें, ताकि `/mobile/profileEdit` पर **Your profile** खुले। यह page sections की एक शीट है -- **Photo & name**, **Contact**, **Household**, **Account**, और **Privacy** -- जिनमें से हर एक आपकी वर्तमान जानकारी दिखाता है और एक **Edit** link (या **Add Family Member** / **Change**) होता है, जो एक panel खोलता है जहां आप बदलाव करते हैं।
 
-## प्रोफ़ाइल टैब
+## Photo & Name और Contact
 
-प्रोफ़ाइल टैब वह जानकारी रखता है जो आपका चर्च आपकी व्यक्ति रिकॉर्ड पर देखता है:
+ये sections वह जानकारी रखते हैं जो आपका church आपके person record पर देखता है:
 
-- **Photo** — एक नई तस्वीर अपलोड करने के लिए **Change Photo** पर टैप करें।
-- **Name** — पहला, मध्य, और अंतिम नाम।
-- **Contact** — ईमेल और जन्मतिथि।
-- **Address** — सड़क पता, शहर, राज्य, और ज़िप।
-- **Phone** — मोबाइल, घर, और कार्य नंबर। यदि आप [Notification Preferences](./notification-preferences.md) में टेक्स्ट रिमाइंडर चालू करते हैं, तो वे आपके मोबाइल नंबर पर जाते हैं।
+- **Photo & name** — नई तस्वीर अपलोड करने के लिए **Change Photo** पर tap करें, और अपना First, Middle, और Last name संपादित करें।
+- **Contact** — Email, Mobile Phone, Home Phone, Work Phone, Birth Date, और आपका Address (street, city, state, और zip)। यदि आप [Notification Preferences](./notification-preferences.md) में text reminders चालू करते हैं, तो वे आपके mobile number पर जाते हैं।
 
-किसी भी फील्ड को संपादित करें और स्क्रीन के नीचे के बार से अपने परिवर्तनों को सहेजें।
+panel में अपने बदलाव करें और **Save Changes** पर tap करें।
 
 :::info
-यदि आपका चर्च निर्देशिका परिवर्तनों के लिए अनुमोदन की आवश्यकता है, तो आपके संपादन तुरंत लागू होने के बजाय एक अनुरोध के रूप में प्रस्तुत किए जाते हैं। [Approving Profile Changes](/docs/b1-admin/profile/approving-profile-changes) देखें कि आपका चर्च इन की समीक्षा कैसे करता है।
+यदि आपका church directory के बदलावों के लिए approval मांगता है, तो पेज कहता है "Changes to your profile go to church staff for approval." और button **Submit for Approval** दिखाता है -- आपके बदलाव तुरंत लागू होने के बजाय एक अनुरोध के रूप में जमा होते हैं। आपके church इनकी समीक्षा कैसे करता है, इसके लिए देखें [Approving Profile Changes](/docs/b1-admin/profile/approving-profile-changes)।
 :::
 
-## परिवार टैब
+## Household
 
-परिवार टैब आपके परिवार से जुड़े अन्य लोगों को दिखाता है, प्रत्येक के साथ उनकी परिवार भूमिका (मुखिया, जीवनसाथी, बच्चा, आदि)। किसी परिवार के सदस्य के विवरण को देखने के लिए उन पर टैप करें।
+Household section आपके household से जुड़े अन्य लोगों को उनकी household role (Head, Spouse, Child, आदि) के साथ दिखाता है। किसी household सदस्य का विवरण देखने के लिए उस पर tap करें।
 
-एक परिवार के सदस्य को जोड़ने के लिए जो अभी तक सिस्टम में नहीं है, **Add Family Member** के तहत उनका पहला नाम दर्ज करें और **Add** पर टैप करें। नए परिवार के सदस्य एक प्रतीक्षा सूची में जोड़े जाते हैं और आपके अन्य प्रोफ़ाइल परिवर्तनों के साथ आपके चर्च द्वारा समीक्षा के लिए प्रस्तुत किए जाते हैं।
+जो परिवार का सदस्य अभी सिस्टम में नहीं है उसे जोड़ने के लिए **Add Family Member** पर tap करें, उनका पहला नाम लिखें, और **Add** पर tap करें। नए परिवार के सदस्य एक pending सूची में जोड़े जाते हैं और आपके अन्य profile बदलावों के साथ आपके church की समीक्षा के लिए जमा किए जाते हैं।
 
-## खाता टैब
+## Account
 
-खाता टैब आपकी चर्च प्रोफ़ाइल के बजाय आपकी लॉगिन को प्रबंधित करता है:
+Account section आपके church profile के बजाय आपके login को प्रबंधित करता है। उसे खोलने के लिए **Edit** पर tap करें:
 
-- **Display Name** — आपकी लॉगिन पर दिखाया गया पहला और अंतिम नाम (प्रोफ़ाइल टैब पर नाम क्षेत्रों से अलग)।
-- **Change Email** — वह ईमेल पता अपडेट करें जो आप साइन इन करने के लिए उपयोग करते हैं।
-- **Change Password** — अपना वर्तमान पासवर्ड दर्ज करें, फिर अपना नया पासवर्ड दो बार दर्ज करें। आपका नया पासवर्ड साइट की न्यूनतम लंबाई को पूरा करना चाहिए।
+- **Display Name** — आपके login पर दिखने वाला पहला और अंतिम नाम (आपके church profile के नाम से अलग)।
+- **Change Email** — वह email address अपडेट करें जिससे आप sign in करते हैं।
+- **Change Password** — अपना वर्तमान password लिखें, फिर अपना नया password दो बार लिखें। आपका नया password कम से कम 8 अक्षरों का होना चाहिए।
 
-## गोपनीयता टैब
+हर भाग का अपना **Save** button है।
 
-गोपनीयता टैब ChurchApps भर में नियंत्रित करता है कि कौन आपकी संपर्क जानकारी देख सकता है:
+## Privacy
 
-- **Hide Me from the Member Directory** — एक स्विच जो आपको [member directory](../community/member-directory.md) से पूरी तरह हटा देता है।
-- **Address Visibility**, **Phone Visibility**, और **Email Visibility** — प्रत्येक का अपना ड्रॉपडाउन है, इसलिए आप अपना ईमेल पूरे चर्च के साथ साझा कर सकते हैं जबकि अपना पता अधिक निजी रख सकते हैं। विकल्प हैं:
+Privacy section दिखाता है कि ChurchApps में आपकी contact जानकारी कौन देख सकता है। **Visibility Preferences** खोलने के लिए **Change** पर tap करें:
 
-| स्तर | इसे कौन देख सकता है |
+- **Hide me from the member directory** — एक switch जो आपको [member directory](../community/member-directory.md) से पूरी तरह हटा देता है।
+- **Address Visibility**, **Phone Visibility**, और **Email Visibility** — हर एक का अपना dropdown है, ताकि आप उदाहरण के लिए अपना email पूरे church के साथ साझा कर सकें और अपना address अधिक निजी रख सकें। विकल्प ये हैं:
+
+| स्तर | कौन देख सकता है |
 |---|---|
-| **Everyone** | निर्देशिका देख सकने वाले किसी को भी दिखाई दे। |
-| **Members Only** | अन्य साइन-इन चर्च सदस्यों को दिखाई दे। |
-| **My Groups Only** | केवल आपके जिन समूहों में हैं उन के सदस्यों को दिखाई दे। |
-| **My Group Leaders and Staff** | केवल चर्च कर्मचारियों और आपके जिन समूहों में हैं उन के नेताओं को दिखाई दे। |
-| **Staff Only** | केवल चर्च कर्मचारियों को दिखाई दे। |
+| **Everyone** | जो कोई भी directory देख सकता है, उसे दिखता है। |
+| **Members Only** | साइन इन किए हुए अन्य church members को दिखता है। |
+| **My Groups Only** | केवल उन groups के सदस्यों को दिखता है जिनके आप सदस्य हैं। |
+| **My Group Leaders and Staff** | केवल church staff और आपके groups के leaders को दिखता है। |
+| **Staff Only** | केवल church staff को दिखता है। |
 
-ड्रॉपडाउन बदलने से उस अनुभाग के लिए एक **Save** बटन पता चलता है। आपका चर्च इन तीनों क्षेत्रों में से प्रत्येक के लिए एक डिफ़ॉल्ट सेट करता है — [Mobile App Settings](/docs/b1-admin/settings/mobile-app) देखें — लेकिन आप जो भी यहां चुनते हैं वह आपकी अपनी रिकॉर्ड के लिए उस डिफ़ॉल्ट को ओवरराइड करता है।
+अपनी पसंद लागू करने के लिए **Save** पर tap करें। आपका church इन तीनों fields में से हर एक के लिए default सेट करता है -- देखें [Mobile App Settings](/docs/b1-admin/settings/mobile-app) -- लेकिन यहां आप जो चुनते हैं वह आपके अपने record के लिए उस default को overrides करता है।
 
 :::tip
-आप इन सेटिंग्स की परवाह किए बिना हमेशा अपनी जानकारी देखते हैं, और लोगों की दृश्य अनुमति वाले कर्मचारी भी हमेशा इसे देख सकते हैं।
+इन settings की परवाह किए बिना आप हमेशा अपनी जानकारी देखते हैं, और People view permission वाला staff भी उसे हमेशा देख सकता है।
 :::
 
 ## संबंधित लेख
 
-- [The Me Page](./me-page.md) — आपका व्यक्तिगत डैशबोर्ड
-- [Member Directory](../community/member-directory.md) — अन्य सदस्यों को ब्राउज़ करना
-- [Approving Profile Changes](/docs/b1-admin/profile/approving-profile-changes) — आपका चर्च प्रस्तुत परिवर्तनों की समीक्षा कैसे करता है
+- [The Me Page](./me-page.md) — आपका व्यक्तिगत dashboard
+- [Member Directory](../community/member-directory.md) — अन्य members को ब्राउज़ करना
+- [Approving Profile Changes](/docs/b1-admin/profile/approving-profile-changes) — आपका church जमा किए गए बदलावों की समीक्षा कैसे करता है

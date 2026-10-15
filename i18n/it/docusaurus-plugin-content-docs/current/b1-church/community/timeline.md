@@ -6,39 +6,28 @@ title: "Cronologia"
 
 <div class="article-intro">
 
-La **Cronologia** è la pagina di destinazione predefinita del tuo portale membri B1.church. Fornisce un feed di attività che mostra gli ultimi aggiornamenti dai tuoi gruppi e dalla chiesa, mantenendo tutto in un unico posto comodo.
+La scheda **Cronologia** autonoma è stata dismessa. Il portale dei membri ora si apre sulla [Dashboard Home](../getting-started/navigating.md), e le attività che un tempo confluivano in un unico feed combinato sono mostrate dove devono stare -- nella pagina Io, nelle notifiche e all'interno di ciascun gruppo.
 
 </div>
 
-<div class="prereqs">
-<h4>Prima di Iniziare</h4>
+## Dove si trovano ora le attività della Cronologia
 
-- Devi aver [effettuato l'accesso](../getting-started/logging-in.md) al tuo account B1.church.
+| Cosa vedevi nella Cronologia | Dove trovarla ora |
+| --- | --- |
+| Conversazioni e annunci del gruppo | La chat all'interno di ogni [gruppo](../groups/conversations.md) (**Apri chat**) |
+| Eventi imminenti per te e i tuoi gruppi | La pagina **Io** (`/mobile/me`) e la sezione **Prossimo evento** di ogni gruppo |
+| Attività e incarichi di servizio | La pagina **Io** e i [Piani](../plans/) |
+| Nuovi sermoni | La sezione **Ultimo sermone** nella Home e la scheda [Sermoni](../content/sermons.md) |
+| Qualsiasi cosa ti abbia segnalato | L'icona **campanella** nella barra dell'app, oppure `/mobile/notifications` |
 
-</div>
+## La pagina Io
 
-## Cosa Mostra la Cronologia
+[La pagina Io](../getting-started/me-page) è il sostituto più vicino al vecchio feed. Elenca ciò che ti aspetta -- incarichi di servizio, iscrizioni agli eventi ed eventi di gruppo -- insieme alle tue notifiche più recenti, e ti porta direttamente al tuo profilo, alle preferenze di notifica, ai messaggi, alle offerte e alle iscrizioni.
 
-La cronologia mostra un feed di post e aggiornamenti, che possono includere:
+## Notifiche
 
-- **Conversazioni dei gruppi** -- Messaggi e discussioni dai [gruppi](../groups/) a cui appartieni.
-- **Attività** -- Attività assegnate a te o ai tuoi gruppi.
-- **Eventi** -- Eventi imminenti rilevanti per te e i tuoi gruppi.
-- **Lezioni** -- Programmi didattici e [contenuti delle lezioni](../content/lessons.md) condivisi con i tuoi gruppi.
-- **Predicazioni** -- [Predicazioni](../content/sermons.md) recenti pubblicate dalla tua chiesa.
-
-Ogni post nel feed mostra il titolo del post, il gruppo a cui appartiene (se applicabile) e quanto tempo fa è stato pubblicato.
-
-## Visualizzare i Dettagli del Post
-
-La cronologia utilizza un layout master-detail. Il tuo feed è elencato sul lato sinistro della pagina. Clicca su qualsiasi post per aprire i suoi dettagli completi nel pannello sulla destra. Dalla vista di dettaglio, puoi leggere il contenuto completo del post e interagire con esso.
-
-Clicca **Torna agli aggiornamenti** nella parte superiore del pannello di dettaglio per tornare all'elenco del feed.
-
-## Rimanere Connesso
-
-La cronologia raccoglie le attività da tutti i tuoi gruppi in un unico feed, così non hai bisogno di controllare ogni gruppo individualmente. È una buona abitudine visitare regolarmente la tua cronologia per rimanere informato su ciò che sta accadendo nella tua chiesa.
+Tutto ciò che in passato sarebbe apparso come elemento della Cronologia e richiedeva la tua attenzione ora arriva come notifica. Tocca la campanella nella barra dell'app per vedere le più recenti, oppure tocca **Vedi tutte** (o apri `/mobile/notifications`) per l'elenco completo. Toccando una notifica vai al gruppo, al piano o alla conversazione da cui proviene. Puoi controllare quali notifiche ricevi -- e come -- nelle [Preferenze di notifica](../getting-started/notification-preferences.md).
 
 :::tip
-Se la tua cronologia è vuota, potresti non essere ancora membro di nessun gruppo. Visita la pagina dei [Gruppi](../groups/browsing-groups.md) per trovare gruppi a cui unirti, o chiedi all'amministratore della tua chiesa o al leader del gruppo di aggiungerti.
+Se la tua pagina Io sembra vuota, potresti non essere ancora membro di alcun gruppo. Visita la pagina [Gruppi](../groups/browsing-groups.md) per trovare gruppi a cui iscriverti, oppure chiedi all'amministratore della chiesa o al leader del gruppo di aggiungerti.
 :::

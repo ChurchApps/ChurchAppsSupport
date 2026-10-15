@@ -6,36 +6,36 @@ title: "B1.church"
 
 <div class="article-intro">
 
-B1.church er medlemsportalen for menigheten din. Dit går menighetens medlemmer for å holde seg oppdatert, bruke menighetens verktøy og engasjere seg i fellesskapet gjennom hele uken. Hver menighet får sin egen nettadresse på `https://yourchurchname.b1.church`.
+B1.church er medlemsportalen for kirken din. Det er stedet der menigheten går for å holde kontakten, få tilgang til kirkens verktøy og engasjere seg i fellesskapet gjennom uken. Hver kirke får sin egen nettadresse på `https://yourchurchname.b1.church`.
 
 </div>
 
-Når medlemmer besøker B1.church-nettstedet ditt, ser de menighetens offentlige nettsted med din profil, navigasjonslenker og innholdssider. Etter innlogging får de tilgang til **Medlemsportalen**, der alle de personlige menighetsverktøyene finnes samlet på ett sted.
+Når medlemmer besøker B1.church-nettstedet ditt, ser de kirkens offentlige nettsted med din profil, navigasjonslenker og innholdssider. Etter innlogging kan de åpne **Medlemsportalen**, der alle deres personlige kirkeverktøy ligger samlet på ett sted.
 
 ## Hovedfunksjoner
 
-- **Hjem og Meg** -- Medlemsportalen åpner på en [Hjem-oversikt](./getting-started/navigating.md), og [Meg-siden](./getting-started/me-page.md) viser hva som kommer opp for deg -- tjenesteoppdrag, påmeldinger til arrangementer, gruppehendelser -- sammen med dine siste varsler.
-- **Grupper** -- Se gruppene du tilhører, se gruppemedlemmer, delta i samtaler og følg med på oppmøte.
-- **Givertjeneste** -- Gi gaver til menigheten din på nett og se giverhistorikken din.
-- **Arrangementer** -- Bla gjennom kommende arrangementer og meld deg selv og familien din på.
-- **Tjeneste** -- Se tjenesteplaner og dine frivillige oppgaver, og meld deg på ledige frivillige oppgaver. Velg å få tjeneste- og arrangementspåminnelser som tekst i [varselpreferansene dine](./getting-started/notification-preferences.md) (svar STOP når som helst for å slutte).
-- **Planer** -- Se kommende tjenesteplaner, dine tildelte oppgaver, og få tilgang til sangdetaljer og gudstjenesteopplegg.
-- **Innsjekking** -- Sjekk inn deg selv og andre i husstanden til gudstjenester og arrangementer. Gjester kan registrere seg via QR-kode.
-- **Menighetskatalog** -- Bla gjennom menighetens medlemskatalog, se profiler og send direktemeldinger. Styr hvem som kan se din egen kontaktinformasjon fra [profilens fane for personvern](./getting-started/editing-your-profile.md#privacy-tab).
-- **Innhold** -- Få tilgang til prekener, les Bibelen, se direktesendinger og se dagens vers, alt fra menighetens nettsted. (Avspilling av undervisningsopplegg finnes nå i [FreePlay](/docs/freeplay/) — fanen Leksjoner i portalen er utgått.)
+- **Hjem og Meg** – Medlemsportalen åpnes på et [Hjem-dashbord](./getting-started/navigating.md) med forhåndsvisninger av dine kommende tjenesteoppdrag, gruppene dine og gavene dine dette året, og siden [Meg](./getting-started/me-page.md) lister opp det som kommer for deg – tjenesteoppdrag, påmeldinger til arrangementer, gruppearrangementer – sammen med de nyeste varslene dine.
+- **Grupper** – Se gruppene du er med i, se gruppemedlemmer, delta i samtaler og registrer oppmøte.
+- **Giving** – Gi gaver til kirken din på nett og se gavehistorikken din.
+- **Arrangementer** – Bla gjennom kommende arrangementer og meld deg og familien din på.
+- **Tjeneste** – Se tjenesteplaner, dine frivillige posisjoner, og meld deg på ledige frivillige muligheter. Velg å få påminnelser om tjeneste og arrangementer som tekstmelding i dine [varslingsinnstillinger](./getting-started/notification-preferences.md) (svar STOP når som helst for å slutte).
+- **Planer** – Se kommende tjenesteplaner, aksepter eller takk nei til dine tildelte posisjoner, og åpne sangdetaljer og gudstjenesteordener.
+- **Innsjekking** – Sjekk inn deg selv og husstandsmedlemmene dine til gudstjenester og arrangementer. Gjester kan registrere seg via QR-kode.
+- **Fellesskapskatalog** – Bla gjennom kirkens medlemskatalog, se profiler og send direktemeldinger. Kontroller hvem som kan se din egen kontaktinformasjon fra [profilens seksjon om personvern](./getting-started/editing-your-profile.md#privacy).
+- **Innhold** – Få tilgang til prekener, les Bibelen, se direktesendinger og les dagens vers, alt fra kirkens nettsted. (Avspilling av læreplaner ligger nå i [FreePlay](/docs/freeplay/) – fanen for leksjoner i portalen er faset ut.)
 
-## Les mer
+## Lær mer
 
-- [Kom i gang](./getting-started/) -- Opprett kontoen din, logg inn og lær hvordan du navigerer i B1.church.
-- [Grupper](./groups/) -- Bli med i og delta i menighetens grupper.
-- [Givertjeneste](./giving/) -- Gi gaver og administrer givingen din.
-- [Arrangementer](./events/) -- Bla gjennom og meld deg på kommende menighetsarrangementer.
-- [Tjeneste](./serving/) -- Se planer og meld deg på frivillige oppgaver.
-- [Planer](./plans/) -- Se tjenesteplaner og dine frivillige oppgaver.
-- [Innsjekking](./checkin/) -- Sjekk inn til gudstjenester og arrangementer, og registrer gjester.
-- [Menighetskatalog](./community/) -- Finn og kom i kontakt med andre medlemmer.
-- [Innhold](./content/) -- Prekener, Bibelen, dagens vers og direktesending. (Avspilling av leksjoner er flyttet til [FreePlay](/docs/freeplay/).)
+- [Komme i gang](./getting-started/) – Opprett kontoen din, logg inn og lær hvordan du navigerer B1.church.
+- [Grupper](./groups/) – Bli med og delta i kirkens grupper.
+- [Giving](./giving/) – Gi gaver og administrer giving.
+- [Arrangementer](./events/) – Bla gjennom og meld deg på kommende kirkearrangementer.
+- [Tjeneste](./serving/) – Se planer og meld deg på frivillige posisjoner.
+- [Planer](./plans/) – Se tjenesteplaner og dine frivillige posisjoner.
+- [Innsjekking](./checkin/) – Sjekk inn til gudstjenester, arrangementer og gjesteregistrering.
+- [Fellesskapskatalog](./community/) – Finn og komme i kontakt med andre medlemmer.
+- [Innhold](./content/) – Prekener, Bibelen, dagens vers og direktesending. (Avspilling av leksjoner har flyttet til [FreePlay](/docs/freeplay/).)
 
 :::info
-B1.church er helt gratis for menigheter og medlemmer. Menighetens administrator setter opp og tilpasser nettstedet gjennom B1 Admin. Som medlem besøker du bare menighetens B1.church-adresse for å komme i gang.
+B1.church er helt gratis for kirker og medlemmer. Kirkeadministratoren din setter opp og tilpasser nettstedet gjennom B1 Admin. Som medlem går du bare til kirkens B1.church-nettadresse for å komme i gang.
 :::

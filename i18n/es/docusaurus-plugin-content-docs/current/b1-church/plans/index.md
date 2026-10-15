@@ -6,28 +6,29 @@ title: "Planes"
 
 <div class="article-intro">
 
-La seccion de **Planes** en B1.church te permite ver los planes de servicio a los que has sido asignado. Ya sea que estes en el equipo de alabanza, ayudando con el ministerio infantil o sirviendo en otra area, aqui es donde puedes averiguar cuando estas programado, que posicion estas cubriendo y como sera el servicio.
+La sección **Plans** de B1.church te permite ver los planes de servicio a los que has sido asignado. Ya sea que formes parte del equipo de alabanza, ayudes en el ministerio infantil o sirvas en otra área, aquí puedes consultar cuándo estás programado, qué posición ocupas y cómo será el servicio.
 
 </div>
 
-## Lo que Encontraras
+## Qué encontrarás
 
-Los planes pueden incluir varios tipos de contenido dependiendo de como tu iglesia los configure:
+Los planes pueden incluir varios tipos de contenido, según cómo los configure tu iglesia:
 
-- **Tus asignaciones** -- Consulta a cuales posiciones has sido asignado y cuando te necesitan. Cada asignacion muestra el nombre de tu posicion, la fecha del servicio y tu estado actual (Aceptado, Rechazado o Sin Confirmar).
-- **Orden del servicio** -- Consulta el orden del servicio con detalles de tiempo, informacion de canciones y descripciones de elementos para que conozcas el flujo del servicio con anticipacion.
-- **Contenido de curriculo** -- Algunos planes incluyen contenido de leccion o curriculo asociado de proveedores como [Lessons.church](../content/lessons.md). Puedes previsualizar este contenido directamente dentro del plan.
-- **Fechas de bloqueo** -- Informa a los lideres de tu equipo cuando no estes disponible gestionando tus fechas de bloqueo.
+- **Tus asignaciones**: consulta a qué posiciones has sido asignado y cuándo te necesitan. Cada asignación muestra el nombre de tu posición, la fecha del servicio y tu estado actual (como Accepted, Declined o Needs reply). Puedes aceptar o rechazar nuevas asignaciones, y rechazar una que ya aceptaste si tus planes cambian.
+- **Orden de servicio**: consulta el orden del servicio con detalles de tiempo, información de canciones y descripciones de cada elemento, para conocer el flujo del servicio con anticipación.
+- **Contenido de currículo**: algunos planes incluyen contenido de lecciones o currículo asociado de proveedores como [Lessons.church](../content/lessons.md). Puedes previsualizar este contenido directamente dentro del plan.
+- **Fechas de no disponibilidad**: avisa a los líderes de tu equipo cuándo no estarás disponible administrando tus fechas de no disponibilidad.
+- **Vista previa en Home**: tus próximas asignaciones también aparecen en la sección **You're serving** del [panel Home](../getting-started/navigating.md#home), donde puedes aceptar o rechazar las que necesitan respuesta.
 
-## Para Comenzar
+## Primeros pasos
 
-Para acceder a tus planes, haz clic en **Planes** en la navegacion lateral de tu portal de miembros. Debes haber [iniciado sesion](../getting-started/logging-in.md) para ver tus planes -- si no has iniciado sesion, se te pedira que lo hagas primero.
+Para acceder a tus planes, toca **Plans** en la barra de pestañas o en la página **More** de tu portal de miembros. Debes [haber iniciado sesión](../getting-started/logging-in.md) para ver tus planes; si no has iniciado sesión, se te pedirá que lo hagas primero.
 
 :::info
-Solo veras los planes a los que has sido asignado. Si no ves ningun plan listado, significa que aun no has sido agregado a un equipo de servicio. Habla con el administrador de tu iglesia o lider de ministerio para involucrarte.
+Solo verás los planes a los que has sido asignado. Si no ves ningún plan en la lista, significa que todavía no te han agregado a un equipo de servicio. Habla con el administrador de tu iglesia o con el líder de tu ministerio para involucrarte.
 :::
 
-## Siguientes Pasos
+## Próximos pasos
 
-- [Ver Planes](./viewing-plans.md) -- Aprende como navegar tu lista de planes y ver los detalles.
-- [Orden del Servicio](./service-order.md) -- Comprende la vista del orden del servicio y como imprimirlo.
+- [Ver planes](./viewing-plans.md): aprende a explorar tu lista de planes y ver los detalles de cada uno.
+- [Orden de servicio](./service-order.md): conoce la vista del orden de servicio y cómo imprimirla.

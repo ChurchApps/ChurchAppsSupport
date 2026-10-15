@@ -1,65 +1,65 @@
 ---
-title: "Auto-Check-In"
+title: "Self check-in"
 ---
 
-# Auto-Check-In
+# Self check-in
 
 <div class="article-intro">
 
-Il processo di auto-check-in ti consente di registrare la partecipazione per te stesso e il tuo nucleo familiare in pochi semplici passi. È un'alternativa veloce all'utilizzo di un chiosco fisico presso la chiesa.
+Il processo di self check-in ti permette di registrare le presenze tue e del tuo nucleo familiare in pochi passaggi. È un'alternativa rapida all'uso di un kiosk fisico in chiesa.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Devi essere [connesso](../getting-started/logging-in.md) al tuo account B1.church.
-- I membri del tuo nucleo familiare devono essere collegati al tuo account. Se manca un membro della famiglia, chiedi al tuo amministratore della chiesa di aggiungerli al tuo nucleo familiare.
+- Devi aver [effettuato l'accesso](../getting-started/logging-in.md) al tuo account B1.church.
+- I membri del tuo nucleo familiare devono essere collegati al tuo account. Se manca un familiare, chiedi all'amministratore della chiesa di aggiungerlo al tuo nucleo familiare.
 
 </div>
 
-## Il Flusso di Check-In
+## Il flusso di check-in
 
-Il check-in segue un semplice processo in tre fasi. Vai alla scheda **Check-In** nella [barra laterale](../getting-started/navigating.md) per iniziare.
+Il check-in segue un semplice processo in tre passaggi. Apri **Check-in** dalla [barra delle schede o dalla pagina Altro](../getting-started/navigating.md) per iniziare.
 
-### Fase 1: Selezione di un Servizio
+### Passaggio 1: seleziona un culto
 
-Quando apri la pagina di check-in, vedrai un elenco dei servizi disponibili (ad esempio, "Domenica Mattina" o "Mercoledì Sera"). Ogni scheda di servizio mostra il nome del servizio e il campus se la tua chiesa ha più sedi.
+Quando apri la pagina di check-in, vedrai un elenco dei culti disponibili (ad esempio "Domenica mattina" o "Mercoledì sera"). Ogni scheda del culto mostra il nome del culto e il campus, se la tua chiesa ha più sedi.
 
-Fai clic su un servizio per selezionarlo e passare alla fase successiva.
+Fai clic su un culto per selezionarlo e passare al passaggio successivo.
 
-### Fase 2: Seleziona Membri del Nucleo Familiare e Gruppi
+### Passaggio 2: seleziona i membri del nucleo familiare e i gruppi
 
-Dopo aver selezionato un servizio, vedrai un elenco dei membri del tuo nucleo familiare. Per ogni persona che partecipa:
+Dopo aver selezionato un culto, vedrai i membri del tuo nucleo familiare sotto **Chi è qui**. Per ogni persona presente:
 
 1. Tocca un membro del nucleo familiare per espandere la sua voce.
-2. Vedrai gli **orari di servizio** disponibili per il servizio che hai selezionato. Se la tua chiesa ha impostato una pianificazione del check-in per un orario di servizio, questo compare solo mentre il check-in per esso è aperto (ad esempio, da 30 minuti prima del servizio fino a poco dopo la sua fine).
-3. Fai clic su **Seleziona Gruppo** accanto a un orario di servizio per scegliere a quale gruppo la persona dovrebbe fare il check-in (come "Culto Principale", "Stanza dei Bambini 1" o "Gruppo Giovani").
-4. Ripeti per ogni membro del nucleo familiare che partecipa.
+2. Vedrai gli **orari di culto** disponibili per il culto selezionato. Se la tua chiesa ha impostato una pianificazione del check-in per un orario di culto, questo compare solo mentre il check-in per quell'orario è aperto (ad esempio da 30 minuti prima del culto fino a poco dopo la sua fine).
+3. Tocca **Seleziona gruppo** accanto a un orario di culto per scegliere il gruppo in cui registrare la persona (ad esempio "Culto principale", "Stanza bambini 1" o "Gruppo giovani").
+4. Ripeti per ogni membro del nucleo familiare presente.
 
-Non è necessario fare il check-in di ogni membro del nucleo familiare -- espandi e assegna i gruppi solo per le persone che sono effettivamente presenti.
+Non devi registrare il check-in di ogni membro del nucleo familiare -- espandi e assegna i gruppi solo per le persone effettivamente presenti.
 
-### Fase 3: Conferma
+### Passaggio 3: conferma
 
-Una volta che hai selezionato i gruppi per tutti coloro che partecipano, fai clic sul pulsante **Completa Check-in** in fondo alla pagina.
+Una volta selezionati i gruppi per tutti i presenti, tocca il pulsante in fondo alla pagina. Il pulsante conta le persone selezionate -- ad esempio **Registra il check-in di 1 persona** oppure **Registra il check-in di 3 persone**.
 
-Vedrai una conferma che il tuo check-in è completo e la tua partecipazione è stata salvata. Dopo un momento la pagina torna all'elenco dei servizi, pronta per il prossimo check-in.
+Vedrai una conferma che il tuo check-in è completato e che la tua presenza è stata salvata. Dopo un momento la pagina torna all'elenco dei culti, pronta per il prossimo check-in.
 
-Se la tua chiesa stampa i cartellini con i nomi a una stazione di check-in, invece vedrai **Sei stato verificato!** con un codice QR e un codice di sicurezza. Mostra il codice a una stazione di check-in per stampare i tuoi cartellini con i nomi, quindi tocca **Fine**. A un chiosco B1 Checkin, tocca **Scansiona codice** e tieni il codice QR davanti alla telecamera -- consulta [Stampa di Etichette per un Check-In Telefonico](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Se la tua chiesa stampa i cartellini nominativi in una postazione di check-in, vedrai invece **Sei registrato!** con un codice QR e un codice di sicurezza. Mostra il codice a una postazione di check-in per stampare i cartellini, poi tocca **Fatto**. Su un kiosk B1 Checkin, tocca **Scansiona codice** e tieni il codice QR davanti alla fotocamera -- consulta [Stampare le etichette per il check-in dal telefono](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
 
-Se il tuo nucleo familiare è già stato verificato per il servizio che selezioni, un pulsante **Mostra codice di check-in** appare sopra l'elenco del tuo nucleo familiare. Toccalo per riportare il codice QR e il codice di sicurezza -- ad esempio, se hai chiuso la pagina prima di raggiungere una stazione di check-in.
+Se il tuo nucleo familiare è già registrato per il culto selezionato, accanto al titolo **Chi è qui** compare un collegamento **Mostra codice di check-in**. Tocca per far riapparire il codice QR e il codice di sicurezza -- ad esempio se hai chiuso la pagina prima di raggiungere una postazione di check-in.
 
 :::tip
-Se hai bisogno di cambiare una selezione di gruppo prima di completare il check-in, tocca il pulsante **Cambia** accanto a qualsiasi orario di servizio per selezionare un gruppo diverso.
+Se devi cambiare una selezione di gruppo prima di completare il check-in, tocca il pulsante **Cambia** accanto a un orario di culto qualsiasi per scegliere un gruppo diverso.
 :::
 
-## Cose da Sapere
+## Cose da sapere
 
-- Puoi solo fare il check-in dei membri del nucleo familiare che sono collegati al tuo account. Se manca un membro della famiglia, chiedi al tuo amministratore della chiesa di aggiungerli al tuo nucleo familiare.
-- Se nessun servizio appare sulla pagina di check-in, la tua chiesa potrebbe non avere servizi configurati per il check-in in questo momento.
-- Se selezioni un servizio e vedi "Check-in isn't open for this service right now", nessuno degli orari di quel servizio rientra al momento nella propria finestra di check-in. Riprova più vicino all'orario del servizio.
-- Se una stanza che hai scelto è piena o chiusa, vedrai "A room you picked is full or closed for check-in. Please see a volunteer."
+- Puoi registrare il check-in solo dei membri del nucleo familiare collegati al tuo account. Se manca un familiare, chiedi all'amministratore della chiesa di aggiungerlo al tuo nucleo familiare.
+- Se nella pagina di check-in non compare alcun culto, la tua chiesa potrebbe non avere al momento culti configurati per il check-in.
+- Se selezioni un culto e vedi "Il check-in non è aperto per questo culto in questo momento", nessuno degli orari di quel culto rientra attualmente nella finestra di check-in. Riprova più vicino all'orario del culto.
+- Se una sala che hai scelto è piena o chiusa, vedrai "Una sala che hai scelto è piena o chiusa per il check-in. Rivolgiti a un volontario."
 
 :::warning
-Il check-in è disponibile solo quando la tua chiesa ha servizi attivi configurati. Se non vedi alcun servizio elencato, contatta l'ufficio della tua chiesa per confermare se l'auto-check-in è abilitato.
+Il check-in è disponibile solo quando la tua chiesa ha culti attivi configurati. Se non vedi alcun culto nell'elenco, verifica con la segreteria della chiesa se il self check-in è abilitato.
 :::

@@ -1,65 +1,65 @@
 ---
-title: "Preferencias de Notificación"
+title: "Preferencias de notificación"
 ---
 
-# Preferencias de Notificación
+# Preferencias de notificación
 
 <div class="article-intro">
 
-Las preferencias de notificación te permiten decidir qué notificaciones recibes de tu iglesia y cómo las recibes -- notificaciones push, correo electrónico, la campana en la aplicación o (si tu iglesia envía mensajes de texto) mensajes de texto. Puedes ajustar cada tipo de notificación, configurar horarios silenciosos, o silenciar todo de una vez, todo desde una pantalla.
+Las preferencias de notificación te permiten decidir qué notificaciones recibes de tu iglesia y cómo las recibes: notificaciones push, correo electrónico, la campana dentro de la app o, si tu iglesia envía mensajes de texto, SMS. Puedes ajustar cada tipo de notificación, definir horas de silencio o silenciar todo de una vez, todo desde una sola pantalla.
 
 </div>
 
-## Abriendo Tus Preferencias
+## Abrir tus preferencias
 
-1. Ve a la página **Mi** y toca **Preferencias de Notificación** bajo **Atajos**.
+1. Ve a la página **Me** y toca **Settings** debajo de tu nombre.
 
-También puedes tocar el icono de campana, abrir la pestaña **Notificaciones**, tocar **Ver todas las notificaciones**, y luego tocar **Preferencias de Notificación** en esa página.
+También puedes tocar el icono de campana, tocar **See all** para abrir tu bandeja de entrada y luego tocar **Notification Preferences** en la parte superior de esa página.
 
-## Controles Globales
+## Controles globales
 
 En la parte superior de la pantalla encontrarás configuraciones que se aplican a todo:
 
-- **Silenciar todo** -- Pausa temporalmente todas las notificaciones no esenciales.
-- **Notificaciones push** -- Activa o desactiva las notificaciones push para tu dispositivo.
-- **Mensajes de texto** -- Solo se muestra si tu iglesia tiene configurados los mensajes de texto. Actívalo para recibir recordatorios de servicio y eventos por texto al número móvil de tu perfil. Está desactivado hasta que lo actives.
-- **Frecuencia de correo electrónico** -- Elige cómo llegan las notificaciones por correo electrónico:
-  - **Por notificación** -- Envía un correo electrónico a medida que suceden las cosas.
-  - **Resumen diario** -- Agrúpalas en un correo electrónico diario.
-  - **Nunca** -- No envíes correos electrónicos de notificación.
-- **Horarios silenciosos** -- Establece una hora de inicio y fin (y tu zona horaria) cuando prefieras no ser molestado. Las notificaciones no urgentes esperan hasta que terminen las horas silenciosas.
+- **Mute all**: pausa temporalmente todas las notificaciones no esenciales.
+- **Push notifications**: activa o desactiva las notificaciones push en tu dispositivo.
+- **Text messages**: solo aparece si tu iglesia tiene configurado el envío de mensajes de texto. Actívalo para recibir recordatorios de servicio y de eventos por SMS en el número de celular de tu perfil. Está desactivado hasta que lo actives.
+- **Email frequency**: elige cómo llegan las notificaciones por correo electrónico:
+  - **Per notification**: envía un correo a medida que ocurren las cosas.
+  - **Daily digest**: agrupa todo en un solo correo diario.
+  - **Never**: no envía correos de notificación.
+- **Quiet hours**: define una hora de inicio y de fin (y tu zona horaria) para cuando prefieras no recibir interrupciones. Las notificaciones no urgentes esperan a que terminen las horas de silencio.
 
-## Eligiendo Notificaciones por Tipo
+## Elegir las notificaciones por tipo
 
-Debajo de los controles globales hay una cuadrícula de tipos de notificación. Para cada una puedes activar o desactivar los canales que deseas:
+Debajo de los controles globales hay una cuadrícula de tipos de notificación. Para cada uno puedes activar o desactivar los canales que quieras:
 
-- **Push** -- Una notificación en tu dispositivo.
-- **Correo Electrónico** -- Un mensaje en tu bandeja de entrada.
-- **En la Aplicación** -- La campana/distintivo dentro de la aplicación.
-- **Texto** -- Un mensaje de texto a tu teléfono móvil. Esta columna solo aparece si tu iglesia tiene configurados los mensajes de texto, y solo algunos tipos (como **Recordatorios de Eventos**, **Voluntariado y Programación** y **Tareas y Seguimientos**) pueden enviarse por texto. Los textos solo llegan cuando **Mensajes de texto** también está activado.
+- **Push**: una notificación en tu dispositivo.
+- **Email**: un mensaje en tu bandeja de correo.
+- **In-App**: la campana o insignia dentro de la app.
+- **Text**: un mensaje de texto a tu teléfono celular. Esta columna solo aparece si tu iglesia tiene configurado el envío de mensajes de texto, y solo algunos tipos (como **Event Reminders**, **Serving & Schedule** y **Tasks & Follow-Ups**) pueden enviarse por texto. Los mensajes solo llegan si también tienes activado **Text messages**.
 
-Los tipos comunes incluyen **Recordatorios de Eventos**, **Voluntariado y Programación**, **Mensajes Directos**, **Chat de Grupo**, **Solicitudes de Oración**, y **Anuncios de la Iglesia**. Por ejemplo, podrías mantener las notificaciones push activadas para Mensajes Directos pero desactivarlas para Anuncios.
+Los tipos comunes incluyen **Event Reminders**, **Serving & Schedule**, **Direct Messages**, **Group Chat**, **Prayer Requests** y **Church Announcements**. Por ejemplo, puedes mantener las notificaciones push activadas para Direct Messages y desactivarlas para los anuncios.
 
 :::info
-Algunos tipos de notificación están **siempre activados** y no se pueden desactivar -- **Cuenta y Seguridad**, **Recibos y Extractos de Donaciones**, y **Alertas de Seguridad de Registro**. Estos se requieren por seguridad y por razones legales, así que muestran un pequeño icono de candado. Todo lo demás es tuyo para controlar.
+Algunos tipos de notificación están **siempre activados** y no se pueden desactivar: **Account & Security**, **Giving Receipts & Statements** y **Check-In Safety Alerts**. Son necesarios por tu seguridad y por motivos legales, por eso muestran un pequeño icono de candado. Todo lo demás lo controlas tú.
 :::
 
-Algunos tipos están **desactivados de manera predeterminada** (como mensajes promocionales o de recaudación de fondos) y solo te llegan si optas por participar.
+Algunos tipos vienen **desactivados por defecto** (como los mensajes promocionales o de recaudación de fondos) y solo te llegan si decides suscribirte.
 
-## Dejar de Recibir Mensajes de Texto {#stopping-text-messages}
+## Dejar de recibir mensajes de texto
 
-Para dejar de recibir mensajes de texto, desactiva **Mensajes de texto** y guarda. También puedes responder **STOP** a cualquier mensaje de texto de tu iglesia para excluir tu número de sus mensajes.
+Para dejar de recibir mensajes de texto, desactiva **Text messages** y guarda. También puedes responder **STOP** a cualquier mensaje de texto de tu iglesia para dar de baja tu número de sus mensajes.
 
-## Guardando Tus Cambios
+## Guardar los cambios
 
-Después de ajustar tus preferencias, toca **Guardar Preferencias**. Tus cambios entran en vigor de inmediato y se aplican en todas partes donde uses B1.
+Después de ajustar tus preferencias, toca **Save Preferences**. Los cambios se aplican de inmediato y en todos los lugares donde uses B1.
 
 :::tip
-Las notificaciones sensibles al tiempo -- como una alerta de seguridad o un mensaje de seguridad de registro infantil -- aún te llegan incluso durante las horas silenciosas. Las actualizaciones cotidianas esperan hasta que terminen las horas silenciosas.
+Las notificaciones urgentes, como una alerta de seguridad o un mensaje de seguridad del registro de niños, te llegan incluso durante las horas de silencio. Las actualizaciones cotidianas esperan a que terminen.
 :::
 
 ## Relacionado
 
-- [Inscripción de Voluntarios](../serving/volunteer-signup) -- Recordatorios de voluntariado y responder a solicitudes de programación
-- [Registrarse para Eventos](../events/registering) -- Inscribirse en eventos que envían recordatorios
-- [Instalar la Aplicación](installing-pwa) -- Agrega B1 a tu dispositivo para que puedas recibir notificaciones push
+- [Inscripción de voluntarios](../serving/volunteer-signup): recordatorios de servicio y cómo responder a las solicitudes de horario
+- [Inscribirse a eventos](../events/registering): regístrate en eventos que envían recordatorios
+- [Instalar la app](installing-pwa): agrega B1 a tu dispositivo para recibir notificaciones push

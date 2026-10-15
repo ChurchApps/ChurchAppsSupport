@@ -35,16 +35,17 @@ If you are already logged in when you visit the public donate page, you will be 
 
 ## Member Donation Page (Logged In)
 
-When you are logged in, the donation experience includes additional features, organized into four tabs:
+When you are logged in, the **Giving** page in the member portal shows a **Give** button and a **Print Statement** button at the top, followed by these sections:
 
-- **Overview** -- Your year-to-date giving total, a campaign progress card (if your church has an active campaign), and your most recent gift with a one-click **Repeat** button.
-- **Donate** -- The donation form.
-- **Manage** -- Your saved payment methods (add, remove, or set a default card or bank account).
-- **History** -- Your past donations, giving totals by period, recurring gifts, and statement exports. See [Donation History](./donation-history.md) for details.
+- **This year** (titled with the current year) -- Your year-to-date giving total and number of gifts, with an **All history** link. See [Donation History](./donation-history.md) for details.
+- **Recurring** -- Your scheduled gifts, with a **Manage** link.
+- **Recent Activity** -- Your last three gifts, with a **Repeat last gift** link that opens the donation form.
+- **Payment methods** -- Your saved cards and bank accounts, with a **Manage** link to add, remove, or set a default.
+- A campaign progress card, if your church has an active campaign.
 
 To give:
 
-1. Open the giving page from your church's **Donate** tab or from **Giving** in the Shortcuts on your [Me page](../getting-started/me-page.md). If you land on **Overview**, select the **Donate** tab.
+1. Open the giving page from your church's **Donate** tab, from the **Give** button in the **Giving** section of your [Home dashboard](../getting-started/navigating.md#home), or from **History** in the **Giving** section of your [Me page](../getting-started/me-page.md). On the Giving page, tap **Give** to open the donation form.
 2. Choose the **fund** you would like to give to and enter your donation amount.
 3. Select an existing saved payment method or enter new payment details.
 4. Submit the form to complete your donation.
@@ -52,12 +53,16 @@ To give:
 After your donation is processed, a success message will appear and your donation will show up in your [donation history](./donation-history.md).
 
 :::info
-If donations you've given were recorded in more than one currency, your Overview year-to-date total and the History period total are converted to your church's currency, with a **Converted at current exchange rates** note underneath. Individual donations in your history still show their original currency.
+If donations you've given were recorded in more than one currency, your year-to-date total and the History total are converted to your church's currency, with a **Converted at current exchange rates** note underneath. Individual donations in your history still show their original currency.
 :::
 
 ## Payment Methods
 
 Donations are processed securely through **Stripe**. You can pay with a credit card, debit card, or set up an ACH bank payment. When you are logged in, your payment methods can be saved for future use, making it faster to give next time.
+
+:::info Giving by bank account without signing in
+If you give as a guest (without logging in) by bank account, the account has to be verified instantly by signing in to your bank. If it can't be, you'll see "This bank account couldn't be verified instantly. Please give by card, or sign in and add the bank account under your giving profile." Bank accounts that need a few days of verification can only be added after you sign in.
+:::
 
 :::warning
 If your donation does not go through, double-check your payment details and try again. If the issue persists, contact your church office for assistance.

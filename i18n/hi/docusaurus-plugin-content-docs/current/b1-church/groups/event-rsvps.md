@@ -1,43 +1,43 @@
 ---
-title: "समूह ईवेंट RSVPs"
+title: "Event RSVPs"
 ---
 
 # Event RSVPs
 
 <div class="article-intro">
 
-Group events can collect RSVPs so leaders know who is coming. On your group's calendar, each upcoming event asks "Will you attend?" — answer with a tap, change your mind anytime, and see at a glance how many others are going.
+group events में RSVPs एकत्र किए जा सकते हैं ताकि leaders को पता रहे कि कौन आ रहा है। आपके group के page और calendar पर, हर आने वाले event में **Going**, **Maybe**, और **Can't go** buttons होते हैं -- एक tap से जवाब दें, कभी भी अपना मन बदलें, और एक नज़र में देखें कि कितने और लोग आ रहे हैं।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- You must be [logged in](../getting-started/logging-in.md) and a member of the group
-- The event must have RSVPs allowed (they are on by default; leaders can turn them off per event)
+- आपको [logged in](../getting-started/logging-in.md) होना चाहिए और group का सदस्य होना चाहिए
+- event में RSVPs की अनुमति होनी चाहिए (डिफ़ॉल्ट रूप से चालू होती है; leaders हर event के लिए इन्हें बंद कर सकते हैं)
 
 </div>
 
-## Responding to an Event
+## किसी Event का जवाब देना
 
-1. सदस्य पोर्टल में अपना समूह खोलें और उसके **इवेंट** टैब पर जाएं। **Month view** में, किसी दिन के इवेंट देखने के लिए उस दिन पर टैप करें, या इस महीने के सभी आगामी इवेंट एक साथ देखने के लिए **List view** पर स्विच करें।
-2. Each upcoming event card shows **Will you attend?** with three buttons: **Going**, **Maybe**, and **Can't go**.
-3. Tap your answer. Your choice highlights, and each button shows a live count of how many people have given that response.
-4. Tap your highlighted answer again to clear it, or tap a different button to change your response.
+1. member portal में अपना group खोलें। group का अगला event **Next event** section में दिखता है। अन्य events के लिए **All events** पर tap करें: **Calendar** view में, किसी दिन के events देखने के लिए उस दिन पर tap करें, या इस महीने के सभी आने वाले events एक साथ देखने के लिए **List** पर switch करें।
+2. हर आने वाले event में तीन buttons दिखते हैं: **Going**, **Maybe**, और **Can't go**।
+3. अपना जवाब चुनें। आपकी पसंद हाइलाइट होती है, और हर button पर यह लाइव गिनती दिखती है कि कितने लोगों ने वह जवाब दिया है।
+4. अपना जवाब हटाने के लिए हाइलाइट किए गए जवाब पर फिर से tap करें, या जवाब बदलने के लिए कोई दूसरा button tap करें।
 
-Your RSVP applies to that specific occurrence — for a weekly meeting, you answer each week's event separately.
+आपका RSVP उस विशेष occurrence पर लागू होता है -- एक साप्ताहिक मीटिंग के लिए, आप हर हफ्ते के event का जवाब अलग से देते हैं।
 
-## For Group Leaders
+## Group Leaders के लिए
 
-- **Viewing responses** -- Leaders see a **View responses** button on each event card. It opens the **Responses** sheet listing everyone by answer — Going, Maybe, and Can't go. If nobody has answered yet, it shows "No responses yet."
-- **Turning RSVPs on or off** -- When creating or editing an event, use the **Allow RSVPs** switch. Events with RSVPs turned off show no response buttons. Staff creating events in bulk from B1 Admin have the same option — see [Group Calendar](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Responses देखना** -- leaders को group के calendar (**All events**) में हर event पर **View responses** link दिखता है। इससे **Responses** sheet खुलती है, जो जवाब के अनुसार सभी को सूचीबद्ध करती है -- Going, Maybe, और Can't go। यदि अभी तक किसी ने जवाब नहीं दिया है, तो "No responses yet." दिखता है।
+- **RSVPs चालू या बंद करना** -- event बनाते या edit करते समय, **Allow RSVPs** switch का उपयोग करें। जिन events में RSVPs बंद हैं उनमें कोई response buttons नहीं दिखते। B1 Admin से एक साथ कई events बनाने वाले staff के पास भी यही विकल्प है -- देखें [Group Calendar](../../b1-admin/groups/group-calendar#event-rsvps)।
 
 :::tip
-RSVPs are a lightweight head count. If your event needs signup details, capacity management, or payment, use [event registration](../events/registering) instead.
+RSVPs एक हल्की head count हैं। यदि आपके event को signup विवरण, capacity प्रबंधन, या भुगतान की ज़रूरत है, तो इसके बजाय [event registration](../events/registering) का उपयोग करें।
 :::
 
-## Related Articles
+## संबंधित लेख
 
-- [Group Details](./group-details.md) -- Everything on the group detail page
-- [Group Calendar (B1 Admin)](../../b1-admin/groups/group-calendar) -- How staff and leaders manage group events and RSVPs
-- [Registering for Events](../events/registering) -- Full event registration with capacity and payments
+- [Group Details](./group-details.md) -- group detail page पर सब कुछ
+- [Group Calendar (B1 Admin)](../../b1-admin/groups/group-calendar) -- staff और leaders group events और RSVPs कैसे प्रबंधित करते हैं
+- [Registering for Events](../events/registering) -- capacity और भुगतान के साथ पूर्ण event registration

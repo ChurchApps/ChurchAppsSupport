@@ -1,68 +1,73 @@
 ---
-title: "Haciendo una Donación"
+title: "Hacer una donación"
 ---
 
-# Haciendo una Donación
+# Hacer una donación
 
 <div class="article-intro">
 
-Hay dos formas de hacer una donación a través del sitio de B1.church de tu iglesia: la página pública de donación (no se requiere inicio de sesión) y la página de donación para miembros (se requiere inicio de sesión). Ambas utilizan un formulario de donación seguro impulsado por Stripe.
+Hay dos formas de hacer una donación a través del sitio de B1.church de tu iglesia: la página pública de donaciones (no requiere iniciar sesión) y la página de donaciones para miembros (requiere iniciar sesión). Ambas usan un formulario de donación seguro, con la tecnología de Stripe.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Para donaciones públicas, no se necesita una cuenta -- solo visita la página **Donar** de tu iglesia.
+- Para donaciones públicas, no necesitas una cuenta; solo visita la página **Donate** de tu iglesia.
 - Para donaciones de miembros con seguimiento de historial y métodos de pago guardados, [inicia sesión](../getting-started/logging-in.md) en tu cuenta primero.
 
 </div>
 
-## Página Pública de Donación (Sin Requerimiento de Inicio de Sesión)
+## Página pública de donaciones (sin iniciar sesión)
 
-Cualquiera puede hacer una donación sin crear una cuenta:
+Cualquier persona puede hacer una donación sin crear una cuenta:
 
-1. Navega a la página **Donar** de tu iglesia.
-2. El formulario de donación se muestra en el lado izquierdo de la página. Selecciona el **fondo** al que deseas donar.
-3. Ingresa tus detalles de pago y la cantidad que deseas donar.
+1. Ve a la página **Donate** de tu iglesia.
+2. El formulario de donación se muestra en el lado izquierdo de la página. Selecciona el **fund** (fondo) al que quieres dar.
+3. Ingresa tus datos de pago y el monto que quieres dar.
 4. Envía el formulario para completar tu donación.
 
-En el lado derecho de la página, verás un enlace a **Instrucciones para Pago ACH** si prefieres donar a través de transferencia bancaria. También hay un botón **Iniciar Sesión** si deseas registrarte para acceder a características adicionales como el historial de donaciones.
+En el lado derecho de la página verás un enlace a **Instructions for ACH Payment** si prefieres dar por transferencia bancaria. También hay un botón **Login** si quieres iniciar sesión para acceder a funciones adicionales, como el historial de donaciones.
 
 :::tip
-Si ya has iniciado sesión cuando visitas la página pública de donación, serás redirigido automáticamente a la página de donación para miembros donde tienes acceso a tu historial de donaciones completo y métodos de pago guardados.
+Si ya has iniciado sesión cuando visitas la página pública de donaciones, se te redirigirá automáticamente a la página de donaciones para miembros, donde tienes acceso a tu historial completo de ofrendas y a los métodos de pago guardados.
 :::
 
-## Página de Donación para Miembros (Registrado)
+## Página de donaciones para miembros (con sesión iniciada)
 
-Cuando inicias sesión, la experiencia de donación incluye características adicionales, organizadas en cuatro pestañas:
+Cuando has iniciado sesión, la página **Giving** del portal de miembros muestra un botón **Give** y un botón **Print Statement** en la parte superior, seguidos de estas secciones:
 
-- **Descripción General** -- Tu total de donación año hasta la fecha, una tarjeta de progreso de campaña (si tu iglesia tiene una campaña activa), y tu regalo más reciente con un botón **Repetir** de un clic.
-- **Donar** -- El formulario de donación.
-- **Gestionar** -- Tus métodos de pago guardados (agregar, eliminar o establecer una tarjeta o cuenta bancaria predeterminada).
-- **Historial** -- Tus donaciones pasadas, totales de donación por período, regalos recurrentes y exportaciones de declaraciones. Consulta [Historial de Donaciones](./donation-history.md) para más detalles.
+- **This year** (con el año actual como título): tu total de ofrendas del año y el número de regalos, con un enlace **All history**. Consulta [Historial de donaciones](./donation-history.md) para más detalles.
+- **Recurring**: tus regalos programados, con un enlace **Manage**.
+- **Recent Activity**: tus últimos tres regalos, con un enlace **Repeat last gift** que abre el formulario de donación.
+- **Payment methods**: tus tarjetas y cuentas bancarias guardadas, con un enlace **Manage** para agregar, quitar o establecer una como predeterminada.
+- Una tarjeta de progreso de campaña, si tu iglesia tiene una campaña activa.
 
-Para donar:
+Para dar:
 
-1. Abre la página de donación desde la pestaña **Donar** de tu iglesia o desde **Donar** en los Atajos de tu [página Mi](../getting-started/me-page.md). Si llegas a **Descripción General**, selecciona la pestaña **Donar**.
-2. Elige el **fondo** al que deseas donar e ingresa el monto de tu donación.
-3. Selecciona un método de pago guardado existente o ingresa nuevos detalles de pago.
+1. Abre la página de ofrendas desde la pestaña **Donate** de tu iglesia, desde el botón **Give** de la sección **Giving** de tu [panel Home](../getting-started/navigating.md#home), o desde **History** en la sección **Giving** de tu [página Me](../getting-started/me-page.md). En la página Giving, toca **Give** para abrir el formulario de donación.
+2. Elige el **fund** al que quieres dar e ingresa el monto de tu donación.
+3. Selecciona un método de pago guardado o ingresa nuevos datos de pago.
 4. Envía el formulario para completar tu donación.
 
-Después de que se procese tu donación, aparecerá un mensaje de éxito y tu donación aparecerá en tu [historial de donaciones](./donation-history.md).
+Una vez procesada tu donación, aparecerá un mensaje de éxito y tu donación se mostrará en tu [historial de donaciones](./donation-history.md).
 
 :::info
-Si las donaciones que has hecho se registraron en más de una moneda, tu total año hasta la fecha de Descripción General y el total de período de Historial se convierten a la moneda de tu iglesia, con una nota **Convertido a tipos de cambio actuales** debajo. Las donaciones individuales en tu historial aún muestran su moneda original.
+Si las donaciones que has dado se registraron en más de una moneda, tu total del año y el total del historial se convierten a la moneda de tu iglesia, con una nota **Converted at current exchange rates** debajo. Las donaciones individuales de tu historial siguen mostrando su moneda original.
 :::
 
-## Métodos de Pago
+## Métodos de pago
 
-Las donaciones se procesan de forma segura a través de **Stripe**. Puedes pagar con una tarjeta de crédito, tarjeta de débito o configurar un pago bancario ACH. Cuando inicias sesión, tus métodos de pago se pueden guardar para uso futuro, lo que hace que sea más rápido donar la próxima vez.
+Las donaciones se procesan de forma segura a través de **Stripe**. Puedes pagar con tarjeta de crédito, tarjeta de débito o configurar un pago bancario ACH. Cuando has iniciado sesión, tus métodos de pago se pueden guardar para usarlos en el futuro, lo que hace que la próxima donación sea más rápida.
+
+:::info Dar con cuenta bancaria sin iniciar sesión
+Si das como invitado (sin iniciar sesión) con una cuenta bancaria, la cuenta debe verificarse de forma instantánea iniciando sesión en tu banco. Si no se puede verificar, verás "This bank account couldn't be verified instantly. Please give by card, or sign in and add the bank account under your giving profile." Las cuentas bancarias que necesitan unos días de verificación solo se pueden agregar después de iniciar sesión.
+:::
 
 :::warning
-Si tu donación no se realiza, vuelve a verificar tus detalles de pago e intenta de nuevo. Si el problema persiste, contacta a la oficina de tu iglesia para obtener ayuda.
+Si tu donación no se completa, revisa tus datos de pago e inténtalo de nuevo. Si el problema persiste, comunícate con la oficina de tu iglesia para recibir asistencia.
 :::
 
-## Próximos Pasos
+## Próximos pasos
 
-- [Historial de Donaciones](./donation-history.md) -- Ver tus donaciones pasadas e imprimir estados de donación
+- [Historial de donaciones](./donation-history.md): consulta tus donaciones anteriores e imprime estados de ofrendas

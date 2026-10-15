@@ -1,31 +1,32 @@
 ---
-title: "Sirviendo"
+title: "Servicio"
 ---
 
-# Sirviendo
+# Servicio
 
 <div class="article-intro">
 
-La sección de Sirviendo en B1.church te permite explorar oportunidades de voluntariado e inscribirte en posiciones en tu iglesia. Además de ver tus planes asignados y órdenes de servicio, ahora puedes auto-seleccionar posiciones que necesitan ser llenadas.
+La sección Serving de B1.church te permite explorar oportunidades de voluntariado e inscribirte en posiciones de tu iglesia. Además de ver tus planes asignados y los órdenes de servicio, ahora puedes elegir por tu cuenta las posiciones que todavía necesitan personal.
 
 </div>
 
-## Lo Que Puedes Hacer
+## Qué puedes hacer
 
-- **Explorar oportunidades de voluntariado** -- Ve próximos planes de servicio con posiciones abiertas que necesitan voluntarios.
-- **Inscribirse en posiciones** -- Elige una posición e inscríbete a ti mismo con un clic.
-- **Ver tus planes** -- Ve tus próximos y pasados [asignaciones de servicio](../plans/viewing-plans).
-- **Eliminar inscripciones** -- Cancela una auto-inscripción si tus planes cambian (antes de la fecha límite).
+- **Explorar oportunidades de voluntariado**: consulta los próximos planes de servicio con posiciones abiertas que necesitan voluntarios.
+- **Inscribirte en posiciones**: elige una posición e inscríbete con un solo clic.
+- **Ver tus planes**: consulta tus [asignaciones de servicio](../plans/viewing-plans) próximas y pasadas.
+- **Responder a las asignaciones**: acepta o rechaza las posiciones para las que te han programado, desde la página Plans o desde la sección **You're serving** de Home. Si tus planes cambian después de aceptar, puedes [rechazar una asignación aceptada](../plans/viewing-plans#declining-an-accepted-assignment) hasta que termine el servicio.
+- **Cancelar inscripciones**: cancela tu propia inscripción si tus planes cambian (antes de la fecha límite).
 
-## Cómo Funciona
+## Cómo funciona
 
-Tu administrador de iglesia crea planes de servicio y marca ciertas posiciones como disponibles para auto-inscripción. Estas posiciones aparecen en la página de inscripción de voluntarios, organizadas por categoría (como "Banda", "Hospitalidad", o "Ministerio de Niños"). Puedes ver cuántos lugares hay abiertos para cada posición e inscribirte en los que tengas disponibilidad.
+El administrador de tu iglesia crea los planes de servicio y marca ciertas posiciones como disponibles para inscripción propia. Estas posiciones aparecen en la página de inscripción de voluntarios, organizadas por categoría (como "Band", "Hospitality" o "Kids Ministry"). Puedes ver cuántos lugares están abiertos en cada posición e inscribirte en aquellas para las que estés disponible.
 
 :::info
-Solo las posiciones que tu administrador de iglesia ha habilitado para auto-inscripción aparecen en la página de voluntarios. Algunas posiciones pueden ser llenadas solo a través de asignación directa.
+Solo aparecen en la página de voluntarios las posiciones que el administrador de tu iglesia habilitó para inscripción propia. Algunas posiciones solo pueden cubrirse por asignación directa.
 :::
 
-## Aprende Más
+## Más información
 
-- [Inscripción de Voluntarios](./volunteer-signup) -- Guía paso a paso para explorar e inscribirse en posiciones de voluntarios
-- [Viendo Planes](../plans/viewing-plans) -- Ve tus planes de servicio asignados y órdenes de servicio
+- [Inscripción de voluntarios](./volunteer-signup): guía paso a paso para explorar e inscribirte en posiciones de voluntariado
+- [Ver planes](../plans/viewing-plans): consulta tus planes de servicio asignados y sus órdenes de servicio

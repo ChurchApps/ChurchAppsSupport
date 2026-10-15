@@ -6,7 +6,7 @@ title: "Répertoire des membres"
 
 <div class="article-intro">
 
-Le répertoire des membres vous permet de parcourir et de rechercher des personnes dans votre église. Que vous ayez besoin de chercher un compagnon du groupe ou de trouver quelqu'un de nouveau, le répertoire facilite la connexion avec votre famille d'église.
+Le répertoire des membres vous permet de parcourir et de rechercher des personnes de votre église. Que vous cherchiez à retrouver un membre de votre groupe ou à découvrir une nouvelle personne, le répertoire vous aide à rester facilement en contact avec votre famille spirituelle.
 
 </div>
 
@@ -14,51 +14,33 @@ Le répertoire des membres vous permet de parcourir et de rechercher des personn
 <h4>Avant de commencer</h4>
 
 - Vous devez être [connecté](../getting-started/logging-in.md) à votre compte B1.church.
-- Le répertoire est disponible pour les **membres et le personnel** uniquement. Les visiteurs et les participants qui ne sont pas encore devenus membres verront un message « Membres uniquement » à la place.
+- Le répertoire est réservé aux **membres et au personnel**. Les visiteurs et participants qui ne sont pas encore devenus membres verront à la place un message « Réservé aux membres ».
 
 </div>
 
-## Accès au répertoire
+## Accéder au répertoire
 
-1. Cliquez sur **Communauté** dans la [navigation de la barre latérale](../getting-started/navigating.md).
-2. Le répertoire se charge avec une liste de tous les membres d'église visibles sur le côté gauche de la page.
+1. Appuyez sur **Communauté** dans la [barre d'onglets ou sur la page Plus](../getting-started/navigating.md) (votre église peut lui avoir donné un autre nom).
+2. Le **Répertoire** s'ouvre avec un nombre de personnes et la liste de tous les membres visibles de l'église.
 
-## Recherche de membres
+## Rechercher des membres
 
-La page utilise une disposition maître-détail. Sur le côté gauche, vous avez deux façons de trouver des personnes :
-
-### Recherche par nom
-
-1. Assurez-vous que le filtre **Personnes** est sélectionné en haut de la zone de recherche.
-2. Tapez un nom dans la zone de recherche.
-3. Cliquez sur **Rechercher** ou appuyez sur **Entrée** pour voir les résultats.
-
-Si vous laissez la zone de recherche vide et cliquez sur **Rechercher**, la liste complète du répertoire s'affiche.
-
-### Recherche par groupe
-
-1. Cliquez sur le filtre **Groupes** en haut de la zone de recherche.
-2. Sélectionnez un groupe dans la liste déroulante.
-3. Cliquez sur **Rechercher** pour voir tous les membres de ce groupe.
-
-:::tip
-La recherche par groupe est un moyen rapide de trouver quelqu'un que vous avez rencontré lors d'une [réunion de groupe](../groups/browsing-groups.md) mais dont vous ne vous souvenez pas du nom.
-:::
+Saisissez un nom dans la zone **Rechercher des membres** en haut de la liste. La liste se filtre au fur et à mesure de votre saisie, et la partie correspondante de chaque nom est mise en évidence. Effacez la zone pour revoir l'ensemble du répertoire.
 
 ## Parcourir le répertoire
 
-Les membres sont répertoriés alphabétiquement par nom de famille et groupés sous des en-têtes de lettre (A, B, C, etc.). Chaque entrée affiche la photo du membre, le nom d'affichage et le nom du ménage, ce qui facilite le balayage de la liste.
+Les membres sont regroupés sous des en-têtes de lettres (A, B, C, et ainsi de suite) selon la première lettre de leur prénom, et triés par nom de famille au sein de chaque lettre. Chaque entrée affiche la photo du membre, son nom d'affichage et son statut d'adhésion, ce qui facilite la lecture de la liste.
 
-## Affichage d'un profil de membre
+## Afficher le profil d'un membre
 
-Cliquez sur n'importe quel membre de la liste pour ouvrir son profil dans le panneau de détails à droite. Le profil affiche les informations du membre telles que configurées par votre église, qui peuvent inclure les coordonnées, les membres du ménage et les appartenances au groupe.
+Appuyez sur un membre de la liste pour ouvrir son profil. Le profil affiche le nom, la photo et le statut d'adhésion du membre, avec des boutons pour lui **Envoyer un message**, l'**Appeler** ou lui envoyer un **SMS** lorsque ces informations sont disponibles. Plus bas, la section **Coordonnées** affiche les renseignements que votre église et le membre ont choisi de partager, comme l'adresse e-mail, le téléphone et l'adresse postale, et **Membres du ménage** répertorie les autres personnes de son ménage.
 
-Vous pouvez cliquer sur les membres du ménage au sein d'un profil pour accéder à leurs profils également.
+Vous pouvez appuyer sur les membres du ménage dans un profil pour accéder également à leurs profils. Sur votre propre profil, un bouton **Modifier le profil** vous mène à [Modification de votre profil](../getting-started/editing-your-profile.md).
 
 :::info
-Les informations visibles dans chaque profil dépendent des paramètres de confidentialité et de répertoire de votre église. Tous les champs peuvent ne pas être affichés pour chaque membre.
+Les informations visibles dans chaque profil dépendent des paramètres de confidentialité et du répertoire de votre église. Tous les champs ne sont pas forcément affichés pour chaque membre.
 :::
 
 :::info
-Les membres en dessous de l'[âge minimum de votre église pour les messages privés](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) restent visibles dans le répertoire, mais l'option de leur envoyer un message privé n'est pas disponible.
+Les membres qui sont sous l'[âge minimum pour les messages privés](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) de votre église restent visibles dans le répertoire, mais l'option de leur envoyer un message privé n'est pas disponible.
 :::

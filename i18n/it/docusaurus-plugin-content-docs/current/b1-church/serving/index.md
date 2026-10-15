@@ -6,26 +6,27 @@ title: "Servizio"
 
 <div class="article-intro">
 
-La sezione Servizio su B1.church ti permette di sfogliare le opportunità di volontariato e iscriverti a posizioni nella tua chiesa. Oltre a visualizzare i tuoi piani di servizio assegnati e gli ordini di servizio, puoi ora auto-selezionare le posizioni che devono essere riempite.
+La sezione Servizio di B1.church ti permette di sfogliare le opportunità di volontariato e di iscriverti ai posti della tua chiesa. Oltre a consultare i piani e gli ordini di culto a cui sei assegnato, ora puoi scegliere autonomamente i posti che devono ancora essere coperti.
 
 </div>
 
-## Che Cosa Puoi Fare
+## Cosa puoi fare
 
-- **Sfoglia le opportunità di volontariato** -- Vedi i piani di servizio imminenti con posizioni aperte che hanno bisogno di volontari.
-- **Iscriviti alle posizioni** -- Scegli una posizione e iscriviti con un solo clic.
-- **Visualizza i tuoi piani** -- Vedi i tuoi [incarichi di servizio](../plans/viewing-plans) imminenti e passati.
-- **Rimuovi le iscrizioni** -- Annulla un'auto-iscrizione se i tuoi piani cambiano (prima della scadenza).
+- **Sfogliare le opportunità di volontariato** -- Consulta i prossimi piani di culto con posti aperti che richiedono volontari.
+- **Iscriverti ai posti** -- Scegli un posto e iscriviti con un solo clic.
+- **Visualizzare i tuoi piani** -- Consulta i tuoi [incarichi di servizio](../plans/viewing-plans) imminenti e passati.
+- **Rispondere agli incarichi** -- Accetta o rifiuta i posti per cui sei stato programmato, dalla pagina Piani o dalla sezione **Stai servendo** della Home. Se i tuoi impegni cambiano dopo aver accettato, puoi [rifiutare un incarico accettato](../plans/viewing-plans#declining-an-accepted-assignment) fino al termine del culto.
+- **Rimuovere le iscrizioni** -- Annulla un'iscrizione autonoma se i tuoi impegni cambiano (prima della scadenza).
 
-## Come Funziona
+## Come funziona
 
-L'amministratore della tua chiesa crea piani di servizio e contrassegna determinate posizioni come disponibili per l'auto-iscrizione. Queste posizioni appaiono sulla pagina di iscrizione dei volontari, organizzate per categoria (come "Banda", "Ospitalità" o "Ministero dei Bambini"). Puoi vedere quanti posti sono aperti per ogni posizione e iscriverti a quelli per cui sei disponibile.
+Il tuo amministratore di chiesa crea i piani di culto e contrassegna alcuni posti come disponibili per l'iscrizione autonoma. Questi posti compaiono nella pagina di iscrizione dei volontari, organizzati per categoria (come "Band", "Accoglienza" o "Ministero dei bambini"). Puoi vedere quanti posti sono liberi per ciascun posto e iscriverti a quelli per cui sei disponibile.
 
 :::info
-Solo le posizioni che l'amministratore della tua chiesa ha abilitato per l'auto-iscrizione appaiono sulla pagina dei volontari. Alcune posizioni potrebbero essere riempite solo tramite assegnazione diretta.
+Nella pagina dei volontari compaiono solo i posti che l'amministratore della chiesa ha abilitato per l'iscrizione autonoma. Alcuni posti possono essere coperti solo tramite assegnazione diretta.
 :::
 
-## Per Saperne di Più
+## Per saperne di più
 
-- [Iscrizione dei Volontari](./volunteer-signup) -- Guida passo passo per sfogliare e iscriversi alle posizioni di volontariato
-- [Visualizzazione dei Piani](../plans/viewing-plans) -- Vedi i tuoi piani di servizio assegnati e gli ordini di servizio
+- [Iscrizione dei volontari](./volunteer-signup) -- Guida passo-passo per sfogliare e iscriverti ai posti di volontariato
+- [Visualizzare i piani](../plans/viewing-plans) -- Consulta i tuoi piani di culto assegnati e gli ordini di culto

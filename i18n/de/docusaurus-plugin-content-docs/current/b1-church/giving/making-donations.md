@@ -1,68 +1,73 @@
 ---
-title: "Spende tätigen"
+title: "Eine Spende tätigen"
 ---
 
-# Spende tätigen
+# Eine Spende tätigen
 
 <div class="article-intro">
 
-Es gibt zwei Möglichkeiten, über die B1.church-Website Ihrer Kirche eine Spende zu tätigen: die öffentliche Spendenseite (keine Anmeldung erforderlich) und die Mitgliedsspendenseite (Anmeldung erforderlich). Beide verwenden ein sicheres Spendenformular, das von Stripe unterstützt wird.
+Über die B1.church-Website Ihrer Gemeinde können Sie auf zwei Wegen spenden: über die öffentliche Spendenseite (ohne Anmeldung) und über die Spendenseite für Mitglieder (mit Anmeldung). Beide nutzen ein sicheres Spendenformular, das von Stripe betrieben wird.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Für öffentliche Spenden ist kein Konto erforderlich – besuchen Sie einfach die Seite **Spenden** Ihrer Kirche.
-- Für Mitgliedsspenden mit Verfolgung des Verlaufs und gespeicherten Zahlungsmethoden [melden Sie sich](../getting-started/logging-in.md) zuerst bei Ihrem Konto an.
+- Für öffentliche Spenden brauchen Sie kein Konto -- besuchen Sie einfach die Seite **Spenden** Ihrer Gemeinde.
+- Für Mitgliederspenden mit Verlauf und gespeicherten Zahlungsmethoden [melden Sie sich](../getting-started/logging-in.md) zuerst bei Ihrem Konto an.
 
 </div>
 
-## Öffentliche Spendenseite (keine Anmeldung erforderlich)
+## Öffentliche Spendenseite (ohne Anmeldung)
 
-Jeder kann eine Spende tätigen, ohne ein Konto zu erstellen:
+Jeder kann ohne Konto spenden:
 
-1. Navigieren Sie zur Seite **Spenden** Ihrer Kirche.
-2. Das Spendenformular wird auf der linken Seite der Seite angezeigt. Wählen Sie den **Fonds**, für den Sie spenden möchten.
-3. Geben Sie Ihre Zahlungsdetails und den Betrag ein, den Sie spenden möchten.
+1. Öffnen Sie die Seite **Spenden** Ihrer Gemeinde.
+2. Das Spendenformular wird auf der linken Seite angezeigt. Wählen Sie den **Fonds**, dem Sie geben möchten.
+3. Geben Sie Ihre Zahlungsdaten und den Betrag ein, den Sie geben möchten.
 4. Senden Sie das Formular ab, um Ihre Spende abzuschließen.
 
-Auf der rechten Seite der Seite sehen Sie einen Link zu **Anweisungen für ACH-Zahlungen**, wenn Sie lieber per Banküberweisung spenden möchten. Es gibt auch eine Schaltfläche **Anmelden**, wenn Sie sich anmelden möchten, um auf zusätzliche Funktionen wie den Spendenverlauf zuzugreifen.
+Auf der rechten Seite finden Sie einen Link zu den **Anleitungen für die ACH-Zahlung**, falls Sie per Banküberweisung geben möchten. Außerdem gibt es eine Schaltfläche **Anmelden**, wenn Sie sich einloggen möchten, um zusätzliche Funktionen wie den Spendenverlauf zu nutzen.
 
 :::tip
-Wenn Sie bereits angemeldet sind, wenn Sie die öffentliche Spendenseite besuchen, werden Sie automatisch zur Mitgliedsspendenseite weitergeleitet, auf der Sie Zugriff auf Ihren vollständigen Spendenverlauf und Ihre gespeicherten Zahlungsmethoden haben.
+Wenn Sie beim Besuch der öffentlichen Spendenseite bereits angemeldet sind, werden Sie automatisch zur Spendenseite für Mitglieder weitergeleitet. Dort haben Sie Zugriff auf Ihren vollständigen Spendenverlauf und Ihre gespeicherten Zahlungsmethoden.
 :::
 
-## Mitgliedsspendenseite (angemeldet)
+## Spendenseite für Mitglieder (angemeldet)
 
-Wenn Sie angemeldet sind, umfasst das Spendenerlebnis zusätzliche Funktionen, die in vier Registerkarten organisiert sind:
+Wenn Sie angemeldet sind, zeigt die Seite **Spenden** im Mitgliederportal oben eine Schaltfläche **Geben** und eine Schaltfläche **Bescheinigung drucken**, gefolgt von diesen Abschnitten:
 
-- **Übersicht** – Ihre Gesamtsumme seit Jahresbeginn, eine Kampagnenfortschrittkarte (falls Ihre Kirche eine aktive Kampagne hat) und Ihr neuestes Geschenk mit einer Schaltfläche **Wiederholen** mit einem Klick.
-- **Spende** – Das Spendenformular.
-- **Verwalten** – Ihre gespeicherten Zahlungsmethoden (fügen Sie eine Karte oder ein Bankkonto hinzu, entfernen Sie sie oder legen Sie einen Standard fest).
-- **Verlauf** – Ihre bisherigen Spenden, Spendensummen nach Zeitraum, wiederkehrende Geschenke und Auszugsexporte. Weitere Informationen finden Sie unter [Spendenverlauf](./donation-history.md).
+- **Dieses Jahr** (mit dem aktuellen Jahr als Überschrift) -- Ihre Summe für das laufende Jahr und die Anzahl der Gaben, mit einem Link **Gesamter Verlauf**. Details finden Sie unter [Spendenverlauf](./donation-history.md).
+- **Wiederkehrend** -- Ihre terminierten Gaben, mit einem Link **Verwalten**.
+- **Letzte Aktivitäten** -- Ihre letzten drei Gaben, mit einem Link **Letzte Gabe wiederholen**, der das Spendenformular öffnet.
+- **Zahlungsmethoden** -- Ihre gespeicherten Karten und Bankkonten, mit einem Link **Verwalten**, um sie hinzuzufügen, zu entfernen oder als Standard festzulegen.
+- Eine Karte mit dem Fortschritt einer Kampagne, sofern Ihre Gemeinde gerade eine aktive Kampagne hat.
 
-So spenden Sie:
+So geben Sie:
 
-1. Öffnen Sie die Spendenseite über die Registerkarte **Spenden** Ihrer Kirche oder über **Spenden** in den Verknüpfungen auf Ihrer [Me-Seite](../getting-started/me-page.md). Wenn Sie bei **Übersicht** landen, wählen Sie die Registerkarte **Spende** aus.
-2. Wählen Sie den **Fonds**, für den Sie spenden möchten, und geben Sie Ihren Spendenbetrag ein.
-3. Wählen Sie eine vorhandene gespeicherte Zahlungsmethode oder geben Sie neue Zahlungsdetails ein.
+1. Öffnen Sie die Seite Spenden über den Reiter **Spenden** Ihrer Gemeinde, über die Schaltfläche **Geben** im Abschnitt **Spenden** auf Ihrer [Startseite](../getting-started/navigating.md#home) oder über **Verlauf** im Abschnitt **Spenden** auf Ihrer [Seite Ich](../getting-started/me-page.md). Tippen Sie auf der Seite Spenden auf **Geben**, um das Spendenformular zu öffnen.
+2. Wählen Sie den **Fonds**, dem Sie geben möchten, und geben Sie Ihren Spendenbetrag ein.
+3. Wählen Sie eine bereits gespeicherte Zahlungsmethode oder geben Sie neue Zahlungsdaten ein.
 4. Senden Sie das Formular ab, um Ihre Spende abzuschließen.
 
-Nachdem Ihre Spende verarbeitet wurde, wird eine Erfolgsmeldung angezeigt und Ihre Spende wird in Ihrem [Spendenverlauf](./donation-history.md) angezeigt.
+Nach der Verarbeitung Ihrer Spende erscheint eine Erfolgsmeldung, und Ihre Spende wird in Ihrem [Spendenverlauf](./donation-history.md) angezeigt.
 
 :::info
-Wenn Spenden, die Sie gegeben haben, in mehr als einer Währung erfasst wurden, werden Ihre Jahres-zu-Datum-Gesamtsummen in der Übersicht und die Gesamtsummen für den Zeitraum im Verlauf in die Währung Ihrer Kirche umgerechnet, mit einem Hinweis **Umgerechnet zu aktuellen Wechselkursen** darunter. Einzelne Spenden in Ihrem Verlauf zeigen immer noch ihre ursprüngliche Währung an.
+Wurden Ihre Spenden in mehr als einer Währung erfasst, werden Ihre Jahressumme und die Summe im Verlauf in die Währung Ihrer Gemeinde umgerechnet. Darunter steht dann der Hinweis **Umgerechnet zu aktuellen Wechselkursen**. Einzelne Spenden in Ihrem Verlauf zeigen weiterhin ihre ursprüngliche Währung.
 :::
 
 ## Zahlungsmethoden
 
-Spenden werden sicher über **Stripe** verarbeitet. Sie können mit einer Kreditkarte, Debitkarte bezahlen oder eine ACH-Bankzahlung einrichten. Wenn Sie angemeldet sind, können Ihre Zahlungsmethoden für zukünftige Verwendung gespeichert werden, wodurch die nächste Spende schneller geht.
+Spenden werden sicher über **Stripe** verarbeitet. Sie können mit Kreditkarte oder Debitkarte zahlen oder eine ACH-Banküberweisung einrichten. Wenn Sie angemeldet sind, können Ihre Zahlungsmethoden für künftige Spenden gespeichert werden, sodass das nächste Mal alles schneller geht.
+
+:::info Spenden per Bankkonto ohne Anmeldung
+Wenn Sie als Gast (ohne Anmeldung) per Bankkonto spenden, muss das Konto sofort durch Anmeldung bei Ihrer Bank verifiziert werden. Gelingt dies nicht, sehen Sie: „Dieses Bankkonto konnte nicht sofort verifiziert werden. Bitte geben Sie per Karte oder melden Sie sich an und fügen Sie das Bankkonto unter Ihrem Spendenprofil hinzu.“ Bankkonten, deren Verifizierung einige Tage dauert, können erst nach der Anmeldung hinzugefügt werden.
+:::
 
 :::warning
-Wenn Ihre Spende nicht durchgeht, überprüfen Sie Ihre Zahlungsdetails erneut und versuchen Sie es erneut. Wenn das Problem besteht bleibt, wenden Sie sich an Ihr Kirchenbüro für Hilfe.
+Wenn Ihre Spende nicht durchgeht, prüfen Sie Ihre Zahlungsdaten und versuchen Sie es erneut. Besteht das Problem weiterhin, wenden Sie sich für Unterstützung an das Gemeindebüro.
 :::
 
 ## Nächste Schritte
 
-- [Spendenverlauf](./donation-history.md) – Sehen Sie Ihre bisherigen Spenden und drucken Sie Spendenerklärungen
+- [Spendenverlauf](./donation-history.md) -- Frühere Spenden ansehen und Spendenbescheinigungen drucken

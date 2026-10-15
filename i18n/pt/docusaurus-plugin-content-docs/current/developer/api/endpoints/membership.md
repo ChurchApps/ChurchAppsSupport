@@ -1,12 +1,12 @@
 ---
-title: "Endpoints de Membros"
+title: "Endpoints de Membresia"
 ---
 
-# Endpoints de Membros
+# Endpoints de Membresia
 
 <div class="article-intro">
 
-O módulo de Membros gerencia pessoas, igrejas, grupos, famílias, funções, permissões, formulários e configurações. É o maior módulo e fornece a camada de identidade e autorização principal para todos os outros módulos.
+O módulo de Membresia gerencia pessoas, igrejas, grupos, domicílios, funções, permissões, formulários e configurações. É o maior módulo e fornece a camada central de identidade e autorização para todos os outros módulos.
 
 </div>
 
@@ -16,31 +16,33 @@ O módulo de Membros gerencia pessoas, igrejas, grupos, famílias, funções, pe
 
 Caminho base: `/membership/people`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/` | JWT | People.View ou Member | Listar todas as pessoas da igreja |
-| GET | `/:id` | JWT | People.View ou registro próprio | Obter uma pessoa por ID (inclui envios de formulário) |
-| GET | `/ids?ids=` | JWT | People.View ou Member | Obter múltiplas pessoas por IDs separados por vírgula |
-| GET | `/basic?ids=` | JWT | — | Obter informações básicas (apenas nome) para múltiplas pessoas |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | People.View ou Member | Lista todas as pessoas da igreja |
+| GET | `/:id` | JWT | People.View ou o próprio registro | Obtém uma pessoa pelo ID (inclui respostas de formulários) |
+| GET | `/ids?ids=` | JWT | People.View ou Member | Obtém várias pessoas pelos IDs separados por vírgula |
+| GET | `/basic?ids=` | JWT | — | Obtém informações básicas (somente nome) de várias pessoas |
+| GET | `/names?ids=` | JWT | Qualquer permissão da igreja | `[{ id, name: { display }, photo }]` para os IDs separados por vírgula que o chamador já tem acesso, para que funções sem People.View (ofertas, presença) possam identificar pessoas. Sem busca, sem filtro de diretório |
+| POST | `/names` | JWT | Qualquer permissão da igreja | Igual a `GET /names`. Corpo: `{ peopleIds }` (ou `{ ids }`) |
 | GET | `/recent` | JWT | People.View ou Member | Pessoas adicionadas recentemente |
-| GET | `/search?term=&email=` | JWT | People.View ou Member | Procurar pessoas por nome ou email |
-| GET | `/search/phone?number=` | JWT | People.View ou Member | Procurar por número de telefone |
-| GET | `/search/group?groupId=` | JWT | People.View ou Member | Obter pessoas em um grupo específico |
-| GET | `/household/:householdId` | JWT | — | Obter todas as pessoas em uma família |
-| GET | `/attendance` | JWT | People.Edit | Carregar participantes com filtros (campusId, serviceId, serviceTimeId, groupId, categoryName, startDate, endDate) |
-| GET | `/timeline?personIds=&groupIds=` | JWT | — | Carregar dados de linha do tempo para pessoas e grupos |
-| GET | `/directory/:id` | JWT | — | Obter pessoa para visualização de diretório (respeita preferências de visibilidade) |
-| GET | `/claim/:churchId` | JWT | — | Reivindicar um registro de pessoa para o usuário atual em uma igreja |
-| POST | `/` | JWT | People.Edit ou EditSelf | Criar ou atualizar pessoas (lote) |
-| POST | `/search` | JWT | People.View ou Member | Procurar pessoas (variante POST) |
-| POST | `/advancedSearch` | JWT | People.View ou Member | Busca multi-condição (idade, mês de nascimento, status de membros, etc.) |
-| POST | `/loadOrCreate` | Public | — | Encontrar ou criar uma pessoa por email. Corpo: `{ churchId, email, firstName, lastName }` |
-| POST | `/household/:householdId` | JWT | People.Edit | Atualizar atribuições de membros da família |
-| POST | `/public/email` | Public | — | Enviar um email para uma pessoa. Corpo: `{ churchId, personId, subject, body, appName }` |
-| POST | `/apiEmails` | Internal | — | Carregar emails de pessoa por IDs (servidor para servidor, requer jwtSecret) |
-| DELETE | `/:id` | JWT | People.Edit | Deletar uma pessoa |
+| GET | `/search?term=&email=` | JWT | People.View ou Member | Pesquisa pessoas por nome ou e-mail |
+| GET | `/search/phone?number=` | JWT | People.View ou Member | Pesquisa por número de telefone |
+| GET | `/search/group?groupId=` | JWT | People.View ou Member | Obtém as pessoas de um grupo específico |
+| GET | `/household/:householdId` | JWT | — | Obtém todas as pessoas de um domicílio |
+| GET | `/attendance` | JWT | People.Edit | Carrega os participantes com filtros (campusId, serviceId, serviceTimeId, groupId, categoryName, startDate, endDate) |
+| GET | `/timeline?personIds=&groupIds=` | JWT | — | Carrega os dados da linha do tempo de pessoas e grupos |
+| GET | `/directory/:id` | JWT | — | Obtém a pessoa para a visualização do diretório (respeita as preferências de visibilidade) |
+| GET | `/claim/:churchId` | JWT | — | Reivindica um registro de pessoa para o usuário atual em uma igreja |
+| POST | `/` | JWT | People.Edit ou EditSelf | Cria ou atualiza pessoas (em lote) |
+| POST | `/search` | JWT | People.View ou Member | Pesquisa pessoas (variante POST) |
+| POST | `/advancedSearch` | JWT | People.View ou Member | Pesquisa com múltiplas condições (idade, birthMonth, membershipStatus etc.) |
+| POST | `/loadOrCreate` | Público | — | Localiza ou cria uma pessoa pelo e-mail. Corpo: `{ churchId, email, firstName, lastName }` |
+| POST | `/household/:householdId` | JWT | People.Edit | Atualiza as atribuições de membros do domicílio |
+| POST | `/public/email` | Público | — | Envia um e-mail para uma pessoa. Corpo: `{ churchId, personId, subject, body, appName }` |
+| POST | `/apiEmails` | Interno | — | Carrega os e-mails das pessoas pelos IDs (servidor para servidor, requer jwtSecret) |
+| DELETE | `/:id` | JWT | People.Edit | Exclui uma pessoa |
 
-### Exemplo: Procurar Pessoas
+### Exemplo: Pesquisar Pessoas
 
 ```
 GET /membership/people/search?term=John
@@ -71,269 +73,268 @@ Authorization: Bearer <token>
 
 Caminho base: `/membership/users`
 
-Veja [Autenticação e Permissões](./authentication) para endpoints de login, registro e gerenciamento de senha.
+Consulte [Autenticação e Permissões](./authentication) para os endpoints de login, cadastro e gerenciamento de senhas.
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| POST | `/login` | Public | — | Conectar (email/senha, atualização JWT ou authGuid) |
-| POST | `/register` | Public | — | Registrar um novo usuário |
-| POST | `/forgot` | Public | — | Enviar email de reconfiguração de senha |
-| POST | `/setPasswordGuid` | Public | — | Definir senha usando GUID de auth do link de email |
-| POST | `/verifyCredentials` | Public | — | Verificar email/senha e retornar igrejas associadas |
-| POST | `/loadOrCreate` | JWT | — | Encontrar ou criar um usuário por email/userId |
-| POST | `/setDisplayName` | JWT | — | Atualizar nome e sobrenome do usuário |
-| POST | `/updateEmail` | JWT | — | Alterar email do usuário |
-| POST | `/updatePassword` | JWT | — | Alterar senha do usuário (mín. 6 caracteres) |
-| POST | `/updateOptedOut` | JWT | — | Definir status de opção de saída de uma pessoa |
-| POST | `/sendInviteEmail` | JWT | People.Edit | Enviar um convite por email para uma pessoa desta igreja (`email`, `personName`, `contextName`). O botão mostra **Sign Up** para quem não tem conta e **Log In** para um usuário existente. Um usuário que nunca fez login recebe um link **Set Your Password** que expira em 7 dias. Conta para o limite diário de emails da igreja (`429` quando atingido) |
-
-| GET | `/search?term=` | JWT | Server.Admin | Procurar todos os usuários por nome/email |
-| DELETE | `/` | JWT | — | Deletar a conta do usuário atual |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| POST | `/login` | Público | — | Faz login (e-mail/senha, renovação de JWT ou authGuid) |
+| POST | `/register` | Público | — | Cadastra um novo usuário |
+| POST | `/forgot` | Público | — | Envia o e-mail de redefinição de senha |
+| POST | `/setPasswordGuid` | Público | — | Define a senha usando o GUID de autenticação do link do e-mail |
+| POST | `/verifyCredentials` | Público | — | Verifica e-mail/senha e retorna as igrejas associadas |
+| POST | `/loadOrCreate` | JWT | — | Localiza ou cria um usuário pelo e-mail/userId |
+| POST | `/setDisplayName` | JWT | — | Atualiza o nome e o sobrenome do usuário |
+| POST | `/updateEmail` | JWT | — | Altera o endereço de e-mail do usuário |
+| POST | `/updatePassword` | JWT | — | Altera a senha do usuário (mínimo de 6 caracteres) |
+| POST | `/updateOptedOut` | JWT | — | Define o status de descadastro de uma pessoa |
+| POST | `/sendInviteEmail` | JWT | People.Edit | Envia por e-mail um convite a uma pessoa desta igreja (`email`, `personName`, `contextName`). O botão mostra **Cadastrar-se** para quem não tem conta e **Entrar** para um usuário existente. Um usuário que nunca entrou recebe, em vez disso, um link **Definir sua senha** que expira em 7 dias. Conta para o limite diário de e-mails da igreja (`429` quando atingido) |
+| GET | `/search?term=` | JWT | Server.Admin | Pesquisa todos os usuários por nome/e-mail |
+| DELETE | `/` | JWT | — | Exclui a conta do usuário atual |
 
 ## Igrejas
 
 Caminho base: `/membership/churches`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/` | JWT | — | Carregar todas as igrejas para o usuário atual |
-| GET | `/:id` | JWT | — | Obter igreja por ID |
-| GET | `/:id/getDomainAdmin` | JWT | — | Obter o usuário administrador de domínio para uma igreja |
-| GET | `/:id/impersonate` | JWT | Server.Admin | Representar uma igreja (apenas admin de servidor) |
-| GET | `/all?term=` | JWT | Server.Admin | Procurar todas as igrejas (admin) |
-| GET | `/search/?name=` | Public | — | Procurar igrejas por nome |
-| GET | `/lookup/?subDomain=&id=` | Public | — | Procurar uma igreja por subdomínio ou ID |
-| POST | `/` | JWT | Settings.Edit | Atualizar detalhes da igreja |
-| POST | `/add` | JWT | — | Registrar uma nova igreja. Campos obrigatórios: name, address1, city, state, zip, country |
-| POST | `/search` | Public | — | Procurar igrejas por nome (variante POST) |
-| POST | `/select` | JWT | — | Selecionar/mudar para uma igreja. Corpo: `{ churchId }` ou `{ subDomain }` |
-| POST | `/:id/archive` | JWT | Server.Admin | Arquivar ou desarquivar uma igreja |
-| POST | `/byIds` | Public | — | Carregar múltiplas igrejas por IDs |
-| DELETE | `/deleteAbandoned` | JWT | Server.Admin | Deletar igrejas abandonadas por 7+ dias |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | — | Carrega todas as igrejas do usuário atual |
+| GET | `/:id` | JWT | — | Obtém a igreja pelo ID |
+| GET | `/:id/getDomainAdmin` | JWT | — | Obtém o usuário administrador de domínio de uma igreja |
+| GET | `/:id/impersonate` | JWT | Server.Admin | Personifica uma igreja (somente administradores do servidor) |
+| GET | `/all?term=` | JWT | Server.Admin | Pesquisa todas as igrejas (administrador) |
+| GET | `/search/?name=` | Público | — | Pesquisa igrejas pelo nome |
+| GET | `/lookup/?subDomain=&id=` | Público | — | Localiza uma igreja pelo subdomínio ou ID |
+| POST | `/` | JWT | Settings.Edit | Atualiza os dados da igreja |
+| POST | `/add` | JWT | — | Cadastra uma nova igreja. Campos obrigatórios: name, address1, city, state, zip, country |
+| POST | `/search` | Público | — | Pesquisa igrejas pelo nome (variante POST) |
+| POST | `/select` | JWT | — | Seleciona/troca para uma igreja. Corpo: `{ churchId }` ou `{ subDomain }` |
+| POST | `/:id/archive` | JWT | Server.Admin | Arquiva ou desarquiva uma igreja |
+| POST | `/byIds` | Público | — | Carrega várias igrejas pelos IDs |
+| DELETE | `/deleteAbandoned` | JWT | Server.Admin | Exclui igrejas abandonadas há 7 dias ou mais |
 
 ## Grupos
 
 Caminho base: `/membership/groups`
 
-Estende CRUD padrão (GET `/`, GET `/:id` da classe base).
+Estende o CRUD padrão (GET `/`, GET `/:id` da classe base).
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/` | JWT | — | Listar todos os grupos |
-| GET | `/:id` | JWT | — | Obter grupo por ID |
-| GET | `/search?campusId=&serviceId=&serviceTimeId=` | JWT | — | Procurar grupos por filtros de serviço |
-| GET | `/my` | JWT | — | Obter grupos do usuário atual |
-| GET | `/my/:tag` | JWT | — | Obter grupos do usuário atual filtrados por tag |
-| GET | `/tag/:tag` | JWT | — | Obter todos os grupos com uma tag específica |
-| GET | `/public/:churchId/:id` | Public | — | Obter um grupo público por igreja e ID |
-| GET | `/public/:churchId/tag/:tag` | Public | — | Obter grupos públicos por tag |
-| GET | `/public/:churchId/label?label=` | Public | — | Obter grupos públicos por rótulo |
-| GET | `/public/:churchId/slug/:slug` | Public | — | Obter um grupo público por slug |
-| POST | `/` | JWT | Groups.Edit | Criar ou atualizar grupos (gera automaticamente slug) |
-| DELETE | `/:id` | JWT | Groups.Edit | Deletar um grupo (também deleta equipes filhas para grupos de ministério) |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | — | Lista todos os grupos |
+| GET | `/:id` | JWT | — | Obtém um grupo pelo ID |
+| GET | `/search?campusId=&serviceId=&serviceTimeId=` | JWT | — | Pesquisa grupos pelos filtros de culto |
+| GET | `/my` | JWT | — | Obtém os grupos do usuário atual |
+| GET | `/my/:tag` | JWT | — | Obtém os grupos do usuário atual filtrados por etiqueta |
+| GET | `/tag/:tag` | JWT | — | Obtém todos os grupos com uma etiqueta específica |
+| GET | `/public/:churchId/:id` | Público | — | Obtém um grupo público pela igreja e pelo ID |
+| GET | `/public/:churchId/tag/:tag` | Público | — | Obtém grupos públicos pela etiqueta |
+| GET | `/public/:churchId/label?label=` | Público | — | Obtém grupos públicos pelo rótulo |
+| GET | `/public/:churchId/slug/:slug` | Público | — | Obtém um grupo público pelo slug |
+| POST | `/` | JWT | Groups.Edit | Cria ou atualiza grupos (gera o slug automaticamente) |
+| DELETE | `/:id` | JWT | Groups.Edit | Exclui um grupo (também exclui as equipes filhas nos grupos de ministério) |
 
 ## Membros do Grupo
 
 Caminho base: `/membership/groupmembers`
 
-Estende CRUD padrão (GET `/:id`, DELETE `/:id` da classe base).
+Estende o CRUD padrão (GET `/:id`, DELETE `/:id` da classe base).
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/:id` | JWT | GroupMembers.View | Obter membro do grupo por ID |
-| GET | `/` | JWT | GroupMembers.View* | Listar membros do grupo. Filtrar por `?groupId=`, `?groupIds=` ou `?personId=`. *Também permitido se o usuário estiver no grupo ou consultando personId próprio |
-| GET | `/my` | JWT | — | Obter membros de grupo do usuário atual |
-| GET | `/basic/:groupId` | JWT | — | Obter lista de membros básica para um grupo |
-| GET | `/public/leaders/:churchId/:groupId` | Public | — | Obter líderes do grupo (público) |
-| GET | `/public/:churchId/:groupId` | Public | — | Obter a lista pública de um grupo (campos mínimos: `personId`, `displayName`, `leader`, foto). Apenas quando o grupo escolhe via `publicRoster`; alimenta o elemento `staffGrid` do construtor de sites |
-| POST | `/` | JWT | GroupMembers.Edit | Adicionar ou atualizar membros do grupo |
-| DELETE | `/:id` | JWT | GroupMembers.View | Remover um membro do grupo |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/:id` | JWT | GroupMembers.View | Obtém um membro do grupo pelo ID |
+| GET | `/` | JWT | GroupMembers.View* | Lista os membros dos grupos. Filtra por `?groupId=`, `?groupIds=` ou `?personId=`. *Também permitido se o usuário estiver no grupo ou consultar o próprio personId |
+| GET | `/my` | JWT | — | Obtém as participações em grupos do usuário atual |
+| GET | `/basic/:groupId` | JWT | — | Obtém a lista básica de membros de um grupo |
+| GET | `/public/leaders/:churchId/:groupId` | Público | — | Obtém os líderes de um grupo (público) |
+| GET | `/public/:churchId/:groupId` | Público | — | Obtém a lista pública de um grupo (campos mínimos: `personId`, `displayName`, `leader`, foto). Somente quando o grupo opta por `publicRoster`; alimenta o elemento `staffGrid` do construtor de sites |
+| POST | `/` | JWT | GroupMembers.Edit | Adiciona ou atualiza membros de grupos |
+| DELETE | `/:id` | JWT | GroupMembers.View | Remove um membro do grupo |
 
-## Famílias
+## Domicílios
 
 Caminho base: `/membership/households`
 
 Controlador CRUD padrão.
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/` | JWT | — | Listar todas as famílias |
-| GET | `/:id` | JWT | — | Obter família por ID |
-| POST | `/` | JWT | People.Edit | Criar ou atualizar famílias |
-| DELETE | `/:id` | JWT | People.Edit | Deletar uma família |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | — | Lista todos os domicílios |
+| GET | `/:id` | JWT | — | Obtém um domicílio pelo ID |
+| POST | `/` | JWT | People.Edit | Cria ou atualiza domicílios |
+| DELETE | `/:id` | JWT | People.Edit | Exclui um domicílio |
 
 ## Funções
 
 Caminho base: `/membership/roles`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/:id` | JWT | Roles.View | Obter função por ID |
-| GET | `/church/:churchId` | JWT | Roles.View | Obter todas as funções de uma igreja |
-| POST | `/` | JWT | Roles.Edit | Criar ou atualizar funções |
-| DELETE | `/:id` | JWT | Roles.Edit | Deletar uma função (também remove suas permissões e membros) |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/:id` | JWT | Roles.View | Obtém uma função pelo ID |
+| GET | `/church/:churchId` | JWT | Roles.View | Obtém todas as funções de uma igreja |
+| POST | `/` | JWT | Roles.Edit | Cria ou atualiza funções |
+| DELETE | `/:id` | JWT | Roles.Edit | Exclui uma função (também remove suas permissões e membros) |
 
-## Membros da Função
+## Membros de Função
 
 Caminho base: `/membership/rolemembers`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/roles/:id` | JWT | Roles.View | Obter membros de uma função. Adicionar `?include=users` para incluir detalhes de usuários |
-| POST | `/` | JWT | Roles.Edit | Adicionar membros a uma função (cria usuário se email não existir) |
-| DELETE | `/:id` | JWT | Roles.View | Remover um membro da função |
-| DELETE | `/self/:churchId/:userId` | JWT | — | Remover a si mesmo de uma igreja |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/roles/:id` | JWT | Roles.View | Obtém os membros de uma função. Adicione `?include=users` para incluir os dados dos usuários |
+| POST | `/` | JWT | Roles.Edit | Adiciona membros a uma função (cria o usuário se o e-mail não existir) |
+| DELETE | `/:id` | JWT | Roles.View | Remove um membro da função |
+| DELETE | `/self/:churchId/:userId` | JWT | — | Remove você mesmo de uma igreja |
 
-## Permissões da Função
+## Permissões de Função
 
 Caminho base: `/membership/rolepermissions`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/roles/:id` | JWT | Roles.View | Obter permissões de uma função (use `null` como ID para a função "Todos") |
-| POST | `/` | JWT | Roles.Edit | Criar ou atualizar permissões da função |
-| DELETE | `/:id` | JWT | Roles.Edit | Deletar uma permissão da função |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/roles/:id` | JWT | Roles.View | Obtém as permissões de uma função (use `null` como ID para a função "Todos") |
+| POST | `/` | JWT | Roles.Edit | Cria ou atualiza permissões de função |
+| DELETE | `/:id` | JWT | Roles.Edit | Exclui uma permissão de função |
 
 ## Permissões
 
 Caminho base: `/membership/permissions`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/` | JWT | — | Obter a lista completa de permissões disponíveis |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | — | Obtém a lista completa de permissões disponíveis |
 
 ## Formulários
 
 Caminho base: `/membership/forms`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/` | JWT | Forms.Admin ou Forms.Edit | Listar todos os formulários (admin vê todos; editores veem atribuídos + formulários para não membros) |
-| GET | `/:id` | JWT | Acesso ao formulário | Obter um formulário por ID |
-| GET | `/archived` | JWT | Forms.Admin ou Forms.Edit | Listar formulários arquivados |
-| GET | `/standalone/:id?churchId=` | JWT | — | Obter um formulário autônomo (formulários restritos requerem autenticação) |
-| POST | `/` | JWT | Forms.Admin ou Forms.Edit | Criar ou atualizar formulários |
-| DELETE | `/:id` | JWT | Acesso ao formulário | Deletar um formulário |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | Forms.Admin ou Forms.Edit | Lista todos os formulários (o administrador vê todos; editores veem os atribuídos e os formulários de não membros) |
+| GET | `/:id` | JWT | Acesso ao formulário | Obtém um formulário pelo ID |
+| GET | `/archived` | JWT | Forms.Admin ou Forms.Edit | Lista os formulários arquivados |
+| GET | `/standalone/:id?churchId=` | JWT | — | Obtém um formulário independente (formulários restritos exigem autenticação) |
+| POST | `/` | JWT | Forms.Admin ou Forms.Edit | Cria ou atualiza formulários |
+| DELETE | `/:id` | JWT | Acesso ao formulário | Exclui um formulário |
 
-## Envios de Formulário
+## Respostas de Formulários
 
 Caminho base: `/membership/formsubmissions`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/` | JWT | Forms.Admin ou Forms.Edit | Listar envios. Filtrar por `?personId=` ou `?formId=` |
-| GET | `/:id` | JWT | Forms.Admin ou Forms.Edit | Obter envio por ID. Adicionar `?include=form,questions,answers` |
-| GET | `/formId/:formId` | JWT | Acesso ao formulário | Obter todos os envios para um formulário (inclui formulário, perguntas, respostas) |
-| POST | `/` | JWT | — | Enviar respostas de formulário (lida com formulários restritos/irrestritivos, envia notificações por email). Quando o formulário tem `autoCreatePerson`, encontra-ou-cria uma pessoa Guest por email e vincula o envio; quando `followUpSubject`/`followUpBody` estão definidos, envia um email de acompanhamento modelado para o enviador |
-| DELETE | `/:id` | JWT | Forms.Admin ou Forms.Edit | Deletar um envio e suas respostas |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | Forms.Admin ou Forms.Edit | Lista as respostas. Filtra por `?personId=` ou `?formId=` |
+| GET | `/:id` | JWT | Forms.Admin ou Forms.Edit | Obtém uma resposta pelo ID. Adicione `?include=form,questions,answers` |
+| GET | `/formId/:formId` | JWT | Acesso ao formulário | Obtém todas as respostas de um formulário (inclui formulário, perguntas e respostas) |
+| POST | `/` | JWT | — | Envia as respostas do formulário (trata formulários restritos/não restritos e envia notificações por e-mail). Quando o formulário tem `autoCreatePerson`, localiza ou cria uma pessoa Visitante pelo e-mail e vincula a resposta; quando `followUpSubject`/`followUpBody` estão definidos, envia um e-mail de acompanhamento com modelo ao remetente |
+| DELETE | `/:id` | JWT | Forms.Admin ou Forms.Edit | Exclui uma resposta e suas respostas às perguntas |
 
 ## Perguntas
 
 Caminho base: `/membership/questions`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/` | JWT | Acesso ao formulário | Listar perguntas de um formulário. Requer `?formId=` |
-| GET | `/:id` | JWT | Acesso ao formulário | Obter uma pergunta por ID |
-| GET | `/unrestricted?formId=` | JWT | — | Obter perguntas de um formulário irrestritivo |
-| GET | `/sort/:id/up` | JWT | — | Mover uma pergunta para cima na ordem de classificação |
-| GET | `/sort/:id/down` | JWT | — | Mover uma pergunta para baixo na ordem de classificação |
-| POST | `/` | JWT | Acesso ao formulário | Criar ou atualizar perguntas (atribui automaticamente ordem de classificação) |
-| DELETE | `/:id?formId=` | JWT | Acesso ao formulário | Deletar uma pergunta |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | Acesso ao formulário | Lista as perguntas de um formulário. Requer `?formId=` |
+| GET | `/:id` | JWT | Acesso ao formulário | Obtém uma pergunta pelo ID |
+| GET | `/unrestricted?formId=` | JWT | — | Obtém as perguntas de um formulário não restrito |
+| GET | `/sort/:id/up` | JWT | — | Move uma pergunta para cima na ordenação |
+| GET | `/sort/:id/down` | JWT | — | Move uma pergunta para baixo na ordenação |
+| POST | `/` | JWT | Acesso ao formulário | Cria ou atualiza perguntas (atribui a ordem automaticamente) |
+| DELETE | `/:id?formId=` | JWT | Acesso ao formulário | Exclui uma pergunta |
 
 ## Respostas
 
 Caminho base: `/membership/answers`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/` | JWT | Forms.Admin ou Forms.Edit | Listar respostas. Filtrar por `?formSubmissionId=` |
-| POST | `/` | JWT | Forms.Admin ou Forms.Edit | Criar ou atualizar respostas |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | Forms.Admin ou Forms.Edit | Lista as respostas. Filtra por `?formSubmissionId=` |
+| POST | `/` | JWT | Forms.Admin ou Forms.Edit | Cria ou atualiza respostas |
 
 ## Permissões de Membro
 
 Caminho base: `/membership/memberpermissions`
 
-Controla acesso por membro a formulários específicos.
+Controla o acesso individual de cada membro a formulários específicos.
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/:id` | JWT | Acesso ao formulário | Obter uma permissão de membro por ID |
-| GET | `/member/:id` | JWT | Acesso ao formulário | Obter todas as permissões de formulário para um membro |
-| GET | `/form/:id` | JWT | Acesso ao formulário | Obter todas as permissões de membro para um formulário |
-| GET | `/form/:id/my` | JWT | Acesso ao formulário | Obter permissão do usuário atual para um formulário |
-| POST | `/` | JWT | Acesso ao formulário | Criar ou atualizar permissões de membro |
-| DELETE | `/:id?formId=` | JWT | Acesso ao formulário | Deletar uma permissão de membro |
-| DELETE | `/member/:id?formId=` | JWT | Acesso ao formulário | Deletar todas as permissões de um membro em um formulário |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/:id` | JWT | Acesso ao formulário | Obtém uma permissão de membro pelo ID |
+| GET | `/member/:id` | JWT | Acesso ao formulário | Obtém todas as permissões de formulário de um membro |
+| GET | `/form/:id` | JWT | Acesso ao formulário | Obtém todas as permissões de membros de um formulário |
+| GET | `/form/:id/my` | JWT | Acesso ao formulário | Obtém a permissão do usuário atual para um formulário |
+| POST | `/` | JWT | Acesso ao formulário | Cria ou atualiza permissões de membros |
+| DELETE | `/:id?formId=` | JWT | Acesso ao formulário | Exclui uma permissão de membro |
+| DELETE | `/member/:id?formId=` | JWT | Acesso ao formulário | Exclui todas as permissões de um membro em um formulário |
 
 ## Configurações
 
 Caminho base: `/membership/settings`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/` | JWT | Settings.Edit | Obter todas as configurações da igreja |
-| GET | `/public/:churchId` | Public | — | Obter configurações públicas para uma igreja |
-| POST | `/` | JWT | Settings.Edit | Salvar configurações (suporta upload de imagem em base64) |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | Settings.Edit | Obtém todas as configurações da igreja |
+| GET | `/public/:churchId` | Público | — | Obtém as configurações públicas de uma igreja |
+| POST | `/` | JWT | Settings.Edit | Salva as configurações (aceita upload de imagem em base64) |
 
 ## Domínios
 
 Caminho base: `/membership/domains`
 
-Estende CRUD padrão (GET `/:id`, GET `/`, DELETE `/:id` da classe base).
+Estende o CRUD padrão (GET `/:id`, GET `/`, DELETE `/:id` da classe base).
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/` | JWT | — | Listar todos os domínios |
-| GET | `/:id` | JWT | — | Obter domínio por ID |
-| GET | `/lookup/:domainName` | JWT | — | Procurar um domínio por nome |
-| GET | `/public/lookup/:domainName` | Public | — | Busca de domínio público por nome |
-| GET | `/health/check` | Public | — | Executar verificação de saúde em domínios não verificados |
-| POST | `/` | JWT | Settings.Edit | Criar ou atualizar domínios (dispara atualização Caddy) |
-| DELETE | `/:id` | JWT | Settings.Edit | Deletar um domínio |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | — | Lista todos os domínios |
+| GET | `/:id` | JWT | — | Obtém um domínio pelo ID |
+| GET | `/lookup/:domainName` | JWT | — | Localiza um domínio pelo nome |
+| GET | `/public/lookup/:domainName` | Público | — | Localização pública de domínio pelo nome |
+| GET | `/health/check` | Público | — | Executa a verificação de integridade dos domínios não verificados |
+| POST | `/` | JWT | Settings.Edit | Cria ou atualiza domínios (aciona a atualização do Caddy) |
+| DELETE | `/:id` | JWT | Settings.Edit | Exclui um domínio |
 
-## Igreja do Usuário
+## Usuário-Igreja
 
 Caminho base: `/membership/userchurch`
 
 Gerencia a associação entre usuários e igrejas.
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/userid/:userId` | JWT | — | Obter registro de usuário-igreja por ID de usuário |
-| GET | `/personid/:personId` | JWT | — | Obter email para um usuário vinculado de uma pessoa |
-| GET | `/user/:userId` | JWT | Server.Admin | Carregar todas as igrejas de um usuário |
-| POST | `/` | JWT | — | Criar uma associação de usuário-igreja |
-| PATCH | `/:userId` | JWT | — | Atualizar hora do último acesso e registrar acesso |
-| DELETE | `/record/:userId/:churchId/:personId` | JWT | — | Deletar um registro de usuário-igreja |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/userid/:userId` | JWT | — | Obtém o registro usuário-igreja pelo ID do usuário |
+| GET | `/personid/:personId` | JWT | — | Obtém o e-mail do usuário vinculado a uma pessoa |
+| GET | `/user/:userId` | JWT | Server.Admin | Carrega todas as igrejas de um usuário |
+| POST | `/` | JWT | — | Cria uma associação usuário-igreja |
+| PATCH | `/:userId` | JWT | — | Atualiza o horário do último acesso e registra o acesso |
+| DELETE | `/record/:userId/:churchId/:personId` | JWT | — | Exclui um registro usuário-igreja |
 
 ## Preferências de Visibilidade
 
 Caminho base: `/membership/visibilityPreferences`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/my` | JWT | — | Obter preferências de visibilidade do usuário atual |
-| POST | `/` | JWT | — | Salvar preferências de visibilidade (visibilidade de endereço, telefone, email) |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/my` | JWT | — | Obtém as preferências de visibilidade do usuário atual |
+| POST | `/` | JWT | — | Salva as preferências de visibilidade (visibilidade de endereço, telefone e e-mail) |
 
 ## Consulta
 
 Caminho base: `/membership/query`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| POST | `/members` | JWT | — | Busca de membro em linguagem natural usando IA. Corpo: `{ text, subDomain, siteUrl }` |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| POST | `/members` | JWT | — | Pesquisa de membros em linguagem natural usando IA. Corpo: `{ text, subDomain, siteUrl }` |
 
 ## Erros do Cliente
 
 Caminho base: `/membership/clientErrors`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| POST | `/` | JWT | — | Registrar um erro do lado do cliente |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| POST | `/` | JWT | — | Registra um erro do lado do cliente |
 
 ## Páginas Relacionadas
 
 - [Autenticação e Permissões](./authentication) — Fluxo de login, JWT, OAuth, modelo de permissões
-- [Endpoints de Presença](./attendance) -- Rastreamento de serviço e visita
-- [Estrutura de Módulo](../module-structure) -- Padrões de organização de código
+- [Endpoints de Presença](./attendance) — Rastreamento de cultos e visitas
+- [Estrutura de Módulos](../module-structure) — Padrões de organização do código

@@ -1,12 +1,12 @@
 ---
-title: "Endpoints de Doações"
+title: "Endpoints de Ofertas"
 ---
 
-# Endpoints de Doações
+# Endpoints de Ofertas
 
 <div class="article-intro">
 
-O módulo de Doações gerencia doações, fundos, processamento de pagamentos, assinaturas e outras operações financeiras relacionadas. Ele oferece suporte a múltiplos gateways de pagamento (Stripe, PayPal), trata doações únicas e recorrentes, rastreia lotes de doações e fornece processamento de webhooks para eventos de pagamento assíncronos.
+O módulo de Ofertas (Giving) gerencia doações, fundos, processamento de pagamentos, assinaturas e operações financeiras relacionadas. Ele oferece suporte a vários gateways de pagamento (Stripe, PayPal), trata doações únicas e recorrentes, acompanha lotes de doações e fornece o processamento de webhooks para eventos de pagamento assíncronos.
 
 </div>
 
@@ -16,15 +16,16 @@ O módulo de Doações gerencia doações, fundos, processamento de pagamentos, 
 
 Caminho base: `/giving/donations`
 
-| Método | Caminho | Auth | Permissão | Descrição |
+| Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.View ou próprio personId | Listar todas as doações. Filtrar por `?batchId=` ou `?personId=` |
-| GET | `/:id` | JWT | Donations.View | Obter uma doação por ID |
-| GET | `/my` | JWT | — | Obter as doações do usuário atual |
-| GET | `/summary` | JWT | Donations.ViewSummary | Obter o resumo de doações. Filtrar por `?startDate=&endDate=&type=`. Use `type=person` para o detalhamento por pessoa |
-| GET | `/testEmail` | Public | — | Enviar um email de teste (desenvolvimento/depuração) |
-| POST | `/` | JWT | Donations.Edit | Criar ou atualizar doações (em lote) |
-| DELETE | `/:id` | JWT | Donations.Edit | Excluir uma doação |
+| GET | `/` | JWT | Donations.View ou o próprio personId | Lista todas as doações. Filtra por `?batchId=` ou `?personId=`. Com `?personId=`, as contribuições para fundos não dedutíveis são omitidas (como nos comprovantes de contribuição), a menos que quem chama com Donations.View adicione `&includeNonDeductible=1`, o que o registro de pessoa do B1Admin faz |
+| GET | `/:id` | JWT | Donations.View | Obtém uma doação pelo ID |
+| GET | `/my` | JWT | — | Obtém as doações do usuário atual |
+| GET | `/my/summary?year=` | JWT | — | Total de ofertas do usuário atual em um ano (padrão: este ano): `{ year, total, count, currency, isConverted }`, com os totais convertidos para a moeda da igreja. Alimenta a prévia de ofertas na página inicial do membro |
+| GET | `/summary` | JWT | Donations.ViewSummary | Obtém o resumo de doações. Filtra por `?startDate=&endDate=&type=`. Use `type=person` para o detalhamento por pessoa |
+| GET | `/testEmail` | Público | — | Envia um e-mail de teste (desenvolvimento/depuração) |
+| POST | `/` | JWT | Donations.Edit | Cria ou atualiza doações (em lote) |
+| DELETE | `/:id` | JWT | Donations.Edit | Exclui uma doação |
 
 ### Exemplo: Listar Doações por Lote
 
@@ -68,14 +69,14 @@ Authorization: Bearer <token>
 
 Caminho base: `/giving/donationbatches`
 
-Estende `GenericCrudController` com as rotas CRUD: `getById`, `getAll`, `post`, `delete`. A operação de exclusão também remove todas as doações dentro do lote.
+Estende `GenericCrudController` com as rotas CRUD: `getById`, `getAll`, `post`, `delete`. A operação de exclusão também remove todas as doações do lote.
 
-| Método | Caminho | Auth | Permissão | Descrição |
+| Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.ViewSummary | Listar todos os lotes de doações |
-| GET | `/:id` | JWT | Donations.ViewSummary | Obter um lote de doações por ID |
-| POST | `/` | JWT | Donations.Edit | Criar ou atualizar lotes de doações |
-| DELETE | `/:id` | JWT | Donations.Edit | Excluir um lote e todas as suas doações |
+| GET | `/` | JWT | Donations.ViewSummary | Lista todos os lotes de doações |
+| GET | `/:id` | JWT | Donations.ViewSummary | Obtém um lote de doações pelo ID |
+| POST | `/` | JWT | Donations.Edit | Cria ou atualiza lotes de doações |
+| DELETE | `/:id` | JWT | Donations.Edit | Exclui um lote e todas as suas doações |
 
 ## Doar
 
@@ -83,20 +84,20 @@ Caminho base: `/giving/donate`
 
 Trata o fluxo de doação voltado ao público, incluindo cobranças, assinaturas, webhooks e cálculos de taxas. Nenhuma rota CRUD base está habilitada; todos os endpoints são personalizados.
 
-| Método | Caminho | Auth | Permissão | Descrição |
+| Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|------|------|------------|-------------|
-| GET | `/gateways/:churchId` | Public | — | Obter os gateways de pagamento disponíveis para uma igreja (apenas chaves públicas) |
-| POST | `/client-token` | JWT | — | Gerar um token de cliente para inicialização do gateway |
-| POST | `/create-order` | JWT | — | Criar um pedido de pagamento (checkout no estilo PayPal) |
-| POST | `/charge` | JWT | — | Processar uma cobrança de doação única |
-| POST | `/subscribe` | JWT | — | Criar uma assinatura de doação recorrente |
-| POST | `/log` | Public | — | Registrar uma doação. Corpo: `{ donation, fundData }` |
-| POST | `/webhook/:provider` | Public | — | Receber eventos de webhook de pagamento (Stripe, PayPal). Requer `?churchId=` |
-| POST | `/replay-stripe-events` | JWT | Donations.Edit | Reproduzir novamente os eventos do Stripe de um intervalo de datas. Corpo: `{ startDate, endDate, dryRun }` |
-| POST | `/fee` | Public | — | Calcular as taxas da transação. Corpo: `{ type, provider, gatewayId, amount, currency }`. Requer `?churchId=` |
-| POST | `/captcha-verify` | Public | — | Verificar o token reCAPTCHA. Corpo: `{ token }` |
+| GET | `/gateways/:churchId` | Público | — | Obtém os gateways de pagamento disponíveis para uma igreja (somente chaves públicas) |
+| POST | `/client-token` | JWT | — | Gera um token de cliente para a inicialização do gateway |
+| POST | `/create-order` | JWT | — | Cria um pedido de pagamento (checkout no estilo PayPal) |
+| POST | `/charge` | JWT | — | Processa a cobrança de uma doação única |
+| POST | `/subscribe` | JWT | — | Cria uma assinatura de doação recorrente |
+| POST | `/log` | Público | — | Registra uma doação. Corpo: `{ donation, fundData }` |
+| POST | `/webhook/:provider` | Público | — | Recebe eventos de webhook de pagamento (Stripe, PayPal). Requer `?churchId=` |
+| POST | `/replay-stripe-events` | JWT | Donations.Edit | Reprocessa eventos do Stripe em um intervalo de datas. Corpo: `{ startDate, endDate, dryRun }` |
+| POST | `/fee` | Público | — | Calcula as taxas da transação. Corpo: `{ type, provider, gatewayId, amount, currency }`. Requer `?churchId=` |
+| POST | `/captcha-verify` | Público | — | Verifica o token do reCAPTCHA. Corpo: `{ token }` |
 
-### Exemplo: Processar uma Cobrança de Doação
+### Exemplo: Processar a Cobrança de uma Doação
 
 ```
 POST /giving/donate/charge
@@ -150,48 +151,48 @@ Authorization: Bearer <token>
 
 Caminho base: `/giving/funds`
 
-Estende `GenericCrudController` com as rotas CRUD: `getById`, `getAll`, `post`, `delete`. A permissão de `view` é `null` (nenhuma permissão é necessária para visualizar fundos).
+Estende `GenericCrudController` com as rotas CRUD: `getById`, `getAll`, `post`, `delete`. A permissão `view` é `null` (nenhuma permissão é necessária para visualizar os fundos).
 
-| Método | Caminho | Auth | Permissão | Descrição |
+| Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Listar todos os fundos |
-| GET | `/:id` | JWT | — | Obter um fundo por ID |
-| GET | `/churchId/:churchId` | Public | — | Obter todos os fundos de uma igreja específica (público) |
-| GET | `/public/:churchId/:fundId/total?startDate=&endDate=` | Public | — | Obter o total de doações de um fundo: `{ fundId, totalAmount, donationCount }`. Alimenta o elemento `campaignProgress` do construtor de sites |
-| POST | `/` | JWT | Donations.Edit | Criar ou atualizar fundos |
-| DELETE | `/:id` | JWT | Donations.Edit | Excluir um fundo |
+| GET | `/` | JWT | — | Lista todos os fundos |
+| GET | `/:id` | JWT | — | Obtém um fundo pelo ID |
+| GET | `/churchId/:churchId` | Público | — | Obtém todos os fundos de uma igreja específica (público) |
+| GET | `/public/:churchId/:fundId/total?startDate=&endDate=` | Público | — | Obtém o total de doações de um fundo: `{ fundId, totalAmount, donationCount }`. Alimenta o elemento `campaignProgress` do construtor de sites |
+| POST | `/` | JWT | Donations.Edit | Cria ou atualiza fundos |
+| DELETE | `/:id` | JWT | Donations.Edit | Exclui um fundo |
 
 ## Doações por Fundo
 
 Caminho base: `/giving/funddonations`
 
-Rastreia como as doações individuais são alocadas entre fundos. Nenhuma rota CRUD base está habilitada; todos os endpoints são personalizados.
+Acompanha como as doações individuais são alocadas entre os fundos. Nenhuma rota CRUD base está habilitada; todos os endpoints são personalizados.
 
-| Método | Caminho | Auth | Permissão | Descrição |
+| Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.View | Listar doações por fundo. Filtrar por `?donationId=`, `?personId=`, `?fundId=` ou `?fundName=`. Opcionalmente, adicione `?startDate=&endDate=` para filtrar por data |
-| GET | `/:id` | JWT | Donations.View | Obter uma doação por fundo por ID |
-| GET | `/my` | JWT | — | Obter as doações por fundo do usuário atual |
-| POST | `/` | JWT | Donations.Edit | Criar ou atualizar doações por fundo (em lote) |
-| DELETE | `/:id` | JWT | Donations.Edit | Excluir uma doação por fundo |
+| GET | `/` | JWT | Donations.View | Lista as doações por fundo. Filtra por `?donationId=`, `?personId=`, `?fundId=` ou `?fundName=`. Opcionalmente, adicione `?startDate=&endDate=` para filtrar por data |
+| GET | `/:id` | JWT | Donations.View | Obtém uma doação por fundo pelo ID |
+| GET | `/my` | JWT | — | Obtém as doações por fundo do usuário atual |
+| POST | `/` | JWT | Donations.Edit | Cria ou atualiza doações por fundo (em lote) |
+| DELETE | `/:id` | JWT | Donations.Edit | Exclui uma doação por fundo |
 
 ## Gateways
 
 Caminho base: `/giving/gateways`
 
-Gerencia as configurações de gateway de pagamento (Stripe, PayPal, etc.). Nenhuma rota CRUD base está habilitada; todos os endpoints são personalizados. Os segredos do gateway são criptografados em repouso.
+Gerencia as configurações dos gateways de pagamento (Stripe, PayPal etc.). Nenhuma rota CRUD base está habilitada; todos os endpoints são personalizados. Os segredos dos gateways são criptografados em repouso.
 
-| Método | Caminho | Auth | Permissão | Descrição |
+| Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Listar todos os gateways da igreja |
-| GET | `/:id` | JWT | Settings.Edit | Obter um gateway por ID |
-| GET | `/churchId/:churchId` | Public | — | Obter os gateways de uma igreja (apenas chaves públicas) |
-| GET | `/configured/:churchId` | Public | — | Verificar se uma igreja tem um gateway de pagamento configurado |
-| POST | `/` | JWT | Settings.Edit | Criar ou atualizar gateways (criptografa chaves, provisiona webhooks e produtos) |
-| PATCH | `/:id` | JWT | Settings.Edit | Atualizar parcialmente um gateway |
-| DELETE | `/:id` | JWT | Settings.Edit | Excluir um gateway (também remove seus webhooks) |
+| GET | `/` | JWT | — | Lista todos os gateways da igreja |
+| GET | `/:id` | JWT | Settings.Edit | Obtém um gateway pelo ID |
+| GET | `/churchId/:churchId` | Público | — | Obtém os gateways de uma igreja (somente chaves públicas) |
+| GET | `/configured/:churchId` | Público | — | Verifica se uma igreja tem um gateway de pagamento configurado |
+| POST | `/` | JWT | Settings.Edit | Cria ou atualiza gateways (criptografa as chaves, provisiona webhooks e produtos) |
+| PATCH | `/:id` | JWT | Settings.Edit | Atualiza parcialmente um gateway |
+| DELETE | `/:id` | JWT | Settings.Edit | Exclui um gateway (também remove seus webhooks) |
 
-### Exemplo: Verificar a Configuração de um Gateway
+### Exemplo: Verificar a Configuração do Gateway
 
 ```
 GET /giving/gateways/configured/church-123
@@ -209,12 +210,12 @@ Caminho base: `/giving/customers`
 
 Estende `GenericCrudController` com as rotas CRUD: `getAll`, `delete`. Vincula pessoas aos seus registros de cliente no gateway de pagamento.
 
-| Método | Caminho | Auth | Permissão | Descrição |
+| Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.ViewSummary | Listar todos os clientes |
-| GET | `/:id` | JWT | Donations.ViewSummary ou registro próprio | Obter um cliente por ID |
-| GET | `/:id/subscriptions` | JWT | Donations.ViewSummary ou registro próprio | Obter as assinaturas de gateway de um cliente |
-| DELETE | `/:id` | JWT | Donations.Edit | Excluir um cliente |
+| GET | `/` | JWT | Donations.ViewSummary | Lista todos os clientes |
+| GET | `/:id` | JWT | Donations.ViewSummary ou o próprio registro | Obtém um cliente pelo ID |
+| GET | `/:id/subscriptions` | JWT | Donations.ViewSummary ou o próprio registro | Obtém as assinaturas de um cliente no gateway |
+| DELETE | `/:id` | JWT | Donations.Edit | Exclui um cliente |
 
 ## Assinaturas
 
@@ -222,60 +223,60 @@ Caminho base: `/giving/subscriptions`
 
 Gerencia as assinaturas de doações recorrentes. Nenhuma rota CRUD base está habilitada; todos os endpoints são personalizados.
 
-| Método | Caminho | Auth | Permissão | Descrição |
+| Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.ViewSummary | Listar todas as assinaturas |
-| GET | `/:id` | JWT | Donations.ViewSummary | Obter uma assinatura por ID |
-| POST | `/` | JWT | Donations.Edit ou assinatura própria | Atualizar assinaturas junto ao gateway de pagamento |
-| DELETE | `/:id` | JWT | Donations.Edit ou assinatura própria | Cancelar uma assinatura e removê-la do banco de dados. Corpo: `{ provider, reason }` |
+| GET | `/` | JWT | Donations.ViewSummary | Lista todas as assinaturas |
+| GET | `/:id` | JWT | Donations.ViewSummary | Obtém uma assinatura pelo ID |
+| POST | `/` | JWT | Donations.Edit ou a própria assinatura | Atualiza assinaturas no gateway de pagamento |
+| DELETE | `/:id` | JWT | Donations.Edit ou a própria assinatura | Cancela uma assinatura e a remove do banco de dados. Corpo: `{ provider, reason }` |
 
-## Fundos de Assinatura
+## Fundos da Assinatura
 
 Caminho base: `/giving/subscriptionfunds`
 
-Rastreia as alocações de fundos das assinaturas recorrentes. Nenhuma rota CRUD base está habilitada; todos os endpoints são personalizados.
+Acompanha a alocação de fundos das assinaturas recorrentes. Nenhuma rota CRUD base está habilitada; todos os endpoints são personalizados.
 
-| Método | Caminho | Auth | Permissão | Descrição |
+| Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.View ou assinatura própria | Listar os fundos de assinatura. Filtrar por `?subscriptionId=` |
-| GET | `/:id` | JWT | Donations.ViewSummary | Obter um fundo de assinatura por ID |
-| DELETE | `/:id` | JWT | Donations.Edit | Excluir um fundo de assinatura |
-| DELETE | `/subscription/:id` | JWT | Donations.Edit ou assinatura própria | Excluir todos os fundos de uma assinatura |
+| GET | `/` | JWT | Donations.View ou a própria assinatura | Lista os fundos das assinaturas. Filtra por `?subscriptionId=` |
+| GET | `/:id` | JWT | Donations.ViewSummary | Obtém um fundo de assinatura pelo ID |
+| DELETE | `/:id` | JWT | Donations.Edit | Exclui um fundo de assinatura |
+| DELETE | `/subscription/:id` | JWT | Donations.Edit ou a própria assinatura | Exclui todos os fundos de uma assinatura |
 
-## Métodos de Pagamento
+## Formas de Pagamento
 
 Caminho base: `/giving/paymentmethods`
 
-Gerencia os métodos de pagamento armazenados (cartões, contas bancárias) por meio das APIs do gateway de pagamento. Nenhuma rota CRUD base está habilitada; todos os endpoints são personalizados.
+Gerencia as formas de pagamento armazenadas (cartões, contas bancárias) por meio das APIs do gateway de pagamento. Nenhuma rota CRUD base está habilitada; todos os endpoints são personalizados.
 
-| Método | Caminho | Auth | Permissão | Descrição |
+| Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|------|------|------------|-------------|
-| GET | `/personid/:id` | JWT | Donations.View ou próprio personId | Obter todos os métodos de pagamento armazenados de uma pessoa (cartões, contas bancárias) |
-| POST | `/addcard` | JWT | — | Anexar um método de pagamento por cartão. Corpo: `{ id, personId, customerId, email, name, churchId, provider }` |
-| POST | `/updatecard` | JWT | Donations.Edit ou próprio personId | Atualizar os dados do cartão. Corpo: `{ personId, paymentMethodId, cardData, provider }` |
-| POST | `/ach-setup-intent` | JWT | Donations.Edit ou próprio personId | Criar um SetupIntent de ACH do Stripe para vincular uma conta bancária. Corpo: `{ personId, customerId, email, name, churchId }` |
-| POST | `/ach-setup-intent-anon` | Public | — | Criar um SetupIntent de ACH anônimo para doações de convidados. Corpo: `{ email, name, churchId, gatewayId }` |
-| POST | `/addbankaccount` | JWT | Donations.Edit ou próprio personId | Adicionar uma conta bancária via token (obsoleto; use `ach-setup-intent`). Corpo: `{ id, personId, customerId, email, name }` |
-| POST | `/updatebank` | JWT | Donations.Edit ou próprio personId | Atualizar os dados da conta bancária. Corpo: `{ paymentMethodId, personId, bankData, customerId }` |
-| POST | `/verifybank` | JWT | Donations.Edit ou próprio cliente | Verificar uma conta bancária com microdepósitos. Corpo: `{ paymentMethodId, customerId, amountData }` |
-| DELETE | `/:id/:customerid` | JWT | Donations.Edit ou próprio cliente | Excluir um método de pagamento (cartão ou conta bancária) |
+| GET | `/personid/:id` | JWT | Donations.View ou o próprio personId | Obtém todas as formas de pagamento armazenadas de uma pessoa (cartões, contas bancárias) |
+| POST | `/addcard` | JWT | — | Anexa uma forma de pagamento do tipo cartão. Corpo: `{ id, personId, customerId, email, name, churchId, provider }` |
+| POST | `/updatecard` | JWT | Donations.Edit ou o próprio personId | Atualiza os dados do cartão. Corpo: `{ personId, paymentMethodId, cardData, provider }` |
+| POST | `/ach-setup-intent` | JWT | Donations.Edit ou o próprio personId | Cria um SetupIntent ACH do Stripe para vincular uma conta bancária. Corpo: `{ personId, customerId, email, name, churchId }` |
+| POST | `/ach-setup-intent-anon` | Público | — | Cria um SetupIntent ACH anônimo para doações de visitantes. Corpo: `{ email, name, churchId, gatewayId }` |
+| POST | `/addbankaccount` | JWT | Donations.Edit ou o próprio personId | Adiciona uma conta bancária por meio de token (obsoleto; use `ach-setup-intent`). Corpo: `{ id, personId, customerId, email, name }` |
+| POST | `/updatebank` | JWT | Donations.Edit ou o próprio personId | Atualiza os dados da conta bancária. Corpo: `{ paymentMethodId, personId, bankData, customerId }` |
+| POST | `/verifybank` | JWT | Donations.Edit ou o próprio cliente | Verifica uma conta bancária com micro-depósitos. Corpo: `{ paymentMethodId, customerId, amountData }` |
+| DELETE | `/:id/:customerid` | JWT | Donations.Edit ou o próprio cliente | Exclui uma forma de pagamento (cartão ou conta bancária) |
 
-## Log de Eventos
+## Registro de Eventos
 
 Caminho base: `/giving/eventLog`
 
-Estende `GenericCrudController` com as rotas CRUD: `getById`, `getAll`, `post`, `delete`. Rastreia os eventos de webhook do gateway de pagamento para auditoria e deduplicação.
+Estende `GenericCrudController` com as rotas CRUD: `getById`, `getAll`, `post`, `delete`. Acompanha os eventos de webhook dos gateways de pagamento para auditoria e deduplicação.
 
-| Método | Caminho | Auth | Permissão | Descrição |
+| Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.ViewSummary | Listar todos os logs de eventos |
-| GET | `/:id` | JWT | Donations.ViewSummary | Obter um log de evento por ID |
-| GET | `/type/:type` | JWT | Donations.ViewSummary | Obter logs de eventos filtrados por tipo de evento |
-| POST | `/` | JWT | Donations.Edit | Criar ou atualizar logs de eventos |
-| DELETE | `/:id` | JWT | Donations.Edit | Excluir um log de evento |
+| GET | `/` | JWT | Donations.ViewSummary | Lista todos os registros de eventos |
+| GET | `/:id` | JWT | Donations.ViewSummary | Obtém um registro de evento pelo ID |
+| GET | `/type/:type` | JWT | Donations.ViewSummary | Obtém os registros de eventos filtrados pelo tipo de evento |
+| POST | `/` | JWT | Donations.Edit | Cria ou atualiza registros de eventos |
+| DELETE | `/:id` | JWT | Donations.Edit | Exclui um registro de evento |
 
 ## Páginas Relacionadas
 
-- [Endpoints de Membros](./membership) — Pessoas, igrejas, grupos, funções e permissões
+- [Endpoints de Membresia](./membership) — Pessoas, igrejas, grupos, funções e permissões
 - [Autenticação e Permissões](./authentication) — Fluxo de login, JWT, OAuth, modelo de permissões
-- [Estrutura do Módulo](../module-structure) — Padrões de organização de código
+- [Estrutura de Módulos](../module-structure) — Padrões de organização do código

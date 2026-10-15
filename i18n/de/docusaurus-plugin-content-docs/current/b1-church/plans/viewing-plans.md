@@ -6,63 +6,78 @@ title: "Pläne anzeigen"
 
 <div class="article-intro">
 
-Die Seite Pläne gibt Ihnen einen klaren Überblick über alle Dienste, zu denen Sie zugewiesen sind. Es verwendet ein Master-Detail-Layout, damit Sie schnell Ihre Pläne durchsuchen und die Details eines jeden ansehen können.
+Die Seite Pläne gibt Ihnen einen klaren Überblick über alle Dienstpläne, denen Sie zugewiesen sind. Sie zeigt, was Ihre Antwort benötigt, was ansteht und wo Sie bereits gedient haben, und Sie können jeden Plan für die Details öffnen.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie müssen in Ihr B1.church-Konto [angemeldet sein](../getting-started/logging-in.md).
-- Sie müssen einem mindestens einen Dienst zugewiesen sein. Wenn Sie keine Pläne sehen, wenden Sie sich an Ihren Kirchenverwalter oder Geschäftsführer.
+- Sie müssen [in Ihrem B1.church-Konto angemeldet](../getting-started/logging-in.md) sein.
+- Sie müssen mindestens einem Dienstplan zugewiesen sein. Wenn Sie keine Pläne sehen, wenden Sie sich an Ihre Gemeindeverwaltung oder Dienstleitung.
 
 </div>
 
-## Zugriff auf Ihre Pläne
+## Auf Ihre Pläne zugreifen
 
-1. Klicken Sie auf **Pläne** in der [Seitenleistennavigation](../getting-started/navigating.md).
-2. Sie sehen eine Liste der Pläne, auf denen Sie eingeplant sind.
+1. Tippen Sie in der Registerleiste, auf der [Seite Mehr](../getting-started/navigating.md#the-more-page) oder im Abschnitt **Sie dienen** auf der Startseite auf **Pläne** bzw. auf **Alle Pläne**.
+2. Sie sehen die Pläne, für die Sie eingeplant sind.
 
-## Die Plansliste
+## Die Seite Pläne
 
-Ihre Pläne sind in zwei Registerkarten aufgeteilt: **Anstehend** und **Vergangene**. Jeder Eintrag zeigt:
+Oben auf der Seite sehen Sie, wie viele Ihrer kommenden Zuweisungen bestätigt sind und wie viele noch eine Antwort benötigen. Dazu gibt es die Schaltfläche **Zum Dienst anmelden**, die die Seite [Freiwilligen-Anmeldung](../serving/volunteer-signup.md) öffnet. Darunter ist die Seite in Abschnitte gegliedert:
 
-- Der **Planname** (z. B. „Sonntagsgottesdienst" oder „Kinderdienst")
-- Das **Servicedatum**
-- Ihre **Position** (die Rolle, die Sie erfüllen)
-- Ihr **Status** – farbcodiert, so dass Sie auf einen Blick sehen können, ob Sie akzeptiert, abgelehnt oder noch nicht reagiert haben
+- **Benötigt Ihre Antwort** -- Zuweisungen, auf die Sie noch nicht geantwortet haben, jeweils mit den Schaltflächen **Annehmen** und **Ablehnen**, damit Sie antworten können, ohne den Plan zu öffnen. Wird nur angezeigt, wenn etwas auf Sie wartet.
+- **Kommend** -- Ihre nächsten drei Zuweisungen. Tippen Sie auf **Alle kommenden**, um die übrigen zu sehen.
+- **Sperrtermine** -- Termine, an denen Sie nicht zum Dienst verfügbar sind. Tippen Sie auf **Termine hinzufügen**, wählen Sie ein **Startdatum** und ein **Enddatum** und tippen Sie auf **Speichern**. Tippen Sie neben einem Sperrtermin auf **Entfernen**, um ihn zu löschen. Ihre Teamleitungen sehen diese Termine und können die Einteilung entsprechend planen.
+- **Vergangen** -- Wie oft Sie in diesem Jahr gedient haben und wann Sie zuletzt im Einsatz waren. Tippen Sie auf **Vergangene Zuweisungen**, um die vollständige Liste zu sehen, die Sie nach Jahr filtern können.
 
-Unter der Liste befindet sich ein Bereich **Sperrtermine**. Verwenden Sie ihn, um Daten zu verwalten, an denen Sie nicht verfügbar sind. Sie können Bereiche mit Blockierungsterminen hinzufügen, bearbeiten und entfernen, damit Ihre Teamleiter wissen, wann sie um Sie herum planen können.
+Jede Zuweisung zeigt das **Datum des Gottesdienstes**, den **Namen des Plans**, Ihre **Position** und eine Statusmarkierung: **Angenommen**, **Bestätigt**, **Abgelehnt**, **Antwort ausstehend** oder **Antwort benötigt**, falls Sie noch nicht geantwortet haben.
 
 :::info
-Ihre Kirche kann **Erinnerungen** vor den Diensten, für die Sie eingeplant sind, per E-Mail und als App-Benachrichtigung senden. Wenn Ihre Kirche Textnachrichten versendet, können Sie diese auch per Textnachricht erhalten, indem Sie **Textnachrichten** in Ihren [Benachrichtigungseinstellungen](../getting-started/notification-preferences.md) einschalten. Wenn Sie noch nicht reagiert haben, können Sie direkt aus der Erinnerungs-E-Mail **Akzeptieren** oder **Ablehnen** – keine Anmeldung erforderlich.
+Ihre Gemeinde kann Ihnen vor den Gottesdiensten, für die Sie eingeplant sind, **Erinnerungen** per E-Mail und als App-Benachrichtigung senden. Versendet Ihre Gemeinde Textnachrichten, erhalten Sie diese, wenn Sie unter Ihren [Benachrichtigungseinstellungen](../getting-started/notification-preferences.md) die Option **Textnachrichten** aktivieren. Haben Sie noch nicht geantwortet, können Sie direkt in der Erinnerungs-E-Mail **Annehmen** oder **Ablehnen** wählen. Eine Anmeldung ist dafür nicht nötig.
 :::
 
-## Anzeigen von Plandetails
+## Plandetails ansehen
 
-Klicken Sie auf einen Plan in der Liste, um ihn zu öffnen. Die Planseite hat drei Registerkarten:
+Tippen Sie auf einen Plan, um ihn zu öffnen. Die Planseite zeigt oben den Namen des Plans und das Datum des Gottesdienstes, gefolgt von diesen Abschnitten:
 
-- **Übersicht** – Ihre zugewiesene Position mit den erforderlichen Zeiten und Ihrem aktuellen Status, plus alle Notizen, die der Planersteller für das Team hinzugefügt hat. Wenn Sie noch nicht reagiert haben, können Sie direkt aus dieser Ansicht auf **Akzeptieren** oder **Ablehnen** klicken.
-- **Ablauf des Gottesdienstes** – Der vollständige Ablauf mit Zeitpunkt, Elementen und Beschreibungen. Weitere Informationen finden Sie unter [Ablauf des Gottesdienstes](./service-order.md).
-- **Dienst-Teams** – Alle Teamkollegen und ihre Positionen, so dass Sie sehen können, wer neben Ihnen dient.
+- **Ihre Zuweisung** -- Jede Position, die Ihnen in diesem Plan zugewiesen ist, mit ihrem Team, Ihrem Status und den **Gottesdienstzeiten**, zu denen Sie gebraucht werden. Haben Sie noch nicht geantwortet, tippen Sie hier direkt auf **Annehmen** oder **Ablehnen**.
+- **Gottesdienstablauf** -- Die ersten Elemente des Gottesdienstes mit der Anzahl aller Elemente. Tippen Sie auf **Vollständiger Gottesdienstablauf**, um alles zu sehen. Mehr dazu unter [Gottesdienstablauf](./service-order.md).
+- **Dienstteams** -- Wer zusammen mit Ihnen und in welchen Positionen dient, mit Anzahl der Personen und Teams. Tippen Sie auf **Alle Teams**, um jedes Team und seine Mitglieder zu sehen.
+- **Planhinweise** -- Alle Hinweise, die der Ersteller des Plans für das Team hinterlegt hat.
+- **Downloads** -- Dateien, die dem Lektionsinhalt des Plans beigefügt sind, sofern vorhanden.
+
+Tippen Sie oben in der vollständigen Ansicht des Gottesdienstablaufs oder der Teamliste auf **Zurück zu** *Name des Plans*, um zum Plan zurückzukehren.
+
+## Eine angenommene Zuweisung zurückgeben
+
+Kommt etwas dazwischen, nachdem Sie zugesagt haben, können Sie Ihre Zusage auch auf der Planseite zurückziehen:
+
+1. Öffnen Sie den Plan und suchen Sie Ihre Position unter **Ihre Zuweisung**. Dort steht die Markierung **Angenommen**.
+2. Tippen Sie auf den roten Link **Ablehnen** unter der Position.
+3. Eine Rückfrage lautet **Diese Zuweisung ablehnen?** -- „Ihre Teamleitungen werden benachrichtigt, dass Sie diese Position nicht mehr übernehmen können.“
+4. Tippen Sie zur Bestätigung auf **Ablehnen** oder auf **Abbrechen**, um die Zuweisung zu behalten.
+
+Ihr Status wechselt zu **Abgelehnt**. Der Link **Ablehnen** steht nur bis zum Ende Ihrer Gottesdienstzeit zur Verfügung. Danach lässt sich Ihre Zuweisung auf der Planseite nicht mehr ändern.
 
 :::tip
-Wenn Sie mehrere Zuweisungen über verschiedene Pläne verteilt haben, wird die Liste nach Datum sortiert, so dass Ihre bevorstehenden Verpflichtungen zuerst angezeigt werden. Überprüfen Sie regelmäßig, um über Ihren Zeitplan informiert zu bleiben.
+Haben Sie mehrere Zuweisungen in verschiedenen Plänen, ist die Liste nach Datum sortiert, sodass Ihre kommenden Verpflichtungen zuerst erscheinen. Schauen Sie regelmäßig nach, um Ihren Dienstplan im Blick zu behalten.
 :::
 
 ## Lehreransicht für Lektionen
 
-Wenn Ihr Plan damit verbundenen Lehrplan von einem Inhaltsanbieter enthält (z. B. Lessons.church), zeigt die Registerkarte **Ablauf des Gottesdienstes** die Abschnitte der Lektion zur schnellen Überprüfung zusammen mit einer Schaltfläche **Unterrichten** an.
+Wenn Ihr Plan zugehörige Lehrinhalte eines Inhaltsanbieters (etwa Lessons.church) enthält, zeigt der Abschnitt **Gottesdienstablauf** die Abschnitte der Lektion zur schnellen Durchsicht, und oben auf der Planseite erscheint die Schaltfläche **Unterrichten**.
 
-Klicken Sie auf **Unterrichten**, um eine immersive, Vollbildschirm-Lektionspräsentation zu öffnen, die für Lehrer mit formatierten Anweisungen, eingebetteten Medien, Notizen und schrittweiser Anleitung entwickelt wurde. Schließen Sie ihn, um zur Struktur zurückzukehren.
+Tippen Sie auf **Unterrichten**, um eine immersive Vollbildpräsentation der Lektion zu öffnen, die für Lehrkräfte gestaltet ist. Sie enthält formatierte Anleitungen, eingebettete Medien, Notizen und schrittweise Hinweise. Schließen Sie sie, um zum Plan zurückzukehren.
 
-Die Lehransicht organisiert Lektionsinhalte in navigierbare Abschnitte, die oben als Registerkarten angezeigt werden. Sie können:
+Die Ansicht „Unterrichten“ gliedert die Lektionsinhalte in Abschnitte. Sie können:
 
-- Auf einen Abschnitt-Tab tippen, um direkt zu diesem Teil der Lektion zu springen
-- Blättern Sie durch den Lektionsinhalt, und die aktive Registerkarte wird automatisch aktualisiert, um Ihrer Position zu entsprechen
-- Klicken Sie auf Medienelemente (Videos, Bilder, Aktivitäten), um sie in einem Modaldialog anzuzeigen; Audio-Links (Songaufnahmen, Predigt-Clips) werden inline mit einem integrierten Audio-Player abgespielt
-- Siehe Aktionstypen, die unterschiedlich formatiert sind: **Say** wird in Sprechblasen angezeigt, **Do** in Fettdruck und **Note** in hervorgehobenen Callouts
+- oben auf **Abschnitte** tippen, um die Liste der Abschnitte zu sehen und direkt zu jedem Teil der Lektion zu springen
+- durch den Lektionsinhalt scrollen -- die Überschrift zeigt, in welchem Abschnitt Sie sich befinden (zum Beispiel „Abschnitt 2 von 5“)
+- auf Medienelemente (Videos, Bilder, Aktivitäten) tippen, um sie in einem Dialogfenster anzusehen. Audiolinks (Liedaufnahmen, Predigtausschnitte) werden direkt mit einem eingebauten Audioplayer abgespielt.
+- Aktionstypen unterschiedlich dargestellt sehen: **Sagen** erscheint in Sprechblasen, **Tun** in fettem Text und **Hinweis** in hervorgehobenen Kästen
 
 :::tip
-Die Lehransicht ist besonders hilfreich beim Leiten eines Klassenzimmers oder einer Kleingruppe, da sie alle Lektionsinhalte in einem sauberen, ablenkungsfreien Format für Mobile und Tablet optimiert darstellt.
+Die Ansicht „Unterrichten“ ist besonders hilfreich, wenn Sie eine Klasse oder eine Kleingruppe leiten, da sie alle Lektionsinhalte in einem übersichtlichen, ablenkungsfreien Format zeigt, das für Smartphone und Tablet optimiert ist.
 :::

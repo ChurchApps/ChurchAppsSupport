@@ -1,64 +1,46 @@
 ---
-title: "Direktoryo ng Miyembro"
+title: "Member Directory"
 ---
 
-# Direktoryo ng Miyembro
+# Member Directory
 
 <div class="article-intro">
 
-Ang direktoryo ng miyembro ay nagbibigay-daan sa iyo na tuklasin at maghanap ng mga tao sa iyong simbahan. Kung kailangan mo ng paghahanap ng isang kasapi ng grupo o maghanap ng isang bagong tao, ang direktoryo ay ginagawang madali ang pagkonekta sa iyong pamilya ng simbahan.
+Hinahayaan ka ng member directory na mag-browse at maghanap ng mga tao sa iyong simbahan. Kailangan mo mang hanapin ang kapwa miyembro ng group o may hahanapin na bagong kakilala, pinapadali ng directory na makipag-ugnayan sa pamilya ng iyong simbahan.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Dapat ka ay [naka-login](../getting-started/logging-in.md) sa iyong account ng B1.church.
-- Ang direktoryo ay available sa **mga miyembro at kawani** lamang. Ang mga bisita at mga dumalo na hindi pa naging mga miyembro ay makikita ang "Mga Miyembro Lamang" na mensahe sa halip.
+- Dapat ka [naka-log in](../getting-started/logging-in.md) sa iyong B1.church account.
+- Para sa **mga miyembro at staff** lamang available ang directory. Ang mga bisita at dumadalo na hindi pa miyembro ay makakakita ng mensaheng "Members Only" sa halip.
 
 </div>
 
-## Pag-access sa Direktoryo
+## Pag-access sa Directory
 
-1. I-click ang **Komunidad** sa [sidebar navigation](../getting-started/navigating.md).
-2. Ang direktoryo ay nag-load na may isang listahan ng lahat ng nakikitang miyembro ng simbahan sa kaliwang panig ng pahina.
+1. I-tap ang **Community** sa [tab bar o sa More page](../getting-started/navigating.md) (maaaring binigyan ito ng iyong simbahan ng ibang pangalan).
+2. Bubukas ang **Directory** na may bilang ng mga tao at listahan ng lahat ng nakikitang miyembro ng simbahan.
 
 ## Paghahanap ng Mga Miyembro
 
-Ang pahina ay gumagamit ng master-detail layout. Sa kaliwang panig, mayroon kang dalawang paraan upang mahanap ang mga tao:
+I-type ang pangalan sa kahon na **Search Members** sa itaas ng listahan. Nagfi-filter ang listahan habang nagta-type ka, at naka-highlight ang tugmang bahagi ng bawat pangalan. I-clear ang kahon upang makita muli ang buong directory.
 
-### Paghahanap ayon sa Pangalan
+## Pag-browse sa Directory
 
-1. Siguraduhin na ang filter ng **Mga Tao** ay napili sa tuktok ng search area.
-2. Mag-type ng pangalan sa search box.
-3. I-click ang **Maghanap** o pindutin ang **Enter** upang makita ang mga resulta.
+Nakapangkat ang mga miyembro sa ilalim ng mga letter heading (A, B, C, at iba pa) ayon sa unang letra ng kanilang first name, at nakaayos ayon sa last name sa loob ng bawat letra. Ipinapakita ng bawat entry ang larawan, display name, at membership status ng miyembro, kaya madaling i-scan ang listahan.
 
-Kung iiwan mo ang search box na walang laman at i-click ang **Maghanap**, ang buong direktoryo listing ay ipapakita.
+## Pagtingin sa Profile ng Miyembro
 
-### Paghahanap ayon sa Grupo
+I-tap ang sinumang miyembro sa listahan upang buksan ang kanyang profile. Ipinapakita ng profile ang pangalan, larawan, at membership status ng miyembro, kasama ang mga button na **Message** upang makapagpadala ng mensahe, **Call** upang tumawag, o magpadala ng **Text** kapag available ang impormasyong iyon. Sa ibaba nito, ipinapakita ng seksyong **Contact Information** ang mga detalyeng pinili ng simbahan at ng miyembro na ibahagi, gaya ng email, telepono, at address, at inililista ng **Household Members** ang iba pang tao sa kanyang household.
 
-1. I-click ang filter ng **Mga Grupo** sa tuktok ng search area.
-2. Pumili ng isang grupo mula sa dropdown list.
-3. I-click ang **Maghanap** upang makita ang lahat ng miyembro ng grupon na iyon.
-
-:::tip
-Ang paghahanap ayon sa grupo ay isang mabilis na paraan upang mahanap ang isang taong nakilala mo sa isang [pagpupulong ng grupo](../groups/browsing-groups.md) ngunit ang kanyang pangalan ay hindi mo maalala.
-:::
-
-## Pag-browse sa Direktoryo
-
-Ang mga miyembro ay nakalista nang alin-alinsunod sa pangalang pamilya at inorganisa sa ilalim ng mga heading ng titik (A, B, C, at iba pa). Bawat entry ay nagpapakita ng larawan ng miyembro, pangalan ng display, at pangalan ng household, na ginagawang madali ang pag-scan sa listahan.
-
-## Pagtingin ng Profile ng Miyembro
-
-I-click ang anumang miyembro sa listahan upang buksan ang kanilang profile sa panel ng detalye sa kanan. Ang profile ay nagpapakita ng impormasyon ng miyembro tulad ng iyong simbahan ay nag-configure, na maaaring kasama ang mga detalyeng pakikipag-ugnayan, mga miyembro ng household, at mga pagsasabing panggrupo.
-
-Maaari mong i-click ang mga miyembro ng household sa loob ng profile upang mag-navigate sa kanilang mga profile pati na rin.
+Maaari mo ring i-tap ang mga miyembro ng household sa loob ng isang profile upang pumunta sa kanilang mga profile. Sa sarili mong profile, dadalhin ka ng button na **Edit profile** sa [Editing Your Profile](../getting-started/editing-your-profile.md).
 
 :::info
-Ang impormasyon na nakikita sa bawat profile ay nakadepende sa privacy at directory settings ng iyong simbahan. Ang hindi lahat ng mga field ay maaaring ipakita para sa bawat miyembro.
+Nakadepende ang impormasyong nakikita sa bawat profile sa privacy at mga setting ng directory ng iyong simbahan. Hindi lahat ng field ay maaaring ipakita para sa bawat miyembro.
 :::
 
 :::info
-Ang mga miyembro sa ilalim ng [minimum age para sa mga pribadong mensahe](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) ng iyong simbahan ay nananatiling nakikita sa direktoryo, ngunit ang opsyon upang magpadala sa kanila ng pribadong mensahe ay hindi available.
+Nananatiling nakikita sa directory ang mga miyembrong nasa ilalim ng [minimum age para sa private messages](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) ng iyong simbahan, ngunit hindi available ang opsyong magpadala sa kanila ng pribadong mensahe.
 :::

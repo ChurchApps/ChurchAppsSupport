@@ -21,7 +21,7 @@ Browse available volunteer positions and sign up for upcoming services directly 
 ## Browsing Volunteer Opportunities
 
 1. Open the **Volunteer** section from the app navigation.
-2. A list of upcoming service plans with open positions appears.
+2. A list of upcoming service plans with open positions appears. If your church shows only the next week of each plan type, later weeks appear once the current one has passed.
 3. Each plan card shows:
    - **Plan name** and **service date**
    - **Overall progress bar** showing total spots filled

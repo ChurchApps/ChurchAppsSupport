@@ -6,53 +6,54 @@ title: "Spendenverlauf"
 
 <div class="article-intro">
 
-Wenn Sie angemeldet sind, können Sie eine vollständige Aufzeichnung Ihrer bisherigen Spenden anzeigen und Spendenerklärungen für Steuerzwecke erstellen. Ihr Spendenverlauf ist über den Bereich **Spenden** Ihres B1.church-Kontos verfügbar.
+Wenn Sie angemeldet sind, können Sie eine vollständige Übersicht Ihrer bisherigen Spenden einsehen und für steuerliche Zwecke Spendenbescheinigungen erstellen. Ihr Spendenverlauf ist auf der Seite **Spenden** im Mitgliederportal verfügbar.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie müssen in Ihr B1.church-Konto [angemeldet sein](../getting-started/logging-in.md).
-- Sie müssen mindestens eine Spende gemacht haben. Weitere Informationen finden Sie unter [Spende tätigen](./making-donations.md).
+- Sie müssen [in Ihrem B1.church-Konto angemeldet](../getting-started/logging-in.md) sein.
+- Sie müssen mindestens eine Spende getätigt haben. Eine Anleitung dazu finden Sie unter [Eine Spende tätigen](./making-donations.md).
 
 </div>
 
-## Verlauf anzeigen
+## Ihren Verlauf anzeigen
 
 1. Melden Sie sich bei Ihrem B1.church-Konto an.
-2. Navigieren Sie zum Bereich **Spenden**.
-3. Klicken Sie auf die Registerkarte **Verlauf**, um Ihre bisherigen Spenden anzuzeigen.
+2. Öffnen Sie die Seite **Spenden** (der Reiter **Spenden** Ihrer Gemeinde) oder tippen Sie im Abschnitt **Spenden** auf Ihrer [Startseite](../getting-started/navigating.md#home) auf **Verlauf**.
+3. Tippen Sie auf **Gesamter Verlauf**, um Ihre bisherigen Spenden zu sehen. (Der Link **Verlauf** auf der Startseite öffnet diese Ansicht direkt.)
 
-Oben zeigt eine Karte **Spenden** Ihre Gesamtsumme für einen wählbaren Zeitraum – **Seit Jahresbeginn**, **Letzte 30 Tage**, **Letzte 90 Tage** oder **Gesamte Zeit** – wählen Sie einen aus der Dropdown-Liste. Wenn Spenden in diesem Zeitraum in mehr als einer Währung gegeben wurden, wird die Summe in Ihre Kirchenwährung umgerechnet und ein Hinweis **Umgerechnet zu aktuellen Wechselkursen** wird darunter angezeigt.
+Oben wählen Sie ein Jahr (oder **Alle**), um Ihre Summe für diesen Zeitraum zu sehen, die Anzahl der enthaltenen Gaben und wie viele davon noch ausstehen. Wurden Spenden in diesem Zeitraum in mehr als einer Währung gegeben, wird die Summe in die Währung Ihrer Gemeinde umgerechnet, und darunter erscheint der Hinweis **Umgerechnet zu aktuellen Wechselkursen**.
 
-Unter der Gesamtsumme wird Ihre aktuelle Aktivität mit aufgelistet:
+Unterhalb der Summe sind Ihre Spenden nach Monat gruppiert. Jede Spende zeigt:
 
-- **Datum** – Wann die Spende gemacht wurde.
-- **Methode** – Wie Sie gezahlt haben (z. B. „Karte – Visa" oder „Bank – ACH").
-- **Fonds** – In welchen Fonds die Spende geleitet wurde (z. B. Allgemeiner Fonds, Baufonds).
-- **Betrag** – Der Betrag der Spende in der Währung, in der sie gegeben wurde.
+- **Fonds** -- Der Fonds, für den die Spende bestimmt war (zum Beispiel Allgemeiner Fonds, Gebäudefonds).
+- **Datum** und **Methode** -- Wann die Spende getätigt wurde und wie Sie bezahlt haben (zum Beispiel „Karte - Visa“ oder „Bank - ACH“).
+- **Betrag** -- Der Betrag der Spende in der Währung, in der sie gegeben wurde.
 
 :::info
-Spenden, die noch verarbeitet werden, werden mit einer Bezeichnung „Ausstehend" neben dem Fondsname angezeigt und der Betrag wird in einer anderen Farbe angezeigt.
+Spenden, die noch verarbeitet werden, zeigen unter dem Betrag die Markierung **Ausstehend**.
 :::
 
-## Exportieren und Drucken von Auszügen
+Tippen Sie auf **Zurück zu Spenden**, um zur Seite Spenden zurückzukehren.
 
-Klicken Sie über der Liste der aktuellen Aktivität auf **Auszug drucken**, um einen druckbaren Spendenerklärung für das aktuelle Kalenderjahr in einem neuen Tab zu öffnen.
+## Spendenbescheinigungen exportieren und drucken
+
+Tippen Sie oben auf der Seite Spenden auf **Bescheinigung drucken**, um eine druckbare Spendenbescheinigung für das laufende Kalenderjahr in einem neuen Tab zu öffnen. Um ein anderes Jahr zu drucken, öffnen Sie **Gesamter Verlauf**, wählen das Jahr aus und tippen neben der Summe auf **Bescheinigung drucken**.
 
 :::tip
-Drucken Sie Ihren Auszug früh im neuen Jahr aus, bevor Sie ihn für die Steuererklärung benötigen, während die Spenden des letzten Jahres noch frisch in Ihrem Verlauf sind.
+Drucken Sie Ihre Bescheinigung früh im neuen Jahr aus, bevor Sie sie für die Steuererklärung benötigen, solange die Spenden des Vorjahres in Ihrem Verlauf noch gut verfügbar sind.
 :::
 
 ## Wiederkehrende Spenden
 
-Wenn Sie geplante Geschenke haben, listet ein Bereich **Wiederkehrend** auf der Registerkarte Verlauf jeden mit seinem Betrag, Intervall und der Zahlungsmethode auf.
+Wenn Sie terminierte Gaben haben, listet der Abschnitt **Wiederkehrend** auf der Seite Spenden jede mit Betrag, Fonds, Intervall und Zahlungsmethode auf. Tippen Sie auf **Verwalten**, um **Wiederkehrende Gaben und Zahlungsmethoden** zu öffnen, und dort können Sie sie ändern.
 
-Wenn eine wiederkehrende Spende über **Stripe** abgerechnet wird, können Sie sie **pausieren**, anstatt sie zu stornieren – klicken Sie auf das Pausensymbol neben der Spende und bestätigen Sie. Die Spenden werden gestoppt, bis Sie auf das gleiche Symbol klicken, um **fortzufahren**; eine pausierte Spende ist in der Liste als **Pausiert** gekennzeichnet. Wiederkehrende Spenden über andere Zahlungsanbieter können immer noch bearbeitet oder storniert werden, aber nicht pausiert.
+Wird eine wiederkehrende Spende über **Stripe** abgebucht, können Sie sie **pausieren**, statt sie zu beenden. Klicken Sie dazu neben der Spende auf das Pausensymbol und bestätigen Sie. Bis Sie auf dasselbe Symbol klicken, um **fortzusetzen**, werden keine Gaben mehr abgebucht. Eine pausierte Spende ist in der Liste mit **Pausiert** gekennzeichnet. Wiederkehrende Spenden über andere Zahlungsanbieter können weiterhin bearbeitet oder beendet, aber nicht pausiert werden.
 
-Um Ihre gespeicherten Zahlungsmethoden hinzuzufügen, zu entfernen oder zu ändern, verwenden Sie die Registerkarte **Verwalten**.
+Um Ihre gespeicherten Zahlungsmethoden hinzuzufügen, zu entfernen oder zu ändern, tippen Sie im Abschnitt **Zahlungsmethoden** auf **Verwalten**.
 
 ## Nächste Schritte
 
-- [Spende tätigen](./making-donations.md) – Erfahren Sie, wie Sie ein einmalige oder wiederkehrende Spende tätigen
+- [Eine Spende tätigen](./making-donations.md) -- So geben Sie eine einmalige oder wiederkehrende Gabe

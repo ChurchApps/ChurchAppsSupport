@@ -1,58 +1,59 @@
 ---
-title: "Kasaysayan ng Donation"
+title: "Kasaysayan ng Donasyon"
 ---
 
-# Kasaysayan ng Donation
+# Kasaysayan ng Donasyon
 
 <div class="article-intro">
 
-Kapag ikaw ay naka-log in, maaari mong tingnan ang isang kumpletong tala ng iyong nakaraang mga donation at lumikha ng mga pahayag ng pagbibigay para sa layuning buwis. Ang iyong kasaysayan ng donation ay available mula sa seksyon ng **Magbigay** ng iyong B1.church account.
+Kapag naka-log in ka, maaari mong tingnan ang kumpletong talaan ng iyong mga nakaraang donasyon at gumawa ng mga giving statement para sa buwis. Makukuha ang iyong kasaysayan ng donasyon mula sa pahinang **Giving** ng member portal.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Dapat kang maging [naka-log in](../getting-started/logging-in.md) sa iyong B1.church account.
-- Kailangan mong gumawa ng hindi bababa sa isang donation. Tingnan ang [Paggawa ng Donation](./making-donations.md) upang magsimula.
+- Dapat ka [naka-log in](../getting-started/logging-in.md) sa iyong B1.church account.
+- Kailangan mong nakapagbigay ng kahit isang donasyon. Tingnan ang [Making a Donation](./making-donations.md) upang magsimula.
 
 </div>
 
 ## Pagtingin sa Iyong Kasaysayan
 
 1. Mag-log in sa iyong B1.church account.
-2. Mag-navigate sa seksyon ng **Magbibigay**.
-3. I-click ang tab ng **Kasaysayan** upang tingnan ang iyong nakaraang mga donation.
+2. Buksan ang pahinang **Giving** (ang tab na **Donate** ng iyong simbahan), o i-tap ang **History** sa seksyong **Giving** ng iyong [Home dashboard](../getting-started/navigating.md#home).
+3. I-tap ang **All history** upang tingnan ang iyong mga nakaraang donasyon. (Dinadala ka ng link na **History** sa Home nang direkta sa view na ito.)
 
-Sa tuktok, isang **Pagbibigay** card ay nagpapakita ng iyong kabuuan para sa isang mapagpipiliang panahon -- **Taon hanggang Ngayon**, **Nakaraang 30 Araw**, **Nakaraang 90 Araw**, o **Lahat ng Oras** -- pumili ng isa mula sa dropdown. Kung ang mga donation sa panahong iyon ay ibinigay sa higit sa isang pera, ang kabuuan ay na-convert sa pera ng iyong simbahan at isang **Na-convert sa kasalukuyang rate ng palitan** na nota ay lilitaw sa ibaba.
+Sa itaas, pumili ng taon (o **All**) upang makita ang kabuuan para sa panahong iyon, kung ilang regalo ang kasama nito, at kung ilan pa ang nakabinbin. Kung ang mga donasyon sa panahong iyon ay ibinigay sa higit sa isang currency, ico-convert ang kabuuan sa currency ng iyong simbahan at lilitaw sa ilalim ang tala na **Converted at current exchange rates**.
 
-Sa ibaba ng kabuuan, ang iyong kamakailang aktibidad ay nakalista na may:
+Sa ilalim ng kabuuan, nakapangkat ayon sa buwan ang iyong mga donasyon, at bawat isa ay nagpapakita ng:
 
-- **Petsa** -- Kailan ang donation ay ginawa.
-- **Paraan** -- Paano ka nagbayad (halimbawa, "Card - Visa" o "Bank - ACH").
-- **Pondo** -- Aling pondo ang donation ay idirekta (halimbawa, General Fund, Building Fund).
-- **Halaga** -- Ang halaga ng donation, sa pera na ito ay ibinigay.
+- **Fund** -- Kung aling fund ang pinuntahan ng donasyon (halimbawa, General Fund, Building Fund).
+- **Date** at **Method** -- Kailan ginawa ang donasyon at paano ka nagbayad (halimbawa, "Card - Visa" o "Bank - ACH").
+- **Amount** -- Ang halaga ng donasyon, sa currency kung saan ito ibinigay.
 
 :::info
-Ang mga donation na pa rin na ginagamit ay lumilitaw na may "Pending" na label sa tabi ng pangalan ng pondo at ang halaga ay ipinakita sa ibang kulay.
+Ang mga donasyong pinoproseso pa ay nagpapakita ng badge na **Pending** sa ilalim ng halaga.
 :::
 
-## Pag-export at Pag-print ng mga Pahayag
+I-tap ang **Back to Giving** upang bumalik sa pahina ng Giving.
 
-I-click ang **I-print ang Pahayag** sa itaas ng kamakailang listahan ng aktibidad upang magbukas ng isang printable na pagbibigay na pahayag na sumasaklaw sa kasalukuyang taong kalendaryo sa isang bagong tab.
+## Pag-export at Pag-print ng Mga Statement
+
+I-tap ang **Print Statement** sa itaas ng pahina ng Giving upang magbukas ng printable na giving statement para sa kasalukuyang taon ng kalendaryo sa bagong tab. Upang mag-print ng ibang taon, buksan ang **All history**, pumili ng taong iyon, at i-tap ang **Print Statement** sa tabi ng kabuuan.
 
 :::tip
-I-print ang iyong pahayag nang maaga sa bagong taon, bago mo ito kailangan para sa pag-file ng buwis, habang ang nakaraang taon ng mga donation ay pa rin na sariwang sa iyong kasaysayan.
+I-print ang iyong statement nang maaga sa bagong taon, bago mo ito kailanganin sa pag-file ng buwis, habang sariwa pa ang mga donasyon ng nakaraang taon sa iyong kasaysayan.
 :::
 
-## Mga Pang-regular na Donation
+## Mga Paulit-ulit na Donasyon
 
-Kung mayroon kang anumang mga naka-schedule na regalo, isang seksyon ng **Pang-regular na** sa tab ng Kasaysayan ay naglalista ng bawat isa na may halaga, agwat, at paraan ng pagbabayad.
+Kung may nakaiskedyul kang regalo, nakalista sa seksyong **Recurring** ng pahina ng Giving ang bawat isa kasama ang halaga, fund, interval, at paraan ng pagbabayad. I-tap ang **Manage** upang buksan ang **Recurring gifts and payment methods**, kung saan maaari mo itong baguhin.
 
-Kung ang isang pang-regular na donation ay na-charge sa pamamagian ng **Stripe**, maaari kang **i-pause** ito sa halip na i-cancel -- i-click ang pause icon sa tabi ng donation at kumpirmahin. Ang pagbibigay ay humihinto hanggang sa i-click mo ang parehong icon upang **muling magsimula**; ang isang naka-pause na donation ay markado **I-pause** sa listahan. Ang mga pang-regular na donation sa pamamagian ng ibang mga provider ng pagbabayad ay maaaring pa rin na i-edit o i-cancel, ngunit hindi i-pause.
+Kung ang isang paulit-ulit na donasyon ay sinisingil sa pamamagitan ng **Stripe**, maaari mo itong **i-pause** sa halip na kanselahin -- i-click ang pause icon sa tabi ng donasyon at kumpirmahin. Titigil ang pagbibigay hanggang i-click mong muli ang parehong icon upang **i-resume**; ang donasyong naka-pause ay minamarkahang **Paused** sa listahan. Ang mga paulit-ulit na donasyon sa iba pang payment provider ay maaari pa ring i-edit o kanselahin, ngunit hindi i-pause.
 
-Upang magdagdag, alisin, o baguhin ang iyong mga nakaligtas na paraan ng pagbabayad, gamitin ang tab ng **Pamahalaan**.
+Upang magdagdag, magtanggal, o magbago ng iyong naka-save na payment method, i-tap ang **Manage** sa seksyong **Payment methods**.
 
-## Susunod na Mga Hakbang
+## Mga Susunod na Hakbang
 
-- [Paggawa ng Donation](./making-donations.md) -- Matuto kung paano gumawa ng isang one-time o pang-regular na regalo
+- [Making a Donation](./making-donations.md) -- Alamin kung paano gumawa ng isang beses o paulit-ulit na regalo

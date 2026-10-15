@@ -12,9 +12,9 @@ Notification preferences let you decide which notifications you receive from you
 
 ## Opening Your Preferences
 
-1. Go to the **Me** page and tap **Notification Preferences** under **Shortcuts**.
+1. Go to the **Me** page and tap **Settings** under your name.
 
-You can also tap the bell icon, open the **Notifications** tab, tap **View all notifications**, and then tap **Notification Preferences** on that page.
+You can also tap the bell icon, tap **See all** to open your inbox, and then tap **Notification Preferences** at the top of that page.
 
 ## Global Controls
 

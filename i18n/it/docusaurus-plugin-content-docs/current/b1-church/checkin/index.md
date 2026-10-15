@@ -1,27 +1,28 @@
 ---
-title: "Check-In"
+title: "Check-in"
 ---
 
-# Check-In
+# Check-in
 
 <div class="article-intro">
 
-La funzionalità **Check-In** in B1.church ti permette di effettuare il check-in per te stesso e per i membri della tua famiglia per i servizi della chiesa direttamente dal portale membri. È un modo comodo per registrare la tua presenza senza dover visitare un chiosco fisico per il check-in.
+La funzione **Check-in** in B1.church ti permette di registrare il tuo check-in e quello dei membri del tuo nucleo familiare ai culti direttamente dal portale dei membri. È un modo comodo per registrare le tue presenze senza doverti recare a un kiosk di check-in fisico.
 
 </div>
 
-## Come Funziona
+## Come funziona
 
-Quando usi il self check-in, selezioni un servizio, scegli quali membri della famiglia stanno partecipando e assegni ogni persona al gruppo appropriato per ogni orario del servizio. Una volta confermato, la tua presenza viene registrata automaticamente.
+Quando usi il self check-in, selezioni un culto, scegli quali membri del nucleo familiare partecipano e assegni ciascuna persona al gruppo appropriato per ogni orario di culto. Una volta confermato, la tua presenza viene registrata automaticamente.
 
-## Per Iniziare
+## Per iniziare
 
-Per accedere al check-in, clicca **Check-In** nella [navigazione della barra laterale](../getting-started/navigating.md) del tuo portale membri. Devi aver [effettuato l'accesso](../getting-started/logging-in.md) per usare questa funzionalità -- se non hai effettuato l'accesso, ti verrà chiesto di accedere prima.
+Per accedere al check-in, tocca **Check-in** nella [barra delle schede o nella pagina Altro](../getting-started/navigating.md) del tuo portale dei membri. Devi essere [connesso](../getting-started/logging-in.md) per usare questa funzione -- se non hai effettuato l'accesso, ti verrà chiesto di farlo prima.
 
 :::info
-La funzionalità di check-in richiede che la tua chiesa abbia configurato servizi e gruppi di presenza nelle impostazioni di amministrazione. Se nessun servizio è disponibile quando apri la pagina di check-in, la tua chiesa potrebbe non aver configurato ancora questa funzionalità. Contatta l'amministratore della tua chiesa per assistenza.
+La funzione di check-in richiede che la tua chiesa abbia configurato culti e gruppi di presenza nelle impostazioni di amministrazione. Se quando apri la pagina di check-in non è disponibile nessun culto, la tua chiesa potrebbe non avere ancora configurato questa funzione. Contatta l'amministratore della tua chiesa per assistenza.
 :::
 
-## Prossimi Passi
+## Passaggi successivi
 
-- [Self Check-In](./self-checkin.md) -- Guida passo passo per effettuare il check-in della tua famiglia per un servizio.
+- [Self check-in](./self-checkin.md) -- Guida passo-passo per registrare il check-in del tuo nucleo familiare a un culto.
+- [Registrazione ospiti](./guest-registration.md) -- Registrati come visitatore ospite e registra i tuoi familiari.

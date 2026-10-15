@@ -1,77 +1,77 @@
 ---
-title: "Volunteer Sign-up"
+title: "Volunteer Signup"
 ---
 
-# Volunteer Sign-up
+# Volunteer Signup
 
 <div class="article-intro">
 
-Mag-browse ng available na volunteer na mga posisyon at mag-sign up ng iyong sarili para sa mga darating na serbisyo nang direkta mula sa B1.church. Ang mga posisyon ay inorganisa ayon sa kategorya upang mabilis mong mahanap kung saan kailangan ng tulong at sumali sa isang koponan.
+Mag-browse ng mga available na posisyon sa pagboboluntaryo at isali ang sarili mo sa mga paparating na serbisyo nang direkta mula sa B1.church. Nakaayos ang mga posisyon ayon sa kategorya para mabilis mong makita kung saan kailangan ng tulong at makasali sa isang team.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Isang B1.church account -- dapat ka nang logged in upang mag-sign up
-- Ang iyong administrator ng simbahan ay dapat na nag-enable ng self-signup sa hindi bababa sa isang posisyon
+- Isang B1.church account -- kailangan mong naka-log in upang mag-sign up
+- Dapat na naka-enable ng administrator ng iyong simbahan ang self-signup sa kahit isang posisyon
 
 </div>
 
 ## Pag-browse ng Mga Available na Posisyon
 
-1. Pumunta sa **Volunteer** page sa website ng iyong simbahan sa B1.church.
-2. Makikita mo ang isang listahan ng mga darating na mga serbisyo ng plano na may bukas na volunteer na mga posisyon.
-3. Bawat plano ay nagpapakita ng **plan name**, **service date**, at **service times**.
+1. Pumunta sa pahinang **Volunteer** sa website ng iyong simbahan sa B1.church.
+2. Makikita mo ang listahan ng mga paparating na service plan na may bukas na posisyon sa pagboboluntaryo. Sa loob ng bawat plano, nakalista ang mga posisyon ayon sa kategorya at pagkatapos ayon sa pangalan. Kung ipinapakita lamang ng iyong simbahan ang susunod na linggo ng bawat plan type, lilitaw ang mga susunod na linggo kapag lumipas na ang kasalukuyan.
+3. Ipinapakita ng bawat plano ang **pangalan ng plano**, **petsa ng serbisyo**, at **service times**.
 
-Ang mga posisyon ay nakagrupo ayon sa kategorya (halimbawa, "Band", "Hospitality", "Kids Ministry"). Bawat posisyon ay nagpapakita ng:
+Nakapangkat ang mga posisyon ayon sa kategorya (halimbawa, "Band", "Hospitality", "Kids Ministry"). Ipinapakita ng bawat posisyon ang:
 
-- **Position name** -- Ang tungkulin na iyong papupunan (hal., "Drummer", "Greeter", "Coffee Server").
-- **Description** -- Mga detalye tungkol sa tungkulin, kung itinayong ng administrator.
-- **Available spots** -- Isang progress bar na nagpapakita kung gaano karaming mga slot ay napuno at gaano karaming nananatili.
-- **Who has signed up** -- Kung binuksan ng simbahan ninyo ang **Show volunteer names on signup page** para sa plano, ililista ng linyang "Signed up:" ang mga pangalan ng mga taong naglilingkod na sa posisyong iyon. Ipinapakita lamang ang mga pangalan kapag naka-sign in kayo.
+- **Position name** -- Ang papel na pupunan mo (hal., "Drummer", "Greeter", "Coffee Server").
+- **Description** -- Mga detalye tungkol sa papel, kung ibinigay ng administrator.
+- **Available spots** -- Isang progress bar na nagpapakita kung ilang puwesto ang napunan at ilan pa ang natitira.
+- **Who has signed up** -- Kung in-on ng iyong simbahan ang **Show volunteer names on signup page** para sa plano, lalabas ang linyang "Signed up:" na naglilista ng mga pangalan ng mga taong naglilingkod na sa posisyong iyon. Ipinapakita lamang ang mga pangalan kapag naka-sign in ka.
 
 ## Pag-sign Up
 
-1. Hanapin ang isang posisyon na gusto mong volunteering para.
-2. I-click ang **Sign Up** na pindot sa tabi ng posisyon.
-3. Isang mensaheng pagkakumpirma ay lumilitaw: "You're signed up! Thank you for volunteering."
-4. Ang posisyon ay nagpapakita ng isang berdeng indicator na nagkumpirma na ikaw ay nag-sign up.
+1. Hanapin ang posisyong nais mong pagboluntaryuhan.
+2. I-click ang button na **Sign Up** sa tabi ng posisyon.
+3. Lalabas ang mensaheng kumpirmasyon: "You're signed up! Thank you for volunteering."
+4. Ipapakita na ngayon ng posisyon ang berdeng indicator na nagkukumpirmang naka-sign up ka na.
 
 :::info
-Dapat ka nang logged in upang mag-sign up. Kung hindi ka naka-log in, mamimili ka na mag-log in muna.
+Kailangan mong naka-log in upang mag-sign up. Kung hindi ka naka-log in, hihilingin sa iyong mag-log in muna.
 :::
 
-## Pag-aalis ng isang Sign-up
+## Pag-alis ng Signup
 
-Kung nabago ang iyong mga plano at hindi ka na makakaserbisyo:
+Kung magbago ang iyong mga plano at hindi ka na makapaglingkod:
 
-1. Hanapin ang posisyon na iyong nag-sign up para sa -- ito ay magpapakita ng isang berdeng "You're signed up" na indicator.
-2. I-click ang **Remove** na pindot.
-3. Kumpirmahin na nais mong tanggalin ang iyong sarili mula sa posisyon.
-4. Isang mensahe ay nagkumpirma: "You have been removed from this position."
+1. Hanapin ang posisyong kung saan ka naka-sign up -- magpapakita ito ng berdeng indicator na "You're signed up".
+2. I-click ang button na **Remove**.
+3. Kumpirmahin na gusto mong alisin ang sarili mo sa posisyon.
+4. Kinukumpirma ng mensahe: "You have been removed from this position."
 
 ## Mga Deadline
 
-Ang iyong administrator ng simbahan ay maaaring magtakda ng isang sign-up deadline para sa bawat plano. Ang deadline ay isang itinakdang bilang ng oras bago ang petsa ng serbisyo. Kapag lumipas ang deadline:
+Maaaring magtakda ang administrator ng iyong simbahan ng deadline sa signup para sa bawat plano. Ang deadline ay isang nakatakdang bilang ng oras bago ang petsa ng serbisyo. Kapag lumipas na ang deadline:
 
-- Hindi ka makakasign up para sa mga bagong posisyon.
-- Hindi mo maaalis ang mga umiiral na sign-up.
-- Isang mensahe sa tuktok ng plano ay nagsasaad na ang sign-up deadline ay lumipas na.
+- Hindi ka na makakapag-sign up para sa mga bagong posisyon.
+- Hindi mo na maaalis ang mga umiiral mong signup.
+- May mensahe sa itaas ng plano na nagsasabing lumipas na ang deadline ng signup.
 
 ## Kapasidad ng Posisyon
 
-Bawat posisyon ay may limitadong bilang ng mga lugar. Kapag napuno ang lahat ng mga lugar:
+Ang bawat posisyon ay may limitadong bilang ng puwesto. Kapag napuno na ang lahat ng puwesto:
 
-- Ang posisyon ay nagpapakita bilang **Full**.
-- Ang sign-up na pindot ay hindi pinagana.
-- Kung ang may tao ay tanggalin ang kanilang sign-up, ang lugar ay muling bukas.
+- Ipapakita ng posisyon na **Full**.
+- Made-disable ang signup button.
+- Kung may magtanggal ng kanyang signup, muling magbubukas ang puwesto.
 
 :::tip
-Tuklasin ang pahina ng volunteer nang regular, lalo na sa simula ng linggo. Ang mga popular na posisyon ay mabilis na napupuno, kaya ang pag-sign up nang maaga ay nagbibigay sa iyo ng pinakamahusay na pagpipilian.
+Regular na bisitahin ang volunteer page, lalo na sa simula ng linggo. Mabilis mapuno ang mga popular na posisyon, kaya ang maagang pag-sign up ang nagbibigay sa iyo ng pinakamagandang pagpipilian.
 :::
 
 ## Mga Kaugnay na Artikulo
 
-- [Serving Overview](./index.md) -- Pangkalahatang pagtingin ng mga feature ng paglilingkod sa B1.church
-- [Viewing Plans](../plans/viewing-plans) -- Tuklasin ang iyong mga assigned na mga plano at mga order ng serbisyo
+- [Serving Overview](./index.md) -- Pangkalahatang-ideya ng mga feature ng serving sa B1.church
+- [Viewing Plans](../plans/viewing-plans) -- Tingnan ang iyong mga naka-assign na plano at order of service

@@ -6,49 +6,49 @@ title: "Panoramica di B1 Admin"
 
 <div class="article-intro">
 
-B1 Admin è il tuo dashboard di gestione della chiesa. Fornisce strumenti per gestire ogni aspetto delle operazioni della tua chiesa -- dalle directory dei membri e dalle donazioni alla creazione di siti web e alla trasmissione in diretta -- il tutto da un unico posto.
+B1 Admin è la tua dashboard per la gestione della chiesa. Offre strumenti per gestire ogni aspetto delle attività della chiesa -- dagli elenchi dei membri alle donazioni, dalla creazione del sito web alla trasmissione in streaming -- tutto da un unico punto.
 
 </div>
 
-## Primi Passi
+## Per iniziare
 
-1. Apri il tuo browser e vai a [admin.b1.church](https://admin.b1.church)
-2. Accedi con il tuo nome utente e password
-3. Arriverai al **Dashboard**, la tua home page. Mostra l'ordine dei servizi di questa settimana, chi ha eseguito il check-in e sta servendo in tempo reale, eventuali elementi che necessitano della tua attenzione (come approvazioni in sospeso o richieste di adesione), le tue attività aperte e i tuoi gruppi
-
-:::tip
-Nuovo a B1 Admin? Inizia con l'[Introduzione](./introduction) per una procedura video, quindi visita [Impostazioni](./settings/) per configurare le informazioni della tua chiesa e invitare il tuo team.
-:::
-
-## Il Tuo Dashboard
-
-Il Dashboard è la tua home page di B1 Admin (`/`). È costruito intorno al servizio settimanale della tua chiesa:
-
-- **Servizio di questa settimana** -- il nome del piano corrente o imminente e l'ordine del servizio, con un collegamento al piano completo
-- **Stato in diretta** -- una volta che le persone iniziano a fare il check-in di domenica, la pagina mostra quanti sono nella stanza, chi sta servendo in questa ora, ospiti al primo accesso e un'analisi stanza per stanza con barre di capacità
-- **Ha Bisogno di Attenzione** -- approvazioni in sospeso e richieste di adesione al gruppo che richiedono azione
-- **Le Mie Attività** e **I Miei Gruppi** -- le tue attività aperte (aggiungine una con **Aggiungi attività**, oppure fai clic su **Tutte le attività** per l'elenco completo) e i gruppi a cui appartieni
+1. Apri il browser e vai su [admin.b1.church](https://admin.b1.church)
+2. Accedi con il tuo nome utente e la tua password
+3. Atterrerai sulla **Dashboard**, la tua pagina iniziale. Mostra l'ordine di culto della settimana, chi si è registrato e sta servendo in tempo reale, cosa richiede la tua attenzione (come approvazioni in sospeso o richieste di adesione), le tue attività aperte e i tuoi gruppi
 
 :::tip
-Ogni sezione, inclusi Sermoni, Calendari, Mobile e Impostazioni, si trova nel [menu Jump](./introduction.md#getting-around-with-the-jump-menu) in alto a sinistra di B1 Admin. Fai clic su di esso o premi **Ctrl+K** (o **Cmd+K**), quindi naviga o inizia a digitare.
+Se non conosci ancora B1 Admin, inizia con l'[Introduzione](./introduction) per una guida video, poi visita le [Impostazioni](./settings/) per configurare i dati della chiesa e invitare il tuo team.
 :::
 
-## Funzionalità Chiave
+## La tua Dashboard
 
-- **[Persone](./people/)** - Gestisci la directory della tua chiesa, aggiungi membri, modifica in massa i dati e sfoglia per nucleo familiare o come tabella ordinabile. Ogni persona si apre su un'unica pagina dei dettagli con le informazioni a sinistra e i riepiloghi di frequenza, donazioni, gruppi, note e moduli accanto
-- **[Gruppi](./groups/)** - Crea e organizza i gruppi della chiesa con richieste di adesione, gestione dei membri, email di gruppo, messaggi di testo personalizzati per il gruppo ed elenchi di contatti stampabili. Ogni gruppo si apre su un'unica pagina con le sue azioni a sinistra e i riepiloghi di membri, sessioni, calendario e salute accanto
-- **[Frequenza](./attendance/)** - Configura campus, orari dei servizi, traccia la frequenza nominativa con fogli di registrazione di classe stampabili, vedi quali classi hanno ancora bisogno che la frequenza sia inserita, registra semplici conteggi con report di tendenza, e assegna a ogni orario di servizio una pianificazione del check-in in modo che il self check-in si apra e chiuda automaticamente
-- **[Donazioni](./donations/)** - Registra le donazioni in più valute, gestisci i fondi, registra un singolo dono dal record di una persona, stampa batch (uno alla volta o tutti i batch di un intervallo di date) con subtotali dei fondi, genera rendiconti stampati con il logo della tua chiesa
-- **[Servizio](./serving/)** - Coordina i volontari, crea piani di servizio (o copiane uno in avanti ogni settimana per fino a 12 settimane), invia promemoria via push, email o SMS, invia un SMS a tutti i programmati con **Invia SMS ai volontari**, gestisci attività e sposta le persone attraverso flussi di lavoro passo dopo passo che possono inviare email e messaggi di testo automaticamente
-- **[Moduli](./forms/)** - Crea moduli personalizzati per registrazioni e raccolta dati
-- **[Report](./reports/)** - Visualizza report di compleanni, frequenza e donazioni
-- **[Sito Web](./website/)** - Crea e gestisci il sito web della tua chiesa con stili di navigazione personalizzati, traccia le visite al tuo sito e alla tua app B1 con il tuo ID GA4, oppure disattiva il sito pubblico e mantieni solo il portale dei membri
-- **[Sermoni](./sermons/)** - Gestisci la tua libreria di sermoni, la trasmissione in diretta e un feed podcast automatico
-- **[Calendari](./calendars/)** - Crea calendari curati, gestisci prenotazioni di stanze/risorse e visualizza la disponibilità
-- **[Impostazioni](./settings/)** - Configura tutto da un'unica pagina scorrevole con un elenco di accesso rapido: informazioni della chiesa, regione, formato della data e del numero di telefono, messaggistica di testo, ruoli, autorizzazioni e campi persona personalizzati
+La Dashboard è la pagina iniziale di B1 Admin (`/`). È costruita attorno al culto settimanale della tua chiesa:
+
+- **Il culto di questa settimana** -- il nome e l'ordine di culto del piano corrente o imminente, con un collegamento al piano completo
+- **Stato in tempo reale** -- quando le persone iniziano a registrarsi la domenica, la pagina mostra quante sono in sala, chi sta servendo in questo momento, i primi ospiti e una suddivisione per sala con barre di capienza
+- **Richiede attenzione** -- approvazioni in sospeso e richieste di adesione ai gruppi che richiedono un'azione
+- **Le mie attività** e **I miei gruppi** -- le tue attività aperte (aggiungine una con **Aggiungi attività**, oppure fai clic su **Tutte le attività** per l'elenco completo) e i gruppi a cui appartieni
+
+:::tip
+Ogni sezione, comprese Sermoni, Calendari, Mobile e Impostazioni, è nel [menu Jump](./introduction.md#getting-around-with-the-jump-menu) in alto a sinistra di B1 Admin. Fai clic su di esso oppure premi **Ctrl+K** (o **Cmd+K**), poi sfoglia o inizia a digitare.
+:::
+
+## Funzionalità principali
+
+- **[Persone](./people/)** - Gestisci la rubrica della chiesa, aggiungi membri, modifica i dati in blocco e sfoglia per nucleo familiare o come tabella ordinabile. Ogni persona si apre in un'unica scheda con i suoi dati a sinistra e i riepiloghi di presenze, offerte, gruppi, note e moduli accanto
+- **[Gruppi](./groups/)** - Crea e organizza i gruppi della chiesa con richieste di adesione, gestione dei membri, email di gruppo, messaggi di testo personalizzati per gruppo ed elenchi di contatti stampabili. Ogni gruppo si apre in un'unica pagina con le sue azioni a sinistra e i riepiloghi di membri, sessioni, calendario e stato accanto
+- **[Presenze](./attendance/)** - Configura campus, orari di culto, registra le presenze nominative con fogli di presenza stampabili per classe, vedi quali classi devono ancora inserire le presenze, registra semplici conteggi con report sulle tendenze e assegna a ogni orario di culto una pianificazione del check-in così il self check-in si apre e si chiude automaticamente
+- **[Donazioni](./donations/)** - Registra le offerte in più valute, gestisci i fondi, registra un singolo dono dalla scheda di una persona, stampa i lotti (uno alla volta o tutti i lotti in un intervallo di date) con i subtotali per fondo, e genera attestati stampati con il logo della chiesa
+- **[Servizio](./serving/)** - Coordina i volontari, crea piani di culto (oppure copiane uno in avanti ogni settimana per fino a 12 settimane), invia promemoria tramite notifica push, email o SMS, manda un SMS a tutti i programmati con **SMS ai volontari**, gestisci le attività e fai avanzare le persone attraverso flussi di lavoro passo-passo che possono inviare automaticamente email e SMS
+- **[Moduli](./forms/)** - Crea moduli personalizzati per iscrizioni e raccolta dati
+- **[Report](./reports/)** - Visualizza report su compleanni, presenze e donazioni
+- **[Sito web](./website/)** - Costruisci e gestisci il sito web della chiesa con stili di navigazione personalizzati, monitora le visite al sito e all'app B1 con il tuo ID GA4, oppure disattiva il sito pubblico e mantieni solo il portale per i membri
+- **[Sermoni](./sermons/)** - Gestisci la tua libreria di sermoni, lo streaming in diretta e un feed podcast automatico
+- **[Calendari](./calendars/)** - Crea calendari curati, gestisci le prenotazioni di sale e risorse e visualizza la disponibilità
+- **[Impostazioni](./settings/)** - Configura tutto da un'unica pagina scorrevole con un elenco di accesso rapido: dati della chiesa, regione, formato di data e numero di telefono, SMS, ruoli, permessi e campi personalizzati delle persone
 
 :::info
-Fai clic sull'icona del punto interrogativo nell'angolo in alto a destra di qualsiasi pagina per accedere rapidamente alla guida e alla documentazione. Per passare dalla modalità chiara a quella scura, apri il menu utente e scegli **Preferenze tema**.
+Fai clic sull'icona del punto interrogativo nell'angolo in alto a destra di qualsiasi pagina per accedere rapidamente alla guida e alla documentazione. Per cambiare il tema dei colori (**Predefinito**, **Classico** o **Personalizzato**) o passare dalla modalità chiara a quella scura, apri il menu utente e usa **Preferenze tema**.
 :::
 
-Per il supporto, invia un'email a [support@churchapps.org](mailto:support@churchapps.org).
+Per assistenza, scrivi a [support@churchapps.org](mailto:support@churchapps.org).

@@ -6,7 +6,7 @@ title: "Consulter les plans"
 
 <div class="article-intro">
 
-La page Plans vous donne une vue claire de tous les plans de service auxquels vous êtes affecté. Elle utilise une disposition maître-détail pour vous permettre de parcourir rapidement vos plans et de plonger dans les détails de l'un d'entre eux.
+La page Plans vous donne une vue claire de tous les plans de service auxquels vous êtes affecté. Elle indique ce qui attend votre réponse, ce qui est à venir et ce que vous avez déjà servi, et vous permet d'ouvrir n'importe quel plan pour en voir les détails.
 
 </div>
 
@@ -14,55 +14,70 @@ La page Plans vous donne une vue claire de tous les plans de service auxquels vo
 <h4>Avant de commencer</h4>
 
 - Vous devez être [connecté](../getting-started/logging-in.md) à votre compte B1.church.
-- Vous devez être affecté à au moins un plan de service. Si vous ne voyez aucun plan, contactez votre administrateur d'église ou votre leader ministériel.
+- Vous devez être affecté à au moins un plan de service. Si vous ne voyez aucun plan, contactez votre administrateur d'église ou votre responsable de ministère.
 
 </div>
 
 ## Accéder à vos plans
 
-1. Cliquez sur **Plans** dans la [navigation de la barre latérale](../getting-started/navigating.md).
-2. Vous verrez une liste des plans auxquels vous êtes programmé.
+1. Appuyez sur **Plans** dans la barre d'onglets, sur la [page Plus](../getting-started/navigating.md#the-more-page), ou appuyez sur **Tous les plans** dans la section **Vous servez** de l'accueil.
+2. Vous verrez les plans auxquels vous êtes programmé.
 
-## La liste des plans
+## La page Plans
 
-Vos plans sont divisés en deux onglets : **À venir** et **Passé**. Chaque entrée affiche :
+En haut de la page, vous voyez combien de vos affectations à venir sont confirmées et combien attendent encore une réponse, ainsi qu'un bouton **S'inscrire pour servir** qui ouvre la page [inscription des bénévoles](../serving/volunteer-signup.md). Plus bas, la page est organisée en sections :
 
-- Le **nom du plan** (par exemple, « Culte du dimanche » ou « Ministère des enfants »)
-- La **date du service**
-- Votre **position** (le rôle que vous remplissez)
-- Votre **statut** -- codé en couleur pour que vous puissiez voir d'un coup d'œil si vous avez accepté, décliné ou pas encore répondu
+- **Réponse requise** -- Les affectations auxquelles vous n'avez pas encore répondu, chacune avec les boutons **Accepter** et **Refuser** pour répondre sans ouvrir le plan. Affiché seulement lorsqu'une réponse est attendue de votre part.
+- **À venir** -- Vos trois prochaines affectations. Appuyez sur **Toutes les affectations à venir** pour voir le reste.
+- **Dates d'indisponibilité** -- Les dates où vous n'êtes pas disponible pour servir. Appuyez sur **Ajouter des dates**, choisissez une **Date de début** et une **Date de fin**, puis appuyez sur **Enregistrer**. Appuyez sur **Supprimer** à côté d'une indisponibilité pour la supprimer. Vos responsables d'équipe voient ces dates afin de planifier autour de vous.
+- **Passé** -- Le nombre de fois où vous avez servi cette année et la date de votre dernier service. Appuyez sur **Affectations passées** pour voir la liste complète, que vous pouvez filtrer par année.
 
-Sous la liste se trouve une section **Dates de blocage**. Utilisez-la pour gérer les dates lorsque vous ne pouvez pas servir. Vous pouvez ajouter, modifier et supprimer des plages de dates de blocage pour que vos responsables d'équipe sachent quand programmer autour de vous.
+Chaque affectation affiche la **date du service**, le **nom du plan**, votre **poste** et un badge de statut -- **Acceptée**, **Confirmée**, **Refusée**, **Réponse en attente** ou **Réponse requise** si vous n'avez pas encore répondu.
 
 :::info
-Votre église peut envoyer des **rappels** avant les services pour lesquels vous êtes programmé, par e-mail et par notification d'application. Si votre église envoie des textos, vous pouvez aussi les recevoir par texto en activant **Messages texte** dans vos [préférences de notification](../getting-started/notification-preferences.md). Si vous n'avez pas encore répondu, vous pouvez **Accepter** ou **Décliner** directement à partir de l'e-mail de rappel -- pas besoin de vous connecter.
+Votre église peut vous envoyer des **rappels** avant les services auxquels vous êtes programmé, par e-mail et sous forme de notification dans l'application. Si votre église envoie des textos, vous pouvez aussi les recevoir par texto en activant les **Messages texte** dans vos [préférences de notification](../getting-started/notification-preferences.md). Si vous n'avez pas encore répondu, vous pouvez **Accepter** ou **Refuser** directement depuis l'e-mail de rappel -- aucune connexion requise.
 :::
 
-## Consulter les détails du plan
+## Consulter les détails d'un plan
 
-Cliquez sur n'importe quel plan dans la liste pour l'ouvrir. La page du plan a trois onglets :
+Appuyez sur un plan pour l'ouvrir. La page du plan affiche le nom du plan et la date du service en haut, suivis de ces sections :
 
-- **Aperçu** -- Votre position assignée avec les heures nécessaires et votre statut actuel, plus toutes les notes que le créateur du plan a ajoutées pour l'équipe. Si vous n'avez pas encore répondu, vous pouvez cliquer sur **Accepter** ou **Décliner** directement à partir de cette vue.
-- **Ordre de service** -- L'ordre de service complet avec le calendrier, les articles et les descriptions. Voir [Ordre de service](./service-order.md) pour plus de détails.
-- **Équipes de service** -- Tous les membres de l'équipe et leurs positions, pour que vous puissiez voir qui d'autre sert aux côtés de vous.
+- **Votre affectation** -- Chaque poste qui vous est attribué sur ce plan, avec son équipe, votre statut et les **Heures de service** pour lesquelles vous êtes nécessaire. Si vous n'avez pas encore répondu, appuyez directement sur **Accepter** ou **Refuser** ici.
+- **Ordre du service** -- Les premiers éléments du service, avec le nombre total d'éléments. Appuyez sur **Ordre du service complet** pour tout voir. Voir [Ordre du service](./service-order.md) pour plus de détails.
+- **Équipes de service** -- Les personnes qui servent avec vous et dans quels postes, avec le nombre de personnes et d'équipes. Appuyez sur **Toutes les équipes** pour voir chaque équipe et ses membres.
+- **Notes du plan** -- Toutes les notes ajoutées par le créateur du plan à l'intention de l'équipe.
+- **Téléchargements** -- Les fichiers joints au contenu de leçon du plan, le cas échéant.
+
+Appuyez sur **Retour à** *nom du plan* en haut de l'ordre du service complet ou de la liste des équipes pour revenir au plan.
+
+## Refuser une affectation acceptée
+
+Si un imprévu survient après que vous avez accepté, vous pouvez toujours vous désister depuis la page du plan :
+
+1. Ouvrez le plan et repérez votre poste sous **Votre affectation**. Il affiche un badge **Acceptée**.
+2. Appuyez sur le lien rouge **Refuser** sous le poste.
+3. Une confirmation vous demande **Refuser cette affectation ?** -- « Vos responsables d'équipe seront informés que vous ne pouvez plus servir à ce poste. »
+4. Appuyez sur **Refuser** pour confirmer, ou sur **Annuler** pour conserver l'affectation.
+
+Votre statut passe à **Refusée**. Le lien **Refuser** n'est disponible que jusqu'à la fin de votre heure de service -- après cela, votre affectation ne peut plus être modifiée depuis la page du plan.
 
 :::tip
-Si vous avez plusieurs tâches sur différents plans, la liste est triée par date pour que vos engagements à venir apparaissent en premier. Vérifiez régulièrement pour rester à jour dans votre calendrier.
+Si vous avez plusieurs affectations sur différents plans, la liste est triée par date afin que vos engagements à venir apparaissent en premier. Revenez régulièrement pour bien suivre votre calendrier.
 :::
 
 ## Vue enseignant pour les leçons
 
-Si votre plan inclut un curriculum associé d'un fournisseur de contenu (comme Lessons.church), l'onglet **Ordre de service** affiche les sections de la leçon pour un examen rapide, ainsi qu'un bouton **Enseigner**.
+Si votre plan comprend du contenu de programme provenant d'un fournisseur (comme Lessons.church), la section **Ordre du service** affiche les sections de la leçon pour une révision rapide, et un bouton **Enseigner** apparaît en haut de la page du plan.
 
-Cliquez sur **Enseigner** pour ouvrir une présentation de leçon immersive en plein écran conçue pour les enseignants, avec des instructions formatées, des médias intégrés, des notes et des conseils étape par étape. Fermez-la pour revenir à l'ordre de service.
+Appuyez sur **Enseigner** pour ouvrir une présentation de leçon immersive en plein écran, conçue pour les enseignants, avec des instructions mises en forme, des médias intégrés, des notes et un guidage étape par étape. Fermez-la pour revenir au plan.
 
-La vue Enseigner organise le contenu des leçons en sections navigables affichées sous forme d'onglets en haut. Vous pouvez :
+La vue Enseigner organise le contenu de la leçon en sections. Vous pouvez :
 
-- Appuyez sur un onglet de section pour aller directement à cette partie de la leçon
-- Parcourez le contenu de la leçon, et l'onglet actif se mettra à jour automatiquement pour correspondre à votre position
-- Cliquez sur les éléments multimédias (vidéos, images, activités) pour les afficher dans une boîte de dialogue modale ; les liens audio (enregistrements de chansons, extraits de sermons) se lisent en ligne avec un lecteur audio intégré
-- Consultez les types d'actions formatés distinctivement : **Say** apparaît dans des bulles de conversation, **Do** en texte gras et **Note** dans des légendes en surbrillance
+- Appuyer sur **Sections** en haut pour voir la liste des sections et accéder directement à n'importe quelle partie de la leçon
+- Faire défiler le contenu de la leçon -- l'en-tête indique la section dans laquelle vous vous trouvez (par exemple, « Section 2 sur 5 »)
+- Cliquer sur les éléments multimédias (vidéos, images, activités) pour les afficher dans une boîte de dialogue modale ; les liens audio (enregistrements de chansons, extraits de sermons) se lisent directement avec un lecteur audio intégré
+- Voir les types d'actions présentés de manière distincte : **Dire** apparaît dans des bulles de conversation, **Faire** en gras, et **Note** dans des encadrés en surbrillance
 
 :::tip
-La vue Enseigner est particulièrement utile lorsque vous dirigez une salle de classe ou un petit groupe, car elle présente tout votre contenu de leçon dans un format propre et sans distraction optimisé pour une utilisation mobile et tablette.
+La vue Enseigner est particulièrement utile lorsque vous dirigez une classe ou un petit groupe, car elle présente tout le contenu de votre leçon dans un format épuré et sans distraction, optimisé pour les appareils mobiles et les tablettes.
 :::

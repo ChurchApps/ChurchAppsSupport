@@ -6,63 +6,68 @@ title: "Fazendo uma Doação"
 
 <div class="article-intro">
 
-Existem duas maneiras de fazer uma doação através do site B1.church de sua igreja: a página de doação pública (sem login necessário) e a página de doação de membro (login necessário). Ambas usam um formulário de doação seguro fornecido por Stripe.
+Há duas formas de fazer uma doação pelo site B1.church da sua igreja: a página pública de doações (sem necessidade de login) e a página de doações para membros (com login). Ambas usam um formulário de doação seguro, com tecnologia do Stripe.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Para doações públicas, nenhuma conta é necessária -- apenas visite a página **Doação** de sua igreja.
-- Para doações de membro com rastreamento de histórico e métodos de pagamento salvos, [conecte-se](../getting-started/logging-in.md) à sua conta primeiro.
+- Para doações públicas, não é necessária uma conta -- basta acessar a página **Doar** da sua igreja.
+- Para doações de membros com histórico e formas de pagamento salvas, [entre na sua conta](../getting-started/logging-in.md) primeiro.
 
 </div>
 
-## Página de Doação Pública (Sem Login Necessário)
+## Página Pública de Doações (Sem Login)
 
 Qualquer pessoa pode fazer uma doação sem criar uma conta:
 
-1. Navegue até a página **Doação** de sua igreja.
-2. O formulário de doação é exibido no lado esquerdo da página. Selecione o **fundo** para o qual você gostaria de dar.
-3. Digite seus detalhes de pagamento e o valor que você gostaria de dar.
+1. Acesse a página **Doar** da sua igreja.
+2. O formulário de doação é exibido do lado esquerdo da página. Selecione o **fundo** para o qual deseja ofertar.
+3. Informe os dados de pagamento e o valor que deseja ofertar.
 4. Envie o formulário para concluir sua doação.
 
-No lado direito da página, você verá um link para **Instruções para Pagamento ACH** se você preferir dar através de transferência bancária. Há também um botão **Conectar** se você quiser se conectar para acessar recursos adicionais como histórico de doações.
+No lado direito da página, você verá um link para **Instruções para Pagamento por ACH** caso prefira doar por transferência bancária. Também há um botão **Entrar** se você quiser fazer login para acessar recursos adicionais, como o histórico de doações.
 
 :::tip
-Se você já estiver conectado quando visitar a página de doação pública, você será automaticamente redirecionado para a página de doação de membro onde você tem acesso ao seu histórico de doações completo e métodos de pagamento salvos.
+Se você já estiver conectado ao visitar a página pública de doações, será redirecionado automaticamente para a página de doações para membros, onde tem acesso ao seu histórico completo de ofertas e às formas de pagamento salvas.
 :::
 
-## Página de Doação de Membro (Conectado)
+## Página de Doações para Membros (Conectado)
 
-Quando você está conectado, a experiência de doação inclui recursos adicionais, organizados em quatro abas:
+Quando você está conectado, a página **Ofertas** do portal de membros mostra um botão **Ofertar** e um botão **Imprimir Comprovante** no topo, seguidos das seguintes seções:
 
-- **Visão Geral** -- Seu total de doação do ano até o momento, um cartão de progresso da campanha (se sua igreja tem uma campanha ativa), e seu presente mais recente com um botão **Repetir** com um clique.
-- **Doação** -- O formulário de doação.
-- **Gerenciar** -- Seus métodos de pagamento salvos (adicionar, remover ou definir uma cartão padrão ou conta bancária).
-- **Histórico** -- Suas doações anteriores, totais de doações por período, presentes recorrentes e exportações de declaração. Veja [Histórico de Doações](./donation-history.md) para detalhes.
+- **Este ano** (com o título do ano atual) -- Seu total de ofertas do ano até o momento e o número de contribuições, com um link **Todo o histórico**. Consulte [Histórico de Doações](./donation-history.md) para mais detalhes.
+- **Recorrentes** -- Suas ofertas programadas, com um link **Gerenciar**.
+- **Atividade Recente** -- Suas três últimas ofertas, com um link **Repetir última oferta** que abre o formulário de doação.
+- **Formas de pagamento** -- Seus cartões e contas bancárias salvos, com um link **Gerenciar** para adicionar, remover ou definir um padrão.
+- Um cartão de progresso da campanha, caso sua igreja tenha uma campanha ativa.
 
-Para dar:
+Para ofertar:
 
-1. Abra a página de doação da aba **Doação** de sua igreja ou de **Doações** nos Atalhos da sua [Página Meu Perfil](../getting-started/me-page.md). Se você pousar em **Visão Geral**, selecione a aba **Doação**.
-2. Escolha o **fundo** para o qual você gostaria de dar e digite sua quantidade de doação.
-3. Selecione um método de pagamento salvo existente ou digite novos detalhes de pagamento.
+1. Abra a página de ofertas pela aba **Doar** da sua igreja, pelo botão **Ofertar** na seção **Ofertas** do seu [painel Início](../getting-started/navigating.md#home), ou pelo **Histórico** na seção **Ofertas** da sua [página Eu](../getting-started/me-page.md). Na página Ofertas, toque em **Ofertar** para abrir o formulário de doação.
+2. Escolha o **fundo** para o qual deseja ofertar e informe o valor da doação.
+3. Selecione uma forma de pagamento salva ou informe novos dados de pagamento.
 4. Envie o formulário para concluir sua doação.
 
-Depois que sua doação é processada, uma mensagem de sucesso aparecerá e sua doação aparecerá em seu [histórico de doações](./donation-history.md).
+Depois que sua doação for processada, uma mensagem de sucesso aparecerá e sua doação será exibida no seu [histórico de doações](./donation-history.md).
 
 :::info
-Se doações que você fez foram registradas em mais de uma moeda, seu total de ano até o momento de Visão Geral e o total do período de Histórico são convertidos para a moeda de sua igreja, com uma nota **Convertido às taxas de câmbio atuais** abaixo. Doações individuais em seu histórico ainda mostram sua moeda original.
+Se as doações que você fez foram registradas em mais de uma moeda, seu total do ano e o total do Histórico são convertidos para a moeda da sua igreja, com a observação **Convertido pelas taxas de câmbio atuais** logo abaixo. As doações individuais no seu histórico continuam mostrando a moeda original.
 :::
 
-## Métodos de Pagamento
+## Formas de Pagamento
 
-As doações são processadas com segurança através de **Stripe**. Você pode pagar com cartão de crédito, cartão de débito ou configurar um pagamento bancário ACH. Quando você está conectado, seus métodos de pagamento podem ser salvos para uso futuro, tornando mais rápido dar da próxima vez.
+As doações são processadas com segurança pelo **Stripe**. Você pode pagar com cartão de crédito, cartão de débito ou configurar um pagamento bancário por ACH. Quando você está conectado, suas formas de pagamento podem ser salvas para uso futuro, o que torna as próximas doações mais rápidas.
+
+:::info Doação por conta bancária sem entrar
+Se você doar como visitante (sem fazer login) por conta bancária, a conta precisa ser verificada instantaneamente entrando no seu banco. Se isso não for possível, você verá "Não foi possível verificar esta conta bancária instantaneamente. Doe com cartão ou entre e adicione a conta bancária no seu perfil de ofertas." Contas bancárias que precisam de alguns dias para verificação só podem ser adicionadas depois que você entrar.
+:::
 
 :::warning
-Se sua doação não passar, verifique novamente seus detalhes de pagamento e tente novamente. Se o problema persistir, entre em contato com o escritório de sua igreja para obter assistência.
+Se a sua doação não for concluída, confira os dados de pagamento e tente novamente. Se o problema persistir, entre em contato com a secretaria da sua igreja para obter ajuda.
 :::
 
 ## Próximos Passos
 
-- [Histórico de Doações](./donation-history.md) -- Veja suas doações anteriores e imprima declarações de doação
+- [Histórico de Doações](./donation-history.md) -- Veja suas doações anteriores e imprima comprovantes de contribuição

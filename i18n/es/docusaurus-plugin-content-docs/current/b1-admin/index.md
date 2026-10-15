@@ -1,54 +1,54 @@
 ---
-title: "Descripción General de B1 Admin"
+title: "Descripción general de B1 Admin"
 ---
 
-# Descripción General de B1 Admin
+# Descripción general de B1 Admin
 
 <div class="article-intro">
 
-B1 Admin es tu panel de control de gestión de iglesia. Proporciona herramientas para gestionar cada aspecto de las operaciones de tu iglesia — desde directorios de miembros y donaciones hasta construcción de sitios web y transmisión en vivo — todo desde un solo lugar.
+B1 Admin es tu panel de gestión de la iglesia. Ofrece herramientas para administrar todos los aspectos de las operaciones de tu iglesia, desde los directorios de miembros y las donaciones hasta la creación del sitio web y la transmisión en vivo, todo desde un solo lugar.
 
 </div>
 
-## Comenzar
+## Primeros pasos
 
 1. Abre tu navegador y ve a [admin.b1.church](https://admin.b1.church)
 2. Inicia sesión con tu nombre de usuario y contraseña
-3. Aterrizarás en el **Dashboard**, tu página de inicio. Muestra el orden de servicio de esta semana, quién se ha registrado y está sirviendo en tiempo real, cualquier cosa que necesite tu atención (como aprobaciones pendientes o solicitudes de adhesión), tus tareas abiertas y tus grupos
+3. Llegarás al **Dashboard**, tu página de inicio. Muestra el orden de servicio de esta semana, quién se ha registrado y está sirviendo en tiempo real, los asuntos que requieren tu atención (como aprobaciones pendientes o solicitudes de ingreso a grupos), tus tareas abiertas y tus grupos
 
 :::tip
-¿Nuevo en B1 Admin? Comienza con la [Introducción](./introduction) para un tutorial en video, luego visita [Configuración](./settings/) para configurar la información de tu iglesia e invitar a tu equipo.
+¿Eres nuevo en B1 Admin? Comienza con la [Introducción](./introduction) para ver un recorrido en video, y luego visita [Configuración](./settings/) para configurar la información de tu iglesia e invitar a tu equipo.
 :::
 
 ## Tu Dashboard
 
-El Dashboard es tu página de inicio de B1 Admin (`/`). Está construido alrededor del servicio semanal de tu iglesia:
+El Dashboard es la página de inicio de B1 Admin (`/`). Está organizado en torno al servicio semanal de tu iglesia:
 
-- **Servicio de esta semana** -- el nombre del plan actual o próximo y el orden de servicio, con un enlace al plan completo
-- **Estado en vivo** -- una vez que las personas comienzan a registrarse el domingo, la página muestra cuántas están en la sala, quién está sirviendo esta hora, primeros visitantes, y un desglose sala por sala con barras de capacidad
-- **Necesita Atención** -- aprobaciones pendientes y solicitudes de adhesión a grupos que requieren acción
-- **Mis tareas** y **Mis Grupos** -- tus tareas abiertas (agrega una con **Add Task**, o haz clic en **All tasks** para la lista completa) y los grupos a los que perteneces
+- **Servicio de esta semana** -- el nombre y el orden de servicio del plan actual o próximo, con un enlace al plan completo
+- **Estado en vivo** -- cuando las personas empiezan a registrarse el domingo, la página muestra cuántas están en el salón, quién está sirviendo en esta hora, los visitantes que llegan por primera vez y un desglose por salón con barras de capacidad
+- **Necesita atención** -- aprobaciones pendientes y solicitudes de ingreso a grupos que requieren una acción
+- **Mis tareas** y **Mis grupos** -- tus tareas abiertas (agrega una con **Add Task**, o haz clic en **All tasks** para ver la lista completa) y los grupos a los que perteneces
 
 :::tip
-Cada sección, incluyendo Sermons, Calendars, Mobile, y Settings, está en el [menú Saltar](./introduction.md#getting-around-with-the-jump-menu) en la parte superior izquierda de B1 Admin. Haz clic en él o presiona **Ctrl+K** (o **Cmd+K**), luego explora o comienza a escribir.
+Todas las secciones, incluidas Sermons, Calendars, Mobile y Settings, están en el [menú Jump](./introduction.md#getting-around-with-the-jump-menu) en la parte superior izquierda de B1 Admin. Haz clic en él o presiona **Ctrl+K** (o **Cmd+K**), y luego explora o empieza a escribir.
 :::
 
-## Características Principales
+## Funciones principales
 
-- **[People](./people/)** - Gestiona tu directorio de iglesia, agrega miembros, edita datos en masa, y navega por hogar o como una tabla ordenable. Cada persona se abre en una sola página de registro con sus detalles a la izquierda y resúmenes de asistencia, donaciones, grupos, notas y formularios a su lado
-- **[Groups](./groups/)** - Crea y organiza grupos de iglesia con solicitudes de adhesión, gestión de miembros, correo de grupo, textos de grupo personalizados y listas de contactos imprimibles. Cada grupo se abre en una sola página con sus acciones a la izquierda y resúmenes de miembros, sesiones, calendario y salud a su lado
-- **[Attendance](./attendance/)** - Configura sedes, horarios de servicio, rastrea asistencia nombrada con hojas de clase imprimibles, ve qué clases aún necesitan asistencia registrada, registra simples conteos generales con reportes de tendencias, y asigna a cada horario de servicio un horario de registro para que el auto-registro se abra y cierre por sí solo
-- **[Donations](./donations/)** - Registra donaciones en múltiples monedas, gestiona fondos, registra un solo regalo desde el registro de una persona, imprime lotes (uno a la vez o todos los de un rango de fechas) con subtotales de fondos, y genera estados impresos con el logo de tu iglesia
-- **[Serving](./serving/)** - Coordina voluntarios, crea planes de servicio (o copia uno hacia adelante semanalmente hasta 12 semanas), envía recordatorios por push, correo electrónico o texto, envía texto a todos los programados con **Text Volunteers**, gestiona tareas, y mueve a las personas a través de flujos de trabajo paso a paso que pueden enviar correos electrónicos y textos automáticamente
-- **[Forms](./forms/)** - Construye formularios personalizados para registros y recopilación de datos
-- **[Reports](./reports/)** - Ver reportes de cumpleaños, asistencia y donaciones
-- **[Website](./website/)** - Construye y gestiona tu sitio web de iglesia con estilos de navegación personalizados, rastrea visitas a tu sitio y a tu app B1 con tu ID de GA4, o desactiva el sitio público y mantén solo el portal de miembros
-- **[Sermons](./sermons/)** - Gestiona tu biblioteca de sermones, transmisión en vivo y un feed de podcast automático
-- **[Calendars](./calendars/)** - Crea calendarios curados, gestiona reservas de salas/recursos, y ve disponibilidad
-- **[Settings](./settings/)** - Configura todo desde una sola página con desplazamiento y una lista de acceso rápido: información de la iglesia, región, formato de fecha y de teléfono, mensajes de texto, roles, permisos y campos de persona personalizados
+- **[People](./people/)** - Administra el directorio de tu iglesia, agrega miembros, edita datos en lote y explora por hogar o en una tabla ordenable. Cada persona se abre en una única página de registro con sus datos a la izquierda y resúmenes de asistencia, donaciones, grupos, notas y formularios a su lado
+- **[Groups](./groups/)** - Crea y organiza grupos de la iglesia con solicitudes de ingreso, gestión de miembros, correo de grupo, mensajes de texto personalizados para grupos y listas de contactos imprimibles. Cada grupo se abre en una sola página con sus acciones a la izquierda y resúmenes de miembros, sesiones, calendario y estado a su lado
+- **[Attendance](./attendance/)** - Configura sedes y horarios de servicio, registra la asistencia por nombre con hojas de lista imprimibles, consulta qué clases todavía necesitan que se registre su asistencia, anota conteos simples de personas con reportes de tendencias, y asigna a cada horario de servicio un calendario de registro para que el registro automático se abra y cierre por sí solo
+- **[Donations](./donations/)** - Registra ofrendas en varias monedas, administra fondos, registra un solo regalo desde el registro de una persona, imprime lotes (uno a la vez o todos los de un rango de fechas) con subtotales por fondo, y genera estados de cuenta impresos con el logo de tu iglesia
+- **[Serving](./serving/)** - Coordina voluntarios, crea planes de servicio (o copia uno hacia adelante cada semana, hasta 12 semanas), envía recordatorios por notificación push, correo electrónico o mensaje de texto, envía un mensaje a todas las personas programadas con **Text Volunteers**, administra tareas y mueve a las personas a través de flujos de trabajo paso a paso que pueden enviar correos y mensajes automáticamente
+- **[Forms](./forms/)** - Crea formularios personalizados para inscripciones y recopilación de datos
+- **[Reports](./reports/)** - Consulta reportes de cumpleaños, asistencia y donaciones
+- **[Website](./website/)** - Crea y administra el sitio web de tu iglesia con estilos de navegación personalizados, registra las visitas a tu sitio y a tu app de B1 con tu ID de GA4, o desactiva el sitio público y conserva solo el portal de miembros
+- **[Sermons](./sermons/)** - Administra tu biblioteca de sermones, la transmisión en vivo y un feed de podcast automático
+- **[Calendars](./calendars/)** - Crea calendarios seleccionados, administra las reservaciones de salones y recursos, y consulta la disponibilidad
+- **[Settings](./settings/)** - Configura todo desde una sola página con desplazamiento y una lista de acceso rápido: información de la iglesia, región, formato de fecha y de teléfono, mensajes de texto, roles, permisos y campos personalizados de personas
 
 :::info
-Haz clic en el icono de signo de interrogación en la esquina superior derecha de cualquier página para acceder rápidamente a la ayuda y documentación. Para cambiar entre modo claro y oscuro, abre tu menú de usuario y elige **Theme Preferences**.
+Haz clic en el icono de signo de interrogación en la esquina superior derecha de cualquier página para acceder rápidamente a la ayuda y la documentación. Para cambiar el tema de color (**Default**, **Classic** o **Custom**) o alternar entre modo claro y oscuro, abre tu menú de usuario y usa **Theme Preferences**.
 :::
 
-Para obtener ayuda, envía un correo electrónico a [support@churchapps.org](mailto:support@churchapps.org).
+Para obtener soporte, escribe a [support@churchapps.org](mailto:support@churchapps.org).

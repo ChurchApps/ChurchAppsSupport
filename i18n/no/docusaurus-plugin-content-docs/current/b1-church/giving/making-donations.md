@@ -1,68 +1,73 @@
 ---
-title: "Gi en Donasjon"
+title: "Gi en gave"
 ---
 
-# Gi en Donasjon
+# Gi en gave
 
 <div class="article-intro">
 
-Det finnes to måter å gi en donasjon gjennom kirkens B1.church-nettsted: den offentlige donasjonsiden (ingen innlogging nødvendig) og medlemsdonasjonssiden (innlogging nødvendig). Begge bruker et sikkert donasjonsskjema drevet av Stripe.
+Det finnes to måter å gi en gave gjennom kirkens B1.church-nettsted på: den offentlige gavesiden (ingen innlogging nødvendig) og medlemmenes gavesiden (innlogging nødvendig). Begge bruker et sikkert gaveskjema drevet av Stripe.
 
 </div>
 
 <div class="prereqs">
-<h4>Før Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- For offentlige donasjoner trengs ingen konto -- bare besøk kirkens **Donasjoner**-side.
-- For medlemsdonasjoner med historikksporing og lagrede betalingsmetoder, [logg inn](../getting-started/logging-in.md) på kontoen din først.
+- For offentlige gaver trengs ingen konto – besøk bare kirkens side **Gi**.
+- For medlemsgaver med historikk og lagrede betalingsmetoder må du [logge inn](../getting-started/logging-in.md) på kontoen din først.
 
 </div>
 
-## Offentlig Donasjonsside (Ingen Innlogging Nødvendig)
+## Offentlig gavenside (ingen innlogging nødvendig)
 
-Alle kan gi en donasjon uten å opprette en konto:
+Hvem som helst kan gi en gave uten å opprette en konto:
 
-1. Naviger til kirkens **Donasjoner**-side.
-2. Donasjonsskjemaet vises på venstre side av siden. Velg **fondet** du ønsker å gi til.
-3. Oppgi betalingsinformasjonen din og beløpet du ønsker å gi.
-4. Send inn skjemaet for å fullføre donasjonen.
+1. Gå til kirkens side **Gi**.
+2. Gaveskjemaet vises på venstre side av siden. Velg **fondet** du vil gi til.
+3. Skriv inn betalingsopplysningene dine og beløpet du vil gi.
+4. Send inn skjemaet for å fullføre gaven din.
 
-På høyre side av siden vil du se en lenke til **Instruksjoner for ACH-betaling** hvis du foretrekker å gi via bankoverføring. Det er også en **Logg inn**-knapp hvis du ønsker å logge inn for å få tilgang til tilleggsfunksjoner som donasjonshistorikk.
+På høyre side av siden finner du en lenke til **Instruksjoner for ACH-betaling** hvis du heller vil gi med bankoverføring. Det finnes også en knapp **Logg inn** hvis du vil logge på for å få tilgang til flere funksjoner, som gavehistorikk.
 
 :::tip
-Hvis du allerede er logget inn når du besøker den offentlige donasjonsiden, vil du automatisk bli omdirigert til medlemsdonasjonssiden der du har tilgang til din fulle givhistorie og lagrede betalingsmetoder.
+Hvis du allerede er logget inn når du besøker den offentlige gavesiden, sendes du automatisk videre til medlemmenes gavenside, der du har tilgang til hele gavehistorikken din og de lagrede betalingsmetodene dine.
 :::
 
-## Medlemsdonasjonsside (Logget Inn)
+## Medlemmenes gavenside (innlogget)
 
-Når du er logget inn, inkluderer donasjonsopplevelsen tilleggsfunksjoner, organisert i fire faner:
+Når du er logget inn, viser siden **Giving** i medlemsportalen en knapp **Gi** og en knapp **Skriv ut bekreftelse** øverst, etterfulgt av disse seksjonene:
 
-- **Oversikt** -- Ditt år-til-dato givingtotal, et kampanjefremskriftskort (hvis kirken din har en aktiv kampanje), og den seneste gaven din med en klikk **Gjenta**-knapp.
-- **Donasjoner** -- Donasjonsskjemaet.
-- **Administrer** -- Lagrede betalingsmetoder (legg til, fjern eller velg standardkort eller bankkonto).
-- **Historikk** -- Tidligere donasjoner, givingtotaler etter periode, gjentakende gaver og erklæringseksporter. Se [Donasjonhistorie](./donation-history.md) for detaljer.
+- **I år** (med inneværende år som tittel) – Din gavesum så langt i år og antall gaver, med en lenke **All historikk**. Se [Gavehistorikk](./donation-history.md) for detaljer.
+- **Gjentakende** – Dine planlagte gaver, med en lenke **Administrer**.
+- **Nylig aktivitet** – Dine tre siste gaver, med en lenke **Gjenta siste gave** som åpner gaveskjemaet.
+- **Betalingsmetoder** – Dine lagrede kort og bankkontoer, med en lenke **Administrer** for å legge til, fjerne eller angi en standard.
+- Et kort med kampanjefremdrift, hvis kirken din har en aktiv kampanje.
 
-For å gi:
+Slik gir du:
 
-1. Åpne givsiden fra kirkens **Donasjoner**-fane eller fra **Givning** i Snarveierne på din [Min Side](../getting-started/me-page.md). Hvis du lander på **Oversikt**, velg **Donasjoner**-fanen.
-2. Velg **fondet** du ønsker å gi til og oppgi donasjonsbeløpet.
-3. Velg en eksisterende lagret betalingsmetode eller oppgi nye betalingsdetaljer.
-4. Send inn skjemaet for å fullføre donasjonen.
+1. Åpne giving-siden fra kirkens fane **Gi**, fra knappen **Gi** i seksjonen **Giving** på [Hjem-dashbordet](../getting-started/navigating.md#home), eller fra **Historikk** i seksjonen **Giving** på [siden Meg](../getting-started/me-page.md). På siden Giving trykker du på **Gi** for å åpne gaveskjemaet.
+2. Velg **fondet** du vil gi til, og skriv inn beløpet.
+3. Velg en eksisterende lagret betalingsmetode eller skriv inn nye betalingsopplysninger.
+4. Send inn skjemaet for å fullføre gaven din.
 
-Etter at donasjonen er behandlet, vil en suksessmelding vises og donasjonen vil dukke opp i [donasjonshistorikken](./donation-history.md).
+Etter at gaven er behandlet, vises en suksessmelding, og gaven din dukker opp i [gavehistorikken din](./donation-history.md).
 
 :::info
-Hvis donasjoner du har gitt ble registrert i mer enn en valuta, konverteres årene-til-dato totalen og historikk-perioden totalen til kirkens valuta, med en **Konvertert til gjeldende valutakurser**-merking under. Individuelle donasjoner i historikken viser fortsatt original valuta.
+Hvis gavene du har gitt, ble registrert i mer enn én valuta, konverteres årssummen din og totalen i historikken til kirkens valuta, med en merknad **Konvertert til dagens valutakurs** under. Enkeltgaver i historikken din viser fortsatt sin opprinnelige valuta.
 :::
 
 ## Betalingsmetoder
 
-Donasjoner behandles sikkert gjennom **Stripe**. Du kan betale med kredittkort, debetkort eller sette opp en ACH-bankbetaling. Når du er logget inn, kan betalingsmetodene dine lagres for fremtidig bruk, noe som gjør det raskere å gi neste gang.
+Gaver behandles sikkert gjennom **Stripe**. Du kan betale med kredittkort, debetkort eller sette opp ACH-bankoverføring. Når du er logget inn, kan betalingsmetodene dine lagres for fremtidig bruk, slik at det går raskere å gi neste gang.
 
-:::warning
-Hvis donasjonen din ikke goes gjennom, dobbeltsjekk betalingsinformasjonen din og prøv igjen. Hvis problemet vedvarer, kontakt kirkekontoret for hjelp.
+:::info Gi fra bankkonto uten å logge inn
+Hvis du gir som gjest (uten å logge inn) fra en bankkonto, må kontoen verifiseres umiddelbart ved at du logger inn i banken din. Hvis det ikke går, ser du «Denne bankkontoen kunne ikke verifiseres umiddelbart. Gi med kort, eller logg inn og legg til bankkontoen under giverprofilen din.» Bankkontoer som trenger noen dagers verifisering, kan bare legges til etter at du har logget inn.
 :::
 
-## Neste Steg
+:::warning
+Hvis gaven din ikke går gjennom, dobbeltsjekk betalingsopplysningene dine og prøv igjen. Hvis problemet vedvarer, kontakt kirkekontoret for hjelp.
+:::
 
-- [Donasjonhistorie](./donation-history.md) -- Se tidligere donasjoner og skriv ut gaveerklæringer
+## Neste steg
+
+- [Gavehistorikk](./donation-history.md) – Se tidligere gaver og skriv ut giverbekreftelser

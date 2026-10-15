@@ -1,77 +1,77 @@
 ---
-title: "Frivillig Påmelding"
+title: "Frivillig påmelding"
 ---
 
-# Frivillig Påmelding
+# Frivillig påmelding
 
 <div class="article-intro">
 
-Bla gjennom tilgjengelige frivillig stillinger og meld deg selv på kommende tjenester direkte fra B1.church. Stillingene er organisert etter kategori slik at du raskt kan finne hvor hjelp trengs og bli med på et team.
+Bla gjennom ledige frivillige posisjoner og meld deg på kommende gudstjenester direkte fra B1.church. Posisjonene er organisert etter kategori, slik at du raskt kan finne hvor det trengs hjelp og bli med i et team.
 
 </div>
 
 <div class="prereqs">
-<h4>Før Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- En B1.church-konto -- du må være logget inn for å melde deg på
-- Kirkeadministratoren må ha aktivert selvregistrering på minst en stilling
+- En B1.church-konto – du må være logget inn for å melde deg på
+- Kirkeadministratoren din må ha aktivert selvpåmelding på minst én posisjon
 
 </div>
 
-## Bla Gjennom Tilgjengelige Stillinger
+## Bla gjennom ledige posisjoner
 
-1. Naviger til **Frivillig**-siden på kirkens B1.church-nettsted.
-2. Du vil se en liste over kommende tjenesteplaner som har åpne frivillig stillinger.
-3. Hver plan viser **plannavnet**, **servicedatoen** og **tjenestidene**.
+1. Gå til siden **Frivillig** på kirkens B1.church-nettsted.
+2. Du ser en liste over kommende tjenesteplaner som har ledige frivillige posisjoner. Innenfor hver plan er posisjonene listet etter kategori og deretter etter navn. Hvis kirken din bare viser neste uke for hver plantype, vises senere uker når den inneværende uken har passert.
+3. Hver plan viser **planens navn**, **gudstjenestedato** og **gudstjenestetider**.
 
-Stillingene er gruppert etter kategori (for eksempel "Band", "Gjestfrihet", "Barneministerie"). Hver stilling viser:
+Posisjonene er gruppert etter kategori (for eksempel «Band», «Gjestfrihet», «Barnearbeid»). Hver posisjon viser:
 
-- **Stillingsnavnet** -- Rollen du ville fylle (f.eks. "Trommelslager", "Hilser", "Kaffe Server").
-- **Beskrivelse** -- Detaljer om rollen, hvis gitt av administratoren.
-- **Tilgjengelige plasser** -- En progresjonslinje som viser hvor mange plasser som er fylt og hvor mange som gjenstår.
-- **Hvem som har meldt seg på** -- Hvis menigheten din har slått på **Vis navn på frivillige på påmeldingssiden** for planen, viser en linje med «Påmeldt:» navnene på dem som allerede tjenestegjør i den stillingen. Navn vises bare når du er innlogget.
+- **Posisjonsnavn** – Rollen du ville fylt, for eksempel «Trommis», «Velkomstvert» eller «Kaffeservitør».
+- **Beskrivelse** – Detaljer om rollen, hvis administratoren har oppgitt dem.
+- **Ledige plasser** – En fremdriftslinje som viser hvor mange plasser som er fylt, og hvor mange som gjenstår.
+- **Hvem som har meldt seg på** – Hvis kirken din har slått på **Vis navn på frivillige på påmeldingssiden** for planen, viser en linje «Påmeldt:» navnene på personene som allerede tjener i posisjonen. Navn vises bare når du er logget inn.
 
-## Melding Av Seg På
+## Melde seg på
 
-1. Finn en stilling du vil være frivillig for.
-2. Klikk **Meld Deg På**-knappen ved siden av stillingen.
-3. En bekreftelsmeldingsvisning vises: "Du er påmeldt! Takk for at du er frivillig."
-4. Stillingen viser nå en grønn indikator som bekrefter at du er påmeldt.
+1. Finn en posisjon du vil melde deg frivillig til.
+2. Klikk på knappen **Meld meg på** ved siden av posisjonen.
+3. En bekreftelsesmelding vises: «Du er påmeldt! Takk for at du melder deg frivillig.»
+4. Posisjonen viser nå en grønn indikator som bekrefter at du er påmeldt.
 
 :::info
-Du må være logget inn for å melde deg på. Hvis du ikke er logget inn, vil du bli bedt om å logge inn først.
+Du må være logget inn for å melde deg på. Hvis du ikke er logget inn, blir du bedt om å logge inn først.
 :::
 
-## Fjern en Påmelding
+## Fjerne en påmelding
 
-Hvis planene dine endres og du ikke lenger kan tjene:
+Hvis planene dine endrer seg og du ikke lenger kan tjene:
 
-1. Finn stillingen du meldte deg på -- den viser en grønn "Du er påmeldt"-indikator.
-2. Klikk **Fjern**-knappen.
-3. Bekreft at du vil fjerne deg selv fra stillingen.
-4. En melding bekrefter: "Du er fjernet fra denne stillingen."
+1. Finn posisjonen du meldte deg på – den viser en grønn indikator «Du er påmeldt».
+2. Klikk på knappen **Fjern**.
+3. Bekreft at du vil fjerne deg selv fra posisjonen.
+4. En melding bekrefter: «Du er fjernet fra denne posisjonen.»
 
 ## Frister
 
-Kirkeadministratoren din kan angi en påmeldingsfrist for hver plan. Fristen er et bestemt antall timer før servicedatoen. Når fristen passerer:
+Kirkeadministratoren din kan sette en påmeldingsfrist for hver plan. Fristen er et fast antall timer før gudstjenestedatoen. Når fristen er passert:
 
-- Du kan ikke melde deg på nye stillinger.
+- Du kan ikke melde deg på nye posisjoner.
 - Du kan ikke fjerne eksisterende påmeldinger.
-- En melding øverst på planen indikerer at påmeldingsfristen har passert.
+- En melding øverst i planen viser at påmeldingsfristen er passert.
 
-## Stillingskapasitet
+## Posisjonskapasitet
 
-Hver stilling har et begrenset antall plasser. Når alle plasser er fylt:
+Hver posisjon har et begrenset antall plasser. Når alle plassene er fylt:
 
-- Stillingen vises som **Full**.
+- Posisjonen vises som **Fullt**.
 - Påmeldingsknappen er deaktivert.
-- Hvis noen fjerner påmeldingen, åpner plassen seg igjen.
+- Hvis noen fjerner sin påmelding, blir plassen ledig igjen.
 
 :::tip
-Sjekk frivillingsiden regelmessig, spesielt tidlig på uken. Populære stillinger fylles raskt, så tidlig påmelding gir deg det beste utvalget.
+Sjekk siden for frivillige regelmessig, spesielt tidlig i uken. Populære posisjoner fylles raskt, så hvis du melder deg på tidlig, har du best valg.
 :::
 
-## Relaterte Artikler
+## Relaterte artikler
 
-- [Tjenesteovesikt](./index.md) -- Oversikt over tjenestefeaturene på B1.church
-- [Visning av Planer](../plans/viewing-plans) -- Se tildelte planer og tjenesteordre
+- [Oversikt over tjeneste](./index.md) – Oversikt over tjenestefunksjonene på B1.church
+- [Vise planer](../plans/viewing-plans) – Se planene du er satt opp på og gudstjenesteordenene

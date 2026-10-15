@@ -1,43 +1,43 @@
 ---
-title: "Ablauf des Gottesdienstes"
+title: "Gottesdienstablauf"
 ---
 
-# Ablauf des Gottesdienstes
+# Gottesdienstablauf
 
 <div class="article-intro">
 
-Wenn Sie einen Plan öffnen, zeigt die Registerkarte **Ablauf des Gottesdienstes** die Reihenfolge der Elemente für diesen Gottesdienst. Dies gibt Ihnen und Ihrem Team einen gemeinsamen Überblick über den Ablauf des Gottesdienstes, einschließlich Zeitpunkt, Songdetails und Beschreibungen für jedes Element.
+Wenn Sie einen Plan öffnen, zeigt der Abschnitt **Gottesdienstablauf** die ersten Elemente dieses Gottesdienstes. Tippen Sie auf **Vollständiger Gottesdienstablauf**, um die gesamte Abfolge zu sehen. So erhalten Sie und Ihr Team eine gemeinsame Übersicht über den Ablauf des Gottesdienstes, einschließlich Zeiten, Liedangaben und Beschreibungen zu jedem Element.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie müssen in Ihr B1.church-Konto [angemeldet sein](../getting-started/logging-in.md).
-- Öffnen Sie einen Plan aus Ihrer [Plansliste](./viewing-plans.md), um seinen Ablauf anzuzeigen.
+- Sie müssen [in Ihrem B1.church-Konto angemeldet](../getting-started/logging-in.md) sein.
+- Öffnen Sie einen Plan aus Ihrer [Planliste](./viewing-plans.md), um dessen Gottesdienstablauf anzusehen.
 
 </div>
 
-## Was der Ablauf des Gottesdienstes zeigt
+## Was der Gottesdienstablauf zeigt
 
-Der Ablauf wird als eine Liste von Elementen in der Reihenfolge angezeigt, in der sie während des Gottesdienstes vorkommen. Jedes Element enthält:
+Der Gottesdienstablauf wird als Liste der Elemente in der Reihenfolge angezeigt, in der sie im Gottesdienst vorkommen. Jedes Element enthält:
 
-- **Kumulative Zeit** – Die vergangene Zeit vom Anfang des Gottesdienstes, so dass Sie wissen, wann jedes Element voraussichtlich beginnen soll.
-- **Elementbezeichnung und Beschreibung** – Der Name des Elements (z. B. Songtitel, Gebet oder Ankündigung) zusammen mit Notizen oder Beschreibungen.
-- **Dauer** – Wie lange das Element voraussichtlich dauert.
+- **Laufende Zeit** -- Die fortlaufende Zeit ab Beginn des Gottesdienstes, damit Sie wissen, wann jedes Element voraussichtlich beginnt.
+- **Bezeichnung und Beschreibung des Elements** -- Der Name des Elements (etwa ein Liedtitel, ein Gebet oder eine Ankündigung) sowie Notizen oder Beschreibungen.
+- **Dauer** -- Wie lange das Element voraussichtlich dauern wird.
 
-Elemente werden unter **Überschriften** organisiert, die verwandte Elemente zusammenfassen (z. B. „Anbetungssatz" oder „Botschaft"). Dies macht es einfach, die Gesamtstruktur des Gottesdienstes zu überblicken.
+Die Elemente sind unter **Überschriften** gruppiert, die zusammengehörige Teile bündeln (zum Beispiel „Lobpreis“ oder „Predigt“). So lässt sich der Aufbau des Gottesdienstes leicht überblicken.
 
-Lektion- und Lehrplanabschnitte können sich auch in einen Ordner einzelner Aktionen erweitern, die darunter verschachtelt sind – klicken Sie auf den Abschnitt, um seine Aktionen zu erweitern oder zu reduzieren und jeden Schritt zu sehen, den Ihr Team durchlaufen wird.
+Lektions- und Lehrabschnitte können sich außerdem zu einem Ordner mit einzelnen Aktionen erweitern, die darunter verschachtelt sind. Tippen Sie auf den Abschnitt, um seine Aktionen ein- oder auszublenden und jeden Schritt zu sehen, den Ihr Team durchgeht.
 
-## Ansicht von Songtexten und Akkorden
+## Liedtexte und Akkorde ansehen
 
-Klicken Sie auf einen Song im Ablauf des Gottesdienstes, um seine Texte und Akkorde zu öffnen. Verwenden Sie das Dropdown-Menü **Tonart** oben, um die Akkorde spontan zu transponieren – praktisch, wenn Ihr Instrument oder Ihr Stimmumfang einen anderen Schlüssel benötigen als den, den der Anbetungsleiter geplant hat.
+Tippen Sie im Gottesdienstablauf auf ein Lied, um dessen Text und Akkorde zu öffnen. Mit dem Dropdown-Menü **Tonart** oben können Sie die Akkorde direkt umsetzen. Das ist praktisch, wenn Ihr Instrument oder Ihre Stimmlage eine andere Tonart benötigt als die, die die Leitung des Lobpreises geplant hat.
 
-## Lehrplan- und Lektionsinhalte
+## Lehrmaterial und Lektionsinhalte
 
-Wenn der Plan damit verbundene Lehrplan- oder Lektionsinhalte von einem Anbieter wie [Lessons.church](../content/lessons.md) hat, sehen Sie eine Vorschau dieses Inhalts im Ablauf des Gottesdienstes. Dies kann Lektionsabschnitte, Präsentationsmaterialien und andere Ressourcen enthalten, die Ihr Team für den Gottesdienst benötigt.
+Wenn der Plan zugehörige Lehr- oder Lektionsinhalte eines Anbieters wie [Lessons.church](../content/lessons.md) enthält, sehen Sie im Gottesdienstablauf eine Vorschau dieser Inhalte. Dazu können Lektionsabschnitte, Präsentationsmaterialien und andere Ressourcen gehören, die Ihr Team für den Gottesdienst benötigt.
 
-## Drucken des Ablaufs des Gottesdienstes
+## Den Gottesdienstablauf drucken
 
-Die B1.church-Mitglieder-App hat keine Druckoption für Pläne. Wenn Sie eine gedruckte Kopie mit der Teamliste und dem vollständigen Ablauf des Gottesdienstes benötigen, bitten Sie einen Mitarbeiter, diese über B1 Admin auszudrucken. Siehe [Pläne drucken](../../b1-admin/serving/plans.md#printing-plans).
+Die Mitglieder-App von B1.church bietet für Pläne keine Druckfunktion. Wenn Sie eine gedruckte Fassung mit der Teamliste und dem vollständigen Gottesdienstablauf benötigen, bitten Sie eine Mitarbeiterin bzw. einen Mitarbeiter, sie aus B1 Admin zu drucken. Siehe [Pläne drucken](../../b1-admin/serving/plans.md#printing-plans).

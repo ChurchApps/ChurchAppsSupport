@@ -1,43 +1,43 @@
 ---
-title: "Pagkakasunod-sunod ng Serbisyo"
+title: "Service Order"
 ---
 
-# Pagkakasunod-sunod ng Serbisyo
+# Service Order
 
 <div class="article-intro">
 
-Kapag ikaw ay bumubukas ng isang plano, ang tab ng **Pagkakasunod-sunod ng Serbisyo** ay nagpapakita ng pagkakasunod-sunod ng mga item para sa serbisyong iyon. Ito ay nagbibigay sa iyo at sa iyong koponan ng isang ibinabahaging pagtingin sa daloy ng serbisyo, kabilang ang oras, mga detalye ng kanta, at mga paglalarawan para sa bawat elemento.
+Kapag binuksan mo ang isang plano, ipinapakita ng seksyong **Service Order** ang unang ilang item ng serbisyong iyon -- i-tap ang **Full service order** upang makita ang buong pagkakasunod-sunod. Nagbibigay ito sa iyo at sa iyong team ng iisang pagtingin sa daloy ng serbisyo, kabilang ang oras, detalye ng awit, at paglalarawan ng bawat elemento.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Dapat kang maging [naka-log in](../getting-started/logging-in.md) sa iyong B1.church account.
-- Buksan ang isang plano mula sa iyong [Listahan ng Mga Plano](./viewing-plans.md) upang tingnan ang pagkakasunod-sunod ng serbisyo.
+- Dapat ka [naka-log in](../getting-started/logging-in.md) sa iyong B1.church account.
+- Buksan ang isang plano mula sa iyong [listahan ng Plans](./viewing-plans.md) upang makita ang order of service nito.
 
 </div>
 
-## Kung Ano ang Ipinapakita ng Service Order
+## Ano ang Ipinapakita ng Service Order
 
-Ang pagkakasunod-sunod ng serbisyo ay ipinakita bilang isang listahan ng mga item sa pagkakasunod-sunod na sila ay magiging nangyari sa panahon ng serbisyo. Bawat item ay kinabibilangan ng:
+Ipinapakita ang order of service bilang listahan ng mga item ayon sa pagkakasunod-sunod ng mga ito sa serbisyo. Kasama sa bawat item ang:
 
-- **Pinagsama-samang oras** -- Ang tumatakbong oras mula sa simula ng serbisyo, upang malaman mo kung kailan ang bawat elemento ay inaasahang magsisimula.
-- **Label at paglalarawan ng item** -- Ang pangalan ng elemento (tulad ng pamagat ng kanta, panalangin, o pahayag) kasama ang anumang mga nota o mga paglalarawan.
-- **Tagal** -- Kung gaano katagal ang item ay inaasahang makukuha.
+- **Cumulative time** -- Ang tumatakbong oras mula sa simula ng serbisyo, upang malaman mo kung kailan inaasahang magsisimula ang bawat elemento.
+- **Item label at description** -- Ang pangalan ng elemento (gaya ng pamagat ng awit, panalangin, o anunsyo) kasama ang anumang tala o paglalarawan.
+- **Duration** -- Gaano katagal inaasahang tatagal ang item.
 
-Ang mga item ay organisado sa ilalim ng **mga header** na nag-grupo ng mga kaugnay na elemento nang magkasama (halimbawa, "Worship Set" o "Message"). Ito ay ginagawang madali na i-scan ang pangkalahatang istraktura ng serbisyo.
+Nakaayos ang mga item sa ilalim ng mga **header** na nagpapangkat ng mga kaugnay na elemento (halimbawa, "Worship Set" o "Message"). Ginagawa nitong madaling makita ang kabuuang istruktura ng serbisyo.
 
-Ang mga seksyon ng aralin at curriculum ay maaaring palawakin din sa isang folder ng mga indibidwal na aksyon na nakabalot sa ilalim -- i-click ang seksyon upang palawakin o i-collapse ang mga aksyon nito at makita ang bawat hakbang na ang iyong koponan ay maglalakad.
+Ang mga seksyon ng lesson at curriculum ay maaari ring lumawak bilang folder ng mga indibidwal na aksyon na nakalagay sa ilalim nila -- i-click ang seksyon upang palawakin o itupi ang mga aksyon nito at makita ang bawat hakbang na dadaanan ng iyong team.
 
-## Pagtingin ng Mga Lyrics at Chords ng Kanta
+## Pagtingin sa Lyrics at Chords ng Awit
 
-I-click ang isang kanta sa pagkakasunod-sunod ng serbisyo upang buksan ang mga lyrics at chords nito. Gamitin ang dropdown ng **Key Signature** sa tuktok upang i-transpose ang mga chords nang on the fly -- kapaki-pakinabang kung ang iyong instrumento o vocal range ay nangangailangan ng ibang key kaysa sa plano ng worship leader.
+I-click ang isang awit sa order of service upang buksan ang lyrics at chords nito. Gamitin ang dropdown na **Key Signature** sa itaas upang i-transpose ang mga chord habang nasa view -- kapaki-pakinabang kung ang iyong instrumento o saklaw ng boses ay nangangailangan ng ibang key kaysa sa planong itinakda ng worship leader.
 
-## Nilalaman ng Curriculum at Aralin
+## Curriculum at Nilalaman ng Lesson
 
-Kung ang plano ay may kaugnay na curriculum o nilalaman ng aralin mula sa isang provider tulad ng [Lessons.church](../content/lessons.md), makikita mo ang isang preview ng nilalaman na iyon sa loob ng pagkakasunod-sunod ng serbisyo. Ito ay maaaring isama ang mga seksyon ng aralin, mga materyales sa pagtatanghal, at iba pang mga mapagkukunan na kailangan ng iyong koponan para sa serbisyo.
+Kung may kaugnay na curriculum o nilalaman ng lesson ang plano mula sa isang provider gaya ng [Lessons.church](../content/lessons.md), makikita mo ang preview ng nilalamang iyon sa loob ng order of service. Maaaring kabilang dito ang mga seksyon ng lesson, materyal sa presentasyon, at iba pang resource na kailangan ng iyong team para sa serbisyo.
 
 ## Pag-print ng Service Order
 
-Ang B1.church member app ay walang opsyon sa pag-print para sa mga plano. Kung kailangan mo ng isang printed na kopya na may roster ng koponan at ang buong pagkakasunod-sunod ng serbisyo, humingi ng tulong sa isang staff member upang i-print ito mula sa B1 Admin. Tingnan ang [Pag-print ng Mga Plano](../../b1-admin/serving/plans.md#printing-plans).
+Walang opsyon sa pag-print ng plano ang B1.church member app. Kung kailangan mo ng nakalimbag na kopya na may listahan ng team at buong order of service, hilingin sa isang staff member na i-print ito mula sa B1 Admin. Tingnan ang [Printing Plans](../../b1-admin/serving/plans.md#printing-plans).

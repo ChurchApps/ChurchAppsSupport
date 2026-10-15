@@ -1,43 +1,43 @@
 ---
-title: "Svar på hendelser"
+title: "Påmelding til arrangementer"
 ---
 
-# Svar på hendelser
+# Påmelding til arrangementer
 
 <div class="article-intro">
 
-Gruppehendelser kan samle inn svar slik at lederne vet hvem som kommer. I gruppens kalender spør hver kommende hendelse «Vil du delta?» – svar med et trykk, ombestem deg når som helst, og se med et blikk hvor mange andre som kommer.
+Gruppearrangementer kan samle inn svar (RSVP) slik at ledere vet hvem som kommer. På gruppens side og i kalenderen har hvert kommende arrangement knappene **Kommer**, **Kanskje** og **Kommer ikke** – svar med ett trykk, endre mening når som helst, og se med ett blikk hvor mange andre som kommer.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du må være [logget inn](../getting-started/logging-in.md) og medlem av gruppen
-- Hendelsen må ha svar tillatt (det er slått på som standard, og ledere kan slå det av for hver enkelt hendelse)
+- Du må være [logget inn](../getting-started/logging-in.md) og være medlem av gruppen
+- Arrangementet må tillate svar (RSVP) – dette er slått på som standard; ledere kan slå det av for hvert arrangement
 
 </div>
 
-## Svare på en hendelse
+## Svare på et arrangement
 
-1. Åpne gruppen i medlemsportalen og gå til fanen **Hendelser**. I **månedsvisning** trykker du på en dag for å se hendelsene den dagen, eller bytter til **listevisning** for å se alle kommende hendelser denne måneden samlet.
-2. Hvert kort for en kommende hendelse viser **Vil du delta?** med tre knapper: **Kommer**, **Kanskje** og **Kan ikke**.
-3. Trykk på svaret ditt. Valget ditt utheves, og hver knapp viser et løpende antall for hvor mange som har gitt det svaret.
-4. Trykk på det uthevede svaret igjen for å fjerne det, eller trykk på en annen knapp for å endre svaret ditt.
+1. Åpne gruppen din i medlemsportalen. Gruppens neste arrangement vises i seksjonen **Neste arrangement**. For andre arrangementer trykker du på **Alle arrangementer**: i visningen **Kalender** trykker du på en dag for å se arrangementene, eller bytter til **Liste** for å se alle kommende arrangementer i denne måneden samtidig.
+2. Hvert kommende arrangement viser tre knapper: **Kommer**, **Kanskje** og **Kommer ikke**.
+3. Trykk på svaret ditt. Valget ditt blir uthevet, og hver knapp viser en direkte teller over hvor mange som har gitt det svaret.
+4. Trykk på det uthevede svaret ditt igjen for å fjerne det, eller trykk på en annen knapp for å endre svaret ditt.
 
-Svaret ditt gjelder akkurat den forekomsten – for et ukentlig møte svarer du på hver ukes hendelse hver for seg.
+Svaret ditt gjelder for det bestemte arrangementet – for et ukentlig møte svarer du for hvert ukes arrangement separat.
 
 ## For gruppeledere
 
-- **Se svar** -- Ledere ser en knapp **Se svar** på hvert hendelseskort. Den åpner arket **Svar**, som lister alle etter svar – Kommer, Kanskje og Kan ikke. Hvis ingen har svart ennå, vises «Ingen svar ennå.»
-- **Slå svar av eller på** -- Når du oppretter eller redigerer en hendelse, bruker du bryteren **Tillat svar**. Hendelser der svar er slått av, viser ingen svarknapper. Ansatte som oppretter hendelser i bulk fra B1 Admin, har samme mulighet – se [Gruppekalender](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Se svar** – Ledere ser en lenke **Vis svar** på hvert arrangement i gruppens kalender (**Alle arrangementer**). Den åpner arket **Svar** som lister alle etter svar – Kommer, Kanskje og Kommer ikke. Hvis ingen har svart ennå, vises «Ingen svar ennå.»
+- **Slå svar (RSVP) på eller av** – Når du oppretter eller redigerer et arrangement, bruk bryteren **Tillat svar (RSVP)**. Arrangementer med svar slått av viser ingen svarknapper. Ansatte som oppretter arrangementer i bulk fra B1 Admin har det samme alternativet – se [Gruppekalender](../../b1-admin/groups/group-calendar#event-rsvps).
 
 :::tip
-Svar er en enkel opptelling av hvem som kommer. Hvis hendelsen din trenger påmeldingsdetaljer, kapasitetsstyring eller betaling, kan du bruke [hendelsespåmelding](../events/registering) i stedet.
+Svar (RSVP) er en enkel deltakertelling. Hvis arrangementet ditt trenger påmeldingsdetaljer, kapasitetsstyring eller betaling, bruk [arrangementspåmelding](../events/registering) i stedet.
 :::
 
 ## Relaterte artikler
 
-- [Gruppedetaljer](./group-details.md) -- Alt på gruppens detaljside
-- [Gruppekalender (B1 Admin)](../../b1-admin/groups/group-calendar) -- Hvordan ansatte og ledere administrerer gruppehendelser og svar
-- [Påmelding til hendelser](../events/registering) -- Full hendelsespåmelding med kapasitet og betaling
+- [Gruppedetaljer](./group-details.md) – Alt på gruppens detaljside
+- [Gruppekalender (B1 Admin)](../../b1-admin/groups/group-calendar) – Slik administrerer ansatte og ledere gruppearrangementer og svar
+- [Melde seg på arrangementer](../events/registering) – Full arrangementspåmelding med kapasitet og betaling

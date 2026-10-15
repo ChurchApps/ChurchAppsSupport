@@ -26,7 +26,7 @@ Navigate to **Donations > Funds** to see a list of all your funds. Each row show
 
 1. Click **Add Fund** at the top of the page.
 2. Enter a name for the fund (e.g., "Building Fund").
-3. Check the **Tax Deductible** box if donations to this fund should be included on giving statements.
+3. Check the **Tax Deductible** box if donations to this fund should be included on giving statements. Gifts to non-deductible funds are still listed in the donor's giving on their person record.
 4. Leave **Visible to Donors** checked to show the fund on the public and member donation forms, or uncheck it to hide the fund from donors while still using it for manually recorded donations.
 5. Click **Save**.
 

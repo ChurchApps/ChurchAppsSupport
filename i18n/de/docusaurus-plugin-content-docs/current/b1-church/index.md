@@ -6,36 +6,36 @@ title: "B1.church"
 
 <div class="article-intro">
 
-B1.church ist das benutzerfreundliche Portal Ihrer Kirche. Es ist der Ort, an den Ihre Gemeinde geht, um verbunden zu bleiben, auf Kirchenwerkzeuge zuzugreifen und während der Woche mit Ihrer Gemeinde zu interagieren. Jede Kirche erhält ihre eigene URL unter `https://yourchurchname.b1.church`.
+B1.church ist das Mitgliederportal für Ihre Gemeinde. Hier bleibt Ihre Gemeinde in Verbindung, nutzt Werkzeuge der Gemeinde und engagiert sich in der Woche gemeinsam. Jede Gemeinde erhält eine eigene Adresse unter `https://ihregemeinde.b1.church`.
 
 </div>
 
-Wenn Mitglieder Ihre B1.church-Website besuchen, sehen sie Ihre öffentliche Website der Kirche mit Ihrem Branding, Navigationslinks und Inhaltsseiten. Nach dem Anmelden können sie auf das **Mitgliederportal** zugreifen, wo alle ihre persönlichen Kirchenwerkzeuge an einem Ort leben.
+Wenn Mitglieder Ihre B1.church-Website besuchen, sehen sie die öffentliche Website Ihrer Gemeinde mit deren Erscheinungsbild, Navigationslinks und Inhaltsseiten. Nach der Anmeldung gelangen sie zum **Mitgliederportal**, in dem alle persönlichen Werkzeuge der Gemeinde an einem Ort zusammengeführt sind.
 
-## Hauptfunktionen
+## Wichtige Funktionen
 
-- **Startseite und Ich** -- Das Mitgliederportal wird auf einem [Home-Dashboard](./getting-started/navigating.md) geöffnet, und die [Ich-Seite](./getting-started/me-page.md) listet auf, was für Sie kommt -- Servicezuordnungen, Event-Registrierungen, Gruppen-Events -- zusammen mit Ihren letzten Benachrichtigungen.
-- **Gruppen** -- Zeigen Sie die Gruppen an, denen Sie angehören, sehen Sie Gruppenmitglieder, nehmen Sie an Gesprächen teil und verfolgen Sie die Anwesenheit.
-- **Geben** -- Machen Sie Spenden an Ihre Kirche online und zeigen Sie Ihren Spendenverlauf an.
-- **Events** -- Durchsuchen Sie bevorstehende Events und registrieren Sie sich selbst und Ihre Familie.
-- **Dienst** -- Zeigen Sie Servicepläne, Ihre Freiwilligenpositionen an und melden Sie sich für offene Freiwilligengelegenheiten an. Wählen Sie in Ihren [Benachrichtigungseinstellungen](./getting-started/notification-preferences.md), ob Sie Dienst- und Veranstaltungserinnerungen per Textnachricht erhalten möchten (antworten Sie jederzeit mit STOP, um sie zu beenden).
-- **Pläne** -- Zeigen Sie bevorstehende Servicepläne an, sehen Sie Ihre zugewiesenen Positionen und greifen Sie auf Songdetails und Serviceaufträge zu.
-- **Check-In** -- Checken Sie sich selbst und Ihre Haushaltsmitglieder für Services und Events ein. Gäste können sich per QR-Code anmelden.
-- **Gemeindeverzeichnis** -- Durchsuchen Sie das Mitgliedsverzeichnis Ihrer Kirche, sehen Sie Profilbilder und senden Sie direkte Nachrichten. Kontrollieren Sie, wer Ihre Kontaktinformationen sehen kann, über [den Datenschutz-Reiter Ihres Profils](./getting-started/editing-your-profile.md#privacy-tab).
-- **Inhalte** -- Zugriff auf Predigten, lesen Sie die Bibel, sehen Sie sich Live-Übertragungen an und zeigen Sie den täglichen Vers, alles von der Website Ihrer Kirche an. (Curriculum-Wiedergabe befindet sich jetzt in [FreePlay](/docs/freeplay/) -- der In-Portal-Reiter Lektionen ist veraltet.)
+- **Startseite und Ich** -- Das Mitgliederportal öffnet sich auf einem [Startseiten-Dashboard](./getting-started/navigating.md) mit Vorschauen Ihrer kommenden Dienstzuweisungen, Ihrer Gruppen und Ihrer Spenden in diesem Jahr. Die [Seite Ich](./getting-started/me-page.md) listet auf, was für Sie ansteht -- Dienstzuweisungen, Veranstaltungsanmeldungen, Gruppenveranstaltungen --, zusammen mit Ihren aktuellen Benachrichtigungen.
+- **Gruppen** -- Sehen Sie die Gruppen, denen Sie angehören, betrachten Sie die Mitglieder, nehmen Sie an Gesprächen teil und verfolgen Sie die Anwesenheit.
+- **Spenden** -- Geben Sie Ihrer Gemeinde online und sehen Sie Ihren Spendenverlauf ein.
+- **Veranstaltungen** -- Durchsuchen Sie kommende Veranstaltungen und melden Sie sich und Ihre Familie an.
+- **Dienst** -- Sehen Sie Dienstpläne und Ihre ehrenamtlichen Positionen und melden Sie sich für offene Dienstmöglichkeiten an. Über Ihre [Benachrichtigungseinstellungen](./getting-started/notification-preferences.md) können Sie Dienst- und Veranstaltungserinnerungen per Textnachricht erhalten (antworten Sie jederzeit mit STOP, um sie abzubestellen).
+- **Pläne** -- Sehen Sie kommende Dienstpläne, nehmen Sie Ihre zugewiesenen Positionen an oder lehnen Sie sie ab und greifen Sie auf Liedinformationen und Gottesdienstabläufe zu.
+- **Check-in** -- Checken Sie sich selbst und die Mitglieder Ihres Haushalts für Gottesdienste und Veranstaltungen ein. Gäste können sich per QR-Code registrieren.
+- **Gemeinschaftsverzeichnis** -- Durchsuchen Sie das Mitgliederverzeichnis Ihrer Gemeinde, sehen Sie Profile ein und senden Sie Direktnachrichten. Wer Ihre eigenen Kontaktdaten sehen darf, legen Sie im [Datenschutzbereich Ihres Profils](./getting-started/editing-your-profile.md#privacy) fest.
+- **Inhalte** -- Greifen Sie auf Predigten zu, lesen Sie die Bibel, sehen Sie Live-Streams und lesen Sie den Vers des Tages, alles über die Website Ihrer Gemeinde. (Die Wiedergabe von Lehrmaterial läuft inzwischen über [FreePlay](/docs/freeplay/); der Reiter Lektionen im Portal ist veraltet.)
 
-## Weitere Informationen
+## Mehr erfahren
 
-- [Erste Schritte](./getting-started/) -- Erstellen Sie Ihr Konto, melden Sie sich an und erfahren Sie, wie Sie B1.church navigieren.
-- [Gruppen](./groups/) -- Treten Sie Gruppen Ihrer Kirche bei und nehmen Sie teil.
-- [Geben](./giving/) -- Machen Sie Spenden und verwalten Sie Ihre Gaben.
-- [Events](./events/) -- Durchsuchen Sie und registrieren Sie sich für bevorstehende Kirchenveranstaltungen.
-- [Dienst](./serving/) -- Zeigen Sie Pläne an und melden Sie sich für Freiwilligenpositionen an.
-- [Pläne](./plans/) -- Zeigen Sie Servicepläne und Ihre Freiwilligenpositionen an.
-- [Check-In](./checkin/) -- Checken Sie sich für Services, Events und Gastregistrierung ein.
-- [Gemeindeverzeichnis](./community/) -- Suchen Sie und verbinden Sie sich mit anderen Mitgliedern.
-- [Inhalte](./content/) -- Predigten, Bibel, täglicher Vers und Live-Übertragung. (Lektionen-Wiedergabe wurde zu [FreePlay](/docs/freeplay/) verschoben.)
+- [Erste Schritte](./getting-started/) -- Legen Sie Ihr Konto an, melden Sie sich an und lernen Sie, wie Sie in B1.church navigieren.
+- [Gruppen](./groups/) -- Treten Sie den Gruppen Ihrer Gemeinde bei und nehmen Sie daran teil.
+- [Spenden](./giving/) -- Spenden Sie und verwalten Sie Ihre Gaben.
+- [Veranstaltungen](./events/) -- Durchsuchen und melden Sie sich für kommende Gemeindeveranstaltungen an.
+- [Dienst](./serving/) -- Sehen Sie Pläne ein und melden Sie sich für ehrenamtliche Positionen an.
+- [Pläne](./plans/) -- Sehen Sie Dienstpläne und Ihre ehrenamtlichen Positionen ein.
+- [Check-in](./checkin/) -- Checken Sie für Gottesdienste und Veranstaltungen ein und registrieren Sie Gäste.
+- [Gemeinschaftsverzeichnis](./community/) -- Finden Sie andere Mitglieder und treten Sie mit ihnen in Kontakt.
+- [Inhalte](./content/) -- Predigten, Bibel, Vers des Tages und Live-Streaming. (Die Wiedergabe von Lektionen ist zu [FreePlay](/docs/freeplay/) umgezogen.)
 
 :::info
-B1.church ist völlig kostenlos für Kirchen und Mitglieder. Der Administrator Ihrer Kirche richtet die Website über B1 Admin ein und passt sie an. Als Mitglied besuchen Sie einfach die B1.church-URL Ihrer Kirche, um zu beginnen.
+B1.church ist für Gemeinden und Mitglieder vollständig kostenlos. Ihre Gemeindeverwaltung richtet die Website über B1 Admin ein und passt sie an. Als Mitglied rufen Sie einfach die B1.church-Adresse Ihrer Gemeinde auf, um loszulegen.
 :::

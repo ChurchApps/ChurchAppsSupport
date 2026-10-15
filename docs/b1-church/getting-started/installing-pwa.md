@@ -46,7 +46,7 @@ The page detects your device and shows the right instructions automatically:
 
 You can get to the install page in several ways:
 
-- Open the menu (☰) in the member portal and tap **Install App** (the item is hidden once the app is already installed)
+- Tap **More** in the member portal and tap **Install App** under **Account** (the item is hidden once the app is already installed)
 - Follow a link your church shares by text, email, or from the Sunday screen
 - Type the URL directly into your browser
 

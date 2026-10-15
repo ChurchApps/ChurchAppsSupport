@@ -6,70 +6,72 @@ title: "Detalhes do Grupo"
 
 <div class="article-intro">
 
-Quando você clica em um grupo na página de grupos, você é levado à página de detalhes do grupo. O que você vê depende se está conectado ou não, com membros conectados tendo acesso a abas adicionais e recursos.
+Ao tocar em um grupo na página de grupos, você é levado à página de detalhes do grupo. O que você vê depende de estar conectado ou não, e os membros conectados veem seções e recursos adicionais.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Encontre um grupo para visualizar [navegando em grupos](./browsing-groups.md).
-- Para acesso completo a todas as abas, [conecte-se](../getting-started/logging-in.md) à sua conta.
+- Encontre um grupo para ver [explorando os grupos](./browsing-groups.md).
+- Para acesso completo a todas as seções, [entre na sua conta](../getting-started/logging-in.md).
 
 </div>
 
-## Visualização de Visitante (Não Conectado)
+## Visão do Visitante (Não Conectado)
 
-Se você não está conectado, verá o seguinte:
+Se você não estiver conectado, verá o seguinte:
 
-- **Seção hero** -- Uma grande área de banner mostrando a foto, nome, horário de reunião e local de reunião do grupo.
-- **Descrição** -- A descrição completa do grupo explicando seu propósito e o que esperar.
-- **Líderes** -- Avatares e nomes dos líderes do grupo. Você pode clicar no nome de um líder para visualizar seu perfil.
-- **Eventos do calendário** -- Até três eventos futuros para o grupo são exibidos, cada um mostrando a data e o título do evento. Se o grupo não tiver eventos futuros, esta seção fica oculta.
-- **Conecte-se para participar** -- Um botão na parte inferior da página. Conecte-se (ou crie uma conta) para participar do grupo ou solicitar participação. Depois de se conectar, você retorna ao grupo e vai direto para a etapa de participação.
+- **Cabeçalho** -- O nome do grupo com o horário e o local de encontro. No computador, a foto do grupo aparece acima dele.
+- **Entre para participar** -- Um botão abaixo do nome do grupo. Entre (ou crie uma conta) para participar do grupo ou solicitar a participação. Depois de entrar, você volta ao grupo e vai direto para a etapa de participação.
+- **Sobre** -- A descrição completa do grupo, explicando seu propósito e o que esperar.
+- **Líderes** -- Os nomes dos líderes do grupo. Você pode tocar no nome de um líder para ver o perfil dele.
+- **Próximos Eventos** -- Até três eventos futuros do grupo, cada um mostrando a data, o horário e o título do evento, com um link **Inscrever-se** quando o evento aceitar inscrições. Se o grupo não tiver eventos futuros, esta seção fica oculta.
 
-## Visualização de Membro (Conectado)
+## Visão do Membro (Conectado)
 
-Se você está conectado mas não é membro do grupo, verá a seção hero e a descrição do grupo junto com a opção de participação do grupo (veja [Participar de um Grupo](#participar-de-um-grupo) abaixo). As abas descritas a seguir aparecem uma vez que você é um membro.
+Se você estiver conectado, mas não for membro do grupo, verá o cabeçalho e a seção **Sobre** do grupo, junto com a opção de participar (consulte [Participando de um Grupo](#joining-a-group) abaixo). As seções descritas a seguir aparecem assim que você for membro.
 
-Quando você é membro, a página de detalhes do grupo mostra a seção hero junto com uma barra lateral de abas. Se seu grupo está associado a um tipo de plano Lessons.church e a lição desta semana tem conteúdo para levar para casa, um cartão **Lição desta semana** aparece entre o hero e as abas (apenas para membros).
+Quando você é membro, o cabeçalho do grupo mostra o nome, o dia, o horário e o local de encontro, e um botão **Abrir chat** se sua igreja tiver ativado o chat do grupo. Se você lidera o grupo, uma etiqueta **Você · Líder** aparece abaixo do nome. No computador, o cabeçalho fica em uma coluna à esquerda, com a foto do grupo, e as seções aparecem à direita.
 
-As abas disponíveis são:
+A página é uma folha única de seções. Cada uma mostra uma prévia curta, e um link no cabeçalho da seção abre a visualização completa; toque em **Voltar para** *nome do grupo* para retornar. As seções disponíveis são:
 
-- **Sobre** -- A descrição completa do grupo, renderizada com formatação de texto rico. Mostrada apenas se o grupo tiver uma descrição.
-- **Planos** -- Os planos de serviço do grupo. Mostrado apenas se o grupo tiver planos.
-- **Mensagens** -- Um espaço para os membros do grupo postarem mensagens e interagirem uns com os outros. Mostrado apenas para membros e apenas se sua igreja tiver ativado o bate-papo em grupo para este grupo. Veja [Conversas em Grupo](./conversations.md) para mais detalhes.
-- **Membros** -- Uma lista de todos os membros do grupo, mostrando sua foto e nome. Você pode clicar no nome de um membro para visitar seu perfil no [diretório de membros](../community/member-directory.md).
-- **Presença** -- Visível apenas para líderes do grupo (e funcionários com permissão de presença). Permite rastreamento de quem frequentou as reuniões do grupo.
-- **Eventos** -- O calendário do grupo mostrando reuniões e eventos. Use as setas para mover entre os meses. Dois botões abaixo do nome do mês alternam as visualizações: **Visualização mensal** (o ícone de calendário) mostra uma grade de calendário onde você toca em um dia para ver seus eventos, e **Visualização em lista** (o ícone de lista) mostra os eventos do mês em ordem de data, agrupados por dia. Ao olhar o mês atual, a lista começa a partir de hoje, então mostra apenas o que ainda está por vir.
-- **Recursos** -- Arquivos compartilhados e links que foram postados para o grupo. Você pode baixar arquivos enviados ou abrir recursos vinculados.
+- **Próximo evento** -- O próximo evento futuro do grupo, com os botões **Vou** / **Talvez** / **Não vou** (consulte [Confirmações de Presença em Eventos](./event-rsvps.md)). Toque em **Todos os eventos** para abrir o calendário do grupo: use as setas para navegar entre os meses e alterne entre **Calendário** (uma grade mensal em que você toca em um dia para ver os eventos dele) e **Lista** (os eventos do mês em ordem de data, agrupados por dia). Quando você está olhando o mês atual, a lista começa a partir de hoje, então mostra apenas o que ainda está por vir. Se os eventos do grupo tiverem etiquetas, você pode filtrar por etiqueta.
+- **Lição desta semana** -- Se o seu grupo estiver associado a um tipo de plano do Lessons.church e a lição desta semana tiver conteúdo para levar para casa destinado aos pais, ele aparece abaixo de **Próximo evento** (somente para membros).
+- **Mensagens** -- As mensagens mais recentes do chat do grupo. Toque em **Abrir chat** para ler e publicar. Só é mostrada para membros, e somente se sua igreja tiver ativado o chat do grupo para este grupo. Consulte [Conversas do Grupo](./conversations.md) para mais detalhes.
+- **Membros** -- Uma prévia dos membros do grupo (líderes primeiro) e a contagem de membros e líderes. Toque em **Todos os membros** para a lista completa, que você pode pesquisar com **Pesquisar Membros**. Toque no nome de um membro para visitar o perfil dele no [diretório de membros](../community/member-directory.md).
+- **Recursos** -- Os primeiros arquivos e links compartilhados publicados para o grupo. Toque em **Todos os recursos** para vê-los todos; você pode baixar arquivos enviados ou abrir recursos com links.
+- **Planos** -- O próximo plano de culto do grupo. Toque em **Todos os planos** para vê-los todos. Só aparece se o grupo tiver planos.
+- **Presença** -- Visível apenas para líderes de grupo (e para a equipe com permissão de presença). Mostra quando a presença foi registrada pela última vez; toque em **Registrar presença** para anotar quem compareceu a um encontro do grupo.
+- **Sobre** -- A descrição completa do grupo, com formatação de texto rico. Só aparece se o grupo tiver uma descrição.
 
-## Capacidades de Líder
+Os membros também veem um link **Sair do Grupo** na parte inferior da página.
 
-Se você é líder do grupo, tem capacidades de edição adicionais:
+## Recursos do Líder
 
-- **Criar e editar eventos** -- Adicione eventos ao calendário do grupo a partir da aba **Eventos**. Ao criar um evento, você pode reservar salas e recursos junto com ele — selecione entre salas e recursos disponíveis, defina tempos opcionais de configuração e desmontagem, e a solicitação de reserva é automaticamente submetida para aprovação.
-- **Editar eventos recorrentes** -- Ao abrir um evento recorrente para editá-lo, o B1 primeiro pergunta quais datas alterar: **Just this date**, **This and all following dates** ou **All dates**. Escolha uma opção e clique em **Save** para abrir o evento. Se você escolheu **Just this date**, o switch **Recurring** fica oculto e suas alterações (ou uma exclusão) se aplicam apenas àquela data.
-- **Definir lembretes de evento** -- Ao editar um evento existente, ative **Send reminders** para lembrar as pessoas antes de começar. Escolha quando eles são enviados, o **Time of Day**, **Who should be reminded?** e uma **Message** opcional, depois escolha **Push**, **Email** ou, se sua igreja tiver envio de textos configurado, **Text** em **Send By**. Textos só são enviados para pessoas que ativaram lembretes por texto em suas [Preferências de Notificação](../getting-started/notification-preferences.md).
-- **Gerenciar recursos** -- Carregue arquivos
- (até 100 MB de armazenamento), adicione links ou delete recursos existentes.
-- **Rastrear presença** -- Registre presença para sessões do grupo a partir da aba **Presença**.
+Se você é líder do grupo, tem recursos adicionais de edição:
 
-Para alterar o nome, descrição ou lista de membros do grupo, use B1 Admin. Veja [Membros do Grupo](../../b1-admin/groups/group-members.md).
+- **Criar e editar eventos** -- Toque em **Todos os eventos** e depois em **Adicionar Evento** para incluir um evento no calendário do grupo. Ao criar um evento, você pode reservar salas e recursos junto com ele -- selecione entre as salas e recursos disponíveis, defina horários opcionais de preparação e desmontagem, e a solicitação de reserva é enviada automaticamente para aprovação.
+- **Editar eventos recorrentes** -- Ao abrir um evento recorrente para editá-lo, o B1 pergunta primeiro quais datas alterar: **Somente esta data**, **Esta e todas as datas seguintes** ou **Todas as datas**. Escolha uma opção e clique em **Salvar** para abrir o evento. Se você escolher **Somente esta data**, a chave **Recorrente** fica oculta e suas alterações (ou uma exclusão) se aplicam apenas a essa data.
+- **Definir lembretes de eventos** -- Ao editar um evento existente, ative **Enviar lembretes** para avisar as pessoas antes do início. Escolha quando os lembretes serão enviados, o **Horário do Dia**, **Quem deve ser lembrado?** e uma **Mensagem** opcional, e depois escolha **Push**, **E-mail** ou, se sua igreja tiver o envio de mensagens configurado, **Mensagem de texto** em **Enviar por**. As mensagens de texto só vão para pessoas que ativaram os lembretes por texto nas suas [Preferências de Notificação](../getting-started/notification-preferences.md).
+- **Gerenciar recursos** -- Envie arquivos (até 100 MB de armazenamento), adicione links ou exclua recursos existentes.
+- **Registrar presença** -- Anote a presença nos encontros do grupo com **Registrar presença** na seção **Presença**.
 
-## Participar de um Grupo
+Para alterar o nome, a descrição ou a lista de membros do grupo, use o B1 Admin. Consulte [Membros do Grupo](../../b1-admin/groups/group-members.md).
 
-Quando você está conectado e ainda não é membro, um botão de participação aparece na página de detalhes do grupo. O rótulo do botão depende da política de participação do grupo:
+## Participando de um Grupo
 
-- **Participar do Grupo** -- O grupo é aberto. Clicar nisto o adiciona imediatamente como membro.
-- **Solicitar Participação** -- O grupo requer aprovação. Clicar nisto abre um diálogo onde você pode incluir uma mensagem opcional para o líder do grupo e depois enviar sua solicitação. Veja [Solicitando Participar de um Grupo](./join-requests.md) para detalhes sobre o gerenciamento de suas solicitações.
+Quando você está conectado e ainda não é membro, um botão de participação aparece na página de detalhes do grupo. O texto do botão depende da política de participação do grupo:
 
-Depois de enviar uma solicitação, o botão é substituído por um aviso de **Solicitação Pendente**: "Sua solicitação de participação foi enviada. Um líder do grupo a revisará."
+- **Participar do Grupo** -- O grupo é aberto. Ao clicar, você é adicionado imediatamente como membro.
+- **Solicitar Participação** -- O grupo exige aprovação. Ao clicar, abre-se um diálogo em que você pode incluir uma mensagem opcional para o líder do grupo e, em seguida, enviar sua solicitação. Consulte [Solicitando Participação em um Grupo](./join-requests.md) para detalhes sobre como gerenciar suas solicitações.
 
-Se você não estava conectado e clicou em **Conectar para participar**, você retorna ao grupo após se conectar e a etapa de participação começa automaticamente: um grupo aberto o adiciona imediatamente, e um grupo que requer aprovação abre o diálogo **Solicitar Participação**.
+Depois que você envia uma solicitação, o botão é substituído por um aviso **Solicitação Pendente**: "Sua solicitação de participação foi enviada. Um líder do grupo irá analisá-la."
 
-Se nenhum botão aparecer, o grupo está fechado e membros devem ser adicionados manualmente por um líder ou administrador.
+Se você não estava conectado e tocou em **Entre para participar**, ao entrar você volta ao grupo e a etapa de participação começa automaticamente: um grupo aberto adiciona você na hora, e um grupo que exige aprovação abre o diálogo **Solicitar Participação**.
+
+Se nenhum dos botões aparecer, o grupo está fechado e os membros precisam ser adicionados manualmente por um líder ou administrador.
 
 :::info
-Você deve estar conectado para participar ou solicitar participação em um grupo. Se um grupo está fechado e você quer participar, entre em contato com seu escritório da igreja ou com um dos líderes do grupo.
+Você precisa estar conectado para participar ou solicitar participação em um grupo. Se um grupo estiver fechado e você quiser participar, entre em contato com a secretaria da igreja ou com um dos líderes do grupo.
 :::

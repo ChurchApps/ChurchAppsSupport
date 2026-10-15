@@ -1,43 +1,43 @@
 ---
-title: "Ordem de Serviço"
+title: "Ordem do Culto"
 ---
 
-# Ordem de Serviço
+# Ordem do Culto
 
 <div class="article-intro">
 
-Quando você abre um plano, a aba **Ordem de Serviço** mostra a sequência de itens para aquele serviço. Isso dá a você e sua equipe uma visualização compartilhada do fluxo de serviço, incluindo cronometragem, detalhes de músicas e descrições para cada elemento.
+Ao abrir um plano, a seção **Ordem do Culto** mostra os primeiros itens desse culto -- toque em **Ordem do culto completa** para ver toda a sequência. Isso oferece a você e à sua equipe uma visão compartilhada do fluxo do culto, incluindo horários, detalhes das músicas e descrições de cada elemento.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Você deve estar [conectado](../getting-started/logging-in.md) à sua conta B1.church.
-- Abra um plano a partir de sua [lista de Planos](./viewing-plans.md) para visualizar sua ordem de serviço.
+- Você precisa estar [conectado](../getting-started/logging-in.md) à sua conta do B1.church.
+- Abra um plano na sua [lista de planos](./viewing-plans.md) para ver a ordem do culto.
 
 </div>
 
-## O Que a Ordem de Serviço Mostra
+## O Que a Ordem do Culto Mostra
 
-A ordem de serviço é exibida como uma lista de itens na ordem em que ocorrerão durante o serviço. Cada item inclui:
+A ordem do culto é exibida como uma lista de itens na sequência em que acontecerão durante o culto. Cada item inclui:
 
-- **Tempo cumulativo** -- O tempo acumulado desde o início do serviço, então você sabe quando cada elemento deve começar.
-- **Rótulo do item e descrição** -- O nome do elemento (como um título de música, oração ou anúncio) juntamente com quaisquer notas ou descrições.
+- **Tempo acumulado** -- O tempo decorrido desde o início do culto, para que você saiba quando cada elemento deve começar.
+- **Nome e descrição do item** -- O nome do elemento (como o título de uma música, uma oração ou um aviso), junto com quaisquer observações ou descrições.
 - **Duração** -- Quanto tempo o item deve levar.
 
-Os itens são organizados sob **cabeçalhos** que agrupam elementos relacionados (por exemplo, "Conjunto de Adoração" ou "Mensagem"). Isso facilita a verificação da estrutura geral do serviço.
+Os itens são organizados sob **cabeçalhos** que agrupam elementos relacionados (por exemplo, "Bloco de Louvor" ou "Mensagem"). Isso facilita visualizar rapidamente a estrutura geral do culto.
 
-Seções de lição e currículo também podem se expandir em uma pasta de ações individuais aninhadas sob elas -- clique na seção para expandir ou colapsar suas ações e ver cada passo que sua equipe passará.
+Seções de lição e currículo também podem se expandir em uma pasta com ações individuais aninhadas abaixo delas -- clique na seção para expandir ou recolher suas ações e ver cada etapa que sua equipe vai seguir.
 
-## Visualizando Letras de Músicas e Acordes
+## Vendo a Letra e os Acordes das Músicas
 
-Clique em uma música na ordem de serviço para abrir suas letras e acordes. Use o menu suspenso **Assinatura de Chave** na parte superior para transportar os acordes dinamicamente -- útil se seu instrumento ou alcance vocal precisa de uma chave diferente daquela que o líder de adoração planejou.
+Clique em uma música na ordem do culto para abrir sua letra e seus acordes. Use o menu **Tom** no topo para transpor os acordes na hora -- útil se o seu instrumento ou a sua extensão vocal precisar de um tom diferente do que o líder de louvor planejou.
 
-## Conteúdo de Currículo e Lição
+## Conteúdo de Currículo e de Lição
 
-Se o plano tem currículo associado ou conteúdo de lição de um provedor como [Lessons.church](../content/lessons.md), você verá uma visualização desse conteúdo dentro da ordem de serviço. Isso pode incluir seções de lição, materiais de apresentação e outros recursos que sua equipe precisa para o serviço.
+Se o plano tiver um currículo ou conteúdo de lição associado de um provedor como o [Lessons.church](../content/lessons.md), você verá uma prévia desse conteúdo dentro da ordem do culto. Isso pode incluir seções da lição, materiais de apresentação e outros recursos de que sua equipe precisa para o culto.
 
-## Imprimindo a Ordem de Serviço
+## Imprimindo a Ordem do Culto
 
-O aplicativo membro B1.church não tem uma opção de impressão para planos. Se você precisa de uma cópia impressa com a lista de equipe e a ordem de serviço completa, peça a um membro da equipe para imprimir a partir de B1 Admin. Veja [Imprimindo Planos](../../b1-admin/serving/plans.md#printing-plans).
+O aplicativo de membros do B1.church não tem opção de impressão para os planos. Se você precisar de uma cópia impressa com a escala da equipe e a ordem completa do culto, peça a um membro da equipe para imprimi-la pelo B1 Admin. Consulte [Imprimindo Planos](../../b1-admin/serving/plans.md#printing-plans).

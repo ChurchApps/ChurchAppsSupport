@@ -1,12 +1,12 @@
 ---
-title: "Mga Endpoint ng Doing"
+title: "Mga Doing Endpoint"
 ---
 
-# Mga Endpoint ng Doing
+# Mga Doing Endpoint
 
 <div class="article-intro">
 
-Pinapamahalaan ng Doing module ang pagpaplano ng serbisyo, pag-iiskedyul ng boluntaryo, pamamahala ng gawain, at mga automation. Nagbibigay ito ng mga kasangkapan para sa paglikha ng mga plano ng serbisyo na may mga oras at posisyon, pagtatalaga ng mga boluntaryo, pamamahala ng mga blockout date, pagbuo ng mga item ng service order, pagkonekta sa mga panlabas na content provider, at pag-configure ng mga automated na daloy ng trabaho na may mga kundisyon at aksyon.
+Pinamamahalaan ng Doing module ang service planning, iskedyul ng volunteer, pamamahala ng gawain, at automation. Nagbibigay ito ng mga kasangkapan para gumawa ng service plan na may oras at posisyon, mag-assign ng volunteer, mamahala ng blockout date, bumuo ng mga item ng service order, kumonekta sa mga external na content provider, at mag-configure ng mga automated na workflow na may kondisyon at aksyon.
 
 </div>
 
@@ -18,22 +18,22 @@ Base path: `/doing/plans`
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Ilista ang lahat ng plano para sa simbahan |
+| GET | `/` | JWT | — | Ilista ang lahat ng plano ng simbahan |
 | GET | `/:id` | JWT | — | Kunin ang isang plano ayon sa ID |
-| GET | `/ids?ids=` | JWT | — | Kunin ang maraming plano ayon sa mga ID na pinaghiwalay ng kuwit |
-| GET | `/types/:planTypeId` | JWT | — | Kunin ang mga plano ayon sa uri ng plano |
-| GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + ministry edit | I-preview ang serving overview na **Text Volunteers** ipapadala: `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }` para sa mga boluntaryong naka-assign sa range (isa bawat tao, nilalaktawan ang mga nag-opt out at walang numero, dinededup ang mga shared na numero, may limit na 200) |
+| GET | `/ids?ids=` | JWT | — | Kunin ang maraming plano ayon sa mga ID na pinaghihiwalay ng kuwit |
+| GET | `/types/:planTypeId` | JWT | — | Kunin ang mga plano ayon sa plan type |
+| GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + ministry edit | I-preview ang ipapadalang **Text Volunteers** ng serving overview: `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }` para sa mga volunteer na naka-assign sa saklaw (isa bawat tao, nilalaktawan ang mga opted-out at walang numero, dinededuplicate ang mga shared na numero, may limit na 200) |
 | GET | `/presenter` | JWT | — | Kunin ang mga plano para sa susunod na 7 araw (presenter view) |
-| GET | `/public/current/:planTypeId` | Pampubliko | — | Kunin ang kasalukuyang plano para sa isang uri ng plano |
-| GET | `/public/signup/:churchId` | Pampubliko | — | Mga planong bukas para sa self-signup, bawat isa may mga posisyon nito para sa self-signup (kasama ang `filledCount` ng mga assignment na Accepted/Unconfirmed) at mga oras. Walang pangalan ng boluntaryo |
-| GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` para sa mga posisyon ng plano para sa self-signup (mga display name ng mga naka-assign na Accepted/Unconfirmed). Nagbabalik ng `[]` maliban kung naka-on ang `showVolunteerNames` ng plano |
-| POST | `/` | JWT | — | Lumikha o mag-update ng mga plano (tumatanggap ng isang object o array) |
-| POST | `/copy/:id` | JWT | Ministry edit | Kopyahin ang isang plano kasama ang mga posisyon, oras, assignment, at mga item ng service order. Kasama sa body ang `ministryId`, `serviceDate`, `copyMode` ("none", "positions", "all") at `copyServiceOrder` (boolean). Kung walang `targetPlanId`, gagawa ng bagong plano, at ang `notes`, `signupDeadlineHours`, `showVolunteerNames`, at `autoReplaceOnDecline` ay dinadala mula sa pinagmulang plano maliban kung ang body ang magbibigay ng mga ito. Kapag may `targetPlanId`, ang kopya ay pupunan ang umiiral na planong iyon (dapat kaya mong i-edit ito). Tinatawag ng opsyong **Repeat weekly** ng B1Admin ang endpoint na ito minsan kada linggo, at bawat tawag ay kumokopya mula sa planong ginawa noong nakaraang linggo |
-| POST | `/textRange` | JWT | `texting.send` + ministry edit | I-text ang bawat boluntaryong naka-assign sa isang date range sa pamamagitan ng texting provider ng simbahan. Body: `{ startDate, endDate, ministryId, planTypeId?, message }` (hanggang 1600 characters ang message; nireresolba ang merge fields para sa bawat recipient). Ibinabalik ang preview counts kasama ang `recipientCount`, `successCount`, `failCount`, at `error` (`no_provider` o `insufficient_credits`) kapag maagang huminto ang pagpapadala |
-| POST | `/autofill/:id` | JWT | — | Awtomatikong punan ang mga takdang-aralin ng boluntaryo para sa isang plano. Body: `{ teams: [{ positionId, personIds }] }` |
-| DELETE | `/:id` | JWT | — | Burahin ang isang plano at lahat ng kaugnay na oras, takdang-aralin, posisyon, at mga item ng plano |
+| GET | `/public/current/:planTypeId` | Public | — | Kunin ang kasalukuyang plano para sa isang plan type |
+| GET | `/public/signup/:churchId` | Public | — | Mga planong bukas para sa self-signup, pinakamalapit muna, bawat isa ay may kanilang self-signup na posisyon (naka-sort ayon sa `categoryName`, pagkatapos `name`, kasama ang `filledCount` ng mga Accepted/Unconfirmed na assignment) at mga oras. Walang pangalan ng volunteer. Kapag ang church setting na `volunteerSignupNextOnly` ay `"true"`, ang unang plano lamang ng bawat plan type ang ibinabalik |
+| GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` para sa mga self-signup na posisyon ng plano (mga display name ng mga Accepted/Unconfirmed na assignee). Nagbabalik ng `[]` maliban kung naka-on ang `showVolunteerNames` ng plano |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga plano (tumatanggap ng isang object o array) |
+| POST | `/copy/:id` | JWT | Ministry edit | Kopyahin ang isang plano kasama ang mga posisyon, oras, assignment, at mga item ng service order. Kasama sa body ang `ministryId`, `serviceDate`, `copyMode` (`"none"`, `"positions"`, `"all"`) at `copyServiceOrder` (boolean). Kung walang `targetPlanId`, gagawa ng bagong plano, at ang `notes`, `signupDeadlineHours`, `showVolunteerNames`, at `autoReplaceOnDecline` ay ililipat mula sa pinagmulang plano maliban kung ibigay ng body ang mga ito. Kapag may `targetPlanId`, ang kopya ay pupunuin ang umiiral na planong iyon (dapat may karapatan ang tumatawag na i-edit ito). Tinatawag ng opsyong **Repeat weekly** ng B1Admin ang endpoint na ito minsan bawat linggo, bawat beses na kumokopya mula sa planong ginawa noong nakaraang linggo |
+| POST | `/textRange` | JWT | `texting.send` + ministry edit | I-text ang bawat volunteer na naka-assign sa saklaw ng petsa sa pamamagitan ng texting provider ng simbahan. Body: `{ startDate, endDate, ministryId, planTypeId?, message }` (mensaheng hanggang 1600 karakter; nireresolba ang mga merge field para sa bawat tatanggap). Nagbabalik ng mga bilang ng preview kasama ang `recipientCount`, `successCount`, `failCount`, at `error` (`no_provider` o `insufficient_credits`) kapag natigil nang maaga ang pagpapadala |
+| POST | `/autofill/:id` | JWT | — | Awtomatikong punan ang mga volunteer assignment para sa isang plano. Body: `{ teams: [{ positionId, personIds }] }` |
+| DELETE | `/:id` | JWT | — | Burahin ang isang plano at lahat ng kaugnay na oras, assignment, posisyon, at item ng plano |
 
-### Halimbawa: Kopyahin ang isang Plano
+### Halimbawa: Kopyahin ang Isang Plano
 
 ```
 POST /doing/plans/copy/abc-123
@@ -58,56 +58,56 @@ Authorization: Bearer <token>
 
 Base path: `/doing/planTypes`
 
-Nag-eextend ng CRUD base class (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` — walang pagsusuri ng pahintulot).
+Nagmamana mula sa CRUD base class (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` -- walang permission check).
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Ilista ang lahat ng uri ng plano |
-| GET | `/:id` | JWT | — | Kunin ang isang uri ng plano ayon sa ID |
-| GET | `/ids?ids=` | JWT | — | Kunin ang maraming uri ng plano ayon sa mga ID na pinaghiwalay ng kuwit |
-| GET | `/ministryId/:ministryId` | JWT | — | Kunin ang mga uri ng plano para sa isang ministeryo |
-| POST | `/` | JWT | — | Lumikha o mag-update ng mga uri ng plano |
-| DELETE | `/:id` | JWT | — | Burahin ang isang uri ng plano |
+| GET | `/` | JWT | — | Ilista ang lahat ng plan type |
+| GET | `/:id` | JWT | — | Kunin ang isang plan type ayon sa ID |
+| GET | `/ids?ids=` | JWT | — | Kunin ang maraming plan type ayon sa mga ID na pinaghihiwalay ng kuwit |
+| GET | `/ministryId/:ministryId` | JWT | — | Kunin ang mga plan type ng isang ministry |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga plan type |
+| DELETE | `/:id` | JWT | — | Burahin ang isang plan type |
 
 ## Mga Item ng Plano
 
 Base path: `/doing/planItems`
 
-Pinapamahalaan ang mga item ng service order (mga header, seksyon, kanta, atbp.) na inorganisa sa isang parent-child na istrukturang puno.
+Pinamamahalaan ang mga item ng service order (mga header, seksyon, awit, atbp.) na nakaayos sa isang parent-child tree structure.
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/:id` | JWT | — | Kunin ang isang item ng plano ayon sa ID |
-| GET | `/ids?ids=` | JWT | — | Kunin ang maraming item ng plano ayon sa mga ID na pinaghiwalay ng kuwit |
-| GET | `/plan/:planId` | JWT | — | Kunin ang lahat ng item ng plano para sa isang plano (nagbabalik ng istrukturang puno) |
-| GET | `/presenter/:churchId/:planId` | Pampubliko | — | Kunin ang mga item ng plano para sa presenter view (nagbabalik ng istrukturang puno) |
-| POST | `/` | JWT | — | Lumikha o mag-update ng mga item ng plano |
-| POST | `/sort` | JWT | — | I-update ang sort order para sa isang item ng plano (muling isinasaayos ang mga kapatid) |
+| GET | `/ids?ids=` | JWT | — | Kunin ang maraming item ng plano ayon sa mga ID na pinaghihiwalay ng kuwit |
+| GET | `/plan/:planId` | JWT | — | Kunin ang lahat ng item ng plano (nagbabalik ng tree structure) |
+| GET | `/presenter/:churchId/:planId` | Public | — | Kunin ang mga item ng plano para sa presenter view (nagbabalik ng tree structure) |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga item ng plano |
+| POST | `/sort` | JWT | — | I-update ang sort order ng isang item ng plano (muling inaayos ang mga kapatid) |
 | DELETE | `/:id` | JWT | — | Burahin ang isang item ng plano |
 
 ## Feed ng Plano
 
 Base path: `/doing/planFeed`
 
-Nagbibigay ng mga feed ng item ng plano para sa presenter. Kung walang mga item ng plano, awtomatikong nag-populate mula sa Lessons.church venue feed gamit ang `contentId` ng plano.
+Nagbibigay ng mga feed ng item ng plano para sa presenter. Kung walang umiiral na item ng plano, awtomatikong pupunuin mula sa venue feed ng Lessons.church gamit ang `contentId` ng plano.
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/presenter/:churchId/:planId` | Pampubliko | — | Kunin ang feed ng plano para sa presenter (awtomatikong nag-populate mula sa venue feed kung walang laman) |
+| GET | `/presenter/:churchId/:planId` | Public | — | Kunin ang plan feed para sa presenter (awtomatikong pinupunan mula sa venue feed kapag walang laman) |
 
 ## Mga Posisyon
 
 Base path: `/doing/positions`
 
-Nag-eextend ng CRUD base class (GET `/:id`, POST `/`, DELETE `/:id` — walang pagsusuri ng pahintulot).
+Nagmamana mula sa CRUD base class (GET `/:id`, POST `/`, DELETE `/:id` -- walang permission check).
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/:id` | JWT | — | Kunin ang isang posisyon ayon sa ID |
-| GET | `/ids?ids=` | JWT | — | Kunin ang maraming posisyon ayon sa mga ID na pinaghiwalay ng kuwit |
-| GET | `/plan/ids?planIds=` | JWT | — | Kunin ang mga posisyon para sa maraming plano ayon sa mga plan ID na pinaghiwalay ng kuwit |
-| GET | `/plan/:planId` | JWT | — | Kunin ang lahat ng posisyon para sa isang plano |
-| POST | `/` | JWT | — | Lumikha o mag-update ng mga posisyon |
+| GET | `/ids?ids=` | JWT | — | Kunin ang maraming posisyon ayon sa mga ID na pinaghihiwalay ng kuwit |
+| GET | `/plan/ids?planIds=` | JWT | — | Kunin ang mga posisyon ng maraming plano ayon sa mga plan ID na pinaghihiwalay ng kuwit |
+| GET | `/plan/:planId` | JWT | — | Kunin ang lahat ng posisyon ng isang plano |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga posisyon |
 | DELETE | `/:id` | JWT | — | Burahin ang isang posisyon |
 
 ## Mga Oras
@@ -116,29 +116,30 @@ Base path: `/doing/times`
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/all` | JWT | — | Ilista ang lahat ng oras para sa simbahan |
+| GET | `/all` | JWT | — | Ilista ang lahat ng oras ng simbahan |
 | GET | `/:id` | JWT | — | Kunin ang isang oras ayon sa ID |
-| GET | `/plans?planIds=` | JWT | — | Kunin ang mga oras para sa maraming plano ayon sa mga plan ID na pinaghiwalay ng kuwit |
-| GET | `/plan/:planId` | JWT | — | Kunin ang lahat ng oras para sa isang plano |
-| POST | `/` | JWT | — | Lumikha o mag-update ng mga oras |
+| GET | `/plans?planIds=` | JWT | — | Kunin ang mga oras ng maraming plano ayon sa mga plan ID na pinaghihiwalay ng kuwit |
+| GET | `/plan/:planId` | JWT | — | Kunin ang lahat ng oras ng isang plano |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga oras |
 | DELETE | `/:id` | JWT | — | Burahin ang isang oras |
 
-## Mga Takdang-aralin
+## Mga Assignment
 
 Base path: `/doing/assignments`
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/my` | JWT | — | Kunin ang mga takdang-aralin para sa kasalukuyang gumagamit |
-| GET | `/:id` | JWT | — | Kunin ang isang takdang-aralin ayon sa ID |
-| GET | `/plan/ids?planIds=` | JWT | — | Kunin ang mga takdang-aralin para sa maraming plano ayon sa mga plan ID na pinaghiwalay ng kuwit |
-| GET | `/plan/:planId` | JWT | — | Kunin ang lahat ng takdang-aralin para sa isang plano |
-| POST | `/` | JWT | — | Lumikha o mag-update ng mga takdang-aralin (default na katayuan ay "Unconfirmed") |
-| POST | `/accept/:id` | JWT | — | Tanggapin ang isang takdang-aralin (dapat ang nakatalagang tao) |
-| POST | `/decline/:id` | JWT | — | Tanggihan ang isang takdang-aralin (dapat ang nakatalagang tao) |
-| DELETE | `/:id` | JWT | — | Burahin ang isang takdang-aralin |
+| GET | `/my` | JWT | — | Kunin ang mga assignment ng kasalukuyang user |
+| GET | `/my/upcoming` | JWT | — | Hanggang 20 sa mga assignment ng kasalukuyang user sa mga planong mula kahapon pataas (ang mga penciled-in o `prepared` na plano ay nilalaktawan), pinakamalapit muna: `{ assignmentId, status, positionName, planId, planName, serviceDate }`. Sumusuporta sa serving preview sa home page ng member |
+| GET | `/:id` | JWT | — | Kunin ang isang assignment ayon sa ID |
+| GET | `/plan/ids?planIds=` | JWT | — | Kunin ang mga assignment ng maraming plano ayon sa mga plan ID na pinaghihiwalay ng kuwit |
+| GET | `/plan/:planId` | JWT | — | Kunin ang lahat ng assignment ng isang plano |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga assignment (ginagawang "Unconfirmed" ang status bilang default) |
+| POST | `/accept/:id` | JWT | — | Tanggapin ang isang assignment (dapat ang naka-assign na tao) |
+| POST | `/decline/:id` | JWT | — | Tanggihan ang isang assignment (dapat ang naka-assign na tao) |
+| DELETE | `/:id` | JWT | — | Burahin ang isang assignment |
 
-### Halimbawa: Tanggapin ang isang Takdang-aralin
+### Halimbawa: Tanggapin ang Isang Assignment
 
 ```
 POST /doing/assignments/accept/assign-123
@@ -159,15 +160,15 @@ Authorization: Bearer <token>
 
 Base path: `/doing/blockoutDates`
 
-Nag-eextend ng CRUD base class (GET `/:id`, DELETE `/:id` — walang pagsusuri ng pahintulot).
+Nagmamana mula sa CRUD base class (GET `/:id`, DELETE `/:id` -- walang permission check).
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/:id` | JWT | — | Kunin ang isang blockout date ayon sa ID |
-| GET | `/ids?ids=` | JWT | — | Kunin ang maraming blockout date ayon sa mga ID na pinaghiwalay ng kuwit |
-| GET | `/my` | JWT | — | Kunin ang mga blockout date para sa kasalukuyang gumagamit |
-| GET | `/upcoming` | JWT | — | Kunin ang lahat ng paparating na blockout date para sa simbahan |
-| POST | `/` | JWT | — | Lumikha o mag-update ng mga blockout date (default na personId ay kasalukuyang gumagamit kung hindi ibinigay) |
+| GET | `/ids?ids=` | JWT | — | Kunin ang maraming blockout date ayon sa mga ID na pinaghihiwalay ng kuwit |
+| GET | `/my` | JWT | — | Kunin ang mga blockout date ng kasalukuyang user |
+| GET | `/upcoming` | JWT | — | Kunin ang lahat ng paparating na blockout date ng simbahan |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga blockout date (ginagawang personId ang kasalukuyang user kung walang ibinigay) |
 | DELETE | `/:id` | JWT | — | Burahin ang isang blockout date |
 
 ## Mga Gawain
@@ -176,15 +177,15 @@ Base path: `/doing/tasks`
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Kunin ang mga bukas na gawain para sa kasalukuyang gumagamit |
+| GET | `/` | JWT | — | Kunin ang mga bukas na gawain ng kasalukuyang user |
 | GET | `/:id` | JWT | — | Kunin ang isang gawain ayon sa ID |
-| GET | `/:id/contact` | JWT | Can view the card | Contact info para sa taong tungkol sa workflow card: `{ personId, displayName, mobilePhone, email }`. Nagbibigay-daan sa assigned na caller na walang access sa People na maabot ang tao |
-| GET | `/closed` | JWT | — | Kunin ang mga saradong gawain para sa kasalukuyang gumagamit |
-| GET | `/timeline?taskIds=` | JWT | — | Kunin ang data ng timeline para sa mga gawain ayon sa mga task ID na pinaghiwalay ng kuwit |
-| GET | `/directoryUpdate/:personId` | JWT | — | Kunin ang gawain ng pag-update ng direktoryo para sa isang tao |
-| POST | `/` | JWT | — | Lumikha o mag-update ng mga gawain. Magdagdag ng `?type=directoryUpdate` para pangasiwaan ang mga gawain ng pag-update ng direktoryo (awtomatikong nag-a-upload ng mga larawan) |
-| POST | `/:id/conversation` | JWT | `tasks.edit` o assignee ng card | Ikabit ang notes conversation sa card. Body: `{ conversationId }`. Ang unang conversation na naikabit ang nananaig; ang mga susunod na tawag ay ibinabalik ang card nang walang pagbabago |
-| POST | `/loadForGroups` | JWT | — | I-load ang mga gawain para sa mga partikular na grupo. Body: `{ groupIds: [], status: "Open" }` |
+| GET | `/:id/contact` | JWT | Can view the card | Impormasyon sa contact ng taong tinutukoy ng workflow card: `{ personId, displayName, mobilePhone, email }`. Nagbibigay-daan sa isang naka-assign na caller na walang People access na maabot ang tao |
+| GET | `/closed` | JWT | — | Kunin ang mga sarado nang gawain ng kasalukuyang user |
+| GET | `/timeline?taskIds=` | JWT | — | Kunin ang timeline data ng mga gawain ayon sa mga task ID na pinaghihiwalay ng kuwit |
+| GET | `/directoryUpdate/:personId` | JWT | — | Kunin ang directory update task ng isang tao |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga gawain. Idagdag ang `?type=directoryUpdate` upang hawakan ang mga directory update task (awtomatikong nag-u-upload ng mga larawan) |
+| POST | `/:id/conversation` | JWT | `tasks.edit` o card assignee | Ikabit ang usapan ng mga tala sa isang card. Body: `{ conversationId }`. Ang unang nakabit na usapan ang mananaig; ang mga susunod na tawag ay nagbabalik ng card na hindi nagbago |
+| POST | `/loadForGroups` | JWT | — | I-load ang mga gawain para sa mga partikular na group. Body: `{ groupIds: [], status: "Open" }` |
 
 ## Mga Automation
 
@@ -192,10 +193,10 @@ Base path: `/doing/automations`
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Ilista ang lahat ng automation para sa simbahan |
+| GET | `/` | JWT | — | Ilista ang lahat ng automation ng simbahan |
 | GET | `/:id` | JWT | — | Kunin ang isang automation ayon sa ID |
-| GET | `/check` | Pampubliko | — | Mag-trigger ng pagsusuri ng lahat ng automation |
-| POST | `/` | JWT | — | Lumikha o mag-update ng mga automation |
+| GET | `/check` | Public | — | I-trigger ang pagsuri sa lahat ng automation |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga automation |
 | DELETE | `/:id` | JWT | — | Burahin ang isang automation |
 
 ## Mga Aksyon
@@ -207,70 +208,70 @@ Tinutukoy ng mga aksyon kung ano ang mangyayari kapag na-trigger ang isang autom
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/:id` | JWT | — | Kunin ang isang aksyon ayon sa ID |
-| GET | `/automation/:id` | JWT | — | Kunin ang lahat ng aksyon para sa isang automation |
-| POST | `/` | JWT | — | Lumikha o mag-update ng mga aksyon |
+| GET | `/automation/:id` | JWT | — | Kunin ang lahat ng aksyon ng isang automation |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga aksyon |
 | DELETE | `/:id` | JWT | — | Burahin ang isang aksyon |
 
-## Mga Kundisyon
+## Mga Kondisyon
 
 Base path: `/doing/conditions`
 
-Tinutukoy ng mga kundisyon ang mga pamantayan na nagti-trigger ng isang automation.
+Tinutukoy ng mga kondisyon ang pamantayan na nagti-trigger ng isang automation.
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Kunin ang isang kundisyon ayon sa ID |
-| GET | `/automation/:id` | JWT | — | Kunin ang lahat ng kundisyon para sa isang automation |
-| POST | `/` | JWT | — | Lumikha o mag-update ng mga kundisyon |
-| DELETE | `/:id` | JWT | — | Burahin ang isang kundisyon |
+| GET | `/:id` | JWT | — | Kunin ang isang kondisyon ayon sa ID |
+| GET | `/automation/:id` | JWT | — | Kunin ang lahat ng kondisyon ng isang automation |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga kondisyon |
+| DELETE | `/:id` | JWT | — | Burahin ang isang kondisyon |
 
 ## Mga Conjunction
 
 Base path: `/doing/conjunctions`
 
-Nag-uugnay ang mga conjunction ng maraming kundisyon sa isang automation (AND/OR logic).
+Pinag-uugnay ng mga conjunction ang maraming kondisyon sa isang automation (AND/OR logic).
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/:id` | JWT | — | Kunin ang isang conjunction ayon sa ID |
-| GET | `/automation/:id` | JWT | — | Kunin ang lahat ng conjunction para sa isang automation |
-| POST | `/` | JWT | — | Lumikha o mag-update ng mga conjunction |
+| GET | `/automation/:id` | JWT | — | Kunin ang lahat ng conjunction ng isang automation |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga conjunction |
 | DELETE | `/:id` | JWT | — | Burahin ang isang conjunction |
 
 ## Mga Auth ng Content Provider
 
 Base path: `/doing/contentProviderAuths`
 
-Nag-eextend ng CRUD base class (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` — walang pagsusuri ng pahintulot).
+Nagmamana mula sa CRUD base class (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` -- walang permission check).
 
-Pinapamahalaan ang mga talaan ng OAuth authentication para sa mga panlabas na content provider (hal., mga integrasyon ng presentation software).
+Pinamamahalaan ang mga OAuth authentication record para sa mga external na content provider (hal., mga integration ng presentation software).
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | Ilista ang lahat ng auth ng content provider |
 | GET | `/:id` | JWT | — | Kunin ang isang auth ng content provider ayon sa ID |
-| GET | `/ids?ids=` | JWT | — | Kunin ang maraming auth ng content provider ayon sa mga ID na pinaghiwalay ng kuwit |
-| GET | `/ministry/:ministryId` | JWT | — | Kunin ang lahat ng auth ng content provider para sa isang ministeryo |
-| GET | `/ministry/:ministryId/:providerId` | JWT | — | Kunin ang talaan ng auth para sa isang partikular na ministeryo at provider |
-| POST | `/` | JWT | — | Lumikha o mag-update ng mga auth ng content provider |
+| GET | `/ids?ids=` | JWT | — | Kunin ang maraming auth ng content provider ayon sa mga ID na pinaghihiwalay ng kuwit |
+| GET | `/ministry/:ministryId` | JWT | — | Kunin ang lahat ng auth ng content provider para sa isang ministry |
+| GET | `/ministry/:ministryId/:providerId` | JWT | — | Kunin ang auth record para sa isang partikular na ministry at provider |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga auth ng content provider |
 | DELETE | `/:id` | JWT | — | Burahin ang isang auth ng content provider |
 
 ## Provider Proxy
 
 Base path: `/doing/providerProxy`
 
-Nagpo-proxy ng mga kahilingan sa mga panlabas na content provider (hal., ProPresenter, EasyWorship). Awtomatikong hina-handle ang token refresh kapag nag-expire ang mga token.
+Ipinapasa ang mga kahilingan sa mga external na content provider (hal., ProPresenter, EasyWorship). Awtomatikong humahawak ng token refresh kapag nag-expire ang mga token.
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
 | POST | `/browse` | JWT | — | I-browse ang mga file ng content provider. Body: `{ ministryId, providerId, path }` |
-| POST | `/getPresentations` | JWT | — | Kunin ang mga presentation mula sa isang content provider. Body: `{ ministryId, providerId, path }` |
-| POST | `/getPlaylist` | JWT | — | Kunin ang isang playlist mula sa isang content provider. Body: `{ ministryId, providerId, path, resolution }` |
+| POST | `/getPresentations` | JWT | — | Kunin ang mga presentation mula sa content provider. Body: `{ ministryId, providerId, path }` |
+| POST | `/getPlaylist` | JWT | — | Kunin ang playlist mula sa content provider. Body: `{ ministryId, providerId, path, resolution }` |
 | POST | `/getInstructions` | JWT | — | Kunin ang mga tagubilin para sa isang content item. Body: `{ ministryId, providerId, path }` |
-| POST | `/getExpandedInstructions` | JWT | — | Kunin ang mga pinalawak na tagubilin para sa isang content item. Body: `{ ministryId, providerId, path }` |
+| POST | `/getExpandedInstructions` | JWT | — | Kunin ang pinalawak na mga tagubilin para sa isang content item. Body: `{ ministryId, providerId, path }` |
 
 ## Mga Kaugnay na Pahina
 
-- [Mga Endpoint ng Membership](./membership) — Mga tao, grupo, tungkulin, at mga pahintulot
-- [Mga Endpoint ng Attendance](./attendance) — Pagsubaybay ng serbisyo at pagbisita
-- [Istraktura ng Module](../module-structure) — Mga pattern ng organisasyon ng code
+- [Membership Endpoints](./membership) -- Mga tao, group, role, at permission
+- [Attendance Endpoints](./attendance) -- Pagsubaybay sa serbisyo at pagbisita
+- [Module Structure](../module-structure) -- Mga pattern ng organisasyon ng code

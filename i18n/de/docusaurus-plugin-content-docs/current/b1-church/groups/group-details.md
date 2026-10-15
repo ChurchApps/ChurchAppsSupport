@@ -6,69 +6,72 @@ title: "Gruppendetails"
 
 <div class="article-intro">
 
-Wenn Sie auf eine Gruppe auf der Seite "Gruppen" klicken, werden Sie zur Seite mit den Gruppendetails weitergeleitet. Was Sie sehen, hängt davon ab, ob Sie angemeldet sind oder nicht. Angemeldete Mitglieder haben Zugriff auf zusätzliche Reiter und Funktionen.
+Wenn Sie auf der Seite Gruppen eine Gruppe anklicken, gelangen Sie zur Detailseite der Gruppe. Was Sie dort sehen, hängt davon ab, ob Sie angemeldet sind. Angemeldete Mitglieder sehen zusätzliche Abschnitte und Funktionen.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Suchen Sie eine Gruppe zum Anzeigen, indem Sie [Gruppen durchsuchen](./browsing-groups.md).
-- Für vollständigen Zugriff auf alle Reiter [melden Sie sich](../getting-started/logging-in.md) bei Ihrem Konto an.
+- Suchen Sie eine Gruppe, die Sie ansehen möchten, indem Sie [Gruppen durchsuchen](./browsing-groups.md).
+- Für den vollen Zugriff auf alle Abschnitte [melden Sie sich](../getting-started/logging-in.md) bei Ihrem Konto an.
 
 </div>
 
-## Besucheransicht (Nicht angemeldet)
+## Besucheransicht (nicht angemeldet)
 
 Wenn Sie nicht angemeldet sind, sehen Sie Folgendes:
 
-- **Herobereich** -- Ein großes Banner-Bereich, das das Foto, den Namen, die Treffenszeit und den Treffensort der Gruppe anzeigt.
-- **Beschreibung** -- Die vollständige Beschreibung der Gruppe, die ihren Zweck und Erwartungen erläutert.
-- **Leiter** -- Avatare und Namen der Gruppenleiter. Sie können auf den Namen eines Leiters klicken, um sein Profil anzuzeigen.
-- **Kalender-Events** -- Bis zu drei bevorstehende Events für die Gruppe werden angezeigt, jeweils mit Datum und Event-Titel. Wenn die Gruppe keine bevorstehenden Events hat, ist dieser Bereich ausgeblendet.
-- **Zum Beitreten anmelden** -- Eine Schaltfläche am Ende der Seite. Melden Sie sich an (oder erstellen Sie ein Konto), um der Gruppe beizutreten oder um Beitritt zu beantragen. Nach dem Anmelden werden Sie zurück zur Gruppe gebracht und direkt zum Beitrittsprozess geleitet.
+- **Kopfbereich** -- Der Name der Gruppe mit Treffzeit und Ort. Auf einem Computer erscheint darüber das Foto der Gruppe.
+- **Zum Beitreten anmelden** -- Eine Schaltfläche unter dem Namen der Gruppe. Melden Sie sich an (oder legen Sie ein Konto an), um der Gruppe beizutreten oder eine Beitrittsanfrage zu stellen. Nach der Anmeldung kehren Sie zur Gruppe zurück und gelangen direkt zum Schritt des Beitritts.
+- **Über uns** -- Die vollständige Beschreibung der Gruppe mit Zweck und Erwartungen.
+- **Leitungen** -- Die Namen der Gruppenleitungen. Tippen Sie auf einen Namen, um das Profil anzuzeigen.
+- **Kommende Veranstaltungen** -- Bis zu drei kommende Veranstaltungen der Gruppe, jeweils mit Datum, Uhrzeit und Titel. Gibt es eine Anmeldung, erscheint ein Link **Anmelden**. Hat die Gruppe keine kommenden Veranstaltungen, ist dieser Abschnitt ausgeblendet.
 
-## Mitgliedersicht (Angemeldet)
+## Mitgliederansicht (angemeldet)
 
-Wenn Sie angemeldet, aber kein Mitglied der Gruppe sind, sehen Sie den Herobereich und die Beschreibung der Gruppe zusammen mit der Beitrittsoption für die Gruppe (siehe [Einer Gruppe beitreten](#einer-gruppe-beitreten) unten). Die unten beschriebenen Reiter erscheinen, sobald Sie Mitglied werden.
+Wenn Sie angemeldet sind, aber nicht Mitglied der Gruppe, sehen Sie den Kopfbereich und den Abschnitt **Über uns** sowie die Beitrittsoption für die Gruppe (siehe unten [Einer Gruppe beitreten](#joining-a-group)). Die folgend beschriebenen Abschnitte erscheinen, sobald Sie Mitglied sind.
 
-Wenn Sie Mitglied sind, zeigt die Seite mit den Gruppendetails den Herobereich zusammen mit einer Seitenleiste mit Reitern. Wenn Ihre Gruppe mit einem Lessons.church-Plantyp verknüpft ist und die Lektion dieser Woche Inhalte zum Mitnehmen für Eltern hat, wird eine Karte **Diese Woche's Lektion** zwischen dem Herobereich und den Reitern angezeigt (nur für Mitglieder).
+Als Mitglied zeigt der Kopfbereich den Namen der Gruppe, Treffttag, Zeit und Ort sowie die Schaltfläche **Chat öffnen**, sofern Ihre Gemeinde den Gruppenchat aktiviert hat. Leiten Sie die Gruppe, erscheint unter dem Namen die Markierung **Sie · Leitung**. Auf einem Computer befindet sich der Kopfbereich links in einer Spalte mit dem Foto der Gruppe, und die Abschnitte stehen rechts daneben.
 
-Die verfügbaren Reiter sind:
+Die Seite ist ein Blatt aus Abschnitten. Jeder zeigt eine kurze Vorschau, und ein Link in der Kopfzeile des Abschnitts öffnet die vollständige Ansicht. Tippen Sie auf **Zurück zu** *Gruppenname*, um zurückzukehren. Die verfügbaren Abschnitte sind:
 
-- **Über** -- Die vollständige Beschreibung der Gruppe mit umfangreicher Textformatierung. Wird nur angezeigt, wenn die Gruppe eine Beschreibung hat.
-- **Pläne** -- Die Servicepläne der Gruppe. Wird nur angezeigt, wenn die Gruppe Pläne hat.
-- **Nachrichten** -- Ein Bereich für Gruppenmitglieder zum Posten von Nachrichten und zur Interaktion miteinander. Wird nur Mitgliedern angezeigt und nur, wenn Ihre Kirche den Gruppen-Chat für diese Gruppe aktiviert hat. Weitere Informationen finden Sie unter [Gruppengespräche](./conversations.md).
-- **Mitglieder** -- Eine Liste aller Mitglieder in der Gruppe mit ihrem Foto und Namen. Sie können auf den Namen eines Mitglieds klicken, um sein Profil im [Mitgliedsverzeichnis](../community/member-directory.md) anzuzeigen.
-- **Anwesenheit** -- Sichtbar nur für Gruppenleiter (und Personal mit Anwesenheitsberechtigung). Ermöglicht die Verfolgung, wer an Gruppentreffen teilgenommen hat.
-- **Events** -- Der Kalender der Gruppe mit Treffen und Events. Mit den Pfeilen wechseln Sie zwischen den Monaten. Zwei Schaltflächen unter dem Monatsnamen wechseln die Ansicht: Die **Monatsansicht** (das Kalendersymbol) zeigt ein Kalenderraster, in dem Sie auf einen Tag tippen, um dessen Events zu sehen, und die **Listenansicht** (das Listensymbol) zeigt die Events des Monats in zeitlicher Reihenfolge, nach Tagen gruppiert. Wenn Sie den aktuellen Monat ansehen, beginnt die Liste heute und zeigt daher nur, was noch bevorsteht.
-- **Ressourcen** -- Freigegebene Dateien und Links, die für die Gruppe gepostet wurden. Sie können hochgeladene Dateien herunterladen oder auf verknüpfte Ressourcen zugreifen.
+- **Nächste Veranstaltung** -- Die nächste kommende Veranstaltung der Gruppe mit den Schaltflächen **Dabei** / **Vielleicht** / **Nicht dabei** (siehe [Zusagen zu Veranstaltungen](./event-rsvps.md)). Tippen Sie auf **Alle Veranstaltungen**, um den Kalender der Gruppe zu öffnen: Mit den Pfeilen wechseln Sie zwischen den Monaten, und Sie können zwischen **Kalender** (ein Monatsraster, in dem Sie auf einen Tag tippen, um dessen Veranstaltungen zu sehen) und **Liste** (die Veranstaltungen des Monats in zeitlicher Reihenfolge, nach Tagen gruppiert) wechseln. Betrachten Sie den laufenden Monat, beginnt die Liste heute und zeigt nur noch Kommendes. Haben die Veranstaltungen der Gruppe Schlagwörter, können Sie danach filtern.
+- **Lektion dieser Woche** -- Ist Ihre Gruppe einer Planart von Lessons.church zugeordnet und enthält die Lektion dieser Woche Inhalte zum Mitnehmen für Eltern, erscheint sie unter **Nächste Veranstaltung** (nur für Mitglieder).
+- **Nachrichten** -- Die neuesten Nachrichten aus dem Gruppenchat. Tippen Sie auf **Chat öffnen**, um zu lesen und zu schreiben. Dieser Abschnitt wird nur Mitgliedern angezeigt, und nur wenn Ihre Gemeinde den Gruppenchat für diese Gruppe aktiviert hat. Weitere Einzelheiten finden Sie unter [Gruppengespräche](./conversations.md).
+- **Mitglieder** -- Eine Vorschau der Mitglieder der Gruppe (Leitungen zuerst) sowie die Anzahl der Mitglieder und Leitungen. Tippen Sie auf **Alle Mitglieder** für die vollständige Liste, die Sie mit **Mitglieder suchen** durchsuchen können. Tippen Sie auf den Namen eines Mitglieds, um dessen Profil im [Mitgliederverzeichnis](../community/member-directory.md) zu öffnen.
+- **Materialien** -- Die ersten geteilten Dateien und Links der Gruppe. Tippen Sie auf **Alle Materialien**, um alle zu sehen. Hochgeladene Dateien können Sie herunterladen, verlinkte Materialien öffnen.
+- **Pläne** -- Der nächste Dienstplan der Gruppe. Tippen Sie auf **Alle Pläne**, um alle zu sehen. Wird nur angezeigt, wenn die Gruppe Pläne hat.
+- **Anwesenheit** -- Nur für Gruppenleitungen (und Mitarbeitende mit Anwesenheitsberechtigung) sichtbar. Zeigt an, wann die Anwesenheit zuletzt erfasst wurde. Tippen Sie auf **Anwesenheit erfassen**, um zu notieren, wer an einem Gruppentreffen teilgenommen hat.
+- **Über uns** -- Die vollständige Beschreibung der Gruppe mit formatiertem Text. Wird nur angezeigt, wenn die Gruppe eine Beschreibung hat.
 
-## Leiter-Funktionen
+Mitglieder finden außerdem unten auf der Seite den Link **Gruppe verlassen**.
 
-Wenn Sie ein Leiter der Gruppe sind, haben Sie zusätzliche Bearbeitungsfunktionen:
+## Funktionen für Leitungen
 
-- **Events erstellen und bearbeiten** -- Fügen Sie Events zum Gruppenkalender aus dem Reiter **Events** hinzu. Beim Erstellen eines Events können Sie Räume und Ressourcen gleichzeitig reservieren -- wählen Sie aus verfügbaren Räumen und Ressourcen, legen Sie optionale Setup- und Abbauzeiten fest, und die Buchungsanfrage wird automatisch zur Genehmigung eingereicht.
-- **Wiederkehrende Events bearbeiten** -- Wenn Sie ein wiederkehrendes Event zum Bearbeiten öffnen, fragt B1 zuerst, welche Termine geändert werden sollen: **Nur dieser Termin**, **Dieser und alle folgenden Termine** oder **Alle Termine**. Wählen Sie eine Option und klicken Sie auf **Speichern**, um das Event zu öffnen. Wenn Sie **Nur dieser Termin** gewählt haben, ist der Schalter **Recurring** ausgeblendet, und Ihre Änderungen (oder ein Löschen) gelten nur für diesen einen Termin.
-- **Event-Erinnerungen festlegen** -- Schalten Sie beim Bearbeiten eines bestehenden Events **Send reminders** ein, um Personen vor dem Beginn daran zu erinnern. Legen Sie fest, wann sie versendet werden, die **Time of Day**, **Who should be reminded?** und optional eine **Message**, und wählen Sie dann unter **Send By** **Push**, **Email** oder, wenn Ihre Kirche Textnachrichten eingerichtet hat, **Text**. Textnachrichten gehen nur an Personen, die Texterinnerungen in ihren [Benachrichtigungseinstellungen](../getting-started/notification-preferences.md) aktiviert haben.
-- **Ressourcen verwalten** -- Laden Sie Dateien hoch (bis zu 100 MB Speicher), fügen Sie Links hinzu oder löschen Sie vorhandene Ressourcen.
-- **Anwesenheit nachverfolgung** -- Erfassen Sie die Anwesenheit bei Gruppensitzungen aus dem Reiter **Anwesenheit**.
+Als Leitung der Gruppe haben Sie zusätzliche Bearbeitungsmöglichkeiten:
+
+- **Veranstaltungen anlegen und bearbeiten** -- Tippen Sie auf **Alle Veranstaltungen** und dann auf **Veranstaltung hinzufügen**, um dem Gruppenkalender eine Veranstaltung hinzuzufügen. Beim Anlegen können Sie zusammen mit der Veranstaltung Räume und Ressourcen reservieren: Wählen Sie aus den verfügbaren Räumen und Ressourcen, legen Sie optional Auf- und Abbauzeiten fest. Die Buchungsanfrage wird automatisch zur Genehmigung eingereicht.
+- **Wiederkehrende Veranstaltungen bearbeiten** -- Wenn Sie eine wiederkehrende Veranstaltung zum Bearbeiten öffnen, fragt B1 zuerst, welche Termine geändert werden sollen: **Nur dieser Termin**, **Dieser und alle folgenden Termine** oder **Alle Termine**. Wählen Sie eine Option und klicken Sie auf **Speichern**, um die Veranstaltung zu öffnen. Haben Sie **Nur dieser Termin** gewählt, ist der Schalter **Wiederkehrend** ausgeblendet, und Ihre Änderungen (oder ein Löschen) gelten nur für diesen einen Termin.
+- **Veranstaltungserinnerungen festlegen** -- Beim Bearbeiten einer bestehenden Veranstaltung schalten Sie **Erinnerungen senden** ein, um Personen vor dem Beginn zu erinnern. Wählen Sie, wann sie versendet werden, die **Uhrzeit**, **Wer soll erinnert werden?** und optional eine **Nachricht**. Dann wählen Sie unter **Versenden über** **Push**, **E-Mail** oder, sofern Ihre Gemeinde Textnachrichten eingerichtet hat, **Textnachricht**. Textnachrichten gehen nur an Personen, die in ihren [Benachrichtigungseinstellungen](../getting-started/notification-preferences.md) Textnachricht-Erinnerungen aktiviert haben.
+- **Materialien verwalten** -- Laden Sie Dateien hoch (bis zu 100 MB Speicher), fügen Sie Links hinzu oder löschen Sie vorhandene Materialien.
+- **Anwesenheit erfassen** -- Erfassen Sie die Anwesenheit bei Gruppensitzungen mit **Anwesenheit erfassen** im Abschnitt **Anwesenheit**.
 
 Um den Namen, die Beschreibung oder die Mitgliederliste der Gruppe zu ändern, verwenden Sie B1 Admin. Siehe [Gruppenmitglieder](../../b1-admin/groups/group-members.md).
 
 ## Einer Gruppe beitreten
 
-Wenn Sie angemeldet und noch kein Mitglied sind, wird auf der Seite mit den Gruppendetails eine Beitrittschaltfläche angezeigt. Die Schaltflächenbeschriftung hängt von der Beitrittrichtlinie der Gruppe ab:
+Wenn Sie angemeldet, aber noch kein Mitglied sind, erscheint auf der Detailseite der Gruppe eine Beitrittsschaltfläche. Ihre Beschriftung hängt von der Beitrittsregel der Gruppe ab:
 
 - **Gruppe beitreten** -- Die Gruppe ist offen. Ein Klick fügt Sie sofort als Mitglied hinzu.
-- **Um Beitritt bitten** -- Die Gruppe erfordert eine Genehmigung. Ein Klick öffnet einen Dialog, in dem Sie eine optionale Nachricht an den Gruppenleiter eingeben können, bevor Sie Ihre Anfrage einreichen. Weitere Informationen finden Sie unter [Um Beitritt zu einer Gruppe bitten](./join-requests.md).
+- **Beitritt anfragen** -- Die Gruppe verlangt eine Genehmigung. Ein Klick öffnet einen Dialog, in dem Sie optional eine Nachricht an die Gruppenleitung schreiben und Ihre Anfrage absenden können. Wie Sie Ihre Anfragen verwalten, erfahren Sie unter [Beitritt zu einer Gruppe anfragen](./join-requests.md).
 
-Nach dem Absenden einer Anfrage wird die Schaltfläche durch einen **Anfrage ausstehend** Vermerk ersetzt: "Ihre Beitrittanfrage wurde gesendet. Ein Gruppenleiter wird diese überprüfen."
+Nach dem Absenden einer Anfrage wird die Schaltfläche durch einen Hinweis **Anfrage ausstehend** ersetzt: „Ihre Beitrittsanfrage wurde gesendet. Eine Gruppenleitung wird sie prüfen.“
 
-Wenn Sie nicht angemeldet waren und auf **Zum Beitreten anmelden** geklickt haben, kehren Sie nach dem Anmelden zur Gruppe zurück und der Beitrittsprozess startet automatisch: Eine offene Gruppe fügt Sie sofort hinzu, und eine Gruppe, die eine Genehmigung erfordert, öffnet den Dialog **Um Beitritt bitten**.
+Waren Sie nicht angemeldet und haben auf **Zum Beitreten anmelden** geklickt, kehren Sie nach der Anmeldung zur Gruppe zurück, und der Beitritt startet automatisch: Eine offene Gruppe nimmt Sie sofort auf, und eine Gruppe mit Genehmigungspflicht öffnet den Dialog **Beitritt anfragen**.
 
-Wenn keine der beiden Schaltflächen angezeigt wird, ist die Gruppe geschlossen und Mitglieder müssen manuell von einem Leiter oder Administrator hinzugefügt werden.
+Erscheint keine der beiden Schaltflächen, ist die Gruppe geschlossen, und Mitglieder müssen von einer Leitung oder Verwaltung manuell hinzugefügt werden.
 
 :::info
-Sie müssen angemeldet sein, um einer Gruppe beizutreten oder um Beitritt zu beantragen. Wenn eine Gruppe geschlossen ist und Sie beitreten möchten, kontaktieren Sie Ihr Kirchenbüro oder einen der Gruppenleiter.
+Sie müssen angemeldet sein, um einer Gruppe beizutreten oder eine Beitrittsanfrage zu stellen. Ist eine Gruppe geschlossen und möchten Sie ihr beitreten, wenden Sie sich an das Gemeindebüro oder eine der Leitungen der Gruppe.
 :::

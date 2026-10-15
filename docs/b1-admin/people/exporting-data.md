@@ -45,7 +45,18 @@ For a complete export of all your B1 data (not just people), use the export tool
 8. Unzip the file to access individual CSV files (such as `people.csv`) that you can open in Excel, Google Sheets, or Numbers.
 
 :::info
-Full data exports include people, groups, donations, attendance, and more -- everything in your B1 database. This is also a great way to create a periodic backup of your church records.
+The B1 Export Zip is a full backup of your church data. It holds:
+
+- people (with photos) and households, including household pickup contacts
+- campuses, services, and service times
+- groups and group members
+- funds and donations, including gifts split across several funds
+- attendance
+- forms, questions, submissions, and answers
+- custom fields and their values
+- saved people lists
+
+To restore it, choose **B1 Import Zip** as the source and **B1 Database** as the destination (see [Importing Data](./importing-data.md)). Households, pickup contacts, and saved lists are rebuilt along with the people. Saved list filters are pointed at the restored groups, funds, campuses, and custom fields.
 :::
 
 ## Exporting Group Data

@@ -1,64 +1,46 @@
 ---
-title: "Mitgliedeverzeichnis"
+title: "Mitgliederverzeichnis"
 ---
 
-# Mitgliedeverzeichnis
+# Mitgliederverzeichnis
 
 <div class="article-intro">
 
-Das Mitgliedeverzeichnis ermöglicht es Ihnen, Personen in Ihrer Kirche zu durchsuchen und zu finden. Egal ob Sie einen Mitglied-Gruppe-Kollegen nachschlagen oder jemanden Neuen finden müssen, das Verzeichnis macht es einfach, mit Ihrer Kirchenfamilie zu verbinden.
+Das Mitgliederverzeichnis ermöglicht es Ihnen, Personen in Ihrer Gemeinde zu durchsuchen und zu finden. Ob Sie ein Mitglied einer Ihrer Gruppen nachschlagen oder jemanden Neues finden möchten: Das Verzeichnis hilft Ihnen, mit Ihrer Gemeindefamilie in Kontakt zu treten.
 
 </div>
 
 <div class="prereqs">
-<h4>Voraussetzungen</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Sie müssen [angemeldet](../getting-started/logging-in.md) bei Ihrem B1.church-Konto sein.
-- Das Verzeichnis ist nur für **Mitglieder und Personal** verfügbar. Besucher und Teilnehmer, die noch keine Mitglieder sind, sehen stattdessen eine "Nur für Mitglieder"-Nachricht.
+- Sie müssen [in Ihrem B1.church-Konto angemeldet](../getting-started/logging-in.md) sein.
+- Das Verzeichnis steht nur **Mitgliedern und Mitarbeitenden** zur Verfügung. Besucher und Teilnehmende, die noch keine Mitglieder geworden sind, sehen stattdessen die Meldung „Nur für Mitglieder“.
 
 </div>
 
-## Zugriff auf das Verzeichnis
+## Auf das Verzeichnis zugreifen
 
-1. Klicken Sie auf **Gemeinschaft** in der [Navigationsleiste](../getting-started/navigating.md).
-2. Das Verzeichnis lädt mit einer Liste aller sichtbaren Kirchenmitglieder auf der linken Seite der Seite.
+1. Tippen Sie in der [Registerleiste oder auf der Seite Mehr](../getting-started/navigating.md) auf **Gemeinschaft** (Ihre Gemeinde hat diesem Bereich möglicherweise einen anderen Namen gegeben).
+2. Das **Verzeichnis** öffnet sich mit einer Anzahl von Personen und einer Liste aller sichtbaren Gemeindemitglieder.
 
-## Suchen nach Mitgliedern
+## Nach Mitgliedern suchen
 
-Die Seite verwendet ein Master-Detail-Layout. Auf der linken Seite haben Sie zwei Möglichkeiten, Personen zu finden:
+Geben Sie einen Namen in das Feld **Mitglieder suchen** oben in der Liste ein. Die Liste wird während der Eingabe gefiltert, und der passende Teil jedes Namens wird hervorgehoben. Leeren Sie das Feld, um wieder das vollständige Verzeichnis zu sehen.
 
-### Suchen nach Name
+## Im Verzeichnis blättern
 
-1. Stellen Sie sicher, dass der **Personen**-Filter oben in der Suchabschnitt ausgewählt ist.
-2. Geben Sie einen Namen in das Suchfeld ein.
-3. Klicken Sie auf **Suchen** oder drücken Sie die **Eingabe-Taste**, um Ergebnisse zu sehen.
+Mitglieder sind nach dem Anfangsbuchstaben ihres Vornamens unter Buchstabenüberschriften (A, B, C usw.) gruppiert und innerhalb jedes Buchstabens nach Nachnamen sortiert. Jeder Eintrag zeigt das Foto, den Anzeigenamen und den Mitgliedschaftsstatus des Mitglieds, sodass Sie die Liste leicht durchsehen können.
 
-Wenn Sie das Suchfeld leer lassen und auf **Suchen** klicken, wird die vollständige Verzeichnisauflistung angezeigt.
+## Ein Mitgliedsprofil anzeigen
 
-### Nach Gruppe suchen
+Tippen Sie auf ein Mitglied in der Liste, um dessen Profil zu öffnen. Das Profil zeigt Name, Foto und Mitgliedschaftsstatus des Mitglieds sowie Schaltflächen, um **Nachricht** zu schreiben, **anzurufen** oder eine **Textnachricht** zu senden, sofern diese Angaben vorhanden sind. Darunter zeigt der Abschnitt **Kontaktdaten** die Angaben, die Ihre Gemeinde und das Mitglied freigegeben haben, etwa E-Mail-Adresse, Telefonnummer und Anschrift. Unter **Haushaltsmitglieder** werden die übrigen Personen des Haushalts aufgeführt.
 
-1. Klicken Sie auf den **Gruppen**-Filter oben in der Suchabschnitt.
-2. Wählen Sie eine Gruppe aus der Dropdown-Liste.
-3. Klicken Sie auf **Suchen**, um alle Mitglieder dieser Gruppe zu sehen.
-
-:::tip
-Die Suche nach Gruppen ist eine schnelle Möglichkeit, jemanden zu finden, den Sie bei einem [Gruppen-Treffen](../groups/browsing-groups.md) kennengelernt haben, aber dessen Namen Sie nicht ganz erinnern.
-:::
-
-## Durchsuchen des Verzeichnisses
-
-Mitglieder werden alphabetisch nach Nachname aufgelistet und unter Buchstaben-Überschriften gruppiert (A, B, C usw.). Jeder Eintrag zeigt das Mitgliederfoto, den Anzeigenamen und den Hausnamen, was ein einfaches Durchsuchen der Liste ermöglicht.
-
-## Anzeigen eines Mitgliederprofils
-
-Klicken Sie auf ein beliebiges Mitglied in der Liste, um dessen Profil im Detail-Panel auf der rechten Seite zu öffnen. Das Profil zeigt die Mitglieder-Informationen so konfiguriert von Ihrer Kirche an, was Kontaktdetails, Haushaltsmitglieder und Gruppen-Mitgliedschaften enthalten kann.
-
-Sie können auf Haushaltsmitglieder in einem Profil klicken, um zu ihren Profilen zu navigieren.
+Sie können innerhalb eines Profils auf Haushaltsmitglieder tippen, um auch deren Profile zu öffnen. Auf Ihrem eigenen Profil führt Sie die Schaltfläche **Profil bearbeiten** zu [Ihr Profil bearbeiten](../getting-started/editing-your-profile.md).
 
 :::info
-Die in jedem Profil sichtbaren Informationen hängen von den Datenschutz- und Verzeichnis-Einstellungen Ihrer Kirche ab. Nicht alle Felder können für jedes Mitglied angezeigt werden.
+Welche Angaben in einem Profil sichtbar sind, hängt von den Datenschutz- und Verzeichniseinstellungen Ihrer Gemeinde ab. Nicht für jedes Mitglied werden alle Felder angezeigt.
 :::
 
 :::info
-Mitglieder unter Ihrem Kirchen-[Mindestalter für private Nachrichten](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) bleiben im Verzeichnis sichtbar, aber die Möglichkeit, ihnen eine private Nachricht zu senden, ist nicht verfügbar.
+Mitglieder, die unter dem [Mindestalter für private Nachrichten](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) Ihrer Gemeinde liegen, bleiben im Verzeichnis sichtbar. Die Option, ihnen eine private Nachricht zu senden, ist jedoch nicht verfügbar.
 :::

@@ -6,26 +6,27 @@ title: "Serviço"
 
 <div class="article-intro">
 
-A seção Serviço no B1.church permite que você navegue oportunidades de voluntariado e se inscreva para posições em sua igreja. Além de visualizar seus planos atribuídos e ordens de serviço, agora você pode auto-selecionar posições que precisam ser preenchidas.
+A seção Serviço no B1.church permite navegar pelas oportunidades de voluntariado e se inscrever nas posições da sua igreja. Além de ver seus planos atribuídos e as ordens de culto, agora você pode escolher as posições que precisam ser preenchidas.
 
 </div>
 
 ## O Que Você Pode Fazer
 
-- **Navegar oportunidades de voluntariado** -- Veja planos de serviço próximos com posições abertas que precisam de voluntários.
-- **Se inscrever para posições** -- Escolha uma posição e se inscreva com um clique.
-- **Visualizar seus planos** -- Veja seus [compromissos de serviço](../plans/viewing-plans) próximos e passados.
-- **Remover inscrições** -- Cancele uma auto-inscrição se seus planos mudarem (antes do prazo).
+- **Explorar oportunidades de voluntariado** -- Veja os próximos planos de culto com posições abertas que precisam de voluntários.
+- **Inscrever-se em posições** -- Escolha uma posição e inscreva-se com um único clique.
+- **Ver seus planos** -- Veja suas [escalas de serviço](../plans/viewing-plans) futuras e passadas.
+- **Responder às escalas** -- Aceite ou recuse as posições para as quais foi escalado, pela página de Planos ou pela seção **Você está servindo** do Início. Se seus compromissos mudarem depois que você aceitar, pode [recusar uma escala aceita](../plans/viewing-plans#declining-an-accepted-assignment) até o término do culto.
+- **Remover inscrições** -- Cancele uma inscrição feita por você mesmo se seus compromissos mudarem (antes do prazo).
 
 ## Como Funciona
 
-Seu administrador da igreja cria planos de serviço e marca certas posições como disponíveis para auto-inscrição. Essas posições aparecem na página de inscrição de voluntariado, organizadas por categoria (como "Banda", "Hospitalidade" ou "Ministério Infantil"). Você pode ver quantos lugares estão abertos para cada posição e se inscrever para aquelas que você está disponível.
+O administrador da sua igreja cria os planos de culto e marca determinadas posições como disponíveis para inscrição própria. Essas posições aparecem na página de inscrição de voluntários, organizadas por categoria (como "Banda", "Hospitalidade" ou "Ministério Infantil"). Você pode ver quantas vagas estão abertas em cada posição e se inscrever naquelas para as quais está disponível.
 
 :::info
-Apenas posições que seu administrador da igreja ativou para auto-inscrição aparecem na página de voluntariado. Algumas posições podem ser preenchidas apenas através de atribuição direta.
+Somente as posições que o administrador da sua igreja habilitou para inscrição própria aparecem na página de voluntários. Algumas posições podem ser preenchidas apenas por escala direta.
 :::
 
 ## Saiba Mais
 
-- [Inscrição de Voluntariado](./volunteer-signup) -- Guia passo a passo para navegar e se inscrever para posições de voluntariado
-- [Visualizando Planos](../plans/viewing-plans) -- Veja seus planos de serviço atribuídos e ordens de serviço
+- [Inscrição de Voluntários](./volunteer-signup) -- Guia passo a passo para navegar e se inscrever em posições de voluntário
+- [Visualizando Planos](../plans/viewing-plans) -- Veja suas escalas de culto e as ordens de culto

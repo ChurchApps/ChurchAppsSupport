@@ -6,23 +6,23 @@ title: "Innsjekking"
 
 <div class="article-intro">
 
-**Innsjekking**-funksjonen i B1.church lar deg sjekke inn deg selv og husholdsmedlemmene for kirketjenester direkte fra medlemsportalen. Dette er en praktisk måte å registrere oppmøtet uten å trenge å besøke en fysisk innsjekkingskiosk.
+Funksjonen **Innsjekking** i B1.church lar deg sjekke inn deg selv og medlemmene i husstanden din til kirkens gudstjenester direkte fra medlemsportalen. Dette er en praktisk måte å registrere oppmøtet ditt på uten å måtte besøke en fysisk innsjekkingskiosk.
 
 </div>
 
-## Hvordan det fungerer
+## Slik fungerer det
 
-Når du bruker selvbetjent innsjekking, velger du en service, velger hvilke husholdsmedlemmer som deltar, og tilordner hver person til den aktuelle gruppen for hver servicetid. Når du bekrefter, blir oppmøtet registrert automatisk.
+Når du bruker selvinnsjekking, velger du en gudstjeneste, velger hvilke husstandsmedlemmer som deltar, og tildeler hver person til riktig gruppe for hver gudstjenestetid. Når du bekrefter, registreres oppmøtet ditt automatisk.
 
-## Kom i gang
+## Komme i gang
 
-For å få tilgang til innsjekking, klikk **Innsjekking** i [sidenavigasjonen](../getting-started/navigating.md) for medlemsportalen. Du må være [logget på](../getting-started/logging-in.md) for å bruke denne funksjonen -- hvis du ikke er logget på, blir du bedt om å logge på først.
+For å få tilgang til innsjekking, trykk på **Innsjekking** i [fanelinjen eller på siden Mer](../getting-started/navigating.md) i medlemsportalen din. Du må være [logget inn](../getting-started/logging-in.md) for å bruke denne funksjonen – hvis du ikke er logget inn, blir du bedt om å logge inn først.
 
 :::info
-Innsjekkingsfunksjonen krever at kirken har satt opp servicer og oppmøtegrupper i administrasjonsinnstillingene. Hvis ingen servicer er tilgjengelige når du åpner innsjekkingssiden, kan det hende at kirken ikke har satt opp denne funksjonen ennå. Kontakt kirkens administrator for hjelp.
+Funksjonen for innsjekking krever at kirken din har satt opp gudstjenester og oppmøtegrupper i administrasjonsinnstillingene. Hvis ingen gudstjenester er tilgjengelige når du åpner innsjekkingssiden, er kanskje ikke denne funksjonen satt opp ennå. Kontakt kirkeadministratoren din for hjelp.
 :::
 
-## Neste trinn
+## Neste steg
 
-- [Selvbetjent innsjekking](./self-checkin.md) -- Trinn-for-trinn-guide for å sjekke inn husholdet for en service.
-- [Gjesteregistrering](./guest-registration.md) -- Registrer deg som gjestbesøkende og familiemedlemmene.
+- [Selvinnsjekking](./self-checkin.md) – Trinn-for-trinn-veiledning for å sjekke inn husstanden din til en gudstjeneste.
+- [Gjesteregistrering](./guest-registration.md) – Registrer deg som gjestebesøkende og familiemedlemmene dine.

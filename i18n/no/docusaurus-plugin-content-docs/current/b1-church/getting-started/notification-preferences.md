@@ -1,65 +1,65 @@
 ---
-title: "Varselpreferanser"
+title: "Varslingsinnstillinger"
 ---
 
-# Varselpreferanser
+# Varslingsinnstillinger
 
 <div class="article-intro">
 
-Varselpreferanser lar deg bestemme hvilke varsler du mottar fra kirken din og hvordan du mottar dem -- push-varsler, e-post, i-app-klokken eller (hvis kirken din sender tekstmeldinger) tekstmeldinger. Du kan finstille hver type varsel, angi stille-timer, eller deaktivere alt på en gang, alt fra en skjerm.
+Varslingsinnstillingene lar deg bestemme hvilke varsler du får fra kirken din og hvordan du mottar dem – push-varsler, e-post, klokken i appen eller (hvis kirken din sender tekstmeldinger) tekstmeldinger. Du kan finjustere hver type varsel, angi stille tider eller dempe alt på én gang, alt fra ett skjermbilde.
 
 </div>
 
-## Åpning av Preferansene Dine
+## Åpne innstillingene dine
 
-1. Gå til **Min**-siden og trykk **Varselpreferanser** under **Snarveier**.
+1. Gå til siden **Meg** og trykk på **Innstillinger** under navnet ditt.
 
-Du kan også trykke på klokke-ikonet, åpne **Varsler**-fanen, trykk **Se alle varsler**, og deretter trykk **Varselpreferanser** på den siden.
+Du kan også trykke på klokkeikonet, trykke på **Se alle** for å åpne innboksen din, og deretter trykke på **Varslingsinnstillinger** øverst på den siden.
 
-## Globale Kontroller
+## Globale innstillinger
 
-Øverst på skjermen finner du innstillinger som gjelder for alt:
+Øverst på skjermen finner du innstillinger som gjelder alt:
 
-- **Deaktiver alle** -- Pauser midlertidig alle ikke-esensielle varsler.
-- **Push-varsler** -- Slår push-varsler på eller av for enheten din.
-- **Tekstmeldinger** -- Vises bare hvis kirken din har satt opp tekstmeldinger. Slå dette på for å få tjeneste- og arrangementspåminnelser som tekstmelding på mobilnummeret i profilen din. Det er av til du slår det på.
-- **E-postfrekvens** -- Velg hvordan e-postvarsler ankommer:
-  - **Per varsel** -- Send en e-post når ting skjer.
-  - **Daglig sammendrag** -- Samle dem i en daglig e-post.
-  - **Aldri** -- Ikke send varsel-e-poster.
-- **Stille-timer** -- Angi start- og sluttid (og tidssone) når du heller ikke vil bli forstyrret. Ikke-øyeblikkelig viktige varsler venter til stille-timene er over.
+- **Demp alt** – Setter midlertidig på pause alle varsler som ikke er nødvendige.
+- **Push-varsler** – Slår push-varsler av eller på for enheten din.
+- **Tekstmeldinger** – Vises bare hvis kirken din har satt opp tekstmeldinger. Slå dette på for å få påminnelser om tjeneste og arrangementer som tekstmelding på mobilnummeret på profilen din. Det er av til du slår det på.
+- **E-postfrekvens** – Velg hvordan e-postvarsler kommer:
+  - **Per varsel** – Send en e-post etter hvert som ting skjer.
+  - **Daglig sammendrag** – Samle dem i én daglig e-post.
+  - **Aldri** – Ikke send varsels-e-poster.
+- **Stille tider** – Angi et starttidspunkt og et sluttidspunkt (og tidssonen din) når du heller ikke vil bli forstyrret. Ikke-hastende varsler venter til de stille tidene er over.
 
-## Valg av Varsler etter Type
+## Velge varsler etter type
 
-Nedenfor de globale kontrollene er et rutenett av varseltyper. For hver kan du slå på eller av kanalene du ønsker:
+Under de globale innstillingene finner du et rutenett med varseltyper. For hver kan du slå av eller på kanalene du ønsker:
 
-- **Push** -- Et varsel på enheten din.
-- **E-post** -- En melding til innboksen din.
-- **I-App** -- Klokken/merket inne i appen.
-- **Tekst** -- En tekstmelding til mobiltelefonen din. Denne kolonnen vises bare hvis kirken din har satt opp tekstmeldinger, og bare noen typer (for eksempel **Arrangementspåminnelser**, **Tjeneste og Schedule** og **Oppgaver og oppfølging**) kan sendes som tekst. Tekstmeldinger kommer bare hvis **Tekstmeldinger** også er slått på.
+- **Push** – Et varsel på enheten din.
+- **E-post** – En melding i innboksen din.
+- **I appen** – Klokken/merket inne i appen.
+- **Tekst** – En tekstmelding til mobiltelefonen din. Denne kolonnen vises bare hvis kirken din har satt opp tekstmeldinger, og bare noen typer (for eksempel **Påminnelser om arrangementer**, **Tjeneste og plan** og **Oppgaver og oppfølging**) kan sendes som tekst. Tekstmeldinger kommer bare når **Tekstmeldinger** også er slått på.
 
-Vanlige typer inkluderer **Arrangementspåminnelser**, **Tjeneste og Schedule**, **Direkte Meldinger**, **Gruppechat**, **Bønnskrav** og **Kirkemeddelelser**. For eksempel kan du holde push-varsler på for Direkte Meldinger, men slå dem av for Meddelelser.
+Vanlige typer er **Påminnelser om arrangementer**, **Tjeneste og plan**, **Direktemeldinger**, **Gruppechat**, **Bønneforespørsler** og **Kunngjøringer fra kirken**. Du kan for eksempel beholde push-varsler på for Direktemeldinger, men slå dem av for kunngjøringer.
 
 :::info
-Noen varseltyper er **alltid på** og kan ikke slås av -- **Konto- og Sikkerhet**, **Givnings Kvitteringer og Uttalelser**, og **Innsjekking Sikkerhetsvarsler**. Disse er nødvendige av sikkerhetsgrunner og juridiske grunner, så de viser et lite låsikonet. Alt annet er ditt å kontrollere.
+Noen få varseltyper er **alltid på** og kan ikke slås av – **Konto og sikkerhet**, **Gavekvitteringer og oversikter** og **Sikkerhetsvarsler for innsjekking**. Disse er nødvendige for din sikkerhet og av juridiske grunner, så de vises med et lite låsikon. Alt annet bestemmer du selv.
 :::
 
-Noen typer er **deaktivert som standard** (for eksempel promoterings- eller innsamlingsmeldinger) og når deg bare hvis du velger å velge inn.
+Noen typer er **av som standard** (for eksempel markedsførings- eller innsamlingsmeldinger) og når bare deg hvis du velger å si ja.
 
-## Slutte å få tekstmeldinger {#stopping-text-messages}
+## Stoppe tekstmeldinger
 
-For å slutte å få tekstmeldinger slår du av **Tekstmeldinger** og lagrer. Du kan også svare **STOP** på en tekstmelding fra kirken din for å melde nummeret ditt av tekstmeldingene.
+For å slutte å få tekstmeldinger, slå av **Tekstmeldinger** og lagre. Du kan også svare **STOP** på en hvilken som helst tekstmelding fra kirken din for å melde nummeret ditt av dens tekstmeldinger.
 
-## Lagring av Endringene Dine
+## Lagre endringene dine
 
-Etter å ha justert preferansene dine, trykk **Lagre Preferanser**. Endringene dine trer i kraft umiddelbar og gjelder overalt hvor du bruker B1.
+Etter at du har justert innstillingene dine, trykk på **Lagre innstillinger**. Endringene trer i kraft med en gang og gjelder overalt der du bruker B1.
 
 :::tip
-Tidsfølsomme varsler -- som en sikkerhetsvarsling eller en sikkerhetsvarsling for innsjekking av barn -- når deg fortsatt selv under stille-timer. Daglige oppdateringer venter til stille-timene er over.
+Tidskritiske varsler – for eksempel et sikkerhetsvarsel eller en sikkerhetsmelding for barn ved innsjekking – når deg fortsatt i stille tider. Vanlige oppdateringer venter til de stille tidene er over.
 :::
 
 ## Relatert
 
-- [Frivillig Påmelding](../serving/volunteer-signup) -- Tjenestepåminnelser og svar på planleggingsforespørsler
-- [Registrering for Arrangementer](../events/registering) -- Meld deg på arrangementer som sender påminnelser
-- [Installering av Appen](installing-pwa) -- Legg B1 til enheten din slik at du kan motta push-varsler
+- [Frivillig påmelding](../serving/volunteer-signup) – Påminnelser om tjeneste og svar på forespørsler om planen
+- [Melde seg på arrangementer](../events/registering) – Meld deg på arrangementer som sender påminnelser
+- [Installere appen](installing-pwa) – Legg B1 til på enheten din slik at du kan motta push-varsler

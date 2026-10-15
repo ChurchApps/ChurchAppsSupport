@@ -6,34 +6,34 @@ title: "Grupos"
 
 <div class="article-intro">
 
-Grupos são uma ótima maneira de se conectar com outras pessoas em sua igreja. Quer você esteja procurando um pequeno grupo, um time de ministério, um estudo bíblico ou uma oportunidade de voluntariado, você pode navegar e participar de grupos diretamente do site B1.church de sua igreja.
+Os grupos são uma ótima forma de se conectar com outras pessoas da sua igreja. Seja você um pequeno grupo, uma equipe de ministério, um estudo bíblico ou uma oportunidade de voluntariado, pode explorar e participar de grupos diretamente pelo site B1.church da sua igreja.
 
 </div>
 
 ## O Que Você Pode Fazer
 
-Aqui está o que você pode fazer com grupos no B1App:
+Veja o que você pode fazer com os grupos no B1App:
 
-- **Navegar em grupos públicos** -- Visualize todos os grupos disponíveis organizados por categoria. Cada grupo mostra uma foto, nome, horário de reunião, local e uma breve descrição.
-- **Visualizar detalhes do grupo** -- Clique em qualquer grupo para ver sua descrição completa, líderes e eventos do calendário futuros.
-- **Participar de grupos** -- Conecte-se com um grupo para se tornar um membro. Grupos abertos deixam você participar imediatamente; grupos que requerem aprovação deixam você enviar uma solicitação de participação. Veja [Solicitando Participar de um Grupo](./join-requests.md).
-- **Participar de conversas** -- Uma vez que você é membro de um grupo, você pode postar mensagens e interagir com outros membros do grupo através da aba **Mensagens**.
-- **Acessar eventos e recursos** -- Visualize eventos futuros na aba **Eventos** do grupo e baixe arquivos compartilhados ou links da aba **Recursos**.
+- **Explorar grupos públicos** -- Veja todos os grupos disponíveis organizados por categoria. Cada grupo mostra uma foto, nome, horário de encontro, local e uma breve descrição.
+- **Ver detalhes do grupo** -- Toque em qualquer grupo para ver a descrição completa, os líderes e os eventos futuros do calendário.
+- **Participar de grupos** -- Conecte-se a um grupo para se tornar membro. Grupos abertos permitem participar imediatamente; grupos que exigem aprovação permitem enviar uma solicitação de participação. Consulte [Solicitando Participação em um Grupo](./join-requests.md).
+- **Participar das conversas** -- Depois de ser membro de um grupo, você pode publicar mensagens e interagir com os outros membros no chat do grupo -- toque em **Abrir chat** na página do grupo.
+- **Acessar eventos e recursos** -- Veja o próximo evento do grupo (toque em **Todos os eventos** para o calendário completo) e baixe arquivos ou links compartilhados na seção **Recursos**.
 
-## Experiência Pública vs. Conectada
+## Experiência para Visitantes e para Conectados
 
-Qualquer pessoa pode visitar a página de grupos de sua igreja e navegar nos grupos disponíveis. Visitantes que não estão conectados podem visualizar descrições de grupos, ver quem são os líderes e verificar eventos do calendário futuros. Para participar de um grupo, visitantes clicam em **Conectar para participar** e se conectam ou criam uma conta.
+Qualquer pessoa pode visitar a página de grupos da sua igreja e explorar os grupos disponíveis. Visitantes que não estão conectados podem ver as descrições dos grupos, saber quem são os líderes e conferir os eventos futuros do calendário. Para participar de um grupo, o visitante toca em **Entre para participar** e faz login ou cria uma conta.
 
-Quando você [se conecta](../getting-started/logging-in.md) e é membro do grupo, você desbloqueia abas adicionais na página de detalhes do grupo: **Sobre**, **Planos**, **Mensagens**, **Membros**, **Presença**, **Eventos** e **Recursos**. Algumas abas aparecem apenas quando se aplicam -- por exemplo, **Sobre** precisa de uma descrição do grupo, **Planos** precisa de planos de serviço, **Mensagens** precisa que o bate-papo em grupo esteja ativado, e **Presença** é mostrada para líderes do grupo e pessoas que podem registrar presença. Líderes do grupo têm capacidades de edição extras nessas abas.
+Quando você [entra na sua conta](../getting-started/logging-in.md) e é membro do grupo, a página de detalhes mostra mais seções: **Próximo evento**, **Mensagens**, **Membros**, **Recursos**, **Planos**, **Presença** e **Sobre**. Algumas seções só aparecem quando se aplicam -- por exemplo, **Sobre** precisa de uma descrição do grupo, **Planos** precisa de planos de serviço, **Mensagens** precisa do chat do grupo ativado, e **Presença** é mostrada aos líderes de grupo e às pessoas que podem registrar presença. Cada seção mostra uma prévia, com um link como **Todos os membros** ou **Todos os eventos** para abrir a lista completa. Os líderes de grupo têm recursos extras de edição nessas visualizações.
 
 :::tip
-Conversas em grupo vivem na aba **Mensagens** de cada grupo, e seus eventos futuros de grupos aparecem na [página Me](../getting-started/me-page.md). Atividade nova que precisa de sua atenção chega como notificação no menu de sino.
+As conversas do grupo ficam no chat de cada grupo, seus grupos aparecem na seção **Seus grupos** do [painel Início](../getting-started/navigating.md#home), e os próximos eventos dos seus grupos aparecem na [página Eu](../getting-started/me-page.md). Novas atividades que exigem sua atenção chegam como notificação no menu do sino.
 :::
 
 ## Próximos Passos
 
-- [Navegando em Grupos](./browsing-groups.md) -- Aprenda como encontrar e explorar grupos
-- [Detalhes do Grupo](./group-details.md) -- Entenda tudo na página de detalhes do grupo
-- [Solicitando Participar de um Grupo](./join-requests.md) -- Envie e gerencie solicitações de participação
-- [Conversas em Grupo](./conversations.md) -- Poste mensagens, reaja com emoji e interaja com seu grupo
-- [RSVPs de Evento](./event-rsvps.md) -- Responda a eventos de grupo e veja quem está vindo
+- [Explorando Grupos](./browsing-groups.md) -- Aprenda a encontrar e explorar grupos
+- [Detalhes do Grupo](./group-details.md) -- Entenda tudo o que há na página de detalhes do grupo
+- [Solicitando Participação em um Grupo](./join-requests.md) -- Envie e gerencie solicitações de participação
+- [Conversas do Grupo](./conversations.md) -- Publique mensagens, reaja com emojis e interaja com o seu grupo
+- [Confirmações de Presença em Eventos](./event-rsvps.md) -- Responda aos eventos do grupo e veja quem vai

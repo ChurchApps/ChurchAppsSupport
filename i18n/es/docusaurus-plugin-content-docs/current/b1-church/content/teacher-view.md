@@ -1,153 +1,152 @@
 ---
-title: "Vista de Profesor para Lecciones"
+title: "Vista del maestro para lecciones"
 ---
 
-# Vista de Profesor para Lecciones
+# Vista del maestro para lecciones
 
 <div class="article-intro">
-La Vista de Profesor proporciona una interfaz expandida y en pantalla completa para ver el contenido de las lecciones con secciones estructuradas, facilitando que los maestros y líderes naveguen a través de los materiales de la lección durante la clase.
+La Vista del maestro ofrece una interfaz ampliada a pantalla completa para ver el contenido de las lecciones con secciones estructuradas, lo que facilita a maestros y líderes navegar por los materiales durante la clase.
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Tu iglesia debe tener lecciones programadas en un plan. Consulta la guía de B1 Admin sobre [Programar Lecciones](../../b1-admin/serving/scheduling-lessons.md) para más detalles.
-- Necesitas estar asignado al plan o tener acceso para verlo en tu sitio de B1.church.
+- Tu iglesia debe tener lecciones programadas en un plan. Consulta la guía de B1 Admin sobre [Programar lecciones](../../b1-admin/serving/scheduling-lessons.md) para más detalles.
+- Debes estar asignado al plan o tener acceso para verlo en tu sitio de B1.church.
 </div>
 
-## Abriendo la Vista de Profesor
+## Abrir la Vista del maestro
 
-Para acceder a la vista ampliada del profesor para una lección:
+Para acceder a la vista ampliada del maestro de una lección:
 
-1. Navega a la sección **Planes** en B1.church
-2. Abre el plan que contiene la lección que deseas enseñar
-3. Abre la pestaña **Orden de Servicio**
-4. Haz clic en el botón **Enseñar**
+1. Abre **Plans** en el portal de miembros de B1.church
+2. Abre el plan que contiene la lección que quieres enseñar
+3. Haz clic en el botón **Teach** en la parte superior de la página del plan
 
-La lección se abrirá en una interfaz de pantalla completa optimizada para la enseñanza.
+La lección se abrirá en una interfaz a pantalla completa optimizada para enseñar.
 
 :::tip
-La Vista de Profesor es especialmente útil cuando proyectas el contenido de la lección en una pantalla o televisor para que la clase vea, o cuando enseñas desde una tableta.
+La Vista del maestro es especialmente útil cuando proyectas el contenido de la lección en una pantalla o TV para que la clase lo vea, o cuando enseñas desde una tableta.
 :::
 
-## Características de la Vista de Profesor
+## Funciones de la Vista del maestro
 
-### Navegación por Pestañas
+### Navegación por secciones
 
-La vista de profesor organiza el contenido de la lección en secciones usando pestañas en la parte superior:
+La vista del maestro organiza el contenido de la lección en secciones:
 
-- Cada sección principal de la lección aparece como una pestaña separada
-- Haz clic en cualquier pestaña para ir directamente a esa sección
-- La sección activa se resalta en la barra de pestañas
-- Las pestañas facilitan saltar entre diferentes partes de la lección
+- Cada sección principal de la lección aparece como un bloque con su propio título
+- Haz clic en **Sections** en la parte superior para abrir la lista de secciones y elige una para ir directamente a ella
+- El encabezado indica en qué sección estás, por ejemplo "Section 2 of 5"
+- La lista de secciones facilita saltar a distintas partes de la lección
 
-### Contenido Desplazable
+### Contenido desplazable
 
-El área de contenido principal muestra todos los materiales de la lección:
+El área principal muestra todos los materiales de la lección:
 
-- Desplázate a través de la lección de forma natural
-- A medida que te desplazas, la pestaña activa se actualiza automáticamente para que coincida con la sección que estás viendo
-- Todo el texto formateado, imágenes e instrucciones se muestran claramente
+- Desplázate por la lección de forma natural
+- Al desplazarte, el encabezado se actualiza automáticamente para coincidir con la sección que estás viendo
+- Todo el texto con formato, las imágenes y las instrucciones se muestran con claridad
 
-### Reproducción de Medios
+### Reproducción de multimedia
 
-Cuando las lecciones incluyen videos, imágenes u otros medios:
+Cuando las lecciones incluyen videos, imágenes u otro contenido multimedia:
 
 - Haz clic en cualquier elemento multimedia para abrirlo en un reproductor emergente
 - Los videos se reproducen en un reproductor de video dedicado con controles estándar
-- Las imágenes se abren en una galería de visualización para ver en pantalla completa
-- Cierra el reproductor de medios para volver al contenido de la lección
+- Las imágenes se abren en una vista ampliada para verlas a pantalla completa
+- Cierra el reproductor multimedia para volver al contenido de la lección
 
-### Recursos Descargables
+### Recursos descargables
 
 Si la lección incluye archivos descargables (hojas de actividades, páginas para colorear, etc.):
 
-- Los botones de descarga aparecen para cada recurso
-- Haz clic para descargar archivos directamente a tu dispositivo
-- Los archivos pueden incluir PDFs, imágenes u otros materiales proporcionados por el creador del contenido
+- Aparecen botones de descarga para cada recurso
+- Haz clic para descargar los archivos directamente a tu dispositivo
+- Los archivos pueden ser PDF, imágenes u otros materiales proporcionados por el creador del contenido
 
-## Usando la Vista de Profesor en el Aula
+## Usar la Vista del maestro en el salón de clases
 
-### Antes de la Clase
+### Antes de la clase
 
-1. Abre la lección en la Vista de Profesor antes de que comience la clase
+1. Abre la lección en la Vista del maestro antes de que comience la clase
 2. Revisa todas las secciones y familiarízate con el contenido
-3. Descarga cualquier recurso imprimible que necesites
-4. Prueba cualquier video o medio para asegurarle que se reproducen correctamente
+3. Descarga los recursos imprimibles que necesites
+4. Prueba los videos y el contenido multimedia para asegurarte de que se reproducen correctamente
 
-### Durante la Clase
+### Durante la clase
 
-1. Mantén la Vista de Profesor abierta en tu dispositivo o proyéctala en una pantalla
-2. Usa las pestañas para saltar entre secciones a medida que avanzas a través de la lección
-3. Reproduce videos o muestra imágenes en los momentos apropiados
-4. Desplázate a través de las instrucciones según sea necesario sin perder tu lugar
+1. Mantén la Vista del maestro abierta en tu dispositivo o proyéctala en una pantalla
+2. Usa **Sections** para saltar entre secciones a medida que avanzas en la lección
+3. Reproduce videos o muestra imágenes en el momento adecuado
+4. Desplázate por las instrucciones según lo necesites sin perder tu lugar
 
-### En una Pantalla Proyectada
+### En una pantalla proyectada
 
-Cuando proyectas para la clase:
+Cuando proyectes para la clase:
 
-- El diseño de pantalla completa elimina distracciones
-- El texto grande y legible hace que el contenido sea visible desde el otro lado de la sala
+- El diseño a pantalla completa elimina las distracciones
+- El texto grande y legible se ve desde cualquier parte del salón
 - Haz clic en los elementos multimedia para mostrar videos o imágenes a toda la clase
-- Navega usando un ratón inalámbrico o almohadilla táctil
+- Navega con un ratón o trackpad inalámbrico
 
-## Cerrando la Vista de Profesor
+## Cerrar la Vista del maestro
 
-Para salir de la vista de profesor:
+Para salir de la vista del maestro:
 
-- Haz clic en el botón **Cerrar** (X) en la esquina superior
-- O presiona la tecla **Esc** en tu teclado
-- Regresarás a la vista de detalles del plan
+- Haz clic en el botón **Close** (X) en la esquina superior
+- O presiona la tecla **Esc** de tu teclado
+- Volverás a la vista de detalles del plan
 
-## Uso en Dispositivos Móviles y Tabletas
+## Uso en móviles y tabletas
 
-La Vista de Profesor funciona en tabletas y dispositivos móviles:
+La Vista del maestro funciona en tabletas y dispositivos móviles:
 
-- **Tabletas** -- Perfectas para maestros que desean una guía de lección portátil
-- **Teléfonos** -- También compatible, aunque la pantalla más pequeña puede ser menos ideal para enseñar
-- **Modo horizontal** -- Proporciona la mejor experiencia de visualización en dispositivos móviles
+- **Tabletas**: ideales para maestros que quieren una guía de lección portátil
+- **Teléfonos**: también son compatibles, aunque la pantalla más pequeña puede no ser la ideal para enseñar
+- **Modo horizontal**: ofrece la mejor experiencia de visualización en dispositivos móviles
 
-## Diferencias de la Vista de Lección Regular
+## Diferencias con la vista normal de la lección
 
-| Característica | Vista Regular | Vista de Profesor |
-|---------|--------------|--------------|
-| **Diseño** | Compacto, en línea con el plan | Pantalla completa, vista dedicada |
-| **Navegación** | Solo desplazarse | Pestañas + desplazarse con resaltado automático |
-| **Medios** | Incrustado en la página | Reproductor emergente para visualización enfocada |
-| **Espacio de pantalla** | Muestra otros elementos del plan | Maximizado para el contenido de la lección |
-| **Mejor para** | Navegar y planificar | Enseñar y presentar |
+| Función | Vista normal | Vista del maestro |
+|---------|--------------|-------------------|
+| **Diseño** | Compacto, en línea con el plan | A pantalla completa, vista dedicada |
+| **Navegación** | Solo desplazamiento | Lista de secciones + desplazamiento con encabezado de sección actual |
+| **Multimedia** | Integrada en la página | Reproductor emergente para una visualización enfocada |
+| **Espacio en pantalla** | Muestra otros elementos del plan | Maximizado para el contenido de la lección |
+| **Ideal para** | Explorar y planificar | Enseñar y presentar |
 
-## Mejores Prácticas
+## Buenas prácticas
 
-- **Prepárate con anticipación** -- Revisa las lecciones en la Vista de Profesor antes de la clase para familiarizarte con el diseño
-- **Marca secciones** -- Anota qué pestañas contienen actividades o discusiones clave
-- **Prueba los medios** -- Asegúrate de que los videos e imágenes se carguen correctamente antes de la clase
-- **Descarga recursos anticipadamente** -- No esperes hasta la hora de la clase para descargar materiales imprimibles
-- **Usa una pantalla más grande** -- Proyecta o usa una tableta para la mejor experiencia de enseñanza
+- **Prepara con anticipación**: revisa las lecciones en la Vista del maestro antes de la clase para familiarizarte con el diseño
+- **Marca las secciones**: anota qué secciones contienen actividades o discusiones clave
+- **Prueba el multimedia**: asegúrate de que los videos y las imágenes se carguen bien antes de la clase
+- **Descarga los recursos con anticipación**: no esperes a la hora de la clase para descargar los materiales imprimibles
+- **Usa una pantalla más grande**: proyecta o usa una tableta para la mejor experiencia de enseñanza
 
-## Solución de Problemas
+## Solución de problemas
 
-### La lección no se abre en la Vista de Profesor
+### La lección no se abre en la Vista del maestro
 
-- Asegúrate de que la lección haya sido programada correctamente en el plan
+- Asegúrate de que la lección esté programada correctamente en el plan
 - Verifica que tengas permiso para ver el plan
-- Actualiza la página e intenta de nuevo
+- Actualiza la página e inténtalo de nuevo
 
 ### Los videos no se reproducen
 
-- Verifica tu conexión a Internet
-- Asegúrate de que tu dispositivo permite la reproducción de medios
-- Intenta abrir el video en una pestaña separada
-- Algunos proveedores de contenido pueden tener restricciones en la reproducción de video
+- Revisa tu conexión a internet
+- Asegúrate de que tu dispositivo permita la reproducción de multimedia
+- Intenta abrir el video en una pestaña aparte
+- Algunos proveedores de contenido pueden tener restricciones en la reproducción de videos
 
-### El contenido aparece cortado en dispositivos móviles
+### El contenido aparece cortado en móviles
 
 - Gira tu dispositivo al modo horizontal
-- Reduce el zoom ligeramente si es necesario
-- Considera usar una tableta o dispositivo más grande para mejor visibilidad
+- Reduce un poco el zoom si es necesario
+- Considera usar una tableta o un dispositivo más grande para una mejor visibilidad
 
-## Artículos Relacionados
+## Artículos relacionados
 
-- [Viendo Planes](../plans/viewing-plans.md) -- Accede a tus planes asignados
-- [Lecciones](./lessons.md) -- Navega y ve el contenido de las lecciones
-- [Programar Lecciones](../../b1-admin/serving/scheduling-lessons.md) -- Guía de administración para programar lecciones en planes
+- [Ver planes](../plans/viewing-plans.md): accede a los planes asignados
+- [Lecciones](./lessons.md): explora y consulta el contenido de las lecciones
+- [Programar lecciones](../../b1-admin/serving/scheduling-lessons.md): guía de administración para programar lecciones en los planes

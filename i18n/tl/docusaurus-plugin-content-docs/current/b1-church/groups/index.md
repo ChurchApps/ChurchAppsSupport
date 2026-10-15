@@ -1,39 +1,39 @@
 ---
-title: "Mga Grupo"
+title: "Mga Group"
 ---
 
-# Mga Grupo
+# Mga Group
 
 <div class="article-intro">
 
-Ang mga grupo ay magandang paraan para makilala at makaugnayan ang iba sa iyong simbahan. Maghanap ka man ng small group, ministry team, Bible study, o pagkakataong magboluntaryo, maaari kang mag-browse at sumali sa mga grupo direkta mula sa B1.church site ng iyong simbahan.
+Ang mga group ay isang mahusay na paraan upang makakonekta sa iba sa iyong simbahan. Naghahanap ka man ng maliit na group, ministry team, Bible study, o pagkakataong magboluntaryo, maaari kang mag-browse at sumali sa mga group nang direkta mula sa B1.church site ng iyong simbahan.
 
 </div>
 
-## Ano ang Magagawa Mo
+## Ano ang Maaari Mong Gawin
 
-Narito ang mga magagawa mo sa mga grupo sa B1App:
+Narito ang maaari mong gawin sa mga group sa B1App:
 
-- **Mag-browse ng mga pampublikong grupo** -- Tingnan ang lahat ng available na grupo na nakaayos ayon sa kategorya. Bawat grupo ay nagpapakita ng larawan, pangalan, oras ng pagtitipon, lugar, at maikling paglalarawan.
-- **Tingnan ang mga detalye ng grupo** -- I-click ang anumang grupo para makita ang buong paglalarawan, mga lider, at mga paparating na event sa kalendaryo.
-- **Sumali sa mga grupo** -- Makipag-ugnayan sa isang grupo para maging miyembro. Ang mga bukas na grupo ay agad mong masasalihan; sa mga grupong nangangailangan ng pag-apruba, maaari kang magsumite ng kahilingang sumali. Tingnan ang [Paghiling na Sumali sa Grupo](./join-requests.md).
-- **Makilahok sa mga usapan** -- Kapag miyembro ka na ng isang grupo, maaari kang mag-post ng mga mensahe at makipag-ugnayan sa ibang miyembro ng grupo sa pamamagitan ng tab na **Mga Mensahe**.
-- **Ma-access ang mga event at resource** -- Tingnan ang mga paparating na event sa tab na **Mga Event** ng grupo at mag-download ng mga ibinahaging file o link mula sa tab na **Mga Resource**.
+- **Mag-browse ng pampublikong group** -- Tingnan ang lahat ng available na group na nakaayos ayon sa kategorya. Ang bawat group ay nagpapakita ng larawan, pangalan, oras ng pagpupulong, lugar, at maikling paglalarawan.
+- **Tingnan ang detalye ng group** -- I-click ang alinmang group upang makita ang buong paglalarawan, mga lider, at mga paparating na event sa kalendaryo nito.
+- **Sumali sa mga group** -- Makipag-ugnayan sa isang group upang maging miyembro. Ang mga bukas na group ay agad mong masasalihan; ang mga group na nangangailangan ng approval ay nagpapahintulot sa iyong magsumite ng kahilingan sa pagsali. Tingnan ang [Requesting to Join a Group](./join-requests.md).
+- **Makilahok sa mga usapan** -- Kapag miyembro ka na ng group, maaari kang mag-post ng mensahe at makipag-ugnayan sa ibang miyembro sa group chat -- i-tap ang **Open chat** sa pahina ng group.
+- **I-access ang mga event at resource** -- Tingnan ang susunod na event ng group (i-tap ang **All events** para sa buong kalendaryo) at mag-download ng mga ibinahaging file o mga link mula sa seksyong **Resources**.
 
-## Pampubliko vs. Naka-log In na Karanasan
+## Karanasan ng Bisita kumpara sa Naka-log In
 
-Kahit sino ay maaaring bumisita sa pahina ng mga grupo ng iyong simbahan at mag-browse ng mga available na grupo. Ang mga bisitang hindi naka-log in ay maaaring tumingin ng mga paglalarawan ng grupo, makita kung sino ang mga lider, at tingnan ang mga paparating na event sa kalendaryo. Para sumali sa isang grupo, ang mga bisita ay nagki-click ng **Mag-sign in para sumali** at nagsa-sign in o gumagawa ng account.
+Sinuman ay maaaring bisitahin ang groups page ng iyong simbahan at mag-browse ng mga available na group. Ang mga bisitang hindi naka-log in ay maaaring tingnan ang mga paglalarawan ng group, makita kung sino ang mga lider, at tingnan ang mga paparating na event sa kalendaryo. Upang sumali sa isang group, ica-click ng mga bisita ang **Sign in to join** at mag-sign in o gumawa ng account.
 
-Kapag [nag-log in](../getting-started/logging-in.md) ka at miyembro ka ng grupo, mabubuksan mo ang mga karagdagang tab sa pahina ng mga detalye ng grupo: **Tungkol**, **Mga Plano**, **Mga Mensahe**, **Mga Miyembro**, **Attendance**, **Mga Event**, at **Mga Resource**. Ang ilang tab ay lumalabas lamang kapag naaangkop -- halimbawa, kailangan ng **Tungkol** ng paglalarawan ng grupo, kailangan ng **Mga Plano** ng mga plano sa pagseserbisyo, kailangan ng **Mga Mensahe** na naka-on ang group chat, at ang **Attendance** ay ipinapakita sa mga lider ng grupo at sa mga taong maaaring mag-record ng attendance. Ang mga lider ng grupo ay may karagdagang kakayahang mag-edit sa mga tab na ito.
+Kapag [nag-log in ka](../getting-started/logging-in.md) at miyembro ka ng group, mas maraming seksyon ang ipinapakita ng pahina ng detalye ng group: **Next event**, **Messages**, **Members**, **Resources**, **Plans**, **Attendance**, at **About**. Ang ilang seksyon ay lumilitaw lamang kapag may kaugnayan -- halimbawa, kailangan ng **About** ang paglalarawan ng group, kailangan ng **Plans** ang mga serving plan, kailangan ng **Messages** na naka-on ang group chat, at ipinapakita ang **Attendance** sa mga lider ng group at sa mga taong may permission na magtala ng attendance. Nagpapakita ang bawat seksyon ng preview, na may link gaya ng **All members** o **All events** upang buksan ang buong listahan. May dagdag na kakayahan sa pag-edit ang mga lider ng group sa mga view na ito.
 
 :::tip
-Ang mga usapan ng grupo ay nasa tab na **Mga Mensahe** ng bawat grupo, at ang mga paparating na event ng iyong mga grupo ay lumalabas sa [pahina ng Me](../getting-started/me-page.md). Ang bagong aktibidad na kailangan ng iyong pansin ay darating bilang notification sa bell menu.
+Nasa chat ng bawat group ang mga usapan ng group, lalabas ang iyong mga group sa seksyong **Your groups** ng [Home dashboard](../getting-started/navigating.md#home), at makikita sa [Me page](../getting-started/me-page.md) ang mga paparating na event ng iyong mga group. Ang bagong aktibidad na nangangailangan ng iyong atensyon ay dumarating bilang notification sa bell menu.
 :::
 
 ## Mga Susunod na Hakbang
 
-- [Pag-browse ng mga Grupo](./browsing-groups.md) -- Alamin kung paano maghanap at tumuklas ng mga grupo
-- [Mga Detalye ng Grupo](./group-details.md) -- Unawain ang lahat ng nasa pahina ng mga detalye ng grupo
-- [Paghiling na Sumali sa Grupo](./join-requests.md) -- Magsumite at mamahala ng mga kahilingang sumali
-- [Mga Usapan sa Grupo](./conversations.md) -- Mag-post ng mga mensahe, mag-react gamit ang emoji, at makipag-ugnayan sa iyong grupo
-- [Mga RSVP sa Event](./event-rsvps.md) -- Sumagot sa mga event ng grupo at tingnan kung sino ang pupunta
+- [Browsing Groups](./browsing-groups.md) -- Alamin kung paano humanap at mag-explore ng mga group
+- [Group Details](./group-details.md) -- Unawain ang lahat ng nasa pahina ng detalye ng group
+- [Requesting to Join a Group](./join-requests.md) -- Magsumite at pamahalaan ang mga kahilingan sa pagsali
+- [Group Conversations](./conversations.md) -- Mag-post ng mensahe, mag-react gamit ang emoji, at makipag-ugnayan sa iyong group
+- [Event RSVPs](./event-rsvps.md) -- Sumagot sa mga event ng group at tingnan kung sino ang darating

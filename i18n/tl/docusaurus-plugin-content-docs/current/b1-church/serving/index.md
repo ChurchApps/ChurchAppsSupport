@@ -1,31 +1,32 @@
 ---
-title: "Paglilingkod"
+title: "Serving"
 ---
 
-# Paglilingkod
+# Serving
 
 <div class="article-intro">
 
-Ang seksyon ng Paglilingkod sa B1.church ay nagpapahintulot sa iyo na mag-browse ng mga pagkakataong volunteering at mag-sign up para sa mga posisyon sa iyong simbahan. Bilang karagdagan sa pagkikita ng iyong mga assigned na mga plano at mga order ng serbisyo, maaari mo na ngayong mag-self-select ng mga posisyon na kailangang punan.
+Hinahayaan ka ng seksyong Serving sa B1.church na mag-browse ng mga oportunidad sa pagboboluntaryo at mag-sign up para sa mga posisyon sa iyong simbahan. Bukod sa pagtingin ng iyong mga naka-assign na plano at order of service, maaari mo na ring piliin mismo ang mga posisyong kailangang punan.
 
 </div>
 
-## Ano ang Maaari mong Gawin
+## Ano ang Maaari Mong Gawin
 
-- **Mag-browse ng mga pagkakataong volunteering** -- Makita ang mga darating na mga serbisyo ng plano na may mga bukas na posisyon na kailangan ng mga volunteer.
-- **Mag-sign up para sa mga posisyon** -- Pumili ng isang posisyon at mag-sign up ng iyong sarili gamit ang isang pindot.
-- **Tuklasin ang iyong mga plano** -- Makita ang iyong paparating at nakaraang [serving assignments](../plans/viewing-plans).
-- **Bawiin ang mga sign-up** -- Bawiin ang isang self-signup kung nabago ang iyong mga plano (bago ang deadline).
+- **Mag-browse ng mga oportunidad sa pagboboluntaryo** -- Tingnan ang mga paparating na service plan na may bukas na posisyon na nangangailangan ng volunteer.
+- **Mag-sign up para sa mga posisyon** -- Pumili ng posisyon at isali ang sarili mo sa isang click lamang.
+- **Tingnan ang iyong mga plano** -- Tingnan ang iyong mga paparating at nakaraang [serving assignment](../plans/viewing-plans).
+- **Tumugon sa mga assignment** -- Tanggapin o tanggihan ang mga posisyong naka-iskedyul sa iyo, mula sa pahina ng Plans o sa seksyong **You're serving** sa Home. Kung magbago ang iyong mga plano pagkatapos mong mag-accept, maaari mong [tanggihan ang isang naka-accept na assignment](../plans/viewing-plans#declining-an-accepted-assignment) hanggang matapos ang serbisyo.
+- **Mag-alis ng signup** -- Kanselahin ang iyong self-signup kung magbago ang iyong mga plano (bago ang deadline).
 
-## Paano Gumagana Ito
+## Paano Ito Gumagana
 
-Ang iyong administrator ng simbahan ay lumilikha ng mga serbisyo ng plano at minarkahan ang ilang mga posisyon bilang available para sa self-signup. Ang mga posisyon na ito ay lumilitaw sa pahina ng volunteer signup, inorganisa ayon sa kategorya (tulad ng "Band", "Hospitality", o "Kids Ministry"). Maaari mong makita kung gaano karaming bukas na mga lugar para sa bawat posisyon at mag-sign up para sa mga seryoso para sa iyo.
+Gumagawa ang iyong administrator ng simbahan ng mga service plan at minamarkahan ang ilang posisyon bilang available para sa self-signup. Lumilitaw ang mga posisyong ito sa volunteer signup page, nakaayos ayon sa kategorya (gaya ng "Band", "Hospitality", o "Kids Ministry"). Makikita mo kung ilang puwesto ang bukas sa bawat posisyon at makakapag-sign up ka sa mga posisyong available ka.
 
 :::info
-Ang mga posisyon lamang na iyong administrator ng simbahan ay nag-enable para sa self-signup ay lumilitaw sa pahina ng volunteer. Ang ilang mga posisyon ay maaaring punan lamang sa pamamagitan ng direktang pagtatalagang.
+Tanging ang mga posisyong in-enable ng administrator ng iyong simbahan para sa self-signup ang lumilitaw sa volunteer page. Ang ilang posisyon ay maaaring punan lamang sa pamamagitan ng direktang assignment.
 :::
 
-## Matuto ng Higit Pa
+## Alamin Pa
 
-- [Volunteer Signup](./volunteer-signup) -- Hakbang-sa-hakbang na gabay sa pag-browse at pag-sign up para sa mga volunteer na posisyon
-- [Viewing Plans](../plans/viewing-plans) -- Makita ang iyong mga assigned na mga serbisyo ng plano at mga order ng serbisyo
+- [Volunteer Signup](./volunteer-signup) -- Hakbang-hakbang na gabay sa pag-browse at pag-sign up para sa mga posisyon sa pagboboluntaryo
+- [Viewing Plans](../plans/viewing-plans) -- Tingnan ang iyong mga naka-assign na service plan at order of service

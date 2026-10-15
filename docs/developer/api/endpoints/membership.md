@@ -22,6 +22,8 @@ Base path: `/membership/people`
 | GET | `/:id` | JWT | People.View or own record | Get a person by ID (includes form submissions) |
 | GET | `/ids?ids=` | JWT | People.View or Member | Get multiple people by comma-separated IDs |
 | GET | `/basic?ids=` | JWT | — | Get basic info (name only) for multiple people |
+| GET | `/names?ids=` | JWT | Any church permission | `[{ id, name: { display }, photo }]` for comma-separated ids the caller already has, so roles without People.View (donations, attendance) can label people. No search, no directory filter |
+| POST | `/names` | JWT | Any church permission | Same as `GET /names`. Body: `{ peopleIds }` (or `{ ids }`) |
 | GET | `/recent` | JWT | People.View or Member | Recently added people |
 | GET | `/search?term=&email=` | JWT | People.View or Member | Search people by name or email |
 | GET | `/search/phone?number=` | JWT | People.View or Member | Search by phone number |

@@ -48,7 +48,7 @@ Every section, including Sermons, Calendars, Mobile, and Settings, is in the [Ju
 - **[Settings](./settings/)** - Configure everything from one scrolling page with a quick-jump list: church info, region, date and phone number format, texting, roles, permissions, and custom person fields
 
 :::info
-Click the question mark icon in the top-right corner of any page for quick access to help and documentation. To switch between light and dark mode, open your user menu and choose **Theme Preferences**.
+Click the question mark icon in the top-right corner of any page for quick access to help and documentation. To change the color theme (**Default**, **Classic**, or **Custom**) or switch between light and dark mode, open your user menu and use **Theme Preferences**.
 :::
 
 For support, email [support@churchapps.org](mailto:support@churchapps.org).

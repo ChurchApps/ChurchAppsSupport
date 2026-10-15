@@ -1,69 +1,69 @@
 ---
-title: "Administración de Fondos"
+title: "Gestionar los fondos"
 ---
 
-# Administración de Fondos
+# Gestionar los fondos
 
 <div class="article-intro">
 
-Los fondos le permiten categorizar las donaciones por propósito para que pueda hacer un seguimiento de cuánto recibe su iglesia para cada área de ministerio. Los fondos comunes incluyen el Fondo General, el Fondo de Construcción, Misiones y Ministerio Juvenil, pero puede crear tantos como necesite.
+Los fondos te permiten clasificar las donaciones según su propósito, para que puedas saber cuánto recibe tu iglesia para cada área del ministerio. Entre los fondos comunes están General Fund, Building Fund, Missions y Youth Ministry, pero puedes crear todos los que necesites.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Necesitará acceso a la sección **Donaciones** en B1 Admin
-- Decida qué categorías de ofrendas necesita su iglesia y si cada una debe ser deducible de impuestos
+- Necesitas acceso a la sección **Donations** en B1 Admin
+- Decide qué categorías de ofrendas necesita tu iglesia y si cada una debe ser deducible de impuestos
 
 </div>
 
-## La Página de Fondos
+## La página de fondos
 
-Navegue a **Donaciones > Fondos** para ver una lista de todos sus fondos. Cada fila muestra el nombre del fondo y su **Tax Status** (deducible o no deducible de impuestos), que determina si las donaciones a ese fondo aparecen en los [estados de cuenta de fin de año](giving-statements.md).
+Ve a **Donations > Funds** para ver la lista de todos tus fondos. Cada fila muestra el nombre del fondo y su **Tax Status** (deducible o no deducible de impuestos), lo que determina si las donaciones a ese fondo aparecen en los [estados de donaciones](giving-statements.md) de fin de año.
 
-## Crear un Nuevo Fondo
+## Crear un nuevo fondo
 
-1. Haga clic en **Agregar Fondo** en la parte superior de la página.
-2. Ingrese un nombre para el fondo (por ejemplo, "Fondo de Construcción").
-3. Marque la casilla **Deducible de Impuestos** si las donaciones a este fondo deben incluirse en los estados de cuenta de ofrendas.
-4. Deje marcado **Visible para Donantes** para mostrar el fondo en los formularios de donación públicos y de miembros, o desmárquelo para ocultar el fondo de los donantes mientras lo sigue usando para donaciones registradas manualmente.
-5. Haga clic en **Guardar**.
+1. Haz clic en **Add Fund** en la parte superior de la página.
+2. Escribe un nombre para el fondo (por ejemplo, "Building Fund").
+3. Marca la casilla **Tax Deductible** si las donaciones a este fondo deben incluirse en los estados de donaciones. Los regalos a fondos no deducibles también aparecen en las donaciones del donante en su registro de persona.
+4. Deja marcada la opción **Visible to Donors** para mostrar el fondo en los formularios de donación públicos y de miembros, o desmárcala para ocultarlo a los donantes mientras lo sigues usando para donaciones registradas manualmente.
+5. Haz clic en **Save**.
 
-El nuevo fondo aparece de inmediato en su lista y está disponible al ingresar donaciones.
+El nuevo fondo aparece de inmediato en tu lista y está disponible al ingresar donaciones.
 
-## Editar y Eliminar Fondos
+## Editar y eliminar fondos
 
-- Para editar un fondo, haga clic en **Editar** en su fila. Puede cambiar el nombre, activar o desactivar el ajuste de deducible de impuestos, o activar o desactivar **Visible para Donantes** para mostrarlo u ocultarlo de los formularios de donación.
-- Para eliminar un fondo, abra el formulario de edición y haga clic en **Eliminar**.
+- Para editar un fondo, haz clic en **Edit** en su fila. Puedes cambiar el nombre, alternar la configuración de deducible de impuestos o alternar **Visible to Donors** para mostrarlo u ocultarlo en los formularios de donación.
+- Para eliminar un fondo, abre el formulario de edición y haz clic en **Delete**.
 
 :::warning
-Eliminar un fondo no elimina las donaciones que se le asignaron previamente. Esos registros de donaciones permanecen en el sistema, pero el fondo ya no estará disponible para nuevas donaciones.
+Eliminar un fondo no elimina las donaciones que se le asignaron previamente. Esos registros de donación permanecen en el sistema, pero el fondo ya no estará disponible para nuevas donaciones.
 :::
 
 :::info
-Los fondos ocultos a los donantes muestran una insignia **Oculto** junto a su nombre en esta lista. Los fondos ocultos siguen funcionando para donaciones registradas manualmente en B1 Admin -- simplemente no aparecen como una opción en los formularios de donación públicos o de miembros.
+Los fondos ocultos a los donantes muestran una insignia **Hidden** junto a su nombre en esta lista. Los fondos ocultos siguen funcionando para las donaciones registradas manualmente en B1 Admin; simplemente no aparecen como opción en los formularios de donación públicos o de miembros.
 :::
 
-## Ver Detalles del Fondo
+## Ver los detalles de un fondo
 
-Haga clic en el **nombre de un fondo** para abrir su página de detalles. Esta página muestra:
+Haz clic en el **nombre del fondo** para abrir su página de detalles. Esta página muestra:
 
-- **Resumen** -- una línea debajo del título de la página con el número de regalos, el número de donantes y el monto total en dólares
-- **Filtro de rango de fechas** -- establezca una **Fecha de Inicio** y una **Fecha de Fin** y haga clic en **Filter** para acotar los resultados a un período de tiempo específico
-- **Historial de donaciones** -- una lista de las donaciones a este fondo, con la fecha, el lote, el donante y el monto. Haga clic en **Export** encima de la lista para descargarla como CSV.
+- **Summary** -- una línea debajo del título de la página con el número de regalos, el número de donantes y el monto total en dólares
+- **Date range filter** -- define una **Start Date** y una **End Date** y haz clic en **Filter** para limitar los resultados a un período específico
+- **Donation history** -- una lista de las donaciones a este fondo con la fecha, el lote, el donante y el monto. Haz clic en **Export** encima de la lista para descargarla como CSV.
 
-Esta vista es útil cuando necesita informar sobre una iniciativa de recaudación específica o verificar el progreso hacia una meta de recaudación de fondos.
+Esta vista es útil cuando necesitas informar sobre una iniciativa de ofrendas específica o revisar el progreso hacia una meta de recaudación de fondos.
 
-## Ordenar y Exportar
+## Ordenar y exportar
 
-- Use los encabezados de columna para ordenar los fondos por nombre.
-- Haga clic en **Exportar** en la parte superior de la página para descargar su lista de fondos como una hoja de cálculo (CSV).
+- Usa los encabezados de columna para ordenar los fondos por nombre.
+- Haz clic en **Export** en la parte superior de la página para descargar tu lista de fondos como hoja de cálculo (CSV).
 
 :::tip
-Configure sus fondos antes de comenzar a [registrar donaciones](recording-donations.md). Tener todos los fondos en su lugar garantiza que las donaciones se categoricen correctamente desde el principio.
+Configura tus fondos antes de comenzar a [registrar donaciones](recording-donations.md). Tener todos los fondos listos garantiza que las donaciones se clasifiquen correctamente desde el principio.
 :::
 
-## Próximos Pasos
+## Próximos pasos
 
-Una vez que sus fondos estén configurados, puede asignarlos a las donaciones al [registrar donaciones](recording-donations.md) en un lote. Asegúrese de marcar los fondos apropiados como deducibles de impuestos antes de generar los [estados de cuenta de ofrendas](giving-statements.md).
+Una vez que tus fondos estén configurados, puedes asignarlos a las donaciones al [registrar donaciones](recording-donations.md) en un lote. Asegúrate de marcar como deducibles de impuestos los fondos correspondientes antes de generar los [estados de donaciones](giving-statements.md).

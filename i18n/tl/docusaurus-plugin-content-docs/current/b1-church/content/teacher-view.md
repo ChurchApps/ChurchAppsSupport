@@ -1,153 +1,152 @@
 ---
-title: "Tingnan ng Guro para sa Mga Aralin"
+title: "Teacher View para sa Lessons"
 ---
 
-# Tingnan ng Guro para sa Mga Aralin
+# Teacher View para sa Lessons
 
 <div class="article-intro">
-Ang Teacher View ay nagbibigay ng isang pinalawak, buong-screen na interface para sa pagtingin ng nilalaman ng aralin na may mga structured na seksyon, na ginagawang mas madali para sa mga guro at lider na mag-navigate sa pamamagitan ng mga materyales ng aralin sa panahon ng klase.
+Nagbibigay ang Teacher View ng pinalawak, full-screen na interface para sa pagtingin ng nilalaman ng lesson na may structured na mga seksyon, na nagpapadali para sa mga guro at lider na mag-navigate sa mga materyal ng lesson habang nasa klase.
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Ang iyong simbahan ay dapat na may mga aralin na naka-schedule sa isang plano. Tingnan ang gabay ng B1 Admin sa [Pag-schedule ng Mga Aralin](../../b1-admin/serving/scheduling-lessons.md) para sa mga detalye.
-- Kailangan mong maging itinalok sa plano o may access upang tingnan ito sa iyong B1.church site.
+- Dapat may nakaiskedyul na lessons sa isang plano ang iyong simbahan. Tingnan ang gabay sa B1 Admin tungkol sa [Scheduling Lessons](../../b1-admin/serving/scheduling-lessons.md) para sa mga detalye.
+- Kailangan kang naka-assign sa plano o may access ka para tingnan ito sa iyong B1.church site.
 </div>
 
 ## Pagbubukas ng Teacher View
 
-Upang ma-access ang palalwak na tingnan ng guro para sa isang aralin:
+Upang ma-access ang pinalawak na teacher view ng isang lesson:
 
-1. Mag-navigate sa seksyon ng **Mga Plano** sa B1.church
-2. Buksan ang plano na naglalaman ng aralin na nais mong ituro
-3. Buksan ang tab ng **Pagkakasunod-sunod ng Serbisyo**
-4. I-click ang knob ng **Magturo**
+1. Buksan ang **Plans** sa B1.church member portal
+2. Buksan ang planong naglalaman ng lesson na nais mong ituro
+3. I-click ang **Teach** button sa itaas ng pahina ng plano
 
-Ang aralin ay magbubukas sa isang buong-screen na interface na na-optimize para sa pagtuturo.
+Magbubukas ang lesson sa full-screen na interface na in-optimize para sa pagtuturo.
 
 :::tip
-Ang Teacher View ay partikular na kapaki-pakinabang kapag nag-project ng nilalaman ng aralin sa isang screen o TV para makita ng klase, o kapag nagtuturo mula sa isang tablet.
+Lalo na kapaki-pakinabang ang Teacher View kapag ipinoprojekto ang nilalaman ng lesson sa screen o TV para makita ng klase, o kapag nagtuturo mula sa tablet.
 :::
 
-## Mga Katangian ng Teacher View
+## Mga Feature ng Teacher View
 
-### Tabbed Navigation
+### Pag-navigate sa Mga Seksyon
 
-Ang teacher view ay nag-oorganisa ng nilalaman ng aralin sa mga seksyon gamit ang mga tab sa tuktok:
+Inaayos ng teacher view ang nilalaman ng lesson sa mga seksyon:
 
-- Bawat pangunahing seksyon ng aralin ay lilitaw bilang isang hiwalay na tab
-- I-click ang anumang tab upang lumipat nang direkta sa seksyong iyon
-- Ang aktibong seksyon ay naka-highlight sa tab bar
-- Ang mga tab ay ginagawang madali na lumipat sa iba't ibang bahagi ng aralin
+- Bawat pangunahing seksyon ng lesson ay lumalabas bilang sariling blokeng may pamagat
+- I-click ang **Sections** sa itaas upang buksan ang listahan ng mga seksyon, pagkatapos pumili ng isa upang direktang tumalon dito
+- Ipinapakita ng heading kung nasaang seksyon ka, gaya ng "Section 2 of 5"
+- Pinapadali ng listahan ng seksyon ang paglipat-lipat sa iba't ibang bahagi ng lesson
 
-### Scrollable Content
+### Nilalamang Maaaring I-scroll
 
-Ang pangunahing lugar ng nilalaman ay nagpapakita ng buong mga materyales ng aralin:
+Ipinapakita ng pangunahing content area ang buong materyal ng lesson:
 
-- I-scroll ang aralin nang natural
-- Habang nag-scroll ka, ang aktibong tab ay awtomatikong nag-update upang tumugma sa seksyong iyong tinitingin
-- Lahat ng binabasang teksto, mga larawan, at mga tagubilin ay malinaw na ipinakikita
+- Mag-scroll sa lesson nang natural
+- Habang nagsc-scroll ka, awtomatikong ina-update ang heading upang tumugma sa seksyong tinitingnan mo
+- Malinaw na ipinapakita ang lahat ng naka-format na teksto, larawan, at tagubilin
 
-### Media Playback
+### Pag-play ng Media
 
-Kapag ang mga aralin ay naglalaman ng mga video, larawan, o iba pang media:
+Kapag may kasamang video, larawan, o iba pang media ang mga lesson:
 
-- I-click ang anumang item ng media upang buksan ito sa isang popup player
-- Ang mga video ay tumutugtog sa isang dedikadong video player na may karaniwang mga kontrol
-- Ang mga larawan ay bumubukas sa isang lightbox para sa buong-screen na pagtingin
-- Isara ang media player upang bumalik sa nilalaman ng aralin
+- I-click ang alinmang media item upang buksan ito sa popup player
+- Tumatakbo ang mga video sa dedikadong video player na may karaniwang kontrol
+- Nagbubukas ang mga larawan sa lightbox para sa full-screen na pagtingin
+- Isara ang media player upang bumalik sa nilalaman ng lesson
 
-### Downloadable Resources
+### Mga Maaaring I-download na Resource
 
-Kung ang aralin ay naglalaman ng mga downloadable na file (activity sheets, coloring pages, atbp.):
+Kung may kasamang mga file na maaaring i-download ang lesson (activity sheet, coloring page, atbp.):
 
-- Ang mga knob ng download ay lalitaw para sa bawat mapagkukunan
-- I-click upang mag-download ng mga file nang direkta sa iyong device
-- Ang mga file ay maaaring magsama ng mga PDF, larawan, o iba pang mga materyales na ibinigay ng creator ng nilalaman
+- Lumalabas ang mga download button para sa bawat resource
+- I-click upang direktang i-download ang mga file sa iyong device
+- Maaaring kabilang sa mga file ang PDF, larawan, o iba pang materyal na ibinigay ng gumawa ng content
 
 ## Paggamit ng Teacher View sa Silid-Aralan
 
 ### Bago ang Klase
 
-1. Buksan ang aralin sa Teacher View bago magsimula ang klase
-2. Suriin ang lahat ng seksyon at maging pamilyar sa nilalaman
-3. I-download ang anumang mga mapagkukunang naisip mong kailangan
-4. Subukan ang anumang mga video o media upang masiguro na sila ay tumutugtog nang tama
+1. Buksan ang lesson sa Teacher View bago magsimula ang klase
+2. Suriin ang lahat ng seksyon at pamilyarisahin ang sarili sa nilalaman
+3. I-download ang anumang printable na resource na kailangan mo
+4. Subukan ang anumang video o media upang tiyaking maayos ang pag-play nito
 
-### Sa Panahon ng Klase
+### Habang Nasa Klase
 
-1. Panatilihing bukas ang Teacher View sa iyong device o i-project ito sa isang screen
-2. Gamitin ang mga tab upang lumipat sa pagitan ng mga seksyon habang umaasenso ka sa pamamagian ng aralin
-3. Maglaro ng mga video o ipakita ang mga larawan sa naaaasahang oras
-4. I-scroll ang mga tagubilin kung kinakailangan nang hindi mawawalan ng lugar
+1. Panatilihing bukas ang Teacher View sa iyong device o i-project ito sa screen
+2. Gamitin ang **Sections** upang tumalon sa pagitan ng mga seksyon habang umuusad ka sa lesson
+3. Patugtugin ang mga video o ipakita ang mga larawan sa tamang panahon
+4. Mag-scroll sa mga tagubilin ayon sa kailangan nang hindi nawawala ang iyong pwesto
 
-### Sa isang Projected Screen
+### Sa Projected na Screen
 
-Kapag nag-project para sa klase:
+Kapag nagpoprojekto para sa klase:
 
-- Ang buong-screen na layout ay nag-aalis ng mga distraksiyon
-- Ang malaking, madaling basahin na teksto ay gumagawang nakikita ang nilalaman mula sa buong silid
-- I-click ang mga item ng media upang ipakita ang mga video o larawan sa buong klase
-- Mag-navigate gamit ang isang wireless mouse o trackpad
+- Inaalis ng full-screen na layout ang mga abala
+- Ang malaki at madaling basahing teksto ay nakikita mula sa kabilang dulo ng silid
+- I-click ang mga media item upang ipakita ang mga video o larawan sa buong klase
+- Mag-navigate gamit ang wireless mouse o trackpad
 
-## Pagsisara ng Teacher View
+## Pagsasara ng Teacher View
 
-Upang lumabas sa tingnan ng guro:
+Upang lumabas sa teacher view:
 
-- I-click ang knob ng **Isara** (X) sa tuktok na sulok
+- I-click ang **Close** button (X) sa sulok sa itaas
 - O pindutin ang **Esc** key sa iyong keyboard
-- Babalik ka sa pagtingin sa mga detalye ng plano
+- Babalik ka sa view ng detalye ng plano
 
 ## Paggamit sa Mobile at Tablet
 
-Ang Teacher View ay gumagana sa mga tablet at mobile device:
+Gumagana ang Teacher View sa mga tablet at mobile device:
 
-- **Mga Tablet** -- Perpekto para sa mga guro na nais ng isang portable lesson guide
-- **Mga Telepono** -- Sinusuportahan din, bagaman ang mas maliit na screen ay maaaring mas hindi ideal para sa pagtuturo
-- **Landscape mode** -- Nagbibigay ng pinakamahusay na karanasan sa pagtingin sa mga mobile device
+- **Tablets** -- Mainam para sa mga guro na gusto ng portable na gabay sa lesson
+- **Phones** -- Suportado rin, bagaman maaaring hindi gaanong angkop ang mas maliit na screen para sa pagtuturo
+- **Landscape mode** -- Nagbibigay ng pinakamahusay na karanasan sa panonood sa mga mobile device
 
-## Pagkakaiba mula sa Regular Lesson View
+## Mga Pagkakaiba sa Regular na Lesson View
 
 | Feature | Regular View | Teacher View |
 |---------|--------------|--------------|
-| **Layout** | Compact, inline with plan | Full-screen, dedicated view |
-| **Navigation** | Scroll only | Tabs + scroll with auto-highlighting |
-| **Media** | Embedded in page | Popup player for focused viewing |
-| **Screen space** | Shows other plan items | Maximized for lesson content |
-| **Best for** | Browsing and planning | Teaching and presenting |
+| **Layout** | Compact, kasama sa plano | Full-screen, dedikadong view |
+| **Navigation** | Scroll lamang | Listahan ng seksyon + scroll na may heading ng kasalukuyang seksyon |
+| **Media** | Naka-embed sa pahina | Popup player para sa nakatutok na panonood |
+| **Screen space** | Nagpapakita ng iba pang item ng plano | Pinakamalaki para sa nilalaman ng lesson |
+| **Best for** | Pagba-browse at pagpaplano | Pagtuturo at pagpe-present |
 
-## Mga Pinakamahusay na Kasanayan
+## Mga Pinakamahusay na Gawi
 
-- **Maghanda nang maaga** -- Suriin ang mga aralin sa Teacher View bago ang klase upang maging pamilyar sa disenyo
-- **Bookmark sections** -- Tandaan kung aling mga tab ang naglalaman ng mga pangunahing aktibidad o talakayan
-- **Subukan ang media** -- Masiguro na ang mga video at larawan ay nag-load nang tama bago ang oras ng klase
-- **I-download ang mga mapagkukunan nang maaga** -- Huwag maghintay hanggang sa oras ng klase upang mag-download ng mga printable
-- **Gumamit ng mas malaking screen** -- I-project o gumamit ng tablet para sa pinakamahusay na karanasan sa pagtuturo
+- **Maghanda nang maaga** -- Suriin ang mga lesson sa Teacher View bago ang klase upang pamilyarisahin ang layout
+- **Markahan ang mga seksyon** -- Tandaan kung aling mga seksyon ang naglalaman ng mahahalagang aktibidad o talakayan
+- **Subukan ang media** -- Siguraduhing nagloload nang maayos ang mga video at larawan bago ang oras ng klase
+- **I-download nang maaga ang mga resource** -- Huwag hintayin ang oras ng klase para i-download ang mga printable
+- **Gumamit ng mas malaking screen** -- Mag-project o gumamit ng tablet para sa pinakamahusay na karanasan sa pagtuturo
 
-## Paghahanap ng Solusyon sa mga Problema
+## Pag-troubleshoot
 
-### Ang aralin ay hindi bumubukas sa Teacher View
+### Hindi nagbubukas ang lesson sa Teacher View
 
-- Masiguro na ang aralin ay maayos na na-schedule sa plano
-- Tingnan na mayroon kang pahintulot upang tingnan ang plano
+- Siguraduhing maayos na nakaiskedyul ang lesson sa plano
+- Suriin na may permission kang tingnan ang plano
 - I-refresh ang pahina at subukan muli
 
-### Ang mga video ay hindi tumutugtog
+### Hindi nagpi-play ang mga video
 
-- Tingnan ang iyong internet connection
-- Masiguro na ang iyong device ay nagpapahintulot ng media playback
-- Subukan ang pagbubukas ng video sa isang hiwalay na tab
-- Ang ilang mga provider ng nilalaman ay maaaring may mga paghihigpit sa video playback
+- Suriin ang iyong koneksyon sa internet
+- Siguraduhing pinapayagan ng iyong device ang media playback
+- Subukang buksan ang video sa hiwalay na tab
+- Maaaring may mga paghihigpit sa pag-play ng video ang ilang content provider
 
-### Ang nilalaman ay lumilitaw na hiwalay sa mobile
+### Mukhang putol ang nilalaman sa mobile
 
-- Iikot ang iyong device sa landscape mode
-- Mag-zoom out ng kaunti kung kinakailangan
-- Isaalang-alang ang paggamit ng tablet o mas malaking device para sa mas mahusay na visibility
+- Paikutin ang iyong device sa landscape mode
+- Mag-zoom out nang bahagya kung kailangan
+- Isaalang-alang ang paggamit ng tablet o mas malaking device para sa mas magandang visibility
 
 ## Mga Kaugnay na Artikulo
 
-- [Pagtingin ng mga Plano](../plans/viewing-plans.md) -- I-access ang iyong mga itinalok na plano
-- [Mga Aralin](./lessons.md) -- Tuklasin at tingnan ang nilalaman ng aralin
-- [Pag-schedule ng Mga Aralin](../../b1-admin/serving/scheduling-lessons.md) -- Admin guide para sa pag-schedule ng mga aralin sa mga plano
+- [Viewing Plans](../plans/viewing-plans.md) -- I-access ang iyong mga naka-assign na plano
+- [Lessons](./lessons.md) -- Mag-browse at tingnan ang nilalaman ng lesson
+- [Scheduling Lessons](../../b1-admin/serving/scheduling-lessons.md) -- Gabay ng admin sa pag-iskedyul ng lessons sa mga plano

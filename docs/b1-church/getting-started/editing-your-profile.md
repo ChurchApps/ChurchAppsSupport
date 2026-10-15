@@ -19,43 +19,42 @@ Your profile page in the member portal lets you update your contact information,
 
 ## Opening Your Profile
 
-Tap your profile photo in the top app bar, or choose **Edit Profile** from the navigation menu, to open your profile at `/mobile/profileEdit`. The page has four tabs: **Profile**, **Household**, **Account**, and **Privacy**.
+Tap your profile photo in the top app bar, or tap **Edit Profile** at the top of the **More** page or on your [Me page](./me-page.md), to open **Your profile** at `/mobile/profileEdit`. The page is one sheet of sections -- **Photo & name**, **Contact**, **Household**, **Account**, and **Privacy** -- each showing your current information with an **Edit** link (or **Add Family Member** / **Change**) that opens a panel where you make changes.
 
-## Profile Tab
+## Photo & Name and Contact
 
-The Profile tab holds the information your church sees on your person record:
+These sections hold the information your church sees on your person record:
 
-- **Photo** — tap **Change Photo** to upload a new picture.
-- **Name** — First, Middle, and Last name.
-- **Contact** — Email and birth date.
-- **Address** — Street address, city, state, and zip.
-- **Phone** — Mobile, home, and work numbers. If you turn on text reminders in [Notification Preferences](./notification-preferences.md), they go to your mobile number.
+- **Photo & name** — tap **Change Photo** to upload a new picture, and edit your First, Middle, and Last name.
+- **Contact** — Email, Mobile Phone, Home Phone, Work Phone, Birth Date, and your Address (street, city, state, and zip). If you turn on text reminders in [Notification Preferences](./notification-preferences.md), they go to your mobile number.
 
-Edit any field and save your changes from the bar at the bottom of the screen.
+Make your changes in the panel and tap **Save Changes**.
 
 :::info
-If your church requires approval for directory changes, your edits are submitted as a request instead of applying immediately. See [Approving Profile Changes](/docs/b1-admin/profile/approving-profile-changes) for how your church reviews these.
+If your church requires approval for directory changes, the page says "Changes to your profile go to church staff for approval." and the button reads **Submit for Approval** -- your edits are submitted as a request instead of applying immediately. See [Approving Profile Changes](/docs/b1-admin/profile/approving-profile-changes) for how your church reviews these.
 :::
 
-## Household Tab
+## Household
 
-The Household tab shows the other people linked to your household, each with their household role (Head, Spouse, Child, and so on). Tap a household member to view their details.
+The Household section shows the other people linked to your household, each with their household role (Head, Spouse, Child, and so on). Tap a household member to view their details.
 
-To add a family member who isn't in the system yet, enter their first name under **Add Family Member** and tap **Add**. New family members are added to a pending list and are submitted along with your other profile changes for your church to review.
+To add a family member who isn't in the system yet, tap **Add Family Member**, enter their first name, and tap **Add**. New family members are added to a pending list and are submitted along with your other profile changes for your church to review.
 
-## Account Tab
+## Account
 
-The Account tab manages your login rather than your church profile:
+The Account section manages your login rather than your church profile. Tap **Edit** to open it:
 
-- **Display Name** — the first and last name shown on your login (separate from the Name fields on the Profile tab).
+- **Display Name** — the first and last name shown on your login (separate from the name on your church profile).
 - **Change Email** — update the email address you use to sign in.
-- **Change Password** — enter your current password, then your new password twice. Your new password must meet the site's minimum length.
+- **Change Password** — enter your current password, then your new password twice. Your new password must be at least 8 characters.
 
-## Privacy Tab
+Each part has its own **Save** button.
 
-The Privacy tab controls who can see your contact information across ChurchApps:
+## Privacy
 
-- **Hide Me from the Member Directory** — a switch that removes you from the [member directory](../community/member-directory.md) entirely.
+The Privacy section shows who can see your contact information across ChurchApps. Tap **Change** to open **Visibility Preferences**:
+
+- **Hide me from the member directory** — a switch that removes you from the [member directory](../community/member-directory.md) entirely.
 - **Address Visibility**, **Phone Visibility**, and **Email Visibility** — each has its own dropdown, so you can share your email with the whole church while keeping your address more private, for example. The options are:
 
 | Level | Who can see it |
@@ -66,7 +65,7 @@ The Privacy tab controls who can see your contact information across ChurchApps:
 | **My Group Leaders and Staff** | Visible only to church staff and the leaders of groups you belong to. |
 | **Staff Only** | Visible only to church staff. |
 
-Changing a dropdown reveals a **Save** button for that section. Your church sets a default for each of these three fields — see [Mobile App Settings](/docs/b1-admin/settings/mobile-app) — but whatever you choose here overrides that default for your own record.
+Tap **Save** to apply your choices. Your church sets a default for each of these three fields — see [Mobile App Settings](/docs/b1-admin/settings/mobile-app) — but whatever you choose here overrides that default for your own record.
 
 :::tip
 You always see your own information regardless of these settings, and staff with People view permission can always see it too.

@@ -6,22 +6,23 @@ title: "Check-In"
 
 <div class="article-intro">
 
-Ang **Check-In** feature sa B1.church ay nagbibigay-daan sa iyo na i-check in ang iyong sarili at ang mga miyembro ng iyong sambahayan para sa mga serbisyo ng simbahan nang direkta mula sa portal ng miyembro. Ito ay isang maginhawang paraan para i-record ang iyong attendance nang hindi kailangang pumunta sa isang pisikal na check-in kiosk.
+Hinahayaan ka ng feature na **Check-In** sa B1.church na mag-check in ang iyong sarili at ang mga miyembro ng iyong household para sa mga serbisyo ng simbahan nang direkta mula sa member portal. Ito ay maginhawang paraan upang maitala ang iyong attendance nang hindi na kailangang pumunta sa pisikal na check-in kiosk.
 
 </div>
 
 ## Paano Ito Gumagana
 
-Kapag gumagamit ka ng self check-in, pumipili ka ng serbisyo, pinipili kung aling mga miyembro ng sambahayan ang dadalo, at itinatalaga ang bawat tao sa tamang grupo para sa bawat oras ng serbisyo. Kapag nakumpirma, awtomatikong nare-record ang iyong attendance.
+Kapag gumamit ka ng self check-in, pipiliin mo ang isang serbisyo, pipiliin kung aling mga miyembro ng household ang dadalo, at itatalaga ang bawat tao sa angkop na group para sa bawat service time. Kapag nakumpirma mo na, awtomatikong maitatala ang iyong attendance.
 
 ## Pagsisimula
 
-Para ma-access ang check-in, i-click ang **Check-In** sa [sidebar navigation](../getting-started/navigating.md) ng iyong portal ng miyembro. Dapat kang naka-[log in](../getting-started/logging-in.md) para gamitin ang feature na ito -- kung hindi ka naka-sign in, hihilingin sa iyong mag-log in muna.
+Upang ma-access ang check-in, i-tap ang **Check-In** sa [tab bar o sa More page](../getting-started/navigating.md) ng iyong member portal. Kailangan kang [naka-log in](../getting-started/logging-in.md) upang magamit ang feature na ito -- kung hindi ka naka-sign in, hihilingin sa iyong mag-log in muna.
 
 :::info
-Ang check-in feature ay nangangailangan na ang iyong simbahan ay nag-set up ng mga serbisyo at attendance group sa kanilang administration setting. Kung walang available na serbisyo kapag binuksan mo ang check-in page, maaaring hindi pa na-configure ng iyong simbahan ang feature na ito. Makipag-ugnayan sa administrator ng iyong simbahan para sa tulong.
+Kailangan ng feature na check-in na naka-set up ng iyong simbahan ang mga serbisyo at attendance group sa kanilang administration settings. Kung walang available na serbisyo kapag binuksan mo ang check-in page, maaaring hindi pa naka-configure ang feature na ito sa iyong simbahan. Makipag-ugnayan sa iyong church administrator para sa tulong.
 :::
 
-## Susunod na mga Hakbang
+## Mga Susunod na Hakbang
 
-- [Self Check-In](./self-checkin.md) -- Sunud-sunod na gabay sa pag-check in ng iyong sambahayan para sa isang serbisyo.
+- [Self Check-In](./self-checkin.md) -- Hakbang-hakbang na gabay sa pag-check in ng iyong household para sa isang serbisyo.
+- [Guest Registration](./guest-registration.md) -- Magparehistro bilang bisitang panauhin at ang iyong mga miyembro ng pamilya.

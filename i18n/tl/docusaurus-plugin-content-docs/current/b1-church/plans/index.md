@@ -1,33 +1,34 @@
 ---
-title: "Mga Plano"
+title: "Plans"
 ---
 
-# Mga Plano
+# Plans
 
 <div class="article-intro">
 
-Ang seksyon ng **Mga Plano** sa B1.church ay nagbibigay-daan sa iyo na makita ang mga plano ng serbisyo na itinalaga sa iyo. Nasa worship team ka man, tumutulong sa kids ministry, o nagsisilbi sa ibang area, dito mo malalaman kung kailan ka naka-schedule, kung anong posisyon ang pinupunan mo, at kung ano ang hitsura ng serbisyo.
+Hinahayaan ka ng seksyong **Plans** sa B1.church na makita ang mga service plan kung saan ka naka-assign. Kung nasa worship team ka, tumutulong sa kids ministry, o naglilingkod sa ibang larangan, dito mo malalaman kung kailan ka nakaiskedyul, anong posisyon ang pinupunan mo, at kung ano ang magiging takbo ng serbisyo.
 
 </div>
 
 ## Ano ang Makikita Mo
 
-Ang mga plano ay maaaring magsama ng iba't ibang uri ng nilalaman depende sa kung paano isineset up ng iyong simbahan:
+Maaaring maglaman ng ilang uri ng nilalaman ang mga plano depende sa kung paano sila in-set up ng iyong simbahan:
 
-- **Ang iyong mga assignment** -- Tingnan kung aling mga posisyon ang itinalaga sa iyo at kung kailan ka kailangan. Ang bawat assignment ay nagpapakita ng pangalan ng posisyon, petsa ng serbisyo, at ang iyong kasalukuyang status (Accepted, Declined, o Unconfirmed).
-- **Order ng serbisyo** -- Tingnan ang order ng serbisyo na may mga detalye ng oras, impormasyon ng kanta, at paglalarawan ng mga item para malaman mo ang takbo ng serbisyo nang maaga.
-- **Nilalaman ng curriculum** -- Ang ilang mga plano ay may kasamang lesson o curriculum content mula sa mga provider tulad ng [Lessons.church](../content/lessons.md). Maaari mong i-preview ang nilalamang ito nang direkta sa loob ng plano.
-- **Mga blockout date** -- Ipaalam sa iyong mga team leader kung kailan ka hindi available sa pamamagitan ng pamamahala ng iyong mga blockout date.
+- **Iyong mga assignment** -- Tingnan kung aling mga posisyon ang naka-assign sa iyo at kailan ka kailangan. Ipinapakita ng bawat assignment ang pangalan ng posisyon, petsa ng serbisyo, at kasalukuyang status mo (gaya ng Accepted, Declined, o Needs reply). Maaari mong tanggapin o tanggihan ang mga bagong assignment, at tanggihan ang isang naka-accept na kung magbago ang iyong mga plano.
+- **Order of service** -- Tingnan ang order of service na may mga detalye ng oras, impormasyon ng awit, at paglalarawan ng bawat item upang malaman mo nang maaga ang takbo ng serbisyo.
+- **Nilalamang curriculum** -- May kasamang kaugnay na lesson o nilalamang curriculum mula sa mga provider gaya ng [Lessons.church](../content/lessons.md) ang ilang plano. Maaari mong i-preview ang nilalamang ito mismo sa loob ng plano.
+- **Blockout dates** -- Ipaalam sa mga lider ng iyong team kung kailan ka hindi available sa pamamagitan ng pamamahala ng iyong blockout dates.
+- **Home preview** -- Lumalabas din ang iyong susunod na mga assignment sa seksyong **You're serving** ng [Home dashboard](../getting-started/navigating.md#home), kung saan maaari mong tanggapin o tanggihan ang mga nangangailangan ng sagot.
 
 ## Pagsisimula
 
-Para ma-access ang iyong mga plano, i-click ang **Mga Plano** sa sidebar navigation ng iyong portal ng miyembro. Dapat kang naka-[log in](../getting-started/logging-in.md) para makita ang iyong mga plano -- kung hindi ka naka-sign in, hihilingin sa iyong mag-log in muna.
+Upang ma-access ang iyong mga plano, i-tap ang **Plans** sa tab bar o sa pahinang **More** ng iyong member portal. Kailangan kang [naka-log in](../getting-started/logging-in.md) upang makita ang iyong mga plano -- kung hindi ka naka-sign in, hihilingin sa iyong mag-log in muna.
 
 :::info
-Makikita mo lang ang mga planong itinalaga sa iyo. Kung walang planong nakalista, ibig sabihin ay hindi ka pa naidagdag sa isang serving team. Kausapin ang administrator ng iyong simbahan o ministry leader para makilahok.
+Makikita mo lamang ang mga planong naka-assign sa iyo. Kung walang nakalistang plano, ibig sabihin hindi ka pa naidadagdag sa isang serving team. Kausapin ang iyong administrator ng simbahan o lider ng ministry upang makilahok.
 :::
 
-## Susunod na mga Hakbang
+## Mga Susunod na Hakbang
 
-- [Pagtingin ng mga Plano](./viewing-plans.md) -- Alamin kung paano mag-browse ng iyong listahan ng plano at tingnan ang mga detalye ng plano.
-- [Order ng Serbisyo](./service-order.md) -- Unawain ang view ng order ng serbisyo at kung paano ito i-print.
+- [Viewing Plans](./viewing-plans.md) -- Alamin kung paano mag-browse ng listahan ng iyong plano at tingnan ang detalye ng plano.
+- [Service Order](./service-order.md) -- Unawain ang view ng service order at kung paano ito i-print.

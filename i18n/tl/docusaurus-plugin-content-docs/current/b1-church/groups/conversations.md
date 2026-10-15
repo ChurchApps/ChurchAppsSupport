@@ -1,81 +1,83 @@
 ---
-title: "Mga Usapan ng Grupo"
+title: "Mga Usapan ng Group"
 ---
 
-# Mga Usapan ng Grupo
+# Mga Usapan ng Group
 
 <div class="article-intro">
 
-Ang tab na Messages sa pahina ng inyong grupo ay espasyo kung saan makakapag-post ng mga mensahe at makakapag-interact ang mga miyembro ng grupo. Gamitin ang mga usapan para magtalakayan, magbahagi ng balita, at manatiling konektado sa inyong grupo sa pagitan ng mga pagpupulong.
+Ang group chat ay espasyo kung saan maaaring mag-post ng mensahe ang mga miyembro ng group at makipag-ugnayan sa isa't isa. Gamitin ang mga usapan upang talakayin ang mga paksa, magbahagi ng update, at manatiling konektado sa iyong group sa pagitan ng mga pagpupulong.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Dapat ay [naka-log in](../getting-started/logging-in.md) ka sa iyong B1.church account.
-- Dapat kang miyembro ng grupo para ma-access ang tab na Messages. Tingnan ang [Mga Detalye ng Grupo](./group-details.md) kung paano sumali sa isang grupo.
+- Dapat ka [naka-log in](../getting-started/logging-in.md) sa iyong B1.church account.
+- Dapat ay miyembro ka ng group upang ma-access ang group chat. Tingnan ang [Group Details](./group-details.md) para sa kung paano sumali sa isang group.
 
 </div>
 
-## Pag-access sa mga Usapan
+## Pag-access sa Mga Usapan
 
-1. Pumunta sa pahina ng detalye ng grupo sa pamamagitan ng pag-click sa isang grupo mula sa [pahina ng mga grupo](./browsing-groups.md).
-2. Tiyaking naka-log in ka.
-3. I-click ang tab na **Messages** sa sidebar.
+1. Pumunta sa pahina ng detalye ng group sa pamamagitan ng pag-click sa isang group mula sa [groups page](./browsing-groups.md).
+2. Siguraduhing naka-log in ka.
+3. I-tap ang **Open chat** sa ilalim ng pangalan ng group, o sa seksyong **Messages**, na nagpapakita ng preview ng pinakabagong mga mensahe. Bubukas ang chat nang full screen; i-tap ang back arrow upang bumalik sa group.
 
 ## Mga Talakayan at Anunsyo
 
-Maaaring magpakita ang tab na Messages ng dalawang sub-tab, depende sa kung aling mga feed ang in-on ng inyong simbahan para sa grupong ito:
+Maaaring may dalawang feed ang group chat, depende sa kung alin ang in-on ng iyong simbahan para sa group na ito. Ang label sa itaas ng pangalan ng group sa itaas ng chat ay nagpapakita kung nasaan ka:
 
-- **Discussions** -- Espasyo kung saan makakapag-post ng mga mensahe at makakasagot sa iba ang sinumang miyembro ng grupo.
-- **Announcements** -- Mga mensaheng ipinost ng mga lider ng grupo na mahalagang makita ng lahat ng miyembro. Mababasa at mare-react-an ng mga ordinaryong miyembro ang mga anunsyo, ngunit mga lider lang ang makakapag-post. Kung susubukan mong mag-post bilang ordinaryong miyembro, makakakita ka ng paalala na mga lider lang ang makakapag-post ng mga anunsyo at na sumagot na lang sa pamamagitan ng direct message.
+- **Chat** -- Mga talakayan, kung saan maaaring mag-post ng mensahe at sumagot sa iba ang sinumang miyembro ng group.
+- **Announcements** -- Mga mensaheng ipinost ng mga lider ng group na mahalaga para sa lahat ng miyembro. Maaaring basahin at i-react ng mga regular na miyembro ang mga anunsyo, ngunit mga lider lamang ang maaaring mag-post; sa halip na kahon ng mensahe, makikita ng mga regular na miyembro ang "Only group leaders can post announcements."
 
-Kung isa lang sa dalawang feed ang in-on ng inyong simbahan para sa grupong ito, ang feed na iyon lang ang makikita mo nang walang tab bar. Kung parehong naka-off, walang tab na Messages ang grupo.
+Kapag parehong naka-on ang dalawang feed, may strip na **Announcement** sa itaas ng chat na nagpapakita ng pinakabagong anunsyo. I-tap ang **All announcements** upang buksan ang feed ng mga anunsyo, at **Back to chat** upang bumalik sa mga talakayan. (Makikita lamang ng mga miyembro ang strip kapag may kahit isang anunsyo ang group.)
+
+Kung in-on lamang ng iyong simbahan ang isa sa dalawang feed para sa group na ito, dederetso ang chat sa feed na iyon. Kung parehong naka-off, walang chat at walang seksyong **Messages** ang group.
 
 ## Pag-post ng Mensahe
 
-1. Buksan ang tab na **Messages** sa pahina ng inyong grupo.
-2. Tiyaking nasa sub-tab na **Discussions** ka (kung nakikita ang tab bar).
-3. I-type ang iyong mensahe sa text field.
-4. Isumite ang iyong mensahe para ibahagi ito sa grupo.
+1. I-tap ang **Open chat** sa pahina ng iyong group.
+2. Siguraduhing nasa feed ka ng **Chat** (i-tap ang **Back to chat** kung nagbabasa ka ng mga anunsyo).
+3. I-type ang iyong mensahe sa kahong **Send a message…**.
+4. I-tap ang send button (o pindutin ang **Enter**) upang ibahagi ito sa group.
 
-Makikita ng lahat ng miyembro ng grupo ang iyong mensahe.
+Makikita ng lahat ng miyembro ng group ang iyong mensahe.
 
-## Pag-edit o Pagbura ng Iyong mga Mensahe
+## Pag-edit o Pagbura ng Iyong Mga Mensahe
 
-Maaari mong i-edit o burahin ang anumang mensaheng ipinost mo:
+Maaari mong i-edit o burahin ang alinmang mensaheng ipinost mo:
 
-1. Itapat ang cursor sa iyong mensahe (o i-tap ito sa mobile) para lumitaw ang button na **more options** (⋮).
-2. I-click ang button para buksan ang menu ng mensahe.
-3. Piliin ang **Edit** para baguhin ang teksto ng mensahe, o **Delete** para alisin ito.
-   - Kapag nag-e-edit, ilo-load pabalik ang teksto ng mensahe sa input field. Gawin ang iyong mga pagbabago at isumite para i-save.
-   - Kapag nagbubura, lalabas ang confirmation dialog. I-click ang **Confirm** para permanenteng alisin ang mensahe.
+1. I-tap ang button na **more options** (⋮) sa ilalim ng iyong mensahe upang buksan ang menu ng mensahe.
+2. Piliin ang **Edit** upang baguhin ang teksto ng mensahe, o **Delete** upang alisin ito.
+   - Kapag nag-e-edit, ibabalik ang teksto ng mensahe sa input field na may tala na **Editing message** sa itaas nito (i-tap ang **Cancel** upang ihinto ang pag-edit). Gawin ang iyong mga pagbabago at ipadala upang i-save ang mga ito.
+   - Kapag nagbubura, lalabas ang kumpirmasyong **Delete message?**. I-tap ang **Delete** upang permanenteng alisin ang mensahe para sa lahat sa usapan.
 
 :::info
-Maaari mo lamang i-edit o burahin ang sarili mong mga mensahe. Hindi ipinapakita ang opsyong mag-edit/magbura sa mga mensaheng ipinost ng ibang miyembro.
+Maaari mo lamang i-edit ang sarili mong mga mensahe. Maaari ring burahin ng mga lider ng group ang mga mensahe ng ibang miyembro; ang mga regular na miyembro ay nakikita lamang ang mga opsyon sa sarili nilang mga mensahe.
 :::
 
-## Pag-react sa mga Mensahe
+## Pag-react sa Mga Mensahe
 
-Sa group chat, maaari kang mag-react sa anumang mensahe gamit ang emoji:
+Sa group chat, maaari kang mag-react sa alinmang mensahe gamit ang emoji:
 
-1. I-tap o itapat ang cursor sa mensahe at piliin ang **Add reaction**.
+1. I-tap ang button na **Add reaction** sa ilalim ng isang mensahe.
 2. Pumili ng isa sa anim na emoji: 👍 ❤️ 😂 🎉 🙏 😮.
 
-Lumalabas ang mga reaksyon bilang maliliit na chip sa ilalim ng mensahe na may bilang kung ilang tao ang gumamit ng bawat isa. Naka-highlight ang sarili mong reaksyon — i-tap ang chip (o piliin muli ang parehong emoji) para alisin ito, o pumili ng ibang emoji para magdagdag ng isa pa. Live na lumalabas ang mga reaksyon para sa lahat ng nasa chat.
+Lumilitaw ang mga reaksyon bilang maliliit na chip sa ilalim ng mensahe na may bilang kung ilang tao ang gumamit ng bawat isa. Naka-highlight ang sarili mong reaksyon -- i-tap ang chip (o piliin muli ang parehong emoji) upang alisin ito, o pumili ng ibang emoji upang magdagdag ng isa pa. Live na lumalabas ang mga reaksyon para sa lahat sa chat.
 
 :::tip
-Nasa tab na **Messages** ng bawat grupo ang mga usapan ng grupo -- ang dating pinagsamang feed ng [Timeline](../community/timeline.md) ay ihininto na. Ang aktibidad na nangangailangan ng iyong pansin ay darating bilang notification sa ilalim ng icon na **bell** sa app bar.
+Nasa chat ng bawat group ang mga usapan ng group -- ang dating pinagsamang [Timeline](../community/timeline.md) feed ay inalis na. Ang aktibidad na nangangailangan ng iyong atensyon ay dumarating bilang notification sa ilalim ng icon na **bell** sa app bar.
 :::
 
-## Mga Tampok para sa mga Lider
+## Mga Feature para sa Lider
 
-Kung ikaw ay lider ng grupo, may karagdagan kang kakayahan sa tab na Messages:
+Kung ikaw ay lider ng group, may karagdagang kakayahan ka sa group chat:
 
-- **Mag-post ng mga anunsyo** -- Lumipat sa sub-tab na **Announcements** at mag-post ng mga mensaheng mababasa ng lahat ng miyembro ng grupo.
-- **Mag-post ng mga talakayan** -- Maaari ka ring makilahok sa mga karaniwang talakayan gaya ng ibang miyembro.
+- **Mag-post ng mga anunsyo** -- I-tap ang **All announcements** (o buksan ang chat kapag mga anunsyo lamang ang naka-on) at mag-post ng mga mensaheng mababasa ng lahat ng miyembro ng group.
+- **Mag-alis ng mga mensahe** -- Burahin ang mensahe ng sinumang miyembro mula sa menu ng mensahe (⋮).
+- **Mag-post ng mga talakayan** -- Maaari ka ring makilahok sa mga regular na talakayan gaya ng sinumang miyembro.
 
 :::info
-Natatangi sa bawat grupo ang mga usapan. Ang mga mensaheng ipo-post mo sa isang grupo ay hindi lalabas sa mga usapan ng ibang grupo.
+Tiyak sa bawat group ang mga usapan. Hindi lilitaw sa usapan ng ibang group ang mga mensaheng ipinost mo sa isang group.
 :::

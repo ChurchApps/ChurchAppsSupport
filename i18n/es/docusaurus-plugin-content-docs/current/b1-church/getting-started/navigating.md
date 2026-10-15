@@ -1,81 +1,102 @@
 ---
-title: "Navegando B1App"
+title: "Navegar por B1App"
 ---
 
-# Navegando B1App
+# Navegar por B1App
 
 <div class="article-intro">
 
-El portal de miembros en B1.church es una aplicación web optimizada para teléfonos que vive bajo `/mobile`. Funciona en cualquier navegador y se puede instalar en tu pantalla de inicio. Esta página explica el panel de Inicio, la barra de pestañas inferior, el menú Más y la página Mi.
+El portal de miembros de B1.church es una aplicación web pensada para el teléfono que vive bajo `/mobile`. Funciona en cualquier navegador y se puede instalar en la pantalla de inicio. Esta página explica el panel Home, la barra de pestañas inferior, la página More y la página Me.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Necesitas estar [iniciado sesión](./logging-in.md) para ver tu información personal. Los visitantes sin iniciar sesión aún pueden navegar contenido público y se les ofrece un botón **Iniciar Sesión** donde una característica requiere una cuenta.
+- Necesitas [haber iniciado sesión](./logging-in.md) para ver tu información personal. Los visitantes sin sesión todavía pueden explorar el contenido público, y en las funciones que requieren una cuenta se les ofrece un botón **Sign In**.
 
 </div>
 
-## Inicio
+## Home
 
-Abrir `https://yourchurchname.b1.church/mobile` te lleva al panel **Inicio** en `/mobile/dashboard`. Inicio es la página de inicio del portal de miembros y muestra:
+Al abrir `https://nombredetuiglesia.b1.church/mobile` llegas al panel **Home** en `/mobile/dashboard`. Home es la página de inicio del portal de miembros. Comienza con un saludo ("Good morning", "Good afternoon" o "Good evening", seguido de tu nombre) y la fecha de hoy, y después muestra secciones que solo aparecen cuando corresponden:
 
-- Un saludo con tu nombre
-- El versículo del día
-- Una tarjeta destacada de lo que tu iglesia ha resaltado
-- Una cuadrícula **Explorar** de las herramientas que tu iglesia ha activado -- grupos, donaciones, registro, sermones, planes y más
+- **Latest sermon**: el sermón más reciente de tu iglesia, con un enlace **All sermons**
+- **Verse of the Day**: el versículo de hoy; tócalo para abrir la página completa de [Verse of the Day](../content/verse-of-the-day.md)
+- **You're serving**: tus próximas asignaciones de servicio, con un enlace **All plans**. Si alguna asignación todavía necesita tu respuesta, aparece primero con una insignia **Needs reply** y los botones **Accept** / **Decline** para responder desde Home; si no, tus próximas asignaciones muestran una insignia **Accepted** o **Confirmed**. Toca una asignación para abrir su plan.
+- **Your groups**: hasta tres de tus grupos con su horario de reunión y ubicación, y un enlace **All groups**
+- **Giving**: cuánto has dado este año ("Given in" el año actual), un botón **Give** y un enlace **History** a tu [historial de donaciones](../giving/donation-history.md)
+- **More from** *tu iglesia*: botones para el resto de las herramientas que tu iglesia ha activado y que no están ya en la barra de pestañas ni se muestran arriba. Las que más usas pasan al frente.
 
-Tocar una tarjeta en Explorar abre esa herramienta. Si tu iglesia tiene más herramientas de las que caben en el panel, la última tarjeta es **Más**, que abre la lista completa en `/mobile/more`.
+Las secciones de servicio, grupos y ofrendas solo aparecen cuando has iniciado sesión, tu iglesia tiene activada esa herramienta y tienes algo que mostrar; por ejemplo, una asignación próxima o al menos un grupo. En una computadora, Home se distribuye en dos columnas.
 
-Si no has iniciado sesión, Inicio muestra un saludo **Bienvenido** en lugar del saludo con tu nombre, con un mensaje corto ("Inicia sesión para ver tus grupos, donaciones y más.") y un botón **Iniciar Sesión**. Tu iglesia puede cambiar este mensaje o ocultarlo -- consulta [Configuración de Aplicación Móvil](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Cuando está oculto, aún puedes iniciar sesión desde el menú o la pestaña Mi.
+Si no has iniciado sesión, Home muestra un encabezado **Welcome** en lugar del saludo, con una breve invitación ("Sign in to see your groups, giving, and more.") y un botón **Sign In**. Tu iglesia puede cambiar este texto u ocultarlo; consulta [Configuración de la app móvil](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Cuando está oculto, aún puedes iniciar sesión desde la página **More** o la página **Me**.
 
-## La Barra de Pestañas Inferior
+## La barra de pestañas inferior
 
 En un teléfono, una barra de pestañas está fija en la parte inferior de la pantalla:
 
-- **Inicio** -- siempre la primera pestaña
-- Hasta tres de las pestañas que tu iglesia configuró
-- **Más** -- abre el menú de navegación
+- **Home**: siempre es la primera pestaña
+- Hasta tres de las pestañas que configuró tu iglesia
+- **More**: abre la página More
 
-Si tu iglesia ha configurado más de tres pestañas, el resto no se pierden: aparecen en el menú **Más** y en la cuadrícula Explorar del panel. Los administradores de la iglesia establecen el orden de pestañas en B1 Admin bajo **Móvil → Navegación**.
+Los enlaces a sitios web externos, páginas personalizadas y el Verse of the Day nunca reciben una pestaña. Si tu iglesia configuró más pestañas de las que caben, el resto no se pierde: aparecen en la página **More** y en la sección **More from** de Home. Los administradores de la iglesia definen el orden de las pestañas en B1 Admin, en **Mobile → Navigation**.
 
-## El Menú
+## En una computadora
 
-Tocar **Más** abre el menú de navegación. En una tableta o escritorio el mismo menú siempre es visible a lo largo del lado izquierdo de la pantalla. Contiene:
+En una pantalla más ancha, como una computadora o una tableta grande, la barra de pestañas inferior se reemplaza por un encabezado en la parte superior de la pantalla con el color de tu iglesia. Muestra el nombre de tu iglesia (haz clic en él para volver a Home), **Home**, hasta cinco de las pestañas que configuró tu iglesia y **More**, con la campana y la foto de tu perfil a la derecha. Cuando abres una pantalla de detalle, aparece un enlace **Back** encima del contenido de la página.
 
-- Tu nombre y foto, con un acceso directo **Editar Perfil** — consulta [Editando tu Perfil](./editing-your-profile.md)
-- **Inicio** y **Mi**
-- **Portal de Administración** -- solo se muestra si tienes permisos de administrador en tu iglesia; abre B1 Admin
-- Cada pestaña que tu iglesia configuró, en orden
-- **Instalar Aplicación** -- abre las [instrucciones de instalación](./installing-pwa.md) en `/mobile/install`
-- Un interruptor de modo claro/oscuro
-- **Iniciar Sesión** o **Cerrar Sesión**
+## La página More
+
+Al tocar **More** se abre la página More en `/mobile/more`. Contiene:
+
+- Tu nombre y foto, con un enlace **Edit Profile**; consulta [Editar tu perfil](./editing-your-profile.md)
+- Todas las pestañas que configuró tu iglesia, en orden, bajo el nombre de tu iglesia. Los enlaces a sitios externos se abren en una nueva pestaña del navegador.
+- Una sección **Account** con:
+  - **Me**: tu página personal (solo con sesión iniciada)
+  - **Appearance**: cambia entre **Light Mode** y **Dark Mode**
+  - **Admin Portal**: solo aparece si tienes permisos de administrador en tu iglesia; abre B1 Admin en una nueva pestaña
+  - **Install App**: abre las [instrucciones de instalación](./installing-pwa.md) en `/mobile/install` (se oculta una vez instalada la app)
+- **Sign out**, o un botón **Sign In** si no has iniciado sesión
 - El nombre de tu iglesia y un enlace a la política de privacidad
 
-## La Barra de Aplicaciones
+## La barra superior
 
-La barra en la parte superior de cada pantalla muestra:
+En un teléfono, la barra superior de cada pantalla muestra:
 
-- El título de la pantalla, o el nombre de tu iglesia en Inicio
-- Una flecha hacia atrás cuando has profundizado en una pantalla de detalles
-- Un icono de **campana** para notificaciones y mensajes, con un distintivo para elementos no leídos
-- Tu **foto de perfil**, que abre tu perfil en `/mobile/profileEdit` — consulta [Editando tu Perfil](./editing-your-profile.md)
+- El nombre de tu iglesia en Home y en las demás pantallas principales, o una flecha de regreso cuando estás en una pantalla de detalle. El título de la pantalla aparece en la parte superior de la página.
+- Un icono de **campana** para notificaciones y mensajes, con una insignia para los elementos sin leer; consulta [Notificaciones y mensajes](#notificaciones-y-mensajes) más abajo
+- Tu **foto de perfil**, que abre tu perfil en `/mobile/profileEdit`; consulta [Editar tu perfil](./editing-your-profile.md)
 
-## La Página Mi
+La campana y la foto de perfil solo aparecen cuando has iniciado sesión.
 
-**Mi** (`/mobile/me`) es tu centro personal. Enumera atajos a tu perfil, [preferencias de notificación](./notification-preferences.md), mensajes, [donaciones](../giving/), y [registros](../events/my-registrations.md), seguido de lo que se acerca para ti -- asignaciones de voluntariado, registros de eventos y eventos de grupos -- y tus notificaciones más recientes. Consulta [La Página Mi](./me-page) para más detalles.
+## Notificaciones y mensajes
 
-Si no has iniciado sesión, la página Mi muestra un botón **Iniciar Sesión** en su lugar.
+Al tocar la campana se abre un panel con dos secciones:
 
-## Instalando en Tu Pantalla de Inicio
+- **Messages**: tus conversaciones privadas más recientes, con un enlace **New message** para iniciar una nueva
+- **Notifications**: tus notificaciones más recientes, con una insignia **New** en las que no has leído. Toca una notificación para ir al grupo, plan o conversación de donde proviene.
 
-El portal de miembros es una Aplicación Web Progresiva. Visita `/mobile/install` (o elige **Instalar Aplicación** en el menú) para instrucciones paso a paso para tu dispositivo. Una vez instalada, se abre en pantalla completa desde tu pantalla de inicio sin barra del navegador. Consulta [Instalando como una Aplicación (PWA)](./installing-pwa.md).
+Cada sección muestra cuántos elementos sin leer tiene. Toca **See all** en la parte inferior para abrir tu bandeja completa en `/mobile/notifications`.
 
-## El Sitio Web Público de Tu Iglesia
+## Páginas con secciones
 
-Fuera del portal de miembros, el sitio web público de tu iglesia tiene su propia navegación de encabezado con enlaces que tus administradores configuraron -- páginas como [sermones](../content/sermons.md), la [Biblia](../content/bible.md), [transmisión en vivo](../content/live-streaming.md), y una lista pública de grupos. En un teléfono esos enlaces viven detrás del icono de hamburguesa en la esquina superior derecha del encabezado.
+Las páginas de detalle (un grupo, un plan, tu página Me, y las pantallas de Plans y Giving) se organizan como una sola página con secciones en lugar de pestañas. Cada sección muestra una vista previa breve, y un enlace en el encabezado de la sección (como **All members**, **All events** o **Full service order**) abre la lista completa. Un enlace **Back to** en la parte superior de esa vista te devuelve a la página de la que vienes.
+
+## La página Me
+
+**Me** (`/mobile/me`) es tu centro personal. Muestra tu nombre y foto con los botones **Edit Profile** y **Settings** ([preferencias de notificación](./notification-preferences.md)), y después lo que se acerca para ti (asignaciones de servicio, inscripciones a eventos y eventos de grupo), seguido de tu hogar, tus grupos, tus [ofrendas](../giving/) de este año, tus [inscripciones](../events/my-registrations.md) y tus notificaciones y mensajes recientes. Consulta [La página Me](./me-page) para más detalles.
+
+Si no has iniciado sesión, la página Me muestra un botón **Sign In** en su lugar.
+
+## Instalar en la pantalla de inicio
+
+El portal de miembros es una Progressive Web App. Visita `/mobile/install` (o elige **Install App** en la página More) para ver instrucciones paso a paso según tu dispositivo. Una vez instalada, se abre a pantalla completa desde tu pantalla de inicio, sin elementos del navegador. Consulta [Instalar como app (PWA)](./installing-pwa.md).
+
+## El sitio web público de tu iglesia
+
+Fuera del portal de miembros, el sitio web público de tu iglesia tiene su propia navegación en el encabezado, con enlaces que configuraron tus administradores: páginas como [sermones](../content/sermons.md), la [Biblia](../content/bible.md), [transmisión en vivo](../content/live-streaming.md) y una lista pública de grupos. En un teléfono, esos enlaces están detrás del icono de hamburguesa en la esquina superior derecha del encabezado.
 
 :::info
-Las pestañas y herramientas que ves varían según la iglesia. Los administradores controlan qué secciones son visibles para los miembros a través de B1 Admin, así que si no ves una característica descrita aquí, es posible que tu iglesia no la haya activado.
+Las pestañas y herramientas que ves varían según la iglesia. Los administradores controlan qué secciones son visibles para los miembros desde B1 Admin, así que si no ves una función descrita aquí, es posible que tu iglesia no la haya activado.
 :::

@@ -6,39 +6,28 @@ title: "Timeline"
 
 <div class="article-intro">
 
-Ang **Timeline** ang default na landing page ng iyong B1.church member portal. Nagbibigay ito ng activity feed na nagpapakita ng mga pinakabagong update mula sa iyong mga grupo at simbahan, na pinapanatiling nasa iisang maginhawang lugar ang lahat.
+Inalis na ang hiwalay na tab na **Timeline**. Ang member portal ay magbubukas na ngayon sa [Home dashboard](../getting-started/navigating.md), at ang mga aktibidad na dati ay napupunta sa iisang pinagsamang feed ay makikita na sa mga angkop na lugar -- sa Me page, sa mga notification, at sa loob ng bawat group.
 
 </div>
 
-<div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+## Saan Matatagpuan Ngayon ang Mga Aktibidad ng Timeline
 
-- Dapat kang naka-[log in](../getting-started/logging-in.md) sa iyong B1.church account.
+| Ang dating makikita sa Timeline | Saan ito mahahanap ngayon |
+| --- | --- |
+| Mga usapan at anunsyo ng group | Ang chat sa loob ng bawat [group](../groups/conversations.md) (**Open chat**) |
+| Mga paparating na event para sa iyo at sa iyong mga group | Ang **Me** page (`/mobile/me`) at ang seksyong **Next event** ng bawat group |
+| Mga gawain at serving assignment | Ang **Me** page at ang [Plans](../plans/) |
+| Mga bagong sermon | Ang seksyong **Latest sermon** sa Home at ang tab na [Sermons](../content/sermons.md) |
+| Anumang nag-ping sa iyo | Ang **bell** icon sa app bar, o `/mobile/notifications` |
 
-</div>
+## Ang Me Page
 
-## Ano ang Ipinapakita ng Timeline
+Ang [Me Page](../getting-started/me-page) ang pinakamalapit na kapalit ng dating feed. Inililista nito ang mga paparating para sa iyo -- mga serving assignment, event registration, at mga event ng group -- kasama ang iyong pinakabagong mga notification, at direktang nagli-link sa iyong profile, notification preferences, mensahe, giving, at registration.
 
-Ang timeline ay nagpapakita ng feed ng mga post at update, na maaaring kasama ang:
+## Mga Notification
 
-- **Mga pag-uusap sa grupo** -- Mga mensahe at diskusyon mula sa [mga grupo](../groups/) na kinabibilangan mo.
-- **Mga gawain** -- Mga gawaing itinalaga sa iyo o sa iyong mga grupo.
-- **Mga kaganapan** -- Mga paparating na kaganapan na nauugnay sa iyo at sa iyong mga grupo.
-- **Mga leksyon** -- Curriculum at [nilalaman ng leksyon](../content/lessons.md) na ibinabahagi sa iyong mga grupo.
-- **Mga sermon** -- Kamakailang mga [sermon](../content/sermons.md) na na-publish ng iyong simbahan.
-
-Ang bawat post sa feed ay nagpapakita ng titulo ng post, ang grupo kung saan ito kabilang (kung naaangkop), at gaano katagal na mula nang ito ay nai-post.
-
-## Pagtingin ng mga Detalye ng Post
-
-Ang timeline ay gumagamit ng master-detail na layout. Ang iyong feed ay nakalista sa kaliwang bahagi ng pahina. I-click ang anumang post para buksan ang buong mga detalye nito sa panel sa kanan. Mula sa detail view, mababasa mo ang buong nilalaman ng post at makikipag-ugnayan dito.
-
-I-click ang **Back to updates** sa itaas ng detail panel para bumalik sa feed list.
-
-## Pananatiling Konektado
-
-Pinagsasama ng timeline ang aktibidad mula sa lahat ng iyong mga grupo sa isang solong feed, kaya hindi mo kailangang suriin ang bawat grupo nang isa-isa. Magandang ugali na regular na bisitahin ang iyong timeline para manatiling updated sa mga nangyayari sa iyong simbahan.
+Ang anumang dating lalabas bilang item ng Timeline at nangangailangan ng iyong atensyon ay dumarating na ngayon bilang notification. I-tap ang bell sa app bar upang makita ang pinakabago, o i-tap ang **See all** (o buksan ang `/mobile/notifications`) para sa buong listahan. Kapag na-tap mo ang isang notification, dadalhin ka nito sa group, plano, o usapang pinagmulan nito. Maaari mong kontrolin kung aling mga notification ang natatanggap mo -- at paano -- sa ilalim ng [Notification Preferences](../getting-started/notification-preferences.md).
 
 :::tip
-Kung walang laman ang iyong timeline, maaaring hindi ka pa miyembro ng kahit anong grupo. Bisitahin ang [Mga Grupo](../groups/browsing-groups.md) page para makahanap ng mga grupong sasalihan, o hilingin sa administrator ng iyong simbahan o lider ng grupo na idagdag ka.
+Kung mukhang walang laman ang iyong Me page, maaaring wala ka pang kasaping group. Bisitahin ang pahina ng [Groups](../groups/browsing-groups.md) upang humanap ng group na sasalihan, o hilingin sa iyong church administrator o group leader na idagdag ka.
 :::

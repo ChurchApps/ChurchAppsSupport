@@ -1,12 +1,12 @@
 ---
-title: "Endpoints de Tarefas"
+title: "Endpoints do Doing"
 ---
 
-# Endpoints de Tarefas
+# Endpoints do Doing
 
 <div class="article-intro">
 
-O módulo de Tarefas gerencia planejamento de cultos, escala de voluntários, gerenciamento de tarefas e automações. Ele fornece ferramentas para criar planos de culto com horários e posições, atribuir voluntários, gerenciar datas de bloqueio, construir itens de ordem de culto, conectar-se a provedores de conteúdo externos e configurar fluxos de trabalho automatizados com condições e ações.
+O módulo Doing gerencia o planejamento de cultos, a escala de voluntários, o gerenciamento de tarefas e as automações. Ele oferece ferramentas para criar planos de culto com horários e posições, atribuir voluntários, gerenciar datas de indisponibilidade, montar os itens da ordem do culto, conectar-se a provedores externos de conteúdo e configurar fluxos de trabalho automatizados com condições e ações.
 
 </div>
 
@@ -16,22 +16,22 @@ O módulo de Tarefas gerencia planejamento de cultos, escala de voluntários, ge
 
 Caminho base: `/doing/plans`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/` | JWT | — | Listar todos os planos da igreja |
-| GET | `/:id` | JWT | — | Obter um plano por ID |
-| GET | `/ids?ids=` | JWT | — | Obter múltiplos planos por IDs separados por vírgula |
-| GET | `/types/:planTypeId` | JWT | — | Obter planos por tipo de plano |
-| GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + edição do ministério | Pré-visualizar a contagem que **Text Volunteers** da visão geral de escalas envia: `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }` para os voluntários designados no intervalo (um por pessoa; excluídos os que saíram e números ausentes; números compartilhados deduplicados; limitado a 200) |
-| GET | `/presenter` | JWT | — | Obter planos dos próximos 7 dias (visualização do apresentador) |
-| GET | `/public/current/:planTypeId` | Público | — | Obter o plano atual para um tipo de plano |
-| GET | `/public/signup/:churchId` | Público | — | Planos abertos para auto-inscrição, cada um com suas posições de auto-inscrição (mais `filledCount` de atribuições Accepted/Unconfirmed) e horários. Sem nomes de voluntários |
-| GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` para as posições de auto-inscrição do plano (nomes de exibição dos designados Accepted/Unconfirmed). Retorna `[]` a menos que `showVolunteerNames` do plano esteja ativado |
-| POST | `/` | JWT | — | Criar ou atualizar planos (aceita objeto único ou array) |
-| POST | `/copy/:id` | JWT | Edição do ministério | Copiar um plano incluindo posições, horários, atribuições e itens de ordem de culto. O body inclui `ministryId`, `serviceDate`, `copyMode` ("none", "positions", "all") e `copyServiceOrder` (booleano). Sem `targetPlanId`, um novo plano é criado, e `notes`, `signupDeadlineHours`, `showVolunteerNames` e `autoReplaceOnDecline` são herdados do plano de origem, a menos que o body os forneça. Com `targetPlanId`, a cópia preenche esse plano existente (quem chama deve poder editá-lo). A opção **Repeat weekly** do B1Admin chama isso uma vez por semana, copiando sempre do plano criado na semana anterior |
-| POST | `/textRange` | JWT | `texting.send` + edição do ministério | Enviar mensagem de texto para cada voluntário designado em um intervalo de datas pelo provedor de texto da igreja. Body: `{ startDate, endDate, ministryId, planTypeId?, message }` (mensagem de até 1600 caracteres; campos de mesclagem resolvidos por destinatário). Retorna as contagens de pré-visualização mais `recipientCount`, `successCount`, `failCount` e `error` (`no_provider` ou `insufficient_credits`) quando o envio para antes |
-| POST | `/autofill/:id` | JWT | — | Preencher automaticamente atribuições de voluntários para um plano. Body: `{ teams: [{ positionId, personIds }] }` |
-| DELETE | `/:id` | JWT | — | Excluir um plano e todos os horários, atribuições, posições e itens de plano relacionados |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | — | Lista todos os planos da igreja |
+| GET | `/:id` | JWT | — | Obtém um plano pelo ID |
+| GET | `/ids?ids=` | JWT | — | Obtém vários planos pelos IDs separados por vírgula |
+| GET | `/types/:planTypeId` | JWT | — | Obtém os planos de um tipo de plano |
+| GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + edição do ministério | Prévia do envio **Mensagem para Voluntários** da visão geral de serviço: `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }` para os voluntários escalados no intervalo (uma vez por pessoa; cancelados e números ausentes são ignorados; números compartilhados são deduplicados; limite de 200) |
+| GET | `/presenter` | JWT | — | Obtém os planos dos próximos 7 dias (visão do apresentador) |
+| GET | `/public/current/:planTypeId` | Público | — | Obtém o plano atual de um tipo de plano |
+| GET | `/public/signup/:churchId` | Público | — | Planos abertos para inscrição própria, do mais próximo para o mais distante, cada um com suas posições de inscrição própria (ordenadas por `categoryName` e depois por `name`, além de `filledCount` das atribuições Aceitas/Não confirmadas) e horários. Sem nomes de voluntários. Quando a configuração da igreja `volunteerSignupNextOnly` é `"true"`, apenas o primeiro plano de cada tipo é retornado |
+| GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` para as posições de inscrição própria do plano (nomes de exibição dos responsáveis Aceitos/Não confirmados). Retorna `[]` a menos que `showVolunteerNames` do plano esteja ativado |
+| POST | `/` | JWT | — | Cria ou atualiza planos (aceita um objeto único ou um array) |
+| POST | `/copy/:id` | JWT | Edição do ministério | Copia um plano, incluindo posições, horários, atribuições e itens da ordem do culto. O corpo inclui `ministryId`, `serviceDate`, `copyMode` ("none", "positions", "all") e `copyServiceOrder` (booleano). Sem `targetPlanId`, um novo plano é criado, e `notes`, `signupDeadlineHours`, `showVolunteerNames` e `autoReplaceOnDecline` são herdados do plano de origem, a menos que o corpo os informe. Com `targetPlanId`, a cópia preenche esse plano existente (quem chama precisa poder editá-lo). A opção **Repetir semanalmente** do B1Admin chama este endpoint uma vez por semana, copiando sempre do plano criado na semana anterior |
+| POST | `/textRange` | JWT | `texting.send` + edição do ministério | Envia mensagem de texto a todos os voluntários escalados em um intervalo de datas pelo provedor de mensagens da igreja. Corpo: `{ startDate, endDate, ministryId, planTypeId?, message }` (mensagem de até 1600 caracteres; campos de mesclagem resolvidos para cada destinatário). Retorna as contagens da prévia mais `recipientCount`, `successCount`, `failCount` e `error` (`no_provider` ou `insufficient_credits`) quando o envio é interrompido antes do fim |
+| POST | `/autofill/:id` | JWT | — | Preenche automaticamente as atribuições de voluntários de um plano. Corpo: `{ teams: [{ positionId, personIds }] }` |
+| DELETE | `/:id` | JWT | — | Exclui um plano e todos os horários, atribuições, posições e itens relacionados |
 
 ### Exemplo: Copiar um Plano
 
@@ -58,85 +58,86 @@ Authorization: Bearer <token>
 
 Caminho base: `/doing/planTypes`
 
-Estende a classe base CRUD (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` — sem verificação de permissões).
+Estende a classe base CRUD (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` — sem verificações de permissão).
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/` | JWT | — | Listar todos os tipos de plano |
-| GET | `/:id` | JWT | — | Obter um tipo de plano por ID |
-| GET | `/ids?ids=` | JWT | — | Obter múltiplos tipos de plano por IDs separados por vírgula |
-| GET | `/ministryId/:ministryId` | JWT | — | Obter tipos de plano para um ministério |
-| POST | `/` | JWT | — | Criar ou atualizar tipos de plano |
-| DELETE | `/:id` | JWT | — | Excluir um tipo de plano |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | — | Lista todos os tipos de plano |
+| GET | `/:id` | JWT | — | Obtém um tipo de plano pelo ID |
+| GET | `/ids?ids=` | JWT | — | Obtém vários tipos de plano pelos IDs separados por vírgula |
+| GET | `/ministryId/:ministryId` | JWT | — | Obtém os tipos de plano de um ministério |
+| POST | `/` | JWT | — | Cria ou atualiza tipos de plano |
+| DELETE | `/:id` | JWT | — | Exclui um tipo de plano |
 
 ## Itens do Plano
 
 Caminho base: `/doing/planItems`
 
-Gerencia itens de ordem de culto (cabeçalhos, seções, músicas, etc.) organizados em uma estrutura de árvore pai-filho.
+Gerencia os itens da ordem do culto (cabeçalhos, seções, músicas etc.), organizados em uma estrutura de árvore pai-filho.
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/:id` | JWT | — | Obter um item do plano por ID |
-| GET | `/ids?ids=` | JWT | — | Obter múltiplos itens do plano por IDs separados por vírgula |
-| GET | `/plan/:planId` | JWT | — | Obter todos os itens do plano para um plano (retorna estrutura de árvore) |
-| GET | `/presenter/:churchId/:planId` | Público | — | Obter itens do plano para visualização do apresentador (retorna estrutura de árvore) |
-| POST | `/` | JWT | — | Criar ou atualizar itens do plano |
-| POST | `/sort` | JWT | — | Atualizar ordem de classificação de um item do plano (reordena irmãos) |
-| DELETE | `/:id` | JWT | — | Excluir um item do plano |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/:id` | JWT | — | Obtém um item do plano pelo ID |
+| GET | `/ids?ids=` | JWT | — | Obtém vários itens do plano pelos IDs separados por vírgula |
+| GET | `/plan/:planId` | JWT | — | Obtém todos os itens de um plano (retorna estrutura de árvore) |
+| GET | `/presenter/:churchId/:planId` | Público | — | Obtém os itens do plano para a visão do apresentador (retorna estrutura de árvore) |
+| POST | `/` | JWT | — | Cria ou atualiza itens do plano |
+| POST | `/sort` | JWT | — | Atualiza a ordem de um item do plano (reordena os irmãos) |
+| DELETE | `/:id` | JWT | — | Exclui um item do plano |
 
 ## Feed do Plano
 
 Caminho base: `/doing/planFeed`
 
-Fornece feeds de itens do plano para o apresentador. Se não existirem itens do plano, preenche automaticamente a partir do feed de local do Lessons.church usando o `contentId` do plano.
+Fornece os feeds de itens do plano para o apresentador. Se não houver itens do plano, o feed é preenchido automaticamente a partir do feed de venue do Lessons.church, usando o `contentId` do plano.
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/presenter/:churchId/:planId` | Público | — | Obter feed do plano para o apresentador (preenche automaticamente do feed de local se vazio) |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/presenter/:churchId/:planId` | Público | — | Obtém o feed do plano para o apresentador (preenchido automaticamente a partir do feed de venue se estiver vazio) |
 
 ## Posições
 
 Caminho base: `/doing/positions`
 
-Estende a classe base CRUD (GET `/:id`, POST `/`, DELETE `/:id` — sem verificação de permissões).
+Estende a classe base CRUD (GET `/:id`, POST `/`, DELETE `/:id` — sem verificações de permissão).
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/:id` | JWT | — | Obter uma posição por ID |
-| GET | `/ids?ids=` | JWT | — | Obter múltiplas posições por IDs separados por vírgula |
-| GET | `/plan/ids?planIds=` | JWT | — | Obter posições para múltiplos planos por IDs de planos separados por vírgula |
-| GET | `/plan/:planId` | JWT | — | Obter todas as posições de um plano |
-| POST | `/` | JWT | — | Criar ou atualizar posições |
-| DELETE | `/:id` | JWT | — | Excluir uma posição |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/:id` | JWT | — | Obtém uma posição pelo ID |
+| GET | `/ids?ids=` | JWT | — | Obtém várias posições pelos IDs separados por vírgula |
+| GET | `/plan/ids?planIds=` | JWT | — | Obtém as posições de vários planos pelos IDs de planos separados por vírgula |
+| GET | `/plan/:planId` | JWT | — | Obtém todas as posições de um plano |
+| POST | `/` | JWT | — | Cria ou atualiza posições |
+| DELETE | `/:id` | JWT | — | Exclui uma posição |
 
 ## Horários
 
 Caminho base: `/doing/times`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/all` | JWT | — | Listar todos os horários da igreja |
-| GET | `/:id` | JWT | — | Obter um horário por ID |
-| GET | `/plans?planIds=` | JWT | — | Obter horários para múltiplos planos por IDs de planos separados por vírgula |
-| GET | `/plan/:planId` | JWT | — | Obter todos os horários de um plano |
-| POST | `/` | JWT | — | Criar ou atualizar horários |
-| DELETE | `/:id` | JWT | — | Excluir um horário |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/all` | JWT | — | Lista todos os horários da igreja |
+| GET | `/:id` | JWT | — | Obtém um horário pelo ID |
+| GET | `/plans?planIds=` | JWT | — | Obtém os horários de vários planos pelos IDs de planos separados por vírgula |
+| GET | `/plan/:planId` | JWT | — | Obtém todos os horários de um plano |
+| POST | `/` | JWT | — | Cria ou atualiza horários |
+| DELETE | `/:id` | JWT | — | Exclui um horário |
 
 ## Atribuições
 
 Caminho base: `/doing/assignments`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/my` | JWT | — | Obter atribuições do usuário atual |
-| GET | `/:id` | JWT | — | Obter uma atribuição por ID |
-| GET | `/plan/ids?planIds=` | JWT | — | Obter atribuições para múltiplos planos por IDs de planos separados por vírgula |
-| GET | `/plan/:planId` | JWT | — | Obter todas as atribuições de um plano |
-| POST | `/` | JWT | — | Criar ou atualizar atribuições (padrão de status "Unconfirmed") |
-| POST | `/accept/:id` | JWT | — | Aceitar uma atribuição (deve ser a pessoa atribuída) |
-| POST | `/decline/:id` | JWT | — | Recusar uma atribuição (deve ser a pessoa atribuída) |
-| DELETE | `/:id` | JWT | — | Excluir uma atribuição |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/my` | JWT | — | Obtém as atribuições do usuário atual |
+| GET | `/my/upcoming` | JWT | — | Até 20 atribuições do usuário atual em planos com data a partir de ontem (planos em rascunho, ou `prepared`, são ignorados), do mais próximo para o mais distante: `{ assignmentId, status, positionName, planId, planName, serviceDate }`. Alimenta a prévia de serviço na página inicial do membro |
+| GET | `/:id` | JWT | — | Obtém uma atribuição pelo ID |
+| GET | `/plan/ids?planIds=` | JWT | — | Obtém atribuições de vários planos pelos IDs de planos separados por vírgula |
+| GET | `/plan/:planId` | JWT | — | Obtém todas as atribuições de um plano |
+| POST | `/` | JWT | — | Cria ou atualiza atribuições (o status padrão é "Unconfirmed") |
+| POST | `/accept/:id` | JWT | — | Aceita uma atribuição (deve ser a pessoa atribuída) |
+| POST | `/decline/:id` | JWT | — | Recusa uma atribuição (deve ser a pessoa atribuída) |
+| DELETE | `/:id` | JWT | — | Exclui uma atribuição |
 
 ### Exemplo: Aceitar uma Atribuição
 
@@ -155,123 +156,122 @@ Authorization: Bearer <token>
 }
 ```
 
-## Datas de Bloqueio
+## Datas de Indisponibilidade
 
 Caminho base: `/doing/blockoutDates`
 
-Estende a classe base CRUD (GET `/:id`, DELETE `/:id` — sem verificação de permissões).
+Estende a classe base CRUD (GET `/:id`, DELETE `/:id` — sem verificações de permissão).
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/:id` | JWT | — | Obter uma data de bloqueio por ID |
-| GET | `/ids?ids=` | JWT | — | Obter múltiplas datas de bloqueio por IDs separados por vírgula |
-| GET | `/my` | JWT | — | Obter datas de bloqueio do usuário atual |
-| GET | `/upcoming` | JWT | — | Obter todas as datas de bloqueio futuras da igreja |
-| POST | `/` | JWT | — | Criar ou atualizar datas de bloqueio (padrão personId para o usuário atual se não fornecido) |
-| DELETE | `/:id` | JWT | — | Excluir uma data de bloqueio |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/:id` | JWT | — | Obtém uma data de indisponibilidade pelo ID |
+| GET | `/ids?ids=` | JWT | — | Obtém várias datas de indisponibilidade pelos IDs separados por vírgula |
+| GET | `/my` | JWT | — | Obtém as datas de indisponibilidade do usuário atual |
+| GET | `/upcoming` | JWT | — | Obtém todas as datas de indisponibilidade futuras da igreja |
+| POST | `/` | JWT | — | Cria ou atualiza datas de indisponibilidade (usa o usuário atual como personId se não for informado) |
+| DELETE | `/:id` | JWT | — | Exclui uma data de indisponibilidade |
 
 ## Tarefas
 
 Caminho base: `/doing/tasks`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/` | JWT | — | Obter tarefas abertas do usuário atual |
-| GET | `/:id` | JWT | — | Obter uma tarefa por ID |
-| GET | `/:id/contact` | JWT | Pode ver o card | Informações de contato da pessoa sobre a qual um card de fluxo de trabalho trata: `{ personId, displayName, mobilePhone, email }`. Permite que um responsável designado sem acesso a Pessoas entre em contato com a pessoa |
-| GET | `/closed` | JWT | — | Obter tarefas fechadas do usuário atual |
-| GET | `/timeline?taskIds=` | JWT | — | Obter dados de linha do tempo para tarefas por IDs separados por vírgula |
-| GET | `/directoryUpdate/:personId` | JWT | — | Obter tarefa de atualização de diretório para uma pessoa |
-| POST | `/` | JWT | — | Criar ou atualizar tarefas. Adicione `?type=directoryUpdate` para tratar tarefas de atualização de diretório (auto-upload de fotos) |
-| POST | `/:id/conversation` | JWT | `tasks.edit` ou responsável pelo card | Anexa a conversa de notas ao card. Body: `{ conversationId }`. A primeira conversa anexada prevalece; chamadas posteriores retornam o card sem alterações |
-
-| POST | `/loadForGroups` | JWT | — | Carregar tarefas para grupos específicos. Body: `{ groupIds: [], status: "Open" }` |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | — | Obtém as tarefas abertas do usuário atual |
+| GET | `/:id` | JWT | — | Obtém uma tarefa pelo ID |
+| GET | `/:id/contact` | JWT | Pode visualizar o cartão | Informações de contato da pessoa a que um cartão de fluxo de trabalho se refere: `{ personId, displayName, mobilePhone, email }`. Permite que um responsável atribuído sem acesso a Pessoas entre em contato com a pessoa |
+| GET | `/closed` | JWT | — | Obtém as tarefas concluídas do usuário atual |
+| GET | `/timeline?taskIds=` | JWT | — | Obtém os dados da linha do tempo de tarefas pelos IDs de tarefas separados por vírgula |
+| GET | `/directoryUpdate/:personId` | JWT | — | Obtém a tarefa de atualização de diretório de uma pessoa |
+| POST | `/` | JWT | — | Cria ou atualiza tarefas. Adicione `?type=directoryUpdate` para tratar tarefas de atualização de diretório (envia fotos automaticamente) |
+| POST | `/:id/conversation` | JWT | `tasks.edit` ou responsável pelo cartão | Anexa a conversa de anotações ao cartão. Corpo: `{ conversationId }`. A primeira conversa anexada prevalece; chamadas posteriores retornam o cartão sem alterações |
+| POST | `/loadForGroups` | JWT | — | Carrega tarefas de grupos específicos. Corpo: `{ groupIds: [], status: "Open" }` |
 
 ## Automações
 
 Caminho base: `/doing/automations`
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/` | JWT | — | Listar todas as automações da igreja |
-| GET | `/:id` | JWT | — | Obter uma automação por ID |
-| GET | `/check` | Público | — | Acionar uma verificação de todas as automações |
-| POST | `/` | JWT | — | Criar ou atualizar automações |
-| DELETE | `/:id` | JWT | — | Excluir uma automação |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | — | Lista todas as automações da igreja |
+| GET | `/:id` | JWT | — | Obtém uma automação pelo ID |
+| GET | `/check` | Público | — | Dispara uma verificação de todas as automações |
+| POST | `/` | JWT | — | Cria ou atualiza automações |
+| DELETE | `/:id` | JWT | — | Exclui uma automação |
 
 ## Ações
 
 Caminho base: `/doing/actions`
 
-Ações definem o que acontece quando uma automação é acionada.
+As ações definem o que acontece quando uma automação é disparada.
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/:id` | JWT | — | Obter uma ação por ID |
-| GET | `/automation/:id` | JWT | — | Obter todas as ações de uma automação |
-| POST | `/` | JWT | — | Criar ou atualizar ações |
-| DELETE | `/:id` | JWT | — | Excluir uma ação |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/:id` | JWT | — | Obtém uma ação pelo ID |
+| GET | `/automation/:id` | JWT | — | Obtém todas as ações de uma automação |
+| POST | `/` | JWT | — | Cria ou atualiza ações |
+| DELETE | `/:id` | JWT | — | Exclui uma ação |
 
 ## Condições
 
 Caminho base: `/doing/conditions`
 
-Condições definem os critérios que acionam uma automação.
+As condições definem os critérios que disparam uma automação.
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/:id` | JWT | — | Obter uma condição por ID |
-| GET | `/automation/:id` | JWT | — | Obter todas as condições de uma automação |
-| POST | `/` | JWT | — | Criar ou atualizar condições |
-| DELETE | `/:id` | JWT | — | Excluir uma condição |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/:id` | JWT | — | Obtém uma condição pelo ID |
+| GET | `/automation/:id` | JWT | — | Obtém todas as condições de uma automação |
+| POST | `/` | JWT | — | Cria ou atualiza condições |
+| DELETE | `/:id` | JWT | — | Exclui uma condição |
 
 ## Conjunções
 
 Caminho base: `/doing/conjunctions`
 
-Conjunções ligam múltiplas condições em uma automação (lógica E/OU).
+As conjunções vinculam várias condições em uma automação (lógica E/OU).
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/:id` | JWT | — | Obter uma conjunção por ID |
-| GET | `/automation/:id` | JWT | — | Obter todas as conjunções de uma automação |
-| POST | `/` | JWT | — | Criar ou atualizar conjunções |
-| DELETE | `/:id` | JWT | — | Excluir uma conjunção |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/:id` | JWT | — | Obtém uma conjunção pelo ID |
+| GET | `/automation/:id` | JWT | — | Obtém todas as conjunções de uma automação |
+| POST | `/` | JWT | — | Cria ou atualiza conjunções |
+| DELETE | `/:id` | JWT | — | Exclui uma conjunção |
 
 ## Autenticações de Provedores de Conteúdo
 
 Caminho base: `/doing/contentProviderAuths`
 
-Estende a classe base CRUD (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` — sem verificação de permissões).
+Estende a classe base CRUD (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` — sem verificações de permissão).
 
-Gerencia registros de autenticação OAuth para provedores de conteúdo externos (ex: integrações com software de apresentação).
+Gerencia os registros de autenticação OAuth de provedores externos de conteúdo (por exemplo, integrações com softwares de apresentação).
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| GET | `/` | JWT | — | Listar todas as autenticações de provedores de conteúdo |
-| GET | `/:id` | JWT | — | Obter uma autenticação de provedor de conteúdo por ID |
-| GET | `/ids?ids=` | JWT | — | Obter múltiplas autenticações de provedores de conteúdo por IDs separados por vírgula |
-| GET | `/ministry/:ministryId` | JWT | — | Obter todas as autenticações de provedores de conteúdo para um ministério |
-| GET | `/ministry/:ministryId/:providerId` | JWT | — | Obter registro de autenticação para um ministério e provedor específicos |
-| POST | `/` | JWT | — | Criar ou atualizar autenticações de provedores de conteúdo |
-| DELETE | `/:id` | JWT | — | Excluir uma autenticação de provedor de conteúdo |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | — | Lista todas as autenticações de provedores de conteúdo |
+| GET | `/:id` | JWT | — | Obtém uma autenticação de provedor de conteúdo pelo ID |
+| GET | `/ids?ids=` | JWT | — | Obtém várias autenticações de provedores de conteúdo pelos IDs separados por vírgula |
+| GET | `/ministry/:ministryId` | JWT | — | Obtém todas as autenticações de provedores de conteúdo de um ministério |
+| GET | `/ministry/:ministryId/:providerId` | JWT | — | Obtém o registro de autenticação de um ministério e provedor específicos |
+| POST | `/` | JWT | — | Cria ou atualiza autenticações de provedores de conteúdo |
+| DELETE | `/:id` | JWT | — | Exclui uma autenticação de provedor de conteúdo |
 
 ## Proxy de Provedor
 
 Caminho base: `/doing/providerProxy`
 
-Faz proxy de requisições para provedores de conteúdo externos (ex: ProPresenter, EasyWorship). Lida com renovação de token automaticamente quando os tokens expiram.
+Encaminha requisições para provedores externos de conteúdo (por exemplo, ProPresenter, EasyWorship). Lida automaticamente com a renovação de tokens quando eles expiram.
 
-| Método | Caminho | Auth | Permissão | Descrição |
-|--------|---------|------|-----------|-----------|
-| POST | `/browse` | JWT | — | Navegar por arquivos do provedor de conteúdo. Body: `{ ministryId, providerId, path }` |
-| POST | `/getPresentations` | JWT | — | Obter apresentações de um provedor de conteúdo. Body: `{ ministryId, providerId, path }` |
-| POST | `/getPlaylist` | JWT | — | Obter uma playlist de um provedor de conteúdo. Body: `{ ministryId, providerId, path, resolution }` |
-| POST | `/getInstructions` | JWT | — | Obter instruções para um item de conteúdo. Body: `{ ministryId, providerId, path }` |
-| POST | `/getExpandedInstructions` | JWT | — | Obter instruções expandidas para um item de conteúdo. Body: `{ ministryId, providerId, path }` |
+| Método | Caminho | Autenticação | Permissão | Descrição |
+|--------|------|------|------------|-------------|
+| POST | `/browse` | JWT | — | Navega pelos arquivos do provedor de conteúdo. Corpo: `{ ministryId, providerId, path }` |
+| POST | `/getPresentations` | JWT | — | Obtém as apresentações de um provedor de conteúdo. Corpo: `{ ministryId, providerId, path }` |
+| POST | `/getPlaylist` | JWT | — | Obtém uma playlist de um provedor de conteúdo. Corpo: `{ ministryId, providerId, path, resolution }` |
+| POST | `/getInstructions` | JWT | — | Obtém as instruções de um item de conteúdo. Corpo: `{ ministryId, providerId, path }` |
+| POST | `/getExpandedInstructions` | JWT | — | Obtém as instruções expandidas de um item de conteúdo. Corpo: `{ ministryId, providerId, path }` |
 
 ## Páginas Relacionadas
 
-- [Endpoints de Membros](./membership) — Pessoas, grupos, papéis e permissões
+- [Endpoints de Membresia](./membership) — Pessoas, grupos, funções e permissões
 - [Endpoints de Presença](./attendance) — Rastreamento de cultos e visitas
-- [Estrutura do Módulo](../module-structure) — Padrões de organização de código
+- [Estrutura de Módulos](../module-structure) — Padrões de organização do código

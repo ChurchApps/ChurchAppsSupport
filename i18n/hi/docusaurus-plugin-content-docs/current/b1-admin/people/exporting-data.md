@@ -1,57 +1,68 @@
 ---
-title: "डेटा निर्यात करना"
+title: "डेटा Export करना"
 ---
 
-# डेटा निर्यात करना
+# डेटा Export करना
 
 <div class="article-intro">
 
-B1 Admin आपको अपने चर्च के डेटा को निर्यात करने देता है ताकि आप इसे स्प्रेडशीट में उपयोग कर सकें, अपनी टीम के साथ साझा कर सकें, या एक बैकअप रख सकें। चाहे आपको नामों और ईमेल की एक त्वरित सूची की आवश्यकता हो या एक पूर्ण डेटाबेस निर्यात, आपकी आवश्यकताओं को पूरा करने के लिए विकल्प हैं।
+B1 Admin आपको अपने church का डेटा export करने देता है ताकि आप उसे spreadsheets में उपयोग कर सकें, अपनी team के साथ साझा कर सकें, या backup रख सकें। चाहे आपको नामों और emails की एक त्वरित सूची चाहिए हो या पूरे database का export, आपकी ज़रूरत के अनुसार विकल्प उपलब्ध हैं।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- आपको एक सक्रिय B1 Admin खाता चाहिए जो आप जो डेटा निर्यात करना चाहते हैं उसे देखने की अनुमति के साथ। यदि आप अपने पहुंच स्तर के बारे में अनिश्चित हैं तो [Roles & Permissions](roles-permissions.md) देखें।
-- एक पूर्ण डेटाबेस निर्यात के लिए, आपको **Settings** क्षेत्र तक पहुंच की आवश्यकता है।
+- आपको एक सक्रिय B1 Admin account चाहिए, जिसमें उस डेटा को देखने की अनुमति हो जिसे आप export करना चाहते हैं। यदि आपको अपने access level के बारे में निश्चितता नहीं है, तो [Roles & Permissions](roles-permissions.md) देखें।
+- पूरे database export के लिए, आपको **Settings** क्षेत्र तक पहुंच चाहिए।
 
 </div>
 
-## लोग पृष्ठ से निर्यात करना
+## People Page से Export करना
 
-आपकी निर्देशिका को निर्यात करने का सबसे तेजी तरीका सीधे **People** पृष्ठ से है:
+अपनी directory export करने का सबसे तेज़ तरीका सीधे **People** page से है:
 
-1. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin के शीर्ष-बाएं में खोज पट्टी), **People** को विस्तृत करें, और **People** पर क्लिक करें।
-2. उस डेटा को सीमित करने के लिए खोज पट्टी या फ़िल्टर का उपयोग करें जिसे आप निर्यात करना चाहते हैं (या सभी को निर्यात करने के लिए इसे unfiltred छोड़ दें)। फ़िल्टर करने के लिए टिप्स के लिए [लोगों को खोजना](searching-people.md) देखें।
-3. लोगों के पेज हेडर में **Export** बटन पर क्लिक करें।
-4. एक CSV फ़ाइल आपके कंप्यूटर में डाउनलोड होगी जिसमें आपके परिणामों में वर्तमान लोग होंगे, उनके नाम, संपर्क जानकारी, पता, और अन्य मानक फ़ील्ड सहित।
+1. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (B1 Admin में ऊपर-बाईं ओर का search bar) खोलें, **People** को expand करें, और **People** पर click करें।
+2. जिन परिणामों को export करना है उन्हें सीमित करने के लिए search bar या filters का उपयोग करें (या सभी को export करने के लिए इसे बिना filter के छोड़ दें)। filtering के सुझावों के लिए [Searching People](searching-people.md) देखें।
+3. People page के header में **Export** button पर click करें।
+4. आपके परिणामों में मौजूद लोगों की एक CSV file आपके computer पर download होगी, जिसमें उनका नाम, contact जानकारी, address, और अन्य मानक fields शामिल होंगे।
 
 :::tip
-निर्यात में आपके वर्तमान परिणामों के सभी लोग शामिल होते हैं। पहले कोई खोज चलाएं, एक [Saved List](./lists.md) लोड करें, या **Advanced** खोज का उपयोग करें ताकि केवल वही लोग निर्यात हों जिनकी आपको आवश्यकता है।
+export में आपके वर्तमान परिणामों के सभी लोग शामिल होते हैं। केवल आवश्यक लोगों को export करने के लिए पहले search चलाएं, एक [Saved List](./lists.md) लोड करें, या **Advanced** search का उपयोग करें।
 :::
 
-## Settings से पूर्ण डेटा निर्यात
+## Settings से पूरा Data Export
 
-आपके सभी B1 डेटा का एक पूर्ण निर्यात (केवल लोग नहीं), Settings में निर्यात उपकरण का उपयोग करें:
+आपके सभी B1 डेटा (केवल लोग नहीं) का पूरा export करने के लिए, Settings में export tool का उपयोग करें:
 
 1. Jump menu में, **Settings > Settings** चुनें।
-2. बाएं हाथ की सेटिंग मेनू के शीर्ष पर, आपके चर्च के नाम के नीचे **Import/Export** लिंक पर क्लिक करें।
-3. **Data Source** ड्रॉपडाउन से **B1 Database** चुनें।
-4. डेटा पूर्वावलोकन की समीक्षा करें और **Continue to Destination** पर क्लिक करें।
-5. निर्यात गंतव्य के रूप में **B1 Export Zip** चुनें।
-6. निर्यात प्रगति की निगरानी करें जब तक सभी आइटम हरी checkmarks दिखाते हैं।
-7. निर्यात फ़ाइल स्वचालित रूप से डाउनलोड होगी। अपने downloads फ़ोल्डर में `B1Export` फ़ाइल देखें।
-8. व्यक्तिगत CSV फ़ाइलों तक पहुंचने के लिए फ़ाइल को unzip करें (जैसे `people.csv`) जो आप Excel, Google Sheets, या Numbers में खोल सकते हैं।
+2. settings menu के बाईं ओर के शीर्ष पर, अपने church के नाम के नीचे **Import/Export** link पर click करें।
+3. **Data Source** dropdown से **B1 Database** चुनें।
+4. data preview देखें और **Continue to Destination** पर click करें।
+5. export destination के रूप में **B1 Export Zip** चुनें।
+6. जब तक सभी items पर हरे checkmarks न दिखें, export की प्रगति देखते रहें।
+7. export file अपने-आप download हो जाएगी। अपने downloads folder में `B1Export` file खोजें।
+8. अलग-अलग CSV files (जैसे `people.csv`) तक पहुंचने के लिए file को unzip करें, जिन्हें आप Excel, Google Sheets, या Numbers में खोल सकते हैं।
 
 :::info
-पूर्ण डेटा निर्यात लोगों, समूहों, दान, उपस्थिति, और अधिक शामिल करते हैं -- आपकी B1 डेटाबेस में सबकुछ। यह आपकी चर्च के रिकॉर्ड का एक आवधिक बैकअप बनाने का एक शानदार तरीका भी है।
+B1 Export Zip आपके church के डेटा का पूरा backup है। इसमें शामिल है:
+
+- लोग (photos सहित) और households, जिनमें household pickup contacts भी शामिल हैं
+- campuses, services, और service times
+- groups और group members
+- funds और donations, जिनमें कई funds में बंटे gifts भी शामिल हैं
+- attendance
+- forms, questions, submissions, और answers
+- custom fields और उनके values
+- सहेजी गई people lists
+
+इसे वापस लाने के लिए, source के रूप में **B1 Import Zip** और destination के रूप में **B1 Database** चुनें (देखें [Importing Data](./importing-data.md))। Households, pickup contacts, और सहेजी गई lists लोगों के साथ फिर से बनाई जाती हैं। सहेजी गई list के filters वापस लाए गए groups, funds, campuses, और custom fields की ओर इंगित होते हैं।
 :::
 
-## समूह डेटा निर्यात करना
+## Group डेटा Export करना
 
-आप व्यक्तिगत समूहों के लिए सदस्य सूचियों को भी निर्यात कर सकते हैं। **Groups** पृष्ठ से, एक समूह खोलें और उस समूह की सदस्य सूची के ऊपर **Export** पर क्लिक करें। अधिक विवरण के लिए [समूह सदस्य](../groups/group-members.md) देखें।
+आप व्यक्तिगत groups की member lists भी export कर सकते हैं। **Groups** page से, कोई group खोलें और उस group की member list export करने के लिए **download icon** पर click करें। अधिक विवरण के लिए [Group Members](../groups/group-members.md) देखें।
 
 :::info
-निर्यात की गई CSV फ़ाइलें Microsoft Excel, Google Sheets, और Apple Numbers सहित सभी प्रमुख स्प्रेडशीट अनुप्रयोगों के साथ काम करती हैं।
+Exported CSV files Microsoft Excel, Google Sheets, और Apple Numbers सहित सभी प्रमुख spreadsheet applications में काम करती हैं।
 :::

@@ -6,59 +6,59 @@ title: "Volunteer Signup"
 
 <div class="article-intro">
 
-Tuklasin ang mga available na posisyon ng boluntaryo at mag-sign up para sa mga darating na serbisyo direkta mula sa B1 Mobile. Makita kung aling mga posisyon ang kailangang punan, gaano karaming mga lugar ang bukas, at sumali sa isang koponan sa loob lamang ng ilang pagkakataon.
+Mag-browse ng mga available na posisyon sa pagboboluntaryo at mag-sign up para sa mga paparating na serbisyo nang direkta mula sa B1 Mobile. Tingnan kung anong mga posisyon ang kailangang punan, ilan ang bukas na puwesto, at sumali sa isang team sa ilang tap lamang.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
 - [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
-- Ang iyong administrator ng simbahan ay dapat na nag-enable ng self-signup sa hindi bababa sa isang posisyon
+- Dapat na naka-enable ng administrator ng iyong simbahan ang self-signup sa kahit isang posisyon
 
 </div>
 
-## Pagtuklas ng Mga Oportunidad para sa Boluntaryo
+## Pag-browse ng Mga Oportunidad sa Pagboboluntaryo
 
-1. Buksan ang **Volunteer** na seksyon mula sa app navigation.
-2. Isang listahan ng mga darating na plano ng serbisyo na may mga bukas na posisyon ay lumalabas.
-3. Bawat kard ng plano ay nagpapakita:
-   - **Pangalan ng plano** at **petsa ng serbisyo**
-   - **Pangkalahatang progress bar** na nagpapakita ng kabuuang mga lugar na napunuan
-   - **Status** -- bilang ng mga lugar na natitira pa, o "Full" kung puno na lahat ng mga lugar
-   - **Position chips** na nagpapakita sa bawat papel at dami ng bukas na slot
+1. Buksan ang seksyong **Volunteer** mula sa app navigation.
+2. Lilitaw ang listahan ng mga paparating na service plan na may bukas na posisyon. Kung ipinapakita lamang ng iyong simbahan ang susunod na linggo ng bawat plan type, lilitaw ang mga susunod na linggo kapag lumipas na ang kasalukuyan.
+3. Ipinapakita ng bawat card ng plano ang:
+   - **Plan name** at **service date**
+   - **Overall progress bar** na nagpapakita ng kabuuang napunong puwesto
+   - **Status** -- bilang ng mga puwestong bukas pa, o "Full" kung puno na ang lahat
+   - **Position chips** na nagpapakita ng bawat papel at bilang ng bukas na puwesto nito
 4. I-tap ang **View and Sign Up** upang makita ang buong listahan ng mga posisyon para sa isang plano.
 
-## Pag-sign Up para sa Isang Posisyon
+## Pag-sign Up sa Isang Posisyon
 
 1. I-tap ang isang plano upang buksan ang mga detalye nito.
-2. Ang mga posisyon ay naka-grupo ayon sa kategorya (halimbawa, "Band", "Hospitality", "Kids Ministry").
-3. Bawat posisyon ay nagpapakita ng pangalan ng papel, paglalarawan, at available na mga lugar.
-4. I-tap ang **Sign Up** sa tabi ng posisyon na gusto mo.
-5. Isang confirmation alert ay lumalabas: "You're signed up! Thank you for volunteering."
-6. Ang posisyon ay nagpapakita ng green indicator na nagpapatunay ng iyong signup.
+2. Nakapangkat ang mga posisyon ayon sa kategorya (halimbawa, "Band", "Hospitality", "Kids Ministry").
+3. Ipinapakita ng bawat posisyon ang pangalan ng papel, paglalarawan, at mga available na puwesto.
+4. I-tap ang **Sign Up** sa tabi ng posisyong gusto mo.
+5. Lalabas ang alertong kumpirmasyon: "You're signed up! Thank you for volunteering."
+6. Ipapakita ng posisyon ang berdeng indicator na nagkukumpirma sa iyong signup.
 
 :::info
-Dapat kang logged in upang mag-sign up para sa mga posisyon. Ang app ay magpoprompt sa iyo na mag-log in kung kinakailangan.
+Kailangan mong naka-log in upang mag-sign up para sa mga posisyon. Hihilingin ng app na mag-log in ka kung kinakailangan.
 :::
 
-## Pag-aalis ng Signup
+## Pag-alis ng Signup
 
-1. Hanapin ang posisyon na nag-sign up ka -- ito ay nagpapakita ng green na "You're signed up" indicator.
+1. Hanapin ang posisyong kung saan ka naka-sign up -- nagpapakita ito ng berdeng indicator na "You're signed up".
 2. I-tap ang **Remove**.
-3. Isang confirmation dialog ay nagtatanong kung sigurado ka na.
-4. Kumpirmahin upang alisin ang iyong sarili mula sa posisyon.
+3. Magtatanong ang dialog ng kumpirmasyon kung sigurado ka.
+4. Kumpirmahin upang alisin ang sarili mo sa posisyon.
 
 ## Mga Deadline at Kapasidad
 
-- **Mga Deadline** -- Ang iyong simbahan ay maaaring magtakda ng cutoff time bago ang serbisyo. Pagkatapos ng deadline, hindi ka maaaring mag-sign up o alisin ang mga signup. Isang banner sa tuktok ng plano ay nagpapahiwatig kung kailan lumampas na ang deadline.
-- **Kapasidad** -- Bawat posisyon ay may limitadong bilang ng mga lugar. Kapag puno na, ang signup button ay disabled. Ang mga lugar ay maaaring muling magbukas kung may nagkansela.
+- **Mga deadline** -- Maaaring magtakda ang iyong simbahan ng cutoff time bago ang serbisyo. Pagkatapos ng deadline, hindi ka na makakapag-sign up o makakapag-alis ng signup. May banner sa itaas ng plano na nagsasabi kung kailan lumipas na ang deadline.
+- **Kapasidad** -- Ang bawat posisyon ay may limitadong bilang ng puwesto. Kapag puno, made-disable ang signup button. Muling magbubukas ang puwesto kung may magkansela.
 
 :::tip
-I-enable ang [push notifications](../community/notifications.md) upang manatiling updated sa mga bagong pagkakataon ng volunteer at pagbabago sa iyong mga assignment.
+I-enable ang [push notifications](../community/notifications.md) upang manatiling may alam tungkol sa mga bagong oportunidad sa pagboboluntaryo at mga pagbabago sa iyong mga assignment.
 :::
 
 ## Mga Kaugnay na Artikulo
 
-- [Pagtingin sa Mga Plano](./viewing-plans) -- Makita ang iyong na-assign na mga plano at order ng serbisyo
-- [Mga Notification](../community/notifications.md) -- Manatiling updated sa mga assignment ng pagseserbisyo
+- [Viewing Plans](./viewing-plans) -- Tingnan ang iyong mga naka-assign na plano at order of service
+- [Notifications](../community/notifications.md) -- Manatiling updated tungkol sa mga serving assignment

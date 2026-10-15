@@ -1,68 +1,83 @@
 ---
-title: "Pagtingin ng mga Plano"
+title: "Pagtingin sa Mga Plano"
 ---
 
-# Pagtingin ng mga Plano
+# Pagtingin sa Mga Plano
 
 <div class="article-intro">
 
-Ang pahina ng Mga Plano ay nagbibigay sa iyo ng isang malinaw na pagtingin ng lahat ng mga plano ng serbisyo na ikaw ay itinalok. Ito ay gumagamit ng isang master-detail layout upang mabilis mong i-browse ang iyong mga plano at lumubog sa mga detalye ng kahit aling isa.
+Nagbibigay ang pahina ng Plans ng malinaw na pagtingin sa lahat ng service plan kung saan ka naka-assign. Ipinapakita nito kung ano ang kailangan ng iyong sagot, kung ano ang paparating, at kung ano ang nagawa mo nang paglilingkod, at hinahayaan kang buksan ang alinmang plano para sa mga detalye.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Dapat kang maging [naka-log in](../getting-started/logging-in.md) sa iyong B1.church account.
-- Dapat kang maging itinalok sa hindi bababa sa isang plano ng serbisyo. Kung hindi mo nakikita ang anumang mga plano, makipag-ugnayan sa iyong administrator ng simbahan o lider ng ministry.
+- Dapat ka [naka-log in](../getting-started/logging-in.md) sa iyong B1.church account.
+- Dapat ka naka-assign sa kahit isang service plan. Kung wala kang makitang plano, makipag-ugnayan sa iyong administrator ng simbahan o lider ng ministry.
 
 </div>
 
-## Pag-access sa Iyong mga Plano
+## Pag-access sa Iyong Mga Plano
 
-1. I-click ang **Mga Plano** sa [sidebar navigation](../getting-started/navigating.md).
-2. Makikita mo ang isang listahan ng mga plano na ikaw ay naka-schedule.
+1. I-tap ang **Plans** sa tab bar, sa [More page](../getting-started/navigating.md#the-more-page), o i-tap ang **All plans** sa seksyong **You're serving** sa Home.
+2. Makikita mo ang mga planong nakaiskedyul ka.
 
-## Ang Listahan ng Plano
+## Ang Plans Page
 
-Ang iyong mga plano ay nahahati sa dalawang tab: **Paparating** at **Nakaraang**. Bawat entry ay nagpapakita ng:
+Sa itaas ng pahina, ipinapakita kung ilan sa iyong paparating na assignment ang nakumpirma at ilan ang naghihintay pa ng sagot, kasama ang button na **Sign up to serve** na nagbubukas ng [volunteer signup](../serving/volunteer-signup.md) page. Sa ibaba nito, nakaayos ang pahina sa mga seksyon:
 
-- Ang **pangalan ng plano** (halimbawa, "Sunday Worship" o "Kids Ministry")
-- Ang **petsa ng serbisyo**
-- Ang iyong **posisyon** (ang papel na iyong pinupuno)
-- Ang iyong **status** -- kulay na naka-code upang makita mo sa isang sulyap kung ikaw ay tumanggap, tumukoy, o hindi pa nakaresponde
+- **Needs your reply** -- Mga assignment na hindi mo pa nasasagot, bawat isa ay may button na **Accept** at **Decline** upang makasagot ka nang hindi binubuksan ang plano. Lumilitaw lamang kapag may naghihintay sa iyo.
+- **Upcoming** -- Ang susunod mong tatlong assignment. I-tap ang **All upcoming** upang makita ang iba pa.
+- **Blockout dates** -- Mga petsa kung kailan ka hindi available sa pagboboluntaryo. I-tap ang **Add dates**, pumili ng **Start date** at **End date**, at i-tap ang **Save**. I-tap ang **Remove** sa tabi ng blockout upang burahin ito. Nakikita ng mga lider ng iyong team ang mga petsang ito upang makapag-iskedyul sila nang hindi ka kasama.
+- **Past** -- Ilang beses ka nang naglingkod ngayong taon at kailan ka huling naglingkod. I-tap ang **Past assignments** upang makita ang buong listahan, na maaari mong i-filter ayon sa taon.
 
-Sa ibaba ng listahan ay isang seksyon ng **Mga Petsa ng Blockout**. Gamitin ito upang pamahalaan ang mga petsa kung kailan ikaw ay unavailable para sa paglilingkod. Maaari kang magdagdag, mag-edit, at mag-alisin ng mga range ng petsa ng blockout upang ang iyong mga lider ng koponan ay alam kung kailan upang mag-schedule sa paligid mo.
+Ipinapakita ng bawat assignment ang **service date**, ang **plan name**, ang iyong **position**, at isang status badge -- **Accepted**, **Confirmed**, **Declined**, **Pending Response**, o **Needs reply** kung hindi ka pa tumutugon.
 
 :::info
-Ang iyong simbahan ay maaaring magpadala ng **mga pagaalala** bago ang mga serbisyo na ikaw ay naka-schedule, sa pamamagian ng email at bilang isang notification ng app. Kung nagpapadala ng text ang iyong simbahan, maaari mo rin itong matanggap sa pamamagitan ng text sa pag-on ng **Text messages** sa iyong [Mga Kagustuhan sa Notipikasyon](../getting-started/notification-preferences.md). Kung hindi ka pa nakaresponde, maaari kang **Tumanggap** o **Tumukoy** nang direkta mula sa email ng pagaalala — walang kailangang mag-sign in.
+Maaaring magpadala ang iyong simbahan ng **paalala** bago ang mga serbisyong nakaiskedyul ka, sa pamamagitan ng email at bilang notification sa app. Kung nagpapadala ng text ang iyong simbahan, makakatanggap ka rin nito sa pamamagitan ng pag-on ng **Text messages** sa iyong [Notification Preferences](../getting-started/notification-preferences.md). Kung hindi ka pa tumutugon, maaari kang mag-**Accept** o **Decline** mismo mula sa email ng paalala -- hindi kailangang mag-sign in.
 :::
 
-## Pagtingin ng mga Detalye ng Plano
+## Pagtingin sa Mga Detalye ng Plano
 
-I-click ang anumang plano sa listahan upang buksan ito. Ang pahina ng plano ay may tatlong tab:
+I-tap ang alinmang plano upang buksan ito. Ipinapakita ng pahina ng plano ang pangalan ng plano at petsa ng serbisyo sa itaas, kasunod ang mga seksyong ito:
 
-- **Pangkalahatang Pagtingin** -- Ang iyong itinalok na posisyon na may kailangang oras at iyong kasalukuyang status, kasama ang anumang mga nota na idagdag ng creator ng plano para sa koponan. Kung hindi ka pa nakaresponde, maaari kang mag-click ng **Tumanggap** o **Tumukoy** nang direkta mula sa pagtingin na ito.
-- **Pagkakasunod-sunod ng Serbisyo** -- Ang buong pagkakasunod-sunod ng serbisyo na may oras, mga item, at mga paglalarawan. Tingnan ang [Pagkakasunod-sunod ng Serbisyo](./service-order.md) para sa mas maraming mga detalye.
-- **Mga Koponan sa Paglilingkod** -- Lahat ng mga miyembro ng koponan at ang kanilang mga posisyon, upang makita mo kung sino ang iba pang naglilingkod sa iyo.
+- **Your assignment** -- Bawat posisyong naka-assign sa iyo sa planong ito, kasama ang team nito, iyong status, at ang **Service Times** kung kailan ka kailangan. Kung hindi ka pa tumutugon, i-tap ang **Accept** o **Decline** mismo dito.
+- **Service Order** -- Ang unang ilang item ng serbisyo, kasama ang bilang ng kabuuang item. I-tap ang **Full service order** upang makita ang lahat. Tingnan ang [Service Order](./service-order.md) para sa higit pang detalye.
+- **Serving Teams** -- Sino ang kasama mong naglilingkod at sa anong mga posisyon, kasama ang bilang ng mga tao at team. I-tap ang **All teams** upang makita ang bawat team at mga miyembro nito.
+- **Plan Notes** -- Anumang tala na idinagdag ng gumawa ng plano para sa team.
+- **Downloads** -- Mga file na nakakabit sa nilalaman ng lesson ng plano, kung mayroon.
+
+I-tap ang **Back to** *pangalan ng plano* sa itaas ng buong service order o listahan ng team upang bumalik sa plano.
+
+## Pagtanggi sa Naka-accept na Assignment
+
+Kung may nangyari matapos mong i-accept, maaari ka pa ring umatras mula sa pahina ng plano:
+
+1. Buksan ang plano at hanapin ang iyong posisyon sa ilalim ng **Your assignment**. Ipinapakita nito ang badge na **Accepted**.
+2. I-tap ang pulang link na **Decline** sa ilalim ng posisyon.
+3. Magtatanong ang kumpirmasyon ng **Decline this assignment?** -- "Your team leaders will be notified that you can no longer serve in this position."
+4. I-tap ang **Decline** upang kumpirmahin, o **Cancel** upang panatilihin ang assignment.
+
+Magbabago ang iyong status sa **Declined**. Available lamang ang link na **Decline** hanggang matapos ang iyong service time -- pagkatapos nito, hindi na mababago ang iyong assignment mula sa pahina ng plano.
 
 :::tip
-Kung mayroon kang maraming mga assignment sa iba't ibang mga plano, ang listahan ay naka-sort ayon sa petsa upang ang iyong mga paparating na pangako ay unang lumilitaw. I-check ang pabalik nang regular upang manatiling nangunguna sa iyong iskedyul.
+Kung may maraming assignment ka sa iba't ibang plano, ayon sa petsa ang pagkakasunod ng listahan kaya unang lumilitaw ang iyong paparating na mga pangako. Bumalik nang regular upang manatiling nakasubaybay sa iyong iskedyul.
 :::
 
-## Tingnan ng Guro para sa Mga Aralin
+## Teacher View para sa Lessons
 
-Kung ang iyong plano ay may kaugnay na curriculum mula sa isang provider ng nilalaman (tulad ng Lessons.church), ang tab ng **Pagkakasunod-sunod ng Serbisyo** ay nagpapakita ng mga seksyon ng aralin para sa isang mabilis na pagsusuri, kasama ang isang knob ng **Magturo**.
+Kung may kaugnay na curriculum ang iyong plano mula sa isang content provider (gaya ng Lessons.church), ipinapakita ng seksyong **Service Order** ang mga seksyon ng lesson para sa mabilisang pagsusuri, at may lalabas na button na **Teach** sa itaas ng pahina ng plano.
 
-I-click ang **Magturo** upang magbukas ng isang immersive, buong-screen na pagtatanghal ng aralin na dinisenyo para sa mga guro, na may mga na-format na tagubilin, embedded media, mga nota, at hakbang-hakbang na gabay. Isara ito upang bumalik sa pagkakasunod-sunod ng serbisyo.
+I-click ang **Teach** upang buksan ang isang immersive, full-screen na presentasyon ng lesson na dinisenyo para sa mga guro, na may naka-format na mga tagubilin, naka-embed na media, mga tala, at step-by-step na gabay. Isara ito upang bumalik sa plano.
 
-Ang Teach view ay nag-oorganisa ng nilalaman ng aralin sa mga navigable na seksyon na ipinakita bilang mga tab sa tuktok. Maaari mo:
+Inaayos ng Teach view ang nilalaman ng lesson sa mga seksyon. Maaari kang:
 
-- I-tap ang isang tab ng seksyon upang tumalon nang direkta sa bahaging iyon ng aralin
-- I-scroll ang nilalaman ng aralin, at ang aktibong tab ay awtomatikong mag-update upang tumugma sa iyong posisyon
-- I-click ang mga item ng media (mga video, larawan, aktibidad) upang tingnan ang mga ito sa isang modal dialog; ang mga link ng audio (mga pag-record ng kanta, mga clip ng sermon) ay tumutugtog nang inline na may isang built-in na audio player
-- Makita ang mga uri ng aksyon na na-format nang naiiba: Ang **Sabihin** ay lumalitaw sa bubbles ng pag-uusap, **Gawin** sa bold na teksto, at **Nota** sa naka-highlight na callout
+- I-tap ang **Sections** sa itaas upang makita ang listahan ng mga seksyon at tumalon sa alinmang bahagi ng lesson
+- Mag-scroll sa nilalaman ng lesson -- ipinapakita ng heading kung nasaang seksyon ka (halimbawa, "Section 2 of 5")
+- I-click ang mga media item (mga video, larawan, aktibidad) upang tingnan ang mga ito sa modal dialog; ang mga audio link (mga recording ng awit, sermon clip) ay tumutugtog nang inline gamit ang built-in na audio player
+- Makita ang mga uri ng aksyon na naka-format nang kakaiba: lumilitaw ang **Say** sa mga conversation bubble, ang **Do** sa bold na teksto, at ang **Note** sa mga naka-highlight na callout
 
 :::tip
-Ang Teach view ay partikular na kapaki-pakinabang kapag gumagabay sa isang classroom o small group, dahil ito ay nagtatanghal ng lahat ng iyong nilalaman ng aralin sa isang malinisang, walang distraksiyon na format na na-optimize para sa mobile at tablet use.
+Lalo na kapaki-pakinabang ang Teach view kapag namumuno ka sa klase o maliit na group, dahil ipinapakita nito ang lahat ng nilalaman ng lesson sa malinis at walang abalang format na in-optimize para sa mobile at tablet.
 :::

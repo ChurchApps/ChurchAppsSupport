@@ -14,14 +14,15 @@ The **Plans** section in B1.church lets you see the service plans you have been 
 
 Plans can include several types of content depending on how your church sets them up:
 
-- **Your assignments** -- See which positions you have been assigned to and when you are needed. Each assignment shows your position name, the service date, and your current status (Accepted, Declined, or Unconfirmed).
+- **Your assignments** -- See which positions you have been assigned to and when you are needed. Each assignment shows your position name, the service date, and your current status (such as Accepted, Declined, or Needs reply). You can accept or decline new assignments, and decline one you already accepted if your plans change.
 - **Service order** -- View the order of service with timing details, song information, and item descriptions so you know the flow of the service ahead of time.
 - **Curriculum content** -- Some plans include associated lesson or curriculum content from providers like [Lessons.church](../content/lessons.md). You can preview this content directly within the plan.
 - **Blockout dates** -- Let your team leaders know when you are unavailable by managing your blockout dates.
+- **Home preview** -- Your next assignments also appear in the **You're serving** section of the [Home dashboard](../getting-started/navigating.md#home), where you can accept or decline ones that need a reply.
 
 ## Getting Started
 
-To access your plans, click **Plans** in the sidebar navigation of your member portal. You must be [logged in](../getting-started/logging-in.md) to view your plans -- if you are not signed in, you will be prompted to log in first.
+To access your plans, tap **Plans** in the tab bar or on the **More** page of your member portal. You must be [logged in](../getting-started/logging-in.md) to view your plans -- if you are not signed in, you will be prompted to log in first.
 
 :::info
 You will only see plans that you have been assigned to. If you do not see any plans listed, it means you have not been added to a serving team yet. Talk to your church administrator or ministry leader to get involved.

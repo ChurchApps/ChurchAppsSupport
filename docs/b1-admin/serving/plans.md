@@ -22,7 +22,7 @@ Service plans organize who is serving and when. Each plan is tied to a specific 
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Serving**, and click **Plans**.
 2. Select a **ministry tab** at the top of the page.
-3. Click on a **plan type** to see the list of plans for that type. Use **Upcoming** and **Past** above the list to switch between future and earlier plans.
+3. Click on a **plan type** to see the list of plans for that type. Use **Upcoming** and **Past** above the list to switch between future and earlier plans. **Upcoming** lists plans from today on, soonest first, with undated plans at the end. **Past** lists only earlier plans, newest first.
 4. Click on a specific plan to open it.
 
 Each plan page shows links back to its plan type and to **Plans**, so you can move back up without the browser's back button.
@@ -79,6 +79,10 @@ Each plan has additional settings you can configure by clicking **Edit** next to
 - **Show volunteer names on signup page** — when checked, signed-in volunteers can see who else is already signed up for each position on the B1.church signup page. Names are never shown to visitors who aren't signed in.
 - **Penciled in** — hides assignments from volunteers until you are ready to publish the schedule.
 - **Automatically schedule a replacement when a volunteer declines** — when checked, if an assigned volunteer declines their position B1 will automatically contact the next available person on the team roster and ask if they can serve. This continues down the list until someone accepts, keeping your positions filled without manual follow-up.
+
+:::tip
+On the member signup page, each plan's open positions are listed by category and then by name. Members see every upcoming week with open positions unless you turn on **Show only the next week of each plan type** in [Settings > Volunteer Signup](../settings/church-settings.md#volunteer-signup).
+:::
 
 ## Volunteer Reminders
 

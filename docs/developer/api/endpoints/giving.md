@@ -18,9 +18,10 @@ Base path: `/giving/donations`
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.View or own personId | List all donations. Filter by `?batchId=` or `?personId=` |
+| GET | `/` | JWT | Donations.View or own personId | List all donations. Filter by `?batchId=` or `?personId=`. With `?personId=`, gifts to non-deductible funds are left out (as on giving statements) unless a Donations.View caller adds `&includeNonDeductible=1`, which B1Admin's person record does |
 | GET | `/:id` | JWT | Donations.View | Get a donation by ID |
 | GET | `/my` | JWT | — | Get current user's donations |
+| GET | `/my/summary?year=` | JWT | — | Current user's giving total for a year (default this year): `{ year, total, count, currency, isConverted }`, with totals converted to the church currency. Backs the giving preview on the member home page |
 | GET | `/summary` | JWT | Donations.ViewSummary | Get donation summary. Filter by `?startDate=&endDate=&type=`. Use `type=person` for per-person breakdown |
 | GET | `/testEmail` | Public | — | Send a test email (development/debugging) |
 | POST | `/` | JWT | Donations.Edit | Create or update donations (batch) |

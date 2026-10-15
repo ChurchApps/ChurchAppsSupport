@@ -1,58 +1,58 @@
 ---
-title: "Kom i gang"
+title: "Komme i gang"
 ---
 
-# Kom i gang med B1.church
+# Komme i gang med B1.church
 
 <div class="article-intro">
 
-B1.church er menighetens digitale hjem. Det er stedet du går for å holde kontakten med menigheten din, se oppdateringer, gi online, sjekke inn til gudstjenester og mye mer. Denne delen tar deg gjennom det grunnleggende for å få tilgang til og bruke medlemsportalen.
+B1.church er kirkens nettbaserte hjem. Det er her du går for å holde kontakten med menigheten, se oppdateringer, gi på nett, sjekke inn til gudstjenester og mye mer. Denne delen går gjennom det grunnleggende om hvordan du får tilgang til og bruker medlemsportalen.
 
 </div>
 
 ## Få tilgang til kirkens nettsted
 
-Kirken din har sin egen B1.church-URL, vanligvis i formatet `https://yourchurchname.b1.church`. Du kan besøke denne nettadressen i en hvilken som helst nettleser på datamaskinen, nettbrettet eller telefonen din. Kirkeledelsen eller velkomstteamet ditt kan gi deg den eksakte adressen.
+Kirken din har sin egen B1.church-nettadresse, vanligvis i formatet `https://yourchurchname.b1.church`. Du kan besøke denne adressen i en hvilken som helst nettleser på datamaskinen, nettbrettet eller telefonen din. Kirkeledelsen eller velkomstteamet kan gi deg den nøyaktige adressen.
 
-Når du besøker nettstedet for første gang, vil du se kirkens offentlige nettsted med dens egne farger, navigasjonsmenyer og innholdssider.
+Når du først besøker siden, ser du kirkens offentlige nettsted med egen profil, navigasjonsmenyer og innholdssider.
 
 ## Opprette en konto
 
-For å få tilgang til medlemsportalen og funksjonene den tilbyr, trenger du en ChurchApps-konto.
+For å få tilgang til medlemsportalen og funksjonene den har, trenger du en ChurchApps-konto.
 
-1. Besøk kirkens B1.church-URL.
-2. Klikk på **Logg inn**-knappen øverst til høyre på siden.
-3. På innloggingsskjermen velger du alternativet for å **registrere** en ny konto.
-4. Skriv inn **fornavn**, **etternavn**, **e-postadresse**, og velg et **passord**.
+1. Besøk kirkens B1.church-nettadresse.
+2. Klikk på knappen **Logg inn** øverst til høyre på siden.
+3. På innloggingsskjermen velger du alternativet for å **Registrere** en ny konto.
+4. Skriv inn ditt **fornavn**, **etternavn**, **e-postadresse** og velg et **passord**.
 5. Fullfør registreringsskjemaet.
 
-Etter registrering kan du logge inn og få tilgang til medlemsportalen med alle verktøyene den tilbyr.
+Etter registreringen kan du logge inn og få tilgang til medlemsportalen med alle verktøyene.
 
 :::tip
-Hvis kirken din allerede har lagt deg til i systemet sitt, bruk samme e-postadresse som de har registrert. Dette vil koble kontoen din til den eksisterende kirkeprofilen din.
+Hvis kirken din allerede har lagt deg til i systemet sitt, bruk samme e-postadresse som de har registrert. Da kobles kontoen din til din eksisterende kirkeprofil.
 :::
 
 ## Hva du kan gjøre
 
 Når du er logget inn, gir medlemsportalen deg tilgang til:
 
-- Din personlige **tidslinje** med oppdateringer fra gruppene og kirken din
-- **Grupper** du tilhører, inkludert samtaler og arrangementer
-- Online **giving** for donasjoner
-- **Planer** som viser din frivilligplan og tjenestedetaljer
-- **Innsjekking** til gudstjenester og arrangementer
-- **Fellesskap**-katalogen for å finne og få kontakt med andre medlemmer
+- Et **Hjem**-dashbord med forhåndsvisninger av tjenestene, gruppene og gavene dine, og en side **Meg** med det som kommer for deg
+- **Grupper** du er med i, inkludert samtaler og arrangementer
+- Nettbasert **giving** for gaver
+- **Planer** som viser tjenesteplanen din og detaljer om gudstjenesten
+- **Innsjekking** for gudstjenester og arrangementer
+- **Fellesskap**-katalogen for å finne og komme i kontakt med andre medlemmer
 
-## Få tilgang på telefonen din
+## Bruke den på telefonen
 
-B1.church fungerer i enhver mobilnettleser. For en mer app-lignende opplevelse kan du installere kirkens medlemsportal som en **Progressive Web App (PWA)** — besøk `https://yourchurchname.b1.church/mobile/install` for veiledede, enhetsspesifikke trinn, eller legg den til på hjemskjermen din direkte fra Safari eller Chrome. Ingen app-butikk nødvendig. Se [Installering som app (PWA)](./installing-pwa.md) for instruksjoner.
+B1.church fungerer i alle mobilnettlesere. For en mer appaktig opplevelse kan du installere kirkens medlemsportal som en **progressiv webapp (PWA)** – gå til `https://yourchurchname.b1.church/mobile/install` for veiledning tilpasset din enhet, eller legg den til på hjemskjermen direkte fra Safari eller Chrome. Ingen appbutikk er nødvendig. Se [Installere som app (PWA)](./installing-pwa.md) for instruksjoner.
 
 :::info
-Den gamle innebygde B1 Mobile-appen er avviklet. PWA-en er den støttede måten å bruke B1.church på en telefon fremover — se [B1 Mobile-referansesiden](/docs/b1-mobile/) for historisk dokumentasjon.
+Den eldre native B1 Mobile-appen er faset ut. PWA-en er den støttede måten å bruke B1.church på telefonen fremover – se [referansesiden for B1 Mobile](/docs/b1-mobile/) for historisk dokumentasjon.
 :::
 
 ## Neste steg
 
-- [Logge inn](./logging-in.md) -- Lær hvordan du logger inn og administrerer økten din.
-- [Navigere i B1App](./navigating.md) -- Finn frem i medlemsportalen.
-- [Installering som app (PWA)](./installing-pwa.md) -- Legg B1.church til på hjemskjermen på telefonen din.
+- [Logge inn](./logging-in.md) – Lær hvordan du logger på og administrerer økten din.
+- [Navigere i B1-appen](./navigating.md) – Finn frem i medlemsportalen.
+- [Installere som app (PWA)](./installing-pwa.md) – Legg B1.church til på telefonens hjemskjerm.

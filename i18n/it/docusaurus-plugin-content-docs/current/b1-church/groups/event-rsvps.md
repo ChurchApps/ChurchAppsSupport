@@ -1,43 +1,43 @@
 ---
-title: "RSVP agli Eventi"
+title: "Conferme di partecipazione agli eventi"
 ---
 
-# RSVP agli Eventi
+# Conferme di partecipazione agli eventi
 
 <div class="article-intro">
 
-Gli eventi di gruppo possono raccogliere RSVP in modo che i leader sappiamo chi viene. Nel calendario del tuo gruppo, ogni evento imminente chiede "Partecipi?" — rispondi con un tocco, cambia idea in qualsiasi momento e vedi a colpo d'occhio quanti altri stanno venendo.
+Gli eventi di gruppo possono raccogliere conferme di partecipazione (RSVP) così i leader sanno chi viene. Nella pagina e nel calendario del tuo gruppo, ogni evento imminente ha i pulsanti **Ci sarò**, **Forse** e **Non posso**: rispondi con un tocco, cambia idea in qualsiasi momento e vedi a colpo d'occhio quanti altri partecipano.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Devi essere [loggato](../getting-started/logging-in.md) e un membro del gruppo
-- L'evento deve avere RSVP consentiti (sono accesi per impostazione predefinita; i leader possono disattivarli per evento)
+- Devi aver [effettuato l'accesso](../getting-started/logging-in.md) ed essere membro del gruppo
+- L'evento deve consentire le conferme di partecipazione (sono attive per impostazione predefinita; i leader possono disattivarle evento per evento)
 
 </div>
 
-## Risposta a un Evento
+## Rispondere a un evento
 
-1. Apri il tuo gruppo nel portale dei membri e vai alla scheda **Eventi**. Nella **Vista mensile**, tocca un giorno per vedere i suoi eventi, oppure passa alla **Vista elenco** per vedere tutti i prossimi eventi di questo mese in una volta sola.
-2. Ogni scheda di evento imminente mostra **Will you attend?** con tre pulsanti: **Going**, **Maybe** e **Can't go**.
-3. Tocca la tua risposta. La tua scelta si evidenzia e ogni pulsante mostra un conteggio dal vivo di quante persone hanno dato quella risposta.
-4. Tocca di nuovo la tua risposta evidenziata per cancellarla, o tocca un pulsante diverso per cambiare la tua risposta.
+1. Apri il tuo gruppo nel portale dei membri. Il prossimo evento del gruppo appare nella sezione **Prossimo evento**. Per gli altri eventi, tocca **Tutti gli eventi**: nella vista **Calendario** tocca un giorno per vederne gli eventi, oppure passa alla vista **Elenco** per vedere in una volta tutti gli eventi imminenti del mese.
+2. Ogni evento imminente mostra tre pulsanti: **Ci sarò**, **Forse** e **Non posso**.
+3. Tocca la tua risposta. La tua scelta si evidenzia e ciascun pulsante mostra un conteggio in tempo reale di quante persone hanno dato quella risposta.
+4. Tocca di nuovo la risposta evidenziata per annullarla, oppure tocca un altro pulsante per cambiare la tua risposta.
 
-Il tuo RSVP si applica a quella specifica occorrenza — per una riunione settimanale, rispondi agli eventi di ogni settimana separatamente.
+La tua conferma vale per quella specifica occorrenza -- per un incontro settimanale, rispondi separatamente a ogni evento della settimana.
 
-## Per i Leader del Gruppo
+## Per i leader del gruppo
 
-- **Visualizzazione delle risposte** -- I leader vedono un pulsante **View responses** su ogni scheda di evento. Apre il foglio **Responses** che elenca tutti per risposta — Going, Maybe e Can't go. Se nessuno ha ancora risposto, mostra "No responses yet."
-- **Attivazione o disattivazione di RSVP** -- Quando crei o modifichi un evento, utilizza lo switch **Allow RSVPs**. Gli eventi con RSVP disattivati non mostra alcun pulsante di risposta. Lo staff che crea eventi in blocco da B1 Admin ha la stessa opzione — vedi [Calendario di Gruppo](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Visualizzare le risposte** -- I leader vedono un collegamento **Vedi risposte** su ogni evento nel calendario del gruppo (**Tutti gli eventi**). Apre il foglio **Risposte** con l'elenco di tutti raggruppati per risposta -- Ci sarò, Forse e Non posso. Se nessuno ha ancora risposto, mostra "Nessuna risposta ancora."
+- **Attivare o disattivare le conferme** -- Quando crei o modifichi un evento, usa l'interruttore **Consenti conferme**. Gli eventi con le conferme disattivate non mostrano i pulsanti di risposta. Anche il personale che crea eventi in blocco da B1 Admin ha la stessa opzione -- consulta [Calendario del gruppo](../../b1-admin/groups/group-calendar#event-rsvps).
 
 :::tip
-Gli RSVP sono un conteggio leggero della popolazione. Se il tuo evento necessita di dettagli di iscrizione, gestione della capacità o pagamento, utilizza invece la [registrazione dell'evento](../events/registering).
+Le conferme sono un conteggio rapido e leggero. Se il tuo evento richiede dati di iscrizione, gestione dei posti o pagamento, usa invece le [iscrizioni agli eventi](../events/registering).
 :::
 
-## Articoli Correlati
+## Articoli correlati
 
-- [Dettagli del Gruppo](./group-details.md) -- Tutto sulla pagina di dettaglio del gruppo
-- [Calendario di Gruppo (B1 Admin)](../../b1-admin/groups/group-calendar) -- Come lo staff e i leader gestiscono gli eventi di gruppo e gli RSVP
-- [Registrazione agli Eventi](../events/registering) -- Registrazione completa dell'evento con capacità e pagamenti
+- [Dettagli del gruppo](./group-details.md) -- Tutto ciò che c'è nella pagina di dettaglio del gruppo
+- [Calendario del gruppo (B1 Admin)](../../b1-admin/groups/group-calendar) -- Come lo staff e i leader gestiscono gli eventi di gruppo e le conferme
+- [Iscriversi agli eventi](../events/registering) -- Iscrizione completa agli eventi con posti e pagamenti

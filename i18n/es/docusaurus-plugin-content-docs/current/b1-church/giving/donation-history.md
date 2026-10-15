@@ -1,58 +1,59 @@
 ---
-title: "Historial de Donaciones"
+title: "Historial de donaciones"
 ---
 
-# Historial de Donaciones
+# Historial de donaciones
 
 <div class="article-intro">
 
-Cuando inicias sesión, puedes ver un registro completo de tus donaciones pasadas y generar estados de donación para propósitos fiscales. Tu historial de donaciones está disponible desde la sección **Donar** de tu cuenta de B1.church.
+Cuando has iniciado sesión, puedes ver un registro completo de tus donaciones anteriores y generar estados de ofrendas con fines fiscales. Tu historial de donaciones está disponible en la página **Giving** del portal de miembros.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Debes estar [registrado](../getting-started/logging-in.md) en tu cuenta de B1.church.
-- Necesitas haber hecho al menos una donación. Consulta [Haciendo una Donación](./making-donations.md) para comenzar.
+- Debes [haber iniciado sesión](../getting-started/logging-in.md) en tu cuenta de B1.church.
+- Debes haber hecho al menos una donación. Consulta [Hacer una donación](./making-donations.md) para empezar.
 
 </div>
 
-## Viendo Tu Historial
+## Ver tu historial
 
 1. Inicia sesión en tu cuenta de B1.church.
-2. Navega a la sección **Donar**.
-3. Haz clic en la pestaña **Historial** para ver tus donaciones pasadas.
+2. Abre la página **Giving** (la pestaña **Donate** de tu iglesia), o toca **History** en la sección **Giving** de tu [panel Home](../getting-started/navigating.md#home).
+3. Toca **All history** para ver tus donaciones anteriores. (El enlace **History** de Home abre esta vista directamente).
 
-En la parte superior, una tarjeta **Donación** muestra tu total para un período seleccionable -- **Año hasta la Fecha**, **Últimos 30 Días**, **Últimos 90 Días**, o **Todos los Tiempos** -- elige uno del menú desplegable. Si las donaciones en ese período fueron dadas en más de una moneda, el total se convierte a la moneda de tu iglesia y aparece una nota **Convertido a tipos de cambio actuales** debajo.
+En la parte superior, elige un año (o **All**) para ver tu total de ese período, cuántas ofrendas incluye y cuántas siguen pendientes. Si las donaciones de ese período se hicieron en más de una moneda, el total se convierte a la moneda de tu iglesia y aparece debajo una nota **Converted at current exchange rates**.
 
-Debajo del total, tu actividad reciente se enumera con:
+Debajo del total, tus donaciones se agrupan por mes, y cada una muestra:
 
-- **Fecha** -- Cuándo se realizó la donación.
-- **Método** -- Cómo pagaste (por ejemplo, "Tarjeta - Visa" o "Banco - ACH").
-- **Fondo** -- A qué fondo se dirigió la donación (por ejemplo, Fondo General, Fondo de Construcción).
-- **Cantidad** -- La cantidad de la donación, en la moneda en que fue dada.
+- **Fund**: el fondo al que se dirigió la donación (por ejemplo, General Fund, Building Fund).
+- **Date** y **Method**: cuándo se hizo la donación y cómo pagaste (por ejemplo, "Card - Visa" o "Bank - ACH").
+- **Amount**: el monto de la donación, en la moneda en que se dio.
 
 :::info
-Las donaciones que aún se están procesando aparecen con una etiqueta "Pendiente" junto al nombre del fondo y la cantidad se muestra en un color diferente.
+Las donaciones que todavía se están procesando muestran una insignia **Pending** debajo del monto.
 :::
 
-## Exportando e Imprimiendo Estados de Donación
+Toca **Back to Giving** para volver a la página Giving.
 
-Haz clic en **Imprimir Estado** encima de la lista de actividad reciente para abrir un estado de donación imprimible que cubra el año calendario actual en una pestaña nueva.
+## Exportar e imprimir estados
+
+Toca **Print Statement** en la parte superior de la página Giving para abrir, en una nueva pestaña, un estado de ofrendas imprimible que cubre el año calendario actual. Para imprimir otro año, abre **All history**, elige ese año y toca **Print Statement** junto al total.
 
 :::tip
-Imprime tu estado a principios del nuevo año, antes de que lo necesites para la declaración de impuestos, mientras las donaciones del año pasado aún están frescas en tu historial.
+Imprime tu estado temprano en el nuevo año, antes de necesitarlo para la declaración de impuestos, mientras las donaciones del año anterior todavía están frescas en tu historial.
 :::
 
-## Donaciones Recurrentes
+## Donaciones recurrentes
 
-Si tienes algún regalo programado, una sección **Recurrente** en la pestaña Historial enumera cada uno con su cantidad, intervalo y método de pago.
+Si tienes regalos programados, la sección **Recurring** de la página Giving enumera cada uno con su monto, fondo, periodicidad y método de pago. Toca **Manage** para abrir **Recurring gifts and payment methods**, donde puedes modificarlos.
 
-Si una donación recurrente se cobra a través de **Stripe**, puedes **pausarla** en lugar de cancelarla -- haz clic en el icono de pausa junto a la donación y confirma. Las donaciones se detienen hasta que hagas clic en el mismo icono para **reanudar**; una donación en pausa está marcada como **Pausada** en la lista. Las donaciones recurrentes a través de otros proveedores de pago aún se pueden editar o cancelar, pero no pausar.
+Si una donación recurrente se cobra a través de **Stripe**, puedes **pausarla** en lugar de cancelarla: haz clic en el icono de pausa junto a la donación y confirma. Las ofrendas se detienen hasta que hagas clic en el mismo icono para **reanudar**; una donación pausada aparece marcada como **Paused** en la lista. Las donaciones recurrentes a través de otros proveedores de pago se pueden editar o cancelar, pero no pausar.
 
-Para agregar, eliminar o cambiar tus métodos de pago guardados, usa la pestaña **Gestionar**.
+Para agregar, quitar o cambiar tus métodos de pago guardados, toca **Manage** en la sección **Payment methods**.
 
-## Próximos Pasos
+## Próximos pasos
 
-- [Haciendo una Donación](./making-donations.md) -- Aprende cómo hacer un regalo único o recurrente
+- [Hacer una donación](./making-donations.md): aprende a hacer una ofrenda única o recurrente

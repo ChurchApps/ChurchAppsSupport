@@ -1,29 +1,28 @@
 ---
-title: "Check-In"
+title: "Check-in"
 ---
 
-# Check-In
+# Check-in
 
 <div class="article-intro">
 
-Die Funktion **Check-In** in B1.church ermöglicht es Ihnen, sich selbst und die Mitglieder Ihres Haushalts direkt vom Mitglieder-Portal für Kirchenservices anzumelden. Dies ist eine praktische Möglichkeit, Ihre Anwesenheit aufzuzeichnen, ohne einen physischen Check-in-Kiosk besuchen zu müssen.
+Mit der Funktion **Check-in** in B1.church können Sie sich selbst und die Mitglieder Ihres Haushalts direkt im Mitgliederportal für Gottesdienste einchecken. So erfassen Sie Ihre Anwesenheit bequem, ohne ein Check-in-Terminal vor Ort nutzen zu müssen.
 
 </div>
 
-## Wie es funktioniert
+## So funktioniert es
 
-Wenn Sie die Selbstanmeldung verwenden, wählen Sie einen Service, wählen Sie aus, welche Haushaltsitglieder anwesend sind, und weisen Sie jede Person der angemessenen Gruppe für jede Service-Zeit zu. Nachdem Sie bestätigt haben, wird Ihre Anwesenheit automatisch aufgezeichnet.
+Beim Self-Check-in wählen Sie einen Gottesdienst aus, bestimmen, welche Haushaltsmitglieder teilnehmen, und ordnen jede Person für jede Gottesdienstzeit der passenden Gruppe zu. Sobald Sie bestätigen, wird Ihre Anwesenheit automatisch erfasst.
 
-## Anfangen
+## Erste Schritte
 
-Um auf die Anmeldung zuzugreifen, klicken Sie auf **Check-In** in der [Seitenleisten-Navigation](../getting-started/navigating.md) Ihres Mitglieder-Portals. Sie müssen [angemeldet sein](../getting-started/logging-in.md), um diese Funktion zu verwenden -- wenn Sie nicht angemeldet sind, werden Sie zuerst aufgefordert, sich anzumelden.
+Um den Check-in zu öffnen, tippen Sie in der [Registerleiste oder auf der Seite Mehr](../getting-started/navigating.md) Ihres Mitgliederportals auf **Check-in**. Sie müssen [angemeldet](../getting-started/logging-in.md) sein, um diese Funktion zu nutzen. Wenn Sie nicht angemeldet sind, werden Sie zuerst zur Anmeldung aufgefordert.
 
 :::info
-Die Check-in-Funktion erfordert, dass Ihre Kirche Services und Anwesenheitsgruppen in ihren Verwaltungseinstellungen eingerichtet hat. Wenn keine Services verfügbar sind, wenn Sie die Check-in-Seite öffnen, hat Ihre Kirche diese Funktion möglicherweise noch nicht konfiguriert. Wenden Sie sich für Hilfe an Ihren Kirchenadministrator.
+Für den Check-in müssen in den Verwaltungseinstellungen Ihrer Gemeinde Gottesdienste und Anwesenheitsgruppen eingerichtet sein. Wenn beim Öffnen der Check-in-Seite keine Gottesdienste verfügbar sind, ist diese Funktion in Ihrer Gemeinde möglicherweise noch nicht konfiguriert. Wenden Sie sich für Hilfe an Ihre Gemeindeverwaltung.
 :::
 
 ## Nächste Schritte
 
-- [Self Check-In](./self-checkin.md) -- Schritt-für-Schritt-Anleitung zum Einchecken Ihres Haushalts für einen Service.
-- [Gast-Registrierung](./guest-registration.md) -- Registrieren Sie sich als Gasbesucher und Ihre Familienmitglieder.
-
+- [Self-Check-in](./self-checkin.md) -- Schritt-für-Schritt-Anleitung zum Einchecken Ihres Haushalts für einen Gottesdienst.
+- [Gästeregistrierung](./guest-registration.md) -- Registrieren Sie sich selbst und Ihre Familienmitglieder als Gäste.

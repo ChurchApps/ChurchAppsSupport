@@ -6,7 +6,7 @@ title: "The Me Page"
 
 <div class="article-intro">
 
-The **Me** page is your personal dashboard in the member portal — one chronological view of everything coming up for you: serving assignments, event registrations, and your groups' upcoming events, plus your most recent notifications.
+The **Me** page is your personal dashboard in the member portal — one page with everything coming up for you (serving assignments, event registrations, and your groups' upcoming events) along with your household, groups, giving, registrations, and recent notifications.
 
 </div>
 
@@ -19,11 +19,16 @@ The **Me** page is your personal dashboard in the member portal — one chronolo
 
 ## Opening the Me Page
 
-Open the portal menu and tap **Me**. The page loads with your personal information organized into sections.
+Tap **More** in the tab bar, then tap **Me** under **Account**. The page opens with your photo, your name, and your membership status, along with two buttons:
+
+- **Edit Profile** -- See [Editing Your Profile](./editing-your-profile.md).
+- **Settings** -- Opens your [Notification Preferences](./notification-preferences.md).
+
+If you are signed out, you'll see "Sign in to see your week" and a **Sign In** button instead.
 
 ## Upcoming
 
-The **Upcoming** section lists everything ahead of you in date order, each item tagged with a type chip:
+The **Upcoming** section lists your next three items in date order, each tagged with a type badge. If you have more, tap **All upcoming** to see the full list, and **Back to Me** to return.
 
 - **Serving** -- Your volunteer positions on upcoming service plans. Tap one to open the plan.
 - **Registration** -- Events you have [registered for](../events/registering). Tap through to your [registrations](../events/my-registrations).
@@ -31,26 +36,26 @@ The **Upcoming** section lists everything ahead of you in date order, each item 
 
 If nothing is scheduled, you'll see "Nothing coming up" — your serving times, events, and registrations will appear here as they are scheduled.
 
-## Recent Notifications
+## Household, Groups, and Giving
 
-Below Upcoming, the **Recent Notifications** section shows your latest notifications so you can catch up without opening each area of the portal.
+- **Household** -- The other people in your household. Tap a name to view their profile, or tap **Manage** to edit your household from your profile. Hidden if no one else is linked to your household.
+- **My Groups** -- The groups you belong to. Tap a group to open it, or tap **All groups** for the full list.
+- **Giving** -- How much you have given this year and how many gifts. Tap **History** to open the giving page. Hidden if your church does not accept online donations.
 
-## Shortcuts
+## Requests & Registrations
 
-The **Shortcuts** section at the top of the Me page links to the places you visit most:
+The **Requests & registrations** section shows how many event registrations you have, with a **Registrations** link to manage them.
 
-- **Edit Profile** -- See [Editing Your Profile](./editing-your-profile.md).
-- **Notification Preferences** -- See [Notification Preferences](./notification-preferences.md).
-- **Messages** -- Your private conversations.
-- **Giving** -- Give online and see your giving history.
-- **Registrations** -- Events you have registered for.
-
-If your church has bookable rooms or resources, two more shortcuts appear:
+If your church has bookable rooms or resources, two more links appear:
 
 - **Request an Event** -- Ask to hold an event with the rooms and equipment you need. See [Requesting Events & Rooms](../events/requesting-events).
 - **My Requests** -- Track the status of your requests and cancel pending ones.
 
-If your church hasn't set up rooms or resources, these shortcuts are hidden.
+If your church hasn't set up rooms or resources, these links are hidden.
+
+## Inbox
+
+The **Inbox** section shows your two most recent notifications so you can catch up without opening each area of the portal. Tap **Open inbox** to see all of your notifications and messages, or tap **Messages** to go to your private conversations.
 
 ## Related Articles
 

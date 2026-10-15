@@ -1,20 +1,20 @@
 ---
-title: "Creazione di moduli"
+title: "Creare moduli"
 ---
 
-# Creazione di moduli
+# Creare moduli
 
 <div class="article-intro">
 
-Crea moduli personalizzati per raccogliere informazioni dalla tua comunità. Puoi creare moduli per iscrizioni a eventi, sondaggi, schede visitatori, domande di adesione e altro ancora. I moduli possono essere collegati alle persone presenti nel tuo database oppure usati come pagine autonome con un proprio URL pubblico.
+Crea moduli personalizzati per raccogliere informazioni dalla tua comunità. Puoi creare moduli per iscrizioni a eventi, sondaggi, schede visitatori, domande di adesione e altro ancora. I moduli possono essere collegati alle persone nel tuo database oppure usati come pagine autonome con un proprio URL pubblico.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Per i moduli **Persone** (collegati alle schede delle persone), devi prima avere [persone nel tuo database](../people/adding-people.md).
-- Per i moduli che raccolgono **pagamenti**, devi aver configurato [Stripe per le donazioni online](../donations/online-giving-setup.md).
+- Per i moduli **Persone** (collegati alle schede persona), devi prima avere [persone nel tuo database](../people/adding-people.md).
+- Per i moduli che raccolgono **pagamenti**, devi avere [Stripe configurato per le offerte online](../donations/online-giving-setup.md).
 
 </div>
 
@@ -23,35 +23,35 @@ Crea moduli personalizzati per raccogliere informazioni dalla tua comunità. Puo
 1. Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Persone** e fai clic su **Moduli**.
 2. Fai clic su **Aggiungi modulo**.
 3. Inserisci un **nome** per il tuo modulo.
-4. Scegli il tipo di modulo dal menu a discesa:
-   - **Persone** — Associa le risposte alle [schede delle persone](../people/adding-people.md) nel tuo database.
+4. Scegli il tipo di modulo dal menu a tendina:
+   - **Persone** — Associa le risposte alle [schede persona](../people/adding-people.md) nel tuo database.
    - **Autonomo** — Crea un modulo indipendente con un proprio URL pubblico, ideale per iscrizioni esterne.
 5. Fai clic su **Salva** per creare il modulo.
 
-Il nuovo modulo comparirà nell'elenco. Fai clic su di esso per iniziare ad aggiungere domande.
+Il tuo nuovo modulo comparirà nell'elenco. Fai clic su di esso per iniziare ad aggiungere domande.
 
 ## Stampare un modulo vuoto
 
-Ti serve una copia cartacea da distribuire, ad esempio una scheda visitatori alla postazione di accoglienza, oppure un modulo che una persona senza accesso a internet può compilare a mano? Fai clic su **Stampa** accanto a un modulo nell'elenco principale dei Moduli per aprire un'anteprima, quindi fai clic su **Stampa**. I campi vuoti vengono stampati con una linea o una casella per ogni domanda, così le persone possono compilarli a mano; le domande obbligatorie sono contrassegnate con un asterisco. In alto nella pagina compaiono il logo della tua chiesa (il **Logo per sfondo chiaro** di [Sito web > Aspetto](../website/appearance.md), se ne hai caricato uno) con il nome della chiesa sotto, poi il nome del modulo. Non ci sono altre opzioni di stampa: puoi stampare l'intero modulo oppure niente.
+Ti serve una copia cartacea da distribuire, ad esempio una scheda visitatori alla postazione di accoglienza, oppure un modulo che qualcuno senza accesso a internet possa compilare a mano? Fai clic su **Stampa** accanto a un modulo nell'elenco principale dei moduli per aprire un'anteprima, poi fai clic su **Stampa**. I campi vuoti vengono stampati con una linea o una casella per ogni domanda, così le persone possono compilarli a mano; le domande obbligatorie sono contrassegnate con un asterisco. In cima alla pagina compaiono il logo della tua chiesa (il **Logo per sfondo chiaro** di [Sito web > Aspetto](../website/appearance.md), se ne hai caricato uno) con il nome della chiesa sotto, poi il nome del modulo. Non ci sono altre opzioni di stampa: si stampa l'intero modulo oppure nulla.
 
 ## Aggiungere domande
 
 1. Apri il tuo modulo e vai alla scheda **Domande**.
 2. Fai clic su **Aggiungi domanda**.
-3. Seleziona un **tipo di campo** dal menu a discesa Provider. I tipi disponibili includono:
+3. Seleziona un **tipo di campo** dal menu a tendina Provider. I tipi disponibili includono:
    - **Casella di testo** — Per risposte brevi
    - **Data** — Per la selezione di date
    - **Email** — Per indirizzi email
    - **Numero di telefono** — Per l'inserimento di numeri di telefono
    - **Scelta multipla** — Per selezionare tra opzioni predefinite
    - **Pagamento** — Per raccogliere pagamenti
-4. Inserisci un **Titolo** e una **Descrizione** facoltativa per la domanda.
+4. Inserisci un **Titolo** e una **Descrizione** facoltativa per la domanda. La descrizione compare sotto la domanda quando le persone compilano il modulo, quindi usala per suggerimenti come "Indica eventuali allergie di cui dovremmo essere a conoscenza."
 5. Seleziona **Richiedi una risposta** se il campo è obbligatorio.
 6. Fai clic su **Salva**.
-7. Ripeti l'operazione per aggiungere altre domande.
+7. Ripeti per aggiungere altre domande.
 
 :::warning
-Il tipo di campo **Pagamento** richiede che Stripe sia configurato. Se non hai ancora attivato le donazioni online, consulta [Configurazione delle donazioni online](../donations/online-giving-setup.md) prima di aggiungere campi di pagamento.
+Il tipo di campo **Pagamento** richiede che Stripe sia configurato. Se non hai ancora attivato le offerte online, consulta [Configurazione delle offerte online](../donations/online-giving-setup.md) prima di aggiungere campi di pagamento.
 :::
 
 ## Gestire i membri del modulo
@@ -63,40 +63,40 @@ Il tipo di campo **Pagamento** richiede che Stripe sia configurato. Se non hai a
 
 ## Aggiungere automaticamente i partecipanti a un gruppo
 
-Quando è attiva l'opzione **Crea una scheda persona dalle risposte**, puoi anche collegare il modulo a un gruppo, in modo che ogni partecipante venga aggiunto automaticamente all'elenco di quel gruppo:
+Quando è attiva l'opzione **Crea una scheda persona dalle risposte**, puoi anche collegare il modulo a un gruppo così ogni partecipante viene aggiunto automaticamente all'elenco di quel gruppo:
 
 1. Apri i **Dettagli** del tuo modulo e attiva **Crea una scheda persona dalle risposte**.
-2. In **Aggiungi i partecipanti a un gruppo**, seleziona il gruppo a cui aggiungere i partecipanti, oppure lascia l'impostazione su **Nessuno**.
+2. In **Aggiungi i partecipanti a un gruppo**, seleziona il gruppo a cui aggiungere i partecipanti, oppure lascia l'opzione su **Nessuno**.
 3. Fai clic su **Salva**.
 
-Ogni volta che qualcuno invia il modulo, la persona trovata o appena creata viene aggiunta al gruppo (i membri già presenti nel gruppo vengono saltati). Ciò è utile, ad esempio, per un modulo di iscrizione a un campo estivo che deve creare automaticamente l'elenco dei partecipanti del campo.
+Ogni volta che qualcuno invia il modulo, la persona trovata o appena creata viene aggiunta al gruppo (i membri già presenti nel gruppo vengono saltati). È utile per cose come un modulo di iscrizione a un campo estivo che deve costruire automaticamente l'elenco del gruppo del campo.
 
 ### Inviare un'email di follow-up
 
-Con l'opzione **Crea una scheda persona dalle risposte** attiva, puoi anche inviare un'email a ogni persona che invia il modulo. Compila **Oggetto dell'email di follow-up** e **Testo dell'email di follow-up** nei dettagli del modulo. In entrambi puoi usare i segnaposto `{firstName}` e `{churchName}`. L'email viene inviata solo se entrambi i campi sono compilati.
+Con l'opzione **Crea una scheda persona dalle risposte** attiva, puoi anche inviare un'email a ogni persona che invia il modulo. Compila **Oggetto dell'email di follow-up** e **Testo dell'email di follow-up** nei dettagli del modulo. Puoi usare i segnaposto `{firstName}` e `{churchName}` in entrambi i campi. L'email viene inviata solo se entrambi i campi sono compilati.
 
 :::info
-Le email di follow-up vengono inviate solo dopo che la tua chiesa è stata approvata per l'invio di email di gruppo, e vengono conteggiate nel limite giornaliero di email della chiesa. Consulta [Attivare l'email di gruppo per la tua chiesa](../groups/group-members.md#turning-on-group-email-for-your-church).
+Le email di follow-up vengono inviate solo dopo che la tua chiesa è stata approvata per inviare email di gruppo, e vengono conteggiate nel limite giornaliero di email della chiesa. Consulta [Attivare l'email di gruppo per la tua chiesa](../groups/group-members.md#turning-on-group-email-for-your-church).
 :::
 
 ## Duplicare un modulo
 
-Per riutilizzare un modulo come punto di partenza per uno nuovo, fai clic su **Duplica** accanto al modulo nell'elenco dei Moduli e conferma. B1 crea una copia esatta del modulo, incluse tutte le domande, che puoi poi rinominare e modificare in modo indipendente.
+Per riutilizzare un modulo come punto di partenza per uno nuovo, fai clic su **Duplica** accanto al modulo nell'elenco dei moduli e conferma. B1 crea una copia esatta del modulo, incluse tutte le domande, che puoi poi rinominare e modificare in modo indipendente.
 
 :::tip
-La duplicazione è utile per eventi ricorrenti in cui le domande di iscrizione restano le stesse di anno in anno. Duplica il modulo dell'anno scorso, aggiorna il nome e le date, ed è pronto.
+La duplicazione è utile per eventi ricorrenti in cui le domande di iscrizione restano le stesse di anno in anno. Duplica il modulo dell'anno precedente, aggiorna nome e date, e sei pronto.
 :::
 
 ## Configurare le proprietà del modulo
 
-Puoi aggiornare il nome e le impostazioni del modulo in qualsiasi momento. Per i moduli Autonomi vedrai anche un **URL pubblico** univoco da condividere con chiunque, insieme al campo **Descrizione**: un testo mostrato sopra le domande nella pagina pubblica del modulo, utile per spiegare alle persone a cosa serve il modulo prima che lo compilino.
+Puoi aggiornare il nome e le impostazioni del tuo modulo in qualsiasi momento. Per i moduli Autonomi vedrai anche un **URL pubblico** univoco che puoi condividere con chiunque, insieme a un campo **Descrizione** -- un testo mostrato sopra le domande nella pagina pubblica del modulo, utile per spiegare alle persone a cosa serve il modulo prima che inizino a compilarlo.
 
-Usa il campo **Messaggio di ringraziamento** per impostare ciò che le persone vedono dopo aver inviato il modulo, anche nella pagina dell'URL pubblico. Se lo lasci vuoto, vedranno il messaggio "Grazie per aver inviato il modulo!"
+Usa il campo **Messaggio di ringraziamento** per stabilire cosa vedono le persone dopo aver inviato il modulo, anche nella pagina dell'URL pubblico. Se lo lasci vuoto, vedranno "Grazie per aver inviato il modulo!"
 
 :::tip
-I moduli Autonomi sono ottimi per le iscrizioni agli eventi. Condividi l'URL pubblico via email, sui social media oppure inserisci il modulo direttamente nel sito web della tua chiesa.
+I moduli Autonomi sono ottimi per le iscrizioni agli eventi. Condividi l'URL pubblico via email, sui social media, oppure incorpora il modulo direttamente nel sito web della tua chiesa.
 :::
 
 :::info
-Per inserire un modulo nel tuo sito B1, vai all'editor del sito, aggiungi una nuova sezione e seleziona l'elemento **Modulo**. Quindi scegli il modulo che vuoi visualizzare. Consulta [Gestire le pagine](../website/managing-pages.md) per i dettagli su come modificare il tuo sito web.
+Per incorporare un modulo nel tuo sito web B1, vai all'editor del sito, aggiungi una nuova sezione e seleziona l'elemento **Modulo**. Poi scegli il modulo da visualizzare. Consulta [Gestire le pagine](../website/managing-pages.md) per i dettagli su come modificare il sito web.
 :::

@@ -6,7 +6,7 @@ title: "Service Order"
 
 <div class="article-intro">
 
-When you open a plan, the **Service Order** tab shows the sequence of items for that service. This gives you and your team a shared view of the service flow, including timing, song details, and descriptions for each element.
+When you open a plan, the **Service Order** section shows the first few items for that service -- tap **Full service order** to see the whole sequence. This gives you and your team a shared view of the service flow, including timing, song details, and descriptions for each element.
 
 </div>
 

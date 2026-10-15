@@ -6,36 +6,36 @@ title: "B1.church"
 
 <div class="article-intro">
 
-B1.church es el portal orientado a miembros para su iglesia. Es el lugar donde su congregación va para mantenerse conectada, acceder a herramientas de iglesia e interactuar con su comunidad durante toda la semana. Cada iglesia obtiene su propia URL en `https://yourchurchname.b1.church`.
+B1.church es el portal para miembros de tu iglesia. Es el lugar al que acude tu congregación para mantenerse conectada, acceder a las herramientas de la iglesia e involucrarse con su comunidad durante la semana. Cada iglesia tiene su propia URL en `https://nombredetuiglesia.b1.church`.
 
 </div>
 
-Cuando los miembros visitan su sitio B1.church, ven el sitio web público de su iglesia con su marca, enlaces de navegación y páginas de contenido. Después de iniciar sesión, pueden acceder al **Portal de Miembros** donde todas sus herramientas personales de iglesia viven en un solo lugar.
+Cuando los miembros visitan el sitio de B1.church de tu iglesia, ven el sitio web público de la iglesia con su identidad visual, sus enlaces de navegación y sus páginas de contenido. Después de iniciar sesión, pueden acceder al **Member Portal**, donde viven todas sus herramientas personales de la iglesia en un solo lugar.
 
-## Características Principales
+## Funciones principales
 
-- **Inicio y Yo** -- El portal de miembros se abre en un [panel de control de Inicio](./getting-started/navigating.md), y la [página Yo](./getting-started/me-page.md) enumera lo que se aproxima para usted -- asignaciones de servicio, registros de eventos, eventos de grupo -- junto con sus notificaciones recientes.
-- **Grupos** -- Ver los grupos a los que pertenece, ver miembros del grupo, unirse a conversaciones y registrar asistencia.
-- **Donaciones** -- Haga donaciones a su iglesia en línea y vea su historial de donaciones.
-- **Eventos** -- Busque eventos próximos y regístrese a usted mismo y a su familia.
-- **Servicio** -- Ver planes de servicio, sus posiciones de voluntariado e inscribirse para oportunidades de voluntariado abiertas. Elige recibir recordatorios de servicio y eventos por texto en tus [preferencias de notificación](./getting-started/notification-preferences.md) (responde STOP en cualquier momento para dejar de recibirlos).
-- **Planes** -- Vea planes de servicio próximos, vea sus posiciones asignadas y acceda a detalles de canciones y órdenes de servicio.
-- **Registro de Asistencia** -- Regístrese a usted mismo y a los miembros de su hogar para servicios y eventos. Los invitados pueden registrarse a través de código QR.
-- **Directorio Comunitario** -- Busque el directorio de miembros de su iglesia, vea perfiles y envíe mensajes directos. Controle quién puede ver su información de contacto desde la [pestaña Privacidad de su perfil](./getting-started/editing-your-profile.md#privacy-tab).
-- **Contenido** -- Acceda a sermones, lea la Biblia, vea transmisiones en vivo y vea el versículo diario, todo desde el sitio de su iglesia. (La reproducción de currículo ahora vive en [FreePlay](/docs/freeplay/) — la pestaña de Lecciones en el portal está deprecada.)
+- **Home y Me**: el portal para miembros se abre en un [panel Home](./getting-started/navigating.md) con vistas previas de tus próximas asignaciones de servicio, tus grupos y tus ofrendas de este año. La [página Me](./getting-started/me-page.md) enumera lo que se acerca para ti (asignaciones de servicio, inscripciones a eventos y eventos de grupo), junto con tus notificaciones recientes.
+- **Grupos**: consulta los grupos a los que perteneces, mira los miembros de cada grupo, participa en conversaciones y registra la asistencia.
+- **Ofrendas**: haz donaciones a tu iglesia en línea y consulta tu historial de ofrendas.
+- **Eventos**: explora los eventos próximos y regístrate tú y tu familia.
+- **Servicio**: consulta los planes de servicio, tus posiciones de voluntariado e inscríbete en las oportunidades de voluntariado abiertas. Puedes elegir recibir recordatorios de servicio y de eventos por mensaje de texto en tus [preferencias de notificación](./getting-started/notification-preferences.md) (responde STOP en cualquier momento para dejar de recibirlos).
+- **Planes**: consulta los próximos planes de servicio, acepta o rechaza tus posiciones asignadas y accede a los detalles de las canciones y a los órdenes de servicio.
+- **Registro de entrada**: regístrate tú y los miembros de tu hogar para servicios y eventos. Los invitados pueden registrarse mediante un código QR.
+- **Directorio de la comunidad**: explora el directorio de miembros de tu iglesia, consulta perfiles y envía mensajes directos. Controla quién puede ver tu propia información de contacto desde la [sección de privacidad de tu perfil](./getting-started/editing-your-profile.md#privacidad).
+- **Contenido**: accede a sermones, lee la Biblia, mira transmisiones en vivo y consulta el versículo del día, todo desde el sitio de tu iglesia. (La reproducción del currículo ahora está en [FreePlay](/docs/freeplay/); la pestaña de Lecciones dentro del portal está obsoleta).
 
-## Más Información
+## Más información
 
-- [Inicio](./getting-started/) -- Cree su cuenta, inicie sesión y aprenda a navegar por B1.church.
-- [Grupos](./groups/) -- Únase y participe en los grupos de su iglesia.
-- [Donaciones](./giving/) -- Haga donaciones y administre sus donaciones.
-- [Eventos](./events/) -- Busque y regístrese para eventos de iglesia próximos.
-- [Servicio](./serving/) -- Ver planes y inscribirse para posiciones de voluntariado.
-- [Planes](./plans/) -- Ver planes de servicio y sus posiciones de voluntariado.
-- [Registro de Asistencia](./checkin/) -- Regístrese para servicios, eventos y registro de invitados.
-- [Directorio Comunitario](./community/) -- Encuentre y conéctese con otros miembros.
-- [Contenido](./content/) -- Sermones, Biblia, versículo diario y transmisión en vivo. (La reproducción de Lecciones se ha trasladado a [FreePlay](/docs/freeplay/).)
+- [Primeros pasos](./getting-started/): crea tu cuenta, inicia sesión y aprende a navegar por B1.church.
+- [Grupos](./groups/): únete a los grupos de tu iglesia y participa en ellos.
+- [Ofrendas](./giving/): haz donaciones y administra tus ofrendas.
+- [Eventos](./events/): explora los eventos de la iglesia y regístrate en ellos.
+- [Servicio](./serving/): consulta los planes e inscríbete en posiciones de voluntariado.
+- [Planes](./plans/): consulta los planes de servicio y tus posiciones de voluntariado.
+- [Registro de entrada](./checkin/): regístrate para servicios, eventos y registro de invitados.
+- [Directorio de la comunidad](./community/): encuentra y conéctate con otros miembros.
+- [Contenido](./content/): sermones, Biblia, versículo del día y transmisión en vivo. (La reproducción de lecciones se ha trasladado a [FreePlay](/docs/freeplay/)).
 
 :::info
-B1.church es completamente gratis para iglesias y miembros. El administrador de su iglesia configura y personaliza el sitio a través de B1 Admin. Como miembro, simplemente visita la URL B1.church de su iglesia para empezar.
+B1.church es completamente gratuito para las iglesias y los miembros. El administrador de tu iglesia configura y personaliza el sitio desde B1 Admin. Como miembro, solo necesitas visitar la URL de B1.church de tu iglesia para comenzar.
 :::

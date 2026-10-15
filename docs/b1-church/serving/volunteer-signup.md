@@ -21,7 +21,7 @@ Browse available volunteer positions and sign yourself up for upcoming services 
 ## Browsing Available Positions
 
 1. Navigate to the **Volunteer** page on your church's B1.church website.
-2. You will see a list of upcoming service plans that have open volunteer positions.
+2. You will see a list of upcoming service plans that have open volunteer positions. Within each plan, positions are listed by category and then by name. If your church shows only the next week of each plan type, later weeks appear once the current one has passed.
 3. Each plan shows the **plan name**, **service date**, and **service times**.
 
 Positions are grouped by category (for example, "Band", "Hospitality", "Kids Ministry"). Each position shows:

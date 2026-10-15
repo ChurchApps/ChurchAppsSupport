@@ -1,104 +1,104 @@
 ---
-title: "Registrando Presença"
+title: "Registrando a Presença"
 ---
 
-# Registrando Presença
+# Registrando a Presença
 
 <div class="article-intro">
 
-Uma vez que seus campi, horários de serviço e grupos estão configurados, você pode registrar manualmente a presença após cada reunião. O B1 Admin organiza a presença em torno de **sessões** -- uma sessão por grupo por data de reunião. Você cria a sessão, marca quem compareceu, e os dados alimentam diretamente seus relatórios de presença.
+Depois que seus campi, horários de culto e grupos estiverem configurados, você pode registrar manualmente a presença após cada reunião. O B1 Admin organiza a presença em torno de **sessões** -- uma sessão por grupo por data de reunião. Você cria a sessão, marca quem compareceu, e os dados alimentam diretamente seus relatórios de presença.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Seus campi, horários de serviço e grupos devem ser configurados. Veja [Configuração de Presença](setup.md) se você ainda não fez isso.
-- Os grupos que você quer rastrear devem ter **Rastrear Presença** habilitado. Veja [Configuração de Presença](setup.md) para detalhes.
+- Seus campi, horários de culto e grupos devem estar configurados. Consulte [Configuração de Presença](setup.md) se você ainda não fez isso.
+- Os grupos que você deseja acompanhar devem ter **Rastrear Presença** ativado. Consulte [Configuração de Presença](setup.md) para mais detalhes.
 
 </div>
 
 ## Criando uma Sessão
 
-Uma sessão representa uma ocorrência de uma reunião de grupo -- por exemplo, sua classe de K--3ª série em um domingo específico.
+Uma sessão representa uma ocorrência de uma reunião de grupo -- por exemplo, sua turma do 1º ao 3º ano em um domingo específico.
 
-1. Abra **B1 Admin**, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Pessoas**, e clique em **Grupos**.
-2. Selecione o grupo que você quer registrar presença.
+1. Abra o **B1 Admin**, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Pessoas** e clique em **Grupos**.
+2. Selecione o grupo para o qual deseja registrar a presença.
 3. Na seção **Sessões** da página do grupo, clique em **Todas as sessões**.
-4. Clique em **Nova** para criar uma nova sessão.
-5. Se o grupo é atribuído a um horário de serviço, escolha o **Horário do Serviço**. Se é um grupo não agendado, este campo não aparecerá.
-6. Selecione a **Data da Sessão** -- isto pode ser hoje, uma data passada, ou uma data futura.
+4. Clique em **Novo** para criar uma nova sessão.
+5. Se o grupo estiver atribuído a um horário de culto, escolha o **Horário de Culto**. Se for um grupo sem horário definido, este campo não aparecerá.
+6. Selecione a **Data da Sessão** -- pode ser hoje, uma data passada ou uma data futura.
 7. Clique em **Salvar**.
 
-### Adicionando Sessões para Cada Classe em um Horário de Serviço
+### Adicionando Sessões para Todas as Turmas de um Horário de Culto
 
-Se outros grupos se reúnem no mesmo horário de serviço (por exemplo, todas as suas classes infantis no domingo 9:00 AM), você pode criar suas sessões em um passo em vez de visitar cada grupo.
+Se outros grupos se reúnem no mesmo horário de culto (por exemplo, todas as turmas infantis às 9h00 de domingo), você pode criar as sessões deles em uma única etapa, em vez de visitar cada grupo.
 
-1. Siga os passos acima e escolha um **Horário do Serviço**.
-2. Marque **Também adicionar para os outros _N_ grupos em _horário de serviço_**. A caixa de seleção mostra quantos outros grupos são atribuídos àquele horário de serviço. Ela apenas aparece quando adicionando uma nova sessão e pelo menos um outro grupo se reúne naquele horário.
+1. Siga os passos acima e escolha um **Horário de Culto**.
+2. Marque **Também adicionar para os outros _N_ grupos em _horário de culto_**. A caixa de seleção mostra quantos outros grupos estão atribuídos a esse horário de culto. Ela só aparece ao adicionar uma nova sessão e quando pelo menos um outro grupo se reúne nesse horário.
 3. Clique em **Salvar**.
 
-Uma sessão é criada para o grupo atual e para cada um dos outros grupos na mesma data e horário de serviço. Grupos que já têm uma sessão para aquela data e horário de serviço são ignorados, para que você não obtenha duplicatas.
+Uma sessão é criada para o grupo atual e para cada um dos outros grupos na mesma data e horário de culto. Grupos que já tenham uma sessão para essa data e horário são ignorados, para que você não tenha duplicatas.
 
 :::tip
-Você pode criar sessões para datas passadas para acompanhar a presença que você ainda não registrou, ou criar antecipadamente para que estejam prontas quando seu grupo se reúne.
+Você pode criar sessões para datas passadas para regularizar a presença que ainda não registrou, ou criá-las com antecedência para que estejam prontas quando seu grupo se reunir.
 :::
 
-## Marcando Presença
+## Marcando a Presença
 
-Selecione uma sessão para ver sua lista de presença. Cada membro do grupo é listado com uma caixa de seleção, ordenado por sobrenome, e qualquer um já registrado como presente está marcado.
+Selecione uma sessão para ver sua lista de presença. Cada membro do grupo aparece com uma caixa de seleção, ordenado pelo sobrenome, e quem já foi registrado como presente aparece marcado.
 
-1. Marque a caixa ao lado de cada pessoa que compareceu. Use **Selecionar Tudo** ou **Selecionar Nenhum** para mudar todos de uma vez.
-2. A contagem acima da lista (por exemplo, "12 de 15 presentes") se atualiza conforme você marca caixas.
-3. Clique em **Salvar Presença**. Nada é registrado até que você salve, e uma mensagem confirma quando o salvamento é feito.
+1. Marque a caixa ao lado de cada pessoa que compareceu. Use **Selecionar Todos** ou **Desmarcar Todos** para alterar todos de uma vez.
+2. A contagem acima da lista (por exemplo, "12 de 15 presentes") é atualizada conforme você marca as caixas.
+3. Clique em **Salvar Presença**. Nada é registrado até você salvar, e uma mensagem confirma quando o salvamento estiver concluído.
 
-Desmarcar alguém que já foi registrado como presente e depois salvar os remove da sessão.
+Desmarcar uma pessoa que já havia sido registrada como presente e depois salvar a remove da sessão.
 
 ### Adicionando Visitantes
 
-Para registrar alguém que não é um membro do grupo, pesquise por eles na pesquisa de pessoa ao lado da lista de presença. Se eles ainda não estão em seu banco de dados, você pode criá-los a partir da pesquisa. Eles são adicionados à lista já marcados. Clique em **Salvar Presença** para registrá-los.
+Para registrar alguém que não é membro do grupo, pesquise-o na busca de pessoas ao lado da lista de presença. Se essa pessoa ainda não estiver no seu banco de dados, você pode criá-la a partir da pesquisa. Em ambos os casos, ela será adicionada à lista já marcada. Clique em **Salvar Presença** para registrá-la.
 
-Pessoas que fizeram check-in em um quiosque mostram um chip **Voluntário** ou **Hóspede**. Pessoas que não são membros do grupo mostram um chip **Hóspede**.
+Pessoas que fizeram check-in em um totem mostram um selo **Voluntário** ou **Visitante**. Pessoas que não são membros do grupo mostram um selo **Visitante**.
 
 ## Verificando Quais Grupos Ainda Precisam de Presença
 
-Quando várias classes se reúnem no mesmo horário de serviço, você pode ver num relance quais ainda precisam ter sua presença registrada para aquela data.
+Quando várias turmas se reúnem no mesmo horário de culto, você pode ver de relance quais ainda precisam ter a presença lançada para aquela data.
 
-1. Abra uma sessão que tenha um horário de serviço.
+1. Abra uma sessão que tenha um horário de culto.
 2. Clique em **Quem Ainda Precisa de Presença** no topo da lista de presença.
-3. Um diálogo lista cada grupo atribuído àquele horário de serviço, com um resumo tal como "5 de 8 grupos registrados" no topo.
+3. Um diálogo lista todos os grupos atribuídos àquele horário de culto, com um resumo como "5 de 8 grupos lançados" no topo.
 
-Grupos com ninguém marcado como presente para aquela data mostram um chip **Não registrado** e são listados primeiro. Grupos que têm presença mostram **Registrado** com o número de pessoas marcadas como presentes (por exemplo, "Registrado (12)"). Clique no nome de um grupo para saltar para aquele grupo e registrar sua presença.
+Grupos sem ninguém marcado como presente naquela data mostram um selo **Não lançado** e aparecem primeiro. Grupos que já têm presença mostram **Lançado** com o número de pessoas marcadas como presentes (por exemplo, "Lançado (12)"). Clique no nome de um grupo para abrir as sessões desse grupo com a sessão da mesma data já selecionada, para que você possa registrar a presença imediatamente. Se o grupo ainda não tiver uma sessão para essa data, a lista de sessões dele será aberta para que você possa adicionar uma.
 
 :::tip
-Combine isso com **Imprimir Todas as Classes** e [adicionando sessões para cada classe em um horário de serviço](#adding-sessions-for-every-class-in-a-service-time): crie as sessões, distribua folhas de presença, depois use **Quem Ainda Precisa de Presença** para ver quais folhas ainda não foram registradas.
+Combine isso com **Imprimir Todas as Turmas** e [adicionar sessões para todas as turmas de um horário de culto](#adding-sessions-for-every-class-in-a-service-time): crie as sessões, entregue as folhas de chamada e, em seguida, use **Quem Ainda Precisa de Presença** para ver quais folhas ainda não foram lançadas.
 :::
 
-## Imprimindo uma Folha de Presença
+## Imprimindo uma Folha de Chamada
 
-Uma folha de presença é uma lista de classe imprimível que professores podem marcar à mão e devolver para você registrar depois. Cada folha mostra o logotipo da sua igreja (o **Logotipo para Fundo Claro** de [Site > Aparência](../website/appearance.md), se você tiver enviado um) com o nome da igreja abaixo dele, a classe, uma grande linha de **Data** sob o nome da classe, e o horário de serviço. Membros são listados em duas colunas (leia para baixo a coluna esquerda, depois a direita) para que mais nomes caibam em uma página, e cada membro tem caixas **Presente** e **Ausente**. Há linhas em branco para visitantes e uma área de **Professor / Notas**.
+Uma folha de chamada é uma lista de turma imprimível que os professores podem marcar à mão e devolver para você lançar depois. Cada folha mostra o logotipo da sua igreja (o **Logotipo para Fundo Claro** de [Website > Aparência](../website/appearance.md), se você tiver enviado um) com o nome da igreja abaixo, a turma, uma linha grande de **Data** abaixo do nome da turma e o horário de culto. Os membros são listados em duas colunas (leia de cima para baixo na coluna da esquerda, depois na da direita), para que caibam mais nomes em uma página, e cada membro tem as caixas **Presente** e **Ausente**. Há linhas em branco para visitantes e uma área de **Professor / Observações**.
 
-- **De uma sessão** -- Clique no ícone **Imprimir Folha de Presença** (impressora) no topo da lista de presença da sessão. A folha é datada com a data da sessão.
-- **Todas as classes para um serviço** -- Se a sessão tem um horário de serviço, clique em **Imprimir Todas as Classes** para imprimir uma folha por classe atribuída àquele horário de serviço. Cada classe imprime em sua própria página.
-- **Da lista de membros** -- Na página do grupo, clique em **Todos os membros**, depois clique no ícone **Imprimir Folha de Presença** acima da lista de membros e escolha **Folha de Presença** para imprimir uma folha sem data. O mesmo menu tem um layout **Lista de Contatos** com o telefone, e-mail e endereço de cada membro -- consulte [Imprimindo a Lista de Membros](../groups/group-members.md#printing-the-member-list).
+- **A partir de uma sessão** -- Clique no ícone de impressora **Imprimir Folha de Chamada** no topo da lista de presença da sessão. A folha é datada com a data da sessão.
+- **Todas as turmas de um culto** -- Se a sessão tiver um horário de culto, clique em **Imprimir Todas as Turmas** para imprimir uma folha por turma atribuída àquele horário. Cada turma é impressa em sua própria página.
+- **A partir da lista de membros** -- Na página do grupo, clique em **Todos os membros**, depois clique no ícone **Imprimir Folha de Chamada** acima da lista de membros e escolha **Folha de Presença** para imprimir uma folha sem data. O mesmo menu tem um layout **Lista de Contatos** com o telefone, e-mail e endereço de cada membro -- consulte [Imprimindo a Lista de Membros](../groups/group-members.md#printing-the-member-list).
 
-A folha abre em uma nova aba e o diálogo de impressão do seu navegador aparece automaticamente.
+A folha abre em uma nova aba e a janela de impressão do seu navegador aparece automaticamente.
 
-## Exportando Presença para uma Planilha
+## Exportando a Presença para uma Planilha
 
-Você pode baixar um registro da sessão como um arquivo CSV para usar no Excel, Numbers ou Google Sheets.
+Você pode baixar um registro da sessão como um arquivo CSV para usar no Excel, Numbers ou Google Planilhas.
 
-1. Abra a sessão que você quer exportar.
+1. Abra a sessão que deseja exportar.
 2. Clique no botão **Exportar** no topo da lista de presença.
-3. Abra o arquivo baixado em sua aplicação de planilha.
+3. Abra o arquivo baixado no seu aplicativo de planilhas.
 
-## Visualizando Presença Registrada
+## Visualizando a Presença Registrada
 
-Depois de registrar sessões, os dados aparecem em seus relatórios de presença.
+Depois de registrar as sessões, os dados aparecem nos seus relatórios de presença.
 
-- **Aba Tendência de Presença** (em **Todos os anos** na página Presença) -- mostra tendências de toda a igreja ao longo do tempo. Veja [Rastreando Presença](tracking-attendance.md).
-- **Aba Presença do Grupo** -- mostra presença dividida por grupo individual. Veja [Relatórios de Presença](../reports/attendance-reports.md#group-attendance).
+- **Aba Tendência de Presença** (em **Todos os anos** na página de Presença) -- mostra as tendências de toda a igreja ao longo do tempo. Consulte [Acompanhando a Presença](tracking-attendance.md).
+- **Aba Presença por Grupo** -- mostra a presença detalhada por grupo individual. Consulte [Relatórios de Presença](../reports/attendance-reports.md#group-attendance).
 
 :::tip
-Se uma sessão que você acabou de criar não aparece em relatórios imediatamente, certifique-se de que a data da sessão está dentro do intervalo de datas selecionado nos filtros do relatório.
+Se uma sessão que você acabou de criar não aparecer nos relatórios imediatamente, verifique se a data da sessão está dentro do intervalo de datas selecionado nos filtros do relatório.
 :::

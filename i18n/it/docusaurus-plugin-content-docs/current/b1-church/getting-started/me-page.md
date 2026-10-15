@@ -1,60 +1,65 @@
 ---
-title: "La Pagina Me"
+title: "La pagina Io"
 ---
 
-# La Pagina Me
+# La pagina Io
 
 <div class="article-intro">
 
-La pagina **Me** è la tua dashboard personale nel portale dei membri — una visualizzazione cronologica di tutto ciò che ti aspetta: incarichi di servizio, registrazioni a eventi e i prossimi eventi dei tuoi gruppi, più le tue notifiche più recenti.
+La pagina **Io** è la tua dashboard personale nel portale dei membri -- una sola pagina con tutto ciò che ti aspetta (incarichi di servizio, iscrizioni agli eventi ed eventi dei tuoi gruppi), insieme al tuo nucleo familiare, ai gruppi, alle offerte, alle iscrizioni e alle notifiche recenti.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Devi essere [registrato](./logging-in.md) — la pagina Me appare solo per i membri registrati
+- Devi aver [effettuato l'accesso](./logging-in.md) -- la pagina Io compare solo per i membri connessi
 
 </div>
 
-## Apertura della Pagina Me
+## Aprire la pagina Io
 
-Apri il menu del portale e tocca **Me**. La pagina si carica con le tue informazioni personali organizzate in sezioni.
+Tocca **Altro** nella barra delle schede, poi tocca **Io** sotto **Account**. La pagina si apre con la tua foto, il tuo nome e il tuo stato di membro, insieme a due pulsanti:
 
-## Imminenti
+- **Modifica profilo** -- Vedi [Modificare il tuo profilo](./editing-your-profile.md).
+- **Impostazioni** -- Apre le tue [Preferenze di notifica](./notification-preferences.md).
 
-La sezione **Imminenti** elenca tutto ciò che ti aspetta in ordine cronologico, ogni elemento contrassegnato con un'etichetta di tipo:
+Se non hai effettuato l'accesso, vedrai invece "Accedi per vedere la tua settimana" e un pulsante **Accedi**.
 
-- **Servizio** -- I tuoi incarichi di volontariato nei piani di servizio imminenti. Tocca uno per aprire il piano.
-- **Registrazione** -- Eventi per i quali ti sei [registrato](../events/registering). Tocca per accedere alle tue [registrazioni](../events/my-registrations).
-- **Evento** -- Prossimi eventi dai gruppi a cui appartieni. Tocca uno per aprire gli eventi del gruppo.
+## Prossimi
 
-Se nulla è programmato, vedrai "Niente di imminente" - i tuoi orari di servizio, eventi e registrazioni appariranno qui quando verranno programmati.
+La sezione **Prossimi** elenca i tuoi prossimi tre elementi in ordine di data, ciascuno con un'etichetta del tipo. Se ne hai di più, tocca **Tutti i prossimi** per vedere l'elenco completo, e **Torna a Io** per tornare indietro.
 
-## Notifiche Recenti
+- **Servizio** -- I tuoi posti di volontariato nei prossimi piani di culto. Tocca un elemento per aprire il piano.
+- **Iscrizione** -- Gli eventi a cui ti sei [iscritto](../events/registering). Tocca per andare alle tue [iscrizioni](../events/my-registrations).
+- **Evento** -- Gli eventi imminenti dei gruppi a cui appartieni. Tocca un elemento per aprire gli eventi del gruppo.
 
-Sotto Imminenti, la sezione **Notifiche Recenti** mostra le tue notifiche più recenti in modo che tu possa stare al corrente senza aprire ogni area del portale.
+Se non c'è nulla in programma, vedrai "Niente in arrivo" -- i tuoi turni di servizio, eventi e iscrizioni compariranno qui man mano che vengono programmati.
 
-## Scorciatoie
+## Nucleo familiare, gruppi e offerte
 
-La sezione **Scorciatoie** nella parte superiore della pagina Me collega ai luoghi che visiti più frequentemente:
+- **Nucleo familiare** -- Le altre persone del tuo nucleo familiare. Tocca un nome per vederne il profilo, oppure tocca **Gestisci** per modificare il tuo nucleo familiare dal tuo profilo. Nascosta se nessun altro è collegato al tuo nucleo familiare.
+- **I miei gruppi** -- I gruppi a cui appartieni. Tocca un gruppo per aprirlo, oppure tocca **Tutti i gruppi** per l'elenco completo.
+- **Offerte** -- Quanto hai donato quest'anno e il numero di donazioni. Tocca **Storico** per aprire la pagina delle offerte. Nascosta se la tua chiesa non accetta donazioni online.
 
-- **Modifica Profilo** -- Vedi [Modifica del Tuo Profilo](./editing-your-profile.md).
-- **Preferenze di Notifica** -- Vedi [Preferenze di Notifica](./notification-preferences.md).
-- **Messaggi** -- Le tue conversazioni private.
-- **Donazioni** -- Fai donazioni online e vedi la tua cronologia di donazioni.
-- **Registrazioni** -- Eventi per i quali ti sei registrato.
+## Richieste e iscrizioni
 
-Se la tua chiesa ha stanze o risorse prenotabili, appaiono altre due scorciatoie:
+La sezione **Richieste e iscrizioni** mostra quante iscrizioni agli eventi hai, con un collegamento **Iscrizioni** per gestirle.
 
-- **Richiedi un Evento** -- Chiedi di tenere un evento con le stanze e l'equipaggiamento di cui hai bisogno. Vedi [Richiesta di Eventi e Stanze](../events/requesting-events).
-- **Le Mie Richieste** -- Traccia lo stato delle tue richieste e cancella quelle in sospeso.
+Se la tua chiesa ha sale o risorse prenotabili, compaiono altri due collegamenti:
 
-Se la tua chiesa non ha impostato stanze o risorse, queste scorciatoie sono nascoste.
+- **Richiedi un evento** -- Chiedi di tenere un evento con le sale e le attrezzature di cui hai bisogno. Vedi [Richiedere eventi e sale](../events/requesting-events).
+- **Le mie richieste** -- Segui lo stato delle tue richieste e annulla quelle in attesa.
 
-## Articoli Correlati
+Se la tua chiesa non ha configurato sale o risorse, questi collegamenti sono nascosti.
 
-- [Navigazione in B1App](./navigating) -- Il layout del portale dei membri
-- [Richiesta di Eventi e Stanze](../events/requesting-events) -- Invia e traccia le richieste di stanze/risorse
-- [Le Mie Registrazioni](../events/my-registrations) -- Gestisci le tue registrazioni a eventi
-- [Registrazione dei Volontari](../serving/volunteer-signup) -- Come funzionano gli incarichi di servizio
+## Posta in arrivo
+
+La sezione **Posta in arrivo** mostra le tue due notifiche più recenti, così puoi recuperare senza aprire ogni area del portale. Tocca **Apri la posta in arrivo** per vedere tutte le tue notifiche e i tuoi messaggi, oppure tocca **Messaggi** per andare alle tue conversazioni private.
+
+## Articoli correlati
+
+- [Navigare in B1App](./navigating) -- La struttura del portale dei membri
+- [Richiedere eventi e sale](../events/requesting-events) -- Invia e segui le richieste di sale e risorse
+- [Le mie iscrizioni](../events/my-registrations) -- Gestisci le tue iscrizioni agli eventi
+- [Iscrizione dei volontari](../serving/volunteer-signup) -- Come funzionano gli incarichi di servizio

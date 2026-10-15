@@ -1,144 +1,148 @@
 ---
-title: "सेवा योजनाएँ"
+title: "Service Plans"
 ---
 
-# सेवा योजनाएँ
+# Service Plans
 
 <div class="article-intro">
 
-सेवा योजनाएँ यह व्यवस्थित करती हैं कि कौन सेवा कर रहा है और कब। हर योजना एक विशिष्ट तिथि और सेवकाई से जुड़ी होती है, जिससे हर सप्ताह अपनी स्वयंसेवक टीमों का समन्वय करना और यह सुनिश्चित करना आसान हो जाता है कि हर सेवा पूरी तरह से स्टाफ़ की गई हो।
+Service plans तय करते हैं कि कौन सेवा कर रहा है और कब। हर plan एक विशेष तारीख और ministry से जुड़ा होता है, जिससे आप हर हफ्ते अपनी volunteer teams का समन्वय कर सकते हैं और सुनिश्चित कर सकते हैं कि हर service पूरी तरह staffed हो।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- Serving क्षेत्र में अपनी सेवकाइयाँ और टीमें सेट करें
-- सुनिश्चित करें कि स्वयंसेवक आपकी [people directory](../people/adding-people.md) में जोड़े गए हैं और टीमों को सौंपे गए हैं
+- Serving क्षेत्र में अपनी ministries और teams सेट अप करें
+- सुनिश्चित करें कि volunteers को आपकी [people directory](../people/adding-people.md) में जोड़ा गया है और teams में assign किया गया है
 
 </div>
 
-## योजनाओं तक पहुँचना
+## Plans तक पहुंचना
 
-1. B1 Admin में, [जंप मेन्यू](../introduction.md#getting-around-with-the-jump-menu) खोलें (ऊपर-बाएँ कोने में खोज बार), **Serving** का विस्तार करें, और **Plans** पर क्लिक करें।
-2. पेज के शीर्ष पर एक **ministry tab** चुनें।
-3. उस प्रकार की योजनाओं की सूची देखने के लिए **plan type** पर क्लिक करें। भविष्य और पिछली योजनाओं के बीच बदलने के लिए सूची के ऊपर **Upcoming** और **Past** का उपयोग करें।
-4. किसी विशिष्ट योजना को खोलने के लिए उस पर क्लिक करें।
+1. B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ऊपर-बाईं ओर का search bar) खोलें, **Serving** को expand करें, और **Plans** पर click करें।
+2. पेज के ऊपर एक **ministry tab** चुनें।
+3. उस type के plans की सूची देखने के लिए **plan type** पर click करें। भविष्य और पिछले plans के बीच switch करने के लिए सूची के ऊपर **Upcoming** और **Past** का उपयोग करें। **Upcoming** आज से आगे के plans दिखाता है, सबसे नज़दीकी पहले, और बिना तारीख वाले plans अंत में। **Past** केवल पिछले plans दिखाता है, सबसे नए पहले।
+4. किसी विशेष plan को खोलने के लिए उस पर click करें।
 
-हर योजना पेज पर उसके plan type और **Plans** के लिंक दिखते हैं, ताकि आप ब्राउज़र के बैक बटन का उपयोग किए बिना वापस जा सकें।
+हर plan page अपने plan type और **Plans** के लिंक दिखाता है, ताकि आप browser के back button के बिना ऊपर लौट सकें।
 
 :::info
-योजनाएँ प्रबंधित करने के लिए पूर्ण एडमिन पहुँच आवश्यक नहीं है। किसी सेवकाई का कोई भी सदस्य Serving में जाकर अपनी सेवकाई की योजनाएँ बना, संपादित और निर्धारित कर सकता है, Plans Edit अनुमति के बिना। Plans Edit भूमिका वाले संपादक सभी सेवकाइयों की योजनाएँ प्रबंधित कर सकते हैं।
+plans प्रबंधित करने के लिए पूरी admin access आवश्यक नहीं है। कोई भी व्यक्ति जो किसी ministry का सदस्य है, Serving पर जाकर अपनी ministry के लिए plans बना, edit और schedule कर सकता है, बिना Plans Edit permission के। Plans Edit role वाले editors सभी ministries में plans प्रबंधित कर सकते हैं।
 :::
 
-## योजना बनाना
+## Plan बनाना
 
-1. plan type पेज से, पेज के शीर्ष पर **New Plan** पर क्लिक करें।
-2. योजना को एक नाम दें, या तिथि को ही नाम के रूप में उपयोग करें। सेवा की **date** चुनें।
-3. यदि आपकी सेवकाई के पास [टेम्पलेट](./plan-templates.md) हैं, तो आप **Start from template** के अंतर्गत एक चुन सकते हैं, ताकि एक ही चरण में सेवा का क्रम, पद और नोट्स भर जाएँ।
-4. अन्यथा, यदि आप किसी पिछली योजना से कॉपी करना चाहते हैं, तो **Copy from Previous Plan** का उपयोग करके **Positions Only** या **Positions and Assignments** चुनें। यदि आप कॉपी नहीं करना चाहते, तो **Nothing** चुनें। आप **Copy Order of Service** को भी चेक कर सकते हैं। जब आप किसी पिछली योजना से कॉपी करते हैं, तो नई योजना उस योजना के **Notes**, **Signup Deadline**, **Show volunteer names on signup page**, और स्वचालित प्रतिस्थापन सेटिंग भी रखती है, ताकि आपको उन्हें हर सप्ताह दोबारा दर्ज न करना पड़े। आप नई योजना की सेटिंग्स में इनमें से किसी को भी बदल सकते हैं।
-5. कॉपी करते समय एक साथ कई सप्ताह सेट करने के लिए, **Repeat weekly for this many weeks** में एक संख्या दर्ज करें (अधिकतम 12)। B1 हर सप्ताह के लिए एक योजना बनाता है, हर एक उससे पहले वाली योजना से कॉपी की जाती है। यदि योजना का नाम उसकी तिथि पर है, तो हर नई योजना का नाम उसकी अपनी तिथि पर रखा जाता है।
-6. वैकल्पिक रूप से **Signup Deadline (hours before service)** सेट करें। एक नई योजना पिछली योजना की समय-सीमा के साथ शुरू होती है, और आप इसे यहाँ बदल सकते हैं। कोई समय-सीमा न रखने के लिए इसे खाली छोड़ दें।
-7. योजना सहेजें। अब आप टीम के सदस्यों को सौंपना शुरू कर सकते हैं और [सेवा क्रम](./service-order.md) बना सकते हैं।
+1. plan type page से, पेज के ऊपर **New Plan** पर click करें।
+2. plan को एक नाम दें या तारीख को ही नाम के रूप में उपयोग करें। service की **date** चुनें।
+3. यदि आपकी ministry के पास [templates](./plan-templates.md) हैं, तो एक चरण में order of service, positions, और notes भरने के लिए **Start from template** के अंतर्गत कोई एक चुनें।
+4. अन्यथा, यदि आप किसी पिछले plan से कॉपी करना चाहते हैं, तो **Copy from Previous Plan** का उपयोग करके **Positions Only** या **Positions and Assignments** चुनें। यदि आप कॉपी नहीं करना चाहते, तो **Nothing** चुनें। आप **Copy Order of Service** पर भी checkmark लगा सकते हैं। पिछले plan से कॉपी करने पर, नया plan उस plan के **Notes**, **Signup Deadline**, **Show volunteer names on signup page**, और automatic-replacement setting भी रखता है, ताकि आपको उन्हें हर हफ्ते दोबारा न भरना पड़े। आप नए plan की settings में इनमें से किसी को भी बदल सकते हैं।
+5. कॉपी करते समय एक साथ कई हफ्तों का setup करने के लिए, **Repeat weekly for this many weeks** में एक संख्या लिखें (12 तक)। B1 हर हफ्ते के लिए एक plan बनाता है, हर एक उससे पहले वाले plan से कॉपी किया गया होता है। यदि plan का नाम उसकी तारीख पर है, तो हर नए plan का नाम उसकी अपनी तारीख पर रखा जाता है।
+6. वैकल्पिक रूप से **Signup Deadline (hours before service)** सेट करें। नया plan पिछले plan की deadline से शुरू होता है, और आप इसे यहां बदल सकते हैं। कोई deadline न होने पर इसे खाली छोड़ दें।
+7. plan save करें। अब आप team members को assign करना और [service order](./service-order.md) बनाना शुरू कर सकते हैं।
 
 :::tip
-**Repeat weekly for this many weeks** केवल तब उपलब्ध है जब आप पिछली योजना से कुछ (पद, असाइनमेंट, या सेवा का क्रम) कॉपी कर रहे हों।
+**Repeat weekly for this many weeks** केवल तब उपलब्ध होता है जब आप पिछले plan से कुछ (positions, assignments, या order of service) कॉपी कर रहे हों।
 :::
 
-## योजना विवरण पेज
+## Plan Detail Page
 
-जब आप कोई योजना खोलते हैं, तो योजना का नाम, सेवकाई, plan type और सेवा की तिथि शीर्ष पर **Edit** और **Print** बटनों के साथ दिखती है। उसके नीचे सब कुछ एक ही पेज पर होता है:
+जब आप कोई plan खोलते हैं, तो plan का नाम, ministry, plan type, और service की तारीख शीर्ष पर **Edit** और **Print** buttons के साथ दिखती है। उसके नीचे सब कुछ एक ही page पर है:
 
-- **[Order of Service](./service-order.md)** -- पूजा गीत, प्रार्थनाएँ, घोषणाएँ और उपदेश जैसे तत्वों के साथ सेवा का क्रम बनाएँ।
-- **Serving Team Assignments** -- यह प्रबंधित करें कि कौन टीम सदस्य इस योजना के लिए सौंपे गए हैं। आप अपनी मौजूदा टीमों से लोगों को जोड़ सकते हैं और देख सकते हैं कि किसने पुष्टि की है या कौन अभी लंबित है। पदों के ऊपर के लिंक आपको योजना के **Notes** और **Times** खोलने देते हैं।
+- **[Order of Service](./service-order.md)** -- worship songs, prayers, announcements, और sermon जैसे elements के साथ service का क्रम बनाएं।
+- **Serving Team Assignments** -- प्रबंधित करें कि कौन-से team members इस plan को assign हैं। आप अपनी मौजूदा teams के लोगों को जोड़ सकते हैं और देख सकते हैं कि किसने पुष्टि की है या कौन अभी लंबित है। positions के ऊपर के links से plan के **Notes** और **Times** खुलते हैं।
 
-## टीम सदस्यों को सौंपना
+## Team Members को Assign करना
 
-1. एक योजना खोलें और **Serving Team Assignments** तक स्क्रॉल करें।
-2. **Add Position** पर क्लिक करें। add a position फ़ॉर्म में जानकारी भरें। श्रेणी के नाम के लिए जो चाहें वह लिखें। यदि आप चाहते हैं कि आपके चर्च का कोई भी व्यक्ति पद भर सके (केवल किसी एक टीम के सदस्य नहीं), तो **Volunteer Group** को **None** पर रहने दें।
-3. **People Needed** पर क्लिक करें और उस पद को भरने के लिए स्वयंसेवक चुनें। यदि पद का **Volunteer Group** है, तो आप उस समूह के सदस्यों में से चुनते हैं। यदि उसका Volunteer Group **None** पर सेट है, तो आप इसके बजाय अपने चर्च में किसी को भी खोज सकते हैं।
-4. **Add** पर क्लिक करके अपनी टीम सूची से सदस्यों को जोड़ें।
-5. सौंपे गए सदस्य अपनी असाइनमेंट स्थिति के साथ अपनी टीम के नीचे दिखेंगे।
-6. B1 ऐप के भीतर या ईमेल के माध्यम से उन्हें सूचित करने के लिए notify volunteers पर क्लिक करें।
+1. कोई plan खोलें और **Serving Team Assignments** तक scroll करें।
+2. **Add Position** पर click करें। add a position form में जानकारी भरें। category name के लिए जो चाहें वह लिखें। अपनी church में किसी भी व्यक्ति को position भरने देने के लिए (केवल एक team के सदस्यों को नहीं), **Volunteer Group** को **None** पर छोड़ दें।
+3. उस position को भरने के लिए volunteers चुनने हेतु **People Needed** पर click करें। यदि position का **Volunteer Group** है, तो आप उस group के सदस्यों में से चुनते हैं। यदि उसका Volunteer Group **None** पर सेट है, तो आप इसके बजाय अपनी church में किसी को भी खोज सकते हैं।
+4. **Add** पर click करके अपनी team roster से सदस्य जोड़ें।
+5. assigned सदस्य अपनी assignment status के साथ अपनी team के नीचे दिखेंगे।
+6. volunteers को B1 app के अंदर या email से सूचित करने के लिए notify volunteers पर click करें।
 
-हर पद पर एक गिनती चिप (उदाहरण के लिए "2/3") दिखती है, ताकि आप एक नज़र में देख सकें कि कितने स्थान भरे गए हैं। **Serving Team Assignments** शीर्षक के नीचे एक सारांश ("X of Y positions filled") योजना के समग्र स्टाफ़िंग को दिखाता है, साथ में यह भी कि कितने और चाहिए, और हर पद भर जाने पर **Fully staffed** में बदल जाता है।
+हर position पर एक count chip (जैसे, "2/3") दिखता है, ताकि आप एक नज़र में देख सकें कि कितने स्थान भरे हैं। **Serving Team Assignments** heading के नीचे एक सारांश ("X of Y positions filled") plan के समग्र staffing को दिखाता है, साथ में यह भी कि कितनी और ज़रूरत है, और हर position भरे जाने पर **Fully staffed** में बदल जाता है।
 
 :::tip
-योजनाएँ बनाने से पहले सेवकाई सेटिंग्स में अपनी टीमें सेट करें। इस तरह आपके पास सौंपने के लिए स्वयंसेवकों का तैयार समूह होगा।
+plans बनाने से पहले ministry settings में अपनी teams सेट करें। इस तरह आपके पास assign करने के लिए तैयार volunteers की एक सूची होगी।
 :::
 
-### खाली योजना में पद कॉपी करना
+### खाली Plan में Positions कॉपी करना
 
-यदि किसी योजना में अभी कोई पद नहीं है और उसी प्रकार की कोई पिछली योजना है, तो **Serving Team Assignments** में **Copy from Previous Plan** लिंक दिखता है। खुली योजना को पिछली योजना के पदों (और स्वयंसेवकों) से भरने के लिए **Positions Only** या **Positions and Assignments** चुनें। कॉपी वर्तमान योजना में जाती है; वह उसी तिथि के लिए दूसरी योजना नहीं बनाती।
+यदि किसी plan में अभी कोई position नहीं है और उसी type का कोई पिछला plan है, तो **Serving Team Assignments** में **Copy from Previous Plan** link दिखता है। पिछले plan की positions (और volunteers) से आपके खुले plan को भरने के लिए **Positions Only** या **Positions and Assignments** चुनें। कॉपी वर्तमान plan में जाती है; यह उसी तारीख के लिए दूसरा plan नहीं बनाती।
 
-## योजना सेटिंग्स
+## Plan Settings
 
-हर योजना की अतिरिक्त सेटिंग्स होती हैं, जिन्हें आप plan type की सूची में योजना के आगे **Edit** पर क्लिक करके, या योजना पेज के शीर्ष पर **Edit** बटन से कॉन्फ़िगर कर सकते हैं। योजना पर वापस जाने के लिए **Done** (या योजना के नाम) पर क्लिक करें। इनमें शामिल हैं:
+हर plan की अतिरिक्त settings हैं, जिन्हें आप plan type की सूची में plan के बगल में **Edit** पर click करके, या plan page के ऊपर **Edit** button से कॉन्फ़िगर कर सकते हैं। plan पर लौटने के लिए **Done** (या plan के नाम) पर click करें। इनमें शामिल हैं:
 
-- **Signup Deadline (hours before service)** — सेवा शुरू होने से कितने घंटे पहले स्वयंसेवक साइनअप बंद होते हैं। सेवा शुरू होने के समय के बाद भी साइनअप खुले रखने के लिए एक ऋणात्मक संख्या दर्ज करें। कोई समय-सीमा न रखने के लिए इसे खाली छोड़ दें।
-- **Show volunteer names on signup page** — चेक करने पर, साइन-इन किए हुए स्वयंसेवक B1.church साइनअप पेज पर देख सकते हैं कि हर पद के लिए और कौन साइन अप कर चुका है। जो लोग साइन इन नहीं हैं, उन्हें नाम कभी नहीं दिखाए जाते।
-- **Penciled in** — जब तक आप शेड्यूल प्रकाशित करने के लिए तैयार न हों, तब तक स्वयंसेवकों से असाइनमेंट छिपाता है।
-- **Automatically schedule a replacement when a volunteer declines** — चेक करने पर, यदि कोई सौंपा गया स्वयंसेवक अपना पद अस्वीकार करता है, तो B1 स्वचालित रूप से टीम सूची में अगले उपलब्ध व्यक्ति से संपर्क करेगा और पूछेगा कि क्या वे सेवा कर सकते हैं। यह तब तक सूची में आगे बढ़ता रहता है जब तक कोई स्वीकार न कर ले, जिससे मैनुअल फ़ॉलो-अप के बिना आपके पद भरे रहते हैं।
+- **Signup Deadline (hours before service)** — service से कितने घंटे पहले volunteer signups बंद होते हैं। service शुरू होने के बाद भी signups खुले रखने के लिए एक ऋणात्मक संख्या लिखें। कोई deadline न होने पर इसे खाली छोड़ दें।
+- **Show volunteer names on signup page** — चेक होने पर, signed-in volunteers B1.church signup page पर देख सकते हैं कि हर position पर और कौन signed up है। जो लोग signed in नहीं हैं, उन्हें नाम कभी नहीं दिखाए जाते।
+- **Penciled in** — जब तक आप schedule publish करने के लिए तैयार न हों, तब तक volunteers से assignments छिपाता है।
+- **Automatically schedule a replacement when a volunteer declines** — चेक होने पर, यदि कोई assigned volunteer अपनी position से मना करता है, तो B1 स्वचालित रूप से team roster पर अगले उपलब्ध व्यक्ति से संपर्क करेगा और पूछेगा कि क्या वे सेवा कर सकते हैं। यह सूची में तब तक आगे बढ़ता है जब तक कोई स्वीकार न करे, जिससे manual follow-up के बिना आपकी positions भरी रहती हैं।
 
-## स्वयंसेवक अनुस्मारक
+:::tip
+member signup page पर, हर plan की खुली positions category और फिर नाम के अनुसार सूचीबद्ध होती हैं। जब तक आप [Settings > Volunteer Signup](../settings/church-settings.md#volunteer-signup) में **Show only the next week of each plan type** चालू न करें, सदस्य खुली positions वाले हर आने वाले हफ्ते को देखते हैं।
+:::
 
-B1 स्वयंसेवकों को उनकी निर्धारित सेवाओं से पहले स्वचालित रूप से याद दिला सकता है, ताकि आपको हर सप्ताह अपनी टीम के पीछे न भागना पड़े। अनुस्मारक **निर्धारित हर किसी** को जाते हैं — जिन्होंने पुष्टि की है और जिन्होंने अभी तक जवाब नहीं दिया है, दोनों को। हर अनुस्मारक ईमेल में स्वयंसेवक का/के पद, सेवा की तिथि, योजना के नोट्स और आपका कस्टम संदेश शामिल होता है।
+## Volunteer Reminders
 
-अनुस्मारक का समय और सामग्री **plan type** के आधार पर सेट की जाती है, ताकि हर प्रकार की सेवा का अपना शेड्यूल रह सके।
+B1 उन services से पहले volunteers को स्वचालित रूप से याद दिला सकता है जिनके लिए वे schedule हैं, ताकि आपको हर हफ्ते अपनी team के पीछे न भागना पड़े। reminders **schedule किए गए सभी लोगों** को जाते हैं -- जिन्होंने पुष्टि की है और जिन्होंने अभी जवाब नहीं दिया है, दोनों को। हर reminder email में volunteer की position(s), service की तारीख, plan के notes, और आपका custom message शामिल होता है।
 
-1. **Serving** क्षेत्र से, वह सेवकाई चुनें जिसमें plan type है।
-2. **Plan Types** सूची में, plan type के आगे **Edit** पर क्लिक करें।
-3. **Reminders** सेक्शन का विस्तार करें और **Send reminders for plans of this type** चालू करें।
+reminder का समय और सामग्री **plan type** के अनुसार सेट होती है, ताकि हर प्रकार की service अपना अलग schedule रख सके।
+
+1. **Serving** क्षेत्र से, वह ministry चुनें जिसमें plan type है।
+2. **Plan Types** सूची में, plan type के बगल में **Edit** पर click करें।
+3. **Reminders** section खोलें और **Send reminders for plans of this type** चालू करें।
 4. **When should reminders go out?** के अंतर्गत, अधिकतम तीन समय चुनें: **7 days before**, **3 days before**, **2 days before**, **1 day before**, या **Day of**।
-5. **Time of Day** सेट करें, जब अनुस्मारक भेजे जाएँ।
-6. वैकल्पिक रूप से **Message** जोड़ें। डिफ़ॉल्ट अनुस्मारक शब्दावली का उपयोग करने के लिए इसे खाली छोड़ दें।
-7. **Send By** के अंतर्गत **Push**, **Email**, और — यदि आपके चर्च से [टेक्सटिंग प्रदाता](../settings/church-settings.md#texting) जुड़ा है — **Text** चुनें।
-8. **Save Reminders** पर क्लिक करें।
+5. **Time of Day** सेट करें जिस पर reminders जाएं।
+6. वैकल्पिक रूप से **Message** जोड़ें। default reminder wording उपयोग करने के लिए इसे खाली छोड़ दें।
+7. **Send By** के अंतर्गत **Push**, **Email**, और यदि आपके church से [texting provider](../settings/church-settings.md#texting) जुड़ा है, तो **Text** चुनें।
+8. **Save Reminders** पर click करें।
 
-किसी plan type के लिए अनुस्मारक तब तक बंद रहते हैं जब तक आप उन्हें चालू नहीं करते।
+plan type के लिए reminders तब तक बंद रहते हैं जब तक आप उन्हें चालू न करें।
 
 :::tip
-जिन स्वयंसेवकों ने अभी तक पुष्टि नहीं की है, उन्हें अनुस्मारक ईमेल के भीतर ही **Accept** और **Decline** बटन मिलते हैं, ताकि वे साइन इन किए बिना जवाब दे सकें।
+जिन volunteers ने अभी पुष्टि नहीं की है, उन्हें reminder email के अंदर ही **Accept** और **Decline** buttons मिलते हैं, ताकि वे बिना sign in किए जवाब दे सकें।
 :::
 
-### टेक्स्ट अनुस्मारक
+### Text Reminders
 
-**Text** विकल्प तभी दिखता है जब आपके चर्च से टेक्सटिंग प्रदाता जुड़ा हो। टेक्स्ट आपके चर्च के टेक्सटिंग प्रदाता के माध्यम से जाते हैं, और हर टेक्स्ट में आपके चर्च का खर्च लग सकता है। स्वयंसेवक को टेक्स्ट अनुस्मारक तभी मिलता है जब उसने अपनी [Notification Preferences](../../b1-church/getting-started/notification-preferences.md) में **Text messages** चालू किए हों और उसकी प्रोफ़ाइल में मोबाइल नंबर हो। हर टेक्स्ट आपके चर्च के नाम से शुरू होता है, एक ही टेक्स्ट संदेश तक सीमित रहता है, और "Reply STOP to opt out." पर समाप्त होता है। जो कोई STOP का जवाब देता है, उसे आपके चर्च से टेक्स्ट मिलना बंद हो जाता है। STOP जवाब B1 तक पहुँचने के लिए, अपनी [टेक्सटिंग सेटिंग्स](../settings/church-settings.md#texting) से **Inbound (STOP) webhook URL** कॉपी करके अपने प्रदाता के inbound message webhook में चिपकाएँ।
+**Text** विकल्प केवल तब दिखता है जब आपके church से texting provider जुड़ा हो। texts आपके church के texting provider के माध्यम से जाते हैं, और हर text पर आपके church का खर्च आ सकता है। एक volunteer को text reminder तभी मिलता है जब उन्होंने अपनी [Notification Preferences](../../b1-church/getting-started/notification-preferences.md) में **Text messages** चालू किए हों और उनकी profile पर mobile number हो। हर text आपके church के नाम से शुरू होता है, एक single text message तक सीमित रहता है, और "Reply STOP to opt out." पर समाप्त होता है। जो कोई STOP का उत्तर देता है, उसे आपके church से texts मिलना बंद हो जाता है। STOP replies B1 तक पहुंचने के लिए, अपनी [texting settings](../settings/church-settings.md#texting) से **Inbound (STOP) webhook URL** को अपने provider के inbound message webhook में paste करें।
 
-किसी दिनांक सीमा में निर्धारित सभी लोगों को तुरंत टेक्स्ट करने के लिए, [Plans Overview](./plans-overview.md#texting-everyone-scheduled) पर **Text Volunteers** का उपयोग करें।
+किसी तारीख की सीमा में schedule किए गए सभी लोगों को तुरंत text करने के लिए, [Plans Overview](./plans-overview.md#texting-everyone-scheduled) पर **Text Volunteers** का उपयोग करें।
 
 :::info
-हर अनुस्मारक एक बार भेजा जाता है। टेक्स्ट अनुस्मारक पुश और ईमेल के अतिरिक्त भेजे जाते हैं, उनके बजाय नहीं।
+हर reminder एक बार भेजा जाता है। Text reminders push और email के अतिरिक्त भेजे जाते हैं, उनके बदले नहीं।
 :::
 
-## plan type के साथ समूह जोड़ना
+## Plan Type को Associated Groups से जोड़ना
 
-plan type पेज पर योजना सूची के नीचे, **Associated Groups** सेक्शन आपको यह तय करने देता है कि कौन से समूह अपने member portal से इस plan type की योजनाएँ देख सकते हैं। यह आगामी सेवाओं की जानकारी सही टीमों तक पहुँचाने का एक त्वरित तरीका है, बिना उन्हें एडमिन पहुँच दिए।
+plan type page पर plan list के नीचे, **Associated Groups** section आपको यह तय करने देता है कि कौन-से groups अपने member portal से इस plan type के plans देख सकते हैं। बिना admin access दिए सही teams तक आने वाली services पहुंचाने का यह एक त्वरित तरीका है।
 
-1. plan type पेज पर, पेज के शीर्ष पर **Associated Groups** पर क्लिक करें (या उस सेक्शन तक स्क्रॉल करें)।
-2. **Add Group** पर क्लिक करें और ड्रॉपडाउन से एक समूह चुनें।
-3. **Shows** कॉलम में चुनें कि उस समूह के सदस्यों को इस plan type के लिए **Past plans only**, **Upcoming plans only**, या **Past and upcoming plans** में से क्या दिखना चाहिए।
-4. और समूह जोड़ने के लिए दोहराएँ, या किसी समूह को हटाने के लिए ट्रैश आइकन पर क्लिक करें।
+1. plan type page पर, पेज के ऊपर **Associated Groups** पर click करें (या उस section तक scroll करें)।
+2. **Add Group** पर click करें और dropdown से एक group चुनें।
+3. **Shows** column में चुनें कि उस group के सदस्यों को इस plan type के लिए **Past plans only**, **Upcoming plans only**, या **Past and upcoming plans** में से क्या दिखे।
+4. और groups जोड़ने के लिए दोहराएं, या किसी group को हटाने के लिए trash icon पर click करें।
 
 :::info
-केवल **Standard** टैग वाले समूह ही चयनकर्ता में दिखते हैं। किसी जुड़े हुए समूह के सदस्यों को B1 member portal में समूह के पेज पर इस plan type की योजनाएँ स्वचालित रूप से दिखती हैं — केवल आपके चुने हुए समय के दायरे तक सीमित।
+केवल **Standard** के रूप में tag किए गए groups picker में दिखते हैं। किसी associated group के सदस्यों को B1 member portal में group के page पर इस plan type के plans अपने-आप दिखते हैं -- केवल उस समय सीमा तक सीमित जो आपने चुनी है।
 :::
 
-यदि योजनाएँ Lessons.church के पाठ हैं, तो जुड़े हुए समूह के सदस्यों को समूह पेज पर **This week's lesson** कार्ड भी दिखता है (नीचे की पंक्ति, पद, और माता-पिता के लिए एक प्रश्न)। यहाँ एक अभिभावक समूह जोड़ें और फ़िल्टर **Past plans only** पर सेट करें, ताकि आज का पाठ शामिल हो। स्वयंसेवक टीमें आमतौर पर **Upcoming plans only** या **Past and upcoming plans** का उपयोग करती हैं।
+यदि plans Lessons.church lessons हैं, तो associated group के सदस्यों को group page पर **This week's lesson** card भी दिखता है (नीचे की पंक्ति, verse, और माता-पिता के लिए एक प्रश्न)। यहां एक parent group जोड़ें और filter को **Past plans only** पर सेट करें, ताकि आज का lesson शामिल हो। Volunteer teams आम तौर पर **Upcoming plans only** या **Past and upcoming plans** का उपयोग करती हैं।
 
-## योजनाएँ प्रिंट करना
+## Plans Print करना
 
-आप अपनी टीम में बाँटने के लिए योजना प्रिंट कर सकते हैं। योजना खोलें और पेज के शीर्ष पर **Print** पर क्लिक करें, ताकि असाइनमेंट और सेवा के क्रम सहित एक प्रिंट योग्य संस्करण बने। प्रिंटआउट के शीर्ष पर आपके चर्च का लोगो ([Website > Appearance](../website/appearance.md) से **Light Background Logo**, यदि आपने एक अपलोड किया है) और उसके नीचे आपके चर्च का नाम, साथ में योजना का नाम दिखता है, ताकि अलग-अलग पन्ने आसानी से पहचाने जा सकें। यह रिहर्सल में बाँटने या किसी सामान्य जगह पर लगाने के लिए उपयोगी है।
+आप अपनी team में बांटने के लिए plan प्रिंट कर सकते हैं। plan खोलें और पेज के ऊपर **Print** पर click करें, ताकि assignments और service order शामिल करते हुए एक प्रिंट करने योग्य संस्करण बने। printout के शीर्ष पर आपके church का logo दिखता है ([Website > Appearance](../website/appearance.md) से **Light Background Logo**, यदि आपने एक अपलोड किया है), उसके नीचे आपके church का नाम, और plan का नाम, ताकि अलग-अलग पन्ने आसानी से पहचाने जा सकें। यह rehearsals में बांटने या किसी common area में लगाने के लिए उपयोगी है।
 
 :::info
-योजनाएँ सेवकाई के अनुसार व्यवस्थित होती हैं। योजनाएँ बनाने या देखने से पहले सुनिश्चित करें कि आप सही सेवकाई टैब पर हैं।
+Plans ministry के अनुसार व्यवस्थित होते हैं। plans बनाने या देखने से पहले सुनिश्चित करें कि आप सही ministry tab पर हैं।
 :::
 
-## आगे के कदम
+## अगले Steps
 
-- एक ही ग्रिड में कई सप्ताहों के सभी आगामी असाइनमेंट देखने और बिना भरे पदों को पहचानने के लिए [Plans Overview](./plans-overview.md) का उपयोग करें — और सीधे ग्रिड से स्वयंसेवकों को सौंपें
-- किसी योजना की संरचना को [Plan Template](./plan-templates.md) के रूप में सहेजें, ताकि आप उसे एक क्लिक में भविष्य की योजनाओं पर लागू कर सकें
-- गीतों, पाठों और अन्य तत्वों के साथ अपना [Service Order](./service-order.md) बनाएँ
-- अपनी लाइब्रेरी से [songs](./songs.md) सीधे सेवा के क्रम में जोड़ें
-- टीम सदस्यों को फ़ॉलो-अप कार्य सौंपने के लिए [Tasks](./tasks.md) का उपयोग करें
-- [Digital Signage](./digital-signage.md) के साथ लॉबी टीवी पर वर्तमान पाठ सामग्री दिखाएँ
+- [Plans Overview](./plans-overview.md) का उपयोग करके एक ही grid में कई हफ्तों की सभी आने वाली assignments देखें और खाली positions पहचानें -- और सीधे grid से volunteers को assign करें
+- किसी plan का ढांचा [Plan Template](./plan-templates.md) के रूप में सहेजें, ताकि उसे भविष्य के plans पर एक क्लिक में लगाया जा सके
+- गानों, पाठों, और अन्य elements के साथ अपना [Service Order](./service-order.md) बनाएं
+- अपनी library से [songs](./songs.md) सीधे service order में जोड़ें
+- team members को follow-up action items सौंपने के लिए [Tasks](./tasks.md) का उपयोग करें
+- [Digital Signage](./digital-signage.md) के साथ lobby TV पर वर्तमान lesson content दिखाएं

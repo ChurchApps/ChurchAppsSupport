@@ -1,77 +1,77 @@
 ---
-title: "Freiwilligenanmeldung"
+title: "Freiwilligen-Anmeldung"
 ---
 
-# Freiwilligenanmeldung
+# Freiwilligen-Anmeldung
 
 <div class="article-intro">
 
-Durchsuchen Sie verfügbare Freiwilligenpositionen und melden Sie sich direkt von B1.church für bevorstehende Dienste an. Positionen sind nach Kategorien organisiert, sodass Sie schnell finden können, wo Hilfe benötigt wird, und einem Team beitreten können.
+Durchsehen Sie verfügbare ehrenamtliche Positionen und melden Sie sich direkt auf B1.church für kommende Gottesdienste an. Die Positionen sind nach Kategorien geordnet, sodass Sie schnell sehen, wo Hilfe gebraucht wird, und einem Team beitreten können.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Ein B1.church-Konto – Sie müssen angemeldet sein, um sich anzumelden
-- Ihr Kirchenadministrator muss Selbstanmeldungen für mindestens eine Position aktiviert haben
+- Ein B1.church-Konto -- Sie müssen angemeldet sein, um sich einzutragen
+- Ihre Gemeindeverwaltung muss die Selbsteintragung für mindestens eine Position aktiviert haben
 
 </div>
 
-## Durchsuchen verfügbarer Positionen
+## Verfügbare Positionen durchsehen
 
-1. Navigieren Sie zur Seite **Volunteer** auf der B1.church-Website Ihrer Kirche.
-2. Sie sehen eine Liste von bevorstehenden Dienst-Plänen mit offenen Freiwilligenpositionen.
-3. Jeder Plan zeigt den **Plannamen**, das **Servicedatum** und die **Servicezeiten**.
+1. Rufen Sie die Seite **Freiwillige** auf der Website Ihrer Gemeinde auf B1.church auf.
+2. Sie sehen eine Liste kommender Dienstpläne mit offenen ehrenamtlichen Positionen. Innerhalb jedes Plans sind die Positionen nach Kategorie und dann nach Name aufgeführt. Zeigt Ihre Gemeinde nur die nächste Woche jeder Planart an, erscheinen spätere Wochen, sobald die aktuelle vorbei ist.
+3. Jeder Plan zeigt den **Namen des Plans**, das **Datum des Gottesdienstes** und die **Gottesdienstzeiten**.
 
-Positionen sind nach Kategorien gruppiert (zum Beispiel „Band", „Hospitality", „Kids Ministry"). Jede Position zeigt:
+Die Positionen sind nach Kategorien gruppiert (zum Beispiel „Band“, „Gastfreundschaft“, „Kinderarbeit“). Jede Position zeigt:
 
-- **Positionsname** – Die Rolle, die Sie ausfüllen würden (z. B. „Drummer", „Greeter", „Coffee Server").
-- **Beschreibung** – Details über die Rolle, falls vom Administrator bereitgestellt.
-- **Verfügbare Plätze** – Eine Fortschrittsleiste, die zeigt, wie viele Plätze belegt sind und wie viele verbleiben.
-- **Wer sich angemeldet hat** – Wenn Ihre Kirche für den Plan **Freiwilligennamen auf der Anmeldeseite anzeigen** aktiviert hat, listet eine Zeile „Angemeldet:“ die Namen der Personen auf, die bereits in dieser Position dienen. Namen werden nur angezeigt, wenn Sie angemeldet sind.
+- **Name der Position** -- Die Rolle, die Sie übernehmen würden (z. B. „Schlagzeug“, „Begrüßung“, „Kaffeeausschank“).
+- **Beschreibung** -- Details zur Rolle, sofern die Verwaltung sie angegeben hat.
+- **Freie Plätze** -- Ein Fortschrittsbalken, der zeigt, wie viele Plätze besetzt und wie viele noch frei sind.
+- **Wer sich eingetragen hat** -- Wenn Ihre Gemeinde für den Plan **Namen der Freiwilligen auf der Anmeldeseite anzeigen** aktiviert hat, listet eine Zeile „Eingetragen:“ die Namen der Personen auf, die diese Position bereits übernehmen. Namen werden nur angezeigt, wenn Sie angemeldet sind.
 
-## Anmeldung
+## Sich eintragen
 
-1. Finden Sie eine Position, für die Sie freiwillig tätig sein möchten.
-2. Klicken Sie auf die Schaltfläche **Sign Up** neben der Position.
-3. Eine Bestätigungsmitteilung wird angezeigt: „You're signed up! Thank you for volunteering."
-4. Die Position zeigt jetzt einen grünen Indikator, der bestätigt, dass Sie angemeldet sind.
+1. Suchen Sie eine Position, für die Sie sich engagieren möchten.
+2. Klicken Sie neben der Position auf die Schaltfläche **Eintragen**.
+3. Es erscheint eine Bestätigung: „Sie sind eingetragen! Vielen Dank für Ihr Engagement.“
+4. Die Position zeigt nun eine grüne Anzeige, die bestätigt, dass Sie eingetragen sind.
 
 :::info
-Sie müssen angemeldet sein, um sich anzumelden. Wenn Sie nicht angemeldet sind, werden Sie zunächst aufgefordert, sich anzumelden.
+Sie müssen angemeldet sein, um sich einzutragen. Wenn Sie nicht angemeldet sind, werden Sie zuerst zur Anmeldung aufgefordert.
 :::
 
-## Entfernen einer Anmeldung
+## Eine Eintragung entfernen
 
 Wenn sich Ihre Pläne ändern und Sie nicht mehr dienen können:
 
-1. Finden Sie die Position, für die Sie sich angemeldet haben – sie zeigt einen grünen Indikator „You're signed up".
-2. Klicken Sie auf die Schaltfläche **Remove**.
-3. Bestätigen Sie, dass Sie sich von der Position entfernen möchten.
-4. Eine Nachricht bestätigt: „You have been removed from this position."
+1. Suchen Sie die Position, für die Sie sich eingetragen haben. Sie zeigt die grüne Anzeige „Sie sind eingetragen“.
+2. Klicken Sie auf die Schaltfläche **Entfernen**.
+3. Bestätigen Sie, dass Sie sich von der Position abmelden möchten.
+4. Eine Meldung bestätigt: „Sie wurden von dieser Position entfernt.“
 
-## Stichtage
+## Fristen
 
-Ihr Kirchenadministrator kann für jeden Plan einen Anmeldungsstichtag festlegen. Der Stichtag ist eine festgelegte Anzahl von Stunden vor dem Servicedatum. Sobald der Stichtag verstrichen ist:
+Ihre Gemeindeverwaltung kann für jeden Plan eine Anmeldefrist festlegen. Die Frist liegt eine festgelegte Anzahl von Stunden vor dem Datum des Gottesdienstes. Nach Ablauf der Frist gilt:
 
-- Sie können sich nicht für neue Positionen anmelden.
-- Sie können vorhandene Anmeldungen nicht entfernen.
-- Eine Nachricht oben auf dem Plan zeigt an, dass der Anmeldungsstichtag verstrichen ist.
+- Sie können sich nicht mehr für neue Positionen eintragen.
+- Sie können bestehende Eintragungen nicht mehr entfernen.
+- Oben im Plan erscheint ein Hinweis, dass die Anmeldefrist abgelaufen ist.
 
-## Positions-Kapazität
+## Kapazität der Positionen
 
-Jede Position hat eine begrenzte Anzahl von Plätzen. Wenn alle Plätze belegt sind:
+Jede Position hat eine begrenzte Anzahl an Plätzen. Sind alle Plätze belegt:
 
-- Die Position wird als **Full** angezeigt.
-- Die Anmeldungsschaltfläche ist deaktiviert.
-- Wenn sich jemand von seiner Anmeldung abmeldet, wird der Platz wieder frei.
+- Die Position wird als **Voll** angezeigt.
+- Die Schaltfläche zum Eintragen ist deaktiviert.
+- Wenn sich jemand austrägt, wird der Platz wieder frei.
 
 :::tip
-Schauen Sie regelmäßig auf der Freiwilligenseite vorbei, besonders Anfang der Woche. Beliebte Positionen werden schnell gefüllt, daher gibt es Ihnen die besten Auswahlmöglichkeiten, sich frühzeitig anzumelden.
+Schauen Sie regelmäßig auf der Freiwilligen-Seite vorbei, besonders früh in der Woche. Beliebte Positionen füllen sich schnell, und wer sich früh einträgt, hat die größte Auswahl.
 :::
 
-## Zugehörige Artikel
+## Verwandte Artikel
 
-- [Serving Overview](./index.md) – Überblick über Freiwilligenfunktionen auf B1.church
-- [Viewing Plans](../plans/viewing-plans) – Sehen Sie Ihre zugewiesenen Pläne und Dienstreihenfolgen an
+- [Übersicht Dienst](./index.md) -- Überblick über die Dienstfunktionen auf B1.church
+- [Pläne anzeigen](../plans/viewing-plans) -- Ihre zugewiesenen Pläne und Gottesdienstabläufe ansehen

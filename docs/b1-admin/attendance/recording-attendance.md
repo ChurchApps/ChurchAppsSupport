@@ -56,7 +56,7 @@ Unchecking someone who was already recorded as present and then saving removes t
 
 ### Adding Visitors
 
-To record someone who is not a member of the group, search for them in the person search beside the attendance list. If they are not in your database yet, you can create them from the search. They are added to the list already checked. Click **Save Attendance** to record them.
+To record someone who is not a member of the group, search for them in the person search beside the attendance list. If they are not in your database yet, you can create them from the search. Either way, they are added to the list already checked. Click **Save Attendance** to record them.
 
 People who checked in at a kiosk show a **Volunteer** or **Guest** chip. People who are not group members show a **Guest** chip.
 
@@ -68,7 +68,7 @@ When several classes meet at the same service time, you can see at a glance whic
 2. Click **Who Still Needs Attendance** at the top of the attendance list.
 3. A dialog lists every group assigned to that service time, with a summary such as "5 of 8 groups entered" at the top.
 
-Groups with no one marked present for that date show a **Not entered** chip and are listed first. Groups that have attendance show **Entered** with the number of people marked present (for example, "Entered (12)"). Click a group's name to jump to that group and record its attendance.
+Groups with no one marked present for that date show a **Not entered** chip and are listed first. Groups that have attendance show **Entered** with the number of people marked present (for example, "Entered (12)"). Click a group's name to open that group's sessions with the session for the same date already selected, so you can record its attendance right away. If the group has no session for that date yet, its sessions list opens so you can add one.
 
 :::tip
 Pair this with **Print All Classes** and [adding sessions for every class in a service time](#adding-sessions-for-every-class-in-a-service-time): create the sessions, hand out roll sheets, then use **Who Still Needs Attendance** to see which sheets haven't been entered yet.

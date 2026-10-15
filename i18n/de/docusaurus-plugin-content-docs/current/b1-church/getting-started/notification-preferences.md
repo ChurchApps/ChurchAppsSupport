@@ -6,60 +6,60 @@ title: "Benachrichtigungseinstellungen"
 
 <div class="article-intro">
 
-Mit Benachrichtigungseinstellungen können Sie entscheiden, welche Benachrichtigungen Sie von Ihrer Kirche erhalten und wie Sie sie erhalten – Push-Benachrichtigungen, E-Mail, die In-App-Glocke oder (wenn Ihre Kirche Textnachrichten versendet) Textnachrichten. Sie können jeden Benachrichtigungstyp verfeinern, Ruhezeiten festlegen oder alles auf einmal stummschalten, alles von einem Bildschirm aus.
+Mit den Benachrichtigungseinstellungen legen Sie fest, welche Benachrichtigungen Sie von Ihrer Gemeinde erhalten und wie: als Push-Nachricht, per E-Mail, über die Glocke in der App oder (sofern Ihre Gemeinde Textnachrichten versendet) als Textnachricht. Sie können jede Benachrichtigungsart fein abstimmen, Ruhezeiten festlegen oder alles auf einmal stummschalten, und zwar alles auf einem einzigen Bildschirm.
 
 </div>
 
-## Öffnen Ihrer Einstellungen
+## Ihre Einstellungen öffnen
 
-1. Gehen Sie zur Seite **Me** und tippen Sie auf **Benachrichtigungseinstellungen** unter **Verknüpfungen**.
+1. Gehen Sie zur Seite **Ich** und tippen Sie unter Ihrem Namen auf **Einstellungen**.
 
-Sie können auch auf das Glockensymbol tippen, die Registerkarte **Benachrichtigungen** öffnen, auf **Alle Benachrichtigungen anzeigen** tippen und dann auf dieser Seite auf **Benachrichtigungseinstellungen** tippen.
+Alternativ tippen Sie auf das Glockensymbol, dann auf **Alle anzeigen**, um Ihren Posteingang zu öffnen, und anschließend oben auf dieser Seite auf **Benachrichtigungseinstellungen**.
 
-## Globale Steuerelemente
+## Allgemeine Steuerung
 
 Oben auf dem Bildschirm finden Sie Einstellungen, die für alles gelten:
 
-- **Alle stummschalten** – Stoppt vorübergehend alle nicht wesentlichen Benachrichtigungen.
-- **Push-Benachrichtigungen** – Aktiviert oder deaktiviert Push-Benachrichtigungen auf Ihrem Gerät.
-- **Textnachrichten** – Nur sichtbar, wenn Ihre Kirche Textnachrichten eingerichtet hat. Schalten Sie dies ein, um Dienst- und Veranstaltungserinnerungen per Textnachricht an die Mobilnummer in Ihrem Profil zu erhalten. Es ist ausgeschaltet, bis Sie es einschalten.
-- **E-Mail-Häufigkeit** – Wählen Sie, wie E-Mail-Benachrichtigungen ankommen:
-  - **Pro Benachrichtigung** – Senden Sie eine E-Mail, wenn Dinge passieren.
-  - **Tägliche Zusammenfassung** – Fassen Sie sie in einer täglichen E-Mail zusammen.
-  - **Nie** – Senden Sie keine Benachrichtigungs-E-Mails.
-- **Ruhezeiten** – Legen Sie eine Start- und Endzeit (und Ihre Zeitzone) fest, wenn Sie nicht gestört werden möchten. Nicht dringende Benachrichtigungen warten, bis die Ruhezeiten vorbei sind.
+- **Alle stummschalten** -- Pausiert vorübergehend alle nicht wesentlichen Benachrichtigungen.
+- **Push-Benachrichtigungen** -- Schaltet Push-Benachrichtigungen für Ihr Gerät ein oder aus.
+- **Textnachrichten** -- Wird nur angezeigt, wenn Ihre Gemeinde Textnachrichten eingerichtet hat. Schalten Sie dies ein, um Dienst- und Veranstaltungserinnerungen per Textnachricht an die Mobilnummer in Ihrem Profil zu erhalten. Die Option ist ausgeschaltet, bis Sie sie einschalten.
+- **Häufigkeit der E-Mails** -- Wählen Sie, wie Benachrichtigungen per E-Mail eintreffen:
+  - **Pro Benachrichtigung** -- Eine E-Mail, sobald etwas passiert.
+  - **Tägliche Zusammenfassung** -- Alles in einer täglichen E-Mail gebündelt.
+  - **Nie** -- Keine Benachrichtigungs-E-Mails senden.
+- **Ruhezeiten** -- Legen Sie eine Start- und eine Endzeit (sowie Ihre Zeitzone) fest, wenn Sie nicht gestört werden möchten. Nicht dringende Benachrichtigungen warten, bis die Ruhezeit vorbei ist.
 
-## Benachrichtigungen nach Typ auswählen
+## Benachrichtigungen nach Art auswählen
 
-Unter den globalen Steuerelementen befindet sich ein Raster von Benachrichtigungstypen. Für jeden können Sie die Kanäle, die Sie möchten, aktivieren oder deaktivieren:
+Unterhalb der allgemeinen Steuerung finden Sie ein Raster mit Benachrichtigungsarten. Für jede Art können Sie die gewünschten Kanäle ein- oder ausschalten:
 
-- **Push** – Eine Benachrichtigung auf Ihrem Gerät.
-- **E-Mail** – Eine Nachricht in Ihrem Posteingang.
-- **In-App** – Die Glocke/das Badge in der App.
-- **Text** – Eine Textnachricht an Ihr Mobiltelefon. Diese Spalte erscheint nur, wenn Ihre Kirche Textnachrichten eingerichtet hat, und nur einige Typen (wie **Ereigniserinnerungen**, **Dienst & Zeitplan** und **Aufgaben & Nachverfolgung**) können per Textnachricht gesendet werden. Textnachrichten kommen nur an, wenn **Textnachrichten** ebenfalls eingeschaltet ist.
+- **Push** -- Eine Benachrichtigung auf Ihrem Gerät.
+- **E-Mail** -- Eine Nachricht in Ihrem Posteingang.
+- **In der App** -- Die Glocke bzw. Markierung innerhalb der App.
+- **Text** -- Eine Textnachricht an Ihr Mobiltelefon. Diese Spalte erscheint nur, wenn Ihre Gemeinde Textnachrichten eingerichtet hat, und nur einige Arten (etwa **Veranstaltungserinnerungen**, **Dienst & Plan** und **Aufgaben & Nachfassen**) können per Textnachricht versendet werden. Textnachrichten kommen nur an, wenn auch **Textnachrichten** eingeschaltet ist.
 
-Häufige Typen sind **Ereigniserinnerungen**, **Dienst & Zeitplan**, **Direktnachrichten**, **Gruppenchat**, **Gebetsanliegen** und **Kirchenankündigungen**. Sie können beispielsweise Push-Benachrichtigungen für Direktnachrichten aktivieren, sie aber für Ankündigungen deaktivieren.
+Zu den üblichen Arten gehören **Veranstaltungserinnerungen**, **Dienst & Plan**, **Direktnachrichten**, **Gruppenchat**, **Gebetsanliegen** und **Ankündigungen der Gemeinde**. Sie könnten zum Beispiel Push-Benachrichtigungen für Direktnachrichten eingeschaltet lassen, sie bei Ankündigungen aber ausschalten.
 
 :::info
-Einige Benachrichtigungstypen sind **immer aktiv** und können nicht deaktiviert werden – **Konto & Sicherheit**, **Spendensätze & Auszüge** und **Sicherheitswarnungen beim Check-In**. Diese sind aus Sicherheits- und rechtlichen Gründen erforderlich und zeigen ein kleines Schloss-Symbol. Alles andere ist zu Ihrer Kontrolle.
+Einige Benachrichtigungsarten sind **immer eingeschaltet** und können nicht deaktiviert werden -- **Konto & Sicherheit**, **Spendenquittungen & Abrechnungen** und **Sicherheitswarnungen beim Kinder-Check-in**. Diese sind aus Gründen der Sicherheit und aus rechtlichen Gründen erforderlich. Sie erkennen sie an einem kleinen Schlosssymbol. Alles Übrige können Sie selbst steuern.
 :::
 
-Einige Typen sind **standardmäßig deaktiviert** (z. B. Werbe- oder Fundraising-Nachrichten) und erreichen Sie nur, wenn Sie sich entscheiden, sich anzumelden.
+Einige Arten sind **standardmäßig ausgeschaltet** (etwa Werbe- oder Spendenaufrufe) und erreichen Sie nur, wenn Sie sich bewusst dafür entscheiden.
 
 ## Textnachrichten beenden
 
-Um keine Textnachrichten mehr zu erhalten, schalten Sie **Textnachrichten** aus und speichern Sie. Sie können auch mit **STOP** auf eine Textnachricht Ihrer Kirche antworten, um Ihre Nummer von deren Textnachrichten abzumelden.
+Um keine Textnachrichten mehr zu erhalten, schalten Sie **Textnachrichten** aus und speichern Sie. Sie können außerdem auf jede Textnachricht Ihrer Gemeinde mit **STOP** antworten, um Ihre Nummer von deren Textnachrichten abzumelden.
 
-## Speichern Ihrer Änderungen
+## Änderungen speichern
 
-Tippen Sie nach dem Anpassen Ihrer Einstellungen auf **Einstellungen speichern**. Ihre Änderungen werden sofort wirksam und gelten überall dort, wo Sie B1 verwenden.
+Nachdem Sie Ihre Einstellungen angepasst haben, tippen Sie auf **Einstellungen speichern**. Ihre Änderungen wirken sofort und gelten überall dort, wo Sie B1 nutzen.
 
 :::tip
-Zeitkritische Benachrichtigungen – wie eine Sicherheitswarnung oder eine Nachricht zur Sicherheit beim Check-In eines Kindes – erreichen Sie auch während der Ruhezeiten. Alltägliche Aktualisierungen warten, bis die Ruhezeiten vorbei sind.
+Zeitkritische Benachrichtigungen -- etwa eine Sicherheitswarnung oder eine Sicherheitsnachricht zum Kinder-Check-in -- erreichen Sie auch während der Ruhezeiten. Alltägliche Aktualisierungen warten, bis die Ruhezeiten enden.
 :::
 
-## Verwandt
+## Verwandte Artikel
 
-- [Freiwilligenanmeldung](../serving/volunteer-signup) – Diensterinnerungen und Reaktion auf Zeitplanänderungsanfragen
-- [Anmeldung zu Ereignissen](../events/registering) – Melden Sie sich für Veranstaltungen an, die Erinnerungen senden
-- [Installation der App](installing-pwa) – Fügen Sie B1 zu Ihrem Gerät hinzu, um Push-Benachrichtigungen zu empfangen
+- [Freiwilligen-Anmeldung](../serving/volunteer-signup) -- Dienst-Erinnerungen und Antworten auf Anfragen zum Dienstplan
+- [Anmeldung zu Veranstaltungen](../events/registering) -- Melden Sie sich für Veranstaltungen an, die Erinnerungen versenden
+- [App installieren](installing-pwa) -- Fügen Sie B1 Ihrem Gerät hinzu, damit Sie Push-Benachrichtigungen erhalten können

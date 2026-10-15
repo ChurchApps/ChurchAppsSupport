@@ -1,79 +1,78 @@
 ---
-title: "Editando Tu Perfil"
+title: "Editar tu perfil"
 ---
 
-# Editando Tu Perfil
+# Editar tu perfil
 
 <div class="article-intro">
 
-Tu página de perfil en el portal de miembros te permite actualizar tu información de contacto, administrar tu hogar, cambiar el correo electrónico y la contraseña de tu cuenta, y controlar quién puede ver tu dirección, número de teléfono y dirección de correo electrónico.
+La página de perfil en el portal de miembros te permite actualizar tu información de contacto, administrar tu hogar, cambiar el correo electrónico y la contraseña de tu cuenta, y controlar quién puede ver tu dirección, tu número de teléfono y tu correo electrónico.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Necesitas estar [conectado](./logging-in.md) -- la edición de perfil requiere una cuenta
+- Debes [haber iniciado sesión](./logging-in.md): editar el perfil requiere una cuenta
 
 </div>
 
-## Abriendo Tu Perfil
+## Abrir tu perfil
 
-Toca tu foto de perfil en la barra de aplicaciones superior o elige **Editar Perfil** del menú de navegación para abrir tu perfil en `/mobile/profileEdit`. La página tiene cuatro pestañas: **Perfil**, **Hogar**, **Cuenta** y **Privacidad**.
+Toca tu foto de perfil en la barra superior de la app, o toca **Edit Profile** en la parte superior de la página **More** o en tu [página Me](./me-page.md), para abrir **Your profile** en `/mobile/profileEdit`. La página es una sola hoja con secciones (**Photo & name**, **Contact**, **Household**, **Account** y **Privacy**). Cada una muestra tu información actual con un enlace **Edit** (o **Add Family Member** / **Change**) que abre un panel donde haces los cambios.
 
-## Pestaña de Perfil
+## Foto y nombre, y contacto
 
-La pestaña de Perfil contiene la información que tu iglesia ve en tu registro de persona:
+Estas secciones contienen la información que tu iglesia ve en tu registro de persona:
 
-- **Foto** -- toca **Cambiar Foto** para cargar una nueva foto.
-- **Nombre** -- Nombre, Segundo Nombre y Apellido.
-- **Contacto** -- Correo electrónico y fecha de nacimiento.
-- **Dirección** -- Dirección de calle, ciudad, estado y código postal.
-- **Teléfono** -- Números de móvil, casa y trabajo. Si activas los recordatorios de texto en [Preferencias de notificación](./notification-preferences.md), se envían a tu número móvil.
+- **Photo & name**: toca **Change Photo** para subir una nueva imagen, y edita tu nombre (First, Middle y Last).
+- **Contact**: Email, Mobile Phone, Home Phone, Work Phone, Birth Date y tu Address (calle, ciudad, estado y código postal). Si activas los recordatorios por texto en [Preferencias de notificación](./notification-preferences.md), se enviarán a tu número de celular.
 
-Edita cualquier campo y guarda tus cambios desde la barra en la parte inferior de la pantalla.
+Haz tus cambios en el panel y toca **Save Changes**.
 
 :::info
-Si tu iglesia requiere aprobación para cambios de directorio, tus ediciones se envían como una solicitud en lugar de aplicarse inmediatamente. Consulta [Aprobando Cambios de Perfil](/docs/b1-admin/profile/approving-profile-changes) para ver cómo tu iglesia revisa estos.
+Si tu iglesia requiere aprobación para los cambios en el directorio, la página dirá "Changes to your profile go to church staff for approval." y el botón dirá **Submit for Approval**: tus cambios se envían como solicitud en lugar de aplicarse de inmediato. Consulta [Aprobar cambios de perfil](/docs/b1-admin/profile/approving-profile-changes) para ver cómo los revisa tu iglesia.
 :::
 
-## Pestaña de Hogar
+## Hogar
 
-La pestaña de Hogar muestra a las otras personas vinculadas a tu hogar, cada una con su rol de hogar (Cabeza, Cónyuge, Hijo, etc.). Toca un miembro del hogar para ver sus detalles.
+La sección Household muestra las otras personas vinculadas a tu hogar, cada una con su rol en el hogar (Head, Spouse, Child, etc.). Toca un miembro del hogar para ver sus detalles.
 
-Para agregar un miembro de la familia que aún no está en el sistema, ingresa su nombre en **Agregar Miembro de la Familia** y toca **Agregar**. Los nuevos miembros de la familia se agregan a una lista pendiente y se envían junto con tus otros cambios de perfil para que tu iglesia los revise.
+Para agregar a un familiar que todavía no está en el sistema, toca **Add Family Member**, escribe su nombre y toca **Add**. Los nuevos familiares se agregan a una lista pendiente y se envían junto con tus otros cambios de perfil para que la iglesia los revise.
 
-## Pestaña de Cuenta
+## Cuenta
 
-La pestaña de Cuenta administra tu acceso en lugar de tu perfil de iglesia:
+La sección Account administra tu inicio de sesión, no tu perfil en la iglesia. Toca **Edit** para abrirla:
 
-- **Nombre para Mostrar** -- el nombre y apellido mostrado en tu acceso (separado de los campos de Nombre en la pestaña de Perfil).
-- **Cambiar Correo Electrónico** -- actualiza la dirección de correo electrónico que usas para iniciar sesión.
-- **Cambiar Contraseña** -- ingresa tu contraseña actual, luego tu nueva contraseña dos veces. Tu nueva contraseña debe cumplir con la longitud mínima del sitio.
+- **Display Name**: el nombre y apellido que aparecen en tu inicio de sesión (separado del nombre de tu perfil en la iglesia).
+- **Change Email**: actualiza la dirección de correo electrónico con la que inicias sesión.
+- **Change Password**: escribe tu contraseña actual y luego tu nueva contraseña dos veces. La nueva contraseña debe tener al menos 8 caracteres.
 
-## Pestaña de Privacidad
+Cada parte tiene su propio botón **Save**.
 
-La pestaña de Privacidad controla quién puede ver tu información de contacto en ChurchApps:
+## Privacidad
 
-- **Ocultarme del Directorio de Miembros** -- un interruptor que te elimina del [directorio de miembros](../community/member-directory.md) completamente.
-- **Visibilidad de Dirección**, **Visibilidad de Teléfono** y **Visibilidad de Correo Electrónico** -- cada uno tiene su propio menú desplegable, por lo que puedes compartir tu correo electrónico con toda la iglesia mientras mantienes tu dirección más privada, por ejemplo. Las opciones son:
+La sección Privacy muestra quién puede ver tu información de contacto en ChurchApps. Toca **Change** para abrir **Visibility Preferences**:
 
-| Nivel | Quién puede verlo |
+- **Hide me from the member directory**: un interruptor que te quita por completo del [directorio de miembros](../community/member-directory.md).
+- **Address Visibility**, **Phone Visibility** y **Email Visibility**: cada una tiene su propio menú desplegable, así que puedes compartir tu correo con toda la iglesia y mantener tu dirección más privada, por ejemplo. Las opciones son:
+
+| Nivel | Quién lo puede ver |
 |---|---|
-| **Todos** | Visible para cualquiera que pueda ver el directorio. |
-| **Solo Miembros** | Visible para otros miembros de la iglesia conectados. |
-| **Solo Mis Grupos** | Visible solo para miembros de grupos a los que perteneces. |
-| **Solo Líderes de Mis Grupos y Personal** | Visible solo para personal de la iglesia y líderes de grupos a los que perteneces. |
-| **Solo Personal** | Visible solo para el personal de la iglesia. |
+| **Everyone** | Visible para cualquier persona que pueda ver el directorio. |
+| **Members Only** | Visible para otros miembros de la iglesia que hayan iniciado sesión. |
+| **My Groups Only** | Visible solo para los miembros de los grupos a los que perteneces. |
+| **My Group Leaders and Staff** | Visible solo para el personal de la iglesia y los líderes de los grupos a los que perteneces. |
+| **Staff Only** | Visible solo para el personal de la iglesia. |
 
-Cambiar un menú desplegable revela un botón **Guardar** para esa sección. Tu iglesia establece un predeterminado para cada uno de estos tres campos -- consulta [Configuración de Aplicación Móvil](/docs/b1-admin/settings/mobile-app) -- pero sea cual sea tu opción aquí, anula ese predeterminado para tu propio registro.
+Toca **Save** para aplicar tus elecciones. Tu iglesia define un valor predeterminado para cada uno de estos tres campos (consulta [Configuración de la app móvil](/docs/b1-admin/settings/mobile-app)), pero lo que elijas aquí reemplaza ese valor predeterminado en tu propio registro.
 
 :::tip
-Siempre ves tu propia información independientemente de esta configuración, y el personal con permiso de vista de Personas siempre puede verlo también.
+Siempre ves tu propia información sin importar esta configuración, y el personal con permiso para ver People también siempre puede verla.
 :::
 
-## Artículos Relacionados
+## Artículos relacionados
 
-- [La Página Me](./me-page.md) -- Tu panel de control personal
-- [Directorio de Miembros](../community/member-directory.md) -- Navegando otros miembros
-- [Aprobando Cambios de Perfil](/docs/b1-admin/profile/approving-profile-changes) -- Cómo tu iglesia revisa los cambios enviados
+- [La página Me](./me-page.md): tu panel personal
+- [Directorio de miembros](../community/member-directory.md): cómo explorar a otros miembros
+- [Aprobar cambios de perfil](/docs/b1-admin/profile/approving-profile-changes): cómo tu iglesia revisa los cambios enviados

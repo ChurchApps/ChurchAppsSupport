@@ -6,7 +6,7 @@ title: "Event RSVPs"
 
 <div class="article-intro">
 
-Group events can collect RSVPs so leaders know who is coming. On your group's calendar, each upcoming event asks "Will you attend?" — answer with a tap, change your mind anytime, and see at a glance how many others are going.
+Group events can collect RSVPs so leaders know who is coming. On your group's page and calendar, each upcoming event has **Going**, **Maybe**, and **Can't go** buttons — answer with a tap, change your mind anytime, and see at a glance how many others are going.
 
 </div>
 
@@ -20,8 +20,8 @@ Group events can collect RSVPs so leaders know who is coming. On your group's ca
 
 ## Responding to an Event
 
-1. Open your group in the member portal and go to its **Events** tab. In **Month view**, tap a day to see its events, or switch to **List view** to see all of this month's upcoming events at once.
-2. Each upcoming event card shows **Will you attend?** with three buttons: **Going**, **Maybe**, and **Can't go**.
+1. Open your group in the member portal. The group's next event appears in the **Next event** section. For other events, tap **All events**: in **Calendar** view, tap a day to see its events, or switch to **List** to see all of this month's upcoming events at once.
+2. Each upcoming event shows three buttons: **Going**, **Maybe**, and **Can't go**.
 3. Tap your answer. Your choice highlights, and each button shows a live count of how many people have given that response.
 4. Tap your highlighted answer again to clear it, or tap a different button to change your response.
 
@@ -29,7 +29,7 @@ Your RSVP applies to that specific occurrence — for a weekly meeting, you answ
 
 ## For Group Leaders
 
-- **Viewing responses** -- Leaders see a **View responses** button on each event card. It opens the **Responses** sheet listing everyone by answer — Going, Maybe, and Can't go. If nobody has answered yet, it shows "No responses yet."
+- **Viewing responses** -- Leaders see a **View responses** link on each event in the group's calendar (**All events**). It opens the **Responses** sheet listing everyone by answer — Going, Maybe, and Can't go. If nobody has answered yet, it shows "No responses yet."
 - **Turning RSVPs on or off** -- When creating or editing an event, use the **Allow RSVPs** switch. Events with RSVPs turned off show no response buttons. Staff creating events in bulk from B1 Admin have the same option — see [Group Calendar](../../b1-admin/groups/group-calendar#event-rsvps).
 
 :::tip

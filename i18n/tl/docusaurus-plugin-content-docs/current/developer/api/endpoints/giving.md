@@ -1,32 +1,33 @@
 ---
-title: "Giving Endpoints"
+title: "Mga Giving Endpoint"
 ---
 
-# Giving Endpoints
+# Mga Giving Endpoint
 
 <div class="article-intro">
 
-Pinamamahalaan ng Giving module ang mga donasyon, fund, pagproseso ng pagbabayad, subscription, at mga kaugnay na operasyong pinansyal. Sinusuportahan nito ang maraming payment gateway (Stripe, PayPal), hinahawakan ang mga one-time at recurring na donasyon, sinusubaybayan ang mga donation batch, at nagbibigay ng webhook processing para sa mga asynchronous na payment event.
+Pinamamahalaan ng Giving module ang mga donasyon, fund, pagproseso ng bayad, subscription, at iba pang operasyong pinansyal. Sinusuportahan nito ang maraming payment gateway (Stripe, PayPal), humahawak ng one-time at paulit-ulit na donasyon, sumusubaybay sa mga batch ng donasyon, at nagbibigay ng webhook processing para sa mga asynchronous na pangyayari sa pagbabayad.
 
 </div>
 
 **Base path:** `/giving`
 
-## Donations
+## Mga Donasyon
 
 Base path: `/giving/donations`
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.View o sariling personId | Ilista ang lahat ng donasyon. I-filter sa pamamagitan ng `?batchId=` o `?personId=` |
+| GET | `/` | JWT | Donations.View o sariling personId | Ilista ang lahat ng donasyon. I-filter gamit ang `?batchId=` o `?personId=`. Kasama ang `?personId=`, hindi isasama ang mga regalo sa mga non-deductible na fund (gaya sa giving statements) maliban kung magdadagdag ng `&includeNonDeductible=1` ang caller na may Donations.View, na ginagawa ng person record ng B1Admin |
 | GET | `/:id` | JWT | Donations.View | Kunin ang isang donasyon ayon sa ID |
 | GET | `/my` | JWT | — | Kunin ang mga donasyon ng kasalukuyang user |
-| GET | `/summary` | JWT | Donations.ViewSummary | Kunin ang buod ng donasyon. I-filter sa pamamagitan ng `?startDate=&endDate=&type=`. Gamitin ang `type=person` para sa breakdown kada tao |
-| GET | `/testEmail` | Public | — | Magpadala ng test email (development/debugging) |
-| POST | `/` | JWT | Donations.Edit | Lumikha o mag-update ng mga donasyon (batch) |
-| DELETE | `/:id` | JWT | Donations.Edit | Tanggalin ang isang donasyon |
+| GET | `/my/summary?year=` | JWT | — | Kabuuang giving ng kasalukuyang user para sa isang taon (default ang taong ito): `{ year, total, count, currency, isConverted }`, na ang mga kabuuan ay ico-convert sa currency ng simbahan. Sumusuporta sa giving preview sa home page ng member |
+| GET | `/summary` | JWT | Donations.ViewSummary | Kunin ang buod ng donasyon. I-filter gamit ang `?startDate=&endDate=&type=`. Gamitin ang `type=person` para sa breakdown bawat tao |
+| GET | `/testEmail` | Public | — | Magpadala ng test email (para sa development/debugging) |
+| POST | `/` | JWT | Donations.Edit | Gumawa o mag-update ng mga donasyon (batch) |
+| DELETE | `/:id` | JWT | Donations.Edit | Burahin ang isang donasyon |
 
-### Halimbawa: Ilista ang mga Donasyon ayon sa Batch
+### Halimbawa: Ilista ang Mga Donasyon ayon sa Batch
 
 ```
 GET /giving/donations?batchId=abc-123
@@ -64,39 +65,39 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Donation Batches
+## Mga Batch ng Donasyon
 
 Base path: `/giving/donationbatches`
 
-Nag-e-extend ng `GenericCrudController` na may mga CRUD route: `getById`, `getAll`, `post`, `delete`. Inaalis din ng delete operation ang lahat ng donasyon sa loob ng batch.
+Nagpapalawig sa `GenericCrudController` na may mga CRUD route: `getById`, `getAll`, `post`, `delete`. Ang operasyong delete ay tinatanggal din ang lahat ng donasyon sa loob ng batch.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.ViewSummary | Ilista ang lahat ng donation batch |
-| GET | `/:id` | JWT | Donations.ViewSummary | Kunin ang isang donation batch ayon sa ID |
-| POST | `/` | JWT | Donations.Edit | Lumikha o mag-update ng mga donation batch |
-| DELETE | `/:id` | JWT | Donations.Edit | Tanggalin ang isang batch at lahat ng donasyon nito |
+| GET | `/` | JWT | Donations.ViewSummary | Ilista ang lahat ng batch ng donasyon |
+| GET | `/:id` | JWT | Donations.ViewSummary | Kunin ang isang batch ng donasyon ayon sa ID |
+| POST | `/` | JWT | Donations.Edit | Gumawa o mag-update ng mga batch ng donasyon |
+| DELETE | `/:id` | JWT | Donations.Edit | Burahin ang isang batch at lahat ng donasyon nito |
 
 ## Donate
 
 Base path: `/giving/donate`
 
-Hinahawakan ang public-facing na daloy ng donasyon kabilang ang mga charge, subscription, webhook, at pagkalkula ng fee. Walang naka-enable na base CRUD route; custom ang lahat ng endpoint.
+Hinahawakan ang public-facing na daloy ng donasyon kabilang ang mga charge, subscription, webhook, at kalkulasyon ng bayarin. Walang naka-enable na base CRUD route; lahat ng endpoint ay custom.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/gateways/:churchId` | Public | — | Kunin ang mga available na payment gateway para sa isang simbahan (public key lamang) |
-| POST | `/client-token` | JWT | — | Bumuo ng client token para sa pag-initialize ng gateway |
-| POST | `/create-order` | JWT | — | Lumikha ng payment order (PayPal-style na checkout) |
-| POST | `/charge` | JWT | — | Iproseso ang isang one-time na donation charge |
-| POST | `/subscribe` | JWT | — | Lumikha ng recurring donation subscription |
+| POST | `/client-token` | JWT | — | Gumawa ng client token para sa initialization ng gateway |
+| POST | `/create-order` | JWT | — | Gumawa ng payment order (checkout na tulad ng PayPal) |
+| POST | `/charge` | JWT | — | Iproseso ang isang one-time na singil ng donasyon |
+| POST | `/subscribe` | JWT | — | Gumawa ng recurring donation subscription |
 | POST | `/log` | Public | — | I-log ang isang donasyon. Body: `{ donation, fundData }` |
-| POST | `/webhook/:provider` | Public | — | Tumanggap ng mga payment webhook event (Stripe, PayPal). Kailangan ang `?churchId=` |
+| POST | `/webhook/:provider` | Public | — | Tanggapin ang mga webhook event ng pagbabayad (Stripe, PayPal). Kailangan ang `?churchId=` |
 | POST | `/replay-stripe-events` | JWT | Donations.Edit | I-replay ang mga Stripe event para sa isang saklaw ng petsa. Body: `{ startDate, endDate, dryRun }` |
-| POST | `/fee` | Public | — | Kalkulahin ang mga transaction fee. Body: `{ type, provider, gatewayId, amount, currency }`. Kailangan ang `?churchId=` |
+| POST | `/fee` | Public | — | Kalkulahin ang mga bayarin sa transaksyon. Body: `{ type, provider, gatewayId, amount, currency }`. Kailangan ang `?churchId=` |
 | POST | `/captcha-verify` | Public | — | I-verify ang reCAPTCHA token. Body: `{ token }` |
 
-### Halimbawa: Iproseso ang isang Donation Charge
+### Halimbawa: Iproseso ang Singil ng Donasyon
 
 ```
 POST /giving/donate/charge
@@ -120,7 +121,7 @@ Authorization: Bearer <token>
 }
 ```
 
-### Halimbawa: Lumikha ng Recurring Subscription
+### Halimbawa: Gumawa ng Recurring Subscription
 
 ```
 POST /giving/donate/subscribe
@@ -146,52 +147,52 @@ Authorization: Bearer <token>
 }
 ```
 
-## Funds
+## Mga Fund
 
 Base path: `/giving/funds`
 
-Nag-e-extend ng `GenericCrudController` na may mga CRUD route: `getById`, `getAll`, `post`, `delete`. `null` ang `view` permission (walang kailangang permission para tingnan ang mga fund).
+Nagpapalawig sa `GenericCrudController` na may mga CRUD route: `getById`, `getAll`, `post`, `delete`. Ang `view` permission ay `null` (walang kailangang permission para tingnan ang mga fund).
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | Ilista ang lahat ng fund |
 | GET | `/:id` | JWT | — | Kunin ang isang fund ayon sa ID |
-| GET | `/churchId/:churchId` | Public | — | Kunin ang lahat ng fund para sa isang partikular na simbahan (public) |
-| GET | `/public/:churchId/:fundId/total?startDate=&endDate=` | Public | — | Kunin ang kabuuang donasyon ng isang fund: `{ fundId, totalAmount, donationCount }`. Nagpapatakbo sa `campaignProgress` element ng website builder |
-| POST | `/` | JWT | Donations.Edit | Lumikha o mag-update ng mga fund |
-| DELETE | `/:id` | JWT | Donations.Edit | Tanggalin ang isang fund |
+| GET | `/churchId/:churchId` | Public | — | Kunin ang lahat ng fund ng isang partikular na simbahan (public) |
+| GET | `/public/:churchId/:fundId/total?startDate=&endDate=` | Public | — | Kunin ang kabuuan ng donasyon ng isang fund: `{ fundId, totalAmount, donationCount }`. Ginagamit ng `campaignProgress` element ng website builder |
+| POST | `/` | JWT | Donations.Edit | Gumawa o mag-update ng mga fund |
+| DELETE | `/:id` | JWT | Donations.Edit | Burahin ang isang fund |
 
-## Fund Donations
+## Mga Donasyon sa Fund
 
 Base path: `/giving/funddonations`
 
-Sinusubaybayan kung paano naaalokado ang mga indibidwal na donasyon sa mga fund. Walang naka-enable na base CRUD route; custom ang lahat ng endpoint.
+Sinusubaybayan kung paano inilalaan ang mga indibidwal na donasyon sa mga fund. Walang naka-enable na base CRUD route; lahat ng endpoint ay custom.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.View | Ilista ang mga fund donation. I-filter sa pamamagitan ng `?donationId=`, `?personId=`, `?fundId=`, o `?fundName=`. Opsyonal na idagdag ang `?startDate=&endDate=` para sa pag-filter ayon sa petsa |
-| GET | `/:id` | JWT | Donations.View | Kunin ang isang fund donation ayon sa ID |
-| GET | `/my` | JWT | — | Kunin ang mga fund donation ng kasalukuyang user |
-| POST | `/` | JWT | Donations.Edit | Lumikha o mag-update ng mga fund donation (batch) |
-| DELETE | `/:id` | JWT | Donations.Edit | Tanggalin ang isang fund donation |
+| GET | `/` | JWT | Donations.View | Ilista ang mga donasyon sa fund. I-filter gamit ang `?donationId=`, `?personId=`, `?fundId=`, o `?fundName=`. Maaaring idagdag ang `?startDate=&endDate=` para sa pag-filter ayon sa petsa |
+| GET | `/:id` | JWT | Donations.View | Kunin ang isang donasyon sa fund ayon sa ID |
+| GET | `/my` | JWT | — | Kunin ang mga donasyon sa fund ng kasalukuyang user |
+| POST | `/` | JWT | Donations.Edit | Gumawa o mag-update ng mga donasyon sa fund (batch) |
+| DELETE | `/:id` | JWT | Donations.Edit | Burahin ang isang donasyon sa fund |
 
-## Gateways
+## Mga Gateway
 
 Base path: `/giving/gateways`
 
-Pinamamahalaan ang mga konpigurasyon ng payment gateway (Stripe, PayPal, atbp.). Walang naka-enable na base CRUD route; custom ang lahat ng endpoint. Naka-encrypt at nakaimbak nang secure ang mga gateway secret.
+Pinamamahalaan ang mga configuration ng payment gateway (Stripe, PayPal, atbp.). Walang naka-enable na base CRUD route; lahat ng endpoint ay custom. Naka-encrypt sa imbakan ang mga secret ng gateway.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Ilista ang lahat ng gateway para sa simbahan |
+| GET | `/` | JWT | — | Ilista ang lahat ng gateway ng simbahan |
 | GET | `/:id` | JWT | Settings.Edit | Kunin ang isang gateway ayon sa ID |
-| GET | `/churchId/:churchId` | Public | — | Kunin ang mga gateway para sa isang simbahan (public key lamang) |
-| GET | `/configured/:churchId` | Public | — | Suriin kung may naka-configure nang payment gateway ang isang simbahan |
-| POST | `/` | JWT | Settings.Edit | Lumikha o mag-update ng mga gateway (nag-e-encrypt ng mga key, nagpo-provision ng mga webhook at produkto) |
+| GET | `/churchId/:churchId` | Public | — | Kunin ang mga gateway ng isang simbahan (public key lamang) |
+| GET | `/configured/:churchId` | Public | — | Suriin kung may naka-configure na payment gateway ang isang simbahan |
+| POST | `/` | JWT | Settings.Edit | Gumawa o mag-update ng mga gateway (nag-e-encrypt ng mga key, nagpo-provision ng mga webhook at product) |
 | PATCH | `/:id` | JWT | Settings.Edit | Bahagyang i-update ang isang gateway |
-| DELETE | `/:id` | JWT | Settings.Edit | Tanggalin ang isang gateway (inaalis din ang mga webhook nito) |
+| DELETE | `/:id` | JWT | Settings.Edit | Burahin ang isang gateway (inaalis din ang mga webhook nito) |
 
-### Halimbawa: Suriin ang Konpigurasyon ng Gateway
+### Halimbawa: Suriin ang Configuration ng Gateway
 
 ```
 GET /giving/gateways/configured/church-123
@@ -203,79 +204,79 @@ GET /giving/gateways/configured/church-123
 }
 ```
 
-## Customers
+## Mga Customer
 
 Base path: `/giving/customers`
 
-Nag-e-extend ng `GenericCrudController` na may mga CRUD route: `getAll`, `delete`. Nag-uugnay ng mga tao sa kanilang mga customer record sa payment gateway.
+Nagpapalawig sa `GenericCrudController` na may mga CRUD route: `getAll`, `delete`. Ikinakabit ang mga tao sa kanilang customer record sa payment gateway.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | Donations.ViewSummary | Ilista ang lahat ng customer |
 | GET | `/:id` | JWT | Donations.ViewSummary o sariling record | Kunin ang isang customer ayon sa ID |
-| GET | `/:id/subscriptions` | JWT | Donations.ViewSummary o sariling record | Kunin ang mga gateway subscription para sa isang customer |
-| DELETE | `/:id` | JWT | Donations.Edit | Tanggalin ang isang customer |
+| GET | `/:id/subscriptions` | JWT | Donations.ViewSummary o sariling record | Kunin ang mga subscription sa gateway ng isang customer |
+| DELETE | `/:id` | JWT | Donations.Edit | Burahin ang isang customer |
 
-## Subscriptions
+## Mga Subscription
 
 Base path: `/giving/subscriptions`
 
-Pinamamahalaan ang mga recurring donation subscription. Walang naka-enable na base CRUD route; custom ang lahat ng endpoint.
+Pinamamahalaan ang mga recurring donation subscription. Walang naka-enable na base CRUD route; lahat ng endpoint ay custom.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | Donations.ViewSummary | Ilista ang lahat ng subscription |
 | GET | `/:id` | JWT | Donations.ViewSummary | Kunin ang isang subscription ayon sa ID |
 | POST | `/` | JWT | Donations.Edit o sariling subscription | I-update ang mga subscription sa payment gateway |
-| DELETE | `/:id` | JWT | Donations.Edit o sariling subscription | Kanselahin ang isang subscription at alisin ito sa database. Body: `{ provider, reason }` |
+| DELETE | `/:id` | JWT | Donations.Edit o sariling subscription | Kanselahin ang isang subscription at alisin sa database. Body: `{ provider, reason }` |
 
-## Subscription Funds
+## Mga Fund ng Subscription
 
 Base path: `/giving/subscriptionfunds`
 
-Sinusubaybayan ang mga alokasyon ng fund para sa mga recurring subscription. Walang naka-enable na base CRUD route; custom ang lahat ng endpoint.
+Sinusubaybayan ang mga alokasyon ng fund para sa mga recurring subscription. Walang naka-enable na base CRUD route; lahat ng endpoint ay custom.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.View o sariling subscription | Ilista ang mga subscription fund. I-filter sa pamamagitan ng `?subscriptionId=` |
-| GET | `/:id` | JWT | Donations.ViewSummary | Kunin ang isang subscription fund ayon sa ID |
-| DELETE | `/:id` | JWT | Donations.Edit | Tanggalin ang isang subscription fund |
-| DELETE | `/subscription/:id` | JWT | Donations.Edit o sariling subscription | Tanggalin ang lahat ng fund para sa isang subscription |
+| GET | `/` | JWT | Donations.View o sariling subscription | Ilista ang mga fund ng subscription. I-filter gamit ang `?subscriptionId=` |
+| GET | `/:id` | JWT | Donations.ViewSummary | Kunin ang isang fund ng subscription ayon sa ID |
+| DELETE | `/:id` | JWT | Donations.Edit | Burahin ang isang fund ng subscription |
+| DELETE | `/subscription/:id` | JWT | Donations.Edit o sariling subscription | Burahin ang lahat ng fund ng isang subscription |
 
-## Payment Methods
+## Mga Paraan ng Pagbabayad
 
 Base path: `/giving/paymentmethods`
 
-Pinamamahalaan ang mga naka-store na paraan ng pagbabayad (card, bank account) sa pamamagitan ng mga API ng payment gateway. Walang naka-enable na base CRUD route; custom ang lahat ng endpoint.
+Pinamamahalaan ang mga naka-imbak na paraan ng pagbabayad (card, bank account) sa pamamagitan ng API ng payment gateway. Walang naka-enable na base CRUD route; lahat ng endpoint ay custom.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/personid/:id` | JWT | Donations.View o sariling personId | Kunin ang lahat ng naka-store na paraan ng pagbabayad para sa isang tao (mga card, bank account) |
-| POST | `/addcard` | JWT | — | I-attach ang isang card na paraan ng pagbabayad. Body: `{ id, personId, customerId, email, name, churchId, provider }` |
-| POST | `/updatecard` | JWT | Donations.Edit o sariling personId | I-update ang mga detalye ng card. Body: `{ personId, paymentMethodId, cardData, provider }` |
-| POST | `/ach-setup-intent` | JWT | Donations.Edit o sariling personId | Lumikha ng Stripe ACH SetupIntent para sa pag-link ng bank account. Body: `{ personId, customerId, email, name, churchId }` |
-| POST | `/ach-setup-intent-anon` | Public | — | Lumikha ng anonymous na ACH SetupIntent para sa mga donasyon ng bisita. Body: `{ email, name, churchId, gatewayId }` |
-| POST | `/addbankaccount` | JWT | Donations.Edit o sariling personId | Magdagdag ng bank account sa pamamagitan ng token (deprecated na; gamitin ang `ach-setup-intent`). Body: `{ id, personId, customerId, email, name }` |
-| POST | `/updatebank` | JWT | Donations.Edit o sariling personId | I-update ang mga detalye ng bank account. Body: `{ paymentMethodId, personId, bankData, customerId }` |
-| POST | `/verifybank` | JWT | Donations.Edit o sariling customer | I-verify ang isang bank account gamit ang mga micro-deposit. Body: `{ paymentMethodId, customerId, amountData }` |
-| DELETE | `/:id/:customerid` | JWT | Donations.Edit o sariling customer | Tanggalin ang isang paraan ng pagbabayad (card o bank account) |
+| GET | `/personid/:id` | JWT | Donations.View o sariling personId | Kunin ang lahat ng naka-imbak na paraan ng pagbabayad ng isang tao (card, bank account) |
+| POST | `/addcard` | JWT | — | Ikabit ang isang card bilang paraan ng pagbabayad. Body: `{ id, personId, customerId, email, name, churchId, provider }` |
+| POST | `/updatecard` | JWT | Donations.Edit o sariling personId | I-update ang detalye ng card. Body: `{ personId, paymentMethodId, cardData, provider }` |
+| POST | `/ach-setup-intent` | JWT | Donations.Edit o sariling personId | Gumawa ng Stripe ACH SetupIntent para sa pagkakabit ng bank account. Body: `{ personId, customerId, email, name, churchId }` |
+| POST | `/ach-setup-intent-anon` | Public | — | Gumawa ng anonymous na ACH SetupIntent para sa mga donasyon ng bisita. Body: `{ email, name, churchId, gatewayId }` |
+| POST | `/addbankaccount` | JWT | Donations.Edit o sariling personId | Magdagdag ng bank account sa pamamagitan ng token (deprecated; gamitin ang `ach-setup-intent`). Body: `{ id, personId, customerId, email, name }` |
+| POST | `/updatebank` | JWT | Donations.Edit o sariling personId | I-update ang detalye ng bank account. Body: `{ paymentMethodId, personId, bankData, customerId }` |
+| POST | `/verifybank` | JWT | Donations.Edit o sariling customer | I-verify ang isang bank account gamit ang micro-deposits. Body: `{ paymentMethodId, customerId, amountData }` |
+| DELETE | `/:id/:customerid` | JWT | Donations.Edit o sariling customer | Burahin ang isang paraan ng pagbabayad (card o bank account) |
 
 ## Event Log
 
 Base path: `/giving/eventLog`
 
-Nag-e-extend ng `GenericCrudController` na may mga CRUD route: `getById`, `getAll`, `post`, `delete`. Sinusubaybayan ang mga webhook event ng payment gateway para sa auditing at deduplication.
+Nagpapalawig sa `GenericCrudController` na may mga CRUD route: `getById`, `getAll`, `post`, `delete`. Sinusubaybayan ang mga webhook event ng payment gateway para sa auditing at deduplication.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | Donations.ViewSummary | Ilista ang lahat ng event log |
 | GET | `/:id` | JWT | Donations.ViewSummary | Kunin ang isang event log ayon sa ID |
-| GET | `/type/:type` | JWT | Donations.ViewSummary | Kunin ang mga event log na na-filter ayon sa uri ng event |
-| POST | `/` | JWT | Donations.Edit | Lumikha o mag-update ng mga event log |
-| DELETE | `/:id` | JWT | Donations.Edit | Tanggalin ang isang event log |
+| GET | `/type/:type` | JWT | Donations.ViewSummary | Kunin ang mga event log na sinala ayon sa uri ng event |
+| POST | `/` | JWT | Donations.Edit | Gumawa o mag-update ng mga event log |
+| DELETE | `/:id` | JWT | Donations.Edit | Burahin ang isang event log |
 
 ## Mga Kaugnay na Pahina
 
-- [Membership Endpoints](./membership) — Mga tao, simbahan, grupo, tungkulin, at permission
-- [Authentication & Permissions](./authentication) — Daloy ng pag-login, JWT, OAuth, permission model
-- [Module Structure](../module-structure) — Mga pattern ng pag-oorganisa ng code
+- [Membership Endpoints](./membership) -- Mga tao, simbahan, group, role, at permission
+- [Authentication & Permissions](./authentication) -- Daloy ng login, JWT, OAuth, modelo ng permission
+- [Module Structure](../module-structure) -- Mga pattern ng organisasyon ng code

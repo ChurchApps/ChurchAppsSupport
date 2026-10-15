@@ -45,7 +45,7 @@ Need a paper copy to hand out -- for a visitor card at the welcome desk, or a fo
    - **Phone Number** — For phone input
    - **Multiple Choice** — For selecting from predefined options
    - **Payment** — For collecting payments
-4. Enter a **Title** and optional **Description** for the question.
+4. Enter a **Title** and optional **Description** for the question. The description appears under the question when people fill out the form, so use it for hints like "Include any allergies we should know about."
 5. Check **Require an answer** if the field is mandatory.
 6. Click **Save**.
 7. Repeat to add more questions.

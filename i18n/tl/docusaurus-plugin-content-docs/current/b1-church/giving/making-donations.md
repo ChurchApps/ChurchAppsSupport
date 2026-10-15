@@ -1,68 +1,73 @@
 ---
-title: "Paggawa ng Donation"
+title: "Paggawa ng Donasyon"
 ---
 
-# Paggawa ng Donation
+# Paggawa ng Donasyon
 
 <div class="article-intro">
 
-May dalawang paraan upang gumawa ng donation sa pamamagian ng site ng iyong simbahan B1.church: ang pampubliko na pahina ng donation (hindi kinakailangan ang login) at ang pahina ng donation ng miyembro (kinakailangan ang login). Ang parehong gumagamit ay isang secure donation form na pinapagana ng Stripe.
+May dalawang paraan upang gumawa ng donasyon sa pamamagitan ng B1.church site ng iyong simbahan: ang pampublikong donation page (hindi kailangan ng login) at ang member donation page (kailangan ng login). Parehong gumagamit ng ligtas na donation form na pinapatakbo ng Stripe.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Para sa mga pampubliko na donation, walang account na kinakailangan -- bisitahin lamang ang **Magbigay** na pahina ng iyong simbahan.
-- Para sa mga donation ng miyembro na may history tracking at nakaligtas na mga paraan ng pagbabayad, [mag-log in](../getting-started/logging-in.md) sa iyong account nang una.
+- Para sa pampublikong donasyon, hindi kailangan ng account -- bisitahin lamang ang **Donate** page ng iyong simbahan.
+- Para sa donasyon ng miyembro na may kasaysayan ng pagbibigay at naka-save na payment method, [mag-log in](../getting-started/logging-in.md) muna sa iyong account.
 
 </div>
 
-## Pampubliko na Pahina ng Donation (Walang Login na Kinakailangan)
+## Pampublikong Donation Page (Hindi Kailangan ng Login)
 
-Ang sinuman ay maaaring gumawa ng donation nang hindi lumilikha ng isang account:
+Sinuman ay maaaring gumawa ng donasyon nang walang paggawa ng account:
 
-1. Mag-navigate sa **Magbibigay** na pahina ng iyong simbahan.
-2. Ang anyo ng donation ay ipinakita sa kaliwang bahagi ng pahina. Pumili ng **pondo** na nais mong magbigay.
-3. Ilagay ang iyong mga detalye ng pagbabayad at ang halaga na nais mong ibigay.
-4. Ipadala ang anyo upang kumpletuhin ang iyong donation.
+1. Pumunta sa **Donate** page ng iyong simbahan.
+2. Ang donation form ay ipinapakita sa kaliwang bahagi ng pahina. Piliin ang **fund** na nais mong pagbigyan.
+3. Ilagay ang iyong mga detalye sa pagbabayad at ang halagang nais mong ibigay.
+4. Isumite ang form upang makumpleto ang iyong donasyon.
 
-Sa kanang bahagi ng pahina, makikita mo ang isang link sa **Mga Tagubilin para sa ACH Payment** kung mas gugustong magbigay sa pamamagian ng bank transfer. Mayroon ding isang knob ng **Mag-log in** kung nais mong mag-sign in upang ma-access ang karagdagang mga katangian tulad ng kasaysayan ng donation.
+Sa kanang bahagi ng pahina, makikita mo ang link na **Instructions for ACH Payment** kung mas gusto mong magbigay sa pamamagitan ng bank transfer. Mayroon ding button na **Login** kung nais mong mag-sign in upang ma-access ang mga karagdagang feature gaya ng kasaysayan ng donasyon.
 
 :::tip
-Kung ikaw ay naka-log in na kapag bumibisita sa pampubliko na pahina ng donation, ikaw ay awtomatikong ire-redirect sa pahina ng donation ng miyembro kung saan mayroon kang access sa iyong buong kasaysayan ng pagbibigay at nakaligtas na mga paraan ng pagbabayad.
+Kung naka-log in ka na kapag binisita mo ang pampublikong donate page, awtomatiko kang ire-redirect sa member donation page kung saan may access ka sa buo mong kasaysayan ng pagbibigay at mga naka-save na payment method.
 :::
 
-## Pahina ng Donation ng Miyembro (Naka-log In)
+## Member Donation Page (Naka-log In)
 
-Kapag ikaw ay naka-log in, ang karanasan ng donation ay kinabibilangan ng mga karagdagang katangian, organisado sa apat na tab:
+Kapag naka-log in ka, ang pahinang **Giving** sa member portal ay nagpapakita ng button na **Give** at button na **Print Statement** sa itaas, kasunod ng mga seksyong ito:
 
-- **Pangkalahatang Pagtingin** -- Ang iyong taon-hanggang-ngayon na kabuuan ng pagbibigay, isang card ng pag-unlad ng kampanya (kung ang iyong simbahan ay may aktibong kampanya), at ang iyong pinakabagong regalo na may isang one-click **Ulitin** na knob.
-- **Magbibigay** -- Ang anyo ng donation.
-- **Pamahalaan** -- Ang iyong mga nakaligtas na paraan ng pagbabayad (magdagdag, alisin, o magtakda ng isang default na card o account sa bangko).
-- **Kasaysayan** -- Ang iyong nakaraang mga donation, pagbibigay ng mga kabuuan sa pamamagian ng panahon, mga pang-regular na regalo, at pag-export ng pahayag. Tingnan ang [Kasaysayan ng Donation](./donation-history.md) para sa mga detalye.
+- **This year** (may pamagat na kasalukuyang taon) -- Ang kabuuang ibinigay mo ngayong taon at bilang ng mga regalo, kasama ang link na **All history**. Tingnan ang [Donation History](./donation-history.md) para sa mga detalye.
+- **Recurring** -- Ang iyong mga nakaiskedyul na regalo, kasama ang link na **Manage**.
+- **Recent Activity** -- Ang iyong huling tatlong regalo, kasama ang link na **Repeat last gift** na nagbubukas ng donation form.
+- **Payment methods** -- Ang iyong naka-save na card at bank account, kasama ang link na **Manage** upang magdagdag, magtanggal, o magtakda ng default.
+- Isang card ng progreso ng campaign, kung may aktibong campaign ang iyong simbahan.
 
 Upang magbigay:
 
-1. Buksan ang pahina ng pagbibigay mula sa tab ng **Magbibigay** ng iyong simbahan o mula sa **Pagbibigay** sa Mga Shortcut sa iyong [Me page](../getting-started/me-page.md). Kung ikaw ay nakarating sa **Pangkalahatang Pagtingin**, pumili ng tab ng **Magbibigay**.
-2. Pumili ng **pondo** na nais mong magbigay at ilagay ang iyong halaga ng donation.
-3. Pumili ng isang umiiral na nakaligtas na paraan ng pagbabayad o ilagay ang mga bagong detalye ng pagbabayad.
-4. Ipadala ang anyo upang kumpletuhin ang iyong donation.
+1. Buksan ang giving page mula sa tab na **Donate** ng iyong simbahan, mula sa button na **Give** sa seksyong **Giving** ng iyong [Home dashboard](../getting-started/navigating.md#home), o mula sa **History** sa seksyong **Giving** ng iyong [Me page](../getting-started/me-page.md). Sa Giving page, i-tap ang **Give** upang buksan ang donation form.
+2. Piliin ang **fund** na nais mong pagbigyan at ilagay ang halaga ng iyong donasyon.
+3. Pumili ng umiiral na naka-save na payment method o maglagay ng bagong detalye sa pagbabayad.
+4. Isumite ang form upang makumpleto ang iyong donasyon.
 
-Pagkatapos na ma-process ang iyong donation, isang mensaheng tagumpay ay lalitaw at ang iyong donation ay makikita sa iyong [kasaysayan ng donation](./donation-history.md).
+Pagkatapos maproseso ang iyong donasyon, lilitaw ang mensahe ng tagumpay at lalabas ang iyong donasyon sa iyong [donation history](./donation-history.md).
 
 :::info
-Kung ang mga donation na ibinigay mo ay naitala sa higit sa isang pera, ang iyong Pangkalahatang Pagtingin na taon-hanggang-ngayon na kabuuan at ang Kasaysayan na panahon ay na-convert sa pera ng iyong simbahan, na may isang **Na-convert sa kasalukuyang rate ng palitan** na nota sa ibaba. Ang mga indibidwal na donation sa iyong kasaysayan ay pa rin na nagpapakita ng kanilang orihinal na pera.
+Kung ang mga donasyong ibinigay mo ay naitala sa higit sa isang currency, ico-convert sa currency ng iyong simbahan ang kabuuan mo ngayong taon at ang kabuuan sa History, na may tala na **Converted at current exchange rates** sa ilalim. Ipinapakita pa rin ng mga indibidwal na donasyon sa iyong kasaysayan ang kanilang orihinal na currency.
 :::
 
 ## Mga Paraan ng Pagbabayad
 
-Ang mga donation ay napoproseso nang ligtas sa pamamagian ng **Stripe**. Maaari kang magbayad gamit ang isang credit card, debit card, o mag-set up ng isang ACH bank payment. Kapag ikaw ay naka-log in, ang iyong mga paraan ng pagbabayad ay maaaring i-save para sa hinaharap na paggamit, na ginagawang mas mabilis na magbigay sa susunod na pagkakataon.
+Ligtas na pinoproseso ang mga donasyon sa pamamagitan ng **Stripe**. Maaari kang magbayad gamit ang credit card, debit card, o mag-set up ng ACH bank payment. Kapag naka-log in ka, maaaring i-save ang iyong mga payment method para sa susunod na gamit, kaya mas mabilis ang pagbibigay sa susunod.
 
-:::warning
-Kung ang iyong donation ay hindi sumasabog, double-check ang iyong mga detalye ng pagbabayad at subukan muli. Kung ang isyu ay patuloy na tumatagal, makipag-ugnayan sa iyong opisina ng simbahan para sa tulong.
+:::info Pagbibigay gamit ang bank account nang hindi nag-sa-sign in
+Kung nagbibigay ka bilang bisita (nang hindi nag-log in) gamit ang bank account, kailangang agad na ma-verify ang account sa pamamagitan ng pag-sign in sa iyong bangko. Kung hindi ito maaaring ma-verify, makikita mo ang "This bank account couldn't be verified instantly. Please give by card, or sign in and add the bank account under your giving profile." Ang mga bank account na nangangailangan ng ilang araw na verification ay maaari lamang idagdag pagkatapos mong mag-sign in.
 :::
 
-## Susunod na Mga Hakbang
+:::warning
+Kung hindi matuloy ang iyong donasyon, i-double check ang iyong mga detalye sa pagbabayad at subukang muli. Kung magpapatuloy ang problema, makipag-ugnayan sa opisina ng iyong simbahan para sa tulong.
+:::
 
-- [Kasaysayan ng Donation](./donation-history.md) -- Tingnan ang iyong nakaraang mga donation at i-print ang mga pahayag ng pagbibigay
+## Mga Susunod na Hakbang
+
+- [Donation History](./donation-history.md) -- Tingnan ang iyong mga nakaraang donasyon at mag-print ng giving statement

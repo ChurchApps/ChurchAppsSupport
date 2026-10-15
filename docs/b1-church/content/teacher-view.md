@@ -19,10 +19,9 @@ The Teacher View provides an expanded, full-screen interface for viewing lesson 
 
 To access the expanded teacher view for a lesson:
 
-1. Navigate to the **Plans** section on B1.church
+1. Open **Plans** in the B1.church member portal
 2. Open the plan that contains the lesson you want to teach
-3. Open the **Service Order** tab
-4. Click the **Teach** button
+3. Click the **Teach** button at the top of the plan page
 
 The lesson will open in a full-screen interface optimized for teaching.
 
@@ -32,21 +31,21 @@ Teacher View is especially useful when projecting lesson content on a screen or 
 
 ## Teacher View Features
 
-### Tabbed Navigation
+### Section Navigation
 
-The teacher view organizes lesson content into sections using tabs across the top:
+The teacher view organizes lesson content into sections:
 
-- Each major section of the lesson appears as a separate tab
-- Click any tab to jump directly to that section
-- The active section is highlighted in the tab bar
-- Tabs make it easy to skip around to different parts of the lesson
+- Each major section of the lesson appears as its own titled block
+- Click **Sections** at the top to open the list of sections, then pick one to jump directly to it
+- The heading shows which section you are in, such as "Section 2 of 5"
+- The section list makes it easy to skip around to different parts of the lesson
 
 ### Scrollable Content
 
 The main content area displays the full lesson materials:
 
 - Scroll through the lesson naturally
-- As you scroll, the active tab automatically updates to match the section you're viewing
+- As you scroll, the heading automatically updates to match the section you're viewing
 - All formatted text, images, and instructions are displayed clearly
 
 ### Media Playback
@@ -78,7 +77,7 @@ If the lesson includes downloadable files (activity sheets, coloring pages, etc.
 ### During Class
 
 1. Keep Teacher View open on your device or project it on a screen
-2. Use the tabs to jump between sections as you progress through the lesson
+2. Use **Sections** to jump between sections as you progress through the lesson
 3. Play videos or show images at the appropriate times
 4. Scroll through instructions as needed without losing your place
 
@@ -112,7 +111,7 @@ Teacher View works on tablets and mobile devices:
 | Feature | Regular View | Teacher View |
 |---------|--------------|--------------|
 | **Layout** | Compact, inline with plan | Full-screen, dedicated view |
-| **Navigation** | Scroll only | Tabs + scroll with auto-highlighting |
+| **Navigation** | Scroll only | Section list + scroll with a current-section heading |
 | **Media** | Embedded in page | Popup player for focused viewing |
 | **Screen space** | Shows other plan items | Maximized for lesson content |
 | **Best for** | Browsing and planning | Teaching and presenting |
@@ -120,7 +119,7 @@ Teacher View works on tablets and mobile devices:
 ## Best Practices
 
 - **Prep in advance** -- Review lessons in Teacher View before class to familiarize yourself with the layout
-- **Bookmark sections** -- Note which tabs contain key activities or discussions
+- **Bookmark sections** -- Note which sections contain key activities or discussions
 - **Test media** -- Ensure videos and images load properly before class time
 - **Download resources early** -- Don't wait until class time to download printables
 - **Use a larger screen** -- Project or use a tablet for the best teaching experience

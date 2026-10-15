@@ -14,13 +14,13 @@ If your church tracks bookable rooms and resources, you can request an event —
 <h4>Before You Begin</h4>
 
 - You must be [logged in](../getting-started/logging-in.md) to the member portal
-- Your church must have rooms or resources set up in B1 Admin — the request shortcuts only appear when it does
+- Your church must have rooms or resources set up in B1 Admin — the request links only appear when it does
 
 </div>
 
 ## Submitting a Request
 
-1. Open the **Me** page in the member portal and tap **Request an Event** under Shortcuts.
+1. Open the **Me** page in the member portal and tap **Request an Event** in the **Requests & registrations** section.
 2. Fill in the event basics: **Event title**, an optional **Description**, the **Start** and **End** times (or **All day**), and whether it **Repeats**.
 3. Pick the **Rooms** and **Resources** you need. For resources you can set a **Qty**.
 4. Watch for conflict warnings — if your time overlaps an existing booking for a room or resource, you'll see *"This time conflicts with an existing booking."* You can adjust your time or choose something else.
@@ -47,6 +47,6 @@ Requests are reviewed by church staff on the B1 Admin [Approvals page](../../b1-
 
 ## Related Articles
 
-- [The Me Page](../getting-started/me-page) -- Where the request shortcuts live
+- [The Me Page](../getting-started/me-page) -- Where the request links live
 - [Calendar Approvals (B1 Admin)](../../b1-admin/calendars/approvals) -- How staff review requests
 - [Rooms & Resources (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- How churches configure bookable spaces

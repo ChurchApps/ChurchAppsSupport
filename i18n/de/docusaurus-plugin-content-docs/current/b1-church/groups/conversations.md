@@ -1,81 +1,83 @@
 ---
-title: "Gruppenkonversationen"
+title: "Gruppengespräche"
 ---
 
-# Gruppenkonversationen
+# Gruppengespräche
 
 <div class="article-intro">
 
-Die Registerkarte „Nachrichten" auf Ihrer Gruppenseite ist ein Platz, an dem Gruppenmitglieder Nachrichten posten und miteinander interagieren können. Nutzen Sie Konversationen, um Themen zu diskutieren, Aktualisierungen zu teilen und mit Ihrer Gruppe zwischen Treffen verbunden zu bleiben.
+Der Gruppenchat ist ein Raum, in dem Gruppenmitglieder Nachrichten veröffentlichen und miteinander in Austausch treten können. Nutzen Sie die Gespräche, um Themen zu besprechen, Neuigkeiten zu teilen und zwischen den Treffen mit Ihrer Gruppe in Verbindung zu bleiben.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie Beginnen</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Sie müssen bei Ihrem B1.church-Konto [angemeldet](../getting-started/logging-in.md) sein.
-- Sie müssen Mitglied der Gruppe sein, um auf die Registerkarte „Nachrichten" zuzugreifen. Siehe [Gruppendetails](./group-details.md), um einer Gruppe beizutreten.
+- Sie müssen [in Ihrem B1.church-Konto angemeldet](../getting-started/logging-in.md) sein.
+- Sie müssen Mitglied der Gruppe sein, um den Gruppenchat zu nutzen. Wie Sie einer Gruppe beitreten, erfahren Sie unter [Gruppendetails](./group-details.md).
 
 </div>
 
-## Zugriff auf Konversationen
+## Auf Gespräche zugreifen
 
-1. Navigieren Sie zur Gruppenseite mit Details, indem Sie auf eine Gruppe auf der [Gruppenseite](./browsing-groups.md) klicken.
+1. Öffnen Sie die Detailseite einer Gruppe, indem Sie auf der [Gruppenseite](./browsing-groups.md) auf eine Gruppe tippen.
 2. Stellen Sie sicher, dass Sie angemeldet sind.
-3. Klicken Sie auf die Registerkarte **Nachrichten** in der Seitenleiste.
+3. Tippen Sie unter dem Namen der Gruppe oder im Abschnitt **Nachrichten**, der die neuesten Nachrichten als Vorschau zeigt, auf **Chat öffnen**. Der Chat öffnet sich im Vollbild. Tippen Sie auf den Zurück-Pfeil, um zur Gruppe zurückzukehren.
 
 ## Diskussionen und Ankündigungen
 
-Die Registerkarte „Nachrichten" kann zwei Unterregisterkarten anzeigen, je nachdem, welche Feeds Ihre Kirche für diese Gruppe aktiviert hat:
+Der Gruppenchat kann zwei Bereiche haben, je nachdem, welche Ihre Gemeinde für diese Gruppe aktiviert hat. Die Bezeichnung über dem Namen der Gruppe oben im Chat zeigt, in welchem Bereich Sie sich befinden:
 
-- **Diskussionen** – Ein Platz, an dem jedes Gruppenmitglied Nachrichten posten und auf andere antworten kann.
-- **Ankündigungen** – Nachrichten, die von Gruppenleiter gepostet werden, die für alle Mitglieder wichtig sind. Normale Mitglieder können Ankündigungen lesen und darauf reagieren, aber nur Leiter können posten. Falls Sie als normales Mitglied versuchen zu posten, wird eine Nachricht angezeigt, dass nur Leiter Ankündigungen posten können und stattdessen per Direktnachricht antworten sollen.
+- **Chat** -- Diskussionen, in denen jedes Gruppenmitglied Nachrichten veröffentlichen und auf andere antworten kann.
+- **Ankündigungen** -- Nachrichten von Gruppenleitungen, die für alle Mitglieder wichtig sind. Normale Mitglieder können Ankündigungen lesen und darauf reagieren, aber nur Leitungen können sie veröffentlichen. Anstelle eines Nachrichtenfeldes sehen normale Mitglieder die Meldung „Nur Gruppenleitungen können Ankündigungen veröffentlichen.“
 
-Falls Ihre Kirche nur einen der beiden Feeds für diese Gruppe aktiviert hat, sehen Sie nur diesen Feed ohne Registerkartenleiste. Falls beide ausgeschaltet sind, hat die Gruppe überhaupt keine Registerkarte „Nachrichten".
+Sind beide Bereiche aktiviert, zeigt ein Streifen **Ankündigung** oben im Chat die neueste Ankündigung. Tippen Sie auf **Alle Ankündigungen**, um den Bereich mit den Ankündigungen zu öffnen, und auf **Zurück zum Chat**, um zu den Diskussionen zurückzukehren. (Mitglieder sehen den Streifen erst, wenn die Gruppe mindestens eine Ankündigung hat.)
 
-## Posten Sie eine Nachricht
+Wenn Ihre Gemeinde für diese Gruppe nur einen der beiden Bereiche aktiviert hat, öffnet der Chat direkt diesen Bereich. Sind beide ausgeschaltet, hat die Gruppe keinen Chat und keinen Abschnitt **Nachrichten**.
 
-1. Öffnen Sie die Registerkarte **Nachrichten** auf Ihrer Gruppenseite.
-2. Stellen Sie sicher, dass Sie auf der Unterregisterkarte **Diskussionen** sind (falls die Registerkartenleiste sichtbar ist).
-3. Geben Sie Ihre Nachricht in das Textfeld ein.
-4. Senden Sie Ihre Nachricht ab, um sie mit der Gruppe zu teilen.
+## Eine Nachricht veröffentlichen
+
+1. Tippen Sie auf der Seite Ihrer Gruppe auf **Chat öffnen**.
+2. Stellen Sie sicher, dass Sie im Bereich **Chat** sind (tippen Sie auf **Zurück zum Chat**, falls Sie gerade Ankündigungen lesen).
+3. Geben Sie Ihre Nachricht in das Feld **Nachricht senden …** ein.
+4. Tippen Sie auf die Schaltfläche zum Senden (oder drücken Sie **Enter**), um sie mit der Gruppe zu teilen.
 
 Ihre Nachricht ist für alle Mitglieder der Gruppe sichtbar.
 
-## Bearbeiten oder Löschen Ihrer Nachrichten
+## Ihre Nachrichten bearbeiten oder löschen
 
-Sie können jede Nachricht, die Sie gepostet haben, bearbeiten oder löschen:
+Sie können jede Nachricht, die Sie veröffentlicht haben, bearbeiten oder löschen:
 
-1. Fahren Sie mit der Maus über Ihre Nachricht (oder tippen Sie darauf auf dem Mobil), um die Schaltfläche **Weitere Optionen** (⋮) anzuzeigen.
-2. Klicken Sie auf die Schaltfläche, um das Nachrichtenmenü zu öffnen.
-3. Wählen Sie **Bearbeiten**, um den Nachrichtentext zu ändern, oder **Löschen**, um ihn zu entfernen.
-   - Beim Bearbeiten wird der Nachrichtentext in das Eingabefeld zurückgeladen. Nehmen Sie Ihre Änderungen vor und senden Sie ab, um sie zu speichern.
-   - Beim Löschen wird ein Bestätigungsdialog angezeigt. Klicken Sie auf **Bestätigen**, um die Nachricht dauerhaft zu entfernen.
+1. Tippen Sie unter Ihrer Nachricht auf die Schaltfläche **Weitere Optionen** (⋮), um das Nachrichtenmenü zu öffnen.
+2. Wählen Sie **Bearbeiten**, um den Nachrichtentext zu ändern, oder **Löschen**, um sie zu entfernen.
+   - Beim Bearbeiten wird der Nachrichtentext zurück in das Eingabefeld geladen, darüber erscheint der Hinweis **Nachricht wird bearbeitet** (tippen Sie auf **Abbrechen**, um das Bearbeiten zu beenden). Nehmen Sie Ihre Änderungen vor und senden Sie sie, um sie zu speichern.
+   - Beim Löschen erscheint die Abfrage **Nachricht löschen?**. Tippen Sie auf **Löschen**, um die Nachricht für alle Beteiligten des Gesprächs dauerhaft zu entfernen.
 
 :::info
-Sie können nur Ihre eigenen Nachrichten bearbeiten oder löschen. Nachrichten, die von anderen Mitgliedern gepostet wurden, zeigen nicht die Bearbeitungs-/Löschoptionen.
+Sie können nur Ihre eigenen Nachrichten bearbeiten. Gruppenleitungen können außerdem Nachrichten anderer Mitglieder löschen. Normale Mitglieder sehen die Optionen nur bei ihren eigenen Nachrichten.
 :::
 
-## Reagieren auf Nachrichten
+## Auf Nachrichten reagieren
 
 Im Gruppenchat können Sie auf jede Nachricht mit einem Emoji reagieren:
 
-1. Tippen oder fahren Sie mit der Maus über eine Nachricht und wählen Sie **Reaktion hinzufügen**.
-2. Wählen Sie einen der sechs Emojis: 👍 ❤️ 😂 🎉 🙏 😮.
+1. Tippen Sie unter einer Nachricht auf die Schaltfläche **Reaktion hinzufügen**.
+2. Wählen Sie eines der sechs Emojis: 👍 ❤️ 😂 🎉 🙏 😮.
 
-Reaktionen werden als kleine Chips unter der Nachricht mit einer Anzahl angezeigt, wie viele Menschen jeden einzelnen verwendet haben. Ihre eigene Reaktion ist hervorgehoben – tippen Sie auf den Chip (oder wählen Sie das gleiche Emoji erneut), um sie zu entfernen, oder wählen Sie ein anderes Emoji, um ein weiteres hinzuzufügen. Reaktionen werden live für alle im Chat angezeigt.
+Reaktionen erscheinen als kleine Markierungen unter der Nachricht, mit der Anzahl der Personen, die das jeweilige Emoji gewählt haben. Ihre eigene Reaktion ist hervorgehoben -- tippen Sie auf die Markierung (oder wählen Sie dasselbe Emoji erneut), um sie zu entfernen, oder wählen Sie ein anderes Emoji, um eine weitere hinzuzufügen. Reaktionen werden für alle im Chat sofort sichtbar.
 
 :::tip
-Gruppenkonversationen befinden sich auf der Registerkarte **Nachrichten** jeder Gruppe – der alte kombinierte [Timeline](../community/timeline.md)-Feed wurde stillgelegt. Aktivitäten, die Ihre Aufmerksamkeit benötigen, werden als Benachrichtigung unter dem **Glocken**-Symbol in der App-Leiste angezeigt.
+Gruppengespräche finden im Chat jeder Gruppe statt. Der frühere gemeinsame Verlauf der [Zeitleiste](../community/timeline.md) wurde eingestellt. Aktivitäten, die Ihre Aufmerksamkeit erfordern, erreichen Sie als Benachrichtigung unter dem Symbol **Glocke** in der App-Leiste.
 :::
 
-## Leiter-Funktionen
+## Funktionen für Leitungen
 
-Falls Sie ein Gruppenleiter sind, haben Sie zusätzliche Fähigkeiten in der Registerkarte „Nachrichten":
+Wenn Sie eine Gruppenleitung sind, haben Sie im Gruppenchat zusätzliche Möglichkeiten:
 
-- **Ankündigungen posten** – Wechseln Sie zur Unterregisterkarte **Ankündigungen** und posten Sie Nachrichten, die alle Gruppenmitglieder lesen können.
-- **Diskussionen posten** – Sie können auch an normalen Diskussionen teilnehmen wie jedes andere Mitglied.
+- **Ankündigungen veröffentlichen** -- Tippen Sie auf **Alle Ankündigungen** (oder öffnen Sie den Chat, wenn nur Ankündigungen aktiviert sind) und veröffentlichen Sie Nachrichten, die alle Gruppenmitglieder lesen können.
+- **Nachrichten entfernen** -- Löschen Sie die Nachricht eines beliebigen Mitglieds über das Nachrichtenmenü (⋮).
+- **Diskussionen veröffentlichen** -- Sie können sich auch wie jedes andere Mitglied an den regulären Diskussionen beteiligen.
 
 :::info
-Konversationen sind spezifisch für jede Gruppe. Nachrichten, die Sie in einer Gruppe posten, werden nicht in den Konversationen einer anderen Gruppe angezeigt.
+Gespräche gehören jeweils zu einer bestimmten Gruppe. Nachrichten, die Sie in einer Gruppe veröffentlichen, erscheinen nicht in den Gesprächen einer anderen Gruppe.
 :::

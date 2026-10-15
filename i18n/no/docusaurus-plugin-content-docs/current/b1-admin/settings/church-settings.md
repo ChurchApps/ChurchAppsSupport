@@ -6,7 +6,7 @@ title: "Kirkeinnstillinger"
 
 <div class="article-intro">
 
-På siden Kirkeinnstillinger konfigurerer du grunnleggende informasjon om kirken din, kontaktopplysninger og profilering. Disse opplysningene brukes i alle ChurchApps-verktøyene, inkludert B1.church-nettstedet ditt og B1 Mobile-appen.
+Siden for kirkeinnstillinger er der du konfigurerer kirkens grunnleggende informasjon, kontaktopplysninger og profil. Disse opplysningene brukes i alle ChurchApps-verktøy, inkludert nettstedet ditt på B1.church og appen B1 Mobil.
 
 </div>
 
@@ -18,141 +18,161 @@ På siden Kirkeinnstillinger konfigurerer du grunnleggende informasjon om kirken
 
 </div>
 
-## Redigere kirkeinformasjonen
+## Redigere kirkeinformasjonen din
 
-1. I B1 Admin åpner du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvider **Innstillinger** og klikker på **Innstillinger**.
-2. I delen **Kirkeinformasjon** (øverst på siden) klikker du på **Rediger**.
-3. Oppdater feltene du ønsker:
-   - **Kirkens navn** -- Navnet som vises i alle ChurchApps-produkter.
-   - **Adresse** -- Kirkens fysiske adresse.
-   - **Kontaktinformasjon** -- Telefonnummer, e-post og andre kontaktopplysninger.
-4. Klikk på **Lagre** for å ta i bruk endringene.
+1. I B1 Admin åpner du [Hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvider **Innstillinger**, og klikker på **Innstillinger**.
+2. I seksjonen **Kirkeinformasjon** (øverst på siden) klikker du på **Rediger**.
+3. Oppdater et av følgende felt:
+   - **Kirkens navn** – Navnet som vises i alle ChurchApps-produkter.
+   - **Adresse** – Kirkens fysiske adresse.
+   - **Kontaktinformasjon** – Telefonnummer, e-post og andre kontaktdetaljer.
+4. Klikk på **Lagre** for å bruke endringene.
 
 ## Sette opp underdomenet ditt
 
-Kirken din får et gratis underdomene på **dinkirke.1.church**. Dette er nettadressen der medlemmer og besøkende finner kirkens tilstedeværelse på nett.
+Kirken din får et gratis underdomene på **yourchurch.1.church**. Dette er nettadressen der medlemmer og besøkende kan finne kirkens nettilstedeværelse.
 
-1. På siden Innstillinger klikker du på **Rediger** i delen **Kirkeinformasjon** og finner feltet **Underdomene**.
+1. På innstillingssiden klikker du på **Rediger** i seksjonen **Kirkeinformasjon** og finner feltet **Underdomene**.
 2. Skriv inn ønsket underdomene (for eksempel «gracechurch» for gracechurch.1.church).
-3. Lagre endringene.
+3. Lagre endringene dine.
 
 :::info
-Underdomenet må være unikt blant alle ChurchApps-kirker. Hvis det ønskede navnet er opptatt, kan du prøve å legge til byen eller fylket ditt (for eksempel «gracechurch-oslo»).
+Underdomenet ditt må være unikt på tvers av alle ChurchApps-kirker. Hvis navnet du ønsker, er tatt, prøv å legge til byen eller staten din (for eksempel «gracechurch-dallas»).
 :::
 
-Hvis du vil at besøkende skal nå nettstedet ditt på ditt eget domene (for eksempel **www.gracechurch.org**), se [Eget domene](./custom-domain.md).
+Hvis du vil at besøkende skal nå nettstedet ditt på ditt eget domene (for eksempel **www.gracechurch.org**), se [Egendefinert domene](./custom-domain.md).
 
-## Konfigurere profilering
+## Konfigurere profil
 
-Tilpass hvordan kirken din vises i alle ChurchApps-verktøyene:
+Tilpass hvordan kirken din vises i alle ChurchApps-verktøy:
 
 1. Last opp **kirkens logo** ved å klikke på logoområdet og velge en bildefil.
-2. Legg til eventuelle andre **kirkebilder** som brukes på nettstedet og i [mobilappen](./mobile-app.md).
+2. Legg til eventuelle ekstra **kirkebilder** som brukes på nettstedet ditt og i [mobilappen](./mobile-app.md).
 
 :::tip
-For best resultat bruker du en logo med gjennomsiktig bakgrunn i PNG-format. Da ser den bra ut både på lyse og mørke bakgrunner.
+For best resultat, bruk en logo med gjennomsiktig bakgrunn i PNG-format. Da ser den bra ut på både lyse og mørke bakgrunner.
 :::
 
 ## Første dag i uken
 
-Velg hvilken dag kalenderne dine starter på. Nedtrekksmenyen **Første dag i uken** i delen Kirkeinformasjon er som standard **søndag**, men kan settes til en hvilken som helst dag. Når den er endret, respekteres den i kalenderrutenett i B1 Admin og i medlemsportalen på B1.church -- gruppekalendere, kuraterte kalendere og hendelsesredigereren legger alle ut ukene med start på dagen du velger.
+Velg hvilken dag kalenderne dine starter på. Rullegardinmenyen **Første dag i uken** i seksjonen Kirkeinfo er satt til **Søndag** som standard, men kan settes til hvilken som helst dag. Når den er endret, respekteres den i kalenderrutenettene i B1 Admin og i B1.church-medlemsportalen – gruppekalendere, kuraterte kalendere og arrangementseditoren legger alle ut ukene med dagen du velger som start.
 
 ## Region (dato- og telefonformat)
 
-Innstillingen **Region** styrer hvordan datoer og klokkeslett skrives i hele B1. Som standard bruker datoer amerikansk format (for eksempel «Sep 28, 2026» og «9/28/2026»). Kirker utenfor USA kan bytte til sitt eget format -- for eksempel viser valget engelsk (Storbritannia) «28 Sept 2026» og «28/09/2026» i stedet.
+Innstillingen **Region** styrer hvordan datoer og klokkeslett skrives gjennom hele B1. Som standard bruker datoer det amerikanske formatet (for eksempel «Sep 28, 2026» og «9/28/2026»). Kirker utenfor USA kan bytte til sitt eget format – for eksempel viser valg av engelsk (Storbritannia) «28 Sept 2026» og «28/09/2026» i stedet.
 
-1. På siden Innstillinger klikker du på **Region** i listen til venstre, og deretter på **Rediger** i delen **Region**.
-2. Velg region i nedtrekksmenyen **Region**. Hvert alternativ viser en eksempeldato, slik at du ser nøyaktig hvordan datoene kommer til å se ut.
+1. På innstillingssiden klikker du på **Region** i listen til venstre, og deretter på **Rediger** i seksjonen **Region**.
+2. Velg din region fra rullegardinmenyen **Region**. Hvert alternativ viser en eksempeldato, slik at du ser nøyaktig hvordan datoene vil se ut.
 3. Klikk på **Lagre**.
 
-Delen Region viser deretter den valgte regionen, et eksempel på **Datoformat** og formatet for **Telefonnumre**.
+Seksjonen Region viser deretter den valgte regionen, et eksempel på **datoformatet** og formatet for **telefonnumre**.
 
-### Format for telefonnumre
+### Telefonnummerformat
 
-Den samme Region-delen har en innstilling for **Telefonnumre** som styrer hvordan telefonnumre skrives inn på en persons profil:
+Den samme regionseksjonen har en innstilling for **telefonnumre** som styrer hvordan telefonnumre legges inn på en persons registrering:
 
-- **Internasjonalt (med landskode)** -- standardvalget. Telefonfeltene viser en landsflagg-velger og lagrer numrene med landskode (for eksempel +1 918 555 1234).
-- **Lokalt (som skrevet)** -- telefonfeltene blir vanlige tekstfelt og lagrer numrene nøyaktig slik du skriver dem, uten at det legges til landskode (for eksempel 0701 234 5678). Velg dette hvis menigheten din skriver numre i et lokalt format og ikke vil at B1 skal legge til landskode.
+- **Internasjonalt (med landkode)** – standard. Telefonfelt viser en landvelger med flagg og lagrer numre med landkode (for eksempel +1 918 555 1234).
+- **Lokalt (slik det skrives)** – telefonfelt blir vanlige tekstbokser og lagrer numre akkurat slik du skriver dem, uten at landkode legges til (for eksempel 0701 234 5678). Velg dette hvis kirken din skriver numre i et lokalt format og ikke vil at B1 skal legge til en landkode.
 
-Når **Lokalt** er valgt, viser Region-delen også «Lokale telefonnumre» ved siden av regionen din.
+Når **Lokalt** er valgt, viser regionseksjonen også «Lokale telefonnumre» ved siden av regionen din.
 
 :::tip
-Tekstmeldinger fungerer best når numrene inneholder landskode. Hvis du sender tekstmeldinger fra B1, bør du beholde formatet **Internasjonalt**, eller sørge for at numre du skriver inn i Lokalt-modus inneholder landskode.
+Tekstmeldinger fungerer best når numrene inkluderer landkode. Hvis du sender tekstmeldinger fra B1, behold formatet **Internasjonalt**, eller sørg for at numre du skriver inn i lokal modus inkluderer landkode.
 :::
 
-Regionen din gjelder for datoer og klokkeslett i hele B1 Admin og på B1.church-nettstedet og medlemsportalen din, inkludert prekener, blogginnlegg, gruppekalendere og tjenesteplaner, slik at medlemmene ser datoer i samme format som de ansatte.
+Regionen din gjelder for datoer og klokkeslett i B1 Admin og på B1.church-nettstedet og medlemsportalen din, inkludert prekener, blogginnlegg, gruppekalendere og tjenesteplaner, slik at medlemmene ser datoer i samme format som de ansatte.
 
 ## Tekstmeldinger {#texting}
 
-Koble til en tekstmeldingsleverandør for å sende SMS til en person eller en hel gruppe fra B1 Admin. Meldingene sendes via din egen konto hos leverandøren, så leverandørens priser og begrensninger gjelder.
+Koble til en leverandør av tekstmeldinger for å sende SMS-meldinger til en person eller en hel gruppe fra B1 Admin. Tekstmeldinger sendes gjennom din egen konto hos leverandøren, så deres priser og grenser gjelder.
 
-1. På siden Innstillinger klikker du på **Tekstmeldinger** i listen til venstre, og deretter på **Rediger** i delen **Tekstmeldinger**.
-2. Velg en **Leverandør**:
-   - **Clearstream** -- skriv inn en **API-nøkkel**. Opprett en i Clearstream-kontoinnstillingene under API Keys.
-   - **Text In Church** -- skriv inn en **API-nøkkel**. Be først Text In Church Support om tilgang til utvikler-API, og opprett deretter en nøkkel i kontoinnstillingene under Developer API.
-   - **Nalo Solutions** (Ghana) -- skriv inn autentiseringsnøkkelen fra Nalo Solutions-kontoen din som **API-nøkkel**, og en **Avsender-ID** (opptil 11 tegn) som Nalo har godkjent for deg.
+1. På innstillingssiden klikker du på **Tekstmeldinger** i listen til venstre, og deretter på **Rediger** i seksjonen **Tekstmeldinger**.
+2. Velg en **leverandør**:
+   - **Clearstream** – skriv inn en **API-nøkkel**. Opprett en i Clearstream-kontoinnstillingene dine under API Keys.
+   - **Text In Church** – skriv inn en **API-nøkkel**. Be først Text In Church Support om tilgang til utvikler-API, og opprett deretter en nøkkel under Kontoinnstillinger > Developer API.
+   - **Nalo Solutions** (Ghana) – skriv inn autentiseringsnøkkelen fra din Nalo Solutions-konto som **API-nøkkel**, og en **avsender-ID** (opptil 11 tegn) som Nalo har godkjent for deg.
 3. Klikk på **Lagre**.
 
-For å slutte å sende tekstmeldinger setter du **Leverandør** til **Ingen** og lagrer. Da fjernes den lagrede leverandøren.
+For å slutte med tekstmeldinger, sett **Leverandør** til **Ingen** og lagre. Dette fjerner den lagrede leverandøren.
 
-### Melde av personer som svarer STOP {#opting-out-people-who-reply-stop}
+### Melde av personer som svarer STOP
 
-Når en leverandør er lagret, åpner du tekstmeldingsdelen igjen med **Rediger**. Under leverandørinnstillingene vises et skrivebeskyttet felt **URL for innkommende STOP-webhook** med en nettadresse som er unik for menigheten din. Klikk i feltet for å markere adressen, kopier den og lim den inn i leverandørens innstilling for innkommende meldinger (svar) som webhook. Dette fungerer med alle leverandørene ovenfor som kan videresende innkommende svar til en webhook.
+Når en leverandør er lagret, åpne Tekstmeldinger-seksjonen igjen med **Rediger**. Under leverandørinnstillingene viser et skrivebeskyttet felt **URL for innkommende (STOP) webhook** en nettadresse som er unik for kirken din. Klikk i feltet for å markere adressen, kopier den og lim den inn i leverandørens webhook-innstilling for innkommende meldinger (svar). Dette fungerer med alle leverandørene ovenfor som kan videresende innkommende svar til en webhook.
 
-Etter det, når noen svarer **STOP** (eller STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT eller REVOKE) på en av meldingene dine, finner B1 alle med et mobilnummer som stemmer, markerer dem som reservert og slår av tekstpåminnelsene deres. De hoppes deretter over i gruppemeldinger. Andre svar ignoreres.
-
-:::info
-Dette bruker samme reservasjonsinnstilling som **Skjul meg fra medlemsregisteret**, så personer som svarer STOP vises også som **Skjult fra register** på profilen sin. Feltet vises bare når den lagrede leverandøren er valgt -- hvis du bytter til en annen leverandør i nedtrekksmenyen, må du lagre først for å se URL-en igjen.
-:::
-
-Når en leverandør er koblet til, ser medarbeidere med tillatelse til å sende tekstmeldinger en **Tekst**-knapp på siden til en gruppe (**Send SMS til denne gruppen**) og til en person med mobiltelefon (**Send tekstmelding**). Skriv meldingen og klikk på **Send**. Dialogen teller tegn og SMS-segmenter. For en gruppe viser den hvor mange medlemmer som får meldingen før du sender:
-
-- Medlemmer uten registrert mobiltelefon hoppes over.
-- Medlemmer som valgte **Skjul meg fra medlemsregisteret** regnes som reservert og hoppes over.
-- Familiemedlemmer som deler mobilnummer får meldingen bare én gang.
-
-### Personalisere tekstmeldinger med flettefelt {#personalizing-texts-with-merge-fields}
-
-Under meldingsboksen viser tekstdialogen plassholderbrikker: **Fornavn**, **Etternavn**, **Visningsnavn** og **Kirkens navn**. Klikk på en brikke for å sette inn plassholderen (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` eller `{{churchName}}`) der markøren står. Når meldingen sendes, erstattes hver plassholder med mottakerens opplysninger, slik at en gruppemelding som `Hei {{firstName}}, vi sees på søndag!` når hvert medlem med deres eget navn. Plassholdere fungerer både for gruppemeldinger og meldinger til én enkelt person.
+Etter dette, når noen svarer **STOP** (eller STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT eller REVOKE) på en av tekstmeldingene dine, finner B1 alle hvis mobilnummer samsvarer, markerer dem som avmeldt og slår av tekstpåminnelsene deres. De hoppes deretter over i gruppetekster. Andre svar ignoreres.
 
 :::info
-Grensen på 1 600 tegn gjelder meldingen slik du skriver den. Etter at plassholderne er fylt ut, kuttes all tekst som er lengre enn 1 600 tegn ved den lengden.
+Dette bruker den samme avmeldingsinnstillingen som **Skjul meg fra medlemskatalogen**, så personer som svarer STOP vises også som **Skjult fra katalog** på profilen sin. Feltet vises bare når den lagrede leverandøren er valgt – hvis du bytter til en annen leverandør i rullegardinmenyen, lagre først for å se URL-en igjen.
 :::
 
-Tekstmeldinger kan også sendes automatisk fra et trinn i en [arbeidsflyt](../serving/workflows.md#sending-a-text) med handlingen **Send SMS**, som bruker den samme leverandøren og de samme plassholderne.
+Når en leverandør er koblet til, ser ansatte med tillatelse til å sende tekstmeldinger en knapp **Tekst** på siden til en gruppe (**Send tekst til denne gruppen**) og til en person med mobiltelefon (**Send tekstmelding**). Skriv meldingen din og klikk på **Send**. Dialogen teller tegn og SMS-segmenter. For en gruppe viser den hvor mange medlemmer som får teksten før du sender:
+
+- Medlemmer uten mobiltelefon registrert hoppes over.
+- Medlemmer som har valgt **Skjul meg fra medlemskatalogen** telles som avmeldt og hoppes over.
+- Familiemedlemmer som deler et mobilnummer får teksten bare én gang.
+
+### Personliggjøre tekster med flettefelt {#personalizing-texts-with-merge-fields}
+
+Under meldingsboksen viser tekstdialogen merkebrikker for plassholdere: **Fornavn**, **Etternavn**, **Visningsnavn** og **Kirkens navn**. Klikk på en brikke for å sette inn plassholderen (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` eller `{{churchName}}`) ved markøren. Når teksten sendes, erstattes hver plassholder med mottakerens opplysninger, slik at en gruppetekst som `Hei {{firstName}}, vi sees på søndag!` når hvert medlem med deres eget navn. Plassholdere fungerer både for gruppetekster og tekster til en enkeltperson.
+
+:::info
+Grensen på 1 600 tegn gjelder meldingen slik du skriver den. Etter at plassholderne er fylt ut, kuttes enhver tekst som er lengre enn 1 600 tegn av ved den lengden.
+:::
+
+Tekster kan også sendes automatisk fra et steg i en [arbeidsflyt](../serving/workflows.md#sending-a-text) med handlingen **Send tekst**, som bruker samme leverandør og plassholdere.
 
 ## Fillagring
 
-Som standard bruker filer du laster opp til nettstedet ditt (via [Filer](../website/files.md)) og andre innholdsområder B1s gratis vertsbaserte lagring, opptil 100 MB. Hvis du trenger mer plass, kan du koble til din egen skylagring i stedet -- nye opplastinger går da rett til kontoen din uten grense fra plattformen.
+Som standard bruker filer du laster opp til nettstedet ditt (gjennom [Filer](../website/files.md)) og andre innholdsområder B1s gratis vertslagring, opptil 100 MB. Hvis du trenger mer plass, kan du koble til din egen skylagring i stedet – nye opplastinger går da direkte til kontoen din uten noen plattformgrense.
 
-1. På siden Innstillinger klikker du på **Fillagring** i listen til venstre, og deretter på **Rediger** i delen **Fillagring**.
-2. Velg en leverandør: **Google Drive**, **Dropbox**, **OneDrive** eller en **S3-kompatibel bøtte** (AWS S3, Cloudflare R2, Backblaze B2 osv.).
-3. For Google Drive, Dropbox eller OneDrive klikker du på **Koble til** og logger inn for å gi tilgang. For en S3-kompatibel bøtte skriver du inn tilgangsnøkkel, hemmelig nøkkel, bøttenavn og offentlig URL-base.
+1. På innstillingssiden klikker du på **Fillagring** i listen til venstre, og deretter på **Rediger** i seksjonen **Fillagring**.
+2. Velg en leverandør: **Google Drive**, **Dropbox**, **OneDrive** eller en **S3-kompatibel bucket** (AWS S3, Cloudflare R2, Backblaze B2 osv.).
+3. For Google Drive, Dropbox eller OneDrive klikker du på **Koble til** og logger inn for å godkjenne tilgang. For en S3-kompatibel bucket skriver du inn tilgangsnøkkelen, hemmeligheten, bucket-navnet og grunn-URL-en for offentlig tilgang.
 4. Klikk på **Lagre**.
 
 :::info
-Dette påvirker bare nye opplastinger til Filer på nettstedet ditt og lignende innholdsområder. Galleribilder, miniatyrbilder, logoer og personbilder blir alltid værende på B1s standardlagring.
+Dette påvirker bare nye opplastinger til Filer på nettstedet ditt og lignende innholdsområder. Galleribilder, miniatyrbilder, logoer og personbilder blir alltid på B1s standardlagring.
 :::
 
 ## Klassetrinnsopprykk
 
-Hvis du registrerer **Klassetrinn** på barn og ungdom, kan B1 automatisk rykke alle opp ett klassetrinn på en dato du velger (for eksempel 1. august), i stedet for at du må redigere hver profil for hånd.
+Hvis du registrerer **klassetrinn** for barn og elever, kan B1 automatisk flytte alle opp ett klassetrinn på en dato du velger (for eksempel 1. august) i stedet for at du må redigere hver profil for hånd.
 
-1. På siden Innstillinger klikker du på **Klassetrinnsopprykk** i listen til venstre, og deretter på **Rediger** i delen **Klassetrinnsopprykk**.
-2. Slå på bryteren (den viser **Aktivert**) og velg **Måned** og **Dag** for opprykk hvert år. På den datoen rykker alle med et klassetrinn opp ett trinn, og elever på 12. trinn blir **Uteksaminert**.
-3. Lagre endringene.
+1. På innstillingssiden klikker du på **Klassetrinnsopprykk** i listen til venstre, og deretter på **Rediger** i seksjonen **Klassetrinnsopprykk**.
+2. Slå på bryteren (den viser **Aktivert**) og velg **Måned** og **Dag** for å flytte klassetrinn hvert år. På den datoen flytter alle med et klassetrinn opp ett trinn, og elever på 12. trinn blir **Uteksaminert**.
+3. Lagre endringene dine.
 
-For å stoppe automatisk opprykk slår du bryteren av slik at den viser **Deaktivert**, og lagrer. Opprykksdatoen fjernes, og klassetrinn endres ikke lenger av seg selv.
+For å stoppe automatisk opprykk, slå av bryteren slik at den viser **Deaktivert**, og lagre. Opprykksdatoen fjernes, og klassetrinnene endrer seg ikke lenger av seg selv.
+
+## Frivillig påmelding {#volunteer-signup}
+
+Som standard ser medlemmer som blar gjennom [frivillig påmelding](../../b1-church/serving/volunteer-signup.md), hver kommende uke med ledige posisjoner. Hvis listen blir lang, kan du vise bare neste uke for hver plantype i stedet.
+
+1. På innstillingssiden klikker du på **Frivillig påmelding** i listen til venstre, og deretter på **Rediger** i seksjonen **Frivillig påmelding**.
+2. Slå på **Vis kun neste uke for hver plantype**.
+3. Lagre endringene dine.
+
+Med dette påslått viser hver plantype bare sin neste kommende plan. Den påfølgende uken vises når den datoen har passert. Raden **Viste uker** i seksjonen viser **Bare neste uke for hver plantype** eller **Alle kommende uker**.
+
+## Gaveprivatliv {#giving-privacy}
+
+Personer med tilgang til gaver ser normalt en persons gavesummer på deres [personregistrering](../people/adding-people.md#editing-details). Hvis du heller ikke vil ha beløp på skjermen hver gang en registrering åpnes, kan du skjule dem til noen ber om å se dem.
+
+1. På innstillingssiden klikker du på **Gaveprivatliv** i listen til venstre, og deretter på **Rediger** i seksjonen **Gaveprivatliv**.
+2. Slå på **Skjul gaver på personregistreringer til man klikker**.
+3. Lagre endringene dine.
+
+Med dette påslått står det på gavekortet på en personregistrering «Gaver er skjult på personregistreringer». Klikk på **Vis gaver** for å laste inn og vise den personens gaver. Det skjules igjen når du åpner en annen person. Hvem som kan se gaver endres ikke: bare personer med gavetilgang ser kortet.
 
 ## Import og eksport
 
-Lenken **Import/eksport** under navnet til kirken din på siden Innstillinger åpner et eget verktøy i et nytt nettleservindu. Bruk det til å:
+Lenken **Import/Eksport** under kirkens navn på innstillingssiden åpner et eget verktøy i et nytt nettleservindu. Bruk dette til å:
 
-- Importere medlemsdata fra et annet kirkeadministrasjonssystem.
-- Eksportere ChurchApps-dataene dine for sikkerhetskopiering eller flytting.
+- Importere medlemsdata fra et annet system for kirkeadministrasjon.
+- Eksportere dine ChurchApps-data for sikkerhetskopiering eller migrering.
 
-Dette er særlig nyttig når du først setter opp kirken din og må overføre eksisterende registre til ChurchApps.
+Dette er spesielt nyttig når du setter opp kirken din for første gang og må overføre eksisterende registreringer til ChurchApps.
 
 :::warning
-Når du importerer data, bør du alltid sikkerhetskopiere eksisterende registre først. Importer legger data til i systemet ditt og kan opprette dupliserte oppføringer hvis de kjøres flere ganger.
+Når du importerer data, ta alltid en sikkerhetskopi av de eksisterende registreringene dine først. Importoperasjoner legger til data i systemet ditt og kan skape dupliserte oppføringer hvis de kjøres flere ganger.
 :::

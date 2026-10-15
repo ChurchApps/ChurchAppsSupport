@@ -46,13 +46,17 @@ The **Linked Accounts** section shows any external services connected to your Ch
 
 ## Theme Preferences
 
-B1 Admin supports both light and dark display modes:
+B1 Admin lets you pick a color theme and a light or dark display mode:
 
 1. Click your profile picture in the top right corner of B1 Admin to open your user menu.
-2. Under **Theme Preferences**, choose **Light Mode** or **Dark Mode**.
-3. The interface will update immediately to reflect your choice.
+2. Under **Theme Preferences**, choose a theme:
+   - **Default** -- The current B1 Admin look: bordered panels on a clean canvas.
+   - **Classic** -- The earlier B1 Admin look, with a colored page banner, shadowed cards, and a grey background. This is what you see until you pick a theme.
+   - **Custom** -- The Default look built from your church's own color. It uses the light-mode primary color from **Mobile > App Theme**, or your website's primary color if no app color is set, so B1 Admin matches your member app.
+3. Below the themes, choose **Light Mode** or **Dark Mode**.
+4. The interface updates immediately to reflect your choice.
 
-Your choice is remembered on that device and browser.
+Your choices are remembered on that device and browser.
 
 ## Account Deletion
 

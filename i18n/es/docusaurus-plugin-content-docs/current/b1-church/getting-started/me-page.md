@@ -1,60 +1,65 @@
 ---
-title: "La Página Mi"
+title: "La página Me"
 ---
 
-# La Página Mi
+# La página Me
 
 <div class="article-intro">
 
-La página **Mi** es tu panel de control personal en el portal de miembros — una vista cronológica única de todo lo que se aproxima para ti: asignaciones de voluntariado, registros de eventos y los próximos eventos de tus grupos, más tus notificaciones más recientes.
+La página **Me** es tu panel personal en el portal de miembros: una sola página con todo lo que se acerca para ti (asignaciones de servicio, inscripciones a eventos y los próximos eventos de tus grupos), junto con tu hogar, tus grupos, tus ofrendas, tus inscripciones y las notificaciones recientes.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Necesitas estar [registrado](./logging-in.md) — la página Mi solo aparece para miembros que han iniciado sesión
+- Debes [haber iniciado sesión](./logging-in.md): la página Me solo aparece para los miembros que han iniciado sesión
 
 </div>
 
-## Abriendo la Página Mi
+## Abrir la página Me
 
-Abre el menú del portal y toca **Mi**. La página se carga con tu información personal organizada en secciones.
+Toca **More** en la barra de pestañas y luego toca **Me** en **Account**. La página se abre con tu foto, tu nombre y tu estado de membresía, junto con dos botones:
 
-## Próximo
+- **Edit Profile**: consulta [Editar tu perfil](./editing-your-profile.md).
+- **Settings**: abre tus [Preferencias de notificación](./notification-preferences.md).
 
-La sección **Próximo** enumera todo lo que se acerca en orden cronológico, cada elemento etiquetado con un chip de tipo:
+Si no has iniciado sesión, verás "Sign in to see your week" y un botón **Sign In** en su lugar.
 
-- **Voluntariado** -- Tus posiciones de voluntario en planes de servicio próximos. Toca uno para abrir el plan.
-- **Registro** -- Eventos para los que te has [registrado](../events/registering). Toca para ir a tus [registros](../events/my-registrations).
-- **Evento** -- Próximos eventos de grupos a los que perteneces. Toca uno para abrir los eventos del grupo.
+## Próximos
 
-Si nada está programado, verás "Nada próximo" — tus horarios de voluntariado, eventos y registros aparecerán aquí a medida que se programen.
+La sección **Upcoming** enumera tus próximos tres elementos en orden de fecha, cada uno con una etiqueta de tipo. Si tienes más, toca **All upcoming** para ver la lista completa, y **Back to Me** para volver.
 
-## Notificaciones Recientes
+- **Serving**: tus posiciones de voluntariado en los próximos planes de servicio. Toca una para abrir el plan.
+- **Registration**: eventos en los que te has [inscrito](../events/registering). Toca para ir a tus [inscripciones](../events/my-registrations).
+- **Event**: próximos eventos de los grupos a los que perteneces. Toca uno para abrir los eventos del grupo.
 
-Debajo de Próximo, la sección **Notificaciones Recientes** muestra tus notificaciones más recientes para que puedas ponerte al día sin abrir cada área del portal.
+Si no hay nada programado, verás "Nothing coming up": tus horarios de servicio, eventos e inscripciones aparecerán aquí a medida que se programen.
 
-## Atajos
+## Hogar, grupos y ofrendas
 
-La sección **Atajos** en la parte superior de la página Mi enlaza a los lugares que visitas más:
+- **Household**: las otras personas de tu hogar. Toca un nombre para ver su perfil, o toca **Manage** para editar tu hogar desde tu perfil. Se oculta si nadie más está vinculado a tu hogar.
+- **My Groups**: los grupos a los que perteneces. Toca un grupo para abrirlo, o toca **All groups** para ver la lista completa.
+- **Giving**: cuánto has dado este año y cuántas ofrendas has hecho. Toca **History** para abrir la página de ofrendas. Se oculta si tu iglesia no acepta donaciones en línea.
 
-- **Editar Perfil** -- Consulta [Editando Tu Perfil](./editing-your-profile.md).
-- **Preferencias de Notificación** -- Consulta [Preferencias de Notificación](./notification-preferences.md).
-- **Mensajes** -- Tus conversaciones privadas.
-- **Dar** -- Dar en línea y ver tu historial de donaciones.
-- **Registros** -- Eventos para los que te has registrado.
+## Solicitudes e inscripciones
 
-Si tu iglesia tiene salas o recursos reservables, aparecen dos atajos más:
+La sección **Requests & registrations** muestra cuántas inscripciones a eventos tienes, con un enlace **Registrations** para administrarlas.
 
-- **Solicitar un Evento** -- Solicita celebrar un evento con las salas y equipos que necesitas. Consulta [Solicitar Eventos y Salas](../events/requesting-events).
-- **Mis Solicitudes** -- Rastrea el estado de tus solicitudes y cancela las pendientes.
+Si tu iglesia tiene salas o recursos reservables, aparecen dos enlaces más:
 
-Si tu iglesia no ha configurado salas o recursos, estos atajos están ocultos.
+- **Request an Event**: pide reservar un evento con las salas y el equipo que necesitas. Consulta [Solicitar eventos y salas](../events/requesting-events).
+- **My Requests**: consulta el estado de tus solicitudes y cancela las pendientes.
 
-## Artículos Relacionados
+Si tu iglesia no ha configurado salas ni recursos, estos enlaces están ocultos.
 
-- [Navegando B1App](./navigating) -- El diseño del portal de miembros
-- [Solicitar Eventos y Salas](../events/requesting-events) -- Envía y rastrea solicitudes de salas/recursos
-- [Mis Registros](../events/my-registrations) -- Gestiona tus registros de eventos
-- [Inscripción de Voluntarios](../serving/volunteer-signup) -- Cómo funcionan las asignaciones de voluntariado
+## Bandeja de entrada
+
+La sección **Inbox** muestra tus dos notificaciones más recientes para que te pongas al día sin abrir cada área del portal. Toca **Open inbox** para ver todas tus notificaciones y mensajes, o toca **Messages** para ir a tus conversaciones privadas.
+
+## Artículos relacionados
+
+- [Navegar por B1App](./navigating): la disposición del portal de miembros
+- [Solicitar eventos y salas](../events/requesting-events): envía y consulta solicitudes de salas y recursos
+- [Mis inscripciones](../events/my-registrations): administra tus inscripciones a eventos
+- [Inscripción de voluntarios](../serving/volunteer-signup): cómo funcionan las asignaciones de servicio

@@ -1,65 +1,65 @@
 ---
-title: "Auto-Registro"
+title: "Registro de entrada automático"
 ---
 
-# Auto-Registro
+# Registro de entrada automático
 
 <div class="article-intro">
 
-El proceso de auto-registro te permite registrar la asistencia para ti mismo y tu hogar en solo unos pocos pasos. Es una alternativa rápida a usar un quiosco físico en la iglesia.
+El proceso de registro de entrada automático te permite registrar tu asistencia y la de tu hogar en solo unos pasos. Es una alternativa rápida a usar un kiosco físico en la iglesia.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Debes estar [iniciado sesión](../getting-started/logging-in.md) en tu cuenta B1.church.
-- Los miembros de tu hogar deben estar vinculados a tu cuenta. Si falta un miembro de la familia, pide al administrador de tu iglesia que lo añada a tu hogar.
+- Debes [haber iniciado sesión](../getting-started/logging-in.md) en tu cuenta de B1.church.
+- Los miembros de tu hogar deben estar vinculados a tu cuenta. Si falta un familiar, pide al administrador de tu iglesia que lo agregue a tu hogar.
 
 </div>
 
-## El Flujo de Registro
+## El proceso de registro de entrada
 
-El registro sigue un proceso simple de tres pasos. Navega a la pestaña **Registro** en la [barra lateral](../getting-started/navigating.md) para comenzar.
+El registro de entrada sigue un proceso sencillo de tres pasos. Abre **Check-In** desde la [barra de pestañas o la página More](../getting-started/navigating.md) para comenzar.
 
-### Paso 1: Selecciona un Servicio
+### Paso 1: seleccionar un servicio
 
-Cuando abres la página de registro, verás una lista de servicios disponibles (por ejemplo, "Domingo por la Mañana" o "Miércoles por la Noche"). Cada tarjeta de servicio muestra el nombre del servicio y el campus si tu iglesia tiene múltiples ubicaciones.
+Al abrir la página de registro, verás una lista de servicios disponibles (por ejemplo, "Sunday Morning" o "Wednesday Evening"). Cada tarjeta de servicio muestra el nombre del servicio y la sede, si tu iglesia tiene varias ubicaciones.
 
-Haz clic en un servicio para seleccionarlo y pasar al siguiente paso.
+Toca un servicio para seleccionarlo y pasar al siguiente paso.
 
-### Paso 2: Selecciona Miembros del Hogar y Grupos
+### Paso 2: seleccionar los miembros del hogar y los grupos
 
-Después de seleccionar un servicio, verás una lista de los miembros de tu hogar. Para cada persona que asista:
+Después de seleccionar un servicio, verás los miembros de tu hogar bajo **Who's here**. Para cada persona que asiste:
 
 1. Toca un miembro del hogar para expandir su entrada.
-2. Verás los **horarios de servicio** disponibles para el servicio que seleccionaste. Si tu iglesia ha establecido un horario de registro para una hora de servicio, esta solo aparece mientras el registro para ella está abierto (por ejemplo, desde 30 minutos antes del servicio hasta poco después de que termine).
-3. Haz clic en **Seleccionar Grupo** junto a un horario de servicio para elegir a qué grupo la persona debe ser registrada (como "Adoración Principal", "Sala de Niños 1" o "Grupo de Jóvenes").
-4. Repite para cada miembro del hogar que está asistiendo.
+2. Verás los **horarios de servicio** disponibles para el servicio que seleccionaste. Si tu iglesia configuró un horario de registro para un horario de servicio, este solo aparece mientras el registro esté abierto (por ejemplo, desde 30 minutos antes del servicio hasta poco después de que termine).
+3. Toca **Select Group** junto a un horario de servicio para elegir el grupo al que se registrará la persona (como "Main Worship", "Kids Room 1" o "Youth Group").
+4. Repite para cada miembro del hogar que esté asistiendo.
 
-No necesitas registrar a todos los miembros del hogar -- solo expande y asigna grupos para las personas que realmente están presentes.
+No necesitas registrar a todos los miembros del hogar; solo expande y asigna grupos a las personas que realmente están presentes.
 
-### Paso 3: Confirmación
+### Paso 3: confirmación
 
-Una vez que hayas seleccionado grupos para todos los que están asistiendo, haz clic en el botón **Completar Registro** en la parte inferior de la página.
+Cuando hayas seleccionado grupos para todas las personas que asisten, toca el botón de la parte inferior de la página. Indica la cantidad de personas que seleccionaste, por ejemplo **Check in 1 person** o **Check in 3 people**.
 
-Verás una confirmación de que tu registro está completo y tu asistencia ha sido guardada. Después de un momento, la página regresa a la lista de servicios, lista para el siguiente registro.
+Verás una confirmación de que tu registro está completo y de que tu asistencia se guardó. Después de un momento, la página vuelve a la lista de servicios, lista para el siguiente registro.
 
-Si tu iglesia imprime etiquetas de nombre en una estación de registro, en su lugar verás **¡Estás registrado!** con un código QR y un código de seguridad. Muestra el código en una estación de registro para imprimir tus etiquetas de nombre, luego toca **Listo**. En un quiosco B1 Checkin, toca **Escanear código** y sostén el código QR frente a la cámara -- consulta [Impresión de Etiquetas para Registro desde Teléfono](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Si tu iglesia imprime etiquetas con el nombre en una estación de registro, verás **You're checked in!** con un código QR y un código de seguridad. Muestra el código en una estación de registro para imprimir tus etiquetas con el nombre y luego toca **Done**. En un kiosco de B1 Checkin, toca **Scan code** y acerca el código QR a la cámara; consulta [Imprimir etiquetas para un registro desde el teléfono](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
 
-Si tu hogar ya está registrado para el servicio que seleccionaste, aparece un botón **Mostrar código de registro** encima de tu lista de miembros del hogar. Tócalo para traer el código QR y código de seguridad de vuelta -- por ejemplo, si cerraste la página antes de llegar a una estación de registro.
+Si tu hogar ya está registrado para el servicio que seleccionaste, aparece un enlace **Show check-in code** junto al encabezado **Who's here**. Tócalo para volver a mostrar el código QR y el código de seguridad; por ejemplo, si cerraste la página antes de llegar a una estación de registro.
 
 :::tip
-Si necesitas cambiar una selección de grupo antes de completar el registro, toca el botón **Cambiar** junto a cualquier horario de servicio para elegir un grupo diferente.
+Si necesitas cambiar la selección de grupo antes de completar el registro, toca el botón **Change** junto a cualquier horario de servicio para elegir otro grupo.
 :::
 
-## Cosas que Debes Saber
+## Cosas que debes saber
 
-- Solo puedes registrar miembros del hogar que están vinculados a tu cuenta. Si falta un miembro de la familia, pide al administrador de tu iglesia que lo añada a tu hogar.
-- Si no aparecen servicios en la página de registro, tu iglesia puede no tener servicios configurados para registro en este momento.
-- Si seleccionas un servicio y ves "Check-in isn't open for this service right now", ninguna de las horas de ese servicio está dentro de su ventana de registro en este momento. Inténtalo de nuevo más cerca de la hora del servicio.
+- Solo puedes registrar a los miembros del hogar vinculados a tu cuenta. Si falta un familiar, pide al administrador de tu iglesia que lo agregue a tu hogar.
+- Si no aparece ningún servicio en la página de registro, es posible que tu iglesia todavía no tenga servicios configurados para el registro.
+- Si seleccionas un servicio y ves "Check-in isn't open for this service right now", ninguno de los horarios de ese servicio está dentro de su ventana de registro en este momento. Vuelve a intentarlo más cerca de la hora del servicio.
 - Si una sala que elegiste está llena o cerrada, verás "A room you picked is full or closed for check-in. Please see a volunteer."
 
 :::warning
-El registro solo está disponible cuando tu iglesia tiene servicios activos configurados. Si no ves servicios listados, verifica con la oficina de tu iglesia para confirmar si el auto-registro está habilitado.
+El registro de entrada solo está disponible cuando tu iglesia tiene servicios activos configurados. Si no ves ningún servicio en la lista, consulta con la oficina de tu iglesia para confirmar si el registro automático está habilitado.
 :::

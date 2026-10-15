@@ -25,7 +25,7 @@ Base path: `/doing/plans`
 | GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + ministry edit | Preview the serving overview **Text Volunteers** send: `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }` for the volunteers assigned in the range (one per person, opted-out and missing numbers skipped, shared numbers deduplicated, capped at 200) |
 | GET | `/presenter` | JWT | — | Get plans for the next 7 days (presenter view) |
 | GET | `/public/current/:planTypeId` | Public | — | Get the current plan for a plan type |
-| GET | `/public/signup/:churchId` | Public | — | Plans open for self-signup, each with its self-signup positions (plus `filledCount` of Accepted/Unconfirmed assignments) and times. No volunteer names |
+| GET | `/public/signup/:churchId` | Public | — | Plans open for self-signup, soonest first, each with its self-signup positions (sorted by `categoryName`, then `name`, plus `filledCount` of Accepted/Unconfirmed assignments) and times. No volunteer names. When the church setting `volunteerSignupNextOnly` is `"true"`, only the first plan of each plan type is returned |
 | GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` for the plan's self-signup positions (display names of Accepted/Unconfirmed assignees). Returns `[]` unless the plan's `showVolunteerNames` is on |
 | POST | `/` | JWT | — | Create or update plans (accepts single object or array) |
 | POST | `/copy/:id` | JWT | Ministry edit | Copy a plan including positions, times, assignments, and service order items. Body includes `ministryId`, `serviceDate`, `copyMode` ("none", "positions", "all") and `copyServiceOrder` (boolean). Without `targetPlanId` a new plan is created, and `notes`, `signupDeadlineHours`, `showVolunteerNames`, and `autoReplaceOnDecline` carry over from the source plan unless the body supplies them. With `targetPlanId`, the copy fills that existing plan instead (the caller must be able to edit it). B1Admin's **Repeat weekly** option calls this once per week, each time copying from the plan created the week before |
@@ -130,6 +130,7 @@ Base path: `/doing/assignments`
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
 | GET | `/my` | JWT | — | Get assignments for the current user |
+| GET | `/my/upcoming` | JWT | — | Up to 20 of the current user's assignments on plans dated from yesterday on (penciled-in, or `prepared`, plans are skipped), soonest first: `{ assignmentId, status, positionName, planId, planName, serviceDate }`. Backs the serving preview on the member home page |
 | GET | `/:id` | JWT | — | Get an assignment by ID |
 | GET | `/plan/ids?planIds=` | JWT | — | Get assignments for multiple plans by comma-separated plan IDs |
 | GET | `/plan/:planId` | JWT | — | Get all assignments for a plan |

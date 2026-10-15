@@ -1,75 +1,82 @@
 ---
-title: "Manejar tu Perfil"
+title: "Administrar tu perfil"
 ---
 
-# Manejar tu Perfil
+# Administrar tu perfil
 
 <div class="article-intro">
 
-La página de Perfil te permite editar la configuración de tu cuenta personal. Tu perfil se comparte en todos los productos de ChurchApps, por lo que cualquier cambio que hagas aquí se reflejará en todas partes que uses ChurchApps.
+La página de perfil te permite editar la configuración personal de tu cuenta. Tu perfil se comparte entre todos los productos de ChurchApps, así que cualquier cambio que hagas aquí se reflejará en todos los lugares donde uses ChurchApps.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Debes estar conectado a tu cuenta de ChurchApps
-- Ten tu nueva dirección de correo electrónico o contraseña lista si planeas actualizarlas
+- Debes haber iniciado sesión en tu cuenta de ChurchApps
+- Ten lista tu nueva dirección de correo electrónico o contraseña si planeas actualizarlas
 
 </div>
 
-## Información del Perfil
+## Información del perfil
 
-La página de Perfil muestra tu nombre y correo electrónico a la izquierda, con un botón **Editar** debajo de ellos. Haz clic en **Editar** para abrir el formulario **Editar Cuenta**, que contiene los detalles básicos de tu cuenta:
+La página de perfil muestra tu nombre y tu correo electrónico a la izquierda, con un botón **Edit** debajo. Haz clic en **Edit** para abrir el formulario **Edit Account**, que contiene los datos básicos de tu cuenta:
 
-1. **Correo Electrónico** -- Tu dirección de correo electrónico usado para iniciar sesión y recibir notificaciones.
-2. **Nombre de Pila** y **Apellido** -- Tu nombre de visualización en ChurchApps.
-3. **Contraseña** -- Actualiza la contraseña de tu cuenta.
+1. **Email**: tu dirección de correo electrónico, que se usa para iniciar sesión y recibir notificaciones.
+2. **First Name** y **Last Name**: tu nombre para mostrar en ChurchApps.
+3. **Password**: actualiza la contraseña de tu cuenta.
 
-Para actualizar tu información, edita los campos y haz clic en el botón **Guardar Cambios**. Haz clic en **Cancelar** (o en el enlace **Volver a** con tu nombre) para regresar a tu perfil sin guardar.
+Para actualizar tus datos, edita los campos y haz clic en el botón **Save Changes**. Haz clic en **Cancel** (o en el enlace **Back to** con tu nombre) para volver a tu perfil sin guardar.
 
-## Cambiar tu Contraseña
+## Cambiar tu contraseña
 
-1. En la página de Perfil, haz clic en **Editar**.
-2. Ingresa tu **Contraseña Actual**.
-3. Ingresa tu nueva contraseña en el campo **Nueva contraseña**.
-4. Vuelve a ingresarla en el campo **Verificar contraseña**.
-5. Haz clic en **Guardar Cambios**.
+1. En la página de perfil, haz clic en **Edit**.
+2. Escribe tu **Current password**.
+3. Escribe tu nueva contraseña en el campo **New password**.
+4. Vuelve a escribirla en el campo **Verify password**.
+5. Haz clic en **Save Changes**.
 
 :::info
-Tu contraseña debe tener al menos 8 caracteres. Asegúrate de que la contraseña y los campos de confirmación coincidan exactamente. Debes confirmar tu contraseña actual para cambiarla -- si no la recuerdas, usa el enlace **Contraseña Olvidada** en la página de inicio de sesión en su lugar.
+Tu contraseña debe tener al menos 8 caracteres. Asegúrate de que los campos de contraseña y de confirmación coincidan exactamente. Debes confirmar tu contraseña actual para cambiarla; si no la recuerdas, usa el enlace **Forgot Password** de la página de inicio de sesión.
 :::
 
-## Cuentas Vinculadas
+## Cuentas vinculadas
 
-La sección **Cuentas Vinculadas** muestra cualquier servicio externo conectado a tu cuenta de ChurchApps. Puedes ver qué cuentas están vinculadas y manejar esas conexiones desde esta sección.
+La sección **Linked Accounts** muestra los servicios externos conectados a tu cuenta de ChurchApps. Desde esta sección puedes ver qué cuentas están vinculadas y administrar esas conexiones.
 
-## Preferencias de Tema
+## Preferencias de tema
 
-B1 Admin admite modos de visualización claro y oscuro:
+B1 Admin te permite elegir un tema de color y un modo de visualización claro u oscuro:
 
 1. Haz clic en tu foto de perfil en la esquina superior derecha de B1 Admin para abrir tu menú de usuario.
-2. En **Preferencias de Tema**, elige **Modo Claro** o **Modo Oscuro**.
-3. La interfaz se actualizará inmediatamente para reflejar tu elección.
+2. En **Theme Preferences**, elige un tema:
+   - **Default**: el aspecto actual de B1 Admin, con paneles con borde sobre un fondo limpio.
+   - **Classic**: el aspecto anterior de B1 Admin, con un encabezado de página de color, tarjetas con sombra y un fondo gris. Es lo que ves hasta que eliges un tema.
+   - **Custom**: el aspecto Default construido con el color propio de tu iglesia. Usa el color principal del modo claro de **Mobile > App Theme**, o el color principal de tu sitio web si no hay un color de app configurado, de modo que B1 Admin coincida con la app de tus miembros.
+3. Debajo de los temas, elige **Light Mode** o **Dark Mode**.
+4. La interfaz se actualiza de inmediato para reflejar tu elección.
 
-Tu elección se recuerda en ese dispositivo y navegador.
+Tus preferencias se recuerdan en ese dispositivo y navegador.
 
-## Eliminación de Cuenta
+## Eliminar la cuenta
 
-En la sección **Eliminación de Cuenta** de la página de Perfil, encontrarás la opción para eliminar permanentemente tu cuenta. Esta acción elimina tu cuenta y datos asociados y no se puede deshacer.
+En la sección **Account Deletion** de la página de perfil encontrarás la opción para eliminar tu cuenta.
+
+- Si tu iglesia **no** ha configurado un grupo de aprobación del directorio, al hacer clic en **Delete my account** tu cuenta y sus datos asociados se eliminan de inmediato, y esto no se puede deshacer.
+- Si tu iglesia **sí** ha configurado un grupo de aprobación del directorio, tu solicitud se envía a ese grupo para revisión. El botón se desactiva mientras la solicitud está pendiente, y se te notificará cuando tu iglesia la apruebe o la rechace. Consulta [Revisar las solicitudes de eliminación de cuenta](./account-deletion.md) para saber qué sigue.
 
 :::warning
-La eliminación de cuenta es permanente y no se puede revertir. Asegúrate de que realmente deseas eliminar tu cuenta antes de proceder.
+La eliminación de la cuenta, ya sea inmediata o aprobada por tu iglesia, es permanente y no se puede revertir.
 :::
 
 :::info
-Si eres un **Administrador de Dominio**, asegúrate de transferir responsabilidades administrativas a otro usuario antes de eliminar tu cuenta. Consulta [Roles y Permisos](../settings/roles-permissions.md) para detalles sobre manejo de roles de administrador.
+Si eres **Domain Admin**, asegúrate de transferir las responsabilidades administrativas a otro usuario antes de eliminar tu cuenta. Consulta [Roles y permisos](../settings/roles-permissions.md) para más detalles sobre la administración de roles de administrador.
 :::
 
 :::info
-La edición de perfil está deshabilitada en modo demo. Si estás usando una cuenta de demo, no podrás hacer cambios en la configuración de tu perfil.
+La edición del perfil está deshabilitada en el modo de demostración. Si usas una cuenta de demostración, no podrás hacer cambios en la configuración de tu perfil.
 :::
 
-## Próximos Pasos
+## Próximos pasos
 
-- [Manejar Dispositivos](./devices.md) -- Ver y manejar tus dispositivos ChurchAppsPlayer conectados
+- [Administrar dispositivos](./devices.md): consulta y administra tus dispositivos ChurchAppsPlayer conectados

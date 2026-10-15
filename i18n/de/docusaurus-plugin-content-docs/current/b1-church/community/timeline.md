@@ -1,44 +1,33 @@
 ---
-title: "Chronik"
+title: "Zeitleiste"
 ---
 
-# Chronik
+# Zeitleiste
 
 <div class="article-intro">
 
-Die **Chronik** ist die Standard-Startseite Ihres B1.church-Mitgliederportals. Sie bietet einen Aktivitäts-Feed mit den neuesten Aktualisierungen aus Ihren Gruppen und Ihrer Gemeinde -- alles an einem praktischen Ort.
+Der eigenständige Reiter **Zeitleiste** wurde eingestellt. Das Mitgliederportal öffnet nun die [Startseite](../getting-started/navigating.md), und die Aktivitäten, die früher in einem gemeinsamen Verlauf erschienen, werden dort angezeigt, wo sie hingehören: auf der Seite Ich, in den Benachrichtigungen und innerhalb jeder Gruppe.
 
 </div>
 
-<div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+## Wo die Aktivitäten der Zeitleiste jetzt zu finden sind
 
-- Sie müssen in Ihrem B1.church-Konto [angemeldet](../getting-started/logging-in.md) sein.
+| Was Sie früher in der Zeitleiste gesehen haben | Wo Sie es jetzt finden |
+| --- | --- |
+| Gruppengespräche und Ankündigungen | Der Chat innerhalb jeder [Gruppe](../groups/conversations.md) (**Chat öffnen**) |
+| Kommende Veranstaltungen für Sie und Ihre Gruppen | Die Seite **Ich** (`/mobile/me`) und der Abschnitt **Nächste Veranstaltung** jeder Gruppe |
+| Aufgaben und Dienstzuweisungen | Die Seite **Ich** und [Pläne](../plans/) |
+| Neue Predigten | Der Abschnitt **Neueste Predigt** auf der Startseite und der Reiter [Predigten](../content/sermons.md) |
+| Alles, was Sie benachrichtigt hat | Das **Glockensymbol** in der App-Leiste oder `/mobile/notifications` |
 
-</div>
+## Die Seite „Ich“
 
-## Was die Chronik anzeigt
+[Die Seite Ich](../getting-started/me-page) ist der engste Ersatz für den früheren Verlauf. Sie zeigt, was für Sie ansteht, etwa Dienstzuweisungen, Veranstaltungsanmeldungen und Gruppenveranstaltungen, zusammen mit Ihren neuesten Benachrichtigungen. Außerdem führt sie direkt zu Ihrem Profil, zu den Benachrichtigungseinstellungen, Nachrichten, Spenden und Anmeldungen.
 
-Die Chronik zeigt einen Feed aus Beiträgen und Aktualisierungen, darunter unter anderem:
+## Benachrichtigungen
 
-- **Gruppenunterhaltungen** -- Nachrichten und Diskussionen aus [Gruppen](../groups/), denen Sie angehören.
-- **Aufgaben** -- Ihnen oder Ihren Gruppen zugewiesene Aufgaben.
-- **Veranstaltungen** -- Bevorstehende Veranstaltungen, die für Sie und Ihre Gruppen relevant sind.
-- **Lektionen** -- Lehrplan- und [Lektionsinhalte](../content/lessons.md), die mit Ihren Gruppen geteilt werden.
-- **Predigten** -- Aktuelle [Predigten](../content/sermons.md), die von Ihrer Gemeinde veröffentlicht wurden.
-
-Jeder Beitrag im Feed zeigt den Titel, die zugehörige Gruppe (falls zutreffend) und den Zeitpunkt der Veröffentlichung an.
-
-## Beitragsdetails anzeigen
-
-Die Chronik verwendet ein Master-Detail-Layout. Ihr Feed wird auf der linken Seite aufgelistet. Klicken Sie auf einen Beitrag, um die vollständigen Details im rechten Bereich zu öffnen. In der Detailansicht können Sie den gesamten Inhalt des Beitrags lesen und damit interagieren.
-
-Klicken Sie oben im Detailbereich auf **Zurück zu Aktualisierungen**, um zur Feed-Liste zurückzukehren.
-
-## In Verbindung bleiben
-
-Die Chronik fasst Aktivitäten aus all Ihren Gruppen in einem einzigen Feed zusammen, sodass Sie nicht jede Gruppe einzeln überprüfen müssen. Es ist eine gute Gewohnheit, Ihre Chronik regelmäßig zu besuchen, um über das Geschehen in Ihrer Gemeinde informiert zu bleiben.
+Alles, was früher als Eintrag in der Zeitleiste erschienen wäre und Ihre Aufmerksamkeit erforderte, kommt nun als Benachrichtigung an. Tippen Sie auf die Glocke in der App-Leiste, um die neuesten zu sehen, oder tippen Sie auf **Alle anzeigen** (bzw. öffnen Sie `/mobile/notifications`), um die vollständige Liste zu sehen. Ein Tipp auf eine Benachrichtigung führt Sie zur Gruppe, zum Plan oder zum Gespräch, von dem sie stammt. Welche Benachrichtigungen Sie erhalten und wie, können Sie unter [Benachrichtigungseinstellungen](../getting-started/notification-preferences.md) festlegen.
 
 :::tip
-Wenn Ihre Chronik leer ist, sind Sie möglicherweise noch keiner Gruppe beigetreten. Besuchen Sie die Seite [Gruppen](../groups/browsing-groups.md), um Gruppen zum Beitreten zu finden, oder bitten Sie Ihren Gemeindeadministrator oder Gruppenleiter, Sie hinzuzufügen.
+Wenn Ihre Seite Ich leer aussieht, sind Sie möglicherweise noch keiner Gruppe beigetreten. Besuchen Sie die Seite [Gruppen](../groups/browsing-groups.md), um Gruppen zu finden, denen Sie beitreten können, oder bitten Sie Ihre Gemeindeverwaltung oder Gruppenleitung, Sie hinzuzufügen.
 :::

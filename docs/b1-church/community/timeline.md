@@ -14,10 +14,10 @@ The standalone **Timeline** tab has been retired. The member portal now opens on
 
 | What you used to see on the Timeline | Where to find it now |
 | --- | --- |
-| Group conversations and announcements | The **Messages** tab inside each [group](../groups/conversations.md) |
-| Upcoming events for you and your groups | The **Me** page (`/mobile/me`) and each group's **Events** tab |
+| Group conversations and announcements | The chat inside each [group](../groups/conversations.md) (**Open chat**) |
+| Upcoming events for you and your groups | The **Me** page (`/mobile/me`) and each group's **Next event** section |
 | Tasks and serving assignments | The **Me** page and [Plans](../plans/) |
-| New sermons | The [Sermons](../content/sermons.md) tab |
+| New sermons | The **Latest sermon** section on Home and the [Sermons](../content/sermons.md) tab |
 | Anything that pinged you | The **bell** icon in the app bar, or `/mobile/notifications` |
 
 ## The Me Page
@@ -26,7 +26,7 @@ The standalone **Timeline** tab has been retired. The member portal now opens on
 
 ## Notifications
 
-Anything that would previously have appeared as a Timeline item and needed your attention now arrives as a notification. Tap the bell in the app bar to see the list, or open `/mobile/notifications`. Tapping a notification takes you to the group, plan, or conversation it came from. You can control which notifications you get -- and how -- under [Notification Preferences](../getting-started/notification-preferences.md).
+Anything that would previously have appeared as a Timeline item and needed your attention now arrives as a notification. Tap the bell in the app bar to see the latest ones, or tap **See all** (or open `/mobile/notifications`) for the full list. Tapping a notification takes you to the group, plan, or conversation it came from. You can control which notifications you get -- and how -- under [Notification Preferences](../getting-started/notification-preferences.md).
 
 :::tip
 If your Me page looks empty, you may not be a member of any groups yet. Visit the [Groups](../groups/browsing-groups.md) page to find groups to join, or ask your church administrator or group leader to add you.

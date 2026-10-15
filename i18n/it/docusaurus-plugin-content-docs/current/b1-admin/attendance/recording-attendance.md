@@ -1,104 +1,104 @@
 ---
-title: "Registrazione delle presenze"
+title: "Registrare le presenze"
 ---
 
-# Registrazione delle presenze
+# Registrare le presenze
 
 <div class="article-intro">
 
-Una volta configurati i campus, gli orari dei servizi e i gruppi, potete registrare manualmente le presenze dopo ogni riunione. B1 Admin organizza le presenze attorno alle **sessioni** -- una sessione per gruppo per data di riunione. Create la sessione, segnate chi ha partecipato, e i dati alimentano direttamente i vostri report di presenze.
+Una volta configurati i campus, gli orari di culto e i gruppi, puoi registrare manualmente le presenze dopo ogni incontro. B1 Admin organizza le presenze attorno alle **sessioni**: una sessione per gruppo per ogni data di incontro. Crei la sessione, segni chi era presente e i dati confluiscono direttamente nei tuoi report sulle presenze.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- I vostri campus, orari dei servizi e gruppi devono essere configurati. Vedere [Configurazione delle presenze](setup.md) se non lo avete ancora fatto.
-- I gruppi che volete tracciare devono avere **Monitoraggio delle presenze** abilitato. Vedere [Configurazione delle presenze](setup.md) per i dettagli.
+- I tuoi campus, orari di culto e gruppi devono essere configurati. Consulta [Configurazione delle presenze](setup.md) se non l'hai ancora fatto.
+- I gruppi che vuoi monitorare devono avere attiva l'opzione **Monitora presenze**. Consulta [Configurazione delle presenze](setup.md) per i dettagli.
 
 </div>
 
-## Creazione di una sessione
+## Creare una sessione
 
-Una sessione rappresenta un'occorrenza di una riunione di gruppo -- ad esempio, la vostra classe di K-3° elementare una specifica domenica.
+Una sessione rappresenta un singolo incontro di un gruppo, ad esempio la classe K-3ª elementare in una specifica domenica.
 
-1. Aprite **B1 Admin**, aprite il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandete **Persone**, e fate clic su **Gruppi**.
-2. Selezionate il gruppo per il quale volete registrare le presenze.
-3. Nella sezione **Sessioni** della pagina del gruppo, fate clic su **Tutte le sessioni**.
-4. Fate clic su **Nuovo** per creare una nuova sessione.
-5. Se il gruppo è assegnato a un orario di servizio, scegliete l'**Orario del servizio**. Se è un gruppo non programmato, questo campo non apparirà.
-6. Selezionate la **Data della sessione** -- può essere oggi, una data passata, o una data futura.
-7. Fate clic su **Salva**.
+1. Apri **B1 Admin**, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Persone** e fai clic su **Gruppi**.
+2. Seleziona il gruppo per cui vuoi registrare le presenze.
+3. Nella sezione **Sessioni** della pagina del gruppo, fai clic su **Tutte le sessioni**.
+4. Fai clic su **Nuova** per creare una nuova sessione.
+5. Se al gruppo è assegnato un orario di culto, scegli l'**Orario di culto**. Se si tratta di un gruppo non programmato, questo campo non compare.
+6. Seleziona la **Data della sessione**: può essere oggi, una data passata o una data futura.
+7. Fai clic su **Salva**.
 
-### Aggiunta di sessioni per ogni classe in un orario di servizio
+### Aggiungere sessioni per tutte le classi di un orario di culto
 
-Se altri gruppi si incontrano nello stesso orario di servizio (ad esempio, tutte le vostre lezioni per bambini alla domenica ore 9:00), potete creare le loro sessioni in un passaggio invece di visitare ogni gruppo.
+Se altri gruppi si riuniscono nello stesso orario di culto (ad esempio tutte le classi dei bambini alla domenica alle 9:00), puoi creare le loro sessioni in un solo passaggio invece di visitare ogni gruppo.
 
-1. Seguite i passaggi di cui sopra e scegliete un **Orario del servizio**.
-2. Spuntate **Aggiungi anche per gli altri _N_ gruppi in _orario del servizio_**. La casella di controllo mostra quanti altri gruppi sono assegnati a quell'orario di servizio. Appare solo quando si aggiunge una nuova sessione e almeno un altro gruppo si incontra in quel momento.
-3. Fate clic su **Salva**.
+1. Segui i passaggi sopra e scegli un **Orario di culto**.
+2. Seleziona **Aggiungi anche per gli altri _N_ gruppi in _orario di culto_**. La casella indica quanti altri gruppi sono assegnati a quell'orario di culto. Compare solo quando si aggiunge una nuova sessione e almeno un altro gruppo si riunisce in quell'orario.
+3. Fai clic su **Salva**.
 
-Una sessione viene creata per il gruppo corrente e per ognuno degli altri gruppi sulla stessa data e orario di servizio. I gruppi che hanno già una sessione per quella data e orario di servizio vengono saltati, quindi non otterrete duplicati.
+Viene creata una sessione per il gruppo corrente e per ciascuno degli altri gruppi nella stessa data e allo stesso orario di culto. I gruppi che hanno già una sessione per quella data e quell'orario vengono saltati, così non otterrai dei duplicati.
 
 :::tip
-Potete creare sessioni per date passate per recuperare le presenze che non avete ancora registrato, o crearle in anticipo in modo che siano pronte quando il vostro gruppo si incontra.
+Puoi creare sessioni per date passate per recuperare le presenze che non hai ancora registrato, oppure crearle in anticipo così sono pronte quando il tuo gruppo si riunisce.
 :::
 
-## Marcatura delle presenze
+## Segnare le presenze
 
-Selezionate una sessione per vedere il suo elenco di presenze. Ogni membro del gruppo è elencato con una casella di controllo, ordinato per cognome, e chiunque sia già registrato come presente è controllato.
+Seleziona una sessione per vedere il suo elenco di presenze. Ogni membro del gruppo è elencato con una casella di controllo, ordinato per cognome, e chi è già stato registrato come presente risulta selezionato.
 
-1. Spuntate la casella accanto a ogni persona che ha frequentato. Utilizzate **Seleziona tutto** o **Deseleziona tutto** per cambiare tutti contemporaneamente.
-2. Il conteggio sopra l'elenco (ad esempio, "12 di 15 presenti") si aggiorna mentre spuntate le caselle.
-3. Fate clic su **Salva presenze**. Nulla viene registrato fino a quando non salvate, e un messaggio conferma quando il salvataggio è fatto.
+1. Seleziona la casella accanto a ogni persona che ha partecipato. Usa **Seleziona tutti** o **Deseleziona tutti** per modificare tutti insieme.
+2. Il conteggio sopra l'elenco (ad esempio "12 presenti su 15") si aggiorna mano a mano che selezioni le caselle.
+3. Fai clic su **Salva presenze**. Nulla viene registrato finché non salvi, e un messaggio conferma quando il salvataggio è completato.
 
-Deselezionare qualcuno che era già registrato come presente e poi salvare lo rimuove dalla sessione.
+Se deselezioni una persona che era già registrata come presente e poi salvi, questa viene rimossa dalla sessione.
 
-### Aggiunta di visitatori
+### Aggiungere visitatori
 
-Per registrare qualcuno che non è un membro del gruppo, cercatelo nella ricerca persona accanto all'elenco delle presenze. Se non sono ancora nel vostro database, potete crearli dalla ricerca. Vengono aggiunti all'elenco già selezionati. Fate clic su **Salva presenze** per registrarli.
+Per registrare una persona che non è membro del gruppo, cercala con la ricerca persone accanto all'elenco delle presenze. Se non è ancora presente nel tuo database, puoi crearla dalla ricerca. In entrambi i casi, viene aggiunta all'elenco già selezionata. Fai clic su **Salva presenze** per registrarla.
 
-Le persone che hanno fatto il check-in a un chiosco mostrano un chip **Volontario** o **Ospite**. Le persone che non sono membri del gruppo mostrano un chip **Ospite**.
+Le persone registrate a un kiosk mostrano un'etichetta **Volontario** o **Ospite**. Le persone che non sono membri del gruppo mostrano un'etichetta **Ospite**.
 
-## Controllo dei gruppi che ancora necessitano di presenze
+## Verificare quali gruppi devono ancora inserire le presenze
 
-Quando diverse classi si incontrano nello stesso orario di servizio, potete vedere a colpo d'occhio quali ancora necessitano di presenze inserite per quella data.
+Quando più classi si riuniscono nello stesso orario di culto, puoi vedere a colpo d'occhio quali devono ancora inserire le presenze per quella data.
 
-1. Aprite una sessione che ha un orario di servizio.
-2. Fate clic su **Chi ancora necessita di presenze** in cima all'elenco delle presenze.
-3. Una finestra di dialogo elenca ogni gruppo assegnato a quell'orario di servizio, con un riepilogo come "5 di 8 gruppi inseriti" in cima.
+1. Apri una sessione che ha un orario di culto.
+2. Fai clic su **Chi deve ancora inserire le presenze** in cima all'elenco delle presenze.
+3. Una finestra elenca ogni gruppo assegnato a quell'orario di culto, con un riepilogo come "5 gruppi su 8 inseriti" in alto.
 
-I gruppi senza nessuno marcato come presente per quella data mostrano un chip **Non inserito** e sono elencati per primi. I gruppi che hanno presenze mostrano **Inserito** con il numero di persone marcate come presenti (ad esempio, "Inserito (12)"). Fate clic sul nome di un gruppo per passare a quel gruppo e registrare le sue presenze.
+I gruppi senza persone segnate come presenti per quella data mostrano un'etichetta **Non inserito** e compaiono per primi. I gruppi con presenze mostrano **Inserito** con il numero di persone segnate come presenti (ad esempio "Inserito (12)"). Fai clic sul nome di un gruppo per aprire le sessioni di quel gruppo con la sessione della stessa data già selezionata, così puoi registrarne subito le presenze. Se il gruppo non ha ancora una sessione per quella data, si apre il suo elenco di sessioni così puoi aggiungerne una.
 
 :::tip
-Abbinate questo a **Stampa tutte le classi** e [aggiunta di sessioni per ogni classe in un orario di servizio](#adding-sessions-for-every-class-in-a-service-time): create le sessioni, distribuite i fogli di controllo, poi utilizzate **Chi ancora necessita di presenze** per vedere quali fogli non sono stati ancora inseriti.
+Abbina questa funzione a **Stampa tutte le classi** e [all'aggiunta di sessioni per tutte le classi di un orario di culto](#adding-sessions-for-every-class-in-a-service-time): crea le sessioni, distribuisci i fogli presenze, poi usa **Chi deve ancora inserire le presenze** per vedere quali fogli non sono ancora stati inseriti.
 :::
 
-## Stampa di un foglio di controllo
+## Stampare un foglio presenze
 
-Un foglio di controllo è un elenco di classe stampabile che gli insegnanti possono segnare a mano e riconsegnarvi per inserire in seguito. Ogni foglio mostra il logo della vostra chiesa (il **Logo per sfondo chiaro** di [Sito web > Aspetto](../website/appearance.md), se ne avete caricato uno) con il nome della chiesa sotto, la classe, una grande riga **Data** sotto il nome della classe, e l'orario del servizio. I membri sono elencati in due colonne (leggi la colonna sinistra, poi la destra) in modo che più nomi si adattino a una pagina, e ogni membro ha caselle **Presente** e **Assente**. Ci sono righe vuote per i visitatori e un'area **Insegnante / Note**.
+Un foglio presenze è un elenco stampabile della classe che gli insegnanti possono segnare a mano e restituirti per inserirlo in seguito. Ogni foglio mostra il logo della tua chiesa (il **Logo per sfondo chiaro** di [Sito web > Aspetto](../website/appearance.md), se ne hai caricato uno) con il nome della chiesa sotto, il nome della classe, una grande riga **Data** sotto il nome della classe e l'orario di culto. I membri sono elencati su due colonne (si legge prima la colonna di sinistra, poi quella di destra) così entrano più nomi in una pagina, e ogni membro ha le caselle **Presente** e **Assente**. Ci sono righe vuote per i visitatori e un'area **Insegnante / Note**.
 
-- **Da una sessione** -- Fate clic sull'icona **Stampa foglio di controllo** (stampante) in cima all'elenco delle presenze della sessione. Il foglio è datato con la data della sessione.
-- **Tutte le classi per un servizio** -- Se la sessione ha un orario di servizio, fate clic su **Stampa tutte le classi** per stampare un foglio per classe assegnata a quell'orario di servizio. Ogni classe stampa sulla sua propria pagina.
-- **Dall'elenco dei membri** -- Nella pagina del gruppo, fate clic su **Tutti i membri**, quindi fate clic sull'icona **Stampa foglio di controllo** sopra l'elenco dei membri e scegliete **Foglio di presenza** per stampare un foglio senza data. Lo stesso menu offre un layout **Rubrica dei contatti** con telefono, email e indirizzo di ogni membro -- vedi [Stampa dell'elenco dei membri](../groups/group-members.md#printing-the-member-list).
+- **Dalla sessione** -- Fai clic sull'icona della stampante **Stampa foglio presenze** in cima all'elenco delle presenze della sessione. Il foglio riporta la data della sessione.
+- **Tutte le classi per un culto** -- Se la sessione ha un orario di culto, fai clic su **Stampa tutte le classi** per stampare un foglio per ogni classe assegnata a quell'orario di culto. Ogni classe viene stampata nella propria pagina.
+- **Dall'elenco dei membri** -- Nella pagina del gruppo, fai clic su **Tutti i membri**, poi sull'icona **Stampa foglio presenze** sopra l'elenco dei membri e scegli **Foglio presenze** per stampare un foglio senza data. Lo stesso menu ha un layout **Elenco contatti** con telefono, email e indirizzo di ciascun membro -- consulta [Stampare l'elenco dei membri](../groups/group-members.md#printing-the-member-list).
 
-Il foglio si apre in una nuova scheda e la finestra di dialogo di stampa del vostro browser appare automaticamente.
+Il foglio si apre in una nuova scheda e compare automaticamente la finestra di stampa del browser.
 
-## Esportazione delle presenze in un foglio di calcolo
+## Esportare le presenze in un foglio di calcolo
 
-Potete scaricare un record della sessione come file CSV da utilizzare in Excel, Numbers, o Google Sheets.
+Puoi scaricare un registro della sessione come file CSV da usare in Excel, Numbers o Fogli Google.
 
-1. Aprite la sessione che volete esportare.
-2. Fate clic sul pulsante **Esporta** in cima all'elenco delle presenze.
-3. Aprite il file scaricato nella vostra applicazione di foglio di calcolo.
+1. Apri la sessione che vuoi esportare.
+2. Fai clic sul pulsante **Esporta** in cima all'elenco delle presenze.
+3. Apri il file scaricato con la tua applicazione per fogli di calcolo.
 
-## Visualizzazione delle presenze registrate
+## Visualizzare le presenze registrate
 
-Dopo la registrazione delle sessioni, i dati appaiono nei vostri report di presenze.
+Dopo aver registrato le sessioni, i dati compaiono nei tuoi report sulle presenze.
 
-- **Scheda Andamento presenze** (sotto **Tutti gli anni** nella pagina Presenze) -- mostra tendenze a livello di chiesa nel tempo. Vedere [Monitoraggio delle presenze](tracking-attendance.md).
-- **Scheda Presenze per gruppo** -- mostra le presenze suddivise per singolo gruppo. Vedere [Report di presenze](../reports/attendance-reports.md#group-attendance).
+- **Scheda Andamento presenze** (sotto **Tutti gli anni** nella pagina Presenze) -- mostra le tendenze generali della chiesa nel tempo. Consulta [Monitorare le presenze](tracking-attendance.md).
+- **Scheda Presenze per gruppo** -- mostra le presenze suddivise per singolo gruppo. Consulta [Report sulle presenze](../reports/attendance-reports.md#group-attendance).
 
 :::tip
-Se una sessione appena creata non appare nei report subito, assicuratevi che la data della sessione rientri nell'intervallo di date selezionato nei filtri del report.
+Se una sessione appena creata non compare subito nei report, assicurati che la data della sessione rientri nell'intervallo di date selezionato nei filtri del report.
 :::

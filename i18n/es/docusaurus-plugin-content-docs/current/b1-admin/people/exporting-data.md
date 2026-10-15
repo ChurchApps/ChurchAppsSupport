@@ -1,57 +1,68 @@
 ---
-title: "Exportar Datos"
+title: "Exportar datos"
 ---
 
-# Exportar Datos
+# Exportar datos
 
 <div class="article-intro">
 
-B1 Admin te permite exportar los datos de tu iglesia para que puedas usarlos en hojas de cálculo, compartirlos con tu equipo o mantener una copia de seguridad. Ya sea que necesites una lista rápida de nombres y correos electrónicos o una exportación completa de la base de datos, hay opciones que se adaptan a tus necesidades.
+B1 Admin te permite exportar los datos de tu iglesia para usarlos en hojas de cálculo, compartirlos con tu equipo o conservar una copia de respaldo. Ya sea que necesites una lista rápida de nombres y correos electrónicos o una exportación completa de la base de datos, hay opciones para cada necesidad.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Necesitas una cuenta B1 Admin activa con permiso para ver los datos que deseas exportar. Ver [Roles & Permisos](roles-permissions.md) si no estás seguro de tu nivel de acceso.
-- Para una exportación completa de la base de datos, necesitas acceso al área de **Configuración**.
+- Necesitas una cuenta activa de B1 Admin con permiso para ver los datos que quieres exportar. Consulta [Roles y permisos](roles-permissions.md) si no estás seguro de tu nivel de acceso.
+- Para una exportación completa de la base de datos, necesitas acceso al área de **Settings**.
 
 </div>
 
-## Exportar desde la Página de Personas
+## Exportar desde la página People
 
-La forma más rápida de exportar tu directorio es directamente desde la página de **People**:
+La forma más rápida de exportar tu directorio es directamente desde la página **People**:
 
-1. Abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expande **People**, y haz clic en **People**.
-2. Usa la barra de búsqueda o filtros para reducir los resultados que deseas exportar (o déjalo sin filtrar para exportar a todos). Ver [Buscar Personas](searching-people.md) para consejos de filtrado.
-3. Haz clic en el botón **Exportar** en el encabezado de la página de Personas.
-4. Un archivo CSV se descargará a tu computadora con las personas que están actualmente en tus resultados, incluyendo su nombre, información de contacto, dirección y otros campos estándar.
+1. Abre el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expande **People** y haz clic en **People**.
+2. Usa la barra de búsqueda o los filtros para acotar los resultados que quieres exportar (o déjala sin filtros para exportar a todos). Consulta [Buscar personas](searching-people.md) para consejos sobre cómo filtrar.
+3. Haz clic en el botón **Export** en el encabezado de la página People.
+4. Se descargará a tu computadora un archivo CSV con las personas que aparecen en tus resultados actuales, incluidos su nombre, datos de contacto, dirección y otros campos estándar.
 
 :::tip
-La exportación incluye a todas las personas en tus resultados actuales. Haz una búsqueda, carga una [Lista guardada](./lists.md) o usa primero la búsqueda **Avanzada** para exportar solo las personas que necesitas.
+La exportación incluye a todas las personas de tus resultados actuales. Haz una búsqueda, carga una [lista guardada](./lists.md) o usa primero la búsqueda **Advanced** para exportar solo a las personas que necesitas.
 :::
 
-## Exportación Completa de Datos desde Configuración
+## Exportación completa de datos desde Settings
 
-Para una exportación completa de todos tus datos B1 (no solo personas), usa la herramienta de exportación en Configuración:
+Para una exportación completa de todos tus datos de B1 (no solo de personas), usa la herramienta de exportación en Settings:
 
-1. En el menú Saltar, elige **Configuración > Configuración**.
-2. Haz clic en el enlace **Importar/Exportar** debajo del nombre de tu iglesia, en la parte superior del menú de configuración de la izquierda.
-3. Selecciona **B1 Database** del menú desplegable **Fuente de Datos**.
-4. Revisa la vista previa de datos y haz clic en **Continuar al Destino**.
-5. Selecciona **Zip de Exportación B1** como destino de exportación.
-6. Monitorea el progreso de la exportación hasta que todos los elementos muestren marcas de verificación verdes.
+1. En el menú Jump, elige **Settings > Settings**.
+2. Haz clic en el enlace **Import/Export** debajo del nombre de tu iglesia, en la parte superior del menú de configuración de la izquierda.
+3. Selecciona **B1 Database** en el menú desplegable **Data Source**.
+4. Revisa la vista previa de los datos y haz clic en **Continue to Destination**.
+5. Selecciona **B1 Export Zip** como destino de la exportación.
+6. Supervisa el progreso de la exportación hasta que todos los elementos muestren una marca verde.
 7. El archivo de exportación se descargará automáticamente. Busca el archivo `B1Export` en tu carpeta de descargas.
-8. Descomprime el archivo para acceder a archivos CSV individuales (como `people.csv`) que puedes abrir en Excel, Google Sheets, o Numbers.
+8. Descomprime el archivo para acceder a los archivos CSV individuales (como `people.csv`) que puedes abrir en Excel, Google Sheets o Numbers.
 
 :::info
-Las exportaciones de datos completos incluyen personas, grupos, donaciones, asistencia, y más -- todo en tu base de datos B1. Esta también es una gran forma de crear una copia de seguridad periódica de tus registros de iglesia.
+El B1 Export Zip es una copia de respaldo completa de los datos de tu iglesia. Incluye:
+
+- personas (con fotos) y hogares, incluidos los contactos para recoger a los niños en el hogar
+- sedes, servicios y horarios de servicio
+- grupos y miembros de grupos
+- fondos y donaciones, incluidos los regalos repartidos entre varios fondos
+- asistencia
+- formularios, preguntas, respuestas y las respuestas enviadas
+- campos personalizados y sus valores
+- listas guardadas de personas
+
+Para restaurarlo, elige **B1 Import Zip** como origen y **B1 Database** como destino (consulta [Importar datos](./importing-data.md)). Los hogares, los contactos para recoger y las listas guardadas se reconstruyen junto con las personas. Los filtros de las listas guardadas se vinculan a los grupos, fondos, sedes y campos personalizados restaurados.
 :::
 
-## Exportar Datos de Grupo
+## Exportar datos de grupos
 
-También puedes exportar listas de miembros para grupos individuales. Desde la página de **Grupos**, abre un grupo y haz clic en el **icono de descarga** para exportar la lista de miembros de ese grupo. Ver [Miembros del Grupo](../groups/group-members.md) para más detalles.
+También puedes exportar las listas de miembros de grupos individuales. Desde la página **Groups**, abre un grupo y haz clic en el **icono de descarga** para exportar la lista de miembros de ese grupo. Consulta [Miembros de grupos](../groups/group-members.md) para más detalles.
 
 :::info
-Los archivos CSV exportados funcionan con todas las aplicaciones principales de hojas de cálculo incluyendo Microsoft Excel, Google Sheets, y Apple Numbers.
+Los archivos CSV exportados funcionan con las principales aplicaciones de hojas de cálculo, como Microsoft Excel, Google Sheets y Apple Numbers.
 :::

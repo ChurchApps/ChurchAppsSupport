@@ -1,79 +1,78 @@
 ---
-title: "Modifica del Tuo Profilo"
+title: "Modificare il tuo profilo"
 ---
 
-# Modifica del Tuo Profilo
+# Modificare il tuo profilo
 
 <div class="article-intro">
 
-La tua pagina del profilo nel portale dei membri ti consente di aggiornare le tue informazioni di contatto, gestire la tua famiglia, cambiare l'email e la password del tuo account, e controllare chi può vedere il tuo indirizzo, numero di telefono e indirizzo email.
+La pagina del tuo profilo nel portale dei membri ti permette di aggiornare i tuoi recapiti, gestire il tuo nucleo familiare, cambiare l'email e la password del tuo account e decidere chi può vedere il tuo indirizzo, il numero di telefono e l'indirizzo email.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Devi essere [registrato](./logging-in.md) — la modifica del profilo richiede un account
+- Devi aver [effettuato l'accesso](./logging-in.md) -- la modifica del profilo richiede un account
 
 </div>
 
-## Apertura del Tuo Profilo
+## Aprire il tuo profilo
 
-Tocca la tua foto del profilo nella barra dell'app in alto, o scegli **Modifica Profilo** dal menu di navigazione, per aprire il tuo profilo a `/mobile/profileEdit`. La pagina ha quattro schede: **Profilo**, **Famiglia**, **Account** e **Privacy**.
+Tocca la foto del tuo profilo nella barra superiore dell'app, oppure tocca **Modifica profilo** in cima alla pagina **Altro** o sulla tua [pagina Io](./me-page.md), per aprire **Il tuo profilo** all'indirizzo `/mobile/profileEdit`. La pagina è un unico foglio di sezioni -- **Foto e nome**, **Contatti**, **Nucleo familiare**, **Account** e **Privacy** -- ciascuna delle quali mostra le tue informazioni attuali con un collegamento **Modifica** (oppure **Aggiungi familiare** / **Cambia**) che apre un pannello in cui puoi fare modifiche.
 
-## Scheda Profilo
+## Foto e nome e Contatti
 
-La scheda Profilo contiene le informazioni che la tua chiesa vede nel tuo record personale:
+Queste sezioni contengono le informazioni che la tua chiesa vede sulla tua scheda persona:
 
-- **Foto** — tocca **Cambia Foto** per caricare una nuova foto.
-- **Nome** — Nome, Secondo Nome e Cognome.
-- **Contatto** — Email e data di nascita.
-- **Indirizzo** — Indirizzo stradale, città, stato e CAP.
-- **Telefono** — Numeri di cellulare, casa e ufficio. Se attivi gli avvisi di testo in [Preferenze di notifica](./notification-preferences.md), vengono inviati al tuo numero di cellulare.
+- **Foto e nome** — tocca **Cambia foto** per caricare una nuova immagine e modifica il tuo Nome, il Secondo nome e il Cognome.
+- **Contatti** — Email, Cellulare, Telefono di casa, Telefono di lavoro, Data di nascita e il tuo Indirizzo (via, città, provincia e CAP). Se attivi i promemoria via SMS in [Preferenze di notifica](./notification-preferences.md), questi vengono inviati al tuo numero di cellulare.
 
-Modifica qualsiasi campo e salva le tue modifiche dalla barra in fondo allo schermo.
+Apporta le modifiche nel pannello e tocca **Salva modifiche**.
 
 :::info
-Se la tua chiesa richiede l'approvazione per i cambiamenti della directory, le tue modifiche vengono inviate come richiesta invece di essere applicate immediatamente. Vedi [Approvazione dei Cambiamenti del Profilo](/docs/b1-admin/profile/approving-profile-changes) per come la tua chiesa esamina questi cambiamenti.
+Se la tua chiesa richiede un'approvazione per le modifiche alla rubrica, la pagina dice "Le modifiche al tuo profilo vanno al personale della chiesa per l'approvazione." e il pulsante riporta **Invia per approvazione** -- le tue modifiche vengono inviate come richiesta invece di essere applicate subito. Consulta [Approvare le modifiche al profilo](/docs/b1-admin/profile/approving-profile-changes) per sapere come la tua chiesa le esamina.
 :::
 
-## Scheda Famiglia
+## Nucleo familiare
 
-La scheda Famiglia mostra le altre persone collegate alla tua famiglia, ognuna con il suo ruolo familiare (Capo, Coniuge, Figlio, ecc.). Tocca un membro della famiglia per visualizzare i suoi dettagli.
+La sezione Nucleo familiare mostra le altre persone collegate al tuo nucleo familiare, ciascuna con il proprio ruolo familiare (Capofamiglia, Coniuge, Figlio e così via). Tocca un membro del nucleo familiare per vederne i dettagli.
 
-Per aggiungere un membro della famiglia che non è ancora nel sistema, inserisci il suo nome sotto **Aggiungi Membro della Famiglia** e tocca **Aggiungi**. I nuovi membri della famiglia vengono aggiunti a un elenco in sospeso e vengono inviati insieme alle tue altre modifiche del profilo perché la tua chiesa li esamini.
+Per aggiungere un familiare che non è ancora nel sistema, tocca **Aggiungi familiare**, inserisci il suo nome e tocca **Aggiungi**. I nuovi familiari vengono aggiunti a un elenco in attesa e inviati insieme alle altre modifiche del profilo affinché la tua chiesa le esamini.
 
-## Scheda Account
+## Account
 
-La scheda Account gestisce il tuo accesso piuttosto che il tuo profilo della chiesa:
+La sezione Account gestisce il tuo accesso, non il tuo profilo in chiesa. Tocca **Modifica** per aprirla:
 
-- **Nome Visualizzato** — il nome e cognome visualizzato al tuo accesso (separato dai campi Nome nella scheda Profilo).
-- **Cambia Email** — aggiorna l'indirizzo email che usi per accedere.
-- **Cambia Password** — inserisci la tua password attuale, quindi la tua nuova password due volte. La tua nuova password deve soddisfare la lunghezza minima del sito.
+- **Nome visualizzato** — il nome e il cognome mostrati nel tuo accesso (separati dal nome presente sul tuo profilo in chiesa).
+- **Cambia email** — aggiorna l'indirizzo email che usi per accedere.
+- **Cambia password** — inserisci la password attuale, poi la nuova password due volte. La nuova password deve contenere almeno 8 caratteri.
 
-## Scheda Privacy
+Ogni parte ha il proprio pulsante **Salva**.
 
-La scheda Privacy controlla chi può vedere le tue informazioni di contatto in ChurchApps:
+## Privacy
 
-- **Nascondimi dalla Directory dei Membri** — un interruttore che ti rimuove dalla [directory dei membri](../community/member-directory.md) completamente.
-- **Visibilità dell'Indirizzo**, **Visibilità del Telefono** e **Visibilità dell'Email** — ognuno ha il suo menu a discesa, quindi puoi condividere il tuo email con l'intera chiesa mentre mantieni il tuo indirizzo più privato, ad esempio. Le opzioni sono:
+La sezione Privacy mostra chi può vedere i tuoi recapiti in tutto ChurchApps. Tocca **Cambia** per aprire **Preferenze di visibilità**:
+
+- **Nascondimi dal registro dei membri** — un interruttore che ti rimuove completamente dal [registro dei membri](../community/member-directory.md).
+- **Visibilità indirizzo**, **Visibilità telefono** e **Visibilità email** — ciascuna ha il proprio menu a tendina, così puoi, ad esempio, condividere la tua email con tutta la chiesa mantenendo più riservato il tuo indirizzo. Le opzioni sono:
 
 | Livello | Chi può vederlo |
 |---|---|
-| **Tutti** | Visibile a chiunque possa visualizzare la directory. |
-| **Solo Membri** | Visibile ad altri membri della chiesa registrati. |
-| **Solo i Miei Gruppi** | Visibile solo ai membri dei gruppi a cui appartieni. |
-| **I Miei Leader di Gruppo e Staff** | Visibile solo allo staff della chiesa e ai leader dei gruppi a cui appartieni. |
-| **Solo Staff** | Visibile solo allo staff della chiesa. |
+| **Tutti** | Visibile a chiunque possa visualizzare il registro. |
+| **Solo membri** | Visibile agli altri membri della chiesa che hanno effettuato l'accesso. |
+| **Solo i miei gruppi** | Visibile solo ai membri dei gruppi a cui appartieni. |
+| **Solo i miei leader di gruppo e lo staff** | Visibile solo allo staff della chiesa e ai leader dei gruppi a cui appartieni. |
+| **Solo staff** | Visibile solo allo staff della chiesa. |
 
-La modifica di un menu a discesa rivela un pulsante **Salva** per quella sezione. La tua chiesa imposta un valore predefinito per ciascuno di questi tre campi — vedi [Impostazioni dell'App Mobile](/docs/b1-admin/settings/mobile-app) — ma qualunque cosa tu scelga qui sostituisce quel valore predefinito per il tuo record.
+Tocca **Salva** per applicare le tue scelte. La tua chiesa imposta un valore predefinito per ciascuno di questi tre campi -- consulta [Impostazioni dell'app mobile](/docs/b1-admin/settings/mobile-app) -- ma quello che scegli qui sostituisce il valore predefinito per la tua scheda.
 
 :::tip
-Vedi sempre le tue informazioni indipendentemente da queste impostazioni, e lo staff con l'autorizzazione di visualizzazione Persone può sempre vederle.
+Vedi sempre le tue informazioni indipendentemente da queste impostazioni, e anche lo staff con il permesso di visualizzazione delle persone può sempre vederle.
 :::
 
-## Articoli Correlati
+## Articoli correlati
 
-- [La Pagina Me](./me-page.md) — Il tuo dashboard personale
-- [Directory dei Membri](../community/member-directory.md) — Navigazione tra altri membri
-- [Approvazione dei Cambiamenti del Profilo](/docs/b1-admin/profile/approving-profile-changes) — Come la tua chiesa esamina i cambiamenti inviati
+- [La pagina Io](./me-page.md) — La tua dashboard personale
+- [Registro dei membri](../community/member-directory.md) — Sfogliare altri membri
+- [Approvare le modifiche al profilo](/docs/b1-admin/profile/approving-profile-changes) — Come la tua chiesa esamina le modifiche inviate

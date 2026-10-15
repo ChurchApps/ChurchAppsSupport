@@ -1,104 +1,104 @@
 ---
-title: "Teilnahme aufzeichnen"
+title: "Anwesenheit erfassen"
 ---
 
-# Teilnahme aufzeichnen
+# Anwesenheit erfassen
 
 <div class="article-intro">
 
-Sobald Ihre Standorte, Gottesdienstzeiten und Gruppen eingerichtet sind, können Sie nach jeder Versammlung manuell die Teilnahme aufzeichnen. B1 Admin organisiert die Teilnahme um **Sitzungen** – eine Sitzung pro Gruppe pro Treffendatum. Sie erstellen die Sitzung, markieren, wer anwesend war, und die Daten fließen direkt in Ihre Teilnahmeberichte.
+Sobald Ihre Standorte, Gottesdienstzeiten und Gruppen eingerichtet sind, können Sie die Anwesenheit nach jedem Treffen manuell erfassen. B1 Admin organisiert die Anwesenheit um **Sitzungen** herum -- eine Sitzung pro Gruppe und Treffendatum. Sie legen die Sitzung an, markieren, wer anwesend war, und die Daten fließen direkt in Ihre Anwesenheitsberichte ein.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Ihre Standorte, Gottesdienstzeiten und Gruppen müssen konfiguriert werden. Siehe [Anwesenheitseinrichtung](setup.md), falls Sie dies noch nicht getan haben.
-- Die Gruppen, die Sie verfolgen möchten, müssen **Teilnahme verfolgen** aktiviert haben. Weitere Informationen finden Sie unter [Anwesenheitseinrichtung](setup.md).
+- Ihre Standorte, Gottesdienstzeiten und Gruppen müssen eingerichtet sein. Wenn Sie dies noch nicht getan haben, lesen Sie [Einrichtung der Anwesenheit](setup.md).
+- Bei den Gruppen, deren Anwesenheit Sie erfassen möchten, muss **Anwesenheit erfassen** aktiviert sein. Details finden Sie unter [Einrichtung der Anwesenheit](setup.md).
 
 </div>
 
-## Sitzung erstellen
+## Eine Sitzung anlegen
 
-Eine Sitzung stellt ein Vorkommen eines Gruppentreffens dar – zum Beispiel Ihre Klasse für Kinder der Klassen K–3 an einem bestimmten Sonntag.
+Eine Sitzung steht für ein einzelnes Treffen einer Gruppe -- zum Beispiel der Klasse Ihrer Kinder von der 1. bis zur 3. Klasse an einem bestimmten Sonntag.
 
-1. Öffnen Sie **B1 Admin**, öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Personen**, und klicken Sie auf **Gruppen**.
-2. Wählen Sie die Gruppe aus, für die Sie Teilnahme aufzeichnen möchten.
-3. Klicken Sie im Bereich **Sitzungen** der Gruppenseite auf **Alle Sitzungen**.
-4. Klicken Sie auf **Neu**, um eine neue Sitzung zu erstellen.
-5. Wenn die Gruppe einer Gottesdienstzeit zugeordnet ist, wählen Sie die **Gottesdienstzeit** aus. Wenn es sich um eine ungeplante Gruppe handelt, wird dieses Feld nicht angezeigt.
-6. Wählen Sie das **Sitzungsdatum** – dies kann heute, ein früheres Datum oder ein zukünftiges Datum sein.
+1. Öffnen Sie **B1 Admin**, öffnen Sie das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), klappen Sie **Personen** auf und klicken Sie auf **Gruppen**.
+2. Wählen Sie die Gruppe aus, für die Sie die Anwesenheit erfassen möchten.
+3. Klicken Sie im Abschnitt **Sitzungen** auf der Seite der Gruppe auf **Alle Sitzungen**.
+4. Klicken Sie auf **Neu**, um eine neue Sitzung anzulegen.
+5. Wenn der Gruppe eine Gottesdienstzeit zugeordnet ist, wählen Sie die **Gottesdienstzeit**. Handelt es sich um eine Gruppe ohne feste Zeit, erscheint dieses Feld nicht.
+6. Wählen Sie das **Sitzungsdatum** -- dies kann heute, ein vergangenes oder ein zukünftiges Datum sein.
 7. Klicken Sie auf **Speichern**.
 
-### Sitzungen für jede Klasse in einer Gottesdienstzeit hinzufügen
+### Sitzungen für jede Klasse einer Gottesdienstzeit anlegen
 
-Wenn andere Gruppen zur gleichen Gottesdienstzeit zusammenkommen (z.B. alle Ihre Kinderklassen um Sonntag 9:00 Uhr), können Sie ihre Sitzungen in einem Schritt erstellen, anstatt jede Gruppe zu besuchen.
+Wenn andere Gruppen zur selben Gottesdienstzeit zusammenkommen (zum Beispiel alle Kinderklassen am Sonntag um 9:00 Uhr), können Sie deren Sitzungen in einem Schritt anlegen, statt jede Gruppe einzeln aufzurufen.
 
-1. Folgen Sie den obigen Schritten und wählen Sie eine **Gottesdienstzeit**.
-2. Überprüfen Sie **Auch für die anderen _N_ Gruppen in _Gottesdienstzeit_ hinzufügen**. Das Kontrollkästchen zeigt, wie viele andere Gruppen dieser Gottesdienstzeit zugeordnet sind. Es wird nur angezeigt, wenn eine neue Sitzung hinzugefügt wird und mindestens eine andere Gruppe zu dieser Zeit zusammenkommt.
+1. Gehen Sie wie oben beschrieben vor und wählen Sie eine **Gottesdienstzeit**.
+2. Aktivieren Sie **Auch für die anderen _N_ Gruppen in _Gottesdienstzeit_ hinzufügen**. Das Kästchen zeigt an, wie vielen anderen Gruppen diese Gottesdienstzeit zugeordnet ist. Es erscheint nur beim Anlegen einer neuen Sitzung und wenn sich mindestens eine weitere Gruppe zu dieser Zeit trifft.
 3. Klicken Sie auf **Speichern**.
 
-Eine Sitzung wird für die aktuelle Gruppe und für jede der anderen Gruppen am gleichen Datum und zur gleichen Gottesdienstzeit erstellt. Gruppen, die bereits eine Sitzung für das Datum und die Gottesdienstzeit haben, werden übersprungen, sodass Sie keine Duplikate erhalten.
+Es wird eine Sitzung für die aktuelle Gruppe und für jede der anderen Gruppen mit demselben Datum und derselben Gottesdienstzeit angelegt. Gruppen, die für dieses Datum und diese Gottesdienstzeit bereits eine Sitzung haben, werden übersprungen, Dubletten entstehen also nicht.
 
 :::tip
-Sie können Sitzungen für frühere Daten erstellen, um die Teilnahme zu erfassen, die Sie noch nicht aufgezeichnet haben, oder sie im Voraus erstellen, damit sie bereit sind, wenn sich Ihre Gruppe trifft.
+Sie können Sitzungen für vergangene Termine anlegen, um noch nicht erfasste Anwesenheiten nachzutragen, oder sie im Voraus anlegen, damit sie bereit sind, wenn Ihre Gruppe sich trifft.
 :::
 
-## Teilnahme markieren
+## Anwesenheit markieren
 
-Wählen Sie eine Sitzung aus, um ihre Teilnahmeliste zu sehen. Jedes Gruppenmitglied wird mit einem Kontrollkästchen aufgelistet, alphabetisch nach Nachname sortiert, und alle, die bereits als anwesend aufgezeichnet wurden, sind angekreuzt.
+Wählen Sie eine Sitzung aus, um deren Anwesenheitsliste zu sehen. Jedes Gruppenmitglied wird mit einem Kästchen aufgeführt, nach Nachnamen sortiert, und wer bereits als anwesend erfasst wurde, ist angekreuzt.
 
-1. Überprüfen Sie das Kästchen neben jeder Person, die anwesend war. Verwenden Sie **Alles auswählen** oder **Keine auswählen**, um alle auf einmal zu ändern.
-2. Der Zähler über der Liste (z.B. "12 von 15 anwesend") wird aktualisiert, wenn Sie Kästchen aktivieren.
-3. Klicken Sie auf **Teilnahme speichern**. Nichts wird aufgezeichnet, bis Sie speichern, und eine Meldung bestätigt, wenn das Speichern abgeschlossen ist.
+1. Aktivieren Sie das Kästchen neben jeder Person, die anwesend war. Mit **Alle auswählen** oder **Keine auswählen** ändern Sie alle Einträge auf einmal.
+2. Die Anzahl über der Liste (zum Beispiel „12 von 15 anwesend“) aktualisiert sich, während Sie Kästchen ankreuzen.
+3. Klicken Sie auf **Anwesenheit speichern**. Erst mit dem Speichern wird etwas erfasst. Eine Meldung bestätigt, wenn der Vorgang abgeschlossen ist.
 
-Wenn Sie jemanden, der bereits als anwesend aufgezeichnet wurde, abwählen und dann speichern, werden sie aus der Sitzung entfernt.
+Wenn Sie jemanden, der bereits als anwesend erfasst war, abwählen und anschließend speichern, wird diese Person aus der Sitzung entfernt.
 
-### Besucher hinzufügen
+### Gäste hinzufügen
 
-Um jemanden aufzuzeichnen, der nicht Mitglied der Gruppe ist, suchen Sie in der Personensuche neben der Teilnahmeliste nach ihm. Wenn er noch nicht in Ihrer Datenbank ist, können Sie ihn aus der Suche erstellen. Sie werden bereits angekreuzt zur Liste hinzugefügt. Klicken Sie auf **Teilnahme speichern**, um sie aufzuzeichnen.
+Um eine Person zu erfassen, die nicht Mitglied der Gruppe ist, suchen Sie sie in der Personensuche neben der Anwesenheitsliste. Wenn sie noch nicht in Ihrer Datenbank steht, können Sie sie direkt aus der Suche anlegen. In beiden Fällen wird sie der Liste bereits angekreuzt hinzugefügt. Klicken Sie auf **Anwesenheit speichern**, um sie zu erfassen.
 
-Personen, die sich bei einem Kiosk angemeldet haben, zeigen einen **Freiwilliger**- oder **Gast**-Chip an. Personen, die keine Gruppenmitglieder sind, zeigen einen **Gast**-Chip an.
+Personen, die sich an einem Kiosk eingecheckt haben, zeigen eine Markierung **Freiwilliger** oder **Gast**. Personen, die keine Gruppenmitglieder sind, zeigen eine Markierung **Gast**.
 
-## Überprüfen, welche Gruppen noch Teilnahme benötigen
+## Prüfen, welche Gruppen noch eine Anwesenheit benötigen
 
-Wenn mehrere Klassen zur gleichen Gottesdienstzeit zusammenkommen, können Sie auf einen Blick sehen, welche noch ihre Teilnahme für dieses Datum eingeben müssen.
+Wenn mehrere Klassen zur selben Gottesdienstzeit zusammenkommen, können Sie auf einen Blick sehen, für welche davon die Anwesenheit an diesem Datum noch eingetragen werden muss.
 
 1. Öffnen Sie eine Sitzung, die eine Gottesdienstzeit hat.
-2. Klicken Sie auf **Wer benötigt noch Teilnahme** oben in der Teilnahmeliste.
-3. Ein Dialog listet jede Gruppe auf, die dieser Gottesdienstzeit zugeordnet ist, mit einer Zusammenfassung wie "5 von 8 Gruppen eingegeben" oben.
+2. Klicken Sie oben in der Anwesenheitsliste auf **Wer benötigt noch Anwesenheit**.
+3. Ein Dialog listet jede Gruppe auf, die dieser Gottesdienstzeit zugeordnet ist. Oben steht eine Zusammenfassung wie „5 von 8 Gruppen erfasst“.
 
-Gruppen, bei denen für dieses Datum niemand als anwesend markiert ist, zeigen einen **Nicht eingegeben**-Chip an und werden zuerst aufgelistet. Gruppen, die Teilnahme haben, zeigen **Eingegeben** mit der Anzahl der als anwesend markierten Personen (z.B. "Eingegeben (12)"). Klicken Sie auf den Namen einer Gruppe, um zu dieser Gruppe zu springen und ihre Teilnahme aufzuzeichnen.
+Gruppen, bei denen für dieses Datum niemand als anwesend markiert wurde, zeigen eine Markierung **Nicht erfasst** und stehen zuerst. Gruppen mit erfasster Anwesenheit zeigen **Erfasst** mit der Anzahl der als anwesend markierten Personen (zum Beispiel „Erfasst (12)“). Klicken Sie auf den Namen einer Gruppe, um deren Sitzungen zu öffnen, wobei die Sitzung für dasselbe Datum bereits ausgewählt ist. So können Sie deren Anwesenheit sofort erfassen. Hat die Gruppe für dieses Datum noch keine Sitzung, öffnet sich ihre Sitzungsliste, damit Sie eine anlegen können.
 
 :::tip
-Koppeln Sie dies mit **Alle Klassen drucken** und [Sitzungen für jede Klasse in einer Gottesdienstzeit hinzufügen](#adding-sessions-for-every-class-in-a-service-time): erstellen Sie die Sitzungen, teilen Sie die Anwesenheitslisten aus, verwenden Sie dann **Wer benötigt noch Teilnahme**, um zu sehen, welche Listen noch nicht eingegeben wurden.
+Kombinieren Sie dies mit **Alle Klassen drucken** und [dem Anlegen von Sitzungen für jede Klasse einer Gottesdienstzeit](#adding-sessions-for-every-class-in-a-service-time): Legen Sie die Sitzungen an, verteilen Sie die Anwesenheitslisten und nutzen Sie dann **Wer benötigt noch Anwesenheit**, um zu sehen, welche Listen noch nicht erfasst wurden.
 :::
 
-## Anwesenheitsliste drucken
+## Eine Anwesenheitsliste drucken
 
-Eine Anwesenheitsliste ist eine druckbare Klassenliste, die Lehrer mit der Hand markieren und Ihnen zum späteren Eintragen zurückgeben können. Jedes Blatt zeigt Ihr Kirchenlogo (das **Logo für helle Hintergründe** aus [Website > Erscheinungsbild](../website/appearance.md), falls Sie eines hochgeladen haben) mit dem Kirchennamen darunter, die Klasse, eine große **Datum**-Zeile unter dem Klassennamen und die Gottesdienstzeit. Mitglieder werden in zwei Spalten aufgelistet (lesen Sie die linke Spalte nach unten, dann die rechte), damit mehr Namen auf einer Seite passen, und jedes Mitglied hat Kästchen für **Anwesend** und **Abwesend**. Es gibt leere Zeilen für Besucher und einen Bereich **Lehrer / Notizen**.
+Eine Anwesenheitsliste ist eine druckbare Klassenliste, die Lehrkräfte von Hand markieren und Ihnen zurückgeben können, um sie später zu erfassen. Jede Liste zeigt das Logo Ihrer Gemeinde (das **Logo für helle Hintergründe** aus [Website > Erscheinungsbild](../website/appearance.md), sofern Sie eines hochgeladen haben) mit dem Namen der Gemeinde darunter, die Klasse, eine große Zeile **Datum** unter dem Klassennamen und die Gottesdienstzeit. Die Mitglieder sind in zwei Spalten aufgeführt (von oben nach unten in der linken Spalte, dann in der rechten), damit mehr Namen auf eine Seite passen. Jedes Mitglied hat die Kästchen **Anwesend** und **Abwesend**. Außerdem gibt es freie Zeilen für Gäste und einen Bereich **Lehrkraft / Notizen**.
 
-- **Aus einer Sitzung** – Klicken Sie auf das Symbol **Anwesenheitsliste drucken** (Drucker) oben in der Teilnahmeliste der Sitzung. Das Blatt ist mit dem Sitzungsdatum datiert.
-- **Alle Klassen für einen Service** – Wenn die Sitzung eine Gottesdienstzeit hat, klicken Sie auf **Alle Klassen drucken**, um ein Blatt pro Klasse zu drucken, die dieser Gottesdienstzeit zugeordnet ist. Jede Klasse wird auf ihrer eigenen Seite gedruckt.
-- **Aus der Mitgliederliste** – Klicken Sie auf der Gruppenseite auf **Alle Mitglieder** und dann auf das Symbol **Anwesenheitsliste drucken** über der Mitgliederliste und wählen Sie **Anwesenheitsblatt**, um ein undatiertes Blatt zu drucken. Dasselbe Menü bietet ein Layout **Kontaktliste** mit Telefonnummer, E-Mail und Adresse jedes Mitglieds – siehe [Mitgliederliste drucken](../groups/group-members.md#printing-the-member-list).
+- **Aus einer Sitzung** -- Klicken Sie oben in der Anwesenheitsliste der Sitzung auf das Symbol **Anwesenheitsliste drucken** (Drucker). Die Liste trägt das Datum der Sitzung.
+- **Alle Klassen eines Gottesdienstes** -- Hat die Sitzung eine Gottesdienstzeit, klicken Sie auf **Alle Klassen drucken**, um für jede dieser Gottesdienstzeit zugeordnete Klasse eine Liste zu drucken. Jede Klasse wird auf einer eigenen Seite gedruckt.
+- **Aus der Mitgliederliste** -- Klicken Sie auf der Seite der Gruppe auf **Alle Mitglieder** und dann oberhalb der Mitgliederliste auf das Symbol **Anwesenheitsliste drucken**. Wählen Sie **Anwesenheitsliste**, um eine Liste ohne Datum zu drucken. Im selben Menü gibt es das Layout **Kontaktliste** mit Telefonnummer, E-Mail-Adresse und Anschrift jedes Mitglieds. Siehe [Mitgliederliste drucken](../groups/group-members.md#printing-the-member-list).
 
-Das Blatt wird in einer neuen Registerkarte geöffnet und der Druckdialog Ihres Browsers erscheint automatisch.
+Die Liste öffnet sich in einem neuen Tab, und der Druckdialog Ihres Browsers erscheint automatisch.
 
-## Teilnahme in eine Tabellenkalkulation exportieren
+## Anwesenheit in eine Tabelle exportieren
 
-Sie können einen Eintrag der Sitzung als CSV-Datei herunterladen, um sie in Excel, Numbers oder Google Sheets zu verwenden.
+Sie können einen Nachweis der Sitzung als CSV-Datei herunterladen, um sie in Excel, Numbers oder Google Tabellen zu verwenden.
 
 1. Öffnen Sie die Sitzung, die Sie exportieren möchten.
-2. Klicken Sie oben in der Teilnahmeliste auf die Schaltfläche **Exportieren**.
-3. Öffnen Sie die heruntergeladene Datei in Ihrer Tabellenkalkulationsanwendung.
+2. Klicken Sie oben in der Anwesenheitsliste auf die Schaltfläche **Exportieren**.
+3. Öffnen Sie die heruntergeladene Datei in Ihrem Tabellenkalkulationsprogramm.
 
-## Aufgezeichnete Teilnahme anzeigen
+## Erfasste Anwesenheit anzeigen
 
-Nach dem Aufzeichnen von Sitzungen erscheinen die Daten in Ihren Teilnahmeberichten.
+Nachdem Sie Sitzungen erfasst haben, erscheinen die Daten in Ihren Anwesenheitsberichten.
 
-- **Registerkarte Teilnahme-Trend** (unter **Alle Jahre** auf der Seite Teilnahme) – zeigt kirchenweite Trends im Laufe der Zeit. Siehe [Teilnahme verfolgen](tracking-attendance.md).
-- **Registerkarte Gruppenteilnahme** – zeigt Teilnahme nach Einzelgruppe aufgebrochen. Siehe [Teilnahmeberichte](../reports/attendance-reports.md#group-attendance).
+- **Registerkarte Anwesenheitstrend** (unter **Alle Jahre** auf der Seite Anwesenheit) -- zeigt gemeindeweite Trends im Zeitverlauf. Siehe [Anwesenheit verfolgen](tracking-attendance.md).
+- **Registerkarte Gruppenanwesenheit** -- zeigt die Anwesenheit aufgeschlüsselt nach einzelnen Gruppen. Siehe [Anwesenheitsberichte](../reports/attendance-reports.md#group-attendance).
 
 :::tip
-Wenn eine gerade erstellte Sitzung nicht sofort in den Berichten angezeigt wird, stellen Sie sicher, dass das Sitzungsdatum in den in den Berichtsfiltern ausgewählten Datumsbereich fällt.
+Wenn eine Sitzung, die Sie gerade angelegt haben, nicht sofort in den Berichten erscheint, prüfen Sie, ob das Sitzungsdatum im Datumsbereich liegt, der in den Berichtsfiltern ausgewählt ist.
 :::

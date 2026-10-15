@@ -1,60 +1,65 @@
 ---
-title: "Ang Pahina ng Ako"
+title: "Ang Me Page"
 ---
 
-# Ang Pahina ng Ako
+# Ang Me Page
 
 <div class="article-intro">
 
-Ang pahina ng **Ako** ay ang iyong personal na dashboard sa member portal — isang kronolohikal na pagtingin ng lahat ng paparating para sa iyo: mga assignment sa paglilingkod, mga registration ng kaganapan, at mga paparating na kaganapan ng iyong mga grupo, kasama ang iyong pinakabagong notipikasyon.
+Ang **Me** page ang iyong personal na dashboard sa member portal -- isang pahina na naglalaman ng lahat ng paparating para sa iyo (mga serving assignment, event registration, at mga paparating na event ng iyong mga group) kasama ang iyong household, mga group, giving, registration, at mga kamakailang notification.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Kailangan mong maging [naka-log in](./logging-in.md) — ang pahina ng Ako ay lumalilitaw lamang para sa mga naka-sign in na miyembro
+- Kailangan mong [naka-log in](./logging-in.md) -- lalabas lamang ang Me page para sa mga naka-sign in na miyembro
 
 </div>
 
-## Pagbubukas ng Pahina ng Ako
+## Pagbubukas ng Me Page
 
-Buksan ang menu ng portal at i-tap ang **Ako**. Ang pahina ay nag-load ng iyong personal na impormasyon na organisado sa mga seksyon.
+I-tap ang **More** sa tab bar, pagkatapos i-tap ang **Me** sa ilalim ng **Account**. Magbubukas ang pahina na may iyong larawan, pangalan, at membership status, kasama ang dalawang button:
 
-## Paparating
+- **Edit Profile** -- Tingnan ang [Editing Your Profile](./editing-your-profile.md).
+- **Settings** -- Binubuksan ang iyong [Notification Preferences](./notification-preferences.md).
 
-Ang seksyon ng **Paparating** ay naglalista ng lahat ng nakaharap sa iyo sa pagkakasunod-sunod ng petsa, bawat item na naka-tag gamit ang isang type chip:
+Kung naka-sign out ka, makikita mo ang "Sign in to see your week" at isang button na **Sign In** sa halip.
 
-- **Paglilingkod** -- Ang iyong mga volunteer position sa mga paparating na plano ng serbisyo. I-tap ang isa upang buksan ang plano.
-- **Pag-rehistro** -- Ang mga kaganapan na [nag-rehistro ka para sa](../events/registering). I-tap upang pumunta sa iyong [mga pag-rehistro](../events/my-registrations).
-- **Kaganapan** -- Ang mga paparating na kaganapan mula sa mga grupo na kabilang ka. I-tap ang isa upang buksan ang mga kaganapan ng grupo.
+## Upcoming
 
-Kung walang nakabalangkas, makikita mo ang "Walang paparating" — ang iyong mga oras ng paglilingkod, kaganapan, at mga pag-rehistro ay lilitaw dito habang sila ay naka-schedule.
+Inililista ng seksyong **Upcoming** ang iyong susunod na tatlong item ayon sa petsa, bawat isa ay may badge ng uri. Kung may higit pa, i-tap ang **All upcoming** upang makita ang buong listahan, at **Back to Me** upang bumalik.
 
-## Mga Bagong Notipikasyon
+- **Serving** -- Ang iyong mga posisyon sa pagboboluntaryo sa mga paparating na service plan. I-tap ang isa upang buksan ang plano.
+- **Registration** -- Mga event na [pinagparehistruhan mo](../events/registering). I-tap upang pumunta sa iyong [registrations](../events/my-registrations).
+- **Event** -- Mga paparating na event mula sa mga group na kinabibilangan mo. I-tap ang isa upang buksan ang mga event ng group.
 
-Sa ibaba ng Paparating, ang seksyon ng **Mga Bagong Notipikasyon** ay nagpapakita ng iyong pinakabagong mga notipikasyon upang makahanap ng update nang hindi bumubukas ng bawat lugar ng portal.
+Kung walang nakaiskedyul, makikita mo ang "Nothing coming up" -- lalabas dito ang iyong mga oras ng serving, event, at registration habang nakaiskedyul ang mga ito.
 
-## Mga Shortcut
+## Household, Groups, at Giving
 
-Ang seksyon ng **Mga Shortcut** sa tuktok ng pahina ng Ako ay nag-link sa mga lugar na madalas mong binibisita:
+- **Household** -- Ang iba pang tao sa iyong household. I-tap ang isang pangalan upang tingnan ang kanyang profile, o i-tap ang **Manage** upang i-edit ang iyong household mula sa iyong profile. Nakatago kung walang ibang naka-link sa iyong household.
+- **My Groups** -- Ang mga group na kinabibilangan mo. I-tap ang isang group upang buksan ito, o i-tap ang **All groups** para sa buong listahan.
+- **Giving** -- Kung magkano ang ibinigay mo ngayong taon at kung ilang regalo. I-tap ang **History** upang buksan ang giving page. Nakatago kung hindi tumatanggap ng online na donasyon ang iyong simbahan.
 
-- **I-edit ang Profile** -- Tingnan ang [Pag-edit ng Iyong Profile](./editing-your-profile.md).
-- **Mga Kagustuhan sa Notipikasyon** -- Tingnan ang [Mga Kagustuhan sa Notipikasyon](./notification-preferences.md).
-- **Mga Mensahe** -- Ang iyong mga pribadong pag-uusap.
-- **Pagbibigay** -- Magbigay online at tingnan ang iyong kasaysayan ng pagbibigay.
-- **Mga Pag-rehistro** -- Ang mga kaganapan na nag-rehistro ka para sa.
+## Requests at Registrations
 
-Kung ang iyong simbahan ay may mga bookable na kuwarto o mapagkukunan, dalawang pang mga shortcut ay lumalitaw:
+Ipinapakita ng seksyong **Requests & registrations** kung ilan ang iyong event registration, na may link na **Registrations** upang pamahalaan ang mga ito.
 
-- **Humingi ng Kaganapan** -- Humingi na magsagawa ng kaganapan na may mga kuwartong at kagamitan na kailangan mo. Tingnan ang [Humihingi ng Mga Kaganapan at Kuwarto](../events/requesting-events).
-- **Ang Aking mga Kahilingan** -- Subaybayan ang status ng iyong mga kahilingan at cancelahin ang mga pending.
+Kung may mga kuwarto o resource na maaaring i-book ang iyong simbahan, may dalawa pang link na lilitaw:
 
-Kung ang iyong simbahan ay hindi nag-set up ng mga kuwarto o mapagkukunan, ang mga shortcut na ito ay nakatagong.
+- **Request an Event** -- Humiling na mag-reserba ng event kasama ang mga kuwarto at kagamitang kailangan mo. Tingnan ang [Requesting Events & Rooms](../events/requesting-events).
+- **My Requests** -- Subaybayan ang status ng iyong mga kahilingan at kanselahin ang mga nakabinbin pa.
+
+Kung hindi nag-set up ng mga kuwarto o resource ang iyong simbahan, nakatago ang mga link na ito.
+
+## Inbox
+
+Ipinapakita ng seksyong **Inbox** ang dalawang pinakabagong notification mo upang makahabol ka nang hindi binubuksan ang bawat bahagi ng portal. I-tap ang **Open inbox** upang makita ang lahat ng iyong notification at mensahe, o i-tap ang **Messages** upang pumunta sa iyong mga pribadong usapan.
 
 ## Mga Kaugnay na Artikulo
 
-- [Pag-navigate sa B1App](./navigating) -- Ang member portal layout
-- [Humihiling ng Mga Kaganapan at Kuwarto](../events/requesting-events) -- Magpadala at subaybayan ang mga kahilingan ng kuwarto/mapagkukunan
-- [Ang Aking mga Pag-rehistro](../events/my-registrations) -- Pamahalaan ang iyong mga pag-rehistro ng kaganapan
-- [Volunteer Signup](../serving/volunteer-signup) -- Paano gumagana ang mga assignment sa paglilingkod
+- [Navigating B1App](./navigating) -- Ang layout ng member portal
+- [Requesting Events & Rooms](../events/requesting-events) -- Magsumite at subaybayan ang mga kahilingan sa kuwarto/resource
+- [My Registrations](../events/my-registrations) -- Pamahalaan ang iyong mga event registration
+- [Volunteer Signup](../serving/volunteer-signup) -- Paano gumagana ang mga serving assignment

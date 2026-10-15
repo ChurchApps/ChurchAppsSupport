@@ -1,74 +1,77 @@
 ---
-title: "Detalles del Grupo"
+title: "Detalles del grupo"
 ---
 
-# Detalles del Grupo
+# Detalles del grupo
 
 <div class="article-intro">
 
-Cuando hace clic en un grupo en la página de grupos, se le lleva a la página de detalles del grupo. Lo que ve depende de si ha iniciado sesión o no, siendo que los miembros que han iniciado sesión tienen acceso a pestañas y funciones adicionales.
+Cuando haces clic en un grupo desde la página de grupos, llegas a la página de detalles del grupo. Lo que ves depende de si has iniciado sesión o no: los miembros que han iniciado sesión ven secciones y funciones adicionales.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Empezar</h4>
+<h4>Antes de comenzar</h4>
 
-- Encuentre un grupo para ver [explorando grupos](./browsing-groups.md).
-- Para acceso completo a todas las pestañas, [inicie sesión](../getting-started/logging-in.md) en su cuenta.
+- Busca un grupo para ver [explorando los grupos](./browsing-groups.md).
+- Para tener acceso completo a todas las secciones, [inicia sesión](../getting-started/logging-in.md) en tu cuenta.
 
 </div>
 
-## Vista de Visitante (No ha Iniciado Sesión)
+## Vista de visitante (sin iniciar sesión)
 
-Si no ha iniciado sesión, verá lo siguiente:
+Si no has iniciado sesión, verás lo siguiente:
 
-- **Sección principal** -- Un área de banner grande que muestra la foto del grupo, nombre, hora de reunión y ubicación de reunión.
-- **Descripción** -- La descripción completa del grupo explicando su propósito y qué esperar.
-- **Líderes** -- Avatares y nombres de los líderes del grupo. Puede hacer clic en el nombre de un líder para ver su perfil.
-- **Eventos del calendario** -- Se muestran hasta tres eventos próximos para el grupo, cada uno mostrando la fecha y título del evento. Si el grupo no tiene eventos próximos, esta sección está oculta.
-- **Inicie sesión para unirse** -- Un botón en la parte inferior de la página. Inicie sesión (o cree una cuenta) para unirse al grupo o solicitar unirse. Después de iniciar sesión, se le devuelve al grupo y se lleva directamente al paso de unirse.
+- **Encabezado**: el nombre del grupo con su horario de reunión y su ubicación. En una computadora, la foto del grupo aparece encima.
+- **Sign in to join**: un botón debajo del nombre del grupo. Inicia sesión (o crea una cuenta) para unirte al grupo o solicitar unirte. Después de iniciar sesión, vuelves al grupo y pasas directamente al paso para unirte.
+- **About**: la descripción completa del grupo, que explica su propósito y lo que puedes esperar.
+- **Leaders**: los nombres de los líderes del grupo. Puedes tocar el nombre de un líder para ver su perfil.
+- **Upcoming Events**: hasta tres eventos próximos del grupo, cada uno con la fecha, la hora y el título del evento, y un enlace **Register** cuando el evento admite inscripciones. Si el grupo no tiene eventos próximos, esta sección se oculta.
 
-## Vista de Miembro (Ha Iniciado Sesión)
+## Vista de miembro (con sesión iniciada)
 
-Si ha iniciado sesión pero no es miembro del grupo, verá la sección principal y descripción del grupo junto con la opción de unirse al grupo (ver [Unirse a un Grupo](#unirse-a-un-grupo) a continuación). Las pestañas descritas a continuación aparecen una vez que es miembro.
+Si has iniciado sesión pero no eres miembro del grupo, verás el encabezado del grupo y la sección **About**, junto con la opción para unirte al grupo (consulta [Unirse a un grupo](#unirse-a-un-grupo) más abajo). Las secciones que se describen a continuación aparecen una vez que eres miembro.
 
-Cuando es miembro, la página de detalles del grupo muestra la sección principal junto con una barra lateral de pestañas. Si su grupo está asociado con un tipo de plan Lessons.church y la lección de esta semana tiene contenido de llevar a casa para padres, aparece una tarjeta **Lección de esta semana** entre el héroe y las pestañas (solo para miembros).
+Cuando eres miembro, el encabezado del grupo muestra su nombre, el día, la hora y la ubicación de la reunión, y un botón **Open chat** si tu iglesia activó el chat del grupo. Si diriges el grupo, aparece una etiqueta **You · Leader** debajo del nombre. En una computadora, el encabezado se muestra en una columna a la izquierda con la foto del grupo, y las secciones aparecen a su derecha.
 
-Las pestañas disponibles son:
+La página es una sola hoja de secciones. Cada una muestra una vista previa breve, y un enlace en el encabezado de la sección abre la vista completa; toca **Back to** *nombre del grupo* para regresar. Las secciones disponibles son:
 
-- **Acerca de** -- La descripción completa del grupo, renderizada con formato de texto enriquecido. Solo se muestra si el grupo tiene una descripción.
-- **Planes** -- Los planes de servicio del grupo. Solo se muestra si el grupo tiene planes.
-- **Mensajes** -- Un espacio para que los miembros del grupo publiquen mensajes e interactúen entre sí. Solo se muestra a los miembros, y solo si su iglesia ha activado el chat grupal para este grupo. Ver [Conversaciones de Grupo](./conversations.md) para más detalles.
-- **Miembros** -- Una lista de todos los miembros del grupo, mostrando su foto y nombre. Puede hacer clic en el nombre de un miembro para visitar su perfil en el [directorio de miembros](../community/member-directory.md).
-- **Asistencia** -- Visible solo para líderes de grupo (y personal con permiso de asistencia). Permite el seguimiento de quién asistió a las reuniones del grupo.
-- **Eventos** -- El calendario del grupo que muestra reuniones y eventos. Use las flechas para moverse entre meses. Dos botones debajo del nombre del mes cambian la vista: la **vista de mes** (el icono de calendario) muestra una cuadrícula de calendario donde toca un día para ver sus eventos, y la **vista de lista** (el icono de lista) muestra los eventos del mes en orden de fecha, agrupados por día. Cuando está viendo el mes actual, la lista comienza desde hoy, por lo que solo muestra lo que aún está por venir.
-- **Recursos** -- Archivos compartidos y enlaces que se han publicado para el grupo. Puede descargar archivos cargados o abrir recursos vinculados.
+- **Next event**: el próximo evento del grupo, con los botones **Going** / **Maybe** / **Can't go** (consulta [Confirmaciones de asistencia a eventos (RSVP)](./event-rsvps.md)). Toca **All events** para abrir el calendario del grupo: usa las flechas para moverte entre meses y cambia entre **Calendar** (una cuadrícula mensual en la que tocas un día para ver sus eventos) y **List** (los eventos del mes en orden de fecha, agrupados por día). Cuando estás viendo el mes actual, la lista empieza desde hoy, así que solo muestra lo que todavía está por venir. Si los eventos del grupo tienen etiquetas, puedes filtrar por etiqueta.
+- **This week's lesson**: si tu grupo está asociado a un tipo de plan de Lessons.church y la lección de esta semana tiene contenido para llevar a casa para los padres, aparece debajo de **Next event** (solo para miembros).
+- **Messages**: los mensajes más recientes del chat del grupo. Toca **Open chat** para leer y publicar. Solo se muestra a los miembros, y únicamente si tu iglesia activó el chat del grupo para este grupo. Consulta [Conversaciones del grupo](./conversations.md) para más detalles.
+- **Members**: una vista previa de los miembros del grupo (los líderes primero) y un conteo de miembros y líderes. Toca **All members** para ver la lista completa, que puedes buscar con **Search Members**. Toca el nombre de un miembro para visitar su perfil en el [directorio de miembros](../community/member-directory.md).
+- **Resources**: los primeros archivos y enlaces compartidos publicados para el grupo. Toca **All resources** para verlos todos; puedes descargar los archivos subidos o abrir los recursos enlazados.
+- **Plans**: el próximo plan de servicio del grupo. Toca **All plans** para verlos todos. Solo aparece si el grupo tiene planes.
+- **Attendance**: visible solo para los líderes del grupo (y para el personal con permiso de asistencia). Muestra cuándo se tomó la asistencia por última vez; toca **Take attendance** para registrar quién asistió a una reunión del grupo.
+- **About**: la descripción completa del grupo, con formato de texto enriquecido. Solo se muestra si el grupo tiene una descripción.
 
-## Capacidades del Líder
+Los miembros también ven un enlace **Leave Group** en la parte inferior de la página.
 
-Si es líder del grupo, tiene capacidades de edición adicionales:
+## Funciones de los líderes
 
-- **Crear y editar eventos** -- Agregue eventos al calendario del grupo desde la pestaña **Eventos**. Cuando crea un evento, puede reservar salas y recursos junto con él — seleccione entre salas y recursos disponibles, establezca tiempos de configuración y desmontaje opcionales, y la solicitud de reserva se envía automáticamente para aprobación.
-- **Editar eventos repetitivos** -- Cuando abres un evento repetitivo para editarlo, B1 primero pregunta qué fechas cambiar: **Solo esta fecha**, **Esta y todas las fechas siguientes** o **Todas las fechas**. Elige una y haz clic en **Guardar** para abrir el evento. Si elegiste **Solo esta fecha**, el interruptor **Recurrente** se oculta y tus cambios (o una eliminación) se aplican solo a esa fecha.
-- **Establecer recordatorios de eventos** -- Al editar un evento existente, activa **Enviar recordatorios** para recordar a las personas antes de que comience. Elige cuándo se envían, la **Hora del día**, **¿Quién debe recibir el recordatorio?** y un **Mensaje** opcional; luego elige **Push**, **Correo electrónico** o, si tu iglesia tiene mensajes de texto configurados, **Texto** en **Enviar por**. Los textos solo se envían a las personas que activaron los recordatorios de texto en sus [Preferencias de notificación](../getting-started/notification-preferences.md).
-- **Administrar recursos** -- Cargue archivos (hasta 100 MB de almacenamiento), agregue enlaces o elimine recursos existentes.
-- **Seguimiento de asistencia** -- Registre asistencia para sesiones de grupo desde la pestaña **Asistencia**.
+Si eres líder del grupo, tienes capacidades adicionales de edición:
 
-Para cambiar el nombre, descripción o lista de miembros del grupo, use B1 Admin. Ver [Miembros del Grupo](../../b1-admin/groups/group-members.md).
+- **Crear y editar eventos**: toca **All events** y luego **Add Event** para agregar un evento al calendario del grupo. Al crear un evento, puedes reservar salas y recursos junto con él: selecciona entre las salas y los recursos disponibles, define tiempos opcionales de preparación y limpieza, y la solicitud de reserva se envía automáticamente para aprobación.
+- **Editar eventos recurrentes**: cuando abres un evento recurrente para editarlo, B1 primero pregunta qué fechas cambiar: **Just this date**, **This and all following dates** o **All dates**. Elige una y haz clic en **Save** para abrir el evento. Si elegiste **Just this date**, el interruptor **Recurring** se oculta y tus cambios (o una eliminación) se aplican solo a esa fecha.
+- **Configurar recordatorios del evento**: al editar un evento existente, activa **Send reminders** para avisar a las personas antes de que comience. Elige cuándo se envían, la **Time of Day**, **Who should be reminded?** y un **Message** opcional, y luego elige **Push**, **Email** o, si tu iglesia tiene configurados los mensajes de texto, **Text** en **Send By**. Los mensajes de texto solo se envían a las personas que activaron los recordatorios por texto en sus [Preferencias de notificación](../getting-started/notification-preferences.md).
+- **Administrar recursos**: sube archivos (hasta 100 MB de almacenamiento), agrega enlaces o elimina recursos existentes.
+- **Registrar la asistencia**: registra la asistencia de las sesiones del grupo con **Take attendance** en la sección **Attendance**.
 
-## Unirse a un Grupo
+Para cambiar el nombre, la descripción o la lista de miembros del grupo, usa B1 Admin. Consulta [Miembros del grupo](../../b1-admin/groups/group-members.md).
 
-Cuando ha iniciado sesión y aún no es miembro, aparece un botón de unirse en la página de detalles del grupo. La etiqueta del botón depende de la política de adhesión del grupo:
+## Unirse a un grupo
 
-- **Unirse al Grupo** -- El grupo está abierto. Hacer clic en esto lo agrega inmediatamente como miembro.
-- **Solicitar Unirse** -- El grupo requiere aprobación. Hacer clic en esto abre un diálogo donde puede incluir un mensaje opcional al líder del grupo, luego enviar su solicitud. Ver [Solicitud para Unirse a un Grupo](./join-requests.md) para detalles sobre cómo administrar sus solicitudes.
+Cuando has iniciado sesión y todavía no eres miembro, aparece un botón para unirte en la página de detalles del grupo. La etiqueta del botón depende de la política de ingreso del grupo:
 
-Después de enviar una solicitud, el botón se reemplaza por un aviso **Solicitud Pendiente**: "Su solicitud para unirse ha sido enviada. Un líder del grupo la revisará."
+- **Join Group**: el grupo está abierto. Al hacer clic, te agregas de inmediato como miembro.
+- **Request to Join**: el grupo requiere aprobación. Al hacer clic, se abre un cuadro de diálogo en el que puedes incluir un mensaje opcional para el líder del grupo, y luego enviar tu solicitud. Consulta [Solicitar unirse a un grupo](./join-requests.md) para más detalles sobre cómo administrar tus solicitudes.
 
-Si no había iniciado sesión y hizo clic en **Inicie sesión para unirse**, vuelve al grupo después de iniciar sesión y el paso de unirse comienza automáticamente: un grupo abierto lo agrega de inmediato, y un grupo que requiere aprobación abre el diálogo **Solicitar Unirse**.
+Después de enviar una solicitud, el botón se reemplaza por un aviso **Request Pending**: "Your request to join has been sent. A group leader will review it."
 
-Si ninguno de los botones aparece, el grupo está cerrado y los miembros deben ser agregados manualmente por un líder o administrador.
+Si no habías iniciado sesión y tocaste **Sign in to join**, al iniciar sesión volverás al grupo y el paso para unirte comienza automáticamente: un grupo abierto te agrega de inmediato, y un grupo que requiere aprobación abre el cuadro de diálogo **Request to Join**.
+
+Si no aparece ninguno de los dos botones, el grupo está cerrado y un líder o administrador debe agregar a los miembros manualmente.
 
 :::info
-Debe iniciar sesión para unirse o solicitar unirse a un grupo. Si un grupo está cerrado y desea unirse, comuníquese con su oficina de iglesia o con uno de los líderes del grupo.
+Debes haber iniciado sesión para unirte a un grupo o solicitar unirte. Si un grupo está cerrado y quieres unirte, comunícate con la oficina de tu iglesia o con alguno de los líderes del grupo.
 :::

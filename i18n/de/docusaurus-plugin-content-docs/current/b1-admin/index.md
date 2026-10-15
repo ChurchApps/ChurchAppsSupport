@@ -1,54 +1,54 @@
 ---
-title: "B1 Admin Überblick"
+title: "B1 Admin Übersicht"
 ---
 
-# B1 Admin Überblick
+# B1 Admin Übersicht
 
 <div class="article-intro">
 
-B1 Admin ist Ihr Kirchen-Management-Dashboard. Es bietet Werkzeuge zur Verwaltung aller Aspekte der Abläufe Ihrer Kirche – von Verzeichnissen und Spenden bis zu Website-Erstellung und Live-Streaming – alles an einem Ort.
+B1 Admin ist Ihr Dashboard für die Gemeindeverwaltung. Es bietet Werkzeuge, um jeden Bereich Ihrer Gemeindearbeit zu verwalten -- von Mitgliederverzeichnissen und Spenden bis hin zum Aufbau der Website und Live-Streaming -- alles an einem Ort.
 
 </div>
 
 ## Erste Schritte
 
 1. Öffnen Sie Ihren Browser und gehen Sie zu [admin.b1.church](https://admin.b1.church)
-2. Melden Sie sich mit Ihrem Benutzernamen und Passwort an
-3. Sie landen auf dem **Dashboard**, Ihrer Startseite. Es zeigt die Bestellung des Gottesdienstes dieser Woche, wer gerade eingecheckt hat und Dienst versieht, alles, was Ihrer Aufmerksamkeit bedarf (wie ausstehende Genehmigungen oder Beitrittsanfragen), Ihre offenen Aufgaben und Ihre Gruppen
+2. Melden Sie sich mit Ihrem Benutzernamen und Ihrem Passwort an
+3. Sie landen auf dem **Dashboard**, Ihrer Startseite. Sie zeigt den Gottesdienstablauf dieser Woche, wer in Echtzeit eingecheckt ist und dient, alles, was Ihre Aufmerksamkeit benötigt (etwa ausstehende Genehmigungen oder Beitrittsanfragen), Ihre offenen Aufgaben und Ihre Gruppen
 
 :::tip
-Neu bei B1 Admin? Beginnen Sie mit der [Einführung](./introduction) für eine Video-Anleitung, besuchen Sie dann [Einstellungen](./settings/), um Ihre Kircheninformationen zu konfigurieren und Ihr Team einzuladen.
+Neu bei B1 Admin? Beginnen Sie mit der [Einführung](./introduction) für eine Videoanleitung und besuchen Sie dann die [Einstellungen](./settings/), um die Angaben zu Ihrer Gemeinde zu hinterlegen und Ihr Team einzuladen.
 :::
 
 ## Ihr Dashboard
 
-Das Dashboard ist Ihre B1 Admin-Startseite (`/`). Es ist um den wöchentlichen Gottesdienst Ihrer Kirche strukturiert:
+Das Dashboard ist Ihre Startseite in B1 Admin (`/`). Es ist um den wöchentlichen Gottesdienst Ihrer Gemeinde herum aufgebaut:
 
-- **Der Gottesdienst dieser Woche** – der aktuelle oder kommende Plan und die Reihenfolge der Andacht, mit einem Link zum vollständigen Plan
-- **Live-Status** – sobald die Leute am Sonntag einchecken, zeigt die Seite, wie viele im Raum sind, wer diese Stunde Dienst versieht, Ersatbesucher und eine Aufschlüsselung nach Raum mit Kapazitätsbalken
-- **Benötigt Aufmerksamkeit** – ausstehende Genehmigungen und Gruppenbeitrittsanfragen, die Maßnahmen erfordern
-- **Meine Aufgaben** und **Meine Gruppen** – Ihre offenen Aufgaben (fügen Sie mit **Add Task** (Aufgabe hinzufügen) eine hinzu oder klicken Sie auf **All tasks** (Alle Aufgaben) für die vollständige Liste) und die Gruppen, denen Sie angehören
+- **Gottesdienst dieser Woche** -- der Name und der Ablauf des aktuellen oder kommenden Plans, mit einem Link zum vollständigen Plan
+- **Live-Status** -- sobald am Sonntag Personen einchecken, zeigt die Seite, wie viele sich im Raum befinden, wer in dieser Stunde dient, Erstbesucher sowie eine Aufschlüsselung nach Räumen mit Kapazitätsbalken
+- **Benötigt Aufmerksamkeit** -- ausstehende Genehmigungen und Beitrittsanfragen zu Gruppen, die eine Handlung erfordern
+- **Meine Aufgaben** und **Meine Gruppen** -- Ihre offenen Aufgaben (eine neue Aufgabe fügen Sie mit **Aufgabe hinzufügen** hinzu, oder klicken Sie auf **Alle Aufgaben** für die vollständige Liste) und die Gruppen, denen Sie angehören
 
 :::tip
-Jeder Bereich, einschließlich Predigten, Kalender, Mobil und Einstellungen, ist im [Jump-Menü](./introduction.md#getting-around-with-the-jump-menu) oben links in B1 Admin. Klicken Sie darauf oder drücken Sie **Strg+K** (oder **Cmd+K**), und durchsuchen Sie oder geben Sie an.
+Jeder Bereich, einschließlich Predigten, Kalender, Mobil und Einstellungen, ist im [Sprungmenü](./introduction.md#getting-around-with-the-jump-menu) oben links in B1 Admin zu finden. Klicken Sie darauf oder drücken Sie **Strg+K** (oder **Cmd+K**), und blättern Sie durch die Liste oder beginnen Sie zu tippen.
 :::
 
-## Hauptfunktionen
+## Wichtige Funktionen
 
-- **[Personen](./people/)** - Verwalten Sie Ihr Kirchenverzeichnis, fügen Sie Mitglieder hinzu, bearbeiten Sie Daten in Massen, durchsuchen Sie nach Haushalt oder als sortierbare Tabelle. Jede Person hat eine eigene Datensatzseite mit ihren Details links und Zusammenfassungen zu Besuchen, Spenden, Gruppen, Notizen und Formularen daneben
-- **[Gruppen](./groups/)** - Erstellen und organisieren Sie Kirchengruppen mit Beitrittsanfragen, Mitgliederverwaltung, Gruppen-E-Mail, personalisierten Gruppennachrichten und druckbaren Kontaktlisten. Jede Gruppe hat eine Seite mit ihren Aktionen links und Zusammenfassungen zu Mitgliedern, Sitzungen, Kalender und Zustand daneben
-- **[Besucherverfolgung](./attendance/)** - Richten Sie Standorte und Gottesdienstzeiten ein, verfolgen Sie namentliche Besucherzahlen mit druckbaren Klassenlisten, sehen Sie, welche Klassen noch Besucherzahlen eingeben müssen, protokollieren Sie einfache Kopfzählungen mit Trendberichten und geben Sie jedem Gottesdienst einen Check-in-Zeitplan, damit sich das Selbst-Check-in automatisch öffnet und schließt
-- **[Spenden](./donations/)** - Erfassen Sie Spenden in mehreren Währungen, verwalten Sie Fonds, drucken Sie Chargen (einzeln oder alle Chargen eines Zeitraums) mit Funduntersummen, erfassen Sie eine einzelne Spende über den Datensatz einer Person, generieren Sie Auszüge, die mit dem Logo Ihrer Kirche gedruckt werden
-- **[Dienst](./serving/)** - Koordinieren Sie Freiwillige, erstellen Sie Dienste-Pläne (oder kopieren Sie einen Plan wöchentlich für bis zu 12 Wochen), senden Sie Erinnerungen per Push, E-Mail oder Text, texten Sie alle eingeplanten Freiwilligen mit **Text Volunteers** (Freiwillige texten), verwalten Sie Aufgaben und führen Sie Personen durch schrittweise Workflows durch, die automatisch E-Mails und Nachrichten senden können
-- **[Formulare](./forms/)** - Erstellen Sie benutzerdefinierte Formulare für Anmeldungen und Datenerfassung
-- **[Berichte](./reports/)** - Sehen Sie Geburtstags-, Besucher- und Spendenberichte
-- **[Website](./website/)** - Erstellen und verwalten Sie Ihre Kirchenwebsite mit benutzerdefinierten Navigationsstilen, verfolgen Sie Besuche auf Ihrer Website und in Ihrer B1-App mit Ihrer GA4-ID, oder deaktivieren Sie die öffentliche Website und behalten Sie nur das Mitgliederportal
+- **[Personen](./people/)** - Verwalten Sie Ihr Gemeindeverzeichnis, fügen Sie Mitglieder hinzu, bearbeiten Sie Daten in Massen und durchsuchen Sie sie nach Haushalt oder als sortierbare Tabelle. Jede Person öffnet eine einzelne Datensatzseite mit ihren Angaben links und Zusammenfassungen zu Anwesenheit, Spenden, Gruppen, Notizen und Formularen daneben
+- **[Gruppen](./groups/)** - Erstellen und organisieren Sie Gemeindegruppen mit Beitrittsanfragen, Mitgliederverwaltung, Gruppen-E-Mails, persönlichen Gruppen-Textnachrichten und druckbaren Kontaktlisten. Jede Gruppe öffnet eine Seite mit ihren Aktionen links und Zusammenfassungen zu Mitgliedern, Terminen, Kalender und Status daneben
+- **[Anwesenheit](./attendance/)** - Richten Sie Standorte und Gottesdienstzeiten ein, erfassen Sie benannte Anwesenheit mit druckbaren Klassenlisten, sehen Sie, welche Klassen noch eine Anwesenheit benötigen, erfassen Sie einfache Zählungen mit Trendberichten und legen Sie für jede Gottesdienstzeit einen Check-in-Plan fest, sodass sich das Self-Check-in automatisch öffnet und schließt
+- **[Spenden](./donations/)** - Erfassen Sie Spenden in mehreren Währungen, verwalten Sie Fonds, erfassen Sie eine einzelne Spende über den Datensatz einer Person, drucken Sie Bündel (einzeln oder alle Bündel eines Datumsbereichs) mit Fonds-Zwischensummen und erstellen Sie Spendenbescheinigungen mit dem Logo Ihrer Gemeinde
+- **[Dienst](./serving/)** - Koordinieren Sie Freiwillige, erstellen Sie Dienstpläne (oder kopieren Sie einen Plan bis zu 12 Wochen wöchentlich weiter), senden Sie Erinnerungen per Push-Benachrichtigung, E-Mail oder Textnachricht, schreiben Sie allen eingeplanten Personen mit **Freiwillige anschreiben** eine Nachricht, verwalten Sie Aufgaben und führen Sie Personen durch schrittweise Abläufe, die automatisch E-Mails und Textnachrichten versenden können
+- **[Formulare](./forms/)** - Erstellen Sie eigene Formulare für Anmeldungen und die Erfassung von Daten
+- **[Berichte](./reports/)** - Zeigen Sie Geburtstags-, Anwesenheits- und Spendenberichte an
+- **[Website](./website/)** - Erstellen und verwalten Sie die Website Ihrer Gemeinde mit eigenen Navigationsstilen, verfolgen Sie Aufrufe Ihrer Website und Ihrer B1-App mit Ihrer GA4-ID oder schalten Sie die öffentliche Website ab und behalten Sie nur das Mitgliederportal
 - **[Predigten](./sermons/)** - Verwalten Sie Ihre Predigtbibliothek, Live-Streaming und einen automatischen Podcast-Feed
-- **[Kalender](./calendars/)** - Erstellen Sie verwahrte Kalender, verwalten Sie Raum-/Ressourcenbuchungen und sehen Sie die Verfügbarkeit
-- **[Einstellungen](./settings/)** - Konfigurieren Sie alles auf einer durchscrollbaren Seite mit einer Schnellsprungliste: Kircheninformationen, Region, Datums- und Telefonnummernformat, Nachrichten, Rollen, Berechtigungen und benutzerdefinierte Personenfelder
+- **[Kalender](./calendars/)** - Erstellen Sie kuratierte Kalender, verwalten Sie Raum- und Ressourcenbuchungen und sehen Sie die Verfügbarkeit ein
+- **[Einstellungen](./settings/)** - Konfigurieren Sie alles auf einer durchlaufenden Seite mit einer Schnellsprungliste: Gemeindeinformationen, Region, Format für Datum und Telefonnummer, Textnachrichten, Rollen, Berechtigungen und eigene Personenfelder
 
 :::info
-Klicken Sie auf das Fragezeichen-Symbol in der oberen rechten Ecke einer beliebigen Seite, um schnell auf Hilfe und Dokumentation zuzugreifen. Um zwischen hellem und dunklem Modus zu wechseln, öffnen Sie Ihr Benutzermenü und wählen Sie **Theme Preferences** (Designeinstellungen).
+Klicken Sie auf das Fragezeichen-Symbol oben rechts auf jeder Seite, um schnell auf Hilfe und Dokumentation zuzugreifen. Um das Farbdesign (**Standard**, **Klassisch** oder **Benutzerdefiniert**) zu ändern oder zwischen hellem und dunklem Modus zu wechseln, öffnen Sie Ihr Benutzermenü und verwenden Sie **Design-Einstellungen**.
 :::
 
-Für Unterstützung schreiben Sie an [support@churchapps.org](mailto:support@churchapps.org).
+Für Unterstützung schreiben Sie bitte eine E-Mail an [support@churchapps.org](mailto:support@churchapps.org).

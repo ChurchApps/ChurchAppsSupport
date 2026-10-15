@@ -1,158 +1,178 @@
 ---
-title: "Church Settings"
+title: "Mga Setting ng Simbahan"
 ---
 
-# Church Settings
+# Mga Setting ng Simbahan
 
 <div class="article-intro">
 
-Ang pahina ng Church Settings ay kung saan mo isinasaayos ang pangunahing impormasyon, contact details, at branding ng iyong simbahan. Ginagamit ang mga detalyeng ito sa lahat ng tool ng ChurchApps, kasama ang iyong B1.church website at ang B1 Mobile app.
+Ang pahina ng Church Settings ang lugar kung saan mo i-configure ang pangunahing impormasyon ng iyong simbahan, mga detalye ng contact, at branding. Ginagamit ang mga detalyeng ito sa lahat ng ChurchApps tool, kabilang ang iyong B1.church website at ang B1 Mobile app.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Kailangan mo ang pahintulot na "Edit Church Settings". Tingnan ang [Mga Tungkulin at Pahintulot](./roles-permissions.md) kung wala kang access.
-- Ihanda ang address, contact information, at logo ng iyong simbahan
+- Kailangan mo ang permission na "Edit Church Settings". Tingnan ang [Roles & Permissions](./roles-permissions.md) kung wala kang access.
+- Ihanda ang address, impormasyon sa contact, at logo ng iyong simbahan
 
 </div>
 
 ## Pag-edit ng Impormasyon ng Iyong Simbahan
 
-1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas na kaliwa), i-expand ang **Settings**, at i-click ang **Settings**.
+1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **Settings**, at i-click ang **Settings**.
 2. Sa seksyong **Church Information** (sa itaas ng pahina), i-click ang **Edit**.
 3. I-update ang alinman sa mga sumusunod na field:
-   - **Church Name** -- Ang pangalang ipinapakita sa lahat ng produkto ng ChurchApps.
+   - **Church Name** -- Ang pangalang ipinapakita sa lahat ng ChurchApps product.
    - **Address** -- Ang pisikal na address ng iyong simbahan.
-   - **Contact Information** -- Numero ng telepono, email, at iba pang contact details.
-4. I-click ang **Save** para ilapat ang iyong mga pagbabago.
+   - **Contact Information** -- Numero ng telepono, email, at iba pang detalye ng contact.
+4. I-click ang **Save** upang ilapat ang iyong mga pagbabago.
 
-## Pag-set Up ng Iyong Subdomain
+## Pag-set up ng Iyong Subdomain
 
-Nakakakuha ang iyong simbahan ng libreng subdomain sa **yourchurch.1.church**. Ito ang web address kung saan maaaring puntahan ng mga miyembro at bisita ang online na presensya ng iyong simbahan.
+Ang iyong simbahan ay may libreng subdomain sa **yourchurch.1.church**. Ito ang web address kung saan makakapunta ang mga miyembro at bisita sa online presence ng iyong simbahan.
 
-1. Sa pahina ng Settings, i-click ang **Edit** sa seksyong **Church Information** at hanapin ang field na **Subdomain**.
-2. Ilagay ang gusto mong subdomain (halimbawa, "gracechurch" para sa gracechurch.1.church).
+1. Sa Settings page, i-click ang **Edit** sa seksyong **Church Information** at hanapin ang **Subdomain** field.
+2. Ilagay ang subdomain na gusto mo (halimbawa, "gracechurch" para sa gracechurch.1.church).
 3. I-save ang iyong mga pagbabago.
 
 :::info
-Dapat natatangi ang iyong subdomain sa lahat ng simbahan sa ChurchApps. Kung kinuha na ang gusto mong pangalan, subukang idagdag ang iyong lungsod o probinsya (halimbawa, "gracechurch-dallas").
+Dapat natatangi ang iyong subdomain sa lahat ng ChurchApps church. Kung kinuha na ang pangalang gusto mo, subukang idagdag ang iyong lungsod o estado (halimbawa, "gracechurch-dallas").
 :::
 
-Kung gusto mong marating ng mga bisita ang iyong site sa sarili mong domain (halimbawa, **www.gracechurch.org**), tingnan ang [Custom Domain](./custom-domain.md).
+Kung nais mong maabot ng mga bisita ang iyong site sa sarili mong domain (halimbawa, **www.gracechurch.org**), tingnan ang [Custom Domain](./custom-domain.md).
 
 ## Pag-configure ng Branding
 
-I-customize kung paano lumilitaw ang iyong simbahan sa lahat ng tool ng ChurchApps:
+I-customize kung paano lumilitaw ang iyong simbahan sa lahat ng ChurchApps tool:
 
-1. I-upload ang iyong **logo ng simbahan** sa pamamagitan ng pag-click sa lugar ng logo at pagpili ng image file.
-2. Magdagdag ng iba pang **larawan ng simbahan** na gagamitin sa iyong website at [mobile app](./mobile-app.md).
+1. I-upload ang **church logo** ng iyong simbahan sa pamamagitan ng pag-click sa logo area at pagpili ng image file.
+2. Magdagdag ng anumang karagdagang **church images** na ginagamit sa iyong website at [mobile app](./mobile-app.md).
 
 :::tip
-Para sa pinakamagandang resulta, gumamit ng logo na may transparent na background sa PNG format. Sisiguraduhin nito na maganda ito sa maliwanag at madilim na background.
+Para sa pinakamagandang resulta, gumamit ng logo na may transparent na background sa PNG format. Tinitiyak nitong maganda ito sa parehong light at dark na background.
 :::
 
 ## Unang Araw ng Linggo
 
-Piliin kung anong araw nagsisimula ang iyong mga kalendaryo. Ang dropdown na **First Day of Week** sa seksyong Church Info ay naka-default sa **Sunday**, pero maaaring itakda sa anumang araw. Kapag binago, susundin ito sa mga calendar grid sa B1 Admin at sa B1.church member portal -- ang mga kalendaryo ng grupo, curated na kalendaryo, at event editor ay pawang magsisimula ng linggo sa araw na pinili mo.
+Piliin kung aling araw magsisimula ang iyong mga calendar. Ang dropdown na **First Day of Week** sa seksyong Church Info ay nakatakda sa **Sunday** bilang default, ngunit maaaring itakda sa anumang araw. Kapag nabago na, sinusunod ito sa mga calendar grid sa B1 Admin at sa B1.church member portal -- ang mga group calendar, curated calendar, at event editor ay lahat magsisimula ng linggo sa araw na pipiliin mo.
 
-## Rehiyon (Format ng Petsa at Telepono)
+## Region (Format ng Petsa at Telepono)
 
-Kinokontrol ng setting na **Region** kung paano isinusulat ang mga petsa at oras sa buong B1. Bilang default, gumagamit ang mga petsa ng format ng Estados Unidos (halimbawa, "Sep 28, 2026" at "9/28/2026"). Ang mga simbahang nasa labas ng US ay maaaring lumipat sa sarili nilang format -- halimbawa, kapag pinili ang English (United Kingdom), ipapakita ang "28 Sept 2026" at "28/09/2026".
+Kinokontrol ng setting na **Region** kung paano isinusulat ang mga petsa at oras sa buong B1. Bilang default, gumagamit ang mga petsa ng format ng United States (halimbawa, "Sep 28, 2026" at "9/28/2026"). Maaaring lumipat sa sarili nilang format ang mga simbahang nasa labas ng US -- halimbawa, kung pipiliin ang English (United Kingdom), magiging "28 Sept 2026" at "28/09/2026" ang ipapakita.
 
-1. Sa pahina ng Settings, i-click ang **Region** sa listahan sa kaliwa, pagkatapos i-click ang **Edit** sa seksyong **Region**.
-2. Piliin ang iyong rehiyon mula sa dropdown na **Region**. Ang bawat opsyon ay may sample na petsa para makita mo nang eksakto kung paano lalabas ang mga petsa.
+1. Sa Settings page, i-click ang **Region** sa listahang nasa kaliwa, pagkatapos i-click ang **Edit** sa seksyong **Region**.
+2. Piliin ang iyong region mula sa **Region** dropdown. Bawat opsyon ay nagpapakita ng sample na petsa upang makita mo kung paano talaga lilitaw ang mga petsa.
 3. I-click ang **Save**.
 
-Ipapakita na ng seksyong Region ang napili mong rehiyon, isang sample ng **Date format**, at ang iyong format ng **Phone numbers**.
+Ipinapakita ng seksyong Region ang napili mong region, sample ng **Date format**, at ang format ng **Phone numbers** mo.
 
 ### Format ng Numero ng Telepono
 
-May setting na **Phone numbers** ang parehong seksyong Region na kumokontrol kung paano inilalagay ang mga numero ng telepono sa record ng isang tao:
+Kinokontrol ng setting na **Phone numbers** sa parehong seksyong Region kung paano inilalagay ang mga numero ng telepono sa record ng isang tao:
 
-- **International (with country code)** -- ang default. Ang mga phone field ay may country flag picker at sine-save ang mga numero kasama ang country code (halimbawa, +1 918 555 1234).
-- **Local (as typed)** -- nagiging simpleng text box ang mga phone field at sine-save ang mga numero nang eksakto sa pagkaka-type mo, nang walang idinaragdag na country code (halimbawa, 0701 234 5678). Piliin ito kung lokal na format ang gamit ng simbahan mo sa pagsulat ng mga numero at ayaw mong magdagdag ang B1 ng country code.
+- **International (with country code)** -- ang default. Ang mga phone field ay nagpapakita ng country flag picker at sine-save ang mga numero kasama ang country code (halimbawa, +1 918 555 1234).
+- **Local (as typed)** -- nagiging simpleng text box ang mga phone field at sine-save ang mga numero nang eksakto gaya ng pagta-type mo, nang walang idinadagdag na country code (halimbawa, 0701 234 5678). Piliin ito kung ang iyong simbahan ay nagsusulat ng mga numero sa lokal na format at ayaw mong magdagdag ang B1 ng country code.
 
-Kapag napili ang **Local**, ipinapakita rin ng seksyong Region ang "Local phone numbers" sa tabi ng iyong rehiyon.
+Kapag napili ang **Local**, ipinapakita rin ng seksyong Region ang "Local phone numbers" sa tabi ng iyong region.
 
 :::tip
-Pinakamahusay gumana ang texting kapag may country code ang mga numero. Kung nagpapadala ka ng mga text mula sa B1, panatilihin ang **International** na format, o tiyaking may country code ang mga numerong tina-type mo sa Local mode.
+Pinakamainam ang texting kapag may country code ang mga numero. Kung nagpapadala ka ng text mula sa B1, panatilihin ang **International** na format, o siguraduhing may country code ang mga numerong itatype mo sa Local mode.
 :::
 
-Naaangkop ang iyong rehiyon sa mga petsa at oras sa buong B1 Admin at sa iyong B1.church website at member portal, kasama ang mga sermon, blog post, kalendaryo ng grupo, at serving plan, para makita ng mga miyembro ang mga petsa sa parehong format na nakikita ng iyong staff.
+Nalalapat ang iyong region sa mga petsa at oras sa buong B1 Admin at sa iyong B1.church website at member portal, kabilang ang mga sermon, blog post, group calendar, at serving plan, kaya nakikita ng mga miyembro ang mga petsa sa parehong format na nakikita ng iyong staff.
 
 ## Texting {#texting}
 
-Mag-connect ng texting provider para makapagpadala ng SMS sa isang tao o sa buong grupo mula sa B1 Admin. Ipinapadala ang mga text sa pamamagitan ng sarili mong account sa provider, kaya umiiral ang kanilang presyo at mga limitasyon.
+Kumonekta sa isang texting provider upang magpadala ng SMS sa isang tao o sa buong group mula sa B1 Admin. Ipinapadala ang mga text sa pamamagitan ng sarili mong account sa provider, kaya nalalapat ang kanilang presyo at limitasyon.
 
-1. Sa pahina ng Settings, i-click ang **Texting** sa listahan sa kaliwa, pagkatapos i-click ang **Edit** sa seksyong **Texting**.
+1. Sa Settings page, i-click ang **Texting** sa listahang nasa kaliwa, pagkatapos i-click ang **Edit** sa seksyong **Texting**.
 2. Pumili ng **Provider**:
-   - **Clearstream** -- ilagay ang **API Key**. Gumawa nito sa iyong Clearstream Account Settings sa ilalim ng API Keys.
-   - **Text In Church** -- ilagay ang **API Key**. Humingi muna sa Text In Church Support ng developer API access, pagkatapos ay gumawa ng key sa iyong Account Settings > seksyong Developer API.
-   - **Nalo Solutions** (Ghana) -- ilagay ang auth key mula sa iyong Nalo Solutions account bilang **API Key**, at isang **Sender ID** (hanggang 11 character) na inaprubahan ng Nalo para sa iyo.
+   - **Clearstream** -- maglagay ng **API Key**. Gumawa nito sa iyong Clearstream Account Settings sa ilalim ng API Keys.
+   - **Text In Church** -- maglagay ng **API Key**. Humingi muna ng developer API access sa Text In Church Support, pagkatapos gumawa ng key sa seksyong Account Settings > Developer API.
+   - **Nalo Solutions** (Ghana) -- ilagay ang auth key mula sa iyong Nalo Solutions account bilang **API Key**, at ang **Sender ID** (hanggang 11 karakter) na naaprubahan sa iyo ng Nalo.
 3. I-click ang **Save**.
 
-Para itigil ang pag-text, itakda ang **Provider** sa **None** at i-save. Aalisin nito ang naka-save na provider.
+Upang itigil ang texting, itakda ang **Provider** sa **None** at i-save. Aalisin nito ang naka-save na provider.
 
-### Pag-opt Out ng mga Taong Sumasagot ng STOP {#opting-out-people-who-reply-stop}
+### Pag-opt Out sa Mga Taong Sumagot ng STOP
 
-Kapag na-save na ang provider, buksan muli ang seksyong Texting gamit ang **Edit**. Sa ilalim ng mga setting ng provider, may read-only na field na **Inbound (STOP) webhook URL** na nagpapakita ng web address na natatangi para sa inyong simbahan. I-click ang field para mapili ang address, kopyahin ito, at i-paste sa inbound message (reply) webhook setting ng inyong texting provider. Gumagana ito sa alinman sa mga provider sa itaas na kayang ipasa ang mga papasok na sagot sa isang webhook.
+Kapag na-save na ang isang provider, buksan muli ang seksyong Texting gamit ang **Edit**. Sa ibaba ng mga setting ng provider, may read-only na field na **Inbound (STOP) webhook URL** na nagpapakita ng web address na natatangi sa iyong simbahan. I-click ang field upang mapili ang address, kopyahin ito, at i-paste sa inbound message (reply) webhook setting ng iyong texting provider. Gumagana ito sa alinman sa mga provider sa itaas na kayang ipasa ang mga papasok na reply sa isang webhook.
 
-Pagkatapos nito, kapag may sumagot ng **STOP** (o STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT, o REVOKE) sa isa sa inyong mga text, hahanapin ng B1 ang lahat ng may mobile number na tugma, mamarkahan silang nag-opt out, at io-off ang kanilang mga text reminder. Lalaktawan na sila sa mga group text. Hindi pinapansin ang iba pang sagot.
-
-:::info
-Ginagamit nito ang parehong opt-out setting ng **Hide me from the member directory**, kaya ang mga sumasagot ng STOP ay makikita ring **Hidden from directory** sa kanilang profile. Lalabas lamang ang field habang napili ang naka-save na provider -- kung palitan ninyo ang dropdown sa ibang provider, i-save muna para makita ulit ang URL.
-:::
-
-Kapag may naka-connect nang provider, ang staff na may pahintulot na magpadala ng text ay makakakita ng button na **Text** sa pahina ng isang grupo (**Text this group**) at ng isang taong may mobile phone (**Send text message**). I-type ang iyong mensahe at i-click ang **Send**. Binibilang ng dialog ang mga character at SMS segment. Para sa grupo, ipinapakita nito kung ilang miyembro ang makakatanggap ng text bago mo ipadala:
-
-- Lalaktawan ang mga miyembrong walang nakatalang mobile phone.
-- Ang mga miyembrong pumili ng **Hide me from the member directory** ay ibibilang na nag-opt out at lalaktawan.
-- Ang mga miyembro ng pamilya na iisa ang mobile number ay makakatanggap lang ng text nang isang beses.
-
-### Pag-personalize ng mga Text gamit ang Merge Field {#personalizing-texts-with-merge-fields}
-
-Sa ibaba ng message box, ipinapakita ng Text dialog ang mga placeholder chip: **First Name**, **Last Name**, **Display Name**, at **Church Name**. I-click ang isang chip para ipasok ang placeholder nito (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, o `{{churchName}}`) sa kinaroroonan ng iyong cursor. Kapag ipinadala ang text, papalitan ang bawat placeholder ng detalye ng tatanggap, kaya ang group text na `Hi {{firstName}}, see you Sunday!` ay makakarating sa bawat miyembro na may sarili nilang pangalan. Gumagana ang mga placeholder sa mga group text at sa mga text sa iisang tao.
+Pagkatapos nito, kapag may sumagot ng **STOP** (o STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT, o REVOKE) sa alinman sa iyong mga text, hahanapin ng B1 ang lahat ng may tugmang mobile number, markahan sila bilang opted out, at i-o-off ang kanilang mga text reminder. Lalaktawan na sila sa mga group text. Hindi papansinin ang ibang mga reply.
 
 :::info
-Ang limitasyong 1,600 character ay naaangkop sa mensahe habang tina-type mo ito. Pagkatapos mapunan ang mga placeholder, ang anumang text na lampas sa 1,600 character ay puputulin sa haba na iyon.
+Ginagamit nito ang parehong opt-out setting ng **Hide me from the member directory**, kaya ang mga sumagot ng STOP ay makikitang **Hidden from directory** din sa kanilang profile. Lumilitaw lamang ang field kapag napili ang naka-save na provider -- kung ililipat mo ang dropdown sa ibang provider, mag-save muna upang makita muli ang URL.
 :::
 
-Maaari ring awtomatikong lumabas ang mga text mula sa isang hakbang ng [workflow](../serving/workflows.md#sending-a-text) gamit ang aksyong **Send Text**, na gumagamit ng parehong provider at mga placeholder.
+Kapag nakakonekta na ang isang provider, makikita ng mga staff na may permission magpadala ng text ang isang button na **Text** sa pahina ng isang group (**Text this group**) at ng isang taong may mobile phone (**Send text message**). I-type ang iyong mensahe at i-click ang **Send**. Binibilang ng dialog ang mga karakter at SMS segment. Para sa isang group, ipinapakita nito kung ilang miyembro ang makakatanggap ng text bago mo ipadala:
+
+- Nilalaktawan ang mga miyembrong walang mobile phone sa record.
+- Ang mga miyembrong pumili ng **Hide me from the member directory** ay binibilang na opted out at nilalaktawan.
+- Ang mga miyembro ng pamilyang nagbabahagi ng mobile number ay isang beses lamang makakatanggap ng text.
+
+### Pag-personalize ng Mga Text Gamit ang Merge Fields {#personalizing-texts-with-merge-fields}
+
+Sa ibaba ng message box, ipinapakita ng Text dialog ang mga placeholder chip: **First Name**, **Last Name**, **Display Name**, at **Church Name**. I-click ang isang chip upang ipasok ang placeholder nito (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, o `{{churchName}}`) sa iyong cursor. Kapag naipadala na ang text, papalitan ang bawat placeholder ng detalye ng bawat tatanggap, kaya ang group text na gaya ng `Hi {{firstName}}, see you Sunday!` ay makakarating sa bawat miyembro na may sarili nilang pangalan. Gumagana ang mga placeholder kapwa sa group text at sa text sa iisang tao.
+
+:::info
+Nalalapat ang limitasyong 1,600 karakter sa mensaheng tina-type mo. Pagkatapos mapunan ang mga placeholder, anumang text na lalampas sa 1,600 karakter ay puputulin sa haba na iyon.
+:::
+
+Maaari ding awtomatikong lumabas ang mga text mula sa isang [workflow](../serving/workflows.md#sending-a-text) step gamit ang aksyong **Send Text**, na gumagamit ng parehong provider at mga placeholder.
 
 ## File Storage
 
-Bilang default, ang mga file na ina-upload mo sa iyong website (sa pamamagitan ng [Files](../website/files.md)) at iba pang content area ay gumagamit ng libreng hosted storage ng B1, hanggang 100MB. Kung kailangan mo ng mas malaking espasyo, maaari mong i-connect ang sarili mong cloud storage -- ang mga bagong upload ay diretso nang mapupunta sa iyong account nang walang limitasyon mula sa platform.
+Bilang default, ginagamit ng mga file na ina-upload mo sa iyong website (sa pamamagitan ng [Files](../website/files.md)) at iba pang content area ang libreng hosted storage ng B1, hanggang 100MB. Kung kailangan mo ng mas maraming espasyo, maaari kang kumonekta sa sarili mong cloud storage -- ang mga bagong upload ay didiretso na sa iyong account nang walang limitasyon ng platform.
 
-1. Sa pahina ng Settings, i-click ang **File Storage** sa listahan sa kaliwa, pagkatapos i-click ang **Edit** sa seksyong **File Storage**.
+1. Sa Settings page, i-click ang **File Storage** sa listahang nasa kaliwa, pagkatapos i-click ang **Edit** sa seksyong **File Storage**.
 2. Pumili ng provider: **Google Drive**, **Dropbox**, **OneDrive**, o isang **S3-compatible bucket** (AWS S3, Cloudflare R2, Backblaze B2, atbp.).
-3. Para sa Google Drive, Dropbox, o OneDrive, i-click ang **Connect** at mag-sign in para pahintulutan ang access. Para sa S3-compatible bucket, ilagay ang iyong access key, secret, pangalan ng bucket, at public URL base.
+3. Para sa Google Drive, Dropbox, o OneDrive, i-click ang **Connect** at mag-sign in upang payagan ang access. Para sa S3-compatible bucket, ilagay ang iyong access key, secret, bucket name, at public URL base.
 4. I-click ang **Save**.
 
 :::info
-Naaapektuhan lang nito ang mga bagong upload sa Files ng iyong website at mga katulad na content area. Ang mga larawan sa gallery, thumbnail, logo, at litrato ng mga tao ay laging mananatili sa default na storage ng B1.
+Nakakaapekto lamang ito sa mga bagong upload sa iyong website Files at mga katulad na content area. Ang mga gallery image, thumbnail, logo, at larawan ng tao ay laging nananatili sa default storage ng B1.
 :::
 
 ## Grade Promotion
 
-Kung sinusubaybayan mo ang **Grade** ng mga bata at estudyante, maaaring awtomatikong i-akyat ng B1 ang lahat ng isang grade sa petsang pipiliin mo (halimbawa, Agosto 1) kaysa sa mano-manong pag-edit ng bawat profile.
+Kung sinusubaybayan mo ang **Grade** ng mga bata at estudyante, maaaring awtomatikong itaas ng B1 ang lahat ng isang grade sa petsang pipiliin mo (halimbawa, Agosto 1) sa halip na i-edit mo ang bawat profile nang manual.
 
-1. Sa pahina ng Settings, i-click ang **Grade Promotion** sa listahan sa kaliwa, pagkatapos i-click ang **Edit** sa seksyong **Grade Promotion**.
-2. I-on ang switch (ipapakita nitong **Enabled**) at piliin ang **Month** at **Day** ng pag-akyat ng grade bawat taon. Sa petsang iyon, ang lahat ng may grade ay aakyat ng isang grade, at ang mga 12th grader ay magiging **Graduated**.
+1. Sa Settings page, i-click ang **Grade Promotion** sa listahang nasa kaliwa, pagkatapos i-click ang **Edit** sa seksyong **Grade Promotion**.
+2. I-on ang switch (ipinapakitang **Enabled**) at piliin ang **Month** at **Day** kung kailan itataas ang mga grade bawat taon. Sa petsang iyon, ang lahat na may grade ay aakyat ng isang grade, at ang mga nasa ika-12 grade ay magiging **Graduated**.
 3. I-save ang iyong mga pagbabago.
 
-Para itigil ang awtomatikong pag-akyat, i-off ang switch para ipakita nitong **Disabled** at i-save. Aalisin ang petsa ng pag-akyat at hindi na kusang magbabago ang mga grade.
+Upang itigil ang awtomatikong pag-promote, i-off ang switch upang ipakitang **Disabled** at i-save. Aalisin ang petsa ng promotion at hindi na magbabago ang mga grade nang kusa.
+
+## Volunteer Signup {#volunteer-signup}
+
+Bilang default, nakikita ng mga miyembrong nagba-browse ng [volunteer signup](../../b1-church/serving/volunteer-signup.md) ang bawat paparating na linggo na may bukas na posisyon. Kung humaba ang listahang iyon, maaari mong ipakita na lamang ang susunod na linggo ng bawat plan type.
+
+1. Sa Settings page, i-click ang **Volunteer Signup** sa listahang nasa kaliwa, pagkatapos i-click ang **Edit** sa seksyong **Volunteer Signup**.
+2. I-on ang **Show only the next week of each plan type**.
+3. I-save ang iyong mga pagbabago.
+
+Kapag naka-on ito, ang bawat plan type ay magpapakita lamang ng susunod na paparating na plano. Lalabas ang kasunod na linggo kapag lumipas na ang petsang iyon. Ang row na **Weeks shown** ng seksyon ay magbabasang **Only the next week of each plan type** o **All upcoming weeks**.
+
+## Giving Privacy {#giving-privacy}
+
+Karaniwang nakikita ng mga taong may access sa giving ang kabuuang donasyon ng isang tao sa kanilang [person record](../people/adding-people.md#editing-details). Kung ayaw mong makita ang mga halaga sa screen sa tuwing bubuksan ang isang record, maaari mo silang itago hanggang may humingi.
+
+1. Sa Settings page, i-click ang **Giving privacy** sa listahang nasa kaliwa, pagkatapos i-click ang **Edit** sa seksyong **Giving privacy**.
+2. I-on ang **Hide giving on person records until clicked**.
+3. I-save ang iyong mga pagbabago.
+
+Kapag naka-on ito, sasabihin ng giving card sa person record na "Giving is hidden on person records." I-click ang **Show giving** upang i-load at ipakita ang donasyon ng taong iyon. Muli itong magtatago kapag nagbukas ka ng ibang tao. Hindi nagbabago kung sino ang makakakita ng giving: tanging ang mga taong may giving access lamang ang makakakita ng card.
 
 ## Import at Export
 
-Ang link na **Import/Export** sa ilalim ng pangalan ng inyong simbahan sa pahina ng Settings ay nagbubukas ng hiwalay na tool sa bagong browser window. Gamitin ito para:
+Ang link na **Import/Export** sa ilalim ng pangalan ng iyong simbahan sa Settings page ay nagbubukas ng nakalaang tool sa bagong browser window. Gamitin ito upang:
 
-- Mag-import ng datos ng mga miyembro mula sa ibang church management system.
-- Mag-export ng iyong datos sa ChurchApps para sa backup o paglipat.
+- Mag-import ng datos ng miyembro mula sa ibang church management system.
+- Mag-export ng iyong ChurchApps data para sa backup o paglipat.
 
-Lalo itong nakakatulong kapag kasisimula mo pa lang i-set up ang iyong simbahan at kailangan mong ilipat ang mga umiiral na record sa ChurchApps.
+Lalo itong nakakatulong kapag kakasimula mo pa lang mag-set up ng iyong simbahan at kailangang ilipat ang mga umiiral na record sa ChurchApps.
 
 :::warning
-Kapag nag-i-import ng datos, laging mag-backup muna ng iyong mga umiiral na record. Nagdaragdag ang mga import operation ng datos sa iyong sistema at maaaring lumikha ng mga duplicate na entry kung ulit-ulitin.
+Kapag nag-i-import ng datos, laging i-back up muna ang iyong mga umiiral na record. Dinadagdagan ng mga import operation ang iyong sistema at maaaring gumawa ng duplicate na entry kapag inulit nang maraming beses.
 :::

@@ -1,64 +1,46 @@
 ---
-title: "Medlemsregister"
+title: "Medlemskatalog"
 ---
 
-# Medlemsregister
+# Medlemskatalog
 
 <div class="article-intro">
 
-Medlemsregisteret lar deg bla gjennom og søke etter mennesker i kirken din. Enten du trenger å slå opp en annen gruppedeltar eller finne noen ny, gjør registeret det enkelt å koble til kirkaelskende dine.
+Medlemskatalogen lar deg bla gjennom og søke etter personer i kirken din. Enten du trenger å slå opp en gruppemedlem eller finne noen nye, gjør katalogen det enkelt å komme i kontakt med menighetsfamilien din.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du må være [pålogget](../getting-started/logging-in.md) B1.church-kontoen din.
-- Registeret er tilgjengelig for **medlemmer og ansatte** bare. Besøkende og deltagere som ennå ikke har blitt medlemmer, vil se en "Kun medlemmer"-melding i stedet.
+- Du må være [logget inn](../getting-started/logging-in.md) på B1.church-kontoen din.
+- Katalogen er kun tilgjengelig for **medlemmer og ansatte**. Besøkende og deltakere som ennå ikke har blitt medlemmer, ser en melding om «Kun for medlemmer» i stedet.
 
 </div>
 
-## Få tilgang til katalogen
+## Åpne katalogen
 
-1. Klikk **Samfunn** i [sidestolpen navigering](../getting-started/navigating.md).
-2. Registeret lastes inn med en liste over alle synlige kirkamedlemmer på venstre side av siden.
+1. Trykk på **Fellesskap** i [fanelinjen eller på siden Mer](../getting-started/navigating.md) (kirken din kan ha gitt den et annet navn).
+2. **Katalogen** åpnes med et antall personer og en liste over alle synlige kirkemedlemmer.
 
-## Søk etter medlemmer
+## Søke etter medlemmer
 
-Siden bruker et master-detalj-layout. På venstre side har du to måter å finne mennesker:
+Skriv inn et navn i boksen **Søk etter medlemmer** øverst i listen. Listen filtreres mens du skriver, og den delen av hvert navn som samsvarer, er uthevet. Tøm boksen for å se hele katalogen igjen.
 
-### Søk etter navn
+## Bla i katalogen
 
-1. Sørg for at **Mennesker**-filteret er valgt øverst i søkeområdet.
-2. Skriv inn et navn i søkefeltet.
-3. Klikk **Søk** eller trykk **Enter** for å se resultater.
+Medlemmer er gruppert under bokstavoverskrifter (A, B, C og så videre) etter den første bokstaven i fornavnet deres, og sortert etter etternavn innenfor hver bokstav. Hver oppføring viser medlemmets bilde, visningsnavn og medlemsstatus, slik at det er enkelt å skumme gjennom listen.
 
-Hvis du lar søkefeltet være tomt og klikker **Søk**, vises en fullstendig kataloglisting.
+## Se en medlemsprofil
 
-### Søk etter gruppe
+Trykk på et medlem i listen for å åpne profilen deres. Profilen viser medlemmets navn, bilde og medlemsstatus, med knapper for å **Send melding**, **Ring** eller sende en **Tekst** når denne informasjonen er tilgjengelig. Under det viser seksjonen **Kontaktinformasjon** detaljene som kirken din og medlemmet har valgt å dele, som e-post, telefon og adresse, og **Husstandsmedlemmer** lister de andre personene i husstanden deres.
 
-1. Klikk **Grupper**-filteret øverst i søkeområdet.
-2. Velg en gruppe fra rullegardinen.
-3. Klikk **Søk** for å se alle medlemmer av denne gruppen.
-
-:::tip
-Søking etter gruppe er en rask måte å finne noen du møtte på et [gruppemøte](../groups/browsing-groups.md), men hvis navn du ikke kan helt huske.
-:::
-
-## Bla gjennom registeret
-
-Medlemmer er oppført alfabetisk etter etternavn og grupperes under bokstaver (A, B, C, og så videre). Hver oppføring viser medlemmets foto, visningsnavn og husnavn, noe som gjør det enkelt å skanne gjennom listen.
-
-## Vis en medlemsprofil
-
-Klikk på et medlem i listen for å åpne profilen i detaljepanelet på høyre side. Profilen viser medlemmets informasjon som konfigurert av kirken din, som kan inkludere kontaktdetaljer, husholdningsmedlemmer og medlemskap i grupper.
-
-Du kan klikke på husholdningsmedlemmer innen en profil for å navigere til profilene deres.
+Du kan trykke på husstandsmedlemmer i en profil for å gå til deres profiler også. På din egen profil tar knappen **Rediger profil** deg til [Redigere profilen din](../getting-started/editing-your-profile.md).
 
 :::info
-Informasjonen som er synlig i hver profil avhenger av privatlivs- og kataloginnstillingene din. Ikke alle felt kan vises for hvert medlem.
+Informasjonen som er synlig i hver profil, avhenger av kirkens personvern- og katalogsinnstillinger. Ikke alle felt vises nødvendigvis for alle medlemmer.
 :::
 
 :::info
-Medlemmer under kirkas [minimumnalder for private meldinger](/docs/b1-admin/settings/mobile-app#medlem-katalog--meldingsinnstillinger) forblir synlige i katalogen, men alternativet for å sende dem en privat melding er utilgjengelig.
+Medlemmer under kirkens [minimumsalder for private meldinger](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) forblir synlige i katalogen, men alternativet for å sende dem en privat melding er ikke tilgjengelig.
 :::

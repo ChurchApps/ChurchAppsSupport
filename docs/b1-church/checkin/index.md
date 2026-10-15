@@ -16,7 +16,7 @@ When you use self check-in, you select a service, choose which household members
 
 ## Getting Started
 
-To access check-in, click **Check-In** in the [sidebar navigation](../getting-started/navigating.md) of your member portal. You must be [logged in](../getting-started/logging-in.md) to use this feature -- if you are not signed in, you will be prompted to log in first.
+To access check-in, tap **Check-In** in the [tab bar or on the More page](../getting-started/navigating.md) of your member portal. You must be [logged in](../getting-started/logging-in.md) to use this feature -- if you are not signed in, you will be prompted to log in first.
 
 :::info
 The check-in feature requires that your church has set up services and attendance groups in their administration settings. If no services are available when you open the check-in page, your church may not have this feature configured yet. Contact your church administrator for help.

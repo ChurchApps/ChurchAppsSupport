@@ -15,6 +15,7 @@ The Serving section on B1.church lets you browse volunteer opportunities and sig
 - **Browse volunteer opportunities** -- See upcoming service plans with open positions that need volunteers.
 - **Sign up for positions** -- Choose a position and sign yourself up with one click.
 - **View your plans** -- See your upcoming and past [serving assignments](../plans/viewing-plans).
+- **Respond to assignments** -- Accept or decline positions you have been scheduled for, from the Plans page or the **You're serving** section on Home. If your plans change after you accept, you can [decline an accepted assignment](../plans/viewing-plans#declining-an-accepted-assignment) until the service is over.
 - **Remove signups** -- Cancel a self-signup if your plans change (before the deadline).
 
 ## How It Works

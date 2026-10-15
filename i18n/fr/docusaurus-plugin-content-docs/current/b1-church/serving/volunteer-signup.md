@@ -6,72 +6,72 @@ title: "Inscription des bénévoles"
 
 <div class="article-intro">
 
-Parcourez les positions de bénévolat disponibles et inscrivez-vous pour les services à venir directement à partir de B1.church. Les positions sont organisées par catégorie afin que vous puissiez rapidement trouver où l'aide est nécessaire et rejoindre une équipe.
+Parcourez les postes de bénévolat disponibles et inscrivez-vous directement aux services à venir depuis B1.church. Les postes sont organisés par catégorie afin que vous puissiez rapidement trouver où l'aide est nécessaire et rejoindre une équipe.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Un compte B1.church — vous devez être connecté pour vous inscrire
-- Votre administrateur d'église doit avoir activé l'auto-inscription sur au moins une position
+- Un compte B1.church -- vous devez être connecté pour vous inscrire
+- Votre administrateur d'église doit avoir activé l'inscription volontaire sur au moins un poste
 
 </div>
 
-## Parcourir les positions disponibles
+## Parcourir les postes disponibles
 
-1. Accédez à la page **Bénévole** du site B1.church de votre église.
-2. Vous verrez une liste des plans de service à venir qui ont des positions de bénévolat ouvertes.
-3. Chaque plan montre le **nom du plan**, la **date de service** et les **heures de service**.
+1. Accédez à la page **Bénévoles** du site web B1.church de votre église.
+2. Vous verrez une liste des plans de service à venir qui ont des postes de bénévolat ouverts. Dans chaque plan, les postes sont listés par catégorie, puis par nom. Si votre église n'affiche que la semaine suivante de chaque type de plan, les semaines suivantes apparaissent une fois la semaine en cours passée.
+3. Chaque plan affiche le **nom du plan**, la **date du service** et les **heures de service**.
 
-Les positions sont groupées par catégorie (par exemple, « Bande », « Hospitalité », « Ministère des enfants »). Chaque position montre :
+Les postes sont regroupés par catégorie (par exemple, « Groupe musical », « Accueil », « Ministère des enfants »). Chaque poste affiche :
 
-- **Nom de la position** — Le rôle que vous rempliriez (par exemple, « Batteur », « Accueilleur », « Serveur de café »).
-- **Description** — Détails sur le rôle, si fournis par l'administrateur.
-- **Spots disponibles** — Une barre de progression montrant combien de slots sont remplis et combien restent.
-- **Qui s'est inscrit** — Si votre église a activé **Afficher les noms des bénévoles sur la page d'inscription** pour le plan, une ligne « Inscrits : » liste les noms des personnes qui servent déjà à cette position. Les noms ne sont affichés que lorsque vous êtes connecté.
+- **Nom du poste** -- Le rôle que vous pourriez occuper (par exemple, « Batteur », « Accueillant », « Serveur de café »).
+- **Description** -- Les détails du rôle, si l'administrateur en a fourni.
+- **Places disponibles** -- Une barre de progression indiquant combien de places sont pourvues et combien restent.
+- **Personnes inscrites** -- Si votre église a activé **Afficher les noms des bénévoles sur la page d'inscription** pour le plan, une ligne « Inscrits : » indique le nom des personnes qui servent déjà à ce poste. Les noms ne sont affichés que lorsque vous êtes connecté.
 
 ## S'inscrire
 
-1. Trouvez une position pour laquelle vous souhaitez être bénévole.
-2. Cliquez sur le bouton **S'inscrire** à côté de la position.
-3. Un message de confirmation apparaît : « Vous êtes inscrit ! Merci de vous être porté volontaire. »
-4. La position affiche maintenant un indicateur vert confirmant que vous êtes inscrit.
+1. Repérez un poste pour lequel vous souhaitez vous porter volontaire.
+2. Cliquez sur le bouton **S'inscrire** à côté du poste.
+3. Un message de confirmation apparaît : « Vous êtes inscrit ! Merci de votre engagement. »
+4. Le poste affiche désormais un indicateur vert confirmant que vous êtes inscrit.
 
 :::info
-Vous devez être connecté pour vous inscrire. Si vous n'êtes pas connecté, vous serez invité à vous connecter d'abord.
+Vous devez être connecté pour vous inscrire. Si vous n'êtes pas connecté, il vous sera demandé de vous connecter d'abord.
 :::
 
-## Suppression d'une inscription
+## Annuler une inscription
 
 Si vos plans changent et que vous ne pouvez plus servir :
 
-1. Trouvez la position pour laquelle vous vous êtes inscrit — elle affichera un indicateur vert « Vous êtes inscrit ».
-2. Cliquez sur le bouton **Supprimer**.
-3. Confirmez que vous souhaitez vous supprimer de la position.
-4. Un message confirme : « Vous avez été supprimé de cette position. »
+1. Repérez le poste auquel vous vous êtes inscrit -- il affiche un indicateur vert « Vous êtes inscrit ».
+2. Cliquez sur le bouton **Retirer**.
+3. Confirmez que vous souhaitez vous retirer du poste.
+4. Un message confirme : « Vous avez été retiré de ce poste. »
 
-## Délais
+## Dates limites
 
-Votre administrateur d'église peut définir une date limite d'inscription pour chaque plan. La date limite est un nombre défini d'heures avant la date de service. Une fois la date limite dépassée :
+Votre administrateur d'église peut définir une date limite d'inscription pour chaque plan. Cette date limite correspond à un nombre fixe d'heures avant la date du service. Une fois la date limite passée :
 
-- Vous ne pouvez pas vous inscrire pour de nouvelles positions.
-- Vous ne pouvez pas supprimer les inscriptions existantes.
-- Un message en haut du plan indique que la date limite d'inscription a dépassé.
+- Vous ne pouvez plus vous inscrire à de nouveaux postes.
+- Vous ne pouvez plus retirer vos inscriptions existantes.
+- Un message en haut du plan indique que la date limite d'inscription est passée.
 
-## Capacité de la position
+## Capacité des postes
 
-Chaque position a un nombre limité de spots. Quand tous les spots sont remplis :
+Chaque poste dispose d'un nombre limité de places. Lorsque toutes les places sont pourvues :
 
-- La position s'affiche comme **Complet**.
+- Le poste affiche le statut **Complet**.
 - Le bouton d'inscription est désactivé.
-- Si quelqu'un supprime son inscription, le spot se libère à nouveau.
+- Si quelqu'un retire son inscription, la place se libère à nouveau.
 
 :::tip
-Consultez la page des bénévoles régulièrement, surtout au début de la semaine. Les positions populaires se remplissent rapidement, donc s'inscrire tôt vous donne la meilleure sélection.
+Consultez régulièrement la page des bénévoles, surtout en début de semaine. Les postes les plus demandés se remplissent rapidement : s'inscrire tôt vous donne le plus large choix.
 :::
 
 ## Articles connexes
 
-- [Aperçu du service](./index.md) — Aperçu des fonctionnalités de service sur B1.church
-- [Consultation des plans](../plans/viewing-plans) — Consultez vos plans assignés et les ordres de service
+- [Vue d'ensemble du service](./index.md) -- Vue d'ensemble des fonctionnalités de service sur B1.church
+- [Consulter les plans](../plans/viewing-plans) -- Consultez vos plans assignés et leurs ordres de service
