@@ -66,7 +66,7 @@ transfer tool आपको चार steps में ले जाता है:
 तारीखें `9/17/1994` जैसे सामान्य formats में हो सकती हैं और अपने-आप बदल दी जाती हैं। custom fields के लिए, Yes/No fields Yes, No, Y, N, True, False, 1, और 0 जैसे values स्वीकार करते हैं, और multiple-choice fields choice का text या उसकी value, दोनों में से कोई भी स्वीकार करते हैं।
 
 :::info
-import से पहले B1 Admin में अपने custom person fields बनाएं। import पूरा होने पर, **Custom Fields** step उन column नामों को सूचीबद्ध करता है जो किसी B1 field से मेल नहीं खाते, और उन values की गिनती करता है जो field के प्रकार में फिट नहीं होतीं। वे values छोड़ दी जाती हैं, और बाकी import फिर भी पूरा हो जाता है।
+Import से पहले B1 Admin में अपने custom person fields बनाएं। import पूरा होने पर, **Custom Fields** step उन column नामों को सूचीबद्ध करता है जो किसी B1 field से मेल नहीं खाते, और उन values की गिनती करता है जो field के प्रकार में फिट नहीं होतीं। वे values छोड़ दी जाती हैं, और बाकी import फिर भी पूरा हो जाता है।
 :::
 
 जो columns आप import नहीं करना चाहते, उन्हें **(Skip)** पर सेट किया जा सकता है। आगे बढ़ने से पहले कम से कम एक name field (First Name या Last Name) map होना आवश्यक है।

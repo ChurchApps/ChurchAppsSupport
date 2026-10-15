@@ -28,7 +28,7 @@ B1 Admin आपको अपने church का डेटा export करन�
 4. आपके परिणामों में मौजूद लोगों की एक CSV file आपके computer पर download होगी, जिसमें उनका नाम, contact जानकारी, address, और अन्य मानक fields शामिल होंगे।
 
 :::tip
-export में आपके वर्तमान परिणामों के सभी लोग शामिल होते हैं। केवल आवश्यक लोगों को export करने के लिए पहले search चलाएं, एक [Saved List](./lists.md) लोड करें, या **Advanced** search का उपयोग करें।
+Export में आपके वर्तमान परिणामों के सभी लोग शामिल होते हैं। केवल आवश्यक लोगों को export करने के लिए पहले search चलाएं, एक [Saved List](./lists.md) लोड करें, या **Advanced** search का उपयोग करें।
 :::
 
 ## Settings से पूरा Data Export
