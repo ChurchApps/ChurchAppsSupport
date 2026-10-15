@@ -113,7 +113,7 @@ title: "教会设置"
 
 ### 使用合并字段个性化短信 {#personalizing-texts-with-merge-fields}
 
-在消息框下方，短信对话框会显示占位符标签：**First Name**（名字）、**Last Name**（姓氏）、**Display Name**（显示名称）和 **Church Name**（教会名称）。点击某个标签，即可在光标处插入对应的占位符（`{{firstName}}`、`{{lastName}}`、`{{displayName}}` 或 `{{churchName}}`）。发送短信时，每个占位符都会被替换为该收件人的相应信息，因此像 `Hi {{firstName}}, see you Sunday!`（您好 {{firstName}}，周日见！）这样的小组短信，会以每位成员自己的名字发送。占位符同时适用于小组短信和发给单个人的短信。
+在消息框下方，短信对话框会显示占位符标签：**First Name**（名字）、**Last Name**（姓氏）、**Display Name**（显示名称）和 **Church Name**（教会名称）。点击某个标签，即可在光标处插入对应的占位符（`{{firstName}}`、`{{lastName}}`、`{{displayName}}` 或 `{{churchName}}`）。发送短信时，每个占位符都会被替换为该收件人的相应信息，因此像 `Hi {{firstName}}, see you Sunday!`（`您好 {{firstName}}，周日见！`）这样的小组短信，会以每位成员自己的名字发送。占位符同时适用于小组短信和发给单个人的短信。
 
 :::info
 1,600 个字符的限制适用于您输入时的消息内容。占位符被填充后，任何超过 1,600 个字符的短信都会在该长度处被截断。
