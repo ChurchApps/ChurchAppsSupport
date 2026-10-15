@@ -5,11 +5,11 @@ title: "B1 Mobile(단종됨)"
 # B1 Mobile(단종됨)
 
 :::danger 단종됨 -- 대신 B1.church를 사용하세요
-iOS 및 Android의 기본 B1 Mobile 앱은 **단종되었으며** 더 이상 개발 중이 아닙니다. 이제 기능은 https://yourchurchname.b1.church의 **B1.church Progressive Web App (PWA)**을 통해 제공되며, 모든 페이지에서 추가할 수 있으며 App Store 다운로드 없이 동일한 회원 포털 경험을 제공합니다.
+iOS 및 Android의 기본 B1 Mobile 앱은 **단종되었으며** 더 이상 개발 중이 아닙니다. 이제 기능은 [https://yourchurchname.b1.church](https://yourchurchname.b1.church)의 **B1.church Progressive Web App (PWA)**을 통해 제공되며, 모든 페이지에서 추가할 수 있으며 App Store 다운로드 없이 동일한 회원 포털 경험을 제공합니다.
 
 **교회 회원인 경우:** [앱으로 설치하기(PWA)](../b1-church/getting-started/installing-pwa.md)에서 휴대폰에 대체 앱을 설정하는 방법을 참조하세요.
 
-**교회 관리자인 경우:** App Store / Google Play 목록 대신 교회 사이트(https://yourchurchname.b1.church)를 회원에게 안내하세요 -- 모든 페이지에서 PWA를 설치할 수 있습니다.
+**교회 관리자인 경우:** App Store / Google Play 목록 대신 교회 사이트([https://yourchurchname.b1.church](https://yourchurchname.b1.church))를 회원에게 안내하세요 -- 모든 페이지에서 PWA를 설치할 수 있습니다.
 
 아래 페이지는 기본 앱을 계속 실행 중인 교회를 위한 참조용으로 보관됩니다.
 :::

@@ -5,7 +5,7 @@ title: "시작하기"
 # 시작하기
 
 :::danger B1 Mobile은 단종되었습니다
-기본 B1 Mobile 앱은 [B1.church Progressive Web App (PWA)](../../b1-church/getting-started/installing-pwa.md)로 대체되었습니다. 새로운 사용자는 App Store 또는 Google Play에서 B1 Mobile을 다운로드하는 대신 https://yourchurchname.b1.church의 모든 페이지에서 PWA를 설치해야 합니다.
+기본 B1 Mobile 앱은 [B1.church Progressive Web App (PWA)](../../b1-church/getting-started/installing-pwa.md)로 대체되었습니다. 새로운 사용자는 App Store 또는 Google Play에서 B1 Mobile을 다운로드하는 대신 [https://yourchurchname.b1.church](https://yourchurchname.b1.church)의 모든 페이지에서 PWA를 설치해야 합니다.
 :::
 
 <div class="article-intro">

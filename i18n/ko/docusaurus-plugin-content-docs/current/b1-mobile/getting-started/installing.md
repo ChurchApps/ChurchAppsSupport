@@ -5,7 +5,7 @@ title: "앱 설치하기"
 # 앱 설치하기
 
 :::danger B1 Mobile은 단종되었습니다 -- 대신 PWA를 설치하세요
-기본 B1 Mobile 앱은 더 이상 업데이트되지 않습니다. 교회의 사이트에서 **B1.church Progressive Web App (PWA)**(https://yourchurchname.b1.church)를 설치하는 것이 좋습니다. 모든 페이지에서 설치할 수 있습니다. PWA는 몇 초 안에 홈 화면에 추가할 수 있으며 기본 앱의 모든 기능을 대체합니다.
+기본 B1 Mobile 앱은 더 이상 업데이트되지 않습니다. 교회의 사이트에서 **B1.church Progressive Web App (PWA)**([https://yourchurchname.b1.church](https://yourchurchname.b1.church))를 설치하는 것이 좋습니다. 모든 페이지에서 설치할 수 있습니다. PWA는 몇 초 안에 홈 화면에 추가할 수 있으며 기본 앱의 모든 기능을 대체합니다.
 
 단계별 지침은 [앱으로 설치하기(PWA)](../../b1-church/getting-started/installing-pwa.md)를 참조하세요.
 :::

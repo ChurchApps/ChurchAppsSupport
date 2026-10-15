@@ -40,7 +40,7 @@ title: "教会设置"
 您的子域名在所有 ChurchApps 教会中必须是唯一的。如果您希望使用的名称已被占用，可以尝试添加您所在的城市或州名（例如“gracechurch-dallas”）。
 :::
 
-如果您希望访客通过您自己的域名访问网站（例如 **www.gracechurch.org**），请参阅[自定义域名](./custom-domain.md)。
+如果您希望访客通过您自己的域名访问网站（例如 **`www.gracechurch.org`**），请参阅[自定义域名](./custom-domain.md)。
 
 ## 配置品牌形象
 
