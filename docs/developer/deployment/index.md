@@ -18,7 +18,7 @@ ChurchApps uses different deployment strategies depending on the project type. A
 | [Web Apps](./web-apps) | S3 + CloudFront | Static build, S3 sync, CloudFront invalidation |
 | [Mobile Apps](./mobile) | App Stores | Expo EAS Build + OTA Updates |
 | [Self-Hosting (Railway)](./railway-template) | Railway | One-click template: MySQL + Api + B1Admin + B1App |
-| [Self-Hosting (Docker)](./docker) | Any Docker host | `docker compose up` from the B1Admin repo |
+| [Self-Hosting (Docker)](./docker) | Any Docker host | One-line installer; prebuilt GHCR images + Caddy, `./deploy/b1` upgrade/backup/rollback |
 | [Caddy Custom-Domain Proxy](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Static Caddyfile + WinSW service + scheduled map sync |
 | FreeShow | Direct download | Electron Builder (cross-platform binaries) |
 
