@@ -50,7 +50,7 @@ Grupper som har arrangementer i kalenderen, vises automatisk i listen **Grupper 
 Hvis du vil lage én kalender som henter arrangementer fra mange grupper i menigheten, kan du se [Kuratert kalender](curated-calendar) for en enklere fremgangsmåte.
 :::
 
-## Aktivere påmelding til arrangementer
+## Aktivere påmelding til arrangementer {#enabling-event-registration}
 
 Du kan aktivere påmelding for alle kalenderarrangementer, slik at medlemmer kan melde seg på via B1-nettstedet eller mobilappen.
 

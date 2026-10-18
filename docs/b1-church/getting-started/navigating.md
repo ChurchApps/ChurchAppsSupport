@@ -17,7 +17,7 @@ The member portal in B1.church is a phone-first web app that lives under `/mobil
 
 </div>
 
-## Home
+## Home {#home}
 
 Opening `https://yourchurchname.b1.church/mobile` takes you to the **Home** dashboard at `/mobile/dashboard`. Home is the landing page of the member portal. It starts with a greeting ("Good morning", "Good afternoon", or "Good evening" with your first name) and today's date, followed by sections that only appear when they apply:
 

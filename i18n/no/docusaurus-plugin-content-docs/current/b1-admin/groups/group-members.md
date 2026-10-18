@@ -76,7 +76,7 @@ Du kan sende formaterte e-poster til alle medlemmer i en gruppe:
 Lag gjenbrukbare e-postmaler for gjentakende kommunikasjon som ukentlige oppdateringer, arrangementsannonseringer eller bønnebehov. Maler sparer tid og sikrer en konsistent melding.
 :::
 
-### Slå på gruppe-e-post for menigheten din
+### Slå på gruppe-e-post for menigheten din {#turning-on-group-email-for-your-church}
 
 Alle menigheter på B1 sender e-post fra samme adresse, og deler dermed ett avsenderomdømme. For å holde alles e-post unna søppelpostmapper, går ChurchApps-teamet gjennom hver menighet én gang før den kan sende gruppe-e-post.
 

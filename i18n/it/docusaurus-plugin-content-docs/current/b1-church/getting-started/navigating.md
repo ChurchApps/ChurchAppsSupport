@@ -17,7 +17,7 @@ Il portale dei membri di B1.church è un'app web pensata per il telefono che si 
 
 </div>
 
-## Home
+## Home {#home}
 
 Aprendo `https://nomedellatuachiesa.b1.church/mobile` arrivi alla dashboard **Home**, all'indirizzo `/mobile/dashboard`. Home è la pagina di ingresso del portale dei membri. Si apre con un saluto ("Buongiorno", "Buon pomeriggio" o "Buonasera" seguito dal tuo nome) e la data di oggi, seguiti da sezioni che compaiono solo quando sono pertinenti:
 

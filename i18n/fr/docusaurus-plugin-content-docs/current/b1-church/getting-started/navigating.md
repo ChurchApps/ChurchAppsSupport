@@ -17,7 +17,7 @@ Le portail des membres de B1.church est une application web conçue pour le tél
 
 </div>
 
-## Accueil
+## Accueil {#home}
 
 En ouvrant `https://yourchurchname.b1.church/mobile`, vous accédez au tableau de bord **Accueil** à l'adresse `/mobile/dashboard`. Accueil est la page d'accueil du portail des membres. Elle commence par une salutation (« Bonjour », « Bon après-midi » ou « Bonsoir » suivi de votre prénom) et la date du jour, puis par des sections qui n'apparaissent que lorsqu'elles sont pertinentes :
 

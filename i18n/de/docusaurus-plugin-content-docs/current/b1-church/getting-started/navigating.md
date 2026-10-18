@@ -17,7 +17,7 @@ Das Mitgliederportal auf B1.church ist eine für das Smartphone entwickelte Web-
 
 </div>
 
-## Startseite
+## Startseite {#home}
 
 Wenn Sie `https://ihregemeinde.b1.church/mobile` öffnen, gelangen Sie zum Dashboard **Startseite** unter `/mobile/dashboard`. Die Startseite ist die Einstiegsseite des Mitgliederportals. Sie beginnt mit einer Begrüßung („Guten Morgen“, „Guten Tag“ oder „Guten Abend“ mit Ihrem Vornamen) und dem heutigen Datum. Danach folgen Abschnitte, die nur erscheinen, wenn sie zutreffen:
 

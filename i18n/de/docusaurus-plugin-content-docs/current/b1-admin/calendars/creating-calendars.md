@@ -50,7 +50,7 @@ Das Verbinden von Gruppen mit Ihrem Kalender ist eine leistungsstarke Möglichke
 Wenn Sie einen einzelnen Kalender erstellen möchten, der Ereignisse von vielen Gruppen in Ihrer Kirche einfließen lässt, siehe [Kuratierter Kalender](curated-calendar) für einen optimierten Ansatz.
 :::
 
-## Ereignisregistrierung aktivieren
+## Ereignisregistrierung aktivieren {#enabling-event-registration}
 
 Sie können die Registrierung für jedes Ereignis aktivieren, damit sich Mitglieder über die B1-Website oder die mobile App anmelden können.
 

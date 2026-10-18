@@ -84,7 +84,7 @@ Chaque plan dispose de paramètres supplémentaires que vous pouvez configurer e
 Sur la page d'inscription pour les membres, les postes ouverts de chaque plan sont listés par catégorie, puis par nom. Les membres voient chaque semaine à venir comportant des postes ouverts, sauf si vous activez **Afficher uniquement la semaine suivante de chaque type de plan** dans [Paramètres > Inscription des bénévoles](../settings/church-settings.md#volunteer-signup).
 :::
 
-## Rappels aux bénévoles
+## Rappels aux bénévoles {#volunteer-reminders}
 
 B1 peut rappeler automatiquement aux bénévoles les services auxquels ils sont planifiés, afin que vous n'ayez pas à relancer votre équipe chaque semaine. Les rappels sont envoyés à **toutes les personnes planifiées**, qu'elles aient confirmé ou non. Chaque e-mail de rappel comprend le ou les postes du bénévole, la date du service, les notes du plan et votre message personnalisé.
 

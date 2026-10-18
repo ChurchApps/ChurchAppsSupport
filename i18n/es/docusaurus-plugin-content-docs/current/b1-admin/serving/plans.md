@@ -84,7 +84,7 @@ Cada plan tiene configuraciones adicionales que puedes ajustar haciendo clic en 
 En la página de inscripción para miembros, las posiciones abiertas de cada plan se muestran por categoría y luego por nombre. Los miembros ven todas las semanas próximas con posiciones abiertas, a menos que actives **Show only the next week of each plan type** en [Configuración > Volunteer Signup](../settings/church-settings.md#volunteer-signup).
 :::
 
-## Recordatorios a voluntarios
+## Recordatorios a voluntarios {#volunteer-reminders}
 
 B1 puede recordar automáticamente a los voluntarios los servicios para los que están programados, para que no tengas que perseguir a tu equipo cada semana. Los recordatorios se envían a **todas las personas programadas**, tanto a las que confirmaron como a las que todavía no han respondido. Cada correo de recordatorio incluye la posición o posiciones del voluntario, la fecha del servicio, las notas del plan y tu mensaje personalizado.
 

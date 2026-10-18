@@ -17,7 +17,7 @@ B1.church의 회원 포털은 휴대폰을 기본으로 설계된 웹 앱으로,
 
 </div>
 
-## 홈
+## 홈 {#home}
 
 `https://yourchurchname.b1.church/mobile`을 열면 `/mobile/dashboard`의 **Home** 대시보드로 이동합니다. 홈은 회원 포털의 시작 페이지입니다. 인사말(내 이름과 함께 "Good morning", "Good afternoon", "Good evening" 중 하나)과 오늘 날짜로 시작하며, 해당되는 경우에만 다음 섹션이 나타납니다.
 

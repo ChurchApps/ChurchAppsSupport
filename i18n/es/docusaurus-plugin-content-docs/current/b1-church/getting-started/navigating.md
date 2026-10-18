@@ -17,7 +17,7 @@ El portal de miembros de B1.church es una aplicación web pensada para el teléf
 
 </div>
 
-## Home
+## Home {#home}
 
 Al abrir `https://nombredetuiglesia.b1.church/mobile` llegas al panel **Home** en `/mobile/dashboard`. Home es la página de inicio del portal de miembros. Comienza con un saludo ("Good morning", "Good afternoon" o "Good evening", seguido de tu nombre) y la fecha de hoy, y después muestra secciones que solo aparecen cuando corresponden:
 

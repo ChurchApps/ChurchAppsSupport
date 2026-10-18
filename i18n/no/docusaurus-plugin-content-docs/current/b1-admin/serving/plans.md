@@ -84,7 +84,7 @@ Hver plan har flere innstillinger du kan konfigurere ved å klikke på **Rediger
 På påmeldingssiden for medlemmer er hver plans ledige posisjoner oppført etter kategori og deretter etter navn. Medlemmer ser hver kommende uke med ledige posisjoner, med mindre du slår på **Vis kun neste uke for hver plantype** i [Innstillinger > Frivillig påmelding](../settings/church-settings.md#volunteer-signup).
 :::
 
-## Påminnelser til frivillige
+## Påminnelser til frivillige {#volunteer-reminders}
 
 B1 kan automatisk minne frivillige på gudstjenestene de er satt opp for, slik at du ikke må jage etter teamet ditt hver uke. Påminnelser sendes til **alle som er satt opp** – både de som har bekreftet og de som ikke har svart ennå. Hver påminnelses-e-post inkluderer den frivilliges posisjon(er), gudstjenestedatoen, planens notater og din egendefinerte melding.
 

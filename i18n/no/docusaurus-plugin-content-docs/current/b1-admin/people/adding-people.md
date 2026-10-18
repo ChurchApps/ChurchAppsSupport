@@ -94,7 +94,7 @@ Skjemaer koblet til en persons profil bruker skjematypen **Personer**. Hvis du t
 Hvis du bare trenger å spore en eller to ekstra opplysninger om personer – en dato, et tall, et ja/nei-svar – bruk [egendefinerte felt](../settings/custom-fields.md) i stedet for et skjema. De er raskere å fylle ut og kan søkes direkte i Avansert søk.
 :::
 
-## Administrere husstander
+## Administrere husstander {#managing-households}
 
 Husstander lar deg koble familiemedlemmer sammen. Dette er spesielt nyttig for [innsjekking](../attendance/check-in.md), der en forelder kan sjekke inn alle barna sine samtidig.
 

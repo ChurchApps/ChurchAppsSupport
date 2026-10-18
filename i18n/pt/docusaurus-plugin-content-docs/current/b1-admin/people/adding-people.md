@@ -94,7 +94,7 @@ Formulários vinculados ao perfil de uma pessoa usam o tipo de formulário **Pes
 Se você só precisa registrar uma ou duas informações extras sobre as pessoas -- uma data, um número, uma resposta sim/não -- use [Campos Personalizados](../settings/custom-fields.md) em vez de um formulário. Eles são mais rápidos de preencher e podem ser pesquisados diretamente na Pesquisa Avançada.
 :::
 
-## Gerenciando Domicílios
+## Gerenciando Domicílios {#managing-households}
 
 Os domicílios permitem vincular membros da família entre si. Isso é especialmente útil para o [check-in](../attendance/check-in.md), em que um dos pais pode fazer o check-in de todos os filhos de uma só vez.
 

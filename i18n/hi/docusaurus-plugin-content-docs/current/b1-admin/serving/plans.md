@@ -84,7 +84,7 @@ plans बनाने से पहले ministry settings में अपन�
 member signup page पर, हर plan की खुली positions category और फिर नाम के अनुसार सूचीबद्ध होती हैं। जब तक आप [Settings > Volunteer Signup](../settings/church-settings.md#volunteer-signup) में **Show only the next week of each plan type** चालू न करें, सदस्य खुली positions वाले हर आने वाले हफ्ते को देखते हैं।
 :::
 
-## Volunteer Reminders
+## Volunteer Reminders {#volunteer-reminders}
 
 B1 उन services से पहले volunteers को स्वचालित रूप से याद दिला सकता है जिनके लिए वे schedule हैं, ताकि आपको हर हफ्ते अपनी team के पीछे न भागना पड़े। reminders **schedule किए गए सभी लोगों** को जाते हैं -- जिन्होंने पुष्टि की है और जिन्होंने अभी जवाब नहीं दिया है, दोनों को। हर reminder email में volunteer की position(s), service की तारीख, plan के notes, और आपका custom message शामिल होता है।
 

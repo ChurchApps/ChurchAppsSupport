@@ -17,7 +17,7 @@ O portal de membros do B1.church é um aplicativo web pensado para o celular, qu
 
 </div>
 
-## Início
+## Início {#home}
 
 Ao abrir `https://nomedasuaigreja.b1.church/mobile`, você é levado ao painel **Início**, em `/mobile/dashboard`. O Início é a página de entrada do portal de membros. Ele começa com uma saudação ("Bom dia", "Boa tarde" ou "Boa noite", com o seu primeiro nome) e a data de hoje, seguidos por seções que só aparecem quando se aplicam:
 

@@ -76,7 +76,7 @@ Puoi inviare email formattate a tutti i membri di un gruppo:
 Crea modelli di email riutilizzabili per comunicazioni ricorrenti come aggiornamenti settimanali, annunci di eventi o richieste di preghiera. I modelli fanno risparmiare tempo e garantiscono messaggi coerenti.
 :::
 
-### Attivare l'email di gruppo per la tua chiesa
+### Attivare l'email di gruppo per la tua chiesa {#turning-on-group-email-for-your-church}
 
 Tutte le chiese su B1 inviano email dallo stesso indirizzo, quindi condividono una stessa reputazione di invio. Per evitare che le email di tutti finiscano nella posta indesiderata, il team di ChurchApps esamina ogni chiesa una volta prima che possa inviare email di gruppo.
 

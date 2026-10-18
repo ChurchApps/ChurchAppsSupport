@@ -84,7 +84,7 @@ Bawat plano ay may karagdagang setting na maaari mong i-configure sa pamamagitan
 Sa member signup page, nakalista ang mga bukas na posisyon ng bawat plano ayon sa kategorya at pagkatapos ayon sa pangalan. Nakikita ng mga miyembro ang bawat paparating na linggo na may bukas na posisyon maliban kung i-on mo ang **Show only the next week of each plan type** sa [Settings > Volunteer Signup](../settings/church-settings.md#volunteer-signup).
 :::
 
-## Mga Paalala sa Volunteer
+## Mga Paalala sa Volunteer {#volunteer-reminders}
 
 Maaaring awtomatikong paalalahanan ng B1 ang mga volunteer bago ang mga serbisyong nakaiskedyul sila, kaya hindi mo na kailangang habulin ang iyong team bawat linggo. Ang mga paalala ay ipinapadala sa **lahat ng nakaiskedyul** -- kapwa sa mga nakumpirma na at sa mga hindi pa sumasagot. Kasama sa bawat email ng paalala ang posisyon (o mga posisyon) ng volunteer, petsa ng serbisyo, notes ng plano, at iyong custom na mensahe.
 
