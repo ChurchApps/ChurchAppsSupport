@@ -6,7 +6,7 @@ title: "Custom Domain"
 
 <div class="article-intro">
 
-You can point your own domain (for example, **www.yourchurch.org**) to your B1 site so visitors reach it at your church's real web address instead of the default yourchurch.1.church address.
+You can point your own domain (for example, **www.yourchurch.org**) to your B1 site so visitors reach it at your church's real web address instead of the default yourchurch.b1.church address.
 
 </div>
 
