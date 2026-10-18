@@ -94,7 +94,7 @@ Los formularios vinculados al perfil de una persona usan el tipo de formulario *
 Si solo necesitas registrar uno o dos datos adicionales sobre las personas (una fecha, un número, una respuesta de sí/no), usa [Campos personalizados](../settings/custom-fields.md) en lugar de un formulario. Son más rápidos de completar y se pueden buscar directamente en la búsqueda avanzada.
 :::
 
-## Gestionar hogares
+## Gestionar hogares {#managing-households}
 
 Los hogares te permiten vincular a los miembros de una familia. Esto es especialmente útil para el [registro de entrada](../attendance/check-in.md), donde un padre puede registrar a todos sus hijos a la vez.
 

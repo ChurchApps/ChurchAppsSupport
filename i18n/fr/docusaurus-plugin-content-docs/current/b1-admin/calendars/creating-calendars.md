@@ -50,7 +50,7 @@ Connecter des groupes à votre calendrier est un moyen puissant d'agréger autom
 Si vous souhaitez créer un calendrier unique qui récupère les événements de nombreux groupes dans votre église, consultez [Calendrier organisé](curated-calendar) pour une approche rationalisée.
 :::
 
-## Activation de l'enregistrement aux événements
+## Activation de l'enregistrement aux événements {#enabling-event-registration}
 
 Vous pouvez activer l'enregistrement pour tout événement de calendrier afin que les membres puissent s'inscrire via le site Web B1 ou l'application mobile.
 

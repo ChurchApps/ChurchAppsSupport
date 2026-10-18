@@ -94,7 +94,7 @@ Formulare, die mit dem Profil einer Person verknüpft sind, verwenden den Formul
 Wenn Sie nur ein oder zwei zusätzliche Angaben zu Personen erfassen möchten -- ein Datum, eine Zahl, eine Ja-/Nein-Antwort --, verwenden Sie [Eigene Felder](../settings/custom-fields.md) statt eines Formulars. Sie sind schneller ausgefüllt und können direkt in der erweiterten Suche durchsucht werden.
 :::
 
-## Haushalte verwalten
+## Haushalte verwalten {#managing-households}
 
 Mit Haushalten verknüpfen Sie Familienmitglieder miteinander. Das ist besonders nützlich für den [Check-in](../attendance/check-in.md), wo ein Elternteil alle seine Kinder auf einmal einchecken kann.
 

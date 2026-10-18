@@ -76,7 +76,7 @@ Puede enviar correos con formato a todos los miembros de un grupo:
 Cree plantillas de correo reutilizables para comunicaciones recurrentes, como las actualizaciones semanales, los anuncios de eventos o las peticiones de oración. Las plantillas ahorran tiempo y mantienen un mensaje coherente.
 :::
 
-### Activar el correo de grupo para su iglesia
+### Activar el correo de grupo para su iglesia {#turning-on-group-email-for-your-church}
 
 Todas las iglesias de B1 envían correos desde la misma dirección, por lo que comparten una misma reputación de envío. Para evitar que los correos de todos terminen en la carpeta de spam, el equipo de ChurchApps revisa cada iglesia una vez antes de que pueda enviar correos de grupo.
 

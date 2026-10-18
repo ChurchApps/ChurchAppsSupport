@@ -17,7 +17,7 @@ B1.church 的会员门户是一款以手机为主的网页应用，位于 `/mobi
 
 </div>
 
-## 首页
+## 首页 {#home}
 
 打开 `https://yourchurchname.b1.church/mobile` 会进入位于 `/mobile/dashboard` 的**首页（Home）**仪表板。首页是会员门户的着陆页。页面顶部是问候语（“Good morning”（早上好）、“Good afternoon”（下午好）或“Good evening”（晚上好），并附上您的名字）以及今天的日期，随后是仅在符合条件时才会显示的以下部分：
 

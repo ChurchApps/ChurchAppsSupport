@@ -76,7 +76,7 @@ You can send formatted emails to all members of a group:
 Create reusable email templates for recurring communications like weekly updates, event announcements, or prayer requests. Templates save time and ensure consistent messaging.
 :::
 
-### Turning On Group Email for Your Church
+### Turning On Group Email for Your Church {#turning-on-group-email-for-your-church}
 
 All churches on B1 send email from the same address, so they share one sending reputation. To keep everyone's email out of spam folders, the ChurchApps team reviews each church once before it can send group email.
 

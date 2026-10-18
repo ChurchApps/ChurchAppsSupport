@@ -50,7 +50,7 @@ Il collegamento dei gruppi al tuo calendario è un modo potente per aggregare au
 Se vuoi creare un singolo calendario che estrae gli eventi da molti gruppi in tutta la tua chiesa, vedi [Calendario Curato](curated-calendar) per un approccio semplificato.
 :::
 
-## Abilitazione della Registrazione degli Eventi
+## Abilitazione della Registrazione degli Eventi {#enabling-event-registration}
 
 Puoi abilitare la registrazione per qualsiasi evento del calendario in modo che i membri possano iscriversi tramite il sito Web B1 o l'app mobile.
 

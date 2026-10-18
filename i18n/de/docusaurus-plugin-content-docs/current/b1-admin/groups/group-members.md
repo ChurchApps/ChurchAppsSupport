@@ -76,7 +76,7 @@ Sie können formatierte E-Mails an alle Mitglieder einer Gruppe senden:
 Erstellen Sie wiederverwendbare E-Mail-Vorlagen für regelmäßige Mitteilungen wie wöchentliche Updates, Veranstaltungsankündigungen oder Gebetsanliegen. Vorlagen sparen Zeit und sorgen für einheitliche Botschaften.
 :::
 
-### Gruppen-E-Mails für Ihre Gemeinde aktivieren
+### Gruppen-E-Mails für Ihre Gemeinde aktivieren {#turning-on-group-email-for-your-church}
 
 Alle Gemeinden auf B1 versenden E-Mails von derselben Adresse und teilen sich daher auch denselben Absenderruf. Damit die E-Mails aller Gemeinden nicht im Spam landen, prüft das ChurchApps-Team jede Gemeinde einmalig, bevor sie Gruppen-E-Mails versenden darf.
 

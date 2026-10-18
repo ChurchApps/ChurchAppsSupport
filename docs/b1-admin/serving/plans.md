@@ -84,7 +84,7 @@ Each plan has additional settings you can configure by clicking **Edit** next to
 On the member signup page, each plan's open positions are listed by category and then by name. Members see every upcoming week with open positions unless you turn on **Show only the next week of each plan type** in [Settings > Volunteer Signup](../settings/church-settings.md#volunteer-signup).
 :::
 
-## Volunteer Reminders
+## Volunteer Reminders {#volunteer-reminders}
 
 B1 can automatically remind volunteers ahead of the services they are scheduled for, so you do not have to chase down your team each week. Reminders go to **everyone scheduled** — both those who have confirmed and those who have not yet responded. Each reminder email includes the volunteer's position(s), the service date, the plan notes, and your custom message.
 

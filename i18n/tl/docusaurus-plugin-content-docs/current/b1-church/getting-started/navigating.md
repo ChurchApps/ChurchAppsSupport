@@ -17,7 +17,7 @@ Ang member portal sa B1.church ay isang web app na unang idinisenyo para sa tele
 
 </div>
 
-## Home
+## Home {#home}
 
 Kapag binuksan ang `https://yourchurchname.b1.church/mobile`, dadalhin ka sa **Home** dashboard sa `/mobile/dashboard`. Ang Home ang landing page ng member portal. Nagsisimula ito sa isang pagbati ("Good morning", "Good afternoon", o "Good evening" kasama ang iyong first name) at petsa ngayon, kasunod ng mga seksyong lumilitaw lamang kapag may kaugnayan:
 

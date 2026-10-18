@@ -17,7 +17,7 @@ Medlemsportalen i B1.church er en mobilfokusert webapp som ligger under `/mobile
 
 </div>
 
-## Hjem
+## Hjem {#home}
 
 Hvis du åpner `https://yourchurchname.b1.church/mobile`, kommer du til dashbordet **Hjem** på `/mobile/dashboard`. Hjem er startsiden i medlemsportalen. Den starter med en hilsen («God morgen», «God ettermiddag» eller «God kveld» med fornavnet ditt) og dagens dato, etterfulgt av seksjoner som bare vises når de er relevante:
 

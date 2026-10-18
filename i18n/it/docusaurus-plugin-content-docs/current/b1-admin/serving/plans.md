@@ -84,7 +84,7 @@ Ogni piano ha impostazioni aggiuntive che puoi configurare facendo clic su **Mod
 Nella pagina di iscrizione per i membri, le posizioni aperte di ciascun piano sono elencate per categoria e poi per nome. I membri vedono ogni settimana futura con posizioni aperte, a meno che non attivi **Mostra solo la settimana successiva di ciascun tipo di piano** in [Impostazioni > Iscrizione volontari](../settings/church-settings.md#volunteer-signup).
 :::
 
-## Promemoria per i volontari
+## Promemoria per i volontari {#volunteer-reminders}
 
 B1 può ricordare automaticamente ai volontari i culti per cui sono programmati, così non devi rincorrere il tuo team ogni settimana. I promemoria vengono inviati a **tutti i programmati** -- sia a chi ha confermato sia a chi non ha ancora risposto. Ogni email di promemoria include la posizione o le posizioni del volontario, la data del culto, le note del piano e il tuo messaggio personalizzato.
 

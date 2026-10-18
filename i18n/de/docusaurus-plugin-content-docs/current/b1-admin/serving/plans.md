@@ -84,7 +84,7 @@ Jeder Plan hat weitere Einstellungen, die Sie festlegen können, indem Sie in de
 Auf der Anmeldeseite für Mitglieder sind die offenen Positionen jedes Plans nach Kategorie und dann nach Name aufgelistet. Mitglieder sehen jede kommende Woche mit offenen Positionen, sofern Sie nicht **Nur die nächste Woche jeder Planart anzeigen** unter [Einstellungen > Freiwilligen-Anmeldung](../settings/church-settings.md#volunteer-signup) aktivieren.
 :::
 
-## Erinnerungen für Freiwillige
+## Erinnerungen für Freiwillige {#volunteer-reminders}
 
 B1 kann Freiwillige automatisch vor den Gottesdiensten erinnern, für die sie eingeplant sind, sodass Sie Ihr Team nicht jede Woche einzeln hinterherlaufen müssen. Erinnerungen gehen an **alle eingeplanten Personen** -- sowohl an diejenigen, die bestätigt haben, als auch an diejenigen, die noch nicht geantwortet haben. Jede Erinnerungs-E-Mail enthält die Position(en) des Freiwilligen, das Datum des Gottesdienstes, die Notizen des Plans und Ihre eigene Nachricht.
 

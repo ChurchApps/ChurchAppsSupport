@@ -94,7 +94,7 @@ B1 से भेजने पर वही approval और daily limits ला�
 यदि आपको लोगों के बारे में केवल एक या दो अतिरिक्त जानकारी ट्रैक करनी है -- एक तारीख, एक संख्या, एक हां/नहीं उत्तर -- तो form के बजाय [Custom Fields](../settings/custom-fields.md) का उपयोग करें। वे भरने में तेज़ हैं और सीधे Advanced Search में खोजे जा सकते हैं।
 :::
 
-## Households प्रबंधित करना
+## Households प्रबंधित करना {#managing-households}
 
 Households परिवार के सदस्यों को आपस में जोड़ने देते हैं। यह [check-in](../attendance/check-in.md) के लिए विशेष रूप से उपयोगी है, जहां कोई माता-पिता अपने सभी बच्चों को एक साथ check in कर सकते हैं।
 

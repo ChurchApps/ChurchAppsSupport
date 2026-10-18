@@ -94,7 +94,7 @@ Les formulaires liés à la fiche d'une personne utilisent le type de formulaire
 Si vous n'avez besoin de suivre qu'une ou deux informations supplémentaires sur les personnes -- une date, un nombre, une réponse oui/non -- utilisez plutôt les [Champs personnalisés](../settings/custom-fields.md) au lieu d'un formulaire. Ils sont plus rapides à remplir et sont directement consultables dans la recherche avancée.
 :::
 
-## Gérer les foyers
+## Gérer les foyers {#managing-households}
 
 Les foyers vous permettent de relier les membres d'une même famille. C'est particulièrement utile pour l'[enregistrement à la borne](../attendance/check-in.md), où un parent peut enregistrer tous ses enfants en une seule fois.
 

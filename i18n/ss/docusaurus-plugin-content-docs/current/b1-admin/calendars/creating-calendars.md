@@ -50,7 +50,7 @@ Kuhlanganisa emacembu nekhalenda lakho yindlela lenemandla yekubutsa imicimbi ng
 Nangabe ufuna kudala ikhalenda linye lelibutsa imicimbi emacenjini lamanyenti kulo lonkhe libandla lakho, buka [Ikhalenda Lelihlelwe](curated-calendar) kutfola indlela lelula.
 :::
 
-## Kuvula Kubhalisela Umcimbi
+## Kuvula Kubhalisela Umcimbi {#enabling-event-registration}
 
 Ungakwati kuvula kubhalisa kunoma ngumuphi umcimbi wekhalenda kuze emalunga akwati kubhalisa ngekusebentisa iwebusayithi ye-B1 nome i-app yeselula.
 

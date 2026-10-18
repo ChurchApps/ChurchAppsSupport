@@ -94,7 +94,7 @@ Ang mga form na naka-link sa profile ng tao ay gumagamit ng **People** form type
 Kung kailangan mo lamang subaybayan ang isa o dalawang dagdag na impormasyon tungkol sa mga tao -- isang petsa, isang numero, o oo/hindi na sagot -- gamitin ang [Custom Fields](../settings/custom-fields.md) sa halip na form. Mas mabilis itong sagutan at maaaring hanapin nang direkta sa Advanced Search.
 :::
 
-## Pamamahala ng Mga Household
+## Pamamahala ng Mga Household {#managing-households}
 
 Hinahayaan ka ng Household na pag-ugnayin ang mga miyembro ng pamilya. Lalo itong kapaki-pakinabang para sa [check-in](../attendance/check-in.md), kung saan maaaring i-check in ng magulang ang lahat ng kanyang anak nang sabay-sabay.
 

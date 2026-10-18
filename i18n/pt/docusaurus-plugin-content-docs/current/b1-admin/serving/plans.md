@@ -84,7 +84,7 @@ Cada plano tem configurações adicionais que você pode ajustar clicando em **E
 Na página de inscrição para membros, as posições abertas de cada plano são listadas por categoria e depois por nome. Os membros veem todas as semanas futuras com posições abertas, a menos que você ative **Mostrar apenas a próxima semana de cada tipo de plano** em [Configurações > Inscrição de Voluntários](../settings/church-settings.md#volunteer-signup).
 :::
 
-## Lembretes para Voluntários
+## Lembretes para Voluntários {#volunteer-reminders}
 
 O B1 pode lembrar automaticamente os voluntários antes dos cultos para os quais estão escalados, para que você não precise cobrar sua equipe toda semana. Os lembretes vão para **todos os escalados** -- tanto os que confirmaram quanto os que ainda não responderam. Cada e-mail de lembrete inclui a(s) posição(ões) do voluntário, a data do culto, as observações do plano e a sua mensagem personalizada.
 
