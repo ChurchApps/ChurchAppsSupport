@@ -1,31 +1,35 @@
 ---
-title: "Modo Plan"
+title: "Modo plan"
 ---
 
-# Modo Plan
+# Modo plan
 
 <div class="article-intro">
 
-El Modo Plan conecta su TV a un plan de servicio de la iglesia. En lugar de obtener contenido basado en un calendario de aula, sigue el plan configurado por el liderazgo de su iglesia en B1 Admin. Esto es ideal cuando desea que un TV muestre exactamente lo que esta asignado en el plan de la semana actual.
+El Modo plan conecta tu televisor con un plan de servicio de la iglesia. En lugar de cargar contenido según un horario de clases, sigue el plan configurado por los líderes de la iglesia en B1 Admin. Es ideal cuando quieres que un televisor muestre exactamente lo que está asignado en el plan de la semana.
 
 </div>
 
-## En que se diferencia del Modo Aula
+## En qué se diferencia de otros modos
 
-- **[Modo Aula](../classroom-mode/)** obtiene la leccion programada para una sala especifica en una fecha determinada
-- **Modo Plan** obtiene el contenido vinculado a un tipo de plan, que puede incluir lecciones, presentaciones de proveedores, complementos y otros medios organizados en un orden personalizado
+- **[Modo programado](../scheduled-mode/)** reproduce listas de reproducción de un calendario de FreePlay Admin a las horas que tú defines, sin que nadie pulse Iniciar
+- **Modo plan** obtiene el contenido vinculado a un tipo de plan, que puede incluir lecciones, presentaciones de proveedores, complementos y otros medios organizados en un orden personalizado
 
-El Modo Plan es especialmente util cuando su plan de servicio incluye una mezcla de contenido de diferentes fuentes, todo organizado en una secuencia unica.
+El Modo plan es especialmente útil cuando tu plan de servicio incluye una mezcla de contenido de distintas fuentes, todo organizado en una sola secuencia.
 
-## Como funciona
+:::tip
+¿Quieres que el plan actual se reproduzca solo a una hora determinada? En FreePlay Admin, agrega una entrada al calendario y elige el tipo de plan en **Planes de servicio**. Consulta [Programar el calendario](../scheduled-mode/scheduling-the-calendar).
+:::
 
-1. FreePlay genera un codigo de vinculacion en pantalla
-2. Un administrador ingresa ese codigo en **B1 Admin** en la configuracion del tipo de plan
+## Cómo funciona
+
+1. En el televisor, abre **Configuración** > **Vincular a un calendario** para mostrar un código de vinculación
+2. Un administrador introduce ese código en **B1 Admin** y elige el tipo de plan en **Mostrar planes de**
 3. Una vez vinculado, FreePlay carga el plan actual y descarga todos los medios asociados
-4. Presione **Iniciar plan** para comenzar la reproduccion
+4. Pulsa **Iniciar plan** para comenzar la reproducción
 
-El TV permanece vinculado al tipo de plan. Cada semana, detecta automaticamente el plan mas reciente y su contenido.
+El televisor permanece vinculado al tipo de plan. Cada semana recoge automáticamente el plan más reciente y su contenido.
 
-## En esta seccion
+## En esta sección
 
-- **[Vincular su dispositivo](./device-pairing)** - Como generar e ingresar el codigo de vinculacion
+- **[Vincular tu dispositivo](./device-pairing)** - Cómo generar e introducir el código de vinculación

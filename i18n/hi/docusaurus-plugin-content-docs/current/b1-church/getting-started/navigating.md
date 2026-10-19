@@ -6,97 +6,97 @@ title: "B1App में नेविगेट करना"
 
 <div class="article-intro">
 
-B1.church का member portal एक phone-first web app है, जो `/mobile` के अंतर्गत रहता है। यह किसी भी browser में काम करता है और इसे आपकी home screen पर install किया जा सकता है। यह पेज Home dashboard, नीचे का tab bar, More page, और Me page समझाता है।
+B1.church पर सदस्य पोर्टल एक फ़ोन-प्रथम वेब ऐप है जो `/mobile` के अंतर्गत रहता है। यह किसी भी ब्राउज़र में काम करता है और इसे आपकी होम स्क्रीन पर इंस्टॉल किया जा सकता है। यह पृष्ठ Home डैशबोर्ड, निचली टैब बार, More पेज और Me पेज की जानकारी देता है।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- अपनी व्यक्तिगत जानकारी देखने के लिए आपको [logged in](./logging-in.md) होना चाहिए। Sign out किए हुए visitors सार्वजनिक content ब्राउज़ कर सकते हैं, और जहां किसी feature के लिए account चाहिए वहां उन्हें **Sign In** button दिया जाता है।
+- अपनी व्यक्तिगत जानकारी देखने के लिए आपको [लॉग इन](./logging-in.md) होना होगा। बिना लॉग इन वाले विज़िटर सार्वजनिक सामग्री देख सकते हैं, और जहाँ किसी सुविधा के लिए खाता चाहिए वहाँ उन्हें **Sign In** बटन दिखता है।
 
 </div>
 
 ## Home {#home}
 
-`https://yourchurchname.b1.church/mobile` खोलने पर आप **Home** dashboard पर पहुंचते हैं, जो `/mobile/dashboard` पर है। Home member portal का landing page है। यह एक अभिवादन ("Good morning", "Good afternoon", या "Good evening" आपके पहले नाम के साथ) और आज की तारीख से शुरू होता है, उसके बाद ऐसे sections आते हैं जो केवल तभी दिखते हैं जब वे लागू हों:
+`https://yourchurchname.b1.church/mobile` खोलने पर आप `/mobile/dashboard` पर **Home** डैशबोर्ड पर पहुँचते हैं। Home सदस्य पोर्टल का लैंडिंग पेज है। इसकी शुरुआत एक अभिवादन ("Good morning", "Good afternoon", या "Good evening" आपके पहले नाम के साथ) और आज की तारीख से होती है, उसके बाद ऐसे अनुभाग आते हैं जो केवल तभी दिखते हैं जब वे लागू हों:
 
-- **Latest sermon** -- आपके church का नवीनतम sermon, **All sermons** link के साथ
-- **Verse of the Day** -- आज का verse; पूरा [Verse of the Day](../content/verse-of-the-day.md) page खोलने के लिए उस पर tap करें
-- **You're serving** -- आपकी अगली आने वाली serving assignments, **All plans** link के साथ। यदि किसी assignment को अभी भी आपके उत्तर की ज़रूरत है, तो वे पहले **Needs reply** badge और **Accept** / **Decline** buttons के साथ दिखती हैं ताकि आप Home से ही जवाब दे सकें; अन्यथा आपकी अगली assignments पर **Accepted** या **Confirmed** badge दिखता है। assignment का plan खोलने के लिए उस पर tap करें।
-- **Your groups** -- आपके अधिकतम तीन groups उनके meeting time और location के साथ, और **All groups** link
-- **Giving** -- इस साल (वर्तमान वर्ष के लिए "Given in") आपने कितना दिया है, एक **Give** button, और आपके [donation history](../giving/donation-history.md) का **History** link
-- **More from** *आपके church* से -- आपके church द्वारा चालू किए गए बाकी tools के buttons, जो पहले से tab bar में या ऊपर नहीं दिखाए गए हैं। जिनका आप सबसे अधिक उपयोग करते हैं वे आगे आ जाते हैं।
+- **Latest sermon** -- आपके चर्च का सबसे नया सर्मन, **All sermons** लिंक के साथ
+- **Verse of the Day** -- आज का वचन; पूरा [Verse of the Day](../content/verse-of-the-day.md) पेज खोलने के लिए उस पर टैप करें
+- **You're serving** -- आपके आगामी सेवा असाइनमेंट, **All plans** लिंक के साथ। यदि कोई असाइनमेंट अब भी आपके उत्तर की प्रतीक्षा में है, तो वे पहले दिखते हैं, साथ में **Needs reply** बैज और **Accept** / **Decline** बटन, ताकि आप Home से ही उत्तर दे सकें (**Decline** पहले पुष्टि माँगता है); अन्यथा आपके अगले असाइनमेंट पर **Accepted** या **Confirmed** बैज दिखता है। किसी असाइनमेंट पर टैप करके उसका प्लान खोलें।
+- **Your groups** -- आपके अधिकतम तीन समूह, उनके मिलने के समय और स्थान के साथ, और **All groups** लिंक
+- **Giving** -- इस वर्ष आपने कितना दिया है ("Given in" वर्तमान वर्ष), एक **Give** बटन, और आपके [दान इतिहास](../giving/donation-history.md) का **History** लिंक
+- **More from** *आपका चर्च* -- आपके चर्च द्वारा चालू किए गए बाकी उपकरणों के बटन, जो पहले से टैब बार में या ऊपर नहीं दिखाए गए हैं। जिनका आप सबसे अधिक उपयोग करते हैं, वे सबसे आगे आते हैं।
 
-serving, groups, और giving sections केवल तभी दिखते हैं जब आप sign in हों, आपके church ने वह tool चालू किया हो, और दिखाने के लिए कुछ हो -- उदाहरण के लिए, कोई आने वाली assignment या कम से कम एक group। कंप्यूटर पर, Home दो columns में व्यवस्थित होता है।
+सेवा, समूह और giving अनुभाग केवल तभी दिखते हैं जब आप साइन इन हों, आपके चर्च ने वह उपकरण चालू किया हो, और दिखाने के लिए कुछ हो — उदाहरण के लिए कोई आगामी असाइनमेंट या कम से कम एक समूह। कंप्यूटर पर Home दो कॉलम में दिखता है।
 
-यदि आप sign out हैं, तो Home अभिवादन के स्थान पर **Welcome** heading दिखाता है, एक छोटे prompt ("Sign in to see your groups, giving, and more.") और एक **Sign In** button के साथ। आपका church इस prompt के शब्द बदल सकता है या इसे छिपा सकता है -- देखें [Mobile App Settings](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt)। जब यह छिपा होता है, तब भी आप **More** page या **Me** page से sign in कर सकते हैं।
+यदि आप साइन इन नहीं हैं, तो Home अभिवादन की जगह **Welcome** शीर्षक दिखाता है, एक छोटे संकेत ("Sign in to see your groups, giving, and more.") और **Sign In** बटन के साथ। यह संकेत तब भी दिखता है जब आपके चर्च ने Home के लिए अभी और कुछ सेट न किया हो। आपका चर्च इस संकेत के शब्द बदल सकता है या इसे छिपा सकता है — देखें [Mobile App Settings](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt)। छिपा होने पर भी आप **More** पेज या **Me** पेज से साइन इन कर सकते हैं।
 
-## नीचे का Tab Bar
+## निचली टैब बार
 
-phone पर, screen के नीचे एक tab bar स्थिर रहता है:
+फ़ोन पर स्क्रीन के नीचे एक टैब बार स्थिर रहती है:
 
-- **Home** -- हमेशा पहला tab
-- आपके church द्वारा कॉन्फ़िगर किए गए tabs में से अधिकतम तीन
-- **More** -- More page खोलता है
+- **Home** -- हमेशा पहला टैब
+- आपके चर्च द्वारा कॉन्फ़िगर किए गए अधिकतम तीन टैब
+- **More** -- More पेज खोलता है
 
-बाहरी websites, custom pages, और Verse of the Day के links को कभी tab नहीं मिलता। यदि आपके church ने फिट होने से अधिक tabs कॉन्फ़िगर किए हैं, तो बाकी खोते नहीं हैं: वे **More** page पर और Home पर **More from** section में दिखते हैं। church administrators B1 Admin में **Mobile → Navigation** के अंतर्गत tab का क्रम सेट करते हैं।
+बाहरी वेबसाइटों, कस्टम पेजों और Verse of the Day को कभी टैब नहीं दिया जाता। यदि आपके चर्च ने जितने टैब फिट हो सकते हैं उससे अधिक कॉन्फ़िगर किए हैं, तो बाकी खोते नहीं हैं: वे **More** पेज पर और Home के **More from** अनुभाग में दिखते हैं। चर्च प्रशासक B1 Admin में **Mobile → Navigation** के अंतर्गत टैब का क्रम तय करते हैं।
 
-## Computer पर
+## कंप्यूटर पर
 
-किसी बड़ी screen, जैसे computer या बड़े tablet पर, नीचे का tab bar screen के ऊपर एक header से बदल जाता है, जो आपके church के रंग में होता है। इसमें आपके church का नाम दिखता है (उस पर click करके Home पर लौटें), **Home**, आपके church द्वारा कॉन्फ़िगर किए गए अधिकतम पांच tabs, और **More**, और दाईं ओर bell और आपकी profile photo। जब आप कोई detail screen खोलते हैं, तो page content के ऊपर एक **Back** link दिखता है।
+बड़ी स्क्रीन, जैसे कंप्यूटर या बड़े टैबलेट पर, निचली टैब बार की जगह स्क्रीन के ऊपर एक हेडर आता है जो आपके चर्च के रंग में होता है। इसमें आपके चर्च का नाम दिखता है (उस पर क्लिक करके Home पर लौटें), **Home**, आपके चर्च द्वारा कॉन्फ़िगर किए गए अधिकतम पाँच टैब, और **More**, दाईं ओर घंटी और आपकी प्रोफ़ाइल फ़ोटो के साथ। किसी विवरण स्क्रीन को खोलने पर पेज की सामग्री के ऊपर एक **Back** लिंक दिखता है।
 
-## More Page
+## More पेज {#the-more-page}
 
-**More** पर tap करने से `/mobile/more` पर More page खुलता है। इसमें शामिल है:
+**More** टैप करने पर `/mobile/more` पर More पेज खुलता है। इसमें शामिल है:
 
-- आपका नाम और photo, **Edit Profile** link के साथ -- देखें [Editing Your Profile](./editing-your-profile.md)
-- आपके church के नाम के नीचे, क्रम में, आपके church द्वारा कॉन्फ़िगर किए गए हर tab। बाहरी websites के links एक नए browser tab में खुलते हैं।
-- एक **Account** section, जिसमें:
-  - **Me** -- आपका व्यक्तिगत page (केवल sign in होने पर)
-  - **Appearance** -- **Light Mode** और **Dark Mode** के बीच switch करें
-  - **Admin Portal** -- केवल तभी दिखता है जब आपके church में आपके पास administrator permissions हों; यह B1 Admin को एक नए tab में खोलता है
-  - **Install App** -- `/mobile/install` पर [install निर्देश](./installing-pwa.md) खोलता है (ऐप install होने के बाद यह छिप जाता है)
-- **Sign out**, या यदि आप sign out हैं तो **Sign In** button
-- आपके church का नाम और privacy policy का link
+- आपका नाम और फ़ोटो, **Edit Profile** लिंक के साथ — देखें [अपनी प्रोफ़ाइल संपादित करना](./editing-your-profile.md)
+- आपके चर्च द्वारा कॉन्फ़िगर किए गए सभी टैब, क्रम से, आपके चर्च के नाम के अंतर्गत। बाहरी वेबसाइटों के लिंक नए ब्राउज़र टैब में खुलते हैं।
+- एक **Account** अनुभाग, जिसमें:
+  - **Me** -- आपका निजी पेज (केवल साइन इन होने पर)
+  - **Appearance** -- **Light Mode** और **Dark Mode** के बीच बदलें
+  - **Admin Portal** -- केवल तभी दिखता है जब आपके चर्च में प्रशासक अनुमतियाँ हों; यह B1 Admin को नए टैब में खोलता है
+  - **Install App** -- `/mobile/install` पर [इंस्टॉल निर्देश](./installing-pwa.md) खोलता है (ऐप इंस्टॉल होने पर छिप जाता है)
+- **Sign out**, या साइन इन न होने पर **Sign In** बटन
+- आपके चर्च का नाम और गोपनीयता नीति का लिंक
 
-## App Bar
+## ऐप बार
 
-phone पर, हर screen के ऊपर की bar में दिखता है:
+फ़ोन पर हर स्क्रीन के ऊपर की बार में दिखता है:
 
-- Home और अन्य मुख्य screens पर आपके church का नाम, या जब आप किसी detail screen में गहराई तक गए हों तो एक back arrow। screen का शीर्षक page के ऊपर स्वयं दिखता है।
-- notifications और messages के लिए एक **bell** icon, जिस पर न पढ़े गए items का badge होता है -- नीचे [Notifications and Messages](#notifications-and-messages) देखें
-- आपकी **profile photo**, जो `/mobile/profileEdit` पर आपकी profile खोलती है -- देखें [Editing Your Profile](./editing-your-profile.md)
+- Home और अन्य मुख्य स्क्रीन पर आपके चर्च का नाम, या किसी विवरण स्क्रीन में गहराई तक जाने पर एक बैक तीर। स्क्रीन का शीर्षक पेज के ऊपर स्वयं दिखता है।
+- सूचनाओं और संदेशों के लिए एक **घंटी** आइकन, जिस पर अपठित आइटमों का बैज होता है — नीचे [सूचनाएँ और संदेश](#notifications-and-messages) देखें
+- आपकी **प्रोफ़ाइल फ़ोटो**, जो `/mobile/profileEdit` पर आपकी प्रोफ़ाइल खोलती है — देखें [अपनी प्रोफ़ाइल संपादित करना](./editing-your-profile.md)
 
-bell और profile photo केवल तभी दिखते हैं जब आप sign in हों।
+घंटी और प्रोफ़ाइल फ़ोटो केवल साइन इन होने पर दिखते हैं।
 
-## Notifications और Messages
+## सूचनाएँ और संदेश {#notifications-and-messages}
 
-bell पर tap करने से दो sections वाला एक panel खुलता है:
+घंटी टैप करने पर दो अनुभागों वाला एक पैनल खुलता है:
 
-- **Messages** -- आपकी सबसे हाल की निजी बातचीत, एक नई शुरू करने के लिए **New message** link के साथ
-- **Notifications** -- आपकी सबसे हाल की notifications, जिन्हें नहीं पढ़ा गया उन पर **New** badge के साथ। जिस group, plan, या conversation से notification आई है उस पर जाने के लिए उस पर tap करें।
+- **Messages** -- आपकी सबसे हाल की निजी बातचीत, एक नई बातचीत शुरू करने के लिए **New message** लिंक के साथ
+- **Notifications** -- आपकी सबसे हाल की सूचनाएँ, अपठित सूचनाओं पर **New** बैज के साथ। किसी सूचना पर टैप करके उस समूह, प्लान या बातचीत पर जाएँ जहाँ से वह आई है।
 
-हर section दिखाता है कि उसमें कितने न पढ़े गए items हैं। अपना पूरा inbox `/mobile/notifications` पर खोलने के लिए नीचे **See all** पर tap करें।
+हर अनुभाग दिखाता है कि उसमें कितने अपठित आइटम हैं। पूरा इनबॉक्स `/mobile/notifications` पर खोलने के लिए नीचे **See all** पर टैप करें।
 
-## Sections वाले Pages
+## अनुभागों वाले पेज
 
-detail pages -- एक group, एक plan, आपका Me page, और Plans व Giving screens -- tabs के बजाय sections के एक page के रूप में व्यवस्थित होते हैं। हर section एक छोटा preview दिखाता है, और section के header में एक link (जैसे **All members**, **All events**, या **Full service order**) पूरी सूची खोलता है। उस view के ऊपर का **Back to** link आपको उस page पर वापस ले जाता है जहां से आप आए थे।
+विवरण पेज — एक समूह, एक प्लान, आपका Me पेज, Plans और Giving स्क्रीन — टैब के बजाय अनुभागों के एक पेज के रूप में बने हैं। हर अनुभाग एक छोटा पूर्वावलोकन दिखाता है, और अनुभाग के शीर्षक का एक लिंक (जैसे **All members**, **All events**, या **Full service order**) पूरी सूची खोलता है। उस दृश्य के शीर्ष पर **Back to** लिंक आपको उस पेज पर लौटाता है जहाँ से आप आए थे।
 
-## Me Page
+## Me पेज
 
-**Me** (`/mobile/me`) आपका व्यक्तिगत केंद्र है। यह आपका नाम और photo, **Edit Profile** और **Settings** ([notification preferences](./notification-preferences.md)) buttons के साथ दिखाता है, फिर आपके लिए आने वाली चीज़ें -- serving assignments, event registrations, और group events -- उसके बाद आपका household, आपके groups, इस साल आपकी [giving](../giving/), आपके [registrations](../events/my-registrations.md), और हाल की notifications और messages। विवरण के लिए [The Me Page](./me-page) देखें।
+**Me** (`/mobile/me`) आपका निजी केंद्र है। इसमें आपका नाम और फ़ोटो दिखते हैं, साथ में **Edit Profile** और **Settings** ([सूचना प्राथमिकताएँ](./notification-preferences.md)) बटन। उसके नीचे आपके आगामी कार्यक्रम दिखते हैं — सेवा असाइनमेंट, इवेंट रजिस्ट्रेशन और समूह इवेंट — फिर आपका परिवार (household), आपके समूह, इस वर्ष आपकी [giving](../giving/), आपके [रजिस्ट्रेशन](../events/my-registrations.md), और हाल की सूचनाएँ व संदेश। विवरण के लिए [The Me Page](./me-page) देखें।
 
-यदि आप sign out हैं, तो Me page इसके बजाय **Sign In** button दिखाता है।
+यदि आप साइन इन नहीं हैं, तो Me पेज की जगह **Sign In** बटन दिखता है।
 
-## अपनी Home Screen पर Install करना
+## होम स्क्रीन पर इंस्टॉल करना
 
-member portal एक Progressive Web App है। अपने device के लिए चरण-दर-चरण निर्देशों के लिए `/mobile/install` पर जाएं (या More page पर **Install App** चुनें)। install होने के बाद, यह आपकी home screen से browser के ढांचे के बिना पूर्ण-स्क्रीन खुलता है। देखें [Installing as an App (PWA)](./installing-pwa.md)।
+सदस्य पोर्टल एक Progressive Web App है। अपने डिवाइस के लिए चरण-दर-चरण निर्देशों के लिए `/mobile/install` खोलें (या More पेज पर **Install App** चुनें)। इंस्टॉल होने के बाद यह आपकी होम स्क्रीन से ब्राउज़र के बिना पूरी स्क्रीन पर खुलता है। देखें [Installing as an App (PWA)](./installing-pwa.md)।
 
-## आपके Church की Public Website
+## आपके चर्च की सार्वजनिक वेबसाइट
 
-member portal के बाहर, आपके church की public website का अपना header navigation होता है, जिसमें आपके administrators द्वारा कॉन्फ़िगर किए गए links हैं -- जैसे [sermons](../content/sermons.md), [Bible](../content/bible.md), [live streaming](../content/live-streaming.md) वाले pages, और एक public group list। phone पर ये links header के ऊपर-दाईं ओर hamburger icon के पीछे होते हैं।
+सदस्य पोर्टल के बाहर आपके चर्च की सार्वजनिक वेबसाइट का अपना हेडर नेविगेशन है, जिसमें आपके एडमिनिस्ट्रेटरों द्वारा कॉन्फ़िगर किए गए लिंक हैं — [सर्मन](../content/sermons.md), [बाइबल](../content/bible.md), [लाइव स्ट्रीमिंग](../content/live-streaming.md), और एक सार्वजनिक समूह सूची जैसे पेज। फ़ोन पर ये लिंक हेडर के ऊपर-दाईं ओर हैमबर्गर आइकन के पीछे रहते हैं।
 
 :::info
-आप जो tabs और tools देखते हैं वे church के अनुसार अलग होते हैं। Administrators B1 Admin के माध्यम से नियंत्रित करते हैं कि members को कौन-से sections दिखें, इसलिए यदि आपको यहां वर्णित कोई feature नहीं दिखता, तो हो सकता है कि आपके church ने उसे चालू न किया हो।
+आप कौन-सी टैब और सुविधाएँ देखते हैं, यह चर्च के अनुसार अलग होता है। प्रशासक B1 Admin के माध्यम से तय करते हैं कि सदस्यों को कौन-से अनुभाग दिखें, इसलिए यदि यहाँ वर्णित कोई सुविधा आपको न दिखे, तो हो सकता है आपके चर्च ने उसे चालू न किया हो।
 :::

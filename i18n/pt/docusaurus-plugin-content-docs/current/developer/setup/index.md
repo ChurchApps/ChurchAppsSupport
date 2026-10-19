@@ -6,48 +6,50 @@ title: "Configuração"
 
 <div class="article-intro">
 
-Esta seção orienta você na configuração de um ambiente de desenvolvimento local para projetos ChurchApps. Você pode apontar seu frontend para as APIs de staging compartilhadas para desenvolvimento rápido, ou executar a stack completa localmente para trabalho no backend.
+Esta seção orienta você na configuração de um ambiente de desenvolvimento local para os projetos da ChurchApps. Você pode apontar o seu frontend para as APIs de demonstração compartilhadas, para um início rápido de desenvolvimento, ou executar a stack completa localmente, para trabalho no backend.
 
 </div>
 
-## Duas abordagens
+## Duas Abordagens
 
-Existem duas formas de desenvolver localmente, dependendo de quanto da stack você precisa:
+Há duas formas de desenvolver localmente, dependendo de quanto da stack você precisa:
 
-### 1. Apontar para as APIs de staging (mais fácil)
+### 1. Aponte para as APIs de Demonstração (Mais Fácil)
 
-Se você está trabalhando em um **projeto frontend** (aplicação web, aplicativo móvel ou aplicativo desktop), o caminho mais rápido é apontar seu aplicativo local para as APIs de staging compartilhadas. Nenhuma configuração de banco de dados ou backend é necessária.
+Se você estiver trabalhando em um **projeto de frontend** (aplicativo web, aplicativo móvel ou aplicativo de desktop), o caminho mais rápido é apontar o seu aplicativo local para as APIs de demonstração compartilhadas. Não é necessário configurar banco de dados nem backend.
 
-A URL base da API de staging é:
-
-```
-https://api.staging.churchapps.org
-```
-
-Cada módulo de API está disponível em um caminho sob esta base, por exemplo:
+A URL base da API de demonstração é:
 
 ```
-https://api.staging.churchapps.org/membership
-https://api.staging.churchapps.org/attendance
-https://api.staging.churchapps.org/giving
+https://api.demo.churchapps.org
 ```
+
+Cada módulo da API está disponível em um caminho abaixo dessa base, por exemplo:
+
+```
+https://api.demo.churchapps.org/membership
+https://api.demo.churchapps.org/attendance
+https://api.demo.churchapps.org/giving
+```
+
+O ambiente de demonstração executa o código mais recente da branch `main`, e os seus dados de exemplo são recriados todas as noites, então não espere que nada que você criar ali dure. (O antigo ambiente de staging, `api.staging.churchapps.org`, foi desativado. Alguns arquivos `.env` de exemplo ainda podem listar URLs de staging -- substitua-as pelas URLs de demonstração ou locais.)
 
 :::tip
-Esta abordagem permite que você comece a fazer alterações no frontend em minutos. É o caminho recomendado para a maioria dos contribuidores.
+Essa abordagem permite começar a fazer alterações no frontend em minutos. É o caminho recomendado para a maioria dos colaboradores.
 :::
 
-### 2. Executar tudo localmente
+### 2. Execute Tudo Localmente
 
-Se você precisa modificar o código da API ou trabalhar offline, pode executar a stack completa localmente. Isso requer MySQL 8.0+ e configuração adicional. Consulte o guia de [Configuração local da API](../api/local-setup) para instruções detalhadas.
+Se você precisar modificar o código da API ou trabalhar offline, pode executar a stack completa localmente. Isso exige MySQL 8.0+ e configuração adicional. Veja o guia de [configuração local da API](../api/local-setup) para instruções detalhadas.
 
-## Primeiros passos
+## Primeiros Passos
 
-Siga estas páginas na ordem:
+Siga estas páginas em ordem:
 
 1. **[Pré-requisitos](prerequisites)** -- Instale as ferramentas necessárias (Node.js, Git, MySQL, etc.)
-2. **[Visão geral dos projetos](project-overview)** -- Entenda quais projetos existem e o que fazem
-3. **[Variáveis de ambiente](environment-variables)** -- Configure seus arquivos `.env` para conectar tudo
+2. **[Visão Geral do Projeto](project-overview)** -- Entenda quais projetos existem e o que cada um faz
+3. **[Variáveis de Ambiente](environment-variables)** -- Configure os seus arquivos `.env` para conectar tudo
 
 :::info
-Cada projeto ChurchApps é um repositório Git independente. Você só precisa clonar o(s) projeto(s) específico(s) no(s) qual(is) deseja trabalhar.
+Cada projeto da ChurchApps é um repositório Git independente. Você só precisa clonar o(s) projeto(s) em que quer trabalhar.
 :::

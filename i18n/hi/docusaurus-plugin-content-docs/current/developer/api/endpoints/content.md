@@ -1,34 +1,34 @@
 ---
-title: "सामग्री एंडपॉइंट्स"
+title: "Content एंडपॉइंट्स"
 ---
 
-# सामग्री एंडपॉइंट्स
+# Content एंडपॉइंट्स
 
 <div class="article-intro">
 
-सामग्री मॉड्यूल वेबसाइट पृष्ठ, अनुभाग, तत्व, ब्लॉक, ब्लॉग पोस्ट, पुनर्निर्देश, उपदेश, प्लेलिस्ट, स्ट्रीमिंग सेवाएं, ईवेंट, क्यूरेटेड कैलेंडर, फाइलें, गैलरी, बाइबल अनुवाद और छंद की खोज, गीत, व्यवस्था, वैश्विक शैलियां, स्टॉक फोटो, और सेटिंग्स को प्रबंधित करता है। यह API में सबसे बड़ा मॉड्यूल है और सभी ChurchApps अनुप्रयोगों में CMS, मीडिया/स्ट्रीमिंग, पूजा योजना, और बाइबल विशेषताओं को शक्ति प्रदान करता है।
+Content मॉड्यूल वेबसाइट पेज, सेक्शन, एलिमेंट, ब्लॉक, ब्लॉग पोस्ट, रीडायरेक्ट, उपदेश, प्लेलिस्ट, स्ट्रीमिंग सेवाएँ, इवेंट, क्यूरेटेड कैलेंडर, फ़ाइलें, गैलरी, बाइबल अनुवाद और पद खोज, गीत, व्यवस्थाएँ (arrangements), ग्लोबल स्टाइल, स्टॉक फ़ोटो, और सेटिंग्स का प्रबंधन करता है। यह API का सबसे बड़ा मॉड्यूल है और सभी ChurchApps एप्लिकेशन में CMS, मीडिया/स्ट्रीमिंग, पूजा योजना और बाइबल सुविधाओं को शक्ति देता है।
 
 </div>
 
-**मूल पथ:** `/content`
+**बेस पथ:** `/content`
 
-## पृष्ठ
+## पेज
 
-मूल पथ: `/content/pages`
+बेस पथ: `/content/pages`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/:churchId/tree?url=&id=` | सार्वजनिक | — | URL या ID द्वारा पूर्ण पृष्ठ ट्री (अनुभाग, तत्व, ब्लॉक) लोड करें। URL द्वारा प्राप्त होने पर आंतरिक IDs को हटा दें। URL-आधारित प्राप्ति `pages.visibility` को लागू करती है — एक गेटेड पृष्ठ `{ restricted: true, visibility }` लौटाता है जब तक कि (वैकल्पिक) JWT गेट को संतुष्ट न करे |
-| GET | `/public/:churchId` | सार्वजनिक | — | सार्वजनिक पृष्ठों को सूचीबद्ध करें (`url`, `title`, `metaDescription`); केवल `visibility = everyone` |
-| GET | `/:id` | JWT | — | ID द्वारा पृष्ठ प्राप्त करें |
-| GET | `/` | JWT | — | चर्च के सभी पृष्ठ सूचीबद्ध करें |
-| POST | `/duplicate/:id` | JWT | Content.Edit | सभी अनुभागों और तत्वों के साथ पृष्ठ डुप्लिकेट करें |
-| POST | `/temp/ai` | JWT | Content.Edit | AI-जेनरेटेड पृष्ठ सहेजें (एक कॉल में पृष्ठ, अनुभाग, और तत्व) |
-| POST | `/importTree` | JWT | Content.Edit | नेस्टेड ट्री से पृष्ठ बनाएं (`title`, `url`, `sections[].elements[]…`)। हमेशा कॉलर के चर्च के तहत सम्मिलित करता है; बॉडी में ID को अनदेखा किया जाता है। पंक्तियों में उनके `column` बच्चे शामिल होने चाहिए। अधिकतम 30 अनुभाग / 500 तत्व |
-| POST | `/` | JWT | Content.Edit | पृष्ठ बनाएं या अपडेट करें (बैच) |
-| DELETE | `/:id` | JWT | Content.Edit | पृष्ठ हटाएं |
+| GET | `/:churchId/tree?url=&id=` | Public | — | URL या ID द्वारा पूरा पेज ट्री (sections, elements, blocks) लोड करें। URL द्वारा प्राप्त करने पर आंतरिक IDs हटा दिए जाते हैं। URL-आधारित प्राप्ति `pages.visibility` लागू करती है -- प्रतिबंधित पेज `{ restricted: true, visibility }` लौटाता है, जब तक (वैकल्पिक) JWT गेट को संतुष्ट न करे |
+| GET | `/public/:churchId` | Public | — | सार्वजनिक पेज सूचीबद्ध करें (`url`, `title`, `metaDescription`); केवल `visibility = everyone` वाले |
+| GET | `/:id` | JWT | — | ID द्वारा एक पेज प्राप्त करें |
+| GET | `/` | JWT | — | चर्च के सभी पेज सूचीबद्ध करें |
+| POST | `/duplicate/:id` | JWT | Content.Edit | सभी sections और elements के साथ पेज की डुप्लिकेट बनाएं |
+| POST | `/temp/ai` | JWT | Content.Edit | AI-जनित पेज सहेजें (पेज, sections, और elements एक ही कॉल में) |
+| POST | `/importTree` | JWT | Content.Edit | एक नेस्टेड ट्री से पेज बनाएं (`title`, `url`, `sections[].elements[]…`)। हमेशा कॉलर के चर्च के अंतर्गत डालता है; बॉडी के ids अनदेखे किए जाते हैं। पंक्तियों में उनके `column` children होने चाहिए। अधिकतम 30 sections / 500 elements |
+| POST | `/` | JWT | Content.Edit | पेज बनाएं या अपडेट करें (बैच) |
+| DELETE | `/:id` | JWT | Content.Edit | पेज हटाएं |
 
-### उदाहरण: पृष्ठ ट्री लोड करें
+### उदाहरण: पेज ट्री लोड करना
 
 ```
 GET /content/pages/abc-church-id/tree?url=/about
@@ -50,139 +50,139 @@ GET /content/pages/abc-church-id/tree?url=/about
 }
 ```
 
-## अनुभाग
+## सेक्शन
 
-मूल पथ: `/content/sections`
+बेस पथ: `/content/sections`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | ID द्वारा अनुभाग प्राप्त करें |
-| POST | `/duplicate/:id?convertToBlock=` | JWT | Content.Edit | अनुभाग डुप्लिकेट करें या इसे पुन: प्रयोग योग्य ब्लॉक में परिवर्तित करें |
-| POST | `/` | JWT | Content.Edit | अनुभाग बनाएं या अपडेट करें (बैच)। स्वयं क्रम अपडेट करता है |
-| DELETE | `/:id` | JWT | Content.Edit | अनुभाग हटाएं (स्वयं क्रम अपडेट करता है) |
+| GET | `/:id` | JWT | — | ID द्वारा एक सेक्शन प्राप्त करें |
+| POST | `/duplicate/:id?convertToBlock=` | JWT | Content.Edit | सेक्शन की डुप्लिकेट बनाएं या उसे पुन: उपयोग योग्य ब्लॉक में बदलें |
+| POST | `/` | JWT | Content.Edit | सेक्शन बनाएं या अपडेट करें (बैच)। sort order स्वतः अपडेट होता है |
+| DELETE | `/:id` | JWT | Content.Edit | सेक्शन हटाएं (sort order स्वतः अपडेट होता है) |
 
-## तत्व
+## एलिमेंट
 
-मूल पथ: `/content/elements`
+बेस पथ: `/content/elements`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | ID द्वारा तत्व प्राप्त करें |
-| POST | `/duplicate/:id` | JWT | Content.Edit | सभी बच्चों के साथ तत्व डुप्लिकेट करें |
-| POST | `/` | JWT | Content.Edit | तत्व बनाएं या अपडेट करें (बैच)। पंक्ति कॉलम और कैरोसेल स्लाइड को स्वचालित रूप से प्रबंधित करता है |
-| DELETE | `/:id` | JWT | Content.Edit | तत्व हटाएं |
+| GET | `/:id` | JWT | — | ID द्वारा एक एलिमेंट प्राप्त करें |
+| POST | `/duplicate/:id` | JWT | Content.Edit | सभी children के साथ एलिमेंट की डुप्लिकेट बनाएं |
+| POST | `/` | JWT | Content.Edit | एलिमेंट बनाएं या अपडेट करें (बैच)। row columns और carousel slides स्वतः प्रबंधित होते हैं |
+| DELETE | `/:id` | JWT | Content.Edit | एलिमेंट हटाएं |
 
 ## ब्लॉक
 
-मूल पथ: `/content/blocks`
+बेस पथ: `/content/blocks`
 
-मानक CRUD बढ़ाता है (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` बेस क्लास से Content.Edit अनुमति के साथ लिखने के लिए)।
+बेस क्लास से मानक CRUD (GET `/:id`, GET `/`, POST `/`, DELETE `/:id`) का विस्तार, लेखन के लिए Content.Edit अनुमति के साथ।
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | ID द्वारा ब्लॉक प्राप्त करें |
+| GET | `/:id` | JWT | — | ID द्वारा एक ब्लॉक प्राप्त करें |
 | GET | `/` | JWT | — | सभी ब्लॉक सूचीबद्ध करें |
-| GET | `/:churchId/tree/:id` | सार्वजनिक | — | अनुभागों और तत्वों के साथ पूर्ण ब्लॉक ट्री लोड करें |
-| GET | `/blockType/:blockType` | JWT | — | प्रकार द्वारा ब्लॉक लोड करें (जैसे footerBlock, elementBlock) |
-| GET | `/public/footer/:churchId` | सार्वजनिक | — | चर्च के लिए फुटर ब्लॉक ट्री लोड करें |
+| GET | `/:churchId/tree/:id` | Public | — | sections और elements के साथ पूरा ब्लॉक ट्री लोड करें |
+| GET | `/blockType/:blockType` | JWT | — | प्रकार के अनुसार ब्लॉक लोड करें (जैसे footerBlock, elementBlock) |
+| GET | `/public/footer/:churchId` | Public | — | किसी चर्च के लिए footer ब्लॉक ट्री लोड करें |
 | POST | `/` | JWT | Content.Edit | ब्लॉक बनाएं या अपडेट करें |
 | DELETE | `/:id` | JWT | Content.Edit | ब्लॉक हटाएं |
 
 ## लिंक
 
-मूल पथ: `/content/links`
+बेस पथ: `/content/links`
 
-मानक CRUD बढ़ाता है (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` बेस क्लास से Content.Edit अनुमति के साथ लिखने के लिए)।
+बेस क्लास से मानक CRUD (GET `/:id`, GET `/`, POST `/`, DELETE `/:id`) का विस्तार, लेखन के लिए Content.Edit अनुमति के साथ।
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | ID द्वारा लिंक प्राप्त करें |
-| GET | `/` | JWT | — | सभी लिंक सूचीबद्ध करें। वैकल्पिक `?category=` फ़िल्टर। सहेजने के बाद स्वयं सॉर्ट करता है |
-| GET | `/church/:churchId/filtered?category=` | JWT | — | दृश्यता द्वारा फ़िल्ट किए गए लिंक लोड करें (सभी, दर्शक, सदस्य, कर्मचारी, समूह) |
-| GET | `/church/:churchId?category=` | सार्वजनिक | — | चर्च के लिए श्रेणी द्वारा लिंक लोड करें (सार्वजनिक) |
-| POST | `/` | JWT | Content.Edit | लिंक बनाएं या अपडेट करें (बैच)। श्रेणी द्वारा स्वयं सॉर्ट करता है |
+| GET | `/:id` | JWT | — | ID द्वारा एक लिंक प्राप्त करें |
+| GET | `/` | JWT | — | सभी लिंक सूचीबद्ध करें। वैकल्पिक `?category=` फ़िल्टर। सहेजने के बाद स्वतः क्रमबद्ध |
+| GET | `/church/:churchId/filtered?category=` | JWT | — | दृश्यता (everyone, visitors, members, staff, groups) के आधार पर फ़िल्टर किए गए लिंक लोड करें |
+| GET | `/church/:churchId?category=` | Public | — | श्रेणी के अनुसार किसी चर्च के लिंक लोड करें (सार्वजनिक) |
+| POST | `/` | JWT | Content.Edit | लिंक बनाएं या अपडेट करें (बैच)। श्रेणी के अनुसार स्वतः क्रमबद्ध |
 | DELETE | `/:id` | JWT | Content.Edit | लिंक हटाएं |
 
-## वैश्विक शैलियां
+## ग्लोबल स्टाइल
 
-मूल पथ: `/content/globalStyles`
+बेस पथ: `/content/globalStyles`
 
-मानक CRUD बढ़ाता है (POST `/`, DELETE `/:id` बेस क्लास से Content.Edit अनुमति के साथ लिखने के लिए)।
+बेस क्लास से मानक CRUD (POST `/`, DELETE `/:id`) का विस्तार, लेखन के लिए Content.Edit अनुमति के साथ।
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/church/:churchId` | सार्वजनिक | — | चर्च के लिए वैश्विक शैलियां लोड करें (कोई भी सेट नहीं होने पर डिफ़ॉल्ट लौटाता है) |
-| GET | `/` | JWT | — | प्रमाणीकृत चर्च के लिए वैश्विक शैलियां लोड करें |
-| POST | `/` | JWT | Content.Edit | वैश्विक शैलियां बनाएं या अपडेट करें |
-| DELETE | `/:id` | JWT | Content.Edit | वैश्विक शैलियां हटाएं |
+| GET | `/church/:churchId` | Public | — | किसी चर्च के ग्लोबल स्टाइल लोड करें (कोई सेट न होने पर डिफ़ॉल्ट लौटाता है) |
+| GET | `/` | JWT | — | प्रमाणित चर्च के ग्लोबल स्टाइल लोड करें |
+| POST | `/` | JWT | Content.Edit | ग्लोबल स्टाइल बनाएं या अपडेट करें |
+| DELETE | `/:id` | JWT | Content.Edit | ग्लोबल स्टाइल हटाएं |
 
-## पृष्ठ इतिहास
+## पेज इतिहास
 
-मूल पथ: `/content/pageHistory`
+बेस पथ: `/content/pageHistory`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/page/:pageId` | JWT | Content.Edit | पृष्ठ के लिए इतिहास प्रविष्टियां सूचीबद्ध करें |
-| GET | `/block/:blockId` | JWT | Content.Edit | ब्लॉक के लिए इतिहास प्रविष्टियां सूचीबद्ध करें |
+| GET | `/page/:pageId` | JWT | Content.Edit | किसी पेज के इतिहास की प्रविष्टियाँ सूचीबद्ध करें |
+| GET | `/block/:blockId` | JWT | Content.Edit | किसी ब्लॉक के इतिहास की प्रविष्टियाँ सूचीबद्ध करें |
 | GET | `/:id` | JWT | Content.Edit | ID द्वारा इतिहास प्रविष्टि प्राप्त करें |
-| POST | `/` | JWT | Content.Edit | पृष्ठ/ब्लॉक स्नैपशॉट सहेजें। समय-समय पर 30 दिन से पुरानी प्रविष्टियों को साफ करता है |
-| POST | `/restore/:id` | JWT | Content.Edit | इतिहास स्नैपशॉट से पृष्ठ/ब्लॉक पुनर्स्थापित करें (वर्तमान सामग्री हटाता है और स्नैपशॉट से पुनः निर्माण करता है) |
+| POST | `/` | JWT | Content.Edit | पेज/ब्लॉक का स्नैपशॉट सहेजें। समय-समय पर 30 दिन से पुरानी प्रविष्टियाँ साफ़ करता है |
+| POST | `/restore/:id` | JWT | Content.Edit | इतिहास स्नैपशॉट से पेज/ब्लॉक पुनर्स्थापित करें (मौजूदा सामग्री हटाकर स्नैपशॉट से दोबारा बनाता है) |
 | POST | `/restoreSnapshot` | JWT | Content.Edit | इनलाइन स्नैपशॉट ऑब्जेक्ट से पुनर्स्थापित करें। बॉडी: `{ pageId, blockId, snapshot }` |
 
 ## पोस्ट (ब्लॉग)
 
-मूल पथ: `/content/posts`
+बेस पथ: `/content/posts`
 
-ब्लॉग पोस्ट स्टैंडअलोन पंक्तियां हैं: `title`, `slug` (प्रति चर्च अद्वितीय), `excerpt`, `content` (मार्कडाउन बॉडी), `authorId`, `photoUrl`, `publishDate`, `category`, और `tags`। एक पोस्ट प्रकाशित होता है जब `publishDate` सेट होता है और अतीत में होता है। पढ़ने वाले एंडपॉइंट्स `authorId` से हल किए गए `authorName` के साथ प्रत्येक पोस्ट को समृद्ध करते हैं। [वेबसाइट बिल्डर आर्किटेक्चर](../../architecture/website-builder#blog) देखें।
+ब्लॉग पोस्ट स्वतंत्र पंक्तियाँ हैं: `title`, `slug` (प्रति चर्च अद्वितीय), `excerpt`, `content` (markdown बॉडी), `authorId`, `photoUrl`, `publishDate`, `category`, और `tags`। `publishDate` सेट होने और अतीत में होने पर पोस्ट प्रकाशित होती है। पढ़ने वाले endpoints हर पोस्ट को `authorId` से हल किए गए `authorName` के साथ समृद्ध करते हैं। देखें [Website Builder Architecture](../../architecture/website-builder#blog)।
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/public/:churchId?category=&tag=&page=&pageSize=` | सार्वजनिक | — | प्रकाशित पोस्ट सूचीबद्ध करें, पेजिंग के साथ (प्रति पृष्ठ अधिकतम 50) |
-| GET | `/public/:churchId/categories` | सार्वजनिक | — | प्रकाशित पोस्ट में अलग श्रेणियां |
-| GET | `/public/:churchId/slug/:slug` | सार्वजनिक | — | स्लग द्वारा प्रकाशित पोस्ट प्राप्त करें |
-| GET | `/rss/:churchId?siteUrl=` | सार्वजनिक | — | प्रकाशित पोस्ट का RSS 2.0 फीड (`{siteUrl}/blog/{slug}` के रूप में निर्मित लिंक) |
-| GET | `/:id` | JWT | — | ID द्वारा पोस्ट प्राप्त करें |
-| GET | `/` | JWT | — | चर्च के लिए सभी पोस्ट सूचीबद्ध करें |
+| GET | `/public/:churchId?category=&tag=&page=&pageSize=` | Public | — | प्रकाशित पोस्ट पृष्ठांकित रूप में सूचीबद्ध करें (प्रति पृष्ठ अधिकतम 50) |
+| GET | `/public/:churchId/categories` | Public | — | प्रकाशित पोस्ट में अलग-अलग श्रेणियाँ |
+| GET | `/public/:churchId/slug/:slug` | Public | — | slug द्वारा एक प्रकाशित पोस्ट प्राप्त करें |
+| GET | `/rss/:churchId?siteUrl=` | Public | — | प्रकाशित पोस्ट का RSS 2.0 फ़ीड (लिंक `{siteUrl}/blog/{slug}` के रूप में बनते हैं) |
+| GET | `/:id` | JWT | — | ID द्वारा एक पोस्ट प्राप्त करें |
+| GET | `/` | JWT | — | चर्च की सभी पोस्ट सूचीबद्ध करें |
 | POST | `/` | JWT | Content.Edit | पोस्ट बनाएं या अपडेट करें (बैच) |
 | DELETE | `/:id` | JWT | Content.Edit | पोस्ट हटाएं |
 
-## पुनर्निर्देश
+## रीडायरेक्ट
 
-मूल पथ: `/content/redirects`
+बेस पथ: `/content/redirects`
 
-प्रति-चर्च URL पुनर्निर्देश (`fromPath` → `toPath`), प्रति चर्च 200 तक सीमित। पथ सामान्यीकृत हैं (लोअरकेस, अग्रणी स्लैश, कोई अनुगामी स्लैश नहीं) और `fromPath` प्रति चर्च अद्वितीय है। B1App ये कुछ 404s को हल करता है और HTTP 308 जारी करता है।
+प्रति चर्च URL रीडायरेक्ट (`fromPath` → `toPath`), प्रति चर्च 200 तक सीमित। पथ सामान्यीकृत होते हैं (छोटे अक्षर, प्रमुख स्लैश, अंत में स्लैश नहीं) और `fromPath` प्रति चर्च अद्वितीय है। B1App इन्हें संभावित 404 पर हल करता है और HTTP 308 जारी करता है।
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/public/:churchId?path=` | सार्वजनिक | — | पथ हल करें (या जब `path` छोड़ा गया हो तो सभी पुनर्निर्देश सूचीबद्ध करें) |
-| GET | `/:id` | JWT | — | ID द्वारा पुनर्निर्देश प्राप्त करें |
-| GET | `/` | JWT | — | चर्च के लिए सभी पुनर्निर्देश सूचीबद्ध करें |
-| POST | `/` | JWT | Content.Edit | पुनर्निर्देश बनाएं या अपडेट करें। `fromPath = toPath` को अस्वीकार करता है और 200-पंक्ति कैप को लागू करता है |
-| DELETE | `/:id` | JWT | Content.Edit | पुनर्निर्देश हटाएं |
+| GET | `/public/:churchId?path=` | Public | — | एक पथ हल करें (या `path` छोड़ने पर सभी रीडायरेक्ट सूचीबद्ध करें) |
+| GET | `/:id` | JWT | — | ID द्वारा एक रीडायरेक्ट प्राप्त करें |
+| GET | `/` | JWT | — | चर्च के सभी रीडायरेक्ट सूचीबद्ध करें |
+| POST | `/` | JWT | Content.Edit | रीडायरेक्ट बनाएं या अपडेट करें। `fromPath = toPath` को अस्वीकार करता है और 200-पंक्ति सीमा लागू करता है |
+| DELETE | `/:id` | JWT | Content.Edit | रीडायरेक्ट हटाएं |
 
 ## उपदेश
 
-मूल पथ: `/content/sermons`
+बेस पथ: `/content/sermons`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
 | GET | `/public/freeshowSample` | JWT | — | FreeShow प्लेलिस्ट संरचना का नमूना प्राप्त करें |
-| GET | `/public/tvWrapper/:churchId` | JWT | — | उपदेश, पाठ, और FreeShow स्रोतों के साथ TV ऐप रैपर प्राप्त करें |
-| GET | `/public/tvFeed/:churchId/:sermonId` | सार्वजनिक | — | TV फीड प्लेलिस्ट के रूप में एक उपदेश प्राप्त करें |
-| GET | `/public/tvFeed/:churchId` | सार्वजनिक | — | TV फीड के रूप में सभी सार्वजनिक प्लेलिस्ट/उपदेश प्राप्त करें |
-| GET | `/public/:churchId` | सार्वजनिक | — | चर्च के लिए सभी सार्वजनिक उपदेश सूचीबद्ध करें |
-| GET | `/timeline?sermonIds=` | JWT | — | उपदेश के लिए टाइमलाइन डेटा लोड करें |
-| GET | `/lookup?videoType=&videoData=` | सार्वजनिक | — | YouTube या Vimeo से उपदेश मेटाडेटा की खोज करें |
-| GET | `/socialSuggestions?youtubeVideoId=` | JWT | — | उपदेश सबटाइटल से AI सोशल मीडिया पोस्ट सुझाव उत्पन्न करें |
-| GET | `/outline?url=&title=&author=` | JWT | — | URL से AI पाठ रूपरेखा उत्पन्न करें |
+| GET | `/public/tvWrapper/:churchId` | JWT | — | उपदेश, पाठ और FreeShow स्रोतों के साथ TV ऐप wrapper प्राप्त करें |
+| GET | `/public/tvFeed/:churchId/:sermonId` | Public | — | एक उपदेश को TV फ़ीड प्लेलिस्ट के रूप में प्राप्त करें |
+| GET | `/public/tvFeed/:churchId` | Public | — | सभी सार्वजनिक प्लेलिस्ट/उपदेश TV फ़ीड के रूप में प्राप्त करें |
+| GET | `/public/:churchId` | Public | — | किसी चर्च के सभी सार्वजनिक उपदेश सूचीबद्ध करें |
+| GET | `/timeline?sermonIds=` | JWT | — | उपदेशों के timeline डेटा लोड करें |
+| GET | `/lookup?videoType=&videoData=` | Public | — | YouTube या Vimeo से उपदेश मेटाडेटा खोजें |
+| GET | `/socialSuggestions?youtubeVideoId=` | JWT | — | उपदेश के सबटाइटल से AI सोशल मीडिया पोस्ट सुझाव बनाएं |
+| GET | `/outline?url=&title=&author=` | JWT | — | URL से AI पाठ रूपरेखा बनाएं |
 | GET | `/youtubeImport/:channelId` | JWT | — | YouTube चैनल से वीडियो आयात करें |
 | GET | `/vimeoImport/:channelId` | JWT | — | Vimeo चैनल से वीडियो आयात करें |
-| GET | `/:id` | JWT | — | ID द्वारा उपदेश प्राप्त करें |
+| GET | `/:id` | JWT | — | ID द्वारा एक उपदेश प्राप्त करें |
 | GET | `/` | JWT | — | सभी उपदेश सूचीबद्ध करें |
-| POST | `/` | JWT | StreamingServices.Edit | उपदेश बनाएं या अपडेट करें (बैच, बेस64 थंबनेल अपलोड समर्थन करता है) |
+| POST | `/` | JWT | StreamingServices.Edit | उपदेश बनाएं या अपडेट करें (बैच, base64 थंबनेल अपलोड समर्थित) |
 | DELETE | `/:id` | JWT | StreamingServices.Edit | उपदेश हटाएं |
 
-### उदाहरण: YouTube उपदेश की खोज करें
+### उदाहरण: YouTube उपदेश खोजना
 
 ```
 GET /content/sermons/lookup?videoType=youtube&videoData=dQw4w9WgXcQ
@@ -200,126 +200,130 @@ GET /content/sermons/lookup?videoType=youtube&videoData=dQw4w9WgXcQ
 
 ## प्लेलिस्ट
 
-मूल पथ: `/content/playlists`
+बेस पथ: `/content/playlists`
 
-मानक CRUD बढ़ाता है (GET `/:id`, GET `/`, DELETE `/:id` बेस क्लास से StreamingServices.Edit अनुमति के साथ लिखने के लिए)।
+बेस क्लास से मानक CRUD (GET `/:id`, GET `/`, DELETE `/:id`) का विस्तार, लेखन के लिए StreamingServices.Edit अनुमति के साथ।
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | ID द्वारा प्लेलिस्ट प्राप्त करें |
+| GET | `/:id` | JWT | — | ID द्वारा एक प्लेलिस्ट प्राप्त करें |
 | GET | `/` | JWT | — | सभी प्लेलिस्ट सूचीबद्ध करें |
-| GET | `/public/:churchId` | सार्वजनिक | — | चर्च के लिए सभी सार्वजनिक प्लेलिस्ट सूचीबद्ध करें |
-| POST | `/` | JWT | StreamingServices.Edit | प्लेलिस्ट बनाएं या अपडेट करें (बैच, बेस64 थंबनेल अपलोड समर्थन करता है) |
+| GET | `/public/:churchId` | Public | — | किसी चर्च की सभी सार्वजनिक प्लेलिस्ट सूचीबद्ध करें |
+| POST | `/` | JWT | StreamingServices.Edit | प्लेलिस्ट बनाएं या अपडेट करें (बैच, base64 थंबनेल अपलोड समर्थित) |
 | DELETE | `/:id` | JWT | StreamingServices.Edit | प्लेलिस्ट हटाएं |
 
-## स्ट्रीमिंग सेवाएं
+## स्ट्रीमिंग सेवाएँ
 
-मूल पथ: `/content/streamingServices`
+बेस पथ: `/content/streamingServices`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/:id/hostChat` | JWT | Chat.Host | सेवा के लिए एन्क्रिप्टेड होस्ट चैट रूम ID प्राप्त करें |
-| GET | `/` | JWT | — | सभी स्ट्रीमिंग सेवाएं सूचीबद्ध करें। समय-समय पर समाप्त गैर-आवर्ती सेवाओं को साफ करता है और आवर्ती वाले को आगे बढ़ाता है |
-| POST | `/` | JWT | StreamingServices.Edit | स्ट्रीमिंग सेवाएं बनाएं या अपडेट करें (बैच) |
-| DELETE | `/:id` | JWT | StreamingServices.Edit | स्ट्रीमिंग सेवा हटाएं (अवरुद्ध IPs को भी साफ करता है) |
+| GET | `/:id/hostChat` | JWT | Chat.Host | किसी सेवा के लिए एन्क्रिप्टेड होस्ट चैट रूम ID प्राप्त करें |
+| GET | `/` | JWT | — | सभी स्ट्रीमिंग सेवाएँ सूचीबद्ध करें। समाप्त हो चुकी गैर-आवर्ती सेवाएँ स्वतः साफ़ होती हैं और आवर्ती सेवाएँ आगे बढ़ती हैं |
+| POST | `/` | JWT | StreamingServices.Edit | स्ट्रीमिंग सेवाएँ बनाएं या अपडेट करें (बैच) |
+| DELETE | `/:id` | JWT | StreamingServices.Edit | स्ट्रीमिंग सेवा हटाएं (ब्लॉक किए गए IPs भी साफ़ करता है) |
 
-## ईवेंट
+## इवेंट
 
-मूल पथ: `/content/events`
+बेस पथ: `/content/events`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/timeline/group/:groupId?eventIds=` | JWT | — | समूह के लिए टाइमलाइन ईवेंट लोड करें |
-| GET | `/timeline?eventIds=` | JWT | — | वर्तमान उपयोगकर्ता के समूहों के लिए टाइमलाइन ईवेंट लोड करें |
-| GET | `/subscribe?churchId=&groupId=&curatedCalendarId=` | सार्वजनिक | — | ICS कैलेंडर फीड के रूप में ईवेंट की सदस्यता लें |
-| GET | `/group/:groupId` | JWT | — | समूह के लिए ईवेंट प्राप्त करें (अपवाद तिथियां शामिल हैं) |
-| GET | `/public/group/:churchId/:groupId` | सार्वजनिक | — | समूह के लिए सार्वजनिक ईवेंट प्राप्त करें |
-| GET | `/:id` | JWT | — | ID द्वारा ईवेंट प्राप्त करें |
-| POST | `/` | JWT | — | ईवेंट बनाएं या अपडेट करें (बैच) |
-| DELETE | `/:id` | JWT | Content.Edit | ईवेंट हटाएं |
+| GET | `/timeline/group/:groupId?eventIds=` | JWT | — | किसी समूह के timeline इवेंट लोड करें |
+| GET | `/timeline?eventIds=` | JWT | — | वर्तमान उपयोगकर्ता के समूहों के timeline इवेंट लोड करें |
+| GET | `/subscribe?churchId=&groupId=&curatedCalendarId=` | Public | — | ICS कैलेंडर फ़ीड के रूप में इवेंट की सदस्यता लें |
+| GET | `/group/:groupId` | JWT | — | किसी समूह के इवेंट प्राप्त करें (अपवाद तिथियाँ शामिल) |
+| GET | `/public/group/:churchId/:groupId` | Public | — | किसी समूह के सार्वजनिक इवेंट प्राप्त करें |
+| GET | `/public/:churchId/:id` | Public | — | उसके सार्वजनिक पेज के लिए एक इवेंट प्राप्त करें, `roomNames` के साथ (बुकिंग से कमरे जो अस्वीकृत नहीं हैं)। लंबित या अस्वीकृत इवेंट और पंजीकरण न लेने वाले निजी इवेंट के लिए `null` लौटाता है |
+| GET | `/public/:churchId/:id/ical` | Public | — | उस एक इवेंट को `.ics` फ़ाइल के रूप में डाउनलोड करें (`text/calendar`, अपवाद तिथियाँ लागू)। उन्हीं नियमों से इवेंट छिपा होने पर `404` |
+| GET | `/:id` | JWT | — | ID द्वारा एक इवेंट प्राप्त करें |
+| POST | `/` | JWT | — | इवेंट बनाएं या अपडेट करें (बैच) |
+| DELETE | `/:id` | JWT | Content.Edit | इवेंट हटाएं |
 
-## ईवेंट अपवाद
+इवेंट रिकॉर्ड में `photoUrl` (16:9 इवेंट फ़ोटो, जो सार्वजनिक इवेंट पेज और आगामी इवेंट टाइलों पर दिखती है), `tags` (कॉमा-से-अलग, वेबसाइट Calendar एलिमेंट के tag फ़िल्टर द्वारा उपयोग), और `notesViewRole` / `notesPostRole` (`null` होने पर `staff`, या `leaders`, या `members`) शामिल होते हैं, जो इवेंट की `eventNote` बातचीत को नियंत्रित करते हैं -- देखें [Group and event notes access control](./messaging.md#group-and-event-notes-access-control)। सार्वजनिक क्यूरेटेड-इवेंट प्रतिक्रियाओं में भी हर इवेंट का `photoUrl` और `tags` होता है।
 
-मूल पथ: `/content/eventExceptions`
+## इवेंट अपवाद
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+बेस पथ: `/content/eventExceptions`
+
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | ID द्वारा ईवेंट अपवाद प्राप्त करें |
-| POST | `/` | JWT | Content.Edit | ईवेंट अपवाद बनाएं या अपडेट करें (बैच) |
-| DELETE | `/:id` | JWT | Content.Edit | ईवेंट अपवाद हटाएं |
+| GET | `/:id` | JWT | — | ID द्वारा एक इवेंट अपवाद प्राप्त करें |
+| POST | `/` | JWT | Content.Edit | इवेंट अपवाद बनाएं या अपडेट करें (बैच) |
+| DELETE | `/:id` | JWT | Content.Edit | इवेंट अपवाद हटाएं |
 
 ## क्यूरेटेड कैलेंडर
 
-मूल पथ: `/content/curatedCalendars`
+बेस पथ: `/content/curatedCalendars`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | ID द्वारा क्यूरेटेड कैलेंडर प्राप्त करें |
+| GET | `/:id` | JWT | — | ID द्वारा एक क्यूरेटेड कैलेंडर प्राप्त करें |
 | GET | `/` | JWT | — | सभी क्यूरेटेड कैलेंडर सूचीबद्ध करें |
 | POST | `/` | JWT | Content.Edit | क्यूरेटेड कैलेंडर बनाएं या अपडेट करें (बैच) |
 | DELETE | `/:id` | JWT | Content.Edit | क्यूरेटेड कैलेंडर हटाएं |
 
-## क्यूरेटेड ईवेंट
+## क्यूरेटेड इवेंट
 
-मूल पथ: `/content/curatedEvents`
+बेस पथ: `/content/curatedEvents`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/calendar/:curatedCalendarId?withoutEvents` | JWT | — | कैलेंडर के लिए क्यूरेटेड ईवेंट प्राप्त करें (ईवेंट विवरण और अपवाद तिथियां शामिल हैं जब तक कि `?withoutEvents` सेट न हो) |
-| GET | `/public/calendar/:churchId/:curatedCalendarId` | सार्वजनिक | — | कैलेंडर के लिए सार्वजनिक क्यूरेटेड ईवेंट प्राप्त करें |
-| GET | `/:id` | JWT | — | ID द्वारा क्यूरेटेड ईवेंट प्राप्त करें |
-| GET | `/` | JWT | — | सभी क्यूरेटेड ईवेंट सूचीबद्ध करें |
-| POST | `/` | JWT | Content.Edit | क्यूरेटेड ईवेंट बनाएं या अपडेट करें। विशिष्ट समूह ईवेंट जोड़ने के लिए `eventIds` सरणी का समर्थन करता है |
-| DELETE | `/:id` | JWT | Content.Edit | क्यूरेटेड ईवेंट हटाएं |
-| DELETE | `/calendar/:curatedCalendarId/event/:eventId` | JWT | Content.Edit | क्यूरेटेड कैलेंडर से विशिष्ट ईवेंट हटाएं |
-| DELETE | `/calendar/:curatedCalendarId/group/:groupId` | JWT | Content.Edit | क्यूरेटेड कैलेंडर से समूह के सभी ईवेंट हटाएं |
+| GET | `/calendar/:curatedCalendarId?withoutEvents` | JWT | — | किसी कैलेंडर के क्यूरेटेड इवेंट प्राप्त करें (इवेंट विवरण और अपवाद तिथियाँ शामिल, जब तक `?withoutEvents` सेट न हो) |
+| GET | `/public/calendar/:churchId/:curatedCalendarId` | Public | — | किसी कैलेंडर के सार्वजनिक क्यूरेटेड इवेंट प्राप्त करें |
+| GET | `/:id` | JWT | — | ID द्वारा एक क्यूरेटेड इवेंट प्राप्त करें |
+| GET | `/` | JWT | — | सभी क्यूरेटेड इवेंट सूचीबद्ध करें |
+| POST | `/` | JWT | Content.Edit | क्यूरेटेड इवेंट बनाएं या अपडेट करें। विशिष्ट समूह इवेंट जोड़ने के लिए `eventIds` ऐरे समर्थित है |
+| DELETE | `/:id` | JWT | Content.Edit | क्यूरेटेड इवेंट हटाएं |
+| DELETE | `/calendar/:curatedCalendarId/event/:eventId` | JWT | Content.Edit | किसी क्यूरेटेड कैलेंडर से एक विशिष्ट इवेंट हटाएं |
+| DELETE | `/calendar/:curatedCalendarId/group/:groupId` | JWT | Content.Edit | किसी क्यूरेटेड कैलेंडर से किसी समूह के सभी इवेंट हटाएं |
 
-## फाइलें
+## फ़ाइलें
 
-मूल पथ: `/content/files`
+बेस पथ: `/content/files`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/:contentType/:contentId` | JWT | — | सामग्री प्रकार और सामग्री ID द्वारा फाइलें प्राप्त करें |
-| GET | `/` | JWT | — | चर्च वेबसाइट के लिए सभी फाइलें सूचीबद्ध करें |
-| GET | `/:id` | JWT | — | ID द्वारा फाइल प्राप्त करें |
-| POST | `/` | JWT | Content.Edit* | फाइलें अपलोड करें (बेस64)। *यदि उपयोगकर्ता `contentId` से मेल खाने वाले समूह का सदस्य है तो भी अनुमत है |
-| POST | `/postUrl` | JWT | Content.Edit* | पूर्व-हस्ताक्षरित S3 अपलोड URL प्राप्त करें। *समूह सदस्यों के लिए भी अनुमत है। प्रति सामग्री आइटम अधिकतम 100MB |
-| DELETE | `/:id` | JWT | Content.Edit* | फाइल हटाएं और स्टोरेज से हटाएं। *समूह सदस्यों के लिए भी अनुमत है |
+| GET | `/:contentType/:contentId` | JWT | — | contentType और contentId द्वारा फ़ाइलें प्राप्त करें |
+| GET | `/` | JWT | — | चर्च वेबसाइट की सभी फ़ाइलें सूचीबद्ध करें |
+| GET | `/:id` | JWT | — | ID द्वारा एक फ़ाइल प्राप्त करें |
+| POST | `/` | JWT | Content.Edit* | फ़ाइलें अपलोड करें (base64)। *यदि उपयोगकर्ता `contentId` से मेल खाने वाले समूह का सदस्य है तो भी अनुमति है |
+| POST | `/postUrl` | JWT | Content.Edit* | पूर्व-हस्ताक्षरित S3 अपलोड URL प्राप्त करें। *समूह सदस्यों के लिए भी अनुमति। प्रति सामग्री आइटम अधिकतम 100MB |
+| DELETE | `/:id` | JWT | Content.Edit* | फ़ाइल हटाएं और स्टोरेज से निकालें। *समूह सदस्यों के लिए भी अनुमति |
 
 ## गैलरी
 
-मूल पथ: `/content/gallery`
+बेस पथ: `/content/gallery`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/stock/:folder` | सार्वजनिक | — | फ़ोल्डर में स्टॉक फोटो सूचीबद्ध करें |
-| GET | `/:folder` | JWT | Content.Edit | फ़ोल्डर में गैलरी छवियां सूचीबद्ध करें |
+| GET | `/stock/:folder` | Public | — | किसी फ़ोल्डर के स्टॉक फ़ोटो सूचीबद्ध करें |
+| GET | `/:folder` | JWT | Content.Edit | किसी फ़ोल्डर की गैलरी छवियाँ सूचीबद्ध करें |
 | POST | `/requestUpload` | JWT | Content.Edit | गैलरी छवि के लिए पूर्व-हस्ताक्षरित S3 अपलोड URL प्राप्त करें |
 | DELETE | `/:folder/:image` | JWT | Content.Edit | गैलरी छवि हटाएं |
 
 ## बाइबल
 
-मूल पथ: `/content/bibles`
+बेस पथ: `/content/bibles`
 
-सभी बाइबल एंडपॉइंट्स सार्वजनिक हैं (कोई प्रमाणीकरण आवश्यक नहीं)। डेटा बाहरी स्रोतों से प्राप्त किया जाता है और स्थानीय रूप से कैश किया जाता है।
+सभी बाइबल endpoints सार्वजनिक हैं (कोई प्रमाणीकरण आवश्यक नहीं)। डेटा बाहरी स्रोतों से लाया जाता है और स्थानीय रूप से कैश किया जाता है।
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/` | सार्वजनिक | — | सभी बाइबल अनुवाद सूचीबद्ध करें (कैश खाली होने पर स्रोत से प्राप्त करता है) |
-| GET | `/stats?startDate=&endDate=` | सार्वजनिक | — | तारीख रेंज के लिए बाइबल खोज सांख्यिकी प्राप्त करें |
-| GET | `/availableTranslations/:source` | सार्वजनिक | — | स्रोत से उपलब्ध अनुवाद सूचीबद्ध करें (जैसे api.bible) |
-| GET | `/updateTranslations` | सार्वजनिक | — | सभी स्रोतों से सभी अनुवाद सिंक करें |
-| GET | `/updateTranslations/:source` | सार्वजनिक | — | विशिष्ट स्रोत से अनुवाद सिंक करें |
-| GET | `/updateCopyrights` | सार्वजनिक | — | अनुवाद के लिए कॉपीराइट जानकारी अपडेट करें जिसके पास यह नहीं है |
-| GET | `/:translationKey/updateCopyright` | सार्वजनिक | — | विशिष्ट अनुवाद के लिए कॉपीराइट अपडेट करें |
-| GET | `/:translationKey/search?query=&limit=` | सार्वजनिक | — | अनुवाद में छंद खोजें |
-| GET | `/:translationKey/books` | सार्वजनिक | — | अनुवाद के लिए किताबें प्राप्त करें (स्थानीय रूप से कैश करता है) |
-| GET | `/:translationKey/:bookKey/chapters` | सार्वजनिक | — | किताब के लिए अध्याय प्राप्त करें (स्थानीय रूप से कैश करता है) |
-| GET | `/:translationKey/chapters/:chapterKey/verses` | सार्वजनिक | — | अध्याय के लिए छंद प्राप्त करें (स्थानीय रूप से कैश करता है) |
-| GET | `/:translationKey/verses/:startVerseKey-:endVerseKey` | सार्वजनिक | — | रेंज के लिए छंद टेक्स्ट प्राप्त करें। खोज को लॉग करता है। कुछ अनुवाद लाइसेंसिंग के लिए कैशिंग को बायपास करते हैं |
+| GET | `/` | Public | — | सभी बाइबल अनुवाद सूचीबद्ध करें (कैश खाली होने पर स्रोत से लाता है) |
+| GET | `/stats?startDate=&endDate=` | Public | — | किसी तारीख सीमा के लिए बाइबल खोज आँकड़े प्राप्त करें |
+| GET | `/availableTranslations/:source` | Public | — | किसी स्रोत (जैसे api.bible) के उपलब्ध अनुवाद सूचीबद्ध करें |
+| GET | `/updateTranslations` | Public | — | सभी स्रोतों के सभी अनुवाद सिंक करें |
+| GET | `/updateTranslations/:source` | Public | — | किसी विशिष्ट स्रोत से अनुवाद सिंक करें |
+| GET | `/updateCopyrights` | Public | — | जिन अनुवादों में कॉपीराइट जानकारी नहीं है, उनकी कॉपीराइट जानकारी अपडेट करें |
+| GET | `/:translationKey/updateCopyright` | Public | — | किसी विशिष्ट अनुवाद का कॉपीराइट अपडेट करें |
+| GET | `/:translationKey/search?query=&limit=` | Public | — | किसी अनुवाद में पद खोजें |
+| GET | `/:translationKey/books` | Public | — | किसी अनुवाद की पुस्तकें प्राप्त करें (स्थानीय रूप से कैश करता है) |
+| GET | `/:translationKey/:bookKey/chapters` | Public | — | किसी पुस्तक के अध्याय प्राप्त करें (स्थानीय रूप से कैश करता है) |
+| GET | `/:translationKey/chapters/:chapterKey/verses` | Public | — | किसी अध्याय के पद प्राप्त करें (स्थानीय रूप से कैश करता है) |
+| GET | `/:translationKey/verses/:startVerseKey-:endVerseKey` | Public | — | किसी सीमा का पद पाठ प्राप्त करें। खोजों को लॉग करता है। कुछ अनुवाद लाइसेंसिंग के कारण कैशिंग छोड़ते हैं |
 
-### उदाहरण: छंद टेक्स्ट प्राप्त करें
+### उदाहरण: पद पाठ प्राप्त करना
 
 ```
 GET /content/bibles/de4e12af7f28f599-02/verses/GEN.1.1-GEN.1.3
@@ -335,12 +339,12 @@ GET /content/bibles/de4e12af7f28f599-02/verses/GEN.1.1-GEN.1.3
 
 ## गीत
 
-मूल पथ: `/content/songs`
+बेस पथ: `/content/songs`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/search?q=` | JWT | — | प्रश्न द्वारा गीत खोजें |
-| GET | `/:id` | JWT | — | ID द्वारा गीत प्राप्त करें |
+| GET | `/search?q=` | JWT | — | क्वेरी द्वारा गीत खोजें |
+| GET | `/:id` | JWT | — | ID द्वारा एक गीत प्राप्त करें |
 | GET | `/` | JWT | Content.Edit | सभी गीत सूचीबद्ध करें |
 | POST | `/` | JWT | Content.Edit | गीत बनाएं या अपडेट करें (बैच) |
 | POST | `/import` | JWT | — | FreeShow से गीत आयात करें (बैच) |
@@ -348,114 +352,114 @@ GET /content/bibles/de4e12af7f28f599-02/verses/GEN.1.1-GEN.1.3
 
 ## गीत विवरण
 
-मूल पथ: `/content/songDetails`
+बेस पथ: `/content/songDetails`
 
-गीत विवरण वैश्विक हैं (चर्च-स्कोप्ड नहीं)। ये चर्चों में साझा किए गए प्रामाणिक गीत मेटाडेटा का प्रतिनिधित्व करते हैं।
+गीत विवरण वैश्विक हैं (चर्च-स्कोप्ड नहीं)। ये विभिन्न चर्चों में साझा मानक गीत मेटाडेटा का प्रतिनिधित्व करते हैं।
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | ID द्वारा गीत विवरण प्राप्त करें (वैश्विक) |
-| GET | `/` | JWT | — | चर्च के लिए गीत विवरण सूचीबद्ध करें |
-| POST | `/create` | JWT | — | PraiseCharts ID से गीत विवरण बनाएं (यदि पहले से बनाया गया है तो मौजूदा लौटाता है)। PraiseCharts और MusicBrainz से मेटाडेटा को स्वचालित रूप से प्राप्त करता है |
+| GET | `/:id` | JWT | — | ID द्वारा एक गीत विवरण प्राप्त करें (वैश्विक) |
+| GET | `/` | JWT | — | चर्च के गीत विवरण सूचीबद्ध करें |
+| POST | `/create` | JWT | — | PraiseCharts ID से गीत विवरण बनाएं (पहले से बना हो तो मौजूदा लौटाता है)। PraiseCharts और MusicBrainz से मेटाडेटा स्वतः लाता है |
 | POST | `/` | JWT | — | गीत विवरण बनाएं या अपडेट करें (बैच) |
 
 ## गीत विवरण लिंक
 
-मूल पथ: `/content/songDetailLinks`
+बेस पथ: `/content/songDetailLinks`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | ID द्वारा गीत विवरण लिंक प्राप्त करें |
-| GET | `/songDetail/:songDetailId` | JWT | — | गीत विवरण के लिए सभी लिंक प्राप्त करें |
-| POST | `/` | JWT | — | गीत विवरण लिंक बनाएं या अपडेट करें (बैच)। यदि लिंक किया गया है तो MusicBrainz डेटा को स्वचालित रूप से प्राप्त करता है |
+| GET | `/:id` | JWT | — | ID द्वारा एक गीत विवरण लिंक प्राप्त करें |
+| GET | `/songDetail/:songDetailId` | JWT | — | किसी गीत विवरण के सभी लिंक प्राप्त करें |
+| POST | `/` | JWT | — | गीत विवरण लिंक बनाएं या अपडेट करें (बैच)। लिंक होने पर MusicBrainz डेटा स्वतः लाता है |
 | DELETE | `/:id` | JWT | — | गीत विवरण लिंक हटाएं |
 
-## व्यवस्था
+## व्यवस्थाएँ (Arrangements)
 
-मूल पथ: `/content/arrangements`
+बेस पथ: `/content/arrangements`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | ID द्वारा व्यवस्था प्राप्त करें |
-| GET | `/song/:songId` | JWT | Content.Edit | गीत के लिए व्यवस्था प्राप्त करें |
-| GET | `/songDetail/:songDetailId` | JWT | Content.Edit | गीत विवरण के लिए व्यवस्था प्राप्त करें |
-| GET | `/` | JWT | Content.Edit | सभी व्यवस्था सूचीबद्ध करें |
-| POST | `/` | JWT | Content.Edit | व्यवस्था बनाएं या अपडेट करें (बैच) |
-| POST | `/freeShow/missing` | JWT | — | FreeShow IDs खोजें जो चर्च में मौजूद नहीं हैं। बॉडी: `{ freeShowIds: string[] }` |
-| DELETE | `/:id` | JWT | Content.Edit | व्यवस्था हटाएं (कुंजियां भी हटाता है; यदि कोई व्यवस्था नहीं रहती है तो गीत हटाता है) |
+| GET | `/:id` | JWT | — | ID द्वारा एक व्यवस्था प्राप्त करें |
+| GET | `/song/:songId` | JWT | Content.Edit | किसी गीत की व्यवस्थाएँ प्राप्त करें |
+| GET | `/songDetail/:songDetailId` | JWT | Content.Edit | किसी गीत विवरण की व्यवस्थाएँ प्राप्त करें |
+| GET | `/` | JWT | Content.Edit | सभी व्यवस्थाएँ सूचीबद्ध करें |
+| POST | `/` | JWT | Content.Edit | व्यवस्थाएँ बनाएं या अपडेट करें (बैच) |
+| POST | `/freeShow/missing` | JWT | — | ऐसे FreeShow IDs खोजें जो चर्च में मौजूद नहीं हैं। बॉडी: `{ freeShowIds: string[] }` |
+| DELETE | `/:id` | JWT | Content.Edit | व्यवस्था हटाएं (कीज़ भी हटाता है; कोई व्यवस्था न बचे तो गीत भी हटाता है) |
 
-## व्यवस्था कुंजियां
+## व्यवस्था कीज़ (Arrangement Keys)
 
-मूल पथ: `/content/arrangementKeys`
+बेस पथ: `/content/arrangementKeys`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/presenter/:churchId/:id` | सार्वजनिक | — | प्रस्तोता दृश्य के लिए पूर्ण गीत डेटा के साथ व्यवस्था कुंजी प्राप्त करें |
-| GET | `/:id` | JWT | — | ID द्वारा व्यवस्था कुंजी प्राप्त करें |
-| GET | `/arrangement/:arrangementId` | JWT | Content.Edit | व्यवस्था के लिए कुंजियां प्राप्त करें |
-| GET | `/` | JWT | Content.Edit | सभी व्यवस्था कुंजियां सूचीबद्ध करें |
-| POST | `/` | JWT | Content.Edit | व्यवस्था कुंजियां बनाएं या अपडेट करें (बैच) |
-| DELETE | `/:id` | JWT | Content.Edit | व्यवस्था कुंजी हटाएं |
+| GET | `/presenter/:churchId/:id` | Public | — | प्रेज़ेंटर दृश्य के लिए पूर्ण गीत डेटा सहित व्यवस्था की प्राप्त करें |
+| GET | `/:id` | JWT | — | ID द्वारा एक व्यवस्था की प्राप्त करें |
+| GET | `/arrangement/:arrangementId` | JWT | Content.Edit | किसी व्यवस्था की कीज़ प्राप्त करें |
+| GET | `/` | JWT | Content.Edit | सभी व्यवस्था कीज़ सूचीबद्ध करें |
+| POST | `/` | JWT | Content.Edit | व्यवस्था कीज़ बनाएं या अपडेट करें (बैच) |
+| DELETE | `/:id` | JWT | Content.Edit | व्यवस्था की हटाएं |
 
 ## सेटिंग्स
 
-मूल पथ: `/content/settings`
+बेस पथ: `/content/settings`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
 | GET | `/my` | JWT | — | वर्तमान उपयोगकर्ता की सेटिंग्स प्राप्त करें |
-| GET | `/` | JWT | Settings.Edit | चर्च के लिए सभी सेटिंग्स प्राप्त करें |
-| GET | `/public/:churchId` | सार्वजनिक | — | चर्च के लिए सार्वजनिक सेटिंग्स प्राप्त करें (कुंजी-मान जोड़े के रूप में लौटाई जाती है) |
-| POST | `/my` | JWT | — | उपयोगकर्ता-स्तर की सेटिंग्स सहेजें (बेस64 छवि अपलोड समर्थन करता है) |
-| POST | `/` | JWT | Settings.Edit | चर्च-स्तर की सेटिंग्स सहेजें (बेस64 छवि अपलोड समर्थन करता है) |
-| DELETE | `/my/:id` | JWT | — | उपयोगकर्ता सेटिंग हटाएं |
+| GET | `/` | JWT | Settings.Edit | चर्च की सभी सेटिंग्स प्राप्त करें |
+| GET | `/public/:churchId` | Public | — | किसी चर्च की सार्वजनिक सेटिंग्स प्राप्त करें (key-value जोड़ों के रूप में) |
+| POST | `/my` | JWT | — | उपयोगकर्ता-स्तरीय सेटिंग्स सहेजें (base64 छवि अपलोड समर्थित) |
+| POST | `/` | JWT | Settings.Edit | चर्च-स्तरीय सेटिंग्स सहेजें (base64 छवि अपलोड समर्थित) |
+| DELETE | `/my/:id` | JWT | — | एक उपयोगकर्ता सेटिंग हटाएं |
 
-## पूर्वावलोकन
+## पूर्वावलोकन (Preview)
 
-मूल पथ: `/content/preview`
+बेस पथ: `/content/preview`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/data/:key` | सार्वजनिक | — | सबडोमेन कुंजी (टैब, लिंक, सेवाएं, उपदेश) द्वारा चर्च के लिए स्ट्रीमिंग पूर्वावलोकन डेटा लोड करें |
+| GET | `/data/:key` | Public | — | subdomain key द्वारा किसी चर्च का स्ट्रीमिंग पूर्वावलोकन डेटा लोड करें (tabs, links, services, sermons) |
 
-## गैलरी (स्टॉक फोटो)
+## गैलरी (स्टॉक फ़ोटो)
 
-मूल पथ: `/content/stock`
+बेस पथ: `/content/stock`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| POST | `/search` | सार्वजनिक | — | Pexels स्टॉक फोटो खोजें। बॉडी: `{ term: "church" }` |
+| POST | `/search` | Public | — | Pexels स्टॉक फ़ोटो खोजें। बॉडी: `{ term: "church" }` |
 
 ## PraiseCharts
 
-मूल पथ: `/content/praiseCharts`
+बेस पथ: `/content/praiseCharts`
 
-पूजा गीत खोज और शीट संगीत डाउनलोड के लिए PraiseCharts के साथ एकीकरण।
+पूजा गीत की खोज और शीट म्यूज़िक डाउनलोड के लिए PraiseCharts के साथ एकीकरण।
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/raw/:id` | JWT | — | गीत के लिए कच्चा PraiseCharts डेटा प्राप्त करें |
-| GET | `/hasAccount` | JWT | — | जांचें कि क्या उपयोगकर्ता के पास लिंक किया गया PraiseCharts खाता है |
+| GET | `/raw/:id` | JWT | — | किसी गीत का मूल PraiseCharts डेटा प्राप्त करें |
+| GET | `/hasAccount` | JWT | — | जाँचें कि क्या उपयोगकर्ता के पास लिंक किया हुआ PraiseCharts खाता है |
 | GET | `/search?q=` | JWT | — | PraiseCharts कैटलॉग खोजें |
-| GET | `/products/:id?keys=` | JWT | — | गीत के लिए उत्पाद प्राप्त करें (यदि प्रमाणीकृत है तो लाइब्रेरी से, अन्यथा कैटलॉग से) |
-| GET | `/arrangement/raw/:id?keys=` | JWT | — | लाइब्रेरी से कच्चा व्यवस्था डेटा प्राप्त करें |
-| GET | `/download?skus=&keys=&file_name=` | JWT | — | PraiseCharts से फाइल डाउनलोड करें (PDF या ZIP)। `{ redirectUrl }` लौटाता है |
-| GET | `/authUrl?returnUrl=` | सार्वजनिक | — | PraiseCharts के लिए OAuth प्राधिकरण URL प्राप्त करें |
-| GET | `/access?verifier=&token=&secret=` | JWT | — | OAuth सत्यापनकर्ता के लिए एक्सेस टोकन का आदान-प्रदान करें और उपयोगकर्ता सेटिंग्स में सहेजें |
+| GET | `/products/:id?keys=` | JWT | — | किसी गीत के उत्पाद प्राप्त करें (प्रमाणित होने पर लाइब्रेरी से, अन्यथा कैटलॉग से) |
+| GET | `/arrangement/raw/:id?keys=` | JWT | — | लाइब्रेरी से मूल व्यवस्था डेटा प्राप्त करें |
+| GET | `/download?skus=&keys=&file_name=` | JWT | — | PraiseCharts से एक फ़ाइल डाउनलोड करें (PDF या ZIP)। `{ redirectUrl }` लौटाता है |
+| GET | `/authUrl?returnUrl=` | Public | — | PraiseCharts के लिए OAuth प्राधिकरण URL प्राप्त करें |
+| GET | `/access?verifier=&token=&secret=` | JWT | — | OAuth verifier को access token के लिए बदलें और उपयोगकर्ता सेटिंग्स में सहेजें |
 | GET | `/library` | JWT | — | उपयोगकर्ता की PraiseCharts लाइब्रेरी ब्राउज़ करें |
 
-## समर्थन
+## सपोर्ट
 
-मूल पथ: `/content/support`
+बेस पथ: `/content/support`
 
-| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+| विधि | पथ | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| POST | `/createAudio` | सार्वजनिक | — | AWS Polly का उपयोग करके SSML को MP3 ऑडियो में परिवर्तित करें। बॉडी: `{ ssml: "<speak>...</speak>" }` |
+| POST | `/createAudio` | Public | — | AWS Polly का उपयोग करके SSML को MP3 ऑडियो में बदलें। बॉडी: `{ ssml: "<speak>...</speak>" }` |
 
-## संबंधित पृष्ठ
+## संबंधित पेज
 
-- [वेबसाइट बिल्डर आर्किटेक्चर](../../architecture/website-builder) -- कैसे पृष्ठ, अनुभाग, तत्व, पोस्ट, और पुनर्निर्देश ऐप्स में एक साथ फिट होते हैं
-- [सदस्यता एंडपॉइंट्स](./membership) -- लोग, चर्च, समूह, भूमिकाएं, अनुमति
-- [उपस्थिति एंडपॉइंट्स](./attendance) -- सेवा और दौरा ट्रैकिंग
-- [प्रमाणीकरण और अनुमतियां](./authentication) -- लॉगिन प्रवाह, JWT, अनुमति मॉडल
-- [मॉड्यूल संरचना](../module-structure) -- कोड संगठन पैटर्न
+- [Website Builder Architecture](../../architecture/website-builder) -- पेज, सेक्शन, एलिमेंट, पोस्ट और रीडायरेक्ट सभी ऐप्स में कैसे एक साथ जुड़ते हैं
+- [Membership Endpoints](./membership) -- लोग, चर्च, समूह, भूमिकाएँ, अनुमतियाँ
+- [Attendance Endpoints](./attendance) -- सेवा और विज़िट ट्रैकिंग
+- [Authentication & Permissions](./authentication) -- लॉगिन फ़्लो, JWT, अनुमति मॉडल
+- [Module Structure](../module-structure) -- कोड संगठन पैटर्न

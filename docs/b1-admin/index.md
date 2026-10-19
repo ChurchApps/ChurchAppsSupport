@@ -29,6 +29,8 @@ The Dashboard is your B1 Admin home page (`/`). It is built around your church's
 - **Needs Attention** -- pending approvals and group join requests that require action
 - **My tasks** and **My Groups** -- your open tasks (add one with **Add Task**, or click **All tasks** for the full list) and the groups you belong to
 
+What the Dashboard shows depends on your [role](./settings/roles-permissions.md). For example, the link into the full plan only appears if you can open that plan (you edit plans, belong to the plan's ministry, or are serving on it), and the **All groups** link only appears if you can manage groups, view group members, or view people.
+
 :::tip
 Every section, including Sermons, Calendars, Mobile, and Settings, is in the [Jump menu](./introduction.md#getting-around-with-the-jump-menu) at the top-left of B1 Admin. Click it or press **Ctrl+K** (or **Cmd+K**), then browse or start typing.
 :::
@@ -38,7 +40,7 @@ Every section, including Sermons, Calendars, Mobile, and Settings, is in the [Ju
 - **[People](./people/)** - Manage your church directory, add members, bulk edit data, and browse by household or as a sortable table. Each person opens to one record page with their details on the left and summaries of attendance, giving, groups, notes and forms beside them
 - **[Groups](./groups/)** - Create and organize church groups with join requests, member management, group email, personalized group texts, and printable contact rosters. Each group opens to one page with its actions on the left and member, session, calendar and health summaries beside them
 - **[Attendance](./attendance/)** - Set up campuses, service times, track named attendance with printable class roll sheets, see which classes still need attendance entered, log simple headcounts with trend reports, and give each service time a check-in schedule so self check-in opens and closes on its own
-- **[Donations](./donations/)** - Record giving in multiple currencies, manage funds, log a single gift from a person's record, print batches (one at a time or every batch in a date range) with fund subtotals, and generate statements printed with your church logo
+- **[Donations](./donations/)** - Record giving in multiple currencies, manage funds, log a single gift from a person's record, print batches (one at a time or every batch in a date range) with fund subtotals, close batches once they are counted, let counting teams enter gifts with the **Enter Donations** permission, and generate statements printed with your church logo
 - **[Serving](./serving/)** - Coordinate volunteers, create service plans (or copy one forward weekly for up to 12 weeks), send reminders by push, email or text, text everyone scheduled with **Text Volunteers**, manage tasks, and move people through step-by-step workflows that can send emails and texts automatically
 - **[Forms](./forms/)** - Build custom forms for registrations and data collection
 - **[Reports](./reports/)** - View birthday, attendance, and donation reports

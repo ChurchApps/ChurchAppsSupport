@@ -1,48 +1,48 @@
 ---
-title: "Membership Endpoints"
+title: "मेंबरशिप एंडपॉइंट्स"
 ---
 
-# Membership Endpoints
+# मेंबरशिप एंडपॉइंट्स
 
 <div class="article-intro">
 
-Membership module लोगों, churches, groups, households, roles, permissions, forms, और settings को प्रबंधित करता है। यह सबसे बड़ा module है और बाकी सभी modules के लिए मुख्य पहचान और authorization layer प्रदान करता है।
+मेंबरशिप मॉड्यूल लोगों, चर्चों, समूहों, परिवारों, भूमिकाओं, अनुमतियों, फ़ॉर्मों और सेटिंग्स का प्रबंधन करता है। यह सबसे बड़ा मॉड्यूल है और बाकी सभी मॉड्यूल के लिए मुख्य पहचान और प्राधिकरण की परत प्रदान करता है।
 
 </div>
 
-**Base path:** `/membership`
+**आधार पथ:** `/membership`
 
-## People
+## लोग
 
-Base path: `/membership/people`
+आधार पथ: `/membership/people`
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | People.View या Member | church के सभी लोगों की सूची |
-| GET | `/:id` | JWT | People.View या own record | ID द्वारा एक व्यक्ति प्राप्त करें (form submissions सहित) |
-| GET | `/ids?ids=` | JWT | People.View या Member | comma-separated IDs द्वारा कई लोग प्राप्त करें |
-| GET | `/basic?ids=` | JWT | — | कई लोगों की basic जानकारी (केवल नाम) प्राप्त करें |
-| GET | `/names?ids=` | JWT | कोई भी church permission | caller के पास पहले से मौजूद comma-separated ids के लिए `[{ id, name: { display }, photo }]`, ताकि People.View के बिना roles (donations, attendance) लोगों को label कर सकें। कोई search नहीं, कोई directory filter नहीं |
-| POST | `/names` | JWT | कोई भी church permission | `GET /names` के समान। Body: `{ peopleIds }` (या `{ ids }`) |
-| GET | `/recent` | JWT | People.View या Member | हाल में जोड़े गए लोग |
-| GET | `/search?term=&email=` | JWT | People.View या Member | नाम या email से लोगों को खोजें |
-| GET | `/search/phone?number=` | JWT | People.View या Member | phone number से खोजें |
-| GET | `/search/group?groupId=` | JWT | People.View या Member | किसी विशिष्ट group के लोग प्राप्त करें |
-| GET | `/household/:householdId` | JWT | — | किसी household के सभी लोग प्राप्त करें |
-| GET | `/attendance` | JWT | People.Edit | filters (campusId, serviceId, serviceTimeId, groupId, categoryName, startDate, endDate) के साथ attendees लोड करें |
-| GET | `/timeline?personIds=&groupIds=` | JWT | — | लोगों और groups के लिए timeline डेटा लोड करें |
-| GET | `/directory/:id` | JWT | — | directory view के लिए व्यक्ति प्राप्त करें (visibility preferences का सम्मान करता है) |
-| GET | `/claim/:churchId` | JWT | — | किसी church में वर्तमान user के लिए एक person record claim करें |
-| POST | `/` | JWT | People.Edit या EditSelf | लोग बनाएं या अपडेट करें (batch) |
-| POST | `/search` | JWT | People.View या Member | लोगों को खोजें (POST variant) |
-| POST | `/advancedSearch` | JWT | People.View या Member | बहु-शर्त खोज (age, birthMonth, membershipStatus, आदि) |
-| POST | `/loadOrCreate` | Public | — | email द्वारा व्यक्ति खोजें या बनाएं। Body: `{ churchId, email, firstName, lastName }` |
-| POST | `/household/:householdId` | JWT | People.Edit | household member assignments अपडेट करें |
-| POST | `/public/email` | Public | — | किसी व्यक्ति को email भेजें। Body: `{ churchId, personId, subject, body, appName }` |
-| POST | `/apiEmails` | Internal | — | IDs द्वारा व्यक्तियों के emails लोड करें (server-to-server, jwtSecret आवश्यक) |
-| DELETE | `/:id` | JWT | People.Edit | किसी व्यक्ति को हटाएं |
+| GET | `/` | JWT | People.View or Member | चर्च के सभी लोगों की सूची |
+| GET | `/:id` | JWT | People.View or own record | ID से व्यक्ति प्राप्त करें (फ़ॉर्म सबमिशन सहित) |
+| GET | `/ids?ids=` | JWT | People.View or Member | अल्पविराम से अलग की गई IDs से कई लोग प्राप्त करें |
+| GET | `/basic?ids=` | JWT | — | कई लोगों की बुनियादी जानकारी (केवल नाम) प्राप्त करें |
+| GET | `/names?ids=` | JWT | Any church permission | `[{ id, name: { display, first, last }, photo }]`, अल्पविराम से अलग की गई उन IDs के लिए जिन तक कॉलर की पहुँच है, पहले अंतिम नाम और फिर पहले नाम के अनुसार क्रमबद्ध। इससे बिना People.View वाली भूमिकाएँ (दान, उपस्थिति) लोगों के नाम दिखा सकती हैं। कोई खोज या डायरेक्टरी फ़िल्टर नहीं |
+| POST | `/names` | JWT | Any church permission | `GET /names` के समान। बॉडी: `{ peopleIds }` (या `{ ids }`) |
+| GET | `/recent` | JWT | People.View, Member, or People.ViewNames | हाल में जोड़े गए लोग। केवल People.ViewNames वाले कॉलर को बुनियादी मॉडल (`id`, `name.display`, `photo`, `membershipStatus`) मिलता है, और जिन लोगों ने ऑप्ट-आउट किया है उन्हें छोड़ दिया जाता है |
+| GET | `/search?term=&email=` | JWT | People.View, Member, or People.ViewNames | नाम या ईमेल से लोगों की खोज करें (अधिकतम 100, अंतिम नाम और फिर पहले नाम के अनुसार क्रमबद्ध)। केवल People.ViewNames वाले कॉलर को बुनियादी मॉडल के साथ नाम खोज मिलती है; `email` खोज `[]` लौटाती है |
+| GET | `/search/phone?number=` | JWT | People.View or Member | फ़ोन नंबर से खोजें |
+| GET | `/search/group?groupId=` | JWT | People.View or Member | किसी विशेष समूह के लोग प्राप्त करें |
+| GET | `/household/:householdId` | JWT | — | किसी परिवार के सभी लोग प्राप्त करें |
+| GET | `/attendance` | JWT | People.Edit | फ़िल्टर के साथ उपस्थित लोग लोड करें (campusId, serviceId, serviceTimeId, groupId, categoryName, startDate, endDate) |
+| GET | `/timeline?personIds=&groupIds=` | JWT | — | लोगों और समूहों के लिए टाइमलाइन डेटा लोड करें |
+| GET | `/directory/:id` | JWT | — | डायरेक्टरी दृश्य के लिए व्यक्ति प्राप्त करें (दृश्यता प्राथमिकताओं का पालन करता है) |
+| GET | `/claim/:churchId` | JWT | — | किसी चर्च में वर्तमान उपयोगकर्ता के लिए व्यक्ति रिकॉर्ड का दावा करें |
+| POST | `/` | JWT | People.Edit or EditSelf | लोगों को बनाएँ या अपडेट करें (बैच में) |
+| POST | `/search` | JWT | People.View, Member, or People.ViewNames | लोगों की खोज (POST संस्करण)। बॉडी: `{ term }` या `{ email }`; वही केवल-नाम नियम जो `GET /search` पर लागू होते हैं |
+| POST | `/advancedSearch` | JWT | People.View or Member | कई शर्तों वाली खोज (आयु, birthMonth, membershipStatus, आदि) |
+| POST | `/loadOrCreate` | Public | — | ईमेल से व्यक्ति खोजें या बनाएँ। बॉडी: `{ churchId, email, firstName, lastName }` |
+| POST | `/household/:householdId` | JWT | People.Edit | परिवार के सदस्यों की असाइनमेंट अपडेट करें |
+| POST | `/public/email` | Public | — | किसी व्यक्ति को ईमेल भेजें। बॉडी: `{ churchId, personId, subject, body, appName }` |
+| POST | `/apiEmails` | Internal | — | IDs द्वारा व्यक्तियों के ईमेल लोड करें (सर्वर-से-सर्वर, jwtSecret आवश्यक) |
+| DELETE | `/:id` | JWT | People.Edit | किसी व्यक्ति को हटाएँ |
 
-### Example: लोगों को खोजना
+### उदाहरण: लोगों की खोज
 
 ```
 GET /membership/people/search?term=John
@@ -60,7 +60,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-### Example: व्यक्ति बनाना
+### उदाहरण: एक व्यक्ति बनाएँ
 
 ```
 POST /membership/people
@@ -69,272 +69,274 @@ Authorization: Bearer <token>
 [{ "firstName": "Jane", "lastName": "Doe", "contactInfo": { "email": "jane@example.com" } }]
 ```
 
-## Users
+## उपयोगकर्ता {#users}
 
-Base path: `/membership/users`
+आधार पथ: `/membership/users`
 
-login, registration, और password management endpoints के लिए [Authentication & Permissions](./authentication) देखें।
+लॉगिन, पंजीकरण और पासवर्ड प्रबंधन एंडपॉइंट्स के लिए देखें [प्रमाणीकरण और अनुमतियाँ](./authentication)।
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| POST | `/login` | Public | — | log in करें (email/password, JWT refresh, या authGuid) |
-| POST | `/register` | Public | — | एक नया user register करें |
-| POST | `/forgot` | Public | — | password reset email भेजें |
-| POST | `/setPasswordGuid` | Public | — | email link के auth GUID से password सेट करें |
-| POST | `/verifyCredentials` | Public | — | email/password सत्यापित करें और संबंधित churches लौटाएं |
-| POST | `/loadOrCreate` | JWT | — | email/userId द्वारा user खोजें या बनाएं |
-| POST | `/setDisplayName` | JWT | — | user का पहला और अंतिम नाम अपडेट करें |
-| POST | `/updateEmail` | JWT | — | user का email address बदलें |
-| POST | `/updatePassword` | JWT | — | user का password बदलें (न्यूनतम 6 अक्षर) |
-| POST | `/updateOptedOut` | JWT | — | किसी व्यक्ति की opted-out स्थिति सेट करें |
-| POST | `/sendInviteEmail` | JWT | People.Edit | इस church के किसी व्यक्ति को invite email भेजें (`email`, `personName`, `contextName`)। जिस व्यक्ति का account नहीं है उसके लिए बटन **Sign Up** और मौजूदा user के लिए **Log In** लिखा होता है। जिस user ने कभी log in नहीं किया, उसे इसके बजाय 7 दिनों में समाप्त होने वाला **Set Your Password** link मिलता है। church की daily email limit में गिना जाता है (पहुंचने पर `429`) |
-| GET | `/search?term=` | JWT | Server.Admin | नाम/email से सभी users खोजें |
-| DELETE | `/` | JWT | — | वर्तमान user account हटाएं |
+| POST | `/login` | Public | — | लॉग इन करें (ईमेल/पासवर्ड, JWT रीफ़्रेश, या authGuid) |
+| POST | `/register` | Public | — | नया उपयोगकर्ता पंजीकृत करें |
+| POST | `/forgot` | Public | — | पासवर्ड रीसेट ईमेल भेजें |
+| POST | `/setPasswordGuid` | Public | — | ईमेल लिंक के auth GUID से पासवर्ड सेट करें |
+| POST | `/verifyCredentials` | Public | — | ईमेल/पासवर्ड सत्यापित करें और संबंधित चर्च लौटाएँ |
+| POST | `/loadOrCreate` | JWT | — | ईमेल/userId द्वारा उपयोगकर्ता खोजें या बनाएँ |
+| POST | `/setDisplayName` | JWT | — | उपयोगकर्ता का पहला और अंतिम नाम अपडेट करें |
+| POST | `/updateEmail` | JWT | — | उपयोगकर्ता का ईमेल पता बदलें |
+| POST | `/updatePassword` | JWT | — | उपयोगकर्ता का पासवर्ड बदलें (कम से कम 6 अक्षर) |
+| POST | `/updateOptedOut` | JWT | — | किसी व्यक्ति की ऑप्ट-आउट स्थिति सेट करें |
+| POST | `/sendInviteEmail` | JWT | People.Edit | इस चर्च के किसी व्यक्ति को invite ईमेल भेजें (`email`, `personName`, `contextName`)। बटन उस व्यक्ति के लिए **साइन अप** दिखाता है जिसका कोई खाता नहीं है, और मौजूदा उपयोगकर्ता के लिए **लॉग इन**। जिस उपयोगकर्ता ने कभी लॉग इन नहीं किया, उसे इसके बजाय 7 दिनों में समाप्त होने वाला **अपना पासवर्ड सेट करें** लिंक मिलता है। चर्च की दैनिक ईमेल सीमा में गिना जाता है (सीमा पूरी होने पर `429`) |
+| GET | `/search?term=` | JWT | Server.Admin | नाम/ईमेल से सभी उपयोगकर्ता खोजें |
+| DELETE | `/` | JWT | — | वर्तमान उपयोगकर्ता खाता हटाएँ |
 
-## Churches
+## चर्च
 
-Base path: `/membership/churches`
+आधार पथ: `/membership/churches`
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | वर्तमान user के लिए सभी churches लोड करें |
-| GET | `/:id` | JWT | — | ID द्वारा church प्राप्त करें |
-| GET | `/:id/getDomainAdmin` | JWT | — | किसी church का domain admin user प्राप्त करें |
-| GET | `/:id/impersonate` | JWT | Server.Admin | किसी church का impersonate करें (केवल server admin) |
-| GET | `/all?term=` | JWT | Server.Admin | सभी churches खोजें (admin) |
-| GET | `/search/?name=` | Public | — | नाम से churches खोजें |
-| GET | `/lookup/?subDomain=&id=` | Public | — | subdomain या ID द्वारा church खोजें |
-| POST | `/` | JWT | Settings.Edit | church विवरण अपडेट करें |
-| POST | `/add` | JWT | — | नया church register करें। आवश्यक fields: name, address1, city, state, zip, country |
-| POST | `/search` | Public | — | नाम से churches खोजें (POST variant) |
-| POST | `/select` | JWT | — | church चुनें/बदलें। Body: `{ churchId }` या `{ subDomain }` |
-| POST | `/:id/archive` | JWT | Server.Admin | church archive या unarchive करें |
-| POST | `/byIds` | Public | — | IDs द्वारा कई churches लोड करें |
-| DELETE | `/deleteAbandoned` | JWT | Server.Admin | 7+ दिनों से छोड़े गए churches हटाएं |
+| GET | `/` | JWT | — | वर्तमान उपयोगकर्ता के सभी चर्च लोड करें |
+| GET | `/:id` | JWT | — | ID से चर्च प्राप्त करें |
+| GET | `/:id/getDomainAdmin` | JWT | — | किसी चर्च का डोमेन एडमिन उपयोगकर्ता प्राप्त करें |
+| GET | `/:id/impersonate` | JWT | Server.Admin | किसी चर्च का प्रतिरूप बनें (केवल सर्वर एडमिन) |
+| GET | `/all?term=` | JWT | Server.Admin | सभी चर्च खोजें (एडमिन) |
+| GET | `/search/?name=` | Public | — | नाम से चर्च खोजें |
+| GET | `/lookup/?subDomain=&id=` | Public | — | सबडोमेन या ID से चर्च खोजें |
+| POST | `/` | JWT | Settings.Edit | चर्च का विवरण अपडेट करें |
+| POST | `/add` | JWT | — | नया चर्च पंजीकृत करें। आवश्यक फ़ील्ड: name, address1, city, state, zip, country |
+| POST | `/search` | Public | — | नाम से चर्च खोजें (POST संस्करण) |
+| POST | `/select` | JWT | — | चर्च चुनें/बदलें। बॉडी: `{ churchId }` या `{ subDomain }` |
+| POST | `/:id/archive` | JWT | Server.Admin | चर्च को संग्रहीत या असंग्रहीत करें |
+| POST | `/byIds` | Public | — | IDs द्वारा कई चर्च लोड करें |
+| DELETE | `/deleteAbandoned` | JWT | Server.Admin | 7 या अधिक दिनों से छोड़े गए चर्च हटाएँ |
 
-## Groups
+## समूह
 
-Base path: `/membership/groups`
+आधार पथ: `/membership/groups`
 
-standard CRUD का विस्तार (base class से GET `/`, GET `/:id`)।
+बेस क्लास से मानक CRUD का विस्तार करता है (GET `/`, GET `/:id`)।
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | सभी groups की सूची |
-| GET | `/:id` | JWT | — | ID द्वारा group प्राप्त करें |
-| GET | `/search?campusId=&serviceId=&serviceTimeId=` | JWT | — | service filters द्वारा groups खोजें |
-| GET | `/my` | JWT | — | वर्तमान user के groups प्राप्त करें |
-| GET | `/my/:tag` | JWT | — | वर्तमान user के groups को tag द्वारा filter करके प्राप्त करें |
-| GET | `/tag/:tag` | JWT | — | किसी विशिष्ट tag वाले सभी groups प्राप्त करें |
-| GET | `/public/:churchId/:id` | Public | — | church और ID द्वारा एक सार्वजनिक group प्राप्त करें |
-| GET | `/public/:churchId/tag/:tag` | Public | — | tag द्वारा सार्वजनिक groups प्राप्त करें |
-| GET | `/public/:churchId/label?label=` | Public | — | label द्वारा सार्वजनिक groups प्राप्त करें |
-| GET | `/public/:churchId/slug/:slug` | Public | — | slug द्वारा एक सार्वजनिक group प्राप्त करें |
-| POST | `/` | JWT | Groups.Edit | groups बनाएं या अपडेट करें (slug अपने-आप बनाता है) |
-| DELETE | `/:id` | JWT | Groups.Edit | group हटाएं (ministry groups के child teams भी हटाता है) |
+| GET | `/` | JWT | — | सभी समूहों की सूची |
+| GET | `/:id` | JWT | — | ID से समूह प्राप्त करें |
+| GET | `/search?campusId=&serviceId=&serviceTimeId=` | JWT | — | सेवा फ़िल्टर से समूह खोजें |
+| GET | `/my` | JWT | — | वर्तमान उपयोगकर्ता के समूह प्राप्त करें |
+| GET | `/my/:tag` | JWT | — | वर्तमान उपयोगकर्ता के समूह, टैग के अनुसार फ़िल्टर करके प्राप्त करें |
+| GET | `/tag/:tag` | JWT | — | किसी विशेष टैग वाले सभी समूह प्राप्त करें |
+| GET | `/public/:churchId/:id` | Public | — | चर्च और ID से सार्वजनिक समूह प्राप्त करें |
+| GET | `/public/:churchId/tag/:tag` | Public | — | टैग से सार्वजनिक समूह प्राप्त करें |
+| GET | `/public/:churchId/label?label=` | Public | — | लेबल से सार्वजनिक समूह प्राप्त करें |
+| GET | `/public/:churchId/slug/:slug` | Public | — | slug से सार्वजनिक समूह प्राप्त करें |
+| POST | `/` | JWT | Groups.Edit | समूह बनाएँ या अपडेट करें (स्वतः slug बनाता है) |
+| DELETE | `/:id` | JWT | Groups.Edit | समूह हटाएँ (मिनिस्ट्री समूहों के चाइल्ड टीम भी हटाता है) |
 
-## Group Members
+## समूह के सदस्य
 
-Base path: `/membership/groupmembers`
+आधार पथ: `/membership/groupmembers`
 
-standard CRUD का विस्तार (base class से GET `/:id`, DELETE `/:id`)।
+बेस क्लास से मानक CRUD का विस्तार करता है (GET `/:id`, DELETE `/:id`)।
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | GroupMembers.View | ID द्वारा group member प्राप्त करें |
-| GET | `/` | JWT | GroupMembers.View* | group members की सूची। `?groupId=`, `?groupIds=`, या `?personId=` से filter करें। *यदि user group में है या अपना personId पूछ रहा है तो भी अनुमति है |
-| GET | `/my` | JWT | — | वर्तमान user की group memberships प्राप्त करें |
-| GET | `/basic/:groupId` | JWT | — | किसी group की basic member सूची प्राप्त करें |
-| GET | `/public/leaders/:churchId/:groupId` | Public | — | group leaders प्राप्त करें (सार्वजनिक) |
-| GET | `/public/:churchId/:groupId` | Public | — | group का सार्वजनिक roster प्राप्त करें (न्यूनतम fields: `personId`, `displayName`, `leader`, photo)। केवल तभी जब group `publicRoster` के माध्यम से opt in करे; website builder के `staffGrid` element को सपोर्ट करता है |
-| POST | `/` | JWT | GroupMembers.Edit | group members जोड़ें या अपडेट करें |
-| DELETE | `/:id` | JWT | GroupMembers.View | group member हटाएं |
+| GET | `/:id` | JWT | GroupMembers.View | ID से समूह सदस्य प्राप्त करें |
+| GET | `/` | JWT | GroupMembers.View* | समूह सदस्यों की सूची। `?groupId=`, `?groupIds=`, या `?personId=` से फ़िल्टर करें। *यदि उपयोगकर्ता समूह में है या अपना personId पूछ रहा है तो भी अनुमति है |
+| GET | `/my` | JWT | — | वर्तमान उपयोगकर्ता की समूह सदस्यताएँ प्राप्त करें |
+| GET | `/basic/:groupId` | JWT | — | किसी समूह की बुनियादी सदस्य सूची प्राप्त करें |
+| GET | `/public/leaders/:churchId/:groupId` | Public | — | समूह के नेता प्राप्त करें (सार्वजनिक) |
+| GET | `/public/:churchId/:groupId` | Public | — | समूह की सार्वजनिक रोस्टर प्राप्त करें (न्यूनतम फ़ील्ड: `personId`, `displayName`, `leader`, फ़ोटो)। केवल तभी जब समूह `publicRoster` के माध्यम से सहमति दे; वेबसाइट बिल्डर के `staffGrid` एलिमेंट को शक्ति देता है |
+| POST | `/` | JWT | GroupMembers.Edit | समूह सदस्य जोड़ें या अपडेट करें |
+| DELETE | `/:id` | JWT | GroupMembers.View | समूह सदस्य हटाएँ |
 
-## Households
+## परिवार
 
-Base path: `/membership/households`
+आधार पथ: `/membership/households`
 
-standard CRUD controller।
+मानक CRUD कंट्रोलर।
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | सभी households की सूची |
-| GET | `/:id` | JWT | — | ID द्वारा household प्राप्त करें |
-| POST | `/` | JWT | People.Edit | households बनाएं या अपडेट करें |
-| DELETE | `/:id` | JWT | People.Edit | household हटाएं |
+| GET | `/` | JWT | — | सभी परिवारों की सूची |
+| GET | `/:id` | JWT | — | ID से परिवार प्राप्त करें |
+| POST | `/` | JWT | People.Edit | परिवार बनाएँ या अपडेट करें |
+| DELETE | `/:id` | JWT | People.Edit | परिवार हटाएँ |
 
-## Roles
+## भूमिकाएँ
 
-Base path: `/membership/roles`
+आधार पथ: `/membership/roles`
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | Roles.View | ID द्वारा role प्राप्त करें |
-| GET | `/church/:churchId` | JWT | Roles.View | किसी church के सभी roles प्राप्त करें |
-| POST | `/` | JWT | Roles.Edit | roles बनाएं या अपडेट करें |
-| DELETE | `/:id` | JWT | Roles.Edit | role हटाएं (उसकी permissions और members भी हटाता है) |
+| GET | `/:id` | JWT | Roles.View | ID से भूमिका प्राप्त करें |
+| GET | `/church/:churchId` | JWT | Roles.View | किसी चर्च की सभी भूमिकाएँ प्राप्त करें |
+| POST | `/` | JWT | Roles.Edit | भूमिकाएँ बनाएँ या अपडेट करें |
+| DELETE | `/:id` | JWT | Roles.Edit | भूमिका हटाएँ (उसकी अनुमतियाँ और सदस्य भी हटाता है) |
 
-## Role Members
+## भूमिका सदस्य
 
-Base path: `/membership/rolemembers`
+आधार पथ: `/membership/rolemembers`
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/roles/:id` | JWT | Roles.View | किसी role के members प्राप्त करें। user विवरण शामिल करने के लिए `?include=users` जोड़ें |
-| POST | `/` | JWT | Roles.Edit | किसी role में members जोड़ें (यदि email मौजूद नहीं है तो user बनाता है) |
-| DELETE | `/:id` | JWT | Roles.View | role member हटाएं |
-| DELETE | `/self/:churchId/:userId` | JWT | — | स्वयं को किसी church से हटाएं |
+| GET | `/roles/:id` | JWT | Roles.View | किसी भूमिका के सदस्य प्राप्त करें। उपयोगकर्ता विवरण शामिल करने के लिए `?include=users` जोड़ें |
+| POST | `/` | JWT | Roles.Edit | भूमिका में सदस्य जोड़ें (यदि ईमेल मौजूद नहीं है तो उपयोगकर्ता बनाता है) |
+| DELETE | `/:id` | JWT | Roles.View | भूमिका सदस्य हटाएँ |
+| DELETE | `/self/:churchId/:userId` | JWT | — | स्वयं को चर्च से हटाएँ |
 
-## Role Permissions
+## भूमिका अनुमतियाँ
 
-Base path: `/membership/rolepermissions`
+आधार पथ: `/membership/rolepermissions`
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/roles/:id` | JWT | Roles.View | किसी role की permissions प्राप्त करें ("Everyone" role के लिए ID के रूप में `null` उपयोग करें) |
-| POST | `/` | JWT | Roles.Edit | role permissions बनाएं या अपडेट करें |
-| DELETE | `/:id` | JWT | Roles.Edit | role permission हटाएं |
+| GET | `/roles/:id` | JWT | Roles.View | किसी भूमिका की अनुमतियाँ प्राप्त करें ("Everyone" भूमिका के लिए ID के स्थान पर `null` का उपयोग करें) |
+| POST | `/` | JWT | Roles.Edit | भूमिका अनुमतियाँ बनाएँ या अपडेट करें |
+| DELETE | `/:id` | JWT | Roles.Edit | भूमिका अनुमति हटाएँ |
 
-## Permissions
+## अनुमतियाँ
 
-Base path: `/membership/permissions`
+आधार पथ: `/membership/permissions`
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | उपलब्ध permissions की पूरी सूची प्राप्त करें |
+| GET | `/` | JWT | — | उपलब्ध अनुमतियों की पूरी सूची प्राप्त करें |
 
-## Forms
+हर प्रविष्टि में `apiName`, `section` (सामग्री का प्रकार), `action`, और `displaySection` / `displayAction` लेबल होते हैं, जिन्हें B1Admin का भूमिका संपादक दिखाता है। हाल की जोड़ें: `MembershipApi` / `People` / `View Names` (**View People Names Only**, People और Groups के अंतर्गत) और `GivingApi` / `Donations` / `Enter` (**Enter Donations**, Donations के अंतर्गत; देखें [दान बैच](./giving.md#donation-batches))।
 
-Base path: `/membership/forms`
+## फ़ॉर्म
 
-| Method | Path | Auth | Permission | Description |
+आधार पथ: `/membership/forms`
+
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Forms.Admin या Forms.Edit | सभी forms की सूची (admin सभी देखता है; editors को assigned + non-member forms दिखते हैं) |
-| GET | `/:id` | JWT | Form access | ID द्वारा एक form प्राप्त करें |
-| GET | `/archived` | JWT | Forms.Admin या Forms.Edit | archived forms की सूची |
-| GET | `/standalone/:id?churchId=` | JWT | — | एक standalone form प्राप्त करें (restricted forms के लिए auth आवश्यक) |
-| POST | `/` | JWT | Forms.Admin या Forms.Edit | forms बनाएं या अपडेट करें |
-| DELETE | `/:id` | JWT | Form access | form हटाएं |
+| GET | `/` | JWT | Forms.Admin or Forms.Edit | सभी फ़ॉर्म की सूची (एडमिन सभी देखता है; संपादक असाइन किए गए + गैर-सदस्य फ़ॉर्म देखते हैं) |
+| GET | `/:id` | JWT | Form access | ID से फ़ॉर्म प्राप्त करें |
+| GET | `/archived` | JWT | Forms.Admin or Forms.Edit | संग्रहीत फ़ॉर्म की सूची |
+| GET | `/standalone/:id?churchId=` | JWT | — | स्वतंत्र फ़ॉर्म प्राप्त करें (प्रतिबंधित फ़ॉर्म के लिए प्रमाणीकरण आवश्यक) |
+| POST | `/` | JWT | Forms.Admin or Forms.Edit | फ़ॉर्म बनाएँ या अपडेट करें |
+| DELETE | `/:id` | JWT | Form access | फ़ॉर्म हटाएँ |
 
-## Form Submissions
+## फ़ॉर्म सबमिशन
 
-Base path: `/membership/formsubmissions`
+आधार पथ: `/membership/formsubmissions`
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Forms.Admin या Forms.Edit | submissions की सूची। `?personId=` या `?formId=` से filter करें |
-| GET | `/:id` | JWT | Forms.Admin या Forms.Edit | ID द्वारा submission प्राप्त करें। `?include=form,questions,answers` जोड़ें |
-| GET | `/formId/:formId` | JWT | Form access | किसी form के सभी submissions प्राप्त करें (form, questions, answers सहित) |
-| POST | `/` | JWT | — | form answers submit करें (restricted/unrestricted forms संभालता है, email notifications भेजता है)। जब form में `autoCreatePerson` हो, तो email से Guest व्यक्ति खोजता या बनाता है और submission को जोड़ता है; जब `followUpSubject`/`followUpBody` सेट हों, तो submitter को template वाला follow-up email भेजता है |
-| DELETE | `/:id` | JWT | Forms.Admin या Forms.Edit | submission और उसके answers हटाएं |
+| GET | `/` | JWT | Forms.Admin or Forms.Edit | सबमिशन की सूची। `?personId=` या `?formId=` से फ़िल्टर करें |
+| GET | `/:id` | JWT | Forms.Admin or Forms.Edit | ID से सबमिशन प्राप्त करें। `?include=form,questions,answers` जोड़ें |
+| GET | `/formId/:formId` | JWT | Form access | किसी फ़ॉर्म के सभी सबमिशन प्राप्त करें (फ़ॉर्म, प्रश्न, उत्तर शामिल) |
+| POST | `/` | JWT | — | फ़ॉर्म के उत्तर सबमिट करें (प्रतिबंधित/अप्रतिबंधित फ़ॉर्म संभालता है, ईमेल सूचनाएँ भेजता है)। जब फ़ॉर्म में `autoCreatePerson` हो, तो ईमेल से Guest व्यक्ति खोजता या बनाता है और सबमिशन से जोड़ता है; जब `followUpSubject`/`followUpBody` सेट हों, तो सबमिट करने वाले को टेम्पलेट वाला फ़ॉलो-अप ईमेल भेजता है |
+| DELETE | `/:id` | JWT | Forms.Admin or Forms.Edit | सबमिशन और उसके उत्तर हटाएँ |
 
-## Questions
+## प्रश्न
 
-Base path: `/membership/questions`
+आधार पथ: `/membership/questions`
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Form access | किसी form के questions की सूची। `?formId=` आवश्यक |
-| GET | `/:id` | JWT | Form access | ID द्वारा एक question प्राप्त करें |
-| GET | `/unrestricted?formId=` | JWT | — | unrestricted form के questions प्राप्त करें |
-| GET | `/sort/:id/up` | JWT | — | sort order में question को ऊपर ले जाएं |
-| GET | `/sort/:id/down` | JWT | — | sort order में question को नीचे ले जाएं |
-| POST | `/` | JWT | Form access | questions बनाएं या अपडेट करें (sort order अपने-आप देता है) |
-| DELETE | `/:id?formId=` | JWT | Form access | question हटाएं |
+| GET | `/` | JWT | Form access | किसी फ़ॉर्म के प्रश्नों की सूची। `?formId=` आवश्यक |
+| GET | `/:id` | JWT | Form access | ID से प्रश्न प्राप्त करें |
+| GET | `/unrestricted?formId=` | JWT | — | अप्रतिबंधित फ़ॉर्म के प्रश्न प्राप्त करें |
+| GET | `/sort/:id/up` | JWT | — | प्रश्न को क्रम में ऊपर ले जाएँ |
+| GET | `/sort/:id/down` | JWT | — | प्रश्न को क्रम में नीचे ले जाएँ |
+| POST | `/` | JWT | Form access | प्रश्न बनाएँ या अपडेट करें (क्रम स्वतः निर्धारित होता है) |
+| DELETE | `/:id?formId=` | JWT | Form access | प्रश्न हटाएँ |
 
-## Answers
+## उत्तर
 
-Base path: `/membership/answers`
+आधार पथ: `/membership/answers`
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Forms.Admin या Forms.Edit | answers की सूची। `?formSubmissionId=` से filter करें |
-| POST | `/` | JWT | Forms.Admin या Forms.Edit | answers बनाएं या अपडेट करें |
+| GET | `/` | JWT | Forms.Admin or Forms.Edit | उत्तरों की सूची। `?formSubmissionId=` से फ़िल्टर करें |
+| POST | `/` | JWT | Forms.Admin or Forms.Edit | उत्तर बनाएँ या अपडेट करें |
 
-## Member Permissions
+## सदस्य अनुमतियाँ
 
-Base path: `/membership/memberpermissions`
+आधार पथ: `/membership/memberpermissions`
 
-हर member की विशिष्ट forms तक पहुंच नियंत्रित करता है।
+यह हर सदस्य की विशिष्ट फ़ॉर्म तक पहुँच नियंत्रित करता है।
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | Form access | ID द्वारा member permission प्राप्त करें |
-| GET | `/member/:id` | JWT | Form access | किसी member की सभी form permissions प्राप्त करें |
-| GET | `/form/:id` | JWT | Form access | किसी form की सभी member permissions प्राप्त करें |
-| GET | `/form/:id/my` | JWT | Form access | किसी form के लिए वर्तमान user की permission प्राप्त करें |
-| POST | `/` | JWT | Form access | member permissions बनाएं या अपडेट करें |
-| DELETE | `/:id?formId=` | JWT | Form access | member permission हटाएं |
-| DELETE | `/member/:id?formId=` | JWT | Form access | किसी form पर किसी member की सभी permissions हटाएं |
+| GET | `/:id` | JWT | Form access | ID से सदस्य अनुमति प्राप्त करें |
+| GET | `/member/:id` | JWT | Form access | किसी सदस्य की सभी फ़ॉर्म अनुमतियाँ प्राप्त करें |
+| GET | `/form/:id` | JWT | Form access | किसी फ़ॉर्म की सभी सदस्य अनुमतियाँ प्राप्त करें |
+| GET | `/form/:id/my` | JWT | Form access | किसी फ़ॉर्म के लिए वर्तमान उपयोगकर्ता की अनुमति प्राप्त करें |
+| POST | `/` | JWT | Form access | सदस्य अनुमतियाँ बनाएँ या अपडेट करें |
+| DELETE | `/:id?formId=` | JWT | Form access | सदस्य अनुमति हटाएँ |
+| DELETE | `/member/:id?formId=` | JWT | Form access | किसी फ़ॉर्म पर किसी सदस्य की सभी अनुमतियाँ हटाएँ |
 
-## Settings
+## सेटिंग्स
 
-Base path: `/membership/settings`
+आधार पथ: `/membership/settings`
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Settings.Edit | church की सभी settings प्राप्त करें |
-| GET | `/public/:churchId` | Public | — | किसी church की public settings प्राप्त करें |
-| POST | `/` | JWT | Settings.Edit | settings सहेजें (base64 image upload का समर्थन) |
+| GET | `/` | JWT | Settings.Edit | चर्च की सभी सेटिंग्स प्राप्त करें |
+| GET | `/public/:churchId` | Public | — | किसी चर्च की सार्वजनिक सेटिंग्स प्राप्त करें |
+| POST | `/` | JWT | Settings.Edit | सेटिंग्स सहेजें (base64 इमेज अपलोड समर्थित) |
 
-## Domains
+## डोमेन
 
-Base path: `/membership/domains`
+आधार पथ: `/membership/domains`
 
-standard CRUD का विस्तार (base class से GET `/:id`, GET `/`, DELETE `/:id`)।
+बेस क्लास से मानक CRUD का विस्तार करता है (GET `/:id`, GET `/`, DELETE `/:id`)।
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | सभी domains की सूची |
-| GET | `/:id` | JWT | — | ID द्वारा domain प्राप्त करें |
-| GET | `/lookup/:domainName` | JWT | — | नाम द्वारा domain खोजें |
-| GET | `/public/lookup/:domainName` | Public | — | नाम द्वारा सार्वजनिक domain खोज |
-| GET | `/health/check` | Public | — | जांचे न गए domains पर health check चलाएं |
-| POST | `/` | JWT | Settings.Edit | domains बनाएं या अपडेट करें (Caddy update ट्रिगर करता है) |
-| DELETE | `/:id` | JWT | Settings.Edit | domain हटाएं |
+| GET | `/` | JWT | — | सभी डोमेन की सूची |
+| GET | `/:id` | JWT | — | ID से डोमेन प्राप्त करें |
+| GET | `/lookup/:domainName` | JWT | — | नाम से डोमेन खोजें |
+| GET | `/public/lookup/:domainName` | Public | — | नाम से सार्वजनिक डोमेन खोज |
+| GET | `/health/check` | Public | — | जाँचे न गए डोमेन पर हेल्थ चेक चलाएँ |
+| POST | `/` | JWT | Settings.Edit | डोमेन बनाएँ या अपडेट करें (Caddy अपडेट शुरू करता है) |
+| DELETE | `/:id` | JWT | Settings.Edit | डोमेन हटाएँ |
 
-## User Church
+## उपयोगकर्ता-चर्च
 
-Base path: `/membership/userchurch`
+आधार पथ: `/membership/userchurch`
 
-users और churches के बीच संबंध प्रबंधित करता है।
+उपयोगकर्ताओं और चर्चों के बीच संबंध का प्रबंधन करता है।
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/userid/:userId` | JWT | — | user ID द्वारा user-church record प्राप्त करें |
-| GET | `/personid/:personId` | JWT | — | किसी व्यक्ति के linked user का email प्राप्त करें |
-| GET | `/user/:userId` | JWT | Server.Admin | किसी user के सभी churches लोड करें |
-| POST | `/` | JWT | — | user-church association बनाएं |
-| PATCH | `/:userId` | JWT | — | अंतिम access समय अपडेट करें और access लॉग करें |
-| DELETE | `/record/:userId/:churchId/:personId` | JWT | — | user-church record हटाएं |
+| GET | `/userid/:userId` | JWT | — | userId से उपयोगकर्ता-चर्च रिकॉर्ड प्राप्त करें |
+| GET | `/personid/:personId` | JWT | — | किसी व्यक्ति के जुड़े उपयोगकर्ता का ईमेल प्राप्त करें |
+| GET | `/user/:userId` | JWT | Server.Admin | किसी उपयोगकर्ता के सभी चर्च लोड करें |
+| POST | `/` | JWT | — | उपयोगकर्ता-चर्च संबंध बनाएँ |
+| PATCH | `/:userId` | JWT | — | अंतिम पहुँच समय अपडेट करें और पहुँच दर्ज करें |
+| DELETE | `/record/:userId/:churchId/:personId` | JWT | — | उपयोगकर्ता-चर्च रिकॉर्ड हटाएँ |
 
-## Visibility Preferences
+## दृश्यता प्राथमिकताएँ
 
-Base path: `/membership/visibilityPreferences`
+आधार पथ: `/membership/visibilityPreferences`
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| GET | `/my` | JWT | — | वर्तमान user की visibility preferences प्राप्त करें |
-| POST | `/` | JWT | — | visibility preferences सहेजें (address, phone, email visibility) |
+| GET | `/my` | JWT | — | वर्तमान उपयोगकर्ता की दृश्यता प्राथमिकताएँ प्राप्त करें |
+| POST | `/` | JWT | — | दृश्यता प्राथमिकताएँ सहेजें (पता, फ़ोन, ईमेल की दृश्यता) |
 
-## Query
+## क्वेरी
 
-Base path: `/membership/query`
+आधार पथ: `/membership/query`
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| POST | `/members` | JWT | — | AI का उपयोग करके प्राकृतिक भाषा में सदस्य खोज। Body: `{ text, subDomain, siteUrl }` |
+| POST | `/members` | JWT | — | AI का उपयोग करके प्राकृतिक भाषा में सदस्य खोज। बॉडी: `{ text, subDomain, siteUrl }` |
 
-## Client Errors
+## क्लाइंट त्रुटियाँ
 
-Base path: `/membership/clientErrors`
+आधार पथ: `/membership/clientErrors`
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | विवरण |
 |--------|------|------|------------|-------------|
-| POST | `/` | JWT | — | client-side त्रुटि लॉग करें |
+| POST | `/` | JWT | — | क्लाइंट-साइड त्रुटि दर्ज करें |
 
-## संबंधित पेज
+## संबंधित पृष्ठ
 
-- [Authentication & Permissions](./authentication) — Login flow, JWT, OAuth, permission model
-- [Attendance Endpoints](./attendance) — Service और visit tracking
-- [Module Structure](../module-structure) — Code organization patterns
+- [प्रमाणीकरण और अनुमतियाँ](./authentication) — लॉगिन प्रवाह, JWT, OAuth, अनुमति मॉडल
+- [उपस्थिति एंडपॉइंट्स](./attendance) — सेवा और विज़िट ट्रैकिंग
+- [मॉड्यूल संरचना](../module-structure) — कोड संगठन के पैटर्न

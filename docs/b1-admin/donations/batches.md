@@ -14,7 +14,7 @@ Batches group your donations together for easier tracking and reconciliation. A 
 <h4>Before You Begin</h4>
 
 - Make sure you have [set up your funds](funds.md) so they are available when recording donations
-- You will need access to the **Donations** section in B1 Admin
+- You will need **View Donation Summaries**, **Edit Donations**, or **Enter Donations** permission to see the Batches page (see [Who Can Change a Batch](#who-can-change-a-batch))
 
 </div>
 
@@ -26,6 +26,7 @@ When you navigate to **Donations > Batches**, you will see a list of your batche
 - **Date** -- the date of the collection
 - **Donations** -- the number of individual donations in the batch
 - **Total** -- the combined dollar amount
+- **Status** -- **Open** or **Closed** (see [Closing and Reopening a Batch](#closing-and-reopening-a-batch))
 
 Above the list, year buttons let you show only the batches from one year, or **All** batches. A one-line summary shows the number of batches, the number of gifts, and the total amount for the batches shown.
 
@@ -41,11 +42,39 @@ Your new batch appears in the list, ready for you to add donations.
 ## Working with Batches
 
 - **View donations** -- click a batch name to open it and see all the individual donations it contains. From there you can add, edit, or remove donations.
-- **Edit batch details** -- click the **Edit** button on a batch row to change its name or date.
+- **Edit batch details** -- click the **Edit** button on a batch row to change its name or date. Only people with **Edit Donations** can delete a batch.
 - **Sort** -- use the column headers to sort batches by name or date.
 - **Export** -- click **Export** at the top of the page to download the batches shown as a spreadsheet (CSV).
 - **Failed events** -- if your payment gateway has reported problems, a **Failed events** button (with the number of unresolved events) appears at the top of the page. Click it to show or hide the list of events below the batches.
 - **Import from Stripe** -- click **Import missing Stripe transactions** at the top of the page to open the [Stripe Import](stripe-import.md) tool.
+
+## Closing and Reopening a Batch
+
+Once a batch has been counted and deposited, close it so its donations stay exactly as they were when you closed it.
+
+1. Open the batch.
+2. Click **Close Batch** at the top of the page.
+
+The status chip next to the batch name changes from **Open** to **Closed**, the batch shows **Closed** in the **Status** column on the Batches page, and a notice at the top of the batch explains that it is closed. While a batch is closed, people with **Enter Donations** can still view it, but they cannot add, edit, or delete its donations or change the batch's name or date.
+
+To make changes again, open the batch and click **Reopen Batch**. New batches always start out open.
+
+:::info
+Only people with **Edit Donations** see the **Close Batch** and **Reopen Batch** buttons. They can also still change donations in a closed batch if a correction is needed, without reopening it.
+:::
+
+## Who Can Change a Batch
+
+Two [role permissions](../settings/roles-permissions.md) let someone work with batches:
+
+- **Edit Donations** -- full access: add and delete batches, close and reopen them, and add, edit, or delete any donation, whether the batch is open or closed.
+- **Enter Donations** -- for counting teams and volunteers who enter offerings. They can add batches and add, edit, or delete donations, but only while the batch is open. They cannot delete batches, close or reopen them, or change gifts that came in through online giving.
+
+Someone with **Enter Donations** but not **View Donation Summaries** sees **Donations** in the B1 Admin menu, which goes straight to the Batches page. **Summary**, **Funds**, **Campaigns**, and **Giving Statements** stay hidden from them. To open a batch and see the donations in it, the role also needs **View Donations**.
+
+:::tip
+A common setup is a "Counting Team" role with **Enter Donations** and **View Donations**, and a treasurer with **Edit Donations** who closes each batch after the deposit is reconciled.
+:::
 
 ## Printing a Batch
 

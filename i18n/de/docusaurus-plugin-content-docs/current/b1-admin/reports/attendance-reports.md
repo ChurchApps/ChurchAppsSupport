@@ -30,7 +30,7 @@ Der Bericht „Anwesenheitstrend" zeigt, wie sich die Anwesenheit im Laufe der Z
 
 Dieser Bericht ist nützlich, um Muster wie saisonale Rückgänge, Wachstumstrends oder die Auswirkung spezieller Veranstaltungen zu erkennen.
 
-## Gruppenanwesenheit
+## Gruppenanwesenheit {#group-attendance}
 
 Der Bericht „Gruppenanwesenheit" zeigt, wer in einem Datumsbereich an jeder Gruppensitzung teilgenommen hat.
 

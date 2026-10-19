@@ -6,38 +6,45 @@ title: "Mga Endpoint ng Messaging"
 
 <div class="article-intro">
 
-Pinamamahalaan ng Messaging module ang mga real-time na usapan, chat message, push notification, paghahatid ng SMS/email, mga koneksyon sa WebSocket, pribadong pagmemensahe, pagpaparehistro ng device, at mga provider ng texting. Ito ang layer ng komunikasyon na ginagamit sa lahat ng aplikasyon ng ChurchApps, para sa live streaming chat at sa mga asynchronous na notification.
+Pinamamahalaan ng Messaging module ang real-time na usapan, chat message, push notification, paghahatid ng SMS/email, WebSocket connection, private messaging, device registration, at mga texting provider. Ito ang communication layer na ginagamit ng lahat ng ChurchApps application, para sa live streaming chat at sa mga asynchronous na notification.
 
 </div>
 
 **Base path:** `/messaging`
 
-## Mga Usapan
+## Conversations
 
 Base path: `/messaging/conversations`
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/timeline/ids?ids=` | JWT | — | Kunin ang mga usapan ayon sa mga ID na pinaghiwalay ng kuwit, kasama ang una/huling mensahe |
-| GET | `/messages/:contentType/:contentId` | JWT | — | Kunin ang mga usapan para sa isang content kasama ang mga mensaheng may pagination (`?page=&limit=`) |
-| GET | `/posts` | JWT | — | Kunin ang mga usapang uri ng post para sa mga grupo ng kasalukuyang user |
-| GET | `/posts/group/:groupId` | JWT | — | Kunin ang mga usapang uri ng post para sa isang partikular na grupo |
-| GET | `/current/:churchId/:contentType/:contentId` | Public | — | Kunin o gumawa ng kasalukuyang usapan para sa isang content (awtomatikong dine-decrypt ang contentId) |
-| GET | `/:churchId/:contentType/:contentId` | Public | — | Kunin ang mga usapan ayon sa uri ng content at ID |
-| GET | `/:churchId/:id` | Public | — | Kunin ang isang usapan ayon sa ID |
-| POST | `/` | JWT | — | Gumawa o mag-update ng mga usapan (batch) |
-| POST | `/start` | JWT | — | Magsimula ng bagong usapan na may unang komento |
-| DELETE | `/:churchId/:id` | JWT | — | Magtanggal ng usapan |
+| GET | `/timeline/ids?ids=` | JWT | — | Ilo-load ang mga conversation ayon sa comma-separated na ID, kasama ang unang at huling mensahe |
+| GET | `/messages/:contentType/:contentId` | JWT | — | Ilo-load ang mga conversation para sa content na may paginated na mga mensahe (`?page=&limit=`) |
+| GET | `/posts` | JWT | — | Kunin ang mga post-type na conversation para sa mga group ng kasalukuyang user |
+| GET | `/posts/group/:groupId` | JWT | — | Kunin ang mga post-type na conversation para sa isang partikular na group |
+| GET | `/current/:churchId/:contentType/:contentId` | Public | — | Kunin o gumawa ng kasalukuyang conversation para sa content (awtomatikong dine-decrypt ang contentId) |
+| GET | `/:churchId/:contentType/:contentId` | Public | — | Ilo-load ang mga conversation ayon sa content type at ID |
+| GET | `/:churchId/:id` | Public | — | Ilo-load ang isang conversation ayon sa ID |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga conversation (batch) |
+| POST | `/start` | JWT | — | Magsimula ng bagong conversation na may paunang comment message |
+| DELETE | `/:churchId/:id` | JWT | — | Burahin ang isang conversation |
 
-### Kontrol sa access sa mga tala ng tao
+### Access control ng person notes
 
-Ang mga usapang may `contentType: "person"` (ang tab na Notes sa tala ng isang tao) o `contentType: "personConfidential"` (ang seksyon ng Confidential Notes) ay may bantay sa bawat read at write path, kasama ang mga route sa itaas na karaniwang pampubliko, na nagbabalik ng `401` para sa mga uri ng content na ito. Ang `person` ay nangangailangan ng permission na MembershipApi **People / Edit**; ang `personConfidential` ay nangangailangan ng **People / View Confidential Notes**. Para sa mga scoped API key, ang `people:write` ay sumasaklaw sa dalawang aksyon (kailangan pa ring hawak ng user ng key ang pinagbabatayang permission ng role).
+Ang mga conversation na may `contentType: "person"` (ang Notes tab sa record ng isang tao) o `contentType: "personConfidential"` (ang seksyong Confidential Notes) ay kontrolado sa bawat read at write path, kasama ang mga public route sa itaas, na nagbabalik ng `401` para sa mga content type na ito. Kailangan ng `person` ang MembershipApi **People / Edit** na permission; kailangan ng `personConfidential` ang **People / View Confidential Notes**. Para sa mga scoped API key, sakop ng `people:write` ang parehong aksyon (dapat pa ring taglay ng user ng key ang underlying na role permission).
 
-### Kontrol sa access sa mga workflow card note {#workflow-card-notes-access-control}
+### Access control ng group at event notes {#group-and-event-notes-access-control}
 
-Ang mga usapang may `contentType: "workflowCard"` (ang mga note sa isang workflow card, kung saan ang `contentId` ay ang task ID ng card) ay mababasa at masusulatan lamang ng sinumang makakapagbukas ng card na iyon: isang user na may DoingApi **Tasks / View** permission, o ang taong o grupong naka-assign sa card, gumawa nito, o tungkol dito. Ang iba ay makakakuha ng `401` sa bawat read path, kasama ang mga public route sa itaas. Ikinakabit ang usapan ng card sa mismong card gamit ang `POST /doing/tasks/:id/conversation` (body `{ "conversationId": "..." }`; ang unang usapang naikabit ang nananaig), na maaaring tawagin ng mga editor ng card at ng assignee nito.
+Dalawa pang note content type ang kinokontrol sa parehong paraan, sa bawat read at write path (kasama ang mga public route sa itaas), at hindi kailanman bukas sa anonymous na pag-post:
 
-### Halimbawa: Magsimula ng Usapan
+- **`groupNote`** (`contentId` = group ID) -- ang feed na **Leader notes** sa isang group. Ang mga leader lang ng group na iyon (`leaderGroupIds` sa JWT) ang makakabasa o makakapag-post. Walang staff permission ang nagbibigay ng access dito, kasama ang `content.edit` at mga group-membership permission.
+- **`eventNote`** (`contentId` = event ID) -- ang mga note sa isang calendar event. Palaging nakakabasa at nakakapag-post ang staff na may `content.edit` o **Calendars / Admin**. Kung wala, sinusunod ang `notesViewRole` (pagbasa) at `notesPostRole` (pag-post) ng event: ang `staff` (default, ginagamit kapag `null` ang field) ay walang ibang pinapayagan, ang `leaders` ay ang mga leader ng group ng event, at ang `members` ay ang mga miyembro at leader ng group ng event. Ang event na walang `groupId` ay staff lang ang makakagamit.
+
+### Access control ng workflow card notes
+
+Ang mga conversation na may `contentType: "workflowCard"` (ang mga note sa isang workflow card, kung saan ang `contentId` ay ang task ID ng card) ay mababasa at mababago lang ng taong makakabukas ng card na iyon: isang user na may DoingApi **Tasks / View** na permission, o ang taong o group na nakatalaga sa card, gumawa nito, o tungkol dito. Ang lahat ng iba ay makakatanggap ng `401` sa bawat read path, kasama ang mga public route sa itaas. Ang conversation ng card ay ikinakabit sa mismong card sa pamamagitan ng `POST /doing/tasks/:id/conversation` (body `{ "conversationId": "..." }`; ang unang conversation na naikabit ang masusunod), na maaaring tawagin ng mga editor ng card at ng assignee nito.
+
+### Halimbawa: Magsimula ng Conversation
 
 ```
 POST /messaging/conversations/start
@@ -66,31 +73,31 @@ Authorization: Bearer <token>
 }
 ```
 
-## Mga Mensahe
+## Messages
 
 Base path: `/messaging/messages`
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/conversation/:conversationId` | JWT | — | Kunin ang lahat ng mensahe ng isang usapan |
-| GET | `/catchup/:churchId/:conversationId` | Public | — | Kunin ang lahat ng mensahe ng isang usapan (pampublikong catchup para sa live chat) |
-| GET | `/:churchId/:id` | Public | — | Kunin ang isang mensahe ayon sa ID |
-| POST | `/` | JWT | — | I-save ang mga mensahe (batch). Nagpapadala ng mga real-time na update at nagti-trigger ng mga notification. Ang pag-update ng kasalukuyang mensahe ay nangangailangang ikaw ang may-akda nito o may hawak ng `content.edit`; ang naka-store na may-akda ay hindi kailanman maaaring italaga sa iba |
-| POST | `/send` | Public | — | Magpadala ng mga mensahe (batch, pampubliko). Nagpapadala ng mga real-time na update sa pamamagitan ng WebSocket at nagti-trigger ng mga notification |
-| POST | `/setCallout` | JWT | — | (legacy) Mag-broadcast ng callout message nang real time. Walang aktibong client; hindi na nagre-render ng mga callout ang live stream chat |
-| DELETE | `/:churchId/:id` | JWT | — | Magtanggal ng mensahe at i-broadcast ang pagtanggal nang real time. Tingnan ang [Moderasyon ng mensahe](#message-moderation) |
+| GET | `/conversation/:conversationId` | JWT | — | Ilo-load ang lahat ng mensahe ng isang conversation |
+| GET | `/catchup/:churchId/:conversationId` | Public | — | Ilo-load ang lahat ng mensahe ng isang conversation (public catchup para sa live chat) |
+| GET | `/:churchId/:id` | Public | — | Ilo-load ang isang mensahe ayon sa ID |
+| POST | `/` | JWT | — | I-save ang mga mensahe (batch). Nagpapadala ng real-time na update at nag-t-trigger ng mga notification. Ang pag-update ng umiiral na mensahe ay nangangailangan na ikaw ang author nito o may hawak ng `content.edit`; hindi kailanman maaaring ilipat ang nakaimbak na author |
+| POST | `/send` | Public | — | Magpadala ng mga mensahe (batch, public). Nagpapadala ng real-time na update sa pamamagitan ng WebSocket at nag-t-trigger ng mga notification |
+| POST | `/setCallout` | JWT | — | (legacy) Mag-broadcast ng callout message nang real time. Walang aktibong client; hindi na nire-render ng live stream chat ang mga callout |
+| DELETE | `/:churchId/:id` | JWT | — | Burahin ang isang mensahe at i-broadcast ang pagbura nang real time. Tingnan ang [Moderasyon ng mensahe](#message-moderation) |
 
-### Moderasyon ng mensahe
+### Moderasyon ng mensahe {#message-moderation}
 
-Pinapayagan ang pagtanggal ng mensahe para sa:
+Pinapayagang burahin ang isang mensahe ng:
 
-- ang may-akda ng mensahe;
-- mga staff na may `content.edit` (saanman sa simbahan);
-- **mga lider ng grupo**, para sa mga usapang may `contentType` na `group` o `groupAnnouncement` na ang `contentId` ay isang grupong pinamumunuan nila (`leaderGroupIds` sa JWT).
+- ang author ng mensahe;
+- staff na may `content.edit` (kahit saan sa simbahan);
+- **mga group leader**, para sa mga conversation na may `contentType` na `group` o `groupAnnouncement` at ang `contentId` ay isang group na pinamumunuan nila (`leaderGroupIds` sa JWT).
 
-Ang mga usapan ng tala ng tao (`person` / `personConfidential`) ay hindi kailanman imo-moderate ng mga lider -- gumagamit ang mga ito ng mga permission sa notes (`people.edit`, `people.viewConfidentialNotes`) sa halip.
+Hindi kailanman minomoderate ng leader ang person-note conversation (`person` / `personConfidential`) -- gumagamit ang mga ito ng notes permission (`people.edit`, `people.viewConfidentialNotes`) sa halip.
 
-Ang mga lider ay may pahintulot lamang magtanggal, hindi mag-edit: ang pagbabago ng mensahe ng ibang miyembro ay nananatiling limitado sa may-akda at sa mga staff na may `content.edit`.
+Pagbura lang ang ibinibigay sa mga leader, hindi pag-edit: ang muling pagsusulat ng mensahe ng ibang miyembro ay nananatiling limitado sa author at sa staff na may `content.edit`.
 
 ### Halimbawa: Magpadala ng Mensahe
 
@@ -124,36 +131,36 @@ POST /messaging/messages/send
 ]
 ```
 
-## Mga Pribadong Mensahe
+## Private Messages
 
 Base path: `/messaging/privatemessages`
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Kunin ang lahat ng pribadong mensahe ng kasalukuyang user (kasama ang huling mensahe bawat usapan, minamarkahang nabasa na ang lahat) |
-| GET | `/existing/:personId` | JWT | — | Humanap ng kasalukuyang pribadong usapan sa isang partikular na tao |
-| GET | `/:id` | JWT | — | Kunin ang isang pribadong mensahe ayon sa ID (inaalis ang notification kung para ito sa kasalukuyang user) |
-| POST | `/` | JWT | — | Magpadala ng mga pribadong mensahe (batch). Nagti-trigger ng push notification sa tatanggap |
+| GET | `/` | JWT | — | Ilo-load ang lahat ng private message ng kasalukuyang user (kasama ang huling mensahe bawat conversation, minamarkahan ang lahat bilang nabasa na) |
+| GET | `/existing/:personId` | JWT | — | Hanapin ang umiiral na private conversation kasama ang isang partikular na tao |
+| GET | `/:id` | JWT | — | Ilo-load ang isang private message ayon sa ID (nililinis ang notification kung naka-address sa kasalukuyang user) |
+| POST | `/` | JWT | — | Magpadala ng private message (batch). Nag-t-trigger ng push notification sa tatanggap |
 
-## Mga Notification
+## Notifications
 
 Base path: `/messaging/notifications`
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/unreadCount` | JWT | — | Kunin ang bilang ng hindi pa nababasang notification ng kasalukuyang user |
-| GET | `/my` | JWT | — | Kunin ang lahat ng notification ng kasalukuyang user (minamarkahang nabasa na ang lahat) |
-| GET | `/tmpEmail` | Public | — | I-trigger ang pang-araw-araw na email digest ng mga notification (debug/cron endpoint) |
-| GET | `/:churchId/person/:personId` | JWT | — | Kunin ang mga notification ng isang partikular na tao |
-| GET | `/:churchId/:id` | JWT | — | Kunin ang isang notification ayon sa ID |
+| GET | `/my` | JWT | — | Ilo-load ang lahat ng notification ng kasalukuyang user (minamarkahan ang lahat bilang nabasa na) |
+| GET | `/tmpEmail` | Public | — | Mag-trigger ng daily email notification digest (debug/cron endpoint) |
+| GET | `/:churchId/person/:personId` | JWT | — | Ilo-load ang mga notification ng isang partikular na tao |
+| GET | `/:churchId/:id` | JWT | — | Ilo-load ang isang notification ayon sa ID |
 | POST | `/` | JWT | — | Gumawa o mag-update ng mga notification (batch) |
 | POST | `/create` | JWT | — | Gumawa ng mga notification para sa maraming tao. Body: `{ peopleIds, contentType, contentId, message, link }` |
-| POST | `/markRead/:churchId/:personId` | JWT | — | Markahang nabasa na ang lahat ng notification ng isang tao |
-| POST | `/sendTest` | JWT | — | Magpadala ng test na push notification. Body: `{ personId, title }` |
-| POST | `/ping` | Public | — | Gumawa ng notification mula sa panlabas na trigger. Body: `{ personId, churchId, contentType, contentId, message, triggeredByPersonId }` |
-| DELETE | `/:churchId/:id` | JWT | — | Magtanggal ng notification |
+| POST | `/markRead/:churchId/:personId` | JWT | — | Markahan bilang nabasa na ang lahat ng notification ng isang tao |
+| POST | `/sendTest` | JWT | — | Magpadala ng test push notification. Body: `{ personId, title }` |
+| POST | `/ping` | Public | — | Gumawa ng notification mula sa external na trigger. Body: `{ personId, churchId, contentType, contentId, message, triggeredByPersonId }` |
+| DELETE | `/:churchId/:id` | JWT | — | Burahin ang isang notification |
 
-### Halimbawa: Gumawa ng mga Notification
+### Halimbawa: Gumawa ng Notification
 
 ```
 POST /messaging/notifications/create
@@ -168,47 +175,47 @@ Authorization: Bearer <token>
 }
 ```
 
-## Mga Kagustuhan sa Notification
+## Notification Preferences
 
 Base path: `/messaging/notificationpreferences`
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/categories` | JWT | — | Ilista ang mga kategorya ng notification kasama ang kanilang default at pinapayagang channel |
-| GET | `/my` | JWT | — | Kunin ang mga kagustuhan sa notification ng kasalukuyang user (awtomatikong gumagawa ng mga default kung wala pa) |
-| POST | `/` | JWT | — | I-save ang mga kagustuhan ng kasalukuyang user. Body: alinman sa `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, kasama ang opsyonal na `overrides: [{ categoryKey, channel, optedIn }]` (maaaring `push`, `email`, `in_app`, o `sms` ang channel; hindi pinapansin ang mga naka-lock na kategorya). Ang `allowSms` ang opt-in ng miyembro para sa mga paalala sa text. Tinatanggap pa rin ang lumang body na array ng mga row |
+| GET | `/categories` | JWT | — | Ilista ang mga notification category kasama ang kanilang default at pinapayagang channel |
+| GET | `/my` | JWT | — | Ilo-load ang notification preferences ng kasalukuyang user (awtomatikong gumagawa ng default kung wala pa) |
+| POST | `/` | JWT | — | I-save ang preferences ng kasalukuyang user. Body: alinman sa `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, kasama ang opsyonal na `overrides: [{ categoryKey, channel, optedIn }]` (ang channel ay maaaring `push`, `email`, `in_app`, o `sms`; hindi pinapansin ang mga naka-lock na category). Ang `allowSms` ang opt-in ng miyembro para sa text reminder. Tinatanggap pa rin ang legacy na body na array ng mga row |
 
-## Mga Koneksyon
+## Connections
 
 Base path: `/messaging/connections`
 
-Pinamamahalaan ang mga koneksyon sa WebSocket/real-time para sa chat, mga usapan ng grupo, mga pribadong mensahe, at live streaming. Tingnan ang [Real-time Architecture](../../realtime) para sa buong protocol mula simula hanggang dulo.
+Pinamamahalaan ang mga WebSocket/real-time connection para sa chat, group conversation, private message, at live streaming. Tingnan ang [Real-time Architecture](../../realtime) para sa buong protocol mula simula hanggang dulo.
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:churchId/:conversationId` | Public | — | Kunin ang lahat ng koneksyon ng isang usapan |
-| POST | `/` | Public | — | Magrehistro ng mga koneksyon (batch). Nagti-trigger ng attendance broadcast sa usapan. Mga item sa body: `{ churchId, conversationId, socketId, displayName?, personId? }` |
-| POST | `/setName` | Public | — | I-update ang display name ng isang koneksyon ayon sa socket ID. Body: `{ socketId, name }` |
-| DELETE | `/:churchId/:conversationId/:socketId` | Public | — | Alisin ang isang koneksyon sa isang usapan. Nagti-trigger ng attendance broadcast |
-| POST | `/tmpSendAlert` | Public | — | Magpadala ng notification alert sa mga koneksyon ng isang tao. Body: `{ churchId, personId }` |
+| GET | `/:churchId/:conversationId` | Public | — | Ilo-load ang lahat ng connection ng isang conversation |
+| POST | `/` | Public | — | Magrehistro ng mga connection (batch). Nag-t-trigger ng attendance broadcast sa conversation. Mga item ng body: `{ churchId, conversationId, socketId, displayName?, personId? }` |
+| POST | `/setName` | Public | — | I-update ang display name ng isang connection ayon sa socket ID. Body: `{ socketId, name }` |
+| DELETE | `/:churchId/:conversationId/:socketId` | Public | — | Alisin ang isang connection sa conversation. Nag-t-trigger ng attendance broadcast |
+| POST | `/tmpSendAlert` | Public | — | Magpadala ng notification alert sa mga connection ng isang tao. Body: `{ churchId, personId }` |
 
-## Mga Device
+## Devices
 
 Base path: `/messaging/devices`
 
-Pinamamahalaan ang pagpaparehistro ng device para sa mga push notification at pagpapares ng content (hal., ang Lessons app sa mga display ng TV).
+Pinamamahalaan ang device registration para sa push notification at content pairing (hal., ang Lessons app sa TV display).
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| POST | `/enroll` | JWT | — | Mag-enroll o mag-update ng device (pagpaparehistro ng mobile push). Tumutugma ayon sa FCM token o device ID |
-| POST | `/enrollAnon` | Public | — | Mag-enroll ng anonymous na device at gumawa ng 4-na-karakter na pairing code |
+| POST | `/enroll` | JWT | — | Mag-enroll o mag-update ng device (mobile push registration). Tumutugma ayon sa FCM token o device ID |
+| POST | `/enrollAnon` | Public | — | Mag-enroll ng anonymous na device at gumawa ng 4-character na pairing code |
 | POST | `/` | Public | — | I-save ang mga device (batch) |
-| GET | `/pair/:pairingCode` | JWT | — | Ipares ang isang device gamit ang pairing code nito. Opsyonal ang `?contentType=&contentId=` para magtalaga ng content |
-| GET | `/status/:deviceId` | Public | — | Tingnan ang katayuan ng pagpapares ng isang device |
-| GET | `/:churchId` | JWT | — | Kunin ang lahat ng device ng isang simbahan |
-| GET | `/:churchId/person/:personId` | JWT | — | Kunin ang lahat ng device ng isang tao |
-| GET | `/:churchId/:id` | JWT | — | Kunin ang isang device ayon sa ID |
-| DELETE | `/:churchId/:id` | JWT | — | Magtanggal ng device |
+| GET | `/pair/:pairingCode` | JWT | — | I-pair ang isang device gamit ang pairing code nito. Opsyonal na `?contentType=&contentId=` para mag-assign ng content |
+| GET | `/status/:deviceId` | Public | — | Tingnan ang pairing status ng isang device |
+| GET | `/:churchId` | JWT | — | Ilo-load ang lahat ng device ng isang simbahan |
+| GET | `/:churchId/person/:personId` | JWT | — | Ilo-load ang lahat ng device ng isang tao |
+| GET | `/:churchId/:id` | JWT | — | Ilo-load ang isang device ayon sa ID |
+| DELETE | `/:churchId/:id` | JWT | — | Burahin ang isang device |
 
 ### Halimbawa: Mag-enroll ng Device
 
@@ -236,37 +243,37 @@ Authorization: Bearer <token>
 }
 ```
 
-## Mga Content ng Device
+## Device Contents
 
 Base path: `/messaging/devicecontents`
 
-Pinamamahalaan ang mga itinalagang content para sa mga nakapares na device (hal., kung aling leksyon ang ipinapakita sa isang TV).
+Pinamamahalaan ang mga content assignment para sa mga naka-pair na device (hal., aling lesson ang ipinapakita sa TV).
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/deviceId/:deviceId` | JWT | — | Kunin ang mga itinalagang content ng isang device |
-| POST | `/` | JWT | — | I-save ang mga itinalagang content ng device (batch) |
-| DELETE | `/:id` | JWT | — | Magtanggal ng itinalagang content ng device |
+| GET | `/deviceId/:deviceId` | JWT | — | Ilo-load ang mga content assignment ng isang device |
+| POST | `/` | JWT | — | I-save ang mga content assignment ng device (batch) |
+| DELETE | `/:id` | JWT | — | Burahin ang isang content assignment ng device |
 
 ## Texting
 
 Base path: `/messaging/texting`
 
-Pinamamahalaan ang mga provider ng SMS texting, group text messaging, at pagsubaybay sa paghahatid.
+Pinamamahalaan ang mga SMS texting provider, group text messaging, at delivery tracking.
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/providers` | JWT | — | Kunin ang mga provider ng texting ng simbahan (nakatago ang mga credential) |
-| GET | `/status` | JWT | — | `{ enabled }` — kung may naka-enable na texting provider ang simbahan. Sinumang naka-sign in na user ng simbahan; ginagamit para ipakita ang mga opsyong **Text** lamang kapag maaaring magpadala ng text |
-| GET | `/inboundUrl` | JWT | `texting.send` o `settings.edit` | `{ url }` — ang inbound (STOP) webhook URL ng simbahan na ipe-paste sa provider |
-| POST | `/inbound/:churchId/:token` | Public | — | Inbound-message webhook ng provider. Ang `token` ay isang HMAC ng church id. Ang reply na eksaktong stop word (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`) ay nagmamarka sa bawat tugmang tao bilang `optedOut` at ina-off ang kanilang `allowSms`. Nagbabalik ng `{ optedOut: <count> }`; ang ibang reply ay nagbabalik ng `{ optedOut: 0 }` |
-| GET | `/preview/:groupId` | JWT | — | I-preview ang mga tatanggap ng group text (bilang ng eligible, nag-opt-out, at walang telepono) |
-| GET | `/sent` | JWT | — | Kunin ang lahat ng tala ng naipadalang text message ng simbahan |
-| GET | `/sent/:id/details` | JWT | — | Kunin ang isang naipadalang text kasama ang mga delivery log bawat tatanggap |
-| POST | `/providers` | JWT | — | I-save ang mga provider ng texting (batch). Ine-encrypt ang mga API credential |
-| POST | `/send` | JWT | — | Magpadala ng SMS sa lahat ng eligible na miyembro ng isang grupo. Body: `{ groupId, message }`. Ang mga merge field (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}`) ay nireresolba bawat tatanggap |
-| POST | `/sendPerson` | JWT | — | Magpadala ng SMS sa isang tao. Body: `{ personId, phoneNumber, message }`. Nireresolba ang mga merge field, at ang nareresolbang teksto ang nilo-log |
-| DELETE | `/providers/:id` | JWT | — | Magtanggal ng provider ng texting |
+| GET | `/providers` | JWT | — | Ilo-load ang mga texting provider ng simbahan (namamaskara ang mga credential) |
+| GET | `/status` | JWT | — | `{ enabled }` -- kung may naka-enable na texting provider ang simbahan. Sinumang naka-sign in na user ng simbahan; ginagamit para ipakita ang mga opsyong **Text** kapag maaari nang magpadala ng text |
+| GET | `/inboundUrl` | JWT | `texting.send` o `settings.edit` | `{ url }` -- ang inbound (STOP) webhook URL ng simbahan na ipe-paste sa provider |
+| POST | `/inbound/:churchId/:token` | Public | — | Inbound-message webhook ng provider. Ang `token` ay HMAC ng church id. Ang reply na eksaktong stop word (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`) ay nagmamarka sa bawat tugmang tao bilang `optedOut` at pinapatay ang kanilang `allowSms`. Nagbabalik ng `{ optedOut: <count> }`; ang ibang reply ay nagbabalik ng `{ optedOut: 0 }` |
+| GET | `/preview/:groupId` | JWT | — | I-preview ang mga tatanggap ng group text (bilang ng eligible, opted-out, at walang phone) |
+| GET | `/sent` | JWT | — | Ilo-load ang lahat ng naipadalang text message record ng simbahan |
+| GET | `/sent/:id/details` | JWT | — | Ilo-load ang isang naipadalang text kasama ang delivery log ng bawat tatanggap |
+| POST | `/providers` | JWT | — | I-save ang mga texting provider (batch). Nag-e-encrypt ng API credential |
+| POST | `/send` | JWT | — | Magpadala ng SMS sa lahat ng eligible na miyembro ng isang group. Body: `{ groupId, message }`. Ang mga merge field (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}`) ay nireresolba para sa bawat tatanggap |
+| POST | `/sendPerson` | JWT | — | Magpadala ng SMS sa isang tao. Body: `{ personId, phoneNumber, message }`. Nireresolba ang mga merge field, at ang resolved na text ang nilalagay sa log |
+| DELETE | `/providers/:id` | JWT | — | Burahin ang isang texting provider |
 
 ### Halimbawa: Magpadala ng Group Text
 
@@ -291,22 +298,22 @@ Authorization: Bearer <token>
 }
 ```
 
-## Mga Template ng Email
+## Email Templates
 
 Base path: `/messaging/emailTemplates`
 
-Pinamamahalaan ang mga magagamit-muling template ng email at ang pagpapadala ng mga email na may template sa mga grupo.
+Pinamamahalaan ang mga reusable na email template at ang pagpapadala ng naka-template na email sa mga group.
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Kunin ang lahat ng template ng email ng simbahan |
-| GET | `/:id` | JWT | — | Kunin ang isang template ng email ayon sa ID |
-| GET | `/preview/:groupId` | JWT | — | I-preview ang paghahatid ng email para sa isang grupo (bilang ng eligible na tatanggap, mga miyembrong walang email) |
-| POST | `/` | JWT | — | Gumawa o mag-update ng mga template ng email (batch) |
-| POST | `/send` | JWT | — | Magpadala ng email na may template sa lahat ng miyembro ng isang grupo. Body: `{ groupId, subject, htmlContent }` |
-| DELETE | `/:id` | JWT | — | Magtanggal ng template ng email |
+| GET | `/` | JWT | — | Ilo-load ang lahat ng email template ng simbahan |
+| GET | `/:id` | JWT | — | Ilo-load ang isang email template ayon sa ID |
+| GET | `/preview/:groupId` | JWT | — | I-preview ang email delivery para sa isang group (bilang ng eligible na tatanggap, mga miyembrong walang email) |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga email template (batch) |
+| POST | `/send` | JWT | — | Magpadala ng naka-template na email sa lahat ng miyembro ng isang group. Body: `{ groupId, subject, htmlContent }` |
+| DELETE | `/:id` | JWT | — | Burahin ang isang email template |
 
-### Halimbawa: Magpadala ng Email sa Grupo
+### Halimbawa: Magpadala ng Email sa Group
 
 ```
 POST /messaging/emailTemplates/send
@@ -331,35 +338,35 @@ Authorization: Bearer <token>
 
 **Mga sinusuportahang merge field:** `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`
 
-## Mga Naka-block na IP
+## Blocked IPs
 
 Base path: `/messaging/blockedips`
 
-(legacy) Pag-block ng IP para sa live streaming chat. Hindi na tinatawag ng B1App client ang `POST /` -- inalis ang pag-block ng IP sa unified-delivery migration. Ang route na `/clear` ay tinatawag pa rin server-to-server ng `StreamingServiceController` kapag sine-save ang mga streaming service.
+(legacy) Pag-block ng IP para sa live streaming chat. Hindi na tinatawag ng B1App client ang `POST /` -- inalis ang IP blocking sa unified-delivery migration. Tinatawag pa rin ng `/clear` route nang server-to-server ng `StreamingServiceController` kapag sine-save ang mga streaming service.
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| POST | `/` | JWT | — | (legacy) I-save ang mga naka-block na IP (batch). Walang aktibong client |
-| POST | `/clear` | JWT | — | Alisin ang lahat ng naka-block na IP para sa mga partikular na serbisyo. Body: `[{ serviceId, churchId }]` |
+| POST | `/` | JWT | — | (legacy) I-save ang mga blocked IP (batch). Walang aktibong client |
+| POST | `/clear` | JWT | — | Burahin ang lahat ng blocked IP para sa partikular na mga service. Body: `[{ serviceId, churchId }]` |
 
-## Mga Delivery Log
+## Delivery Logs
 
 Base path: `/messaging/deliverylogs`
 
-Sinusubaybayan ang katayuan ng paghahatid ng mga naipadalang mensahe (SMS, push notification, email).
+Sinusubaybayan ang delivery status ng mga naipadalang mensahe (SMS, push notification, email).
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/content/:contentType/:contentId` | JWT | — | Kunin ang mga delivery log ayon sa uri ng content at ID |
-| GET | `/person/:personId` | JWT | — | Kunin ang mga delivery log ng isang tao. Opsyonal ang mga filter na `?startDate=&endDate=` |
-| GET | `/recent` | JWT | — | Kunin ang mga kamakailang delivery log ng simbahan. Opsyonal ang `?limit=` (default 100) |
-| GET | `/:id` | JWT | — | Kunin ang isang delivery log ayon sa ID |
+| GET | `/content/:contentType/:contentId` | JWT | — | Ilo-load ang mga delivery log ayon sa content type at ID |
+| GET | `/person/:personId` | JWT | — | Ilo-load ang mga delivery log ng isang tao. Opsyonal na filter na `?startDate=&endDate=` |
+| GET | `/recent` | JWT | — | Ilo-load ang mga kamakailang delivery log ng simbahan. Opsyonal na `?limit=` (default 100) |
+| GET | `/:id` | JWT | — | Ilo-load ang isang delivery log ayon sa ID |
 
-## Mga Kaugnay na Pahina
+## Kaugnay na Mga Pahina
 
-- [Real-time Architecture](../../realtime) -- Protocol ng WebSocket, mga room subscription, at ang unified delivery framework
-- [Web Push Notifications](../../web-push) -- Pag-enroll at paghahatid ng browser push
-- [Mga Endpoint ng Membership](./membership) -- Mga tao, grupo, role, at pangunahing pagkakakilanlan
-- [Mga Endpoint ng Attendance](./attendance) -- Pagsubaybay sa serbisyo at mga visit
-- [Authentication at Mga Permission](./authentication) -- Daloy ng login, JWT, OAuth, modelo ng permission
-- [Istruktura ng Module](../module-structure) -- Mga pattern sa pag-aayos ng code
+- [Real-time Architecture](../../realtime) -- WebSocket protocol, room subscription, at ang unified delivery framework
+- [Web Push Notifications](../../web-push) -- Browser push enrollment at delivery
+- [Membership Endpoints](./membership) -- People, group, role, at core identity
+- [Attendance Endpoints](./attendance) -- Pagsubaybay ng service at pagbisita
+- [Authentication & Permissions](./authentication) -- Login flow, JWT, OAuth, permission model
+- [Module Structure](../module-structure) -- Mga pattern ng organisasyon ng code

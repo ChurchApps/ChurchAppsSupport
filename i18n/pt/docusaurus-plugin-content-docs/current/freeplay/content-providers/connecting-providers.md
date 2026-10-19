@@ -1,100 +1,105 @@
 ---
-title: "Conectando a Provedores"
+title: "Conectando-se aos provedores"
 ---
 
-# Conectando a Provedores
+# Conectando-se aos provedores
 
 <div class="article-intro">
 
-Antes de poder navegar conteúdo de um provedor, você precisa se conectar a ele. Alguns provedores requerem autenticação através de um código QR ou login de email, enquanto outros podem ser conectados com um único clique.
+Antes de navegar pelo conteúdo de um provedor, você precisa se conectar a ele. Alguns provedores exigem autenticação por QR code ou login por e-mail, enquanto outros podem ser conectados com um único clique.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Instale e inicie FreePlay -- veja [Primeiros Passos](../getting-started/)
-- Tenha seu controle remoto de TV pronto para navegação
-- Para provedores que requerem login, tenha suas credenciais de conta disponíveis
+- Instale e abra o FreePlay -- veja [Primeiros passos](../getting-started/)
+- Tenha o controle remoto da TV pronto para navegar
+- Para provedores que exigem login, tenha as credenciais da sua conta em mãos
 
 </div>
 
-:::tip Configurando B1 Admin + FreePlay juntos?
-Nosso **<a href="/guides/freeplay-b1admin" target="_blank">guia passo a passo</a>** percorre vinculando B1 Admin, agendando uma aula e conectando FreePlay — tudo em um lugar. Abra em uma nova aba para acompanhar.
+:::tip Configurando o B1 Admin + FreePlay juntos?
+Nosso **<a href="/guides/freeplay-b1admin" target="_blank">guia passo a passo</a>** mostra como vincular o B1 Admin, agendar uma lição e conectar o FreePlay -- tudo em um só lugar. Abra-o em uma nova aba para acompanhar.
 :::
 
-## Navegando Provedores Disponíveis
+## Navegando pelos provedores disponíveis
 
-1. Abra **Settings** na parte inferior da barra lateral e selecione **Providers** para abrir a tela **Content Providers**
-2. Você verá uma grade de cartões de provedor, cada um mostrando o logo e nome do provedor
-3. Provedores conectados exibem um crachá verde **Connected** abaixo de seus nomes
-4. Provedores que ainda não estão disponíveis mostram um label **Coming Soon**
+1. Abra **Configurações** na parte inferior da barra lateral e selecione **Provedores** para abrir a tela **Provedores de conteúdo**
+2. Você verá uma grade de cartões de provedores, cada um mostrando o logo e o nome do provedor
+3. Provedores conectados exibem um selo verde **Conectado** abaixo do nome
+4. Provedores que ainda não estão disponíveis mostram o rótulo **Em breve**
 
-## Conectando Sem Autenticação
+## Conectando sem autenticação
 
-Alguns provedores não requerem login. Quando você seleciona um destes provedores, FreePlay se conecta imediatamente e abre o navegador de conteúdo. Nenhuma credencial é necessária.
+Alguns provedores não exigem login. Ao selecionar um deles, o FreePlay se conecta imediatamente e abre o navegador de conteúdo. Não são necessárias credenciais.
 
-## Autenticação de Fluxo de Dispositivo (Código QR)
+## Autenticação por fluxo de dispositivo (QR code)
 
-Certos provedores usam um fluxo de dispositivo, semelhante a como você entra em aplicativos de streaming em uma TV:
+Certos provedores usam um fluxo de dispositivo, semelhante à forma como você entra em aplicativos de streaming em uma TV:
 
-1. Selecione o cartão de provedor na tela **Content Providers**
-2. FreePlay exibe um código QR e uma URL de verificação
-3. Escaneie o código QR com seu telefone, ou visite a URL exibida em qualquer dispositivo
-4. Insira o código do usuário mostrado na tela da TV
-5. Complete o processo de sign-in em seu telefone ou computador
-6. FreePlay detecta o login bem-sucedido e exibe **Connected!**
+1. Selecione o cartão do provedor na tela **Provedores de conteúdo**
+2. O FreePlay mostra uma tela **Conectar a** com o nome do provedor, um QR code e uma URL de verificação
+3. Leia o QR code com o seu celular ou acesse a URL exibida em qualquer dispositivo
+4. Digite o código mostrado na tela da TV
+5. Conclua o login no seu celular ou computador
+6. O FreePlay detecta o login bem-sucedido e exibe **Conectado!**
 7. O navegador de conteúdo abre automaticamente
 
 :::info
-Um indicador pulsante **Waiting for authorization** mostra que FreePlay está verificando seu login. O código expira após vários minutos, então complete o processo prontamente.
+Um indicador pulsante **Aguardando confirmação** mostra que o FreePlay está verificando o seu login. A tela mostra quantos minutos restam antes que o código expire, então conclua o processo rapidamente. Selecione **Gerar novo código** se ele expirar.
 :::
 
-**Go Curriculum** usa este mesmo padrão de sign-in com código QR -- escaneie o código e faça login com sua conta gocurriculum.com para se conectar.
+## Login pelo celular (somente QR code)
 
-## Login de Formulário
+**Dropbox**, **OneDrive** e **Go Curriculum** usam um login por QR code um pouco diferente, sem nenhum código para digitar:
 
-Outros provedores usam um login tradicional de email e senha:
+1. Selecione o cartão do provedor na tela **Provedores de conteúdo**
+2. O FreePlay mostra uma tela **Conectar a** com o nome do provedor e um QR code
+3. Leia o QR code com o seu celular e entre na sua conta desse provedor (sua conta Microsoft para o OneDrive, ou sua conta gocurriculum.com para o Go Curriculum)
+4. Aprove o acesso. A TV se conecta automaticamente e exibe **Conectado!**
 
-1. Selecione o cartão de provedor
-2. Insira seu **Email** e **Password** usando o teclado na tela
-3. Selecione o botão **Sign In**
-4. Se suas credenciais estiverem corretas, FreePlay exibe **Connected!** e abre o navegador de conteúdo
+A tela mostra quantos minutos você tem para concluir o login.
+
+## Login com formulário
+
+Outros provedores usam o login tradicional com e-mail e senha:
+
+1. Selecione o cartão do provedor
+2. Digite seu **E-mail** e **Senha** usando o teclado na tela
+3. Selecione o botão **Entrar**
+4. Se suas credenciais estiverem corretas, o FreePlay exibe **Conectado!** e abre o navegador de conteúdo
 
 :::tip
-Use o direcional em seu controle remoto para mover entre o campo de email, campo de senha e botão de sign-in. Pressione **Select** em um campo de texto para abrir o teclado na tela.
+Use o direcional do controle remoto para mover-se entre o campo de e-mail, o campo de senha e o botão de entrar. Pressione **Selecionar** em um campo de texto para abrir o teclado na tela.
 :::
 
-## Encontrando um Provedor em Sua Rede
+## Configurações do provedor
 
-**FreeShow** é encontrado em sua rede local em vez de através de um sign-in: FreePlay procura a rede, lista cada computador executando FreeShow que encontra e se conecta ao que você seleciona (escolha **Scan Again** se nenhum aparecer).
+Selecionar um cartão de provedor que exibe o selo **Conectado** abre a tela **Configurações do provedor**:
 
-## Configurações do Provedor
+- **Navegar pela biblioteca** -- Mostra ou oculta a biblioteca de conteúdo deste provedor na barra lateral
+- **Baixar automaticamente a lição de hoje** -- Usa este provedor como fonte da lição de hoje e pré-baixa os arquivos dele (exibido somente para provedores que oferecem uma lição atual)
+- **Usar para avisos** -- Escolha uma pasta deste provedor para exibir em loop a partir do item **Avisos** na barra lateral. Veja [Avisos](./announcements)
+- **Verificar atualizações de avisos** -- Exibido assim que uma pasta de avisos é escolhida; baixa os novos slides e remove os excluídos
+- **Desconectar** -- Remove a conexão
 
-Selecionar um cartão de provedor que mostra o crachá **Connected** abre sua tela **Provider Settings**:
+## Desconectando um provedor
 
-- **Browse Library** -- Mostrar ou ocultar a biblioteca de conteúdo deste provedor na barra lateral
-- **Auto-Download Today's Lesson** -- Use este provedor como a fonte da aula de hoje e pre-baixe seus arquivos (apenas mostrado para provedores que oferecem uma aula atual)
-- **Use for Announcements** -- Escolha uma pasta deste provedor para fazer loop a partir do item **Announcements** na barra lateral. Veja [Announcements](./announcements)
-- **Check for Announcement Updates** -- Mostrado uma vez que uma pasta de anúncios é escolhida; baixa novos slides e remove os deletados
-- **Disconnect** -- Remover a conexão
+Para desconectar um provedor ao qual você já se conectou:
 
-## Desconectando um Provedor
+1. Vá até a tela **Provedores de conteúdo** (**Configurações** > **Provedores**)
+2. Selecione o cartão do provedor que exibe o selo **Conectado**
+3. Na tela **Configurações do provedor**, selecione **Desconectar**
 
-Para desconectar de um provedor ao qual você já se conectou:
-
-1. Vá para a tela **Content Providers** (**Settings** > **Providers**)
-2. Selecione o cartão de provedor que mostra o crachá **Connected**
-3. Na tela **Provider Settings**, selecione **Disconnect**
-
-Após desconectar, o conteúdo do provedor não aparecerá mais em sua barra lateral. Se você estava usando uma de suas pastas para anúncios, esses slides também são removidos.
+Depois de desconectar, o conteúdo do provedor não aparece mais na sua barra lateral. Se você estava usando uma das pastas dele para avisos, esses slides também são removidos.
 
 :::warning
-Desconectar remove a autenticação salva de seu dispositivo. Você precisará fazer login novamente se quiser se reconectar mais tarde.
+Desconectar remove a autenticação salva no seu dispositivo. Você precisará entrar novamente se quiser se reconectar depois.
 :::
 
-## Artigos Relacionados
+## Artigos relacionados
 
-- **[Navegando e Baixando Conteúdo](./browsing-content)** - Navegue pastas e toque conteúdo após se conectar
-- **[Anúncios](./announcements)** - Faça loop de uma pasta de slides de um provedor conectado
-- **[Visão Geral de Provedores de Conteúdo](./index.md)** - Veja todos os provedores disponíveis
+- **[Navegando e baixando conteúdo](./browsing-content)** - Navegue pelas pastas e reproduza o conteúdo depois de se conectar
+- **[Avisos](./announcements)** - Exiba em loop uma pasta de slides de um provedor conectado
+- **[Visão geral dos provedores de conteúdo](./index.md)** - Veja todos os provedores disponíveis

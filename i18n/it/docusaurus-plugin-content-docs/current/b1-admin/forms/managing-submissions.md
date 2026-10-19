@@ -32,7 +32,7 @@ Fai clic su una risposta qualsiasi per visualizzarne tutti i dettagli. Vedrai tu
 
 Fai clic sull'**icona di stampa** accanto alla risposta per stampare le risposte compilate da quella persona, utile per un archivio cartaceo o per una liberatoria firmata che devi conservare a portata di mano. La stampa mostra in alto il logo della tua chiesa (il **Logo per sfondo chiaro** di [Sito web > Aspetto](../website/appearance.md), se ne hai caricato uno) con il nome della chiesa sotto. Questa operazione è diversa da [stampare un modulo vuoto](./creating-forms.md#printing-a-blank-form): stampa le risposte già inviate da una sola persona, non una copia vuota. La stessa icona di stampa compare ovunque venga mostrata una risposta, anche nel [profilo di una persona](../people/adding-people.md#working-with-forms).
 
-## Cambiare la persona associata a una risposta
+## Cambiare la persona associata a una risposta {#changing-the-person-on-a-submission}
 
 Se una risposta è collegata alla persona sbagliata, ad esempio perché due familiari condividono lo stesso indirizzo email, puoi spostarla alla persona giusta oppure scollegarla.
 

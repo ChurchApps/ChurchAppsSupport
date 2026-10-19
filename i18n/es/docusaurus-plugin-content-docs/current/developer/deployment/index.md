@@ -1,25 +1,25 @@
 ---
-title: "Implementación"
+title: "Despliegue"
 ---
 
-# Implementación
+# Despliegue
 
 <div class="article-intro">
 
-ChurchApps utiliza diferentes estrategias de implementación según el tipo de proyecto. Las APIs se implementan en AWS Lambda, las aplicaciones web se implementan como sitios estáticos en S3 con CloudFront, y las aplicaciones móviles se construyen y distribuyen a través de Expo EAS y las tiendas de aplicaciones.
+ChurchApps usa distintas estrategias de despliegue según el tipo de proyecto: las APIs se despliegan en AWS Lambda, las aplicaciones web se despliegan como sitios estáticos en S3 con CloudFront, y las aplicaciones móviles se compilan y distribuyen mediante Expo EAS y las tiendas de aplicaciones.
 
 </div>
 
-## Implementación por Tipo de Proyecto
+## Despliegue por tipo de proyecto
 
-| Tipo de Proyecto | Objetivo de Implementación | Herramientas |
+| Tipo de proyecto | Destino de despliegue | Herramientas |
 |-------------|-------------------|---------|
 | [APIs](./apis) | AWS Lambda | Serverless Framework v3 (runtime Node.js 22.x) |
-| [Aplicaciones Web](./web-apps) | S3 + CloudFront | Compilación estática, sincronización S3, invalidación de CloudFront |
-| [Aplicaciones Móviles](./mobile) | Tiendas de Aplicaciones | Expo EAS Build + Actualizaciones OTA |
-| [Auto-Alojamiento (Railway)](./railway-template) | Railway | Plantilla de un clic: MySQL + Api + B1Admin + B1App |
-| [Auto-Alojamiento (Docker)](./docker) | Cualquier host Docker | `docker compose up` desde el repositorio B1Admin |
-| [Proxy de Dominio Personalizado Caddy](./caddy-proxy) | Windows EC2 (IP Elástica `3.23.251.61`) | Caddyfile estático + servicio WinSW + sincronización de mapa programada |
+| [Aplicaciones web](./web-apps) | S3 + CloudFront | Compilación estática, sincronización con S3, invalidación de CloudFront |
+| [Aplicaciones móviles](./mobile) | Tiendas de aplicaciones | Expo EAS Build + actualizaciones OTA |
+| [Alojamiento propio (Railway)](./railway-template) | Railway | Plantilla de un clic: MySQL + Api + B1Admin + B1App |
+| [Alojamiento propio (Docker)](./docker) | Cualquier host de Docker | Instalador de una línea; imágenes precompiladas en GHCR + Caddy, `./deploy/b1` para actualizar, respaldar y revertir |
+| [Proxy de dominio personalizado con Caddy](./caddy-proxy) | EC2 de Windows (IP elástica `3.23.251.61`) | Caddyfile estático + servicio WinSW + sincronización programada de mapas |
 | FreeShow | Descarga directa | Electron Builder (binarios multiplataforma) |
 
 ## Entornos
@@ -27,10 +27,9 @@ ChurchApps utiliza diferentes estrategias de implementación según el tipo de p
 | Entorno | Propósito |
 |-------------|---------|
 | `dev` | Desarrollo local |
-| `demo` | Instancia de demostración pública |
-| `staging` | Pruebas de preproducción |
+| `demo` | Instancia pública de demostración; se despliega en cada push a `main`, por lo que sirve también para pruebas previas a producción |
 | `prod` | Producción |
 
 :::info
-Cada entorno tiene su propio conjunto de puntos finales de API, bases de datos, y configuración. Los ajustes específicos de entorno se gestionan a través de archivos `.env` localmente y AWS SSM Parameter Store en entornos implementados.
+Cada entorno tiene su propio conjunto de endpoints de API, bases de datos y configuración. Los ajustes específicos de cada entorno se administran mediante archivos `.env` en local y mediante AWS SSM Parameter Store en los entornos desplegados.
 :::

@@ -6,65 +6,65 @@ title: "Mga Kinakailangan"
 
 <div class="article-intro">
 
-Ang mga tool na kailangan mo ay depende sa kung aling mga proyekto ang plano mong gawin. Inilalista ng pahinang ito ang lahat ng kinakailangang software na nakaayos ayon sa development area, mula sa mga unibersal na kinakailangan hanggang sa mga platform-specific na toolchain.
+Nakadepende sa mga proyektong balak mong pagtrabahuhan ang mga tool na kailangan mo. Nakalista sa pahinang ito ang lahat ng kinakailangang software, nakaayos ayon sa lugar ng development, mula sa mga universal na kinakailangan hanggang sa platform-specific na toolchain.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Suriin ang [Pangkalahatang-tanaw ng Proyekto](./project-overview) para malaman kung aling mga proyekto ang gusto mong gawin
-- Magkaroon ng administrator access sa iyong development machine para sa pag-install ng software
+- Basahin ang [Project Overview](./project-overview) para malaman kung aling mga proyekto ang gusto mong pagtrabahuhan
+- Dapat may administrator access ka sa development machine mo para makapag-install ng software
 
 </div>
 
 ## Lahat ng Proyekto
 
-Kinakailangan ang mga ito anuman ang proyektong ginagawa mo:
+Kinakailangan ang mga ito anuman ang proyektong pinagtatrabahuhan mo:
 
 | Tool | Bersyon | Mga Tala |
-|------|---------|-------|
+|------|---------|----------|
 | **Node.js** | 20+ | Kailangan ang bersyon 22+ para sa B1App at LessonsApp (Next.js 16) |
-| **npm** | Kasama ng Node.js | Ginagamit bilang package manager sa lahat ng proyekto |
-| **Git** | Pinakabago | Ang bawat proyekto ay isang hiwalay na repository |
+| **npm** | Kasama ng Node.js | Ginagamit na package manager sa lahat ng proyekto |
+| **Git** | Pinakabago | Bawat proyekto ay hiwalay na repository |
 
 :::tip
-Gumamit ng Node version manager tulad ng [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) o [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) para madaling maglipat sa pagitan ng mga bersyon ng Node.
+Gumamit ng Node version manager gaya ng [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) o [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) para madaling makalipat sa pagitan ng mga bersyon ng Node.
 :::
 
-## Backend API Development
+## Pag-develop ng Backend API
 
-Kung plano mong patakbuhin ang API nang lokal (sa halip na ituro sa staging):
-
-| Tool | Bersyon | Mga Tala |
-|------|---------|-------|
-| **MySQL** | 8.0+ | Ang bawat API module ay gumagamit ng sarili nitong database |
-
-Kakailanganin mo ng anim na database para sa core API: `membership`, `attendance`, `content`, `giving`, `messaging`, at `doing`. Kasama sa API ang mga script para i-initialize ang schema -- tingnan ang gabay sa [Lokal na API setup](../api/local-setup).
-
-## Mobile App Development
-
-Para sa B1Mobile, B1Checkin, LessonsScreen, o iba pang React Native / Expo na mga app:
+Kung balak mong patakbuhin ang API nang lokal (sa halip na ituro sa demo API):
 
 | Tool | Bersyon | Mga Tala |
-|------|---------|-------|
+|------|---------|----------|
+| **MySQL** | 8.0+ | Gumagamit ang bawat API module ng sarili nitong database |
+
+Kakailanganin mo ng anim na database para sa core API: `membership`, `attendance`, `content`, `giving`, `messaging`, at `doing`. May mga script ang API para i-initialize ang schema -- tingnan ang gabay na [API local setup](../api/local-setup).
+
+## Pag-develop ng Mobile App
+
+Para sa B1Mobile, B1Checkin, LessonsScreen, o iba pang React Native / Expo app:
+
+| Tool | Bersyon | Mga Tala |
+|------|---------|----------|
 | **Expo CLI** | Pinakabago | I-install nang global: `npm install -g expo-cli` |
-| **Android Studio** | Pinakabago | Kinakailangan para sa Android development (kasama ang Android SDK) |
-| **Xcode** | Pinakabago | Kinakailangan para sa iOS development (macOS lamang) |
+| **Android Studio** | Pinakabago | Kailangan para sa Android development (kasama ang Android SDK) |
+| **Xcode** | Pinakabago | Kailangan para sa iOS development (macOS lamang) |
 
 :::info
-Maaari mong gamitin ang Expo Go app sa isang pisikal na device para sa mabilis na pagsubok nang walang Android Studio o Xcode. Gayunpaman, ang pagbuo ng production binary ay nangangailangan ng mga native toolchain.
+Maaari mong gamitin ang Expo Go app sa totoong device para sa mabilisang pagsubok nang walang Android Studio o Xcode. Gayunman, kailangan ng native toolchain ang pag-build ng production binaries.
 :::
 
 ## FreeShow (Desktop App) Development
 
-Ang FreeShow ay may karagdagang native build dependency dahil kino-compile nito ang mga native Node module (tulad ng `canvas`):
+Ang FreeShow ay may dagdag na native build dependency dahil nagko-compile ito ng native Node module (gaya ng `canvas`):
 
 ### Lahat ng Platform
 
 | Tool | Bersyon | Mga Tala |
-|------|---------|-------|
-| **Python** | 3.12 | Kinakailangan ng `node-gyp` para sa native module compilation |
+|------|---------|----------|
+| **Python** | 3.12 | Kailangan ng `node-gyp` para sa pag-compile ng native module |
 | **setuptools** | Pinakabago | I-install sa pamamagitan ng `pip install setuptools` |
 
 ### Windows
@@ -81,7 +81,7 @@ Maaari mong i-install ang Visual Studio build tools sa pamamagitan ng command li
 npm install --global windows-build-tools
 ```
 
-O mag-install ng Visual Studio Community at piliin ang "Desktop development with C++" workload habang nag-i-install.
+O mag-install ng Visual Studio Community at piliin ang workload na "Desktop development with C++" habang nag-i-install.
 
 ### Linux
 
@@ -91,7 +91,7 @@ sudo apt-get install libfontconfig1-dev
 
 ### macOS
 
-Ang Xcode Command Line Tools ay karaniwang sapat:
+Karaniwan nang sapat na ang Xcode Command Line Tools:
 
 ```bash
 xcode-select --install
@@ -99,7 +99,7 @@ xcode-select --install
 
 ## I-verify ang Iyong Installation
 
-Patakbuhin ang mga command na ito para kumpirmahin na lahat ay naka-install:
+Patakbuhin ang mga command na ito para kumpirmahin na naka-install ang lahat:
 
 ```bash
 node --version    # Should print v20.x.x or higher
@@ -110,5 +110,5 @@ mysql --version   # Only needed for local API development
 
 ## Mga Susunod na Hakbang
 
-- **[Pangkalahatang-tanaw ng Proyekto](./project-overview)** -- Tingnan ang lahat ng proyekto at kung ano ang ginagawa nila
-- **[Mga Environment Variable](./environment-variables)** -- I-configure ang iyong mga `.env` file
+- **[Project Overview](./project-overview)** -- Tingnan ang lahat ng proyekto at kung ano ang ginagawa ng bawat isa
+- **[Environment Variables](./environment-variables)** -- I-configure ang iyong mga `.env` file

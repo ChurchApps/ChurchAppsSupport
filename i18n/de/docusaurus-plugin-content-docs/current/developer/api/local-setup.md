@@ -13,13 +13,13 @@ Diese Anleitung führt Sie durch die Einrichtung der ChurchApps-API für die lok
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Installieren Sie **Node.js 22+**, **Git** und **MySQL 8.0+** -- siehe [Voraussetzungen](../setup/prerequisites)
-- Erstellen Sie einen MySQL-Benutzer mit Berechtigungen zum Anlegen von Datenbanken
+- Installieren Sie **Node.js 22+**, **Git** und **MySQL 8.0+** – siehe [Voraussetzungen](../setup/prerequisites)
+- Legen Sie einen MySQL-Benutzer mit Berechtigungen zum Erstellen von Datenbanken an
 - Lesen Sie die Referenz [Umgebungsvariablen](../setup/environment-variables) für die API-Konfiguration
 
 </div>
 
-## Schrittweise Einrichtung
+## Schritt für Schritt
 
 ### 1. Repository klonen
 
@@ -29,7 +29,7 @@ git clone https://github.com/ChurchApps/Api.git
 
 ### 2. Abhängigkeiten installieren
 
-Das Projekt verwendet Yarn (eine Schutzmaßnahme blockiert `npm install`):
+Das Projekt verwendet Yarn (eine Schutzregel blockiert `npm install`):
 
 ```bash
 cd Api
@@ -56,10 +56,10 @@ Sie benötigen Verbindungszeichenfolgen für alle sechs Modul-Datenbanken (membe
 npm run initdb
 ```
 
-Dadurch werden alle sechs Datenbanken und ihre Tabellen automatisch erstellt.
+Dies erstellt automatisch alle sechs Datenbanken und ihre Tabellen.
 
 :::tip
-Sie können die Datenbank eines einzelnen Moduls mit `npm run initdb -- --module=membership` initialisieren (oder `attendance`, `content`, `giving`, `messaging`, `doing`).
+Sie können die Datenbank eines einzelnen Moduls mit `npm run initdb -- --module=membership` initialisieren (oder mit `attendance`, `content`, `giving`, `messaging`, `doing`).
 :::
 
 ### 5. Entwicklungsserver starten
@@ -80,38 +80,28 @@ Die API startet mit Hot Reload unter [http://localhost:8084](http://localhost:80
 | `npm run test:watch` | Tests im Watch-Modus ausführen |
 | `npm run lint` | ESLint mit automatischer Korrektur ausführen (ESLint ist der einzige Formatierer) |
 
-## Staging-Deployment
+## Deployment
 
-Um in die Staging-Umgebung zu deployen:
-
-```bash
-npm run deploy-staging
-```
-
-Dies führt einen Produktions-Build durch und deployt anschließend über das Serverless Framework.
-
-:::warning
-Stellen Sie sicher, dass Ihre AWS-Zugangsdaten konfiguriert sind, bevor Sie den Deploy-Befehl ausführen.
-:::
+Die Staging-Umgebung wurde eingestellt. Die API wird bei jedem Push auf `main` in die Demo-Umgebung deployt und über den manuellen Workflow **Deploy Prod** in die Produktion, der außerdem ausstehende Datenbankmigrationen anwendet. Einzelheiten finden Sie unter [API-Deployment](../deployment/apis).
 
 ## Lokale Bibliotheksentwicklung
 
-Wenn Sie eine gemeinsam genutzte Bibliothek (`@churchapps/helpers` oder `@churchapps/apihelper`) parallel zur API entwickeln müssen, erstellen Sie sie im [Packages](https://github.com/ChurchApps/Packages)-Workspace und fügen Sie in der API ein temporäres Yarn-Portal hinzu:
+Wenn Sie eine gemeinsam genutzte Bibliothek (`@churchapps/helpers` oder `@churchapps/apihelper`) zusammen mit der API entwickeln möchten, bauen Sie sie im Workspace [Packages](https://github.com/ChurchApps/Packages) und fügen in der API ein temporäres Yarn-Portal hinzu:
 
 ```bash
-# Im Packages-Workspace
+# In the Packages workspace
 yarn build
 
-# Im API-Verzeichnis
+# In the API directory
 yarn link ../Packages/helpers
-# ... testen ...
+# ... test ...
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-So können Sie Bibliotheksänderungen gegen die API testen, ohne sie auf npm zu veröffentlichen. Details finden Sie unter [Gemeinsam genutzte Bibliotheken](../shared-libraries/#local-development-against-a-consuming-app) -- und committen Sie niemals die Portal-Auflösung, die der Link in `package.json` schreibt.
+So können Sie Änderungen an Bibliotheken gegen die API testen, ohne sie in npm zu veröffentlichen. Einzelheiten finden Sie unter [Gemeinsam genutzte Bibliotheken](../shared-libraries/#local-development-against-a-consuming-app) – und committen Sie niemals die Portal-Auflösung, die der Link in `package.json` schreibt.
 
 ## Verwandte Artikel
 
-- **[Datenbank](./database)** -- Die Architektur einer Datenbank pro Modul verstehen
-- **[Modulstruktur](./module-structure)** -- Wie Controller, Repositories und Modelle organisiert sind
-- **[Gemeinsam genutzte Bibliotheken](../shared-libraries/)** -- Arbeiten mit `@churchapps/helpers` und `@churchapps/apihelper`
+- **[Datenbank](./database)** – Verständnis der Architektur mit einer Datenbank pro Modul
+- **[Modulstruktur](./module-structure)** – Wie Controller, Repositories und Modelle organisiert sind
+- **[Gemeinsam genutzte Bibliotheken](../shared-libraries/)** – Arbeiten mit `@churchapps/helpers` und `@churchapps/apihelper`

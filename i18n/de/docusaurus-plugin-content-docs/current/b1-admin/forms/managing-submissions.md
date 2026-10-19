@@ -32,7 +32,7 @@ Klicken Sie auf eine beliebige Einsendung, um alle Details anzuzeigen. Sie sehen
 
 Klicken Sie neben der Einsendung auf das **Druck-Symbol**, um die ausgefüllten Antworten dieser Person zu drucken – nützlich für eine Papierakte oder eine unterschriebene Einverständniserklärung, die Sie griffbereit halten müssen. Der Ausdruck zeigt oben Ihr Gemeindelogo (das **Logo für helle Hintergründe** aus [Website > Erscheinungsbild](../website/appearance.md), falls Sie eines hochgeladen haben), darunter den Namen Ihrer Gemeinde. Dies ist unabhängig vom [Drucken eines leeren Formulars](./creating-forms.md#printing-a-blank-form); hier wird nur die bereits übermittelte Antwort einer Person gedruckt, nicht ein leeres Exemplar. Das Druck-Symbol erscheint überall dort, wo eine Einsendung angezeigt wird, auch im [Profil einer Person](../people/adding-people.md#working-with-forms).
 
-## Die Person einer Einsendung ändern
+## Die Person einer Einsendung ändern {#changing-the-person-on-a-submission}
 
 Wenn eine Einsendung der falschen Person zugeordnet ist – etwa weil zwei Familienmitglieder dieselbe E-Mail-Adresse verwenden –, können Sie sie der richtigen Person zuordnen oder die Verknüpfung aufheben.
 

@@ -1,27 +1,27 @@
 ---
-title: "Lokalt API-oppsett"
+title: "Lokalt oppsett av API"
 ---
 
-# Lokalt API-oppsett
+# Lokalt oppsett av API
 
 <div class="article-intro">
 
-Denne veiledningen leder deg gjennom oppsettet av ChurchApps-API-et for lokal utvikling. Du vil klone repositoriet, konfigurere databasetilkoblingene dine, initialisere skjemaet og starte utviklingsserveren med hot reload.
+Denne veiledningen går gjennom oppsettet av ChurchApps-API-et for lokal utvikling. Du kloner repositoryet, konfigurerer databaseforbindelsene, initialiserer skjemaet og starter utviklingsserveren med hot reload.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Installer **Node.js 22+**, **Git** og **MySQL 8.0+** -- se [Forutsetninger](../setup/prerequisites)
+- Installer **Node.js 22+**, **Git** og **MySQL 8.0+**. Se [Forutsetninger](../setup/prerequisites)
 - Opprett en MySQL-bruker med rettigheter til å opprette databaser
-- Gå gjennom referansen for [miljøvariabler](../setup/environment-variables) for API-konfigurasjon
+- Se gjennom referansen for [miljøvariabler](../setup/environment-variables) for konfigurasjon av API-et
 
 </div>
 
-## Trinnvis oppsett
+## Trinn for trinn
 
-### 1. Klon repositoriet
+### 1. Klon repositoryet
 
 ```bash
 git clone https://github.com/ChurchApps/Api.git
@@ -42,13 +42,13 @@ yarn install
 cp .env.sample .env
 ```
 
-Åpne `.env` og konfigurer MySQL-tilkoblingsstrengene dine. Hver modul trenger sin egen databasetilkobling i følgende format:
+Åpne `.env` og konfigurer MySQL-forbindelsesstrengene. Hver modul trenger sin egen databaseforbindelse i følgende format:
 
 ```
 mysql://root:password@localhost:3306/dbname
 ```
 
-Du trenger tilkoblingsstrenger for alle seks moduldatabasene (membership, attendance, content, giving, messaging, doing).
+Du trenger forbindelsesstrenger for alle seks moduldatabasene (membership, attendance, content, giving, messaging, doing).
 
 ### 4. Initialiser databasene
 
@@ -59,7 +59,7 @@ npm run initdb
 Dette oppretter alle seks databasene og tabellene deres automatisk.
 
 :::tip
-Du kan initialisere databasen til én enkelt modul med `npm run initdb -- --module=membership` (eller `attendance`, `content`, `giving`, `messaging`, `doing`).
+Du kan initialisere databasen for én enkelt modul med `npm run initdb -- --module=membership` (eller `attendance`, `content`, `giving`, `messaging`, `doing`).
 :::
 
 ### 5. Start utviklingsserveren
@@ -74,44 +74,34 @@ API-et starter med hot reload på [http://localhost:8084](http://localhost:8084)
 
 | Kommando | Beskrivelse |
 |---------|-------------|
-| `npm run dev` | Start utviklingsserver med hot reload (tsx watch) |
+| `npm run dev` | Start utviklingsserveren med hot reload (tsx watch) |
 | `npm run build` | Rydd opp, kompiler TypeScript og kopier ressurser |
-| `npm run test` | Kjør tester med Jest (inkluderer dekningsgrad) |
+| `npm run test` | Kjør tester med Jest (inkluderer dekningsrapport) |
 | `npm run test:watch` | Kjør tester i watch-modus |
-| `npm run lint` | Kjør ESLint med automatisk retting (ESLint er den eneste formattereren) |
+| `npm run lint` | Kjør ESLint med automatisk retting (ESLint er den eneste formateringsverktøyet) |
 
-## Distribusjon til staging
+## Distribusjon
 
-For å distribuere til staging-miljøet:
+Staging-miljøet er avviklet. API-et distribueres til demomiljøet ved hver push til `main`, og til produksjon via den manuelle arbeidsflyten **Deploy Prod**, som også kjører ventende databasemigreringer. Se [distribusjon av API](../deployment/apis) for detaljer.
 
-```bash
-npm run deploy-staging
-```
+## Lokal utvikling av biblioteker
 
-Dette kjører et produksjonsbygg og distribuerer deretter via Serverless Framework.
-
-:::warning
-Sørg for at AWS-legitimasjonen din er konfigurert før du kjører distribusjonskommandoen.
-:::
-
-## Lokal biblioteksutvikling
-
-Hvis du trenger å utvikle et delt bibliotek (`@churchapps/helpers` eller `@churchapps/apihelper`) sammen med API-et, bygg det i [Packages](https://github.com/ChurchApps/Packages)-arbeidsområdet og legg til en midlertidig Yarn-portal i API-et:
+Hvis du trenger å utvikle et delt bibliotek (`@churchapps/helpers` eller `@churchapps/apihelper`) sammen med API-et, bygger du det i [Packages](https://github.com/ChurchApps/Packages)-arbeidsområdet og legger til en midlertidig Yarn-portal i API-et:
 
 ```bash
-# I Packages-arbeidsområdet
+# In the Packages workspace
 yarn build
 
-# I API-katalogen
+# In the API directory
 yarn link ../Packages/helpers
 # ... test ...
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Dette lar deg teste biblioteksendringer mot API-et uten å publisere til npm. Se [Delte biblioteker](../shared-libraries/#local-development-against-a-consuming-app) for detaljer -- og aldri commit portal-oppløsningen som lenken skriver til `package.json`.
+Dette lar deg teste endringer i biblioteker mot API-et uten å publisere til npm. Se [Delte biblioteker](../shared-libraries/#local-development-against-a-consuming-app) for detaljer. Og aldri commit portalløsningen som lenken skriver til `package.json`.
 
 ## Relaterte artikler
 
-- **[Database](./database)** -- Forstå database-per-modul-arkitekturen
-- **[Modulstruktur](./module-structure)** -- Hvordan kontrollere, repositorier og modeller er organisert
-- **[Delte biblioteker](../shared-libraries/)** -- Arbeide med `@churchapps/helpers` og `@churchapps/apihelper`
+- **[Database](./database)**: Forstå arkitekturen med én database per modul
+- **[Modulstruktur](./module-structure)**: Hvordan kontrollere, repositorier og modeller er organisert
+- **[Delte biblioteker](../shared-libraries/)**: Arbeid med `@churchapps/helpers` og `@churchapps/apihelper`

@@ -71,7 +71,7 @@ Cuando **Create a person record from submissions** está habilitado, también pu
 
 Cada vez que alguien envía el formulario, la persona encontrada o recién creada se agrega al grupo (los miembros que ya pertenecen al grupo se omiten). Esto es útil para cosas como un formulario de inscripción a un campamento que debe crear automáticamente la lista del grupo del campamento.
 
-### Enviar un correo de seguimiento
+### Enviar un correo de seguimiento {#sending-a-follow-up-email}
 
 Con **Create a person record from submissions** activado, también puedes enviar un correo electrónico a cada persona que envíe el formulario. Completa **Follow-up Email Subject** y **Follow-up Email Body** en los detalles del formulario. Puedes usar los marcadores `{firstName}` y `{churchName}` en ambos campos. El correo solo se envía cuando ambos campos están completos.
 

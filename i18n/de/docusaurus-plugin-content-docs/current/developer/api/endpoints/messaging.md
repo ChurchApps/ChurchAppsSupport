@@ -6,38 +6,45 @@ title: "Messaging-Endpunkte"
 
 <div class="article-intro">
 
-Das Messaging-Modul verwaltet Echtzeit-Gespräche, Chat-Nachrichten, Push-Benachrichtigungen, SMS-/E-Mail-Zustellung, WebSocket-Verbindungen, private Nachrichten, Geräteregistrierung und SMS-Anbieter. Es bietet die Kommunikationsschicht, die in allen ChurchApps-Anwendungen für Live-Streaming-Chat und asynchrone Benachrichtigungen verwendet wird.
+Das Messaging-Modul verwaltet Echtzeit-Unterhaltungen, Chat-Nachrichten, Push-Benachrichtigungen, SMS-/E-Mail-Zustellung, WebSocket-Verbindungen, private Nachrichten, Geräteregistrierung und Texting-Anbieter. Es stellt die Kommunikationsschicht bereit, die in allen ChurchApps-Anwendungen sowohl für Live-Streaming-Chats als auch für asynchrone Benachrichtigungen genutzt wird.
 
 </div>
 
 **Basispfad:** `/messaging`
 
-## Gespräche
+## Unterhaltungen
 
 Basispfad: `/messaging/conversations`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
-|---------|------|------|--------------|-------------|
-| GET | `/timeline/ids?ids=` | JWT | — | Gespräche nach komma-getrennten IDs mit ersten/letzten Nachrichten laden |
-| GET | `/messages/:contentType/:contentId` | JWT | — | Gespräche für Inhalte mit paginierten Nachrichten laden (`?page=&limit=`) |
-| GET | `/posts` | JWT | — | Posten-Typ-Gespräche für die Gruppen des aktuellen Benutzers abrufen |
-| GET | `/posts/group/:groupId` | JWT | — | Posten-Typ-Gespräche für eine bestimmte Gruppe abrufen |
-| GET | `/current/:churchId/:contentType/:contentId` | Public | — | Das aktuelle Gespräch für Inhalte abrufen oder erstellen (auto-entschlüsselt contentId) |
-| GET | `/:churchId/:contentType/:contentId` | Public | — | Gespräche nach Inhaltstyp und ID laden |
-| GET | `/:churchId/:id` | Public | — | Ein einzelnes Gespräch nach ID laden |
-| POST | `/` | JWT | — | Gespräche erstellen oder aktualisieren (Batch) |
-| POST | `/start` | JWT | — | Ein neues Gespräch mit einer anfänglichen Kommentarnachricht starten |
-| DELETE | `/:churchId/:id` | JWT | — | Gespräch löschen |
+|--------|------|------|------------|-------------|
+| GET | `/timeline/ids?ids=` | JWT | — | Unterhaltungen anhand kommagetrennter IDs mit ersten/letzten Nachrichten laden |
+| GET | `/messages/:contentType/:contentId` | JWT | — | Unterhaltungen für Inhalte mit paginierten Nachrichten laden (`?page=&limit=`) |
+| GET | `/posts` | JWT | — | Unterhaltungen vom Typ „Beitrag“ für die Gruppen des aktuellen Benutzers abrufen |
+| GET | `/posts/group/:groupId` | JWT | — | Unterhaltungen vom Typ „Beitrag“ für eine bestimmte Gruppe abrufen |
+| GET | `/current/:churchId/:contentType/:contentId` | Öffentlich | — | Aktuelle Unterhaltung für Inhalte abrufen oder erstellen (entschlüsselt contentId automatisch) |
+| GET | `/:churchId/:contentType/:contentId` | Öffentlich | — | Unterhaltungen anhand von Inhaltstyp und ID laden |
+| GET | `/:churchId/:id` | Öffentlich | — | Eine einzelne Unterhaltung anhand der ID laden |
+| POST | `/` | JWT | — | Unterhaltungen erstellen oder aktualisieren (Stapelverarbeitung) |
+| POST | `/start` | JWT | — | Eine neue Unterhaltung mit einer ersten Kommentarnachricht starten |
+| DELETE | `/:churchId/:id` | JWT | — | Eine Unterhaltung löschen |
 
 ### Zugriffskontrolle für Personennotizen
 
-Gespräche mit `contentType: "person"` (der Notizenreiter auf einem Personendatensatz) oder `contentType: "personConfidential"` (der Abschnitt mit vertraulichen Notizen) werden auf jedem Lese- und Schreibpfad, einschließlich der oben erwähnten öffentlichen Routen, die für diese Inhaltstypen `401` zurückgeben, gated. `person` erfordert die MembershipApi-Berechtigung **People / Edit**; `personConfidential` erfordert **People / View Confidential Notes**. Für scoped API-Schlüssel trägt `people:write` beide Aktionen (der Benutzer des Schlüssels muss immer noch die zugrunde liegende Rollenberechtigung halten).
+Unterhaltungen mit `contentType: "person"` (der Tab „Notizen“ im Personendatensatz) oder `contentType: "personConfidential"` (der Bereich „Vertrauliche Notizen“) sind bei jedem Lese- und Schreibzugriff geschützt, auch über die oben aufgeführten öffentlichen Routen, die für diese Inhaltstypen `401` zurückgeben. `person` erfordert die MembershipApi-Berechtigung **Personen / Bearbeiten**; `personConfidential` erfordert **Personen / Vertrauliche Notizen anzeigen**. Für eingeschränkte API-Schlüssel umfasst `people:write` beide Aktionen (der Benutzer des Schlüssels muss weiterhin die zugrunde liegende Rollenberechtigung besitzen).
 
-### Zugriffskontrolle für Notizen von Workflow-Karten
+### Zugriffskontrolle für Gruppen- und Veranstaltungsnotizen {#group-and-event-notes-access-control}
 
-Gespräche mit `contentType: "workflowCard"` (die Notizen zu einer Workflow-Karte, wobei `contentId` die Aufgaben-ID der Karte ist) können nur von Personen gelesen und geschrieben werden, die diese Karte öffnen können: ein Benutzer mit der DoingApi-Berechtigung **Tasks / View** oder die Person bzw. Gruppe, der die Karte zugewiesen ist, von der sie erstellt wurde oder um die es geht. Alle anderen erhalten bei jedem Lesepfad `401`, einschließlich der oben genannten öffentlichen Routen. Das Gespräch einer Karte wird über die Karte selbst angehängt, mit `POST /doing/tasks/:id/conversation` (Body `{ "conversationId": "..." }`; das zuerst angehängte Gespräch gewinnt), was die Bearbeiter der Karte und ihr Zugewiesener aufrufen können.
+Zwei weitere Notizentypen sind auf die gleiche Weise geschützt, bei jedem Lese- und Schreibzugriff (auch über die oben genannten öffentlichen Routen), und sind niemals für anonyme Beiträge offen:
 
-### Beispiel: Ein Gespräch starten
+- **`groupNote`** (`contentId` = Gruppen-ID) -- der Feed **Leiter-Notizen** einer Gruppe. Nur die Leiter dieser Gruppe (`leaderGroupIds` im JWT) können lesen oder posten. Keine Mitarbeiterberechtigung gewährt Zugriff, auch nicht `content.edit` und die Berechtigungen zur Gruppenmitgliedschaft.
+- **`eventNote`** (`contentId` = Veranstaltungs-ID) -- die Notizen zu einer Kalenderveranstaltung. Mitarbeiter mit `content.edit` oder **Kalender / Administrator** können immer lesen und posten. Andernfalls richtet sich der Zugriff nach dem Feld `notesViewRole` (Lesen) und `notesPostRole` (Posten) der Veranstaltung: `staff` (der Standardwert, der verwendet wird, wenn das Feld `null` ist) erlaubt sonst niemandem Zugriff, `leaders` erlaubt den Leitern der Gruppe der Veranstaltung Zugriff, und `members` erlaubt den Mitgliedern und Leitern der Veranstaltungsgruppe Zugriff. Eine Veranstaltung ohne `groupId` ist nur für Mitarbeiter zugänglich.
+
+### Zugriffskontrolle für Notizen zu Workflow-Karten
+
+Unterhaltungen mit `contentType: "workflowCard"` (die Notizen zu einer Workflow-Karte, wobei `contentId` die Task-ID der Karte ist) können nur von Personen gelesen und geschrieben werden, die diese Karte öffnen dürfen: ein Benutzer mit der DoingApi-Berechtigung **Aufgaben / Anzeigen** oder die Person bzw. Gruppe, der die Karte zugewiesen ist, von der sie erstellt wurde oder die sie betrifft. Alle anderen erhalten bei jedem Lesezugriff `401`, auch über die oben genannten öffentlichen Routen. Die Unterhaltung einer Karte wird über die Karte selbst mit `POST /doing/tasks/:id/conversation` (Body `{ "conversationId": "..." }`; die zuerst angehängte Unterhaltung gewinnt) angehängt, was die Bearbeiter der Karte und ihr Verantwortlicher aufrufen können.
+
+### Beispiel: Eine Unterhaltung starten
 
 ```
 POST /messaging/conversations/start
@@ -71,28 +78,28 @@ Authorization: Bearer <token>
 Basispfad: `/messaging/messages`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
-|---------|------|------|--------------|-------------|
-| GET | `/conversation/:conversationId` | JWT | — | Alle Nachrichten für ein Gespräch laden |
-| GET | `/catchup/:churchId/:conversationId` | Public | — | Alle Nachrichten für ein Gespräch laden (öffentlicher Aufholmodus für Live-Chat) |
-| GET | `/:churchId/:id` | Public | — | Eine einzelne Nachricht nach ID laden |
-| POST | `/` | JWT | — | Nachrichten speichern (Batch). Sendet Echtzeit-Updates und löst Benachrichtigungen aus. Zum Aktualisieren einer vorhandenen Nachricht müssen Sie der Autor sein oder `content.edit` halten; der gespeicherte Autor kann nicht umgestaltet werden |
-| POST | `/send` | Public | — | Nachrichten senden (Batch, öffentlich). Sendet Echtzeit-Updates über WebSocket und löst Benachrichtigungen aus |
-| POST | `/setCallout` | JWT | — | (legacy) Broadcast eine Callout-Nachricht in Echtzeit. Kein aktiver Client; Live-Stream-Chat rendert Callouts nicht mehr |
-| DELETE | `/:churchId/:id` | JWT | — | Nachricht löschen und Löschung in Echtzeit broadcasten. Siehe [Nachrichtenmoderation](#nachrichtenmoderation) |
+|--------|------|------|------------|-------------|
+| GET | `/conversation/:conversationId` | JWT | — | Alle Nachrichten einer Unterhaltung laden |
+| GET | `/catchup/:churchId/:conversationId` | Öffentlich | — | Alle Nachrichten einer Unterhaltung laden (öffentlicher Catch-up für Live-Chat) |
+| GET | `/:churchId/:id` | Öffentlich | — | Eine einzelne Nachricht anhand der ID laden |
+| POST | `/` | JWT | — | Nachrichten speichern (Stapelverarbeitung). Sendet Echtzeit-Updates und löst Benachrichtigungen aus. Das Aktualisieren einer vorhandenen Nachricht erfordert, dass man ihr Autor ist oder `content.edit` besitzt; der gespeicherte Autor kann niemals neu zugewiesen werden |
+| POST | `/send` | Öffentlich | — | Nachrichten senden (Stapelverarbeitung, öffentlich). Sendet Echtzeit-Updates über WebSocket und löst Benachrichtigungen aus |
+| POST | `/setCallout` | JWT | — | (veraltet) Eine Hinweisnachricht in Echtzeit übertragen. Kein aktiver Client; der Live-Stream-Chat zeigt Hinweise nicht mehr an |
+| DELETE | `/:churchId/:id` | JWT | — | Eine Nachricht löschen und die Löschung in Echtzeit übertragen. Siehe [Moderation von Nachrichten](#message-moderation) |
 
-### Nachrichtenmoderation
+### Moderation von Nachrichten {#message-moderation}
 
-Löschen einer Nachricht ist erlaubt für:
+Das Löschen einer Nachricht ist erlaubt für:
 
 - den Autor der Nachricht;
-- Personal mit `content.edit` (überall in der Kirche);
-- **Gruppenleiter**, für Gespräche mit einem `contentType` von `group` oder `groupAnnouncement`, dessen `contentId` eine Gruppe ist, die sie leiten (`leaderGroupIds` auf dem JWT).
+- Mitarbeiter mit `content.edit` (in der gesamten Kirche);
+- **Gruppenleiter** für Unterhaltungen mit einem `contentType` von `group` oder `groupAnnouncement`, deren `contentId` eine Gruppe ist, die sie leiten (`leaderGroupIds` im JWT).
 
-Personennoten-Gespräche (`person` / `personConfidential`) werden nie von Leitern moderiert -- sie verwenden die Noten-Berechtigungen (`people.edit`, `people.viewConfidentialNotes`) stattdessen.
+Unterhaltungen zu Personennotizen (`person` / `personConfidential`) werden niemals von Gruppenleitern moderiert -- dafür gelten stattdessen die Notizberechtigungen (`people.edit`, `people.viewConfidentialNotes`).
 
-Leiter erhalten nur das Löschen, nicht das Bearbeiten: Das Umschreiben der Nachricht eines anderen Mitglieds bleibt auf den Autor und `content.edit` Personal beschränkt.
+Leiter erhalten nur das Löschrecht, nicht das Bearbeitungsrecht: Das Umschreiben der Nachricht eines anderen Mitglieds bleibt auf den Autor und Mitarbeiter mit `content.edit` beschränkt.
 
-### Beispiel: Nachricht senden
+### Beispiel: Eine Nachricht senden
 
 ```
 POST /messaging/messages/send
@@ -129,29 +136,29 @@ POST /messaging/messages/send
 Basispfad: `/messaging/privatemessages`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
-|---------|------|------|--------------|-------------|
-| GET | `/` | JWT | — | Alle privaten Nachrichten für den aktuellen Benutzer laden (enthält letzte Nachricht pro Gespräch, markiert alles als gelesen) |
-| GET | `/existing/:personId` | JWT | — | Ein vorhandenes privates Gespräch mit einer bestimmten Person finden |
-| GET | `/:id` | JWT | — | Eine private Nachricht nach ID laden (löscht Benachrichtigung, falls für aktuellen Benutzer adressiert) |
-| POST | `/` | JWT | — | Private Nachrichten senden (Batch). Löst Push-Benachrichtigung an Empfänger aus |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | — | Alle privaten Nachrichten des aktuellen Benutzers laden (enthält die letzte Nachricht pro Unterhaltung und markiert alle als gelesen) |
+| GET | `/existing/:personId` | JWT | — | Eine bestehende private Unterhaltung mit einer bestimmten Person finden |
+| GET | `/:id` | JWT | — | Eine private Nachricht anhand der ID laden (entfernt die Benachrichtigung, falls sie an den aktuellen Benutzer gerichtet ist) |
+| POST | `/` | JWT | — | Private Nachrichten senden (Stapelverarbeitung). Löst eine Push-Benachrichtigung beim Empfänger aus |
 
 ## Benachrichtigungen
 
 Basispfad: `/messaging/notifications`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
-|---------|------|------|--------------|-------------|
-| GET | `/unreadCount` | JWT | — | Ungelesene Benachrichtigungsanzahl für den aktuellen Benutzer abrufen |
-| GET | `/my` | JWT | — | Alle Benachrichtigungen für den aktuellen Benutzer laden (markiert alles als gelesen) |
-| GET | `/tmpEmail` | Public | — | Tägliche E-Mail-Benachrichtigungszusammenfassung auslösen (Debug-/Cron-Endpunkt) |
-| GET | `/:churchId/person/:personId` | JWT | — | Benachrichtigungen für eine bestimmte Person laden |
-| GET | `/:churchId/:id` | JWT | — | Benachrichtigung nach ID laden |
-| POST | `/` | JWT | — | Benachrichtigungen erstellen oder aktualisieren (Batch) |
+|--------|------|------|------------|-------------|
+| GET | `/unreadCount` | JWT | — | Anzahl ungelesener Benachrichtigungen für den aktuellen Benutzer abrufen |
+| GET | `/my` | JWT | — | Alle Benachrichtigungen des aktuellen Benutzers laden (markiert alle als gelesen) |
+| GET | `/tmpEmail` | Öffentlich | — | Die tägliche E-Mail-Zusammenfassung der Benachrichtigungen auslösen (Debug-/Cron-Endpunkt) |
+| GET | `/:churchId/person/:personId` | JWT | — | Benachrichtigungen einer bestimmten Person laden |
+| GET | `/:churchId/:id` | JWT | — | Eine Benachrichtigung anhand der ID laden |
+| POST | `/` | JWT | — | Benachrichtigungen erstellen oder aktualisieren (Stapelverarbeitung) |
 | POST | `/create` | JWT | — | Benachrichtigungen für mehrere Personen erstellen. Body: `{ peopleIds, contentType, contentId, message, link }` |
-| POST | `/markRead/:churchId/:personId` | JWT | — | Alle Benachrichtigungen als gelesen für eine Person markieren |
-| POST | `/sendTest` | JWT | — | Test-Push-Benachrichtigung senden. Body: `{ personId, title }` |
-| POST | `/ping` | Public | — | Benachrichtigung von einem externen Trigger erstellen. Body: `{ personId, churchId, contentType, contentId, message, triggeredByPersonId }` |
-| DELETE | `/:churchId/:id` | JWT | — | Benachrichtigung löschen |
+| POST | `/markRead/:churchId/:personId` | JWT | — | Alle Benachrichtigungen einer Person als gelesen markieren |
+| POST | `/sendTest` | JWT | — | Eine Test-Push-Benachrichtigung senden. Body: `{ personId, title }` |
+| POST | `/ping` | Öffentlich | — | Eine Benachrichtigung über einen externen Auslöser erstellen. Body: `{ personId, churchId, contentType, contentId, message, triggeredByPersonId }` |
+| DELETE | `/:churchId/:id` | JWT | — | Eine Benachrichtigung löschen |
 
 ### Beispiel: Benachrichtigungen erstellen
 
@@ -173,42 +180,42 @@ Authorization: Bearer <token>
 Basispfad: `/messaging/notificationpreferences`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
-|---------|------|------|--------------|-------------|
+|--------|------|------|------------|-------------|
 | GET | `/categories` | JWT | — | Benachrichtigungskategorien mit ihren Standard- und erlaubten Kanälen auflisten |
-| GET | `/my` | JWT | — | Benachrichtigungseinstellungen für den aktuellen Benutzer laden (erstellt automatisch Standardeinstellungen, falls keine vorhanden) |
-| POST | `/` | JWT | — | Die Einstellungen des aktuellen Benutzers speichern. Body: beliebige von `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, plus optional `overrides: [{ categoryKey, channel, optedIn }]` (channel kann `push`, `email`, `in_app` oder `sms` sein; gesperrte Kategorien werden ignoriert). `allowSms` ist die Zustimmung des Mitglieds zu Textnachricht-Erinnerungen. Ein älterer Body als Zeilen-Array wird weiterhin akzeptiert |
+| GET | `/my` | JWT | — | Benachrichtigungseinstellungen des aktuellen Benutzers laden (erstellt Standardwerte automatisch, falls keine vorhanden sind) |
+| POST | `/` | JWT | — | Die Einstellungen des aktuellen Benutzers speichern. Body: beliebige der Felder `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, sowie optional `overrides: [{ categoryKey, channel, optedIn }]` (channel kann `push`, `email`, `in_app` oder `sms` sein; gesperrte Kategorien werden ignoriert). `allowSms` ist die Einwilligung des Mitglieds für Textnachricht-Erinnerungen. Ein veralteter Body als Array von Zeilen wird weiterhin akzeptiert |
 
 ## Verbindungen
 
 Basispfad: `/messaging/connections`
 
-Verwaltet WebSocket-/Echtzeit-Verbindungen für Chat, Gruppengespräche, private Nachrichten und Live-Streaming. Siehe [Echtzeit-Architektur](../../realtime) für das End-to-End-Protokoll.
+Verwaltet WebSocket-/Echtzeitverbindungen für Chat, Gruppenunterhaltungen, private Nachrichten und Live-Streaming. Das vollständige Protokoll finden Sie unter [Echtzeit-Architektur](../../realtime).
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
-|---------|------|------|--------------|-------------|
-| GET | `/:churchId/:conversationId` | Public | — | Alle Verbindungen für ein Gespräch laden |
-| POST | `/` | Public | — | Verbindungen registrieren (Batch). Löst eine Präsenz-Broadcast auf dem Gespräch aus. Body-Elemente: `{ churchId, conversationId, socketId, displayName?, personId? }` |
-| POST | `/setName` | Public | — | Anzeigenamen für eine Verbindung nach Socket-ID aktualisieren. Body: `{ socketId, name }` |
-| DELETE | `/:churchId/:conversationId/:socketId` | Public | — | Verbindung aus einem Gespräch löschen. Löst eine Präsenz-Broadcast aus |
-| POST | `/tmpSendAlert` | Public | — | Benachrichtigungsmeldung an die Verbindungen einer Person senden. Body: `{ churchId, personId }` |
+|--------|------|------|------------|-------------|
+| GET | `/:churchId/:conversationId` | Öffentlich | — | Alle Verbindungen einer Unterhaltung laden |
+| POST | `/` | Öffentlich | — | Verbindungen registrieren (Stapelverarbeitung). Löst eine Anwesenheitsübertragung in der Unterhaltung aus. Body-Elemente: `{ churchId, conversationId, socketId, displayName?, personId? }` |
+| POST | `/setName` | Öffentlich | — | Den Anzeigenamen einer Verbindung anhand der Socket-ID aktualisieren. Body: `{ socketId, name }` |
+| DELETE | `/:churchId/:conversationId/:socketId` | Öffentlich | — | Eine Verbindung aus einer Unterhaltung entfernen. Löst eine Anwesenheitsübertragung aus |
+| POST | `/tmpSendAlert` | Öffentlich | — | Eine Benachrichtigung an die Verbindungen einer Person senden. Body: `{ churchId, personId }` |
 
 ## Geräte
 
 Basispfad: `/messaging/devices`
 
-Verwaltet die Geräteregistrierung für Push-Benachrichtigungen und Inhalte-Pairing (z.B. Lessons-App auf TV-Bildschirmen).
+Verwaltet die Geräteregistrierung für Push-Benachrichtigungen und die Inhaltskopplung (z. B. die Lessons-App auf TV-Displays).
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
-|---------|------|------|--------------|-------------|
-| POST | `/enroll` | JWT | — | Ein Gerät registrieren oder aktualisieren (mobile Push-Registrierung). Entspricht nach FCM-Token oder Geräte-ID |
-| POST | `/enrollAnon` | Public | — | Ein anonymes Gerät registrieren und einen 4-stelligen Pairing-Code generieren |
-| POST | `/` | Public | — | Geräte speichern (Batch) |
-| GET | `/pair/:pairingCode` | JWT | — | Ein Gerät mit seinem Pairing-Code koppeln. Optional `?contentType=&contentId=` zum Zuweisen von Inhalten |
-| GET | `/status/:deviceId` | Public | — | Pairing-Status eines Geräts überprüfen |
-| GET | `/:churchId` | JWT | — | Alle Geräte für eine Kirche laden |
-| GET | `/:churchId/person/:personId` | JWT | — | Alle Geräte für eine Person laden |
-| GET | `/:churchId/:id` | JWT | — | Ein Gerät nach ID laden |
-| DELETE | `/:churchId/:id` | JWT | — | Gerät löschen |
+|--------|------|------|------------|-------------|
+| POST | `/enroll` | JWT | — | Ein Gerät registrieren oder aktualisieren (Registrierung für mobile Push-Nachrichten). Die Zuordnung erfolgt über das FCM-Token oder die Geräte-ID |
+| POST | `/enrollAnon` | Öffentlich | — | Ein anonymes Gerät registrieren und einen 4-stelligen Kopplungscode erzeugen |
+| POST | `/` | Öffentlich | — | Geräte speichern (Stapelverarbeitung) |
+| GET | `/pair/:pairingCode` | JWT | — | Ein Gerät anhand seines Kopplungscodes koppeln. Optional `?contentType=&contentId=`, um Inhalte zuzuweisen |
+| GET | `/status/:deviceId` | Öffentlich | — | Den Kopplungsstatus eines Geräts prüfen |
+| GET | `/:churchId` | JWT | — | Alle Geräte einer Kirche laden |
+| GET | `/:churchId/person/:personId` | JWT | — | Alle Geräte einer Person laden |
+| GET | `/:churchId/:id` | JWT | — | Ein Gerät anhand der ID laden |
+| DELETE | `/:churchId/:id` | JWT | — | Ein Gerät löschen |
 
 ### Beispiel: Ein Gerät registrieren
 
@@ -236,39 +243,39 @@ Authorization: Bearer <token>
 }
 ```
 
-## Geräte-Inhalte
+## Gerätinhalte
 
 Basispfad: `/messaging/devicecontents`
 
-Verwaltet Inhaltszuordnungen für gekoppelte Geräte (z.B. welche Lektion auf einem Fernseher angezeigt wird).
+Verwaltet Inhaltszuweisungen für gekoppelte Geräte (z. B. welche Lektion auf einem Fernseher angezeigt wird).
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
-|---------|------|------|--------------|-------------|
-| GET | `/deviceId/:deviceId` | JWT | — | Inhaltszuordnungen für ein Gerät laden |
-| POST | `/` | JWT | — | Geräte-Inhaltszuordnungen speichern (Batch) |
-| DELETE | `/:id` | JWT | — | Geräte-Inhaltszuordnung löschen |
+|--------|------|------|------------|-------------|
+| GET | `/deviceId/:deviceId` | JWT | — | Inhaltszuweisungen eines Geräts laden |
+| POST | `/` | JWT | — | Inhaltszuweisungen von Geräten speichern (Stapelverarbeitung) |
+| DELETE | `/:id` | JWT | — | Eine Inhaltszuweisung eines Geräts löschen |
 
-## SMS
+## Texting
 
 Basispfad: `/messaging/texting`
 
-Verwaltet SMS-SMS-Anbieter, Gruppen-SMS und Zustellungsverfolgung.
+Verwaltet SMS-Texting-Anbieter, Gruppen-Textnachrichten und die Nachverfolgung der Zustellung.
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
-|---------|------|------|--------------|-------------|
-| GET | `/providers` | JWT | — | SMS-Anbieter für die Kirche laden (Anmeldedaten sind maskiert) |
-| GET | `/status` | JWT | — | `{ enabled }` — ob die Kirche einen aktivierten SMS-Anbieter hat. Jeder angemeldete Kirchenbenutzer; wird verwendet, um **Text**-Optionen nur anzuzeigen, wenn SMS gesendet werden können |
-| GET | `/inboundUrl` | JWT | `texting.send` oder `settings.edit` | `{ url }` — die eingehende (STOP-)Webhook-URL der Kirche, die beim Anbieter eingefügt wird |
-| POST | `/inbound/:churchId/:token` | Public | — | Webhook für eingehende Nachrichten des Anbieters. `token` ist ein HMAC der Kirchen-ID. Eine Antwort, die genau einem Stopp-Wort entspricht (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`), markiert jede passende Person als `optedOut` und schaltet deren `allowSms` aus. Gibt `{ optedOut: <count> }` zurück; andere Antworten geben `{ optedOut: 0 }` zurück |
-| GET | `/preview/:groupId` | JWT | — | Vorschau der Empfänger für eine Gruppen-SMS (berechtigt, abmelden, keine Telefonnummern) |
-| GET | `/sent` | JWT | — | Alle gesendeten SMS-Datensätze für die Kirche laden |
-| GET | `/sent/:id/details` | JWT | — | Eine gesendete SMS mit Pro-Empfänger-Zustellungsprotokollen laden |
-| POST | `/providers` | JWT | — | SMS-Anbieter speichern (Batch). Verschlüsselt API-Anmeldedaten |
-| POST | `/send` | JWT | — | Eine SMS an alle berechtigten Mitglieder einer Gruppe senden. Body: `{ groupId, message }`. Merge-Felder (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}`) werden pro Empfänger aufgelöst |
-| POST | `/sendPerson` | JWT | — | SMS an eine einzelne Person senden. Body: `{ personId, phoneNumber, message }`. Merge-Felder werden aufgelöst und der gelöste Text ist das, was protokolliert wird |
-| DELETE | `/providers/:id` | JWT | — | SMS-Anbieter löschen |
+|--------|------|------|------------|-------------|
+| GET | `/providers` | JWT | — | Texting-Anbieter der Kirche laden (Zugangsdaten sind maskiert) |
+| GET | `/status` | JWT | — | `{ enabled }` -- ob die Kirche einen aktivierten Texting-Anbieter hat. Jeder angemeldete Kirchenbenutzer; wird verwendet, um **Text**-Optionen nur anzuzeigen, wenn Textnachrichten gesendet werden können |
+| GET | `/inboundUrl` | JWT | `texting.send` oder `settings.edit` | `{ url }` -- die eingehende Webhook-URL (STOP) der Kirche, die beim Anbieter eingetragen wird |
+| POST | `/inbound/:churchId/:token` | Öffentlich | — | Webhook für eingehende Nachrichten des Anbieters. `token` ist ein HMAC der Kirchen-ID. Eine Antwort, die genau einem Stoppwort entspricht (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`), markiert jede passende Person als `optedOut` und deaktiviert deren `allowSms`. Gibt `{ optedOut: <count> }` zurück; andere Antworten geben `{ optedOut: 0 }` zurück |
+| GET | `/preview/:groupId` | JWT | — | Empfänger einer Gruppen-Textnachricht vorab anzeigen (Anzahl berechtigter, abgemeldeter und Personen ohne Telefonnummer) |
+| GET | `/sent` | JWT | — | Alle gesendeten Textnachrichten-Datensätze der Kirche laden |
+| GET | `/sent/:id/details` | JWT | — | Eine gesendete Textnachricht mit Zustellprotokollen pro Empfänger laden |
+| POST | `/providers` | JWT | — | Texting-Anbieter speichern (Stapelverarbeitung). Verschlüsselt API-Zugangsdaten |
+| POST | `/send` | JWT | — | Eine SMS an alle berechtigten Mitglieder einer Gruppe senden. Body: `{ groupId, message }`. Platzhalterfelder (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}`) werden für jeden Empfänger aufgelöst |
+| POST | `/sendPerson` | JWT | — | Eine SMS an eine einzelne Person senden. Body: `{ personId, phoneNumber, message }`. Platzhalterfelder werden aufgelöst, und der aufgelöste Text wird protokolliert |
+| DELETE | `/providers/:id` | JWT | — | Einen Texting-Anbieter löschen |
 
-### Beispiel: Gruppen-SMS senden
+### Beispiel: Gruppen-Textnachricht senden
 
 ```
 POST /messaging/texting/send
@@ -295,18 +302,18 @@ Authorization: Bearer <token>
 
 Basispfad: `/messaging/emailTemplates`
 
-Verwaltet wiederverwendbare E-Mail-Vorlagen und Versand von vorlagigen E-Mails an Gruppen.
+Verwaltet wiederverwendbare E-Mail-Vorlagen und das Senden von vorlagenbasierten E-Mails an Gruppen.
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
-|---------|------|------|--------------|-------------|
-| GET | `/` | JWT | — | Alle E-Mail-Vorlagen für die Kirche laden |
-| GET | `/:id` | JWT | — | Eine einzelne E-Mail-Vorlage nach ID laden |
-| GET | `/preview/:groupId` | JWT | — | Vorschau der E-Mail-Zustellung für eine Gruppe (berechtigte Empfängeranzahl, Mitglieder ohne E-Mail) |
-| POST | `/` | JWT | — | E-Mail-Vorlagen erstellen oder aktualisieren (Batch) |
-| POST | `/send` | JWT | — | Eine vorlagige E-Mail an alle Mitglieder einer Gruppe senden. Body: `{ groupId, subject, htmlContent }` |
-| DELETE | `/:id` | JWT | — | E-Mail-Vorlage löschen |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | — | Alle E-Mail-Vorlagen der Kirche laden |
+| GET | `/:id` | JWT | — | Eine einzelne E-Mail-Vorlage anhand der ID laden |
+| GET | `/preview/:groupId` | JWT | — | E-Mail-Zustellung für eine Gruppe vorab anzeigen (Anzahl berechtigter Empfänger, Mitglieder ohne E-Mail-Adresse) |
+| POST | `/` | JWT | — | E-Mail-Vorlagen erstellen oder aktualisieren (Stapelverarbeitung) |
+| POST | `/send` | JWT | — | Eine vorlagenbasierte E-Mail an alle Mitglieder einer Gruppe senden. Body: `{ groupId, subject, htmlContent }` |
+| DELETE | `/:id` | JWT | — | Eine E-Mail-Vorlage löschen |
 
-### Beispiel: E-Mail an Gruppe senden
+### Beispiel: E-Mail an eine Gruppe senden
 
 ```
 POST /messaging/emailTemplates/send
@@ -329,37 +336,37 @@ Authorization: Bearer <token>
 }
 ```
 
-**Unterstützte Merge-Felder:** `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`
+**Unterstützte Platzhalterfelder:** `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`
 
-## Blockierte IPs
+## Gesperrte IP-Adressen
 
 Basispfad: `/messaging/blockedips`
 
-(legacy) IP-Blockierung für Live-Streaming-Chat. Der B1App-Client ruft `POST /` nicht mehr auf -- IP-Blockierung wurde beim vereinheitlichten Lieferprozess entfernt. Die Route `/clear` wird immer noch Server-zu-Server von `StreamingServiceController` aufgerufen, wenn Streaming-Services gespeichert werden.
+(veraltet) IP-Sperre für den Live-Streaming-Chat. Der B1App-Client ruft `POST /` nicht mehr auf -- die IP-Sperre wurde bei der Umstellung auf die einheitliche Zustellung entfernt. Die Route `/clear` wird weiterhin serverseitig von `StreamingServiceController` aufgerufen, wenn Streaming-Dienste gespeichert werden.
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
-|---------|------|------|--------------|-------------|
-| POST | `/` | JWT | — | (legacy) Blockierte IPs speichern (Batch). Kein aktiver Client |
-| POST | `/clear` | JWT | — | Alle blockierten IPs für bestimmte Services löschen. Body: `[{ serviceId, churchId }]` |
+|--------|------|------|------------|-------------|
+| POST | `/` | JWT | — | (veraltet) Gesperrte IP-Adressen speichern (Stapelverarbeitung). Kein aktiver Client |
+| POST | `/clear` | JWT | — | Alle gesperrten IP-Adressen für bestimmte Dienste löschen. Body: `[{ serviceId, churchId }]` |
 
-## Zustellungsprotokolle
+## Zustellprotokolle
 
 Basispfad: `/messaging/deliverylogs`
 
-Verfolgt den Zustellungsstatus für gesendete Nachrichten (SMS, Push-Benachrichtigungen, E-Mail).
+Verfolgt den Zustellstatus gesendeter Nachrichten (SMS, Push-Benachrichtigungen, E-Mail).
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
-|---------|------|------|--------------|-------------|
-| GET | `/content/:contentType/:contentId` | JWT | — | Zustellungsprotokolle nach Inhaltstyp und ID laden |
-| GET | `/person/:personId` | JWT | — | Zustellungsprotokolle für eine Person laden. Optional `?startDate=&endDate=` Filter |
-| GET | `/recent` | JWT | — | Aktuelle Zustellungsprotokolle für die Kirche laden. Optional `?limit=` (Standard 100) |
-| GET | `/:id` | JWT | — | Zustellungsprotokoll nach ID laden |
+|--------|------|------|------------|-------------|
+| GET | `/content/:contentType/:contentId` | JWT | — | Zustellprotokolle anhand von Inhaltstyp und ID laden |
+| GET | `/person/:personId` | JWT | — | Zustellprotokolle einer Person laden. Optionale Filter `?startDate=&endDate=` |
+| GET | `/recent` | JWT | — | Aktuelle Zustellprotokolle der Kirche laden. Optional `?limit=` (Standard 100) |
+| GET | `/:id` | JWT | — | Ein Zustellprotokoll anhand der ID laden |
 
 ## Verwandte Seiten
 
-- [Echtzeit-Architektur](../../realtime) -- WebSocket-Protokoll, Raum-Abos und das vereinheitlichte Liefersystem
-- [Web-Push-Benachrichtigungen](../../web-push) -- Browser-Push-Anmeldung und -Zustellung
-- [Mitgliedschafts-Endpunkte](./membership) -- Personen, Gruppen, Rollen und Kernidentität
-- [Anwesenheits-Endpunkte](./attendance) -- Service- und Besuchsverfolgung
-- [Authentifizierung & Berechtigungen](./authentication) -- Anmelde-Arbeitsablauf, JWT, OAuth, Berechtigungsmodell
-- [Modulstruktur](../module-structure) -- Code-Organisationsmuster
+- [Echtzeit-Architektur](../../realtime) -- WebSocket-Protokoll, Raumabonnements und das einheitliche Zustellframework
+- [Web-Push-Benachrichtigungen](../../web-push) -- Browser-Registrierung für Push und Zustellung
+- [Membership-Endpunkte](./membership) -- Personen, Gruppen, Rollen und zentrale Identität
+- [Anwesenheits-Endpunkte](./attendance) -- Erfassung von Gottesdiensten und Besuchen
+- [Authentifizierung & Berechtigungen](./authentication) -- Anmeldefluss, JWT, OAuth, Berechtigungsmodell
+- [Modulstruktur](../module-structure) -- Muster der Code-Organisation

@@ -1,135 +1,141 @@
 ---
-title: "Ordre de service"
+title: "Ordre du service"
 ---
 
-# Ordre de service
+# Ordre du service
 
 <div class="article-intro">
 
-L'ordre de service définit la séquence des éléments de votre culte. Utilisez-le pour disposer tout, de la chanson d'ouverture à la prière de clôture, afin que toute votre équipe connaisse le déroulement du service à l'avance.
+L'ordre du service définit la séquence des éléments de votre culte. Utilisez-le pour organiser tout, du chant d'ouverture à la prière de clôture, afin que toute votre équipe connaisse le déroulement du culte à l'avance.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Créez un plan de service](./plans.md) pour la date pour laquelle vous souhaitez construire un ordre de service
-- Optionnellement, ajoutez des [chansons](./songs.md) à votre bibliothèque pour pouvoir les lier directement dans l'ordre de service
+- [Créez un plan de service](./plans.md) pour la date pour laquelle vous souhaitez construire un ordre du service
+- Vous pouvez éventuellement ajouter des [chants](./songs.md) à votre bibliothèque afin de les lier directement à l'ordre du service
 
 </div>
 
-## Accès à l'ordre de service
+## Accéder à l'ordre du service
 
 1. Accédez à **Service** et sélectionnez votre ministère.
-2. Cliquez sur un **type de plan**, puis ouvrez un **plan** spécifique.
-3. La section **Ordre de service** se trouve en haut de la page du plan, au-dessus de **Affectations de l'équipe de service**.
+2. Cliquez sur un **type de plan**, puis ouvrez un **plan** précis.
+3. La section **Ordre du culte** se trouve en haut de la page du plan, au-dessus de **Affectations de l'équipe de service**.
 
-## Construction de votre ordre de service
+## Construire votre ordre du service
 
-L'ordre de service est une liste d'éléments arrangés dans la séquence dans laquelle ils se produiront pendant le service. Les éléments communs incluent :
+L'ordre du service est une liste d'éléments disposés dans l'ordre où ils auront lieu pendant le culte. Les éléments courants comprennent :
 
-- Chansons d'adoration
+- Chants de louange
 - Prières
-- Lectures des Écritures
+- Lectures bibliques
 - Annonces
 - Sermon ou message
 - Offrande
-- Fermeture
+- Clôture
 
-## Ajout d'éléments à l'ordre de service
+## Ajouter des éléments à l'ordre du service
 
-1. Dans la section **Ordre de service**, cliquez sur **Ajouter** et choisissez ce que vous voulez ajouter : **Ajouter une section** (un en-tête qui regroupe des éléments), **Élément** (un élément personnalisé), **Chanson** (de votre bibliothèque) ou **Ajouter depuis une leçon**. Vous pouvez aussi cliquer directement sur **Ajouter une section**.
-2. Pour ajouter un élément dans une section, utilisez le menu d'ajout dans l'en-tête de cette section et choisissez **Chanson**, **Élément** ou **Élément externe**.
-3. Entrez les détails de l'élément, tels que le titre et les notes.
+1. Dans la section **Ordre du culte**, cliquez sur **Ajouter** et choisissez ce que vous voulez ajouter : **Ajouter une section** (un titre qui regroupe des éléments), **Élément** (un élément personnalisé), **Chant** (depuis votre bibliothèque) ou **Ajouter depuis une leçon**. Vous pouvez aussi cliquer directement sur **Ajouter une section**.
+2. Pour ajouter un élément dans une section, utilisez le menu d'ajout dans l'en-tête de cette section et choisissez **Chant**, **Élément** ou **Élément externe**.
+3. Saisissez les détails de l'élément, comme le titre et les éventuelles notes.
 4. Cliquez sur **Enregistrer**.
 
 :::tip
-Vous pouvez ajouter des chansons directement de votre bibliothèque [Chansons](./songs.md). Cela lie les détails de la chanson, y compris les paroles et les arrangements, à votre plan de service afin que votre équipe d'adoration ait tout ce dont elle a besoin.
+Vous pouvez ajouter des chants directement depuis votre bibliothèque [Chants](./songs.md). Cela relie les détails du chant, y compris les paroles et les arrangements, à votre plan de service afin que votre équipe de louange ait tout ce dont elle a besoin.
 :::
 
-### Importation de plusieurs éléments d'un fournisseur externe
+### Importer plusieurs éléments depuis un fournisseur externe
 
-Choisir **Élément externe** (ou **Ajouter depuis une leçon**) ouvre un navigateur pour vos fournisseurs de leçons liés au lieu d'un formulaire d'article unique. Parcourez (ou recherchez) le contenu d'un fournisseur et cochez la case à côté de chaque section ou action que vous souhaitez. La boîte de dialogue suive combien vous avez sélectionné (par exemple, « 3 sélectionnés ») -- cliquez sur **Importer (3)** pour ajouter tous à l'ordre de service à la fois, au lieu de répéter le flux ajouter un élément pour chacun.
+Choisir **Élément externe** (ou **Ajouter depuis une leçon**) ouvre un navigateur pour vos fournisseurs de leçons liés, au lieu d'un formulaire pour un seul élément. Parcourez (ou recherchez) le contenu d'un fournisseur et cochez la case de chaque section ou action que vous souhaitez. La boîte de dialogue compte les éléments sélectionnés (par exemple « 3 sélectionnés ») : cliquez sur **Importer (3)** pour tous les ajouter à l'ordre du service d'un seul coup, au lieu de répéter l'ajout élément par élément.
+
+Certains fournisseurs, comme GO! Curriculum, Dropbox, Google Drive et OneDrive, fournissent une leçon sous forme d'ensemble de fichiers (vidéos, diapositives, images) plutôt que de sections. Lorsque vous parcourez l'un de ces fournisseurs dans **Ajouter depuis une leçon**, les fichiers apparaissent à côté des dossiers : cliquez sur un fichier pour l'ajouter à l'ordre du service comme élément distinct.
 
 :::tip
-C'est le moyen le plus rapide d'extraire tout le contenu de leçon en sections et en indices dans un ordre de service en une seule passe, plutôt que d'ajouter chaque élément individuellement.
+C'est le moyen le plus rapide d'intégrer en une seule fois toutes les sections et tous les repères d'une leçon dans un ordre du service, plutôt que d'ajouter chaque élément individuellement.
 :::
 
-## Réorganisation des éléments
+### Personnaliser une leçon liée
 
-Faites glisser les éléments par la poignée à gauche de chaque ligne pour réarranger l'ordre -- déposez sur la ligne bleue où vous souhaitez que l'élément atterrisse, ou sur un en-tête de section pour le déplacer dans cette section. La séquence affichée à l'écran est l'ordre que votre équipe suivra pendant le service.
+Lorsqu'un plan a une leçon liée, l'ordre du service affiche d'abord un **Aperçu de la leçon** de cette leçon. Cliquez sur **Personnaliser** (ou ajoutez une section, un élément ou un chant) pour copier les sections de la leçon dans le plan afin de pouvoir les modifier. Pour les leçons qui ne sont qu'une liste de fichiers, comme les leçons GO! Curriculum, les fichiers sont regroupés sous une section portant le nom de la leçon, de sorte que vous disposez toujours d'une barre de section pour y ajouter vos propres éléments.
 
-## Édition d'une section de leçon
+## Réorganiser les éléments
 
-Les sections de leçon et de curriculum (par exemple, « Grand groupe » ou « Engager 1 ») contiennent leurs propres lignes de script, diapositives et vidéos. Pour changer ce qu'il y a à l'intérieur, cliquez sur la section dans l'ordre de service. La section s'ouvre montrant tout ce qu'il y a à l'intérieur : les lignes parlées et instructions apparaissent en tant que texte complet marqué **Dire**, **Faire** ou **Remarque**, et les diapositives ou vidéos apparaissent avec une miniature.
+Faites glisser les éléments par la poignée à gauche de chaque ligne pour changer leur ordre : déposez-les sur la ligne bleue à l'endroit où vous voulez les placer, ou sur l'en-tête d'une section pour les déplacer dans cette section. La séquence affichée à l'écran est l'ordre que votre équipe suivra pendant le culte.
 
-- Cliquez sur le **x** à côté de n'importe quelle ligne pour la retirer de votre plan. Elle reste dans la liste, barrée, avec une flèche pour la remettre en place.
-- Cliquez sur n'importe quel texte pour le reformuler. Une ligne reformulée offre **restaurer le libellé original**.
-- Cliquez sur **Enregistrer**. La section reste une seule ligne dans votre ordre de service, avec une petite étiquette comme **6 sur 8 éléments** montrant que vous l'avez personnalisée, et son temps d'exécution se met à jour.
+## Modifier une section de leçon
 
-Ouvrez la section à nouveau à tout moment pour voir vos modifications, remettre des lignes en place, ou choisir **Restaurer la section d'origine** pour annuler tous. Vos modifications affectent uniquement votre plan -- la leçon originale n'est jamais modifiée -- et elles portent jusqu'aux plans imprimés et à ce que vos bénévoles voient.
+Les sections de leçon et de programme (par exemple « Grand groupe » ou « Engage 1 ») contiennent leurs propres lignes de script, diapositives et vidéos. Pour modifier leur contenu, cliquez sur la section dans l'ordre du service. La section s'ouvre et affiche tout ce qu'elle contient : les lignes parlées et les consignes apparaissent en texte complet, marquées **Dire**, **Faire** ou **Note**, et les diapositives ou vidéos apparaissent avec une miniature.
 
-Si vous avez besoin d'un élément de la section comme sa propre ligne (par exemple, pour placer une chanson entre deux lignes), cliquez sur la flèche à l'extrémité droite de la ligne de section pour afficher son contenu sous forme de lignes séparées. Cliquez sur la flèche du premier de ces lignes pour les replier en une. Cela fonctionne de la même manière pour le contenu de tout fournisseur connecté.
+- Cliquez sur le **x** à côté d'une ligne pour la retirer de votre plan. Elle reste dans la liste, barrée, avec une flèche pour la remettre.
+- Cliquez sur n'importe quel texte pour le reformuler. Une ligne reformulée propose **restaurer la formulation d'origine**.
+- Cliquez sur **Enregistrer**. La section reste une seule ligne dans votre ordre du service, avec une petite étiquette telle que **6 sur 8 éléments** indiquant que vous l'avez personnalisée, et sa durée est mise à jour.
 
-Les bénévoles assignés à un élément apparaissent à côté de celui-ci dans l'ordre de service, afin que n'importe qui examinant le plan puisse voir qui couvre chaque partie en un coup d'œil.
+Ouvrez de nouveau la section à tout moment pour voir vos modifications, remettre des lignes ou choisir **Restaurer la section d'origine** afin d'annuler toutes les modifications. Vos changements ne concernent que votre plan -- la leçon d'origine n'est jamais modifiée -- et ils sont repris dans les plans imprimés et dans ce que vos bénévoles voient.
 
-## Calendrier et média
+Si vous avez besoin d'un élément de la section comme ligne distincte (par exemple pour placer un chant entre deux lignes), cliquez sur la flèche à droite de la ligne de section pour afficher son contenu sous forme de lignes séparées. Cliquez sur la flèche de la première de ces lignes pour les regrouper de nouveau en une seule. Cela fonctionne de la même manière pour le contenu de tout fournisseur connecté.
 
-Chaque élément et section affiche la durée et quand il commence :
+Les bénévoles affectés à un élément apparaissent à côté de celui-ci dans l'ordre du service, afin que toute personne qui examine le plan puisse voir d'un coup d'œil qui assure chaque partie.
 
-- Si le plan a une seule heure de service sélectionnée, le rail gauche affiche l'heure d'horloge réelle à laquelle chaque élément commence (par exemple, 9 h 14). Sinon, il affiche le temps écoulé depuis le début du service.
-- Les en-têtes de section totalisent le temps d'exécution de tout ce qu'il y a à l'intérieur.
-- Les chansons et les éléments personnalisés comptent vers ce calendrier une fois que vous entrez **Minutes**/**Secondes** sur l'écran d'édition de l'élément.
-- Les éléments que vous ajoutez de votre bibliothèque multimédia (images ou vidéos) affichent une **miniature** et sont chronométrés automatiquement -- la durée d'une vidéo est mesurée à partir du fichier lui-même, tandis qu'une image contribue une estimation planifiée d'environ 5 h 00 (affichée en italiques) car elle reste à l'écran jusqu'à ce qu'un opérateur la fasse avancer. Vous pouvez toujours modifier l'une ou l'autre à une durée spécifique.
+## Durée et médias
 
-## Édition et suppression d'éléments
+Chaque élément et chaque section indique sa durée et son heure de début :
 
-- Cliquez sur n'importe quel élément dans l'ordre de service pour **éditer** ses détails.
+- Si le plan a un seul horaire de service sélectionné, la colonne de gauche affiche l'**heure réelle** à laquelle chaque élément commence (par exemple 9 h 14). Sinon, elle affiche le temps écoulé depuis le début du service.
+- Les en-têtes de section totalisent la durée de tout ce qu'ils contiennent.
+- Les chants et les éléments personnalisés entrent dans ce calendrier dès que vous saisissez les **Minutes** et les **Secondes** sur l'écran de modification de l'élément.
+- Les éléments que vous ajoutez depuis votre médiathèque (images ou extraits vidéo) affichent une **miniature** et sont chronométrés automatiquement : la durée d'une vidéo est mesurée à partir du fichier lui-même, tandis qu'une image compte pour une estimation de planification d'environ 5:00 (affichée en italique), puisqu'elle reste à l'écran jusqu'à ce qu'un opérateur passe à la suite. Vous pouvez tout de même modifier l'un ou l'autre pour indiquer une durée précise.
+
+## Modifier et supprimer des éléments
+
+- Cliquez sur n'importe quel élément de l'ordre du service pour **modifier** ses détails.
 - Utilisez l'option **supprimer** pour retirer un élément de l'ordre.
 
 :::info
-L'ordre de service est spécifique à chaque plan. Les modifications que vous apportez ici n'affectent que le plan sélectionné et ne modifieront pas les autres plans ou votre bibliothèque de chansons.
+L'ordre du service est propre à chaque plan. Les modifications effectuées ici ne concernent que le plan sélectionné et n'altèrent ni les autres plans ni votre bibliothèque de chants.
 :::
 
-### Sélection en masse et suppression d'éléments
+### Sélectionner et supprimer plusieurs éléments
 
-Pour effacer plusieurs éléments dans une section à la fois au lieu de les supprimer un par un :
+Pour vider plusieurs éléments d'une section en une seule fois, au lieu de les supprimer un par un :
 
-1. Cliquez sur **Sélectionner les éléments** sur l'en-tête de section.
-2. Cochez les éléments que vous souhaitez supprimer, ou cochez **Sélectionner tous dans la section** pour les obtenir tous directement sous cette section.
-3. Cliquez sur **Supprimer les éléments sélectionnés** et confirmez.
+1. Cliquez sur **Sélectionner des éléments** dans l'en-tête de la section.
+2. Cochez les éléments à retirer, ou cochez **Tout sélectionner dans la section** pour prendre tout ce qui se trouve directement sous cette section.
+3. Cliquez sur **Supprimer la sélection** puis confirmez.
 4. Cliquez sur **Terminer la sélection** pour quitter le mode de sélection.
 
 :::info
-La sélection en masse s'applique uniquement aux enfants directs d'une section, pas aux éléments imbriqués dans un dossier de sous-section.
+La sélection multiple ne s'applique qu'aux éléments directement contenus dans une section, et non aux éléments imbriqués dans un sous-dossier de section.
 :::
 
-## Inclusion d'éléments dans les heures de service spécifiques
+## Inclure des éléments dans des horaires de service précis
 
-Si votre plan a plus d'une heure de service (par exemple, un service à 8 h et un à 10 h), vous pouvez choisir dans quels services chaque élément devrait apparaître. C'est utile quand une annonce n'est pertinente que pour un service, ou quand une chanson est chantée dans un service mais pas dans un autre.
+Si votre plan comporte plusieurs horaires de service (par exemple un service à 8 h et un service à 10 h), vous pouvez choisir les services dans lesquels chaque élément doit apparaître. C'est utile lorsqu'une annonce ne concerne qu'un seul service, ou lorsqu'un chant est interprété dans un service et pas dans un autre.
 
-1. Ouvrez un plan qui a deux ou plusieurs heures de service. Cliquez sur **Horaires** dans la section **Affectations de l'équipe de service** pour les voir ou en ajouter.
-2. Dans la section **Ordre de service**, cliquez sur un élément pour l'éditer.
-3. Sous **Inclure dans les services**, vous verrez une case à cocher pour chaque heure de service, étiquetée avec l'heure.
-4. Décochez n'importe quel service où l'élément doit être ignoré.
+1. Ouvrez un plan qui comporte deux horaires de service ou plus. Cliquez sur **Horaires** dans la section **Affectations de l'équipe de service** pour les voir ou en ajouter.
+2. Dans la section **Ordre du culte**, cliquez sur un élément pour le modifier.
+3. Sous **Inclure dans les services**, vous verrez une case à cocher pour chaque horaire de service, avec l'heure indiquée.
+4. Décochez les services dans lesquels l'élément doit être ignoré.
 5. Cliquez sur **Enregistrer**.
 
-Par défaut, chaque élément est inclus dans chaque service. Les heures de service exclues sont masquées lorsque vous imprimez le plan filtré à ce service, afin que chaque service reçoive une feuille de route propre avec uniquement les éléments pertinents.
+Par défaut, chaque élément est inclus dans chaque service. Les horaires exclus sont masqués lorsque vous imprimez le plan filtré pour ce service, afin que chaque service reçoive une feuille de route épurée ne comportant que les éléments pertinents.
 
 :::tip
-La section **Inclure dans les services** n'apparaît que lorsque le plan a plus d'une heure de service. Si vous ne voyez qu'un seul service, cliquez sur **Horaires** dans la section **Affectations de l'équipe de service** du plan pour ajouter d'abord des services supplémentaires.
+La section **Inclure dans les services** n'apparaît que lorsque le plan comporte plusieurs horaires de service. Si vous ne voyez qu'un seul service, cliquez sur **Horaires** dans la section **Affectations de l'équipe de service** du plan pour ajouter d'autres services au préalable.
 :::
 
-### Affichage d'une position différente par service
+### Afficher un poste différent par service
 
-Si un élément a une **Position** définie, chaque heure de service cochée dans **Inclure dans les services** obtient également sa propre **Position pour ce service** déroulant. Utilisez-la quand la même section est couverte par un bénévole différent à chaque service -- laissez-la définie sur **Identique à ci-dessus** pour garder la position par défaut de l'élément, ou choisissez une position différente pour l'ignorer juste pour ce service.
+Si un élément a un **Poste** défini, chaque horaire de service coché dans **Inclure dans les services** dispose aussi de sa propre liste déroulante **Poste pour ce service**. Utilisez-la lorsque la même section est assurée par un bénévole différent selon le service : laissez **Identique ci-dessus** pour conserver le poste par défaut de l'élément, ou choisissez un autre poste pour le remplacer uniquement pour cet horaire de service.
 
-## Partage de l'ordre de service
+## Partager l'ordre du service
 
-Une fois votre ordre de service terminé, vous pouvez imprimer le plan complet (y compris l'ordre de service) avec le bouton **Imprimer** en haut de la page du plan. Cela donne à votre équipe un aperçu complet du service, dirigé par le nom de votre église et le nom du plan. Quand **Afficher les noms des bénévoles** est activé pour l'impression, chaque en-tête de section s'imprime également avec la position du bénévole assigné à côté de celui-ci, afin que votre équipe puisse voir qui couvre cette section sans ouvrir l'application. Si la position d'une en-tête est outrepassée pour des services spécifiques, l'impression affiche chaque nom de position distinct auquel elle se résout dans les services de ce plan (par exemple, « Équipe d'adoration / Équipe de jeunes »).
+Une fois votre ordre du service terminé, vous pouvez imprimer le plan complet (ordre du service inclus) avec le bouton **Imprimer** en haut de la page du plan. Vous obtenez ainsi pour votre équipe une feuille de route complète du service, avec le nom de votre église et celui du plan en en-tête. Lorsque l'option **Afficher les noms des bénévoles** est activée pour l'impression, chaque en-tête de section s'imprime aussi avec le poste du bénévole affecté à côté, afin que votre équipe sache qui assure cette section sans ouvrir l'application. Si le poste d'un en-tête est remplacé pour certains services, l'impression indique chaque nom de poste distinct résolu dans l'ensemble des services du plan (par exemple « Équipe de louange / Équipe jeunesse »).
 
-## Prochaines étapes
+## Étapes suivantes
 
-- Gérez votre répertoire d'adoration sur la page [Chansons](./songs.md)
-- Assignez des bénévoles au service dans la section [Affectations de l'équipe de service](./plans.md#assigning-team-members) du plan
-- Créez [Tâches](./tasks.md) pour tous les éléments de suivi liés au service
+- Gérez votre répertoire de louange sur la page [Chants](./songs.md)
+- Affectez des bénévoles au service dans la section [Affectations de l'équipe de service](./plans.md#assigning-team-members) du plan
+- Créez des [Tâches](./tasks.md) pour les suivis liés au service

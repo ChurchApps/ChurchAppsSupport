@@ -1,55 +1,65 @@
 ---
-title: "Velge paringsmodus"
+title: "Velge en paringsmodus"
 ---
 
-# Velge paringsmodus
+# Velge en paringsmodus
 
 <div class="article-intro">
 
-FreePlay har to paringsmoduser for å koble TV-en din til menigheten din, i tillegg til muligheten til å bla direkte i innholdsleverandører. Skjermbildet **Select Pairing Mode** viser disse alternativene som store kort du kan navigere i med TV-fjernkontrollen.
+FreePlay kan kjøre en TV på tre måter. Den kan følge en kalender du setter opp i FreePlay Admin, følge en gudstjenesteplan fra B1 Admin, eller spille det en frivillig velger med fjernkontrollen. Begge typer paring starter fra samme skjerm på TV-en. Hvor du skriver inn paringskoden, avgjør hvilken modus TV-en bruker.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Installer FreePlay og start det for første gang -- se [Kom i gang](./index.md)
-- Ha TV-fjernkontrollen klar til navigering
+- Installer FreePlay og start det for første gang. Se [Kom i gang](./index.md)
+- Ha TV-fjernkontrollen klar for navigasjon
 
 </div>
 
-## Par med klasserom
+## Få en paringskode
 
-Velg **Pair to Classroom** når du vil at en bestemt TV alltid skal vise leksjonen som er planlagt for et bestemt rom. Dette er det beste valget for klasserom i barnearbeidet, der leksjonene tildeles etter en ukentlig timeplan.
+1. På TV-en åpner du **Innstillinger** nederst i sidefeltet.
+2. Velg **Par til en kalender**.
+3. FreePlay viser en firebokstavs paringskode og en QR-kode. Koden gjelder i 15 minutter, og FreePlay viser en ny automatisk når den utløper.
 
-**Slik fungerer det:** Du søker etter menigheten din på navn, velger et klasserom, og FreePlay henter automatisk leksjonen som er planlagt for det rommet i dag. Hver søndag morgen trenger du bare å slå på TV-en, så er riktig leksjon klar.
+## Planlagt modus (FreePlay Admin)
 
-**Passer best for:** Faste klasseroms-TV-er som alltid skal vise det planlagte innholdet for rommet.
+Skriv inn koden i **FreePlay Admin** på [admin.freeplay.church](https://admin.freeplay.church) når du vil at TV-en skal kjøre av seg selv. Du lager spillelister, legger dem i en kalender for en gruppe skjermer, og TV-en spiller dem til planlagt tid. Ingen trenger å trykke Start.
+
+**Slik fungerer det:** Skann QR-koden på TV-en, eller gå til **freeplay.church/pair**. Velg deretter skjermgruppen hvis kalender TV-en skal følge, og klikk **Par**. TV-en laster ned uken som kommer og spiller etter klokken, selv uten nettilgang.
+
+**Best egnet til:** Skilting i lobby og gang, kunngjøringsløkker, og klasserom der leksjonen allerede skal spille når folk kommer inn.
+
+Se **[Planlagt modus](../scheduled-mode/)** for hele veiledningen.
+
+## Planmodus (B1 Admin)
+
+Skriv inn koden i **B1 Admin** når du vil at TV-en skal følge en plantype for gudstjenester. TV-en laster ned innholdet for gjeldende plan, og en frivillig trykker **Start plan** for å spille det av.
+
+**Slik fungerer det:** I B1 Admin legger du til skjermen med koden fra TV-en og velger plantypen under **Vis planer for**. Hver uke henter TV-en den nyeste planen for plantypen.
+
+**Best egnet til:** TV-er som viser innhold knyttet til gudstjenesteplanen din for uken, der noen starter avspillingen når det er tid for det.
+
+Se **[Planmodus](../plan-mode/)** for hele veiledningen.
 
 :::tip
-Sett opp klasserommene dine på [freeplay.church](https://freeplay.church) før du parer TV-en. Da sørger du for at rommene dukker opp når du søker etter menigheten din.
+Du kan også spille den gjeldende gudstjenesteplanen etter en plan. I FreePlay Admin legger du til en kalenderoppføring og velger plantypen under **Gudstjenesteplaner**.
 :::
 
-## Par med plan
+## Innholdsleverandører (uten paring)
 
-Velg **Pair to Plan** når du vil følge en gudstjenesteplan. Denne modusen lager en paringskode som du skriver inn i **B1 Admin** for å knytte TV-en til en bestemt plantype. TV-en laster deretter ned og spiller av innholdet som er tildelt den gjeldende planen.
+Hvis du ikke trenger å pare TV-en i det hele tatt, kan du bla gjennom innholdsleverandører direkte. Leverandører som [Lessons.church](../../lessons-church/) og Bible Project har innhold du kan laste ned og spille når du vil.
 
-**Slik fungerer det:** FreePlay viser en paringskode og en QR-kode på skjermen. En administrator åpner den tilknyttede siden i **B1 Admin**, skriver inn koden og velger plantypen skjermen skal følge fra en nedtrekksliste kalt **Show Plans For**. Når paringen er godkjent, laster TV-en automatisk inn innholdet i den gjeldende planen.
-
-**Passer best for:** TV-er som viser innhold knyttet til den ukentlige gudstjenesteplanen, for eksempel lovsangtekster eller kunngjøringsslides.
-
-## Innholdsleverandører
-
-Hvis du ikke trenger å pare med et klasserom eller en plan, kan du bla direkte i innholdsleverandører. Leverandører som [Lessons.church](../../lessons-church/) og Bible Project tilbyr innhold du kan laste ned og spille av ved behov.
-
-**Passer best for:** TV-er der frivillige velger manuelt hva som skal spilles av hver uke, eller når du vil utforske tilgjengelig innhold.
+**Best egnet til:** TV-er der frivillige velger hva som skal spilles hver uke, eller når du vil utforske hva som finnes.
 
 :::info
-Du kan åpne skjermbildet **Providers** når som helst fra **Settings** nederst i sidefeltet. Du trenger ikke bruke en paringsmodus for å bla i og spille av innhold.
+Du kan åpne siden **Leverandører** når som helst fra **Innstillinger** nederst i sidefeltet. Du trenger ikke å pare TV-en for å bla i og spille innhold.
 :::
 
 ## Relaterte artikler
 
-- **[Klasseromsmodus](../classroom-mode/)** - Full veiledning for paring med et klasserom
-- **[Planmodus](../plan-mode/)** - Full veiledning for paring med en gudstjenesteplan
-- **[Innholdsleverandører](../content-providers/)** - Bla i og last ned innhold fra eksterne kilder
+- **[Planlagt modus](../scheduled-mode/)** - Sett TV-er på en kalender med FreePlay Admin
+- **[Planmodus](../plan-mode/)** - Fullstendig veiledning for paring med en gudstjenesteplan
+- **[Innholdsleverandører](../content-providers/)** - Bla gjennom og last ned innhold fra eksterne kilder

@@ -66,4 +66,4 @@ Emakhodi ekuhlanganisa aphelelwa ngemuva kwesikhatsi lesibekiwe. Uma ulinde sikh
 ## Timibhalo Lehlobene
 
 - **[Sifinyeto Sesimo Selicebo](./index.md)** - Kucondzisisa kutsi Simo Selicebo sihlukaniseka njani ku-Simo Selikilasi
-- **[Kudlalwa Kwetifundzo](../classroom-mode/playing-lessons)** - Kulawulwa kwemdlali kuyafana kuletimo tatibili
+- **[Kudlalwa Kwetifundzo](../content-providers/playing-content)** - Kulawulwa kwemdlali kuyafana kuletimo tatibili

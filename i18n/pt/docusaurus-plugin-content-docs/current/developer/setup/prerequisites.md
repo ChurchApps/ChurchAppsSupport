@@ -6,76 +6,76 @@ title: "Pré-requisitos"
 
 <div class="article-intro">
 
-As ferramentas que você precisa dependem dos projetos nos quais planeja trabalhar. Esta página lista todo o software necessário organizado por área de desenvolvimento, desde os requisitos universais até toolchains específicas de plataforma.
+As ferramentas de que você precisa dependem dos projetos em que pretende trabalhar. Esta página lista todos os softwares necessários, organizados por área de desenvolvimento, desde os requisitos universais até as cadeias de ferramentas específicas de cada plataforma.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de começar</h4>
+<h4>Antes de Começar</h4>
 
-- Revise a [Visão geral dos projetos](./project-overview) para determinar em quais projetos deseja trabalhar
-- Tenha acesso de administrador na sua máquina de desenvolvimento para instalar software
+- Revise a [Visão Geral do Projeto](./project-overview) para determinar em quais projetos você quer trabalhar
+- Tenha acesso de administrador na sua máquina de desenvolvimento para instalar softwares
 
 </div>
 
-## Todos os projetos
+## Todos os Projetos
 
-Estes são necessários independentemente do projeto no qual você trabalha:
+Estes são necessários independentemente do projeto em que você trabalhar:
 
-| Ferramenta | Versão | Notas |
-|------|---------|-------|
-| **Node.js** | 20+ | Versão 22+ necessária para B1App e LessonsApp (Next.js 16) |
-| **npm** | Incluído com Node.js | Usado como gerenciador de pacotes em todos os projetos |
+| Ferramenta | Versão | Observações |
+|------|------|------|
+| **Node.js** | 20+ | Versão 22+ exigida para o B1App e o LessonsApp (Next.js 16) |
+| **npm** | Vem com o Node.js | Usado como gerenciador de pacotes em todos os projetos |
 | **Git** | Mais recente | Cada projeto é um repositório separado |
 
 :::tip
-Use um gerenciador de versões do Node como [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) ou [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) para alternar facilmente entre versões do Node.
+Use um gerenciador de versões do Node como o [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) ou o [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) para alternar facilmente entre versões do Node.
 :::
 
-## Desenvolvimento de API backend
+## Desenvolvimento da API Backend
 
-Se você planeja executar a API localmente (em vez de apontar para staging):
+Se você pretende executar a API localmente (em vez de apontar para as APIs de demonstração):
 
-| Ferramenta | Versão | Notas |
-|------|---------|-------|
-| **MySQL** | 8.0+ | Cada módulo de API usa seu próprio banco de dados |
+| Ferramenta | Versão | Observações |
+|------|------|------|
+| **MySQL** | 8.0+ | Cada módulo da API usa seu próprio banco de dados |
 
-Você precisará de seis bancos de dados para a API principal: `membership`, `attendance`, `content`, `giving`, `messaging` e `doing`. A API inclui scripts para inicializar o esquema -- consulte o guia de [Configuração local da API](../api/local-setup).
+Você precisará de seis bancos de dados para a API principal: `membership`, `attendance`, `content`, `giving`, `messaging` e `doing`. A API inclui scripts para inicializar o schema — consulte o guia de [configuração local da API](../api/local-setup).
 
-## Desenvolvimento de aplicativos móveis
+## Desenvolvimento de Aplicativos Mobile
 
-Para B1Mobile, B1Checkin, LessonsScreen ou outros aplicativos React Native / Expo:
+Para o B1Mobile, o B1Checkin, o LessonsScreen ou outros apps React Native / Expo:
 
-| Ferramenta | Versão | Notas |
-|------|---------|-------|
+| Ferramenta | Versão | Observações |
+|------|------|------|
 | **Expo CLI** | Mais recente | Instale globalmente: `npm install -g expo-cli` |
-| **Android Studio** | Mais recente | Necessário para desenvolvimento Android (inclui Android SDK) |
-| **Xcode** | Mais recente | Necessário para desenvolvimento iOS (apenas macOS) |
+| **Android Studio** | Mais recente | Necessário para desenvolvimento Android (inclui o Android SDK) |
+| **Xcode** | Mais recente | Necessário para desenvolvimento iOS (somente macOS) |
 
 :::info
-Você pode usar o aplicativo Expo Go em um dispositivo físico para testes rápidos sem Android Studio ou Xcode. No entanto, a criação de binários de produção requer as toolchains nativas.
+Você pode usar o app Expo Go em um dispositivo físico para testes rápidos sem o Android Studio ou o Xcode. No entanto, gerar binários de produção exige as cadeias de ferramentas nativas.
 :::
 
-## Desenvolvimento do FreeShow (aplicativo desktop)
+## Desktop App do FreeShow (Desenvolvimento)
 
-FreeShow tem dependências de build nativas adicionais porque compila módulos Node nativos (como `canvas`):
+O FreeShow tem dependências nativas de compilação adicionais, pois compila módulos Node nativos (como o `canvas`):
 
-### Todas as plataformas
+### Todas as Plataformas
 
-| Ferramenta | Versão | Notas |
-|------|---------|-------|
-| **Python** | 3.12 | Necessário pelo `node-gyp` para compilação de módulos nativos |
+| Ferramenta | Versão | Observações |
+|------|------|------|
+| **Python** | 3.12 | Exigido pelo `node-gyp` para compilar módulos nativos |
 | **setuptools** | Mais recente | Instale via `pip install setuptools` |
 
 ### Windows
 
-| Ferramenta | Notas |
-|------|-------|
+| Ferramenta | Observações |
+|------|------|
 | **Visual Studio** | A edição Community é suficiente |
 | **Carga de trabalho "Desktop development with C++"** | Selecione durante a instalação do Visual Studio |
 | **Windows 10 SDK** | Incluído na carga de trabalho C++; certifique-se de que está marcado |
 
-Você pode instalar as ferramentas de build do Visual Studio via linha de comando:
+Você pode instalar as ferramentas de compilação do Visual Studio pela linha de comando:
 
 ```bash
 npm install --global windows-build-tools
@@ -91,13 +91,13 @@ sudo apt-get install libfontconfig1-dev
 
 ### macOS
 
-As Xcode Command Line Tools geralmente são suficientes:
+As Ferramentas de Linha de Comando do Xcode normalmente bastam:
 
 ```bash
 xcode-select --install
 ```
 
-## Verifique sua instalação
+## Verifique sua Instalação
 
 Execute estes comandos para confirmar que tudo está instalado:
 
@@ -108,7 +108,7 @@ git --version     # Should print git version 2.x.x
 mysql --version   # Only needed for local API development
 ```
 
-## Próximos passos
+## Próximos Passos
 
-- **[Visão geral dos projetos](./project-overview)** -- Veja todos os projetos e o que fazem
-- **[Variáveis de ambiente](./environment-variables)** -- Configure seus arquivos `.env`
+- **[Visão Geral do Projeto](./project-overview)** — Veja todos os projetos e o que cada um faz
+- **[Variáveis de Ambiente](./environment-variables)** — Configure seus arquivos `.env`

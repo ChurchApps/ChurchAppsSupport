@@ -62,7 +62,7 @@ Afspilning fungerer på samme måde som lektionsafspilning. Brug disse kontrolle
 Når du forlader afspilleren, vender du tilbage til indholdsviseren på rotniveauet for den aktuelle udbyder.
 
 :::info
-For en fuldstændig reference til alle afspiller kontroller, se [Afspilning af lektioner](../classroom-mode/playing-lessons).
+For en fuldstændig reference til alle afspiller kontroller, se [Afspilning af lektioner](../content-providers/playing-content).
 :::
 
 ## Skifteudbydr

@@ -84,6 +84,8 @@ Renderers live in `Packages/apphelper/src/website/components/elementTypes/`, one
 
 The editor's per-type settings forms live in `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` dispatches to a dedicated component (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) or an inline field builder per type. The AI-facing mirror of this catalog is the API's MCP `describe_page_builder` tool (see [MCP Server](../api/mcp)).
 
+The editor preview mounts the same `Theme` as the live site, which sets the `--headingFont` / `--bodyFont` CSS variables from the church's global styles. B1App applies those variables through `pages.css`, which B1Admin can't import, so `ContentEditor.tsx` injects `EDITOR_PAGE_FONT_CSS` (`src/site/admin/editorCss.ts`) to apply them to `.page` body text and `h1`–`h6`. Without it, the preview showed headings in the admin font.
+
 ### Section shape dividers
 
 Sections can carry decorative shape dividers on either edge. The config lives in the section's `answersJSON` as `dividerTop` / `dividerBottom` objects — `{ shape, color, height, flip }` with `shape` one of `wave, waves, slant, curve, triangle, peaks`. Apphelper ships the `SectionDivider` component and `parseDividerConfig()` helper; both apps' Section renderers (`B1App/src/components/Section.tsx`, `B1Admin/src/site/admin/Section.tsx`) parse the answers and mount the divider, and `SectionEdit.tsx` in B1Admin provides the picker UI. The packages only ship the building block — the section-level wiring is the consuming apps' job.
@@ -101,6 +103,16 @@ Three element types render live church data rather than authored content. Module
 :::warning
 `publicRoster` is the privacy gate for `staffGrid`. Never widen the public group-member projection or bypass the flag — the roster endpoint is anonymous by design and the minimal field list is the safety property.
 :::
+
+### Calendar element and event pages
+
+The `calendar` element's answers are `calendarType` (`group` | `curated`), `calendarId`, `display` (`month`, the default, or `upcoming`), and `tag`. B1App overrides the apphelper renderer in `src/components/Element.tsx` with `registerElementRenderer("calendar", …)`:
+
+- **`display: "upcoming"`** renders B1App's `UpcomingEventsElement`: it loads `GET /content/events/public/group/:churchId/:groupId` or `GET /content/curatedEvents/public/calendar/:churchId/:curatedCalendarId`, expands recurrences with `buildOccurrences()` (`src/helpers/EventOccurrences.ts`, one occurrence per event within a year), and shows the first 12 as photo tiles (`events.photoUrl`, falling back to the title on the theme's dark color) linking to `/events/{id}`, with a Subscribe menu for the calendar's ICS feed.
+- **`display: "month"`** renders apphelper's `CalendarElement` with an `eventUrl` callback. `GroupCalendar` / `CuratedCalendar` → `EventCalendar` / `CuratedEventCalendar` then navigate to that URL on click instead of opening the detail dialog (B1Admin passes no `eventUrl`, so the admin calendar keeps its dialog).
+- **`tag`** filters both displays with `EventHelper.hasTag()` (`@churchapps/helpers`): a case-insensitive match against the comma-separated `events.tags`; empty shows everything. The curated-calendar join selects `e.tags` so curated events carry them.
+
+Curated events link by `realEventId` (`eventPageId()`), so the URL always names the underlying event. `/{sdSlug}/events/[eventId]` is a dedicated route (not the builder pipeline): it loads `GET /content/events/public/:churchId/:id` — which returns `null` for pending/rejected events and for private events without registration, and adds `roomNames` from non-rejected room bookings — renders `EventPageContent` (photo hero, markdown description, When/Where aside, **Register for this Event** when `registrationEnabled`, and an **Add to my calendar** link to `GET /content/events/public/:churchId/:id/ical`), uses the photo as the Open Graph image, and emits `Event` JSON-LD for the next occurrence via `EventPageJsonLd`. An unknown or hidden event returns a real 404.
 
 ## Site-wide widgets
 
@@ -139,11 +151,11 @@ All of this is B1App-side rendering over ContentApi data — the API stores, the
 |---------|--------------|
 | Meta descriptions | `pages.metaDescription` (≤300 chars) flows through `MetaHelper.getMetaData()` into the Next.js `Metadata` (description + Open Graph) on every builder-rendered route. B1Admin's page settings include an AI "Generate" button (see below) |
 | Redirects | Per-church `redirects` rows managed at `/content/redirects` (`content.edit`, 200-row cap, normalized paths). On a would-be 404, B1App's page route resolves the path against `GET /content/redirects/public/:churchId` and issues an HTTP 308 via Next's `permanentRedirect`; unmatched paths fall through to `notFound()` |
-| Branded 404 | `not-found.tsx` renders `BrandedNotFound` with the church's logo, name, and theme instead of a generic error. An unknown `/register/[eventId]` also returns a real 404 |
-| Structured data | `BlogPosting` JSON-LD on blog posts; `VideoObject` on the per-sermon pages (`/{sdSlug}/sermons/[sermonId]`) and on pages containing a `sermons` element; `Event` from calendar/event elements on builder pages; schema.org `Event` from the `serviceTimes` element |
+| Branded 404 | `not-found.tsx` renders `BrandedNotFound` with the church's logo, name, and theme instead of a generic error. Unknown `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]`, and `/volunteer/[planId]` paths return a real 404, as do unknown subdomains and malformed page slugs (see [Website Routing & Multi-Site](./websites)) |
+| Structured data | `BlogPosting` JSON-LD on blog posts; `VideoObject` on the per-sermon pages (`/{sdSlug}/sermons/[sermonId]`) and on pages containing a `sermons` element; `Event` from calendar/event elements on builder pages and on each `/{sdSlug}/events/[eventId]` page (next occurrence, with the event photo as `image`); schema.org `Event` from the `serviceTimes` element |
 | Sermon pages | Every public sermon gets a crawlable page at `/sermons/[sermonId]` with full metadata — sermons are no longer locked inside the client-side browser element |
 | Analytics | The public settings key `ga4MeasurementId` (managed next to redirects in B1Admin) injects a per-church GA4 gtag via `next/script`. The B1 app (`/{sdSlug}/mobile`) also sends its page views to that ID, alongside ChurchApps' own tag, when it is a valid `G-` ID (GTM container IDs stay website-only). Each `gtag('config')` carries a `display_mode` of `installed` or `browser`, based on `navigator.standalone` or the `(display-mode: standalone)` media query (`B1App/src/helpers/mobileAnalytics.ts`) |
-| Sitemap & feeds | The per-church `sitemap.xml` route includes builder pages, blog URLs, and the 50 most recent sermon pages (with `<lastmod>` from each sermon's publish date). It also lists the built-in `/sermons`, `/groups`, and `/volunteer` pages when they have content (public groups, signup plans), unless a saved redirect replaces that path. The blog listing advertises the RSS feed |
+| Sitemap & feeds | The per-church `sitemap.xml` route includes builder pages, blog URLs, and the 50 most recent sermon pages (with `<lastmod>` from each sermon's publish date). It also lists the built-in `/sermons`, `/groups`, and `/volunteer` pages when they have content (public groups, signup plans), unless a saved redirect replaces that path. `/` is left out when the church has no home page, since `/` then redirects to the disallowed `/mobile`. The blog listing advertises the RSS feed |
 | Accessibility | The public chrome renders a skip link targeting the `<main id="main-content">` landmark in every layout wrapper |
 
 ## AI generation (AskApi)
@@ -208,7 +220,7 @@ Two writers hit it:
 1. **B1Admin** — `clearSiteCache()` in `B1Admin/src/site/siteCache.ts` POSTs after editor saves. It prefers the active site's subdomain (a secondary site must bust *that* tag, not the church's default).
 2. **Api** — Content mutations that never go through B1Admin (API keys, MCP, AI) fire `SiteCacheHelper.bump(churchId)` from the content controllers. The helper resolves the church subdomain via `SubDomainHelper` and POSTs `{b1AppRoot}/api/revalidate/{sd}`. Failures are swallowed so an unreachable B1App cannot fail a save.
 
-Controllers that bump: pages (save, delete, duplicate, publish, discard, unpublish, AI temp), sections, elements, blocks, links, global styles, posts, and redirects. Dev `b1AppRoot` is `http://{subdomain}.localtest.me:3301`; demo/staging/prod use `https://{subdomain}.b1.church`.
+Controllers that bump: pages (save, delete, duplicate, publish, discard, unpublish, AI temp), sections, elements, blocks, links, global styles, posts, and redirects. Dev `b1AppRoot` is `http://{subdomain}.localtest.me:3301`; demo/prod use `https://{subdomain}.b1.church`.
 
 ## Related Pages
 

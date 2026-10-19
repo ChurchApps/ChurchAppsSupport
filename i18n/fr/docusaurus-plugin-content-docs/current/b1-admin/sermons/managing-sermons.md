@@ -56,7 +56,7 @@ Chaque entrée de sermon peut inclure :
 - **Liens vidéo/audio** -- URL vers le média du sermon sur YouTube, Vimeo, Facebook ou un hôte personnalisé
 - **URL du fichier audio (pour podcast)** -- Un lien direct vers un fichier MP3/M4A pour ce sermon. Soit coller une URL, soit cliquer sur **Télécharger un audio** pour télécharger un fichier et le remplir automatiquement. Seuls les sermons avec ce champ (ou un lien de fichier vidéo direct) défini sont inclus dans votre flux de podcast.
 
-## Votre flux de podcast
+## Votre flux de podcast {#your-podcast-feed}
 
 Une fois qu'au moins un sermon a un fichier audio ou vidéo attaché, B1 Admin génère automatiquement un flux RSS de podcast pour votre église -- il n'y a rien à activer. Trouvez-le dans le panneau **Flux de podcast** sous la liste des sermons : cliquez sur l'icône de copie pour copier l'URL du flux, puis soumettez cette URL à Apple Podcasts, Spotify ou tout autre répertoire de podcast.
 

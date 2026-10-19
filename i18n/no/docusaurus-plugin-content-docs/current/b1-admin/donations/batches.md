@@ -1,77 +1,106 @@
 ---
-title: "Gavebunter"
+title: "Giveroppgaver"
 ---
 
-# Gavebunter
+# Giveroppgaver
 
 <div class="article-intro">
 
-Gavebunter samler donasjonene dine, slik at de blir lettere å følge opp og avstemme. En typisk gavebunt representerer én innsamling, for eksempel søndagens offer eller et spesielt arrangement. Med gavebunter holder du orden, og det blir enkelt å kontrollere at registreringene stemmer med de faktiske innskuddene.
+Batcher grupperer gavene dine for enklere sporing og avstemming. En typisk batch representerer én innsamling, for eksempel en søndagsoffer eller en spesiell hendelse. Ved å bruke batcher holder du oversikten og gjør det enkelt å kontrollere at registreringene dine stemmer med de faktiske innskuddene.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Pass på at du har [satt opp fondene dine](funds.md), slik at de er tilgjengelige når du registrerer donasjoner
-- Du trenger tilgang til **Donasjoner**-delen i B1 Admin
+- Sørg for at du har [satt opp fondene dine](funds.md), slik at de er tilgjengelige når du registrerer gaver
+- Du trenger tillatelsen **Se donasjonssammendrag**, **Rediger donasjoner** eller **Registrer donasjoner** for å se siden Batcher (se [Hvem kan endre en batch](#who-can-change-a-batch))
 
 </div>
 
-## Gavebunt-siden
+## Batch-siden
 
-Når du går til **Donasjoner > Gavebunter**, ser du en liste over gavebuntene dine. Hver rad viser:
+Når du navigerer til **Donasjoner > Batcher**, ser du en liste over batcher. Hver rad viser:
 
-- **Navn** -- navnet du ga gavebunten
-- **Dato** -- datoen for innsamlingen
-- **Donasjoner** -- antall enkeltdonasjoner i gavebunten
-- **Totalt** -- det samlede beløpet
+- **Navn** – etiketten du ga batchen
+- **Dato** – datoen for innsamlingen
+- **Donasjoner** – antall enkeltgaver i batchen
+- **Totalt** – det samlede beløpet i kroner
+- **Status** – **Åpen** eller **Lukket** (se [Lukke og gjenåpne en batch](#closing-and-reopening-a-batch))
 
-Over listen finner du årsknapper som lar deg vise bare gavebuntene fra ett år, eller **Alle** gavebunter. En oppsummeringslinje viser antall gavebunter, antall gaver og totalbeløpet for gavebuntene som vises.
+Over listen lar årsknapper deg vise bare batcher fra ett år, eller **Alle** batcher. En oppsummeringslinje viser antall batcher, antall gaver og totalbeløpet for batchene som vises.
 
-## Opprette en ny gavebunt
+## Opprette en ny batch
 
-1. Klikk på **Legg til gavebunt** øverst på siden.
-2. Skriv inn et beskrivende navn (for eksempel «Søndagsoffer – 9. feb.»).
+1. Klikk på **Legg til batch** øverst på siden.
+2. Skriv inn et beskrivende navn (f.eks. «Søndagsoffer – 9. feb»).
 3. Velg datoen for innsamlingen.
 4. Klikk på **Lagre**.
 
-Den nye gavebunten vises i listen, klar til at du legger til donasjoner.
+Den nye batchen vises i listen, klar for at du kan legge til donasjoner.
 
-## Arbeide med gavebunter
+## Arbeide med batcher
 
-- **Se donasjoner** -- klikk på navnet til en gavebunt for å åpne den og se alle enkeltdonasjonene den inneholder. Derfra kan du legge til, redigere eller fjerne donasjoner.
-- **Redigere gavebuntdetaljer** -- klikk på knappen **Rediger** på en gavebuntrad for å endre navn eller dato.
-- **Sortere** -- bruk kolonneoverskriftene til å sortere gavebuntene etter navn eller dato.
-- **Eksportere** -- klikk på **Eksporter** øverst på siden for å laste ned gavebuntene som vises, som et regneark (CSV).
-- **Feilede hendelser** -- hvis betalingsløsningen din har rapportert problemer, vises en knapp **Feilede hendelser** (med antall uløste hendelser) øverst på siden. Klikk på den for å vise eller skjule listen over hendelser under gavebuntene.
-- **Importere fra Stripe** -- klikk på **Importer manglende Stripe-transaksjoner** øverst på siden for å åpne verktøyet [Stripe-import](stripe-import.md).
+- **Vis donasjoner** – klikk på et batchnavn for å åpne den og se alle enkeltgavene den inneholder. Derfra kan du legge til, redigere eller fjerne donasjoner.
+- **Rediger batchdetaljer** – klikk på knappen **Rediger** på en batchrad for å endre navn eller dato. Bare personer med **Rediger donasjoner** kan slette en batch.
+- **Sorter** – bruk kolonneoverskriftene for å sortere batcher etter navn eller dato.
+- **Eksporter** – klikk på **Eksporter** øverst på siden for å laste ned batchene som vises, som et regneark (CSV).
+- **Mislykkede hendelser** – hvis betalingsleverandøren din har rapportert problemer, vises en knapp **Mislykkede hendelser** (med antall uløste hendelser) øverst på siden. Klikk på den for å vise eller skjule listen over hendelser under batchene.
+- **Importer fra Stripe** – klikk på **Importer manglende Stripe-transaksjoner** øverst på siden for å åpne [Stripe-import](stripe-import.md)-verktøyet.
 
-## Skrive ut en gavebunt
+## Lukke og gjenåpne en batch {#closing-and-reopening-a-batch}
 
-Åpne en gavebunt og klikk på **Skriv ut** over donasjonslisten for å skrive ut en papirkopi til telleteamet eller til innskuddsdokumentasjonen. Utskriften inneholder:
+Når en batch er talt og satt inn på bankkontoen, lukk den slik at donasjonene forblir nøyaktig slik de var da du lukket den.
 
-- Menighetens navn, gavebuntens navn og gavebuntens dato
-- Alle donasjoner i gavebunten, med giverens navn, metode, notater, dato og beløp (refunderte gaver er overstreket og merket som refundert)
-- **Delsummer per fond** -- totalbeløpet gitt til hvert fond i gavebunten
-- **Gavebunttotal** -- det samlede beløpet for hele gavebunten
+1. Åpne batchen.
+2. Klikk på **Lukk batch** øverst på siden.
 
-**Skriv ut**-knappen vises først når gavebunten har minst én donasjon.
+Statusmerket ved siden av batchnavnet endres fra **Åpen** til **Lukket**, batchen viser **Lukket** i kolonnen **Status** på siden Batcher, og en melding øverst i batchen forklarer at den er lukket. Mens en batch er lukket, kan personer med **Registrer donasjoner** fortsatt se den, men de kan ikke legge til, redigere eller slette donasjonene i den, eller endre batchens navn eller dato.
 
-### Skrive ut flere gavebunter samtidig
+For å gjøre endringer igjen, åpner du batchen og klikker på **Gjenåpne batch**. Nye batcher starter alltid som åpne.
 
-For å skrive ut alle gavebunter fra en periode i én operasjon -- for eksempel alle innskudd fra forrige måned -- klikker du på **Skriv ut** øverst på siden **Gavebunter**, ved siden av **Eksporter**. Siden **Skriv ut gavebunter** åpnes med en **Startdato** og en **Sluttdato** som som standard dekker de siste 30 dagene. Endre en av datoene for å velge et annet tidsrom.
+:::info
+Bare personer med **Rediger donasjoner** ser knappene **Lukk batch** og **Gjenåpne batch**. De kan også fortsatt endre donasjoner i en lukket batch hvis det trengs en korreksjon, uten å gjenåpne den.
+:::
 
-Hver gavebunt med dato innenfor tidsrommet (inkludert start- og sluttdatoen) skrives ut i datorekkefølge, én gavebunt per side, med samme oppsett som utskriften av en enkelt gavebunt. Gavebunter uten donasjoner utelates, og hvis ingen av gavebuntene i tidsrommet har donasjoner, ser du teksten «No batches with donations in this date range.» Klikk på **Skriv ut** for å åpne utskriftsdialogen i nettleseren, eller på **Lukk** for å gå tilbake til gavebuntlisten.
+## Hvem kan endre en batch {#who-can-change-a-batch}
 
-## Eksportere en gavebunt til QuickBooks Online
+To [rolletillatelser](../settings/roles-permissions.md) lar noen arbeide med batcher:
 
-Åpne en gavebunt og klikk på **Eksporter for QuickBooks** for å laste ned gavebunten som en journalpost som QuickBooks Online kan importere (**Settings > Import Data > Journal Entries**). Filen inneholder én debet til **Undeposited Funds** for gavebuntens totalbeløp og én kredit per fond, der fondets navn brukes som kontonavn. QuickBooks ber deg koble disse navnene til kontoplanen din under importen, så gi fondene samme navn som regnskapsføreren bruker på inntektskontoene, eller koble dem én gang under importen.
+- **Rediger donasjoner** – full tilgang: legge til og slette batcher, lukke og gjenåpne dem, og legge til, redigere eller slette alle donasjoner, enten batchen er åpen eller lukket.
+- **Registrer donasjoner** – for telleteam og frivillige som registrerer gaver. De kan legge til batcher og legge til, redigere eller slette donasjoner, men bare mens batchen er åpen. De kan ikke slette batcher, lukke eller gjenåpne dem, eller endre gaver som kom inn via nettgiving.
+
+Noen med **Registrer donasjoner**, men uten **Se donasjonssammendrag**, ser **Donasjoner** i B1 Admin-menyen, som går rett til siden Batcher. **Sammendrag**, **Fond**, **Kampanjer** og **Giverbekreftelser** er skjult for dem. For å åpne en batch og se donasjonene i den, trenger rollen også **Se donasjoner**.
 
 :::tip
-Gi gavebuntene navn på en konsekvent måte, så er de lette å finne igjen senere. Hvis du tar med dato og type innsamling (for eksempel «Søndag formiddag – 2025-02-09»), holder du listen ryddig etter hvert som den vokser.
+Et vanlig oppsett er en rolle «Telleteam» med **Registrer donasjoner** og **Se donasjoner**, og en kasserer med **Rediger donasjoner** som lukker hver batch etter at innskuddet er avstemt.
+:::
+
+## Skrive ut en batch
+
+Åpne en batch og klikk på **Skriv ut** over donasjonslisten for å skrive ut en papirkopi til telleteamet eller innskuddsregistrene dine. Utskriften inneholder:
+
+- Menighetens navn, batchnavnet og batchdatoen
+- Alle donasjoner i batchen, med giverens navn, metode, notater, dato og beløp (refunderte gaver er gjennomstreket og merket som refundert)
+- **Fondsundersummer** – totalbeløpet gitt til hvert fond i batchen
+- **Batchtotal** – det samlede beløpet for hele batchen
+
+Knappen **Skriv ut** vises først når batchen har minst én donasjon.
+
+### Skrive ut flere batcher samtidig
+
+For å skrive ut alle batcher fra en periode på én gang – for eksempel alle innskudd fra forrige måned – klikker du på **Skriv ut** øverst på siden **Batcher**, ved siden av **Eksporter**. Siden **Skriv ut batcher** åpnes med en **Startdato** og **Sluttdato** som som standard dekker de siste 30 dagene. Endre en av datoene for å velge et annet intervall.
+
+Hver batch datert innenfor intervallet (inkludert start- og sluttdatoen) skrives ut i datorekkefølge, én batch per side, med samme oppsett som en utskrift av en enkelt batch. Batcher uten donasjoner utelates, og hvis ingen av batchene i intervallet har donasjoner, ser du meldingen «Ingen batcher med donasjoner i dette datointervallet.» Klikk på **Skriv ut** for å åpne nettleserens utskriftsdialog, eller **Lukk** for å gå tilbake til batchlisten.
+
+## Eksportere en batch til QuickBooks Online
+
+Åpne en batch og klikk på **Eksporter for QuickBooks** for å laste den ned som en journalpost som QuickBooks Online kan importere (**Innstillinger > Importer data > Journalposter**). Filen inneholder én debet til **Undeposited Funds** for batchtotalen og én kredit per fond, med fondets navn som kontonavn. QuickBooks ber deg matche disse navnene med kontoplanen din under importen, så gi fondene navn slik regnskapsføreren din navngir inntektskontoene, eller koble dem én gang ved import.
+
+:::tip
+Gi batchene dine konsekvente navn, slik at de er lette å finne senere. Å ta med dato og innsamlingstype (f.eks. «Søndag formiddag – 2025-02-09») holder listen organisert etter hvert som den vokser.
 :::
 
 ## Neste steg
 
-Når du har en gavebunt, kan du se [Registrere donasjoner](recording-donations.md) for å lære hvordan du legger til enkeltdonasjoner i den. Du kan også [importere Stripe-transaksjoner](stripe-import.md) for automatisk å opprette gavebunter fra nettbasert giving.
+Når du har en batch, se [Registrere donasjoner](recording-donations.md) for å lære hvordan du legger til enkeltdonasjoner i den. Du kan også [importere Stripe-transaksjoner](stripe-import.md) for automatisk å opprette batcher fra nettgiving.

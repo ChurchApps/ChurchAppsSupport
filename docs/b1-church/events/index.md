@@ -12,13 +12,16 @@ The Events section on B1.church lets you browse upcoming church events and regis
 
 ## Browsing Events
 
-Events appear on the church calendar. When you open an event that has registration enabled, a **Register for this Event** button is displayed alongside the event details.
+Events appear on your church's website, either on a month calendar or as tiles of upcoming events. Click an event to open its own page, which shows:
 
-Events with registration enabled show:
-
+- **Event photo** -- If the church added one.
 - **Event title and description** -- What the event is about.
-- **Date and time** -- When the event takes place.
-- **Registration button** -- A blue button that takes you to the registration form.
+- **When** -- The date and time of the next occurrence, or the repeat pattern for a recurring event.
+- **Where** -- The rooms the event is booked in, if any.
+- **Register for this Event** -- A button that takes you to the registration form. Only shown when registration is turned on for the event.
+- **Add to my calendar** -- Downloads the event as a calendar file you can open in Google Calendar, Apple Calendar, Outlook, or another calendar app.
+
+Tap **All events** at the top of the page to go back. Above the upcoming-event tiles, a **Subscribe** button lets you copy the whole calendar's ICS link or download it, so new events show up in your own calendar app.
 
 ## Registration Status
 

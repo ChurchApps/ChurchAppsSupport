@@ -2,11 +2,11 @@
 title: "Local API Setup"
 ---
 
-# Local API Setup
+# Lokal na Setup ng API
 
 <div class="article-intro">
 
-Ang gabay na ito ay gagabay sa iyo sa pag-setup ng ChurchApps API para sa local development. Kopyahin mo ang repository, i-configure ang iyong database connections, i-initialize ang schema, at simulan ang dev server na may hot reload.
+Ginagabayan ka ng gabay na ito sa pag-set up ng ChurchApps API para sa lokal na development. Ika-clone mo ang repository, i-configure ang mga koneksyon sa database, i-initialize ang schema, at simulan ang dev server na may hot reload.
 
 </div>
 
@@ -14,12 +14,12 @@ Ang gabay na ito ay gagabay sa iyo sa pag-setup ng ChurchApps API para sa local 
 <h4>Bago Ka Magsimula</h4>
 
 - I-install ang **Node.js 22+**, **Git**, at **MySQL 8.0+** -- tingnan ang [Prerequisites](../setup/prerequisites)
-- Lumikha ng MySQL user na may database creation privileges
-- Suriin ang [Environment Variables](../setup/environment-variables) reference para sa API configuration
+- Gumawa ng MySQL user na may pribilehiyo sa paggawa ng database
+- Basahin ang [Environment Variables](../setup/environment-variables) reference para sa configuration ng API
 
 </div>
 
-## Step-by-Step Setup
+## Hakbang-Hakbang na Setup
 
 ### 1. I-clone ang repository
 
@@ -27,39 +27,39 @@ Ang gabay na ito ay gagabay sa iyo sa pag-setup ng ChurchApps API para sa local 
 git clone https://github.com/ChurchApps/Api.git
 ```
 
-### 2. I-install ang dependencies
+### 2. I-install ang mga dependency
 
-Ang project ay gumagamit ng Yarn (isang guard ay humihigil sa `npm install`):
+Gumagamit ang proyekto ng Yarn (hinaharangan ng guard ang `npm install`):
 
 ```bash
 cd Api
 yarn install
 ```
 
-### 3. I-configure ang environment variables
+### 3. I-configure ang mga environment variable
 
 ```bash
 cp .env.sample .env
 ```
 
-Buksan ang `.env` at i-configure ang iyong MySQL connection strings. Bawat module ay kailangan ng sarili nitong database connection sa sumusunod na format:
+Buksan ang `.env` at i-configure ang iyong mga MySQL connection string. Kailangan ng bawat module ng sarili nitong koneksyon sa database sa sumusunod na format:
 
 ```
 mysql://root:password@localhost:3306/dbname
 ```
 
-Kailangan mo ng connection strings para sa lahat ng anim na module databases (membership, attendance, content, giving, messaging, doing).
+Kakailanganin mo ang mga connection string para sa lahat ng anim na database ng module (membership, attendance, content, giving, messaging, doing).
 
-### 4. I-initialize ang databases
+### 4. I-initialize ang mga database
 
 ```bash
 npm run initdb
 ```
 
-Ito ay lumilikha ng lahat ng anim na databases at ang kanilang tables nang awtomatiko.
+Awtomatikong ginagawa nito ang lahat ng anim na database at ang kanilang mga table.
 
 :::tip
-Maaari mong i-initialize ang isang module's database lamang gamit ang `npm run initdb -- --module=membership` (o `attendance`, `content`, `giving`, `messaging`, `doing`).
+Maaari mong i-initialize ang database ng iisang module gamit ang `npm run initdb -- --module=membership` (o `attendance`, `content`, `giving`, `messaging`, `doing`).
 :::
 
 ### 5. Simulan ang dev server
@@ -68,50 +68,40 @@ Maaari mong i-initialize ang isang module's database lamang gamit ang `npm run i
 npm run dev
 ```
 
-Ang API ay nagsisimula na may hot reload sa [http://localhost:8084](http://localhost:8084).
+Magsisimula ang API na may hot reload sa [http://localhost:8084](http://localhost:8084).
 
-## Key Commands
+## Mga Pangunahing Command
 
-| Command | Description |
+| Command | Paglalarawan |
 |---------|-------------|
 | `npm run dev` | Simulan ang dev server na may hot reload (tsx watch) |
-| `npm run build` | I-clean, i-compile ang TypeScript, at kopyahin ang assets |
-| `npm run test` | Patakbuhin ang tests gamit ang Jest (kasama ang coverage) |
-| `npm run test:watch` | Patakbuhin ang tests sa watch mode |
-| `npm run lint` | Patakbuhin ang ESLint na may auto-fix (ESLint ang sole formatter) |
+| `npm run build` | Linisin, i-compile ang TypeScript, at kopyahin ang mga asset |
+| `npm run test` | Patakbuhin ang mga test gamit ang Jest (kasama ang coverage) |
+| `npm run test:watch` | Patakbuhin ang mga test sa watch mode |
+| `npm run lint` | Patakbuhin ang ESLint na may auto-fix (ESLint ang tanging formatter) |
 
-## Staging Deployment
+## Deployment
 
-Para i-deploy sa staging environment:
+Wala na ang staging environment. Dine-deploy ang Api sa demo environment sa bawat push sa `main` at sa production sa pamamagitan ng manual na workflow na **Deploy Prod**, na naglalapat din ng mga nakabinbing migration sa database. Tingnan ang [API Deployment](../deployment/apis) para sa mga detalye.
 
-```bash
-npm run deploy-staging
-```
+## Lokal na Development ng Library
 
-Ito ay nagsasagawa ng production build at pagkatapos ay nag-deploy via Serverless Framework.
-
-:::warning
-Siguraduhin na ang iyong AWS credentials ay configured bago patakbuhin ang deploy command.
-:::
-
-## Local Library Development
-
-Kung kailangan mong mag-develop ng shared library (`@churchapps/helpers` o `@churchapps/apihelper`) kasama ang API, i-build ito sa [Packages](https://github.com/ChurchApps/Packages) workspace at magdagdag ng temporary Yarn portal sa API:
+Kung kailangan mong i-develop ang isang shared library (`@churchapps/helpers` o `@churchapps/apihelper`) kasama ng API, i-build ito sa [Packages](https://github.com/ChurchApps/Packages) workspace at magdagdag ng pansamantalang Yarn portal sa API:
 
 ```bash
-# Sa Packages workspace
+# In the Packages workspace
 yarn build
 
-# Sa API directory
+# In the API directory
 yarn link ../Packages/helpers
 # ... test ...
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Ito ay nagpapahintulot sa iyo na subukan ang library changes laban sa API nang hindi nag-publish sa npm. Tingnan ang [Shared Libraries](../shared-libraries/#local-development-against-a-consuming-app) para sa detalye -- at hindi kailanman i-commit ang portal resolution na isusulat ng link sa `package.json`.
+Pinapayagan ka nitong subukan ang mga pagbabago sa library laban sa API nang hindi nagpa-publish sa npm. Tingnan ang [Shared Libraries](../shared-libraries/#local-development-against-a-consuming-app) para sa mga detalye — at huwag kailanman i-commit ang portal resolution na isinusulat ng link sa `package.json`.
 
-## Related Articles
+## Mga Kaugnay na Artikulo
 
-- **[Database](./database)** -- Pag-unawa sa database-per-module architecture
-- **[Module Structure](./module-structure)** -- Paano ino-organize ang controllers, repositories, at models
-- **[Shared Libraries](../shared-libraries/)** -- Pagtrabaho sa `@churchapps/helpers` at `@churchapps/apihelper`
+- **[Database](./database)** -- Pag-unawa sa arkitektura ng database-per-module
+- **[Module Structure](./module-structure)** -- Kung paano inaayos ang mga controller, repository, at model
+- **[Shared Libraries](../shared-libraries/)** -- Pagtatrabaho sa `@churchapps/helpers` at `@churchapps/apihelper`

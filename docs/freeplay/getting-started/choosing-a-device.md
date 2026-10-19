@@ -54,4 +54,4 @@ Once you have your device, installation takes about two minutes — see [Getting
 
 - [Getting Started](./index.md) — installation and remote controls
 - [Choosing a Pairing Mode](./pairing-modes.md) — connect the TV to your classroom or plans
-- [Downloading Content](../classroom-mode/downloading-content.md) — offline playback for Sunday morning
+- [Browsing and Downloading Content](../content-providers/browsing-content.md) — offline playback for Sunday morning

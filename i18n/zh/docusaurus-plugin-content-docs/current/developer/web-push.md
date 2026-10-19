@@ -6,47 +6,47 @@ title: "Web 推送通知"
 
 <div class="article-intro">
 
-ChurchApps Web 应用通过 W3C Web Push API 提供推送通知——与 Firebase Cloud Messaging 在服务器端使用的机制相同，但通过浏览器的原生 `PushManager` 而非 FCM 传递。MessagingApi 上的单个 VAPID 密钥对覆盖每个消费者（B1Admin、B1App、未来的 PWA）。
+ChurchApps 网页应用通过 W3C Web Push API 发送推送通知——这与服务端的 Firebase Cloud Messaging 所使用的机制相同，但通过浏览器原生的 `PushManager` 投递，而不是 FCM。单个 VAPID 密钥对即可覆盖所有使用方（B1Admin、B1App 以及未来的 PWA）。
 
 </div>
 
-## 何时推送触发
+## 推送何时触发 {#when-push-fires}
 
-推送是 `NotificationHelper.attemptDeliveryWithEscalation()`（`Api/src/modules/messaging/helpers/NotificationHelper.ts`）内单一传递通过的一层：应用内偏好门槛、然后套接字传递和推送在相同通过中尝试（每个都在自己的偏好门槛后）、然后电子邮件。已将类别静音的收件人永远不会到达推送。套接字传递成功不再停止推送——每种通知类型现在都表现得像私人消息一直那样做的方式，所以坐在后台的已安装 PWA 即使套接字传递已经到达，仍然会显示 OS 级别的通知；重复的横幅由服务工作者在客户端被抑制（参见 [服务工作者要求](#service-worker-requirement)）。定时提醒和员工触发的广播直接从推送层开始，完全跳过套接字步骤。电子邮件保持定时器驱动，按自己的时间表升级未读行而非作为此通过的一部分。
+推送是 `NotificationHelper.attemptDeliveryWithEscalation()`（`Api/src/modules/messaging/helpers/NotificationHelper.ts`）单次投递流程中的一个层级：先经过应用内偏好设置检查，然后在同一次流程中尝试套接字投递和推送（各自受其自身的偏好设置检查约束），最后是电子邮件。已将该类别设为静音的接收人永远不会收到推送。套接字投递成功不再会阻止推送——现在每种通知类型的行为都与私信一直以来的行为相同，因此即使套接字投递已成功，后台运行的已安装 PWA 仍会显示操作系统级通知；重复横幅则由 Service Worker 在客户端进行去重（参见 [Service Worker 要求](#service-worker-requirement)）。定时提醒和工作人员触发的广播会直接从推送层级开始，完全跳过套接字步骤。电子邮件仍由定时器驱动，按其自己的计划对未读记录进行升级，而不是作为此流程的一部分。
 
-最常见的到达推送的路径：
+最常见的、会进入推送层级的路径：
 
-1. **内容通知**——对人员关注的对话的回复、提及或通过 `NotificationHelper.createNotifications()` 路由的另一个事件。
-2. **私人消息**——直接消息通过相同的传递函数，并始终与套接字传递一起尝试推送。
-3. **定时提醒**——由提醒引擎扩展和调度的事件、任务和服侍提醒，直接从推送层开始新出现。
-4. **员工触发的推送**—— `POST /messaging/notifications/create`、`/ping` 和 `/group/send` 用于一次性或小组广播。
+1. **内容通知** —— 对用户关注的对话的回复、提及，或通过 `NotificationHelper.createNotifications()` 路由的其他事件。
+2. **私信** —— 直接消息通过相同的投递函数发送，并始终在套接字投递的同时尝试推送。
+3. **定时提醒** —— 由提醒引擎展开并分发的活动、任务和服事提醒，提醒引擎会直接从推送层级启动新的实例。
+4. **工作人员触发的推送** —— `POST /messaging/notifications/create`、`/ping` 和 `/group/send`，用于一次性或群组广播。
 
-## 服务器流程
+## 服务端流程
 
 ```
 NotificationHelper.createNotifications(...) / checkShouldNotify(...) / ReminderEngine.scan(...)
   │
   └─ NotificationHelper.attemptDeliveryWithEscalation(...)
-       ├─ 应用内偏好门槛                  ← 静音的收件人在此停止，无推送
-       ├─ 相同通过，两个都尝试（彼此不门槛）：
-       │    ├─ 通过 DeliveryHelper 的套接字传递  ← 对提醒/广播跳过（它们从推送开始）
-       │    └─ 推送偏好门槛
+       ├─ in-app preference gate                  ← muted recipients stop here, no push
+       ├─ same pass, both attempted (neither gates the other):
+       │    ├─ socket delivery via DeliveryHelper  ← skipped for reminders/broadcasts (they start at push)
+       │    └─ push preference gate
        │         └─ WebPushHelper.sendBulkTypedMessages(tokens, title, body, type, contentId)
-       │              └─ web-push 库 → VAPID 签名的 POST → 浏览器推送服务
-       └─ 电子邮件偏好门槛 → 定时器驱动，单独升级未读行
+       │              └─ web-push library → VAPID-signed POST → browser push service
+       └─ email preference gate → timer-driven, escalates unread rows separately
 ```
 
-### 所需环境变量
+### 必需的环境变量
 
 VAPID 密钥存储在 `Environment` 中，必须存在才能启用推送：
 
-| 变量 | 描述 |
+| 变量 | 说明 |
 |----------|-------------|
 | `webPushPublicKey` | VAPID 公钥（base64url）。通过 `GET /messaging/webpush/publicKey` 返回给客户端 |
-| `webPushPrivateKey` | VAPID 私钥。用于签署每个出站推送 |
+| `webPushPrivateKey` | VAPID 私钥。用于对每个出站推送进行签名 |
 | `webPushSubject` | 报告给推送服务的 `mailto:` URI。默认为 `mailto:support@churchapps.org` |
 
-`WebPushHelper.isEnabled()` 当任一密钥缺失时返回 `false`——消息模块继续操作，推送传递只是无操作。
+只要缺少任一密钥，`WebPushHelper.isEnabled()` 就会返回 `false`——消息模块将继续运行，但推送投递将不执行任何操作。
 
 ### 生成 VAPID 密钥对
 
@@ -54,70 +54,70 @@ VAPID 密钥存储在 `Environment` 中，必须存在才能启用推送：
 npx web-push generate-vapid-keys
 ```
 
-将输出添加到您的 `.env`（本地）或 AWS SSM Parameter Store（已部署）。轮转密钥使每个现有订阅无效——客户端必须在下一个页面加载时重新注册。
+将输出添加到您的 `.env` 文件（本地）或 AWS SSM Parameter Store（已部署环境）中。轮换密钥会使所有现有订阅失效——客户端必须在下次加载页面时重新注册。
 
 ## 存储模型
 
-Web Push 订阅存储在现有 `devices` 表中，与 FCM 设备记录一起。它们通过 `fcmToken` 列上的 `webpush:` 前缀区分：
+Web Push 订阅存储在现有的 `devices` 表中，与 FCM 设备记录并存。它们通过 `fcmToken` 列上的 `webpush:` 前缀加以区分：
 
 ```
 fcmToken = "webpush:" + JSON.stringify({ endpoint, keys: { p256dh, auth } })
 ```
 
-这让单个 `loadByPersonId` 调用返回用户注册的每个设备，无论平台如何。`WebPushHelper.isWebPushToken(token)` 和 `decodeSubscription(token)` 处理前缀逻辑。
+这使得单次 `loadByPersonId` 调用即可返回用户注册的所有设备，无论平台如何。`WebPushHelper.isWebPushToken(token)` 和 `decodeSubscription(token)` 负责处理前缀逻辑。
 
 ## 端点
 
 基础路径：`/messaging/webpush`
 
-| 方法 | 路径 | 认证 | 描述 |
+| 方法 | 路径 | 认证 | 说明 |
 |--------|------|------|-------------|
-| GET | `/publicKey` | 公共 | 返回 `{ publicKey, enabled }`。客户端将 `publicKey` 传给 `pushManager.subscribe({ applicationServerKey })` |
-| POST | `/subscribe` | JWT | 为认证用户注册（或更新插入）订阅。正文：`{ subscription: { endpoint, keys: { p256dh, auth } }, appName?, deviceInfo?, label? }` |
-| POST | `/unsubscribe` | 公共 | 删除任何 `fcmToken` 包含给定端点的设备行。正文：`{ endpoint }` |
-| DELETE | `/subscription/:id` | JWT | 按其服务器端 id 删除特定的设备行 |
+| GET | `/publicKey` | 公开 | 返回 `{ publicKey, enabled }`。客户端将 `publicKey` 传递给 `pushManager.subscribe({ applicationServerKey })` |
+| POST | `/subscribe` | JWT | 为已认证用户注册（或更新）订阅。请求体：`{ subscription: { endpoint, keys: { p256dh, auth } }, appName?, deviceInfo?, label? }` |
+| POST | `/unsubscribe` | 公开 | 删除 `fcmToken` 包含给定端点的所有设备行。请求体：`{ endpoint }` |
+| DELETE | `/subscription/:id` | JWT | 按服务端 ID 删除特定设备行 |
 
-## 客户端原语：`WebPushHelper`
+## 客户端组件：`WebPushHelper`
 
-`@churchapps/apphelper` 的 `WebPushHelper` 是单个客户端入口点。主机在启动时配置它一次，在登录后调用 `subscribe()`。
+`@churchapps/apphelper` 的 `WebPushHelper` 是唯一的客户端入口。宿主应用在启动时进行一次配置，并在登录后调用 `subscribe()`。
 
 ```typescript
 import { WebPushHelper } from "@churchapps/apphelper";
 
-// 在您应用的启动中（例如 _app.tsx、layout.tsx）
+// In your app's bootstrap (e.g., _app.tsx, layout.tsx)
 WebPushHelper.configure({
-  scope: "/",                // 服务工作者范围；匹配 sw.js 注册
-  appName: "B1AppPwa"        // 存储在设备行上，对按表面过滤有用
+  scope: "/",                // service worker scope; matches sw.js registration
+  appName: "B1AppPwa"        // stored on the device row, useful for filtering by surface
 });
 
-// 登录后（以及每个 userChurch 变更后）
+// After login (and after every userChurch change)
 await WebPushHelper.subscribe();
 ```
 
-消费者免费获得的行为：
+使用方无需额外配置即可获得以下行为：
 
-- **能力检查**—— `isSupported()` 在没有 `serviceWorker` / `PushManager` / `Notification` 的浏览器上返回 `false`。
-- **冷却时间**—— `canPromptNow()` 通过 `localStorage` 强制 7 天冷却时间，以便关闭 OS 提示的用户不会在每个会话中被再次询问。
-- **选择退出**—— `setOptedOut(true)` 和 `unsubscribe()` 阻止重新提示并删除服务器端设备行。
-- **独立 PWA 检测**—— `isStandalone()` 让主机将 iOS 推送提示关联在"用户已将 PWA 安装到其主屏幕"后（iOS 仅允许来自已安装 PWA 的推送）。
-- **教会切换时重新注册**—— `refreshEnrollment()` 重新发送现有浏览器订阅针对新的 `userChurch` 而不重新提示用户。从 `userChurch` 变更处理程序调用它。
+- **能力检查** —— 在不支持 `serviceWorker` / `PushManager` / `Notification` 的浏览器上，`isSupported()` 返回 `false`。
+- **冷却时间** —— `canPromptNow()` 通过 `localStorage` 在两次提示之间强制执行 7 天的冷却时间，因此拒绝操作系统提示的用户不会在每次会话中被反复询问。
+- **退出订阅** —— `setOptedOut(true)` 和 `unsubscribe()` 会阻止再次提示，并删除服务端的设备行。
+- **独立 PWA 检测** —— `isStandalone()` 让宿主应用可以将 iOS 推送提示限制在“用户已将 PWA 安装到主屏幕”的情况下（iOS 只允许已安装 PWA 发送推送）。
+- **切换教会时重新注册** —— `refreshEnrollment()` 会将现有的浏览器订阅针对新的 `userChurch` 重新提交，而无需再次提示用户。请在 `userChurch` 变更处理程序中调用它。
 
-### 服务工作者要求
+### Service Worker 要求 {#service-worker-requirement}
 
-浏览器的 `PushManager` 仅在在配置的范围注册了服务工作者时解决订阅。ChurchApps PWA 使用 [Serwist](https://serwist.dev/)（Next.js 应用）或 workbox 进行服务工作者生成。因为服务器现在始终与套接字传递一起尝试推送（参见 [何时推送触发](#何时推送触发)），服务工作者是去重点：其 `push` 处理程序必须在已关注/可见的客户端已经在通知的深层链接目标上时抑制 `showNotification`，但无论横幅是否显示，应始终更新应用徽章：
+只有在配置的作用域中注册了 Service Worker，浏览器的 `PushManager` 才会解析订阅。ChurchApps 的 PWA 使用 [Serwist](https://serwist.dev/)（Next.js 应用）或 workbox 来生成 Service Worker。由于服务端现在始终在套接字投递的同时尝试推送（参见[推送何时触发](#when-push-fires)），因此 Service Worker 是去重的关键点：其 `push` 处理程序在已有聚焦/可见的客户端正位于该通知的深层链接目标上时，必须抑制 `showNotification`，但无论横幅是否显示，都应始终更新应用角标：
 
 ```javascript
-// public/sw.js（或 Serwist/workbox 发出的任何内容）
+// public/sw.js (or whatever Serwist/workbox emits)
 self.addEventListener("push", (event) => {
   const data = event.data?.json() ?? {};
   const title = data.title || "ChurchApps";
   const target = deepLinkFor(data.type, data.contentId, data);
 
   event.waitUntil((async () => {
-    if (typeof data.badgeCount === "number") await updateAppBadge(data.badgeCount); // 始终运行，即使横幅被抑制
+    if (typeof data.badgeCount === "number") await updateAppBadge(data.badgeCount); // always runs, even if the banner is suppressed
 
     const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
-    // 相同的路径名；对于私人消息，也相同的 conversationId。
+    // Same pathname; for private messages, also same conversationId.
     const alreadyViewing = clients.some((client) => (client.focused || client.visibilityState === "visible") && clientMatchesTarget(client.url, target));
     if (alreadyViewing) return;
 
@@ -136,7 +136,7 @@ self.addEventListener("notificationclick", (event) => {
     const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
 
     const exact = clients.find((client) => clientMatchesTarget(client.url, target));
-    if (exact) return exact.focus(); // 已在目标上：聚焦，不导航
+    if (exact) return exact.focus(); // already on the target: focus, don't navigate
 
     const mobileClient = clients.find((client) => new URL(client.url).pathname.startsWith("/mobile"));
     if (mobileClient) {
@@ -149,18 +149,18 @@ self.addEventListener("notificationclick", (event) => {
 });
 ```
 
-`deepLinkFor` / `clientMatchesTarget` 是消费者特定的——有关参考实现，请参阅 `B1App/src/app/sw.ts`。B1App 路由 `privateMessage` 到 `/mobile/messages/:personId`，B1Admin 路由 `notification` 到其警报面板，等等。
+`deepLinkFor` 和 `clientMatchesTarget` 是特定于使用方的函数——参见 `B1App/src/app/sw.ts` 中的参考实现。B1App 将 `privateMessage` 路由到 `/mobile/messages/:personId`，B1Admin 则将 `notification` 路由到其提醒面板，依此类推。
 
-## 运营笔记
+## 运维说明
 
-- **`gone: true` 结果**—— `WebPushHelper.sendBulk` 按收件人返回 `{ token, success, gone, errorMessage }`。`gone: true` 结果（推送服务响应 `404` 或 `410`）意味着订阅是永久无效的；`NotificationHelper` 中的下游代码删除这些设备行，以便不再尝试它们。
-- **TTL**——推送消息以 `TTL: 86400`（24 小时）发送。如果用户的浏览器在 24 小时内未连接到推送服务，推送被丢弃。
-- **无重试**——瞬时失败（超时、5xx）被记录但不重试。推送是尽力而为；页面内套接字和电子邮件通知层处理持久性。
-- **禁用的环境**——暂存和开发环境可以将 VAPID 密钥留空；`WebPushHelper.isEnabled()` 将返回 `false` 推送将短路。这是没有自己 VAPID 身份的环境的预期行为。
+- **`gone: true` 结果** —— `WebPushHelper.sendBulk` 为每位接收人返回 `{ token, success, gone, errorMessage }`。`gone: true` 的结果（推送服务返回 `404` 或 `410`）表示该订阅已永久失效；`NotificationHelper` 中的下游代码会删除这些设备行，使其不会再次被尝试。
+- **TTL** —— 推送消息以 `TTL: 86400`（24 小时）发送。如果用户的浏览器在 24 小时内未连接到推送服务，该推送将被丢弃。
+- **不重试** —— 临时性故障（超时、5xx）会被记录但不会重试。推送属于尽力而为：页面内的套接字和电子邮件通知层级负责保证通知的可靠送达。
+- **已禁用的环境** —— 开发环境可以将 VAPID 密钥留空；此时 `WebPushHelper.isEnabled()` 将返回 `false`，推送将直接短路返回。对于没有自己 VAPID 身份的环境，这是预期的行为。
 
 ## 相关页面
 
-- [通知架构](./architecture/notifications) ——完整的应用内/推送/电子邮件升级漏斗和提醒引擎
-- [实时架构](./realtime) ——WebSocket 传递；推送现在从相同的应用内漏斗在相同通过中与套接字传递一起触发，不仅作为套接字传递不到达时的回退
-- [消息端点](./api/endpoints/messaging) ——通知、设备和消息表面的其余部分
-- [AppHelper](./shared-libraries/app-helper) ——提供 `WebPushHelper` 的 npm 包
+- [通知架构](./architecture/notifications) -- 完整的应用内/推送/电子邮件升级流程以及提醒引擎
+- [实时架构](./realtime) -- WebSocket 投递；推送现在与套接字投递在同一次应用内流程中一同触发，而不仅仅是在套接字投递未成功时作为备用方案
+- [消息端点](./api/endpoints/messaging) -- 通知、设备以及其余的消息接口
+- [AppHelper](./shared-libraries/app-helper) -- 提供 `WebPushHelper` 的 npm 包

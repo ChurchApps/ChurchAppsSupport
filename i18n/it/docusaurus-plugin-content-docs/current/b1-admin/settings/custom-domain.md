@@ -6,43 +6,43 @@ title: "Dominio personalizzato"
 
 <div class="article-intro">
 
-Puoi puntare il tuo dominio (ad esempio, **www.yourchurch.org**) al tuo sito B1 in modo che i visitatori lo raggiungano all'indirizzo web reale della tua chiesa invece dell'indirizzo predefinito yourchurch.1.church.
+Puoi puntare un tuo dominio (ad esempio, **www.tuachiesa.org**) al tuo sito B1 così i visitatori raggiungono il sito all'indirizzo web reale della chiesa invece che all'indirizzo predefinito tuachiesa.b1.church.
 
 </div>
 
-## Passaggio 1 - Aggiungi prima il record DNS
+## Passo 1 — Aggiungi prima il record DNS
 
 Prima di aggiungere il tuo dominio in B1, devi puntarlo ai server di B1 presso il tuo registrar di domini (GoDaddy, Namecheap, Cloudflare, ecc.).
 
-Aggiungi uno di questi record - CNAME è preferito:
+Aggiungi uno di questi record — il CNAME è preferibile:
 
 | Tipo | Host | Valore |
-|------|------|-------|
+|------|------|-----------------------|
 | CNAME | `www` | `proxy.b1.church` |
-| A | `yourchurch.org` | `3.23.251.61` |
+| A | `tuachiesa.org` | `3.23.251.61` |
 
-Utilizza il **CNAME** per il tuo indirizzo `www`. Utilizza il **record A** se il tuo registrar non supporta CNAME su un dominio root/apex (senza www), o se vuoi che il dominio root funzioni anche.
+Usa il **CNAME** per l'indirizzo `www`. Usa il **record A** se il tuo registrar non supporta il CNAME sul dominio radice (senza www), oppure se vuoi che anche il dominio radice funzioni.
 
-I cambiamenti DNS possono richiedere da alcuni minuti a poche ore per avere effetto.
+Le modifiche DNS possono richiedere da pochi minuti a qualche ora per avere effetto.
 
-## Passaggio 2 - Aggiungi il dominio in B1
+## Passo 2 — Aggiungi il dominio in B1
 
-Una volta che DNS punta a B1:
+Una volta che il DNS punta a B1:
 
-1. Vai a **Settings** in B1 Admin.
-2. Fai clic su **Domains** nell'elenco a sinistra, quindi fai clic su **Edit** nella sezione **Domains**.
-3. Digita il tuo dominio nel campo e fai clic su **Save**.
+1. Vai su **Impostazioni** in B1 Admin.
+2. Fai clic su **Domini** nell'elenco a sinistra, poi fai clic su **Modifica** nella sezione **Domini**.
+3. Digita il tuo dominio nel campo e fai clic su **Salva**.
 
-Non è necessario fare clic prima sul pulsante **+** - un dominio digitato nel campo viene aggiunto quando salvi. Utilizza **+** (o premi **Enter**) quando desideri aggiungere più domini all'elenco prima di salvare.
+Non serve fare clic prima sul pulsante **+** — un dominio lasciato scritto nel campo viene aggiunto al salvataggio. Usa **+** (o premi **Invio**) quando vuoi aggiungere più domini all'elenco prima di salvare.
 
-B1 gestisce automaticamente SSL - nessun acquisto di certificato è necessario.
+B1 gestisce automaticamente l'SSL — non serve acquistare alcun certificato.
 
 :::warning
-Se aggiungi il dominio in B1 prima che i tuoi record DNS siano in posto, non si salverà. Imposta sempre prima il DNS.
+Se aggiungi il dominio in B1 prima che i record DNS siano al loro posto, non verrà salvato. Configura sempre prima il DNS.
 :::
 
-## Verifica se sta funzionando
+## Verificare che funzioni
 
-Dopo il salvataggio, visita il tuo dominio in un browser. Se carica il tuo sito B1, hai finito. Se vedi un errore, il DNS potrebbe ancora essere propagato, attendi alcuni minuti e riprova.
+Dopo il salvataggio, visita il tuo dominio in un browser. Se carica il tuo sito B1, hai finito. Se vedi un errore, il DNS potrebbe essere ancora in propagazione — attendi qualche minuto e riprova.
 
-Puoi anche controllare la propagazione DNS su [dnschecker.org](https://dnschecker.org) - cerca il tuo dominio e controlla che il tuo record CNAME o A compaia.
+Puoi anche controllare la propagazione DNS su [dnschecker.org](https://dnschecker.org) — cerca il tuo dominio e verifica che il tuo record CNAME o A risulti presente.

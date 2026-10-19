@@ -1,41 +1,50 @@
 ---
-title: "Provider di Contenuto"
+title: "Fornitori di contenuti"
 ---
 
-# Provider di Contenuto
+# Fornitori di contenuti
 
 <div class="article-intro">
 
-I provider di contenuto sono servizi esterni che forniscono materiali di lezione, video e immagini per la riproduzione sulla tua TV. FreePlay supporta più provider, permettendoti di navigare e scaricare contenuto da diverse fonti tutto in una singola app.
+I fornitori di contenuti sono servizi esterni che forniscono materiali didattici, video e immagini per la riproduzione sulla tua TV. FreePlay supporta più fornitori, permettendoti di sfogliare e scaricare contenuti da fonti diverse, tutto in un'unica app.
 
 </div>
 
-## Provider Disponibili
+## Fornitori disponibili
 
-FreePlay attualmente include i seguenti provider:
+FreePlay include attualmente i seguenti fornitori:
 
-- **[Lessons.church](../../lessons-church/)** - Curriculum di ministero dei bambini gratuito e open-source
+- **[Lessons.church](../../lessons-church/)** - Curriculum gratuito e open source per il ministero dei bambini
 - **Bible Project** - Video e risorse che esplorano la Bibbia
-- **SignPresenter** - Contenuto di presentazione e signage per chiese
-- **B1.church** - Contenuto dalla tua stessa configurazione di chiesa B1
+- **SignPresenter** - Contenuti di presentazione e segnaletica per le chiese
+- **B1.church** - Contenuti della tua configurazione B1 di chiesa
 - **Go Curriculum** - Curriculum da gocurriculum.com, organizzato per collezione e lezione
-- **Google Drive** - Naviga e riproduci file video e audio dal tuo Google Drive personale
-- **FreeShow** - FreePlay trova FreeShow in esecuzione su un computer sulla stessa rete e vi si connette
+- **Dropbox** - Sfoglia e riproduci immagini e video dal tuo Dropbox
+- **Jesus Film Project** - Film e clip video di Jesus Film Project
+- **OneDrive** - Sfoglia e riproduci immagini, video e audio dal tuo Microsoft OneDrive
 
-:::info
-Alcuni provider sono ancora in fase di aggiunta. Se una scheda del provider mostra "Coming Soon," non è ancora disponibile per la connessione.
+:::note
+Google Drive e FreeShow non vengono più mostrati nell'app TV di FreePlay. Per usare i contenuti di Google Drive sulle tue TV, collegalo in [FreePlay Admin](../scheduled-mode/building-playlists#connecting-providers), aggiungi i file a una playlist e programma quella playlist.
 :::
 
-## Come Funzionano i Provider
+:::info
+Alcuni fornitori sono ancora in fase di inserimento. Se una scheda del fornitore mostra "Prossimamente", non è ancora disponibile per il collegamento.
+:::
 
-Ogni provider ha la sua libreria di contenuto organizzata in cartelle e file. Una volta che ti colleghi a un provider, il suo contenuto appare in un browser di cartelle in cui puoi perforare le categorie, selezionare elementi e scaricarli per la riproduzione.
+## Come funzionano i fornitori
 
-I provider collegati appaiono nella barra laterale sul lato sinistro dello schermo, sotto l'intestazione **Browse**. Puoi passare da un provider a un altro selezionandoli nella barra laterale, rendendo facile saltare tra fonti di contenuto durante la configurazione.
+Ogni fornitore ha una propria libreria di contenuti organizzata in cartelle e file. Una volta collegato un fornitore, i suoi contenuti appaiono in un browser di cartelle dove puoi entrare nelle categorie, selezionare gli elementi e scaricarli per la riproduzione.
 
-Puoi anche scegliere una cartella da qualsiasi provider collegato per ripetere come [annunci](./announcements) sulla tua TV.
+I fornitori collegati compaiono nella barra laterale a sinistra dello schermo, sotto il titolo **Sfoglia**. Puoi passare da un fornitore all'altro selezionandoli nella barra laterale, il che rende facile spostarsi tra le fonti di contenuti durante la configurazione.
 
-## In Questa Sezione
+Puoi anche scegliere una cartella di qualsiasi fornitore collegato da far scorrere in loop come [annunci](./announcements) sulla tua TV.
 
-- **[Connessione a Provider](./connecting-providers)** - Come autenticarsi e connettersi
-- **[Navigazione e Scaricamento di Contenuto](./browsing-content)** - Naviga cartelle, scarica file e riproduci contenuto
-- **[Announcements](./announcements)** - Ripeti una cartella di diapositive da un provider
+:::tip
+I fornitori che colleghi sulla TV valgono solo per quella TV. Se usi la [Modalità programmata](../scheduled-mode/), collega i fornitori una sola volta in FreePlay Admin: ogni schermo programmato potrà riprodurre contenuti da essi.
+:::
+
+## In questa sezione
+
+- **[Collegamento ai fornitori](./connecting-providers)** - Come autenticarsi e collegarsi
+- **[Sfogliare e scaricare i contenuti](./browsing-content)** - Navigare nelle cartelle, scaricare file e riprodurre contenuti
+- **[Annunci](./announcements)** - Far scorrere in loop una cartella di diapositive da un fornitore

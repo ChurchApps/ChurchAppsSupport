@@ -6,20 +6,20 @@ title: "Configuração Local da API"
 
 <div class="article-intro">
 
-Este guia orienta você na configuração da API do ChurchApps para desenvolvimento local. Você irá clonar o repositório, configurar suas conexões de banco de dados, inicializar o esquema e iniciar o servidor de desenvolvimento com hot reload.
+Este guia mostra como configurar a API da ChurchApps para desenvolvimento local. Você vai clonar o repositório, configurar as conexões com o banco de dados, inicializar o esquema e iniciar o servidor de desenvolvimento com recarregamento automático.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Instale **Node.js 22+**, **Git** e **MySQL 8.0+** -- veja [Pré-requisitos](../setup/prerequisites)
-- Crie um usuário MySQL com privilégios de criação de banco de dados
-- Revise a referência de [Variáveis de Ambiente](../setup/environment-variables) para configuração da API
+- Instale o **Node.js 22+**, o **Git** e o **MySQL 8.0+** -- veja [Pré-requisitos](../setup/prerequisites)
+- Crie um usuário MySQL com permissão para criar bancos de dados
+- Consulte a referência de [Variáveis de Ambiente](../setup/environment-variables) para a configuração da API
 
 </div>
 
-## Configuração Passo a Passo
+## Passo a passo da configuração
 
 ### 1. Clone o repositório
 
@@ -29,7 +29,7 @@ git clone https://github.com/ChurchApps/Api.git
 
 ### 2. Instale as dependências
 
-O projeto usa Yarn (uma proteção bloqueia `npm install`):
+O projeto usa o Yarn (uma proteção bloqueia o `npm install`):
 
 ```bash
 cd Api
@@ -42,13 +42,13 @@ yarn install
 cp .env.sample .env
 ```
 
-Abra o `.env` e configure suas strings de conexão MySQL. Cada módulo precisa de sua própria conexão de banco de dados no seguinte formato:
+Abra o `.env` e configure as strings de conexão com o MySQL. Cada módulo precisa de sua própria conexão com o banco de dados, no seguinte formato:
 
 ```
 mysql://root:password@localhost:3306/dbname
 ```
 
-Você precisará de strings de conexão para todos os seis bancos de dados de módulos (membership, attendance, content, giving, messaging, doing).
+Você vai precisar das strings de conexão dos seis bancos de dados dos módulos (membership, attendance, content, giving, messaging, doing).
 
 ### 4. Inicialize os bancos de dados
 
@@ -56,7 +56,7 @@ Você precisará de strings de conexão para todos os seis bancos de dados de m�
 npm run initdb
 ```
 
-Isso cria todos os seis bancos de dados e suas tabelas automaticamente.
+Este comando cria automaticamente os seis bancos de dados e suas tabelas.
 
 :::tip
 Você pode inicializar o banco de dados de um único módulo com `npm run initdb -- --module=membership` (ou `attendance`, `content`, `giving`, `messaging`, `doing`).
@@ -68,50 +68,40 @@ Você pode inicializar o banco de dados de um único módulo com `npm run initdb
 npm run dev
 ```
 
-A API inicia com hot reload em [http://localhost:8084](http://localhost:8084).
+A API inicia com recarregamento automático em [http://localhost:8084](http://localhost:8084).
 
-## Comandos Principais
+## Comandos principais
 
 | Comando | Descrição |
 |---------|-----------|
-| `npm run dev` | Iniciar servidor de desenvolvimento com hot reload (tsx watch) |
-| `npm run build` | Limpar, compilar TypeScript e copiar assets |
-| `npm run test` | Executar testes com Jest (inclui cobertura) |
-| `npm run test:watch` | Executar testes em modo de observação |
-| `npm run lint` | Executar ESLint com auto-fix (ESLint é o único formatador) |
+| `npm run dev` | Inicia o servidor de desenvolvimento com recarregamento automático (tsx watch) |
+| `npm run build` | Limpa, compila o TypeScript e copia os recursos |
+| `npm run test` | Executa os testes com Jest (inclui cobertura) |
+| `npm run test:watch` | Executa os testes em modo de observação |
+| `npm run lint` | Executa o ESLint com correção automática (o ESLint é o único formatador) |
 
-## Implantação em Staging
+## Implantação
 
-Para implantar no ambiente de staging:
+O ambiente de staging foi desativado. A Api é implantada no ambiente de demonstração a cada push para `main` e, em produção, pelo workflow manual **Deploy Prod**, que também aplica as migrações pendentes do banco de dados. Veja [Implantação da API](../deployment/apis) para mais detalhes.
 
-```bash
-npm run deploy-staging
-```
+## Desenvolvimento de bibliotecas locais
 
-Isso executa um build de produção e depois implanta via Serverless Framework.
-
-:::warning
-Certifique-se de que suas credenciais AWS estejam configuradas antes de executar o comando de implantação.
-:::
-
-## Desenvolvimento Local de Bibliotecas
-
-Se você precisar desenvolver uma biblioteca compartilhada (`@churchapps/helpers` ou `@churchapps/apihelper`) junto com a API, construa-a no workspace [Packages](https://github.com/ChurchApps/Packages) e adicione um portal Yarn temporário na API:
+Se você precisar desenvolver uma biblioteca compartilhada (`@churchapps/helpers` ou `@churchapps/apihelper`) junto com a API, compile-a no workspace [Packages](https://github.com/ChurchApps/Packages) e adicione um portal temporário do Yarn na API:
 
 ```bash
-# No workspace do Packages
+# In the Packages workspace
 yarn build
 
-# No diretório da API
+# In the API directory
 yarn link ../Packages/helpers
-# ... teste ...
+# ... test ...
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Isso permite testar alterações na biblioteca contra a API sem publicar no npm. Veja [Bibliotecas Compartilhadas](../shared-libraries/#local-development-against-a-consuming-app) para detalhes -- e nunca faça commit da resolução do portal que o link escreve em `package.json`.
+Isso permite testar alterações de bibliotecas na API sem publicá-las no npm. Veja [Bibliotecas Compartilhadas](../shared-libraries/#local-development-against-a-consuming-app) para mais detalhes -- e nunca faça commit da resolução de portal que o link grava no `package.json`.
 
-## Artigos Relacionados
+## Artigos relacionados
 
-- **[Banco de Dados](./database)** -- Entendendo a arquitetura de banco de dados por módulo
-- **[Estrutura do Módulo](./module-structure)** -- Como controllers, repositórios e modelos são organizados
+- **[Banco de Dados](./database)** -- Entenda a arquitetura de um banco de dados por módulo
+- **[Estrutura dos Módulos](./module-structure)** -- Como controladores, repositórios e modelos são organizados
 - **[Bibliotecas Compartilhadas](../shared-libraries/)** -- Trabalhando com `@churchapps/helpers` e `@churchapps/apihelper`

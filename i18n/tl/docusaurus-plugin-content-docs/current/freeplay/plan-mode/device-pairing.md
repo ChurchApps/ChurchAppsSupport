@@ -6,68 +6,60 @@ title: "Pag-pair ng Iyong Device"
 
 <div class="article-intro">
 
-Para magamit ang Plan Mode, kailangan mong i-pair ang iyong TV sa isang uri ng plano sa B1 Admin. Bumubuo ang FreePlay ng isang natatanging pairing code na nag-uugnay sa device sa plano ng iyong simbahan, na nagbibigay-daan sa awtomatikong paghahatid ng content bawat linggo.
+Para magamit ang Plan Mode, ipapares mo ang iyong TV sa isang plan type sa B1 Admin. Magpapakita ang FreePlay ng maikling pairing code sa TV. Ilalagay mo ang code na iyon sa B1 Admin at pipiliin ang plan type na susundan, at awtomatikong makukuha ng TV ang content ng plan na iyon tuwing linggo.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-install at buksan ang FreePlay -- tingnan ang [Getting Started](../getting-started/)
-- Piliin ang **Pair to Plan** mula sa [pairing mode screen](../getting-started/pairing-modes.md)
-- Magkaroon ng access sa **B1 Admin** sa isang computer o telepono para makumpleto ang pag-pair
+- I-install at ilunsad ang FreePlay. Tingnan ang [Getting Started](../getting-started/)
+- Magkaroon ng access sa **B1 Admin** sa computer o telepono para makumpleto ang pairing
 
 </div>
 
 ## Paggawa ng Pairing Code
 
-1. Mula sa **Select Pairing Mode** screen, piliin ang **Pair to Plan**
-2. Kokontakin ng FreePlay ang server at bubuo ng maikling pairing code
-3. Lalabas ang code sa malalaking character sa gitna ng screen
-4. Sa ibaba ng code, may pulsing indicator na nagpapakita ng **Waiting for connection**
+1. Sa TV, buksan ang **Settings** sa ibaba ng sidebar.
+2. Piliin ang **Pair to a calendar**.
+3. Magpapakita ang FreePlay ng apat na letrang pairing code sa malalaking letra, katabi ng QR code.
+4. Sa ilalim ng code, ipinapakita ng kumikislap na **Waiting for confirmation** indicator na naghihintay ang FreePlay na matapos mo ang pairing.
 
-Ipinapakita ang code bilang indibidwal na character para madaling mabasa mula sa kabilang bahagi ng silid.
+Gumagana rin ang parehong code para sa [Scheduled Mode](../scheduled-mode/) sa FreePlay Admin at para sa Plan Mode sa B1 Admin. Ang QR code at ang address na **freeplay.church/pair** sa screen ay nagbubukas sa FreePlay Admin. Para sa Plan Mode, huwag itong pansinin at ilagay ang code sa B1 Admin ayon sa paglalarawan sa ibaba.
 
 ## Paglalagay ng Code sa B1 Admin
 
-1. Sa isang computer o telepono, pumunta sa address na ipinapakita sa ilalim ng code sa TV (o i-scan ang QR code sa screen) -- bubuksan nito ang **Authorize Device** page sa B1 Admin
-2. Ilagay ang pairing code kung hindi pa ito automatic na napunan mula sa QR code
-3. Sa ilalim ng **Show Plans For**, piliin ang uri ng plano na gusto mong sundan ng screen na ito (halimbawa, "Sunday Service"). Iwanang naka-set sa **None** kung gusto mo lamang na available ang screen para sa pag-browse ng content o mga notification, na walang naka-link na plano
-4. Aprubahan ang device
+1. Sa B1 Admin, pumunta sa **Profile** > **Devices** at i-click ang **Add Screen**.
+2. Ilagay ang apat na letra mula sa TV sa **Pairing Code**.
+3. Sa ilalim ng **Show Plans For**, piliin ang plan type na gusto mong sundan ng screen na ito, halimbawa "Sunday Service".
+4. I-save.
 
-Nagpo-poll ang FreePlay sa server tuwing ilang segundo, tinitingnan kung kumpleto na ang pag-pair. Kapag kinumpirma na ng **B1 Admin** ang koneksyon, awtomatikong lilipat ang TV sa plan download screen.
+Tinitingnan ng FreePlay kada ilang segundo kung tapos na ang pairing. Kapag nakumpirma na ito ng B1 Admin, ipapakita ng TV ang **Connected!** at lilipat sa screen ng pag-download ng plan.
 
-:::tip
-Maaari ring i-pair ang mga device mula sa **Profile → Devices → Add Device** sa B1 Admin gamit ang parehong code -- nag-aalok ito ng parehong picker ng uri ng plano na **Show Plans For**.
-:::
+## Pag-download ng Content ng Plan
 
-## Pag-download ng Nilalaman ng Plano
+Pagkatapos ng pairing, nilo-load ng FreePlay ang kasalukuyang plan para sa plan type na iyon. Ipinapakita nito:
 
-Pagkatapos mag-pair, ilo-load ng FreePlay ang kasalukuyang plano para sa uri ng planong iyon. Ipapakita nito:
-
-- Ang pangalan ng plano at petsa ng serbisyo
-- Ang kaugnay na pangalan ng lesson (kung may kasamang lesson content ang plano)
+- Ang pangalan ng plan at petsa ng serbisyo
+- Ang pangalan ng lesson, kung kasama sa plan ang lesson content
 - Isang progress indicator na nagpapakita ng **Downloading item X of Y**
 
 Kapag na-download na ang lahat ng media file, lalabas ang button na **Start Plan**. Pindutin ang **Select** sa iyong remote para simulan ang playback.
 
 :::tip
-Awtomatikong nagre-refresh ang plano bawat oras. Kung na-update ang plano sa araw na iyon, kinukuha ito ng FreePlay nang walang anumang manu-manong pakikialam.
+Awtomatikong nire-refresh ang plan kada oras. Kung may nag-update ng plan sa buong araw, kusang kinukuha ng FreePlay ang mga pagbabago.
 :::
 
-## Alternatibo: Maghanap gamit ang Pangalan ng Simbahan
+## Kung Pumalpak ang Pairing
 
-Kung mas gusto mong hindi gamitin ang pairing code flow, maaari mong piliin ang **or search by church name** sa ilalim ng pairing screen. Dadalhin ka nito sa church search screen kung saan mahahanap mo ang iyong simbahan at kokonekta sa isang classroom sa halip.
-
-## Kung Nabigo ang Pag-pair
-
-Kung hindi mabuo ang pairing code (halimbawa, dahil sa isyu sa network), makakakita ka ng error message na may button na **Try Again**. Siguraduhing nakakonekta ang iyong TV sa internet at subukan ulit.
+Kung hindi makagawa ang FreePlay ng pairing code (halimbawa, dahil sa problema sa network), makakakita ka ng mensahe ng error na may button na **Try Again**. Siguraduhing nakakonekta sa internet ang TV at subukan muli.
 
 :::warning
-Nag-e-expire ang mga pairing code pagkatapos ng nakatakdang panahon. Kung masyado kang matagal na naghintay, bumuo ng bagong code sa pamamagitan ng pagbalik sa pairing screen.
+Nag-e-expire ang mga pairing code pagkalipas ng 15 minuto. Awtomatikong magpapakita ang FreePlay ng bagong code kapag naubos ang luma, at maaari mong piliin ang **Generate New Code** anumang oras. Kung hindi gumana ang code na inilagay mo, gamitin ang kasalukuyang ipinapakita ng TV.
 :::
 
-## Kaugnay na mga Artikulo
+## Kaugnay na Artikulo
 
-- **[Plan Mode Overview](./index.md)** - Pag-unawa sa pagkakaiba ng Plan Mode mula sa Classroom Mode
-- **[Playing Lessons](../classroom-mode/playing-lessons)** - Pareho ang player controls sa dalawang mode
+- **[Plan Mode Overview](./index.md)** - Paano naiiba ang Plan Mode sa Scheduled Mode
+- **[Pairing a Screen](../scheduled-mode/pairing-a-screen)** - I-pair ang parehong TV sa isang kalendaryo sa FreePlay Admin sa halip
+- **[Playing Content](../content-providers/playing-content)** - Mga kontrol ng player para sa plan playback

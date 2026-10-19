@@ -156,7 +156,7 @@ self.addEventListener("notificationclick", (event) => {
 - **`gone: true` results** — `WebPushHelper.sendBulk` returns `{ token, success, gone, errorMessage }` per recipient. A `gone: true` result (push service responded `404` or `410`) means the subscription is permanently invalid; downstream code in `NotificationHelper` deletes those device rows so they aren't tried again.
 - **TTL** — push messages are sent with `TTL: 86400` (24 hours). If the user's browser doesn't connect to the push service within 24 hours, the push is dropped.
 - **No retries** — a transient failure (timeout, 5xx) is logged and not retried. Push is best-effort; the in-page socket and the email notification tier handle the durability story.
-- **Disabled environments** — staging and dev environments can leave the VAPID keys empty; `WebPushHelper.isEnabled()` will return `false` and pushes will short-circuit. This is the intended behavior for environments without their own VAPID identity.
+- **Disabled environments** — dev environments can leave the VAPID keys empty; `WebPushHelper.isEnabled()` will return `false` and pushes will short-circuit. This is the intended behavior for environments without their own VAPID identity.
 
 ## Related Pages
 

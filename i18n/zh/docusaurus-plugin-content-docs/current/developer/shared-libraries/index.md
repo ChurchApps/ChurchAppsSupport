@@ -46,7 +46,7 @@ yarn build
 永远不要在单个包内运行原生 `npm publish` -- 它跳过构建排序和版本簿记发布脚本处理。发布需要一个 npm 账户，在 `@churchapps` 范围中具有发布权限。
 :::
 
-## 针对消费应用的本地开发
+## 针对消费应用的本地开发 {#local-development-against-a-consuming-app}
 
 在工作区内，包直接针对它们的兄弟姐妹构建 -- 不需要链接。要在消费应用中测试未发布的包构建（B1Admin、B1App 等），在消费者中添加一个临时 Yarn 门户：
 

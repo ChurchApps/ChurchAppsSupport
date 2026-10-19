@@ -1,70 +1,73 @@
 ---
-title: "Assegnazione di Ruoli"
+title: "Assegnare i ruoli"
 ---
 
-# Assegnazione di Ruoli
+# Assegnare i ruoli
 
 <div class="article-intro">
 
-B1 Admin utilizza un sistema di autorizzazioni basato su ruoli per controllare cosa ogni utente del tuo team può vedere e fare. Assegnando ruoli, puoi dare al personale e ai volontari accesso esattamente alle aree di cui hanno bisogno -- e niente di più. La corretta gestione dei ruoli mantiene i tuoi dati di chiesa al sicuro mentre consente al tuo team di lavorare in modo efficiente.
+B1 Admin usa un sistema di permessi basato sui ruoli per controllare cosa ogni utente del tuo team può vedere e fare. Assegnando i ruoli, puoi dare al personale e ai volontari accesso esattamente alle aree di cui hanno bisogno, e non di più. Una gestione accurata dei ruoli mantiene sicuri i dati della chiesa e permette al team di lavorare in modo efficiente.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Hai bisogno di accesso **Domain Admin** o di un ruolo con autorizzazione per gestire **Settings** in B1 Admin.
-- Le persone a cui desideri assegnare i ruoli devono già esistere nella tua directory. Vedi [Aggiunta di Persone](adding-people.md) se hai bisogno di aggiungerle per primo.
+- Ti serve l'accesso **Amministratore di dominio** oppure un ruolo con il permesso di gestire **Impostazioni** in B1 Admin.
+- Le persone a cui vuoi assegnare i ruoli devono già esistere nella tua rubrica. Vedi [Aggiungere persone](adding-people.md) se devi prima aggiungerle.
 
 </div>
 
-## Comprensione dei Ruoli
+## Comprendere i ruoli
 
-Un ruolo è un insieme di autorizzazioni che assegni a uno o più utenti. Ad esempio, potresti creare un ruolo "Finance Team" che concede accesso ai [record di donazione](../donations/recording-donations.md), oppure un ruolo "Check-In Volunteer" che consente accesso solo alle [funzionalità di presence](../attendance/check-in.md).
+Un ruolo è un insieme di permessi che assegni a uno o più utenti. Ad esempio, potresti creare un ruolo «Team Finanze» che concede l'accesso alle [registrazioni delle donazioni](../donations/recording-donations.md), oppure un ruolo «Volontario check-in» che consente solo l'accesso alle [funzioni di presenza](../attendance/check-in.md).
 
-Ogni ruolo controlla l'accesso a aree specifiche di B1 Admin, incluse:
+Ogni ruolo controlla l'accesso a specifiche aree di B1 Admin, tra cui:
 
-- **People** -- visualizzazione e modifica dei profili dei membri. La sezione Notes su un record di persona richiede **Edit People**, e un'autorizzazione separata **View Confidential Notes** controlla l'accesso alla sezione Note Confidenziali (per la cura pastorale, la storia personale e note sensibili simili).
-- **Donations** -- gestione dei contributi e rapporti finanziari
-- **Attendance** -- registrazione e visualizzazione dei dati di presenza
-- **Forms** -- creazione e gestione di [moduli personalizzati](../forms/creating-forms.md)
-- **Groups** -- gestione dei [memberships di gruppo](../groups/group-members.md) e calendari
-- **Settings** -- configurazione delle impostazioni a livello di chiesa
+- **Persone** -- visualizzare e modificare i profili dei membri. La sezione Note di una scheda persona richiede **Modifica persone**, mentre un permesso separato **Visualizza note riservate** controlla l'accesso alla sezione Note riservate (per la cura pastorale, la storia personale e note simili sensibili). **Visualizza solo i nomi delle persone** permette di cercare le persone per nome (vedendo solo nome, foto e stato di appartenenza) senza accedere alla rubrica completa.
+- **Donazioni** -- gestire le offerte e i rendiconti finanziari. **Inserisci donazioni** è un'opzione più ristretta per i team di conteggio: permette di inserire le offerte, ma solo nei [lotti](../donations/batches.md#who-can-change-a-batch) ancora aperti.
+- **Presenze** -- registrare e visualizzare i dati di presenza
+- **Moduli** -- creare e gestire i [moduli personalizzati](../forms/creating-forms.md)
+- **Gruppi** -- gestire le [appartenenze ai gruppi](../groups/group-members.md) e i calendari
+- **Impostazioni** -- configurare le impostazioni valide per tutta la chiesa
 
 :::warning
-Gli **Domain Admins** hanno accesso completo a ogni area di B1 Admin. Le loro autorizzazioni non possono essere modificate o limitate. Usa questo ruolo solo per i tuoi amministratori primari.
+Gli **Amministratori di dominio** hanno pieno accesso a ogni area di B1 Admin. I loro permessi non possono essere modificati né limitati. Usa questo ruolo solo per i tuoi amministratori principali.
 :::
 
-## Visualizzazione e Gestione dei Ruoli
+## Visualizzare e gestire i ruoli
 
-1. Apri il [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin) ed espandi **Settings**.
-2. Fai clic su **Roles**.
-3. Vedrai un elenco di tutti i ruoli configurati per la tua chiesa.
-4. Fai clic su qualsiasi ruolo per visualizzare i suoi membri e le autorizzazioni.
+1. Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin) ed espandi **Impostazioni**.
+2. Fai clic su **Ruoli**.
+3. Vedrai l'elenco di tutti i ruoli configurati per la tua chiesa.
+4. Fai clic su un ruolo qualsiasi per vederne i membri e i permessi.
 
-## Aggiunta di Utenti a un Ruolo
+## Aggiungere utenti a un ruolo
 
-1. Nel Jump menu, scegli **Settings > Roles**.
-2. Fai clic sul ruolo a cui desideri aggiungere un utente.
-3. Nella sezione **Members**, cerca la persona per nome.
-4. Fai clic su **Add** per assegnarla al ruolo.
+1. Nel menu Jump, scegli **Impostazioni > Ruoli**.
+2. Fai clic sul ruolo a cui vuoi aggiungere un utente.
+3. Nella sezione **Membri**, cerca la persona per nome.
+4. Fai clic su **Aggiungi** per assegnarla al ruolo.
 
-L'utente avrà ora tutte le autorizzazioni associate a quel ruolo al prossimo accesso.
+L'utente avrà tutti i permessi associati a quel ruolo al suo prossimo accesso.
 
-## Modifica delle Autorizzazioni del Ruolo
+## Modificare i permessi di un ruolo
 
-1. Nel Jump menu, scegli **Settings > Roles**.
-2. Fai clic sul ruolo che desideri modificare.
-3. Nella sezione **Permissions**, seleziona o deseleziona le aree a cui desideri che il ruolo acceda.
-4. Fai clic su **Save** per applicare le tue modifiche.
+1. Nel menu Jump, scegli **Impostazioni > Ruoli**.
+2. Fai clic sul ruolo che vuoi modificare.
+3. Nella sezione **Permessi**, seleziona o deseleziona le aree a cui vuoi che il ruolo abbia accesso.
+4. Fai clic su **Salva** per applicare le modifiche.
 
 :::tip
-Segui il principio del privilegio minimo -- dai a ogni ruolo solo le autorizzazioni di cui ha veramente bisogno. Questo mantiene i tuoi dati al sicuro e riduce la possibilità di cambiamenti accidentali.
+Segui il principio del minimo privilegio — assegna a ogni ruolo solo i permessi di cui ha davvero bisogno. Questo mantiene sicuri i dati e riduce il rischio di modifiche accidentali.
 :::
 
-## Esempi di Ruoli Comuni
+## Esempi comuni di ruoli
 
-- **Office Staff** -- accesso a People, Donations, Attendance, e Forms
-- **Group Leaders** -- accesso solo a [Groups](../groups/creating-groups.md)
-- **Check-In Volunteers** -- accesso solo a [Attendance](../attendance/check-in.md)
-- **Finance Team** -- accesso a [Donations](../donations/recording-donations.md) e reporting
+- **Personale d'ufficio** -- accesso a Persone, Donazioni, Presenze e Moduli
+- **Leader di gruppo** -- accesso solo a [Gruppi](../groups/creating-groups.md)
+- **Volontari check-in** -- accesso solo a [Presenze](../attendance/check-in.md)
+- **Team Finanze** -- accesso a [Donazioni](../donations/recording-donations.md) e ai rendiconti
+- **Team di conteggio** -- **Inserisci donazioni** e **Visualizza donazioni**, così i volontari possono inserire le offerte nei lotti aperti senza vedere i riepiloghi delle donazioni
+
+Consulta [Ruoli e permessi](../settings/roles-permissions.md) per un approfondimento sui permessi relativi alle donazioni e alle persone.

@@ -30,7 +30,7 @@ O relatório Tendência de Presença mostra como a presença muda ao longo do te
 
 Este relatório é útil para detectar padrões como quedas sazonais, tendências de crescimento ou o impacto de eventos especiais.
 
-## Presença de Grupo
+## Presença de Grupo {#group-attendance}
 
 O relatório de Presença de Grupo mostra quem compareceu a cada sessão de grupo em um intervalo de datas.
 

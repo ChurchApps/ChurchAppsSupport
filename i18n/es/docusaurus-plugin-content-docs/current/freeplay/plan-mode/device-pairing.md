@@ -6,68 +6,60 @@ title: "Emparejar tu dispositivo"
 
 <div class="article-intro">
 
-Para usar el modo plan, necesitas emparejar tu TV con un tipo de plan en B1 Admin. FreePlay genera un código de emparejamiento único que vincula el dispositivo al plan de tu iglesia, lo que permite la entrega automática de contenido cada semana.
+Para usar el modo plan, empareja tu televisor con un tipo de plan en B1 Admin. FreePlay muestra un código de emparejamiento corto en el televisor. Introduces ese código en B1 Admin y eliges el tipo de plan que debe seguir, y el televisor recibe automáticamente el contenido de ese plan cada semana.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Instala e inicia FreePlay -- consulta [Primeros pasos](../getting-started/)
-- Elige **Pair to Plan** en la [pantalla de modo de emparejamiento](../getting-started/pairing-modes.md)
-- Ten acceso a **B1 Admin** en una computadora o teléfono para completar el emparejamiento
+- Instala y abre FreePlay. Consulta [Primeros pasos](../getting-started/)
+- Ten acceso a **B1 Admin** desde una computadora o un teléfono para completar el emparejamiento
 
 </div>
 
 ## Generar el código de emparejamiento
 
-1. En la pantalla **Select Pairing Mode**, elige **Pair to Plan**
-2. FreePlay contacta al servidor y genera un código de emparejamiento corto
-3. El código aparece en caracteres grandes en el centro de la pantalla
-4. Debajo del código, un indicador pulsante muestra **Waiting for connection**
+1. En el televisor, abre **Configuración** en la parte inferior de la barra lateral.
+2. Selecciona **Emparejar con un calendario**.
+3. FreePlay muestra un código de emparejamiento de cuatro letras en tamaño grande, junto a un código QR.
+4. Debajo del código, un indicador pulsante **Esperando confirmación** muestra que FreePlay está esperando a que termines el emparejamiento.
 
-El código se muestra en caracteres individuales para facilitar la lectura desde el otro lado de la sala.
+El mismo código funciona para el [Modo programado](../scheduled-mode/) en FreePlay Admin y para el modo plan en B1 Admin. El código QR y la dirección **freeplay.church/pair** que aparecen en la pantalla llevan a FreePlay Admin. Para el modo plan, ignóralos e introduce el código en B1 Admin como se describe más abajo.
 
-## Ingresar el código en B1 Admin
+## Introducir el código en B1 Admin
 
-1. En una computadora o teléfono, ve a la dirección que se muestra debajo del código en la TV (o escanea el código QR en pantalla); esto abre la página **Authorize Device** en B1 Admin
-2. Ingresa el código de emparejamiento si no se completó automáticamente desde el código QR
-3. En **Show Plans For**, elige el tipo de plan que quieres que siga esta pantalla (por ejemplo, "Sunday Service"). Déjalo en **None** si solo quieres que la pantalla esté disponible para explorar contenido o notificaciones, sin ningún plan vinculado
-4. Aprueba el dispositivo
+1. En B1 Admin, ve a **Perfil** > **Dispositivos** y haz clic en **Agregar pantalla**.
+2. Escribe las cuatro letras que aparecen en el televisor en **Código de emparejamiento**.
+3. En **Mostrar planes para**, elige el tipo de plan que quieres que siga esta pantalla, por ejemplo "Sunday Service".
+4. Guarda.
 
-FreePlay consulta al servidor cada pocos segundos para verificar si el emparejamiento se ha completado. Una vez que **B1 Admin** confirma la conexión, la TV pasa automáticamente a la pantalla de descarga del plan.
-
-:::tip
-Los dispositivos también se pueden emparejar desde **Profile → Devices → Add Device** en B1 Admin usando el mismo código; ofrece el mismo selector de tipo de plan **Show Plans For**.
-:::
+FreePlay comprueba cada pocos segundos si el emparejamiento ya se completó. Cuando B1 Admin lo confirma, el televisor muestra **¡Conectado!** y pasa a la pantalla de descarga del plan.
 
 ## Descargar el contenido del plan
 
-Después del emparejamiento, FreePlay carga el plan actual para ese tipo de plan. Muestra:
+Después de emparejar, FreePlay carga el plan vigente de ese tipo de plan. Muestra:
 
 - El nombre del plan y la fecha del servicio
-- El nombre de la lección asociada (si el plan incluye contenido de lección)
-- Un indicador de progreso que muestra **Downloading item X of Y**
+- El nombre de la lección, si el plan incluye contenido de lección
+- Un indicador de progreso que muestra **Descargando el elemento X de Y**
 
-Cuando se han descargado todos los archivos multimedia, aparece el botón **Start Plan**. Presiona **Select** en tu control remoto para comenzar la reproducción.
+Cuando terminan de descargarse todos los archivos multimedia, aparece el botón **Iniciar plan**. Pulsa **Seleccionar** en tu control remoto para iniciar la reproducción.
 
 :::tip
-El plan se actualiza automáticamente cada hora. Si el plan se actualiza durante el día, FreePlay recoge los cambios sin ninguna intervención manual.
+El plan se actualiza automáticamente cada hora. Si alguien modifica el plan durante el día, FreePlay recoge los cambios por sí solo.
 :::
-
-## Alternativa: buscar por nombre de iglesia
-
-Si prefieres no usar el flujo del código de emparejamiento, puedes seleccionar **or search by church name** en la parte inferior de la pantalla de emparejamiento. Esto te lleva a la pantalla de búsqueda de iglesias, donde puedes encontrar tu iglesia y conectarte a un salón en su lugar.
 
 ## Si el emparejamiento falla
 
-Si el código de emparejamiento no se puede generar (por ejemplo, debido a un problema de red), verás un mensaje de error con un botón **Try Again**. Asegúrate de que tu TV esté conectada a internet e inténtalo de nuevo.
+Si FreePlay no puede generar un código de emparejamiento (por ejemplo, por un problema de red), verás un mensaje de error con el botón **Intentar de nuevo**. Asegúrate de que el televisor esté conectado a internet y vuelve a intentarlo.
 
 :::warning
-Los códigos de emparejamiento caducan después de un período determinado. Si esperas demasiado, genera un nuevo código volviendo a la pantalla de emparejamiento.
+Los códigos de emparejamiento caducan a los 15 minutos. FreePlay muestra un código nuevo automáticamente cuando se acaba el anterior, y puedes seleccionar **Generar código nuevo** en cualquier momento. Si el código que introdujiste no funciona, usa el que muestra el televisor en ese momento.
 :::
 
 ## Artículos relacionados
 
-- **[Descripción general del modo plan](./index.md)** - Comprende en qué se diferencia el modo plan del modo salón
-- **[Reproducir lecciones](../classroom-mode/playing-lessons)** - Los controles del reproductor son los mismos en ambos modos
+- **[Visión general del modo plan](./index.md)**: en qué se diferencia el modo plan del modo programado
+- **[Emparejar una pantalla](../scheduled-mode/pairing-a-screen)**: empareja el mismo televisor con un calendario en FreePlay Admin
+- **[Reproducir contenido](../content-providers/playing-content)**: controles del reproductor para la reproducción de planes

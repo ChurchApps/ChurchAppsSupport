@@ -27,8 +27,7 @@ ChurchApps uses different deployment strategies depending on the project type. A
 | Environment | Purpose |
 |-------------|---------|
 | `dev` | Local development |
-| `demo` | Public demo instance |
-| `staging` | Pre-production testing |
+| `demo` | Public demo instance; deployed on every push to `main`, so it doubles as pre-production testing |
 | `prod` | Production |
 
 :::info

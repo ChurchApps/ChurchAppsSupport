@@ -54,7 +54,7 @@ Datenbankschemas werden beim ersten Start automatisch durch die Startmigration d
 
 Nachdem Sie live sind, hier die Dinge, die die meisten Kirchen als Nächstes einrichten, grob nach Priorität geordnet.
 
-### 1. E-Mail (dringend empfohlen)
+### 1. E-Mail (dringend empfohlen) {#1-email-highly-recommended}
 
 Ohne E-Mail können sich Mitglieder zwar weiterhin registrieren und das System nutzen, aber **sie können vergessene Passwörter nicht zurücksetzen** — ein Administrator muss dies für sie erledigen. Die Einrichtung von SMTP dauert etwa 5 Minuten.
 
@@ -125,7 +125,7 @@ REACT_APP_B1_WEBSITE_URL=https://{subdomain}.yourchurch.org
 
 Das Token `{subdomain}` ist wörtlich zu verstehen — es wird zur Laufzeit durch die Subdomain jeder Kirche ersetzt (siehe Multi-Site unten).
 
-### 3. Multi-Site (mehrere Kirchen auf einer Instanz)
+### 3. Multi-Site (mehrere Kirchen auf einer Instanz) {#3-multi-site-multiple-churches-on-one-instance}
 
 ChurchApps ist von Natur aus mandantenfähig — ein Deployment kann beliebig viele Kirchen hosten, jede mit eigenen Personen, Gruppen und Website. Neue Kirchen werden vollständig über die Admin-Oberfläche hinzugefügt; es sind keine Infrastrukturänderungen nötig.
 
@@ -156,7 +156,7 @@ Nach dem erneuten Deployment wird die Website jeder Kirche automatisch unter `<i
 Wildcard-Custom-Domains erfordern einen kostenpflichtigen Railway-Plan. Pfadbasiertes Routing funktioniert bei jedem Plan und ist funktional identisch — nur in der Adressleiste weniger ansehnlich.
 :::
 
-### 4. Online-Spenden (Stripe / PayPal)
+### 4. Online-Spenden (Stripe / PayPal) {#4-online-giving-stripe--paypal}
 
 Spenden werden **pro Kirche innerhalb der Admin-Oberfläche** konfiguriert, nicht über Umgebungsvariablen — so kann jede Kirche ihr eigenes Händlerkonto verwenden.
 
@@ -165,7 +165,7 @@ Spenden werden **pro Kirche innerhalb der Admin-Oberfläche** konfiguriert, nich
 3. Wählen Sie Ihren Anbieter, fügen Sie die öffentlichen und geheimen Schlüssel ein und konfigurieren Sie die Gebührenbehandlung.
 4. Fügen Sie optional `GOOGLE_RECAPTCHA_SECRET_KEY` beim **Api**-Dienst in Railway hinzu, um öffentliche Spendenformulare vor Bots zu schützen.
 
-### 5. Dateispeicher
+### 5. Dateispeicher {#5-file-storage}
 
 Die Vorlage stellt einen **1-GB-persistenten Datenträger** bereit, der am Api-Dienst gemountet ist, für Mitgliederfotos, Predigtdateien und hochgeladene Dokumente.
 
@@ -183,7 +183,7 @@ AWS_REGION=us-east-2
 
 Vorhandene Dateien im Datenträger werden nicht automatisch migriert — kopieren Sie sie in den Bucket, bevor Sie die Variable umstellen.
 
-### 6. Optionale Feature-Integrationen
+### 6. Optionale Feature-Integrationen {#6-optional-feature-integrations}
 
 Diese schalten bestimmte Funktionen frei und können alle später über das Railway-Dashboard hinzugefügt werden. Setzen Sie sie beim **Api**-Dienst.
 

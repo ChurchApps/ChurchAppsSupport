@@ -6,67 +6,71 @@ title: "Переменные окружения"
 
 <div class="article-intro">
 
-Каждый проект ChurchApps использует файл `.env` для локальной конфигурации. Каждый проект содержит образец файла, который вы копируете и настраиваете. На этой странице рассматриваются переменные окружения для API, веб-приложений и мобильных приложений, включая выбор между staging и локальным API.
+Каждый проект ChurchApps использует файл `.env` для локальной конфигурации. Каждый проект включает пример файла, который вы копируете и настраиваете. На этой странице описаны переменные окружения для API, веб-приложений и мобильных приложений, включая выбор между демо-API и локальным API.
 
 </div>
 
 <div class="prereqs">
-<h4>Перед началом работы</h4>
+<h4>Перед началом</h4>
 
 - Установите [предварительные требования](./prerequisites) для вашего проекта
-- Клонируйте репозиторий проекта, с которым хотите работать
-- Ознакомьтесь с [обзором проектов](./project-overview), чтобы понять, какие модули API нужны вашему проекту
+- Клонируйте репозиторий проекта, над которым хотите работать
+- Ознакомьтесь с [Обзором проектов](./project-overview), чтобы понять, какие модули API нужны вашему проекту
 
 </div>
 
-## Общий паттерн
+## Общая схема
 
 1. Найдите `dotenv.sample.txt` или `.env.sample` в корне проекта.
 2. Скопируйте его в `.env`.
-3. Отредактируйте значения по необходимости.
+3. Измените значения по необходимости.
 
 ```bash
-# Пример для проекта с .env.sample
+# Example for a project with .env.sample
 cp .env.sample .env
 
-# Пример для проекта с dotenv.sample.txt
+# Example for a project with dotenv.sample.txt
 cp dotenv.sample.txt .env
 ```
 
 :::warning
-**Никогда не коммитьте файлы `.env` в систему контроля версий.** Они содержат секреты, такие как учётные данные базы данных, API-ключи и JWT-секреты. Все проекты ChurchApps включают `.env` в `.gitignore`, но всегда перепроверяйте перед коммитом.
+**Никогда не коммитьте файлы `.env` в систему контроля версий.** Они содержат секреты, такие как учётные данные базы данных, ключи API и секреты JWT. Все проекты ChurchApps включают `.env` в `.gitignore`, но всегда перепроверяйте перед коммитом.
 :::
 
 ## Выбор цели API
 
-Самое важное решение -- куда ваш фронтенд направляет API-вызовы. Есть два варианта:
+Самое важное решение — куда ваш фронтенд отправляет запросы к API. Есть два варианта:
 
-### Вариант 1: Staging API (рекомендуется для фронтенд-разработки)
+### Вариант 1: демо-API (рекомендуется для разработки фронтенда)
 
-Используйте общую staging-среду. Локальная настройка API или базы данных не требуется.
+Используйте общую демо-среду. Не нужны ни локальный API, ни настройка базы данных. Она работает на последней версии кода из `main`, а её демонстрационные данные обновляются каждую ночь.
 
 ```bash
-# Шаблон базового URL
-https://api.staging.churchapps.org/{module}
+# Base URL pattern
+https://api.demo.churchapps.org/{module}
 
-# Примеры URL модулей
-https://api.staging.churchapps.org/membership
-https://api.staging.churchapps.org/attendance
-https://api.staging.churchapps.org/content
-https://api.staging.churchapps.org/giving
-https://api.staging.churchapps.org/messaging
-https://api.staging.churchapps.org/doing
+# Example module URLs
+https://api.demo.churchapps.org/membership
+https://api.demo.churchapps.org/attendance
+https://api.demo.churchapps.org/content
+https://api.demo.churchapps.org/giving
+https://api.demo.churchapps.org/messaging
+https://api.demo.churchapps.org/doing
 ```
 
-### Вариант 2: Локальный API
+:::warning
+Тестовая среда (`api.staging.churchapps.org`, `api.staging.lessons.church` и связанные хосты) выведена из эксплуатации. Некоторые примеры файлов `.env` могут всё ещё содержать URL тестовой среды; замените их демо- или локальными значениями, указанными на этой странице. Общего непроизводственного API Lessons нет -- запустите [LessonsApi](https://github.com/ChurchApps/LessonsApi) локально (он слушает порт `8090`), если он вам нужен.
+:::
 
-Запустите проект Api на своей машине. Требуется MySQL 8.0+ с базами данных, созданными для каждого модуля. См. руководство по [локальной настройке API](../api/local-setup).
+### Вариант 2: локальный API
+
+Запустите проект Api на своей машине. Требуется MySQL 8.0+ с базами данных, созданными для каждого модуля. См. руководство [Локальная настройка API](../api/local-setup).
 
 ```bash
-# Шаблон базового URL
+# Base URL pattern
 http://localhost:8084/{module}
 
-# Примеры URL модулей
+# Example module URLs
 http://localhost:8084/membership
 http://localhost:8084/attendance
 http://localhost:8084/content
@@ -79,41 +83,36 @@ http://localhost:8084/doing
 
 ## Переменные окружения API
 
-Основной проект **Api** (`.env.sample`) имеет наибольшее количество настроек. Вот ключевые переменные:
+Основной проект **Api** (`.env.sample`) имеет самую обширную конфигурацию. Вот ключевые переменные:
 
 ### Общие настройки
 
 | Переменная | Описание | Пример |
 |----------|-------------|---------|
 | `ENVIRONMENT` | Среда выполнения | `dev` |
-| `SERVER_PORT` | HTTP-порт для локального сервера разработки | `8084` |
+| `SERVER_PORT` | HTTP-порт локального сервера разработки | `8084` |
 | `ENCRYPTION_KEY` | 192-битный ключ шифрования для конфиденциальных данных | `aSecretKeyOfExactly192BitsLength` |
 | `JWT_SECRET` | Секрет для подписи JSON Web Tokens | `jwt-secret-dev` |
 | `FILE_STORE` | Где хранить загруженные файлы (`disk` или `s3`) | `disk` |
-| `CORS_ORIGIN` | Разрешённые CORS-источники (`*` для локальной разработки) | `*` |
+| `CORS_ORIGIN` | Разрешённые источники CORS (`*` для локальной разработки) | `*` |
 
-### Подключения к базам данных
+### Подключение к базе данных
 
-Каждый модуль API имеет собственную базу данных MySQL и строку подключения:
+Один базовый URL указывает API на MySQL. API создаёт отдельную базу данных для каждого модуля (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting`) на основе этого базового URL.
 
-| Переменная | База данных |
-|----------|----------|
-| `MEMBERSHIP_CONNECTION_STRING` | `mysql://root:password@localhost:3306/membership` |
-| `ATTENDANCE_CONNECTION_STRING` | `mysql://root:password@localhost:3306/attendance` |
-| `CONTENT_CONNECTION_STRING` | `mysql://root:password@localhost:3306/content` |
-| `GIVING_CONNECTION_STRING` | `mysql://root:password@localhost:3306/giving` |
-| `MESSAGING_CONNECTION_STRING` | `mysql://root:password@localhost:3306/messaging` |
-| `DOING_CONNECTION_STRING` | `mysql://root:password@localhost:3306/doing` |
+| Переменная | Пример |
+|----------|---------|
+| `API_DATABASE_URL` | `mysql://root:password@localhost:3306` |
 
 :::tip
-Замените `root:password` на ваши реальные учётные данные MySQL. Каждая база данных должна быть создана перед запуском API. Используйте `npm run initdb` для создания схемы всех модулей или `npm run initdb:membership` для отдельного модуля.
+Замените `root:password` на ваши реальные учётные данные MySQL. Каждая база данных модуля должна существовать до запуска API. Используйте `npm run initdb`, чтобы создать схему для всех модулей, или `npm run initdb:membership` для одного модуля.
 :::
 
 ### Настройки WebSocket
 
 | Переменная | Описание | Пример |
 |----------|-------------|---------|
-| `SOCKET_PORT` | Порт для WebSocket-сервера | `8087` |
+| `SOCKET_PORT` | Порт сервера WebSocket | `8087` |
 | `SOCKET_URL` | URL WebSocket для подключения клиентов | `ws://localhost:8087` |
 
 ---
@@ -124,56 +123,44 @@ http://localhost:8084/doing
 
 Файл-образец: `.env.sample`
 
-| Переменная | Описание | Пример (Staging) |
-|----------|-------------|-------------------|
-| `REACT_APP_STAGE` | Название окружения | `demo` |
+| Переменная | Описание | Пример (демо) |
+|----------|-------------|----------------|
+| `REACT_APP_STAGE` | Название среды | `demo` |
 | `PORT` | Порт сервера разработки | `3101` |
-| `REACT_APP_MEMBERSHIP_API` | URL API Membership | `https://api.staging.churchapps.org/membership` |
-| `REACT_APP_ATTENDANCE_API` | URL API Attendance | `https://api.staging.churchapps.org/attendance` |
-| `REACT_APP_GIVING_API` | URL API Giving | `https://api.staging.churchapps.org/giving` |
-| `REACT_APP_CONTENT_ROOT` | URL доставки контента | `https://content.staging.churchapps.org` |
+| `REACT_APP_API_BASE` | Единый базовый URL для всех API ChurchApps (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` добавляются автоматически) | `https://api.demo.churchapps.org` |
+| `REACT_APP_CONTENT_ROOT` | URL доставки контента | `https://democontent.churchapps.org` |
 | `REACT_APP_GOOGLE_ANALYTICS` | ID Google Analytics (необязательно) | `UA-123456789-1` |
 
-Для локальной разработки API раскомментируйте и используйте варианты с `localhost`:
+Для разработки с локальным API укажите базовый URL на ваш локальный стек:
 
 ```bash
-REACT_APP_MEMBERSHIP_API=http://localhost:8084/membership
-REACT_APP_ATTENDANCE_API=http://localhost:8084/attendance
-REACT_APP_GIVING_API=http://localhost:8084/giving
-REACT_APP_CONTENT_API=http://localhost:8084/content
-REACT_APP_DOING_API=http://localhost:8084/doing
-REACT_APP_MESSAGING_API=http://localhost:8084/messaging
+REACT_APP_API_BASE=http://localhost:8084
 ```
 
 ### B1App (Next.js)
 
 Файл-образец: `.env.sample`
 
-| Переменная | Описание | Пример (Staging) |
-|----------|-------------|-------------------|
-| `NEXT_PUBLIC_MEMBERSHIP_API` | URL API Membership | `https://api.staging.churchapps.org/membership` |
-| `NEXT_PUBLIC_ATTENDANCE_API` | URL API Attendance | `https://api.staging.churchapps.org/attendance` |
-| `NEXT_PUBLIC_GIVING_API` | URL API Giving | `https://api.staging.churchapps.org/giving` |
-| `NEXT_PUBLIC_MESSAGING_API` | URL API Messaging | `https://api.staging.churchapps.org/messaging` |
-| `NEXT_PUBLIC_CONTENT_API` | URL API Content | `https://api.staging.churchapps.org/content` |
-| `NEXT_PUBLIC_CONTENT_ROOT` | URL доставки контента | `https://staging.churchapps.org/content` |
-| `NEXT_PUBLIC_CHURCH_APPS_URL` | Базовый URL ChurchApps | `https://staging.churchapps.org` |
+| Переменная | Описание | Пример (демо) |
+|----------|-------------|----------------|
+| `NEXT_PUBLIC_API_BASE` | Единый базовый URL для всех API ChurchApps (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` добавляются автоматически) | `https://api.demo.churchapps.org` |
+| `NEXT_PUBLIC_CONTENT_ROOT` | URL доставки контента | `https://democontent.churchapps.org` |
 | `NEXT_PUBLIC_GOOGLE_ANALYTICS` | ID Google Analytics (необязательно) | `UA-123456789-1` |
 
 :::info
-Next.js требует префикс `NEXT_PUBLIC_` для любой переменной окружения, которая должна быть доступна в браузере. Серверные переменные не нуждаются в этом префиксе.
+Next.js требует префикс `NEXT_PUBLIC_` для любой переменной окружения, которая должна быть доступна в браузере. Переменные, используемые только на сервере, этот префикс не требуют.
 :::
 
 ### LessonsApp (Next.js)
 
 Файл-образец: `dotenv.sample.txt`
 
-| Переменная | Описание | Пример (Staging) |
-|----------|-------------|-------------------|
-| `STAGE` | Стадия окружения | `staging` |
-| `NEXT_PUBLIC_LESSONS_API` | URL API уроков | `https://api.staging.lessons.church` |
-| `NEXT_PUBLIC_CONTENT_ROOT` | URL доставки контента | `https://api.staging.lessons.church/content` |
-| `NEXT_PUBLIC_CHURCH_APPS_URL` | Базовый URL ChurchApps | `https://staging.churchapps.org` |
+| Переменная | Описание | Пример (локальный LessonsApi) |
+|----------|-------------|----------------------------|
+| `STAGE` | Стадия среды (оставьте неустановленной или `dev` для локальной разработки) | `dev` |
+| `NEXT_PUBLIC_LESSONS_API` | URL API Lessons | `http://localhost:8090` |
+| `NEXT_PUBLIC_CONTENT_ROOT` | URL доставки контента | `http://localhost:8090/content` |
+| `NEXT_PUBLIC_API_BASE` | Базовый URL API ChurchApps для входа (учитывается только если `STAGE` не задан или равен `dev`) | `https://api.demo.churchapps.org` |
 
 ---
 
@@ -183,20 +170,16 @@ Next.js требует префикс `NEXT_PUBLIC_` для любой пере�
 
 Файл-образец: `dotenv.sample.txt`
 
-| Переменная | Описание | Пример (Staging) |
-|----------|-------------|-------------------|
-| `STAGE` | Название окружения | `dev` |
-| `MEMBERSHIP_API` | URL API Membership | `https://api.staging.churchapps.org/membership` |
-| `MESSAGING_API` | URL API Messaging | `https://api.staging.churchapps.org/messaging` |
-| `ATTENDANCE_API` | URL API Attendance | `https://api.staging.churchapps.org/attendance` |
-| `GIVING_API` | URL API Giving | `https://api.staging.churchapps.org/giving` |
-| `DOING_API` | URL API Doing | `https://api.staging.churchapps.org/doing` |
-| `CONTENT_API` | URL API Content | `https://api.churchapps.org/content` |
-| `CONTENT_ROOT` | URL доставки контента | `https://content.staging.churchapps.org` |
-| `LESSONS_ROOT` | URL сайта уроков | `https://staging.lessons.church` |
+| Переменная | Описание | Пример (демо) |
+|----------|-------------|----------------|
+| `STAGE` | Название среды | `dev` |
+| `MEMBERSHIP_API`, `ATTENDANCE_API`, `GIVING_API`, `DOING_API`, `MESSAGING_API`, `CONTENT_API` | Один URL на каждый модуль API ChurchApps (каждый по умолчанию указывает на производственную среду, если не задан) | `https://api.demo.churchapps.org/membership` |
+| `LESSONS_API` | API Lessons (отдельный хост; общего непроизводственного нет) | `https://api.lessons.church` |
+| `CONTENT_ROOT` | URL доставки контента | `https://democontent.churchapps.org` |
+| `LESSONS_ROOT` | URL сайта Lessons | `https://lessons.church` |
 
 :::info
-Мобильные приложения не используют префикс `REACT_APP_` или `NEXT_PUBLIC_`. Доступ к переменным окружения обрабатывается конфигурацией Expo.
+Мобильные приложения не используют префиксы `REACT_APP_` или `NEXT_PUBLIC_`. Доступ к переменным окружения обеспечивается конфигурацией Expo.
 :::
 
 ---

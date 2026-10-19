@@ -12,7 +12,7 @@ Simo Selicebo sixhuma TV yakho nelicebo lenkonzo yebandla. Esikhundleni sekuland
 
 ## Indlela Lehlukene Ngayo Ku-Simo Selikilasi
 
-- **[Simo Selikilasi](../classroom-mode/)** ilanda sifundzo lesihlelekile ligumbi lelitsite ngelilanga lelinikiwe
+- **[Simo Selikilasi](../scheduled-mode/)** ilanda sifundzo lesihlelekile ligumbi lelitsite ngelilanga lelinikiwe
 - **Simo Selicebo** silanda kucuketfwe lokuhlotjaniswa nenhlobo yelicebo, lokungafaka tifundzo, kwetfulwa kwebaniketi, tintfo letengetiwe, naleminye imidiya lehleliwe ngekulandzelana lokwakhelwe
 
 Simo Selicebo sisita kakhulu nawe icebo lakho lenkonzo lifaka kuhlangana kwekucuketfwe lokusuka etindzaweni letehlukene, konkhe kuhlelwe kube kulandzelana kunye.

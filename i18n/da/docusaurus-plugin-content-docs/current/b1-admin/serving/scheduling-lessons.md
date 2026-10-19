@@ -112,5 +112,5 @@ tøv ikke med at kopiere og sende meddelelsen nedenfor direkte til din læreplan
 - [tjenesteplaner](./plans.md)
 - [tjeneste rækkefølge](./service-order.md)
 - [tilpasning af lektioner](/docs/lessons-church/customization/customizing-lessons)
-- [FreePlay — afspille lektioner på et klasseværelse TV](/docs/freeplay/classroom-mode/playing-lessons)
+- [FreePlay — afspille lektioner på et klasseværelse TV](/docs/freeplay/content-providers/playing-content)
 - [Lessons.church planlægning vejledning](/docs/lessons-church/classrooms/scheduling-lessons)

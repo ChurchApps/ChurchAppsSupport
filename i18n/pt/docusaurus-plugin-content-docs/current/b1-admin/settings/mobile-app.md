@@ -77,7 +77,7 @@ O item **Member portal** (Portal de Membros) na mesma seção Mobile contém as 
 Como a verificação de idade mínima depende de datas de nascimento, certifique-se de que as datas de nascimento foram preenchidas para crianças em sua congregação. Essa configuração pertence à mesma família de segurança infantil que os [controles de segurança de check-in](../attendance/checkin-safety.md).
 :::
 
-### Prompt de Sign-In da Tela Inicial
+### Prompt de Sign-In da Tela Inicial {#home-screen-sign-in-prompt}
 
 Visitantes que abrem a [tela inicial](/docs/b1-church/getting-started/navigating#home) (Home screen) do aplicativo sem fazer sign-in veem um breve prompt -- por padrão, *"Sign in to see your groups, giving, and more."* (Entre para ver seus grupos, doações e muito mais.) -- ao lado de um botão **Sign In** (Entrar). As configurações **Home screen sign-in prompt** (Prompt de sign-in da tela inicial) na mesma página Member portal (`/mobile/b1-mobile`) permitem que você o altere:
 

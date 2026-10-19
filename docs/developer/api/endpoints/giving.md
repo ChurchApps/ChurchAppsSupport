@@ -22,10 +22,11 @@ Base path: `/giving/donations`
 | GET | `/:id` | JWT | Donations.View | Get a donation by ID |
 | GET | `/my` | JWT | — | Get current user's donations |
 | GET | `/my/summary?year=` | JWT | — | Current user's giving total for a year (default this year): `{ year, total, count, currency, isConverted }`, with totals converted to the church currency. Backs the giving preview on the member home page |
+| GET | `/?startDate=&endDate=` | JWT | Donations.View | Donations dated within the range (inclusive). Both dates are required as `YYYY-MM-DD`, otherwise `400`. B1Admin's giving statements pages request one calendar year this way instead of the church's full history |
 | GET | `/summary` | JWT | Donations.ViewSummary | Get donation summary. Filter by `?startDate=&endDate=&type=`. Use `type=person` for per-person breakdown |
 | GET | `/testEmail` | Public | — | Send a test email (development/debugging) |
-| POST | `/` | JWT | Donations.Edit | Create or update donations (batch) |
-| DELETE | `/:id` | JWT | Donations.Edit | Delete a donation |
+| POST | `/` | JWT | Donations.Edit or Donations.Enter | Create or update donations (batch). With Donations.Enter only, both the target batch and (for an update) the donation's current batch must be open, and gateway gifts (those with a `transactionId`) can't be changed; otherwise `403 { "error": "This batch is closed." }` |
+| DELETE | `/:id` | JWT | Donations.Edit or Donations.Enter | Delete a donation. Donations.Enter only: the donation must be in an open batch and not a gateway gift, otherwise `403` |
 
 ### Example: List Donations by Batch
 
@@ -73,10 +74,14 @@ Extends `GenericCrudController` with CRUD routes: `getById`, `getAll`, `post`, `
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.ViewSummary | List all donation batches |
-| GET | `/:id` | JWT | Donations.ViewSummary | Get a donation batch by ID |
-| POST | `/` | JWT | Donations.Edit | Create or update donation batches |
+| GET | `/` | JWT | Donations.ViewSummary or Donations.Enter | List all donation batches |
+| GET | `/:id` | JWT | Donations.ViewSummary or Donations.Enter | Get a donation batch by ID |
+| POST | `/` | JWT | Donations.Edit or Donations.Enter | Create or update donation batches. Donations.Enter only: updating an existing batch requires it to be open, otherwise `403 { "error": "This batch is closed." }`. `status` is ignored here, so saving a batch can't reopen it |
+| POST | `/:id/close` | JWT | Donations.Edit | Close a batch: sets `status` to `closed`, `closedDate` to now, and `closedBy` to the caller's user id. Returns the batch |
+| POST | `/:id/reopen` | JWT | Donations.Edit | Reopen a batch: sets `status` to `open` and clears `closedDate` and `closedBy`. Returns the batch |
 | DELETE | `/:id` | JWT | Donations.Edit | Delete a batch and all its donations |
+
+Each batch includes `status` (`open` or `closed`; new and pre-existing batches are `open`), `closedDate`, and `closedBy`. Donations.Edit can change donations in any batch; Donations.Enter (shown as **Enter Donations** in the role editor) can only add, change, or delete donations and fund splits while their batch is open.
 
 ## Donate
 
@@ -173,8 +178,8 @@ Tracks how individual donations are allocated across funds. No base CRUD routes 
 | GET | `/` | JWT | Donations.View | List fund donations. Filter by `?donationId=`, `?personId=`, `?fundId=`, or `?fundName=`. Optionally add `?startDate=&endDate=` for date filtering |
 | GET | `/:id` | JWT | Donations.View | Get a fund donation by ID |
 | GET | `/my` | JWT | — | Get current user's fund donations |
-| POST | `/` | JWT | Donations.Edit | Create or update fund donations (batch) |
-| DELETE | `/:id` | JWT | Donations.Edit | Delete a fund donation |
+| POST | `/` | JWT | Donations.Edit or Donations.Enter | Create or update fund donations (batch). Donations.Enter only: the parent donation must be in an open batch and not a gateway gift, otherwise `403` |
+| DELETE | `/:id` | JWT | Donations.Edit or Donations.Enter | Delete a fund donation. Same open-batch rule for Donations.Enter |
 
 ## Gateways
 

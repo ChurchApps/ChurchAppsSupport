@@ -62,7 +62,7 @@ Kudlalwa kusebenta ngendlela lefananako nekudlalwa kwetifundzo. Sebentisa lokula
 Nawuphuma emdlalini, ubuyela esisebentini sekuhlola kucuketfwe ebangeni leliyimphandze lemniketi wamanje.
 
 :::info
-Kulwati loluphelele lwakho konkhe lokulawulwa kwemdlali, buka [Kudlalwa Kwetifundzo](../classroom-mode/playing-lessons).
+Kulwati loluphelele lwakho konkhe lokulawulwa kwemdlali, buka [Kudlalwa Kwetifundzo](../content-providers/playing-content).
 :::
 
 ## Kushintjela Emkatsini Webaniketi

@@ -6,26 +6,30 @@ title: "Plan-Modus"
 
 <div class="article-intro">
 
-Der Plan-Modus verbindet Ihren Fernseher mit einem Gottesdienstplan. Anstatt Inhalte basierend auf einem Klassenraumplan abzurufen, folgt er dem Plan, der von Ihrer Gemeindeleitung in B1 Admin konfiguriert wurde. Dies ist ideal, wenn ein Fernseher genau das anzeigen soll, was im Plan der aktuellen Woche zugewiesen ist.
+Der Plan-Modus verbindet Ihren Fernseher mit einem Gottesdienstplan der Kirche. Anstatt Inhalte nach einem Klassenplan abzurufen, folgt er dem Plan, den Ihre Kirchenleitung in B1 Admin eingerichtet hat. Das ist ideal, wenn ein Fernseher genau das anzeigen soll, was im Plan der laufenden Woche vorgesehen ist.
 
 </div>
 
-## Unterschied zum Klassenraum-Modus
+## Unterschiede zu anderen Modi
 
-- **[Klassenraum-Modus](../classroom-mode/)** ruft die fuer einen bestimmten Raum an einem bestimmten Datum geplante Lektion ab
-- **Plan-Modus** ruft die Inhalte ab, die mit einem Plantyp verknuepft sind, der Lektionen, Anbieterprasentationen, Ergaenzungen und andere Medien in einer individuellen Reihenfolge enthalten kann
+- **[Geplanter Modus](../scheduled-mode/)** spielt Playlists aus einem Kalender in FreePlay Admin zu den von Ihnen festgelegten Zeiten ab, ohne dass jemand Start drückt
+- **Plan-Modus** ruft die Inhalte ab, die mit einem Plantyp verknüpft sind; dazu können Lektionen, Präsentationen von Anbietern, Zusatzinhalte und andere Medien gehören, die in einer eigenen Reihenfolge angeordnet sind
 
-Der Plan-Modus ist besonders nuetzlich, wenn Ihr Gottesdienstplan eine Mischung aus Inhalten verschiedener Quellen enthaelt, die alle in einer einzigen Abfolge organisiert sind.
+Der Plan-Modus ist besonders nützlich, wenn Ihr Gottesdienstplan eine Mischung aus Inhalten verschiedener Quellen enthält, die alle in einer einzigen Abfolge organisiert sind.
+
+:::tip
+Soll der aktuelle Plan zu einer festen Zeit automatisch abgespielt werden? Fügen Sie in FreePlay Admin einen Kalendereintrag hinzu und wählen Sie unter **Gottesdienstpläne** den Plantyp. Siehe [Den Kalender planen](../scheduled-mode/scheduling-the-calendar).
+:::
 
 ## So funktioniert es
 
-1. FreePlay generiert einen Kopplungscode auf dem Bildschirm
-2. Ein Administrator gibt diesen Code in **B1 Admin** unter den Plantyp-Einstellungen ein
-3. Nach der Kopplung laedt FreePlay den aktuellen Plan und alle zugehoerigen Medien herunter
-4. Druecken Sie **Start Plan**, um die Wiedergabe zu starten
+1. Öffnen Sie auf dem Fernseher **Einstellungen** > **Mit einem Kalender koppeln**, um einen Kopplungscode anzuzeigen
+2. Ein Administrator gibt diesen Code in **B1 Admin** ein und wählt unter **Pläne anzeigen für** den Plantyp aus
+3. Nach der Kopplung lädt FreePlay den aktuellen Plan und lädt alle zugehörigen Medien herunter
+4. Drücken Sie **Plan starten**, um die Wiedergabe zu beginnen
 
-Der Fernseher bleibt mit dem Plantyp gekoppelt. Jede Woche uebernimmt er automatisch den neuesten Plan und dessen Inhalte.
+Der Fernseher bleibt mit dem Plantyp gekoppelt. Jede Woche übernimmt er automatisch den neuesten Plan und dessen Inhalte.
 
 ## In diesem Abschnitt
 
-- **[Geraet koppeln](./device-pairing)** - So generieren und geben Sie den Kopplungscode ein
+- **[Ihr Gerät koppeln](./device-pairing)** - Wie Sie den Kopplungscode erzeugen und eingeben

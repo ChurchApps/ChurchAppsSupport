@@ -66,4 +66,4 @@ Paringskoder udløber efter en bestemt periode. Hvis du venter for længe, skal 
 ## Relaterede artikler
 
 - **[Plan-tilstand oversigt](./index.md)** - Forståelse af hvordan Plan-tilstand adskiller sig fra klasseværelses-tilstand
-- **[Afspilning af lektioner](../classroom-mode/playing-lessons)** - Afspiller kontroller er de samme i begge tilstande
+- **[Afspilning af lektioner](../content-providers/playing-content)** - Afspiller kontroller er de samme i begge tilstande

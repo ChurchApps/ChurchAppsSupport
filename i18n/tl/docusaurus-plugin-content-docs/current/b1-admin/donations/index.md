@@ -6,48 +6,48 @@ title: "Mga Donasyon"
 
 <div class="article-intro">
 
-Ang seksyon ng Donations sa B1 Admin ay nagbibigay ng lahat ng kailangan mo para pamahalaan ang mga alay ng iyong simbahan. Mula sa pag-record ng lingguhang mga offering hanggang sa pagbuo ng year-end tax statement, lahat ng iyong donation tool ay nakaayos sa isang lugar para mapanatili mong maayos ang pananalapi ng iyong simbahan.
+Ibinibigay ng seksyong Donations sa B1 Admin ang lahat ng kailangan mo para pamahalaan ang mga kontribusyon ng iyong simbahan. Mula sa pagtatala ng lingguhang handog hanggang sa paggawa ng taunang tax statement, nasa iisang lugar ang lahat ng donation tools para mapanatili mong maayos ang pananalapi ng simbahan.
 
 </div>
 
-## Mga Sub-Seksyon
+## Mga Sub-Section
 
-Makikita mo ang mga sumusunod na pahina sa Donations sidebar:
+Makikita mo ang mga sumusunod na pahina sa seksyong Donations:
 
 ### Summary
 
-Ang **Summary** page ay nagbibigay ng visual na pangkalahatang-tanaw ng lahat ng giving activity. Nagpapakita ito ng mga chart at filtered report para mabilis mong makita ang mga trend ng donasyon sa buong simbahan. Tingnan ang [Mga Report ng Donasyon](donation-reports.md) para sa higit pang detalye tungkol sa paggamit ng mga summary at report tool.
+Ang pahinang **Summary** ay nagbibigay ng visual na pangkalahatang tanaw ng lahat ng aktibidad sa pagbibigay. Nagpapakita ito ng mga chart at naka-filter na report para mabilis mong makita ang mga trend ng donasyon sa iyong simbahan. Tingnan ang [Donation Reports](donation-reports.md) para sa karagdagang detalye tungkol sa paggamit ng summary at mga report tool.
 
-### Mga Batch
+### Batches
 
-Ang **[Mga Batch](batches.md)** ay nagpapahintulot sa iyo na pagsama-samahin ang mga donasyon -- halimbawa, lahat ng mga tseke at cash na nakolekta sa isang Sunday offering. Ang bawat batch ay sinusubaybayan ang bilang ng donasyon at kabuuang halaga para sa madaling pag-reconcile.
+Ang **[Batches](batches.md)** ay nagpapahintulot sa iyong pagsamahin ang mga donasyon -- halimbawa, lahat ng tseke at cash na nakolekta sa handog ng Linggo. Ang bawat batch ay nagtatala ng bilang ng donasyon at kabuuang halaga para madaling mai-reconcile. Kapag nabilang na ang isang batch, maaaring isara ito ng sinumang may **Edit Donations** para hindi na mabago ng mga volunteer na nagbilang. Ang mga volunteer na may **Enter Donations** permission ay puwedeng magdagdag ng regalo sa mga bukas na batch nang hindi nakikita ang iba pang bahagi ng seksyong Donations.
 
-### Mga Fund
+### Funds
 
-Ang **[Mga Fund](funds.md)** ay nagkakategorya ng iyong mga donasyon ayon sa layunin. Ang mga karaniwang halimbawa ay General Fund, Building Fund, at Missions. Maaari mong markahan ang bawat fund bilang tax-deductible o hindi.
+Ang **[Funds](funds.md)** ay nagkakategorya ng mga donasyon ayon sa layunin. Karaniwang halimbawa ang General Fund, Building Fund, at Missions. Maaari mong markahan ang bawat fund bilang tax-deductible o hindi.
 
-### Mga Statement
+### Statements
 
-Ang **[Mga Statement](giving-statements.md)** page ay bumubuo ng year-end giving statement para sa iyong mga donor. Maaari kang mag-download ng mga indibidwal na CSV file o i-print ang lahat ng statement nang sabay-sabay.
+Ang pahinang **[Statements](giving-statements.md)** ay gumagawa ng taunang giving statement para sa iyong mga donor. Maaari mong i-download ang bawat CSV file nang isa-isa o i-print nang sabay-sabay ang lahat ng statement.
 
 ### Stripe Import
 
-Kung tumatanggap ka ng online donation sa pamamagitan ng Stripe, ang **[Stripe Import](stripe-import.md)** tool ay nagpapahintulot sa iyo na i-pull ang mga transaksyong iyon sa B1 Admin para ang lahat ay nasa isang sistema.
+Kung tumatanggap ka ng online na donasyon sa pamamagitan ng Stripe, pinapayagan ka ng tool na **[Stripe Import](stripe-import.md)** na kunin ang mga transaksyong iyon at ilipat sa B1 Admin para nasa iisang sistema ang lahat.
 
-## Online na Pag-aalay
+## Online Giving
 
-Ang B1 Admin ay naka-integrate sa **Stripe** at **PayPal** para sa pagtanggap ng online donation. Kapag naka-configure na, ang mga miyembro ay maaaring mag-alay sa pamamagitan ng iyong B1.church site at ang mga donasyong iyon ay awtomatikong lalabas sa iyong mga record. Tingnan ang [Pag-setup ng Online na Pag-aalay](online-giving-setup.md) para magsimula.
+Nakikipag-integrate ang B1 Admin sa **Stripe** at **PayPal** para sa pagtanggap ng online na donasyon. Kapag na-configure na, puwedeng magbigay ang mga miyembro sa pamamagitan ng iyong B1.church site at awtomatikong lalabas ang mga donasyong iyon sa iyong mga record. Tingnan ang [Online Giving Setup](online-giving-setup.md) para makapagsimula.
 
 :::tip
-Kung bago ka sa donations sa B1 Admin, magsimula sa [pag-setup ng iyong mga fund](funds.md), pagkatapos [gumawa ng iyong unang batch](batches.md) at [mag-record ng mga donasyon](recording-donations.md) dito.
+Kung bago ka pa lang sa donations sa B1 Admin, magsimula sa [pag-set up ng iyong funds](funds.md), pagkatapos ay [gumawa ng iyong unang batch](batches.md) at [magtala ng mga donasyon](recording-donations.md) dito.
 :::
 
 ## Mga Susunod na Hakbang
 
-- [Pag-record ng mga Donasyon](recording-donations.md) -- maglagay ng mga donasyon sa isang batch
-- [Mga Batch ng Donasyon](batches.md) -- i-organize ang mga donasyon sa mga grupo
-- [Pamamahala ng mga Fund](funds.md) -- i-setup at pamahalaan ang mga kategorya ng pag-aalay
-- [Mga Giving Statement](giving-statements.md) -- bumuo ng mga tax statement para sa mga donor
-- [Pag-setup ng Online na Pag-aalay](online-giving-setup.md) -- ikonekta ang Stripe o PayPal
-- [Stripe Import](stripe-import.md) -- mag-import ng mga online transaction
-- [Mga Report ng Donasyon](donation-reports.md) -- tingnan at i-filter ang mga buod ng donasyon
+- [Recording Donations](recording-donations.md) -- magtala ng mga donasyon sa isang batch
+- [Donation Batches](batches.md) -- ayusin ang mga donasyon sa mga grupo
+- [Managing Funds](funds.md) -- mag-set up at mamahala ng mga kategorya ng pagbibigay
+- [Giving Statements](giving-statements.md) -- gumawa ng tax statement para sa mga donor
+- [Online Giving Setup](online-giving-setup.md) -- ikonekta ang Stripe o PayPal
+- [Stripe Import](stripe-import.md) -- mag-import ng mga online na transaksyon
+- [Donation Reports](donation-reports.md) -- tingnan at i-filter ang mga buod ng donasyon

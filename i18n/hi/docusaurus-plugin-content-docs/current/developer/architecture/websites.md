@@ -1,12 +1,12 @@
 ---
-title: "वेबसाइट राउटिंग और मल्टी-साइट"
+title: "वेबसाइट रूटिंग और मल्टी-साइट"
 ---
 
-# वेबसाइट राउटिंग और मल्टी-साइट
+# वेबसाइट रूटिंग और मल्टी-साइट
 
 <div class="article-intro">
 
-एक एकल चर्च अब एक से अधिक अलग-अलग वेबसाइटों की सेवा कर सकता है, और प्रत्येक एक `*.b1.church` सबडोमेन पर या एक पूरी तरह से कस्टम, चर्च-स्वामित्व वाले डोमेन पर रह सकता है। यह पृष्ठ राउटिंग परत को मैप करता है जो बिल्डर के *नीचे* बैठती है: कैसे एक आने वाली अनुरोध एक चर्च **और** एक विशिष्ट साइट के लिए समाधान करती है, मल्टी-साइट डेटा मॉडल (`siteId` सेंटिनल जो हर पहले से मौजूद साइट को ठीक वैसे ही प्रस्तुत करता है), और कस्टम-डोमेन किनारा — EC2 पर एक स्व-प्रबंधित Caddy प्रॉक्सी जो TLS को समाप्त करता है और प्रत्येक चर्च डोमेन को अपने `*.b1.church` अपस्ट्रीम पर फिर से लिखता है। जो वास्तव में प्रस्तुत होता है एक अनुरोध को एक चर्च के लिए हल करने के बाद — पेज/सेक्शन/एलिमेंट ट्री — के लिए [Website Builder](./website-builder) देखें।
+अब एक ही चर्च एक से अधिक अलग-अलग वेबसाइटें चला सकता है, और हर एक `*.b1.church` subdomain पर या पूरी तरह से कस्टम, चर्च के अपने domain पर रह सकती है। यह पेज उस routing layer को समझाता है जो builder *के नीचे* काम करती है: कोई आने वाला request किसी चर्च **और** किसी विशेष site से कैसे resolve होता है, multi-site data model (`siteId` sentinel, जो हर पहले से मौजूद site को अपरिवर्तित रूप से render करता रहता है), और custom-domain edge — EC2 पर एक self-managed Caddy proxy जो TLS terminate करता है और हर चर्च domain को उसके `*.b1.church` upstream पर rewrite करता है। request resolve होने के बाद वास्तव में क्या render होता है — page/section/element tree — इसके लिए [Website Builder](./website-builder) देखें।
 
 </div>
 
@@ -48,167 +48,169 @@ title: "वेबसाइट राउटिंग और मल्टी-स�
         GET /membership/domains/hostmap    — host→{sub}.b1.church map (5-min refresh)
 ```
 
-तीन नियम इस परत में रखते हैं:
+इस layer में तीन नियम लागू होते हैं:
 
-1. **एक सेंटिनल सब कुछ पिछड़े संगत रखता है।** `siteId = ''` प्राथमिक साइट है। हर पेज, ब्लॉक, लिंक, ग्लोबल-स्टाइल, और डोमेन पंक्ति जो इस सुविधा से पहले मौजूद थी `''` ले जाती है और बिल्कुल वैसे ही प्रस्तुत होती है जैसे यह करती थी। एक *दूसरी* वेबसाइट बस एक गैर-खाली `siteId` वाली पंक्तियों का एक सेट है, और कोई भी सामग्री एंडपॉइंट जिसे `?siteId=` के बिना बुलाया जाता है वह प्राथमिक साइट लौटाता है — बिल्कुल पुरानी अनुरोध।
-2. **संकल्प होस्ट-लेबल-आधारित है और परिवर्तित होता है।** एक `*.b1.church` सबडोमेन सीधे अपने होस्ट लेबल द्वारा राउट करता है; एक कस्टम डोमेन को B1App देखने से पहले Caddy किनारे पर अपने `{sub}.b1.church` लेबल के लिए फिर से लिखा जाता है (एक मिडलवेयर डीबी लुकअप के साथ जो किसी भी कच्चे कस्टम `Host` के लिए फॉलबैक के रूप में एक `x-site` हेडर को स्टैम्प करता है)। दोनों पैर एक ही `[sdSlug]` राउट और एक ही `churches/lookup` कॉल पर उतरते हैं, तो डाउनस्ट्रीम रेंडरिंग समान है।
-3. **Caddy किनारा सच्चाई के एक स्रोत पर स्टेटलेस है।** कस्टम डोमेन EC2 पर एक स्व-प्रबंधित Caddy प्रॉक्सी पर समाप्त होते हैं जो प्रत्येक डोमेन को अपने `{sub}.b1.church` अपस्ट्रीम पर फिर से लिखता है। एक डोमेन सेव एक एकल सर्वश्रेष्ठ-प्रयास `CaddyHelper.updateCaddy()` को फायर करता है, और Caddy भी `domains` टेबल को सीधे पढ़ता है (नीचे `authorize` और `hostmap` एंडपॉइंट)। तालिका अधिकारिक है — एक अपहुंच योग्य Caddy कभी भी एक सेव को विफल नहीं कर सकता।
+1. **एक sentinel सब कुछ backward compatible रखता है।** `siteId = ''` primary site है। इस feature से पहले मौजूद हर page, block, link, global-style और domain row में `''` होता है और वह पहले की तरह ही render होता है। *दूसरी* वेबसाइट बस non-empty `siteId` वाली rows का एक समूह है, और `?siteId=` के बिना कॉल किया गया कोई भी content endpoint primary site लौटाता है — बिल्कुल पुराने request जैसा।
+2. **Resolution host-label पर आधारित है और एक ही बिंदु पर मिलती है।** `*.b1.church` subdomain सीधे अपने host label से route होता है; custom domain को B1App तक पहुंचने से पहले Caddy edge पर उसके `{sub}.b1.church` label में rewrite किया जाता है (किसी raw custom `Host` के लिए fallback के रूप में एक middleware DB lookup `x-site` header सेट करता है)। दोनों रास्ते एक ही `[sdSlug]` route और एक ही `churches/lookup` call पर पहुंचते हैं, इसलिए आगे का rendering समान रहता है।
+3. **Caddy edge एक ही प्रामाणिक स्रोत (source of truth) पर निर्भर एक stateless परत है।** Custom domains EC2 पर एक self-managed Caddy proxy पर terminate होते हैं, जो हर domain को उसके `{sub}.b1.church` upstream पर rewrite करता है। domain save पर एक single best-effort `CaddyHelper.updateCaddy()` चलता है, और Caddy `domains` table को सीधे भी पढ़ता है (नीचे दिए `authorize` और `hostmap` endpoints)। table ही प्रामाणिक है — एक unreachable Caddy कभी भी save को fail नहीं कर सकता।
 
-## साइट संकल्प
+## साइट resolution
 
-### `*.b1.church` सबडोमेन
+### `*.b1.church` subdomains
 
-`B1App/next.config.mjs` होस्ट द्वारा आने वाली अनुरोधों को फिर से लिखता है। एक होस्ट नियम पैटर्न `(?<subdomain>.*?)\..*` के साथ होस्ट की **पहली लेबल** को कैप्चर करता है और `/` और `/:path*` को `/{subdomain}` में फिर से लिखता है — `[sdSlug]` App-Router सेगमेंट। तो `grace.b1.church/about` `/grace/about` में बदल जाता है।
+`B1App/next.config.mjs` host के आधार पर आने वाले requests को rewrite करता है। `(?<subdomain>.*?)\..*` pattern वाला host rule host का **पहला label** capture करता है और `/` व `/:path*` को `/{subdomain}` में rewrite करता है — यानी `[sdSlug]` App-Router segment में। तो `grace.b1.church/about`, `/grace/about` बन जाता है।
 
-`src/app/[sdSlug]/` के अंदर, `ConfigHelper.load(sdSlug)` (`src/helpers/ConfigHelper.ts`) `GET /membership/churches/lookup/?subDomain={sdSlug}` को कॉल करता है। `ChurchController.getBySubDomain` प्रतिक्रिया अब दो शाखाएं है:
+`src/app/[sdSlug]/` के अंदर, `ConfigHelper.load(sdSlug)` (`src/helpers/ConfigHelper.ts`) `GET /membership/churches/lookup/?subDomain={sdSlug}` कॉल करता है। `ChurchController.getBySubDomain` response की अब दो शाखाएं हैं:
 
-| स्लग मेल खाता | प्रतिक्रिया | अर्थ |
+| Slug किससे match होता है | Response | अर्थ |
 |--------------|----------|---------|
-| `churches.subDomain` | `{ id, name, subDomain }` | उस चर्च की प्राथमिक साइट |
-| `sites.subDomain` | `{ id, name, subDomain, siteId }` | एक **द्वितीयक साइट** — नियंत्रक `sites` में वापस आता है, मालिक चर्च को हल करता है, और पूछे गए स्लग को अतिरिक्त `siteId` के साथ गूंजता है |
+| `churches.subDomain` | `{ id, name, subDomain }` | उस चर्च की primary site |
+| `sites.subDomain` | `{ id, name, subDomain, siteId }` | एक **secondary site** — controller `sites` पर fallback करता है, मालिक चर्च resolve करता है, और पूछे गए slug के साथ अतिरिक्त `siteId` लौटाता है |
 
-वह अतिरिक्त `siteId` एकमात्र चीज है जो द्वितीयक-साइट अनुरोध को प्राथमिक से अलग करती है; पाइपलाइन में बाकी सब कुछ साझा है।
+वही अतिरिक्त `siteId` ही secondary-site request को primary से अलग करने वाली एकमात्र चीज़ है; बाकी pipeline में सब कुछ साझा है।
 
-### कस्टम डोमेन
+जो slug न `churches` से match करे न `sites` से, वह `200` के साथ `{}` लौटाता है। `ConfigHelper.load` बिना `id` वाले response को अज्ञात site मानता है और Next का `notFound()` कॉल करता है, ताकि अज्ञात subdomain को बाद की हर कॉल में `/…/undefined` पूछने के बजाय सच्चा 404 मिले। builder-page route भी `pageTreePath()` (`src/helpers/pageTreePath.ts`) से अपना tree path बनाता है, जो slug को URL-encode करता है, ताकि गलत format वाला slug (backslashes, spaces) API के `400` को 500 के रूप में दिखाने के बजाय 404 दे।
 
-एक चर्च-स्वामित्व वाला डोमेन **Caddy किनारे** पर समाप्त होता है (नीचे विस्तृत), जो `Host` हेडर को साइट के `{sub}.b1.church` पर फिर से लिखता है B1App को प्रॉक्सी करने से पहले। तो सामान्य पथ पर B1App एक *आंतरिक* `*.b1.church` होस्ट प्राप्त करता है और इसे होस्ट लेबल द्वारा एक मूल सबडोमेन की तरह बिल्कुल हल करता है — मिडलवेयर का डीबी लुकअप कभी नहीं चलता। `src/middleware.ts` हर अनुरोध पर चलता है, लेकिन एक हमेशा-चालू नौकरी और एक फॉलबैक के साथ:
+### Custom domains
 
-1. **हमेशा** — यह **किसी भी क्लाइंट-आपूर्ति किए गए `x-site` हेडर को हटाता है**। वह हेडर स्पूफेबल रीराइट इनपुट है और केवल तभी विश्वास किया जाता है जब मिडलवेयर खुद इसे सेट करता है; इसे स्ट्रिप करना Caddy के पीछे मिडलवेयर की असली नौकरी है।
-2. **फॉलबैक, गैर-आंतरिक `Host` केवल** — एक कच्चे कस्टम-डोमेन `Host` के लिए जो B1App तक *बिना* Caddy के फिर से लिखे पहुंचता है, यह `GET /membership/domains/public/lookup/{host}` को कॉल करता है और, यदि यह एक `subDomain` लौटाता है, तो `x-site: {subDomain}.b1.church` सेट करता है। Caddy के पीछे यह शाखा निष्क्रिय है क्योंकि `Host` पहले से ही `*.b1.church` है।
+एक चर्च का अपना domain **Caddy edge** (जिसका विवरण नीचे है) पर terminate होता है, जो B1App को proxy करने से पहले `Host` header को site के `{sub}.b1.church` में rewrite करता है। तो सामान्य रास्ते पर B1App एक *internal* `*.b1.church` host प्राप्त करता है और उसे ठीक वैसे ही host label से resolve करता है जैसे किसी native subdomain को। middleware की DB lookup कभी fire नहीं होती। `src/middleware.ts` फिर भी हर request पर चलता है, लेकिन उसके पास एक हमेशा-चालू काम और एक fallback है:
 
-आंतरिक होस्ट — `localhost`, `b1.church`, और प्रत्यय `.b1.church`, `.localtest.me`, `.localhost`, `.up.railway.app`, `.vercel.app` — लुकअप को पूरी तरह छोड़ देते हैं (वे पहले से ही होस्ट-लेबल रीराइट द्वारा हल किए गए हैं, या प्रिव्यू/डिप्लॉय होस्ट हैं)।
+1. **हमेशा** — यह **किसी भी client-supplied `x-site` header को delete कर देता है**। वह header spoofable rewrite input है और केवल तभी भरोसा किया जाता है जब middleware स्वयं उसे सेट करे; उसे strip करना ही Caddy के पीछे middleware का असली काम है।
+2. **Fallback, केवल non-internal `Host` के लिए** — किसी raw custom-domain `Host` के लिए, जो Caddy के rewrite के *बिना* B1App तक पहुंचता है, यह `GET /membership/domains/public/lookup/{host}` कॉल करता है और यदि उससे `subDomain` मिलता है, तो `x-site: {subDomain}.b1.church` सेट करता है। Caddy के पीछे यह शाखा निष्क्रिय रहती है क्योंकि `Host` पहले से `*.b1.church` है।
 
-लुकअप खुद (`DomainRepo.loadByName`) बाएं-जोड़ `domains → churches` और `domains → sites` से मिलता है और `COALESCE(NULLIF(sites.subDomain,''), churches.subDomain)` लौटाता है — यदि डोमेन एक पर इंगित करता है तो निर्दिष्ट द्वितीयक साइट का सबडोमेन, अन्यथा चर्च का। यह पहले सटीक होस्ट से मेल खाता है; यदि वह होस्ट `www.` से शुरू हुआ और मिस किया, तो यह **एक बार** नंगे एपेक्स के विरुद्ध फिर से कोशिश करता है।
+Internal hosts — `localhost`, `b1.church`, और suffixes `.b1.church`, `.localtest.me`, `.localhost`, `.up.railway.app`, `.vercel.app` — lookup को पूरी तरह skip करते हैं (वे पहले ही host-label rewrite से resolve हो चुके हैं, या preview/deploy hosts हैं)।
 
-वापस `next.config.mjs` में, `x-site` रीराइट नियम सामान्य होस्ट नियमों से **आगे** रखे जाते हैं, तो वे जीतते हैं। `x-site: grace.b1.church` → पहली लेबल `grace` → `[sdSlug] = grace`, और वहां से संकल्प सबडोमेन पथ के समान है (एक ही `churches/lookup`, एक ही `siteId`)।
+Lookup स्वयं (`DomainRepo.loadByName`) `domains → churches` और `domains → sites` को left-join करता है और `COALESCE(NULLIF(sites.subDomain,''), churches.subDomain)` लौटाता है — यदि domain किसी secondary site की ओर इशारा करता है तो उस assigned site का subdomain, अन्यथा चर्च का। यह पहले exact host से match करता है; यदि वह host `www.` से शुरू होता था और miss हुआ, तो यह bare apex पर **एक बार** retry करता है।
+
+`next.config.mjs` में, `x-site` rewrite rules generic host rules से **पहले** रखे जाते हैं, इसलिए वे जीतते हैं। `x-site: grace.b1.church` → पहला label `grace` → `[sdSlug] = grace`, और उसके बाद resolution subdomain वाले रास्ते जैसा ही है (वही `churches/lookup`, वही `siteId`)।
 
 :::info
-`x-site` हेडर बाहर से अविश्वास्य है। मिडलवेयर शर्तहीन रूप से किसी भी इनबाउंड `x-site` को शर्तहीन रूप से स्ट्रिप करता है इससे पहले कि वैकल्पिक रूप से अपना सेट करता है, और रीराइट नियम केवल मिडलवेयर-सेट मूल्य को देखते हैं — एक क्लाइंट एक हेडर भेजकर अपने को किसी अन्य चर्च की सामग्री पर बल नहीं दे सकता।
+बाहर से `x-site` header पर भरोसा नहीं किया जाता। middleware अपना header सेट करने से पहले आने वाले हर `x-site` को बिना शर्त हटा देता है, और rewrite rules केवल middleware द्वारा सेट किए गए मान को देखते हैं — कोई client header भेजकर स्वयं को किसी दूसरे चर्च की सामग्री पर थोप नहीं सकता।
 :::
 
-मिडलवेयर पर दो परिचालन विवरण:
+Middleware के बारे में दो operational विवरण:
 
-- **कैश।** प्रत्येक होस्ट का परिणाम (एक हिट *या* एक पुष्टि मिस — कभी नहीं एक नेटवर्क त्रुटि) **10 मिनट** के लिए एक इन-मेमोरी `Map` में कैश किया जाता है, प्रति सर्वरलेस अलग-थलग।
-- **मैचर।** मैचर जानबूझकर `/sitemap.xml`, `/robots.txt`, और `/manifest.webmanifest` को फिर से शामिल करता है। इसका पहला पैटर्न डॉट किए गए पथों को बाहर करता है, जो अन्यथा उन फाइलों को छोड़ देंगे; वे वापस जोड़े जाते हैं तो एक कस्टम डोमेन की प्रति-चर्च SEO/PWA फाइलें भी `x-site` हेडर प्राप्त करती हैं।
-- **कैनोनिकल हेडर।** चर्च पृष्ठों के लिए मिडलवेयर एक `Link: <{proto}://{host}{path}>; rel="canonical"` प्रतिक्रिया हेडर जोड़ता है जिस होस्ट को पेज वास्तव में परोसा गया था — सबडोमेन या कस्टम डोमेन (`helpers/canonicalLink.ts`) का नाम देता है। यह गैर-चर्च होस्ट (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) पर और `/mobile`, `/login`, `/logout`, और उत्पन्न robots/sitemap/manifest फाइलों पर छोड़ा जाता है।
+- **Cache।** हर host का परिणाम (hit *या* पुष्ट miss — network error कभी नहीं) प्रति serverless isolate, एक in-memory `Map` में **10 मिनट** के लिए cache होता है।
+- **Matcher।** matcher जानबूझकर `/sitemap.xml`, `/robots.txt`, और `/manifest.webmanifest` को फिर से शामिल करता है। इसका पहला pattern dotted paths को बाहर करता है, जो अन्यथा इन files को हटा देता; इन्हें वापस जोड़ा जाता है ताकि custom domain की per-church SEO/PWA files को भी `x-site` header मिले।
+- **Canonical header।** चर्च pages के लिए middleware एक `Link: <{proto}://{host}{path}>; rel="canonical"` response header जोड़ता है, जो उस host का नाम बताता है जहां से page वास्तव में serve हुआ — subdomain या custom domain (`helpers/canonicalLink.ts`)। यह non-church hosts (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) और `/mobile`, `/login`, `/logout`, तथा generated robots/sitemap/manifest files पर skip होता है।
 
-### अक्षम सार्वजनिक वेबसाइट
+### सार्वजनिक वेबसाइट बंद होना
 
-एक चर्च B1Admin में **Disable Public Website** को चालू कर सकता है (चर्च-स्तर की सामग्री सेटिंग `hidePublicSite = "true"`). साइट तब केवल अपने सदस्य-सामना करने वाले मार्गों को परोसता है:
+एक चर्च B1Admin में **Disable Public Website** चालू कर सकता है (चर्च-स्तरीय content setting `hidePublicSite = "true"`)। फिर site केवल अपने member-facing routes serve करती है:
 
-- **B1App मिडलवेयर** सबडोमेन को लुकअप करता है (`/membership/churches/lookup` फिर `/content/settings/public/:churchId`) और गुमनाम अनुरोधों को अनुमति सूची के बाहर किसी भी पथ के लिए `/login?returnUrl={path}{query}` को रीडायरेक्ट करता है। अनुमति सूची (`helpers/publicSite.ts`) `/login`, `/logout`, `/mobile/*`, `/register/*`, `/guest-register`, और मैनिफेस्ट/robots/sitemap फाइलें हैं। केवल पुष्टि किए गए उत्तरों को कैश किया जाता है (उत्पादन में 60 सेकंड, चूंकि प्रशासक का पुनः मान्य कॉल इस प्रति-उदाहरण मानचित्र को साफ नहीं कर सकता; dev/test में अनकैश किया गया)। एक API त्रुटि सभी को लॉक करने की जगह साइट परोसता है।
-- **साइन-इन किए गए सदस्य पूरी साइट देखते हैं।** एक अनुरोध एक अपमानकारी `jwt` कुकी ले जा रहा है (मिडलवेयर का `hasSession()` signature को सत्यापित किए बिना पेलोड के `exp` को डिकोड करता है -- यह एक नरम गेट है, प्रवेश नियंत्रण नहीं) रीडायरेक्ट को छोड़ देता है, तो लॉग इन करने के बाद एक सदस्य उस पेज पर लौटता है जो उन्होंने पूछा था और सामान्य पृष्ठ, निर्मित पृष्ठ (Groups, Sermons, आदि), और हेडर नेविगेशन देखते हैं। पेज घटक और `Header` अब `hidePublicSite` को खुद नहीं देखते हैं।
-- **`robots.txt`** सब कुछ को अनुमति देता है, noindex होस्ट पर की तरह।
-- **API.** `GET /content/pages/public/:churchId` (साइटमैप की पेज सूची) `[]` लौटाता है, तो गुमनाम कॉलर पृष्ठों को सूची बनाई नहीं कर सकते।
+- **B1App middleware** subdomain को lookup करता है (`/membership/churches/lookup` फिर `/content/settings/public/:churchId`) और allowlist से बाहर किसी भी path के लिए गुमनाम requests को `/login?returnUrl={path}{query}` पर redirect करता है। allowlist (`helpers/publicSite.ts`) है `/login`, `/logout`, `/mobile/*`, `/register/*`, `/guest-register`, और manifest/robots/sitemap files। केवल पुष्ट उत्तर cache होते हैं (production में 60 सेकंड, क्योंकि admin का revalidate call इस per-instance map को clear नहीं कर सकता; dev/test में uncached)। एक API error site को serve करता है, सभी को बाहर नहीं रखता।
+- **Signed-in members पूरी site देखते हैं।** एक unexpired `jwt` cookie वाला request (middleware का `hasSession()` payload का `exp` decode करता है बिना signature verify किए — यह एक soft gate है, access control नहीं) redirect को skip करता है, इसलिए login के बाद member उसी page पर लौटता है जो उसने मांगा था और सामान्य pages, built-in pages (Groups, Sermons, आदि) और header navigation देखता है। Page components और `Header` अब स्वयं `hidePublicSite` की जांच नहीं करते।
+- **`robots.txt`** सब कुछ disallow करता है, जैसा noindex hosts पर होता है।
+- **API।** `GET /content/pages/public/:churchId` (sitemap की page list) `[]` लौटाता है, ताकि गुमनाम callers pages की सूची न निकाल सकें।
 
-### `siteId` धागा
+### `siteId` threading
 
-`ConfigHelper` अपने प्रति-अनुरोध `ConfigurationInterface` पर हल किए गए `siteId` को संग्रहीत करता है (React `cache()` के साथ मेमोइज़्ड) और सामग्री कॉल में `?siteId=` को जोड़ता है जो यह और पेज घटक करते हैं — **सशर्त**: एक खाली `siteId` (एक प्राथमिक-चर्च सबडोमेन) पैरामीटर को पूरी तरह छोड़ देता है। धागीदार एंडपॉइंट हैं पेज ट्री (`/content/pages/:id/tree`), साइटमैप द्वारा उपयोग की जाने वाली सार्वजनिक पेज सूची (`/content/pages/public/:id`), वैश्विक शैलियां (`/content/globalStyles/church/:id`), nav लिंक (`/content/links/church/:id`), और स्टैंडअलोन फूटर ब्लॉक (`/content/blocks/public/footer/:id`)। सामान्य रेंडर पथ पर फूटर पेज ट्री के अंदर आता है (अनुभाग `zone: "siteFooter"` के साथ टैग किए गए), पहले से ही `siteId` के साथ प्राप्त किया गया, तो कोई अनस्कोप्ड फूटर अंतर नहीं है।
+`ConfigHelper` resolve हुआ `siteId` अपने per-request `ConfigurationInterface` पर रखता है (React `cache()` से memoized) और उन content calls में `?siteId=` जोड़ता है जो वह और page components करते हैं — **शर्तिया**: खाली `siteId` (primary-church subdomain) पैरामीटर को पूरी तरह छोड़ देता है। threaded endpoints हैं page tree (`/content/pages/:id/tree`), sitemap द्वारा उपयोग की जाने वाली public page list (`/content/pages/public/:id`), global styles (`/content/globalStyles/church/:id`), nav links (`/content/links/church/:id`), और अलग से footer block (`/content/blocks/public/footer/:id`)। सामान्य render path पर footer page tree के भीतर आता है (`zone: "siteFooter"` वाले sections), जो पहले से `siteId` के साथ fetch होता है, इसलिए कोई बिना-scope वाला footer gap नहीं है।
 
-सदस्य पोर्टल (B1App `mobile`) जानबूझकर इसके बाहर बैठता है: `loadChurchAppearance.ts` चर्च को `churches/lookup` के माध्यम से हल करता है लेकिन चर्च-स्तर `/settings/public/{id}` को पढ़ता है और कभी भी `siteId` को धागा नहीं करता — पोर्टल v1 में चर्च-व्यापी है (नीचे देखें)।
+Member portal (B1App `mobile`) जानबूझकर इससे बाहर है: `loadChurchAppearance.ts` `churches/lookup` से चर्च resolve करता है लेकिन चर्च-स्तरीय `/settings/public/{id}` पढ़ता है और `siteId` कभी thread नहीं करता — portal v1 में पूरे चर्च के लिए है (नीचे देखें)।
 
-## चर्च प्रति कई वेबसाइटें
+## प्रति चर्च कई वेबसाइटें
 
-### डेटा मॉडल
+### Data model
 
-नई `membership.sites` तालिका जानबूझकर छोटी है:
+नई `membership.sites` table जानबूझकर बहुत छोटी है:
 
-| कॉलम | प्रकार | नोट्स |
+| Column | Type | टिप्पणी |
 |--------|------|-------|
 | `id` | `char(11)` PK | |
 | `churchId` | `char(11)` | मालिक चर्च |
-| `name` | `varchar(255)` | दिखाए गए नाम (जैसे "Español", "Youth") |
-| `subDomain` | `varchar(45)` | **अद्वितीय सूचकांक** — वैश्विक नाम स्थान (नीचे) |
+| `name` | `varchar(255)` | प्रदर्शित नाम (जैसे "Español", "Youth") |
+| `subDomain` | `varchar(45)` | **Unique index** — वैश्विक namespace (नीचे) |
 
-साइट स्कोपिंग तब सामग्री और डोमेन तालिकाओं में जोड़ी गई एक एकल गैर-अमान्य-मुक्त कॉलम है:
+Site scoping फिर content और domain tables में जुड़े एक single nullable-free column से होती है:
 
-| तालिका (मॉड्यूल) | कॉलम | `''` का अर्थ |
+| Table (module) | Column | `''` का अर्थ |
 |----------------|--------|-----------|
-| `domains` (membership) | `siteId char(11) NOT NULL DEFAULT ''` | डोमेन प्राथमिक साइट परोसता है |
-| `pages`, `links`, `globalStyles`, `blocks` (content) | `siteId char(11) NOT NULL DEFAULT ''` | प्राथमिक साइट — और **`blocks`** पर, `''` अतिरिक्त रूप से *सभी साइटों में साझा* का अर्थ है |
+| `domains` (membership) | `siteId char(11) NOT NULL DEFAULT ''` | Domain primary site serve करता है |
+| `pages`, `links`, `globalStyles`, `blocks` (content) | `siteId char(11) NOT NULL DEFAULT ''` | Primary site — और **`blocks`** पर, `''` का अर्थ अतिरिक्त रूप से *सभी sites में साझा* भी है |
 
-दो माइग्रेशन इस सब को जोड़ते हैं (`tools/migrations/membership/2026-07-02_sites.ts`, `tools/migrations/content/2026-07-02_site_id.ts`)। क्योंकि कॉलम `''` को डिफ़ॉल्ट करता है, हर मौजूदा पंक्ति कोई बैकफिल के साथ आज का व्यवहार रखती है।
+दो migrations यह सब जोड़ते हैं (`tools/migrations/membership/2026-07-02_sites.ts`, `tools/migrations/content/2026-07-02_site_id.ts`)। चूंकि column का default `''` है, हर मौजूदा row आज के व्यवहार को बिना backfill के बनाए रखती है।
 
-**वैश्विक सबडोमेन नाम स्थान।** `sites.subDomain` *एक* नाम स्थान साझा करता है `churches.subDomain` के साथ — एक साइट सबडोमेन कभी भी एक चर्च सबडोमेन या दूसरे साइट के साथ टकरा नहीं सकता। यह **दोनों** सेव पथों पर लागू किया जाता है: `SiteController.save` एक स्लग को अस्वीकार करता है जो `churches` या `sites` दोनों को हिट करता है, और `ChurchController.validateSave` विपरीत में एक ही काम करता है। एक अद्वितीय सूचकांक `sites.subDomain` पर डेटाबेस स्तर पर इसे वापस करता है।
+**Global subdomain namespace।** `sites.subDomain`, `churches.subDomain` के साथ *एक* namespace साझा करता है — site subdomain कभी किसी चर्च subdomain या किसी दूसरी site से टकरा नहीं सकता। यह **दोनों** save paths पर लागू होता है: `SiteController.save` ऐसे slug को reject करता है जो `churches` या `sites` में से किसी से match करे, और `ChurchController.validateSave` उल्टी दिशा में वही करता है। `sites.subDomain` पर एक unique index database स्तर पर इसकी गारंटी देता है।
 
-**पृष्ठ विशिष्टता** `(churchId, url)` से `(churchId, siteId, url)` तक विस्तृत किया गया, तो एक चर्च की दो साइटें प्रत्येक अपना `/about` स्वामित्व कर सकती हैं।
+**Pages uniqueness** `(churchId, url)` से बढ़ाकर `(churchId, siteId, url)` किया गया, ताकि एक चर्च की दो sites में से हर एक अपना `/about` रख सके।
 
-### गिरावट के साथ प्रति-साइट सामग्री
+### प्रति-site content, fallbacks के साथ
 
-हर साइट-स्कोप्ड सामग्री **सूची/ट्री** एंडपॉइंट एक वैकल्पिक `?siteId=` लेता है (अनुपस्थित ⇒ `''` = प्राथमिक): पेज ट्री / सूची / सार्वजनिक, ब्लॉक सूची / द्वारा-प्रकार / फूटर, लिंक (anon / फ़िल्टर किए गए / सभी), और वैश्विक शैलियां। अनुभाग और तत्व *सीधे* स्कोप नहीं हैं — वे अपने माता-पिता पेज या ब्लॉक के माध्यम से विरासत में मिलते हैं।
+हर site-scoped content **list/tree** endpoint एक वैकल्पिक `?siteId=` लेता है (अनुपस्थित ⇒ `''` = primary): pages tree / list / public, blocks list / by-type / footer, links (anon / filtered / all), और global styles। Sections और elements सीधे scope नहीं होते — वे अपने parent page या block के माध्यम से विरासत में पाते हैं।
 
-दो संकल्प श्रृंखलाएं दिलचस्प काम करती हैं:
+दो resolution chains दिलचस्प काम करते हैं:
 
-- **वैश्विक शैलियां — `site → primary → default`.** `GlobalStyleRepo.loadForChurch(churchId, siteId)` साइट की अपनी पंक्ति लौटाता है; यदि एक द्वितीयक साइट के पास कोई नहीं है, तो यह **प्राथमिक (`''`) पंक्ति जैसा-है** लौटाता है (प्राथमिक के `id`/`siteId` को रखते हुए, जिसे क्लाइंट कॉपी-ऑन-लिखने के लिए उपयोग करता है); यदि कोई प्राथमिक भी नहीं है, तो `GlobalStyleController` एक हार्ड-कोडित डिफ़ॉल्ट पैलेट/फ़ॉन्ट लौटाता है।
-- **फूटर ब्लॉक — साइट-विशिष्ट जीत, साझा गिरावट।** `BlockRepo.loadByBlockType(churchId, "footerBlock", siteId)` साझा (`''`) *और* साइट-विशिष्ट पंक्तियों को लौटाता है; रिज़ॉल्वर साइट का अपना फूटर चुनता है यदि मौजूद है, अन्यथा साझा एक। एक ही तर्क दोनों `TreeHelper.insertBlocks` (पेज ट्री) और स्टैंडअलोन `/content/blocks/public/footer/:churchId` एंडपॉइंट में चलता है।
+- **Global styles — `site → primary → default`।** `GlobalStyleRepo.loadForChurch(churchId, siteId)` site की अपनी row लौटाता है; यदि secondary site के पास कोई नहीं है, तो यह **primary (`''`) row को जैसी है वैसी** लौटाता है (primary का `id`/`siteId` रखते हुए, जिसे client copy-on-write के लिए उपयोग करता है); और यदि primary भी नहीं है, तो `GlobalStyleController` एक hard-coded default palette/fonts लौटाता है।
+- **Footer block — site-specific जीतता है, shared fallback करता है।** `BlockRepo.loadByBlockType(churchId, "footerBlock", siteId)` shared (`''`) *और* site-specific rows दोनों लौटाता है; resolver site का अपना footer चुनता है यदि मौजूद हो, अन्यथा shared। यही logic `TreeHelper.insertBlocks` (page tree) और अलग `/content/blocks/public/footer/:churchId` endpoint दोनों में चलता है।
 
-### साइट विलोपन कैस्केड
+### Site deletion cascade
 
-`SiteController.delete` (सदस्यता Settings→Edit अनुमति पर गेटेड) एक द्वितीयक साइट को तीन चरणों में नीचे गिराता है:
+`SiteController.delete` (membership Settings→Edit permission पर gated) एक secondary site को तीन चरणों में हटाता है:
 
-1. `ContentModuleGateway.deleteSiteContent(churchId, siteId)` सभी सामग्री को कैस्केड करता है जो साइट स्वामित्व में है: इसके **पृष्ठ** → उनके अनुभाग, तत्व, `pageHistory`, और `posts`; इसकी अपनी **ब्लॉक** → उनके अनुभाग, तत्व, और `pageHistory`; इसके **लिंक** और **globalStyles**। एक गार्ड `''` के लिए चलाने से इनकार करता है — प्राथमिक/साझा सेंटिनल को कभी भी कैस्केड नहीं किया जाता है।
-2. `DomainRepo.clearSiteId` साइट के डोमेन को प्राथमिक (`siteId → ''`) में फिर से असाइन करता है उन्हें हटाने की जगह, तो एक कस्टम डोमेन एक साइट विलोपन को जीवित करता है।
-3. `sites` पंक्ति को हटा दिया जाता है और Caddy मार्गों को फिर से सिंक किया जाता है (सर्वश्रेष्ठ-प्रयास)।
+1. `ContentModuleGateway.deleteSiteContent(churchId, siteId)` site की मालिक सारी content को cascade करता है: उसके **pages** → उनके sections, elements, `pageHistory`, और `posts`; उसके अपने **blocks** → उनके sections, elements, और `pageHistory`; उसके **links** और **globalStyles**। एक guard `''` के लिए चलने से इनकार करता है — primary/shared sentinel को कभी cascade नहीं किया जाता।
+2. `DomainRepo.clearSiteId` site के domains को delete करने के बजाय primary (`siteId → ''`) को **पुनः assign** करता है, ताकि site हटाने पर भी custom domain बचा रहे।
+3. `sites` row delete होती है और Caddy routes फिर से sync होते हैं (best-effort)।
 
 ### B1Admin सतह
 
-| क्षमता | जहां | तंत्र |
+| क्षमता | कहां | तंत्र |
 |-----------|-------|-----------|
-| साइट स्विच | `useSiteSelection` + `SiteSwitcher` (खाली = "Main Website") | एक `?site=` URL पैरामीटर को पढ़ता है और इसे `?siteId=` के रूप में ContentApi कॉल में धागा करता है। तीन साइट **सूची** क्षेत्रों पर मौजूद — **पेज**, **ब्लॉक**, **उपस्थिति** — लेकिन पेज/ब्लॉक संपादक *नहीं*, जो रिकॉर्ड पर `siteId` ले जाते हैं |
-| साइट बनाएं/हटाएं | `SitesDialog`, स्विच के "Manage websites…" प्रवेश से खोला गया | `POST /membership/sites` / `DELETE /membership/sites/:id` (नाम + subDomain)। सदस्यता Settings→Edit अनुमति पर गेटेड (`Permissions.settings.edit` सर्वर-पक्ष; `Permissions.membershipApi.settings.edit` B1Admin में)। **केवल बनाएं/हटाएं — v1 में कोई रीनेम UI नहीं है** |
-| प्रति-डोमेन साइट असाइनमेंट | `DomainSettingsEdit` Settings→Domains के तहत | एक प्रति-पंक्ति साइट ड्रॉपडाउन प्रति डोमेन के लिए `/membership/domains` को `siteId` पोस्ट करता है। यदि API कोई साइट नहीं लौटाता है (पुरानी बैकएंड) तो कॉलम छुप जाता है |
-| कॉपी-ऑन-लिखना शैलियां | `StylesManager.prepareForSave` | जब लोड की गई ग्लोबल-स्टाइल पंक्ति का `siteId` चयनित साइट से मेल नहीं खाता है (अर्थात्, API ने गिरावट के रूप में विरासत में मिली प्राथमिक को लौटाया है), तो यह प्राथमिक के `id` को छोड़ देता है और वर्तमान `siteId` को स्टैम्प करता है, प्राथमिक को अधिलेखित करने की जगह एक नई साइट-विशिष्ट पंक्ति का **insert** करने को बल देता है। एक ही फोर्क-ऑन-मिसमैच साइट फूटर ब्लॉक पर लागू होता है |
+| Site switcher | `useSiteSelection` + `SiteSwitcher` (खाली = "Main Website") | एक `?site=` URL param पढ़ता है और उसे ContentApi calls में `?siteId=` के रूप में thread करता है। तीन Site **list** क्षेत्रों पर उपलब्ध — **Pages**, **Blocks**, **Appearance** — लेकिन page/block editors पर नहीं, जो `siteId` record पर ही रखते हैं |
+| Sites create/delete | `SitesDialog`, switcher की "Manage websites…" entry से खुलता है | `POST /membership/sites` / `DELETE /membership/sites/:id` (name + subDomain)। membership Settings→Edit permission पर gated (server-side `Permissions.settings.edit`; B1Admin में `Permissions.membershipApi.settings.edit`)। **केवल create/delete — v1 में rename UI नहीं है** |
+| प्रति-domain site assignment | Settings→Domains के अंतर्गत `DomainSettingsEdit` | हर row का site dropdown प्रति domain `siteId` को `/membership/domains` पर भेजता है। यदि API कोई sites नहीं लौटाता (पुराना backend) तो column छिप जाता है |
+| Copy-on-write styles | `StylesManager.prepareForSave` | जब लोड हुई global-style row का `siteId` चुनी गई site से match नहीं करता (यानी API ने fallback के रूप में inherited primary लौटाया), तो यह primary का `id` हटा देता है और वर्तमान `siteId` लगाता है, जिससे primary को overwrite करने के बजाय नई site-specific row का **insert** होता है। यही mismatch-पर-fork logic site footer block पर भी लागू होता है |
 
 :::info
-**जो v1 में चर्च-व्यापी रहता है (एक जानबूझकर स्कोपिंग विकल्प, डेटा-मॉडल सीमा नहीं):** **ब्लॉग** (`BlogPage` के पास कोई स्विच नहीं है और `/posts` को कोई `siteId` के साथ लोड करता है), **साइट विजेट** (घोषणा बैनर + लॉन्चर), **पुनर्निर्देश**, **लोगो / GA4 / चर्च सेटिंग**, और **सदस्य पोर्टल** (B1App मोबाइल)। नोट यह *नहीं* है "सभी उपस्थिति" — एक द्वितीयक साइट की वैश्विक शैलियां (पैलेट, फ़ॉन्ट, टाइपोग्राफी, स्पेसिंग, nav, कस्टम CSS) **हैं** प्रति-साइट कॉपी-ऑन-लिखना पथ के माध्यम से; केवल उपस्थिति पृष्ठ के बैनर/लॉन्चर/पुनर्निर्देश/लोगो उप-पैनल चर्च-व्यापी रहते हैं।
+**v1 में चर्च-व्यापी क्या रहता है (एक जानबूझकर scoping निर्णय, data-model की सीमा नहीं):** **blog** (`BlogPage` में कोई switcher नहीं है और वह `siteId` के बिना `/posts` लोड करता है), **site widgets** (announcement banner + launcher), **redirects**, **logo / GA4 / church settings**, और **member portal** (B1App mobile)। ध्यान दें कि यह "पूरा Appearance" नहीं है — secondary site की global styles (palette, fonts, typography, spacing, nav, custom CSS) ऊपर वाले copy-on-write रास्ते से **प्रति-site** हैं; केवल Appearance पेज के banner/launcher/redirects/logo sub-panels चर्च-व्यापी रहते हैं।
 :::
 
-## कस्टम डोमेन: Caddy किनारा (स्टेटिक-कॉन्फ़िग योजना)
+## Custom domains: Caddy edge (static-config plan)
 
 :::info
-**2026-07-02 को संशोधित दिशा।** कस्टम-डोमेन होस्टिंग को Vercel-प्रबंधित डोमेन पर स्थानांतरित करने की एक पूर्व योजना को **रद्द कर दिया गया**, और सभी Vercel डोमेन-पंजीकरण कोड (`VercelHelper`, इसके `vercelToken`/`vercelProjectId`/`vercelTeamId` env वार, SSM पैरामीटर, और स्वास्थ्य प्रविष्टियां) Api से हटा दी गई थीं। स्व-प्रबंधित **Caddy प्रॉक्सी EC2 पर रहता है** स्थायी कस्टम-डोमेन किनारे के रूप में। केवल शेष काम आंतरिक है: Caddy के *रनटाइम* admin-API कॉन्फ़िगरेशन को *स्थिर* कॉन्फ़िग के लिए स्वैप करना जो पुनरारंभ को जीवित करता है।
+**दिशा 2026-07-02 को संशोधित।** custom-domain hosting को Vercel-managed domains पर ले जाने की पहले की योजना **रद्द** कर दी गई थी, और सभी Vercel domain-registration code (`VercelHelper`, उसके `vercelToken`/`vercelProjectId`/`vercelTeamId` env vars, SSM params, और health entries) Api से हटा दिए गए थे। EC2 पर self-managed **Caddy proxy स्थायी custom-domain edge के रूप में रहता है**। केवल शेष काम आंतरिक है: Caddy की *runtime* admin-API configuration को एक *static* config से बदलना जो restarts के बाद भी बची रहे।
 :::
 
-### किनारा
+### Edge
 
-हर कस्टम चर्च डोमेन DNS को एक EC2 बॉक्स पर इंगित करता है — `3.23.251.61`, `proxy.b1.church` के रूप में भी पहुंचा जा सकता है। B1Admin की Settings→Domains स्क्रीन चर्चों को एक एपेक्स `A → 3.23.251.61` या एक `CNAME → proxy.b1.church` जोड़ने के लिए निर्देश देता है। Caddy एक प्रति-डोमेन Let's Encrypt प्रमाणपत्र के साथ TLS को समाप्त करता है, `Host` हेडर को डोमेन के `{sub}.b1.church` अपस्ट्रीम में फिर से लिखता है, और B1App को उलट-प्रॉक्सी करता है — जो तब इसे होस्ट लेबल द्वारा किसी भी मूल सबडोमेन की तरह राउट करता है ([कस्टम डोमेन](#कस्टम-डोमेन) ऊपर देखें)।
+हर custom church domain DNS में एक EC2 box की ओर इशारा करता है — `3.23.251.61`, जो `proxy.b1.church` के रूप में भी पहुंचा जा सकता है। B1Admin की Settings→Domains स्क्रीन चर्चों को निर्देश देती है कि apex `A → 3.23.251.61` या `CNAME → proxy.b1.church` जोड़ें। Caddy एक per-domain Let's Encrypt cert से TLS terminate करता है, domain के `{sub}.b1.church` upstream पर `Host` header rewrite करता है, और B1App को reverse-proxy करता है — जो फिर उसे किसी भी native subdomain की तरह host label से route करता है (ऊपर [Custom domains](#custom-domains) देखें)।
 
-अपस्ट्रीम मैपिंग `DomainRepo.loadPairs` से आती है, जिसका डायल **असाइन किए गए साइट के सबडोमेन को COALESCE करता है** तो एक डोमेन सही *द्वितीयक* साइट को प्रॉक्सी करता है, चर्च के प्राथमिक में वापस गिरता है:
+Upstream mapping `DomainRepo.loadPairs` से आता है, जिसका dial **assigned site के subdomain को COALESCE** करता है, ताकि एक domain सही *secondary* site को proxy करे, और primary चर्च पर fallback करे:
 
 ```sql
 CONCAT(COALESCE(NULLIF(s.subDomain,''), c.subDomain), '.b1.church:443')  AS dial
 WHERE d.domainName NOT LIKE '%www.%'
 ```
 
-`www.*` पंक्तियों को मानचित्र से बाहर रखा जाता है; Caddy को `www.{host}` एक `302` पुनर्निर्देश एपेक्स को परोसता है।
+`www.*` rows map से बाहर रखी जाती हैं; Caddy `www.{host}` को apex की ओर `302` redirect से serve करता है।
 
-### दो गुमनाम एंडपॉइंट किनारे को खिलाते हैं
+### Edge को फीड करने वाले दो गुमनाम endpoints
 
-`DomainController` दो गुमनाम, पढ़ने-केवल एंडपॉइंट को उजागर करता है जो बॉक्स सीधे खपत करता है — गुमनामी द्वारा आवश्यक, चूंकि किनारा किसी भी चर्च संदर्भ से पहले उन्हें पूछताछ करता है:
+`DomainController` दो unauthenticated, read-only endpoints expose करता है जिन्हें box सीधे उपयोग करता है — गुमनाम इसलिए क्योंकि edge किसी चर्च context के मौजूद होने से पहले ही उन्हें query करता है:
 
-| एंडपॉइंट | लौटाता | भूमिका |
+| Endpoint | लौटाता है | भूमिका |
 |----------|---------|------|
-| `GET /membership/domains/authorize?domain=` | `200` यदि डोमेन — या, एक `www.` मिस के लिए, इसका नंगा एपेक्स — `domains` में मौजूद है; `404` अन्यथा (खाली `domain` सहित) | Caddy का **ऑन-डिमांड-TLS `ask`**: दुरुपयोग नियंत्रण एक आने वाली SNI के लिए प्रमाणपत्र जारी करने का फैसला |
-| `GET /membership/domains/hostmap` | `text/plain`, एक सॉर्ट किया गया `{domain} {sub}.b1.church` लाइन प्रति राउटेबल डोमेन | होस्ट→अपस्ट्रीम मानचित्र फाइल जो बॉक्स एक टाइमर पर ताज़ा करता है |
+| `GET /membership/domains/authorize?domain=` | `200` यदि domain — या, `www.` miss के लिए, उसका bare apex — `domains` में मौजूद है; अन्यथा `404` (खाली `domain` सहित) | Caddy का **on-demand-TLS `ask`**: दुरुपयोग नियंत्रण, यह तय करना कि आने वाले SNI के लिए cert जारी करना है या नहीं |
+| `GET /membership/domains/hostmap` | `text/plain`, हर routable domain के लिए एक sorted `{domain} {sub}.b1.church` line | host→upstream map file जिसे box एक timer पर refresh करता है |
 
-`authorize` `DomainRepo.loadByName` को पुनर्व्यवहार करता है (सटीक होस्ट, फिर एक एकल `www.`→apex फिर से कोशिश); `hostmap` `loadPairs` को पुनर्व्यवहार करता है — तो यह साइट-जागरूक है और `www.*`-बाहर रखा गया है, प्रॉक्सी मार्गों के समान — और बस `:443` प्रत्यय को पट्टी करता है।
+`authorize` `DomainRepo.loadByName` को पुनः उपयोग करता है (exact host, फिर एक `www.`→apex retry); `hostmap` `loadPairs` को पुनः उपयोग करता है — इसलिए यह site-aware और `www.*`-excluded है, proxy routes के समान — और केवल `:443` suffix हटाता है।
 
-### डोमेन सेव/हटाएं — एक सर्वश्रेष्ठ-प्रयास धक्का
+### Domain save/delete — एक best-effort push
 
-`DomainController.save` `domains` पंक्तियों को लिखता है और फिर एक **एकल सर्वश्रेष्ठ-प्रयास** `CaddyHelper.updateCaddy()` कॉल करता है, एक `try/catch` में लपेटा गया जो लॉग करता है (`console.error`) और निगल जाता है; `delete` एक ही काम करता है (जो एक पूर्व stale-route-on-delete बग को भी ठीक करता है), जैसा कि द्वितीयक-साइट विलोपन करता है (`SiteController.delete`)। `updateCaddy` खुद एक **10s** Axios टाइमआउट द्वारा सीमित है, तो एक अपहुंच या बंद Caddy कभी भी एक डोमेन सेव को `500` नहीं कर सकता — `domains` तालिका सच का स्रोत है।
+`DomainController.save` `domains` rows लिखता है और फिर एक **single best-effort** `CaddyHelper.updateCaddy()` call करता है, जो एक `try/catch` में लिपटा होता है जो log करता (`console.error`) और निगल जाता है; `delete` भी यही करता है (जिससे पहले का stale-route-on-delete bug भी ठीक हुआ), जैसे secondary-site deletion (`SiteController.delete`) करता है। `updateCaddy` स्वयं एक **10s** Axios timeout से बंधा है, इसलिए एक unreachable या बंद Caddy कभी domain save को `500` नहीं कर सकता — `domains` table ही source of truth है।
 
-### वर्तमान स्थिति — स्टेटिक कॉन्फ़िग, कोई रनटाइम स्थिति नहीं
+### वर्तमान स्थिति — static config, कोई runtime state नहीं
 
-बॉक्स (स्थायी Elastic IP के पीछे Windows EC2) एक **स्थिर Caddyfile** से Caddy चलाता है: ऑन-डिमांड TLS जिसका `ask` `/membership/domains/authorize` को इंगित करता है, प्लस एक होस्ट→अपस्ट्रीम मानचित्र फाइल जो `/membership/domains/hostmap` से हर 5 मिनट एक शेड्यूल किए गए कार्य द्वारा ताज़ा की जाती है जो एक graceful `caddy reload` में समाप्त होती है। कॉन्फ़िग पुनरारंभ के साथ शून्य रनटाइम स्थिति को जीवित करता है — कोई पुनः-प्राइमिंग नृत्य नहीं — और एक अज्ञात SNI को **TLS-अस्वीकार** किया जाता है (कोई प्रमाणपत्र एक होस्ट के लिए नहीं टकसाल किया जाता है जो `authorize` को अस्वीकार करता है), जबकि एक अधिकृत-लेकिन-अभी तक-अनमैप्ड होस्ट (एक सिंक विंडो के अंदर ब्रांड-नई डोमेन) एक साफ 404 मिलता है। नई डोमेन एक सेव के ~5 मिनट के भीतर राउटेबल हो जाते हैं; उनके प्रमाणपत्र पहली हिट पर टकसाल किए जाते हैं। निर्माण/सेटअप, संचालन, और फील्ड-परीक्षित समस्याएं: [Caddy Custom-Domain Proxy](../deployment/caddy-proxy)।
+Box (स्थायी Elastic IP के पीछे Windows EC2) एक **static Caddyfile** से Caddy चलाता है: on-demand TLS जिसका `ask` `/membership/domains/authorize` की ओर इशारा करता है, साथ में एक host→upstream map file जो हर 5 मिनट में `/membership/domains/hostmap` से एक scheduled task द्वारा refresh होती है, जो graceful `caddy reload` पर समाप्त होता है। Config restarts के बाद भी बचा रहता है और शून्य runtime state है — कोई re-priming नहीं — और एक अज्ञात SNI **TLS-refused** होता है (ऐसे host के लिए कोई cert नहीं बनता जिसे `authorize` reject करे), जबकि एक authorized-but-not-yet-mapped host (sync window के अंदर नया domain) को साफ 404 मिलता है। नए domains एक save के लगभग 5 मिनट के भीतर routable हो जाते हैं; उनके certificates पहली hit पर बनते हैं। Build/setup, operations, और field-tested gotchas: [Caddy Custom-Domain Proxy](../deployment/caddy-proxy)।
 
-### विरासत रनटाइम धक्का — रोलबैक पथ, विलोपन लंबित
+### Legacy runtime push — rollback path, deletion के लिए लंबित
 
-`CaddyHelper` (सदस्यता मॉड्यूल) अभी भी `caddyHost:caddyPort` पर अपने **admin API** के माध्यम से Caddy को चलाई सकता है (SSM `caddyHost`/`caddyPort`; अनसेट होने पर नो-ऑप; `ServerHealthController` के integrations समूह के तहत सतह किया गया): `updateCaddy()` एक पूर्ण मार्गों सरणी को PATCH करता है, और `initializeCaddy()` + `GET /membership/domains/caddy/init` / `GET /membership/domains/caddy` एंडपॉइंट एक रनटाइम-कॉन्फ़िगर सर्वर को खरोंच से पुनर्निर्माण करते हैं। उस मोड का कॉन्फ़िग केवल Caddy की मेमोरी में रहता था — इस आर्किटेक्चर ने प्रतिस्थापित किया गया पुनरारंभ-amnesia। मशीनरी केवल रोलबैक पथ के रूप में रहती है और विलोपन के लिए शेड्यूल किया गया है एक बार स्थिर बॉक्स स्थिर हो गया है; डोमेन सेव/हटाने पर सर्वश्रेष्ठ-प्रयास `updateCaddy()` धक्का स्थिर बॉक्स के विरुद्ध एक हानिरहित नो-ऑप है (इसका admin API केवल localhost है)।
+`CaddyHelper` (membership module) अभी भी Caddy को अपनी **admin API** के माध्यम से `caddyHost:caddyPort` पर चला सकता है (SSM `caddyHost`/`caddyPort`; सेट न होने पर no-op; `ServerHealthController` के Integrations group के अंतर्गत दिखता है): `updateCaddy()` एक पूरा routes array PATCH करता है, और `initializeCaddy()` + `GET /membership/domains/caddy/init` / `GET /membership/domains/caddy` endpoints runtime-configured server को शुरू से बनाते हैं। उस mode की config केवल Caddy की memory में रहती थी — वही restart-amnesia जिसे यह architecture बदल रही है। यह machinery केवल rollback path के रूप में बची है और static box के स्थिर होने के बाद हटाने के लिए तय है; domain save/delete पर best-effort `updateCaddy()` push static box पर एक हानिरहित no-op है (इसकी admin API केवल localhost पर है)।
 
-## संबंधित पृष्ठ
+## संबंधित पेज
 
-- [Caddy Custom-Domain Proxy](../deployment/caddy-proxy) — किनारे का बॉक्स खुद: ताज़ा-बॉक्स सेटअप, WinSW सेवा, मानचित्र सिंक कार्य, और परिचालन समस्याएं
-- [Website Builder](./website-builder) — पेज/सेक्शन/एलिमेंट ट्री, रेंडरर, ब्लॉग, SEO, और AI जनरेशन (क्या प्रस्तुत होता है एक अनुरोध को एक चर्च/साइट के लिए हल करने के बाद)
-- [Content Endpoints](../api/endpoints/content) — पृष्ठ, ब्लॉक, लिंक, और वैश्विक शैलियों के लिए REST सतह, सभी अब `?siteId=`-जागरूक
-- [B1App](../web-apps/b1-app) — Next.js ऐप जो मिडलवेयर और `[sdSlug]` राउटिंग को होस्ट करता है
-- [Web App Deployment](../deployment/web-apps) — कैसे B1App को Vercel पर तैनात किया जाता है
+- [Caddy Custom-Domain Proxy](../deployment/caddy-proxy) — edge box स्वयं: नए box का setup, WinSW service, map sync task, और operational gotchas
+- [Website Builder](./website-builder) — page/section/element tree, renderers, blog, SEO, और AI generation (जो रेंडर होता है जब request किसी चर्च/site पर resolve हो जाता है)
+- [Content Endpoints](../api/endpoints/content) — pages, blocks, links, और global styles के लिए REST surface, जो अब सभी `?siteId=`-aware हैं
+- [B1App](../web-apps/b1-app) — Next.js app जो middleware और `[sdSlug]` routing होस्ट करता है
+- [Web App Deployment](../deployment/web-apps) — B1App को Vercel पर कैसे deploy किया जाता है

@@ -1,121 +1,121 @@
 ---
-title: "Gruppenbeitrittanfragen"
+title: "Beitrittsanfragen für Gruppen"
 ---
 
-# Gruppenbeitrittanfragen
+# Beitrittsanfragen für Gruppen
 
 <div class="article-intro">
 
-Wenn eine Gruppe mit einer genehmigungsbasierten Beitrittrichtlinie konfiguriert ist, können Personen Anträge zum Beitreten einreichen. Gruppenleiter und Administratoren überprüfen diese Anfragen und genehmigen oder lehnen sie ab. Dies gibt Ihrer Kirche die Kontrolle über die Gruppenmitgliedschaft, während es für Personen einfach ist, ihr Interesse am Beitreten auszudrücken.
+Ist eine Gruppe mit einer genehmigungspflichtigen Beitrittsregel konfiguriert, können Personen Beitrittsanfragen stellen. Gruppenleiter und Administratoren prüfen diese Anfragen und genehmigen oder lehnen sie ab. So behält Ihre Kirche die Kontrolle über die Gruppenmitgliedschaft, während es Personen leicht gemacht wird, ihr Interesse an einer Teilnahme zu zeigen.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie benötigen Berechtigung zum Verwalten von Gruppen oder Sie müssen Leiter der spezifischen Gruppe sein. Siehe [Roles & Permissions](../people/roles-permissions.md) für Details.
-- Die Gruppe muss ihre Beitrittrichtlinie auf **Request** (Genehmigung erforderlich) gesetzt haben. Siehe [Creating Groups](./creating-groups.md) zum Konfigurieren von Beitrittrichtlinien.
+- Sie benötigen die Berechtigung, Gruppen zu verwalten, oder Sie müssen Leiter der jeweiligen Gruppe sein. Details finden Sie unter [Rollen & Berechtigungen](../people/roles-permissions.md).
+- Die Gruppe muss ihre Beitrittsregel auf **Anfrage** (Genehmigung erforderlich) gesetzt haben. Wie Sie Beitrittsregeln konfigurieren, erfahren Sie unter [Gruppen erstellen](./creating-groups.md).
 
 </div>
 
-## Beitrittrichtlinien verstehen
+## Beitrittsregeln verstehen
 
-Gruppen können drei verschiedene Beitrittrichtlinien haben:
+Gruppen können drei verschiedene Beitrittsregeln haben:
 
-- **Open** (Offen) -- Jeder kann sofort beitreten, ohne genehmigt zu werden
-- **Request** (Anfrage) -- Personen reichen eine Beitrittanfrage ein, die genehmigt werden muss
-- **Closed** (Geschlossen) -- Niemand kann zum Beitreten anfragen (Mitglieder müssen manuell hinzugefügt werden)
+- **Offen** -- Jeder kann sofort ohne Genehmigung beitreten
+- **Anfrage** -- Personen stellen eine Beitrittsanfrage, die genehmigt werden muss
+- **Geschlossen** -- Niemand kann eine Teilnahme anfragen (Mitglieder müssen manuell hinzugefügt werden)
 
-Wenn eine Gruppe die Richtlinie **Request** (Anfrage) verwendet, gehen alle Beitrittversuche durch den auf dieser Seite beschriebenen Genehmigungsworkflow.
+Verwendet eine Gruppe die Regel **Anfrage**, laufen alle Beitrittsversuche über den auf dieser Seite beschriebenen Genehmigungsablauf.
 
-## Anzeigen ausstehender Anfragen
+## Ausstehende Anfragen anzeigen
 
 ### Für Gruppenleiter
 
-1. Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) und wählen Sie **People > Groups** (Personen > Gruppen)
-2. Klicken Sie auf den Gruppennamen
-3. Im Bereich **Members** (Mitglieder) wird angezeigt, wie viele Anfragen ausstehen. Klicken Sie auf **All members** (Alle Mitglieder) – ausstehende Anfragen für diese Gruppe werden oben in der Mitgliederliste angezeigt
+1. Öffnen Sie in B1 Admin das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) und wählen Sie **Personen > Gruppen**
+2. Klicken Sie auf den Namen der Gruppe
+3. Der Abschnitt **Mitglieder** zeigt, wie viele Anfragen ausstehen. Klicken Sie auf **Alle Mitglieder** -- ausstehende Anfragen für diese Gruppe erscheinen oben in der Mitgliederliste
 
 ### Für Administratoren
 
-Administratoren mit Gruppenverwaltungsberechtigungen können ausstehende Anfragen über alle Gruppen hinweg anzeigen:
+Administratoren mit Berechtigung zur Gruppenverwaltung können ausstehende Anfragen über alle Gruppen hinweg einsehen:
 
-1. Wählen Sie im Jump-Menü **People > Groups** (Personen > Gruppen)
-2. Klicken Sie auf die Schaltfläche **pending requests** (ausstehende Anfragen) in der Seitenkopfzeile (z. B. "3 pending requests" (3 ausstehende Anfragen)). Sie wird nur angezeigt, wenn Anfragen ausstehend sind.
-3. Überprüfen Sie alle ausstehenden Anfragen kirchenweit
+1. Wählen Sie im Sprungmenü **Personen > Gruppen**
+2. Klicken Sie im Seitenkopf auf die Schaltfläche **ausstehende Anfragen** (zum Beispiel „3 ausstehende Anfragen“). Sie erscheint nur, wenn Anfragen warten.
+3. Prüfen Sie alle ausstehenden Anfragen kirchenweit
 
-## Überprüfen einer Beitrittanfrage
+## Eine Beitrittsanfrage prüfen
 
-Jede Beitrittanfrage zeigt:
+Jede Beitrittsanfrage zeigt:
 
-- **Name und Foto der Person** – Die Person, die dem Beitritt anfordert
-- **Optionale Nachricht** – Eine persönliche Nachricht, die erklärt, warum sie beitreten möchte (falls vorhanden)
-- **Anfragedatum** – Wann die Anfrage eingereicht wurde
+- **Name und Foto der Person** -- Die Person, die beitreten möchte
+- **Optionale Nachricht** -- Eine persönliche Nachricht, warum die Person beitreten möchte (falls angegeben)
+- **Datum der Anfrage** -- Wann die Anfrage gestellt wurde
 
-So überprüfen Sie eine Anfrage:
+So prüfen Sie eine Anfrage:
 
-1. Lesen Sie die Nachricht der Person, falls vorhanden
-2. Klicken Sie auf den Namen der Person, um ihr Profil zu überprüfen, falls erforderlich
+1. Lesen Sie die Nachricht der Person, falls sie eine angegeben hat
+2. Klicken Sie bei Bedarf auf den Namen der Person, um ihr Profil anzuzeigen
 3. Entscheiden Sie, ob Sie genehmigen oder ablehnen
 
-## Genehmigung einer Anfrage
+## Eine Anfrage genehmigen
 
-1. Klicken Sie auf **Approve** (Genehmigen) in der Beitrittanfrage
+1. Klicken Sie bei der Beitrittsanfrage auf **Genehmigen**
 2. Die Person wird sofort als Mitglied zur Gruppe hinzugefügt
-3. Der Anfragensteller erhält eine Benachrichtigung, dass seine Anfrage genehmigt wurde
+3. Die anfragende Person erhält eine Benachrichtigung, dass ihre Anfrage genehmigt wurde
 4. Die Anfrage wird im System als genehmigt markiert
 
 :::tip
-Wenn Sie eine Anfrage genehmigen, wird die Person ein reguläres Gruppenmitglied. Sie können sie später von der Seite [Group Members](./group-members.md) aus zum Gruppenleiter befördern, falls erforderlich.
+Wenn Sie eine Anfrage genehmigen, wird die Person ein regulär Mitglied der Gruppe. Sie können sie bei Bedarf später über die Seite [Gruppenmitglieder](./group-members.md) zum Gruppenleiter befördern.
 :::
 
-## Ablehnen einer Anfrage
+## Eine Anfrage ablehnen
 
-1. Klicken Sie auf **Decline** (Ablehnen) in der Beitrittanfrage
-2. Geben Sie optional einen Grund für die Ablehnung ein (bis zu 500 Zeichen)
-3. Klicken Sie auf **Confirm** (Bestätigen)
-4. Der Anfragensteller erhält eine Benachrichtigung mit Ihrem Ablehnungsgrund (falls vorhanden)
+1. Klicken Sie bei der Beitrittsanfrage auf **Ablehnen**
+2. Geben Sie optional einen Grund für die Ablehnung an (bis zu 500 Zeichen)
+3. Klicken Sie auf **Bestätigen**
+4. Die anfragende Person erhält eine Benachrichtigung mit Ihrem Ablehnungsgrund (falls angegeben)
 5. Die Anfrage wird als abgelehnt markiert
 
 :::info
-Die Angabe eines Ablehnungsgrundes hilft der Person zu verstehen, warum ihre Anfrage nicht genehmigt wurde, und kann sie dazu ermutigen, es später erneut zu versuchen oder andere Gruppen zu erkunden.
+Ein Ablehnungsgrund hilft der Person zu verstehen, warum ihre Anfrage nicht genehmigt wurde, und kann sie ermutigen, es später erneut zu versuchen oder andere Gruppen zu entdecken.
 :::
 
-## Genehmigung von der Seite "Aufgaben"
+## Über die Aufgabenseite genehmigen {#approving-from-the-tasks-page}
 
-Jede Beitrittanfrage erstellt auch eine Aufgabe unter **Serving → My Work** (Dienen → Meine Arbeit) mit dem Titel "*Person* requested to join *Group*" (*Person* fordert zum Beitreten zu *Gruppe* an). Sie wird den Leitern der Gruppe zugewiesen. Wenn die Gruppe noch keinen Leiter hat, geht sie an jeden Mitarbeiter mit der Berechtigung **Group Members > Edit** (Gruppenmitglieder > Bearbeiten) oder an die Domain-Administratoren Ihrer Kirche, wenn niemand diese Berechtigung hat. Mitarbeiter und Administratoren, die die Aufgabe auf diese Weise erhalten, erhalten auch eine Benachrichtigung, die direkt darauf verweist.
+Jede Beitrittsanfrage erzeugt außerdem eine Aufgabe unter **Dienst &rarr; Meine Arbeit** mit dem Titel „*Person* möchte *Gruppe* beitreten.“ Sie wird den Leitern der Gruppe zugewiesen. Hat die Gruppe noch keinen Leiter, geht sie an Mitarbeiter mit der Berechtigung **Gruppenmitglieder > Bearbeiten** oder, falls niemand diese Berechtigung hat, an die Domain-Administratoren Ihrer Kirche. Mitarbeiter und Administratoren, die die Aufgabe so erhalten, bekommen zusätzlich eine Benachrichtigung, die direkt dorthin führt.
 
-Wenn Sie die Aufgabe öffnen, werden der Name des Anfragenstellers, die Gruppe und seine optionale Nachricht mit den Schaltflächen **Approve** (Genehmigen) und **Decline** (Ablehnen) direkt auf der Aufgabenkarte angezeigt (Ablehnen öffnet das gleiche optionale Grundfeld wie oben beschrieben). Dies gibt Leitern eine zweite, benachrichtigungsgesteuerte Möglichkeit, auf eine Anfrage zu reagieren, ohne die Mitgliederliste der Gruppe öffnen zu müssen.
+Wenn Sie die Aufgabe öffnen, sehen Sie den Namen der anfragenden Person, die Gruppe und ihre optionale Nachricht, mit den Schaltflächen **Genehmigen** und **Ablehnen** direkt auf der Aufgabenkarte (Ablehnen öffnet dasselbe optionale Begründungsfeld wie oben). So können Leiter eine Anfrage auch über eine benachrichtigungsgesteuerte Route bearbeiten, ohne die Mitgliederliste der Gruppe öffnen zu müssen.
 
-Wenn Sie eine Anfrage von beiden Stellen entscheiden – der Mitgliederliste der Gruppe oder ihrer Aufgabenkarte – wird sie überall geschlossen, sodass Anführer nie eine veraltete Aufgabe für eine Anfrage sehen, die jemand anderes bereits behandelt hat.
+Wenn eine Anfrage entweder über die Mitgliederliste der Gruppe oder die Aufgabenkarte entschieden wird, wird sie überall geschlossen. Leiter sehen so nie eine veraltete Aufgabe zu einer Anfrage, die bereits bearbeitet wurde.
 
 ## Benachrichtigungen
 
-Das System der Beitrittanfrage sendet automatisch Benachrichtigungen:
+Das System für Beitrittsanfragen sendet automatisch Benachrichtigungen:
 
-- **Wenn eine Anfrage eingereicht wird** – Alle Gruppenleiter erhalten eine Benachrichtigung. Wenn die Gruppe keinen Leiter hat, werden stattdessen der Mitarbeiter oder die Administratoren benachrichtigt, die der Aufgabe zugewiesen sind (siehe oben).
-- **Wenn eine Anfrage genehmigt wird** – Der Anfragensteller erhält eine Bestätigung
-- **Wenn eine Anfrage abgelehnt wird** – Der Anfragensteller erhält eine Benachrichtigung mit einem beliebigen Ablehnungsgrund
+- **Wenn eine Anfrage gestellt wird** -- Alle Gruppenleiter erhalten eine Benachrichtigung. Hat die Gruppe keinen Leiter, werden stattdessen die Mitarbeiter oder Administratoren benachrichtigt, denen die Aufgabe zugewiesen ist (siehe oben).
+- **Wenn eine Anfrage genehmigt wird** -- Die anfragende Person erhält eine Bestätigung
+- **Wenn eine Anfrage abgelehnt wird** -- Die anfragende Person erhält eine Benachrichtigung mit dem gegebenenfalls angegebenen Ablehnungsgrund
 
-Benachrichtigungen werden im Benachrichtigungszentrum des Benutzers auf B1.church und in der mobilen App angezeigt.
+Benachrichtigungen erscheinen im Benachrichtigungszentrum des Benutzers auf B1.church und in der mobilen App. Wenn Sie in B1 Admin in der Benachrichtigungsglocke auf eine Benachrichtigung zu einer Beitrittsanfrage (oder auf **Details anzeigen**) klicken, öffnet sich die Gruppe auf der B1.church-Website Ihrer Kirche in einem neuen Tab.
 
-## Verwalten von Anfragen von der Mitgliedsseite
+## Anfragen aus Sicht der Mitglieder verwalten
 
-Personen können ihre eigenen Beitrittanfragen von B1.church aus verwalten:
+Personen können ihre eigenen Beitrittsanfragen auf B1.church verwalten:
 
-- Zeigen Sie den Status ihrer ausstehenden Anfragen auf der Gruppenseite an
-- Brechen Sie eine ausstehende Anfrage ab, wenn Sie sich anders entscheiden
-- Sehen Sie, ob Ihre Anfrage genehmigt oder abgelehnt wurde
+- Den Status ihrer ausstehenden Anfragen auf der Detailseite der Gruppe einsehen
+- Eine ausstehende Anfrage zurückziehen, wenn sie es sich anders überlegen
+- Sehen, ob ihre Anfrage genehmigt oder abgelehnt wurde
 
-## Best Practices
+## Bewährte Vorgehensweisen
 
-- **Antwort pünktlich** – Versuchen Sie, Anfragen innerhalb von 24-48 Stunden zu überprüfen, damit Personen nicht warten müssen
-- **Seien Sie klar bei Ablehnungsgründen** – Helfen Sie Personen zu verstehen, welche nächsten Schritte oder Alternativen es gibt
-- **Überprüfen Sie Profile** – Überprüfen Sie das Profil der Person, um zu sehen, ob sie eine gute Wahl für die Gruppe ist
-- **Kommunizieren Sie Erwartungen** – Stellen Sie sicher, dass die Beschreibung Ihrer Gruppe klar angibt, für wen die Gruppe bestimmt ist
+- **Zügig reagieren** -- Versuchen Sie, Anfragen innerhalb von 24 bis 48 Stunden zu prüfen, damit Personen nicht unnötig warten
+- **Klar begründen** -- Helfen Sie Personen, die nächsten Schritte oder Alternativen zu verstehen
+- **Profile prüfen** -- Sehen Sie sich das Profil der Person an, um festzustellen, ob sie zur Gruppe passt
+- **Erwartungen kommunizieren** -- Stellen Sie sicher, dass Ihre Gruppenbeschreibung klar angibt, für wen die Gruppe gedacht ist
 
 ## Verwandte Artikel
 
-- [Creating Groups](./creating-groups.md) (Gruppen erstellen) – Erfahren Sie, wie Sie Gruppen einrichten und Beitrittrichtlinien konfigurieren
-- [Group Members](./group-members.md) (Gruppenmitglieder) – Verwalten Sie vorhandene Gruppenmitglieder
-- [Group Calendar](./group-calendar.md) (Gruppenkalender) – Planen Sie Gruppentreffen und Veranstaltungen
+- [Gruppen erstellen](./creating-groups.md) -- Erfahren Sie, wie Sie Gruppen einrichten und Beitrittsregeln konfigurieren
+- [Gruppenmitglieder](./group-members.md) -- Bestehende Gruppenmitglieder verwalten
+- [Gruppenkalender](./group-calendar.md) -- Gruppentreffen und Veranstaltungen planen

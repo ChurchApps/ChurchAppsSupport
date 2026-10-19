@@ -1,73 +1,65 @@
 ---
-title: "Jumeler votre appareil"
+title: "Coupler votre appareil"
 ---
 
-# Jumeler votre appareil
+# Coupler votre appareil
 
 <div class="article-intro">
 
-Pour utiliser le mode Plan, vous devez jumeler votre TV avec un type de plan dans B1 Admin. FreePlay génère un code de jumelage unique qui lie l'appareil au plan de votre église, permettant la livraison automatique de contenu chaque semaine.
+Pour utiliser le mode Plan, vous couplez votre téléviseur à un type de plan dans B1 Admin. FreePlay affiche un court code de couplage sur le téléviseur. Vous saisissez ce code dans B1 Admin et choisissez le type de plan à suivre ; le téléviseur reçoit alors automatiquement le contenu de ce plan chaque semaine.
 
 </div>
 
 <div class="prereqs">
-<h4>Avant de commencer</h4>
+<h4>Before You Begin</h4>
 
-- Installez et lancez FreePlay -- voir [Bien démarrer](../getting-started/)
-- Choisissez **Jumeler à un plan** depuis l'[écran du mode de jumelage](../getting-started/pairing-modes.md)
-- Ayez accès à **B1 Admin** sur un ordinateur ou un téléphone pour terminer le jumelage
+- Installez et lancez FreePlay. Voir [Démarrer](../getting-started/)
+- Ayez accès à **B1 Admin** sur un ordinateur ou un téléphone pour effectuer le couplage
 
 </div>
 
-## Génération du code de jumelage
+## Générer le code de couplage
 
-1. Depuis l'écran **Sélectionner le mode de jumelage**, choisissez **Jumeler à un plan**
-2. FreePlay contacte le serveur et génère un code de jumelage court
-3. Le code apparaît en gros caractères au centre de l'écran
-4. Sous le code, un indicateur clignotant affiche **En attente de connexion**
+1. Sur le téléviseur, ouvrez **Paramètres** en bas de la barre latérale.
+2. Sélectionnez **Coupler à un calendrier**.
+3. FreePlay affiche un code de couplage de quatre lettres en gros caractères, à côté d'un code QR.
+4. Sous le code, un indicateur **En attente de confirmation** clignotant indique que FreePlay attend que vous terminiez le couplage.
 
-Le code est affiché sous forme de caractères individuels pour faciliter la lecture depuis l'autre bout de la pièce.
+Le même code fonctionne pour le [mode programmé](../scheduled-mode/) dans FreePlay Admin et pour le mode Plan dans B1 Admin. Le code QR et l'adresse **freeplay.church/pair** affichés à l'écran ouvrent FreePlay Admin. Pour le mode Plan, ignorez-les et saisissez le code dans B1 Admin comme décrit ci-dessous.
 
 ## Saisir le code dans B1 Admin
 
-1. Sur un ordinateur ou un téléphone, accédez à l'adresse affichée sous le code sur la TV (ou scannez le code QR à l'écran) — cela ouvre la page **Autoriser l'appareil** dans B1 Admin
-2. Saisissez le code de jumelage s'il n'a pas déjà été rempli à partir du code QR
-3. Sous **Afficher les plans pour**, choisissez le type de plan que cet écran doit suivre (par exemple, « Service du dimanche »). Laissez-le sur **Aucun** si vous souhaitez seulement que l'écran soit disponible pour parcourir du contenu ou des notifications, sans plan associé
-4. Approuvez l'appareil
+1. Dans B1 Admin, allez dans **Profil** > **Appareils** et cliquez sur **Ajouter un écran**.
+2. Saisissez les quatre lettres affichées sur le téléviseur dans **Code de couplage**.
+3. Sous **Afficher les plans pour**, choisissez le type de plan que cet écran doit suivre, par exemple « Culte du dimanche ».
+4. Enregistrez.
 
-FreePlay interroge le serveur toutes les quelques secondes pour vérifier si le jumelage est terminé. Une fois que **B1 Admin** confirme la connexion, la TV passe automatiquement à l'écran de téléchargement du plan.
+FreePlay vérifie toutes les quelques secondes si le couplage est terminé. Une fois que B1 Admin l'a confirmé, le téléviseur affiche **Connecté !** et passe à l'écran de téléchargement du plan.
 
-:::tip
-Les appareils peuvent aussi être jumelés depuis **Profil → Appareils → Ajouter un appareil** dans B1 Admin en utilisant le même code — cela propose le même sélecteur de type de plan **Afficher les plans pour**.
-:::
+## Télécharger le contenu du plan
 
-## Téléchargement du contenu du plan
+Après le couplage, FreePlay charge le plan en cours pour ce type de plan. Il affiche :
 
-Après le jumelage, FreePlay charge le plan actuel pour ce type de plan. Il affiche :
-
-- Le nom du plan et la date du service
-- Le nom de la leçon associée (si le plan inclut du contenu de leçon)
+- Le nom du plan et la date du culte
+- Le nom de la leçon, si le plan comprend du contenu de leçon
 - Un indicateur de progression affichant **Téléchargement de l'élément X sur Y**
 
-Une fois tous les fichiers multimédias téléchargés, le bouton **Démarrer le plan** apparaît. Appuyez sur **Sélectionner** sur votre télécommande pour commencer la lecture.
+Lorsque tous les fichiers multimédias sont téléchargés, le bouton **Démarrer le plan** apparaît. Appuyez sur **OK** de votre télécommande pour lancer la diffusion.
 
 :::tip
-Le plan se rafraîchit automatiquement toutes les heures. Si le plan est mis à jour au cours de la journée, FreePlay récupère les changements sans intervention manuelle.
+Le plan est actualisé automatiquement toutes les heures. Si quelqu'un met à jour le plan dans la journée, FreePlay récupère les modifications seul.
 :::
 
-## Alternative : rechercher par nom d'église
+## Si le couplage échoue
 
-Si vous préférez ne pas utiliser le flux de code de jumelage, vous pouvez sélectionner **ou rechercher par nom d'église** en bas de l'écran de jumelage. Cela vous amène à l'écran de recherche d'église où vous pouvez trouver votre église et vous connecter à une salle de classe à la place.
-
-## En cas d'échec du jumelage
-
-Si le code de jumelage ne peut pas être généré (par exemple, en raison d'un problème réseau), un message d'erreur apparaît avec un bouton **Réessayer**. Assurez-vous que votre TV est connectée à Internet et réessayez.
+Si FreePlay ne parvient pas à générer un code de couplage (par exemple à cause d'un problème réseau), un message d'erreur s'affiche avec un bouton **Réessayer**. Vérifiez que le téléviseur est connecté à Internet, puis réessayez.
 
 :::warning
-Les codes de jumelage expirent après une période déterminée. Si vous attendez trop longtemps, générez un nouveau code en retournant à l'écran de jumelage.
+Les codes de couplage expirent au bout de 15 minutes. FreePlay affiche automatiquement un nouveau code lorsque l'ancien expire, et vous pouvez sélectionner **Générer un nouveau code** à tout moment. Si le code que vous avez saisi ne fonctionne pas, utilisez celui qui est affiché sur le téléviseur en ce moment.
 :::
 
-## Articles associés
+## Articles connexes
 
-- **[Aperçu du mode Plan](./index.md)** - Comprendre en quoi le mode Plan diffère du mode Salle de classe
-- **[Lecture des leçons](../classroom-mode/playing-lessons)** - Les commandes du lecteur sont les mêmes dans les deux modes
+- **[Vue d'ensemble du mode Plan](./index.md)** -- En quoi le mode Plan diffère du mode programmé
+- **[Coupler un écran](../scheduled-mode/pairing-a-screen)** -- Coupler le même téléviseur à un calendrier dans FreePlay Admin à la place
+- **[Lecture du contenu](../content-providers/playing-content)** -- Commandes du lecteur pour la lecture d'un plan

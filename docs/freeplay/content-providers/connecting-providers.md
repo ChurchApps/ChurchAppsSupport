@@ -39,18 +39,27 @@ Some providers do not require a login. When you select one of these providers, F
 Certain providers use a device flow, similar to how you sign in to streaming apps on a TV:
 
 1. Select the provider card on the **Content Providers** screen
-2. FreePlay displays a QR code and a verification URL
+2. FreePlay shows a **Connect to** screen with the provider's name, a QR code, and a verification URL
 3. Scan the QR code with your phone, or visit the displayed URL on any device
-4. Enter the user code shown on the TV screen
+4. Enter the code shown on the TV screen
 5. Complete the sign-in process on your phone or computer
 6. FreePlay detects the successful login and displays **Connected!**
 7. The content browser opens automatically
 
 :::info
-A pulsing **Waiting for authorization** indicator shows that FreePlay is checking for your login. The code expires after several minutes, so complete the process promptly.
+A pulsing **Waiting for confirmation** indicator shows that FreePlay is checking for your login. The screen shows how many minutes are left before the code expires, so complete the process promptly. Select **Generate New Code** if it runs out.
 :::
 
-**Go Curriculum** uses this same QR-code sign-in pattern -- scan the code and log in with your gocurriculum.com account to connect.
+## Phone Sign-In (QR Code Only)
+
+**Dropbox**, **OneDrive**, and **Go Curriculum** use a slightly different QR-code sign-in, with no code to type:
+
+1. Select the provider card on the **Content Providers** screen
+2. FreePlay shows a **Connect to** screen with the provider's name and a QR code
+3. Scan the QR code with your phone and sign in to your account with that provider (your Microsoft account for OneDrive, or your gocurriculum.com account for Go Curriculum)
+4. Approve access. The TV connects automatically and displays **Connected!**
+
+The screen shows how many minutes you have left to finish signing in.
 
 ## Form Login
 
@@ -64,10 +73,6 @@ Other providers use a traditional email and password login:
 :::tip
 Use the directional pad on your remote to move between the email field, password field, and sign-in button. Press **Select** on a text field to open the on-screen keyboard.
 :::
-
-## Finding a Provider on Your Network
-
-**FreeShow** is found on your local network instead of through a sign-in: FreePlay searches the network, lists each computer running FreeShow that it finds, and connects to the one you select (choose **Scan Again** if none appear).
 
 ## Provider Settings
 

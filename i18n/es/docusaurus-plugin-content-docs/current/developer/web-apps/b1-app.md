@@ -6,20 +6,20 @@ title: "B1App"
 
 <div class="article-intro">
 
-B1App es la aplicación de miembro de iglesia de cara al público construida con Next.js. Proporciona la experiencia del miembro incluyendo perfiles, directorios de grupos, transmisión en directo y páginas de donación.
+B1App es la aplicación pública para los miembros de la iglesia, creada con Next.js. Ofrece la experiencia de miembro, incluidos los perfiles, los directorios de grupos, la transmisión en vivo y las páginas de donación.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de empezar</h4>
 
-- Instalar **Node.js 22+** y **Git** -- ver [Requisitos Previos](../setup/prerequisites)
-- Configurar su objetivo de API (preparación o local) -- ver [Variables de Entorno](../setup/environment-variables)
+- Instala **Node.js 22+** y **Git** -- consulta [Requisitos previos](../setup/prerequisites)
+- Configura el destino de tu API (demo o local) -- consulta [Variables de entorno](../setup/environment-variables)
 
 </div>
 
 :::warning
-B1App requiere Node.js 22 o posterior. Las versiones anteriores no se admiten.
+B1App requiere Node.js 22 o posterior. Las versiones anteriores no son compatibles.
 :::
 
 ## Configuración
@@ -30,20 +30,20 @@ B1App requiere Node.js 22 o posterior. Las versiones anteriores no se admiten.
 git clone https://github.com/ChurchApps/B1App.git
 ```
 
-### 2. Instalar dependencias
+### 2. Instalar las dependencias
 
 ```bash
 cd B1App
 npm install
 ```
 
-### 3. Configurar variables de entorno
+### 3. Configurar las variables de entorno
 
 ```bash
 cp dotenv.sample.txt .env
 ```
 
-Abra `.env` y configure las URL de punto de conexión `NEXT_PUBLIC_*_API`. Estas pueden apuntar a la API de preparación o su instancia de API local.
+Abre `.env` y configura las URL de los endpoints `NEXT_PUBLIC_*_API`. Pueden apuntar a la API de demostración compartida (`https://api.demo.churchapps.org`) o a tu instancia local de la API. El archivo de ejemplo puede seguir mencionando las URL de staging retiradas; reemplázalas.
 
 ### 4. Iniciar el servidor de desarrollo
 
@@ -53,41 +53,41 @@ npm run dev
 
 El servidor de desarrollo de Next.js se inicia en [http://localhost:3301](http://localhost:3301).
 
-## Comandos Clave
+## Comandos principales
 
 | Comando | Descripción |
 |---------|-------------|
-| `npm run dev` | Iniciar servidor de desarrollo de Next.js en puerto 3301 |
-| `npm run build` | Compilación de producción a través de Next.js |
-| `npm run test` | Ejecutar pruebas de extremo a extremo con Playwright |
-| `npm run lint` | Ejecutar linting de Next.js |
+| `npm run dev` | Inicia el servidor de desarrollo de Next.js en el puerto 3301 |
+| `npm run build` | Compilación de producción mediante Next.js |
+| `npm run test` | Ejecuta las pruebas de extremo a extremo con Playwright |
+| `npm run lint` | Ejecuta el linter de Next.js |
 
-## Variables de Entorno Clave
+## Variables de entorno principales
 
 | Variable | Descripción |
 |----------|-------------|
-| `NEXT_PUBLIC_*_API` | URLs de punto de conexión de API para cada módulo |
+| `NEXT_PUBLIC_*_API` | URL de los endpoints de la API para cada módulo |
 
 :::info
-El script `postinstall` copia archivos de configuración regional y CSS de `@churchapps/apphelper`. Si los componentes se ven sin estilos después de instalar, ejecute `npm run postinstall` manualmente.
+El script `postinstall` copia los archivos de idioma y CSS de `@churchapps/apphelper`. Si los componentes se ven sin estilos después de la instalación, ejecuta `npm run postinstall` manualmente.
 :::
 
-## Pila Tecnológica
+## Pila tecnológica
 
 - **Next.js 16** con TypeScript
-- **React 19** para componentes de interfaz de usuario
-- **Material-UI 7** para sistema de diseño
-- **React Query 5** para estado del servidor
-- Paquetes `@churchapps/apphelper*` para componentes compartidos
+- **React 19** para los componentes de la interfaz
+- **Material-UI 7** como sistema de diseño
+- **React Query 5** para el estado del servidor
+- **`@churchapps/apphelper*`** paquetes para los componentes compartidos
 
 ## Despliegue
 
 Las compilaciones de producción se despliegan en **S3 + CloudFront**:
 
-1. `npm run build` genera la compilación de Next.js optimizada
-2. La salida de compilación se sincroniza a un grupo S3
-3. Se activa la invalidación de CloudFront para servir la nueva versión
+1. `npm run build` genera la compilación optimizada de Next.js
+2. La salida de la compilación se sincroniza con un bucket de S3
+3. Se lanza una invalidación de CloudFront para servir la nueva versión
 
 :::tip
-Para instrucciones de despliegue detalladas, ver la guía [Despliegue de Aplicación Web](../deployment/web-apps).
+Para obtener instrucciones detalladas de despliegue, consulta la guía [Despliegue de aplicaciones web](../deployment/web-apps).
 :::

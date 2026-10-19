@@ -15,7 +15,7 @@ B1 Mobile is the primary member-facing mobile app for ChurchApps, built with Rea
 
 - Install **Node.js** and **Expo CLI** -- see [Prerequisites](../setup/prerequisites)
 - Install **Android Studio** (for Android emulator) or **Xcode** (for iOS simulator)
-- Configure your API target (staging or local) -- see [Environment Variables](../setup/environment-variables)
+- Configure your API target (demo or local) -- see [Environment Variables](../setup/environment-variables)
 
 </div>
 

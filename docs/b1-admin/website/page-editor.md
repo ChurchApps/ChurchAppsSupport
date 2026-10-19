@@ -27,7 +27,7 @@ The B1 page editor is a visual drag-and-drop builder that lets you design your c
 The editor opens in full-screen mode. The left panel shows your page structure and available content elements; the center area shows a live preview of your page.
 
 :::info
-The editor always displays in light mode, regardless of your B1 Admin theme setting. This ensures the preview accurately matches how your page will look to website visitors.
+The editor always displays in light mode, regardless of your B1 Admin theme setting, and uses the heading and body fonts you chose in [Appearance](appearance). This ensures the preview accurately matches how your page will look to website visitors.
 :::
 
 ## Page Structure: Sections and Elements
@@ -91,6 +91,19 @@ The **HTML** element has two boxes:
 - **JavaScript (exclude script tag)** -- Script code that runs when the page loads. You can also paste a vendor's embed snippet here with its `<script>` tags included, and it will run on the live site.
 
 If you paste only a web address (such as an image link) into the JavaScript box, the box turns red with the warning *"This is a web address, not JavaScript."* A bare address in that box does nothing. To show a picture, use an **Image** element or put `<img src="...">` in **HTML Content**.
+
+### Using the Calendar element {#using-the-calendar-element}
+
+The **Calendar** element shows events from one of your calendars:
+
+1. Under **Select**, choose **Group Calendar** (one group's events -- the list shows groups you belong to) or **Curated Calendar** (a calendar you built under **Calendars**; see [Curated Calendar](../calendars/curated-calendar)).
+2. Under **Select Calendar**, pick the group or calendar.
+3. Under **Display**, choose how to show it:
+   - **Month calendar** -- A month grid that visitors can page through.
+   - **Upcoming events** -- A grid of tiles for the next 12 upcoming events, with a repeating event shown once on its next date. Each tile shows the event's photo (or its title on your theme's dark color when it has no photo), a date badge, the day and time, and the first line of its description. A **Subscribe** button above the tiles lets visitors copy the calendar's ICS link or download it.
+4. To show only some events, type a tag in **Only events tagged** -- for example, `youth`. Only events whose **Tags** include that word appear. Leave it empty to show every event. Tags are set on each event; see [Adding and Editing Events](../calendars/creating-calendars.md#adding-and-editing-events).
+
+In either display, clicking an event opens its own page on your website. The event page shows the event photo, title, date and time, and description, plus a box with **When** (including the repeat pattern for a recurring event) and **Where** (the rooms booked for it). It also has a **Register for this Event** button when registration is turned on, and an **Add to my calendar** link that downloads the event as a calendar file. The page is set up so search engines can show the event's date and details in their results.
 
 ### Reordering Content
 

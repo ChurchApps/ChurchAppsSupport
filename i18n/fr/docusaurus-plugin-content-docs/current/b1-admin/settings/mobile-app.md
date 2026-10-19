@@ -77,7 +77,7 @@ L'élément **portail des membres** dans la même section Mobile contient les pa
 Parce que la vérification de l'âge minimum dépend des dates de naissance, assurez-vous que les dates de naissance sont remplies pour les enfants de votre congrégation. Ce paramètre appartient à la même famille de contrôles de sécurité des enfants que les [contrôles de sécurité de l'enregistrement](../attendance/checkin-safety.md).
 :::
 
-### Invite de connexion de l'écran d'accueil
+### Invite de connexion de l'écran d'accueil {#home-screen-sign-in-prompt}
 
 Les visiteurs qui ouvrent l'[écran d'accueil](/docs/b1-church/getting-started/navigating#home) de l'application sans se connecter voient une courte invite -- par défaut, *« Connectez-vous pour voir vos groupes, dons et plus »* -- à côté d'un bouton **Se connecter**. Les paramètres **Invite de connexion de l'écran d'accueil** sur la même page du portail des membres (`/mobile/b1-mobile`) vous permettent de la changer :
 

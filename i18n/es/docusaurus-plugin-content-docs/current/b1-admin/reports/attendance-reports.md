@@ -30,7 +30,7 @@ El informe Attendance Trend muestra cómo cambia la asistencia a lo largo del ti
 
 Este informe es útil para detectar patrones como caídas estacionales, tendencias de crecimiento o el impacto de eventos especiales.
 
-## Asistencia de Grupo
+## Asistencia de Grupo {#group-attendance}
 
 El informe Group Attendance muestra quién asistió a cada sesión de grupo en un rango de fechas.
 

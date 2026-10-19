@@ -112,5 +112,5 @@ U kunt het onderstaande bericht gerust rechtstreeks naar uw lesprovider kopiëre
 - [Service Plans](./plans.md)
 - [Serviceorder](./service-order.md)
 - [Lessen aanpassen](/docs/lessons-church/customization/customizing-lessons)
-- [FreePlay -- Lessen afspelen op een klaslokaal-TV](/docs/freeplay/classroom-mode/playing-lessons)
+- [FreePlay -- Lessen afspelen op een klaslokaal-TV](/docs/freeplay/content-providers/playing-content)
 - [Lessons.church Planningsgids](/docs/lessons-church/classrooms/scheduling-lessons)

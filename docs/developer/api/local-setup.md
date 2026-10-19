@@ -80,19 +80,9 @@ The API starts with hot reload at [http://localhost:8084](http://localhost:8084)
 | `npm run test:watch` | Run tests in watch mode |
 | `npm run lint` | Run ESLint with auto-fix (ESLint is the sole formatter) |
 
-## Staging Deployment
+## Deployment
 
-To deploy to the staging environment:
-
-```bash
-npm run deploy-staging
-```
-
-This runs a production build and then deploys via Serverless Framework.
-
-:::warning
-Make sure your AWS credentials are configured before running the deploy command.
-:::
+The staging environment has been retired. The Api deploys to the demo environment on every push to `main` and to production through the manual **Deploy Prod** workflow, which also applies pending database migrations. See [API Deployment](../deployment/apis) for details.
 
 ## Local Library Development
 

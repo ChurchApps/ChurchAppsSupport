@@ -1,69 +1,72 @@
 ---
-title: "Démarrage avec FreePlay"
+title: "Premiers pas"
 ---
 
-# Démarrage avec FreePlay
+# Premiers pas avec FreePlay
 
 <div class="article-intro">
 
-FreePlay est disponible pour Android TV, Amazon Fire TV, et Apple TV. Ce guide vous guide à travers l'installation de l'application, son lancement pour la première fois, et l'apprentissage des contrôles de télécommande TV de base que vous utiliserez partout dans l'application.
+FreePlay est disponible pour Android TV, Amazon Fire TV et Apple TV. Ce guide vous accompagne dans l'installation de l'application, son premier lancement et l'apprentissage des commandes de base de la télécommande du téléviseur, que vous utiliserez tout au long de l'application.
 
 </div>
 
 :::tip Nouveau sur FreePlay ? Commencez ici
-Regardez notre **<a href="/guides/freeplay-quickstart" target="_blank">vidéo de démarrage rapide</a>** — installez FreePlay et commencez à lire du contenu en seulement quelques minutes. Aucune compétence technique requise.
+Regardez notre **<a href="/guides/freeplay-quickstart" target="_blank">vidéo de démarrage rapide</a>** — installez FreePlay et commencez à lire du contenu en quelques minutes. Aucune compétence technique requise.
 :::
 
-:::tip Configuration avec B1 Admin ?
-Notre **<a href="/guides/freeplay-b1admin" target="_blank">guide étape par étape</a>** couvre la configuration complète — de la liaison des fournisseurs de contenu au téléchargement automatique de la bonne leçon chaque semaine sur votre téléviseur de salle de classe.
+:::tip Vous configurez FreePlay avec B1 Admin ?
+Notre **<a href="/guides/freeplay-b1admin" target="_blank">guide pas à pas</a>** couvre l'installation complète — de la liaison des fournisseurs de contenu à la téléchargement automatique de la bonne leçon sur le téléviseur de votre salle de classe chaque semaine.
 :::
 
-## Installation de FreePlay
+## Installer FreePlay
 
 :::tip Vous achetez un appareil ?
-Tous les bâtons de streaming ne peuvent pas exécuter FreePlay — les derniers modèles Fire TV bon marché ne le peuvent pas. Voir **[Choix d'un appareil](./choosing-a-device.md)** pour exactement quoi acheter.
+Toutes les clés de streaming ne peuvent pas faire fonctionner FreePlay — les tout derniers modèles Fire TV économiques ne le peuvent pas. Consultez **[Choisir un appareil](./choosing-a-device.md)** pour savoir exactement quoi acheter.
 :::
 
 ### Android TV / Amazon Fire TV
 
-1. Ouvrez l'app store sur votre téléviseur (**Google Play Store** ou **Amazon Appstore**)
+1. Ouvrez la boutique d'applications de votre téléviseur (**Google Play Store** ou **Amazon Appstore**)
 2. Recherchez **FreePlay**
-3. Sélectionnez l'application et choisissez **Install**
+3. Sélectionnez l'application et choisissez **Installer**
 
 ### Apple TV
 
 1. Ouvrez l'**App Store** sur votre Apple TV
 2. Recherchez **FreePlay**
-3. Sélectionnez l'application et choisissez **Get**
+3. Sélectionnez l'application et choisissez **Obtenir**
 
-## Lancement de l'application
+## Lancer l'application
 
-Quand vous ouvrez FreePlay pour la première fois, vous verrez un écran de démarrage animé avec le logo FreePlay. L'application vérifie s'il y a des fournisseurs de contenu précédemment connectés. Si vous avez déjà connecté un fournisseur, il vous prendra directement au navigateur de contenu de ce fournisseur. Sinon, il ouvrira l'écran **Content Providers** où vous pouvez vous connecter à votre première source de contenu.
+Lorsque vous ouvrez FreePlay pour la première fois, vous voyez un écran de démarrage animé avec le logo de FreePlay. L'application vérifie si des fournisseurs de contenu ont déjà été connectés. Si c'est le cas, elle vous emmène directement vers le navigateur de contenu de ce fournisseur. Sinon, elle ouvre l'écran **Fournisseurs de contenu**, où vous pouvez vous connecter à votre première source de contenu.
 
-## Navigation avec votre télécommande TV
+Si le téléviseur est associé à un calendrier dans le [mode planifié](../scheduled-mode/), FreePlay saute toutes ces étapes et ouvre directement le lecteur planifié.
 
-FreePlay est construit pour les télécommandes TV. Voici les contrôles que vous utiliserez partout dans l'application :
+## Naviguer avec la télécommande du téléviseur
 
-- **Pavé directionnel (haut/bas/gauche/droite)** - Se déplacer entre les articles à l'écran
-- **Bouton Select / OK** - Choisir l'article en surbrillance
-- **Flèche gauche** - Ouvrir la barre latérale à partir de n'importe quel écran
-- **Flèche droite** - Fermer la barre latérale et retourner à la zone de contenu principale
-- **Back / Menu button** - Retourner à l'écran précédent
+FreePlay est conçu pour les télécommandes de téléviseur. Voici les commandes que vous utiliserez tout au long de l'application :
+
+- **Croix directionnelle (haut/bas/gauche/droite)** - Se déplacer entre les éléments à l'écran
+- **Bouton Sélectionner / OK** - Choisir l'élément en surbrillance
+- **Flèche gauche** - Ouvrir le panneau latéral depuis n'importe quel écran
+- **Flèche droite** - Fermer le panneau latéral et revenir à la zone de contenu principale
+- **Bouton Retour / Menu** - Revenir à l'écran précédent
 
 :::tip
-La barre latérale se réduit à une bande étroite d'icônes quand vous parcourez le contenu. Appuyez sur la flèche gauche de votre télécommande pour la développer et voir les étiquettes complètes.
+Le panneau latéral se réduit à une fine bande d'icônes lorsque vous parcourez le contenu. Appuyez sur la flèche gauche de votre télécommande pour le développer et voir les libellés complets.
 :::
 
-## La barre latérale
+## Le panneau latéral
 
-La barre latérale énumère, de haut en bas :
+Le panneau latéral affiche, de haut en bas :
 
-- **Today's Plan** -- Affiché quand la TV est appariée à un plan. Voir [Mode Plan](../plan-mode/)
-- **Announcements** -- Affiché une fois que vous avez choisi un dossier d'annonces. Voir [Annonces](../content-providers/announcements)
-- **Browse** -- Chaque fournisseur de contenu connecté que vous pouvez parcourir. Voir [Parcourir et télécharger du contenu](../content-providers/browsing-content)
-- **Settings** -- En bas de la barre latérale. Ouvre **Downloads** (lire ou supprimer le contenu enregistré sur cet appareil) et **Providers** (connecter les fournisseurs de contenu et choisir le dossier d'annonces)
+- **Plan du jour** -- Affiché lorsque le téléviseur est associé à un plan. Voir [Mode plan](../plan-mode/)
+- **Annonces** -- Affiché une fois que vous avez choisi un dossier d'annonces. Voir [Annonces](../content-providers/announcements)
+- **Parcourir** -- Chaque fournisseur de contenu connecté que vous pouvez parcourir. Voir [Parcourir et télécharger du contenu](../content-providers/browsing-content)
+- **Paramètres** -- Au bas du panneau latéral. Ouvre **Associer à un calendrier** (associer ce téléviseur à un calendrier ou à un plan -- voir [Choisir un mode d'appairage](./pairing-modes)), **Téléchargements** (lire ou supprimer le contenu enregistré sur cet appareil) et **Fournisseurs** (connecter des fournisseurs de contenu et choisir le dossier des annonces)
 
-## Prochaines étapes
+## Et ensuite
 
-- **[Choix d'un mode d'appairage](./pairing-modes)** - Apprendre les différentes façons de connecter votre TV
-- **[Fournisseurs de contenu](../content-providers/)** - Connectez-vous à Lessons.church, Bible Project, et plus
+- **[Choisir un mode d'appairage](./pairing-modes)** - Découvrez les différentes façons de connecter votre téléviseur
+- **[Mode planifié](../scheduled-mode/)** - Planifiez vos téléviseurs avec FreePlay Admin
+- **[Fournisseurs de contenu](../content-providers/)** - Connectez-vous à Lessons.church, Bible Project, et plus encore

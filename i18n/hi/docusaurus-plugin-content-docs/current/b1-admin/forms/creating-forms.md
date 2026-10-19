@@ -71,7 +71,7 @@ title: "Forms बनाना"
 
 हर बार कोई form submit करता है, तो मिलने वाला या नया बना व्यक्ति group में जुड़ जाता है (जो लोग पहले से group के सदस्य हैं, उन्हें छोड़ दिया जाता है)। यह उन चीज़ों के लिए उपयोगी है जैसे camp sign-up form, जो camp की roster group अपने-आप बनाए।
 
-### Follow-up Email भेजना
+### Follow-up Email भेजना {#sending-a-follow-up-email}
 
 **Create a person record from submissions** चालू होने पर, आप form submit करने वाले हर व्यक्ति को email भी भेज सकते हैं। form के details में **Follow-up Email Subject** और **Follow-up Email Body** भरें। आप दोनों में `{firstName}` और `{churchName}` tokens का उपयोग कर सकते हैं। email केवल तभी भेजा जाता है जब दोनों fields भरे हों।
 

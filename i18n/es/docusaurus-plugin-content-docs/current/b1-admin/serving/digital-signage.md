@@ -1,40 +1,52 @@
 ---
-title: "Señalización Digital"
+title: "Señalización digital"
 ---
 
-# Señalización Digital
+# Señalización digital
 
 <div class="article-intro">
 
-Envíe su contenido de lecciones a un televisor en la sala de espera o pasillo usando una fuente de señalización digital. Cada tipo de plan obtiene una URL de fuente que siempre reproduce el contenido del plan actual, por lo que no hay nada que actualizar semana a semana.
+Envía el contenido de tus lecciones a un televisor del vestíbulo o del pasillo mediante un feed de señalización digital. Cada tipo de plan tiene una URL de feed que siempre reproduce el contenido del plan actual, así que no hay nada que actualizar semana tras semana. Si tus televisores ejecutan FreePlay, puedes programar el tipo de plan en ellos desde FreePlay Admin.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Empezar</h4>
+<h4>Antes de empezar</h4>
 
-- Configure un [tipo de plan](./plans.md) con [Lessons.church](../../b1-church/content/lessons.md) u otro contenido de lecciones programado
-- Tenga una cuenta de [SignPresenter](https://www.signpresenter.com) y un dispositivo configurado para mostrarlo
+- Configura un [tipo de plan](./plans.md) con [Lessons.church](../../b1-church/content/lessons.md) u otro contenido de lecciones programado
+- Ten una cuenta de [SignPresenter](https://www.signpresenter.com) y un dispositivo configurado para mostrarlo, o un televisor con [FreePlay](../../freeplay/)
 
 </div>
 
-## Obtención de la URL de Fuente
+## Obtener la URL del feed
 
-1. Vaya a **Servicio**, seleccione el ministerio que contiene su tipo de plan y haga clic en el tipo de plan para abrirlo.
-2. Haga clic en **Señalización Digital** (el icono de televisor) en la parte superior de la página del tipo de plan.
-3. Copie la URL de fuente que se muestra en el diálogo.
+1. Ve a **Servicio**, selecciona el ministerio que contiene tu tipo de plan y haz clic en el tipo de plan para abrirlo.
+2. Haz clic en **Señalización digital** (el ícono de televisor) en la parte superior de la página del tipo de plan.
+3. En el cuadro de diálogo **Feed de señalización digital**, haz clic en el botón de copiar junto a **URL del feed**.
 
 :::info
-La URL de fuente está vinculada al tipo de plan, no a un plan único. Automáticamente realiza un seguimiento de cualquier plan que esté programado como actual para ese tipo de plan, por lo que solo necesita configurarlo una vez.
+La URL del feed está vinculada al tipo de plan, no a un plan específico. Se actualiza automáticamente con el plan que esté programado como actual para ese tipo de plan, así que solo necesitas configurarla una vez.
 :::
 
-## Conexión a SignPresenter
+## Conectar con SignPresenter
 
-La fuente está construida para funcionar con [SignPresenter](https://www.signpresenter.com), una aplicación de señalización digital de terceros. Pegue la URL copiada en SignPresenter como una fuente externa para mostrar su contenido de lección actual en una pantalla conectada.
+El feed está diseñado para funcionar con [SignPresenter](https://www.signpresenter.com), una app de señalización digital de terceros. Pega la URL copiada en SignPresenter como un feed externo para mostrar el contenido de tu lección actual en una pantalla conectada.
 
-Para la configuración paso a paso dentro de SignPresenter, consulte la [guía de Lessons.church de SignPresenter](https://support.signpresenter.com/topics/lessons-dot-church.html).
+Para la configuración paso a paso dentro de SignPresenter, consulta la [guía de Lessons.church de SignPresenter](https://support.signpresenter.com/topics/lessons-dot-church.html). El cuadro de diálogo también enlaza a estas instrucciones.
 
-## Próximos Pasos
+## Usar televisores de FreePlay en su lugar
 
-- Administre los planes que alimentan esta visualización de señalización en la página [Planes](./plans.md)
-- Programe contenido con [Lessons.church](./scheduling-lessons.md)
+Si tus pantallas ejecutan [FreePlay](../../freeplay/), no necesitas la URL del feed. El cuadro de diálogo **Feed de señalización digital** enlaza a **admin.freeplay.church/calendar**, donde puedes programar este tipo de plan en tus televisores de FreePlay:
+
+1. Haz clic en el enlace **admin.freeplay.church/calendar** del cuadro de diálogo. FreePlay Admin usa el mismo inicio de sesión que B1 Admin.
+2. Elige el grupo de pantallas de tus televisores y haz clic en **Agregar programación**.
+3. En **Reproducir**, elige tu tipo de plan de **Planes de servicio**. Está marcado como **(plan actual)**.
+4. Configura los días y las horas, y luego haz clic en **Guardar**.
+
+Los televisores reproducen el plan que esté vigente para ese tipo de plan cada semana, a las horas que configuraste. Consulta [Programar el calendario](../../freeplay/scheduled-mode/scheduling-the-calendar) para ver todas las opciones, y [Emparejar una pantalla](../../freeplay/scheduled-mode/pairing-a-screen) para agregar un televisor.
+
+## Próximos pasos
+
+- Administra los planes que alimentan esta señalización en la página de [Planes](./plans.md)
+- Programa contenido con [Lessons.church](./scheduling-lessons.md)
+- Pon los televisores de FreePlay en un calendario con [Modo programado](../../freeplay/scheduled-mode/)

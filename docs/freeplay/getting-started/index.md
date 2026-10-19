@@ -40,6 +40,8 @@ Not all streaming sticks can run FreePlay — the newest budget Fire TV models c
 
 When you open FreePlay for the first time, you will see an animated splash screen with the FreePlay logo. The app checks for any previously connected content providers. If you have already connected a provider, it will take you directly to that provider's content browser. Otherwise, it will open the **Content Providers** screen where you can connect to your first content source.
 
+If the TV is paired to a calendar in [Scheduled Mode](../scheduled-mode/), FreePlay skips all of this and opens straight to the scheduled player.
+
 ## Navigating with Your TV Remote
 
 FreePlay is built for TV remotes. Here are the controls you will use throughout the app:
@@ -61,9 +63,10 @@ The sidebar lists, from top to bottom:
 - **Today's Plan** -- Shown when the TV is paired to a plan. See [Plan Mode](../plan-mode/)
 - **Announcements** -- Shown once you have chosen an announcements folder. See [Announcements](../content-providers/announcements)
 - **Browse** -- Each connected content provider you can browse. See [Browsing and Downloading Content](../content-providers/browsing-content)
-- **Settings** -- At the bottom of the sidebar. Opens **Downloads** (play or delete content saved on this device) and **Providers** (connect content providers and choose the announcements folder)
+- **Settings** -- At the bottom of the sidebar. Opens **Pair to a calendar** (pair this TV to a calendar or plan -- see [Choosing a Pairing Mode](./pairing-modes)), **Downloads** (play or delete content saved on this device), and **Providers** (connect content providers and choose the announcements folder)
 
 ## What's Next
 
 - **[Choosing a Pairing Mode](./pairing-modes)** - Learn about the different ways to connect your TV
+- **[Scheduled Mode](../scheduled-mode/)** - Put your TVs on a calendar with FreePlay Admin
 - **[Content Providers](../content-providers/)** - Connect to Lessons.church, Bible Project, and more

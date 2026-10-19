@@ -46,7 +46,7 @@ Cada mudança em um pacote é enviada com um changeset:
 Nunca execute um `npm publish` bruto dentro de um único pacote -- isso pula a ordem de construção e a contabilidade de versão que o script de lançamento manipula. A publicação requer uma conta npm com direitos de publicação no escopo `@churchapps`.
 :::
 
-## Desenvolvimento Local Contra um Aplicativo Consumidor
+## Desenvolvimento Local Contra um Aplicativo Consumidor {#local-development-against-a-consuming-app}
 
 Dentro do espaço de trabalho, os pacotes compilam diretamente contra seus irmãos -- nenhuma ligação necessária. Para testar uma construção de pacote não publicado dentro de um aplicativo consumidor (B1Admin, B1App, etc.), adicione um portal Yarn temporário no consumidor:
 

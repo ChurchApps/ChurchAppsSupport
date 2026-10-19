@@ -71,7 +71,7 @@ title: "양식 만들기"
 
 누군가 양식을 제출할 때마다 일치하는 사람 또는 새로 만들어진 사람이 해당 그룹에 추가됩니다(이미 그룹 회원인 사람은 건너뜁니다). 예를 들어 캠프 신청서를 제출하면 캠프 그룹 명단이 자동으로 만들어지는 경우에 유용합니다.
 
-### 후속 이메일 보내기
+### 후속 이메일 보내기 {#sending-a-follow-up-email}
 
 **Create a person record from submissions**를 켜 두면 양식을 제출한 각 사람에게 이메일도 보낼 수 있습니다. 양식의 세부 정보에서 **Follow-up Email Subject**와 **Follow-up Email Body**를 입력합니다. 두 항목 모두에 `{firstName}` 및 `{churchName}` 토큰을 사용할 수 있습니다. 이메일은 두 필드가 모두 채워져 있을 때만 발송됩니다.
 

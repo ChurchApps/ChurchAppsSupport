@@ -46,7 +46,7 @@ Chaque modification d'un package est expédiée avec un changeset :
 Ne lancez jamais un `npm publish` brut à l'intérieur d'un seul package -- il ignore l'ordre de construction et la tenue de livres de version que le script de publication gère. La publication nécessite un compte npm avec des droits de publication à la portée `@churchapps`.
 :::
 
-## Développement local contre une application consommatrice
+## Développement local contre une application consommatrice {#local-development-against-a-consuming-app}
 
 À l'intérieur de l'espace de travail, les packages se construisent directement par rapport à leurs frères et soeurs -- aucun lien nécessaire. Pour tester une construction de package non publiée à l'intérieur d'une application consommatrice (B1Admin, B1App, etc.), ajoutez un portail Yarn temporaire dans le consommateur :
 

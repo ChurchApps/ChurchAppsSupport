@@ -30,13 +30,13 @@ Once you have created a group, the next step is adding members. From a group's d
 Before you type anything, the **Add Person** box shows a short list of **Recent people** you can add with one click.
 :::
 
-When you are done, click the **Back to** link with the group's name to return to the group page. The group page shows a summary of the group's **Members**, **Sessions**, **Calendar**, and **Health**, each with a link to its full view.
+When you are done, click the **Back to** link with the group's name to return to the group page. The group page shows a summary of the group's **Members**, **Sessions**, **Calendar**, and **Health**, each with a link to its full view. If you are one of the group's leaders, it also shows **Leader notes** (see [Leader Notes](#leader-notes) below).
 
 ### Adding Someone Who Isn't in B1 Yet
 
 If your search finds no one, the search shows **No records found** with an **Add New Person** link. Click it, enter the person's first name, last name, and (optionally) email, and click **Add**. The new person is created in your People directory and added to the group in one step -- you don't need to search for them again.
 
-## Designating Group Leaders
+## Designating Group Leaders {#designating-group-leaders}
 
 Group leaders have special privileges -- they can edit the [group calendar](group-calendar.md), manage events, and help coordinate the group.
 
@@ -48,6 +48,20 @@ To remove leader status, click the star icon (**Remove Leader Access**) again.
 
 :::info
 Any group member can view the group calendar and events, but only leaders can add or edit calendar events.
+:::
+
+## Leader Notes {#leader-notes}
+
+Group leaders can keep private notes about the group -- for example, follow-ups, prayer needs, or pastoral concerns -- that the rest of the group never sees.
+
+The **Leader notes** section appears on the group page only for people who are leaders of that group. It shows the newest note, who wrote it and when, and how many notes there are.
+
+1. On the group page, click **All notes** in the **Leader notes** section.
+2. Type your note in the box and post it. Notes are listed with the author's name and photo.
+3. Click the **Back to** link with the group's name to return to the group page.
+
+:::info
+Leader notes are visible only to the group's leaders. Other members can't see them, and neither can staff or administrators -- even with full permissions -- unless they are also leaders of that group. To give another person access, [make them a leader](#designating-group-leaders). Leaders also see these notes in the **Leader notes** section of the group's page on [B1.church](../../b1-church/groups/group-details.md#leader-notes).
 :::
 
 ## Sending Messages to Group Members

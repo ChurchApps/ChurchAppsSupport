@@ -46,7 +46,7 @@ Bawat pagbabago sa isang package ay may kasamang changeset:
 Huwag kailanman magpatakbo ng hilaw na `npm publish` sa loob ng isang package -- nilalaktawan nito ang pagkakasunod ng build at ang bookkeeping ng bersyon na inaasikaso ng release script. Ang paglalathala ay nangangailangan ng npm account na may karapatang maglathala sa `@churchapps` scope.
 :::
 
-## Lokal na Development Laban sa Isang Consuming App
+## Lokal na Development Laban sa Isang Consuming App {#local-development-against-a-consuming-app}
 
 Sa loob ng workspace, direktang nagbi-build ang mga package laban sa kanilang mga kapatid -- hindi na kailangan ng linking. Para subukan ang hindi pa nailalathalang build ng package sa loob ng isang consuming app (B1Admin, B1App, atbp.), magdagdag ng pansamantalang Yarn portal sa consumer:
 

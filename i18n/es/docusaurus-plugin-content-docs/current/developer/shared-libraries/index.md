@@ -46,7 +46,7 @@ Cada cambio en un paquete se envía con un changeset:
 Nunca ejecutes un `npm publish` sin procesar dentro de un paquete único -- salta el orden de construcción y la contabilidad de versión que el script de liberación maneja. La publicación requiere una cuenta npm con derechos de publicación al alcance `@churchapps`.
 :::
 
-## Desarrollo Local Contra una Aplicación Consumidor
+## Desarrollo Local Contra una Aplicación Consumidor {#local-development-against-a-consuming-app}
 
 Dentro del espacio de trabajo, los paquetes construyen directamente contra sus hermanos -- no se necesita vinculación. Para probar una compilación de paquete no publicada dentro de una aplicación consumidor (B1Admin, B1App, etc.), agrega un portal Yarn temporal en el consumidor:
 

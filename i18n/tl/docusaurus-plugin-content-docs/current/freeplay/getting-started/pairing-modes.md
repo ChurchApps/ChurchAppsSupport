@@ -6,50 +6,60 @@ title: "Pagpili ng Pairing Mode"
 
 <div class="article-intro">
 
-Nag-aalok ang FreePlay ng dalawang pairing mode para ikonekta ang inyong TV sa inyong simbahan, at maaari ka ring direktang mag-browse ng mga content provider. Ipinapakita ng screen na **Select Pairing Mode** ang mga opsyong ito bilang malalaking card na maaari mong i-navigate gamit ang remote ng inyong TV.
+Kayang patakbuhin ng FreePlay ang isang TV sa tatlong paraan. Maaari nitong sundin ang kalendaryong itinakda mo sa FreePlay Admin, sundin ang service plan mula sa B1 Admin, o i-play kung ano ang piliin ng isang volunteer gamit ang remote. Pareho ang simula ng dalawang uri ng pairing mula sa iisang screen sa TV. Ang lugar kung saan mo ilalagay ang pairing code ang nagtatakda kung aling mode ang gagamitin ng TV.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- I-install ang FreePlay at buksan ito sa unang pagkakataon -- tingnan ang [Pagsisimula](./index.md)
-- Ihanda ang remote ng inyong TV para sa pag-navigate
+- I-install ang FreePlay at ilunsad ito sa unang pagkakataon. Tingnan ang [Getting Started](./index.md)
+- Ihanda ang remote ng iyong TV para sa pag-navigate
 
 </div>
 
-## Pair to Classroom
+## Pagkuha ng Pairing Code
 
-Piliin ang **Pair to Classroom** kung gusto ninyong laging ipakita ng isang partikular na TV ang leksyong nakaiskedyul para sa isang silid. Ito ang pinakamainam na opsyon para sa mga silid-aralan ng children's ministry kung saan ang mga leksyon ay itinatakda sa lingguhang iskedyul.
+1. Sa TV, buksan ang **Settings** sa ibaba ng sidebar.
+2. Piliin ang **Pair to a calendar**.
+3. Magpapakita ang FreePlay ng apat na letrang pairing code at QR code. Mag-e-expire ang code pagkalipas ng 15 minuto, at awtomatikong magpapakita ang FreePlay ng bago kapag naubos na ito.
 
-**Paano ito gumagana:** Hahanapin mo ang inyong simbahan ayon sa pangalan, pipili ka ng silid-aralan, at awtomatikong kukunin ng FreePlay ang leksyong nakaiskedyul para sa silid na iyon ngayong araw. Tuwing Linggo ng umaga, bubuksan mo na lang ang TV at handa na ang tamang leksyon.
+## Scheduled Mode (FreePlay Admin)
 
-**Pinakamainam para sa:** Mga nakalaang TV sa silid-aralan na dapat laging magpakita ng nakaiskedyul na nilalaman para sa silid na iyon.
+Ilagay ang code sa **FreePlay Admin** sa [admin.freeplay.church](https://admin.freeplay.church) kapag gusto mong kusang tumakbo ang TV. Gagawa ka ng mga playlist, ilalagay ang mga ito sa kalendaryo para sa isang grupo ng mga screen, at ipe-play ito ng TV sa mga nakatakdang oras. Walang kailangang pindutin ang Start.
+
+**Paano ito gumagana:** I-scan ang QR code sa TV, o pumunta sa **freeplay.church/pair**. Pagkatapos, piliin ang screen group na dapat sundan ng kalendaryo ng TV at i-click ang **Pair**. Dina-download ng TV ang susunod na linggo at naglalaro ayon sa orasan, kahit offline.
+
+**Pinakamainam para sa:** Signage sa lobby at pasilyo, mga announcement loop, at mga silid-aralan kung saan dapat nang tumutugtog ang lesson pagpasok ng mga tao.
+
+Tingnan ang **[Scheduled Mode](../scheduled-mode/)** para sa buong gabay.
+
+## Plan Mode (B1 Admin)
+
+Ilagay ang code sa **B1 Admin** kapag gusto mong sundan ng TV ang isang plan type ng serbisyo. Dina-download ng TV ang content ng kasalukuyang plan, at pinipindot ng volunteer ang **Start Plan** para i-play ito.
+
+**Paano ito gumagana:** Sa B1 Admin, idagdag ang screen gamit ang code mula sa TV at piliin ang plan type sa ilalim ng **Show Plans For**. Tuwing linggo, kinukuha ng TV ang pinakabagong plan para sa plan type na iyon.
+
+**Pinakamainam para sa:** Mga TV na nagpapakita ng content na nakatali sa lingguhan mong service plan, kung saan may magsisimula ng playback kapag oras na.
+
+Tingnan ang **[Plan Mode](../plan-mode/)** para sa buong gabay.
 
 :::tip
-I-set up ang inyong mga silid-aralan sa [freeplay.church](https://freeplay.church) bago i-pair ang inyong TV. Sisiguraduhin nito na lalabas ang inyong mga silid kapag hinanap ang inyong simbahan.
+Maaari mo ring i-play ang kasalukuyang service plan ayon sa iskedyul. Sa FreePlay Admin, magdagdag ng calendar entry at piliin ang plan type sa ilalim ng **Service plans**.
 :::
 
-## Pair to Plan
+## Mga Content Provider (Walang Pairing)
 
-Piliin ang **Pair to Plan** kung gusto ninyong sundan ang plano ng isang serbisyo ng simbahan. Gumagawa ang mode na ito ng pairing code na ilalagay ninyo sa **B1 Admin** para i-link ang TV sa isang partikular na uri ng plano. Pagkatapos, magda-download at magpe-play ang TV ng nilalamang nakatalaga sa kasalukuyang plano.
+Kung hindi mo kailangang i-pair ang TV, maaari kang mag-browse nang direkta sa mga content provider. May content na maaari mong i-download at i-play anumang oras ang mga provider gaya ng [Lessons.church](../../lessons-church/) at Bible Project.
 
-**Paano ito gumagana:** Magpapakita ang FreePlay ng pairing code at QR code sa screen. Bubuksan ng isang administrator ang naka-link na pahina sa **B1 Admin**, ilalagay ang code, at pipiliin mula sa dropdown na **Show Plans For** ang uri ng plano na dapat sundan ng screen. Kapag naaprubahan na, awtomatikong ilo-load ng TV ang nilalaman ng kasalukuyang plano.
-
-**Pinakamainam para sa:** Mga TV na nagpapakita ng nilalamang nakatali sa lingguhang plano ng serbisyo, gaya ng lyrics ng worship o mga slide ng anunsyo.
-
-## Mga Content Provider
-
-Kung hindi ninyo kailangang mag-pair sa isang silid-aralan o plano, maaari kayong direktang mag-browse ng mga content provider. Ang mga provider tulad ng [Lessons.church](../../lessons-church/) at Bible Project ay nag-aalok ng nilalamang maaari ninyong i-download at i-play kahit kailan ninyo gusto.
-
-**Pinakamainam para sa:** Mga TV kung saan manu-manong pinipili ng mga volunteer kung ano ang ipe-play bawat linggo, o kapag gusto ninyong tuklasin ang mga available na nilalaman.
+**Pinakamainam para sa:** Mga TV kung saan pumipili ang mga volunteer ng ipe-play bawat linggo, o kapag gusto mong tuklasin kung ano ang available.
 
 :::info
-Maaari mong buksan ang screen na **Providers** anumang oras mula sa **Settings** sa ibaba ng sidebar. Hindi ninyo kailangang gumamit ng pairing mode para mag-browse at mag-play ng nilalaman.
+Maaari mong buksan ang pahinang **Providers** anumang oras mula sa **Settings** sa ibaba ng sidebar. Hindi mo kailangang i-pair ang TV para mag-browse at mag-play ng content.
 :::
 
-## Mga Kaugnay na Artikulo
+## Kaugnay na Artikulo
 
-- **[Classroom Mode](../classroom-mode/)** - Kumpletong gabay sa pag-pair sa isang silid-aralan
-- **[Plan Mode](../plan-mode/)** - Kumpletong gabay sa pag-pair sa plano ng serbisyo
-- **[Mga Content Provider](../content-providers/)** - Mag-browse at mag-download ng nilalaman mula sa mga panlabas na pinagmulan
+- **[Scheduled Mode](../scheduled-mode/)** - Ilagay ang mga TV sa kalendaryo gamit ang FreePlay Admin
+- **[Plan Mode](../plan-mode/)** - Buong gabay sa pag-pair sa isang service plan
+- **[Content Providers](../content-providers/)** - Mag-browse at mag-download ng content mula sa mga external na source

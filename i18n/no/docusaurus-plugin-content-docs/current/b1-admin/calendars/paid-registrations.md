@@ -57,7 +57,7 @@ Deltakerne velger antall under påmeldingen, og totalene regnes mot kapasiteten,
 
 Hver kode viser et **Bruk**-tall, slik at du kan se hvor ofte den er brukt. Deltakerne får umiddelbar tilbakemelding når de bruker en kode -- med tydelige meldinger hvis koden er utløpt, ikke har startet ennå eller krever flere deltakere.
 
-## Venteliste
+## Venteliste {#waitlist}
 
 Slå på **Aktiver venteliste** i kortet Påmeldingsinnstillinger. Når arrangementet er fullt:
 
@@ -69,7 +69,7 @@ Slå på **Aktiver venteliste** i kortet Påmeldingsinnstillinger. Når arrangem
 Opprykkede påmeldinger forblir *ventende* til et eventuelt utestående beløp er betalt. Når det er betalt (eller det ikke er noe å betale), blir de bekreftet.
 :::
 
-## Deltakerlisten
+## Deltakerlisten {#the-registration-roster}
 
 Åpne et arrangement fra Påmeldinger-siden for å se alle påmeldinger. Tabellen viser **Navn**, **Medlemmer**, **Type** (hver deltakers type), **Betalt / Totalt** (med en saldoadvarsel når det fortsatt skyldes penger), **Status** og **Dato**, i tillegg til brikker med antall per type over tabellen.
 

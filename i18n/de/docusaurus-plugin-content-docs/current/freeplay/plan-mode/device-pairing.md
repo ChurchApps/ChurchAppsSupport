@@ -6,68 +6,60 @@ title: "Ihr Gerät koppeln"
 
 <div class="article-intro">
 
-Um den Plan-Modus zu verwenden, müssen Sie Ihren Fernseher mit einem Plantyp in B1 Admin koppeln. FreePlay erzeugt einen eindeutigen Kopplungscode, der das Gerät mit dem Plan Ihrer Kirche verknüpft und so jede Woche die automatische Content-Zustellung ermöglicht.
+Um den Planmodus zu verwenden, koppeln Sie Ihren Fernseher mit einem Planungstyp in B1 Admin. FreePlay zeigt auf dem Fernseher einen kurzen Kopplungscode an. Sie geben diesen Code in B1 Admin ein und wählen den Planungstyp, dem gefolgt werden soll; der Fernseher erhält die Inhalte dieses Plans dann jede Woche automatisch.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Installieren und starten Sie FreePlay -- siehe [Erste Schritte](../getting-started/)
-- Wählen Sie **Mit Plan koppeln** auf dem [Bildschirm für den Kopplungsmodus](../getting-started/pairing-modes.md)
-- Haben Sie Zugriff auf **B1 Admin** auf einem Computer oder Telefon, um die Kopplung abzuschließen
+- Installieren und starten Sie FreePlay. Siehe [Erste Schritte](../getting-started/)
+- Sie benötigen Zugriff auf **B1 Admin** an einem Computer oder Telefon, um die Kopplung abzuschließen
 
 </div>
 
 ## Den Kopplungscode erzeugen
 
-1. Wählen Sie auf dem Bildschirm **Kopplungsmodus auswählen** die Option **Mit Plan koppeln**
-2. FreePlay kontaktiert den Server und erzeugt einen kurzen Kopplungscode
-3. Der Code erscheint in großen Zeichen in der Mitte des Bildschirms
-4. Unter dem Code zeigt eine pulsierende Anzeige **Warte auf Verbindung**
+1. Öffnen Sie auf dem Fernseher **Einstellungen** unten in der Seitenleiste.
+2. Wählen Sie **Mit einem Kalender koppeln**.
+3. FreePlay zeigt einen vierstelligen Kopplungscode in großen Buchstaben neben einem QR-Code an.
+4. Unter dem Code zeigt eine pulsierende Anzeige **Warte auf Bestätigung**, dass FreePlay auf den Abschluss der Kopplung wartet.
 
-Der Code wird als einzelne Zeichen dargestellt, damit er aus der Entfernung im Raum gut lesbar ist.
+Derselbe Code funktioniert für den [Geplanten Modus](../scheduled-mode/) in FreePlay Admin und für den Planmodus in B1 Admin. Der QR-Code und die Adresse **freeplay.church/pair** auf dem Bildschirm öffnen FreePlay Admin. Für den Planmodus ignorieren Sie sie und geben den Code wie unten beschrieben in B1 Admin ein.
 
 ## Den Code in B1 Admin eingeben
 
-1. Rufen Sie auf einem Computer oder Telefon die unter dem Code auf dem Fernseher angezeigte Adresse auf (oder scannen Sie den QR-Code auf dem Bildschirm) -- dies öffnet die Seite **Gerät autorisieren** in B1 Admin
-2. Geben Sie den Kopplungscode ein, falls er nicht bereits über den QR-Code ausgefüllt wurde
-3. Wählen Sie unter **Pläne anzeigen für** den Plantyp aus, dem dieser Bildschirm folgen soll (zum Beispiel „Sonntagsgottesdienst"). Belassen Sie es bei **Keine**, wenn der Bildschirm nur zum Durchsuchen von Inhalten oder für Benachrichtigungen verfügbar sein soll, ohne dass ein Plan daran gebunden ist
-4. Genehmigen Sie das Gerät
+1. Gehen Sie in B1 Admin zu **Profil** > **Geräte** und klicken Sie auf **Bildschirm hinzufügen**.
+2. Geben Sie die vier Buchstaben vom Fernseher unter **Kopplungscode** ein.
+3. Wählen Sie unter **Pläne anzeigen für** den Planungstyp, dem dieser Bildschirm folgen soll, zum Beispiel „Sonntagsgottesdienst“.
+4. Speichern Sie.
 
-FreePlay fragt den Server alle paar Sekunden ab und prüft, ob die Kopplung abgeschlossen ist. Sobald **B1 Admin** die Verbindung bestätigt, wechselt der Fernseher automatisch zum Bildschirm für den Plan-Download.
-
-:::tip
-Geräte können auch über **Profil → Geräte → Gerät hinzufügen** in B1 Admin mit demselben Code gekoppelt werden -- dies bietet dieselbe Auswahl für den Plantyp unter **Pläne anzeigen für**.
-:::
+FreePlay prüft alle paar Sekunden, ob die Kopplung abgeschlossen ist. Sobald B1 Admin sie bestätigt, zeigt der Fernseher **Verbunden!** an und wechselt zum Bildschirm für den Plan-Download.
 
 ## Plan-Inhalte herunterladen
 
-Nach der Kopplung lädt FreePlay den aktuellen Plan für diesen Plantyp. Es zeigt an:
+Nach der Kopplung lädt FreePlay den aktuellen Plan für diesen Planungstyp. Es zeigt:
 
-- Den Plannamen und das Gottesdienstdatum
-- Den zugehörigen Lektionsnamen (falls der Plan Lektionsinhalte enthält)
+- Den Namen des Plans und das Gottesdienstdatum
+- Den Namen der Lektion, falls der Plan Lektionsinhalte enthält
 - Eine Fortschrittsanzeige mit **Lade Element X von Y herunter**
 
-Wenn alle Mediendateien heruntergeladen sind, erscheint die Schaltfläche **Plan starten**. Drücken Sie **Auswählen** auf Ihrer Fernbedienung, um die Wiedergabe zu starten.
+Wenn alle Mediendateien heruntergeladen sind, erscheint die Schaltfläche **Plan starten**. Drücken Sie auf der Fernbedienung auf **Auswählen**, um die Wiedergabe zu starten.
 
 :::tip
-Der Plan wird automatisch jede Stunde aktualisiert. Wenn der Plan im Laufe des Tages geändert wird, übernimmt FreePlay die Änderungen ohne manuellen Eingriff.
+Der Plan aktualisiert sich automatisch jede Stunde. Wenn jemand den Plan im Laufe des Tages ändert, übernimmt FreePlay die Änderungen selbstständig.
 :::
-
-## Alternative: Nach Kirchenname suchen
-
-Wenn Sie den Kopplungscode-Ablauf nicht nutzen möchten, können Sie unten auf dem Kopplungsbildschirm **oder nach Kirchenname suchen** auswählen. Dies führt Sie zum Kirchensuchbildschirm, auf dem Sie Ihre Kirche finden und sich stattdessen mit einem Klassenzimmer verbinden können.
 
 ## Wenn die Kopplung fehlschlägt
 
-Wenn der Kopplungscode nicht erzeugt werden kann (zum Beispiel aufgrund eines Netzwerkproblems), sehen Sie eine Fehlermeldung mit einer Schaltfläche **Erneut versuchen**. Stellen Sie sicher, dass Ihr Fernseher mit dem Internet verbunden ist, und versuchen Sie es erneut.
+Wenn FreePlay keinen Kopplungscode erzeugen kann (zum Beispiel wegen eines Netzwerkproblems), sehen Sie eine Fehlermeldung mit einer Schaltfläche **Erneut versuchen**. Stellen Sie sicher, dass der Fernseher mit dem Internet verbunden ist, und versuchen Sie es erneut.
 
 :::warning
-Kopplungscodes laufen nach einer festgelegten Zeit ab. Wenn Sie zu lange warten, erzeugen Sie einen neuen Code, indem Sie zum Kopplungsbildschirm zurückkehren.
+Kopplungscodes laufen nach 15 Minuten ab. FreePlay zeigt automatisch einen neuen Code an, sobald der alte abläuft, und Sie können jederzeit **Neuen Code erzeugen** auswählen. Funktioniert der eingegebene Code nicht, verwenden Sie den Code, den der Fernseher jetzt anzeigt.
 :::
 
 ## Verwandte Artikel
 
-- **[Übersicht Plan-Modus](./index.md)** - Verständnis, wie sich der Plan-Modus vom Klassenzimmer-Modus unterscheidet
-- **[Lektionen abspielen](../classroom-mode/playing-lessons)** - Die Wiedergabesteuerung ist in beiden Modi gleich
+- **[Überblick über den Planmodus](./index.md)** - Wie sich der Planmodus vom Geplanten Modus unterscheidet
+- **[Einen Bildschirm koppeln](../scheduled-mode/pairing-a-screen)** - Denselben Fernseher stattdessen in FreePlay Admin mit einem Kalender koppeln
+- **[Inhalte abspielen](../content-providers/playing-content)** - Player-Steuerung für die Plan-Wiedergabe

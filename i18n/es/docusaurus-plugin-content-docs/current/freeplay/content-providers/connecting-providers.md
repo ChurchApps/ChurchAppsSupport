@@ -1,100 +1,105 @@
 ---
-title: "Conectando a Proveedores"
+title: "Conectar con proveedores"
 ---
 
-# Conectando a Proveedores
+# Conectar con proveedores
 
 <div class="article-intro">
 
-Antes de que puedas explorar contenido de un proveedor, necesitas conectarte a él. Algunos proveedores requieren autenticación a través de un código QR o inicio de sesión por correo electrónico, mientras que otros pueden conectarse con un solo clic.
+Antes de explorar el contenido de un proveedor, necesita conectarse a él. Algunos proveedores requieren autenticación mediante un código QR o un inicio de sesión por correo electrónico, mientras que otros pueden conectarse con un solo clic.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Instala y lanza FreePlay -- ver [Comenzando](../getting-started/)
-- Ten tu control remoto de TV listo para la navegación
-- Para proveedores que requieren inicio de sesión, ten tus credenciales de cuenta disponibles
+- Instale e inicie FreePlay; consulte [Primeros pasos](../getting-started/)
+- Tenga a mano el control remoto del televisor para navegar
+- En los proveedores que requieren inicio de sesión, tenga a mano sus credenciales de cuenta
 
 </div>
 
-:::tip ¿Configurando B1 Admin + FreePlay juntos?
-Nuestra **<a href="/guides/freeplay-b1admin" target="_blank">guía paso a paso</a>** camina a través de vincular B1 Admin, programar una lección, y conectar FreePlay — todo en un lugar. Ábrela en una nueva pestaña para seguir.
+:::tip ¿Configura B1 Admin y FreePlay juntos?
+Nuestra **<a href="/guides/freeplay-b1admin" target="_blank">guía paso a paso</a>** explica cómo vincular B1 Admin, programar una lección y conectar FreePlay, todo en un solo lugar. Ábrala en una pestaña nueva para seguirla.
 :::
 
-## Explorando Proveedores Disponibles
+## Explorar los proveedores disponibles
 
-1. Abre **Configuración** en la parte inferior de la barra lateral, luego selecciona **Proveedores** para abrir la pantalla **Proveedores de Contenido**
-2. Verás una cuadrícula de tarjetas de proveedor, cada una mostrando el logo del proveedor y nombre
-3. Los proveedores conectados muestran una insignia verde de **Conectado** debajo de su nombre
+1. Abra **Configuración** en la parte inferior de la barra lateral y seleccione **Proveedores** para abrir la pantalla **Proveedores de contenido**
+2. Verá una cuadrícula de tarjetas de proveedores, cada una con el logotipo y el nombre del proveedor
+3. Los proveedores conectados muestran una insignia verde **Conectado** debajo de su nombre
 4. Los proveedores que aún no están disponibles muestran una etiqueta **Próximamente**
 
-## Conectando Sin Autenticación
+## Conectar sin autenticación
 
-Algunos proveedores no requieren inicio de sesión. Cuando seleccionas uno de estos proveedores, FreePlay se conecta inmediatamente y abre el navegador de contenido. No se necesitan credenciales.
+Algunos proveedores no requieren inicio de sesión. Al seleccionar uno de estos proveedores, FreePlay se conecta de inmediato y abre el explorador de contenido. No se necesitan credenciales.
 
-## Autenticación de Flujo de Dispositivo (Código QR)
+## Autenticación por flujo de dispositivo (código QR)
 
-Ciertos proveedores usan un flujo de dispositivo, similar a cómo inicias sesión en aplicaciones de transmisión en una TV:
+Ciertos proveedores usan un flujo de dispositivo, similar a la forma en que inicia sesión en las aplicaciones de streaming de un televisor:
 
-1. Selecciona la tarjeta del proveedor en la pantalla **Proveedores de Contenido**
-2. FreePlay muestra un código QR y una URL de verificación
-3. Escanea el código QR con tu teléfono, o visita la URL mostrada en cualquier dispositivo
-4. Ingresa el código de usuario mostrado en la pantalla de TV
-5. Completa el proceso de inicio de sesión en tu teléfono o computadora
+1. Seleccione la tarjeta del proveedor en la pantalla **Proveedores de contenido**
+2. FreePlay muestra una pantalla **Conectar a** con el nombre del proveedor, un código QR y una URL de verificación
+3. Escanee el código QR con su teléfono o visite la URL que aparece en cualquier dispositivo
+4. Introduzca el código que se muestra en la pantalla del televisor
+5. Complete el proceso de inicio de sesión en su teléfono o computadora
 6. FreePlay detecta el inicio de sesión exitoso y muestra **¡Conectado!**
-7. El navegador de contenido se abre automáticamente
+7. El explorador de contenido se abre automáticamente
 
 :::info
-Un indicador **Esperando autorización** pulsante muestra que FreePlay está comprobando tu inicio de sesión. El código expira después de varios minutos, así que completa el proceso prontamente.
+Un indicador pulsante **Esperando confirmación** muestra que FreePlay está comprobando su inicio de sesión. La pantalla muestra cuántos minutos quedan antes de que venza el código, así que complete el proceso con prontitud. Seleccione **Generar nuevo código** si se agota el tiempo.
 :::
 
-**Go Curriculum** usa el mismo patrón de inicio de sesión de código QR -- escanea el código e inicia sesión con tu cuenta de gocurriculum.com para conectar.
+## Inicio de sesión con teléfono (solo código QR)
 
-## Inicio de Sesión de Formulario
+**Dropbox**, **OneDrive** y **Go Curriculum** usan un inicio de sesión con código QR ligeramente distinto, sin código que escribir:
 
-Otros proveedores usan un inicio de sesión tradicional de correo electrónico y contraseña:
+1. Seleccione la tarjeta del proveedor en la pantalla **Proveedores de contenido**
+2. FreePlay muestra una pantalla **Conectar a** con el nombre del proveedor y un código QR
+3. Escanee el código QR con su teléfono e inicie sesión en su cuenta de ese proveedor (su cuenta de Microsoft para OneDrive, o su cuenta de gocurriculum.com para Go Curriculum)
+4. Apruebe el acceso. El televisor se conecta automáticamente y muestra **¡Conectado!**
 
-1. Selecciona la tarjeta del proveedor
-2. Ingresa tu **Correo Electrónico** y **Contraseña** usando el teclado en pantalla
-3. Selecciona el botón **Iniciar Sesión**
-4. Si tus credenciales son correctas, FreePlay muestra **¡Conectado!** y abre el navegador de contenido
+La pantalla muestra cuántos minutos le quedan para terminar de iniciar sesión.
+
+## Inicio de sesión con formulario
+
+Otros proveedores usan un inicio de sesión tradicional con correo electrónico y contraseña:
+
+1. Seleccione la tarjeta del proveedor
+2. Introduzca su **Correo electrónico** y su **Contraseña** con el teclado en pantalla
+3. Seleccione el botón **Iniciar sesión**
+4. Si sus credenciales son correctas, FreePlay muestra **¡Conectado!** y abre el explorador de contenido
 
 :::tip
-Usa el teclado direccional en tu control remoto para moverte entre el campo de correo electrónico, campo de contraseña, y botón de inicio de sesión. Presiona **Seleccionar** en un campo de texto para abrir el teclado en pantalla.
+Use el control direccional de su control remoto para moverse entre el campo de correo, el campo de contraseña y el botón de inicio de sesión. Presione **Seleccionar** en un campo de texto para abrir el teclado en pantalla.
 :::
 
-## Encontrando un Proveedor en Tu Red
+## Configuración del proveedor
 
-**FreeShow** se encuentra en tu red local en lugar de a través de un inicio de sesión: FreePlay busca la red, lista cada computadora ejecutando FreeShow que encuentra, y se conecta a la que seleccionas (elige **Escanear Nuevamente** si ninguna aparece).
+Al seleccionar una tarjeta de proveedor que muestra la insignia **Conectado**, se abre su pantalla de **Configuración del proveedor**:
 
-## Configuración del Proveedor
+- **Explorar biblioteca**: mostrar u ocultar la biblioteca de contenido de este proveedor en la barra lateral
+- **Descargar automáticamente la lección de hoy**: usar este proveedor como fuente de la lección de hoy y descargar previamente sus archivos (solo aparece en los proveedores que ofrecen una lección actual)
+- **Usar para anuncios**: elija una carpeta de este proveedor para reproducirla en bucle desde el elemento **Anuncios** de la barra lateral. Véase [Anuncios](./announcements)
+- **Buscar actualizaciones de anuncios**: aparece una vez que se ha elegido una carpeta de anuncios; descarga las diapositivas nuevas y elimina las borradas
+- **Desconectar**: elimina la conexión
 
-Seleccionar una tarjeta de proveedor que muestre la insignia de **Conectado** abre su pantalla de **Configuración del Proveedor**:
+## Desconectar un proveedor
 
-- **Explorar Biblioteca** -- Mostrar u ocultar la biblioteca de contenido de este proveedor en la barra lateral
-- **Descargar Automáticamente la Lección de Hoy** -- Usa este proveedor como fuente de la lección de hoy y pre-descarga sus archivos (solo se muestra para proveedores que ofrecen una lección actual)
-- **Usar para Anuncios** -- Elige una carpeta de este proveedor para bucle desde el elemento **Anuncios** en la barra lateral. Ver [Anuncios](./announcements)
-- **Verificar Actualizaciones de Anuncios** -- Se muestra una vez que se elige una carpeta de anuncios; descarga nuevas diapositivas y elimina las eliminadas
-- **Desconectar** -- Elimina la conexión
+Para desconectarse de un proveedor al que ya se ha conectado:
 
-## Desconectando un Proveedor
+1. Vaya a la pantalla **Proveedores de contenido** (**Configuración** > **Proveedores**)
+2. Seleccione la tarjeta del proveedor que muestra la insignia **Conectado**
+3. En la pantalla **Configuración del proveedor**, seleccione **Desconectar**
 
-Para desconectarte de un proveedor al que ya estás conectado:
-
-1. Ve a la pantalla **Proveedores de Contenido** (**Configuración** > **Proveedores**)
-2. Selecciona la tarjeta del proveedor que muestra la insignia de **Conectado**
-3. En la pantalla **Configuración del Proveedor**, selecciona **Desconectar**
-
-Después de desconectar, el contenido del proveedor ya no aparecerá en tu barra lateral. Si estabas usando una de sus carpetas para anuncios, esas diapositivas se eliminan también.
+Después de desconectarse, el contenido del proveedor ya no aparecerá en su barra lateral. Si estaba usando una de sus carpetas para anuncios, esas diapositivas también se eliminan.
 
 :::warning
-Desconectar elimina la autenticación guardada de tu dispositivo. Necesitarás iniciar sesión nuevamente si deseas reconectar más tarde.
+Al desconectar se elimina la autenticación guardada en su dispositivo. Tendrá que iniciar sesión de nuevo si desea reconectarse más adelante.
 :::
 
-## Artículos Relacionados
+## Artículos relacionados
 
-- **[Explorando y Descargando Contenido](./browsing-content)** - Navega carpetas y reproduce contenido después de conectar
-- **[Anuncios](./announcements)** - Buclé una carpeta de diapositivas de un proveedor conectado
-- **[Descripción General de Proveedores de Contenido](./index.md)** - Ver todos los proveedores disponibles
+- **[Explorar y descargar contenido](./browsing-content)**: navegue por las carpetas y reproduzca contenido después de conectarse
+- **[Anuncios](./announcements)**: reproduzca en bucle una carpeta de diapositivas de un proveedor conectado
+- **[Descripción general de los proveedores de contenido](./index.md)**: consulte todos los proveedores disponibles

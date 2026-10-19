@@ -36,22 +36,38 @@ The header at the top of the screen shows the name of the current folder, or the
 
 You can drill as deep as the provider's content structure allows. The browser keeps track of your folder path so you can navigate back through each level.
 
+## Browsing Lessons.church
+
+The [Lessons.church](../../lessons-church/) library is organized the same way as its website. At the top level you'll see two folders:
+
+- **Lessons** - Drill in by **program**, then **study**, then **lesson**. Each lesson then lists its **venues**, which are versions of the lesson for a particular age group or setting, such as Preschool or Elementary. Select a venue to open the download screen for that version of the lesson
+- **Add-Ons** - Extra videos and resources, grouped by category
+
+Press **Back** at any level to go up one step.
+
 ## Downloading and Playing Content
 
-When you select a folder that contains playable files (or select an individual file), FreePlay moves to a download screen:
+When you select a folder that contains playable files (or select an individual file), FreePlay shows the content title with a cover image and two choices:
 
-1. The content title appears on screen with a cover image from the selected folder
-2. A progress bar shows **Downloading item X of Y** as files are saved to your device
-3. Once downloading is complete, the **Start** button appears with a play icon
-4. Press **Select** to begin playback
+- **Download** - Save every file to the TV first, so playback doesn't depend on Wi-Fi. A progress bar fills as each file is saved. When it's done, the **Start** button appears with a play icon. Press **Select** to begin playback
+- **Stream** - Start playing right away over the internet without saving the files
 
 :::tip
-Downloaded content is cached on your TV. If you play the same content again later, it loads instantly without re-downloading.
+Download lessons before Sunday morning while your building has a strong internet connection. Once downloaded, the content plays offline, and if you play it again later it loads instantly without downloading again.
 :::
+
+## Managing Downloads
+
+Open **Settings** at the bottom of the sidebar, then select **Downloads** to see everything saved on this TV:
+
+- Select a download to play it
+- Highlight a download and select the delete icon in its corner to remove it and free up storage
+
+If the screen says **No downloads yet**, nothing has been saved to this TV.
 
 ## Playing Provider Content
 
-Playback works the same way as lesson playback. Use these controls:
+Use these controls during playback:
 
 - **Right arrow** - Next item
 - **Left arrow** - Previous item
@@ -62,7 +78,7 @@ Playback works the same way as lesson playback. Use these controls:
 When you exit the player, you return to the content browser at the root level of the current provider.
 
 :::info
-For a complete reference of all player controls, see [Playing Lessons](../classroom-mode/playing-lessons).
+For a complete reference of all player controls, see [Playing Content](./playing-content).
 :::
 
 ## Switching Between Providers

@@ -57,7 +57,7 @@ Les inscrits choisissent les quantités lors de l'inscription, et les totaux com
 
 Chaque code affiche un décompte **Utilisations** pour que vous puissiez voir la fréquence de sa rédemption. Les inscrits obtiennent des commentaires instantanés lorsqu'ils appliquent un code — y compris des messages clairs quand un code a expiré, n'a pas commencé, ou a besoin de plus de participants.
 
-## Liste d'attente
+## Liste d'attente {#waitlist}
 
 Activez l'option **Activer la liste d'attente** dans la carte Paramètres d'enregistrement. Lorsque l'événement atteint la capacité :
 
@@ -69,7 +69,7 @@ Activez l'option **Activer la liste d'attente** dans la carte Paramètres d'enre
 Les enregistrements promus restent *en attente* jusqu'à ce que tout solde soit payé ; payer (ou ne rien avoir à payer) les confirme.
 :::
 
-## Le registre d'enregistrement
+## Le registre d'enregistrement {#the-registration-roster}
 
 Ouvrez un événement depuis la page Enregistrements pour voir chaque enregistrement. Le tableau affiche le **Nom**, les **Membres**, le **Type** (type de chaque participant), **Payé / Total** (avec un avertissement de solde quand de l'argent est toujours dû), le **Statut**, et la **Date**, plus les puces de comptage par type au-dessus du tableau.
 

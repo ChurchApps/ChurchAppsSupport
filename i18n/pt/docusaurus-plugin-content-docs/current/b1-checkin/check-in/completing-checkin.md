@@ -1,74 +1,73 @@
 ---
-title: "Completando Check-In"
+title: "Concluindo o Check-in"
 ---
 
-# Completando Check-In
+# Concluindo o Check-in
 
 <div class="article-intro">
 
-Depois de revisar sua família e fazer qualquer atribuição de grupo necessária, você está pronto para finalizar o check-in. Esta é a última etapa no fluxo de trabalho do quiosque -- o aplicativo envia presença, imprime rótulos e reinicia para a próxima família.
+Depois de revisar sua família e fazer as atribuições de grupo necessárias, você está pronto para finalizar o check-in. Esta é a última etapa do fluxo do quiosque — o aplicativo envia a presença, imprime as etiquetas e se reinicia para a próxima família.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
 - [Revise sua família](./household-review) na tela de revisão da família
-- [Atribua grupos](./group-assignment) a qualquer membro da família que precise fazer check-in em uma classe ou programa específico
-- Opcionalmente [adicione quaisquer convidados](./adding-guests) que estejam visitando com sua família
+- [Atribua grupos](./group-assignment) aos membros da família que precisam entrar em uma turma ou programa específico
+- Opcionalmente, [adicione visitantes](./adding-guests) que estão acompanhando sua família
 
 </div>
 
-## Como Fazer Check-In
+## Como fazer o check-in
 
-1. Da **tela de revisão da família**, toque no botão **Check-In** na parte inferior da tela.
-2. O aplicativo envia os dados de presença para o servidor e mostra uma **tela de sucesso** com uma marca de seleção verde e uma mensagem de boas-vindas.
+1. Na **tela de revisão da família**, toque no botão **Check-in** na parte inferior da tela.
+2. O aplicativo envia os dados de presença ao servidor e exibe uma **tela de sucesso** com um visto verde e uma mensagem de boas-vindas.
 
-É tudo o que é necessário. A presença de sua família foi registrada.
+É só isso. A presença da sua família já foi registrada.
 
-## Salas Cheias e Proporções de Voluntários
+## Salas lotadas e proporção de voluntários
 
-Se sua igreja configurou [limites de segurança](../../b1-admin/attendance/checkin-safety) em suas salas, o servidor as verifica antes de salvar:
+Se a sua igreja tiver configurado [limites de segurança](../../b1-admin/attendance/checkin-safety) nas salas, o servidor os verifica antes de salvar:
 
-- Se uma sala selecionada estiver **cheia ou fechada**, o check-in não passa e o aplicativo nomeia a sala para que você possa escolher uma diferente.
-- Se o horário do serviço tiver um [cronograma de check-in](../../b1-admin/attendance/setup#setting-a-check-in-schedule) e sua janela de check-in não estiver aberta agora, o check-in nas salas desse horário também é recusado. A tela **Can't check in yet** lista a sala como "room is full or closed"; toque em **Change Rooms** para escolher outro horário de serviço ou grupo.
+- Se uma sala selecionada estiver **lotada ou fechada**, o check-in não é concluído e o aplicativo informa o nome da sala para que você escolha outra.
+- Se o horário de culto tiver um [cronograma de check-in](../../b1-admin/attendance/setup#setting-a-check-in-schedule) e a janela de check-in dele não estiver aberta neste momento, o check-in nas salas desse horário também é recusado. A tela **Não é possível fazer check-in ainda** lista a sala com o motivo "o check-in não está aberto no momento"; toque em **Trocar salas** para escolher outro horário de culto ou grupo. (Horários de culto que já estão encerrados quando você [seleciona um culto](./selecting-service#when-check-in-isnt-open) ficam ocultos, então você normalmente só verá isso se uma janela fechar durante um check-in.)
+- Se uma sala infantil estiver **com falta de voluntários** para a proporção definida, o aplicativo mostra um aviso que um membro da equipe pode confirmar para prosseguir, ou bloqueia o check-in por completo — dependendo de como a sua igreja configurou a aplicação da proporção.
 
-- Se uma sala de crianças estiver **com falta de voluntários** para sua proporção, o aplicativo mostra um aviso que um membro da equipe pode confirmar para continuar, ou bloqueia o check-in completamente -- dependendo de como sua igreja configurou a aplicação de proporção.
+## Impressão de etiquetas
 
-## Impressão de Rótulos
+Se uma impressora de rede estiver configurada, o aplicativo imprime as etiquetas automaticamente após o check-in:
 
-Se uma impressora de rede estiver configurada, o aplicativo imprime automaticamente rótulos após o check-in:
-
-- **Rótulos de nome** são impressos para cada pessoa que é atribuída a um grupo que tem a configuração **Imprimir Etiqueta de Nome** ativada. Os rótulos de nome incluem o nome da pessoa, sua atribuição de grupo e informações de alergia/notas, se houver.
-- **Comprovantes de retirada dos pais** são impressos quando qualquer pessoa verificada está em um grupo que tem a configuração **Retirada dos Pais** ativada. Pessoas verificadas como **Voluntário** são ignoradas, para que um trabalhador de cuidados infantis servindo em uma sala de Retirada dos Pais não receba um comprovante de retirada. O comprovante de retirada lista as crianças, suas atribuições de grupo e um **código de segurança único de 4 caracteres**.
+- **Etiquetas de nome** são impressas para cada pessoa atribuída a um grupo que tenha a configuração **Imprimir crachá** ativada. As etiquetas incluem o nome da pessoa, a atribuição de grupo e as informações de alergias ou observações, se houver algo cadastrado.
+- **Comprovantes de retirada pelos pais** são impressos quando qualquer pessoa com check-in está em um grupo que tenha a configuração **Retirada pelos pais** ativada. Pessoas com check-in como **Voluntário** são ignoradas, então um trabalhador da creche que serve em uma sala de Retirada pelos pais não recebe comprovante. O comprovante lista as crianças, as atribuições de grupo delas e um **código de segurança de 4 caracteres** exclusivo.
 
 :::info
-O mesmo código de segurança aparece tanto no rótulo de nome da criança quanto no comprovante de retirada dos pais. No momento da retirada, os voluntários combinam os códigos para verificar que o adulto certo está pegando cada criança.
+O mesmo código de segurança aparece na etiqueta de nome da criança e no comprovante de retirada dos pais. Na hora da retirada, os voluntários comparam os códigos para confirmar que o adulto certo está buscando cada criança.
 :::
 
-O código de segurança é gerado fresco para cada check-in e usa apenas consoantes e dígitos (vogais são excluídas para evitar formar palavras impróprias).
+O código de segurança é gerado novamente a cada check-in e usa apenas consoantes e dígitos (as vogais são excluídas para não formar palavras inadequadas).
 
 :::warning
-Se os rótulos não forem impressos, abra as Configurações de Admin tocando no **logotipo da igreja** sete vezes, depois toque em **Mudar Impressora** para verificar a conexão da impressora. Veja [Configuração de Impressora](../getting-started/printer-setup) para etapas de solução de problemas.
+Se as etiquetas não forem impressas, abra as Configurações do Administrador tocando **no logotipo da igreja** sete vezes e depois toque em **Trocar impressora** para verificar a conexão com a impressora. Veja [Configuração da Impressora](../getting-started/printer-setup) para as etapas de solução de problemas.
 :::
 
-## O Que Acontece Após Check-In
+## O que acontece depois do check-in
 
-- Se uma impressora estiver configurada, o aplicativo imprime todos os rótulos e depois retorna automaticamente para a **tela de pesquisa**, pronto para a próxima família.
-- Se nenhuma impressora estiver configurada, a tela de sucesso é exibida por alguns segundos e depois retorna automaticamente para a **tela de pesquisa**.
+- Se uma impressora estiver configurada, o aplicativo imprime todas as etiquetas e depois volta automaticamente para a **tela de busca**, pronto para a próxima família.
+- Se nenhuma impressora estiver configurada, a tela de sucesso aparece por alguns segundos e depois volta automaticamente para a **tela de busca**.
 
-Você não precisa tocar em nada para voltar à tela de pesquisa -- o aplicativo lida com a transição automaticamente.
+Você não precisa tocar em nada para voltar à tela de busca — o aplicativo faz a transição automaticamente.
 
 :::tip
-O aplicativo reinicia completamente após cada check-in, então não há risco de uma família ver as informações de outra família.
+O aplicativo é totalmente reiniciado após cada check-in, então não há risco de uma família ver as informações de outra.
 :::
 
-## O Que Fica Registrado
+## O que é registrado
 
-Quando você toca **Check-In**, o aplicativo envia o seguinte para o servidor para cada membro da família que tem uma atribuição de grupo:
+Quando você toca em **Check-in**, o aplicativo envia o seguinte ao servidor para cada membro da família que tenha uma atribuição de grupo:
 
-- A **pessoa** fazendo check-in
-- O **serviço** que estão assistindo
-- A **hora do serviço** e **grupo** aos quais estão atribuídos
+- A **pessoa** que está fazendo o check-in
+- O **culto** que ela está frequentando
+- O **horário de culto** e o **grupo** aos quais ela está atribuída
 
-Esses dados aparecem no B1 Admin na seção Presença, onde os administradores de sua igreja podem visualizar e gerenciar registros de presença. Veja o [guia de administração de check-in](../../b1-admin/attendance/check-in.md) para detalhes.
+Esses dados aparecem no B1 Admin, na seção de Presença, onde os administradores da sua igreja podem visualizar e gerenciar os registros de presença. Veja o [guia de administração do check-in](../../b1-admin/attendance/check-in.md) para mais detalhes.

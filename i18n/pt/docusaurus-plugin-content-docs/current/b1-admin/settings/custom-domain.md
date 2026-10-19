@@ -1,48 +1,48 @@
 ---
-title: "Domínio Personalizado"
+title: "Domínio personalizado"
 ---
 
-# Domínio Personalizado
+# Domínio personalizado
 
 <div class="article-intro">
 
-Você pode apontar seu próprio domínio (por exemplo, **www.yourchurch.org**) para seu site B1 para que os visitantes o alcancem no endereço web real de sua igreja, em vez do endereço padrão yourchurch.1.church.
+Você pode apontar o seu próprio domínio (por exemplo, **www.suaigreja.org**) para o seu site do B1, para que os visitantes acessem o endereço web real da sua igreja, em vez do endereço padrão suaigreja.b1.church.
 
 </div>
 
-## Passo 1 — Adicione o Registro DNS Primeiro
+## Passo 1 — Adicione primeiro o registro DNS
 
-Antes de adicionar seu domínio no B1, você precisa apontá-lo para os servidores B1 em seu registrador de domínio (GoDaddy, Namecheap, Cloudflare, etc.).
+Antes de adicionar seu domínio no B1, você precisa apontá-lo para os servidores do B1 no seu registrador de domínios (GoDaddy, Namecheap, Cloudflare etc.).
 
-Adicione um desses registros -- CNAME é preferido:
+Adicione um destes registros -- o CNAME é o preferido:
 
-| Type (Tipo) | Host | Value (Valor) |
+| Tipo | Host | Valor |
 |------|------|-------|
 | CNAME | `www` | `proxy.b1.church` |
-| A | `yourchurch.org` | `3.23.251.61` |
+| A | `suaigreja.org` | `3.23.251.61` |
 
-Use o **CNAME** para seu endereço `www`. Use o **registro A** se seu registrador não suportar CNAME em um domínio raiz/apex (sem www), ou se você quiser que o domínio raiz também funcione.
+Use o **CNAME** para o seu endereço `www`. Use o **registro A** se o seu registrador não oferecer suporte a CNAME no domínio raiz (sem www), ou se você quiser que o domínio raiz também funcione.
 
-As alterações de DNS podem levar alguns minutos a algumas horas para entrar em vigor.
+As alterações de DNS podem levar de alguns minutos a algumas horas para ter efeito.
 
-## Passo 2 — Adicione o Domínio no B1
+## Passo 2 — Adicione o domínio no B1
 
-Depois que o DNS aponta para o B1:
+Quando o DNS estiver apontando para o B1:
 
-1. Vá para **Settings** (Configurações) no B1 Admin.
-2. Clique em **Domains** (Domínios) na lista à esquerda e depois em **Edit** (Editar) na seção **Domains** (Domínios).
-3. Digite seu domínio no campo e clique em **Save** (Salvar).
+1. Vá em **Configurações** no B1 Admin.
+2. Clique em **Domínios** na lista à esquerda e depois em **Editar** na seção **Domínios**.
+3. Digite o seu domínio no campo e clique em **Salvar**.
 
-Você não precisa clicar no botão **+** primeiro -- um domínio deixado digitado no campo é adicionado quando você salva. Use **+** (ou pressione **Enter**) quando você deseja adicionar vários domínios à lista antes de salvar.
+Você não precisa clicar primeiro no botão **+** -- um domínio deixado digitado no campo é adicionado quando você salva. Use o **+** (ou pressione **Enter**) quando quiser adicionar vários domínios à lista antes de salvar.
 
-O B1 trata SSL automaticamente -- nenhuma compra de certificado necessária.
+O B1 cuida do SSL automaticamente -- não é necessário comprar certificado.
 
 :::warning
-Se você adicionar o domínio no B1 antes que seus registros de DNS estejam em vigor, ele não será salvo. Sempre configure o DNS primeiro.
+Se você adicionar o domínio no B1 antes de os registros DNS estarem configurados, ele não será salvo. Configure sempre o DNS primeiro.
 :::
 
-## Verificando se está Funcionando
+## Verificando se está funcionando
 
-Depois de salvar, visite seu domínio em um navegador. Se ele carregar seu site B1, você terminou. Se você vir um erro, o DNS ainda pode estar se propagando -- aguarde alguns minutos e tente novamente.
+Depois de salvar, acesse o seu domínio em um navegador. Se ele carregar o seu site do B1, está tudo pronto. Se aparecer um erro, o DNS pode ainda estar se propagando -- aguarde alguns minutos e tente novamente.
 
-Você também pode verificar a propagação de DNS em [dnschecker.org](https://dnschecker.org) -- procure seu domínio e procure seu registro CNAME ou A aparecendo.
+Você também pode verificar a propagação do DNS em [dnschecker.org](https://dnschecker.org) -- pesquise o seu domínio e procure o seu registro CNAME ou A aparecendo.

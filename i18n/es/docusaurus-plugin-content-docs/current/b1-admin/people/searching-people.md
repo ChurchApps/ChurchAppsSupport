@@ -1,97 +1,98 @@
 ---
-title: "Buscar Personas"
+title: "Buscar personas"
 ---
 
-# Buscar Personas
+# Buscar personas
 
 <div class="article-intro">
 
-La página **People** muestra tu directorio de iglesia como una lista que se puede buscar por hogares, o como una tabla que se puede ordenar de personas individuales. Puedes encontrar rápidamente a cualquiera de tu congregación, personalizar qué información se muestra y exportar tus resultados. La búsqueda eficiente es esencial para tareas cotidianas de administración de iglesias como hacer seguimiento de visitantes, preparar listas de contactos y gestionar registros de miembros.
+La página de **Personas** muestra el directorio de su iglesia como una lista con búsqueda de hogares, o como una tabla ordenable de personas individuales. Puede encontrar rápidamente a cualquier persona de su congregación, personalizar la información que se muestra y exportar sus resultados. Una búsqueda eficiente es esencial para las tareas diarias de administración de la iglesia, como dar seguimiento a los visitantes, preparar listas de contactos y gestionar los registros de los miembros.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Necesitas una cuenta B1 Admin activa con permiso para ver personas. Consulta [Roles y Permisos](roles-permissions.md) si no estás seguro de tu nivel de acceso.
-- Tu directorio de iglesia debe tener personas en él. Si aún no has agregado a nadie, consulta [Agregar Personas](adding-people.md) o [Importar Datos](importing-data.md).
+- Necesita una cuenta activa de B1 Admin con permiso para ver personas. Consulte [Roles y permisos](roles-permissions.md) si no está seguro de su nivel de acceso.
+- Su directorio de la iglesia debe tener personas registradas. Si todavía no ha agregado a nadie, consulte [Agregar personas](adding-people.md) o [Importar datos](importing-data.md).
 
 </div>
 
-## Vistas por Hogar y Tabla
+## Hogares y vistas de tabla
 
-La página People enumera tu directorio por **hogar**, agrupado alfabéticamente. Cada fila muestra las fotos del hogar, su nombre (por ejemplo, "The Smith Family"), y los nombres de todos sus miembros. Haz clic en un hogar para abrir el perfil del jefe de hogar, o haz clic en el nombre de cualquier miembro para abrir a esa persona. Un recuento sobre la lista muestra cuántos hogares y personas se están mostrando.
+La página de Personas muestra su directorio por **hogar**, agrupado alfabéticamente. Cada fila muestra las fotos del hogar, su nombre (por ejemplo, "La familia Smith") y los nombres de todas las personas que lo integran. Haga clic en un hogar para abrir el perfil del jefe de hogar, o haga clic en el nombre de un miembro para abrir ese perfil. Un contador sobre la lista indica cuántos hogares y personas se muestran.
 
-Usa el selector **View as** encima de la lista para cambiar entre **Households** y **Table**. La vista **Table** muestra una persona por fila y es donde puedes ordenar y elegir columnas (ver abajo). B1 recuerda tu elección en ese dispositivo.
+Use el selector **Ver como** sobre la lista para cambiar entre **Hogares** y **Tabla**. La vista **Tabla** muestra una persona por fila y es donde puede ordenar y elegir columnas (vea más abajo). B1 recuerda su elección en ese dispositivo.
 
-De forma predeterminada, la página carga la primera parte de tu directorio. Si tienes más personas, haz clic en **Show All Members** debajo de la lista para cargar a todos.
+De forma predeterminada, la página carga la primera parte de su directorio. Si tiene más personas, haga clic en **Mostrar todos los miembros** debajo de la lista para cargar a todos.
 
-## Búsqueda Rápida
+## Búsqueda rápida
 
-El cuadro **Find a household or person** en la parte superior de la página People te permite encontrar miembros en tiempo real:
+El cuadro **Buscar un hogar o una persona** en la parte superior de la página de Personas le permite encontrar miembros en tiempo real:
 
-1. Haz clic en el **cuadro de búsqueda** en la parte superior de la página People.
-2. Comienza a escribir un nombre.
-3. Los resultados se filtrarán automáticamente a medida que escribas (hay un breve retraso de aproximadamente medio segundo para que la búsqueda no se ejecute en cada pulsación de tecla).
-4. La lista a continuación se actualiza para mostrar solo los resultados coincidentes.
+1. Haga clic en el **cuadro de búsqueda** en la parte superior de la página de Personas.
+2. Empiece a escribir un nombre.
+3. Los resultados se filtran automáticamente mientras escribe (hay una breve pausa de medio segundo para que la búsqueda no se ejecute con cada pulsación).
+4. La lista de abajo se actualiza para mostrar solo los resultados coincidentes.
 
-Haz clic en **Clear** (debajo del cuadro de búsqueda) para restablecer la búsqueda y mostrar de nuevo todo tu directorio.
+Haga clic en **Borrar** (debajo del cuadro de búsqueda) para restablecer la búsqueda y volver a mostrar todo su directorio.
 
 :::tip
-No necesitas presionar Enter. La búsqueda se ejecuta automáticamente después de que dejes de escribir.
+No necesita presionar Intro. La búsqueda se ejecuta automáticamente cuando deja de escribir.
 :::
 
-## Ordenar Resultados
+## Ordenar resultados
 
-Puedes ordenar el directorio haciendo clic en cualquier encabezado de columna en la vista **Table**:
+En la vista **Tabla**, las personas aparecen ordenadas por apellido y luego por nombre. Puede ordenar el directorio de otra forma haciendo clic en cualquier encabezado de columna:
 
-1. Haz clic en un **encabezado de columna** (por ejemplo, **Name** o **Email**) para ordenar por esa columna.
-2. Haz clic en el mismo encabezado nuevamente para invertir el orden de clasificación.
+1. Haga clic en un **encabezado de columna** (por ejemplo, **Nombre** o **Correo electrónico**) para ordenar por esa columna.
+2. Haga clic de nuevo en el mismo encabezado para invertir el orden.
 
-Esto facilita encontrar personas alfabéticamente, por edad o por cualquier otra columna visible.
+Así es fácil encontrar personas alfabéticamente, por edad o por cualquier otra columna visible.
 
-## Personalizar Columnas
+## Personalizar columnas
 
-No es necesario que todas las piezas de información sean visibles a la vez. Puedes elegir qué columnas aparecen en la tabla:
+No es necesario que toda la información esté visible al mismo tiempo. Puede elegir qué columnas aparecen en la tabla:
 
-1. Haz clic en el icono **Select columns** en el encabezado de la página People. (Las columnas se aplican a la vista **Table**.)
-2. Marca o desmarca columnas para mostrarlas u ocultarlas. Las columnas disponibles incluyen:
-   - **Photo**
-   - **Name**
-   - **Email**
-   - **Phone**
-   - **Address**
-   - **Birth Date**
-   - **Age**
-   - **Gender**
-   - **Membership Status**
+1. Haga clic en el icono **Seleccionar columnas** en el encabezado de la página de Personas. (Las columnas se aplican a la vista **Tabla**.)
+2. Marque o desmarque columnas para mostrarlas u ocultarlas. Las columnas disponibles incluyen:
+   - **Foto**
+   - **Nombre**
+   - **Correo electrónico**
+   - **Teléfono**
+   - **Dirección**
+   - **Fecha de nacimiento**
+   - **Edad**
+   - **Género**
+   - **Estado de membresía**
    - **Campus**
-3. La tabla se actualiza inmediatamente para reflejar tus selecciones.
+3. La tabla se actualiza de inmediato para reflejar sus selecciones.
 
-### Mostrar Campos Personalizados como Columnas
+### Mostrar campos personalizados como columnas {#showing-custom-fields-as-columns}
 
-El selector de columnas tiene dos pestañas: **Standard** contiene las columnas integradas listadas arriba, y **Custom** contiene los [Campos Personalizados](../settings/custom-fields.md) de tu iglesia junto con las preguntas de cualquier formulario de People. Marca un campo personalizado en la pestaña **Custom** para agregarlo como columna, y el valor de cada persona para ese campo aparece en la tabla. Los valores se muestran de la misma manera que en el perfil de la persona -- los campos Sí/No muestran *Sí* o *No*, los campos de opción múltiple muestran la etiqueta de la opción, y las fechas se muestran como fechas cortas. Las personas sin valor para el campo muestran una celda en blanco.
+El selector de columnas tiene dos pestañas: **Estándar** contiene las columnas integradas que aparecen arriba, y **Personalizado** contiene los [Campos personalizados](../settings/custom-fields.md) de su iglesia junto con las preguntas de cualquier formulario de Personas. Marque un campo personalizado en la pestaña **Personalizado** para agregarlo como columna, y el valor de cada persona para ese campo aparecerá en la tabla. Los valores se muestran igual que en el perfil de la persona: los campos Sí/No muestran *Sí* o *No*, los campos de Opción múltiple muestran la etiqueta de la opción y las fechas se muestran como fechas cortas. Las personas sin valor para el campo muestran una celda en blanco.
 
-## Exportar Resultados de Búsqueda
 
-Puedes descargar tus resultados de búsqueda actuales como un archivo CSV en cualquier momento:
+## Exportar resultados de búsqueda
 
-1. Aplica cualquier búsqueda o filtro que desees.
-2. Haz clic en el botón **Export** en el encabezado de la página People.
-3. Un archivo CSV se descargará en tu computadora, listo para abrirse en Excel, Google Sheets o cualquier aplicación de hojas de cálculo.
+Puede descargar sus resultados de búsqueda actuales como archivo CSV en cualquier momento:
 
-Para más detalles sobre exportación, consulta [Exportar Datos](./exporting-data.md).
+1. Aplique las búsquedas o filtros que desee.
+2. Haga clic en el botón **Exportar** en el encabezado de la página de Personas.
+3. Se descargará un archivo CSV a su computadora, listo para abrirlo en Excel, Google Sheets o cualquier aplicación de hojas de cálculo.
+
+Para más detalles sobre la exportación, consulte [Exportar datos](./exporting-data.md).
 
 :::tip
-Para consultas más avanzadas -- como encontrar a todos los que no han asistido en los últimos tres meses -- prueba la función [AI Search](./ai-search.md), que te permite buscar usando preguntas en lenguaje natural.
+Para consultas más avanzadas, como encontrar a todas las personas que no han asistido en los últimos tres meses, pruebe la función [Búsqueda con IA](./ai-search.md), que le permite buscar usando preguntas en lenguaje natural.
 :::
 
-## Búsqueda Avanzada
+## Búsqueda avanzada {#advanced-search}
 
-Advanced Search te permite construir filtros precisos combinando condiciones. Ábrelo haciendo clic en **Advanced** debajo del cuadro de búsqueda en la página People, luego expande una categoría y marca los campos en los que deseas filtrar, eligiendo un operador y un valor para cada uno. Las categorías incluyen **Names**, **Demographics**, **Contact**, **Membership**, **Activity** (donaciones y asistencia) y **Custom Fields**.
+La búsqueda avanzada le permite crear filtros precisos combinando condiciones. Ábrala haciendo clic en **Avanzada** debajo del cuadro de búsqueda en la página de Personas; luego expanda una categoría y marque los campos por los que desea filtrar, eligiendo un operador y un valor para cada uno. Las categorías incluyen **Nombres**, **Demografía**, **Contacto**, **Membresía**, **Actividad** (donaciones y asistencia) y **Campos personalizados**.
 
-La categoría **Custom Fields** enumera los [Campos Personalizados](../settings/custom-fields.md) de tu iglesia -- los campos que defines en Settings para rastrear tu propia información (como una fecha de vencimiento de verificación de antecedentes). Los operadores ofrecidos coinciden con el tipo de cada campo: los campos de texto admiten *contains / equals / starts with / ends with*, los campos de número admiten operadores de comparación, los campos de fecha admiten *equals / after / before*, y los campos Sí/No y opción múltiple te permiten elegir un valor. Cualquier campo en el que puedas filtrar aquí puede guardarse como una [List](./lists.md) en vivo.
+La categoría **Campos personalizados** muestra los [Campos personalizados](../settings/custom-fields.md) de su iglesia: los campos que usted define en Configuración para registrar su propia información (como la fecha de vencimiento de una verificación de antecedentes). Los operadores disponibles coinciden con el tipo de cada campo: los campos de texto admiten *contiene / es igual a / empieza con / termina con*, los campos numéricos admiten los operadores de comparación, los campos de fecha admiten *es igual a / después de / antes de*, y los campos Sí/No y de Opción múltiple le permiten elegir un valor. Cualquier campo por el que pueda filtrar aquí puede guardarse como una [Lista](./lists.md) dinámica.
 
-## Guardar Búsquedas como Listas
+## Guardar búsquedas como listas
 
-Después de ejecutar una búsqueda, un botón **Save as List** aparece en el encabezado de la página People. Haz clic en él para almacenar tu consulta actual bajo un nombre y categoría opcional, para que puedas recargarla instantáneamente en futuras sesiones. Consulta [Saved Lists](./lists.md) para obtener todos los detalles.
+Después de ejecutar una búsqueda, aparece un botón **Guardar como lista** en el encabezado de la página de Personas. Haga clic en él para guardar su consulta actual con un nombre y una categoría opcional, de modo que pueda volver a cargarla al instante en futuras sesiones. Consulte [Listas guardadas](./lists.md) para más detalles.

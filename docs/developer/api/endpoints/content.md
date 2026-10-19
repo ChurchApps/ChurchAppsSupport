@@ -234,9 +234,13 @@ Base path: `/content/events`
 | GET | `/subscribe?churchId=&groupId=&curatedCalendarId=` | Public | — | Subscribe to events as ICS calendar feed |
 | GET | `/group/:groupId` | JWT | — | Get events for a group (includes exception dates) |
 | GET | `/public/group/:churchId/:groupId` | Public | — | Get public events for a group |
+| GET | `/public/:churchId/:id` | Public | — | Get one event for its public page, with `roomNames` (rooms from bookings that are not rejected). Returns `null` for pending or rejected events and for private events that don't take registrations |
+| GET | `/public/:churchId/:id/ical` | Public | — | Download that single event as an `.ics` file (`text/calendar`, exception dates applied). `404` when the event is hidden by the same rules |
 | GET | `/:id` | JWT | — | Get an event by ID |
 | POST | `/` | JWT | — | Create or update events (batch) |
 | DELETE | `/:id` | JWT | Content.Edit | Delete an event |
+
+Event records include `photoUrl` (the 16:9 event photo shown on the public event page and upcoming-event tiles), `tags` (comma-separated, used by the website Calendar element's tag filter), and `notesViewRole` / `notesPostRole` (`staff` when `null`, `leaders`, or `members`), which gate the event's `eventNote` conversation — see [Group and event notes access control](./messaging.md#group-and-event-notes-access-control). Public curated-event responses also carry each event's `photoUrl` and `tags`.
 
 ## Event Exceptions
 

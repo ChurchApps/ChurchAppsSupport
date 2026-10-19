@@ -1,41 +1,50 @@
 ---
-title: "सामग्री प्रदाता"
+title: "Content Providers"
 ---
 
-# सामग्री प्रदाता
+# Content Providers
 
 <div class="article-intro">
 
-सामग्री प्रदाता बाहरी सेवाएं हैं जो आपके टीवी पर प्लेबैक के लिए पाठ सामग्री, वीडियो और छवियां प्रदान करते हैं। FreePlay कई प्रदाताओं का समर्थन करता है, जिससे आप विभिन्न स्रोतों से सामग्री ब्राउज़ और डाउनलोड कर सकते हैं सभी एक ऐप में।
+Content providers बाहरी सेवाएं हैं जो आपके TV पर चलाने के लिए lesson सामग्री, videos और images उपलब्ध कराती हैं। FreePlay कई providers का समर्थन करता है, जिससे आप एक ही app में अलग-अलग स्रोतों से content browse और download कर सकते हैं।
 
 </div>
 
-## उपलब्ध प्रदाता
+## उपलब्ध Providers
 
-FreePlay वर्तमान में निम्नलिखित प्रदाताओं को शामिल करता है:
+FreePlay में वर्तमान में ये providers शामिल हैं:
 
-- **[Lessons.church](../../lessons-church/)** - मुफ्त, खुला स्रोत बाल मंत्रालय पाठ्यक्रम
-- **Bible Project** - बाइबल की खोज करने वाले वीडियो और संसाधन
-- **SignPresenter** - चर्चों के लिए प्रस्तुति और साइनेज सामग्री
-- **B1.church** - आपके स्वयं के B1 चर्च सेटअप से सामग्री
-- **Go Curriculum** - gocurriculum.com से पाठ्यक्रम, संग्रह और पाठ द्वारा संगठित
-- **Google Drive** - अपने स्वयं के Google Drive से वीडियो और ऑडियो फाइलें ब्राउज़ करें और चलाएं
-- **FreeShow** - FreePlay एक ही नेटवर्क पर कंप्यूटर पर चल रहे FreeShow को खोजता है और इससे जुड़ता है
+- **[Lessons.church](../../lessons-church/)** - मुफ्त, open-source बच्चों के ministry curriculum
+- **Bible Project** - Bible की खोज करने वाले videos और संसाधन
+- **SignPresenter** - चर्चों के लिए presentation और signage content
+- **B1.church** - आपके अपने B1 church setup की content
+- **Go Curriculum** - gocurriculum.com से curriculum, collection और lesson के अनुसार व्यवस्थित
+- **Dropbox** - अपने Dropbox से images और videos browse करें और चलाएं
+- **Jesus Film Project** - Jesus Film Project की films और video clips
+- **OneDrive** - अपने Microsoft OneDrive से images, videos और audio browse करें और चलाएं
 
-:::info
-कुछ प्रदाता अभी भी जोड़े जा रहे हैं। यदि कोई प्रदाता कार्ड "जल्द ही आ रहा है" दिखाता है, तो यह अभी तक कनेक्शन के लिए उपलब्ध नहीं है।
+:::note
+Google Drive और FreeShow अब FreePlay TV app में नहीं दिखाए जाते। अपने TVs पर Google Drive की content उपयोग करने के लिए, उसे [FreePlay Admin](../scheduled-mode/building-playlists#connecting-providers) में connect करें, files को एक playlist में जोड़ें, और वह playlist schedule करें।
 :::
 
-## प्रदाता कैसे काम करते हैं
+:::info
+कुछ providers अभी जोड़े जा रहे हैं। यदि कोई provider card "Coming Soon" दिखाता है, तो वह अभी connection के लिए उपलब्ध नहीं है।
+:::
 
-प्रत्येक प्रदाता के पास इसकी अपनी सामग्री लाइब्रेरी है जो फ़ोल्डर और फाइलों में संगठित है। एक बार जब आप किसी प्रदाता से जुड़ जाते हैं, तो इसकी सामग्री एक फ़ोल्डर ब्राउज़र में दिखाई देती है जहां आप श्रेणियों में ड्रिल कर सकते हैं, आइटम्स चुन सकते हैं, और उन्हें प्लेबैक के लिए डाउनलोड कर सकते हैं।
+## Providers कैसे काम करते हैं
 
-जुड़े हुए प्रदाता स्क्रीन के बाईं ओर साइडबार में दिखाई देते हैं, **ब्राउज़** शीर्षक के तहत। आप साइडबार में उन्हें चुनकर प्रदाताओं के बीच स्विच कर सकते हैं, जिससे सेटअप के दौरान सामग्री स्रोतों के बीच कूदना आसान हो जाता है।
+हर provider की अपनी content library होती है जो folders और files में व्यवस्थित होती है। एक बार आप किसी provider से connect कर लें, तो उसकी content एक folder browser में दिखती है, जहां आप categories में जा सकते हैं, items चुन सकते हैं, और उन्हें चलाने के लिए download कर सकते हैं।
 
-आप किसी भी जुड़े हुए प्रदाता से एक फ़ोल्डर चुन सकते हैं जो आपके टीवी पर [घोषणाओं](./announcements) के रूप में लूप करे।
+Connected providers स्क्रीन के बाईं ओर sidebar में, **Browse** heading के अंतर्गत दिखते हैं। आप sidebar में उन्हें चुनकर providers के बीच switch कर सकते हैं, जिससे setup के दौरान content स्रोतों के बीच आसानी से जाया जा सकता है।
 
-## इस सेक्शन में
+आप किसी भी connected provider से एक folder चुन सकते हैं, ताकि उसे अपने TV पर [announcements](./announcements) के रूप में loop किया जाए।
 
-- **[प्रदाताओं से कनेक्ट करना](./connecting-providers)** - प्रमाणीकरण और कनेक्ट कैसे करें
-- **[सामग्री ब्राउज़ करना और डाउनलोड करना](./browsing-content)** - फ़ोल्डर नेविगेट करें, फाइलें डाउनलोड करें, और सामग्री चलाएं
-- **[घोषणाएं](./announcements)** - किसी प्रदाता से स्लाइड का एक फ़ोल्डर लूप करें
+:::tip
+TV पर आप जो providers connect करते हैं, वे केवल उसी TV के लिए होते हैं। यदि आप [Scheduled Mode](../scheduled-mode/) उपयोग करते हैं, तो इसके बजाय providers को एक बार FreePlay Admin में connect करें, और हर scheduled screen उनसे content चला सकेगी।
+:::
+
+## इस Section में
+
+- **[Providers से Connect करना](./connecting-providers)** - प्रमाणीकरण करके connect कैसे करें
+- **[Content Browse और Download करना](./browsing-content)** - folders में जाएं, files download करें, और content चलाएं
+- **[Announcements](./announcements)** - किसी provider के folder के slides को loop करें

@@ -6,15 +6,15 @@ title: "LessonsApp"
 
 <div class="article-intro">
 
-LessonsApp er applikasjonen for leksjonsinnholdsadministrasjon for [Lessons.church](https://lessons.church). Den tilbyr et grensesnitt for å opprette, organisere og publisere kirkens leksjonspensum, bygget med Next.js og React.
+LessonsApp er applikasjonen for administrasjon av leksjonsinnhold for [Lessons.church](https://lessons.church). Den gir et grensesnitt for å lage, organisere og publisere læreplaner for menigheter, og er bygget med Next.js og React.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Installer **Node.js 22+** og **Git** -- se [Forutsetninger](../setup/prerequisites)
-- Konfigurer API-målet ditt (staging eller lokalt) -- se [Miljøvariabler](../setup/environment-variables)
+- Installer **Node.js 22+** og **Git**. Se [Forutsetninger](../setup/prerequisites)
+- Konfigurer API-målet ditt (lokal LessonsApi). Se [miljøvariabler](../setup/environment-variables)
 
 </div>
 
@@ -24,7 +24,7 @@ LessonsApp krever Node.js 22 eller nyere. Tidligere versjoner støttes ikke.
 
 ## Oppsett
 
-### 1. Klon repositoriet
+### 1. Klon repositoryet
 
 ```bash
 git clone https://github.com/ChurchApps/LessonsApp.git
@@ -39,13 +39,13 @@ npm install
 
 ### 3. Konfigurer miljøvariabler
 
-Kopier miljøeksempelfilen til `.env` og konfigurer API-endepunktene:
+Kopier eksempelfilen for miljøvariabler til `.env` og konfigurer API-endepunktene:
 
 ```bash
 cp dotenv.sample.txt .env
 ```
 
-Oppdater API-endepunkt-URL-ene til å peke mot enten staging-API-et eller din lokale API-instans.
+Oppdater URL-ene for API-endepunktene slik at de peker på din lokale LessonsApi-instans (`http://localhost:8090`). Staging-API-et for Lessons er avviklet, så bytt ut eventuelle `api.staging.lessons.church`-URL-er som står igjen i eksempelfilen.
 
 ### 4. Start utviklingsserveren
 
@@ -58,28 +58,28 @@ Next.js-utviklingsserveren starter på [http://localhost:3501](http://localhost:
 ## Viktige kommandoer
 
 | Kommando | Beskrivelse |
-|----------|-------------|
-| `npm run dev` | Start Next.js-utviklingsserver på port 3501 |
-| `npm run build` | Produksjonsbygging via Next.js |
+|---------|-------------|
+| `npm run dev` | Start Next.js-utviklingsserveren på port 3501 |
+| `npm run build` | Produksjonsbygg via Next.js |
 
-## Teknologistabel
+## Teknologistakk
 
 - **Next.js 16** med TypeScript
 - **React 19** for UI-komponenter
 - **`@churchapps/apphelper*`**-pakker for delte komponenter
 
 :::info
-LessonsApp kommuniserer med **LessonsApi**-backenden, som er et separat API fra hoved-ChurchApps Api. Sørg for at miljøet ditt er konfigurert med riktig Lessons API-endepunkt.
+LessonsApp kommuniserer med **LessonsApi**-backenden, som er et eget API som er separat fra hovedAPI-et for ChurchApps. Sørg for at miljøet ditt er konfigurert med riktig Lessons-API-endepunkt.
 :::
 
 ## Distribusjon
 
-Produksjonsbygginger distribueres til **S3 + CloudFront**:
+Produksjonsbygg distribueres til **S3 + CloudFront**:
 
-1. `npm run build` genererer den optimaliserte Next.js-byggingen
-2. Byggeutdata synkroniseres til en S3-bøtte
-3. CloudFront-invalidering utløses for å levere den nye versjonen
+1. `npm run build` lager det optimaliserte Next.js-bygget
+2. Byggresultatet synkroniseres til en S3-bøtte
+3. En CloudFront-invalidering utløses for å servere den nye versjonen
 
 :::tip
-For detaljerte distribusjonsinstruksjoner, se guiden for [Webappdistribusjon](../deployment/web-apps).
+For detaljerte distribusjonsinstruksjoner, se veiledningen [Distribusjon av webapper](../deployment/web-apps).
 :::

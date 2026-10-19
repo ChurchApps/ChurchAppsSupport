@@ -1,135 +1,141 @@
 ---
-title: "Ordem de Serviço"
+title: "Ordem do Culto"
 ---
 
-# Ordem de Serviço
+# Ordem do Culto
 
 <div class="article-intro">
 
-A ordem de serviço define a sequência de elementos em seu serviço de adoração. Use-a para definir tudo desde a música de abertura até a oração de encerramento, para que sua equipe inteira saiba o fluxo do serviço com antecedência.
+A ordem do culto define a sequência dos elementos do seu culto de adoração. Use-a para organizar tudo, desde a música de abertura até a oração de encerramento, para que toda a sua equipe conheça antecipadamente o andamento do culto.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de começar</h4>
+<h4>Antes de Começar</h4>
 
-- [Crie um plano de serviço](./plans.md) para a data em que você quer construir uma ordem de serviço
-- Opcionalmente, adicione [músicas](./songs.md) à sua biblioteca para que você possa vinculá-las diretamente à ordem de serviço
+- [Crie um plano de culto](./plans.md) para a data para a qual você quer montar uma ordem do culto
+- Opcionalmente, adicione [músicas](./songs.md) à sua biblioteca para vinculá-las diretamente à ordem do culto
 
 </div>
 
-## Acessando a Ordem de Serviço
+## Acessando a Ordem do Culto
 
-1. Vá para **Servindo** e selecione seu ministério.
-2. Clique em um **tipo de plano**, depois abra um **plano** específico.
-3. A seção **Ordem de Serviço** fica no topo da página do plano, acima de **Atribuições da Equipe de Serviço**.
+1. Acesse **Escalas** e selecione o seu ministério.
+2. Clique em um **tipo de plano** e depois abra um **plano** específico.
+3. A seção **Ordem do Culto** fica no topo da página do plano, acima de **Atribuições da Equipe de Escalas**.
 
-## Construindo sua Ordem de Serviço
+## Montando a Sua Ordem do Culto
 
-A ordem de serviço é uma lista de itens dispostos na sequência em que ocorrerão durante o serviço. Elementos comuns incluem:
+A ordem do culto é uma lista de itens dispostos na sequência em que ocorrerão durante o culto. Elementos comuns incluem:
 
-- Músicas de adoração
+- Músicas de louvor
 - Orações
-- Leituras de escritura
-- Anúncios
+- Leituras das Escrituras
+- Avisos
 - Sermão ou mensagem
-- Oferta
+- Ofertas
 - Encerramento
 
-## Adicionando Itens à Ordem de Serviço
+## Adicionando Itens à Ordem do Culto
 
-1. Na seção **Ordem de Serviço**, clique em **Adicionar** e escolha o que incluir: **Adicionar Seção** (um título que agrupa itens), **Item** (um item personalizado), **Música** (da sua biblioteca) ou **Adicionar da Aula**. Você também pode clicar diretamente em **Adicionar Seção**.
-2. Para adicionar algo dentro de uma seção, use o menu de adição no cabeçalho dessa seção e escolha **Música**, **Item** ou **Item Externo**.
-3. Digite os detalhes do item, como o título e quaisquer notas.
+1. Na seção **Ordem do Culto**, clique em **Adicionar** e escolha o que incluir: **Adicionar Seção** (um título que agrupa itens), **Item** (um item personalizado), **Música** (da sua biblioteca) ou **Adicionar Partir da Lição**. Você também pode clicar diretamente em **Adicionar Seção**.
+2. Para adicionar algo dentro de uma seção, use o menu de adicionar no cabeçalho dessa seção e escolha **Música**, **Item** ou **Item Externo**.
+3. Preencha os detalhes do item, como o título e quaisquer observações.
 4. Clique em **Salvar**.
 
 :::tip
-Você pode adicionar músicas diretamente de sua biblioteca [Músicas](./songs.md). Isso vincula os detalhes da música, incluindo letras e arranjos, ao seu plano de serviço para que sua equipe de adoração tenha tudo que precisa.
+Você pode adicionar músicas diretamente da sua biblioteca de [Músicas](./songs.md). Isso vincula os detalhes da música, incluindo letras e arranjos, ao seu plano de culto, para que a sua equipe de louvor tenha tudo de que precisa.
 :::
 
-### Importando Múltiplos Itens de um Provedor Externo
+### Importando Vários Itens de um Provedor Externo
 
-Escolher **Item Externo** (ou **Adicionar da Aula**) abre um navegador para seus provedores de aula vinculados em vez de um formulário de item único. Navegue (ou procure) no conteúdo de um provedor e marque a caixa ao lado de cada seção ou ação que você quer. O diálogo rastreia quantos você tem selecionados (por exemplo, "3 selecionados") -- clique em **Importar (3)** para adicionar todos eles à ordem de serviço de uma vez, em vez de repetir o fluxo de adição de item para cada um.
+Escolher **Item Externo** (ou **Adicionar Partir da Lição**) abre um navegador para os seus provedores de lição vinculados, em vez de um formulário de item único. Navegue (ou pesquise) dentro do conteúdo de um provedor e marque a caixa ao lado de cada seção ou ação que você quer. A caixa mostra quantos itens você selecionou (por exemplo, "3 selecionados") -- clique em **Importar (3)** para adicionar todos de uma vez à ordem do culto, em vez de repetir o fluxo de adicionar item para cada um.
+
+Alguns provedores, como GO! Curriculum, Dropbox, Google Drive e OneDrive, entregam uma lição como um conjunto de arquivos (vídeos, slides, imagens) em vez de seções. Ao navegar por um deles em **Adicionar Partir da Lição**, os arquivos aparecem junto com as pastas -- clique em um arquivo para adicioná-lo à ordem do culto como um item próprio.
 
 :::tip
-Esta é a forma mais rápida de puxar um vale inteiro de aula de seções e pistas para uma ordem de serviço em uma passagem, em vez de adicionar cada item individualmente.
+Esta é a forma mais rápida de trazer para a ordem do culto todas as seções e sinais de uma lição inteira, de uma só vez, em vez de adicionar cada item individualmente.
 :::
+
+### Personalizando uma Lição Vinculada
+
+Quando um plano tem uma lição vinculada, a ordem do culto mostra primeiro uma **Prévia da Lição** dessa lição. Clique em **Personalizar** (ou adicione uma seção, item ou música) para copiar as seções da lição para o plano e poder editá-las. Para lições que são apenas uma lista de arquivos, como as lições do GO! Curriculum, os arquivos são agrupados em uma seção com o nome da lição, para que você ainda tenha uma barra de seção onde adicionar os seus próprios itens.
 
 ## Reordenando Itens
 
-Arraste itens pela alça no lado esquerdo de cada linha para reorganizar a ordem -- solte na linha azul onde você quer que o item caia, ou em um cabeçalho de seção para movê-lo para aquela seção. A sequência mostrada na tela é a ordem que sua equipe seguirá durante o serviço.
+Arraste os itens pela alça à esquerda de cada linha para reorganizá-los -- solte sobre a linha azul onde quer que o item fique, ou sobre um cabeçalho de seção para movê-lo para dentro dessa seção. A sequência exibida na tela é a ordem que a sua equipe seguirá durante o culto.
 
-## Editando uma Seção de Aula
+## Editando uma Seção de Lição
 
-Seções de aula e currículo (por exemplo, "Large Group" ou "Engage 1") têm suas próprias linhas de script, slides e vídeos. Para mudar o que está dentro de uma, clique na seção na ordem de serviço. A seção se abre mostrando tudo nela: linhas faladas e instruções aparecem como texto completo marcado **Diga**, **Faça** ou **Nota**, e slides ou vídeos aparecem com uma miniatura.
+Seções de lição e de currículo (por exemplo, "Grande Grupo" ou "Engajar 1") guardam suas próprias linhas de roteiro, slides e vídeos. Para alterar o conteúdo de uma delas, clique na seção na ordem do culto. A seção é aberta mostrando tudo o que há nela: as linhas faladas e de instrução aparecem como texto completo, marcadas como **Falar**, **Fazer** ou **Nota**, e os slides ou vídeos aparecem com uma miniatura.
 
-- Clique no **x** ao lado de qualquer linha para removê-la do seu plano. Ela fica na lista, riscada, com uma seta para recolocá-la.
-- Clique em qualquer texto para reformulá-lo. Uma linha reformulada oferece **restaurar redação original**.
-- Clique em **Salvar**. A seção permanece uma única linha em sua ordem de serviço, com um pequeno rótulo como **6 de 8 itens** mostrando que você a personalizou, e seu tempo de execução é atualizado.
+- Clique no **x** ao lado de qualquer linha para tirá-la do seu plano. Ela continua na lista, riscada, com uma seta para recolocá-la.
+- Clique em qualquer texto para reescrevê-lo. Uma linha reescrita oferece **restaurar a redação original**.
+- Clique em **Salvar**. A seção continua sendo uma única linha na ordem do culto, com um pequeno rótulo, como **6 de 8 itens**, indicando que você a personalizou, e o seu tempo de duração é atualizado.
 
-Abra a seção novamente a qualquer momento para ver suas alterações, recolocar linhas ou escolher **Restaurar seção original** para desfazer todas elas. Suas edições só afetam seu plano -- a aula original nunca é alterada -- e são mantidas em planos impressos e no que seus voluntários veem.
+Abra a seção novamente a qualquer momento para ver as suas alterações, recolocar linhas ou escolher **Restaurar seção original** para desfazer todas elas. Suas edições afetam apenas o seu plano -- a lição original nunca é alterada -- e elas são refletidas nos planos impressos e no que os seus voluntários veem.
 
-Se você precisar de um item da seção como sua própria linha (por exemplo, para colocar uma música entre duas linhas), clique na seta no final direito da linha da seção para mostrar seu conteúdo como linhas separadas. Clique na seta na primeira daquelas linhas para dobrá-las de volta em uma. Isso funciona da mesma forma para conteúdo de qualquer provedor conectado.
+Se você precisar de um item da seção como uma linha própria (por exemplo, para colocar uma música entre duas linhas), clique na seta à direita da linha da seção para exibir o conteúdo dela como linhas separadas. Clique na seta da primeira dessas linhas para recolhê-las novamente em uma só. Isso funciona da mesma forma para o conteúdo de qualquer provedor conectado.
 
-Voluntários atribuídos a um item aparecem ao lado dele na ordem de serviço, para que qualquer um revisando o plano possa ver quem está cobrindo cada parte de relance.
+Os voluntários atribuídos a um item aparecem ao lado dele na ordem do culto, para que quem revisa o plano veja, de relance, quem está cobrindo cada parte.
 
-## Timing e Mídia
+## Tempo e Mídia
 
-Cada item e seção mostra quanto tempo leva e quando começa:
+Cada item e seção mostra quanto tempo dura e quando começa:
 
-- Se o plano tiver um único horário de serviço selecionado, a barra esquerda mostra a **hora do relógio** real que cada item começa (por exemplo, 9h14). Caso contrário, mostra tempo decorrido a partir do início do serviço.
-- Cabeçalhos de seção totalizam o tempo de execução de tudo dentro deles.
-- Músicas e itens personalizados contam para este cronograma uma vez que você digite **Minutos**/**Segundos** na tela de edição do item.
-- Itens que você adiciona de sua biblioteca de mídia (imagens ou clipes de vídeo) mostram uma **miniatura** e são cronometrados automaticamente -- a duração de um vídeo é medida a partir do arquivo em si, enquanto uma imagem contribui uma estimativa de planejamento de ~5:00 (mostrada em itálico) já que fica na tela até que um operador a avance. Você ainda pode editar um ou outro para uma duração específica.
+- Se o plano tiver um único horário de culto selecionado, a coluna lateral mostra o **horário** em que cada item começa (por exemplo, 9:14). Caso contrário, mostra o tempo decorrido desde o início do culto.
+- Os cabeçalhos de seção somam o tempo de execução de tudo o que há dentro deles.
+- Músicas e itens personalizados entram nessa programação assim que você informa **Minutos**/**Segundos** na tela de edição do item.
+- Itens que você adiciona da sua biblioteca de mídia (imagens ou trechos de vídeo) mostram uma **miniatura** e são cronometrados automaticamente -- a duração de um vídeo é medida a partir do próprio arquivo, enquanto uma imagem contribui com uma estimativa de planejamento de ~5:00 (exibida em itálico), já que permanece na tela até que um operador avance. Você ainda pode editar qualquer um dos dois para uma duração específica.
 
 ## Editando e Removendo Itens
 
-- Clique em qualquer item na ordem de serviço para **editar** seus detalhes.
-- Use a opção **deletar** para remover um item da ordem.
+- Clique em qualquer item da ordem do culto para **editar** os seus detalhes.
+- Use a opção **excluir** para remover um item da ordem.
 
 :::info
-A ordem de serviço é específica para cada plano. Alterações que você faz aqui só afetam o plano selecionado e não alterarão outros planos ou sua biblioteca de músicas.
+A ordem do culto é específica de cada plano. As alterações feitas aqui afetam apenas o plano selecionado e não alteram outros planos nem a sua biblioteca de músicas.
 :::
 
-### Seleção em Lote e Exclusão de Itens
+### Selecionando e Excluindo Itens em Lote
 
-Para limpar vários itens em uma seção de uma vez em vez de deletá-los um por um:
+Para limpar vários itens de uma seção de uma só vez, em vez de excluí-los um a um:
 
-1. Clique em **Selecionar itens** no cabeçalho de seção.
-2. Marque os itens que você quer remover, ou marque **Selecionar tudo em seção** para pegar tudo diretamente sob aquela seção.
-3. Clique em **Deletar Selecionados** e confirme.
-4. Clique em **Pronto selecionando** para sair do modo de seleção.
+1. Clique em **Selecionar itens** no cabeçalho da seção.
+2. Marque os itens que quer remover, ou marque **Selecionar tudo na seção** para pegar tudo o que está diretamente abaixo dessa seção.
+3. Clique em **Excluir Selecionados** e confirme.
+4. Clique em **Concluir seleção** para sair do modo de seleção.
 
 :::info
-Seleção em lote só se aplica aos filhos diretos de uma seção, não itens aninhados dentro de uma pasta de sub-seção.
+A seleção em lote se aplica apenas aos itens diretos de uma seção, e não aos itens aninhados em uma subseção.
 :::
 
-## Incluindo Itens em Horários de Serviço Específicos
+## Incluindo Itens em Horários de Culto Específicos
 
-Se seu plano tiver mais de um horário de serviço (por exemplo, um serviço de 8h e 10h), você pode escolher em quais serviços cada item deve aparecer. Isso é útil quando um anúncio é relevante apenas para um serviço, ou quando uma música é cantada em um serviço mas não em outro.
+Se o seu plano tiver mais de um horário de culto (por exemplo, um culto às 8h e outro às 10h), você pode escolher em quais cultos cada item deve aparecer. Isso é útil quando um aviso só interessa a um culto, ou quando uma música é cantada em um culto, mas não em outro.
 
-1. Abra um plano que tenha dois ou mais horários de serviço. Clique em **Horários** na seção **Atribuições da Equipe de Serviço** para vê-los ou adicioná-los.
-2. Na seção **Ordem de Serviço**, clique em um item para editá-lo.
-3. Em **Incluir em Serviços**, você verá uma caixa de seleção para cada horário de serviço, rotulada com o horário.
-4. Desmarque qualquer serviço onde o item deve ser pulado.
+1. Abra um plano que tenha dois ou mais horários de culto. Clique em **Horários** na seção **Atribuições da Equipe de Escalas** para ver ou adicioná-los.
+2. Na seção **Ordem do Culto**, clique em um item para editá-lo.
+3. Em **Incluir nos Cultos**, você verá uma caixa de seleção para cada horário de culto, identificada com o horário.
+4. Desmarque qualquer culto em que o item deva ser ignorado.
 5. Clique em **Salvar**.
 
-Por padrão, cada item é incluído em cada serviço. Horários de serviço excluídos são ocultos quando você imprime o plano filtrado para aquele serviço, para que cada serviço receba uma folha de execução limpa com apenas os itens relevantes.
+Por padrão, cada item é incluído em todos os cultos. Os horários de culto excluídos ficam ocultos quando você imprime o plano filtrado para aquele culto, para que cada culto receba um roteiro limpo, com apenas os itens relevantes.
 
 :::tip
-A seção **Incluir em Serviços** só aparece quando o plano tiver mais de um horário de serviço. Se você só vir um serviço, clique em **Horários** na seção **Atribuições da Equipe de Serviço** do plano para adicionar serviços adicionais primeiro.
+A seção **Incluir nos Cultos** só aparece quando o plano tem mais de um horário de culto. Se você vê apenas um culto, clique em **Horários** na seção **Atribuições da Equipe de Escalas** do plano para adicionar os cultos adicionais primeiro.
 :::
 
-### Mostrando uma Posição Diferente por Serviço
+### Mostrando uma Posição Diferente por Culto
 
-Se um item tiver uma **Posição** definida, cada horário de serviço marcado em **Incluir em Serviços** também recebe seu próprio menu suspenso **Posição para este serviço**. Use-a quando a mesma seção é coberta por um voluntário diferente em cada serviço -- deixe definido como **Igual ao anterior** para manter a posição padrão do item, ou escolha uma posição diferente para sobrescrevê-la apenas para aquele horário de serviço.
+Se um item tiver uma **Posição** definida, cada horário de culto marcado em **Incluir nos Cultos** também recebe o seu próprio menu **Posição para este culto**. Use-o quando a mesma seção for coberta por um voluntário diferente em cada culto -- deixe em **Igual ao acima** para manter a posição padrão do item, ou escolha outra posição para substituí-la apenas naquele horário de culto.
 
-## Compartilhando a Ordem de Serviço
+## Compartilhando a Ordem do Culto
 
-Uma vez que sua ordem de serviço está completa, você pode imprimir o plano completo (incluindo a ordem de serviço) com o botão **Imprimir** no topo da página do plano. Isso dá à sua equipe um resumo completo do serviço, encabeçado com o nome de sua igreja e o nome do plano. Quando **Mostrar Nomes de Voluntários** está ativado para a impressão, cada cabeçalho de seção também imprime com a posição do voluntário atribuído ao lado dele, para que sua equipe possa ver quem está cobrindo aquela seção sem abrir o aplicativo. Se a posição de um título é sobrescrita para serviços específicos, a impressão mostra cada nome de posição distinto que ele se resolve em todos os serviços naquele plano (por exemplo, "Equipe de Adoração / Equipe Juvenil").
+Quando a ordem do culto estiver completa, você pode imprimir o plano inteiro (incluindo a ordem do culto) com o botão **Imprimir** no topo da página do plano. Isso dá à sua equipe um roteiro completo do culto, com o nome da igreja e o nome do plano no cabeçalho. Quando **Mostrar Nomes dos Voluntários** está ativado na impressão, cada cabeçalho de seção também sai com a posição do voluntário atribuído ao lado, para que a equipe veja quem está cobrindo aquela seção sem precisar abrir o aplicativo. Se a posição de um cabeçalho for substituída para cultos específicos, a impressão mostra todos os nomes de posição distintos que ele resolve entre os cultos do plano (por exemplo, "Equipe de Louvor / Equipe Jovem").
 
-## Próximas Etapas
+## Próximos Passos
 
-- Gerencie seu repertório de adoração na página [Músicas](./songs.md)
-- Atribua voluntários ao serviço na seção [Atribuições da Equipe de Serviço](./plans.md#assigning-team-members) do plano
-- Crie [Tarefas](./tasks.md) para qualquer item de acompanhamento relacionado ao serviço
+- Gerencie o seu repertório de louvor na página de [Músicas](./songs.md)
+- Atribua voluntários ao culto na seção [Atribuições da Equipe de Escalas](./plans.md#assigning-team-members) do plano
+- Crie [Tarefas](./tasks.md) para quaisquer acompanhamentos relacionados ao culto

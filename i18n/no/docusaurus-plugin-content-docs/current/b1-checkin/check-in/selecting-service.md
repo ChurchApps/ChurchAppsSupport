@@ -1,49 +1,59 @@
 ---
-title: "Velge en Gudstjeneste"
+title: "Velge en gudstjeneste"
 ---
 
-# Velge en Gudstjeneste
+# Velge en gudstjeneste
 
 <div class="article-intro">
 
-Det første trinnet i hver innsjekking er å velge hvilken gudstjeneste du deltar på. Gudstjenesteskjermen vises rett etter at appen er ferdig med å laste og bestemmer hvilke gudstjenestetider og grupper som er tilgjengelige for resten av innsjekkingsflyten.
+Det første steget i hver innsjekking er å velge hvilken gudstjeneste du deltar på. Gudstjenestebildet vises rett etter at appen er ferdig lastet, og det bestemmer hvilke gudstjenestetidspunkter og grupper som er tilgjengelige for resten av innsjekkingsflyten.
 
 </div>
 
 <div class="prereqs">
-<h4>Før Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Logg inn](../getting-started/logging-in) på B1 Church Checkin-appen og velg kirken din
-- Sørg for at kirkens administrator har [konfigurert gudstjenester og gudstjenestetider](../../b1-admin/attendance/setup.md) i B1 Admin
+- [Logg inn](../getting-started/logging-in) i appen B1 Church Checkin og velg menigheten din
+- Sørg for at menighetsadministratoren din har [konfigurert tjenester og gudstjenestetidspunkter](../../b1-admin/attendance/setup.md) i B1 Admin
 
 </div>
 
-## Hvordan Det Fungerer
+## Slik fungerer det
 
-1. Etter innlogging (eller etter automatisk innlogging ved gjentatte besøk), viser appen **gudstjenesteskjermen**.
-2. Du vil se en liste over alle gudstjenester som er konfigurert for kirken din. Hver gudstjeneste vises som et kort som viser gudstjenestenavnet (for eksempel "Sunday Morning" eller "Wednesday Evening").
-3. Trykk på gudstjenesten du deltar på.
+1. Etter innlogging (eller etter automatisk innlogging ved senere besøk) viser appen **tjenestebildet**.
+2. Du ser en liste over alle tjenestene som er konfigurert for menigheten din. Hver tjeneste vises som et kort med tjenestenavnet (for eksempel «Søndag formiddag» eller «Onsdag kveld»).
+3. Trykk på tjenesten du deltar på.
 
-Appen laster inn gudstjenestetidene og gruppene knyttet til den gudstjenesten, og tar deg deretter til [medlemssøkskjermen](./looking-up-members).
+Appen laster gudstjenestetidspunktene og gruppene som hører til tjenesten, og tar deg deretter til [oppslagsbildet for medlemmer](./looking-up-members).
+
+## Når innsjekking ikke er åpen {#when-check-in-isnt-open}
+
+Hvis administratoren din har gitt et gudstjenestetidspunkt en [innsjekkingsplan](../../b1-admin/attendance/setup#setting-a-check-in-schedule), tilbyr appen bare dette gudstjenestetidspunktet mens innsjekkingsvinduet er åpent. Gudstjenestetidspunkter der vinduet er stengt akkurat nå, skjules, slik at familier ikke kan velge dem senere i flyten.
+
+Hvis alle gudstjenestetidspunktene for tjenesten du trykket på er stengt, viser appen **«Innsjekking er ikke åpen for denne tjenesten akkurat nå.»** Trykk på **Tilbake** for å gå tilbake til listen over tjenester og velge en annen tjeneste, eller vent til vinduet åpnes og prøv igjen.
 
 :::info
-Gudstjenester konfigureres av kirkens administrator i B1 Admin under Oppmøte-seksjonen. Hvis du ikke ser gudstjenesten du forventer, be administratoren om å bekrefte at den er opprettet i [oppmøteoppsettet](../../b1-admin/attendance/setup.md).
+Innsjekkingsvinduene følger menighetens tidssone. Hvis menigheten din ikke har en tidssone satt, brukes i stedet tidssonen til kampusen din. Hvis et gudstjenestetidspunkt ser ut til å åpne til feil tid, be administratoren din om å sjekke tidssonen i innstillingene for menigheten eller kampusen.
 :::
 
-## Hva Som Skjer Bak Kulissene
+:::info
+Tjenester konfigureres av menighetsadministratoren din i B1 Admin under seksjonen Oppmøte. Hvis du ikke ser tjenesten du forventer, be administratoren din om å bekrefte at den er opprettet i [oppmøteoppsettet](../../b1-admin/attendance/setup.md).
+:::
 
-Når du velger en gudstjeneste, henter appen tre ting fra serveren:
+## Hva som skjer i bakgrunnen
 
-- **Gudstjenestetidene** for den gudstjenesten (for eksempel kan en enkelt gudstjeneste ha en tidsluke kl. 9:00 og en kl. 11:00).
-- **Gruppene** tilgjengelige for hver gudstjenestetid (for eksempel Nursery, Preschool, Elementary).
-- **Gruppe-til-gudstjenestetid-koblingene** som bestemmer hvilke grupper som er tilgjengelige til hvilke tider.
+Når du velger en tjeneste, henter appen tre ting fra serveren:
 
-Disse dataene lagres lokalt slik at resten av innsjekkingsprosessen er rask og responsiv.
+- **Gudstjenestetidspunktene** for den tjenesten (for eksempel kan én tjeneste ha et tidspunkt kl. 09.00 og et kl. 11.00).
+- **Gruppene** tilgjengelige på hvert gudstjenestetidspunkt (for eksempel Barnehage, Førskole, Barneskole).
+- **Koblingene mellom grupper og gudstjenestetidspunkter** som avgjør hvilke grupper som er tilgjengelige på hvilke tidspunkter.
+
+Disse dataene mellomlagres lokalt, slik at resten av innsjekkingsprosessen er rask og responsiv.
 
 :::tip
-Hvis kirken din bare har én gudstjeneste konfigurert, må du fortsatt trykke på den for å fortsette. Appen velger ikke automatisk en enkelt gudstjeneste.
+Hvis menigheten din bare har én tjeneste satt opp, må du likevel trykke på den for å gå videre. Appen velger ikke en enkelt tjeneste automatisk.
 :::
 
-## Neste Trinn
+## Neste steg
 
-Etter å ha valgt en gudstjeneste, vil du [søke opp familien din](./looking-up-members) med telefonnummer eller navn.
+Etter at du har valgt en tjeneste, vil du [slå opp familien din](./looking-up-members) med telefonnummer eller navn.

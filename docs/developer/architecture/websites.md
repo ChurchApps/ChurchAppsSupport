@@ -69,6 +69,8 @@ Inside `src/app/[sdSlug]/`, `ConfigHelper.load(sdSlug)` (`src/helpers/ConfigHelp
 
 That extra `siteId` is the only thing that distinguishes a secondary-site request from a primary one; everything else in the pipeline is shared.
 
+A slug that matches neither table comes back as `{}` with a `200`. `ConfigHelper.load` treats a response with no `id` as an unknown site and calls Next's `notFound()`, so an unknown subdomain gets a real 404 instead of every later call asking for `/…/undefined`. The builder-page route also builds its tree path with `pageTreePath()` (`src/helpers/pageTreePath.ts`), which URL-encodes the slug, so a malformed slug (backslashes, spaces) 404s rather than surfacing the API's `400` as a 500.
+
 ### Custom domains
 
 A church-owned domain terminates at the **Caddy edge** (detailed below), which rewrites the `Host` header to the site's `{sub}.b1.church` before proxying to B1App. So on the normal path B1App receives an *internal* `*.b1.church` host and resolves it by host label exactly like a native subdomain — the middleware's DB lookup never fires. `src/middleware.ts` still runs on every request, but with one always-on job and one fallback:

@@ -1,128 +1,144 @@
 ---
-title: "Pianificazione delle Lezioni"
+title: "Pianificare le lezioni"
 ---
 
-# Pianificazione delle Lezioni da Lessons.church
+# Pianificare le lezioni da Lessons.church
 
 <div class="article-intro">
 
-B1 Admin si integra direttamente con [Lessons.church](https://lessons.church) in modo da poter pianificare il curriculum per le tue classi direttamente all'interno dei tuoi piani di servizio. Questo mantiene tutto -- volontari, incarichi e contenuti delle lezioni -- in un unico luogo.
+B1 Admin si integra direttamente con [Lessons.church](https://lessons.church) così puoi pianificare il curriculum per le tue classi direttamente all'interno dei piani di servizio. In questo modo tutto — volontari, assegnazioni e contenuti delle lezioni — resta in un unico posto.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Configura i tuoi ministeri nell'area Servizio
-- Avere un account attivo di [Lessons.church](https://lessons.church) -- iscriviti lì prima se la tua chiesa non ne ha ancora uno
+- Configura i tuoi ministeri nell'area Serving
+- Disponi di un account attivo su [Lessons.church](https://lessons.church) — registrati prima lì se la tua chiesa non ne ha ancora uno
 
 </div>
 
-:::tip Segui una procedura guidata
-Vuoi vedere la configurazione completa dall'inizio alla fine? La nostra **<a href="/guides/freeplay-b1admin" target="_blank">guida passo passo</a>** copre il collegamento dei provider, la pianificazione di una lezione e il collegamento di FreePlay alla TV della tua classe -- con video brevi e passaggi scritti che puoi controllare man mano che procedi.
+:::tip Segui una guida passo passo
+Vuoi vedere la configurazione completa dall'inizio alla fine? La nostra **<a href="/guides/freeplay-b1admin" target="_blank">guida passo passo</a>** spiega come collegare i fornitori, pianificare una lezione e collegare FreePlay alla TV della tua classe — con brevi video e istruzioni scritte che puoi spuntare man mano che procedi.
 :::
 
-## Passaggio 1 -- Collegamento del Tuo Account Lessons.church
+## Passo 1 — Collega il tuo account Lessons.church
 
-Questa è una configurazione una tantum per ministero. Devi collegare il tuo account Lessons.church prima di poter sfogliare e pianificare il contenuto.
+Questa è una configurazione una tantum per ogni ministero. Devi collegare il tuo account Lessons.church prima di poter sfogliare e pianificare i contenuti.
 
-1. Accedi a [B1 Admin](https://admin.b1.church/) e vai a **Servizio**
-2. Apri il ministero che vuoi collegare (ad esempio, Ministero per i Bambini)
-3. Scorri verso il basso fino alla sezione **Content Providers**
-4. Fai clic su **Collega Nuovo Provider**
+1. Accedi a [B1 Admin](https://admin.b1.church/) e vai su **Serving**
+2. Apri il ministero che vuoi collegare (ad esempio Children's Ministry)
+3. Scorri fino alla sezione **Fornitori di contenuti**
+4. Clicca su **Collega nuovo fornitore**
 5. Seleziona **Lessons.church** dall'elenco
-6. Apparirà una schermata di autorizzazione del dispositivo con un codice
-7. Vai a [lessons.church](https://lessons.church), accedi e inserisci il codice per autorizzare la connessione
-8. Una volta approvato, vedrai **Linked** sotto Lessons.church in B1 Admin
+6. Comparirà una schermata di autorizzazione del dispositivo con un codice
+7. Vai su [lessons.church](https://lessons.church), accedi e inserisci il codice per autorizzare il collegamento
+8. Una volta approvato, vedrai **Collegato** sotto Lessons.church in B1 Admin
 
 :::info
-La sezione Content Providers è per ministero. Se gestisci più ministeri (ad esempio, Bambini e Giovani), dovrai collegare Lessons.church separatamente per ognuno.
+La sezione Fornitori di contenuti è per ministero. Se gestisci più ministeri (ad esempio Bambini e Giovani), dovrai collegare Lessons.church separatamente per ciascuno di essi.
 :::
 
-## Passaggio 2 -- Pianificazione di una Lezione
+Lessons.church non è l'unica opzione. Lo stesso elenco **Collega nuovo fornitore** offre anche altre fonti di curriculum e file, tra cui SignPresenter, The Bible Project, Jesus Film Project, Go Curriculum, Dropbox, Google Drive e OneDrive. Collegane uno qualsiasi allo stesso modo: appariranno come fornitori a cui passare durante la scelta di una lezione.
+
+## Passo 2 — Pianifica una lezione
 
 Una volta collegato, puoi pianificare le lezioni direttamente dai Piani.
 
-1. In B1 Admin, vai a **Servizio → Piani**
-2. Seleziona la scheda del tuo ministero e fai clic su **Aggiungi Tipo di Piano** (o **Create Plan Type** se il ministero non ne ha ancora) -- dai al tipo di piano un nome come Chiesa dei Bambini o Scuola Domenicale
-3. Fai clic sul tipo di piano che hai appena creato e fai clic su **Pianifica Lezione**. Da quel menu puoi pianificare una lezione, pianificare in massa una serie, o **Applica Piano Annuale** per far cadere una sequenza annuale pubblicata da Lessons.church.
-4. Seleziona la **data** per la lezione (per impostazione predefinita la prossima domenica)
-5. Fai clic su **Seleziona Lezione** -- si apre una finestra di dialogo del browser dei contenuti
-6. La finestra di dialogo si apre con **Lessons.church** selezionato come provider (o il provider utilizzato per le lezioni precedenti di questo tipo di piano). Se hai collegato altri provider, puoi passare da uno all'altro nella parte superiore della finestra di dialogo
-7. Sfoglia il contenuto:
-   - Seleziona un **Programma** (ad esempio, "Storie Bibliche per i Bambini")
-   - Seleziona uno **Studio** all'interno di quel programma (ad esempio, "Creazione e Storie Antiche")
+1. In B1 Admin, vai su **Serving → Plans**
+2. Seleziona la scheda del tuo ministero e clicca su **Aggiungi tipo di piano** (oppure **Crea tipo di piano** se il ministero non ne ha ancora) — assegna al tipo di piano un nome come Chiesa dei bambini o Scuola domenicale
+3. Clicca sul tipo di piano appena creato e poi su **Pianifica lezione**. Da questo menu puoi pianificare una singola lezione, pianificare in blocco una serie oppure **Applica piano annuale** per inserire una sequenza annuale pubblicata da Lessons.church.
+4. Seleziona la **data** della lezione (per impostazione predefinita la prossima domenica)
+5. Clicca su **Seleziona lezione** — si apre una finestra di selezione dei contenuti
+6. La finestra si apre con **Lessons.church** selezionato come fornitore (o con il fornitore usato per le lezioni precedenti di questo tipo di piano). Se hai collegato altri fornitori, puoi passare dall'uno all'altro in cima alla finestra
+7. Sfoglia i contenuti:
+   - Seleziona un **Programma** (ad esempio "Bible Stories for Kids")
+   - Seleziona uno **Studio** all'interno di quel programma (ad esempio "Creation and Early Stories")
    - Seleziona la **Lezione** specifica
-   - Seleziona la **Sede** -- questa è la versione del gruppo di età della lezione
-8. Fai clic su **Associa Lezione** per confermare
-9. Scegli la tua **opzione di copia** per i volontari:
-   - **Niente** -- piano nuovo, nessun volontario trasferito
-   - **Solo Posizioni** -- copia i ruoli di volontari dal piano precedente ma non chi è assegnato
-   - **Posizioni e Incarichi** -- copia sia i ruoli che i volontari assegnati *(più comune)*
-10. Fai clic su **Salva**
+   - Seleziona la **Fascia d'età** — è la versione della lezione per quella fascia d'età
 
-Il piano viene creato e nominato automaticamente (ad esempio, "23 feb - Elementari"). I volontari possono aprire il piano per vedere i loro incarichi e rivedere il contenuto della lezione prima di domenica.
+   Gli altri fornitori organizzano i contenuti in modo diverso. Ad esempio, **Go Curriculum** parte da **Elementary** o **Preschool**, poi una serie, e infine la lezione stessa — non c'è alcuna fascia d'età da scegliere.
+8. Clicca su **Associa lezione** per confermare
+9. Scegli l'**opzione di copia** per i volontari:
+   - **Nessuno** — piano nuovo, nessun volontario riportato
+   - **Solo posizioni** — copia i ruoli dei volontari dal piano precedente ma non chi è assegnato
+   - **Posizioni e assegnazioni** — copia sia i ruoli sia i volontari assegnati *(la più comune)*
+10. Clicca su **Salva**
+
+Il piano viene creato e denominato automaticamente (ad esempio "Feb 23 - Elementary"). I volontari possono aprire il piano per vedere le proprie assegnazioni e rivedere i contenuti della lezione prima di domenica.
 
 :::warning
-Assicurati di selezionare la **Sede** corretta per il gruppo di età della tua classe. Scegliere la sede sbagliata significa che i tuoi volontari vedranno il contenuto progettato per un livello di età diverso.
+Assicurati di selezionare la **Fascia d'età** corretta per il gruppo di età della tua classe. Scegliere la fascia sbagliata significa che i volontari vedranno contenuti pensati per un livello di età diverso.
 :::
 
-## Applica un Piano Annuale
+## Pianificare in blocco una serie
 
-Se un editore di curriculum ha pubblicato un piano annuale su Lessons.church, puoi caricare l'intera sequenza su questo tipo di piano in un passaggio:
+Per pianificare contemporaneamente più lezioni della stessa serie, clicca su **Pianifica lezione → Pianificazione in blocco**:
 
-1. Fai clic su **Pianifica Lezione → Applica Piano Annuale**
+1. In **Lezione di partenza**, clicca su **Seleziona lezione** e scegli la prima lezione che vuoi pianificare
+2. Imposta la **Data di inizio** e scegli un **Intervallo** (**Settimanale** o **Quindicinale**)
+3. Scegli cosa copiare dal piano precedente (**Nessuno**, **Solo posizioni** o **Posizioni e assegnazioni**)
+4. Controlla l'elenco — la lezione di partenza e il resto della sua serie, ciascuna con una data. Deseleziona quelle che vuoi saltare
+5. Clicca su **Salva** per creare un piano per ogni lezione
+
+Per Lessons.church, l'elenco mostra anche la **Fascia d'età** che ogni lezione userà, abbinata per nome alla fascia d'età scelta per la lezione di partenza (se una lezione non ha quella fascia, ne viene usata un'altra e viene contrassegnata come **sostituita**). I fornitori le cui lezioni non hanno livelli di fascia d'età, come Go Curriculum, pianificano direttamente le lezioni e la colonna Fascia d'età è nascosta.
+
+## Applicare un piano annuale
+
+Se un editore di curriculum ha pubblicato un piano annuale su Lessons.church, puoi caricare l'intera sequenza su questo tipo di piano in un solo passaggio:
+
+1. Clicca su **Pianifica lezione → Applica piano annuale**
 2. Scegli il piano annuale pubblicato
-3. Se il piano è ancorato al calendario (ad esempio Ark Kids), scegli l'**anno di destinazione**. Gli studi di Pasqua e Natale cadono su le date di quell'anno. Regola le date della prima e dell'ultima classe se stai pianificando solo parte dell'anno.
-4. Se il piano non è ancorato al calendario, imposta la data della prima classe (la settimana 1 cade su quella data; le settimane successive sono sette giorni di distanza) e quante settimane scrivere (12, 24, 44 o 52)
+3. Se il piano è ancorato al calendario (ad esempio Ark Kids), scegli l'**anno di destinazione**. Gli studi di Pasqua e Natale cadono nelle date di quell'anno. Modifica la data della prima e dell'ultima lezione se stai pianificando solo una parte dell'anno.
+4. Se il piano non è ancorato al calendario, imposta la data della prima lezione (la settimana 1 cade in quella data; le settimane successive distano sette giorni) e quante settimane scrivere (12, 24, 44 o 52)
 5. Facoltativamente copia le posizioni dei volontari dal piano precedente
-6. Anteprima dell'elenco. Deseleziona qualsiasi settimana che non desideri -- le lezioni successive in quella estensione passano alla prossima domenica aperta invece di lasciare un buco. Le date che già hanno un piano vengono saltate allo stesso modo per i piani ancorati al calendario.
-7. Salva. Ogni settimana diventa un piano di servizio che puoi modificare come al solito -- cambia la lezione, i volontari o la data -- e FreePlay riprodurrà tutto ciò che è su il piano di quella settimana.
+6. Visualizza l'anteprima dell'elenco. Deseleziona le settimane che non vuoi — le lezioni successive in quel periodo si spostano alla prima domenica libera invece di lasciare un buco. Le date che hanno già un piano vengono saltate allo stesso modo per i piani ancorati al calendario.
+7. Salva. Ogni settimana diventa un piano di servizio che puoi modificare come al solito — cambiare la lezione, i volontari o la data — e FreePlay riprodurrà ciò che è presente nel piano di quella settimana.
 
 :::tip
-**Pianifica in anticipo** -- Puoi pianificare più settimane di lezioni contemporaneamente in modo che il tuo team possa preparare in anticipo. Utilizza l'elenco delle lezioni passate nella visualizzazione del piano per evitare di ripetere accidentalmente i contenuti.
+**Pianifica in anticipo** — Puoi pianificare più settimane di lezioni in una volta sola così il tuo team può prepararsi con anticipo. Usa l'elenco delle lezioni passate nella vista del piano per evitare di ripetere accidentalmente i contenuti.
 :::
 
-## Personalizzazione del Contenuto della Lezione
+## Personalizzare i contenuti della lezione
 
-Una volta programmata una lezione, puoi adattarla per la tua classe specifica -- rimuovi le sezioni che non si applicano, nascondi i ruoli che la tua stanza non usa, o riordina il contenuto per corrispondere al tuo flusso preferito. Le personalizzazioni possono essere salvate solo per un'aula o applicate su tutte le aule nella tua chiesa.
+Una volta pianificata una lezione, puoi adattarla alla tua classe specifica — rimuovere le sezioni che non si applicano, nascondere i ruoli che la tua aula non usa, o riordinare i contenuti per adattarli al flusso che preferisci. Le personalizzazioni possono essere salvate solo per una classe oppure applicate a tutte le classi della tua chiesa.
 
-Vedi la guida [Personalizzazione delle Lezioni](/docs/lessons-church/customization/customizing-lessons) per le istruzioni passo passo.
+Consulta la guida [Personalizzare le lezioni](/docs/lessons-church/customization/customizing-lessons) per le istruzioni passo passo.
 
-## Riproduzione delle Lezioni su una TV di Classe con FreePlay
+## Riprodurre le lezioni sulla TV della classe con FreePlay
 
-La pianificazione di una lezione in B1 Admin si abbina perfettamente a **[FreePlay](/docs/freeplay/)** -- il lettore multimediale gratuito di ChurchApps per TV di classe e Fire Stick. Quando il tuo piano è configurato, FreePlay può estrarre il contenuto della lezione direttamente da Lessons.church e riprodurlo a schermo intero in classe. L'insegnante controlla il ritmo con un telecomando TV, avanzando attraverso i video e le diapositive mentre la lezione procede.
+Pianificare una lezione in B1 Admin si abbina perfettamente con **[FreePlay](/docs/freeplay/)** — il lettore multimediale gratuito di ChurchApps per le TV delle classi e le Fire Stick. Quando il tuo piano è configurato, FreePlay può prelevare i contenuti della lezione direttamente da Lessons.church e riprodurli a schermo intero in classe. L'insegnante controlla il ritmo con un telecomando della TV, avanzando tra video e diapositive man mano che la lezione procede.
 
-Questo significa che i tuoi volontari vedono il piano sui loro telefoni mentre il contenuto viene riprodotto sulla TV della stanza -- nessuna configurazione separata, nessun'unità USB, nessuna improvvisazione dell'ultimo minuto.
+Questo significa che i volontari vedono il piano sui propri telefoni mentre i contenuti vengono riprodotti sulla TV della sala — nessuna configurazione separata, nessuna chiavetta USB, nessuna corsa dell'ultimo minuto.
 
-[Scopri come collegare FreePlay a un provider di contenuti →](/docs/freeplay/content-providers/connecting-providers)
+[Scopri come collegare FreePlay a un fornitore di contenuti →](/docs/freeplay/content-providers/connecting-providers)
 
-## Non Vedi il Tuo Provider di Curriculum?
+## Non trovi il tuo fornitore di curriculum?
 
-L'elenco dei provider disponibili sta crescendo. Se la tua chiesa utilizza un provider di curriculum che non sta ancora apparendo in B1 Admin, contattaci e lavoreremo per aggiungerli.
+L'elenco dei fornitori disponibili è in crescita. Se la tua chiesa usa un fornitore di curriculum che non compare ancora in B1 Admin, contattaci e lavoreremo per aggiungerlo.
 
-Sentiti libero di copiare e inviare il messaggio qui sotto direttamente al tuo provider di curriculum -- una volta che ti contattano faremo in modo che l'integrazione sia configurata:
+Sentiti libero di copiare e inviare direttamente al tuo fornitore di curriculum il messaggio sotto — una volta che ci contatteranno, configureremo l'integrazione:
 
 ---
 
-> **Oggetto: Richiesta di Integrazione ChurchApps**
+> **Oggetto: Richiesta di integrazione con ChurchApps**
 >
-> Ciao [Team del Provider di Curriculum],
+> Gentile team [Fornitore di curriculum],
 >
-> Amiamo il vostro curriculum e lo utilizziamo ogni settimana con i nostri bambini. Utilizziamo anche ChurchApps per gestire i nostri volontari e i piani di servizio, e utilizziamo FreePlay (freeplay.church) per riprodurre il contenuto della lezione direttamente sulle nostre TV di classe. È stato un cambiamento radicale per i nostri insegnanti.
+> Amiamo il vostro curriculum e lo usiamo ogni settimana con i nostri ragazzi. Usiamo anche ChurchApps per gestire i volontari e i piani di servizio, e usiamo FreePlay (freeplay.church) per riprodurre i contenuti delle lezioni direttamente sulle TV delle nostre classi. Per i nostri insegnanti è stato un vero cambiamento.
 >
-> In questo momento dobbiamo gestire il vostro curriculum separatamente, ma se foste integrati con ChurchApps potremmo pianificare le vostre lezioni direttamente all'interno dei nostri piani di servizio e riprodurle tramite FreePlay sugli schermi della nostra classe -- tutto senza lasciare gli strumenti che utilizziamo già.
+> Al momento dobbiamo gestire il vostro curriculum separatamente, ma se foste integrati con ChurchApps potremmo pianificare le vostre lezioni direttamente nei nostri piani di servizio e riprodurle tramite FreePlay sugli schermi delle nostre classi — senza uscire dagli strumenti che già utilizziamo.
 >
-> ChurchApps funziona già con diversi provider di curriculum e il loro team è pronto a lavorare con voi anche. Potresti contattarli a **support@churchapps.org** per avviare la conversazione? Ci piacerebbe che questo accadesse!
+> ChurchApps collabora già con diversi fornitori di curriculum e il loro team è pronto a lavorare anche con voi. Potreste contattarli a **support@churchapps.org** per avviare la conversazione? Saremmo felicissimi di vedere questo accadere!
 >
 > Grazie!
 
 ---
 
-## Articoli Correlati
+## Articoli correlati
 
-- [Piani di Servizio](./plans.md)
-- [Ordine di Servizio](./service-order.md)
-- [Personalizzazione delle Lezioni](/docs/lessons-church/customization/customizing-lessons)
-- [FreePlay — Riproduzione delle Lezioni su una TV di Classe](/docs/freeplay/classroom-mode/playing-lessons)
-- [Guida alla Pianificazione di Lessons.church](/docs/lessons-church/classrooms/scheduling-lessons)
+- [Piani di servizio](./plans.md)
+- [Ordine del servizio](./service-order.md)
+- [Personalizzare le lezioni](/docs/lessons-church/customization/customizing-lessons)
+- [FreePlay — Riprodurre le lezioni su una TV della classe](/docs/freeplay/content-providers/playing-content)
+- [Guida alla pianificazione delle lezioni di Lessons.church](/docs/lessons-church/classrooms/scheduling-lessons)

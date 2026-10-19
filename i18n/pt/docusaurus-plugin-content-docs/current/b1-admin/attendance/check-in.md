@@ -1,129 +1,129 @@
 ---
-title: "Check-In"
+title: "Check-in"
 ---
 
-# Check-In
+# Check-in
 
 <div class="article-intro">
 
-O B1 Admin oferece suporte para check-in automático em serviços através do aplicativo acompanhante **B1 Checkin**. Os membros podem fazer check-in de si mesmos e suas famílias em quiosques ou dispositivos dedicados quando chegam, tornando o processo rápido e reduzindo o trabalho dos seus voluntários. Cada check-in é registrado automaticamente como presença.
+O B1 Admin oferece check-in de autoatendimento nos cultos por meio do aplicativo complementar **B1 Checkin**. Os membros podem fazer o check-in de si mesmos e de suas famílias em quiosques ou dispositivos dedicados ao chegar, o que torna o processo rápido e reduz a carga de trabalho dos seus voluntários. Cada check-in é registrado automaticamente como presença.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Seus campi, horários de serviço e grupos devem ser configurados em [Configuração de Presença](setup.md).
-- Você precisa [adicionar pessoas ao seu banco de dados](../people/adding-people.md) com [núcleos familiares](../people/adding-people.md#managing-households) configurados para que as famílias possam fazer check-in juntas.
-- Você precisará de um tablet e, opcionalmente, uma impressora de etiquetas Brother (veja [recomendações de hardware](#recommended-hardware) abaixo).
+- Seus campi, horários de culto e grupos precisam estar configurados em [Configuração de Presença](setup.md).
+- Você precisa de [pessoas cadastradas no seu banco de dados](../people/adding-people.md) com [famílias](../people/adding-people.md#managing-households) configuradas para que as famílias possam fazer check-in juntas.
+- Você vai precisar de um tablet e, opcionalmente, de uma impressora de etiquetas Brother (veja as [recomendações de hardware](#recommended-hardware) abaixo).
 
 </div>
 
-## Como Funciona
+## Como funciona
 
-O aplicativo B1 Checkin se conecta à sua configuração de presença no B1 Admin. Quando um membro faz check-in, sua presença é registrada automaticamente no campus correto, horário de serviço e grupo. Você não precisa registrar a presença manualmente para ninguém que use o sistema de check-in.
+O aplicativo B1 Checkin se conecta à sua configuração de presença no B1 Admin. Quando um membro faz o check-in, a presença dele é registrada automaticamente no campus, horário de culto e grupo corretos. Você não precisa lançar presenças manualmente para quem usa o sistema de check-in.
 
-## Configurando Check-In
+## Configurando o check-in
 
-1. **Configure sua estrutura de presença primeiro.** No B1 Admin, vá para **Pessoas > Presença** e clique em **Configuração** para certificar-se de que seus campi, horários de serviço e grupos estão em vigor. O aplicativo de check-in depende dessa configuração. Opcionalmente, defina um [cronograma de check-in](setup.md#setting-a-check-in-schedule) para cada horário de serviço, para que o check-in abra e feche automaticamente toda semana. Veja [Configuração de Presença](setup.md) para mais detalhes.
-2. **Instale o aplicativo B1 Checkin** nos dispositivos que você planeja usar. O aplicativo está disponível nas seguintes plataformas:
+1. **Configure primeiro a estrutura de presença.** No B1 Admin, acesse **Pessoas > Presença** e clique em **Configuração** para garantir que seus campi, horários de culto e grupos estejam definidos. O aplicativo de check-in depende dessa configuração. Opcionalmente, dê a cada horário de culto um [cronograma de check-in](setup.md#setting-a-check-in-schedule) para que o check-in abra e feche automaticamente a cada semana. Os cronogramas usam o fuso horário da sua igreja ou, se a igreja não tiver um definido, o fuso horário do seu campus; o quiosque oculta os horários de culto cuja janela está fechada e informa às famílias quando o check-in ainda não está aberto. Veja [Configuração de Presença](setup.md) para mais detalhes.
+2. **Instale o aplicativo B1 Checkin** nos dispositivos que você pretende usar. O aplicativo está disponível nas seguintes plataformas:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
-   - **Android/Samsung Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
-   - **Amazon Fire Tablets:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
-3. **Faça login no aplicativo B1 Checkin** usando as credenciais da conta da sua igreja.
-4. **Selecione o campus e o horário do serviço** para a reunião atual.
-5. Os membros agora podem procurar seu nome no dispositivo e fazer check-in.
+   - **Tablets Android/Samsung:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
+   - **Tablets Amazon Fire:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
+3. **Entre no aplicativo B1 Checkin** usando as credenciais da conta da sua igreja.
+4. **Selecione o campus e o horário de culto** do encontro atual.
+5. Os membros já podem buscar o próprio nome no dispositivo e fazer o check-in.
 
 :::tip
-Coloque os dispositivos de check-in em locais visíveis e de fácil acesso, como entradas do saguão ou mesas de boas-vindas. Um breve anúncio durante os serviços ajuda os membros a saber que a opção está disponível.
+Coloque os dispositivos de check-in em locais visíveis e de fácil acesso, como entradas do saguão ou balcões de recepção. Um breve anúncio durante os cultos ajuda os membros a saber que essa opção está disponível.
 :::
 
 :::tip
-Se sua igreja tem múltiplos campi, você precisará repetir a configuração para cada campus em [Configuração de Presença](setup.md). Cada dispositivo de check-in pode ser configurado para um campus diferente.
+Se a sua igreja tiver vários campi, você precisará repetir a configuração para cada campus em [Configuração de Presença](setup.md). Cada dispositivo de check-in pode ser configurado para um campus diferente.
 :::
 
-## Hardware Recomendado
+## Hardware recomendado {#recommended-hardware}
 
 **Tablets** — qualquer um destes funciona bem com o aplicativo:
 
-- **Compacto:** Samsung Galaxy Tab A7 Lite 8.7"
-- **Tela Grande:** Samsung Galaxy Tab A8 10.5"
+- **Compacto:** Samsung Galaxy Tab A7 Lite 8,7"
+- **Tela grande:** Samsung Galaxy Tab A8 10,5"
 - **Econômico:** Amazon Fire HD 10
 
-**Impressoras** — check-ins funcionam com impressoras de etiquetas Brother para imprimir crachás de nome:
+**Impressoras** — o check-in funciona com impressoras de etiquetas Brother para imprimir crachás:
 
-- **Melhor:** Brother QL-1110NWB (oferece suporte a múltiplos tablets via Bluetooth e WiFi)
-- **Bom:** Brother QL-810W (oferece suporte a múltiplos tablets via WiFi)
-- **Econômico:** Brother QL-1100 (apenas WiFi)
+- **Melhor opção:** Brother QL-1110NWB (suporta vários tablets via Bluetooth e Wi-Fi)
+- **Boa opção:** Brother QL-810W (suporta vários tablets via Wi-Fi)
+- **Econômica:** Brother QL-1100 (somente Wi-Fi)
 
 **Etiquetas:** Brother DK-1201 (1-1/7" x 3-1/2")
 
 :::warning
-Apenas impressoras de etiquetas Brother são compatíveis com o aplicativo B1 Checkin. Outras marcas de impressoras não funcionarão para imprimir crachás de nome.
+Somente impressoras de etiquetas Brother são compatíveis com o aplicativo B1 Checkin. Outras marcas de impressora não funcionarão para imprimir crachás.
 :::
 
 :::info
-Siga as instruções de configuração da sua impressora para conectá-la à mesma rede WiFi que seu tablet. Você pode encontrar drivers de impressoras Brother e guias de configuração no [site de suporte da Brother](https://support.brother.com).
+Siga as instruções de configuração da sua impressora para conectá-la à mesma rede Wi-Fi do seu tablet. Você pode encontrar os drivers e os guias de configuração das impressoras Brother no [site de suporte da Brother](https://support.brother.com).
 :::
 
-## Personalizando a Aparência do Quiosque
+## Personalizando a aparência do quiosque
 
-Você pode personalizar a aparência e o comportamento do aplicativo B1 Checkin para corresponder à marca da sua igreja. No B1 Admin, vá para **Celular > B1 CheckIn** e use o card **Tema do Quiosque** para configurar:
+Você pode personalizar a aparência do aplicativo B1 Checkin para combinar com a identidade visual da sua igreja. No B1 Admin, acesse **Mobile > B1 CheckIn** e use o cartão **Tema do Quiosque** para configurar:
 
 ### Cores
 
-Personalize oito configurações de cor para corresponder à marca da sua igreja:
+Personalize oito configurações de cor para combinar com a identidade da sua igreja:
 
-- **Primária** e **Contraste Primário** -- Cor da marca principal e sua cor de texto.
-- **Secundária** e **Contraste Secundário** -- Cor de destaque e sua cor de texto.
-- **Fundo do Cabeçalho** e **Fundo do Subcabeçalho** -- Cores para as áreas de cabeçalho do quiosque.
-- **Fundo do Botão** e **Texto do Botão** -- Cores para botões interativos.
+- **Primária** e **Contraste da primária** -- Cor principal da marca e a cor do seu texto.
+- **Secundária** e **Contraste da secundária** -- Cor de destaque e a cor do seu texto.
+- **Fundo do cabeçalho** e **Fundo do subcabeçalho** -- Cores das áreas de cabeçalho do quiosque.
+- **Fundo dos botões** e **Texto dos botões** -- Cores dos botões interativos.
 
-### Imagem de Fundo
+### Imagem de fundo
 
-Carregue uma imagem de fundo opcional para as telas de bem-vindo e pesquisa do quiosque. O tamanho recomendado é 1920x1080 pixels.
+Envie uma imagem de fundo opcional para as telas de boas-vindas e de busca do quiosque. O tamanho recomendado é 1920x1080 pixels.
 
-### Tela Inativa / Proteção de Tela
+### Tela de espera / Protetor de tela
 
-Configure uma proteção de tela que ativa após um período de inatividade:
+Configure um protetor de tela que é ativado após um período de inatividade:
 
-1. Ative ou desative a tela inativa **on** ou **off**.
-2. Defina o **tempo limite** (quantos segundos de inatividade antes de a proteção de tela iniciar, mínimo 10 segundos).
-3. Adicione um ou mais **slides** -- cada slide tem uma imagem e uma duração de exibição (mínimo 3 segundos).
+1. Ative ou desative a tela de espera.
+2. Defina o **tempo limite** (quantos segundos de inatividade antes que o protetor de tela comece; mínimo de 10 segundos).
+3. Adicione um ou mais **slides** -- cada slide tem uma imagem e uma duração de exibição (mínimo de 3 segundos).
 
 :::tip
-Use a tela inativa para exibir anúncios, eventos futuros ou mensagens de boas-vindas quando o quiosque não está sendo usado ativamente.
+Use a tela de espera para exibir avisos, eventos próximos ou mensagens de boas-vindas quando o quiosque não estiver em uso.
 :::
 
-## Registro de Hóspedes via Código QR
+## Cadastro de visitantes por QR Code
 
-O quiosque de check-in pode exibir um código QR que visitantes escaneiam para se registrarem a si mesmos e suas famílias no próprio telefone. Isso acelera o processo de check-in para hóspedes de primeira viagem.
+O quiosque de check-in pode exibir um QR Code que os visitantes escaneiam para se cadastrar, junto com sua família, pelo próprio celular. Isso agiliza o check-in de visitantes que vêm pela primeira vez.
 
-Quando um hóspede escaneia o código QR, ele é levado a uma [página de registro de hóspedes](../../b1-church/checkin/guest-registration) onde ele insere seu nome, email e membros da família. Um voluntário pode então procurá-lo no quiosque e fazer check-in.
+Quando um visitante escaneia o QR Code, ele é levado a uma [página de cadastro de visitantes](../../b1-church/checkin/guest-registration), onde informa seu nome, e-mail e familiares. Um voluntário pode então localizá-lo no quiosque e fazer o check-in.
 
-### Habilitando o Registro de Hóspedes por QR
+### Ativando o QR Code de cadastro
 
-Para ativar a exibição do código QR:
+Para ativar a exibição do QR Code:
 
-1. No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo) e expanda **Celular**.
+1. No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo) e expanda **Mobile**.
 2. Clique em **B1 CheckIn**.
-3. Ative **Registro de Hóspedes por QR** e clique em **Salvar**.
+3. Ative **Cadastro de visitantes por QR Code** e clique em **Salvar**.
 
 :::note
-Esta configuração está em **Celular > B1 CheckIn** (a mesma página que o card **Tema do Quiosque**), não em Presença. A ação **Quiosque** na página de Presença tem um link para esta página.
+Esta configuração fica em **Mobile > B1 CheckIn** (na mesma página do cartão **Tema do Quiosque**), e não em Presença. A ação **Quiosque** na página de Presença tem um link para esta página.
 :::
 
-### Compartilhando o Link de Registro
+### Compartilhando o link de cadastro
 
-Depois que o Registro de Hóspedes por QR é habilitado, uma seção **Compartilhar código QR de registro** aparece abaixo da alternância. Isso oferece duas maneiras de levar hóspedes ao formulário de registro além do código QR do quiosque:
+Depois que o Cadastro de visitantes por QR Code estiver ativado, uma seção **Compartilhar QR code de cadastro** aparece abaixo do botão. Ela oferece duas formas de levar os visitantes ao formulário de cadastro, além do QR Code do quiosque:
 
-- **Copiar link** — copia a URL de registro para que você possa colá-la no site da sua igreja, em emails ou em qualquer lugar online.
-- **Baixar PNG** — baixa o código QR como uma imagem que você pode imprimir em folhetos, boletins ou sinalização.
+- **Copiar link** — copia a URL de cadastro para que você possa colá-la no site da sua igreja, em e-mails ou em qualquer lugar online.
+- **Baixar PNG** — baixa o QR Code como imagem, que você pode imprimir em panfletos, boletins ou sinalização.
 
 :::tip
-Adicione o link de registro à página "Planeje Sua Visita" ou "Sou Novo" do site da sua igreja para que os hóspedes possam se registrar antes mesmo de chegarem.
+Adicione o link de cadastro à página "Planeje sua visita" ou "Sou novo" do site da sua igreja, para que os visitantes possam se cadastrar antes mesmo de chegar.
 :::
 
-## O que é Registrado
+## O que é registrado
 
-Cada check-in cria um registro de presença no B1 Admin. Você pode visualizar esses registros na página [Presença](tracking-attendance.md) e nas sessões de cada [grupo](../groups/group-members.md) como qualquer presença registrada manualmente. Não há diferença em como os dados aparecem -- ambos os métodos alimentam os mesmos relatórios.
+Cada check-in cria um registro de presença no B1 Admin. Você pode ver esses registros na página de [Presença](tracking-attendance.md) e nas [sessões de cada grupo](../groups/group-members.md), exatamente como as presenças lançadas manualmente. Não há diferença na forma como os dados aparecem — os dois métodos alimentam os mesmos relatórios.

@@ -6,50 +6,60 @@ title: "Elegir un modo de emparejamiento"
 
 <div class="article-intro">
 
-FreePlay ofrece dos modos de emparejamiento para conectar tu televisor a tu iglesia, además de la capacidad de explorar proveedores de contenido directamente. La pantalla **Seleccionar modo de emparejamiento** presenta estas opciones como tarjetas grandes que puedes navegar con el control remoto de tu televisor.
+FreePlay puede manejar un televisor de tres maneras. Puede seguir un calendario que configuraste en FreePlay Admin, seguir un plan de servicio de B1 Admin o reproducir lo que elija un voluntario con el control remoto. Ambos tipos de emparejamiento empiezan en la misma pantalla del televisor. El lugar donde introduces el código de emparejamiento determina qué modo usa el televisor.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Instala FreePlay e inícialo por primera vez -- ver [Comenzar](./index.md)
-- Ten tu control remoto del televisor listo para navegar
+- Instala FreePlay y ábrelo por primera vez. Consulta [Primeros pasos](./index.md)
+- Ten el control remoto del televisor listo para navegar
 
 </div>
 
-## Emparejamiento a clase
+## Obtener un código de emparejamiento
 
-Elige **Emparejamiento a clase** cuando quieras que un televisor específico siempre muestre la lección programada para una sala particular. Esta es la mejor opción para las aulas del ministerio infantil donde las lecciones se asignan semanalmente.
+1. En el televisor, abre **Configuración** en la parte inferior de la barra lateral.
+2. Selecciona **Emparejar con un calendario**.
+3. FreePlay muestra un código de emparejamiento de cuatro letras y un código QR. El código dura 15 minutos, y FreePlay muestra uno nuevo automáticamente cuando se acaba.
 
-**Cómo funciona:** Buscas tu iglesia por nombre, eliges un aula, y FreePlay obtiene automáticamente la lección programada para esa sala hoy. Cada domingo por la mañana, simplemente enciendes el televisor y la lección correcta está lista.
+## Modo programado (FreePlay Admin)
 
-**Mejor para:** Televisores de aula dedicados que siempre deben mostrar el contenido programado para esa sala.
+Introduce el código en **FreePlay Admin**, en [admin.freeplay.church](https://admin.freeplay.church), cuando quieras que el televisor funcione solo. Creas listas de reproducción, las colocas en un calendario para un grupo de pantallas, y el televisor las reproduce a las horas programadas. Nadie tiene que pulsar Iniciar.
+
+**Cómo funciona:** Escanea el código QR de la pantalla del televisor, o ve a **freeplay.church/pair**. Luego elige el grupo de pantallas cuyo calendario debe seguir el televisor y haz clic en **Emparejar**. El televisor descarga la semana siguiente y reproduce según el reloj, incluso sin conexión.
+
+**Ideal para:** señalización en vestíbulos y pasillos, bucles de anuncios y aulas donde la lección ya debe estar reproduciéndose cuando llegan las personas.
+
+Consulta **[Modo programado](../scheduled-mode/)** para la guía completa.
+
+## Modo plan (B1 Admin)
+
+Introduce el código en **B1 Admin** cuando quieras que el televisor siga un tipo de plan de servicio. El televisor descarga el contenido del plan vigente, y un voluntario pulsa **Iniciar plan** para reproducirlo.
+
+**Cómo funciona:** En B1 Admin, agrega la pantalla con el código del televisor y elige el tipo de plan en **Mostrar planes para**. Cada semana, el televisor toma el plan más reciente de ese tipo.
+
+**Ideal para:** televisores que muestran contenido vinculado a tu plan de servicio semanal, donde alguien inicia la reproducción cuando llega el momento.
+
+Consulta **[Modo plan](../plan-mode/)** para la guía completa.
 
 :::tip
-Configura tus aulas en [freeplay.church](https://freeplay.church) antes de emparejar tu televisor. Esto asegura que tus salas aparezcan cuando busques tu iglesia.
+También puedes reproducir el plan de servicio vigente según un horario. En FreePlay Admin, agrega una entrada al calendario y elige el tipo de plan en **Planes de servicio**.
 :::
 
-## Emparejamiento a plan
+## Proveedores de contenido (sin emparejamiento)
 
-Elige **Emparejamiento a plan** cuando quieras seguir un plan de servicio de iglesia. Este modo genera un código de emparejamiento que ingresas en **B1 Admin** para vincular el televisor a un tipo de plan específico. El televisor luego descarga y reproduce el contenido asignado al plan actual.
+Si no necesitas emparejar el televisor, puedes explorar los proveedores de contenido directamente. Proveedores como [Lessons.church](../../lessons-church/) y Bible Project tienen contenido que puedes descargar y reproducir cuando quieras.
 
-**Cómo funciona:** FreePlay muestra un código de emparejamiento y un código QR en la pantalla. Un administrador abre la página vinculada en **B1 Admin**, ingresa el código, y elige el tipo de plan que la pantalla debe seguir de un menú desplegable **Show Plans For**. Una vez aprobado, el televisor carga automáticamente el contenido del plan actual.
-
-**Mejor para:** Televisores que muestren contenido vinculado a tu plan de servicio semanal, como letras de adoración o diapositivas de anuncios.
-
-## Proveedores de contenido
-
-Si no necesitas emparejar a un aula o plan, puedes explorar proveedores de contenido directamente. Los proveedores como [Lessons.church](../../lessons-church/) y Bible Project ofrecen contenido que puedes descargar y reproducir bajo demanda.
-
-**Mejor para:** Televisores donde los voluntarios eligen manualmente qué reproducir cada semana, o cuando quieres explorar el contenido disponible.
+**Ideal para:** televisores donde los voluntarios eligen qué reproducir cada semana, o cuando quieres explorar lo que está disponible.
 
 :::info
-Puedes acceder a la pantalla **Proveedores** en cualquier momento desde **Configuración** en la parte inferior de la barra lateral. No necesitas usar un modo de emparejamiento para explorar y reproducir contenido.
+Puedes abrir la pantalla **Proveedores** en cualquier momento desde **Configuración**, en la parte inferior de la barra lateral. No necesitas emparejar el televisor para explorar y reproducir contenido.
 :::
 
 ## Artículos relacionados
 
-- **[Modo de clase](../classroom-mode/)** - Guía completa para emparejar con un aula
-- **[Modo de plan](../plan-mode/)** - Guía completa para emparejar con un plan de servicio
-- **[Proveedores de contenido](../content-providers/)** - Explora y descarga contenido de fuentes externas
+- **[Modo programado](../scheduled-mode/)**: pon televisores en un calendario con FreePlay Admin
+- **[Modo plan](../plan-mode/)**: guía completa para emparejar con un plan de servicio
+- **[Proveedores de contenido](../content-providers/)**: explora y descarga contenido de fuentes externas

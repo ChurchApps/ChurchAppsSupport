@@ -558,12 +558,14 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'category',
-          label: 'Classroom Mode',
-          link: { type: 'doc', id: 'freeplay/classroom-mode/index' },
+          label: 'Scheduled Mode',
+          link: { type: 'doc', id: 'freeplay/scheduled-mode/index' },
           items: [
-            'freeplay/classroom-mode/selecting-room',
-            'freeplay/classroom-mode/downloading-content',
-            'freeplay/classroom-mode/playing-lessons',
+            'freeplay/scheduled-mode/pairing-a-screen',
+            'freeplay/scheduled-mode/managing-screens',
+            'freeplay/scheduled-mode/building-playlists',
+            'freeplay/scheduled-mode/scheduling-the-calendar',
+            'freeplay/scheduled-mode/scheduled-playback',
           ],
         },
         {
@@ -581,15 +583,8 @@ const sidebars: SidebarsConfig = {
           items: [
             'freeplay/content-providers/connecting-providers',
             'freeplay/content-providers/browsing-content',
+            'freeplay/content-providers/playing-content',
             'freeplay/content-providers/announcements',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Browsing Lessons',
-          link: { type: 'doc', id: 'freeplay/browsing-lessons/index' },
-          items: [
-            'freeplay/browsing-lessons/programs-studies',
           ],
         },
       ],

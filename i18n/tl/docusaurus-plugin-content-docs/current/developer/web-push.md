@@ -1,123 +1,123 @@
 ---
-title: "Web Push Notifications"
+title: "Mga Web Push Notification"
 ---
 
-# Web Push Notifications
+# Mga Web Push Notification
 
 <div class="article-intro">
 
-Ang ChurchApps web apps ay nag-deliver ng push notifications sa pamamagitan ng W3C Web Push API — ang parehong mekanismo na ginagamit ng Firebase Cloud Messaging sa server side, ngunit na-deliver sa pamamagitan ng browser's native `PushManager` sa halip ng FCM. Isang single VAPID key pair sa MessagingApi ay sumasaklaw sa bawat consumer (B1Admin, B1App, future PWAs).
+Ang mga web app ng ChurchApps ay naghahatid ng push notification gamit ang W3C Web Push API -- ang parehong mekanismong ginagamit ng Firebase Cloud Messaging sa server side, pero inihahatid sa pamamagitan ng native na `PushManager` ng browser sa halip na FCM. Iisang VAPID key pair sa MessagingApi ang sumasaklaw sa bawat consumer (B1Admin, B1App, at mga susunod pang PWA).
 
 </div>
 
-## Kailan ang push ay nag-fire
+## Kailan nagpapadala ng push {#when-push-fires}
 
-Ang push ay isang tier sa isang single delivery pass sa loob ng `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): isang in-app preference gate, pagkatapos ang socket delivery at push na sinusubukan sa parehong pass (bawat isa sa likod ng sarili nitong preference gate), pagkatapos ang email. Ang isang recipient na nag-mute ng category ay hindi kailanman umaabot sa push. Ang socket delivery na matagumpay ay hindi na humihigil sa push — bawat notification type ay kumikilos na parang laging ginawa ng private messages, kaya ang isang installed PWA na umuupo sa background ay patuloy na may OS-level notification kahit na ang socket delivery ay umabot na; ang duplicate banners ay ma-suppress ng client-side ng service worker sa halip (tingnan ang [Service worker requirement](#service-worker-requirement)). Ang scheduled reminders at staff-triggered broadcasts ay nagsisimula direkta sa push tier, nag-skip ng socket step nang lubusan. Ang email ay nananatiling timer-driven, na nag-escalate ng unread rows sa sarili nitong schedule sa halip na bilang bahagi ng pass na ito.
+Ang push ay isang tier sa iisang delivery pass sa loob ng `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): una ang in-app preference gate, pagkatapos ay sabay na sinusubukan ang socket delivery at push sa iisang pass (bawat isa ay may sariling preference gate), at saka ang email. Hindi kailanman umaabot sa push ang tatanggap na nag-mute ng kategorya. Hindi na humihinto ang push kapag matagumpay ang socket delivery -- ang bawat uri ng notification ngayon ay kumikilos na gaya ng dati pa sa private message, kaya ang naka-install na PWA na nasa background ay nagpapakita pa rin ng OS-level na notification kahit may socket delivery nang naihatid; ang mga duplicate na banner ay pinipigilan na lang sa client-side ng service worker (tingnan ang [Kinakailangan ang service worker](#service-worker-requirement)). Ang mga naka-iskedyul na reminder at broadcast na sinimulan ng staff ay direktang nagsisimula sa push tier, at nilalampasan ang socket step. Ang email ay timer-driven pa rin, at nag-e-escalate ng mga unread row sa sarili nitong iskedyul sa halip na bahagi ng pass na ito.
 
-Ang pinakakaraniwang paths na umabot sa push:
+Ang mga pinakakaraniwang daan na umaabot sa push:
 
-1. **Content notifications** — isang reply sa isang conversation na sinusundan ng tao, isang mention, o iba pang event na nag-route sa pamamagitan ng `NotificationHelper.createNotifications()`.
-2. **Private messages** — isang direct message ay napupunta sa parehong delivery function at palaging sinusubukan ang push kasama ng socket delivery.
-3. **Scheduled reminders** — event, task, at serving reminders na pinalawak at dispatched ng reminder engine, na nagsisimula ng bagong occurrences direkta sa push tier.
-4. **Staff-triggered pushes** — `POST /messaging/notifications/create`, `/ping`, at `/group/send` para sa one-off o group broadcasts.
+1. **Content notification** -- isang reply sa conversation na sinusundan ng tao, isang mention, o ibang event na dumaraan sa `NotificationHelper.createNotifications()`.
+2. **Private message** -- ang direct message ay dumaraan sa parehong delivery function at palaging sinusubukan ang push kasabay ng socket delivery.
+3. **Naka-iskedyul na reminder** -- mga event, task, at serving reminder na pinalawak at ipinadala ng reminder engine, na direktang nagsisimula ng bagong occurrence sa push tier.
+4. **Push na sinimulan ng staff** -- `POST /messaging/notifications/create`, `/ping`, at `/group/send` para sa one-off o group broadcast.
 
-## Server flow
+## Daloy ng server
 
 ```
 NotificationHelper.createNotifications(...) / checkShouldNotify(...) / ReminderEngine.scan(...)
   │
   └─ NotificationHelper.attemptDeliveryWithEscalation(...)
-       ├─ in-app preference gate                  ← muted recipients ay humihigil dito, walang push
-       ├─ same pass, pareho sinusubukan (hindi isa ang humahadlang sa isa):
-       │    ├─ socket delivery via DeliveryHelper  ← skipped para sa reminders/broadcasts (sila ay nagsisimula sa push)
+       ├─ in-app preference gate                  ← muted recipients stop here, no push
+       ├─ same pass, both attempted (neither gates the other):
+       │    ├─ socket delivery via DeliveryHelper  ← skipped for reminders/broadcasts (they start at push)
        │    └─ push preference gate
        │         └─ WebPushHelper.sendBulkTypedMessages(tokens, title, body, type, contentId)
        │              └─ web-push library → VAPID-signed POST → browser push service
-       └─ email preference gate → timer-driven, nag-escalate ng unread rows nang hiwalay
+       └─ email preference gate → timer-driven, escalates unread rows separately
 ```
 
-### Required environment variables
+### Kinakailangang environment variable
 
-Ang VAPID keys ay naka-store sa `Environment` at dapat na present para ang push ay maging enabled:
+Nakaimbak ang mga VAPID key sa `Environment` at dapat naroon para ma-enable ang push:
 
-| Variable | Description |
-|----------|-------------|
-| `webPushPublicKey` | VAPID public key (base64url). Na-return sa clients sa pamamagitan ng `GET /messaging/webpush/publicKey` |
-| `webPushPrivateKey` | VAPID private key. Ginagamit upang i-sign ang bawat outbound push |
-| `webPushSubject` | `mailto:` URI na ine-report sa push services. Nakadefault sa `mailto:support@churchapps.org` |
+| Variable | Paglalarawan |
+|----------|----------|
+| `webPushPublicKey` | VAPID public key (base64url). Ibinabalik sa mga client sa pamamagitan ng `GET /messaging/webpush/publicKey` |
+| `webPushPrivateKey` | VAPID private key. Ginagamit para pirmahan ang bawat outbound na push |
+| `webPushSubject` | `mailto:` URI na iniuulat sa mga push service. Default ay `mailto:support@churchapps.org` |
 
-Ang `WebPushHelper.isEnabled()` ay nagbabalik ng `false` kapag ang alinman sa key ay missing — ang messaging module ay patuloy na gumagana, ang push deliveries ay simpleng no-op.
+Nagbabalik ng `false` ang `WebPushHelper.isEnabled()` kapag nawawala ang alinman sa dalawang key -- patuloy na gumagana ang messaging module, pero walang ginagawa ang mga push delivery.
 
-### Paglikha ng VAPID key pair
+### Pagbuo ng VAPID key pair
 
 ```bash
 npx web-push generate-vapid-keys
 ```
 
-Idagdag ang output sa iyong `.env` (local) o AWS SSM Parameter Store (deployed). Ang pag-rotate ng keys ay nag-invalidate ng bawat existing subscription — ang mga clients ay dapat na mag-re-enroll sa susunod na page load.
+Idagdag ang output sa iyong `.env` (lokal) o sa AWS SSM Parameter Store (naka-deploy). Ang pag-rotate ng mga key ay nagpapawalang-bisa sa lahat ng umiiral na subscription -- kailangang mag-enroll muli ang mga client sa susunod na pag-load ng page.
 
-## Storage model
+## Modelo ng storage
 
-Ang Web Push subscriptions ay na-store sa existing `devices` table kasama ang FCM device records. Ang mga ito ay na-distinguish ng isang `webpush:` prefix sa `fcmToken` column:
+Ang mga Web Push subscription ay nakaimbak sa umiiral na `devices` table kasama ng mga FCM device record. Nakikilala sila sa pamamagitan ng prefix na `webpush:` sa column na `fcmToken`:
 
 ```
 fcmToken = "webpush:" + JSON.stringify({ endpoint, keys: { p256dh, auth } })
 ```
 
-Ito ay nagpapahintulot sa isang single `loadByPersonId` call na ibalik ang bawat device na na-enroll ng isang user, anuman ang platform. Ang `WebPushHelper.isWebPushToken(token)` at `decodeSubscription(token)` ay humawak ng prefix logic.
+Dahil dito, isang tawag lang ng `loadByPersonId` ang makakakuha ng lahat ng device na na-enroll ng isang user, anuman ang platform. Hinahawakan ng `WebPushHelper.isWebPushToken(token)` at `decodeSubscription(token)` ang lohika ng prefix.
 
-## Endpoints
+## Mga endpoint
 
 Base path: `/messaging/webpush`
 
-| Method | Path | Auth | Description |
-|--------|------|------|-------------|
-| GET | `/publicKey` | Public | Nagbabalik ng `{ publicKey, enabled }`. Ang mga clients ay nagpapasa ng `publicKey` sa `pushManager.subscribe({ applicationServerKey })` |
-| POST | `/subscribe` | JWT | Nag-register (o nag-upsert) ng isang subscription para sa authenticated user. Body: `{ subscription: { endpoint, keys: { p256dh, auth } }, appName?, deviceInfo?, label? }` |
-| POST | `/unsubscribe` | Public | Nag-delete ng anumang device row na ang `fcmToken` ay naglalaman ng ibinigay na endpoint. Body: `{ endpoint }` |
-| DELETE | `/subscription/:id` | JWT | Nag-delete ng isang specific device row sa server-side id nito |
+| Method | Path | Auth | Paglalarawan |
+|--------|------|------|----------|
+| GET | `/publicKey` | Public | Nagbabalik ng `{ publicKey, enabled }`. Ipinapasa ng mga client ang `publicKey` sa `pushManager.subscribe({ applicationServerKey })` |
+| POST | `/subscribe` | JWT | Nagrerehistro (o nag-a-upsert) ng subscription para sa naka-authenticate na user. Body: `{ subscription: { endpoint, keys: { p256dh, auth } }, appName?, deviceInfo?, label? }` |
+| POST | `/unsubscribe` | Public | Binubura ang anumang device row na ang `fcmToken` ay naglalaman ng ibinigay na endpoint. Body: `{ endpoint }` |
+| DELETE | `/subscription/:id` | JWT | Binubura ang isang partikular na device row ayon sa server-side na id nito |
 
 ## Client primitive: `WebPushHelper`
 
-Ang `@churchapps/apphelper`'s `WebPushHelper` ay ang single client-side entry point. Ang hosts ay nag-configure nito minsan sa boot at tumatawag ng `subscribe()` pagkatapos ng login.
+Ang `WebPushHelper` ng `@churchapps/apphelper` ang iisang client-side na entry point. Iko-configure ito ng mga host nang isang beses sa boot at tatawagin ang `subscribe()` pagkatapos mag-login.
 
 ```typescript
 import { WebPushHelper } from "@churchapps/apphelper";
 
-// Sa app's bootstrap (hal., _app.tsx, layout.tsx)
+// In your app's bootstrap (e.g., _app.tsx, layout.tsx)
 WebPushHelper.configure({
-  scope: "/",                // service worker scope; tumutugma sa sw.js registration
-  appName: "B1AppPwa"        // naka-store sa device row, kapaki-pakinabang para sa pag-filter ng surface
+  scope: "/",                // service worker scope; matches sw.js registration
+  appName: "B1AppPwa"        // stored on the device row, useful for filtering by surface
 });
 
-// Pagkatapos ng login (at pagkatapos ng bawat userChurch change)
+// After login (and after every userChurch change)
 await WebPushHelper.subscribe();
 ```
 
-Ang behaviors na libre ang nakukuha ng consumers:
+Mga behavior na libre nang nakukuha ng mga consumer:
 
-- **Capability check** — ang `isSupported()` ay nagbabalik ng `false` sa browsers nang walang `serviceWorker` / `PushManager` / `Notification`.
-- **Cooldown** — ang `canPromptNow()` ay nag-enforce ng 7-day cooldown sa pagitan ng prompts sa pamamagitan ng `localStorage` kaya ang users na nag-dismiss ng OS prompt ay hindi hihingin ulit sa bawat session.
-- **Opt-out** — ang `setOptedOut(true)` at `unsubscribe()` ay humihigil sa re-prompting at nag-aalis ng server-side device row.
-- **Standalone-PWA detection** — ang `isStandalone()` ay nagpapahintulot sa hosts na gate ang iOS push prompts sa likod ng "user ay nag-install ng PWA sa home screen" (iOS lamang ang nagpapahintulot ng push mula sa installed PWAs).
-- **Re-enroll sa church switch** — ang `refreshEnrollment()` ay muling nagpo-post ng existing browser subscription laban sa bagong `userChurch` nang walang pag-re-prompt ng user. Tawakin ito mula sa `userChurch` change handler.
+- **Capability check** -- Nagbabalik ng `false` ang `isSupported()` sa mga browser na walang `serviceWorker` / `PushManager` / `Notification`.
+- **Cooldown** -- Ipinapatupad ng `canPromptNow()` ang 7-araw na cooldown sa pagitan ng mga prompt sa pamamagitan ng `localStorage`, para hindi na tanungin muli sa bawat session ang mga user na tumanggi sa OS prompt.
+- **Opt-out** -- Hinaharangan ng `setOptedOut(true)` at `unsubscribe()` ang muling pag-prompt at inaalis ang server-side na device row.
+- **Standalone-PWA detection** -- Pinapayagan ng `isStandalone()` ang mga host na i-gate ang iOS push prompt sa likod ng "naka-install na ng user ang PWA sa home screen" (sa iOS, mula sa naka-install na PWA lang pinapayagan ang push).
+- **Re-enroll kapag nagpalit ng simbahan** -- Muling ipinapadala ng `refreshEnrollment()` ang umiiral na browser subscription laban sa bagong `userChurch` nang hindi muling nagpapa-prompt sa user. Tawagin ito mula sa handler ng pagbabago ng `userChurch`.
 
-### Service worker requirement
+### Kinakailangan ang service worker {#service-worker-requirement}
 
-Ang browser's `PushManager` ay tanging nag-resolve ng isang subscription kapag ang isang service worker ay naka-register sa configured scope. Ang ChurchApps PWAs ay gumagamit ng [Serwist](https://serwist.dev/) (Next.js apps) o workbox para sa service worker generation. Dahil ang server ay ngayon palaging sinusubukan ang push kasama ng socket delivery (tingnan ang [When push fires](#when-push-fires)), ang service worker ay ang dedup point: ang `push` handler nito ay dapat mag-suppress ng `showNotification` kapag ang isang focused/visible client ay naka-target na sa deep-link target ng notification, ngunit dapat palaging mag-update ng app badge anuman ang kung ipakita man ang banner:
+Lulutas lang ang `PushManager` ng browser ng subscription kapag may nakarehistrong service worker sa naka-configure na scope. Gumagamit ang mga PWA ng ChurchApps ng [Serwist](https://serwist.dev/) (mga Next.js app) o workbox para sa paggawa ng service worker. Dahil palaging sinusubukan na ngayon ng server ang push kasabay ng socket delivery (tingnan ang [Kailan nagpapadala ng push](#when-push-fires)), ang service worker ang punto ng dedup: ang `push` handler nito ay dapat pumigil sa `showNotification` kapag may naka-focus/nakikitang client na nasa deep-link target na ng notification, pero dapat palaging i-update ang app badge anuman ang kung naipakita ang banner:
 
 ```javascript
-// public/sw.js (o kahit ano ang Serwist/workbox ay nag-emit)
+// public/sw.js (or whatever Serwist/workbox emits)
 self.addEventListener("push", (event) => {
   const data = event.data?.json() ?? {};
   const title = data.title || "ChurchApps";
   const target = deepLinkFor(data.type, data.contentId, data);
 
   event.waitUntil((async () => {
-    if (typeof data.badgeCount === "number") await updateAppBadge(data.badgeCount); // palaging tumatakbo, kahit na ang banner ay ma-suppress
+    if (typeof data.badgeCount === "number") await updateAppBadge(data.badgeCount); // always runs, even if the banner is suppressed
 
     const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
-    // Parehong pathname; para sa private messages, pati na rin pareho conversationId.
+    // Same pathname; for private messages, also same conversationId.
     const alreadyViewing = clients.some((client) => (client.focused || client.visibilityState === "visible") && clientMatchesTarget(client.url, target));
     if (alreadyViewing) return;
 
@@ -136,7 +136,7 @@ self.addEventListener("notificationclick", (event) => {
     const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
 
     const exact = clients.find((client) => clientMatchesTarget(client.url, target));
-    if (exact) return exact.focus(); // na sa target na: focus, huwag mag-navigate
+    if (exact) return exact.focus(); // already on the target: focus, don't navigate
 
     const mobileClient = clients.find((client) => new URL(client.url).pathname.startsWith("/mobile"));
     if (mobileClient) {
@@ -149,18 +149,18 @@ self.addEventListener("notificationclick", (event) => {
 });
 ```
 
-Ang `deepLinkFor` / `clientMatchesTarget` ay consumer-specific — tingnan ang `B1App/src/app/sw.ts` para sa reference implementation. Ang B1App ay nag-route ng `privateMessage` sa `/mobile/messages/:personId`, ang B1Admin ay nag-route ng `notification` sa alerts panel, atbp.
+Ang `deepLinkFor` at `clientMatchesTarget` ay partikular sa bawat consumer -- tingnan ang `B1App/src/app/sw.ts` para sa reference implementation. Dinadala ng B1App ang `privateMessage` sa `/mobile/messages/:personId`, dinadala ng B1Admin ang `notification` sa alerts panel nito, atbp.
 
-## Operational notes
+## Operational na tala
 
-- **`gone: true` results** — ang `WebPushHelper.sendBulk` ay nagbabalik ng `{ token, success, gone, errorMessage }` bawat recipient. Isang `gone: true` result (push service ay sumagot ng `404` o `410`) ay nangangahulugan na ang subscription ay permanently invalid; ang downstream code sa `NotificationHelper` ay nag-delete ng mga device rows upang hindi na sila subukan.
-- **TTL** — ang push messages ay ipinapadala na may `TTL: 86400` (24 na oras). Kung ang browser ng user ay hindi kumokonekta sa push service sa loob ng 24 na oras, ang push ay itinatapon.
-- **Walang retries** — isang transient failure (timeout, 5xx) ay na-log at hindi retried. Ang push ay best-effort; ang in-page socket at ang email notification tier ay humawak ng durability story.
-- **Disabled environments** — ang staging at dev environments ay maaaring iwanan ang VAPID keys na walang laman; ang `WebPushHelper.isEnabled()` ay magbabalik ng `false` at ang mga pushes ay mag-short-circuit. Ito ay ang intended behavior para sa environments nang walang sarili nitong VAPID identity.
+- **`gone: true` na resulta** -- Nagbabalik ang `WebPushHelper.sendBulk` ng `{ token, success, gone, errorMessage }` bawat tatanggap. Ang resultang `gone: true` (tumugon ang push service ng `404` o `410`) ay nangangahulugang permanenteng hindi na valid ang subscription; binubura ng downstream code sa `NotificationHelper` ang mga device row na iyon para hindi na sila subukan muli.
+- **TTL** -- Ipinapadala ang mga push message na may `TTL: 86400` (24 oras). Kung hindi kumonekta ang browser ng user sa push service sa loob ng 24 oras, ita-tapon ang push.
+- **Walang retry** -- Ang pansamantalang failure (timeout, 5xx) ay ila-log at hindi na uulitin. Best-effort ang push; ang in-page socket at ang email notification tier ang humahawak sa pagiging maaasahan.
+- **Mga disabled na environment** -- Maaaring iwanang walang laman ng mga dev environment ang VAPID key; magiging `false` ang `WebPushHelper.isEnabled()` at magsa-short-circuit ang mga push. Ito ang sadyang behavior para sa mga environment na walang sariling VAPID identity.
 
-## Related Pages
+## Kaugnay na Mga Pahina
 
 - [Notifications Architecture](./architecture/notifications) -- Ang buong in-app/push/email escalation funnel at ang reminder engine
-- [Real-time Architecture](./realtime) -- WebSocket delivery; ang push ay ngayon nag-fire mula sa parehong in-app funnel kasama ng socket delivery sa parehong pass, hindi lamang bilang fallback kapag ang socket delivery ay hindi umabot
-- [Messaging Endpoints](./api/endpoints/messaging) -- Notifications, devices, at ang natitirang messaging surface
-- [AppHelper](./shared-libraries/app-helper) -- Ang npm package na nag-ship ng `WebPushHelper`
+- [Real-time Architecture](./realtime) -- WebSocket delivery; ang push ngayon ay nagmumula sa parehong in-app funnel kasabay ng socket delivery sa iisang pass, hindi lang bilang fallback kapag hindi naihatid ang socket
+- [Messaging Endpoints](./api/endpoints/messaging) -- Mga notification, device, at ang natitirang bahagi ng messaging surface
+- [AppHelper](./shared-libraries/app-helper) -- Ang npm package na naglalaman ng `WebPushHelper`

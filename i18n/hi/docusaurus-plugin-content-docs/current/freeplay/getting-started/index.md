@@ -1,69 +1,72 @@
 ---
-title: "शुरुआत करना"
+title: "शुरू करना"
 ---
 
-# FreePlay के साथ शुरुआत करना
+# FreePlay के साथ शुरू करें
 
 <div class="article-intro">
 
-FreePlay Android TV, Amazon Fire TV, और Apple TV के लिए available है। यह guide आपको app को install करने, इसे पहली बार launch करने, और app भर में जो basic TV remote controls आप use करेंगे उन्हें सीखने के लिए walk through करता है।
+FreePlay Android TV, Amazon Fire TV, और Apple TV पर उपलब्ध है। यह गाइड आपको ऐप इंस्टॉल करने, उसे पहली बार लॉन्च करने, और उन basic TV remote controls के बारे में बताती है जिनका उपयोग आप पूरे ऐप में करेंगे।
 
 </div>
 
-:::tip FreePlay के लिए नए?
-हमारे **<a href="/guides/freeplay-quickstart" target="_blank">quick start video</a>** को देखें — FreePlay को install करें और कुछ ही मिनटों में content को play करना शुरू करें।
+:::tip FreePlay में नए हैं? यहां से शुरू करें
+अपना **<a href="/guides/freeplay-quickstart" target="_blank">quick start वीडियो</a>** देखें — FreePlay इंस्टॉल करें और कुछ ही मिनटों में content चलाना शुरू करें। किसी tech skill की ज़रूरत नहीं है।
 :::
 
-:::tip B1 Admin के साथ set कर रहे हैं?
-हमारी **<a href="/guides/freeplay-b1admin" target="_blank">step-by-step guide</a>** पूरे setup को cover करती है।
+:::tip B1 Admin के साथ setup कर रहे हैं?
+हमारी **<a href="/guides/freeplay-b1admin" target="_blank">चरण-दर-चरण गाइड</a>** पूरे setup को कवर करती है — content providers जोड़ने से लेकर हर हफ्ते सही lesson का आपके classroom TV पर अपने-आप download होने तक।
 :::
 
-## FreePlay को Install करना
+## FreePlay इंस्टॉल करना
 
-:::tip Device खरीद रहे हैं?
-सभी streaming sticks FreePlay को run नहीं कर सकते। देखें **[Choosing a Device](./choosing-a-device.md)** कि क्या खरीदना है।
+:::tip डिवाइस खरीद रहे हैं?
+सभी streaming sticks पर FreePlay नहीं चलता — सबसे नए budget Fire TV models पर नहीं चलता। ठीक-ठीक क्या खरीदना है, यह जानने के लिए **[डिवाइस चुनना](./choosing-a-device.md)** देखें।
 :::
 
 ### Android TV / Amazon Fire TV
 
-1. अपने TV पर app store को खोलें (**Google Play Store** या **Amazon Appstore**)
-2. **FreePlay** को search करें
-3. app को select करें और **Install** को choose करें
+1. अपने TV पर app store खोलें (**Google Play Store** या **Amazon Appstore**)
+2. **FreePlay** खोजें
+3. ऐप चुनें और **Install** चुनें
 
 ### Apple TV
 
-1. अपने Apple TV पर **App Store** को खोलें
-2. **FreePlay** को search करें
-3. app को select करें और **Get** को choose करें
+1. अपने Apple TV पर **App Store** खोलें
+2. **FreePlay** खोजें
+3. ऐप चुनें और **Get** चुनें
 
-## App को Launch करना
+## ऐप लॉन्च करना
 
-जब आप FreePlay को पहली बार खोलते हैं, आप FreePlay logo के साथ एक animated splash screen देखेंगे। app किसी भी previously connected content providers को check करता है। यदि आपने पहले से एक provider को connect किया है, यह आपको उस provider के content browser पर ले जाएगा। अन्यथा, यह **Content Providers** screen को खोलता है जहां आप अपने पहले content source को connect कर सकते हैं।
+जब आप FreePlay को पहली बार खोलते हैं, तो आपको FreePlay logo वाली एक animated splash screen दिखेगी। ऐप किसी पहले से जुड़े content providers की जांच करता है। अगर आपने पहले से कोई provider जोड़ा है, तो यह सीधे उस provider के content browser पर ले जाता है। अन्यथा, यह **Content Providers** screen खोलता है, जहां आप अपना पहला content source जोड़ सकते हैं।
 
-## अपने TV Remote से Navigate करना
+अगर TV को [Scheduled Mode](../scheduled-mode/) में किसी calendar से pair किया गया है, तो FreePlay यह सब छोड़ देता है और सीधे scheduled player पर खुलता है।
 
-FreePlay TV remotes के लिए बनाया गया है। ये controls आप app भर में use करेंगे:
+## अपने TV Remote से नेविगेट करना
 
-- **Directional pad (up/down/left/right)** - screen पर items के बीच move करें
-- **Select / OK button** - highlighted item को choose करें
-- **Left arrow** - किसी भी screen से sidebar को open करें
-- **Right arrow** - sidebar को close करें
-- **Back / Menu button** - पिछली screen पर जाएं
+FreePlay TV remotes के लिए बना है। ये वे controls हैं जिनका आप पूरे ऐप में उपयोग करेंगे:
+
+- **Directional pad (ऊपर/नीचे/बाएं/दाएं)** - स्क्रीन पर items के बीच आगे-पीछे जाएं
+- **Select / OK button** - हाइलाइट किया हुआ item चुनें
+- **Left arrow** - किसी भी screen से sidebar खोलें
+- **Right arrow** - sidebar बंद करें और मुख्य content area पर लौटें
+- **Back / Menu button** - पिछली screen पर वापस जाएं
 
 :::tip
-जब आप content को browse कर रहे हैं sidebar एक narrow strip of icons में collapse हो जाता है। full labels देखने के लिए अपने remote पर left arrow को press करें।
+जब आप content browse कर रहे हों, तो sidebar icons की एक पतली पट्टी में सिमट जाता है। पूरे labels देखने के लिए अपने remote पर left arrow दबाएं।
 :::
 
 ## Sidebar
 
-Sidebar अपने top से bottom तक list करता है:
+Sidebar ऊपर से नीचे तक ये सूचीबद्ध करता है:
 
-- **Today's Plan** — जब TV एक plan के लिए paired हो। देखें [Plan Mode](../plan-mode/)
-- **Announcements** — एक बार जब आप एक announcements folder choose कर लेते हैं। देखें [Announcements](../content-providers/announcements)
-- **Browse** — हर connected content provider जिसे आप browse कर सकते हैं। देखें [Browsing and Downloading Content](../content-providers/browsing-content)
-- **Settings** — sidebar के bottom पर। **Downloads** (इस device पर saved content को play या delete करें) और **Providers** (content providers को connect करें) को खोलता है।
+- **Today's Plan** -- जब TV किसी plan से pair हो, तब दिखता है। देखें [Plan Mode](../plan-mode/)
+- **Announcements** -- announcements folder चुनने के बाद दिखता है। देखें [Announcements](../content-providers/announcements)
+- **Browse** -- हर जुड़ा हुआ content provider जिसे आप browse कर सकते हैं। देखें [Browsing and Downloading Content](../content-providers/browsing-content)
+- **Settings** -- sidebar के नीचे। इसमें **Pair to a calendar** (इस TV को किसी calendar या plan से pair करें -- देखें [Choosing a Pairing Mode](./pairing-modes)), **Downloads** (इस device पर सहेजा गया content चलाएं या हटाएं), और **Providers** (content providers जोड़ें और announcements folder चुनें) खुलते हैं
 
-## क्या अगला है
+## आगे क्या
 
-- **[Choosing a Pairing Mode](./pairing-modes)** - विभिन्न तरीके जिनसे आप अपना TV connect कर सकते हैं
-- **[Content Providers](../content-providers/)** - Lessons.church, Bible Project, और अधिक से connect करें
+- **[Pairing Mode चुनना](./pairing-modes)** - अपने TVs को जोड़ने के अलग-अलग तरीके जानें
+- **[Scheduled Mode](../scheduled-mode/)** - FreePlay Admin से अपने TVs को calendar पर रखें
+- **[Content Providers](../content-providers/)** - Lessons.church, Bible Project, और अन्य से जुड़ें

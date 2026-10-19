@@ -32,7 +32,7 @@ Clique em qualquer submissão para ver todos os detalhes. Você verá todas as r
 
 Clique no **ícone de impressão** ao lado da submissão para imprimir as respostas preenchidas dessa pessoa -- útil para um arquivo em papel ou uma autorização assinada que você precisa manter à mão. A impressão mostra o logotipo da sua igreja (o **Logotipo para Fundo Claro** em [Website > Aparência](../website/appearance.md), se você tiver enviado um) com o nome da sua igreja abaixo, no topo. Isso é diferente de [imprimir um formulário em branco](./creating-forms.md#printing-a-blank-form): imprime as respostas já enviadas por uma pessoa, e não uma cópia vazia. O mesmo ícone de impressão aparece em qualquer lugar onde uma submissão é exibida, inclusive no [perfil de uma pessoa](../people/adding-people.md#working-with-forms).
 
-## Alterando a Pessoa de uma Submissão
+## Alterando a Pessoa de uma Submissão {#changing-the-person-on-a-submission}
 
 Se uma submissão estiver vinculada à pessoa errada -- por exemplo, dois membros da família compartilham o mesmo endereço de e-mail --, você pode movê-la para a pessoa certa ou desvinculá-la.
 

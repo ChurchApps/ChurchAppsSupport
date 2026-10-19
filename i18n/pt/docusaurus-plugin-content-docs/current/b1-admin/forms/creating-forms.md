@@ -71,7 +71,7 @@ Quando **Criar um registro de pessoa a partir das respostas** está ativado, voc
 
 Cada vez que alguém enviar o formulário, a pessoa encontrada ou recém-criada é adicionada ao grupo (membros que já estão no grupo são ignorados). Isso é útil para coisas como um formulário de inscrição em um acampamento que deve montar automaticamente a lista de participantes do grupo do acampamento.
 
-### Enviando um E-mail de Acompanhamento
+### Enviando um E-mail de Acompanhamento {#sending-a-follow-up-email}
 
 Com **Criar um registro de pessoa a partir das respostas** ativado, você também pode enviar um e-mail para cada pessoa que responder ao formulário. Preencha **Assunto do E-mail de Acompanhamento** e **Corpo do E-mail de Acompanhamento** nos detalhes do formulário. Você pode usar os marcadores `{firstName}` e `{churchName}` em ambos. O e-mail só é enviado quando os dois campos estiverem preenchidos.
 

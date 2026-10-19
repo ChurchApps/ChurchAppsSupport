@@ -1,31 +1,35 @@
 ---
-title: "Modalità piano"
+title: "Modalità Piano"
 ---
 
-# Modalità piano
+# Modalità Piano
 
 <div class="article-intro">
 
-La modalità piano collega il tuo TV a un piano di servizio della chiesa. Invece di recuperare i contenuti in base al programma di un'aula, segue il piano configurato dalla leadership della tua chiesa in B1 Admin. Questo è ideale quando vuoi che un TV visualizzi esattamente ciò che è assegnato nel piano della settimana corrente.
+La Modalità Piano collega la vostra TV al piano di un culto della chiesa. Invece di prelevare contenuti in base a un calendario della classe, segue il piano configurato dalla leadership della chiesa in B1 Admin. È ideale quando volete che una TV mostri esattamente ciò che è assegnato nel piano della settimana in corso.
 
 </div>
 
-## Come si differenzia dalla modalità aula
+## In cosa differisce dalle altre modalità
 
-- **[La modalità aula](../classroom-mode/)** recupera la lezione programmata per una stanza specifica in una determinata data
-- **La modalità piano** recupera il contenuto legato a un tipo di piano, che può includere lezioni, presentazioni dei fornitori, componenti aggiuntivi e altri media disposti in un ordine personalizzato
+- **[Modalità Programmata](../scheduled-mode/)** riproduce playlist da un calendario di FreePlay Admin, agli orari che impostate, senza che nessuno prema Avvia
+- **Modalità Piano** recupera i contenuti collegati a un tipo di piano, che possono includere lezioni, presentazioni di fornitori, componenti aggiuntivi e altri contenuti multimediali disposti in un ordine personalizzato
 
-La modalità piano è particolarmente utile quando il tuo piano di servizio include un mix di contenuti da diverse fonti, tutti organizzati in un'unica sequenza.
+La Modalità Piano è particolarmente utile quando il vostro piano di culto include un mix di contenuti da fonti diverse, tutti organizzati in un'unica sequenza.
+
+:::tip
+Volete che il piano corrente si riproduca da solo a un orario stabilito? In FreePlay Admin, aggiungete una voce al calendario e scegliete il tipo di piano in **Piani di culto**. Vedere [Programmare il calendario](../scheduled-mode/scheduling-the-calendar).
+:::
 
 ## Come funziona
 
-1. FreePlay genera un codice di associazione sullo schermo
-2. Un amministratore inserisce quel codice in **B1 Admin** nelle impostazioni del tipo di piano
-3. Una volta associato, FreePlay carica il piano corrente e scarica tutti i media associati
-4. Premi **Avvia piano** per iniziare la riproduzione
+1. Sulla TV, aprite **Impostazioni** > **Abbina a un calendario** per mostrare un codice di abbinamento
+2. Un amministratore inserisce quel codice in **B1 Admin** e sceglie il tipo di piano in **Mostra piani per**
+3. Una volta abbinata, FreePlay carica il piano corrente e scarica tutti i contenuti multimediali associati
+4. Premete **Avvia piano** per iniziare la riproduzione
 
-Il TV rimane associato al tipo di piano. Ogni settimana, recupera automaticamente l'ultimo piano e i suoi contenuti.
+La TV resta abbinata al tipo di piano. Ogni settimana, riprende automaticamente l'ultimo piano e i suoi contenuti.
 
 ## In questa sezione
 
-- **[Associare il dispositivo](./device-pairing)** - Come generare e inserire il codice di associazione
+- **[Abbinare il vostro dispositivo](./device-pairing)** -- Come generare e inserire il codice di abbinamento

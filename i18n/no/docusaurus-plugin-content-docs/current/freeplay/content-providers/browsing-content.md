@@ -1,78 +1,94 @@
 ---
-title: "Bla gjennom og laste ned innhold"
+title: "Bla gjennom og last ned innhold"
 ---
 
-# Bla gjennom og laste ned innhold
+# Bla gjennom og last ned innhold
 
 <div class="article-intro">
 
-Når du har koblet til en innholdsleverandør, kan du bla gjennom biblioteket, laste ned filer og spille dem av på TV-en. Innholdsleseren viser et visuelt rutenett av mapper og filer som du navigerer i med TV-fjernkontrollen.
+Når du er koblet til en innholdsleverandør, kan du bla i biblioteket, laste ned filer og spille dem av på TV-en. Innholdsleseren viser et visuelt rutenett av mapper og filer som du navigerer med TV-fjernkontrollen.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Koble til minst én innholdsleverandør -- se [Koble til leverandører](./connecting-providers)
+- Koble til minst én innholdsleverandør – se [Koble til leverandører](./connecting-providers)
 - Ha TV-fjernkontrollen klar for navigering
 
 </div>
 
 ## Innholdsleseren
 
-Innholdsleseren viser elementene i et rutenett med tre kolonner av kort. Hvert kort har et miniatyrbilde og en tittel. Det finnes to typer elementer:
+Innholdsleseren viser elementer i et rutenett med 3 kolonner av kort. Hvert kort viser et miniatyrbilde og en tittel. Det finnes to typer elementer:
 
-- **Mapper** - Vises med et miniatyrbilde eller et mappeikon. Velg en mappe for å se innholdet.
-- **Filer** - Enkeltstående medieelementer (videoer eller bilder). Videofiler har et avspillingsikon over miniatyrbildet.
+- **Mapper** – Representert med et miniatyrbilde eller mappeikon. Velg en mappe for å se innholdet.
+- **Filer** – Enkeltstående mediaelementer (videoer eller bilder). Videofiler viser et play-ikon over miniatyrbildet.
 
-Overskriften øverst på skjermen viser navnet på gjeldende mappe, eller leverandørens navn hvis du er på rotnivået.
+Overskriften øverst på skjermen viser navnet på gjeldende mappe, eller leverandørens navn hvis du er på rotnivå.
 
 ## Navigere i mapper
 
-1. Bruk retningstastene på fjernkontrollen til å markere en mappe
-2. Trykk på **Select** for å åpne den
-3. Leseren laster innholdet i mappen, som kan være flere mapper eller filer som kan spilles av
-4. Trykk på **Back** på fjernkontrollen for å gå ett nivå opp
+1. Bruk retningsknappen på fjernkontrollen til å markere en mappe
+2. Trykk **Velg** for å åpne den
+3. Leseren laster mappens innhold, som kan være flere mapper eller spillbare filer
+4. Trykk **Tilbake** på fjernkontrollen for å gå ett nivå opp
 
-Du kan gå så dypt ned som leverandørens innholdsstruktur tillater. Leseren husker mappestien din, slik at du kan navigere tilbake gjennom hvert nivå.
+Du kan gå så dypt som leverandørens innholdsstruktur tillater. Leseren holder styr på mappebanen din, slik at du kan navigere tilbake gjennom hvert nivå.
+
+## Bla i Lessons.church
+
+[Lessons.church](../../lessons-church/)-biblioteket er organisert på samme måte som nettstedet. På toppnivå ser du to mapper:
+
+- **Lessons** – Gå inn etter **program**, deretter **studie**, deretter **leksjon**. Hver leksjon lister så sine **varianter**, som er versjoner av leksjonen for en bestemt aldersgruppe eller setting, for eksempel Førskole eller Barneskole. Velg en variant for å åpne nedlastingsskjermen for den versjonen av leksjonen
+- **Add-Ons** – Ekstra videoer og ressurser, gruppert etter kategori
+
+Trykk **Tilbake** på ethvert nivå for å gå ett steg opp.
 
 ## Laste ned og spille av innhold
 
-Når du velger en mappe som inneholder filer som kan spilles av (eller velger en enkeltfil), går FreePlay til en nedlastingsskjerm:
+Når du velger en mappe som inneholder spillbare filer (eller velger en enkeltfil), viser FreePlay innholdstittelen med et omslagsbilde og to valg:
 
-1. Innholdets tittel vises på skjermen sammen med et omslagsbilde fra den valgte mappen
-2. En fremdriftslinje viser **Downloading item X of Y** etter hvert som filene lagres på enheten din
-3. Når nedlastingen er ferdig, vises knappen **Start** med et avspillingsikon
-4. Trykk på **Select** for å starte avspillingen
+- **Last ned** – Lagre alle filene på TV-en først, slik at avspillingen ikke er avhengig av Wi-Fi. En fremdriftslinje fylles etter hvert som hver fil lagres. Når den er ferdig, vises knappen **Start** med et play-ikon. Trykk **Velg** for å begynne avspillingen
+- **Strøm** – Begynn å spille med en gang over internett uten å lagre filene
 
 :::tip
-Nedlastet innhold lagres i hurtigbufferen på TV-en. Hvis du spiller av det samme innholdet igjen senere, lastes det umiddelbart uten ny nedlasting.
+Last ned leksjoner før søndag morgen mens bygget har en sterk internettforbindelse. Når innholdet er lastet ned, spilles det offline, og hvis du spiller det igjen senere, lastes det umiddelbart uten å laste ned på nytt.
 :::
+
+## Administrere nedlastinger
+
+Åpne **Innstillinger** nederst i sidemenyen, og velg **Nedlastinger** for å se alt som er lagret på denne TV-en:
+
+- Velg en nedlasting for å spille den av
+- Marker en nedlasting og velg slettikonet i hjørnet for å fjerne den og frigjøre lagringsplass
+
+Hvis skjermen sier **Ingen nedlastinger ennå**, er ingenting lagret på denne TV-en.
 
 ## Spille av leverandørinnhold
 
-Avspillingen fungerer på samme måte som avspilling av leksjoner. Bruk disse kontrollene:
+Bruk disse kontrollene under avspilling:
 
-- **Høyrepil** - Neste element
-- **Venstrepil** - Forrige element
-- **Select / Play-Pause** - Sett video på pause eller fortsett
-- **Oppoverpil** - Åpne meldingsvelgeren for å hoppe til et bestemt element
-- **Back** - Gå ut til innholdsleseren
+- **Høyrepil** – Neste element
+- **Venstrepil** – Forrige element
+- **Velg / Spill av/pause** – Pause eller fortsett video
+- **Opp-pil** – Åpne meldingsvelgeren for å hoppe til et bestemt element
+- **Tilbake** – Gå ut til innholdsleseren
 
-Når du går ut av spilleren, kommer du tilbake til innholdsleseren på rotnivået for gjeldende leverandør.
+Når du forlater avspilleren, kommer du tilbake til innholdsleseren på rotnivå for den gjeldende leverandøren.
 
 :::info
-For en fullstendig oversikt over alle spillerkontrollene, se [Spille av leksjoner](../classroom-mode/playing-lessons).
+For en fullstendig oversikt over alle avspillerkontroller, se [Spille av innhold](./playing-content).
 :::
 
 ## Bytte mellom leverandører
 
-Tilkoblede leverandører vises som elementer under overskriften **Browse** i sidefeltet til venstre. Slik bytter du til en annen leverandør:
+Tilkoblede leverandører vises som elementer under overskriften **Bla** i sidemenyen til venstre. For å bytte til en annen leverandør:
 
-1. Trykk på **venstrepilen** på fjernkontrollen for å utvide sidefeltet
-2. Velg leverandøren du vil bla gjennom
-3. Innholdsleseren oppdateres med bibliotekets innhold fra den leverandøren
+1. Trykk venstre pil på fjernkontrollen for å utvide sidemenyen
+2. Velg leverandøren du vil bla i
+3. Innholdsleseren oppdateres med den leverandørens bibliotek
 
 :::warning
-Hvis en mappe viser «No content available», har ikke leverandøren noen elementer på det nivået. Prøv å gå til en annen mappe, eller sjekk igjen senere.
+Hvis en mappe viser «Ingen innhold tilgjengelig», har leverandøren ingen elementer på det nivået. Prøv å navigere til en annen mappe, eller sjekk igjen senere.
 :::

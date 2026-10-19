@@ -23,14 +23,14 @@ Opening `https://yourchurchname.b1.church/mobile` takes you to the **Home** dash
 
 - **Latest sermon** -- your church's newest sermon, with an **All sermons** link
 - **Verse of the Day** -- today's verse; tap it to open the full [Verse of the Day](../content/verse-of-the-day.md) page
-- **You're serving** -- your next upcoming serving assignments, with an **All plans** link. If any assignment still needs your answer, those are shown first with a **Needs reply** badge and **Accept** / **Decline** buttons so you can respond right from Home; otherwise your next assignments show an **Accepted** or **Confirmed** badge. Tap an assignment to open its plan.
+- **You're serving** -- your next upcoming serving assignments, with an **All plans** link. If any assignment still needs your answer, those are shown first with a **Needs reply** badge and **Accept** / **Decline** buttons so you can respond right from Home (**Decline** asks you to confirm first); otherwise your next assignments show an **Accepted** or **Confirmed** badge. Tap an assignment to open its plan.
 - **Your groups** -- up to three of your groups with their meeting time and location, and an **All groups** link
 - **Giving** -- how much you have given this year ("Given in" the current year), a **Give** button, and a **History** link to your [donation history](../giving/donation-history.md)
 - **More from** *your church* -- buttons for the rest of the tools your church has turned on that are not already in the tab bar or shown above. The ones you use most move to the front.
 
 The serving, groups, and giving sections only appear when you are signed in, your church has that tool turned on, and you have something to show -- for example, an upcoming assignment or at least one group. On a computer, Home is laid out in two columns.
 
-If you are signed out, Home shows a **Welcome** heading in place of the greeting, with a short prompt ("Sign in to see your groups, giving, and more.") and a **Sign In** button. Your church can reword this prompt or hide it -- see [Mobile App Settings](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). When it is hidden, you can still sign in from the **More** page or the **Me** page.
+If you are signed out, Home shows a **Welcome** heading in place of the greeting, with a short prompt ("Sign in to see your groups, giving, and more.") and a **Sign In** button. The prompt shows even when your church hasn't set up anything else for Home yet. Your church can reword this prompt or hide it -- see [Mobile App Settings](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). When it is hidden, you can still sign in from the **More** page or the **Me** page.
 
 ## The Bottom Tab Bar
 

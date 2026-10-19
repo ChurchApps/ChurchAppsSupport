@@ -71,7 +71,7 @@ Kapag naka-enable ang **Create a person record from submissions**, maaari mo rin
 
 Sa bawat pagsusumite ng form, idadagdag ang tugmang tao o bagong likhang tao sa group (nilalaktawan ang mga existing na miyembro ng group). Kapaki-pakinabang ito para sa mga bagay gaya ng camp sign-up form na dapat awtomatikong bumuo ng roster ng camp group.
 
-### Pagpapadala ng Follow-up Email
+### Pagpapadala ng Follow-up Email {#sending-a-follow-up-email}
 
 Kapag naka-on ang **Create a person record from submissions**, maaari mo ring i-email ang bawat taong magsusumite ng form. Punan ang **Follow-up Email Subject** at **Follow-up Email Body** sa details ng form. Maaari mong gamitin ang mga token na `{firstName}` at `{churchName}` sa parehong field. Ipapadala lamang ang email kapag napunan ang parehong field.
 

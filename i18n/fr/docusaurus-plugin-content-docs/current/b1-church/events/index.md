@@ -6,41 +6,44 @@ title: "Événements"
 
 <div class="article-intro">
 
-La section Événements sur B1.church vous permet de parcourir les événements à venir de l'église et de vous y inscrire directement depuis le site web. Lorsque votre église active l'inscription pour un événement, vous pouvez vous inscrire, vous et les membres de votre famille, en quelques étapes seulement -- et pour les événements payants, choisir des types de participants et des options, appliquer des codes de réduction et payer en toute sécurité dans le cadre de l'inscription.
+La section Événements de B1.church vous permet de parcourir les événements à venir de l'église et de vous y inscrire directement depuis le site web. Lorsque votre église active l'inscription à un événement, vous pouvez vous inscrire vous-même et vos proches en quelques étapes -- et pour les événements payants, choisir les types de participants et les options, appliquer des codes de réduction et payer en toute sécurité lors de l'inscription.
 
 </div>
 
 ## Parcourir les événements
 
-Les événements apparaissent sur le calendrier de l'église. Lorsque vous ouvrez un événement pour lequel l'inscription est activée, un bouton **Register for this Event** s'affiche à côté des détails de l'événement.
+Les événements apparaissent sur le site web de votre église, soit dans un calendrier mensuel, soit sous forme de vignettes des événements à venir. Cliquez sur un événement pour ouvrir sa page dédiée, qui affiche :
 
-Les événements avec inscription activée affichent :
+- **Photo de l'événement** -- Si l'église en a ajouté une.
+- **Titre et description de l'événement** -- Le sujet de l'événement.
+- **Quand** -- La date et l'heure de la prochaine occurrence, ou la récurrence pour un événement répété.
+- **Où** -- Les salles réservées pour l'événement, le cas échéant.
+- **S'inscrire à cet événement** -- Un bouton qui vous mène au formulaire d'inscription. Affiché uniquement lorsque l'inscription est activée pour l'événement.
+- **Ajouter à mon agenda** -- Télécharge l'événement sous forme de fichier de calendrier que vous pouvez ouvrir dans Google Agenda, Calendrier Apple, Outlook ou une autre application d'agenda.
 
-- **Titre et description de l'événement** -- De quoi il s'agit.
-- **Date et heure** -- Quand l'événement a lieu.
-- **Bouton d'inscription** -- Un bouton bleu qui vous mène au formulaire d'inscription.
+Appuyez sur **Tous les événements** en haut de la page pour revenir en arrière. Au-dessus des vignettes des événements à venir, un bouton **S'abonner** vous permet de copier le lien ICS de tout le calendrier ou de le télécharger, afin que les nouveaux événements apparaissent dans votre propre application d'agenda.
 
-## Statut de l'inscription
+## Statut d'inscription
 
-Les événements peuvent afficher différents statuts selon le calendrier et la capacité :
+Les événements peuvent afficher différents statuts selon la date et la capacité :
 
-- **Open** -- L'inscription est disponible et vous pouvez vous inscrire.
-- **Not Yet Open** -- La période d'inscription n'a pas encore commencé. Revenez après la date d'ouverture.
-- **Closed** -- La date limite d'inscription est passée.
-- **Full** -- Toutes les places disponibles ont été prises.
+- **Ouvert** -- L'inscription est disponible et vous pouvez vous inscrire.
+- **Pas encore ouvert** -- La période d'inscription n'a pas encore commencé. Revenez après la date d'ouverture.
+- **Fermé** -- La date limite d'inscription est dépassée.
+- **Complet** -- Toutes les places disponibles ont été prises.
 
 :::tip
-Si un événement est complet, vous pouvez peut-être encore rejoindre la **liste d'attente** si votre église l'a activée -- vous serez averti automatiquement par e-mail si une place se libère. Sinon, revenez plus tard ; des places peuvent se libérer en cas d'annulation.
+Si un événement est complet, vous pouvez peut-être toujours rejoindre la **liste d'attente** lorsque votre église l'a activée -- vous recevrez automatiquement un e-mail si une place se libère. Sinon, revenez plus tard : des places peuvent se libérer si quelqu'un annule.
 :::
 
 ## Ce dont vous avez besoin
 
 - Un compte B1.church (ou vous pouvez vous inscrire en tant qu'invité)
-- L'accès au site B1.church de votre église
+- Un accès au site web B1.church de votre église
 
 ## En savoir plus
 
-- [S'inscrire aux événements](./registering) -- Guide étape par étape pour s'inscrire à un événement
-- [Mes inscriptions](./my-registrations) -- Consulter vos inscriptions, régler des soldes, modifier ou annuler
-- [Demander des événements et des salles](./requesting-events) -- Demander un événement avec les salles et ressources nécessaires
-- [Auto-enregistrement](../checkin/self-checkin) -- Vous enregistrer à votre arrivée à l'événement
+- [S'inscrire à un événement](./registering) -- Guide pas à pas pour s'inscrire à un événement
+- [Mes inscriptions](./my-registrations) -- Consulter vos inscriptions, régler les soldes, modifier ou annuler
+- [Demander un événement et des salles](./requesting-events) -- Demander un événement avec les salles et ressources nécessaires
+- [Enregistrement autonome](../checkin/self-checkin) -- Enregistrez votre arrivée à l'événement

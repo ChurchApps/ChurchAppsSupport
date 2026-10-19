@@ -44,6 +44,15 @@ A session is created for the current group and for each of the other groups on t
 You can create sessions for past dates to catch up on attendance you haven't recorded yet, or create them in advance so they are ready when your group meets.
 :::
 
+## Session Notes {#session-notes}
+
+Each session can have notes -- a recap of what was covered, announcements, or prayer requests.
+
+1. When adding a session, or after clicking the **Edit** (pencil) icon next to a session in the list, type in the **Notes (what was covered, announcements, prayer requests)** box below the date. The toolbar lets you add bold text, lists, and links.
+2. Click **Save**.
+
+The notes appear at the top of the session's attendance list. They are also the meeting notes that the group's members read in the **Meetings** section of the group's page on B1.church, where group leaders can write and edit them too. See [Group Details](../../b1-church/groups/group-details.md#meeting-notes-and-attendance).
+
 ## Marking Attendance
 
 Select a session to see its attendance list. Every group member is listed with a checkbox, sorted by last name, and anyone already recorded as present is checked.

@@ -6,7 +6,7 @@ title: "Endpoint di Messaggistica"
 
 <div class="article-intro">
 
-Il modulo Messaggistica gestisce le conversazioni in tempo reale, i messaggi di chat, le notifiche push, la consegna di SMS/email, le connessioni WebSocket, la messaggistica privata, la registrazione dei dispositivi e i provider di servizi di testo. Fornisce il livello di comunicazione utilizzato in tutte le applicazioni ChurchApps sia per la chat di streaming dal vivo che per le notifiche asincrone.
+Il modulo Messaging gestisce conversazioni in tempo reale, messaggi di chat, notifiche push, invio di SMS ed email, connessioni WebSocket, messaggi privati, registrazione dei dispositivi e provider di messaggi di testo. Fornisce il livello di comunicazione usato in tutte le applicazioni ChurchApps, sia per la chat delle dirette streaming sia per le notifiche asincrone.
 
 </div>
 
@@ -16,28 +16,35 @@ Il modulo Messaggistica gestisce le conversazioni in tempo reale, i messaggi di 
 
 Percorso base: `/messaging/conversations`
 
-| Method | Path | Auth | Permission | Description |
-|--------|------|------|------------|-------------|
-| GET | `/timeline/ids?ids=` | JWT | — | Carica le conversazioni per ID separati da virgola con i primi/ultimi messaggi |
-| GET | `/messages/:contentType/:contentId` | JWT | — | Carica le conversazioni per il contenuto con messaggi impaginati (`?page=&limit=`) |
-| GET | `/posts` | JWT | — | Ottieni conversazioni di tipo post per i gruppi dell'utente corrente |
-| GET | `/posts/group/:groupId` | JWT | — | Ottieni conversazioni di tipo post per un gruppo specifico |
-| GET | `/current/:churchId/:contentType/:contentId` | Public | — | Ottieni o crea la conversazione corrente per il contenuto (decrittografa automaticamente contentId) |
-| GET | `/:churchId/:contentType/:contentId` | Public | — | Carica le conversazioni per tipo di contenuto e ID |
-| GET | `/:churchId/:id` | Public | — | Carica una singola conversazione per ID |
-| POST | `/` | JWT | — | Crea o aggiorna le conversazioni (batch) |
+| Metodo | Percorso | Autenticazione | Permesso | Descrizione |
+|--------|----------|----------------|----------|-------------|
+| GET | `/timeline/ids?ids=` | JWT | — | Carica le conversazioni tramite ID separati da virgole, con primo e ultimo messaggio |
+| GET | `/messages/:contentType/:contentId` | JWT | — | Carica le conversazioni per un contenuto con messaggi paginati (`?page=&limit=`) |
+| GET | `/posts` | JWT | — | Ottiene le conversazioni di tipo post per i gruppi dell'utente corrente |
+| GET | `/posts/group/:groupId` | JWT | — | Ottiene le conversazioni di tipo post per un gruppo specifico |
+| GET | `/current/:churchId/:contentType/:contentId` | Pubblico | — | Ottiene o crea la conversazione corrente per il contenuto (decifra automaticamente contentId) |
+| GET | `/:churchId/:contentType/:contentId` | Pubblico | — | Carica le conversazioni per tipo di contenuto e ID |
+| GET | `/:churchId/:id` | Pubblico | — | Carica una singola conversazione tramite ID |
+| POST | `/` | JWT | — | Crea o aggiorna conversazioni (batch) |
 | POST | `/start` | JWT | — | Avvia una nuova conversazione con un messaggio di commento iniziale |
 | DELETE | `/:churchId/:id` | JWT | — | Elimina una conversazione |
 
-### Controllo dell'accesso alle note personali
+### Controllo degli accessi alle note sulle persone
 
-Le conversazioni con `contentType: "person"` (la scheda Note su un record di persona) o `contentType: "personConfidential"` (la sezione Note Riservate) sono protette su ogni percorso di lettura e scrittura, inclusi i percorsi altrimenti pubblici sopra, che restituiscono `401` per questi tipi di contenuto. `person` richiede l'autorizzazione MembershipApi **Persone / Modifica**; `personConfidential` richiede **Persone / Visualizza Note Riservate**. Per le chiavi API con ambito, `people:write` copre entrambe le azioni (l'utente della chiave deve comunque detenere l'autorizzazione del ruolo sottostante).
+Le conversazioni con `contentType: "person"` (la scheda Note di un profilo persona) o `contentType: "personConfidential"` (la sezione Note riservate) sono protette in ogni percorso di lettura e scrittura, incluse le rotte pubbliche sopra indicate, che restituiscono `401` per questi tipi di contenuto. `person` richiede il permesso **Persone / Modifica** di MembershipApi; `personConfidential` richiede **Persone / Visualizza note riservate**. Per le chiavi API con ambito, `people:write` include entrambe le azioni (l'utente della chiave deve comunque possedere il permesso del ruolo sottostante).
 
-### Controllo dell'accesso alle note delle schede del workflow {#workflow-card-notes-access-control}
+### Controllo degli accessi alle note di gruppo ed evento {#group-and-event-notes-access-control}
 
-Le conversazioni con `contentType: "workflowCard"` (le note di una scheda del workflow, dove `contentId` è l'ID attività della scheda) sono leggibili e scrivibili solo da chi può aprire quella scheda: un utente con il permesso **Tasks / View** di DoingApi, oppure la persona o il gruppo a cui la scheda è assegnata, da cui è stata creata o a cui si riferisce. Tutti gli altri ricevono `401` su ogni percorso di lettura, incluse le route pubbliche sopra. La conversazione di una scheda viene collegata tramite la scheda stessa con `POST /doing/tasks/:id/conversation` (body `{ "conversationId": "..." }`; vince la prima conversazione collegata), che possono chiamare gli editor della scheda e il suo assegnatario.
+Altri due tipi di note sono protetti allo stesso modo, in ogni percorso di lettura e scrittura (incluse le rotte pubbliche), e non sono mai aperti alla pubblicazione anonima:
 
-### Esempio: Avvia una Conversazione
+- **`groupNote`** (`contentId` = ID del gruppo) -- il feed **Note dei leader** di un gruppo. Possono leggere o pubblicare solo i leader di quel gruppo (`leaderGroupIds` nel JWT). Nessun permesso dello staff concede l'accesso, inclusi `content.edit` e i permessi di appartenenza al gruppo.
+- **`eventNote`** (`contentId` = ID dell'evento) -- le note su un evento del calendario. Lo staff con `content.edit` o **Calendari / Admin** può sempre leggere e pubblicare. Altrimenti l'accesso segue `notesViewRole` (lettura) e `notesPostRole` (pubblicazione) dell'evento: `staff` (il valore predefinito, usato quando il campo è `null`) non concede l'accesso ad altri, `leaders` concede l'accesso ai leader del gruppo dell'evento, e `members` concede l'accesso ai membri e ai leader del gruppo dell'evento. Un evento senza `groupId` è riservato allo staff.
+
+### Controllo degli accessi alle note delle schede del flusso di lavoro
+
+Le conversazioni con `contentType: "workflowCard"` (le note su una scheda del flusso di lavoro, dove `contentId` è l'ID dell'attività della scheda) possono essere lette e scritte solo da chi può aprire quella scheda: un utente con il permesso **Attività / Visualizza** di DoingApi, oppure la persona o il gruppo a cui la scheda è assegnata, da cui è stata creata o a cui si riferisce. Tutti gli altri ricevono `401` in ogni percorso di lettura, incluse le rotte pubbliche sopra indicate. La conversazione di una scheda viene collegata tramite la scheda stessa con `POST /doing/tasks/:id/conversation` (corpo `{ "conversationId": "..." }`; vince la prima conversazione collegata), operazione che possono eseguire gli editor della scheda e il suo assegnatario.
+
+### Esempio: avviare una conversazione
 
 ```
 POST /messaging/conversations/start
@@ -70,29 +77,29 @@ Authorization: Bearer <token>
 
 Percorso base: `/messaging/messages`
 
-| Method | Path | Auth | Permission | Description |
-|--------|------|------|------------|-------------|
-| GET | `/conversation/:conversationId` | JWT | — | Carica tutti i messaggi per una conversazione |
-| GET | `/catchup/:churchId/:conversationId` | Public | — | Carica tutti i messaggi per una conversazione (recupero pubblico per chat dal vivo) |
-| GET | `/:churchId/:id` | Public | — | Carica un singolo messaggio per ID |
-| POST | `/` | JWT | — | Salva i messaggi (batch). Invia aggiornamenti in tempo reale e attiva le notifiche. L'aggiornamento di un messaggio esistente richiede di esserne l'autore o di detenere `content.edit`; l'autore memorizzato non è mai riassegnabile |
-| POST | `/send` | Public | — | Invia messaggi (batch, pubblico). Invia aggiornamenti in tempo reale tramite WebSocket e attiva le notifiche |
-| POST | `/setCallout` | JWT | — | (legacy) Trasmetti un messaggio di callout in tempo reale. Nessun client attivo; la chat in streaming dal vivo non esegue più il rendering dei callout |
-| DELETE | `/:churchId/:id` | JWT | — | Elimina un messaggio e trasmetti l'eliminazione in tempo reale. Vedi [Moderazione dei messaggi](#message-moderation) |
+| Metodo | Percorso | Autenticazione | Permesso | Descrizione |
+|--------|----------|----------------|----------|-------------|
+| GET | `/conversation/:conversationId` | JWT | — | Carica tutti i messaggi di una conversazione |
+| GET | `/catchup/:churchId/:conversationId` | Pubblico | — | Carica tutti i messaggi di una conversazione (recupero pubblico per la chat dal vivo) |
+| GET | `/:churchId/:id` | Pubblico | — | Carica un singolo messaggio tramite ID |
+| POST | `/` | JWT | — | Salva messaggi (batch). Invia aggiornamenti in tempo reale e attiva le notifiche. Modificare un messaggio esistente richiede di esserne l'autore o avere `content.edit`; l'autore memorizzato non può mai essere riassegnato |
+| POST | `/send` | Pubblico | — | Invia messaggi (batch, pubblico). Invia aggiornamenti in tempo reale tramite WebSocket e attiva le notifiche |
+| POST | `/setCallout` | JWT | — | (legacy) Trasmette in tempo reale un messaggio di evidenza. Nessun client attivo; la chat delle dirette streaming non mostra più le evidenze |
+| DELETE | `/:churchId/:id` | JWT | — | Elimina un messaggio e trasmette in tempo reale l'eliminazione. Vedi [Moderazione dei messaggi](#message-moderation) |
 
-### Moderazione dei messaggi
+### Moderazione dei messaggi {#message-moderation}
 
-L'eliminazione di un messaggio è consentita per:
+L'eliminazione di un messaggio è consentita a:
 
 - l'autore del messaggio;
-- il personale con `content.edit` (in qualsiasi luogo della chiesa);
-- **leader di gruppo**, per le conversazioni con un `contentType` di `group` o `groupAnnouncement` il cui `contentId` è un gruppo che conducono (`leaderGroupIds` su JWT).
+- lo staff con `content.edit` (in tutta la chiesa);
+- **i leader di gruppo**, per le conversazioni con `contentType` `group` o `groupAnnouncement` il cui `contentId` è un gruppo da loro guidato (`leaderGroupIds` nel JWT).
 
-Le conversazioni con note personali (`person` / `personConfidential`) non sono mai moderate dai leader — utilizzano le autorizzazioni delle note (`people.edit`, `people.viewConfidentialNotes`).
+Le conversazioni di note su persone (`person` / `personConfidential`) non sono mai moderate dai leader: usano invece i permessi sulle note (`people.edit`, `people.viewConfidentialNotes`).
 
-I leader ricevono solo l'eliminazione, non la modifica: la riscrittura del messaggio di un altro membro rimane limitata all'autore e al personale `content.edit`.
+I leader possono solo eliminare, non modificare: riscrivere il messaggio di un altro membro resta limitato all'autore e allo staff con `content.edit`.
 
-### Esempio: Invia un Messaggio
+### Esempio: inviare un messaggio
 
 ```
 POST /messaging/messages/send
@@ -124,36 +131,36 @@ POST /messaging/messages/send
 ]
 ```
 
-## Messaggi Privati
+## Messaggi privati
 
 Percorso base: `/messaging/privatemessages`
 
-| Method | Path | Auth | Permission | Description |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Carica tutti i messaggi privati per l'utente corrente (include l'ultimo messaggio per conversazione, contrassegna tutti come letti) |
+| Metodo | Percorso | Autenticazione | Permesso | Descrizione |
+|--------|----------|----------------|----------|-------------|
+| GET | `/` | JWT | — | Carica tutti i messaggi privati dell'utente corrente (include l'ultimo messaggio per conversazione e li segna tutti come letti) |
 | GET | `/existing/:personId` | JWT | — | Trova una conversazione privata esistente con una persona specifica |
-| GET | `/:id` | JWT | — | Carica un messaggio privato per ID (cancella la notifica se indirizzata all'utente corrente) |
-| POST | `/` | JWT | — | Invia messaggi privati (batch). Attiva la notifica push al destinatario |
+| GET | `/:id` | JWT | — | Carica un messaggio privato tramite ID (cancella la notifica se indirizzato all'utente corrente) |
+| POST | `/` | JWT | — | Invia messaggi privati (batch). Attiva una notifica push per il destinatario |
 
 ## Notifiche
 
 Percorso base: `/messaging/notifications`
 
-| Method | Path | Auth | Permission | Description |
-|--------|------|------|------------|-------------|
-| GET | `/unreadCount` | JWT | — | Ottieni il conteggio delle notifiche non lette per l'utente corrente |
-| GET | `/my` | JWT | — | Carica tutte le notifiche per l'utente corrente (contrassegna tutte come lette) |
-| GET | `/tmpEmail` | Public | — | Attiva il digest di notifiche email giornaliere (endpoint debug/cron) |
-| GET | `/:churchId/person/:personId` | JWT | — | Carica le notifiche per una persona specifica |
-| GET | `/:churchId/:id` | JWT | — | Carica una notifica per ID |
-| POST | `/` | JWT | — | Crea o aggiorna le notifiche (batch) |
+| Metodo | Percorso | Autenticazione | Permesso | Descrizione |
+|--------|----------|----------------|----------|-------------|
+| GET | `/unreadCount` | JWT | — | Ottiene il numero di notifiche non lette per l'utente corrente |
+| GET | `/my` | JWT | — | Carica tutte le notifiche dell'utente corrente (le segna tutte come lette) |
+| GET | `/tmpEmail` | Pubblico | — | Attiva il riepilogo giornaliero delle notifiche via email (endpoint di debug/cron) |
+| GET | `/:churchId/person/:personId` | JWT | — | Carica le notifiche di una specifica persona |
+| GET | `/:churchId/:id` | JWT | — | Carica una notifica tramite ID |
+| POST | `/` | JWT | — | Crea o aggiorna notifiche (batch) |
 | POST | `/create` | JWT | — | Crea notifiche per più persone. Corpo: `{ peopleIds, contentType, contentId, message, link }` |
-| POST | `/markRead/:churchId/:personId` | JWT | — | Contrassegna tutte le notifiche come lette per una persona |
+| POST | `/markRead/:churchId/:personId` | JWT | — | Segna come lette tutte le notifiche di una persona |
 | POST | `/sendTest` | JWT | — | Invia una notifica push di prova. Corpo: `{ personId, title }` |
-| POST | `/ping` | Public | — | Crea una notifica da un trigger esterno. Corpo: `{ personId, churchId, contentType, contentId, message, triggeredByPersonId }` |
+| POST | `/ping` | Pubblico | — | Crea una notifica da un trigger esterno. Corpo: `{ personId, churchId, contentType, contentId, message, triggeredByPersonId }` |
 | DELETE | `/:churchId/:id` | JWT | — | Elimina una notifica |
 
-### Esempio: Crea Notifiche
+### Esempio: creare notifiche
 
 ```
 POST /messaging/notifications/create
@@ -168,49 +175,49 @@ Authorization: Bearer <token>
 }
 ```
 
-## Preferenze di Notifica
+## Preferenze di notifica
 
 Percorso base: `/messaging/notificationpreferences`
 
-| Method | Path | Auth | Permission | Description |
-|--------|------|------|------------|-------------|
-| GET | `/categories` | JWT | — | Elenca le categorie di notifica con i canali predefiniti e consentiti |
-| GET | `/my` | JWT | — | Carica le preferenze di notifica per l'utente corrente (crea automaticamente i valori predefiniti se non esistono) |
-| POST | `/` | JWT | — | Salva le preferenze dell'utente corrente. Corpo: qualsiasi tra `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, più `overrides: [{ categoryKey, channel, optedIn }]` facoltativo (channel può essere `push`, `email`, `in_app` o `sms`; le categorie bloccate vengono ignorate). `allowSms` è il consenso del membro ai promemoria via SMS. Viene ancora accettato il corpo legacy come array di righe |
+| Metodo | Percorso | Autenticazione | Permesso | Descrizione |
+|--------|----------|----------------|----------|-------------|
+| GET | `/categories` | JWT | — | Elenca le categorie di notifica con i canali predefiniti e quelli consentiti |
+| GET | `/my` | JWT | — | Carica le preferenze di notifica dell'utente corrente (crea i valori predefiniti se non esistono) |
+| POST | `/` | JWT | — | Salva le preferenze dell'utente corrente. Corpo: uno o più tra `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, più l'elemento facoltativo `overrides: [{ categoryKey, channel, optedIn }]` (channel può essere `push`, `email`, `in_app` o `sms`; le categorie bloccate vengono ignorate). `allowSms` è il consenso del membro ai promemoria via SMS. Viene ancora accettato il vecchio corpo a elenco di righe |
 
 ## Connessioni
 
 Percorso base: `/messaging/connections`
 
-Gestisce le connessioni WebSocket/in tempo reale per chat, conversazioni di gruppo, messaggi privati e streaming dal vivo. Vedi [Architettura in Tempo Reale](../../realtime) per il protocollo end-to-end.
+Gestisce le connessioni WebSocket/in tempo reale per la chat, le conversazioni di gruppo, i messaggi privati e le dirette streaming. Vedi [Architettura in tempo reale](../../realtime) per il protocollo completo.
 
-| Method | Path | Auth | Permission | Description |
-|--------|------|------|------------|-------------|
-| GET | `/:churchId/:conversationId` | Public | — | Carica tutte le connessioni per una conversazione |
-| POST | `/` | Public | — | Registra le connessioni (batch). Attiva una trasmissione di frequenza sulla conversazione. Elementi del corpo: `{ churchId, conversationId, socketId, displayName?, personId? }` |
-| POST | `/setName` | Public | — | Aggiorna il nome visualizzato per una connessione per socket ID. Corpo: `{ socketId, name }` |
-| DELETE | `/:churchId/:conversationId/:socketId` | Public | — | Elimina una connessione da una conversazione. Attiva una trasmissione di frequenza |
-| POST | `/tmpSendAlert` | Public | — | Invia un avviso di notifica alle connessioni di una persona. Corpo: `{ churchId, personId }` |
+| Metodo | Percorso | Autenticazione | Permesso | Descrizione |
+|--------|----------|----------------|----------|-------------|
+| GET | `/:churchId/:conversationId` | Pubblico | — | Carica tutte le connessioni di una conversazione |
+| POST | `/` | Pubblico | — | Registra connessioni (batch). Attiva una trasmissione delle presenze sulla conversazione. Elementi del corpo: `{ churchId, conversationId, socketId, displayName?, personId? }` |
+| POST | `/setName` | Pubblico | — | Aggiorna il nome visualizzato di una connessione tramite socket ID. Corpo: `{ socketId, name }` |
+| DELETE | `/:churchId/:conversationId/:socketId` | Pubblico | — | Rimuove una connessione da una conversazione. Attiva una trasmissione delle presenze |
+| POST | `/tmpSendAlert` | Pubblico | — | Invia un avviso di notifica alle connessioni di una persona. Corpo: `{ churchId, personId }` |
 
 ## Dispositivi
 
 Percorso base: `/messaging/devices`
 
-Gestisce la registrazione dei dispositivi per le notifiche push e l'associazione dei contenuti (ad es., app Lezioni sui display TV).
+Gestisce la registrazione dei dispositivi per le notifiche push e l'associazione dei contenuti (ad esempio l'app Lessons su una TV).
 
-| Method | Path | Auth | Permission | Description |
-|--------|------|------|------------|-------------|
-| POST | `/enroll` | JWT | — | Registra o aggiorna un dispositivo (registrazione push mobile). Abbina per token FCM o ID dispositivo |
-| POST | `/enrollAnon` | Public | — | Registra un dispositivo anonimo e genera un codice di associazione a 4 caratteri |
-| POST | `/` | Public | — | Salva i dispositivi (batch) |
-| GET | `/pair/:pairingCode` | JWT | — | Accoppia un dispositivo utilizzando il suo codice di associazione. Facoltativo `?contentType=&contentId=` per assegnare il contenuto |
-| GET | `/status/:deviceId` | Public | — | Controlla lo stato di associazione di un dispositivo |
-| GET | `/:churchId` | JWT | — | Carica tutti i dispositivi per una chiesa |
-| GET | `/:churchId/person/:personId` | JWT | — | Carica tutti i dispositivi per una persona |
-| GET | `/:churchId/:id` | JWT | — | Carica un dispositivo per ID |
+| Metodo | Percorso | Autenticazione | Permesso | Descrizione |
+|--------|----------|----------------|----------|-------------|
+| POST | `/enroll` | JWT | — | Registra o aggiorna un dispositivo (registrazione push mobile). Corrisponde tramite token FCM o ID dispositivo |
+| POST | `/enrollAnon` | Pubblico | — | Registra un dispositivo anonimo e genera un codice di associazione a 4 caratteri |
+| POST | `/` | Pubblico | — | Salva dispositivi (batch) |
+| GET | `/pair/:pairingCode` | JWT | — | Associa un dispositivo tramite il suo codice di associazione. `?contentType=&contentId=` facoltativi per assegnare contenuti |
+| GET | `/status/:deviceId` | Pubblico | — | Verifica lo stato di associazione di un dispositivo |
+| GET | `/:churchId` | JWT | — | Carica tutti i dispositivi di una chiesa |
+| GET | `/:churchId/person/:personId` | JWT | — | Carica tutti i dispositivi di una persona |
+| GET | `/:churchId/:id` | JWT | — | Carica un dispositivo tramite ID |
 | DELETE | `/:churchId/:id` | JWT | — | Elimina un dispositivo |
 
-### Esempio: Registra un Dispositivo
+### Esempio: registrare un dispositivo
 
 ```
 POST /messaging/devices/enroll
@@ -236,39 +243,39 @@ Authorization: Bearer <token>
 }
 ```
 
-## Contenuti Dispositivo
+## Contenuti dei dispositivi
 
 Percorso base: `/messaging/devicecontents`
 
-Gestisce le assegnazioni di contenuto per i dispositivi associati (ad es., quale lezione viene visualizzata su una TV).
+Gestisce le assegnazioni di contenuti ai dispositivi associati (ad esempio quale lezione viene mostrata su una TV).
 
-| Method | Path | Auth | Permission | Description |
-|--------|------|------|------------|-------------|
-| GET | `/deviceId/:deviceId` | JWT | — | Carica le assegnazioni di contenuto per un dispositivo |
-| POST | `/` | JWT | — | Salva le assegnazioni di contenuto del dispositivo (batch) |
-| DELETE | `/:id` | JWT | — | Elimina un'assegnazione di contenuto del dispositivo |
+| Metodo | Percorso | Autenticazione | Permesso | Descrizione |
+|--------|----------|----------------|----------|-------------|
+| GET | `/deviceId/:deviceId` | JWT | — | Carica le assegnazioni di contenuto di un dispositivo |
+| POST | `/` | JWT | — | Salva le assegnazioni di contenuto dei dispositivi (batch) |
+| DELETE | `/:id` | JWT | — | Elimina un'assegnazione di contenuto di un dispositivo |
 
-## Servizio di Messaggi di Testo
+## Messaggi di testo
 
 Percorso base: `/messaging/texting`
 
-Gestisce i provider di servizi di messaggistica SMS, la messaggistica di testo di gruppo e il tracciamento della consegna.
+Gestisce i provider di SMS, l'invio di messaggi di testo ai gruppi e il monitoraggio delle consegne.
 
-| Method | Path | Auth | Permission | Description |
-|--------|------|------|------------|-------------|
-| GET | `/providers` | JWT | — | Carica i provider di servizi di testo per la chiesa (le credenziali sono mascherate) |
-| GET | `/status` | JWT | — | `{ enabled }` — indica se la chiesa ha un provider di testo attivo. Qualsiasi utente della chiesa registrato; usato per mostrare le opzioni **Text** solo quando si possono inviare messaggi di testo |
-| GET | `/inboundUrl` | JWT | `texting.send` o `settings.edit` | `{ url }` — l'URL webhook in arrivo (STOP) della chiesa da incollare nel provider |
-| POST | `/inbound/:churchId/:token` | Public | — | Webhook dei messaggi in arrivo del provider. `token` è un HMAC dell'id della chiesa. Una risposta che è esattamente una parola di stop (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`) imposta `optedOut` per ogni persona corrispondente e disattiva il loro `allowSms`. Restituisce `{ optedOut: <count> }`; altre risposte restituiscono `{ optedOut: 0 }` |
-| GET | `/preview/:groupId` | JWT | — | Visualizza l'anteprima dei destinatari per un messaggio di testo di gruppo (conti idonei, esclusi, senza telefono) |
-| GET | `/sent` | JWT | — | Carica tutti i record di messaggi di testo inviati per la chiesa |
-| GET | `/sent/:id/details` | JWT | — | Carica un messaggio di testo inviato con registri di consegna per destinatario |
-| POST | `/providers` | JWT | — | Salva i provider di servizi di testo (batch). Crittografa le credenziali API |
-| POST | `/send` | JWT | — | Invia un SMS a tutti i membri idonei di un gruppo. Corpo: `{ groupId, message }`. I campi di unione (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}`) vengono risolti per destinatario |
-| POST | `/sendPerson` | JWT | — | Invia un SMS a una singola persona. Corpo: `{ personId, phoneNumber, message }`. I campi di unione vengono risolti e il testo risolto è quello che viene registrato |
-| DELETE | `/providers/:id` | JWT | — | Elimina un provider di servizi di testo |
+| Metodo | Percorso | Autenticazione | Permesso | Descrizione |
+|--------|----------|----------------|----------|-------------|
+| GET | `/providers` | JWT | — | Carica i provider di messaggi di testo della chiesa (le credenziali sono mascherate) |
+| GET | `/status` | JWT | — | `{ enabled }` — indica se la chiesa ha un provider di messaggi di testo attivo. Qualsiasi utente registrato della chiesa; usato per mostrare le opzioni **Testo** solo quando è possibile inviare messaggi |
+| GET | `/inboundUrl` | JWT | `texting.send` o `settings.edit` | `{ url }` — l'URL webhook in entrata (STOP) della chiesa da incollare nel provider |
+| POST | `/inbound/:churchId/:token` | Pubblico | — | Webhook per i messaggi in entrata del provider. `token` è un HMAC dell'ID della chiesa. Una risposta che è esattamente una parola di interruzione (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`) imposta `optedOut` su ogni persona corrispondente e disattiva il suo `allowSms`. Restituisce `{ optedOut: <count> }`; le altre risposte restituiscono `{ optedOut: 0 }` |
+| GET | `/preview/:groupId` | JWT | — | Anteprima dei destinatari di un messaggio di gruppo (conteggi di idonei, disiscritti e senza telefono) |
+| GET | `/sent` | JWT | — | Carica tutti i record dei messaggi di testo inviati dalla chiesa |
+| GET | `/sent/:id/details` | JWT | — | Carica un messaggio inviato con i log di consegna per ciascun destinatario |
+| POST | `/providers` | JWT | — | Salva i provider di messaggi di testo (batch). Cifra le credenziali API |
+| POST | `/send` | JWT | — | Invia un SMS a tutti i membri idonei di un gruppo. Corpo: `{ groupId, message }`. I campi unione (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}`) vengono risolti per ogni destinatario |
+| POST | `/sendPerson` | JWT | — | Invia un SMS a una singola persona. Corpo: `{ personId, phoneNumber, message }`. I campi unione vengono risolti e viene registrato il testo risolto |
+| DELETE | `/providers/:id` | JWT | — | Elimina un provider di messaggi di testo |
 
-### Esempio: Invia Messaggio di Testo di Gruppo
+### Esempio: inviare un messaggio di testo di gruppo
 
 ```
 POST /messaging/texting/send
@@ -291,22 +298,22 @@ Authorization: Bearer <token>
 }
 ```
 
-## Modelli di Email
+## Modelli email
 
 Percorso base: `/messaging/emailTemplates`
 
-Gestisce i modelli di email riutilizzabili e l'invio di email basate su modelli ai gruppi.
+Gestisce i modelli email riutilizzabili e l'invio di email basate su modelli ai gruppi.
 
-| Method | Path | Auth | Permission | Description |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Carica tutti i modelli di email per la chiesa |
-| GET | `/:id` | JWT | — | Carica un singolo modello di email per ID |
-| GET | `/preview/:groupId` | JWT | — | Visualizza l'anteprima della consegna di email per un gruppo (numero di destinatari idonei, membri senza email) |
-| POST | `/` | JWT | — | Crea o aggiorna i modelli di email (batch) |
+| Metodo | Percorso | Autenticazione | Permesso | Descrizione |
+|--------|----------|----------------|----------|-------------|
+| GET | `/` | JWT | — | Carica tutti i modelli email della chiesa |
+| GET | `/:id` | JWT | — | Carica un singolo modello email tramite ID |
+| GET | `/preview/:groupId` | JWT | — | Anteprima dell'invio email per un gruppo (numero di destinatari idonei, membri senza email) |
+| POST | `/` | JWT | — | Crea o aggiorna modelli email (batch) |
 | POST | `/send` | JWT | — | Invia un'email basata su modello a tutti i membri di un gruppo. Corpo: `{ groupId, subject, htmlContent }` |
-| DELETE | `/:id` | JWT | — | Elimina un modello di email |
+| DELETE | `/:id` | JWT | — | Elimina un modello email |
 
-### Esempio: Invia Email al Gruppo
+### Esempio: inviare un'email a un gruppo
 
 ```
 POST /messaging/emailTemplates/send
@@ -329,37 +336,37 @@ Authorization: Bearer <token>
 }
 ```
 
-**Campi di unione supportati:** `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`
+**Campi unione supportati:** `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`
 
-## IP Bloccati
+## IP bloccati
 
 Percorso base: `/messaging/blockedips`
 
-(legacy) Blocco IP per chat in streaming dal vivo. Il client B1App non chiama più `POST /` — il blocco IP è stato rimosso nella migrazione della consegna unificata. Il percorso `/clear` è ancora invocato da server a server da `StreamingServiceController` quando i servizi di streaming vengono salvati.
+(legacy) Blocco degli IP per la chat delle dirette streaming. Il client B1App non chiama più `POST /` — il blocco IP è stato rimosso con la migrazione alla consegna unificata. La rotta `/clear` viene ancora invocata da server a server da `StreamingServiceController` quando i servizi di streaming vengono salvati.
 
-| Method | Path | Auth | Permission | Description |
-|--------|------|------|------------|-------------|
-| POST | `/` | JWT | — | (legacy) Salva gli IP bloccati (batch). Nessun client attivo |
+| Metodo | Percorso | Autenticazione | Permesso | Descrizione |
+|--------|----------|----------------|----------|-------------|
+| POST | `/` | JWT | — | (legacy) Salva IP bloccati (batch). Nessun client attivo |
 | POST | `/clear` | JWT | — | Cancella tutti gli IP bloccati per servizi specifici. Corpo: `[{ serviceId, churchId }]` |
 
-## Registri di Consegna
+## Registri di consegna
 
 Percorso base: `/messaging/deliverylogs`
 
-Traccia lo stato di consegna per i messaggi inviati (SMS, notifiche push, email).
+Traccia lo stato di consegna dei messaggi inviati (SMS, notifiche push, email).
 
-| Method | Path | Auth | Permission | Description |
-|--------|------|------|------------|-------------|
+| Metodo | Percorso | Autenticazione | Permesso | Descrizione |
+|--------|----------|----------------|----------|-------------|
 | GET | `/content/:contentType/:contentId` | JWT | — | Carica i registri di consegna per tipo di contenuto e ID |
-| GET | `/person/:personId` | JWT | — | Carica i registri di consegna per una persona. Filtri facoltativi `?startDate=&endDate=` |
-| GET | `/recent` | JWT | — | Carica i registri di consegna recenti per la chiesa. Facoltativo `?limit=` (predefinito 100) |
-| GET | `/:id` | JWT | — | Carica un registro di consegna per ID |
+| GET | `/person/:personId` | JWT | — | Carica i registri di consegna di una persona. `?startDate=&endDate=` facoltativi per filtrare |
+| GET | `/recent` | JWT | — | Carica i registri di consegna recenti della chiesa. `?limit=` facoltativo (predefinito 100) |
+| GET | `/:id` | JWT | — | Carica un registro di consegna tramite ID |
 
-## Pagine Correlate
+## Pagine correlate
 
-- [Architettura in Tempo Reale](../../realtime) -- Protocollo WebSocket, sottoscrizioni di stanze e framework di consegna unificato
-- [Notifiche Push Web](../../web-push) -- Iscrizione push del browser e consegna
-- [Endpoint di Iscrizione](./membership) -- Persone, gruppi, ruoli e identità centrale
-- [Endpoint di Presenze](./attendance) -- Tracciamento di servizi e visite
-- [Autenticazione e Autorizzazioni](./authentication) -- Flusso di accesso, JWT, OAuth, modello di autorizzazione
-- [Struttura dei Moduli](../module-structure) -- Modelli di organizzazione del codice
+- [Architettura in tempo reale](../../realtime) -- protocollo WebSocket, sottoscrizioni alle stanze e framework di consegna unificato
+- [Notifiche push web](../../web-push) -- registrazione e consegna delle notifiche push nel browser
+- [Endpoint Membership](./membership) -- persone, gruppi, ruoli e identità di base
+- [Endpoint Attendance](./attendance) -- tracciamento di servizi e visite
+- [Autenticazione e permessi](./authentication) -- flusso di accesso, JWT, OAuth, modello dei permessi
+- [Struttura del modulo](../module-structure) -- organizzazione del codice

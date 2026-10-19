@@ -6,43 +6,43 @@ title: "Mga Membership Endpoint"
 
 <div class="article-intro">
 
-Pinamamahalaan ng Membership module ang mga tao, simbahan, group, household, role, permission, form, at setting. Ito ang pinakamalaking module at nagbibigay ng pangunahing layer ng identity at authorization para sa lahat ng iba pang module.
+Pinamamahalaan ng Membership module ang mga tao, simbahan, grupo, sambahayan, tungkulin, pahintulot, form, at settings. Ito ang pinakamalaking module at nagbibigay ng pangunahing layer ng pagkakakilanlan at awtorisasyon para sa lahat ng iba pang module.
 
 </div>
 
-**Base path:** `/membership`
+**Pangunahing path:** `/membership`
 
 ## Mga Tao
 
-Base path: `/membership/people`
+Pangunahing path: `/membership/people`
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | People.View o Member | Ilista ang lahat ng tao ng simbahan |
-| GET | `/:id` | JWT | People.View o sariling record | Kunin ang isang tao ayon sa ID (kasama ang mga form submission) |
-| GET | `/ids?ids=` | JWT | People.View o Member | Kunin ang maraming tao ayon sa mga ID na pinaghihiwalay ng kuwit |
-| GET | `/basic?ids=` | JWT | — | Kunin ang pangunahing impormasyon (pangalan lamang) ng maraming tao |
-| GET | `/names?ids=` | JWT | Anumang permission sa simbahan | `[{ id, name: { display }, photo }]` para sa mga ID na pinaghihiwalay ng kuwit na hawak na ng caller, upang ang mga role na walang People.View (donations, attendance) ay makapagpangalan ng mga tao. Walang paghahanap, walang directory filter |
-| POST | `/names` | JWT | Anumang permission sa simbahan | Kapareho ng `GET /names`. Body: `{ peopleIds }` (o `{ ids }`) |
-| GET | `/recent` | JWT | People.View o Member | Mga kamakailang idinagdag na tao |
-| GET | `/search?term=&email=` | JWT | People.View o Member | Maghanap ng mga tao ayon sa pangalan o email |
+| GET | `/` | JWT | People.View or Member | Ilista ang lahat ng tao para sa simbahan |
+| GET | `/:id` | JWT | People.View or own record | Kunin ang tao ayon sa ID (kasama ang mga form submission) |
+| GET | `/ids?ids=` | JWT | People.View or Member | Kunin ang maraming tao ayon sa mga ID na pinaghihiwalay ng kuwit |
+| GET | `/basic?ids=` | JWT | — | Kunin ang basic na impormasyon (pangalan lamang) ng maraming tao |
+| GET | `/names?ids=` | JWT | Anumang pahintulot ng simbahan | `[{ id, name: { display, first, last }, photo }]`, nakaayos ayon sa apelyido at pagkatapos ang pangalan, para sa mga comma-separated na ids na hawak na ng tumatawag, upang ang mga tungkulin na walang People.View (donations, attendance) ay maipakita ang pangalan ng mga tao. Walang search at walang directory filter |
+| POST | `/names` | JWT | Anumang pahintulot ng simbahan | Kapareho ng `GET /names`. Body: `{ peopleIds }` (o `{ ids }`) |
+| GET | `/recent` | JWT | People.View, Member, o People.ViewNames | Kamakailang idinagdag na mga tao. Ang mga tumatawag na People.ViewNames lamang ay makakakuha ng basic model (`id`, `name.display`, `photo`, `membershipStatus`) at hindi kasama ang mga taong nag-opt out |
+| GET | `/search?term=&email=` | JWT | People.View, Member, o People.ViewNames | Maghanap ng tao ayon sa pangalan o email (hanggang 100, nakaayos ayon sa apelyido at pagkatapos ang pangalan). Ang mga tumatawag na People.ViewNames lamang ay makakakuha ng paghahanap ayon sa pangalan na nagbabalik ng basic model; ang paghahanap ayon sa `email` ay nagbabalik ng `[]` |
 | GET | `/search/phone?number=` | JWT | People.View o Member | Maghanap ayon sa numero ng telepono |
-| GET | `/search/group?groupId=` | JWT | People.View o Member | Kunin ang mga tao sa isang partikular na group |
-| GET | `/household/:householdId` | JWT | — | Kunin ang lahat ng tao sa isang household |
-| GET | `/attendance` | JWT | People.Edit | I-load ang mga dumalo na may filter (campusId, serviceId, serviceTimeId, groupId, categoryName, startDate, endDate) |
-| GET | `/timeline?personIds=&groupIds=` | JWT | — | I-load ang timeline data para sa mga tao at group |
-| GET | `/directory/:id` | JWT | — | Kunin ang tao para sa directory view (sumusunod sa mga visibility preference) |
-| GET | `/claim/:churchId` | JWT | — | Angkinin ang isang person record para sa kasalukuyang user sa isang simbahan |
+| GET | `/search/group?groupId=` | JWT | People.View o Member | Kunin ang mga tao sa partikular na grupo |
+| GET | `/household/:householdId` | JWT | — | Kunin ang lahat ng tao sa isang sambahayan |
+| GET | `/attendance` | JWT | People.Edit | Mag-load ng mga dumalo gamit ang filter (campusId, serviceId, serviceTimeId, groupId, categoryName, startDate, endDate) |
+| GET | `/timeline?personIds=&groupIds=` | JWT | — | Mag-load ng timeline data para sa mga tao at grupo |
+| GET | `/directory/:id` | JWT | — | Kunin ang tao para sa directory view (sinusunod ang mga visibility preference) |
+| GET | `/claim/:churchId` | JWT | — | I-claim ang record ng tao para sa kasalukuyang user sa isang simbahan |
 | POST | `/` | JWT | People.Edit o EditSelf | Gumawa o mag-update ng mga tao (batch) |
-| POST | `/search` | JWT | People.View o Member | Maghanap ng mga tao (POST variant) |
-| POST | `/advancedSearch` | JWT | People.View o Member | Maraming kondisyong paghahanap (edad, birthMonth, membershipStatus, atbp.) |
+| POST | `/search` | JWT | People.View, Member, o People.ViewNames | Maghanap ng tao (POST variant). Body: `{ term }` o `{ email }`; kapareho ng mga patakaran sa names-only ng `GET /search` |
+| POST | `/advancedSearch` | JWT | People.View o Member | Maramihang kondisyon na paghahanap (edad, birthMonth, membershipStatus, atbp.) |
 | POST | `/loadOrCreate` | Public | — | Hanapin o gumawa ng tao ayon sa email. Body: `{ churchId, email, firstName, lastName }` |
-| POST | `/household/:householdId` | JWT | People.Edit | I-update ang mga assignment ng miyembro ng household |
+| POST | `/household/:householdId` | JWT | People.Edit | I-update ang mga miyembro ng sambahayan |
 | POST | `/public/email` | Public | — | Magpadala ng email sa isang tao. Body: `{ churchId, personId, subject, body, appName }` |
-| POST | `/apiEmails` | Internal | — | I-load ang mga email ng tao ayon sa mga ID (server-to-server, kailangan ang jwtSecret) |
+| POST | `/apiEmails` | Internal | — | Mag-load ng email ng tao ayon sa mga ID (server-to-server, nangangailangan ng jwtSecret) |
 | DELETE | `/:id` | JWT | People.Edit | Burahin ang isang tao |
 
-### Halimbawa: Maghanap ng Mga Tao
+### Halimbawa: Maghanap ng Tao
 
 ```
 GET /membership/people/search?term=John
@@ -69,272 +69,274 @@ Authorization: Bearer <token>
 [{ "firstName": "Jane", "lastName": "Doe", "contactInfo": { "email": "jane@example.com" } }]
 ```
 
-## Mga User
+## Mga User {#users}
 
-Base path: `/membership/users`
+Pangunahing path: `/membership/users`
 
 Tingnan ang [Authentication & Permissions](./authentication) para sa mga endpoint ng login, registration, at pamamahala ng password.
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
 | POST | `/login` | Public | — | Mag-log in (email/password, JWT refresh, o authGuid) |
 | POST | `/register` | Public | — | Magparehistro ng bagong user |
 | POST | `/forgot` | Public | — | Magpadala ng email para sa pag-reset ng password |
-| POST | `/setPasswordGuid` | Public | — | Magtakda ng password gamit ang auth GUID mula sa link sa email |
+| POST | `/setPasswordGuid` | Public | — | Itakda ang password gamit ang auth GUID mula sa email link |
 | POST | `/verifyCredentials` | Public | — | I-verify ang email/password at ibalik ang mga kaugnay na simbahan |
 | POST | `/loadOrCreate` | JWT | — | Hanapin o gumawa ng user ayon sa email/userId |
 | POST | `/setDisplayName` | JWT | — | I-update ang first at last name ng user |
-| POST | `/updateEmail` | JWT | — | Baguhin ang email address ng user |
-| POST | `/updatePassword` | JWT | — | Baguhin ang password ng user (kahit 6 karakter) |
+| POST | `/updateEmail` | JWT | — | Palitan ang email address ng user |
+| POST | `/updatePassword` | JWT | — | Palitan ang password ng user (min 6 na karakter) |
 | POST | `/updateOptedOut` | JWT | — | Itakda ang opted-out status ng isang tao |
-| POST | `/sendInviteEmail` | JWT | People.Edit | Magpadala ng imbitasyon sa email sa isang tao sa simbahang ito (`email`, `personName`, `contextName`). Ang button ay magbabasang **Sign Up** para sa taong walang account at **Log In** para sa umiiral na user. Ang user na hindi pa nakakapag-log in ay makakakuha ng link na **Set Your Password** na mag-e-expire sa loob ng 7 araw. Binibilang sa araw-araw na limitasyon ng email ng simbahan (`429` kapag naabot) |
+| POST | `/sendInviteEmail` | JWT | People.Edit | Magpadala ng invite email sa isang tao sa simbahang ito (`email`, `personName`, `contextName`). Ang button ay nagbabasa ng **Sign Up** para sa taong walang account at **Log In** para sa umiiral na user. Ang user na hindi pa nakapag-log in ay makakatanggap ng link na **Set Your Password** na mag-e-expire sa loob ng 7 araw. Binibilang sa araw-araw na limitasyon ng email ng simbahan (`429` kapag naabot) |
 | GET | `/search?term=` | JWT | Server.Admin | Maghanap ng lahat ng user ayon sa pangalan/email |
-| DELETE | `/` | JWT | — | Burahin ang account ng kasalukuyang user |
+| DELETE | `/` | JWT | — | Burahin ang kasalukuyang account ng user |
 
 ## Mga Simbahan
 
-Base path: `/membership/churches`
+Pangunahing path: `/membership/churches`
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | I-load ang lahat ng simbahan ng kasalukuyang user |
+| GET | `/` | JWT | — | Mag-load ng lahat ng simbahan para sa kasalukuyang user |
 | GET | `/:id` | JWT | — | Kunin ang simbahan ayon sa ID |
-| GET | `/:id/getDomainAdmin` | JWT | — | Kunin ang domain admin user ng isang simbahan |
+| GET | `/:id/getDomainAdmin` | JWT | — | Kunin ang domain admin user para sa isang simbahan |
 | GET | `/:id/impersonate` | JWT | Server.Admin | I-impersonate ang isang simbahan (server admin lamang) |
 | GET | `/all?term=` | JWT | Server.Admin | Maghanap ng lahat ng simbahan (admin) |
 | GET | `/search/?name=` | Public | — | Maghanap ng simbahan ayon sa pangalan |
 | GET | `/lookup/?subDomain=&id=` | Public | — | Hanapin ang simbahan ayon sa subdomain o ID |
 | POST | `/` | JWT | Settings.Edit | I-update ang detalye ng simbahan |
-| POST | `/add` | JWT | — | Magparehistro ng bagong simbahan. Kailangang field: name, address1, city, state, zip, country |
+| POST | `/add` | JWT | — | Magparehistro ng bagong simbahan. Kinakailangang field: name, address1, city, state, zip, country |
 | POST | `/search` | Public | — | Maghanap ng simbahan ayon sa pangalan (POST variant) |
 | POST | `/select` | JWT | — | Piliin/lumipat sa isang simbahan. Body: `{ churchId }` o `{ subDomain }` |
 | POST | `/:id/archive` | JWT | Server.Admin | I-archive o i-unarchive ang isang simbahan |
-| POST | `/byIds` | Public | — | I-load ang maraming simbahan ayon sa mga ID |
-| DELETE | `/deleteAbandoned` | JWT | Server.Admin | Burahin ang mga simbahang iniwan nang 7+ araw |
+| POST | `/byIds` | Public | — | Mag-load ng maraming simbahan ayon sa mga ID |
+| DELETE | `/deleteAbandoned` | JWT | Server.Admin | Burahin ang mga simbahang inabandona nang 7+ araw |
 
-## Mga Group
+## Mga Grupo
 
-Base path: `/membership/groups`
+Pangunahing path: `/membership/groups`
 
-Nagpapalawig sa karaniwang CRUD (GET `/`, GET `/:id` mula sa base class).
+Pinalawak ang standard CRUD (GET `/`, GET `/:id` mula sa base class).
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Ilista ang lahat ng group |
-| GET | `/:id` | JWT | — | Kunin ang group ayon sa ID |
-| GET | `/search?campusId=&serviceId=&serviceTimeId=` | JWT | — | Maghanap ng group ayon sa mga filter ng serbisyo |
-| GET | `/my` | JWT | — | Kunin ang mga group ng kasalukuyang user |
-| GET | `/my/:tag` | JWT | — | Kunin ang mga group ng kasalukuyang user na sinala ayon sa tag |
-| GET | `/tag/:tag` | JWT | — | Kunin ang lahat ng group na may partikular na tag |
-| GET | `/public/:churchId/:id` | Public | — | Kunin ang isang pampublikong group ayon sa simbahan at ID |
-| GET | `/public/:churchId/tag/:tag` | Public | — | Kunin ang mga pampublikong group ayon sa tag |
-| GET | `/public/:churchId/label?label=` | Public | — | Kunin ang mga pampublikong group ayon sa label |
-| GET | `/public/:churchId/slug/:slug` | Public | — | Kunin ang isang pampublikong group ayon sa slug |
-| POST | `/` | JWT | Groups.Edit | Gumawa o mag-update ng mga group (awtomatikong gumagawa ng slug) |
-| DELETE | `/:id` | JWT | Groups.Edit | Burahin ang isang group (binubura rin ang mga child team para sa ministry group) |
+| GET | `/` | JWT | — | Ilista ang lahat ng grupo |
+| GET | `/:id` | JWT | — | Kunin ang grupo ayon sa ID |
+| GET | `/search?campusId=&serviceId=&serviceTimeId=` | JWT | — | Maghanap ng grupo ayon sa service filter |
+| GET | `/my` | JWT | — | Kunin ang mga grupo para sa kasalukuyang user |
+| GET | `/my/:tag` | JWT | — | Kunin ang mga grupo ng kasalukuyang user na na-filter ayon sa tag |
+| GET | `/tag/:tag` | JWT | — | Kunin ang lahat ng grupo na may partikular na tag |
+| GET | `/public/:churchId/:id` | Public | — | Kunin ang pampublikong grupo ayon sa simbahan at ID |
+| GET | `/public/:churchId/tag/:tag` | Public | — | Kunin ang mga pampublikong grupo ayon sa tag |
+| GET | `/public/:churchId/label?label=` | Public | — | Kunin ang mga pampublikong grupo ayon sa label |
+| GET | `/public/:churchId/slug/:slug` | Public | — | Kunin ang pampublikong grupo ayon sa slug |
+| POST | `/` | JWT | Groups.Edit | Gumawa o mag-update ng mga grupo (awtomatikong gumagawa ng slug) |
+| DELETE | `/:id` | JWT | Groups.Edit | Burahin ang grupo (binubura rin ang mga child team para sa ministry group) |
 
-## Mga Miyembro ng Group
+## Mga Miyembro ng Grupo
 
-Base path: `/membership/groupmembers`
+Pangunahing path: `/membership/groupmembers`
 
-Nagpapalawig sa karaniwang CRUD (GET `/:id`, DELETE `/:id` mula sa base class).
+Pinalawak ang standard CRUD (GET `/:id`, DELETE `/:id` mula sa base class).
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | GroupMembers.View | Kunin ang miyembro ng group ayon sa ID |
-| GET | `/` | JWT | GroupMembers.View* | Ilista ang mga miyembro ng group. I-filter gamit ang `?groupId=`, `?groupIds=`, o `?personId=`. *Pinapayagan din kung ang user ay nasa group o nagtatanong ng sariling personId |
-| GET | `/my` | JWT | — | Kunin ang mga membership sa group ng kasalukuyang user |
-| GET | `/basic/:groupId` | JWT | — | Kunin ang pangunahing listahan ng miyembro ng isang group |
-| GET | `/public/leaders/:churchId/:groupId` | Public | — | Kunin ang mga lider ng group (public) |
-| GET | `/public/:churchId/:groupId` | Public | — | Kunin ang pampublikong roster ng group (minimal na field: `personId`, `displayName`, `leader`, photo). Para lamang kapag pumayag ang group sa pamamagitan ng `publicRoster`; sumusuporta sa `staffGrid` element ng website builder |
-| POST | `/` | JWT | GroupMembers.Edit | Magdagdag o mag-update ng mga miyembro ng group |
-| DELETE | `/:id` | JWT | GroupMembers.View | Alisin ang isang miyembro ng group |
+| GET | `/:id` | JWT | GroupMembers.View | Kunin ang miyembro ng grupo ayon sa ID |
+| GET | `/` | JWT | GroupMembers.View* | Ilista ang mga miyembro ng grupo. I-filter gamit ang `?groupId=`, `?groupIds=`, o `?personId=`. *Pinapayagan din kung ang user ay nasa grupo o hinahanap ang sariling personId |
+| GET | `/my` | JWT | — | Kunin ang mga membership ng grupo ng kasalukuyang user |
+| GET | `/basic/:groupId` | JWT | — | Kunin ang basic na listahan ng miyembro para sa isang grupo |
+| GET | `/public/leaders/:churchId/:groupId` | Public | — | Kunin ang mga lider ng grupo (pampubliko) |
+| GET | `/public/:churchId/:groupId` | Public | — | Kunin ang pampublikong roster ng grupo (minimal na field: `personId`, `displayName`, `leader`, photo). Lamang kapag pinili ng grupo ang `publicRoster`; ginagamit ng website builder ang elementong `staffGrid` |
+| POST | `/` | JWT | GroupMembers.Edit | Magdagdag o mag-update ng mga miyembro ng grupo |
+| DELETE | `/:id` | JWT | GroupMembers.View | Alisin ang miyembro ng grupo |
 
-## Mga Household
+## Mga Sambahayan
 
-Base path: `/membership/households`
+Pangunahing path: `/membership/households`
 
 Standard na CRUD controller.
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Ilista ang lahat ng household |
-| GET | `/:id` | JWT | — | Kunin ang household ayon sa ID |
-| POST | `/` | JWT | People.Edit | Gumawa o mag-update ng mga household |
-| DELETE | `/:id` | JWT | People.Edit | Burahin ang isang household |
+| GET | `/` | JWT | — | Ilista ang lahat ng sambahayan |
+| GET | `/:id` | JWT | — | Kunin ang sambahayan ayon sa ID |
+| POST | `/` | JWT | People.Edit | Gumawa o mag-update ng mga sambahayan |
+| DELETE | `/:id` | JWT | People.Edit | Burahin ang sambahayan |
 
-## Mga Role
+## Mga Tungkulin
 
-Base path: `/membership/roles`
+Pangunahing path: `/membership/roles`
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | Roles.View | Kunin ang role ayon sa ID |
-| GET | `/church/:churchId` | JWT | Roles.View | Kunin ang lahat ng role ng isang simbahan |
-| POST | `/` | JWT | Roles.Edit | Gumawa o mag-update ng mga role |
-| DELETE | `/:id` | JWT | Roles.Edit | Burahin ang isang role (inaalis din ang mga permission at miyembro nito) |
+| GET | `/:id` | JWT | Roles.View | Kunin ang tungkulin ayon sa ID |
+| GET | `/church/:churchId` | JWT | Roles.View | Kunin ang lahat ng tungkulin para sa simbahan |
+| POST | `/` | JWT | Roles.Edit | Gumawa o mag-update ng mga tungkulin |
+| DELETE | `/:id` | JWT | Roles.Edit | Burahin ang tungkulin (binubura rin ang mga pahintulot at miyembro nito) |
 
-## Mga Miyembro ng Role
+## Mga Miyembro ng Tungkulin
 
-Base path: `/membership/rolemembers`
+Pangunahing path: `/membership/rolemembers`
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/roles/:id` | JWT | Roles.View | Kunin ang mga miyembro ng isang role. Idagdag ang `?include=users` upang isama ang detalye ng user |
-| POST | `/` | JWT | Roles.Edit | Magdagdag ng mga miyembro sa isang role (gumagawa ng user kung walang email na ganito) |
-| DELETE | `/:id` | JWT | Roles.View | Alisin ang isang miyembro ng role |
+| GET | `/roles/:id` | JWT | Roles.View | Kunin ang mga miyembro ng tungkulin. Idagdag ang `?include=users` para isama ang detalye ng user |
+| POST | `/` | JWT | Roles.Edit | Magdagdag ng miyembro sa tungkulin (gumagawa ng user kung hindi pa umiiral ang email) |
+| DELETE | `/:id` | JWT | Roles.View | Alisin ang miyembro ng tungkulin |
 | DELETE | `/self/:churchId/:userId` | JWT | — | Alisin ang sarili mo sa isang simbahan |
 
-## Mga Permission ng Role
+## Mga Pahintulot ng Tungkulin
 
-Base path: `/membership/rolepermissions`
+Pangunahing path: `/membership/rolepermissions`
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/roles/:id` | JWT | Roles.View | Kunin ang mga permission ng isang role (gamitin ang `null` bilang ID para sa "Everyone" role) |
-| POST | `/` | JWT | Roles.Edit | Gumawa o mag-update ng mga permission ng role |
-| DELETE | `/:id` | JWT | Roles.Edit | Burahin ang isang permission ng role |
+| GET | `/roles/:id` | JWT | Roles.View | Kunin ang mga pahintulot ng tungkulin (gamitin ang `null` bilang ID para sa tungkulin na "Everyone") |
+| POST | `/` | JWT | Roles.Edit | Gumawa o mag-update ng mga pahintulot ng tungkulin |
+| DELETE | `/:id` | JWT | Roles.Edit | Burahin ang pahintulot ng tungkulin |
 
-## Mga Permission
+## Mga Pahintulot
 
-Base path: `/membership/permissions`
+Pangunahing path: `/membership/permissions`
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Kunin ang buong listahan ng mga available na permission |
+| GET | `/` | JWT | — | Kunin ang buong listahan ng available na pahintulot |
+
+Bawat entry ay may `apiName`, `section` (uri ng content), `action`, at ang `displaySection` / `displayAction` na label na ipinapakita ng role editor ng B1Admin. Mga kamakailang idinagdag: `MembershipApi` / `People` / `View Names` (**View People Names Only**, sa ilalim ng People and Groups) at `GivingApi` / `Donations` / `Enter` (**Enter Donations**, sa ilalim ng Donations; tingnan ang [Donation Batches](./giving.md#donation-batches)).
 
 ## Mga Form
 
-Base path: `/membership/forms`
+Pangunahing path: `/membership/forms`
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Forms.Admin o Forms.Edit | Ilista ang lahat ng form (nakikita ng admin ang lahat; nakikita ng mga editor ang naka-assign at hindi-member na form) |
-| GET | `/:id` | JWT | Form access | Kunin ang isang form ayon sa ID |
+| GET | `/` | JWT | Forms.Admin o Forms.Edit | Ilista ang lahat ng form (nakikita ng admin ang lahat; nakikita ng editor ang nakatalaga at non-member na form) |
+| GET | `/:id` | JWT | Access sa form | Kunin ang form ayon sa ID |
 | GET | `/archived` | JWT | Forms.Admin o Forms.Edit | Ilista ang mga naka-archive na form |
-| GET | `/standalone/:id?churchId=` | JWT | — | Kunin ang isang standalone na form (kailangan ng auth ang mga restricted na form) |
+| GET | `/standalone/:id?churchId=` | JWT | — | Kunin ang standalone na form (ang restricted na form ay nangangailangan ng auth) |
 | POST | `/` | JWT | Forms.Admin o Forms.Edit | Gumawa o mag-update ng mga form |
-| DELETE | `/:id` | JWT | Form access | Burahin ang isang form |
+| DELETE | `/:id` | JWT | Access sa form | Burahin ang form |
 
-## Mga Form Submission
+## Mga Submission ng Form
 
-Base path: `/membership/formsubmissions`
+Pangunahing path: `/membership/formsubmissions`
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | Forms.Admin o Forms.Edit | Ilista ang mga submission. I-filter gamit ang `?personId=` o `?formId=` |
 | GET | `/:id` | JWT | Forms.Admin o Forms.Edit | Kunin ang submission ayon sa ID. Idagdag ang `?include=form,questions,answers` |
-| GET | `/formId/:formId` | JWT | Form access | Kunin ang lahat ng submission ng isang form (kasama ang form, questions, answers) |
-| POST | `/` | JWT | — | Isumite ang mga sagot sa form (humahawak ng restricted/unrestricted na form, nagpapadala ng email notification). Kapag may `autoCreatePerson` ang form, humahanap-o-gumagawa ng Guest na tao ayon sa email at iniuugnay ang submission; kapag may `followUpSubject`/`followUpBody`, nagpapadala ng templated na follow-up email sa nagsumite |
-| DELETE | `/:id` | JWT | Forms.Admin o Forms.Edit | Burahin ang isang submission at ang mga sagot nito |
+| GET | `/formId/:formId` | JWT | Access sa form | Kunin ang lahat ng submission para sa isang form (kasama ang form, questions, answers) |
+| POST | `/` | JWT | — | Ipasa ang mga sagot sa form (humahawak ng restricted/unrestricted na form, nagpapadala ng email notification). Kapag may `autoCreatePerson` ang form, humahanap-o-gumagawa ng Guest na tao ayon sa email at iniuugnay ang submission; kapag may nakatakda na `followUpSubject`/`followUpBody`, nagpapadala ng templated na follow-up email sa nagsumite |
+| DELETE | `/:id` | JWT | Forms.Admin o Forms.Edit | Burahin ang submission at ang mga sagot nito |
 
 ## Mga Tanong
 
-Base path: `/membership/questions`
+Pangunahing path: `/membership/questions`
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Form access | Ilista ang mga tanong ng isang form. Kailangan ang `?formId=` |
-| GET | `/:id` | JWT | Form access | Kunin ang isang tanong ayon sa ID |
-| GET | `/unrestricted?formId=` | JWT | — | Kunin ang mga tanong ng isang unrestricted na form |
-| GET | `/sort/:id/up` | JWT | — | Ilipat pataas ang isang tanong sa sort order |
-| GET | `/sort/:id/down` | JWT | — | Ilipat pababa ang isang tanong sa sort order |
-| POST | `/` | JWT | Form access | Gumawa o mag-update ng mga tanong (awtomatikong nagtatalaga ng sort order) |
-| DELETE | `/:id?formId=` | JWT | Form access | Burahin ang isang tanong |
+| GET | `/` | JWT | Access sa form | Ilista ang mga tanong para sa form. Kinakailangan ang `?formId=` |
+| GET | `/:id` | JWT | Access sa form | Kunin ang tanong ayon sa ID |
+| GET | `/unrestricted?formId=` | JWT | — | Kunin ang mga tanong para sa unrestricted na form |
+| GET | `/sort/:id/up` | JWT | — | Ilipat pataas ang tanong sa sort order |
+| GET | `/sort/:id/down` | JWT | — | Ilipat pababa ang tanong sa sort order |
+| POST | `/` | JWT | Access sa form | Gumawa o mag-update ng mga tanong (awtomatikong nagtatalaga ng sort order) |
+| DELETE | `/:id?formId=` | JWT | Access sa form | Burahin ang tanong |
 
 ## Mga Sagot
 
-Base path: `/membership/answers`
+Pangunahing path: `/membership/answers`
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | Forms.Admin o Forms.Edit | Ilista ang mga sagot. I-filter gamit ang `?formSubmissionId=` |
 | POST | `/` | JWT | Forms.Admin o Forms.Edit | Gumawa o mag-update ng mga sagot |
 
-## Member Permissions
+## Pahintulot ng Miyembro
 
-Base path: `/membership/memberpermissions`
+Pangunahing path: `/membership/memberpermissions`
 
-Kinokontrol ang access ng bawat miyembro sa mga partikular na form.
+Kinokontrol ang access ng bawat miyembro sa partikular na mga form.
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | Form access | Kunin ang member permission ayon sa ID |
-| GET | `/member/:id` | JWT | Form access | Kunin ang lahat ng permission sa form ng isang miyembro |
-| GET | `/form/:id` | JWT | Form access | Kunin ang lahat ng member permission ng isang form |
-| GET | `/form/:id/my` | JWT | Form access | Kunin ang permission ng kasalukuyang user para sa isang form |
-| POST | `/` | JWT | Form access | Gumawa o mag-update ng mga member permission |
-| DELETE | `/:id?formId=` | JWT | Form access | Burahin ang isang member permission |
-| DELETE | `/member/:id?formId=` | JWT | Form access | Burahin ang lahat ng permission ng isang miyembro sa isang form |
+| GET | `/:id` | JWT | Access sa form | Kunin ang pahintulot ng miyembro ayon sa ID |
+| GET | `/member/:id` | JWT | Access sa form | Kunin ang lahat ng pahintulot sa form para sa isang miyembro |
+| GET | `/form/:id` | JWT | Access sa form | Kunin ang lahat ng pahintulot ng miyembro para sa isang form |
+| GET | `/form/:id/my` | JWT | Access sa form | Kunin ang pahintulot ng kasalukuyang user sa isang form |
+| POST | `/` | JWT | Access sa form | Gumawa o mag-update ng pahintulot ng miyembro |
+| DELETE | `/:id?formId=` | JWT | Access sa form | Burahin ang pahintulot ng miyembro |
+| DELETE | `/member/:id?formId=` | JWT | Access sa form | Burahin ang lahat ng pahintulot ng miyembro sa isang form |
 
 ## Mga Setting
 
-Base path: `/membership/settings`
+Pangunahing path: `/membership/settings`
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | Settings.Edit | Kunin ang lahat ng setting ng simbahan |
-| GET | `/public/:churchId` | Public | — | Kunin ang mga pampublikong setting ng isang simbahan |
-| POST | `/` | JWT | Settings.Edit | I-save ang mga setting (sumusuporta sa base64 image upload) |
+| GET | `/public/:churchId` | Public | — | Kunin ang pampublikong setting ng simbahan |
+| POST | `/` | JWT | Settings.Edit | I-save ang mga setting (sumusuporta sa base64 na pag-upload ng larawan) |
 
 ## Mga Domain
 
-Base path: `/membership/domains`
+Pangunahing path: `/membership/domains`
 
-Nagpapalawig sa karaniwang CRUD (GET `/:id`, GET `/`, DELETE `/:id` mula sa base class).
+Pinalawak ang standard CRUD (GET `/:id`, GET `/`, DELETE `/:id` mula sa base class).
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | Ilista ang lahat ng domain |
 | GET | `/:id` | JWT | — | Kunin ang domain ayon sa ID |
 | GET | `/lookup/:domainName` | JWT | — | Hanapin ang domain ayon sa pangalan |
-| GET | `/public/lookup/:domainName` | Public | — | Public na paghahanap ng domain ayon sa pangalan |
-| GET | `/health/check` | Public | — | Magpatakbo ng health check sa mga domain na hindi pa nasusuri |
-| POST | `/` | JWT | Settings.Edit | Gumawa o mag-update ng mga domain (nagti-trigger ng Caddy update) |
-| DELETE | `/:id` | JWT | Settings.Edit | Burahin ang isang domain |
+| GET | `/public/lookup/:domainName` | Public | — | Pampublikong paghahanap ng domain ayon sa pangalan |
+| GET | `/health/check` | Public | — | Patakbuhin ang health check sa mga hindi pa nasusuring domain |
+| POST | `/` | JWT | Settings.Edit | Gumawa o mag-update ng mga domain (nag-trigger ng update sa Caddy) |
+| DELETE | `/:id` | JWT | Settings.Edit | Burahin ang domain |
 
 ## User Church
 
-Base path: `/membership/userchurch`
+Pangunahing path: `/membership/userchurch`
 
 Pinamamahalaan ang ugnayan sa pagitan ng mga user at simbahan.
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/userid/:userId` | JWT | — | Kunin ang user-church record ayon sa user ID |
-| GET | `/personid/:personId` | JWT | — | Kunin ang email ng naka-link na user ng isang tao |
-| GET | `/user/:userId` | JWT | Server.Admin | I-load ang lahat ng simbahan ng isang user |
-| POST | `/` | JWT | — | Gumawa ng user-church association |
-| PATCH | `/:userId` | JWT | — | I-update ang huling oras ng access at itala ang access |
-| DELETE | `/record/:userId/:churchId/:personId` | JWT | — | Burahin ang isang user-church record |
+| GET | `/personid/:personId` | JWT | — | Kunin ang email ng naka-link na user ng tao |
+| GET | `/user/:userId` | JWT | Server.Admin | Mag-load ng lahat ng simbahan para sa isang user |
+| POST | `/` | JWT | — | Gumawa ng user-church na ugnayan |
+| PATCH | `/:userId` | JWT | — | I-update ang huling oras ng pag-access at itala ang access |
+| DELETE | `/record/:userId/:churchId/:personId` | JWT | — | Burahin ang user-church record |
 
 ## Mga Visibility Preference
 
-Base path: `/membership/visibilityPreferences`
+Pangunahing path: `/membership/visibilityPreferences`
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/my` | JWT | — | Kunin ang visibility preference ng kasalukuyang user |
 | POST | `/` | JWT | — | I-save ang visibility preference (visibility ng address, telepono, email) |
 
 ## Query
 
-Base path: `/membership/query`
+Pangunahing path: `/membership/query`
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| POST | `/members` | JWT | — | Paghahanap ng miyembro gamit ang natural na wika sa tulong ng AI. Body: `{ text, subDomain, siteUrl }` |
+| POST | `/members` | JWT | — | Natural na paghahanap ng miyembro gamit ang AI. Body: `{ text, subDomain, siteUrl }` |
 
 ## Mga Client Error
 
-Base path: `/membership/clientErrors`
+Pangunahing path: `/membership/clientErrors`
 
-| Method | Path | Auth | Permission | Paglalarawan |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| POST | `/` | JWT | — | Itala ang error sa panig ng client |
+| POST | `/` | JWT | — | Itala ang client-side na error |
 
 ## Mga Kaugnay na Pahina
 
-- [Authentication & Permissions](./authentication) -- Daloy ng login, JWT, OAuth, modelo ng permission
-- [Attendance Endpoints](./attendance) -- Pagsubaybay sa serbisyo at pagbisita
-- [Module Structure](../module-structure) -- Mga pattern ng organisasyon ng code
+- [Authentication & Permissions](./authentication) — Daloy ng login, JWT, OAuth, modelo ng pahintulot
+- [Attendance Endpoints](./attendance) — Pagsubaybay ng serbisyo at pagbisita
+- [Module Structure](../module-structure) — Mga pattern ng organisasyon ng code

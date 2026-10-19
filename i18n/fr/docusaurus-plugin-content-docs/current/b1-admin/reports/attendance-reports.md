@@ -30,7 +30,7 @@ Le rapport Tendance de la participation montre comment la participation change a
 
 Ce rapport est utile pour identifier des modèles tels que les baisses saisonnières, les tendances de croissance ou l'impact d'événements spéciaux.
 
-## Participation au groupe
+## Participation au groupe {#group-attendance}
 
 Le rapport Participation au groupe montre qui a assisté à chaque session de groupe dans une plage de dates.
 

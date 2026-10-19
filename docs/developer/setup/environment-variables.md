@@ -6,7 +6,7 @@ title: "Environment Variables"
 
 <div class="article-intro">
 
-Every ChurchApps project uses a `.env` file for local configuration. Each project includes a sample file that you copy and customize. This page covers the environment variables for APIs, web apps, and mobile apps, including how to choose between staging and local API targets.
+Every ChurchApps project uses a `.env` file for local configuration. Each project includes a sample file that you copy and customize. This page covers the environment variables for APIs, web apps, and mobile apps, including how to choose between the demo and local API targets.
 
 </div>
 
@@ -41,22 +41,26 @@ cp dotenv.sample.txt .env
 
 The most important decision is where your frontend points for API calls. There are two options:
 
-### Option 1: Staging APIs (Recommended for Frontend Development)
+### Option 1: Demo APIs (Recommended for Frontend Development)
 
-Use the shared staging environment. No local API or database setup needed.
+Use the shared demo environment. No local API or database setup needed. It runs the latest code from `main`, and its sample data is repopulated nightly.
 
 ```bash
 # Base URL pattern
-https://api.staging.churchapps.org/{module}
+https://api.demo.churchapps.org/{module}
 
 # Example module URLs
-https://api.staging.churchapps.org/membership
-https://api.staging.churchapps.org/attendance
-https://api.staging.churchapps.org/content
-https://api.staging.churchapps.org/giving
-https://api.staging.churchapps.org/messaging
-https://api.staging.churchapps.org/doing
+https://api.demo.churchapps.org/membership
+https://api.demo.churchapps.org/attendance
+https://api.demo.churchapps.org/content
+https://api.demo.churchapps.org/giving
+https://api.demo.churchapps.org/messaging
+https://api.demo.churchapps.org/doing
 ```
+
+:::warning
+The staging environment (`api.staging.churchapps.org`, `api.staging.lessons.church`, and related hosts) has been retired. Some sample `.env` files may still contain staging URLs; replace them with the demo or local values shown on this page. There is no shared non-production Lessons API -- run [LessonsApi](https://github.com/ChurchApps/LessonsApi) locally (it listens on port `8090`) when you need one.
+:::
 
 ### Option 2: Local API
 
@@ -119,12 +123,12 @@ Update `root:password` with your actual MySQL credentials. Each per-module datab
 
 Sample file: `.env.sample`
 
-| Variable | Description | Example (Staging) |
-|----------|-------------|-------------------|
+| Variable | Description | Example (Demo) |
+|----------|-------------|----------------|
 | `REACT_APP_STAGE` | Environment name | `demo` |
 | `PORT` | Dev server port | `3101` |
-| `REACT_APP_API_BASE` | Single base URL for all ChurchApps APIs (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` are appended automatically) | `https://api.staging.churchapps.org` |
-| `REACT_APP_CONTENT_ROOT` | Content delivery URL | `https://content.staging.churchapps.org` |
+| `REACT_APP_API_BASE` | Single base URL for all ChurchApps APIs (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` are appended automatically) | `https://api.demo.churchapps.org` |
+| `REACT_APP_CONTENT_ROOT` | Content delivery URL | `https://democontent.churchapps.org` |
 | `REACT_APP_GOOGLE_ANALYTICS` | Google Analytics ID (optional) | `UA-123456789-1` |
 
 For local API development, point the base URL at your local stack:
@@ -137,11 +141,10 @@ REACT_APP_API_BASE=http://localhost:8084
 
 Sample file: `.env.sample`
 
-| Variable | Description | Example (Staging) |
-|----------|-------------|-------------------|
-| `NEXT_PUBLIC_API_BASE` | Single base URL for all ChurchApps APIs (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` are appended automatically) | `https://api.staging.churchapps.org` |
-| `NEXT_PUBLIC_CONTENT_ROOT` | Content delivery URL | `https://staging.churchapps.org/content` |
-| `NEXT_PUBLIC_CHURCH_APPS_URL` | ChurchApps base URL | `https://staging.churchapps.org` |
+| Variable | Description | Example (Demo) |
+|----------|-------------|----------------|
+| `NEXT_PUBLIC_API_BASE` | Single base URL for all ChurchApps APIs (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` are appended automatically) | `https://api.demo.churchapps.org` |
+| `NEXT_PUBLIC_CONTENT_ROOT` | Content delivery URL | `https://democontent.churchapps.org` |
 | `NEXT_PUBLIC_GOOGLE_ANALYTICS` | Google Analytics ID (optional) | `UA-123456789-1` |
 
 :::info
@@ -152,12 +155,12 @@ Next.js requires the `NEXT_PUBLIC_` prefix for any environment variable that nee
 
 Sample file: `dotenv.sample.txt`
 
-| Variable | Description | Example (Staging) |
-|----------|-------------|-------------------|
-| `STAGE` | Environment stage | `staging` |
-| `NEXT_PUBLIC_LESSONS_API` | Lessons API URL | `https://api.staging.lessons.church` |
-| `NEXT_PUBLIC_CONTENT_ROOT` | Content delivery URL | `https://api.staging.lessons.church/content` |
-| `NEXT_PUBLIC_CHURCH_APPS_URL` | ChurchApps base URL | `https://staging.churchapps.org` |
+| Variable | Description | Example (Local LessonsApi) |
+|----------|-------------|----------------------------|
+| `STAGE` | Environment stage (leave unset or `dev` for local development) | `dev` |
+| `NEXT_PUBLIC_LESSONS_API` | Lessons API URL | `http://localhost:8090` |
+| `NEXT_PUBLIC_CONTENT_ROOT` | Content delivery URL | `http://localhost:8090/content` |
+| `NEXT_PUBLIC_API_BASE` | ChurchApps API base used for sign-in (only honored when `STAGE` is unset or `dev`) | `https://api.demo.churchapps.org` |
 
 ---
 
@@ -167,13 +170,13 @@ Sample file: `dotenv.sample.txt`
 
 Sample file: `dotenv.sample.txt`
 
-| Variable | Description | Example (Staging) |
-|----------|-------------|-------------------|
+| Variable | Description | Example (Demo) |
+|----------|-------------|----------------|
 | `STAGE` | Environment name | `dev` |
-| `API_BASE` | Single base URL for all ChurchApps APIs (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing` are appended automatically) | `https://api.staging.churchapps.org` |
-| `LESSONS_API` | Lessons API (separate host) | `https://api.staging.lessons.church` |
-| `CONTENT_ROOT` | Content delivery URL | `https://content.staging.churchapps.org` |
-| `LESSONS_ROOT` | Lessons site URL | `https://staging.lessons.church` |
+| `MEMBERSHIP_API`, `ATTENDANCE_API`, `GIVING_API`, `DOING_API`, `MESSAGING_API`, `CONTENT_API` | One URL per ChurchApps API module (each defaults to production when unset) | `https://api.demo.churchapps.org/membership` |
+| `LESSONS_API` | Lessons API (separate host; there is no shared non-production one) | `https://api.lessons.church` |
+| `CONTENT_ROOT` | Content delivery URL | `https://democontent.churchapps.org` |
+| `LESSONS_ROOT` | Lessons site URL | `https://lessons.church` |
 
 :::info
 Mobile apps do not use the `REACT_APP_` or `NEXT_PUBLIC_` prefix. Environment variable access is handled by the Expo configuration.

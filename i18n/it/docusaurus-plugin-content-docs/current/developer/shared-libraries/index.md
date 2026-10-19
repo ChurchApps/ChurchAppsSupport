@@ -46,7 +46,7 @@ Ogni modifica a un pacchetto viene spedita con un changeset:
 Non eseguire mai un raw `npm publish` dentro un singolo pacchetto -- salta l'ordinamento di build e la contabilità della versione che lo script di rilascio gestisce. La pubblicazione richiede un account npm con diritti di pubblicazione allo scope `@churchapps`.
 :::
 
-## Sviluppo Locale Contro un'App Consumatrice
+## Sviluppo Locale Contro un'App Consumatrice {#local-development-against-a-consuming-app}
 
 All'interno dello workspace, i pacchetti costruiscono direttamente contro i loro fratelli -- nessun collegamento necessario. Per testare una costruzione di pacchetto non pubblicata all'interno di un'app consumatrice (B1Admin, B1App, ecc.), aggiungi un portale Yarn temporaneo nel consumatore:
 

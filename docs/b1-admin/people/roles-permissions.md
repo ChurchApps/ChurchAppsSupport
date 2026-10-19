@@ -24,8 +24,8 @@ A role is a set of permissions that you assign to one or more users. For example
 
 Each role controls access to specific areas of B1 Admin, including:
 
-- **People** -- viewing and editing member profiles. The Notes section on a person record requires **Edit People**, and a separate **View Confidential Notes** permission controls access to the Confidential Notes section (for pastoral care, personal history, and similar sensitive notes).
-- **Donations** -- managing contributions and financial reports
+- **People** -- viewing and editing member profiles. The Notes section on a person record requires **Edit People**, and a separate **View Confidential Notes** permission controls access to the Confidential Notes section (for pastoral care, personal history, and similar sensitive notes). **View People Names Only** lets someone look people up by name (seeing only name, photo, and membership status) without access to the full directory.
+- **Donations** -- managing contributions and financial reports. **Enter Donations** is a narrower option for counting teams: it lets someone enter gifts, but only in [batches](../donations/batches.md#who-can-change-a-batch) that are still open.
 - **Attendance** -- recording and viewing attendance data
 - **Forms** -- creating and managing [custom forms](../forms/creating-forms.md)
 - **Groups** -- managing [group memberships](../groups/group-members.md) and calendars
@@ -68,3 +68,6 @@ Follow the principle of least privilege -- give each role only the permissions i
 - **Group Leaders** -- access to [Groups](../groups/creating-groups.md) only
 - **Check-In Volunteers** -- access to [Attendance](../attendance/check-in.md) only
 - **Finance Team** -- access to [Donations](../donations/recording-donations.md) and reporting
+- **Counting Team** -- **Enter Donations** and **View Donations**, so volunteers can enter the offering into open batches without seeing giving summaries
+
+See [Roles & Permissions](../settings/roles-permissions.md) for a closer look at the donation and people permissions.

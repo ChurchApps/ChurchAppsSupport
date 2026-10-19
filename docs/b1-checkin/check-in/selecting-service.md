@@ -26,6 +26,16 @@ The first step of every check-in is choosing which service you are attending. Th
 
 The app loads the service times and groups associated with that service, then takes you to the [member lookup screen](./looking-up-members).
 
+## When Check-In Isn't Open
+
+If your administrator gave a service time a [check-in schedule](../../b1-admin/attendance/setup#setting-a-check-in-schedule), the app only offers that service time while its check-in window is open. Service times whose window is closed right now are hidden, so families can't pick them later in the flow.
+
+If every service time for the service you tapped is closed, the app shows **"Check-in isn't open for this service right now."** Tap **Back** to return to the services list and choose a different service, or wait until the window opens and try again.
+
+:::info
+Check-in windows follow your church's time zone. If your church doesn't have a time zone set, the time zone of your campus is used instead. If a service time seems to open at the wrong hour, ask your administrator to check the time zone on your church or campus settings.
+:::
+
 :::info
 Services are configured by your church administrator in B1 Admin under the Attendance section. If you do not see the service you expect, ask your admin to verify it has been created in the [attendance setup](../../b1-admin/attendance/setup.md).
 :::

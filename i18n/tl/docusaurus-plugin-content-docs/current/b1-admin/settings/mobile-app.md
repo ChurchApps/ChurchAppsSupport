@@ -77,7 +77,7 @@ Ang item na **Member portal** sa parehong seksyong Mobile ang naglalaman ng mga 
 Dahil umaasa ang pagsusuri ng minimum na edad sa mga petsa ng kapanganakan, siguraduhing nakalagay ang petsa ng kapanganakan ng mga bata sa inyong kongregasyon. Ang setting na ito ay kabilang sa parehong pamilya ng kaligtasan ng bata gaya ng mga [kontrol sa kaligtasan ng check-in](../attendance/checkin-safety.md).
 :::
 
-### Sign-In Prompt sa Home Screen
+### Sign-In Prompt sa Home Screen {#home-screen-sign-in-prompt}
 
 Ang mga bisitang magbubukas ng [Home screen](/docs/b1-church/getting-started/navigating#home) ng app nang hindi nagsa-sign in ay makakakita ng maikling prompt -- bilang default, *"Sign in to see your groups, giving, and more."* -- sa tabi ng button na **Sign In**. Hinahayaan kang baguhin ito ng mga setting ng **Home screen sign-in prompt** sa parehong pahina ng Member portal (`/mobile/b1-mobile`):
 

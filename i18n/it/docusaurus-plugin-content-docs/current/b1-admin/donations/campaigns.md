@@ -1,71 +1,71 @@
 ---
-title: "Campagne e Promesse"
+title: "Campagne e impegni"
 ---
 
-# Campagne e Promesse
+# Campagne e impegni
 
 <div class="article-intro">
 
-Le campagne ti permettono di condurre una raccolta fondi verso un obiettivo specifico -- un fondo di costruzione, un viaggio missionario, un progetto speciale -- e tracciare le promesse dei membri insieme alle donazioni effettive così puoi vedere il tuo progresso in tempo reale.
+Le campagne vi permettono di organizzare una raccolta fondi verso un obiettivo specifico -- un fondo per l'edificio, un viaggio missionario, un progetto speciale -- e di monitorare gli impegni dei membri insieme alle donazioni effettive, così da vedere in tempo reale i progressi.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Configura i tuoi [fondi di donazione](funds) -- ogni campagna è legata a un fondo
-- Hai bisogno di accesso alla sezione Donazioni di B1 Admin
+- Configurate i vostri [fondi per le donazioni](funds) -- ogni campagna è collegata a un fondo
+- Vi serve accesso alla sezione Donazioni di B1 Admin
 
 </div>
 
-## Apertura delle Campagne
+## Aprire le campagne
 
-In B1 Admin, apri il [Menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Donazioni**, e fai clic su **Campagne**. Vedrai una tabella di tutte le campagne con il loro fondo, le date, l'importo obiettivo, il totale promesso e il totale dato finora. Una riga di riepilogo sopra la tabella mostra il numero di campagne e gli importi combinati promessi e donati.
+In B1 Admin, aprite il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandete **Donazioni** e fate clic su **Campagne**. Vedrete una tabella con tutte le campagne, con il fondo, le date, l'importo obiettivo, il totale degli impegni e il totale già donato. Una riga di riepilogo sopra la tabella indica il numero di campagne e gli importi complessivi impegnati e donati.
 
-## Creazione di una Campagna
+## Creare una campagna
 
-1. Fai clic su **Aggiungi Campagna** in alto nella pagina.
-2. Compila i dettagli della campagna:
-   - **Nome** *(obbligatorio)* — il nome di visualizzazione per questa campagna (ad esempio, "Fondo di Costruzione 2026").
-   - **Fondo** — il fondo di donazione a cui questa campagna è associata.
-   - **Data di Inizio** / **Data di Fine** — la finestra di raccolta fondi.
-   - **Obiettivo** — l'importo in dollari target per la campagna.
-3. Fai clic su **Salva**.
+1. Fate clic su **Aggiungi campagna** in cima alla pagina.
+2. Compilate i dettagli della campagna:
+   - **Nome** *(obbligatorio)* -- il nome visualizzato per questa campagna (ad esempio "Fondo per l'edificio 2026").
+   - **Fondo** -- il fondo per le donazioni a cui è associata questa campagna.
+   - **Data di inizio** / **Data di fine** -- il periodo della raccolta.
+   - **Obiettivo** -- l'importo in dollari da raggiungere per la campagna.
+3. Fate clic su **Salva**.
 
-## Tracciamento del Progresso
+## Monitorare i progressi
 
 Ogni riga della campagna mostra:
 
-- **Obiettivo** -- il tuo importo target
-- **Promesso** -- l'importo totale che i membri hanno promesso di dare
-- **Dato** -- l'importo totale effettivamente donato a questa campagna fondo durante la finestra di campagna
-- **Progresso** -- una barra e una percentuale che mostrano quanto sei avanzato verso il tuo obiettivo
+- **Obiettivo** -- l'importo che vi siete prefissi
+- **Impegnato** -- il totale che i membri hanno promesso di donare
+- **Donato** -- il totale effettivamente donato al fondo di questa campagna durante il periodo della campagna
+- **Avanzamento** -- una barra e una percentuale che indicano quanto vi siete avvicinati all'obiettivo
 
-Fai clic sul nome di una campagna per aprire la vista dei dettagli. Mostra la percentuale dell'obiettivo raggiunta ed elenca le promesse individuali con l'importo promesso e donato da ciascun donatore e uno stato (**Non iniziata**, **In corso**, **Adempiuta**, **Oltre la promessa**, oppure **Non promessa** per i donatori che hanno donato senza promettere). Fai clic su **Esporta** in alto nella vista dei dettagli per scaricare l'elenco delle promesse come CSV.
+Fate clic sul nome di una campagna per aprire la vista di dettaglio. Mostra la percentuale dell'obiettivo raggiunta ed elenca i singoli impegni, con gli importi impegnati e donati di ciascun donatore e uno stato (**Non iniziato**, **In corso**, **Adempiuto**, **Oltre l'impegno** oppure **Senza impegno** per i donatori che hanno donato senza impegnarsi). I donatori sono elencati per cognome, poi per nome; fate clic su un'intestazione di colonna per ordinare l'elenco in base a quella colonna. Fate clic su **Esporta** in cima alla vista di dettaglio per scaricare l'elenco degli impegni in formato CSV.
 
-## Aggiunta di Promesse
+## Aggiungere gli impegni
 
-Le promesse sono impegni dai membri di dare verso una campagna. Per registrare una promessa:
+Gli impegni sono promesse dei membri di donare a una campagna. Per registrare un impegno:
 
-1. Apri una campagna.
-2. Fai clic su **Aggiungi Promessa** in alto nella pagina.
-3. Seleziona la **persona** che fa la promessa.
-4. Inserisci l'importo della **promessa**.
-5. Facoltativamente imposta una **data** per l'impegno della promessa.
-6. Fai clic su **Salva**.
+1. Aprite una campagna.
+2. Fate clic su **Aggiungi impegno** in cima alla pagina.
+3. Selezionate la **persona** che fa l'impegno.
+4. Inserite l'**importo** dell'impegno.
+5. Facoltativamente, indicate una **data** per l'impegno.
+6. Fate clic su **Salva**.
 
-Le promesse appaiono nel dettaglio della campagna e contribuiscono al totale **Promesso** nell'elenco delle campagne. Per modificare una promessa, fai clic su **Modifica** sulla sua riga.
+Gli impegni compaiono nel dettaglio della campagna e contribuiscono al totale **Impegnato** nell'elenco delle campagne. Per modificare un impegno, fate clic su **Modifica** nella sua riga.
 
 :::tip
-Le promesse sono separate dalle donazioni effettive. Una promessa traccia un impegno; una donazione registra il dono effettivo. Entrambi sono mostrati sulla campagna così puoi vedere come bene le promesse vengono adempite.
+Gli impegni sono separati dalle donazioni effettive. Un impegno registra una promessa; una donazione registra l'offerta effettiva. Entrambi sono mostrati nella campagna, così potete vedere quanto gli impegni vengono rispettati.
 :::
 
-## Modifica o Eliminazione di una Campagna
+## Modificare o eliminare una campagna
 
-Fai clic su **Modifica** su qualsiasi riga campagna (oppure su **Modifica campagna** in alto nella vista dei dettagli) per aggiornarne il nome, l'obiettivo, le date, o il fondo. Fai clic su **Elimina** per rimuovere permanentemente la campagna e le sue promesse. L'eliminazione di una campagna non elimina alcuna donazione che sia stata registrata al suo fondo.
+Fate clic su **Modifica** in qualsiasi riga di campagna (oppure su **Modifica campagna** in cima alla vista di dettaglio) per aggiornarne il nome, l'obiettivo, le date o il fondo. Fate clic su **Elimina** per rimuovere definitivamente la campagna e i suoi impegni. Eliminare una campagna non elimina le donazioni registrate sul suo fondo.
 
-## Articoli Correlati
+## Articoli correlati
 
-- [Registrazione di Donazioni](recording-donations) — registra i doni effettivi che adempiono le promesse
-- [Fondi](funds) — configura il fondo da associare a una campagna
-- [Rapporti di Donazione](donation-reports) — rapporti sulle donazioni per fondo
+- [Registrare le donazioni](recording-donations) -- registrate le offerte effettive che rispettano gli impegni
+- [Fondi](funds) -- configurate il fondo da associare a una campagna
+- [Rapporti sulle donazioni](donation-reports) -- rapporti sulle donazioni per fondo

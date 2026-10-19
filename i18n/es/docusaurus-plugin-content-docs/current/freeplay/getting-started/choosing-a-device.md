@@ -1,57 +1,57 @@
 ---
-title: "Elegir un Dispositivo"
+title: "Elegir un dispositivo"
 ---
 
-# Elegir un Dispositivo para FreePlay
+# Elegir un dispositivo para FreePlay
 
 <div class="article-intro">
 
-FreePlay se ejecuta en dispositivos Amazon Fire TV, Android TV y Apple TV. Esta página te dice exactamente qué dispositivos comprar para tus TVs de aula — y, igualmente importante, cuáles evitar.
+FreePlay funciona en dispositivos Amazon Fire TV, Android TV y Apple TV. Esta página te indica exactamente qué dispositivos comprar para los televisores de tu salón de clases y, igual de importante, cuáles evitar.
 
 </div>
 
-## Respuesta Rápida
+## Respuesta rápida
 
-Para la mayoría de iglesias, compra el **Amazon Fire TV Stick 4K Max**. Tiene 16 GB de almacenamiento (el doble que la mayoría de sticks — importante para descargar lecciones para reproducción sin conexión), un procesador rápido, WiFi fuerte, y ejecuta Fire OS, que FreePlay soporta completamente.
+Para la mayoría de las iglesias, compra el **Amazon Fire TV Stick 4K Max**. Tiene 16 GB de almacenamiento (el doble que la mayoría de los sticks, lo cual es importante para descargar lecciones y reproducirlas sin conexión), un procesador rápido, Wi-Fi potente y funciona con Fire OS, que FreePlay soporta por completo.
 
-## Dispositivos Recomendados
+## Dispositivos recomendados
 
-| Dispositivo | Por qué | Dónde Comprar |
+| Dispositivo | Por qué | Dónde comprar |
 |---|---|---|
-| **Fire TV Stick 4K Max** — *mejor opción* | 16 GB de almacenamiento para descargas de lecciones sin conexión, stick más rápido, WiFi 6E, ejecuta Fire OS | [Amazon](https://www.amazon.com/dp/B0BP9SNVH9?tag=signpresenter-20) |
-| **Fire TV Stick 4K Plus** | Opción de rango medio sólido, ejecuta Fire OS | [Amazon](https://www.amazon.com/dp/B0F7Z4QZTT?tag=signpresenter-20) |
-| **Onn 4K Pro** (Walmart) | Caja Google TV de presupuesto con 32 GB de almacenamiento — excelente capacidad para lecciones sin conexión | [Walmart](https://www.walmart.com/ip/4K-PRO-STREAMING/18382213962) |
-| **Dispositivo de Transmisión 4K Onn** (Walmart) | Opción confiable más barata; ejecuta bien la versión de Android TV de FreePlay | [Walmart](https://www.walmart.com/ip/ONN-4K-STREAMING/18355665352) |
-| **Fire TV Stick HD (modelo 2024)** — *opción de presupuesto* | Alrededor de $20 en liquidación — genial para equipar varios aulas. 1080p y 8 GB de almacenamiento, que es suficiente para la mayoría de TVs de aula. **Compra solo el modelo 2024** — ver advertencia abajo | [Amazon](https://www.amazon.com/dp/B0CQMRKRV5?tag=signpresenter-20) |
-| **Apple TV 4K** | Opción premium; genial si tu iglesia ya está basada en Apple | [Apple](https://www.apple.com/apple-tv-4k/) |
+| **Fire TV Stick 4K Max**: *la mejor opción* | 16 GB de almacenamiento para descargas de lecciones sin conexión, el stick más rápido, Wi-Fi 6E, funciona con Fire OS | [Amazon](https://www.amazon.com/dp/B0BP9SNVH9?tag=signpresenter-20) |
+| **Fire TV Stick 4K Plus** | Una opción sólida de gama media, funciona con Fire OS | [Amazon](https://www.amazon.com/dp/B0F7Z4QZTT?tag=signpresenter-20) |
+| **Onn 4K Pro** (Walmart) | Caja económica de Google TV con 32 GB de almacenamiento: gran capacidad para lecciones sin conexión | [Walmart](https://www.walmart.com/ip/4K-PRO-STREAMING/18382213962) |
+| **Onn 4K Streaming Device** (Walmart) | La opción confiable más económica; funciona bien con la versión de FreePlay para Android TV | [Walmart](https://www.walmart.com/ip/ONN-4K-STREAMING/18355665352) |
+| **Fire TV Stick HD (modelo 2024)**: *opción económica* | Alrededor de $20 en oferta: ideal para equipar varios salones. 1080p y 8 GB de almacenamiento, más que suficiente para la mayoría de los televisores de salón. **Compra solo el modelo 2024**: ver la advertencia más abajo | [Amazon](https://www.amazon.com/dp/B0CQMRKRV5?tag=signpresenter-20) |
+| **Apple TV 4K** | Opción premium; ideal si tu iglesia ya usa productos Apple | [Apple](https://www.apple.com/apple-tv-4k/) |
 
-Solo compra de los enlaces anteriores (o los nombres de modelo exactos) — varios modelos Fire TV actuales se ven casi idénticos pero no pueden ejecutar FreePlay; ver la advertencia abajo.
+Compra solo desde los enlaces de arriba (o con los nombres exactos de los modelos): varios modelos actuales de Fire TV se ven casi idénticos pero no pueden ejecutar FreePlay; consulta la advertencia más abajo.
 
-Los Fire TV Sticks más antiguos que ya posees (Fire TV Stick 4K, modelos HD/Lite más antiguos) también funcionan — si el dispositivo ejecuta Fire OS y puede instalar aplicaciones de Amazon Appstore, puede ejecutar FreePlay.
+Los Fire TV Stick antiguos que ya tengas (Fire TV Stick 4K, modelos HD/Lite anteriores) también funcionan: si el dispositivo ejecuta Fire OS y puede instalar apps desde Amazon Appstore, puede ejecutar FreePlay.
 
-## ⚠️ Dispositivos a Evitar
+## ⚠️ Dispositivos que debes evitar
 
-- **Fire TV Stick HD (edición 2026)** y **Fire TV Stick 4K Select** — estos nuevos modelos de presupuesto ejecutan el nuevo **Vega OS** de Amazon en lugar de Fire OS. Vega OS no puede ejecutar aplicaciones de Fire OS, y FreePlay no está disponible para él. Con frecuencia son los sticks más baratos en el estante, lo que los hace tentadores — no los compres para FreePlay.
-- **Roku** — FreePlay no está disponible en dispositivos Roku.
+- **Fire TV Stick HD (edición 2026)** y **Fire TV Stick 4K Select**: estos nuevos modelos económicos ejecutan **Vega OS**, el nuevo sistema operativo de Amazon, en lugar de Fire OS. Vega OS no puede ejecutar apps de Fire OS, y FreePlay no está disponible para él. Suelen ser los sticks más baratos de la tienda, lo que los hace tentadores, pero no los compres para FreePlay.
+- **Roku**: FreePlay no está disponible en dispositivos Roku.
 
-:::warning Verifica la caja antes de comprar
-Amazon vende sticks Fire OS y Vega OS lado a lado a precios similares. Antes de comprar, confirma el modelo: **4K Max**, **4K Plus**, y el **Fire TV Stick HD 2024** ejecutan Fire OS (FreePlay funciona); el **Fire TV Stick HD 2026** y **4K Select** ejecutan Vega OS (FreePlay no funciona). Los dos sticks HD comparten el mismo nombre exacto — usa nuestro enlace anterior para obtener el modelo 2024. Amazon ha anunciado que los futuros Fire TV Sticks se moverán a Vega OS, así que si estás estandarizando en Fire TV, los modelos 4K Max y 4K Plus son los que debes tener en stock.
+:::warning Revisa la caja antes de comprar
+Amazon vende sticks con Fire OS y con Vega OS lado a lado, a precios similares. Antes de comprar, confirma el modelo: el **4K Max**, el **4K Plus** y el **Fire TV Stick HD de 2024** ejecutan Fire OS (FreePlay funciona); el **Fire TV Stick HD de 2026** y el **4K Select** ejecutan Vega OS (FreePlay no funciona). Los dos sticks HD tienen exactamente el mismo nombre: usa nuestro enlace de arriba para obtener el modelo 2024. Amazon ha anunciado que los futuros Fire TV Stick pasarán a Vega OS, así que si estás estandarizando en Fire TV, el 4K Max y el 4K Plus son los modelos que conviene tener en stock.
 :::
 
-## Por Qué el Almacenamiento Importa
+## Por qué importa el almacenamiento
 
-La superpotencia de FreePlay es reproducir lecciones **sin internet** el domingo por la mañana — los voluntarios pre-descargan el contenido de la semana, y los videos se reproducen desde el almacenamiento del dispositivo. Las lecciones descargadas pueden ocupar varios gigabytes, y el sistema operativo usa mucho del espacio anunciado de un dispositivo. Los 16 GB en el Fire TV Stick 4K Max dan espacio cómodo para múltiples semanas de contenido; los dispositivos de 8 GB funcionan pero pueden requerir borrar descargas antiguas más frecuentemente.
+La gran ventaja de FreePlay es reproducir lecciones **sin internet** el domingo por la mañana: los voluntarios descargan con antelación el contenido de la semana, y los videos se reproducen desde el almacenamiento del dispositivo. Las lecciones descargadas pueden ocupar varios gigabytes, y el sistema operativo usa gran parte del espacio anunciado del dispositivo. Los 16 GB del Fire TV Stick 4K Max dan espacio cómodo para varias semanas de contenido; los dispositivos de 8 GB funcionan, pero puede que necesites borrar descargas antiguas con más frecuencia.
 
-## Instalando FreePlay
+## Instalar FreePlay
 
-Una vez que tengas tu dispositivo, la instalación toma aproximadamente dos minutos — ver [Iniciando](./index.md):
+Una vez que tengas tu dispositivo, la instalación toma unos dos minutos: consulta [Primeros pasos](./index.md):
 
 - **Fire TV:** Amazon Appstore → busca "FreePlay" ([enlace directo](https://www.amazon.com/Live-Church-Solutions-FreePLay/dp/B0GMC4S3RS/))
-- **Android TV / Google TV (incl. Onn):** Google Play Store → busca "FreePlay" ([enlace directo](https://play.google.com/store/apps/details?id=church.freeplay))
+- **Android TV / Google TV (incluido Onn):** Google Play Store → busca "FreePlay" ([enlace directo](https://play.google.com/store/apps/details?id=church.freeplay))
 - **Apple TV:** App Store → busca "FreePlay" ([enlace directo](https://apps.apple.com/us/app/freeplay-church/id6758970546))
 
-## Artículos Relacionados
+## Artículos relacionados
 
-- [Iniciando](./index.md) — instalación y controles remotos
-- [Eligiendo un Modo de Emparejamiento](./pairing-modes.md) — conecta el TV a tu aula o planes
-- [Descargando Contenido](../classroom-mode/downloading-content.md) — reproducción sin conexión para el domingo por la mañana
+- [Primeros pasos](./index.md): instalación y controles remotos
+- [Elegir un modo de emparejamiento](./pairing-modes.md): conecta el televisor a tu salón o a tus planes
+- [Explorar y descargar contenido](../content-providers/browsing-content.md): reproducción sin conexión para el domingo por la mañana

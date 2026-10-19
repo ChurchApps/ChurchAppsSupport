@@ -6,21 +6,21 @@ title: "B1 Admin"
 
 <div class="article-intro">
 
-B1Admin est le tableau de bord d'administration de l'église -- une application monopage React construite avec Vite et Material-UI. Le personnel de l'église l'utilise pour gérer les personnes, les groupes, la présence, les donations, le contenu et plus.
+B1Admin est le tableau de bord d'administration de l'église -- une application monopage React construite avec Vite et Material-UI. Le personnel de l'église l'utilise pour gérer les personnes, les groupes, la présence, les dons, le contenu et bien plus encore.
 
 </div>
 
 <div class="prereqs">
-<h4>Avant de commencer</h4>
+<h4>Before You Begin</h4>
 
-- Installer **Node.js 22+** et **Git** -- voir [Prérequis](../setup/prerequisites)
-- Configurer votre cible API (staging ou local) -- voir [Variables d'environnement](../setup/environment-variables)
+- Installez **Node.js 22+** et **Git** -- voir [Prérequis](../setup/prerequisites)
+- Configurez votre cible d'API (démo ou locale) -- voir [Variables d'environnement](../setup/environment-variables)
 
 </div>
 
-## Configuration
+## Installation
 
-### 1. Cloner le référentiel
+### 1. Cloner le dépôt
 
 ```bash
 git clone https://github.com/ChurchApps/B1Admin.git
@@ -39,7 +39,7 @@ npm install
 cp dotenv.sample.txt .env
 ```
 
-Ouvrez `.env` et configurez les endpoints API. Vous pouvez les pointer vers l'API de staging ou votre instance d'API locale.
+Ouvrez `.env` et configurez les points de terminaison de l'API. Vous pouvez les faire pointer vers l'API de démonstration partagée (`https://api.demo.churchapps.org`) ou vers votre instance locale de l'API. Le fichier d'exemple peut encore répertorier d'anciennes URL de préproduction retirées ; remplacez-les.
 
 ### 4. Démarrer le serveur de développement
 
@@ -47,45 +47,45 @@ Ouvrez `.env` et configurez les endpoints API. Vous pouvez les pointer vers l'AP
 npm start
 ```
 
-Cela lance le serveur de développement Vite. L'application sera disponible dans votre navigateur avec le remplacement de module chaud activé.
+Cela lance le serveur de développement Vite. L'application sera disponible dans votre navigateur avec le rechargement à chaud (HMR) activé.
 
-## Variables d'environnement clés
+## Variables d'environnement principales
 
 | Variable | Description |
 |----------|-------------|
-| `REACT_APP_STAGE` | Nom de l'environnement (par exemple, `local`, `staging`, `prod`) |
-| `PORT` | Port du serveur de développement (défaut : `3101`) |
-| `REACT_APP_*_API` | URLs des endpoints API pour chaque module |
+| `REACT_APP_STAGE` | Nom de l'environnement (par ex. `demo` comme dans le fichier d'exemple, `prod` ou `selfhost`) |
+| `PORT` | Port du serveur de développement (par défaut : `3101`) |
+| `REACT_APP_*_API` | URL des points de terminaison de l'API pour chaque module |
 
 :::info
-Le script `postinstall` copie les fichiers de locale et CSS de `@churchapps/apphelper`. Si les composants semblent non stylisés, exécutez `npm run postinstall` manuellement.
+Le script `postinstall` copie les fichiers de locale et de CSS depuis `@churchapps/apphelper`. Si des composants apparaissent sans style, exécutez manuellement `npm run postinstall`.
 :::
 
-## Commandes clés
+## Commandes principales
 
 | Commande | Description |
 |---------|-------------|
 | `npm start` | Démarrer le serveur de développement Vite |
 | `npm run build` | Build de production via Vite |
-| `npm run test` | Exécuter les tests end-to-end avec Playwright |
+| `npm run test` | Exécuter les tests de bout en bout avec Playwright |
 | `npm run lint` | Exécuter ESLint avec correction automatique |
 
-## Pile technologique
+## Pile technique
 
 - **React 19** avec TypeScript
 - **Vite** pour les outils de build et le serveur de développement
-- **Material-UI 7** pour les composants UI
-- **React Query 5** pour l'état du serveur
-- Paquets **`@churchapps/apphelper*`** pour les composants partagés
+- **Material-UI 7** pour les composants d'interface
+- **React Query 5** pour l'état côté serveur
+- **`@churchapps/apphelper*`** -- paquets partagés de composants communs
 
 ## Déploiement
 
-Les builds de production sont déployés vers **S3 + CloudFront** :
+Les builds de production sont déployés sur **S3 + CloudFront** :
 
-1. `npm run build` génère les actifs statiques
-2. Les actifs sont synchronisés vers un bucket S3
-3. L'invalidation CloudFront est déclenchée pour servir la nouvelle version
+1. `npm run build` génère les ressources statiques
+2. Les ressources sont synchronisées vers un bucket S3
+3. Une invalidation CloudFront est déclenchée pour servir la nouvelle version
 
 :::tip
-Pour les instructions de déploiement détaillées, voir le guide [Déploiement des applications web](../deployment/web-apps).
+Pour des instructions de déploiement détaillées, consultez le guide [Déploiement de l'application web](../deployment/web-apps).
 :::

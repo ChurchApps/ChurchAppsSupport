@@ -6,7 +6,7 @@ title: "B1 Mobile"
 
 <div class="article-intro">
 
-B1 Mobile er den primære medlemsrettede mobilappen for ChurchApps, bygget med React Native og Expo. Den lar kirkemedlemmer se kataloger, få tilgang til gaver, sjekke oppmøte, motta varsler og samhandle med kirkemiljøet sitt.
+B1 Mobile er den primære mobilappen for medlemmer i ChurchApps, bygget med React Native og Expo. Den lar kirkemedlemmer se kataloger, få tilgang til gaver, registrere oppmøte, motta varsler og delta i kirkefellesskapet sitt.
 
 </div>
 
@@ -14,14 +14,14 @@ B1 Mobile er den primære medlemsrettede mobilappen for ChurchApps, bygget med R
 <h4>Før du begynner</h4>
 
 - Installer **Node.js** og **Expo CLI** -- se [Forutsetninger](../setup/prerequisites)
-- Installer **Android Studio** (for Android-emulator) eller **Xcode** (for iOS-simulator)
-- Konfigurer API-målet ditt (staging eller lokalt) -- se [Miljøvariabler](../setup/environment-variables)
+- Installer **Android Studio** (for Android-emulatoren) eller **Xcode** (for iOS-simulatoren)
+- Konfigurer API-målet ditt (demo eller lokalt) -- se [Miljøvariabler](../setup/environment-variables)
 
 </div>
 
 ## Oppsett
 
-1. Klon repositoriet:
+1. Klon repositoryet:
 
    ```bash
    git clone https://github.com/ChurchApps/B1Mobile.git
@@ -53,28 +53,28 @@ Du kan bruke **Expo Go**-appen på en fysisk enhet for rask testing uten å sett
 
 | Variabel | Beskrivelse |
 |----------|-------------|
-| `STAGE` | Miljøsteg (f.eks. `dev`, `staging`, `prod`) |
+| `STAGE` | Miljøtrinn (f.eks. `dev`, `staging`, `prod`) |
 | `CONTENT_ROOT` | Rot-URL for innholdslevering |
-| `MEMBERSHIP_API` | Membership API-endepunkt |
-| `MESSAGING_API` | Messaging API-endepunkt |
-| `ATTENDANCE_API` | Attendance API-endepunkt |
-| `GIVING_API` | Giving API-endepunkt |
-| `DOING_API` | Doing API-endepunkt |
-| `CONTENT_API` | Content API-endepunkt |
+| `MEMBERSHIP_API` | Membership-API-endepunkt |
+| `MESSAGING_API` | Messaging-API-endepunkt |
+| `ATTENDANCE_API` | Attendance-API-endepunkt |
+| `GIVING_API` | Giving-API-endepunkt |
+| `DOING_API` | Doing-API-endepunkt |
+| `CONTENT_API` | Content-API-endepunkt |
 | `LESSONS_ROOT` | Rot-URL for leksjonsinnhold |
 
 ## Viktige kommandoer
 
 | Kommando | Beskrivelse |
 |----------|-------------|
-| `npm start` | Start Expo-utviklingsserver |
+| `npm start` | Start Expo-utviklingsserveren |
 | `npm run android` | Kjør på Android-emulator |
 | `npm run ios` | Kjør på iOS-simulator |
 | `npm run test` | Kjør tester (Jest) |
 
-## Produksjonsbygginger
+## Produksjonsbygg
 
-Før du oppretter en produksjonsbygging, oppdater versjonsnumre i alle følgende filer:
+Før du oppretter et produksjonsbygg, oppdater versjonsnumrene i alle disse filene:
 
 - `package.json`
 - `app.config.js`
@@ -87,7 +87,7 @@ Før du oppretter en produksjonsbygging, oppdater versjonsnumre i alle følgende
 npm run build:android
 ```
 
-Dette bruker EAS Build for å opprette Android-binæren.
+Dette bruker EAS Build til å lage Android-binærfilen.
 
 ### iOS
 
@@ -97,17 +97,17 @@ eas build --platform ios --profile production
 
 ### OTA-oppdateringer
 
-For å sende en trådløs oppdatering (uten å gå gjennom appbutikkgjennomgang):
+For å sende en OTA-oppdatering (over the air, uten å gå gjennom gjennomgang i appbutikken):
 
 ```bash
 npm run update:production
 ```
 
 :::info
-OTA-oppdateringer er ideelle for endringer som kun gjelder JavaScript. Hvis du endrer native kode eller avhengigheter, må du sende inn en full butikkbygging i stedet.
+OTA-oppdateringer er ideelle for endringer som kun gjelder JavaScript. Hvis du endrer native kode eller avhengigheter, må du sende inn et fullstendig butikkbygg i stedet.
 :::
 
 ## Relaterte artikler
 
-- **[Mobildistribusjon](../deployment/mobile)** -- Fullstendig guide for bygging, innsending og distribusjon av mobilapper
-- **[Miljøvariabler](../setup/environment-variables)** -- Komplett referanse for mobilmiljøkonfigurasjon
+- **[Mobildistribusjon](../deployment/mobile)** -- Full veiledning for bygging, innsending og distribusjon av mobilapper
+- **[Miljøvariabler](../setup/environment-variables)** -- Fullstendig referanse for mobilmiljøkonfigurasjon

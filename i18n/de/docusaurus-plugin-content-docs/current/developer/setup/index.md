@@ -1,53 +1,55 @@
 ---
-title: "Setup"
+title: "Einrichtung"
 ---
 
-# Setup
+# Einrichtung
 
 <div class="article-intro">
 
-Dieser Abschnitt führt Sie durch das Setup einer lokalen Entwicklungsumgebung für ChurchApps-Projekte. Sie können entweder Ihr Frontend auf gemeinsame Staging-APIs zeigen für schnelle Entwicklung, oder den vollständigen Stack lokal für Backend-Arbeiten ausführen.
+Dieser Abschnitt führt Sie durch die Einrichtung einer lokalen Entwicklungsumgebung für ChurchApps-Projekte. Sie können Ihr Frontend für schnelle Entwicklung auf die gemeinsamen Demo-APIs ausrichten oder für Backend-Arbeiten den gesamten Stack lokal ausführen.
 
 </div>
 
-## Zwei Ansätze
+## Zwei Vorgehensweisen
 
-Es gibt zwei Wege zur Entwicklung lokal, je nachdem, wie viel des Stacks Sie benötigen:
+Es gibt zwei Wege zur lokalen Entwicklung, je nachdem, wie viel vom Stack Sie benötigen:
 
-### 1. Zu Staging-APIs zeigen (Am einfachsten)
+### 1. Auf die Demo-APIs zeigen (am einfachsten)
 
-Wenn Sie an einem **Frontend-Projekt** arbeiten (Web-App, Mobile-App oder Desktop-App), ist der schnellste Pfad, Ihr lokales App auf die gemeinsamen Staging-APIs zu zeigen. Kein Datenbank- oder Backend-Setup erforderlich.
+Wenn Sie an einem **Frontend-Projekt** arbeiten (Web-App, mobile App oder Desktop-App), ist der schnellste Weg, Ihre lokale App auf die gemeinsamen Demo-APIs zeigen zu lassen. Es ist keine Datenbank- oder Backend-Einrichtung nötig.
 
-Die Staging-API-Basis-URL ist:
-
-```
-https://api.staging.churchapps.org
-```
-
-Jedes API-Modul ist unter einem Pfad verfügbar, zum Beispiel:
+Die Basis-URL der Demo-API lautet:
 
 ```
-https://api.staging.churchapps.org/membership
-https://api.staging.churchapps.org/attendance
-https://api.staging.churchapps.org/giving
+https://api.demo.churchapps.org
 ```
+
+Jedes API-Modul ist unter einem Pfad unterhalb dieser Basis erreichbar, zum Beispiel:
+
+```
+https://api.demo.churchapps.org/membership
+https://api.demo.churchapps.org/attendance
+https://api.demo.churchapps.org/giving
+```
+
+Die Demo-Umgebung führt den neuesten Code aus `main` aus, und ihre Beispieldaten werden jede Nacht neu befüllt. Erwarten Sie daher nicht, dass dort Erstelltes dauerhaft erhalten bleibt. (Die frühere Staging-Umgebung `api.staging.churchapps.org` wurde eingestellt. Einige Beispiel-`.env`-Dateien verweisen womöglich noch auf Staging-URLs – ersetzen Sie diese durch die Demo- oder lokalen URLs.)
 
 :::tip
-Dieser Ansatz ermöglicht es Ihnen, in Minuten mit Frontend-Änderungen zu beginnen. Es ist der empfohlene Pfad für die meisten Beitragenden.
+Mit diesem Weg können Sie innerhalb weniger Minuten mit Frontend-Änderungen beginnen. Er ist für die meisten Mitwirkenden der empfohlene Weg.
 :::
 
 ### 2. Alles lokal ausführen
 
-Wenn Sie API-Code modifizieren oder offline arbeiten müssen, können Sie den vollständigen Stack lokal ausführen. Dies erfordert MySQL 8.0+ und zusätzliche Konfiguration. Siehe [API lokales Setup](../api/local-setup)-Leitfaden für detaillierte Anweisungen.
+Wenn Sie API-Code ändern oder offline arbeiten müssen, können Sie den gesamten Stack lokal ausführen. Dafür benötigen Sie MySQL 8.0 oder neuer und zusätzliche Konfiguration. Ausführliche Anleitungen finden Sie im Leitfaden zur [lokalen API-Einrichtung](../api/local-setup).
 
 ## Erste Schritte
 
-Folgen Sie diesen Seiten in Reihenfolge:
+Folgen Sie diesen Seiten in dieser Reihenfolge:
 
-1. **[Voraussetzungen](prerequisites)** — Installieren Sie die erforderlichen Werkzeuge (Node.js, Git, MySQL, usw.)
-2. **[Projekt-Übersicht](project-overview)** — Verstehen Sie, welche Projekte existieren und was sie tun
-3. **[Umgebungsvariablen](environment-variables)** — Konfigurieren Sie Ihre `.env`-Dateien, um alles zusammen zu verbinden
+1. **[Voraussetzungen](prerequisites)** – Installieren Sie die benötigten Werkzeuge (Node.js, Git, MySQL usw.)
+2. **[Projektübersicht](project-overview)** – Verstehen Sie, welche Projekte es gibt und was sie tun
+3. **[Umgebungsvariablen](environment-variables)** – Konfigurieren Sie Ihre `.env`-Dateien, um alles miteinander zu verbinden
 
 :::info
-Jedes ChurchApps-Projekt ist ein unabhängiges Git-Repository. Sie müssen nur die spezifischen Projekte klonen, die Sie bearbeiten möchten.
+Jedes ChurchApps-Projekt ist ein eigenständiges Git-Repository. Sie müssen nur die Projekte klonen, an denen Sie arbeiten möchten.
 :::

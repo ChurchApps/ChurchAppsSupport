@@ -66,4 +66,4 @@ Koppelingscodes verlopen na een bepaalde periode. Als u te lang wacht, genereert
 ## Gerelateerde Artikelen
 
 - **[Plan Mode Overview](./index.md)** - Begrijpen hoe Plan Mode verschilt van Classroom Mode
-- **[Playing Lessons](../classroom-mode/playing-lessons)** - Spelerbesturingselementen zijn in beide modi hetzelfde
+- **[Playing Lessons](../content-providers/playing-content)** - Spelerbesturingselementen zijn in beide modi hetzelfde

@@ -1,179 +1,160 @@
 ---
-title: "Self-Hosting with Docker"
+title: "Самостоятельное развертывание с Docker"
 ---
 
-# Self-Hosting with Docker
+# Самостоятельное развертывание с Docker
 
 <div class="article-intro">
 
-Run your own private instance of B1 Admin, the B1 member portal, the API, and a MySQL database on any machine with Docker — a home server, a $5 VPS, or an on-prem box. One `docker compose up` builds and starts everything. If you'd rather not manage a server at all, see [Self-Hosting on Railway](./railway-template) for the managed alternative.
+Запустите собственный приватный экземпляр B1 Admin, портала участников и сайта B1, API и базы данных MySQL на любой машине с Docker — домашнем сервере, небольшом VPS или локальном сервере. Одна команда устанавливает всё, одна команда обновляет, и каждое обновление сначала делает резервную копию. Если вы не хотите сами управлять сервером, см. [Самостоятельное развертывание на Railway](./railway-template) — это управляемая альтернатива.
 
 </div>
 
-## Quick Start
+## Быстрый старт
 
 <div class="prereqs">
-<h4>What You Need</h4>
+<h4>Что понадобится</h4>
 
-- [Docker Engine](https://docs.docker.com/engine/install/) with Compose v2 (included in Docker Desktop)
-- ~4 GB of RAM available during the initial build (the web apps are built from source)
-- Git, or just the raw `docker-compose.yml` file
+- Машина на Linux (или macOS / Windows с WSL или Git Bash — помощник `b1` является bash-скриптом) с [Docker Engine](https://docs.docker.com/engine/install/) и Compose v2 (входит в Docker Desktop)
+- Около 2 ГБ оперативной памяти и 5 ГБ диска
+- Для публичного сайта: доменное имя, направленное на машину, с доступными портами 80 и 443
 
 </div>
 
 ```bash
-git clone https://github.com/ChurchApps/B1Admin.git
-cd B1Admin
-docker compose up -d
+curl -fsSL https://raw.githubusercontent.com/ChurchApps/B1Admin/main/deploy/install.sh | bash -s -- --domain church.example.org
 ```
 
-The first run takes 10–20 minutes: it builds B1Admin from your clone and builds the API and B1App directly from their GitHub repositories. Subsequent starts are seconds.
+Если не указывать `--domain`, система будет работать по адресу `http://localhost`. Установщик создает папку `b1church`, записывает `.env` со свежесгенерированными секретами, загружает готовые образы из GitHub Container Registry и ждет, пока API сообщит, что работает нормально. Ничего не собирается на вашей машине, поэтому первый запуск занимает минуту или две.
 
-When all four services are up:
+После завершения:
 
-1. Open **http://localhost:3101** (B1 Admin).
-2. Click **Register** and create your account. The first account is automatically a server admin.
-3. Follow the in-app prompts to create your first church.
+1. Откройте **https://church.example.org/admin** (или http://localhost/admin) и нажмите **Register**. Первая учетная запись автоматически становится администратором сервера.
+2. Следуйте подсказкам в приложении, чтобы создать первую церковь. Её сайт и портал участников станут доступны по адресу **https://church.example.org/** сразу после создания.
 
-Database schemas are created automatically by the API container's startup migration — no manual SQL required.
+Всё работает за одним доменом:
 
-| Service | URL |
-|---------|-----|
-| B1Admin (staff/admin) | http://localhost:3101 |
-| B1App (member portal / website) | http://localhost:3000 |
-| API | http://localhost:8084 |
-| MySQL | internal only (`mysql:3306` on the compose network) |
+| Путь | Сервис |
+|------|---------|
+| `/` | B1App — сайт церкви и портал участников |
+| `/admin` | B1Admin — панель управления для сотрудников |
+| `/api` | API, загруженные файлы и websocket для обновлений в реальном времени |
 
-## Configuration
+HTTPS настраивается автоматически: встроенный прокси [Caddy](https://caddyserver.com/) получает и продлевает сертификат Let's Encrypt для домена из `.env`. Наружу открыты только порты 80 и 443; база данных доступна только изнутри сети Docker.
 
-All settings live in a `.env` file next to `docker-compose.yml`. Every variable has a working default for localhost, so the file is optional until you customize.
+## Команда `b1`
+
+Установщик оставляет скрипт `deploy/b1` рядом с `docker-compose.yml`. Для повседневной работы нужен только он:
+
+| Команда | Что делает |
+|---------|--------------|
+| `./deploy/b1 upgrade` | Загружает текущий релиз, делает резервную копию, перезапускает и проверяет, что API работает нормально |
+| `./deploy/b1 upgrade 2026.10.1` | То же, но с закреплением на конкретном релизе |
+| `./deploy/b1 backup` | Создает снимок базы данных, загруженных файлов и `.env` в `backups/<timestamp>/` |
+| `./deploy/b1 restore backups/<timestamp>` | Восстанавливает снимок (во время работы API остановлен) |
+| `./deploy/b1 rollback` | Восстанавливает последнюю резервную копию, включая релиз, на котором она была сделана |
+| `./deploy/b1 status` | Установленная версия и состояние контейнеров |
+| `./deploy/b1 logs api` | Отслеживать журналы сервиса |
+
+Релизы публикуются единым версионированным пакетом, поэтому три образа всегда соответствуют друг другу. `B1_VERSION=stable` в `.env` отслеживает последний релиз; укажите конкретную версию, чтобы закрепить её. Примечания к релизам находятся в разделе [B1Admin releases](https://github.com/ChurchApps/B1Admin/releases).
+
+## Настройка
+
+Все параметры находятся в `.env` рядом с `docker-compose.yml`. Установщик заполняет обязательные:
 
 ```bash
-# .env — everything is optional; shown with defaults
-MYSQL_ROOT_PASSWORD=churchapps
-JWT_SECRET=please-change-this-jwt-secret
-ENCRYPTION_KEY=PleaseChangeThisDockerDefaultKey   # exactly 32 characters
+B1_VERSION=stable
+DOMAIN=church.example.org
+SITE_ADDRESS=church.example.org          # what Caddy serves; http://localhost for a local install
+PUBLIC_URL=https://church.example.org    # how browsers and emails reach the site
+MYSQL_ROOT_PASSWORD=…                    # generated
+JWT_SECRET=…                             # generated
+ENCRYPTION_KEY=…                         # generated, exactly 32 characters — never change it after storing credentials
 
-# Public URLs (change these when exposing beyond localhost)
-API_URL=http://localhost:8084
-B1ADMIN_URL=http://localhost:3101
-B1APP_URL=http://localhost:3000
-SOCKET_URL=ws://localhost:8084
-
-# Email — see the Railway guide's Email section for provider walkthroughs
-MAIL_SYSTEM=
-SMTP_HOST=
-SMTP_USER=
-SMTP_PASS=
+# Email — strongly recommended; without it members can't reset their own passwords
+MAIL_SYSTEM=SMTP
+SMTP_HOST=smtp.resend.com
+SMTP_USER=resend
+SMTP_PASS=re_xxxxxxxxx
 SMTP_SECURE=false
-SUPPORT_EMAIL=noreply@yourchurch.org
+SUPPORT_EMAIL=noreply@church.example.org
 ```
 
-Before real use, change `MYSQL_ROOT_PASSWORD`, `JWT_SECRET`, and `ENCRYPTION_KEY` (any 32-character string).
+После изменения `.env` примените его командой `docker compose up -d`. Веб-приложения определяют, к какому API обращаться, по адресу в браузере, поэтому при смене домена нужно только обновить `SITE_ADDRESS` и `PUBLIC_URL` и перезапустить сервисы — пересборка не требуется.
 
 :::warning
-The `*_URL` values are **baked into the web apps at build time** (standard Vite/Next.js behavior). Changing them in `.env` requires a rebuild, not just a restart:
-
-```bash
-docker compose up -d --build
-```
+Храните `.env` в безопасности. `ENCRYPTION_KEY` защищает сохраненные учетные данные платежных шлюзов и хранилищ; резервная копия без него не сможет их расшифровать. Команда `./deploy/b1 backup` включает копию ключа по этой причине.
 :::
 
-Changing the MySQL password after first launch requires updating the password inside MySQL too — the volume keeps the old credentials.
+### Переход на домен позже
 
-## Exposing It to the Internet
+Если вы установили систему на `localhost` и позже хотите сделать её публичной: направьте DNS на машину, задайте в `.env` значения `DOMAIN`, `SITE_ADDRESS` (голый домен) и `PUBLIC_URL` (`https://` + домен), затем выполните `docker compose up -d`. Caddy получит сертификат при первом запросе.
 
-Put any reverse proxy in front and give each service a hostname. With [Caddy](https://caddyserver.com/) it's this:
+## Email, пожертвования, несколько сайтов и интеграции
 
-```
-admin.yourchurch.org { reverse_proxy localhost:3101 }
-app.yourchurch.org   { reverse_proxy localhost:3000 }
-api.yourchurch.org   { reverse_proxy localhost:8084 }
-```
+Всё работает так же, как на Railway — те же переменные окружения, но задаются в `.env` вместо панели Railway:
 
-Then set the URLs in `.env` and rebuild:
+- **[Email / SMTP](./railway-template#1-email-highly-recommended)** — пошаговые инструкции для провайдеров Resend, Brevo и Gmail
+- **[Несколько сайтов](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — неограниченное число церквей на одном экземпляре. `/` показывает церковь, чей slug равен `DEFAULT_CHURCH_SLUG` (первая церковь имеет slug `church`); направьте дополнительные домены на сервер и сопоставьте их в **Settings → Domains** в B1Admin
+- **[Онлайн-пожертвования](./railway-template#4-online-giving-stripe--paypal)** — настраиваются для каждой церкви в интерфейсе администратора
+- **[Дополнительные интеграции](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `WEB_PUSH_*`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 
-```bash
-API_URL=https://api.yourchurch.org
-B1ADMIN_URL=https://admin.yourchurch.org
-B1APP_URL=https://app.yourchurch.org
-SOCKET_URL=wss://api.yourchurch.org
-```
+Приглашения и другие письма от церкви на самостоятельно развернутом экземпляре включаются автоматически (размещенный сервис закрывает эти функции ручной проверкой, чтобы защитить репутацию отправителя).
 
-```bash
-docker compose up -d --build
-```
+## Данные, резервные копии и хранение файлов
 
-The WebSocket used for chat and live notifications shares the API's port, so `SOCKET_URL` is just the API URL with `wss://`.
+Все состояние хранится в трех именованных томах Docker:
 
-## Email, Giving, Multi-Site, and Integrations
-
-These work identically to the Railway deployment — the same environment variables, set in your `.env` file instead of the Railway dashboard (the compose file passes them through to the API):
-
-- **[Email / SMTP](./railway-template#1-email-highly-recommended)** — strongly recommended; without it members can't reset passwords
-- **[Multi-site](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — unlimited churches per instance, managed in the admin UI
-- **[Online giving](./railway-template#4-online-giving-stripe--paypal)** — configured per-church in the admin UI, not via env vars
-- **[Optional integrations](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `WEB_PUSH_PUBLIC_KEY`/`WEB_PUSH_PRIVATE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
-
-## Data, Backups, and File Storage
-
-Two named Docker volumes hold all state:
-
-| Volume | Contents |
+| Том | Содержимое |
 |--------|----------|
-| `mysql-data` | All database schemas |
-| `api-content` | Uploaded files — photos, documents, website images (mounted at `/app/content`) |
+| `b1church_mysql-data` | Все схемы базы данных |
+| `b1church_api-content` | Загруженные файлы — фото, документы, изображения сайта |
+| `b1church_caddy-data` | TLS-сертификаты |
 
-Back up the database with a one-liner (schedule it with cron):
+Команда `./deploy/b1 backup` записывает согласованный снимок первых двух томов и `.env` в `backups/<timestamp>/`. Настройте её запуск по расписанию через cron и копируйте папку за пределы машины:
 
-```bash
-docker compose exec mysql mysqldump -uroot -p"$MYSQL_ROOT_PASSWORD" --all-databases > backup-$(date +%F).sql
+```
+0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-Back up uploaded files by copying the volume:
+Для больших медиатек можно перевести хранение файлов на S3 — задайте `FILE_STORE=S3` и переменные `AWS_*`, описанные в разделе [File Storage руководства по Railway](./railway-template#5-file-storage). Резервные копии базы данных не включают объекты S3; включите версионирование в бакете.
+
+## Обновление
 
 ```bash
-docker run --rm -v b1admin_api-content:/data -v "$PWD":/backup alpine tar czf /backup/content-$(date +%F).tgz -C /data .
+./deploy/b1 upgrade
 ```
 
-For large media libraries you can switch file storage to S3 instead of the local volume — set `FILE_STORE=S3` plus the `AWS_*` variables described in the [Railway guide's File Storage section](./railway-template#5-file-storage).
+Последовательно выполняется: загрузка релиза, создание резервной копии, пересоздание контейнеров, применение ожидающих миграций базы данных при запуске API и ожидание проверки работоспособности API. Если что-то завершится ошибкой, процесс остановится и подскажет выполнить `./deploy/b1 rollback`, которая восстановит эту резервную копию и предыдущий релиз. Миграции работают только вперед; откат всегда означает восстановление снимка.
 
-## Updating
+Обновление с бета-версии compose-файла (той, что собирала образы из исходного кода) выполняется так же, когда у вас уже есть `.env`: по умолчанию там использовался `MYSQL_ROOT_PASSWORD=churchapps`, поэтому добавьте это значение в `.env` вместе с `PUBLIC_URL` и `SITE_ADDRESS`, замените `docker-compose.yml` и `deploy/` на актуальные файлы и выполните `./deploy/b1 upgrade`.
 
-The API and B1App build from the `main` branch of their GitHub repos; B1Admin builds from your local clone.
+## Сборка из исходного кода
+
+Разработчики могут собирать образы локально вместо загрузки готовых:
 
 ```bash
-git pull                              # update B1Admin
-docker compose build --pull           # rebuild all images against latest main
-docker compose up -d
+docker compose -f docker-compose.yml -f docker-compose.build.yml up -d --build
 ```
 
-Database migrations run automatically when the API container starts.
+`API_CONTEXT` и `B1APP_CONTEXT` в `.env` указывают сборкам на локальные копии репозиториев (например, `../Api`) или на git-ref.
 
-To pin versions instead of tracking `main`, point the build contexts at a tag in `.env`:
+## Устранение неполадок
 
-```bash
-API_CONTEXT=https://github.com/ChurchApps/Api.git#v1.2.3
-B1APP_CONTEXT=https://github.com/ChurchApps/B1App.git#v1.2.3
-```
+| Симптом | Вероятная причина | Решение |
+|---------|--------------|---------|
+| Контейнер `api` постоянно перезапускается | ошибка миграции или неверный пароль базы данных | `./deploy/b1 logs api` — миграция покажет, какой модуль завершился с ошибкой |
+| `api` пишет в журнал "ENCRYPTION_KEY must be exactly 32 characters" | ключ в `.env` отредактирован вручную или обрезан | восстановите исходный 32-символьный ключ (создавайте новый, только если учетные данные еще не сохранены) |
+| Браузер показывает предупреждение о сертификате | DNS еще не указывает сюда или порты 80/443 заблокированы | исправьте DNS / брандмауэр; Caddy повторит попытку сам |
+| `/` показывает панель управления вместо сайта | церкви еще нет или `DEFAULT_CHURCH_SLUG` не совпадает | создайте церковь или задайте slug в **Settings → Church** |
+| «Check your email», но письмо не приходит | `MAIL_SYSTEM=SMTP` с неверными учетными данными | исправьте учетные данные или удалите `MAIL_SYSTEM`, чтобы отключить email |
+| Чат и функции реального времени не работают | websocket заблокирован другим прокси перед сервером | сокет работает по пути `/api/` на том же порту; разрешите заголовки `Upgrade` |
+| `install` отказывается работать: "database volume already exists" | остатки от предыдущей установки | `docker compose down -v`, чтобы удалить их, или создайте `.env` и используйте `upgrade` |
 
-Developers can point the same variables at local checkouts (e.g. `API_CONTEXT=../Api`).
+Всё ещё не получается? Создайте задачу на [github.com/ChurchApps/ChurchAppsSupport/issues](https://github.com/ChurchApps/ChurchAppsSupport/issues), приложив вывод команды `./deploy/b1 logs`.
 
-## Troubleshooting
+## Связанные статьи
 
-| Symptom | Likely cause | Fix |
-|---------|--------------|-----|
-| `api` container restarts in a loop | MySQL not ready or migration failure | `docker compose logs api` — the migration prints which module failed |
-| Login redirects to `api.churchapps.org` | Web app built without the `custom` stage args | Rebuild: `docker compose build --no-cache b1admin b1app` |
-| Changed a URL in `.env` but nothing happened | URLs are baked at build time | `docker compose up -d --build` |
-| "Check your email" but no email arrives | `MAIL_SYSTEM=SMTP` with bad credentials | Fix credentials, or unset `MAIL_SYSTEM` to disable email |
-| Chat / live features silent | `SOCKET_URL` unreachable from the browser | Must be `wss://` behind HTTPS and proxied to port 8084 |
-| Build dies on a small VPS | Out of memory during `next build` | Add swap, or build on another machine and `docker save`/`load` |
-
-Still stuck? Open an issue at [github.com/ChurchApps/ChurchAppsSupport/issues](https://github.com/ChurchApps/ChurchAppsSupport/issues) with the output of `docker compose logs`.
-
-## Related Articles
-
-- **[Self-Hosting on Railway](./railway-template)** — managed hosting alternative, plus the shared post-deploy configuration guides
-- **[Initial Setup](../../getting-started/initial-setup)** — first steps after your church is created
-- **[Local API Setup](../api/local-setup)** — running the stack directly for development
+- **[Самостоятельное развертывание на Railway](./railway-template)** — альтернатива с управляемым хостингом и общими руководствами по настройке после развертывания
+- **[Первоначальная настройка](../../getting-started/initial-setup)** — первые шаги после создания церкви
+- **[Локальная настройка API](../api/local-setup)** — запуск стека напрямую для разработки

@@ -22,10 +22,10 @@ Base path: `/membership/people`
 | GET | `/:id` | JWT | People.View or own record | Get a person by ID (includes form submissions) |
 | GET | `/ids?ids=` | JWT | People.View or Member | Get multiple people by comma-separated IDs |
 | GET | `/basic?ids=` | JWT | — | Get basic info (name only) for multiple people |
-| GET | `/names?ids=` | JWT | Any church permission | `[{ id, name: { display }, photo }]` for comma-separated ids the caller already has, so roles without People.View (donations, attendance) can label people. No search, no directory filter |
+| GET | `/names?ids=` | JWT | Any church permission | `[{ id, name: { display, first, last }, photo }]`, sorted by last name then first name, for comma-separated ids the caller already has, so roles without People.View (donations, attendance) can label people. No search, no directory filter |
 | POST | `/names` | JWT | Any church permission | Same as `GET /names`. Body: `{ peopleIds }` (or `{ ids }`) |
-| GET | `/recent` | JWT | People.View or Member | Recently added people |
-| GET | `/search?term=&email=` | JWT | People.View or Member | Search people by name or email |
+| GET | `/recent` | JWT | People.View, Member, or People.ViewNames | Recently added people. People.ViewNames-only callers get the basic model (`id`, `name.display`, `photo`, `membershipStatus`) with opted-out people left out |
+| GET | `/search?term=&email=` | JWT | People.View, Member, or People.ViewNames | Search people by name or email (up to 100, sorted by last name then first name). People.ViewNames-only callers get a name search returning the basic model; an `email` search returns `[]` |
 | GET | `/search/phone?number=` | JWT | People.View or Member | Search by phone number |
 | GET | `/search/group?groupId=` | JWT | People.View or Member | Get people in a specific group |
 | GET | `/household/:householdId` | JWT | — | Get all people in a household |
@@ -34,7 +34,7 @@ Base path: `/membership/people`
 | GET | `/directory/:id` | JWT | — | Get person for directory view (respects visibility preferences) |
 | GET | `/claim/:churchId` | JWT | — | Claim a person record for the current user at a church |
 | POST | `/` | JWT | People.Edit or EditSelf | Create or update people (batch) |
-| POST | `/search` | JWT | People.View or Member | Search people (POST variant) |
+| POST | `/search` | JWT | People.View, Member, or People.ViewNames | Search people (POST variant). Body: `{ term }` or `{ email }`; same names-only rules as `GET /search` |
 | POST | `/advancedSearch` | JWT | People.View or Member | Multi-condition search (age, birthMonth, membershipStatus, etc.) |
 | POST | `/loadOrCreate` | Public | — | Find or create a person by email. Body: `{ churchId, email, firstName, lastName }` |
 | POST | `/household/:householdId` | JWT | People.Edit | Update household member assignments |
@@ -202,6 +202,8 @@ Base path: `/membership/permissions`
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | Get the full list of available permissions |
+
+Each entry has `apiName`, `section` (content type), `action`, and the `displaySection` / `displayAction` labels B1Admin's role editor shows. Recent additions: `MembershipApi` / `People` / `View Names` (**View People Names Only**, under People and Groups) and `GivingApi` / `Donations` / `Enter` (**Enter Donations**, under Donations; see [Donation Batches](./giving.md#donation-batches)).
 
 ## Forms
 

@@ -34,7 +34,7 @@ Use a Node version manager like [nvm](https://github.com/nvm-sh/nvm) (macOS/Linu
 
 ## Backend API Development
 
-If you plan to run the API locally (rather than pointing to staging):
+If you plan to run the API locally (rather than pointing to the demo APIs):
 
 | Tool | Version | Notes |
 |------|---------|-------|

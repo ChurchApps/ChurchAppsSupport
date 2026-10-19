@@ -1,64 +1,64 @@
 ---
-title: "Spendennachweise"
+title: "Spendenbescheinigungen"
 ---
 
-# Spendennachweise
+# Spendenbescheinigungen
 
 <div class="article-intro">
 
-Am Ende jedes Jahres benötigen Ihre Spender eine Zusammenfassung ihrer steuerabzugsfähigen Spenden für ihre Aufzeichnungen. B1 Admin macht es einfach, diese Aussagen auf einmal für alle Spender zu generieren, was Ihnen Stunden manuelle Arbeit spart.
+Am Ende jedes Jahres benötigen Ihre Geber eine Übersicht ihrer steuerlich absetzbaren Spenden für ihre Unterlagen. B1 Admin macht es einfach, diese Bescheinigungen für alle Geber auf einmal zu erstellen, und spart Ihnen viele Stunden manueller Arbeit.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Überprüfen Sie, dass Ihre [Fonds](funds.md) korrekt als **Steuerabzugsfähig** markiert sind -- nur Spenden zu steuerabzugsfähigen Fonds erscheinen auf Aussagen
-- Stellen Sie sicher, dass alle Spenden [eingetragen](recording-donations.md) wurden und alle Online-Transaktionen [aus Stripe importiert](stripe-import.md) wurden
+- Prüfen Sie, ob Ihre [Fonds](funds.md) korrekt als **Steuerlich absetzbar** markiert sind – nur Spenden an steuerlich absetzbare Fonds erscheinen auf den Bescheinigungen
+- Stellen Sie sicher, dass alle Spenden [erfasst](recording-donations.md) und alle Online-Transaktionen [aus Stripe importiert](stripe-import.md) wurden
 
 </div>
 
-## Zugriff auf Spendennachweise
+## Spendenbescheinigungen aufrufen
 
-1. In **B1 Admin** öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links) und erweitern Sie **Spenden**.
-2. Klicken Sie auf **Spendennachweise**. Die Seite **Spendennachweise im Stapel** öffnet sich.
+1. Öffnen Sie in **B1 Admin** das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (das Suchfeld oben links) und klappen Sie **Spenden** auf.
+2. Klicken Sie auf **Spendenbescheinigungen**. Die Seite **Stapelweise Spendenbescheinigungen** öffnet sich.
 
-## Aussagen generieren
+## Bescheinigungen erstellen
 
-1. Wählen Sie im Bereich **Jahr auswählen** das **Jahr** aus der Dropdown-Liste. Sie können das aktuelle Jahr oder eines der fünf vorherigen Jahre wählen.
-2. Der Bereich **Zusammenfassung** darunter zeigt Statistiken für dieses Jahr an, einschließlich:
-   - **Gesamtspender** -- die Anzahl der Personen, die gegeben haben
-   - **Gesamtspenden** -- die Anzahl der einzelnen Spendendatensätze
-   - **Gesamtbetrag** -- der kombinierte Dollarbetrag aller Spenden
+1. Wählen Sie im Bereich **Jahr auswählen** im Auswahlmenü das **Jahr** aus. Sie können das laufende Jahr oder eines der fünf vorangegangenen Jahre wählen.
+2. Die Seite lädt nur die Spenden mit einem Datum in diesem Jahr (1. Januar bis 31. Dezember). Dadurch öffnet sie sich schnell, selbst wenn Ihre Gemeinde eine lange Spendenhistorie hat. Wenn Sie ein anderes Jahr wählen, aktualisiert sich die Übersicht mit den Spenden dieses Jahres. Der Bereich **Übersicht** unterhalb des Jahres zeigt Kennzahlen für dieses Jahr, darunter:
+   - **Geber insgesamt** – die Anzahl der Personen, die gegeben haben
+   - **Spenden insgesamt** – die Anzahl der einzelnen Spendendatensätze
+   - **Gesamtbetrag** – der gesamte Betrag aller Gaben in Euro
 
-## Aussagen herunterladen
+## Bescheinigungen herunterladen
 
-Der Bereich **Download-Optionen** bietet Ihnen zwei Möglichkeiten, Aussagen an Ihre Spender zu bekommen:
+Der Bereich **Downloadoptionen** bietet zwei Möglichkeiten, Bescheinigungen an Ihre Geber zu bringen:
 
 ### Als CSV-Dateien herunterladen
 
-Klicken Sie unter **Einzelne CSV-Dateien** auf **ZIP herunterladen**, um eine ZIP-Datei mit einer einzelnen CSV-Datei für jeden Spender herunterzuladen. Dies ist nützlich, wenn Sie Aussagen einzeln per E-Mail versenden oder in ein anderes System importieren möchten.
+Klicken Sie unter **Einzelne CSV-Dateien** auf **ZIP herunterladen**, um eine ZIP-Datei mit einer eigenen CSV-Datei für jeden Geber zu laden. Das ist nützlich, wenn Sie Bescheinigungen einzeln per E-Mail versenden oder in ein anderes System importieren möchten.
 
-### Alle Aussagen drucken
+### Alle Bescheinigungen drucken
 
-Klicken Sie unter **Druckbare Aussagen** auf **Alle drucken** (die Schaltfläche zeigt die Anzahl der Aussagen), um eine druckbare Ansicht jeder Spender-Aussage in Ihrem Browser zu öffnen. Von dort aus verwenden Sie die Druckfunktion Ihres Browsers, um sie an einen Drucker zu senden. Jede Aussage wird auf einer neuen Seite begonnen, damit sie bereit zum Falten und Verschicken sind.
+Klicken Sie unter **Druckbare Bescheinigungen** auf **Alle drucken** (die Schaltfläche zeigt die Anzahl der Bescheinigungen an). So öffnen Sie in Ihrem Browser eine druckbare Ansicht der Bescheinigung jedes Gebers für das gewählte Jahr. Verwenden Sie dann die Druckfunktion Ihres Browsers, um sie an einen Drucker zu senden. Jede Bescheinigung beginnt auf einer neuen Seite, sodass sie zum Falten und Versenden bereit ist. Die Bescheinigungen sind nach Nachname und anschließend Vorname des Gebers sortiert.
 
-Wenn Sie unter [Website > Erscheinungsbild](../website/appearance.md) ein **Logo für helle Hintergründe** hochgeladen haben, wird es zentriert oben auf jeder Aussage gedruckt, über dem Titel der Aussage. Dies gilt sowohl für **Alle drucken** als auch für die Aussage eines einzelnen Spenders, die aus dessen Datensatz gedruckt wird.
+Wenn Sie unter [Website > Erscheinungsbild](../website/appearance.md) ein **Logo für helle Hintergründe** hochgeladen haben, wird es zentriert oben auf jeder Bescheinigung gedruckt, über dem Titel der Bescheinigung. Das gilt sowohl für **Alle drucken** als auch für die Bescheinigung eines einzelnen Gebers, die aus dessen Datensatz gedruckt wird.
 
 :::tip
-Führen Sie Ihre Aussagen Anfang Januar aus, während Ihre Aufzeichnungen frisch sind. Überprüfen Sie doppelt, dass Ihre Fonds korrekt als steuerabzugsfähig markiert sind, bevor Sie Aussagen generieren -- nur Spenden zu steuerabzugsfähigen Fonds sind enthalten.
+Erstellen Sie Ihre Bescheinigungen früh im Januar, solange die Unterlagen noch frisch sind. Prüfen Sie vor dem Erstellen unbedingt, ob Ihre Fonds korrekt als steuerlich absetzbar markiert sind – nur Spenden an steuerlich absetzbare Fonds werden berücksichtigt.
 :::
 
 :::info
-Spendennachweise enthalten nur Spenden, die Fonds zugewiesen werden, bei denen die Einstellung **Steuerabzugsfähig** aktiviert ist. Wenn ein Fonds nicht als steuerabzugsfähig markiert ist, werden seine Spenden nicht auf der Aussage angezeigt. Sie können diese Einstellung auf der Seite [Fonds](funds.md) verwalten.
+Spendenbescheinigungen enthalten nur Spenden, die Fonds mit aktivierter Einstellung **Steuerlich absetzbar** zugeordnet sind. Ist ein Fonds nicht als steuerlich absetzbar markiert, erscheinen seine Spenden nicht auf der Bescheinigung. Diese Einstellung verwalten Sie auf der Seite [Fonds](funds.md).
 :::
 
-## Empfangsformate für Kanada, Australien und Neuseeland
+## Quittungsformate für Kanada, Australien und Neuseeland
 
-Kirchen außerhalb der Vereinigten Staaten können die Aussage zu ihrer offiziellen Länder-Empfangsvorlage wechseln. Klicken Sie oben auf der Seite Spendennachweise auf **Aussage-Format** (oder gehen Sie zu **Einstellungen**, öffnen Sie den Bereich **Spenden**) und legen Sie **Aussage-Format** auf **Kanada**, **Australien** oder **Neuseeland** fest, füllen Sie dann die Felder aus, die erscheinen: Ihre Registrierungsnummer (CRA-Registrierungsnummer, ABN oder NZ-Wohltätigkeitsregistrierungsnummer), Ihre Organisations-Adresse, der Name der Person, die authorisiert ist, Empfänge zu signieren, und für Kanada die Stadt, in der Empfänge ausgegeben werden.
+Gemeinden außerhalb der Vereinigten Staaten können die Bescheinigung auf das offizielle Quittungsformat ihres Landes umstellen. Klicken Sie oben auf der Seite Spendenbescheinigungen auf **Bescheinigungsformat** (oder öffnen Sie **Einstellungen** und den Bereich **Spenden**). Setzen Sie **Bescheinigungsformat** auf **Kanada**, **Australien** oder **Neuseeland** und füllen Sie anschließend die eingeblendeten Felder aus: Ihre Registrierungsnummer (CRA-Registrierungsnummer, ABN oder NZ-Registrierungsnummer für Wohltätigkeitsorganisationen), die Anschrift Ihrer Organisation, den Namen der Person, die berechtigt ist, Quittungen zu unterzeichnen, und für Kanada den Ort, an dem Quittungen ausgestellt werden.
 
-Aussagen tragen dann die Formulierung, die Ihre Steuerbehörde erwartet (für Kanada, „Offizieller Empfang für Einkommensteuerzwecke" mit der CRA-Referenz), eine Empfängsnummer in der Form `JAHR-SPENDERID`, den berechtigten Betrag, der nur aus steuerabzugsfähigen Fonds zählt, und eine separate Zeile für alle Geschenke zu nicht abzugsfähigen Fonds. Spender sehen den gleichen Empfangs-Block, wenn sie ihre eigene Aussage von B1.church drucken.
+Die Bescheinigungen enthalten dann den Wortlaut, den Ihre Steuerbehörde erwartet (für Kanada „Official Receipt for Income Tax Purposes“ mit der CRA-Referenz), eine Quittungsnummer im Format `YEAR-DONORID`, den berücksichtigungsfähigen Betrag, der nur aus steuerlich absetzbaren Fonds stammt, und eine eigene Zeile für Gaben an nicht absetzbare Fonds. Geber sehen denselben Quittungsblock, wenn sie ihre eigene Bescheinigung über B1.church drucken.
 
 ## Nächste Schritte
 
-Wenn Sie Spendendetails vor der Generierung von Aussagen überprüfen müssen, besuchen Sie die Seite [Spendenbericht](donation-reports.md) oder überprüfen Sie einzelne [Bündel](batches.md).
+Wenn Sie Spendendetails prüfen möchten, bevor Sie Bescheinigungen erstellen, besuchen Sie die Seite [Spendenberichte](donation-reports.md) oder sehen Sie die einzelnen [Stapel](batches.md) durch.

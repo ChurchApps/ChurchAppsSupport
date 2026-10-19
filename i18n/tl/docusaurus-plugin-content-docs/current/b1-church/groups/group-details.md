@@ -1,77 +1,101 @@
 ---
-title: "Mga Detalye ng Group"
+title: "Mga Detalye ng Grupo"
 ---
 
-# Mga Detalye ng Group
+# Mga Detalye ng Grupo
 
 <div class="article-intro">
 
-Kapag nag-click ka ng group mula sa groups page, dadalhin ka sa pahina ng detalye ng group. Nakadepende sa kung naka-log in ka o hindi ang nakikita mo, at may karagdagang seksyon at feature ang mga naka-log in na miyembro.
+Kapag na-click mo ang isang grupo mula sa pahina ng mga grupo, dadalhin ka sa detail page ng grupo. Ang makikita mo ay depende kung naka-log in ka o hindi, at ang mga naka-log in na miyembro ay nakakakita ng karagdagang seksyon at feature.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Maghanap ng group na titingnan sa pamamagitan ng [pag-browse ng mga group](./browsing-groups.md).
+- Maghanap ng grupong titingnan sa pamamagitan ng [pag-browse ng mga grupo](./browsing-groups.md).
 - Para sa buong access sa bawat seksyon, [mag-log in](../getting-started/logging-in.md) sa iyong account.
 
 </div>
 
-## Visitor View (Hindi Naka-log In)
+## Tanaw ng Bisita (Hindi Naka-log In)
 
 Kung hindi ka naka-log in, makikita mo ang sumusunod:
 
-- **Header** -- Ang pangalan ng group kasama ang oras at lugar ng pagpupulong. Sa computer, lumalabas sa itaas nito ang larawan ng group.
-- **Sign in to join** -- Isang button sa ilalim ng pangalan ng group. Mag-sign in (o gumawa ng account) upang sumali sa group o humiling na sumali. Pagkatapos mong mag-sign in, ibabalik ka sa group at dederetso sa hakbang ng pagsali.
-- **About** -- Ang buong paglalarawan ng group na nagpapaliwanag sa layunin nito at kung ano ang aasahan.
-- **Leaders** -- Ang mga pangalan ng mga lider ng group. Maaari mong i-tap ang pangalan ng lider upang tingnan ang kanilang profile.
-- **Upcoming Events** -- Hanggang tatlong paparating na event ng group, bawat isa ay nagpapakita ng petsa, oras, at pamagat ng event, na may link na **Register** kapag tumatanggap ng registration ang event. Kung walang paparating na event ang group, nakatago ang seksyong ito.
+- **Header** -- Ang pangalan ng grupo kasama ang oras ng pagtitipon at lokasyon nito. Sa computer, lumalabas sa itaas nito ang larawan ng grupo.
+- **Mag-sign in para sumali** -- Isang button sa ilalim ng pangalan ng grupo. Mag-sign in (o gumawa ng account) para sumali sa grupo o humiling na sumali. Pagkatapos mag-sign in, ibabalik ka sa grupo at diretsong dadalhin sa hakbang ng pagsali.
+- **Tungkol** -- Ang buong paglalarawan ng grupo na nagpapaliwanag ng layunin nito at kung ano ang aasahan.
+- **Mga Lider** -- Ang mga pangalan ng mga lider ng grupo. Maaari mong i-tap ang pangalan ng lider para makita ang kanilang profile.
+- **Mga Paparating na Event** -- Hanggang tatlong paparating na event ng grupo, bawat isa ay nagpapakita ng petsa, oras, at pamagat ng event, kasama ang link na **Register** kapag tumatanggap ng pagpapatala ang event. Kung walang paparating na event ang grupo, nakatago ang seksyong ito.
 
-## Member View (Naka-log In)
+## Tanaw ng Miyembro (Naka-log In)
 
-Kung naka-log in ka ngunit hindi miyembro ng group, makikita mo ang header ng group at ang seksyong **About** kasama ang opsyon sa pagsali sa group (tingnan ang [Joining a Group](#joining-a-group) sa ibaba). Lalabas ang mga seksyong inilalarawan sa susunod kapag miyembro ka na.
+Kung naka-log in ka pero hindi miyembro ng grupo, makikita mo ang header ng grupo at ang seksyong **Tungkol** kasama ang opsyong sumali sa grupo (tingnan ang [Pagsali sa Grupo](#joining-a-group) sa ibaba). Lalabas ang mga seksyong ilalarawan sa susunod kapag miyembro ka na.
 
-Kapag miyembro ka, ipinapakita ng header ng group ang pangalan nito, araw, oras, at lugar ng pagpupulong, at button na **Open chat** kung in-on ng iyong simbahan ang group chat. Kung ikaw ang lider ng group, lalabas ang tag na **You · Leader** sa ilalim ng pangalan. Sa computer, nasa kaliwang column ang header kasama ang larawan ng group, at nasa kanan nito ang mga seksyon.
+Kapag miyembro ka, ipinapakita ng header ng grupo ang pangalan nito, araw ng pagtitipon, oras, at lokasyon, at isang button na **Buksan ang chat** kung na-enable ng iyong simbahan ang group chat. Kung ikaw ang lider ng grupo, lalabas ang tag na **Ikaw · Lider** sa ilalim ng pangalan. Sa computer, nasa kaliwang column ang header kasama ang larawan ng grupo, at nasa kanan nito ang mga seksyon.
 
-Ang pahina ay isang sheet ng mga seksyon. Bawat isa ay nagpapakita ng maikling preview, at isang link sa header ng seksyon ang nagbubukas ng buong view; i-tap ang **Back to** *pangalan ng group* upang bumalik. Ang mga available na seksyon ay:
+Isang pahina ng mga seksyon ang detail page. Bawat isa ay nagpapakita ng maikling preview, at ang link sa header ng seksyon ay nagbubukas ng buong view; i-tap ang **Bumalik sa** *pangalan ng grupo* para bumalik. Ito ang mga available na seksyon:
 
-- **Next event** -- Ang susunod na paparating na event ng group, kasama ang mga button na **Going** / **Maybe** / **Can't go** (tingnan ang [Event RSVPs](./event-rsvps.md)). I-tap ang **All events** upang buksan ang kalendaryo ng group: gamitin ang mga arrow upang lumipat ng buwan, at lumipat sa pagitan ng **Calendar** (grid ng buwan kung saan i-tap ang isang araw upang makita ang mga event nito) at **List** (ang mga event ng buwan ayon sa petsa, nakapangkat ayon sa araw). Kapag tinitingnan mo ang kasalukuyang buwan, nagsisimula ang listahan sa araw ngayon, kaya ipinapakita lamang nito ang mga paparating pa. Kung may tag ang mga event ng group, maaari kang mag-filter ayon sa tag.
-- **This week's lesson** -- Kung nauugnay ang iyong group sa isang uri ng plano ng Lessons.church at may nilalamang pang-uwi para sa mga magulang ang lesson ngayong linggo, lalabas ito sa ilalim ng **Next event** (para sa mga miyembro lamang).
-- **Messages** -- Ang pinakabagong mensahe mula sa group chat. I-tap ang **Open chat** upang magbasa at magpost. Para lamang sa mga miyembro ipinapakita, at kung in-on lang ng iyong simbahan ang group chat para sa group na ito. Tingnan ang [Group Conversations](./conversations.md) para sa mas maraming detalye.
-- **Members** -- Preview ng mga miyembro ng group (mga lider muna) at bilang ng mga miyembro at lider. I-tap ang **All members** para sa buong listahan, na maaari mong hanapin gamit ang **Search Members**. I-tap ang pangalan ng miyembro upang bisitahin ang kanyang profile sa [member directory](../community/member-directory.md).
-- **Resources** -- Ang unang ilang file at link na ibinahagi para sa group. I-tap ang **All resources** upang makita silang lahat; maaari mong i-download ang mga na-upload na file o buksan ang mga naka-link na resource.
-- **Plans** -- Ang susunod na service plan ng group. I-tap ang **All plans** upang makita silang lahat. Lalabas lamang kung may mga plano ang group.
-- **Attendance** -- Nakikita lamang ng mga lider ng group (at mga staff na may attendance permission). Ipinapakita kung kailan huling kinuha ang attendance; i-tap ang **Take attendance** upang itala kung sino ang dumalo sa pagpupulong ng group.
-- **About** -- Ang buong paglalarawan ng group, na ipinapakita nang may rich text formatting. Lalabas lamang kung may paglalarawan ang group.
+- **Susunod na event** -- Ang susunod na paparating na event ng grupo, kasama ang mga button na **Pupunta** / **Baka** / **Hindi makakapunta** (tingnan ang [Mga RSVP sa Event](./event-rsvps.md)). I-tap ang **Lahat ng event** para buksan ang kalendaryo ng grupo: gamitin ang mga arrow para lumipat ng buwan, at magpalit sa pagitan ng **Kalendaryo** (isang month grid kung saan i-tap ang isang araw para makita ang mga event nito) at **Listahan** (mga event ng buwan ayon sa petsa, nakapangkat kada araw). Kapag nasa kasalukuyang buwan ka, magsisimula ang listahan sa araw ngayon, kaya ipinapakita lang nito ang mga paparating pa. Kung may tag ang mga event ng grupo, maaari mo itong i-filter ayon sa tag.
+- **Lesson ngayong linggo** -- Kung ang grupo mo ay nauugnay sa isang Lessons.church plan type at may take-home content ng magulang ang lesson ngayong linggo, lalabas ito sa ilalim ng **Susunod na event** (para sa mga miyembro lang).
+- **Mga Pagpupulong** -- Ang mga kamakailang pagpupulong ng grupo, pinakabago muna. Bawat isa ay nagpapakita ng petsa, kung ilan ang dumalo (halimbawa, "8 sa 12 ang dumalo") o **Paparating** para sa petsang hindi pa dumarating, at ang tala ng lider para sa pagpupulong na iyon, kasama ang anumang bold na teksto, listahan, at link. I-tap ang **Lahat ng pagpupulong** para makita silang lahat. Lalabas lang ang isang pagpupulong kapag may tala o attendance na ito. Tingnan ang [Mga Tala ng Pagpupulong at Attendance](#meeting-notes-and-attendance) sa ibaba.
+- **Mga tala ng lider** -- Nakikita lang ng mga lider ng grupo. Ipinapakita ang dalawang pinakabagong tala ng lider; i-tap ang **Buksan ang mga tala** para basahin silang lahat at magpost ng bago. Tingnan ang [Mga Tala ng Lider](#leader-notes) sa ibaba.
+- **Mga Mensahe** -- Ang pinakabagong mensahe mula sa group chat. I-tap ang **Buksan ang chat** para magbasa at magpost. Para sa mga miyembro lang ito ipinapakita, at kung na-enable ng iyong simbahan ang group chat para sa grupong ito. Tingnan ang [Mga Usapan ng Grupo](./conversations.md) para sa mas maraming detalye.
+- **Mga Miyembro** -- Preview ng mga miyembro ng grupo (mga lider muna) at bilang ng mga miyembro at lider. I-tap ang **Lahat ng miyembro** para sa buong listahan, na maaari mong hanapin gamit ang **Maghanap ng Miyembro**. I-tap ang pangalan ng miyembro para bisitahin ang kanilang profile sa [member directory](../community/member-directory.md).
+- **Mga Resource** -- Ang unang ilang file at link na ibinahagi para sa grupo. I-tap ang **Lahat ng resource** para makita silang lahat; maaari mong i-download ang mga na-upload na file o buksan ang mga naka-link na resource.
+- **Mga Plano** -- Ang susunod na service plan ng grupo. I-tap ang **Lahat ng plano** para makita silang lahat. Lumalabas lang kung may plano ang grupo.
+- **Tungkol** -- Ang buong paglalarawan ng grupo, na may rich text formatting. Lumalabas lang kung may paglalarawan ang grupo.
 
-Nakikita rin ng mga miyembro ang link na **Leave Group** sa ibaba ng pahina.
+Makikita rin ng mga miyembro ang link na **Umalis sa Grupo** sa ibaba ng pahina.
 
 ## Mga Kakayahan ng Lider
 
-Kung ikaw ay lider ng group, may karagdagang kakayahan ka sa pag-edit:
+Kung ikaw ay lider ng grupo, may karagdagang kakayahan ka sa pag-edit:
 
-- **Gumawa at mag-edit ng event** -- I-tap ang **All events**, pagkatapos ang **Add Event** upang magdagdag ng event sa kalendaryo ng group. Kapag gumagawa ng event, maaari kang mag-reserba ng mga kuwarto at resource kasama nito -- pumili mula sa mga available na kuwarto at resource, magtakda ng opsyonal na oras ng setup at teardown, at awtomatikong isinusumite ang kahilingan sa booking para sa approval.
-- **Mag-edit ng mga paulit-ulit na event** -- Kapag binuksan mo ang isang paulit-ulit na event upang i-edit ito, unang magtatanong ang B1 kung aling mga petsa ang babaguhin: **Just this date**, **This and all following dates**, o **All dates**. Pumili ng isa at i-click ang **Save** upang buksan ang event. Kung pinili mo ang **Just this date**, nakatago ang switch na **Recurring** at ang iyong mga pagbabago (o pagbura) ay para lamang sa petsang iyon.
-- **Magtakda ng mga reminder ng event** -- Kapag nag-e-edit ng umiiral na event, i-on ang **Send reminders** upang paalalahanan ang mga tao bago ito magsimula. Pumili kung kailan sila ipapadala, ang **Time of Day**, **Who should be reminded?**, at opsyonal na **Message**, pagkatapos piliin ang **Push**, **Email**, o, kung may texting ang iyong simbahan, **Text** sa ilalim ng **Send By**. Ang mga text ay ipinapadala lamang sa mga taong nag-on ng text reminder sa kanilang [Notification Preferences](../getting-started/notification-preferences.md).
-- **Pamahalaan ang mga resource** -- Mag-upload ng file (hanggang 100 MB na storage), magdagdag ng link, o magbura ng umiiral na resource.
-- **Subaybayan ang attendance** -- Itala ang attendance para sa mga session ng group gamit ang **Take attendance** sa seksyong **Attendance**.
+- **Gumawa at mag-edit ng event** -- I-tap ang **Lahat ng event**, pagkatapos ay **Magdagdag ng Event** para magdagdag ng event sa kalendaryo ng grupo. Kapag gumagawa ng event, maaari kang mag-reserve ng mga kwarto at resource kasama nito -- pumili mula sa mga available na kwarto at resource, magtakda ng opsyonal na oras ng setup at teardown, at awtomatikong ipapasa ang kahilingan sa booking para sa pag-apruba.
+- **Mag-edit ng paulit-ulit na event** -- Kapag binuksan mo ang isang paulit-ulit na event para i-edit ito, unang magtatanong ang B1 kung aling mga petsa ang babaguhin: **Ang petsang ito lang**, **Ang petsang ito at lahat ng susunod**, o **Lahat ng petsa**. Pumili ng isa at i-click ang **I-save** para buksan ang event. Kapag pinili mo ang **Ang petsang ito lang**, nakatago ang switch na **Paulit-ulit**, at ang iyong mga pagbabago (o pagbura) ay para lang sa petsang iyon.
+- **Magtakda ng mga paalala sa event** -- Kapag nag-e-edit ng umiiral na event, i-on ang **Magpadala ng paalala** para paalalahanan ang mga tao bago ito magsimula. Pumili kung kailan ito ipapadala, ang **Oras ng Araw**, ang **Sino ang dapat paalalahanan?**, at isang opsyonal na **Mensahe**, pagkatapos ay piliin ang **Push**, **Email**, o, kung may naka-set na texting ang iyong simbahan, ang **Text** sa ilalim ng **Ipadala Sa pamamagitan ng**. Ang mga text ay ipinapadala lang sa mga taong nag-on ng text reminders sa kanilang [Notification Preferences](../getting-started/notification-preferences.md).
+- **Mamahala ng mga resource** -- Mag-upload ng mga file (hanggang 100 MB ng storage), magdagdag ng mga link, o magbura ng umiiral na resource.
+- **Magsulat ng tala ng pagpupulong at subaybayan ang attendance** -- Gamitin ang **Magdagdag ng tala** at **Mag-take ng attendance** sa seksyong **Mga Pagpupulong**. Tingnan ang [Mga Tala ng Pagpupulong at Attendance](#meeting-notes-and-attendance).
+- **Magtago ng pribadong tala ng lider** -- Gamitin ang seksyong **Mga tala ng lider**. Tingnan ang [Mga Tala ng Lider](#leader-notes).
 
-Upang baguhin ang pangalan, paglalarawan, o listahan ng miyembro ng group, gamitin ang B1 Admin. Tingnan ang [Group Members](../../b1-admin/groups/group-members.md).
+Para baguhin ang pangalan, paglalarawan, o listahan ng miyembro ng grupo, gamitin ang B1 Admin. Tingnan ang [Group Members](../../b1-admin/groups/group-members.md).
 
-## Pagsali sa Group
+### Mga Tala ng Pagpupulong at Attendance {#meeting-notes-and-attendance}
 
-Kapag naka-log in ka at hindi pa miyembro, lumilitaw ang button sa pagsali sa pahina ng detalye ng group. Nakadepende sa patakaran sa pagsali ng group ang label ng button:
+Ang mga lider ng grupo, at ang mga staff na maaaring mag-take ng attendance, ay nakakakita ng **Magdagdag ng tala** at **Mag-take ng attendance** sa header ng seksyong **Mga Pagpupulong**. Nakikita ng mga miyembro ang parehong listahan ng mga pagpupulong at tala, para sa sinumang nakaligtaan ang isang linggo ay makahabol.
 
-- **Join Group** -- Bukas ang group. Ang pag-click dito ay agad kang idaragdag bilang miyembro.
-- **Request to Join** -- Kailangan ng approval ng group. Ang pag-click dito ay magbubukas ng dialog kung saan maaari kang maglagay ng opsyonal na mensahe sa lider ng group, pagkatapos ay isumite ang iyong kahilingan. Tingnan ang [Requesting to Join a Group](./join-requests.md) para sa mga detalye sa pamamahala ng iyong mga kahilingan.
+Para magsulat ng buod ng isang pagpupulong:
 
-Pagkatapos mong magpadala ng kahilingan, papalitan ang button ng notice na **Request Pending**: "Your request to join has been sent. A group leader will review it."
+1. I-tap ang **Magdagdag ng tala**.
+2. Piliin ang **Petsa** ng pagpupulong. Nagsisimula ito sa iyong pinakabagong pagpupulong sa nakalipas na linggo, o sa araw ngayon. Maaari kang pumili ng petsa sa hinaharap para mag-post ng tala bago ang pagpupulong.
+3. Isulat ang tala sa kahon na **Mga Tala** -- halimbawa, ang mga tinalakay, anunsyo, o kahilingan sa panalangin. Nagbibigay ang toolbar ng opsyong maglagay ng bold na teksto, listahan, at link.
+4. I-tap ang **I-save**.
 
-Kung hindi ka naka-log in at na-click mo ang **Sign in to join**, babalik ka sa group pagkatapos mag-sign in at awtomatikong magsisimula ang hakbang ng pagsali: agad kang idaragdag ng bukas na group, at ang group na nangangailangan ng approval ay magbubukas ng dialog na **Request to Join**.
+Kung may tala na ang petsa, magbubukas ito para ma-edit mo. Ang screen na **Mag-take ng attendance** ay may kahon ding **Mga Tala** sa ilalim ng petsa, kaya maaari mong isulat ang buod habang nagta-take ng attendance. Maaari ring i-tap ng mga lider ang isang pagpupulong sa listahan para buksan ang attendance at tala nito. Ang mga tala ng pagpupulong ay parehong session notes na nakikita ng staff sa **Sessions** ng grupo sa B1 Admin -- tingnan ang [Recording Attendance](../../b1-admin/attendance/recording-attendance.md#session-notes).
 
-Kung walang lumabas na alinmang button, sarado ang group at kailangang idagdag nang manu-mano ng isang lider o administrator ang mga miyembro.
+### Mga Tala ng Lider {#leader-notes}
+
+Ang **Mga tala ng lider** ay isang pribadong feed para sa mga lider ng grupo -- halimbawa, para subaybayan ang mga follow-up o alalahanin sa pastoral. Ang mga lider lang ng grupo ang makakakita nito o makakapag-post dito. Hindi ito nakikita ng ibang miyembro, at hindi rin ng mga staff ng simbahan maliban kung lider din sila ng grupo.
+
+1. Sa seksyong **Mga tala ng lider**, i-tap ang **Buksan ang mga tala** (o i-tap ang anumang tala).
+2. I-type ang iyong tala sa kahon sa ibaba at ipadala ito.
+
+Hangga't walang nagpopost, ipinapakita ng feed ang "Wala pang tala" kasama ang paalalang "Ang mga lider lang ng grupong ito ang makakakita ng mga tala na ito." Nakikita ng mga lider ang parehong tala sa pahina ng grupo sa B1 Admin -- tingnan ang [Group Members](../../b1-admin/groups/group-members.md#leader-notes).
+
+## Pagsali sa Grupo {#joining-a-group}
+
+Kapag naka-log in ka at hindi pa miyembro, may lalabas na button na sumali sa detail page ng grupo. Nakadepende ang label ng button sa join policy ng grupo:
+
+- **Sumali sa Grupo** -- Bukas ang grupo. Kapag na-click ito, agad kang idaragdag bilang miyembro.
+- **Humiling na Sumali** -- Nangangailangan ng pag-apruba ang grupo. Kapag na-click ito, magbubukas ang dialog kung saan maaari kang maglagay ng opsyonal na mensahe para sa lider ng grupo, pagkatapos ay isumite ang iyong kahilingan. Tingnan ang [Requesting to Join a Group](./join-requests.md) para sa mga detalye sa pamamahala ng iyong mga kahilingan.
+
+Pagkatapos magpadala ng kahilingan, papalitan ang button ng abiso na **Nakabinbin ang Kahilingan**: "Naipadala na ang iyong kahilingang sumali. Susuriin ito ng isang lider ng grupo."
+
+Kung hindi ka naka-log in at na-click mo ang **Mag-sign in para sumali**, babalik ka sa grupo pagkatapos mag-sign in at awtomatikong magsisimula ang hakbang ng pagsali: agad kang idaragdag ng bukas na grupo, at magbubukas ang dialog na **Humiling na Sumali** para sa grupong nangangailangan ng pag-apruba.
+
+Kung walang lumabas na alinmang button, sarado ang grupo at kailangang idagdag nang manu-mano ng lider o administrator.
 
 :::info
-Kailangan kang naka-sign in upang sumali o humiling na sumali sa isang group. Kung sarado ang group at gusto mong sumali, makipag-ugnayan sa opisina ng iyong simbahan o sa isa sa mga lider ng group.
+Dapat kang naka-sign in para sumali o humiling na sumali sa grupo. Kung sarado ang grupo at gusto mong sumali, makipag-ugnayan sa opisina ng iyong simbahan o sa isa sa mga lider ng grupo.
 :::

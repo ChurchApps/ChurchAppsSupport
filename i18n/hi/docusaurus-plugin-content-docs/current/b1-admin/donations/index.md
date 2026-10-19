@@ -2,52 +2,52 @@
 title: "दान"
 ---
 
-# Donations
+# दान
 
 <div class="article-intro">
 
-The Donations section in B1 Admin provides everything you need to manage your church's giving. From recording weekly offerings to generating year-end tax statements, all of your donation tools are organized in one place so you can stay on top of your church's finances.
+B1 Admin में दान अनुभाग आपको चर्च का दान प्रबंधित करने के लिए आवश्यक सब कुछ देता है। साप्ताहिक चढ़ावे दर्ज करने से लेकर वार्षिक कर विवरण तैयार करने तक, आपके सभी दान से जुड़े टूल एक ही जगह व्यवस्थित हैं, ताकि आप अपने चर्च के वित्त पर नज़र रख सकें।
 
 </div>
 
-## Sub-Sections
+## उप-अनुभाग
 
-You will find the following pages in the Donations section:
+दान अनुभाग में आपको निम्नलिखित पृष्ठ मिलेंगे:
 
-### Summary
+### सारांश
 
-The **Summary** page gives you a visual overview of all giving activity. It displays charts and filtered reports so you can quickly see donation trends across your church. See [Donation Reports](donation-reports.md) for more details on using the summary and report tools.
+**सारांश** पृष्ठ सभी दान गतिविधियों का दृश्य अवलोकन देता है। यह चार्ट और फ़िल्टर किए गए रिपोर्ट दिखाता है, ताकि आप अपने चर्च में दान के रुझान जल्दी देख सकें। सारांश और रिपोर्ट टूल के बारे में अधिक जानकारी के लिए [दान रिपोर्ट](donation-reports.md) देखें।
 
-### Batches
+### बैच
 
-**[Batches](batches.md)** let you group donations together -- for example, all the checks and cash collected during a Sunday offering. Each batch tracks its donation count and total amount for easy reconciliation.
+**[बैच](batches.md)** आपको दानों को एक साथ समूहित करने देते हैं -- उदाहरण के लिए, रविवार के चढ़ावे में इकट्ठे किए गए सभी चेक और नकद। हर बैच अपनी दान संख्या और कुल राशि का हिसाब रखता है, ताकि मिलान आसान हो। एक बार बैच की गिनती पूरी हो जाने पर, **Edit Donations** अनुमति वाला कोई व्यक्ति उसे बंद कर सकता है, ताकि गिनती करने वाले स्वयंसेवक उसमें बदलाव न कर सकें। **Enter Donations** अनुमति वाले स्वयंसेवक दान अनुभाग के बाकी हिस्से देखे बिना खुले बैच में उपहार जोड़ सकते हैं।
 
-### Funds
+### फ़ंड
 
-**[Funds](funds.md)** categorize your donations by purpose. Common examples include General Fund, Building Fund, and Missions. You can mark each fund as tax-deductible or not.
+**[फ़ंड](funds.md)** आपके दानों को उनके उद्देश्य के अनुसार वर्गीकृत करते हैं। सामान्य उदाहरणों में General Fund, Building Fund और Missions शामिल हैं। आप हर फ़ंड को कर-मुक्त (tax-deductible) या नहीं, इस रूप में चिह्नित कर सकते हैं।
 
-### Statements
+### विवरण
 
-The **[Statements](giving-statements.md)** page generates year-end giving statements for your donors. You can download individual CSV files or print all statements at once.
+**[विवरण](giving-statements.md)** पृष्ठ आपके दाताओं के लिए वार्षिक दान विवरण तैयार करता है। आप व्यक्तिगत CSV फ़ाइलें डाउनलोड कर सकते हैं या सभी विवरण एक साथ प्रिंट कर सकते हैं।
 
-### Stripe Import
+### Stripe आयात
 
-If you accept online donations through Stripe, the **[Stripe Import](stripe-import.md)** tool lets you pull those transactions into B1 Admin so everything is in one system.
+यदि आप Stripe के माध्यम से ऑनलाइन दान स्वीकार करते हैं, तो **[Stripe आयात](stripe-import.md)** टूल आपको उन लेन-देन को B1 Admin में लाने देता है, ताकि सब कुछ एक ही सिस्टम में रहे।
 
-## Online Giving
+## ऑनलाइन दान
 
-B1 Admin integrates with **Stripe** and **PayPal** for accepting online donations. Once configured, members can give through your B1.church site and those donations automatically appear in your records. See [Online Giving Setup](online-giving-setup.md) to get started.
+B1 Admin ऑनलाइन दान स्वीकार करने के लिए **Stripe** और **PayPal** के साथ एकीकृत होता है। एक बार कॉन्फ़िगर हो जाने पर, सदस्य आपकी B1.church साइट के माध्यम से दान दे सकते हैं, और वे दान अपने आप आपके रिकॉर्ड में दिखाई देते हैं। शुरुआत करने के लिए [ऑनलाइन दान सेटअप](online-giving-setup.md) देखें।
 
 :::tip
-If you are new to donations in B1 Admin, start by [setting up your funds](funds.md), then [create your first batch](batches.md) and [record donations](recording-donations.md) into it.
+यदि आप B1 Admin में दान के लिए नए हैं, तो पहले [अपने फ़ंड सेट करें](funds.md), फिर [अपना पहला बैच बनाएँ](batches.md) और उसमें [दान दर्ज करें](recording-donations.md)।
 :::
 
-## Next Steps
+## अगले कदम
 
-- [Recording Donations](recording-donations.md) -- enter donations into a batch
-- [Donation Batches](batches.md) -- organize donations into groups
-- [Managing Funds](funds.md) -- set up and manage giving categories
-- [Giving Statements](giving-statements.md) -- generate tax statements for donors
-- [Online Giving Setup](online-giving-setup.md) -- connect Stripe or PayPal
-- [Stripe Import](stripe-import.md) -- import online transactions
-- [Donation Reports](donation-reports.md) -- view and filter donation summaries
+- [दान दर्ज करना](recording-donations.md) -- किसी बैच में दान दर्ज करें
+- [दान बैच](batches.md) -- दानों को समूहों में व्यवस्थित करें
+- [फ़ंड प्रबंधित करना](funds.md) -- दान की श्रेणियाँ सेट करें और प्रबंधित करें
+- [दान विवरण](giving-statements.md) -- दाताओं के लिए कर विवरण तैयार करें
+- [ऑनलाइन दान सेटअप](online-giving-setup.md) -- Stripe या PayPal जोड़ें
+- [Stripe आयात](stripe-import.md) -- ऑनलाइन लेन-देन आयात करें
+- [दान रिपोर्ट](donation-reports.md) -- दान सारांश देखें और फ़िल्टर करें

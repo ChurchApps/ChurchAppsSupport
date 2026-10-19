@@ -1,8 +1,8 @@
 ---
-title: "Configurazione Locale dell'API"
+title: "Configurazione locale dell'API"
 ---
 
-# Configurazione Locale dell'API
+# Configurazione locale dell'API
 
 <div class="article-intro">
 
@@ -11,15 +11,15 @@ Questa guida ti accompagna nella configurazione dell'API di ChurchApps per lo sv
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
 - Installa **Node.js 22+**, **Git** e **MySQL 8.0+** -- vedi [Prerequisiti](../setup/prerequisites)
-- Crea un utente MySQL con privilegi di creazione database
-- Consulta il riferimento delle [Variabili d'Ambiente](../setup/environment-variables) per la configurazione dell'API
+- Crea un utente MySQL con il privilegio di creare database
+- Consulta il riferimento delle [Variabili d'ambiente](../setup/environment-variables) per la configurazione dell'API
 
 </div>
 
-## Configurazione Passo per Passo
+## Configurazione passo passo
 
 ### 1. Clona il repository
 
@@ -29,7 +29,7 @@ git clone https://github.com/ChurchApps/Api.git
 
 ### 2. Installa le dipendenze
 
-Il progetto utilizza Yarn (una protezione blocca `npm install`):
+Il progetto usa Yarn (una protezione blocca `npm install`):
 
 ```bash
 cd Api
@@ -42,13 +42,13 @@ yarn install
 cp .env.sample .env
 ```
 
-Apri `.env` e configura le stringhe di connessione MySQL. Ogni modulo necessita della propria connessione al database nel seguente formato:
+Apri `.env` e configura le stringhe di connessione a MySQL. Ogni modulo richiede la propria connessione al database nel seguente formato:
 
 ```
 mysql://root:password@localhost:3306/dbname
 ```
 
-Avrai bisogno di stringhe di connessione per tutti e sei i database dei moduli (membership, attendance, content, giving, messaging, doing).
+Ti serviranno le stringhe di connessione per tutti e sei i database dei moduli (membership, attendance, content, giving, messaging, doing).
 
 ### 4. Inizializza i database
 
@@ -56,7 +56,7 @@ Avrai bisogno di stringhe di connessione per tutti e sei i database dei moduli (
 npm run initdb
 ```
 
-Questo crea automaticamente tutti e sei i database e le rispettive tabelle.
+Questo comando crea automaticamente tutti e sei i database con le relative tabelle.
 
 :::tip
 Puoi inizializzare il database di un singolo modulo con `npm run initdb -- --module=membership` (oppure `attendance`, `content`, `giving`, `messaging`, `doing`).
@@ -68,35 +68,25 @@ Puoi inizializzare il database di un singolo modulo con `npm run initdb -- --mod
 npm run dev
 ```
 
-L'API si avvia con hot reload su [http://localhost:8084](http://localhost:8084).
+L'API si avvia con hot reload all'indirizzo [http://localhost:8084](http://localhost:8084).
 
-## Comandi Principali
+## Comandi principali
 
 | Comando | Descrizione |
 |---------|-------------|
 | `npm run dev` | Avvia il server di sviluppo con hot reload (tsx watch) |
-| `npm run build` | Pulisce, compila TypeScript e copia gli asset |
-| `npm run test` | Esegue i test con Jest (include la coverage) |
+| `npm run build` | Pulisce, compila il TypeScript e copia gli asset |
+| `npm run test` | Esegue i test con Jest (include la copertura) |
 | `npm run test:watch` | Esegue i test in modalità watch |
-| `npm run lint` | Esegue ESLint con auto-fix (ESLint è l'unico formattatore) |
+| `npm run lint` | Esegue ESLint con correzione automatica (ESLint è l'unico formattatore) |
 
-## Deployment su Staging
+## Deploy
 
-Per distribuire nell'ambiente di staging:
+L'ambiente di staging è stato dismesso. L'Api viene distribuita nell'ambiente demo a ogni push su `main` e in produzione tramite il workflow manuale **Deploy Prod**, che applica anche le migrazioni del database in sospeso. Vedi [Deploy dell'API](../deployment/apis) per i dettagli.
 
-```bash
-npm run deploy-staging
-```
+## Sviluppo locale delle librerie
 
-Questo esegue una build di produzione e poi distribuisce tramite Serverless Framework.
-
-:::warning
-Assicurati che le tue credenziali AWS siano configurate prima di eseguire il comando di deploy.
-:::
-
-## Sviluppo Locale delle Librerie
-
-Se devi sviluppare una libreria condivisa (`@churchapps/helpers` o `@churchapps/apihelper`) insieme all'API, compilala nel workspace [Packages](https://github.com/ChurchApps/Packages) e aggiungi un portale Yarn temporaneo nell'API:
+Se devi sviluppare una libreria condivisa (`@churchapps/helpers` o `@churchapps/apihelper`) insieme all'API, compilala nel workspace [Packages](https://github.com/ChurchApps/Packages) e aggiungi un portal Yarn temporaneo nell'API:
 
 ```bash
 # In the Packages workspace
@@ -108,10 +98,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Questo ti permette di testare le modifiche alla libreria contro l'API senza pubblicarle su npm. Vedi [Librerie Condivise](../shared-libraries/#local-development-against-a-consuming-app) per i dettagli -- e non fare mai il commit della risoluzione del portale che il link scrive in `package.json`.
+Questo ti permette di testare le modifiche alle librerie con l'API senza pubblicarle su npm. Vedi [Librerie condivise](../shared-libraries/#local-development-against-a-consuming-app) per i dettagli — e non committare mai la risoluzione del portal che il link scrive in `package.json`.
 
-## Articoli Correlati
+## Articoli correlati
 
-- **[Database](./database)** -- Comprendere l'architettura database-per-modulo
-- **[Struttura dei Moduli](./module-structure)** -- Come sono organizzati controller, repository e modelli
-- **[Librerie Condivise](../shared-libraries/)** -- Lavorare con `@churchapps/helpers` e `@churchapps/apihelper`
+- **[Database](./database)** -- Comprendere l'architettura con un database per modulo
+- **[Struttura dei moduli](./module-structure)** -- Come sono organizzati controller, repository e modelli
+- **[Librerie condivise](../shared-libraries/)** -- Lavorare con `@churchapps/helpers` e `@churchapps/apihelper`

@@ -30,7 +30,7 @@ Rapporten Oppmøtetrend viser hvordan oppmøtet endrer seg over tid for gudstjen
 
 Denne rapporten er nyttig for å oppdage mønstre som sesongbaserte nedganger, vekstutvikling eller virkningen av spesielle arrangementer.
 
-## Gruppeoppmøte
+## Gruppeoppmøte {#group-attendance}
 
 Rapporten Gruppeoppmøte viser hvem som var til stede på hver gruppesamling i en datoperiode.
 

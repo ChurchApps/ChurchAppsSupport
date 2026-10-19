@@ -12,7 +12,7 @@ Plan Mode verbindt uw TV met een kerkserviceplan. In plaats van inhoud op basis 
 
 ## Hoe Het Verschilt Van Classroom Mode
 
-- **[Classroom Mode](../classroom-mode/)** haalt de les op die is gepland voor een specifieke kamer op een bepaalde datum
+- **[Classroom Mode](../scheduled-mode/)** haalt de les op die is gepland voor een specifieke kamer op een bepaalde datum
 - **Plan Mode** haalt de inhoud op die aan een plantype is gekoppeld, wat lessen, providerpresentaties, add-ons en ander media in aangepaste volgorde kan bevatten
 
 Plan Mode is vooral nuttig wanneer uw serviceplan een mix van inhoud uit verschillende bronnen bevat, allemaal in één volgorde georganiseerd.

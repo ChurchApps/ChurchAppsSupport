@@ -77,7 +77,7 @@ Punktet **Medlemsportal** i samme Mobil-del inneholder innstillingene som styrer
 Fordi aldersgrensekontrollen bygger på fødselsdato, bør du sørge for at fødselsdato er fylt ut for barn i menigheten. Denne innstillingen hører til samme barnesikkerhetsfamilie som [sikkerhetskontrollene for innsjekking](../attendance/checkin-safety.md).
 :::
 
-### Innloggingsmelding på startskjermen
+### Innloggingsmelding på startskjermen {#home-screen-sign-in-prompt}
 
 Besøkende som åpner appens [startskjerm](/docs/b1-church/getting-started/navigating#home) uten å logge inn, ser en kort melding -- som standard *«Logg inn for å se gruppene dine, giving og mer.»* -- ved siden av en **Logg inn**-knapp. Innstillingene for **Innloggingsmelding på startskjermen** på den samme Medlemsportal-siden (`/mobile/b1-mobile`) lar deg endre den:
 

@@ -1,53 +1,53 @@
-﻿---
-title: "Donations"
+---
+title: "Dons"
 ---
 
-# Donations
+# Dons
 
 <div class="article-intro">
 
-La section Donations dans B1 Admin fournit tout ce dont vous avez besoin pour gérer les dons de votre église. De l'enregistrement des offres hebdomadaires à la génération des déclarations fiscales de fin d'année, tous vos outils de donation sont organisés au même endroit afin que vous puissiez rester au-dessus de vos finances ecclésiales.
+La section Dons de B1 Admin vous fournit tout le nécessaire pour gérer les dons de votre église. De l'enregistrement des offrandes hebdomadaires à la génération des attestations fiscales de fin d'année, tous vos outils de dons sont réunis au même endroit afin que vous gardiez le contrôle des finances de votre église.
 
 </div>
 
 ## Sous-sections
 
-Vous trouverez les pages suivantes dans la section Donations :
+Vous trouverez les pages suivantes dans la section Dons :
 
-### Résumé
+### Synthèse
 
-La page **Résumé** vous donne un aperçu visuel de toute l'activité de donation. Elle affiche des graphiques et des rapports filtrés afin que vous puissiez rapidement voir les tendances de donation dans votre église. Consultez [Rapports de donation](donation-reports.md) pour plus de détails sur l'utilisation du résumé et des outils de génération de rapports.
+La page **Synthèse** vous offre une vue d'ensemble visuelle de toutes les activités de dons. Elle affiche des graphiques et des rapports filtrés pour que vous puissiez voir rapidement les tendances de dons dans votre église. Voir [Rapports de dons](donation-reports.md) pour plus de détails sur l'utilisation de la synthèse et des outils de rapport.
 
 ### Lots
 
-**[Les lots](batches.md)** vous permettent de regrouper les donations ensemble -- par exemple, tous les chèques et l'argent comptant collectés lors d'une offre du dimanche. Chaque lot suit son nombre de donations et son montant total pour une réconciliation facile.
+Les **[Lots](batches.md)** vous permettent de regrouper des dons -- par exemple, tous les chèques et espèces collectés lors de l'offrande du dimanche. Chaque lot suit son nombre de dons et son montant total pour faciliter le rapprochement. Une fois qu'un lot a été compté, une personne disposant de **Modifier les dons** peut le clôturer afin que les bénévoles qui comptent ne puissent plus le modifier. Les bénévoles disposant de la permission **Saisir des dons** peuvent ajouter des dons aux lots ouverts sans voir le reste de la section Dons.
 
 ### Fonds
 
-**[Les fonds](funds.md)** catégorisent vos donations par objectif. Les exemples courants incluent le fonds général, le fonds de bâtiment et les missions. Vous pouvez marquer chaque fonds comme étant ou non déductible d'impôt.
+Les **[Fonds](funds.md)** classent vos dons selon leur destination. Les exemples courants incluent le Fonds général, le Fonds de construction et les Missions. Vous pouvez indiquer pour chaque fonds s'il est déductible d'impôt ou non.
 
-### Relevés
+### Attestations
 
-La page **[Relevés](giving-statements.md)** génère les relevés de donation de fin d'année pour vos donateurs. Vous pouvez télécharger des fichiers CSV individuels ou imprimer tous les relevés à la fois.
+La page **[Attestations](giving-statements.md)** génère les attestations de dons de fin d'année pour vos donateurs. Vous pouvez télécharger des fichiers CSV individuels ou imprimer toutes les attestations en une fois.
 
 ### Import Stripe
 
-Si vous acceptez les donations en ligne via Stripe, l'outil **[Import Stripe](stripe-import.md)** vous permet d'extraire ces transactions dans B1 Admin afin que tout soit dans un système.
+Si vous acceptez des dons en ligne via Stripe, l'outil **[Import Stripe](stripe-import.md)** vous permet de récupérer ces transactions dans B1 Admin afin que tout soit dans un seul système.
 
-## Donation en ligne
+## Dons en ligne
 
-B1 Admin s'intègre à **Stripe** et **PayPal** pour accepter les donations en ligne. Une fois configuré, les membres peuvent faire un don via votre site B1.church et ces donations apparaissent automatiquement dans vos dossiers. Consultez [Configuration de la donation en ligne](online-giving-setup.md) pour commencer.
+B1 Admin s'intègre à **Stripe** et **PayPal** pour accepter les dons en ligne. Une fois configurés, les membres peuvent donner via votre site B1.church, et ces dons apparaissent automatiquement dans vos registres. Voir [Configuration des dons en ligne](online-giving-setup.md) pour commencer.
 
 :::tip
-Si vous êtes nouveau dans les donations dans B1 Admin, commencez par [configurer vos fonds](funds.md), puis [créez votre premier lot](batches.md) et [enregistrez les donations](recording-donations.md).
+Si vous découvrez les dons dans B1 Admin, commencez par [configurer vos fonds](funds.md), puis [créez votre premier lot](batches.md) et [enregistrez les dons](recording-donations.md) dans celui-ci.
 :::
 
 ## Étapes suivantes
 
-- [Enregistrement des donations](recording-donations.md) -- entrez les donations dans un lot
-- [Lots de donations](batches.md) -- organisez les donations en groupes
-- [Gestion des fonds](funds.md) -- configurez et gérez les catégories de donation
-- [Relevés de donation](giving-statements.md) -- générez les relevés fiscaux pour les donateurs
-- [Configuration de la donation en ligne](online-giving-setup.md) -- connectez Stripe ou PayPal
-- [Import Stripe](stripe-import.md) -- importez les transactions en ligne
-- [Rapports de donation](donation-reports.md) -- affichage et filtrage des résumés de donation
+- [Enregistrer des dons](recording-donations.md) -- saisir les dons dans un lot
+- [Lots de dons](batches.md) -- organiser les dons en groupes
+- [Gérer les fonds](funds.md) -- configurer et gérer les catégories de dons
+- [Attestations de dons](giving-statements.md) -- générer les attestations fiscales pour les donateurs
+- [Configuration des dons en ligne](online-giving-setup.md) -- connecter Stripe ou PayPal
+- [Import Stripe](stripe-import.md) -- importer les transactions en ligne
+- [Rapports de dons](donation-reports.md) -- consulter et filtrer les synthèses de dons

@@ -6,20 +6,20 @@ title: "B1 Mobile"
 
 <div class="article-intro">
 
-Ang B1 Mobile ang pangunahing mobile app na nakaharap sa miyembro para sa ChurchApps, na binuo gamit ang React Native at Expo. Pinapayagan nito ang mga miyembro ng simbahan na tingnan ang mga direktoryo, i-access ang pagbibigay, suriin ang attendance, makatanggap ng mga abiso, at makipag-ugnayan sa kanilang komunidad ng simbahan.
+Ang B1 Mobile ang pangunahing mobile app para sa mga miyembro ng ChurchApps, na binuo gamit ang React Native at Expo. Pinapayagan nitong tingnan ng mga miyembro ng simbahan ang mga direktoryo, i-access ang giving, tingnan ang attendance, tumanggap ng notification, at makipag-ugnayan sa komunidad ng simbahan nila.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Mag-install ng **Node.js** at **Expo CLI** -- tingnan ang [Mga Pangangailangan](../setup/prerequisites)
-- Mag-install ng **Android Studio** (para sa Android emulator) o **Xcode** (para sa iOS simulator)
-- I-configure ang iyong API target (staging o lokal) -- tingnan ang [Mga Variable ng Kapaligiran](../setup/environment-variables)
+- I-install ang **Node.js** at **Expo CLI** -- tingnan ang [Prerequisites](../setup/prerequisites)
+- I-install ang **Android Studio** (para sa Android emulator) o **Xcode** (para sa iOS simulator)
+- I-configure ang iyong API target (demo o local) -- tingnan ang [Environment Variables](../setup/environment-variables)
 
 </div>
 
-## Pag-setup
+## Setup
 
 1. I-clone ang repository:
 
@@ -27,13 +27,13 @@ Ang B1 Mobile ang pangunahing mobile app na nakaharap sa miyembro para sa Church
    git clone https://github.com/ChurchApps/B1Mobile.git
    ```
 
-2. Mag-install ng mga dependency:
+2. I-install ang mga dependency:
 
    ```bash
    cd B1Mobile && npm install
    ```
 
-3. I-configure ang mga variable ng kapaligiran -- kopyahin ang sample file at i-update ang mga API endpoint:
+3. I-configure ang mga environment variable -- kopyahin ang sample file at i-update ang mga API endpoint:
 
    ```bash
    cp dotenv.sample.txt .env
@@ -46,26 +46,26 @@ Ang B1 Mobile ang pangunahing mobile app na nakaharap sa miyembro para sa Church
    ```
 
 :::tip
-Maaari mong gamitin ang **Expo Go** app sa isang pisikal na device para sa mabilis na pagsubok nang hindi kailangang mag-setup ng Android Studio o Xcode.
+Maaari mong gamitin ang app na **Expo Go** sa totoong device para sa mabilisang pagsubok nang hindi nagse-setup ng Android Studio o Xcode.
 :::
 
-## Mga Variable ng Kapaligiran
+## Mga Environment Variable
 
 | Variable | Paglalarawan |
 |----------|-------------|
-| `STAGE` | Yugto ng kapaligiran (hal., `dev`, `staging`, `prod`) |
-| `CONTENT_ROOT` | Root URL para sa content delivery |
-| `MEMBERSHIP_API` | Endpoint ng Membership API |
-| `MESSAGING_API` | Endpoint ng Messaging API |
-| `ATTENDANCE_API` | Endpoint ng Attendance API |
-| `GIVING_API` | Endpoint ng Giving API |
-| `DOING_API` | Endpoint ng Doing API |
-| `CONTENT_API` | Endpoint ng Content API |
-| `LESSONS_ROOT` | Root URL para sa nilalaman ng mga aralin |
+| `STAGE` | Yugto ng environment (hal. `dev`, `staging`, `prod`) |
+| `CONTENT_ROOT` | Root URL para sa paghahatid ng content |
+| `MEMBERSHIP_API` | Membership API endpoint |
+| `MESSAGING_API` | Messaging API endpoint |
+| `ATTENDANCE_API` | Attendance API endpoint |
+| `GIVING_API` | Giving API endpoint |
+| `DOING_API` | Doing API endpoint |
+| `CONTENT_API` | Content API endpoint |
+| `LESSONS_ROOT` | Root URL para sa lessons content |
 
-## Mga Pangunahing Utos
+## Mga Key Command
 
-| Utos | Paglalarawan |
+| Command | Paglalarawan |
 |---------|-------------|
 | `npm start` | Ilunsad ang Expo dev server |
 | `npm run android` | Patakbuhin sa Android emulator |
@@ -74,7 +74,7 @@ Maaari mong gamitin ang **Expo Go** app sa isang pisikal na device para sa mabil
 
 ## Mga Production Build
 
-Bago lumikha ng production build, i-update ang mga numero ng bersyon sa lahat ng sumusunod na file:
+Bago gumawa ng production build, i-update ang mga version number sa lahat ng sumusunod na file:
 
 - `package.json`
 - `app.config.js`
@@ -87,7 +87,7 @@ Bago lumikha ng production build, i-update ang mga numero ng bersyon sa lahat ng
 npm run build:android
 ```
 
-Gumagamit ito ng EAS Build upang likhain ang Android binary.
+Gumagamit ito ng EAS Build para gumawa ng Android binary.
 
 ### iOS
 
@@ -95,19 +95,19 @@ Gumagamit ito ng EAS Build upang likhain ang Android binary.
 eas build --platform ios --profile production
 ```
 
-### Mga OTA Update
+### OTA Update
 
-Para mag-push ng over-the-air na update (nang hindi dumadaan sa pagsusuri ng app store):
+Para magpadala ng over-the-air update (nang hindi dumadaan sa app store review):
 
 ```bash
 npm run update:production
 ```
 
 :::info
-Ang mga OTA update ay angkop para sa mga pagbabagong JavaScript lamang. Kung nagbago ka ng native code o mga dependency, kailangan mong magsumite ng buong store build sa halip.
+Ang mga OTA update ay mainam para sa mga pagbabago lamang sa JavaScript. Kung babaguhin mo ang native code o mga dependency, kailangan mong magsumite ng buong store build.
 :::
 
 ## Mga Kaugnay na Artikulo
 
-- **[Pag-deploy ng Mobile](../deployment/mobile)** -- Kumpletong gabay sa pagbuo, pagsusumite, at pag-deploy ng mga mobile app
-- **[Mga Variable ng Kapaligiran](../setup/environment-variables)** -- Kumpletong sanggunian para sa configuration ng kapaligiran ng mobile
+- **[Mobile Deployment](../deployment/mobile)** -- Buong gabay sa pag-build, pagsusumite, at pag-deploy ng mga mobile app
+- **[Environment Variables](../setup/environment-variables)** -- Kumpletong reference para sa configuration ng mobile environment

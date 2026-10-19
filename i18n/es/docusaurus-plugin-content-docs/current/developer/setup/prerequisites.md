@@ -1,87 +1,87 @@
 ---
-title: "Requisitos Previos"
+title: "Requisitos previos"
 ---
 
-# Requisitos Previos
+# Requisitos previos
 
 <div class="article-intro">
 
-Las herramientas que necesita dependen de qué proyectos planea en los que trabajar. Esta página enumera todo el software requerido organizado por área de desarrollo, desde los requisitos universales hasta las cadenas de herramientas específicas de la plataforma.
+Las herramientas que necesita dependen de los proyectos en los que planea trabajar. Esta página enumera todo el software necesario organizado por área de desarrollo, desde los requisitos universales hasta las cadenas de herramientas específicas de cada plataforma.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Revisar la [Descripción General del Proyecto](./project-overview) para determinar qué proyectos desea en los que trabajar
-- Tener acceso de administrador en su máquina de desarrollo para instalar software
+- Revise la [Descripción general de los proyectos](./project-overview) para determinar en qué proyectos quiere trabajar
+- Tenga acceso de administrador en su equipo de desarrollo para instalar software
 
 </div>
 
-## Todos los Proyectos
+## Todos los proyectos
 
-Estos son requeridos independientemente de qué proyecto trabaje:
+Estos son necesarios sin importar en qué proyecto trabaje:
 
 | Herramienta | Versión | Notas |
-|------|---------|-------|
-| **Node.js** | 20+ | Versión 22+ requerida para B1App y LessonsApp (Next.js 16) |
-| **npm** | Viene con Node.js | Se utiliza como gestor de paquetes en todos los proyectos |
-| **Git** | Más Reciente | Cada proyecto es un repositorio separado |
+|-------------|---------|-------|
+| **Node.js** | 20+ | Se requiere la versión 22+ para B1App y LessonsApp (Next.js 16) |
+| **npm** | Incluido con Node.js | Se usa como gestor de paquetes en todos los proyectos |
+| **Git** | Última | Cada proyecto es un repositorio separado |
 
 :::tip
-Utilice un gestor de versiones de Node como [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) o [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) para cambiar entre versiones de Node fácilmente.
+Use un gestor de versiones de Node como [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) o [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) para cambiar fácilmente entre versiones de Node.
 :::
 
-## Desarrollo de API Backend
+## Desarrollo de la API backend
 
-Si planea ejecutar la API localmente (en lugar de apuntar a preparación):
-
-| Herramienta | Versión | Notas |
-|------|---------|-------|
-| **MySQL** | 8.0+ | Cada módulo de API utiliza su propia base de datos |
-
-Necesitará seis bases de datos para la API principal: `membership`, `attendance`, `content`, `giving`, `messaging` y `doing`. La API incluye scripts para inicializar el esquema -- ver la guía [configuración local de API](../api/local-setup).
-
-## Desarrollo de Aplicación Móvil
-
-Para B1Mobile, B1Checkin, LessonsScreen u otras aplicaciones React Native / Expo:
+Si planea ejecutar la API localmente (en lugar de conectarse a las API de demostración):
 
 | Herramienta | Versión | Notas |
-|------|---------|-------|
-| **Expo CLI** | Más Reciente | Instalar globalmente: `npm install -g expo-cli` |
-| **Android Studio** | Más Reciente | Requerido para desarrollo de Android (incluye SDK de Android) |
-| **Xcode** | Más Reciente | Requerido para desarrollo de iOS (solo macOS) |
+|-------------|---------|-------|
+| **MySQL** | 8.0+ | Cada módulo de la API usa su propia base de datos |
+
+Necesitará seis bases de datos para la API principal: `membership`, `attendance`, `content`, `giving`, `messaging` y `doing`. La API incluye scripts para inicializar el esquema; consulte la guía de [configuración local de la API](../api/local-setup).
+
+## Desarrollo de aplicaciones móviles
+
+Para B1Mobile, B1Checkin, LessonsScreen u otras aplicaciones de React Native / Expo:
+
+| Herramienta | Versión | Notas |
+|-------------|---------|-------|
+| **Expo CLI** | Última | Instalar globalmente: `npm install -g expo-cli` |
+| **Android Studio** | Última | Requerido para el desarrollo en Android (incluye el SDK de Android) |
+| **Xcode** | Última | Requerido para el desarrollo en iOS (solo macOS) |
 
 :::info
-Puede utilizar la aplicación Expo Go en un dispositivo físico para pruebas rápidas sin Android Studio o Xcode. Sin embargo, compilar binarios de producción requiere las cadenas de herramientas nativas.
+Puede usar la aplicación Expo Go en un dispositivo físico para pruebas rápidas sin Android Studio ni Xcode. Sin embargo, para generar binarios de producción se necesitan las cadenas de herramientas nativas.
 :::
 
-## Desarrollo de FreeShow (Aplicación de Escritorio)
+## Desarrollo de FreeShow (aplicación de escritorio)
 
-FreeShow tiene dependencias de compilación nativa adicionales porque compila módulos de Node nativos (como `canvas`):
+FreeShow tiene dependencias de compilación nativas adicionales porque compila módulos nativos de Node (como `canvas`):
 
-### Todas las Plataformas
+### Todas las plataformas
 
 | Herramienta | Versión | Notas |
-|------|---------|-------|
-| **Python** | 3.12 | Requerido por `node-gyp` para compilación de módulos nativos |
-| **setuptools** | Más Reciente | Instalar vía `pip install setuptools` |
+|-------------|---------|-------|
+| **Python** | 3.12 | Requerido por `node-gyp` para compilar módulos nativos |
+| **setuptools** | Última | Instalar con `pip install setuptools` |
 
 ### Windows
 
 | Herramienta | Notas |
-|------|-------|
+|-------------|-------|
 | **Visual Studio** | La edición Community es suficiente |
-| **"Desktop development with C++" workload** | Seleccionar durante la instalación de Visual Studio |
+| **"Desarrollo para escritorio con C++"** | Seleccione durante la instalación de Visual Studio |
 | **Windows 10 SDK** | Incluido en la carga de trabajo de C++; asegúrese de que esté marcado |
 
-Puede instalar las herramientas de compilación de Visual Studio a través de la línea de comando:
+Puede instalar las herramientas de compilación de Visual Studio desde la línea de comandos:
 
 ```bash
 npm install --global windows-build-tools
 ```
 
-O instale Visual Studio Community y seleccione la carga de trabajo "Desktop development with C++" durante la instalación.
+O instale Visual Studio Community y seleccione la carga de trabajo "Desarrollo para escritorio con C++" durante la instalación.
 
 ### Linux
 
@@ -91,24 +91,24 @@ sudo apt-get install libfontconfig1-dev
 
 ### macOS
 
-Las Herramientas de Línea de Comando de Xcode suelen ser suficientes:
+Normalmente, las Herramientas de línea de comandos de Xcode son suficientes:
 
 ```bash
 xcode-select --install
 ```
 
-## Verificar Su Instalación
+## Verificar su instalación
 
 Ejecute estos comandos para confirmar que todo está instalado:
 
 ```bash
-node --version    # Debe imprimir v20.x.x o superior
-npm --version     # Debe imprimir 10.x.x o superior
-git --version     # Debe imprimir git version 2.x.x
-mysql --version   # Solo se necesita para desarrollo local de API
+node --version    # Should print v20.x.x or higher
+npm --version     # Should print 10.x.x or higher
+git --version     # Should print git version 2.x.x
+mysql --version   # Only needed for local API development
 ```
 
-## Próximos Pasos
+## Próximos pasos
 
-- **[Descripción General del Proyecto](./project-overview)** -- Ver todos los proyectos y qué hacen
-- **[Variables de Entorno](./environment-variables)** -- Configurar sus archivos `.env`
+- **[Descripción general de los proyectos](./project-overview)** -- Vea todos los proyectos y lo que hacen
+- **[Variables de entorno](./environment-variables)** -- Configure sus archivos `.env`

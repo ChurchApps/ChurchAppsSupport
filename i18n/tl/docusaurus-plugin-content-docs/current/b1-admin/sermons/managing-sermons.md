@@ -56,7 +56,7 @@ Maaaring maglaman ang bawat sermon entry ng:
 - **Video/Audio Links** -- Mga URL ng media ng sermon sa YouTube, Vimeo, Facebook, o custom na host
 - **Audio File URL (for podcast)** -- Direktang link sa MP3/M4A file para sa sermon na ito. Maaari kayong mag-paste ng URL o i-click ang **Upload Audio** para mag-upload ng file at awtomatikong mapunan ito. Tanging ang mga sermon na may ganitong field (o direktang link ng video file) ang isinasama sa inyong podcast feed.
 
-## Ang Inyong Podcast Feed
+## Ang Inyong Podcast Feed {#your-podcast-feed}
 
 Kapag may kahit isang sermon nang may nakakabit na audio o video file, awtomatikong gumagawa ang B1 Admin ng podcast RSS feed para sa inyong simbahan -- walang kailangang i-on. Makikita ito sa panel na **Podcast Feed** sa ibaba ng listahan ng sermon: i-click ang copy icon para kopyahin ang URL ng feed, saka isumite ang URL na iyon sa Apple Podcasts, Spotify, o anumang ibang podcast directory.
 

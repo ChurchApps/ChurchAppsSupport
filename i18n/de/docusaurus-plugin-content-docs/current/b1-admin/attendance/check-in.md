@@ -1,129 +1,129 @@
 ---
-title: "Anmeldung"
+title: "Check-in"
 ---
 
-# Anmeldung
+# Check-in
 
 <div class="article-intro">
 
-B1 Admin unterstützt die Selbstanmeldung bei Veranstaltungen über die begleitende App **B1 Checkin**. Mitglieder können sich und ihre Familien bei der Ankunft an Kiosken oder dedizierten Geräten selbst anmelden, was den Prozess beschleunigt und die Belastung Ihrer Freiwilligen reduziert. Jede Anmeldung wird automatisch als Teilnahme erfasst.
+B1 Admin unterstützt das Selbst-Check-in bei Gottesdiensten über die zugehörige App **B1 Checkin**. Mitglieder können sich und ihre Familien bei Ankunft an Kiosken oder dedizierten Geräten einchecken. Das geht schnell und entlastet Ihre Ehrenamtlichen. Jeder Check-in wird automatisch als Anwesenheit erfasst.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Ihre Standorte, Gottesdienstzeiten und Gruppen müssen in der [Anwesenheitseinrichtung](setup.md) konfiguriert werden.
-- Sie benötigen [Personen in Ihrer Datenbank](../people/adding-people.md) mit [Haushalten](../people/adding-people.md#managing-households), damit Familien sich gemeinsam anmelden können.
-- Sie benötigen ein Tablet und optional einen Brother-Etikettendrucker (siehe [Hardwareempfehlungen](#recommended-hardware) unten).
+- Ihre Standorte, Gottesdienstzeiten und Gruppen müssen im [Anwesenheits-Setup](setup.md) konfiguriert sein.
+- Sie benötigen [Personen in Ihrer Datenbank](../people/adding-people.md) mit [Haushalten](../people/adding-people.md#managing-households), damit Familien gemeinsam einchecken können.
+- Sie benötigen ein Tablet und optional einen Brother-Etikettendrucker (siehe [Hardware-Empfehlungen](#recommended-hardware) unten).
 
 </div>
 
-## Wie es funktioniert
+## So funktioniert es
 
-Die B1 Checkin-App verbindet sich mit Ihrem B1 Admin-Anwesenheits-Setup. Wenn sich ein Mitglied anmeldet, wird seine Teilnahme automatisch gegen den richtigen Standort, die Gottesdienstzeit und die Gruppe erfasst. Sie müssen die Teilnahme nicht manuell für Personen eingeben, die das Anmeldungssystem verwenden.
+Die App B1 Checkin verbindet sich mit Ihrem Anwesenheits-Setup in B1 Admin. Wenn sich ein Mitglied einchecken, wird seine Anwesenheit automatisch dem richtigen Standort, der richtigen Gottesdienstzeit und der richtigen Gruppe zugeordnet. Für Personen, die das Check-in-System nutzen, müssen Sie keine Anwesenheit manuell eintragen.
 
-## Anmeldung einrichten
+## Check-in einrichten
 
-1. **Konfigurieren Sie zunächst Ihre Anwesenheitsstruktur.** Gehen Sie in B1 Admin zu **Personen > Teilnahme** und klicken Sie auf **Einrichtung**, um sicherzustellen, dass Ihre Standorte, Gottesdienstzeiten und Gruppen vorhanden sind. Die Anmelde-App basiert auf dieser Konfiguration. Optional können Sie jeder Gottesdienstzeit einen [Anmeldeplan](setup.md#setting-a-check-in-schedule) zuweisen, damit die Anmeldung jede Woche automatisch öffnet und schließt. Weitere Informationen finden Sie unter [Anwesenheitseinrichtung](setup.md).
-2. **Installieren Sie die B1 Checkin-App** auf den Geräten, die Sie verwenden möchten. Die App ist auf den folgenden Plattformen verfügbar:
+1. **Richten Sie zuerst Ihre Anwesenheitsstruktur ein.** Gehen Sie in B1 Admin zu **Personen > Anwesenheit** und klicken Sie auf **Einrichtung**, um sicherzustellen, dass Ihre Standorte, Gottesdienstzeiten und Gruppen vorhanden sind. Die App für den Check-in stützt sich auf diese Konfiguration. Optional können Sie jeder Gottesdienstzeit einen [Check-in-Zeitplan](setup.md#setting-a-check-in-schedule) zuweisen, damit sich der Check-in jede Woche automatisch öffnet und schließt. Zeitpläne verwenden die Zeitzone Ihrer Kirche oder – falls für die Kirche keine festgelegt ist – die Zeitzone Ihres Standorts. Der Kiosk blendet Gottesdienstzeiten aus, deren Zeitfenster geschlossen ist, und teilt Familien mit, wenn der Check-in noch nicht geöffnet ist. Einzelheiten finden Sie unter [Anwesenheits-Setup](setup.md).
+2. **Installieren Sie die App B1 Checkin** auf den Geräten, die Sie verwenden möchten. Die App ist für folgende Plattformen verfügbar:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
-   - **Android/Samsung Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
-   - **Amazon Fire Tablets:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
-3. **Melden Sie sich bei der B1 Checkin-App** mit Ihren Kirchenanmeldedaten an.
-4. **Wählen Sie den Standort und die Gottesdienstzeit** für die aktuelle Versammlung aus.
-5. Mitglieder können nun auf dem Gerät nach ihrem Namen suchen und sich anmelden.
+   - **Android-/Samsung-Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
+   - **Amazon-Fire-Tablets:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
+3. **Melden Sie sich in der App B1 Checkin** mit den Zugangsdaten Ihrer Kirche an.
+4. **Wählen Sie Standort und Gottesdienstzeit** für die aktuelle Zusammenkunft aus.
+5. Mitglieder können nun auf dem Gerät nach ihrem Namen suchen und einchecken.
 
 :::tip
-Platzieren Sie Anmeldegeräte an sichtbaren, leicht erreichbaren Orten wie Eingangshalle oder Empfangstischen. Eine kurze Ankündigung während der Veranstaltung hilft Mitgliedern zu erkennen, dass die Option verfügbar ist.
+Stellen Sie die Check-in-Geräte an gut sichtbaren, leicht erreichbaren Orten auf, etwa am Foyer-Eingang oder am Empfangstisch. Eine kurze Ankündigung während der Gottesdienste hilft den Mitgliedern zu wissen, dass diese Möglichkeit besteht.
 :::
 
 :::tip
-Wenn Ihre Kirche mehrere Standorte hat, müssen Sie das Setup für jeden Standort in der [Anwesenheitseinrichtung](setup.md) wiederholen. Jedes Anmeldegerät kann für einen anderen Standort konfiguriert werden.
+Wenn Ihre Kirche mehrere Standorte hat, müssen Sie die Einrichtung für jeden Standort im [Anwesenheits-Setup](setup.md) wiederholen. Jedes Check-in-Gerät kann für einen anderen Standort konfiguriert werden.
 :::
 
-## Empfohlene Hardware
+## Empfohlene Hardware {#recommended-hardware}
 
-**Tablets** – diese funktionieren gut mit der App:
+**Tablets** – eine dieser Optionen funktioniert gut mit der App:
 
 - **Kompakt:** Samsung Galaxy Tab A7 Lite 8,7"
 - **Großer Bildschirm:** Samsung Galaxy Tab A8 10,5"
 - **Budget:** Amazon Fire HD 10
 
-**Drucker** – Anmeldungen funktionieren mit Brother-Etikettendruckern zum Drucken von Namensschildern:
+**Drucker** – Check-ins funktionieren mit Brother-Etikettendruckern zum Drucken von Namensschildern:
 
-- **Beste:** Brother QL-1110NWB (unterstützt mehrere Tablets über Bluetooth und WiFi)
-- **Gut:** Brother QL-810W (unterstützt mehrere Tablets über WiFi)
-- **Budget:** Brother QL-1100 (nur WiFi)
+- **Beste Wahl:** Brother QL-1110NWB (unterstützt mehrere Tablets über Bluetooth und WLAN)
+- **Gut:** Brother QL-810W (unterstützt mehrere Tablets über WLAN)
+- **Budget:** Brother QL-1100 (nur WLAN)
 
 **Etiketten:** Brother DK-1201 (1-1/7" x 3-1/2")
 
 :::warning
-Nur Brother-Etikettendrucker sind mit der B1 Checkin-App kompatibel. Andere Druckermarken funktionieren nicht zum Drucken von Namensschildern.
+Nur Brother-Etikettendrucker sind mit der App B1 Checkin kompatibel. Drucker anderer Marken funktionieren zum Drucken von Namensschildern nicht.
 :::
 
 :::info
-Folgen Sie den Anweisungen Ihres Druckers, um ihn mit dem gleichen WiFi-Netz wie Ihr Tablet zu verbinden. Sie finden Brother-Druckertreiber und Setupanweisungen auf der [Brother-Support-Website](https://support.brother.com).
+Folgen Sie der Einrichtungsanleitung Ihres Druckers, um ihn mit demselben WLAN-Netzwerk wie Ihr Tablet zu verbinden. Brother-Druckertreiber und Einrichtungsanleitungen finden Sie auf der [Brother-Supportseite](https://support.brother.com).
 :::
 
-## Kiosk-Erscheinungsbild anpassen
+## Aussehen des Kiosks anpassen
 
-Sie können das Erscheinungsbild der B1 Checkin-App an Ihr Kirchenbranding anpassen. Gehen Sie in B1 Admin zu **Mobil > B1 CheckIn** und verwenden Sie die Karte **Kiosk-Design** zum Konfigurieren:
+Sie können das Erscheinungsbild der App B1 Checkin an das Design Ihrer Kirche anpassen. Gehen Sie in B1 Admin zu **Mobil > B1 CheckIn** und verwenden Sie die Karte **Kiosk-Design**, um Folgendes zu konfigurieren:
 
 ### Farben
 
-Passen Sie acht Farbeinstellungen an Ihr Kirchenbranding an:
+Passen Sie acht Farbeinstellungen an das Design Ihrer Kirche an:
 
-- **Primär** und **Primärer Kontrast** – Hauptmarkenfarbe und ihre Textfarbe.
-- **Sekundär** und **Sekundärer Kontrast** – Akzentfarbe und ihre Textfarbe.
-- **Kopfzeilen-Hintergrund** und **Unterüberschrift-Hintergrund** – Farben für die Kiosk-Kopfzeilenbereiche.
-- **Schaltflächenhintergrund** und **Schaltflächentext** – Farben für interaktive Schaltflächen.
+- **Primär** und **Primärkontrast** – Hauptmarkenfarbe und ihre Textfarbe.
+- **Sekundär** und **Sekundärkontrast** – Akzentfarbe und ihre Textfarbe.
+- **Kopfzeilen-Hintergrund** und **Unterkopfzeilen-Hintergrund** – Farben für die Kopfbereiche des Kiosks.
+- **Schaltflächen-Hintergrund** und **Schaltflächen-Text** – Farben für interaktive Schaltflächen.
 
 ### Hintergrundbild
 
-Laden Sie ein optionales Hintergrundbild für die Kiosk-Willkommens- und Suchbildschirme hoch. Empfohlene Größe ist 1920 x 1080 Pixel.
+Laden Sie optional ein Hintergrundbild für die Begrüßungs- und Suchbildschirme des Kiosks hoch. Die empfohlene Größe beträgt 1920 x 1080 Pixel.
 
-### Leerlauf-Bildschirm / Bildschirmschoner
+### Ruhebildschirm / Bildschirmschoner
 
-Konfigurieren Sie einen Bildschirmschoner, der nach einer Inaktivitätsperiode aktiviert wird:
+Konfigurieren Sie einen Bildschirmschoner, der nach einer Zeit ohne Eingabe aktiv wird:
 
-1. Aktivieren oder deaktivieren Sie den Leerlauf-Bildschirm.
-2. Legen Sie das **Timeout** fest (wie viele Sekunden Inaktivität, bevor der Bildschirmschoner startet, Minimum 10 Sekunden).
-3. Fügen Sie einen oder mehrere **Folien** hinzu – jede Folie hat ein Bild und eine Anzeigedauer (Minimum 3 Sekunden).
+1. Schalten Sie den Ruhebildschirm **ein** oder **aus**.
+2. Legen Sie das **Zeitlimit** fest (wie viele Sekunden ohne Eingabe vergehen, bevor der Bildschirmschoner startet; mindestens 10 Sekunden).
+3. Fügen Sie eine oder mehrere **Folien** hinzu – jede Folie hat ein Bild und eine Anzeigedauer (mindestens 3 Sekunden).
 
 :::tip
-Verwenden Sie den Leerlauf-Bildschirm, um Ankündigungen, bevorstehende Ereignisse oder Willkommensnachrichten anzuzeigen, wenn der Kiosk nicht aktiv verwendet wird.
+Nutzen Sie den Ruhebildschirm, um Ankündigungen, bevorstehende Veranstaltungen oder Willkommensnachrichten anzuzeigen, wenn der Kiosk nicht aktiv genutzt wird.
 :::
 
-## Gastregistrierung über QR-Code
+## Gästeregistrierung per QR-Code
 
-Der Anmeldekiosk kann einen QR-Code anzeigen, den Besucher scannen können, um sich und ihre Familie auf ihrem eigenen Telefon zu registrieren. Dies beschleunigt den Anmeldeprozess für Erstbesucher.
+Der Check-in-Kiosk kann einen QR-Code anzeigen, den Besucher scannen, um sich und ihre Familie selbst auf ihrem Telefon zu registrieren. Das beschleunigt den Check-in für Erstbesucher.
 
-Wenn ein Gast den QR-Code scannt, wird er zu einer [Gastregistrierungsseite](../../b1-church/checkin/guest-registration) weitergeleitet, auf der er seinen Namen, E-Mail-Adresse und Familienmitglieder eingibt. Ein Freiwilliger kann ihn dann auf dem Kiosk nachschlagen und anmelden.
+Wenn ein Gast den QR-Code scannt, gelangt er zu einer [Seite zur Gästeregistrierung](../../b1-church/checkin/guest-registration), auf der er seinen Namen, seine E-Mail-Adresse und Familienmitglieder eingibt. Ein Ehrenamtlicher kann ihn dann am Kiosk suchen und einchecken.
 
-### QR-Gastregistrierung aktivieren
+### QR-Gästeregistrierung aktivieren
 
-Um die QR-Code-Anzeige einzuschalten:
+So schalten Sie die Anzeige des QR-Codes ein:
 
-1. Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links) und erweitern Sie **Mobil**.
+1. Öffnen Sie in B1 Admin das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links) und klappen Sie **Mobil** auf.
 2. Klicken Sie auf **B1 CheckIn**.
-3. Aktivieren Sie **QR-Gastregistrierung** und klicken Sie auf **Speichern**.
+3. Schalten Sie **QR-Gästeregistrierung** ein und klicken Sie auf **Speichern**.
 
 :::note
-Diese Einstellung befindet sich unter **Mobil > B1 CheckIn** (dieselbe Seite wie die Karte **Kiosk-Design**), nicht unter Teilnahme. Die Aktion **Kiosk** auf der Teilnahmeseite enthält einen Link zu dieser Seite.
+Diese Einstellung befindet sich unter **Mobil > B1 CheckIn** (auf derselben Seite wie die Karte **Kiosk-Design**), nicht unter Anwesenheit. Die Aktion **Kiosk** auf der Seite Anwesenheit enthält einen Link zu dieser Seite.
 :::
 
-### Registrierungslink freigeben
+### Den Registrierungslink teilen
 
-Sobald die QR-Gastregistrierung aktiviert ist, erscheint unterhalb der Schaltfläche ein Abschnitt **Registrierungs-QR-Code freigeben**. Dies gibt Ihnen zwei Möglichkeiten, Gäste zum Registrierungsformular zu führen, abgesehen vom Kiosk-QR-Code:
+Sobald die QR-Gästeregistrierung aktiviert ist, erscheint unter dem Schalter der Abschnitt **Registrierungs-QR-Code teilen**. Damit erhalten Sie zwei Möglichkeiten, Gäste zum Registrierungsformular zu bringen, zusätzlich zum QR-Code des Kiosks:
 
-- **Link kopieren** – kopiert die Registrierungs-URL, damit Sie sie auf Ihrer Kirchenwebseite, in E-Mails oder überall online einfügen können.
-- **PNG herunterladen** – lädt den QR-Code als Bild herunter, das Sie auf Flyern, Bulletins oder Beschilderung drucken können.
+- **Link kopieren** – kopiert die Registrierungs-URL, damit Sie sie auf Ihrer Kirchenwebsite, in E-Mails oder überall sonst online einfügen können.
+- **PNG herunterladen** – lädt den QR-Code als Bild herunter, das Sie auf Flyern, im Gemeindebrief oder auf Beschilderungen drucken können.
 
 :::tip
-Fügen Sie den Registrierungslink zur Seite "Plan Your Visit" oder "I'm New" Ihrer Kirchenwebseite hinzu, damit sich Gäste bereits vor ihrer Ankunft registrieren können.
+Fügen Sie den Registrierungslink auf der Seite „Ihr Besuch“ oder „Ich bin neu“ Ihrer Kirchenwebsite hinzu, damit sich Gäste schon vor ihrer Ankunft registrieren können.
 :::
 
-## Was wird aufgezeichnet
+## Was erfasst wird
 
-Jede Anmeldung erstellt einen Teilnahmeeintrag in B1 Admin. Sie können diese Einträge auf der Seite [Teilnahme](tracking-attendance.md) und in den Sitzungen jeder [Gruppe](../groups/group-members.md) genau wie manuell eingegebene Teilnahmen anzeigen. Es gibt keinen Unterschied in der Anzeige der Daten – beide Methoden führen zu denselben Berichten.
+Jeder Check-in erstellt einen Anwesenheitseintrag in B1 Admin. Sie können diese Einträge auf der Seite [Anwesenheit](tracking-attendance.md) sowie in den [Gottesdiensten jeder Gruppe](../groups/group-members.md) einsehen, genau wie manuell erfasste Anwesenheiten. Die Daten werden in keiner Weise anders dargestellt – beide Methoden fließen in dieselben Berichte ein.

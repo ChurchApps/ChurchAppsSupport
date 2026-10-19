@@ -14,7 +14,7 @@ B1Admin is the church administration dashboard -- a React single-page applicatio
 <h4>Before You Begin</h4>
 
 - Install **Node.js 22+** and **Git** -- see [Prerequisites](../setup/prerequisites)
-- Configure your API target (staging or local) -- see [Environment Variables](../setup/environment-variables)
+- Configure your API target (demo or local) -- see [Environment Variables](../setup/environment-variables)
 
 </div>
 
@@ -39,7 +39,7 @@ npm install
 cp dotenv.sample.txt .env
 ```
 
-Open `.env` and configure the API endpoints. You can point them at either the staging API or your local API instance.
+Open `.env` and configure the API endpoints. You can point them at either the shared demo API (`https://api.demo.churchapps.org`) or your local API instance. The sample file may still list retired staging URLs; replace them.
 
 ### 4. Start the dev server
 
@@ -53,7 +53,7 @@ This launches the Vite dev server. The app will be available in your browser wit
 
 | Variable | Description |
 |----------|-------------|
-| `REACT_APP_STAGE` | Environment name (e.g., `local`, `staging`, `prod`) |
+| `REACT_APP_STAGE` | Environment name (e.g., `demo` as in the sample file, `prod`, or `selfhost`) |
 | `PORT` | Dev server port (default: `3101`) |
 | `REACT_APP_*_API` | API endpoint URLs for each module |
 

@@ -71,7 +71,7 @@ Lorsque l'option **Créer une fiche personne à partir des réponses** est activ
 
 Chaque fois qu'une personne envoie le formulaire, la personne trouvée ou nouvellement créée est ajoutée au groupe (les membres déjà présents dans le groupe sont ignorés). Cela est utile, par exemple, pour un formulaire d'inscription à un camp qui doit automatiquement constituer la liste du groupe du camp.
 
-### Envoyer un e-mail de suivi
+### Envoyer un e-mail de suivi {#sending-a-follow-up-email}
 
 Avec **Créer une fiche personne à partir des réponses** activé, vous pouvez également envoyer un e-mail à chaque personne qui répond au formulaire. Renseignez **Objet de l'e-mail de suivi** et **Corps de l'e-mail de suivi** dans les détails du formulaire. Vous pouvez utiliser les jetons `{firstName}` et `{churchName}` dans les deux champs. L'e-mail n'est envoyé que si les deux champs sont renseignés.
 

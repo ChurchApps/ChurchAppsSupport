@@ -6,113 +6,113 @@ title: "सर्वर प्रशासन"
 
 <div class="article-intro">
 
-ChurchApps में सर्वर प्रशासन सुविधाएं केवल **Server.Admin** permission वाले उपयोगकर्ताओं के लिए उपलब्ध हैं। ये tools सिस्टम में सभी चर्चों में प्लेटफॉर्म operations, support, और troubleshooting के लिए उपयोग किए जाते हैं।
+ChurchApps में सर्वर प्रशासन की सुविधाएँ केवल उन उपयोगकर्ताओं के लिए उपलब्ध हैं जिनके पास **Server.Admin** अनुमति है। इन उपकरणों का उपयोग सिस्टम में मौजूद सभी चर्चों के लिए प्लेटफ़ॉर्म संचालन, सहायता और समस्या-निवारण में होता है।
 
 </div>
 
-:::warning Access Restricted
-इस पृष्ठ पर वर्णित features को **Server.Admin** permission की आवश्यकता है और नियमित church administrators के लिए उपलब्ध नहीं हैं। ये केवल platform operators और support staff के लिए हैं।
+:::warning उपयोग प्रतिबंधित
+इस पृष्ठ पर वर्णित सुविधाओं के लिए **Server.Admin** अनुमति आवश्यक है और ये सामान्य चर्च प्रशासकों को उपलब्ध नहीं हैं। ये केवल प्लेटफ़ॉर्म संचालकों और सहायता कर्मचारियों के लिए बनाई गई हैं।
 :::
 
-## सर्वर एडमिन को एक्सेस करना
+## सर्वर एडमिन तक पहुँच
 
-Server.Admin permission वाले उपयोगकर्ता B1 Admin से server admin panel को एक्सेस कर सकते हैं:
+Server.Admin अनुमति वाले उपयोगकर्ता B1 Admin से सर्वर एडमिन पैनल तक पहुँच सकते हैं:
 
-1. [admin.b1.church](https://admin.b1.church) में लॉग इन करें
-2. [Jump menu](../b1-admin/introduction.md#getting-around-with-the-jump-menu) को खोलें, **Settings** को expand करें, और **Server Admin** को click करें। (आप `admin.b1.church/admin` पर सीधे भी जा सकते हैं।)
-3. Server Admin panel बाईं ओर अपने sections को तीन समूहों में सूचीबद्ध करता है: **Directory** (Churches, Users, Impersonate User), **Operations** (Background Jobs, Commons, Usage Trends), और **System** (Translation Lookups, Server Health, Database Migrations)।
+1. [admin.b1.church](https://admin.b1.church) पर लॉग इन करें
+2. [Jump menu](../b1-admin/introduction.md#getting-around-with-the-jump-menu) खोलें, **Settings** को विस्तृत करें और **Server Admin** पर क्लिक करें। (आप सीधे `admin.b1.church/admin` पर भी जा सकते हैं।)
+3. सर्वर एडमिन पैनल बाईं ओर अपने अनुभाग तीन समूहों में दिखाता है: **Directory** (Churches, Users, Impersonate User), **Operations** (Background Jobs, Commons, Usage Trends), और **System** (Translation Lookups, Server Health, Database Migrations)
 
-## User Impersonation
+## उपयोगकर्ता का इम्पर्सोनेशन
 
-Impersonation feature server admins को support और troubleshooting purposes के लिए एक अन्य उपयोगकर्ता के रूप में लॉग इन करने की अनुमति देता है। यह उपयोगकर्ता-reported issues को investigate करते समय या चर्चों को उनके systems को configure करने में मदद करते समय उपयोगी है।
+इम्पर्सोनेशन सुविधा सर्वर एडमिन को सहायता और समस्या-निवारण के लिए किसी दूसरे उपयोगकर्ता के रूप में लॉग इन करने देती है। यह तब उपयोगी है जब उपयोगकर्ता द्वारा बताई गई समस्या की जाँच करनी हो या किसी चर्च को उसका सिस्टम कॉन्फ़िगर करने में मदद करनी हो।
 
-### User को Impersonate कैसे करें
+### उपयोगकर्ता का इम्पर्सोनेशन कैसे करें
 
-1. Server Admin panel के **Impersonate User** section को खोलें
-2. search field में user के name या email address को enter करें
-3. **Search** को click करें या Enter दबाएं
-4. search results से, जिस user को impersonate करना चाहते हैं उसे click करें
-5. उपस्थित dialog में impersonation को confirm करें
-6. आप उस user के रूप में लॉग इन हो जाएंगे और उनके account में redirect हो जाएंगे
+1. सर्वर एडमिन पैनल में **Impersonate User** अनुभाग खोलें
+2. खोज फ़ील्ड में उपयोगकर्ता का नाम या ईमेल पता दर्ज करें
+3. **Search** पर क्लिक करें या Enter दबाएँ
+4. खोज परिणामों में से वह उपयोगकर्ता चुनें जिसका इम्पर्सोनेशन करना है
+5. खुलने वाले डायलॉग में इम्पर्सोनेशन की पुष्टि करें
+6. आप उस उपयोगकर्ता के रूप में लॉग इन हो जाएँगे और उनके खाते पर भेज दिए जाएँगे
 
-### महत्वपूर्ण नोट्स
+### महत्वपूर्ण बातें
 
-- Impersonation एक नया session create करता है target user की permissions और church access के साथ
-- जब आप दूसरे user को impersonate करते हैं तो आपका original admin session समाप्त हो जाता है
-- Impersonation के दौरान की जाने वाली सभी actions audit trail में logged होती हैं
-- अपने admin account पर वापस जाने के लिए, logout करें और अपनी credentials के साथ फिर से login करें
-- Impersonation का उपयोग केवल support purposes के लिए और आवश्यकता पड़ने पर करें और जब users के accounts को support के लिए access किया जा रहा हो तो users को हमेशा inform करें
+- इम्पर्सोनेशन लक्ष्य उपयोगकर्ता की अनुमतियों और चर्च पहुँच के साथ एक नया सेशन बनाता है
+- किसी दूसरे उपयोगकर्ता का इम्पर्सोनेशन करने पर आपका मूल एडमिन सेशन समाप्त हो जाता है
+- इम्पर्सोनेशन के दौरान किए गए सभी कार्य ऑडिट ट्रेल में दर्ज होते हैं
+- अपने एडमिन खाते पर लौटने के लिए लॉग आउट करें और अपनी क्रेडेंशियल से फिर लॉग इन करें
+- इम्पर्सोनेशन का उपयोग केवल आवश्यक होने पर सहायता के लिए करें, और उपयोगकर्ताओं के खाते सहायता के लिए खोलते समय उन्हें हमेशा सूचित करें
 
-### API Endpoint
+### API एंडपॉइंट
 
-Impersonation feature `/users/:userId/impersonate` endpoint द्वारा Membership API में backed है। Technical details के लिए [Membership Endpoints](/docs/developer/api/endpoints/membership#users) देखें।
+इम्पर्सोनेशन सुविधा Membership API के `/users/:userId/impersonate` एंडपॉइंट पर आधारित है। तकनीकी विवरण के लिए [Membership Endpoints](/docs/developer/api/endpoints/membership#users) देखें।
 
-### Security Considerations
+### सुरक्षा संबंधी विचार
 
-- Impersonation को Server.Admin permission की आवश्यकता है - यह permission को sparingly grant किया जाना चाहिए और केवल trusted platform operators को
-- सभी impersonation events admin user ID और target user ID के साथ logged होते हैं
-- जब impersonation होता है तो churches को notify नहीं किया जाता है, इसलिए स्पष्ट policies establish करें कि यह feature कब और कैसे use किया जाना चाहिए
-- अपने support ticket system में impersonation events को document करने पर विचार करें accountability के लिए
+- इम्पर्सोनेशन के लिए Server.Admin अनुमति आवश्यक है — यह अनुमति सोच-समझकर और केवल भरोसेमंद प्लेटफ़ॉर्म संचालकों को दें
+- सभी इम्पर्सोनेशन घटनाएँ एडमिन उपयोगकर्ता ID और लक्ष्य उपयोगकर्ता ID के साथ दर्ज होती हैं
+- इम्पर्सोनेशन होने पर चर्चों को सूचित नहीं किया जाता, इसलिए इस सुविधा के उपयोग की स्पष्ट नीति बनाएँ
+- उत्तरदायित्व के लिए इम्पर्सोनेशन घटनाओं को अपनी सहायता टिकट प्रणाली में दर्ज करने पर विचार करें
 
-## Commons Moderation
+## Commons मॉडरेशन
 
-Commons user-submitted content के लिए shared moderation queue है सभी products में — WorshipCommons songs, Lessons.church lessons, FreeShow templates, और B1 website builder templates सभी एक ही queue में flow करते हैं बजाय separate per-product review tools के।
+Commons विभिन्न उत्पादों में उपयोगकर्ता द्वारा सबमिट की गई सामग्री की साझा मॉडरेशन कतार है — WorshipCommons गाने, Lessons.church पाठ, FreeShow टेम्पलेट और B1 वेबसाइट बिल्डर टेम्पलेट सभी एक ही कतार से गुज़रते हैं, अलग-अलग उत्पाद की समीक्षा टूल के बजाय।
 
-### Commons को एक्सेस करना
+### Commons तक पहुँच
 
-1. Server Admin panel में **Commons** tab navigate करें।
-2. आपको तीन sub-tabs दिखाई देंगे: **Queue**, **Reports**, और **Assets**।
+1. सर्वर एडमिन पैनल में **Commons** टैब पर जाएँ।
+2. आपको तीन उप-टैब दिखेंगे: **Queue**, **Reports**, और **Assets**।
 
-एक limited **music editor** role भी Queue tab को see कर सकता है, लेकिन ऐसे submissions को approve करने से blocked है जो किसी song के rights या licensing को change करते हैं।
+सीमित **music editor** भूमिका वाला उपयोगकर्ता भी Queue टैब देख सकता है, लेकिन वह ऐसी सबमिशन स्वीकृत नहीं कर सकता जो किसी गाने के अधिकार या लाइसेंसिंग को बदलती हों।
 
 ### Queue
 
-Queue हर pending submission को सभी products में list करता है, product और asset type द्वारा filterable। प्रत्येक row दिखाता है कि submission एक नया asset है, इसके original author द्वारा एक edit है, या एक third party द्वारा एक edit है, साथ ही submitter के approval track record और कितने समय से submission wait कर रहा है (72 घंटे से अधिक होने पर flagged)।
+Queue सभी उत्पादों की हर लंबित सबमिशन सूचीबद्ध करती है, जिसे उत्पाद और एसेट प्रकार के आधार पर फ़िल्टर किया जा सकता है। हर पंक्ति दिखाती है कि सबमिशन नया एसेट है, मूल लेखक द्वारा किया गया संपादन है, या किसी तीसरे पक्ष का संपादन है, साथ ही सबमिट करने वाले का स्वीकृति रिकॉर्ड और सबमिशन को कितनी देर से प्रतीक्षा में है (72 घंटे पार होने पर चिह्नित)।
 
-**Review** को click करें एक drawer को खोलने के लिए जिसमें field-level diffs, file previews, और item का एक embedded read-only preview हो। **a**/**r** keyboard shortcuts का उपयोग करें approve या reject करने के लिए, और **j**/**k** को अगले या previous submission पर जाने के लिए drawer को leave किए बिना। Reject करने के लिए एक reason select करना आवश्यक है (उदाहरण के लिए quality, duplicate, licensing, ccli, ai, या off-topic) और एक note।
+**Review** पर क्लिक करके फ़ील्ड-स्तर के अंतर, फ़ाइल पूर्वावलोकन और आइटम के एम्बेडेड केवल-पढ़ने योग्य पूर्वावलोकन वाला ड्रॉअर खोलें। स्वीकृत या अस्वीकृत करने के लिए **a**/**r** कीबोर्ड शॉर्टकट का उपयोग करें, और ड्रॉअर छोड़े बिना अगली या पिछली सबमिशन पर जाने के लिए **j**/**k** का उपयोग करें। अस्वीकार करने पर कारण चुनना होगा (जैसे quality, duplicate, licensing, ccli, ai, या off-topic) और एक नोट लिखना होगा।
 
 ### Reports
 
-Reports tab already-published assets के against filed copyright और policy/quality reports को handle करता है, separate Copyright और Policy & Other queues में split किया हुआ एक Resolved history के साथ। एक report को claim करें work करना शुरू करने के लिए, फिर इसे एक resolution (upheld, dismissed, या duplicate) और एक action (none, unpublish, या remove) के साथ resolve करें।
+Reports टैब उन कॉपीराइट और नीति/गुणवत्ता रिपोर्टों को संभालता है जो पहले से प्रकाशित एसेट्स के विरुद्ध दर्ज हुई हैं। ये Copyright और Policy & Other कतारों तथा Resolved इतिहास में बँटी हैं। किसी रिपोर्ट पर काम शुरू करने के लिए उसे claim करें, फिर एक निर्णय (upheld, dismissed, या duplicate) और एक कार्रवाई (none, unpublish, या remove) के साथ उसे resolve करें।
 
 ### Assets
 
-Assets tab एक searchable browser है published content का actions के साथ **Feature** एक asset (इसे product के home page पर highlight करता है), **Unpublish**/**Republish** करने के लिए, या **Remove** करने के लिए (एक copyright या policy reason के साथ)।
+Assets टैब प्रकाशित कंटेंट का खोजने योग्य ब्राउज़र है, जिसमें ये कार्रवाइयाँ हैं: एसेट को **Feature** करना (उसे उत्पाद के होम पेज पर उभारना), उसे **Unpublish**/**Republish** करना, या कॉपीराइट या नीति कारण के साथ उसे **Remove** करना।
 
-Songs के लिए specifically, यह भी है जहां एक song **Sunday-ready** बनता है और church के B1 Admin song search में appear करने के लिए eligible हो जाता है: एक reviewer asset को open करता है और प्रत्येक published key को **Listened** के रूप में mark करता है एक बार वे इसे सुन लेते हैं और score, chords, और slides सभी present हैं को confirm करते हैं। एक song केवल Sunday-ready बनता है एक बार हर key checked off हो।
+गानों के लिए यहीं यह तय होता है कि कोई गाना **Sunday-ready** बनता है और किसी चर्च की B1 Admin गाना खोज में दिखने योग्य होता है: समीक्षक एसेट खोलता है और हर प्रकाशित key को **Listened** के रूप में चिह्नित करता है, जब वह उसे सुन ले और पुष्टि कर ले कि स्कोर, कॉर्ड और स्लाइड सभी मौजूद हैं। जब तक हर key चिह्नित न हो, गाना Sunday-ready नहीं बनता।
 
 :::info
-Commons moderation staff-only है — individual churches इस queue को कभी नहीं देखते। एकमात्र जगह जहां एक individual church का B1 Admin Commons data को touch करता है वह [song search](/docs/b1-admin/serving/songs#free-songs-from-worshipcommons) का "WorshipCommons — free" section है, जो केवल songs को surface करता है जो पहले से इस review process के through हो चुके हैं।
+Commons मॉडरेशन केवल स्टाफ़ के लिए है — व्यक्तिगत चर्च यह कतार कभी नहीं देखते। किसी व्यक्तिगत चर्च का B1 Admin Commons डेटा केवल एक जगह छूता है: [गाना खोज](/docs/b1-admin/serving/songs#free-songs-from-worshipcommons) का "WorshipCommons — free" अनुभाग, जो केवल वे गाने दिखाता है जो इस समीक्षा प्रक्रिया से पहले ही गुज़र चुके हैं।
 :::
 
-[Content Commons architecture](/docs/developer/architecture/commons) page को see करें underlying data model और submission lifecycle के लिए।
+अंतर्निहित डेटा मॉडल और सबमिशन जीवनचक्र के लिए [Content Commons architecture](/docs/developer/architecture/commons) पृष्ठ देखें।
 
-## Group Email Approval
+## ग्रुप ईमेल स्वीकृति
 
-Churches church-written email नहीं भेज सकते (group email, form follow-ups, workflow emails, और account invites) जब तक एक server admin उन्हें approve नहीं करता है। यह bot-registered churches को shared ChurchApps sending address को spam के लिए use करने से रोकता है।
+सर्वर एडमिन द्वारा स्वीकृति दिए बिना चर्च द्वारा लिखे गए ईमेल (ग्रुप ईमेल, फ़ॉर्म फ़ॉलो-अप, वर्कफ़्लो ईमेल और खाता आमंत्रण) नहीं भेजे जा सकते। इससे बॉट-पंजीकृत चर्च साझा ChurchApps भेजने वाले पते का उपयोग स्पैम के लिए नहीं कर पाते।
 
-1. Server Admin panel में **Churches** tab खोलें।
-2. प्रत्येक church एक **Group Email** chip दिखाता है: **Approved** (green) या **Not approved** (outlined)।
-3. chip को click करें और confirm करें church को approve करने के लिए, या एक approval को revoke करने के लिए।
+1. सर्वर एडमिन पैनल में **Churches** टैब खोलें।
+2. हर चर्च पर एक **Group Email** चिप दिखती है: **Approved** (हरा) या **Not approved** (आउटलाइन)।
+3. स्वीकृति देने या वापस लेने के लिए चिप पर क्लिक करें और पुष्टि करें।
 
-Church staff **Request review** button का उपयोग करके approval माँग सकते हैं B1 Admin के Send Email dialog में। Request को support address को email किया जाता है और church के name, ID, registration date, location, और किसने ask किया को list करता है। एक church एक week में एक request भेज सकता है। [Church-authored email limits](/docs/developer/architecture/notifications#church-authored-email-limits) के लिए daily allowance और bounces और complaints पर automatic pause देखें।
+चर्च के स्टाफ़ B1 Admin के Send Email डायलॉग में **Request review** बटन से स्वीकृति माँगते हैं। यह अनुरोध सहायता पते पर ईमेल होता है और इसमें चर्च का नाम, ID, पंजीकरण तिथि, स्थान और अनुरोध करने वाले का नाम होता है। चर्च एक सप्ताह में एक अनुरोध भेज सकता है। दैनिक सीमा और बाउंस व शिकायतों पर स्वचालित रोक के लिए [Church-authored email limits](/docs/developer/architecture/notifications#church-authored-email-limits) देखें।
 
-## Database Migrations
+## डेटाबेस माइग्रेशन {#database-migrations}
 
-Deploys database को change नहीं करते हैं। Hosted databases केवल Api की network के अंदर से connections को accept करते हैं, तो एक release के बाद जो एक migration add करता है, एक server admin इसे **Database Migrations** tab से apply करता है। (Self-hosted Docker installs अभी भी automatically migrations को run करते हैं जब Api container start होता है।)
+**Deploy Prod** वर्कफ़्लो लंबित माइग्रेशन स्वयं लागू करता है। होस्टेड डेटाबेस केवल Api के नेटवर्क के भीतर से कनेक्शन स्वीकार करते हैं, इसलिए GitHub runner उन तक नहीं पहुँच सकता। इसके बजाय `serverless deploy` के ठीक बाद वर्कफ़्लो Api का `migrate` Lambda (`api-Prod-migrate`) चलाता है, जो हर मॉड्यूल के लंबित माइग्रेशन उसी runner से चलाता है जैसे यह टैब चलाता है, और किसी भी मॉड्यूल में त्रुटि या अस्वीकृति होने पर deploy विफल कर देता है। **Rollback Prod** केवल Lambda कोड वापस लाता है; लागू हो चुके माइग्रेशन लागू ही रहते हैं। **Database Migrations** टैब स्थिति जाँचने के लिए है, साथ ही उन माइग्रेशन को चलाने के लिए जो deploy ने नहीं चलाए (उदाहरण के लिए demo वातावरण पर, जिसका deploy माइग्रेट नहीं करता), और उन मॉड्यूल को बेसलाइन करने के लिए जिनका कोई इतिहास नहीं है। (Self-hosted Docker इंस्टॉल Api कंटेनर शुरू होने पर अब भी माइग्रेशन स्वचालित रूप से चलाते हैं।)
 
-Tab current environment को show करता है और एक row per module (membership, attendance, giving, और इसी तरह) इसके status, applied और pending migrations की संख्या, और last one applied के साथ।
+टैब वर्तमान वातावरण और हर मॉड्यूल (membership, attendance, giving, आदि) के लिए एक पंक्ति दिखाता है, जिसमें उसकी स्थिति, लागू और लंबित माइग्रेशन की संख्या, और अंतिम लागू माइग्रेशन होता है।
 
-- **Run Pending Migrations** हर pending migration को apply करता है, एक module at a time, order में। यह पहली failure पर stops करता है और दिखाता है कि प्रत्येक module के लिए क्या apply किया गया।
-- एक module marked **No history** के पास एक database है जो migration tracking से पहले का है। इसे कभी automatically run नहीं किया जाता है, क्योंकि यह live tables पर old data migrations को replay करेगा। इस module पर **Check Schema** को click करें। Api तालिकाओं, columns, और indexes को compare करता है कि प्रत्येक migration create करता है live database के साथ और प्रत्येक migration को mark करता है **Already applied**, **Missing**, **Partly applied**, या **Data only**। Check द्वारा कुछ भी change नहीं होता है।
-- Check results में, **Record as Already Applied** detected migrations को migration history में write करता है उन्हें run किए बिना (एक confirmation के बाद)। सब कुछ last **Already applied** migration तक recorded है, including **Data only** ones उस range में; **Missing** ones pending रहते हैं और फिर **Run Pending Migrations** के साथ normally run किए जा सकते हैं।
-- एक **Partly applied** migration को recording block करता है। अगर migration को फिर से run करना safe है (पहले इसे read करें), **Re-run** को tick करें तो यह pending रहता है और top से फिर से run होता है।
+- **Run Pending Migrations** हर लंबित माइग्रेशन एक-एक मॉड्यूल करके, क्रम से लागू करता है। पहली विफलता पर रुक जाता है और हर मॉड्यूल के लिए दिखाता है कि क्या लागू हुआ।
+- जिस मॉड्यूल पर **No history** चिह्नित है, उसका डेटाबेस माइग्रेशन ट्रैकिंग से पहले का है। उसे कभी स्वचालित रूप से नहीं चलाया जाता, क्योंकि ऐसा करने से पुराने डेटा माइग्रेशन लाइव टेबल पर दोबारा चल जाएँगे। इसके बजाय उस मॉड्यूल पर **Check Schema** पर क्लिक करें। Api हर माइग्रेशन द्वारा बनाई गई टेबल, कॉलम और इंडेक्स की तुलना लाइव डेटाबेस से करता है और हर माइग्रेशन को **Already applied**, **Missing**, **Partly applied**, या **Data only** के रूप में चिह्नित करता है। जाँच से कुछ नहीं बदलता।
+- जाँच परिणामों में **Record as Already Applied** पता चले माइग्रेशन को बिना चलाए माइग्रेशन इतिहास में दर्ज करता है (पुष्टि के बाद)। अंतिम **Already applied** माइग्रेशन तक का सब कुछ दर्ज होता है, उस सीमा के **Data only** माइग्रेशन सहित; **Missing** माइग्रेशन लंबित ही रहते हैं और फिर **Run Pending Migrations** से सामान्य रूप से चलाए जा सकते हैं।
+- **Partly applied** माइग्रेशन दर्ज होने से रुकता है। यदि माइग्रेशन दोबारा चलाना सुरक्षित है (पहले उसे पढ़ लें), तो **Re-run** चिह्नित करें ताकि वह लंबित रहे और शुरुआत से दोबारा चले।
 
-Server Admin panel और CLI (`yarn migrate:up`) same Kysely migrator और `kysely_migration` table का use करते हैं, तो वे हमेशा agree करते हैं कि क्या apply किया गया है। Backing endpoints हैं `GET /membership/serverHealth/migrations`, `POST /membership/serverHealth/migrations/:module/run`, `GET .../:module/detect`, और `POST .../:module/baseline`, सभी Server.Admin only।
+Server Admin पैनल और CLI (`yarn migrate:up`) एक ही Kysely migrator और `kysely_migration` टेबल का उपयोग करते हैं, इसलिए वे हमेशा एकमत रहते हैं कि क्या लागू हुआ है। सहायक एंडपॉइंट हैं `GET /membership/serverHealth/migrations`, `POST /membership/serverHealth/migrations/:module/run`, `GET .../:module/detect`, और `POST .../:module/baseline`, ये सभी केवल Server.Admin के लिए हैं।
 
-## Related Pages
+## संबंधित पृष्ठ
 
-- [Authentication & Permissions](/docs/developer/api/endpoints/authentication) — Permission model और JWT authentication
-- [Membership Endpoints](/docs/developer/api/endpoints/membership) — User और church management API
-- [Audit Log](/docs/b1-admin/reports/audit-log) — church के लिए activity logs को view करें
-- [Content Commons Architecture](/docs/developer/architecture/commons) — Shared asset model और moderation lifecycle
+- [Authentication & Permissions](/docs/developer/api/endpoints/authentication) — अनुमति मॉडल और JWT प्रमाणीकरण
+- [Membership Endpoints](/docs/developer/api/endpoints/membership) — उपयोगकर्ता और चर्च प्रबंधन API
+- [Audit Log](/docs/b1-admin/reports/audit-log) — किसी चर्च की गतिविधि लॉग देखें
+- [Content Commons Architecture](/docs/developer/architecture/commons) — साझा एसेट मॉडल और मॉडरेशन जीवनचक्र

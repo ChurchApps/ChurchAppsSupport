@@ -6,15 +6,15 @@ title: "B1 Admin"
 
 <div class="article-intro">
 
-B1Admin es el panel de administración de la iglesia -- una aplicación de una sola página React construida con Vite y Material-UI. El personal de la iglesia la utiliza para gestionar personas, grupos, asistencia, donaciones, contenido y más.
+B1Admin es el panel de administración de la iglesia: una aplicación de una sola página en React, creada con Vite y Material-UI. El personal de la iglesia la usa para gestionar personas, grupos, asistencia, donaciones, contenido y más.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Instalar **Node.js 22+** y **Git** -- ver [Requisitos Previos](../setup/prerequisites)
-- Configurar su objetivo de API (preparación o local) -- ver [Variables de Entorno](../setup/environment-variables)
+- Instala **Node.js 22+** y **Git**; consulta [Requisitos previos](../setup/prerequisites)
+- Configura el destino de tu API (demo o local); consulta [Variables de entorno](../setup/environment-variables)
 
 </div>
 
@@ -26,20 +26,20 @@ B1Admin es el panel de administración de la iglesia -- una aplicación de una s
 git clone https://github.com/ChurchApps/B1Admin.git
 ```
 
-### 2. Instalar dependencias
+### 2. Instalar las dependencias
 
 ```bash
 cd B1Admin
 npm install
 ```
 
-### 3. Configurar variables de entorno
+### 3. Configurar las variables de entorno
 
 ```bash
 cp dotenv.sample.txt .env
 ```
 
-Abra `.env` y configure los puntos de conexión de API. Puede apuntarlos a la API de preparación o a su instancia de API local.
+Abre `.env` y configura los endpoints de la API. Puedes apuntarlos a la API de demostración compartida (`https://api.demo.churchapps.org`) o a tu instancia local de la API. El archivo de ejemplo todavía puede incluir URL de staging retiradas; reemplázalas.
 
 ### 4. Iniciar el servidor de desarrollo
 
@@ -47,45 +47,45 @@ Abra `.env` y configure los puntos de conexión de API. Puede apuntarlos a la AP
 npm start
 ```
 
-Esto inicia el servidor de desarrollo de Vite. La aplicación estará disponible en su navegador con reemplazo de módulo en caliente habilitado.
+Esto inicia el servidor de desarrollo de Vite. La aplicación estará disponible en tu navegador, con reemplazo de módulos en caliente (HMR) habilitado.
 
-## Variables de Entorno Clave
+## Variables de entorno principales
 
 | Variable | Descripción |
 |----------|-------------|
-| `REACT_APP_STAGE` | Nombre de entorno (p. ej., `local`, `staging`, `prod`) |
+| `REACT_APP_STAGE` | Nombre del entorno (por ejemplo, `demo` como en el archivo de ejemplo, `prod` o `selfhost`) |
 | `PORT` | Puerto del servidor de desarrollo (predeterminado: `3101`) |
-| `REACT_APP_*_API` | URLs de punto de conexión de API para cada módulo |
+| `REACT_APP_*_API` | URL de los endpoints de la API para cada módulo |
 
 :::info
-El script `postinstall` copia archivos de configuración regional y CSS de `@churchapps/apphelper`. Si los componentes se ven sin estilos, ejecute `npm run postinstall` manualmente.
+El script `postinstall` copia los archivos de idioma y CSS de `@churchapps/apphelper`. Si los componentes se ven sin estilos, ejecuta `npm run postinstall` manualmente.
 :::
 
-## Comandos Clave
+## Comandos principales
 
 | Comando | Descripción |
 |---------|-------------|
-| `npm start` | Iniciar servidor de desarrollo Vite |
-| `npm run build` | Compilación de producción a través de Vite |
-| `npm run test` | Ejecutar pruebas de extremo a extremo con Playwright |
-| `npm run lint` | Ejecutar ESLint con auto-corrección |
+| `npm start` | Inicia el servidor de desarrollo de Vite |
+| `npm run build` | Compilación de producción con Vite |
+| `npm run test` | Ejecuta las pruebas de extremo a extremo con Playwright |
+| `npm run lint` | Ejecuta ESLint con corrección automática |
 
-## Pila Tecnológica
+## Stack tecnológico
 
 - **React 19** con TypeScript
-- **Vite** para herramientas de compilación y servidor de desarrollo
-- **Material-UI 7** para componentes de interfaz de usuario
-- **React Query 5** para estado del servidor
-- Paquetes `@churchapps/apphelper*` para componentes compartidos
+- **Vite** para las herramientas de compilación y el servidor de desarrollo
+- **Material-UI 7** para los componentes de la interfaz
+- **React Query 5** para el estado del servidor
+- **`@churchapps/apphelper*`**: paquetes compartidos para los componentes comunes
 
 ## Despliegue
 
 Las compilaciones de producción se despliegan en **S3 + CloudFront**:
 
-1. `npm run build` genera activos estáticos
-2. Los activos se sincronizan a un grupo S3
+1. `npm run build` genera los recursos estáticos
+2. Los recursos se sincronizan con un bucket de S3
 3. Se activa la invalidación de CloudFront para servir la nueva versión
 
 :::tip
-Para instrucciones de despliegue detalladas, ver la guía [Despliegue de Aplicación Web](../deployment/web-apps).
+Para instrucciones de despliegue más detalladas, consulta la guía [Despliegue de aplicaciones web](../deployment/web-apps).
 :::

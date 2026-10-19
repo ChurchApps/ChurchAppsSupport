@@ -46,7 +46,7 @@ Hver endring i en pakke leveres med et changeset:
 Kjør aldri en rå `npm publish` inne i en enkelt pakke -- den hopper over byggerekkefølgen og versjonsbokføringen som utgivelsesskriptet tar seg av. Publisering krever en npm-konto med publiseringsrettigheter til `@churchapps`-omfanget.
 :::
 
-## Lokal utvikling mot en konsumerende app
+## Lokal utvikling mot en konsumerende app {#local-development-against-a-consuming-app}
 
 Inne i workspacet bygges pakkene direkte mot søskenpakkene sine -- ingen lenking er nødvendig. For å teste et upublisert pakkebygg inne i en konsumerende app (B1Admin, B1App osv.), legg til en midlertidig Yarn-portal i konsumenten:
 

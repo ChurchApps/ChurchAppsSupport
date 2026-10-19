@@ -6,23 +6,23 @@ title: "B1App"
 
 <div class="article-intro">
 
-B1App ist die öffentliche Gemeinde-Mitglieder-Anwendung gebaut mit Next.js. Sie bietet die Mitglieder-Erfahrung einschließlich Profile, Gruppen-Verzeichnisse, Live-Streaming und Spendenseiten.
+B1App ist die öffentlich zugängliche Mitglieder-Anwendung der Kirche, entwickelt mit Next.js. Sie bietet das Mitgliedererlebnis mit Profilen, Gruppenverzeichnissen, Live-Streaming und Spendenseiten.
 
 </div>
 
 <div class="prereqs">
-<h4>Vor dem Start</h4>
+<h4>Bevor Sie beginnen</h4>
 
 - Installieren Sie **Node.js 22+** und **Git** — siehe [Voraussetzungen](../setup/prerequisites)
-- Konfigurieren Sie Ihr API-Ziel (Staging oder lokal) — siehe [Umgebungsvariablen](../setup/environment-variables)
+- Konfigurieren Sie Ihr API-Ziel (Demo oder lokal) — siehe [Umgebungsvariablen](../setup/environment-variables)
 
 </div>
 
 :::warning
-B1App benötigt Node.js 22 oder später. Frühere Versionen werden nicht unterstützt.
+B1App erfordert Node.js 22 oder neuer. Frühere Versionen werden nicht unterstützt.
 :::
 
-## Setup
+## Einrichtung
 
 ### 1. Repository klonen
 
@@ -43,51 +43,51 @@ npm install
 cp dotenv.sample.txt .env
 ```
 
-Öffnen Sie `.env` und konfigurieren Sie die `NEXT_PUBLIC_*_API`-Endpoint-URLs. Diese können auf die Staging-API oder Ihre lokale API-Instanz zeigen.
+Öffnen Sie `.env` und konfigurieren Sie die URLs der Endpunkte `NEXT_PUBLIC_*_API`. Diese können auf die gemeinsame Demo-API (`https://api.demo.churchapps.org`) oder auf Ihre lokale API-Instanz zeigen. Die Beispieldatei enthält unter Umständen noch eingestellte Staging-URLs; ersetzen Sie diese.
 
-### 4. Dev-Server starten
+### 4. Entwicklungsserver starten
 
 ```bash
 npm run dev
 ```
 
-Der Next.js-Dev-Server startet bei [http://localhost:3301](http://localhost:3301).
+Der Next.js-Entwicklungsserver startet unter [http://localhost:3301](http://localhost:3301).
 
 ## Wichtige Befehle
 
 | Befehl | Beschreibung |
 |---------|-------------|
-| `npm run dev` | Next.js-Dev-Server auf Port 3301 starten |
-| `npm run build` | Production-Build via Next.js |
+| `npm run dev` | Next.js-Entwicklungsserver auf Port 3301 starten |
+| `npm run build` | Produktionsbuild über Next.js |
 | `npm run test` | End-to-End-Tests mit Playwright ausführen |
-| `npm run lint` | Next.js Lint ausführen |
+| `npm run lint` | Next.js-Lint ausführen |
 
 ## Wichtige Umgebungsvariablen
 
 | Variable | Beschreibung |
-|----------|-------------|
-| `NEXT_PUBLIC_*_API` | API-Endpoint-URLs für jedes Modul |
+|----------|----------|
+| `NEXT_PUBLIC_*_API` | API-Endpunkt-URLs für jedes Modul |
 
 :::info
-Das `postinstall`-Skript kopiert Locale- und CSS-Dateien von `@churchapps/apphelper`. Wenn Komponenten nach Installation von Abhängigkeiten unstyled aussehen, führen Sie `npm run postinstall` manuell aus.
+Das Skript `postinstall` kopiert Locale- und CSS-Dateien aus `@churchapps/apphelper`. Wirken Komponenten nach der Installation unformatiert, führen Sie `npm run postinstall` manuell aus.
 :::
 
-## Tech-Stack
+## Technologie-Stack
 
 - **Next.js 16** mit TypeScript
 - **React 19** für UI-Komponenten
-- **Material-UI 7** für Design-System
-- **React Query 5** für Server-State
-- **`@churchapps/apphelper*`**-Packages für gemeinsame Komponenten
+- **Material-UI 7** als Designsystem
+- **React Query 5** für den Serverstatus
+- **`@churchapps/apphelper*`**-Pakete für gemeinsam genutzte Komponenten
 
-## Deployment
+## Bereitstellung
 
-Production-Builds sind zu **S3 + CloudFront** deployed:
+Produktionsbuilds werden auf **S3 + CloudFront** bereitgestellt:
 
-1. `npm run build` generiert den optimierten Next.js-Build
-2. Build-Output wird zu einem S3-Bucket synced
-3. CloudFront-Invalidation wird ausgelöst, um die neue Version zu servieren
+1. `npm run build` erzeugt den optimierten Next.js-Build
+2. Die Build-Ausgabe wird in einen S3-Bucket synchronisiert
+3. Eine CloudFront-Invalidierung wird ausgelöst, damit die neue Version ausgeliefert wird
 
 :::tip
-Für detaillierte Deployment-Anweisungen, siehe [Web-App-Deployment](../deployment/web-apps)-Leitfaden.
+Ausführliche Anweisungen zur Bereitstellung finden Sie im Leitfaden [Bereitstellung der Web-Apps](../deployment/web-apps).
 :::

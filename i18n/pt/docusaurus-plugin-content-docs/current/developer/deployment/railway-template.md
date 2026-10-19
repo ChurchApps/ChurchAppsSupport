@@ -54,7 +54,7 @@ Os esquemas do banco de dados são criados automaticamente no primeiro lançamen
 
 Agora que você está funcionando, aqui estão as coisas que a maioria das igrejas configura em seguida, em ordem aproximada de prioridade.
 
-### 1. E-mail (Altamente Recomendado)
+### 1. E-mail (Altamente Recomendado) {#1-email-highly-recommended}
 
 Sem e-mail, os membros ainda podem se registrar e usar o sistema, mas **eles não conseguem redefinir senhas esquecidas** -- um administrador precisa fazer isso por eles. Configurar SMTP leva cerca de 5 minutos.
 
@@ -125,7 +125,7 @@ REACT_APP_B1_WEBSITE_URL=https://{subdomain}.suaigreja.org
 
 O token `{subdomain}` é literal -- ele é substituído em tempo de execução pelo subdomínio de cada igreja (veja Multi-Site abaixo).
 
-### 3. Multi-Site (Múltiplas Igrejas em Uma Instância)
+### 3. Multi-Site (Múltiplas Igrejas em Uma Instância) {#3-multi-site-multiple-churches-on-one-instance}
 
 O ChurchApps é multilocatário por design -- uma implantação pode hospedar qualquer número de igrejas, cada uma com suas próprias pessoas, grupos e website. Novas igrejas são adicionadas inteiramente através da UI de administração; nenhuma alteração de infraestrutura é necessária.
 
@@ -156,7 +156,7 @@ Após a reimplantação, o site de cada igreja é servido automaticamente em `<s
 Domínios customizados curinga requerem um plano pago do Railway. O roteamento baseado em caminho funciona em todos os planos e é funcionalmente idêntico -- apenas menos bonito na barra de URL.
 :::
 
-### 4. Doações Online (Stripe / PayPal)
+### 4. Doações Online (Stripe / PayPal) {#4-online-giving-stripe--paypal}
 
 As doações são configuradas **por igreja dentro da UI de administração**, não via variáveis de ambiente -- dessa forma, cada igreja pode usar sua própria conta de comerciante.
 
@@ -165,7 +165,7 @@ As doações são configuradas **por igreja dentro da UI de administração**, n
 3. Escolha seu provedor, cole as chaves Pública e Secreta, e configure o tratamento de taxas.
 4. Opcionalmente, adicione `GOOGLE_RECAPTCHA_SECRET_KEY` ao serviço **Api** no Railway para proteger formulários de doação públicos contra bots.
 
-### 5. Armazenamento de Arquivos
+### 5. Armazenamento de Arquivos {#5-file-storage}
 
 O modelo provisiona um **volume persistente de 1 GB** montado no serviço Api para fotos de membros, arquivos de sermões e documentos enviados.
 
@@ -183,7 +183,7 @@ AWS_REGION=us-east-2
 
 Arquivos existentes no volume não migram automaticamente -- copie-os para o bucket antes de alternar a variável.
 
-### 6. Integrações de Funcionalidades Opcionais
+### 6. Integrações de Funcionalidades Opcionais {#6-optional-feature-integrations}
 
 Elas desbloqueiam funcionalidades específicas e podem ser adicionadas depois via o painel do Railway. Defina-as no serviço **Api**.
 

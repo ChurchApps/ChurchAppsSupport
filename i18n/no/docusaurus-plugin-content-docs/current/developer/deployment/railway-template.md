@@ -54,7 +54,7 @@ Databaseskjemaer opprettes automatisk ved første oppstart av API-ets oppstartsm
 
 Nå som du er oppe og går, er her tingene de fleste kirker setter opp neste, omtrent i prioritert rekkefølge.
 
-### 1. E-post (sterkt anbefalt)
+### 1. E-post (sterkt anbefalt) {#1-email-highly-recommended}
 
 Uten e-post kan medlemmer fortsatt registrere seg og bruke systemet, men **de kan ikke tilbakestille glemte passord** — en administrator må gjøre det for dem. Å sette opp SMTP tar omtrent 5 minutter.
 
@@ -125,7 +125,7 @@ REACT_APP_B1_WEBSITE_URL=https://{subdomain}.yourchurch.org
 
 `{subdomain}`-symbolet er bokstavelig — det erstattes ved kjøretid med hver kirkes subdomene (se Flere kirker nedenfor).
 
-### 3. Flere kirker (flere kirker på én instans)
+### 3. Flere kirker (flere kirker på én instans) {#3-multi-site-multiple-churches-on-one-instance}
 
 ChurchApps er utviklet for å være flerleietaker (multi-tenant) — én distribusjon kan huse et hvilket som helst antall kirker, hver med sine egne personer, grupper og nettsted. Nye kirker legges til utelukkende gjennom administrasjonsgrensesnittet; ingen infrastrukturendringer er nødvendige.
 
@@ -156,7 +156,7 @@ Etter ny distribusjon serveres hver kirkes nettsted automatisk på `<their-subdo
 Wildcard tilpassede domener krever en betalt Railway-plan. Sti-basert ruting fungerer på alle planer og er funksjonelt identisk — bare mindre pen i adresselinjen.
 :::
 
-### 4. Nettbasert giving (Stripe / PayPal)
+### 4. Nettbasert giving (Stripe / PayPal) {#4-online-giving-stripe--paypal}
 
 Giving konfigureres **per kirke inne i administrasjonsgrensesnittet**, ikke via miljøvariabler — slik kan hver kirke bruke sin egen forhandlerkonto.
 
@@ -165,7 +165,7 @@ Giving konfigureres **per kirke inne i administrasjonsgrensesnittet**, ikke via 
 3. Velg leverandøren din, lim inn de offentlige og hemmelige nøklene, og konfigurer gebyrhåndtering.
 4. Legg eventuelt til `GOOGLE_RECAPTCHA_SECRET_KEY` på **Api**-tjenesten i Railway for å beskytte offentlige donasjonsskjemaer mot roboter.
 
-### 5. Fillagring
+### 5. Fillagring {#5-file-storage}
 
 Malen setter opp et **1 GB vedvarende volum** montert på Api-tjenesten for medlemsbilder, prekenfiler og opplastede dokumenter.
 
@@ -183,7 +183,7 @@ AWS_REGION=us-east-2
 
 Eksisterende filer i volumet migreres ikke automatisk — kopier dem til bøtta før du slår om variabelen.
 
-### 6. Valgfrie funksjonsintegrasjoner
+### 6. Valgfrie funksjonsintegrasjoner {#6-optional-feature-integrations}
 
 Disse låser opp spesifikke funksjoner og kan alle legges til senere via Railway-dashbordet. Sett dem på **Api**-tjenesten.
 

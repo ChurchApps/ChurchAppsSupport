@@ -6,113 +6,113 @@ title: "Administration du serveur"
 
 <div class="article-intro">
 
-Les fonctionnalités d'administration du serveur dans ChurchApps ne sont disponibles que pour les utilisateurs disposant de la permission **Server.Admin**. Ces outils sont utilisés pour les opérations de plateforme, le support et le dépannage dans toutes les églises du système.
+Les fonctionnalités d'administration serveur de ChurchApps ne sont accessibles qu'aux utilisateurs disposant de la permission **Server.Admin**. Ces outils servent aux opérations de la plateforme, au support et au dépannage pour toutes les églises du système.
 
 </div>
 
 :::warning Accès restreint
-Les fonctionnalités décrites sur cette page nécessitent la permission **Server.Admin** et ne sont pas disponibles pour les administrateurs d'église réguliers. Elles sont destinées uniquement aux opérateurs de plateforme et au personnel de support.
+Les fonctionnalités décrites sur cette page nécessitent la permission **Server.Admin** et ne sont pas disponibles pour les administrateurs d'église ordinaires. Elles sont destinées uniquement aux opérateurs de la plateforme et au personnel de support.
 :::
 
-## Accès à l'administration du serveur
+## Accéder à l'administration serveur
 
-Les utilisateurs disposant de la permission Server.Admin peuvent accéder au panneau d'administration du serveur à partir de B1 Admin :
+Les utilisateurs disposant de la permission Server.Admin peuvent accéder au panneau d'administration serveur depuis B1 Admin :
 
 1. Connectez-vous à [admin.b1.church](https://admin.b1.church)
-2. Ouvrez le [menu Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu), développez **Settings**, et cliquez sur **Server Admin**. (Vous pouvez aussi aller directement à `admin.b1.church/admin`.)
-3. Le panneau Server Admin affiche ses sections sur le côté gauche, en trois groupes : **Directory** (Churches, Users, Impersonate User), **Operations** (Background Jobs, Commons, Usage Trends) et **System** (Translation Lookups, Server Health, Database Migrations)
+2. Ouvrez le [menu Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu), développez **Settings** (Paramètres), puis cliquez sur **Server Admin**. (Vous pouvez aussi accéder directement à `admin.b1.church/admin`.)
+3. Le panneau Server Admin présente ses sections sur le côté gauche, en trois groupes : **Directory** (Churches, Users, Impersonate User), **Operations** (Background Jobs, Commons, Usage Trends) et **System** (Translation Lookups, Server Health, Database Migrations)
 
-## Usurpation d'utilisateur
+## Usurpation d'identité d'un utilisateur
 
-La fonctionnalité d'usurpation permet aux administrateurs serveur de se connecter en tant qu'un autre utilisateur à des fins de support et de dépannage. C'est utile pour enquêter sur les problèmes signalés par l'utilisateur ou aider les églises à configurer leurs systèmes.
+La fonction d'usurpation permet aux administrateurs serveur de se connecter en tant qu'un autre utilisateur, à des fins de support et de dépannage. Elle est utile pour enquêter sur les problèmes signalés par les utilisateurs ou pour aider les églises à configurer leurs systèmes.
 
-### Comment usurper un utilisateur
+### Comment usurper l'identité d'un utilisateur
 
 1. Ouvrez la section **Impersonate User** du panneau Server Admin
-2. Entrez le nom ou l'adresse email de l'utilisateur dans le champ de recherche
+2. Saisissez le nom ou l'adresse e-mail de l'utilisateur dans le champ de recherche
 3. Cliquez sur **Search** ou appuyez sur Entrée
-4. Dans les résultats de recherche, cliquez sur l'utilisateur que vous souhaitez usurper
-5. Confirmez l'usurpation dans la boîte de dialogue qui apparaît
+4. Dans les résultats de recherche, cliquez sur l'utilisateur dont vous voulez usurper l'identité
+5. Confirmez l'usurpation dans la boîte de dialogue qui s'affiche
 6. Vous serez connecté en tant que cet utilisateur et redirigé vers son compte
 
-### Notes importantes
+### Remarques importantes
 
-- L'usurpation crée une nouvelle session avec les permissions et l'accès à l'église de l'utilisateur cible
-- Votre session d'administration d'origine se termine quand vous usurpez un autre utilisateur
-- Toutes les actions prises lors de l'usurpation sont enregistrées dans la piste d'audit
-- Pour revenir à votre compte d'administration, déconnectez-vous et reconnectez-vous avec vos identifiants
-- N'utilisez l'usurpation que lorsque c'est nécessaire à des fins de support et informez toujours les utilisateurs quand vous accédez à leurs comptes pour le support
+- L'usurpation crée une nouvelle session avec les permissions et l'accès aux églises de l'utilisateur ciblé
+- Votre session administrateur d'origine prend fin lorsque vous usurpez l'identité d'un autre utilisateur
+- Toutes les actions effectuées pendant l'usurpation sont consignées dans le journal d'audit
+- Pour revenir à votre compte administrateur, déconnectez-vous puis reconnectez-vous avec vos identifiants
+- N'utilisez l'usurpation que lorsque c'est nécessaire pour le support, et informez toujours les utilisateurs lorsque vous accédez à leur compte à des fins de support
 
 ### Point de terminaison API
 
-La fonctionnalité d'usurpation est soutenue par le point de terminaison `/users/:userId/impersonate` dans l'API d'adhésion. Voir [Membership Endpoints](/docs/developer/api/endpoints/membership#users) pour les détails techniques.
+La fonction d'usurpation repose sur le point de terminaison `/users/:userId/impersonate` de l'API Membership. Consultez [Points de terminaison Membership](/docs/developer/api/endpoints/membership#users) pour les détails techniques.
 
 ### Considérations de sécurité
 
-- L'usurpation nécessite la permission Server.Admin - cette permission doit être accordée avec parcimonie et uniquement aux opérateurs de plateforme de confiance
-- Tous les événements d'usurpation sont enregistrés avec l'ID d'utilisateur d'administration et l'ID d'utilisateur cible
-- Les églises ne sont pas notifiées quand l'usurpation se produit, donc établissez une politique claire pour le moment et la façon dont cette fonctionnalité doit être utilisée
-- Envisagez de documenter les événements d'usurpation dans votre système de ticket de support pour l'accountability
+- L'usurpation nécessite la permission Server.Admin — cette permission doit être accordée avec parcimonie et uniquement à des opérateurs de plateforme de confiance
+- Tous les événements d'usurpation sont consignés avec l'identifiant de l'administrateur et celui de l'utilisateur ciblé
+- Les églises ne sont pas averties lorsqu'une usurpation a lieu ; établissez donc des règles claires quant au moment et à la manière d'utiliser cette fonction
+- Envisagez de documenter les événements d'usurpation dans votre système de tickets de support afin d'assurer la traçabilité
 
 ## Modération des Commons
 
-Commons est la file d'attente de modération partagée pour le contenu soumis par l'utilisateur sur tous les produits — les chansons WorshipCommons, les leçons Lessons.church, les modèles FreeShow, et les modèles du constructeur de sites Web B1 passent tous par la même file d'attente au lieu d'outils d'examen distincts par produit.
+Commons est la file de modération partagée pour le contenu soumis par les utilisateurs à travers les produits — les chansons de WorshipCommons, les leçons de Lessons.church, les modèles FreeShow et les modèles du constructeur de sites web B1 transitent tous par la même file, au lieu d'outils de révision distincts pour chaque produit.
 
-### Accès à Commons
+### Accéder à Commons
 
-1. Accédez à l'onglet **Commons** du panneau Server Admin.
-2. Vous verrez trois sous-onglets : **Queue**, **Reports**, et **Assets**.
+1. Accédez à l'onglet **Commons** dans le panneau Server Admin.
+2. Vous verrez trois sous-onglets : **Queue** (File d'attente), **Reports** (Signalements) et **Assets** (Ressources).
 
-Un rôle **music editor** limité peut aussi voir l'onglet Queue, mais est bloqué par l'approbation des soumissions qui modifient les droits ou la licence d'une chanson.
+Un rôle **éditeur musical** limité peut également voir l'onglet Queue, mais il ne peut pas approuver les soumissions qui modifient les droits ou la licence d'une chanson.
 
-### File d'attente
+### Queue
 
-La file d'attente énumère chaque soumission en attente sur tous les produits, filtrables par produit et type d'actif. Chaque ligne montre si la soumission est un nouvel actif, une édition par son auteur d'origine, ou une édition par un tiers, ainsi que le dossier d'approbation du soumettant et combien de temps la soumission attend (signalée une fois qu'elle dépasse 72 heures).
+La file d'attente liste toutes les soumissions en attente, tous produits confondus, filtrables par produit et par type de ressource. Chaque ligne indique si la soumission est une nouvelle ressource, une modification par son auteur initial ou une modification par un tiers, ainsi que le bilan d'approbation de l'auteur de la soumission et le temps d'attente (signalé une fois qu'il dépasse 72 heures).
 
-Cliquez sur **Review** pour ouvrir un tiroir avec des diffs au niveau des champs, des aperçus de fichiers, et un aperçu intégré en lecture seule de l'article. Utilisez les raccourcis clavier **a**/**r** pour approuver ou rejeter, et **j**/**k** pour passer à la soumission suivante ou précédente sans quitter le tiroir. Rejeter nécessite de sélectionner une raison (par exemple qualité, doublure, licence, ccli, ia, ou hors sujet) et une note.
+Cliquez sur **Review** (Examiner) pour ouvrir un tiroir avec les différences champ par champ, les aperçus des fichiers et un aperçu en lecture seule de l'élément. Utilisez les raccourcis clavier **a**/**r** pour approuver ou rejeter, et **j**/**k** pour passer à la soumission suivante ou précédente sans quitter le tiroir. Pour rejeter, vous devez choisir un motif (par exemple qualité, doublon, licence, ccli, ai ou hors sujet) et ajouter une note.
 
-### Rapports
+### Reports
 
-L'onglet Rapports gère les droits d'auteur et les rapports de politique/qualité déposés contre les actifs déjà publiés, divisés en files d'attente Copyright et Policy & Other distinctes plus un historique Resolved. Réclamez un rapport pour commencer à le traiter, puis résolvez-le avec une résolution (maintenue, rejetée, ou doublure) et une action (aucune, annulation de publication, ou suppression).
+L'onglet Reports traite les signalements de droits d'auteur et de politique/qualité déposés contre des ressources déjà publiées, répartis dans les files séparées Copyright et Policy & Other, ainsi que dans un historique Resolved. Prenez en charge un signalement pour commencer à le traiter, puis résolvez-le avec une décision (upheld, dismissed ou duplicate) et une action (none, unpublish ou remove).
 
-### Actifs
+### Assets
 
-L'onglet Assets est un navigateur interrogeable du contenu publié avec actions pour **Feature** un actif (le met en évidence sur la page d'accueil du produit), **Unpublish**/**Republish** it, ou **Remove** it (avec une raison de droits d'auteur ou de politique).
+L'onglet Assets est un navigateur consultable du contenu publié, avec des actions pour **Feature** (mettre en avant) une ressource (elle apparaît alors sur la page d'accueil du produit), **Unpublish**/**Republish** (dépublier/republier) ou **Remove** (supprimer) avec un motif de droits d'auteur ou de politique.
 
-Pour les chansons spécifiquement, c'est aussi ici qu'une chanson devient **Sunday-ready** et admissible à apparaître dans la recherche de chansons B1 Admin d'une église : un reviewer ouvre l'actif et marque chaque clé publiée comme **Listened** une fois qu'il l'a écoutée et confirmé que le score, les accords, et les slides sont tous présents. Une chanson ne devient Sunday-ready qu'une fois chaque clé cochée.
+Pour les chansons en particulier, c'est aussi ici qu'une chanson devient **Sunday-ready** (prête pour le dimanche) et peut apparaître dans la recherche de chansons de B1 Admin d'une église : un réviseur ouvre la ressource et marque chaque tonalité publiée comme **Listened** (écoutée) une fois qu'il l'a écoutée en entier et confirmé que la partition, les accords et les diapositives sont tous présents. Une chanson ne devient prête pour le dimanche que lorsque toutes les tonalités sont cochées.
 
 :::info
-La modération Commons est réservée au personnel — les églises individuelles ne voient jamais cette file d'attente. L'endroit où l'administration B1 d'une église individuelle touche les données Commons est la section « WorshipCommons — free » de la [recherche de chansons](/docs/b1-admin/serving/songs#free-songs-from-worshipcommons), qui ne présente que les chansons qui ont déjà traversé ce processus d'examen.
+La modération Commons est réservée au personnel — les églises individuelles ne voient jamais cette file. Le seul endroit où B1 Admin d'une église touche aux données Commons est la section « WorshipCommons — gratuit » de la [recherche de chansons](/docs/b1-admin/serving/songs#free-songs-from-worshipcommons), qui n'affiche que les chansons déjà passées par ce processus de révision.
 :::
 
-Voir la page [architecture Content Commons](/docs/developer/architecture/commons) pour le modèle de données sous-jacent et le cycle de vie de la soumission.
+Consultez la page [Architecture de Content Commons](/docs/developer/architecture/commons) pour le modèle de données sous-jacent et le cycle de vie des soumissions.
 
-## Approbation d'email de groupe
+## Approbation de l'e-mail de groupe
 
-Les églises ne peuvent pas envoyer d'email rédigé par l'église (email de groupe, suivis de formulaire, emails de workflow, et invitations de compte) tant qu'un administrateur serveur ne les approuve pas. Cela empêche les églises auto-enregistrées d'utiliser l'adresse d'envoi ChurchApps partagée pour le spam.
+Les églises ne peuvent pas envoyer d'e-mails rédigés par l'église (e-mails de groupe, suivis de formulaires, e-mails de workflow et invitations de compte) tant qu'un administrateur serveur ne les a pas approuvées. Cela empêche les églises enregistrées par des robots d'utiliser l'adresse d'envoi partagée de ChurchApps pour envoyer du spam.
 
-1. Ouvrez l'onglet **Churches** du panneau Server Admin.
-2. Chaque église affiche une puce **Group Email** : **Approved** (vert) ou **Not approved** (outlined).
-3. Cliquez sur la puce et confirmez pour approuver l'église, ou pour révoquer une approbation.
+1. Ouvrez l'onglet **Churches** (Églises) dans le panneau Server Admin.
+2. Chaque église affiche une pastille **Group Email** : **Approved** (vert) ou **Not approved** (contour).
+3. Cliquez sur la pastille et confirmez pour approuver l'église, ou pour révoquer une approbation.
 
-Le personnel d'église demande l'approbation avec le bouton **Request review** dans la boîte de dialogue Send Email de B1 Admin. La demande est envoyée par email à l'adresse de support et énumère le nom, l'ID, la date d'enregistrement, l'emplacement de l'église, et qui a demandé. Une église peut envoyer une demande par semaine. Voir [limites d'email rédigé par l'église](/docs/developer/architecture/notifications#church-authored-email-limits) pour l'allocation quotidienne et la pause automatique sur les rebonds et les plaintes.
+Le personnel de l'église demande l'approbation avec le bouton **Request review** (Demander un examen) dans la boîte de dialogue Send Email de B1 Admin. La demande est envoyée par e-mail à l'adresse de support et indique le nom de l'église, son identifiant, sa date d'inscription, son emplacement et la personne qui l'a demandée. Une église ne peut envoyer qu'une demande par semaine. Consultez [Limites des e-mails rédigés par l'église](/docs/developer/architecture/notifications#church-authored-email-limits) pour le quota quotidien et la suspension automatique en cas de rebonds ou de plaintes.
 
-## Migrations de base de données
+## Migrations de base de données {#database-migrations}
 
-Les déploiements ne modifient pas la base de données. Les bases de données hébergées n'acceptent que les connexions de l'intérieur du réseau de l'Api, donc après une version qui ajoute une migration, un administrateur serveur l'applique à partir de l'onglet **Database Migrations**. (Les installations Docker auto-hébergées exécutent toujours les migrations automatiquement quand le conteneur Api démarre.)
+Le workflow **Deploy Prod** applique lui-même les migrations en attente. Les bases de données hébergées n'acceptent les connexions que depuis le réseau de l'Api, de sorte qu'un runner GitHub ne peut pas les atteindre ; à la place, immédiatement après `serverless deploy`, le workflow invoque la fonction Lambda `migrate` de l'Api (`api-Prod-migrate`), qui exécute les migrations en attente de chaque module avec le même runner que cet onglet, et fait échouer le déploiement si un module provoque une erreur ou est refusé. **Rollback Prod** ne restaure que le code de la Lambda ; les migrations déjà appliquées restent appliquées. L'onglet **Database Migrations** sert à vérifier l'état, à exécuter ce qu'un déploiement n'a pas fait (par exemple sur l'environnement de démo, dont le déploiement n'effectue pas de migration), et à initialiser l'historique des modules qui n'en ont pas. (Les installations Docker auto-hébergées exécutent toujours les migrations automatiquement au démarrage du conteneur de l'Api.)
 
-L'onglet affiche l'environnement actuel et une ligne par module (membership, attendance, giving, et ainsi de suite) avec son statut, le nombre de migrations appliquées et en attente, et la dernière appliquée.
+L'onglet affiche l'environnement actuel et une ligne par module (membership, attendance, giving, etc.) avec son état, le nombre de migrations appliquées et en attente, et la dernière migration appliquée.
 
-- **Run Pending Migrations** applique chaque migration en attente, un module à la fois, dans l'ordre. Il s'arrête au premier échec et affiche ce qui a été appliqué pour chaque module.
-- Un module marqué **No history** a une base de données qui précède le suivi des migrations. Il n'est jamais exécuté automatiquement, car cela rejuerait les anciennes migrations de données sur des tableaux en direct. Cliquez sur **Check Schema** sur ce module à la place. L'Api compare les tableaux, colonnes, et index que chaque migration crée avec la base de données en direct et marque chaque migration **Already applied**, **Missing**, **Partly applied**, ou **Data only**. Rien n'est changé par la vérification.
-- Dans les résultats de vérification, **Record as Already Applied** écrit les migrations détectées dans l'historique de migration sans les exécuter (après une confirmation). Tout jusqu'à la dernière migration **Already applied** est enregistré, y compris les migrations **Data only** dans cette plage ; les migrations **Missing** restent en attente et peuvent ensuite être exécutées normalement avec **Run Pending Migrations**.
-- Une migration **Partly applied** bloque l'enregistrement. Si la migration est sûre à exécuter à nouveau (lisez-la d'abord), cochez **Re-run** afin qu'elle reste en attente et s'exécute à nouveau du haut.
+- **Run Pending Migrations** (Exécuter les migrations en attente) applique toutes les migrations en attente, un module à la fois, dans l'ordre. Il s'arrête à la première erreur et indique ce qui a été appliqué pour chaque module.
+- Un module marqué **No history** (Pas d'historique) possède une base de données antérieure au suivi des migrations. Il n'est jamais exécuté automatiquement, car cela rejouerait d'anciennes migrations de données sur des tables en production. Cliquez plutôt sur **Check Schema** (Vérifier le schéma) pour ce module. L'Api compare les tables, colonnes et index créés par chaque migration avec la base de données en production, puis marque chaque migration **Already applied** (Déjà appliquée), **Missing** (Manquante), **Partly applied** (Partiellement appliquée) ou **Data only** (Données uniquement). La vérification ne modifie rien.
+- Dans les résultats de vérification, **Record as Already Applied** (Enregistrer comme déjà appliquée) inscrit les migrations détectées dans l'historique des migrations sans les exécuter (après confirmation). Tout ce qui précède la dernière migration **Already applied** est enregistré, y compris les migrations **Data only** de cette plage ; les migrations **Missing** restent en attente et peuvent ensuite être exécutées normalement avec **Run Pending Migrations**.
+- Une migration **Partly applied** bloque l'enregistrement. Si la migration peut être réexécutée sans risque (lisez-la d'abord), cochez **Re-run** (Réexécuter) afin qu'elle reste en attente et s'exécute à nouveau depuis le début.
 
-Le panneau Server Admin et l'CLI (`yarn migrate:up`) utilisent le même migrateur Kysely et la table `kysely_migration`, donc ils s'accordent toujours sur ce qui a été appliqué. Les points de terminaison de soutien sont `GET /membership/serverHealth/migrations`, `POST /membership/serverHealth/migrations/:module/run`, `GET .../:module/detect`, et `POST .../:module/baseline`, tous Server.Admin uniquement.
+Le panneau Server Admin et la CLI (`yarn migrate:up`) utilisent le même migrateur Kysely et la même table `kysely_migration`, de sorte qu'ils s'accordent toujours sur ce qui a été appliqué. Les points de terminaison sous-jacents sont `GET /membership/serverHealth/migrations`, `POST /membership/serverHealth/migrations/:module/run`, `GET .../:module/detect` et `POST .../:module/baseline`, tous réservés à Server.Admin.
 
-## Pages connexes
+## Pages associées
 
-- [Authentification & Permissions](/docs/developer/api/endpoints/authentication) — Modèle de permission et authentification JWT
-- [Membership Endpoints](/docs/developer/api/endpoints/membership) — API de gestion des utilisateurs et des églises
-- [Audit Log](/docs/b1-admin/reports/audit-log) — Afficher les journaux d'activité pour une église
-- [Content Commons Architecture](/docs/developer/architecture/commons) — Modèle d'actif partagé et cycle de vie de modération
+- [Authentification et permissions](/docs/developer/api/endpoints/authentication) — Modèle de permissions et authentification JWT
+- [Points de terminaison Membership](/docs/developer/api/endpoints/membership) — API de gestion des utilisateurs et des églises
+- [Journal d'audit](/docs/b1-admin/reports/audit-log) — Consulter les journaux d'activité d'une église
+- [Architecture de Content Commons](/docs/developer/architecture/commons) — Modèle de ressources partagées et cycle de modération

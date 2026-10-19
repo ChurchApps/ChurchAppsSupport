@@ -71,7 +71,7 @@ title: "创建表单"
 
 每当有人提交表单时，匹配到的或新创建的人员都会被加入该小组（已是小组成员的人员会被跳过）。这对于营会报名表等场景很有用，例如报名表可以自动生成营会的小组名单。
 
-### 发送跟进邮件
+### 发送跟进邮件 {#sending-a-follow-up-email}
 
 开启 **Create a person record from submissions** 后，您还可以向每位提交表单的人发送电子邮件。在表单的详情中填写 **Follow-up Email Subject** 和 **Follow-up Email Body**。两者中都可以使用 `{firstName}` 和 `{churchName}` 占位符。只有当两个字段都填写完整时，才会发送邮件。
 

@@ -14,7 +14,7 @@ LessonsApp is the lesson content management application for [Lessons.church](htt
 <h4>Before You Begin</h4>
 
 - Install **Node.js 22+** and **Git** -- see [Prerequisites](../setup/prerequisites)
-- Configure your API target (staging or local) -- see [Environment Variables](../setup/environment-variables)
+- Configure your API target (local LessonsApi) -- see [Environment Variables](../setup/environment-variables)
 
 </div>
 
@@ -45,7 +45,7 @@ Copy the environment sample file to `.env` and configure the API endpoints:
 cp dotenv.sample.txt .env
 ```
 
-Update the API endpoint URLs to point at either the staging API or your local API instance.
+Update the API endpoint URLs to point at your local LessonsApi instance (`http://localhost:8090`). The staging Lessons API has been retired, so replace any `api.staging.lessons.church` URLs left in the sample file.
 
 ### 4. Start the dev server
 

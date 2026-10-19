@@ -39,6 +39,8 @@ This is a one-time setup per ministry. You need to connect your Lessons.church a
 The Content Providers section is per ministry. If you run multiple ministries (e.g., Children's and Youth), you will need to link Lessons.church for each one separately.
 :::
 
+Lessons.church is not the only option. The same **Link New Provider** list also offers other curriculum and file sources, including SignPresenter, The Bible Project, Jesus Film Project, Go Curriculum, Dropbox, Google Drive, and OneDrive. Link any of them the same way, and they appear as providers you can switch to when selecting a lesson.
+
 ## Step 2 — Schedule a Lesson
 
 Once linked, you can schedule lessons directly from Plans.
@@ -54,6 +56,8 @@ Once linked, you can schedule lessons directly from Plans.
    - Select a **Study** within that program (e.g., "Creation and Early Stories")
    - Select the specific **Lesson**
    - Select the **Venue** — this is the age-group version of the lesson
+
+   Other providers organize content differently. For example, **Go Curriculum** starts with **Elementary** or **Preschool**, then a series, then the lesson itself — there is no venue to pick.
 8. Click **Associate Lesson** to confirm
 9. Choose your **copy option** for volunteers:
    - **Nothing** — fresh plan, no volunteers carried over
@@ -66,6 +70,18 @@ The plan is created and named automatically (e.g., "Feb 23 - Elementary"). Volun
 :::warning
 Make sure to select the correct **Venue** for your classroom's age group. Choosing the wrong venue means your volunteers will see content designed for a different age level.
 :::
+
+## Bulk Schedule a Series
+
+To schedule several lessons from the same series at once, click **Schedule Lesson → Bulk Schedule**:
+
+1. Under **Starting Lesson**, click **Select Lesson** and pick the first lesson you want to schedule
+2. Set the **Start Date** and choose an **Interval** (**Weekly** or **Bi-Weekly**)
+3. Choose what to copy from the previous plan (**Nothing**, **Positions Only**, or **Positions and Assignments**)
+4. Review the list — the starting lesson and the rest of its series, each with a date. Uncheck any you want to skip
+5. Click **Save** to create one plan per lesson
+
+For Lessons.church, the list also shows the **Venue** each lesson will use, matched by name to the venue you picked for the starting lesson (if a lesson doesn't have that venue, another is used and marked **substituted**). Providers whose lessons have no venue level, such as Go Curriculum, schedule the lessons directly and the Venue column is hidden.
 
 ## Apply a Year Plan
 
@@ -124,5 +140,5 @@ Feel free to copy and send the message below directly to your curriculum provide
 - [Service Plans](./plans.md)
 - [Service Order](./service-order.md)
 - [Customizing Lessons](/docs/lessons-church/customization/customizing-lessons)
-- [FreePlay — Playing Lessons on a Classroom TV](/docs/freeplay/classroom-mode/playing-lessons)
+- [FreePlay — Playing Lessons on a Classroom TV](/docs/freeplay/content-providers/playing-content)
 - [Lessons.church Scheduling Guide](/docs/lessons-church/classrooms/scheduling-lessons)

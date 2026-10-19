@@ -1,73 +1,73 @@
 ---
-title: "Check-In abschließen"
+title: "Check-in abschließen"
 ---
 
-# Check-In abschließen
+# Check-in abschließen
 
 <div class="article-intro">
 
-Nachdem du deine Familie überprüft hast und die erforderlichen Gruppenzuweisungen vorgenommen hast, bist du bereit, das Check-In abzuschließen. Dies ist der letzte Schritt im Kiosk-Workflow – die App sendet Anwesenheit, druckt Etiketten und setzt sich für die nächste Familie zurück.
+Sobald Sie Ihren Haushalt überprüft und gegebenenfalls Gruppen zugewiesen haben, können Sie den Check-in abschließen. Dies ist der letzte Schritt im Kiosk-Ablauf: Die App übermittelt die Anwesenheit, druckt Etiketten und setzt sich für die nächste Familie zurück.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du anfängst</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- [Überprüfe deine Familie](./household-review) auf dem Bildschirm zur Familienüberprüfung
-- [Weise Gruppen](./group-assignment) den Familienmitgliedern zu, die sich in einer bestimmten Klasse oder einem bestimmten Programm anmelden müssen
-- Füge optional [Gäste hinzu](./adding-guests), die deine Familie besuchen
+- [Überprüfen Sie Ihren Haushalt](./household-review) auf dem Bildschirm zur Haushaltsprüfung
+- [Weisen Sie Gruppen zu](./group-assignment) für Familienmitglieder, die sich für einen bestimmten Kurs oder ein bestimmtes Programm einchecken sollen
+- Optional: [Fügen Sie Gäste hinzu](./adding-guests), die Ihre Familie begleiten
 
 </div>
 
-## Wie du dich anmeldest
+## So checken Sie ein
 
-1. Tippe auf dem **Bildschirm zur Haushaltsüberprüfung** auf die Schaltfläche **Check-In** am unteren Ende des Bildschirms.
-2. Die App sendet die Anwesenheitsdaten an den Server und zeigt einen **Erfolgreichbildschirm** mit einem grünen Häkchen und einer Willkommensnachricht.
+1. Tippen Sie auf dem **Bildschirm zur Haushaltsprüfung** unten auf die Schaltfläche **Check-in**.
+2. Die App übermittelt die Anwesenheitsdaten an den Server und zeigt einen **Erfolgsbildschirm** mit einem grünen Häkchen und einer Willkommensnachricht an.
 
-Das ist alles, was erforderlich ist. Die Anwesenheit deiner Familie wurde aufgezeichnet.
+Mehr ist nicht nötig. Die Anwesenheit Ihrer Familie wurde erfasst.
 
-## Volle Zimmer und Freiwilligen-Verhältnisse
+## Volle Räume und Betreuungsschlüssel
 
-Wenn deine Kirche [Sicherheitsgrenzen](../../b1-admin/attendance/checkin-safety) für ihre Zimmer konfiguriert hat, überprüft der Server sie vor dem Speichern:
+Wenn Ihre Kirche [Sicherheitsgrenzen](../../b1-admin/attendance/checkin-safety) für ihre Räume festgelegt hat, prüft der Server diese vor dem Speichern:
 
-- Wenn ein ausgewähltes Zimmer **voll oder geschlossen** ist, wird das Check-In nicht durchgeführt und die App nennt das Zimmer, damit du ein anderes auswählen kannst.
-- Wenn die Gottesdienstzeit einen [Anmeldeplan](../../b1-admin/attendance/setup#setting-a-check-in-schedule) hat und das Check-in-Fenster gerade nicht geöffnet ist, wird das Check-In in die Räume dieser Gottesdienstzeit ebenfalls abgelehnt. Der Bildschirm **Check-in noch nicht möglich** führt den Raum als „room is full or closed“ auf; tippe auf **Räume ändern**, um eine andere Gottesdienstzeit oder Gruppe auszuwählen.
-- Wenn ein Kinderzimmer **zu wenige Freiwillige** für sein Verhältnis hat, zeigt die App entweder eine Warnung an, die ein Mitarbeiter bestätigen kann, um fortzufahren, oder blockiert das Check-In vollständig – abhängig davon, wie deine Kirche die Durchsetzung des Verhältnisses konfiguriert hat.
+- Ist ein ausgewählter Raum **voll oder geschlossen**, wird der Check-in nicht durchgeführt, und die App nennt den Raum, damit Sie einen anderen auswählen können.
+- Hat die Gottesdienstzeit einen [Check-in-Zeitplan](../../b1-admin/attendance/setup#setting-a-check-in-schedule) und ist deren Check-in-Fenster gerade nicht geöffnet, wird der Check-in in die Räume dieser Gottesdienstzeit ebenfalls abgelehnt. Der Bildschirm **Check-in noch nicht möglich** listet den Raum mit dem Grund „Check-in ist gerade nicht geöffnet“ auf; tippen Sie auf **Räume ändern**, um eine andere Gottesdienstzeit oder Gruppe auszuwählen. (Gottesdienstzeiten, die bereits geschlossen sind, wenn Sie einen [Gottesdienst auswählen](./selecting-service#when-check-in-isnt-open), werden ausgeblendet. Deshalb sehen Sie dies in der Regel nur, wenn ein Fenster während eines Check-ins schließt.)
+- Ist in einem Kinderraum zu wenig Betreuung für den vorgesehenen Schlüssel vorhanden, zeigt die App entweder eine Warnung, die eine Mitarbeiterin bzw. ein Mitarbeiter bestätigen kann, um fortzufahren, oder sie blockiert den Check-in vollständig – je nachdem, wie Ihre Kirche die Einhaltung des Schlüssels konfiguriert hat.
 
 ## Etikettendruck
 
-Wenn ein Netzwerkdrucker konfiguriert ist, druckt die App automatisch Etiketten nach dem Check-In:
+Ist ein Netzwerkdrucker eingerichtet, druckt die App nach dem Check-in automatisch Etiketten:
 
-- **Namensetiketten** werden für jede Person gedruckt, die einer Gruppe zugewiesen ist, bei der die Einstellung **Namensschild drucken** aktiviert ist. Namensetiketten enthalten den Namen der Person, ihre Gruppenzuweisung und Allergie-/Notizenformationen, falls vorhanden.
-- **Eltern-Abholscheine** werden gedruckt, wenn eine eingecheckte Person sich in einer Gruppe befindet, bei der die Einstellung **Eltern-Abholung** aktiviert ist. Personen, die sich als **Freiwilliger** anmelden, werden übersprungen, daher erhält ein Kinderbetreuer, der in einem Eltern-Abholzimmer dient, keinen Abholschein. Der Abholschein listet die Kinder, ihre Gruppenzuweisungen und einen eindeutigen **4-stelligen Sicherheitscode** auf.
+- **Namensetiketten** werden für jede Person gedruckt, die einer Gruppe zugewiesen ist, bei der die Einstellung **Namensschild drucken** aktiviert ist. Namensetiketten enthalten den Namen der Person, ihre Gruppenzuordnung sowie Allergie- und Hinweisangaben, sofern hinterlegt.
+- **Abholzettel für Eltern** werden gedruckt, wenn eine eingecheckte Person in einer Gruppe ist, bei der die Einstellung **Abholung durch Eltern** aktiviert ist. Personen, die als **Ehrenamtlicher** eingecheckt sind, werden übersprungen. Eine Betreuungsperson, die in einem Raum für die Abholung durch Eltern dient, erhält daher keinen Abholzettel. Der Abholzettel listet die Kinder, ihre Gruppenzuordnungen und einen eindeutigen **vierstelligen Sicherheitscode** auf.
 
 :::info
-Der gleiche Sicherheitscode erscheint sowohl auf dem Namensschildchen des Kindes als auch auf dem Abholschein des Elternteils. Bei der Abholung entsprechen Freiwillige die Codes, um zu überprüfen, dass der richtige Erwachsene jedes Kind abholt.
+Derselbe Sicherheitscode erscheint sowohl auf dem Namensetikett des Kindes als auch auf dem Abholzettel der Eltern. Bei der Abholung gleichen die Ehrenamtlichen die Codes ab, um zu überprüfen, dass die richtige erwachsene Person jedes Kind abholt.
 :::
 
-Der Sicherheitscode wird für jeden Check-In neu generiert und verwendet nur Konsonanten und Ziffern (Vokale sind ausgeschlossen, um unangemessene Worte zu vermeiden).
+Der Sicherheitscode wird bei jedem Check-in neu erzeugt und verwendet nur Konsonanten und Ziffern (Vokale werden ausgeschlossen, damit keine unpassenden Wörter entstehen).
 
 :::warning
-Wenn Etiketten nicht gedruckt werden, öffne die Admin-Einstellungen, indem du das **Kirchenlogo** siebenmal tippst, und tippe dann auf **Drucker ändern**, um die Druckerverbindung zu überprüfen. Siehe [Drucker-Setup](../getting-started/printer-setup) für Fehlerbehebungsschritte.
+Wenn keine Etiketten gedruckt werden, öffnen Sie die Admin-Einstellungen, indem Sie siebenmal auf das **Kirchenlogo** tippen, und tippen Sie dann auf **Drucker wechseln**, um die Druckerverbindung zu prüfen. Schritte zur Fehlerbehebung finden Sie unter [Druckereinrichtung](../getting-started/printer-setup).
 :::
 
-## Was nach dem Check-In geschieht
+## Was nach dem Check-in passiert
 
-- Wenn ein Drucker konfiguriert ist, druckt die App alle Etiketten und kehrt dann automatisch zum **Suchbildschirm** zurück, bereit für die nächste Familie.
-- Wenn kein Drucker konfiguriert ist, wird der Erfolgreichbildschirm ein paar Sekunden lang angezeigt und kehrt dann automatisch zum **Suchbildschirm** zurück.
+- Ist ein Drucker eingerichtet, druckt die App alle Etiketten und kehrt danach automatisch zum **Suchbildschirm** zurück, bereit für die nächste Familie.
+- Ist kein Drucker eingerichtet, wird der Erfolgsbildschirm einige Sekunden angezeigt und kehrt danach automatisch zum **Suchbildschirm** zurück.
 
-Du musst nichts tippen, um zum Suchbildschirm zurückzukehren – die App übernimmt den Übergang automatisch.
+Sie müssen nicht tippen, um zum Suchbildschirm zurückzukehren – die App übernimmt den Wechsel automatisch.
 
 :::tip
-Die App wird nach jedem Check-In vollständig zurückgesetzt, sodass es kein Risiko gibt, dass eine Familie die Informationen einer anderen Familie sieht.
+Die App setzt sich nach jedem Check-in vollständig zurück. Daher besteht kein Risiko, dass eine Familie die Informationen einer anderen Familie sieht.
 :::
 
-## Was wird aufgezeichnet
+## Was erfasst wird
 
-Wenn du auf **Check-In** tippst, sendet die App folgende Informationen an den Server für jedes Haushaltsmitglied, das einer Gruppenzuweisung hat:
+Wenn Sie auf **Check-in** tippen, sendet die App für jedes Haushaltsmitglied mit einer Gruppenzuweisung Folgendes an den Server:
 
-- Die **Person**, die sich anmeldet
-- Den **Dienst**, den sie besucht
-- Die **Dienstzeit** und **Gruppe**, denen sie zugewiesen ist
+- Die **Person**, die eingecheckt wird
+- Den **Gottesdienst**, den sie besucht
+- Die **Gottesdienstzeit** und die **Gruppe**, denen sie zugewiesen ist
 
-Diese Daten erscheinen in B1 Admin im Abschnitt Anwesenheit, wo deine Kirchenadministratoren Anwesenheitsdatensätze anzeigen und verwalten können. Weitere Details findest du im [Check-In-Administrations-Leitfaden](../../b1-admin/attendance/check-in.md).
+Diese Daten erscheinen in B1 Admin im Bereich Anwesenheit, wo Ihre Kirchenverwaltung die Anwesenheitsdaten einsehen und verwalten kann. Einzelheiten finden Sie im [Verwaltungsleitfaden für den Check-in](../../b1-admin/attendance/check-in.md).

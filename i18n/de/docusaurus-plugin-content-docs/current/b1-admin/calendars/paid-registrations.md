@@ -57,7 +57,7 @@ Registranten wählen Mengen während der Anmeldung, und die Gesamtzahl zählt ge
 
 Jeder Code zeigt eine **Verwendungen**-Zählung, damit Sie sehen können, wie oft er eingelöst wurde. Registranten erhalten sofortige Rückmeldung, wenn sie einen Code anwenden -- einschließlich klarer Meldungen, wenn ein Code abgelaufen ist, nicht gestartet hat oder mehr Teilnehmer benötigt.
 
-## Warteliste
+## Warteliste {#waitlist}
 
 Schalten Sie **Warteliste aktivieren** in der Karte Registrierungseinstellungen ein. Wenn das Ereignis die Kapazität erreicht:
 
@@ -69,7 +69,7 @@ Schalten Sie **Warteliste aktivieren** in der Karte Registrierungseinstellungen 
 Beförderte Registrierungen bleiben *ausstehend*, bis ein Saldo bezahlt wird; Zahlung (oder nichts zu zahlen) bestätigt sie.
 :::
 
-## Die Registrierungstabelle
+## Die Registrierungstabelle {#the-registration-roster}
 
 Öffnen Sie ein Ereignis von der Seite Registrierungen aus, um jede Registrierung zu sehen. Die Tabelle zeigt **Name**, **Mitglieder**, **Typ** (Typ jedes Teilnehmers), **Bezahlt / Gesamt** (mit einer Saldo-Warnung, wenn Geld noch geschuldet wird), **Status** und **Datum**, plus Pro-Typ-Zählungs-Chips über der Tabelle.
 

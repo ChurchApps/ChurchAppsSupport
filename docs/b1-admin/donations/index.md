@@ -20,7 +20,7 @@ The **Summary** page gives you a visual overview of all giving activity. It disp
 
 ### Batches
 
-**[Batches](batches.md)** let you group donations together -- for example, all the checks and cash collected during a Sunday offering. Each batch tracks its donation count and total amount for easy reconciliation.
+**[Batches](batches.md)** let you group donations together -- for example, all the checks and cash collected during a Sunday offering. Each batch tracks its donation count and total amount for easy reconciliation. Once a batch is counted, someone with **Edit Donations** can close it so counting volunteers can no longer change it. Volunteers with the **Enter Donations** permission can add gifts to open batches without seeing the rest of the Donations section.
 
 ### Funds
 

@@ -1,118 +1,118 @@
 ---
-title: "Amministrazione del Server"
+title: "Amministrazione del server"
 ---
 
-# Amministrazione del Server
+# Amministrazione del server
 
 <div class="article-intro">
 
-Le funzioni di amministrazione del server in ChurchApps sono disponibili solo per gli utenti con la permissione **Server.Admin**. Questi strumenti vengono utilizzati per le operazioni della piattaforma, il supporto e la risoluzione dei problemi in tutte le chiese del sistema.
+Le funzionalità di amministrazione del server di ChurchApps sono disponibili solo agli utenti con il permesso **Server.Admin**. Questi strumenti servono per le operazioni della piattaforma, il supporto e la risoluzione dei problemi per tutte le chiese del sistema.
 
 </div>
 
-:::warning Accesso Limitato
-Le funzioni descritte su questa pagina richiedono la permissione **Server.Admin** e non sono disponibili per gli amministratori di chiesa regolari. Sono destinate solo agli operatori di piattaforma e al personale di supporto.
+:::warning Accesso riservato
+Le funzionalità descritte in questa pagina richiedono il permesso **Server.Admin** e non sono disponibili agli amministratori di chiesa ordinari. Sono destinate esclusivamente agli operatori della piattaforma e al personale di supporto.
 :::
 
-## Accesso a Server Admin
+## Accedere all'amministrazione del server
 
-Gli utenti con permissione Server.Admin possono accedere al pannello di amministrazione del server da B1 Admin:
+Gli utenti con il permesso Server.Admin possono accedere al pannello di amministrazione del server da B1 Admin:
 
-1. Accedi a [admin.b1.church](https://admin.b1.church)
-2. Apri il [menu Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu), espandi **Settings** e fai clic su **Server Admin**. (Puoi anche andare direttamente a `admin.b1.church/admin`.)
-3. Il pannello Server Admin elenca le sue sezioni sul lato sinistro in tre gruppi: **Directory** (Chiese, Utenti, Personifica Utente), **Operazioni** (Lavori in Background, Commons, Tendenze di Utilizzo) e **Sistema** (Ricerche di Traduzione, Salute del Server, Migrazioni del Database)
+1. Accedete a [admin.b1.church](https://admin.b1.church)
+2. Aprite il [menu Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu), espandete **Impostazioni** e fate clic su **Amministrazione server**. (Potete anche andare direttamente all'indirizzo `admin.b1.church/admin`.)
+3. Il pannello di amministrazione del server elenca le sue sezioni sul lato sinistro, in tre gruppi: **Directory** (Chiese, Utenti, Impersona utente), **Operazioni** (Processi in background, Commons, Tendenze di utilizzo) e **Sistema** (Ricerche di traduzione, Stato del server, Migrazioni del database)
 
-## Rappresentazione dell'Utente
+## Impersonare un utente
 
-La funzione di rappresentazione consente agli amministratori del server di accedere come un altro utente a scopo di supporto e risoluzione dei problemi. Questo è utile quando si investigano problemi segnalati dagli utenti o si aiutano le chiese a configurare i loro sistemi.
+La funzione di impersonificazione consente agli amministratori del server di accedere come un altro utente, a fini di supporto e risoluzione dei problemi. È utile quando si indagano problemi segnalati dagli utenti o quando si aiutano le chiese a configurare i propri sistemi.
 
-### Come Rappresentare un Utente
+### Come impersonare un utente
 
-1. Apri la sezione **Impersonate User** del pannello Server Admin
-2. Inserisci il nome o l'indirizzo email dell'utente nel campo di ricerca
-3. Fai clic su **Search** o premi Invio
-4. Dai risultati della ricerca, fai clic sull'utente che desideri rappresentare
-5. Conferma la rappresentazione nella finestra di dialogo che appare
-6. Verrai registrato come quell'utente e reindirizzato al suo account
+1. Aprite la sezione **Impersona utente** del pannello di amministrazione del server
+2. Inserite il nome o l'indirizzo email dell'utente nel campo di ricerca
+3. Fate clic su **Cerca** oppure premete Invio
+4. Dai risultati della ricerca, fate clic sull'utente che volete impersonare
+5. Confermate l'impersonificazione nella finestra di dialogo che compare
+6. Sarete connessi come quell'utente e reindirizzati al suo account
 
-### Note Importanti
+### Note importanti
 
-- La rappresentazione crea una nuova sessione con le autorizzazioni dell'utente di destinazione e l'accesso alla chiesa
-- La tua sessione di amministrazione originale termina quando rappresenti un altro utente
-- Tutte le azioni intraprese durante la rappresentazione sono registrate nella traccia di audit
-- Per tornare al tuo account di amministrazione, esci e accedi di nuovo con le tue credenziali
-- Usa la rappresentazione solo quando necessario a scopo di supporto e informa sempre gli utenti quando accedi ai loro account per il supporto
+- L'impersonificazione crea una nuova sessione con i permessi e l'accesso alle chiese dell'utente di destinazione
+- La vostra sessione di amministratore originale termina quando impersonate un altro utente
+- Tutte le azioni eseguite durante l'impersonificazione vengono registrate nel registro di controllo
+- Per tornare al vostro account di amministratore, disconnettetevi e riaccedete con le vostre credenziali
+- Usate l'impersonificazione solo quando necessario per il supporto e informate sempre gli utenti quando accedete ai loro account per assistenza
 
 ### Endpoint API
 
-La funzione di rappresentazione è supportata dall'endpoint `/users/:userId/impersonate` nell'API di Membership. Vedi [Membership Endpoints](/docs/developer/api/endpoints/membership#users) per i dettagli tecnici.
+La funzione di impersonificazione si basa sull'endpoint `/users/:userId/impersonate` del modulo Membership API. Per i dettagli tecnici, vedere [Endpoint Membership](/docs/developer/api/endpoints/membership#users).
 
-### Considerazioni di Sicurezza
+### Considerazioni sulla sicurezza
 
-- La rappresentazione richiede la permissione Server.Admin - questa permissione dovrebbe essere concessa raramente e solo agli operatori di piattaforma affidabili
-- Tutti gli eventi di rappresentazione sono registrati con l'ID dell'utente amministratore e l'ID dell'utente di destinazione
-- Le chiese non vengono notificate quando si verifica la rappresentazione, quindi stabilisci chiari criteri per quando e come questa funzione dovrebbe essere utilizzata
-- Considera di documentare gli eventi di rappresentazione nel tuo sistema di ticket di supporto per la responsabilità
+- L'impersonificazione richiede il permesso Server.Admin -- questo permesso va concesso con parsimonia e solo a operatori della piattaforma di fiducia
+- Tutti gli eventi di impersonificazione vengono registrati con l'ID dell'utente amministratore e l'ID dell'utente di destinazione
+- Le chiese non vengono avvisate quando avviene un'impersonificazione, quindi stabilite con chiarezza politiche su quando e come usare questa funzione
+- Valutate di documentare gli eventi di impersonificazione nel vostro sistema di ticket di supporto, per garantire la responsabilità
 
-## Moderazione Commons
+## Moderazione dei Commons
 
-Commons è la coda di moderazione condivisa per il contenuto inviato dagli utenti tra prodotti — canzoni WorshipCommons, lezioni Lessons.church, modelli FreeShow e modelli del generatore di siti web B1 fluiscono tutti attraverso la stessa coda invece di strumenti di revisione separati per prodotto.
+Commons è la coda di moderazione condivisa per i contenuti inviati dagli utenti tra i vari prodotti: canti di WorshipCommons, lezioni di Lessons.church, modelli di FreeShow e modelli del website builder di B1 transitano tutti attraverso la stessa coda, invece di strumenti di revisione separati per ogni prodotto.
 
-### Accesso a Commons
+### Accedere a Commons
 
-1. Naviga alla scheda **Commons** nel pannello Server Admin.
-2. Vedrai tre sotto-schede: **Queue**, **Reports** e **Assets**.
+1. Passate alla scheda **Commons** nel pannello di amministrazione del server.
+2. Vedrete tre sottoschede: **Coda**, **Segnalazioni** e **Asset**.
 
-Un ruolo **music editor** limitato può anche vedere la scheda Queue, ma è bloccato dall'approvare invii che cambiano i diritti o la concessione di licenze di una canzone.
+Un ruolo limitato di **editor musicale** può vedere anche la scheda Coda, ma non può approvare le proposte che modificano i diritti o le licenze di un canto.
 
-### Queue
+### Coda
 
-La Queue elenca ogni invio in sospeso tra tutti i prodotti, filtrabile per prodotto e tipo di asset. Ogni riga mostra se l'invio è un nuovo asset, una modifica da parte dell'autore originale o una modifica da parte di terzi, insieme al record di approvazione del mittente e al tempo che l'invio ha atteso (contrassegnato una volta che supera le 72 ore).
+La Coda elenca tutte le proposte in attesa in tutti i prodotti, filtrabili per prodotto e tipo di asset. Ogni riga indica se la proposta è un nuovo asset, una modifica del suo autore originale o una modifica di un terzo, insieme allo storico di approvazioni dell'autore e al tempo trascorso in attesa (segnalato dopo 72 ore).
 
-Fai clic su **Review** per aprire un drawer con diff a livello di campo, anteprime di file e un'anteprima di sola lettura incorporata dell'elemento. Usa i tasti **a**/**r** per approvare o rifiutare e **j**/**k** per spostarti all'invio successivo o precedente senza uscire dal drawer. Il rifiuto richiede la selezione di un motivo (ad esempio qualità, duplicato, licenza, ccli, ai o fuori tema) e una nota.
+Fate clic su **Revisiona** per aprire un pannello con le differenze campo per campo, le anteprime dei file e un'anteprima in sola lettura dell'elemento. Usate le scorciatoie da tastiera **a**/**r** per approvare o rifiutare, e **j**/**k** per passare alla proposta successiva o precedente senza uscire dal pannello. Per rifiutare occorre selezionare un motivo (ad esempio qualità, duplicato, licenza, ccli, ai o fuori tema) e scrivere una nota.
 
-### Reports
+### Segnalazioni
 
-La scheda Reports gestisce i rapporti di copyright e i rapporti di politica/qualità archiviati contro gli asset già pubblicati, divisi in code separate di Copyright e Policy & Other più una cronologia Resolved. Dichiara un rapporto per iniziare a lavorarci, quindi risolvilo con una risoluzione (sostenuto, respinto o duplicato) e un'azione (nessuno, annulla pubblicazione o rimuovi).
+La scheda Segnalazioni gestisce le segnalazioni di copyright e di politica/qualità inviate su asset già pubblicati, suddivise nelle code separate Copyright e Politica e altro, più uno storico Risolte. Richiedete una segnalazione per iniziare a lavorarci, poi risolvetela indicando un esito (confermata, respinta o duplicata) e un'azione (nessuna, rimuovi dalla pubblicazione o elimina).
 
-### Assets
+### Asset
 
-La scheda Assets è un browser ricercabile di contenuto pubblicato con azioni per **Feature** un asset (lo evidenzia nella home page del prodotto), **Unpublish**/**Republish** esso, o **Remove** esso (con un motivo di copyright o politica).
+La scheda Asset è un elenco consultabile dei contenuti pubblicati, con azioni per **Metti in evidenza** un asset (lo mostra nella home page del prodotto), **Rimuovi dalla pubblicazione** / **Ripubblica** oppure **Elimina** (indicando un motivo di copyright o di politica).
 
-Per le canzoni in particolare, è anche dove una canzone diventa **Sunday-ready** e idonea a comparire nella ricerca di canzoni B1 Admin di una chiesa: un revisore apre l'asset e contrassegna ogni chiave pubblicata come **Listened** una volta che l'ha ascoltata e ha confermato che il punteggio, gli accordi e le diapositive sono tutti presenti. Una canzone diventa Sunday-ready solo una volta che ogni chiave è stata verificata.
+Per i canti in particolare, è anche qui che un canto diventa **pronto per la domenica** e idoneo a comparire nella ricerca canti di B1 Admin di una chiesa: un revisore apre l'asset e contrassegna ciascuna tonalità pubblicata come **Ascoltato** una volta che l'ha ascoltata per intero e ha confermato che spartito, accordi e diapositive sono tutti presenti. Un canto diventa pronto per la domenica solo quando tutte le tonalità sono contrassegnate.
 
 :::info
-La moderazione di Commons è solo per il personale — le singole chiese non vedono mai questa coda. L'unico posto in cui un B1 Admin di una chiesa individuale tocca i dati di Commons è la sezione "WorshipCommons — free" della [ricerca di canzoni](/docs/b1-admin/serving/songs#free-songs-from-worshipcommons), che fa emergere solo le canzoni che hanno già attraversato questo processo di revisione.
+La moderazione di Commons è riservata al personale -- le singole chiese non vedono mai questa coda. L'unico punto in cui B1 Admin di una singola chiesa utilizza i dati di Commons è la sezione "WorshipCommons — gratuito" della [ricerca canti](/docs/b1-admin/serving/songs#free-songs-from-worshipcommons), che mostra solo i canti già passati da questa revisione.
 :::
 
-Vedi la pagina [architettura Content Commons](/docs/developer/architecture/commons) per il modello di dati sottostante e il ciclo di vita dell'invio.
+Vedere la pagina [Architettura di Content Commons](/docs/developer/architecture/commons) per il modello dei dati sottostante e il ciclo di vita delle proposte.
 
-## Approvazione Email Gruppo
+## Approvazione dell'email di gruppo
 
-Le chiese non possono inviare email scritte dalla chiesa (email di gruppo, follow-up di moduli, email di flusso di lavoro e inviti di account) finché un amministratore del server non le approva. Questo impedisce alle chiese auto-registrate da bot di utilizzare l'indirizzo di invio ChurchApps condiviso per spam.
+Le chiese non possono inviare email scritte dalla chiesa (email di gruppo, follow-up dei moduli, email dei flussi di lavoro e inviti agli account) finché un amministratore del server non le approva. Questo impedisce alle chiese registrate tramite bot di usare l'indirizzo di invio condiviso di ChurchApps per lo spam.
 
-1. Apri la scheda **Churches** nel pannello Server Admin.
-2. Ogni chiesa mostra un chip **Group Email**: **Approved** (verde) o **Not approved** (contorno).
-3. Fai clic sul chip e conferma per approvare la chiesa, oppure per revocare un'approvazione.
+1. Aprite la scheda **Chiese** nel pannello di amministrazione del server.
+2. Ogni chiesa mostra un chip **Email di gruppo**: **Approvata** (verde) oppure **Non approvata** (contorno).
+3. Fate clic sul chip e confermate per approvare la chiesa, oppure per revocare un'approvazione.
 
-Il personale della chiesa chiede l'approvazione con il pulsante **Request review** nel dialogo Send Email di B1 Admin. La richiesta viene inviata via email all'indirizzo di supporto ed elenca il nome della chiesa, l'ID, la data di registrazione, la posizione e chi ha chiesto. Una chiesa può inviare una richiesta per settimana. Vedi [Limiti di email scritti da chiesa](/docs/developer/architecture/notifications#church-authored-email-limits) per l'indennità giornaliera e la pausa automatica su rimbalzi e reclami.
+Il personale della chiesa richiede l'approvazione con il pulsante **Richiedi revisione** nella finestra Invia email di B1 Admin. La richiesta viene inviata via email all'indirizzo di supporto e riporta il nome della chiesa, l'ID, la data di registrazione, la località e chi l'ha richiesta. Una chiesa può inviare una richiesta a settimana. Vedere [Limiti delle email scritte dalla chiesa](/docs/developer/architecture/notifications#church-authored-email-limits) per il limite giornaliero e la sospensione automatica in caso di rimbalzi e reclami.
 
-## Migrazioni Database
+## Migrazioni del database {#database-migrations}
 
-I deploy non cambiano il database. I database ospitati accettano solo connessioni dall'interno della rete di Api, quindi dopo una versione che aggiunge una migrazione, un amministratore del server l'applica dalla scheda **Database Migrations**. (Gli istall Docker auto-ospitati ancora eseguono migrazioni automaticamente quando il contenitore di Api si avvia.)
+Il workflow **Deploy Prod** applica autonomamente le migrazioni in sospeso. I database ospitati accettano connessioni solo dall'interno della rete della Api, quindi un runner di GitHub non può raggiungerli; invece, subito dopo `serverless deploy`, il workflow invoca la Lambda `migrate` della Api (`api-Prod-migrate`), che esegue le migrazioni in sospeso di ogni modulo con lo stesso runner di questa scheda, e fa fallire il deploy se un modulo genera errori o viene rifiutato. **Rollback Prod** ripristina solo il codice della Lambda; le migrazioni già applicate restano applicate. La scheda **Migrazioni del database** serve per controllare lo stato, eseguire ciò che un deploy non ha eseguito (ad esempio sull'ambiente demo, il cui deploy non esegue migrazioni) e impostare la base di partenza per i moduli senza storico. (Le installazioni self-hosted con Docker eseguono ancora le migrazioni automaticamente all'avvio del container della Api.)
 
-La scheda mostra l'ambiente attuale e una riga per modulo (membership, attendance, giving, ecc.) con il suo stato, il numero di migrazioni applicate e in sospeso, e l'ultima applicata.
+La scheda mostra l'ambiente corrente e una riga per modulo (membership, attendance, giving e così via), con il suo stato, il numero di migrazioni applicate e in sospeso, e l'ultima applicata.
 
-- **Run Pending Migrations** applica ogni migrazione in sospeso, un modulo alla volta, in ordine. Si interrompe al primo errore e mostra cosa è stato applicato per ogni modulo.
-- Un modulo contrassegnato **No history** ha un database che precede il tracciamento delle migrazioni. Non viene mai eseguito automaticamente, perché ciò riprodurrebbe vecchie migrazioni di dati su tabelle dal vivo. Invece fai clic su **Check Schema** su quel modulo. Api confronta le tabelle, le colonne e gli indici che ogni migrazione crea con il database dal vivo e contrassegna ogni migrazione **Already applied**, **Missing**, **Partly applied** o **Data only**. Nulla viene modificato dal check.
-- Nei risultati del check, **Record as Already Applied** scrive le migrazioni rilevate nella cronologia delle migrazioni senza eseguirle (dopo una conferma). Tutto fino all'ultima migrazione **Already applied** è registrato, incluso quelle **Data only** in quell'intervallo; quelle **Missing** rimangono in sospeso e possono quindi essere eseguite normalmente con **Run Pending Migrations**.
-- Una migrazione **Partly applied** blocca la registrazione. Se la migrazione è sicura da eseguire di nuovo (leggila prima), seleziona **Re-run** in modo che rimanga in sospeso ed esegui di nuovo dall'inizio.
+- **Esegui migrazioni in sospeso** applica tutte le migrazioni in sospeso, un modulo alla volta, in ordine. Si interrompe al primo errore e mostra ciò che è stato applicato per ciascun modulo.
+- Un modulo contrassegnato come **Nessuno storico** ha un database precedente al tracciamento delle migrazioni. Non viene mai eseguito automaticamente, perché significherebbe riapplicare vecchie migrazioni di dati sulle tabelle in produzione. Fate clic su **Verifica schema** per quel modulo. La Api confronta tabelle, colonne e indici creati da ciascuna migrazione con il database in produzione e contrassegna ogni migrazione come **Già applicata**, **Mancante**, **Parzialmente applicata** o **Solo dati**. La verifica non modifica nulla.
+- Nei risultati della verifica, **Registra come già applicate** scrive le migrazioni rilevate nello storico delle migrazioni senza eseguirle (dopo una conferma). Vengono registrate tutte le migrazioni fino all'ultima **Già applicata** compresa, incluse quelle **Solo dati** in quell'intervallo; le migrazioni **Mancanti** restano in sospeso e possono poi essere eseguite normalmente con **Esegui migrazioni in sospeso**.
+- Una migrazione **Parzialmente applicata** blocca la registrazione. Se la migrazione può essere rieseguita in sicurezza (leggetela prima), selezionate **Riesegui** così resta in sospeso ed è eseguita di nuovo dall'inizio.
 
-Il pannello Server Admin e la CLI (`yarn migrate:up`) usano lo stesso migrator Kysely e la tabella `kysely_migration`, quindi sono sempre d'accordo su cosa è stato applicato. Gli endpoint di supporto sono `GET /membership/serverHealth/migrations`, `POST /membership/serverHealth/migrations/:module/run`, `GET .../:module/detect` e `POST .../:module/baseline`, tutti Server.Admin soltanto.
+Il pannello di amministrazione del server e la CLI (`yarn migrate:up`) usano lo stesso migratore Kysely e la stessa tabella `kysely_migration`, quindi concordano sempre su cosa è stato applicato. Gli endpoint di supporto sono `GET /membership/serverHealth/migrations`, `POST /membership/serverHealth/migrations/:module/run`, `GET .../:module/detect` e `POST .../:module/baseline`, tutti riservati a Server.Admin.
 
-## Pagine Correlate
+## Pagine correlate
 
-- [Autenticazione e Autorizzazioni](/docs/developer/api/endpoints/authentication) — Modello di autorizzazione e autenticazione JWT
-- [Membership Endpoints](/docs/developer/api/endpoints/membership) — API di gestione utente e chiesa
-- [Audit Log](/docs/b1-admin/reports/audit-log) — Visualizza i log attività per una chiesa
-- [Content Commons Architecture](/docs/developer/architecture/commons) — Modello di asset condiviso e ciclo di vita della moderazione
+- [Autenticazione e permessi](/docs/developer/api/endpoints/authentication) -- Modello dei permessi e autenticazione JWT
+- [Endpoint Membership](/docs/developer/api/endpoints/membership) -- API di gestione di utenti e chiese
+- [Registro di controllo](/docs/b1-admin/reports/audit-log) -- Visualizzare il registro delle attività di una chiesa
+- [Architettura di Content Commons](/docs/developer/architecture/commons) -- Modello degli asset condivisi e ciclo di vita della moderazione

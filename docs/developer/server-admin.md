@@ -99,7 +99,7 @@ Church staff ask for approval with the **Request review** button in B1 Admin's S
 
 ## Database Migrations
 
-Deploys do not change the database. The hosted databases only accept connections from inside the Api's network, so after a release that adds a migration, a server admin applies it from the **Database Migrations** tab. (Self-hosted Docker installs still run migrations automatically when the Api container starts.)
+The **Deploy Prod** workflow applies pending migrations itself. The hosted databases only accept connections from inside the Api's network, so a GitHub runner can't reach them; instead, right after `serverless deploy` the workflow invokes the Api's `migrate` Lambda (`api-Prod-migrate`), which runs every module's pending migrations with the same runner as this tab and fails the deploy if any module errors or is refused. **Rollback Prod** reverts only the Lambda code; applied migrations stay applied. The **Database Migrations** tab is for checking status, running anything a deploy didn't (for example on the demo environment, whose deploy does not migrate), and baselining modules with no history. (Self-hosted Docker installs still run migrations automatically when the Api container starts.)
 
 The tab shows the current environment and one row per module (membership, attendance, giving, and so on) with its status, the number of applied and pending migrations, and the last one applied.
 

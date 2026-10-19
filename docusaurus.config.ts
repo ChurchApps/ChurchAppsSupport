@@ -95,6 +95,14 @@ const config: Config = {
           { from: '/b1Admin/plans.html', to: '/docs/b1-admin/serving/plans' },
           // Automations page removed from B1Admin; scheduled automation now lives in workflow triggers
           { from: '/docs/b1-admin/serving/automations', to: '/docs/b1-admin/serving/workflows' },
+          // FreePlay Classroom Mode screens (church/room search) removed from the app; calendar pairing replaces them
+          { from: '/docs/freeplay/classroom-mode', to: '/docs/freeplay/scheduled-mode/' },
+          { from: '/docs/freeplay/classroom-mode/selecting-room', to: '/docs/freeplay/scheduled-mode/pairing-a-screen' },
+          { from: '/docs/freeplay/classroom-mode/downloading-content', to: '/docs/freeplay/content-providers/browsing-content' },
+          { from: '/docs/freeplay/classroom-mode/playing-lessons', to: '/docs/freeplay/content-providers/playing-content' },
+          // FreePlay's separate lesson browser was removed; Lessons.church is browsed through the provider content browser
+          { from: '/docs/freeplay/browsing-lessons', to: '/docs/freeplay/content-providers/browsing-content' },
+          { from: '/docs/freeplay/browsing-lessons/programs-studies', to: '/docs/freeplay/content-providers/browsing-content' },
           { from: '/b1/admin/youtube-channel-id.html', to: '/docs/b1-admin/sermons/live-streaming' },
           { from: '/b1/download', to: '/docs/b1-mobile/getting-started/installing' },
           { from: '/b1/portal/donations', to: '/docs/b1-church/giving/' },

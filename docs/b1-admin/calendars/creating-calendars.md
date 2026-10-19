@@ -50,6 +50,31 @@ Connecting groups to your calendar is a powerful way to automatically aggregate 
 If you want to create a single calendar that pulls events from many groups across your church, see [Curated Calendar](curated-calendar) for a streamlined approach.
 :::
 
+## Adding and Editing Events {#adding-and-editing-events}
+
+Click **New Event** on the calendar detail page to add an event, or click an event on the calendar and then click **Edit** to change it. The **New Event** / **Edit Event** form has these fields:
+
+- **Group** -- The group the event belongs to. If your church has event templates, you can also pick a **Template** to fill in the form.
+- **Title**
+- **Event photo** -- Click **Add Photo** (or the empty photo box) to choose or upload an image, cropped to a wide 16:9 shape. Click **Change Photo** to replace it. The photo is shown at the top of the event's page on your website and as its tile when a Calendar element shows **Upcoming events** (see [Showing Events on Your Website](#showing-events-on-your-website)).
+- **Description** -- Shown on the event's page on your website. Bold text, lists, and links are supported.
+- **Start** and **End**, **Repeats**, and **Visibility** (**Public** or **Private**).
+- **Tags** -- Comma-separated labels, such as `youth, students`. A Calendar element on your website can be set to show only events with a certain tag. This is the same **Tags** field shown in the event's registration settings.
+- **Who can view notes** and **Who can post notes** -- Who can read and add to the event's notes (see [Event Notes](#event-notes)). Choose **Staff only** (the default), **Group leaders** (leaders of the event's group), or **Group members** (everyone in the event's group, including its leaders).
+- **Rooms** and **Resources** -- Reserve space and equipment for the event. See [Rooms, Resources & Scheduling](rooms-resources).
+
+Click **Save**. If the event repeats, B1 asks you to confirm, because saving updates every occurrence in the series.
+
+### Event Notes {#event-notes}
+
+Each event has its own notes thread for planning and follow-up. Click an event on the calendar detail page; the dialog shows the event's details, its reminders, and its **Notes** below. Type a note and post it to add it to the thread.
+
+Staff with permission to edit content or administer calendars can always read and post event notes. The **Who can view notes** and **Who can post notes** settings on the event decide whether the event group's leaders or members can too.
+
+### Showing Events on Your Website {#showing-events-on-your-website}
+
+To put a calendar on your website, add a **Calendar** element to a page and choose this calendar. The element can show a month calendar or a grid of upcoming-event tiles, and can be limited to events with one tag. Visitors who click an event open its own event page. See [Using the Calendar element](../website/page-editor.md#using-the-calendar-element).
+
 ## Enabling Event Registration {#enabling-event-registration}
 
 You can enable registration for any calendar event so members can sign up through the B1 website or mobile app.

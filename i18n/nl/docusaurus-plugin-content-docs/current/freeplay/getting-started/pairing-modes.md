@@ -50,6 +50,6 @@ U kunt het scherm **Providers** op elk moment openen vanuit de zijbalk onderaan 
 
 ## Gerelateerde Artikelen
 
-- **[Classroom Mode](../classroom-mode/)** - Volledige gids voor koppelen met een klaslokaal
+- **[Classroom Mode](../scheduled-mode/)** - Volledige gids voor koppelen met een klaslokaal
 - **[Plan Mode](../plan-mode/)** - Volledige gids voor koppelen met een serviceplan
 - **[Content Providers](../content-providers/)** - Doorbladeren en download inhoud van externe bronnen

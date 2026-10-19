@@ -25,7 +25,7 @@ The B1 Checkin app connects to your B1 Admin attendance setup. When a member che
 
 ## Setting Up Check-In
 
-1. **Configure your attendance structure first.** In B1 Admin, go to **People > Attendance** and click **Setup** to make sure your campuses, service times, and groups are in place. The check-in app relies on this configuration. Optionally give each service time a [check-in schedule](setup.md#setting-a-check-in-schedule) so check-in opens and closes automatically each week. See [Attendance Setup](setup.md) for details.
+1. **Configure your attendance structure first.** In B1 Admin, go to **People > Attendance** and click **Setup** to make sure your campuses, service times, and groups are in place. The check-in app relies on this configuration. Optionally give each service time a [check-in schedule](setup.md#setting-a-check-in-schedule) so check-in opens and closes automatically each week. Schedules use your church's time zone, or your campus's time zone if the church doesn't have one set; the kiosk hides service times whose window is closed and tells families when check-in isn't open yet. See [Attendance Setup](setup.md) for details.
 2. **Install the B1 Checkin app** on the devices you plan to use. The app is available on the following platforms:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)

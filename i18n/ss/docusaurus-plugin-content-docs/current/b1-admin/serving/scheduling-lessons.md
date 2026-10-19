@@ -112,5 +112,5 @@ Uyacelwa kukopisha futsi utfumele umlayeto lolandzelako ngco kumhlinzeki wakho w
 - [Tinhlelo Tenkonzo](./plans.md)
 - [Kulandzelana Kwenkonzo](./service-order.md)
 - [Kucosha Tifundvo](/docs/lessons-church/customization/customizing-lessons)
-- [FreePlay — Kudlala Tifundvo ku-TV Yekilasi](/docs/freeplay/classroom-mode/playing-lessons)
+- [FreePlay — Kudlala Tifundvo ku-TV Yekilasi](/docs/freeplay/content-providers/playing-content)
 - [Luchazo Lwekuhlela ku-Lessons.church](/docs/lessons-church/classrooms/scheduling-lessons)

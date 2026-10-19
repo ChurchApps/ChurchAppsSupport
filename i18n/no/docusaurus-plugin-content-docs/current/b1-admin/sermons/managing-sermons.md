@@ -56,7 +56,7 @@ Hver prekenoppføring kan inneholde:
 - **Video-/lydlenker** -- URL-er til prekenmediet på YouTube, Vimeo, Facebook eller en egendefinert vert
 - **URL til lydfil (for podkast)** -- En direkte lenke til en MP3-/M4A-fil for denne prekenen. Lim inn en URL, eller klikk på **Last opp lyd** for å laste opp en fil og fylle ut feltet automatisk. Bare prekener der dette feltet (eller en direkte lenke til en videofil) er fylt ut, tas med i podkastfeeden din.
 
-## Podkastfeeden din
+## Podkastfeeden din {#your-podcast-feed}
 
 Så snart minst én preken har en lyd- eller videofil knyttet til seg, oppretter B1 Admin automatisk en RSS-podkastfeed for menigheten din -- du trenger ikke slå noe på. Du finner den i panelet **Podkastfeed** under prekenlisten: klikk på kopieringsikonet for å kopiere feed-URL-en, og send deretter inn denne URL-en til Apple Podcasts, Spotify eller en annen podkastkatalog.
 

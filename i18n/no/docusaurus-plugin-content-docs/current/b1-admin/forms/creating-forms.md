@@ -71,7 +71,7 @@ Når **Opprett en personregistrering fra innsendinger** er aktivert, kan du ogs�
 
 Hver gang noen sender inn skjemaet, legges den matchede eller nyopprettede personen til i gruppen (eksisterende gruppemedlemmer hoppes over). Dette er nyttig for ting som et påmeldingsskjema til en leir, som automatisk bør bygge leirens medlemsliste.
 
-### Sende en oppfølgings-e-post
+### Sende en oppfølgings-e-post {#sending-a-follow-up-email}
 
 Med **Opprett en personregistrering fra innsendinger** slått på, kan du også sende e-post til hver person som sender inn skjemaet. Fyll ut **Emne for oppfølgings-e-post** og **Innhold i oppfølgings-e-post** i skjemaets detaljer. Du kan bruke symbolene `{firstName}` og `{churchName}` i begge. E-posten sendes bare når begge feltene er fylt ut.
 

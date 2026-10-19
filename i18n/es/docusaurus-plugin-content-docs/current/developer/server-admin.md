@@ -1,118 +1,118 @@
 ---
-title: "Administración del Servidor"
+title: "Administración del servidor"
 ---
 
-# Administración del Servidor
+# Administración del servidor
 
 <div class="article-intro">
 
-Las características de administración del servidor en ChurchApps están disponibles solo para usuarios con el permiso **Server.Admin**. Estas herramientas se utilizan para operaciones de plataforma, soporte y resolución de problemas en todas las iglesias del sistema.
+Las funciones de administración del servidor de ChurchApps solo están disponibles para los usuarios con el permiso **Server.Admin**. Estas herramientas se usan para las operaciones de la plataforma, el soporte y la solución de problemas en todas las iglesias del sistema.
 
 </div>
 
-:::warning Acceso Restringido
-Las características descritas en esta página requieren permiso **Server.Admin** y no están disponibles para administradores de iglesias regulares. Están destinadas únicamente para operadores de plataforma y personal de soporte.
+:::warning Acceso restringido
+Las funciones descritas en esta página requieren el permiso **Server.Admin** y no están disponibles para los administradores de iglesias comunes. Están pensadas solo para los operadores de la plataforma y el personal de soporte.
 :::
 
-## Accediendo a la Administración del Servidor
+## Acceder a la administración del servidor
 
-Los usuarios con permiso Server.Admin pueden acceder al panel de administración del servidor desde B1 Admin:
+Los usuarios con el permiso Server.Admin pueden acceder al panel de administración del servidor desde B1 Admin:
 
 1. Inicia sesión en [admin.b1.church](https://admin.b1.church)
-2. Abre el [menú Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu), expande **Configuración**, y haz clic en **Server Admin**. (También puedes ir directamente a `admin.b1.church/admin`.)
-3. El panel de administración del servidor enumera sus secciones en el lado izquierdo en tres grupos: **Directory** (Iglesias, Usuarios, Suplantar Usuario), **Operations** (Trabajos de Fondo, Commons, Tendencias de Uso) y **System** (Búsquedas de Traducción, Salud del Servidor, Migraciones de Base de Datos)
+2. Abre el [menú Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu), expande **Configuración** y haz clic en **Administración del servidor**. (También puedes ir directamente a `admin.b1.church/admin`.)
+3. El panel de administración del servidor muestra sus secciones a la izquierda, en tres grupos: **Directorio** (Iglesias, Usuarios, Suplantar usuario), **Operaciones** (Trabajos en segundo plano, Commons, Tendencias de uso) y **Sistema** (Búsquedas de traducción, Estado del servidor, Migraciones de base de datos)
 
-## Suplantación de Usuario
+## Suplantación de usuarios
 
-La característica de suplantación permite a los administradores del servidor iniciar sesión como otro usuario para fines de soporte y resolución de problemas. Esto es útil cuando se investigan problemas reportados por usuarios o se ayuda a iglesias a configurar sus sistemas.
+La función de suplantación permite a los administradores del servidor iniciar sesión como otro usuario con fines de soporte y solución de problemas. Es útil al investigar incidencias reportadas por usuarios o al ayudar a las iglesias a configurar sus sistemas.
 
-### Cómo Suplantar a un Usuario
+### Cómo suplantar a un usuario
 
-1. Abre la sección **Suplantar Usuario** del panel de administración del servidor
-2. Ingresa el nombre o dirección de correo electrónico del usuario en el campo de búsqueda
-3. Haz clic en **Buscar** o presiona Enter
-4. De los resultados de búsqueda, haz clic en el usuario que deseas suplantar
-5. Confirma la suplantación en el diálogo que aparece
-6. Serás registrado como ese usuario y redirigido a su cuenta
+1. Abre la sección **Suplantar usuario** del panel de administración del servidor
+2. Escribe el nombre o la dirección de correo del usuario en el campo de búsqueda
+3. Haz clic en **Buscar** o pulsa Intro
+4. En los resultados de búsqueda, haz clic en el usuario que quieras suplantar
+5. Confirma la suplantación en el cuadro de diálogo que aparece
+6. Quedarás conectado como ese usuario y serás redirigido a su cuenta
 
-### Notas Importantes
+### Notas importantes
 
-- La suplantación crea una nueva sesión con los permisos y acceso a iglesia del usuario objetivo
-- Tu sesión de administrador original termina cuando suplanta a otro usuario
-- Todas las acciones tomadas mientras se suplanta se registran en el rastro de auditoría
-- Para volver a tu cuenta de administrador, cierra sesión e inicia sesión nuevamente con tus credenciales
-- Usa la suplantación solo cuando sea necesario para fines de soporte e informa siempre a los usuarios cuando accedas a sus cuentas para soporte
+- La suplantación crea una sesión nueva con los permisos y el acceso a iglesias del usuario de destino
+- Tu sesión de administrador original termina al suplantar a otro usuario
+- Todas las acciones realizadas mientras se está suplantando quedan registradas en el registro de auditoría
+- Para volver a tu cuenta de administrador, cierra sesión y vuelve a iniciar sesión con tus credenciales
+- Usa la suplantación solo cuando sea necesario para soporte y avisa siempre a los usuarios cuando accedas a su cuenta por motivos de soporte
 
-### Punto Final de API
+### Endpoint de la API
 
-La característica de suplantación está respaldada por el punto final `/users/:userId/impersonate` en la API de Pertenencia. Ver [Membership Endpoints](/docs/developer/api/endpoints/membership#users) para detalles técnicos.
+La función de suplantación se apoya en el endpoint `/users/:userId/impersonate` de la API de Membership. Consulta [Endpoints de Membership](/docs/developer/api/endpoints/membership#users) para los detalles técnicos.
 
-### Consideraciones de Seguridad
+### Consideraciones de seguridad
 
-- La suplantación requiere permiso Server.Admin - este permiso debe otorgarse con moderación y solo a operadores de plataforma confiables
-- Todos los eventos de suplantación se registran con el ID de usuario administrador e ID de usuario objetivo
-- Las iglesias no reciben notificación cuando ocurre la suplantación, así que establece políticas claras sobre cuándo y cómo debe usarse esta característica
-- Considera documentar eventos de suplantación en tu sistema de tickets de soporte para responsabilidad
+- La suplantación requiere el permiso Server.Admin; este permiso debe concederse con moderación y solo a operadores de plataforma de confianza
+- Todos los eventos de suplantación se registran con el ID del administrador y el ID del usuario de destino
+- Las iglesias no reciben notificación cuando se produce una suplantación, así que establece políticas claras sobre cuándo y cómo debe usarse esta función
+- Considera documentar los eventos de suplantación en tu sistema de tickets de soporte para garantizar la rendición de cuentas
 
 ## Moderación de Commons
 
-Commons es la cola de moderación compartida para contenido enviado por usuarios en todos los productos — canciones de WorshipCommons, lecciones de Lessons.church, plantillas de FreeShow, y plantillas del constructor de sitios web B1 fluyen a través de la misma cola en lugar de herramientas de revisión separadas por producto.
+Commons es la cola de moderación compartida para el contenido enviado por los usuarios en todos los productos: las canciones de WorshipCommons, las lecciones de Lessons.church, las plantillas de FreeShow y las plantillas del creador de sitios web de B1 pasan todas por la misma cola, en lugar de por herramientas de revisión separadas para cada producto.
 
-### Accediendo a Commons
+### Acceder a Commons
 
-1. Navega a la pestaña **Commons** en el panel de administración del servidor.
-2. Verás tres sub-pestañas: **Cola**, **Reportes**, y **Activos**.
+1. Ve a la pestaña **Commons** del panel de administración del servidor.
+2. Verás tres subpestañas: **Cola**, **Informes** y **Recursos**.
 
-Un rol de **editor de música** limitado también puede ver la pestaña Cola, pero se bloquea de aprobar envíos que cambien los derechos o licencia de una canción.
+Un rol limitado de **editor de música** también puede ver la pestaña Queue, pero no puede aprobar envíos que cambien los derechos o la licencia de una canción.
 
-### Cola
+### Queue
 
-La Cola lista cada envío pendiente en todos los productos, filtrable por producto y tipo de activo. Cada fila muestra si el envío es un activo nuevo, una edición por su autor original, o una edición por un tercero, junto con el historial de aprobación del remitente y cuánto tiempo ha estado esperando el envío (marcado una vez que pasa 72 horas).
+La pestaña Queue muestra todos los envíos pendientes de todos los productos, filtrables por producto y tipo de recurso. Cada fila indica si el envío es un recurso nuevo, una edición de su autor original o una edición de un tercero, junto con el historial de aprobaciones de quien envió y el tiempo que lleva esperando (se marca cuando supera las 72 horas).
 
-Haz clic en **Revisar** para abrir un cajón con diffs a nivel de campo, previsualizaciones de archivo, y una vista previa incrustada de solo lectura del elemento. Usa los atajos de teclado **a**/**r** para aprobar o rechazar, y **j**/**k** para pasar al siguiente o anterior envío sin dejar el cajón. Rechazar requiere seleccionar una razón (por ejemplo calidad, duplicado, licencia, ccli, ia, o fuera de tema) y una nota.
+Haz clic en **Revisar** para abrir un panel con las diferencias campo por campo, las vistas previas de archivos y una vista previa de solo lectura del elemento. Usa los atajos de teclado **a**/**r** para aprobar o rechazar, y **j**/**k** para pasar al envío siguiente o anterior sin salir del panel. Para rechazar es obligatorio seleccionar un motivo (por ejemplo, calidad, duplicado, licencia, ccli, ia o fuera de tema) y escribir una nota.
 
-### Reportes
+### Reports
 
-La pestaña Reportes maneja derechos de autor y reportes de política/calidad archivados contra activos ya publicados, divididos en colas separadas de Derechos de Autor y Política y Otros más un historial Resuelto. Reclama un reporte para comenzar a trabajarlo, luego resuélvelo con una resolución (sostenido, desestimado, o duplicado) y una acción (ninguno, no publicar, o eliminar).
+La pestaña Reports gestiona los informes de derechos de autor y de política/calidad presentados contra recursos ya publicados, divididos en las colas separadas Copyright y Policy & Other, además del historial Resolved. Reclama un informe para empezar a trabajarlo y luego resuélvelo con una resolución (upheld, dismissed o duplicate) y una acción (none, unpublish o remove).
 
-### Activos
+### Assets
 
-La pestaña Activos es un navegador buscable de contenido publicado con acciones para **Destacar** un activo (lo resalta en la página de inicio del producto), **No publicar**/**Republicar** lo, o **Eliminar** lo (con una razón de derechos de autor o política).
+La pestaña Assets es un explorador con búsqueda del contenido publicado, con acciones para **Destacar** un recurso (lo destaca en la página de inicio del producto), **Despublicar**/**Republicar** o **Eliminar** (con un motivo de derechos de autor o de política).
 
-Para canciones específicamente, este es también donde una canción se vuelve **Sunday-ready** y elegible para aparecer en la búsqueda de canciones de B1 Admin de una iglesia: un revisor abre el activo y marca cada clave publicada como **Escuchado** una vez que lo ha escuchado y confirmado que la partitura, acordes, y diapositivas están todas presentes. Una canción solo se vuelve Sunday-ready una vez que cada clave está marcada.
+En el caso de las canciones, aquí también es donde una canción pasa a estar **Lista para el domingo** y puede aparecer en la búsqueda de canciones de B1 Admin de una iglesia: un revisor abre el recurso y marca cada tonalidad publicada como **Escuchado** una vez que la ha escuchado completa y ha confirmado que la partitura, los acordes y las diapositivas están todos presentes. Una canción solo queda Sunday-ready cuando se han marcado todas sus tonalidades.
 
 :::info
-La moderación de Commons es solo personal — las iglesias individuales nunca ven esta cola. El único lugar donde el B1 Admin de una iglesia individual toca datos de Commons es la sección "WorshipCommons — free" de la [búsqueda de canciones](/docs/b1-admin/serving/songs#free-songs-from-worshipcommons), que solo muestra canciones que ya han pasado por este proceso de revisión.
+La moderación de Commons es solo para el personal: las iglesias individuales nunca ven esta cola. El único lugar en el que B1 Admin de una iglesia individual usa datos de Commons es la sección "WorshipCommons — free" de la [búsqueda de canciones](/docs/b1-admin/serving/songs#free-songs-from-worshipcommons), que solo muestra canciones que ya han pasado por este proceso de revisión.
 :::
 
-Ver la página de [arquitectura de Content Commons](/docs/developer/architecture/commons) para el modelo de datos subyacente y ciclo de vida de envío.
+Consulta la página [Arquitectura de Content Commons](/docs/developer/architecture/commons) para ver el modelo de datos subyacente y el ciclo de vida de los envíos.
 
-## Aprobación de Correo Electrónico de Grupo
+## Aprobación del correo de grupo
 
-Las iglesias no pueden enviar correo electrónico escrito por iglesia (correo electrónico de grupo, seguimientos de formulario, correos electrónicos de flujo de trabajo, e invitaciones de cuenta) hasta que un administrador del servidor las apruebe. Esto evita que iglesias registradas por bot usen la dirección de envío ChurchApps compartida para spam.
+Las iglesias no pueden enviar correo redactado por ellas (correo de grupo, seguimientos de formularios, correos de flujos de trabajo e invitaciones de cuenta) hasta que un administrador del servidor lo apruebe. Así se evita que iglesias registradas por bots usen la dirección de envío compartida de ChurchApps para hacer spam.
 
-1. Abre la pestaña **Iglesias** en el panel de administración del servidor.
-2. Cada iglesia muestra un chip de **Correo Electrónico de Grupo**: **Aprobado** (verde) o **No aprobado** (esbozado).
-3. Haz clic en el chip y confirma para aprobar la iglesia, o para revocar una aprobación.
+1. Abre la pestaña **Iglesias** del panel de administración del servidor.
+2. Cada iglesia muestra una etiqueta **Correo de grupo**: **Aprobado** (verde) o **No aprobado** (con borde).
+3. Haz clic en la etiqueta y confirma para aprobar la iglesia o para revocar una aprobación.
 
-El personal de la iglesia pide aprobación con el botón **Solicitar revisión** en el diálogo Enviar Correo Electrónico de B1 Admin. La solicitud se envía por correo electrónico a la dirección de soporte e lista el nombre, ID, fecha de registro, ubicación, y quién preguntó de la iglesia. Una iglesia puede enviar una solicitud por semana. Ver [Límites de correo electrónico redactado por iglesia](/docs/developer/architecture/notifications#church-authored-email-limits) para la asignación diaria y la pausa automática en rebotes y quejas.
+El personal de la iglesia solicita la aprobación con el botón **Solicitar revisión** del cuadro de diálogo Send Email de B1 Admin. La solicitud se envía por correo a la dirección de soporte e incluye el nombre de la iglesia, su ID, la fecha de registro, la ubicación y quién la pidió. Una iglesia puede enviar una solicitud por semana. Consulta [Límites del correo redactado por la iglesia](/docs/developer/architecture/notifications#church-authored-email-limits) para ver la cuota diaria y la pausa automática por rebotes y quejas.
 
-## Migraciones de Base de Datos
+## Migraciones de base de datos {#database-migrations}
 
-Los despliegues no cambian la base de datos. Las bases de datos hospedadas solo aceptan conexiones desde dentro de la red de Api, por lo que después de una versión que agrega una migración, un administrador del servidor la aplica desde la pestaña **Database Migrations**. (Las instalaciones autohospedadas de Docker aún ejecutan migraciones automáticamente cuando comienza el contenedor de Api.)
+El flujo **Deploy Prod** aplica por sí mismo las migraciones pendientes. Las bases de datos alojadas solo aceptan conexiones desde dentro de la red de la API, así que un runner de GitHub no puede alcanzarlas; en su lugar, justo después de `serverless deploy`, el flujo invoca la función Lambda `migrate` de la API (`api-Prod-migrate`), que ejecuta las migraciones pendientes de cada módulo con el mismo runner que esta pestaña y hace fallar el despliegue si algún módulo da error o es rechazado. **Rollback Prod** revierte solo el código de la Lambda; las migraciones ya aplicadas permanecen aplicadas. La pestaña **Migraciones de base de datos** sirve para consultar el estado, ejecutar lo que un despliegue no haya ejecutado (por ejemplo, en el entorno de demostración, cuyo despliegue no migra) y establecer una línea base en los módulos sin historial. (Las instalaciones autoalojadas con Docker siguen ejecutando las migraciones automáticamente cuando arranca el contenedor de la API).
 
-La pestaña muestra el entorno actual y una fila por módulo (pertenencia, asistencia, donaciones, etc.) con su estado, el número de migraciones aplicadas y pendientes, y la última aplicada.
+La pestaña muestra el entorno actual y una fila por módulo (membership, attendance, giving, etc.) con su estado, el número de migraciones aplicadas y pendientes, y la última aplicada.
 
-- **Run Pending Migrations** aplica cada migración pendiente, un módulo a la vez, en orden. Se detiene en el primer fallo y muestra lo que se aplicó para cada módulo.
-- Un módulo marcado **No history** tiene una base de datos que precede al seguimiento de migraciones. Nunca se ejecuta automáticamente, porque eso reproduciría migraciones de datos antiguas en tablas en vivo. Haz clic en **Check Schema** en ese módulo en su lugar. Api compara las tablas, columnas, e índices que cada migración crea con la base de datos en vivo y marca cada migración como **Already applied**, **Missing**, **Partly applied**, o **Data only**. Nada se cambia por la comprobación.
-- En los resultados de la comprobación, **Record as Already Applied** escribe las migraciones detectadas en el historial de migraciones sin ejecutarlas (después de una confirmación). Todo hasta la última migración **Already applied** se registra, incluyendo las **Data only** en ese rango; los **Missing** permanecen pendientes y luego pueden ejecutarse normalmente con **Run Pending Migrations**.
-- Una migración **Partly applied** bloquea el registro. Si es seguro ejecutar la migración nuevamente (léela primero), marca **Re-run** para que permanezca pendiente y se ejecute nuevamente desde el principio.
+- **Ejecutar migraciones pendientes** aplica todas las migraciones pendientes, un módulo a la vez, en orden. Se detiene en el primer fallo y muestra lo aplicado en cada módulo.
+- Un módulo marcado como **Sin historial** tiene una base de datos anterior al seguimiento de migraciones. Nunca se ejecuta automáticamente, porque eso reproduciría migraciones de datos antiguas sobre tablas en producción. Haz clic en **Comprobar esquema** en ese módulo. La API compara las tablas, columnas e índices que crea cada migración con la base de datos en producción y marca cada migración como **Ya aplicada**, **Faltante**, **Parcialmente aplicada** o **Solo datos**. La comprobación no cambia nada.
+- En los resultados de la comprobación, **Registrar como ya aplicadas** escribe las migraciones detectadas en el historial de migraciones sin ejecutarlas (tras una confirmación). Se registra todo hasta la última migración **Ya aplicada**, incluidas las **Solo datos** dentro de ese rango; las **Faltante** permanecen pendientes y después pueden ejecutarse normalmente con **Ejecutar migraciones pendientes**.
+- Una migración **Parcialmente aplicada** bloquea el registro. Si la migración puede volver a ejecutarse con seguridad (léela primero), marca **Volver a ejecutar** para que siga pendiente y se ejecute de nuevo desde el principio.
 
-El panel de administración del servidor y el CLI (`yarn migrate:up`) utilizan el mismo migrador Kysely y tabla `kysely_migration`, por lo que siempre están de acuerdo en lo que se ha aplicado. Los puntos finales de respaldo son `GET /membership/serverHealth/migrations`, `POST /membership/serverHealth/migrations/:module/run`, `GET .../:module/detect`, y `POST .../:module/baseline`, todos solo Server.Admin.
+El panel de administración del servidor y la CLI (`yarn migrate:up`) usan el mismo migrador de Kysely y la misma tabla `kysely_migration`, así que siempre coinciden en lo que se ha aplicado. Los endpoints que lo respaldan son `GET /membership/serverHealth/migrations`, `POST /membership/serverHealth/migrations/:module/run`, `GET .../:module/detect` y `POST .../:module/baseline`, todos exclusivos de Server.Admin.
 
-## Páginas Relacionadas
+## Páginas relacionadas
 
-- [Authentication & Permissions](/docs/developer/api/endpoints/authentication) — Modelo de permiso y autenticación JWT
-- [Membership Endpoints](/docs/developer/api/endpoints/membership) — API de gestión de usuarios e iglesias
-- [Audit Log](/docs/b1-admin/reports/audit-log) — Ver registros de actividad para una iglesia
-- [Content Commons Architecture](/docs/developer/architecture/commons) — Modelo de activo compartido y ciclo de vida de moderación
+- [Autenticación y permisos](/docs/developer/api/endpoints/authentication) — Modelo de permisos y autenticación JWT
+- [Endpoints de Membership](/docs/developer/api/endpoints/membership) — API de gestión de usuarios e iglesias
+- [Registro de auditoría](/docs/b1-admin/reports/audit-log) — Ver los registros de actividad de una iglesia
+- [Arquitectura de Content Commons](/docs/developer/architecture/commons) — Modelo de recursos compartidos y ciclo de vida de la moderación

@@ -6,41 +6,44 @@ title: "Eventos"
 
 <div class="article-intro">
 
-A seção Eventos no B1.church permite que você navegue pelos próximos eventos da igreja e se inscreva neles diretamente pelo site. Quando sua igreja habilita a inscrição para um evento, você pode se inscrever e inscrever seus familiares em apenas alguns passos — e, para eventos pagos, escolher tipos de participante e opções, aplicar códigos de desconto e pagar com segurança como parte da inscrição.
+A seção de Eventos no B1.church permite navegar pelos próximos eventos da igreja e se inscrever diretamente pelo site. Quando sua igreja habilita as inscrições para um evento, você pode se inscrever você mesmo e seus familiares em poucos passos — e, para eventos pagos, escolher tipos de participante e opções, aplicar códigos de desconto e pagar com segurança como parte da inscrição.
 
 </div>
 
 ## Navegando pelos Eventos
 
-Os eventos aparecem no calendário da igreja. Quando você abre um evento que tem inscrição habilitada, um botão **Inscrever-se neste Evento** é exibido junto com os detalhes do evento.
+Os eventos aparecem no site da sua igreja, seja em um calendário mensal, seja como blocos com os próximos eventos. Clique em um evento para abrir a página dele, que mostra:
 
-Eventos com inscrição habilitada mostram:
+- **Foto do evento** — Se a igreja tiver adicionado uma.
+- **Título e descrição do evento** — Do que se trata o evento.
+- **Quando** — A data e o horário da próxima ocorrência, ou o padrão de repetição de um evento recorrente.
+- **Onde** — As salas reservadas para o evento, se houver.
+- **Register for this Event** — Um botão que leva ao formulário de inscrição. Só aparece quando as inscrições estão ativadas para o evento.
+- **Add to my calendar** — Baixa o evento como um arquivo de calendário que você pode abrir no Google Agenda, Calendário da Apple, Outlook ou outro app de calendário.
 
-- **Título e descrição do evento** -- Sobre o que é o evento.
-- **Data e hora** -- Quando o evento acontece.
-- **Botão de inscrição** -- Um botão azul que leva você ao formulário de inscrição.
+Toque em **All events** no topo da página para voltar. Acima dos blocos de próximos eventos, um botão **Subscribe** permite copiar o link ICS de todo o calendário ou baixá-lo, para que os novos eventos apareçam no seu app de calendário.
 
 ## Status da Inscrição
 
-Os eventos podem mostrar status diferentes dependendo do tempo e da capacidade:
+Os eventos podem mostrar status diferentes, conforme o período e a capacidade:
 
-- **Aberto** -- A inscrição está disponível e você pode se inscrever.
-- **Ainda Não Aberto** -- A janela de inscrição ainda não começou. Volte a verificar depois da data de abertura.
-- **Encerrado** -- O prazo de inscrição já passou.
-- **Lotado** -- Todas as vagas disponíveis foram preenchidas.
+- **Open** — As inscrições estão disponíveis e você pode se inscrever.
+- **Not Yet Open** — A janela de inscrições ainda não começou. Volte depois da data de abertura.
+- **Closed** — O prazo de inscrição já passou.
+- **Full** — Todas as vagas disponíveis foram preenchidas.
 
 :::tip
-Se um evento estiver lotado, você ainda pode entrar na **lista de espera** caso sua igreja a tenha habilitado -- você será notificado por email automaticamente se uma vaga abrir. Caso contrário, volte a verificar mais tarde; vagas podem abrir se alguém cancelar.
+Se um evento estiver lotado, você ainda pode entrar na **lista de espera**, quando a igreja tiver ativado essa opção — você receberá um e-mail automaticamente se uma vaga for liberada. Caso contrário, volte mais tarde; vagas podem surgir se alguém cancelar.
 :::
 
-## O que Você Precisa
+## O Que Você Precisa
 
-- Uma conta B1.church (ou você pode se inscrever como convidado)
-- Acesso ao site B1.church da sua igreja
+- Uma conta no B1.church (ou pode se inscrever como convidado)
+- Acesso ao site da sua igreja no B1.church
 
 ## Saiba Mais
 
-- [Inscrevendo-se em Eventos](./registering) -- Guia passo a passo para se inscrever em um evento
-- [Minhas Inscrições](./my-registrations) -- Veja suas inscrições, pague saldos, edite ou cancele
-- [Solicitando Eventos e Salas](./requesting-events) -- Solicite um evento com as salas e recursos necessários
-- [Autoatendimento de Check-In](../checkin/self-checkin) -- Faça check-in ao chegar no evento
+- [Inscrevendo-se em Eventos](./registering) — Passo a passo para se inscrever em um evento
+- [Minhas Inscrições](./my-registrations) — Veja suas inscrições, pague saldos, edite ou cancele
+- [Solicitando Eventos e Salas](./requesting-events) — Solicite um evento com as salas e os recursos de que ele precisa
+- [Self Check-In](../checkin/self-checkin) — Faça o check-in ao chegar ao evento

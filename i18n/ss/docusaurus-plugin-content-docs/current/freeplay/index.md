@@ -35,10 +35,10 @@ Nawucalisa i-FreePlay, ixhumana nebaniketi bakho bekucuketfwe futsi ihlole kucuk
 ## Tigaba
 
 - **[Kucala](./getting-started/)** - Faka i-app, uyicalise, bese ukhetsa indlela yekuxhuma
-- **[Simo Selikilasi](./classroom-mode/)** - Hlanganisa nelikilasi bese udlala tifundzo letihlelekile
+- **[Simo Selikilasi](./scheduled-mode/)** - Hlanganisa nelikilasi bese udlala tifundzo letihlelekile
 - **[Simo Selicebo](./plan-mode/)** - Hlanganisa nelicebo lenkonzo yebandla
 - **[Baniketi Bekucuketfwe](./content-providers/)** - Xhuma etindzaweni tangephandle tekucuketfwe
-- **[Kuhlola Tifundzo](./browsing-lessons/)** - Hlola yonkhe inchubomlomo yetifundzo ngeluhlelo nangesifundvo
+- **[Kuhlola Tifundzo](./content-providers/browsing-content)** - Hlola yonkhe inchubomlomo yetifundzo ngeluhlelo nangesifundvo
 
 :::info
 FreePlay ingulenye yetintfo te-[ChurchApps](https://churchapps.org), luhlu lwetinsita letimahhala, letivuliwe (open-source) temabandla.

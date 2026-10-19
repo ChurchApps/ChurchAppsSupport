@@ -1,47 +1,48 @@
 ---
-title: "Entwickler-Dokumentation"
+title: "Entwicklerdokumentation"
 ---
 
-# Entwickler-Dokumentation
+# Entwicklerdokumentation
 
 <div class="article-intro">
 
-ChurchApps ist eine Sammlung von etwa 20 Open-Source-Projekten, die zusammen eine vollständige Kirchenverwaltungsplattform bieten. Die Projekte umfassen Backend-APIs, Web-Anwendungen, Mobile-Apps, eine Desktop-Anwendung und gemeinsame Biblioteken — alle in TypeScript geschrieben. Dieser Abschnitt bietet alles, was Sie benötigen, um eine lokale Entwicklungsumgebung einzurichten und mit dem Beitragen zu beginnen.
+ChurchApps ist eine Sammlung von etwa 20 Open-Source-Projekten, die zusammen eine vollständige Plattform für die Kirchenverwaltung bilden. Die Projekte umfassen Backend-APIs, Web-Anwendungen, mobile Apps, eine Desktop-Anwendung und gemeinsame Bibliotheken, alles in TypeScript geschrieben. Dieser Bereich bietet alles, was Sie brauchen, um eine lokale Entwicklungsumgebung einzurichten und mitzuarbeiten.
 
 </div>
 
 ## Architektur auf einen Blick
 
-Die Projekte sind **unabhängige Repositories** (kein Monorepo). Gemeinsamer Code wird zu npm unter dem `@churchapps/*`-Scope veröffentlicht und als reguläre Abhängigkeiten konsumiert. Das bedeutet, dass Sie an einem einzelnen Projekt arbeiten können, ohne das gesamte Ökosystem zu klonen.
+Die Projekte sind **unabhängige Repositories** (kein Monorepo). Gemeinsamer Code wird unter dem Scope `@churchapps/*` auf npm veröffentlicht und als gewöhnliche Abhängigkeit eingebunden. Das bedeutet, dass Sie an einem einzelnen Projekt arbeiten können, ohne das gesamte Ökosystem zu klonen.
 
 Wichtige Merkmale:
 
-- **Sprache:** TypeScript durchgehend
-- **Backend:** Node.js / Express APIs, deployed zu AWS Lambda via Serverless Framework
+- **Sprache:** durchgängig TypeScript
+- **Backend:** Node.js / Express-APIs, über das Serverless Framework auf AWS Lambda bereitgestellt
 - **Web:** React 19 (Vite und Next.js), Material-UI 7
-- **Mobile:** React Native mit Expo
+- **Mobil:** React Native mit Expo
 - **Datenbank:** MySQL 8.0, eine Datenbank pro API-Modul
 
-## Was dieser Abschnitt behandelt
+## Was dieser Bereich behandelt
 
-- **[Setup](setup/)** — Lokale Entwicklungsumgebung, Voraussetzungen und Konfiguration
-  - [Voraussetzungen](setup/prerequisites) — Erforderliche Werkzeuge und Software
-  - [Projekt-Übersicht](setup/project-overview) — Alle Projekte auf einen Blick
-  - [Umgebungsvariablen](setup/environment-variables) — `.env`-Dateien konfigurieren
-- **[API](api/)** — Core API lokales Setup, Datenbank-Initialisierung und Modulstruktur
-- **[Web-Apps](web-apps/)** — B1Admin, B1App und LessonsApp lokal ausführen
-- **[Mobile-Apps](mobile/)** — B1Mobile und andere Expo-Apps bauen
-- **[Gemeinsame Biblioteken](shared-libraries/)** — Arbeiten mit Helpers, ApiHelper und AppHelper
-- **[Deployment](deployment/)** — APIs, Web-Apps und Mobile-Apps deployen
+- **[Einrichtung](setup/)**: Lokale Entwicklungsumgebung, Voraussetzungen und Konfiguration
+  - [Voraussetzungen](setup/prerequisites): Benötigte Werkzeuge und Software
+  - [Projektübersicht](setup/project-overview): Alle Projekte auf einen Blick
+  - [Umgebungsvariablen](setup/environment-variables): Konfiguration der `.env`-Dateien
+- **[API](api/)**: Lokale Einrichtung der Kern-API, Initialisierung der Datenbank und Modulstruktur
+- **[Web-Apps](web-apps/)**: B1Admin, B1App und LessonsApp lokal ausführen
+- **[Mobile Apps](mobile/)**: B1Mobile und andere Expo-Apps erstellen
+- **[Gemeinsame Bibliotheken](shared-libraries/)**: Mit Helpers, ApiHelper und AppHelper arbeiten
+- **[Bereitstellung](deployment/)**: APIs, Web-Apps und mobile Apps bereitstellen
+- **[FreePlay-Inhaltsanbieter](freeplay-content-provider)**: Ihre Lektionsbibliothek in FreePlay einbinden
 
-## Gemeinschaft und Ressourcen
+## Community und Ressourcen
 
 | Ressource | Link |
 |----------|------|
 | GitHub-Organisation | [github.com/ChurchApps](https://github.com/ChurchApps) |
-| Issue-Tracker | [ChurchAppsSupport Issues](https://github.com/ChurchApps/ChurchAppsSupport/issues) |
-| Slack-Gemeinschaft | [Slack beitreten](https://join.slack.com/t/livechurchsolutions/shared_invite/zt-i88etpo5-ZZhYsQwQLVclW12DKtVflg) |
+| Issue-Tracker | [ChurchAppsSupport-Issues](https://github.com/ChurchApps/ChurchAppsSupport/issues) |
+| Slack-Community | [Slack beitreten](https://join.slack.com/t/livechurchsolutions/shared_invite/zt-i88etpo5-ZZhYsQwQLVclW12DKtVflg) |
 
 :::tip
-Der schnellste Weg zum Beitragen ist, eine Web-App (wie B1Admin) auszuwählen, sie auf die **Staging-APIs** zu zeigen und mit Frontend-Änderungen zu beginnen. Kein Datenbank- oder API-Setup erforderlich.
+Der schnellste Weg, einen Beitrag zu leisten, ist, eine Web-App wie B1Admin auszuwählen, sie auf die gemeinsamen **Demo-APIs** zu richten und mit Änderungen am Frontend zu beginnen. Eine Datenbank oder eine API-Einrichtung ist dafür nicht nötig.
 :::

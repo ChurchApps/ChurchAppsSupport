@@ -1,36 +1,35 @@
 ---
-title: "Deployment"
+title: "Pag-deploy"
 ---
 
-# Deployment
+# Pag-deploy
 
 <div class="article-intro">
 
-Ang ChurchApps ay gumagamit ng iba't ibang deployment strategies depende sa project type. Ang APIs ay nag-deploy sa AWS Lambda, ang web apps ay nag-deploy bilang static sites sa S3 na may CloudFront, at ang mobile apps ay binubuo at distributed sa pamamagitan ng Expo EAS at ang app stores.
+Iba-iba ang deployment strategy ng ChurchApps depende sa uri ng proyekto. Dine-deploy ang mga API sa AWS Lambda, ang mga web app ay dine-deploy bilang static sites sa S3 na may CloudFront, at ang mga mobile app ay binubuo at ipinamamahagi sa pamamagitan ng Expo EAS at mga app store.
 
 </div>
 
-## Deployment by Project Type
+## Deployment ayon sa Uri ng Proyekto
 
-| Project Type | Deployment Target | Tooling |
+| Uri ng Proyekto | Deployment Target | Tooling |
 |-------------|-------------------|---------|
 | [APIs](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 22.x runtime) |
 | [Web Apps](./web-apps) | S3 + CloudFront | Static build, S3 sync, CloudFront invalidation |
 | [Mobile Apps](./mobile) | App Stores | Expo EAS Build + OTA Updates |
-| [Self-Hosting (Railway)](./railway-template) | Railway | One-click na template: MySQL + Api + B1Admin + B1App |
-| [Self-Hosting (Docker)](./docker) | Anumang Docker host | `docker compose up` mula sa B1Admin repo |
+| [Self-Hosting (Railway)](./railway-template) | Railway | One-click template: MySQL + Api + B1Admin + B1App |
+| [Self-Hosting (Docker)](./docker) | Anumang Docker host | One-line installer; prebuilt GHCR images + Caddy, `./deploy/b1` upgrade/backup/rollback |
 | [Caddy Custom-Domain Proxy](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Static Caddyfile + WinSW service + scheduled map sync |
-| FreeShow | Direct download | Electron Builder (cross-platform binaries) |
+| FreeShow | Direktang download | Electron Builder (cross-platform binaries) |
 
-## Environments
+## Mga Environment
 
-| Environment | Purpose |
-|-------------|---------|
-| `dev` | Local development |
-| `demo` | Public demo instance |
-| `staging` | Pre-production testing |
+| Environment | Layunin |
+|-------------|-------------------|
+| `dev` | Lokal na development |
+| `demo` | Pampublikong demo instance; dine-deploy sa bawat push sa `main`, kaya nagsisilbi rin itong pre-production testing |
 | `prod` | Production |
 
 :::info
-Bawat environment ay may sarili nitong set ng API endpoints, databases, at configuration. Ang environment-specific settings ay pinamamahalaan sa pamamagitan ng `.env` files nang lokal at AWS SSM Parameter Store sa deployed environments.
+Ang bawat environment ay may sariling hanay ng API endpoints, database, at configuration. Ang mga setting na partikular sa environment ay pinamamahalaan sa pamamagitan ng mga `.env` file nang lokal at ng AWS SSM Parameter Store sa mga naka-deploy na environment.
 :::

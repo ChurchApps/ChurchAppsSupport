@@ -111,7 +111,7 @@ Una volta collegato un fornitore, il personale autorizzato a inviare messaggi ve
 - I membri che hanno scelto **Nascondimi dal registro dei membri** vengono conteggiati come disiscritti e saltati.
 - I familiari che condividono lo stesso numero di cellulare ricevono il messaggio una sola volta.
 
-### Personalizzare i messaggi con i campi unione
+### Personalizzare i messaggi con i campi unione {#personalizing-texts-with-merge-fields}
 
 Sotto la casella del messaggio, la finestra del messaggio mostra dei segnaposto: **Nome**, **Cognome**, **Nome visualizzato** e **Nome della chiesa**. Fai clic su un segnaposto per inserire il suo codice (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` oppure `{{churchName}}`) alla posizione del cursore. Quando il messaggio viene inviato, ogni segnaposto viene sostituito con i dati del destinatario, così un messaggio di gruppo come `Ciao {{firstName}}, ci vediamo domenica!` arriva a ciascun membro con il proprio nome. I segnaposto funzionano sia per i messaggi di gruppo sia per i messaggi a una singola persona.
 

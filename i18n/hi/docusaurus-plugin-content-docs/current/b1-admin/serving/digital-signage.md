@@ -1,40 +1,52 @@
 ---
-title: "डिजिटल साइनेज"
+title: "Digital Signage"
 ---
 
-# डिजिटल साइनेज
+# Digital Signage
 
 <div class="article-intro">
 
-डिजिटल साइनेज फीड का उपयोग करके अपनी पाठ सामग्री को लॉबी या हॉलवे टीवी में भेजें। प्रत्येक योजना प्रकार को एक फीड URL मिलता है जो हमेशा वर्तमान योजना की सामग्री को चलाता है, इसलिए सप्ताह दर सप्ताह कुछ भी अपडेट करने की जरूरत नहीं है।
+Digital signage feed का उपयोग करके अपना lesson content lobby या hallway के TV पर भेजें। हर plan type को एक feed URL मिलता है जो हमेशा मौजूदा plan का content चलाता है, इसलिए हर हफ्ते कुछ भी अपडेट करने की ज़रूरत नहीं है। अगर आपके TV FreePlay चलाते हैं, तो आप इसके बजाय FreePlay Admin में plan type को उन पर schedule कर सकते हैं।
 
 </div>
 
 <div class="prereqs">
-<h4>शुरुआत से पहले</h4>
+<h4>शुरू करने से पहले</h4>
 
-- [Lessons.church](../../b1-church/content/lessons.md) या अन्य पाठ सामग्री के साथ [योजना प्रकार](./plans.md) सेट करें
-- [SignPresenter](https://www.signpresenter.com) खाता और इसे प्रदर्शित करने के लिए सेट अप किया गया डिवाइस रखें
+- [Lessons.church](../../b1-church/content/lessons.md) या किसी अन्य lesson content के साथ एक [plan type](./plans.md) सेट करें
+- [SignPresenter](https://www.signpresenter.com) account और उसे दिखाने के लिए सेट किया गया device रखें, या [FreePlay](../../freeplay/) चलाने वाला TV रखें
 
 </div>
 
-## फीड URL प्राप्त करना
+## Feed URL प्राप्त करना
 
-1. **Serving** पर जाएं, अपनी योजना प्रकार वाली मंत्रालय चुनें, और उसे खोलने के लिए योजना प्रकार पर क्लिक करें।
-2. योजना प्रकार पृष्ठ के शीर्ष पर **Digital Signage** (TV आइकन) पर क्लिक करें।
-3. संवाद में दिखाया गया फीड URL कॉपी करें।
+1. **Serving** पर जाएं, वह ministry चुनें जिसमें आपका plan type है, और plan type खोलने के लिए उस पर क्लिक करें।
+2. plan type page के ऊपर **Digital Signage** (TV icon) पर क्लिक करें।
+3. **Digital Signage Feed** dialog में, **Feed Url** के आगे copy बटन पर क्लिक करें।
 
 :::info
-फीड URL योजना प्रकार से जुड़ा होता है, न कि एकल योजना से। यह स्वचालित रूप से ट्रैक करता है कि इस योजना प्रकार के लिए कौन सी योजना वर्तमान के रूप में निर्धारित की गई है, इसलिए आपको इसे केवल एक बार सेट करना होगा।
+feed URL किसी एक plan के बजाय plan type से जुड़ा होता है। यह अपने-आप उस plan को ट्रैक करता है जो उस plan type के लिए मौजूदा के रूप में schedule है, इसलिए आपको इसे केवल एक बार सेट करना होता है।
 :::
 
-## SignPresenter से जुड़ना
+## SignPresenter से जोड़ना
 
-फीड को [SignPresenter](https://www.signpresenter.com), एक तीसरे पक्ष के डिजिटल साइनेज ऐप के साथ काम करने के लिए बनाया गया है। कॉपी किए गए URL को SignPresenter में एक बाहरी फीड के रूप में पेस्ट करें ताकि अपनी वर्तमान पाठ सामग्री को किसी जुड़ी हुई स्क्रीन पर प्रदर्शित कर सकें।
+यह feed [SignPresenter](https://www.signpresenter.com) के साथ काम करने के लिए बनाया गया है, जो एक third-party digital signage app है। कॉपी किया गया URL SignPresenter में एक external feed के रूप में पेस्ट करें, ताकि आपका मौजूदा lesson content एक जुड़ी हुई screen पर दिखे।
 
-SignPresenter के अंदर चरण-दर-चरण सेटअप के लिए, [SignPresenter's Lessons.church guide](https://support.signpresenter.com/topics/lessons-dot-church.html) देखें।
+SignPresenter के अंदर चरण-दर-चरण setup के लिए, देखें [SignPresenter's Lessons.church guide](https://support.signpresenter.com/topics/lessons-dot-church.html)। dialog में भी इन निर्देशों के लिंक हैं।
 
-## अगले कदम
+## इसके बजाय FreePlay TVs का उपयोग
 
-- [Plans](./plans.md) पृष्ठ पर इस साइनेज डिस्प्ले को फीड करने वाली योजनाओं का प्रबंधन करें
-- [Lessons.church](./scheduling-lessons.md) के साथ सामग्री शेड्यूल करें
+अगर आपकी screens [FreePlay](../../freeplay/) चलाती हैं, तो आपको feed URL की ज़रूरत नहीं है। **Digital Signage Feed** dialog **admin.freeplay.church/calendar** का लिंक देता है, जहां आप इस plan type को अपने FreePlay TVs पर schedule कर सकते हैं:
+
+1. dialog में **admin.freeplay.church/calendar** लिंक पर क्लिक करें। FreePlay Admin वही login उपयोग करता है जो B1 Admin में है।
+2. अपने TVs के लिए screen group चुनें और **Add schedule** पर क्लिक करें।
+3. **Play** के नीचे, **Service plans** से अपना plan type चुनें। वह **(current plan)** के रूप में चिह्नित है।
+4. दिन और समय सेट करें, फिर **Save** पर क्लिक करें।
+
+TVs हर हफ्ते उस plan type के लिए मौजूदा plan चलाते हैं, जो आपके सेट किए गए समय पर होता है। सभी विकल्पों के लिए देखें [Scheduling the Calendar](../../freeplay/scheduled-mode/scheduling-the-calendar), और TV जोड़ने के लिए [Pairing a Screen](../../freeplay/scheduled-mode/pairing-a-screen) देखें।
+
+## आगे के कदम
+
+- इस signage display को फ़ीड करने वाले plans को [Plans](./plans.md) page पर प्रबंधित करें
+- [Lessons.church](./scheduling-lessons.md) के साथ content schedule करें
+- [Scheduled Mode](../../freeplay/scheduled-mode/) के साथ FreePlay TVs को calendar पर रखें

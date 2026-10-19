@@ -1,61 +1,61 @@
 ---
-title: "Calendrier organisé"
+title: "Calendrier personnalisé"
 ---
 
-# Calendrier organisé
+# Calendrier personnalisé
 
 <div class="article-intro">
 
-Un calendrier organisé regroupe les événements de plusieurs groupes en une seule vue de calendrier unifiée. C'est idéal pour créer un calendrier au niveau de l'église qui montre tout ce qui se passe dans tous vos ministères et groupes en un seul endroit.
+Un calendrier personnalisé regroupe les événements de plusieurs groupes dans une seule vue de calendrier. C'est idéal pour créer un calendrier de toute l'église qui présente tout ce qui se passe dans l'ensemble de vos ministères et groupes, au même endroit.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Configurez les [groupes](../groups/creating-groups.md) dont vous souhaitez inclure les événements
+- Créez les [groupes](../groups/creating-groups.md) dont vous souhaitez inclure les événements
 - Assurez-vous que les responsables de groupe ont ajouté des événements à leurs groupes respectifs
-- Familiarisez-vous avec les bases de [Créer des calendriers](creating-calendars)
+- Familiarisez-vous avec les bases de la [création de calendriers](creating-calendars)
 
 </div>
 
-## Créer un calendrier organisé
+## Créer un calendrier personnalisé
 
-1. Dans B1 Admin, ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Calendriers**, et cliquez sur **Calendriers**.
-2. Cliquez sur **Ajouter un calendrier** pour créer un nouveau calendrier organisé.
+1. Dans B1 Admin, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Calendriers**, puis cliquez sur **Calendriers**.
+2. Cliquez sur **Ajouter un calendrier** pour créer un nouveau calendrier personnalisé.
 3. Donnez un **nom** à votre calendrier (par exemple, « Événements de l'église » ou « Cette semaine à notre église »).
 4. Cliquez sur **Créer** pour l'enregistrer.
 
 ## Ajouter des groupes à votre calendrier
 
-1. Cliquez sur **Gérer les événements** sur votre nouveau calendrier pour l'ouvrir.
-2. Cliquez sur **Ajouter un groupe** au-dessus du calendrier. Les groupes ajoutés apparaissent dans la liste **Groupes dans le calendrier** sur le côté gauche de la page.
+1. Cliquez sur **Gérer les événements** dans votre nouveau calendrier pour l'ouvrir.
+2. Cliquez sur **Ajouter un groupe** au-dessus du calendrier. Les groupes que vous ajoutez apparaissent dans la liste **Groupes dans le calendrier**, sur le côté gauche de la page.
 3. Sélectionnez un groupe dans la liste déroulante.
-4. Choisissez d'ajouter **tous les événements** de ce groupe ou seulement **des événements spécifiques**.
+4. Choisissez d'ajouter **tous les événements** de ce groupe ou seulement **des événements précis**.
 5. Cliquez sur **Enregistrer**.
-6. Répétez ce processus pour ajouter autant de groupes que vous le souhaitez.
+6. Répétez cette opération pour ajouter autant de groupes que vous le souhaitez.
 
 :::tip
-Ajoutez tous vos groupes de ministère actifs pour créer un calendrier complet qui donne à votre congrégation une image complète de ce qui se passe dans votre église chaque semaine.
+Ajoutez tous vos groupes de ministère actifs pour créer un calendrier complet qui donne à votre congrégation une vision globale de ce qui se passe chaque semaine dans votre église.
 :::
 
 ## Partager votre calendrier
 
-Une fois votre calendrier organisé configuré, vous pouvez le partager de plusieurs façons :
+Une fois votre calendrier personnalisé configuré, vous pouvez le partager de plusieurs façons :
 
-- **Intégrer sur votre site web** – Le calendrier peut être affiché directement sur les pages de votre site Web B1.church pour que les visiteurs le consultent.
-- **S'abonner via ICS** – Cliquez sur **S'abonner** pour copier le lien ICS. Votre congrégation peut coller ce lien dans Google Calendar, Apple Calendar, Outlook ou toute autre application de calendrier pour rester synchronisée.
-- **Télécharger le fichier ICS** – Téléchargez le fichier de calendrier pour l'importer dans une application de calendrier.
+- **Intégrer sur votre site Web** -- Ajoutez un élément **Calendrier** à une page pour afficher le calendrier sous forme de grille mensuelle ou de vignettes d'événements à venir, éventuellement limité aux événements portant une seule étiquette. Chaque événement renvoie vers sa propre page de votre site. Voir [Utiliser l'élément Calendrier](../website/page-editor.md#using-the-calendar-element).
+- **S'abonner via ICS** -- Cliquez sur **S'abonner** pour copier le lien ICS. Votre congrégation peut coller ce lien dans Google Agenda, Calendrier Apple, Outlook ou toute autre application d'agenda pour rester synchronisée.
+- **Télécharger le fichier ICS** -- Téléchargez le fichier de calendrier pour l'importer dans une application d'agenda.
 
 :::info
-Lorsque les responsables de groupe ajoutent de nouveaux événements à leurs [groupes](../groups/creating-groups.md), ces événements apparaissent automatiquement dans votre calendrier organisé. Vous n'avez pas besoin de mettre à jour manuellement le calendrier organisé chaque fois qu'un nouvel événement est ajouté.
+Lorsque les responsables de groupe ajoutent de nouveaux événements à leurs [groupes](../groups/creating-groups.md), ces événements apparaissent automatiquement dans votre calendrier personnalisé. Vous n'avez pas besoin de mettre à jour manuellement le calendrier personnalisé à chaque ajout d'événement.
 :::
 
 :::note Événements privés
-Seuls les événements **publics** apparaissent dans le calendrier organisé sur votre site web et dans son abonnement ICS. Dans B1 Admin, le personnel autorisé à modifier le contenu voit aussi les événements **privés** du groupe dans le calendrier organisé, ce qui vous permet de vérifier l'horaire complet pendant que vous composez le calendrier.
+Seuls les événements **publics** apparaissent sur le calendrier personnalisé de votre site Web et dans son abonnement ICS. Dans B1 Admin, le personnel autorisé à modifier le contenu voit aussi les événements **privés** du groupe dans le calendrier personnalisé, afin de pouvoir vérifier le programme complet pendant que vous le préparez.
 :::
 
 ## Étapes suivantes
 
-- [Créer des calendriers](creating-calendars) – Apprenez les bases de la création de calendrier
-- [Aperçu des calendriers](./) – Revenir à l'aperçu des calendriers
+- [Créer des calendriers](creating-calendars) -- Apprenez les bases de la création de calendriers
+- [Vue d'ensemble des calendriers](./) -- Revenir à la vue d'ensemble des calendriers

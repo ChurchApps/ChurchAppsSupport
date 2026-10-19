@@ -1,61 +1,61 @@
 ---
-title: "Calendario Curado"
+title: "Calendario curado"
 ---
 
-# Calendario Curado
+# Calendario curado
 
 <div class="article-intro">
 
-Un calendario curado agrega eventos de múltiples grupos en una única vista de calendario unificada. Esto es ideal para crear un calendario de toda la iglesia que muestre todo lo que sucede en todos tus ministerios y grupos en un solo lugar.
+Un calendario curado reúne los eventos de varios grupos en una sola vista de calendario. Es ideal para crear un calendario de toda la iglesia que muestre todo lo que sucede en todos tus ministerios y grupos en un solo lugar.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de empezar</h4>
 
-- Configura los [grupos](../groups/creating-groups.md) cuyos eventos deseas incluir
+- Configura los [grupos](../groups/creating-groups.md) cuyos eventos quieres incluir
 - Asegúrate de que los líderes de grupo hayan agregado eventos a sus respectivos grupos
-- Familiarízate con los conceptos básicos de [Creación de Calendarios](creating-calendars)
+- Familiarízate con lo básico de [Crear calendarios](creating-calendars)
 
 </div>
 
-## Crear un Calendario Curado
+## Crear un calendario curado
 
-1. En B1 Admin, abre el [menú Salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expande **Calendarios**, y haz clic en **Calendarios**.
-2. Haz clic en **Agregar Calendario** para crear un nuevo calendario curado.
-3. Dale a tu calendario un **nombre** (por ejemplo, "Eventos de la Iglesia" o "Esta Semana en Nuestra Iglesia").
+1. En B1 Admin, abre el [Menú de salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expande **Calendarios** y haz clic en **Calendarios**.
+2. Haz clic en **Agregar calendario** para crear un nuevo calendario curado.
+3. Dale un **nombre** a tu calendario (por ejemplo, "Eventos de la iglesia" o "Esta semana en nuestra iglesia").
 4. Haz clic en **Crear** para guardarlo.
 
-## Agregar Grupos a Tu Calendario
+## Agregar grupos a tu calendario
 
-1. Haz clic en **Manage Events** en tu nuevo calendario para abrirlo.
-2. Haz clic en **Add Group** encima del calendario. Los grupos que agregues aparecen en la lista **Groups in Calendar** en el lado izquierdo de la página.
+1. Haz clic en **Administrar eventos** en tu nuevo calendario para abrirlo.
+2. Haz clic en **Agregar grupo** encima del calendario. Los grupos que agregues aparecen en la lista **Grupos en el calendario**, en el lado izquierdo de la página.
 3. Selecciona un grupo del menú desplegable.
-4. Elige si agregar **todos los eventos** de ese grupo o solo **eventos específicos**.
+4. Elige si quieres agregar **todos los eventos** de ese grupo o solo **eventos específicos**.
 5. Haz clic en **Guardar**.
-6. Repite este proceso para agregar tantos grupos como desees incluir.
+6. Repite este proceso para agregar tantos grupos como quieras incluir.
 
 :::tip
-Agrega todos tus grupos de ministerio activos para crear un calendario integral que le dé a tu congregación una imagen completa de lo que sucede en tu iglesia cada semana.
+Agrega todos tus grupos ministeriales activos para crear un calendario completo que dé a tu congregación una visión general de lo que sucede cada semana en tu iglesia.
 :::
 
-## Compartir Tu Calendario
+## Compartir tu calendario
 
-Una vez que tu calendario curado está configurado, puedes compartirlo de varias maneras:
+Una vez configurado tu calendario curado, puedes compartirlo de varias formas:
 
-- **Incrustar en tu sitio web** -- El calendario se puede mostrar directamente en las páginas de tu sitio web de B1.church para que los visitantes lo exploren.
-- **Suscribirse a través de ICS** -- Haz clic en **Suscribirse** para copiar el enlace de ICS. Tu congregación puede pegar este enlace en Google Calendar, Apple Calendar, Outlook o cualquier otra aplicación de calendario para mantenerse sincronizada.
-- **Descargar el archivo ICS** -- Descarga el archivo de calendario para importarlo en una aplicación de calendario.
+- **Incrustarlo en tu sitio web**: agrega un elemento **Calendario** a una página para mostrar el calendario como una cuadrícula mensual o como mosaicos de próximos eventos, opcionalmente limitado a eventos con una etiqueta. Cada evento enlaza a su propia página en tu sitio. Consulta [Usar el elemento Calendario](../website/page-editor.md#using-the-calendar-element).
+- **Suscribirse por ICS**: haz clic en **Suscribirse** para copiar el enlace ICS. Tu congregación puede pegar este enlace en Google Calendar, Apple Calendar, Outlook o cualquier otra app de calendario para mantenerse sincronizada.
+- **Descargar el archivo ICS**: descarga el archivo del calendario para importarlo a una aplicación de calendario.
 
 :::info
-Cuando los líderes de grupo agregan nuevos eventos a sus [grupos](../groups/creating-groups.md), esos eventos aparecen automáticamente en tu calendario curado. No necesitas actualizar manualmente el calendario curado cada vez que se agrega un nuevo evento.
+Cuando los líderes de grupo agregan nuevos eventos a sus [grupos](../groups/creating-groups.md), esos eventos aparecen automáticamente en tu calendario curado. No necesitas actualizar manualmente el calendario curado cada vez que se agrega un evento.
 :::
 
 :::note Eventos privados
-Solo los eventos **públicos** aparecen en el calendario curado de tu sitio web y en su suscripción ICS. En B1 Admin, el personal que puede editar contenido también ve los eventos **privados** del grupo en el calendario curado, para que puedas revisar el horario completo mientras armas el calendario.
+Solo los eventos **públicos** aparecen en el calendario curado de tu sitio web y en su suscripción ICS. En B1 Admin, el personal que puede editar contenido también ve los eventos **privados** del grupo en el calendario curado, para que pueda revisar la agenda completa mientras arma el calendario.
 :::
 
-## Próximos Pasos
+## Próximos pasos
 
-- [Creación de Calendarios](creating-calendars) -- Aprende lo básico sobre la creación de calendarios
-- [Descripción General de Calendarios](./) -- Volver a la descripción general de calendarios
+- [Crear calendarios](creating-calendars): aprende lo básico de la creación de calendarios
+- [Resumen de calendarios](./): vuelve al resumen de calendarios

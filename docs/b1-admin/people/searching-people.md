@@ -43,7 +43,7 @@ You do not need to press Enter. The search runs automatically after you stop typ
 
 ## Sorting Results
 
-In the **Table** view, you can sort the directory by clicking any column header:
+In the **Table** view, people are listed by last name, then first name. You can sort the directory a different way by clicking any column header:
 
 1. Click a **column header** (for example, **Name** or **Email**) to sort by that column.
 2. Click the same header again to reverse the sort order.

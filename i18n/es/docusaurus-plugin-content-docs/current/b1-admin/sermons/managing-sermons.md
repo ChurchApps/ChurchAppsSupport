@@ -56,7 +56,7 @@ Cada entrada de sermón puede incluir:
 - **Enlaces de Video/Audio** -- URLs del sermón multimedia en YouTube, Vimeo, Facebook o un servidor personalizado
 - **URL de Archivo de Audio (para podcast)** -- Un enlace directo a un archivo MP3/M4A para este sermón. Puedes pegar una URL o hacer clic en **Cargar Audio** para cargar un archivo y completarlo automáticamente. Solo los sermones con este campo (o un enlace directo a archivo de video) establecido se incluyen en tu feed de podcast.
 
-## Tu Feed de Podcast
+## Tu Feed de Podcast {#your-podcast-feed}
 
 Una vez que al menos un sermón tenga un archivo de audio o video adjunto, B1 Admin genera un feed RSS de podcast para tu iglesia automáticamente -- no hay nada que activar. Encuéntralo en el panel **Feed de Podcast** debajo de la lista de sermones: haz clic en el icono de copiar para copiar la URL del feed y luego envía esa URL a Apple Podcasts, Spotify o cualquier otro directorio de podcasts.
 

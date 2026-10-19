@@ -6,23 +6,23 @@ title: "LessonsApp"
 
 <div class="article-intro">
 
-LessonsApp ist die Lesson-Content-Management-Anwendung für [Lessons.church](https://lessons.church). Sie bietet eine Schnittstelle zum Erstellen, Organisieren und Veröffentlichen von Kirchenlehrplan-Lektionen, gebaut mit Next.js und React.
+LessonsApp ist die Anwendung zur Verwaltung von Lektionsinhalten für [Lessons.church](https://lessons.church). Sie bietet eine Oberfläche zum Erstellen, Ordnen und Veröffentlichen kirchlicher Lehrpläne und ist mit Next.js und React entwickelt.
 
 </div>
 
 <div class="prereqs">
-<h4>Vor dem Start</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Installieren Sie **Node.js 22+** und **Git** — siehe [Voraussetzungen](../setup/prerequisites)
-- Konfigurieren Sie Ihr API-Ziel (Staging oder lokal) — siehe [Umgebungsvariablen](../setup/environment-variables)
+- Installieren Sie **Node.js 22+** und **Git** – siehe [Voraussetzungen](../setup/prerequisites)
+- Konfigurieren Sie Ihr API-Ziel (lokale LessonsApi) – siehe [Umgebungsvariablen](../setup/environment-variables)
 
 </div>
 
 :::warning
-LessonsApp benötigt Node.js 22 oder später. Frühere Versionen werden nicht unterstützt.
+LessonsApp erfordert Node.js 22 oder neuer. Frühere Versionen werden nicht unterstützt.
 :::
 
-## Setup
+## Einrichtung
 
 ### 1. Repository klonen
 
@@ -39,47 +39,47 @@ npm install
 
 ### 3. Umgebungsvariablen konfigurieren
 
-Kopieren Sie die Environment-Sample-Datei zu `.env` und konfigurieren Sie die API-Endpoints:
+Kopieren Sie die Beispieldatei für die Umgebung nach `.env` und konfigurieren Sie die API-Endpunkte:
 
 ```bash
 cp dotenv.sample.txt .env
 ```
 
-Aktualisieren Sie die API-Endpoint-URLs, um auf die Staging-API oder Ihre lokale API-Instanz zu zeigen.
+Passen Sie die API-Endpunkt-URLs so an, dass sie auf Ihre lokale LessonsApi-Instanz (`http://localhost:8090`) zeigen. Die Staging-Schnittstelle der Lessons-API wurde eingestellt. Ersetzen Sie daher alle URLs `api.staging.lessons.church`, die noch in der Beispieldatei stehen.
 
-### 4. Dev-Server starten
+### 4. Entwicklungsserver starten
 
 ```bash
 npm run dev
 ```
 
-Der Next.js-Dev-Server startet bei [http://localhost:3501](http://localhost:3501).
+Der Next.js-Entwicklungsserver startet unter [http://localhost:3501](http://localhost:3501).
 
 ## Wichtige Befehle
 
 | Befehl | Beschreibung |
 |---------|-------------|
-| `npm run dev` | Next.js-Dev-Server auf Port 3501 starten |
-| `npm run build` | Production-Build via Next.js |
+| `npm run dev` | Next.js-Entwicklungsserver auf Port 3501 starten |
+| `npm run build` | Produktionsbuild über Next.js |
 
-## Tech-Stack
+## Technologie-Stack
 
 - **Next.js 16** mit TypeScript
 - **React 19** für UI-Komponenten
-- **`@churchapps/apphelper*`**-Packages für gemeinsame Komponenten
+- **`@churchapps/apphelper*`**-Pakete für gemeinsam genutzte Komponenten
 
 :::info
-LessonsApp kommuniziert mit dem **LessonsApi**-Backend, das eine separate API vom Main-ChurchApps-Api ist. Stellen Sie sicher, dass Ihre Umgebung mit dem korrekten Lessons-API-Endpoint konfiguriert ist.
+LessonsApp kommuniziert mit dem Backend **LessonsApi**, einer eigenständigen API, die getrennt von der Haupt-API von ChurchApps läuft. Stellen Sie sicher, dass Ihre Umgebung auf den richtigen Lessons-API-Endpunkt konfiguriert ist.
 :::
 
 ## Deployment
 
-Production-Builds sind zu **S3 + CloudFront** deployed:
+Produktionsbuilds werden auf **S3 + CloudFront** bereitgestellt:
 
-1. `npm run build` generiert den optimierten Next.js-Build
-2. Build-Output wird zu einem S3-Bucket synced
-3. CloudFront-Invalidation wird ausgelöst, um die neue Version zu servieren
+1. `npm run build` erzeugt den optimierten Next.js-Build
+2. Die Build-Ausgabe wird mit einem S3-Bucket synchronisiert
+3. Eine CloudFront-Invalidierung wird ausgelöst, damit die neue Version ausgeliefert wird
 
 :::tip
-Für detaillierte Deployment-Anweisungen, siehe [Web-App-Deployment](../deployment/web-apps)-Leitfaden.
+Ausführliche Deployment-Anweisungen finden Sie im Leitfaden [Deployment der Web-Apps](../deployment/web-apps).
 :::

@@ -6,48 +6,50 @@ title: "Setup"
 
 <div class="article-intro">
 
-Itinuturo ng seksyong ito kung paano mag-set up ng lokal na development environment para sa mga proyekto ng ChurchApps. Maaari mong ituro ang iyong frontend sa mga shared staging API para sa mabilis na development, o patakbuhin ang buong stack nang lokal para sa backend na trabaho.
+Ginagabayan ka ng seksyong ito sa pag-set up ng lokal na development environment para sa mga proyekto ng ChurchApps. Maaari mong ituro ang iyong frontend sa mga shared demo API para sa mabilisang development, o patakbuhin ang buong stack nang lokal para sa backend work.
 
 </div>
 
 ## Dalawang Paraan
 
-May dalawang paraan para mag-develop nang lokal, depende sa kung gaano karami ng stack ang kailangan mo:
+May dalawang paraan para mag-develop nang lokal, depende sa dami ng stack na kailangan mo:
 
-### 1. Ituro sa mga Staging API (Pinakamadali)
+### 1. Ituro sa Demo APIs (Pinakamadali)
 
-Kung nagtatrabaho ka sa isang **frontend na proyekto** (web app, mobile app, o desktop app), ang pinakamabilis na paraan ay ituro ang iyong lokal na app sa mga shared staging API. Hindi kailangan ng database o backend setup.
+Kung nagtatrabaho ka sa **frontend project** (web app, mobile app, o desktop app), ang pinakamabilis na paraan ay ituro ang iyong lokal na app sa shared demo APIs. Walang kailangang database o backend setup.
 
-Ang staging API base URL ay:
-
-```
-https://api.staging.churchapps.org
-```
-
-Ang bawat API module ay available sa isang path sa ilalim ng base na ito, halimbawa:
+Ang base URL ng demo API ay:
 
 ```
-https://api.staging.churchapps.org/membership
-https://api.staging.churchapps.org/attendance
-https://api.staging.churchapps.org/giving
+https://api.demo.churchapps.org
 ```
+
+Ang bawat API module ay makukuha sa isang path sa ilalim ng base na ito, halimbawa:
+
+```
+https://api.demo.churchapps.org/membership
+https://api.demo.churchapps.org/attendance
+https://api.demo.churchapps.org/giving
+```
+
+Ang demo environment ay tumatakbo sa pinakabagong code mula sa `main`, at ang sample data nito ay muling nilalagyan tuwing gabi, kaya huwag asahang tatagal ang anumang gagawin mo roon. (Ang dating staging environment, `api.staging.churchapps.org`, ay inalis na. Maaaring may mga sample na `.env` file pa rin na nakalista ang mga staging URL -- palitan ang mga ito ng demo o lokal na URL.)
 
 :::tip
-Binibigyang-daan ka ng paraang ito na magsimulang gumawa ng mga pagbabago sa frontend sa loob ng ilang minuto. Ito ang inirerekomendang paraan para sa karamihan ng mga contributor.
+Sa paraang ito, makakapagsimula ka sa mga pagbabago sa frontend sa loob ng ilang minuto. Ito ang inirerekomendang paraan para sa karamihan ng mga contributor.
 :::
 
-### 2. Patakbuhin ang Lahat Nang Lokal
+### 2. Patakbuhin Nang Lokal ang Lahat
 
-Kung kailangan mong baguhin ang API code o magtrabaho nang offline, maaari mong patakbuhin ang buong stack nang lokal. Nangangailangan ito ng MySQL 8.0+ at karagdagang configuration. Tingnan ang gabay sa [Lokal na API setup](../api/local-setup) para sa detalyadong mga instruksyon.
+Kung kailangan mong baguhin ang API code o magtrabaho nang offline, maaari mong patakbuhin nang lokal ang buong stack. Nangangailangan ito ng MySQL 8.0+ at karagdagang configuration. Tingnan ang gabay na [API local setup](../api/local-setup) para sa detalyadong mga tagubilin.
 
 ## Pagsisimula
 
-Sundin ang mga pahinang ito ayon sa pagkakasunod-sunod:
+Sundin ang mga pahinang ito nang sunud-sunod:
 
-1. **[Mga Kinakailangan](prerequisites)** -- I-install ang mga kinakailangang tool (Node.js, Git, MySQL, atbp.)
-2. **[Pangkalahatang-tanaw ng Proyekto](project-overview)** -- Unawain kung aling mga proyekto ang umiiral at kung ano ang ginagawa nila
-3. **[Mga Environment Variable](environment-variables)** -- I-configure ang iyong mga `.env` file para ikonekta ang lahat
+1. **[Prerequisites](prerequisites)** -- I-install ang mga kinakailangang tool (Node.js, Git, MySQL, atbp.)
+2. **[Project Overview](project-overview)** -- Unawain kung aling mga proyekto ang umiiral at kung ano ang ginagawa ng bawat isa
+3. **[Environment Variables](environment-variables)** -- I-configure ang iyong mga `.env` file para mag-ugnayan ang lahat
 
 :::info
-Ang bawat proyekto ng ChurchApps ay isang independiyenteng Git repository. Kailangan mo lang i-clone ang mga partikular na proyekto kung saan mo gustong magtrabaho.
+Ang bawat proyekto ng ChurchApps ay isang independent na Git repository. Kailangan mo lamang i-clone ang mga partikular na proyektong gusto mong pagtrabahuhan.
 :::

@@ -51,9 +51,15 @@ You can add songs directly from your [Songs](./songs.md) library. This links the
 
 Choosing **External Item** (or **Add From Lesson**) opens a browser for your linked lesson providers instead of a single-item form. Browse (or search) into a provider's content, and check the box next to each section or action you want. The dialog tracks how many you have selected (for example, "3 selected") -- click **Import (3)** to add all of them to the service order at once, instead of repeating the add-item flow for each one.
 
+Some providers, such as GO! Curriculum, Dropbox, Google Drive, and OneDrive, deliver a lesson as a set of files (videos, slides, images) rather than sections. When you browse one of these in **Add From Lesson**, the files appear alongside the folders -- click a file to add it to the service order as its own item.
+
 :::tip
 This is the fastest way to pull a whole lesson's worth of sections and cues into a service order in one pass, rather than adding each item individually.
 :::
+
+### Customizing a Linked Lesson
+
+When a plan has a lesson linked to it, the order of service first shows a **Lesson Preview** of that lesson. Click **Customize** (or add a section, item, or song) to copy the lesson's sections into the plan so you can edit them. For lessons that are just a list of files, such as GO! Curriculum lessons, the files are grouped under a section named after the lesson, so you still have a section bar to add your own items into.
 
 ## Reordering Items
 

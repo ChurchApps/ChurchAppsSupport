@@ -14,7 +14,7 @@ B1App is the public-facing church member application built with Next.js. It prov
 <h4>Before You Begin</h4>
 
 - Install **Node.js 22+** and **Git** -- see [Prerequisites](../setup/prerequisites)
-- Configure your API target (staging or local) -- see [Environment Variables](../setup/environment-variables)
+- Configure your API target (demo or local) -- see [Environment Variables](../setup/environment-variables)
 
 </div>
 
@@ -43,7 +43,7 @@ npm install
 cp dotenv.sample.txt .env
 ```
 
-Open `.env` and configure the `NEXT_PUBLIC_*_API` endpoint URLs. These can point at the staging API or your local API instance.
+Open `.env` and configure the `NEXT_PUBLIC_*_API` endpoint URLs. These can point at the shared demo API (`https://api.demo.churchapps.org`) or your local API instance. The sample file may still list retired staging URLs; replace them.
 
 ### 4. Start the dev server
 

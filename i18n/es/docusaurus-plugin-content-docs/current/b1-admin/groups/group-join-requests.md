@@ -1,121 +1,121 @@
 ---
-title: "Solicitudes de unión al grupo"
+title: "Solicitudes para unirse a un grupo"
 ---
 
-# Solicitudes de unión al grupo
+# Solicitudes para unirse a un grupo
 
 <div class="article-intro">
 
-Cuando un grupo se configura con una política de unión basada en aprobación, las personas pueden enviar solicitudes para unirse. Los líderes del grupo y los administradores revisan estas solicitudes y las aprueban o rechazan. Esto da a su iglesia control sobre la membresía del grupo mientras que facilita que las personas expresen interés en unirse.
+Cuando un grupo está configurado con una política de unión basada en aprobación, las personas pueden enviar solicitudes para unirse. Los líderes y administradores del grupo revisan estas solicitudes y las aprueban o rechazan. Esto le da a tu iglesia control sobre la membresía de los grupos y facilita que las personas expresen su interés en unirse.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Necesita permiso para gestionar grupos o necesita ser líder del grupo específico. Vea [Roles y permisos](../people/roles-permissions.md) para obtener detalles.
-- El grupo debe tener su política de unión configurada en **Request** (aprobación requerida). Vea [Creación de grupos](./creating-groups.md) para cómo configurar políticas de unión.
+- Necesitas permiso para administrar grupos, o ser líder del grupo específico. Consulta [Roles y permisos](../people/roles-permissions.md) para más detalles.
+- El grupo debe tener su política de unión configurada en **Solicitud** (requiere aprobación). Consulta [Crear grupos](./creating-groups.md) para ver cómo configurar las políticas de unión.
 
 </div>
 
-## Comprender políticas de unión
+## Entender las políticas de unión
 
-Los grupos pueden tener tres políticas de unión diferentes:
+Los grupos pueden tener tres políticas de unión distintas:
 
-- **Open** — Cualquiera puede unirse inmediatamente sin aprobación
-- **Request** — Las personas envían una solicitud de unión que requiere aprobación
-- **Closed** — Nadie puede solicitar unirse (los miembros deben ser añadidos manualmente)
+- **Abierta**: cualquiera puede unirse de inmediato, sin aprobación
+- **Solicitud**: las personas envían una solicitud de unión que requiere aprobación
+- **Cerrada**: nadie puede solicitar unirse (los miembros deben agregarse manualmente)
 
-Cuando un grupo usa la política **Request**, todos los intentos de unión pasan por el flujo de trabajo de aprobación descrito en esta página.
+Cuando un grupo usa la política **Solicitud**, todos los intentos de unión pasan por el flujo de aprobación descrito en esta página.
 
-## Ver solicitudes pendientes
+## Ver las solicitudes pendientes
 
 ### Para líderes de grupo
 
-1. En B1 Admin, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) y elija **People > Groups**
-2. Haga clic en el nombre del grupo
-3. La sección **Members** muestra cuántas solicitudes están pendientes. Haga clic en **All members** — las solicitudes pendientes de este grupo aparecen en la parte superior de la lista de miembros
+1. En B1 Admin, abre el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) y elige **Personas > Grupos**
+2. Haz clic en el nombre del grupo
+3. La sección **Miembros** muestra cuántas solicitudes están pendientes. Haz clic en **Todos los miembros**: las solicitudes pendientes de este grupo aparecen al principio de la lista de miembros
 
 ### Para administradores
 
-Los administradores con permisos de gestión de grupos pueden ver solicitudes pendientes en todos los grupos:
+Los administradores con permisos de gestión de grupos pueden ver las solicitudes pendientes de todos los grupos:
 
-1. En el menú Jump, elija **People > Groups**
-2. Haga clic en el botón **solicitudes pendientes** en el encabezado de la página (por ejemplo, "3 solicitudes pendientes"). Solo aparece cuando hay solicitudes esperando.
-3. Revise todas las solicitudes pendientes de la iglesia
+1. En el menú Jump, elige **Personas > Grupos**
+2. Haz clic en el botón **solicitudes pendientes** del encabezado de la página (por ejemplo, "3 pending requests"). Solo aparece cuando hay solicitudes en espera.
+3. Revisa todas las solicitudes pendientes de toda la iglesia
 
 ## Revisar una solicitud de unión
 
 Cada solicitud de unión muestra:
 
-- **Nombre y foto de la persona** — La persona que solicita unirse
-- **Mensaje opcional** — Un mensaje personal explicando por qué desean unirse (si se proporciona)
-- **Fecha de solicitud** — Cuándo se envió la solicitud
+- **Nombre y foto de la persona**: quien solicita unirse
+- **Mensaje opcional**: un mensaje personal que explica por qué quiere unirse (si lo proporcionó)
+- **Fecha de la solicitud**: cuándo se envió
 
 Para revisar una solicitud:
 
-1. Lea el mensaje de la persona si lo proporcionó
-2. Haga clic en el nombre de la persona para ver su perfil si es necesario
-3. Decida si aprobar o rechazar
+1. Lee el mensaje de la persona, si lo proporcionó
+2. Haz clic en el nombre de la persona para ver su perfil, si lo necesitas
+3. Decide si apruebas o rechazas
 
 ## Aprobar una solicitud
 
-1. Haga clic en **Approve** en la solicitud de unión
-2. La persona se agrega inmediatamente al grupo como miembro
-3. El solicitante recibe una notificación de que su solicitud fue aprobada
-4. La solicitud se marca como aprobada en el sistema
+1. Haz clic en **Aprobar** en la solicitud de unión
+2. La persona se agrega de inmediato al grupo como miembro
+3. La persona que solicitó recibe una notificación de que su solicitud fue aprobada
+4. La solicitud queda marcada como aprobada en el sistema
 
 :::tip
-Cuando aprueba una solicitud, la persona se convierte en un miembro regular del grupo. Puede promoverla a líder del grupo más tarde si es necesario desde la página [Miembros del grupo](./group-members.md).
+Cuando apruebas una solicitud, la persona se convierte en un miembro regular del grupo. Más adelante puedes promoverla a líder de grupo desde la página [Miembros del grupo](./group-members.md), si es necesario.
 :::
 
 ## Rechazar una solicitud
 
-1. Haga clic en **Decline** en la solicitud de unión
-2. Opcionalmente proporcione una razón para rechazar (hasta 500 caracteres)
-3. Haga clic en **Confirm**
-4. El solicitante recibe una notificación con su razón de rechazo (si se proporciona)
-5. La solicitud se marca como rechazada
+1. Haz clic en **Rechazar** en la solicitud de unión
+2. Opcionalmente, indica un motivo para rechazarla (hasta 500 caracteres)
+3. Haz clic en **Confirmar**
+4. La persona que solicitó recibe una notificación con tu motivo de rechazo (si lo indicaste)
+5. La solicitud queda marcada como rechazada
 
 :::info
-Proporcionar una razón de rechazo ayuda a la persona a entender por qué su solicitud no fue aprobada y puede alentarla a intentar nuevamente más tarde o explorar otros grupos.
+Indicar un motivo de rechazo ayuda a la persona a entender por qué no se aprobó su solicitud, y puede animarla a intentarlo de nuevo más adelante o a explorar otros grupos.
 :::
 
-## Aprobar desde la página de tareas
+## Aprobar desde la página de tareas {#approving-from-the-tasks-page}
 
-Cada solicitud de unión también crea una tarea en **Serving → My Work**, titulada "*Person* solicitó unirse a *Group*." Se asigna a los líderes del grupo. Si el grupo aún no tiene líder, va a cualquier personal con el permiso **Group Members > Edit**, o a los administradores de dominio de su iglesia si nadie tiene ese permiso. El personal y los administradores que reciben la tarea de esta manera también reciben una notificación que los vincula directamente a ella.
+Cada solicitud de unión también crea una tarea en **Servicio &rarr; Mi trabajo**, titulada "*Persona* requested to join *Grupo*." Se asigna a los líderes del grupo. Si el grupo todavía no tiene líder, se asigna a cualquier miembro del personal con el permiso **Miembros del grupo &gt; Editar**, o a los administradores de dominio de tu iglesia si nadie tiene ese permiso. El personal y los administradores que reciben la tarea de esta forma también reciben una notificación que enlaza directamente a ella.
 
-Abrir la tarea muestra el nombre del solicitante, el grupo y su mensaje opcional, con botones **Approve** y **Decline** directamente en la tarjeta de la tarea (Decline abre el mismo campo de razón opcional descrito anteriormente). Esto da a los líderes una segunda forma impulsada por notificaciones de actuar en una solicitud sin abrir la lista de miembros del grupo.
+Al abrir la tarea se muestran el nombre de quien solicita, el grupo y su mensaje opcional, con los botones **Aprobar** y **Rechazar** directamente en la tarjeta de la tarea (Decline abre el mismo campo opcional de motivo descrito antes). Esto da a los líderes una segunda forma, impulsada por notificaciones, de atender una solicitud sin tener que abrir la lista de miembros del grupo.
 
-Decidir una solicitud desde cualquiera de estos lugares; la lista de miembros del grupo o su tarjeta de Tareas; la cierra en todas partes, por lo que los líderes nunca ven una tarea antigua para una solicitud que alguien ya manejó.
+Decidir una solicitud desde cualquiera de los dos lugares (la lista de miembros del grupo o la tarjeta de tareas) la cierra en todas partes, así los líderes nunca ven una tarea obsoleta de una solicitud que alguien ya atendió.
 
 ## Notificaciones
 
-El sistema de solicitud de unión envía automáticamente notificaciones:
+El sistema de solicitudes de unión envía notificaciones automáticamente:
 
-- **Cuando se envía una solicitud** — Todos los líderes del grupo reciben una notificación. Si el grupo no tiene líder, el personal o administradores asignados a la tarea son notificados en su lugar (ver arriba).
-- **Cuando se aprueba una solicitud** — El solicitante recibe una confirmación
-- **Cuando se rechaza una solicitud** — El solicitante recibe una notificación con cualquier razón de rechazo
+- **Cuando se envía una solicitud**: todos los líderes del grupo reciben una notificación. Si el grupo no tiene líder, se notifica en su lugar al personal o a los administradores asignados a la tarea (consulta arriba).
+- **Cuando se aprueba una solicitud**: la persona que la solicitó recibe una confirmación
+- **Cuando se rechaza una solicitud**: la persona que la solicitó recibe una notificación con el motivo de rechazo, si lo hay
 
-Las notificaciones aparecen en el centro de notificaciones del usuario en B1.church y en la aplicación móvil.
+Las notificaciones aparecen en el centro de notificaciones del usuario en B1.church y en la aplicación móvil. En la campana de notificaciones de B1 Admin, al hacer clic en una notificación de solicitud de unión (o en **Ver detalles**) se abre el grupo en el sitio de B1.church de tu iglesia, en una nueva pestaña.
 
-## Gestionar solicitudes desde el lado del miembro
+## Gestionar las solicitudes desde el lado del miembro
 
 Las personas pueden gestionar sus propias solicitudes de unión desde B1.church:
 
 - Ver el estado de sus solicitudes pendientes en la página de detalle del grupo
-- Cancelar una solicitud pendiente si cambian de idea
+- Cancelar una solicitud pendiente si cambian de opinión
 - Ver si su solicitud fue aprobada o rechazada
 
-## Mejores prácticas
+## Buenas prácticas
 
-- **Responder con prontitud** — Intente revisar solicitudes dentro de 24-48 horas para que las personas no queden esperando
-- **Sea claro en razones de rechazo** — Ayude a las personas a comprender los próximos pasos u opciones alternativas
-- **Verificar perfiles** — Revise el perfil de la persona para ver si es un buen ajuste para el grupo
-- **Comunicar expectativas** — Asegúrese de que la descripción de su grupo establezca claramente para quién es el grupo
+- **Responde pronto**: intenta revisar las solicitudes en un plazo de 24 a 48 horas para que las personas no esperen demasiado
+- **Sé claro en los motivos de rechazo**: ayuda a las personas a entender los siguientes pasos o las opciones alternativas
+- **Revisa los perfiles**: consulta el perfil de la persona para ver si encaja bien en el grupo
+- **Comunica las expectativas**: asegúrate de que la descripción de tu grupo indique claramente para quién es
 
 ## Artículos relacionados
 
-- [Creación de grupos](./creating-groups.md) — Aprenda cómo configurar grupos y configurar políticas de unión
-- [Miembros del grupo](./group-members.md) — Gestione miembros de grupo existentes
-- [Calendario del grupo](./group-calendar.md) — Programe reuniones y eventos del grupo
+- [Crear grupos](./creating-groups.md): aprende a configurar grupos y las políticas de unión
+- [Miembros del grupo](./group-members.md): administra los miembros existentes del grupo
+- [Calendario del grupo](./group-calendar.md): programa reuniones y eventos del grupo

@@ -1,47 +1,48 @@
 ---
-title: "Dokumentasyon para sa mga Developer"
+title: "Dokumentasyon para sa Developer"
 ---
 
-# Dokumentasyon para sa mga Developer
+# Dokumentasyon para sa Developer
 
 <div class="article-intro">
 
-Ang ChurchApps ay isang koleksyon ng humigit-kumulang 20 open-source na mga proyekto na magkasamang nagbibigay ng kompletong platform para sa pamamahala ng simbahan. Saklaw ng mga proyekto ang backend na mga API, web application, mobile app, desktop application, at mga shared library -- lahat ay nakasulat sa TypeScript. Ibinibigay ng seksyong ito ang lahat ng kailangan mo para mag-set up ng lokal na development environment at magsimulang mag-ambag.
+Ang ChurchApps ay isang koleksyon ng humigit-kumulang 20 open-source na proyekto na sama-samang nagbibigay ng kumpletong church management platform. Sakop ng mga proyekto ang backend APIs, web applications, mobile apps, isang desktop application, at mga shared library -- lahat ay nakasulat sa TypeScript. Ibinibigay ng seksyong ito ang lahat ng kailangan mo para mag-set up ng local development environment at magsimulang mag-contribute.
 
 </div>
 
-## Arkitektura sa Isang Sulyap
+## Pangkalahatang Tanaw ng Arkitektura
 
-Ang mga proyekto ay **independiyenteng mga repository** (hindi monorepo). Ang shared code ay nai-publish sa npm sa ilalim ng `@churchapps/*` scope at ginagamit bilang mga regular na dependency. Ibig sabihin nito, maaari kang magtrabaho sa isang proyekto nang hindi kine-clone ang buong ecosystem.
+Ang mga proyekto ay **independent repositories** (hindi monorepo). Ang shared code ay inilalathala sa npm sa ilalim ng `@churchapps/*` scope at ginagamit bilang regular na dependencies. Ibig sabihin, puwede kang magtrabaho sa iisang proyekto nang hindi kinakailangang i-clone ang buong ecosystem.
 
 Mga pangunahing katangian:
 
-- **Wika:** TypeScript sa buong proyekto
-- **Backend:** Node.js / Express na mga API na naka-deploy sa AWS Lambda sa pamamagitan ng Serverless Framework
+- **Language:** TypeScript sa kabuuan
+- **Backend:** Node.js / Express APIs na dine-deploy sa AWS Lambda gamit ang Serverless Framework
 - **Web:** React 19 (Vite at Next.js), Material-UI 7
-- **Mobile:** React Native na may Expo
-- **Database:** MySQL 8.0, isang database sa bawat API module
+- **Mobile:** React Native gamit ang Expo
+- **Database:** MySQL 8.0, isang database bawat API module
 
-## Mga Saklaw ng Seksyong Ito
+## Saklaw ng Seksyong Ito
 
-- **[Setup](setup/)** -- Lokal na development environment, mga kinakailangan, at configuration
-  - [Mga Kinakailangan](setup/prerequisites) -- Mga kinakailangang tool at software
-  - [Pangkalahatang-tanaw ng Proyekto](setup/project-overview) -- Lahat ng proyekto sa isang sulyap
-  - [Mga Environment Variable](setup/environment-variables) -- Pag-configure ng mga `.env` file
-- **[API](api/)** -- Lokal na setup ng core API, pag-initialize ng database, at module structure
-- **[Mga Web App](web-apps/)** -- Pagpapatakbo ng B1Admin, B1App, at LessonsApp nang lokal
-- **[Mga Mobile App](mobile/)** -- Pagbuo ng B1Mobile at iba pang Expo app
-- **[Mga Shared Library](shared-libraries/)** -- Paggamit ng Helpers, ApiHelper, at AppHelper
-- **[Deployment](deployment/)** -- Pag-deploy ng mga API, web app, at mobile app
+- **[Setup](setup/)** -- Local development environment, prerequisites, at configuration
+  - [Prerequisites](setup/prerequisites) -- Mga kinakailangang tool at software
+  - [Project Overview](setup/project-overview) -- Lahat ng proyekto sa isang sulyap
+  - [Environment Variables](setup/environment-variables) -- Pag-configure ng mga `.env` file
+- **[API](api/)** -- Core API local setup, database initialization, at module structure
+- **[Web Apps](web-apps/)** -- Pagpapatakbo ng B1Admin, B1App, at LessonsApp nang local
+- **[Mobile Apps](mobile/)** -- Pag-build ng B1Mobile at iba pang Expo apps
+- **[Shared Libraries](shared-libraries/)** -- Pagtatrabaho sa Helpers, ApiHelper, at AppHelper
+- **[Deployment](deployment/)** -- Pag-deploy ng APIs, web apps, at mobile apps
+- **[FreePlay Content Provider](freeplay-content-provider)** -- Pag-integrate ng iyong lesson library sa FreePlay
 
-## Komunidad at mga Mapagkukunan
+## Komunidad at Mga Mapagkukunan
 
 | Mapagkukunan | Link |
 |----------|------|
 | GitHub Organization | [github.com/ChurchApps](https://github.com/ChurchApps) |
 | Issue Tracker | [ChurchAppsSupport Issues](https://github.com/ChurchApps/ChurchAppsSupport/issues) |
-| Slack Community | [Sumali sa Slack](https://join.slack.com/t/livechurchsolutions/shared_invite/zt-i88etpo5-ZZhYsQwQLVclW12DKtVflg) |
+| Slack Community | [Join Slack](https://join.slack.com/t/livechurchsolutions/shared_invite/zt-i88etpo5-ZZhYsQwQLVclW12DKtVflg) |
 
 :::tip
-Ang pinakamabilis na paraan para magsimulang mag-ambag ay pumili ng web app (tulad ng B1Admin), ituro ito sa **staging na mga API**, at magsimulang gumawa ng mga pagbabago sa frontend. Hindi kailangan ng database o API setup.
+Ang pinakamabilis na paraan para magsimulang mag-contribute ay pumili ng web app (tulad ng B1Admin), ituro ito sa shared **demo APIs**, at magsimulang gumawa ng frontend changes. Walang kinakailangang database o API setup.
 :::

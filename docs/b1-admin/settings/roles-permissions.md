@@ -49,20 +49,35 @@ Click on any role name to view and manage its members and permissions.
 
 ## Configuring Permissions
 
-Each role can be granted access to specific areas of B1 Admin. Permissions are organized by section:
+Each role can be granted access to specific areas of B1 Admin. In the **Edit Permissions** panel, permissions are grouped into sections you can expand, such as **Attendance**, **Content**, **Donations**, **Forms and Plans**, **Lessons**, **Messaging**, **People and Groups**, and **Tasks**. Type in the **Filter permissions** box to show only the permissions that match.
 
-- **People** -- Access to the member directory and person records.
-- **Donations** -- Access to donation records and fund management.
-- **Attendance** -- Access to attendance tracking and reports.
-- **Content** -- Access to website and content management.
-- And additional areas as they are available.
+Check or uncheck a permission to grant or remove it for the role.
 
-Use the checkboxes on the right side of the Roles page to enable or disable access for each area.
+### Donations Permissions
+
+The **Donations** section has these permissions:
+
+- **View Donation Summaries** -- see the Donations section, including the Summary, Batches, Funds, Campaigns, and Giving Statements pages.
+- **View Donations** -- see individual donations, such as the gifts inside a batch.
+- **Edit Donations** -- full control: add, edit, and delete donations and batches, and [close and reopen batches](../donations/batches.md#closing-and-reopening-a-batch).
+- **Enter Donations** -- add batches and enter, edit, or delete donations, but only in batches that are still open. People with only this permission cannot delete batches, close or reopen them, or change gifts that came in through online giving.
+- **Edit Settings** -- manage donation settings.
+
+Someone with **Enter Donations** but not **View Donation Summaries** sees only the **Batches** page under **Donations**. Give a counting team role both **Enter Donations** and **View Donations** so they can open a batch and see the gifts they entered. See [Who Can Change a Batch](../donations/batches.md#who-can-change-a-batch) for details.
+
+### People Names Only
+
+The **People and Groups** section includes **View People Names Only**. Use it for volunteers who need to look people up by name -- for example, to pick someone in a search box -- without access to the full directory. With this permission alone, a person:
+
+- Can search for people by name and see the list of recently added people, but only sees each person's name, photo, and membership status
+- Cannot search by email, see contact details, or open the **People** directory
+
+B1 Admin hides links and buttons that need permissions a role doesn't have. For example, the **All groups** list is only available to people who can edit groups, view group members, or view people (others are sent back to the Dashboard), attendance setup only appears with **View Attendance** or **Edit Services**, a group's **Email** button only appears for people with **Edit Group Members** (the permission needed to send group email), printing a group roster needs **View Group Members** or leading that group, and deleting a calendar event needs **Edit Content** (or withdrawing your own pending request).
 
 :::warning
 **Domain Admins** have full access to all areas of your ChurchApps account. Their permissions cannot be modified or restricted. Use this role only for your most trusted administrators.
 :::
 
 :::tip
-Create specific roles like "Treasurer" with only **Donations** access, or "Check-In Volunteer" with only **Attendance** access. This follows the principle of least privilege and keeps your data secure. See [Data Security](./data-security.md) for more on how ChurchApps protects your information.
+Create specific roles like "Treasurer" with only **Donations** access, "Counting Team" with **Enter Donations** and **View Donations**, or "Check-In Volunteer" with only **Attendance** access. This follows the principle of least privilege and keeps your data secure. See [Data Security](./data-security.md) for more on how ChurchApps protects your information.
 :::

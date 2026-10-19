@@ -6,20 +6,20 @@ title: "LessonsApp"
 
 <div class="article-intro">
 
-O LessonsApp é a aplicação de gerenciamento de conteúdo de lições para o [Lessons.church](https://lessons.church). Ele fornece uma interface para criar, organizar e publicar currículos de lições para igrejas, construído com Next.js e React.
+O LessonsApp é a aplicação de gerenciamento de conteúdo de lições do [Lessons.church](https://lessons.church). Ele oferece uma interface para criar, organizar e publicar currículos de lições para igrejas, desenvolvida com Next.js e React.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Instale **Node.js 22+** e **Git** -- veja [Pré-requisitos](../setup/prerequisites)
-- Configure seu alvo de API (staging ou local) -- veja [Variáveis de Ambiente](../setup/environment-variables)
+- Instale o **Node.js 22+** e o **Git** -- veja [Pré-requisitos](../setup/prerequisites)
+- Configure o destino da sua API (LessonsApi local) -- veja [Variáveis de Ambiente](../setup/environment-variables)
 
 </div>
 
 :::warning
-O LessonsApp requer Node.js 22 ou posterior. Versões anteriores não são suportadas.
+O LessonsApp requer o Node.js 22 ou superior. Versões anteriores não são compatíveis.
 :::
 
 ## Configuração
@@ -45,7 +45,7 @@ Copie o arquivo de exemplo de ambiente para `.env` e configure os endpoints da A
 cp dotenv.sample.txt .env
 ```
 
-Atualize as URLs dos endpoints de API para apontar para a API de staging ou para sua instância local da API.
+Atualize as URLs dos endpoints da API para apontar para a sua instância local da LessonsApi (`http://localhost:8090`). A API de staging do Lessons foi desativada, então substitua quaisquer URLs `api.staging.lessons.church` que ainda estejam no arquivo de exemplo.
 
 ### 4. Inicie o servidor de desenvolvimento
 
@@ -53,33 +53,33 @@ Atualize as URLs dos endpoints de API para apontar para a API de staging ou para
 npm run dev
 ```
 
-O servidor de desenvolvimento Next.js inicia em [http://localhost:3501](http://localhost:3501).
+O servidor de desenvolvimento do Next.js inicia em [http://localhost:3501](http://localhost:3501).
 
-## Comandos Principais
+## Comandos principais
 
 | Comando | Descrição |
 |---------|-----------|
-| `npm run dev` | Iniciar servidor de desenvolvimento Next.js na porta 3501 |
-| `npm run build` | Build de produção via Next.js |
+| `npm run dev` | Inicia o servidor de desenvolvimento do Next.js na porta 3501 |
+| `npm run build` | Gera o build de produção via Next.js |
 
-## Stack Tecnológica
+## Stack tecnológica
 
 - **Next.js 16** com TypeScript
-- **React 19** para componentes de UI
+- **React 19** para os componentes de interface
 - Pacotes **`@churchapps/apphelper*`** para componentes compartilhados
 
 :::info
-O LessonsApp se comunica com o backend **LessonsApi**, que é uma API separada da API principal do ChurchApps. Certifique-se de que seu ambiente esteja configurado com o endpoint correto da API de Lições.
+O LessonsApp se comunica com o backend **LessonsApi**, que é uma API separada da API principal da ChurchApps. Certifique-se de que o ambiente esteja configurado com o endpoint correto da API de Lessons.
 :::
 
 ## Implantação
 
-Os builds de produção são implantados no **S3 + CloudFront**:
+As builds de produção são implantadas no **S3 + CloudFront**:
 
 1. `npm run build` gera o build otimizado do Next.js
-2. A saída do build é sincronizada com um bucket S3
-3. A invalidação do CloudFront é acionada para servir a nova versão
+2. O resultado do build é sincronizado com um bucket do S3
+3. A invalidação do CloudFront é disparada para servir a nova versão
 
 :::tip
-Para instruções detalhadas de implantação, veja o guia de [Implantação de Aplicações Web](../deployment/web-apps).
+Para instruções detalhadas de implantação, veja o guia [Implantação de Aplicativos Web](../deployment/web-apps).
 :::

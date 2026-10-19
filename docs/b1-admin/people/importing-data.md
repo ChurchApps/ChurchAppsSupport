@@ -120,6 +120,10 @@ The tool processes the transfer and shows progress for each step:
 
 When the destination is **B1 Database**, the progress card is titled **Import Progress** and finishes with **Import Complete!** (or **Import Completed with Errors**). For zip file destinations, the same messages say **Export**.
 
+:::info
+When restoring a **B1 Import Zip**, records that point at something no longer in the file are skipped rather than stopping the import: group memberships for people or groups that aren't in the zip, attendance for deleted groups or people, and links between groups and deleted service times. Attendance sessions that were never tied to a service time are still restored. Likewise, when exporting, a photo that can't be downloaded or read is left out so the **Photos** step keeps going.
+:::
+
 :::warning
 Do not close your browser while the transfer is running. Wait until all steps show as complete.
 :::

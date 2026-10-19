@@ -1,73 +1,65 @@
 ---
-title: "Abbinare il Tuo Dispositivo"
+title: "Associare il dispositivo"
 ---
 
-# Abbinare il Tuo Dispositivo
+# Associare il dispositivo
 
 <div class="article-intro">
 
-Per utilizzare la Modalità Piano, devi abbinare la tua TV a un tipo di piano in B1 Admin. FreePlay genera un codice di abbinamento univoco che collega il dispositivo al piano della tua chiesa, abilitando la consegna automatica dei contenuti ogni settimana.
+Per usare la modalità piano, associ la TV a un tipo di piano in B1 Admin. FreePlay mostra un breve codice di associazione sulla TV. Inserisci quel codice in B1 Admin e scegli il tipo di piano da seguire, e la TV riceve automaticamente i contenuti di quel piano ogni settimana.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Installa e avvia FreePlay -- vedi [Per Iniziare](../getting-started/)
-- Scegli **Pair to Plan** dalla [schermata della modalità di abbinamento](../getting-started/pairing-modes.md)
-- Assicurati di avere accesso a **B1 Admin** su un computer o telefono per completare l'abbinamento
+- Installa e avvia FreePlay. Vedi [Per iniziare](../getting-started/)
+- Ti serve l'accesso a **B1 Admin** da un computer o da un telefono per completare l'associazione
 
 </div>
 
-## Generare il Codice di Abbinamento
+## Generare il codice di associazione
 
-1. Dalla schermata **Select Pairing Mode**, scegli **Pair to Plan**
-2. FreePlay contatta il server e genera un breve codice di abbinamento
-3. Il codice appare in caratteri grandi al centro dello schermo
-4. Sotto il codice, un indicatore pulsante mostra **Waiting for connection**
+1. Sulla TV, apri **Impostazioni** in fondo alla barra laterale.
+2. Seleziona **Associa a un calendario**.
+3. FreePlay mostra un codice di associazione di quattro lettere in caratteri grandi, accanto a un codice QR.
+4. Sotto il codice, un indicatore pulsante **In attesa di conferma** mostra che FreePlay sta aspettando che tu completi l'associazione.
 
-Il codice viene visualizzato come caratteri singoli per una lettura facile anche da lontano.
+Lo stesso codice funziona per la [Modalità programmata](../scheduled-mode/) in FreePlay Admin e per la Modalità piano in B1 Admin. Il codice QR e l'indirizzo **freeplay.church/pair** sullo schermo aprono FreePlay Admin. Per la Modalità piano, ignorali e inserisci il codice in B1 Admin come descritto sotto.
 
-## Inserire il Codice in B1 Admin
+## Inserire il codice in B1 Admin
 
-1. Su un computer o telefono, vai all'indirizzo mostrato sotto il codice sulla TV (oppure scansiona il codice QR a schermo) -- questo apre la pagina **Authorize Device** in B1 Admin
-2. Inserisci il codice di abbinamento se non era già stato compilato dal codice QR
-3. In **Show Plans For**, scegli il tipo di piano che questo schermo deve seguire (ad esempio, "Sunday Service"). Lascia impostato su **None** se vuoi che lo schermo sia disponibile solo per sfogliare contenuti o notifiche, senza alcun piano collegato
-4. Approva il dispositivo
+1. In B1 Admin, vai su **Profilo** > **Dispositivi** e fai clic su **Aggiungi schermo**.
+2. Inserisci le quattro lettere mostrate dalla TV in **Codice di associazione**.
+3. In **Mostra piani per**, scegli il tipo di piano che questo schermo deve seguire, ad esempio «Culto domenicale».
+4. Salva.
 
-FreePlay interroga il server ogni pochi secondi, verificando se l'abbinamento è completo. Una volta che **B1 Admin** conferma la connessione, la TV passa automaticamente alla schermata di download del piano.
+FreePlay controlla ogni pochi secondi se l'associazione è completata. Quando B1 Admin la conferma, la TV mostra **Connesso!** e passa alla schermata di download del piano.
 
-:::tip
-I dispositivi possono anche essere abbinati da **Profile → Devices → Add Device** in B1 Admin utilizzando lo stesso codice -- offre lo stesso selettore del tipo di piano **Show Plans For**.
-:::
+## Scaricare i contenuti del piano
 
-## Scaricare i Contenuti del Piano
+Dopo l'associazione, FreePlay carica il piano attuale per quel tipo di piano. Mostra:
 
-Dopo l'abbinamento, FreePlay carica il piano corrente per quel tipo di piano. Mostra:
+- Il nome del piano e la data del culto
+- Il nome della lezione, se il piano include contenuti di lezione
+- Un indicatore di avanzamento con la scritta **Download elemento X di Y**
 
-- Il nome del piano e la data del servizio
-- Il nome della lezione associata (se il piano include contenuti di lezione)
-- Un indicatore di avanzamento che mostra **Downloading item X of Y**
-
-Quando tutti i file multimediali sono stati scaricati, appare il pulsante **Start Plan**. Premi **Select** sul telecomando per iniziare la riproduzione.
+Quando tutti i file multimediali sono stati scaricati, compare il pulsante **Avvia piano**. Premi **Seleziona** sul telecomando per avviare la riproduzione.
 
 :::tip
-Il piano si aggiorna automaticamente ogni ora. Se il piano viene aggiornato durante il giorno, FreePlay recepisce le modifiche senza alcun intervento manuale.
+Il piano si aggiorna automaticamente ogni ora. Se qualcuno aggiorna il piano durante la giornata, FreePlay recepisce le modifiche da solo.
 :::
 
-## Alternativa: Cerca per Nome della Chiesa
+## Se l'associazione non riesce
 
-Se preferisci non utilizzare il flusso del codice di abbinamento, puoi selezionare **or search by church name** in fondo alla schermata di abbinamento. Questo ti porta alla schermata di ricerca della chiesa, dove puoi trovare la tua chiesa e connetterti a un'aula invece.
-
-## Se l'Abbinamento Fallisce
-
-Se il codice di abbinamento non può essere generato (ad esempio, a causa di un problema di rete), vedrai un messaggio di errore con un pulsante **Try Again**. Assicurati che la tua TV sia connessa a internet e riprova.
+Se FreePlay non riesce a generare un codice di associazione (ad esempio per un problema di rete), vedrai un messaggio di errore con un pulsante **Riprova**. Assicurati che la TV sia connessa a internet, poi riprova.
 
 :::warning
-I codici di abbinamento scadono dopo un periodo prestabilito. Se aspetti troppo a lungo, genera un nuovo codice tornando alla schermata di abbinamento.
+I codici di associazione scadono dopo 15 minuti. FreePlay mostra automaticamente un nuovo codice quando quello vecchio scade, e puoi selezionare **Genera nuovo codice** in qualsiasi momento. Se il codice che hai inserito non funziona, usa quello che la TV mostra in questo momento.
 :::
 
-## Articoli Correlati
+## Articoli correlati
 
-- **[Panoramica della Modalità Piano](./index.md)** - Capire in cosa la Modalità Piano differisce dalla Modalità Aula
-- **[Riproduzione delle Lezioni](../classroom-mode/playing-lessons)** - I controlli del player sono gli stessi in entrambe le modalità
+- **[Panoramica della modalità piano](./index.md)** - In cosa la modalità piano differisce dalla modalità programmata
+- **[Associare uno schermo](../scheduled-mode/pairing-a-screen)** - Associa la stessa TV a un calendario in FreePlay Admin
+- **[Riproduzione dei contenuti](../content-providers/playing-content)** - Controlli del lettore per la riproduzione del piano

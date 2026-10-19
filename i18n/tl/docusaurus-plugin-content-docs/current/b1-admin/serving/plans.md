@@ -6,7 +6,7 @@ title: "Mga Service Plan"
 
 <div class="article-intro">
 
-Inaayos ng mga service plan kung sino ang naglilingkod at kailan. Nakatali ang bawat plano sa isang partikular na petsa at ministry, kaya madali mong maikoordina ang iyong mga volunteer team linggo-linggo at masigurong puno ang bawat serbisyo.
+Inaayos ng mga service plan kung sino ang naglilingkod at kailan. Ang bawat plan ay nakatali sa isang partikular na petsa at ministry, kaya madali mong maikoordina ang mga volunteer team linggo-linggo at masigurong puno ang bawat serbisyo.
 
 </div>
 
@@ -18,131 +18,131 @@ Inaayos ng mga service plan kung sino ang naglilingkod at kailan. Nakatali ang b
 
 </div>
 
-## Pagpunta sa Plans
+## Pag-access sa Mga Plan
 
-1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **Serving**, at i-click ang **Plans**.
+1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas-kaliwa), palawakin ang **Serving**, at i-click ang **Plans**.
 2. Piliin ang **ministry tab** sa itaas ng pahina.
-3. I-click ang **plan type** upang makita ang listahan ng mga plano para sa uring iyon. Gamitin ang **Upcoming** at **Past** sa itaas ng listahan upang lumipat sa pagitan ng mga paparating at nakaraang plano. Inililista ng **Upcoming** ang mga plano mula ngayon pataas, pinakamalapit muna, na may mga walang petsang plano sa dulo. Inililista lamang ng **Past** ang mga nakaraang plano, pinakabago muna.
-4. I-click ang isang partikular na plano upang buksan ito.
+3. I-click ang **plan type** para makita ang listahan ng mga plan para sa uri na iyon. Gamitin ang **Upcoming** at **Past** sa itaas ng listahan para lumipat sa mga darating at mga nakaraang plan. Inilalista ng **Upcoming** ang mga plan mula ngayon pataas, ang pinakamalapit muna, at ang mga walang petsa ay nasa dulo. Inilalista lamang ng **Past** ang mga nakaraang plan, ang pinakabago muna.
+4. I-click ang isang partikular na plan para buksan ito.
 
-Ang bawat pahina ng plano ay may mga link pabalik sa uri nito at sa **Plans**, upang makabalik ka nang hindi ginagamit ang back button ng browser.
+Ang bawat pahina ng plan ay may mga link pabalik sa uri ng plan nito at sa **Plans**, para makabalik ka nang hindi ginagamit ang back button ng browser.
 
 :::info
-Hindi kailangan ng buong admin access upang pamahalaan ang mga plano. Ang sinumang miyembro ng isang ministry ay maaaring pumunta sa Serving at gumawa, mag-edit, at mag-iskedyul ng mga plano para sa sarili nilang ministry nang hindi kailangan ang Plans Edit permission. Maaaring pamahalaan ng mga editor na may Plans Edit role ang mga plano sa lahat ng ministry.
+Hindi kailangan ng buong admin access para pamahalaan ang mga plan. Ang sinumang miyembro ng isang ministry ay maaaring pumunta sa Serving at gumawa, mag-edit, at mag-iskedyul ng mga plan para sa sarili nilang ministry nang hindi kailangan ang Plans Edit permission. Ang mga editor na may Plans Edit role ay maaaring mamahala ng mga plan sa lahat ng ministry.
 :::
 
-## Paggawa ng Plano
+## Paggawa ng Plan
 
-1. Mula sa pahina ng plan type, i-click ang **New Plan** sa itaas ng pahina.
-2. Bigyan ang plano ng pangalan o gamitin ang petsa bilang pangalan. Piliin ang **date** ng serbisyo.
-3. Kung may [templates](./plan-templates.md) ang iyong ministry, maaari kang pumili ng isa sa ilalim ng **Start from template** upang punan ang order of service, mga posisyon, at notes sa isang hakbang lamang.
-4. Kung hindi, at nais mong kopyahin mula sa nakaraang plano, gamitin ang **Copy from Previous Plan** upang pumili ng **Positions Only** o **Positions and Assignments**. Kung ayaw mong kumopya, piliin ang **Nothing**. Maaari mo ring lagyan ng check ang **Copy Order of Service**. Kapag kumopya ka mula sa nakaraang plano, pinapanatili rin ng bagong plano ang mga **Notes**, **Signup Deadline**, **Show volunteer names on signup page**, at setting ng automatic-replacement ng planong iyon, kaya hindi mo na kailangang ilagay muli ang mga ito bawat linggo. Maaari mong baguhin ang alinman sa mga ito sa mga setting ng bagong plano.
-5. Upang mag-set up ng ilang linggo nang sabay habang kumokopya, maglagay ng numero sa **Repeat weekly for this many weeks** (hanggang 12). Gagawa ang B1 ng isang plano bawat linggo, bawat isa ay kinopya mula sa nauna. Kung ang plano ay pinangalanan ayon sa petsa nito, bawat bagong plano ay pinangalanan ayon sa sarili nitong petsa.
-6. Opsyonal na itakda ang **Signup Deadline (hours before service)**. Ang bagong plano ay nagsisimula sa deadline ng nakaraang plano, at maaari mo itong baguhin dito. Iwanang blangko kung walang deadline.
-7. I-save ang plano. Maaari ka nang magsimulang mag-assign ng mga miyembro ng team at bumuo ng [service order](./service-order.md).
+1. Mula sa pahina ng uri ng plan, i-click ang **New Plan** sa itaas ng pahina.
+2. Bigyan ng pangalan ang plan o gamitin ang petsa bilang pangalan. Piliin ang **petsa** ng serbisyo.
+3. Kung may [templates](./plan-templates.md) ang iyong ministry, maaari kang pumili ng isa sa ilalim ng **Start from template** para punan ang order of service, mga posisyon, at mga tala sa isang hakbang.
+4. Kung hindi, kung nais mong kopyahin ang isang nakaraang plan, gamitin ang **Copy from Previous Plan** para piliin ang **Positions Only** o **Positions and Assignments**. Kung ayaw mong kumopya, piliin ang **Nothing**. Maaari mo ring lagyan ng check ang **Copy Order of Service**. Kapag kumopya ka mula sa nakaraang plan, pinananatili rin ng bagong plan ang **Notes**, **Signup Deadline**, **Show volunteer names on signup page**, at setting ng awtomatikong pagpapalit ng plan na iyon, para hindi mo na kailangang ilagay ulit ang mga ito bawat linggo. Maaari mong baguhin ang alinman sa mga ito sa mga setting ng bagong plan.
+5. Para mag-set up ng ilang linggo nang sabay habang kumokopya, maglagay ng numero sa **Repeat weekly for this many weeks** (hanggang 12). Gagawa ang B1 ng isang plan bawat linggo, bawat isa ay kinopya mula sa nauna. Kung ang plan ay pinangalanan ayon sa petsa, ang bawat bagong plan ay papangalanan ayon sa sarili nitong petsa.
+6. Opsyonal, itakda ang **Signup Deadline (hours before service)**. Ang bagong plan ay nagsisimula sa deadline ng nakaraang plan, at maaari mo itong baguhin dito. Iwanang blangko kung walang deadline.
+7. I-save ang plan. Maaari mo nang simulang italaga ang mga miyembro ng team at buuin ang [service order](./service-order.md).
 
 :::tip
-Ang **Repeat weekly for this many weeks** ay available lamang habang kumokopya ka ng isang bagay mula sa nakaraang plano (mga posisyon, assignment, o order of service).
+Ang **Repeat weekly for this many weeks** ay makukuha lamang habang kumokopya ka ng isang bagay mula sa nakaraang plan (mga posisyon, assignment, o order of service).
 :::
 
-## Ang Detail Page ng Plano
+## Ang Pahina ng Detalye ng Plan
 
-Kapag binuksan mo ang isang plano, lalabas sa itaas ang pangalan, ministry, uri ng plano, at petsa ng serbisyo, kasama ang mga button na **Edit** at **Print**. Sa ibaba nito, nasa iisang pahina ang lahat:
+Kapag binuksan mo ang isang plan, lalabas sa itaas ang pangalan ng plan, ministry, uri ng plan, at petsa ng serbisyo, kasama ang mga button na **Edit** at **Print**. Sa ibaba nito, nasa iisang pahina ang lahat:
 
-- **[Order of Service](./service-order.md)** -- Buuin ang order of service gamit ang mga elemento gaya ng mga worship song, panalangin, anunsyo, at sermon.
-- **Serving Team Assignments** -- Pamahalaan kung aling mga miyembro ng team ang naka-assign sa planong ito. Maaari kang magdagdag ng mga tao mula sa mga umiiral mong team at makita kung sino na ang nakumpirma o naghihintay pa. Ang mga link sa itaas ng mga posisyon ay nagbubukas ng **Notes** at **Times** ng plano.
+- **[Order of Service](./service-order.md)** -- Buuin ang order of service gamit ang mga elemento tulad ng mga worship song, panalangin, anunsyo, at sermon.
+- **Serving Team Assignments** -- Pamahalaan kung aling mga miyembro ng team ang nakatalaga sa plan na ito. Maaari kang magdagdag ng mga tao mula sa mga umiiral na team at makita kung sino ang nakumpirma o naghihintay pa. Ang mga link sa itaas ng mga posisyon ay nagbubukas sa **Notes** at **Times** ng plan.
 
-## Pag-assign ng Mga Miyembro ng Team
+## Pagtatalaga ng Mga Miyembro ng Team {#assigning-team-members}
 
-1. Buksan ang isang plano at mag-scroll pababa sa **Serving Team Assignments**.
-2. I-click ang **Add Position**. Punan ang impormasyon sa add a position form. Para sa category name, maglagay ng anumang kategoryang gusto mo. Upang payagan ang sinumang tao sa iyong simbahan na punan ang posisyon (hindi lamang mga miyembro ng isang team), iwanang nakatakda sa **None** ang **Volunteer Group**.
-3. I-click ang **People Needed** at pumili ng mga volunteer upang punan ang posisyon. Kung may **Volunteer Group** ang posisyon, pipili ka mula sa mga miyembro ng group na iyon. Kung nakatakda sa **None** ang Volunteer Group nito, maaari kang maghanap ng sinumang tao sa iyong simbahan sa halip.
-4. Magdagdag ng mga miyembro mula sa roster ng iyong team sa pamamagitan ng pag-click sa **Add**.
-5. Lalabas ang mga naka-assign na miyembro sa ilalim ng kanilang team kasama ang kanilang assignment status.
-6. I-click ang notify volunteers upang abisuhan sila sa loob ng B1 app o sa pamamagitan ng email.
+1. Buksan ang isang plan at mag-scroll pababa sa **Serving Team Assignments**.
+2. I-click ang **Add Position**. Punan ang impormasyon sa form ng pagdaragdag ng posisyon. Para sa category name, maglagay ng kahit anong kategoryang gusto mo. Para payagan ang sinumang nasa iyong simbahan na punan ang posisyon (hindi lamang ang mga miyembro ng isang team), iwanang nakatakda ang **Volunteer Group** sa **None**.
+3. I-click ang **People Needed** at pumili ng mga volunteer para punan ang posisyon. Kung may **Volunteer Group** ang posisyon, pipili ka mula sa mga miyembro ng grupong iyon. Kung nakatakda sa **None** ang Volunteer Group nito, maaari kang maghanap ng sinumang tao sa iyong simbahan.
+4. Idagdag ang mga miyembro mula sa roster ng iyong team sa pamamagitan ng pag-click sa **Add**.
+5. Lalabas ang mga naitalagang miyembro sa ilalim ng kanilang team kasama ang kanilang status ng assignment.
+6. I-click ang notify volunteers para abisuhan sila sa loob ng B1 app o sa pamamagitan ng email.
 
-Nagpapakita ang bawat posisyon ng count chip (halimbawa, "2/3") upang makita mo agad kung ilan ang napunong puwesto. Sa ilalim ng heading na **Serving Team Assignments**, ipinapakita ng buod ("X of Y positions filled") ang pangkalahatang staffing ng plano, kasama kung ilan pa ang kailangan, at nagiging **Fully staffed** kapag nasakop na ang lahat ng posisyon.
+Bawat posisyon ay nagpapakita ng count chip (halimbawa, "2/3") para makita mo agad kung ilan ang puno na. Sa ilalim ng heading na **Serving Team Assignments**, may buod (“X of Y positions filled”) na nagpapakita ng kabuuang staffing ng plan, kasama kung ilan pa ang kailangan, at nagiging **Fully staffed** kapag natakpan na ang lahat ng posisyon.
 
 :::tip
-I-set up ang iyong mga team sa mga setting ng ministry bago gumawa ng mga plano. Sa ganitong paraan, may handa kang pool ng mga volunteer na maaaring i-assign.
+I-set up muna ang iyong mga team sa mga setting ng ministry bago gumawa ng mga plan. Sa ganitong paraan, may handang pool ng mga volunteer na mapagkukunan ng assignment.
 :::
 
-### Pagkopya ng Mga Posisyon sa Walang Lamang Plano
+### Pagkopya ng Mga Posisyon sa Walang Lamang Plan
 
-Kung walang posisyon pa ang isang plano at may nakaraang plano ng parehong uri, lalabas ang link na **Copy from Previous Plan** sa **Serving Team Assignments**. Piliin ang **Positions Only** o **Positions and Assignments** upang punan ang bukas mong plano ng mga posisyon (at mga volunteer) ng nakaraang plano. Ang kopya ay mapupunta sa kasalukuyang plano; hindi ito gagawa ng pangalawang plano para sa parehong petsa.
+Kung walang posisyon pa ang isang plan at may nakaraang plan na kaparehong uri, lalabas ang link na **Copy from Previous Plan** sa **Serving Team Assignments**. Piliin ang **Positions Only** o **Positions and Assignments** para punan ang plan na nakabukas sa iyo ng mga posisyon (at mga volunteer) ng nakaraang plan. Mapupunta ang kopya sa kasalukuyang plan; hindi ito gagawa ng pangalawang plan para sa parehong petsa.
 
-## Mga Setting ng Plano
+## Mga Setting ng Plan
 
-Bawat plano ay may karagdagang setting na maaari mong i-configure sa pamamagitan ng pag-click sa **Edit** sa tabi ng plano sa listahan ng plan type, o sa **Edit** button sa itaas ng pahina ng plano. I-click ang **Done** (o ang pangalan ng plano) upang bumalik sa plano. Kabilang dito ang:
+Bawat plan ay may karagdagang mga setting na maaari mong i-configure sa pamamagitan ng pag-click sa **Edit** sa tabi ng plan sa listahan ng uri ng plan, o sa button na **Edit** sa itaas ng pahina ng plan. I-click ang **Done** (o ang pangalan ng plan) para bumalik sa plan. Kabilang dito ang:
 
-- **Signup Deadline (hours before service)** -- ang bilang ng oras bago ang serbisyo kung kailan magsasara ang signup ng volunteer. Maglagay ng negatibong numero upang manatiling bukas ang signup kahit lampas na sa simula ng serbisyo. Iwanang blangko kung walang deadline.
-- **Show volunteer names on signup page** -- kapag may check, makikita ng mga naka-sign in na volunteer kung sino pa ang naka-sign up sa bawat posisyon sa B1.church signup page. Hindi kailanman ipinapakita ang mga pangalan sa mga bisitang hindi naka-sign in.
-- **Penciled in** -- itinatago ang mga assignment sa mga volunteer hanggang handa ka nang ilabas ang iskedyul.
-- **Automatically schedule a replacement when a volunteer declines** -- kapag may check, kung tumanggi ang isang naka-assign na volunteer sa kanyang posisyon, awtomatikong kokontakin ng B1 ang susunod na available na tao sa roster ng team at tatanungin kung maaari siyang maglingkod. Magpapatuloy ito pababa sa listahan hanggang may tumanggap, upang mapunuan pa rin ang iyong mga posisyon nang walang manual na follow-up.
+- **Signup Deadline (hours before service)** — ang bilang ng oras bago ang serbisyo kung kailan magsasara ang pag-signup ng volunteer. Maglagay ng negatibong numero para panatilihing bukas ang pag-signup lampas sa oras ng simula ng serbisyo. Iwanang blangko kung walang deadline.
+- **Show volunteer names on signup page** — kapag may check, makikita ng mga naka-sign in na volunteer kung sino pa ang naka-signup sa bawat posisyon sa pahina ng signup ng B1.church. Hindi kailanman ipinapakita ang mga pangalan sa mga bisitang hindi naka-sign in.
+- **Penciled in** — itinatago ang mga assignment sa mga volunteer hanggang handa ka nang ilathala ang iskedyul.
+- **Automatically schedule a replacement when a volunteer declines** — kapag may check, kung tatanggihan ng isang nakatalagang volunteer ang kanilang posisyon, awtomatikong kokontakin ng B1 ang susunod na available na tao sa roster ng team at tatanungin kung maaari silang maglingkod. Nagpapatuloy ito pababa sa listahan hanggang may tumanggap, kaya napupunan ang iyong mga posisyon nang walang manu-manong follow-up.
 
 :::tip
-Sa member signup page, nakalista ang mga bukas na posisyon ng bawat plano ayon sa kategorya at pagkatapos ayon sa pangalan. Nakikita ng mga miyembro ang bawat paparating na linggo na may bukas na posisyon maliban kung i-on mo ang **Show only the next week of each plan type** sa [Settings > Volunteer Signup](../settings/church-settings.md#volunteer-signup).
+Sa pahina ng signup ng miyembro, nakalista ang mga bukas na posisyon ng bawat plan ayon sa kategorya at pagkatapos ayon sa pangalan. Nakikita ng mga miyembro ang bawat darating na linggo na may bukas na posisyon maliban kung i-on mo ang **Show only the next week of each plan type** sa [Settings > Volunteer Signup](../settings/church-settings.md#volunteer-signup).
 :::
 
 ## Mga Paalala sa Volunteer {#volunteer-reminders}
 
-Maaaring awtomatikong paalalahanan ng B1 ang mga volunteer bago ang mga serbisyong nakaiskedyul sila, kaya hindi mo na kailangang habulin ang iyong team bawat linggo. Ang mga paalala ay ipinapadala sa **lahat ng nakaiskedyul** -- kapwa sa mga nakumpirma na at sa mga hindi pa sumasagot. Kasama sa bawat email ng paalala ang posisyon (o mga posisyon) ng volunteer, petsa ng serbisyo, notes ng plano, at iyong custom na mensahe.
+Maaaring awtomatikong magpaalala ang B1 sa mga volunteer bago ang mga serbisyong nakatakda sila, para hindi mo na kailangang habulin ang iyong team bawat linggo. Ang mga paalala ay ipinapadala sa **lahat ng nakaiskedyul** — sa mga nakumpirma na at sa mga hindi pa sumasagot. Kasama sa bawat email ng paalala ang posisyon (mga posisyon) ng volunteer, petsa ng serbisyo, mga tala ng plan, at ang iyong custom na mensahe.
 
-Ang timing at nilalaman ng paalala ay itinatakda kada **plan type**, kaya bawat uri ng serbisyo ay maaaring magkaroon ng sariling iskedyul.
+Ang oras at nilalaman ng paalala ay itinatakda kada **uri ng plan**, kaya maaaring magkaroon ng sariling iskedyul ang bawat uri ng serbisyo.
 
-1. Mula sa **Serving** area, piliin ang ministry na naglalaman ng plan type.
-2. Sa listahan ng **Plan Types**, i-click ang **Edit** sa tabi ng plan type.
-3. I-expand ang seksyong **Reminders** at i-on ang **Send reminders for plans of this type**.
+1. Mula sa lugar na **Serving**, piliin ang ministry na naglalaman ng uri ng plan.
+2. Sa listahan ng **Plan Types**, i-click ang **Edit** sa tabi ng uri ng plan.
+3. Palawakin ang seksyong **Reminders** at i-on ang **Send reminders for plans of this type**.
 4. Sa ilalim ng **When should reminders go out?**, pumili ng hanggang tatlong oras: **7 days before**, **3 days before**, **2 days before**, **1 day before**, o **Day of**.
 5. Itakda ang **Time of Day** kung kailan ipapadala ang mga paalala.
-6. Opsyonal na magdagdag ng **Message**. Iwanang blangko upang gamitin ang default na pananalita ng paalala.
-7. Sa ilalim ng **Send By**, piliin ang **Push**, **Email**, at, kung may nakakonektang [texting provider](../settings/church-settings.md#texting) ang iyong simbahan, **Text**.
+6. Opsyonal, magdagdag ng **Message**. Iwanang blangko para gamitin ang default na pananalita ng paalala.
+7. Sa ilalim ng **Send By**, piliin ang **Push**, **Email**, at, kung may nakakabit na [texting provider](../settings/church-settings.md#texting) ang iyong simbahan, **Text**.
 8. I-click ang **Save Reminders**.
 
-Naka-off ang mga paalala para sa isang plan type hangga't hindi mo ito binubuksan.
+Naka-off ang mga paalala para sa isang uri ng plan hanggang sa i-on mo ang mga ito.
 
 :::tip
-Ang mga volunteer na hindi pa nakukumpirma ay makakakita ng mga button na **Accept** at **Decline** sa loob mismo ng email ng paalala, kaya maaari silang tumugon nang hindi nag-sa-sign in.
+Ang mga volunteer na hindi pa nakukumpirma ay makakakuha ng mga button na **Accept** at **Decline** mismo sa loob ng email ng paalala, para makasagot sila nang hindi nag-sa-sign in.
 :::
 
-### Mga Text na Paalala
+### Mga Text Reminder
 
-Lalabas lamang ang opsyong **Text** kapag may nakakonektang texting provider ang iyong simbahan. Dumadaan ang mga text sa texting provider ng iyong simbahan, at maaaring may bayad ang bawat text para sa iyong simbahan. Makakatanggap lamang ng text reminder ang isang volunteer kung na-on niya ang **Text messages** sa kanyang [Notification Preferences](../../b1-church/getting-started/notification-preferences.md) at may mobile number sa kanyang profile. Ang bawat text ay nagsisimula sa pangalan ng iyong simbahan, nananatili sa iisang text message, at nagtatapos sa "Reply STOP to opt out." Ang sinumang sumagot ng STOP ay titigil sa pagtanggap ng mga text mula sa iyong simbahan. Upang maabot ng mga sagot na STOP ang B1, i-paste ang **Inbound (STOP) webhook URL** mula sa iyong [texting settings](../settings/church-settings.md#texting) sa inbound message webhook ng iyong provider.
+Lalabas lamang ang opsyong **Text** kapag may nakakabit na texting provider ang iyong simbahan. Ipinapadala ang mga text sa pamamagitan ng texting provider ng iyong simbahan, at maaaring magkaroon ng gastos ang bawat text para sa iyong simbahan. Makakatanggap lamang ng text reminder ang isang volunteer kung naka-on ang **Text messages** sa kanilang [Notification Preferences](../../b1-church/getting-started/notification-preferences.md) at may mobile number sila sa kanilang profile. Ang bawat text ay nagsisimula sa pangalan ng iyong simbahan, nananatili sa iisang text message, at nagtatapos sa "Reply STOP to opt out." Ang sinumang sumagot ng STOP ay titigil sa pagtanggap ng mga text mula sa iyong simbahan. Para maabot ng mga STOP reply ang B1, idikit ang **Inbound (STOP) webhook URL** mula sa iyong [texting settings](../settings/church-settings.md#texting) sa inbound message webhook ng iyong provider.
 
-Upang mag-text kaagad sa lahat ng nakaiskedyul sa isang hanay ng mga petsa, gamitin ang **Text Volunteers** sa [Plans Overview](./plans-overview.md#texting-everyone-scheduled).
+Para mag-text sa lahat ng nakaiskedyul sa isang hanay ng mga petsa kaagad, gamitin ang **Text Volunteers** sa [Plans Overview](./plans-overview.md#texting-everyone-scheduled).
 
 :::info
 Isang beses lamang naipapadala ang bawat paalala. Ang mga text reminder ay ipinapadala bilang dagdag sa push at email, hindi kapalit ng mga ito.
 :::
 
-## Pag-uugnay ng Mga Group sa Isang Plan Type
+## Pag-uugnay ng Mga Grupo sa Uri ng Plan
 
-Sa ilalim ng listahan ng plano sa pahina ng plan type, pinapayagan ka ng seksyong **Associated Groups** na magpasya kung aling mga group ang makakakita ng mga plano ng plan type na ito mula sa kanilang member portal. Mabilis itong paraan upang maipakita ang mga paparating na serbisyo sa tamang team nang hindi binibigyan sila ng admin access.
+Sa ilalim ng listahan ng plan sa pahina ng uri ng plan, pinapayagan ka ng seksyong **Associated Groups** na magpasya kung aling mga grupo ang makakakita ng mga plan ng uri na ito mula sa kanilang member portal. Mabilis itong paraan para maipakita ang mga darating na serbisyo sa tamang team nang hindi binibigyan ng admin access.
 
-1. Sa pahina ng plan type, i-click ang **Associated Groups** sa itaas ng pahina (o mag-scroll pababa sa seksyong iyon).
-2. I-click ang **Add Group** at pumili ng group mula sa dropdown.
-3. Sa column na **Shows**, piliin kung ang mga miyembro ng group na iyon ay dapat makakita ng **Past plans only**, **Upcoming plans only**, o **Past and upcoming plans** para sa plan type na ito.
-4. Ulitin upang iugnay ang karagdagang mga group, o i-click ang trash icon upang alisin ang isang group.
+1. Sa pahina ng uri ng plan, i-click ang **Associated Groups** sa itaas ng pahina (o mag-scroll pababa sa seksyong iyon).
+2. I-click ang **Add Group** at pumili ng grupo mula sa dropdown.
+3. Sa column na **Shows**, piliin kung ang mga miyembro ng grupong iyon ay dapat makakita ng **Past plans only**, **Upcoming plans only**, o **Past and upcoming plans** para sa uri ng plan na ito.
+4. Ulitin para mag-ugnay ng karagdagang grupo, o i-click ang icon na basurahan para tanggalin ang isang grupo.
 
 :::info
-Tanging ang mga group na may tag na **Standard** ang lumalabas sa picker. Awtomatikong makikita ng mga miyembro ng nakaugnay na group ang mga plano ng plan type na ito sa pahina ng group nila sa B1 member portal -- nakalimita sa saklaw ng panahong pinili mo.
+Tanging mga grupong may markang **Standard** ang lumalabas sa picker. Awtomatikong makikita ng mga miyembro ng nakaugnay na grupo ang mga plan ng uri ng plan na ito sa pahina ng grupo nila sa B1 member portal — limitado sa saklaw na pinili mo.
 :::
 
-Kung ang mga plano ay mga aralin ng Lessons.church, makikita rin ng mga miyembro ng nakaugnay na group ang isang card na **This week's lesson** sa pahina ng group (ibabang linya, talata, at isang tanong para sa mga magulang). Iugnay dito ang isang parent group at itakda ang filter sa **Past plans only** upang kasama ang aralin ngayon. Karaniwang gumagamit ang mga volunteer team ng **Upcoming plans only** o **Past and upcoming plans**.
+Kung ang mga plan ay mga aralin ng Lessons.church, makikita rin ng mga miyembro ng nakaugnay na grupo ang isang card na **This week's lesson** sa pahina ng grupo (linya sa ilalim, talata, at isang tanong para sa mga magulang). Mag-ugnay ng parent group dito at itakda ang filter sa **Past plans only** para kasama ang aralin ngayon. Karaniwang gumagamit ang mga volunteer team ng **Upcoming plans only** o **Past and upcoming plans**.
 
-## Pag-print ng Mga Plano
+## Pag-iimprenta ng Mga Plan {#printing-plans}
 
-Maaari mong i-print ang isang plano upang ipamahagi sa iyong team. Buksan ang plano at i-click ang **Print** sa itaas ng pahina upang makabuo ng printable na bersyon na naglalaman ng mga assignment at order of service. Nasa itaas ng printout ang logo ng iyong simbahan (ang **Light Background Logo** mula sa [Website > Appearance](../website/appearance.md), kung nag-upload ka na nito) na may pangalan ng iyong simbahan sa ilalim, at ang pangalan ng plano, upang madaling makilala ang mga hiwalay na pahina. Kapaki-pakinabang ito para ipamigay sa mga rehearsal o i-post sa karaniwang lugar.
+Maaari kang mag-print ng plan para ipamahagi sa iyong team. Buksan ang plan at i-click ang **Print** sa itaas ng pahina para makabuo ng bersyong maaaring i-print na may kasamang mga assignment at order of service. Sa itaas ng printout ay makikita ang logo ng iyong simbahan (ang **Light Background Logo** mula sa [Website > Appearance](../website/appearance.md), kung nag-upload ka nito), kasama ang pangalan ng simbahan sa ilalim, at ang pangalan ng plan, para madaling makilala ang mga maluwag na pahina. Kapaki-pakinabang ito para ipamigay sa mga rehearsal o ipaskil sa common area.
 
 :::info
-Nakaayos ayon sa ministry ang mga plano. Siguraduhing nasa tamang ministry tab ka bago gumawa o tumingin ng mga plano.
+Nakaayos ang mga plan ayon sa ministry. Siguraduhing nasa tamang ministry tab ka bago gumawa o tumingin ng mga plan.
 :::
 
 ## Mga Susunod na Hakbang
 
-- Gamitin ang [Plans Overview](./plans-overview.md) upang makita ang lahat ng paparating na assignment sa maraming linggo sa iisang grid at makita ang mga hindi napunong posisyon -- at mag-assign ng mga volunteer nang direkta mula sa grid
-- I-save ang istruktura ng isang plano bilang [Plan Template](./plan-templates.md) upang maipasa ito sa mga hinaharap na plano sa isang click lamang
-- Buuin ang iyong [Service Order](./service-order.md) gamit ang mga awit, pagbasa, at iba pang elemento
+- Gamitin ang [Plans Overview](./plans-overview.md) para makita ang lahat ng darating na assignment sa maraming linggo sa iisang grid at makita ang mga hindi napunang posisyon — at magtalaga ng volunteer nang direkta mula sa grid
+- I-save ang istruktura ng isang plan bilang [Plan Template](./plan-templates.md) para mailapat mo ito sa mga darating na plan sa isang click
+- Buuin ang iyong [Service Order](./service-order.md) gamit ang mga awit, pagbabasa, at iba pang elemento
 - Magdagdag ng [songs](./songs.md) mula sa iyong library nang direkta sa service order
-- Gamitin ang [Tasks](./tasks.md) upang mag-assign ng mga follow-up na gawain sa mga miyembro ng team
-- Ipakita ang kasalukuyang nilalaman ng aralin sa lobby TV gamit ang [Digital Signage](./digital-signage.md)
+- Gamitin ang [Tasks](./tasks.md) para magtalaga ng mga follow-up na gawain sa mga miyembro ng team
+- Ipakita ang kasalukuyang nilalaman ng aralin sa isang lobby TV gamit ang [Digital Signage](./digital-signage.md)

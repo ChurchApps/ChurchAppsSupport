@@ -6,16 +6,16 @@ title: "B1 Mobile"
 
 <div class="article-intro">
 
-O B1 Mobile é o principal aplicativo móvel voltado para membros do ChurchApps, construído com React Native e Expo. Ele permite que membros da igreja visualizem diretórios, acessem doações, verifiquem presença, recebam notificações e interajam com sua comunidade eclesial.
+O B1 Mobile é o principal app móvel dos ChurchApps voltado para membros, criado com React Native e Expo. Ele permite que os membros da igreja vejam diretórios, acessem doações, consultem a presença, recebam notificações e interajam com a comunidade da igreja.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Instale **Node.js** e **Expo CLI** -- veja [Pré-requisitos](../setup/prerequisites)
-- Instale **Android Studio** (para emulador Android) ou **Xcode** (para simulador iOS)
-- Configure seu alvo de API (staging ou local) -- veja [Variáveis de Ambiente](../setup/environment-variables)
+- Instale o **Node.js** e o **Expo CLI** — consulte [Pré-requisitos](../setup/prerequisites)
+- Instale o **Android Studio** (para o emulador Android) ou o **Xcode** (para o simulador iOS)
+- Configure o alvo da sua API (demonstração ou local) — consulte [Variáveis de Ambiente](../setup/environment-variables)
 
 </div>
 
@@ -33,48 +33,48 @@ O B1 Mobile é o principal aplicativo móvel voltado para membros do ChurchApps,
    cd B1Mobile && npm install
    ```
 
-3. Configure as variáveis de ambiente -- copie o arquivo de exemplo e atualize os endpoints da API:
+3. Configure as variáveis de ambiente — copie o arquivo de exemplo e atualize os endpoints da API:
 
    ```bash
    cp dotenv.sample.txt .env
    ```
 
-4. Inicie o servidor de desenvolvimento Expo:
+4. Inicie o servidor de desenvolvimento do Expo:
 
    ```bash
    npm start
    ```
 
 :::tip
-Você pode usar o app **Expo Go** em um dispositivo físico para testes rápidos sem configurar o Android Studio ou Xcode.
+Você pode usar o app **Expo Go** em um dispositivo físico para testes rápidos, sem precisar configurar o Android Studio ou o Xcode.
 :::
 
 ## Variáveis de Ambiente
 
 | Variável | Descrição |
-|----------|-----------|
-| `STAGE` | Estágio do ambiente (ex: `dev`, `staging`, `prod`) |
-| `CONTENT_ROOT` | URL raiz para entrega de conteúdo |
-| `MEMBERSHIP_API` | Endpoint da API de Membros |
-| `MESSAGING_API` | Endpoint da API de Mensagens |
-| `ATTENDANCE_API` | Endpoint da API de Presença |
-| `GIVING_API` | Endpoint da API de Doações |
-| `DOING_API` | Endpoint da API de Tarefas |
-| `CONTENT_API` | Endpoint da API de Conteúdo |
-| `LESSONS_ROOT` | URL raiz para conteúdo de lições |
+|----------|-------------|
+| `STAGE` | Estágio do ambiente (por exemplo, `dev`, `staging`, `prod`) |
+| `CONTENT_ROOT` | URL raiz para a entrega de conteúdo |
+| `MEMBERSHIP_API` | Endpoint da API Membership |
+| `MESSAGING_API` | Endpoint da API Messaging |
+| `ATTENDANCE_API` | Endpoint da API Attendance |
+| `GIVING_API` | Endpoint da API Giving |
+| `DOING_API` | Endpoint da API Doing |
+| `CONTENT_API` | Endpoint da API Content |
+| `LESSONS_ROOT` | URL raiz para o conteúdo de lições |
 
 ## Comandos Principais
 
 | Comando | Descrição |
-|---------|-----------|
-| `npm start` | Iniciar servidor de desenvolvimento Expo |
-| `npm run android` | Executar no emulador Android |
-| `npm run ios` | Executar no simulador iOS |
-| `npm run test` | Executar testes (Jest) |
+|---------|-------------|
+| `npm start` | Inicia o servidor de desenvolvimento do Expo |
+| `npm run android` | Executa no emulador Android |
+| `npm run ios` | Executa no simulador iOS |
+| `npm run test` | Executa os testes (Jest) |
 
 ## Builds de Produção
 
-Antes de criar um build de produção, atualize os números de versão em todos os seguintes arquivos:
+Antes de criar um build de produção, atualize os números de versão em todos os arquivos a seguir:
 
 - `package.json`
 - `app.config.js`
@@ -97,17 +97,17 @@ eas build --platform ios --profile production
 
 ### Atualizações OTA
 
-Para enviar uma atualização over-the-air (sem passar pela revisão da loja de aplicativos):
+Para enviar uma atualização over-the-air (sem passar pela análise da loja de apps):
 
 ```bash
 npm run update:production
 ```
 
 :::info
-As atualizações OTA são ideais para alterações apenas em JavaScript. Se você modificar código nativo ou dependências, deve enviar um build completo para a loja.
+As atualizações OTA são ideais para alterações apenas em JavaScript. Se você modificar código nativo ou dependências, será necessário enviar um build completo para a loja.
 :::
 
 ## Artigos Relacionados
 
-- **[Implantação Móvel](../deployment/mobile)** -- Guia completo para construir, enviar e implantar aplicações móveis
-- **[Variáveis de Ambiente](../setup/environment-variables)** -- Referência completa para configuração de ambiente móvel
+- **[Deploy Mobile](../deployment/mobile)** — Guia completo para criar, enviar e publicar apps móveis
+- **[Variáveis de Ambiente](../setup/environment-variables)** — Referência completa da configuração de ambiente mobile

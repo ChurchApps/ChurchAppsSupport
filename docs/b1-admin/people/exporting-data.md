@@ -56,6 +56,8 @@ The B1 Export Zip is a full backup of your church data. It holds:
 - custom fields and their values
 - saved people lists
 
+If a person's photo can't be downloaded or read during the export, that photo is skipped and the export continues without it.
+
 To restore it, choose **B1 Import Zip** as the source and **B1 Database** as the destination (see [Importing Data](./importing-data.md)). Households, pickup contacts, and saved lists are rebuilt along with the people. Saved list filters are pointed at the restored groups, funds, campuses, and custom fields.
 :::
 

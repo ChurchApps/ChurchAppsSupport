@@ -30,7 +30,7 @@ Il rapporto Attendance Trend mostra come la presenza cambia nel tempo per i tuoi
 
 Questo rapporto è utile per individuare modelli come cali stagionali, tendenze di crescita, o l'impatto di eventi speciali.
 
-## Presenza nei Gruppi
+## Presenza nei Gruppi {#group-attendance}
 
 Il rapporto Group Attendance mostra chi ha partecipato a ogni sessione di gruppo in un intervallo di date.
 

@@ -43,7 +43,7 @@ Add all your active ministry groups to create a comprehensive calendar that give
 
 Once your curated calendar is set up, you can share it in several ways:
 
-- **Embed on your website** -- The calendar can be displayed directly on your B1.church website pages for visitors to browse.
+- **Embed on your website** -- Add a **Calendar** element to a page to show the calendar as a month grid or as tiles of upcoming events, optionally limited to events with one tag. Each event links to its own page on your site. See [Using the Calendar element](../website/page-editor.md#using-the-calendar-element).
 - **Subscribe via ICS** -- Click **Subscribe** to copy the ICS link. Your congregation can paste this link into Google Calendar, Apple Calendar, Outlook, or any other calendar app to stay in sync.
 - **Download the ICS file** -- Download the calendar file to import it into a calendar application.
 

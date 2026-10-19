@@ -1,73 +1,65 @@
 ---
-title: "Paring av enheten din"
+title: "Pare enheten din"
 ---
 
-# Paring av enheten din
+# Pare enheten din
 
 <div class="article-intro">
 
-For å bruke Planmodus må du pare TV-en din med en plantype i B1 Admin. FreePlay genererer en unik paringskode som knytter enheten til menighetens plan, og muliggjør automatisk innholdslevering hver uke.
+For å bruke Planmodus parer du TV-en med en plantype i B1 Admin. FreePlay viser en kort paringskode på TV-en. Du skriver inn koden i B1 Admin og velger plantypen som skal følges, og TV-en henter innholdet for den planen automatisk hver uke.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Installer og start FreePlay -- se [Komme i gang](../getting-started/)
-- Velg **Par til plan** fra [paringsmodus-skjermbildet](../getting-started/pairing-modes.md)
+- Installer og start FreePlay. Se [Kom i gang](../getting-started/)
 - Ha tilgang til **B1 Admin** på en datamaskin eller telefon for å fullføre paringen
 
 </div>
 
 ## Generere paringskoden
 
-1. Fra skjermbildet **Velg paringsmodus**, velg **Par til plan**
-2. FreePlay kontakter serveren og genererer en kort paringskode
-3. Koden vises med store tegn midt på skjermen
-4. Under koden viser en pulserende indikator **Venter på tilkobling**
+1. På TV-en åpner du **Innstillinger** nederst i sidefeltet.
+2. Velg **Par til en kalender**.
+3. FreePlay viser en firebokstavs paringskode med store bokstaver, ved siden av en QR-kode.
+4. Under koden viser en pulserende **Venter på bekreftelse**-indikator at FreePlay venter på at du skal fullføre paringen.
 
-Koden vises som enkeltstående tegn for enkel lesing fra et stykke unna.
+Den samme koden fungerer for [Planlagt modus](../scheduled-mode/) i FreePlay Admin og for Planmodus i B1 Admin. QR-koden og adressen **freeplay.church/pair** på skjermen åpner FreePlay Admin. For Planmodus kan du se bort fra dem og skrive inn koden i B1 Admin som beskrevet nedenfor.
 
 ## Skrive inn koden i B1 Admin
 
-1. På en datamaskin eller telefon, gå til adressen som vises under koden på TV-en (eller skann QR-koden på skjermen) -- dette åpner siden **Godkjenn enhet** i B1 Admin
-2. Skriv inn paringskoden hvis den ikke allerede ble fylt ut fra QR-koden
-3. Under **Vis planer for**, velg plantypen du vil at denne skjermen skal følge (for eksempel "Søndagsgudstjeneste"). La den stå på **Ingen** hvis du bare vil at skjermen skal være tilgjengelig for å bla gjennom innhold eller varsler, uten noen plan knyttet til den
-4. Godkjenn enheten
+1. I B1 Admin går du til **Profil** > **Enheter** og klikker **Legg til skjerm**.
+2. Skriv inn de fire bokstavene fra TV-en i **Paringskode**.
+3. Under **Vis planer for** velger du plantypen du vil at denne skjermen skal følge, for eksempel «Søndagsgudstjeneste».
+4. Lagre.
 
-FreePlay spør serveren hvert par sekunder om paringen er fullført. Når **B1 Admin** har bekreftet tilkoblingen, går TV-en automatisk videre til skjermbildet for planlasting.
+FreePlay sjekker hvert par sekunder om paringen er fullført. Når B1 Admin bekrefter det, viser TV-en **Tilkoblet!** og går videre til skjermen for nedlasting av planen.
 
-:::tip
-Enheter kan også pares fra **Profil → Enheter → Legg til enhet** i B1 Admin med samme kode -- det gir samme velger for plantype under **Vis planer for**.
-:::
+## Laste ned innhold for planen
 
-## Laste ned planinnhold
+Etter paringen laster FreePlay inn gjeldende plan for den plantypen. Den viser:
 
-Etter paring laster FreePlay inn gjeldende plan for den plantypen. Den viser:
-
-- Plannavnet og gudstjenestedatoen
-- Det tilknyttede leksjonsnavnet (hvis planen inkluderer leksjonsinnhold)
+- Navnet på planen og tjenestedatoen
+- Navnet på leksjonen, hvis planen inneholder leksjonsinnhold
 - En fremdriftsindikator som viser **Laster ned element X av Y**
 
-Når alle mediefiler er lastet ned, vises **Start plan**-knappen. Trykk **Velg** på fjernkontrollen for å begynne avspilling.
+Når alle mediefilene er lastet ned, vises knappen **Start plan**. Trykk **Velg** på fjernkontrollen for å starte avspillingen.
 
 :::tip
-Planen oppdateres automatisk hver time. Hvis planen oppdateres i løpet av dagen, henter FreePlay endringene uten manuell inngripen.
+Planen oppdateres automatisk hver time. Hvis noen oppdaterer planen i løpet av dagen, henter FreePlay endringene av seg selv.
 :::
 
-## Alternativ: Søk etter menighetsnavn
+## Hvis paringen mislykkes
 
-Hvis du foretrekker å ikke bruke paringskode-flyten, kan du velge **eller søk etter menighetsnavn** nederst på paringsskjermen. Dette tar deg til skjermbildet for menighetssøk hvor du kan finne menigheten din og koble til et klasserom i stedet.
-
-## Hvis paring mislykkes
-
-Hvis paringskoden ikke kan genereres (for eksempel på grunn av et nettverksproblem), vil du se en feilmelding med en **Prøv igjen**-knapp. Kontroller at TV-en er koblet til internett og prøv igjen.
+Hvis FreePlay ikke kan generere en paringskode (for eksempel på grunn av et nettverksproblem), vises en feilmelding med en knapp for **Prøv igjen**. Sjekk at TV-en er koblet til internett, og prøv igjen.
 
 :::warning
-Paringskoder utløper etter en fastsatt periode. Hvis du venter for lenge, genererer du en ny kode ved å gå tilbake til paringsskjermen.
+Paringskoder utløper etter 15 minutter. FreePlay viser en ny kode automatisk når den gamle utløper, og du kan velge **Generer ny kode** når som helst. Hvis koden du skrev inn ikke fungerer, bruk den koden TV-en viser nå.
 :::
 
 ## Relaterte artikler
 
-- **[Oversikt over planmodus](./index.md)** - Forstå hvordan Planmodus skiller seg fra Klasseromsmodus
-- **[Spille av leksjoner](../classroom-mode/playing-lessons)** - Spillerkontrollene er de samme i begge moduser
+- **[Oversikt over Planmodus](./index.md)** - Hvordan Planmodus skiller seg fra Planlagt modus
+- **[Pare en skjerm](../scheduled-mode/pairing-a-screen)** - Par den samme TV-en til en kalender i FreePlay Admin i stedet
+- **[Spille av innhold](../content-providers/playing-content)** - Kontroller for avspilling

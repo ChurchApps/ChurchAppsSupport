@@ -32,7 +32,7 @@ title: "제출 내용 관리하기"
 
 제출 내용 옆의 **인쇄 아이콘**을 클릭하면 해당 응답자가 작성한 답변을 인쇄할 수 있습니다. 종이 파일이나 보관해야 하는 서명된 동의서가 필요할 때 유용합니다. 인쇄물 상단에는 교회 로고([Website > Appearance](../website/appearance.md)에서 업로드한 **Light Background Logo**가 있는 경우)와 그 아래 교회 이름이 표시됩니다. 이는 [빈 양식 인쇄하기](./creating-forms.md#printing-a-blank-form)와는 별개의 기능으로, 빈 양식이 아니라 한 사람이 이미 제출한 답변을 인쇄합니다. 제출 내용이 표시되는 곳이라면 [사람의 프로필](../people/adding-people.md#working-with-forms)에서도 같은 인쇄 아이콘을 볼 수 있습니다.
 
-## 제출 내용의 사람 변경하기
+## 제출 내용의 사람 변경하기 {#changing-the-person-on-a-submission}
 
 제출 내용이 잘못된 사람과 연결된 경우, 예를 들어 두 가족 구성원이 같은 이메일 주소를 쓰는 경우에는 올바른 사람에게 옮기거나 연결을 해제할 수 있습니다.
 

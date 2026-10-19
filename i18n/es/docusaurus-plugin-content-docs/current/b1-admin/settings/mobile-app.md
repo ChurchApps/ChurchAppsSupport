@@ -77,7 +77,7 @@ El elemento **Portal de miembros** en la misma sección Móvil contiene la confi
 Debido a que la verificación de edad mínima se basa en fechas de nacimiento, asegúrate de que las fechas de nacimiento se completen para los niños en tu congregación. Esta configuración pertenece a la misma familia de seguridad infantil que los [controles de seguridad de entrada](../attendance/checkin-safety.md).
 :::
 
-### Solicitud de inicio de sesión de la pantalla de inicio
+### Solicitud de inicio de sesión de la pantalla de inicio {#home-screen-sign-in-prompt}
 
 Los visitantes que abren la [pantalla de inicio](/docs/b1-church/getting-started/navigating#home) de la aplicación sin iniciar sesión ven un aviso corto: de forma predeterminada, *"Sign in to see your groups, giving, and more."* Junto a un botón **Iniciar sesión**. La **solicitud de inicio de sesión de la pantalla de inicio** configuración en la misma página del Portal de miembros (`/mobile/b1-mobile`) te permite cambiarla:
 

@@ -1,64 +1,64 @@
 ---
-title: "Mga Giving Statement"
+title: "Mga Pahayag ng Donasyon"
 ---
 
-# Mga Giving Statement
+# Mga Pahayag ng Donasyon
 
 <div class="article-intro">
 
-Sa katapusan ng bawat taon, kailangan ng mga nagbibigay mo ng buod ng kanilang mga handog na maaaring ibawas sa buwis para sa kanilang mga talaan. Pinadadali ng B1 Admin ang paggawa ng mga statement na ito para sa lahat ng nagbigay nang sabay-sabay, na nakakatipid sa iyo ng ilang oras na manu-manong trabaho.
+Sa pagtatapos ng bawat taon, kailangan ng iyong mga donor ng buod ng kanilang mga kontribusyong maaaring i-deduct sa buwis para sa kanilang mga tala. Pinapadali ng B1 Admin ang paggawa ng mga pahayag na ito para sa lahat ng donor nang sabay-sabay, na nakakatipid ng oras ng manu-manong trabaho.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- I-verify na tama ang pagkakamarka ng iyong mga [fund](funds.md) bilang **Tax Deductible** -- tanging mga donasyon sa mga fund na tax-deductible ang lumalabas sa mga statement
-- Tiyaking nakapag-[tala](recording-donations.md) na ang lahat ng donasyon at nai-[import mula sa Stripe](stripe-import.md) ang anumang online na transaksyon
+- Tiyaking tama ang pagkakamarka ng iyong [mga pondo](funds.md) bilang **Tax Deductible** -- tanging mga donasyon sa mga pondong maaaring i-deduct sa buwis ang lumalabas sa mga pahayag
+- Tiyaking nai-[record](recording-donations.md) na ang lahat ng donasyon at naiangkat na mula sa [Stripe](stripe-import.md) ang anumang online transaction
 
 </div>
 
-## Pag-access sa Giving Statements
+## Pag-access sa mga Pahayag ng Donasyon
 
-1. Sa **B1 Admin**, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas) at palawakin ang **Donations**.
+1. Sa **B1 Admin**, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas) at i-expand ang **Donations**.
 2. I-click ang **Giving Statements**. Bubukas ang pahinang **Batch Giving Statements**.
 
-## Paggawa ng mga Statement
+## Paggawa ng mga Pahayag
 
-1. Sa panel na **Select Year**, piliin ang **Year** mula sa dropdown. Maaari mong piliin ang kasalukuyang taon o alinman sa nakaraang limang taon.
-2. Ipinapakita ng panel na **Summary** sa ibaba nito ang estadistika para sa taong iyon, kasama ang:
+1. Sa panel na **Select Year**, piliin ang **Year** mula sa dropdown. Maaari mong piliin ang kasalukuyang taon o alinman sa limang nakaraang taon.
+2. Ni-load ng pahina ang mga donasyong may petsa lamang sa taong iyon (Enero 1 hanggang Disyembre 31), kaya mabilis itong bumubukas kahit maraming taon na ang kasaysayan ng donasyon ng iyong simbahan. Kapag pumili ka ng ibang taon, nire-refresh ang buod gamit ang mga donasyon ng taong iyon. Ipinapakita ng panel na **Summary** sa ilalim ng taon ang mga estadistika para sa taong iyon, kabilang ang:
    - **Total Donors** -- ang bilang ng mga taong nagbigay
-   - **Total Donations** -- ang bilang ng mga indibidwal na talaan ng donasyon
-   - **Total Amount** -- ang pinagsamang halaga sa dolyar ng lahat ng handog
+   - **Total Donations** -- ang bilang ng indibidwal na tala ng donasyon
+   - **Total Amount** -- ang pinagsamang halaga ng lahat ng donasyon
 
-## Pag-download ng mga Statement
+## Pag-download ng mga Pahayag
 
-Ang panel na **Download Options** ay nagbibigay sa iyo ng dalawang opsyon para maipadala ang mga statement sa mga nagbigay mo:
+Ang panel na **Download Options** ay nagbibigay ng dalawang opsyon para maipadala ang mga pahayag sa iyong mga donor:
 
-### I-download bilang mga CSV File
+### I-download bilang CSV Files
 
-Sa ilalim ng **Individual CSV Files**, i-click ang **Download ZIP** para mag-download ng ZIP file na naglalaman ng indibidwal na CSV file para sa bawat nagbigay. Kapaki-pakinabang ito kung gusto mong i-email nang isa-isa ang mga statement o i-import ang mga ito sa ibang sistema.
+Sa ilalim ng **Individual CSV Files**, i-click ang **Download ZIP** para mag-download ng ZIP file na naglalaman ng hiwalay na CSV file para sa bawat donor. Kapaki-pakinabang ito kung gusto mong i-email nang isa-isa ang mga pahayag o i-import ang mga ito sa ibang sistema.
 
-### I-print ang Lahat ng Statement
+### I-print ang Lahat ng Pahayag
 
-Sa ilalim ng **Printable Statements**, i-click ang **Print All** (ipinapakita nito ang bilang ng mga statement) para magbukas ng napi-print na tanaw ng statement ng bawat nagbigay sa browser mo. Mula rito, gamitin ang print function ng browser mo para ipadala ang mga ito sa printer. Bawat statement ay nagsisimula sa bagong pahina kaya handa na itong tiklupin at i-mail.
+Sa ilalim ng **Printable Statements**, i-click ang **Print All** (ipinapakita ng button ang bilang ng mga pahayag) para buksan sa browser mo ang isang printable na view ng pahayag ng bawat donor para sa napiling taon. Mula roon, gamitin ang print function ng iyong browser para ipadala ito sa printer. Nagsisimula ang bawat pahayag sa bagong pahina para handa nang tupiin at ipadala sa koreo, at nakaayos ang mga pahayag ayon sa apelyido ng donor, pagkatapos ay pangalan.
 
-Kung nag-upload ka ng **Light Background Logo** sa ilalim ng [Website > Appearance](../website/appearance.md), ito ay ipi-print sa gitna ng itaas ng bawat statement, sa itaas ng pamagat ng statement. Nalalapat ito sa **Print All** at sa statement ng isang nagbigay na ipi-print mula sa kanyang record.
+Kung nag-upload ka ng **Light Background Logo** sa ilalim ng [Website > Appearance](../website/appearance.md), ito ay ipi-print na nakasentro sa itaas ng bawat pahayag, sa ibabaw ng pamagat ng pahayag. Nalalapat ito sa **Print All** at sa pahayag ng isang donor na ipi-print mula sa kanyang record.
 
 :::tip
-Gawin ang mga statement mo nang maaga sa Enero habang sariwa pa ang mga talaan mo. Doblehin ang pagsusuri na tama ang pagkakamarka ng mga fund mo bilang tax-deductible bago gumawa ng mga statement -- tanging mga donasyon sa mga fund na tax-deductible ang kasama.
+Patakbuhin ang iyong mga pahayag nang maaga sa Enero habang sariwa pa ang mga record. Siguraduhing tama ang pagkakamarka ng iyong mga pondo bilang tax-deductible bago gumawa ng mga pahayag -- tanging mga donasyon sa mga pondong tax-deductible lamang ang kasama.
 :::
 
 :::info
-Kasama lamang sa mga giving statement ang mga donasyong nakatalaga sa mga fund na naka-enable ang setting na **Tax Deductible**. Kung ang isang fund ay hindi minarkahang tax-deductible, hindi lalabas sa statement ang mga donasyon nito. Maaari mong pamahalaan ang setting na ito sa pahina ng [Funds](funds.md).
+Tanging mga donasyong nakatalaga sa mga pondong may naka-enable na setting na **Tax Deductible** ang kasama sa mga pahayag ng donasyon. Kung hindi nakamarka bilang tax-deductible ang isang pondo, hindi lalabas sa pahayag ang mga donasyon nito. Maaari mong pamahalaan ang setting na ito sa pahinang [Funds](funds.md).
 :::
 
 ## Mga Format ng Resibo para sa Canada, Australia at New Zealand
 
-Ang mga simbahang nasa labas ng Estados Unidos ay maaaring ilipat ang statement sa opisyal na layout ng resibo ng kanilang bansa. I-click ang **Statement format** sa itaas ng pahina ng Giving Statements (o pumunta sa **Settings**, buksan ang seksyong **Giving**), at itakda ang **Statement Format** sa **Canada**, **Australia** o **New Zealand**, pagkatapos ay punan ang mga lalabas na field: ang iyong registration number (CRA registration number, ABN, o NZ charity registration number), ang address ng organisasyon mo, ang pangalan ng taong awtorisadong pumirma ng mga resibo, at para sa Canada, ang lungsod kung saan inilalabas ang mga resibo.
+Maaaring lumipat ang mga simbahang nasa labas ng Estados Unidos sa opisyal na layout ng resibo ng kanilang bansa. I-click ang **Statement format** sa itaas ng pahinang Giving Statements (o pumunta sa **Settings** at buksan ang seksyong **Giving**), at itakda ang **Statement Format** sa **Canada**, **Australia** o **New Zealand**. Pagkatapos, punan ang mga field na lalabas: ang iyong registration number (CRA registration number, ABN, o NZ charity registration number), ang address ng iyong organisasyon, ang pangalan ng taong awtorisadong pumirma ng mga resibo, at para sa Canada, ang lungsod kung saan inilalabas ang mga resibo.
 
-Pagkatapos, taglay na ng mga statement ang pananalitang inaasahan ng iyong tax authority (para sa Canada, "Official Receipt for Income Tax Purposes" kasama ang CRA reference), isang receipt number sa anyong `YEAR-DONORID`, ang eligible na halagang binilang mula lamang sa mga fund na tax-deductible, at hiwalay na linya para sa anumang handog sa mga fund na hindi deductible. Makikita ng mga nagbigay ang parehong bloke ng resibo kapag ini-print nila ang sarili nilang statement mula sa B1.church.
+Pagkatapos nito, ang mga pahayag ay magtataglay ng wording na inaasahan ng iyong tax authority (para sa Canada, "Official Receipt for Income Tax Purposes" na may CRA reference), isang numero ng resibo sa anyong `YEAR-DONORID`, ang karapat-dapat na halaga na binilang mula sa mga pondong tax-deductible lamang, at hiwalay na linya para sa anumang regalong napunta sa mga hindi tax-deductible na pondo. Makikita ng mga donor ang parehong bloke ng resibo kapag sila mismo ang nag-print ng kanilang pahayag mula sa B1.church.
 
-## Mga Susunod na Hakbang
+## Susunod na Hakbang
 
-Kung kailangan mong suriin ang detalye ng mga donasyon bago gumawa ng mga statement, bisitahin ang pahina ng [Mga Ulat ng Donasyon](donation-reports.md) o tingnan ang mga indibidwal na [batch](batches.md).
+Kung kailangan mong suriin ang mga detalye ng donasyon bago gumawa ng mga pahayag, bisitahin ang pahinang [Donation Reports](donation-reports.md) o tingnan ang mga indibidwal na [batch](batches.md).

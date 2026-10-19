@@ -71,7 +71,7 @@ Wenn **Personendatensatz aus Einsendungen erstellen** aktiviert ist, können Sie
 
 Jedes Mal, wenn jemand das Formular absendet, wird die zugeordnete oder neu angelegte Person der Gruppe hinzugefügt (bereits vorhandene Gruppenmitglieder werden übersprungen). Das ist nützlich, etwa für ein Anmeldeformular für ein Freizeitlager, das automatisch die Mitgliederliste der Lagergruppe aufbauen soll.
 
-### Eine Nachfassmail senden
+### Eine Nachfassmail senden {#sending-a-follow-up-email}
 
 Wenn **Personendatensatz aus Einsendungen erstellen** aktiviert ist, können Sie außerdem jeder Person, die das Formular absendet, eine E-Mail schicken. Füllen Sie in den Details des Formulars **Betreff der Nachfass-E-Mail** und **Text der Nachfass-E-Mail** aus. In beiden können Sie die Platzhalter `{firstName}` und `{churchName}` verwenden. Die E-Mail wird nur versendet, wenn beide Felder ausgefüllt sind.
 

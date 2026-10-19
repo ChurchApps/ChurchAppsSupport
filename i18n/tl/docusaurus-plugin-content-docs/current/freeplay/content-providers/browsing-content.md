@@ -1,78 +1,94 @@
 ---
-title: "Pag-browse at Pag-download ng Nilalaman"
+title: "Pag-browse at Pag-download ng Content"
 ---
 
-# Pag-browse at Pag-download ng Nilalaman
+# Pag-browse at Pag-download ng Content
 
 <div class="article-intro">
 
-Kapag nakakonekta ka na sa isang content provider, maaari mong i-browse ang library nito, mag-download ng mga file, at patugtugin ang mga ito sa iyong TV. Ang content browser ay nagbibigay ng visual na grid ng mga folder at file na nai-navigate mo gamit ang TV remote.
+Kapag nakakonekta ka na sa isang content provider, maaari mong i-browse ang library nito, mag-download ng mga file, at patugtugin ang mga ito sa iyong TV. Nagbibigay ang content browser ng visual na grid ng mga folder at file na nilalakbay mo gamit ang remote ng TV.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Kumonekta sa kahit isang content provider -- tingnan ang [Pagkonekta sa mga Provider](./connecting-providers)
-- Ihanda ang iyong TV remote para sa pag-navigate
+- Kumonekta sa kahit isang content provider -- tingnan ang [Connecting to Providers](./connecting-providers)
+- Ihanda ang remote ng iyong TV para sa pag-navigate
 
 </div>
 
 ## Ang Content Browser
 
-Ipinapakita ng content browser ang mga item sa 3-column na grid ng mga card. Bawat card ay may thumbnail na larawan at pamagat. May dalawang uri ng item:
+Ipinapakita ng content browser ang mga item sa isang 3-column na grid ng mga card. Ang bawat card ay may thumbnail na larawan at pamagat. May dalawang uri ng item:
 
-- **Mga Folder** - Kinakatawan ng thumbnail o folder icon. Piliin ang folder para makita ang laman nito.
-- **Mga File** - Indibidwal na media item (video o larawan). Ang mga video file ay may play icon na nakapatong sa kanilang thumbnail.
+- **Folders** -- Kinakatawan ng thumbnail o icon ng folder. Piliin ang folder para makita ang laman nito.
+- **Files** -- Mga indibidwal na media item (video o larawan). Ang mga video file ay may play icon sa ibabaw ng kanilang thumbnail.
 
-Ipinapakita ng header sa itaas ng screen ang pangalan ng kasalukuyang folder, o ang pangalan ng provider kung nasa root level ka.
+Ang header sa itaas ng screen ay nagpapakita ng pangalan ng kasalukuyang folder, o ng pangalan ng provider kung nasa root level ka.
 
 ## Pag-navigate sa mga Folder
 
 1. Gamitin ang directional pad ng remote para i-highlight ang isang folder
-2. Pindutin ang **Select** para buksan ito
-3. Nilo-load ng browser ang laman ng folder, na maaaring mas maraming folder o mga file na mapapatugtog
-4. Pindutin ang **Back** sa remote para umakyat ng isang level
+2. Pindutin ang **Piliin** para buksan ito
+3. Ilo-load ng browser ang laman ng folder, na maaaring mga folder pa o mga file na maaaring patugtugin
+4. Pindutin ang **Bumalik** sa remote para umakyat ng isang antas
 
-Maaari kang bumaba nang kasinlalim ng pinapayagan ng istruktura ng nilalaman ng provider. Sinusubaybayan ng browser ang iyong folder path para makabalik ka sa bawat level.
+Maaari kang bumaba hangga't pinapayagan ng istruktura ng content ng provider. Sinusubaybayan ng browser ang iyong folder path para makabalik ka sa bawat antas.
 
-## Pag-download at Pagpapatugtog ng Nilalaman
+## Pag-browse sa Lessons.church
 
-Kapag pumili ka ng folder na may mga file na mapapatugtog (o pumili ng indibidwal na file), lilipat ang FreePlay sa download screen:
+Ang library ng [Lessons.church](../../lessons-church/) ay nakaayos sa parehong paraan ng website nito. Sa pinakataas na antas, makikita mo ang dalawang folder:
 
-1. Lumalabas sa screen ang pamagat ng nilalaman na may cover image mula sa napiling folder
-2. Ipinapakita ng progress bar ang **Downloading item X of Y** habang sine-save ang mga file sa iyong device
-3. Kapag tapos na ang pag-download, lalabas ang button na **Start** na may play icon
-4. Pindutin ang **Select** para simulan ang playback
+- **Lessons** -- Pumasok sa pamamagitan ng **program**, pagkatapos ay **study**, pagkatapos ay **lesson**. Ang bawat lesson ay naglilista ng mga **venue** nito, na mga bersyon ng lesson para sa isang partikular na pangkat ng edad o setting, tulad ng Preschool o Elementary. Piliin ang isang venue para buksan ang download screen ng bersyon ng lesson na iyon
+- **Add-Ons** -- Mga dagdag na video at resource, nakapangkat ayon sa kategorya
+
+Pindutin ang **Bumalik** sa anumang antas para umakyat ng isang hakbang.
+
+## Pag-download at Pag-playback ng Content
+
+Kapag pinili mo ang folder na may mga file na maaaring patugtugin (o pumili ng isang indibidwal na file), ipapakita ng FreePlay ang pamagat ng content na may cover image at dalawang pagpipilian:
+
+- **Download** -- I-save muna ang bawat file sa TV, para hindi nakadepende ang playback sa Wi-Fi. Pumupuno ang progress bar habang nase-save ang bawat file. Kapag tapos na, lalabas ang button na **Start** na may play icon. Pindutin ang **Piliin** para simulan ang playback
+- **Stream** -- Simulan agad ang pag-playback sa internet nang hindi sine-save ang mga file
 
 :::tip
-Naka-cache sa iyong TV ang mga na-download na nilalaman. Kung patugtugin mo muli ang parehong nilalaman sa susunod, agad itong magloload nang hindi na nagda-download muli.
+I-download ang mga lesson bago ang Linggo ng umaga habang may malakas na internet connection ang iyong gusali. Kapag na-download na, tumatakbo nang offline ang content, at kapag pinatugtog mo ulit ito sa susunod, agad itong magbubukas nang hindi na mag-download muli.
 :::
 
-## Pagpapatugtog ng Nilalaman ng Provider
+## Pamamahala ng mga Download
 
-Pareho ang playback sa playback ng aralin. Gamitin ang mga kontrol na ito:
+Buksan ang **Settings** sa ibaba ng sidebar, pagkatapos ay piliin ang **Downloads** para makita ang lahat ng naka-save sa TV na ito:
 
-- **Right arrow** - Susunod na item
-- **Left arrow** - Nakaraang item
-- **Select / Play-Pause** - I-pause o ituloy ang video
-- **Up arrow** - Buksan ang message selector para lumundag sa isang tiyak na item
-- **Back** - Lumabas pabalik sa content browser
+- Piliin ang isang download para patugtugin ito
+- I-highlight ang isang download at piliin ang delete icon sa sulok nito para alisin ito at magbakante ng storage
+
+Kung sinasabi ng screen na **No downloads yet**, walang naka-save sa TV na ito.
+
+## Pag-playback ng Content mula sa Provider
+
+Gamitin ang mga kontrol na ito habang nagpe-playback:
+
+- **Kanang arrow** -- Susunod na item
+- **Kaliwang arrow** -- Nakaraang item
+- **Piliin / Play-Pause** -- I-pause o ituloy ang video
+- **Pataas na arrow** -- Buksan ang message selector para tumalon sa isang partikular na item
+- **Bumalik** -- Lumabas papunta sa content browser
 
 Kapag lumabas ka sa player, babalik ka sa content browser sa root level ng kasalukuyang provider.
 
 :::info
-Para sa kumpletong sanggunian ng lahat ng kontrol ng player, tingnan ang [Pagpapatugtog ng mga Aralin](../classroom-mode/playing-lessons).
+Para sa kumpletong sanggunian ng lahat ng player control, tingnan ang [Playing Content](./playing-content).
 :::
 
 ## Paglipat sa Pagitan ng mga Provider
 
-Lumalabas ang mga nakakonektang provider bilang mga item sa ilalim ng heading na **Browse** sa sidebar sa kaliwa. Para lumipat sa ibang provider:
+Ang mga nakakonektang provider ay lumalabas bilang mga item sa ilalim ng heading na **Browse** sa kaliwang sidebar. Para lumipat sa ibang provider:
 
-1. Pindutin ang **Left** arrow sa remote para i-expand ang sidebar
+1. Pindutin ang **Kaliwang** arrow sa remote para palawakin ang sidebar
 2. Piliin ang provider na gusto mong i-browse
 3. Magre-refresh ang content browser gamit ang library ng provider na iyon
 
 :::warning
-Kung nagpapakita ang isang folder ng "No content available," walang anumang item ang provider sa level na iyon. Subukang pumunta sa ibang folder o bumalik na lang mamaya.
+Kung nagpapakita ng "No content available" ang isang folder, walang item ang provider sa antas na iyon. Subukang pumunta sa ibang folder o bumalik na lang mamaya.
 :::

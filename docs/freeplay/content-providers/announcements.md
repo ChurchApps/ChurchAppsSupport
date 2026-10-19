@@ -13,7 +13,7 @@ FreePlay can loop a folder of announcement slides on your TV -- for example, in 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Connect to a content provider](./connecting-providers) that holds your announcement slides, such as Google Drive or Dropbox
+- [Connect to a content provider](./connecting-providers) that holds your announcement slides, such as Dropbox or OneDrive
 - Put the images or videos you want to loop together in one folder in that provider
 
 </div>
@@ -37,7 +37,7 @@ Once slides have been downloaded, an **Announcements** item appears near the top
 - After the last slide, the loop starts over from the first one
 - If the folder has a single video, it repeats in place
 
-The loop plays from the files saved on the device, so it keeps running without an internet connection. You can use the same remote controls as any other content -- see [Playing Lessons](../classroom-mode/playing-lessons).
+The loop plays from the files saved on the device, so it keeps running without an internet connection. You can use the same remote controls as any other content -- see [Playing Content](./playing-content).
 
 ## Updating the Slides
 
@@ -63,4 +63,4 @@ Disconnecting the provider also turns off announcements that came from it.
 
 - **[Connecting to Providers](./connecting-providers)** - Connect the provider that holds your slides
 - **[Browsing and Downloading Content](./browsing-content)** - Browse a provider's folders and play content on demand
-- **[Playing Lessons](../classroom-mode/playing-lessons)** - Player controls for your TV remote
+- **[Playing Content](./playing-content)** - Player controls for your TV remote

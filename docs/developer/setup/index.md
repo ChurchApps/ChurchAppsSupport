@@ -6,7 +6,7 @@ title: "Setup"
 
 <div class="article-intro">
 
-This section walks you through setting up a local development environment for ChurchApps projects. You can either point your frontend at shared staging APIs for quick development, or run the full stack locally for backend work.
+This section walks you through setting up a local development environment for ChurchApps projects. You can either point your frontend at the shared demo APIs for quick development, or run the full stack locally for backend work.
 
 </div>
 
@@ -14,23 +14,25 @@ This section walks you through setting up a local development environment for Ch
 
 There are two ways to develop locally, depending on how much of the stack you need:
 
-### 1. Point to Staging APIs (Easiest)
+### 1. Point to the Demo APIs (Easiest)
 
-If you are working on a **frontend project** (web app, mobile app, or desktop app), the fastest path is to point your local app at the shared staging APIs. No database or backend setup required.
+If you are working on a **frontend project** (web app, mobile app, or desktop app), the fastest path is to point your local app at the shared demo APIs. No database or backend setup required.
 
-The staging API base URL is:
+The demo API base URL is:
 
 ```
-https://api.staging.churchapps.org
+https://api.demo.churchapps.org
 ```
 
 Each API module is available at a path under this base, for example:
 
 ```
-https://api.staging.churchapps.org/membership
-https://api.staging.churchapps.org/attendance
-https://api.staging.churchapps.org/giving
+https://api.demo.churchapps.org/membership
+https://api.demo.churchapps.org/attendance
+https://api.demo.churchapps.org/giving
 ```
+
+The demo environment runs the latest code from `main`, and its sample data is repopulated every night, so don't expect anything you create there to last. (The former staging environment, `api.staging.churchapps.org`, has been retired. Some sample `.env` files may still list staging URLs -- replace them with the demo or local URLs.)
 
 :::tip
 This approach lets you start making frontend changes in minutes. It is the recommended path for most contributors.

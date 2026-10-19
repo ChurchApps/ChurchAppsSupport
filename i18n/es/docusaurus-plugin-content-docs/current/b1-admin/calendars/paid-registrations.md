@@ -57,7 +57,7 @@ Los registrantes eligen cantidades durante la inscripción, y los totales se cue
 
 Cada código muestra un conteo de **Usos** para que puedas ver con qué frecuencia ha sido canjeado. Los registrantes reciben retroalimentación instantánea cuando aplican un código -- incluyendo mensajes claros cuando un código ha expirado, no ha comenzado o necesita más asistentes.
 
-## Lista de Espera
+## Lista de Espera {#waitlist}
 
 Activa **Habilitar Lista de Espera** en la tarjeta de Configuración de Registro. Cuando el evento alcanza capacidad:
 
@@ -69,7 +69,7 @@ Activa **Habilitar Lista de Espera** en la tarjeta de Configuración de Registro
 Los registros promovidos permanecen *pendientes* hasta que se pague cualquier saldo; pagar (o no tener nada que pagar) los confirma.
 :::
 
-## El Registro de Registros
+## El Registro de Registros {#the-registration-roster}
 
 Abre un evento desde la página de Registros para ver cada registro. La tabla muestra **Nombre**, **Miembros**, **Tipo** (tipo de cada asistente), **Pagado / Total** (con una advertencia de saldo cuando aún se debe dinero), **Estado** y **Fecha**, más chips de conteo por tipo sobre la tabla.
 

@@ -46,7 +46,7 @@ Jede Änderung an einem Paket versendet mit einem Changeset:
 Führen Sie nie einen rohen `npm publish` innerhalb eines einzelnen Pakets aus – es überspringt die Build-Reihenfolge und die Versions-Buchführung, die das Release-Skript bewältigt. Das Veröffentlichen erfordert ein npm-Konto mit Veröffentlichungsrechten zum `@churchapps`-Scope.
 :::
 
-## Lokale Entwicklung gegen eine konsumierende App
+## Lokale Entwicklung gegen eine konsumierende App {#local-development-against-a-consuming-app}
 
 Innerhalb des Workspace erstellen Pakete direkt gegen ihre Geschwister – keine Verknüpfung notwendig. Um eine unveröffentlichte Paket-Build innerhalb einer konsumierenden App (B1Admin, B1App usw.) zu testen, fügen Sie ein temporäres Yarn-Portal im Konsumenten ein:
 

@@ -71,7 +71,7 @@ Quando è attiva l'opzione **Crea una scheda persona dalle risposte**, puoi anch
 
 Ogni volta che qualcuno invia il modulo, la persona trovata o appena creata viene aggiunta al gruppo (i membri già presenti nel gruppo vengono saltati). È utile per cose come un modulo di iscrizione a un campo estivo che deve costruire automaticamente l'elenco del gruppo del campo.
 
-### Inviare un'email di follow-up
+### Inviare un'email di follow-up {#sending-a-follow-up-email}
 
 Con l'opzione **Crea una scheda persona dalle risposte** attiva, puoi anche inviare un'email a ogni persona che invia il modulo. Compila **Oggetto dell'email di follow-up** e **Testo dell'email di follow-up** nei dettagli del modulo. Puoi usare i segnaposto `{firstName}` e `{churchName}` in entrambi i campi. L'email viene inviata solo se entrambi i campi sono compilati.
 

@@ -54,7 +54,7 @@ Ang mga database schema ay awtomatikong nalilikha sa unang paglunsad ng startup 
 
 Ngayong nakabangon na kayo, narito ang mga bagay na kalaunan ay isinasaayos ng karamihan ng mga simbahan, halos ayon sa priority order.
 
-### 1. Email (Lubos na Inirerekomenda)
+### 1. Email (Lubos na Inirerekomenda) {#1-email-highly-recommended}
 
 Nang walang email, maaari pa ring magparehistro at gumamit ng sistema ang mga miyembro, ngunit **hindi nila mare-reset ang mga nakalimutang password** — kailangang gawin iyon ng isang admin para sa kanila. Ang pag-setup ng SMTP ay tumatagal lang ng humigit-kumulang 5 minuto.
 
@@ -125,7 +125,7 @@ REACT_APP_B1_WEBSITE_URL=https://{subdomain}.yourchurch.org
 
 Ang `{subdomain}` token ay literal — pinapalitan ito sa runtime ng subdomain ng bawat simbahan (tingnan ang Multi-Site sa ibaba).
 
-### 3. Multi-Site (Maraming Simbahan sa Iisang Instance)
+### 3. Multi-Site (Maraming Simbahan sa Iisang Instance) {#3-multi-site-multiple-churches-on-one-instance}
 
 Ang ChurchApps ay multi-tenant sa disenyo — isang deployment ay maaaring maglingkod sa anumang bilang ng mga simbahan, bawat isa ay may sariling mga tao, grupo, at website. Ang mga bagong simbahan ay idinaragdag nang buo sa pamamagitan ng admin UI; walang kinakailangang pagbabago sa infrastructure.
 
@@ -183,7 +183,7 @@ AWS_REGION=us-east-2
 
 Ang mga umiiral nang file sa volume ay hindi awtomatikong lumilipat — kopyahin muna ang mga ito sa bucket bago i-flip ang variable.
 
-### 6. Opsyonal na Feature Integrations
+### 6. Opsyonal na Feature Integrations {#6-optional-feature-integrations}
 
 Ang mga ito ay nagbubukas ng mga tiyak na feature at maaaring lahat idagdag mamaya sa pamamagitan ng Railway dashboard. Itakda ang mga ito sa **Api** service.
 

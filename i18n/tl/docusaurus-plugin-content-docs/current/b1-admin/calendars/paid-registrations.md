@@ -69,7 +69,7 @@ I-on ang **Enable Waitlist** sa card ng Registration Settings. Kapag naabot na n
 Nananatiling *pending* ang mga na-promote na rehistrasyon hanggang mabayaran ang anumang balanse; kapag nabayaran (o kung wala namang babayaran), makukumpirma na ang mga ito.
 :::
 
-## Ang Registration Roster
+## Ang Registration Roster {#the-registration-roster}
 
 Buksan ang isang event mula sa pahina ng Registrations para makita ang bawat rehistrasyon. Ipinapakita ng talahanayan ang **Name**, **Members**, **Type** (ang uri ng bawat dadalo), **Paid / Total** (na may babala sa balanse kapag may utang pa), **Status**, at **Date**, kasama ang mga count chip kada uri sa itaas ng talahanayan.
 

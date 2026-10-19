@@ -26,7 +26,7 @@ At the end of each year, your donors need a summary of their tax-deductible givi
 ## Generating Statements
 
 1. In the **Select Year** panel, choose the **Year** from the dropdown. You can choose the current year or any of the five previous years.
-2. The **Summary** panel below it shows statistics for that year, including:
+2. The page loads only the donations dated in that year (January 1 through December 31), so it opens quickly even if your church has many years of giving history. When you pick a different year, the summary refreshes with that year's donations. The **Summary** panel below the year shows statistics for that year, including:
    - **Total Donors** -- the number of people who gave
    - **Total Donations** -- the number of individual donation records
    - **Total Amount** -- the combined dollar amount of all giving
@@ -41,7 +41,7 @@ Under **Individual CSV Files**, click **Download ZIP** to download a ZIP file co
 
 ### Print All Statements
 
-Under **Printable Statements**, click **Print All** (the button shows the number of statements) to open a printable view of every donor's statement in your browser. From there, use your browser's print function to send them to a printer. Each statement starts on a new page so they are ready to fold and mail.
+Under **Printable Statements**, click **Print All** (the button shows the number of statements) to open a printable view of every donor's statement for the selected year in your browser. From there, use your browser's print function to send them to a printer. Each statement starts on a new page so they are ready to fold and mail, and the statements are in order by the donor's last name, then first name.
 
 If you have uploaded a **Light Background Logo** under [Website > Appearance](../website/appearance.md), it prints centered at the top of each statement, above the statement title. This applies to both **Print All** and a single donor's statement printed from their record.
 

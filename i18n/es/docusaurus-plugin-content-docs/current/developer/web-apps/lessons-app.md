@@ -6,48 +6,48 @@ title: "LessonsApp"
 
 <div class="article-intro">
 
-LessonsApp es la aplicación de gestión de contenido de lecciones para [Lessons.church](https://lessons.church). Proporciona una interfaz para crear, organizar y publicar planes de estudios de lecciones de iglesia, construida con Next.js y React.
+LessonsApp es la aplicación de gestión de contenido de lecciones de [Lessons.church](https://lessons.church). Ofrece una interfaz para crear, organizar y publicar currículos de lecciones para iglesias, desarrollada con Next.js y React.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Instalar **Node.js 22+** y **Git** -- ver [Requisitos Previos](../setup/prerequisites)
-- Configurar su objetivo de API (preparación o local) -- ver [Variables de Entorno](../setup/environment-variables)
+- Instala **Node.js 22+** y **Git**; consulta [Requisitos previos](../setup/prerequisites)
+- Configura el destino de tu API (LessonsApi local); consulta [Variables de entorno](../setup/environment-variables)
 
 </div>
 
 :::warning
-LessonsApp requiere Node.js 22 o posterior. Las versiones anteriores no se admiten.
+LessonsApp requiere Node.js 22 o posterior. Las versiones anteriores no son compatibles.
 :::
 
 ## Configuración
 
-### 1. Clonar el repositorio
+### 1. Clona el repositorio
 
 ```bash
 git clone https://github.com/ChurchApps/LessonsApp.git
 ```
 
-### 2. Instalar dependencias
+### 2. Instala las dependencias
 
 ```bash
 cd LessonsApp
 npm install
 ```
 
-### 3. Configurar variables de entorno
+### 3. Configura las variables de entorno
 
-Copie el archivo de muestra de entorno a `.env` y configure los puntos de conexión de API:
+Copia el archivo de ejemplo de entorno a `.env` y configura los endpoints de la API:
 
 ```bash
 cp dotenv.sample.txt .env
 ```
 
-Actualice las URLs de punto de conexión de API para apuntar a la API de preparación o su instancia de API local.
+Actualiza las URL de los endpoints de la API para que apunten a tu instancia local de LessonsApi (`http://localhost:8090`). La API de lecciones de staging ya no está disponible, así que reemplaza cualquier URL `api.staging.lessons.church` que quede en el archivo de ejemplo.
 
-### 4. Iniciar el servidor de desarrollo
+### 4. Inicia el servidor de desarrollo
 
 ```bash
 npm run dev
@@ -55,21 +55,21 @@ npm run dev
 
 El servidor de desarrollo de Next.js se inicia en [http://localhost:3501](http://localhost:3501).
 
-## Comandos Clave
+## Comandos principales
 
 | Comando | Descripción |
 |---------|-------------|
-| `npm run dev` | Iniciar servidor de desarrollo de Next.js en puerto 3501 |
-| `npm run build` | Compilación de producción a través de Next.js |
+| `npm run dev` | Inicia el servidor de desarrollo de Next.js en el puerto 3501 |
+| `npm run build` | Compilación de producción mediante Next.js |
 
-## Pila Tecnológica
+## Stack tecnológico
 
 - **Next.js 16** con TypeScript
-- **React 19** para componentes de interfaz de usuario
-- Paquetes `@churchapps/apphelper*` para componentes compartidos
+- **React 19** para los componentes de la interfaz
+- Paquetes **`@churchapps/apphelper*`** para componentes compartidos
 
 :::info
-LessonsApp se comunica con el backend de **LessonsApi**, que es una API separada de la API principal de ChurchApps. Asegúrese de que su entorno esté configurado con el punto de conexión correcto de Lessons API.
+LessonsApp se comunica con el backend **LessonsApi**, que es una API separada de la API principal de ChurchApps. Asegúrate de que tu entorno esté configurado con el endpoint correcto de la API de lecciones.
 :::
 
 ## Despliegue
@@ -77,9 +77,9 @@ LessonsApp se comunica con el backend de **LessonsApi**, que es una API separada
 Las compilaciones de producción se despliegan en **S3 + CloudFront**:
 
 1. `npm run build` genera la compilación optimizada de Next.js
-2. La salida de compilación se sincroniza a un grupo S3
-3. Se activa la invalidación de CloudFront para servir la nueva versión
+2. La salida de la compilación se sincroniza con un bucket de S3
+3. Se activa una invalidación de CloudFront para servir la nueva versión
 
 :::tip
-Para instrucciones de despliegue detalladas, ver la guía [Despliegue de Aplicación Web](../deployment/web-apps).
+Para instrucciones de despliegue detalladas, consulta la guía [Despliegue de aplicaciones web](../deployment/web-apps).
 :::

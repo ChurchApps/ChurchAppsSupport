@@ -144,6 +144,7 @@ docker compose -f docker-compose.yml -f docker-compose.build.yml up -d --build
 | Symptom | Likely cause | Fix |
 |---------|--------------|-----|
 | `api` container restarts in a loop | migration failure or wrong database password | `./deploy/b1 logs api` — the migration prints which module failed |
+| `api` logs "ENCRYPTION_KEY must be exactly 32 characters" | hand-edited or truncated key in `.env` | restore the original 32-character key (generate a new one only if no credentials are stored yet) |
 | Browser shows a certificate warning | DNS not pointing here yet, or port 80/443 blocked | fix DNS / firewall; Caddy retries on its own |
 | `/` shows a dashboard instead of the website | no church yet, or `DEFAULT_CHURCH_SLUG` doesn't match | create the church, or set the slug from **Settings → Church** |
 | "Check your email" but no email arrives | `MAIL_SYSTEM=SMTP` with bad credentials | fix credentials, or unset `MAIL_SYSTEM` to disable email |

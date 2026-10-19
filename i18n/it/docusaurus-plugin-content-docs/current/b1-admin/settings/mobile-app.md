@@ -77,7 +77,7 @@ L'elemento **Member portal** nella stessa sezione Mobile contiene le impostazion
 Poiché il controllo dell'età minima si basa sulle date di nascita, assicurati che le date di nascita siano compilate per i bambini nella tua congregazione. Questa impostazione appartiene alla stessa famiglia di controlli di sicurezza per bambini come [check-in safety controls](../attendance/checkin-safety.md).
 :::
 
-### Prompt di accesso della schermata iniziale
+### Prompt di accesso della schermata iniziale {#home-screen-sign-in-prompt}
 
 I visitatori che aprono la [schermata iniziale](/docs/b1-church/getting-started/navigating#home) dell'app senza accedere vedono un breve prompt, per impostazione predefinita, *"Sign in to see your groups, giving, and more."*, accanto a un pulsante **Sign In**. Le impostazioni **Home screen sign-in prompt** sulla stessa pagina Member portal (`/mobile/b1-mobile`) ti permettono di cambiarla:
 

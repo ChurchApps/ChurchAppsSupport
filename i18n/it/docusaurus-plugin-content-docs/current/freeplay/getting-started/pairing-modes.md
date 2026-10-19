@@ -6,50 +6,60 @@ title: "Scegliere una modalità di associazione"
 
 <div class="article-intro">
 
-FreePlay offre due modalità di associazione per collegare la tua TV alla tua chiesa, oltre alla possibilità di sfogliare direttamente i provider di contenuti. Lo schermo **Seleziona modalità di associazione** presenta queste opzioni come grandi schede che puoi navigare con il telecomando della TV.
+FreePlay può far funzionare una TV in tre modi. Può seguire un calendario che hai impostato in FreePlay Admin, seguire un piano di culto da B1 Admin, oppure riprodurre ciò che un volontario sceglie con il telecomando. Entrambi i tipi di associazione partono dalla stessa schermata della TV. Il punto in cui inserisci il codice di associazione determina la modalità che la TV utilizza.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Installa FreePlay e avvialo per la prima volta -- vedi [Getting Started](./index.md)
-- Tieni pronto il telecomando della TV per la navigazione
+- Installa FreePlay e avvialo per la prima volta. Vedi [Per iniziare](./index.md)
+- Tieni a portata di mano il telecomando della TV per la navigazione
 
 </div>
 
-## Associa a Classroom
+## Ottenere un codice di associazione
 
-Scegli **Associa a Classroom** quando vuoi che una TV specifica mostri sempre la lezione programmata per una particolare stanza. Questa è la miglior opzione per i chioschi di ministero per bambini in cui le lezioni sono assegnate su base settimanale.
+1. Sulla TV, apri **Impostazioni** in fondo alla barra laterale.
+2. Seleziona **Associa a un calendario**.
+3. FreePlay mostra un codice di associazione di quattro lettere e un codice QR. Il codice dura 15 minuti, e FreePlay ne mostra automaticamente uno nuovo quando scade.
 
-**Come funziona:** Cerchi la tua chiesa per nome, scegli una stanza e FreePlay recupera automaticamente qualsiasi lezione programmata per quella stanza oggi. Ogni domenica mattina, accendi semplicemente la TV e la lezione corretta è pronta.
+## Modalità programmata (FreePlay Admin)
 
-**Ideale per:** TV dedicate in aula che dovrebbero sempre mostrare i contenuti programmati per quella stanza.
+Inserisci il codice in **FreePlay Admin** all'indirizzo [admin.freeplay.church](https://admin.freeplay.church) quando vuoi che la TV funzioni da sola. Crei le playlist, le inserisci in un calendario per un gruppo di schermi, e la TV le riproduce agli orari programmati. Nessuno deve premere Avvia.
+
+**Come funziona:** Scansiona il codice QR sulla TV, oppure vai su **freeplay.church/pair**. Poi scegli il gruppo di schermi il cui calendario la TV deve seguire e fai clic su **Associa**. La TV scarica la settimana successiva e riproduce secondo l'orologio, anche offline.
+
+**Ideale per:** segnaletica di atrii e corridoi, loop di annunci e aule in cui la lezione deve già essere in riproduzione quando le persone entrano.
+
+Consulta **[Modalità programmata](../scheduled-mode/)** per la guida completa.
+
+## Modalità piano (B1 Admin)
+
+Inserisci il codice in **B1 Admin** quando vuoi che la TV segua un tipo di piano di culto. La TV scarica i contenuti del piano attuale, e un volontario preme **Avvia piano** per riprodurli.
+
+**Come funziona:** In B1 Admin, aggiungi lo schermo con il codice mostrato dalla TV e scegli il tipo di piano in **Mostra piani per**. Ogni settimana la TV recupera l'ultimo piano di quel tipo.
+
+**Ideale per:** TV che mostrano contenuti legati al piano di culto settimanale, dove qualcuno avvia la riproduzione al momento giusto.
+
+Consulta **[Modalità piano](../plan-mode/)** per la guida completa.
 
 :::tip
-Configura le tue aule su [freeplay.church](https://freeplay.church) prima di associare la tua TV. Questo garantisce che le tue stanze appaiano quando cerchi la tua chiesa.
+Puoi anche riprodurre il piano di culto attuale in base a una programmazione. In FreePlay Admin, aggiungi una voce al calendario e scegli il tipo di piano in **Piani di culto**.
 :::
 
-## Associa a Plan
+## Fornitori di contenuti (senza associazione)
 
-Scegli **Associa a Plan** quando vuoi seguire un piano di servizio della chiesa. Questa modalità genera un codice di associazione che inserisci in **B1 Admin** per collegare la TV a un tipo di piano specifico. La TV quindi scarica e riproduce il contenuto assegnato al piano attuale.
+Se non devi associare affatto la TV, puoi sfogliare direttamente i fornitori di contenuti. Fornitori come [Lessons.church](../../lessons-church/) e Bible Project hanno contenuti che puoi scaricare e riprodurre quando vuoi.
 
-**Come funziona:** FreePlay visualizza un codice di associazione e un codice QR sullo schermo. Un amministratore apre la pagina collegata in **B1 Admin**, inserisce il codice e sceglie il tipo di piano che lo schermo dovrebbe seguire da un menu a discesa **Show Plans For**. Una volta approvato, la TV carica automaticamente il contenuto del piano attuale.
-
-**Ideale per:** TV che visualizzano contenuti legati al tuo piano di servizio settimanale, come testi di adorazione o diapositive di annunci.
-
-## Content Providers
-
-Se non hai bisogno di associare a un chiosco o a un piano, puoi sfogliare direttamente i provider di contenuti. Provider come [Lessons.church](../../lessons-church/) e Bible Project offrono contenuti che puoi scaricare e riprodurre su richiesta.
-
-**Ideale per:** TV in cui i volontari scelgono manualmente cosa riprodurre ogni settimana, o quando vuoi esplorare i contenuti disponibili.
+**Ideale per:** TV in cui i volontari scelgono cosa riprodurre ogni settimana, o quando vuoi esplorare cosa è disponibile.
 
 :::info
-Puoi accedere allo schermo **Providers** in qualsiasi momento da **Settings** in fondo alla barra laterale. Non hai bisogno di utilizzare una modalità di associazione per sfogliare e riprodurre contenuti.
+Puoi aprire la schermata **Fornitori** in qualsiasi momento da **Impostazioni** in fondo alla barra laterale. Non serve associare la TV per sfogliare e riprodurre i contenuti.
 :::
 
 ## Articoli correlati
 
-- **[Classroom Mode](../classroom-mode/)** - Guida completa all'associazione con una classe
-- **[Plan Mode](../plan-mode/)** - Guida completa all'associazione con un piano di servizio
-- **[Content Providers](../content-providers/)** - Sfoglia e scarica contenuti da fonti esterne
+- **[Modalità programmata](../scheduled-mode/)** - Metti le TV in calendario con FreePlay Admin
+- **[Modalità piano](../plan-mode/)** - Guida completa all'associazione con un piano di culto
+- **[Fornitori di contenuti](../content-providers/)** - Sfoglia e scarica contenuti da fonti esterne

@@ -33,6 +33,13 @@ Base path: `/messaging/conversations`
 
 Conversations with `contentType: "person"` (the Notes tab on a person record) or `contentType: "personConfidential"` (the Confidential Notes section) are gated on every read and write path, including the otherwise-public routes above, which return `401` for these content types. `person` requires the MembershipApi **People / Edit** permission; `personConfidential` requires **People / View Confidential Notes**. For scoped API keys, `people:write` carries both actions (the key's user must still hold the underlying role permission).
 
+### Group and event notes access control {#group-and-event-notes-access-control}
+
+Two more note content types are gated the same way, on every read and write path (including the public routes above), and are never open to anonymous posting:
+
+- **`groupNote`** (`contentId` = group ID) -- the **Leader notes** feed on a group. Only that group's leaders (`leaderGroupIds` on the JWT) can read or post. No staff permission grants access, including `content.edit` and the group-membership permissions.
+- **`eventNote`** (`contentId` = event ID) -- the notes on a calendar event. Staff with `content.edit` or **Calendars / Admin** can always read and post. Otherwise access follows the event's `notesViewRole` (read) and `notesPostRole` (post): `staff` (the default, used when the field is `null`) allows no one else, `leaders` allows leaders of the event's group, and `members` allows the event group's members and leaders. An event with no `groupId` is staff-only.
+
 ### Workflow card notes access control
 
 Conversations with `contentType: "workflowCard"` (the notes on a workflow card, where `contentId` is the card's task ID) are readable and writable only by someone who can open that card: a user with the DoingApi **Tasks / View** permission, or the person or group the card is assigned to, created by, or about. Everyone else gets `401` on every read path, including the public routes above. A card's conversation is attached through the card itself with `POST /doing/tasks/:id/conversation` (body `{ "conversationId": "..." }`; the first conversation attached wins), which the card's editors and its assignee can call.

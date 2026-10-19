@@ -1,46 +1,49 @@
 ---
-title: "Mga Kaganapan"
+title: "Mga Event"
 ---
 
-# Mga Kaganapan
+# Mga Event
 
 <div class="article-intro">
 
-Ang seksyong Mga Kaganapan sa B1.church ay nagbibigay-daan sa iyo na tingnan ang mga paparating na kaganapan ng simbahan at magrehistro para sa mga ito nang direkta mula sa website. Kapag pinagana ng iyong simbahan ang pagpaparehistro para sa isang kaganapan, maaari kang mag-sign up para sa iyong sarili at sa iyong mga miyembro ng pamilya sa loob lamang ng ilang hakbang — at para sa mga bayad na kaganapan, pumili ng mga uri ng dadalo at mga opsyon, mag-apply ng mga discount code, at magbayad nang secure bilang bahagi ng pagsali.
+Ipinapakita ng seksyong Events sa B1.church ang mga paparating na event ng simbahan at hinahayaan kang magparehistro para sa mga ito diretso sa website. Kapag pinagana ng simbahan ang pagpapatala para sa isang event, maaari kang magpatala ng sarili mo at ng iyong pamilya sa ilang hakbang lamang -- at para sa mga bayad na event, pumili ng uri ng dadalo at mga opsyon, maglapat ng discount code, at magbayad nang ligtas bilang bahagi ng pagpapatala.
 
 </div>
 
-## Pagba-browse ng mga Kaganapan
+## Pag-browse ng mga Event
 
-Lumalabas ang mga kaganapan sa kalendaryo ng simbahan. Kapag binuksan mo ang isang kaganapan na may pinaganang pagpaparehistro, ipinapakita ang isang **Register for this Event** na buton kasama ang mga detalye ng kaganapan.
+Lumalabas ang mga event sa website ng simbahan mo, alinman sa buwanang kalendaryo o bilang mga tile ng paparating na event. I-click ang isang event para buksan ang sarili nitong pahina, na nagpapakita ng:
 
-Ang mga kaganapan na may pinaganang pagpaparehistro ay nagpapakita ng:
+- **Event photo** -- Kung nagdagdag ng larawan ang simbahan.
+- **Event title and description** -- Ano ang tungkol sa event.
+- **When** -- Ang petsa at oras ng susunod na pangyayari, o ang pattern ng pag-uulit para sa paulit-ulit na event.
+- **Where** -- Ang mga kuwartong nakareserba para sa event, kung mayroon.
+- **Register for this Event** -- Isang button na magdadala sa iyo sa form ng pagpapatala. Lumalabas lamang kapag naka-on ang pagpapatala para sa event.
+- **Add to my calendar** -- Dina-download ang event bilang calendar file na mabubuksan mo sa Google Calendar, Apple Calendar, Outlook, o iba pang calendar app.
 
-- **Pamagat at deskripsyon ng kaganapan** -- Kung ano ang tungkol sa kaganapan.
-- **Petsa at oras** -- Kung kailan magaganap ang kaganapan.
-- **Buton ng pagpaparehistro** -- Isang asul na buton na magdadala sa iyo sa form ng pagpaparehistro.
+I-tap ang **All events** sa itaas ng pahina para bumalik. Sa ibabaw ng mga tile ng paparating na event, hinahayaan ka ng button na **Subscribe** na kopyahin ang ICS link ng buong calendar o i-download ito, para lumabas ang mga bagong event sa sarili mong calendar app.
 
-## Katayuan ng Pagpaparehistro
+## Katayuan ng Pagpapatala
 
-Maaaring magpakita ang mga kaganapan ng iba't ibang katayuan depende sa oras at kapasidad:
+Maaaring magpakita ng iba't ibang katayuan ang mga event depende sa oras at kapasidad:
 
-- **Bukas** -- Available ang pagpaparehistro at maaari kang mag-sign up.
-- **Hindi Pa Bukas** -- Hindi pa nagsisimula ang window ng pagpaparehistro. Bumalik pagkatapos ng petsa ng pagbukas.
-- **Sarado** -- Nakalipas na ang deadline ng pagpaparehistro.
-- **Puno** -- Naubos na ang lahat ng available na puwesto.
+- **Open** -- Available ang pagpapatala at maaari kang magpatala.
+- **Not Yet Open** -- Hindi pa nagsisimula ang panahon ng pagpapatala. Bumalik pagkatapos ng petsa ng pagbubukas.
+- **Closed** -- Lumipas na ang deadline ng pagpapatala.
+- **Full** -- Naubos na ang lahat ng available na puwesto.
 
 :::tip
-Kung puno ang isang kaganapan, maaari mo pa ring masali ang **waitlist** kung pinagana ito ng iyong simbahan -- awtomatiko kang ie-email kapag may nabakanteng puwesto. Kung hindi, bumalik mamaya; maaaring magbukas ang mga puwesto kung may magkanselang miyembro.
+Kung puno ang isang event, maaari ka pa ring sumali sa **waitlist** kapag pinagana ito ng simbahan mo -- makakatanggap ka ng email nang awtomatiko kung magbukas ang isang puwesto. Kung hindi, bumalik na lang mamaya; maaaring magbukas ang mga puwesto kung may nagkansela.
 :::
 
-## Ang Kailangan Mo
+## Ano ang Kailangan Mo
 
-- Isang B1.church account (o maaari kang magrehistro bilang bisita)
-- Access sa B1.church website ng iyong simbahan
+- Isang B1.church account (o maaari kang magparehistro bilang bisita)
+- Access sa website ng B1.church ng simbahan mo
 
-## Alamin Pa
+## Matuto Pa
 
-- [Pagpaparehistro para sa mga Kaganapan](./registering) -- Hakbang-hakbang na gabay sa pag-sign up para sa isang kaganapan
-- [Aking mga Pagpaparehistro](./my-registrations) -- Tingnan ang iyong mga pagpaparehistro, magbayad ng balanse, mag-edit, o magkansela
-- [Paghiling ng mga Kaganapan at Silid](./requesting-events) -- Humiling ng kaganapan kasama ang mga silid at resources na kailangan nito
-- [Self Check-In](../checkin/self-checkin) -- Mag-check in kapag dumating ka sa kaganapan
+- [Registering for Events](./registering) -- Hakbang-hakbang na gabay sa pagpapatala para sa event
+- [My Registrations](./my-registrations) -- Tingnan ang mga pagpapatala mo, magbayad ng balanse, mag-edit, o magkansela
+- [Requesting Events & Rooms](./requesting-events) -- Humiling ng event kasama ang mga kuwarto at resource na kailangan nito
+- [Self Check-In](../checkin/self-checkin) -- Mag-check in pagdating mo sa event

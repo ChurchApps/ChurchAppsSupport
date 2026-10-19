@@ -57,7 +57,7 @@ I registranti scelgono le quantità durante l'iscrizione, e i totali contano ris
 
 Ogni codice mostra un conteggio **Usi** così puoi vedere quante volte è stato riscattato. I registranti ricevono feedback istantaneo quando applicano un codice -- inclusi messaggi chiari quando un codice è scaduto, non è ancora iniziato, o ha bisogno di più partecipanti.
 
-## Lista d'Attesa
+## Lista d'Attesa {#waitlist}
 
 Attiva **Abilita Lista d'Attesa** nella scheda Impostazioni di Registrazione. Quando l'evento raggiunge la capacità:
 
@@ -69,7 +69,7 @@ Attiva **Abilita Lista d'Attesa** nella scheda Impostazioni di Registrazione. Qu
 Le registrazioni promosse rimangono *in sospeso* fino a quando qualsiasi saldo viene pagato; pagare (o non avere nulla da pagare) le conferma.
 :::
 
-## Il Roster di Registrazione
+## Il Roster di Registrazione {#the-registration-roster}
 
 Apri un evento dalla pagina Registrazioni per vedere ogni registrazione. La tabella mostra **Nome**, **Membri**, **Tipo** (il tipo di ogni partecipante), **Pagato / Totale** (con un avvertimento di saldo quando denaro è ancora dovuto), **Stato**, e **Data**, più chip di conteggio per tipo sopra la tabella.
 

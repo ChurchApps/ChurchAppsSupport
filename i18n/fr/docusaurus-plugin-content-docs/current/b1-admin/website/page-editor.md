@@ -1,175 +1,188 @@
 ---
-title: "Utilisation de l'éditeur de page"
+title: "Utiliser l'éditeur de pages"
 ---
 
-# Utilisation de l'éditeur de page
+# Utiliser l'éditeur de pages
 
 <div class="article-intro">
 
-L'éditeur de page B1 est un constructeur visuel de glisser-déposer qui vous permet de concevoir vos pages de site web d'église sans écrire de code. Vous pouvez ajouter des sections et des blocs de contenu, personnaliser les styles, prévisualiser votre travail et annuler les modifications -- tout cela depuis votre navigateur.
+L'éditeur de pages de B1 est un outil de conception visuel par glisser-déposer qui vous permet de créer les pages de votre site d'église sans écrire de code. Vous pouvez ajouter des sections et des blocs de contenu, personnaliser les styles, prévisualiser votre travail et annuler des modifications, le tout depuis votre navigateur.
 
 </div>
 
 <div class="prereqs">
-<h4>Avant de commencer</h4>
+<h4>Before You Begin</h4>
 
-- Complétez la [configuration initiale](initial-setup) pour configurer votre site web
+- Suivez la [Configuration initiale](initial-setup) pour configurer votre site web
 - Créez au moins une page dans [Gestion des pages](managing-pages)
 - Vous avez besoin de la permission **content.edit** pour accéder à l'éditeur
 
 </div>
 
-## Ouverture de l'éditeur
+## Ouvrir l'éditeur
 
-1. Dans B1 Admin, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Site web** et cliquez sur **Pages**.
-2. Trouvez la page que vous souhaitez éditer dans le tableau Pages et cliquez sur **Éditer le contenu**.
+1. Dans B1 Admin, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Site Web** et cliquez sur **Pages**.
+2. Repérez la page à modifier dans le tableau des pages et cliquez sur **Modifier le contenu**.
 
-L'éditeur s'ouvre en mode plein écran. Le panneau de gauche affiche la structure de votre page et les éléments de contenu disponibles ; la zone centrale affiche un aperçu en direct de votre page.
+L'éditeur s'ouvre en plein écran. Le panneau de gauche affiche la structure de votre page et les éléments de contenu disponibles ; la zone centrale présente un aperçu en direct de votre page.
 
 :::info
-L'éditeur s'affiche toujours en mode clair, quel que soit le paramètre de thème B1 Admin. Cela garantit que l'aperçu correspond exactement à la façon dont votre page s'affichera aux visiteurs du site web.
+L'éditeur s'affiche toujours en mode clair, quel que soit le thème de B1 Admin, et utilise les polices de titre et de texte que vous avez choisies dans [Apparence](appearance). Cela garantit que l'aperçu correspond fidèlement à la façon dont votre page apparaîtra aux visiteurs du site.
 :::
 
-## Structure de page : sections et éléments
+## Structure de la page : sections et éléments
 
-Chaque page est construite à partir de deux niveaux :
+Chaque page est composée de deux niveaux :
 
-- **Sections** -- Les conteneurs de niveau supérieur qui divisent votre page en bandes horizontales (par exemple, une section héros, un bloc de contenu ou une bande de pied de page). Chaque page doit avoir au moins une section avant de pouvoir ajouter du contenu.
-- **Éléments** -- Les pièces de contenu individuelles placées à l'intérieur d'une section, telles que du texte, des images, des boutons, des cartes, des formulaires et des calendriers.
+- **Sections** -- Les conteneurs de premier niveau qui divisent votre page en bandes horizontales (par exemple, une section d'accueil, un bloc de contenu ou une bande de pied de page). Chaque page doit comporter au moins une section avant que vous ne puissiez ajouter du contenu.
+- **Éléments** -- Les contenus individuels placés dans une section, tels que du texte, des images, des boutons, des cartes, des formulaires et des calendriers.
 
-### Ajout d'une section
+### Ajouter une section
 
-1. Cliquez sur **Ajouter une section** (ou le bouton **+** en haut du panneau de gauche).
+1. Cliquez sur **Ajouter une section** (ou sur le bouton **+** en haut du panneau de gauche).
 2. Choisissez comment commencer :
-   - **À partir d'un modèle** — parcourez la galerie de modèles de sections organisée par catégorie (Héros, À propos, Services, Dons, etc.) et cliquez sur celui-ci pour l'insérer comme une section entièrement stylisée et pré-remplie. Vous pouvez personnaliser tout après son ajout.
-   - **Section vierge** — choisissez une mise en page colonnaire (simple, deux colonnes, trois colonnes, etc.) et construisez à partir de zéro.
-3. La nouvelle section apparaît dans l'aperçu. Cliquez dessus pour la sélectionner et configurez sa couleur de fond, son rembourrage et d'autres options de style.
+   - **À partir d'un modèle** — parcourez la galerie de modèles de sections, classés par catégorie (Accueil, À propos, Services, Dons, etc.), et cliquez sur l'un d'eux pour l'insérer comme section entièrement stylisée et préremplie. Vous pouvez tout personnaliser après l'ajout.
+   - **Section vierge** — choisissez une disposition en colonnes (une colonne, deux colonnes, trois colonnes, etc.) et construisez la section à partir de zéro.
+3. La nouvelle section apparaît dans l'aperçu. Cliquez dessus pour la sélectionner et configurer sa couleur de fond, son rembourrage et ses autres options de style.
 
-### Changement de la mise en page d'une section
+### Changer la disposition d'une section
 
-Vous avez déjà construit une section mais vous voulez une structure différente ? Utilisez le commutateur de mise en page sur cette section pour changer son arrangement de colonnes pour un autre de la galerie tout en gardant votre contenu existant et les éléments en place.
+Vous avez déjà construit une section mais souhaitez une autre structure ? Utilisez le sélecteur de disposition de cette section pour remplacer son agencement en colonnes par un autre de la galerie, tout en conservant vos contenus et éléments existants en place.
 
-### Ajout d'éléments à une section
+### Ajouter des éléments à une section
 
-1. Cliquez dans une section de l'aperçu pour la sélectionner.
+1. Cliquez à l'intérieur d'une section dans l'aperçu pour la sélectionner.
 2. Cliquez sur **Ajouter du contenu** et choisissez un type d'élément dans la liste :
-   - **Texte** -- En-têtes, paragraphes et texte enrichi
-   - **Image** -- Téléchargez ou liez à une photo
+   - **Texte** -- Titres, paragraphes et texte enrichi
+   - **Image** -- Importez une photo ou créez un lien vers une photo
    - **Bouton** -- Un lien d'appel à l'action cliquable
    - **Carte** -- Une image avec un titre et une description
    - **Formulaire** -- Intégrez un [formulaire](../forms/creating-forms) directement sur la page
-   - **Calendrier** -- Affiche un calendrier d'événements
-   - **FAQ** -- Blocs de questions et réponses de style accordéon
-   - **Vidéo** -- Intégrez une vidéo par URL
-   - **Navigateur de groupes** -- Un répertoire filtrable de tous les groupes d'église avec recherche optionnelle, filtre de catégorie et filtre d'étiquette
-   - **Caractéristique d'icône** -- Une icône avec un titre et une courte description, pour mettre en évidence les caractéristiques ou ministères
-   - **Galerie** -- Une grille multi-photos ou une mise en page maçonnerie
-   - **Témoignage** -- Une ou plusieurs citations avec le nom de l'auteur, le rôle et la photo
-   - **Icônes sociales** -- Des icônes liées pour les profils de réseaux sociaux de votre église
-   - **Compte à rebours** -- Un minuteur comptant à rebours jusqu'à une date ou une heure de service hebdomadaire
-   - **Statistiques** -- Une rangée de grands nombres avec des étiquettes (membres, années, campus)
-   - **Progression de la campagne** -- Une barre de progression en direct pour une campagne de dons, affichant le total collecté vers un objectif de fonds
-   - **Grille de personnel** -- Des cartes photo pour les membres d'un groupe ; le groupe doit avoir son option de **roster public** activée
-   - **Horaires de service** -- L'horaire de service de vos campus, tiré automatiquement de la configuration de la participation
-   - **Sermons** -- Votre bibliothèque de sermons, sous forme de navigateur complet ou une mise en page grille, liste ou dernier en vedette
+   - **Calendrier** -- Affichez un calendrier d'événements
+   - **FAQ** -- Blocs de questions et réponses en accordéon
+   - **Vidéo** -- Intégrez une vidéo à partir de son URL
+   - **Répertoire des groupes** -- Un annuaire filtrable de tous les groupes de l'église, avec recherche facultative, filtre par catégorie et filtre par étiquette
+   - **Fonctionnalité avec icône** -- Une icône avec un titre et une courte description, pour mettre en avant une fonctionnalité ou un ministère
+   - **Galerie** -- Une grille de plusieurs photos ou une disposition en mosaïque
+   - **Témoignage** -- Une ou plusieurs citations avec le nom, le rôle et la photo de l'auteur
+   - **Icônes sociales** -- Icônes liées aux profils de réseaux sociaux de votre église
+   - **Compte à rebours** -- Un minuteur qui décompte jusqu'à une date ou un horaire de culte hebdomadaire
+   - **Statistiques** -- Une rangée de grands chiffres avec des libellés (membres, années, campus)
+   - **Progression de campagne** -- Une barre de progression en direct pour une campagne de dons, indiquant le total recueilli par rapport à l'objectif d'un fonds
+   - **Grille du personnel** -- Cartes avec photo pour les membres d'un groupe ; le groupe doit avoir l'option **liste publique** activée
+   - **Horaires des cultes** -- Le calendrier des cultes de vos campus, extrait automatiquement de la configuration de la présence
+   - **Sermons** -- Votre bibliothèque de sermons, sous forme de navigateur complet ou de grille, de liste ou de mise en avant du plus récent
    - **Carte** -- Une carte intégrée centrée sur l'adresse de votre église
-   - **Tableau** -- Une grille simple de lignes et colonnes pour le contenu tabulaire
-   - **Texte avec photo** -- Texte et image côte à côte
-   - **Logo** -- Le logo de votre église, tiré de l'[Apparence](appearance)
+   - **Tableau** -- Une grille simple de lignes et de colonnes pour du contenu tabulaire
+   - **Texte avec photo** -- Du texte et une image côte à côte
+   - **Logo** -- Le logo de votre église, extrait de [Apparence](appearance)
    - **Diffusion en direct** -- Votre lecteur de diffusion en direct, intégré directement sur la page
-   - **Podcast** -- Une liste d'épisodes tirées d'une URL de flux RSS de podcast externe que vous fournissez, avec des paramètres pour le nombre d'épisodes à afficher et s'il faut afficher les dates et descriptions. Ceci est pour mettre en vedette n'importe quel flux de podcast sur votre site ; pour publier vos propres sermons en tant que podcast, consultez [Gestion des sermons](../sermons/managing-sermons.md#your-podcast-feed) à la place.
-   - **Donation** -- Un bouton de don ou un formulaire de donation intégré
-   - **HTML** -- Votre propre HTML brut, pour les cas d'usage avancés comme l'intégration d'un widget tiers (voir [Utilisation de l'élément HTML](#using-the-html-element))
-   - **iFrame** -- Intégrez du contenu externe par URL
-3. Configurez l'élément à l'aide du panneau de paramètres qui apparaît.
+   - **Podcast** -- Une liste d'épisodes extraite de l'URL d'un flux RSS de podcast externe que vous fournissez, avec des réglages pour le nombre d'épisodes affichés et pour afficher ou non les dates et les descriptions. Cet élément sert à mettre en avant n'importe quel flux de podcast sur votre site ; pour publier vos propres sermons en tant que podcast, voir plutôt [Gérer les sermons](../sermons/managing-sermons.md#your-podcast-feed).
+   - **Don** -- Un bouton de don ou un formulaire de don intégré
+   - **HTML** -- Votre propre HTML brut, pour les cas d'usage avancés, comme l'intégration d'un widget tiers (voir [Utiliser l'élément HTML](#using-the-html-element))
+   - **iFrame** -- Intégrez un contenu externe à partir de son URL
+3. Configurez l'élément à l'aide du panneau de réglages qui apparaît.
 
-### Utilisation de l'élément HTML {#using-the-html-element}
+### Utiliser l'élément HTML {#using-the-html-element}
 
 L'élément **HTML** comporte deux zones :
 
-- **Contenu HTML** -- Le balisage à afficher sur la page. Toutes les balises `<script>` que vous incluez ici s'exécutent sur votre site en direct.
-- **JavaScript (sans la balise script)** -- Le code de script exécuté au chargement de la page. Vous pouvez également coller ici l'extrait d'intégration d'un fournisseur avec ses balises `<script>`, et il s'exécutera sur le site en direct.
+- **Contenu HTML** -- Le balisage à afficher sur la page. Toutes les balises `<script>` que vous y incluez s'exécutent sur votre site en production.
+- **JavaScript (sans la balise script)** -- Code de script exécuté au chargement de la page. Vous pouvez aussi coller ici l'extrait d'intégration d'un fournisseur avec ses balises `<script>`, et il s'exécutera sur le site en production.
 
-Si vous collez uniquement une adresse web (comme un lien vers une image) dans la zone JavaScript, la zone devient rouge avec l'avertissement *« Ceci est une adresse web, pas du JavaScript. »* Une adresse seule dans cette zone ne fait rien. Pour afficher une image, utilisez un élément **Image** ou placez `<img src="...">` dans **Contenu HTML**.
+Si vous collez uniquement une adresse web (comme un lien d'image) dans la zone JavaScript, la zone devient rouge avec l'avertissement *« Ceci est une adresse web, pas du JavaScript. »* Une adresse seule dans cette zone ne fait rien. Pour afficher une image, utilisez un élément **Image** ou placez `<img src="...">` dans **Contenu HTML**.
 
-### Réorganisation du contenu
+### Utiliser l'élément Calendrier {#using-the-calendar-element}
 
-Faites glisser les sections ou les éléments à l'aide de l'icône de poignée (six points) sur le côté gauche de chaque élément pour les réorganiser. Vous pouvez faire glisser des éléments dans une section ou les déplacer entre les sections.
+L'élément **Calendrier** affiche les événements de l'un de vos calendriers :
 
-## Stylisation de votre page
+1. Sous **Sélectionner**, choisissez **Calendrier de groupe** (les événements d'un seul groupe -- la liste affiche les groupes dont vous êtes membre) ou **Calendrier personnalisé** (un calendrier créé sous **Calendriers** ; voir [Calendrier personnalisé](../calendars/curated-calendar)).
+2. Sous **Sélectionner un calendrier**, choisissez le groupe ou le calendrier.
+3. Sous **Affichage**, choisissez le mode d'affichage :
+   - **Calendrier mensuel** -- Une grille mensuelle que les visiteurs peuvent parcourir.
+   - **Événements à venir** -- Une grille de vignettes pour les 12 prochains événements, un événement récurrent étant affiché une seule fois à sa prochaine date. Chaque vignette affiche la photo de l'événement (ou son titre sur la couleur sombre de votre thème s'il n'a pas de photo), un badge de date, le jour et l'heure, ainsi que la première ligne de sa description. Un bouton **S'abonner** au-dessus des vignettes permet aux visiteurs de copier le lien ICS du calendrier ou de le télécharger.
+4. Pour n'afficher que certains événements, saisissez une étiquette dans **Seulement les événements avec l'étiquette** -- par exemple, `jeunes`. Seuls les événements dont les **Étiquettes** contiennent ce mot apparaissent. Laissez ce champ vide pour afficher tous les événements. Les étiquettes se définissent sur chaque événement ; voir [Ajouter et modifier des événements](../calendars/creating-calendars.md#adding-and-editing-events).
+
+Dans les deux modes, un clic sur un événement ouvre sa propre page sur votre site web. La page de l'événement affiche la photo, le titre, la date et l'heure et la description de l'événement, ainsi qu'un encart avec **Quand** (y compris le modèle de répétition pour un événement récurrent) et **Où** (les salles réservées pour l'événement). Elle comporte également un bouton **S'inscrire à cet événement** lorsque les inscriptions sont activées, et un lien **Ajouter à mon calendrier** qui télécharge l'événement sous forme de fichier de calendrier. La page est conçue pour que les moteurs de recherche puissent afficher la date et les détails de l'événement dans leurs résultats.
+
+### Réorganiser le contenu
+
+Faites glisser les sections ou les éléments à l'aide de l'icône de poignée (six points) à gauche de chaque élément pour les réordonner. Vous pouvez déplacer des éléments à l'intérieur d'une section ou les transférer d'une section à une autre.
+
+## Mettre en forme votre page
 
 ### Styles de section
 
-Cliquez sur n'importe quelle section pour ouvrir son panneau de style. Vous pouvez définir :
+Cliquez sur n'importe quelle section pour ouvrir son panneau de styles. Vous pouvez définir :
 
-- **Arrière-plan** -- Couleur unie, dégradé ou image. Lorsque vous utilisez un fond d'image, un sélecteur de **point focal** vous permet de cliquer pour définir quelle partie de l'image reste centrée à mesure que la section s'adapte, et une option de couleur d'**superposition** vous permet d'ajouter une teinte semi-transparente sur l'image pour améliorer la lisibilité du texte.
-- **Rembourrage** -- Espacement supérieur et inférieur à l'intérieur de la section
+- **Arrière-plan** -- Couleur unie, dégradé ou image. Avec un arrière-plan image, un sélecteur de **Point focal** vous permet de cliquer pour définir la partie de l'image qui reste centrée lorsque la section se redimensionne, et une option de couleur de **Superposition** vous permet d'ajouter une teinte semi-transparente sur l'image pour améliorer la lisibilité du texte.
+- **Rembourrage** -- Espacement haut et bas à l'intérieur de la section
 - **Largeur** -- Pleine largeur ou centrée/contenue
-- **Séparateurs** -- Séparateurs de forme décoratifs (onde, inclinaison, courbe, triangle et plus) sur le bord supérieur ou inférieur de la section, avec les options de couleur, hauteur et retournement
+- **Séparateurs** -- Formes décoratives (vague, oblique, courbe, triangle, et autres) sur le bord supérieur ou inférieur de la section, avec couleur, hauteur et options de retournement
 
 ### Styles d'élément
 
-Cliquez sur n'importe quel élément pour ouvrir son panneau de style. Les options courantes incluent la taille de la police, la couleur, l'alignement, la marge et le rembourrage. Pour les images, vous pouvez définir du texte alt et des cibles de lien.
+Cliquez sur n'importe quel élément pour ouvrir son panneau de styles. Les options courantes incluent la taille de police, la couleur, l'alignement, la marge et le rembourrage. Pour les images, vous pouvez définir le texte alternatif et les cibles des liens.
 
 ### CSS personnalisé
 
-Pour une stylisation avancée, chaque section et élément a un champ **CSS personnalisé** où vous pouvez écrire vos propres règles CSS. Ceux-ci sont limités à cet élément, afin qu'ils n'affectent pas accidentellement le reste de la page.
+Pour une mise en forme avancée, chaque section et chaque élément possède un champ **CSS personnalisé** dans lequel vous pouvez écrire vos propres règles CSS. Ces règles sont limitées à cet élément et n'affectent donc pas involontairement le reste de la page.
 
 :::tip
-Si vous avez besoin d'appliquer des styles sur l'ensemble de votre site -- par exemple, une police personnalisée ou une couleur globale -- utilisez plutôt les paramètres d'[Apparence](appearance) au lieu du CSS personnalisé sur des pages individuelles.
+Si vous devez appliquer des styles à l'ensemble de votre site -- comme une police personnalisée ou une couleur globale -- utilisez plutôt les réglages d'[Apparence](appearance) que le CSS personnalisé sur des pages individuelles.
 :::
 
-## Aperçu de votre page
+## Prévisualiser votre page
 
-Utilisez les contrôles d'aperçu de la barre d'outils pour vérifier comment votre page s'affiche à différentes tailles d'écran :
+Utilisez les commandes d'aperçu dans la barre d'outils pour vérifier l'affichage de votre page selon différentes tailles d'écran :
 
-- **Bureau** -- Vue de navigateur pleine largeur
-- **Mobile** -- Vue étroite de la taille du téléphone
+- **Ordinateur** -- Vue pleine largeur du navigateur
+- **Mobile** -- Vue étroite au format téléphone
 
-Pour voir la page en direct exactement comme les visiteurs, revenez à la liste des pages et cliquez sur le chemin de la page. Elle s'ouvre dans un nouvel onglet du navigateur.
+Pour voir la page en direct exactement comme la verront les visiteurs, revenez à la liste des pages et cliquez sur le chemin de la page. Elle s'ouvre dans un nouvel onglet du navigateur.
 
-## Vérification de l'accessibilité
+## Vérifier l'accessibilité
 
-Cliquez sur l'icône **Accessibilité** dans la barre d'outils pour exécuter une vérification rapide des problèmes courants -- images manquantes texte alt, contraste de couleur faible ou en-têtes hors de l'ordre. Chaque problème renvoie directement à l'élément qui nécessite une attention pour que vous puissiez le corriger sur place.
+Cliquez sur l'icône **Accessibilité** dans la barre d'outils pour lancer une vérification rapide des problèmes courants : images sans texte alternatif, contraste de couleurs insuffisant ou titres dans le désordre. Chaque problème renvoie directement à l'élément concerné afin que vous puissiez le corriger sur place.
 
-## Annulation des modifications
+## Annuler des modifications
 
-L'éditeur suit automatiquement votre historique d'édition. Utilisez les boutons de la barre d'outils ou les raccourcis clavier pour naviguer :
+L'éditeur enregistre automatiquement l'historique de vos modifications. Utilisez les boutons de la barre d'outils ou les raccourcis clavier pour naviguer :
 
-- **Annuler** (Ctrl+Z / Cmd+Z) -- Annulez votre dernière action
-- **Refaire** (Ctrl+Maj+Z ou Ctrl+Y / Cmd+Maj+Z) -- Réappliquez une action annulée
+- **Annuler** (Ctrl+Z / Cmd+Z) -- Annule votre dernière action
+- **Rétablir** (Ctrl+Maj+Z ou Ctrl+Y / Cmd+Maj+Z) -- Réapplique une action annulée
 
-Vous pouvez également restaurer la page vers un instantané antérieur. Cliquez sur **Voir l'historique** dans la barre d'outils pour voir une liste des instantanés enregistrés avec descriptions, et cliquez sur n'importe quelle entrée pour restaurer à ce point.
+Vous pouvez aussi restaurer la page à un instantané antérieur. Cliquez sur **Voir l'historique** dans la barre d'outils pour afficher la liste des instantanés enregistrés avec leurs descriptions, puis cliquez sur une entrée pour revenir à ce point.
 
 :::warning
-La restauration d'un instantané remplace le contenu de votre page actuelle par la version d'instantané. Cela ne peut pas être annulé avec le bouton d'annulation standard. Enregistrez un instantané de votre état actuel avant de restaurer une ancienne version si vous souhaitez conserver l'option de retour.
+Restaurer un instantané remplace le contenu actuel de votre page par la version de l'instantané. Cette action ne peut pas être annulée avec le bouton d'annulation standard. Enregistrez un instantané de votre état actuel avant de restaurer une ancienne version si vous voulez pouvoir revenir en arrière.
 :::
 
-## Enregistrement et publication
+## Enregistrer et publier
 
-Les modifications sont enregistrées automatiquement à mesure que vous travaillez. Un indicateur d'état dans la barre d'outils indique si vos modifications ont été enregistrées.
+Les modifications sont enregistrées automatiquement pendant votre travail. Un indicateur d'état dans la barre d'outils indique si vos modifications ont été enregistrées.
 
-### État de brouillon et publié
+### État brouillon et publié
 
-Les pages peuvent avoir un état **publié**, qui contrôle quand les visiteurs voient vos modifications. La barre d'outils affiche une puce d'état indiquant l'état actuel :
+Les pages peuvent avoir un état **publié**, qui détermine quand les visiteurs voient vos modifications. La barre d'outils affiche une pastille d'état indiquant l'état actuel :
 
-- **En direct à l'enregistrement** -- La page n'utilise pas un flux de travail de publication. Chaque modification enregistrée est mise en direct immédiatement. C'est le paramètre par défaut pour les nouvelles pages.
-- **Modifications non publiées** -- La page a été publiée auparavant, mais vous avez fait des modifications depuis la dernière publication. Les visiteurs voient toujours la version précédemment publiée.
-- **Publié** -- La page est en direct et votre contenu enregistré correspond à ce que les visiteurs voient.
+- **Actif dès l'enregistrement** -- La page n'utilise pas de flux de publication. Chaque modification enregistrée est mise en ligne immédiatement. C'est la valeur par défaut des nouvelles pages.
+- **Modifications non publiées** -- La page a déjà été publiée, mais vous avez effectué des modifications depuis la dernière publication. Les visiteurs voient toujours la version publiée précédemment.
+- **Publiée** -- La page est en ligne et votre contenu enregistré correspond à ce que voient les visiteurs.
 
-Pour publier vos modifications, cliquez sur le bouton **Publier** dans la barre d'outils. La page devient en direct immédiatement.
+Pour publier vos modifications, cliquez sur le bouton **Publier** dans la barre d'outils. La page est mise en ligne immédiatement.
 
-Pour revenir à la dernière version publiée sans affecter ce que les visiteurs voient, ouvrez le menu de débordement (⋮) et cliquez sur **Annuler les modifications non publiées**.
+Pour revenir à la dernière version publiée sans affecter ce que voient les visiteurs, ouvrez le menu de débordement (⋮) et cliquez sur **Abandonner les modifications non publiées**.
 
-Pour arrêter d'utiliser le flux de publication, ouvrez le menu de débordement et cliquez sur **Désactiver la publication**. Les modifications sont alors à nouveau mises en direct immédiatement.
+Pour cesser d'utiliser le flux de publication, ouvrez le menu de débordement et cliquez sur **Désactiver la publication**. Les modifications seront alors à nouveau mises en ligne immédiatement.
 
 :::tip
-Utilisez le flux de travail brouillon/publication lorsque vous souhaitez préparer une page -- par exemple, pour un événement à venir -- et ne la mettez en direct que au moment opportun. Construisez et prévisualisez la page, puis cliquez sur Publier lorsque vous êtes prêt.
+Utilisez le flux brouillon/publication lorsque vous voulez préparer une page -- par exemple pour un événement à venir -- et ne la mettre en ligne qu'au bon moment. Créez et prévisualisez la page, puis cliquez sur Publier lorsque vous êtes prêt.
 :::
 
 ## Articles connexes
 
-- [Gestion des pages](managing-pages) -- Créez des pages, définissez des URL et gérez la navigation du site
-- [Apparence](appearance) -- Définissez les couleurs, polices et image de marque à l'échelle du site
-- [Fichiers](files) -- Téléchargez les images et documents à utiliser dans l'éditeur
-- [Créer des formulaires](../forms/creating-forms) -- Créez des formulaires que vous pouvez intégrer sur des pages
+- [Gestion des pages](managing-pages) -- Créer des pages, définir les URL et gérer la navigation du site
+- [Apparence](appearance) -- Définir les couleurs, les polices et l'image de marque du site
+- [Fichiers](files) -- Importer des images et des documents à utiliser dans l'éditeur
+- [Créer des formulaires](../forms/creating-forms) -- Créer des formulaires à intégrer sur les pages

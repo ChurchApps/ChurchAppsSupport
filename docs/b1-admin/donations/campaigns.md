@@ -41,7 +41,7 @@ Each campaign row shows:
 - **Given** — the total amount actually donated to this campaign's fund during the campaign window
 - **Progress** — a bar and percentage showing how far toward your goal you have come
 
-Click a campaign's name to open the detail view. It shows the percentage of the goal reached and lists individual pledges with each donor's pledged and given amounts and a status (**Not Started**, **In Progress**, **Fulfilled**, **Beyond Pledged**, or **Non-Pledged** for donors who gave without pledging). Click **Export** at the top of the detail view to download the pledge list as a CSV.
+Click a campaign's name to open the detail view. It shows the percentage of the goal reached and lists individual pledges with each donor's pledged and given amounts and a status (**Not Started**, **In Progress**, **Fulfilled**, **Beyond Pledged**, or **Non-Pledged** for donors who gave without pledging). Donors are listed by last name, then first name; click a column header to sort by that column instead. Click **Export** at the top of the detail view to download the pledge list as a CSV.
 
 ## Adding Pledges
 

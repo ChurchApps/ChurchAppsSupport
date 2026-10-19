@@ -6,75 +6,75 @@ title: "B1 Mobile"
 
 <div class="article-intro">
 
-B1 Mobile ist die primäre Mitglieder-seitige Mobile-App für ChurchApps, gebaut mit React Native und Expo. Es ermöglicht Gemeindeglieder, Verzeichnisse anzuzeigen, auf Spenden zuzugreifen, Anwesenheit zu überprüfen, Benachrichtigungen zu empfangen und mit ihrer Gemeinde-Gemeinschaft zu interagieren.
+B1 Mobile ist die wichtigste mobile App für Mitglieder von ChurchApps, entwickelt mit React Native und Expo. Mit ihr können Kirchenmitglieder Verzeichnisse einsehen, auf Spenden zugreifen, die Anwesenheit prüfen, Benachrichtigungen erhalten und mit ihrer Kirchengemeinde in Kontakt treten.
 
 </div>
 
 <div class="prereqs">
-<h4>Vor dem Start</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Installieren Sie **Node.js** und **Expo CLI** — siehe [Voraussetzungen](../setup/prerequisites)
-- Installieren Sie **Android Studio** (für Android-Emulator) oder **Xcode** (für iOS-Simulator)
-- Konfigurieren Sie Ihr API-Ziel (Staging oder lokal) — siehe [Umgebungsvariablen](../setup/environment-variables)
+- Installieren Sie **Node.js** und die **Expo CLI** — siehe [Voraussetzungen](../setup/prerequisites)
+- Installieren Sie **Android Studio** (für den Android-Emulator) oder **Xcode** (für den iOS-Simulator)
+- Konfigurieren Sie Ihr API-Ziel (Demo oder lokal) — siehe [Umgebungsvariablen](../setup/environment-variables)
 
 </div>
 
-## Setup
+## Einrichtung
 
-1. Repository klonen:
+1. Klonen Sie das Repository:
 
    ```bash
    git clone https://github.com/ChurchApps/B1Mobile.git
    ```
 
-2. Abhängigkeiten installieren:
+2. Installieren Sie die Abhängigkeiten:
 
    ```bash
    cd B1Mobile && npm install
    ```
 
-3. Umgebungsvariablen konfigurieren — Sample-Datei kopieren und API-Endpoints aktualisieren:
+3. Konfigurieren Sie die Umgebungsvariablen — kopieren Sie die Beispieldatei und aktualisieren Sie die API-Endpunkte:
 
    ```bash
    cp dotenv.sample.txt .env
    ```
 
-4. Expo Dev-Server starten:
+4. Starten Sie den Expo-Entwicklungsserver:
 
    ```bash
    npm start
    ```
 
 :::tip
-Sie können die **Expo Go**-App auf einem physischen Gerät für schnelle Tests nutzen, ohne Android Studio oder Xcode einzurichten.
+Für schnelle Tests auf einem physischen Gerät können Sie die App **Expo Go** verwenden, ohne Android Studio oder Xcode einzurichten.
 :::
 
 ## Umgebungsvariablen
 
 | Variable | Beschreibung |
 |----------|-------------|
-| `STAGE` | Umgebungsstadium (z.B., `dev`, `staging`, `prod`) |
-| `CONTENT_ROOT` | Root-URL für Content-Lieferung |
-| `MEMBERSHIP_API` | Membership-API-Endpoint |
-| `MESSAGING_API` | Messaging-API-Endpoint |
-| `ATTENDANCE_API` | Attendance-API-Endpoint |
-| `GIVING_API` | Giving-API-Endpoint |
-| `DOING_API` | Doing-API-Endpoint |
-| `CONTENT_API` | Content-API-Endpoint |
-| `LESSONS_ROOT` | Root-URL für Lessons-Content |
+| `STAGE` | Umgebungsstufe (z. B. `dev`, `staging`, `prod`) |
+| `CONTENT_ROOT` | Basis-URL für die Auslieferung von Inhalten |
+| `MEMBERSHIP_API` | Endpunkt der Membership-API |
+| `MESSAGING_API` | Endpunkt der Messaging-API |
+| `ATTENDANCE_API` | Endpunkt der Attendance-API |
+| `GIVING_API` | Endpunkt der Giving-API |
+| `DOING_API` | Endpunkt der Doing-API |
+| `CONTENT_API` | Endpunkt der Content-API |
+| `LESSONS_ROOT` | Basis-URL für Lektionsinhalte |
 
 ## Wichtige Befehle
 
 | Befehl | Beschreibung |
 |---------|-------------|
-| `npm start` | Expo Dev-Server starten |
-| `npm run android` | Auf Android-Emulator ausführen |
-| `npm run ios` | Auf iOS-Simulator ausführen |
+| `npm start` | Expo-Entwicklungsserver starten |
+| `npm run android` | Auf dem Android-Emulator ausführen |
+| `npm run ios` | Auf dem iOS-Simulator ausführen |
 | `npm run test` | Tests ausführen (Jest) |
 
-## Production-Builds
+## Produktions-Builds
 
-Vor Erstellung eines Production-Builds müssen Versionsnummern in allen folgenden Dateien aktualisiert werden:
+Bevor Sie einen Produktions-Build erstellen, aktualisieren Sie die Versionsnummern in all diesen Dateien:
 
 - `package.json`
 - `app.config.js`
@@ -87,7 +87,7 @@ Vor Erstellung eines Production-Builds müssen Versionsnummern in allen folgende
 npm run build:android
 ```
 
-Dies nutzt EAS Build, um die Android-Binärdatei zu erstellen.
+Dies verwendet EAS Build, um die Android-Binärdatei zu erstellen.
 
 ### iOS
 
@@ -97,17 +97,17 @@ eas build --platform ios --profile production
 
 ### OTA-Updates
 
-Um ein Over-the-Air-Update zu pushen (ohne App-Store-Review):
+Um ein Over-the-Air-Update zu veröffentlichen (ohne Prüfung durch den App Store):
 
 ```bash
 npm run update:production
 ```
 
 :::info
-OTA-Updates sind ideal für JavaScript-Only-Änderungen. Wenn Sie Native-Code oder Abhängigkeiten modifizieren, müssen Sie stattdessen einen vollständigen Store-Build submitten.
+OTA-Updates eignen sich ideal für reine JavaScript-Änderungen. Wenn Sie nativen Code oder Abhängigkeiten ändern, müssen Sie stattdessen einen vollständigen Store-Build einreichen.
 :::
 
 ## Verwandte Artikel
 
-- **[Mobile-Deployment](../deployment/mobile)** — Vollständiger Leitfaden zum Bauen, Submitten und Deployen von Mobile-Apps
-- **[Umgebungsvariablen](../setup/environment-variables)** — Vollständige Referenz für Mobile-Umgebungskonfiguration
+- **[Mobile Bereitstellung](../deployment/mobile)** — Vollständige Anleitung zum Erstellen, Einreichen und Veröffentlichen mobiler Apps
+- **[Umgebungsvariablen](../setup/environment-variables)** — Vollständige Referenz zur Konfiguration der mobilen Umgebung

@@ -44,5 +44,5 @@ Key characteristics:
 | Slack Community | [Join Slack](https://join.slack.com/t/livechurchsolutions/shared_invite/zt-i88etpo5-ZZhYsQwQLVclW12DKtVflg) |
 
 :::tip
-The fastest way to start contributing is to pick a web app (like B1Admin), point it at the **staging APIs**, and begin making frontend changes. No database or API setup required.
+The fastest way to start contributing is to pick a web app (like B1Admin), point it at the shared **demo APIs**, and begin making frontend changes. No database or API setup required.
 :::

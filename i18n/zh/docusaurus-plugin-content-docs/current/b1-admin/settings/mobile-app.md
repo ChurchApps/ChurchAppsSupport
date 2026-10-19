@@ -77,7 +77,7 @@ title: "移动应用设置"
 因为最低年龄检查依赖于出生日期，请确保填写你的教会中儿童的出生日期。此设置属于同一儿童安全系列，如同[检查入场安全控制](../attendance/checkin-safety.md)。
 :::
 
-### 主屏幕登录提示
+### 主屏幕登录提示 {#home-screen-sign-in-prompt}
 
 在登录前打开应用的[主屏幕](/docs/b1-church/getting-started/navigating#home)的访客看到一个简短的提示 -- 默认情况下，*"登录以查看你的小组、捐赠等。"* -- 旁边是**登录**按钮。同一成员门户页面 (`/mobile/b1-mobile`) 上的**主屏幕登录提示**设置让你更改它：
 

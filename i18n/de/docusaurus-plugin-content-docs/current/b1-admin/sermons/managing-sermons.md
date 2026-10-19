@@ -56,7 +56,7 @@ Jeder Predigteintrag kann enthalten:
 - **Video-/Audio-Links** -- URLs zu den Predigtenmedien auf YouTube, Vimeo, Facebook oder einem benutzerdefinierten Host
 - **Audio-Datei-URL (für Podcast)** -- Ein direkter Link zu einer MP3/M4A-Datei für diese Predigt. Fügen Sie entweder eine URL ein oder klicken Sie auf **Audio hochladen**, um eine Datei hochzuladen und sie automatisch auszufüllen. Nur Predigten mit diesem Feld (oder einem direkten Video-Dateilink) sind in Ihrem Podcast-Feed enthalten.
 
-## Ihr Podcast-Feed
+## Ihr Podcast-Feed {#your-podcast-feed}
 
 Sobald mindestens eine Predigt eine Audio- oder Videodatei angehängt hat, generiert B1 Admin automatisch einen Podcast-RSS-Feed für Ihre Kirche -- es ist nichts zu aktivieren. Finden Sie ihn im Panel **Podcast-Feed** unterhalb der Predigtenlist: Klicken Sie auf das Kopiersymbol, um die Feed-URL zu kopieren, und senden Sie diese URL dann an Apple Podcasts, Spotify oder ein anderes Podcast-Verzeichnis.
 

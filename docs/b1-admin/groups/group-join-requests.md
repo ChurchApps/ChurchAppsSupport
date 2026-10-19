@@ -97,7 +97,7 @@ The join request system automatically sends notifications:
 - **When a request is approved** -- The requester receives a confirmation
 - **When a request is declined** -- The requester receives a notification with any decline reason
 
-Notifications appear in the user's notification center on B1.church and in the mobile app.
+Notifications appear in the user's notification center on B1.church and in the mobile app. In B1 Admin's notification bell, clicking a join-request notification (or its **View Details**) opens the group on your church's B1.church site in a new tab.
 
 ## Managing Requests from the Member Side
 

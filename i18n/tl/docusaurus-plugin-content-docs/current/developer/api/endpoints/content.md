@@ -1,33 +1,34 @@
 ---
-title: "Mga Endpoint ng Content"
+title: "Mga Content Endpoint"
 ---
 
-# Mga Endpoint ng Content
+# Mga Content Endpoint
 
 <div class="article-intro">
 
-Ang Content module ay namamahala sa mga pahina ng website, mga seksyon, mga elemento, mga bloke, mga post sa blog, mga redirect, mga sermon, mga playlist, mga streaming service, mga kaganapan, mga customized na kalendaryo, mga file, mga gallery, mga Bible translation at mga verse lookup, mga kanta, mga arrangement, mga pandaigdigang istilo, mga stock photo, at mga setting. Ito ang pinakamalaking module sa API at nagbibigay-lakas sa CMS, media/streaming, worship planning, at mga feature ng Bible sa lahat ng ChurchApps applications.
+Pinamamahalaan ng Content module ang mga pahina ng website, seksyon, elemento, block, blog post, redirect, sermon, playlist, streaming service, event, curated calendar, file, gallery, Bible translation at verse lookup, awit, arrangement, global style, stock photo, at settings. Ito ang pinakamalaking module sa API at pinapagana nito ang CMS, media/streaming, pagpaplano ng pagsamba, at mga feature ng Bible sa lahat ng ChurchApps application.
 
 </div>
 
-**Pangunahing landas:** `/content`
+**Base path:** `/content`
 
 ## Mga Pahina
 
-Pangunahing landas: `/content/pages`
+Base path: `/content/pages`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:churchId/tree?url=&id=` | Public | — | Mag-load ng buong puno ng pahina (mga seksyon, mga elemento, mga bloke) ayon sa URL o ID. Tinatanggal ang mga internal ID kapag kinuha sa pamamagitan ng URL. Ang mga pagkuha batay sa URL ay nagpapatakda ng `pages.visibility` — isang gated na pahina ay nagbabalik ng `{ restricted: true, visibility }` maliban kung ang (opsyonal) JWT ay sumasagot sa gate |
-| GET | `/public/:churchId` | Public | — | Ilista ang mga public na pahina (`url`, `title`, `metaDescription`); tanging `visibility = everyone` lamang |
-| GET | `/:id` | JWT | — | Makuha ang isang pahina ayon sa ID |
-| GET | `/` | JWT | — | Ilista ang lahat ng mga pahina para sa simbahan |
-| POST | `/duplicate/:id` | JWT | Content.Edit | Duplicate ang isang pahina kasama ang lahat ng mga seksyon at elemento |
-| POST | `/temp/ai` | JWT | Content.Edit | Mag-save ng AI-generated na pahina (pahina, mga seksyon, at mga elemento sa isang tawag) |
-| POST | `/` | JWT | Content.Edit | Lumikha o mag-update ng mga pahina (batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Tanggalin ang isang pahina |
+| GET | `/:churchId/tree?url=&id=` | Publiko | — | I-load ang buong puno ng pahina (mga seksyon, elemento, block) ayon sa URL o ID. Tinatanggal ang mga internal ID kapag kinuha sa pamamagitan ng URL. Ipinapatupad ng mga URL-based fetch ang `pages.visibility` -- ang pahinang may gate ay nagbabalik ng `{ restricted: true, visibility }` maliban kung natutugunan ng (opsyonal) JWT ang gate |
+| GET | `/public/:churchId` | Publiko | — | Ilista ang mga pampublikong pahina (`url`, `title`, `metaDescription`); `visibility = everyone` lamang |
+| GET | `/:id` | JWT | — | Kunin ang pahina ayon sa ID |
+| GET | `/` | JWT | — | Ilista ang lahat ng pahina ng simbahan |
+| POST | `/duplicate/:id` | JWT | Content.Edit | Kopyahin ang pahina kasama ang lahat ng seksyon at elemento |
+| POST | `/temp/ai` | JWT | Content.Edit | I-save ang pahinang ginawa ng AI (pahina, seksyon, at elemento sa iisang tawag) |
+| POST | `/importTree` | JWT | Content.Edit | Gumawa ng pahina mula sa nested na puno (`title`, `url`, `sections[].elements[]…`). Palaging nagpapasok sa ilalim ng simbahan ng tumatawag; hindi pinapansin ang mga id sa body. Dapat kasama ng mga row ang kanilang `column` na children. Pinakamarami 30 seksyon / 500 elemento |
+| POST | `/` | JWT | Content.Edit | Gumawa o mag-update ng mga pahina (batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Burahin ang isang pahina |
 
-### Halimbawa: I-load ang Page Tree
+### Halimbawa: Pag-load ng Puno ng Pahina
 
 ```
 GET /content/pages/abc-church-id/tree?url=/about
@@ -51,137 +52,137 @@ GET /content/pages/abc-church-id/tree?url=/about
 
 ## Mga Seksyon
 
-Pangunahing landas: `/content/sections`
+Base path: `/content/sections`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Makuha ang isang seksyon ayon sa ID |
-| POST | `/duplicate/:id?convertToBlock=` | JWT | Content.Edit | Duplicate ang isang seksyon o i-convert ito sa isang reusable block |
-| POST | `/` | JWT | Content.Edit | Lumikha o mag-update ng mga seksyon (batch). Auto-update ang sort order |
-| DELETE | `/:id` | JWT | Content.Edit | Tanggalin ang isang seksyon (auto-update ng sort order) |
+| GET | `/:id` | JWT | — | Kunin ang seksyon ayon sa ID |
+| POST | `/duplicate/:id?convertToBlock=` | JWT | Content.Edit | Kopyahin ang seksyon o gawing reusable na block |
+| POST | `/` | JWT | Content.Edit | Gumawa o mag-update ng mga seksyon (batch). Awtomatikong ina-update ang sort order |
+| DELETE | `/:id` | JWT | Content.Edit | Burahin ang seksyon (awtomatikong ina-update ang sort order) |
 
 ## Mga Elemento
 
-Pangunahing landas: `/content/elements`
+Base path: `/content/elements`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Makuha ang isang elemento ayon sa ID |
-| POST | `/duplicate/:id` | JWT | Content.Edit | Duplicate ang isang elemento kasama ang lahat ng mga anak |
-| POST | `/` | JWT | Content.Edit | Lumikha o mag-update ng mga elemento (batch). Auto-manage ang row columns at carousel slides |
-| DELETE | `/:id` | JWT | Content.Edit | Tanggalin ang isang elemento |
+| GET | `/:id` | JWT | — | Kunin ang elemento ayon sa ID |
+| POST | `/duplicate/:id` | JWT | Content.Edit | Kopyahin ang elemento kasama ang lahat ng child nito |
+| POST | `/` | JWT | Content.Edit | Gumawa o mag-update ng mga elemento (batch). Awtomatikong pinamamahalaan ang row column at carousel slide |
+| DELETE | `/:id` | JWT | Content.Edit | Burahin ang elemento |
 
-## Mga Bloke
+## Mga Block
 
-Pangunahing landas: `/content/blocks`
+Base path: `/content/blocks`
 
-Pinalawak ang standard CRUD (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` mula sa base class na may Content.Edit permission para sa writes).
+Pinalalawak ang karaniwang CRUD (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` mula sa base class na may pahintulot na Content.Edit para sa mga pagsusulat).
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Makuha ang isang bloke ayon sa ID |
-| GET | `/` | JWT | — | Ilista ang lahat ng mga bloke |
-| GET | `/:churchId/tree/:id` | Public | — | Mag-load ng buong puno ng bloke kasama ang mga seksyon at elemento |
-| GET | `/blockType/:blockType` | JWT | — | Mag-load ng mga bloke ayon sa uri (hal. footerBlock, elementBlock) |
-| GET | `/public/footer/:churchId` | Public | — | Mag-load ng footer block tree para sa isang simbahan |
-| POST | `/` | JWT | Content.Edit | Lumikha o mag-update ng mga bloke |
-| DELETE | `/:id` | JWT | Content.Edit | Tanggalin ang isang bloke |
+| GET | `/:id` | JWT | — | Kunin ang block ayon sa ID |
+| GET | `/` | JWT | — | Ilista ang lahat ng block |
+| GET | `/:churchId/tree/:id` | Publiko | — | I-load ang buong puno ng block kasama ang mga seksyon at elemento |
+| GET | `/blockType/:blockType` | JWT | — | I-load ang mga block ayon sa uri (hal. footerBlock, elementBlock) |
+| GET | `/public/footer/:churchId` | Publiko | — | I-load ang puno ng footer block para sa isang simbahan |
+| POST | `/` | JWT | Content.Edit | Gumawa o mag-update ng mga block |
+| DELETE | `/:id` | JWT | Content.Edit | Burahin ang block |
 
 ## Mga Link
 
-Pangunahing landas: `/content/links`
+Base path: `/content/links`
 
-Pinalawak ang standard CRUD (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` mula sa base class na may Content.Edit permission para sa writes).
+Pinalalawak ang karaniwang CRUD (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` mula sa base class na may pahintulot na Content.Edit para sa mga pagsusulat).
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Makuha ang isang link ayon sa ID |
-| GET | `/` | JWT | — | Ilista ang lahat ng mga link. Opsyonal na `?category=` filter. Auto-sort pagkatapos mag-save |
-| GET | `/church/:churchId/filtered?category=` | JWT | — | Mag-load ng mga link na na-filter ng visibility (everyone, visitors, members, staff, groups) |
-| GET | `/church/:churchId?category=` | Public | — | Mag-load ng mga link para sa isang simbahan ayon sa kategorya (public) |
-| POST | `/` | JWT | Content.Edit | Lumikha o mag-update ng mga link (batch). Auto-sort ayon sa kategorya |
-| DELETE | `/:id` | JWT | Content.Edit | Tanggalin ang isang link |
+| GET | `/:id` | JWT | — | Kunin ang link ayon sa ID |
+| GET | `/` | JWT | — | Ilista ang lahat ng link. Opsyonal na `?category=` filter. Awtomatikong nag-aayos pagkatapos mag-save |
+| GET | `/church/:churchId/filtered?category=` | JWT | — | I-load ang mga link na sinala ayon sa visibility (everyone, visitors, members, staff, groups) |
+| GET | `/church/:churchId?category=` | Publiko | — | I-load ang mga link ng isang simbahan ayon sa kategorya (pampubliko) |
+| POST | `/` | JWT | Content.Edit | Gumawa o mag-update ng mga link (batch). Awtomatikong nag-aayos ayon sa kategorya |
+| DELETE | `/:id` | JWT | Content.Edit | Burahin ang link |
 
-## Mga Pandaigdigang Istilo
+## Global Styles
 
-Pangunahing landas: `/content/globalStyles`
+Base path: `/content/globalStyles`
 
-Pinalawak ang standard CRUD (POST `/`, DELETE `/:id` mula sa base class na may Content.Edit permission para sa writes).
+Pinalalawak ang karaniwang CRUD (POST `/`, DELETE `/:id` mula sa base class na may pahintulot na Content.Edit para sa mga pagsusulat).
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/church/:churchId` | Public | — | Mag-load ng mga pandaigdigang istilo para sa isang simbahan (nagbabalik ng defaults kung wala ang naitakda) |
-| GET | `/` | JWT | — | Mag-load ng mga pandaigdigang istilo para sa authenticated na simbahan |
-| POST | `/` | JWT | Content.Edit | Lumikha o mag-update ng mga pandaigdigang istilo |
-| DELETE | `/:id` | JWT | Content.Edit | Tanggalin ang mga pandaigdigang istilo |
+| GET | `/church/:churchId` | Publiko | — | I-load ang global styles ng isang simbahan (nagbabalik ng default kung walang nakatakda) |
+| GET | `/` | JWT | — | I-load ang global styles para sa naka-authenticate na simbahan |
+| POST | `/` | JWT | Content.Edit | Gumawa o mag-update ng global styles |
+| DELETE | `/:id` | JWT | Content.Edit | Burahin ang global styles |
 
 ## Kasaysayan ng Pahina
 
-Pangunahing landas: `/content/pageHistory`
+Base path: `/content/pageHistory`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/page/:pageId` | JWT | Content.Edit | Ilista ang mga entry sa kasaysayan para sa isang pahina |
-| GET | `/block/:blockId` | JWT | Content.Edit | Ilista ang mga entry sa kasaysayan para sa isang bloke |
-| GET | `/:id` | JWT | Content.Edit | Makuha ang isang entry sa kasaysayan ayon sa ID |
-| POST | `/` | JWT | Content.Edit | Mag-save ng isang snapshot ng pahina/bloke. Pana-panahon na nag-clean up ng mga entry na mas matanda kaysa 30 araw |
-| POST | `/restore/:id` | JWT | Content.Edit | Ibalik ang isang pahina/bloke mula sa isang history snapshot (tinatanggal ang kasalukuyang nilalaman at ginagawa muli mula sa snapshot) |
-| POST | `/restoreSnapshot` | JWT | Content.Edit | Ibalik mula sa isang inline snapshot object. Katawan: `{ pageId, blockId, snapshot }` |
+| GET | `/page/:pageId` | JWT | Content.Edit | Ilista ang mga entry ng kasaysayan para sa isang pahina |
+| GET | `/block/:blockId` | JWT | Content.Edit | Ilista ang mga entry ng kasaysayan para sa isang block |
+| GET | `/:id` | JWT | Content.Edit | Kunin ang entry ng kasaysayan ayon sa ID |
+| POST | `/` | JWT | Content.Edit | I-save ang snapshot ng pahina/block. Pana-panahong nililinis ang mga entry na mahigit 30 araw na ang tanda |
+| POST | `/restore/:id` | JWT | Content.Edit | Ibalik ang pahina/block mula sa history snapshot (binubura ang kasalukuyang nilalaman at muling ginagawa mula sa snapshot) |
+| POST | `/restoreSnapshot` | JWT | Content.Edit | Ibalik mula sa inline na snapshot object. Body: `{ pageId, blockId, snapshot }` |
 
 ## Mga Post (Blog)
 
-Pangunahing landas: `/content/posts`
+Base path: `/content/posts`
 
-Ang mga blog post ay standalone na mga hilera: `title`, `slug` (natatangi sa bawat simbahan), `excerpt`, `content` (markdown body), `authorId`, `photoUrl`, `publishDate`, `category`, at `tags`. Ang isang post ay nai-publish kapag ang `publishDate` ay naitakda at nakaraan na. Ang mga read endpoint ay nag-enrich sa bawat post na may `authorName` na nalutas mula sa `authorId`. Tingnan ang [Website Builder Architecture](../../architecture/website-builder#blog).
+Ang mga blog post ay mga standalone na row: `title`, `slug` (natatangi bawat simbahan), `excerpt`, `content` (markdown body), `authorId`, `photoUrl`, `publishDate`, `category`, at `tags`. Nai-publish ang isang post kapag nakatakda na ang `publishDate` at nasa nakaraan na. Dinadagdagan ng mga read endpoint ang bawat post ng `authorName` na kinuha mula sa `authorId`. Tingnan ang [Website Builder Architecture](../../architecture/website-builder#blog).
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/public/:churchId?category=&tag=&page=&pageSize=` | Public | — | Ilista ang mga published na post, paginated (max 50 bawat pahina) |
-| GET | `/public/:churchId/categories` | Public | — | Mga natatanging kategorya sa buong mga published na post |
-| GET | `/public/:churchId/slug/:slug` | Public | — | Makuha ang isang published na post sa pamamagitan ng slug |
-| GET | `/rss/:churchId?siteUrl=` | Public | — | RSS 2.0 feed ng mga published na post (mga link na binuo bilang `{siteUrl}/blog/{slug}`) |
-| GET | `/:id` | JWT | — | Makuha ang isang post ayon sa ID |
-| GET | `/` | JWT | — | Ilista ang lahat ng mga post para sa simbahan |
-| POST | `/` | JWT | Content.Edit | Lumikha o mag-update ng mga post (batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Tanggalin ang isang post |
+| GET | `/public/:churchId?category=&tag=&page=&pageSize=` | Publiko | — | Ilista ang mga nai-publish na post, may pahina (pinakamarami 50 bawat pahina) |
+| GET | `/public/:churchId/categories` | Publiko | — | Mga natatanging kategorya sa mga nai-publish na post |
+| GET | `/public/:churchId/slug/:slug` | Publiko | — | Kunin ang nai-publish na post ayon sa slug |
+| GET | `/rss/:churchId?siteUrl=` | Publiko | — | RSS 2.0 feed ng mga nai-publish na post (ang mga link ay binubuo bilang `{siteUrl}/blog/{slug}`) |
+| GET | `/:id` | JWT | — | Kunin ang post ayon sa ID |
+| GET | `/` | JWT | — | Ilista ang lahat ng post ng simbahan |
+| POST | `/` | JWT | Content.Edit | Gumawa o mag-update ng mga post (batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Burahin ang post |
 
 ## Mga Redirect
 
-Pangunahing landas: `/content/redirects`
+Base path: `/content/redirects`
 
-Mga per-church URL redirect (`fromPath` → `toPath`), limited sa 200 sa bawat simbahan. Ang mga path ay normalized (lowercased, leading slash, walang trailing slash) at `fromPath` ay natatangi sa bawat simbahan. Ang B1App ay nalulutas ang mga ito sa magiging 404s at naglalabas ng HTTP 308.
+Mga URL redirect bawat simbahan (`fromPath` → `toPath`), limitado sa 200 bawat simbahan. Ang mga path ay ginagawang normal (naka-lowercase, may leading slash, walang trailing slash) at natatangi ang `fromPath` bawat simbahan. Nireresolba ito ng B1App sa mga posibleng 404 at naglalabas ng HTTP 308.
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/public/:churchId?path=` | Public | — | Malutas ang isang path (o ilista ang lahat ng redirect kapag ang `path` ay omitted) |
-| GET | `/:id` | JWT | — | Makuha ang isang redirect ayon sa ID |
-| GET | `/` | JWT | — | Ilista ang lahat ng mga redirect para sa simbahan |
-| POST | `/` | JWT | Content.Edit | Lumikha o mag-update ng mga redirect. Tinatanggihan ang `fromPath = toPath` at nagpapatakda ng 200-row cap |
-| DELETE | `/:id` | JWT | Content.Edit | Tanggalin ang isang redirect |
+| GET | `/public/:churchId?path=` | Publiko | — | I-resolve ang isang path (o ilista ang lahat ng redirect kapag inalis ang `path`) |
+| GET | `/:id` | JWT | — | Kunin ang redirect ayon sa ID |
+| GET | `/` | JWT | — | Ilista ang lahat ng redirect ng simbahan |
+| POST | `/` | JWT | Content.Edit | Gumawa o mag-update ng mga redirect. Tinatanggihan ang `fromPath = toPath` at ipinapatupad ang 200-row cap |
+| DELETE | `/:id` | JWT | Content.Edit | Burahin ang redirect |
 
 ## Mga Sermon
 
-Pangunahing landas: `/content/sermons`
+Base path: `/content/sermons`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/public/freeshowSample` | JWT | — | Makuha ang isang sample na FreeShow playlist structure |
-| GET | `/public/tvWrapper/:churchId` | JWT | — | Makuha ang TV app wrapper na may sermon, lesson, at FreeShow sources |
-| GET | `/public/tvFeed/:churchId/:sermonId` | Public | — | Makuha ang isang sermon bilang isang TV feed playlist |
-| GET | `/public/tvFeed/:churchId` | Public | — | Makuha ang lahat ng mga public na playlist/sermons bilang isang TV feed |
-| GET | `/public/:churchId` | Public | — | Ilista ang lahat ng mga public na sermon para sa isang simbahan |
-| GET | `/timeline?sermonIds=` | JWT | — | Mag-load ng timeline data para sa mga sermon |
-| GET | `/lookup?videoType=&videoData=` | Public | — | Maghanap ng sermon metadata mula sa YouTube o Vimeo |
-| GET | `/socialSuggestions?youtubeVideoId=` | JWT | — | Lumikha ng AI social media post suggestions mula sa sermon subtitles |
-| GET | `/outline?url=&title=&author=` | JWT | — | Lumikha ng AI lesson outline mula sa isang URL |
+| GET | `/public/freeshowSample` | JWT | — | Kunin ang sample na istruktura ng playlist ng FreeShow |
+| GET | `/public/tvWrapper/:churchId` | JWT | — | Kunin ang TV app wrapper na may mga source ng sermon, lesson, at FreeShow |
+| GET | `/public/tvFeed/:churchId/:sermonId` | Publiko | — | Kunin ang isang sermon bilang TV feed playlist |
+| GET | `/public/tvFeed/:churchId` | Publiko | — | Kunin ang lahat ng pampublikong playlist/sermon bilang TV feed |
+| GET | `/public/:churchId` | Publiko | — | Ilista ang lahat ng pampublikong sermon ng isang simbahan |
+| GET | `/timeline?sermonIds=` | JWT | — | I-load ang timeline data para sa mga sermon |
+| GET | `/lookup?videoType=&videoData=` | Publiko | — | Maghanap ng metadata ng sermon mula sa YouTube o Vimeo |
+| GET | `/socialSuggestions?youtubeVideoId=` | JWT | — | Bumuo ng mga mungkahi sa social media post gamit ang AI mula sa mga subtitle ng sermon |
+| GET | `/outline?url=&title=&author=` | JWT | — | Bumuo ng outline ng lesson gamit ang AI mula sa isang URL |
 | GET | `/youtubeImport/:channelId` | JWT | — | Mag-import ng mga video mula sa isang YouTube channel |
 | GET | `/vimeoImport/:channelId` | JWT | — | Mag-import ng mga video mula sa isang Vimeo channel |
-| GET | `/:id` | JWT | — | Makuha ang isang sermon ayon sa ID |
-| GET | `/` | JWT | — | Ilista ang lahat ng mga sermon |
-| POST | `/` | JWT | StreamingServices.Edit | Lumikha o mag-update ng mga sermon (batch, sumusuporta sa base64 thumbnail upload) |
-| DELETE | `/:id` | JWT | StreamingServices.Edit | Tanggalin ang isang sermon |
+| GET | `/:id` | JWT | — | Kunin ang sermon ayon sa ID |
+| GET | `/` | JWT | — | Ilista ang lahat ng sermon |
+| POST | `/` | JWT | StreamingServices.Edit | Gumawa o mag-update ng mga sermon (batch, sumusuporta sa base64 thumbnail upload) |
+| DELETE | `/:id` | JWT | StreamingServices.Edit | Burahin ang sermon |
 
-### Halimbawa: Maghanap ng isang YouTube Sermon
+### Halimbawa: Maghanap ng YouTube Sermon
 
 ```
 GET /content/sermons/lookup?videoType=youtube&videoData=dQw4w9WgXcQ
@@ -199,126 +200,130 @@ GET /content/sermons/lookup?videoType=youtube&videoData=dQw4w9WgXcQ
 
 ## Mga Playlist
 
-Pangunahing landas: `/content/playlists`
+Base path: `/content/playlists`
 
-Pinalawak ang standard CRUD (GET `/:id`, GET `/`, DELETE `/:id` mula sa base class na may StreamingServices.Edit permission para sa writes).
+Pinalalawak ang karaniwang CRUD (GET `/:id`, GET `/`, DELETE `/:id` mula sa base class na may pahintulot na StreamingServices.Edit para sa mga pagsusulat).
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Makuha ang isang playlist ayon sa ID |
-| GET | `/` | JWT | — | Ilista ang lahat ng mga playlist |
-| GET | `/public/:churchId` | Public | — | Ilista ang lahat ng mga public na playlist para sa isang simbahan |
-| POST | `/` | JWT | StreamingServices.Edit | Lumikha o mag-update ng mga playlist (batch, sumusuporta sa base64 thumbnail upload) |
-| DELETE | `/:id` | JWT | StreamingServices.Edit | Tanggalin ang isang playlist |
+| GET | `/:id` | JWT | — | Kunin ang playlist ayon sa ID |
+| GET | `/` | JWT | — | Ilista ang lahat ng playlist |
+| GET | `/public/:churchId` | Publiko | — | Ilista ang lahat ng pampublikong playlist ng isang simbahan |
+| POST | `/` | JWT | StreamingServices.Edit | Gumawa o mag-update ng mga playlist (batch, sumusuporta sa base64 thumbnail upload) |
+| DELETE | `/:id` | JWT | StreamingServices.Edit | Burahin ang playlist |
 
 ## Mga Streaming Service
 
-Pangunahing landas: `/content/streamingServices`
+Base path: `/content/streamingServices`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:id/hostChat` | JWT | Chat.Host | Makuha ang encrypted host chat room ID para sa isang serbisyo |
-| GET | `/` | JWT | — | Ilista ang lahat ng mga streaming service. Auto-cleans expired non-recurring services at umuusad sa mga recurring ones |
-| POST | `/` | JWT | StreamingServices.Edit | Lumikha o mag-update ng mga streaming service (batch) |
-| DELETE | `/:id` | JWT | StreamingServices.Edit | Tanggalin ang isang streaming service (din ay nag-clear ng mga blocked IP) |
+| GET | `/:id/hostChat` | JWT | Chat.Host | Kunin ang naka-encrypt na host chat room ID para sa isang service |
+| GET | `/` | JWT | — | Ilista ang lahat ng streaming service. Awtomatikong nililinis ang mga nag-expire na hindi paulit-ulit na service at nilalampasan ang mga paulit-ulit |
+| POST | `/` | JWT | StreamingServices.Edit | Gumawa o mag-update ng mga streaming service (batch) |
+| DELETE | `/:id` | JWT | StreamingServices.Edit | Burahin ang streaming service (binubura rin ang mga naka-block na IP) |
 
-## Mga Kaganapan
+## Mga Event
 
-Pangunahing landas: `/content/events`
+Base path: `/content/events`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/timeline/group/:groupId?eventIds=` | JWT | — | Mag-load ng timeline events para sa isang grupo |
-| GET | `/timeline?eventIds=` | JWT | — | Mag-load ng timeline events para sa mga grupo ng kasalukuyang user |
-| GET | `/subscribe?churchId=&groupId=&curatedCalendarId=` | Public | — | Mag-subscribe sa mga kaganapan bilang ICS calendar feed |
-| GET | `/group/:groupId` | JWT | — | Makuha ang mga kaganapan para sa isang grupo (kasama ang exception dates) |
-| GET | `/public/group/:churchId/:groupId` | Public | — | Makuha ang mga public na kaganapan para sa isang grupo |
-| GET | `/:id` | JWT | — | Makuha ang isang kaganapan ayon sa ID |
-| POST | `/` | JWT | — | Lumikha o mag-update ng mga kaganapan (batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Tanggalin ang isang kaganapan |
+| GET | `/timeline/group/:groupId?eventIds=` | JWT | — | I-load ang timeline event para sa isang grupo |
+| GET | `/timeline?eventIds=` | JWT | — | I-load ang timeline event para sa mga grupo ng kasalukuyang user |
+| GET | `/subscribe?churchId=&groupId=&curatedCalendarId=` | Publiko | — | Mag-subscribe sa mga event bilang ICS calendar feed |
+| GET | `/group/:groupId` | JWT | — | Kunin ang mga event ng isang grupo (kasama ang mga exception date) |
+| GET | `/public/group/:churchId/:groupId` | Publiko | — | Kunin ang mga pampublikong event ng isang grupo |
+| GET | `/public/:churchId/:id` | Publiko | — | Kunin ang isang event para sa pampublikong pahina nito, kasama ang `roomNames` (mga kuwarto mula sa mga booking na hindi tinanggihan). Nagbabalik ng `null` para sa mga event na nakabinbin o tinanggihan, at para sa mga pribadong event na hindi tumatanggap ng registration |
+| GET | `/public/:churchId/:id/ical` | Publiko | — | I-download ang isang event bilang `.ics` file (`text/calendar`, may nalalapat na exception date). `404` kapag nakatago ang event ayon sa parehong patakaran |
+| GET | `/:id` | JWT | — | Kunin ang event ayon sa ID |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga event (batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Burahin ang event |
 
-## Mga Kaganapan na Pagbubukod
+Kasama sa mga record ng event ang `photoUrl` (ang 16:9 na larawan ng event na ipinapakita sa pampublikong pahina ng event at sa mga tile ng paparating na event), `tags` (pinaghihiwalay ng kuwit, ginagamit ng tag filter ng website Calendar element), at `notesViewRole` / `notesPostRole` (`staff` kapag `null`, `leaders`, o `members`), na nagkokontrol sa `eventNote` conversation ng event -- tingnan ang [Group and event notes access control](./messaging.md#group-and-event-notes-access-control). Kasama rin sa mga tugon ng pampublikong curated event ang `photoUrl` at `tags` ng bawat event.
 
-Pangunahing landas: `/content/eventExceptions`
+## Mga Exception ng Event
 
-| Method | Path | Auth | Permission | Description |
+Base path: `/content/eventExceptions`
+
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Makuha ang isang kaganapan na pagbubukod ayon sa ID |
-| POST | `/` | JWT | Content.Edit | Lumikha o mag-update ng mga kaganapan na pagbubukod (batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Tanggalin ang isang kaganapan na pagbubukod |
+| GET | `/:id` | JWT | — | Kunin ang exception ng event ayon sa ID |
+| POST | `/` | JWT | Content.Edit | Gumawa o mag-update ng mga exception ng event (batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Burahin ang exception ng event |
 
-## Mga Customized na Kalendaryo
+## Mga Curated Calendar
 
-Pangunahing landas: `/content/curatedCalendars`
+Base path: `/content/curatedCalendars`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Makuha ang isang customized na kalendaryo ayon sa ID |
-| GET | `/` | JWT | — | Ilista ang lahat ng mga customized na kalendaryo |
-| POST | `/` | JWT | Content.Edit | Lumikha o mag-update ng mga customized na kalendaryo (batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Tanggalin ang isang customized na kalendaryo |
+| GET | `/:id` | JWT | — | Kunin ang curated calendar ayon sa ID |
+| GET | `/` | JWT | — | Ilista ang lahat ng curated calendar |
+| POST | `/` | JWT | Content.Edit | Gumawa o mag-update ng mga curated calendar (batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Burahin ang curated calendar |
 
-## Mga Customized na Kaganapan
+## Mga Curated Event
 
-Pangunahing landas: `/content/curatedEvents`
+Base path: `/content/curatedEvents`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/calendar/:curatedCalendarId?withoutEvents` | JWT | — | Makuha ang mga customized na kaganapan para sa isang kalendaryo (kasama ang event details at exception dates kung hindi ang `?withoutEvents` ay naitakda) |
-| GET | `/public/calendar/:churchId/:curatedCalendarId` | Public | — | Makuha ang mga public na customized na kaganapan para sa isang kalendaryo |
-| GET | `/:id` | JWT | — | Makuha ang isang customized na kaganapan ayon sa ID |
-| GET | `/` | JWT | — | Ilista ang lahat ng mga customized na kaganapan |
-| POST | `/` | JWT | Content.Edit | Lumikha o mag-update ng mga customized na kaganapan. Sumusuporta sa `eventIds` array upang magdagdag ng mga specific na group events |
-| DELETE | `/:id` | JWT | Content.Edit | Tanggalin ang isang customized na kaganapan |
-| DELETE | `/calendar/:curatedCalendarId/event/:eventId` | JWT | Content.Edit | Alisin ang isang specific na kaganapan mula sa isang customized na kalendaryo |
-| DELETE | `/calendar/:curatedCalendarId/group/:groupId` | JWT | Content.Edit | Alisin ang lahat ng mga kaganapan para sa isang grupo mula sa isang customized na kalendaryo |
+| GET | `/calendar/:curatedCalendarId?withoutEvents` | JWT | — | Kunin ang mga curated event ng isang calendar (kasama ang detalye ng event at exception date maliban kung may `?withoutEvents`) |
+| GET | `/public/calendar/:churchId/:curatedCalendarId` | Publiko | — | Kunin ang mga pampublikong curated event ng isang calendar |
+| GET | `/:id` | JWT | — | Kunin ang curated event ayon sa ID |
+| GET | `/` | JWT | — | Ilista ang lahat ng curated event |
+| POST | `/` | JWT | Content.Edit | Gumawa o mag-update ng mga curated event. Sumusuporta sa `eventIds` array para magdagdag ng partikular na group event |
+| DELETE | `/:id` | JWT | Content.Edit | Burahin ang curated event |
+| DELETE | `/calendar/:curatedCalendarId/event/:eventId` | JWT | Content.Edit | Alisin ang isang partikular na event sa curated calendar |
+| DELETE | `/calendar/:curatedCalendarId/group/:groupId` | JWT | Content.Edit | Alisin ang lahat ng event ng isang grupo sa curated calendar |
 
 ## Mga File
 
-Pangunahing landas: `/content/files`
+Base path: `/content/files`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:contentType/:contentId` | JWT | — | Makuha ang mga file ayon sa content type at content ID |
-| GET | `/` | JWT | — | Ilista ang lahat ng mga file para sa church website |
-| GET | `/:id` | JWT | — | Makuha ang isang file ayon sa ID |
-| POST | `/` | JWT | Content.Edit* | Mag-upload ng mga file (base64). *Din na allowed kung ang user ay miyembro ng grupo na tumutugma sa `contentId` |
-| POST | `/postUrl` | JWT | Content.Edit* | Makuha ang isang pre-signed S3 upload URL. *Din na allowed para sa mga miyembro ng grupo. Max 100MB bawat content item |
-| DELETE | `/:id` | JWT | Content.Edit* | Tanggalin ang isang file at alisin mula sa storage. *Din na allowed para sa mga miyembro ng grupo |
+| GET | `/:contentType/:contentId` | JWT | — | Kunin ang mga file ayon sa uri ng nilalaman at content ID |
+| GET | `/` | JWT | — | Ilista ang lahat ng file para sa website ng simbahan |
+| GET | `/:id` | JWT | — | Kunin ang file ayon sa ID |
+| POST | `/` | JWT | Content.Edit* | Mag-upload ng mga file (base64). *Pinapayagan din kung ang user ay miyembro ng grupong tumutugma sa `contentId` |
+| POST | `/postUrl` | JWT | Content.Edit* | Kumuha ng pre-signed na S3 upload URL. *Pinapayagan din para sa mga miyembro ng grupo. Pinakamarami 100MB bawat content item |
+| DELETE | `/:id` | JWT | Content.Edit* | Burahin ang file at alisin sa storage. *Pinapayagan din para sa mga miyembro ng grupo |
 
 ## Gallery
 
-Pangunahing landas: `/content/gallery`
+Base path: `/content/gallery`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/stock/:folder` | Public | — | Ilista ang mga stock photo sa isang folder |
-| GET | `/:folder` | JWT | Content.Edit | Ilista ang mga gallery image sa isang folder |
-| POST | `/requestUpload` | JWT | Content.Edit | Makuha ang isang pre-signed S3 upload URL para sa isang gallery image |
-| DELETE | `/:folder/:image` | JWT | Content.Edit | Tanggalin ang isang gallery image |
+| GET | `/stock/:folder` | Publiko | — | Ilista ang mga stock photo sa isang folder |
+| GET | `/:folder` | JWT | Content.Edit | Ilista ang mga larawan ng gallery sa isang folder |
+| POST | `/requestUpload` | JWT | Content.Edit | Kumuha ng pre-signed na S3 upload URL para sa larawan ng gallery |
+| DELETE | `/:folder/:image` | JWT | Content.Edit | Burahin ang larawan ng gallery |
 
 ## Mga Bible
 
-Pangunahing landas: `/content/bibles`
+Base path: `/content/bibles`
 
-Lahat ng Bible endpoints ay public (walang authentication na kailangan). Ang data ay kinukuha mula sa mga external source at naka-cache locally.
+Lahat ng Bible endpoint ay pampubliko (walang kailangang authentication). Kinukuha ang datos mula sa mga external na pinagmumulan at naka-cache nang lokal.
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | Public | — | Ilista ang lahat ng mga Bible translation (kinukuha mula sa source kung ang cache ay walang laman) |
-| GET | `/stats?startDate=&endDate=` | Public | — | Makuha ang Bible lookup statistics para sa isang date range |
-| GET | `/availableTranslations/:source` | Public | — | Ilista ang available translations mula sa isang source (hal. api.bible) |
-| GET | `/updateTranslations` | Public | — | I-sync ang lahat ng translations mula sa lahat ng sources |
-| GET | `/updateTranslations/:source` | Public | — | I-sync ang mga translations mula sa isang specific na source |
-| GET | `/updateCopyrights` | Public | — | I-update ang copyright info para sa mga translations na kulang nito |
-| GET | `/:translationKey/updateCopyright` | Public | — | I-update ang copyright para sa isang specific na translation |
-| GET | `/:translationKey/search?query=&limit=` | Public | — | Maghanap ng mga verse sa isang translation |
-| GET | `/:translationKey/books` | Public | — | Makuha ang mga libro para sa isang translation (naka-cache locally) |
-| GET | `/:translationKey/:bookKey/chapters` | Public | — | Makuha ang mga kabanata para sa isang libro (naka-cache locally) |
-| GET | `/:translationKey/chapters/:chapterKey/verses` | Public | — | Makuha ang mga verse para sa isang kabanata (naka-cache locally) |
-| GET | `/:translationKey/verses/:startVerseKey-:endVerseKey` | Public | — | Makuha ang text ng verse para sa isang range. Nag-log ng mga lookup. Ang ilang translations ay nag-bypass ng caching para sa licensing |
+| GET | `/` | Publiko | — | Ilista ang lahat ng Bible translation (kumukuha mula sa pinagmulan kung walang laman ang cache) |
+| GET | `/stats?startDate=&endDate=` | Publiko | — | Kunin ang estadistika ng Bible lookup para sa isang saklaw ng petsa |
+| GET | `/availableTranslations/:source` | Publiko | — | Ilista ang mga available na translation mula sa isang pinagmulan (hal. api.bible) |
+| GET | `/updateTranslations` | Publiko | — | I-sync ang lahat ng translation mula sa lahat ng pinagmulan |
+| GET | `/updateTranslations/:source` | Publiko | — | I-sync ang mga translation mula sa isang partikular na pinagmulan |
+| GET | `/updateCopyrights` | Publiko | — | I-update ang impormasyon ng copyright para sa mga translation na wala nito |
+| GET | `/:translationKey/updateCopyright` | Publiko | — | I-update ang copyright ng isang partikular na translation |
+| GET | `/:translationKey/search?query=&limit=` | Publiko | — | Maghanap ng mga talata sa isang translation |
+| GET | `/:translationKey/books` | Publiko | — | Kunin ang mga aklat ng isang translation (nagca-cache nang lokal) |
+| GET | `/:translationKey/:bookKey/chapters` | Publiko | — | Kunin ang mga kabanata ng isang aklat (nagca-cache nang lokal) |
+| GET | `/:translationKey/chapters/:chapterKey/verses` | Publiko | — | Kunin ang mga talata ng isang kabanata (nagca-cache nang lokal) |
+| GET | `/:translationKey/verses/:startVerseKey-:endVerseKey` | Publiko | — | Kunin ang teksto ng mga talata sa isang saklaw. Nagtatala ng mga lookup. May ilang translation na lumalampas sa caching dahil sa lisensya |
 
-### Halimbawa: Makuha ang Verse Text
+### Halimbawa: Kunin ang Teksto ng Talata
 
 ```
 GET /content/bibles/de4e12af7f28f599-02/verses/GEN.1.1-GEN.1.3
@@ -332,129 +337,129 @@ GET /content/bibles/de4e12af7f28f599-02/verses/GEN.1.1-GEN.1.3
 ]
 ```
 
-## Mga Kanta
+## Mga Awit
 
-Pangunahing landas: `/content/songs`
+Base path: `/content/songs`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/search?q=` | JWT | — | Maghanap ng mga kanta ayon sa query |
-| GET | `/:id` | JWT | — | Makuha ang isang kanta ayon sa ID |
-| GET | `/` | JWT | Content.Edit | Ilista ang lahat ng mga kanta |
-| POST | `/` | JWT | Content.Edit | Lumikha o mag-update ng mga kanta (batch) |
-| POST | `/import` | JWT | — | Mag-import ng mga kanta mula sa FreeShow (batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Tanggalin ang isang kanta |
+| GET | `/search?q=` | JWT | — | Maghanap ng mga awit ayon sa query |
+| GET | `/:id` | JWT | — | Kunin ang awit ayon sa ID |
+| GET | `/` | JWT | Content.Edit | Ilista ang lahat ng awit |
+| POST | `/` | JWT | Content.Edit | Gumawa o mag-update ng mga awit (batch) |
+| POST | `/import` | JWT | — | Mag-import ng mga awit mula sa FreeShow (batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Burahin ang awit |
 
-## Mga Detalye ng Kanta
+## Mga Detalye ng Awit
 
-Pangunahing landas: `/content/songDetails`
+Base path: `/content/songDetails`
 
-Ang mga detalye ng kanta ay pandaigdig (hindi church-scoped). Ang mga ito ay kumakatawan sa canonical na metadata ng kanta na ibinahagi sa mga simbahan.
+Ang mga detalye ng awit ay pandaigdig (hindi nakatali sa simbahan). Ito ang mga canonical na metadata ng awit na ibinabahagi ng mga simbahan.
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Makuha ang isang detalye ng kanta ayon sa ID (pandaigdig) |
-| GET | `/` | JWT | — | Ilista ang mga detalye ng kanta para sa simbahan |
-| POST | `/create` | JWT | — | Lumikha ng isang detalye ng kanta mula sa PraiseCharts ID (nagbabalik ng existing kung na-create na). Auto-fetch ang metadata mula sa PraiseCharts at MusicBrainz |
-| POST | `/` | JWT | — | Lumikha o mag-update ng mga detalye ng kanta (batch) |
+| GET | `/:id` | JWT | — | Kunin ang detalye ng awit ayon sa ID (pandaigdig) |
+| GET | `/` | JWT | — | Ilista ang mga detalye ng awit para sa simbahan |
+| POST | `/create` | JWT | — | Gumawa ng detalye ng awit mula sa PraiseCharts ID (nagbabalik ng umiiral na kung nagawa na). Awtomatikong kumukuha ng metadata mula sa PraiseCharts at MusicBrainz |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga detalye ng awit (batch) |
 
-## Mga Link ng Detalye ng Kanta
+## Mga Link ng Detalye ng Awit
 
-Pangunahing landas: `/content/songDetailLinks`
+Base path: `/content/songDetailLinks`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Makuha ang isang link ng detalye ng kanta ayon sa ID |
-| GET | `/songDetail/:songDetailId` | JWT | — | Makuha ang lahat ng mga link para sa isang detalye ng kanta |
-| POST | `/` | JWT | — | Lumikha o mag-update ng mga link ng detalye ng kanta (batch). Auto-fetch ang MusicBrainz data kung nag-link |
-| DELETE | `/:id` | JWT | — | Tanggalin ang isang link ng detalye ng kanta |
+| GET | `/:id` | JWT | — | Kunin ang link ng detalye ng awit ayon sa ID |
+| GET | `/songDetail/:songDetailId` | JWT | — | Kunin ang lahat ng link ng isang detalye ng awit |
+| POST | `/` | JWT | — | Gumawa o mag-update ng mga link ng detalye ng awit (batch). Awtomatikong kumukuha ng datos ng MusicBrainz kung naka-link |
+| DELETE | `/:id` | JWT | — | Burahin ang link ng detalye ng awit |
 
 ## Mga Arrangement
 
-Pangunahing landas: `/content/arrangements`
+Base path: `/content/arrangements`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Makuha ang isang arrangement ayon sa ID |
-| GET | `/song/:songId` | JWT | Content.Edit | Makuha ang mga arrangement para sa isang kanta |
-| GET | `/songDetail/:songDetailId` | JWT | Content.Edit | Makuha ang mga arrangement para sa isang detalye ng kanta |
-| GET | `/` | JWT | Content.Edit | Ilista ang lahat ng mga arrangement |
-| POST | `/` | JWT | Content.Edit | Lumikha o mag-update ng mga arrangement (batch) |
-| POST | `/freeShow/missing` | JWT | — | Maghanap ng FreeShow ID na hindi nag-exist sa simbahan. Katawan: `{ freeShowIds: string[] }` |
-| DELETE | `/:id` | JWT | Content.Edit | Tanggalin ang isang arrangement (din ay tinatanggal ang mga susi; tinatanggal ang kanta kung walang arrangements na nananatili) |
+| GET | `/:id` | JWT | — | Kunin ang arrangement ayon sa ID |
+| GET | `/song/:songId` | JWT | Content.Edit | Kunin ang mga arrangement ng isang awit |
+| GET | `/songDetail/:songDetailId` | JWT | Content.Edit | Kunin ang mga arrangement ng isang detalye ng awit |
+| GET | `/` | JWT | Content.Edit | Ilista ang lahat ng arrangement |
+| POST | `/` | JWT | Content.Edit | Gumawa o mag-update ng mga arrangement (batch) |
+| POST | `/freeShow/missing` | JWT | — | Hanapin ang mga FreeShow ID na wala sa simbahan. Body: `{ freeShowIds: string[] }` |
+| DELETE | `/:id` | JWT | Content.Edit | Burahin ang arrangement (binubura rin ang mga key; binubura ang awit kung wala nang natitirang arrangement) |
 
-## Mga Susi ng Arrangement
+## Mga Arrangement Key
 
-Pangunahing landas: `/content/arrangementKeys`
+Base path: `/content/arrangementKeys`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/presenter/:churchId/:id` | Public | — | Makuha ang arrangement key na may buong data ng kanta para sa presenter view |
-| GET | `/:id` | JWT | — | Makuha ang isang susi ng arrangement ayon sa ID |
-| GET | `/arrangement/:arrangementId` | JWT | Content.Edit | Makuha ang mga susi para sa isang arrangement |
-| GET | `/` | JWT | Content.Edit | Ilista ang lahat ng mga susi ng arrangement |
-| POST | `/` | JWT | Content.Edit | Lumikha o mag-update ng mga susi ng arrangement (batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Tanggalin ang isang susi ng arrangement |
+| GET | `/presenter/:churchId/:id` | Publiko | — | Kunin ang arrangement key kasama ang buong datos ng awit para sa presenter view |
+| GET | `/:id` | JWT | — | Kunin ang arrangement key ayon sa ID |
+| GET | `/arrangement/:arrangementId` | JWT | Content.Edit | Kunin ang mga key ng isang arrangement |
+| GET | `/` | JWT | Content.Edit | Ilista ang lahat ng arrangement key |
+| POST | `/` | JWT | Content.Edit | Gumawa o mag-update ng mga arrangement key (batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Burahin ang arrangement key |
 
 ## Mga Setting
 
-Pangunahing landas: `/content/settings`
+Base path: `/content/settings`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/my` | JWT | — | Makuha ang mga setting ng kasalukuyang user |
-| GET | `/` | JWT | Settings.Edit | Makuha ang lahat ng mga setting para sa simbahan |
-| GET | `/public/:churchId` | Public | — | Makuha ang mga public na setting para sa isang simbahan (nagbabalik bilang key-value pairs) |
-| POST | `/my` | JWT | — | Mag-save ng mga user-level na setting (sumusuporta sa base64 image upload) |
-| POST | `/` | JWT | Settings.Edit | Mag-save ng mga church-level na setting (sumusuporta sa base64 image upload) |
-| DELETE | `/my/:id` | JWT | — | Tanggalin ang isang user setting |
+| GET | `/my` | JWT | — | Kunin ang settings ng kasalukuyang user |
+| GET | `/` | JWT | Settings.Edit | Kunin ang lahat ng setting ng simbahan |
+| GET | `/public/:churchId` | Publiko | — | Kunin ang mga pampublikong setting ng isang simbahan (ibinabalik bilang key-value pair) |
+| POST | `/my` | JWT | — | I-save ang mga setting sa antas ng user (sumusuporta sa base64 image upload) |
+| POST | `/` | JWT | Settings.Edit | I-save ang mga setting sa antas ng simbahan (sumusuporta sa base64 image upload) |
+| DELETE | `/my/:id` | JWT | — | Burahin ang setting ng user |
 
-## Paglalantad
+## Preview
 
-Pangunahing landas: `/content/preview`
+Base path: `/content/preview`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/data/:key` | Public | — | Mag-load ng streaming preview data para sa isang simbahan sa pamamagitan ng subdomain key (tabs, links, services, sermons) |
+| GET | `/data/:key` | Publiko | — | I-load ang streaming preview data ng isang simbahan ayon sa subdomain key (tabs, links, services, sermons) |
 
 ## Gallery (Stock Photos)
 
-Pangunahing landas: `/content/stock`
+Base path: `/content/stock`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| POST | `/search` | Public | — | Maghanap ng Pexels stock photos. Katawan: `{ term: "church" }` |
+| POST | `/search` | Publiko | — | Maghanap ng stock photo sa Pexels. Body: `{ term: "church" }` |
 
 ## PraiseCharts
 
-Pangunahing landas: `/content/praiseCharts`
+Base path: `/content/praiseCharts`
 
-Integration sa PraiseCharts para sa worship song discovery at sheet music downloads.
+Integrasyon sa PraiseCharts para sa pagtuklas ng awit ng pagsamba at pag-download ng sheet music.
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/raw/:id` | JWT | — | Makuha ang raw PraiseCharts data para sa isang kanta |
-| GET | `/hasAccount` | JWT | — | Suriin kung ang user ay may naka-link na PraiseCharts account |
+| GET | `/raw/:id` | JWT | — | Kunin ang raw na datos ng PraiseCharts para sa isang awit |
+| GET | `/hasAccount` | JWT | — | Suriin kung may naka-link na PraiseCharts account ang user |
 | GET | `/search?q=` | JWT | — | Maghanap sa PraiseCharts catalog |
-| GET | `/products/:id?keys=` | JWT | — | Makuha ang mga produkto para sa isang kanta (mula sa library kung authenticated, kung hindi ay catalog) |
-| GET | `/arrangement/raw/:id?keys=` | JWT | — | Makuha ang raw arrangement data mula sa library |
-| GET | `/download?skus=&keys=&file_name=` | JWT | — | Mag-download ng isang file mula sa PraiseCharts (PDF o ZIP). Nagbabalik ng `{ redirectUrl }` |
-| GET | `/authUrl?returnUrl=` | Public | — | Makuha ang OAuth authorization URL para sa PraiseCharts |
-| GET | `/access?verifier=&token=&secret=` | JWT | — | I-exchange ang OAuth verifier para sa access token at mag-save sa user settings |
+| GET | `/products/:id?keys=` | JWT | — | Kunin ang mga produkto para sa isang awit (mula sa library kung naka-authenticate, kung hindi ay mula sa catalog) |
+| GET | `/arrangement/raw/:id?keys=` | JWT | — | Kunin ang raw na datos ng arrangement mula sa library |
+| GET | `/download?skus=&keys=&file_name=` | JWT | — | Mag-download ng file mula sa PraiseCharts (PDF o ZIP). Nagbabalik ng `{ redirectUrl }` |
+| GET | `/authUrl?returnUrl=` | Publiko | — | Kunin ang OAuth authorization URL para sa PraiseCharts |
+| GET | `/access?verifier=&token=&secret=` | JWT | — | Palitan ang OAuth verifier ng access token at i-save sa settings ng user |
 | GET | `/library` | JWT | — | I-browse ang library ng PraiseCharts ng user |
 
 ## Suporta
 
-Pangunahing landas: `/content/support`
+Base path: `/content/support`
 
-| Method | Path | Auth | Permission | Description |
+| Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
-| POST | `/createAudio` | Public | — | I-convert ang SSML sa MP3 audio gamit ang AWS Polly. Katawan: `{ ssml: "<speak>...</speak>" }` |
+| POST | `/createAudio` | Publiko | — | I-convert ang SSML sa MP3 audio gamit ang AWS Polly. Body: `{ ssml: "<speak>...</speak>" }` |
 
 ## Mga Kaugnay na Pahina
 
-- [Website Builder Architecture](../../architecture/website-builder) -- Paano ang mga pahina, mga seksyon, mga elemento, mga post, at mga redirect ay umaangkop sa mga apps
-- [Membership Endpoints](./membership) -- Mga tao, mga simbahan, mga grupo, mga tungkulin, mga pahintulot
-- [Attendance Endpoints](./attendance) -- Serbisyo at bisita na pagsubaybay
-- [Authentication & Permissions](./authentication) -- Login flow, JWT, permission model
-- [Module Structure](../module-structure) -- Mga pattern sa code organization
+- [Website Builder Architecture](../../architecture/website-builder) -- Paano nagkakasama-sama ang mga pahina, seksyon, elemento, post, at redirect sa iba't ibang app
+- [Membership Endpoints](./membership) -- Mga tao, simbahan, grupo, tungkulin, pahintulot
+- [Attendance Endpoints](./attendance) -- Pagsubaybay ng serbisyo at pagbisita
+- [Authentication & Permissions](./authentication) -- Daloy ng login, JWT, modelo ng pahintulot
+- [Module Structure](../module-structure) -- Mga pattern ng organisasyon ng code

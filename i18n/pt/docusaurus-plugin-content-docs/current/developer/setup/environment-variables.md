@@ -6,67 +6,71 @@ title: "Variáveis de Ambiente"
 
 <div class="article-intro">
 
-Todo projeto ChurchApps usa um arquivo `.env` para configuração local. Cada projeto inclui um arquivo de exemplo que você copia e personaliza. Esta página cobre as variáveis de ambiente para APIs, aplicações web e aplicações móveis, incluindo como escolher entre alvos de API staging e local.
+Todos os projetos do ChurchApps usam um arquivo `.env` para a configuração local. Cada projeto inclui um arquivo de exemplo que você copia e personaliza. Esta página trata das variáveis de ambiente para APIs, aplicativos web e aplicativos móveis, incluindo como escolher entre os destinos de API de demonstração e local.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Instale os [pré-requisitos](./prerequisites) para seu projeto
-- Clone o repositório do projeto em que deseja trabalhar
-- Revise a [Visão Geral do Projeto](./project-overview) para entender quais módulos de API seu projeto precisa
+- Instale os [pré-requisitos](./prerequisites) para o seu projeto
+- Clone o repositório do projeto em que você quer trabalhar
+- Revise a [Visão geral do projeto](./project-overview) para entender quais módulos de API o seu projeto precisa
 
 </div>
 
-## Padrão Geral
+## Padrão geral
 
-1. Procure por `dotenv.sample.txt` ou `.env.sample` na raiz do projeto.
-2. Copie para `.env`.
+1. Procure `dotenv.sample.txt` ou `.env.sample` na raiz do projeto.
+2. Copie-o para `.env`.
 3. Edite os valores conforme necessário.
 
 ```bash
-# Exemplo para um projeto com .env.sample
+# Example for a project with .env.sample
 cp .env.sample .env
 
-# Exemplo para um projeto com dotenv.sample.txt
+# Example for a project with dotenv.sample.txt
 cp dotenv.sample.txt .env
 ```
 
 :::warning
-**Nunca faça commit de arquivos `.env` no controle de versão.** Eles contêm segredos como credenciais de banco de dados, chaves de API e segredos JWT. Todos os projetos ChurchApps incluem `.env` no `.gitignore`, mas sempre verifique novamente antes de fazer commit.
+**Nunca faça commit de arquivos `.env` no controle de versão.** Eles contêm segredos como credenciais de banco de dados, chaves de API e segredos JWT. Todos os projetos do ChurchApps incluem `.env` no `.gitignore`, mas sempre confira antes de fazer commit.
 :::
 
-## Escolhendo um Alvo de API
+## Escolhendo o destino da API
 
-A decisão mais importante é para onde seu frontend aponta para chamadas de API. Existem duas opções:
+A decisão mais importante é para onde o seu frontend aponta as chamadas de API. Há duas opções:
 
-### Opção 1: APIs de Staging (Recomendado para Desenvolvimento Frontend)
+### Opção 1: APIs de demonstração (recomendado para desenvolvimento de frontend)
 
-Use o ambiente de staging compartilhado. Nenhuma configuração local de API ou banco de dados é necessária.
+Use o ambiente de demonstração compartilhado. Não é necessário configurar API ou banco de dados locais. Ele executa o código mais recente da `main`, e seus dados de exemplo são recarregados todas as noites.
 
 ```bash
-# Padrão de URL base
-https://api.staging.churchapps.org/{module}
+# Base URL pattern
+https://api.demo.churchapps.org/{module}
 
-# Exemplos de URLs de módulos
-https://api.staging.churchapps.org/membership
-https://api.staging.churchapps.org/attendance
-https://api.staging.churchapps.org/content
-https://api.staging.churchapps.org/giving
-https://api.staging.churchapps.org/messaging
-https://api.staging.churchapps.org/doing
+# Example module URLs
+https://api.demo.churchapps.org/membership
+https://api.demo.churchapps.org/attendance
+https://api.demo.churchapps.org/content
+https://api.demo.churchapps.org/giving
+https://api.demo.churchapps.org/messaging
+https://api.demo.churchapps.org/doing
 ```
 
-### Opção 2: API Local
+:::warning
+O ambiente de staging (`api.staging.churchapps.org`, `api.staging.lessons.church` e hosts relacionados) foi desativado. Alguns arquivos `.env` de exemplo ainda podem conter URLs de staging; substitua-as pelos valores de demonstração ou locais mostrados nesta página. Não existe uma API Lessons compartilhada de não produção -- execute o [LessonsApi](https://github.com/ChurchApps/LessonsApi) localmente (ele escuta na porta `8090`) quando precisar dela.
+:::
+
+### Opção 2: API local
 
 Execute o projeto Api na sua máquina. Requer MySQL 8.0+ com bancos de dados criados para cada módulo. Veja o guia de [configuração local da API](../api/local-setup).
 
 ```bash
-# Padrão de URL base
+# Base URL pattern
 http://localhost:8084/{module}
 
-# Exemplos de URLs de módulos
+# Example module URLs
 http://localhost:8084/membership
 http://localhost:8084/attendance
 http://localhost:8084/content
@@ -77,133 +81,112 @@ http://localhost:8084/doing
 
 ---
 
-## Variáveis de Ambiente da API
+## Variáveis de ambiente da API
 
-O projeto principal **Api** (`.env.sample`) tem a maior configuração. Aqui estão as variáveis principais:
+O projeto **Api** principal (`.env.sample`) tem a configuração mais extensa. Estas são as variáveis principais:
 
-### Configurações Compartilhadas
+### Configurações compartilhadas
 
 | Variável | Descrição | Exemplo |
 |----------|-----------|---------|
 | `ENVIRONMENT` | Ambiente de execução | `dev` |
-| `SERVER_PORT` | Porta HTTP para o servidor de desenvolvimento local | `8084` |
+| `SERVER_PORT` | Porta HTTP do servidor de desenvolvimento local | `8084` |
 | `ENCRYPTION_KEY` | Chave de criptografia de 192 bits para dados sensíveis | `aSecretKeyOfExactly192BitsLength` |
 | `JWT_SECRET` | Segredo para assinar JSON Web Tokens | `jwt-secret-dev` |
-| `FILE_STORE` | Onde armazenar arquivos enviados (`disk` ou `s3`) | `disk` |
-| `CORS_ORIGIN` | Origens CORS permitidas (`*` para dev local) | `*` |
+| `FILE_STORE` | Onde armazenar os arquivos enviados (`disk` ou `s3`) | `disk` |
+| `CORS_ORIGIN` | Origens CORS permitidas (`*` para desenvolvimento local) | `*` |
 
-### Conexões de Banco de Dados
+### Conexão com o banco de dados
 
-Cada módulo da API tem seu próprio banco de dados MySQL e string de conexão:
+Uma única URL base aponta a API para o MySQL. A API deriva um banco de dados por módulo (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting`) a partir dessa base.
 
-| Variável | Banco de Dados |
-|----------|----------------|
-| `MEMBERSHIP_CONNECTION_STRING` | `mysql://root:password@localhost:3306/membership` |
-| `ATTENDANCE_CONNECTION_STRING` | `mysql://root:password@localhost:3306/attendance` |
-| `CONTENT_CONNECTION_STRING` | `mysql://root:password@localhost:3306/content` |
-| `GIVING_CONNECTION_STRING` | `mysql://root:password@localhost:3306/giving` |
-| `MESSAGING_CONNECTION_STRING` | `mysql://root:password@localhost:3306/messaging` |
-| `DOING_CONNECTION_STRING` | `mysql://root:password@localhost:3306/doing` |
+| Variável | Exemplo |
+|----------|---------|
+| `API_DATABASE_URL` | `mysql://root:password@localhost:3306` |
 
 :::tip
-Atualize `root:password` com suas credenciais reais do MySQL. Cada banco de dados deve ser criado antes de executar a API. Use `npm run initdb` para criar o esquema de todos os módulos, ou `npm run initdb:membership` para um único módulo.
+Substitua `root:password` pelas suas credenciais reais do MySQL. Cada banco de dados por módulo precisa existir antes de executar a API. Use `npm run initdb` para criar o esquema de todos os módulos, ou `npm run initdb:membership` para um único módulo.
 :::
 
-### Configurações de WebSocket
+### Configurações do WebSocket
 
 | Variável | Descrição | Exemplo |
 |----------|-----------|---------|
-| `SOCKET_PORT` | Porta para o servidor WebSocket | `8087` |
-| `SOCKET_URL` | URL WebSocket para conexão dos clientes | `ws://localhost:8087` |
+| `SOCKET_PORT` | Porta do servidor WebSocket | `8087` |
+| `SOCKET_URL` | URL do WebSocket para os clientes se conectarem | `ws://localhost:8087` |
 
 ---
 
-## Variáveis de Ambiente de Aplicações Web
+## Variáveis de ambiente dos aplicativos web
 
 ### B1Admin (React + Vite)
 
 Arquivo de exemplo: `.env.sample`
 
-| Variável | Descrição | Exemplo (Staging) |
-|----------|-----------|-------------------|
+| Variável | Descrição | Exemplo (Demo) |
+|----------|-----------|----------------|
 | `REACT_APP_STAGE` | Nome do ambiente | `demo` |
 | `PORT` | Porta do servidor de desenvolvimento | `3101` |
-| `REACT_APP_MEMBERSHIP_API` | URL da API de Membros | `https://api.staging.churchapps.org/membership` |
-| `REACT_APP_ATTENDANCE_API` | URL da API de Presença | `https://api.staging.churchapps.org/attendance` |
-| `REACT_APP_GIVING_API` | URL da API de Doações | `https://api.staging.churchapps.org/giving` |
-| `REACT_APP_CONTENT_ROOT` | URL de entrega de conteúdo | `https://content.staging.churchapps.org` |
+| `REACT_APP_API_BASE` | URL base única para todas as APIs do ChurchApps (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` são acrescentados automaticamente) | `https://api.demo.churchapps.org` |
+| `REACT_APP_CONTENT_ROOT` | URL de entrega de conteúdo | `https://democontent.churchapps.org` |
 | `REACT_APP_GOOGLE_ANALYTICS` | ID do Google Analytics (opcional) | `UA-123456789-1` |
 
-Para desenvolvimento local da API, descomente e use as variantes `localhost`:
+Para o desenvolvimento com API local, aponte a URL base para a sua estrutura local:
 
 ```bash
-REACT_APP_MEMBERSHIP_API=http://localhost:8084/membership
-REACT_APP_ATTENDANCE_API=http://localhost:8084/attendance
-REACT_APP_GIVING_API=http://localhost:8084/giving
-REACT_APP_CONTENT_API=http://localhost:8084/content
-REACT_APP_DOING_API=http://localhost:8084/doing
-REACT_APP_MESSAGING_API=http://localhost:8084/messaging
+REACT_APP_API_BASE=http://localhost:8084
 ```
 
 ### B1App (Next.js)
 
 Arquivo de exemplo: `.env.sample`
 
-| Variável | Descrição | Exemplo (Staging) |
-|----------|-----------|-------------------|
-| `NEXT_PUBLIC_MEMBERSHIP_API` | URL da API de Membros | `https://api.staging.churchapps.org/membership` |
-| `NEXT_PUBLIC_ATTENDANCE_API` | URL da API de Presença | `https://api.staging.churchapps.org/attendance` |
-| `NEXT_PUBLIC_GIVING_API` | URL da API de Doações | `https://api.staging.churchapps.org/giving` |
-| `NEXT_PUBLIC_MESSAGING_API` | URL da API de Mensagens | `https://api.staging.churchapps.org/messaging` |
-| `NEXT_PUBLIC_CONTENT_API` | URL da API de Conteúdo | `https://api.staging.churchapps.org/content` |
-| `NEXT_PUBLIC_CONTENT_ROOT` | URL de entrega de conteúdo | `https://staging.churchapps.org/content` |
-| `NEXT_PUBLIC_CHURCH_APPS_URL` | URL base do ChurchApps | `https://staging.churchapps.org` |
+| Variável | Descrição | Exemplo (Demo) |
+|----------|-----------|----------------|
+| `NEXT_PUBLIC_API_BASE` | URL base única para todas as APIs do ChurchApps (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` são acrescentados automaticamente) | `https://api.demo.churchapps.org` |
+| `NEXT_PUBLIC_CONTENT_ROOT` | URL de entrega de conteúdo | `https://democontent.churchapps.org` |
 | `NEXT_PUBLIC_GOOGLE_ANALYTICS` | ID do Google Analytics (opcional) | `UA-123456789-1` |
 
 :::info
-O Next.js requer o prefixo `NEXT_PUBLIC_` para qualquer variável de ambiente que precise estar disponível no navegador. Variáveis apenas do servidor não precisam desse prefixo.
+O Next.js exige o prefixo `NEXT_PUBLIC_` para qualquer variável de ambiente que precise estar disponível no navegador. Variáveis usadas somente no servidor não precisam desse prefixo.
 :::
 
 ### LessonsApp (Next.js)
 
 Arquivo de exemplo: `dotenv.sample.txt`
 
-| Variável | Descrição | Exemplo (Staging) |
-|----------|-----------|-------------------|
-| `STAGE` | Estágio do ambiente | `staging` |
-| `NEXT_PUBLIC_LESSONS_API` | URL da API de Lições | `https://api.staging.lessons.church` |
-| `NEXT_PUBLIC_CONTENT_ROOT` | URL de entrega de conteúdo | `https://api.staging.lessons.church/content` |
-| `NEXT_PUBLIC_CHURCH_APPS_URL` | URL base do ChurchApps | `https://staging.churchapps.org` |
+| Variável | Descrição | Exemplo (API Lessons local) |
+|----------|-----------|----------------------------|
+| `STAGE` | Estágio do ambiente (deixe sem definir ou use `dev` para desenvolvimento local) | `dev` |
+| `NEXT_PUBLIC_LESSONS_API` | URL da API Lessons | `http://localhost:8090` |
+| `NEXT_PUBLIC_CONTENT_ROOT` | URL de entrega de conteúdo | `http://localhost:8090/content` |
+| `NEXT_PUBLIC_API_BASE` | URL base da API do ChurchApps usada para o login (somente respeitada quando `STAGE` não estiver definido ou for `dev`) | `https://api.demo.churchapps.org` |
 
 ---
 
-## Variáveis de Ambiente de Aplicações Móveis
+## Variáveis de ambiente dos aplicativos móveis
 
 ### B1Mobile (React Native / Expo)
 
 Arquivo de exemplo: `dotenv.sample.txt`
 
-| Variável | Descrição | Exemplo (Staging) |
-|----------|-----------|-------------------|
+| Variável | Descrição | Exemplo (Demo) |
+|----------|-----------|----------------|
 | `STAGE` | Nome do ambiente | `dev` |
-| `MEMBERSHIP_API` | URL da API de Membros | `https://api.staging.churchapps.org/membership` |
-| `MESSAGING_API` | URL da API de Mensagens | `https://api.staging.churchapps.org/messaging` |
-| `ATTENDANCE_API` | URL da API de Presença | `https://api.staging.churchapps.org/attendance` |
-| `GIVING_API` | URL da API de Doações | `https://api.staging.churchapps.org/giving` |
-| `DOING_API` | URL da API de Tarefas | `https://api.staging.churchapps.org/doing` |
-| `CONTENT_API` | URL da API de Conteúdo | `https://api.churchapps.org/content` |
-| `CONTENT_ROOT` | URL de entrega de conteúdo | `https://content.staging.churchapps.org` |
-| `LESSONS_ROOT` | URL do site de lições | `https://staging.lessons.church` |
+| `MEMBERSHIP_API`, `ATTENDANCE_API`, `GIVING_API`, `DOING_API`, `MESSAGING_API`, `CONTENT_API` | Uma URL por módulo de API do ChurchApps (cada uma usa a produção por padrão quando não definida) | `https://api.demo.churchapps.org/membership` |
+| `LESSONS_API` | API Lessons (host separado; não há uma compartilhada de não produção) | `https://api.lessons.church` |
+| `CONTENT_ROOT` | URL de entrega de conteúdo | `https://democontent.churchapps.org` |
+| `LESSONS_ROOT` | URL do site Lessons | `https://lessons.church` |
 
 :::info
-Aplicações móveis não usam o prefixo `REACT_APP_` ou `NEXT_PUBLIC_`. O acesso às variáveis de ambiente é gerenciado pela configuração do Expo.
+Os aplicativos móveis não usam o prefixo `REACT_APP_` nem `NEXT_PUBLIC_`. O acesso às variáveis de ambiente é tratado pela configuração do Expo.
 :::
 
 ---
 
-## Referência Rápida: Localização dos Arquivos de Exemplo
+## Referência rápida: locais dos arquivos de exemplo
 
-| Projeto | Arquivo de Exemplo |
+| Projeto | Arquivo de exemplo |
 |---------|-------------------|
 | Api | `.env.sample` |
 | B1Admin | `.env.sample` |

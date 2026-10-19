@@ -50,6 +50,6 @@ Du kan få adgang til skærmen **Udbydere** til enhver tid fra sidelinjen neders
 
 ## Relaterede artikler
 
-- **[Klasseværelses-tilstand](../classroom-mode/)** - Fuld vejledning til parring med et klasseværelse
+- **[Klasseværelses-tilstand](../scheduled-mode/)** - Fuld vejledning til parring med et klasseværelse
 - **[Plan-tilstand](../plan-mode/)** - Fuld vejledning til parring med en serviceplah
 - **[Indholdsudbydere](../content-providers/)** - Gennemse og download indhold fra eksterne kilder

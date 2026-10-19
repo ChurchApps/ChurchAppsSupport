@@ -32,7 +32,7 @@ Haga clic en cualquier respuesta para ver todos los detalles. Verá todas las re
 
 Haga clic en el **icono de impresora** junto a la respuesta para imprimir las respuestas completadas de esa persona. Es útil para un archivo en papel o para una autorización firmada que necesite conservar. La impresión muestra en la parte superior el logotipo de su iglesia (el **Light Background Logo** de [Website > Appearance](../website/appearance.md), si ha subido uno), con el nombre de su iglesia debajo. Esto es distinto de [imprimir un formulario en blanco](./creating-forms.md#printing-a-blank-form): aquí se imprimen las respuestas ya enviadas por una persona, no una copia vacía. El mismo icono de impresión aparece en cualquier lugar donde se muestre una respuesta, incluido el [perfil de una persona](../people/adding-people.md#working-with-forms).
 
-## Cambiar la persona asociada a una respuesta
+## Cambiar la persona asociada a una respuesta {#changing-the-person-on-a-submission}
 
 Si una respuesta está vinculada a la persona equivocada (por ejemplo, dos miembros de una familia comparten una dirección de correo electrónico), puede moverla a la persona correcta o desvincularla.
 

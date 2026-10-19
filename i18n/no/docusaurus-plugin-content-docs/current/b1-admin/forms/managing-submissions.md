@@ -32,7 +32,7 @@ Klikk på en innsending for å se alle detaljene. Du ser alle svarene personen g
 
 Klikk **utskriftsikonet** ved siden av innsendingen for å skrive ut den personens utfylte svar – nyttig for en papirarkiv eller en signert frigivelse du må ha tilgjengelig. Utskriften viser menighetens logo (**logoen for lys bakgrunn** fra [Nettside > Utseende](../website/appearance.md), hvis du har lastet opp en) med menighetens navn under øverst. Dette er adskilt fra [utskrift av et tomt skjema](./creating-forms.md#printing-a-blank-form); den skriver ut én persons allerede innsendte svar, ikke en tom kopi. Det samme utskriftsikonet vises overalt der en innsending vises, inkludert på [en persons profil](../people/adding-people.md#working-with-forms).
 
-## Endre personen på en innsending
+## Endre personen på en innsending {#changing-the-person-on-a-submission}
 
 Hvis en innsending er knyttet til feil person – for eksempel hvis to familiemedlemmer deler en e-postadresse – kan du flytte den til riktig person eller koble den fra.
 

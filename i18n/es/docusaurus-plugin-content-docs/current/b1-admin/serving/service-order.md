@@ -1,32 +1,32 @@
 ---
-title: "Orden del Servicio"
+title: "Orden del servicio"
 ---
 
-# Orden del Servicio
+# Orden del servicio
 
 <div class="article-intro">
 
-El orden del servicio define la secuencia de elementos en tu servicio de adoración. Úsalo para diseñar todo desde la canción de apertura hasta la oración de cierre, para que todo tu equipo conozca el flujo del servicio con anticipación.
+El orden del servicio define la secuencia de elementos de su servicio de adoración. Úselo para organizar todo, desde el cántico de apertura hasta la oración de cierre, para que todo su equipo conozca de antemano el desarrollo del servicio.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Empezar</h4>
+<h4>Antes de Comenzar</h4>
 
-- [Crea un plan de servicio](./plans.md) para la fecha para la cual quieres construir un orden del servicio
-- Opcionalmente, añade [canciones](./songs.md) a tu biblioteca para que puedas vincularlas directamente en el orden del servicio
+- [Cree un plan de servicio](./plans.md) para la fecha en la que desea armar un orden del servicio
+- Opcionalmente, agregue [canciones](./songs.md) a su biblioteca para poder vincularlas directamente al orden del servicio
 
 </div>
 
-## Acceder al Orden del Servicio
+## Acceder al orden del servicio
 
-1. Ve a **Servicio** y selecciona tu ministerio.
-2. Haz clic en un **tipo de plan**, luego abre un **plan** específico.
-3. La sección **Orden del Servicio** está en la parte superior de la página del plan, encima de **Asignaciones del Equipo de Servicio**.
+1. Vaya a **Servir** y seleccione su ministerio.
+2. Haga clic en un **tipo de plan** y luego abra un **plan** específico.
+3. La sección **Orden del servicio** está en la parte superior de la página del plan, encima de **Asignaciones del equipo de servicio**.
 
-## Construir Tu Orden del Servicio
+## Armar su orden del servicio
 
-El orden del servicio es una lista de elementos dispuestos en la secuencia en que ocurrirán durante el servicio. Los elementos comunes incluyen:
+El orden del servicio es una lista de elementos organizados en la secuencia en que ocurrirán durante el servicio. Los elementos comunes incluyen:
 
 - Canciones de adoración
 - Oraciones
@@ -36,100 +36,106 @@ El orden del servicio es una lista de elementos dispuestos en la secuencia en qu
 - Ofrenda
 - Cierre
 
-## Añadir Elementos al Orden del Servicio
+## Agregar elementos al orden del servicio
 
-1. En la sección **Orden del Servicio**, haz clic en **Añadir** y elige qué añadir: **Añadir Sección** (un encabezado que agrupa elementos), **Elemento** (un elemento personalizado), **Canción** (de tu biblioteca) o **Añadir desde Lección**. También puedes hacer clic en **Añadir Sección** directamente.
-2. Para añadir algo dentro de una sección, usa el menú de añadir en el encabezado de esa sección y elige **Canción**, **Elemento** o **Elemento Externo**.
-3. Ingresa los detalles para el elemento, como el título y cualquier nota.
-4. Haz clic en **Guardar**.
-
-:::tip
-Puedes añadir canciones directamente de tu biblioteca de [Canciones](./songs.md). Esto vincula los detalles de la canción, incluyendo letras y arreglos, a tu plan de servicio para que tu equipo de adoración tenga todo lo que necesita.
-:::
-
-### Importar Múltiples Elementos de un Proveedor Externo
-
-Elegir **Elemento Externo** (o **Añadir desde Lección**) abre un navegador para tus proveedores de lecciones vinculados en lugar de un formulario de elemento único. Navega (o busca) en el contenido de un proveedor y marca la casilla al lado de cada sección o acción que desees. El diálogo rastrea cuántos has seleccionado (por ejemplo, "3 seleccionados") -- haz clic en **Importar (3)** para añadirlos todos al orden del servicio a la vez, en lugar de repetir el flujo de añadir elemento para cada uno.
+1. En la sección **Orden del servicio**, haga clic en **Agregar** y elija qué agregar: **Agregar sección** (un encabezado que agrupa elementos), **Elemento** (un elemento personalizado), **Canción** (de su biblioteca) o **Agregar desde lección**. También puede hacer clic directamente en **Agregar sección**.
+2. Para agregar algo dentro de una sección, use el menú de agregar en el encabezado de esa sección y elija **Canción**, **Elemento** o **Elemento externo**.
+3. Escriba los datos del elemento, como el título y las notas.
+4. Haga clic en **Guardar**.
 
 :::tip
-Esta es la forma más rápida de extraer todos los elementos de lecciones completos en un orden del servicio en una pasada, en lugar de añadir cada elemento individualmente.
+Puede agregar canciones directamente desde su biblioteca de [Canciones](./songs.md). Esto vincula los detalles de la canción, incluidas la letra y los arreglos, a su plan de servicio para que su equipo de adoración tenga todo lo que necesita.
 :::
 
-## Reordenar Elementos
+### Importar varios elementos desde un proveedor externo
 
-Arrastra elementos por el mango a la izquierda de cada fila para reorganizar el orden -- suelta en la línea azul donde quieres que caiga el elemento, o en un encabezado de sección para moverlo a esa sección. La secuencia mostrada en pantalla es el orden que tu equipo seguirá durante el servicio.
+Al elegir **Elemento externo** (o **Agregar desde lección**) se abre un explorador para sus proveedores de lecciones vinculados, en lugar de un formulario para un solo elemento. Explore (o busque) el contenido de un proveedor y marque la casilla de cada sección o acción que desee. El diálogo indica cuántos ha seleccionado (por ejemplo, "3 seleccionados"); haga clic en **Importar (3)** para agregar todos al orden del servicio a la vez, en lugar de repetir el proceso de agregar elemento por elemento.
 
-## Editar una Sección de Lección
+Algunos proveedores, como GO! Curriculum, Dropbox, Google Drive y OneDrive, entregan una lección como un conjunto de archivos (videos, diapositivas, imágenes) en lugar de secciones. Cuando explora uno de estos proveedores en **Agregar desde lección**, los archivos aparecen junto a las carpetas; haga clic en un archivo para agregarlo al orden del servicio como su propio elemento.
 
-Las secciones de lección y plan de estudios (por ejemplo, "Grupo Grande" o "Participar 1") contienen sus propias líneas de guión, diapositivas y videos. Para cambiar lo que está dentro de uno, haz clic en la sección en el orden del servicio. La sección se abre mostrando todo en ella: las líneas habladas e instrucciones aparecen como texto completo marcado como **Decir**, **Hacer** o **Nota**, y las diapositivas o videos aparecen con una miniatura.
+:::tip
+Esta es la forma más rápida de incorporar todas las secciones y señales de una lección al orden del servicio en una sola pasada, en lugar de agregar cada elemento por separado.
+:::
 
-- Haz clic en la **x** al lado de cualquier línea para sacarla de tu plan. Permanece en la lista, tachada, con una flecha para ponerla de vuelta.
-- Haz clic en cualquier texto para reformularlo. Una línea reformulada ofrece **restaurar redacción original**.
-- Haz clic en **Guardar**. La sección permanece como una sola fila en tu orden del servicio, con una pequeña etiqueta como **6 de 8 elementos** mostrando que la has personalizado, y su tiempo de ejecución se actualiza.
+### Personalizar una lección vinculada
 
-Abre la sección de nuevo en cualquier momento para ver tus cambios, poner líneas de vuelta, o elige **Restaurar sección original** para deshacer todos ellos. Tus ediciones solo afectan tu plan -- la lección original nunca se cambia -- y se llevan a través de planes impresos y de lo que tus voluntarios ven.
+Cuando un plan tiene una lección vinculada, el orden del servicio muestra primero una **Vista previa de la lección** de esa lección. Haga clic en **Personalizar** (o agregue una sección, un elemento o una canción) para copiar las secciones de la lección al plan y poder editarlas. En las lecciones que son solo una lista de archivos, como las lecciones de GO! Curriculum, los archivos se agrupan bajo una sección con el nombre de la lección, de modo que todavía tiene una barra de sección donde agregar sus propios elementos.
 
-Si necesitas un elemento de la sección como su propia fila (por ejemplo, para colocar una canción entre dos líneas), haz clic en la flecha al final derecho de la fila de la sección para mostrar su contenido como filas separadas. Haz clic en la flecha en la primera de esas filas para plegarlas de vuelta en una. Esto funciona de la misma manera para contenido de cualquier proveedor conectado.
+## Reordenar elementos
 
-Los voluntarios asignados a un elemento aparecen al lado en el orden del servicio, para que cualquiera que revise el plan pueda ver quién está cubriendo cada parte de un vistazo.
+Arrastre los elementos por el controlador a la izquierda de cada fila para reorganizarlos: suéltelos sobre la línea azul donde quiera que quede el elemento, o sobre el encabezado de una sección para moverlo dentro de esa sección. La secuencia que se muestra en pantalla es el orden que seguirá su equipo durante el servicio.
 
-## Tiempo y Medios
+## Editar una sección de lección
 
-Cada elemento y sección muestra cuánto tiempo se ejecuta y cuándo comienza:
+Las secciones de lección y de currículo (por ejemplo, "Grupo grande" o "Engage 1") contienen sus propias líneas de guion, diapositivas y videos. Para cambiar lo que contienen, haga clic en la sección dentro del orden del servicio. La sección se abre mostrando todo su contenido: las líneas habladas y de instrucción aparecen como texto completo marcado como **Decir**, **Hacer** o **Nota**, y las diapositivas o videos aparecen con una miniatura.
 
-- Si el plan tiene una sola hora de servicio seleccionada, el carril izquierdo muestra la **hora del reloj** real en que comienza cada elemento (por ejemplo, 9:14 AM). De lo contrario muestra tiempo transcurrido desde el inicio del servicio.
-- Los encabezados de sección suman el tiempo de ejecución de todo dentro de ellos.
-- Las canciones y elementos personalizados cuentan hacia este horario una vez que ingresas **Minutos**/**Segundos** en la pantalla de edición del elemento.
-- Los elementos que añades de tu biblioteca de medios (imágenes o clips de video) muestran una **miniatura** y se cronometran automáticamente -- la duración de un video se mide desde el archivo mismo, mientras que una imagen contribuye una estimación de planificación de ~5:00 (mostrada en cursiva) ya que permanece en pantalla hasta que un operador la avanza. Aún puedes editar cualquiera a una duración específica.
+- Haga clic en la **x** junto a cualquier línea para quitarla de su plan. Permanece en la lista, tachada, con una flecha para volver a colocarla.
+- Haga clic en cualquier texto para reformularlo. Una línea reformulada ofrece **restaurar la redacción original**.
+- Haga clic en **Guardar**. La sección sigue siendo una sola fila en el orden del servicio, con una pequeña etiqueta como **6 de 8 elementos** que indica que la personalizó, y su tiempo de duración se actualiza.
 
-## Editar y Eliminar Elementos
+Puede volver a abrir la sección en cualquier momento para ver sus cambios, restaurar líneas o elegir **Restaurar sección original** para deshacer todos. Sus cambios solo afectan a su plan -la lección original nunca se modifica- y se reflejan en los planes impresos y en lo que ven sus voluntarios.
 
-- Haz clic en cualquier elemento en el orden del servicio para **editar** sus detalles.
-- Usa la opción **eliminar** para quitar un elemento del orden.
+Si necesita un elemento de la sección como fila propia (por ejemplo, para colocar una canción entre dos líneas), haga clic en la flecha al extremo derecho de la fila de la sección para mostrar su contenido como filas separadas. Haga clic en la flecha de la primera de esas filas para volver a plegarlas en una sola. Esto funciona igual para el contenido de cualquier proveedor conectado.
+
+Los voluntarios asignados a un elemento aparecen junto a él en el orden del servicio, de modo que cualquiera que revise el plan puede ver de un vistazo quién cubre cada parte.
+
+## Tiempos y medios
+
+Cada elemento y sección muestra cuánto dura y cuándo comienza:
+
+- Si el plan tiene seleccionado un único horario de servicio, la columna izquierda muestra la **hora** real en que comienza cada elemento (por ejemplo, 9:14 a. m.). De lo contrario, muestra el tiempo transcurrido desde el inicio del servicio.
+- Los encabezados de sección suman el tiempo de ejecución de todo lo que contienen.
+- Las canciones y los elementos personalizados cuentan para este programa una vez que ingresa los **Minutos**/**Segundos** en la pantalla de edición del elemento.
+- Los elementos que agrega desde su biblioteca de medios (imágenes o clips de video) muestran una **miniatura** y se cronometran automáticamente: la duración de un video se mide desde el propio archivo, mientras que una imagen aporta una estimación de planificación de ~5:00 (mostrada en cursiva), ya que permanece en pantalla hasta que un operador avanza. Aun así, puede editar cualquiera de los dos para asignarles una duración específica.
+
+## Editar y quitar elementos
+
+- Haga clic en cualquier elemento del orden del servicio para **editar** sus datos.
+- Use la opción **eliminar** para quitar un elemento del orden.
 
 :::info
-El orden del servicio es específico para cada plan. Los cambios que hagas aquí solo afectan el plan seleccionado y no alterarán otros planes o tu biblioteca de canciones.
+El orden del servicio es específico de cada plan. Los cambios que haga aquí solo afectan al plan seleccionado y no alterarán otros planes ni su biblioteca de canciones.
 :::
 
-### Seleccionar en Lote y Eliminar Elementos
+### Seleccionar y eliminar varios elementos
 
-Para limpiar varios elementos en una sección de una vez en lugar de eliminarlos uno por uno:
+Para borrar varios elementos de una sección a la vez, en lugar de eliminarlos uno por uno:
 
-1. Haz clic en **Seleccionar elementos** en el encabezado de la sección.
-2. Marca los elementos que quieres eliminar, o marca **Seleccionar todos en la sección** para agarrar todo directamente bajo esa sección.
-3. Haz clic en **Eliminar Seleccionados** y confirma.
-4. Haz clic en **Terminar selección** para salir del modo de selección.
+1. Haga clic en **Seleccionar elementos** en el encabezado de la sección.
+2. Marque los elementos que desea quitar, o marque **Seleccionar todo en la sección** para tomar todo lo que está directamente debajo de esa sección.
+3. Haga clic en **Eliminar seleccionados** y confirme.
+4. Haga clic en **Terminar selección** para salir del modo de selección.
 
 :::info
-La selección en lote solo se aplica a los hijos directos de una sección, no a elementos anidados dentro de una carpeta de subsección.
+La selección múltiple solo se aplica a los elementos directos de una sección, no a los elementos anidados dentro de una subcarpeta de sección.
 :::
 
-## Incluir Elementos en Tiempos de Servicio Específicos
+## Incluir elementos en horarios de servicio específicos
 
-Si tu plan tiene más de un horario de servicio (por ejemplo, un servicio a las 8 a.m. y a las 10 a.m.), puedes elegir en qué servicios debe aparecer cada elemento. Esto es útil cuando un anuncio solo es relevante para un servicio, o cuando se canta una canción en un servicio pero no en otro.
+Si su plan tiene más de un horario de servicio (por ejemplo, un servicio de 8 a. m. y otro de 10 a. m.), puede elegir en qué servicios aparece cada elemento. Esto es útil cuando un anuncio solo es relevante para un servicio, o cuando una canción se canta en un servicio pero no en otro.
 
-1. Abre un plan que tenga dos o más tiempos de servicio. Haz clic en **Tiempos** en la sección **Asignaciones del Equipo de Servicio** para verlos o añadirlos.
-2. En la sección **Orden del Servicio**, haz clic en un elemento para editarlo.
-3. Bajo **Incluir en Servicios**, verás una casilla para cada hora de servicio, etiquetada con la hora.
-4. Desmarca cualquier servicio donde el elemento debe saltarse.
-5. Haz clic en **Guardar**.
+1. Abra un plan que tenga dos o más horarios de servicio. Haga clic en **Horarios** en la sección **Asignaciones del equipo de servicio** para ver o agregarlos.
+2. En la sección **Orden del servicio**, haga clic en un elemento para editarlo.
+3. En **Incluir en los servicios**, verá una casilla para cada horario de servicio, con la hora como etiqueta.
+4. Desmarque cualquier servicio en el que el elemento deba omitirse.
+5. Haga clic en **Guardar**.
 
-Por defecto, cada elemento se incluye en cada servicio. Los tiempos de servicio excluidos se ocultan cuando imprimes el plan filtrado a ese servicio, para que cada servicio reciba una hoja de ejecución limpia con solo los elementos relevantes.
+De forma predeterminada, cada elemento se incluye en todos los servicios. Los horarios de servicio excluidos se ocultan al imprimir el plan filtrado por ese servicio, de modo que cada servicio recibe una hoja de ejecución limpia con solo los elementos pertinentes.
 
 :::tip
-La sección **Incluir en Servicios** solo aparece cuando el plan tiene más de un horario de servicio. Si solo ves un servicio, haz clic en **Tiempos** en la sección **Asignaciones del Equipo de Servicio** del plan para añadir servicios adicionales primero.
+La sección **Incluir en los servicios** solo aparece cuando el plan tiene más de un horario de servicio. Si solo ve un servicio, haga clic en **Horarios** en la sección **Asignaciones del equipo de servicio** del plan para agregar servicios adicionales primero.
 :::
 
-### Mostrar una Posición Diferente por Servicio
+### Mostrar una posición distinta por servicio
 
-Si un elemento tiene un **Posición** establecida, cada hora de servicio marcada en **Incluir en Servicios** también obtiene su propio menú desplegable **Posición para este servicio**. Úsalo cuando la misma sección está cubierta por un voluntario diferente en cada servicio -- déjalo establecido en **Igual a lo anterior** para mantener la posición predeterminada del elemento, o elige una posición diferente para anularla solo para ese horario de servicio.
+Si un elemento tiene una **Posición** asignada, cada horario de servicio marcado en **Incluir en los servicios** también tiene su propio menú desplegable **Posición para este servicio**. Úselo cuando la misma sección sea cubierta por un voluntario distinto en cada servicio: déjelo en **Igual que arriba** para mantener la posición predeterminada del elemento, o elija otra posición para reemplazarla solo en ese horario de servicio.
 
-## Compartir el Orden del Servicio
+## Compartir el orden del servicio
 
-Una vez que tu orden del servicio está completo, puedes imprimir el plan completo (incluyendo el orden del servicio) con el botón **Imprimir** en la parte superior de la página del plan. Esto le da a tu equipo un resumen completo del servicio, encabezado con el nombre de tu iglesia y el nombre del plan. Cuando **Mostrar Nombres de Voluntarios** está activado para la impresión, cada encabezado de sección también se imprime con la posición del voluntario asignado al lado, para que tu equipo pueda ver quién está cubriendo esa sección sin abrir la aplicación. Si la posición de un encabezado se anula para servicios específicos, la impresión muestra cada nombre de posición distinto al que se resuelve en los servicios en ese plan (por ejemplo, "Equipo de Adoración / Equipo Juvenil").
+Cuando su orden del servicio esté completo, puede imprimir el plan completo (incluido el orden del servicio) con el botón **Imprimir** en la parte superior de la página del plan. Esto le da a su equipo un desglose completo del servicio, encabezado con el nombre de su iglesia y el nombre del plan. Cuando **Mostrar nombres de voluntarios** está activado para la impresión, cada encabezado de sección también imprime la posición del voluntario asignado junto a él, para que su equipo vea quién cubre esa sección sin abrir la app. Si la posición de un encabezado está reemplazada para servicios específicos, la impresión muestra cada nombre de posición distinto que resuelve entre los servicios del plan (por ejemplo, "Equipo de adoración / Equipo juvenil").
 
-## Próximos Pasos
+## Próximos pasos
 
-- Gestiona tu repertorio de adoración en la página [Canciones](./songs.md)
-- Asigna voluntarios al servicio en la sección [Asignaciones del Equipo de Servicio](./plans.md#assigning-team-members) del plan
-- Crea [Tareas](./tasks.md) para cualquier elemento de seguimiento relacionado con el servicio
+- Administre su repertorio de adoración en la página de [Canciones](./songs.md)
+- Asigne voluntarios al servicio en la sección [Asignaciones del equipo de servicio](./plans.md#assigning-team-members) del plan
+- Cree [Tareas](./tasks.md) para cualquier seguimiento relacionado con el servicio

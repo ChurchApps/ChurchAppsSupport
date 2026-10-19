@@ -6,21 +6,21 @@ title: "B1 Admin"
 
 <div class="article-intro">
 
-B1Admin ist das Kirchenverwaltungs-Dashboard — eine React Single-Page-Anwendung gebaut mit Vite und Material-UI. Kirchenmitarbeiter nutzen sie zur Verwaltung von Personen, Gruppen, Anwesenheit, Spenden, Content und mehr.
+B1Admin ist das Verwaltungs-Dashboard der Kirche -- eine React-Single-Page-Anwendung, die mit Vite und Material-UI erstellt wurde. Kirchenmitarbeiter nutzen sie, um Personen, Gruppen, Anwesenheit, Spenden, Inhalte und mehr zu verwalten.
 
 </div>
 
 <div class="prereqs">
-<h4>Vor dem Start</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Installieren Sie **Node.js 22+** und **Git** — siehe [Voraussetzungen](../setup/prerequisites)
-- Konfigurieren Sie Ihr API-Ziel (Staging oder lokal) — siehe [Umgebungsvariablen](../setup/environment-variables)
+- Installieren Sie **Node.js 22+** und **Git** -- siehe [Voraussetzungen](../setup/prerequisites)
+- Konfigurieren Sie Ihr API-Ziel (Demo oder lokal) -- siehe [Umgebungsvariablen](../setup/environment-variables)
 
 </div>
 
-## Setup
+## Einrichtung
 
-### 1. Repository klonen
+### 1. Das Repository klonen
 
 ```bash
 git clone https://github.com/ChurchApps/B1Admin.git
@@ -39,53 +39,53 @@ npm install
 cp dotenv.sample.txt .env
 ```
 
-Öffnen Sie `.env` und konfigurieren Sie die API-Endpoints. Sie können sie entweder auf die Staging-API oder Ihre lokale API-Instanz zeigen lassen.
+Öffnen Sie `.env` und konfigurieren Sie die API-Endpunkte. Sie können sie auf die gemeinsame Demo-API (`https://api.demo.churchapps.org`) oder auf Ihre lokale API-Instanz richten. Die Beispieldatei enthält möglicherweise noch ausgemusterte Staging-URLs; ersetzen Sie diese.
 
-### 4. Dev-Server starten
+### 4. Den Entwicklungsserver starten
 
 ```bash
 npm start
 ```
 
-Dies startet den Vite-Dev-Server. Die App wird in Ihrem Browser mit Hot-Modul-Replacement verfügbar sein.
+Dadurch wird der Vite-Entwicklungsserver gestartet. Die App ist anschließend in Ihrem Browser verfügbar, mit aktiviertem Hot Module Replacement.
 
 ## Wichtige Umgebungsvariablen
 
 | Variable | Beschreibung |
 |----------|-------------|
-| `REACT_APP_STAGE` | Umgebungsname (z.B., `local`, `staging`, `prod`) |
-| `PORT` | Dev-Server-Port (Standard: `3101`) |
-| `REACT_APP_*_API` | API-Endpoint-URLs für jedes Modul |
+| `REACT_APP_STAGE` | Name der Umgebung (z. B. `demo` wie in der Beispieldatei, `prod` oder `selfhost`) |
+| `PORT` | Port des Entwicklungsservers (Standard: `3101`) |
+| `REACT_APP_*_API` | API-Endpunkt-URLs für jedes Modul |
 
 :::info
-Das `postinstall`-Skript kopiert Locale- und CSS-Dateien von `@churchapps/apphelper`. Wenn Komponenten unstyled aussehen, führen Sie `npm run postinstall` manuell aus.
+Das Skript `postinstall` kopiert Sprach- und CSS-Dateien aus `@churchapps/apphelper`. Wenn Komponenten ohne Gestaltung erscheinen, führen Sie `npm run postinstall` manuell aus.
 :::
 
 ## Wichtige Befehle
 
 | Befehl | Beschreibung |
 |---------|-------------|
-| `npm start` | Vite-Dev-Server starten |
-| `npm run build` | Production-Build via Vite |
+| `npm start` | Vite-Entwicklungsserver starten |
+| `npm run build` | Produktionsbuild über Vite |
 | `npm run test` | End-to-End-Tests mit Playwright ausführen |
-| `npm run lint` | ESLint mit Auto-Fix ausführen |
+| `npm run lint` | ESLint mit automatischer Korrektur ausführen |
 
-## Tech-Stack
+## Technologie-Stack
 
 - **React 19** mit TypeScript
-- **Vite** für Build-Tools und Dev-Server
+- **Vite** für Build-Werkzeuge und Entwicklungsserver
 - **Material-UI 7** für UI-Komponenten
-- **React Query 5** für Server-State
-- **`@churchapps/apphelper*`**-Packages für gemeinsame Komponenten
+- **React Query 5** für den Serverzustand
+- **`@churchapps/apphelper*`**-Pakete für gemeinsam genutzte Komponenten
 
-## Deployment
+## Bereitstellung
 
-Production-Builds sind zu **S3 + CloudFront** deployed:
+Produktionsbuilds werden auf **S3 + CloudFront** bereitgestellt:
 
-1. `npm run build` generiert statische Assets
-2. Assets werden zu einem S3-Bucket synced
-3. CloudFront-Invalidation wird ausgelöst, um die neue Version zu servieren
+1. `npm run build` erzeugt statische Assets
+2. Die Assets werden in einen S3-Bucket synchronisiert
+3. Eine CloudFront-Invalidierung wird ausgelöst, damit die neue Version ausgeliefert wird
 
 :::tip
-Für detaillierte Deployment-Anweisungen, siehe [Web-App-Deployment](../deployment/web-apps)-Leitfaden.
+Ausführliche Bereitstellungsanweisungen finden Sie im Leitfaden [Web-App-Bereitstellung](../deployment/web-apps).
 :::

@@ -50,6 +50,6 @@ Ungafinyelela esikrinini se-**Providers** nome ngasiphi sikhatsi kusuka encenyen
 
 ## Timibhalo Lehlobene
 
-- **[Simo Selikilasi](../classroom-mode/)** - Umhlahlandlela lophelele wekuhlanganiswa nelikilasi
+- **[Simo Selikilasi](../scheduled-mode/)** - Umhlahlandlela lophelele wekuhlanganiswa nelikilasi
 - **[Simo Selicebo](../plan-mode/)** - Umhlahlandlela lophelele wekuhlanganiswa nelicebo lenkonzo
 - **[Baniketi Bekucuketfwe](../content-providers/)** - Hlola futsi ulayishe kucuketfwe kusuka etindzaweni tangephandle

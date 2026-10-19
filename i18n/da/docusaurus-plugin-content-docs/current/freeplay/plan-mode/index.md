@@ -12,7 +12,7 @@ Plan-tilstand forbinder dit TV til en kirkestjeneste plan. I stedet for at hente
 
 ## Hvordan det adskiller sig fra klasseværelses-tilstand
 
-- **[Klasseværelses-tilstand](../classroom-mode/)** henter den lektion, der er planlagt til et bestemt rum på en given dato
+- **[Klasseværelses-tilstand](../scheduled-mode/)** henter den lektion, der er planlagt til et bestemt rum på en given dato
 - **Plan-tilstand** henter det indhold, der er knyttet til en plantype, som kan omfatte lektioner, udbyderpræsentationer, tilføjelser og andre media arrangeret i en brugerdefineret rækkefølge
 
 Plan-tilstand er særlig nyttigt, når din serviceplah inkluderer en blanding af indhold fra forskellige kilder, alt organiseret i en enkelt sekvens.

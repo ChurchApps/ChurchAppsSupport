@@ -6,16 +6,16 @@ title: "B1 Mobile"
 
 <div class="article-intro">
 
-B1 Mobile è l'applicazione mobile principale rivolta ai membri di ChurchApps, costruita con React Native ed Expo. Permette ai membri della chiesa di visualizzare le directory, accedere alle donazioni, verificare le presenze, ricevere notifiche e interagire con la loro comunità ecclesiale.
+B1 Mobile è l'app mobile principale per i membri di ChurchApps, sviluppata con React Native ed Expo. Permette ai membri della chiesa di consultare le rubriche, accedere alle donazioni, controllare le presenze, ricevere notifiche e interagire con la propria comunità.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Installa **Node.js** e **Expo CLI** -- vedi [Prerequisiti](../setup/prerequisites)
-- Installa **Android Studio** (per l'emulatore Android) o **Xcode** (per il simulatore iOS)
-- Configura il target API (staging o locale) -- vedi [Variabili di Ambiente](../setup/environment-variables)
+- Installa **Node.js** e **Expo CLI** -- consulta [Prerequisiti](../setup/prerequisites)
+- Installa **Android Studio** (per l'emulatore Android) oppure **Xcode** (per il simulatore iOS)
+- Configura il bersaglio dell'API (demo o locale) -- consulta [Variabili d'ambiente](../setup/environment-variables)
 
 </div>
 
@@ -33,7 +33,7 @@ B1 Mobile è l'applicazione mobile principale rivolta ai membri di ChurchApps, c
    cd B1Mobile && npm install
    ```
 
-3. Configura le variabili di ambiente -- copia il file di esempio e aggiorna gli endpoint API:
+3. Configura le variabili d'ambiente -- copia il file di esempio e aggiorna gli endpoint dell'API:
 
    ```bash
    cp dotenv.sample.txt .env
@@ -46,24 +46,24 @@ B1 Mobile è l'applicazione mobile principale rivolta ai membri di ChurchApps, c
    ```
 
 :::tip
-Puoi utilizzare l'app **Expo Go** su un dispositivo fisico per test rapidi senza configurare Android Studio o Xcode.
+Puoi usare l'app **Expo Go** su un dispositivo fisico per test rapidi senza configurare Android Studio o Xcode.
 :::
 
-## Variabili di Ambiente
+## Variabili d'ambiente
 
 | Variabile | Descrizione |
-|-----------|-------------|
-| `STAGE` | Stage dell'ambiente (es. `dev`, `staging`, `prod`) |
+|----------|-------------|
+| `STAGE` | Fase dell'ambiente (ad es. `dev`, `staging`, `prod`) |
 | `CONTENT_ROOT` | URL radice per la distribuzione dei contenuti |
-| `MEMBERSHIP_API` | Endpoint API Membership |
-| `MESSAGING_API` | Endpoint API Messaging |
-| `ATTENDANCE_API` | Endpoint API Attendance |
-| `GIVING_API` | Endpoint API Giving |
-| `DOING_API` | Endpoint API Doing |
-| `CONTENT_API` | Endpoint API Content |
+| `MEMBERSHIP_API` | Endpoint dell'API Membership |
+| `MESSAGING_API` | Endpoint dell'API Messaging |
+| `ATTENDANCE_API` | Endpoint dell'API Attendance |
+| `GIVING_API` | Endpoint dell'API Giving |
+| `DOING_API` | Endpoint dell'API Doing |
+| `CONTENT_API` | Endpoint dell'API Content |
 | `LESSONS_ROOT` | URL radice per i contenuti delle lezioni |
 
-## Comandi Principali
+## Comandi principali
 
 | Comando | Descrizione |
 |---------|-------------|
@@ -72,7 +72,7 @@ Puoi utilizzare l'app **Expo Go** su un dispositivo fisico per test rapidi senza
 | `npm run ios` | Esegui sul simulatore iOS |
 | `npm run test` | Esegui i test (Jest) |
 
-## Build di Produzione
+## Build di produzione
 
 Prima di creare una build di produzione, aggiorna i numeri di versione in tutti i seguenti file:
 
@@ -87,7 +87,7 @@ Prima di creare una build di produzione, aggiorna i numeri di versione in tutti 
 npm run build:android
 ```
 
-Questo utilizza EAS Build per creare il binario Android.
+Questo usa EAS Build per creare il binario Android.
 
 ### iOS
 
@@ -97,7 +97,7 @@ eas build --platform ios --profile production
 
 ### Aggiornamenti OTA
 
-Per inviare un aggiornamento over-the-air (senza passare dalla revisione dell'app store):
+Per distribuire un aggiornamento over-the-air (senza passare dalla revisione dello store delle app):
 
 ```bash
 npm run update:production
@@ -107,7 +107,7 @@ npm run update:production
 Gli aggiornamenti OTA sono ideali per le modifiche solo JavaScript. Se modifichi codice nativo o dipendenze, devi inviare una build completa allo store.
 :::
 
-## Articoli Correlati
+## Articoli correlati
 
-- **[Distribuzione Mobile](../deployment/mobile)** -- Guida completa alla compilazione, invio e distribuzione delle applicazioni mobile
-- **[Variabili di Ambiente](../setup/environment-variables)** -- Riferimento completo per la configurazione dell'ambiente mobile
+- **[Distribuzione mobile](../deployment/mobile)** -- Guida completa alla creazione, all'invio e alla distribuzione delle app mobili
+- **[Variabili d'ambiente](../setup/environment-variables)** -- Riferimento completo per la configurazione ambientale mobile

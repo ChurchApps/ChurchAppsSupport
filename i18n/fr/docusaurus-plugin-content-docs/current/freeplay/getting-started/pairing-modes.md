@@ -1,55 +1,65 @@
 ---
-title: "Choisir un mode d'appairage"
+title: "Choisir un mode de couplage"
 ---
 
-# Choisir un mode d'appairage
+# Choisir un mode de couplage
 
 <div class="article-intro">
 
-FreePlay propose deux modes d'appairage pour connecter votre téléviseur à votre église, ainsi que la possibilité de parcourir directement les fournisseurs de contenu. L'écran **Sélectionner le mode d'appairage** présente ces options sous forme de grandes cartes que vous pouvez parcourir avec la télécommande de votre téléviseur.
+FreePlay peut faire fonctionner un téléviseur de trois façons. Il peut suivre un calendrier que vous configurez dans FreePlay Admin, suivre un plan de culte de B1 Admin, ou diffuser ce qu'un bénévole choisit avec la télécommande. Les deux types de couplage commencent sur le même écran du téléviseur. L'endroit où vous saisissez le code de couplage détermine le mode utilisé par le téléviseur.
 
 </div>
 
 <div class="prereqs">
-<h4>Avant de commencer</h4>
+<h4>Before You Begin</h4>
 
-- Installez FreePlay et lancez-le pour la première fois -- voir [Mise en route](./index.md)
-- Ayez votre télécommande TV à portée de main pour la navigation
+- Installez FreePlay et lancez-le pour la première fois. Voir [Démarrer](./index.md)
+- Ayez votre télécommande de téléviseur prête pour la navigation
 
 </div>
 
-## Appairer à une salle de classe
+## Obtenir un code de couplage
 
-Choisissez **Appairer à une salle de classe** lorsque vous souhaitez qu'un téléviseur spécifique affiche toujours la leçon programmée pour une salle particulière. C'est la meilleure option pour les salles de classe du ministère des enfants où les leçons sont assignées sur une base hebdomadaire.
+1. Sur le téléviseur, ouvrez **Paramètres** en bas de la barre latérale.
+2. Sélectionnez **Coupler à un calendrier**.
+3. FreePlay affiche un code de couplage de quatre lettres et un code QR. Le code est valable 15 minutes, et FreePlay en affiche automatiquement un nouveau lorsqu'il expire.
 
-**Comment ça fonctionne :** Vous cherchez votre église par son nom, choisissez une salle de classe, et FreePlay récupère automatiquement la leçon programmée pour cette salle aujourd'hui. Chaque dimanche matin, vous n'avez qu'à allumer le téléviseur et la bonne leçon est prête.
+## Mode programmé (FreePlay Admin)
 
-**Idéal pour :** Les téléviseurs de salle de classe dédiés qui doivent toujours afficher le contenu programmé pour cette salle.
+Saisissez le code dans **FreePlay Admin** à l'adresse [admin.freeplay.church](https://admin.freeplay.church) lorsque vous voulez que le téléviseur fonctionne de manière autonome. Vous créez des listes de lecture, vous les placez sur un calendrier pour un groupe d'écrans, et le téléviseur les diffuse aux heures programmées. Personne n'a besoin d'appuyer sur Démarrer.
+
+**Fonctionnement :** scannez le code QR affiché sur le téléviseur, ou rendez-vous sur **freeplay.church/pair**. Choisissez ensuite le groupe d'écrans dont le téléviseur doit suivre le calendrier, puis cliquez sur **Coupler**. Le téléviseur télécharge la semaine à venir et diffuse selon l'horloge, même hors ligne.
+
+**Idéal pour :** la signalétique du hall et des couloirs, les boucles d'annonces, et les salles de classe où la leçon doit déjà être diffusée lorsque les gens arrivent.
+
+Consultez **[Mode programmé](../scheduled-mode/)** pour le guide complet.
+
+## Mode plan (B1 Admin)
+
+Saisissez le code dans **B1 Admin** lorsque vous voulez que le téléviseur suive un type de plan de culte. Le téléviseur télécharge le contenu du plan en cours, et un bénévole appuie sur **Démarrer le plan** pour le lancer.
+
+**Fonctionnement :** dans B1 Admin, ajoutez l'écran avec le code affiché sur le téléviseur, puis choisissez le type de plan sous **Afficher les plans pour**. Chaque semaine, le téléviseur récupère le dernier plan de ce type.
+
+**Idéal pour :** les téléviseurs qui affichent du contenu lié au plan de culte hebdomadaire, lorsque quelqu'un lance la diffusion au bon moment.
+
+Consultez **[Mode plan](../plan-mode/)** pour le guide complet.
 
 :::tip
-Configurez vos salles de classe sur [freeplay.church](https://freeplay.church) avant d'appairer votre téléviseur. Cela garantit que vos salles apparaissent lorsque vous recherchez votre église.
+Vous pouvez aussi diffuser le plan de culte en cours selon un calendrier. Dans FreePlay Admin, ajoutez une entrée au calendrier et choisissez le type de plan sous **Plans de culte**.
 :::
 
-## Appairer à un plan
+## Fournisseurs de contenu (sans couplage)
 
-Choisissez **Appairer à un plan** lorsque vous souhaitez suivre un plan de service d'église. Ce mode génère un code d'appairage que vous entrez dans **B1 Admin** pour lier le téléviseur à un type de plan spécifique. Le téléviseur télécharge ensuite et lit automatiquement le contenu assigné au plan actuel.
+Si vous n'avez pas besoin de coupler le téléviseur, vous pouvez parcourir directement les fournisseurs de contenu. Des fournisseurs comme [Lessons.church](../../lessons-church/) et Bible Project proposent du contenu que vous pouvez télécharger et diffuser quand vous le souhaitez.
 
-**Comment ça fonctionne :** FreePlay affiche un code d'appairage et un code QR à l'écran. Un administrateur ouvre la page liée dans **B1 Admin**, entre le code et choisit le type de plan que l'écran doit suivre dans une liste déroulante **Afficher les plans pour**. Une fois approuvé, le téléviseur charge automatiquement le contenu du plan actuel.
-
-**Idéal pour :** Les téléviseurs qui affichent du contenu lié à votre plan de service hebdomadaire, comme les paroles d'adoration ou les diapositives d'annonces.
-
-## Fournisseurs de contenu
-
-Si vous n'avez pas besoin d'appairer à une salle de classe ou à un plan, vous pouvez parcourir directement les fournisseurs de contenu. Les fournisseurs comme [Lessons.church](../../lessons-church/) et Bible Project proposent du contenu que vous pouvez télécharger et lire à la demande.
-
-**Idéal pour :** Les téléviseurs où les bénévoles choisissent manuellement ce qu'il faut lire chaque semaine, ou lorsque vous souhaitez explorer le contenu disponible.
+**Idéal pour :** les téléviseurs où les bénévoles choisissent chaque semaine ce qui est diffusé, ou lorsque vous voulez découvrir ce qui est disponible.
 
 :::info
-Vous pouvez accéder à l'écran **Fournisseurs** à tout moment à partir de **Paramètres** en bas de la barre latérale. Vous n'avez pas besoin d'utiliser un mode d'appairage pour parcourir et lire du contenu.
+Vous pouvez ouvrir l'écran **Fournisseurs** à tout moment depuis **Paramètres** en bas de la barre latérale. Vous n'avez pas besoin de coupler le téléviseur pour parcourir et diffuser du contenu.
 :::
 
 ## Articles connexes
 
-- **[Mode salle de classe](../classroom-mode/)** - Guide complet pour appairer avec une salle de classe
-- **[Mode plan](../plan-mode/)** - Guide complet pour appairer avec un plan de service
-- **[Fournisseurs de contenu](../content-providers/)** - Parcourir et télécharger du contenu à partir de sources externes
+- **[Mode programmé](../scheduled-mode/)** -- Placer les téléviseurs sur un calendrier avec FreePlay Admin
+- **[Mode plan](../plan-mode/)** -- Guide complet du couplage avec un plan de culte
+- **[Fournisseurs de contenu](../content-providers/)** -- Parcourir et télécharger du contenu depuis des sources externes

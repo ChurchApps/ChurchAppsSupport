@@ -124,5 +124,5 @@ Makakaramdam kang libre na kopyahin at ipadala ang mensahe sa ibaba nang direkta
 - [Service Plans](./plans.md)
 - [Service Order](./service-order.md)
 - [Customizing Lessons](/docs/lessons-church/customization/customizing-lessons)
-- [FreePlay — Playing Lessons sa isang Classroom TV](/docs/freeplay/classroom-mode/playing-lessons)
+- [FreePlay — Playing Lessons sa isang Classroom TV](/docs/freeplay/content-providers/playing-content)
 - [Lessons.church Scheduling Guide](/docs/lessons-church/classrooms/scheduling-lessons)

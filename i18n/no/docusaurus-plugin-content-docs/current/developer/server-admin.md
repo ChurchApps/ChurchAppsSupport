@@ -6,113 +6,113 @@ title: "Serveradministrasjon"
 
 <div class="article-intro">
 
-Funksjonene for serveradministrasjon i ChurchApps er bare tilgjengelige for brukere med tillatelsen **Server.Admin**. Verktøyene brukes til plattformdrift, support og feilsøking på tvers av alle kirker i systemet.
+Funksjoner for serveradministrasjon i ChurchApps er bare tilgjengelige for brukere med tillatelsen **Server.Admin**. Disse verktøyene brukes til plattformdrift, support og feilsøking på tvers av alle menigheter i systemet.
 
 </div>
 
-:::warning Begrenset tilgang
-Funksjonene som beskrives på denne siden krever tillatelsen **Server.Admin** og er ikke tilgjengelige for vanlige kirkeadministratorer. De er kun ment for plattformoperatører og supportpersonell.
+:::warning Tilgang begrenset
+Funksjonene på denne siden krever tillatelsen **Server.Admin** og er ikke tilgjengelige for vanlige menighetsadministratorer. De er kun beregnet på plattformoperatører og supportpersonell.
 :::
 
-## Tilgang til Server Admin
+## Åpne serveradministrasjon
 
-Brukere med tillatelsen Server.Admin får tilgang til serveradministrasjonspanelet fra B1 Admin:
+Brukere med tillatelsen Server.Admin kan åpne serveradministrasjonspanelet fra B1 Admin:
 
 1. Logg inn på [admin.b1.church](https://admin.b1.church)
-2. Åpne [Jump-menyen](../b1-admin/introduction.md#getting-around-with-the-jump-menu), utvid **Innstillinger** og klikk på **Server Admin**. (Du kan også gå rett til `admin.b1.church/admin`.)
-3. Server Admin-panelet lister seksjonene sine nedover venstre side i tre grupper: **Katalog** (Kirker, Brukere, Utgi seg for bruker), **Drift** (Bakgrunnsjobber, Commons, Bruksutvikling) og **System** (Oversettelsesoppslag, Serverhelse, Databasemigreringer)
+2. Åpne [Jump-menyen](../b1-admin/introduction.md#getting-around-with-the-jump-menu), utvid **Innstillinger**, og klikk **Server Admin**. (Du kan også gå direkte til `admin.b1.church/admin`.)
+3. Serveradministrasjonspanelet lister seksjonene sine nedover venstre side i tre grupper: **Katalog** (Menigheter, Brukere, Utgi deg for å være bruker), **Drift** (Bakgrunnsjobber, Commons, Brukstrender) og **System** (Oversettelsesoppslag, Serverhelse, Databasemigreringer)
 
-## Utgi seg for en bruker
+## Brukerimpersonering
 
-Funksjonen for å utgi seg for en bruker lar serveradministratorer logge inn som en annen bruker i forbindelse med support og feilsøking. Det er nyttig når man undersøker problemer brukere har meldt, eller hjelper kirker med å sette opp systemene sine.
+Impersonering gjør det mulig for serveradministratorer å logge inn som en annen bruker i støtte- og feilsøkingsøyemed. Det er nyttig når man undersøker problemer brukere har meldt, eller hjelper menigheter med å sette opp systemene sine.
 
-### Slik utgir du deg for en bruker
+### Slik impersonerer du en bruker
 
-1. Åpne seksjonen **Impersonate User** i Server Admin-panelet
-2. Skriv inn brukerens navn eller e-postadresse i søkefeltet
-3. Klikk på **Søk** eller trykk Enter
-4. Klikk på brukeren du vil utgi deg for, i søkeresultatene
-5. Bekreft i dialogen som vises
-6. Du blir logget inn som den brukeren og sendt videre til vedkommendes konto
+1. Åpne seksjonen **Utgi deg for å være bruker** i serveradministrasjonspanelet
+2. Skriv brukerens navn eller e-postadresse i søkefeltet
+3. Klikk **Søk** eller trykk Enter
+4. Klikk på brukeren du vil impersonere i søkeresultatene
+5. Bekreft impersoneringen i dialogen som vises
+6. Du blir logget inn som den brukeren og sendt videre til kontoen deres
 
 ### Viktige merknader
 
-- Funksjonen oppretter en ny økt med målbrukerens tillatelser og kirketilgang
-- Din opprinnelige administratorøkt avsluttes når du utgir deg for en annen bruker
-- Alle handlinger som utføres mens du utgir deg for en bruker, logges i revisjonssporet
-- For å gå tilbake til administratorkontoen din må du logge ut og inn igjen med dine egne påloggingsopplysninger
-- Bruk funksjonen bare når det er nødvendig av hensyn til support, og informer alltid brukerne når du går inn på kontoene deres for å gi support
+- Impersonering oppretter en ny økt med målbrukerens tillatelser og menighetstilgang
+- Din opprinnelige administratorøkt avsluttes når du impersonerer en annen bruker
+- Alle handlinger som utføres mens du er impersonert, logges i revisjonsloggen
+- For å gå tilbake til administratorkontoen din, logg ut og logg inn igjen med dine legitimasjonsdata
+- Bruk impersonering bare når det er nødvendig for support, og informer alltid brukere når du får tilgang til kontoene deres i supportøyemed
 
 ### API-endepunkt
 
-Funksjonen er bygget på endepunktet `/users/:userId/impersonate` i Membership API. Se [Membership-endepunkter](/docs/developer/api/endpoints/membership#users) for tekniske detaljer.
+Impersoneringsfunksjonen støttes av endepunktet `/users/:userId/impersonate` i Membership-API-et. Se [Membership-endepunkter](/docs/developer/api/endpoints/membership#users) for tekniske detaljer.
 
 ### Sikkerhetshensyn
 
-- Funksjonen krever tillatelsen Server.Admin – denne tillatelsen bør gis sparsomt og bare til pålitelige plattformoperatører
-- Alle hendelser der man utgir seg for en bruker, logges med administratorens bruker-ID og målbrukerens bruker-ID
-- Kirkene får ikke beskjed når dette skjer, så sørg for klare retningslinjer for når og hvordan funksjonen skal brukes
-- Vurder å dokumentere slike hendelser i supportsaksystemet ditt av hensyn til etterprøvbarhet
+- Impersonering krever tillatelsen Server.Admin — denne tillatelsen bør deles ut sparsomt og bare til pålitelige plattformoperatører
+- Alle impersoneringshendelser logges med administratorens bruker-ID og målbrukerens bruker-ID
+- Menigheter varsles ikke når impersonering skjer, så etabler klare retningslinjer for når og hvordan funksjonen skal brukes
+- Vurder å dokumentere impersoneringshendelser i supportsystemet deres for ansvarlighet
 
 ## Commons-moderering
 
-Commons er den delte modereringskøen for brukerinnsendt innhold på tvers av produkter – sanger i WorshipCommons, leksjoner i Lessons.church, maler i FreeShow og maler for B1-nettstedsbyggeren går alle gjennom samme kø i stedet for separate vurderingsverktøy per produkt.
+Commons er den delte moderasjonskøen for brukerinnsendt innhold på tvers av produkter — WorshipCommons-sanger, Lessons.church-leksjoner, FreeShow-maler og B1-nettstedsbyggermaler går alle gjennom samme kø i stedet for separate gjennomgangsverktøy per produkt.
 
-### Få tilgang til Commons
+### Åpne Commons
 
-1. Gå til fanen **Commons** i Server Admin-panelet.
-2. Du ser tre underfaner: **Queue**, **Reports** og **Assets**.
+1. Gå til fanen **Commons** i serveradministrasjonspanelet.
+2. Du ser tre undervaner: **Kø**, **Rapporter** og **Ressurser**.
 
-En begrenset rolle som **musikkredaktør** kan også se fanen Queue, men kan ikke godkjenne innsendinger som endrer rettigheter eller lisensiering for en sang.
+En begrenset rolle for **musikkredaktør** kan også se fanen Kø, men er blokkert fra å godkjenne innsendinger som endrer en sangs rettigheter eller lisensiering.
 
-### Queue
+### Kø
 
-Queue viser alle ventende innsendinger på tvers av alle produkter, og kan filtreres etter produkt og ressurstype. Hver rad viser om innsendingen er en ny ressurs, en endring fra den opprinnelige forfatteren eller en endring fra en tredjepart, sammen med innsenderens godkjenningshistorikk og hvor lenge innsendingen har ventet (merkes når den passerer 72 timer).
+Køen lister alle ventende innsendinger på tvers av alle produkter, filtrerbare etter produkt og ressurstype. Hver rad viser om innsendingen er en ny ressurs, en redigering av den opprinnelige forfatteren, eller en redigering fra en tredjepart, sammen med innsenderens godkjenningshistorikk og hvor lenge innsendingen har ventet (flagges når den har passert 72 timer).
 
-Klikk på **Review** for å åpne en skuff med forskjeller på feltnivå, filforhåndsvisninger og en innebygd skrivebeskyttet forhåndsvisning av elementet. Bruk hurtigtastene **a**/**r** for å godkjenne eller avvise, og **j**/**k** for å gå til neste eller forrige innsending uten å forlate skuffen. Ved avvisning må du velge en begrunnelse (for eksempel quality, duplicate, licensing, ccli, ai eller off-topic) og skrive et notat.
+Klikk **Gjennomgå** for å åpne en panel med feltvise forskjeller, filforhåndsvisninger og en innebygd skrivebeskyttet forhåndsvisning av elementet. Bruk tastatursnarveiene **a**/**r** for å godkjenne eller avvise, og **j**/**k** for å gå til neste eller forrige innsending uten å forlate panelet. Ved avvisning må du velge en årsak (for eksempel kvalitet, duplikat, lisensiering, ccli, ai eller off-topic) og skrive et notat.
 
-### Reports
+### Rapporter
 
-Fanen Reports håndterer opphavsretts- og retningslinje-/kvalitetsrapporter som er sendt inn mot allerede publiserte ressurser, delt i egne køer for Copyright og Policy & Other pluss en historikk over løste saker. Ta en rapport for å begynne å behandle den, og løs den deretter med en avgjørelse (upheld, dismissed eller duplicate) og en handling (none, unpublish eller remove).
+Fanen Rapporter håndterer opphavsrettsrapporter og policy-/kvalitetsrapporter som er sendt inn mot allerede publiserte ressurser, delt i separate køer for Opphavsrett og Policy og annet, pluss en historikk over løste saker. Ta en rapport for å begynne å jobbe med den, og løs den deretter med en løsning (opprettholdt, avvist eller duplikat) og en handling (ingen, avpubliser eller fjern).
 
-### Assets
+### Ressurser
 
-Fanen Assets er en søkbar oversikt over publisert innhold, med handlinger for å **Feature** en ressurs (fremhever den på produktets forside), **Unpublish**/**Republish** den, eller **Remove** den (med en begrunnelse om opphavsrett eller retningslinjer).
+Fanen Ressurser er en søkbar oversikt over publisert innhold, med handlinger for å **Fremhev** en ressurs (den vises på produktets forside), **Avpubliser**/**Publiser på nytt**, eller **Fjern** den (med en opphavsrettslig eller policymessig begrunnelse).
 
-For sanger er dette også stedet der en sang blir **Sunday-ready** og kan vises i sangsøket i en kirkes B1 Admin: en vurderer åpner ressursen og markerer hver publiserte toneart som **Listened** når vedkommende har hørt gjennom den og bekreftet at noter, akkorder og lysbilder alle er til stede. En sang blir først Sunday-ready når alle tonearter er avhuket.
+For sanger er dette også stedet der en sang blir **klar for søndag** og kan vises i en menighets søk etter sanger i B1 Admin: en gjennomgåer åpner ressursen og markerer hver publiserte toneart som **Lyttet** når de har hørt den gjennom og bekreftet at noter, akkorder og lysbilder er til stede. En sang blir først klar for søndag når hver tonearts avkryssingsboks er haket av.
 
 :::info
-Commons-moderering er kun for staben – enkeltkirker ser aldri denne køen. Det eneste stedet der en enkeltkirkes B1 Admin berører Commons-data, er seksjonen «WorshipCommons — free» i [sangsøket](/docs/b1-admin/serving/songs#free-songs-from-worshipcommons), som bare viser sanger som allerede har gått gjennom denne vurderingsprosessen.
+Commons-moderering er kun for ansatte — enkeltmenigheter ser aldri denne køen. Det ene stedet B1 Admin for en enkelt menighet berører Commons-data, er seksjonen «WorshipCommons — gratis» i [sangsøket](/docs/b1-admin/serving/songs#free-songs-from-worshipcommons), som bare viser sanger som allerede har gjennomgått denne prosessen.
 :::
 
-Se siden om [arkitekturen for Content Commons](/docs/developer/architecture/commons) for den underliggende datamodellen og livssyklusen for innsendinger.
+Se siden [Content Commons-arkitektur](/docs/developer/architecture/commons) for den underliggende datamodellen og innsendingslivssyklusen.
 
 ## Godkjenning av gruppe-e-post
 
-Kirker kan ikke sende e-post skrevet av kirken (gruppe-e-post, skjemaoppfølginger, arbeidsflyt-e-poster og kontoinvitasjoner) før en serveradministrator godkjenner dem. Dette hindrer kirker som er registrert av roboter, i å bruke den delte avsenderadressen til ChurchApps til spam.
+Menigheter kan ikke sende menighetsskrevet e-post (gruppe-e-post, oppfølgingsskjemaer, arbeidsflyt-e-poster og kontoinvitasjoner) før en serveradministrator har godkjent det. Dette hindrer botregistrerte menigheter i å bruke ChurchApps' delte avsenderadresse til spam.
 
-1. Åpne fanen **Churches** i Server Admin-panelet.
-2. Hver kirke har en **Group Email**-brikke: **Approved** (grønn) eller **Not approved** (med omriss).
-3. Klikk på brikken og bekreft for å godkjenne kirken, eller for å trekke tilbake en godkjenning.
+1. Åpne fanen **Menigheter** i serveradministrasjonspanelet.
+2. Hver menighet viser en **Gruppe-e-post**-brikke: **Godkjent** (grønn) eller **Ikke godkjent** (kun kantlinje).
+3. Klikk på brikken og bekreft for å godkjenne menigheten, eller for å trekke tilbake en godkjenning.
 
-Kirkens ansatte ber om godkjenning med knappen **Request review** i dialogen for å sende e-post i B1 Admin. Forespørselen sendes på e-post til supportadressen og oppgir kirkens navn, ID, registreringsdato, sted og hvem som ba om den. En kirke kan sende én forespørsel per uke. Se [Grenser for e-post skrevet av kirken](/docs/developer/architecture/notifications#church-authored-email-limits) for den daglige kvoten og den automatiske pausen ved avvisninger og klager.
+Menighetens ansatte ber om godkjenning med knappen **Be om gjennomgang** i dialogen Send e-post i B1 Admin. Forespørselen sendes på e-post til supportadressen og lister menighetens navn, ID, registreringsdato, sted og hvem som ba om den. En menighet kan sende én forespørsel per uke. Se [Begrensninger for menighetsskrevet e-post](/docs/developer/architecture/notifications#church-authored-email-limits) for den daglige kvoten og den automatiske pausen ved returer og klager.
 
-## Databasemigreringer
+## Databasemigreringer {#database-migrations}
 
-Utrullinger endrer ikke databasen. De hostede databasene godtar bare tilkoblinger fra innsiden av Api-ets nettverk, så etter en utgivelse som legger til en migrering, bruker en serveradministrator den fra fanen **Database Migrations**. (Selvhostede Docker-installasjoner kjører fortsatt migreringer automatisk når Api-containeren starter.)
+Arbeidsflyten **Deploy Prod** kjører ventende migreringer selv. De hostede databasene godtar bare tilkoblinger fra innsiden av Api-ets nettverk, så en GitHub-runner kan ikke nå dem; i stedet kaller arbeidsflyten rett etter `serverless deploy` Api-ets `migrate`-Lambda (`api-Prod-migrate`), som kjører alle modulers ventende migreringer med samme runner som denne fanen, og feiler deployen hvis en modul gir feil eller blir avvist. **Rollback Prod** reverserer bare Lambda-koden; migreringer som er kjørt, forblir kjørt. Fanen **Databasemigreringer** brukes til å sjekke status, kjøre det en deploy ikke gjorde (for eksempel i demomiljøet, der deployen ikke migrerer), og baselinjesette moduler uten historikk. (Selv-hostede Docker-installasjoner kjører fortsatt migreringer automatisk når Api-containeren starter.)
 
-Fanen viser gjeldende miljø og én rad per modul (membership, attendance, giving og så videre) med status, antall anvendte og ventende migreringer og den sist anvendte.
+Fanen viser gjeldende miljø og én rad per modul (membership, attendance, giving osv.) med status, antall kjørte og ventende migreringer, og den sist kjørte.
 
-- **Run Pending Migrations** anvender alle ventende migreringer, én modul om gangen, i rekkefølge. Den stopper ved første feil og viser hva som ble anvendt for hver modul.
-- En modul merket **No history** har en database som er eldre enn migreringssporing. Den kjøres aldri automatisk, fordi det ville spilt av gamle datamigreringer over live-tabeller. Klikk i stedet på **Check Schema** for den modulen. Api-et sammenligner tabellene, kolonnene og indeksene hver migrering oppretter, med den live databasen og markerer hver migrering som **Already applied**, **Missing**, **Partly applied** eller **Data only**. Kontrollen endrer ingenting.
-- I kontrollresultatene skriver **Record as Already Applied** de oppdagede migreringene inn i migreringshistorikken uten å kjøre dem (etter en bekreftelse). Alt frem til den siste **Already applied**-migreringen registreres, inkludert **Data only**-migreringer i det området; **Missing**-migreringer blir ventende og kan deretter kjøres som vanlig med **Run Pending Migrations**.
-- En **Partly applied**-migrering blokkerer registrering. Hvis det er trygt å kjøre migreringen på nytt (les den først), kryss av for **Re-run** slik at den forblir ventende og kjøres på nytt fra toppen.
+- **Kjør ventende migreringer** kjører alle ventende migreringer, én modul om gangen, i rekkefølge. Den stopper ved første feil og viser hva som ble kjørt for hver modul.
+- En modul merket **Ingen historikk** har en database som er eldre enn migreringssporing. Den kjøres aldri automatisk, fordi det ville spille av gamle datamigreringer på nytt mot levende tabeller. Klikk i stedet **Sjekk skjema** for den modulen. Api-et sammenligner tabellene, kolonnene og indeksene hver migrering oppretter med den levende databasen, og merker hver migrering som **Allerede kjørt**, **Mangler**, **Delvis kjørt** eller **Kun data**. Ingenting endres av sjekken.
+- I sjekkresultatene skriver **Registrer som allerede kjørt** de oppdagede migreringene inn i migreringshistorikken uten å kjøre dem (etter bekreftelse). Alt opp til den siste migreringen som er **Allerede kjørt**, registreres, inkludert **Kun data**-migreringer i det området; **Mangler**-migreringer forblir ventende og kan deretter kjøres normalt med **Kjør ventende migreringer**.
+- En **Delvis kjørt**-migrering blokkerer registrering. Hvis migreringen er trygg å kjøre på nytt (les den først), huk av **Kjør på nytt** slik at den forblir ventende og kjøres på nytt fra starten.
 
-Server Admin-panelet og CLI-et (`yarn migrate:up`) bruker den samme Kysely-migratoren og tabellen `kysely_migration`, så de er alltid enige om hva som er anvendt. Endepunktene bak er `GET /membership/serverHealth/migrations`, `POST /membership/serverHealth/migrations/:module/run`, `GET .../:module/detect` og `POST .../:module/baseline`, alle bare for Server.Admin.
+Serveradministrasjonspanelet og CLI-en (`yarn migrate:up`) bruker samme Kysely-migrator og tabellen `kysely_migration`, så de er alltid enige om hva som er kjørt. Endepunktene bak er `GET /membership/serverHealth/migrations`, `POST /membership/serverHealth/migrations/:module/run`, `GET .../:module/detect` og `POST .../:module/baseline`, alle kun for Server.Admin.
 
 ## Relaterte sider
 
-- [Autentisering og tillatelser](/docs/developer/api/endpoints/authentication) — Tillatelsesmodellen og JWT-autentisering
-- [Membership-endepunkter](/docs/developer/api/endpoints/membership) — API for bruker- og kirkeadministrasjon
-- [Revisjonslogg](/docs/b1-admin/reports/audit-log) — Se aktivitetslogger for en kirke
-- [Arkitektur for Content Commons](/docs/developer/architecture/commons) — Delt ressursmodell og modereringens livssyklus
+- [Autentisering og tillatelser](/docs/developer/api/endpoints/authentication) — tillatelsesmodellen og JWT-autentisering
+- [Membership-endepunkter](/docs/developer/api/endpoints/membership) — API for brukere og menigheter
+- [Revisjonslogg](/docs/b1-admin/reports/audit-log) — vis aktivitetslogger for en menighet
+- [Content Commons-arkitektur](/docs/developer/architecture/commons) — delt ressursmodell og moderasjonslivssyklus

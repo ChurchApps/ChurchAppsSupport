@@ -27,7 +27,7 @@ The Plans page gives you a clear view of all the service plans you are assigned 
 
 The top of the page shows how many of your upcoming assignments are confirmed and how many still need a reply, plus a **Sign up to serve** button that opens the [volunteer signup](../serving/volunteer-signup.md) page. Below that, the page is organized into sections:
 
-- **Needs your reply** -- Assignments you have not answered yet, each with **Accept** and **Decline** buttons so you can respond without opening the plan. Only shown when something is waiting on you.
+- **Needs your reply** -- Assignments you have not answered yet, each with **Accept** and **Decline** buttons so you can respond without opening the plan. Tapping **Decline** asks you to confirm first. Only shown when something is waiting on you.
 - **Upcoming** -- Your next three assignments. Tap **All upcoming** to see the rest.
 - **Blockout dates** -- Dates when you are unavailable for serving. Tap **Add dates**, choose a **Start date** and **End date**, and tap **Save**. Tap **Remove** next to a blockout to delete it. Your team leaders see these dates so they can schedule around you.
 - **Past** -- How many times you have served this year and when you last served. Tap **Past assignments** to see the full list, which you can filter by year.
@@ -42,7 +42,7 @@ Your church may send **reminders** before the services you are scheduled for, by
 
 Tap any plan to open it. The plan page shows the plan name and service date at the top, followed by these sections:
 
-- **Your assignment** -- Each position you are assigned on this plan, with its team, your status, and the **Service Times** you are needed. If you have not yet responded, tap **Accept** or **Decline** right here.
+- **Your assignment** -- Each position you are assigned on this plan, with its team, your status, and the **Service Times** you are needed. If you have not yet responded, tap **Accept** or **Decline** right here. **Decline** asks you to confirm first.
 - **Service Order** -- The first few items of the service, with a count of how many there are. Tap **Full service order** to see everything. See [Service Order](./service-order.md) for more details.
 - **Serving Teams** -- Who is serving alongside you and in which positions, with a count of people and teams. Tap **All teams** to see every team and its members.
 - **Plan Notes** -- Any notes the plan creator added for the team.
@@ -59,7 +59,13 @@ If something comes up after you have accepted, you can still back out from the p
 3. A confirmation asks **Decline this assignment?** -- "Your team leaders will be notified that you can no longer serve in this position."
 4. Tap **Decline** to confirm, or **Cancel** to keep the assignment.
 
-Your status changes to **Declined**. The **Decline** link is only available until your service time is over -- after that, your assignment can no longer be changed from the plan page.
+Your status changes to **Declined**. The same confirmation appears whenever you tap **Decline** -- on the plan page, in **Needs your reply** on the Plans page, or in **You're serving** on Home -- so a mis-tap never declines an assignment.
+
+## Accepting a Declined Assignment {#accepting-a-declined-assignment}
+
+Changed your mind after declining? Open the plan; under your position, which shows a **Declined** badge, tap **Accept**. Your status changes back to **Accepted**.
+
+The **Decline** and **Accept** links are only available until your service time is over -- after that, your assignment can no longer be changed from the plan page.
 
 :::tip
 If you have multiple assignments across different plans, the list is sorted by date so your upcoming commitments appear first. Check back regularly to stay on top of your schedule.
