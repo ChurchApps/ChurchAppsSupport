@@ -38,9 +38,21 @@ Donations that are still being processed show a **Pending** badge under the amou
 
 Tap **Back to Giving** to return to the Giving page.
 
+## If Your Church Limits Giving History
+
+Your church chooses how much giving history members can see -- see [Giving Statements](../../b1-admin/donations/giving-statements.md#what-members-see-in-b1church):
+
+- **All years** (the default) -- Everything on this page is available.
+- **Through a set year** -- Gifts after that year don't appear in your history, totals, or statements, and the Giving page shows that year's total instead of the current year's. Churches often do this to hold back the current year while they finish corrections.
+- **Hidden** -- The yearly total, **Recent activity**, **All history**, and **Print Statement** are removed from the Giving page. You can still give and manage your recurring gifts and payment methods.
+
+If you open a statement for a year your church hasn't released, you'll see "This giving statement isn't available. Contact your church for a copy."
+
+Your church may also add a **giving note** -- a short message such as its refund policy. It appears at the top of the Giving page, the give form, and **All history**, and is printed at the bottom of your giving statements.
+
 ## Exporting and Printing Statements
 
-Tap **Print Statement** at the top of the Giving page to open a printable giving statement covering the current calendar year in a new tab. To print a different year, open **All history**, pick that year, and tap **Print Statement** next to the total.
+Tap **Print Statement** at the top of the Giving page to open a printable giving statement covering the current calendar year (or the latest year your church has released) in a new tab. To print a different year, open **All history**, pick that year, and tap **Print Statement** next to the total.
 
 :::tip
 Print your statement early in the new year, before you need it for tax filing, while last year's donations are still fresh in your history.

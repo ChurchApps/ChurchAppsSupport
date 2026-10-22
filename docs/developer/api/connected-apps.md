@@ -13,7 +13,7 @@ The B1 API supports OAuth 2.0 so a third-party application can ask each church a
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- An OAuth **client** must be registered (currently by a B1 server admin) before churches can grant it access
+- An OAuth **client** must be registered before churches can grant it access — by a B1 server admin, or by the client itself through [dynamic registration](#dynamic-client-registration)
 - All OAuth endpoints live under the Membership module: `/membership/oauth/...`
 - Access tokens are JWTs — they carry the user's permissions filtered by the granted scopes
 
@@ -48,6 +48,8 @@ Use when your app has a server-side component and can keep `client_secret` priva
      "response_type": "code", "scope": "people:read groups:read", "state": "xyz" }
    ```
 
+   Public clients (no `client_secret`) must also send `"code_challenge": "..."` and `"code_challenge_method": "S256"` (PKCE, RFC 7636). Only `S256` is accepted.
+
    Returns `{ "code": "...", "state": "xyz" }`. The authorization-code endpoint is intentionally an authenticated POST — your app collects the user's B1 JWT (typically by hosting a button in the user's B1 session) and forwards it as part of the consent step.
 
 2. **Exchange code for tokens**
@@ -59,6 +61,8 @@ Use when your app has a server-side component and can keep `client_secret` priva
    { "grant_type": "authorization_code", "code": "...",
      "client_id": "...", "client_secret": "...", "redirect_uri": "..." }
    ```
+
+   If the authorize step sent a `code_challenge`, include the matching `"code_verifier": "..."`. A public client sends the verifier and omits `client_secret`. The token endpoint accepts JSON or form-encoded (`application/x-www-form-urlencoded`) bodies.
 
    Returns the token response:
 
@@ -164,7 +168,9 @@ The scope strings are the same catalog as [API keys](./api-keys#scopes). Best pr
 
 ## OAuth Client Management
 
-OAuth clients (the third-party apps themselves) are currently registered globally by a B1 server admin. Per-church self-registration is on the roadmap — until then, to ship a public connector you contact the ChurchApps team to mint a `client_id` / `client_secret` pair and register your redirect URIs.
+OAuth clients (the third-party apps themselves) are registered globally. A confidential client with a `client_secret` is minted by a B1 server admin — to ship one, contact the ChurchApps team for a `client_id` / `client_secret` pair and register your redirect URIs. Public clients such as MCP connectors can register themselves (below).
+
+Registered redirect URIs must match the `redirect_uri` on the request exactly; a prefix or partial match is rejected.
 
 | Method & Path | Permission | Description |
 |---|---|---|
@@ -172,6 +178,26 @@ OAuth clients (the third-party apps themselves) are currently registered globall
 | `GET /membership/oauth/clients/clientId/:clientId` | — | Get a client by its public id (secret redacted) |
 | `POST /membership/oauth/clients` | Server.Admin | Create or update a client |
 | `DELETE /membership/oauth/clients/:id` | Server.Admin | Delete a client |
+
+### Dynamic Client Registration
+
+`POST /membership/oauth/register` (public, RFC 7591) lets a client such as claude.ai's MCP connector register itself. It's advertised by the API's `/.well-known/oauth-authorization-server` document — see [MCP Server → OAuth Discovery](./mcp#oauth-discovery).
+
+```http
+POST /membership/oauth/register
+Content-Type: application/json
+
+{ "client_name": "My AI assistant", "redirect_uris": ["https://assistant.example.com/oauth/callback"], "scope": "people:read" }
+```
+
+Returns 201 with `client_id`, `client_id_issued_at`, `client_name`, `redirect_uris`, `grant_types` (`authorization_code`, `refresh_token`), `response_types` (`code`), and `token_endpoint_auth_method: "none"`.
+
+- No secret is ever issued, so the client must use PKCE on every authorization.
+- `redirect_uris` must be 1–10 `https` URLs, or `http` on `localhost`, `127.0.0.1`, or `[::1]`.
+- `client_name` is trimmed to 45 characters (default "AI assistant").
+- Limited to 20 registrations per hour per IP.
+
+On the B1Admin consent page, a self-registered client gets a notice that it registered itself, can never do more than the user's own B1 account, and can be disconnected under **Settings → Developer → Connected Apps**.
 
 ## SDK Support
 

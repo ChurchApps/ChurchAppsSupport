@@ -33,10 +33,11 @@ Tabs configured here are delivered through the [B1.church Progressive Web App (P
 1. Click the **Add Tab** button at the top of the page.
 2. Fill in the tab details:
    - **Name** -- The label that appears on the tab (for example, "Sermons" or "Give").
-   - **Icon** -- Click the icon selector to choose an icon for your tab. You can also upload a custom image.
+   - **Icon** -- Click the icon selector to choose an icon for your tab.
+   - **Image** -- Click **Select Image** (or **Change Image**) to give the tab a photo. Tabs with a photo appear as photo tiles on the app's Home screen -- see [Home Screen Tiles](#home-screen-tiles).
    - **Tab Type** -- Select from options like Bible, Live Stream, Donation, Website, and more.
    - **URL** -- Enter the web address the tab should link to.
-   - **Visibility** -- Control who can see this tab (everyone, members only, etc.).
+   - **Visibility** -- Control who can see this tab (everyone, members only, etc.). For a **Member Directory** tab, this only controls who sees the tab itself; who can open the directory is set by **Show in Directory** on the Member portal page (see [Member Directory & Messaging Settings](#member-directory--messaging-settings)).
 3. Click **Save Tab** to add it to your app.
 
 ## Editing an Existing Tab
@@ -62,7 +63,7 @@ Keep your tab count manageable. Three to five tabs works well for most churches.
 The **Member portal** item in the same Mobile section holds the settings that govern the member directory and private messaging in the B1.church experience:
 
 - **Directory Approval Group** -- The group that reviews member directory updates, and [account deletion requests](../profile/account-deletion.md), before they take effect.
-- **Show in Directory** -- Who can appear in the member directory (Staff Only through Everyone).
+- **Show in Directory** -- Who can open the member directory and who is listed in it: **Staff Only**, **Members & Staff** (the default), **Regular Attendees & Above**, or **Everyone (Including Visitors)**. People whose membership status is below the level you pick don't see the directory and aren't listed in it. Staff with the People &gt; View permission can always open the directory and see everyone, whatever this is set to.
 - **Visibility Preference** -- Sets the church-wide default for members who haven't chosen their own setting yet. **Address**, **Phone Number**, and **Email** each have their own dropdown, with the same five levels available everywhere visibility is configured:
   - **Everyone** -- visible to anyone, including anonymous visitors
   - **Members** -- visible only to people with a Member or Staff record
@@ -86,9 +87,23 @@ Visitors who open the app's [Home screen](/docs/b1-church/getting-started/naviga
 
 Click **Save** to apply. Saving refreshes the app's cached settings, so the change shows up the next time the Home screen loads.
 
+### Home Screen Tiles
+
+Tabs that have a photo (see **Image** under [Adding a New Tab](#adding-a-new-tab)) appear on the app's [Home screen](/docs/b1-church/getting-started/navigating#home) as photo tiles, in a section headed with your church's name. This includes a Verse of the Day tab, if you give it a photo. Photo tabs still appear in the tab bar as well.
+
+The **Home screen tiles** setting on the same Member portal page (`/mobile/b1-mobile`) controls how those tiles are laid out. Pick a **Layout**:
+
+- **Grid** -- Two tiles per row (the default). When the number of tiles is odd, the first tile spans the full width.
+- **Scrolling row** -- One row of tiles that members swipe sideways.
+- **List** -- A list with a small photo thumbnail next to each tab's name.
+
+Click **Save** to apply.
+
 ## Where These Tabs Appear
 
-The tabs you configure here are displayed in the **B1.church PWA** that your members install from any page on `https://yourchurchname.b1.church`. Changes you make on this page are reflected the next time a member opens the app. (Tabs are also rendered by the legacy [B1 Mobile native app](/docs/b1-mobile/) for any members still running it, but that app is deprecated and no longer being updated.)
+The tabs you configure here are displayed in the **B1.church PWA** that your members install from any page on `https://yourchurchname.b1.church`. Changes you make on this page are reflected the next time a member opens the app.
+
+On a phone, the bottom tab bar shows **Home**, up to three of your tabs, and **More**; on a computer, the header shows up to five. Built-in screens (such as Sermons, Giving, or Groups) get those slots first, and **Internal Page** tabs fill any slots left over. **External URL** and **Verse of the Day** tabs never get a slot. Every tab, including those that don't fit, is listed on the app's **More** page. See [Navigating B1App](/docs/b1-church/getting-started/navigating) for what members see. (Tabs are also rendered by the legacy [B1 Mobile native app](/docs/b1-mobile/) for any members still running it, but that app is deprecated and no longer being updated.)
 
 ## Next Steps
 

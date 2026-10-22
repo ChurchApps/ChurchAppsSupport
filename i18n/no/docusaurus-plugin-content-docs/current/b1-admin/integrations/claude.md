@@ -2,51 +2,68 @@
 title: "Claude"
 ---
 
-# Claude
+# Claude {#claude}
 
 <div class="article-intro">
 
-Koble Anthropic's Claude til kirkas B1-data. Med en API-nøkkel og noen minutter med oppsett kan du stille Claude spørsmål som "hvor mange førstegangsbesøkende kom på søndag?" eller "skriv en takk-e-post til de som ga til byggefonden denne måneden" — og Claude vil lese svarene direkte fra kirkas poster, begrenset til dine tillatelser.
+Koble Anthropics Claude til kirkens B1-data. Legg til B1 som en egendefinert konnektor på claude.ai og logg inn, eller bruk en API-nøkkel med Claude Code eller Claude Desktop. Etter noen minutters oppsett kan du stille Claude spørsmål som «hvor mange førstegangsbesøkende kom på søndag?» eller «skriv et takkebrev til de som ga til bygningsfondet denne måneden» -- og Claude henter svarene direkte fra kirkens registre, begrenset av dine tillatelser.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- En kirkeadministrator med tillatelsen **Rediger innstillinger** (for å opprette en API-nøkkel)
-- Ett av: **Claude Code** (CLI / IDE-utvidelse), **Claude Desktop** (Mac/Windows), eller en **Claude Pro/Max/Team**-konto
-- Den fullstendige URL-en til B1 API-en din — vanligvis `https://api.churchapps.org` for hostede kirker, eller din selvvertssted Api-vert
+- En konto for **Claude Pro/Max/Team/Enterprise** (for den egendefinerte konnektoren på claude.ai), eller **Claude Code** (CLI / IDE-utvidelse) eller **Claude Desktop** (Mac/Windows)
+- For API-nøkkeloppsettet: en kirkeadministrator med tillatelsen **Rediger innstillinger** (for å opprette en API-nøkkel)
+- Den fullstendige URLen til B1 API-et ditt -- vanligvis `https://api.churchapps.org` for kirker med hosting, eller verten for ditt egenhostede API
 
 </div>
 
-## Hva Claude kan se
+## Hva Claude kan se {#what-claude-can-see}
 
-Claude kommuniserer med B1 gjennom **Model Context Protocol (MCP)-serveren** som er innebygd i B1 API. Hvert kall Claude gjør kjører gjennom de samme godkjennings-, tillatelse- og kirke-scopings-reglene som en forespørsel fra B1Admin — noe som betyr at Claude:
+Claude snakker med B1 gjennom **Model Context Protocol (MCP)-serveren** som er innebygd i B1 API-et. Hvert kall Claude gjør, går gjennom de samme reglene for autentisering, tillatelser og kirkeavgrensning som en forespørsel fra B1 Admin -- det betyr at Claude:
 
-- Ser kun data for **din** kirke
-- Er begrenset til de **tillatelsene og scopene** API-nøkkelen du gir den bærer
-- Kan ikke nå webhooks, OAuth-adminendepunkter eller andre operatør-bare stier (disse er blokkert)
+- Bare ser data for **din** kirke
+- Er begrenset til de **tillatelsene og omfangene** API-nøkkelen eller påloggingen du gir, har
+- Ikke kan nå webhooks, OAuth-administrasjonsendepunkter eller andre stier som bare er for operatører (de er svartelistet)
 
-En `donations:read`-nøkkel lar Claude oppsummere gaver men kan ikke registrere en gave. En `people:write`-nøkkel kan legge til en person men kan ikke se donasjoner. Velg scopene som passer til arbeidet.
+En nøkkel med `donations:read` lar Claude oppsummere giving, men den kan ikke registrere en gave. En nøkkel med `people:write` kan legge til en person, men kan ikke se gaver. Velg omfangene som passer til arbeidet.
 
-## Oppsett
+## Oppsett {#setup}
 
-### 1. Opprett en API-nøkkel
+Det finnes to måter å koble til på:
 
-1. I B1Admin gå til **Innstillinger → Utviklernavn → API-nøkler**.
-2. Klikk **Ny API-nøkkel**, gi den navnet `Claude`, og velg scopene Claude skal ha. Vanlige startinnstillinger:
-   - **Skrivebeskyttet assistent:** `people:read`, `groups:read`, `attendance:read`, `donations:read`, `content:read`
-   - **Les + legg til notater / oppgaver:** legg til `people:write`
-   - **Full operasjonell assistent:** legg til de samsvarende `:write`-scopene du vil ha
-3. Lagre. Den fullstendige `cak_…`-nøkkelen vises **bare én gang** — kopier den.
+- **Claude.ai-egendefinert konnektor** -- det enkleste. Du logger inn i B1 og godkjenner tilgang i nettleseren din, uten en nøkkel å kopiere. Konnektoren fungerer også i Claude Desktop og Claude-mobilappene når den er lagt til kontoen din.
+- **API-nøkkel** -- for Claude Code, eller en konfigurasjonsfil for Claude Desktop. Du oppretter en nøkkel og limer den inn i Claudes innstillinger.
 
-Se [API-nøkler](/docs/developer/api/api-keys) for hva hver scope tillater.
+### Claude.ai (web) — egendefinert konnektor {#claudeai-web--custom-connector}
 
-### 2. Koble Claude
+1. I Claude åpner du **Innstillinger → Konnektorer** og klikker **Legg til egendefinert konnektor**. (På Team- og Enterprise-planer må kanskje en eier legge den til for organisasjonen først.)
+2. Gi den navnet `B1` og skriv inn server-URLen `https://api.churchapps.org/mcp`, og klikk deretter **Legg til**.
+3. Klikk **Koble til**. Et B1-påloggingsvindu åpnes. Logg inn med din B1-konto og velg kirken din hvis du blir bedt om det.
+4. Siden **AUTORISERING KREVES** viser appens navn, dataene den ber om (for eksempel **Se personer, husstander og kontaktopplysninger**, eller **Alt B1-kontoen din har tilgang til** hvis den ikke ba om noe smalere), og adressen du sendes tilbake til etter at du har valgt -- kontroller at den er **claude.ai**.
+5. Klikk **Tillat**. Du sendes tilbake til Claude, og B1 vises som tilkoblet.
+
+Claude registrerer seg selv hos B1 første gang du kobler til, så siden noterer også at appen registrerte seg selv, og at den aldri kan gjøre mer enn din egen B1-konto kan. For å koble den fra senere går du til **Innstillinger → Utvikler → Tilkoblede apper** i B1Admin og tilbakekaller den.
+
+### Bruke en API-nøkkel {#using-an-api-key}
+
+#### 1. Opprett en API-nøkkel {#1-create-an-api-key}
+
+1. I B1Admin går du til **Innstillinger → Utvikler → API-nøkler**.
+2. Klikk **Ny API-nøkkel**, gi den navnet `Claude`, og velg omfangene Claude skal ha. Vanlige startsett:
+   - **Assistent som bare leser:** `people:read`, `groups:read`, `attendance:read`, `donations:read`, `content:read`
+   - **Lese + legge til notater / oppgaver:** legg til `people:write`
+   - **Full operativ assistent:** legg til de tilsvarende `:write`-omfangene du vil ha
+3. Lagre. Den fullstendige `cak_…`-nøkkelen vises **én gang** -- kopier den.
+
+Se [API-nøkler](/docs/developer/api/api-keys) for hva hvert omfang tillater.
+
+#### 2. Koble til Claude {#2-connect-claude}
 
 Velg Claude-klienten du bruker:
 
-#### Claude Code (CLI)
+##### Claude Code (CLI) {#claude-code-cli}
 
 I en terminal:
 
@@ -55,16 +72,16 @@ claude mcp add --transport http b1 https://api.churchapps.org/mcp \
   --header "Authorization: Bearer cak_<prefix>.<secret>"
 ```
 
-Det er alt. Innenfor en Claude Code-økt skriver du `/mcp` for å bekrefte at `b1`-serveren er tilkoblet, og stiller deretter Claude spørsmål om kirka di.
+Det var alt. Skriv `/mcp` i en hvilken som helst Claude Code-økt for å bekrefte at serveren `b1` er tilkoblet, og still deretter Claude et hvilket som helst spørsmål om kirken din.
 
-#### Claude Desktop
+##### Claude Desktop {#claude-desktop}
 
-Rediger Claude Desktops konfigurasjonsfil:
+Rediger konfigurasjonsfilen til Claude Desktop:
 
 - **macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
 - **Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
 
-Legg til en `b1`-serveroppføring. Nyere versjoner av Claude Desktop snakker HTTP MCP naturlig:
+Legg til en oppføring for serveren `b1`. Nyere versjoner av Claude Desktop snakker HTTP MCP direkte:
 
 ```json
 {
@@ -79,7 +96,7 @@ Legg til en `b1`-serveroppføring. Nyere versjoner av Claude Desktop snakker HTT
 }
 ```
 
-Hvis Claude Desktop-versjonen din bare støtter stdio-servere, bridge gjennom `mcp-remote`:
+Hvis din versjon av Claude Desktop bare støtter stdio-servere, kobler du gjennom `mcp-remote`:
 
 ```json
 {
@@ -96,60 +113,56 @@ Hvis Claude Desktop-versjonen din bare støtter stdio-servere, bridge gjennom `m
 }
 ```
 
-Start Claude Desktop på nytt. Koblingsikonen i chat-forfatteren viser `b1` med tre verktøy (`list_endpoints`, `describe_endpoint`, `api_call`).
+Start Claude Desktop på nytt. Konnektorikonet i chatfeltet viser `b1` med tre verktøy (`list_endpoints`, `describe_endpoint`, `api_call`).
 
-#### Claude.ai (nett) — tilpasset kobling
+### Still Claude et spørsmål {#ask-claude-something}
 
-Claude.ai's "Legg til tilpasset kobling"-funksjon krever OAuth, som B1 MCP-serveren ikke støtter i dag. Bruk Claude Code eller Claude Desktop i stedet.
+Når den er koblet til, trengs ingen spesiell syntaks -- Claude finner ut hva som er tilgjengelig underveis. Eksempler:
 
-### 3. Spør Claude noe
+- *«Hvor mange personer er det i kirken min, og hvilke grupper er aktive?»*
+- *«Oppsummer denne månedens gaver per fond.»*
+- *«List opp personene som deltok på 10-gudstjenesten sist søndag, men som ikke har vært på en onsdagsgruppe de siste 60 dagene.»*
+- *«Skriv et velkomstbrev til de fire personene som ble lagt til denne uken, adressert med fornavn.»*
 
-Når den er koblet til, er det ikke behov for spesiell syntaks — Claude oppdager hva som er tilgjengelig på fluen. Eksempler:
+Bak kulissene kaller Claude MCP-verktøyene -- først for å finne riktig endepunkt, deretter for å hente dataene -- og svarer på vanlig språk.
 
-- *"Hvor mange personer er i kirka mi og hva er de aktive gruppene?"*
-- *"Oppsummer denne måneds donasjoner etter fond."*
-- *"List folka som møtte 10am-tjenesten forrige søndag men ikke har vært på en onsdag-gruppe på de siste 60 dagene."*
-- *"Skriv en velkomst-e-post til de fire personene som ble lagt til denne uken, adressert ved fornavn."*
+## Hvordan det fungerer {#how-it-works}
 
-Bak kulissene vil Claude ringe MCP-verktøyene — først for å oppdage riktig endepunkt, så for å hente dataene — og svar på vanlig engelsk.
-
-## Hvordan det fungerer
-
-B1 API-en viser et enkelt MCP-endepunkt på `/mcp`. Claude kobler til det, autentiserer med `cak_…`-nøkkelen din, og får tilgang til tre verktøy:
+B1 API-et eksponerer ett enkelt MCP-endepunkt på `/mcp`. Claude kobler seg til det, autentiserer med `cak_…`-nøkkelen din eller påloggingen du godkjente, og får tilgang til tre verktøy:
 
 | Verktøy | Hva det gjør |
 |---|---|
-| `list_endpoints` | Viser REST-endepunktene Claude kan ringe, filtrerbar etter sti. Brukt for oppdagelse. |
-| `describe_endpoint` | Returnerer en kort oppsummering og et eksempel på forespørsel/svar for et spesifikt endepunkt. |
-| `api_call` | Faktisk påkaller et REST-endepunkt som den godkjente brukeren. |
+| `list_endpoints` | Lister REST-endepunktene Claude kan kalle, og kan filtreres på sti. Brukes til å oppdage dem. |
+| `describe_endpoint` | Returnerer en kort oppsummering og et eksempel på forespørsel/svar for et bestemt endepunkt. |
+| `api_call` | Kaller et REST-endepunkt faktisk, som den autentiserte brukeren. |
 
-Dette er den samme `/membership/people`, `/giving/donations`, `/attendance/visits` etc. overflaten B1Admin bruker — hver autorisasjonsregel gjelder identisk.
+Dette er den samme overflaten `/membership/people`, `/giving/donations`, `/attendance/visits` osv. som B1Admin bruker -- alle autorisasjonsregler gjelder på nøyaktig samme måte.
 
-## Sikkerhet og grenser
+## Sikkerhet og begrensninger {#safety-and-limits}
 
-- **Per-kirke-isolasjon.** API-nøkkelen løser seg til én kirke. Claude har ingen måte å se andre kirkers data.
-- **Tillatelse-omfang.** Hvis du fjerner en tillatelse fra personen som opprettet nøkkelen i B1Admin, mister Claude den på neste kall — øyeblikkelig.
-- **Tilbakekallt.** Slett nøkkelen i **Innstillinger → Utviklernavn → API-nøkler** og Claudes tilgang slutter umiddelbart.
-- **Blokkert.** Leverandør-webhooks, OAuth-klient-adminendepunkter, og operatør-bare `apiEmails`-ruten er ikke kallbare via MCP.
-- **Responsgrensestørrelse.** Ett verktøysvar er begrenset til 64 KB slik at lange lister ikke sprenger Claudes kontekst — Claude vil begrense spørsmålet med filtre når dette skjer.
-- **Revisjonsspor.** Mutasjoner går gjennom samme revisjonsvalglogg som B1Admin-handlinger; du kan gjennomgå dem under **Rapporter → Revisjonsvalglogg**.
+- **Isolasjon per kirke.** API-nøkkelen eller påloggingen er knyttet til én kirke. Claude har ingen måte å se andre kirkers data.
+- **Begrenset av tillatelser.** Hvis du fjerner en tillatelse fra personen som opprettet nøkkelen (eller logget inn) i B1Admin, mister Claude den ved neste kall -- umiddelbart.
+- **Kan tilbakekalles.** Slett nøkkelen under **Innstillinger → Utvikler → API-nøkler**, eller tilbakekall claude.ai-tilkoblingen under **Innstillinger → Utvikler → Tilkoblede apper**, så avsluttes Claudes tilgang umiddelbart.
+- **Svartelist.** Webhooks fra leverandører, administrasjonsendepunkter for OAuth-klienter og den operatørbegrensede ruten `apiEmails` kan ikke kalles via MCP.
+- **Størrelsesgrense for svar.** Ett enkelt verktøysvar er begrenset til 64 KB, slik at lange lister ikke sprenger Claudes kontekst -- Claude vil avgrense spørringen med filtre når dette skjer.
+- **Revisjonslogg.** Endringer går gjennom samme revisjonslogg som handlinger i B1Admin; du kan gå gjennom dem under **Innstillinger → Revisjonslogg**.
 
-## Kostnad
+## Kostnad {#cost}
 
-ChurchApps er gratis og åpen kildekode — MCP-serveren er del av API-en kirka di allerede kjører. Anthropic belaster for Claude-bruk per deres planer. Det er ingen kostnad per anrop fra ChurchApps.
+ChurchApps er gratis og åpen kildekode -- MCP-serveren er en del av API-et kirken din allerede kjører. Anthropic tar betalt for Claude-bruk etter sine planer. Det er ingen kostnad per kall fra ChurchApps.
 
-## Problemløsing
+## Feilsøking {#troubleshooting}
 
-**Claude rapporterer "Unauthorized" eller 401:** bearer-tokenen mangler, er malformet, eller nøkkelen har blitt tilbakekalt. Dobbeltsjekk `Authorization: Bearer cak_…`-overskriften (merk mellomrommet og den bokstavelige `Bearer`).
+**Claude melder «Unauthorized» eller 401:** bearer-tokenet mangler, er feilformatert, eller nøkkelen er tilbakekalt. Kontroller headeren `Authorization: Bearer cak_…` på nytt (merk mellomrommet og det bokstavelige ordet `Bearer`). På claude.ai kobler du fra og til B1-konnektoren igjen for å logge inn på nytt.
 
-**Et verktøykall returnerer 403:** API-nøkkelen har ikke scopet for det endepunktet. Legg til scopet i **Innstillinger → Utviklernavn → API-nøkler** (du må opprette en ny nøkkel — scopene kan ikke endres på plass) og oppdater Claudes konfigurasjon.
+**Et verktøykall gir 403:** API-nøkkelen mangler omfanget for det endepunktet. Legg til omfanget under **Innstillinger → Utvikler → API-nøkler** (du må opprette en ny nøkkel -- omfang kan ikke endres på stedet), og oppdater Claudes konfigurasjon.
 
-**Claude kan ikke finne et endepunkt:** be det ringe `list_endpoints` med et filter, f.eks. *"bruk list_endpoints med filter 'donations' for å finne riktig sti"*. Rutelageret genereres fra live API, så alt du kan treffe med `curl` er der.
+**Claude finner ikke et endepunkt:** be den kalle `list_endpoints` med et filter, for eksempel *«bruk list_endpoints med filteret 'donations' for å finne riktig sti»*. Ruteoversikten genereres fra det kjørende API-et, så alt du kan nå med `curl`, finnes der.
 
-**Lokal utvikling:** bytt `https://api.churchapps.org/mcp` for `http://localhost:8084/mcp` — samme auth, samme verktøy.
+**Lokal utvikling:** bytt `https://api.churchapps.org/mcp` ut med `http://localhost:8084/mcp` -- samme autentisering, samme verktøy.
 
-## Relatert
+## Relatert {#related}
 
-- [API-nøkler](/docs/developer/api/api-keys) — full scope-referanse
+- [API-nøkler](/docs/developer/api/api-keys) — fullstendig referanse for omfang
 - [MCP-server (utviklerreferanse)](/docs/developer/api/mcp) — protokolldetaljer og verktøyskjemaer
-- [ChatGPT](./chatgpt) — samme idé, for OpenAI-modeller
+- [ChatGPT](./chatgpt) — samme idé, for OpenAIs modeller

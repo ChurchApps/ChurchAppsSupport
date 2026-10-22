@@ -28,7 +28,7 @@ B1 plugs into the tools your team already uses. Connect Slack or Discord for sta
 - **Just want a notification in chat?** Use **Slack** or **Discord** — no third-party account, no Zap to maintain. Configured entirely inside B1Admin.
 - **Want to automate something across apps** (e.g. "when someone gives, add them to my Mailchimp list and Slack #donations")? Use **Zapier** or **Make**. Zapier is friendlier; Make is cheaper at scale and has more flexible logic.
 - **Need a one-off data pull or a scheduled report**? Use **Google Sheets** — paste an API key into the add-on's sidebar and click Export.
-- **Want to ask questions in plain English** ("how many first-time visitors last Sunday?", "summarize giving this month")? Use **[Claude](./claude)** or **[ChatGPT](./chatgpt)** — both connect to B1 with a single API key.
+- **Want to ask questions in plain English** ("how many first-time visitors last Sunday?", "summarize giving this month")? Use **[Claude](./claude)** or **[ChatGPT](./chatgpt)**. Both connect to B1 with a single API key, and Claude can also connect from claude.ai by signing in to B1.
 - **Building your own custom integration?** None of the above — talk to the [REST API](/docs/developer/api) directly with an [API key](/docs/developer/api/api-keys), or subscribe a server you control to [webhooks](/docs/developer/api/webhooks).
 
 ## What They Have In Common

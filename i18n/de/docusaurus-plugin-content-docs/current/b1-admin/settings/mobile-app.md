@@ -1,96 +1,111 @@
 ---
-title: "Mobile App Settings"
+title: "Einstellungen der mobilen App"
 ---
 
-# Mobile App Settings
+# Einstellungen der mobilen App
 
 <div class="article-intro">
 
-Die Seite Mobile App Settings ermöglicht es Ihnen, die Navigationsreiter zu konfigurieren, die in der **B1.church-Mobile-Erfahrung (PWA)** für Ihre Kirchenmitglieder angezeigt werden. Sie kontrollieren, welche Reiter sichtbar sind, worauf sie verweisen und wie sie angezeigt werden.
+Auf der Seite Einstellungen der mobilen App konfigurieren Sie die Navigationsreiter, die im **mobilen Angebot von B1.church (PWA)** für Ihre Mitglieder erscheinen. Sie bestimmen, welche Reiter sichtbar sind, wohin sie verlinken und wie sie dargestellt werden.
 
 </div>
 
-:::info Die native B1 Mobile-App ist veraltet
-Die hier konfigurierten Reiter werden über die [B1.church Progressive Web App (PWA)](/docs/b1-church/getting-started/installing-pwa) bereitgestellt, die die native B1 Mobile-App ersetzt hat. Teilen Sie die Installationsseite Ihrer Kirche – `https://yourchurchname.b1.church/mobile/install` – mit Mitgliedern; sie führt sie durch die Installation der App auf ihrem Gerät, ohne dass ein Download im App Store oder Google Play erforderlich ist.
+:::info Die native App B1 Mobile wird nicht mehr unterstützt
+Die hier konfigurierten Reiter werden über die [Progressive Web App (PWA) von B1.church](/docs/b1-church/getting-started/installing-pwa) ausgeliefert, die die native App B1 Mobile abgelöst hat. Teilen Sie die Installationsseite Ihrer Kirche – `https://ihrekirche.b1.church/mobile/install` – mit Ihren Mitgliedern. Dort wird ihnen Schritt für Schritt erklärt, wie sie die App auf ihrem Gerät installieren. Ein Download aus dem App Store oder von Google Play ist nicht nötig.
 :::
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie benötigen die Berechtigung "Edit Church Settings". Siehe [Rollen & Berechtigungen](./roles-permissions.md), wenn Sie keinen Zugriff haben.
-- Konfigurieren Sie zunächst Ihre [Church Settings](./church-settings.md), einschließlich Ihres Kirchennamens und des Brandings
+- Sie benötigen die Berechtigung „Kircheneinstellungen bearbeiten“. Falls Sie keinen Zugriff haben, lesen Sie [Rollen & Berechtigungen](./roles-permissions.md).
+- Konfigurieren Sie zuerst Ihre [Kircheneinstellungen](./church-settings.md), einschließlich Name der Kirche und Branding.
 
 </div>
 
-## Zugriff auf Navigationseinstellungen
+## Zu den Navigationseinstellungen gelangen
 
-1. Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links) und erweitern Sie **Mobile**.
+1. Öffnen Sie in B1 Admin das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (das Suchfeld oben links) und klappen Sie **Mobile** auf.
 2. Klicken Sie auf **Navigation** (`/mobile/navigation`).
-3. Die Navigationsseite zeigt Ihre aktuellen App-Reiter an.
+3. Die Seite Navigation zeigt Ihre aktuellen App-Reiter an.
 
-## Hinzufügen einer neuen Registerkarte
+## Einen neuen Reiter hinzufügen {#adding-a-new-tab}
 
-1. Klicken Sie auf die Schaltfläche **Add Tab** oben auf der Seite.
-2. Füllen Sie die Tab-Details aus:
-   - **Name** -- Das Label, das auf dem Reiter angezeigt wird (z. B. "Sermons" oder "Give").
-   - **Icon** -- Klicken Sie auf den Icon-Selector, um ein Icon für Ihren Reiter zu wählen. Sie können auch ein benutzerdefiniertes Bild hochladen.
-   - **Tab Type** -- Wählen Sie aus Optionen wie Bible, Live Stream, Donation, Website usw.
-   - **URL** -- Geben Sie die Web-Adresse ein, auf die der Reiter verweisen soll.
-   - **Visibility** -- Steuern Sie, wer diesen Reiter sehen kann (jeder, nur Mitglieder usw.).
-3. Klicken Sie auf **Save Tab**, um ihn zu Ihrer App hinzuzufügen.
+1. Klicken Sie oben auf der Seite auf die Schaltfläche **Reiter hinzufügen**.
+2. Füllen Sie die Angaben zum Reiter aus:
+   - **Name** – die Beschriftung, die auf dem Reiter erscheint (zum Beispiel „Predigten“ oder „Geben“).
+   - **Symbol** – Klicken Sie auf die Symbolauswahl, um ein Symbol für Ihren Reiter zu wählen.
+   - **Bild** – Klicken Sie auf **Bild auswählen** (oder **Bild ändern**), um dem Reiter ein Foto zu geben. Reiter mit einem Foto erscheinen als Fotokacheln auf dem Startbildschirm der App – siehe [Kacheln auf dem Startbildschirm](#home-screen-tiles).
+   - **Reiter-Typ** – Wählen Sie aus Optionen wie Bibel, Livestream, Spende, Website und weitere.
+   - **URL** – Geben Sie die Webadresse ein, auf die der Reiter verlinken soll.
+   - **Sichtbarkeit** – Legen Sie fest, wer diesen Reiter sehen kann (alle, nur Mitglieder usw.). Bei einem Reiter **Mitgliederverzeichnis** steuert dies nur, wer den Reiter selbst sieht. Wer das Verzeichnis öffnen darf, legen Sie über **Im Verzeichnis anzeigen** auf der Seite Mitgliederportal fest (siehe [Einstellungen für Mitgliederverzeichnis & Nachrichten](#member-directory--messaging-settings)).
+3. Klicken Sie auf **Reiter speichern**, um ihn Ihrer App hinzuzufügen.
 
-## Bearbeitung eines vorhandenen Reiters
+## Einen vorhandenen Reiter bearbeiten
 
-1. Klicken Sie auf einen vorhandenen Reiter in der Liste **App Tabs**.
-2. Aktualisieren Sie den Namen, das Symbol, die URL, den Typ oder die Sichtbarkeitseinstellungen des Reiters.
-3. Klicken Sie auf **Save Tab**, um Ihre Änderungen anzuwenden.
+1. Klicken Sie in der Liste **App-Reiter** auf einen beliebigen vorhandenen Reiter.
+2. Aktualisieren Sie Name, Symbol, URL, Typ oder die Sichtbarkeit des Reiters.
+3. Klicken Sie auf **Reiter speichern**, um Ihre Änderungen zu übernehmen.
 
-## Neuanordnung von Reitern
+## Reiter neu anordnen
 
-Sie können die Reihenfolge ändern, in der die Reiter in der mobilen App angezeigt werden. Ziehen Sie Reiter in der Liste per Drag-and-Drop, um sie neu anzuordnen. Die auf dieser Seite angezeigte Reihenfolge entspricht der Reihenfolge, die Ihre Mitglieder in der App sehen.
+Sie können die Reihenfolge ändern, in der die Reiter in der mobilen App erscheinen. Ziehen Sie die Reiter in der Liste per Drag-and-Drop in die gewünschte Reihenfolge. Die Reihenfolge auf dieser Seite entspricht der Reihenfolge, die Ihre Mitglieder in der App sehen.
 
 :::info
-Einige Reiter können automatisch angezeigt werden, wenn bestimmte Bedingungen erfüllt sind – zum Beispiel kann ein Live Stream-Reiter angezeigt werden, wenn ein Stream aktiv ist. Manuell hinzugefügte Reiter geben Ihnen jederzeit volle Kontrolle über das, was Ihre Mitglieder sehen.
+Manche Reiter erscheinen automatisch, wenn bestimmte Bedingungen erfüllt sind. Ein Reiter für den Livestream kann beispielsweise erscheinen, sobald ein Stream läuft. Manuell hinzugefügte Reiter geben Ihnen dagegen die volle Kontrolle darüber, was Ihre Mitglieder jederzeit sehen.
 :::
 
 :::tip
-Halten Sie die Anzahl der Reiter beherrschbar. Drei bis fünf Reiter funktionieren für die meisten Kirchen gut. Zu viele Reiter können die Navigation für Ihre Mitglieder verwirrend machen.
+Halten Sie die Anzahl der Reiter überschaubar. Drei bis fünf Reiter funktionieren für die meisten Kirchen gut. Zu viele Reiter machen die Navigation für Ihre Mitglieder unübersichtlich.
 :::
 
-## Mitgliederverzeichnis & Messaging-Einstellungen
+## Einstellungen für Mitgliederverzeichnis & Nachrichten {#member-directory--messaging-settings}
 
-Der Eintrag **Member portal** im gleichen Mobile-Abschnitt enthält die Einstellungen, die das Mitgliederverzeichnis und Private Messaging in der B1.church-Erfahrung steuern:
+Der Eintrag **Mitgliederportal** im selben Bereich Mobile enthält die Einstellungen für das Mitgliederverzeichnis und private Nachrichten im Angebot B1.church:
 
-- **Directory Approval Group** -- Die Gruppe, die Mitgliederverzeichnis-Updates überprüft und [Account-Löschanfragen](../profile/account-deletion.md) übernimmt, bevor sie wirksam werden.
-- **Show in Directory** -- Wer im Mitgliederverzeichnis erscheinen kann (nur Personal bis zu jedem).
-- **Visibility Preference** -- Legt den Kirchenstandard für Mitglieder fest, die ihre eigene Einstellung noch nicht gewählt haben. **Address**, **Phone Number** und **Email** haben jeweils ihre eigene Dropdown-Liste, mit denselben fünf Ebenen überall dort, wo die Sichtbarkeit konfiguriert ist:
-  - **Everyone** -- sichtbar für jeden, einschließlich anonymer Besucher
-  - **Members** -- sichtbar nur für Personen mit einem Mitglieds- oder Personaldatensatz
-  - **Groups Only** -- sichtbar nur für Personen, die eine Gruppe mit dieser Person teilen
-  - **My Group Leaders and Staff** -- sichtbar nur für Anführer einer Gruppe, zu der diese Person gehört, plus Personal
-  - **Staff Only** -- sichtbar nur für Personal mit der Berechtigung People > View und für die Person selbst
+- **Genehmigungsgruppe für das Verzeichnis** – Die Gruppe, die Aktualisierungen des Mitgliederverzeichnisses sowie [Löschanfragen für Konten](../profile/account-deletion.md) prüft, bevor sie wirksam werden.
+- **Im Verzeichnis anzeigen** – Wer das Mitgliederverzeichnis öffnen kann und wer darin aufgeführt ist: **Nur Mitarbeitende**, **Mitglieder & Mitarbeitende** (die Standardeinstellung), **Regelmäßige Besucher und höher** oder **Alle (einschließlich Gäste)**. Personen, deren Mitgliedsstatus unterhalb der gewählten Stufe liegt, sehen das Verzeichnis nicht und werden darin nicht aufgeführt. Mitarbeitende mit der Berechtigung Personen > Anzeigen können das Verzeichnis immer öffnen und alle sehen, unabhängig von dieser Einstellung.
+- **Sichtbarkeitsvorgabe** – Legt den kirchenweiten Standard für Mitglieder fest, die noch keine eigene Einstellung gewählt haben. **Adresse**, **Telefonnummer** und **E-Mail** haben jeweils ein eigenes Auswahlmenü mit denselben fünf Stufen, die überall dort verfügbar sind, wo Sichtbarkeit eingestellt wird:
+  - **Alle** – für alle sichtbar, auch für anonyme Besucher
+  - **Mitglieder** – nur für Personen mit einem Datensatz als Mitglied oder Mitarbeitende sichtbar
+  - **Nur Gruppen** – nur für Personen sichtbar, die mit dieser Person in einer Gruppe sind
+  - **Meine Gruppenleitenden und Mitarbeitende** – nur für Leitende einer Gruppe, zu der diese Person gehört, sowie für Mitarbeitende sichtbar
+  - **Nur Mitarbeitende** – nur für Mitarbeitende mit der Berechtigung Personen > Anzeigen sowie für die Person selbst sichtbar
 
-  Mitglieder können diese Standards für ihren eigenen Datensatz von der **Privacy**-Registerkarte ihres Profils im B1.church PWA überschreiben – siehe [Editing Your Profile](/docs/b1-church/getting-started/me-page).
-- **Minimum Age for Private Messages** -- Eine Kindersicherheitsmaßnahme. B1 öffnet ein **neues** Messaging-Gespräch mit privaten Nachrichten nicht, wenn eine der Personen unter diesem Alter liegt, basierend auf ihrem Geburtsdatum (Haushaltrolle wird als Fallback verwendet, wenn kein Geburtsdatum in der Datei ist). Personen unter dem Alter bleiben vollständig im Verzeichnis sichtbar – nur das direkte Messaging wird in **beide Richtungen** für alle blockiert, einschließlich Personal. Gruppengespräche und Messaging an die Eltern eines Kindes funktionieren noch. Optionen sind Off, 13, 16 oder 18; der Standard ist **18**. Bestehende Gespräche sind nicht betroffen.
+  Mitglieder können diese Vorgaben für ihren eigenen Datensatz auf dem Reiter **Datenschutz** ihres Profils in der PWA von B1.church überschreiben. Siehe [Ihr Profil bearbeiten](/docs/b1-church/getting-started/me-page).
+- **Mindestalter für private Nachrichten** – Eine Schutzfunktion für Kinder. B1 öffnet **keine neue** private Nachrichtenunterhaltung, wenn eine der beiden Personen unter diesem Alter ist. Maßgeblich ist das Geburtsdatum (fehlt es, wird die Haushaltsrolle als Ersatz verwendet). Personen unter diesem Alter bleiben im Verzeichnis vollständig sichtbar – blockiert wird nur die direkte Nachricht, und zwar **in beide Richtungen**, für alle, auch für Mitarbeitende. Gruppenunterhaltungen und Nachrichten an die Eltern eines Kindes funktionieren weiterhin. Zur Auswahl stehen Aus, 13, 16 oder 18; die Standardeinstellung ist **18**. Bestehende Unterhaltungen bleiben unberührt.
 
 :::tip
-Da die Altersüberprüfung auf Geburtsdaten angewiesen ist, stellen Sie sicher, dass Geburtsdaten für Kinder in Ihrer Gemeinde eingetragen sind. Diese Einstellung gehört zu der gleichen Familie der Kindersicherheit wie die [Check-in-Sicherheitskontrollen](../attendance/checkin-safety.md).
+Da die Altersprüfung auf Geburtsdaten beruht, achten Sie darauf, dass bei den Kindern Ihrer Gemeinde Geburtsdaten eingetragen sind. Diese Einstellung gehört zur gleichen Gruppe von Schutzfunktionen wie die [Sicherheitseinstellungen für den Check-in](../attendance/checkin-safety.md).
 :::
 
-### Home Screen Sign-In Prompt
+### Anmeldeaufforderung auf dem Startbildschirm {#home-screen-sign-in-prompt}
 
-Besucher, die die App-[Home-Screen](/docs/b1-church/getting-started/navigating#home) öffnen, ohne sich anzumelden, sehen eine kurze Aufforderung – standardmäßig, *"Sign in to see your groups, giving, and more."* – neben einer **Sign In**-Schaltfläche. Die **Home screen sign-in prompt** Einstellungen auf der gleichen Member Portal-Seite (`/mobile/b1-mobile`) ermöglichen es Ihnen, die Aufforderung zu ändern:
+Besucher, die die [Startseite](/docs/b1-church/getting-started/navigating#home) der App öffnen, ohne sich anzumelden, sehen einen kurzen Hinweis – standardmäßig *„Melden Sie sich an, um Ihre Gruppen, Spenden und mehr zu sehen.“* – neben einer Schaltfläche **Anmelden**. Mit den Einstellungen **Anmeldeaufforderung auf dem Startbildschirm** auf derselben Seite des Mitgliederportals (`/mobile/b1-mobile`) können Sie dies ändern:
 
-- **Show sign-in prompt on the app home screen** -- Schalten Sie dies aus, um sowohl die Aufforderung als auch die **Sign In**-Schaltfläche von der Home-Seite zu verbergen. Besucher können sich immer noch vom App-Menü aus anmelden.
-- **Sign-in prompt text** -- Ersetzen Sie die Standardformulierung mit Ihrer eigenen Nachricht (bis zu 150 Zeichen). Lassen Sie es leer, um die Standard zu verwenden. Dieses Feld ist deaktiviert, während die Aufforderung ausgeschaltet ist.
+- **Anmeldeaufforderung auf dem Startbildschirm der App anzeigen** – Schalten Sie diese Option aus, um Hinweis und Schaltfläche **Anmelden** auf dem Startbildschirm auszublenden. Besucher können sich weiterhin über das Menü der App anmelden.
+- **Text der Anmeldeaufforderung** – Ersetzen Sie den Standardtext durch Ihre eigene Nachricht (bis zu 150 Zeichen). Lassen Sie das Feld leer, um den Standardtext zu verwenden. Dieses Feld ist deaktiviert, solange die Aufforderung ausgeschaltet ist.
 
-Klicken Sie auf **Save**, um zu übernehmen. Das Speichern aktualisiert die zwischengespeicherten Einstellungen der App, daher wird die Änderung beim nächsten Laden der Home-Seite angezeigt.
+Klicken Sie auf **Speichern**, um die Änderungen zu übernehmen. Beim Speichern werden die zwischengespeicherten Einstellungen der App aktualisiert, sodass die Änderung beim nächsten Laden des Startbildschirms sichtbar ist.
 
-## Wo diese Reiter angezeigt werden
+### Kacheln auf dem Startbildschirm {#home-screen-tiles}
 
-Die Reiter, die Sie hier konfigurieren, werden im **B1.church PWA** angezeigt, das Ihre Mitglieder von jeder Seite in `https://yourchurchname.b1.church` installieren. Änderungen, die Sie auf dieser Seite vornehmen, werden widergespiegelt, wenn ein Mitglied die App das nächste Mal öffnet. (Reiter werden auch von der veralteten [B1 Mobile native app](/docs/b1-mobile/) für alle Mitglieder, die sie noch ausführen, gerendert, aber diese App ist veraltet und wird nicht mehr aktualisiert.)
+Reiter mit einem Foto (siehe **Bild** unter [Einen neuen Reiter hinzufügen](#adding-a-new-tab)) erscheinen auf dem [Startbildschirm](/docs/b1-church/getting-started/navigating#home) der App als Fotokacheln in einem Abschnitt mit dem Namen Ihrer Kirche. Dazu gehört auch ein Reiter „Vers des Tages“, wenn Sie ihm ein Foto geben. Reiter mit Fotos erscheinen zusätzlich auch in der Reiterleiste.
+
+Die Einstellung **Kacheln auf dem Startbildschirm** auf derselben Seite des Mitgliederportals (`/mobile/b1-mobile`) bestimmt, wie diese Kacheln angeordnet werden. Wählen Sie ein **Layout**:
+
+- **Raster** – Zwei Kacheln pro Zeile (die Standardeinstellung). Ist die Anzahl der Kacheln ungerade, nimmt die erste Kachel die volle Breite ein.
+- **Scrollende Zeile** – Eine Zeile mit Kacheln, die Mitglieder seitlich wischen.
+- **Liste** – Eine Liste mit einem kleinen Foto neben dem Namen jedes Reiters.
+
+Klicken Sie auf **Speichern**, um die Änderungen zu übernehmen.
+
+## Wo diese Reiter erscheinen
+
+Die hier konfigurierten Reiter werden in der **PWA von B1.church** angezeigt, die Ihre Mitglieder von jeder Seite unter `https://ihrekirche.b1.church` installieren. Änderungen auf dieser Seite erscheinen beim nächsten Öffnen der App durch ein Mitglied.
+
+Auf dem Smartphone zeigt die untere Reiterleiste **Startseite**, bis zu drei Ihrer Reiter und **Mehr**; auf dem Computer zeigt die Kopfzeile bis zu fünf. Eingebaute Bereiche (etwa Predigten, Spenden oder Gruppen) erhalten diese Plätze zuerst, und Reiter vom Typ **Interne Seite** füllen freie Plätze. Reiter vom Typ **Externe URL** und **Vers des Tages** erhalten nie einen Platz. Jeder Reiter, auch wenn er keinen Platz findet, wird auf der Seite **Mehr** der App aufgelistet. Was Mitglieder sehen, erfahren Sie unter [Navigation in der App B1](/docs/b1-church/getting-started/navigating). (Reiter werden auch von der älteren [nativen App B1 Mobile](/docs/b1-mobile/) dargestellt, die noch von manchen Mitgliedern genutzt wird. Diese App gilt jedoch als veraltet und wird nicht mehr aktualisiert.)
 
 ## Nächste Schritte
 
-- [Church Settings](./church-settings.md) -- Konfigurieren Sie Ihre Kircheninformationen und das Branding
-- [Rollen & Berechtigungen](./roles-permissions.md) -- Verwalten Sie den Zugriff für Ihr Team
+- [Kircheneinstellungen](./church-settings.md) – Informationen und Branding Ihrer Kirche konfigurieren
+- [Rollen & Berechtigungen](./roles-permissions.md) – Zugriffe für Ihr Team verwalten

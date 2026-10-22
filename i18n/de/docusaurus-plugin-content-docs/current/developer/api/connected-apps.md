@@ -1,41 +1,41 @@
 ---
-title: "Connected Apps & OAuth"
+title: "Verbundene Apps & OAuth"
 ---
 
-# Connected Apps & OAuth
+# Verbundene Apps & OAuth
 
 <div class="article-intro">
 
-Die B1-API unterstützt OAuth 2.0, damit eine Drittanbieter-Anwendung jeden Kirchen-Admin um Erlaubnis bitten kann, auf dessen Daten zuzugreifen — ohne dass die Kirche jemals ein Passwort oder einen API-Schlüssel teilt. Eine **Connected App** ist ein OAuth-Token, das ein Kirchen-Admin genehmigt hat; das Widerrufen trennt den Zugriff der Drittanbieter-App mit einem Klick. Verwenden Sie diesen Weg für Multi-Tenant-SaaS-Connectors. Für eine Integration mit nur einer Kirche bevorzugen Sie [API-Schlüssel](./api-keys).
+Die B1-API unterstützt OAuth 2.0, damit eine Drittanbieter-Anwendung von jeder Kirchenadministration die Erlaubnis einholen kann, auf deren Daten zuzugreifen – ohne dass die Kirche jemals ein Passwort oder einen API-Schlüssel weitergeben muss. Eine **verbundene App** ist ein OAuth-Token, das eine Kirchenadministration genehmigt hat; ein Widerruf beendet den Zugriff der Drittanbieter-App mit einem einzigen Klick. Diesen Weg nutzen Sie für mandantenfähige SaaS-Connectoren. Für eine Integration mit nur einer Kirche sind [API-Schlüssel](./api-keys) vorzuziehen.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Ein OAuth-**Client** muss (derzeit von einem B1-Server-Admin) registriert sein, bevor Kirchen ihm Zugriff gewähren können
-- Alle OAuth-Endpunkte liegen unter dem Membership-Modul: `/membership/oauth/...`
-- Zugriffstoken sind JWTs — sie tragen die Berechtigungen des Benutzers, gefiltert nach den gewährten Scopes
+- Ein OAuth-**Client** muss registriert sein, bevor Kirchen ihm Zugriff gewähren können – entweder durch einen B1-Serveradministrator oder durch den Client selbst über die [dynamische Registrierung](#dynamic-client-registration)
+- Alle OAuth-Endpunkte liegen im Membership-Modul: `/membership/oauth/...`
+- Zugriffstoken sind JWTs – sie enthalten die Berechtigungen des Benutzers, gefiltert nach den gewährten Scopes
 
 </div>
 
-## Konzepte
+## Begriffe
 
 | Begriff | Bedeutung |
 |---|---|
-| **OAuth-Client** | Die Drittanbieter-App selbst — identifiziert durch `client_id`, gesichert durch `client_secret`. Wird einmal bei B1 registriert und über alle Kirchen hinweg geteilt, die sie installieren. |
-| **Connected App** | Ein bestimmtes `(Client, Kirchen-Admin)`-Paar, bei dem der Admin dem Client Zugriff gewährt hat. Jede Connected App wird durch ein OAuth-Refresh-Token gestützt. |
-| **Access Token** | Ein kurzlebiges JWT (≈ 7 Tage), das der Client für API-Aufrufe verwendet. Gleiche Form wie ein Benutzer-JWT — `Authorization: Bearer <jwt>`. |
-| **Refresh Token** | Eine langlebige, undurchsichtige Zeichenkette (≈ 90 Tage), mit der der Client neue Access Token erzeugt. |
-| **Scope** | Grenzt ein, was das Access Token tun kann — siehe den [Scope-Katalog](./api-keys#scopes). |
+| **OAuth-Client** | Die Drittanbieter-App selbst – erkennbar an der `client_id` und geschützt durch das `client_secret`. Einmalig bei B1 registriert und von allen Kirchen geteilt, die sie installieren. |
+| **Verbundene App** | Ein bestimmtes Paar aus `(Client, Kirchenadministration)`, für das die Administration den Zugriff gewährt hat. Jede verbundene App wird durch ein OAuth-Refresh-Token gestützt. |
+| **Zugriffstoken** | Ein kurzlebiger JWT (ca. 7 Tage), den der Client für API-Aufrufe nutzt. Gleiche Form wie ein Benutzer-JWT – `Authorization: Bearer <jwt>`. |
+| **Refresh-Token** | Eine langlebige undurchsichtige Zeichenkette (ca. 90 Tage), mit der der Client neue Zugriffstoken erzeugt. |
+| **Scope** | Schränkt ein, was das Zugriffstoken tun kann – siehe den [Scope-Katalog](./api-keys#scopes). |
 
-## Grant-Flows
+## Autorisierungsabläufe
 
-B1 unterstützt drei OAuth-Flows, alle gemäß RFC 6749 + RFC 8628 definiert.
+B1 unterstützt drei OAuth-Abläufe, alle definiert durch RFC 6749 und RFC 8628.
 
-### Authorization Code (Web-Apps)
+### Authorization Code (Webanwendungen)
 
-Verwenden Sie diesen Flow, wenn Ihre App eine serverseitige Komponente hat und `client_secret` geheim halten kann.
+Verwenden Sie diesen Ablauf, wenn Ihre App eine serverseitige Komponente hat und das `client_secret` geheim halten kann.
 
 1. **Autorisieren**
 
@@ -48,9 +48,11 @@ Verwenden Sie diesen Flow, wenn Ihre App eine serverseitige Komponente hat und `
      "response_type": "code", "scope": "people:read groups:read", "state": "xyz" }
    ```
 
-   Gibt `{ "code": "...", "state": "xyz" }` zurück. Der Authorization-Code-Endpunkt ist absichtlich ein authentifizierter POST — Ihre App holt das B1-JWT des Benutzers ab (typischerweise, indem sie eine Schaltfläche innerhalb der B1-Sitzung des Benutzers anzeigt) und leitet es als Teil des Zustimmungsschritts weiter.
+   Öffentliche Clients (ohne `client_secret`) müssen zusätzlich `"code_challenge": "..."` und `"code_challenge_method": "S256"` senden (PKCE, RFC 7636). Nur `S256` wird akzeptiert.
 
-2. **Code gegen Token austauschen**
+   Die Antwort lautet `{ "code": "...", "state": "xyz" }`. Der Endpunkt für den Autorisierungscode ist bewusst ein authentifiziertes POST – Ihre App erhält das B1-JWT des Benutzers (typischerweise über eine Schaltfläche in dessen B1-Sitzung) und gibt es im Zustimmungsschritt weiter.
+
+2. **Code gegen Token tauschen**
 
    ```http
    POST /membership/oauth/token
@@ -60,7 +62,9 @@ Verwenden Sie diesen Flow, wenn Ihre App eine serverseitige Komponente hat und `
      "client_id": "...", "client_secret": "...", "redirect_uri": "..." }
    ```
 
-   Gibt die Token-Antwort zurück:
+   Hat der Autorisierungsschritt eine `code_challenge` gesendet, fügen Sie das passende `"code_verifier": "..."` hinzu. Ein öffentlicher Client sendet den Verifier und lässt `client_secret` weg. Der Token-Endpunkt akzeptiert JSON- oder form-kodierte (`application/x-www-form-urlencoded`) Anfragekörper.
+
+   Die Antwort mit dem Token lautet:
 
    ```json
    {
@@ -73,7 +77,7 @@ Verwenden Sie diesen Flow, wenn Ihre App eine serverseitige Komponente hat und `
    }
    ```
 
-3. **Aktualisieren (Refresh)**, wenn das Access Token kurz vor dem Ablauf steht:
+3. **Erneuern**, wenn das Zugriffstoken bald abläuft:
 
    ```http
    POST /membership/oauth/token
@@ -83,13 +87,13 @@ Verwenden Sie diesen Flow, wenn Ihre App eine serverseitige Komponente hat und `
      "client_id": "...", "client_secret": "..." }
    ```
 
-   Das Refresh Token läuft nach 90 Tagen Inaktivität ab; ist es abgelaufen, autorisiert der Kirchen-Admin erneut.
+   Das Refresh-Token läuft nach 90 Tagen ohne Nutzung ab. Ist es abgelaufen, autorisiert die Kirchenadministration erneut.
 
 ### Device Code (TVs, Kioske, CLI)
 
-Verwenden Sie diesen Flow, wenn das Gerät keinen Browser hat. Definiert durch RFC 8628.
+Verwenden Sie diesen Ablauf, wenn das Gerät keinen Browser hat. Definiert durch RFC 8628.
 
-1. **Einen Device Code anfordern**
+1. **Einen Gerätecode anfordern**
 
    ```http
    POST /membership/oauth/device/authorize
@@ -98,7 +102,7 @@ Verwenden Sie diesen Flow, wenn das Gerät keinen Browser hat. Definiert durch R
    { "client_id": "...", "scope": "content:read" }
    ```
 
-   Gibt den benutzerseitigen Code und das Polling-Intervall zurück:
+   Die Antwort enthält den Code für den Benutzer und das Abfrageintervall:
 
    ```json
    { "device_code": "...", "user_code": "WXYZ-1234",
@@ -106,22 +110,22 @@ Verwenden Sie diesen Flow, wenn das Gerät keinen Browser hat. Definiert durch R
      "expires_in": 900, "interval": 5 }
    ```
 
-2. Zeigen Sie `user_code` + `verification_uri` dem Benutzer an.
+2. Zeigen Sie `user_code` und `verification_uri` dem Benutzer an.
 
-3. **Pollen** Sie `/membership/oauth/token` mit `grant_type=urn:ietf:params:oauth:grant-type:device_code` und dem `device_code`. Standardantworten:
+3. **Abfragen** Sie `/membership/oauth/token` mit `grant_type=urn:ietf:params:oauth:grant-type:device_code` und dem `device_code`. Standardantworten:
 
    | Fehler | Bedeutung |
    |---|---|
-   | `authorization_pending` | Der Benutzer hat noch nicht genehmigt — weiter im vorgeschlagenen Intervall pollen |
-   | `expired_token` | Der Device Code ist über `expires_in` hinaus — von vorn beginnen |
+   | `authorization_pending` | Der Benutzer hat noch nicht zugestimmt – im vorgeschlagenen Intervall weiter abfragen |
+   | `expired_token` | Der Gerätecode ist über `expires_in` hinaus gültig – von vorn beginnen |
    | `access_denied` | Der Benutzer hat die Anfrage abgelehnt |
-   | _(keiner — 200 OK)_ | Genehmigt — der Body ist eine `B1TokenResponse` |
+   | _(keine – 200 OK)_ | Genehmigt – der Körper ist ein `B1TokenResponse` |
 
-4. Sobald genehmigt, speichern Sie das `refresh_token` und verwenden das `access_token`, bis es abläuft.
+4. Nach der Genehmigung speichern Sie das `refresh_token` und verwenden das `access_token`, bis es abläuft.
 
-Das B1-SDK enthält `B1OAuthClient.awaitDeviceToken(...)`, das die Polling-Schleife mit sinnvollem, RFC-konformem Backoff für Sie ausführt.
+Das B1-SDK enthält `B1OAuthClient.awaitDeviceToken(...)`, das die Abfrageschleife mit einer RFC-konformen Wartezeit für Sie übernimmt.
 
-### Refresh Token
+### Refresh-Token
 
 Immer als eigenständige Anfrage verfügbar, sobald Sie ein `refresh_token` besitzen:
 
@@ -130,49 +134,71 @@ POST /membership/oauth/token
 { "grant_type": "refresh_token", "refresh_token": "...", "client_id": "..." }
 ```
 
-Ein neues `access_token` und `refresh_token` kommen zurück. **Public Clients** (ohne `client_secret`) können `client_secret` beim Refresh weglassen — nützlich für Mobile-/Desktop-OAuth-Apps, die kein Geheimnis bewahren können.
+Sie erhalten ein neues `access_token` und ein neues `refresh_token` zurück. **Öffentliche Clients** (ohne `client_secret`) können beim Erneuern auf das `client_secret` verzichten – nützlich für mobile oder Desktop-OAuth-Apps, die kein Geheimnis bewahren können.
 
-## Token-Form
+## Aufbau des Tokens
 
-Ein Access Token ist ein von B1 ausgestelltes JWT, identisch mit einem, das ein Benutzer von `POST /membership/users/login` erhalten würde — dieselbe modulare Berechtigungs-Claim, dasselbe `checkAccess`-Verhalten in jedem Controller — **außer** dass das Berechtigungs-Array beim Erstellen durch die gewährten Scopes gefiltert wurde. Ein gescoptes Access Token kann nichts tun, was ein ähnlich gescopter API-Schlüssel nicht kann, und es gibt keinen separaten "OAuth-Pfad" in irgendeinem Controller; `actionWrapper` weiß nicht, ob der Bearer eine Person, ein API-Schlüssel oder ein OAuth-Client ist.
+Ein Zugriffstoken ist ein von B1 ausgestellter JWT, der dem entspricht, den ein Benutzer über `POST /membership/users/login` erhält – mit demselben modularen Berechtigungs-Claim und demselben `checkAccess`-Verhalten in jedem Controller. **Die einzige Ausnahme:** Das Berechtigungs-Array wurde zum Zeitpunkt der Ausstellung durch die gewährten Scopes gefiltert. Ein eingeschränktes Zugriffstoken kann nichts, was ein ähnlich eingeschränkter API-Schlüssel nicht kann. Es gibt in keinem Controller einen eigenen „OAuth-Pfad“; `actionWrapper` weiß nicht, ob der Inhaber eine Person, ein API-Schlüssel oder ein OAuth-Client ist.
 
-## Connected Apps (benutzerseitig)
+## Verbundene Apps (für Benutzer sichtbar)
 
-Aus Sicht eines Kirchen-Admins ist "Connected Apps" die Liste der Apps, denen Zugriff auf ihre Kirche gewährt wurde. Jede Zeile ist ein aktives `(OAuthClient, OAuthToken)`-Paar.
+Aus Sicht einer Kirchenadministration ist „Verbundene Apps“ die Liste der Apps, denen Zugriff auf ihre Kirche gewährt wurde. Jede Zeile ist ein aktives Paar `(OAuthClient, OAuthToken)`.
 
-In B1Admin zeigt **Einstellungen → Entwickler → Connected Apps**:
+In B1 Admin zeigt **Einstellungen → Entwickler → Verbundene Apps**:
 
-- Den Namen des Clients
-- Die Scopes, die der Admin genehmigt hat
-- Das Datum, an dem der Zugriff gewährt wurde
-- Eine Schaltfläche **Widerrufen**
+- den Namen des Clients,
+- die Scopes, die die Administration genehmigt hat,
+- das Datum, an dem der Zugriff gewährt wurde,
+- eine Schaltfläche **Widerrufen**.
 
-| Methode & Pfad | Auth | Zweck |
+| Methode & Pfad | Authentifizierung | Zweck |
 |---|---|---|
-| `GET /membership/oauth/connections` | JWT | Listet die eigenen aktiven Verbindungen des Aufrufers auf (verknüpft mit Client-Name + Scopes) |
-| `DELETE /membership/oauth/connections/:id` | JWT | Widerruft eine Verbindung anhand ihrer OAuth-Token-ID — das Token funktioniert ab der nächsten Anfrage nicht mehr |
+| `GET /membership/oauth/connections` | JWT | Listet die eigenen aktiven Verbindungen des Aufrufers auf (mit Client-Name und Scopes) |
+| `DELETE /membership/oauth/connections/:id` | JWT | Widerruft eine Verbindung über die ID des OAuth-Tokens – das Token funktioniert ab der nächsten Anfrage nicht mehr |
 
 Die Liste schließt abgelaufene Token automatisch aus.
 
-## Scopes & Zustimmung
+## Scopes und Zustimmung
 
-Die Scope-Strings sind derselbe Katalog wie bei [API-Schlüsseln](./api-keys#scopes). Best Practices für Clients:
+Die Scope-Bezeichnungen entsprechen dem Katalog der [API-Schlüssel](./api-keys#scopes). Bewährte Vorgehensweisen für Clients:
 
-- **Fordern Sie die engsten Scopes an, die funktionieren.** Kirchen bemerken es, wenn Sie `donations:write` verlangen, obwohl Sie nur Personen lesen müssen.
-- **Verwenden Sie ein Refresh Token plus kurzlebige Access Token.** Langlebige Access Token lassen sich schwerer schnell widerrufen.
-- **Zeigen Sie die gewährten Scopes dem Benutzer immer in Ihrer eigenen UI an**, damit er überprüfen kann, wozu er zugestimmt hat.
+- **Fordern Sie die engsten Scopes an, die funktionieren.** Kirchen bemerken es, wenn Sie `donations:write` anfordern, obwohl Sie nur Personen lesen müssen.
+- **Verwenden Sie ein Refresh-Token zusammen mit kurzlebigen Zugriffstoken.** Langlebige Zugriffstoken lassen sich nur schwer schnell widerrufen.
+- **Zeigen Sie die gewährten Scopes dem Benutzer immer in Ihrer eigenen Oberfläche an**, damit er prüfen kann, wozu er zugestimmt hat.
 
-## Verwaltung von OAuth-Clients
+## Verwaltung der OAuth-Clients
 
-OAuth-Clients (die Drittanbieter-Apps selbst) werden derzeit global von einem B1-Server-Admin registriert. Die Selbstregistrierung je Kirche ist auf der Roadmap — bis dahin kontaktieren Sie das ChurchApps-Team, um ein `client_id`/`client_secret`-Paar zu erstellen und Ihre Redirect-URIs zu registrieren, wenn Sie einen öffentlichen Connector ausliefern möchten.
+OAuth-Clients (die Drittanbieter-Apps selbst) werden global registriert. Ein vertraulicher Client mit `client_secret` wird von einem B1-Serveradministrator angelegt – um eine solche App bereitzustellen, wenden Sie sich an das ChurchApps-Team für ein Paar aus `client_id` und `client_secret` und lassen Ihre Redirect-URIs registrieren. Öffentliche Clients wie MCP-Connectoren können sich selbst registrieren (siehe unten).
+
+Registrierte Redirect-URIs müssen exakt mit dem `redirect_uri` der Anfrage übereinstimmen; eine Präfix- oder Teilübereinstimmung wird abgelehnt.
 
 | Methode & Pfad | Berechtigung | Beschreibung |
 |---|---|---|
 | `GET /membership/oauth/clients` | Server.Admin | Listet alle OAuth-Clients auf |
-| `GET /membership/oauth/clients/clientId/:clientId` | — | Ruft einen Client anhand seiner öffentlichen ID ab (Secret geschwärzt) |
+| `GET /membership/oauth/clients/clientId/:clientId` | — | Holt einen Client über seine öffentliche ID (Geheimnis ausgeblendet) |
 | `POST /membership/oauth/clients` | Server.Admin | Erstellt oder aktualisiert einen Client |
 | `DELETE /membership/oauth/clients/:id` | Server.Admin | Löscht einen Client |
 
+### Dynamische Client-Registrierung {#dynamic-client-registration}
+
+`POST /membership/oauth/register` (öffentlich, RFC 7591) ermöglicht es einem Client wie dem MCP-Connector von claude.ai, sich selbst zu registrieren. Der Endpunkt wird im Dokument `/.well-known/oauth-authorization-server` der API bekannt gegeben – siehe [MCP-Server → OAuth-Erkennung](./mcp#oauth-discovery).
+
+```http
+POST /membership/oauth/register
+Content-Type: application/json
+
+{ "client_name": "My AI assistant", "redirect_uris": ["https://assistant.example.com/oauth/callback"], "scope": "people:read" }
+```
+
+Die Antwort mit dem Status 201 enthält `client_id`, `client_id_issued_at`, `client_name`, `redirect_uris`, `grant_types` (`authorization_code`, `refresh_token`), `response_types` (`code`) und `token_endpoint_auth_method: "none"`.
+
+- Es wird nie ein Geheimnis ausgegeben. Der Client muss daher bei jeder Autorisierung PKCE verwenden.
+- `redirect_uris` müssen 1 bis 10 `https`-URLs sein oder `http` auf `localhost`, `127.0.0.1` oder `[::1]`.
+- `client_name` wird auf 45 Zeichen gekürzt (Standard: „AI assistant“).
+- Auf 20 Registrierungen pro Stunde und IP-Adresse begrenzt.
+
+Auf der Zustimmungsseite von B1 Admin erhält ein selbst registrierter Client einen Hinweis, dass er sich selbst registriert hat, niemals mehr tun kann als das eigene B1-Konto des Benutzers und unter **Einstellungen → Entwickler → Verbundene Apps** getrennt werden kann.
+
 ## SDK-Unterstützung
 
-Das Paket `@churchapps/integration-sdk` umschließt jeden OAuth-Flow mit typisierten Hilfsfunktionen — `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Ein End-to-End-Beispiel finden Sie im README des Pakets und unter [Webhooks](./webhooks#sdk-support).
+Das Paket `@churchapps/integration-sdk` umhüllt jeden OAuth-Ablauf mit typisierten Hilfsfunktionen – `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` und `.awaitDeviceToken()`. Ein durchgängiges Beispiel finden Sie in der README des Pakets und unter [Webhooks](./webhooks#sdk-support).

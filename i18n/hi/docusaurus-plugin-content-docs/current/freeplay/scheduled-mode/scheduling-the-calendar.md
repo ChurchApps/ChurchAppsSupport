@@ -1,91 +1,91 @@
 ---
-title: "कैलेंडर शेड्यूल करना"
+title: "Calendar का शेड्यूल करना"
 ---
 
-# कैलेंडर शेड्यूल करना
+# Calendar का शेड्यूल करना {#scheduling-the-calendar}
 
 <div class="article-intro">
 
-FreePlay Admin में **Calendar** पेज तय करता है कि हर स्क्रीन समूह क्या चलाता है और कब। किसी प्लेलिस्ट, सेवा योजना, या प्रदाता फ़ोल्डर के लिए शेड्यूल जोड़ें, और उसे साप्ताहिक दोहराने या एक बार चलाने के लिए सेट करें। जब कुछ शेड्यूल न हो, तो समूह का डिफ़ॉल्ट लूप चलता है।
+FreePlay Admin में **Calendar** पेज नियंत्रित करता है कि हर screen group क्या चलाता है और कब। किसी playlist, service plan, या provider folder के लिए schedule जोड़ें, और उसे हर हफ्ते दोहराने या एक बार चलाने के लिए सेट करें। जब कुछ भी शेड्यूल नहीं होता, तो group का default loop चलता है।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- कम से कम एक स्क्रीन समूह बनाएं। देखें [स्क्रीन और समूह प्रबंधित करना](./managing-screens#screen-groups)
-- [एक प्लेलिस्ट बनाएं](./building-playlists), या B1 Admin में एक प्लान प्रकार सेट अप करें
+- कम से कम एक screen group बनाएं। देखें [Managing Screens और Groups](./managing-screens#screen-groups)
+- [एक playlist बनाएं](./building-playlists), या B1 Admin में एक plan type सेट किया हो
 
 </div>
 
-## कैलेंडर पढ़ना
+## Calendar पढ़ना {#reading-the-calendar}
 
 1. **Calendar** पर जाएं।
-2. ऊपर की टैब से एक स्क्रीन समूह चुनें। हर टैब दिखाता है कि समूह के कितने शेड्यूल हैं।
-3. सप्ताह का दृश्य सोमवार से रविवार तक, सुबह 6 बजे से रात 10 बजे तक चलता है। एक लाल रेखा वर्तमान समय दिखाती है।
-4. पिछले या अगले सप्ताह में जाने के लिए तीरों का उपयोग करें, या इस सप्ताह पर लौटने के लिए **Today** पर क्लिक करें।
+2. ऊपर के tabs में से एक screen group चुनें। हर tab दिखाता है कि group के कितने schedules हैं।
+3. Week view सोमवार से रविवार तक, सुबह 6 बजे से रात 10 बजे तक चलता है। एक लाल रेखा वर्तमान समय दिखाती है।
+4. पिछले या अगले हफ्ते पर जाने के लिए तीरों का उपयोग करें, या इस हफ्ते पर लौटने के लिए **Today** पर click करें।
 
-पेज का सबटाइटल वह समय क्षेत्र दिखाता है जो कैलेंडर में इस्तेमाल होता है। शेड्यूल आपके चर्च के समय क्षेत्र का पालन करते हैं। अगर आपके चर्च का समय क्षेत्र सेट नहीं है, तो FreePlay आपके कैंपस के समय क्षेत्र का उपयोग करता है।
+पेज का subtitle calendar के लिए उपयोग किया गया time zone दिखाता है। Schedules आपके church के time zone का पालन करते हैं, जिसे आप B1 Admin में [Church Information](../../b1-admin/settings/church-settings.md#time-zone) के अंतर्गत सेट करते हैं। यदि आपके church का time zone सेट नहीं है, तो FreePlay आपके campus के time zone का उपयोग करता है। Calendar और आपके TVs एक ही time zone का उपयोग करते हैं, इसलिए calendar पर सुबह 9:00 बजे रखा गया block TV पर भी 9:00 बजे चलता है, भले ही आपके कंप्यूटर का time zone अलग हो।
 
-शेड्यूल प्रकार के अनुसार रंग-कोडित होते हैं। एक लीजेंड रंगों को समझाता है:
+Schedules उनके प्रकार के अनुसार रंग-कोडित होते हैं। एक legend रंगों को समझाता है:
 
-- **Default loop** - हैच्ड पृष्ठभूमि; जब समूह का डिफ़ॉल्ट लूप हो, तो यह हर चीज़ के पीछे दिखती है
+- **Default loop** - hatched background, जो हर चीज़ के पीछे दिखता है जब group के पास default loop होता है
 - **Playlist**
 - **Service plan**
 - **Provider folder**
 
-हर ब्लॉक अपना नाम दिखाता है, और बड़े ब्लॉक समय, यह कि वह दोहराता है या नहीं (**weekly** या **once**), और जल्दी खत्म होने पर क्या होता है, यह भी दिखाते हैं।
+हर block अपना नाम दिखाता है, और बड़े blocks समय, यह कि वह दोहराता है (**weekly** या **once**), और जब वह जल्दी खत्म होता है तो क्या होता है, वह भी दिखाते हैं।
 
-## डिफ़ॉल्ट लूप सेट करना
+## Default loop सेट करना {#setting-the-default-loop}
 
-डिफ़ॉल्ट लूप समूह की स्क्रीन पर तब चलता है जब कुछ भी शेड्यूल न हो।
+default loop group की screens पर तब चलता है जब कुछ भी शेड्यूल नहीं होता।
 
-1. **Calendar** पेज पर, हेडर में **Default loop…** पर क्लिक करें। अगर डिफ़ॉल्ट लूप पहले से सेट है, तो बटन **Default loop:** के बाद प्लेलिस्ट का नाम दिखाता है।
+1. **Calendar** पेज पर, header में **Default loop…** पर click करें। यदि default loop पहले से सेट है, तो बटन **Default loop:** के बाद playlist का नाम दिखाता है।
 2. एक **Playlist** चुनें, या **None — screen goes dark** चुनें।
-3. **Save** पर क्लिक करें।
+3. **Save** पर click करें।
 
-## शेड्यूल जोड़ना
+## Schedule जोड़ना {#adding-a-schedule}
 
-नया शेड्यूल शुरू करने के तीन तरीके हैं:
+नया schedule शुरू करने के तीन तरीके हैं:
 
-- कैलेंडर पर किसी खाली जगह पर क्लिक करें। फ़ॉर्म में वह दिन और आधा घंटा पहले से भरा होगा।
-- हेडर में **Add schedule** पर क्लिक करें।
-- कमांड पैलेट (**Ctrl+K** या **⌘K**) से **Add schedule** चुनें।
+- calendar पर किसी खाली जगह पर click करें। फ़ॉर्म उस दिन और आधे घंटे के समय के साथ पहले से भरा खुलता है।
+- header में **Add schedule** पर click करें।
+- command palette (**Ctrl+K** या **⌘K**) से **Add schedule** चुनें।
 
 फिर फ़ॉर्म भरें:
 
-1. **Play** - चुनें कि क्या चलेगा:
-   - **Playlists** - आपकी बनाई कोई भी प्लेलिस्ट
-   - **Service plans** - B1 Admin से एक प्लान प्रकार, **(current plan)** चिह्न के साथ। स्क्रीन हर सप्ताह उस प्लान प्रकार की वर्तमान योजना चलाती है
-   - **Provider folder…** - **Choose a provider folder** खोलता है। किसी फ़ोल्डर तक ब्राउज़ करें और **Use this folder** पर क्लिक करें। बाद में कोई और फ़ोल्डर चुनने के लिए **Change** पर क्लिक करें
-2. **Repeats** - सप्ताह के वे दिन चुनें जब यह शेड्यूल चले। इसके बजाय एक ही तारीख के लिए **One time** चालू करें और **Date** चुनें।
-3. **Start** और **End** - वे समय जब शेड्यूल शुरू और बंद हो।
-4. **If it finishes early** - समय से पहले सामग्री खत्म होने पर क्या करना है:
-   - **Loop until the end time** - शुरू से फिर शुरू होता है। साइनेज लूप, घोषणाओं और काउंटडाउन के लिए अच्छा है
-   - **Teacher paced** - स्लाइड शिक्षक के रिमोट का इंतज़ार करती हैं। अंतिम स्लाइड तक पाठ समाप्ति समय के बाद भी दिखता रहता है
-   - **एक बार चलाएं, फिर डिफ़ॉल्ट लूप पर लौटें**
-5. दोहराने वाले शेड्यूल के लिए, **Starts** को पहली तारीख पर सेट करें। **Ends** के अंतर्गत **Never** चुनें, या **On date** चुनें और **End date** दर्ज करें।
-6. **Save** पर क्लिक करें।
+1. **Play** - चुनें कि क्या चले:
+   - **Playlists** - आपके बनाए गए कोई भी playlist
+   - **Service plans** - B1 Admin से एक plan type, **(current plan)** के रूप में चिह्नित। स्क्रीन हर हफ्ते उस plan type का वर्तमान plan चलाती है, जिसमें Go Curriculum lessons (customize किए गए भी) शामिल हैं, जो plan type की ministry से जुड़े Go login का उपयोग करते हैं
+   - **Provider folder…** - **Choose a provider folder** खोलता है। एक folder में browse करें और **Use this folder** पर click करें। बाद में कोई दूसरा folder चुनने के लिए **Change** पर click करें
+2. **Repeats** - वे हफ्ते के दिन चुनें जब यह schedule चले। इसके बजाय एक ही तारीख के लिए **One time** चालू करें और **Date** चुनें।
+3. **Start** और **End** - वे समय जब schedule शुरू और बंद हो
+4. **If it finishes early** - जब end time से पहले सामग्री खत्म हो जाए तो क्या करना है:
+   - **Loop until the end time** - शुरुआत से फिर शुरू होता है। signage loops, announcements और countdowns के लिए अच्छा
+   - **Teacher paced** - slides teacher के remote का इंतज़ार करती हैं। आखिरी slide तक lesson end time के बाद भी लगा रहता है
+   - **Play once, then go back to the default loop**
+5. दोहराने वाले schedules के लिए, **Starts** को पहली तारीख पर सेट करें। **Ends** के अंतर्गत **Never** चुनें, या **On date** चुनकर **End date** दर्ज करें।
+6. **Save** पर click करें।
 
 :::info
-**Teacher paced** ने पुराने विकल्प "hold the last slide" की जगह ली है। उस विकल्प के साथ सहेजे गए शेड्यूल अब teacher paced के रूप में चलते हैं।
+**Teacher paced** ने पुराने "hold the last slide" विकल्प की जगह ली है। उस विकल्प के साथ सहेजे गए schedules अब teacher paced के रूप में चलते हैं।
 :::
 
-## शेड्यूल संपादित या हटाना
+## Schedule संपादित या delete करना {#editing-or-deleting-a-schedule}
 
-1. कैलेंडर पर शेड्यूल के ब्लॉक पर क्लिक करें।
-2. कोई भी फ़ील्ड बदलें और **Save** पर क्लिक करें, या शेड्यूल हटाने के लिए **Delete** पर क्लिक करें।
+1. calendar पर schedule के block पर click करें।
+2. कोई भी field बदलें और **Save** पर click करें, या schedule हटाने के लिए **Delete** पर click करें।
 
-## ओवरलैपिंग शेड्यूल
+## Overlapping Schedules {#overlapping-schedules}
 
-अगर दो शेड्यूल ओवरलैप करते हैं, तो फ़ॉर्म चेतावनी दिखाता है: **दूसरे शेड्यूल के साथ ओवरलैप करता है। जो बाद में शुरू होता है, वही जीतता है।** जब बाद वाला शेड्यूल चल रहा हो, तो स्क्रीन उसे चलाती हैं। वह खत्म होने पर, अगर पहला शेड्यूल अभी भी चल रहा है, तो वे उसी पर लौट जाती हैं।
+यदि दो schedules overlap करते हैं, तो फ़ॉर्म एक चेतावनी दिखाता है: **Overlaps another schedule. The one that starts later wins.** जब बाद वाला schedule चल रहा होता है, तो screens वही चलाती हैं। जब वह खत्म होता है, तो यदि पहला अभी भी चल रहा है तो वे उस पर लौट आती हैं।
 
-## स्क्रीन बदलाव कैसे उठाती हैं
+## Screens बदलाव कैसे उठाती हैं {#how-screens-pick-up-changes}
 
-जुड़ी हुई स्क्रीन अगले 7 दिनों के लिए शेड्यूल की गई सारी सामग्री डाउनलोड करती हैं, और अपने आप बदलाव जांचती हैं। कैलेंडर संपादित करने के बाद आपको TV को छूने की जरूरत नहीं है। यह देखने के लिए कि किसी स्क्रीन के पास सब कुछ है या नहीं, [Screens पेज](./managing-screens) पर **Ready through** देखें।
+Paired screens अगले 7 दिनों के लिए शेड्यूल की गई हर चीज़ डाउनलोड करती हैं, और वे अपने-आप बदलावों की जांच करती हैं। calendar संपादित करने के बाद आपको TV को छूने की ज़रूरत नहीं है। यह देखने के लिए कि screen के पास सब कुछ है या नहीं, [Screens पेज](./managing-screens) पर **Ready through** देखें।
 
-## संबंधित लेख
+## संबंधित लेख {#related-articles}
 
-- **[प्लेलिस्ट बनाना](./building-playlists)** - वे प्लेलिस्ट बनाएं जिन्हें आप शेड्यूल करते हैं
-- **[TV पर शेड्यूल्ड प्लेबैक](./scheduled-playback)** - TV पर teacher paced पाठ और रिमोट कैसे काम करते हैं
-- **[स्क्रीन और समूह प्रबंधित करना](./managing-screens)** - समूह जोड़ें और हर स्क्रीन के डाउनलोड जांचें
+- **[Playlists बनाना](./building-playlists)** - वे playlists बनाएं जिन्हें आप शेड्यूल करते हैं
+- **[TV पर शेड्यूल्ड Playback](./scheduled-playback)** - Teacher paced lessons और remote TV पर कैसे काम करते हैं
+- **[Managing Screens और Groups](./managing-screens)** - groups जोड़ें और हर screen के downloads जांचें

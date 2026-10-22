@@ -15,6 +15,7 @@ Once your campuses, service times, and groups are set up, you can manually recor
 
 - Your campuses, service times, and groups must be configured. See [Attendance Setup](setup.md) if you haven't done this yet.
 - The groups you want to track must have **Track Attendance** enabled. See [Attendance Setup](setup.md) for details.
+- You need the **Edit Attendance** permission to save attendance. Volunteers who only have **View People Names Only** for people can still take attendance this way -- they open classes from **Groups** and see members by name only. See [People Names Only](../settings/roles-permissions.md#people-names-only).
 
 </div>
 

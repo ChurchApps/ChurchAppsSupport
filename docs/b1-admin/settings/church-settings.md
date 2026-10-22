@@ -26,6 +26,7 @@ The Church Settings page is where you configure your church's basic information,
    - **Church Name** -- The name displayed across all ChurchApps products.
    - **Address** -- Your church's physical address.
    - **Contact Information** -- Phone number, email, and other contact details.
+   - **Time Zone** -- Your church's time zone. See [Time Zone](#time-zone) below.
 4. Click **Save** to apply your changes.
 
 ## Setting Up Your Subdomain
@@ -56,6 +57,12 @@ For best results, use a logo with a transparent background in PNG format. This e
 ## First Day of Week
 
 Choose which day your calendars start on. The **First Day of Week** dropdown on the Church Info section defaults to **Sunday**, but can be set to any day. Once changed, it's honored across calendar grids in B1 Admin and the B1.church member portal -- group calendars, curated calendars, and the event editor all lay out weeks starting on the day you choose.
+
+## Time Zone
+
+The **Time Zone** dropdown in the **Church Information** section sets your church's time zone (for example, *America/Chicago*). Choose **None** to leave it blank. Once saved, the zone appears in the Church Information summary.
+
+B1 uses this time zone for church-wide times, such as event reminders and the schedules on your [FreePlay](../../freeplay/scheduled-mode/scheduling-the-calendar.md) TVs. [Check-in schedules](../attendance/setup.md#setting-a-check-in-schedule) are measured in the time zone of the service's [campus](./campuses.md) first, and use the church time zone only when that campus doesn't have one. If your campuses are all in one time zone, set it on both the church and each campus.
 
 ## Region (Date and Phone Format)
 

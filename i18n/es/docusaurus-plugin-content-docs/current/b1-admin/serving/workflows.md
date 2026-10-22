@@ -6,226 +6,226 @@ title: "Flujos de trabajo"
 
 <div class="article-intro">
 
-Los flujos de trabajo mueven a las personas a través de una serie de pasos en un tablero visual. Cada persona se convierte en una tarjeta que viaja de un paso al siguiente, desde el seguimiento de un primer visitante, pasando por un proceso de membresía, hasta un agradecimiento por la primera donación, y cualquier otra cosa donde necesites rastrear a muchas personas a través del mismo conjunto de etapas. Un paso puede pedir a un voluntario que haga algo (hacer una llamada, tener una conversación) **y** ejecutar acciones automatizadas por su cuenta: enviar un correo electrónico o mensaje de texto, esperar unos días, agregar a la persona a un grupo, para que los Flujos de trabajo manejen tanto el seguimiento humano como el trabajo administrativo que lo rodea. Los Flujos de trabajo extienden [Tareas](./tasks.md) en un tablero Kanban de arrastrar y soltar para que nada y nadie caiga por las grietas.
+Los flujos de trabajo mueven a las personas por una serie de pasos en un tablero visual. Cada persona se convierte en una tarjeta que avanza de un paso al siguiente: desde el seguimiento de un visitante primerizo, pasando por un proceso de membresía, hasta un agradecimiento a alguien que da por primera vez, y cualquier otra situación en la que necesites llevar a muchas personas por las mismas etapas. Un paso puede pedirle a un voluntario que haga algo (llamar, tener una conversación) **y** ejecutar acciones automatizadas por sí mismo (enviar un correo o un mensaje de texto, esperar unos días, agregar a la persona a un grupo), así que los flujos de trabajo se encargan tanto del seguimiento humano como de las tareas repetitivas que lo rodean. Los flujos de trabajo amplían las [Tareas](./tasks.md) con un tablero Kanban de arrastrar y soltar para que nadie y nada se quede sin atención.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Asegúrate de que las personas que deseas rastrear existan en B1 Admin
-- Familiarízate con cómo funcionan [Tareas](./tasks.md), ya que cada tarjeta en el tablero es una tarea
-- Para usar la acción **Enviar correo electrónico**, crea primero las plantillas de correo electrónico que deseas enviar (gestionadas en **Mensajería → Gestionar plantillas**)
-- Para usar la acción **Enviar texto**, conecta primero un [proveedor de mensajes de texto](../settings/church-settings.md#texting)
-- Necesitarás el permiso de Tareas apropiado. Ver, editar tarjetas y administrar flujos de trabajo son niveles de permiso separados (consulta [Roles y permisos](../settings/roles-permissions.md))
+- Asegúrate de que las personas que quieres seguir existan en B1 Admin
+- Familiarízate con el funcionamiento de las [Tareas](./tasks.md), ya que cada tarjeta de un tablero es una tarea
+- Para usar la acción **Send email**, primero crea las plantillas de correo que quieras enviar (se administran en **Settings → Email Templates**)
+- Para usar la acción **Send text**, conecta primero un [proveedor de mensajes de texto](../settings/church-settings.md#texting)
+- Necesitas el permiso de Tareas correspondiente. Ver, editar tarjetas y administrar flujos de trabajo son niveles de permiso distintos (consulta [Roles y permisos](../settings/roles-permissions.md))
 
 </div>
 
-## Ver flujos de trabajo
+## Ver los flujos de trabajo
 
-Abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expande **Sirviendo**, y haz clic en **Flujos de trabajo**. Tus flujos de trabajo aparecen en una tabla que muestra la **Categoría** y el **Estado** de cada uno (**Activo** o **Inactivo**). Si usas categorías, las pestañas encima de la lista te permiten filtrarla por categoría. Haz clic en cualquier flujo de trabajo para abrir su tablero.
+Abre el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda de B1 Admin), expande **Serving** y haz clic en **Workflows**. Tus flujos de trabajo aparecen en una tabla que muestra la **Category** y el **Status** de cada uno (**Active** o **Inactive**). Si usas categorías, las pestañas sobre la lista te permiten filtrarla por categoría. Haz clic en cualquier flujo de trabajo para abrir su tablero.
 
 ## Crear un flujo de trabajo
 
-1. En la página Flujos de trabajo, haz clic en **Agregar flujo de trabajo**.
-2. Elige cómo comenzar:
-   - **Flujo de trabajo en blanco**: comienza desde cero y construye tus propios pasos.
-   - **Desde una plantilla**: comienza con un conjunto de pasos listos que puedes editar. Las plantillas incorporadas incluyen:
-     - **Seguimiento de nuevo visitante**: enviar correo de bienvenida → Llamada telefónica personal → Invitar al siguiente paso → Conectado
-     - **Clase de membresía**: expresar interés → registrarse para la clase → asistir a la clase → completar membresía
-     - **Agradecimiento a primer donante**: enviar nota de agradecimiento → Compartir impacto de donación → Administrado
-3. Dale un **Nombre** al flujo de trabajo.
-4. Opcionalmente, asigna una **Categoría** para agrupar flujos de trabajo relacionados. Puedes crear una nueva categoría directamente desde el menú desplegable.
-5. Dejar el flujo de trabajo **Activo** para que las personas puedan ser agregadas, o configurarlo en **Inactivo** para ocultarlo de las listas de agregar al flujo de trabajo.
-6. Haz clic en **Guardar**.
+1. En la página de Workflows, haz clic en **Add Workflow**.
+2. Elige cómo empezar:
+   - **Blank workflow**: empieza desde cero y crea tus propios pasos.
+   - **From a template**: empieza con un conjunto de pasos listo para usar que puedes editar. Las plantillas integradas incluyen:
+     - **New Visitor Follow-up**: Send welcome email → Personal phone call → Invite to next step → Connected
+     - **Membership Class**: Express interest → Register for class → Attend class → Complete membership
+     - **First-time Giver Thank-you**: Send thank-you note → Share giving impact → Stewarded
+3. Asigna un **Name** al flujo de trabajo.
+4. Opcionalmente, asigna una **Category** para agrupar flujos de trabajo relacionados. Puedes crear una categoría nueva directamente desde el menú desplegable.
+5. Deja el flujo de trabajo en **Active** para que se pueda agregar personas, o cámbialo a **Inactive** para ocultarlo de las listas de agregar a un flujo de trabajo.
+6. Haz clic en **Save**.
 
 :::tip
-Usa el botón **Duplicar** en la lista de Flujos de trabajo para copiar un flujo de trabajo existente (incluyendo sus pasos, acciones automatizadas y enrutamiento) como punto de partida para uno nuevo.
+Usa el botón **Duplicate** en la lista de Workflows para copiar un flujo de trabajo existente, incluidos sus pasos, acciones automatizadas y rutas, y usarlo como punto de partida para uno nuevo.
 :::
 
 ## Construir el tablero con pasos
 
-Cada tablero de flujo de trabajo está hecho de **pasos**, que se muestran como columnas de izquierda a derecha. Abre un flujo de trabajo y usa **Agregar paso** para crear cada etapa de tu proceso.
+Cada tablero de flujo de trabajo está formado por **pasos**, que se muestran como columnas de izquierda a derecha. Abre un flujo de trabajo y usa **Add Step** para crear cada etapa de tu proceso.
 
-Cuando agregas o editas un paso, puedes configurar:
+Al agregar o editar un paso, puedes configurar:
 
-- **Nombre del paso**: el encabezado de la columna (por ejemplo, "Llamada de bienvenida" o "Esperando registro").
-- **Vence en (días)**: establece automáticamente una fecha de vencimiento cuando una tarjeta entra en este paso. Las tarjetas después de su fecha de vencimiento se marcan como **Vencidas**.
-- **Asignado por defecto**: la persona o grupo a la que se asignan automáticamente las nuevas tarjetas en este paso. Cuando el asignado por defecto es una persona, recibe una notificación de que se le ha asignado una tarjeta.
-- **Acciones automatizadas**: cosas que el sistema hace por su cuenta cuando una tarjeta llega (ver más abajo).
-- **Enrutamiento**: a dónde va la tarjeta cuando sale del paso (ver [Enrutamiento](#routing-cards-with-outcomes-and-conditions)).
+- **Step Name**: el encabezado de la columna (por ejemplo, "Welcome Call" o "Awaiting Registration").
+- **Due in (days)**: establece automáticamente una fecha de vencimiento cuando una tarjeta entra en este paso. Las tarjetas que pasan su fecha de vencimiento se marcan como **Overdue**.
+- **Default assignee**: la persona o grupo al que se asignan automáticamente las tarjetas nuevas de este paso. Cuando el asignado por defecto es una persona, recibe una notificación de que se le asignó una tarjeta.
+- **Automated actions**: cosas que el sistema hace por sí mismo cuando llega una tarjeta (ver más abajo).
+- **Routing**: a dónde va la tarjeta cuando sale del paso (ver [Routing](#routing-cards-with-outcomes-and-conditions)).
 
-Arrastra las columnas de paso al orden que coincida con tu proceso. El orden también define la ruta predeterminada que toma una tarjeta cuando no se aplica otro enrutamiento.
+Arrastra las columnas de los pasos hasta ponerlas en el orden que corresponda a tu proceso. El orden también define la ruta predeterminada que sigue una tarjeta cuando no se aplica ninguna otra regla de enrutamiento.
 
 :::info
-Guarda un nuevo paso primero. Las acciones automatizadas y el enrutamiento se adhieren al paso, por lo que el editor desbloquea esas secciones una vez que el paso existe.
+Guarda primero un paso nuevo. Las acciones automatizadas y el enrutamiento se asocian al paso, así que el editor desbloquea esas secciones una vez que el paso existe.
 :::
 
 ## Acciones automatizadas
 
-Cada paso puede llevar una lista de **acciones automatizadas** que se ejecutan por sí mismas en el momento en que una tarjeta **entra** al paso, antes de que alguien la toque. Así es como un paso solicita a un voluntario *y* se encarga del trabajo rutinario alrededor del seguimiento.
+Cada paso puede tener una lista de **acciones automatizadas** que se ejecutan por sí solas en el momento en que una tarjeta **entra** al paso, antes de que alguien la toque. Así un paso puede tanto indicar a un voluntario qué hacer como encargarse del trabajo rutinario que rodea el seguimiento.
 
-En el editor de pasos, abre **Acciones automatizadas**, haz clic en **Agregar acción**, elige un tipo, completa su configuración, y haz clic en el icono de guardar en esa acción. Agrega todos los que necesites; se ejecutan **de arriba a abajo en orden**.
+En el editor del paso, abre **Automated actions**, haz clic en **Add Action**, elige un tipo, completa su configuración y haz clic en el ícono de guardar de esa acción. Agrega todas las que necesites; se ejecutan **de arriba hacia abajo, en orden**.
 
-| Acción | Lo que hace |
+| Acción | Qué hace |
 |---|---|
-| **Enviar correo electrónico** | Envía un correo electrónico por correo a la persona usando una plantilla de correo electrónico que elijas. Puedes anular la línea de asunto. |
-| **Enviar texto** | Envía un mensaje de texto a la persona que escribes, a través del [proveedor de mensajes de texto](../settings/church-settings.md#texting) de tu iglesia. |
-| **Esperar** | Pausa la tarjeta durante varios días antes de continuar (ver más abajo). |
-| **Agregar al grupo** | Agrega a la persona a un [grupo](../groups/index.md) que elijas. |
-| **Eliminar del grupo** | Elimina a la persona de un grupo que elijas. |
-| **Agregar al flujo de trabajo** | Inicia a la persona en otro flujo de trabajo, útil para pasar entre procesos. |
-| **Agregar nota** | Registra una nota en el historial de la tarjeta. |
-| **Establecer campo** | Actualiza un campo en el registro de la persona: estado de membresía, estado civil, género, ciudad, estado o código postal. |
-| **Webhook** | Envía los detalles de la tarjeta a una dirección web externa (URL) que proporcionas, para conectar con otros sistemas. |
-| **Crear tarea** | Crea una [tarea](./tasks.md) con el título y descripción que ingresas, asignada a quien elijas. |
+| **Send email** | Envía a la persona una plantilla de correo que elijas. Puedes reemplazar el asunto. |
+| **Send text** | Envía a la persona un mensaje que escribas, a través del [proveedor de mensajes de texto](../settings/church-settings.md#texting) de tu iglesia. |
+| **Wait** | Pausa la tarjeta durante un número de días antes de continuar (ver más abajo). |
+| **Add to group** | Agrega a la persona a un [grupo](../groups/index.md) que elijas. |
+| **Remove from group** | Quita a la persona de un grupo que elijas. |
+| **Add to workflow** | Inicia a la persona en otro flujo de trabajo; útil para pasar casos entre procesos. |
+| **Add note** | Registra una nota en el historial de la tarjeta. |
+| **Set field** | Actualiza un campo del registro de la persona: Membership Status, Marital Status, Gender, City, State o Zip. |
+| **Webhook** | Envía los detalles de la tarjeta a una dirección web externa (URL) que proporciones, para conectar con otros sistemas. |
+| **Create task** | Crea una [tarea](./tasks.md) con el título y la descripción que ingreses, asignada a quien elijas. |
 
-Después de que todas las acciones de un paso terminen, la tarjeta **descansa en ese paso** para que una persona pueda trabajarla, a menos que el paso tenga una ruta automática que la mueva adelante (ver [Pasos completamente automatizados](#fully-automated-steps)).
-
-:::info
-Las acciones automatizadas se ejecutan solo cuando una tarjeta llega a través del flujo normal, cuando se agrega por primera vez, cuando un resultado o ruta automática la trae, o después de que espera se termina. **No** se vuelven a ejecutar cuando un miembro del personal arrastra manualmente una tarjeta al paso o la envía de vuelta, por lo que una persona no recibirá el mismo correo electrónico dos veces.
-:::
-
-### Enviar correo electrónico
-
-Elige **Enviar correo electrónico**, elige una de tus plantillas de correo electrónico, y opcionalmente escribe un asunto personalizado. Cuando una tarjeta entra en el paso, la persona recibe ese correo electrónico automáticamente. (Si la persona no tiene dirección de correo electrónico en el archivo, el paso simplemente omite esta acción). [Campos de fusión](../settings/email-templates.md#merge-fields) en la plantilla, como `{{firstName}}`, se rellenan con los detalles propios de la persona.
+Cuando terminan todas las acciones de un paso, la tarjeta **se queda en ese paso** para que una persona pueda trabajarla, a menos que el paso tenga una ruta automática que la mueva hacia adelante (ver [Pasos completamente automatizados](#fully-automated-steps)).
 
 :::info
-Los correos electrónicos del flujo de trabajo solo se envían después de que tu iglesia haya sido aprobada para enviar correos electrónicos grupales, y cuentan hacia el límite de correos electrónicos diarios de tu iglesia. Ver [Activación del correo electrónico grupal para tu iglesia](../groups/group-members.md#turning-on-group-email-for-your-church).
+Las acciones automatizadas solo se ejecutan cuando una tarjeta llega por el flujo normal: cuando se agrega por primera vez, cuando un resultado o una ruta automática la trae, o cuando termina una espera (Wait). **No** se vuelven a ejecutar cuando un miembro del personal arrastra manualmente una tarjeta al paso o la devuelve, así que una persona no recibirá dos veces el mismo correo.
 :::
 
-### Enviar un texto
+### Enviar correos
 
-Elige **Enviar texto** e ingresa el **Mensaje de texto** (hasta 1,600 caracteres). Cuando una tarjeta entra en el paso, la persona recibe ese texto en su teléfono móvil. Puedes personalizar el mensaje con `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, o `{{churchName}}`, que se rellenan con los detalles de la persona cuando se envía el texto.
+Elige **Send email**, selecciona una de tus plantillas de correo y, opcionalmente, escribe un asunto personalizado. Cuando una tarjeta entra al paso, la persona recibe ese correo automáticamente. (Si la persona no tiene una dirección de correo registrada, el paso simplemente omite esta acción.) Los [campos de combinación](../settings/email-templates.md#merge-fields) de la plantilla, como `{{firstName}}`, se reemplazan con los datos de la propia persona.
 
-- Si la persona no tiene número de teléfono móvil en el archivo, se omite la acción.
-- Si la persona ha rechazado, no se envía texto y el historial de la tarjeta registra **Texto omitido: rechazado**.
-- Cuando se envía el texto, el historial de la tarjeta registra **Texto enviado**. Si el envío falla, por ejemplo, porque no hay proveedor de mensajes de texto conectado o tu iglesia no tiene créditos de texto, la falla se registra en el historial de la tarjeta y las acciones restantes del paso se ejecutan.
+:::info
+Los correos de los flujos de trabajo solo se envían después de que tu iglesia haya sido aprobada para enviar correo grupal, y cuentan para el límite diario de correos de tu iglesia. Consulta [Activar el correo grupal para tu iglesia](../groups/group-members.md#turning-on-group-email-for-your-church).
+:::
+
+### Enviar un mensaje de texto
+
+Elige **Send Text** y escribe el **Text message** (hasta 1,600 caracteres). Cuando una tarjeta entra al paso, la persona recibe ese mensaje en su teléfono móvil. Puedes personalizar el mensaje con `{{firstName}}`, `{{lastName}}`, `{{displayName}}` o `{{churchName}}`, que se reemplazan con los datos de la persona cuando se envía el mensaje.
+
+- Si la persona no tiene un teléfono móvil registrado, no se envía ningún mensaje y el historial de la tarjeta registra **Text skipped: no mobile phone**.
+- Si la persona se dio de baja, no se envía ningún mensaje y el historial de la tarjeta registra **Text skipped: opted out**.
+- Cuando el mensaje se envía, el historial de la tarjeta registra **Text sent**. Si el envío falla (por ejemplo, porque no hay un proveedor de mensajes conectado o porque tu iglesia se quedó sin créditos de mensajes), el fallo se registra en el historial de la tarjeta y las demás acciones del paso se siguen ejecutando.
 
 :::warning
-Los textos se envían a través del [proveedor de mensajes de texto](../settings/church-settings.md#texting) de tu propia iglesia. Si no hay proveedor conectado, el editor de acciones advierte "No hay proveedor de mensajes de texto configurado" y los textos no se enviarán.
+Los mensajes se envían a través del [proveedor de mensajes de texto](../settings/church-settings.md#texting) propio de tu iglesia. Si no hay ningún proveedor conectado, el editor de acciones muestra la advertencia *"No texting provider is set up"* y los mensajes no se enviarán.
 :::
 
 ### Esperar unos días (secuencias de goteo)
 
-La acción **Esperar** detiene una tarjeta durante el número de días que estableces. Mientras espera, la tarjeta muestra **Aplazada**. Cuando la espera termina:
+La acción **Wait** retiene una tarjeta durante la cantidad de días que configures. Mientras espera, la tarjeta aparece como **Snoozed**. B1 revisa las esperas terminadas cada 30 minutos, así que una tarjeta se retoma dentro de unos treinta minutos después de que termine su espera. Cuando la espera termina:
 
-1. Cualquier **acción restante en el mismo paso** se ejecuta, para que puedas construir un goteo como **Enviar correo electrónico → Esperar 3 días → Enviar un correo electrónico de recordatorio**.
-2. Luego, si el paso tiene una ruta automática, la tarjeta avanza; de lo contrario, descansa en el paso para que una persona la levante.
+1. Se ejecutan las **demás acciones del mismo paso**, para que puedas construir un goteo como **Send email → Wait 3 days → Send a reminder email**.
+2. Luego, si el paso tiene una ruta automática, la tarjeta avanza; de lo contrario, queda en el paso para que una persona la atienda.
 
 :::tip
-Un **Esperar** al inicio muy de un paso es una forma simple de "retener" una tarjeta antes de que aparezca para un voluntario, por ejemplo, *Espera 7 días, luego un entrenador se comunica*.
+Una **Wait** al inicio de un paso es una forma sencilla de "retener" una tarjeta antes de que llegue a un voluntario; por ejemplo, *Wait 7 days, then a coach reaches out* (espera 7 días y luego un coach se comunica).
 :::
 
 ## Agregar personas como tarjetas
 
 Hay varias formas de poner personas en un tablero:
 
-- **Desde el tablero**: haz clic en **Agregar tarjeta** en la parte inferior de una columna de paso y elige una persona. También puedes elegir un grupo, y cada miembro de ese grupo se agrega como una tarjeta.
-- **Desde el registro de una persona**: usa **Agregar al flujo de trabajo** en la página de una persona para colocarla en un flujo de trabajo.
-- **Desde búsqueda de personas**: selecciona múltiples personas y usa la acción grupal **Agregar al flujo de trabajo** para agregarlas todas a la vez.
-- **Automáticamente con un disparador**: agrega personas cuando algo sucede, como un envío de formulario o un primer regalo (ver [Disparadores](#triggers) a continuación).
+- **Desde el tablero**: haz clic en **Add Card** al final de una columna de paso y elige una persona. También puedes elegir un grupo, y cada miembro de ese grupo se agrega como tarjeta.
+- **Desde el registro de una persona**: usa **Add to Workflow** en la página de la persona para agregarla a un flujo de trabajo.
+- **Desde la búsqueda de People**: selecciona varias personas y usa la acción masiva **Add to Workflow** para agregarlas todas a la vez.
+- **Automáticamente con un disparador**: agrega personas cuando ocurre algo, como el envío de un formulario o una primera ofrenda (ver [Disparadores](#triggers) más abajo).
 
-## Trabajar en el tablero
+## Trabajar el tablero
 
-Abre un flujo de trabajo para ver su tablero. Cada tarjeta muestra el nombre de la persona, a quién se le asigna y un chip de fecha de vencimiento o estado (**Vencida** o **Aplazada**). Una columna de paso también muestra pequeños insignias para cualquier acción automatizada que ejecute y anotaciones para su enrutamiento, dándote un mapa a primera vista de cómo fluyen las tarjetas.
+Abre un flujo de trabajo para ver su tablero. Cada tarjeta muestra el nombre de la persona, a quién está asignada y un indicador de fecha de vencimiento o estado (**Overdue** o **Snoozed**). Una columna de paso también muestra pequeñas insignias para las acciones automatizadas que ejecuta y anotaciones para su enrutamiento, lo que te da un mapa rápido de cómo fluyen las tarjetas.
 
 - **Mover una tarjeta**: arrastra una tarjeta de una columna a la siguiente a medida que la persona avanza.
-- **Abrir una tarjeta**: haz doble clic en una tarjeta (o haz clic en ella) para abrir su panel de detalles, donde puedas cambiar el paso, reasignarlo, agregar notas y revisar lo que ya sucedió.
+- **Abrir una tarjeta**: haz doble clic en una tarjeta (o haz clic en ella) para abrir su panel de detalles, donde puedes cambiar el paso, reasignarla, agregar notas y revisar lo que ya ocurrió.
 
-Desde el panel de tarjeta puedes:
+Desde el panel de la tarjeta puedes:
 
-- **Asignar** la tarjeta a una persona o grupo diferente.
-- **Aplazar** la tarjeta por 1 día, 3 días o 1 semana para ocultar temporalmente su fecha de vencimiento.
-- **Enviar atrás** al paso anterior o **Saltar** al siguiente paso.
-- **Asignación de pines**: mantén el mismo propietario en la tarjeta incluso cuando se mueve entre pasos. Por defecto, mover una tarjeta a un nuevo paso la reasigna al asignado por defecto del paso; el fijación mantiene al responsable actual.
-- **Completar** la tarjeta para terminarla, o elige un botón **Resultado** si el paso tiene resultados configurados (ver [Enrutamiento](#routing-cards-with-outcomes-and-conditions)).
-- **Agregar notas** y revisar la **Actividad** de la tarjeta, es decir, un registro de acciones automatizadas que se han ejecutado (correos electrónicos enviados, esperas, etc.).
+- **Assign** la tarjeta a otra persona o grupo.
+- **Snooze** la tarjeta por 1 día, 3 días o 1 semana para ocultar temporalmente su fecha de vencimiento.
+- **Send Back** al paso anterior o **Skip** al paso siguiente.
+- **Pin assignment**: mantén el mismo responsable en la tarjeta aunque se mueva entre pasos. Por defecto, al mover una tarjeta a un nuevo paso se reasigna al asignado predeterminado de ese paso; fijar la asignación mantiene al responsable actual durante todo el proceso.
+- **Complete** la tarjeta para terminarla, o elegir un botón de **Outcome** si el paso tiene resultados configurados (ver [Routing](#routing-cards-with-outcomes-and-conditions)).
+- **Add notes** y revisar la **Activity** de la tarjeta: un registro de las acciones automatizadas que se han ejecutado (correos enviados, esperas, etc.).
 
-Para una tarjeta sobre una persona, el panel también muestra el teléfono móvil y el correo electrónico de esa persona como enlaces en los que puedes hacer clic para llamarla o escribirle, además de un enlace **Ver perfil** si tienes permiso para ver personas. La persona a la que se asigna la tarjeta ve el teléfono y el correo electrónico incluso sin acceso a Personas.
+Para una tarjeta que representa a una persona, el panel también muestra el teléfono móvil y el correo electrónico de esa persona como enlaces en los que puedes hacer clic para llamar o enviar un correo, además de un enlace **View profile** si tienes permiso para ver personas. La persona a la que está asignada la tarjeta puede ver el teléfono y el correo aunque no tenga acceso a People.
 
-Las notas se guardan con la tarjeta. Cualquiera que pueda abrir la tarjeta, incluida la persona o grupo asignado, puede leer las notas y añadir las suyas. Quienes no pueden abrir la tarjeta no ven sus notas.
+Las notas se guardan con la tarjeta. Cualquier persona que pueda abrir la tarjeta, incluida la persona o el grupo al que está asignada, puede leer las notas y agregar las suyas. Quienes no pueden abrir la tarjeta no ven sus notas.
 
-### Acciones en lote
+### Acciones masivas
 
-Selecciona las casillas de verificación en múltiples tarjetas para actuar sobre ellas juntas. Aparece una barra de herramientas que te permite **Completar**, **Aplazar**, **Asignar** (reasignar) o **Mover a…** otro paso para todas las tarjetas seleccionadas a la vez.
+Selecciona las casillas de varias tarjetas para actuar sobre ellas en conjunto. Aparece una barra de herramientas que te permite **Complete**, **Snooze**, **Assign** (reasignar) o **Move to…** otro paso para todas las tarjetas seleccionadas a la vez.
 
-## Enrutamiento de tarjetas con resultados y condiciones
+## Enrutar tarjetas con resultados y condiciones
 
 El enrutamiento controla a dónde va una tarjeta cuando sale de un paso. Abre el editor de un paso para configurar dos tipos de enrutamiento.
 
 ### Botones de resultado
 
-Los resultados son botones que aparecen en el panel de tarjeta cuando completas una tarjeta en ese paso. En lugar de un único botón **Completar**, puedes ofrecer opciones como "Se unió a un grupo" o "No interesado". Cada resultado puede:
+Los resultados son botones que aparecen en el panel de la tarjeta cuando completas una tarjeta de ese paso. En lugar de un único botón **Complete**, puedes ofrecer opciones como "Joined a Group" o "Not Interested". Cada resultado puede:
 
-- Enviar la tarjeta a **otro paso** en este flujo de trabajo,
-- **Pasar la tarjeta** a un flujo de trabajo completamente diferente, o
+- Enviar la tarjeta a **otro paso** de este flujo de trabajo,
+- **Transferir la tarjeta** a un flujo de trabajo diferente por completo, o
 - **Cerrar** la tarjeta.
 
-Esto permite que una decisión ramifique a la persona por diferentes caminos.
+Así, una sola decisión puede llevar a la persona por distintos caminos.
 
 ### Enrutamiento automático (condicional)
 
-Las rutas automáticas mueven una tarjeta adelante **en el momento en que entra en un paso** (y después de que terminen sus acciones automatizadas), sin que nadie haga clic, si la persona cumple un conjunto de condiciones. Agrega una ruta, elige el paso de destino, y define una o más **condiciones** (por ejemplo, campus, edad o estado de membresía de una persona). Los campos de texto pueden coincidir exactamente o con **contiene**, **empieza con** o **termina con**. Una ruta sin condiciones coincide con todos.
+Las rutas automáticas mueven una tarjeta hacia adelante **en el momento en que entra a un paso** (y después de que terminan sus acciones automatizadas), sin que nadie haga clic, si la persona cumple un conjunto de condiciones. Agrega una ruta, elige el paso de destino y define una o más **conditions** (por ejemplo, el campus, la edad o el estado de membresía de una persona). Los campos de texto pueden compararse de forma exacta o con **contains**, **starts with** o **ends with**. Una ruta sin condiciones coincide con todos.
 
-Si las condiciones de una ruta no se pueden verificar por alguna razón, esa ruta se considera que no coincide. La tarjeta permanece en el paso (o sigue otra ruta que sí coincida) en lugar de quedarse atascada.
+Si las condiciones de una ruta no pueden verificarse por algún motivo, esa ruta se considera como no coincidente. La tarjeta se queda en el paso (o sigue otra ruta que sí coincida) en lugar de quedarse atascada.
 
 :::info
-En el tablero, cada columna de paso muestra pequeñas anotaciones describiendo su enrutamiento, por ejemplo, una etiqueta de resultado o "si coincide" seguido de una flecha al paso de destino o flujo de trabajo.
+En el tablero, cada columna de paso muestra pequeñas anotaciones que describen su enrutamiento; por ejemplo, la etiqueta de un resultado o "if matches" seguido de una flecha hacia el paso o flujo de trabajo de destino.
 :::
 
 ## Pasos completamente automatizados
 
-Puedes hacer que un paso se ejecute completamente por su cuenta, sin que nadie lo trabaje. Dale al paso sus **acciones automatizadas** y agrega una **ruta automática** (sin condiciones) apuntando al siguiente paso. Cuando una tarjeta entra, las acciones se ejecutan, y luego la ruta la avanza inmediatamente: la tarjeta pasa directamente.
+Puedes hacer que un paso se ejecute por completo por sí solo, sin que nadie lo atienda. Dale al paso sus **acciones automatizadas** y agrega una **ruta automática** (sin condiciones) que apunte al paso siguiente. Cuando una tarjeta entra, se ejecutan las acciones y luego la ruta la avanza de inmediato: la tarjeta pasa directamente de largo.
 
 :::tip
-Combina esto con **Esperar**: *enviar correo de bienvenida → Esperar 3 días → avanzar automáticamente al paso "Llamada personal".* El correo y el tiempo se manejan por ti, y un voluntario solo ve la tarjeta cuando es hora del toque humano.
+Combínalo con **Wait**: *Send welcome email → Wait 3 days → automatically advance to the "Personal call" step* (enviar correo de bienvenida → esperar 3 días → avanzar automáticamente al paso "Llamada personal"). El correo y el momento del envío se manejan por ti, y un voluntario solo ve la tarjeta cuando llega el momento del contacto personal.
 :::
 
 ## Disparadores
 
-Los disparadores agregan personas a un flujo de trabajo automáticamente cuando algo sucede, para que nunca tengas que agregar tarjetas manualmente. En el tablero de flujo de trabajo, haz clic en la pestaña **Disparadores**, luego **Agregar disparador**. Hay dos tipos:
+Los disparadores agregan personas a un flujo de trabajo automáticamente cuando ocurre algo, así nunca tienes que agregar tarjetas a mano. En un tablero de flujo de trabajo, haz clic en la pestaña **Triggers** y luego en **Add Trigger**. Hay dos tipos:
 
 ### Disparadores de eventos
 
-Se activan en cuanto un registro cambia en B1. Elige el evento, luego opcionalmente agrega **condiciones** para que solo las personas coincidentes se agreguen:
+Se activan en cuanto un registro cambia en B1. Elige el evento y, opcionalmente, agrega **conditions** para que solo se agreguen las personas que cumplan:
 
-- **Persona · Creada / Actualizada**: por ejemplo, agrega a cualquiera cuyo estado se convierta en *Visitante*.
-- **Donación · Creada**: por ejemplo, agrega un primer regalo o un regalo grande a un flujo de trabajo de agradecimiento (coincide en cantidad, fondo o método).
-- **Grupo · Miembro se unió** / **Grupo · Creado**.
-- **Formulario · Enviado**: agrega a cualquiera que envíe un formulario elegido (excelente para un "Soy nuevo" o tarjeta "Conectar").
+- **Person · Created / Updated**: por ejemplo, agregar a cualquier persona cuyo estado pase a *Visitor*.
+- **Donation · Created**: por ejemplo, agregar una ofrenda de una persona que da por primera vez, o una ofrenda grande, a un flujo de agradecimiento (filtrando por monto, fondo o método).
+- **Group · Member Joined** / **Group · Created**.
+- **Form · Submitted**: agrega a cualquier persona que envíe un formulario elegido (ideal para una tarjeta de "I'm New" o "Connect").
 
-### Disparadores de programa
+### Disparadores programados
 
-Se ejecutan de forma recurrente (diaria, semanal, mensual o anualmente) en un conjunto de condiciones. Úsalos para alcance basado en el tiempo como *todos cuyo aniversario de membresía es hoy* o un *chequeo mensual*.
+Se ejecutan de forma recurrente (diaria, semanal, mensual o anualmente) según un conjunto de condiciones. Úsalos para contactos basados en el tiempo, como *todas las personas cuyo aniversario de membresía es hoy* o un seguimiento *mensual*.
 
-Para cualquier disparador también puedes establecer:
+Para cualquier disparador también puedes configurar:
 
-- El **paso inicial** en el que cae la nueva tarjeta (por defecto es el primer paso).
-- **Solo una vez por persona**: para que la misma persona no sea agregada al flujo de trabajo dos veces por el disparador.
-- **Activo**: enciende o apaga el disparador sin eliminarlo.
+- El **Starting step** en el que aterriza la nueva tarjeta (por defecto, el primer paso).
+- **Only once per person**: para que el disparador no vuelva a agregar a la misma persona al flujo de trabajo.
+- **Active**: activa o desactiva el disparador sin eliminarlo.
 
 :::tip
-Empareja un disparador **Formulario · Enviado** con la plantilla **Seguimiento de nuevo visitante** para convertir tu formulario "Tarjeta de conexión" o "Soy nuevo" en un pipeline de seguimiento automático.
+Combina un disparador **Form · Submitted** con la plantilla **New Visitor Follow-up** para convertir tu tarjeta "Connect" o "I'm New" en un proceso de seguimiento automático.
 :::
 
 ## Mis tarjetas
 
-Los voluntarios y el personal no necesitan explorar cada tablero para encontrar su trabajo. La lista **Mis tarjetas** de la página **Mi Trabajo** muestra todas las tarjetas asignadas al usuario actual en todos los flujos de trabajo. Para llegar ahí, haz clic en **Mis tarjetas** en la parte superior de la página de Flujos de trabajo, o abre **Sirviendo > Mi Trabajo** en el menú Saltar. Hacer clic en una tarjeta abre el tablero al que pertenece.
+Los voluntarios y el personal no necesitan revisar cada tablero para encontrar su trabajo. La lista **My Cards** de la página **My Work** muestra todas las tarjetas asignadas al usuario actual en todos los flujos de trabajo. Para llegar ahí, haz clic en **My Cards** en la parte superior de la página de Workflows, o abre **Serving > My Work** en el menú Jump. Al hacer clic en una tarjeta se abre el tablero al que pertenece.
 
 ## Informes
 
-Abre un flujo de trabajo y haz clic en **Informes** para ver análisis de ese flujo de trabajo:
+Abre un flujo de trabajo y haz clic en **Reports** para ver las estadísticas de ese flujo:
 
-- **Vencida**: el número de tarjetas pasadas su fecha de vencimiento.
-- **Tarjetas por paso**: cuántas tarjetas se sientan actualmente en cada paso, mostradas como un gráfico de columnas.
-- **Completadas (30 días)**: rendimiento en los últimos 30 días, mostrado como un gráfico de líneas.
+- **Overdue**: la cantidad de tarjetas que pasaron su fecha de vencimiento.
+- **Cards per Step**: cuántas tarjetas hay actualmente en cada paso, mostrado como un gráfico de columnas.
+- **Completed (30 days)**: el rendimiento de los últimos 30 días, mostrado como un gráfico de líneas.
 
-Úsalos para detectar cuellos de botella, por ejemplo, un paso donde las tarjetas se acumulan y nunca avanzan.
+Úsalos para detectar cuellos de botella; por ejemplo, un paso donde las tarjetas se acumulan y nunca avanzan.
 
 ## Artículos relacionados
 
-- [Tareas](./tasks.md) - los elementos de acción individuales en los que se construyen las tarjetas del flujo de trabajo
-- [Formularios](../forms/index.md) - construye los formularios que pueden desencadenar flujos de trabajo
-- [Grupos](../groups/index.md) - los grupos a los que una acción "Agregar al grupo" puede colocar personas
-- [Roles y permisos](../settings/roles-permissions.md) - controla quién puede ver, editar y administrar flujos de trabajo
+- [Tareas](./tasks.md): los elementos de acción individuales en los que se basan las tarjetas de los flujos de trabajo
+- [Formularios](../forms/index.md): crea los formularios que pueden disparar flujos de trabajo
+- [Grupos](../groups/index.md): los grupos en los que puede colocar a las personas una acción de "Add to group"
+- [Roles y permisos](../settings/roles-permissions.md): controla quién puede ver, editar y administrar los flujos de trabajo

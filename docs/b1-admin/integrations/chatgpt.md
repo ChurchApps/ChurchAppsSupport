@@ -287,7 +287,7 @@ Anyone with the link can ask natural-language questions. The key's scopes still 
 - **Permission-scoped.** The key only carries the scopes you granted. Removing a scope (by deleting and recreating the key) cuts that access on the next call.
 - **Revocable instantly.** Delete the key in **Settings → Developer → API Keys** and access ends immediately.
 - **Sharing a Custom GPT shares the data.** Everyone with access to the GPT can see whatever the key's scopes allow. Prefer narrower scopes (e.g. omit `donations:read`) for GPTs shared broadly.
-- **Audit trail.** Any changes made through ChatGPT go through the same audit log as B1 Admin actions — find them under **Reports → Audit Log**.
+- **Audit trail.** Any changes made through ChatGPT go through the same audit log as B1 Admin actions — find them under **Settings → Audit Log**.
 
 ## Cost
 

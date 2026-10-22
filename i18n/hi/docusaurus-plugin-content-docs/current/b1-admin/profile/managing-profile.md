@@ -1,82 +1,82 @@
 ---
-title: "अपनी Profile प्रबंधित करना"
+title: "अपनी प्रोफ़ाइल प्रबंधित करना"
 ---
 
-# अपनी Profile प्रबंधित करना
+# अपनी प्रोफ़ाइल प्रबंधित करना {#managing-your-profile}
 
 <div class="article-intro">
 
-Profile page आपको अपनी personal account settings edit करने देता है। आपकी profile सभी ChurchApps products में साझा होती है, इसलिए यहां किए गए बदलाव वहां भी दिखेंगे जहां आप ChurchApps का उपयोग करते हैं।
+Profile page आपको अपनी व्यक्तिगत account सेटिंग्स संपादित करने देता है। आपकी प्रोफ़ाइल सभी ChurchApps products में साझा होती है, इसलिए यहां किए गए कोई भी बदलाव वहां दिखेंगे जहां आप ChurchApps का उपयोग करते हैं।
 
 </div>
 
 <div class="prereqs">
-<h4>शुरू करने से पहले</h4>
+<h4>शुरुआत करने से पहले</h4>
 
-- आपको अपने ChurchApps account में logged in होना चाहिए
-- यदि आप email address या password बदलने की योजना बना रहे हैं, तो नया email address या password तैयार रखें
+- आपने अपने ChurchApps account में log in किया होना चाहिए
+- अगर आप अपना email address या password बदलना चाहते हैं, तो नया तैयार रखें
 
 </div>
 
-## Profile की जानकारी
+## प्रोफ़ाइल की जानकारी {#profile-information}
 
-Profile page बाईं ओर आपका नाम और email address दिखाता है, उनके नीचे एक **Edit** button होता है। **Edit Account** form खोलने के लिए **Edit** पर click करें, जिसमें आपका मूल account विवरण होता है:
+Profile page बाईं ओर आपका नाम और email address दिखाता है, और उनके नीचे **Edit** button होता है। **Edit** पर click करने से **Edit Account** फ़ॉर्म खुलता है, जिसमें आपके बुनियादी account विवरण होते हैं:
 
-1. **Email** -- आपका email address, जो login करने और notifications प्राप्त करने के लिए उपयोग होता है।
+1. **Email** -- आपका email address, जो लॉग इन करने और notifications प्राप्त करने के लिए उपयोग होता है।
 2. **First Name** और **Last Name** -- ChurchApps में आपका display name।
 3. **Password** -- अपना account password अपडेट करें।
 
-अपनी जानकारी अपडेट करने के लिए fields edit करें और **Save Changes** button पर click करें। बिना save किए अपनी profile पर लौटने के लिए **Cancel** (या अपने नाम वाले **Back to** link) पर click करें।
+अपनी जानकारी अपडेट करने के लिए, फ़ील्ड संपादित करें और **Save Changes** button पर click करें। बिना सेव किए profile पर लौटने के लिए **Cancel** (या अपने नाम वाले **Back to** link) पर click करें।
 
-## Password बदलना
+## अपना password बदलना {#changing-your-password}
 
 1. Profile page पर, **Edit** पर click करें।
-2. अपना **Current password** लिखें।
-3. **New password** field में नया password लिखें।
-4. **Verify password** field में उसे दोबारा लिखें।
+2. अपना **Current password** दर्ज करें।
+3. **New password** फ़ील्ड में नया password दर्ज करें।
+4. **Verify password** फ़ील्ड में उसे दोबारा दर्ज करें।
 5. **Save Changes** पर click करें।
 
 :::info
-आपका password कम से कम 8 अक्षरों का होना चाहिए। सुनिश्चित करें कि password और confirmation fields बिल्कुल मेल खाते हों। password बदलने के लिए आपको अपना वर्तमान password पुष्ट करना होगा -- यदि आपको वह याद नहीं है, तो login page पर **Forgot Password** link का उपयोग करें।
+आपका password कम से कम 8 अक्षरों का होना चाहिए। सुनिश्चित करें कि password और पुष्टि वाले फ़ील्ड बिल्कुल मेल खाते हों। password बदलने के लिए आपको अपना वर्तमान password पुष्ट करना होगा — अगर आपको वह याद नहीं है, तो इसके बजाय login पेज पर **Forgot Password** link उपयोग करें।
 :::
 
-## Linked Accounts
+## जुड़े हुए accounts {#linked-accounts}
 
-**Linked Accounts** section में वे सभी external services दिखते हैं जो आपके ChurchApps account से जुड़ी हैं। आप इस section से देख सकते हैं कि कौन-से accounts जुड़े हैं और उन connections को प्रबंधित कर सकते हैं।
+**Linked Accounts** section दिखाता है कि आपके ChurchApps account से कौन सी बाहरी सेवाएं जुड़ी हैं। आप यहां से देख सकते हैं कि कौन से accounts जुड़े हैं और उन connections को प्रबंधित कर सकते हैं।
 
-## Theme Preferences
+## थीम प्राथमिकताएं {#theme-preferences}
 
 B1 Admin आपको एक color theme और light या dark display mode चुनने देता है:
 
-1. B1 Admin के ऊपर-दाईं ओर अपनी profile picture पर click करें, ताकि आपका user menu खुले।
-2. **Theme Preferences** के अंतर्गत, एक theme चुनें:
-   - **Default** -- वर्तमान B1 Admin रूप: साफ़ canvas पर bordered panels।
-   - **Classic** -- पहले का B1 Admin रूप, जिसमें रंगीन page banner, shadowed cards, और grey background होता है। जब तक आप कोई theme नहीं चुनते, तब तक आप यही देखते हैं।
-   - **Custom** -- आपके church के अपने रंग से बना Default रूप। यह **Mobile > App Theme** से light-mode primary color उपयोग करता है, या यदि कोई app color सेट नहीं है तो आपकी website का primary color, ताकि B1 Admin आपके member app से मेल खाए।
-3. themes के नीचे, **Light Mode** या **Dark Mode** चुनें।
-4. आपकी पसंद दर्शाने के लिए interface तुरंत update होता है।
+1. B1 Admin के ऊपर-दाएं कोने में अपनी profile picture पर click करें ताकि आपका user menu खुले।
+2. **Theme Preferences** के अंतर्गत एक theme चुनें:
+   - **Default** -- वर्तमान B1 Admin रूप: clean canvas पर bordered panels। नए उपयोगकर्ता कोई और theme चुनने तक यही theme देखते हैं।
+   - **Classic** -- B1 Admin का पुराना रूप, जिसमें रंगीन page banner, shadowed cards, और grey background है। यदि आपने इस device पर नया रूप आने से पहले B1 Admin उपयोग किया था और कभी theme नहीं चुना, तो आप Classic पर ही रहते हैं।
+   - **Custom** -- आपकी church के अपने रंग से बना Default रूप। यह **Mobile > App Theme** से light-mode primary color उपयोग करता है, या यदि कोई app color सेट नहीं है तो आपकी website का primary color, ताकि B1 Admin आपके member app से मेल खाए।
+3. थीम्स के नीचे **Light Mode** या **Dark Mode** चुनें।
+4. इंटरफ़ेस आपकी पसंद को तुरंत दर्शाने के लिए अपडेट हो जाता है।
 
 आपकी पसंद उस device और browser पर याद रखी जाती है।
 
-## Account Deletion
+## खाता हटाना {#account-deletion}
 
-Profile page के **Account Deletion** section में आपको अपना account delete करने का विकल्प मिलेगा।
+Profile page के **Account Deletion** section में आपको अपना account हटाने का विकल्प मिलेगा।
 
-- यदि आपके church ने Directory Approval Group **कॉन्फ़िगर नहीं** किया है, तो **Delete my account** पर click करने से आपका account और संबंधित डेटा तुरंत हट जाता है, और इसे वापस नहीं किया जा सकता।
-- यदि आपके church ने Directory Approval Group **कॉन्फ़िगर** किया है, तो आपका अनुरोध समीक्षा के लिए उस group को भेजा जाता है। अनुरोध लंबित होने पर button disabled रहता है, और आपके church द्वारा स्वीकृति या अस्वीकृति देने पर आपको सूचित किया जाएगा। आगे क्या होता है, इसके लिए देखें [Reviewing Account Deletion Requests](./account-deletion.md)।
+- यदि आपकी church ने **Directory Approval Group** कॉन्फ़िगर नहीं किया है, तो **Delete my account** पर click करने से आपका account और संबंधित data तुरंत हट जाता है, और इसे वापस नहीं किया जा सकता।
+- यदि आपकी church ने **Directory Approval Group** कॉन्फ़िगर किया है, तो आपका अनुरोध समीक्षा के लिए उस group को भेजा जाता है। अनुरोध लंबित रहते समय button निष्क्रिय रहता है, और आपकी church के स्वीकृत या अस्वीकृत करने पर आपको सूचित किया जाएगा। आगे क्या होता है, यह देखने के लिए [खाता हटाने के अनुरोधों की समीक्षा](./account-deletion.md) देखें।
 
 :::warning
-Account deletion -- चाहे वह तुरंत हो या आपके church द्वारा स्वीकृत -- स्थायी है और इसे पलटा नहीं जा सकता।
+खाता हटाना — चाहे तुरंत हो या आपकी church की स्वीकृति से — स्थायी है और इसे पलटा नहीं जा सकता।
 :::
 
 :::info
-यदि आप **Domain Admin** हैं, तो अपना account delete करने से पहले administrative जिम्मेदारियां किसी और user को सौंपना सुनिश्चित करें। admin roles प्रबंधित करने के विवरण के लिए [Roles & Permissions](../settings/roles-permissions.md) देखें।
+यदि आप **Domain Admin** हैं, तो अपना account हटाने से पहले प्रशासनिक जिम्मेदारियां किसी दूसरे उपयोगकर्ता को सौंप दें। admin भूमिकाओं के प्रबंधन के विवरण के लिए [भूमिकाएं और अनुमतियां](../settings/roles-permissions.md) देखें।
 :::
 
 :::info
-demo mode में profile editing बंद रहती है। यदि आप demo account का उपयोग कर रहे हैं, तो आप अपनी profile settings में बदलाव नहीं कर पाएंगे।
+Demo mode में प्रोफ़ाइल संपादन अक्षम है। यदि आप demo account उपयोग कर रहे हैं, तो आप अपनी profile सेटिंग्स में बदलाव नहीं कर पाएंगे।
 :::
 
-## अगले Steps
+## अगले चरण {#next-steps}
 
-- [Managing Devices](./devices.md) -- अपने जुड़े ChurchAppsPlayer devices देखें और प्रबंधित करें
+- [डिवाइस प्रबंधित करना](./devices.md) -- अपने जुड़े हुए ChurchAppsPlayer devices देखें और प्रबंधित करें

@@ -6,14 +6,14 @@ title: "MCP Server"
 
 <div class="article-intro">
 
-The B1 API ships an [MCP (Model Context Protocol)](https://modelcontextprotocol.io) server at `/mcp`. Any MCP-aware AI client — Claude Code, Claude Desktop, the OpenAI Agents SDK, Cursor, or your own — can connect to it and call the underlying REST API on behalf of an authenticated church user. It's a thin, generic wrapper: three generic tools expose the whole API surface dynamically rather than hand-modeling each endpoint, plus one domain guide tool for the website builder.
+The B1 API ships an [MCP (Model Context Protocol)](https://modelcontextprotocol.io) server at `/mcp`. Any MCP-aware AI client — claude.ai custom connectors, Claude Code, Claude Desktop, the OpenAI Agents SDK, Cursor, or your own — can connect to it and call the underlying REST API on behalf of an authenticated church user. It's a thin, generic wrapper: three generic tools expose the whole API surface dynamically rather than hand-modeling each endpoint, plus one domain guide tool for the website builder.
 
 </div>
 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- A [B1 API key](./api-keys) (`cak_…`) with the scopes the client should have
+- A [B1 API key](./api-keys) (`cak_…`) with the scopes the client should have, or an MCP client that can sign in with OAuth (see [OAuth Discovery](#oauth-discovery))
 - A reachable B1 API host — `https://api.churchapps.org` for hosted churches, or your own deployment
 - An MCP client. See [Claude](/docs/b1-admin/integrations/claude) and [ChatGPT](/docs/b1-admin/integrations/chatgpt) for end-user setup
 
@@ -34,7 +34,7 @@ Authorization: Bearer cak_<prefix>.<secret>
 | **Method** | `POST` only — request/response and SSE streaming both happen on the same endpoint |
 | **Transport** | [MCP Streamable HTTP](https://modelcontextprotocol.io/specification/2025-11-25/basic/transports) |
 | **Session model** | Stateless. A fresh MCP server instance is built per request — no session id, no resumption |
-| **Auth** | Bearer token. `cak_…` API keys and B1 JWTs both work; resolution is the same as any other authenticated endpoint |
+| **Auth** | Bearer token. `cak_…` API keys and B1 JWTs (including OAuth access tokens) all work; resolution is the same as any other authenticated endpoint |
 
 A request whose `Authorization` header is missing or invalid returns:
 
@@ -42,7 +42,7 @@ A request whose `Authorization` header is missing or invalid returns:
 { "error": "Unauthorized — MCP requires a valid bearer token (cak_* API key or JWT)." }
 ```
 
-with HTTP 401.
+with HTTP 401 and a `WWW-Authenticate: Bearer resource_metadata="<api>/.well-known/oauth-protected-resource"` header, which OAuth-capable clients follow to start sign-in.
 
 ## Tools
 
@@ -151,9 +151,25 @@ There is no application-level rate limit on `/mcp`. Throttling is deferred to AP
 
 ## OAuth Discovery
 
-The MCP server does **not** advertise OAuth 2.1 metadata (`/.well-known/oauth-authorization-server`, dynamic client registration, PKCE flow). Clients that require OAuth-discovered MCP servers — notably Claude.ai's "Add custom connector" UI and ChatGPT's "Connectors" feature — cannot connect without that surface.
+The MCP server advertises OAuth 2.1 metadata so clients that only connect to OAuth-discovered servers — notably Claude.ai's "Add custom connector" UI — can sign a user in without a pasted key. `/mcp` is the protected resource, the existing [OAuth provider](./connected-apps) under `/membership/oauth` is its authorization server, and the B1Admin `/oauth` page is the consent screen.
 
-Clients that accept a static bearer token in their config — Claude Code, Claude Desktop, OpenAI Agents SDK, Cursor, custom code — work today. The existing [OAuthController](/docs/developer/api/connected-apps) already issues tokens via authorization-code + PKCE for third-party apps; an MCP-spec-compliant discovery layer on top of it would close the gap.
+| Endpoint | Purpose |
+|---|---|
+| `GET /.well-known/oauth-protected-resource` (also `/.well-known/oauth-protected-resource/mcp`) | Protected resource metadata (RFC 9728): `resource` is `<api>/mcp`, `authorization_servers` is the API root, `scopes_supported` lists every [API key scope](./api-keys#scopes) |
+| `GET /.well-known/oauth-authorization-server` | Authorization server metadata (RFC 8414): `authorization_endpoint` is B1Admin `/oauth`, `token_endpoint` is `/membership/oauth/token`, `registration_endpoint` is `/membership/oauth/register` |
+| `POST /membership/oauth/register` | Dynamic client registration (RFC 7591) |
+
+The flow a client such as claude.ai runs:
+
+1. `POST /mcp` without a token returns 401 with the `WWW-Authenticate` header pointing at the protected resource metadata.
+2. The client reads both metadata documents, then registers itself with `POST /membership/oauth/register`, sending `client_name`, `redirect_uris`, and optionally `scope`. Every self-registered client is a **public** client: no secret is issued and the response has `token_endpoint_auth_method: "none"`. Redirect URIs must be `https`, or `http` on a loopback address (`localhost`, `127.0.0.1`, `[::1]`); at most 10 per client. Registration is rate limited to 20 per hour per IP.
+3. The user is sent to B1Admin `/oauth` with `code_challenge` and `code_challenge_method=S256`. The consent page lists each requested scope in plain language (or "Everything your B1 account can access" when none were requested), shows the host the user will be sent back to, and notes when the app registered itself. The user clicks **Allow**.
+4. The client exchanges the code at `/membership/oauth/token` with `grant_type=authorization_code` and its `code_verifier`, and later refreshes with `grant_type=refresh_token`. Form-encoded and JSON bodies are both accepted.
+5. The resulting access token is a scoped B1 JWT, used as the bearer on `/mcp`.
+
+PKCE rules: only `S256` is accepted. A client without a secret must send a `code_challenge` on authorize and the matching `code_verifier` on the token exchange; confidential clients (with a secret) may still use the secret alone. Redirect URIs must match a registered URI exactly.
+
+Clients that accept a static bearer token in their config — Claude Code, Claude Desktop, OpenAI Agents SDK, Cursor, custom code — can keep using a `cak_…` key instead.
 
 ## Local Development
 
@@ -181,7 +197,8 @@ The MCP server lives at `src/modules/mcp/` in the Api repo. Notable files:
 
 | File | Purpose |
 |---|---|
-| `McpController.ts` | `@controller("/mcp")`; wires `StreamableHTTPServerTransport` per request |
+| `McpController.ts` | `@controller("/mcp")`; wires `StreamableHTTPServerTransport` per request and sends the `WWW-Authenticate` challenge on 401 |
+| `WellKnownController.ts` / `OAuthMetadata.ts` | Serves the `/.well-known` OAuth discovery documents |
 | `McpServer.ts` | Builds an MCP `Server`, registers the four tools |
 | `RouteInventory.ts` | Walks inversify-express-utils metadata at startup to enumerate routes |
 | `internalDispatch.ts` | Synthetic `req`/`res` that re-enters the Express app in-process |

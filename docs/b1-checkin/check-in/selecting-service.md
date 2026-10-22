@@ -28,12 +28,12 @@ The app loads the service times and groups associated with that service, then ta
 
 ## When Check-In Isn't Open
 
-If your administrator gave a service time a [check-in schedule](../../b1-admin/attendance/setup#setting-a-check-in-schedule), the app only offers that service time while its check-in window is open. Service times whose window is closed right now are hidden, so families can't pick them later in the flow.
+If your administrator gave a service time a [check-in schedule](../../b1-admin/attendance/setup#setting-a-check-in-schedule), the app only lets families pick that service time while its check-in window is open. Service times whose window is closed right now still appear on the [household screen](./household-review), but they are marked **Closed** (for example, **Closed · opens Sun 9:30 AM**) instead of offering a group button.
 
-If every service time for the service you tapped is closed, the app shows **"Check-in isn't open for this service right now."** Tap **Back** to return to the services list and choose a different service, or wait until the window opens and try again.
+If every service time for the service you tapped is closed, the app tells you when check-in opens -- for example, **"Check-in for this service opens Sun 9:30 AM."** (If no opening time can be shown, it says **"Check-in isn't open for this service right now."**) Tap **Back** to return to the services list and choose a different service, or wait until the window opens and try again.
 
 :::info
-Check-in windows follow your church's time zone. If your church doesn't have a time zone set, the time zone of your campus is used instead. If a service time seems to open at the wrong hour, ask your administrator to check the time zone on your church or campus settings.
+Check-in windows follow the time zone of the service's campus. If that campus doesn't have a time zone set, your church's time zone is used instead. If a service time seems to open at the wrong hour, ask your administrator to check the time zone in the campus or church settings. On the household screen the kiosk also uses the tablet's own clock to open and close service times, so make sure the tablet is set to the correct time and time zone.
 :::
 
 :::info

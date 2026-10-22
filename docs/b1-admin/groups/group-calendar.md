@@ -25,9 +25,9 @@ The group calendar is available through the B1.church member-facing app:
 1. From B1 Admin, click the **dropdown menu** in the top right corner of your screen.
 2. Select **Switch App**.
 3. Choose **B1.church**.
-4. Click **Groups** in the left sidebar.
+4. Open **Groups** (a tab in the bottom tab bar on a phone, or in the top header on a computer).
 5. Select your group from the list.
-6. Click **Calendar** on the left side of the screen.
+6. Under **Next event**, click **All events** to open the group's **Events** view. Use the **Calendar** toggle there for a month view.
 
 :::info
 The group calendar is managed through B1.church (the member app) rather than B1 Admin. Group leaders access it by switching apps from the admin dashboard.
@@ -35,7 +35,7 @@ The group calendar is managed through B1.church (the member app) rather than B1 
 
 ## Adding an Event
 
-1. From the group calendar, click **Add an Event**.
+1. From the group calendar, click **Add Event**.
 2. Enter a **title** for the event.
 3. Write a short **description** of what the event is about.
 4. Set the **start time** and **end time**.

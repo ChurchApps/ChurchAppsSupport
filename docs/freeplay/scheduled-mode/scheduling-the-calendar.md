@@ -25,7 +25,7 @@ The **Calendar** page in FreePlay Admin controls what each screen group plays an
 3. The week view runs from Monday to Sunday, 6 AM to 10 PM. A red line marks the current time.
 4. Use the arrows to move to the previous or next week, or click **Today** to come back to this week.
 
-The page subtitle shows the time zone used for the calendar. Schedules follow your church's time zone. If your church doesn't have a time zone set, FreePlay uses your campus's time zone.
+The page subtitle shows the time zone used for the calendar. Schedules follow your church's time zone, which you set in B1 Admin under [Church Information](../../b1-admin/settings/church-settings.md#time-zone). If your church doesn't have a time zone set, FreePlay uses your campus's time zone. The calendar and your TVs use the same time zone, so a block placed at 9:00 AM on the calendar plays at 9:00 AM on the screen, even if your computer is set to a different time zone.
 
 Schedules are color-coded by type. A legend explains the colors:
 
@@ -56,7 +56,7 @@ Then fill in the form:
 
 1. **Play** - Choose what plays:
    - **Playlists** - Any playlist you've built
-   - **Service plans** - A plan type from B1 Admin, marked **(current plan)**. The screen plays whatever plan is current for that plan type each week
+   - **Service plans** - A plan type from B1 Admin, marked **(current plan)**. The screen plays whatever plan is current for that plan type each week, including Go Curriculum lessons (customized ones too), which use the Go login linked to the plan type's ministry
    - **Provider folder…** - Opens **Choose a provider folder**. Browse to a folder and click **Use this folder**. To pick a different folder later, click **Change**
 2. **Repeats** - Select the days of the week this schedule plays. For a single date instead, turn on **One time** and pick the **Date**.
 3. **Start** and **End** - The times the schedule starts and stops.

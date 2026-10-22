@@ -14,7 +14,7 @@ The member directory lets you browse and search for people in your church. Wheth
 <h4>Before You Begin</h4>
 
 - You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
-- The directory is available to **members and staff** only. Visitors and attendees who have not yet become members will see a "Members Only" message instead.
+- Who can open the directory follows your church's **Show in Directory** setting: **Staff Only**, **Members & Staff** (the default), **Regular Attendees & Above**, or **Everyone (Including Visitors)**. People below that level see a "Members Only" message instead. Staff with the People > View permission can always open it, and people with a Guest or Inactive status never can. See [Member Directory & Messaging Settings](../../b1-admin/settings/mobile-app.md#member-directory--messaging-settings).
 
 </div>
 

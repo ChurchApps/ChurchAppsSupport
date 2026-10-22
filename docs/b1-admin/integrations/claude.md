@@ -6,15 +6,15 @@ title: "Claude"
 
 <div class="article-intro">
 
-Connect Anthropic's Claude to your church's B1 data. With an API key and a few minutes of setup, you can ask Claude questions like "how many first-time visitors came on Sunday?" or "draft a thank-you email to the people who gave to the building fund this month" — and Claude will read the answers directly from your church's records, scoped to your permissions.
+Connect Anthropic's Claude to your church's B1 data. Add B1 as a custom connector on claude.ai and sign in, or use an API key with Claude Code or Claude Desktop. After a few minutes of setup, you can ask Claude questions like "how many first-time visitors came on Sunday?" or "draft a thank-you email to the people who gave to the building fund this month" — and Claude will read the answers directly from your church's records, scoped to your permissions.
 
 </div>
 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- A church admin with the **Edit Settings** permission (to mint an API key)
-- One of: **Claude Code** (CLI / IDE extension), **Claude Desktop** (Mac/Windows), or a **Claude Pro/Max/Team** account
+- A **Claude Pro/Max/Team/Enterprise** account (for the claude.ai custom connector), or **Claude Code** (CLI / IDE extension) or **Claude Desktop** (Mac/Windows)
+- For the API key setup: a church admin with the **Edit Settings** permission (to mint an API key)
 - The full URL of your B1 API — usually `https://api.churchapps.org` for hosted churches, or your self-hosted Api host
 
 </div>
@@ -24,14 +24,31 @@ Connect Anthropic's Claude to your church's B1 data. With an API key and a few m
 Claude talks to B1 through the **Model Context Protocol (MCP) server** built into the B1 API. Every call Claude makes runs through the same auth, permission, and church-scoping rules as a request from B1Admin — meaning Claude:
 
 - Only ever sees data for **your** church
-- Is limited to whatever **permissions and scopes** the API key you give it carries
+- Is limited to whatever **permissions and scopes** the API key or sign-in you give it carries
 - Cannot reach webhooks, OAuth admin endpoints, or other operator-only paths (those are blocklisted)
 
 A `donations:read` key lets Claude summarize giving but cannot record a gift. A `people:write` key can add a person but cannot see donations. Pick the scopes that match the work.
 
 ## Setup
 
-### 1. Create an API key
+There are two ways to connect:
+
+- **Claude.ai custom connector** — the easiest. You sign in to B1 and approve access in your browser, with no key to copy. The connector also works in Claude Desktop and the Claude mobile apps once it's added to your account.
+- **API key** — for Claude Code, or a Claude Desktop config file. You create a key and paste it into Claude's settings.
+
+### Claude.ai (web) — Custom Connector
+
+1. In Claude, open **Settings → Connectors** and click **Add custom connector**. (On Team and Enterprise plans, an owner may need to add it for the organization first.)
+2. Name it `B1` and enter the server URL `https://api.churchapps.org/mcp`, then click **Add**.
+3. Click **Connect**. A B1 sign-in window opens. Log in with your B1 account and choose your church if asked.
+4. The **AUTHORIZATION REQUIRED** page shows the app's name, the data it is asking for (for example **View people, households and contact details**, or **Everything your B1 account can access** if it didn't ask for anything narrower), and the address you'll be sent back to after you choose — check that it is **claude.ai**.
+5. Click **Allow**. You're returned to Claude, and B1 shows as connected.
+
+Claude registers itself with B1 the first time you connect, so the page also notes that the app registered itself and can never do more than your own B1 account can. To disconnect it later, go to **Settings → Developer → Connected Apps** in B1Admin and revoke it.
+
+### Using an API key
+
+#### 1. Create an API key
 
 1. In B1Admin go to **Settings → Developer → API Keys**.
 2. Click **New API Key**, name it `Claude`, and select the scopes Claude should have. Common starter sets:
@@ -42,11 +59,11 @@ A `donations:read` key lets Claude summarize giving but cannot record a gift. A 
 
 See [API Keys](/docs/developer/api/api-keys) for what each scope allows.
 
-### 2. Connect Claude
+#### 2. Connect Claude
 
 Pick the Claude client you use:
 
-#### Claude Code (CLI)
+##### Claude Code (CLI)
 
 In a terminal:
 
@@ -57,7 +74,7 @@ claude mcp add --transport http b1 https://api.churchapps.org/mcp \
 
 That's it. Inside any Claude Code session, type `/mcp` to confirm the `b1` server is connected, then ask Claude any question about your church.
 
-#### Claude Desktop
+##### Claude Desktop
 
 Edit Claude Desktop's config file:
 
@@ -98,11 +115,7 @@ If your Claude Desktop version only supports stdio servers, bridge through `mcp-
 
 Restart Claude Desktop. The connector icon in the chat composer will show `b1` with three tools (`list_endpoints`, `describe_endpoint`, `api_call`).
 
-#### Claude.ai (web) — Custom Connector
-
-Claude.ai's "Add custom connector" feature requires OAuth, which the B1 MCP server does not support today. Use Claude Code or Claude Desktop instead.
-
-### 3. Ask Claude something
+### Ask Claude something
 
 Once connected, no special syntax is needed — Claude discovers what's available on the fly. Examples:
 
@@ -115,7 +128,7 @@ Behind the scenes Claude will call the MCP tools — first to discover the right
 
 ## How It Works
 
-The B1 API exposes a single MCP endpoint at `/mcp`. Claude connects to it, authenticates with your `cak_…` key, and gets access to three tools:
+The B1 API exposes a single MCP endpoint at `/mcp`. Claude connects to it, authenticates with your `cak_…` key or the sign-in you approved, and gets access to three tools:
 
 | Tool | What it does |
 |---|---|
@@ -127,12 +140,12 @@ This is the same `/membership/people`, `/giving/donations`, `/attendance/visits`
 
 ## Safety and Limits
 
-- **Per-church isolation.** The API key resolves to one church. Claude has no way to see other churches' data.
-- **Permission-scoped.** If you remove a permission from the person who minted the key in B1Admin, Claude loses it on the next call — instantly.
-- **Revocable.** Delete the key in **Settings → Developer → API Keys** and Claude's access ends immediately.
+- **Per-church isolation.** The API key or sign-in resolves to one church. Claude has no way to see other churches' data.
+- **Permission-scoped.** If you remove a permission from the person who minted the key (or signed in) in B1Admin, Claude loses it on the next call — instantly.
+- **Revocable.** Delete the key in **Settings → Developer → API Keys**, or revoke the claude.ai connection in **Settings → Developer → Connected Apps**, and Claude's access ends immediately.
 - **Blocklist.** Provider webhooks, OAuth client admin endpoints, and the operator-only `apiEmails` route are not callable via MCP.
 - **Response size cap.** A single tool response is capped at 64 KB so long lists don't blow out Claude's context — Claude will narrow the query with filters when this happens.
-- **Audit trail.** Mutations go through the same audit log as B1Admin actions; you can review them under **Reports → Audit Log**.
+- **Audit trail.** Mutations go through the same audit log as B1Admin actions; you can review them under **Settings → Audit Log**.
 
 ## Cost
 
@@ -140,7 +153,7 @@ ChurchApps is free and open-source — the MCP server is part of the API your ch
 
 ## Troubleshooting
 
-**Claude reports "Unauthorized" or 401:** the bearer token is missing, malformed, or the key has been revoked. Re-check the `Authorization: Bearer cak_…` header (note the space and the literal `Bearer`).
+**Claude reports "Unauthorized" or 401:** the bearer token is missing, malformed, or the key has been revoked. Re-check the `Authorization: Bearer cak_…` header (note the space and the literal `Bearer`). On claude.ai, disconnect and reconnect the B1 connector to sign in again.
 
 **A tool call returns 403:** the API key doesn't have the scope for that endpoint. Add the scope in **Settings → Developer → API Keys** (you'll need to create a new key — scopes can't be changed in place) and update Claude's config.
 

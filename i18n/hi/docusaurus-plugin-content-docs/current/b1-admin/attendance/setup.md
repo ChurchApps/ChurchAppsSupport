@@ -1,88 +1,90 @@
 ---
-title: "उपस्थिति व्यवस्था"
+title: "Attendance सेटअप"
 ---
 
-# उपस्थिति व्यवस्था
+# Attendance सेटअप {#attendance-setup}
 
 <div class="article-intro">
 
-इससे पहले कि आप उपस्थिति को track कर सकें, आपको B1 Admin को अपने चर्च के भौतिक स्थानों, सेवाएं कब होती हैं, और कौन से समूह प्रत्येक सेवा पर मिलते हैं, के बारे में बताने की आवश्यकता है। यह एक बार setup संरचना बनाता है जो आपके चर्च में सभी उपस्थिति tracking और reporting को power देती है।
+attendance ट्रैक करने से पहले, आपको B1 Admin को बताना होगा कि आपके church के भौतिक स्थान कौन से हैं, सेवाएं कब होती हैं, और हर सेवा में कौन से groups मिलते हैं। यह एक बार का setup वह संरचना बनाता है जो आपके church में हर attendance ट्रैकिंग और reporting को चलाती है।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- आपको उपस्थिति को manage करने की अनुमति के साथ एक सक्रिय B1 Admin खाता चाहिए। यदि आप अपने access level के बारे में निश्चित नहीं हैं तो [Roles & Permissions](../people/roles-permissions.md) देखें।
-- यदि आप groups को service times से assign करना चाहते हैं, तो सुनिश्चित करें कि आपके [groups पहले बनाए गए हैं](../groups/creating-groups.md)।
+- आपके पास attendance प्रबंधित करने की permission वाला एक सक्रिय B1 Admin account होना चाहिए। यदि आपको अपने access level के बारे में निश्चित नहीं है, तो [Roles & Permissions](../people/roles-permissions.md) देखें।
+- यदि आप groups को service times सौंपने की योजना बना रहे हैं, तो पहले सुनिश्चित करें कि आपके [groups बन चुके हैं](../groups/creating-groups.md)।
 
 </div>
 
-## मुख्य अवधारणाएं
+## मुख्य अवधारणाएं {#key-concepts}
 
-- **Campus** -- एक भौतिक स्थान जहां आपका चर्च मिलता है (उदाहरण के लिए, "Main Campus," "North Campus")। Campuses को **Settings** के तहत manage किया जाता है।
-- **Service** -- एक कैंपस पर एक recurring gathering (उदाहरण के लिए, "Sunday Service," "Midweek")।
-- **Service Time** -- एक विशिष्ट समय जब एक सेवा होती है (उदाहरण के लिए, "9:00 AM," "11:00 AM")।
-- **Scheduled Group** -- एक group जो एक विशिष्ट सेवा समय को assign किया जाता है। Attendance उस सेवा के context में track किया जाता है।
-- **Unscheduled Group** -- एक group जो एक सेवा समय के tied होने के बिना अपनी attendance को track करता है।
+- **Campus** -- एक भौतिक स्थान जहां आपका church मिलता है (उदाहरण के लिए, "Main Campus," "North Campus")। Campuses **Settings** के अंतर्गत प्रबंधित होते हैं।
+- **Service** -- किसी campus पर एक आवर्ती gathering (उदाहरण के लिए, "Sunday Service," "Midweek")।
+- **Service Time** -- वह विशेष समय जब कोई service होती है (उदाहरण के लिए, "9:00 AM," "11:00 AM")।
+- **Scheduled Group** -- एक group जो किसी विशेष service time को सौंपा गया है। Attendance उसी service के संदर्भ में ट्रैक होती है।
+- **Unscheduled Group** -- एक group जो किसी service time से जुड़े बिना अपनी attendance स्वयं ट्रैक करता है।
 
-## अपनी Attendance Structure को सेट अप करना
+## अपनी attendance संरचना सेट करना {#setting-up-your-attendance-structure}
 
-1. **B1 Admin** खोलें, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (शीर्ष-बाएं खोज बार) खोलें, और **People** विस्तृत करें।
-2. **Attendance** पर क्लिक करें, फिर बाएं कॉलम में **Setup** पर क्लिक करें। **Service structure** तालिका खुलती है, जिसके शीर्ष पर आपके कैंपस, सेवा समय, और निर्धारित व अनिर्धारित समूहों की गिनती दिखती है।
-3. **Manage Campuses** पर क्लिक करें (**Service structure** panel के top right पर)। यह आपको **Settings → Campuses** पर ले जाता है। **Add Campus** पर क्लिक करें, अपने स्थान का नाम दर्ज करें (address और time zone optional हैं), और **Save** पर क्लिक करें।
-4. **People → Attendance** पर वापस लौटें और **Setup** पर क्लिक करें। आपका कैंपस अब setup table में दिखाई देता है।
-5. अपने कैंपस के तहत **Service column में + button** पर क्लिक करें। एक सेवा का नाम दर्ज करें जैसे "Sunday Service" और **Save** पर क्लिक करें।
-6. सेवा के तहत **Time column में + button** पर क्लिक करें। एक **Service Time** नाम दर्ज करें जैसे "9:00 AM", वैकल्पिक रूप से [check-in schedule](#setting-a-check-in-schedule) भरें, और **Save** पर क्लिक करें। प्रत्येक सेवा समय के लिए दोहराएं।
-7. एक group को एक सेवा समय से जोड़ने के लिए, **People > Groups** से group को खोलें, **Edit** पर क्लिक करें, और **Add Service Time** का उपयोग करें — अगले section को देखें।
+1. **B1 Admin** खोलें, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (ऊपर-बाईं ओर का search bar), और **People** को expand करें।
+2. **Attendance** पर click करें, फिर बाईं column में **Setup** पर click करें। **Service structure** table खुलता है, जिसके ऊपर आपके campuses, service times, और scheduled व unscheduled groups की गिनती दिखती है।
+3. **Service structure** panel के ऊपर-दाएं कोने में **Manage Campuses** पर click करें। यह आपको **Settings → Campuses** पर ले जाता है। **Add Campus** पर click करें, अपने स्थान का नाम दर्ज करें (पता और time zone वैकल्पिक हैं), और **Save** पर click करें।
+4. **People → Attendance** पर वापस जाएं और **Setup** पर click करें। आपका campus अब setup table में दिखता है।
+5. अपने campus के नीचे **Service** column में **+ button** पर click करें। "Sunday Service" जैसा service नाम दर्ज करें और **Save** पर click करें।
+6. service के नीचे **Time** column में **+ button** पर click करें। **Service Time** का नाम जैसे "9:00 AM" दर्ज करें, वैकल्पिक रूप से [check-in schedule](#setting-a-check-in-schedule) भरें, और **Save** पर click करें। हर service time के लिए दोहराएं।
+7. किसी group को service time से जोड़ने के लिए, **People > Groups** से group खोलें, **Edit** पर click करें, और **Add Service Time** का उपयोग करें -- अगला section देखें।
 
-### एक Group पर Track Attendance को सक्षम करना
+### किसी group पर Track Attendance सक्षम करना {#enabling-track-attendance-on-a-group}
 
-इससे पहले कि एक group के लिए उपस्थिति दर्ज की जा सके, Track Attendance को उस group के लिए चालू किया जाना चाहिए।
+किसी group की attendance दर्ज होने से पहले, उस group के लिए Track Attendance चालू होना चाहिए।
 
-1. Jump menu में, **People > Groups** चुनें और group को select करें।
-2. group के नाम के नीचे **Edit** बटन पर क्लिक करें।
+1. Jump menu में **People > Groups** चुनें और group चुनें।
+2. group के नाम के नीचे **Edit** बटन पर click करें।
 3. **Track Attendance** को **Yes** पर सेट करें।
-4. **Save** पर क्लिक करें।
+4. **Save** पर click करें।
 
 :::tip
-यदि आपने पिछले step में group को एक सेवा समय assign किया है, तो group के edit screen पर **Add Service Time** option का भी उपयोग करें ताकि इसे सही सेवा से link किया जा सके। यह सुनिश्चित करता है कि sessions सही कैंपस और समय से जुड़े हैं।
+यदि आपने पिछले कदम में group को किसी service time को सौंपा था, तो group के edit screen पर **Add Service Time** विकल्प का उपयोग करके उसे सही service से भी जोड़ें। इससे sessions सही campus और समय से जुड़े रहते हैं।
 :::
 
 :::tip
-यदि कोई समूह एक नियमित सेवा के बाहर मिलता है -- जैसे एक midweek small group जो अपनी attendance को track करता है -- तो आप इसे एक unscheduled group के रूप में छोड़ सकते हैं। यह attendance रिपोर्टिंग के लिए अभी भी **Group Attendance** रिपोर्ट में दिखाई देगा।
+यदि कोई group नियमित service के बाहर मिलता है -- जैसे एक midweek small group जो अपनी attendance स्वयं ट्रैक करता है -- तो आप उसे unscheduled group के रूप में छोड़ सकते हैं। फिर भी वह attendance reporting के लिए **Group Attendance** report में दिखेगा।
 :::
 
-## चेक-इन शेड्यूल सेट करना {#setting-a-check-in-schedule}
+## Check-in schedule सेट करना {#setting-a-check-in-schedule}
 
-प्रत्येक सेवा समय का एक वैकल्पिक चेक-इन शेड्यूल हो सकता है, ताकि [self check-in](check-in.md) हर सप्ताह अपने आप खुले और बंद हो। शेड्यूल के बिना, उस सेवा समय के लिए चेक-इन किसी भी समय उपलब्ध रहता है (जब तक कमरा अन्य कारणों से बंद न हो, जैसे भर जाना)।
+हर service time का एक वैकल्पिक check-in schedule हो सकता है, ताकि [self check-in](check-in.md) हर हफ्ते अपने-आप खुले और बंद हो। schedule के बिना, उस service time के लिए check-in हर समय उपलब्ध रहता है (जब तक कमरा किसी अन्य कारण से बंद न हो, जैसे भरा होना)।
 
-1. **Setup** दृश्य में, **Time** column में किसी सेवा समय के नाम पर क्लिक करें (या एक नया जोड़ें)।
-2. **Check-in Schedule** के तहत, वह **Day** चुनें जिस दिन सेवा समय मिलता है।
-3. **Start Time** सेट करें और वैकल्पिक रूप से **End Time** सेट करें।
-4. **Open check-in (minutes before start)** दर्ज करें -- उदाहरण के लिए, `30` का अर्थ है कि सेवा शुरू होने से आधा घंटा पहले चेक-इन खुल जाता है।
-5. **Close check-in (minutes after end)** दर्ज करें -- उदाहरण के लिए, `15` का अर्थ है कि समाप्ति समय के 15 मिनट बाद तक चेक-इन खुला रहता है। यदि आपने कोई end time सेट नहीं किया है, तो यह start time से गिना जाता है।
-6. **Save** पर क्लिक करें।
+1. **Setup** view पर, किसी service time के **Time** column में उसके नाम पर click करें (या नया जोड़ें)।
+2. **Check-in Schedule** के अंतर्गत, वह सप्ताह का **Day** चुनें जिस दिन service time मिलता है।
+3. **Start Time** और, वैकल्पिक रूप से, **End Time** सेट करें।
+4. **Open check-in (minutes before start)** दर्ज करें -- उदाहरण के लिए, `30` का अर्थ है service शुरू होने से आधा घंटा पहले check-in खुलेगा।
+5. **Close check-in (minutes after end)** दर्ज करें -- उदाहरण के लिए, `15` का अर्थ है end time के बाद 15 मिनट तक check-in खुला रहेगा। यदि आपने end time नहीं सेट किया, तो यह start time से गिना जाता है।
+6. **Save** पर click करें।
 
-शेड्यूल आपके चर्च के स्थानीय समय का उपयोग करता है और हर सप्ताह दोहराता है। शेड्यूल हटाने के लिए, **Day** को वापस **No schedule** पर सेट करें और **Save** पर क्लिक करें। शेड्यूल तभी प्रभावी होता है जब **Day** और **Start Time** दोनों सेट हों।
+schedule हर हफ्ते दोहराया जाता है और service के campus के time zone में मापा जाता है। यदि उस campus का time zone नहीं है, तो आपके church का [Time Zone](../settings/church-settings.md#time-zone) उपयोग होता है, फिर पहले campus का time zone जिसमें वह सेट हो, और अंत में Eastern time (America/New_York)। यदि check-in गलत घंटे पर खुलता है, तो [Campuses](../settings/campuses.md) में campus का **Time Zone** जांचें। schedule हटाने के लिए **Day** को वापस **No schedule** पर सेट करें और **Save** पर click करें। schedule तभी प्रभावी होता है जब **Day** और **Start Time** दोनों सेट हों।
 
-जब किसी सेवा समय की चेक-इन विंडो बंद होती है:
+जब किसी service time की check-in window बंद हो:
 
-- **B1.church पर self check-in** उस सेवा समय को छिपा देता है। यदि किसी सेवा के सभी समय बंद हैं, तो परिवारों को "Check-in isn't open for this service right now." दिखाई देता है।
-- **B1 Checkin किस्क ऐप** उस सेवा समय के समूहों में चेक-इन पूरा नहीं करता; किस्क एक **Can't check in yet** स्क्रीन दिखाता है जिसमें प्रभावित कमरा सूचीबद्ध होता है, ताकि परिवार कोई दूसरा कमरा चुन सके।
+- **B1.church पर self check-in** उस service time को **Closed** के रूप में सूचीबद्ध करता है (या, उदाहरण के लिए, **Closed · opens Sun 9:30 AM**), और उसे चुना नहीं जा सकता। यदि किसी service का कोई भी समय खुला नहीं है, तो परिवारों को दिखता है कि check-in कब खुलेगा, जैसे "Check-in opens Sun 9:30 AM."
+- **B1 Checkin kiosk ऐप** भी service time को उसके खुलने के समय के साथ **Closed** दिखाता है। यदि किसी service का हर समय बंद है, तो kiosk बताता है कि उस service का check-in कब खुलेगा। जो व्यक्ति पहले से किसी बंद service time पर check in है, उसका group उसकी जगह **Checked in** दिखाता है। यदि check-in के बीच में window बंद हो जाती है, तो kiosk उस check-in को पूरा नहीं करता और **Can't check in yet** screen दिखाता है, जिसमें प्रभावित कमरा सूचीबद्ध होता है ताकि परिवार कोई अन्य चुन सके।
+
+जो परिवार किसी पहले की service time पर check in कर चुका है, वह उसके window बंद होने के बाद भी लौटकर कोई बाद की खुली service time जोड़ सकता है। उनके मौजूदा check-ins बने रहते हैं।
 
 :::tip
-एक उदार open window सेट करें (उदाहरण के लिए, शुरू होने से 45 मिनट पहले), ताकि जल्दी आने वाले परिवार और स्वयंसेवक चेक-इन कर सकें, और एक छोटा close window, ताकि देर से आने वाले लोग सेवा शुरू होने के बाद भी चेक-इन कर सकें।
+एक उदार open window सेट करें (उदाहरण के लिए, शुरू होने से 45 मिनट पहले), ताकि जल्दी पहुंचने वाले परिवार और volunteers check in कर सकें, और एक छोटी close window ताकि देर से आने वाले लोग service शुरू होने के बाद भी check in कर सकें।
 :::
 
-## अपने Setup को Edit करना
+## अपना setup संपादित करना {#editing-your-setup}
 
-आप कभी भी अपने setup को update कर सकते हैं। एक कैंपस, सेवा समय, या group select करें और इसके details को change करने के लिए **Edit** पर क्लिक करें, या इसे remove करने के लिए **Delete** पर क्लिक करें।
+आप अपना setup कभी भी अपडेट कर सकते हैं। किसी campus, service time, या group को चुनें और उसका विवरण बदलने के लिए **Edit**, या उसे हटाने के लिए **Delete** पर click करें।
 
 :::info
-एक सेवा समय को हटाना पिछली उपस्थिति records को delete नहीं करता है। आपकी historical data संरक्षित है भले ही आप अपने schedule को change करें।
+किसी service time को हटाने से पिछले attendance records नहीं हटते। आपका ऐतिहासिक डेटा सुरक्षित रहता है, भले ही आप अपना schedule बदल दें।
 :::
 
-## अगले क्या हैं
+## आगे क्या है {#whats-next}
 
-एक बार जब आपके कैंपस, सेवा समय, और group सही जगह पर हैं, तो आप [attendance को manually दर्ज करना](recording-attendance.md) शुरू करने के लिए तैयार हैं या अपनी सेवाओं के लिए [self check-in](check-in.md) को सेट अप करें।
+एक बार आपके campuses, service times, और groups तैयार हो जाएं, तो आप मैन्युअली [attendance दर्ज करना](recording-attendance.md) शुरू करने या अपनी services के लिए [self check-in](check-in.md) सेट करने के लिए तैयार हैं।

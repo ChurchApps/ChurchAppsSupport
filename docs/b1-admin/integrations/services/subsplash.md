@@ -70,7 +70,7 @@ Turn the Zap on. Future Subsplash donations flow into **B1Admin → Donations** 
 ### Filter pledges off the regular giving flow
 
 - **Trigger** — Subsplash: New Pledge
-- **Action** — B1.church: Add Donation with `notes = "Pledge — Subsplash"` and a fund called `Pledges` (separate from your operating fund) so you can report on pledges independently in **B1Admin → Donations → Reports**.
+- **Action** — B1.church: Add Donation with `notes = "Pledge — Subsplash"` and a fund called `Pledges` (separate from your operating fund) so you can report on pledges independently in **B1Admin → Donations → Summary**.
 
 ### Sync new app users as B1 people
 

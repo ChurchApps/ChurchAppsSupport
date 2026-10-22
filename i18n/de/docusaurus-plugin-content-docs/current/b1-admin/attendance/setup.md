@@ -1,88 +1,90 @@
 ---
-title: "Anwesenheitseinrichtung"
+title: "Anwesenheits-Setup"
 ---
 
-# Anwesenheitseinrichtung
+# Anwesenheits-Setup
 
 <div class="article-intro">
 
-Bevor Sie Teilnahme verfolgen können, müssen Sie B1 Admin über die physischen Standorte Ihrer Kirche, wann Gottesdienste stattfinden, und welche Gruppen in jedem Service zusammenkommen, informieren. Dieses einmalige Setup erstellt die Struktur, die alle Teilnahmeverfolgung und -berichte über Ihre Kirche hinweg antreibt.
+Bevor Sie die Anwesenheit erfassen können, müssen Sie B1 Admin mitteilen, wo sich die Standorte Ihrer Kirche befinden, wann die Gottesdienste stattfinden und welche Gruppen bei welchem Gottesdienst zusammenkommen. Dieses einmalige Setup legt die Struktur fest, auf der die gesamte Anwesenheitserfassung und Berichterstattung Ihrer Kirche aufbaut.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie benötigen ein aktives B1 Admin-Konto mit Berechtigung zum Verwalten von Teilnahme. Siehe [Rollen & Berechtigungen](../people/roles-permissions.md), falls Sie sich über Ihre Zugriffsstufe nicht sicher sind.
-- Wenn Sie vorhaben, Gruppen zu Gottesdienstzeiten zuzuweisen, stellen Sie sicher, dass Ihre [Gruppen zuerst erstellt werden](../groups/creating-groups.md).
+- Sie benötigen ein aktives B1-Admin-Konto mit der Berechtigung, die Anwesenheit zu verwalten. Falls Sie unsicher sind, welche Zugriffsstufe Sie haben, lesen Sie [Rollen & Berechtigungen](../people/roles-permissions.md).
+- Wenn Sie Gruppen Gottesdienstzeiten zuweisen möchten, stellen Sie sicher, dass Ihre [Gruppen angelegt](../groups/creating-groups.md) sind.
 
 </div>
 
-## Schlüsselkonzepte
+## Grundbegriffe
 
-- **Standort** – ein physischer Ort, an dem sich Ihre Kirche trifft (z.B. "Hauptstandort", "Nordstandort"). Standorte werden unter **Einstellungen** verwaltet.
-- **Service** – ein regelmäßiges Treffen an einem Standort (z.B. "Sonntagsgottesdienst", "Mittwochveranstaltung").
-- **Gottesdienstzeit** – eine bestimmte Zeit, zu der ein Service stattfindet (z.B. "9:00 Uhr", "11:00 Uhr").
-- **Geplante Gruppe** – eine Gruppe, die einer bestimmten Gottesdienstzeit zugeordnet ist. Teilnahme wird im Kontext dieses Services verfolgt.
-- **Ungeplante Gruppe** – eine Gruppe, die Teilnahme auf eigene Faust verfolgt, ohne an eine Gottesdienstzeit gebunden zu sein.
+- **Standort** – ein physischer Ort, an dem sich Ihre Kirche versammelt (z. B. „Hauptstandort“, „Nordstandort“). Standorte werden unter **Einstellungen** verwaltet.
+- **Gottesdienst** – eine regelmäßig stattfindende Zusammenkunft an einem Standort (z. B. „Sonntagsgottesdienst“, „Mitte der Woche“).
+- **Gottesdienstzeit** – eine bestimmte Uhrzeit, zu der ein Gottesdienst stattfindet (z. B. „9:00 Uhr“, „11:00 Uhr“).
+- **Eingeplante Gruppe** – eine Gruppe, die einer bestimmten Gottesdienstzeit zugeordnet ist. Die Anwesenheit wird im Kontext dieses Gottesdienstes erfasst.
+- **Nicht eingeplante Gruppe** – eine Gruppe, die ihre Anwesenheit eigenständig erfasst, ohne an eine Gottesdienstzeit gebunden zu sein.
 
-## Einrichtung Ihrer Anwesenheitsstruktur
+## Ihre Anwesenheitsstruktur einrichten
 
-1. Öffnen Sie **B1 Admin**, öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), und erweitern Sie **Personen**.
-2. Klicken Sie auf **Teilnahme** und dann links auf **Einrichtung**. Die Tabelle **Service-Struktur** wird geöffnet, mit Anzahlen Ihrer Standorte, Gottesdienstzeiten sowie geplanter und ungeplanter Gruppen oben.
-3. Klicken Sie auf **Standorte verwalten** (oben rechts im Bereich **Service-Struktur**). Dies führt Sie zu **Einstellungen → Standorte**. Klicken Sie auf **Standort hinzufügen**, geben Sie den Namen Ihres Standorts ein (Adresse und Zeitzone sind optional), und klicken Sie auf **Speichern**.
-4. Kehren Sie zu **Personen → Teilnahme** zurück und klicken Sie auf **Einrichtung**. Ihr Standort wird nun in der Einrichtungstabelle angezeigt.
-5. Klicken Sie auf die **+ Schaltfläche in der Service-Spalte** unter Ihrem Standort. Geben Sie einen Service-Namen wie "Sonntagsgottesdienst" ein und klicken Sie auf **Speichern**.
-6. Klicken Sie auf die **+ Schaltfläche in der Zeit-Spalte** unter dem Service. Geben Sie einen Namen für die **Gottesdienstzeit** wie "9:00 Uhr" ein, füllen Sie optional den [Anmeldeplan](#setting-a-check-in-schedule) aus und klicken Sie auf **Speichern**. Wiederholen Sie dies für jede Gottesdienstzeit.
-7. Um eine Gruppe mit einer Gottesdienstzeit zu verbinden, öffnen Sie die Gruppe aus **Personen > Gruppen**, klicken Sie auf **Bearbeiten**, und verwenden Sie **Gottesdienstzeit hinzufügen** – siehe den nächsten Abschnitt.
+1. Öffnen Sie **B1 Admin**, öffnen Sie das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (das Suchfeld oben links) und klappen Sie **Personen** auf.
+2. Klicken Sie auf **Anwesenheit** und dann in der linken Spalte auf **Setup**. Die Tabelle **Gottesdienststruktur** öffnet sich. Oben sehen Sie die Anzahl Ihrer Standorte, Gottesdienstzeiten sowie eingeplanter und nicht eingeplanter Gruppen.
+3. Klicken Sie auf **Standorte verwalten** (oben rechts im Bereich **Gottesdienststruktur**). Sie gelangen zu **Einstellungen → Standorte**. Klicken Sie auf **Standort hinzufügen**, geben Sie den Namen Ihres Standorts ein (Adresse und Zeitzone sind optional) und klicken Sie auf **Speichern**.
+4. Kehren Sie zu **Personen → Anwesenheit** zurück und klicken Sie auf **Setup**. Ihr Standort erscheint nun in der Setup-Tabelle.
+5. Klicken Sie unter Ihrem Standort in der Spalte **Gottesdienst** auf die Schaltfläche **+**. Geben Sie einen Gottesdienstnamen wie „Sonntagsgottesdienst“ ein und klicken Sie auf **Speichern**.
+6. Klicken Sie unter dem Gottesdienst in der Spalte **Zeit** auf die Schaltfläche **+**. Geben Sie einen Namen für die **Gottesdienstzeit** ein, etwa „9:00 Uhr“. Füllen Sie optional den [Check-in-Zeitplan](#setting-a-check-in-schedule) aus und klicken Sie auf **Speichern**. Wiederholen Sie dies für jede Gottesdienstzeit.
+7. Um eine Gruppe mit einer Gottesdienstzeit zu verbinden, öffnen Sie die Gruppe unter **Personen > Gruppen**, klicken Sie auf **Bearbeiten** und verwenden Sie **Gottesdienstzeit hinzufügen** – siehe den nächsten Abschnitt.
 
-### Teilnahmeverfolgung in einer Gruppe aktivieren
+### Anwesenheitserfassung für eine Gruppe aktivieren
 
-Bevor eine Gruppe Teilnahme aufgezeichnet werden kann, muss die Teilnahmeverfolgung für diese Gruppe aktiviert werden.
+Bevor für eine Gruppe Anwesenheit erfasst werden kann, muss **Anwesenheit erfassen** für diese Gruppe aktiviert sein.
 
-1. Wählen Sie im Jump-Menü **Personen > Gruppen** und wählen Sie die Gruppe aus.
-2. Klicken Sie auf die Schaltfläche **Bearbeiten** unter dem Namen der Gruppe.
-3. Setzen Sie **Teilnahme verfolgen** auf **Ja**.
+1. Wählen Sie im Sprungmenü **Personen > Gruppen** und wählen Sie die Gruppe aus.
+2. Klicken Sie unter dem Namen der Gruppe auf die Schaltfläche **Bearbeiten**.
+3. Setzen Sie **Anwesenheit erfassen** auf **Ja**.
 4. Klicken Sie auf **Speichern**.
 
 :::tip
-Wenn Sie die Gruppe im vorherigen Schritt einer Gottesdienstzeit zugeordnet haben, verwenden Sie auch die Option **Gottesdienstzeit hinzufügen** auf dem Bearbeitungsbildschirm der Gruppe, um sie mit dem richtigen Service zu verknüpfen. Dies stellt sicher, dass Sitzungen mit dem richtigen Standort und der richtigen Zeit verbunden sind.
+Wenn Sie der Gruppe im vorherigen Schritt eine Gottesdienstzeit zugewiesen haben, nutzen Sie zusätzlich die Option **Gottesdienstzeit hinzufügen** auf der Bearbeitungsseite der Gruppe, um sie mit dem richtigen Gottesdienst zu verknüpfen. So sind Sitzungen mit dem richtigen Standort und der richtigen Zeit verbunden.
 :::
 
 :::tip
-Wenn sich eine Gruppe außerhalb eines regulären Services trifft – wie eine wöchentliche kleine Gruppe, die ihre eigene Teilnahme verfolgt – können Sie sie als ungeplante Gruppe belassen. Sie wird immer noch im Bericht **Gruppenteilnahme** für die Teilnahmeberichterstellung angezeigt.
+Wenn sich eine Gruppe außerhalb eines regulären Gottesdienstes trifft – etwa ein Hauskreis mitten in der Woche, der seine Anwesenheit selbst erfasst –, können Sie sie als nicht eingeplante Gruppe belassen. Sie erscheint trotzdem im Bericht **Gruppenanwesenheit**.
 :::
 
-## Anmeldeplan festlegen {#setting-a-check-in-schedule}
+## Einen Check-in-Zeitplan festlegen {#setting-a-check-in-schedule}
 
-Jede Gottesdienstzeit kann einen optionalen Anmeldeplan haben, damit sich die [Selbstanmeldung](check-in.md) jede Woche automatisch öffnet und schließt. Ohne Plan bleibt die Anmeldung für diese Gottesdienstzeit jederzeit verfügbar (solange der Raum nicht aus anderen Gründen geschlossen ist, etwa weil er voll ist).
+Jede Gottesdienstzeit kann einen optionalen Check-in-Zeitplan haben, damit sich das [Selbst-Check-in](check-in.md) jede Woche automatisch öffnet und schließt. Ohne Zeitplan bleibt der Check-in für diese Gottesdienstzeit jederzeit verfügbar (solange der Raum nicht aus anderen Gründen geschlossen ist, etwa weil er voll ist).
 
-1. Klicken Sie in der Ansicht **Einrichtung** auf den Namen einer Gottesdienstzeit in der Spalte **Zeit** (oder fügen Sie eine neue hinzu).
-2. Wählen Sie unter **Anmeldeplan** den **Tag** aus, an dem die Gottesdienstzeit stattfindet.
+1. Klicken Sie in der Ansicht **Setup** in der Spalte **Zeit** auf den Namen einer Gottesdienstzeit (oder legen Sie eine neue an).
+2. Wählen Sie unter **Check-in-Zeitplan** den **Tag** der Woche, an dem die Gottesdienstzeit stattfindet.
 3. Legen Sie die **Startzeit** und optional die **Endzeit** fest.
-4. Geben Sie **Anmeldung öffnen (Minuten vor Beginn)** ein – zum Beispiel öffnet `30` die Anmeldung eine halbe Stunde vor Beginn des Gottesdienstes.
-5. Geben Sie **Anmeldung schließen (Minuten nach Ende)** ein – zum Beispiel hält `15` die Anmeldung 15 Minuten nach der Endzeit geöffnet. Wenn Sie keine Endzeit festgelegt haben, wird dies ab der Startzeit gerechnet.
+4. Geben Sie **Check-in öffnen (Minuten vor Beginn)** ein – zum Beispiel öffnet `30` den Check-in eine halbe Stunde vor Beginn des Gottesdienstes.
+5. Geben Sie **Check-in schließen (Minuten nach Ende)** ein – zum Beispiel bleibt der Check-in mit `15` noch 15 Minuten nach der Endzeit geöffnet. Wenn Sie keine Endzeit festgelegt haben, wird dies ab der Startzeit gerechnet.
 6. Klicken Sie auf **Speichern**.
 
-Der Plan verwendet die Ortszeit Ihrer Kirche und wiederholt sich jede Woche. Um einen Plan zu entfernen, setzen Sie den **Tag** zurück auf **Kein Plan** und klicken Sie auf **Speichern**. Ein Plan wird nur wirksam, wenn sowohl ein **Tag** als auch eine **Startzeit** festgelegt sind.
+Der Zeitplan wiederholt sich jede Woche und wird in der Zeitzone des Standorts des Gottesdienstes berechnet. Hat dieser Standort keine Zeitzone, wird stattdessen die [Zeitzone](../settings/church-settings.md#time-zone) Ihrer Kirche verwendet, danach die Zeitzone Ihres ersten Standorts mit einer Zeitzone und schließlich die Ostküstenzeit (America/New_York). Öffnet der Check-in zur falschen Uhrzeit, prüfen Sie die **Zeitzone** des Standorts unter [Standorte](../settings/campuses.md). Um einen Zeitplan zu entfernen, setzen Sie **Tag** wieder auf **Kein Zeitplan** und klicken Sie auf **Speichern**. Ein Zeitplan wird nur wirksam, wenn sowohl ein **Tag** als auch eine **Startzeit** festgelegt sind.
 
-Während das Anmeldefenster einer Gottesdienstzeit geschlossen ist:
+Solange das Check-in-Fenster einer Gottesdienstzeit geschlossen ist:
 
-- Die **Selbstanmeldung auf B1.church** blendet diese Gottesdienstzeit aus. Wenn keine der Gottesdienstzeiten eines Services geöffnet ist, sehen Familien die Meldung "Die Anmeldung ist für diesen Service gerade nicht geöffnet."
-- Die **B1 Checkin-Kiosk-App** schließt keine Anmeldung in die Gruppen dieser Gottesdienstzeit ab. Der Kiosk zeigt einen Bildschirm **Noch nicht anmeldbar** mit dem betroffenen Raum, damit die Familie einen anderen auswählen kann.
+- Das **Selbst-Check-in auf B1.church** zeigt diese Gottesdienstzeit als **Geschlossen** an (oder beispielsweise als **Geschlossen · öffnet So 9:30 Uhr**) und sie kann nicht ausgewählt werden. Sind alle Zeiten eines Gottesdienstes geschlossen, sehen Familien, wann der Check-in öffnet, etwa „Check-in öffnet So 9:30 Uhr“.
+- Der **Kiosk der App B1 Checkin** zeigt die Gottesdienstzeit ebenfalls als **Geschlossen** mit dem Öffnungszeitpunkt an. Sind alle Zeiten eines Gottesdienstes geschlossen, nennt der Kiosk, wann der Check-in für diesen Gottesdienst öffnet. Wurde jemand bereits für eine geschlossene Gottesdienstzeit eingecheckt, zeigt sein Raum stattdessen **Eingecheckt**. Schließt das Fenster während eines Check-ins, bricht der Kiosk den Vorgang ab und zeigt den Bildschirm **Check-in noch nicht möglich** mit dem betroffenen Raum, damit die Familie einen anderen Raum wählen kann.
+
+Eine Familie, die bereits für eine frühere Gottesdienstzeit eingecheckt hat, kann auch danach noch zurückkommen und eine spätere, geöffnete Gottesdienstzeit hinzufügen – selbst wenn das frühere Fenster bereits geschlossen ist. Ihre bestehenden Check-ins bleiben erhalten.
 
 :::tip
-Legen Sie ein großzügiges Öffnungsfenster fest (zum Beispiel 45 Minuten vor Beginn), damit früh ankommende Familien und Freiwillige sich anmelden können, und ein kurzes Schließfenster, damit Spätankommende sich noch anmelden können, sobald der Gottesdienst begonnen hat.
+Legen Sie ein großzügiges Öffnungsfenster fest (zum Beispiel 45 Minuten vor Beginn), damit früh ankommende Familien und Ehrenamtliche einchecken können, und ein kurzes Schließfenster, damit Nachzügler nach Beginn des Gottesdienstes noch einchecken können.
 :::
 
-## Einrichtung bearbeiten
+## Ihr Setup bearbeiten
 
-Sie können Ihre Einrichtung jederzeit aktualisieren. Wählen Sie einen Standort, eine Gottesdienstzeit oder eine Gruppe aus und klicken Sie auf **Bearbeiten**, um ihre Details zu ändern, oder auf **Löschen**, um sie zu entfernen.
+Sie können Ihr Setup jederzeit aktualisieren. Wählen Sie einen Standort, eine Gottesdienstzeit oder eine Gruppe aus und klicken Sie auf **Bearbeiten**, um die Details zu ändern, oder auf **Löschen**, um sie zu entfernen.
 
 :::info
-Das Entfernen einer Gottesdienstzeit löscht keine bisherigen Teilnahmeeintragungen. Ihre historischen Daten werden auch bei Zeitplanänderungen beibehalten.
+Das Entfernen einer Gottesdienstzeit löscht keine vergangenen Anwesenheitsdaten. Ihr Verlauf bleibt auch dann erhalten, wenn Sie Ihren Zeitplan ändern.
 :::
 
-## Was kommt als nächstes
+## Wie geht es weiter
 
-Sobald Ihre Standorte, Gottesdienstzeiten und Gruppen eingerichtet sind, können Sie beginnen, [Teilnahme manuell aufzuzeichnen](recording-attendance.md) oder die [Selbstanmeldung](check-in.md) für Ihre Services einzurichten.
+Sobald Ihre Standorte, Gottesdienstzeiten und Gruppen eingerichtet sind, können Sie [die Anwesenheit erfassen](recording-attendance.md) oder das [Selbst-Check-in](check-in.md) für Ihre Gottesdienste einrichten.

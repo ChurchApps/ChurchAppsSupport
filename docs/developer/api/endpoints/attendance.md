@@ -65,7 +65,7 @@ Extends GenericCrudController with CRUD routes `getById`, `post`, and `delete`. 
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | List all service times. Filter by `?serviceId=`. Add `?include=groups` to append group data. Each row includes a computed `checkinOpen` boolean (false only when the service time has a check-in schedule whose window is closed right now, in church-local time) |
+| GET | `/` | JWT | — | List all service times. Filter by `?serviceId=`. Add `?include=groups` to append group data. Each row includes a computed `checkinOpen` boolean (false only when the service time has a check-in schedule whose window is closed right now). The window is measured in the time zone of the service's campus, then the church's time zone, then the first campus that has one, then `America/New_York` |
 | GET | `/:id` | JWT | — | Get a service time by ID |
 | GET | `/search?campusId=&serviceId=` | JWT | — | Search service times by campus and service |
 | GET | `/public/:churchId` | Public | — | Get the campus → service → time tree for a church. Powers the website builder's `serviceTimes` element |
@@ -94,6 +94,7 @@ Provides read-only aggregate views of attendance data for reporting and display.
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | Attendance.View | Load attendance records for a person. Requires `?personId=` |
+| GET | `/my` | JWT | — | Self-scoped: the signed-in member's own attendance records from the last 12 months, newest first. Returns `401` if the user isn't linked to a person. Backs the **My Attendance** section of the B1 Me page |
 | GET | `/tree` | JWT | — | Load the full attendance tree (campuses, services, service times, groups) |
 | GET | `/trend?campusId=&serviceId=&serviceTimeId=&groupId=` | JWT | Attendance.View Summary | Load attendance trend data with optional filters |
 | GET | `/groups?serviceId=&week=` | JWT | Attendance.View | Load group attendance for a service on a given week |
@@ -193,7 +194,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-If a targeted service time has a check-in schedule and its window is closed, nothing is saved and the response is `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }`. Capacity and volunteer-ratio violations also return 409 (`error: "capacity"` or `"ratio"`).
+If a targeted service time has a check-in schedule and its window is closed (measured in the same campus-first time zone order as `checkinOpen`), nothing is saved and the response is `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }`. Capacity and volunteer-ratio violations also return 409 (`error: "capacity"` or `"ratio"`). Sessions a person already holds today (re-posted with each check-in) skip the window check, so a household can add an open service time after an earlier one's window has closed.
 
 ## Visit Sessions
 

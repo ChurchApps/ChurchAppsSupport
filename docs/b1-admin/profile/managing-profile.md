@@ -50,8 +50,8 @@ B1 Admin lets you pick a color theme and a light or dark display mode:
 
 1. Click your profile picture in the top right corner of B1 Admin to open your user menu.
 2. Under **Theme Preferences**, choose a theme:
-   - **Default** -- The current B1 Admin look: bordered panels on a clean canvas.
-   - **Classic** -- The earlier B1 Admin look, with a colored page banner, shadowed cards, and a grey background. This is what you see until you pick a theme.
+   - **Default** -- The current B1 Admin look: bordered panels on a clean canvas. New users see this theme until they pick another.
+   - **Classic** -- The earlier B1 Admin look, with a colored page banner, shadowed cards, and a grey background. If you used B1 Admin on this device before the new look arrived and never picked a theme, you stay on Classic.
    - **Custom** -- The Default look built from your church's own color. It uses the light-mode primary color from **Mobile > App Theme**, or your website's primary color if no app color is set, so B1 Admin matches your member app.
 3. Below the themes, choose **Light Mode** or **Dark Mode**.
 4. The interface updates immediately to reflect your choice.

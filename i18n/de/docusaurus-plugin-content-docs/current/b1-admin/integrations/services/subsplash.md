@@ -6,91 +6,91 @@ title: "Subsplash"
 
 <div class="article-intro">
 
-Wenn Sie Subsplash für Ihre Gemeinde-App, Spenden oder Formulare verwenden, aber B1 als System of Record für Personen und Spenden möchten, kann Subsplashs Zapier-App Spenden, neue Profile und Formular-Antworten in Echtzeit in B1 einleiten. Beachten Sie, dass Subsplashs Zapier-App derzeit **nur Auslöser** ist – die Verkabelung ist Einweg (Subsplash → B1).
+Wenn Sie Subsplash für Ihre Kirchen-App, Spenden oder Formulare verwenden, B1 aber als führendes System für Personen und Spenden nutzen möchten, kann die Zapier-App von Subsplash Spenden, neue Profile und Formularantworten in Echtzeit an B1 weiterleiten. Beachten Sie, dass die Zapier-App von Subsplash derzeit nur **Auslöser** unterstützt – die Verbindung funktioniert nur in eine Richtung (Subsplash → B1).
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie Beginnen</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Ein Subsplash-Konto auf einem Plan, der **API + Zapier** Zugriff enthält (fragen Sie Ihren Subsplash Client Success Manager – diese Gate hinter Plan-Ebene)
+- Ein Subsplash-Konto mit einem Tarif, der den Zugang zu **API und Zapier** einschließt (fragen Sie Ihren Client Success Manager bei Subsplash nach – dies hängt vom Tarif ab)
 - Ein [Zapier](https://zapier.com)-Konto
-- Ein B1Admin-Benutzer mit der Berechtigung **Einstellungen bearbeiten**
+- Ein Benutzer in B1Admin mit der Berechtigung **Einstellungen bearbeiten**
 
 </div>
 
-## Was Sie verkabeln können
+## Was Sie verbinden können
 
-Alle Auslöser unten sind Subsplashs. Die Aktionen sind B1s.
+Alle Auslöser unten stammen von Subsplash. Die Aktionen stammen von B1.
 
-| Subsplash-Auslöser | B1-Aktion |
+| Auslöser in Subsplash | Aktion in B1 |
 |---|---|
-| Neue Spende | Person suchen → Spende hinzufügen (Person erstellen, wenn fehlend) |
-| Neue Zusage | Spende hinzufügen (mit `notes` = „Pledge: …") |
-| Neue Person erstellt | Person erstellen |
-| Person aktualisiertes Profil | (keine direkte B1-Aktion – log zu einem Google Sheet zur manuellen Überprüfung) |
-| Neue Formular-Antwort | Person erstellen + (optional) Gruppenmitglied hinzufügen basierend auf dem Formular |
+| Neue Spende | Person suchen → Spende hinzufügen (Person anlegen, falls sie fehlt) |
+| Neues Versprechen (Pledge) | Spende hinzufügen (mit `notes` = „Pledge: …“) |
+| Neue Person angelegt | Person anlegen |
+| Profil einer Person aktualisiert | (keine direkte Aktion in B1 – zur manuellen Prüfung in einer Google Tabelle protokollieren) |
+| Neue Formularantwort | Person anlegen + (optional) Gruppenmitglied hinzufügen, abhängig vom Formular |
 
-Subsplash → B1 ist die einzige Richtung, die Subsplashs App rechts jetzt unterstützt.
+Derzeit unterstützt die App von Subsplash nur die Richtung Subsplash → B1.
 
-## Setup
+## Einrichtung
 
-### 1. Prägen Sie einen B1 API-Schlüssel
+### 1. Einen API-Schlüssel von B1 erstellen
 
-In B1Admin: **Einstellungen → Entwickler → API-Schlüssel → Neuer API-Schlüssel**. Geltungsbereiche:
+Gehen Sie in B1Admin zu **Einstellungen → Entwickler → API-Schlüssel → Neuer API-Schlüssel**. Scopes:
 
-- `people:read` – um den Spender nach E-Mail zu suchen
-- `people:write` – um ihn zu erstellen, wenn er nicht existiert
-- `donations:write` – um die Gabe zu zeichnen
-- (Kein `settings:write` erforderlich – Subsplash, nicht B1, ist Eigentümer des Auslösers hier.)
+- `people:read` – um Spender anhand der E-Mail-Adresse zu finden
+- `people:write` – um sie anzulegen, falls sie nicht existieren
+- `donations:write` – um die Gabe zu erfassen
+- (`settings:write` ist nicht nötig – den Auslöser verwaltet hier Subsplash, nicht B1.)
 
-### 2. Verbinden Sie Subsplash mit Zapier
+### 2. Subsplash mit Zapier verbinden
 
-Folgen Sie [Subsplashs Zapier-Integrations-Handbuch](https://support.subsplash.com/en/articles/9825926-zapier-integration). Sie stellen einen API-Token aus dem Subsplash-Dashboard aus, den Zapier zur Authentifizierung der Auslöser-Seite verwendet.
+Folgen Sie der [Anleitung zur Zapier-Integration von Subsplash](https://support.subsplash.com/en/articles/9825926-zapier-integration). Subsplash stellt im Subsplash-Dashboard ein API-Token aus, mit dem Zapier den Auslöser authentifiziert.
 
-### 3. Erstellen Sie den „Spende aufzeichnen" Zap
+### 3. Den Zap „Spende erfassen“ erstellen
 
 1. **Auslöser** – Subsplash: Neue Spende
-2. **Aktion** – B1.church: Person suchen (nach E-Mail)
-3. **Filter / Path** – Zweig auf „Person gefunden":
-   - **Gefunden:** B1.church: Spende hinzufügen. Ordnen Sie Betrag, Datum, Fonds, Methode = „Online", Notizen = Subsplash-Transaktions-ID zu.
-   - **Nicht gefunden:** B1.church: Person erstellen → B1.church: Spende hinzufügen (mit der neu erstellten Personen-ID).
+2. **Aktion** – B1.church: Person suchen (per E-Mail)
+3. **Filter / Pfad** – verzweigen Sie nach „Person gefunden“:
+   - **Gefunden:** B1.church: Spende hinzufügen. Ordnen Sie Betrag, Datum, Fonds und Methode = „Online“ zu sowie `notes` = Transaktions-ID von Subsplash.
+   - **Nicht gefunden:** B1.church: Person anlegen → B1.church: Spende hinzufügen (mit der ID der neu angelegten Person).
 
-Schalten Sie den Zap ein. Zukünftige Subsplash-Spenden fließen in **B1Admin → Spenden** innerhalb von Sekunden.
+Schalten Sie den Zap ein. Künftige Spenden über Subsplash erscheinen innerhalb von Sekunden unter **B1Admin → Spenden**.
 
-## Häufige Rezepte
+## Übliche Rezepte
 
-### Senden Sie einen Dankestext, wenn eine erste Gabe ankommt
+### Einen Dank senden, wenn eine Erstgabe eingeht
 
 - **Auslöser** – Subsplash: Neue Spende
-- **Aktion** – Filter by Zapier: fahren Sie nur fort, wenn es die erste Gabe des Spenders ist (verwenden Sie eine *Lookup Table* auf Spender-E-Mail gegen ein Google Sheet von Vorgänger-Gebern, oder einen Zapier *Paths* Schritt auf das Spender-Erstellungsdatum)
-- **Aktion** – Mailchimp / SMTP / SendGrid: Senden Sie First-Gift Dankesnachricht
-- **Aktion** – B1.church: Spende hinzufügen (wie üblich)
+- **Aktion** – Filter von Zapier: nur fortfahren, wenn es die erste Gabe des Spenders ist (verwenden Sie eine *Nachschlagetabelle* mit der E-Mail-Adresse des Spenders gegen eine Google Tabelle mit früheren Spendern oder einen Zapier-Schritt *Pfade* anhand des Erstellungsdatums des Spenders)
+- **Aktion** – Mailchimp / SMTP / SendGrid: Dankes-Nachricht für die Erstgabe senden
+- **Aktion** – B1.church: Spende hinzufügen (wie gewohnt)
 
-### Filtern Sie Zusagen aus dem normalen Spendenstrom
+### Versprechen (Pledges) von der regulären Spendenabwicklung trennen
 
-- **Auslöser** – Subsplash: Neue Zusage
-- **Aktion** – B1.church: Spende hinzufügen mit `notes = "Pledge — Subsplash"` und einem Fonds namens `Pledges` (separat von Ihrem Betriebsfonds), damit Sie in **B1Admin → Spenden → Berichte** unabhängig auf Zusagen berichten können.
+- **Auslöser** – Subsplash: Neues Versprechen
+- **Aktion** – B1.church: Spende hinzufügen mit `notes = "Pledge — Subsplash"` und einem Fonds namens `Pledges` (getrennt von Ihrem laufenden Fonds), damit Sie Versprechen unabhängig davon unter **B1Admin → Spenden → Übersicht** auswerten können.
 
-### Synchronisieren Sie neue App-Benutzer als B1-Personen
+### Neue App-Nutzer als Personen in B1 übernehmen
 
-- **Auslöser** – Subsplash: Neue Person erstellt
-- **Aktion** – B1.church: Person erstellen, Namen, E-Mail, Telefon ausfüllen. Tag in B1, indem Sie die neue Person zu einer Gruppe wie „Subsplash App Users" hinzufügen.
+- **Auslöser** – Subsplash: Neue Person angelegt
+- **Aktion** – B1.church: Person anlegen und Name, E-Mail-Adresse und Telefon übernehmen. Markieren Sie die Person in B1, indem Sie sie einer Gruppe wie „Subsplash-App-Nutzer“ hinzufügen.
 
-## Limits & Notizen
+## Grenzen und Hinweise
 
-- **Subsplashs Zapier-App ist nur Auslöser.** Wenn Sie B1-Seite-Änderungen möchten (z.B. eine neue B1-Person zu Subsplash auch landen), müssen Sie diese Bridge von B1s Zapier-App-Auslöser bauen, der Subsplashs REST-API über einen benutzerdefinierten *Webhooks by Zapier – POST* Action aufruft. Das ist eine benutzerdefinierte Integration, kein Rezept.
-- **API-Zugriff ist plangebunden.** Wenn die Zapier-Verbindung mit `403 Forbidden` fehlschlägt, enthält Ihr Subsplash-Plan wahrscheinlich keinen API-Zugriff – wenden Sie sich an Ihren Client Success Manager.
-- **Fonds-Zuordnung ist manuell.** Subsplash übergibt einen Kampagnen- oder Kategorienamen; B1 benötigt eine numerische Fonds-ID. Entweder Hartcode den Fonds in den Zap oder warten Sie eine Zapier *Lookup Table* Zuordnung von Subsplash-Kampagnen zu B1-Fonds.
+- **Die Zapier-App von Subsplash unterstützt nur Auslöser.** Wenn eine neue Person in B1 auch in Subsplash erscheinen soll, müssten Sie diese Brücke selbst bauen: Ein Auslöser aus der Zapier-App von B1 ruft über die Aktion *Webhooks by Zapier — POST* die REST-API von Subsplash auf. Das ist eine eigene Integration und kein fertiges Rezept.
+- **Der API-Zugang hängt vom Tarif ab.** Schlägt die Zapier-Verbindung mit `403 Forbidden` fehl, enthält Ihr Subsplash-Tarif wahrscheinlich keinen API-Zugang. Wenden Sie sich an Ihren Client Success Manager.
+- **Die Zuordnung der Fonds erfolgt manuell.** Subsplash übermittelt einen Kampagnen- oder Kategorienamen, B1 benötigt aber eine numerische Fonds-ID. Entweder legen Sie den Fonds fest im Zap fest oder Sie pflegen eine Zapier-*Nachschlagetabelle*, die Subsplash-Kampagnen den Fonds in B1 zuordnet.
 
 ## Fehlerbehebung
 
-- **Kein Auslöser wird nach einer Spende ausgelöst** – überprüfen Sie in Subsplashs Zapier-Dashboard, dass die Verbindung immer noch *Verbunden* angezeigt wird. Wenn das API-Token auf der Subsplash-Seite rotiert wurde, stoppt der Zap automatisch; verbinden Sie erneut.
-- **B1 *Spende hinzufügen* fehlgeschlagen mit 422** – am häufigsten eine fehlende oder nicht erkannte `fundId`. Listen Sie Ihre Fonds über **B1Admin → Spenden → Fonds** auf und kopieren Sie die genaue ID in den Zap-Schritt.
-- **Erste Gabe wird zweimal ausgelöst** – Subsplash liefert gelegentlich einen Auslöser erneut, wenn Zapier seine Ack verpasst hat. Fügen Sie einen *Filter by Zapier* auf die Spenden-ID (Subsplash sendet eine in der Payload) hinzu, um Duplikate zu entfernen.
+- **Nach einer Spende wird kein Auslöser ausgelöst** – prüfen Sie im Zapier-Dashboard von Subsplash, ob die Verbindung noch als *Verbunden* angezeigt wird. Wurde das API-Token auf der Seite von Subsplash erneuert, stoppt der Zap stillschweigend; verbinden Sie ihn neu.
+- **B1 *Spende hinzufügen* schlägt mit 422 fehl** – meist fehlt die `fundId` oder ist unbekannt. Listen Sie Ihre Fonds über **B1Admin → Spenden → Fonds** auf und kopieren Sie die genaue ID in den Zap-Schritt.
+- **Die erste Gabe löst zweimal aus** – Subsplash sendet einen Auslöser gelegentlich erneut, wenn Zapier die Bestätigung verpasst hat. Fügen Sie einen *Filter von Zapier* auf die Spenden-ID hinzu (Subsplash sendet sie in den Nutzdaten), um Dubletten zu verwerfen.
 
 ## Siehe auch
 
-- [Donorbox](./donorbox) – gleiches Rezept-Form, verschiedene Spendenplattform
-- [Zapier (Übersicht)](../zapier) – B1-Seite jedes Zapier-Rezepts
-- [Subsplash Zapier-Integrations-Handbuch](https://support.subsplash.com/en/articles/9825926-zapier-integration) (Subsplashs Dokumente)
+- [Donorbox](./donorbox) – gleicher Aufbau des Rezepts, andere Spendenplattform
+- [Zapier (Überblick)](../zapier) – B1-Seite jedes Zapier-Rezepts
+- [Anleitung zur Zapier-Integration von Subsplash](https://support.subsplash.com/en/articles/9825926-zapier-integration) (Dokumentation von Subsplash)

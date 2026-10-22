@@ -77,7 +77,7 @@ Already built out a section but want a different structure? Use the layout switc
    - **Text with Photo** -- Text and an image side by side
    - **Logo** -- Your church logo, pulled from [Appearance](appearance)
    - **Live Stream** -- Your live stream player, embedded directly on the page
-   - **Podcast** -- A list of episodes pulled from an external podcast RSS feed URL you provide, with settings for how many episodes to show and whether to display dates and descriptions. This is for featuring any podcast feed on your site; to publish your own sermons as a podcast, see [Managing Sermons](../sermons/managing-sermons.md#your-podcast-feed) instead.
+   - **Podcast** -- A list of episodes pulled from an external podcast RSS feed URL you provide, with settings for how many episodes to show and whether to display dates and descriptions. Each episode on the live site has an audio player and a **Download** link that saves the episode's audio file under the episode title. This is for featuring any podcast feed on your site; to publish your own sermons as a podcast, see [Managing Sermons](../sermons/managing-sermons.md#your-podcast-feed) instead.
    - **Donation** -- A giving button or embedded donation form
    - **HTML** -- Your own raw HTML, for advanced use cases such as embedding a third-party widget (see [Using the HTML element](#using-the-html-element))
    - **iFrame** -- Embed external content by URL

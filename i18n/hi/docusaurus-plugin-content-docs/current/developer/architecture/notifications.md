@@ -1,16 +1,16 @@
 ---
-title: "सूचनाएं और अनुस्मारक आर्किटेक्चर"
+title: "सूचनाएं और रिमाइंडर आर्किटेक्चर"
 ---
 
-# सूचनाएं और अनुस्मारक आर्किटेक्चर
+# सूचनाएं और रिमाइंडर आर्किटेक्चर {#notifications--reminders-architecture}
 
 <div class="article-intro">
 
-चर्च के सदस्य को जो भी संदेश उस पृष्ठ के बाहर दिखता है जो वह देख रहे हैं — एक बैज गिनती, एक पुश सूचना, एक डाइजेस्ट ईमेल — MessagingApi में दो दरवाजों में से एक के माध्यम से जाता है। यह पृष्ठ फनल, अनुसूची पर इसे खिलाने वाले अनुस्मारक इंजन, और प्राथमिकता मॉडल को दस्तावेज़ित करता है जो यह तय करता है कि वास्तव में किसी तक क्या पहुंचता है।
+हर संदेश जो कोई चर्च सदस्य अपने सामने के पेज के बाहर देखता है — बैज काउंट, पुश सूचना, या डाइजेस्ट ईमेल — MessagingApi के दो दरवाज़ों में से किसी एक से होकर गुज़रता है। यह पेज उस फ़नल, उसे शेड्यूल पर भरने वाले रिमाइंडर इंजन, और उस प्राथमिकता मॉडल का दस्तावेज़ है जो तय करता है कि किसी व्यक्ति तक वास्तव में क्या पहुंचेगा।
 
 </div>
 
-## अवलोकन — दो दरवाजे
+## अवलोकन — दो द्वार {#overview--two-doors}
 
 ```
 scheduled anything ──▶ ReminderEngine (definitions → occurrences → scan) ─┐
@@ -21,17 +21,17 @@ provider STOP reply ──▶ POST /messaging/texting/inbound/:churchId/:token �
 account/legal mail ──▶ TransactionalEmailHelper.sendTransactional()  [allowlisted, lint-enforced]
 ```
 
-1. **कुछ भी जो किसी को कुछ बताता है** messaging मॉड्यूल में `NotificationHelper.createNotifications()` के माध्यम से जाता है। यह एक `notifications` पंक्ति को persistent करता है और socket → push → email को escalate करता है, प्रत्येक चैनल के लिए `PreferenceGateHelper` का मूल्यांकन करते हुए — स्तर 0 पर `in_app` सहित।
-2. **कुछ भी अनुसूचित** एक `reminderDefinition` (entity-स्तर या scope-स्तर) है जो `reminderOccurrences` में विस्तारित होता है और एक आवर्ती टाइमर पर `ReminderEngine.scan()` द्वारा भेजा जाता है। एक expander, एक dispatcher, एक भेजें ledger (`reminderSentLog`)।
-3. **प्रत्यक्ष ईमेल** केवल `TransactionalEmailHelper.sendTransactional()` के पीछे मौजूद है। एक ESLint नियम compile समय पर इसे लागू करता है — नीचे देखें।
+1. **ऐसी कोई भी चीज़ जो किसी व्यक्ति को कुछ बताती है** messaging मॉड्यूल में `NotificationHelper.createNotifications()` से होकर जाती है। यह एक `notifications` पंक्ति सहेजता है और socket → push → email की ओर बढ़ाता है, और हर चैनल के लिए `PreferenceGateHelper` का मूल्यांकन करता है — जिसमें स्तर 0 पर `in_app` भी शामिल है।
+2. **कोई भी शेड्यूल की गई चीज़** एक `reminderDefinition` है (entity-स्तर या scope-स्तर), जिसे `reminderOccurrences` में विस्तारित किया जाता है और एक आवर्ती टाइमर पर `ReminderEngine.scan()` द्वारा भेजा जाता है। एक विस्तारक, एक डिस्पैचर, एक भेजने का लेजर (`reminderSentLog`)।
+3. **सीधा ईमेल** केवल `TransactionalEmailHelper.sendTransactional()` के पीछे मौजूद है। एक ESLint नियम इसे कंपाइल समय पर लागू करता है — नीचे देखें।
 
-:::tip ईमेल दरवाज़ा lint-enforced है, केवल सम्मेलन नहीं
-`Api/tools/eslint-rules/email-door.cjs` `no-direct-email-helper` को परिभाषित करता है: `NotificationHelper.ts` या `TransactionalEmailHelper.ts` के बाहर `EmailHelper.sendTemplatedEmail()` या `EmailHelper.sendEmail()` के लिए कोई भी कॉल lint में विफल होता है। यदि आपको एक ईमेल भेजने की आवश्यकता है, तो इसे फनल (`createNotifications` के साथ `emailImmediate`) के माध्यम से या `TransactionalEmailHelper.sendTransactional()` के माध्यम से रूट करें — कोई तीसरा तरीका नहीं है जो CI को पास करता है।
+:::tip ईमेल द्वार लिंट द्वारा लागू होता है, केवल परंपरा नहीं
+`Api/tools/eslint-rules/email-door.cjs` में `no-direct-email-helper` नियम परिभाषित है: `NotificationHelper.ts` या `TransactionalEmailHelper.ts` के बाहर कहीं भी `EmailHelper.sendTemplatedEmail()` या `EmailHelper.sendEmail()` की कोई भी कॉल lint में विफल होती है। यदि आपको ईमेल भेजना है, तो उसे फ़नल से (`emailImmediate` के साथ `createNotifications`) या `TransactionalEmailHelper.sendTransactional()` से रूट करें — CI पास करने वाला कोई तीसरा तरीका नहीं है।
 :::
 
-## सूचना फनल
+## सूचना फ़नल {#the-notification-funnel}
 
-`NotificationHelper.createNotifications()` किसी भी चीज के लिए एकमात्र प्रवेश बिंदु है जो अनुसूचित या transactional नहीं है:
+`NotificationHelper.createNotifications()` हर उस चीज़ के लिए एकमात्र प्रवेश बिंदु है जो शेड्यूल या ट्रांसैक्शनल नहीं है:
 
 ```typescript
 createNotifications(
@@ -51,26 +51,26 @@ createNotifications(
 )
 ```
 
-प्रत्येक प्राप्तकर्ता के लिए यह `notifications` में एक पंक्ति को save करता है और `attemptDeliveryWithEscalation` को कॉल करता है, जो नीचे चैनल सीढ़ी पर जाता है। एक ही `(contentType, contentId)` के लिए अभी भी unread पंक्ति पुनः-निर्माण को suppress करती है — यह dedup guard `emailImmediate` भेजने के लिए छोड़ा जाता है (reminder offsets, staff "email all", workflow steps अपना स्वयं का dedup own करते हैं) और direct messages के लिए, जो हमेशा socket को ping करते हैं।
+हर प्राप्तकर्ता के लिए यह `notifications` में एक पंक्ति सहेजता है और `attemptDeliveryWithEscalation` को कॉल करता है, जो नीचे दी गई चैनल सीढ़ी पर चलता है। उसी `(contentType, contentId)` के लिए एक अब भी अपठित पंक्ति दोबारा बनने से रोकती है — यह डुप्लिकेट-रोकथाम गार्ड `emailImmediate` भेजने (रिमाइंडर ऑफ़सेट, स्टाफ़ का "email all", वर्कफ़्लो स्टेप्स अपना खुद का डुप्लिकेट-नियंत्रण रखते हैं) और सीधे संदेशों के लिए छोड़ दिया जाता है, जो हमेशा socket पर पिंग करते हैं।
 
-`shared/helpers/NotificationService.ts` messaging मॉड्यूल के बाहर callers के लिए समान signature (`NotificationServiceOptions`) को mirror करता है और boot पर messaging मॉड्यूल के साथ registered है।
+`shared/helpers/NotificationService.ts` messaging मॉड्यूल के बाहर के कॉलर्स के लिए वही सिग्नेचर (`NotificationServiceOptions`) दर्शाता है और बूट के समय messaging मॉड्यूल के साथ रजिस्टर होता है।
 
-## चैनल escalation chain
+## चैनल एस्केलेशन चेन {#channel-escalation-chain}
 
-Delivery एक स्तर पर शुरू होता है (डिफ़ॉल्ट रूप से 0, या reminders/explicit भेजने के लिए उच्चतर) और केवल अगले चैनल पर जाता है यदि पिछला सफल नहीं हुआ। प्रत्येक स्तर कुछ भी करने का प्रयास करने से पहले `PreferenceGateHelper` द्वारा gated है।
+डिलीवरी एक स्तर से शुरू होती है (डिफ़ॉल्ट रूप से 0, या रिमाइंडर/स्पष्ट भेजने के लिए उच्च), और अगले चैनल पर तभी जाती है जब पिछला सफल न हो। हर स्तर पर कुछ भी प्रयास करने से पहले `PreferenceGateHelper` गेट लगाता है।
 
 | स्तर | चैनल | व्यवहार |
 |-------|---------|----------|
-| 0 | **in_app / socket** | `in_app` gate पहले checked है। यदि suppressed (muted), पंक्ति `isNew=false` के साथ persist है और delivery पूरी तरह से रुक जाती है — कोई socket ping नहीं, कोई badge नहीं, कोई further escalation नहीं। अन्यथा server व्यक्ति के `alerts` room के लिए खुले socket connections को देखता है और एक `notification` (या `privateMessage`) frame push करता है। सामान्य सूचनाओं के लिए, एक सफल socket delivery chain को यहीं रोक देता है — 30-मिनट का टाइमर unread items को फिर से check करता है और बाद में उन्हें escalate करता है। Direct messages कभी socket पर रुकते नहीं: एक installed PWA alerts socket को background में hold कर सकता है, जो अन्यथा OS-level push को suppress करेगा। |
-| 1 | **push** | `allowPush` / category opt-out / quiet hours पर gated। व्यक्ति की `devices` पंक्तियों पर पाए गए Expo push tokens और Web Push subscriptions दोनों को भेजता है, endpoint द्वारा deduplicating और रास्ते में stale tokens को pruning करता है। |
-| 2 | **email** | `emailFrequency` और category opt-out पर gated। Immediate भेजने (`emailImmediate`) तुरंत render करते हैं और एक `deliveryLogs` पंक्ति write करते हैं; अन्यथा notification को batch digest के लिए pending छोड़ा जाता है, नीचे described। |
-| — | **sms** | escalation ladder में एक level नहीं। एकमात्र gated SMS producer reminder engine है: जब एक definition के `channels` में `sms` शामिल है, तो `ReminderEngine.sendSms()` push/email notification **के अतिरिक्त** हर recipient को text करता है (देखें [Text reminders](#text-reminders))। Bulk texting (`TextingController` / `@churchapps/texting`), serving overview **Text Volunteers** भेजना (`MatrixTextHelper` → `MessagingModuleGateway.sendPersonText`), और workflow **Send Text** step action (`StepActionHelper.sendText` → `sendPersonText`) सभी church के provider के माध्यम से सीधे texts करते हैं, इसलिए notification preferences और quiet hours उन पर लागू नहीं होते — केवल व्यक्ति की `optedOut` flag को honor किया जाता है। |
+| 0 | **in_app / socket** | पहले `in_app` गेट जांचा जाता है। यदि दबा दिया गया (म्यूट), तो पंक्ति `isNew=false` के साथ सहेजी जाती है और डिलीवरी पूरी तरह रुक जाती है — कोई socket पिंग नहीं, कोई बैज नहीं, आगे कोई एस्केलेशन नहीं। अन्यथा सर्वर व्यक्ति के `alerts` रूम के लिए खुले socket कनेक्शन खोजता है और एक `notification` (या `privateMessage`) फ़्रेम भेजता है। सामान्य सूचनाओं के लिए, सफल socket डिलीवरी इसी बिंदु पर चेन रोक देती है — 30 मिनट का टाइमर अपठित आइटम फिर जांचता है और बाद में उन्हें एस्केलेट करता है। सीधे संदेश socket पर कभी नहीं रुकते: इंस्टॉल किया गया PWA बैकग्राउंड में alerts socket खुला रख सकता है, और यह OS-स्तर के push को दबा देगा। |
+| 1 | **push** | `allowPush` / श्रेणी से opt-out / quiet hours पर गेटेड। व्यक्ति के `devices` पंक्तियों में मिले Expo push tokens और Web Push subscriptions दोनों पर भेजता है, endpoint के आधार पर डुप्लिकेट हटाता है और रास्ते में पुराने टोकन हटाता है। |
+| 2 | **email** | `emailFrequency` और श्रेणी से opt-out पर गेटेड। तुरंत भेजे जाने वाले (`emailImmediate`) ईमेल तुरंत रेंडर होते हैं और एक `deliveryLogs` पंक्ति लिखते हैं; अन्यथा सूचना नीचे वर्णित बैच डाइजेस्ट के लिए लंबित छोड़ दी जाती है। |
+| — | **sms** | एस्केलेशन सीढ़ी का कोई स्तर नहीं है। एकमात्र गेटेड SMS उत्पादक रिमाइंडर इंजन है: जब किसी परिभाषा के `channels` में `sms` हो, तो `ReminderEngine.sendSms()` push/email सूचना के **अतिरिक्त** हर प्राप्तकर्ता को टेक्स्ट भेजता है (देखें [Text reminders](#text-reminders))। बल्क टेक्स्टिंग (`TextingController` / `@churchapps/texting`), सेवा अवलोकन का **Text Volunteers** भेजना (`MatrixTextHelper` → `MessagingModuleGateway.sendPersonText`), और वर्कफ़्लो **Send Text** स्टेप एक्शन (`StepActionHelper.sendText` → `sendPersonText`) सभी सीधे चर्च के प्रदाता के माध्यम से टेक्स्ट करते हैं, इसलिए सूचना प्राथमिकताएं और quiet hours उन पर लागू नहीं होते — केवल व्यक्ति का `optedOut` फ़्लैग माना जाता है। |
 
-Unread notifications को socket या push पर छोड़ा जाता है 30-मिनट के टाइमर द्वारा escalate किया जाता है (`NotificationHelper.escalateDelivery`)। Batch email को `NotificationHelper.sendEmailNotifications(frequency)` द्वारा भेजा जाता है, प्रत्येक व्यक्ति की `emailFrequency` preference द्वारा driven: `individual` 30-मिनट के टाइमर पर चलता है, `daily` nightly टाइमर पर चलता है। (`weekly` एक valid preference value है लेकिन अभी तक कोई dedicated batch run नहीं है।)
+socket या push पर छोड़ी गई अपठित सूचनाएं 30-मिनट के टाइमर (`NotificationHelper.escalateDelivery`) द्वारा एस्केलेट की जाती हैं। बैच ईमेल `NotificationHelper.sendEmailNotifications(frequency)` द्वारा भेजा जाता है, जो हर व्यक्ति की `emailFrequency` प्राथमिकता से चलता है: `individual` 30-मिनट के टाइमर पर चलता है, `daily` रात्रि टाइमर पर। (`weekly` एक मान्य प्राथमिकता मान है, लेकिन अभी इसके लिए कोई समर्पित बैच रन नहीं है।)
 
-## अनुस्मारक इंजन
+## रिमाइंडर इंजन {#reminder-engine}
 
-अनुसूचित reminders — event reminders, task due dates, serving/plan assignment reminders — सभी एक generalized engine के माध्यम से जाते हैं बजाय per-feature cron logic के।
+निर्धारित रिमाइंडर — इवेंट रिमाइंडर, टास्क की नियत तिथियां, सेवा/प्लान असाइनमेंट रिमाइंडर — सभी एक सामान्यीकृत इंजन से गुज़रते हैं, न कि हर फ़ीचर के लिए अलग-अलग cron लॉजिक से।
 
 ```
 reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min)──▶ createNotifications()
@@ -80,107 +80,107 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
  offsets/channels/message        entity, occurrence, offset)           + reminderSentLog ledger
 ```
 
-**Definitions** (`reminderDefinitions`) या तो entity-level हैं (`entityId` set — एक specific event, task, या plan) या scope-level हैं (`entityId` null, `scopeId` set — उदाहरण के लिए एक serving plan type के तहत हर plan)। एक definition minute offsets का एक CSV carry करता है (`offsets`, उदाहरण के लिए `"1440,60"` एक दिन और एक घंटा पहले के लिए), एक local send time (`sendLocalTime`), channels का एक CSV (`channels` — including `email` एक send time पर immediate rich email को trigger करता है), एक `recipientMode`, और एक optional custom `message`।
+**परिभाषाएं** (`reminderDefinitions`) या तो entity-स्तर की होती हैं (`entityId` सेट — एक विशिष्ट इवेंट, टास्क या प्लान) या scope-स्तर की (`entityId` null, `scopeId` सेट — जैसे किसी सेवा प्लान प्रकार के अंतर्गत हर प्लान)। एक परिभाषा में मिनट ऑफ़सेट की CSV (`offsets`, जैसे एक दिन और एक घंटा पहले के लिए `"1440,60"`), स्थानीय भेजने का समय (`sendLocalTime`), चैनलों की CSV (`channels` — जिसमें `email` भेजने के समय तुरंत रिच ईमेल ट्रिगर करता है), एक `recipientMode`, और एक वैकल्पिक कस्टम `message` होता है।
 
-**Expansion** आगे के horizon के लिए fire rows को materialize करता है (एक rolling multi-day window)। यह nightly timer पर चलता है, और synchronously जब भी एक definition को save किया जाता है तो एक last-minute event के लिए reminder अभी भी fire होता है। Scope definitions adapter के `loadScopeEntities` के माध्यम से fan out करते हैं, प्रत्येक concrete entity के लिए एक occurrence set produce करते हैं; entity-level occurrences key `definitionId:occurrenceISO:offset` का उपयोग करते हैं, जबकि scoped occurrences entity id द्वारा namespace करते हैं तो वे कभी collide नहीं करते। एक occurrence को upsert करना एक previously-cancelled पंक्ति को **resurrects** करता है — cancel-then-re-expand underlying entity परिवर्तन के बाद एक reminder को re-sync करने का standard तरीका है; पंक्तियां जो पहले से `sent`, `failed`, या `processing` हैं untouched छोड़ी जाती हैं।
+**विस्तार** (expansion) आने वाले क्षितिज (एक रोलिंग कई-दिन की विंडो) के लिए fire पंक्तियां बनाता है। यह रात्रि टाइमर पर चलता है, और जब भी कोई परिभाषा सहेजी जाती है तब तुरंत — ताकि आखिरी समय के इवेंट का रिमाइंडर भी फायर हो। Scope परिभाषाएं एडैप्टर के `loadScopeEntities` के माध्यम से फैलती हैं, और हर ठोस entity के लिए एक occurrence सेट बनाती हैं; entity-स्तर की occurrences `definitionId:occurrenceISO:offset` कुंजी का उपयोग करती हैं, जबकि scoped occurrences entity id से नेमस्पेस होती हैं ताकि वे कभी टकराएं नहीं। किसी occurrence को upsert करने पर पहले रद्द की गई पंक्ति **पुनर्जीवित** हो जाती है — अंतर्निहित entity बदलने के बाद रिमाइंडर को फिर से सिंक करने का मानक तरीका cancel-then-re-expand है; जिन पंक्तियों की स्थिति `sent`, `failed`, या `processing` है, उन्हें नहीं छुआ जाता।
 
-**Dispatch** (`ReminderEngine.scan()`) 30-मिनट के टाइमर पर चलता है। यह due occurrences को claim करता है (एक lease double-processing को prevent करता है), entity के adapter के माध्यम से recipients को load करता है, किसी को भी पहले से `reminderSentLog` में recorded के out को filter करता है, और `createNotifications` को `deliveryStartLevel: 1` (socket को skip straight to push) के साथ कॉल करता है साथ ही `emailImmediate`/`emailByPerson` जब definition के channels email को include करते हैं।
+**डिस्पैच** (`ReminderEngine.scan()`) 30-मिनट के टाइमर पर चलता है। यह देय occurrences को claim करता है (एक lease दोहरी प्रोसेसिंग रोकता है), entity के एडैप्टर के माध्यम से प्राप्तकर्ता लोड करता है, उन सभी को छानता है जो उस occurrence के लिए `reminderSentLog` में पहले से दर्ज हैं, और `createNotifications` को `deliveryStartLevel: 1` (सीधे push पर जाएं) के साथ कॉल करता है, साथ ही परिभाषा के चैनलों में email होने पर `emailImmediate`/`emailByPerson` भी।
 
-### Text reminders {#text-reminders}
+### टेक्स्ट रिमाइंडर {#text-reminders}
 
-जब एक definition के `channels` में `sms` शामिल है, तो `scan()` push/email notifications बनने के बाद उन्हीं नए recipients के लिए `ReminderEngine.sendSms()` कॉल करता है। Texting हर सदस्य के लिए opt-in है:
+जब किसी परिभाषा के `channels` में `sms` हो, तो push/email सूचनाएं बन जाने के बाद `scan()` उन्हीं नए प्राप्तकर्ताओं के लिए `ReminderEngine.sendSms()` को कॉल करता है। टेक्स्टिंग हर सदस्य के लिए वैकल्पिक (opt-in) है:
 
-- हर recipient `PreferenceGateHelper.evaluate(..., "sms", ...)` से गुज़रता है, इसलिए `allowSms` चालू होना चाहिए (यह default रूप से बंद होता है और B1App के **Text messages** स्विच से सेट होता है) और category का `sms` channel off से override नहीं होना चाहिए। `event_reminders`, `serving_schedule`, और `tasks` दोनों `defaultChannels` और `allowedChannels` में `sms` सूचीबद्ध करते हैं।
-- जिन लोगों के पास `mobilePhone` नहीं है या जिनका `optedOut` सेट है, उन्हें suppress किया जाता है। यदि चर्च के पास texting provider नहीं है, तो batch के शेष हिस्से को reason `no_provider` के साथ suppress किया जाता है।
-- Body `ReminderEngine.smsBody()` द्वारा बनाई जाती है: `"<Church name>: <message> Reply STOP to opt out."`, एक 160-character segment तक trimmed।
-- हर recipient को अपनी `reminderSentLog` पंक्ति मिलती है, `channel: "sms"` और status `sent` / `suppressed` / `failed` के साथ, जो push/email पंक्ति से अलग key की जाती है, ताकि एक विफल text कभी push या email को दोबारा न भेजे।
+- हर प्राप्तकर्ता `PreferenceGateHelper.evaluate(..., "sms", ...)` से गुज़रता है, इसलिए `allowSms` चालू होना चाहिए (यह डिफ़ॉल्ट रूप से बंद होता है और B1App के **Text messages** स्विच से सेट होता है), और श्रेणी का `sms` चैनल बंद करके ओवरराइड नहीं किया गया होना चाहिए। `event_reminders`, `serving_schedule`, और `tasks` अपने `defaultChannels` और `allowedChannels` दोनों में `sms` सूचीबद्ध करते हैं।
+- जिन लोगों के पास `mobilePhone` नहीं है या जिनका `optedOut` सेट है, उन्हें दबा दिया जाता है। यदि चर्च के पास कोई टेक्स्टिंग प्रदाता नहीं है, तो बाकी बैच कारण `no_provider` के साथ दबा दिया जाता है।
+- संदेश `ReminderEngine.smsBody()` द्वारा बनता है: `"<Church name>: <message> Reply STOP to opt out."`, जिसे एक 160-अक्षर के सेगमेंट तक छोटा किया जाता है।
+- हर प्राप्तकर्ता को `channel: "sms"` और स्थिति `sent` / `suppressed` / `failed` वाली अपनी `reminderSentLog` पंक्ति मिलती है, जो push/email पंक्ति से अलग कुंजीबद्ध होती है, ताकि विफल टेक्स्ट कभी push या email को दोबारा न भेजे।
 
-Editors **Text** तभी देते हैं जब `GET /messaging/texting/status` `{ enabled: true }` लौटाता है (चर्च का पहला texting provider सक्रिय है)।
+एडिटर्स **Text** विकल्प तभी दिखाते हैं जब `GET /messaging/texting/status` `{ enabled: true }` लौटाता है (चर्च का पहला टेक्स्टिंग प्रदाता सक्रिय है)।
 
-**STOP opt-out.** `POST /messaging/texting/inbound/:churchId/:token` एक anonymous webhook है जिसे चर्च अपने provider में चिपकाता है (B1Admin texting settings में `GET /messaging/texting/inboundUrl` से URL दिखाता है)। Token चर्च ID का HMAC है (`SmsOptOutHelper.token`)। `SmsOptOutHelper.parse` Twilio-style form fields और Clearstream/TextInChurch-style JSON स्वीकार करता है; यदि reply ठीक एक carrier stop word (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`) है, तो चर्च में हर non-removed व्यक्ति जिसका mobile नंबर मेल खाता है उसे `people.optedOut = true` और `allowSms = false` मिलता है। अन्य replies को acknowledge किया जाता है और अनदेखा किया जाता है।
+**STOP opt-out।** `POST /messaging/texting/inbound/:churchId/:token` एक गुमनाम webhook है जिसे चर्च अपने प्रदाता में चिपकाता है (B1Admin टेक्स्टिंग सेटिंग्स में `GET /messaging/texting/inboundUrl` से URL दिखाता है)। टोकन चर्च id का HMAC है (`SmsOptOutHelper.token`)। `SmsOptOutHelper.parse` Twilio-शैली के फ़ॉर्म फ़ील्ड और Clearstream/TextInChurch-शैली के JSON दोनों स्वीकार करता है; यदि उत्तर बिल्कुल कैरियर स्टॉप शब्द है (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`), तो चर्च में हर गैर-हटाए गए व्यक्ति जिसका मोबाइल नंबर मेल खाता है, उसे `people.optedOut = true` और `allowSms = false` मिलता है। अन्य उत्तर स्वीकार किए जाते हैं और अनदेखे रहते हैं।
 
-एक internal event bus entity mutations पर reacts nightly expansion के लिए wait किए बिना: content events (webhook dispatcher के माध्यम से) और plan/task update events affected entity के लिए immediate re-expansion या cancellation को trigger करते हैं, और एक plan update अपने plan type के लिए tied किए गए scope definitions को भी re-expand करता है।
+एक आंतरिक इवेंट बस entity बदलावों पर रात्रि विस्तार का इंतज़ार किए बिना प्रतिक्रिया देती है: कॉन्टेंट इवेंट्स (webhook dispatcher के माध्यम से) और प्लान/टास्क अपडेट इवेंट्स प्रभावित entity के लिए तुरंत पुनः-विस्तार या रद्दीकरण ट्रिगर करते हैं, और प्लान अपडेट उसके प्लान प्रकार से जुड़ी किसी भी scope परिभाषा को भी फिर से विस्तारित करता है।
 
-### Adapters
+### एडैप्टर {#adapters}
 
-Engine entity-agnostic है; प्रत्येक supported entity type एक adapter (`helpers/adapters/`) के माध्यम से plug करता है:
+इंजन entity-अज्ञेयवादी है; समर्थित हर entity प्रकार एक एडैप्टर (`helpers/adapters/`) के माध्यम से जुड़ता है:
 
-| Entity type | Adapter | Notes |
+| Entity प्रकार | एडैप्टर | नोट्स |
 |-------------|---------|-------|
-| `event` | `EventReminderAdapter` | Recipients को event और `recipientMode` के आधार पर registrants या group members के लिए scoped किया जाता है। |
-| `plan` | `PlanReminderAdapter` | Recipients Accepted + Unconfirmed plan assignments हैं। `buildEmails` `DoingModuleGateway.buildPlanReminderEmails` में कॉल करता है, जो `doing/helpers/PlanReminderEmailHelper` के माध्यम से positions, notes, और एक custom message को render करता है, `ReminderTokenHelper` द्वारा signed Accept/Decline buttons सहित जो एक public assignment-response endpoint को post करते हैं। |
-| `task` | `TaskReminderAdapter` | Recipients task के assignee(s) हैं। |
+| `event` | `EventReminderAdapter` | इवेंट और `recipientMode` के आधार पर प्राप्तकर्ता रजिस्ट्रेंट या समूह सदस्यों तक सीमित। |
+| `plan` | `PlanReminderAdapter` | प्राप्तकर्ता Accepted + Unconfirmed प्लान असाइनमेंट हैं। `buildEmails` `DoingModuleGateway.buildPlanReminderEmails` को कॉल करता है, जो `doing/helpers/PlanReminderEmailHelper` के माध्यम से पद, नोट्स, और कस्टम संदेश रेंडर करता है, जिसमें `ReminderTokenHelper` द्वारा साइन किए गए Accept/Decline बटन शामिल हैं, जो एक सार्वजनिक असाइनमेंट-उत्तर एंडपॉइंट पर POST करते हैं। |
+| `task` | `TaskReminderAdapter` | प्राप्तकर्ता टास्क के असाइनी हैं। |
 
-### Endpoints
+### एंडपॉइंट्स {#endpoints}
 
-| Method | Path | Purpose |
+| Method | Path | उद्देश्य |
 |--------|------|---------|
-| `GET` / `POST` | `/messaging/reminders/:entityType/:entityId` | एक entity के लिए reminder definition को load या save करें। |
-| `GET` / `POST` | `/messaging/reminders/scope/:entityType/:scopeId` | एक scope-level (inherited) reminder definition को load या save करें। |
-| `DELETE` | `/messaging/reminders/:defId` | एक definition को delete करें और इसके pending occurrences को cancel करें। |
-| `GET` | `/messaging/reminders/event/:eventId/preview` | एक event reminder के लिए recipient count और अगले fire times को preview करें save करने से पहले। |
-| `GET` | `/messaging/reminders/log` | एक church के लिए recent reminder occurrence history। |
-| `POST` | `/messaging/reminders/mute` | एक specific entity के लिए reminders को mute करें। |
+| `GET` / `POST` | `/messaging/reminders/:entityType/:entityId` | एक entity के लिए रिमाइंडर परिभाषा लोड या सहेजें। |
+| `GET` / `POST` | `/messaging/reminders/scope/:entityType/:scopeId` | scope-स्तर की (विरासत में मिली) रिमाइंडर परिभाषा लोड या सहेजें। |
+| `DELETE` | `/messaging/reminders/:defId` | परिभाषा हटाएं और उसकी लंबित occurrences रद्द करें। |
+| `GET` | `/messaging/reminders/event/:eventId/preview` | सहेजने से पहले इवेंट रिमाइंडर के लिए प्राप्तकर्ता संख्या और अगले फायर होने के समय का पूर्वावलोकन। |
+| `GET` | `/messaging/reminders/log` | किसी चर्च के लिए हाल की रिमाइंडर occurrence इतिहास। |
+| `POST` | `/messaging/reminders/mute` | किसी विशिष्ट entity के लिए रिमाइंडर म्यूट करें। |
 
-एक definition को save करना उस entity या scope के लिए एक synchronous re-expansion को trigger करता है, इसलिए editors को updated "next fires" देखते हैं nightly job के लिए wait किए बिना।
+परिभाषा सहेजने पर उस entity या scope के लिए सिंक्रोनस पुनः-विस्तार ट्रिगर होता है, ताकि एडिटर्स रात्रि जॉब का इंतज़ार किए बिना अद्यतन "अगले फायर" देख सकें।
 
-## Direct messages
+## सीधे संदेश {#direct-messages}
 
-Direct messages same funnel के रूप में ride करते हैं सब कुछ के समान बजाय एक separate escalation path के। प्रत्येक unread conversation को एक **shadow row** मिलता है `notifications` में (`contentType='privateMessage'`, `contentId` = private message id, `category='direct_messages'`) जो सभी delivery state को own करता है — socket/push/email escalation, read tracking, सब कुछ। `privateMessages` table itself message payload को keep करता है और एक `notifyPersonId` column, जो unread badge का source है और recipient द्वारा conversation को read करने पर clear होता है।
+सीधे संदेश एक अलग एस्केलेशन पाथ के बजाय बाकी सब की तरह उसी फ़नल से चलते हैं। हर अपठित बातचीत को `notifications` में एक **shadow row** मिलती है (`contentType='privateMessage'`, `contentId` = निजी संदेश id, `category='direct_messages'`), जो सभी डिलीवरी स्थिति — socket/push/email एस्केलेशन, read tracking, सब कुछ — संभालती है। `privateMessages` टेबल स्वयं संदेश पेलोड और `notifyPersonId` कॉलम रखती है, जो अपठित बैज का स्रोत है और प्राप्तकर्ता द्वारा बातचीत पढ़ने पर साफ़ हो जाता है।
 
-Shadow rows notification bell के लिए invisible हैं: वे unread count query, notification list query, और mark-read/delete queries से excluded हैं, सभी `contentType <> 'privateMessage'` को filter करते हैं। प्रत्येक DM ping socket को regardless of unread state के बावजूद hit करता है (live chat semantics — कोई dedup नहीं), और DMs कभी socket delivery के तरीके सामान्य notifications को नहीं रोकते, क्योंकि एक backgrounded PWA एक socket को hold कर सकता है जबकि अभी भी एक OS-level push की आवश्यकता है। यदि कोई व्यक्ति DM notifications को mute करता है, shadow row को park किया जाता है (`isNew=false`, `notifyPersonId` cleared) — अभी भी conversation के अंदर visible, बस badges या alerts के बिना।
+Shadow rows सूचना घंटी से अदृश्य हैं: वे अपठित गिनती क्वेरी, सूचना सूची क्वेरी, और mark-read/delete क्वेरी से बाहर रखी जाती हैं, जो सभी `contentType <> 'privateMessage'` फ़िल्टर करती हैं। हर DM पिंग अपठित स्थिति की परवाह किए बिना socket तक पहुंचता है (लाइव चैट व्यवहार — कोई डुप्लिकेट-रोकथाम नहीं), और DM कभी socket डिलीवरी पर नहीं रुकते जैसे सामान्य सूचनाएं रुकती हैं, क्योंकि बैकग्राउंड में चल रहा PWA socket खुला रखते हुए भी OS-स्तर के push की ज़रूरत रख सकता है। यदि कोई व्यक्ति DM सूचनाएं म्यूट करता है, तो shadow row रोक दी जाती है (`isNew=false`, `notifyPersonId` साफ़), जिसका अर्थ है कि वह बातचीत के भीतर अब भी दिखती है, बस बैज या अलर्ट के बिना।
 
-## Preferences और gating
+## प्राथमिकताएं और गेटिंग {#preferences--gating}
 
-हर भेजना `PreferenceGateHelper.evaluate()` के माध्यम से जाता है, एक pure function (सभी state passed in, hot path पर कोई DB calls नहीं) जो `allow`, `suppress`, या `defer` को return करता है। Layers order में चलते हैं, और पहला जो decide करता है wins:
+हर भेजना `PreferenceGateHelper.evaluate()` से गुज़रता है, जो एक शुद्ध फ़ंक्शन है (सारी स्थिति बाहर से दी जाती है, हॉट पाथ पर कोई DB कॉल नहीं), और `allow`, `suppress`, या `defer` लौटाता है। परतें क्रम से चलती हैं, और जो पहली परत निर्णय ले, वही जीतती है:
 
-1. **Locked category** — कुछ categories mandatory हैं (tier 0) और हर दूसरे layer को bypass करते हैं।
-2. **Master mute / channel kill** — `masterMute`, `allowPush`, `allowSms` (default रूप से बंद -- सदस्य opt in करते हैं), या `emailFrequency='never'` outright को suppress करते हैं।
-3. **Quiet hours** — push और SMS only (email को non-intrusive माना जाता है)। यदि wall-clock time person के timezone में उनके quiet window में fall करता है, एक transactional category अभी भी through होता है; एक non-transactional one quiet window के end के लिए deferred होता है, `TimezoneHelper.wallClockToUtc` के माध्यम से DST-correct UTC instant के रूप में computed।
-4. **Per-category preference override** — एक explicit opt-out एक category × channel pair के लिए; absence का मतलब category का default है।
-5. **Per-entity mute** — एक mute एक specific entity के against recorded (उदाहरण के लिए एक event, एक plan) further restrict करता है category-level setting से, लेकिन केवल apply होता है जब caller एक entity id/type को notification के साथ supply करता है।
+1. **Locked category** — कुछ श्रेणियां अनिवार्य (tier 0) हैं और बाकी हर परत को बायपास करती हैं।
+2. **Master mute / channel kill** — `masterMute`, `allowPush`, `allowSms` (डिफ़ॉल्ट रूप से बंद — सदस्य opt in करते हैं), या `emailFrequency='never'` सीधे दबा देते हैं।
+3. **Quiet hours** — केवल push और SMS पर (ईमेल को गैर-आक्रामक माना जाता है)। यदि व्यक्ति के समय क्षेत्र में वर्तमान दीवार-घड़ी का समय उसकी quiet विंडो में है, तो ट्रांसैक्शनल श्रेणी फिर भी पहुंचती है; गैर-ट्रांसैक्शनल को quiet विंडो के अंत तक टाल दिया जाता है, जिसकी गणना `TimezoneHelper.wallClockToUtc` के माध्यम से DST-सही UTC क्षण के रूप में होती है।
+4. **Per-category preference override** — एक श्रेणी × चैनल जोड़ी के लिए स्पष्ट opt-out; अनुपस्थिति का अर्थ है श्रेणी का डिफ़ॉल्ट।
+5. **Per-entity mute** — किसी विशिष्ट entity (जैसे एक इवेंट, एक प्लान) पर दर्ज म्यूट श्रेणी-स्तर की सेटिंग से अधिक प्रतिबंध लगाता है, लेकिन तभी लागू होता है जब कॉलर सूचना के साथ entity id/type भी दे।
 
-Tables involved: `notificationPreferences` (global — `masterMute`, `emailFrequency` of `individual|daily|weekly|never`, `allowPush`, quiet-hours window + timezone, `allowSms`), `notificationPreferenceOverrides` (per category × channel), और `notificationEntityMutes` (per entity)।
+शामिल टेबल: `notificationPreferences` (वैश्विक — `masterMute`, `emailFrequency` जिसका मान `individual|daily|weekly|never` हो सकता है, `allowPush`, quiet-hours विंडो और समय क्षेत्र, `allowSms`), `notificationPreferenceOverrides` (प्रति श्रेणी × चैनल), और `notificationEntityMutes` (प्रति entity)।
 
-यह gate in-app (level 0), push (level 1), और email (level 2) के अंदर funnel में enforced होता है — including immediate reminder/digest emails — और `ReminderEngine.sendSms()` में reminder texts के लिए भी। Transactional email (auth codes, password resets, invites, donation receipts) design के द्वारा bypass होता है; दूसरे door का पूरा point है।
+यह गेट in-app (स्तर 0), push (स्तर 1), और email (स्तर 2) के लिए फ़नल के भीतर लागू होता है — तुरंत भेजे जाने वाले रिमाइंडर/डाइजेस्ट ईमेल सहित — और रिमाइंडर टेक्स्ट के लिए `ReminderEngine.sendSms()` में। ट्रांसैक्शनल ईमेल (ऑथ कोड, पासवर्ड रीसेट, आमंत्रण, दान रसीदें) डिज़ाइन से इसे बायपास करते हैं; यही दूसरे द्वार का पूरा उद्देश्य है।
 
-## Church-authored email limits
+## चर्च-लिखित ईमेल सीमाएं {#church-authored-email-limits}
 
-Email जिसका content church ने written किया shared ChurchApps SES identity से जाता है, तो यह `Api/src/shared/helpers/ChurchEmailLimiter.ts` द्वारा per church metered है। चार paths इसे कॉल करते हैं: group/template sends (`EmailTemplateController`, content type `email`), form follow-up emails (`FormSubmissionController`, `formFollowUp`), workflow **Send email** actions (`NotificationHelper` के साथ `churchAuthored`, `workflowEmail`), और B1 account invites (`UserController.sendInviteEmail`, `invite`)। System mail (auth codes, receipts, reminders) metered नहीं है।
+जो ईमेल कंटेंट चर्च ने लिखा है, वह साझा ChurchApps SES पहचान से जाता है, इसलिए उसे `Api/src/shared/helpers/ChurchEmailLimiter.ts` द्वारा प्रति चर्च मीटर किया जाता है। तीन पाथ इसे कॉल करते हैं: ग्रुप/टेम्पलेट भेजना (`EmailTemplateController`, कंटेंट प्रकार `email`), फ़ॉर्म फ़ॉलो-अप ईमेल (`FormSubmissionController`, `formFollowUp`), और वर्कफ़्लो **Send email** एक्शन (`NotificationHelper` के साथ `churchAuthored`, `workflowEmail`)। सिस्टम मेल (ऑथ कोड, रसीदें, रिमाइंडर) और भूमिका व ग्रुप आमंत्रण (`UserController.sendInviteEmail`, एक निश्चित टेम्पलेट) मीटर नहीं किए जाते।
 
-- **Approval gate.** एक church कुछ नहीं भेजता जब तक एक server admin `churches.emailApprovedDate` को set नहीं करता (`POST /membership/churches/:id/emailApproval`, Server Admin → Churches → **Group Email** chip)। Archived churches हमेशा blocked हैं। B1Admin का Send Email dialog `GET /messaging/emailTemplates/sendStatus` (`approved`, `paused`, `remaining`, `requested`) को read करता है और, जब unapproved, एक **Request review** card को editor के बजाय दिखाता है। `POST /messaging/emailTemplates/requestApproval` support को emails करता है, at most once per church per week।
-- **Earned allowance.** एक approved church को `max(150, 2 × its best church-authored day in the prior 30 days)` मिलता है, rolling 24 hours पर 2,000 में capped। Current 24 hours "best day" से excluded हैं तो एक burst अपनी स्वयं की limit को raise नहीं कर सकता।
-- **Reserve, then settle.** `reserve()` sending से पहले per recipient को एक `deliveryLogs` पंक्ति write करता है, allowance को re-check करता है उन rows counted के साथ, और if two requests limit के past raced (send 429 को return करता है) को back out करता है। `settle()` प्रत्येक row को sent या failed के रूप में marks करता है।
-- **Complaint pause.** `sesFeedback` Lambda (`Api/src/lambda/ses-feedback-handler.ts`, SES → SNS द्वारा fed), प्रत्येक permanent bounce या complaint को church के pin करता है जिसका church-authored email उस address को reach किया around that time में, `deliveryMethod` `sesBounce` / `sesComplaint` के रूप में stored। एक church को 2+ complaints (≥ 0.3% of sends) या 10+ hard bounces (≥ 5%) over 7 days में pause किया जाता है।
+- **स्वीकृति गेट।** जब तक सर्वर एडमिन `churches.emailApprovedDate` सेट नहीं करता, चर्च कुछ नहीं भेजता (`POST /membership/churches/:id/emailApproval`, Server Admin → Churches → **Group Email** चिप)। आर्काइव किए गए चर्च हमेशा ब्लॉक रहते हैं। B1Admin का Send Email डायलॉग `GET /messaging/emailTemplates/sendStatus` (`approved`, `paused`, `remaining`, `requested`) पढ़ता है और अस्वीकृत होने पर एडिटर की जगह **Request review** कार्ड दिखाता है। `POST /messaging/emailTemplates/requestApproval` सहायता टीम को ईमेल करता है, प्रति चर्च प्रति सप्ताह अधिकतम एक बार।
+- **अर्जित भत्ता।** स्वीकृत चर्च को `max(150, 2 × पिछले 30 दिनों में उसका सर्वोत्तम चर्च-लिखित दिन)` मिलता है, जो रोलिंग 24 घंटों में अधिकतम 2,000 पर सीमित है। वर्तमान 24 घंटे "सर्वोत्तम दिन" की गणना से बाहर रखे जाते हैं, ताकि एक बाढ़ अपनी ही सीमा न बढ़ा सके।
+- **Reserve, फिर settle।** `reserve()` भेजने से पहले प्रति प्राप्तकर्ता एक `deliveryLogs` पंक्ति लिखता है, उन पंक्तियों की गिनती के साथ भत्ते की फिर से जांच करता है, और यदि दो अनुरोध सीमा पार करने की दौड़ में आ गए हों तो वापस लौट जाता है (भेजना 429 लौटाता है)। `settle()` हर पंक्ति को sent या failed चिह्नित करता है।
+- **शिकायत विराम।** `sesFeedback` Lambda (`Api/src/lambda/ses-feedback-handler.ts`, SES → SNS से फ़ीड होता है) हर स्थायी बाउंस या शिकायत को उस चर्च से जोड़ता है जिसका चर्च-लिखित ईमेल उस समय के आसपास उस पते तक पहुंचा था, और उसे `deliveryMethod` `sesBounce` / `sesComplaint` के रूप में संग्रहीत करता है। 7 दिनों में 2+ शिकायतें (भेजे गए का ≥ 0.3%) या 10+ हार्ड बाउंस (≥ 5%) होने पर चर्च विराम में डाल दिया जाता है।
 
-## Scheduling
+## शेड्यूलिंग {#scheduling}
 
-Reminder engine और notification digest दोनों new infrastructure introduce करने की बजाय existing scheduled timers पर ride करते हैं:
+रिमाइंडर इंजन और सूचना डाइजेस्ट दोनों मौजूदा शेड्यूल्ड टाइमरों पर चलते हैं, किसी नए इन्फ्रास्ट्रक्चर की ज़रूरत के बिना:
 
-| Timer | Schedule | Runs |
-|-------|----------|------|
-| 30-minute timer | every 30 minutes | Unread notifications को escalate करें; `individual`-frequency digest emails भेजें; due reminder occurrences को dispatch करें (`ReminderEngine.scan`); approval digests; due automation executions |
-| Nightly timer | 05:00 UTC | Group attendance reminders; advance करें recurring streaming services; refresh करें auto-refresh lists; reminder occurrences को expand करें next horizon के लिए (`ReminderEngine.expandAll`); `daily`-frequency digest emails भेजें |
+| टाइमर | शेड्यूल | क्या चलता है |
+|-------|---------|-------------|
+| 30-मिनट का टाइमर | हर 30 मिनट | अपठित सूचनाएं एस्केलेट करें; `individual` आवृत्ति के डाइजेस्ट ईमेल भेजें; देय रिमाइंडर occurrences डिस्पैच करें (`ReminderEngine.scan`); स्वीकृति डाइजेस्ट; देय ऑटोमेशन एक्ज़ीक्यूशन |
+| रात्रि टाइमर | 05:00 UTC | ग्रुप उपस्थिति रिमाइंडर; आवर्ती स्ट्रीमिंग सेवाएं आगे बढ़ाएं; ऑटो-रिफ़्रेश सूचियां ताज़ा करें; अगले क्षितिज के लिए रिमाइंडर occurrences विस्तारित करें (`ReminderEngine.expandAll`); `daily` आवृत्ति के डाइजेस्ट ईमेल भेजें |
 
-Locally, same logic को demand पर `Api` project से `npm run timer:30min` और `npm run timer:midnight` के साथ trigger किया जा सकता है।
+स्थानीय रूप से, वही तर्क `Api` प्रोजेक्ट से `npm run timer:30min` और `npm run timer:midnight` के साथ मांग पर चलाया जा सकता है।
 
-## File inventory
+## फ़ाइल सूची {#file-inventory}
 
-| Area | Files |
+| क्षेत्र | फ़ाइलें |
 |------|-------|
-| Funnel | `Api/src/modules/messaging/helpers/NotificationHelper.ts`, `PreferenceGateHelper.ts`, `NotificationCategoryHelper.ts`, `WebPushHelper.ts`, `ExpoPushHelper.ts`, `SocketHelper.ts`, `DeliveryHelper.ts` |
-| Shared entry | `Api/src/shared/helpers/NotificationService.ts` |
-| Transactional door | `Api/src/shared/helpers/TransactionalEmailHelper.ts`, lint rule `Api/tools/eslint-rules/email-door.cjs` |
-| Church email limits | `Api/src/shared/helpers/ChurchEmailLimiter.ts`, `Api/src/lambda/ses-feedback-handler.ts`, `Api/src/modules/messaging/repositories/DeliveryLogRepo.ts` |
-| Reminder engine | `Api/src/modules/messaging/helpers/ReminderEngine.ts`, `ReminderBootstrap.ts`, `helpers/adapters/*`, `controllers/ReminderController.ts` |
-| Reminder repositories | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`, `ReminderOccurrenceRepo.ts`, `ReminderSentLogRepo.ts` |
-| Serving/plan email | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`, `ReminderTokenHelper.ts`, `Api/src/shared/modules/DoingModuleGateway.ts` |
-| Texting / STOP opt-out | `Api/src/modules/messaging/helpers/SmsOptOutHelper.ts`, `controllers/TextingController.ts` (`/status`, `/inboundUrl`, `/inbound/:churchId/:token`), `Api/src/modules/doing/helpers/MatrixTextHelper.ts` (serving overview **Text Volunteers**) |
-| Reminder editors (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx`, `hooks/useTextingEnabled.ts` |
-| Reminder editor / preferences (B1App) | `EventReminderEdit.tsx`, `NotificationPrefsPage.tsx`, `useRealtimeNotifications.ts` |
+| फ़नल | `Api/src/modules/messaging/helpers/NotificationHelper.ts`, `PreferenceGateHelper.ts`, `NotificationCategoryHelper.ts`, `WebPushHelper.ts`, `ExpoPushHelper.ts`, `SocketHelper.ts`, `DeliveryHelper.ts` |
+| साझा प्रवेश बिंदु | `Api/src/shared/helpers/NotificationService.ts` |
+| ट्रांसैक्शनल द्वार | `Api/src/shared/helpers/TransactionalEmailHelper.ts`, लिंट नियम `Api/tools/eslint-rules/email-door.cjs` |
+| चर्च ईमेल सीमाएं | `Api/src/shared/helpers/ChurchEmailLimiter.ts`, `Api/src/lambda/ses-feedback-handler.ts`, `Api/src/modules/messaging/repositories/DeliveryLogRepo.ts` |
+| रिमाइंडर इंजन | `Api/src/modules/messaging/helpers/ReminderEngine.ts`, `ReminderBootstrap.ts`, `helpers/adapters/*`, `controllers/ReminderController.ts` |
+| टेक्स्टिंग / STOP opt-out | `Api/src/modules/messaging/helpers/SmsOptOutHelper.ts`, `controllers/TextingController.ts` (`/status`, `/inboundUrl`, `/inbound/:churchId/:token`), `Api/src/modules/doing/helpers/MatrixTextHelper.ts` (सेवा अवलोकन **Text Volunteers**) |
+| रिमाइंडर रिपॉज़िटरी | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`, `ReminderOccurrenceRepo.ts`, `ReminderSentLogRepo.ts` |
+| सेवा/प्लान ईमेल | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`, `ReminderTokenHelper.ts`, `Api/src/shared/modules/DoingModuleGateway.ts` |
+| रिमाइंडर एडिटर (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx`, `hooks/useTextingEnabled.ts` |
+| रिमाइंडर एडिटर / प्राथमिकताएं (B1App) | `EventReminderEdit.tsx`, `NotificationPrefsPage.tsx`, `useRealtimeNotifications.ts` |
 
-## Related Pages
+## संबंधित पेज {#related-pages}
 
-- [Real-time Architecture](../realtime) — the WebSocket protocol और client primitives (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) जो in-app delivery level ride करता है
-- [Web Push Notifications](../web-push) — VAPID setup और browser Push API path push escalation level द्वारा used
-- [Messaging Endpoints](../api/endpoints/messaging) — full REST surface messages, conversations, connections, और notification/reminder routes के लिए
+- [Real-time Architecture](../realtime) — WebSocket प्रोटोकॉल और क्लाइंट प्रिमिटिव (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), जिन पर in-app डिलीवरी स्तर चलता है
+- [Web Push Notifications](../web-push) — VAPID सेटअप और ब्राउज़र Push API पाथ, जिसे push एस्केलेशन स्तर उपयोग करता है
+- [Messaging Endpoints](../api/endpoints/messaging) — संदेशों, बातचीत, कनेक्शन, और सूचना/रिमाइंडर रूट्स के लिए पूरी REST सतह

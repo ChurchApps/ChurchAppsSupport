@@ -2,11 +2,11 @@
 title: "Chiavi API"
 ---
 
-# Chiavi API
+# Chiavi API {#api-keys}
 
 <div class="article-intro">
 
-Le chiavi API (token di accesso personali) sono il modo più semplice per autenticarsi rispetto all'API B1 da uno script lato server, un connettore di terze parti (Zapier, Make, Google Sheets), o ovunque un flusso OAuth completo sia eccessivo. Una chiave è vincolata a una persona specifica in una chiesa specifica e eredita i permessi di quella persona, limitati da un set facoltativo di ambiti.
+Le chiavi API (token di accesso personali) sono il modo più semplice per autenticarsi con l'API di B1 da uno script lato server, da un connettore di terze parti (Zapier, Make, Google Sheets) o in qualsiasi situazione in cui un intero flusso OAuth sarebbe eccessivo. Una chiave è associata a una specifica persona in una specifica chiesa ed eredita i permessi di quella persona, limitati da un insieme facoltativo di ambiti.
 
 </div>
 
@@ -14,100 +14,101 @@ Le chiavi API (token di accesso personali) sono il modo più semplice per autent
 <h4>Prima di iniziare</h4>
 
 - Un amministratore della chiesa con il permesso **Modifica impostazioni** crea e gestisce le chiavi
-- La chiave grezza viene visualizzata **una volta** alla creazione — archiviala subito da qualche parte al sicuro
-- Tutte le richieste API devono utilizzare **HTTPS**
+- La chiave grezza viene mostrata **una sola volta** al momento della creazione -- conservala subito in un luogo sicuro
+- Tutte le richieste API devono usare **HTTPS**
 
 </div>
 
-## Formato della chiave
+## Formato della chiave {#key-format}
 
-Una chiave API B1 assomiglia a:
+Una chiave API di B1 ha questo aspetto:
 
 ```
 cak_<prefix>.<secret>
 ```
 
-- `cak_` — identificatore fisso (il prefisso della chiave API su cui il livello di autenticazione corrisponde)
-- `<prefix>` — segmento di ricerca pubblico a 8 caratteri
-- `<secret>` — segreto a 48 caratteri; solo un hash SHA-256 viene archiviato lato server
+- `cak_` — identificatore fisso (il prefisso della chiave API a cui il livello di autenticazione fa corrispondenza)
+- `<prefix>` — segmento pubblico di ricerca di 8 caratteri
+- `<secret>` — segreto di 48 caratteri; sul server viene memorizzato solo un hash SHA-256
 
-La chiave completa viene presentata al server nell'intestazione del portatore standard:
+La chiave completa viene presentata al server nell'intestazione bearer standard:
 
 ```http
 Authorization: Bearer cak_a1b2c3d4.f0e1d2c3b4a5968778695a4b3c2d1e0f1a2b3c4d5e6f7
 ```
 
-Il livello di autenticazione API instrada qualsiasi token che inizia con `cak_` al percorso della chiave API, esegue l'hash del segreto, lo cerca per prefisso e risolve i permessi attuali della persona della chiave — quindi revocare un permesso in B1Admin ha effetto sulla richiesta successiva, e la chiave non si desincronizza mai dal ruolo.
+Il livello di autenticazione dell'API instrada qualsiasi token che inizia con `cak_` al percorso delle chiavi API, calcola l'hash del segreto, lo cerca tramite il prefisso e risolve i permessi attuali della persona associata alla chiave. Quindi, revocare un permesso in B1Admin ha effetto alla richiesta successiva, e la chiave non si disallinea mai dal ruolo.
 
-## Creazione di una chiave (B1Admin)
+## Creare una chiave (B1Admin) {#creating-a-key-b1admin}
 
-1. Accedi a B1Admin come utente con **Modifica impostazioni**.
+1. Accedi a B1Admin come utente con il permesso **Modifica impostazioni**.
 2. Apri **Impostazioni → Sviluppatore → Chiavi API**.
-3. Fai clic su **Nuova chiave API**, assegnagli un nome riconoscibile (ad es. "Zapier — donations sync"), seleziona gli ambiti che la chiave dovrebbe avere, e **Salva**.
-4. La chiave completa `cak_…` viene visualizzata **una volta** in una finestra di dialogo. Copiala nella configurazione della tua integrazione prima di chiudere — non c'è modo di recuperarla in seguito. Puoi sempre creare una nuova chiave.
+3. Clicca **Nuova chiave API**, assegna un nome riconoscibile (ad esempio "Zapier — sincronizzazione donazioni"), seleziona gli ambiti che la chiave deve avere e clicca **Salva**.
+4. La chiave completa `cak_…` viene mostrata **una sola volta** in una finestra di dialogo. Copiala nella configurazione della tua integrazione prima di chiudere: non è possibile recuperarla in seguito. Puoi sempre crearne una nuova.
 
-## Ambiti
+## Ambiti {#scopes}
 
-Un ambito **limita** quello che una chiave può fare — non può mai concedere un permesso che la persona sottostante non ha. Ambiti vuoti / assenti significa che la chiave porta il set di permessi completo della persona.
+Un ambito **limita** ciò che una chiave può fare: non può mai concedere un permesso che la persona sottostante non possiede. Nessun ambito (o nessun valore) significa che la chiave ha l'intero insieme di permessi della persona.
 
 | Ambito | Consente |
 |---|---|
-| `people:read` / `people:write` | Visualizzare / modificare persone, nuclei familiari, membri del gruppo |
-| `groups:read` / `groups:write` | Visualizzare / modificare gruppi e la loro iscrizione |
+| `people:read` / `people:write` | Visualizzare / modificare persone, nuclei familiari, membri dei gruppi |
+| `groups:read` / `groups:write` | Visualizzare / modificare gruppi e relative appartenenze |
 | `donations:read` / `donations:write` | Visualizzare / registrare donazioni |
-| `attendance:read` / `attendance:write` | Visualizzare / registrare presenza, sessioni, check-in |
-| `forms:write` | Gestire moduli (accesso in lettura è implicito in scrittura) |
-| `content:read` / `content:write` | Visualizzare / modificare contenuto del sito web, registrazioni, streaming |
-| `messaging:read` / `messaging:write` | Messaggistica in lettura; scrittura consente anche invio SMS |
-| `roles:read` / `roles:write` | Visualizzare / modificare definizioni di ruoli |
-| `settings:read` / `settings:write` | Visualizzare / modificare impostazioni della chiesa (**obbligatorio** per registrare i webhook a livello di programmazione) |
-| `offline_access` | Consenti token di aggiornamento a lunga durata (solo flussi OAuth — non ha effetto sulle chiavi API) |
+| `attendance:read` / `attendance:write` | Visualizzare / registrare presenze, sessioni, check-in |
+| `forms:write` | Gestire i moduli (l'accesso in lettura è implicito in quello in scrittura) |
+| `content:read` / `content:write` | Visualizzare / modificare contenuti del sito, iscrizioni, streaming |
+| `messaging:read` / `messaging:write` | Leggere i messaggi; la scrittura consente anche di inviare SMS |
+| `roles:read` / `roles:write` | Visualizzare / modificare le definizioni dei ruoli |
+| `settings:read` / `settings:write` | Visualizzare / modificare le impostazioni della chiesa (**necessario** per registrare i webhook in modo programmatico) |
+| `workflows:read` / `workflows:write` | Visualizzare flussi di lavoro e attività / eseguire e modificare i flussi di lavoro. L'esecuzione di un flusso di lavoro può inviare email e SMS, attivare webhook e modificare l'appartenenza ai gruppi |
+| `offline_access` | Consente token di aggiornamento di lunga durata (solo nei flussi OAuth -- non ha effetto sulle chiavi API) |
 
-Gli ambiti `write` includono implicitamente la corrispondenza `read`. I permessi di amministratore del server e del dominio non sono deliberatamente esposti come ambiti — una credenziale con scopo non può mai elevarsi all'amministrazione del sito.
+Gli ambiti `write` includono implicitamente il corrispondente `read`. I permessi di amministratore del server e del dominio non sono intenzionalmente esposti come ambiti: una credenziale con ambiti limitati non può mai ottenere privilegi di amministrazione del sito.
 
 :::tip
-Se utilizzerai la chiave per registrare webhook (ad es. per un'integrazione Zapier o Make), la chiave ha bisogno di `settings:write`. Una chiave di sola lettura `people:read` risponde silenziosamente con 403 su `POST /membership/webhooks`.
+Se userai la chiave per registrare webhook (ad esempio per un'integrazione con Zapier o Make), la chiave richiede `settings:write`. Una chiave con solo `people:read` riceve silenziosamente un errore 403 su `POST /membership/webhooks`.
 :::
 
-## Utilizzo di una chiave
+## Usare una chiave {#using-a-key}
 
-Uguale a qualsiasi token bearer — ogni endpoint autenticato accetta le chiavi API esattamente come accetta i JWT:
+Come per qualsiasi token bearer: ogni endpoint autenticato accetta le chiavi API esattamente come accetta i JWT:
 
 ```bash
 curl https://api.churchapps.org/membership/people \
   -H "Authorization: Bearer cak_a1b2c3d4.f0e1d2c3b4a5968778695a4b3c2d1e0f1a2b3c4d5e6f7"
 ```
 
-Una richiesta la cui chiave ha ambiti insufficienti risponde **403 Forbidden** con la stessa forma di qualsiasi errore di permesso negato.
+Una richiesta la cui chiave ha ambiti insufficienti riceve una risposta **403 Forbidden** con la stessa struttura di qualsiasi errore di permesso negato.
 
-## Gestione delle chiavi tramite API
+## Gestire le chiavi tramite l'API {#managing-keys-via-the-api}
 
-Tutti gli endpoint si trovano nel percorso `/membership/apiKeys` del modulo Membership e richiedono un JWT (non una chiave API) da un amministratore della chiesa con **Modifica impostazioni**.
+Tutti gli endpoint si trovano sotto il percorso `/membership/apiKeys` del modulo Membership e richiedono un JWT (non una chiave API) da parte di un amministratore della chiesa con il permesso **Modifica impostazioni**.
 
 | Metodo e percorso | Scopo |
 |---|---|
-| `GET /membership/apiKeys` | Elencare le chiavi della chiesa (nessun segreto — solo `id`, `name`, `prefix`, `scopes`, `lastUsedAt`, `expiresAt`, `createdAt`) |
-| `GET /membership/apiKeys/scopes` | Elenco di tutti i nomi di ambiti disponibili — per un'interfaccia utente di creazione chiave |
-| `POST /membership/apiKeys` | Creare una nuova chiave. Corpo: `{ "name": "...", "scopes": ["people:read"] }`. La risposta include la chiave grezza `cak_…` **una volta**. |
-| `DELETE /membership/apiKeys/:id` | Revocare una chiave — ha effetto sulla richiesta successiva |
+| `GET /membership/apiKeys` | Elenca le chiavi della chiesa (senza segreto -- solo `id`, `name`, `prefix`, `scopes`, `lastUsedAt`, `expiresAt`, `createdAt`) |
+| `GET /membership/apiKeys/scopes` | Elenco di tutti i nomi di ambito disponibili -- per un'interfaccia di creazione delle chiavi |
+| `POST /membership/apiKeys` | Crea una nuova chiave. Corpo: `{ "name": "...", "scopes": ["people:read"] }`. La risposta include la chiave grezza `cak_…` **una sola volta**. |
+| `DELETE /membership/apiKeys/:id` | Revoca una chiave -- ha effetto alla richiesta successiva |
 
-Una chiave revocata è scomparsa immediatamente — non c'è periodo di grazia.
+Una chiave revocata smette di funzionare immediatamente: non c'è alcun periodo di tolleranza.
 
-## Pratiche consigliate
+## Buone pratiche {#best-practices}
 
-- **Una chiave per integrazione.** Se qualcosa viene compromesso revochi una sola chiave senza rompere le altre.
-- **Conia gli ambiti più ristretti che funzionano.** Un'esportazione di Google Sheets ha bisogno solo di `people:read`, non di `settings:write`.
-- **Vincola la chiave a un account di servizio, non a un vero membro dello staff.** Se un membro dello staff se ne va, il loro accesso B1 finisce — e così anche le chiavi coniate sotto la loro identità.
-- **Archivia le chiavi in un gestore di segreti** (le variabili di ambiente del tuo provider di hosting, AWS Secrets Manager, ecc.) — mai nel controllo del codice sorgente.
-- **Ruota le chiavi** se sospetti esposizione: crea una nuova chiave, aggiorna l'integrazione, quindi elimina la vecchia.
+- **Una chiave per integrazione.** Se qualcosa viene compromesso, revochi una sola chiave senza interrompere le altre.
+- **Crea gli ambiti più ristretti che funzionano.** Un'esportazione verso Google Sheets richiede solo `people:read`, non `settings:write`.
+- **Associa la chiave a un account di servizio, non a un membro reale del personale.** Se un membro del personale lascia la chiesa, il suo accesso a B1 termina -- e con esso anche tutte le chiavi create con la sua identità.
+- **Conserva le chiavi in un gestore di segreti** (le variabili d'ambiente del tuo provider di hosting, AWS Secrets Manager, ecc.) -- mai nel controllo di versione.
+- **Ruota le chiavi** se sospetti un'esposizione: crea una nuova chiave, aggiorna l'integrazione, poi elimina la vecchia.
 
-## Come differisce da OAuth
+## Differenze rispetto a OAuth {#how-it-differs-from-oauth}
 
-Le chiavi API sono appropriate quando **la tua chiesa è l'unica a utilizzare l'integrazione**. Per un connettore che ha bisogno di accedere a molte chiese con il consenso esplicito di ognuna — come un'app SaaS condivisa nella comunità B1 — utilizza [OAuth e app connesse](./connected-apps).
+Le chiavi API sono adatte quando **la tua chiesa è l'unica a usare l'integrazione**. Per un connettore che deve accedere a molte chiese, ciascuna con il proprio consenso esplicito -- come un'app SaaS condivisa nella comunità B1 -- usa invece [OAuth e App connesse](./connected-apps).
 
 | | Chiave API | OAuth |
 |---|---|---|
-| Chi la installa | Un amministratore della chiesa | Ogni amministratore della chiesa autorizza l'app |
-| Intestazione Auth | `Authorization: Bearer cak_…` | `Authorization: Bearer <jwt>` |
+| Chi la installa | Un solo amministratore della chiesa | Ogni amministratore di chiesa autorizza l'app |
+| Intestazione di autenticazione | `Authorization: Bearer cak_…` | `Authorization: Bearer <jwt>` |
 | Durata del token | Fino alla revoca | Accesso ≈ 7 giorni, aggiornamento ≈ 90 giorni |
-| Meglio per | Script interni, connettori Zapier/Make/Sheets | App multi-tenant di terze parti |
+| Ideale per | Script interni, connettori Zapier/Make/Sheets | App di terze parti multi-tenant |

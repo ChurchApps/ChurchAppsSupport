@@ -1,38 +1,40 @@
 ---
-title: "Givertjeneste"
+title: "Gaver"
 ---
 
-# Givertjeneste
+# Gaver {#giving}
 
 <div class="article-intro">
 
-B1App gjør det enkelt å støtte kirken din gjennom donasjoner på nett. Enten du vil gi en rask engangsgave eller administrere faste gaver, er alt du trenger tilgjengelig fra kirkens B1.church-nettsted.
+B1App gjør det enkelt å støtte kirken din med gaver på nett. Enten du vil gi en rask engangsgave eller administrere faste gaver, finner du alt du trenger på kirkens B1.church-side.
 
 </div>
 
-## Oversikt
+## Oversikt {#overview}
 
 B1App støtter to måter å gi på:
 
-- **Offentlige donasjoner** -- Alle kan gi en donasjon uten å logge inn. Besøk kirkens donasjonsside, velg et fond og oppgi betalingsinformasjonen din. Ingen konto er nødvendig.
-- **Autentisert givertjeneste** -- Når du [logger inn](../getting-started/logging-in.md) før du gir, kobles gavene dine til kontoen din. Dette gir deg tilgang til fullstendig donasjonshistorikk, utskrivbare giveroppgaver, administrasjon av faste gaver og lagrede betalingsmetoder.
+- **Offentlige gaver** – Alle kan gi en gave uten å logge inn. Gå til kirkens gaveside, velg et fond og skriv inn betalingsopplysningene dine. Ingen konto er nødvendig.
+- **Innlogget giving** – Når du [logger inn](../getting-started/logging-in.md) før du gir, kobles gavene dine til kontoen din. Da får du tilgang til hele gavehistorikken din, utskrivbare gavebekreftelser, administrasjon av gjentakende gaver og lagrede betalingsmetoder.
 
-## Hva Du Kan Gjøre
+## Hva du kan gjøre {#what-you-can-do}
 
-Her er hva som er tilgjengelig i givertjenesteseksjonen:
+Her er hva som er tilgjengelig i gaveseksjonen:
 
-- **Gi til spesifikke fond** -- Kirken din kan ha flere fond, som et Generelt Fond, Bygningsfond eller Misjonsfond. Du kan velge hvilket fond du vil rette donasjonen til.
-- **Betal med kort eller bankkonto** -- Donasjoner behandles sikkert gjennom Stripe. Du kan betale med kreditt- eller debetkort. Instruksjoner for ACH-bankbetaling er også tilgjengelige.
-- **Sett opp faste gaver** -- Innloggede medlemmer kan planlegge automatiske faste gaver slik at du aldri går glipp av en gave.
-- **Se donasjonshistorikk** -- Se en fullstendig liste over dine tidligere donasjoner, inkludert dato, metode, fond og beløp.
-- **Skriv ut giveroppgaver** -- Generer utskrivbare giveroppgaver for inneværende år eller forrige år for dine skatteregistre.
-- **Administrer betalingsmetoder** -- Lagre og administrer betalingsmetodene dine for raskere givertjeneste i fremtiden.
+- **Gi til bestemte fond** – Kirken din har kanskje flere fond, for eksempel Generalfondet, Bygningsfondet eller Misjonsfondet. Du kan velge hvilket fond gaven din skal gå til.
+- **Betal med kort eller bankkonto** – Gaver behandles trygt gjennom Stripe. Du kan betale med kredittkort eller debetkort. Instruksjoner for banketaling (ACH) er også tilgjengelige.
+- **Sett opp gjentakende gaver** – Innloggede medlemmer kan planlegge automatiske, gjentakende gaver, slik at du aldri går glipp av en gave.
+- **Se gavehistorikk** – Se en fullstendig liste over tidligere gaver, inkludert dato, metode, fond og beløp.
+- **Skriv ut gavebekreftelser** – Lag utskrivbare gavebekreftelser for inneværende år eller tidligere år til skattemeldingen din.
+- **Administrer betalingsmetoder** – Lagre og administrer betalingsmetodene dine for raskere giving i fremtiden.
+
+Kirken din kan begrense hvilke år med gavehistorikk medlemmene ser, eller skjule den, og kan legge til en gaveinformasjon som vises på siden Gaver og på bekreftelsene. Se [Gavehistorikk](./donation-history.md#if-your-church-limits-giving-history).
 
 :::info
-Donasjoner behandles sikkert gjennom **Stripe**. Betalingsinformasjonen din lagres aldri på B1.church-servere.
+Gaver behandles trygt gjennom **Stripe**. Betalingsopplysningene dine lagres aldri på B1.church sine servere.
 :::
 
-## Neste Steg
+## Neste steg {#next-steps}
 
-- [Gi en Donasjon](./making-donations.md) -- Lær hvordan du gir, med eller uten konto
-- [Donasjonshistorikk](./donation-history.md) -- Se dine tidligere donasjoner og skriv ut giveroppgaver
+- [Gi en gave](./making-donations.md) – Lær hvordan du gir, med eller uten konto
+- [Gavehistorikk](./donation-history.md) – Se tidligere gaver og skriv ut gavebekreftelser

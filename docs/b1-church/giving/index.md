@@ -28,6 +28,8 @@ Here is what is available in the giving section:
 - **Print giving statements** -- Generate printable giving statements for the current year or previous year for your tax records.
 - **Manage payment methods** -- Save and manage your payment methods for faster giving in the future.
 
+Your church can limit which years of giving history members see, or hide it, and can add a giving note shown on your Giving page and statements. See [Donation History](./donation-history.md#if-your-church-limits-giving-history).
+
 :::info
 Donations are processed securely through **Stripe**. Your payment information is never stored on B1.church servers.
 :::

@@ -1,90 +1,90 @@
 ---
-title: "Rappels d'Événement"
+title: "Rappels d'événements"
 ---
 
-# Rappels d'Événement
+# Rappels d'événements {#event-reminders}
 
 <div class="article-intro">
 
-Les rappels d'événement avertissent automatiquement les bonnes personnes avant un événement — par exemple, "Ne le manquez pas! L'atelier de soins de santé commence demain à 9h00." Vous configurez un rappel une fois sur l'événement, et B1 l'envoie selon l'horaire via des notifications push, des e-mails et, si votre église a configuré les textos, des messages texte. Les membres peuvent contrôler quels rappels ils reçoivent dans leurs propres [Préférences de Notification](../../b1-church/getting-started/notification-preferences).
+Les rappels d'événements avertissent automatiquement les bonnes personnes avant un événement -- par exemple, « Ne manquez pas ça ! L'atelier sur la santé commence demain à 9 h. » Vous configurez un rappel une seule fois sur l'événement, et B1 l'envoie à l'heure prévue par notification push, par courriel et, si votre église a configuré la messagerie texte, par texto. Les membres peuvent choisir les rappels qu'ils reçoivent depuis leurs propres [préférences de notification](../../b1-church/getting-started/notification-preferences).
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Créez l'événement pour lequel vous souhaitez rappeler les gens (voir [Création de Calendriers](creating-calendars))
-- Pour atteindre les participants inscrits, [activez l'inscription](creating-calendars) sur l'événement
-- Pour atteindre un groupe entier, assurez-vous que l'événement appartient à un [groupe](../groups/creating-groups) avec des membres
+- Créez l'événement dont vous voulez rappeler la tenue (voir [Créer des calendriers](creating-calendars))
+- Pour joindre les personnes inscrites, [activez l'inscription](creating-calendars) pour l'événement
+- Pour joindre tout un groupe, assurez-vous que l'événement appartient à un [groupe](../groups/creating-groups) comptant des membres
 
 </div>
 
-## Configuration d'un Rappel
+## Configurer un rappel {#setting-up-a-reminder}
 
 Vous configurez les rappels dans la section **Rappels** de l'événement.
 
 - Lorsque vous **créez un nouvel événement**, développez la section **Rappels** dans l'éditeur d'événement avant d'enregistrer.
-- Pour un **événement existant**, ouvrez la page **Détails de l'Inscription** de l'événement (à partir de la section **Inscriptions**) pour ajouter ou modifier son rappel.
+- Pour un **événement existant**, ouvrez la page **Détails de l'inscription** de l'événement (depuis la section **Inscriptions**) pour ajouter ou modifier son rappel.
 
 1. Activez **Activer les rappels**.
-2. Choisissez **Quand** envoyer. Choisissez jusqu'à trois timings : **7 jours avant**, **3 jours avant**, **1 jour avant**, et **Le jour même**.
-3. Définissez l'**Heure de la journée** à laquelle le rappel doit être envoyé (par défaut **9h00**, dans le fuseau horaire local de votre église).
-4. Choisissez **Qui** devrait être rappelé (voir [Qui Gets Reminded](#qui-est-rappelé) ci-dessous).
-5. Ajoutez éventuellement un **Message**. Laissez-le vide pour utiliser la formulation par défaut, ou écrivez la vôtre -- vous pouvez inclure `{{eventTitle}}` et il sera remplacé par le nom de l'événement.
-6. Choisissez les **Canaux** : notification **Push**, **Email**, et, si votre église a un [fournisseur de textos](../settings/church-settings.md#texting) connecté, **Texto**.
+2. Choisissez le moment **Quand** envoyer. Sélectionnez jusqu'à trois moments : **7 jours avant**, **3 jours avant**, **1 jour avant** et **Le jour même**.
+3. Définissez l'**heure** d'envoi du rappel (par défaut **9 h 00**, selon le [fuseau horaire](../settings/church-settings.md#time-zone) de votre église).
+4. Choisissez **Qui** doit recevoir le rappel (voir [Qui reçoit le rappel](#who-gets-reminded) ci-dessous).
+5. Ajoutez facultativement un **message**. Laissez-le vide pour utiliser le texte par défaut, ou rédigez le vôtre -- vous pouvez inclure `{{eventTitle}}`, qui sera remplacé par le nom de l'événement.
+6. Choisissez les **canaux** : notification **Push**, **Courriel** et, si votre église a connecté un [fournisseur de messagerie texte](../settings/church-settings.md#texting), **Texto**.
 7. Enregistrez l'événement.
 
-Au fur et à mesure que vous apportez des modifications, un **aperçu en direct** affiche approximativement combien de personnes seront rappelées, combien de participants ne peuvent pas être contactés, et les prochaines heures d'envoi prévues -- pour que vous puissiez confirmer que le rappel semble correct avant d'enregistrer.
+Au fil de vos modifications, un **aperçu en direct** indique approximativement combien de personnes seront jointes, combien de participants ne peuvent pas être rejoints, et les prochaines heures d'envoi prévues -- vous pouvez ainsi vérifier que le rappel est correct avant d'enregistrer.
 
-## Qui Est Rappelé
+## Qui reçoit le rappel {#who-gets-reminded}
 
-Le paramètre **Qui** contrôle à qui le rappel va :
+Le paramètre **Qui** détermine à qui le rappel est envoyé :
 
-- **Participants uniquement** -- Tous ceux qui se sont inscrits à l'événement et qui sont liés à un dossier de personne. C'est la valeur par défaut lorsque l'événement a l'inscription activée, donc un rappel pour un petit événement inscrit ne va jamais accidentellement à un groupe entier.
-- **Chefs / participants uniquement** -- Un rappel par inscription (la personne qui s'est inscrite), plutôt que chaque membre de la famille sur l'inscription.
-- **Membres du groupe** -- Tous dans le groupe de l'événement. C'est la valeur par défaut lorsque l'événement n'utilise pas l'inscription.
-- **Auto** -- Utilise les participants lorsque l'inscription est activée, sinon le groupe.
+- **Personnes inscrites seulement** -- Toutes les personnes inscrites à l'événement et liées à une fiche de personne. C'est la valeur par défaut lorsque l'inscription est activée pour l'événement, afin qu'un rappel pour un petit événement avec inscriptions ne soit jamais envoyé accidentellement à tout un groupe.
+- **Responsables / personnes inscrites seulement** -- Un rappel par inscription (la personne qui s'est inscrite), plutôt que chaque membre de la famille figurant sur l'inscription.
+- **Membres du groupe** -- Toutes les personnes du groupe de l'événement. C'est la valeur par défaut lorsque l'événement n'utilise pas d'inscription.
+- **Automatique** -- Utilise les personnes inscrites lorsque l'inscription est activée, sinon le groupe.
 
 :::info
-Les invités ajoutés par nom uniquement (sans dossier de personne lié) ne peuvent pas recevoir de rappel, car il n'y a pas de compte, d'appareil ou d'e-mail pour envoyer à. L'aperçu vous dit combien de participants tombent dans ce groupe pour qu'il n'y ait pas de surprises. Les membres qui se sont désinscrites de la communication sont également ignorés.
+Les invités ajoutés uniquement par leur nom (sans fiche de personne liée) ne peuvent pas recevoir de rappel, car il n'y a ni compte, ni appareil, ni courriel vers lequel l'envoyer. L'aperçu indique combien de participants entrent dans cette catégorie pour qu'il n'y ait pas de surprise. Les membres qui ont refusé les communications sont également ignorés.
 :::
 
-## Quand Les Rappels Sont Envoyés
+## Quand les rappels sont envoyés {#when-reminders-are-sent}
 
-- Les rappels se déclenchent à l'**heure de la journée que vous choisissez**, dans le fuseau horaire local de votre église, à chacun des décalages que vous avez sélectionnés.
+- Les rappels partent à **l'heure que vous avez choisie**, selon le fuseau horaire local de votre église, pour chacun des décalages sélectionnés.
 - Si vous **modifiez la date ou l'heure de l'événement**, les rappels en attente sont automatiquement reprogrammés -- vous n'avez pas besoin de modifier le rappel.
-- Si vous **supprimez l'événement** (ou annulez une occurrence unique d'un événement récurrent), ses rappels en attente sont automatiquement annulés.
+- Si vous **supprimez l'événement** (ou annulez une seule occurrence d'un événement récurrent), ses rappels en attente sont automatiquement annulés.
 - Les événements récurrents sont gérés automatiquement : chaque occurrence à venir reçoit son propre rappel.
 
 :::tip
-Les rappels sont envoyés **push en premier, avec e-mail en secours**. Si un membre a les notifications push activées, il recevra un push ; sinon, il recevra un e-mail à la place. Les membres choisissent les canaux qu'ils veulent par type de notification dans leurs [Préférences de Notification](../../b1-church/getting-started/notification-preferences).
+Les rappels sont envoyés **par push en premier, avec le courriel en solution de repli**. Si un membre a activé les notifications push, il reçoit un push ; sinon, il reçoit un courriel. Les membres choisissent les canaux qu'ils souhaitent pour chaque type de notification dans leurs [préférences de notification](../../b1-church/getting-started/notification-preferences).
 :::
 
 ## Rappels par texto {#text-reminders}
 
-Le canal **Texto** n'apparaît que lorsque votre église a un fournisseur de textos connecté. Les textos sont envoyés par le fournisseur de textos de votre église, et chaque texto peut coûter à votre église. Ils sont envoyés en plus de tout rappel push ou e-mail, et uniquement aux personnes qui :
+Le canal **Texto** n'apparaît que lorsque votre église a connecté un fournisseur de messagerie texte. Les textos sont envoyés par le fournisseur de votre église, et chaque texto peut coûter de l'argent à votre église. Ils sont envoyés en plus de tout rappel push ou par courriel, et uniquement aux personnes qui :
 
-- ont activé les **Messages texte** dans leurs [Préférences de notification](../../b1-church/getting-started/notification-preferences), et
+- ont activé les **Messages texte** dans leurs [préférences de notification](../../b1-church/getting-started/notification-preferences), et
 - ont un numéro de téléphone mobile dans leur profil.
 
-Chaque texto commence par le nom de votre église, tient en un seul message texte et se termine par « Répondez STOP pour vous désabonner. » Quiconque répond STOP cesse de recevoir des textos de votre église. Pour que les réponses STOP parviennent à B1, collez l'**URL du webhook STOP entrant** depuis vos [paramètres de textos](../settings/church-settings.md#texting) dans le webhook de messages entrants de votre fournisseur.
+Chaque texto commence par le nom de votre église, tient en un seul message et se termine par « Répondez STOP pour vous désabonner ». Toute personne qui répond STOP cesse de recevoir des textos de votre église. Pour que les réponses STOP parviennent à B1, collez l'**URL du webhook de réponse (STOP)** depuis vos [paramètres de messagerie texte](../settings/church-settings.md#texting) dans le webhook de messages entrants de votre fournisseur.
 
-## Ce Que Les Membres Peuvent Contrôler
+## Ce que les membres peuvent contrôler {#what-members-can-control}
 
-Les rappels respectent toujours les [Préférences de Notification](../../b1-church/getting-started/notification-preferences) de chaque membre. Un membre peut :
+Les rappels respectent toujours les [préférences de notification](../../b1-church/getting-started/notification-preferences) de chaque membre. Un membre peut :
 
-- Activer/désactiver les **Rappels d'Événement** pour le push, l'e-mail ou le texto tout en gardant les autres notifications activées.
+- Désactiver les **Rappels d'événements** pour le push, le courriel ou le texto tout en gardant les autres notifications actives.
 - Activer ou désactiver les rappels par texto avec **Messages texte**.
-- Définir des **heures calmes** pour que les notifications non urgentes attendent une heure raisonnable.
+- Définir des **heures calmes** pour que les notifications non urgentes attendent un moment raisonnable.
 
-Vous ne pouvez pas ignorer le choix d'un membre de se désinscrire des rappels d'événement -- cela maintient B1 conforme aux règles anti-spam et garde les membres en contrôle de leur boîte de réception.
+Vous ne pouvez pas passer outre le choix d'un membre de se désabonner des rappels d'événements -- cela permet à B1 de respecter les règles anti-pourriel et de laisser les membres contrôler leur boîte de réception.
 
-## Rappels de Service
+## Rappels pour le service {#serving-reminders}
 
-Les bénévoles programmés sur un plan reçoivent un **rappel de service** séparé avec les détails du plan et, lorsqu'ils n'ont pas encore répondu, les boutons **Accepter / Refuser** directement dans l'e-mail. Ces rappels sont configurés sur le type de plan plutôt que sur un événement de calendrier, et peuvent aussi être envoyés par texto -- voir [Rappels des bénévoles](../serving/plans#volunteer-reminders) et [Bénévoles du Dimanche](../guides/sunday-volunteers) pour voir comment la programmation et les rappels des bénévoles fonctionnent.
+Les bénévoles prévus dans un plan reçoivent un **rappel de service** distinct, avec les détails du plan et, s'ils n'ont pas encore répondu, des boutons **Accepter / Refuser** directement dans le courriel. Ces rappels se configurent sur le type de plan plutôt que sur un événement du calendrier, et peuvent aussi être envoyés par texto -- voir [Rappels aux bénévoles](../serving/plans#volunteer-reminders) et [Bénévoles du dimanche](../guides/sunday-volunteers) pour savoir comment fonctionnent la planification des bénévoles et leurs rappels.
 
-## Étapes Suivantes
+## Étapes suivantes {#next-steps}
 
-- [Préférences de Notification](../../b1-church/getting-started/notification-preferences) -- Ce que les membres peuvent contrôler
-- [Guide d'Inscription aux Événements](../guides/event-registration) -- Configurer l'inscription pour que les rappels puissent atteindre les participants
-- [Création de Calendriers](creating-calendars) -- Retour à la configuration du calendrier
+- [Préférences de notification](../../b1-church/getting-started/notification-preferences) -- ce que les membres peuvent contrôler
+- [Guide d'inscription aux événements](../guides/event-registration) -- configurer l'inscription pour que les rappels puissent joindre les participants
+- [Créer des calendriers](creating-calendars) -- revenir à la configuration des calendriers

@@ -6,20 +6,20 @@ title: "API-Schlüssel"
 
 <div class="article-intro">
 
-API-Schlüssel (persönliche Zugriffstoken) sind der einfachste Weg, sich gegenüber der B1-API aus einem serverseitigen Skript, einem Drittanbieter-Connector (Zapier, Make, Google Sheets) oder überall dort zu authentifizieren, wo ein vollständiger OAuth-Flow übertrieben wäre. Ein Schlüssel ist an eine bestimmte Person in einer bestimmten Kirche gebunden und erbt die Berechtigungen dieser Person, eingeschränkt durch eine optionale Menge von Scopes.
+API-Schlüssel (persönliche Zugriffstoken) sind der einfachste Weg, sich von einem serverseitigen Skript, einem Drittanbieter-Connector (Zapier, Make, Google Tabellen) oder überall dort an der B1-API anzumelden, wo ein vollständiger OAuth-Ablauf übertrieben wäre. Ein Schlüssel ist an eine bestimmte Person in einer bestimmten Kirche gebunden und übernimmt deren Berechtigungen, die optional durch eine Auswahl von Scopes eingeschränkt werden können.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Ein Kirchen-Admin mit der Berechtigung **Einstellungen bearbeiten** erstellt und verwaltet Schlüssel
-- Der rohe Schlüssel wird bei der Erstellung **einmalig** angezeigt — speichern Sie ihn sofort an einem sicheren Ort
-- Alle API-Anfragen müssen **HTTPS** verwenden
+- Eine Kirchenadministration mit der Berechtigung **Einstellungen bearbeiten** erstellt und verwaltet Schlüssel.
+- Der Schlüssel wird beim Erstellen **einmal** angezeigt – bewahren Sie ihn sofort an einem sicheren Ort auf.
+- Alle API-Anfragen müssen **HTTPS** verwenden.
 
 </div>
 
-## Schlüsselformat
+## Format des Schlüssels
 
 Ein B1-API-Schlüssel sieht so aus:
 
@@ -27,87 +27,88 @@ Ein B1-API-Schlüssel sieht so aus:
 cak_<prefix>.<secret>
 ```
 
-- `cak_` — fester Bezeichner (das API-Schlüssel-Präfix, auf das die Auth-Schicht abgleicht)
-- `<prefix>` — 8-stelliges öffentliches Nachschlagesegment
-- `<secret>` — 48-stelliges Geheimnis; serverseitig wird nur ein SHA-256-Hash gespeichert
+- `cak_` – feste Kennung (das Präfix, auf das die Authentifizierungsschicht prüft)
+- `<prefix>` – öffentlicher Suchabschnitt mit 8 Zeichen
+- `<secret>` – Geheimnis mit 48 Zeichen; auf dem Server wird nur ein SHA-256-Hash gespeichert
 
-Der vollständige Schlüssel wird dem Server im standardmäßigen Bearer-Header übergeben:
+Der vollständige Schlüssel wird dem Server im üblichen Bearer-Header übergeben:
 
 ```http
 Authorization: Bearer cak_a1b2c3d4.f0e1d2c3b4a5968778695a4b3c2d1e0f1a2b3c4d5e6f7
 ```
 
-Die API-Auth-Schicht leitet jedes Token, das mit `cak_` beginnt, auf den API-Schlüssel-Pfad um, hasht das Geheimnis, sucht es anhand des Präfixes nach und löst die aktuellen Berechtigungen der zum Schlüssel gehörenden Person auf — das Widerrufen einer Berechtigung in B1Admin wirkt sich also bereits auf die nächste Anfrage aus, und der Schlüssel gerät nie außer Sync mit der Rolle.
+Die Authentifizierungsschicht der API leitet jedes Token, das mit `cak_` beginnt, an den API-Schlüssel-Pfad weiter, bildet einen Hash des Geheimnisses, sucht den Schlüssel anhand des Präfixes und ermittelt die aktuellen Berechtigungen der Person hinter dem Schlüssel. Wird also eine Berechtigung in B1 Admin entzogen, gilt dies bereits bei der nächsten Anfrage, und der Schlüssel läuft nie aus dem Takt mit der Rolle.
 
-## Einen Schlüssel erstellen (B1Admin)
+## Einen Schlüssel erstellen (B1 Admin)
 
-1. Melden Sie sich bei B1Admin als Benutzer mit **Einstellungen bearbeiten** an.
+1. Melden Sie sich in B1 Admin als Benutzer mit der Berechtigung **Einstellungen bearbeiten** an.
 2. Öffnen Sie **Einstellungen → Entwickler → API-Schlüssel**.
-3. Klicken Sie auf **Neuer API-Schlüssel**, geben Sie ihm einen erkennbaren Namen (z. B. "Zapier — Spendenabgleich"), wählen Sie die Scopes aus, die der Schlüssel haben soll, und klicken Sie auf **Speichern**.
-4. Der vollständige `cak_…`-Schlüssel wird **einmalig** in einem Dialog angezeigt. Kopieren Sie ihn in die Konfiguration Ihrer Integration, bevor Sie den Dialog schließen — es gibt keine Möglichkeit, ihn später abzurufen. Sie können jederzeit einen neuen Schlüssel erstellen.
+3. Klicken Sie auf **Neuer API-Schlüssel**, geben Sie ihm einen eindeutigen Namen (z. B. „Zapier – Spendenabgleich“), wählen Sie die Scopes aus, die der Schlüssel haben soll, und klicken Sie auf **Speichern**.
+4. Der vollständige Schlüssel `cak_…` wird in einem Dialog **einmal** angezeigt. Kopieren Sie ihn in die Konfiguration Ihrer Integration, bevor Sie den Dialog schließen – später lässt er sich nicht mehr abrufen. Sie können jederzeit einen neuen Schlüssel erstellen.
 
-## Scopes
+## Scopes {#scopes}
 
-Ein Scope **schränkt ein**, was ein Schlüssel tun kann — er kann nie eine Berechtigung gewähren, die die zugrunde liegende Person nicht hat. Leere/keine Scopes bedeutet, dass der Schlüssel den vollständigen Berechtigungssatz der Person trägt.
+Ein Scope **schränkt** ein, was ein Schlüssel tun kann – er kann niemals eine Berechtigung gewähren, die die zugrunde liegende Person nicht besitzt. Ohne Scopes (leere Auswahl) umfasst der Schlüssel den vollständigen Berechtigungssatz der Person.
 
 | Scope | Erlaubt |
 |---|---|
-| `people:read` / `people:write` | Personen, Haushalte, Gruppenmitglieder ansehen / bearbeiten |
-| `groups:read` / `groups:write` | Gruppen und deren Mitgliedschaft ansehen / bearbeiten |
-| `donations:read` / `donations:write` | Spenden ansehen / erfassen |
-| `attendance:read` / `attendance:write` | Anwesenheit, Sitzungen, Check-ins ansehen / erfassen |
-| `forms:write` | Formulare verwalten (Lesezugriff ist im Schreibzugriff impliziert) |
-| `content:read` / `content:write` | Website-Inhalte, Registrierungen, Streaming ansehen / bearbeiten |
-| `messaging:read` / `messaging:write` | Nachrichten lesen; Schreiben erlaubt auch das Senden von SMS |
-| `roles:read` / `roles:write` | Rollendefinitionen ansehen / bearbeiten |
-| `settings:read` / `settings:write` | Kircheneinstellungen ansehen / bearbeiten (**erforderlich**, um Webhooks programmatisch zu registrieren) |
-| `offline_access` | Erlaubt langlebige Refresh Token (nur OAuth-Flows — hat keine Wirkung auf API-Schlüssel) |
+| `people:read` / `people:write` | Personen, Haushalte und Gruppenmitglieder anzeigen / bearbeiten |
+| `groups:read` / `groups:write` | Gruppen und ihre Mitgliedschaft anzeigen / bearbeiten |
+| `donations:read` / `donations:write` | Spenden anzeigen / erfassen |
+| `attendance:read` / `attendance:write` | Anwesenheit, Sitzungen und Check-ins anzeigen / erfassen |
+| `forms:write` | Formulare verwalten (Lesezugriff ist im Schreibzugriff enthalten) |
+| `content:read` / `content:write` | Website-Inhalte, Anmeldungen und Streaming anzeigen / bearbeiten |
+| `messaging:read` / `messaging:write` | Nachrichten lesen; Schreibzugriff erlaubt außerdem den Versand von SMS |
+| `roles:read` / `roles:write` | Rollendefinitionen anzeigen / bearbeiten |
+| `settings:read` / `settings:write` | Kircheneinstellungen anzeigen / bearbeiten (**erforderlich**, um Webhooks programmatisch zu registrieren) |
+| `workflows:read` / `workflows:write` | Workflows und Aufgaben anzeigen / Workflows ausführen und bearbeiten. Das Ausführen eines Workflows kann E-Mails und SMS senden, Webhooks auslösen und Gruppenmitgliedschaften ändern |
+| `offline_access` | Langlebige Refresh-Token erlauben (nur für OAuth-Abläufe; hat bei API-Schlüsseln keine Wirkung) |
 
-`write`-Scopes schließen den passenden `read`-Scope implizit ein. Server- und Domain-Admin-Berechtigungen werden absichtlich nicht als Scopes verfügbar gemacht — ein gescoptes Credential kann sich niemals zur Standortverwaltung eskalieren.
+`write`-Scopes enthalten implizit den passenden `read`-Scope. Administrative Berechtigungen auf Server- und Domänenebene werden bewusst nicht als Scopes angeboten – ein eingeschränktes Zugangsdatum kann niemals zur Website-Administration aufsteigen.
 
 :::tip
-Wenn Sie den Schlüssel verwenden, um Webhooks zu registrieren (z. B. für eine Zapier- oder Make-Integration), benötigt der Schlüssel `settings:write`. Ein Schlüssel mit nur `people:read` schlägt bei `POST /membership/webhooks` still mit 403 fehl.
+Wenn Sie den Schlüssel zum Registrieren von Webhooks verwenden (etwa für eine Zapier- oder Make-Integration), benötigt der Schlüssel `settings:write`. Ein Schlüssel nur mit `people:read` scheitert bei `POST /membership/webhooks` stillschweigend mit 403.
 :::
 
 ## Einen Schlüssel verwenden
 
-Wie jedes Bearer-Token — jeder authentifizierte Endpunkt akzeptiert API-Schlüssel genau so wie JWTs:
+Wie bei jedem Bearer-Token: Jeder authentifizierte Endpunkt akzeptiert API-Schlüssel genauso wie JWTs.
 
 ```bash
 curl https://api.churchapps.org/membership/people \
   -H "Authorization: Bearer cak_a1b2c3d4.f0e1d2c3b4a5968778695a4b3c2d1e0f1a2b3c4d5e6f7"
 ```
 
-Eine Anfrage, deren Schlüssel unzureichende Scopes hat, antwortet mit **403 Forbidden** in derselben Form, die jeder Fehler bei verweigerter Berechtigung verwendet.
+Hat der Schlüssel nicht die nötigen Scopes, antwortet die Anfrage mit **403 Forbidden** im gleichen Format wie jeder andere Berechtigungsfehler.
 
 ## Schlüssel über die API verwalten
 
-Alle Endpunkte liegen unter dem Pfad `/membership/apiKeys` des Membership-Moduls und erfordern ein JWT (kein API-Schlüssel) eines Kirchen-Admins mit **Einstellungen bearbeiten**.
+Alle Endpunkte liegen unter dem Pfad `/membership/apiKeys` des Membership-Moduls und erfordern ein JWT (keinen API-Schlüssel) einer Kirchenadministration mit der Berechtigung **Einstellungen bearbeiten**.
 
 | Methode & Pfad | Zweck |
 |---|---|
-| `GET /membership/apiKeys` | Listet die Schlüssel der Kirche auf (kein Geheimnis — nur `id`, `name`, `prefix`, `scopes`, `lastUsedAt`, `expiresAt`, `createdAt`) |
-| `GET /membership/apiKeys/scopes` | Liste aller verfügbaren Scope-Namen — für eine UI zur Schlüsselerstellung |
-| `POST /membership/apiKeys` | Erstellt einen neuen Schlüssel. Body: `{ "name": "...", "scopes": ["people:read"] }`. Die Antwort enthält den rohen `cak_…`-Schlüssel **einmalig**. |
-| `DELETE /membership/apiKeys/:id` | Widerruft einen Schlüssel — wirkt sich auf die nächste Anfrage aus |
+| `GET /membership/apiKeys` | Listet die Schlüssel der Kirche auf (ohne Geheimnis – nur `id`, `name`, `prefix`, `scopes`, `lastUsedAt`, `expiresAt`, `createdAt`) |
+| `GET /membership/apiKeys/scopes` | Liste aller verfügbaren Scope-Namen – für eine Oberfläche zum Erstellen von Schlüsseln |
+| `POST /membership/apiKeys` | Erstellt einen neuen Schlüssel. Body: `{ "name": "...", "scopes": ["people:read"] }`. Die Antwort enthält den vollständigen Schlüssel `cak_…` **einmal**. |
+| `DELETE /membership/apiKeys/:id` | Widerruft einen Schlüssel – gilt ab der nächsten Anfrage |
 
-Ein widerrufener Schlüssel ist sofort weg — es gibt keine Übergangsfrist.
+Ein widerrufener Schlüssel ist sofort ungültig – es gibt keine Schonfrist.
 
-## Best Practices
+## Bewährte Vorgehensweisen
 
-- **Ein Schlüssel pro Integration.** Wenn etwas kompromittiert wird, widerrufen Sie einen einzelnen Schlüssel, ohne die anderen zu beeinträchtigen.
-- **Erstellen Sie die engsten Scopes, die funktionieren.** Ein Google-Sheets-Export benötigt nur `people:read`, nicht `settings:write`.
-- **Binden Sie den Schlüssel an ein Dienstkonto, nicht an ein echtes Teammitglied.** Wenn ein Teammitglied ausscheidet, endet dessen B1-Zugriff — und damit auch alle unter seiner Identität erstellten Schlüssel.
-- **Speichern Sie Schlüssel in einem Secret-Manager** (den Umgebungsvariablen Ihres Hosting-Anbieters, AWS Secrets Manager usw.) — niemals in der Versionskontrolle.
-- **Rotieren Sie Schlüssel**, wenn Sie eine Offenlegung vermuten: Erstellen Sie einen neuen Schlüssel, aktualisieren Sie die Integration und löschen Sie dann den alten.
+- **Ein Schlüssel pro Integration.** Wird einer kompromittiert, widerrufen Sie nur diesen einen, ohne die anderen zu unterbrechen.
+- **Vergeben Sie die engsten Scopes, die funktionieren.** Ein Export nach Google Tabellen braucht nur `people:read`, nicht `settings:write`.
+- **Binden Sie den Schlüssel an ein Dienstkonto, nicht an eine echte Mitarbeiterperson.** Verlässt eine Mitarbeiterin die Kirche, endet ihr Zugang zu B1 – und mit ihm alle Schlüssel, die unter ihrer Identität erstellt wurden.
+- **Bewahren Sie Schlüssel in einem Geheimnisverwalter auf** (Umgebungsvariablen Ihres Hostinganbieters, AWS Secrets Manager usw.) – niemals in der Quellcodeverwaltung.
+- **Tauschen Sie Schlüssel aus**, wenn Sie einen Verlust vermuten: Erstellen Sie einen neuen Schlüssel, aktualisieren Sie die Integration und löschen Sie danach den alten.
 
 ## Unterschied zu OAuth
 
-API-Schlüssel sind angemessen, wenn **Ihre Kirche die einzige ist, die die Integration nutzt**. Für einen Connector, der mit expliziter Zustimmung jeder einzelnen Kirche auf viele Kirchen zugreifen muss — wie eine SaaS-App, die in der gesamten B1-Community geteilt wird — verwenden Sie stattdessen [OAuth und Connected Apps](./connected-apps).
+API-Schlüssel eignen sich, wenn **Ihre Kirche die einzige ist, die die Integration nutzt**. Für einen Connector, der auf viele Kirchen mit jeweils ausdrücklicher Zustimmung zugreifen muss – etwa eine SaaS-App, die von der B1-Gemeinschaft genutzt wird – verwenden Sie stattdessen [OAuth und verbundene Apps](./connected-apps).
 
 | | API-Schlüssel | OAuth |
 |---|---|---|
-| Wer installiert es | Ein Kirchen-Admin | Jeder Kirchen-Admin autorisiert die App |
-| Auth-Header | `Authorization: Bearer cak_…` | `Authorization: Bearer <jwt>` |
-| Token-Lebensdauer | Bis widerrufen | Zugriff ≈ 7 Tage, Refresh ≈ 90 Tage |
-| Am besten für | Interne Skripte, Zapier-/Make-/Sheets-Connectors | Multi-Tenant-Drittanbieter-Apps |
+| Wer installiert ihn | Eine Kirchenadministration | Jede Kirchenadministration autorisiert die App |
+| Authentifizierungs-Header | `Authorization: Bearer cak_…` | `Authorization: Bearer <jwt>` |
+| Gültigkeitsdauer des Tokens | Bis zum Widerruf | Zugriff ca. 7 Tage, Refresh ca. 90 Tage |
+| Am besten für | Interne Skripte, Zapier-/Make-/Sheets-Connectoren | Mandantenfähige Drittanbieter-Apps |

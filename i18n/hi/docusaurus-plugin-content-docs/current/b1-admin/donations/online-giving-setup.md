@@ -1,155 +1,155 @@
 ---
-title: "ऑनलाइन दान सेटअप"
+title: "ऑनलाइन giving सेटअप"
 ---
 
-# ऑनलाइन दान सेटअप
+# ऑनलाइन giving सेटअप {#online-giving-setup}
 
 <div class="article-intro">
 
-B1 Admin **Stripe**, **PayPal**, **Kingdom Funding**, और **Paystack** (अफ्रीका के चर्चों के लिए) के साथ एकीकृत है ताकि आपके सदस्य आपकी B1.church साइट के माध्यम से ऑनलाइन दान दे सकें। एक बार कॉन्फ़िगर करने के बाद, ऑनलाइन दान स्वचालित रूप से आपके दान रिकॉर्ड में मैन्युअल रूप से दर्ज उपहारों के साथ दिखाई देता है, सबकुछ एक सिस्टम में रखता है।
+B1 Admin **Stripe**, **PayPal**, **Kingdom Funding**, और **Paystack** (अफ्रीका के churches के लिए) के साथ एकीकृत होता है, ताकि आपके सदस्य आपकी B1.church साइट के माध्यम से online दे सकें। एक बार कॉन्फ़िगर होने पर, online दान मैन्युअली दर्ज किए गए दानों के साथ आपके donation records में अपने-आप दिखते हैं, जिससे सब कुछ एक ही system में रहता है।
 
 </div>
 
 <div class="prereqs">
-<h4>शुरुआत करने से पहले</h4>
+<h4>शुरू करने से पहले</h4>
 
-- अपने [दान फंड](funds.md) सेट अप करें ताकि दाता अपने उपहार को नामित कर सकें
-- [stripe.com](https://stripe.com) पर एक Stripe खाता बनाएं और इसे सक्रिय करें (इसे परीक्षण मोड से बाहर निकालें)
-- अपने B1 Admin लॉगिन क्रेडेंशियल तैयार रखें
+- अपने [donation funds](funds.md) सेट करें ताकि दानदाता अपने दान किसी fund को तय कर सकें
+- [stripe.com](https://stripe.com) पर एक Stripe account बनाएं और उसे सक्रिय करें (test mode से बाहर निकालें)
+- अपने B1 Admin login credentials तैयार रखें
 
 </div>
 
-## Stripe सेटअप करना
+## Stripe सेट करना {#setting-up-stripe}
 
-1. यदि आपके पास पहले से नहीं है तो [stripe.com](https://stripe.com) पर एक खाता बनाएं। **अपने खाते को सक्रिय करना** सुनिश्चित करें और इसे परीक्षण मोड से बाहर निकालें।
-2. Stripe में, **Developers > API Keys** पर जाएं।
+1. यदि आपके पास पहले से account नहीं है, तो [stripe.com](https://stripe.com) पर एक account बनाएं। सुनिश्चित करें कि आप **अपना account सक्रिय** करें और उसे test mode से बाहर निकालें।
+2. Stripe में **Developers > API Keys** पर जाएं।
 3. अपनी **Publishable Key** कॉपी करें।
-4. [B1 Admin](https://admin.b1.church/) में लॉगिन करें।
-5. **Settings** पर जाएं और **Giving** सेक्शन खोलें।
-6. **Giving** सेक्शन पर **Edit** पर क्लिक करें।
+4. [B1 Admin](https://admin.b1.church/) में लॉग इन करें।
+5. **Settings** पर जाएं और **Giving** section खोलें।
+6. **Giving** section पर **Edit** पर click करें।
 7. **Provider** को **Stripe** पर सेट करें।
-8. अपनी Publishable Key को **Public Key** फील्ड में पेस्ट करें।
-9. Stripe पर वापस जाएं और अपनी **Secret Key** प्रकट करें (आप इसे केवल एक बार देख सकते हैं, इसलिए एक बैकअप सहेजें)।
-10. Secret Key को **Secret Key** फील्ड में पेस्ट करें और **Save** पर क्लिक करें।
+8. अपनी Publishable Key **Public Key** field में पेस्ट करें।
+9. Stripe पर वापस जाएं और अपनी **Secret Key** दिखाएं (इसे केवल एक बार देखा जा सकता है, इसलिए इसका backup रखें)।
+10. Secret Key को **Secret Key** field में पेस्ट करें और **Save** पर click करें।
 
 :::warning
-आपकी Stripe Secret Key केवल एक बार दिखाई जाती है। इसे Stripe डैशबोर्ड से दूर जाने से पहले एक सुरक्षित स्थान पर कॉपी करें। यदि आप इसे खो देते हैं, तो आपको एक नई कुंजी उत्पन्न करने की आवश्यकता होगी।
+आपकी Stripe Secret Key केवल एक बार दिखाई जाती है। Stripe dashboard से दूर जाने से पहले उसे किसी सुरक्षित जगह कॉपी करें। यदि यह खो जाए, तो आपको नई key बनानी होगी।
 :::
 
-## अपनी मुद्रा चुनना
+## अपनी currency चुनना {#choosing-your-currency}
 
-Stripe को प्रदाता के रूप में चुनने के बाद, आपकी API कुंजियों के साथ एक **Currency** ड्रॉपडाउन दिखाई देता है। उस मुद्रा को चुनें जो आपके Stripe खाते की निर्धारण मुद्रा से मेल खाती है ताकि दान सही तरीके से चार्ज किए जाएं।
+Stripe को provider चुनने के बाद, API keys के साथ एक **Currency** dropdown दिखता है। वह currency चुनें जो आपके Stripe account की settlement currency से मेल खाती हो, ताकि दान सही तरीके से charge हों।
 
-समर्थित मुद्राओं में USD, EUR, GBP, CAD, AUD, INR, JPY, SGD, HKD, SEK, NOK, DKK, CHF, MXN, और BRL शामिल हैं। आप अपने खाते की डिफ़ॉल्ट मुद्रा की पुष्टि कर सकते हैं या अपने [Stripe Dashboard](https://dashboard.stripe.com/settings/currencies) में बदल सकते हैं।
+समर्थित currencies में USD, EUR, GBP, CAD, AUD, INR, JPY, SGD, HKD, SEK, NOK, DKK, CHF, MXN, और BRL शामिल हैं। आप अपने [Stripe Dashboard](https://dashboard.stripe.com/settings/currencies) में अपने account की डिफ़ॉल्ट currency की पुष्टि या बदलाव कर सकते हैं।
 
 :::info
-यहां आपकी चुनी गई मुद्रा को एकमुश्त दान, आवर्ती सदस्यता, शुल्क गणना, और दान रिपोर्ट के लिए उपयोग किया जाता है। यदि आप बाद में मुद्रा स्विच करते हैं, तो केवल नए दान और सदस्यता नई मुद्रा का उपयोग करेंगी — मौजूदा आवर्ती उपहार उस मुद्रा में जारी रहते हैं जिसमें वे बनाई गई थीं।
+यहां जो currency आप चुनते हैं, वह एकमुश्त दानों, आवर्ती subscriptions, fee गणनाओं, और donation reports में उपयोग होती है। यदि आप बाद में currency बदलते हैं, तो केवल नए दान और subscriptions नई currency का उपयोग करेंगे -- मौजूदा आवर्ती दान उसी currency में चलते रहेंगे जिसमें वे बनाए गए थे।
 :::
 
 :::warning
-सुनिश्चित करें कि आपका Stripe खाता उस मुद्रा को स्वीकार करने के लिए कॉन्फ़िगर किया गया है जिसे आप चुनते हैं। यदि आपका Stripe खाता चुनी गई मुद्रा का समर्थन नहीं करता है, तो दान चेकआउट पर विफल हो जाएंगे।
+सुनिश्चित करें कि आपका Stripe account आपकी चुनी गई currency स्वीकार करने के लिए कॉन्फ़िगर है। यदि आपका Stripe account चुनी गई currency को सपोर्ट नहीं करता, तो checkout पर दान विफल होंगे।
 :::
 
-## Apple Pay और Google Pay
+## Apple Pay और Google Pay {#apple-pay-and-google-pay}
 
-Stripe पर चर्च को सार्वजनिक दान पृष्ठ पर स्वचालित रूप से Apple Pay और Google Pay बटन मिलते हैं। बटन एकमुश्त उपहारों के लिए कार्ड फील्ड के ऊपर दिखाई देते हैं जब दाता ने एक फंड और राशि चुनी है, और केवल तब जब दाता के ब्राउज़र या डिवाइस में वॉलेट सेट अप हो। आवर्ती उपहार अभी भी कार्ड या बैंक फील्ड का उपयोग करते हैं।
+Stripe का उपयोग करने वाले churches के सार्वजनिक giving page पर Apple Pay और Google Pay buttons अपने-आप मिलते हैं। एकमुश्त दानों के लिए card fields के ऊपर buttons तब दिखते हैं जब दानदाता ने fund और राशि चुन ली हो, और केवल तब जब दानदाता के browser या device पर wallet सेट हो। आवर्ती दान अभी भी card या bank fields का उपयोग करते हैं।
 
-Google Pay को कोई सेटअप की आवश्यकता नहीं है। Apple Pay के लिए आपके दान पृष्ठ के डोमेन को Stripe के साथ पंजीकृत होना आवश्यक है; B1 इसे पहली बार दान पृष्ठ आपके डोमेन पर लोड होने पर पंजीकृत करता है। यदि Apple Pay बटन iPhone पर दिखाई नहीं देता है, तो अपने Stripe Dashboard में **Settings > Payment method domains** चेक करें और पुष्टि करें कि आपका `yoursubdomain.b1.church` (या कस्टम) डोमेन सूचीबद्ध और सत्यापित है।
+Google Pay के लिए कोई सेटअप नहीं चाहिए। Apple Pay के लिए आपके giving page का domain Stripe में पंजीकृत होना चाहिए; B1 इसे पहली बार पंजीकृत करता है जब आपके domain पर giving page लोड होता है। यदि iPhone पर Apple Pay button नहीं दिखता, तो अपने Stripe Dashboard में **Settings > Payment method domains** जांचें और पुष्टि करें कि आपका `yoursubdomain.b1.church` (या custom) domain सूचीबद्ध और verified है।
 
-## गुमनाम उपहार
+## अनाम gifts {#anonymous-gifts}
 
-सार्वजनिक दान पृष्ठ पर दाता **Give anonymously** चेक कर सकते हैं। एक गुमनाम उपहार बिना किसी दाता के साथ दर्ज किया जाता है, फिर भी दाता द्वारा चुने गए फंड में जाता है, और आपकी बैच और रिपोर्ट में **Anonymous** दिखता है। दाता का ईमेल अभी भी आवश्यक है ताकि रसीद भेजी जा सके, लेकिन कोई व्यक्ति रिकॉर्ड नहीं बनाया जाता है। गुमनाम उपहार केवल एकमुश्त हैं और किसी भी दान विवरण पर दिखाई नहीं देते हैं।
+सार्वजनिक giving page पर दानदाता **Give anonymously** चिह्नित कर सकते हैं। अनाम दान बिना किसी दानदाता के दर्ज होता है, फिर भी वह दानदाता द्वारा चुने गए fund में जाता है, और आपकी batches और reports में **Anonymous** के रूप में दिखता है। रसीद भेजने के लिए दानदाता का email फिर भी आवश्यक है, लेकिन कोई person record नहीं बनता। अनाम दान केवल एकमुश्त होते हैं और किसी भी giving statement पर नहीं आते।
 
-## विफल आवर्ती उपहार
+## असफल आवर्ती दान {#failed-recurring-gifts}
 
-जब Stripe पर एक आवर्ती उपहार विफल हो जाता है (उदाहरण के लिए, एक समाप्त या अस्वीकृत कार्ड), विफल चार्ज **Donations > Failed Gifts** के अंतर्गत दाता, राशि, तारीख और गेटवे द्वारा दिया गया कारण के साथ दिखाई देता है। **Retry** पर क्लिक करें चार्ज को फिर से प्रयास करने के लिए जब दाता ने अपनी भुगतान विधि अपडेट कर दी हो।
+जब Stripe पर कोई आवर्ती दान विफल होता है (उदाहरण के लिए, कोई expired या declined card), तो विफल charge **Donations > Failed Gifts** के अंतर्गत दानदाता, राशि, तारीख, और gateway द्वारा दिए गए कारण के साथ दिखता है। जब दानदाता अपनी payment method अपडेट कर ले, तो charge फिर से आज़माने के लिए **Retry** पर click करें।
 
-B1 भी दाता को ईमेल करता है जब चार्ज विफल हो, और फिर तीन और सात दिन बाद यदि यह अभी भी नहीं हुआ है, तो उनकी भुगतान विधि को B1.church में अपडेट करने के लिए एक लिंक के साथ।
+charge विफल होने पर B1 दानदाता को email भी भेजता है, और यदि अभी तक सफल न हुआ हो तो तीन और सात दिन बाद फिर से, B1.church में अपनी payment method अपडेट करने के link के साथ।
 
 :::info
-यदि आपके चर्च ने इस फीचर से पहले Stripe सेटअप किया था, तो **Settings** > **Giving** खोलें, संपादन पर क्लिक करें, और एक बार **Save** पर क्लिक करें। जो Stripe वेबहुक को ताज़ा करता है ताकि विफल चार्ज B1 को रिपोर्ट किए जाएं।
+यदि आपके church ने यह सुविधा आने से पहले Stripe सेट किया था, तो **Settings** > **Giving** खोलें, edit पर click करें, और एक बार **Save** पर click करें। इससे Stripe webhook refresh होता है, ताकि विफल charges B1 को रिपोर्ट हों।
 :::
 
-## आपकी B1.church साइट में दान पृष्ठ जोड़ना
+## अपनी B1.church साइट पर donation page जोड़ना {#adding-a-donation-page-to-your-b1church-site}
 
-1. [b1.church](https://b1.church/) पर जाएं और लॉगिन करें।
-2. **Settings** आइकन पर क्लिक करें।
-3. **Add Tab** पर क्लिक करें।
-4. **Donation** को प्रकार के रूप में चुनें।
-5. टैब के लिए एक नाम दर्ज करें (उदाहरण के लिए, "Give") और **Save** पर क्लिक करें।
-6. वैकल्पिक रूप से, टैब आइकन बदलें -- एक देने से संबंधित आइकन के लिए आइकन खोज में "Giv" टाइप करें।
+1. [b1.church](https://b1.church/) पर जाएं और लॉग इन करें।
+2. **Settings** icon पर click करें।
+3. **Add Tab** पर click करें।
+4. प्रकार के रूप में **Donation** चुनें।
+5. tab का नाम दर्ज करें (जैसे "Give") और **Save** पर click करें।
+6. वैकल्पिक रूप से, tab icon बदलें -- giving से संबंधित icon के लिए icon search में "Giv" टाइप करें।
 
-आपका दान पृष्ठ अब लाइव है। सदस्य इसे `yoursubdomain.b1.church/donate` पर देख सकते हैं।
+आपका donation page अब live है। सदस्य उसे `yoursubdomain.b1.church/donate` पर देख सकते हैं।
 
-## अपने दान लिंक को साझा करना
+## अपना giving link साझा करना {#sharing-your-giving-link}
 
-अपने दान URL को खोजने के लिए, **B1 Admin** पर जाएं और अपना सबडोमेन देखने के लिए **Settings** आइकन पर क्लिक करें। आपका दान लिंक निम्न प्रारूप का अनुसरण करता है:
+अपना giving URL खोजने के लिए, **B1 Admin** पर जाएं और अपना subdomain देखने के लिए **Settings** icon पर click करें। आपका donation link इस प्रारूप में होता है:
 
 `https://yoursubdomain.b1.church/donate`
 
-इस लिंक को अपनी वेबसाइट पर, ईमेल में, या अपने बुलेटिन में साझा करें ताकि सदस्य जान सकें कि ऑनलाइन कहां दान करें।
+इस link को अपनी website, emails, या bulletin में साझा करें, ताकि सदस्य जान सकें कि online कहां दे सकते हैं।
 
-### पूर्व निर्धारित फंड और राशि के साथ लिंक
+### पूर्व-निर्धारित fund और राशि वाले links {#links-with-a-preset-fund-and-amount}
 
-दाताओं को सीधे एक विशिष्ट फंड पर भेजने के लिए, **Donations > Funds** पर जाएं और फंड पर **Giving Link** पर क्लिक करें। वैकल्पिक रूप से एक राशि दर्ज करें, फिर लिंक कॉपी करें। जब दाता इसे खोलता है, तो फंड और राशि पहले से ही दान पृष्ठ पर चुनी जाती हैं। लिंक निम्न रूप लेता है:
+दानदाताओं को सीधे किसी खास fund पर भेजने के लिए, **Donations > Funds** पर जाएं और fund पर **Giving Link** पर click करें। वैकल्पिक रूप से राशि दर्ज करें, फिर link कॉपी करें। जब कोई दानदाता इसे खोलता है, तो giving page पर fund और राशि पहले से चुनी होती है। link इस रूप में होता है:
 
 `https://yoursubdomain.b1.church/donate?fundId=FUND_ID&amount=25`
 
-वही पैरामीटर वेबसाइट बिल्डर के **Donate Link** एलिमेंट में काम करते हैं।
+वही parameters website builder के **Donate Link** element में भी काम करते हैं।
 
-## दान सूचनाएं
+## Donation notifications {#donation-notifications}
 
-Stripe प्रत्येक बार ईमेल सूचना भेजता है जब दान प्राप्त होता है। सूचना ईमेल पते को बदलने के लिए, Stripe डैशबोर्ड पर जाएं, शीर्ष दाईं ओर अपनी प्रोफाइल पर क्लिक करें, **Profile** चुनें, और अपना ईमेल पता अपडेट करें।
+हर बार दान प्राप्त होने पर Stripe एक email notification भेजता है। notification का email पता बदलने के लिए, Stripe dashboard पर जाएं, ऊपर-दाईं ओर अपनी profile पर click करें, **Profile** चुनें, और अपना email पता अपडेट करें।
 
-## प्रसंस्करण शुल्क विकल्प
+## Processing fee विकल्प {#processing-fee-options}
 
-आप अपने दान पृष्ठ को दाताओं को वैकल्पिक रूप से प्रसंस्करण शुल्क को कवर करने की अनुमति देने के लिए कॉन्फ़िगर कर सकते हैं ताकि आपका चर्च पूर्ण दान राशि प्राप्त करे। यह सेटिंग आपके B1 Admin में चर्च सेटिंग के भीतर प्रबंधित की जाती है।
+आप अपने giving page को इस तरह कॉन्फ़िगर कर सकते हैं कि दानदाता वैकल्पिक रूप से processing fees भी दें, ताकि आपके church को पूरी दान राशि मिले। यह सेटिंग B1 Admin के भीतर आपकी church settings में प्रबंधित होती है।
 
 :::tip
-सेटअप के बाद, सार्वजनिक रूप से ऑनलाइन दान की घोषणा करने से पहले सबकुछ काम कर रहा है यह पुष्टि करने के लिए एक छोटा परीक्षण दान करें।
+सेटअप के बाद, अपनी मंडली को online giving की घोषणा करने से पहले एक छोटा test donation करके पुष्टि करें कि सब कुछ ठीक काम कर रहा है।
 :::
 
-## Kingdom Funding सेटअप करना
+## Kingdom Funding सेट करना {#setting-up-kingdom-funding}
 
-Kingdom Funding एक ईसाई भुगतान प्रोसेसर है जो क्रेडिट/डेबिट कार्ड और ACH बैंक ट्रांसफर का समर्थन करता है। यदि आपका चर्च Kingdom Funding के साथ नामांकित है, तो आप इसे अपने दान गेटवे के रूप में कनेक्ट कर सकते हैं।
+Kingdom Funding एक Christian payment processor है जो credit/debit cards और ACH bank transfers को सपोर्ट करता है। यदि आपका church Kingdom Funding में नामांकित है, तो आप उसे अपने giving gateway के रूप में जोड़ सकते हैं।
 
 :::info
-Kingdom Funding एकीकरण वर्तमान में बीटा में है। इसे अपने चर्च के लिए सक्षम करने के लिए अपने B1 खाता प्रतिनिधि से संपर्क करें।
+Kingdom Funding integration अभी beta में है। इसे अपने church के लिए सक्षम करने हेतु अपने B1 account representative से संपर्क करें।
 :::
 
-1. [kingdomfundinginternational.com](https://kingdomfundinginternational.com/churches/apply) पर साइन अप करें या लॉगिन करें।
-2. Kingdom Funding मर्चेंट पोर्टल से अपनी **Security Key** (सार्वजनिक) और **Private Key** प्राप्त करें।
-3. B1 Admin में, **Settings** पर जाएं, **Giving** सेक्शन खोलें और संपादन पर क्लिक करें।
+1. [kingdomfundinginternational.com](https://kingdomfundinginternational.com/churches/apply) पर साइन अप करें या लॉग इन करें।
+2. Kingdom Funding merchant portal से अपनी **Security Key** (public) और **Private Key** प्राप्त करें।
+3. B1 Admin में, **Settings** पर जाएं, **Giving** section खोलें और edit पर click करें।
 4. **Provider** को **Kingdom Funding** पर सेट करें।
-5. अपनी Security Key को **Security Key** फील्ड में और अपनी Private Key को **Private Key** फील्ड में पेस्ट करें।
-6. Kingdom Funding से प्राप्त **Webhook Key** सेट करें, और प्रदर्शित webhook URL को अपने Kingdom Funding मर्चेंट सेटिंग में कॉपी करें ताकि Kingdom Funding B1 को पूर्ण लेनदेन के बारे में सूचित कर सके।
-7. सहेजें।
+5. अपनी Security Key को **Security Key** field में और Private Key को **Private Key** field में पेस्ट करें।
+6. Kingdom Funding से मिली **Webhook Key** सेट करें, और दिखाए गए webhook URL को अपनी Kingdom Funding merchant settings में कॉपी करें, ताकि Kingdom Funding पूरे हुए लेन-देन की सूचना B1 को दे सके।
+7. **Save** करें।
 
-एक बार कनेक्ट होने के बाद, सदस्य दान पृष्ठ पर एक कार्ड/बैंक टॉगल देखेंगे और क्रेडिट कार्ड या ACH ट्रांसफर के माध्यम से दान दे सकते हैं।
+जुड़ने के बाद, सदस्यों को donation page पर card/bank toggle दिखेगा और वे credit card या ACH transfer से दे सकेंगे।
 
-## PayPal और Venmo बटन
+## PayPal और Venmo buttons {#paypal-and-venmo-buttons}
 
-**PayPal** को प्रदाता के रूप में उपयोग करने वाले चर्चों को दान पृष्ठ पर कार्ड फील्ड के ऊपर **PayPal** और **Venmo** बटन मिलते हैं। जो दाता एक पर क्लिक करते हैं वे PayPal विंडो में भुगतान पूरा करते हैं, और उपहार किसी अन्य ऑनलाइन दान की तरह दर्ज किया जाता है। Venmo केवल संयुक्त राज्य में दाताओं के लिए उन उपकरणों पर दिखाई देता है जिन्हें PayPal योग्य मानता है। आवर्ती उपहार अभी भी कार्ड फील्ड का उपयोग करते हैं।
+अपने provider के रूप में **PayPal** का उपयोग करने वाले churches के giving page पर एकमुश्त दानों के लिए card fields के ऊपर **PayPal** और **Venmo** buttons मिलते हैं। जो दानदाता इनमें से कोई दबाते हैं, वे PayPal window में भुगतान पूरा करते हैं, और दान किसी भी अन्य online दान की तरह दर्ज होता है। Venmo केवल United States के उन दानदाताओं के लिए दिखता है जिनके device PayPal के अनुसार पात्र हैं। आवर्ती दान अभी भी card fields का उपयोग करते हैं।
 
-## Paystack सेटअप करना (अफ्रीका)
+## Paystack (अफ्रीका) सेट करना {#setting-up-paystack-africa}
 
-Stripe घाना, नाइजीरिया, केन्या, दक्षिण अफ्रीका या कोटे डी'इवोइर में चर्चों के लिए खाते नहीं खोलता है। [Paystack](https://paystack.com) करता है, और यह स्थानीय कार्ड, **मोबाइल मनी** (MTN MoMo, Vodafone Cash, AirtelTigo, M-PESA), बैंक ट्रांसफर और USSD को स्वीकार करता है — दाता आपकी स्थानीय मुद्रा में भुगतान करते हैं (GHS, NGN, KES, ZAR, XOF)।
+Stripe, घाना, नाइजीरिया, केन्या, दक्षिण अफ्रीका, और कोट डिवार के churches के लिए खाते नहीं खोलता। [Paystack](https://paystack.com) खोलता है, और यह स्थानीय cards, **mobile money** (MTN MoMo, Vodafone Cash, AirtelTigo, M-PESA), bank transfer, और USSD स्वीकार करता है -- दानदाता आपकी स्थानीय currency (GHS, NGN, KES, ZAR, XOF) में भुगतान करते हैं।
 
-1. अपने चर्च के व्यावसायिक पंजीकरण प्रमाणपत्र और स्थानीय बैंक खाते के साथ [paystack.com](https://paystack.com) पर पंजीकृत करें, और Paystack की सक्रियता (go-live) समीक्षा पूरी करें।
-2. Paystack Dashboard में **Settings → API Keys & Webhooks** खोलें और **Public Key** और **Secret Key** कॉपी करें (परीक्षण कुंजी नहीं, लाइव कुंजी का उपयोग करें)।
-3. B1 Admin में, **Settings** पर जाएं, **Giving** सेक्शन खोलें और संपादन पर क्लिक करें।
+1. [paystack.com](https://paystack.com) पर अपने church के business registration certificate और स्थानीय bank account के साथ पंजीकरण करें, और Paystack की activation (go-live) समीक्षा पूरी करें।
+2. Paystack Dashboard में **Settings → API Keys & Webhooks** खोलें और **Public Key** व **Secret Key** कॉपी करें (test keys नहीं, live keys उपयोग करें)।
+3. B1 Admin में, **Settings** पर जाएं, **Giving** section खोलें और edit पर click करें।
 4. **Provider** को **Paystack** पर सेट करें, Public Key और Secret Key पेस्ट करें, और अपनी **Currency** चुनें।
-5. प्रदाता के अंतर्गत दिखाया गया **webhook URL** कॉपी करें, Paystack Dashboard पर वापस जाएं (**Settings → API Keys & Webhooks**) और इसे **Webhook URL** फील्ड में पेस्ट करें। यह है कि कैसे आवर्ती उपहार और मोबाइल मनी भुगतान दर्ज किए जाते हैं।
-6. सहेजें।
+5. provider के नीचे दिखाया गया **webhook URL** कॉपी करें, Paystack Dashboard (**Settings → API Keys & Webhooks**) पर वापस जाएं और उसे **Webhook URL** field में पेस्ट करें। इसी से आवर्ती दान और mobile money भुगतान रिकॉर्ड होते हैं।
+6. **Save** करें।
 
-दाता एक सुरक्षित Paystack विंडो में अपना भुगतान पूरा करते हैं और वहां कार्ड, मोबाइल मनी या बैंक ट्रांसफर चुन सकते हैं। नोट्स:
+दानदाता एक सुरक्षित Paystack window में अपना भुगतान पूरा करते हैं और वहीं card, mobile money, या bank transfer चुन सकते हैं। ध्यान दें:
 
-- **आवर्ती उपहार** को कार्ड की आवश्यकता है; मोबाइल मनी को स्वचालित रूप से फिर से चार्ज नहीं किया जा सकता है, इसलिए Paystack केवल एकमुश्त मोबाइल मनी उपहार की अनुमति देता है।
-- Paystack आवर्ती उपहार B1 से रद्द किए जा सकते हैं लेकिन रोके या संपादित नहीं किए जा सकते — राशि बदलने के लिए रद्द करें और एक नया बनाएं।
-- **Processing Fee** डिफ़ॉल्ट आपकी मुद्रा के लिए Paystack की स्थानीय-कार्ड दरों को दर्शाते हैं; यदि आपकी बातचीत दरें भिन्न हों तो संपादित करें।
+- **आवर्ती दानों** के लिए card चाहिए; mobile money को अपने-आप दोबारा charge नहीं किया जा सकता, इसलिए Paystack केवल एकमुश्त mobile money दानों की अनुमति देता है।
+- Paystack के आवर्ती दान B1 से रद्द किए जा सकते हैं, लेकिन रोके या संपादित नहीं किए जा सकते -- राशि बदलने के लिए रद्द करके नया बनाएं।
+- **Processing Fee** के डिफ़ॉल्ट आपकी currency के लिए Paystack की स्थानीय-card दरों को दर्शाते हैं; यदि आपकी तय की गई दरें अलग हैं, तो उन्हें संपादित करें।
 
-## अगले कदम
+## अगले कदम {#next-steps}
 
-- [Stripe Import](stripe-import.md) का उपयोग करें यदि ऑनलाइन लेनदेन स्वचालित रूप से सिंक नहीं हो रहे हैं तो B1 Admin में खींचने के लिए
-- आपकी [Donation Reports](donation-reports.md) की जांच करें यह सत्यापित करने के लिए कि ऑनलाइन दान सही तरीके से दिखाई दे रहे हैं
-- [Giving Statements](giving-statements.md) उत्पन्न करें जिनमें ऑनलाइन और ऑफलाइन दान दोनों शामिल हों
+- यदि वे अपने-आप sync नहीं हो रहे हैं, तो ऑनलाइन लेन-देन को B1 Admin में लाने के लिए [Stripe Import](stripe-import.md) का उपयोग करें
+- यह जांचने के लिए कि ऑनलाइन दान सही तरीके से दिख रहे हैं, अपनी [Donation Reports](donation-reports.md) देखें
+- ऑनलाइन और ऑफ़लाइन दोनों दानों को शामिल करने वाले [Giving Statements](giving-statements.md) बनाएं

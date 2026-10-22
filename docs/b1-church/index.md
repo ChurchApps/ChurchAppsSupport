@@ -14,7 +14,7 @@ When members visit your B1.church site, they see your church's public website wi
 
 ## Key Features
 
-- **Home and Me** -- The member portal opens on a [Home dashboard](./getting-started/navigating.md) with previews of your upcoming serving assignments, your groups, and your giving this year, and the [Me page](./getting-started/me-page.md) lists what is coming up for you -- serving assignments, event registrations, group events -- along with your recent notifications.
+- **Home and Me** -- The member portal opens on a [Home dashboard](./getting-started/navigating.md) with previews of your upcoming serving assignments, your groups, and your giving this year, and the [Me page](./getting-started/me-page.md) lists what is coming up for you -- serving assignments, event registrations, group events -- along with your recent notifications, the forms you've submitted, and your attendance history.
 - **Groups** -- View the groups you belong to, see group members, join conversations, and track attendance.
 - **Giving** -- Make donations to your church online and view your giving history.
 - **Events** -- Browse upcoming events and register yourself and your family.

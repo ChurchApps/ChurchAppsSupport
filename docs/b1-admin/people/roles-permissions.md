@@ -24,7 +24,7 @@ A role is a set of permissions that you assign to one or more users. For example
 
 Each role controls access to specific areas of B1 Admin, including:
 
-- **People** -- viewing and editing member profiles. The Notes section on a person record requires **Edit People**, and a separate **View Confidential Notes** permission controls access to the Confidential Notes section (for pastoral care, personal history, and similar sensitive notes). **View People Names Only** lets someone look people up by name (seeing only name, photo, and membership status) without access to the full directory.
+- **People** -- viewing and editing member profiles. The Notes section on a person record requires **Edit People**, and a separate **View Confidential Notes** permission controls access to the Confidential Notes section (for pastoral care, personal history, and similar sensitive notes). **View People Names Only** lets someone look people up by name (seeing only name, photo, and membership status) without access to the full directory. Combined with **View Attendance** or **Edit Attendance**, it lets a volunteer open **Groups** and see class rosters by name; with **Edit Attendance** they can also [record attendance](../attendance/recording-attendance.md). See [People Names Only](../settings/roles-permissions.md#people-names-only).
 - **Donations** -- managing contributions and financial reports. **Enter Donations** is a narrower option for counting teams: it lets someone enter gifts, but only in [batches](../donations/batches.md#who-can-change-a-batch) that are still open.
 - **Attendance** -- recording and viewing attendance data
 - **Forms** -- creating and managing [custom forms](../forms/creating-forms.md)

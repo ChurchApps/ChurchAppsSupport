@@ -1,89 +1,90 @@
 ---
-title: "Erinnerungen zu Veranstaltungen"
+title: "Veranstaltungserinnerungen"
 ---
-# Erinnerungen zu Veranstaltungen
+
+# Veranstaltungserinnerungen
 
 <div class="article-intro">
 
-Veranstaltungserinnerungen benachrichtigen automatisch die richtigen Personen, bevor eine Veranstaltung stattfindet -- zum Beispiel: „Nicht verpassen! Der Workshop für Pflegekräfte beginnt morgen um 9:00 Uhr." Sie richten eine Erinnerung einmal für die Veranstaltung ein, und B1 versendet sie planmäßig über Push-Benachrichtigungen, E-Mail und, wenn Ihre Gemeinde den Textversand eingerichtet hat, Textnachrichten. Mitglieder können in ihren eigenen [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences) festlegen, welche Erinnerungen sie erhalten.
+Veranstaltungserinnerungen benachrichtigen automatisch die richtigen Personen vor einer Veranstaltung – zum Beispiel: „Nicht verpassen! Der Workshop zum Thema Gesundheit beginnt morgen um 9:00 Uhr.“ Sie richten eine Erinnerung einmal an der Veranstaltung ein, und B1 versendet sie termingerecht per Push-Benachrichtigung, E-Mail und, falls Ihre Kirche den Textnachrichtendienst eingerichtet hat, auch als SMS. Mitglieder können über ihre eigenen [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences) steuern, welche Erinnerungen sie erhalten.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Erstellen Sie die Veranstaltung, an die Sie erinnern möchten (siehe [Kalender erstellen](creating-calendars))
-- Um angemeldete Teilnehmende zu erreichen, [aktivieren Sie die Anmeldung](creating-calendars) für die Veranstaltung
-- Um eine ganze Gruppe zu erreichen, stellen Sie sicher, dass die Veranstaltung zu einer [Gruppe](../groups/creating-groups) mit Mitgliedern gehört
+- Legen Sie die Veranstaltung an, an die Sie erinnern möchten (siehe [Kalender erstellen](creating-calendars)).
+- Um angemeldete Teilnehmende zu erreichen, [aktivieren Sie die Anmeldung](creating-calendars) für die Veranstaltung.
+- Um eine ganze Gruppe zu erreichen, stellen Sie sicher, dass die Veranstaltung zu einer [Gruppe](../groups/creating-groups) mit Mitgliedern gehört.
 
 </div>
 
 ## Eine Erinnerung einrichten
 
-Erinnerungen konfigurieren Sie im Bereich **Erinnerungen** der Veranstaltung.
+Sie konfigurieren Erinnerungen im Abschnitt **Erinnerungen** der Veranstaltung.
 
-- Wenn Sie eine **neue Veranstaltung erstellen**, öffnen Sie den Bereich **Erinnerungen** im Veranstaltungseditor, bevor Sie speichern.
-- Bei einer **bestehenden Veranstaltung** öffnen Sie die Seite **Anmeldedetails** der Veranstaltung (über den Bereich **Anmeldungen**), um die Erinnerung hinzuzufügen oder zu ändern.
+- Wenn Sie eine **neue Veranstaltung anlegen**, klappen Sie im Veranstaltungseditor vor dem Speichern den Abschnitt **Erinnerungen** auf.
+- Für eine **bestehende Veranstaltung** öffnen Sie die Seite **Anmeldedetails** der Veranstaltung (über den Abschnitt **Anmeldungen**), um eine Erinnerung hinzuzufügen oder zu ändern.
 
-1. Aktivieren Sie **Erinnerungen aktivieren**.
-2. Wählen Sie **Wann** gesendet werden soll. Wählen Sie bis zu drei Zeitpunkte: **7 Tage vorher**, **3 Tage vorher**, **1 Tag vorher** und **Am Tag selbst**.
-3. Legen Sie die **Tageszeit** fest, zu der die Erinnerung verschickt werden soll (Standard ist **9:00 Uhr**, in der lokalen Zeitzone Ihrer Gemeinde).
-4. Wählen Sie, **wer** erinnert werden soll (siehe [Wer wird erinnert](#who-gets-reminded) unten).
-5. Fügen Sie optional eine **Nachricht** hinzu. Lassen Sie sie leer, um den Standardtext zu verwenden, oder schreiben Sie Ihren eigenen -- Sie können `{{eventTitle}}` einfügen, was durch den Namen der Veranstaltung ersetzt wird.
-6. Wählen Sie die **Kanäle**: **Push**-Benachrichtigung, **E-Mail** und, wenn Ihre Gemeinde einen [Anbieter für Textnachrichten](../settings/church-settings.md#texting) verbunden hat, **Text**.
+1. Schalten Sie **Erinnerungen aktivieren** ein.
+2. Wählen Sie unter **Wann** den Versandzeitpunkt. Sie können bis zu drei Zeitpunkte wählen: **7 Tage vorher**, **3 Tage vorher**, **1 Tag vorher** und **Am Tag selbst**.
+3. Legen Sie die **Uhrzeit**, zu der die Erinnerung versendet werden soll, fest (Standard ist **9:00 Uhr**, in der [Zeitzone](../settings/church-settings.md#time-zone) Ihrer Kirche).
+4. Wählen Sie unter **Wer** aus, wer erinnert werden soll (siehe unten [Wer erhält eine Erinnerung](#who-gets-reminded)).
+5. Fügen Sie optional eine **Nachricht** hinzu. Lassen Sie das Feld leer, um den Standardtext zu verwenden, oder schreiben Sie Ihren eigenen Text. Sie können `{{eventTitle}}` einfügen; das wird durch den Namen der Veranstaltung ersetzt.
+6. Wählen Sie die **Kanäle**: **Push**-Benachrichtigung, **E-Mail** und, falls ein [Anbieter für Textnachrichten](../settings/church-settings.md#texting) mit Ihrer Kirche verbunden ist, **SMS**.
 7. Speichern Sie die Veranstaltung.
 
-Während Sie Änderungen vornehmen, zeigt eine **Live-Vorschau** ungefähr, wie viele Personen erinnert werden, wie viele Teilnehmende nicht erreicht werden können und die nächsten geplanten Versandzeiten -- so können Sie vor dem Speichern prüfen, ob die Erinnerung stimmt.
+Während Sie Änderungen vornehmen, zeigt eine **Live-Vorschau** ungefähr an, wie viele Personen erinnert werden, wie viele Teilnehmende nicht erreicht werden können und wann die nächsten Versendungen geplant sind. So können Sie prüfen, ob die Erinnerung richtig aussieht, bevor Sie speichern.
 
-## Wer wird erinnert
+## Wer erhält eine Erinnerung {#who-gets-reminded}
 
 Die Einstellung **Wer** legt fest, an wen die Erinnerung geht:
 
-- **Nur Angemeldete** -- Alle für die Veranstaltung angemeldeten Personen, die mit einem Personendatensatz verknüpft sind. Dies ist die Standardeinstellung, wenn für die Veranstaltung die Anmeldung aktiviert ist, damit eine Erinnerung für eine kleine Veranstaltung mit Anmeldung nicht versehentlich an eine ganze Gruppe geht.
-- **Nur Haushaltsvorstände / Anmeldende** -- Eine Erinnerung pro Anmeldung (an die Person, die sich angemeldet hat), statt an jedes Familienmitglied der Anmeldung.
-- **Gruppenmitglieder** -- Alle in der Gruppe der Veranstaltung. Dies ist die Standardeinstellung, wenn die Veranstaltung keine Anmeldung verwendet.
-- **Automatisch** -- Verwendet die Angemeldeten, wenn die Anmeldung aktiviert ist, andernfalls die Gruppe.
+- **Nur Angemeldete** – Alle angemeldeten Personen, die mit einem Personendatensatz verknüpft sind. Das ist die Standardeinstellung, wenn die Anmeldung für die Veranstaltung aktiviert ist, damit eine Erinnerung für eine kleine Veranstaltung mit Anmeldung nie versehentlich an eine ganze Gruppe geht.
+- **Hauptpersonen / nur Angemeldete** – Eine Erinnerung pro Anmeldung (an die Person, die sich angemeldet hat), statt an jedes Familienmitglied auf der Anmeldung.
+- **Gruppenmitglieder** – Alle Personen in der Gruppe der Veranstaltung. Das ist die Standardeinstellung, wenn die Veranstaltung keine Anmeldung verwendet.
+- **Automatisch** – Verwendet die Angemeldeten, wenn die Anmeldung aktiviert ist, andernfalls die Gruppe.
 
 :::info
-Gäste, die nur namentlich hinzugefügt wurden (ohne verknüpften Personendatensatz), können keine Erinnerung erhalten, da es kein Konto, kein Gerät und keine E-Mail-Adresse gibt, an die gesendet werden könnte. Die Vorschau zeigt Ihnen, wie viele Teilnehmende in diese Gruppe fallen, damit es keine Überraschungen gibt. Mitglieder, die der Kommunikation widersprochen haben, werden ebenfalls übersprungen.
+Gäste, die nur mit Namen erfasst wurden (ohne verknüpften Personendatensatz), können keine Erinnerung erhalten, da kein Konto, kein Gerät und keine E-Mail-Adresse vorhanden ist, an die sie gesendet werden könnte. Die Vorschau zeigt an, wie viele Teilnehmende in diese Gruppe fallen, damit es keine Überraschungen gibt. Mitglieder, die sich von Kommunikation abgemeldet haben, werden ebenfalls übersprungen.
 :::
 
-## Wann Erinnerungen gesendet werden
+## Wann Erinnerungen versendet werden
 
-- Erinnerungen werden zur **von Ihnen gewählten Tageszeit** in der lokalen Zeitzone Ihrer Gemeinde zu jedem der ausgewählten Zeitpunkte ausgelöst.
-- Wenn Sie **Datum oder Uhrzeit der Veranstaltung ändern**, werden die ausstehenden Erinnerungen automatisch neu geplant -- Sie müssen die Erinnerung nicht bearbeiten.
-- Wenn Sie **die Veranstaltung löschen** (oder einen einzelnen Termin einer wiederkehrenden Veranstaltung absagen), werden deren ausstehende Erinnerungen automatisch storniert.
-- Wiederkehrende Veranstaltungen werden automatisch behandelt: Jeder bevorstehende Termin erhält seine eigene Erinnerung.
+- Erinnerungen werden zu der **Uhrzeit, die Sie wählen**, in der Ortszeit Ihrer Kirche und zu jedem der gewählten Zeitpunkte versendet.
+- Wenn Sie **Datum oder Uhrzeit der Veranstaltung ändern**, werden ausstehende Erinnerungen automatisch neu geplant – Sie müssen die Erinnerung nicht selbst bearbeiten.
+- Wenn Sie **die Veranstaltung löschen** (oder einen einzelnen Termin einer wiederkehrenden Veranstaltung absagen), werden deren ausstehende Erinnerungen automatisch abgebrochen.
+- Wiederkehrende Veranstaltungen werden automatisch berücksichtigt: Jeder kommende Termin erhält eine eigene Erinnerung.
 
 :::tip
-Erinnerungen werden **zuerst per Push gesendet, mit E-Mail als Rückfalloption**. Wenn ein Mitglied Push-Benachrichtigungen aktiviert hat, erhält es eine Push-Nachricht; andernfalls erhält es stattdessen eine E-Mail. Mitglieder wählen in ihren [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences) pro Benachrichtigungstyp aus, welche Kanäle sie wünschen.
+Erinnerungen werden **zuerst per Push** versendet, **E-Mail dient als Ersatz**. Wenn ein Mitglied Push-Benachrichtigungen aktiviert hat, erhält es eine Push-Benachrichtigung; andernfalls eine E-Mail. Mitglieder wählen in ihren [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences) für jeden Benachrichtigungstyp aus, welche Kanäle sie möchten.
 :::
 
-## Textnachrichten als Erinnerung
+## SMS-Erinnerungen
 
-Der Kanal **Text** erscheint nur, wenn Ihre Gemeinde einen Anbieter für Textnachrichten verbunden hat. Textnachrichten werden über den Anbieter Ihrer Gemeinde versendet, und jede Nachricht kann Ihre Gemeinde etwas kosten. Sie werden zusätzlich zu allen Push- oder E-Mail-Erinnerungen gesendet, und nur an Personen, die:
+Der Kanal **SMS** erscheint nur, wenn Ihre Kirche einen Anbieter für Textnachrichten verbunden hat. SMS werden über den Anbieter Ihrer Kirche versendet, und jede Nachricht kann Ihre Kirche etwas kosten. Sie werden zusätzlich zu einer Push- oder E-Mail-Erinnerung verschickt, und nur an Personen, die:
 
 - in ihren [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences) **Textnachrichten** aktiviert haben und
-- eine Mobilnummer in ihrem Profil haben.
+- in ihrem Profil eine Handynummer hinterlegt haben.
 
-Jede Nachricht beginnt mit dem Namen Ihrer Gemeinde, bleibt bei einer einzigen Textnachricht und endet mit "Reply STOP to opt out." Wer mit STOP antwortet, erhält keine Texte mehr von Ihrer Gemeinde. Damit STOP-Antworten B1 erreichen, fügen Sie die **Webhook-URL für eingehende STOP-Nachrichten** aus Ihren [Texteinstellungen](../settings/church-settings.md#texting) in den Webhook für eingehende Nachrichten Ihres Anbieters ein.
+Jede SMS beginnt mit dem Namen Ihrer Kirche, besteht aus einer einzigen Textnachricht und endet mit „Antworten Sie mit STOP, um sich abzumelden.“ Wer mit STOP antwortet, erhält keine Textnachrichten mehr von Ihrer Kirche. Damit STOP-Antworten B1 erreichen, fügen Sie die **Eingehende (STOP-)Webhook-URL** aus Ihren [Einstellungen für Textnachrichten](../settings/church-settings.md#texting) in den eingehenden Nachrichten-Webhook Ihres Anbieters ein.
 
 ## Was Mitglieder steuern können
 
-Erinnerungen berücksichtigen immer die [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences) des jeweiligen Mitglieds. Ein Mitglied kann:
+Erinnerungen berücksichtigen immer die [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences) jedes Mitglieds. Ein Mitglied kann:
 
-- **Veranstaltungserinnerungen** für Push, E-Mail oder Text deaktivieren und andere Benachrichtigungen aktiviert lassen.
-- Texterinnerungen mit **Textnachrichten** ein- oder ausschalten.
-- **Ruhezeiten** festlegen, damit nicht dringende Benachrichtigungen bis zu einer angemessenen Zeit warten.
+- **Veranstaltungserinnerungen** für Push, E-Mail oder SMS ausschalten, während andere Benachrichtigungen eingeschaltet bleiben.
+- SMS-Erinnerungen mit **Textnachrichten** ein- oder ausschalten.
+- **Ruhezeiten** festlegen, sodass nicht dringende Benachrichtigungen zu einer passenden Zeit zugestellt werden.
 
-Sie können die Entscheidung eines Mitglieds, Veranstaltungserinnerungen abzubestellen, nicht übergehen -- so bleibt B1 konform mit den Anti-Spam-Vorschriften und Mitglieder behalten die Kontrolle über ihren Posteingang.
+Sie können die Entscheidung eines Mitglieds, sich von Veranstaltungserinnerungen abzumelden, nicht außer Kraft setzen. So hält B1 die Anforderungen der Anti-Spam-Regeln ein, und Mitglieder behalten die Kontrolle über ihr Postfach.
 
-## Erinnerungen für Dienste
+## Erinnerungen für Helfende
 
-Freiwillige, die in einem Plan eingeteilt sind, erhalten eine separate **Diensterinnerung** mit den Plandetails und, sofern sie noch nicht geantwortet haben, den Schaltflächen **Annehmen / Ablehnen** direkt in der E-Mail. Diese Erinnerungen werden am Plantyp konfiguriert und nicht an einem Kalendertermin und können auch per Text versendet werden -- siehe [Freiwilligen-Erinnerungen](../serving/plans#volunteer-reminders) und [Freiwillige am Sonntag](../guides/sunday-volunteers) für die Funktionsweise von Einteilung und Erinnerungen für Freiwillige.
+Ehrenamtliche, die für einen Plan eingeteilt sind, erhalten eine eigene **Dienst-Erinnerung** mit den Angaben zum Plan und – solange sie noch nicht geantwortet haben – die Schaltflächen **Annehmen / Ablehnen** direkt in der E-Mail. Diese Erinnerungen werden am Plantyp konfiguriert, nicht an einer Kalenderveranstaltung, und können ebenfalls per SMS versendet werden. Wie die Einsatzplanung und die Erinnerungen für Ehrenamtliche funktionieren, erfahren Sie unter [Ehrenamtliche Erinnerungen](../serving/plans#volunteer-reminders) und [Ehrenamtliche am Sonntag](../guides/sunday-volunteers).
 
 ## Nächste Schritte
 
-- [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences) -- Was Mitglieder steuern können
-- [Anleitung zur Veranstaltungsanmeldung](../guides/event-registration) -- Anmeldung einrichten, damit Erinnerungen Teilnehmende erreichen
-- [Kalender erstellen](creating-calendars) -- Zurück zur Kalendereinrichtung
+- [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences) – Was Mitglieder steuern können
+- [Anleitung zur Veranstaltungsanmeldung](../guides/event-registration) – Anmeldung einrichten, damit Erinnerungen Teilnehmende erreichen
+- [Kalender erstellen](creating-calendars) – Zurück zur Kalendereinrichtung

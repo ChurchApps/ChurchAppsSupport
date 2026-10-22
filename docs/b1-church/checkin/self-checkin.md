@@ -33,7 +33,7 @@ Click on a service to select it and move to the next step.
 After selecting a service, you will see your household members under **Who's here**. For each person attending:
 
 1. Tap a household member to expand their entry.
-2. You will see the available **service times** for the service you selected. If your church has set a check-in schedule for a service time, it only appears while check-in for it is open (for example, from 30 minutes before the service until shortly after it ends).
+2. You will see the available **service times** for the service you selected. If your church has set a check-in schedule for a service time, you can only pick it while check-in for it is open (for example, from 30 minutes before the service until shortly after it ends). Outside that window the service time is listed as **Closed**, with when it opens if known -- for example, **Closed · opens Sun 9:30 AM**.
 3. Tap **Select Group** next to a service time to choose which group the person should be checked into (such as "Main Worship," "Kids Room 1," or "Youth Group").
 4. Repeat for each household member who is attending.
 
@@ -57,7 +57,8 @@ If you need to change a group selection before completing check-in, tap the **Ch
 
 - You can only check in household members that are linked to your account. If a family member is missing, ask your church administrator to add them to your household.
 - If no services appear on the check-in page, your church may not have any services configured for check-in at this time.
-- If you select a service and see "Check-in isn't open for this service right now," none of that service's times are currently within their check-in window. Try again closer to the service time.
+- If you select a service and see a message such as "Check-in opens Sun 9:30 AM." (or "Check-in isn't open for this service right now."), none of that service's times are currently within their check-in window. Try again once check-in opens.
+- If your household checked in for an earlier service time, you can come back and check in for a later service time once it opens, even after the earlier one has closed.
 - If a room you picked is full or closed, you'll see "A room you picked is full or closed for check-in. Please see a volunteer."
 
 :::warning

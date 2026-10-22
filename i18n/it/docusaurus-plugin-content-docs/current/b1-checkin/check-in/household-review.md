@@ -1,64 +1,66 @@
 ---
-title: "Revisione della Tua Famiglia"
+title: "Verificare il nucleo familiare"
 ---
 
-# Revisione della Tua Famiglia
+# Verificare il nucleo familiare {#reviewing-your-household}
 
 <div class="article-intro">
 
-Dopo aver selezionato una persona dai risultati della ricerca, l'app carica l'intera famiglia e la visualizza nella schermata di revisione della famiglia. Questo è l'hub centrale del processo di check-in in cui puoi vedere tutti nella tua famiglia e gestire i loro incarichi di gruppo prima di fare il check-in.
+Dopo aver selezionato una persona tra i risultati di ricerca, l'app carica l'intero nucleo familiare e lo mostra nella schermata di verifica del nucleo familiare. È il centro del processo di check-in: qui puoi vedere tutti i membri della famiglia e gestire le loro assegnazioni ai gruppi prima di effettuare il check-in.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
 - [Seleziona un servizio](./selecting-service) dalla schermata dei servizi
-- [Cerca un membro](./looking-up-members) e selezionalo dai risultati della ricerca
+- [Cerca un membro](./looking-up-members) e selezionalo tra i risultati di ricerca
 
 </div>
 
-## Visualizzazione dei Membri della Famiglia
+## Visualizzare i membri del nucleo familiare {#viewing-household-members}
 
-Ogni membro della famiglia appare come una scheda con:
+Ogni membro del nucleo familiare compare come una scheda con:
 
-- La loro **foto** (o un'icona segnaposto se nessuna foto è in archivio)
-- Il loro **nome visualizzato**
-- Un **riassunto dei loro incarichi di gruppo attuali** (mostrato come piccole schede sotto il nome quando la scheda è compressa)
-- Una **freccia di espansione/compressione** sul lato destro
+- La sua **foto** (oppure un'icona segnaposto se non è registrata alcuna foto)
+- Il suo **nome visualizzato**
+- Un **riepilogo delle assegnazioni ai gruppi** attuali (mostrato come piccole etichette sotto il nome quando la scheda è chiusa)
+- Una **freccia di espansione/chiusura** sul lato destro
 
-## Espansione di un Membro
+## Espandere un membro {#expanding-a-member}
 
-Tocca la scheda di un membro per espanderla. Quando espanso, vedrai una riga per ogni **orario di servizio** all'interno del servizio selezionato. Ogni riga mostra:
+Tocca la scheda di un membro per espanderla. Quando è espansa, vedi una riga per ogni **orario di servizio** del servizio selezionato. Ogni riga mostra:
 
-- Il **nome dell'orario di servizio** (ad esempio, "9:00 AM" o "11:00 AM")
-- I **gruppi offerti** a quell'orario di servizio, elencati sotto il nome (ad esempio, "Asilo Nido, Materna, Classe Biblica per Adulti"), in modo che tu possa vedere quali classi sono disponibili prima di scegliere
-- Un **pulsante** che mostra il gruppo attualmente assegnato, o "Seleziona Gruppo" se nessun gruppo è stato assegnato finora
+- Il **nome dell'orario di servizio** (ad esempio "9:00" oppure "11:00")
+- I **gruppi offerti** a quell'orario, elencati sotto il nome (ad esempio "Nido, Prescolare, Classe biblica per adulti"), così puoi vedere quali classi sono disponibili prima di scegliere
+- Un **pulsante** che mostra il gruppo attualmente assegnato, oppure "Seleziona gruppo" se non è ancora stato assegnato alcun gruppo
 
-Tocca il pulsante del gruppo per andare alla [schermata di selezione del gruppo](./group-assignment) dove puoi scegliere o modificare il gruppo per quella persona e orario di servizio.
+Se un orario di servizio ha una [pianificazione del check-in](../../b1-admin/attendance/setup#setting-a-check-in-schedule) e la sua finestra è chiusa in questo momento, la riga mostra **Chiuso** al posto del pulsante, con l'orario della prossima apertura quando disponibile, ad esempio **Chiuso · apre dom 9:30**. Se la persona è già registrata per quell'orario di servizio, la riga mostra invece il suo gruppo con un segno di spunta (ad esempio **Stanza bambini 1 · Registrato**), così puoi vedere dove si trova anche se la finestra è chiusa.
 
-La scheda espansa mostra anche i chip **Membro**, **Ospite** e **Volontario**. Tocca uno per impostare come questa persona sta facendo il check-in -- Membro è l'impostazione predefinita. Il tipo è importante per le stanze dei bambini: i volontari contano verso il rapporto volontario-bambino della stanza, e gli ospiti contano verso qualsiasi capacità di ospiti che la tua chiesa ha impostato.
+Tocca il pulsante del gruppo per andare alla [schermata di selezione del gruppo](./group-assignment), dove puoi scegliere o cambiare il gruppo per quella persona e quell'orario di servizio.
 
-Tocca di nuovo la scheda del membro per comprimerla.
+La scheda espansa mostra anche le etichette **Membro**, **Ospite** e **Volontario**. Toccane una per indicare come si sta registrando questa persona: Membro è l'impostazione predefinita. Il tipo conta per le stanze dei bambini: i volontari contano nel rapporto volontari-bambini della stanza, e gli ospiti contano rispetto all'eventuale capienza per ospiti impostata dalla tua chiesa.
+
+Tocca di nuovo la scheda del membro per chiuderla.
 
 :::tip
-Non hai bisogno di assegnare ogni membro della famiglia a un gruppo. Gli adulti che partecipano al servizio di culto principale possono essere lasciati senza incarico di gruppo. Assegna i gruppi solo per i membri che hanno bisogno di essere controllati in una classe o programma specifico.
+Non devi assegnare ogni membro della famiglia a un gruppo. Gli adulti che partecipano al culto principale possono restare senza assegnazione a un gruppo. Assegna gruppi solo ai membri che devono registrarsi in una classe o programma specifico.
 :::
 
-## Navigazione da Questa Schermata
+## Navigare da questa schermata {#navigating-from-this-screen}
 
-Dalla schermata di revisione della famiglia, hai tre opzioni:
+Dalla schermata di verifica del nucleo familiare hai tre opzioni:
 
-- **Espandi un membro** e tocca un pulsante di orario di servizio per [assegnare o modificare un gruppo](./group-assignment).
-- **Tocca il pulsante Aggiungi Ospite** sotto l'elenco dei membri per [aggiungere un ospite](./adding-guests) alla tua famiglia.
-- **Tocca il pulsante Check-in** in fondo allo schermo per [completare il check-in](./completing-checkin) per tutti nella tua famiglia.
+- **Espandi un membro** e tocca un pulsante dell'orario di servizio per [assegnare o cambiare un gruppo](./group-assignment).
+- **Tocca il pulsante Aggiungi ospite** sotto l'elenco dei membri per [aggiungere un ospite](./adding-guests) al tuo nucleo familiare.
+- **Tocca il pulsante Check-in** in fondo alla schermata per [completare il check-in](./completing-checkin) per tutto il nucleo familiare.
 
 :::info
-Qualsiasi incarico di gruppo da un check-in precedente allo stesso servizio viene pre-caricato automaticamente. Se i tuoi bambini frequentano gli stessi gruppi ogni settimana, potrebbe non essere necessario cambiare nulla -- basta rivedere e fare il check-in.
+Le assegnazioni ai gruppi di un check-in precedente per lo stesso servizio vengono caricate automaticamente. Se i tuoi figli frequentano sempre gli stessi gruppi ogni settimana, potresti non dover cambiare nulla: basta verificare ed effettuare il check-in.
 :::
 
-## Prossimi Passaggi
+## Passaggi successivi {#next-steps}
 
-- [Assegna gruppi](./group-assignment) ai membri della famiglia che hanno bisogno di fare il check-in in una classe o programma specifico.
+- [Assegna i gruppi](./group-assignment) ai membri della famiglia che devono registrarsi in una classe o un programma specifico.
 - [Aggiungi un ospite](./adding-guests) se qualcuno sta visitando con la tua famiglia.
-- [Completa il check-in](./completing-checkin) quando gli incarichi di tutti sembrano corretti.
+- [Completa il check-in](./completing-checkin) quando le assegnazioni di tutti risultano corrette.

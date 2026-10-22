@@ -2,95 +2,95 @@
 title: "Subsplash"
 ---
 
-# Subsplash
+# Subsplash {#subsplash}
 
 <div class="article-intro">
 
-Si vous utilisez Subsplash pour l'application de votre église, les donations ou les formulaires mais que vous voulez B1 comme système d'enregistrement pour les personnes et les donations, l'application Zapier de Subsplash peut canaliser les donations, les nouveaux profils et les réponses de formulaire dans B1 en temps réel. Remarquez que l'application Zapier de Subsplash est actuellement **uniquement des déclencheurs** — le câblage est unidirectionnel (Subsplash → B1).
+Si vous utilisez Subsplash pour votre application d'église, vos dons ou vos formulaires, mais que vous souhaitez utiliser B1 comme système de référence pour les personnes et les dons, l'application Zapier de Subsplash peut transmettre en temps réel les dons, les nouveaux profils et les réponses aux formulaires vers B1. Notez que l'application Zapier de Subsplash ne propose actuellement que des **déclencheurs** : la liaison est donc à sens unique (Subsplash → B1).
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Un compte Subsplash sur un plan qui inclut l'accès **API + Zapier** (consultez votre gestionnaire de réussite client Subsplash — ceux-ci se trouvent derrière le niveau du plan)
+- Un compte Subsplash avec un forfait incluant l'accès **API + Zapier** (renseignez-vous auprès de votre gestionnaire de réussite client Subsplash, car cet accès dépend du niveau du forfait)
 - Un compte [Zapier](https://zapier.com)
-- Un utilisateur B1Admin avec la permission **Modifier les paramètres**
+- Un utilisateur B1Admin disposant de l'autorisation **Modifier les paramètres**
 
 </div>
 
-## Ce que vous pouvez connecter
+## Ce que vous pouvez configurer {#what-you-can-wire-up}
 
-Tous les déclencheurs ci-dessous sont ceux de Subsplash. Les actions sont celles de B1.
+Tous les déclencheurs ci-dessous proviennent de Subsplash. Les actions sont celles de B1.
 
 | Déclencheur Subsplash | Action B1 |
 |---|---|
-| Nouveau don | Trouver une personne → Ajouter une donation (Créer une personne si manquante) |
-| Nouvelle promesse | Ajouter une donation (avec `notes` = « Promesse : … ») |
+| Nouveau don | Rechercher une personne → Ajouter un don (Créer la personne si elle n'existe pas) |
+| Nouvel engagement | Ajouter un don (avec `notes` = « Engagement : … ») |
 | Nouvelle personne créée | Créer une personne |
-| Profil de personne mis à jour | (aucune action B1 directe — enregistrer dans une Google Sheet pour examen manuel) |
-| Nouvelle réponse de formulaire | Créer une personne + (optionnellement) Ajouter un membre de groupe selon le formulaire |
+| Profil de personne mis à jour | (aucune action B1 directe ; enregistrer dans une feuille Google pour examen manuel) |
+| Nouvelle réponse de formulaire | Créer une personne + (facultatif) Ajouter un membre de groupe selon le formulaire |
 
-Subsplash → B1 est la seule direction que l'application de Subsplash supporte pour l'instant.
+Subsplash → B1 est la seule direction prise en charge actuellement par l'application Subsplash.
 
-## Configuration
+## Configuration {#setup}
 
-### 1. Créer une clé API B1
+### 1. Générer une clé API B1 {#1-mint-a-b1-api-key}
 
-Dans B1Admin : **Paramètres → Développeur → Clés API → Nouvelle clé API**. Scopes :
+Dans B1Admin : **Paramètres → Développeur → Clés API → Nouvelle clé API**. Portées :
 
-- `people:read` — pour rechercher le donateur par email
-- `people:write` — pour le créer s'il n'existe pas
-- `donations:write` — pour enregistrer le don
-- (Pas besoin de `settings:write` — Subsplash, pas B1, possède le déclencheur ici.)
+- `people:read` : pour rechercher le donateur par e-mail
+- `people:write` : pour le créer s'il n'existe pas
+- `donations:write` : pour enregistrer le don
+- (Aucune portée `settings:write` nécessaire : c'est Subsplash, et non B1, qui gère le déclencheur ici.)
 
-### 2. Connecter Subsplash à Zapier
+### 2. Connecter Subsplash à Zapier {#2-connect-subsplash-to-zapier}
 
-Suivez le [guide d'intégration Zapier de Subsplash](https://support.subsplash.com/en/articles/9825926-zapier-integration). Ils émettent un jeton API à partir du tableau de bord Subsplash que Zapier utilise pour authentifier le côté déclencheur.
+Suivez le [guide d'intégration Zapier de Subsplash](https://support.subsplash.com/en/articles/9825926-zapier-integration). Subsplash délivre depuis son tableau de bord un jeton API que Zapier utilise pour authentifier le déclencheur.
 
-### 3. Créer le Zap « enregistrer une donation »
+### 3. Créer le Zap « enregistrer un don » {#3-build-the-record-a-donation-zap}
 
-1. **Déclencheur** — Subsplash : Nouveau don
-2. **Action** — B1.church : Trouver une personne (par email)
-3. **Filtre / Chemin** — bifurquer sur « personne trouvée » :
-   - **Trouvée :** B1.church : Ajouter une donation. Mappez montant, date, fonds, méthode = « En ligne », notes = id de transaction Subsplash.
-   - **Non trouvée :** B1.church : Créer une personne → B1.church : Ajouter une donation (en utilisant l'id de la personne nouvellement créée).
+1. **Déclencheur** : Subsplash : Nouveau don
+2. **Action** : B1.church : Rechercher une personne (par e-mail)
+3. **Filtre / Chemin** : bifurquer selon « personne trouvée » :
+   - **Trouvée** : B1.church : Ajouter un don. Associez le montant, la date, le fonds, le mode = « En ligne » et les notes = identifiant de transaction Subsplash.
+   - **Non trouvée** : B1.church : Créer une personne → B1.church : Ajouter un don (en utilisant l'identifiant de la personne nouvellement créée).
 
-Activez le Zap. Les futures donations Subsplash flux vers **B1Admin → Donations** en quelques secondes.
+Activez le Zap. Les futurs dons Subsplash apparaîtront dans **B1Admin → Dons** en quelques secondes.
 
-## Recettes courantes
+## Recettes courantes {#common-recipes}
 
-### Envoyer un remerciement quand un premier don arrive
+### Envoyer un remerciement lors d'un premier don {#send-a-thank-you-when-a-first-time-gift-lands}
 
-- **Déclencheur** — Subsplash : Nouveau don
-- **Action** — Filtre par Zapier : continuer uniquement si c'est le premier don du donateur (utilisez une *Lookup Table* sur l'email du donateur contre une Google Sheet de donateurs passés, ou une étape *Chemins* Zapier sur la date de création du donateur)
-- **Action** — Mailchimp / SMTP / SendGrid : envoyer un message de remerciement pour le premier don
-- **Action** — B1.church : Ajouter une donation (comme d'habitude)
+- **Déclencheur** : Subsplash : Nouveau don
+- **Action** : Filtre Zapier : ne poursuivre que s'il s'agit du tout premier don du donateur (utilisez une *table de correspondance* sur l'e-mail du donateur par rapport à une feuille Google des anciens donateurs, ou une étape *Chemins* de Zapier basée sur la date de création du donateur)
+- **Action** : Mailchimp / SMTP / SendGrid : envoyer le message de remerciement pour le premier don
+- **Action** : B1.church : Ajouter un don (comme d'habitude)
 
-### Filtrer les promesses du flux de dons régulier
+### Sortir les engagements du flux de dons habituel {#filter-pledges-off-the-regular-giving-flow}
 
-- **Déclencheur** — Subsplash : Nouvelle promesse
-- **Action** — B1.church : Ajouter une donation avec `notes = "Promesse — Subsplash"` et un fonds appelé `Promesses` (séparé de votre fonds de fonctionnement) pour que vous puissiez signaler les promesses indépendamment dans **B1Admin → Donations → Rapports**.
+- **Déclencheur** : Subsplash : Nouvel engagement
+- **Action** : B1.church : Ajouter un don avec `notes = "Engagement — Subsplash"` et un fonds nommé `Engagements` (distinct de votre fonds de fonctionnement), afin de pouvoir établir des rapports sur les engagements séparément dans **B1Admin → Dons → Résumé**.
 
-### Synchroniser les nouveaux utilisateurs d'applications en tant que personnes B1
+### Synchroniser les nouveaux utilisateurs de l'application en tant que personnes B1 {#sync-new-app-users-as-b1-people}
 
-- **Déclencheur** — Subsplash : Nouvelle personne créée
-- **Action** — B1.church : Créer une personne, remplissant le nom, l'email, le téléphone. Taguez dans B1 en ajoutant la nouvelle personne à un groupe comme « Utilisateurs d'application Subsplash ».
+- **Déclencheur** : Subsplash : Nouvelle personne créée
+- **Action** : B1.church : Créer une personne, en renseignant le nom, l'e-mail et le téléphone. Marquez-la dans B1 en l'ajoutant à un groupe comme « Utilisateurs de l'application Subsplash ».
 
-## Limites et remarques
+## Limites et remarques {#limits-notes}
 
-- **L'application Zapier de Subsplash est uniquement des déclencheurs.** Si vous voulez des changements côté B1 (par exemple une nouvelle personne B1 doit aussi atterrir dans Subsplash), vous devriez construire ce pont à partir des déclencheurs de l'application Zapier B1 appelant l'API REST de Subsplash via une action *Webhooks by Zapier — POST* personnalisée. C'est une intégration personnalisée, pas une recette.
-- **L'accès à l'API est limité par plan.** Si la connexion Zapier échoue avec `403 Forbidden`, votre plan Subsplash n'inclut probablement pas l'accès à l'API — contactez votre gestionnaire de réussite client.
-- **Le mappage des fonds est manuel.** Subsplash passe un nom de campagne ou de catégorie; B1 a besoin d'un id de fonds numérique. Soit codez en dur le fonds dans le Zap, soit maintenez une *Lookup Table* Zapier mappant les campagnes Subsplash aux fonds B1.
+- **L'application Zapier de Subsplash ne propose que des déclencheurs.** Si vous voulez des modifications côté B1 (par exemple qu'une nouvelle personne B1 apparaisse aussi dans Subsplash), il faudrait créer ce pont à partir des déclencheurs de l'application Zapier de B1 en appelant l'API REST de Subsplash via une action personnalisée *Webhooks by Zapier — POST*. Il s'agit d'une intégration sur mesure, et non d'une recette.
+- **L'accès à l'API dépend du forfait.** Si la connexion Zapier échoue avec `403 Forbidden`, votre forfait Subsplash n'inclut probablement pas l'accès à l'API : contactez votre gestionnaire de réussite client.
+- **La correspondance des fonds est manuelle.** Subsplash transmet le nom d'une campagne ou d'une catégorie, alors que B1 a besoin d'un identifiant numérique de fonds. Soit vous codez le fonds en dur dans le Zap, soit vous maintenez une *table de correspondance* Zapier associant les campagnes Subsplash aux fonds B1.
 
-## Dépannage
+## Dépannage {#troubleshooting}
 
-- **Aucun déclencheur ne se déclenche après un don** — vérifiez dans votre tableau de bord Zapier Subsplash que la connexion affiche toujours *Connectée*. Si le jeton API a été tourné du côté Subsplash, le Zap s'arrête silencieusement; reconnectez.
-- **B1 *Ajouter une donation* échoue avec 422** — le plus souvent un `fundId` manquant ou non reconnu. Énumérez vos fonds via **B1Admin → Donations → Fonds** et copiez l'id exact dans l'étape Zap.
-- **Le premier don se déclenche deux fois** — Subsplash re-livre occasionnellement un déclencheur si Zapier a raté son ack. Ajoutez un *Filtre par Zapier* sur l'id du don (Subsplash en envoie un dans le payload) pour supprimer les doublons.
+- **Aucun déclencheur ne se lance après un don** : vérifiez dans le tableau de bord Zapier de Subsplash que la connexion affiche toujours *Connecté*. Si le jeton API a été renouvelé côté Subsplash, le Zap s'arrête silencieusement ; reconnectez-le.
+- **L'action *Ajouter un don* de B1 échoue avec une erreur 422** : le plus souvent, `fundId` est absent ou non reconnu. Listez vos fonds via **B1Admin → Dons → Fonds** et copiez l'identifiant exact dans l'étape du Zap.
+- **Le premier don déclenche deux fois** : Subsplash renvoie parfois un déclencheur si Zapier n'a pas accusé réception. Ajoutez un *Filtre Zapier* sur l'identifiant du don (Subsplash en envoie un dans la charge utile) pour supprimer les doublons.
 
-## Voir aussi
+## Voir aussi {#see-also}
 
-- [Donorbox](./donorbox) — même forme de recette, plate-forme de donation différente
-- [Zapier (aperçu)](../zapier) — côté B1 de chaque recette Zapier
-- [Guide d'intégration Zapier Subsplash](https://support.subsplash.com/en/articles/9825926-zapier-integration) (docs Subsplash)
+- [Donorbox](./donorbox) : même structure de recette, avec une autre plateforme de dons
+- [Zapier (vue d'ensemble)](../zapier) : le côté B1 de toutes les recettes Zapier
+- [Guide d'intégration Zapier de Subsplash](https://support.subsplash.com/en/articles/9825926-zapier-integration) (documentation de Subsplash)

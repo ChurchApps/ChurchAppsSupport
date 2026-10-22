@@ -22,7 +22,7 @@ The standalone **Timeline** tab has been retired. The member portal now opens on
 
 ## The Me Page
 
-[The Me Page](../getting-started/me-page) is the closest replacement for the old feed. It lists what is coming up for you -- serving assignments, event registrations, and group events -- along with your most recent notifications, and links straight to your profile, notification preferences, messages, giving, and registrations.
+[The Me Page](../getting-started/me-page) is the closest replacement for the old feed. It lists what is coming up for you -- serving assignments, event registrations, and group events -- along with the forms you've submitted, your attendance history, and your most recent notifications, and links straight to your profile, notification preferences, messages, giving, and registrations.
 
 ## Notifications
 

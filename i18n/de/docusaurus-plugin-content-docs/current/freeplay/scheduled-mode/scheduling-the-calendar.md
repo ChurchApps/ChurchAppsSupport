@@ -6,69 +6,69 @@ title: "Den Kalender planen"
 
 <div class="article-intro">
 
-Die Seite **Kalender** in FreePlay Admin legt fest, was jede Bildschirmgruppe wann abspielt. Fügen Sie einen Zeitplan für eine Playlist, einen Gottesdienstplan oder einen Anbieterordner hinzu und stellen Sie ein, ob er wöchentlich wiederholt oder einmalig abgespielt wird. Ist nichts geplant, läuft die Standardschleife der Gruppe.
+Die Seite **Kalender** in FreePlay Admin legt fest, was jede Bildschirmgruppe wann abspielt. Fügen Sie einen Zeitplan für eine Wiedergabeliste, einen Gottesdienstplan oder einen Anbieterordner hinzu und stellen Sie ihn so ein, dass er wöchentlich wiederholt wird oder einmalig läuft. Ist nichts eingeplant, spielt die Standardschleife der Gruppe.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Erstellen Sie mindestens eine Bildschirmgruppe. Siehe [Bildschirme und Gruppen verwalten](./managing-screens#screen-groups)
-- [Erstellen Sie eine Playlist](./building-playlists) oder richten Sie in B1 Admin einen Planungstyp ein
+- Legen Sie mindestens eine Bildschirmgruppe an. Siehe [Bildschirme und Gruppen verwalten](./managing-screens#screen-groups)
+- [Erstellen Sie eine Wiedergabeliste](./building-playlists) oder richten Sie in B1 Admin einen Plantyp ein
 
 </div>
 
 ## Den Kalender lesen
 
-1. Gehen Sie zu **Kalender**.
+1. Öffnen Sie **Kalender**.
 2. Wählen Sie oben über die Reiter eine Bildschirmgruppe aus. Jeder Reiter zeigt, wie viele Zeitpläne die Gruppe hat.
-3. Die Wochenansicht reicht von Montag bis Sonntag, von 6 bis 22 Uhr. Eine rote Linie markiert die aktuelle Uhrzeit.
-4. Verwenden Sie die Pfeile, um zur vorherigen oder nächsten Woche zu wechseln, oder klicken Sie auf **Heute**, um zur aktuellen Woche zurückzukehren.
+3. Die Wochenansicht läuft von Montag bis Sonntag, von 6 bis 22 Uhr. Eine rote Linie markiert die aktuelle Uhrzeit.
+4. Mit den Pfeilen wechseln Sie zur vorherigen oder nächsten Woche, mit **Heute** kehren Sie zu dieser Woche zurück.
 
-Der Untertitel der Seite zeigt die Zeitzone des Kalenders. Zeitpläne richten sich nach der Zeitzone Ihrer Kirche. Ist für Ihre Kirche keine Zeitzone festgelegt, verwendet FreePlay die Zeitzone Ihres Standorts.
+Der Untertitel der Seite zeigt die Zeitzone des Kalenders. Zeitpläne richten sich nach der Zeitzone Ihrer Kirche, die Sie in B1 Admin unter [Kircheninformationen](../../b1-admin/settings/church-settings.md#time-zone) festlegen. Hat Ihre Kirche keine Zeitzone, verwendet FreePlay die Zeitzone Ihres Standorts. Kalender und Fernseher verwenden dieselbe Zeitzone: Ein Block, der auf dem Kalender um 9:00 Uhr steht, läuft also auch um 9:00 Uhr auf dem Bildschirm, selbst wenn Ihr Computer auf eine andere Zeitzone eingestellt ist.
 
-Zeitpläne sind nach Typ farblich gekennzeichnet. Eine Legende erklärt die Farben:
+Zeitpläne sind nach Art farblich gekennzeichnet. Eine Legende erklärt die Farben:
 
-- **Standardschleife** - Schraffierter Hintergrund, wird hinter allem angezeigt, wenn die Gruppe eine Standardschleife hat
-- **Playlist**
+- **Standardschleife** – Schraffierter Hintergrund, der hinter allem angezeigt wird, wenn die Gruppe eine Standardschleife hat
+- **Wiedergabeliste**
 - **Gottesdienstplan**
 - **Anbieterordner**
 
-Jeder Block zeigt seinen Namen; höhere Blöcke zeigen außerdem die Zeiten, ob er sich wiederholt (**wöchentlich** oder **einmalig**) und was passiert, wenn er vorzeitig endet.
+Jeder Block zeigt seinen Namen. Höhere Blöcke zeigen zusätzlich die Uhrzeiten, ob er sich wiederholt (**wöchentlich** oder **einmalig**) und was geschieht, wenn er früher endet.
 
 ## Die Standardschleife festlegen
 
-Die Standardschleife läuft auf den Bildschirmen der Gruppe, wann immer nichts geplant ist.
+Die Standardschleife läuft auf den Bildschirmen der Gruppe, sobald nichts eingeplant ist.
 
-1. Klicken Sie auf der Seite **Kalender** in der Kopfzeile auf **Standardschleife…**. Ist bereits eine Standardschleife festgelegt, zeigt die Schaltfläche **Standardschleife:** gefolgt vom Namen der Playlist.
-2. Wählen Sie eine **Playlist** oder wählen Sie **Keine – Bildschirm bleibt dunkel**.
+1. Klicken Sie auf der Seite **Kalender** im Kopfbereich auf **Standardschleife…**. Ist bereits eine Standardschleife festgelegt, zeigt die Schaltfläche **Standardschleife:** gefolgt vom Namen der Wiedergabeliste.
+2. Wählen Sie eine **Wiedergabeliste** oder wählen Sie **Keine – Bildschirm bleibt dunkel**.
 3. Klicken Sie auf **Speichern**.
 
 ## Einen Zeitplan hinzufügen
 
-Es gibt drei Möglichkeiten, einen neuen Zeitplan zu beginnen:
+Auf drei Wegen legen Sie einen neuen Zeitplan an:
 
-- Klicken Sie auf eine freie Stelle im Kalender. Das Formular öffnet sich mit diesem Tag und der halben Stunde bereits ausgefüllt.
-- Klicken Sie in der Kopfzeile auf **Zeitplan hinzufügen**.
-- Wählen Sie **Zeitplan hinzufügen** in der Befehlspalette (**Strg+K** oder **⌘K**).
+- Klicken Sie auf eine freie Stelle im Kalender. Das Formular öffnet sich mit dem Tag und der halben Stunde bereits ausgefüllt.
+- Klicken Sie im Kopfbereich auf **Zeitplan hinzufügen**.
+- Wählen Sie in der Befehlspalette (**Strg+K** bzw. **⌘K**) **Zeitplan hinzufügen**.
 
-Füllen Sie danach das Formular aus:
+Füllen Sie dann das Formular aus:
 
-1. **Abspielen** - Wählen Sie, was abgespielt wird:
-   - **Playlists** - Jede Playlist, die Sie erstellt haben
-   - **Gottesdienstpläne** - Ein Planungstyp aus B1 Admin, mit **(aktueller Plan)** gekennzeichnet. Der Bildschirm spielt jede Woche den jeweils aktuellen Plan für diesen Planungstyp ab
-   - **Anbieterordner…** - Öffnet **Anbieterordner auswählen**. Navigieren Sie zu einem Ordner und klicken Sie auf **Diesen Ordner verwenden**. Um später einen anderen Ordner auszuwählen, klicken Sie auf **Ändern**
-2. **Wiederholung** - Wählen Sie die Wochentage aus, an denen dieser Zeitplan läuft. Für ein einzelnes Datum aktivieren Sie stattdessen **Einmalig** und wählen das **Datum** aus.
-3. **Beginn** und **Ende** - Die Zeiten, zu denen der Zeitplan beginnt und endet.
-4. **Wenn er vorzeitig endet** - Was geschehen soll, wenn der Inhalt vor der Endzeit ausgeht:
-   - **Bis zur Endzeit wiederholen** - Beginnt wieder von vorn. Gut für Hinweisschleifen, Ankündigungen und Countdowns
-   - **Im Takt des Lehrers** - Folien warten auf die Fernbedienung des Lehrers. Die Lektion bleibt nach der Endzeit stehen, bis zur letzten Folie
+1. **Abspielen** – Wählen Sie, was läuft:
+   - **Wiedergabelisten** – jede Wiedergabeliste, die Sie erstellt haben
+   - **Gottesdienstpläne** – ein Plantyp aus B1 Admin, mit **(aktueller Plan)** gekennzeichnet. Der Bildschirm spielt in jeder Woche den Plan ab, der für diesen Plantyp aktuell ist, einschließlich Lektionen von Go Curriculum (auch angepasster), die die Go-Anmeldung des Dienstbereichs des Plantyps verwenden
+   - **Anbieterordner…** – Öffnet **Anbieterordner auswählen**. Navigieren Sie zu einem Ordner und klicken Sie auf **Diesen Ordner verwenden**. Um später einen anderen Ordner zu wählen, klicken Sie auf **Ändern**
+2. **Wiederholt sich** – Wählen Sie die Wochentage, an denen dieser Zeitplan läuft. Für ein einzelnes Datum aktivieren Sie stattdessen **Einmalig** und wählen das **Datum**.
+3. **Beginn** und **Ende** – Die Uhrzeiten, zu denen der Zeitplan beginnt und endet.
+4. **Wenn er früher endet** – Was geschieht, wenn der Inhalt vor der Endzeit zu Ende ist:
+   - **Bis zur Endzeit wiederholen** – Beginnt von vorn. Gut für Beschilderungsschleifen, Ankündigungen und Countdowns
+   - **Im Takt des Lehrers** – Folien warten auf die Fernbedienung der Lehrkraft. Die Lektion bleibt über die Endzeit hinaus stehen, bis zur letzten Folie
    - **Einmal abspielen, dann zur Standardschleife zurückkehren**
-5. Stellen Sie bei sich wiederholenden Zeitplänen unter **Beginnt am** das erste Datum ein. Wählen Sie unter **Endet** entweder **Nie** oder **Am Datum** und geben Sie ein **Enddatum** ein.
+5. Bei wiederholten Zeitplänen setzen Sie **Beginnt am** auf das erste Datum. Unter **Endet** wählen Sie **Nie** oder **Am Datum** und geben ein **Enddatum** ein.
 6. Klicken Sie auf **Speichern**.
 
 :::info
-**Im Takt des Lehrers** ersetzt die ältere Option „letzte Folie halten“. Zeitpläne, die mit dieser Option gespeichert wurden, laufen jetzt als „Im Takt des Lehrers“.
+**Im Takt des Lehrers** ersetzt die frühere Option „letzte Folie halten“. Zeitpläne, die mit dieser Option gespeichert wurden, laufen nun im Takt des Lehrers.
 :::
 
 ## Einen Zeitplan bearbeiten oder löschen
@@ -78,14 +78,14 @@ Füllen Sie danach das Formular aus:
 
 ## Überlappende Zeitpläne
 
-Überlappen sich zwei Zeitpläne, zeigt das Formular eine Warnung: **Überschneidet sich mit einem anderen Zeitplan. Der später beginnende gewinnt.** Während der spätere Zeitplan läuft, spielen die Bildschirme ihn ab. Wenn er endet, kehren sie zum früheren Zeitplan zurück, sofern dieser noch läuft.
+Überschneiden sich zwei Zeitpläne, zeigt das Formular eine Warnung: **Überschneidet sich mit einem anderen Zeitplan. Der später beginnende gewinnt.** Solange der spätere Zeitplan läuft, spielen die Bildschirme ihn ab. Endet er, kehren sie zum früheren Zeitplan zurück, sofern dieser noch läuft.
 
 ## Wie Bildschirme Änderungen übernehmen
 
-Gekoppelte Bildschirme laden alles herunter, was in den nächsten 7 Tagen geplant ist, und suchen selbstständig nach Änderungen. Sie müssen den Fernseher nach einer Bearbeitung des Kalenders nicht anfassen. Um zu sehen, wann ein Bildschirm alles Nötige hat, prüfen Sie **Bereit bis** auf der [Seite Bildschirme](./managing-screens).
+Gekoppelte Bildschirme laden alles herunter, was für die nächsten 7 Tage eingeplant ist, und suchen selbstständig nach Änderungen. Nach einer Bearbeitung des Kalenders müssen Sie den Fernseher nicht anfassen. Um zu prüfen, ob ein Bildschirm alles hat, was er braucht, sehen Sie auf der [Seite Bildschirme](./managing-screens) unter **Bereit bis** nach.
 
 ## Verwandte Artikel
 
-- **[Playlists erstellen](./building-playlists)** - Erstellen Sie die Playlists, die Sie planen
-- **[Geplante Wiedergabe auf dem Fernseher](./scheduled-playback)** - Wie Lektionen im Takt des Lehrers und die Fernbedienung auf dem Fernseher funktionieren
-- **[Bildschirme und Gruppen verwalten](./managing-screens)** - Gruppen hinzufügen und die Downloads jedes Bildschirms prüfen
+- **[Wiedergabelisten erstellen](./building-playlists)** – Erstellen Sie die Wiedergabelisten, die Sie einplanen
+- **[Geplante Wiedergabe auf dem Fernseher](./scheduled-playback)** – Wie Lektionen im Takt des Lehrers und die Fernbedienung auf dem Fernseher funktionieren
+- **[Bildschirme und Gruppen verwalten](./managing-screens)** – Gruppen hinzufügen und die Downloads jedes Bildschirms prüfen

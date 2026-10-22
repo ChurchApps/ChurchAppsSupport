@@ -179,11 +179,13 @@ The API supports OAuth 2.0 for third-party integrations. Two grant types are ava
 ### Authorization Code Flow
 
 1. **Authorize:** `POST /membership/oauth/authorize` (JWT required)
-   - Body: `{ "client_id": "...", "redirect_uri": "...", "response_type": "code", "scope": "...", "state": "..." }`
+   - Body: `{ "client_id": "...", "redirect_uri": "...", "response_type": "code", "scope": "...", "state": "...", "code_challenge": "...", "code_challenge_method": "S256" }`
+   - `code_challenge` / `code_challenge_method` (PKCE, `S256` only) are required for public clients with no secret
    - Returns: `{ "code": "...", "state": "..." }`
 
 2. **Exchange code for token:** `POST /membership/oauth/token` (Public)
-   - Body: `{ "grant_type": "authorization_code", "code": "...", "client_id": "...", "client_secret": "...", "redirect_uri": "..." }`
+   - Body: `{ "grant_type": "authorization_code", "code": "...", "client_id": "...", "client_secret": "...", "redirect_uri": "...", "code_verifier": "..." }`
+   - Send `code_verifier` when the authorize step used a `code_challenge`; public clients omit `client_secret`. JSON or form-encoded bodies are accepted
    - Returns: `{ "access_token": "...", "token_type": "Bearer", "expires_in": 43200, "refresh_token": "...", "scope": "..." }`
 
 3. **Refresh token:** `POST /membership/oauth/token` (Public)
@@ -214,6 +216,7 @@ For devices without a browser (TV apps, kiosks):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Get client by client ID (secret redacted) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Create or update a client |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Delete a client |
+| POST | `/membership/oauth/register` | Public | — | Dynamic client registration (RFC 7591) for public clients such as MCP connectors. See [Connected Apps](../connected-apps#dynamic-client-registration) |
 
 ### Device Approval Endpoints
 

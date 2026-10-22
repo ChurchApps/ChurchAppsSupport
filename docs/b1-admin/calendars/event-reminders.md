@@ -28,7 +28,7 @@ You configure reminders in the **Reminders** section of the event.
 
 1. Turn on **Enable reminders**.
 2. Choose **When** to send. Pick up to three timings: **7 days before**, **3 days before**, **1 day before**, and **Day of**.
-3. Set the **Time of day** the reminder should go out (default is **9:00 AM**, in your church's local time zone).
+3. Set the **Time of day** the reminder should go out (default is **9:00 AM**, in your church's [time zone](../settings/church-settings.md#time-zone)).
 4. Choose **Who** should be reminded (see [Who Gets Reminded](#who-gets-reminded) below).
 5. Optionally add a **Message**. Leave it blank to use the default wording, or write your own -- you can include `{{eventTitle}}` and it will be replaced with the event's name.
 6. Choose the **Channels**: **Push** notification, **Email**, and, if your church has a [texting provider](../settings/church-settings.md#texting) connected, **Text**.

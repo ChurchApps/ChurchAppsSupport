@@ -2,198 +2,198 @@
 title: "ChatGPT"
 ---
 
-# ChatGPT
+# ChatGPT {#chatgpt}
 
 <div class="article-intro">
 
-Koble OpenAI's ChatGPT til kirkens B1-data og la det gjøre det tunge løftet. Når det er koblet, kan ChatGPT se dine live kirkepost og hjelpe deg med å få ting gjort som ellers ville ta flere trinn i B1 Admin — eller som du ikke kunne finne ut hvordan å gjøre i det hele tatt.
+Koble OpenAIs ChatGPT til kirkens B1-data og la den gjøre det tunge arbeidet. Når den er koblet til, kan ChatGPT se de levende kirkeregistrene dine og hjelpe deg med ting som ellers ville tatt flere steg i B1 Admin -- eller ting du ikke engang visste hvordan du skulle gjøre.
 
-**Noen ting du kan be det om å gjøre:**
-- *"Sett opp søndagsskole-klasserom og plasser hver lærer i riktig rom basert på deres gruppe"*
-- *"Vis meg alle som møtte opp forrige uke men ikke er tildelt til en smågruppe"*
-- *"Oppsummerer denne månedens giving etter fond"*
-- *"Hvem er vår nyeste medlemmer og har vi fulgt opp med dem?"*
-- *"Jeg kan ikke finne ut hvordan å gjøre X i B1 — kan du gå gjennom det med meg eller gjøre det for meg?"*
+**Noe du kan be den om:**
+- *«Sett opp søndagsskoleklasserom og plasser hver lærer i riktig rom basert på gruppen sin»*
+- *«Vis meg alle som var med sist uke, men som ikke er tildelt en smågruppe»*
+- *«Oppsummer denne månedens giving per fond»*
+- *«Hvem er våre nyeste medlemmer, og har vi fulgt opp dem?»*
+- *«Jeg finner ikke ut hvordan jeg gjør X i B1 -- kan du gå meg gjennom det eller gjøre det for meg?»*
 
-ChatGPT henter svarene og tar handlingene direkte fra dine B1-data, begrenset til din kirke bare.
+ChatGPT henter svarene og utfører handlingene direkte fra B1-dataene dine, begrenset til bare din kirke.
 
 :::tip Anbefalt: Claude Code
-For den glatteste MCP-opplevelsen er [Claude Code](./claude) den anbefalte klienten — oppsett tar en kommando og det fungerer out of the box. ChatGPT fungerer også og er et flott valg hvis laget ditt allerede bruker det.
+For den jevneste MCP-opplevelsen er [Claude Code](./claude) den anbefalte klienten -- oppsettet tar én kommando, og det fungerer rett ut av boksen. ChatGPT fungerer også og er et godt valg hvis teamet ditt allerede bruker det.
 :::
 
-To stier støttes: **MCP Connector** (innebygd i ChatGPT) og et **tilpasset GPT** for team som ønsker en delbar assistent.
+Det støttes to veier: **MCP-konnektoren** (innebygd i ChatGPT) og en **egendefinert GPT** for team som vil ha en assistent de kan dele.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du begynner</h4>
 
-- En kirkeadministrator med **Rediger innstillinger**-tilgang i B1 Admin (nødvendig for å opprette en API-nøkkel)
-- En **ChatGPT Plus, Pro, Team, eller Enterprise**-konto
+- En kirkeadministrator med tillatelsen **Rediger innstillinger** i B1 Admin (nødvendig for å opprette en API-nøkkel)
+- En konto for **ChatGPT Plus, Pro, Team eller Enterprise**
 
 </div>
 
-## Hurtig oppsett-guide
+## Hurtigveiledning for oppsett {#quick-setup-guide}
 
-Følg disse trinnene i **ChatGPT desktop-appen** (Mac/Windows). Skjermene kan se litt annerledes ut i andre versjoner.
+Følg disse stegene i **ChatGPT-skrivebordsappen** (Mac/Windows). Skjermbildene kan se litt annerledes ut i andre versjoner.
 
 ---
 
-**Trinn 1 — Få din API-nøkkel fra B1 Admin først**
+**Steg 1 — Hent API-nøkkelen din fra B1 Admin først**
 
-Før du berører ChatGPT, opprett en API-nøkkel i B1 Admin slik at du har den klar til å lime inn:
+Før du rører ChatGPT, oppretter du en API-nøkkel i B1 Admin slik at du har den klar til å lime inn:
 
 1. Gå til **Innstillinger → Utvikler → API-nøkler** i B1 Admin
-2. Klikk **Ny API-nøkkel**, gi den navn `ChatGPT`, velg dine områder (start med `people:read`, `groups:read`, `attendance:read`, `donations:read`), og klikk **Lagre**
-3. Kopier `cak_…`-nøkkelen — den vises bare en gang
+2. Klikk **Ny API-nøkkel**, gi den navnet `ChatGPT`, velg omfangene (start med `people:read`, `groups:read`, `attendance:read`, `donations:read`), og klikk **Lagre**
+3. Kopier `cak_…`-nøkkelen -- den vises bare én gang
 
 ---
 
-**Trinn 2 — Klikk på navnet ditt i nedre venstre hjørne av ChatGPT**
+**Steg 2 — Klikk på navnet ditt nederst til venstre i ChatGPT**
 
-![Klikk på profileringsnavn](/img/guides/chatgpt-mcp/01.png)
-
----
-
-**Trinn 3 — Klikk Innstillinger**
-
-![Klikk Innstillinger fra menyen](/img/guides/chatgpt-mcp/02.png)
+![Klikk på profilnavnet ditt](/img/guides/chatgpt-mcp/01.png)
 
 ---
 
-**Trinn 4 — Klikk Programtillegg i venstre sidestolpe**
+**Steg 3 — Klikk på Innstillinger**
 
-![Klikk Programtillegg under Integrasjoner](/img/guides/chatgpt-mcp/03.png)
-
----
-
-**Trinn 5 — Klikk fanen MCPs**
-
-![Klikk fanen MCPs](/img/guides/chatgpt-mcp/04.png)
-
-Du vil se eventuelle MCP-servere du allerede har lagt til her.
+![Klikk på Innstillinger i menyen](/img/guides/chatgpt-mcp/02.png)
 
 ---
 
-**Trinn 6 — Klikk Legg til → Legg til MCP-server**
+**Steg 4 — Klikk på Plugins i venstre sidefelt**
 
-![Klikk Legg til deretter Legg til MCP-server](/img/guides/chatgpt-mcp/06.png)
+![Klikk på Plugins under Integrasjoner](/img/guides/chatgpt-mcp/03.png)
 
 ---
 
-**Trinn 7 — Fyll ut skjemaet og klikk Lagre**
+**Steg 5 — Klikk på fanen MCPs**
 
-![Koble til et tilpasset MCP-skjema](/img/guides/chatgpt-mcp/07.png)
+![Klikk på fanen MCPs](/img/guides/chatgpt-mcp/04.png)
 
-Klikk **Streamable HTTP**, deretter fyll inn:
+Du ser eventuelle MCP-servere du allerede har lagt til her.
 
-| Felt | Hva du skal skrive |
+---
+
+**Steg 6 — Klikk på Legg til → Legg til MCP-server**
+
+![Klikk på Legg til og deretter Legg til MCP-server](/img/guides/chatgpt-mcp/06.png)
+
+---
+
+**Steg 7 — Fyll ut skjemaet og klikk Lagre**
+
+![Skjema for å koble til en egendefinert MCP](/img/guides/chatgpt-mcp/07.png)
+
+Klikk **Streamable HTTP**, og fyll deretter inn:
+
+| Felt | Hva du skal skrive inn |
 |---|---|
-| **Navn** | `B1 Church` (eller ethvert navn du liker) |
+| **Navn** | `B1 Church` (eller et annet navn du liker) |
 | **Type** | Klikk **Streamable HTTP** |
 | **URL** | `https://api.churchapps.org/mcp` |
-| **Bearer token env var** | La det stå tomt |
-| **Hode** | Klikk **+ Legg til hode** → Nøkkel: `Authorization` → Verdi: se nedenfor |
+| **Miljøvariabel for bearer-token** | La stå tomt |
+| **Headere** | Klikk **+ Legg til header** → Nøkkel: `Authorization` → Verdi: se nedenfor |
 
-![Utfylt eksempel som viser Authorization i nøkkel og Bearer-nøkkel i verdi](/img/guides/chatgpt-mcp/08.png)
+![Utfylt eksempel som viser Authorization i Nøkkel og Bearer-nøkkel i Verdi](/img/guides/chatgpt-mcp/08.png)
 
 - **Nøkkel:** `Authorization`
-- **Verdi:** `Bearer cak_yourkey` — ordet Bearer, et mellomrom, deretter din nøkkel
+- **Verdi:** `Bearer cak_dinnøkkel` -- ordet Bearer, et mellomrom, og så nøkkelen din
 
 Klikk **Lagre**.
 
-Det er alt! Gå tilbake til en chat og spør noe som *"Hvor mange mennesker er i kirken vår?"* og ChatGPT vil hente svaret direkte fra B1.
+Det var alt! Gå tilbake til en chat og spør noe i stil med *«Hvor mange personer er det i kirken vår?»*, og ChatGPT henter svaret rett fra B1.
 
 ---
 
-## Trinn 1 — Opprett en API-nøkkel i B1 Admin
+## Steg 1 — Opprett en API-nøkkel i B1 Admin
 
-Hver tilkobling til B1 bruker en API-nøkkel som du oppretter. Denne nøkkelen identifiserer kirken din, kontrollerer hva ChatGPT kan se, og kan tilbakekalles når som helst.
+Hver tilkobling til B1 bruker en API-nøkkel som du oppretter. Denne nøkkelen identifiserer kirken din, styrer hva ChatGPT kan se, og kan når som helst tilbakekalles.
 
 1. Åpne **B1 Admin** og gå til **Innstillinger → Utvikler → API-nøkler**.
 2. Klikk **Ny API-nøkkel**.
-3. Gi nøkkelen et navn — `ChatGPT` fungerer godt.
-4. Velg områdene (tillatelsene) ChatGPT bør ha. Et godt start-sett for en skrivebeskyttet assistent:
+3. Gi nøkkelen et navn -- `ChatGPT` fungerer fint.
+4. Velg omfangene (tillatelsene) ChatGPT skal ha. Et godt utgangspunkt for en assistent som bare leser:
    - `people:read`
    - `groups:read`
    - `attendance:read`
    - `donations:read`
 5. Klikk **Lagre**.
-6. Kopier hele nøkkelen som vises — den starter med `cak_` og vises **bare en gang**. Lim den inn noe sted sikkert.
+6. Kopier hele nøkkelen som vises -- den begynner med `cak_` og vises **bare én gang**. Lim den inn et trygt sted.
 
 :::tip
-Hvis du noen gang må tilbakekalle ChatGPT-tilgang, gå tilbake til **Innstillinger → Utvikler → API-nøkler** og slett nøkkelen. Tilgangen slutter umiddelbart.
+Hvis du noen gang må tilbakekalle ChatGPTs tilgang, går du tilbake til **Innstillinger → Utvikler → API-nøkler** og sletter nøkkelen. Tilgangen avsluttes umiddelbart.
 :::
 
 ---
 
-## Banen A — ChatGPT MCP Connector (Anbefalt)
+## Sti A — ChatGPT MCP-konnektor (anbefalt) {#path-a--chatgpt-mcp-connector-recommended}
 
-Dette er den enkleste måten å koble til. ChatGPT har en innebygd "Koble til et tilpasset MCP"-dialog som fungerer direkte med B1s MCP-server — ingen tilpasset GPT nødvendig.
+Dette er den enkleste måten å koble til på. ChatGPT har en innebygd dialog «Koble til en egendefinert MCP» som fungerer direkte mot B1s MCP-server -- ingen egendefinert GPT er nødvendig.
 
-### Hva du trenger
+### Hva du trenger {#what-you-need}
 
-- Din `cak_…`-nøkkel fra Trinn 1
+- `cak_…`-nøkkelen din fra steg 1
 
-### Åpne MCP-koblingen i ChatGPT
+### Åpne MCP-konnektoren i ChatGPT {#open-the-mcp-connector-in-chatgpt}
 
-I ChatGPT, gå til **Innstillinger → Programtillegg → MCPs** og klikk **Legg til → Legg til MCP-server**.
+I ChatGPT går du til **Innstillinger → Plugins → MCPs** og klikker **Legg til → Legg til MCP-server**.
 
-### Fyll ut dialogen
+### Fyll ut dialogen {#fill-in-the-dialog}
 
-Klikk **Streamable HTTP**, deretter bruk disse verdiene:
+Klikk **Streamable HTTP**, og bruk deretter disse verdiene:
 
 | Felt | Verdi |
 |---|---|
-| **Navn** | `B1 Church` (eller ethvert navn du liker) |
+| **Navn** | `B1 Church` (eller et annet navn du liker) |
 | **Type** | **Streamable HTTP** |
 | **URL** | `https://api.churchapps.org/mcp` |
-| **Bearer token env var** | La det stå tomt |
-| **Hode** | Nøkkel: `Authorization` / Verdi: `Bearer cak_yourprefix.yoursecret` |
+| **Miljøvariabel for bearer-token** | La stå tomt |
+| **Headere** | Nøkkel: `Authorization` / Verdi: `Bearer cak_dinprefiks.dinhemmelighet` |
 
-For verdifelt, skriv ordet `Bearer`, ett mellomrom, deretter lim inn din nøkkel — alt i samme boks. Eksempel: `Bearer cak_prefix.secret`.
+I verdifeltet skriver du ordet `Bearer`, ett mellomrom, og limer deretter inn nøkkelen din -- alt i den samme boksen. Eksempel: `Bearer cak_prefiks.hemmelighet`.
 
 Klikk **Lagre**.
 
-### Spør ChatGPT noe
+### Still ChatGPT et spørsmål {#ask-chatgpt-something}
 
-Når det er koblet, spør bare på vanlig språk — ingen spesielle kommandoer nødvendig:
+Når den er koblet til, spør du bare med vanlig språk -- ingen spesielle kommandoer er nødvendig:
 
-- *"Hvor mange mennesker er i kirken vår?"*
-- *"Hvem koblet til de siste 30 dagene?"*
-- *"Hvilke grupper er aktive nå?"*
-- *"Oppsummerer denne månedens giving etter fond."*
+- *«Hvor mange personer er det i kirken vår?»*
+- *«Hvem ble med de siste 30 dagene?»*
+- *«Hvilke grupper er aktive akkurat nå?»*
+- *«Oppsummer denne månedens giving per fond.»*
 
-ChatGPT vil kalle B1 bak kulissene og svare fra dine live data.
+ChatGPT kaller B1 i bakgrunnen og svarer ut fra dataene dine i sanntid.
 
 ---
 
-## Banen B — Tilpasset GPT med handlinger
+## Sti B — Egendefinert GPT med handlinger {#path-b--custom-gpt-with-actions}
 
-Et tilpasset GPT lar deg opprette en dedikert assistent hele laget ditt kan dele — de åpner en lenke og begynner å stille spørsmål uten noen oppsett på deres side. Det krever en ChatGPT Plus, Team, eller Enterprise-konto og rundt 10 minutter.
+En egendefinert GPT lar deg lage en dedikert assistent som hele teamet ditt kan dele -- de åpner en lenke og begynner å stille spørsmål uten noe oppsett på sin side. Det krever en ChatGPT Plus-, Team- eller Enterprise-konto og omtrent 10 minutter.
 
-### 1. Opprett en API-nøkkel
+### 1. Opprett en API-nøkkel {#1-create-an-api-key}
 
-Følg Trinn 1 ovenfor hvis du ikke allerede har gjort det.
+Følg steg 1 ovenfor hvis du ikke har gjort det allerede.
 
-### 2. Bygg det tilpassede GPT
+### 2. Bygg den egendefinerte GPT-en {#2-build-the-custom-gpt}
 
-1. I ChatGPT, klikk profilen din → **Mine GPTer** → **Opprett et GPT**.
-2. Bytt til **Konfigurer**-fanen, gi GPT et navn (f.eks. "B1 assistent") og legg til instruksjoner:
+1. I ChatGPT klikker du på profilen din → **Mine GPT-er** → **Opprett en GPT**.
+2. Gå til fanen **Konfigurer**, gi GPT-en et navn (f.eks. «B1-assistent») og legg til instruksjoner:
 
    ```
-   Du hjelper kirkeansatte med å søke i B1-postene sine. Bruk B1 API-handlinger
-   til å slå opp mennesker, grupper, oppmøte, donasjoner og innhold. Scope alltid
-   svar til data brukeren har tillatelse til å se. Vær knapp.
+   You help church staff query their B1 records. Use the B1 API actions to
+   look up people, groups, attendance, donations, and content. Always scope
+   answers to data the user has permission to see. Be concise.
    ```
 
-3. Scroll til **Handlinger** → **Opprett ny handling** → **Autentisering**.
+3. Bla ned til **Handlinger** → **Opprett ny handling** → **Autentisering**.
    - **Autentiseringstype:** API-nøkkel
-   - **API-nøkkel:** lim inn din `cak_…`-nøkkel
+   - **API-nøkkel:** lim inn `cak_…`-nøkkelen din
    - **Auth-type:** Bearer
    - Lagre.
 
-4. I **Schema**-boksen, lim inn denne starter OpenAPI-spesifikasjonen:
+4. I boksen **Skjema** limer du inn denne startspesifikasjonen i OpenAPI:
 
    ```yaml
    openapi: 3.1.0
@@ -272,44 +272,44 @@ Følg Trinn 1 ovenfor hvis du ikke allerede har gjort det.
              description: OK
    ```
 
-5. Lagre handlingen. Test den: *"hvor mange mennesker er i kirken?"* — ChatGPT kaller `listPeople` og svarer.
-6. **Publiser** GPT (Bare meg / Hvem som helst med lenke / Organisasjon) og del lenken med laget ditt.
+5. Lagre handlingen. Test den: *«hvor mange personer er det i kirken?»* -- ChatGPT kaller `listPeople` og svarer.
+6. **Publiser** GPT-en (Bare meg / Alle med lenken / Organisasjon) og del lenken med teamet ditt.
 
-### 3. Bruk den
+### 3. Bruk den {#3-use-it}
 
-Hvem som helst med lenken kan stille naturlige-språk spørsmål. Nøkkelens områder gjelder fortsatt — en skrivebeskyttet nøkkel nekte skriver uavhengig av hva handlingsskjemaet sier.
+Alle med lenken kan stille spørsmål på vanlig språk. Omfangene til nøkkelen gjelder fortsatt -- en nøkkel som bare kan lese, avviser skriveoperasjoner uansett hva handlingsskjemaet sier.
 
 ---
 
-## Sikkerhet og grenser
+## Sikkerhet og begrensninger {#safety-and-limits}
 
-- **Per-kirke isolasjon.** API-nøkkelen løser til en kirke bare. ChatGPT kan ikke se andre kirker-data.
-- **Tillatelses-avgrenset.** Nøkkelen bærer bare områdene du bevilget. Fjerne et område (ved å slette og lage nøkkelen på nytt) kutter denne tilgangen ved neste anrop.
-- **Tilbakekallbar umiddelbart.** Slett nøkkelen i **Innstillinger → Utvikler → API-nøkler** og tilgangen slutter umiddelbart.
-- **Dele et tilpasset GPT deler dataene.** Alle med tilgang til GPT kan se hva nøkkels områder tillater. Foretrekt smalere områder (f.eks. utelat `donations:read`) for GPTer delt bredt.
-- **Revisjonsspor.** Eventuelle endringer gjort gjennom ChatGPT går gjennom samme revisjonsspor som B1 Admin-handlinger — finn dem under **Rapporter → Revisjonsspor**.
+- **Isolasjon per kirke.** API-nøkkelen er knyttet til én kirke. ChatGPT kan ikke se andre kirkers data.
+- **Begrenset av tillatelser.** Nøkkelen bærer bare de omfangene du ga den. Hvis du fjerner et omfang (ved å slette og opprette nøkkelen på nytt), kuttes tilgangen ved neste kall.
+- **Kan tilbakekalles umiddelbart.** Slett nøkkelen under **Innstillinger → Utvikler → API-nøkler**, så avsluttes tilgangen umiddelbart.
+- **Deling av en egendefinert GPT deler dataene.** Alle med tilgang til GPT-en kan se alt det nøkkelens omfang tillater. Bruk smalere omfang (f.eks. uten `donations:read`) for GPT-er som deles bredt.
+- **Revisjonslogg.** Alle endringer som gjøres via ChatGPT, går gjennom samme revisjonslogg som handlinger i B1 Admin -- finn dem under **Innstillinger → Revisjonslogg**.
 
-## Kostnad
+## Kostnad {#cost}
 
-ChurchApps er gratis og åpen kildekode — API ChatGPT kaller er del av hva kirken din allerede kjører. OpenAI belaster for ChatGPT-bruk etter deres egne planer. Det er ingen per-anrop kostnad fra ChurchApps.
+ChurchApps er gratis og åpen kildekode -- API-et ChatGPT kaller, er en del av det kirken din allerede kjører. OpenAI tar betalt for ChatGPT-bruk etter sine egne planer. Det er ingen kostnad per kall fra ChurchApps.
 
-## Problemløsing
+## Feilsøking {#troubleshooting}
 
-**MCP-koblingen sier "Uautorisert" eller viser en 401-feil:** nøkkelen din mangler eller er feil. Åpne koblings-innstillinger og sjekk at nøkkelen i `Authorization:Bearer`-argumentet er full `cak_…`-verdien med ingen ekstra mellomrom.
+**MCP-konnektoren sier «Unauthorized» eller viser en 401-feil:** API-nøkkelen din mangler eller er feil. Åpne konnektorinnstillingene og kontroller at nøkkelen i argumentet `Authorization:Bearer` er hele `cak_…`-verdien uten ekstra mellomrom.
 
-**ChatGPT sier det ikke kan finne visse data:** nøkkelen har kanskje ikke de riktige områdene. Opprett en ny nøkkel i **Innstillinger → Utvikler → API-nøkler** med de ekstra områdene og oppdater koblingen.
+**ChatGPT sier at den ikke finner visse data:** nøkkelen har kanskje ikke de riktige omfangene. Opprett en ny nøkkel under **Innstillinger → Utvikler → API-nøkler** med de ekstra omfangene, og oppdater konnektoren.
 
-**`npx`-kommandoen mislykkes:** Node.js er kanskje ikke installert. Last ned og installer den fra [nodejs.org](https://nodejs.org), deretter prøv å lagre koblingen igjen.
+**Kommandoen `npx` mislykkes:** Node.js er kanskje ikke installert. Last det ned og installer det fra [nodejs.org](https://nodejs.org), og prøv å lagre konnektoren på nytt.
 
-**Tilpasset GPT-handling returnerer 401:** i handlingens autentiserings-panel bekrefter du **Auth-type: Bearer** er valgt og nøkkelen inneholder ikke ordet `Bearer` (ChatGPT legger det til automatisk).
+**Egendefinert GPT-handling gir 401:** i autentiseringspanelet for handlingen, bekreft at **Auth-type: Bearer** er valgt, og at nøkkelen ikke inneholder ordet `Bearer` (ChatGPT legger det til automatisk).
 
-**Tilpasset GPT-handling returnerer 403:** nøkkelen har ikke området for det endepunktet. Opprett en ny nøkkel med de riktige områdene og oppdater GPT.
+**Egendefinert GPT-handling gir 403:** nøkkelen mangler omfanget for det endepunktet. Opprett en ny nøkkel med riktige omfang, og oppdater GPT-en.
 
-**Handlingsskjemaet blir avvist:** ChatGPT krever OpenAPI 3.1 med minst en `paths`-oppføring og en `servers`-URL. Validere YAML på [editor.swagger.io](https://editor.swagger.io) før du limer inn.
+**Handlingsskjemaet avvises:** ChatGPT krever OpenAPI 3.1 med minst én `paths`-oppføring og en `servers`-URL. Valider YAML-en på [editor.swagger.io](https://editor.swagger.io) før du limer den inn.
 
-## Relatert
+## Relatert {#related}
 
-- [API-nøkler](/docs/developer/api/api-keys) — full område-referanse
-- [MCP-server (utviklerreferanse)](/docs/developer/api/mcp) — protokoll-detaljer og verktøy-skjemaer
-- [Claude](./claude) — samme idé, for Anthropic-modeller
-- [REST API-referanse](/docs/developer/api/endpoints) — hvert endepunkt et tilpasset GPT-handling kan kalle
+- [API-nøkler](/docs/developer/api/api-keys) — fullstendig referanse for omfang
+- [MCP-server (utviklerreferanse)](/docs/developer/api/mcp) — protokolldetaljer og verktøyskjemaer
+- [Claude](./claude) — samme idé, for Anthropics modeller
+- [REST API-referanse](/docs/developer/api/endpoints) — alle endepunkter en egendefinert GPT-handling kan kalle

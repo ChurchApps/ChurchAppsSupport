@@ -35,6 +35,8 @@ Tap a member's card to expand it. When expanded, you will see a row for each **s
 - The **groups offered** at that service time, listed below the name (for example, "Nursery, Preschool, Adult Bible Class"), so you can see which classes are available before you choose
 - A **button** showing the currently assigned group, or "Select Group" if no group has been assigned yet
 
+If a service time has a [check-in schedule](../../b1-admin/attendance/setup#setting-a-check-in-schedule) and its window is closed right now, the row shows **Closed** instead of a button -- with the next opening time when there is one, such as **Closed · opens Sun 9:30 AM**. If the person is already checked in to that service time, the row shows their group with a check mark instead (for example, **Kids Room 1 · Checked in**), so you can see where they are even though the window has closed.
+
 Tap the group button to go to the [group selection screen](./group-assignment) where you can choose or change the group for that person and service time.
 
 The expanded card also shows **Member**, **Guest**, and **Volunteer** chips. Tap one to set how this person is checking in — Member is the default. The type matters for children's rooms: volunteers count toward the room's volunteer-to-child ratio, and guests count against any guest capacity your church has set.

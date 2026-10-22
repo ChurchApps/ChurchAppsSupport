@@ -30,7 +30,7 @@ When nothing is scheduled, a group's screens play its **default loop**. If the g
 - **[Plan Mode](../plan-mode/)** follows one service plan type from B1 Admin. Someone presses **Start Plan** on the TV, and the lesson plays when they do
 - **Scheduled Mode** follows a calendar. Content starts and stops at the times you set, so it works well for lobby signage, announcement loops, and classrooms where the lesson should be up before anyone walks in
 
-A calendar entry can still play a service plan. Pick the plan type under **Service plans** when you add a schedule, and the screen plays whatever plan is current in B1 Admin that week.
+A calendar entry can still play a service plan. Pick the plan type under **Service plans** when you add a schedule, and the screen plays whatever plan is current in B1 Admin that week. This includes Go Curriculum lessons, even ones you've customized in the plan. The screen uses the Go Curriculum login linked to the plan type's ministry in B1 Admin, or the church's Go Curriculum connection if the ministry has none.
 
 ## Getting Started
 

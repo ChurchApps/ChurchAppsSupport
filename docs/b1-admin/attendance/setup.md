@@ -64,12 +64,14 @@ Each service time can have an optional check-in schedule so that [self check-in]
 5. Enter **Close check-in (minutes after end)** -- for example, `15` keeps check-in open for 15 minutes after the end time. If you didn't set an end time, this is counted from the start time.
 6. Click **Save**.
 
-The schedule uses your church's local time and repeats every week. To remove a schedule, set **Day** back to **No schedule** and click **Save**. A schedule only takes effect when both a **Day** and a **Start Time** are set.
+The schedule repeats every week and is measured in the time zone of the service's campus. If that campus doesn't have a time zone, your church's [Time Zone](../settings/church-settings.md#time-zone) is used instead, then the time zone of your first campus that has one, and finally Eastern time (America/New_York). If check-in opens at the wrong hour, check the **Time Zone** on the campus in [Campuses](../settings/campuses.md). To remove a schedule, set **Day** back to **No schedule** and click **Save**. A schedule only takes effect when both a **Day** and a **Start Time** are set.
 
 While a service time's check-in window is closed:
 
-- **Self check-in on B1.church** hides that service time. If none of a service's times are open, families see "Check-in isn't open for this service right now."
-- **The B1 Checkin kiosk app** won't complete a check-in into that service time's groups; the kiosk shows a **Can't check in yet** screen listing the affected room so the family can choose a different one.
+- **Self check-in on B1.church** lists that service time as **Closed** (or, for example, **Closed · opens Sun 9:30 AM**) and it can't be picked. If none of a service's times are open, families see when check-in opens, such as "Check-in opens Sun 9:30 AM."
+- **The B1 Checkin kiosk app** also shows the service time as **Closed** with when it opens. If every time for a service is closed, the kiosk says when check-in for that service opens. Someone already checked in to a closed service time shows their group with **Checked in** instead. If a window closes partway through a check-in, the kiosk won't complete it and shows a **Can't check in yet** screen listing the affected room so the family can choose a different one.
+
+A household that already checked in for an earlier service time can still come back and add a later service time that is open, even after the earlier window has closed. Their existing check-ins are kept.
 
 :::tip
 Set a generous open window (for example, 45 minutes before start) so early-arriving families and volunteers can check in, and a short close window so latecomers can still check in once the service has started.

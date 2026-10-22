@@ -61,6 +61,7 @@ A scope **narrows** what a key can do — it can never grant a permission the un
 | `messaging:read` / `messaging:write` | Read messaging; write also allows sending SMS |
 | `roles:read` / `roles:write` | View / edit role definitions |
 | `settings:read` / `settings:write` | View / edit church settings (**required** to register webhooks programmatically) |
+| `workflows:read` / `workflows:write` | View workflows and tasks / run and edit workflows. Running a workflow can send email and texts, fire webhooks, and change group membership |
 | `offline_access` | Allow long-lived refresh tokens (OAuth flows only — has no effect on API keys) |
 
 `write` scopes implicitly include the matching `read`. Server- and domain-admin permissions are deliberately not exposed as scopes — a scoped credential can never elevate to site administration.

@@ -229,8 +229,8 @@ Base path: `/content/events`
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/timeline/group/:groupId?eventIds=` | JWT | — | Load timeline events for a group |
-| GET | `/timeline?eventIds=` | JWT | — | Load timeline events for the current user's groups |
+| GET | `/timeline/group/:groupId?eventIds=` | JWT | — | Load timeline events for a group (includes exception dates, so deleted occurrences can be skipped) |
+| GET | `/timeline?eventIds=` | JWT | — | Load timeline events for the current user's groups (includes exception dates) |
 | GET | `/subscribe?churchId=&groupId=&curatedCalendarId=` | Public | — | Subscribe to events as ICS calendar feed |
 | GET | `/group/:groupId` | JWT | — | Get events for a group (includes exception dates) |
 | GET | `/public/group/:churchId/:groupId` | Public | — | Get public events for a group |
@@ -238,7 +238,7 @@ Base path: `/content/events`
 | GET | `/public/:churchId/:id/ical` | Public | — | Download that single event as an `.ics` file (`text/calendar`, exception dates applied). `404` when the event is hidden by the same rules |
 | GET | `/:id` | JWT | — | Get an event by ID |
 | POST | `/` | JWT | — | Create or update events (batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Delete an event |
+| DELETE | `/:id` | JWT | Content.Edit, Calendars.Admin, or group leader | Delete an event and its bookings. Leaders of the event's group may delete it, and a requester may withdraw their own pending request |
 
 Event records include `photoUrl` (the 16:9 event photo shown on the public event page and upcoming-event tiles), `tags` (comma-separated, used by the website Calendar element's tag filter), and `notesViewRole` / `notesPostRole` (`staff` when `null`, `leaders`, or `members`), which gate the event's `eventNote` conversation — see [Group and event notes access control](./messaging.md#group-and-event-notes-access-control). Public curated-event responses also carry each event's `photoUrl` and `tags`.
 
@@ -249,8 +249,8 @@ Base path: `/content/eventExceptions`
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
 | GET | `/:id` | JWT | — | Get an event exception by ID |
-| POST | `/` | JWT | Content.Edit | Create or update event exceptions (batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Delete an event exception |
+| POST | `/` | JWT | Content.Edit, Calendars.Admin, or group leader | Create or update event exceptions (batch). Leaders may only add exceptions for events in groups they lead |
+| DELETE | `/:id` | JWT | Content.Edit, Calendars.Admin, or group leader | Delete an event exception |
 
 ## Curated Calendars
 

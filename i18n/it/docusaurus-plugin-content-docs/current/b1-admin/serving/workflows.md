@@ -2,230 +2,230 @@
 title: "Flussi di lavoro"
 ---
 
-# Flussi di lavoro
+# Flussi di lavoro {#workflows}
 
 <div class="article-intro">
 
-I flussi di lavoro spostano le persone attraverso una serie di passaggi su una bacheca visiva. Ogni persona diventa una scheda che si sposta da un passaggio al successivo, da un follow-up per i visitatori per la prima volta, a un processo di iscrizione, a un ringraziamento per il primo donatore, e qualsiasi altra cosa in cui è necessario tracciare molte persone attraverso la stessa serie di fasi. Un passaggio può chiedere a un volontario di fare qualcosa (fare una chiamata, avere una conversazione) **e** eseguire azioni automatizzate da solo, inviare un'email o un SMS, attendere alcuni giorni, aggiungere la persona a un gruppo. Quindi i flussi di lavoro gestiscono sia il follow-up umano che il lavoro routinario. I flussi di lavoro estendono [Tasks](./tasks.md) in una bacheca Kanban con trascinamento in modo che nulla e nessuno cada attraverso le crepe.
+I flussi di lavoro fanno avanzare le persone attraverso una serie di passaggi su una bacheca visiva. Ogni persona diventa una scheda che passa da un passaggio al successivo: da un follow-up per un primo ospite, a un percorso di adesione, a un ringraziamento per un primo donatore, e a qualsiasi altra situazione in cui devi seguire molte persone attraverso la stessa serie di fasi. Un passaggio può chiedere a un volontario di fare qualcosa (fare una telefonata, avere una conversazione) **e** eseguire da solo azioni automatiche, come inviare un'email o un SMS, attendere alcuni giorni o aggiungere la persona a un gruppo. Così i flussi di lavoro gestiscono sia il follow-up umano sia le attività ripetitive che lo circondano. I flussi di lavoro estendono le [Attività](./tasks.md) in una bacheca Kanban con trascinamento, così nessuno viene dimenticato.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Assicurati che le persone che desideri tracciare esistano in B1 Admin
-- Familiarizzati con il funzionamento di [Tasks](./tasks.md), poiché ogni scheda su una bacheca è un'attività
-- Per utilizzare l'azione **Invia email**, crea prima i modelli di email che desideri inviare (gestiti in **Messaging → Manage Templates**)
-- Per utilizzare l'azione **Invia SMS**, connetti prima un [provider di messaggistica](../settings/church-settings.md#texting)
-- Avrai bisogno dell'autorizzazione Tasks appropriata. La visualizzazione, la modifica delle schede e la gestione dei flussi di lavoro sono livelli di autorizzazione separati (vedi [Roles & Permissions](../settings/roles-permissions.md))
+- Assicurati che le persone che vuoi seguire esistano in B1 Admin
+- Familiarizza con il funzionamento delle [Attività](./tasks.md), perché ogni scheda su una bacheca è un'attività
+- Per usare l'azione **Invia email**, crea prima i modelli di email che vuoi inviare (gestiti in **Impostazioni → Modelli email**)
+- Per usare l'azione **Invia SMS**, collega prima un [fornitore di SMS](../settings/church-settings.md#texting)
+- Ti serve il permesso Attività appropriato. Visualizzare, modificare le schede e gestire i flussi di lavoro sono livelli di permesso separati (vedi [Ruoli e permessi](../settings/roles-permissions.md))
 
 </div>
 
-## Visualizzazione dei flussi di lavoro
+## Visualizzare i flussi di lavoro {#viewing-workflows}
 
-Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Serving**, e fai clic su **Workflows**. Vedrai i tuoi flussi di lavoro in una tabella che mostra la **Categoria** e lo **Stato** (**Attivo** o **Inattivo**) di ciascuno. Se usi le categorie, le schede sopra l'elenco permettono di filtrarlo per categoria. Fai clic su qualsiasi flusso di lavoro per aprire la sua bacheca.
+Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Servizio** e fai clic su **Flussi di lavoro**. I tuoi flussi di lavoro sono elencati in una tabella che mostra la **Categoria** e lo **Stato** di ciascuno (**Attivo** o **Inattivo**). Se usi le categorie, le schede sopra l'elenco ti permettono di filtrarlo per categoria. Fai clic su un flusso di lavoro per aprire la sua bacheca.
 
-## Creazione di un flusso di lavoro
+## Creare un flusso di lavoro {#creating-a-workflow}
 
 1. Nella pagina Flussi di lavoro, fai clic su **Aggiungi flusso di lavoro**.
 2. Scegli come iniziare:
-   - **Flusso di lavoro vuoto** -- inizia da zero e costruisci i tuoi passaggi.
-   - **Da un modello** -- inizia con una serie di passaggi predefiniti che puoi modificare. I modelli integrati includono:
-     - **Seguiti per visitatori nuovi** -- Invia email di benvenuto → Chiamata telefonica personale → Invita al passaggio successivo → Connesso
-     - **Classe di iscrizione** -- Esprimi interesse → Registrati per la lezione → Partecipa alla lezione → Iscrizione completata
-     - **Ringraziamento per il primo donatore** -- Invia nota di ringraziamento → Condividi impatto donazione → Gestito
+   - **Flusso di lavoro vuoto** -- parti da zero e costruisci i tuoi passaggi.
+   - **Da un modello** -- parti da un insieme di passaggi già pronti che puoi modificare. I modelli integrati includono:
+     - **Follow-up per un nuovo visitatore** -- Invia email di benvenuto → Telefonata personale → Invito al passo successivo → Collegato
+     - **Corso di adesione** -- Esprimi interesse → Iscriviti al corso → Partecipa al corso → Completa l'adesione
+     - **Ringraziamento per il primo donatore** -- Invia biglietto di ringraziamento → Condividi l'impatto della donazione → Amministrato
 3. Assegna al flusso di lavoro un **Nome**.
-4. Facoltativamente assegna una **Categoria** per raggruppare i flussi di lavoro correlati. Puoi creare una nuova categoria direttamente dal menu a discesa.
-5. Lascia il flusso di lavoro **Attivo** in modo che le persone possano essere aggiunte, oppure impostalo su **Inattivo** per nasconderlo dagli elenchi di aggiunta al flusso di lavoro.
+4. Facoltativamente, assegna una **Categoria** per raggruppare i flussi di lavoro correlati. Puoi creare una nuova categoria direttamente dal menu a discesa.
+5. Lascia il flusso di lavoro **Attivo** così le persone possono essere aggiunte, oppure impostalo su **Inattivo** per nasconderlo dagli elenchi di aggiunta ai flussi di lavoro.
 6. Fai clic su **Salva**.
 
 :::tip
-Usa il pulsante **Duplicate** nell'elenco dei flussi di lavoro per copiare un flusso di lavoro esistente, inclusi i suoi passaggi, le azioni automatizzate e l'instradamento, come punto di partenza per uno nuovo.
+Usa il pulsante **Duplica** nell'elenco dei flussi di lavoro per copiare un flusso di lavoro esistente, inclusi i suoi passaggi, le azioni automatiche e l'instradamento, come punto di partenza per uno nuovo.
 :::
 
-## Creazione della bacheca con i passaggi
+## Costruire la bacheca con i passaggi {#building-the-board-with-steps}
 
-Ogni bacheca del flusso di lavoro è composta da **passaggi**, mostrati come colonne da sinistra a destra. Apri un flusso di lavoro e utilizza **Aggiungi passaggio** per creare ogni fase del tuo processo.
+Ogni bacheca di un flusso di lavoro è composta da **passaggi**, mostrati come colonne da sinistra a destra. Apri un flusso di lavoro e usa **Aggiungi passaggio** per creare ogni fase del tuo processo.
 
-Quando aggiungi o modifici un passaggio, puoi configurare:
+Quando aggiungi o modifichi un passaggio, puoi configurare:
 
-- **Nome passaggio** -- l'intestazione della colonna (ad esempio, "Chiamata di benvenuto" o "In attesa di registrazione").
-- **Dovuta in (giorni)** -- imposta automaticamente una data di scadenza quando una scheda entra in questo passaggio. Le schede che superano la data di scadenza sono contrassegnate come **Scadute**.
-- **Assegnatario predefinito** -- la persona o il gruppo a cui vengono automaticamente assegnate le nuove schede su questo passaggio. Quando l'assegnatario predefinito è una persona, riceve una notifica che una scheda le è stata assegnata.
-- **Azioni automatizzate** -- cose che il sistema fa da solo quando una scheda arriva (vedi sotto).
+- **Nome del passaggio** -- l'intestazione della colonna (ad esempio "Chiamata di benvenuto" o "In attesa di iscrizione").
+- **Scadenza tra (giorni)** -- imposta automaticamente una data di scadenza quando una scheda entra in questo passaggio. Le schede oltre la data di scadenza sono contrassegnate come **In ritardo**.
+- **Assegnatario predefinito** -- la persona o il gruppo a cui vengono assegnate automaticamente le nuove schede di questo passaggio. Quando l'assegnatario predefinito è una persona, questa riceve una notifica che una scheda le è stata assegnata.
+- **Azioni automatiche** -- operazioni che il sistema esegue da solo quando una scheda arriva (vedi sotto).
 - **Instradamento** -- dove va la scheda quando lascia il passaggio (vedi [Instradamento](#routing-cards-with-outcomes-and-conditions)).
 
-Trascina le colonne dei passaggi nell'ordine che corrisponde al tuo processo. L'ordine definisce anche il percorso predefinito che una scheda percorre quando non si applica nessun altro instradamento.
+Trascina le colonne dei passaggi nell'ordine che corrisponde al tuo processo. L'ordine definisce anche il percorso predefinito che una scheda segue quando non si applica un altro instradamento.
 
 :::info
-Salva prima un nuovo passaggio. Le azioni automatizzate e l'instradamento si collegano al passaggio, quindi l'editor sblocca quelle sezioni una volta che il passaggio esiste.
+Salva prima un nuovo passaggio. Le azioni automatiche e l'instradamento sono collegati al passaggio, quindi l'editor sblocca queste sezioni solo dopo che il passaggio esiste.
 :::
 
-## Azioni automatizzate
+## Azioni automatiche {#automated-actions}
 
-Ogni passaggio può portare un elenco di **azioni automatizzate** che si eseguono da sole nel momento in cui una scheda **entra** nel passaggio, prima che chiunque la tocchi. Questo è il modo in cui un passaggio sia richiede a un volontario *che* si prende cura del lavoro routinario intorno al follow-up.
+Ogni passaggio può contenere un elenco di **azioni automatiche** che vengono eseguite da sole nel momento in cui una scheda **entra** nel passaggio, prima che qualcuno la tocchi. È così che un passaggio sollecita un volontario *e* si occupa delle attività di routine legate al follow-up.
 
-Nell'editor dei passaggi, apri **Azioni automatizzate**, fai clic su **Aggiungi azione**, scegli un tipo, compila le sue impostazioni e fai clic sull'icona di salvataggio su quella azione. Aggiungine quante ne hai bisogno; si eseguono **da cima a fondo in ordine**.
+Nell'editor del passaggio, apri **Azioni automatiche**, fai clic su **Aggiungi azione**, scegli un tipo, compila le sue impostazioni e fai clic sull'icona di salvataggio di quell'azione. Puoi aggiungerne quante ne servono; vengono eseguite **dall'alto verso il basso, in ordine**.
 
 | Azione | Cosa fa |
 |---|---|
-| **Invia email** | Invia alla persona un modello di email che scegli. Puoi ignorare la riga dell'oggetto. |
-| **Invia SMS** | Invia un SMS alla persona attraverso il [provider di messaggistica](../settings/church-settings.md#texting) della tua chiesa. |
+| **Invia email** | Invia alla persona un modello email a tua scelta. Puoi sostituire l'oggetto. |
+| **Invia SMS** | Invia alla persona un messaggio che scrivi, tramite il [fornitore di SMS](../settings/church-settings.md#texting) della tua chiesa. |
 | **Attesa** | Mette in pausa la scheda per un numero di giorni prima di continuare (vedi sotto). |
 | **Aggiungi al gruppo** | Aggiunge la persona a un [gruppo](../groups/index.md) che scegli. |
 | **Rimuovi dal gruppo** | Rimuove la persona da un gruppo che scegli. |
-| **Aggiungi al flusso di lavoro** | Avvia la persona su un altro flusso di lavoro -- utile per passare tra processi. |
+| **Aggiungi al flusso di lavoro** | Avvia la persona su un altro flusso di lavoro, utile per passare la persona tra processi diversi. |
 | **Aggiungi nota** | Registra una nota nella cronologia della scheda. |
-| **Imposta campo** | Aggiorna un campo sul record della persona: Stato iscrizione, Stato civile, Genere, Città, Provincia, o CAP. |
-| **Webhook** | Invia i dettagli della scheda a un indirizzo web esterno (URL) che fornisci, per la connessione con altri sistemi. |
-| **Crea attività** | Crea un [attività](./tasks.md) con il titolo e la descrizione che inserisci, assegnato a chiunque scegli. |
+| **Imposta campo** | Aggiorna un campo nella scheda della persona: Stato di membro, Stato civile, Genere, Città, Provincia o CAP. |
+| **Webhook** | Invia i dettagli della scheda a un indirizzo web esterno (URL) che fornisci, per collegarsi ad altri sistemi. |
+| **Crea attività** | Crea un'[attività](./tasks.md) con il titolo e la descrizione che inserisci, assegnata alla persona che scegli. |
 
-Dopo che tutte le azioni di un passaggio sono finite, la scheda **riposa su quel passaggio** in modo che una persona possa lavorarci, a meno che il passaggio non abbia una route automatica che la sposti avanti (vedi [Passaggi completamente automatizzati](#fully-automated-steps)).
-
-:::info
-Le azioni automatizzate si eseguono solo quando una scheda arriva attraverso il flusso normale, quando viene aggiunta per la prima volta, quando un risultato o una route automatica la porta dentro, o dopo che un'attesa finisce. Non si **rieseguono** quando un membro dello staff trascina manualmente una scheda sul passaggio o la rimanda, quindi una persona non riceverà la stessa email due volte.
-:::
-
-### Invio di email
-
-Scegli **Invia email**, scegli uno dei tuoi modelli di email e facoltativamente digita un oggetto personalizzato. Quando una scheda entra nel passaggio, la persona riceve automaticamente quell'email. (Se la persona non ha un indirizzo email nel file, il passaggio semplicemente salta questa azione.) I [campi di unione](../settings/email-templates.md#merge-fields) nel modello, come `{{firstName}}`, vengono compilati con i dettagli della persona.
+Dopo che tutte le azioni di un passaggio sono terminate, la scheda **resta su quel passaggio** così una persona può occuparsene, a meno che il passaggio non abbia un instradamento automatico che la sposta avanti (vedi [Passaggi completamente automatizzati](#fully-automated-steps)).
 
 :::info
-Le email del flusso di lavoro vanno solo dopo che la tua chiesa è stata approvata per inviare email di gruppo, e contano verso il limite di email giornaliero della tua chiesa. Vedi [Attivazione della posta elettronica di gruppo per la tua chiesa](../groups/group-members.md#turning-on-group-email-for-your-church).
+Le azioni automatiche vengono eseguite solo quando una scheda arriva tramite il normale flusso, cioè quando viene aggiunta per la prima volta, quando un esito o un instradamento automatico la fa entrare, o dopo la fine di un'Attesa. **Non** vengono rieseguite quando un membro dello staff trascina manualmente una scheda nel passaggio o la rimanda indietro, quindi una persona non riceve la stessa email due volte.
 :::
 
-### Invio di un SMS
+### Invio di email {#sending-email}
 
-Scegli **Invia SMS** e digita il **Messaggio di testo** (fino a 1.600 caratteri). Quando una scheda entra nel passaggio, la persona riceve quel messaggio sul suo telefono cellulare. Puoi personalizzare il messaggio con `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, o `{{churchName}}`, che vengono compilati con i dettagli della persona quando il messaggio viene inviato.
+Scegli **Invia email**, seleziona uno dei tuoi modelli di email e, facoltativamente, scrivi un oggetto personalizzato. Quando una scheda entra nel passaggio, la persona riceve automaticamente quell'email. (Se la persona non ha un indirizzo email registrato, il passaggio salta semplicemente questa azione.) I [campi unione](../settings/email-templates.md#merge-fields) nel modello, come `{{firstName}}`, vengono sostituiti con i dati della persona.
 
-- Se la persona non ha un numero di telefono cellulare nel file, l'azione viene saltata.
-- Se la persona ha rinunciato, nessun SMS viene inviato e la cronologia della scheda registra **SMS saltato: rinunciato**.
-- Quando il messaggio viene inviato, la cronologia della scheda registra **SMS inviato**. Se l'invio fallisce, ad esempio perché non è collegato un provider di messaggistica o la tua chiesa è a corto di crediti di testo, il fallimento viene registrato nella cronologia della scheda e le azioni rimanenti del passaggio vengono comunque eseguite.
+:::info
+Le email dei flussi di lavoro vengono inviate solo dopo che la tua chiesa è stata approvata per inviare email di gruppo, e contano nel limite giornaliero di email della chiesa. Consulta [Attivare le email di gruppo per la tua chiesa](../groups/group-members.md#turning-on-group-email-for-your-church).
+:::
+
+### Invio di un SMS {#sending-a-text}
+
+Scegli **Invia SMS** e scrivi il **Messaggio di testo** (fino a 1.600 caratteri). Quando una scheda entra nel passaggio, la persona riceve quell'SMS sul proprio telefono cellulare. Puoi personalizzare il messaggio con `{{firstName}}`, `{{lastName}}`, `{{displayName}}` o `{{churchName}}`, che vengono sostituiti con i dati della persona al momento dell'invio.
+
+- Se la persona non ha un numero di cellulare registrato, non viene inviato alcun SMS e la cronologia della scheda registra **SMS saltato: nessun cellulare**.
+- Se la persona ha annullato l'iscrizione, non viene inviato alcun SMS e la cronologia della scheda registra **SMS saltato: iscrizione annullata**.
+- Quando l'SMS viene inviato, la cronologia della scheda registra **SMS inviato**. Se l'invio fallisce, ad esempio perché non è collegato alcun fornitore di SMS o perché la tua chiesa ha esaurito i crediti SMS, l'errore viene registrato nella cronologia della scheda e le azioni rimanenti del passaggio vengono comunque eseguite.
 
 :::warning
-Gli SMS vengono inviati attraverso il [provider di messaggistica](../settings/church-settings.md#texting) della tua chiesa. Se nessun provider è collegato, l'editor dell'azione avverte "Nessun provider di messaggistica è impostato" e gli SMS non verranno inviati.
+Gli SMS vengono inviati tramite il [fornitore di SMS](../settings/church-settings.md#texting) della tua chiesa. Se non è collegato alcun fornitore, l'editor delle azioni mostra l'avviso *"Nessun fornitore di SMS configurato"* e gli SMS non verranno inviati.
 :::
 
-### Attesa di alcuni giorni (sequenze di gocciolamento)
+### Attendere alcuni giorni (sequenze drip) {#waiting-a-few-days-drip-sequences}
 
-L'azione **Attesa** tiene una scheda per il numero di giorni che imposti. Mentre aspetta, la scheda viene visualizzata come **Sospesa**. Quando l'attesa è finita:
+L'azione **Attesa** tiene una scheda per il numero di giorni che imposti. Mentre attende, la scheda è mostrata come **Posticipata**. B1 controlla le attese terminate ogni 30 minuti, quindi una scheda riprende entro circa mezz'ora dalla fine dell'attesa. Al termine dell'attesa:
 
-1. Qualsiasi **azione rimanente sullo stesso passaggio** si esegue, quindi puoi costruire un gocciolamento come **Invia email → Attesa 3 giorni → Invia un'email di promemoria**.
-2. Quindi, se il passaggio ha una route automatica, la scheda si sposta avanti; altrimenti riposa sul passaggio per una persona da riprendere.
+1. Vengono eseguite le **eventuali azioni rimanenti dello stesso passaggio**, così puoi costruire una sequenza drip come **Invia email → Attendi 3 giorni → Invia un'email di promemoria**.
+2. Poi, se il passaggio ha un instradamento automatico, la scheda avanza; altrimenti resta sul passaggio in attesa che una persona se ne occupi.
 
 :::tip
-Un'**Attesa** all'inizio di un passaggio è un modo semplice per "tenere" una scheda prima che venga visualizzata a un volontario, ad esempio, *Attendi 7 giorni, quindi un allenatore ti contatta*.
+Un'**Attesa** all'inizio di un passaggio è un modo semplice per "trattenere" una scheda prima che arrivi a un volontario, ad esempio *Attendi 7 giorni, poi un coach contatta la persona*.
 :::
 
-## Aggiunta di persone come schede
+## Aggiungere persone come schede {#adding-people-as-cards}
 
-Ci sono diversi modi per mettere persone su una bacheca:
+Ci sono diversi modi per inserire persone su una bacheca:
 
-- **Dalla bacheca** -- fai clic su **Aggiungi scheda** in fondo a una colonna di passaggio e scegli una persona. Puoi anche scegliere un gruppo, e ogni membro di quel gruppo viene aggiunto come una scheda.
-- **Dal record di una persona** -- utilizza **Aggiungi al flusso di lavoro** sulla pagina di una persona per lasciarla cadere su un flusso di lavoro.
-- **Dalla ricerca di persone** -- seleziona più persone e utilizza l'azione bulk **Aggiungi al flusso di lavoro** per aggiungerle tutte in una volta.
-- **Automaticamente con un trigger** -- aggiungi persone quando accade qualcosa, come un invio di modulo o una prima donazione (vedi [Trigger](#triggers) sotto).
+- **Dalla bacheca** -- Fai clic su **Aggiungi scheda** in fondo a una colonna di passaggio e scegli una persona. Puoi anche scegliere un gruppo, e ogni membro del gruppo viene aggiunto come scheda.
+- **Dalla scheda di una persona** -- Usa **Aggiungi al flusso di lavoro** nella pagina di una persona per inserirla in un flusso di lavoro.
+- **Dalla ricerca Persone** -- Seleziona più persone e usa l'azione di massa **Aggiungi al flusso di lavoro** per aggiungerle tutte insieme.
+- **Automaticamente con un trigger** -- Aggiungi persone quando accade qualcosa, come l'invio di un modulo o un primo dono (vedi [Trigger](#triggers) più sotto).
 
-## Utilizzo della bacheca
+## Lavorare sulla bacheca {#working-the-board}
 
-Apri un flusso di lavoro per vedere la sua bacheca. Ogni scheda mostra il nome della persona, a chi è assegnata, e un chip di data di scadenza o stato (**Scaduta** o **Sospesa**). Una colonna di passaggio mostra anche piccoli badge per qualsiasi azione automatizzata che esegue e annotazioni per il suo instradamento, dandoti una mappa a colpo d'occhio di come le schede fluiscono.
+Apri un flusso di lavoro per vedere la sua bacheca. Ogni scheda mostra il nome della persona, a chi è assegnata e un'etichetta con la scadenza o lo stato (**In ritardo** o **Posticipata**). Una colonna di passaggio mostra anche piccoli badge per le azioni automatiche che esegue e annotazioni per il suo instradamento, offrendoti una mappa immediata di come si muovono le schede.
 
-- **Sposta una scheda** -- trascina una scheda da una colonna all'altra mentre la persona progredisce.
-- **Apri una scheda** -- fai doppio clic su una scheda (o fai clic su di essa) per aprire il suo cassetto dei dettagli, dove puoi cambiare il passaggio, riassegnarla, aggiungere note e rivedere cosa è già accaduto.
+- **Sposta una scheda** -- Trascina una scheda da una colonna alla successiva man mano che la persona avanza.
+- **Apri una scheda** -- Fai doppio clic su una scheda (o fai clic su di essa) per aprire il suo pannello dei dettagli, dove puoi cambiare il passaggio, riassegnarla, aggiungere note e vedere cosa è già successo.
 
-Dal cassetto della scheda puoi:
+Dal pannello della scheda puoi:
 
-- **Assegna** la scheda a una persona o un gruppo diverso.
-- **Sospendi** la scheda per 1 giorno, 3 giorni o 1 settimana per nascondere temporaneamente la sua data di scadenza.
-- **Invia indietro** al passaggio precedente o **Salta** al passaggio successivo.
-- **Fissa assegnazione** -- mantieni lo stesso proprietario sulla scheda mentre si sposta tra i passaggi. Per impostazione predefinita, lo spostamento di una scheda a un nuovo passaggio la riassegna all'assegnatario predefinito di quel passaggio; il fissaggio mantiene la persona attuale responsabile durante tutto il processo.
-- **Completa** la scheda per finirla, o scegli un pulsante **Risultato** se il passaggio ha risultati configurati (vedi [Instradamento](#routing-cards-with-outcomes-and-conditions)).
-- **Aggiungi note** e rivedi l'**Attività** della scheda, cioè un registro delle azioni automatizzate eseguite (email inviate, attese, ecc.).
+- **Assegnare** la scheda a un'altra persona o a un altro gruppo.
+- **Posticipare** la scheda di 1 giorno, 3 giorni o 1 settimana per nascondere temporaneamente la sua scadenza.
+- **Rimandare indietro** al passaggio precedente oppure **Saltare** al passaggio successivo.
+- **Blocca assegnatario** -- mantieni lo stesso responsabile sulla scheda anche quando si sposta tra i passaggi. Per impostazione predefinita, spostare una scheda in un nuovo passaggio la riassegna all'assegnatario predefinito di quel passaggio; bloccare l'assegnazione mantiene la persona attuale responsabile per tutto il percorso.
+- **Completare** la scheda per concluderla, oppure scegliere un pulsante **Esito** se il passaggio ha esiti configurati (vedi [Instradamento](#routing-cards-with-outcomes-and-conditions)).
+- **Aggiungere note** e consultare l'**Attività** della scheda, un registro delle azioni automatiche eseguite (email inviate, attese, ecc.).
 
-Per una scheda relativa a una persona, il cassetto mostra anche il cellulare e l'email della persona come link su cui puoi fare clic per chiamarla o scriverle, più un link **View profile** se hai il permesso di vedere le persone. La persona a cui la scheda è assegnata vede telefono ed email anche senza accesso a People.
+Per una scheda relativa a una persona, il pannello mostra anche il cellulare e l'email della persona come link su cui puoi fare clic per chiamarla o scriverle, più un link **Visualizza profilo** se hai il permesso di visualizzare le persone. La persona a cui è assegnata la scheda vede il telefono e l'email anche senza accesso a Persone.
 
-Le note vengono salvate con la scheda. Chiunque possa aprire la scheda -- inclusa la persona o il gruppo a cui è assegnata -- può leggere le note e aggiungerne di proprie. Chi non può aprire la scheda non vede le sue note.
+Le note vengono salvate con la scheda. Chiunque possa aprire la scheda, incluso la persona o il gruppo a cui è assegnata, può leggere le note e aggiungere le proprie. Chi non può aprire la scheda non vede le sue note.
 
-### Azioni in blocco
+### Azioni di massa {#bulk-actions}
 
-Seleziona le caselle di controllo su più schede per agire su di loro insieme. Appare una barra degli strumenti che ti consente di **Completare**, **Sospendere**, **Assegnare** (riassegnare) o **Sposta in…** tutte le schede selezionate in un altro passaggio in una volta.
+Seleziona le caselle di più schede per agire su di esse insieme. Compare una barra degli strumenti che ti permette di **Completare**, **Posticipare**, **Assegnare** (riassegnare) o **Sposta in…** un altro passaggio per tutte le schede selezionate contemporaneamente.
 
-## Instradamento delle schede con risultati e condizioni
+## Instradare le schede con esiti e condizioni {#routing-cards-with-outcomes-and-conditions}
 
 L'instradamento controlla dove va una scheda quando lascia un passaggio. Apri l'editor di un passaggio per configurare due tipi di instradamento.
 
-### Pulsanti di risultato
+### Pulsanti di esito {#outcome-buttons}
 
-I risultati sono pulsanti mostrati nel cassetto della scheda quando stai completando una scheda su quel passaggio. Invece di un singolo pulsante **Completa**, puoi offrire scelte come "Unito a un gruppo" o "Non interessato". Ogni risultato può:
+Gli esiti sono pulsanti mostrati nel pannello della scheda quando completi una scheda in quel passaggio. Invece di un unico pulsante **Completa**, puoi offrire scelte come "Ha aderito a un gruppo" o "Non interessato". Ogni esito può:
 
-- Inviare la scheda a **un altro passaggio** in questo flusso di lavoro,
-- **Consegnare la scheda** a un flusso di lavoro completamente diverso, o
+- Inviare la scheda a **un altro passaggio** di questo flusso di lavoro,
+- **Passare la scheda** a un flusso di lavoro diverso, oppure
 - **Chiudere** la scheda.
 
-Questo permette a una decisione di dirammare la persona giù per percorsi diversi.
+In questo modo una sola decisione può far seguire alla persona percorsi diversi.
 
-### Instradamento automatico (condizionale)
+### Instradamento automatico (condizionale) {#automatic-routing-conditional}
 
-Le route automatiche spostano una scheda avanti **nel momento in cui entra in un passaggio** (e dopo che le sue azioni automatizzate finiscono), senza che nessuno faccia clic, se la persona corrisponde a un set di condizioni. Aggiungi una route, scegli il passaggio di destinazione, e definisci una o più **condizioni** (ad esempio, il campus, l'età o lo stato di iscrizione di una persona). Il testo può essere confrontato esattamente oppure con **contiene**, **inizia con** o **termina con**. Una route senza condizioni corrisponde a tutti.
+Gli instradamenti automatici spostano una scheda in avanti **nel momento stesso in cui entra in un passaggio** (e dopo il termine delle sue azioni automatiche), senza che nessuno clicchi, se la persona soddisfa un insieme di condizioni. Aggiungi un instradamento, scegli il passaggio di destinazione e definisci una o più **condizioni** (ad esempio il campus, l'età o lo stato di membro di una persona). I campi di testo possono essere confrontati esattamente oppure con **contiene**, **inizia con** o **finisce con**. Un instradamento senza condizioni vale per tutti.
 
-Se le condizioni di una route non possono essere verificate per qualche motivo, quella route è considerata non corrispondente. La scheda resta sul passaggio (o segue un'altra route che corrisponde) invece di bloccarsi.
+Se le condizioni di un instradamento non possono essere verificate per qualche motivo, quell'instradamento viene considerato non corrispondente. La scheda resta sul passaggio (oppure segue un altro instradamento che corrisponde) invece di rimanere bloccata.
 
 :::info
-Sulla bacheca, ogni colonna di passaggio mostra piccole annotazioni che descrivono il suo instradamento, ad esempio un'etichetta di risultato o "se corrisponde" seguito da una freccia al passaggio di destinazione o al flusso di lavoro.
+Sulla bacheca, ogni colonna di passaggio mostra piccole annotazioni che descrivono il suo instradamento, ad esempio un'etichetta di esito o "se corrisponde" seguito da una freccia verso il passaggio o il flusso di lavoro di destinazione.
 :::
 
-## Passaggi completamente automatizzati
+## Passaggi completamente automatizzati {#fully-automated-steps}
 
-Puoi fare in modo che un passaggio si esegua interamente da solo, senza che nessuno lo lavori. Assegna al passaggio le sue **azioni automatizzate** e aggiungi una **route automatica** (senza condizioni) che punta al passaggio successivo. Quando una scheda entra, le azioni si eseguono, e poi la route la avanza immediatamente, la scheda passa direttamente.
+Puoi far funzionare un passaggio interamente da solo, senza che nessuno se ne occupi. Dai al passaggio le sue **azioni automatiche** e aggiungi un **instradamento automatico** (senza condizioni) verso il passaggio successivo. Quando una scheda entra, le azioni vengono eseguite e poi l'instradamento la fa avanzare immediatamente: la scheda attraversa il passaggio senza fermarsi.
 
 :::tip
-Combina questo con **Attesa**: *Invia email di benvenuto → Attesa 3 giorni → passa automaticamente al passaggio "Chiamata personale"*. L'email e il timing vengono gestiti per te, e un volontario vede la scheda solo quando è il momento per il tocco umano.
+Combinalo con **Attesa**: *Invia email di benvenuto → Attendi 3 giorni → avanza automaticamente al passaggio "Telefonata personale"*. L'email e i tempi sono gestiti per te, e un volontario vede la scheda solo quando è il momento del contatto umano.
 :::
 
-## Trigger
+## Trigger {#triggers}
 
-I trigger aggiungono persone a un flusso di lavoro automaticamente quando accade qualcosa, quindi non devi mai aggiungere schede a mano. Su una bacheca del flusso di lavoro, fai clic sulla scheda **Trigger**, quindi **Aggiungi trigger**. Ci sono due tipi:
+I trigger aggiungono automaticamente persone a un flusso di lavoro quando accade qualcosa, così non devi mai aggiungere le schede a mano. Su una bacheca di un flusso di lavoro, fai clic sulla scheda **Trigger**, poi su **Aggiungi trigger**. Ci sono due tipi:
 
-### Trigger di evento
+### Trigger di evento {#event-triggers}
 
-Attivati non appena un record cambia in B1. Scegli l'evento, poi facoltativamente aggiungi **condizioni** in modo che solo le persone corrispondenti vengono aggiunte:
+Si attivano non appena un record cambia in B1. Scegli l'evento, poi, facoltativamente, aggiungi **condizioni** in modo che vengano aggiunte solo le persone corrispondenti:
 
-- **Persona · Creata / Aggiornata** -- ad esempio, aggiungi chiunque il cui stato diventa *Visitatore*.
-- **Donazione · Creata** -- ad esempio, aggiungi un primo regalo o un regalo grande a un flusso di lavoro di ringraziamento (abbina per importo, fondo o metodo).
-- **Gruppo · Membro iscritto** / **Gruppo · Creato**.
-- **Modulo · Inviato** -- aggiungi chiunque invii un modulo scelto (ottimo per una scheda "Sono nuovo" o "Connetti").
+- **Persona · Creata / Aggiornata** -- ad esempio, aggiungi chiunque il cui stato diventi *Visitatore*.
+- **Donazione · Creata** -- ad esempio, aggiungi un primo dono o un dono importante a un flusso di ringraziamento (confronta per importo, fondo o metodo).
+- **Gruppo · Membro aggiunto** / **Gruppo · Creato**.
+- **Modulo · Inviato** -- aggiungi chiunque invii un modulo scelto (ottimo per una scheda "Sono nuovo" o "Connettiti").
 
-### Trigger di programmazione
+### Trigger pianificati {#schedule-triggers}
 
-Esegui su base ricorrente -- giornaliera, settimanale, mensile o annuale -- rispetto a un set di condizioni. Usali per la sensibilizzazione basata sul tempo come *tutti coloro il cui anniversario di iscrizione è oggi* o un *mensile* controllo.
+Vengono eseguiti su base ricorrente (giornaliera, settimanale, mensile o annuale) in base a un insieme di condizioni. Usali per contatti periodici come *tutti quelli il cui anniversario di membership è oggi* o un controllo *mensile*.
 
 Per qualsiasi trigger puoi anche impostare:
 
 - Il **Passaggio iniziale** su cui atterra la nuova scheda (per impostazione predefinita il primo passaggio).
-- **Solo una volta per persona** -- in modo che la stessa persona non sia aggiunta al flusso di lavoro due volte dal trigger.
+- **Solo una volta per persona** -- così la stessa persona non viene aggiunta due volte al flusso di lavoro dal trigger.
 - **Attivo** -- attiva o disattiva il trigger senza eliminarlo.
 
 :::tip
-Abbina un trigger **Modulo · Inviato** al modello **Seguiti per visitatori nuovi** per trasformare il tuo modulo "Connect Card" o "Sono nuovo" in una pipeline di follow-up automatica.
+Abbina un trigger **Modulo · Inviato** al modello **Follow-up per un nuovo visitatore** per trasformare la tua scheda "Connect" o "Sono nuovo" in una pipeline di follow-up automatica.
 :::
 
-## Le mie schede
+## Le mie schede {#my-cards}
 
-I volontari e lo staff non hanno bisogno di scavare attraverso ogni bacheca per trovare il loro lavoro. La sezione **My Cards** della pagina **My Work** elenca ogni scheda assegnata all'utente attuale su tutti i flussi di lavoro. Per arrivarci, fai clic su **My Cards** in alto nella pagina Flussi di lavoro, oppure apri **Serving > My Work** nel menu Jump. Fare clic su una scheda apre la bacheca a cui appartiene.
+I volontari e il personale non devono cercare tra ogni bacheca per trovare il proprio lavoro. L'elenco **Le mie schede** nella pagina **Il mio lavoro** mostra ogni scheda assegnata all'utente corrente in tutti i flussi di lavoro. Per arrivarci, fai clic su **Le mie schede** in alto nella pagina Flussi di lavoro, oppure apri **Servizio > Il mio lavoro** nel menu Jump. Facendo clic su una scheda si apre la bacheca a cui appartiene.
 
-## Rapporti
+## Report {#reports}
 
-Apri un flusso di lavoro e fai clic su **Rapporti** per visualizzare l'analittica per quel flusso di lavoro:
+Apri un flusso di lavoro e fai clic su **Report** per vedere le analisi di quel flusso di lavoro:
 
-- **Scaduta** -- il numero di schede passate dalla data di scadenza.
-- **Schede per passaggio** -- quante schede attualmente si trovano su ogni passaggio, mostrate come un grafico a colonne.
-- **Completate (30 giorni)** -- il throughput negli ultimi 30 giorni, mostrato come un grafico a linee.
+- **In ritardo** -- il numero di schede oltre la data di scadenza.
+- **Schede per passaggio** -- quante schede si trovano attualmente su ciascun passaggio, mostrate come grafico a colonne.
+- **Completate (30 giorni)** -- il volume di lavoro degli ultimi 30 giorni, mostrato come grafico a linee.
 
-Usali per individuare i colli di bottiglia, ad esempio un passaggio in cui le schede si accumulano e non avanzano mai.
+Usali per individuare i colli di bottiglia, ad esempio un passaggio dove le schede si accumulano e non avanzano mai.
 
-## Articoli correlati
+## Articoli correlati {#related-articles}
 
-- [Tasks](./tasks.md) -- gli elementi di azione individuale su cui sono costruite le schede del flusso di lavoro
-- [Forms](../forms/index.md) -- costruisci i moduli che possono attivare i flussi di lavoro
-- [Groups](../groups/index.md) -- i gruppi in cui un'azione "Aggiungi al gruppo" può mettere le persone
-- [Roles & Permissions](../settings/roles-permissions.md) -- controlla chi può visualizzare, modificare e gestire i flussi di lavoro
+- [Attività](./tasks.md) -- le singole azioni su cui sono costruite le schede dei flussi di lavoro
+- [Moduli](../forms/index.md) -- crea i moduli che possono avviare i flussi di lavoro
+- [Gruppi](../groups/index.md) -- i gruppi in cui l'azione "Aggiungi al gruppo" può inserire le persone
+- [Ruoli e permessi](../settings/roles-permissions.md) -- controlla chi può visualizzare, modificare e gestire i flussi di lavoro

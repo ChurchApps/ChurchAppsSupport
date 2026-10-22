@@ -10,6 +10,10 @@ The dashboard is your home screen in B1 Mobile. It gives you quick access to the
 
 </div>
 
+:::info This page describes the deprecated native app
+The Home screen in the B1.church app (`/mobile`), which replaces B1 Mobile, works differently: it shows sections such as your latest sermon, upcoming serving, your groups, upcoming events, and giving, plus photo tiles for tabs your church gave a photo. See [Navigating B1App](../../b1-church/getting-started/navigating.md#home). Administrators can choose how those photo tiles are laid out in [Mobile App Settings](../../b1-admin/settings/mobile-app.md#home-screen-tiles).
+:::
+
 ## Welcome Section
 
 At the top of the dashboard, you will see a welcome message along with your church's logo (or church name if no logo is set) and a "stay connected" tagline. This section confirms which church you are currently viewing.

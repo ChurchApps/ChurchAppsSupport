@@ -96,9 +96,11 @@ A `cak_<prefix>.<secret>` personal access token, created in **B1Admin → Settin
 
 For multi-tenant apps that need each church to consent. Implemented in `Api/src/modules/membership/controllers/OAuthController.ts` under `/membership/oauth`. The server supports three grants:
 
-- **Authorization Code** — `POST /oauth/authorize` (authenticated) returns a short-lived code; `POST /oauth/token` with `grant_type=authorization_code` exchanges it for an access JWT (≈ 7 days) plus a refresh token (≈ 90 days).
+- **Authorization Code** — `POST /oauth/authorize` (authenticated) returns a short-lived code; `POST /oauth/token` with `grant_type=authorization_code` exchanges it for an access JWT (≈ 7 days) plus a refresh token (≈ 90 days). Public (secret-less) clients must use PKCE (`S256` only): a `code_challenge` on authorize and the matching `code_verifier` on the token exchange.
 - **Device Code** (RFC 8628) — `POST /oauth/device/authorize` issues a `user_code`; the user approves it in B1Admin (`/oauth/device/approve`); the device polls `/oauth/token` with the device-code grant. For TVs, kiosks, and CLIs with no browser.
 - **Refresh Token** — `grant_type=refresh_token` mints a new access token; public (secret-less) clients may omit the secret.
+
+Public clients can also register themselves with `POST /oauth/register` (RFC 7591 dynamic client registration); they get a `client_id` and no secret, and their redirect URIs must be `https` or loopback.
 
 A **Connected App** is the church-admin-facing view of a granted token, listed and revocable at `/membership/oauth/connections`. The controller also hosts an OAuth **relay-session** bridge (`/oauth/relay/*`) that lets a browserless device complete a sign-in against an *external* provider. → **[Connected Apps & OAuth](../api/connected-apps)**
 
@@ -108,7 +110,7 @@ The only outbound surface. A church subscribes a public HTTPS endpoint to events
 
 ### MCP server
 
-An AI-facing wrapper at `/mcp` (`Api/src/modules/mcp/`). Three generic tools — `list_endpoints`, `describe_endpoint`, `api_call` — expose the whole REST surface dynamically to any MCP client. Auth is the same bearer token as everything else, and `api_call` re-enters the Express stack in-process so every permission and church-scoping rule still applies. → **[MCP Server](../api/mcp)**
+An AI-facing wrapper at `/mcp` (`Api/src/modules/mcp/`). Three generic tools — `list_endpoints`, `describe_endpoint`, `api_call` — expose the whole REST surface dynamically to any MCP client. Auth is the same bearer token as everything else. For clients that sign in with OAuth (claude.ai custom connectors), a 401 from `/mcp` carries a `WWW-Authenticate` header pointing at `/.well-known/oauth-protected-resource`, and `/.well-known/oauth-authorization-server` advertises the `/membership/oauth` endpoints, dynamic registration, PKCE, and the B1Admin `/oauth` consent page (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` re-enters the Express stack in-process so every permission and church-scoping rule still applies. → **[MCP Server](../api/mcp)**
 
 ### Content providers
 
@@ -122,9 +124,9 @@ The inbound-content path, in the separate package `Packages/content-providers` (
 |---|---|---|---|---|
 | REST API | `Bearer` JWT or `cak_…` key | Inbound | `Api/src/modules/*` | [API Keys](../api/api-keys) |
 | API keys | SHA-256-hashed `cak_` token | Credential | `Api/.../membership/controllers/ApiKeyController.ts` | [API Keys](../api/api-keys) |
-| OAuth 2.0 / Connected Apps | Auth code · device · refresh → JWT | Inbound | `Api/.../membership/controllers/OAuthController.ts` | [Connected Apps](../api/connected-apps) |
+| OAuth 2.0 / Connected Apps | Auth code (PKCE) · device · refresh → JWT; dynamic client registration | Inbound | `Api/.../membership/controllers/OAuthController.ts` | [Connected Apps](../api/connected-apps) |
 | Webhooks | Per-hook secret, HMAC-SHA256 signature | Outbound | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks) |
-| MCP server | `Bearer` JWT or `cak_…` key | Inbound (AI) | `Api/src/modules/mcp/` | [MCP Server](../api/mcp) |
+| MCP server | `Bearer` JWT, OAuth JWT (discovered via `/.well-known`), or `cak_…` key | Inbound (AI) | `Api/src/modules/mcp/` | [MCP Server](../api/mcp) |
 | Content providers | Per-provider: none / OAuth PKCE / device / form | Inbound content | `Packages/content-providers/` | [Content Provider](../freeplay-content-provider) |
 
 ## Prebuilt Connectors

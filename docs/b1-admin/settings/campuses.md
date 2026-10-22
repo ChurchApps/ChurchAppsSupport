@@ -28,7 +28,7 @@ In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jum
    - **Name** *(required)* — the display name shown throughout B1 Admin (for example, "Main Campus" or "North Campus").
    - **Address** — the campus street address (used for informational display; not the same as your main church address in Church Settings).
    - **City / State / Zip** — the campus location.
-   - **Timezone** — the IANA timezone for this campus (for example, *America/Chicago*). Useful when campuses are in different time zones.
+   - **Time Zone** — the IANA time zone for this campus (for example, *America/Chicago*). [Check-in schedules](../attendance/setup.md#setting-a-check-in-schedule) for services at this campus open and close in this time zone. If it's set to **None**, your church's [Time Zone](./church-settings.md#time-zone) is used instead. Useful when campuses are in different time zones.
    - **Website** — an optional URL for this campus's own web presence.
 3. Click **Save**.
 

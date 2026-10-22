@@ -1,96 +1,111 @@
 ---
-title: "Configuración de aplicación móvil"
+title: "Configuración de la app móvil"
 ---
 
-# Configuración de aplicación móvil
+# Configuración de la app móvil
 
 <div class="article-intro">
 
-La página de Configuración de aplicación móvil te permite configurar las pestañas de navegación que aparecen en la **experiencia móvil B1.church (PWA)** para los miembros de tu iglesia. Controlas qué pestañas son visibles, a qué enlazan y cómo se muestran.
+La página Mobile App Settings te permite configurar las pestañas de navegación que aparecen en la **experiencia móvil de B1.church (PWA)** para los miembros de tu iglesia. Tú decides qué pestañas son visibles, a qué enlazan y cómo se muestran.
 
 </div>
 
-:::info La aplicación móvil B1 nativa está depreciada
-Las pestañas configuradas aquí se entregan a través de la [aplicación web progresiva B1.church (PWA)](/docs/b1-church/getting-started/installing-pwa), que ha reemplazado la aplicación móvil B1 nativa. Comparte la página de instalación de tu iglesia: `https://tunombredelaiglesia.b1.church/mobile/install` con los miembros; los guía a través de instalar la aplicación en su dispositivo, sin necesidad de descargar desde App Store o Google Play.
+:::info La aplicación móvil nativa B1 está obsoleta
+Las pestañas configuradas aquí se entregan a través de la [aplicación web progresiva (PWA) de B1.church](/docs/b1-church/getting-started/installing-pwa), que ha reemplazado a la aplicación móvil nativa B1. Comparte con tus miembros la página de instalación de tu iglesia: `https://yourchurchname.b1.church/mobile/install`. Allí se les explica cómo instalar la aplicación en su dispositivo, sin necesidad de descargarla desde App Store ni Google Play.
 :::
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Necesitas el permiso "Editar configuración de iglesia". Ver [Roles y permisos](./roles-permissions.md) si no tienes acceso.
-- Configura primero tu [Configuración de iglesia](./church-settings.md), incluyendo el nombre de tu iglesia y marca
+- Necesitas el permiso "Edit Church Settings". Consulta [Roles y permisos](./roles-permissions.md) si no tienes acceso.
+- Configura primero tu [Church Settings](./church-settings.md), incluido el nombre de tu iglesia y su imagen de marca
 
 </div>
 
-## Acceder a configuración de navegación
+## Acceder a la configuración de navegación
 
-1. En B1 Admin, abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda) y expande **Móvil**.
-2. Haz clic en **Navegación** (`/mobile/navigation`).
-3. La página Navegación muestra tus pestañas actuales de la aplicación.
+1. En B1 Admin, abre el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda) y expande **Mobile**.
+2. Haz clic en **Navigation** (`/mobile/navigation`).
+3. La página Navigation muestra las pestañas actuales de tu aplicación.
 
 ## Agregar una nueva pestaña
 
-1. Haz clic en el botón **Agregar pestaña** en la parte superior de la página.
-2. Completa los detalles de la pestaña:
-   - **Nombre**: la etiqueta que aparece en la pestaña (por ejemplo, "Sermones" o "Dar").
-   - **Icono**: haz clic en el selector de icono para elegir un icono para tu pestaña. También puedes cargar una imagen personalizada.
-   - **Tipo de pestaña**: selecciona de opciones como Biblia, Transmisión en vivo, Donación, Sitio web, y más.
-   - **URL**: ingresa la dirección web a la que debe enlazar la pestaña.
-   - **Visibilidad**: controla quién puede ver esta pestaña (todos, solo miembros, etc.).
-3. Haz clic en **Guardar pestaña** para agregarlo a tu aplicación.
+1. Haz clic en el botón **Add Tab** en la parte superior de la página.
+2. Completa los datos de la pestaña:
+   - **Name** -- La etiqueta que aparece en la pestaña (por ejemplo, "Sermones" o "Dar").
+   - **Icon** -- Haz clic en el selector de iconos para elegir un icono para tu pestaña.
+   - **Image** -- Haz clic en **Select Image** (o **Change Image**) para asignar una foto a la pestaña. Las pestañas con foto aparecen como mosaicos de fotos en la pantalla de inicio de la aplicación; consulta [Mosaicos de la pantalla de inicio](#home-screen-tiles).
+   - **Tab Type** -- Elige entre opciones como Bible, Live Stream, Donation, Website y más.
+   - **URL** -- Introduce la dirección web a la que debe enlazar la pestaña.
+   - **Visibility** -- Controla quién puede ver esta pestaña (todos, solo miembros, etc.). En una pestaña **Member Directory**, esto solo controla quién ve la pestaña; quién puede abrir el directorio se configura con **Show in Directory** en la página Member portal (consulta [Configuración del directorio de miembros y mensajería](#member-directory--messaging-settings)).
+3. Haz clic en **Save Tab** para agregarla a tu aplicación.
 
 ## Editar una pestaña existente
 
-1. Haz clic en cualquier pestaña existente en la lista **Pestañas de la aplicación**.
-2. Actualiza el nombre, icono, URL, tipo o configuración de visibilidad de la pestaña.
-3. Haz clic en **Guardar pestaña** para aplicar tus cambios.
+1. Haz clic en cualquier pestaña existente de la lista **App Tabs**.
+2. Actualiza el nombre, el icono, la URL, el tipo o la configuración de visibilidad de la pestaña.
+3. Haz clic en **Save Tab** para aplicar los cambios.
 
-## Reordenar pestañas
+## Reordenar las pestañas
 
-Puedes cambiar el orden en que aparecen las pestañas en la aplicación móvil. Arrastra y suelta las pestañas en la lista para reorganizarlas. El orden mostrado en esta página coincide con el orden que tus miembros verán en la aplicación.
+Puedes cambiar el orden en que aparecen las pestañas en la aplicación móvil. Arrastra y suelta las pestañas en la lista para reordenarlas. El orden que se muestra en esta página coincide con el orden que verán tus miembros en la aplicación.
 
 :::info
-Algunas pestañas pueden aparecer automáticamente cuando se cumplen ciertas condiciones: por ejemplo, una pestaña de Transmisión en vivo puede aparecer cuando una transmisión está activa. Las pestañas agregadas manualmente te dan control total sobre lo que tus miembros ven en todo momento.
+Algunas pestañas pueden aparecer automáticamente cuando se cumplen ciertas condiciones; por ejemplo, una pestaña de Live Stream puede aparecer cuando hay una transmisión activa. Las pestañas agregadas manualmente te dan control total sobre lo que ven tus miembros en todo momento.
 :::
 
 :::tip
-Mantén el recuento de pestañas manejable. Tres a cinco pestañas funcionan bien para la mayoría de las iglesias. Demasiadas pestañas puede hacer que la navegación sea confusa para tus miembros.
+Mantén un número de pestañas manejable. Entre tres y cinco pestañas funcionan bien para la mayoría de las iglesias. Demasiadas pestañas pueden hacer confusa la navegación para tus miembros.
 :::
 
 ## Configuración del directorio de miembros y mensajería
 
-El elemento **Portal de miembros** en la misma sección Móvil contiene la configuración que rige el directorio de miembros y la mensajería privada en la experiencia B1.church:
+El elemento **Member portal** de la misma sección Mobile contiene la configuración que rige el directorio de miembros y la mensajería privada en la experiencia de B1.church:
 
-- **Grupo de aprobación de directorio**: el grupo que revisa las actualizaciones del directorio de miembros, y [solicitudes de eliminación de cuenta](../profile/account-deletion.md), antes de que entren en vigor.
-- **Mostrar en directorio**: quién puede aparecer en el directorio de miembros (solo personal hasta todos).
-- **Preferencia de visibilidad**: establece el predeterminado de la iglesia para los miembros que aún no han elegido su propia configuración. **Dirección**, **Número de teléfono** y **Correo electrónico** tienen su propio menú desplegable, con los mismos cinco niveles disponibles dondequiera que se configure la visibilidad:
-  - **Todos**: visible para cualquiera, incluyendo visitantes anónimos
-  - **Miembros**: visible solo para personas con un registro de Miembro o Personal
-  - **Solo grupos**: visible solo para personas que comparten un grupo con esta persona
-  - **Mis líderes de grupo y personal**: visible solo para líderes de un grupo al que pertenece esta persona, más personal
-  - **Solo personal**: visible solo para personal con el permiso Personas > Ver, y para la propia persona
+- **Directory Approval Group** -- El grupo que revisa las actualizaciones del directorio de miembros y las [solicitudes de eliminación de cuenta](../profile/account-deletion.md) antes de que surtan efecto.
+- **Show in Directory** -- Quién puede abrir el directorio de miembros y quién aparece en él: **Staff Only**, **Members & Staff** (la opción predeterminada), **Regular Attendees & Above** o **Everyone (Including Visitors)**. Las personas cuyo estado de membresía está por debajo del nivel que elijas no ven el directorio ni aparecen en él. El personal con el permiso People &gt; View siempre puede abrir el directorio y ver a todos, independientemente de esta configuración.
+- **Visibility Preference** -- Establece el valor predeterminado para toda la iglesia para los miembros que aún no han elegido su propia configuración. **Address**, **Phone Number** y **Email** tienen cada uno su propio menú desplegable, con los mismos cinco niveles disponibles en todas partes donde se configura la visibilidad:
+  - **Everyone** -- visible para cualquiera, incluidos los visitantes anónimos
+  - **Members** -- visible solo para personas con un registro de Member o Staff
+  - **Groups Only** -- visible solo para personas que comparten un grupo con esta persona
+  - **My Group Leaders and Staff** -- visible solo para los líderes de un grupo al que pertenece esta persona, además del personal
+  - **Staff Only** -- visible solo para el personal con el permiso People &gt; View y para la propia persona
 
-  Los miembros pueden anular estos valores predeterminados para su propio registro desde la pestaña **Privacidad** de su perfil en el PWA B1.church: ver [Editar tu perfil](/docs/b1-church/getting-started/me-page).
-- **Edad mínima para mensajes privados**: un control de seguridad infantil. B1 no abrirá una conversación de **nuevo** mensaje privado cuando cualquiera de los dos está bajo esta edad, según su fecha de nacimiento (el rol del hogar se usa como alternativa cuando no hay fecha de nacimiento en el archivo). Las personas menores de edad permanecen totalmente visibles en el directorio: solo la mensajería directa se bloquea, en **ambas direcciones**, para todos incluyendo personal. Las conversaciones grupales y la mensajería a los padres de un niño aún funcionan. Las opciones son Desactivado, 13, 16 o 18; el predeterminado es **18**. Las conversaciones existentes no se ven afectadas.
+  Los miembros pueden cambiar estos valores predeterminados para su propio registro desde la pestaña **Privacy** de su perfil en la PWA de B1.church; consulta [Editar tu perfil](/docs/b1-church/getting-started/me-page).
+- **Minimum Age for Private Messages** -- Un control de seguridad infantil. B1 no abrirá una **nueva** conversación de mensajes privados cuando alguna de las dos personas esté por debajo de esta edad, según su fecha de nacimiento (si no hay fecha de nacimiento registrada, se usa como respaldo el rol en el hogar). Las personas menores de esa edad siguen totalmente visibles en el directorio; solo se bloquea la mensajería directa, en **ambos sentidos**, para todos, incluido el personal. Las conversaciones grupales y los mensajes a los padres de un menor siguen funcionando. Las opciones son Off, 13, 16 o 18; el valor predeterminado es **18**. Las conversaciones existentes no se ven afectadas.
 
 :::tip
-Debido a que la verificación de edad mínima se basa en fechas de nacimiento, asegúrate de que las fechas de nacimiento se completen para los niños en tu congregación. Esta configuración pertenece a la misma familia de seguridad infantil que los [controles de seguridad de entrada](../attendance/checkin-safety.md).
+Como la verificación de edad mínima depende de las fechas de nacimiento, asegúrate de que estén completadas para los niños de tu congregación. Esta configuración forma parte de la misma familia de controles de seguridad infantil que los [controles de seguridad del registro](../attendance/checkin-safety.md).
 :::
 
-### Solicitud de inicio de sesión de la pantalla de inicio {#home-screen-sign-in-prompt}
+### Mensaje de inicio de sesión en la pantalla de inicio
 
-Los visitantes que abren la [pantalla de inicio](/docs/b1-church/getting-started/navigating#home) de la aplicación sin iniciar sesión ven un aviso corto: de forma predeterminada, *"Sign in to see your groups, giving, and more."* Junto a un botón **Iniciar sesión**. La **solicitud de inicio de sesión de la pantalla de inicio** configuración en la misma página del Portal de miembros (`/mobile/b1-mobile`) te permite cambiarla:
+Los visitantes que abren la [pantalla de inicio](/docs/b1-church/getting-started/navigating#home) de la aplicación sin iniciar sesión ven un breve mensaje -de forma predeterminada, *"Sign in to see your groups, giving, and more."*- junto a un botón **Sign In**. La configuración **Home screen sign-in prompt** de la misma página Member portal (`/mobile/b1-mobile`) permite cambiarlo:
 
-- **Mostrar solicitud de inicio de sesión en la pantalla de inicio de la aplicación**: apaga esto para ocultar tanto el aviso como el botón **Iniciar sesión** de la pantalla de inicio. Los visitantes aún pueden iniciar sesión desde el menú de la aplicación.
-- **Texto de solicitud de inicio de sesión**: reemplaza la redacción predeterminada con tu propio mensaje (hasta 150 caracteres). Déjalo en blanco para usar el predeterminado. Este cuadro está deshabilitado mientras el aviso está apagado.
+- **Show sign-in prompt on the app home screen** -- Desactiva esta opción para ocultar tanto el mensaje como el botón **Sign In** de la pantalla de inicio. Los visitantes aún pueden iniciar sesión desde el menú de la aplicación.
+- **Sign-in prompt text** -- Reemplaza el texto predeterminado por tu propio mensaje (hasta 150 caracteres). Déjalo en blanco para usar el predeterminado. Este cuadro está deshabilitado mientras el mensaje está desactivado.
 
-Haz clic en **Guardar** para aplicar. Guardar actualiza la configuración en caché de la aplicación, por lo que el cambio aparece la próxima vez que se carga la pantalla de inicio.
+Haz clic en **Save** para aplicar los cambios. Al guardar, se actualiza la caché de configuración de la aplicación, de modo que el cambio aparece la próxima vez que se cargue la pantalla de inicio.
+
+### Mosaicos de la pantalla de inicio
+
+Las pestañas que tienen una foto (consulta **Image** en [Agregar una nueva pestaña](#adding-a-new-tab)) aparecen en la [pantalla de inicio](/docs/b1-church/getting-started/navigating#home) de la aplicación como mosaicos de fotos, en una sección con el nombre de tu iglesia como encabezado. Esto incluye una pestaña de Verse of the Day, si le asignas una foto. Las pestañas con foto también aparecen en la barra de pestañas.
+
+La configuración **Home screen tiles** de la misma página Member portal (`/mobile/b1-mobile`) controla cómo se distribuyen esos mosaicos. Elige un **Layout**:
+
+- **Grid** -- Dos mosaicos por fila (la opción predeterminada). Cuando el número de mosaicos es impar, el primero ocupa todo el ancho.
+- **Scrolling row** -- Una fila de mosaicos que los miembros deslizan de lado a lado.
+- **List** -- Una lista con una pequeña miniatura de foto junto al nombre de cada pestaña.
+
+Haz clic en **Save** para aplicar los cambios.
 
 ## Dónde aparecen estas pestañas
 
-Las pestañas que configures aquí se muestran en el **PWA B1.church** que tus miembros instalan desde cualquier página en `https://tunombredelaiglesia.b1.church`. Los cambios que hagas en esta página se reflejan la próxima vez que un miembro abre la aplicación. (Las pestañas también se renderizan mediante la [aplicación móvil B1 nativa](/docs/b1-mobile/) depreciada para cualquier miembro aún ejecutándola, pero esa aplicación está depreciada y ya no se actualiza.)
+Las pestañas que configuras aquí se muestran en la **PWA de B1.church** que tus miembros instalan desde cualquier página de `https://yourchurchname.b1.church`. Los cambios que hagas en esta página se reflejan la próxima vez que un miembro abra la aplicación.
+
+En un teléfono, la barra de pestañas inferior muestra **Home**, hasta tres de tus pestañas y **More**; en una computadora, el encabezado muestra hasta cinco. Las pantallas integradas (como Sermons, Giving o Groups) obtienen primero sus espacios, y las pestañas **Internal Page** ocupan los espacios que queden libres. Las pestañas **External URL** y **Verse of the Day** nunca obtienen un espacio. Todas las pestañas, incluidas las que no caben, aparecen en la página **More** de la aplicación. Consulta [Navegar por B1App](/docs/b1-church/getting-started/navigating) para ver lo que ven los miembros. (Las pestañas también se muestran en la aplicación nativa heredada [B1 Mobile](/docs/b1-mobile/) para los miembros que aún la usan, pero esa aplicación está obsoleta y ya no se actualiza.)
 
 ## Próximos pasos
 
-- [Configuración de iglesia](./church-settings.md) — configura la información de tu iglesia y marca
-- [Roles y permisos](./roles-permissions.md) — administra el acceso para tu equipo
+- [Church Settings](./church-settings.md) -- Configura la información y la imagen de marca de tu iglesia
+- [Roles y permisos](./roles-permissions.md) -- Gestiona el acceso de tu equipo

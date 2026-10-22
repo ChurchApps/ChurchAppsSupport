@@ -15,7 +15,7 @@ Workflows move people through a series of steps on a visual board. Each person b
 
 - Make sure the people you want to track exist in B1 Admin
 - Familiarize yourself with how [Tasks](./tasks.md) work, since each card on a board is a task
-- To use the **Send email** action, create the email templates you want to send first (managed under **Messaging → Manage Templates**)
+- To use the **Send email** action, create the email templates you want to send first (managed under **Settings → Email Templates**)
 - To use the **Send text** action, connect a [texting provider](../settings/church-settings.md#texting) first
 - You will need the appropriate Tasks permission. Viewing, editing cards, and managing workflows are separate permission levels (see [Roles & Permissions](../settings/roles-permissions.md))
 
@@ -98,7 +98,7 @@ Workflow emails only go out after your church has been approved to send group em
 
 Choose **Send Text** and type the **Text message** (up to 1,600 characters). When a card enters the step, the person receives that text on their mobile phone. You can personalize the message with `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, or `{{churchName}}`, which are filled in with the person's details when the text is sent.
 
-- If the person has no mobile phone on file, the action is skipped.
+- If the person has no mobile phone on file, no text is sent and the card's history records **Text skipped: no mobile phone**.
 - If the person has opted out, no text is sent and the card's history records **Text skipped: opted out**.
 - When the text goes out, the card's history records **Text sent**. If the send fails -- for example, because no texting provider is connected or your church is out of texting credits -- the failure is logged in the card's history and the step's remaining actions still run.
 
@@ -108,7 +108,7 @@ Texts are sent through your church's own [texting provider](../settings/church-s
 
 ### Waiting a few days (drip sequences)
 
-The **Wait** action holds a card for the number of days you set. While it waits, the card shows as **Snoozed**. When the wait is over:
+The **Wait** action holds a card for the number of days you set. While it waits, the card shows as **Snoozed**. B1 checks for finished waits every 30 minutes, so a card picks up again within about half an hour of its wait ending. When the wait is over:
 
 1. Any **remaining actions on the same step** run -- so you can build a drip like **Send email → Wait 3 days → Send a reminder email**.
 2. Then, if the step has an automatic route, the card moves on; otherwise it rests on the step for a person to pick up.
