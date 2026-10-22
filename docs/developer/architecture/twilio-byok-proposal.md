@@ -136,4 +136,3 @@ A basic adapter/settings proof of concept is roughly 1–2 days. A sender-only e
 - [ ] Campaign approval and completed number registration are distinct from credential validation. Manual evidence is clearly labeled; stale/revoked readiness blocks sends.
 - [ ] A pilot church checks its signup page, declined and accepted form paths, exact policy URLs, and a consenting test recipient through submission, delivery, STOP suppression, and permitted resubscription.
 - [ ] Existing Clearstream, Text In Church, and Nalo settings and send behavior pass regression checks; help copy distinguishes proposals from released features.
-
