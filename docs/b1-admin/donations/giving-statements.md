@@ -59,6 +59,15 @@ Churches outside the United States can switch the statement to their country's o
 
 Statements then carry the wording your tax authority expects (for Canada, "Official Receipt for Income Tax Purposes" with the CRA reference), a receipt number in the form `YEAR-DONORID`, the eligible amount counted from tax-deductible funds only, and a separate line for any gifts to non-deductible funds. Donors see the same receipt block when they print their own statement from B1.church.
 
+## What Members See in B1.church
+
+The same **Giving** settings section controls what members see on their own giving page in B1.church:
+
+- **Member Giving History** picks which years members can see. **All years** is the default. **Through 2025** (or any other year) stops at that year, so members can't view or print a later year until you allow it. Use this to hold back the current year while you finish corrections and refunds. **Hidden** removes giving history, yearly totals and statement printing completely. Members can still give.
+- **Giving Note** is a short message shown on the member's giving page and giving history, and printed at the bottom of every giving statement, including the statements you print here. Use it for things like your refund policy.
+
+These settings only change what members see. You can still print any year from this page.
+
 ## Next Steps
 
 If you need to review donation details before generating statements, visit the [Donation Reports](donation-reports.md) page or check individual [batches](batches.md).
