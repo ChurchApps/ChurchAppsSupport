@@ -117,7 +117,7 @@ Kingdom Funding è un elaboratore di pagamenti cristiano che supporta carte di c
 L'integrazione di Kingdom Funding è attualmente in beta. Contatta il tuo rappresentante di account B1 per abilitarla per la tua chiesa.
 :::
 
-1. Iscriviti o accedi su [kingdomfunding.org](https://kingdomfunding.org).
+1. Iscriviti o accedi su [kingdomfundinginternational.com](https://kingdomfundinginternational.com/churches/apply).
 2. Ottieni la tua **Chiave di sicurezza** (pubblica) e **Chiave privata** dal portale commerciale di Kingdom Funding.
 3. In B1 Admin, vai a **Impostazioni**, apri la sezione **Donazioni** e fai clic su modifica.
 4. Imposta il **Provider** su **Kingdom Funding**.

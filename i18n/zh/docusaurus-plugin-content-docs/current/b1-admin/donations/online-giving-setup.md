@@ -117,7 +117,7 @@ Kingdom Funding 是一个基督教支付处理器，支持信用卡/借记卡和
 Kingdom Funding 集成目前处于测试阶段。请与您的 B1 账户代表联系以为您的教会启用它。
 :::
 
-1. 在 [kingdomfunding.org](https://kingdomfunding.org) 注册或登录。
+1. 在 [kingdomfundinginternational.com](https://kingdomfundinginternational.com/churches/apply) 注册或登录。
 2. 从 Kingdom Funding 商家门户获取您的**安全密钥**（公开）和**私密密钥**。
 3. 在 B1 Admin 中，转到**设置**，打开**捐献**部分并点击编辑。
 4. 将**提供商**设置为 **Kingdom Funding**。

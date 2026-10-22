@@ -90,7 +90,7 @@ IKingdom Funding ngumcubunguli wetinkhokhelo weKhristu losekela emakhadi ekukwel
 Kuhlanganiswa kweKingdom Funding kusesigabeni sekuhlolwa manje. Tsindzana nemmeli wakho we-akhawunti yeB1 kute uyivulele libandla lakho.
 :::
 
-1. Bhalisa nobe ungene ku-[kingdomfunding.org](https://kingdomfunding.org).
+1. Bhalisa nobe ungene ku-[kingdomfundinginternational.com](https://kingdomfundinginternational.com/churches/apply).
 2. Tfola **Security Key** yakho (yeluntfu) kanye ne-**Private Key** kusuka ku-merchant portal yeKingdom Funding.
 3. Ku-B1 Admin, yiya ku-**Settings** bese uvula **Church Settings**.
 4. Esigabeni se-**Giving**, setsa **Provider** kutsi ibe ye-**Kingdom Funding**.

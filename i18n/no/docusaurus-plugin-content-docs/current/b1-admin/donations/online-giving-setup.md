@@ -117,7 +117,7 @@ Kingdom Funding er en kristen betalingsformidler som støtter kreditt-/debetkort
 Kingdom Funding-integrasjonen er for øyeblikket i betaversjon. Kontakt din B1-kontaktperson for å aktivere den for menigheten din.
 :::
 
-1. Registrer deg eller logg inn på [kingdomfunding.org](https://kingdomfunding.org).
+1. Registrer deg eller logg inn på [kingdomfundinginternational.com](https://kingdomfundinginternational.com/churches/apply).
 2. Hent **Security Key** (offentlig) og **Private Key** fra Kingdom Funding-portalen for forhandlere.
 3. Gå til **Innstillinger** i B1 Admin, åpne delen **Giving** og klikk på rediger.
 4. Sett **Leverandør** til **Kingdom Funding**.

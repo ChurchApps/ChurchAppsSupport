@@ -117,7 +117,7 @@ Ang Kingdom Funding ay isang Kristiyanong payment processor na sumusuporta sa mg
 Nasa beta pa ang integrasyon ng Kingdom Funding. Makipag-ugnayan sa inyong B1 account representative para ma-enable ito sa inyong simbahan.
 :::
 
-1. Mag-sign up o mag-log in sa [kingdomfunding.org](https://kingdomfunding.org).
+1. Mag-sign up o mag-log in sa [kingdomfundinginternational.com](https://kingdomfundinginternational.com/churches/apply).
 2. Kunin ang inyong **Security Key** (public) at **Private Key** mula sa merchant portal ng Kingdom Funding.
 3. Sa B1 Admin, pumunta sa **Settings**, buksan ang seksyong **Giving** at i-click ang edit.
 4. Itakda ang **Provider** sa **Kingdom Funding**.

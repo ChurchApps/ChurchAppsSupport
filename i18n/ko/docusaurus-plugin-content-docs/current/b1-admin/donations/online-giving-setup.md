@@ -117,7 +117,7 @@ Kingdom Funding은 신용/직불 카드 및 ACH 은행 이체를 지원하는 �
 Kingdom Funding 통합은 현재 베타 버전입니다. 교회에 대해 활성화하려면 B1 계정 담당자에게 문의합니다.
 :::
 
-1. [kingdomfunding.org](https://kingdomfunding.org)에서 가입하거나 로그인합니다.
+1. [kingdomfundinginternational.com](https://kingdomfundinginternational.com/churches/apply)에서 가입하거나 로그인합니다.
 2. Kingdom Funding 판매자 포털에서 **Security Key**(공개) 및 **Private Key**를 얻습니다.
 3. B1 Admin에서 **Settings**로 이동하고 **Giving** 섹션을 열고 편집을 클릭합니다.
 4. **Provider**를 **Kingdom Funding**으로 설정합니다.

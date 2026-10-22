@@ -117,7 +117,7 @@ Kingdom Funding एक ईसाई भुगतान प्रोसेसर 
 Kingdom Funding एकीकरण वर्तमान में बीटा में है। इसे अपने चर्च के लिए सक्षम करने के लिए अपने B1 खाता प्रतिनिधि से संपर्क करें।
 :::
 
-1. [kingdomfunding.org](https://kingdomfunding.org) पर साइन अप करें या लॉगिन करें।
+1. [kingdomfundinginternational.com](https://kingdomfundinginternational.com/churches/apply) पर साइन अप करें या लॉगिन करें।
 2. Kingdom Funding मर्चेंट पोर्टल से अपनी **Security Key** (सार्वजनिक) और **Private Key** प्राप्त करें।
 3. B1 Admin में, **Settings** पर जाएं, **Giving** सेक्शन खोलें और संपादन पर क्लिक करें।
 4. **Provider** को **Kingdom Funding** पर सेट करें।

@@ -117,7 +117,7 @@ Kingdom Funding - это христианский платежный проце�
 Интеграция Kingdom Funding в настоящее время находится в бета-версии. Обратитесь к вашему представителю аккаунта B1 для её включения для вашей церкви.
 :::
 
-1. Зарегистрируйтесь или войдите на [kingdomfunding.org](https://kingdomfunding.org).
+1. Зарегистрируйтесь или войдите на [kingdomfundinginternational.com](https://kingdomfundinginternational.com/churches/apply).
 2. Получите ваш **Security Key** (public) и **Private Key** из портала приложения Kingdom Funding.
 3. В B1 Admin перейдите в **Settings**, откройте раздел **Giving** и нажмите edit.
 4. Установите **Provider** на **Kingdom Funding**.
