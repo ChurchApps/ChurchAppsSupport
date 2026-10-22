@@ -619,6 +619,14 @@ const sidebars: SidebarsConfig = {
             'developer/architecture/websites',
             'developer/architecture/integrations',
             'developer/architecture/audit-log',
+            {
+              type: 'category',
+              label: 'Proposals',
+              items: [
+                'developer/architecture/twilio-byok-proposal',
+                'developer/architecture/twilio-byok-onboarding-draft',
+              ],
+            },
           ],
         },
         {

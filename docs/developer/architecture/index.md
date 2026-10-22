@@ -57,3 +57,12 @@ Two structural rules shape everything documented in this section:
 :::tip
 When a change alters how one of these systems works — not just a page inside one app — the matching system map here should be updated in the same effort. That keeps this section trustworthy as the first stop for new contributors.
 :::
+
+## Proposals
+
+These documents describe proposed work for review, rather than available product behavior.
+
+| Proposal | What it covers |
+|---|---|
+| [Twilio BYOK](./twilio-byok-proposal) | Church-owned account, keys, service and phone number; integration scope, consent, delivery, estimates, and release checks |
+| [Twilio church onboarding draft](./twilio-byok-onboarding-draft) | Proposed B1 signup-form settings, church-specific campaign examples, and approval/operating checklists |
