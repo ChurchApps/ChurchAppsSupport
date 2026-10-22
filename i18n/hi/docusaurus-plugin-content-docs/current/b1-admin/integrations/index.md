@@ -19,8 +19,8 @@ B1 आपकी टीम द्वारा पहले से उपयोग
 | **[Zapier](./zapier)** | B1 इवेंट्स को triggers के रूप में, और Zapier के 7,000+ apps में B1 actions का उपयोग करें | दोनों | हर Zap के लिए 5–10 मिनट |
 | **[Make](./make)** | Zapier जैसा ही विचार, Make के visual scenario builder में | दोनों | हर scenario के लिए 5–10 मिनट |
 | **[Google Sheets](./google-sheets)** | People / Donations / Groups / Attendance को मांग पर एक spreadsheet में export करें | B1 → Sheet | 5 मिनट |
-| **[Claude](./claude)** | Anthropic के Claude से अपने church के डेटा के बारे में सवाल पूछें, आपकी permissions के दायरे में | दोनों | 5 मिनट |
-| **[ChatGPT](./chatgpt)** | वही विचार OpenAI के ChatGPT के साथ, Custom GPT या MCP-aware OpenAI tooling के माध्यम से | दोनों | 10 मिनट |
+| **[Claude](./claude)** | Anthropic के Claude से अपने church के डेटा के बारे में सवाल पूछें, आपकी permissions के दायरे में — मुफ़्त में आज़माएं, अनुशंसित | दोनों | 3 मिनट से कम |
+| **[ChatGPT](./chatgpt)** | वही विचार OpenAI के ChatGPT के साथ (paid ChatGPT plan की ज़रूरत है) | दोनों | 10 मिनट |
 | **[Connected services](./services/)** | Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr के लिए curated recipes | अलग-अलग | हर एक के लिए 5–10 मिनट |
 
 ## कौन सा चुनें {#how-to-pick}
@@ -28,7 +28,7 @@ B1 आपकी टीम द्वारा पहले से उपयोग
 - **बस chat में एक notification चाहिए?** **Slack** या **Discord** का उपयोग करें -- कोई तीसरे पक्ष का account नहीं, कोई Zap रखरखाव नहीं। सब कुछ B1Admin के भीतर कॉन्फ़िगर होता है।
 - **कई apps में कुछ स्वचालित करना चाहते हैं** (जैसे "जब कोई दान दे, तो उसे मेरी Mailchimp list और Slack #donations में जोड़ें")? **Zapier** या **Make** का उपयोग करें। Zapier अधिक सरल है; Make बड़े पैमाने पर सस्ता है और उसका logic अधिक लचीला है।
 - **एक बार का डेटा निकालना या नियमित रिपोर्ट चाहिए?** **Google Sheets** का उपयोग करें -- add-on के sidebar में एक API key पेस्ट करें और Export पर click करें।
-- **सादी भाषा में सवाल पूछना चाहते हैं** ("पिछले रविवार कितने पहली बार आने वाले visitors थे?", "इस महीने के giving का सारांश दें")? **[Claude](./claude)** या **[ChatGPT](./chatgpt)** का उपयोग करें। दोनों एक ही API key से B1 से जुड़ते हैं, और Claude claude.ai से B1 में sign in करके भी जुड़ सकता है।
+- **सादी भाषा में सवाल पूछना चाहते हैं** ("पिछले रविवार कितने पहली बार आने वाले visitors थे?", "इस महीने के giving का सारांश दें")? **[Claude](./claude)** से शुरू करें — इसे मुफ़्त में आज़मा सकते हैं और यह 3 मिनट से भी कम में सेट हो जाता है। **[ChatGPT](./chatgpt)** भी paid plan के साथ काम करता है। Claude आपके B1 account से sign in करके जुड़ता है; ChatGPT एक B1 API key का उपयोग करता है।
 - **अपना custom integration बना रहे हैं?** ऊपर में से कोई नहीं -- सीधे [REST API](/docs/developer/api) से बात करें, एक [API key](/docs/developer/api/api-keys) के साथ, या अपने नियंत्रण वाले server को [webhooks](/docs/developer/api/webhooks) की सदस्यता दें।
 
 ## उनमें क्या समानता है {#what-they-have-in-common}

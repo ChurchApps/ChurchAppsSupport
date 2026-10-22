@@ -19,8 +19,8 @@ B1 se conecta às ferramentas que sua equipe já usa. Conecte Slack ou Discord p
 | **[Zapier](./zapier)** | Use eventos B1 como gatilhos e ações B1 em qualquer um dos 7.000+ aplicativos do Zapier | Ambas | 5–10 min por Zap |
 | **[Make](./make)** | Mesma ideia do Zapier, no construtor de cenários visual do Make | Ambas | 5–10 min por cenário |
 | **[Google Sheets](./google-sheets)** | Exportar Pessoas / Doações / Grupos / Frequência para uma planilha sob demanda | B1 → Sheet | 5 minutos |
-| **[Claude](./claude)** | Faça perguntas ao Claude da Anthropic sobre os dados da sua igreja, limitado às suas permissões | Ambas | 5 minutos |
-| **[ChatGPT](./chatgpt)** | Mesma ideia com ChatGPT da OpenAI, via um GPT personalizado ou ferramentas do OpenAI conscientes de MCP | Ambas | 10 minutos |
+| **[Claude](./claude)** | Faça perguntas ao Claude da Anthropic sobre os dados da sua igreja, limitado às suas permissões — grátis para experimentar, recomendado | Ambas | Menos de 3 minutos |
+| **[ChatGPT](./chatgpt)** | Mesma ideia com ChatGPT da OpenAI (requer um plano pago do ChatGPT) | Ambas | 10 minutos |
 | **[Serviços Conectados](./services/)** | Receitas selecionadas para Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Varia | 5–10 min cada |
 
 ## Como Escolher
@@ -28,7 +28,7 @@ B1 se conecta às ferramentas que sua equipe já usa. Conecte Slack ou Discord p
 - **Quer apenas uma notificação em chat?** Use **Slack** ou **Discord** — sem conta de terceiro, sem Zap para manter. Configurado inteiramente dentro de B1Admin.
 - **Quer automatizar algo entre aplicativos** (por ex. "quando alguém doa, adicione à minha lista Mailchimp e Slack #donations")? Use **Zapier** ou **Make**. Zapier é mais amigável; Make é mais barato em escala e tem lógica mais flexível.
 - **Precisa de um pull de dados único ou relatório agendado?** Use **Google Sheets** — cole uma chave de API na barra lateral do complemento e clique em Exportar.
-- **Quer fazer perguntas em inglês comum** ("quantos visitantes pela primeira vez no domingo passado?", "resuma doações este mês")? Use **[Claude](./claude)** ou **[ChatGPT](./chatgpt)** — ambos se conectam a B1 com uma única chave de API.
+- **Quer fazer perguntas em inglês comum** ("quantos visitantes pela primeira vez no domingo passado?", "resuma doações este mês")? Comece com o **[Claude](./claude)** — é grátis para experimentar e é configurado em menos de 3 minutos. O **[ChatGPT](./chatgpt)** também funciona com um plano pago. O Claude se conecta fazendo login com sua conta do B1; o ChatGPT usa uma chave de API do B1.
 - **Criando sua própria integração personalizada?** Nenhuma das acima — fale com a [API REST](/docs/developer/api) diretamente com uma [chave de API](/docs/developer/api/api-keys), ou inscreva um servidor que você controla em [webhooks](/docs/developer/api/webhooks).
 
 ## O Que Eles Têm em Comum

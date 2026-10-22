@@ -6,46 +6,129 @@ title: "ChatGPT"
 
 <div class="article-intro">
 
-Xhuma i-ChatGPT ye-OpenAI kumniningwane weBandla lakho le-B1 kuze ukwati kubuta imibuto lefana "ngubani longakabi kulicembu kulelikota?" nome "hlanganisa umnikelo wesakhiwo lenyanga" bese i-ChatGPT ikhipha timphendvulo mngoti ku-B1. Kunetindlela letimbili letisekelwako: i-**Custom GPT** lesebenta kuloonkhe luhlelo lwe-ChatGPT Plus, kanye ne-**MCP server** yetitfulu tebadzali betinhlelo letiyisekelako.
+Xhuma i-ChatGPT kumininingwane ye-B1 yelibandla lakho bese uyibuta imibuto ngelulwimi loluvamile — iphendvula kusuka emarekhodini elibandla lakho lasebentako. Ungayicela nekutsi ikusite ngetintfo bekungatsatsa tinyatselo letinyenti ku-B1 Admin.
+
+**Letinye tintfo longatibuta:**
+- *"Ngikhombise wonkhe umuntfu lobekhona ngeliviki leledlule kodvwa angakafakwa kulicembu lelincane"*
+- *"Hlanganisa iminikelo yalenyanga ngekwesikhwama"*
+- *"Ngobani emalunga etfu lamasha futsi sebebalandzelele yini?"*
+- *"Angati kutsi ngiyenta njani X ku-B1 — ungangihambisa ngayo yini?"*
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekucala</h4>
+<h4>Loko Lokudzingako</h4>
 
-- Umphatsi welibandla lonemvumo yekufaka **Edit Settings** (kucalisa ikhiya ye-API)
-- I-akhawunti ye-**ChatGPT Plus, Pro, Team, nome Enterprise** (ibanga lelisimahla alikwati kusebentisa ema-Custom GPT nome ema-Connector)
-- I-URL lephelele ye-B1 API yakho — ngalokuvamile `https://api.churchapps.org` kumabandla lasekelwe, nome i-Api host yakho lotihostele wena
+- **I-ChatGPT desktop app** ye-Mac nome Windows
+- **Luhlelo lwe-ChatGPT lolukhokhelwako** (Plus nome lophakeme). Ema-akhawunti e-ChatGPT lamahhala angeke axhume ku-B1.
+- **Kungena kwakho ku-B1** lokunemvumo yekuphatsa tilungiselelo telibandla (kuyadzingeka kwakha ikhiya). Awunayo? Cela umphatsi we-B1 welibandla lakho.
 
 </div>
 
-## Khetsa Indlela Lefanele
+:::tip Kuyanconywa: linga i-Claude kucala — imahhala
+I-[Claude](./claude) ixhuma ku-B1 **eluhlelweni lwayo lwamahhala** futsi ilungiselelwa ngaphansi kwemaminithi lali-3 — vele ungete i-B1 njenge-connector bese ungena nge-akhawunti yakho ye-B1. Akudzingeki khiya. Yindlela lelula kakhulu yekutsi libandla lakho lilinge i-AI ne-B1 ngaphambi kwekukhokhela nome yini.
+:::
 
-| Indlela | Luhlelo loludzingekako | Umzamo | Loyakutfola |
-|---|---|---|---|
-| **Custom GPT nge-Actions** | ChatGPT Plus / Team / Enterprise | Emaminithi lali-10 | I-GPT lengabelaneka lebita i-REST API ye-B1 kuwo wonkhe umsebenti lofuna kuyisebentisa |
-| **MCP nge-emathulusi e-OpenAI** | Developer / Agent SDK / Pro Connectors | Kwengetiwe | Kutfolakala lokuphelele nge-MCP server, kufanele emathulusi ekubhala ikhodi netinkhundla te-agent |
+## Kuyilungiselela
 
-Kumabandla lamanyenti indlela ye-**Custom GPT** ngiyona lefanele — ayidzingi kulungiselela kwemsunguli, isebenta ngekhatsi kwe-ChatGPT app leyavamile nema-client eselula, futsi ingabelaneka nelicembu lakho. Indlela ye-MCP ichaziwe ngentasi kubantfu labasebenta ngethekhnoloji labasebentisa emathulusi emsunguli e-OpenAI nome tinkhundla te-agent.
+Tikrini tingabukeka tehlukile kancane ku-version yakho ye-ChatGPT.
 
-## Indlela A — Custom GPT nge-Actions
+---
 
-Loku kuxhuma i-ChatGPT ngekwenta ku-B1 REST API. I-Custom GPT yakho itawukwati kufundza futsi (nangabe kukhetsiwe) kubhala emarekhodi e-B1 esikhundleni salobonkhe lositasebentisako.
+**Sinyatselo 1 — Yakha ikhiya yakho ye-B1**
 
-### 1. Yakha ikhiya ye-API
+Ikhiya yiyo levumela i-ChatGPT kutsi ingene ku-B1 ye*libandla lakho* — ucabange ngayo njengephasiwedi ye-ChatGPT kuphela.
 
-1. Ku-B1Admin, hamba uye ku **Settings → Developer → API Keys**.
-2. Chofota **New API Key**, uyicalise ngekutsi `ChatGPT`, bese ukhetsa emkhawulo. Emasethi lavamile ekucala:
-   - **Umsiti lofunda kuphela:** `people:read`, `groups:read`, `attendance:read`, `donations:read`
-   - **Kufunda + kubhala:** ngeta emkhawulo lafanako :write
-3. Gcina bese ukhopisha yonkhe ikhiya `cak_…`.
+1. Ngena ku-[B1 Admin](https://admin.b1.church) bese uya ku-[Settings → Developer](https://admin.b1.church/settings/developer).
+2. Kuthebhu ye-**API Keys**, chofota **New API Key** bese uyicamba ngekutsi `ChatGPT`.
+3. **Emkhawulo (Scopes):** khetsa loko i-ChatGPT lengakwenta. Indzawo ngayinye inelibhokisi le-**read** (kubuka kuphela) nelibhokisi le-**write** (kwenta lushintjo). Awuciniseki? Khetsa emabhokisi e-**read** kuphela kucala.
+4. Chofota **Save**, bese u-**Copy** ikhiya (icala nge-`cak_`). Ikhonjiswa kanye kuphela.
 
-Bona [API Keys](/docs/developer/api/api-keys) kuluhlu loluphelele lwemkhawulo.
+---
 
-### 2. Yakha i-Custom GPT
+**Sinyatselo 2 — Chofota libito lakho ekhoneni lelingentasi ngesencele ku-ChatGPT**
+
+![Chofota libito lephrofayela yakho](/img/guides/chatgpt-mcp/01.png)
+
+---
+
+**Sinyatselo 3 — Chofota Settings**
+
+![Chofota Settings kumenyu](/img/guides/chatgpt-mcp/02.png)
+
+---
+
+**Sinyatselo 4 — Chofota Plugins ku-sidebar lesencele**
+
+![Chofota Plugins ngaphansi kwe-Integrations](/img/guides/chatgpt-mcp/03.png)
+
+---
+
+**Sinyatselo 5 — Chofota ithebhu ye-MCPs**
+
+![Chofota ithebhu ye-MCPs](/img/guides/chatgpt-mcp/04.png)
+
+Utawubona lapha noma ngumaphi ema-MCP server sewuvele uwengetile.
+
+---
+
+**Sinyatselo 6 — Chofota Add → Add MCP server**
+
+![Chofota Add bese u-Add MCP server](/img/guides/chatgpt-mcp/06.png)
+
+---
+
+**Sinyatselo 7 — Gcwalisa lifomu bese uchofota Save**
+
+![Lifomu le-Connect to a custom MCP](/img/guides/chatgpt-mcp/07.png)
+
+Chofota **Streamable HTTP**, bese ugcwalisa:
+
+| Indzawo | Loko lokufakako |
+|---|---|
+| **Name** | `B1 Church` (nome nobe nguliphi libito lolitsandzako) |
+| **Type** | Chofota **Streamable HTTP** |
+| **URL** | `https://api.churchapps.org/mcp` |
+| **Bearer token env var** | Kuyekele kungenalutfo |
+| **Headers** | Chofota **+ Add header** → Key: `Authorization` → Value: bona ngentasi |
+
+![Sibonelo lesigcwalisiwe lesikhombisa Authorization ku-Key ne-Bearer key ku-Value](/img/guides/chatgpt-mcp/08.png)
+
+- **Key:** `Authorization`
+- **Value:** `Bearer cak_yourkey` — ligama lelitsi Bearer, sikhala, bese ikhiya yakho
+
+Chofota **Save**.
+
+Kuphela loko! Buyela enkhulumeni bese ubuta intfo lefana *"Bantfu labangaki labakulelibandla letfu?"* bese i-ChatGPT itfola imphendvulo ngco ku-B1.
+
+---
+
+## Kuphephile Yini?
+
+- I-ChatGPT ingabona kuphela imininingwane ye**libandla lakho**.
+- Ingenta kuphela loko ikhiya yakho lekuvumelako — ikhiya lekhetswe kuyo emabhokisi e-**read** kuphela ingabuka kodvwa ingeke ishintje lutfo.
+- Kuyicisha, sula ikhiya ku-B1 Admin ngaphansi kwe-**Settings → Developer**. Kufinyelela kuyema ngaso leso sikhatsi.
+
+## Kubiza Malini?
+
+Kuxhumana ne-B1 kumahhala — kuyincenye ye-ChurchApps. I-ChatGPT idzinga luhlelo lolukhokhelwako (Plus nome lophakeme) kuze ixhume; bona emanani e-OpenAI.
+
+## Imininingwane Yetheknoloji
+
+Lencenye lesele yalelikhasi ngeyebasebentisi labati ngetheknoloji kanye nebasiti be-AI. I-MCP server ye-B1 ikhona ku-`https://api.churchapps.org/mcp` (Streamable HTTP) futsi yemukela ikhiya ye-API njenge-header ye-`Authorization: Bearer cak_…`. Bona i-[MCP Server developer reference](/docs/developer/api/mcp).
+
+### Custom GPT nge-Actions
+
+I-Custom GPT ikuvumela kutsi wakhe umsiti lotinikele lelicembu lakho lonkhe lelingabelana ngawo — bavula linki bese bacala kubuta imibuto ngaphandle kwekulungiselela lutfo ngasohlangotsini lwabo. Idzinga i-akhawunti ye-ChatGPT Plus, Team, nome Enterprise kanye nemaminithi lacishe abe li-10.
+
+#### 1. Yakha ikhiya ye-API
+
+Landzela Sinyatselo 1 se-Kuyilungiselela lapha ngenhla nangabe ungakakwenti.
+
+#### 2. Yakha i-Custom GPT
 
 1. Ku-ChatGPT, chofota iphrofayela yakho → **My GPTs** → **Create a GPT**.
-2. Shintjela ku-thebhu ye-**Configure** bese unika i-GPT ligama (sibonelo "B1 Assistant") netiyalo letifana:
+2. Shintjela kuthebhu ye-**Configure**, nika i-GPT libito (sibonelo "B1 Assistant") bese wengeta ticondziso:
 
    ```
    You help church staff query their B1 records. Use the B1 API actions to
@@ -53,12 +136,13 @@ Bona [API Keys](/docs/developer/api/api-keys) kuluhlu loluphelele lwemkhawulo.
    answers to data the user has permission to see. Be concise.
    ```
 
-3. Skrola uye ku **Actions** → **Create new action** → **Authentication**.
-   - **Luhlobo lwekucinisekisa:** API Key
-   - **API Key:** `cak_<prefix>.<secret>`
-   - **Luhlobo lwe-Auth:** Bearer
+3. Skrola uye ku-**Actions** → **Create new action** → **Authentication**.
+   - **Authentication type:** API Key
+   - **API Key:** namatsisela ikhiya yakho `cak_…`
+   - **Auth Type:** Bearer
    - Gcina.
-4. Kubhokisi le-**Schema**, faka i-OpenAPI spec lencane lechaza ema-endpoint lofuna i-GPT isebentise. Sicalo lesihlanganisa kufundza lokuvamile kakhulu:
+
+4. Ebhokisini le-**Schema**, namatsisela le-OpenAPI spec yekucala:
 
    ```yaml
    openapi: 3.1.0
@@ -137,50 +221,38 @@ Bona [API Keys](/docs/developer/api/api-keys) kuluhlu loluphelele lwemkhawulo.
              description: OK
    ```
 
-   Yandzisa i-schema ngema-endpoint lamanyenti nangabe kudzingeka — onkhe ema-route lacinisekisiwe ku-B1 asemukela lona ikhiya `cak_…`. I-[REST API reference](/docs/developer/api/endpoints) inikeza luhlu lwaloko lokutfolakalako.
+5. Gcina i-action. Yihlole: *"bantfu labangaki labakulelibandla?"* — i-ChatGPT ibita `listPeople` bese iyaphendvula.
+6. **Publish** i-GPT (Only me / Anyone with link / Organization) bese wabelana ngelinki nelicembu lakho.
 
-5. Gcina lesento. Sihlole ngemibuto lefana *"bantfu labangaki labakulelibandla?"* — i-ChatGPT itakubita i-`listPeople` bese iphendvula.
-6. **Shicilela** i-GPT (Kimi kuphela / Nome ngubani lonelinki / Inhlangano) bese wabelana nelicembu lakho.
+#### 3. Kuyisebentisa
 
-### 3. Kuyisebentisa
+Nobe ngubani lonelinki angabuta imibuto ngelulwimi lwemvelo. Emkhawulo weikhiya usasebenta — ikhiya lefundza kuphela iyakwenqaba kubhala kungakhatsaleki kutsi i-schema ye-action itsini.
 
-Nobe ngubani losabelane naye nge-GPT angabuta imibuto ngelulwimi lolusetjentiswako nsuku zonkhe — i-ChatGPT ikhetsa sento lesifanele, ibite i-B1, iphendvule. Emkhawulo weikhiya asakasebenta: ikhiya lefunda kuphela iyalinqaba kubhala nanoma ngabe sento lesichaziwe ku-schema sitini.
+---
 
-## Indlela B — MCP nge-emathulusi e-OpenAI
+### Kuphepha nemkhawulo
 
-I-B1 API ihlanganisa i-MCP server ku `/mcp` lengasetjentiswa ngunoma ngutulu lwe-OpenAI lolwati i-MCP — sibonelo [OpenAI Agents SDK](https://platform.openai.com/docs/guides/agents), ithulusi le-MCP le-Responses API, nome tinkhundla te-agent temaphathi latsatfu ladla i-MCP servers.
+- **Kwehlukanisa ngelibandla ngalinye.** Ikhiya ye-API ihambisana nelibandla linye kuphela. I-ChatGPT ayikwati kubona imininingwane yalamanye emabandla.
+- **Kumelene nemvumo.** Ikhiya iphatse kuphela emkhawulo lowuniketile. Kususa umkhawulo (ngekusula nekwakha kabusha ikhiya) kucisha lokufinyelela ngekubita lokulandzelako.
+- **Iyahocishwa ngaso leso sikhatsi.** Sula ikhiya ku-**Settings → Developer → API Keys** bese kufinyelela kuphela ngaso leso sikhatsi.
+- **Kwabelana nge-Custom GPT kwabelana nemininingwane.** Wonkhe umuntfu lonekufinyelela ku-GPT angabona noma yini lekuvunyelwe ngumkhawulo weikhiya. Khetsa emkhawulo lomncane (sibonelo, shiya `donations:read`) kuma-GPT labelwana ngawo kabanti.
+- **Umlandvo wekuhlola.** Noma ngumuphi lushintjo lolwentiwa nge-ChatGPT ludlula ku-audit log lefanako nekwentiwa ku-B1 Admin — kutfole ngaphansi kwe-**Settings → Audit Log**.
 
-Cinisekisa ngeleyo ikhiya `cak_…` kuhedha ye-`Authorization: Bearer`. Kunemathulusi lamatsatfu lakhonjiswako: `list_endpoints`, `describe_endpoint`, ne-`api_call`. Bona i-[MCP Server developer reference](/docs/developer/api/mcp) kuprothokholi, kutfutfukiswa, netifanelo temathulusi.
+### Kulungisa tinkinga
 
-Ema-"Connector" langekhatsi e-ChatGPT (Pro/Business/Enterprise) njengamanje alindzele ema-MCP servers lanetimo letitsite te-`search` ne-`fetch` kanye nekucinisekiswa nge-OAuth, lokungakhonjiswa yi-B1 MCP server. Kuze-ChatGPT ngekhatsi kwe-app yebasebentisi, indlela ye-Custom GPT lengetulu iyona lesebentako.
+**I-MCP connector itsi "Unauthorized" nome ikhombisa liphutsa le-401:** ikhiya yakho ye-API ayikho nome ayilungi. Vula tilungiselelo te-connector bese uhlola i-header ye-**Authorization**: inani kufanele libe ligama lelitsi `Bearer`, sikhala sinye, bese ikhiya yonkhe `cak_…` ngaphandle kwetikhala letengetiwe.
 
-## Kuphepha Nemkhawulo
+**I-ChatGPT itsi ayikwati kutfola imininingwane letsite:** kungenteka ikhiya ingenawo emkhawulo lofanele. Yakha ikhiya lensha ku-**Settings → Developer → API Keys** lenemkhawulo leyengetiwe bese ubuyeketa i-connector.
 
-- **Kwehlukanisa ngelibandla ngalinye.** Ikhiya ye-API isetjentiswa libandla linye kuphela. I-ChatGPT ayikwati kubona imininingwane yalamanye emabandla.
-- **Kumelene nemvumo.** Nangabe wasusa imvumo kulomuntfu lowacalisa ikhiya, i-ChatGPT iyayilahlekelwa ngalesikhatsi lesilandzelako lokutawubitwa ngaso — ngalesikhatsi lesifanako.
-- **Iyakwati kususwa.** Sula ikhiya ku **Settings → Developer → API Keys** bese kutfolakala kwe-ChatGPT kuyaphela ngaso leso sikhatsi.
-- **Kwabelana nge-Custom GPT kwabelana nemininingwane.** Nobe ngubani lonelifikelelo ku-GPT angabuta imibuto abone konkhe leyikhiya inemvumo yakho. Yabelana kuphela nebasebenti labafanele babone loyo mniningwane, futsi ukhetse emkhawulo lamancane (sibonelo, ungahlanganisi `donations:read` ku-GPT leyabelenwe kabanti).
-- **Umlandvo wekuhlola.** Kushintja kudlula kulogu lofanako lwe-B1Admin; buka ngaphansi kwe **Reports → Audit Log**.
+**I-action ye-Custom GPT ibuyisa 401:** kuphaneli yekucinisekisa ye-action, cinisekisa kutsi **Auth Type: Bearer** ikhetsiwe futsi ikhiya ayinalo ligama lelitsi `Bearer` (i-ChatGPT iyalengeta ngekwayo).
 
-## Tindleko
+**I-action ye-Custom GPT ibuyisa 403:** ikhiya ayinawo umkhawulo waleyo endpoint. Yakha ikhiya lensha lenemkhawulo lofanele bese ubuyeketa i-GPT.
 
-I-ChurchApps imahhala futsi ivulekile emtfombeni — i-API lebitwa yi-Custom GPT yakho iyincenye ye-API lelibandla lakho seliyisebentisa. I-OpenAI ikhokhisa kusebentisa i-ChatGPT ngekwemaplani abo. Akukho tindleko ngakunye kubita lokuvela ku-ChurchApps.
-
-## Kulungisa Tinkinga
-
-**I-Action ibuyisa i-401:** iHedha ye-bearer ayifakiwe kahle. Kuphaneli lekucinisekisa lesento, cinisekisa kutsi **Auth Type: Bearer** ikhetsiwe futsi ligama lelikhiya alihlanganisi ligama lelitsi `Bearer` (i-ChatGPT iyalifaka yona).
-
-**I-Action ibuyisa i-403:** ikhiya ayinawo umkhawulo waleyo endpoint. Calisa ikhiya lensha lenemkhawulo lofanele bese uyayihlanganisa ku-GPT.
-
-**I-ChatGPT ibita i-action lengakafaneli:** cinisa emafilidi e-`summary` ne-`description` ku-schema yakho ye-OpenAPI kuze imodeli ikhetse lokufanele. Kufaka imibuto yesibonelo etiyalweni te-GPT nako kuyasita.
-
-**Iphaneli le-action iyayilahla i-schema:** i-ChatGPT idzinga i-OpenAPI 3.1 lenendzawo lengashi i-`paths` linye kanye ne-URL ye-`servers`. Hlola i-YAML kunoma nguluphi luhlelo lwekuhlola lwe-OpenAPI lolusevendlaleni ngaphambi kwekuyifaka.
-
-**Kutfutfukiswa kwasekhaya:** khomba i-URL ye-`servers` ye-action ku-Api yakho yasekhaya (sibonelo `http://localhost:8084`) — kepha caphela kutsi ema-action e-ChatGPT abita kuphela ema-URL lasembikweni, ngako-ke kuhlolwa kwasekhaya sebentisa i-tunnel lefana ne-`ngrok` nome uphatse i-API ngco nge-`curl` kucinisekisa ikhiya kucala.
+**I-schema ye-action iyalahlwa:** i-ChatGPT idzinga i-OpenAPI 3.1 lenalokungenani yinye i-`paths` kanye ne-URL ye-`servers`. Hlola i-YAML ku-[editor.swagger.io](https://editor.swagger.io) ngaphambi kwekuyinamatsisela.
 
 ## Lokuhambisana
 
 - [API Keys](/docs/developer/api/api-keys) — luhlu loluphelele lwemkhawulo
-- [MCP Server (developer reference)](/docs/developer/api/mcp) — imininingwane yeprothokholi kanye netifanelo temathulusi
+- [MCP Server (developer reference)](/docs/developer/api/mcp) — imininingwane yeprothokholi kanye netinhlaka temathulusi
 - [Claude](./claude) — umbono lofanako, wemamodeli e-Anthropic
-- [REST API reference](/docs/developer/api/endpoints) — onkhe ema-endpoint langashaywa yi-Custom GPT action
+- [REST API reference](/docs/developer/api/endpoints) — onkhe ema-endpoint langabitwa yi-action ye-Custom GPT

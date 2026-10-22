@@ -2,101 +2,139 @@
 title: "Claude"
 ---
 
-# Claude {#claude}
+# Claude
 
 <div class="article-intro">
 
-Connectez Claude d'Anthropic aux données B1 de votre église. Ajoutez B1 comme connecteur personnalisé sur claude.ai et connectez-vous, ou utilisez une clé API avec Claude Code ou Claude Desktop. Après quelques minutes de configuration, vous pouvez poser à Claude des questions comme « combien de visiteurs pour la première fois sont venus dimanche ? » ou « rédige un courriel de remerciement pour les personnes qui ont donné au fonds de construction ce mois-ci » -- et Claude lira les réponses directement dans les fiches de votre église, dans la limite de vos permissions.
+Posez à Claude des questions sur votre église en langage courant, et il vous répond à partir de vos données B1. Des questions comme *« combien de nouveaux visiteurs sont venus dimanche ? »* ou *« qui a rejoint un petit groupe ce mois-ci ? »* — ou demandez-lui de faire des choses, comme *« ajoute une nouvelle page appelée Événements à notre site web. »* La configuration prend moins de 3 minutes et ne demande aucune compétence technique ni aucun logiciel à installer.
 
 </div>
 
 <div class="prereqs">
-<h4>Avant de commencer</h4>
+<h4>Ce dont vous avez besoin</h4>
 
-- Un compte **Claude Pro/Max/Team/Enterprise** (pour le connecteur personnalisé claude.ai), ou **Claude Code** (CLI / extension IDE) ou **Claude Desktop** (Mac/Windows)
-- Pour la configuration par clé API : un administrateur de l'église ayant la permission **Modifier les paramètres** (pour générer une clé API)
-- L'URL complète de votre API B1 -- généralement `https://api.churchapps.org` pour les églises hébergées, ou l'hôte de votre API auto-hébergée
+- **Un compte Claude.** Le **forfait gratuit fonctionne** — un bon moyen de l'essayer. Les comptes gratuits ont toutefois une limite quotidienne de messages, et les recherches dans B1 consomment vite des messages ; si vous l'utilisez régulièrement, nous recommandons donc **Claude Pro** (environ 20 $ US/mois).
+- **Votre identifiant B1** — le même que celui que vous utilisez pour B1 Admin.
 
 </div>
 
-## Ce que Claude peut voir {#what-claude-can-see}
+:::tip Recommandé — gratuit pour essayer
+Claude est le moyen le plus simple de connecter B1 à l'IA, et il fonctionne avec le **forfait gratuit** de Claude — parfait pour que votre église l'essaie avant de payer quoi que ce soit.
+:::
 
-Claude communique avec B1 via le **serveur Model Context Protocol (MCP)** intégré à l'API B1. Chaque appel de Claude passe par les mêmes règles d'authentification, de permissions et de rattachement à l'église que toute requête venant de B1 Admin. Claude :
+Il existe deux façons de se connecter. **L'option 1 est la plus simple** — pas de clé et rien à installer.
 
-- Ne voit que les données de **votre** église
-- Est limité aux **permissions et portées** que porte la clé API ou la connexion que vous lui donnez
-- Ne peut pas accéder aux webhooks, aux points d'accès d'administration OAuth ni aux autres chemins réservés à l'opérateur (ils sont bloqués)
+## Option 1 — Se connecter avec B1 (le plus simple)
 
-Une clé `donations:read` permet à Claude de résumer les dons, mais pas d'enregistrer un don. Une clé `people:write` permet d'ajouter une personne, mais pas de voir les dons. Choisissez les portées qui correspondent au travail à accomplir.
+Fonctionne sur le site web de Claude, dans l'application de bureau Claude et dans l'application mobile Claude — configurez-la une fois et elle est disponible partout.
 
-## Configuration {#setup}
+### Étape 1 — Ouvrir les paramètres des connecteurs de Claude
 
-Il existe deux façons de se connecter :
+1. Allez sur [claude.ai](https://claude.ai) et connectez-vous (ou créez un compte gratuit).
+2. Cliquez sur votre nom en bas à gauche, puis sur **Settings** (Paramètres) → **Connectors** (Connecteurs).
 
-- **Connecteur personnalisé Claude.ai** -- la plus simple. Vous vous connectez à B1 et autorisez l'accès dans votre navigateur, sans clé à copier. Le connecteur fonctionne aussi dans Claude Desktop et les applications mobiles Claude une fois ajouté à votre compte.
-- **Clé API** -- pour Claude Code, ou un fichier de configuration de Claude Desktop. Vous créez une clé et la collez dans les paramètres de Claude.
+### Étape 2 — Ajouter B1
 
-### Claude.ai (web) — Connecteur personnalisé {#claudeai-web--custom-connector}
+1. Cliquez sur **Add** (Ajouter), puis sur **Add custom connector** (Ajouter un connecteur personnalisé).
+2. **Name** (Nom) : tapez `B1`.
+3. **URL :** collez `https://api.churchapps.org/mcp`
+4. Laissez les autres options telles quelles et cliquez sur **Add** (Ajouter).
 
-1. Dans Claude, ouvrez **Paramètres → Connecteurs** et cliquez sur **Ajouter un connecteur personnalisé**. (Sur les forfaits Team et Enterprise, un propriétaire doit peut-être l'ajouter d'abord pour l'organisation.)
-2. Nommez-le `B1` et saisissez l'URL du serveur `https://api.churchapps.org/mcp`, puis cliquez sur **Ajouter**.
-3. Cliquez sur **Se connecter**. Une fenêtre de connexion B1 s'ouvre. Connectez-vous avec votre compte B1 et choisissez votre église si on vous le demande.
-4. La page **AUTORISATION REQUISE** affiche le nom de l'application, les données qu'elle demande (par exemple **Voir les personnes, les foyers et les coordonnées**, ou **Tout ce à quoi votre compte B1 peut accéder** si elle n'a rien demandé de plus restreint), et l'adresse vers laquelle vous serez redirigé après votre choix -- vérifiez qu'il s'agit de **claude.ai**.
-5. Cliquez sur **Autoriser**. Vous revenez dans Claude, et B1 apparaît comme connecté.
+### Étape 3 — Se connecter à B1
 
-Claude s'enregistre auprès de B1 la première fois que vous vous connectez ; la page indique donc aussi que l'application s'est enregistrée elle-même et ne peut jamais faire plus que ce que votre propre compte B1 peut faire. Pour la déconnecter plus tard, allez dans **Paramètres → Développeur → Applications connectées** dans B1Admin et révoquez-la.
+1. Cliquez sur **Connect** (Connecter). Une page de connexion B1 s'ouvre.
+2. Connectez-vous avec votre compte B1. Si vous appartenez à plusieurs églises, vérifiez que la bonne église est affichée en haut.
+3. B1 indique ce que Claude demande à faire et confirme que vous serez renvoyé vers **claude.ai**. Cliquez sur **Allow** (Autoriser).
 
-### Utiliser une clé API {#using-an-api-key}
+Vous êtes de retour dans Claude, et B1 apparaît comme connecté.
 
-#### 1. Créer une clé API {#1-create-an-api-key}
+### Étape 4 — Posez-lui une question
 
-1. Dans B1Admin, allez dans **Paramètres → Développeur → Clés API**.
-2. Cliquez sur **Nouvelle clé API**, nommez-la `Claude`, et sélectionnez les portées que Claude doit avoir. Ensembles de départ courants :
-   - **Assistant en lecture seule :** `people:read`, `groups:read`, `attendance:read`, `donations:read`, `content:read`
-   - **Lecture + ajout de notes / tâches :** ajoutez `people:write`
-   - **Assistant opérationnel complet :** ajoutez les portées `:write` correspondantes que vous souhaitez
-3. Enregistrez. La clé complète `cak_…` n'est affichée **qu'une fois** -- copiez-la.
+Démarrez une **nouvelle conversation** et essayez :
 
-Consultez [Clés API](/docs/developer/api/api-keys) pour savoir ce que permet chaque portée.
+- *« Combien de personnes compte notre église ? »*
+- *« Liste nos groupes actifs. »*
+- *« Résume les dons de ce mois par fonds. »*
+- *« Qui a rejoint l'église au cours des 30 derniers jours ? »*
 
-#### 2. Connecter Claude {#2-connect-claude}
+La première fois, Claude demande la permission d'utiliser B1 — cliquez sur **Allow** (Autoriser).
 
-Choisissez le client Claude que vous utilisez :
+## Option 2 — Extension de bureau avec une clé B1
 
-##### Claude Code (CLI) {#claude-code-cli}
+Utilisez cette option si vous préférez donner à Claude une clé aux permissions limitées (par exemple, en consultation seule). Elle fonctionne dans l'application de bureau Claude pour Mac ou Windows, et vous devez avoir la permission de gérer les paramètres de l'église dans B1 pour créer une clé.
+
+### Étape 1 — Obtenir l'application Claude
+
+Téléchargez l'application Claude depuis [claude.com/download](https://claude.com/download), installez-la, ouvrez-la et connectez-vous.
+
+### Étape 2 — Créer votre clé B1
+
+La clé est ce qui permet à Claude d'accéder au B1 de *votre* église — voyez-la comme un mot de passe réservé à Claude.
+
+1. Connectez-vous à [B1 Admin](https://admin.b1.church) et allez à [Paramètres → Développeur](https://admin.b1.church/settings/developer).
+2. Dans l'onglet **Clés API**, cliquez sur **Nouvelle clé API**.
+3. **Nom :** tapez `Claude`.
+4. **Scopes :** cochez ce que Claude a le droit de faire. Chaque domaine a une case **read** (consulter uniquement) et une case **write** (apporter des modifications). Vous hésitez ? Cochez seulement les cases **read** pour commencer — vous pourrez créer plus tard une nouvelle clé avec davantage de droits.
+5. Cliquez sur **Enregistrer**, puis sur **Copier** pour copier la clé. Elle n'est affichée qu'une seule fois, alors passez directement à l'étape 3.
+
+### Étape 3 — Ajouter B1 à Claude
+
+1. [Téléchargez l'extension B1](https://github.com/mbyrdLCS/b1-claude-connect/releases/latest/download/b1-churchapps.mcpb).
+2. **Double-cliquez** sur le fichier téléchargé (`b1-churchapps.mcpb`). Claude s'ouvre et affiche **B1 (ChurchApps)**.
+3. Cliquez sur **Install** (Installer).
+4. Lorsqu'on vous demande votre **B1 API key**, collez la clé de l'étape 2 et enregistrez.
+5. **Quittez complètement Claude** (Mac : **Cmd+Q** · Windows : clic droit sur l'icône Claude dans la barre des tâches → **Quit** (Quitter)) puis rouvrez-le.
+
+Si le double-clic n'ouvre pas Claude, allez dans **Settings → Extensions → Advanced settings → Install Extension…** (Paramètres → Extensions → Paramètres avancés → Installer une extension) dans Claude et choisissez le fichier téléchargé. Démarrez ensuite une nouvelle conversation et posez-lui une question.
+
+## Est-ce sécurisé ?
+
+- Claude ne peut voir que les données de **votre église**.
+- **Connecté avec B1 (option 1) :** Claude ne peut jamais faire plus que votre propre identifiant B1. La page de connexion B1 liste tout ce que Claude pourra faire avant que vous cliquiez sur **Allow** (Autoriser).
+- **Avec une clé (option 2) :** Claude ne peut faire que ce que la clé autorise — une clé dont seules les cases **read** sont cochées peut consulter mais jamais rien modifier.
+- **Pour le désactiver :** dans B1 Admin, allez dans **Paramètres → Développeur** et révoquez l'application sous **Applications connectées** (option 1) ou supprimez la clé sous **Clés API** (option 2). L'accès s'arrête immédiatement. Vous pouvez aussi cliquer sur **Disconnect** (Déconnecter) sur le connecteur B1 dans Claude.
+
+## Combien ça coûte ?
+
+La connexion B1 est gratuite — elle fait partie de ChurchApps. Claude lui-même propose un forfait gratuit ; Claude Pro (environ 20 $ US/mois) vous offre une utilisation bien plus importante. Voir [claude.com/pricing](https://claude.com/pricing).
+
+## Détails techniques
+
+Le reste de cette page s'adresse aux utilisateurs techniques et aux assistants IA : scopes, autres façons de se connecter et fonctionnement.
+
+### Scopes
+
+Claude parle à B1 via le **serveur du protocole de contexte de modèle (MCP)** intégré à l'API B1 (`https://api.churchapps.org/mcp`). Chaque appel passe par les mêmes règles d'authentification, de permission et de portée d'église qu'une requête de B1 Admin. Claude est limité aux **permissions et scopes** de la clé API, et ne peut pas atteindre les webhooks, les points de terminaison administrateur OAuth ou d'autres chemins réservés à l'opérateur.
+
+Ensembles de scopes de départ courants :
+
+- **Assistant en lecture seule :** `people:read`, `groups:read`, `attendance:read`, `donations:read`, `content:read`
+- **Lecture + ajouter des notes / tâches :** ajoutez `people:write`
+- **Assistant opérationnel complet :** ajoutez les scopes `:write` correspondants que vous souhaitez
+
+Une clé `donations:read` permet à Claude de résumer les dons mais pas d'enregistrer un don. Une clé `people:write` peut ajouter une personne mais ne peut pas voir les dons. Consultez [Clés API](/docs/developer/api/api-keys) pour savoir ce que chaque scope permet.
+
+### Autres façons de se connecter
+
+#### Claude Code (CLI)
 
 Dans un terminal :
 
 ```bash
-claude mcp add --transport http b1 https://api.churchapps.org/mcp \
+claude mcp add --scope user --transport http b1 https://api.churchapps.org/mcp \
   --header "Authorization: Bearer cak_<prefix>.<secret>"
 ```
 
-C'est tout. Dans n'importe quelle session Claude Code, tapez `/mcp` pour vérifier que le serveur `b1` est connecté, puis posez à Claude une question sur votre église.
+C'est tout. Dans n'importe quelle session Claude Code, tapez `/mcp` pour confirmer que le serveur `b1` est connecté, puis posez à Claude n'importe quelle question sur votre église.
 
-##### Claude Desktop {#claude-desktop}
+#### Claude Desktop — configuration manuelle (avancé)
 
-Modifiez le fichier de configuration de Claude Desktop :
+Si vous préférez ne pas utiliser l'extension, modifiez le fichier de configuration de Claude Desktop :
 
 - **macOS :** `~/Library/Application Support/Claude/claude_desktop_config.json`
 - **Windows :** `%APPDATA%\Claude\claude_desktop_config.json`
 
-Ajoutez une entrée de serveur `b1`. Les versions récentes de Claude Desktop parlent nativement le MCP en HTTP :
-
-```json
-{
-  "mcpServers": {
-    "b1": {
-      "url": "https://api.churchapps.org/mcp",
-      "headers": {
-        "Authorization": "Bearer cak_<prefix>.<secret>"
-      }
-    }
-  }
-}
-```
-
-Si votre version de Claude Desktop ne prend en charge que les serveurs stdio, passez par `mcp-remote` :
+Ajoutez une entrée de serveur `b1` qui fait le pont vers B1 via `mcp-remote` (nécessite [Node.js](https://nodejs.org)) :
 
 ```json
 {
@@ -113,56 +151,46 @@ Si votre version de Claude Desktop ne prend en charge que les serveurs stdio, pa
 }
 ```
 
-Redémarrez Claude Desktop. L'icône du connecteur dans la zone de saisie du chat affichera `b1` avec trois outils (`list_endpoints`, `describe_endpoint`, `api_call`).
+Redémarrez Claude Desktop. Le menu des connecteurs dans la zone de saisie du chat affichera `b1` avec ses outils.
 
-### Posez une question à Claude {#ask-claude-something}
+#### Claude.ai (web) — Connecteur personnalisé
 
-Une fois connecté, aucune syntaxe particulière n'est nécessaire -- Claude découvre à la volée ce qui est disponible. Exemples :
+Voir la section **Option 1** ci-dessus. Le connecteur utilise OAuth 2.1 : Claude découvre le serveur d'autorisation de B1 à partir de `https://api.churchapps.org/.well-known/oauth-protected-resource`, s'enregistre via Dynamic Client Registration et se connecte avec PKCE. Sur les forfaits Team et Enterprise, un propriétaire devra peut-être d'abord ajouter le connecteur pour l'organisation. Claude ne demande pas de scopes précis : la page de consentement propose donc tout ce à quoi le compte B1 connecté peut accéder. Révoquez l'accès sous **Paramètres → Développeur → Applications connectées** dans B1 Admin.
 
-- *« Combien de personnes compte mon église et quels sont les groupes actifs ? »*
-- *« Résume les dons de ce mois par fonds. »*
-- *« Liste les personnes qui ont assisté au service de 10 h dimanche dernier mais qui ne sont allées à aucun groupe du mercredi au cours des 60 derniers jours. »*
-- *« Rédige un courriel de bienvenue pour les quatre personnes ajoutées cette semaine, en les appelant par leur prénom. »*
+### Fonctionnement
 
-En coulisses, Claude appellera les outils MCP -- d'abord pour découvrir le bon point d'accès, puis pour récupérer les données -- et répondra en langage courant.
-
-## Fonctionnement {#how-it-works}
-
-L'API B1 expose un seul point d'accès MCP à `/mcp`. Claude s'y connecte, s'authentifie avec votre clé `cak_…` ou la connexion que vous avez approuvée, et obtient accès à trois outils :
+L'API B1 expose un seul point de terminaison MCP à `/mcp`. Claude s'y connecte, s'authentifie avec votre clé `cak_…`, et obtient l'accès à quatre outils :
 
 | Outil | Ce qu'il fait |
 |---|---|
-| `list_endpoints` | Liste les points d'accès REST que Claude peut appeler, filtrables par chemin. Sert à la découverte. |
-| `describe_endpoint` | Renvoie un bref résumé et un exemple de requête et de réponse pour un point d'accès précis. |
-| `api_call` | Appelle réellement un point d'accès REST en tant qu'utilisateur authentifié. |
+| `list_endpoints` | Liste les points de terminaison REST que Claude peut appeler, filtrables par chemin. Utilisé pour la découverte. |
+| `describe_endpoint` | Renvoie un court résumé et un exemple de requête/réponse pour un point de terminaison spécifique. |
+| `api_call` | Invoque réellement un point de terminaison REST en tant qu'utilisateur authentifié. |
+| `describe_page_builder` | Un guide pour créer et modifier les pages du site web de votre église, que Claude lit avant de travailler sur le contenu du site. |
 
-Il s'agit de la même surface `/membership/people`, `/giving/donations`, `/attendance/visits`, etc. qu'utilise B1Admin -- chaque règle d'autorisation s'applique de façon identique.
+C'est la même surface `/membership/people`, `/giving/donations`, `/attendance/visits` etc. que votre B1 Admin utilise — chaque règle d'autorisation s'applique à l'identique.
 
-## Sécurité et limites {#safety-and-limits}
+### Sécurité et limites
 
-- **Isolement par église.** La clé API ou la connexion ne correspond qu'à une seule église. Claude ne peut pas voir les données d'autres églises.
-- **Limité par les permissions.** Si vous retirez une permission à la personne qui a généré la clé (ou qui s'est connectée) dans B1Admin, Claude la perd dès l'appel suivant -- instantanément.
-- **Révocable.** Supprimez la clé dans **Paramètres → Développeur → Clés API**, ou révoquez la connexion claude.ai dans **Paramètres → Développeur → Applications connectées**, et l'accès de Claude prend fin immédiatement.
-- **Liste de blocage.** Les webhooks des fournisseurs, les points d'accès d'administration des clients OAuth et la route `apiEmails` réservée à l'opérateur ne sont pas appelables via MCP.
-- **Limite de taille des réponses.** Une seule réponse d'outil est limitée à 64 Ko afin que les longues listes ne saturent pas le contexte de Claude -- Claude restreindra alors la requête à l'aide de filtres.
-- **Piste d'audit.** Les modifications passent par le même journal d'audit que les actions de B1Admin ; vous pouvez les consulter dans **Paramètres → Journal d'audit**.
+- **Isolation par église.** La clé API correspond à une seule église. Claude n'a aucun moyen de voir les données d'autres églises.
+- **Limité par les permissions.** Si vous retirez une permission à la personne qui a créé la clé dans B1 Admin, Claude la perd au prochain appel — instantanément.
+- **Révocable.** Supprimez la clé dans **Paramètres → Développeur → Clés API** et l'accès de Claude prend fin immédiatement.
+- **Liste noire.** Les webhooks de fournisseurs, les points de terminaison d'administration des clients OAuth et la route `apiEmails` réservée à l'opérateur ne sont pas appelables via MCP.
+- **Limite de taille de réponse.** Une seule réponse d'outil est limitée à 64 ko pour que les longues listes ne saturent pas le contexte de Claude — Claude affine alors la requête avec des filtres.
+- **Piste d'audit.** Les modifications passent par le même journal d'audit que les actions B1 Admin ; vous pouvez les consulter dans **Paramètres → Journal d'audit**.
 
-## Coût {#cost}
+### Dépannage
 
-ChurchApps est gratuit et open source -- le serveur MCP fait partie de l'API que votre église exploite déjà. Anthropic facture l'utilisation de Claude selon ses forfaits. ChurchApps ne facture aucun coût par appel.
+**Claude signale « Unauthorized » ou 401 :** le token Bearer est manquant, mal formé, ou la clé a été révoquée. Si vous avez utilisé l'extension, ouvrez **Settings → Extensions → B1 (ChurchApps)** (Paramètres → Extensions) dans Claude et collez à nouveau la clé. Sinon, revérifiez l'en-tête `Authorization: Bearer cak_…` (notez l'espace et le mot littéral `Bearer`).
 
-## Dépannage {#troubleshooting}
+**Un appel d'outil renvoie 403 :** la clé API n'a pas le scope pour ce point de terminaison. Ajoutez le scope dans **Paramètres → Développeur → Clés API** (vous devrez créer une nouvelle clé — les scopes ne peuvent pas être modifiés sur une clé existante) et collez la nouvelle clé dans les paramètres de l'extension ou dans la configuration de Claude.
 
-**Claude signale « Unauthorized » ou une erreur 401 :** le jeton Bearer est absent, mal formé, ou la clé a été révoquée. Vérifiez l'en-tête `Authorization: Bearer cak_…` (notez l'espace et le mot `Bearer` tel quel). Sur claude.ai, déconnectez et reconnectez le connecteur B1 pour vous reconnecter.
+**Claude ne trouve pas un point de terminaison :** demandez-lui d'appeler `list_endpoints` avec un filtre, par exemple *« utilise list_endpoints avec le filtre 'donations' pour trouver le bon chemin »*. L'inventaire des routes est généré depuis l'API en direct, donc tout ce que vous pouvez atteindre avec `curl` s'y trouve.
 
-**Un appel d'outil renvoie 403 :** la clé API n'a pas la portée requise pour ce point d'accès. Ajoutez la portée dans **Paramètres → Développeur → Clés API** (vous devrez créer une nouvelle clé -- les portées ne peuvent pas être modifiées sur place) et mettez à jour la configuration de Claude.
+**Développement local :** remplacez `https://api.churchapps.org/mcp` par `http://localhost:8084/mcp` — même authentification, mêmes outils.
 
-**Claude ne trouve pas un point d'accès :** demandez-lui d'appeler `list_endpoints` avec un filtre, par exemple *« utilise list_endpoints avec le filtre 'donations' pour trouver le bon chemin »*. L'inventaire des routes est généré à partir de l'API en direct : tout ce que vous pouvez atteindre avec `curl` s'y trouve.
+## En savoir plus
 
-**Développement local :** remplacez `https://api.churchapps.org/mcp` par `http://localhost:8084/mcp` -- même authentification, mêmes outils.
-
-## Liens connexes {#related}
-
-- [Clés API](/docs/developer/api/api-keys) -- référence complète des portées
-- [Serveur MCP (référence développeur)](/docs/developer/api/mcp) -- détails du protocole et schémas des outils
-- [ChatGPT](./chatgpt) -- même principe, pour les modèles d'OpenAI
+- [Clés API](/docs/developer/api/api-keys) — référence complète des scopes
+- [Serveur MCP (référence développeur)](/docs/developer/api/mcp) — détails du protocole et schémas des outils
+- [ChatGPT](./chatgpt) — même idée, pour les modèles d'OpenAI

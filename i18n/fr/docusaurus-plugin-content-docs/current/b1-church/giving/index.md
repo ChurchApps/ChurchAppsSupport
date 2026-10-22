@@ -38,4 +38,3 @@ Les dons sont traités en toute sécurité par **Stripe**. Vos informations de p
 
 - [Faire un don](./making-donations.md) -- Apprenez à donner, avec ou sans compte
 - [Historique des dons](./donation-history.md) -- Consultez vos dons passés et imprimez vos reçus de dons
-</content>

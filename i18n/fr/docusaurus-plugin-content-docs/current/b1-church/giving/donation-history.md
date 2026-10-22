@@ -69,4 +69,3 @@ Pour ajouter, supprimer ou modifier vos modes de paiement enregistrés, appuyez 
 ## Prochaines étapes {#next-steps}
 
 - [Faire un don](./making-donations.md) -- Apprenez à effectuer un don unique ou récurrent
-</content>

@@ -1,4 +1,4 @@
----
+﻿---
 title: "ChatGPT"
 ---
 
@@ -6,180 +6,129 @@ title: "ChatGPT"
 
 <div class="article-intro">
 
-Conecta ChatGPT de OpenAI con los datos de B1 de tu iglesia y deja que haga el trabajo pesado. Una vez conectado, ChatGPT puede ver tus registros de iglesia en tiempo real y ayudarte a completar tareas que de otro modo requerirían varios pasos en B1 Admin, o que ni siquiera sabrías cómo hacer.
+Conecte ChatGPT a los datos de B1 de su iglesia y hágale preguntas en lenguaje sencillo — le responde con los registros actuales de su iglesia. También puede pedirle ayuda con tareas que tomarían varios pasos en B1 Admin.
 
-**Algunas cosas que puedes pedirle:**
-- *"Configura los salones de Escuela Dominical y asigna a cada maestro al salón correcto según su grupo"*
-- *"Muéstrame a todas las personas que asistieron la semana pasada pero que no han sido asignadas a un grupo pequeño"*
-- *"Resume las ofrendas de este mes por fondo"*
-- *"¿Quiénes son nuestros miembros más recientes y hemos dado seguimiento a ellos?"*
-- *"No sé cómo hacer X en B1, ¿puedes explicarme el proceso o hacerlo por mí?"*
-
-ChatGPT obtiene las respuestas y realiza las acciones directamente a partir de tus datos de B1, limitado únicamente a tu iglesia.
-
-:::tip Recomendado: Claude Code
-Para la experiencia MCP más sencilla, [Claude Code](./claude) es el cliente recomendado: la configuración toma un solo comando y funciona de inmediato. ChatGPT también funciona y es una gran opción si tu equipo ya lo usa.
-:::
-
-Se admiten dos caminos: el **MCP Connector** (integrado en ChatGPT) y un **GPT personalizado** para equipos que quieran un asistente que puedan compartir.
+**Algunas cosas que puede preguntar:**
+- *"Muéstrame a todos los que asistieron la semana pasada pero no han sido asignados a un grupo pequeño"*
+- *"Resume las donaciones de este mes por fondo"*
+- *"¿Quiénes son nuestros miembros más nuevos y hemos hecho seguimiento con ellos?"*
+- *"No sé cómo hacer X en B1 — ¿puedes guiarme paso a paso?"*
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de comenzar</h4>
+<h4>Lo Que Necesita</h4>
 
-- Un administrador de la iglesia con el permiso **Edit Settings** en B1 Admin (necesario para crear una clave de API)
-- Una cuenta de **ChatGPT Plus, Pro, Team o Enterprise**
+- **La aplicación de escritorio de ChatGPT** para Mac o Windows
+- **Un plan de pago de ChatGPT** (Plus o superior). Las cuentas gratuitas de ChatGPT no pueden conectarse a B1.
+- **Su inicio de sesión de B1** con permiso para administrar la configuración de la iglesia (necesario para crear una clave). ¿No lo tiene? Pídaselo al administrador de B1 de su iglesia.
 
 </div>
 
-## Guía rápida de configuración
+:::tip Recomendado: pruebe Claude primero — es gratis
+[Claude](./claude) se conecta a B1 con su **plan gratuito** y se configura en menos de 3 minutos — solo agregue B1 como conector e inicie sesión con su cuenta de B1. No se necesita ninguna clave. Es la forma más fácil para que su iglesia pruebe la IA con B1 antes de pagar por nada.
+:::
 
-Sigue estos pasos en la **aplicación de escritorio de ChatGPT** (Mac/Windows). Las pantallas pueden verse un poco diferentes en otras versiones.
+## Configúrelo
 
----
-
-**Paso 1: Obtén primero tu clave de API desde B1 Admin**
-
-Antes de abrir ChatGPT, crea una clave de API en B1 Admin para tenerla lista para pegarla:
-
-1. Ve a **Settings → Developer → API Keys** en B1 Admin
-2. Haz clic en **New API Key**, ponle el nombre `ChatGPT`, elige tus scopes (empieza con `people:read`, `groups:read`, `attendance:read`, `donations:read`) y haz clic en **Save**
-3. Copia la clave `cak_…`; solo se muestra una vez
+Las pantallas pueden verse ligeramente diferentes en su versión de ChatGPT.
 
 ---
 
-**Paso 2: Haz clic en tu nombre en la esquina inferior izquierda de ChatGPT**
+**Paso 1 — Cree su clave de B1**
 
-![Haz clic en tu nombre de perfil](/img/guides/chatgpt-mcp/01.png)
+La clave es lo que le da a ChatGPT acceso al B1 de *su* iglesia — piense en ella como una contraseña solo para ChatGPT.
 
----
-
-**Paso 3: Haz clic en Settings**
-
-![Haz clic en Settings del menú](/img/guides/chatgpt-mcp/02.png)
-
----
-
-**Paso 4: Haz clic en Plugins en la barra lateral izquierda**
-
-![Haz clic en Plugins bajo Integrations](/img/guides/chatgpt-mcp/03.png)
+1. Inicie sesión en [B1 Admin](https://admin.b1.church) y vaya a [Configuración → Desarrollador](https://admin.b1.church/settings/developer).
+2. En la pestaña **Claves de API**, haga clic en **Nueva Clave de API** y nómbrela `ChatGPT`.
+3. **Alcances:** marque lo que ChatGPT puede hacer. Cada área tiene una casilla **read** (solo ver) y una casilla **write** (hacer cambios). ¿No está seguro? Para empezar marque solo las casillas **read**.
+4. Haga clic en **Guardar** y luego en **Copiar** para copiar la clave (comienza con `cak_`). Solo se muestra una vez.
 
 ---
 
-**Paso 5: Haz clic en la pestaña MCPs**
+**Paso 2 — Haga clic en su nombre en la esquina inferior izquierda de ChatGPT**
 
-![Haz clic en la pestaña MCPs](/img/guides/chatgpt-mcp/04.png)
-
-Aquí verás los servidores MCP que ya hayas agregado.
+![Haga clic en su nombre de perfil](/img/guides/chatgpt-mcp/01.png)
 
 ---
 
-**Paso 6: Haz clic en Add → Add MCP server**
+**Paso 3 — Haga clic en Settings (Configuración)**
 
-![Haz clic en Add y luego en Add MCP server](/img/guides/chatgpt-mcp/06.png)
+![Haga clic en Settings en el menú](/img/guides/chatgpt-mcp/02.png)
 
 ---
 
-**Paso 7: Completa el formulario y haz clic en Save**
+**Paso 4 — Haga clic en Plugins en la barra lateral izquierda**
 
-![Formulario de conexión a un MCP personalizado](/img/guides/chatgpt-mcp/07.png)
+![Haga clic en Plugins bajo Integraciones](/img/guides/chatgpt-mcp/03.png)
 
-Haz clic en **Streamable HTTP** y luego completa:
+---
+
+**Paso 5 — Haga clic en la pestaña MCPs**
+
+![Haga clic en la pestaña MCPs](/img/guides/chatgpt-mcp/04.png)
+
+Aquí verá cualquier servidor MCP que ya haya agregado.
+
+---
+
+**Paso 6 — Haga clic en Add → Add MCP server (Agregar → Agregar servidor MCP)**
+
+![Haga clic en Add y luego en Add MCP server](/img/guides/chatgpt-mcp/06.png)
+
+---
+
+**Paso 7 — Complete el formulario y haga clic en Save (Guardar)**
+
+![Formulario para conectar a un MCP personalizado](/img/guides/chatgpt-mcp/07.png)
+
+Haga clic en **Streamable HTTP**, luego complete:
 
 | Campo | Qué ingresar |
 |---|---|
-| **Name** | `B1 Church` (o cualquier nombre que prefieras) |
-| **Type** | Haz clic en **Streamable HTTP** |
+| **Name** (Nombre) | `B1 Church` (o cualquier nombre que le guste) |
+| **Type** (Tipo) | Haga clic en **Streamable HTTP** |
 | **URL** | `https://api.churchapps.org/mcp` |
-| **Bearer token env var** | Déjalo en blanco |
-| **Headers** | Haz clic en **+ Add header** → Key: `Authorization` → Value: ver abajo |
+| **Bearer token env var** | Déjelo en blanco |
+| **Headers** (Encabezados) | Haga clic en **+ Add header** → Key: `Authorization` → Value: vea a continuación |
 
-![Ejemplo completado que muestra Authorization en Key y la clave Bearer en Value](/img/guides/chatgpt-mcp/08.png)
+![Ejemplo completo mostrando Authorization en Key y la clave Bearer en Value](/img/guides/chatgpt-mcp/08.png)
 
 - **Key:** `Authorization`
-- **Value:** `Bearer cak_tuclave`: la palabra Bearer, un espacio y luego tu clave
+- **Value:** `Bearer cak_suclave` — la palabra Bearer, un espacio, luego su clave
 
-Haz clic en **Save**.
+Haga clic en **Save** (Guardar).
 
-¡Listo! Vuelve a un chat y pregunta algo como *"¿Cuántas personas hay en nuestra iglesia?"* y ChatGPT obtendrá la respuesta directamente de B1.
-
----
-
-## Paso 1: Crea una clave de API en B1 Admin
-
-Cada conexión a B1 usa una clave de API que tú creas. Esta clave identifica a tu iglesia, controla lo que ChatGPT puede ver y puede revocarse en cualquier momento.
-
-1. Abre **B1 Admin** y ve a **Settings → Developer → API Keys**.
-2. Haz clic en **New API Key**.
-3. Ponle un nombre a la clave: `ChatGPT` funciona bien.
-4. Selecciona los scopes (permisos) que debe tener ChatGPT. Un buen conjunto inicial para un asistente de solo lectura:
-   - `people:read`
-   - `groups:read`
-   - `attendance:read`
-   - `donations:read`
-5. Haz clic en **Save**.
-6. Copia la clave completa que aparece: comienza con `cak_` y se muestra **una sola vez**. Guárdala en un lugar seguro.
-
-:::tip
-Si alguna vez necesitas revocar el acceso de ChatGPT, vuelve a **Settings → Developer → API Keys** y elimina la clave. El acceso termina de inmediato.
-:::
+¡Eso es todo! Vuelva a un chat y pregunte algo como *"¿Cuántas personas hay en nuestra iglesia?"* y ChatGPT obtendrá la respuesta directamente de B1.
 
 ---
 
-## Camino A: MCP Connector de ChatGPT (recomendado)
+## ¿Es Seguro?
 
-Esta es la forma más sencilla de conectarse. ChatGPT tiene un cuadro de diálogo integrado "Connect to a custom MCP" que funciona directamente con el servidor MCP de B1, sin necesidad de un GPT personalizado.
+- ChatGPT solo puede ver los datos de **su iglesia**.
+- Solo puede hacer lo que su clave permite — una clave con solo las casillas **read** marcadas puede mirar pero nunca cambiar nada.
+- Para desactivarlo, elimine la clave en B1 Admin en **Configuración → Desarrollador**. El acceso se detiene de inmediato.
 
-### Lo que necesitas
+## ¿Cuánto Cuesta?
 
-- Tu clave `cak_…` del Paso 1
+La conexión con B1 es gratuita — es parte de ChurchApps. ChatGPT necesita un plan de pago (Plus o superior) para conectarse; consulte los precios de OpenAI.
 
-### Abre el conector MCP en ChatGPT
+## Detalles Técnicos
 
-En ChatGPT, ve a **Settings → Plugins → MCPs** y haz clic en **Add → Add MCP server**.
+El resto de esta página es para usuarios técnicos y asistentes de IA. El servidor MCP de B1 está en `https://api.churchapps.org/mcp` (Streamable HTTP) y recibe la clave de API como encabezado `Authorization: Bearer cak_…`. Consulte la [referencia de desarrollador del Servidor MCP](/docs/developer/api/mcp).
 
-### Completa el cuadro de diálogo
+### GPT Personalizado con Acciones
 
-Haz clic en **Streamable HTTP** y luego usa estos valores:
+Un GPT Personalizado le permite crear un asistente dedicado que todo su equipo puede compartir — abren un enlace y comienzan a hacer preguntas sin ninguna configuración de su parte. Requiere una cuenta ChatGPT Plus, Team o Enterprise y unos 10 minutos.
 
-| Campo | Valor |
-|---|---|
-| **Name** | `B1 Church` (o cualquier nombre que prefieras) |
-| **Type** | **Streamable HTTP** |
-| **URL** | `https://api.churchapps.org/mcp` |
-| **Bearer token env var** | Déjalo en blanco |
-| **Headers** | Key: `Authorization` / Value: `Bearer cak_tuprefijo.tusecreto` |
+#### 1. Crear una clave de API
 
-En el campo Value, escribe la palabra `Bearer`, un espacio y luego pega tu clave, todo en la misma casilla. Ejemplo: `Bearer cak_prefijo.secreto`.
+Siga el Paso 1 de Configúrelo más arriba si aún no lo ha hecho.
 
-Haz clic en **Save**.
+#### 2. Construir el GPT Personalizado
 
-### Pregúntale algo a ChatGPT
-
-Una vez conectado, simplemente pregunta en lenguaje natural; no se necesitan comandos especiales:
-
-- *"¿Cuántas personas hay en nuestra iglesia?"*
-- *"¿Quiénes se unieron en los últimos 30 días?"*
-- *"¿Qué grupos están activos en este momento?"*
-- *"Resume las ofrendas de este mes por fondo."*
-
-ChatGPT llamará a B1 por detrás y responderá con tus datos en tiempo real.
-
----
-
-## Camino B: GPT personalizado con Actions
-
-Un GPT personalizado te permite crear un asistente dedicado que todo tu equipo puede compartir: abren un enlace y empiezan a hacer preguntas sin ninguna configuración de su parte. Requiere una cuenta de ChatGPT Plus, Team o Enterprise y unos 10 minutos.
-
-### 1. Crea una clave de API
-
-Sigue el Paso 1 de arriba si aún no lo has hecho.
-
-### 2. Crea el GPT personalizado
-
-1. En ChatGPT, haz clic en tu perfil → **My GPTs** → **Create a GPT**.
-2. Cambia a la pestaña **Configure**, dale un nombre al GPT (por ejemplo, "B1 Assistant") y agrega las instrucciones:
+1. En ChatGPT, haga clic en su perfil → **My GPTs** (Mis GPTs) → **Create a GPT** (Crear un GPT).
+2. Cambie a la pestaña **Configure** (Configurar), dé al GPT un nombre (p. ej. "Asistente B1") y agregue instrucciones:
 
    ```
    You help church staff query their B1 records. Use the B1 API actions to
@@ -187,13 +136,13 @@ Sigue el Paso 1 de arriba si aún no lo has hecho.
    answers to data the user has permission to see. Be concise.
    ```
 
-3. Desplázate hasta **Actions** → **Create new action** → **Authentication**.
+3. Desplácese a **Actions** (Acciones) → **Create new action** (Crear nueva acción) → **Authentication** (Autenticación).
    - **Authentication type:** API Key
-   - **API Key:** pega tu clave `cak_…`
+   - **API Key:** pegue su clave `cak_…`
    - **Auth Type:** Bearer
-   - Guarda.
+   - Guardar.
 
-4. En el cuadro **Schema**, pega esta especificación OpenAPI inicial:
+4. En el cuadro **Schema** (Esquema), pegue esta especificación OpenAPI inicial:
 
    ```yaml
    openapi: 3.1.0
@@ -272,44 +221,38 @@ Sigue el Paso 1 de arriba si aún no lo has hecho.
              description: OK
    ```
 
-5. Guarda la acción. Pruébala con: *"¿cuántas personas hay en la iglesia?"*: ChatGPT llama a `listPeople` y responde.
-6. **Publica** el GPT (Only me / Anyone with link / Organization) y comparte el enlace con tu equipo.
+5. Guarde la acción. Pruébela: *"¿cuántas personas hay en la iglesia?"* — ChatGPT llama a `listPeople` y responde.
+6. **Publique** el GPT con **Publish** (Only me / Anyone with link / Organization) y comparta el enlace con su equipo.
 
-### 3. Úsalo
+#### 3. Úselo
 
-Cualquier persona con el enlace puede hacer preguntas en lenguaje natural. Los scopes de la clave siguen aplicando: una clave de solo lectura rechaza las escrituras sin importar lo que diga el esquema de la acción.
+Cualquiera con el enlace puede hacer preguntas en lenguaje natural. Los alcances de la clave siguen aplicándose — una clave de solo lectura rechaza escrituras sin importar lo que diga el esquema de acciones.
 
 ---
 
-## Seguridad y límites
+### Seguridad y Límites
 
-- **Aislamiento por iglesia.** La clave de API corresponde a una sola iglesia. ChatGPT no puede ver los datos de otras iglesias.
-- **Limitado por permisos.** La clave solo tiene los scopes que le otorgaste. Quitar un scope (eliminando y creando de nuevo la clave) corta ese acceso en la siguiente llamada.
-- **Revocable al instante.** Elimina la clave en **Settings → Developer → API Keys** y el acceso termina de inmediato.
-- **Compartir un GPT personalizado comparte los datos.** Todas las personas con acceso al GPT pueden ver lo que permitan los scopes de la clave. Prefiere scopes más restringidos (por ejemplo, omite `donations:read`) para GPT que se compartan ampliamente.
-- **Registro de auditoría.** Los cambios realizados a través de ChatGPT pasan por el mismo registro de auditoría que las acciones de B1 Admin; encuéntralos en **Settings → Audit Log**.
+- **Aislamiento por iglesia.** La clave de API corresponde a una sola iglesia. ChatGPT no puede ver datos de otras iglesias.
+- **Limitado por permisos.** La clave solo lleva los alcances que usted otorgó. Quitar un alcance (eliminando y recreando la clave) corta ese acceso en la siguiente llamada.
+- **Revocable al instante.** Elimine la clave en **Configuración → Desarrollador → Claves de API** y el acceso termina inmediatamente.
+- **Compartir un GPT Personalizado comparte los datos.** Todos los que tengan acceso al GPT pueden ver lo que permitan los alcances de la clave. Prefiera alcances más estrechos (p. ej. omita `donations:read`) para GPTs compartidos ampliamente.
+- **Registro de auditoría.** Cualquier cambio realizado a través de ChatGPT pasa por el mismo registro de auditoría que las acciones de B1 Admin — encuéntrelos en **Configuración → Registro de Auditoría**.
 
-## Costo
+### Solución de Problemas
 
-ChurchApps es gratuito y de código abierto: la API que llama ChatGPT forma parte de lo que tu iglesia ya utiliza. OpenAI cobra por el uso de ChatGPT según sus propios planes. ChurchApps no cobra por llamada.
+**El conector MCP dice "Unauthorized" o muestra un error 401:** su clave de API falta o es incorrecta. Abra la configuración del conector y verifique el encabezado **Authorization**: el valor debe ser la palabra `Bearer`, un espacio y luego la clave completa `cak_…` sin espacios adicionales.
 
-## Solución de problemas
+**ChatGPT dice que no puede encontrar ciertos datos:** es posible que la clave no tenga los alcances correctos. Cree una nueva clave en **Configuración → Desarrollador → Claves de API** con los alcances adicionales y actualice el conector.
 
-**El conector MCP dice "Unauthorized" o muestra un error 401:** tu clave de API falta o es incorrecta. Abre la configuración del conector y verifica que la clave en el argumento `Authorization:Bearer` sea el valor `cak_…` completo, sin espacios adicionales.
+**La acción del GPT personalizado devuelve 401:** en el panel de autenticación de la acción confirme que **Auth Type: Bearer** esté seleccionado y que la clave no incluya la palabra `Bearer` (ChatGPT la agrega automáticamente).
 
-**ChatGPT dice que no puede encontrar ciertos datos:** es posible que la clave no tenga los scopes correctos. Crea una nueva clave en **Settings → Developer → API Keys** con los scopes adicionales y actualiza el conector.
+**La acción del GPT personalizado devuelve 403:** la clave no tiene el alcance para ese punto final. Cree una nueva clave con los alcances correctos y actualice el GPT.
 
-**El comando `npx` falla:** es posible que Node.js no esté instalado. Descárgalo e instálalo desde [nodejs.org](https://nodejs.org) y luego intenta guardar el conector de nuevo.
-
-**La acción del GPT personalizado devuelve 401:** en el panel de autenticación de la acción, confirma que **Auth Type: Bearer** esté seleccionado y que la clave no incluya la palabra `Bearer` (ChatGPT la agrega automáticamente).
-
-**La acción del GPT personalizado devuelve 403:** la clave no tiene el scope para ese endpoint. Crea una nueva clave con los scopes correctos y actualiza el GPT.
-
-**El esquema de la acción es rechazado:** ChatGPT requiere OpenAPI 3.1 con al menos una entrada en `paths` y una URL en `servers`. Valida el YAML en [editor.swagger.io](https://editor.swagger.io) antes de pegarlo.
+**El esquema de acciones es rechazado:** ChatGPT requiere OpenAPI 3.1 con al menos una entrada `paths` y una URL `servers`. Valide el YAML en [editor.swagger.io](https://editor.swagger.io) antes de pegarlo.
 
 ## Relacionado
 
-- [API Keys](/docs/developer/api/api-keys): referencia completa de scopes
-- [MCP Server (referencia para desarrolladores)](/docs/developer/api/mcp): detalles del protocolo y esquemas de herramientas
-- [Claude](./claude): la misma idea, para los modelos de Anthropic
-- [REST API reference](/docs/developer/api/endpoints): cada endpoint que puede llamar una acción de GPT personalizado
+- [Claves de API](/docs/developer/api/api-keys) — referencia completa de alcances
+- [Servidor MCP (referencia de desarrollador)](/docs/developer/api/mcp) — detalles del protocolo y esquemas de herramientas
+- [Claude](./claude) — misma idea, para los modelos de Anthropic
+- [Referencia de API REST](/docs/developer/api/endpoints) — cada punto final que una acción de GPT personalizado puede llamar

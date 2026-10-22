@@ -19,8 +19,8 @@ Ang B1 ay kumonekta sa mga tools na ginagamit na ng iyong team. Konektahan ang S
 | **[Zapier](./zapier)** | Gamitin ang B1 events bilang triggers at B1 actions sa kahit na alin sa Zapier's 7,000+ apps | Both | 5–10 min per Zap |
 | **[Make](./make)** | Parehong ideya tulad ng Zapier, sa Make's visual scenario builder | Both | 5–10 min per scenario |
 | **[Google Sheets](./google-sheets)** | I-export ang People / Donations / Groups / Attendance sa isang spreadsheet on demand | B1 → Sheet | 5 minutes |
-| **[Claude](./claude)** | Magtanong sa Anthropic's Claude ng mga katanungan tungkol sa iyong church data, scoped sa iyong permissions | Both | 5 minutes |
-| **[ChatGPT](./chatgpt)** | Parehong ideya gamit ang OpenAI's ChatGPT, sa pamamagitan ng isang Custom GPT o MCP-aware OpenAI tooling | Both | 10 minutes |
+| **[Claude](./claude)** | Magtanong sa Anthropic's Claude ng mga katanungan tungkol sa iyong church data, scoped sa iyong permissions — libreng subukan, inirerekomenda | Both | Wala pang 3 minutes |
+| **[ChatGPT](./chatgpt)** | Parehong ideya gamit ang OpenAI's ChatGPT (nangangailangan ng bayad na ChatGPT plan) | Both | 10 minutes |
 | **[Connected services](./services/)** | Mga curated recipes para sa Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Varies | 5–10 min each |
 
 ## Paano Pumili
@@ -28,7 +28,7 @@ Ang B1 ay kumonekta sa mga tools na ginagamit na ng iyong team. Konektahan ang S
 - **Gusto mo lang ng isang notification sa chat?** Gamitin ang **Slack** o **Discord** — walang third-party account, walang Zap na ina-asikaso. Naka-configure nang buo sa loob ng B1Admin.
 - **Gusto mong i-automate ang isang bagay sa mga apps** (hal. "kapag may nagbigay, idagdag sila sa aking Mailchimp list at Slack #donations")? Gamitin ang **Zapier** o **Make**. Ang Zapier ay mas friendly; ang Make ay mas mura sa scale at may mas flexible logic.
 - **Kailangan ng isang one-off data pull o isang scheduled report?** Gamitin ang **Google Sheets** — i-paste ang isang API key sa sidebar ng add-on at mag-click ng Export.
-- **Gusto mong magtanong sa plain English** ("ilang first-time visitors noong nakaraang Linggo?", "i-summarize ang giving ngayong buwan")? Gamitin ang **[Claude](./claude)** o **[ChatGPT](./chatgpt)** — parehong kumokonekta sa B1 na may isang API key.
+- **Gusto mong magtanong sa plain English** ("ilang first-time visitors noong nakaraang Linggo?", "i-summarize ang giving ngayong buwan")? Magsimula sa **[Claude](./claude)** — libre itong subukan at nase-set up sa wala pang 3 minuto. Gumagana rin ang **[ChatGPT](./chatgpt)** na may bayad na plan. Kumokonekta ang Claude sa pamamagitan ng pag-sign in gamit ang iyong B1 account; gumagamit ang ChatGPT ng B1 API key.
 - **Nagbubuo ng iyong sariling custom integration?** Wala sa itaas — makipag-usap sa [REST API](/docs/developer/api) direkta gamit ang isang [API key](/docs/developer/api/api-keys), o mag-subscribe sa isang server na kinokontrol mo sa [webhooks](/docs/developer/api/webhooks).
 
 ## Ano ang Mayroon Sila sa Karaniwang

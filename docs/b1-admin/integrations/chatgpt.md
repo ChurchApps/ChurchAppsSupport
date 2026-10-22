@@ -6,46 +6,43 @@ title: "ChatGPT"
 
 <div class="article-intro">
 
-Connect OpenAI's ChatGPT to your church's B1 data and let it do the heavy lifting. Once connected, ChatGPT can see your live church records and help you get things done that would otherwise take several steps in B1 Admin — or that you couldn't figure out how to do at all.
+Connect ChatGPT to your church's B1 data and ask it questions in plain English — it answers from your live church records. You can also ask it to help with things that would take several steps in B1 Admin.
 
-**Some things you can ask it to do:**
-- *"Set up Sunday School classrooms and put each teacher in the right room based on their group"*
+**Some things you can ask:**
 - *"Show me everyone who attended last week but hasn't been assigned to a small group"*
 - *"Summarize this month's giving by fund"*
 - *"Who are our newest members and have we followed up with them?"*
-- *"I can't figure out how to do X in B1 — can you walk me through it or do it for me?"*
-
-ChatGPT pulls the answers and takes the actions directly from your B1 data, scoped to your church only.
-
-:::tip Recommended: Claude Code
-For the smoothest MCP experience, [Claude Code](./claude) is the recommended client — setup takes one command and it works out of the box. ChatGPT also works and is a great choice if your team is already using it.
-:::
-
-Two paths are supported: the **MCP Connector** (built into ChatGPT) and a **Custom GPT** for teams that want a shareable assistant.
+- *"I can't figure out how to do X in B1 — can you walk me through it?"*
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>What You Need</h4>
 
-- A church admin with the **Edit Settings** permission in B1 Admin (needed to create an API key)
-- A **ChatGPT Plus, Pro, Team, or Enterprise** account
+- **The ChatGPT desktop app** for Mac or Windows
+- **A paid ChatGPT plan** (Plus or higher). Free ChatGPT accounts can't connect to B1.
+- **Your B1 login** with permission to manage church settings (needed to make a key). Don't have it? Ask your church's B1 administrator.
 
 </div>
 
-## Quick Setup Guide
+:::tip Recommended: try Claude first — it's free
+[Claude](./claude) connects to B1 on its **free plan** and sets up in less than 3 minutes — just add B1 as a connector and sign in with your B1 account. No key needed. It's the easiest way for your church to try AI with B1 before paying for anything.
+:::
 
-Follow these steps in the **ChatGPT desktop app** (Mac/Windows). The screens may look slightly different in other versions.
+## Set It Up
+
+The screens may look slightly different in your version of ChatGPT.
 
 ---
 
-**Step 1 — Get your API key from B1 Admin first**
+**Step 1 — Make your B1 key**
 
-Before touching ChatGPT, create an API key in B1 Admin so you have it ready to paste:
+The key is what lets ChatGPT into *your* church's B1 — think of it like a password just for ChatGPT.
 
-1. Go to **Settings → Developer → API Keys** in B1 Admin
-2. Click **New API Key**, name it `ChatGPT`, choose your scopes (start with `people:read`, `groups:read`, `attendance:read`, `donations:read`), and click **Save**
-3. Copy the `cak_…` key — it's only shown once
+1. Log in to [B1 Admin](https://admin.b1.church) and go to [Settings → Developer](https://admin.b1.church/settings/developer).
+2. On the **API Keys** tab, click **New API Key** and name it `ChatGPT`.
+3. **Scopes:** check what ChatGPT may do. Each area has a **read** box (look only) and a **write** box (make changes). Not sure? Check just the **read** boxes to start.
+4. Click **Save**, then **Copy** the key (it starts with `cak_`). It's only shown once.
 
 ---
 
@@ -106,77 +103,29 @@ That's it! Go back to a chat and ask something like *"How many people are in our
 
 ---
 
-## Step 1 — Create an API Key in B1 Admin
+## Is It Safe?
 
-Every connection to B1 uses an API key that you create. This key identifies your church, controls what ChatGPT can see, and can be revoked any time.
+- ChatGPT can only see **your church's** data.
+- It can only do what your key allows — a key with only **read** boxes checked can look but never change anything.
+- To turn it off, delete the key in B1 Admin under **Settings → Developer**. Access stops right away.
 
-1. Open **B1 Admin** and go to **Settings → Developer → API Keys**.
-2. Click **New API Key**.
-3. Give the key a name — `ChatGPT` works well.
-4. Select the scopes (permissions) ChatGPT should have. A good starting set for a read-only assistant:
-   - `people:read`
-   - `groups:read`
-   - `attendance:read`
-   - `donations:read`
-5. Click **Save**.
-6. Copy the full key that appears — it starts with `cak_` and is shown **one time only**. Paste it somewhere safe.
+## What Does It Cost?
 
-:::tip
-If you ever need to revoke ChatGPT's access, go back to **Settings → Developer → API Keys** and delete the key. Access ends immediately.
-:::
+The B1 connection is free — it's part of ChurchApps. ChatGPT needs a paid plan (Plus or higher) to connect; see OpenAI's pricing.
 
----
+## Technical Details
 
-## Path A — ChatGPT MCP Connector (Recommended)
+The rest of this page is for technical users and AI assistants. B1's MCP server is at `https://api.churchapps.org/mcp` (Streamable HTTP) and takes the API key as an `Authorization: Bearer cak_…` header. See the [MCP Server developer reference](/docs/developer/api/mcp).
 
-This is the simplest way to connect. ChatGPT has a built-in "Connect to a custom MCP" dialog that works directly with B1's MCP server — no Custom GPT required.
-
-### What you need
-
-- Your `cak_…` key from Step 1
-
-### Open the MCP connector in ChatGPT
-
-In ChatGPT, go to **Settings → Plugins → MCPs** and click **Add → Add MCP server**.
-
-### Fill in the dialog
-
-Click **Streamable HTTP**, then use these values:
-
-| Field | Value |
-|---|---|
-| **Name** | `B1 Church` (or any name you like) |
-| **Type** | **Streamable HTTP** |
-| **URL** | `https://api.churchapps.org/mcp` |
-| **Bearer token env var** | Leave blank |
-| **Headers** | Key: `Authorization` / Value: `Bearer cak_yourprefix.yoursecret` |
-
-For the Value field, type the word `Bearer`, one space, then paste your key — all in the same box. Example: `Bearer cak_prefix.secret`.
-
-Click **Save**.
-
-### Ask ChatGPT something
-
-Once connected, just ask in plain language — no special commands needed:
-
-- *"How many people are in our church?"*
-- *"Who joined in the last 30 days?"*
-- *"What groups are active right now?"*
-- *"Summarize this month's giving by fund."*
-
-ChatGPT will call B1 behind the scenes and answer from your live data.
-
----
-
-## Path B — Custom GPT with Actions
+### Custom GPT with Actions
 
 A Custom GPT lets you create a dedicated assistant your whole team can share — they open a link and start asking questions without any setup on their end. It requires a ChatGPT Plus, Team, or Enterprise account and about 10 minutes.
 
-### 1. Create an API key
+#### 1. Create an API key
 
-Follow Step 1 above if you haven't already.
+Follow Step 1 of Set It Up above if you haven't already.
 
-### 2. Build the Custom GPT
+#### 2. Build the Custom GPT
 
 1. In ChatGPT, click your profile → **My GPTs** → **Create a GPT**.
 2. Switch to the **Configure** tab, give the GPT a name (e.g. "B1 Assistant") and add instructions:
@@ -275,13 +224,13 @@ Follow Step 1 above if you haven't already.
 5. Save the action. Test it: *"how many people are in the church?"* — ChatGPT calls `listPeople` and answers.
 6. **Publish** the GPT (Only me / Anyone with link / Organization) and share the link with your team.
 
-### 3. Use it
+#### 3. Use it
 
 Anyone with the link can ask natural-language questions. The key's scopes still apply — a read-only key refuses writes regardless of what the action schema says.
 
 ---
 
-## Safety and Limits
+### Safety and limits
 
 - **Per-church isolation.** The API key resolves to one church only. ChatGPT cannot see other churches' data.
 - **Permission-scoped.** The key only carries the scopes you granted. Removing a scope (by deleting and recreating the key) cuts that access on the next call.
@@ -289,17 +238,11 @@ Anyone with the link can ask natural-language questions. The key's scopes still 
 - **Sharing a Custom GPT shares the data.** Everyone with access to the GPT can see whatever the key's scopes allow. Prefer narrower scopes (e.g. omit `donations:read`) for GPTs shared broadly.
 - **Audit trail.** Any changes made through ChatGPT go through the same audit log as B1 Admin actions — find them under **Settings → Audit Log**.
 
-## Cost
+### Troubleshooting
 
-ChurchApps is free and open-source — the API ChatGPT calls is part of what your church already runs. OpenAI charges for ChatGPT usage per their own plans. There is no per-call cost from ChurchApps.
-
-## Troubleshooting
-
-**The MCP connector says "Unauthorized" or shows a 401 error:** your API key is missing or incorrect. Open the connector settings and check that the key in the `Authorization:Bearer` argument is the full `cak_…` value with no extra spaces.
+**The MCP connector says "Unauthorized" or shows a 401 error:** your API key is missing or incorrect. Open the connector settings and check the **Authorization** header: the value should be the word `Bearer`, one space, then the full `cak_…` key with no extra spaces.
 
 **ChatGPT says it can't find certain data:** the key may not have the right scopes. Create a new key in **Settings → Developer → API Keys** with the additional scopes and update the connector.
-
-**The `npx` command fails:** Node.js may not be installed. Download and install it from [nodejs.org](https://nodejs.org), then try saving the connector again.
 
 **Custom GPT action returns 401:** in the action's authentication panel confirm **Auth Type: Bearer** is selected and the key does not include the word `Bearer` (ChatGPT adds it automatically).
 
