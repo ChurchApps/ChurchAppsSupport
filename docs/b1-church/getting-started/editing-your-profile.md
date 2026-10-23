@@ -63,7 +63,7 @@ The Privacy section shows who can see your contact information across ChurchApps
 | **Members Only** | Visible to other signed-in church members. |
 | **My Groups Only** | Visible only to members of groups you belong to. |
 | **My Group Leaders and Staff** | Visible only to church staff and the leaders of groups you belong to. |
-| **Staff Only** | Visible only to church staff. |
+| **Staff Only** | Visible only to church staff (people with a Staff membership status or People view permission). |
 
 Tap **Save** to apply your choices. Your church sets a default for each of these three fields — see [Mobile App Settings](/docs/b1-admin/settings/mobile-app) — but whatever you choose here overrides that default for your own record.
 
