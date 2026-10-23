@@ -10,6 +10,13 @@ B1 Church Checkin is a self-service kiosk app for iPads and Android tablets. It 
 
 </div>
 
+## Tour Video
+
+<video controls width="100%" preload="metadata" poster="https://mautic.churchapps.org/videos/support/b1-checkin-tour.jpg">
+  <source src="https://mautic.churchapps.org/videos/support/b1-checkin-tour.mp4" type="video/mp4" />
+  <track kind="captions" src="/video-captions/b1-checkin-tour.vtt" srclang="en" label="English" default />
+</video>
+
 ## How It Works
 
 Place an iPad or Android tablet in your lobby or welcome area. Members walk up, search for their household by phone number or last name, review their family, choose which groups each person should attend, and tap **Check-in**. The app prints name labels and pickup slips automatically, then resets for the next family.

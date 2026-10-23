@@ -14,9 +14,9 @@ For further support, please email [support@churchapps.org](mailto:support@church
 
 ## Introduction Video
 
-<video controls width="100%">
-  <source src="/b1Admin/intro/output.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
+<video controls width="100%" preload="metadata" poster="https://mautic.churchapps.org/videos/support/b1-admin-tour.jpg">
+  <source src="https://mautic.churchapps.org/videos/support/b1-admin-tour.mp4" type="video/mp4" />
+  <track kind="captions" src="/video-captions/b1-admin-tour.vtt" srclang="en" label="English" default />
 </video>
 
 ## Walkthrough
