@@ -12,10 +12,7 @@ B1 Church Checkin is a self-service kiosk app for iPads and Android tablets. It 
 
 ## Tour Video
 
-<video controls width="100%" preload="metadata" poster="https://mautic.churchapps.org/videos/support/b1-checkin-tour.jpg">
-  <source src="https://mautic.churchapps.org/videos/support/b1-checkin-tour.mp4" type="video/mp4" />
-  <track kind="captions" src="/video-captions/b1-checkin-tour.vtt" srclang="en" label="English" default />
-</video>
+<YouTube id="fNZsJi9F-jc" title="A Tour of B1 Check-In" />
 
 ## How It Works
 

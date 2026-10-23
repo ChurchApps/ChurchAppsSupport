@@ -12,10 +12,7 @@ The member portal in B1.church is a phone-first web app that lives under `/mobil
 
 ## Tour Video
 
-<video controls width="100%" preload="metadata" poster="https://mautic.churchapps.org/videos/support/b1-member-app-tour.jpg">
-  <source src="https://mautic.churchapps.org/videos/support/b1-member-app-tour.mp4" type="video/mp4" />
-  <track kind="captions" src="/video-captions/b1-member-app-tour.vtt" srclang="en" label="English" default />
-</video>
+<YouTube id="8XKRZvvAbXg" title="A Tour of the B1.church Member App" />
 
 <div class="prereqs">
 <h4>Before You Begin</h4>
