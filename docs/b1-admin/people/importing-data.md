@@ -10,6 +10,10 @@ The B1 Transfer tool makes it easy to bring your existing data into B1, whether 
 
 </div>
 
+## Training Video
+
+<YouTube id="G-VnhzACYIU" title="Importing Your People Database in B1" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

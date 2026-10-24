@@ -10,6 +10,10 @@ Build custom forms to collect information from your congregation. You can create
 
 </div>
 
+## Training Video
+
+<YouTube id="sr9wxEj9ghQ" title="Creating Forms and Managing Submissions in B1" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
