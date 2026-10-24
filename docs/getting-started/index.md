@@ -10,6 +10,11 @@ Welcome to ChurchApps -- free, open-source tools designed to help your church th
 
 </div>
 
+<video controls width="100%" preload="metadata" poster="https://mautic.churchapps.org/videos/getting-started-overview.jpg">
+  <source src="https://mautic.churchapps.org/videos/getting-started-overview.mp4" type="video/mp4" />
+  <track kind="captions" src="/video-captions/getting-started-overview.vtt" srcLang="en" label="English" default />
+</video>
+
 ## ChurchApps Products
 
 ChurchApps includes several products that work together:
