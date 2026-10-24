@@ -10,6 +10,10 @@ Get your sermon archive online and set up live streaming — from importing your
 
 </div>
 
+## Training Video
+
+<YouTube id="b3B3A25g2Sk" title="Building Your Sermon Library in B1" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
