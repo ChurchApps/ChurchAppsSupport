@@ -25,7 +25,7 @@ La page Apparence vous permet de personnaliser l'apparence générale de votre s
 2. Cliquez sur **Apparence**.
 3. La page **Styles du site** s'ouvre. La carte **Thème, polices et pied de page** affiche la liste **Paramètres de style** à gauche et un aperçu d'un site exemple à droite. En dessous se trouvent les cartes **Annonce et widgets** et **Redirections et analyse**.
 
-## Palette de couleurs
+## Palette de couleurs {#color-palette}
 
 1. Cliquez sur **Palette de couleurs** dans le panneau Paramètres de style.
 2. Vous verrez les **Couleurs de base** (nuances claires, accent et sombres) et les **Couleurs sémantiques** (Primaire, Secondaire, Succès, Avertissement et Erreur).
@@ -47,7 +47,7 @@ La page Apparence vous permet de personnaliser l'apparence générale de votre s
 2. Ajustez les valeurs d'espacement de Très petit à Très grand. Des exemples pratiques montrent comment chaque valeur affecte la mise en page.
 3. Cliquez sur **Enregistrer l'espacement** pour appliquer les valeurs sur l'ensemble de votre site.
 
-## Logo et image de marque
+## Logo et image de marque {#logo-and-branding}
 
 1. Cliquez sur **Logo** dans le panneau Paramètres de style.
 2. Téléchargez votre **Logo sur fond clair** et **Logo sur fond sombre**. Utilisez des images avec un fond transparent et un rapport d'aspect 4:1 pour de meilleurs résultats.

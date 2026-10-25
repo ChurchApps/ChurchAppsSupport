@@ -25,7 +25,7 @@ title: "रूप-रंग"
 2. **Appearance** पर क्लिक करें।
 3. **Site Styles** पृष्ठ लोड होता है। **Theme, fonts & footer** कार्ड बाईं ओर **Style Settings** सूची और दाईं ओर एक नमूना साइट का पूर्वावलोकन दिखाता है। उसके नीचे **Announcement & widgets** और **Redirects & analytics** कार्ड हैं।
 
-## रंग पैलेट
+## रंग पैलेट {#color-palette}
 
 1. Style Settings पैनल में **Color Palette** पर क्लिक करें।
 2. आप **Base Colors** (हल्का, उच्चारण, और गहरे रंग) और **Semantic Colors** (Primary, Secondary, Success, Warning, और Error) देखेंगे।
@@ -47,7 +47,7 @@ title: "रूप-रंग"
 2. Extra Small से Extra Large तक रिक्ति मानों को समायोजित करें। व्यावहारिक उदाहरण दिखाते हैं कि प्रत्येक मान लेआउट को कैसे प्रभावित करता है।
 3. अपनी पूरी साइट में मानों को लागू करने के लिए **Save Spacing** पर क्लिक करें।
 
-## लोगो और ब्रांडिंग
+## लोगो और ब्रांडिंग {#logo-and-branding}
 
 1. Style Settings पैनल में **Logo** पर क्लिक करें।
 2. अपना **Light Background Logo** और **Dark Background Logo** अपलोड करें। सर्वोत्तम परिणामों के लिए पारदर्शी पृष्ठभूमि और 4:1 पहलू अनुपात वाली छवियों का उपयोग करें।

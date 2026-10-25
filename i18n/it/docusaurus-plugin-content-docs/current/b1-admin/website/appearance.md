@@ -25,7 +25,7 @@ La pagina Aspetto ti permette di personalizzare l'aspetto generale del tuo sito 
 2. Fai clic su **Appearance**.
 3. La pagina Stili del Sito si carica. La scheda **Theme, fonts & footer** mostra l'elenco **Impostazioni Stile** a sinistra e un'anteprima di un sito di esempio a destra. Sotto ci sono le schede **Announcement & widgets** e **Redirects & analytics**.
 
-## Tavolozza Colori
+## Tavolozza Colori {#color-palette}
 
 1. Fai clic su **Tavolozza Colori** nel pannello Impostazioni Stile.
 2. Vedrai i **Colori Base** (sfumature chiare, di accento e scure) e i **Colori Semantici** (Primario, Secondario, Successo, Avviso e Errore).
@@ -47,7 +47,7 @@ La pagina Aspetto ti permette di personalizzare l'aspetto generale del tuo sito 
 2. Regola i valori di spaziatura da Extra Piccolo a Extra Grande. Gli esempi pratici mostrano come ogni valore influisce sul layout.
 3. Fai clic su **Salva Spaziatura** per applicare i valori su tutto il tuo sito.
 
-## Logo e Branding
+## Logo e Branding {#logo-and-branding}
 
 1. Fai clic su **Logo** nel pannello Impostazioni Stile.
 2. Carica il tuo **Logo Sfondo Chiaro** e **Logo Sfondo Scuro**. Utilizza immagini con sfondo trasparente e un rapporto d'aspetto 4:1 per i migliori risultati.

@@ -30,11 +30,11 @@ Gumawa ng custom na forms upang mangolekta ng impormasyon mula sa iyong kongrega
 
 Lalabas ang bago mong form sa listahan. I-click ito upang simulang magdagdag ng mga tanong.
 
-## Pag-print ng Blangkong Form
+## Pag-print ng Blangkong Form {#printing-a-blank-form}
 
 Kailangan ng papel na kopya na ipamimigay -- para sa visitor card sa welcome desk, o form na hindi magagamit ng taong walang internet access para sagutan ng kamay? I-click ang **Print** sa tabi ng form sa pangunahing listahan ng Forms upang buksan ang preview, pagkatapos i-click ang **Print**. Ang mga blangkong field ay nagpi-print na may salungguhit o checkbox para sa bawat tanong upang masagutan ito ng kamay; ang mga kinakailangang tanong ay minarkahan ng asterisk. Nasa itaas ng pahina ang logo ng iyong simbahan (ang **Light Background Logo** mula sa [Website > Appearance](../website/appearance.md), kung nag-upload ka na nito) na may pangalan ng simbahan sa ilalim, at pagkatapos ay ang pangalan ng form. Walang ibang opsyon sa pag-print -- ang buong form lamang o wala.
 
-## Pagdagdag ng Mga Tanong
+## Pagdagdag ng Mga Tanong {#adding-questions}
 
 1. Buksan ang iyong form at pumunta sa tab na **Questions**.
 2. I-click ang **Add Question**.
@@ -61,7 +61,7 @@ Kailangang naka-configure ang Stripe para sa **Payment** field type. Kung hindi 
    - **Admin** -- Maaaring i-edit ang form at tingnan ang lahat ng submission.
    - **View Only** -- Maaaring tingnan ang mga submission ngunit hindi maaaring i-edit ang form.
 
-## Awtomatikong Pagdagdag ng Mga Nagsumite sa Group
+## Awtomatikong Pagdagdag ng Mga Nagsumite sa Group {#automatically-adding-submitters-to-a-group}
 
 Kapag naka-enable ang **Create a person record from submissions**, maaari mo ring i-link ang form sa isang group upang awtomatikong maidagdag ang bawat nagsumite sa roster ng group na iyon:
 

@@ -25,7 +25,7 @@ The Appearance page lets you customize the overall look and feel of your church 
 2. Click **Appearance**.
 3. The **Site Styles** page loads. The **Theme, fonts & footer** card shows the **Style Settings** list on the left and a preview of a sample site on the right. Below it are the **Announcement & widgets** and **Redirects & analytics** cards.
 
-## Color Palette
+## Color Palette {#color-palette}
 
 1. Click **Color Palette** in the Style Settings panel.
 2. You will see **Base Colors** (light, accent, and dark shades) and **Semantic Colors** (Primary, Secondary, Success, Warning, and Error).
@@ -47,7 +47,7 @@ The Appearance page lets you customize the overall look and feel of your church 
 2. Adjust spacing values for Extra Small through Extra Large. Practical examples show how each value affects layout.
 3. Click **Save Spacing** to apply the values across your entire site.
 
-## Logo and Branding
+## Logo and Branding {#logo-and-branding}
 
 1. Click **Logo** in the Style Settings panel.
 2. Upload your **Light Background Logo** and **Dark Background Logo**. Use images with a transparent background and a 4:1 aspect ratio for best results.

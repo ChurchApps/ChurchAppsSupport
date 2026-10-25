@@ -30,11 +30,11 @@ title: "创建表单"
 
 新表单会出现在列表中。点击它即可开始添加问题。
 
-## 打印空白表单
+## 打印空白表单 {#printing-a-blank-form}
 
 需要纸质版表单用于分发吗？例如放在迎宾台的访客卡，或者供没有网络的人手写填写的表单？在表单主列表中点击表单旁边的 **Print**，打开预览，然后点击 **Print**。空白字段会打印出下划线或复选框，方便人们手写填写；必填问题会标注星号。页面顶部会显示您的教会标志（如果您已上传，则使用 [Website > Appearance](../website/appearance.md) 中的 **Light Background Logo**），下方是教会名称，然后是表单名称。没有其他打印选项——只能打印整张表单。
 
-## 添加问题
+## 添加问题 {#adding-questions}
 
 1. 打开您的表单，进入 **Questions** 标签页。
 2. 点击 **Add Question**。
@@ -61,7 +61,7 @@ title: "创建表单"
    - **Admin** —— 可以编辑表单并查看所有提交内容。
    - **View Only** —— 可以查看提交内容，但不能编辑表单。
 
-## 自动将提交者添加到小组
+## 自动将提交者添加到小组 {#automatically-adding-submitters-to-a-group}
 
 启用 **Create a person record from submissions** 后，您还可以将表单关联到某个小组，使每位提交者都自动加入该小组的名单：
 

@@ -25,7 +25,7 @@ På siden Utseende kan du tilpasse det overordnede uttrykket til kirkens nettste
 2. Klikk på **Utseende**.
 3. Siden **Nettstedsstiler** åpnes. Kortet **Tema, skrifter og bunntekst** viser listen **Stilinnstillinger** til venstre og en forhåndsvisning av et eksempelnettsted til høyre. Under det finner du kortene **Kunngjøring og widgeter** og **Omdirigeringer og statistikk**.
 
-## Fargepalett
+## Fargepalett {#color-palette}
 
 1. Klikk på **Fargepalett** i panelet Stilinnstillinger.
 2. Du ser **Grunnfarger** (lyse, aksent- og mørke toner) og **Semantiske farger** (primær, sekundær, suksess, advarsel og feil).
@@ -47,7 +47,7 @@ På siden Utseende kan du tilpasse det overordnede uttrykket til kirkens nettste
 2. Juster avstandsverdiene fra ekstra liten til ekstra stor. Praktiske eksempler viser hvordan hver verdi påvirker oppsettet.
 3. Klikk på **Lagre avstander** for å bruke verdiene på hele nettstedet.
 
-## Logo og profilering
+## Logo og profilering {#logo-and-branding}
 
 1. Klikk på **Logo** i panelet Stilinnstillinger.
 2. Last opp **Logo for lys bakgrunn** og **Logo for mørk bakgrunn**. Bruk bilder med gjennomsiktig bakgrunn og sideforhold 4:1 for best resultat.

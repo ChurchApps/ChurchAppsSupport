@@ -30,7 +30,7 @@ Bouw aangepaste formulieren om informatie van uw gemeente in te verzamelen. U ku
 
 Uw nieuwe formulier verschijnt in de lijst. Klik erop om vragen toe te voegen.
 
-## Vragen toevoegen
+## Vragen toevoegen {#adding-questions}
 
 1. Open uw formulier en ga naar het tabblad **Vragen**.
 2. Klik op **Vraag toevoegen**.

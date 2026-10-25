@@ -30,11 +30,11 @@ Crea moduli personalizzati per raccogliere informazioni dalla tua comunità. Puo
 
 Il tuo nuovo modulo comparirà nell'elenco. Fai clic su di esso per iniziare ad aggiungere domande.
 
-## Stampare un modulo vuoto
+## Stampare un modulo vuoto {#printing-a-blank-form}
 
 Ti serve una copia cartacea da distribuire, ad esempio una scheda visitatori alla postazione di accoglienza, oppure un modulo che qualcuno senza accesso a internet possa compilare a mano? Fai clic su **Stampa** accanto a un modulo nell'elenco principale dei moduli per aprire un'anteprima, poi fai clic su **Stampa**. I campi vuoti vengono stampati con una linea o una casella per ogni domanda, così le persone possono compilarli a mano; le domande obbligatorie sono contrassegnate con un asterisco. In cima alla pagina compaiono il logo della tua chiesa (il **Logo per sfondo chiaro** di [Sito web > Aspetto](../website/appearance.md), se ne hai caricato uno) con il nome della chiesa sotto, poi il nome del modulo. Non ci sono altre opzioni di stampa: si stampa l'intero modulo oppure nulla.
 
-## Aggiungere domande
+## Aggiungere domande {#adding-questions}
 
 1. Apri il tuo modulo e vai alla scheda **Domande**.
 2. Fai clic su **Aggiungi domanda**.
@@ -61,7 +61,7 @@ Il tipo di campo **Pagamento** richiede che Stripe sia configurato. Se non hai a
    - **Amministratore** — Può modificare il modulo e visualizzare tutte le risposte.
    - **Solo visualizzazione** — Può visualizzare le risposte ma non modificare il modulo.
 
-## Aggiungere automaticamente i partecipanti a un gruppo
+## Aggiungere automaticamente i partecipanti a un gruppo {#automatically-adding-submitters-to-a-group}
 
 Quando è attiva l'opzione **Crea una scheda persona dalle risposte**, puoi anche collegare il modulo a un gruppo così ogni partecipante viene aggiunto automaticamente all'elenco di quel gruppo:
 

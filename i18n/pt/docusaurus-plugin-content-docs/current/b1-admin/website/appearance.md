@@ -25,7 +25,7 @@ A página Aparência permite que você personalize a aparência geral do site da
 2. Clique em **Appearance**.
 3. A página **Site Styles** (Estilos do Site) carrega. O cartão **Theme, fonts & footer** (Tema, fontes e rodapé) mostra a lista **Style Settings** (Configurações de Estilo) à esquerda e uma prévia de um site de exemplo à direita. Abaixo dele estão os cartões **Announcement & widgets** (Anúncio e widgets) e **Redirects & analytics** (Redirecionamentos e analytics).
 
-## Paleta de Cores
+## Paleta de Cores {#color-palette}
 
 1. Clique em **Color Palette** no painel Configurações de Estilo.
 2. Você verá **Base Colors** (tons claro, destaque e escuro) e **Semantic Colors** (Primária, Secundária, Sucesso, Aviso e Erro).
@@ -47,7 +47,7 @@ A página Aparência permite que você personalize a aparência geral do site da
 2. Ajuste valores de espaçamento de Extremamente Pequeno até Extremamente Grande. Exemplos práticos mostram como cada valor afeta o layout.
 3. Clique em **Save Spacing** para aplicar os valores em todo o seu site.
 
-## Logo e Marca
+## Logo e Marca {#logo-and-branding}
 
 1. Clique em **Logo** no painel Configurações de Estilo.
 2. Envie seu **Light Background Logo** e **Dark Background Logo**. Use imagens com fundo transparente e proporção 4:1 para obter os melhores resultados.

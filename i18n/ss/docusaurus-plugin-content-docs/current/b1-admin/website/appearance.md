@@ -25,7 +25,7 @@ Likhasi le-Appearance likuvumela kutsi ulungise sonkhe simo nekubukeka kweliwebh
 2. Chofota i-tab le- **Appearance** engetulu kwembukisi we-Website Pages.
 3. Likhasi le-Site Styles liyalayisha nekubukisa lokuphilako kweliwebhusayithi lakho ngesencele kanye netinketfo te- **Style Settings** ngesekudla.
 
-## I-Color Palette
+## I-Color Palette {#color-palette}
 
 1. Chofota **Color Palette** epanelini ye-Style Settings.
 2. Utawubona **Base Colors** (indzawo lekhanyako, le-accent, kanye netinsika letimnyama) kanye ne **Semantic Colors** (Primary, Secondary, Success, Warning, ne-Error).
@@ -48,7 +48,7 @@ Likhasi le-Appearance likuvumela kutsi ulungise sonkhe simo nekubukeka kweliwebh
 2. Buyeketa emanani ekukhweleta indzawo kusukela ku-Extra Small kuya ku-Extra Large. Tibonelo letisebentako tikhombisa kutsi linani ngalinye litsintsa njani indlela lekuhlelwe ngayo.
 3. Chofota **Save Spacing** kute usebentise emanani kulo lonkhe lisayithi lakho.
 
-## Ilogo ne-Branding
+## Ilogo ne-Branding {#logo-and-branding}
 
 1. Chofota **Logo** epanelini ye-Style Settings.
 2. Layisha i- **Light Background Logo** ne- **Dark Background Logo** yakho. Sebentisa titfombe letinesizinda lesicondzekako kanye ne-aspect ratio ye-4:1 kutfola imiphumela lemihle kakhulu.

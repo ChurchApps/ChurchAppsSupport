@@ -30,11 +30,11 @@ Crea formularios personalizados para recopilar información de tu congregación.
 
 Tu nuevo formulario aparecerá en la lista. Haz clic en él para empezar a agregar preguntas.
 
-## Imprimir un formulario en blanco
+## Imprimir un formulario en blanco {#printing-a-blank-form}
 
 ¿Necesitas una copia en papel para repartir, por ejemplo una tarjeta de visitante en la mesa de bienvenida, o un formulario que alguien sin acceso a internet pueda llenar a mano? Haz clic en **Print** junto a un formulario en la lista principal de Forms para abrir una vista previa y luego haz clic en **Print**. Los campos en blanco se imprimen con una línea o una casilla para cada pregunta, para que las personas puedan completarlos a mano; las preguntas obligatorias están marcadas con un asterisco. En la parte superior de la página aparece el logo de tu iglesia (el **Light Background Logo** de [Website > Appearance](../website/appearance.md), si lo has subido) con el nombre de tu iglesia debajo, y luego el nombre del formulario. No hay otras opciones de impresión: imprimes todo el formulario o nada.
 
-## Agregar preguntas
+## Agregar preguntas {#adding-questions}
 
 1. Abre tu formulario y ve a la pestaña **Questions**.
 2. Haz clic en **Add Question**.
@@ -61,7 +61,7 @@ El tipo de campo **Payment** requiere que Stripe esté configurado. Si todavía 
    - **Admin** — Puede editar el formulario y ver todas las respuestas.
    - **View Only** — Puede ver las respuestas, pero no puede editar el formulario.
 
-## Agregar automáticamente a quienes envían el formulario a un grupo
+## Agregar automáticamente a quienes envían el formulario a un grupo {#automatically-adding-submitters-to-a-group}
 
 Cuando **Create a person record from submissions** está habilitado, también puedes vincular el formulario a un grupo para que cada persona que envíe el formulario se agregue automáticamente a la lista de miembros de ese grupo:
 

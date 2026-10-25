@@ -25,7 +25,7 @@ Op de pagina Weergave kunt u het algehele uiterlijk en gevoel van uw kerkwebsite
 2. Klik op het tabblad **Weergave** bovenaan de weergave Website Pages.
 3. De pagina Site Styles laadt met een live preview van uw website aan de linkerkant en opties voor **Style Settings** aan de rechterkant.
 
-## Kleurenpalette
+## Kleurenpalette {#color-palette}
 
 1. Klik op **Color Palette** in het deelvenster Style Settings.
 2. U ziet **Base Colors** (lichte, accent- en donkere tinten) en **Semantic Colors** (Primary, Secondary, Success, Warning en Error).
@@ -48,7 +48,7 @@ Op de pagina Weergave kunt u het algehele uiterlijk en gevoel van uw kerkwebsite
 2. Pas afstandswaarden aan voor Extra Small tot Extra Large. Praktische voorbeelden tonen hoe elke waarde de indeling beïnvloedt.
 3. Klik op **Save Spacing** om de waarden in uw hele site toe te passen.
 
-## Logo en branding
+## Logo en branding {#logo-and-branding}
 
 1. Klik op **Logo** in het deelvenster Style Settings.
 2. Upload uw **Light Background Logo** en **Dark Background Logo**. Gebruik afbeeldingen met een transparante achtergrond en een verhouding van 4:1 voor de beste resultaten.

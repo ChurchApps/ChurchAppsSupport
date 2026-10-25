@@ -25,7 +25,7 @@ Ang pahinang Appearance (Hitsura) ay nagbibigay-daan sa iyong i-customize ang ka
 2. I-click ang **Appearance**.
 3. Magloload ang pahinang **Site Styles**. Ipinapakita ng card na **Theme, fonts & footer** ang listahan ng **Style Settings** sa kaliwa at preview ng isang sample na site sa kanan. Sa ibaba nito ang mga card na **Announcement & widgets** at **Redirects & analytics**.
 
-## Color Palette
+## Color Palette {#color-palette}
 
 1. I-click ang **Color Palette** sa Style Settings panel.
 2. Makikita mo ang **Base Colors** (light, accent, at dark na mga shade) at **Semantic Colors** (Primary, Secondary, Success, Warning, at Error).
@@ -47,7 +47,7 @@ Ang pahinang Appearance (Hitsura) ay nagbibigay-daan sa iyong i-customize ang ka
 2. Ayusin ang mga spacing value mula Extra Small hanggang Extra Large. May mga praktikal na halimbawa na nagpapakita kung paano nakakaapekto ang bawat value sa layout.
 3. I-click ang **Save Spacing** para i-apply ang mga value sa buong site mo.
 
-## Logo at Branding
+## Logo at Branding {#logo-and-branding}
 
 1. I-click ang **Logo** sa Style Settings panel.
 2. I-upload ang iyong **Light Background Logo** at **Dark Background Logo**. Gumamit ng mga larawang may transparent na background at 4:1 na aspect ratio para sa pinakamagandang resulta.
