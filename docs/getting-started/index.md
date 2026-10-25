@@ -11,9 +11,30 @@ Welcome to ChurchApps -- free, open-source tools designed to help your church th
 </div>
 
 <video controls width="100%" preload="metadata" poster="https://mautic.churchapps.org/videos/getting-started-overview.jpg">
-  <source src="https://mautic.churchapps.org/videos/getting-started-overview.mp4?v=2" type="video/mp4" />
-  <track kind="captions" src="/video-captions/getting-started-overview.vtt?v=2" srcLang="en" label="English" default />
+  <source src="https://mautic.churchapps.org/videos/getting-started-overview.mp4?v=3" type="video/mp4" />
+  <track kind="captions" src="/video-captions/getting-started-overview.vtt?v=3" srcLang="en" label="English" default />
 </video>
+
+## Already signed up? Start here
+
+Your first 15 minutes:
+
+1. **Make it yours.** Add your church name, address, and logo so B1, your website, and your app look like your church. See [Initial Setup, Steps 1 and 2](./initial-setup.md#step-1-configure-your-church-information).
+2. **Add your people.** Add a few people by hand, or import your whole list from a spreadsheet or your old church software. See [Importing your people](../b1-admin/people/importing-data.md) (with a video).
+3. **Invite your team.** Give your staff and key volunteers access with the right permissions. See [Roles and permissions](../b1-admin/settings/roles-permissions.md).
+
+### Then pick your first project
+
+- **Kids classrooms:** schedule free [Lessons.church](../lessons-church/index.md) curriculum and play it on the classroom TV with [FreePlay](../freeplay/index.md).
+- **Small groups:** [Run small groups](../b1-admin/guides/small-groups.md)
+- **Your church website:** [Launch your website](../b1-admin/guides/launch-website.md)
+- **Online giving:** [Set up online giving](../b1-admin/guides/online-giving.md)
+- **Children's check-in:** [Set up check-in](../b1-admin/guides/childrens-checkin.md)
+- **Sunday volunteers:** [Manage Sunday volunteers](../b1-admin/guides/sunday-volunteers.md)
+- **Attendance:** [Track attendance](../b1-admin/guides/track-attendance.md)
+- **Sermons and live stream:** [Build your sermon library](../b1-admin/guides/sermon-library.md)
+
+New here and don't have an account yet? Start with [Creating Your Account](./create-account.md).
 
 ## ChurchApps Products
 
