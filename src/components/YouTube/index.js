@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import styles from './styles.module.css';
 
 // Click-to-play YouTube embed: shows the video's thumbnail until clicked, then loads the
-// privacy-enhanced player with captions on and related videos limited to our channel.
+// privacy-enhanced player (captions off until the viewer turns on CC) and related videos limited to our channel.
 export default function YouTube({id, title}) {
   const [playing, setPlaying] = useState(false);
   const [thumb, setThumb] = useState(`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`);
@@ -12,7 +12,7 @@ export default function YouTube({id, title}) {
         {playing ? (
           <iframe
             className={styles.player}
-            src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&cc_load_policy=1&modestbranding=1`}
+            src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`}
             title={title}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"

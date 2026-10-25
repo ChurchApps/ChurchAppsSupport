@@ -12,7 +12,7 @@ Welcome to ChurchApps -- free, open-source tools designed to help your church th
 
 <video controls width="100%" preload="metadata" poster="https://mautic.churchapps.org/videos/getting-started-overview.jpg">
   <source src="https://mautic.churchapps.org/videos/getting-started-overview.mp4?v=3" type="video/mp4" />
-  <track kind="captions" src="/video-captions/getting-started-overview.vtt?v=3" srcLang="en" label="English" default />
+  <track kind="captions" src="/video-captions/getting-started-overview.vtt?v=3" srcLang="en" label="English" />
 </video>
 
 ## Already signed up? Start here
