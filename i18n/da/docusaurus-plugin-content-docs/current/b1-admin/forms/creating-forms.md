@@ -30,7 +30,7 @@ Byg brugerdefinerede formularer for at samle oplysninger fra din menighed. Du ka
 
 Din nye formular vises i listen. Klik på den for at starte med at tilføje spørgsmål.
 
-## Tilføjelse af spørgsmål
+## Tilføjelse af spørgsmål {#adding-questions}
 
 1. Åbn din formular og gå til fanen **Spørgsmål**.
 2. Klik **Tilføj spørgsmål**.

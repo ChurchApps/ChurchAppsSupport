@@ -30,11 +30,11 @@ title: "Forms बनाना"
 
 आपका नया form सूची में दिखाई देगा। सवाल जोड़ना शुरू करने के लिए उस पर click करें।
 
-## खाली Form प्रिंट करना
+## खाली Form प्रिंट करना {#printing-a-blank-form}
 
 किसी को बांटने के लिए कागज़ की प्रति चाहिए -- जैसे welcome desk पर visitor card, या ऐसा form जिसे इंटरनेट न होने वाला कोई व्यक्ति हाथ से भर सके? मुख्य Forms list पर किसी form के आगे **Print** पर click करें ताकि preview खुले, फिर **Print** पर click करें। खाली fields में हर सवाल के लिए एक underline या checkbox प्रिंट होता है ताकि लोग उन्हें हाथ से भर सकें; आवश्यक सवालों पर एक asterisk (*) लगा होता है। पेज के ऊपर आपके church का logo दिखता है ([Website > Appearance](../website/appearance.md) से **Light Background Logo**, यदि आपने एक अपलोड किया है), उसके नीचे आपके church का नाम, फिर form का नाम। कोई अन्य print options नहीं हैं -- या तो पूरा form प्रिंट करें या कुछ नहीं।
 
-## सवाल जोड़ना
+## सवाल जोड़ना {#adding-questions}
 
 1. अपना form खोलें और **Questions** tab पर जाएं।
 2. **Add Question** पर click करें।
@@ -61,7 +61,7 @@ title: "Forms बनाना"
    - **Admin** — form संपादित कर सकता है और सभी submissions देख सकता है।
    - **View Only** — submissions देख सकता है, लेकिन form संपादित नहीं कर सकता।
 
-## Submitters को स्वतः किसी Group में जोड़ना
+## Submitters को स्वतः किसी Group में जोड़ना {#automatically-adding-submitters-to-a-group}
 
 जब **Create a person record from submissions** सक्षम हो, तो आप form को एक group से भी जोड़ सकते हैं ताकि हर submitter उस group की roster में अपने-आप जुड़ जाए:
 

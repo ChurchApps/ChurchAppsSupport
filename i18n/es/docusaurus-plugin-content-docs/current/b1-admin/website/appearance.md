@@ -25,7 +25,7 @@ La página Apariencia te permite personalizar la apariencia general de tu sitio 
 2. Haz clic en **Appearance**.
 3. La página **Site Styles** se carga. La tarjeta **Theme, fonts & footer** muestra la lista de **Style Settings** a la izquierda y una vista previa de un sitio de ejemplo a la derecha. Debajo están las tarjetas **Announcement & widgets** y **Redirects & analytics**.
 
-## Paleta de Colores
+## Paleta de Colores {#color-palette}
 
 1. Haz clic en **Color Palette** en el panel Style Settings.
 2. Verás **Base Colors** (tonos claros, acentos y oscuros) y **Semantic Colors** (Primary, Secondary, Success, Warning, y Error).
@@ -47,7 +47,7 @@ La página Apariencia te permite personalizar la apariencia general de tu sitio 
 2. Ajusta valores de espaciado de Extra Pequeño a Extra Grande. Los ejemplos prácticos muestran cómo cada valor afecta el diseño.
 3. Haz clic en **Save Spacing** para aplicar los valores en todo tu sitio.
 
-## Logo y Marca
+## Logo y Marca {#logo-and-branding}
 
 1. Haz clic en **Logo** en el panel Style Settings.
 2. Carga tu **Light Background Logo** y **Dark Background Logo**. Usa imágenes con un fondo transparente y una relación de aspecto de 4:1 para obtener los mejores resultados.

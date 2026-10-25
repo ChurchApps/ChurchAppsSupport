@@ -30,11 +30,11 @@ Lag egendefinerte skjemaer for å samle inn informasjon fra menigheten din. Du k
 
 Det nye skjemaet vises i listen. Klikk på det for å begynne å legge til spørsmål.
 
-## Skrive ut et tomt skjema
+## Skrive ut et tomt skjema {#printing-a-blank-form}
 
 Trenger du en papirkopi å dele ut – for et besøkskort ved velkomstdisken, eller et skjema som noen uten internettilgang kan fylle ut for hånd? Klikk på **Skriv ut** ved siden av et skjema i hovedlisten over skjemaer for å åpne en forhåndsvisning, og klikk deretter på **Skriv ut**. Tomme felt skrives ut med en understrek eller avkrysningsboks for hvert spørsmål, slik at folk kan fylle dem ut for hånd. Obligatoriske spørsmål er merket med en stjerne. Øverst på siden vises kirkens logo (**logo for lys bakgrunn** fra [Nettsted > Utseende](../website/appearance.md), hvis du har lastet opp en) med kirkens navn under, og deretter skjemanavnet. Det finnes ingen andre utskriftsalternativer – du skriver ut hele skjemaet eller ingenting.
 
-## Legge til spørsmål
+## Legge til spørsmål {#adding-questions}
 
 1. Åpne skjemaet ditt og gå til fanen **Spørsmål**.
 2. Klikk på **Legg til spørsmål**.
@@ -61,7 +61,7 @@ Feltypen **Betaling** krever at Stripe er konfigurert. Hvis du ikke har satt opp
    - **Administrator** – Kan redigere skjemaet og se alle innsendinger.
    - **Kun visning** – Kan se innsendinger, men kan ikke redigere skjemaet.
 
-## Legge til innsendere i en gruppe automatisk
+## Legge til innsendere i en gruppe automatisk {#automatically-adding-submitters-to-a-group}
 
 Når **Opprett en personregistrering fra innsendinger** er aktivert, kan du også koble skjemaet til en gruppe, slik at alle som sender inn, legges til i gruppens medlemsliste automatisk:
 

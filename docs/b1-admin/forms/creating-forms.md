@@ -34,11 +34,11 @@ Build custom forms to collect information from your congregation. You can create
 
 Your new form will appear in the list. Click on it to start adding questions.
 
-## Printing a Blank Form
+## Printing a Blank Form {#printing-a-blank-form}
 
 Need a paper copy to hand out -- for a visitor card at the welcome desk, or a form someone without internet access can fill in by hand? Click **Print** next to a form on the main Forms list to open a preview, then click **Print**. Blank fields print with an underline or checkbox for each question so people can fill them in by hand; required questions are marked with an asterisk. The top of the page shows your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) with your church's name beneath it, then the form name. There are no other print options -- print the whole form or nothing.
 
-## Adding Questions
+## Adding Questions {#adding-questions}
 
 1. Open your form and go to the **Questions** tab.
 2. Click **Add Question**.
@@ -65,7 +65,7 @@ The **Payment** field type requires Stripe to be configured. If you haven't set 
    - **Admin** — Can edit the form and view all submissions.
    - **View Only** — Can view submissions but cannot edit the form.
 
-## Automatically Adding Submitters to a Group
+## Automatically Adding Submitters to a Group {#automatically-adding-submitters-to-a-group}
 
 When **Create a person record from submissions** is enabled, you can also link the form to a group so every submitter is added to that group's roster automatically:
 

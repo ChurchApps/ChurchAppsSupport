@@ -30,7 +30,7 @@ Yakha emafomu lakhetsekile kute uqoqe lwati kulibandla lakho. Ungadala emafomu e
 
 Ifomu lakho lelisha litawuvela eluhlwini. Chofota kuyo kute ucale kwengeta imibuto.
 
-## Kwengeta Imibuto
+## Kwengeta Imibuto {#adding-questions}
 
 1. Vula ifomu yakho bese uya kuthebhu le-**Imibuto**.
 2. Chofota **Engeta Umbuto**.

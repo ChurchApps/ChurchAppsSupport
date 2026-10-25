@@ -25,7 +25,7 @@ Die Seite "Aussehen" ermöglicht es Ihnen, das Gesamterscheinungsbild Ihrer Kirc
 2. Klicken Sie auf **Appearance**.
 3. Die Seite **Site Styles** wird geladen. Die Karte **Theme, fonts & footer** zeigt links die Liste **Style Settings** und rechts eine Vorschau einer Beispielwebsite. Darunter befinden sich die Karten **Announcement & widgets** und **Redirects & analytics**.
 
-## Farbpalette
+## Farbpalette {#color-palette}
 
 1. Klicken Sie auf **Color Palette** im Style Settings-Bereich.
 2. Sie sehen **Base Colors** (helle, Akzent- und dunkle Farbtöne) und **Semantic Colors** (Primary, Secondary, Success, Warning und Error).
@@ -47,7 +47,7 @@ Die Seite "Aussehen" ermöglicht es Ihnen, das Gesamterscheinungsbild Ihrer Kirc
 2. Passen Sie Abstandswerte für Extra Small bis Extra Large an. Praktische Beispiele zeigen, wie sich jeder Wert auf das Layout auswirkt.
 3. Klicken Sie auf **Save Spacing**, um die Werte auf Ihre gesamte Website anzuwenden.
 
-## Logo und Branding
+## Logo und Branding {#logo-and-branding}
 
 1. Klicken Sie auf **Logo** im Style Settings-Bereich.
 2. Laden Sie Ihr **Light Background Logo** und **Dark Background Logo** hoch. Verwenden Sie Bilder mit transparentem Hintergrund und 4:1-Seitenverhältnis für beste Ergebnisse.

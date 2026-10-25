@@ -30,11 +30,11 @@ Erstellen Sie eigene Formulare, um Informationen von Ihrer Gemeinde zu sammeln. 
 
 Ihr neues Formular erscheint in der Liste. Klicken Sie darauf, um Fragen hinzuzufügen.
 
-## Ein leeres Formular drucken
+## Ein leeres Formular drucken {#printing-a-blank-form}
 
 Sie benötigen eine Papierversion zum Verteilen -- etwa eine Besucherkarte am Empfangstisch oder ein Formular, das jemand ohne Internetzugang von Hand ausfüllen kann? Klicken Sie in der Hauptliste der Formulare neben einem Formular auf **Drucken**, um eine Vorschau zu öffnen, und dann auf **Drucken**. Leere Felder werden mit einer Linie oder einem Kästchen für jede Frage gedruckt, damit Personen sie von Hand ausfüllen können. Pflichtfragen sind mit einem Sternchen gekennzeichnet. Oben auf der Seite erscheinen das Logo Ihrer Gemeinde (das **Logo für helle Hintergründe** aus [Website > Erscheinungsbild](../website/appearance.md), sofern Sie eines hochgeladen haben) mit dem Namen Ihrer Gemeinde darunter und anschließend der Formularname. Weitere Druckoptionen gibt es nicht: Sie drucken entweder das gesamte Formular oder gar nichts.
 
-## Fragen hinzufügen
+## Fragen hinzufügen {#adding-questions}
 
 1. Öffnen Sie Ihr Formular und wechseln Sie zur Registerkarte **Fragen**.
 2. Klicken Sie auf **Frage hinzufügen**.
@@ -61,7 +61,7 @@ Der Feldtyp **Zahlung** setzt voraus, dass Stripe eingerichtet ist. Wenn Sie Onl
    - **Administrator** — Kann das Formular bearbeiten und alle Einsendungen einsehen.
    - **Nur Anzeige** — Kann Einsendungen einsehen, das Formular aber nicht bearbeiten.
 
-## Einsender automatisch einer Gruppe hinzufügen
+## Einsender automatisch einer Gruppe hinzufügen {#automatically-adding-submitters-to-a-group}
 
 Wenn **Personendatensatz aus Einsendungen erstellen** aktiviert ist, können Sie das Formular außerdem mit einer Gruppe verknüpfen, sodass jede einsendende Person automatisch in die Mitgliederliste dieser Gruppe aufgenommen wird:
 

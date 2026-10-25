@@ -25,7 +25,7 @@ udseende siden lader dig tilpas det samlede udsende og fornemmelse af dit kirkew
 2. Klik **udseende** fane øverst på websted sider visning.
 3. websted stilene siden indlæser med live forhåndsvisning af dit websted på venstre og **stil indstillinger** muligheder på højre.
 
-## farve palet
+## farve palet {#color-palette}
 
 1. Klik **farve palet** i stil indstillinger panel.
 2. Du vil se **basis farver** (lyst, accent og mørk skygger) og **semantisk farver** (primær, sekundær, succes, advarsel og fejl).
@@ -48,7 +48,7 @@ udseende siden lader dig tilpas det samlede udsende og fornemmelse af dit kirkew
 2. justér mellemrum værdier til ekstra lille gennem ekstra stor. praktisk eksempler vise hvordan hver værdier påvirker layout.
 3. Klik **gem mellemrum** for at anvende værdierne på tværs af dit hele websted.
 
-## logo og branding
+## logo og branding {#logo-and-branding}
 
 1. Klik **logo** i stil indstillinger panel.
 2. upload dit **lys baggrund logo** og **mørk baggrund logo**. Brug billeder med transparent baggrund og en 4:1 aspect ratio til de bedste resultater.

@@ -30,11 +30,11 @@ Créez des formulaires personnalisés pour collecter des informations auprès de
 
 Votre nouveau formulaire apparaîtra dans la liste. Cliquez dessus pour commencer à ajouter des questions.
 
-## Imprimer un formulaire vierge
+## Imprimer un formulaire vierge {#printing-a-blank-form}
 
 Besoin d'une copie papier à distribuer -- pour une fiche de visiteur au bureau d'accueil, ou un formulaire qu'une personne sans accès à Internet peut remplir à la main ? Cliquez sur **Imprimer** à côté d'un formulaire dans la liste principale des formulaires pour ouvrir un aperçu, puis cliquez sur **Imprimer**. Les champs vierges s'impriment avec un trait de soulignement ou une case à cocher pour chaque question afin que les personnes puissent les remplir à la main ; les questions obligatoires sont marquées d'un astérisque. En haut de la page figurent le logo de votre église (le **Logo pour fond clair** de [Site Web > Apparence](../website/appearance.md), si vous en avez téléchargé un) avec le nom de votre église dessous, puis le nom du formulaire. Il n'existe pas d'autres options d'impression -- vous imprimez le formulaire entier ou rien.
 
-## Ajouter des questions
+## Ajouter des questions {#adding-questions}
 
 1. Ouvrez votre formulaire et accédez à l'onglet **Questions**.
 2. Cliquez sur **Ajouter une question**.
@@ -61,7 +61,7 @@ Le type de champ **Paiement** nécessite la configuration de Stripe. Si vous n'a
    - **Administrateur** — Peut modifier le formulaire et consulter toutes les réponses.
    - **Consultation uniquement** — Peut consulter les réponses mais ne peut pas modifier le formulaire.
 
-## Ajouter automatiquement les personnes qui répondent à un groupe
+## Ajouter automatiquement les personnes qui répondent à un groupe {#automatically-adding-submitters-to-a-group}
 
 Lorsque l'option **Créer une fiche personne à partir des réponses** est activée, vous pouvez également associer le formulaire à un groupe afin que chaque personne qui répond soit automatiquement ajoutée à la liste de ce groupe :
 

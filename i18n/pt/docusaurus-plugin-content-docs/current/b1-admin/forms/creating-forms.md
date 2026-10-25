@@ -30,11 +30,11 @@ Crie formulários personalizados para coletar informações da sua congregação
 
 Seu novo formulário aparecerá na lista. Clique nele para começar a adicionar perguntas.
 
-## Imprimindo um Formulário em Branco
+## Imprimindo um Formulário em Branco {#printing-a-blank-form}
 
 Precisa de uma cópia impressa para entregar -- por exemplo, um cartão de visitante na recepção, ou um formulário para alguém sem acesso à internet preencher à mão? Clique em **Imprimir** ao lado de um formulário na lista principal de Formulários para abrir uma prévia e, em seguida, clique em **Imprimir**. Os campos em branco são impressos com uma linha sublinhada ou uma caixa de seleção para cada pergunta, para que as pessoas possam preenchê-los à mão; perguntas obrigatórias são marcadas com um asterisco. No topo da página aparece o logotipo da sua igreja (o **Logotipo para Fundo Claro** de [Website > Aparência](../website/appearance.md), se você tiver enviado um), com o nome da igreja abaixo, seguido do nome do formulário. Não há outras opções de impressão -- imprima o formulário inteiro ou nada.
 
-## Adicionando Perguntas
+## Adicionando Perguntas {#adding-questions}
 
 1. Abra seu formulário e vá para a aba **Perguntas**.
 2. Clique em **Adicionar Pergunta**.
@@ -61,7 +61,7 @@ O tipo de campo **Pagamento** exige que o Stripe esteja configurado. Se você ai
    - **Administrador** — Pode editar o formulário e ver todas as respostas.
    - **Somente Visualização** — Pode ver as respostas, mas não pode editar o formulário.
 
-## Adicionando Automaticamente Quem Respondeu a um Grupo
+## Adicionando Automaticamente Quem Respondeu a um Grupo {#automatically-adding-submitters-to-a-group}
 
 Quando **Criar um registro de pessoa a partir das respostas** está ativado, você também pode vincular o formulário a um grupo para que cada pessoa que responder seja adicionada automaticamente à lista desse grupo:
 
