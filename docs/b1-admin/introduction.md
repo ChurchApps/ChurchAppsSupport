@@ -14,7 +14,7 @@ For further support, please email [support@churchapps.org](mailto:support@church
 
 ## Introduction Video
 
-<YouTube id="D2iUhe0ZZhI" title="A Tour of B1 Admin" />
+<YouTube id="D2iUhe0ZZhI" title="A Tour of B1 Admin" next="A Tour of the B1.church Member App" nextUrl="/docs/b1-church/getting-started/navigating" />
 
 ## Walkthrough
 

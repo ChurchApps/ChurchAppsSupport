@@ -10,6 +10,10 @@ title: "Custom Fields"
 
 </div>
 
+## Training Video
+
+<YouTube id="yUfDEbp2HQ4" title="Custom Fields, Bulk Editing, and Exporting in B1" next="Creating Groups and Adding Members in B1" nextUrl="/docs/b1-admin/groups/creating-groups" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

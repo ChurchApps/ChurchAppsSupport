@@ -10,6 +10,10 @@ Creating a group in B1 Admin is straightforward. You will set up a category, nam
 
 </div>
 
+## Training Video
+
+<YouTube id="uG93pXVreNo" title="Creating Groups and Adding Members in B1" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

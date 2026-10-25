@@ -12,7 +12,7 @@ The member portal in B1.church is a phone-first web app that lives under `/mobil
 
 ## Tour Video
 
-<YouTube id="8XKRZvvAbXg" title="A Tour of the B1.church Member App" />
+<YouTube id="8XKRZvvAbXg" title="A Tour of the B1.church Member App" next="A Tour of B1 Check-In" nextUrl="/docs/b1-checkin" />
 
 <div class="prereqs">
 <h4>Before You Begin</h4>

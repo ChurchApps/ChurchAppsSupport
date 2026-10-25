@@ -12,7 +12,7 @@ The B1 Transfer tool makes it easy to bring your existing data into B1, whether 
 
 ## Training Video
 
-<YouTube id="G-VnhzACYIU" title="Importing Your People Database in B1" />
+<YouTube id="G-VnhzACYIU" title="Importing Your People Database in B1" next="Searching People and Building Lists in B1" nextUrl="/docs/b1-admin/people/searching-people" />
 
 <div class="prereqs">
 <h4>Before You Begin</h4>

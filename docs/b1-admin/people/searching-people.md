@@ -10,6 +10,10 @@ The **People** page displays your church directory as a searchable list of house
 
 </div>
 
+## Training Video
+
+<YouTube id="7Y-tN9RmnDQ" title="Searching People and Building Lists in B1" next="Custom Fields, Bulk Editing, and Exporting in B1" nextUrl="/docs/b1-admin/settings/custom-fields" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

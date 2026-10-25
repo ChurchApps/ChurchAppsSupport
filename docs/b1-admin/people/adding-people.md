@@ -10,6 +10,10 @@ The People section is the foundation of B1 Admin — it's your church's member d
 
 </div>
 
+## Training Video
+
+<YouTube id="NTL1UDQpx8s" title="Adding People and Households in B1" next="Importing Your People Database in B1" nextUrl="/docs/b1-admin/people/importing-data" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

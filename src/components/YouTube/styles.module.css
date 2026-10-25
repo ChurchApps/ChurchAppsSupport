@@ -75,6 +75,14 @@
   margin-top: 0.6rem;
   font-size: 0.85rem;
   color: var(--ifm-color-emphasis-700);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.4rem 1rem;
+}
+
+.next {
+  font-weight: 600;
 }
 
 @media (max-width: 600px) {

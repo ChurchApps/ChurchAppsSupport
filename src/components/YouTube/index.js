@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
+import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 // Click-to-play YouTube embed: shows the video's thumbnail until clicked, then loads the
 // privacy-enhanced player (captions off until the viewer turns on CC) and related videos limited to our channel.
-export default function YouTube({id, title}) {
+// Optional next / nextUrl add a "Next video" link to the doc page for the next video in the series.
+export default function YouTube({id, title, next, nextUrl}) {
   const [playing, setPlaying] = useState(false);
   const [thumb, setThumb] = useState(`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`);
   return (
@@ -32,9 +34,18 @@ export default function YouTube({id, title}) {
           </button>
         )}
       </div>
-      {title && (
+      {(title || next) && (
         <figcaption className={styles.caption}>
-          {title} · <a href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+          {title && (
+            <span>
+              {title} · <a href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+            </span>
+          )}
+          {next && nextUrl && (
+            <Link className={styles.next} to={nextUrl}>
+              Next video: {next} <span aria-hidden="true">→</span>
+            </Link>
+          )}
         </figcaption>
       )}
     </figure>
