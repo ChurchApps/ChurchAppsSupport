@@ -1,59 +1,59 @@
 ---
-title: "Dati Demografici"
+title: "Dati demografici"
 ---
 
-# Dati Demografici
+# Dati demografici
 
 <div class="article-intro">
 
-La dashboard **Dati Demografici** ti offre un'istantanea visiva della tua congregazione — chi sono, quanti ce ne sono e come la tua adesione è distribuita tra gruppi di età, generi, stati civili e campus. Ogni grafico è interattivo: fai clic su qualsiasi segmento per passare direttamente a una ricerca Persone filtrata che mostra esattamente quelle persone.
+La dashboard **Dati demografici** ti offre un quadro visivo della tua comunità — chi sono le persone, quante sono e come è distribuito il tuo elenco di membri tra fasce d'età, sessi, stati civili e campus. Ogni grafico è interattivo: clicca su una qualsiasi porzione per passare direttamente a una ricerca filtrata tra le Persone che mostra esattamente quelle persone.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Le persone devono esistere nella tua directory. Vedi [Aggiunta di Persone](./adding-people.md) o [Importazione di Dati](./importing-data.md) per iniziare.
-- Per vedere il grafico Campus, hai prima bisogno di campus configurati in [Settings → Campuses](../settings/campuses.md).
+- Nel tuo elenco devono esistere delle persone. Consulta [Aggiungere persone](./adding-people.md) oppure [Importare dati](./importing-data.md) per iniziare.
+- Per vedere il grafico dei Campus, devi prima configurare i campus in [Impostazioni → Campus](../settings/campuses.md).
 
 </div>
 
-## Apertura dei Dati Demografici
+## Aprire i dati demografici
 
-Dalla pagina **People**, fai clic su **Demographics** nell'intestazione della pagina. La pagina mostra il tuo conteggio totale di persone in alto, seguito dai grafici descritti di seguito.
+Dalla pagina **Persone**, clicca su **Dati demografici** nell'intestazione della pagina. La pagina mostra in alto il numero totale di persone, seguito dai grafici descritti di seguito.
 
 ## Grafici
 
-### Distribuzione dell'Età
+### Distribuzione per età
 
-Un grafico a barre raggruppate che mostra quante persone rientrano in ogni fascia di età (ad esempio, 0–9, 10–17, 18–24, e così via fino a 65+). Ogni barra è divisa in tre serie — **Female**, **Male** e **Unassigned** — quindi puoi vedere il ripartizione di genere all'interno di ogni gruppo di età a colpo d'occhio.
+Un grafico a barre raggruppate che mostra quante persone rientrano in ciascuna fascia d'età (ad esempio 0–9, 10–17, 18–24 e così via fino a 65+). Ogni barra è suddivisa in tre serie — **Femmine**, **Maschi** e **Non assegnato** — così puoi vedere a colpo d'occhio la ripartizione per sesso all'interno di ciascuna fascia d'età.
 
-### Stato di Adesione
+### Stato di appartenenza
 
-Un grafico a ciambella che suddivide la tua congregazione per stato di adesione (ad esempio, Member, Regular Attender, Visitor, e così via).
+Un grafico ad anello che suddivide la tua comunità per stato di appartenenza (ad esempio Membro, Partecipante abituale, Visitatore e così via).
 
-### Genere
+### Sesso
 
-Un grafico a ciambella che mostra la proporzione di record femmine, maschi e non assegnati nella tua directory.
+Un grafico ad anello che mostra la proporzione di registrazioni femminili, maschili e non assegnate nel tuo elenco.
 
-### Stato Civile
+### Stato civile
 
-Un grafico a ciambella che mostra la ripartizione tra i valori dello stato civile (ad esempio, Married, Single, Widowed).
+Un grafico ad anello che mostra la ripartizione tra i valori di stato civile (ad esempio Sposato, Celibe/Nubile, Vedovo).
 
 ### Campus
 
-Un grafico a ciambella che mostra come le persone sono distribuite nei campus della tua chiesa. Questo grafico appare solo se hai campus configurati e almeno una persona assegnata a un campus. Le persone senza campus assegnato appaiono come **Unassigned**.
+Un grafico ad anello che mostra come sono distribuite le persone tra i campus della tua chiesa. Questo grafico appare solo se hai configurato dei campus e almeno una persona è assegnata a un campus. Le persone senza campus assegnato compaiono come **Non assegnato**.
 
-## Approfondimento dei Dati
+## Approfondire i dati
 
-Fai clic su qualsiasi fetta di un grafico a ciambella o su qualsiasi segmento di barra sul grafico dell'età per navigare alla pagina **People** prefiltrата per mostrare esattamente quelle persone. Usalo per creare rapidamente un elenco di contatti, eseguire un'azione di massa o esportare un segmento — ad esempio, fai clic sulla fetta **Visitor** in Membership Status per vedere tutti i visitatori e poi inviali a un flusso di lavoro.
+Clicca su una qualsiasi porzione di un grafico ad anello o su un segmento di barra nel grafico per età per passare alla pagina **Persone** già filtrata in modo da mostrare esattamente quelle persone. Il filtro resta attivo al termine del caricamento della pagina, e il conteggio sopra l'elenco indica quante famiglie e quante persone corrispondono. Usalo per creare rapidamente un elenco di contatti, eseguire un'azione in blocco o esportare un segmento — ad esempio, clicca sulla porzione **Visitatore** in Stato di appartenenza per vedere tutti i visitatori e poi inviarli a un flusso di lavoro.
 
 :::tip
-Dopo aver approfondito un risultato filtrato, usa **Save as List** nella ricerca People per salvare quel filtro per un uso futuro. Vedi [Liste Salvate](./lists.md).
+Dopo aver approfondito un risultato filtrato, usa **Salva come elenco** nella ricerca Persone per salvare quel filtro per usi futuri. Vedi [Elenchi salvati](./lists.md).
 :::
 
-## Articoli Correlati
+## Articoli correlati
 
-- [Ricerca di Persone](./searching-people.md) — la pagina People su cui atterri quando approfondisci un grafico
-- [Liste Salvate](./lists.md) — salva un segmento demografico come lista riutilizzabile
-- [Campus](../settings/campuses.md) — configura i campus in modo che il grafico Campus appaia
+- [Ricerca persone](./searching-people.md) — la pagina Persone su cui atterri quando approfondisci un grafico
+- [Elenchi salvati](./lists.md) — salva un segmento demografico come elenco riutilizzabile
+- [Campus](../settings/campuses.md) — configura i campus affinché compaia il grafico dei Campus

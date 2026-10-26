@@ -51,7 +51,7 @@ See [Playlists](playlists) for detailed instructions on creating and managing pl
 6. Click the **Import Into Playlist** dropdown to choose which playlist these videos should be added to.
 7. Click the **Import** button to complete the bulk import.
 
-Your videos will be imported with all their details, including titles, descriptions, dates, and thumbnails.
+Your videos will be imported with all their details, including titles, descriptions, dates, and thumbnails. Special characters in YouTube titles and descriptions, such as `&`, apostrophes, and quotation marks, come through as written rather than as codes like `&amp;`.
 
 :::info
 Bulk import is ideal for getting started when you are migrating from another platform. For adding individual sermons going forward, use the [Managing Sermons](managing-sermons) page instead.

@@ -1,110 +1,111 @@
 ---
-title: "Aussehen"
+title: "Erscheinungsbild"
 ---
 
-# Aussehen
+# Erscheinungsbild
 
 <div class="article-intro">
 
-Die Seite "Aussehen" ermöglicht es Ihnen, das Gesamterscheinungsbild Ihrer Kirchenwebsite anzupassen. Von Farben und Schriftarten bis hin zu Abständen und benutzerdefiniertem CSS können Sie jeden visuellen Aspekt Ihrer Website von einem zentralen Ort aus steuern.
+Die Seite Erscheinungsbild ermöglicht es Ihnen, das gesamte Erscheinungsbild Ihrer Gemeindewebsite anzupassen. Von Farben und Schriften bis hin zu Abständen und benutzerdefiniertem CSS können Sie jeden visuellen Aspekt Ihrer Website an einer zentralen Stelle steuern.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Führen Sie die [Initiale Einrichtung](initial-setup) für Ihre Website durch
-- Halten Sie Ihr Kirchenlogo als PNG-Datei mit transparentem Hintergrund und 4:1-Seitenverhältnis bereit
-- Kennen Sie die Markenfarben Ihrer Kirche (Hex-Werte), wenn Sie bereits einen Stil-Guide haben
+- Schließen Sie die [Ersteinrichtung](initial-setup) für Ihre Website ab.
+- Halten Sie das Logo Ihrer Gemeinde im PNG-Format mit transparentem Hintergrund und einem Seitenverhältnis von 4:1 bereit.
+- Kennen Sie die Markenfarben Ihrer Gemeinde (Hexadezimalwerte), falls Sie einen bestehenden Styleguide haben.
 
 </div>
 
-## Zugriff auf Appearance-Einstellungen
+## Einstellungen für das Erscheinungsbild öffnen
 
-1. Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links) und erweitern Sie **Website**.
-2. Klicken Sie auf **Appearance**.
-3. Die Seite **Site Styles** wird geladen. Die Karte **Theme, fonts & footer** zeigt links die Liste **Style Settings** und rechts eine Vorschau einer Beispielwebsite. Darunter befinden sich die Karten **Announcement & widgets** und **Redirects & analytics**.
+1. Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links) und klappen Sie **Website** auf.
+2. Klicken Sie auf **Erscheinungsbild**.
+3. Die Seite **Website-Stile** wird geladen. Die Karte **Design, Schriften & Fußzeile** zeigt links die Liste **Stileinstellungen** und rechts eine Vorschau einer Beispielwebsite. Darunter befinden sich die Karten **Ankündigung & Widgets** und **Weiterleitungen & Analyse**.
 
 ## Farbpalette {#color-palette}
 
-1. Klicken Sie auf **Color Palette** im Style Settings-Bereich.
-2. Sie sehen **Base Colors** (helle, Akzent- und dunkle Farbtöne) und **Semantic Colors** (Primary, Secondary, Success, Warning und Error).
-3. Klicken Sie auf einen Farbfeld, um die Farbauswahl zu öffnen. Ziehen Sie den Selektor oder geben Sie einen Hex-Wert ein, um Ihre Farbe zu wählen.
-4. Die **Color Combinations Preview** zeigt, wie Ihre ausgewählten Farben zusammenpassen.
-5. Verwenden Sie **Suggested Palettes**, um schnell ein vordefiniertes Farbschema anzuwenden.
-6. Klicken Sie auf **Save Palette**, wenn Sie zufrieden sind.
+1. Klicken Sie im Bereich Stileinstellungen auf **Farbpalette**.
+2. Sie sehen **Basisfarben** (helle, akzentuierte und dunkle Töne) und **Semantische Farben** (Primär, Sekundär, Erfolg, Warnung und Fehler).
+3. Klicken Sie auf ein beliebiges Farbfeld, um den Farbwähler zu öffnen. Ziehen Sie den Auswahlpunkt oder geben Sie einen Hexadezimalwert ein, um Ihre Farbe zu wählen.
+4. Die **Vorschau der Farbkombinationen** zeigt, wie Ihre ausgewählten Farben zusammenwirken.
+5. Verwenden Sie **Vorgeschlagene Paletten**, um schnell ein vorgefertigtes Farbschema anzuwenden.
+6. Klicken Sie auf **Palette speichern**, wenn Sie zufrieden sind.
 
 ## Typografie
 
-1. Klicken Sie auf **Fonts** im Style Settings-Bereich.
-2. Klicken Sie auf die Schaltfläche **Heading Font** oder **Body Font**, um den Schriftartenbrowser zu öffnen. Sie können nach Name suchen oder Kategorien wie Serif, Sans Serif, Display, Handwriting und Monospace durchsuchen. Außerdem können Sie eine der **Popular Font Combinations** wählen.
-3. Klicken Sie auf **Save Fonts**, um Ihre Schriftartenwahl zu übernehmen.
-4. Um die Größenhierarchie für Überschrift 1 bis Überschrift 4 anzupassen, klicken Sie im Style Settings-Bereich auf **Typography Scale**. Verwenden Sie die Felder **Type Scale** (Multiplikator), **Base Size** und **Line Height** zum Feinabstimmen und klicken Sie anschließend auf **Save Typography**.
+1. Klicken Sie im Bereich Stileinstellungen auf **Schriften**.
+2. Klicken Sie auf die Schaltfläche **Überschriftenschrift** oder **Fließtextschrift**, um die Schriftauswahl zu öffnen. Sie können nach Namen suchen oder Kategorien wie Serife, Serifenlos, Display, Handschrift und Nichtproportional durchsuchen. Sie können auch eine der **Beliebten Schriftkombinationen** wählen.
+3. Klicken Sie auf **Schriften speichern**, um Ihre Schriftauswahl zu übernehmen.
+4. Um die Größenabstufung der Überschriften 1 bis 4 anzupassen, klicken Sie im Bereich Stileinstellungen auf **Typografie-Skala**. Verwenden Sie die Felder **Typen-Multiplikator**, **Basisgröße** und **Zeilenhöhe** zur Feinabstimmung und klicken Sie dann auf **Typografie speichern**.
 
 ## Abstände
 
-1. Klicken Sie auf **Spacing Scale** im Style Settings-Bereich.
-2. Passen Sie Abstandswerte für Extra Small bis Extra Large an. Praktische Beispiele zeigen, wie sich jeder Wert auf das Layout auswirkt.
-3. Klicken Sie auf **Save Spacing**, um die Werte auf Ihre gesamte Website anzuwenden.
+1. Klicken Sie im Bereich Stileinstellungen auf **Abstandsskala**.
+2. Passen Sie die Abstandswerte von Extra klein bis Extra groß an. Praxisbeispiele zeigen, wie sich jeder Wert auf das Layout auswirkt.
+3. Klicken Sie auf **Abstände speichern**, um die Werte auf Ihre gesamte Website anzuwenden.
 
 ## Logo und Branding {#logo-and-branding}
 
-1. Klicken Sie auf **Logo** im Style Settings-Bereich.
-2. Laden Sie Ihr **Light Background Logo** und **Dark Background Logo** hoch. Verwenden Sie Bilder mit transparentem Hintergrund und 4:1-Seitenverhältnis für beste Ergebnisse.
-3. Laden Sie ein **Social Media Image** für Link-Vorschaubilder und ein **Favicon** für das Browser-Tab-Symbol hoch.
+1. Klicken Sie im Bereich Stileinstellungen auf **Logo**.
+2. Laden Sie Ihr **Logo für helle Hintergründe** und Ihr **Logo für dunkle Hintergründe** hoch. Für beste Ergebnisse verwenden Sie Bilder mit transparentem Hintergrund und einem Seitenverhältnis von 4:1.
+3. Laden Sie ein **Bild für soziale Medien** für Linkvorschauen und ein **Favicon** für das Symbol im Browser-Tab hoch.
+4. Klicken Sie auf **Änderungen speichern**. Hochgeladene Bilder werden erst nach dem Speichern übernommen. Wenn Sie den Browser-Tab vorher schließen oder neu laden, warnt Sie Ihr Browser vor nicht gespeicherten Änderungen.
 
 :::tip
-Verwenden Sie für beste Ergebnisse ein Logo mit transparentem Hintergrund im PNG-Format. Dies stellt sicher, dass es auf hellen und dunklen Hintergründen in Ihrer Website und [mobilen App](../settings/mobile-app.md) großartig aussieht.
+Für beste Ergebnisse verwenden Sie ein Logo im PNG-Format mit transparentem Hintergrund. So wirkt es sowohl auf hellen als auch auf dunklen Hintergründen gut – auf Ihrer Website und in der [mobilen App](../settings/mobile-app.md).
 :::
 
-## Navigation Styles
+## Navigationsstile
 
-Passen Sie die Farben der Navigationsleiste Ihrer Website für Solid- und Transparent-Modi an:
+Passen Sie die Farben Ihrer Navigationsleiste sowohl für den einfarbigen als auch den transparenten Modus an:
 
-1. Klicken Sie im Style Settings-Bereich auf **Navigation**
-2. Konfigurieren Sie Farben für **Header (solid)** und **Header over hero (transparent)**
-3. Klicken Sie auf **Save Navigation**, um Ihre Navigationsfarben anzuwenden
+1. Klicken Sie im Bereich Stileinstellungen auf **Navigation**.
+2. Konfigurieren Sie die Farben für **Kopfzeile (einfarbig)** und **Kopfzeile über Hero-Bereich (transparent)**.
+3. Klicken Sie auf **Navigation speichern**, um Ihre Navigationsfarben zu übernehmen.
 
-Ausführliche Anweisungen finden Sie unter [Navigation Styles](./navigation-styles.md).
+Ausführliche Anleitungen finden Sie unter [Navigationsstile](./navigation-styles.md).
 
 ## Ankündigung & Widgets
 
-Website-Widgets werden auf jeder Seite Ihrer Website angezeigt und schweben über dem Seiteninhalt:
+Website-Widgets erscheinen auf jeder Seite Ihrer Website und schweben über dem Seiteninhalt:
 
-- **Announcement Banner** -- Eine schließbare Leiste oben auf Ihrer Website für zeitkritische Nachrichten, z. B. ein bevorstehendes Ereignis oder eine Dienständerung.
-- **Launcher** -- Ein schwebender Button, der ein schnelles Zugriffsmenü öffnet, z. B. Links zum Spenden, Einchecken oder zum Ansehen des Bulletins.
+- **Ankündigungsbanner** – Ein schließbarer Balken am oberen Rand Ihrer Website für zeitkritische Mitteilungen, etwa einen bevorstehenden Termin oder eine Änderung des Gottesdienstes.
+- **Launcher** – Eine schwebende Schaltfläche, die ein Schnellzugriffsmenü öffnet, zum Beispiel mit Links zu Spenden, Check-in oder dem Gemeindebrief.
 
-1. Suchen Sie die Karte **Announcement & widgets** unterhalb der Style Settings.
-2. Aktivieren Sie die gewünschten Widgets und konfigurieren Sie ihren Text, Links und Farben.
-3. Klicken Sie auf **Save**.
+1. Suchen Sie die Karte **Ankündigung & Widgets** unterhalb der Stileinstellungen.
+2. Aktivieren Sie die gewünschten Widgets und konfigurieren Sie deren Texte, Links und Farben.
+3. Klicken Sie auf **Speichern**.
 
-## Umleitungen & Analytik
+## Weiterleitungen & Analyse
 
-Die Karte **Redirects & analytics** (unterhalb der Style Settings) enthält zwei nicht zusammenhängende, aber häufig benötigte Einstellungen:
+Die Karte **Weiterleitungen & Analyse** (unterhalb der Stileinstellungen) enthält zwei unabhängige, aber häufig benötigte Einstellungen:
 
-- **Analytics** -- Fügen Sie Ihre **GA4 Measurement ID** (Format `G-XXXXXXXXXX`) hinzu, um den Besucherverkehr auf Ihrer Website zu verfolgen. Dieselbe ID erfasst auch Seitenaufrufe in der B1-App Ihrer Kirche (dem Mitgliederportal unter `/mobile`, einschließlich der installierten App), wobei sie mit einem `display_mode` von `installed` oder `browser` gekennzeichnet werden, damit Sie in Google Analytics Besuche der installierten App von Browser-Besuchen unterscheiden können.
-- **Redirects** -- Ordnen Sie einen alten URL-Pfad einem neuen zu, damit Links zu einer Seite, die Sie verschoben oder umbenannt haben, funktionieren statt 404 anzuzeigen. Geben Sie den alten **From**-Pfad und den neuen **To**-Pfad ein, und klicken Sie auf **Save**. Eine Weiterleitung hat zudem Vorrang vor den integrierten Seiten von B1 (`/sermons`, `/stream`, `/donate`, `/bible` und `/votd`), sodass Sie diese Adresse woandershin umleiten können (zum Beispiel zu Ihrer eigenen Predigtseite oder einem YouTube-Kanal). Sie überschreibt keine Seite, die Sie selbst unter derselben Adresse erstellt haben. Löschen Sie zuerst diese Seite, wenn die Weiterleitung greifen soll.
+- **Analyse** – Tragen Sie Ihre **GA4-Messungs-ID** (Format `G-XXXXXXXXXX`) ein, um die Besucherzahlen Ihrer Website zu erfassen. Dieselbe ID erfasst auch Seitenaufrufe in der B1-App Ihrer Gemeinde (dem Mitgliederportal unter `/mobile`, einschließlich der installierten App). Diese werden mit einem `display_mode` von `installed` oder `browser` markiert, sodass Sie in Google Analytics Besuche der installierten App von Browserbesuchen unterscheiden können.
+- **Weiterleitungen** – Ordnen Sie einen alten URL-Pfad einem neuen zu, damit Links zu einer verschobenen oder umbenannten Seite weiterhin funktionieren und nicht mit einem Fehler 404 enden. Geben Sie den alten Pfad unter **Von** und den neuen Pfad unter **Nach** ein und klicken Sie dann auf **Speichern**. Eine Weiterleitung hat zudem Vorrang vor den eingebauten Seiten von B1 (`/sermons`, `/stream`, `/donate`, `/bible` und `/votd`), sodass Sie diese Adresse an einen anderen Ort leiten können, etwa zu Ihrer eigenen Predigtseite oder einem YouTube-Kanal. Eine selbst erstellte Seite unter derselben Adresse wird dadurch nicht überschrieben. Löschen Sie diese Seite zuerst, wenn die Weiterleitung greifen soll.
 
 ## Benutzerdefiniertes CSS und JavaScript
 
-1. Klicken Sie auf **CSS & Javascript** im Style Settings-Bereich.
-2. Fügen Sie **Custom CSS** hinzu, um Standardstile für erweiterte Anpassungen zu überschreiben.
-3. Fügen Sie **Custom HTML** für Tracking-Codes oder andere Scripts hinzu.
-4. Verwenden Sie den Abschnitt **Common JavaScript Examples** für Ausschnitte wie Google Analytics-Integration.
+1. Klicken Sie im Bereich Stileinstellungen auf **CSS & JavaScript**.
+2. Fügen Sie **Benutzerdefiniertes CSS** hinzu, um Standardstile für fortgeschrittene Anpassungen zu überschreiben.
+3. Fügen Sie **Benutzerdefiniertes HTML** für Tracking-Codes oder andere Skripte hinzu.
+4. Verwenden Sie den Bereich **Gängige JavaScript-Beispiele** für Codeschnipsel, etwa die Einbindung von Google Analytics.
 
 :::warning
-Benutzerdefiniertes CSS ist leistungsfähig, kann aber Ihr Website-Layout beschädigen, wenn es falsch verwendet wird. Die meisten Kirchen können das gewünschte Aussehen mit den integrierten Farb-, Schriftart- und Abstandskontrollen erzielen. Verwenden Sie benutzerdefiniertes CSS nur, wenn Sie mit der Web-Entwicklung vertraut sind.
+Benutzerdefiniertes CSS ist mächtig, kann bei falscher Verwendung aber das Layout Ihrer Website zerstören. Die meisten Gemeinden können das gewünschte Erscheinungsbild mit den eingebauten Steuerelementen für Farben, Schriften und Abstände erreichen. Verwenden Sie benutzerdefiniertes CSS nur, wenn Sie sich mit Webentwicklung auskennen.
 :::
 
 :::info
-Ihre Website erzwingt eine Content Security Policy, die Inline-Skripte aus anderen Quellen blockiert. Das **Custom HTML**-Feld hier und das [HTML-Element](page-editor#using-the-html-element) auf einzelnen Seiten sind die vertrauenswürdigen Ausnahmen -- Code, den Sie dort speichern, wird so ausgeführt wie eingegeben. Daher sollten Sie nur Scripts aus Quellen einfügen, denen Sie vertrauen (Analytics-Tags, Chat-Widgets und ähnliche Einbettungen).
+Ihre Website setzt eine Content Security Policy durch, die Inline-Skripte aus anderen Quellen blockiert. Das Feld **Benutzerdefiniertes HTML** hier sowie das [HTML-Element](page-editor#using-the-html-element) auf einzelnen Seiten sind die vertrauenswürdigen Ausnahmen. Code, den Sie dort speichern, wird unverändert ausgeführt. Fügen Sie daher nur Skripte aus vertrauenswürdigen Quellen ein, etwa Analyse-Tags, Chat-Widgets und ähnliche Einbettungen.
 :::
 
-## Style-Designs
+## Design-Vorlagen
 
-Wenn Sie einen schnellen Ausgangspunkt möchten, bieten die **Suggested Palettes** im Color Palette-Abschnitt vordefinierte Designs, die auf Klick koordinierte Farben setzen. Sie können einzelne Einstellungen nach Anwendung eines Designs immer noch verfeinern.
+Wenn Sie einen schnellen Ausgangspunkt suchen, bieten die **Vorgeschlagenen Paletten** im Bereich Farbpalette vorgefertigte Designs, die mit einem Klick aufeinander abgestimmte Farben setzen. Sie können einzelne Einstellungen nach der Anwendung eines Designs jederzeit feinabstimmen.
 
 ## Nächste Schritte
 
-- [Managing Pages](managing-pages) -- Erstellen und organisieren Sie Ihre Website-Seiten
-- [Files](files) -- Laden Sie Mediendateien für Ihre Website hoch
+- [Seiten verwalten](managing-pages) – Ihre Website-Seiten erstellen und organisieren
+- [Dateien](files) – Medienelemente für Ihre Website hochladen

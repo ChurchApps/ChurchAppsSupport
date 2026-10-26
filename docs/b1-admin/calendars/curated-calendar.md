@@ -30,10 +30,14 @@ A curated calendar aggregates events from multiple groups into one unified calen
 
 1. Click **Manage Events** on your new calendar to open it.
 2. Click **Add Group** above the calendar. Groups you add appear in the **Groups in Calendar** list on the left side of the page.
-3. Select a group from the dropdown menu.
+3. Select a group from the dropdown menu. Every group in your church is listed, including groups you are not a member of.
 4. Choose whether to add **all events** from that group or only **specific events**.
 5. Click **Save**.
 6. Repeat this process to add as many groups as you want to include.
+
+Each event is listed once, even if you added it on its own and also added its whole group. The **Groups in Calendar** list shows only groups added with all of their events.
+
+To take something off the calendar, click the event and choose **Remove from Calendar**. The event stays in its group. If the event came from a whole group, removing it removes all of that group's events from this calendar.
 
 :::tip
 Add all your active ministry groups to create a comprehensive calendar that gives your congregation a complete picture of what is happening at your church each week.

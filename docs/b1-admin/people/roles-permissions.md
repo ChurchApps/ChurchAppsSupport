@@ -39,7 +39,7 @@ Each role controls access to specific areas of B1 Admin, including:
 
 1. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin) and expand **Settings**.
 2. Click **Roles**.
-3. You will see a list of all roles configured for your church.
+3. You will see a list of all roles configured for your church, with a **Members** column showing how many users are in each role.
 4. Click on any role to view its members and permissions.
 
 ## Adding Users to a Role
@@ -55,8 +55,8 @@ The user will now have all permissions associated with that role the next time t
 
 1. In the Jump menu, choose **Settings > Roles**.
 2. Click the role you want to modify.
-3. In the **Permissions** section, check or uncheck the areas you want the role to access.
-4. Click **Save** to apply your changes.
+3. In the **Permissions** section, check or uncheck the areas you want the role to access. Each permission group shows how many of its permissions are checked (for example, **2 of 5**).
+4. Each change saves as soon as you check or uncheck a box.
 
 :::tip
 Follow the principle of least privilege -- give each role only the permissions it truly needs. This keeps your data secure and reduces the chance of accidental changes.

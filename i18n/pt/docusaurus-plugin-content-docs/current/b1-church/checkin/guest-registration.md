@@ -1,60 +1,68 @@
 ---
-title: "Registro de Convidado"
+title: "Cadastro de visitante"
 ---
 
-# Registro de Convidado
+# Cadastro de visitante
 
 <div class="article-intro">
 
-Se você está visitando uma igreja pela primeira vez, pode se registrar você e sua família como convidados usando a página de registro de convidado. Isso cria um registro no sistema da igreja para que os voluntários possam fazer seu check-in quando você chegar.
+Se você está visitando uma igreja pela primeira vez, pode se cadastrar, junto com a sua família, como visitante usando a página de cadastro de visitantes. Isso cria um registro no sistema da igreja para que os voluntários possam fazer o check-in de vocês quando chegarem.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Sua igreja deve ter o registro de convidado por QR ativado
-- Escaneie o código QR exibido no quiosque de check-in, toque em **Registrar aqui** no quiosque, ou receba um link de um voluntário da igreja
+- A sua igreja precisa ter o cadastro de visitantes por QR code ativado. Se não estiver, a página exibe "O cadastro de visitantes não está ativado para esta igreja."
+- Escaneie o QR code exibido no quiosque de check-in, toque em **Cadastrar aqui** no quiosque ou receba um link de um voluntário da igreja
 
 </div>
 
-## Como Funciona o Registro de Convidado
+## Como funciona o cadastro de visitantes
 
-O registro de convidado é projetado para visitantes que ainda não têm uma conta. No quiosque de check-in da igreja, toque em **Registrar como convidado** para mostrar um código QR que leva para a página de registro. Você também pode receber o link de um voluntário ou anfitrião.
+O cadastro de visitantes foi pensado para visitantes que ainda não têm uma conta. No quiosque de check-in da igreja, toque em **Cadastrar como visitante** para exibir um QR code que leva à página de cadastro. Você também pode receber o link de um voluntário ou recepcionista, ou encontrá-lo em um panfleto ou no site da igreja.
 
-Não tem um telefone à mão? Na mesma janela de código QR no quiosque, toque em **Registrar aqui** para preencher o formulário no quiosque em si. Veja [Registrando-se como Convidado](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest) para como isso funciona no quiosque.
+Não tem um celular por perto? Na mesma janela do QR code no quiosque, toque em **Cadastrar aqui** para preencher o formulário no próprio quiosque. Consulte [Cadastrando-se como visitante](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest) para saber como isso funciona no quiosque.
 
-## Registrando Sua Família
+A página abre com o título **Cadastro de visitante**. Se a igreja tiver adicionado uma foto de cabeçalho, ela aparece no topo da página; caso contrário, você verá um pequeno ícone.
 
-1. **Escaneie o código QR** no quiosque de check-in ou abra o link de registro de convidado no seu telefone. (Se você tocou em **Registrar aqui** no quiosque, o formulário já está aberto.)
-2. O formulário de registro de convidado aparece com campos para o **contato primário**:
-   - **Primeiro Nome** (obrigatório)
-   - **Último Nome** (obrigatório)
-   - **Email** (opcional)
-   - **Telefone** (opcional)
-3. Para adicionar **membros da família**, toque em **Adicionar Membro da Família** e digite seu primeiro e último nome. Você pode adicionar até 10 membros da família.
-4. Para remover um membro da família, toque no botão remover próximo ao seu nome.
-5. Toque em **Registrar** para enviar.
+## Cadastrando sua família
 
-## Após Registrar
+1. **Escaneie o QR code** no quiosque de check-in ou abra o link de cadastro de visitante no seu celular. (Se você tocou em **Cadastrar aqui** no quiosque, o formulário já estará aberto.)
+2. Preencha o cartão **Contato principal**. **Nome** e **Sobrenome** são sempre obrigatórios. Dependendo do que a sua igreja solicita, você também pode ver:
+   - **E-mail** e **Telefone**
+   - **Estado civil**
+   - **Endereço residencial**: **Logradouro**, **Complemento**, **Cidade**, **Estado** e **CEP**. Isso é compartilhado por toda a família.
+3. O formulário começa com um segundo cartão para o **Membro da família 2**. Informe o nome e o sobrenome dele, ou toque no **X** no canto do cartão para removê-lo se você estiver se cadastrando sozinho.
+4. Para adicionar mais pessoas, toque em **Adicionar membro da família**. O novo cartão preenche automaticamente o sobrenome do contato principal. Você pode cadastrar até 10 pessoas de uma vez.
+5. Se a sua igreja solicitar, o cartão de cada pessoa também pode incluir **Data de nascimento**, **Sexo** e **Série**.
+6. Se a sua igreja incluir uma caixa de **Comentários** abaixo dos membros da família, use-a para compartilhar o que você quiser que a igreja saiba (até 1.000 caracteres).
+7. Toque em **Cadastrar** para enviar.
 
-Após enviar o formulário, uma tela de confirmação aparece com a mensagem: "Registro Completo -- Tudo pronto! Um membro da equipe fará seu check-in em breve."
+Os campos marcados com asterisco (`*`) são obrigatórios. Se algum deles estiver em branco, o formulário exibe "Preencha todos os campos obrigatórios." e nada é enviado até que você os preencha.
 
-Seu registro cria registros no banco de dados da igreja:
+## Depois do cadastro
 
-- Uma **família** é criada usando o último nome do contato primário.
-- Registros de **pessoa** são criados para cada membro da família com status de associação "Convidado".
-- Um voluntário ou administrador da igreja pode então fazer o check-in de sua família usando o quiosque [B1 Checkin](../../b1-checkin/check-in/looking-up-members).
+Depois de enviar o formulário, aparece uma tela de confirmação com a mensagem: "Cadastro concluído -- Está tudo certo! Um membro da equipe fará o seu check-in em breve."
+
+O seu cadastro cria registros no banco de dados da igreja:
+
+- Um **domicílio** é criado usando o sobrenome do contato principal, com o contato principal como chefe da família.
+- **Registros de pessoa** são criados para cada membro da família, com o status de membresia "Visitante".
+- Quaisquer comentários que você tiver feito são salvos como uma anotação no registro do contato principal, para que a equipe da igreja leia.
+- Se a igreja tiver escolhido um grupo para novos visitantes, a sua família é adicionada a ele. A igreja também pode registrar automaticamente a sua presença se você se cadastrar durante um dos horários de culto desse grupo.
+- Um voluntário ou administrador da igreja pode então fazer o check-in da sua família usando o quiosque do [B1 Checkin](../../b1-checkin/check-in/looking-up-members).
 
 :::info
-Se seu email corresponder a um registro existente no banco de dados da igreja, o sistema se vincula a esse registro em vez de criar um duplicado. Isso mantém os dados da igreja limpos.
+Cada cadastro cria um novo domicílio, então cadastre sua família apenas uma vez. Se você já se cadastrou, pesquise seu nome ou número de telefone no quiosque.
 :::
 
 :::tip
-Fornecer seu endereço de email ajuda a igreja a fazer contato com você após sua visita. É opcional mas recomendado.
+Se o formulário pedir o seu e-mail, informá-lo ajuda a igreja a entrar em contato depois da sua visita.
 :::
 
-## Artigos Relacionados
+## Artigos relacionados
 
-- [Autoatendimento de Check-in](./self-checkin) -- Faça seu check-in após registrar
-- [Adicionando Convidados (Quiosque)](../../b1-checkin/check-in/adding-guests) -- Como voluntários adicionam convidados no quiosque
+- [Check-in próprio](./self-checkin): faça o seu próprio check-in depois de se cadastrar
+- [Adicionando visitantes (quiosque)](../../b1-checkin/check-in/adding-guests): como os voluntários adicionam visitantes no quiosque
+- [Check-in](../../b1-admin/attendance/check-in#guest-registration-via-qr-code): como os administradores da igreja configuram o cadastro de visitantes por QR code

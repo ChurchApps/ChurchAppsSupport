@@ -6,85 +6,85 @@ title: "Configuración de asistencia"
 
 <div class="article-intro">
 
-Antes de poder registrar la asistencia, debes indicar a B1 Admin las ubicaciones físicas de tu iglesia, cuándo se realizan los servicios y qué grupos se reúnen en cada servicio. Esta configuración única crea la estructura que impulsa todo el seguimiento y los informes de asistencia de tu iglesia.
+Antes de poder registrar la asistencia, debe indicarle a B1 Admin las ubicaciones físicas de su iglesia, cuándo se realizan los servicios y qué grupos se reúnen en cada servicio. Esta configuración única crea la estructura que sustenta todo el seguimiento y los informes de asistencia de su iglesia.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Necesitas una cuenta activa de B1 Admin con permiso para administrar la asistencia. Consulta [Roles y permisos](../people/roles-permissions.md) si no estás seguro de tu nivel de acceso.
-- Si planeas asignar grupos a horarios de servicio, asegúrate de que tus [grupos estén creados](../groups/creating-groups.md) primero.
+- Necesita una cuenta activa de B1 Admin con permiso para administrar la asistencia. Consulte [Roles y permisos](../people/roles-permissions.md) si no está seguro de su nivel de acceso.
+- Si planea asignar grupos a horarios de servicio, asegúrese de que sus [grupos estén creados](../groups/creating-groups.md) primero.
 
 </div>
 
 ## Conceptos clave
 
-- **Campus**: un lugar físico donde tu iglesia se reúne (por ejemplo, "Main Campus" o "North Campus"). Los campus se administran en **Settings**.
-- **Service**: una reunión recurrente en un campus (por ejemplo, "Sunday Service" o "Midweek").
-- **Service Time**: un horario específico en el que se realiza un servicio (por ejemplo, "9:00 AM" o "11:00 AM").
-- **Scheduled Group**: un grupo asignado a un horario de servicio específico. La asistencia se registra en el contexto de ese servicio.
-- **Unscheduled Group**: un grupo que lleva su propia asistencia, sin estar vinculado a un horario de servicio.
+- **Campus**: un lugar físico donde se reúne su iglesia (por ejemplo, "Campus principal", "Campus norte"). Los campus se administran en **Configuración**.
+- **Servicio**: una reunión recurrente en un campus (por ejemplo, "Servicio del domingo", "Entre semana").
+- **Horario de servicio**: una hora específica en la que se realiza un servicio (por ejemplo, "9:00 a. m.", "11:00 a. m.").
+- **Grupo programado**: un grupo asignado a un horario de servicio específico. La asistencia se registra en el contexto de ese servicio.
+- **Grupo no programado**: un grupo que registra su propia asistencia, sin estar vinculado a un horario de servicio.
 
-## Configurar tu estructura de asistencia
+## Configuración de su estructura de asistencia
 
-1. Abre **B1 Admin**, abre el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda) y expande **People**.
-2. Haz clic en **Attendance** y luego en **Setup** en la columna izquierda. Se abre la tabla **Service structure**, con el número de campus, horarios de servicio y grupos programados y no programados en la parte superior.
-3. Haz clic en **Manage Campuses** (arriba a la derecha del panel **Service structure**). Esto te lleva a **Settings → Campuses**. Haz clic en **Add Campus**, escribe el nombre de tu ubicación (la dirección y la zona horaria son opcionales) y haz clic en **Save**.
-4. Regresa a **People → Attendance** y haz clic en **Setup**. Tu campus ya aparece en la tabla de configuración.
-5. Haz clic en el botón **+** de la columna **Service**, debajo de tu campus. Escribe un nombre de servicio como "Sunday Service" y haz clic en **Save**.
-6. Haz clic en el botón **+** de la columna **Time**, debajo del servicio. Escribe un nombre de **Service Time** como "9:00 AM", opcionalmente completa el [horario de registro](#setting-a-check-in-schedule) y haz clic en **Save**. Repite para cada horario de servicio.
-7. Para conectar un grupo a un horario de servicio, abre el grupo desde **People > Groups**, haz clic en **Edit** y usa **Add Service Time**. Consulta la siguiente sección.
+1. Abra **B1 Admin**, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda) y expanda **Personas**.
+2. Haga clic en **Asistencia** y luego en **Configuración** en la columna izquierda. Se abre la tabla **Estructura de servicios**, con el número de campus, horarios de servicio y grupos programados y no programados en la parte superior. Los números se actualizan en cuanto agrega, edita o elimina algo en la tabla.
+3. Haga clic en **Administrar campus** (en la parte superior derecha del panel **Estructura de servicios**). Esto lo lleva a **Configuración → Campus**. Haga clic en **Agregar campus**, ingrese el nombre de su ubicación (la dirección y la zona horaria son opcionales) y haga clic en **Guardar**.
+4. Regrese a **Personas → Asistencia** y haga clic en **Configuración**. Su campus ahora aparece en la tabla de configuración.
+5. Haga clic en el **botón + de la columna Servicio** debajo de su campus. Ingrese un nombre de servicio como "Servicio del domingo" y haga clic en **Guardar**.
+6. Haga clic en el **botón + de la columna Horario** debajo del servicio. Ingrese un nombre de **Horario de servicio** como "9:00 a. m.", opcionalmente complete el [horario de registro](#setting-a-check-in-schedule) y haga clic en **Guardar**. Repita para cada horario de servicio.
+7. Para conectar un grupo a un horario de servicio, abra el grupo desde **Personas > Grupos**, haga clic en **Editar** y use **Agregar horario de servicio**; consulte la siguiente sección.
 
-### Activar Track Attendance en un grupo
+### Activar Registrar asistencia en un grupo
 
-Antes de que un grupo pueda registrar asistencia, debes activar **Track Attendance** para ese grupo.
+Antes de que un grupo pueda registrar asistencia, debe activar la opción Registrar asistencia para ese grupo.
 
-1. En el menú Jump, elige **People > Groups** y selecciona el grupo.
-2. Haz clic en el botón **Edit** debajo del nombre del grupo.
-3. Cambia **Track Attendance** a **Yes**.
-4. Haz clic en **Save**.
+1. En el menú Jump, elija **Personas > Grupos** y seleccione el grupo.
+2. Haga clic en el botón **Editar** debajo del nombre del grupo.
+3. Configure **Registrar asistencia** en **Sí**.
+4. Haga clic en **Guardar**.
 
 :::tip
-Si asignaste el grupo a un horario de servicio en el paso anterior, usa también la opción **Add Service Time** en la pantalla de edición del grupo para vincularlo al servicio correcto. Así las sesiones quedan conectadas al campus y horario adecuados.
+Si asignó el grupo a un horario de servicio en el paso anterior, use también la opción **Agregar horario de servicio** en la pantalla de edición del grupo para vincularlo al servicio correcto. Esto asegura que las sesiones se conecten con el campus y el horario correctos.
 :::
 
 :::tip
-Si un grupo se reúne fuera de un servicio regular, como un grupo pequeño entre semana que lleva su propia asistencia, puedes dejarlo como grupo no programado. Aun así aparecerá en el informe **Group Attendance**.
+Si un grupo se reúne fuera de un servicio regular, como un grupo pequeño entre semana que registra su propia asistencia, puede dejarlo como grupo no programado. Aun así aparecerá en el informe **Asistencia por grupo** para los informes de asistencia.
 :::
 
-## Configurar un horario de registro
+## Configuración de un horario de registro
 
-Cada horario de servicio puede tener un horario de registro opcional para que el [autorregistro](check-in.md) se abra y se cierre solo cada semana. Sin un horario, el registro de ese horario de servicio permanece disponible en cualquier momento (siempre que la sala no esté cerrada por otros motivos, como estar llena).
+Cada horario de servicio puede tener un horario de registro opcional para que el [registro por autoservicio](check-in.md) se abra y se cierre por sí solo cada semana. Sin un horario, el registro para ese horario de servicio está disponible en cualquier momento (siempre que la sala no esté cerrada por otros motivos, como estar llena).
 
-1. En la vista **Setup**, haz clic en el nombre de un horario de servicio en la columna **Time** (o agrega uno nuevo).
-2. En **Check-in Schedule**, elige el **Day** de la semana en que se reúne el horario de servicio.
-3. Establece la **Start Time** y, opcionalmente, la **End Time**.
-4. Escribe **Open check-in (minutes before start)**: por ejemplo, `30` abre el registro media hora antes del inicio del servicio.
-5. Escribe **Close check-in (minutes after end)**: por ejemplo, `15` mantiene el registro abierto 15 minutos después de la hora de término. Si no estableciste una hora de término, el tiempo se cuenta desde la hora de inicio.
-6. Haz clic en **Save**.
+1. En la vista **Configuración**, haga clic en el nombre de un horario de servicio en la columna **Horario** (o agregue uno nuevo).
+2. En **Horario de registro**, elija el **Día** de la semana en que se reúne el horario de servicio.
+3. Configure la **Hora de inicio** y, opcionalmente, la **Hora de fin**.
+4. Ingrese **Abrir registro (minutos antes del inicio)**; por ejemplo, `30` abre el registro media hora antes de que comience el servicio.
+5. Ingrese **Cerrar registro (minutos después del fin)**; por ejemplo, `15` mantiene el registro abierto 15 minutos después de la hora de fin. Si no configuró una hora de fin, este tiempo se cuenta desde la hora de inicio.
+6. Haga clic en **Guardar**.
 
-El horario se repite cada semana y se mide en la zona horaria del campus del servicio. Si ese campus no tiene zona horaria, se usa la [Zona horaria](../settings/church-settings.md#time-zone) de tu iglesia; si tampoco la tiene, la zona horaria del primer campus que sí la tenga, y como último recurso la hora del este de EE. UU. (America/New_York). Si el registro se abre a una hora incorrecta, revisa la **Time Zone** del campus en [Campus](../settings/campuses.md). Para quitar un horario, cambia **Day** de nuevo a **No schedule** y haz clic en **Save**. Un horario solo se aplica cuando se han definido tanto **Day** como **Start Time**.
+El horario se repite cada semana y se mide en la zona horaria del campus del servicio. Si ese campus no tiene zona horaria, se usa la [Zona horaria](../settings/church-settings.md#time-zone) de su iglesia; si tampoco la tiene, se usa la zona horaria de su primer campus que tenga una configurada y, por último, la hora del este (America/New_York). Si el registro se abre a una hora incorrecta, revise la **Zona horaria** del campus en [Campus](../settings/campuses.md). Para eliminar un horario, configure **Día** en **Sin horario** y haga clic en **Guardar**. Un horario solo entra en vigor cuando se establecen tanto un **Día** como una **Hora de inicio**.
 
 Mientras la ventana de registro de un horario de servicio está cerrada:
 
-- **El autorregistro en B1.church** muestra ese horario de servicio como **Closed** (o, por ejemplo, **Closed · opens Sun 9:30 AM**) y no se puede seleccionar. Si ninguno de los horarios de un servicio está abierto, las familias ven cuándo se abre el registro, por ejemplo, "Check-in opens Sun 9:30 AM".
-- **La aplicación del quiosco B1 Checkin** también muestra el horario de servicio como **Closed** junto con la hora de apertura. Si todos los horarios de un servicio están cerrados, el quiosco indica cuándo se abre el registro para ese servicio. Si alguien ya se registró en un horario de servicio cerrado, su grupo aparece con **Checked in**. Si una ventana se cierra a mitad de un registro, el quiosco no lo completa y muestra una pantalla **Can't check in yet** con la sala afectada, para que la familia pueda elegir otra.
+- **El registro por autoservicio en B1.church** muestra ese horario de servicio como **Cerrado** (o, por ejemplo, **Cerrado · abre dom 9:30 a. m.**) y no se puede seleccionar. Si ninguno de los horarios de un servicio está abierto, las familias ven cuándo se abre el registro, por ejemplo, "El registro abre dom 9:30 a. m."
+- **La aplicación del kiosco B1 Checkin** también muestra el horario de servicio como **Cerrado** con la hora en que se abre. Si todos los horarios de un servicio están cerrados, el kiosco indica cuándo se abre el registro para ese servicio. Una persona que ya se registró en un horario de servicio cerrado ve su grupo con **Registrado** en su lugar. Si una ventana se cierra a mitad de un registro, el kiosco no lo completará y muestra una pantalla de **No se puede registrar todavía** que enumera la sala afectada para que la familia pueda elegir otra.
 
-Un hogar que ya se registró para un horario de servicio anterior todavía puede volver y agregar un horario posterior que esté abierto, incluso después de que la ventana anterior se haya cerrado. Sus registros anteriores se conservan.
+Un hogar que ya se registró para un horario de servicio anterior aún puede volver y agregar un horario de servicio posterior que esté abierto, incluso después de que cerró la ventana anterior. Sus registros existentes se conservan.
 
 :::tip
-Establece una ventana de apertura amplia (por ejemplo, 45 minutos antes del inicio) para que las familias y los voluntarios que lleguen temprano puedan registrarse, y una ventana de cierre corta para que quienes lleguen tarde puedan registrarse una vez iniciado el servicio.
+Configure una ventana de apertura generosa (por ejemplo, 45 minutos antes del inicio) para que las familias y los voluntarios que llegan temprano puedan registrarse, y una ventana de cierre corta para que quienes llegan tarde puedan registrarse una vez que el servicio haya comenzado.
 :::
 
-## Editar tu configuración
+## Edición de su configuración
 
-Puedes actualizar tu configuración en cualquier momento. Selecciona un campus, un horario de servicio o un grupo y haz clic en **Edit** para cambiar sus detalles, o en **Delete** para eliminarlo.
+Puede actualizar su configuración en cualquier momento. Seleccione un campus, horario de servicio o grupo y haga clic en **Editar** para cambiar sus detalles, o en **Eliminar** para quitarlo.
 
 :::info
-Eliminar un horario de servicio no borra los registros de asistencia anteriores. Tus datos históricos se conservan aunque cambies tu horario.
+Eliminar un horario de servicio no borra los registros de asistencia pasados. Sus datos históricos se conservan aunque cambie su horario.
 :::
 
 ## Siguientes pasos
 
-Una vez que tus campus, horarios de servicio y grupos estén listos, puedes empezar a [registrar la asistencia](recording-attendance.md) manualmente o configurar el [autorregistro](check-in.md) para tus servicios.
+Una vez que sus campus, horarios de servicio y grupos estén listos, podrá comenzar a [registrar la asistencia](recording-attendance.md) manualmente o configurar el [registro por autoservicio](check-in.md) para sus servicios.

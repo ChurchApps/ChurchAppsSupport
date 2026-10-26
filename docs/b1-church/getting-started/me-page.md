@@ -30,7 +30,7 @@ If you are signed out, you'll see "Sign in to see your week" and a **Sign In** b
 
 The **Upcoming** section lists your next three items in date order, each tagged with a type badge. If you have more, tap **All upcoming** to see the full list, and **Back to Me** to return.
 
-- **Serving** -- Your volunteer positions on upcoming service plans. Tap one to open the plan.
+- **Serving** -- Your volunteer positions on upcoming service plans, with the date and start time of the service you're serving in (the time your team is needed when the plan has several service times, or just the date if the plan has no times). Tap one to open the plan.
 - **Registration** -- Events you have [registered for](../events/registering). Tap through to your [registrations](../events/my-registrations).
 - **Event** -- Upcoming events from groups you belong to. Tap one to open the group's events.
 
@@ -51,7 +51,7 @@ The **My Forms** section lists the forms you've most recently submitted, with th
 Tap a form or **All forms** to open the **My Forms** page, which lists your submitted forms, newest first. Tap a form to expand it and see your answers; tap it again to collapse it. Your answers are read-only here -- contact your church if something needs to change.
 
 :::info
-My Forms shows forms you filled out yourself. Forms that staff complete about you in B1 Admin are not listed.
+My Forms shows stand-alone forms you filled out yourself, plus stand-alone form submissions that are linked to your person record -- for example, one matched to you by your email address, or one church staff [moved to you](../../b1-admin/forms/managing-submissions.md#changing-the-person-on-a-submission). Forms that staff complete about you on your record in B1 Admin are not listed.
 :::
 
 ## My Attendance

@@ -1,33 +1,33 @@
 ---
-title: "Timeline"
+title: "Cronología"
 ---
 
-# Timeline
+# Cronología
 
 <div class="article-intro">
 
-La pestaña independiente **Timeline** ya no está disponible. El portal de miembros ahora se abre en el [panel Home](../getting-started/navigating.md), y la actividad que antes aparecía en un único feed combinado se muestra ahora donde corresponde: en la página Me, en las notificaciones y dentro de cada grupo.
+La pestaña independiente **Cronología** se retiró. El portal de miembros ahora se abre en el [panel de Inicio](../getting-started/navigating.md), y la actividad que antes aparecía en un solo feed combinado se muestra ahora donde corresponde: en la página Yo, en las notificaciones y dentro de cada grupo.
 
 </div>
 
-## Dónde está ahora la actividad de Timeline
+## Dónde está ahora la actividad de la cronología
 
-| Lo que antes veías en Timeline | Dónde encontrarlo ahora |
+| Lo que solía ver en la cronología | Dónde encontrarlo ahora |
 | --- | --- |
-| Conversaciones y anuncios de grupo | El chat dentro de cada [grupo](../groups/conversations.md) (**Open chat**) |
-| Próximos eventos para ti y tus grupos | La página **Me** (`/mobile/me`) y la sección **Next event** de cada grupo |
-| Tareas y asignaciones de servicio | La página **Me** y [Plans](../plans/) |
-| Nuevos sermones | La sección **Latest sermon** en Home y la pestaña [Sermons](../content/sermons.md) |
-| Cualquier cosa que te haya notificado | El icono de **campana** en la barra superior, o `/mobile/notifications` |
+| Conversaciones y anuncios de grupos | El chat dentro de cada [grupo](../groups/conversations.md) (**Abrir chat**) |
+| Próximos eventos para usted y sus grupos | La página **Yo** (`/mobile/me`) y la sección **Próximo evento** de cada grupo |
+| Tareas y asignaciones de servicio | La página **Yo** y [Planes](../plans/) |
+| Sermones nuevos | La sección **Último sermón** en Inicio y la pestaña [Sermones](../content/sermons.md) |
+| Cualquier cosa que le haya enviado un aviso | El ícono de **campana** en la barra de la aplicación, o `/mobile/notifications` |
 
-## La página Me
+## La página Yo
 
-[La página Me](../getting-started/me-page) es el reemplazo más cercano al antiguo feed. Enumera lo que tienes próximo (asignaciones de servicio, inscripciones a eventos y eventos de grupo), junto con los formularios que has enviado, tu historial de asistencia y tus notificaciones más recientes, y enlaza directamente con tu perfil, tus preferencias de notificación, tus mensajes, tus donaciones y tus inscripciones.
+[La página Yo](../getting-started/me-page) es el reemplazo más cercano del antiguo feed. Enumera lo que se avecina para usted (asignaciones de servicio, inscripciones a eventos y eventos de grupo), junto con los formularios que ha enviado, su historial de asistencia y sus notificaciones más recientes, y enlaza directamente con su perfil, sus preferencias de notificación, sus mensajes, sus donaciones y sus inscripciones.
 
 ## Notificaciones
 
-Todo lo que antes habría aparecido como un elemento de Timeline y necesitaba tu atención ahora llega como notificación. Toca la campana en la barra superior para ver las más recientes, o toca **See all** (o abre `/mobile/notifications`) para ver la lista completa. Al tocar una notificación, vas al grupo, plan o conversación de donde proviene. Puedes controlar qué notificaciones recibes, y cómo, en [Preferencias de notificación](../getting-started/notification-preferences.md).
+Todo lo que antes habría aparecido como un elemento de la cronología y requería su atención ahora llega como notificación. Toque la campana en la barra de la aplicación para ver las más recientes, o toque **Ver todas** (o abra `/mobile/notifications`) para ver la lista completa. Al tocar una notificación, se le lleva al grupo, plan o conversación del que proviene. Puede controlar qué notificaciones recibe y cómo, en [Preferencias de notificación](../getting-started/notification-preferences.md).
 
 :::tip
-Si tu página Me aparece vacía, es posible que todavía no seas miembro de ningún grupo. Visita la página de [Groups](../groups/browsing-groups.md) para encontrar grupos a los que unirte, o pide a tu administrador de la iglesia o al líder del grupo que te agregue.
+Si su página Yo se ve vacía, es posible que todavía no sea miembro de ningún grupo. Visite la página de [Grupos](../groups/browsing-groups.md) para encontrar grupos a los que unirse, o pida al administrador de su iglesia o al líder de un grupo que lo agregue.
 :::

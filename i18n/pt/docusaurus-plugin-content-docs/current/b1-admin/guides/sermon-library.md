@@ -1,101 +1,105 @@
 ---
-title: "Guia: Construir Sua Biblioteca de Sermões e Transmissão ao Vivo"
+title: "Guia: Crie sua biblioteca de sermões e transmissão ao vivo"
 ---
 
-# Construir Sua Biblioteca de Sermões e Transmissão ao Vivo
+# Crie sua biblioteca de sermões e transmissão ao vivo
 
 <div class="article-intro">
 
-Coloque seu arquivo de sermões online e configure transmissão ao vivo — desde importar sua biblioteca existente do YouTube ou Vimeo até agendar serviços ao vivo recorrentes com chat interativo. No final, sua congregação poderá assistir sermões anteriores e participar de serviços ao vivo em seu website e aplicativo móvel.
+Coloque o seu arquivo de sermões online e configure a transmissão ao vivo — desde importar sua biblioteca existente do YouTube ou Vimeo até agendar cultos ao vivo recorrentes com chat interativo. Ao final, sua congregação poderá assistir a sermões anteriores e participar dos cultos ao vivo no seu site e no aplicativo móvel.
 
 </div>
+
+## Vídeo de treinamento
+
+<YouTube id="b3B3A25g2Sk" title="Building Your Sermon Library in B1" />
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Conta B1 Admin com permissão de gerenciamento de conteúdo
+- Conta do B1 Admin com permissão para gerenciar conteúdo
 - Canal do YouTube ou Vimeo com vídeos de sermões (para importar seu arquivo)
-- ID do Canal do YouTube (para transmissão ao vivo — encontre nas configurações do YouTube Studio)
+- ID do canal do YouTube (para a transmissão ao vivo — você o encontra nas configurações do YouTube Studio)
 
 </div>
 
-## Passo 1: Criar Playlists de Sermões
+## Passo 1: Crie as playlists de sermões
 
-Playlists organizam seus sermões em séries e coleções para fácil navegação.
+As playlists organizam seus sermões em séries e coleções para facilitar a navegação.
 
-Siga o guia de [Playlists](../sermons/playlists.md) para:
+Siga o guia [Playlists](../sermons/playlists.md) para:
 
-1. Crie séries/coleções como "2024 Sunday Messages", "Marriage Series", "Christmas Services"
-2. Adicione nome, descrição, data de publicação e thumbnail para cada playlist
+1. Criar séries/coleções como "Mensagens de Domingo 2024", "Série sobre o Casamento", "Cultos de Natal"
+2. Adicionar um nome, descrição, data de publicação e miniatura para cada playlist
 
 :::tip
-Crie playlists antes de adicionar sermões. Isso torna fácil organizar sermões na série certa conforme você os adiciona.
+Crie as playlists antes de adicionar os sermões. Assim fica mais fácil organizar cada sermão na série certa à medida que você os adiciona.
 :::
 
-## Passo 2: Importar Seus Sermões Existentes
+## Passo 2: Importe seus sermões existentes
 
-Se você já tem vídeos de sermões no YouTube ou Vimeo, você pode puxá-los todos de uma vez.
+Se você já tem vídeos de sermões no YouTube ou Vimeo, pode importar todos de uma vez.
 
-Siga o guia de [Bulk Import](../sermons/bulk-import.md) para:
+Siga o guia [Importação em Massa](../sermons/bulk-import.md) para:
 
-1. Insira sua URL do canal YouTube ou Vimeo
-2. Visualize a importação para ver quais vídeos serão puxados
-3. Clique em Import para adicioná-los tudo de uma vez
+1. Informar a URL do seu canal do YouTube ou Vimeo
+2. Visualizar a prévia da importação para ver quais vídeos serão incluídos
+3. Clicar em Importar para adicionar todos de uma vez
 
-## Passo 3: Adicionar Sermões Individuais
+## Passo 3: Adicione sermões individuais
 
-Para adições únicas ou sermões não parte de uma importação em massa, adicione-os individualmente.
+Para inclusões pontuais ou sermões que não fazem parte de uma importação em massa, adicione-os individualmente.
 
-Siga o guia de [Managing Sermons](../sermons/managing-sermons.md) para:
+Siga o guia [Gerenciando Sermões](../sermons/managing-sermons.md) para:
 
-1. Cole uma URL de vídeo (YouTube, Vimeo ou Facebook)
-2. Título, descrição, thumbnail e duração preenchem automaticamente a partir dos metadados do vídeo
-3. Atribua o sermão a uma playlist
+1. Colar a URL de um vídeo (YouTube, Vimeo ou Facebook)
+2. Ter o título, a descrição, a miniatura e a duração preenchidos automaticamente a partir dos metadados do vídeo
+3. Atribuir o sermão a uma playlist
 
-## Passo 4: Configurar Transmissão ao Vivo
+## Passo 4: Configure a transmissão ao vivo
 
-Conecte seu canal YouTube para que seu site B1 pegue automaticamente sua transmissão ao vivo.
+Conecte o seu canal do YouTube para que o seu site do B1 capture automaticamente a sua transmissão ao vivo.
 
-Siga o guia de [Live Streaming](../sermons/live-streaming.md) para:
+Siga o guia [Transmissão ao Vivo](../sermons/live-streaming.md) para:
 
-1. Insira seu ID do Canal YouTube nas configurações de transmissão
-2. Configure sua programação de serviço recorrente (por exemplo, Domingos às 10:00 AM)
-3. Personalize as abas da página de transmissão (Chat, pedidos de oração e links personalizados) na página **Sermões > Configurações**
+1. Informar o ID do seu canal do YouTube nas configurações de transmissão
+2. Configurar a programação dos seus cultos recorrentes (por exemplo, domingos às 10h)
+3. Personalizar as abas da página de transmissão (Chat, Pedidos de oração e links personalizados) na página **Sermões > Configurações**
 
 :::info
-Quando você vai ao vivo no YouTube, a página de transmissão B1 automaticamente pega o stream. Nenhum passo extra necessário no domingo de manhã.
+Quando você entrar ao vivo no YouTube, a página de transmissão do B1 captura a transmissão automaticamente. Não é necessário nenhum passo extra no domingo de manhã.
 :::
 
-## Passo 5: Exibir em Seu Website
+## Passo 5: Exiba no seu site
 
-Torne sua biblioteca de sermões e transmissão ao vivo facilmente acessível aos visitantes.
+Deixe a sua biblioteca de sermões e a transmissão ao vivo facilmente acessíveis aos visitantes.
 
-Siga o guia de [Managing Pages](../website/managing-pages.md) para:
+Siga o guia [Gerenciando Páginas](../website/managing-pages.md) para:
 
-1. Adicione uma seção de Sermões ao seu website B1 para que visitantes possam navegar em sua biblioteca
-2. Adicione uma seção de Live Stream para a experiência de visualização ao vivo
+1. Adicionar uma seção de Sermões ao seu site do B1 para que os visitantes possam navegar pela biblioteca
+2. Adicionar uma seção de Transmissão ao Vivo para a experiência de assistir ao vivo
 
-## Passo 6: Acesso Móvel
+## Passo 6: Acesso pelo celular
 
-Membros podem acessar sermões e serviços ao vivo de qualquer dispositivo.
+Os membros podem acessar sermões e cultos ao vivo em qualquer dispositivo.
 
-1. Membros podem assistir sermões no [aplicativo B1 Mobile](../../b1-mobile/content/sermons.md) e em [B1.church](../../b1-church/content/sermons.md)
-2. Transmissão ao vivo com chat e pedidos de oração funciona em ambas as plataformas
+1. Os membros podem assistir aos sermões no [aplicativo B1 Mobile](../../b1-mobile/content/sermons.md) e no [B1.church](../../b1-church/content/sermons.md)
+2. A transmissão ao vivo com chat funciona nas duas plataformas
 
 :::info
-Os recursos de chat ao vivo e pedido de oração permitem que sua congregação online participe em tempo real, assim como estar na sala.
+O chat ao vivo permite que sua congregação online participe em tempo real, como se estivesse presente no templo.
 :::
 
 ## Pronto!
 
-Sua biblioteca de sermões está online e sua transmissão ao vivo está configurada. Membros podem recuperar sermões anteriores a qualquer hora e participar de serviços ao vivo de qualquer lugar. Uploads de novo sermão podem sincronizar automaticamente.
+Sua biblioteca de sermões está online e sua transmissão ao vivo está configurada. Os membros podem recuperar sermões anteriores a qualquer momento e participar dos cultos ao vivo de qualquer lugar. Novos envios de sermões podem ser sincronizados automaticamente.
 
-## Artigos Relacionados
+## Artigos relacionados
 
-- [Playlists](../sermons/playlists.md) — organize sermões em séries
-- [Bulk Import](../sermons/bulk-import.md) — importe do YouTube ou Vimeo
-- [Managing Sermons](../sermons/managing-sermons.md) — adicione e edite sermões individuais
-- [Live Streaming](../sermons/live-streaming.md) — configure serviços ao vivo
-- [Sermons (Web)](../../b1-church/content/sermons.md) — experiência de visualização de sermões dos membros
-- [Live Streaming (Web)](../../b1-church/content/live-streaming.md) — experiência de transmissão ao vivo dos membros
-- [Sermons (Mobile)](../../b1-mobile/content/sermons.md) — sermões no aplicativo móvel
+- [Playlists](../sermons/playlists.md) — organize os sermões em séries
+- [Importação em Massa](../sermons/bulk-import.md) — importe do YouTube ou Vimeo
+- [Gerenciando Sermões](../sermons/managing-sermons.md) — adicione e edite sermões individuais
+- [Transmissão ao Vivo](../sermons/live-streaming.md) — configure os cultos ao vivo
+- [Sermões (Web)](../../b1-church/content/sermons.md) — experiência de assistir sermões para membros
+- [Transmissão ao Vivo (Web)](../../b1-church/content/live-streaming.md) — experiência de transmissão ao vivo para membros
+- [Sermões (Mobile)](../../b1-mobile/content/sermons.md) — sermões no aplicativo móvel

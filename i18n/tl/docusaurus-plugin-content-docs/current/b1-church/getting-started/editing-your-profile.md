@@ -6,7 +6,7 @@ title: "Pag-edit ng Iyong Profile"
 
 <div class="article-intro">
 
-Hinahayaan ka ng iyong profile page sa member portal na i-update ang iyong impormasyon sa contact, pamahalaan ang iyong household, baguhin ang email at password ng iyong account, at kontrolin kung sino ang makakakita ng iyong address, numero ng telepono, at email address.
+Sa iyong profile page sa member portal, maaari mong i-update ang iyong contact information, pamahalaan ang iyong household, baguhin ang email at password ng account mo, at kontrolin kung sino ang makakakita ng iyong address, phone number, at email address.
 
 </div>
 
@@ -17,62 +17,62 @@ Hinahayaan ka ng iyong profile page sa member portal na i-update ang iyong impor
 
 </div>
 
-## Pagbubukas ng Iyong Profile
+## Pagbukas ng Iyong Profile
 
-I-tap ang iyong profile photo sa itaas na app bar, o i-tap ang **Edit Profile** sa itaas ng pahina ng **More** o sa iyong [Me page](./me-page.md), upang buksan ang **Your profile** sa `/mobile/profileEdit`. Ang pahina ay isang sheet ng mga seksyon -- **Photo & name**, **Contact**, **Household**, **Account**, at **Privacy** -- na bawat isa ay nagpapakita ng iyong kasalukuyang impormasyon kasama ang link na **Edit** (o **Add Family Member** / **Change**) na nagbubukas ng panel kung saan ka gagawa ng mga pagbabago.
+I-tap ang iyong profile photo sa itaas na app bar, o i-tap ang **Edit Profile** sa itaas ng pahinang **More** o sa iyong [Me page](./me-page.md), para buksan ang **Your profile** sa `/mobile/profileEdit`. Ang pahina ay isang sheet ng mga seksyon -- **Photo & name**, **Contact**, **Household**, **Account**, at **Privacy** -- na bawat isa ay nagpapakita ng iyong kasalukuyang impormasyon kasama ang isang **Edit** link (o **Add Family Member** / **Change**) na nagbubukas ng panel kung saan ka gagawa ng mga pagbabago.
 
 ## Photo & Name at Contact
 
 Ang mga seksyong ito ay naglalaman ng impormasyong nakikita ng iyong simbahan sa iyong person record:
 
-- **Photo & name** -- i-tap ang **Change Photo** upang mag-upload ng bagong larawan, at i-edit ang iyong First, Middle, at Last name.
-- **Contact** -- Email, Mobile Phone, Home Phone, Work Phone, Birth Date, at ang iyong Address (kalye, lungsod, estado, at zip). Kung i-on mo ang text reminder sa [Notification Preferences](./notification-preferences.md), mapupunta ang mga ito sa iyong mobile number.
+- **Photo & name** -- i-tap ang **Change Photo** para mag-upload ng bagong larawan, at i-edit ang iyong First, Middle, at Last name.
+- **Contact** -- Email, Mobile Phone, Home Phone, Work Phone, Birth Date, at ang iyong Address (street, city, state, at zip). Kapag in-on mo ang text reminders sa [Notification Preferences](./notification-preferences.md), mapupunta ang mga ito sa iyong mobile number.
 
 Gawin ang iyong mga pagbabago sa panel at i-tap ang **Save Changes**.
 
 :::info
-Kung nangangailangan ang iyong simbahan ng approval para sa mga pagbabago sa directory, sasabihin ng pahina ang "Changes to your profile go to church staff for approval." at ang button ay magbabasang **Submit for Approval** -- ang iyong mga pag-edit ay isusumite bilang kahilingan sa halip na agad na maipatupad. Tingnan ang [Approving Profile Changes](/docs/b1-admin/profile/approving-profile-changes) para sa kung paano sinusuri ito ng iyong simbahan.
+Kung kailangan ng approval ng iyong simbahan para sa mga pagbabago sa directory, nakasaad sa pahina ang "Changes to your profile go to church staff for approval." at ang button ay **Submit for Approval** -- ang iyong mga edit ay ipapasa bilang request sa halip na agad na maipatupad. Tingnan ang [Approving Profile Changes](/docs/b1-admin/profile/approving-profile-changes) para malaman kung paano ito sinusuri ng iyong simbahan.
 :::
 
 ## Household
 
-Ipinapakita ng seksyong Household ang iba pang taong naka-link sa iyong household, bawat isa ay may kanilang household role (Head, Spouse, Child, at iba pa). I-tap ang isang miyembro ng household upang tingnan ang kanyang mga detalye.
+Ipinapakita ng seksyong Household ang ibang taong naka-link sa iyong household, bawat isa ay may kanilang household role (Head, Spouse, Child, at iba pa). I-tap ang isang miyembro ng household para makita ang kanilang detalye.
 
-Upang magdagdag ng miyembro ng pamilya na wala pa sa sistema, i-tap ang **Add Family Member**, ilagay ang kanyang first name, at i-tap ang **Add**. Ang mga bagong miyembro ng pamilya ay idinadagdag sa listahang naghihintay, at isinusumite kasama ng iba mo pang pagbabago sa profile para suriin ng iyong simbahan.
+Para magdagdag ng miyembro ng pamilya na wala pa sa sistema, i-tap ang **Add Family Member**, ilagay ang kanilang first name, at i-tap ang **Add**. Ang mga bagong miyembro ng pamilya ay idinadagdag sa pending list at ipinapasa kasama ng iba mo pang pagbabago sa profile para masuri ng iyong simbahan.
 
 ## Account
 
-Ang seksyong Account ang namamahala sa iyong login sa halip na sa profile ng simbahan. I-tap ang **Edit** upang buksan ito:
+Ang seksyong Account ang namamahala sa iyong login, hindi sa iyong church profile. I-tap ang **Edit** para buksan ito:
 
-- **Display Name** -- ang first at last name na ipinapakita sa iyong login (hiwalay sa pangalan sa iyong profile ng simbahan).
+- **Display Name** -- ang first at last name na nakikita sa iyong login (hiwalay sa pangalan sa iyong church profile).
 - **Change Email** -- i-update ang email address na ginagamit mo sa pag-sign in.
-- **Change Password** -- ilagay ang iyong kasalukuyang password, pagkatapos ang bago mong password nang dalawang beses. Dapat hindi bababa sa 8 karakter ang bago mong password.
+- **Change Password** -- ilagay ang kasalukuyan mong password, pagkatapos ang bago mong password nang dalawang beses. Dapat hindi bababa sa 8 characters ang bagong password mo.
 
-May kanya-kanyang **Save** button ang bawat bahagi.
+May sariling **Save** button ang bawat bahagi.
 
 ## Privacy
 
-Ipinapakita ng seksyong Privacy kung sino ang makakakita ng iyong impormasyon sa contact sa buong ChurchApps. I-tap ang **Change** upang buksan ang **Visibility Preferences**:
+Ipinapakita ng seksyong Privacy kung sino ang makakakita ng iyong contact information sa buong ChurchApps. I-tap ang **Change** para buksan ang **Visibility Preferences**:
 
 - **Hide me from the member directory** -- isang switch na ganap na nag-aalis sa iyo sa [member directory](../community/member-directory.md).
-- **Address Visibility**, **Phone Visibility**, at **Email Visibility** -- may kanya-kanyang dropdown ang bawat isa, kaya maaari mong ibahagi ang iyong email sa buong simbahan habang mas pribado ang iyong address, halimbawa. Ang mga opsyon ay:
+- **Address Visibility**, **Phone Visibility**, at **Email Visibility** -- bawat isa ay may sariling dropdown, kaya maaari mong ibahagi ang iyong email sa buong simbahan habang mas pribado ang iyong address, halimbawa. Ang mga opsyon ay:
 
-| Antas | Sino ang makakakita nito |
+| Level | Sino ang makakakita nito |
 |---|---|
-| **Everyone** | Nakikita ng sinumang makakatingin sa directory. |
-| **Members Only** | Nakikita ng iba pang naka-sign in na miyembro ng simbahan. |
-| **My Groups Only** | Nakikita lamang ng mga miyembro ng mga group na kinabibilangan mo. |
-| **My Group Leaders and Staff** | Nakikita lamang ng mga staff ng simbahan at ng mga lider ng mga group na kinabibilangan mo. |
-| **Staff Only** | Nakikita lamang ng mga staff ng simbahan. |
+| **Everyone** | Nakikita ng sinumang makakakita ng directory. |
+| **Members Only** | Nakikita ng ibang naka-sign in na miyembro ng simbahan. |
+| **My Groups Only** | Nakikita lamang ng mga miyembro ng mga grupong kabilang ka. |
+| **My Group Leaders and Staff** | Nakikita lamang ng staff ng simbahan at ng mga lider ng mga grupong kabilang ka. |
+| **Staff Only** | Nakikita lamang ng staff ng simbahan (mga taong may Staff membership status o People view permission). |
 
-I-tap ang **Save** upang ilapat ang iyong mga pinili. Nagtatakda ang iyong simbahan ng default para sa bawat isa sa tatlong field na ito -- tingnan ang [Mobile App Settings](/docs/b1-admin/settings/mobile-app) -- ngunit ang anumang piliin mo rito ay nangingibabaw sa default na iyon para sa sarili mong record.
+I-tap ang **Save** para ipatupad ang iyong mga pinili. Nagtatakda ang iyong simbahan ng default para sa bawat isa sa tatlong field na ito -- tingnan ang [Mobile App Settings](/docs/b1-admin/settings/mobile-app) -- ngunit ang anumang piliin mo rito ay mag-o-override sa default na iyon para sa sarili mong record.
 
 :::tip
-Lagi mong nakikita ang sarili mong impormasyon anuman ang mga setting na ito, at laging nakikita rin ito ng mga staff na may permission sa People view.
+Palagi mong nakikita ang sarili mong impormasyon anuman ang mga setting na ito, at palagi rin itong nakikita ng staff na may People view permission.
 :::
 
 ## Mga Kaugnay na Artikulo
 
 - [The Me Page](./me-page.md) -- Ang iyong personal na dashboard
-- [Member Directory](../community/member-directory.md) -- Pag-browse sa ibang miyembro
-- [Approving Profile Changes](/docs/b1-admin/profile/approving-profile-changes) -- Paano sinusuri ng iyong simbahan ang mga isinumiteng pagbabago
+- [Member Directory](../community/member-directory.md) -- Pagba-browse ng iba pang miyembro
+- [Approving Profile Changes](/docs/b1-admin/profile/approving-profile-changes) -- Paano sinusuri ng iyong simbahan ang mga naipasang pagbabago

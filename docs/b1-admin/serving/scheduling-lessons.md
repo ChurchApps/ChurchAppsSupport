@@ -83,6 +83,11 @@ To schedule several lessons from the same series at once, click **Schedule Lesso
 
 For Lessons.church, the list also shows the **Venue** each lesson will use, matched by name to the venue you picked for the starting lesson (if a lesson doesn't have that venue, another is used and marked **substituted**). Providers whose lessons have no venue level, such as Go Curriculum, schedule the lessons directly and the Venue column is hidden.
 
+## Go Curriculum Leader Guides
+
+When you schedule a Go Curriculum lesson, the plan's service order is built from the lesson's **Large Group** leader guide: each part of the guide becomes a section, and each step inside it is listed with its type (such as say, do, play, or note) and its text. Steps that play a video or other media carry that file with them, so it plays in order. (A lesson without a Large Group guide falls back to a plain list of its media files.)
+
+Each series that has small group material also starts with a **Small Group Guides** folder. Open it and pick a lesson to schedule that lesson's **Small Group** guide, named like "Lesson Name - Small Group" -- useful for a separate small group plan type. Small Group guides are mostly discussion steps and usually have no media. Because the folder is listed first, bulk scheduling a series from one of its lessons never picks it up.
 ## Apply a Year Plan
 
 If a curriculum publisher has published a year plan on Lessons.church, you can load the whole sequence onto this plan type in one step:

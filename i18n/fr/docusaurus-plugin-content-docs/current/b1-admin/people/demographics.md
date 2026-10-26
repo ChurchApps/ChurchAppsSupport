@@ -1,59 +1,59 @@
 ---
-title: "Démographie"
+title: "Données démographiques"
 ---
 
-# Démographie
+# Données démographiques
 
 <div class="article-intro">
 
-Le tableau de bord **Démographie** vous donne un aperçu visuel de votre congrégation — qui ils sont, combien ils sont, et comment votre adhésion est distribuée dans les groupes d'âge, les sexes, les statuts matrimoniaux et les campus. Chaque graphique est interactif : cliquez sur n'importe quel segment pour accéder directement à une recherche de personnes filtrée affichant exactement ces personnes.
+Le tableau de bord **Données démographiques** vous offre une vue d'ensemble visuelle de votre assemblée : qui elle compte, combien de personnes la composent et comment vos membres se répartissent par tranche d'âge, genre, situation matrimoniale et campus. Chaque graphique est interactif : cliquez sur un segment pour accéder directement à une recherche de personnes filtrée qui affiche exactement ces personnes.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Les personnes doivent exister dans votre répertoire. Voir [Ajouter des Personnes](./adding-people.md) ou [Importer des Données](./importing-data.md) pour commencer.
-- Pour voir le graphique du Campus, vous devez d'abord configurer les campus dans [Paramètres → Campus](../settings/campuses.md).
+- Des personnes doivent exister dans votre annuaire. Consultez [Ajouter des personnes](./adding-people.md) ou [Importer des données](./importing-data.md) pour commencer.
+- Pour voir le graphique par campus, vous devez d'abord configurer les campus dans [Paramètres → Campus](../settings/campuses.md).
 
 </div>
 
-## Ouverture de Démographie
+## Ouvrir les données démographiques
 
-À partir de la page **Personnes**, cliquez sur **Démographie** dans l'en-tête de la page. La page affiche votre comptage total de personnes en haut, suivi par les graphiques décrits ci-dessous.
+Depuis la page **Personnes**, cliquez sur **Données démographiques** dans l'en-tête de la page. La page affiche en haut le nombre total de personnes, suivi des graphiques décrits ci-dessous.
 
 ## Graphiques
 
-### Distribution d'Âge
+### Répartition par âge
 
-Un graphique en barres groupées montrant combien de personnes se situent dans chaque tranche d'âge (par exemple, 0–9, 10–17, 18–24, et ainsi de suite jusqu'à 65+). Chaque barre est divisée en trois séries — **Femelle**, **Mâle**, et **Non Assigné** — pour que vous puissiez voir la ventilation des sexes dans chaque groupe d'âge en un coup d'œil.
+Un histogramme groupé indiquant le nombre de personnes dans chaque tranche d'âge (par exemple, 0 à 9 ans, 10 à 17 ans, 18 à 24 ans, et ainsi de suite jusqu'à 65 ans et plus). Chaque barre est divisée en trois séries : **Femme**, **Homme** et **Non renseigné**, ce qui permet de voir d'un coup d'œil la répartition par genre dans chaque tranche d'âge.
 
-### Statut d'Adhésion
+### Statut d'adhésion
 
-Un graphique en anneau ventilant votre congrégation par statut d'adhésion (par exemple, Membre, Participant Régulier, Visiteur, et ainsi de suite).
+Un graphique en anneau présentant la répartition de votre assemblée par statut d'adhésion (par exemple, Membre, Participant régulier, Visiteur, etc.).
 
-### Sexe
+### Genre
 
-Un graphique en anneau montrant la proportion de dossiers femelles, mâles et non assignés dans votre répertoire.
+Un graphique en anneau indiquant la proportion de fiches féminines, masculines et non renseignées dans votre annuaire.
 
-### Statut Matrimonial
+### Situation matrimoniale
 
-Un graphique en anneau montrant la ventilation selon les valeurs de statut matrimonial (par exemple, Marié, Célibataire, Veuf).
+Un graphique en anneau présentant la répartition entre les différentes valeurs de situation matrimoniale (par exemple, Marié(e), Célibataire, Veuf/Veuve).
 
 ### Campus
 
-Un graphique en anneau montrant comment les personnes sont distribuées dans les campus de votre église. Ce graphique n'apparaît que si vous avez des campus configurés et au moins une personne assignée à un campus. Les personnes sans campus assigné apparaissent comme **Non Assigné**.
+Un graphique en anneau indiquant la répartition des personnes entre les campus de votre église. Ce graphique n'apparaît que si vous avez configuré des campus et qu'au moins une personne est rattachée à un campus. Les personnes sans campus attribué apparaissent sous la mention **Non renseigné**.
 
-## Forage dans les Données
+## Explorer les données
 
-Cliquez sur n'importe quelle tranche d'un graphique en anneau ou n'importe quel segment de barre sur le graphique d'âge pour naviguer vers la page **Personnes** pré-filtrée pour afficher exactement ces personnes. Utilisez ceci pour construire rapidement une liste de contacts, exécuter une action en masse, ou exporter un segment — par exemple, cliquez sur la tranche **Visiteur** dans le Statut d'Adhésion pour voir tous les visiteurs et ensuite les envoyer à un flux de travail.
+Cliquez sur une part d'un graphique en anneau ou sur un segment de barre du graphique par âge pour accéder à la page **Personnes** préfiltrée, qui n'affiche que ces personnes. Le filtre reste appliqué une fois la page chargée, et le compteur au-dessus de la liste indique le nombre de foyers et de personnes correspondants. Utilisez cette fonction pour créer rapidement une liste de contacts, lancer une action groupée ou exporter un segment. Par exemple, cliquez sur la part **Visiteur** dans le graphique Statut d'adhésion pour afficher tous les visiteurs, puis les envoyer dans un flux de travail.
 
 :::tip
-Après avoir foré dans un résultat filtré, utilisez **Enregistrer en tant que Liste** dans la recherche Personnes pour enregistrer ce filtre pour une utilisation future. Voir [Listes Enregistrées](./lists.md).
+Après avoir affiné les résultats, utilisez **Enregistrer comme liste** dans la recherche de personnes pour sauvegarder ce filtre en vue d'une utilisation ultérieure. Consultez [Listes enregistrées](./lists.md).
 :::
 
-## Articles Connexes
+## Articles connexes
 
-- [Recherche de Personnes](./searching-people.md) — la page Personnes sur laquelle vous atterrissez lors du forage dans un graphique
-- [Listes Enregistrées](./lists.md) — enregistrer un segment démographique en tant que liste réutilisable
-- [Campus](../settings/campuses.md) — configurer les campus pour que le graphique du Campus apparaisse
+- [Rechercher des personnes](./searching-people.md) : la page Personnes sur laquelle vous arrivez lorsque vous explorez un graphique
+- [Listes enregistrées](./lists.md) : enregistrer un segment démographique comme liste réutilisable
+- [Campus](../settings/campuses.md) : configurer les campus pour faire apparaître le graphique par campus

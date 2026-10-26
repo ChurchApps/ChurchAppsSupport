@@ -1,83 +1,85 @@
 ---
-title: "Funções e Permissões"
+title: "Funções e permissões"
 ---
 
-# Funções e Permissões
+# Funções e permissões
 
 <div class="article-intro">
 
-As funções permitem controlar o que cada usuário pode acessar dentro da sua conta ChurchApps. Você pode criar funções personalizadas para a equipe, voluntários e outros membros da equipe, cada uma com seu próprio nível de acesso, para manter seus dados seguros.
+As funções permitem controlar o que cada usuário pode acessar na sua conta do ChurchApps. Você pode criar funções personalizadas para a equipe, os voluntários e outros membros da equipe, cada uma com seu próprio nível de acesso, para manter seus dados seguros.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Você precisa de acesso de Administrador de Domínio ou de uma função com permissão para gerenciar funções
-- Tenha uma lista dos membros da equipe e das áreas a que eles precisam ter acesso
-- Revise as categorias de permissões disponíveis abaixo para planejar as suas funções
+- Você precisa de acesso de Administrador do domínio ou de uma função com permissão para gerenciar funções
+- Tenha uma lista dos membros da equipe e das áreas às quais eles precisam de acesso
+- Revise as categorias de permissão disponíveis abaixo para planejar suas funções
 
 </div>
 
-## Acessando Funções
+## Acessando as funções
 
-1. No B1 Admin, abra o [Menu de atalho](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo) e expanda **Configurações**.
+1. No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo) e expanda **Configurações**.
 2. Clique em **Funções**.
-3. A página de Funções exibe todas as funções definidas atualmente para a sua igreja.
+3. A página Funções exibe todas as funções definidas atualmente para a sua igreja. A coluna **Membros** mostra quantos usuários estão em cada função, e a linha **(Todos)** mostra **Todos os usuários**.
 
-## Entendendo a Página de Funções
+## Entendendo a página Funções
 
-A página de Funções é dividida em dois painéis:
+A página Funções é dividida em dois painéis:
 
-- **Lado esquerdo** -- Mostra a lista de membros atribuídos à função selecionada.
-- **Lado direito** -- Exibe as configurações de permissão que você pode definir para essa função.
+- **Lado esquerdo**: mostra a lista de membros atribuídos à função selecionada.
+- **Lado direito**: exibe as configurações de permissão que você pode definir para essa função.
 
-Clique em qualquer nome de função para ver e gerenciar os seus membros e permissões.
+Clique em qualquer nome de função para visualizar e gerenciar seus membros e permissões.
 
-## Adicionando Usuários a uma Função
+## Adicionando usuários a uma função
 
-1. Selecione a função à qual você quer adicionar membros.
-2. Use o **campo de busca** do lado esquerdo para encontrar a pessoa que você quer adicionar.
-3. Selecione a pessoa nos resultados da busca.
+1. Selecione a função à qual deseja adicionar membros.
+2. Use o **campo de pesquisa** no lado esquerdo para encontrar a pessoa que deseja adicionar.
+3. Selecione a pessoa nos resultados da pesquisa.
 4. Ela será adicionada à função imediatamente.
 
-## Removendo Usuários de uma Função
+## Removendo usuários de uma função
 
-1. Selecione a função que contém o usuário que você quer remover.
-2. Encontre a pessoa na lista de membros do lado esquerdo.
+1. Selecione a função que contém o usuário que deseja remover.
+2. Localize a pessoa na lista de membros, no lado esquerdo.
 3. Clique no **botão remover** ao lado do nome dela.
 
-## Configurando Permissões
+## Configurando permissões
 
-Cada função pode receber acesso a áreas específicas do B1 Admin. No painel **Editar Permissões**, as permissões são agrupadas em seções que você pode expandir, como **Frequência**, **Conteúdo**, **Doações**, **Formulários e Planos**, **Lições**, **Mensagens**, **Pessoas e Grupos** e **Tarefas**. Digite na caixa **Filtrar permissões** para mostrar apenas as permissões correspondentes.
+Cada função pode receber acesso a áreas específicas do B1 Admin. No painel **Editar permissões**, as permissões são agrupadas em seções que você pode expandir, como **Presença**, **Conteúdo**, **Doações**, **Formulários e planos**, **Lições**, **Mensagens**, **Pessoas e grupos** e **Tarefas**. Digite na caixa **Filtrar permissões** para mostrar apenas as permissões que correspondem ao texto.
 
-Marque ou desmarque uma permissão para conceder ou remover o acesso para a função.
+Marque ou desmarque uma permissão para concedê-la ou removê-la da função. O título de cada seção mostra quantas das suas permissões a função possui, como **2 de 5**, e essa contagem é atualizada conforme você marca e desmarca as caixas.
 
-### Permissões de Doações
+### Permissões de doações
 
 A seção **Doações** tem estas permissões:
 
-- **Ver Resumos de Doações** -- ver a seção de Doações, incluindo as páginas de Resumo, Lotes, Fundos, Campanhas e Extratos de Contribuição.
-- **Ver Doações** -- ver doações individuais, como as contribuições dentro de um lote.
-- **Editar Doações** -- controle total: adicionar, editar e excluir doações e lotes, e [fechar e reabrir lotes](../donations/batches.md#closing-and-reopening-a-batch).
-- **Inserir Doações** -- adicionar lotes e inserir, editar ou excluir doações, mas somente em lotes que ainda estejam abertos. Quem tem apenas esta permissão não pode excluir lotes, fechá-los ou reabri-los, nem alterar contribuições recebidas pela oferta online.
-- **Editar Configurações** -- gerenciar as configurações de doações.
+- **Ver resumos de doações**: acesse a seção Doações, incluindo as páginas Resumo, Lotes, Fundos, Campanhas e Extratos de contribuição.
+- **Ver doações**: veja doações individuais, como as ofertas dentro de um lote.
+- **Editar doações**: controle total, incluindo adicionar, editar e excluir doações e lotes, além de [fechar e reabrir lotes](../donations/batches.md#closing-and-reopening-a-batch).
+- **Lançar doações**: adicione lotes e lance, edite ou exclua doações, mas somente em lotes que ainda estejam abertos. Quem tem apenas esta permissão não pode excluir lotes, fechá-los ou reabri-los, nem alterar ofertas que chegaram pela contribuição online.
+- **Editar configurações**: gerencie as configurações de doações.
 
-Quem tem **Inserir Doações**, mas não **Ver Resumos de Doações**, vê apenas a página **Lotes** em **Doações**. Dê a uma função de equipe de contagem as permissões **Inserir Doações** e **Ver Doações**, para que possam abrir um lote e ver as contribuições que lançaram. Veja [Quem Pode Alterar um Lote](../donations/batches.md#who-can-change-a-batch) para mais detalhes.
+Quem tem **Lançar doações**, mas não **Ver resumos de doações**, vê apenas a página **Lotes** em **Doações**. Dê a uma equipe de contagem as permissões **Lançar doações** e **Ver doações**, para que possam abrir um lote e ver as ofertas que lançaram. Consulte [Quem pode alterar um lote](../donations/batches.md#who-can-change-a-batch) para mais detalhes.
 
-### Apenas Nomes de Pessoas
+### Somente nomes de pessoas
 
-A seção **Pessoas e Grupos** inclui **Ver Apenas Nomes de Pessoas**. Use-a para voluntários que precisam pesquisar pessoas pelo nome -- por exemplo, para escolher alguém em uma caixa de busca -- sem acesso ao diretório completo. Somente com essa permissão, a pessoa:
+A seção **Pessoas e grupos** inclui **Ver somente nomes de pessoas**. Use essa permissão para voluntários que precisam pesquisar pessoas pelo nome, por exemplo para escolher alguém em uma caixa de pesquisa, sem acesso ao diretório completo. Com essa permissão isoladamente, a pessoa:
 
-- Pode pesquisar pessoas pelo nome e ver a lista de pessoas adicionadas recentemente, mas vê apenas o nome, a foto e a situação de membro de cada pessoa
+- Pode pesquisar pessoas pelo nome e ver a lista de pessoas cadastradas recentemente, mas vê apenas o nome, a foto e o status de membresia de cada pessoa
 - Não pode pesquisar por e-mail, ver dados de contato nem abrir o diretório de **Pessoas**
 
-O B1 Admin oculta links e botões que exigem permissões que uma função não tem. Por exemplo, a lista **Todos os grupos** só está disponível para pessoas que podem editar grupos, ver membros de grupos ou ver pessoas (as demais são enviadas de volta ao Painel); a configuração de frequência só aparece com **Ver Frequência** ou **Editar Cultos**; o botão **E-mail** de um grupo só aparece para quem tem **Editar Membros do Grupo** (a permissão necessária para enviar e-mails do grupo); imprimir a lista de um grupo exige **Ver Membros do Grupo** ou ser líder desse grupo; e excluir um evento do calendário exige **Editar Conteúdo** (ou retirar a sua própria solicitação pendente).
+Combine **Ver somente nomes de pessoas** com **Ver presença** ou **Editar presença** para voluntários que registram a presença nas classes. O item **Pessoas** do menu deles passa a abrir **Grupos**, onde podem abrir a lista **Todos os grupos** e ver os nomes dos membros e as sessões de cada classe. Com **Editar presença**, também podem [registrar a presença](../attendance/recording-attendance.md) e adicionar visitantes pesquisando seus nomes. Os nomes não são links para registros de pessoas, e grupos confidenciais continuam ocultos, a menos que o voluntário seja membro.
+
+O B1 Admin oculta links e botões que exigem permissões que a função não possui. Por exemplo, a lista **Todos os grupos** só está disponível para quem pode editar grupos, ver membros de grupos ou ver pessoas, ou para quem tem **Ver somente nomes de pessoas** combinado com **Ver presença** ou **Editar presença** (os demais são redirecionados para o Painel). A configuração de presença só aparece com **Ver presença** ou **Editar serviços**. O botão **E-mail** de um grupo só aparece para quem tem **Editar membros do grupo** (a permissão necessária para enviar e-mails ao grupo). Imprimir a lista de um grupo exige **Ver membros do grupo** ou liderar esse grupo. Excluir um evento do calendário exige **Editar conteúdo** (ou cancelar a sua própria solicitação pendente).
 
 :::warning
-Os **Administradores de Domínio** têm acesso total a todas as áreas da sua conta ChurchApps. As permissões deles não podem ser alteradas nem restringidas. Use essa função apenas para os seus administradores de maior confiança.
+Os **Administradores do domínio** têm acesso total a todas as áreas da sua conta do ChurchApps. As permissões deles não podem ser modificadas nem restringidas. Use esta função apenas para os administradores mais confiáveis.
 :::
 
 :::tip
-Crie funções específicas, como "Tesoureiro" apenas com acesso a **Doações**, "Equipe de Contagem" com **Inserir Doações** e **Ver Doações**, ou "Voluntário de Check-in" apenas com acesso a **Frequência**. Isso segue o princípio do menor privilégio e mantém os seus dados seguros. Veja [Segurança de Dados](./data-security.md) para saber mais sobre como a ChurchApps protege as suas informações.
+Crie funções específicas, como "Tesoureiro" com acesso apenas a **Doações**, "Equipe de contagem" com **Lançar doações** e **Ver doações**, ou "Voluntário do check-in" com acesso apenas a **Presença**. Isso segue o princípio do menor privilégio e mantém seus dados seguros. Consulte [Segurança de dados](./data-security.md) para saber mais sobre como os ChurchApps protegem suas informações.
 :::

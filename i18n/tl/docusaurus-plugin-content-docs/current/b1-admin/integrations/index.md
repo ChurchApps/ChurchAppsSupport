@@ -1,68 +1,68 @@
 ---
-title: "Integrations"
+title: "Mga Integrasyon"
 ---
 
-# Integrations
+# Mga Integrasyon
 
 <div class="article-intro">
 
-Ang B1 ay kumonekta sa mga tools na ginagamit na ng iyong team. Konektahan ang Slack o Discord para sa staff notifications, i-automate ang workflows sa Zapier o Make, o mag-export ng data on demand sa Google Sheets — nang hindi nagbabayad para sa isang hiwalay na integration platform at nang hindi inaasikaso ng ChurchApps ang kahit ano pang dagdag. Bawat integration ay tumatakbo sa third party's sariling infrastructure at nagsasalita sa iyong church sa pamamagitan ng B1's webhooks o REST API.
+Kumokonekta ang B1 sa mga tool na ginagamit na ng iyong team. Ikonekta ang Slack o Discord para sa notification ng staff, i-automate ang mga workflow sa Zapier o Make, o mag-export ng datos kapag kailangan sa Google Sheets — nang hindi nagbabayad para sa hiwalay na integration platform at nang hindi kailangang mag-host ng dagdag ng ChurchApps. Tumatakbo ang bawat integration sa imprastraktura ng third party at nakikipag-usap sa iyong simbahan sa pamamagitan ng webhooks o REST API ng B1.
 
 </div>
 
 ## Ano ang Available
 
-| Integration | Ano ang ginagawa | Direction | Effort to set up |
+| Integration | Ano ang ginagawa nito | Direksyon | Pagsisikap sa pag-set up |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | I-post ang readable notifications (new people, donations, sign-ups, …) sa isang Slack channel | B1 → Slack | 2 minutes |
-| **[Discord](./slack-discord)** | Pareho, sa isang Discord channel | B1 → Discord | 2 minutes |
-| **[Zapier](./zapier)** | Gamitin ang B1 events bilang triggers at B1 actions sa kahit na alin sa Zapier's 7,000+ apps | Both | 5–10 min per Zap |
-| **[Make](./make)** | Parehong ideya tulad ng Zapier, sa Make's visual scenario builder | Both | 5–10 min per scenario |
-| **[Google Sheets](./google-sheets)** | I-export ang People / Donations / Groups / Attendance sa isang spreadsheet on demand | B1 → Sheet | 5 minutes |
-| **[Claude](./claude)** | Magtanong sa Anthropic's Claude ng mga katanungan tungkol sa iyong church data, scoped sa iyong permissions — libreng subukan, inirerekomenda | Both | Wala pang 3 minutes |
-| **[ChatGPT](./chatgpt)** | Parehong ideya gamit ang OpenAI's ChatGPT (nangangailangan ng bayad na ChatGPT plan) | Both | 10 minutes |
-| **[Connected services](./services/)** | Mga curated recipes para sa Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Varies | 5–10 min each |
+| **[Slack](./slack-discord)** | Nagpo-post ng madaling basahing notification (mga bagong tao, donasyon, sign-up, …) sa isang Slack channel | B1 → Slack | 2 minuto |
+| **[Discord](./slack-discord)** | Pareho, sa isang Discord channel | B1 → Discord | 2 minuto |
+| **[Zapier](./zapier)** | Gamitin ang mga event ng B1 bilang trigger at ang mga aksyon ng B1 sa alinman sa 7,000+ app ng Zapier | Pareho | 5–10 min bawat Zap |
+| **[Make](./make)** | Parehong ideya sa Zapier, sa visual scenario builder ng Make | Pareho | 5–10 min bawat scenario |
+| **[Google Sheets](./google-sheets)** | Mag-export ng People / Donations / Groups / Attendance sa spreadsheet kapag kailangan | B1 → Sheet | 5 minuto |
+| **[Claude](./claude)** | Magtanong sa Claude ng Anthropic tungkol sa datos ng iyong simbahan, nakabatay sa iyong pahintulot — libreng subukan, inirerekomenda | Pareho | Wala pang 3 minuto |
+| **[ChatGPT](./chatgpt)** | Parehong ideya gamit ang ChatGPT ng OpenAI (kailangan ng bayad na ChatGPT plan) | Pareho | 10 minuto |
+| **[Connected services](./services/)** | Mga piling recipe para sa Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Iba-iba | 5–10 min bawat isa |
 
 ## Paano Pumili
 
-- **Gusto mo lang ng isang notification sa chat?** Gamitin ang **Slack** o **Discord** — walang third-party account, walang Zap na ina-asikaso. Naka-configure nang buo sa loob ng B1Admin.
-- **Gusto mong i-automate ang isang bagay sa mga apps** (hal. "kapag may nagbigay, idagdag sila sa aking Mailchimp list at Slack #donations")? Gamitin ang **Zapier** o **Make**. Ang Zapier ay mas friendly; ang Make ay mas mura sa scale at may mas flexible logic.
-- **Kailangan ng isang one-off data pull o isang scheduled report?** Gamitin ang **Google Sheets** — i-paste ang isang API key sa sidebar ng add-on at mag-click ng Export.
-- **Gusto mong magtanong sa plain English** ("ilang first-time visitors noong nakaraang Linggo?", "i-summarize ang giving ngayong buwan")? Magsimula sa **[Claude](./claude)** — libre itong subukan at nase-set up sa wala pang 3 minuto. Gumagana rin ang **[ChatGPT](./chatgpt)** na may bayad na plan. Kumokonekta ang Claude sa pamamagitan ng pag-sign in gamit ang iyong B1 account; gumagamit ang ChatGPT ng B1 API key.
-- **Nagbubuo ng iyong sariling custom integration?** Wala sa itaas — makipag-usap sa [REST API](/docs/developer/api) direkta gamit ang isang [API key](/docs/developer/api/api-keys), o mag-subscribe sa isang server na kinokontrol mo sa [webhooks](/docs/developer/api/webhooks).
+- **Gusto mo lang ng notification sa chat?** Gamitin ang **Slack** o **Discord** — walang third-party account, walang Zap na kailangang pangalagaan. Kumpletong naka-configure sa loob ng B1Admin.
+- **Gusto mong i-automate ang isang bagay sa iba't ibang app** (hal. "kapag may nagbigay, idagdag siya sa aking Mailchimp list at sa Slack #donations")? Gamitin ang **Zapier** o **Make**. Mas madali ang Zapier; mas mura ang Make kapag malaki na ang gamit at mas flexible ang logic nito.
+- **Kailangan mo ng isang beses na pagkuha ng datos o naka-iskedyul na ulat?** Gamitin ang **Google Sheets** — i-paste ang API key sa sidebar ng add-on at i-click ang Export.
+- **Gusto mong magtanong sa simpleng Ingles** ("ilan ang first-time visitors noong nakaraang Linggo?", "ibuod ang giving ngayong buwan")? Magsimula sa **[Claude](./claude)** — libreng subukan at wala pang 3 minuto ang pag-set up. Gumagana rin ang **[ChatGPT](./chatgpt)** kung mayroon kang bayad na plan. Kumokonekta ang Claude sa pamamagitan ng pag-sign in gamit ang iyong B1 account; gumagamit ang ChatGPT ng B1 API key.
+- **Gumagawa ka ng sarili mong custom integration?** Wala sa mga nasa itaas — direktang makipag-usap sa [REST API](/docs/developer/api) gamit ang [API key](/docs/developer/api/api-keys), o mag-subscribe ng server na kontrolado mo sa [webhooks](/docs/developer/api/webhooks).
 
-## Ano ang Mayroon Sila sa Karaniwang
+## Ang Pagkakapareho ng Lahat
 
-Bawat integration ay nag-authenticate gamit ang isang **B1 API key**, na lilikha sa B1Admin sa ilalim ng **Settings → Developer → API Keys**. Ang key:
+Bawat integration ay nag-a-authenticate gamit ang **B1 API key**, na ginagawa sa B1Admin sa ilalim ng **Settings → Developer → API Keys**. Ang key:
 
-- Ay nakakabit sa isang specific person sa iyong church at ay nag-inherit ng mga permissions ng tao na iyon
-- Ay maaaring mapatupad gamit ang **scopes** — halimbawa ang isang Google Sheets export ay kailangan lamang ng `people:read`, hindi `settings:write`
-- Ay maaaring i-revoke anumang oras, kaagad na naghihintay sa access ng integration nang walang makakaapekto sa iba
+- Nakatali sa isang partikular na tao sa iyong simbahan at namamana ang mga pahintulot ng taong iyon
+- Maaaring paliitin gamit ang **scopes** — halimbawa, ang Google Sheets export ay nangangailangan lamang ng `people:read`, hindi `settings:write`
+- Maaaring bawiin anumang oras, agad na puputol sa access ng integration nang hindi naaapektuhan ang iba
 
-Ang ilang connectors (Zapier, Make) ay nag-register din ng isang [webhook](/docs/developer/api/webhooks) sa iyong ngalan kapag ang Zap o scenario ay naka-on, at tinatanggal ito kapag ikaw ay nag-off ng Zap — hindi mo ini-manage ang webhook URL nang sarili mo.
+May ilang connector (Zapier, Make) na nagrerehistro rin ng [webhook](/docs/developer/api/webhooks) para sa iyo kapag na-on ang Zap o scenario, at inaalis ito kapag na-off ang Zap — hindi mo kailangang pamahalaan nang mano-mano ang webhook URL.
 
 :::tip
-Para sa Zapier at Make upang mag-register ng webhooks nang automatic, ang API key ay kailangan ang **`settings:write`** scope (plus ang resource scopes para sa anumang pinaplano ng integration). Ang read-only key ay gumagana para sa actions at exports ngunit hindi para sa triggers.
+Para awtomatikong makapagrehistro ng webhook ang Zapier at Make, kailangan ng API key ang **`settings:write`** scope (kasama ang mga resource scope para sa anumang ginagalaw ng integration). Gumagana ang read-only na key para sa mga aksyon at export, pero hindi para sa mga trigger.
 :::
 
-## Halaga
+## Gastos
 
-Ang ChurchApps ay libre at open-source. Ang Slack/Discord, ang [`@churchapps/integration-sdk`](https://www.npmjs.com/package/@churchapps/integration-sdk), at ang opisyal na Zapier / Make / Google Sheets connectors ay libre din mula sa aming side. Ang mga third parties ay maaaring mag-charge para sa kanilang sariling mga platforms (Zapier at Make ay parehong may generous free tiers; Slack, Discord, at Google Sheets ay libre para sa layuning ito).
+Libre at open-source ang ChurchApps. Libre rin mula sa aming panig ang Slack/Discord, ang [`@churchapps/integration-sdk`](https://www.npmjs.com/package/@churchapps/integration-sdk), at ang opisyal na Zapier / Make / Google Sheets connectors. Maaaring maningil ang mga third party para sa sarili nilang platform (parehong may malawak na libreng tier ang Zapier at Make; libre ang Slack, Discord, at Google Sheets para sa ganitong gamit).
 
-## Pagbuo ng Iyong Sarili
+## Gumawa ng Sarili Mo
 
-Kung wala sa itaas ang akma, bawat B1 surface ay bukas:
+Kung wala sa nasa itaas ang akma, bukas ang bawat surface ng B1:
 
-- **[REST API](/docs/developer/api)** — tawarang B1 mula sa anumang wika na may `Authorization: Bearer cak_…` header
-- **[Webhooks](/docs/developer/api/webhooks)** — mag-subscribe ng isang public HTTPS endpoint sa isa o higit pang uri ng kaganapan at makatanggap ng signed JSON payloads
-- **[OAuth + Connected Apps](/docs/developer/api/connected-apps)** — kung ikaw ay nagbubuo ng isang SaaS product na ginagamit ng maraming churches
+- **[REST API](/docs/developer/api)** — tumawag sa B1 mula sa anumang wika gamit ang `Authorization: Bearer cak_…` header
+- **[Webhooks](/docs/developer/api/webhooks)** — mag-subscribe ng pampublikong HTTPS endpoint sa isa o higit pang uri ng event at tumanggap ng naka-sign na JSON payload
+- **[OAuth + Connected Apps](/docs/developer/api/connected-apps)** — kung gumagawa ka ng SaaS product na ginagamit ng maraming simbahan
 
 ## Mga Susunod na Hakbang
 
-- [Slack & Discord](./slack-discord) — mag-post ng chat notifications
-- [Zapier](./zapier) — kumonekta sa 7,000+ apps
-- [Make](./make) — visual workflow automation
-- [Google Sheets](./google-sheets) — mag-export sa mga spreadsheets
-- [Claude](./claude) — magtanong sa Anthropic's Claude tungkol sa iyong church data
-- [ChatGPT](./chatgpt) — magtanong sa OpenAI's ChatGPT tungkol sa iyong church data
-- [Connected services](./services/) — per-service recipes (Mailchimp, Donorbox, Clearstream, …)
+- [Slack & Discord](./slack-discord) — mag-post ng notification sa chat
+- [Zapier](./zapier) — kumonekta sa 7,000+ app
+- [Make](./make) — visual na automation ng workflow
+- [Google Sheets](./google-sheets) — mag-export sa spreadsheet
+- [Claude](./claude) — magtanong sa Claude tungkol sa datos ng iyong simbahan
+- [ChatGPT](./chatgpt) — magtanong sa ChatGPT ng OpenAI tungkol sa datos ng iyong simbahan
+- [Connected services](./services/) — mga recipe bawat serbisyo (Mailchimp, Donorbox, Clearstream, …)

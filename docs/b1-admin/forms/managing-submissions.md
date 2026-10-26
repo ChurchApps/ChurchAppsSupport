@@ -30,7 +30,7 @@ You will see a list of all responses received for that form. Each submission sho
 
 Click on any submission to view the full details. You will see all the answers the person provided for each question on the form.
 
-Click the **print icon** next to the submission to print that person's filled-in answers -- useful for a paper file or a signed release you need to keep on hand. The printout shows your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) with your church's name beneath it at the top. This is separate from [printing a blank form](./creating-forms.md#printing-a-blank-form); it prints one person's already-submitted answers, not an empty copy. The same print icon appears wherever a submission is shown, including on a [person's profile](../people/adding-people.md#working-with-forms).
+Click the **print icon** next to the submission to print that person's filled-in answers -- useful for a paper file or a signed release you need to keep on hand. The printout shows your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) centered at the top with your church's name beneath it. Printouts always use dark text on a white page, even if you use B1 Admin in dark mode. This is separate from [printing a blank form](./creating-forms.md#printing-a-blank-form); it prints one person's already-submitted answers, not an empty copy. The same print icon appears wherever a submission is shown, including on a [person's profile](../people/adding-people.md#working-with-forms).
 
 ## Changing the Person on a Submission
 
@@ -71,6 +71,10 @@ The data collected through forms can help you:
 Form members with **Admin** or **View Only** roles can access the **Form Submissions** tab. Make sure the right people on your team have access to the forms they need by managing roles in the **Form Members** tab.
 :::
 
+:::info
+If a Stand Alone form is [linked to a group](./creating-forms.md#linking-a-form-to-a-group), that group's leaders can read and print its submissions from the group's page on B1.church, without being form members. Leaders can also read the answers to registration questions for their group's events there. See [Group Details](../../b1-church/groups/group-details.md#linked-forms).
+:::
+
 :::tip
 If a **Stand Alone** form is set to create a person record, any submissions matched to an existing person also show up in the **Forms** section of that person's page in People — not just People-type forms.
 :::
@@ -79,4 +83,4 @@ If a **Stand Alone** form is set to create a person record, any submissions matc
 
 - Learn how to build and customize forms in [Creating Forms](./creating-forms.md)
 - Add people from form submissions to your [people directory](../people/adding-people.md) for ongoing follow-up
-- [Automatically add submitters to a group](./creating-forms.md#automatically-adding-submitters-to-a-group) so a stand-alone sign-up form builds its own roster
+- [Link a form to a group](./creating-forms.md#linking-a-form-to-a-group) so its leaders can read the answers, or [automatically add submitters to the group](./creating-forms.md#automatically-adding-submitters-to-a-group) so a stand-alone sign-up form builds its own roster

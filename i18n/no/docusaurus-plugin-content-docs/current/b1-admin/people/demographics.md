@@ -6,54 +6,54 @@ title: "Demografi"
 
 <div class="article-intro">
 
-**Demografi**-dashbordet gir deg et visuelt øyeblikksbilde av menigheten din — hvem de er, hvor mange de er, og hvordan medlemskapet ditt er fordelt på tvers av aldersgrupper, kjønn, sivilstatus og campuser. Hvert diagram er interaktivt: klikk en segment for å hoppe direkte til en filtrert Person-søk som viser nøyaktig de menneskene.
+**Demografi**-dashbordet gir deg et visuelt øyeblikksbilde av menigheten din — hvem de er, hvor mange de er, og hvordan medlemmene fordeler seg på aldersgrupper, kjønn, sivilstatus og campus. Hvert diagram er interaktivt: klikk på et hvilket som helst segment for å hoppe rett til et filtrert personsøk som viser nøyaktig de personene.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du begynner</h4>
 
-- Folk må finnes i katalogen din. Se [Legge til mennesker](./adding-people.md) eller [Importere data](./importing-data.md) for å komme i gang.
-- For å se Campus-diagrammet trenger du først campuser konfigurert i [Innstillinger → Campuser](../settings/campuses.md).
+- Personer må finnes i katalogen din. Se [Legge til personer](./adding-people.md) eller [Importere data](./importing-data.md) for å komme i gang.
+- For å se campus-diagrammet må du først ha campus satt opp under [Settings → Campuses](../settings/campuses.md).
 
 </div>
 
-## Åpning av demografi
+## Åpne Demografi
 
-Fra **Personer**-siden klikker du på **Demografi** i sidetoppen. Siden viser ditt totale person-telling øverst, etterfulgt av diagrammene beskrevet nedenfor.
+Klikk på **Demographics** i sidehodet på **People**-siden. Siden viser det totale antallet personer øverst, etterfulgt av diagrammene som er beskrevet nedenfor.
 
 ## Diagrammer
 
 ### Aldersfordeling
 
-Et gruppert stolpediagram som viser hvor mange mennesker som faller inn i hver aldersgruppe (for eksempel 0–9, 10–17, 18–24, og så videre gjennom 65+). Hvert stolpe er delt inn i tre serier — **Kvinne**, **Mann**, og **Uassignert** — slik at du kan se kjønnfordelingen innenfor hver aldersgruppe på en gang.
+Et gruppert stolpediagram som viser hvor mange personer som faller inn i hver aldersgruppe (for eksempel 0–9, 10–17, 18–24, og så videre opp til 65+). Hver stolpe er delt i tre serier — **Female**, **Male** og **Unassigned** — slik at du ser kjønnsfordelingen innen hver aldersgruppe med et blikk.
 
-### Medlemskaps-status
+### Medlemsstatus
 
-Et smultringdiagram som bryter ned menigheten din etter medlemskaps-status (for eksempel medlem, vanlig deltaker, besøkende, og så videre).
+Et ringdiagram som deler opp menigheten din etter medlemsstatus (for eksempel Member, Regular Attender, Visitor og så videre).
 
 ### Kjønn
 
-Et smultringdiagram som viser andelen av kvinne-, mann- og uassignert-post i katalogen din.
+Et ringdiagram som viser andelen kvinnelige, mannlige og ikke-tildelte poster i katalogen din.
 
 ### Sivilstatus
 
-Et smultringdiagram som viser fordelingen på tvers av sivilstatus-verdier (for eksempel gift, enslig, enke).
+Et ringdiagram som viser fordelingen på sivilstatusverdier (for eksempel Married, Single, Widowed).
 
 ### Campus
 
-Et smultringdiagram som viser hvordan mennesker er fordelt på tvers av kirkens campuser. Dette diagrammet vises bare hvis du har campuser konfigurert og minst en person tildelt til en campus. Mennesker uten campus tildelt vises som **Uassignert**.
+Et ringdiagram som viser hvordan personer fordeler seg på menighetens campus. Dette diagrammet vises bare hvis du har campus konfigurert og minst én person tilordnet et campus. Personer uten tildelt campus vises som **Unassigned**.
 
-## Drilling inn i dataene
+## Dykke ned i dataene
 
-Klikk en segment av et smultringdiagram eller et stangssegment på aldersdiagrammet for å navigere til **People**-siden forhåndsfiltrert for å vise nøyaktig de menneskene. Bruk dette for raskt å bygge en kontaktliste, kjøre en bulk-handling, eller eksportere et segment — for eksempel klikk **Besøkende**-segmentet i Medlemskaps-status for å se alle besøkende og deretter sende dem til en arbeidsflyt.
+Klikk på et hvilket som helst stykke av et ringdiagram eller et stolpesegment i aldersdiagrammet for å gå til **People**-siden, forhåndsfiltrert til å vise nøyaktig disse personene. Filteret forblir aktivt når siden er ferdig lastet, og antallet over listen viser hvor mange husstander og personer som traff. Bruk dette til raskt å lage en kontaktliste, kjøre en masseoperasjon eller eksportere et segment — for eksempel kan du klikke på **Visitor**-stykket i Medlemsstatus for å se alle besøkende og deretter sende dem til en arbeidsflyt.
 
 :::tip
-Etter å ha drilled inn i et filtrert resultat, bruk **Lagre som liste** i People-søk for å lagre det filteret for fremtidig bruk. Se [Lagrede lister](./lists.md).
+Etter at du har dykket ned i et filtrert resultat, bruk **Save as List** i personsøket for å lagre filteret til senere bruk. Se [Lagrede lister](./lists.md).
 :::
 
 ## Relaterte artikler
 
-- [Søk etter mennesker](./searching-people.md) — People-siden du lander på når du driller inn i et diagram
+- [Søke etter personer](./searching-people.md) — People-siden du havner på når du dykker ned fra et diagram
 - [Lagrede lister](./lists.md) — lagre et demografisk segment som en gjenbrukbar liste
-- [Campuser](../settings/campuses.md) — konfigurer campuser slik at Campus-diagrammet vises
+- [Campus](../settings/campuses.md) — konfigurer campus slik at campus-diagrammet vises

@@ -1,34 +1,34 @@
 ---
-title: "Points de terminaison Content"
+title: "Points de terminaison de contenu"
 ---
 
-# Points de terminaison Content {#content-endpoints}
+# Points de terminaison de contenu
 
 <div class="article-intro">
 
-Le module Content gère les pages du site web, les sections, les éléments, les blocs, les articles de blog, les redirections, les sermons, les listes de lecture, les services de diffusion, les événements, les calendriers organisés, les fichiers, les galeries, les traductions de la Bible et les recherches de versets, les chants, les arrangements, les styles globaux, les photos d'archive et les paramètres. C'est le plus grand module de l'API, et il alimente le CMS, les fonctionnalités de diffusion multimédia, la planification du culte et les fonctionnalités bibliques de toutes les applications ChurchApps.
+Le module Contenu gère les pages de site web, les sections, les éléments, les blocs, les articles de blog, les redirections, les sermons, les listes de lecture, les services de diffusion en continu, les événements, les calendriers sélectionnés, les fichiers, les galeries, les traductions de la Bible et les recherches de versets, les chansons, les arrangements, les styles globaux, les photos d'archive et les paramètres. C'est le plus grand module de l'API. Il alimente le CMS, les fonctions multimédias et de diffusion, la planification du culte et les fonctionnalités bibliques de toutes les applications ChurchApps.
 
 </div>
 
 **Chemin de base :** `/content`
 
-## Pages {#pages}
+## Pages
 
 Chemin de base : `/content/pages`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/:churchId/tree?url=&id=` | Public | — | Charge l'arborescence complète d'une page (sections, éléments, blocs) par URL ou par ID. Supprime les ID internes lorsque la page est demandée par URL. Les requêtes par URL respectent `pages.visibility` : une page restreinte renvoie `{ restricted: true, visibility }`, sauf si le JWT (facultatif) satisfait la condition |
-| GET | `/public/:churchId` | Public | — | Liste les pages publiques (`url`, `title`, `metaDescription`) ; seulement `visibility = everyone` |
-| GET | `/:id` | JWT | — | Obtient une page par son ID |
-| GET | `/` | JWT | — | Liste toutes les pages de l'église |
-| POST | `/duplicate/:id` | JWT | Content.Edit | Duplique une page avec toutes ses sections et ses éléments |
-| POST | `/temp/ai` | JWT | Content.Edit | Enregistre une page générée par IA (page, sections et éléments en un seul appel) |
-| POST | `/importTree` | JWT | Content.Edit | Crée une page à partir d'une arborescence imbriquée (`title`, `url`, `sections[].elements[]…`). Insère toujours sous l'église de l'appelant ; les ID présents dans le corps sont ignorés. Les lignes doivent inclure leurs enfants `column`. Maximum 30 sections / 500 éléments |
-| POST | `/` | JWT | Content.Edit | Crée ou met à jour des pages (par lot) |
-| DELETE | `/:id` | JWT | Content.Edit | Supprime une page |
+| GET | `/:churchId/tree?url=&id=` | Public | — | Charger l'arborescence complète de la page (sections, éléments, blocs) par URL ou par ID. Supprime les ID internes lorsque la page est récupérée par URL. Les récupérations par URL appliquent `pages.visibility` : une page restreinte renvoie `{ restricted: true, visibility }`, sauf si le JWT (facultatif) satisfait la condition |
+| GET | `/public/:churchId` | Public | — | Lister les pages publiques (`url`, `title`, `metaDescription`) ; uniquement `visibility = everyone` |
+| GET | `/:id` | JWT | — | Obtenir une page par son ID |
+| GET | `/` | JWT | — | Lister toutes les pages de l'église |
+| POST | `/duplicate/:id` | JWT | Content.Edit | Dupliquer une page avec toutes ses sections et tous ses éléments |
+| POST | `/temp/ai` | JWT | Content.Edit | Enregistrer une page générée par l'IA (page, sections et éléments en un seul appel) |
+| POST | `/importTree` | JWT | Content.Edit | Créer une page à partir d'une arborescence imbriquée (`title`, `url`, `sections[].elements[]…`). Insère toujours sous l'église de l'appelant ; les ID du corps sont ignorés. Les lignes doivent inclure leurs enfants `column`. Maximum 30 sections / 500 éléments |
+| POST | `/` | JWT | Content.Edit | Créer ou mettre à jour des pages (par lot) |
+| DELETE | `/:id` | JWT | Content.Edit | Supprimer une page |
 
-### Exemple : charger l'arborescence d'une page {#example-load-page-tree}
+### Exemple : charger l'arborescence d'une page
 
 ```
 GET /content/pages/abc-church-id/tree?url=/about
@@ -50,139 +50,139 @@ GET /content/pages/abc-church-id/tree?url=/about
 }
 ```
 
-## Sections {#sections}
+## Sections
 
 Chemin de base : `/content/sections`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Obtient une section par son ID |
-| POST | `/duplicate/:id?convertToBlock=` | JWT | Content.Edit | Duplique une section ou la convertit en bloc réutilisable |
-| POST | `/` | JWT | Content.Edit | Crée ou met à jour des sections (par lot). Met à jour automatiquement l'ordre de tri |
-| DELETE | `/:id` | JWT | Content.Edit | Supprime une section (met à jour automatiquement l'ordre de tri) |
+| GET | `/:id` | JWT | — | Obtenir une section par son ID |
+| POST | `/duplicate/:id?convertToBlock=` | JWT | Content.Edit | Dupliquer une section ou la convertir en bloc réutilisable |
+| POST | `/` | JWT | Content.Edit | Créer ou mettre à jour des sections (par lot). Met à jour automatiquement l'ordre de tri |
+| DELETE | `/:id` | JWT | Content.Edit | Supprimer une section (met à jour automatiquement l'ordre de tri) |
 
-## Éléments {#elements}
+## Éléments
 
 Chemin de base : `/content/elements`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Obtient un élément par son ID |
-| POST | `/duplicate/:id` | JWT | Content.Edit | Duplique un élément avec tous ses enfants |
-| POST | `/` | JWT | Content.Edit | Crée ou met à jour des éléments (par lot). Gère automatiquement les colonnes de ligne et les diapositives de carrousel |
-| DELETE | `/:id` | JWT | Content.Edit | Supprime un élément |
+| GET | `/:id` | JWT | — | Obtenir un élément par son ID |
+| POST | `/duplicate/:id` | JWT | Content.Edit | Dupliquer un élément avec tous ses enfants |
+| POST | `/` | JWT | Content.Edit | Créer ou mettre à jour des éléments (par lot). Gère automatiquement les colonnes de ligne et les diapositives du carrousel |
+| DELETE | `/:id` | JWT | Content.Edit | Supprimer un élément |
 
-## Blocs {#blocks}
+## Blocs
 
 Chemin de base : `/content/blocks`
 
-Hérite du CRUD standard (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` de la classe de base, avec la permission Content.Edit pour les écritures).
+Hérite du CRUD standard (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` depuis la classe de base, avec l'autorisation Content.Edit pour les écritures).
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Obtient un bloc par son ID |
-| GET | `/` | JWT | — | Liste tous les blocs |
-| GET | `/:churchId/tree/:id` | Public | — | Charge l'arborescence complète d'un bloc avec ses sections et ses éléments |
-| GET | `/blockType/:blockType` | JWT | — | Charge les blocs par type (par ex. footerBlock, elementBlock) |
-| GET | `/public/footer/:churchId` | Public | — | Charge l'arborescence du bloc de pied de page d'une église |
-| POST | `/` | JWT | Content.Edit | Crée ou met à jour des blocs |
-| DELETE | `/:id` | JWT | Content.Edit | Supprime un bloc |
+| GET | `/:id` | JWT | — | Obtenir un bloc par son ID |
+| GET | `/` | JWT | — | Lister tous les blocs |
+| GET | `/:churchId/tree/:id` | Public | — | Charger l'arborescence complète du bloc avec sections et éléments |
+| GET | `/blockType/:blockType` | JWT | — | Charger les blocs par type (par ex. footerBlock, elementBlock) |
+| GET | `/public/footer/:churchId` | Public | — | Charger l'arborescence du bloc de pied de page d'une église |
+| POST | `/` | JWT | Content.Edit | Créer ou mettre à jour des blocs |
+| DELETE | `/:id` | JWT | Content.Edit | Supprimer un bloc |
 
-## Liens {#links}
+## Liens
 
 Chemin de base : `/content/links`
 
-Hérite du CRUD standard (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` de la classe de base, avec la permission Content.Edit pour les écritures).
+Hérite du CRUD standard (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` depuis la classe de base, avec l'autorisation Content.Edit pour les écritures).
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Obtient un lien par son ID |
-| GET | `/` | JWT | — | Liste tous les liens. Filtre facultatif `?category=`. Tri automatique après l'enregistrement |
-| GET | `/church/:churchId/filtered?category=` | JWT | — | Charge les liens filtrés par visibilité (everyone, visitors, members, staff, groups) |
-| GET | `/church/:churchId?category=` | Public | — | Charge les liens d'une église par catégorie (public) |
-| POST | `/` | JWT | Content.Edit | Crée ou met à jour des liens (par lot). Tri automatique par catégorie |
-| DELETE | `/:id` | JWT | Content.Edit | Supprime un lien |
+| GET | `/:id` | JWT | — | Obtenir un lien par son ID |
+| GET | `/` | JWT | — | Lister tous les liens. Filtre facultatif `?category=`. Tri automatique après l'enregistrement |
+| GET | `/church/:churchId/filtered?category=` | JWT | — | Charger les liens filtrés par visibilité (everyone, visitors, members, staff, groups) |
+| GET | `/church/:churchId?category=` | Public | — | Charger les liens d'une église par catégorie (public) |
+| POST | `/` | JWT | Content.Edit | Créer ou mettre à jour des liens (par lot). Tri automatique par catégorie |
+| DELETE | `/:id` | JWT | Content.Edit | Supprimer un lien |
 
-## Styles globaux {#global-styles}
+## Styles globaux
 
 Chemin de base : `/content/globalStyles`
 
-Hérite du CRUD standard (POST `/`, DELETE `/:id` de la classe de base, avec la permission Content.Edit pour les écritures).
+Hérite du CRUD standard (POST `/`, DELETE `/:id` depuis la classe de base, avec l'autorisation Content.Edit pour les écritures).
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/church/:churchId` | Public | — | Charge les styles globaux d'une église (renvoie les valeurs par défaut si aucun n'est défini) |
-| GET | `/` | JWT | — | Charge les styles globaux de l'église authentifiée |
-| POST | `/` | JWT | Content.Edit | Crée ou met à jour les styles globaux |
-| DELETE | `/:id` | JWT | Content.Edit | Supprime les styles globaux |
+| GET | `/church/:churchId` | Public | — | Charger les styles globaux d'une église (renvoie les valeurs par défaut si aucun n'est défini) |
+| GET | `/` | JWT | — | Charger les styles globaux de l'église authentifiée |
+| POST | `/` | JWT | Content.Edit | Créer ou mettre à jour les styles globaux |
+| DELETE | `/:id` | JWT | Content.Edit | Supprimer les styles globaux |
 
-## Historique des pages {#page-history}
+## Historique des pages
 
 Chemin de base : `/content/pageHistory`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/page/:pageId` | JWT | Content.Edit | Liste les entrées d'historique d'une page |
-| GET | `/block/:blockId` | JWT | Content.Edit | Liste les entrées d'historique d'un bloc |
-| GET | `/:id` | JWT | Content.Edit | Obtient une entrée d'historique par son ID |
-| POST | `/` | JWT | Content.Edit | Enregistre un instantané de page ou de bloc. Supprime périodiquement les entrées de plus de 30 jours |
-| POST | `/restore/:id` | JWT | Content.Edit | Restaure une page ou un bloc à partir d'un instantané de l'historique (supprime le contenu actuel et le recrée à partir de l'instantané) |
-| POST | `/restoreSnapshot` | JWT | Content.Edit | Restaure à partir d'un objet d'instantané intégré. Corps : `{ pageId, blockId, snapshot }` |
+| GET | `/page/:pageId` | JWT | Content.Edit | Lister les entrées d'historique d'une page |
+| GET | `/block/:blockId` | JWT | Content.Edit | Lister les entrées d'historique d'un bloc |
+| GET | `/:id` | JWT | Content.Edit | Obtenir une entrée d'historique par son ID |
+| POST | `/` | JWT | Content.Edit | Enregistrer un instantané de page ou de bloc. Nettoie périodiquement les entrées de plus de 30 jours |
+| POST | `/restore/:id` | JWT | Content.Edit | Restaurer une page ou un bloc à partir d'un instantané de l'historique (supprime le contenu actuel et le recrée à partir de l'instantané) |
+| POST | `/restoreSnapshot` | JWT | Content.Edit | Restaurer à partir d'un objet d'instantané intégré. Corps : `{ pageId, blockId, snapshot }` |
 
-## Articles (blog) {#posts-blog}
+## Articles (blog)
 
 Chemin de base : `/content/posts`
 
-Les articles de blog sont des lignes autonomes : `title`, `slug` (unique par église), `excerpt`, `content` (corps en markdown), `authorId`, `photoUrl`, `publishDate`, `category` et `tags`. Un article est publié dès que `publishDate` est définie et antérieure à la date actuelle. Les points de lecture ajoutent à chaque article un `authorName` résolu à partir de `authorId`. Voir [Architecture du créateur de site web](../../architecture/website-builder#blog).
+Les articles de blog sont des lignes autonomes : `title`, `slug` (unique par église), `excerpt`, `content` (corps en markdown), `authorId`, `photoUrl`, `publishDate`, `category` et `tags`. Un article est publié dès que `publishDate` est définie et se situe dans le passé. Les endpoints de lecture enrichissent chaque article avec `authorName`, résolu à partir de `authorId`. Voir [Architecture du générateur de site web](../../architecture/website-builder#blog).
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/public/:churchId?category=&tag=&page=&pageSize=` | Public | — | Liste les articles publiés, paginés (maximum 50 par page) |
-| GET | `/public/:churchId/categories` | Public | — | Catégories distinctes parmi les articles publiés |
-| GET | `/public/:churchId/slug/:slug` | Public | — | Obtient un article publié par son slug |
+| GET | `/public/:churchId?category=&tag=&page=&pageSize=` | Public | — | Lister les articles publiés, avec pagination (50 au maximum par page) |
+| GET | `/public/:churchId/categories` | Public | — | Catégories distinctes des articles publiés |
+| GET | `/public/:churchId/slug/:slug` | Public | — | Obtenir un article publié par son slug |
 | GET | `/rss/:churchId?siteUrl=` | Public | — | Flux RSS 2.0 des articles publiés (liens construits sous la forme `{siteUrl}/blog/{slug}`) |
-| GET | `/:id` | JWT | — | Obtient un article par son ID |
-| GET | `/` | JWT | — | Liste tous les articles de l'église |
-| POST | `/` | JWT | Content.Edit | Crée ou met à jour des articles (par lot) |
-| DELETE | `/:id` | JWT | Content.Edit | Supprime un article |
+| GET | `/:id` | JWT | — | Obtenir un article par son ID |
+| GET | `/` | JWT | — | Lister tous les articles de l'église |
+| POST | `/` | JWT | Content.Edit | Créer ou mettre à jour des articles (par lot) |
+| DELETE | `/:id` | JWT | Content.Edit | Supprimer un article |
 
-## Redirections {#redirects}
+## Redirections
 
 Chemin de base : `/content/redirects`
 
-Redirections d'URL par église (`fromPath` → `toPath`), limitées à 200 par église. Les chemins sont normalisés (en minuscules, avec une barre oblique initiale et sans barre oblique finale), et `fromPath` est unique par église. B1App résout ces redirections lorsqu'une page introuvable (404) serait affichée et émet une réponse HTTP 308.
+Redirections d'URL par église (`fromPath` → `toPath`), limitées à 200 par église. Les chemins sont normalisés (en minuscules, avec une barre oblique initiale et sans barre oblique finale) et `fromPath` est unique par église. B1App résout ces redirections lorsqu'une réponse 404 est sur le point d'être renvoyée et émet un HTTP 308.
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/public/:churchId?path=` | Public | — | Résout un chemin (ou liste toutes les redirections si `path` est omis) |
-| GET | `/:id` | JWT | — | Obtient une redirection par son ID |
-| GET | `/` | JWT | — | Liste toutes les redirections de l'église |
-| POST | `/` | JWT | Content.Edit | Crée ou met à jour des redirections. Rejette `fromPath = toPath` et applique la limite de 200 lignes |
-| DELETE | `/:id` | JWT | Content.Edit | Supprime une redirection |
+| GET | `/public/:churchId?path=` | Public | — | Résoudre un chemin (ou lister toutes les redirections si `path` est omis) |
+| GET | `/:id` | JWT | — | Obtenir une redirection par son ID |
+| GET | `/` | JWT | — | Lister toutes les redirections de l'église |
+| POST | `/` | JWT | Content.Edit | Créer ou mettre à jour des redirections. Rejette `fromPath = toPath` et applique la limite de 200 lignes |
+| DELETE | `/:id` | JWT | Content.Edit | Supprimer une redirection |
 
-## Sermons {#sermons}
+## Sermons
 
 Chemin de base : `/content/sermons`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/public/freeshowSample` | JWT | — | Obtient un exemple de structure de liste de lecture FreeShow |
-| GET | `/public/tvWrapper/:churchId` | JWT | — | Obtient l'enveloppe de l'application TV avec les sources sermon, leçon et FreeShow |
-| GET | `/public/tvFeed/:churchId/:sermonId` | Public | — | Obtient un seul sermon sous forme de liste de lecture de flux TV |
-| GET | `/public/tvFeed/:churchId` | Public | — | Obtient toutes les listes de lecture ou tous les sermons publics sous forme de flux TV |
-| GET | `/public/:churchId` | Public | — | Liste tous les sermons publics d'une église |
-| GET | `/timeline?sermonIds=` | JWT | — | Charge les données de chronologie des sermons |
-| GET | `/lookup?videoType=&videoData=` | Public | — | Recherche les métadonnées d'un sermon sur YouTube ou Vimeo |
-| GET | `/socialSuggestions?youtubeVideoId=` | JWT | — | Génère des suggestions de publications pour les réseaux sociaux par IA à partir des sous-titres d'un sermon |
-| GET | `/outline?url=&title=&author=` | JWT | — | Génère un plan de leçon par IA à partir d'une URL |
-| GET | `/youtubeImport/:channelId` | JWT | — | Importe des vidéos d'une chaîne YouTube |
-| GET | `/vimeoImport/:channelId` | JWT | — | Importe des vidéos d'une chaîne Vimeo |
-| GET | `/:id` | JWT | — | Obtient un sermon par son ID |
-| GET | `/` | JWT | — | Liste tous les sermons |
-| POST | `/` | JWT | StreamingServices.Edit | Crée ou met à jour des sermons (par lot, accepte le téléversement de vignettes en base64) |
-| DELETE | `/:id` | JWT | StreamingServices.Edit | Supprime un sermon |
+| GET | `/public/freeshowSample` | JWT | — | Obtenir un exemple de structure de liste de lecture FreeShow |
+| GET | `/public/tvWrapper/:churchId` | JWT | — | Obtenir l'enveloppe de l'application TV avec les sources sermon, leçon et FreeShow |
+| GET | `/public/tvFeed/:churchId/:sermonId` | Public | — | Obtenir un sermon unique sous forme de liste de lecture de flux TV |
+| GET | `/public/tvFeed/:churchId` | Public | — | Obtenir toutes les listes de lecture ou tous les sermons publics sous forme de flux TV |
+| GET | `/public/:churchId` | Public | — | Lister tous les sermons publics d'une église |
+| GET | `/timeline?sermonIds=` | JWT | — | Charger les données de chronologie des sermons |
+| GET | `/lookup?videoType=&videoData=` | Public | — | Rechercher les métadonnées d'un sermon sur YouTube ou Vimeo |
+| GET | `/socialSuggestions?youtubeVideoId=` | JWT | — | Générer des suggestions de publications pour les réseaux sociaux par IA à partir des sous-titres du sermon |
+| GET | `/outline?url=&title=&author=` | JWT | — | Générer un plan de leçon par IA à partir d'une URL |
+| GET | `/youtubeImport/:channelId` | JWT | — | Importer des vidéos d'une chaîne YouTube. Les entités HTML que l'API de recherche YouTube place dans les titres et les descriptions (comme `&amp;` et `&#39;`) sont décodées |
+| GET | `/vimeoImport/:channelId` | JWT | — | Importer des vidéos d'une chaîne Vimeo |
+| GET | `/:id` | JWT | — | Obtenir un sermon par son ID |
+| GET | `/` | JWT | — | Lister tous les sermons |
+| POST | `/` | JWT | StreamingServices.Edit | Créer ou mettre à jour des sermons. Accepte un tableau ou un seul objet sermon (renvoie toujours un tableau) ; un corps vide renvoie 400. Prend en charge le téléversement de vignette en base64 |
+| DELETE | `/:id` | JWT | StreamingServices.Edit | Supprimer un sermon |
 
-### Exemple : rechercher un sermon YouTube {#example-look-up-a-youtube-sermon}
+### Exemple : rechercher un sermon YouTube
 
 ```
 GET /content/sermons/lookup?videoType=youtube&videoData=dQw4w9WgXcQ
@@ -198,132 +198,132 @@ GET /content/sermons/lookup?videoType=youtube&videoData=dQw4w9WgXcQ
 }
 ```
 
-## Listes de lecture {#playlists}
+## Listes de lecture
 
 Chemin de base : `/content/playlists`
 
-Hérite du CRUD standard (GET `/:id`, GET `/`, DELETE `/:id` de la classe de base, avec la permission StreamingServices.Edit pour les écritures).
+Hérite du CRUD standard (GET `/:id`, GET `/`, DELETE `/:id` depuis la classe de base, avec l'autorisation StreamingServices.Edit pour les écritures).
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Obtient une liste de lecture par son ID |
-| GET | `/` | JWT | — | Liste toutes les listes de lecture |
-| GET | `/public/:churchId` | Public | — | Liste toutes les listes de lecture publiques d'une église |
-| POST | `/` | JWT | StreamingServices.Edit | Crée ou met à jour des listes de lecture (par lot, accepte le téléversement de vignettes en base64) |
-| DELETE | `/:id` | JWT | StreamingServices.Edit | Supprime une liste de lecture |
+| GET | `/:id` | JWT | — | Obtenir une liste de lecture par son ID |
+| GET | `/` | JWT | — | Lister toutes les listes de lecture |
+| GET | `/public/:churchId` | Public | — | Lister toutes les listes de lecture publiques d'une église |
+| POST | `/` | JWT | StreamingServices.Edit | Créer ou mettre à jour des listes de lecture (par lot, prend en charge le téléversement de vignette en base64) |
+| DELETE | `/:id` | JWT | StreamingServices.Edit | Supprimer une liste de lecture |
 
-## Services de diffusion {#streaming-services}
+## Services de diffusion en continu
 
 Chemin de base : `/content/streamingServices`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/:id/hostChat` | JWT | Chat.Host | Obtient l'ID chiffré de la salle de discussion de l'animateur pour un service |
-| GET | `/` | JWT | — | Liste tous les services de diffusion. Supprime automatiquement les services expirés non récurrents et fait avancer les services récurrents |
-| POST | `/` | JWT | StreamingServices.Edit | Crée ou met à jour des services de diffusion (par lot) |
-| DELETE | `/:id` | JWT | StreamingServices.Edit | Supprime un service de diffusion (efface aussi les adresses IP bloquées) |
+| GET | `/:id/hostChat` | JWT | Chat.Host | Obtenir l'ID chiffré du salon de chat de l'animateur pour un service |
+| GET | `/` | JWT | — | Lister tous les services de diffusion en continu. Nettoie automatiquement les services non récurrents expirés et fait avancer les services récurrents |
+| POST | `/` | JWT | StreamingServices.Edit | Créer ou mettre à jour des services de diffusion en continu (par lot) |
+| DELETE | `/:id` | JWT | StreamingServices.Edit | Supprimer un service de diffusion en continu (efface aussi les adresses IP bloquées) |
 
-## Événements {#events}
+## Événements
 
 Chemin de base : `/content/events`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/timeline/group/:groupId?eventIds=` | JWT | — | Charge les événements de chronologie d'un groupe (inclut les dates d'exception, afin que les occurrences supprimées puissent être ignorées) |
-| GET | `/timeline?eventIds=` | JWT | — | Charge les événements de chronologie des groupes de l'utilisateur actuel (inclut les dates d'exception) |
-| GET | `/subscribe?churchId=&groupId=&curatedCalendarId=` | Public | — | S'abonne aux événements sous forme de flux de calendrier ICS |
-| GET | `/group/:groupId` | JWT | — | Obtient les événements d'un groupe (inclut les dates d'exception) |
-| GET | `/public/group/:churchId/:groupId` | Public | — | Obtient les événements publics d'un groupe |
-| GET | `/public/:churchId/:id` | Public | — | Obtient un événement pour sa page publique, avec `roomNames` (salles issues des réservations non rejetées). Renvoie `null` pour les événements en attente ou rejetés, et pour les événements privés qui n'acceptent pas d'inscriptions |
-| GET | `/public/:churchId/:id/ical` | Public | — | Télécharge cet événement unique sous forme de fichier `.ics` (`text/calendar`, dates d'exception appliquées). Renvoie `404` lorsque l'événement est masqué selon les mêmes règles |
-| GET | `/:id` | JWT | — | Obtient un événement par son ID |
-| POST | `/` | JWT | — | Crée ou met à jour des événements (par lot) |
-| DELETE | `/:id` | JWT | Content.Edit, Calendars.Admin, ou responsable de groupe | Supprime un événement et ses réservations. Les responsables du groupe de l'événement peuvent le supprimer, et un demandeur peut retirer sa propre demande en attente |
+| GET | `/timeline/group/:groupId?eventIds=` | JWT | — | Charger la chronologie des événements d'un groupe (inclut les dates d'exception, afin que les occurrences supprimées puissent être ignorées) |
+| GET | `/timeline?eventIds=` | JWT | — | Charger la chronologie des événements des groupes de l'utilisateur actuel (inclut les dates d'exception) |
+| GET | `/subscribe?churchId=&groupId=&curatedCalendarId=` | Public | — | S'abonner aux événements sous forme de flux de calendrier ICS |
+| GET | `/group/:groupId` | JWT | — | Obtenir les événements d'un groupe (inclut les dates d'exception) |
+| GET | `/public/group/:churchId/:groupId` | Public | — | Obtenir les événements publics d'un groupe |
+| GET | `/public/:churchId/:id` | Public | — | Obtenir un événement pour sa page publique, avec `roomNames` (salles issues des réservations non refusées). Renvoie `null` pour les événements en attente ou refusés, et pour les événements privés qui n'acceptent pas d'inscriptions |
+| GET | `/public/:churchId/:id/ical` | Public | — | Télécharger cet événement unique sous forme de fichier `.ics` (`text/calendar`, dates d'exception appliquées). Renvoie `404` lorsque l'événement est masqué selon les mêmes règles |
+| GET | `/:id` | JWT | — | Obtenir un événement par son ID |
+| POST | `/` | JWT | — | Créer ou mettre à jour des événements (par lot) |
+| DELETE | `/:id` | JWT | Content.Edit, Calendars.Admin ou chef de groupe | Supprimer un événement et ses réservations. Les responsables du groupe de l'événement peuvent le supprimer, et un demandeur peut retirer sa propre demande en attente |
 
-Les enregistrements d'événements comprennent `photoUrl` (la photo d'événement au format 16:9 affichée sur la page publique de l'événement et dans les vignettes des événements à venir), `tags` (séparées par des virgules, utilisées par le filtre de balises de l'élément Calendrier du site web), ainsi que `notesViewRole` / `notesPostRole` (`staff` lorsque la valeur est `null`, `leaders` ou `members`), qui contrôlent la conversation `eventNote` de l'événement. Voir [Contrôle d'accès aux notes de groupe et d'événement](./messaging.md#group-and-event-notes-access-control). Les réponses publiques des événements curatés comportent aussi le `photoUrl` et les `tags` de chaque événement.
+Les enregistrements d'événements incluent `photoUrl` (la photo d'événement au format 16:9 affichée sur la page publique de l'événement et dans les vignettes des événements à venir), `tags` (séparés par des virgules, utilisés par le filtre par étiquette de l'élément Calendrier du site web) et `notesViewRole` / `notesPostRole` (`staff` lorsque la valeur est `null`, `leaders` ou `members`), qui contrôlent la conversation `eventNote` de l'événement. Voir [Contrôle d'accès aux notes de groupe et d'événement](./messaging.md#group-and-event-notes-access-control). Les réponses publiques d'événements sélectionnés incluent également le `photoUrl` et les `tags` de chaque événement.
 
-## Exceptions d'événements {#event-exceptions}
+## Exceptions d'événements
 
 Chemin de base : `/content/eventExceptions`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Obtient une exception d'événement par son ID |
-| POST | `/` | JWT | Content.Edit, Calendars.Admin, ou responsable de groupe | Crée ou met à jour des exceptions d'événements (par lot). Les responsables peuvent seulement ajouter des exceptions pour les événements des groupes qu'ils dirigent |
-| DELETE | `/:id` | JWT | Content.Edit, Calendars.Admin, ou responsable de groupe | Supprime une exception d'événement |
+| GET | `/:id` | JWT | — | Obtenir une exception d'événement par son ID |
+| POST | `/` | JWT | Content.Edit, Calendars.Admin ou chef de groupe | Créer ou mettre à jour des exceptions d'événements (par lot). Les responsables ne peuvent ajouter des exceptions que pour les événements des groupes qu'ils dirigent |
+| DELETE | `/:id` | JWT | Content.Edit, Calendars.Admin ou chef de groupe | Supprimer une exception d'événement |
 
-## Calendriers organisés {#curated-calendars}
+## Calendriers sélectionnés
 
 Chemin de base : `/content/curatedCalendars`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Obtient un calendrier organisé par son ID |
-| GET | `/` | JWT | — | Liste tous les calendriers organisés |
-| POST | `/` | JWT | Content.Edit | Crée ou met à jour des calendriers organisés (par lot) |
-| DELETE | `/:id` | JWT | Content.Edit | Supprime un calendrier organisé |
+| GET | `/:id` | JWT | — | Obtenir un calendrier sélectionné par son ID |
+| GET | `/` | JWT | — | Lister tous les calendriers sélectionnés |
+| POST | `/` | JWT | Content.Edit | Créer ou mettre à jour des calendriers sélectionnés (par lot) |
+| DELETE | `/:id` | JWT | Content.Edit | Supprimer un calendrier sélectionné |
 
-## Événements organisés {#curated-events}
+## Événements sélectionnés
 
 Chemin de base : `/content/curatedEvents`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/calendar/:curatedCalendarId?withoutEvents` | JWT | — | Obtient les événements organisés d'un calendrier (inclut les détails des événements et les dates d'exception, sauf si `?withoutEvents` est défini) |
-| GET | `/public/calendar/:churchId/:curatedCalendarId` | Public | — | Obtient les événements organisés publics d'un calendrier |
-| GET | `/:id` | JWT | — | Obtient un événement organisé par son ID |
-| GET | `/` | JWT | — | Liste tous les événements organisés |
-| POST | `/` | JWT | Content.Edit | Crée ou met à jour des événements organisés. Accepte un tableau `eventIds` pour ajouter des événements de groupe précis |
-| DELETE | `/:id` | JWT | Content.Edit | Supprime un événement organisé |
-| DELETE | `/calendar/:curatedCalendarId/event/:eventId` | JWT | Content.Edit | Retire un événement précis d'un calendrier organisé |
-| DELETE | `/calendar/:curatedCalendarId/group/:groupId` | JWT | Content.Edit | Retire tous les événements d'un groupe d'un calendrier organisé |
+| GET | `/calendar/:curatedCalendarId?withoutEvents` | JWT | — | Obtenir les événements sélectionnés d'un calendrier (inclut les détails des événements et les dates d'exception, sauf si `?withoutEvents` est défini) |
+| GET | `/public/calendar/:churchId/:curatedCalendarId` | Public | — | Obtenir les événements publics sélectionnés d'un calendrier |
+| GET | `/:id` | JWT | — | Obtenir un événement sélectionné par son ID |
+| GET | `/` | JWT | — | Lister tous les événements sélectionnés |
+| POST | `/` | JWT | Content.Edit | Créer ou mettre à jour des événements sélectionnés. Accepte un tableau `eventIds` pour ajouter des événements de groupe précis |
+| DELETE | `/:id` | JWT | Content.Edit | Supprimer un événement sélectionné |
+| DELETE | `/calendar/:curatedCalendarId/event/:eventId` | JWT | Content.Edit | Retirer un événement précis d'un calendrier sélectionné |
+| DELETE | `/calendar/:curatedCalendarId/group/:groupId` | JWT | Content.Edit | Retirer tous les événements d'un groupe d'un calendrier sélectionné |
 
-## Fichiers {#files}
+## Fichiers
 
 Chemin de base : `/content/files`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/:contentType/:contentId` | JWT | — | Obtient les fichiers selon le type et l'ID de contenu |
-| GET | `/` | JWT | — | Liste tous les fichiers du site web de l'église |
-| GET | `/:id` | JWT | — | Obtient un fichier par son ID |
-| POST | `/` | JWT | Content.Edit* | Téléverse des fichiers (en base64). *Également autorisé si l'utilisateur est membre du groupe correspondant au `contentId` |
-| POST | `/postUrl` | JWT | Content.Edit* | Obtient une URL S3 pré-signée pour le téléversement. *Également autorisé pour les membres du groupe. Maximum 100 Mo par élément de contenu |
-| DELETE | `/:id` | JWT | Content.Edit* | Supprime un fichier et le retire du stockage. *Également autorisé pour les membres du groupe |
+| GET | `/:contentType/:contentId` | JWT | — | Obtenir les fichiers selon le type de contenu et l'ID de contenu |
+| GET | `/` | JWT | — | Lister tous les fichiers du site web de l'église |
+| GET | `/:id` | JWT | — | Obtenir un fichier par son ID |
+| POST | `/` | JWT | Content.Edit* | Téléverser des fichiers (en base64). *Autorisé aussi si l'utilisateur est membre du groupe correspondant au `contentId` |
+| POST | `/postUrl` | JWT | Content.Edit* | Obtenir une URL de téléversement S3 pré-signée. *Autorisé aussi pour les membres du groupe. 100 Mo au maximum par élément de contenu |
+| DELETE | `/:id` | JWT | Content.Edit* | Supprimer un fichier et le retirer du stockage. *Autorisé aussi pour les membres du groupe |
 
-## Galerie {#gallery}
+## Galerie
 
 Chemin de base : `/content/gallery`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/stock/:folder` | Public | — | Liste les photos d'archive d'un dossier |
-| GET | `/:folder` | JWT | Content.Edit | Liste les images de galerie d'un dossier |
-| POST | `/requestUpload` | JWT | Content.Edit | Obtient une URL S3 pré-signée pour le téléversement d'une image de galerie |
-| DELETE | `/:folder/:image` | JWT | Content.Edit | Supprime une image de galerie |
+| GET | `/stock/:folder` | Public | — | Lister les photos d'archive d'un dossier |
+| GET | `/:folder` | JWT | Content.Edit | Lister les images de galerie d'un dossier |
+| POST | `/requestUpload` | JWT | Content.Edit | Obtenir une URL de téléversement S3 pré-signée pour une image de galerie |
+| DELETE | `/:folder/:image` | JWT | Content.Edit | Supprimer une image de galerie |
 
-## Bibles {#bibles}
+## Bibles
 
 Chemin de base : `/content/bibles`
 
-Tous les points de terminaison Bible sont publics (aucune authentification requise). Les données sont récupérées auprès de sources externes et mises en cache localement.
+Tous les endpoints de la Bible sont publics (aucune authentification requise). Les données sont récupérées auprès de sources externes et mises en cache localement. Les requêtes vers api.bible expirent après 15 secondes ; un délai dépassé renvoie **504**.
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | Public | — | Liste toutes les traductions de la Bible (les récupère depuis la source si le cache est vide) |
-| GET | `/stats?startDate=&endDate=` | Public | — | Obtient les statistiques de consultation de la Bible pour une période donnée |
-| GET | `/availableTranslations/:source` | Public | — | Liste les traductions disponibles d'une source (par ex. api.bible) |
-| GET | `/updateTranslations` | Public | — | Synchronise toutes les traductions de toutes les sources |
-| GET | `/updateTranslations/:source` | Public | — | Synchronise les traductions d'une source précise |
-| GET | `/updateCopyrights` | Public | — | Met à jour les informations de droits d'auteur des traductions qui n'en ont pas |
-| GET | `/:translationKey/updateCopyright` | Public | — | Met à jour les droits d'auteur d'une traduction précise |
-| GET | `/:translationKey/search?query=&limit=` | Public | — | Recherche des versets dans une traduction |
-| GET | `/:translationKey/books` | Public | — | Obtient les livres d'une traduction (mise en cache locale) |
-| GET | `/:translationKey/:bookKey/chapters` | Public | — | Obtient les chapitres d'un livre (mise en cache locale) |
-| GET | `/:translationKey/chapters/:chapterKey/verses` | Public | — | Obtient les versets d'un chapitre (mise en cache locale) |
-| GET | `/:translationKey/verses/:startVerseKey-:endVerseKey` | Public | — | Obtient le texte d'une plage de versets. Consigne les recherches. Certaines traductions contournent la mise en cache pour des raisons de licence |
+| GET | `/` | Public | — | Lister toutes les traductions de la Bible (les récupère depuis la source si le cache est vide) |
+| GET | `/stats?startDate=&endDate=` | Public | — | Obtenir les statistiques de consultation de la Bible pour une plage de dates |
+| GET | `/availableTranslations/:source` | Public | — | Lister les traductions disponibles d'une source (par ex. api.bible) |
+| GET | `/updateTranslations` | Public | — | Synchroniser toutes les traductions de toutes les sources |
+| GET | `/updateTranslations/:source` | Public | — | Synchroniser les traductions d'une source précise |
+| GET | `/updateCopyrights` | Public | — | Mettre à jour les informations de droits d'auteur des traductions qui en sont dépourvues |
+| GET | `/:translationKey/updateCopyright` | Public | — | Mettre à jour le droit d'auteur d'une traduction précise |
+| GET | `/:translationKey/search?query=&limit=` | Public | — | Rechercher des versets dans une traduction |
+| GET | `/:translationKey/books` | Public | — | Obtenir les livres d'une traduction (mise en cache locale) |
+| GET | `/:translationKey/:bookKey/chapters` | Public | — | Obtenir les chapitres d'un livre (mise en cache locale) |
+| GET | `/:translationKey/chapters/:chapterKey/verses` | Public | — | Obtenir les versets d'un chapitre (mise en cache locale) |
+| GET | `/:translationKey/verses/:startVerseKey-:endVerseKey` | Public | — | Obtenir le texte d'une plage de versets. Journalise les consultations. Certaines traductions contournent le cache pour des raisons de licence |
 
-### Exemple : obtenir le texte d'un verset {#example-get-verse-text}
+### Exemple : obtenir le texte de versets
 
 ```
 GET /content/bibles/de4e12af7f28f599-02/verses/GEN.1.1-GEN.1.3
@@ -337,129 +337,129 @@ GET /content/bibles/de4e12af7f28f599-02/verses/GEN.1.1-GEN.1.3
 ]
 ```
 
-## Chants {#songs}
+## Chansons
 
 Chemin de base : `/content/songs`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/search?q=` | JWT | — | Recherche des chants par requête |
-| GET | `/:id` | JWT | — | Obtient un chant par son ID |
-| GET | `/` | JWT | Content.Edit | Liste tous les chants |
-| POST | `/` | JWT | Content.Edit | Crée ou met à jour des chants (par lot) |
-| POST | `/import` | JWT | — | Importe des chants depuis FreeShow (par lot) |
-| DELETE | `/:id` | JWT | Content.Edit | Supprime un chant |
+| GET | `/search?q=` | JWT | — | Rechercher des chansons par requête |
+| GET | `/:id` | JWT | — | Obtenir une chanson par son ID |
+| GET | `/` | JWT | Content.Edit | Lister toutes les chansons |
+| POST | `/` | JWT | Content.Edit | Créer ou mettre à jour des chansons (par lot) |
+| POST | `/import` | JWT | — | Importer des chansons depuis FreeShow (par lot) |
+| DELETE | `/:id` | JWT | Content.Edit | Supprimer une chanson |
 
-## Détails des chants {#song-details}
+## Détails des chansons
 
 Chemin de base : `/content/songDetails`
 
-Les détails des chants sont globaux (non rattachés à une église). Ils représentent les métadonnées canoniques des chants partagées entre les églises.
+Les détails des chansons sont globaux (non limités à une église). Ils représentent les métadonnées canoniques des chansons, partagées entre les églises.
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Obtient les détails d'un chant par son ID (global) |
-| GET | `/` | JWT | — | Liste les détails des chants de l'église |
-| POST | `/create` | JWT | — | Crée les détails d'un chant à partir d'un ID PraiseCharts (renvoie les détails existants s'ils ont déjà été créés). Récupère automatiquement les métadonnées depuis PraiseCharts et MusicBrainz |
-| POST | `/` | JWT | — | Crée ou met à jour les détails des chants (par lot) |
+| GET | `/:id` | JWT | — | Obtenir le détail d'une chanson par son ID (global) |
+| GET | `/` | JWT | — | Lister les détails des chansons de l'église |
+| POST | `/create` | JWT | — | Créer un détail de chanson à partir d'un ID PraiseCharts (renvoie l'existant s'il a déjà été créé). Récupère automatiquement les métadonnées depuis PraiseCharts et MusicBrainz |
+| POST | `/` | JWT | — | Créer ou mettre à jour des détails de chansons (par lot) |
 
-## Liens des détails de chants {#song-detail-links}
+## Liens des détails de chanson
 
 Chemin de base : `/content/songDetailLinks`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Obtient un lien de détails de chant par son ID |
-| GET | `/songDetail/:songDetailId` | JWT | — | Obtient tous les liens d'un détail de chant |
-| POST | `/` | JWT | — | Crée ou met à jour des liens de détails de chants (par lot). Récupère automatiquement les données MusicBrainz si un lien est défini |
-| DELETE | `/:id` | JWT | — | Supprime un lien de détails de chant |
+| GET | `/:id` | JWT | — | Obtenir un lien de détail de chanson par son ID |
+| GET | `/songDetail/:songDetailId` | JWT | — | Obtenir tous les liens d'un détail de chanson |
+| POST | `/` | JWT | — | Créer ou mettre à jour des liens de détails de chansons (par lot). Récupère automatiquement les données MusicBrainz si un lien est défini |
+| DELETE | `/:id` | JWT | — | Supprimer un lien de détail de chanson |
 
-## Arrangements {#arrangements}
+## Arrangements
 
 Chemin de base : `/content/arrangements`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Obtient un arrangement par son ID |
-| GET | `/song/:songId` | JWT | Content.Edit | Obtient les arrangements d'un chant |
-| GET | `/songDetail/:songDetailId` | JWT | Content.Edit | Obtient les arrangements d'un détail de chant |
-| GET | `/` | JWT | Content.Edit | Liste tous les arrangements |
-| POST | `/` | JWT | Content.Edit | Crée ou met à jour des arrangements (par lot) |
-| POST | `/freeShow/missing` | JWT | — | Trouve les ID FreeShow qui n'existent pas dans l'église. Corps : `{ freeShowIds: string[] }` |
-| DELETE | `/:id` | JWT | Content.Edit | Supprime un arrangement (supprime aussi ses tonalités ; supprime le chant s'il ne reste aucun arrangement) |
+| GET | `/:id` | JWT | — | Obtenir un arrangement par son ID |
+| GET | `/song/:songId` | JWT | Content.Edit | Obtenir les arrangements d'une chanson |
+| GET | `/songDetail/:songDetailId` | JWT | Content.Edit | Obtenir les arrangements d'un détail de chanson |
+| GET | `/` | JWT | Content.Edit | Lister tous les arrangements |
+| POST | `/` | JWT | Content.Edit | Créer ou mettre à jour des arrangements (par lot) |
+| POST | `/freeShow/missing` | JWT | — | Trouver les ID FreeShow qui n'existent pas dans l'église. Corps : `{ freeShowIds: string[] }` |
+| DELETE | `/:id` | JWT | Content.Edit | Supprimer un arrangement (supprime aussi ses tonalités ; supprime la chanson s'il ne reste aucun arrangement) |
 
-## Tonalités d'arrangements {#arrangement-keys}
+## Tonalités d'arrangement
 
 Chemin de base : `/content/arrangementKeys`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/presenter/:churchId/:id` | Public | — | Obtient une tonalité d'arrangement avec les données complètes du chant pour la vue présentateur |
-| GET | `/:id` | JWT | — | Obtient une tonalité d'arrangement par son ID |
-| GET | `/arrangement/:arrangementId` | JWT | Content.Edit | Obtient les tonalités d'un arrangement |
-| GET | `/` | JWT | Content.Edit | Liste toutes les tonalités d'arrangements |
-| POST | `/` | JWT | Content.Edit | Crée ou met à jour des tonalités d'arrangements (par lot) |
-| DELETE | `/:id` | JWT | Content.Edit | Supprime une tonalité d'arrangement |
+| GET | `/presenter/:churchId/:id` | Public | — | Obtenir une tonalité d'arrangement avec les données complètes de la chanson pour la vue présentateur |
+| GET | `/:id` | JWT | — | Obtenir une tonalité d'arrangement par son ID |
+| GET | `/arrangement/:arrangementId` | JWT | Content.Edit | Obtenir les tonalités d'un arrangement |
+| GET | `/` | JWT | Content.Edit | Lister toutes les tonalités d'arrangement |
+| POST | `/` | JWT | Content.Edit | Créer ou mettre à jour des tonalités d'arrangement (par lot) |
+| DELETE | `/:id` | JWT | Content.Edit | Supprimer une tonalité d'arrangement |
 
-## Paramètres {#settings}
+## Paramètres
 
 Chemin de base : `/content/settings`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/my` | JWT | — | Obtient les paramètres de l'utilisateur actuel |
-| GET | `/` | JWT | Settings.Edit | Obtient tous les paramètres de l'église |
-| GET | `/public/:churchId` | Public | — | Obtient les paramètres publics d'une église (renvoyés sous forme de paires clé-valeur) |
-| POST | `/my` | JWT | — | Enregistre les paramètres au niveau de l'utilisateur (accepte le téléversement d'images en base64) |
-| POST | `/` | JWT | Settings.Edit | Enregistre les paramètres au niveau de l'église (accepte le téléversement d'images en base64) |
-| DELETE | `/my/:id` | JWT | — | Supprime un paramètre utilisateur |
+| GET | `/my` | JWT | — | Obtenir les paramètres de l'utilisateur actuel |
+| GET | `/` | JWT | Settings.Edit | Obtenir tous les paramètres de l'église |
+| GET | `/public/:churchId` | Public | — | Obtenir les paramètres publics d'une église (renvoyés sous forme de paires clé-valeur) |
+| POST | `/my` | JWT | — | Enregistrer les paramètres au niveau de l'utilisateur (prend en charge le téléversement d'image en base64) |
+| POST | `/` | JWT | Settings.Edit | Enregistrer les paramètres au niveau de l'église (prend en charge le téléversement d'image en base64) |
+| DELETE | `/my/:id` | JWT | — | Supprimer un paramètre utilisateur |
 
-## Aperçu {#preview}
+## Aperçu
 
 Chemin de base : `/content/preview`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/data/:key` | Public | — | Charge les données d'aperçu de diffusion d'une église à partir de sa clé de sous-domaine (onglets, liens, services, sermons) |
+| GET | `/data/:key` | Public | — | Charger les données d'aperçu de diffusion d'une église à partir de sa clé de sous-domaine (onglets, liens, services, sermons) |
 
-## Galerie (photos d'archive) {#gallery-stock-photos}
+## Galerie (photos d'archive)
 
 Chemin de base : `/content/stock`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| POST | `/search` | Public | — | Recherche des photos d'archive sur Pexels. Corps : `{ term: "church" }` |
+| POST | `/search` | Public | — | Rechercher des photos d'archive sur Pexels. Corps : `{ term: "church" }` |
 
-## PraiseCharts {#praisecharts}
+## PraiseCharts
 
 Chemin de base : `/content/praiseCharts`
 
-Intégration avec PraiseCharts pour la découverte de chants de louange et le téléchargement de partitions.
+Intégration avec PraiseCharts pour la découverte de chansons de louange et le téléchargement de partitions.
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| GET | `/raw/:id` | JWT | — | Obtient les données brutes PraiseCharts d'un chant |
-| GET | `/hasAccount` | JWT | — | Vérifie si l'utilisateur a un compte PraiseCharts lié |
-| GET | `/search?q=` | JWT | — | Recherche dans le catalogue PraiseCharts |
-| GET | `/products/:id?keys=` | JWT | — | Obtient les produits d'un chant (depuis la bibliothèque si authentifié, sinon depuis le catalogue) |
-| GET | `/arrangement/raw/:id?keys=` | JWT | — | Obtient les données brutes d'un arrangement depuis la bibliothèque |
-| GET | `/download?skus=&keys=&file_name=` | JWT | — | Télécharge un fichier depuis PraiseCharts (PDF ou ZIP). Renvoie `{ redirectUrl }` |
-| GET | `/authUrl?returnUrl=` | Public | — | Obtient l'URL d'autorisation OAuth pour PraiseCharts |
-| GET | `/access?verifier=&token=&secret=` | JWT | — | Échange le vérificateur OAuth contre un jeton d'accès et l'enregistre dans les paramètres de l'utilisateur |
-| GET | `/library` | JWT | — | Parcourt la bibliothèque PraiseCharts de l'utilisateur |
+| GET | `/raw/:id` | JWT | — | Obtenir les données brutes PraiseCharts d'une chanson |
+| GET | `/hasAccount` | JWT | — | Vérifier si l'utilisateur a un compte PraiseCharts lié |
+| GET | `/search?q=` | JWT | — | Rechercher dans le catalogue PraiseCharts |
+| GET | `/products/:id?keys=` | JWT | — | Obtenir les produits d'une chanson (depuis la bibliothèque si authentifié, sinon depuis le catalogue) |
+| GET | `/arrangement/raw/:id?keys=` | JWT | — | Obtenir les données brutes d'un arrangement depuis la bibliothèque |
+| GET | `/download?skus=&keys=&file_name=` | JWT | — | Télécharger un fichier depuis PraiseCharts (PDF ou ZIP). Renvoie `{ redirectUrl }` |
+| GET | `/authUrl?returnUrl=` | Public | — | Obtenir l'URL d'autorisation OAuth pour PraiseCharts |
+| GET | `/access?verifier=&token=&secret=` | JWT | — | Échanger le vérificateur OAuth contre un jeton d'accès et l'enregistrer dans les paramètres de l'utilisateur |
+| GET | `/library` | JWT | — | Parcourir la bibliothèque PraiseCharts de l'utilisateur |
 
-## Support {#support}
+## Assistance
 
 Chemin de base : `/content/support`
 
-| Méthode | Chemin | Auth | Permission | Description |
+| Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
-| POST | `/createAudio` | Public | — | Convertit du SSML en audio MP3 avec AWS Polly. Corps : `{ ssml: "<speak>...</speak>" }` |
+| POST | `/createAudio` | Public | — | Convertir du SSML en audio MP3 avec AWS Polly. Corps : `{ ssml: "<speak>...</speak>" }` |
 
-## Pages connexes {#related-pages}
+## Pages connexes
 
-- [Architecture du créateur de site web](../../architecture/website-builder) -- Comment les pages, sections, éléments, articles et redirections s'articulent entre les applications
-- [Points de terminaison Membership](./membership) -- Personnes, églises, groupes, rôles, permissions
-- [Points de terminaison Attendance](./attendance) -- Suivi des services et des visites
-- [Authentification et permissions](./authentication) -- Flux de connexion, JWT, modèle de permissions
-- [Structure du module](../module-structure) -- Modèles d'organisation du code
+- [Architecture du générateur de site web](../../architecture/website-builder) -- Comment les pages, sections, éléments, articles et redirections s'articulent entre les applications
+- [Points de terminaison Membership](./membership) -- Personnes, églises, groupes, rôles, autorisations
+- [Points de terminaison de présence](./attendance) -- Suivi des services et des visites
+- [Authentification et autorisations](./authentication) -- Flux de connexion, JWT, modèle d'autorisations
+- [Structure du module](../module-structure) -- Organisation du code

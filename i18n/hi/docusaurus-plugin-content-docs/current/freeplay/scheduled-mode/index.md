@@ -1,56 +1,56 @@
 ---
-title: "शेड्यूल्ड मोड"
+title: "निर्धारित मोड"
 ---
 
-# शेड्यूल्ड मोड {#scheduled-mode}
+# निर्धारित मोड
 
 <div class="article-intro">
 
-शेड्यूल्ड मोड से FreePlay TV अपने-आप चल सकता है। आप **FreePlay Admin** में [admin.freeplay.church](https://admin.freeplay.church) पर playlists बनाते हैं और उन्हें calendar पर रखते हैं। उस calendar से जुड़ा हर TV आने वाले हफ्ते की सामग्री डाउनलोड करता है और घड़ी के अनुसार जो भी शेड्यूल्ड है वही चलाता है, बिना किसी के Start दबाए। चूंकि फ़ाइलें पहले से डाउनलोड हो चुकी होती हैं, इसलिए Wi-Fi कट जाने पर भी playback चलता रहता है।
+निर्धारित मोड एक FreePlay TV को अपने आप चलने देता है। आप **FreePlay Admin** में [admin.freeplay.church](https://admin.freeplay.church) पर प्लेलिस्ट बनाते हैं और उन्हें कैलेंडर पर रखते हैं। उस कैलेंडर से जोड़ा गया हर TV आने वाले हफ़्ते को डाउनलोड करता है और घड़ी के अनुसार जो निर्धारित है वही चलाता है, बिना किसी के Start दबाए। चूँकि फ़ाइलें पहले से डाउनलोड हो चुकी होती हैं, Wi-Fi चला जाए तब भी प्लेबैक जारी रहता है।
 
 </div>
 
 :::tip
-FreePlay Admin आपका ChurchApps login इस्तेमाल करता है, वही जो आप B1 Admin के लिए इस्तेमाल करते हैं। अलग खाता बनाने की ज़रूरत नहीं है।
+FreePlay Admin आपका ChurchApps लॉगिन इस्तेमाल करता है, वही जो आप B1 Admin के लिए करते हैं। कोई अलग खाता बनाने की ज़रूरत नहीं है।
 :::
 
-## यह कैसे जुड़ता है {#how-it-fits-together}
+## यह कैसे जुड़ता है
 
 FreePlay Admin में चार मुख्य पेज हैं, जो साइट के ऊपर सूचीबद्ध हैं:
 
-- **[Screens](./managing-screens)** - आपके paired TVs, उनकी स्थिति, और वे **screen groups** जिनमें वे हैं। किसी group की screens एक calendar और एक default loop साझा करती हैं
-- **[Playlists](./building-playlists)** - आपके content providers से चुनी गई images और videos की loops
+- **[Screens](./managing-screens)** - आपके जोड़े गए TV, उनकी स्थिति, और वे **screen groups** जिनमें वे हैं। एक group में स्क्रीन एक कैलेंडर और एक डिफ़ॉल्ट लूप साझा करती हैं
+- **[Playlists](./building-playlists)** - छवियों और वीडियो के लूप जो आप अपने content providers से चुनते हैं
 - **[Calendar](./scheduling-the-calendar)** - हर screen group क्या चलाता है, और कब
-- **[Providers](./building-playlists#connecting-providers)** - वे content sources जहां से आपकी playlists सामग्री लेती हैं। आप हर एक को पूरे church के लिए एक बार जोड़ते हैं
+- **[Providers](./building-playlists#connecting-providers)** - वे कंटेंट स्रोत जिनसे आपकी प्लेलिस्ट सामग्री लेती हैं। आप हर एक को पूरे चर्च के लिए एक बार जोड़ते हैं
 
-जब कुछ भी शेड्यूल नहीं होता, तो group की screens उसका **default loop** चलाती हैं। यदि group के पास default loop नहीं है, तो screens काली हो जाती हैं।
+जब कुछ भी निर्धारित नहीं होता, तो किसी group की स्क्रीन उसका **डिफ़ॉल्ट लूप** चलाती हैं। अगर group में डिफ़ॉल्ट लूप नहीं है, तो स्क्रीन बंद रहती हैं।
 
-## Plan Mode से कैसे अलग है {#how-it-differs-from-plan-mode}
+## Plan Mode से यह कैसे अलग है
 
-- **[Plan Mode](../plan-mode/)** B1 Admin से एक service plan type का अनुसरण करता है। कोई TV पर **Start Plan** दबाता है, और जब वे दबाते हैं तब lesson चलता है
-- **शेड्यूल्ड मोड** एक calendar का अनुसरण करता है। सामग्री आपके सेट किए समय पर शुरू और बंद होती है, इसलिए यह lobby signage, announcement loops और कक्षाओं के लिए अच्छी तरह काम करता है जहां lesson किसी के अंदर आने से पहले ही चालू होना चाहिए
+- **[Plan Mode](../plan-mode/)** B1 Admin से एक सेवा प्लान प्रकार का अनुसरण करता है। कोई TV पर **Start Plan** दबाता है, और जब वह दबाता है तब पाठ चलता है
+- **Scheduled Mode** एक कैलेंडर का अनुसरण करता है। कंटेंट आपके सेट किए समय पर शुरू और बंद होता है, इसलिए यह लॉबी साइनेज, घोषणा लूप, और उन कक्षाओं के लिए अच्छा है जहाँ कोई भीतर आने से पहले पाठ स्क्रीन पर होना चाहिए
 
-एक calendar entry अब भी service plan चला सकती है। schedule जोड़ते समय **Service plans** के अंतर्गत plan type चुनें, और स्क्रीन उस हफ्ते B1 Admin में जो plan current है वही चलाती है। इसमें Go Curriculum lessons भी शामिल हैं, यहां तक कि वे भी जिन्हें आपने plan में customize किया है। स्क्रीन उस ministry से जुड़े Go Curriculum login का उपयोग करती है जो B1 Admin में plan type की ministry से लिंक है, या यदि ministry के पास कोई नहीं है तो church का Go Curriculum connection।
+कैलेंडर एंट्री अब भी सेवा प्लान चला सकती है। शेड्यूल जोड़ते समय **Service plans** के अंतर्गत प्लान प्रकार चुनें, और स्क्रीन वही प्लान चलाएगी जो उस हफ़्ते B1 Admin में वर्तमान है। इसमें Go Curriculum के पाठ भी शामिल हैं, यहाँ तक कि वे भी जो आपने प्लान में अनुकूलित किए हैं। स्क्रीन B1 Admin में प्लान प्रकार के मंत्रालय से जुड़े Go Curriculum लॉगिन का उपयोग करती है, या अगर मंत्रालय के पास कोई नहीं है तो चर्च का Go Curriculum कनेक्शन।
 
-## शुरू करना {#getting-started}
+## शुरुआत करना
 
-जब तक आप इनमें से हर एक कर नहीं लेते, **Screens** पेज हर चरण के लिंक के साथ **Get started** checklist दिखाता है:
+जब तक आप इनमें से हर चरण पूरा नहीं करते, **Screens** पेज हर चरण के लिए लिंक के साथ एक **Get started** चेकलिस्ट दिखाता है:
 
-1. **Provider जोड़ें** - **Providers** पेज पर Dropbox, OneDrive, Lessons.church, या कोई अन्य source जोड़ें
-2. **Playlist बनाएं** - किसी provider से images और videos चुनें
-3. **Calendar पर रखें** - चुनें कि कब क्या चले, या group के लिए default loop सेट करें
-4. **Screen pair करें** - TV पर दिखाया गया चार अक्षरों का code दर्ज करें
+1. **एक provider जोड़ें** - **Providers** पेज पर Dropbox, OneDrive, Lessons.church, या कोई अन्य स्रोत जोड़ें
+2. **एक प्लेलिस्ट बनाएँ** - किसी provider से छवियाँ और वीडियो चुनें
+3. **कैलेंडर पर रखें** - तय करें क्या कब चलेगा, या group के लिए डिफ़ॉल्ट लूप सेट करें
+4. **एक स्क्रीन पेयर करें** - TV पर दिखाया गया चार अक्षरों का कोड दर्ज करें
 
-checklist छिपाने के लिए **Hide** पर click करें।
+चेकलिस्ट बंद करने के लिए **Hide** पर क्लिक करें।
 
 :::tip
-**Ctrl+K** दबाएं (Mac पर **⌘K**), या header में search box पर click करें, ताकि command palette खुले। वहां से आप किसी भी पेज पर जा सकते हैं, या **Pair screen**, **Add playlist**, या **Add schedule** जैसी कोई action शुरू कर सकते हैं।
+कमांड पैलेट खोलने के लिए **Ctrl+K** (Mac पर **⌘K**) दबाएँ, या हेडर का सर्च बॉक्स क्लिक करें। वहाँ से आप किसी भी पेज पर जा सकते हैं, या **Pair screen**, **Add playlist**, या **Add schedule** जैसी कार्रवाई शुरू कर सकते हैं।
 :::
 
-## इस सेक्शन में {#in-this-section}
+## इस खंड में
 
-- **[Pairing a Screen](./pairing-a-screen)** - TV पर code दिखाएं और FreePlay Admin में उसे pair करें
-- **[Managing Screens और Groups](./managing-screens)** - स्थिति और downloads देखें, और screens को groups में व्यवस्थित करें
-- **[Providers जोड़ना और Playlists बनाना](./building-playlists)** - content sources जोड़ें और images और videos की loops बनाएं
-- **[Calendar का शेड्यूल करना](./scheduling-the-calendar)** - तय करें कि कब क्या चले, और जब वह जल्दी खत्म हो तो क्या हो
-- **[TV पर शेड्यूल्ड Playback](./scheduled-playback)** - TV अपने-आप क्या करता है, और playback के दौरान remote कैसे इस्तेमाल करें
+- **[एक स्क्रीन पेयर करना](./pairing-a-screen)** - TV पर कोड दिखाएँ और FreePlay Admin में उसे पेयर करें
+- **[स्क्रीन और समूह प्रबंधित करना](./managing-screens)** - स्थिति और डाउनलोड जाँचें, और स्क्रीन को समूहों में व्यवस्थित करें
+- **[Providers जोड़ना और प्लेलिस्ट बनाना](./building-playlists)** - कंटेंट स्रोत जोड़ें और छवियों व वीडियो के लूप बनाएँ
+- **[कैलेंडर शेड्यूल करना](./scheduling-the-calendar)** - तय करें क्या कब चलेगा, और जब कुछ जल्दी खत्म हो जाए तो क्या हो
+- **[TV पर निर्धारित प्लेबैक](./scheduled-playback)** - TV अपने आप क्या करता है, और प्लेबैक के दौरान रिमोट कैसे इस्तेमाल करें

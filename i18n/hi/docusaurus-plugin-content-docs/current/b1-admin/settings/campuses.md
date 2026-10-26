@@ -2,70 +2,70 @@
 title: "कैंपस"
 ---
 
-# कैंपस {#campuses}
+# कैंपस
 
 <div class="article-intro">
 
-अगर आपका चर्च एक से ज़्यादा स्थानों पर मिलता है, तो **Campuses** आपको यह ट्रैक करने देते हैं कि हर व्यक्ति और group किस स्थान से जुड़ा है। एक बार configure होने के बाद, campuses person profiles, attendance setup, और Demographics dashboard में एक विकल्प के रूप में दिखते हैं। Multi-site चर्च पूरे B1 Admin में campus के अनुसार filter, search और report कर सकते हैं।
+यदि आपका चर्च एक से अधिक स्थानों पर मिलता है, तो **Campuses** आपको यह ट्रैक करने देते हैं कि हर व्यक्ति और ग्रुप किस स्थान से जुड़ा है। एक बार कॉन्फ़िगर होने पर, कैंपस व्यक्ति की प्रोफ़ाइल, उपस्थिति सेटअप, और Demographics डैशबोर्ड में विकल्प के रूप में दिखते हैं। मल्टी-साइट चर्च पूरे B1 Admin में कैंपस के अनुसार फ़िल्टर, खोज और रिपोर्ट कर सकते हैं।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- Campuses प्रबंधित करने के लिए आपको **Edit Church Settings** की अनुमति चाहिए। [भूमिकाएं और अनुमतियां](./roles-permissions.md) देखें।
+- कैंपस प्रबंधित करने के लिए आपको **Edit Church Settings** अनुमति चाहिए। देखें [Roles & Permissions](./roles-permissions.md)।
 
 </div>
 
-## कैंपस सेटिंग्स खोलना {#opening-campus-settings}
+## कैंपस सेटिंग खोलना
 
-B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ऊपर-बाईं ओर का search bar) खोलें, **Settings > Settings** चुनें, और बाईं ओर की सूची में **Campuses** पर click करें ताकि **Campuses** section तक scroll हो जाए। आप सीधे **/settings/campuses** पर भी जा सकते हैं। आपको सभी configured campuses की सूची दिखेगी, जिसमें उनका नाम, स्थान और timezone होगा।
+B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (ऊपर-बाईं ओर का सर्च बार), **Settings > Settings** चुनें, और बाईं ओर की सूची में **Campuses** पर क्लिक करें ताकि **Campuses** अनुभाग तक स्क्रॉल हो। आप सीधे **/settings/campuses** पर भी जा सकते हैं। आपको सभी कॉन्फ़िगर किए गए कैंपस की सूची दिखेगी, उनके नाम, स्थान और समय क्षेत्र के साथ।
 
-## कैंपस जोड़ना {#adding-a-campus}
+## कैंपस जोड़ना
 
-1. **Add Campus** पर click करें।
+1. **Add Campus** पर क्लिक करें।
 2. कैंपस का विवरण भरें:
-   - **Name** *(required)* — वह display name जो पूरे B1 Admin में दिखता है (उदाहरण के लिए, "Main Campus" या "North Campus")।
-   - **Address** — campus का street address (सूचना के रूप में दिखाने के लिए; यह Church Settings में आपके मुख्य चर्च के address से अलग है)।
-   - **City / State / Zip** — campus का स्थान।
-   - **Time Zone** — इस campus के लिए IANA time zone (उदाहरण के लिए, *America/Chicago*)। इस campus की सेवाओं के लिए [चेक-इन schedule](../attendance/setup.md#setting-a-check-in-schedule) इसी time zone में खुलते और बंद होते हैं। अगर यह **None** पर सेट है, तो इसकी जगह आपके चर्च का [समय क्षेत्र](./church-settings.md#time-zone) इस्तेमाल होता है। यह तब उपयोगी है जब campuses अलग-अलग time zones में हों।
-   - **Website** — इस campus की अपनी web presence के लिए एक वैकल्पिक URL।
-3. **Save** पर click करें।
+   - **Name** *(आवश्यक)* — B1 Admin में हर जगह दिखने वाला नाम (जैसे "Main Campus" या "North Campus")।
+   - **Address** — कैंपस का सड़क का पता (सूचनात्मक प्रदर्शन के लिए उपयोग होता है; सेटिंग में चर्च के मुख्य पते से अलग)।
+   - **City / State / Zip** — कैंपस का स्थान।
+   - **Time Zone** — इस कैंपस का IANA समय क्षेत्र (जैसे *America/Chicago*)। इस कैंपस की सेवाओं के लिए [चेक-इन शेड्यूल](../attendance/setup.md#setting-a-check-in-schedule) इसी समय क्षेत्र में खुलते और बंद होते हैं। यदि यह **None** पर सेट है, तो आपके चर्च का [Time Zone](./church-settings.md#time-zone) उपयोग होता है। तब उपयोगी है जब कैंपस अलग-अलग समय क्षेत्रों में हों।
+   - **Website** — इस कैंपस की अपनी वेब उपस्थिति का वैकल्पिक URL।
+3. **Save** पर क्लिक करें।
 
-## कैंपस संपादित करना {#editing-a-campus}
+## कैंपस संपादित करना
 
-सूची में किसी भी campus row पर click करें ताकि उसका editor दाईं ओर के panel में खुले। Fields अपडेट करें और **Save** पर click करें।
+सूची में किसी भी कैंपस की पंक्ति पर क्लिक करें ताकि दाईं ओर के पैनल में उसका संपादक खुले। फ़ील्ड अपडेट करें और **Save** पर क्लिक करें।
 
-## कैंपस हटाना {#deleting-a-campus}
+## कैंपस हटाना
 
-किसी campus को edit के लिए खोलें और **Delete** पर click करें। आपसे पुष्टि मांगी जाएगी। कैंपस हटाने से उसे सौंपे गए लोग नहीं हटते — उनका campus field बस खाली हो जाता है।
+कैंपस को संपादन के लिए खोलें और **Delete** पर क्लिक करें। आपसे पुष्टि माँगी जाएगी। कैंपस हटाने से उसे सौंपे गए लोग नहीं हटते — उनका कैंपस फ़ील्ड बस खाली हो जाता है।
 
-## लोगों को कैंपस सौंपना {#assigning-people-to-a-campus}
+## लोगों को कैंपस में नियुक्त करना
 
-कैंपस बनाने के बाद, staff किसी व्यक्ति के profile से उसे कैंपस सौंप सकते हैं:
+कैंपस बनाने के बाद, स्टाफ़ किसी व्यक्ति की प्रोफ़ाइल से उसे कैंपस में नियुक्त कर सकता है:
 
-1. **People** में व्यक्ति का record खोलें।
-2. **Edit** पर click करें।
-3. **Campus** dropdown से campus चुनें।
-4. **Save** पर click करें।
+1. **People** में किसी व्यक्ति का रिकॉर्ड खोलें।
+2. **Edit** पर क्लिक करें।
+3. **Campus** ड्रॉपडाउन से कैंपस चुनें।
+4. **Save** पर क्लिक करें।
 
-आप People page से bulk में भी campus अपडेट कर सकते हैं। कई लोगों को चुनें, **Bulk Edit** इस्तेमाल करें, और सभी के लिए Campus field एक साथ सेट करें।
+आप People पेज से भी कैंपस थोक में अपडेट कर सकते हैं। कई लोगों को चुनें, **Bulk Edit** उपयोग करें, और सभी के लिए Campus फ़ील्ड एक साथ सेट करें।
 
-## कैंपस के अनुसार filter करना {#filtering-by-campus}
+## कैंपस के अनुसार फ़िल्टर करना
 
-कैंपस सेट होने के बाद, आप पूरे B1 Admin में campus के अनुसार filter कर सकते हैं:
+कैंपस सेट होने के बाद, आप पूरे B1 Admin में कैंपस के अनुसार फ़िल्टर कर सकते हैं:
 
-- **People search** — advanced search में Campus condition जोड़ें, या किसी campus तक सीमित [सहेजी गई सूची](../people/lists.md) लोड करें।
-- **Demographics** — जब कम से कम एक व्यक्ति को campus सौंपा गया हो, तब [Demographics डैशबोर्ड](../people/demographics.md) में Campus donut chart दिखता है।
-- **Attendance Setup** — Attendance में हर service time को एक campus से जोड़ा जा सकता है।
+- **People search** — उन्नत खोज में Campus शर्त जोड़ें, या किसी कैंपस तक सीमित [Saved List](../people/lists.md) लोड करें।
+- **Demographics** — जब कम से कम एक व्यक्ति के पास कैंपस हो, तो [Demographics डैशबोर्ड](../people/demographics.md) एक Campus डोनट चार्ट दिखाता है।
+- **Attendance Setup** — उपस्थिति में हर सेवा समय को किसी कैंपस से जोड़ा जा सकता है।
 
 :::tip
-एक ही स्थान वाले चर्च को campuses configure करने की ज़रूरत नहीं है। सभी campus सुविधाएं वैकल्पिक हैं — अगर कोई campus मौजूद नहीं है, तो campus fields और charts बस नहीं दिखते।
+एक ही स्थान वाले चर्च को कैंपस कॉन्फ़िगर करने की ज़रूरत नहीं है। सभी कैंपस सुविधाएँ वैकल्पिक हैं — यदि कोई कैंपस नहीं है, तो कैंपस फ़ील्ड और चार्ट बस नहीं दिखते।
 :::
 
-## संबंधित लेख {#related-articles}
+## संबंधित लेख
 
-- [चर्च सेटिंग्स](./church-settings.md) — आपका मुख्य चर्च address और branding (campus addresses से अलग)
-- [जनसांख्यिकी](../people/demographics.md) — Campus breakdown chart
-- [उपस्थिति सेटअप](../attendance/setup.md) — service times को campus से जोड़ें
-- [थोक संपादन](../people/bulk-editing.md) — कई लोगों को एक साथ campus सौंपें
+- [Church Settings](./church-settings.md) — आपका मुख्य चर्च पता और ब्रांडिंग (कैंपस पतों से अलग)
+- [Demographics](../people/demographics.md) — Campus विभाजन चार्ट
+- [Attendance Setup](../attendance/setup.md) — सेवा समय को किसी कैंपस से जोड़ें
+- [Bulk Editing](../people/bulk-editing.md) — कई लोगों को एक साथ कैंपस नियुक्त करें

@@ -1,80 +1,80 @@
 ---
-title: "Donasjonsrapporter"
+title: "Givningsrapporter"
 ---
 
-# Donasjonsrapporter
+# Givningsrapporter
 
 <div class="article-intro">
 
-B1 Admin gir deg flere måter å se på og analysere menighetens givingdata. Givingdashbordet på **Oppsummering**-siden under Donasjoner gir en visuell oversikt med diagrammer og filtre, mens Rapporter-delen har en mer detaljert donasjonsoppsummering. Bruk disse verktøyene til å følge utviklingen i giving, forberede styremøter eller avstemme registreringene dine.
+B1 Admin gir deg flere måter å se på og analysere menighetens givningsdata. Givningsdashbordet på siden **Sammendrag** under Gaver gir en visuell oversikt med diagrammer og filtre, mens delen Rapporter tilbyr en mer detaljert rapport over gaver (Gavesammendrag). Bruk disse verktøyene til å følge givningstrender, forberede styremøter eller avstemme registreringene dine.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Pass på at donasjoner er [registrert i gavebunter](recording-donations.md) eller [importert fra Stripe](stripe-import.md)
-- Kontroller at [fondene](funds.md) dine er riktig satt opp, slik at donasjonene blir kategorisert riktig
+- Kontroller at gaver er [registrert i bunter](recording-donations.md) eller [importert fra Stripe](stripe-import.md)
+- Kontroller at [fondene](funds.md) dine er riktig satt opp, slik at gavene blir riktig kategorisert
 
 </div>
 
-## Givingdashbord
+## Givningsdashbord
 
-Givingdashbordet er visningen **Dashbord** på **Oppsummering**-siden, som er den første siden du ser når du åpner **Donasjoner**-delen.
+Givningsdashbordet er visningen **Dashbord** på siden **Sammendrag**, som er den første siden du ser når du åpner delen **Gaver**.
 
-1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **Donasjoner** og klikk på **Oppsummering**. **Oppsummering**-siden åpnes i visningen **Dashbord**. Bryteren **Visning** øverst til høyre veksler mellom **Dashbord** og **Givere som har sluttet å gi**.
-2. Bruk bryteren **Ukentlig**, **Månedlig** og **Kvartalsvis** over rapporten for å velge hvordan givingen grupperes.
-3. I panelet **Filtrer rapport** angir du **startdato** og **sluttdato** (som standard det siste året frem til i går) og kan velge et **fond**, og klikker deretter på **Kjør rapport**. Rapporten kjøres automatisk med standardverdiene når siden åpnes.
-4. Fire **KPI-kort** viser givingtallene for det valgte tidsrommet:
-   - **Total giving** -- Det totale donerte beløpet.
-   - **Gjennomsnittlig gave** -- Det gjennomsnittlige donasjonsbeløpet.
-   - **Unike givere** -- Antall forskjellige personer som har gitt.
-   - **Totalt antall donasjoner** -- Det totale antallet enkeltdonasjoner.
-5. Under KPI-ene viser et stolpediagram giving per uke, måned eller kvartal, fordelt på fond.
-6. Klikk på **Nedlastingsalternativer** og velg **Oppsummering** for å eksportere en CSV med totaler per periode og fond, eller klikk på utskriftsikonet for å skrive ut rapporten. Menighetens navn vises øverst på den utskrevne rapporten.
+1. Åpne [Hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **Gaver** og klikk **Sammendrag**. Siden **Sammendrag** åpnes i visningen **Dashbord**. Bryteren **Visning** øverst til høyre veksler mellom **Dashbord** og **Givere som har sluttet**.
+2. Bruk bryterne **Ukentlig**, **Månedlig** og **Kvartalsvis** over rapporten for å velge hvordan givningen skal grupperes.
+3. I panelet **Filtrer rapport** angir du **startdato** og **sluttdato** (som standard fra ett år tilbake til i går), og velger eventuelt et **fond**, og klikker deretter **Kjør rapport**. Rapporten kjøres automatisk med standardverdiene når siden åpnes.
+4. Fire **nøkkeltallskort** viser givningstallene dine for det valgte intervallet:
+   - **Total givning** -- Det totale beløpet som er gitt.
+   - **Gjennomsnittlig gave** -- Gjennomsnittlig gavebeløp.
+   - **Unike givere** -- Antall ulike personer som ga.
+   - **Totalt antall gaver** -- Det totale antallet enkeltgaver.
+5. Under nøkkeltallene viser et søylediagram givningen per uke, måned eller kvartal, fordelt på fond.
+6. Klikk **Nedlastingsalternativer** og velg **Sammendrag** for å eksportere en CSV-fil med summene per periode og fond, eller klikk skriverikonet for å skrive ut rapporten. Menighetens logo (**Logo for lys bakgrunn** fra [Nettside > Utseende](../website/appearance.md), hvis du har lastet opp en) og navn vises sentrert øverst på den utskrevne rapporten. Utskriften bruker mørk tekst og et lyst diagram, selv om du bruker B1 Admin i mørk modus.
 
-Hvis donasjonene i perioden er gitt i mer enn én valuta, blir KPI-totalene omregnet til menighetens valuta, og en merknad, **Omregnet til gjeldende vekslingskurs**, vises under kortene. Se [Støtte for flere valutaer](./multi-currency.md#converted-totals) for mer informasjon.
+Hvis gavene i perioden ble gitt i mer enn én valuta, omregnes nøkkeltallene til menighetens valuta, og en merknad **Omregnet etter dagens valutakurser** vises under kortene. Se [Støtte for flere valutaer](./multi-currency.md#converted-totals) for detaljer.
 
 :::info
-Dashbordet viser samlede givingdata. Det inneholder ikke navn på enkeltgivere. For detaljer på giver-nivå bruker du siden [Gavebunter](batches.md).
+Dashbordet viser samlede givningsdata. Det inkluderer ikke navnene på enkeltgivere. For detaljer per giver bruker du siden [Bunter](batches.md).
 :::
 
-## Givere som har sluttet å gi
+## Givere som har sluttet
 
-Velg **Givere som har sluttet å gi** i bryteren **Visning** for å se personer som ga i én periode, men ikke siden. Som standard sammenlignes fjorårets kalenderår med inneværende år frem til i dag. Endre en av datoperiodene for å utvide eller snevre inn søket. Hver rad viser personen, datoen for siste gave og totalbeløpet for den tidligere perioden, og **Nedlastingsalternativer > Oppsummering** laster ned listen som en CSV til bruk i en oppfølgingsutsendelse eller ringeliste.
+Velg **Givere som har sluttet** i bryteren **Visning** for å liste opp personer som ga i én periode, men ikke siden. Som standard sammenlignes forrige kalenderår med hittil i år; endre begge datointervallene for å utvide eller snevre inn søket. Hver rad viser personen, datoen for den siste gaven og summen for den tidligere perioden, og **Nedlastingsalternativer > Sammendrag** laster ned listen som en CSV-fil, for eksempel som en utsendelsesliste eller ringeliste for oppfølging.
 
-## Se detaljer på giver-nivå
+## Vise detaljer per giver
 
 For en oversikt over hvem som ga, hvor mye og til hvilket fond:
 
-1. Gå til **Donasjoner > Gavebunter**.
-2. Klikk på **navnet på en gavebunt** for å åpne den.
-3. Detaljsiden for gavebunten viser hver donasjon med betalingsmetode (og sjekknummer eller kortsiffer), giverens navn, dato, notater og beløp, med en totalsum nederst.
-4. Klikk på **Rediger** på en donasjonsrad for å åpne alle detaljer om den enkelte donasjonen, inkludert fondet.
-5. Klikk på **Eksporter** over listen for å laste ned en CSV med all giver- og donasjonsinformasjon for den gavebunten.
+1. Gå til **Gaver > Bunter**.
+2. Klikk på et **buntnavn** for å åpne det.
+3. Detaljsiden for buntet lister opp hver gave med metoden (og sjekknummer eller kortsifre), giverens navn, dato, notater og beløp, med en total nederst.
+4. Klikk **Rediger** på en gaverad for å åpne alle detaljene for den enkelte gaven, inkludert fondet.
+5. Klikk **Eksporter** over listen for å laste ned en CSV-fil med all giver- og gaveinformasjon for buntet.
 
-## Donasjonsoppsummering
+## Sammendragsrapport over gaver
 
-Donasjonsrapportering er bygget rett inn i Donasjoner-delen -- Oppsummering-siden fungerer som donasjonsoppsummeringen din:
+Rapportering av gaver er innebygd i delen Gaver -- siden Sammendrag fungerer som din sammendragsrapport over gaver:
 
-1. Velg **Donasjoner > Oppsummering** i Jump-menyen.
-2. I visningen **Dashbord** angir du **startdato** og **sluttdato** i panelet **Filtrer rapport** og klikker på **Kjør rapport**.
-3. Klikk på **Nedlastingsalternativer** og velg **Oppsummering** for å eksportere rapporten som en CSV-fil.
+1. I Hurtigmenyen velger du **Gaver > Sammendrag**.
+2. I visningen **Dashbord** angir du **startdato** og **sluttdato** i panelet **Filtrer rapport** og klikker **Kjør rapport**.
+3. Klikk **Nedlastingsalternativer** og velg **Sammendrag** for å eksportere rapporten som en CSV-fil.
 
 ## Eksportere data
 
-Du kan eksportere donasjonsdata fra flere steder:
+Du kan eksportere gavedata fra flere steder:
 
-- **Oppsummering-siden** -- last ned en CSV med givingtotaler per uke, måned eller kvartal og fond
-- **Detaljsiden for gavebunt** -- last ned en CSV med enkeltdonasjoner og giverdetaljer
-- **Detaljsiden for fond** -- last ned donasjonshistorikken for et bestemt fond
+- **Siden Sammendrag** -- last ned en CSV-fil med givningssummer per uke, måned eller kvartal og fond
+- **Detaljsiden for bunt** -- last ned en CSV-fil med enkeltgaver og giverdetaljer
+- **Detaljsiden for fond** -- last ned gavehistorikken for et bestemt fond
 
 :::tip
-Til årsrapportering kan du kombinere eksporten fra Oppsummering-siden med verktøyet [Giveroppgaver](giving-statements.md), slik at du får både samlede trender og individuelle giveroppgaver.
+For rapportering ved årsslutt kan du kombinere eksporten fra siden Sammendrag med verktøyet [Givertjenester](giving-statements.md) for å få både samlede trender og individuelle giveroppgaver.
 :::
 
 ## Neste steg
 
-- Lag [giveroppgaver](giving-statements.md) til giverne dine ved årsskiftet
-- Gå gjennom enkeltstående [gavebunter](batches.md) for å kontrollere donasjonsdetaljene
-- Se detaljsidene for [fond](funds.md) for en oversikt over giving fordelt på kategori
+- Lag [Givertjenester](giving-statements.md) for giverne dine ved årsslutt
+- Gjennomgå enkelte [bunter](batches.md) for å kontrollere gavedetaljene
+- Sjekk detaljsidene for [fond](funds.md) for oversikt over givning per kategori

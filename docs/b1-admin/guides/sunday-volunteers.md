@@ -90,7 +90,7 @@ B1 Admin no longer creates tasks on a repeating schedule. For repeating processe
 
 Let volunteers sign up for positions themselves instead of waiting for admin assignments.
 
-1. When creating or editing a plan, set a **Signup Deadline** (hours before service) to control when self-signup closes. Leave blank for no deadline. New plans start with the previous plan's deadline.
+1. When creating or editing a plan, set a **Signup Deadline** (hours before service) to control when self-signup closes. The hours are counted back from the plan's first service time. Leave blank for no deadline. New plans start with the previous plan's deadline.
 2. Optionally toggle **Show volunteer names on signup page** to let volunteers see who else is signed up.
 3. For each position, check the **Allow Self-Signup** checkbox to make it available for self-service.
 4. Add a **Description** to each position so volunteers know what the role involves.

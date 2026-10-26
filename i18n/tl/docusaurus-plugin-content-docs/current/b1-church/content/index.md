@@ -1,54 +1,54 @@
 ---
-title: "Nilalaman"
+title: "Content"
 ---
 
-# Nilalaman
+# Content
 
 <div class="article-intro">
 
-Ang B1.church ay nagbibigay sa inyong kongregasyon ng sentral na lugar upang ma-access ang nilalamang ibinabahagi ng inyong simbahan. Depende sa kung ano ang na-configure ng inyong simbahan, maaari kayong magkaroon ng access sa mga sermon, live streaming, pagbabasa ng Bibliya, pang-araw-araw na talata, at mga materyales sa aralin -- lahat mula sa loob ng member portal.
+Binibigyan ng B1.church ang iyong kongregasyon ng sentral na lugar para ma-access ang content na ibinabahagi ng iyong simbahan. Depende sa na-configure ng iyong simbahan, maaaring mayroon kang access sa mga sermon, live streaming, pagbabasa ng Bibliya, pang-araw-araw na talata, at mga materyal sa aralin -- lahat mula sa loob ng member portal.
 
 </div>
 
-## Mga Available na Content Feature
+## Mga Available na Feature ng Content
 
-### Mga Sermon
+### Sermons
 
-Mag-browse at manood ng mga naitala na sermon mula sa inyong simbahan. Ang library ng sermon ng inyong simbahan ay nakaayos sa mga playlist at series, na ginagawang madaling makahanap ng mga nakaraang mensahe.
+Mag-browse at manood ng mga naitalang sermon ng iyong simbahan. Ang library ng sermon ng iyong simbahan ay nakaayos sa mga playlist at serye, kaya madaling makita ang mga nakaraang mensahe.
 
 ### Live Streaming
 
-Manood ng live broadcast ng inyong simbahan direkta sa B1.church. Kapag may live na serbisyo, maaari kayong sumali sa stream at makipag-ugnayan sa ibang mga manonood sa pamamagitan ng chat at mga feature sa panalangin.
+Panoorin ang live na broadcast ng iyong simbahan nang direkta sa B1.church. Kapag may live na serbisyo, maaari kang sumali sa stream at makipag-ugnayan sa iba pang manonood sa pamamagitan ng chat.
 
-### Bibliya
+### Bible
 
-Magbasa ng Kasulatan gamit ang built-in na Bible reader. Maaari kayong mag-navigate sa mga aklat, kabanata, at talata nang hindi umaalis sa site.
+Magbasa ng Kasulatan gamit ang built-in na Bible reader. Maaari kang mag-navigate sa mga aklat, kabanata, at talata nang hindi umaalis sa site.
 
-### Talata ng Araw
+### Verse of the Day
 
-Tingnan ang magandang nakaayos na larawang may talatang Bibliya na nagbabago araw-araw. Ang larawan ay awtomatikong nag-aayos upang umangkop sa inyong screen.
+Tingnan ang magandang format na larawan ng talata sa Bibliya na nagbabago araw-araw. Awtomatikong umaayon ang larawan sa iyong screen. Maaari mo ring ibahagi o i-download ang talata ng alinmang araw at mag-browse sa mga talata ng mga nakaraang araw.
 
-### Mga Aralin
+### Lessons
 
-Tingnan ang mga naka-iskedyul na aralin mula sa mga plano ng inyong simbahan. Kung kayo ay guro o lider, maaari ninyong gamitin ang **Teacher View** upang makita ang mga aralin sa full-screen, madaling i-navigate na format na perpekto para sa pagtuturo o pagtatanghal.
+Tingnan ang mga nakaiskedyul na aralin mula sa mga plan ng iyong simbahan. Kung ikaw ay guro o lider, maaari mong gamitin ang **Teacher View** para makita ang mga aralin sa full-screen at madaling i-navigate na format na perpekto para sa pagtuturo o pagpresenta.
 
-### Mga Aralin (Deprecated - Embedded Tab)
+### Lessons (Deprecated - Embedded Tab)
 
-Ang naka-embed na **Lessons** tab ay na-deprecate na. Ang playback ng curriculum ay nasa **[FreePlay](/docs/freeplay/)** na ngayon, ang libreng TV app ng ChurchApps para sa mga screen sa silid-aralan. Upang mag-browse ng curriculum sa telepono, tablet, o computer, mag-sign in sa [Lessons.church](https://lessons.church) nang direkta. Tingnan ang [Lessons reference page](./lessons.md) para sa mga detalye.
+Deprecated na ang naka-embed na **Lessons** tab. Ang playback ng curriculum ay nasa **[FreePlay](/docs/freeplay/)** na ngayon, ang libreng TV app ng ChurchApps para sa mga screen sa silid-aralan. Para mag-browse ng curriculum sa telepono, tablet, o kompyuter, mag-sign in nang direkta sa [Lessons.church](https://lessons.church). Tingnan ang [Lessons reference page](./lessons.md) para sa mga detalye.
 
-## Paghahanap ng Nilalaman
+## Paghahanap ng Content
 
-Ang mga pahina ng nilalaman ay available sa pamamagitan ng nabigasyon ng site ng inyong simbahan. Ang administrator ng inyong simbahan ang nagpapasya kung aling mga content feature ang naka-enable at kung paano ito lumilitaw sa menu. Kung hindi ninyo nakikita ang isang partikular na content feature na nakalista sa itaas, maaaring hindi ito naka-configure para sa inyong simbahan.
+Makikita ang mga content page sa pamamagitan ng nabigasyon ng site ng iyong simbahan. Pinagpapasyahan ng administrator ng iyong simbahan kung aling mga feature ng content ang naka-enable at kung paano ito lumalabas sa menu. Kung wala kang makitang partikular na feature ng content na nakalista sa itaas, maaaring hindi ito na-configure para sa iyong simbahan.
 
 :::info
-Ang [Sermons](./sermons.md) at ang [Bible](./bible.md) ay available sa publiko. Ang ibang mga feature ay maaaring mangailangan na kayo ay [naka-log in](../getting-started/logging-in.md).
+Ang [Sermons](./sermons.md) at ang [Bible](./bible.md) ay available sa publiko. Ang ibang feature ay maaaring mangailangan na naka-[log in](../getting-started/logging-in.md) ka.
 :::
 
 ## Mga Susunod na Hakbang
 
-- [Sermons](./sermons.md) -- Mag-browse at manood ng mga naitala na sermon
+- [Sermons](./sermons.md) -- Mag-browse at manood ng mga naitalang sermon
 - [Live Streaming](./live-streaming.md) -- Manood ng mga live na broadcast
 - [Bible](./bible.md) -- Magbasa ng Kasulatan sa built-in na reader
-- [Verse of the Day](./verse-of-the-day.md) -- Tingnan ang pang-araw-araw na talata ngayon
-- [Teacher View](./teacher-view.md) -- Gamitin ang expanded na interface ng guro para sa nilalaman ng aralin
-- [FreePlay](/docs/freeplay/) -- Mag-play ng mga aralin sa mga TV sa silid-aralan (pumapalit sa deprecated na in-app Lessons tab)
+- [Verse of the Day](./verse-of-the-day.md) -- Tingnan ang talata ng araw
+- [Teacher View](./teacher-view.md) -- Gamitin ang pinalawak na interface ng guro para sa content ng aralin
+- [FreePlay](/docs/freeplay/) -- Magpatakbo ng mga aralin sa mga TV sa silid-aralan (pumapalit sa deprecated na in-app Lessons tab)

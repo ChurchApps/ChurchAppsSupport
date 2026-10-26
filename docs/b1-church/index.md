@@ -15,14 +15,14 @@ When members visit your B1.church site, they see your church's public website wi
 ## Key Features
 
 - **Home and Me** -- The member portal opens on a [Home dashboard](./getting-started/navigating.md) with previews of your upcoming serving assignments, your groups, and your giving this year, and the [Me page](./getting-started/me-page.md) lists what is coming up for you -- serving assignments, event registrations, group events -- along with your recent notifications, the forms you've submitted, and your attendance history.
-- **Groups** -- View the groups you belong to, see group members, join conversations, and track attendance.
-- **Giving** -- Make donations to your church online and view your giving history.
+- **Groups** -- View the groups you belong to, see group members, join conversations, track attendance, and fill out forms linked to your group (leaders can read and print the answers).
+- **Giving** -- Make donations to your church online and view your giving history and statements, even if your church doesn't take gifts online.
 - **Events** -- Browse upcoming events and register yourself and your family.
 - **Serving** -- View service plans, your volunteer positions, and sign up for open volunteer opportunities. Choose to get serving and event reminders by text in your [notification preferences](./getting-started/notification-preferences.md) (reply STOP at any time to stop).
 - **Plans** -- See upcoming service plans, accept or decline your assigned positions, and access song details and service orders.
 - **Check-In** -- Check in yourself and your household members for services and events. Guests can register via QR code.
 - **Community Directory** -- Browse your church's member directory, view profiles, and send direct messages. Control who can see your own contact info from your [profile's Privacy section](./getting-started/editing-your-profile.md#privacy).
-- **Content** -- Access sermons, read the Bible, watch live streams, and view the daily verse, all from your church's site. (Curriculum playback now lives in [FreePlay](/docs/freeplay/) — the in-portal Lessons tab is deprecated.)
+- **Content** -- Access sermons, read the Bible, watch live streams, and view, share or download the daily verse (and earlier ones), all from your church's site. (Curriculum playback now lives in [FreePlay](/docs/freeplay/) — the in-portal Lessons tab is deprecated.)
 
 ## Learn More
 

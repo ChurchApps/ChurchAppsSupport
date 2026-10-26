@@ -2,110 +2,122 @@
 title: "मोबाइल ऐप सेटिंग्स"
 ---
 
-# मोबाइल ऐप सेटिंग्स {#mobile-app-settings}
+# मोबाइल ऐप सेटिंग्स
 
 <div class="article-intro">
 
-Mobile App Settings पेज आपको उन navigation tabs को configure करने देता है जो आपके चर्च के सदस्यों के लिए **B1.church mobile experience (PWA)** में दिखते हैं। आप नियंत्रित करते हैं कि कौन से tabs दिखें, वे कहां link करें, और वे कैसे दिखाए जाएं।
+Mobile App Settings पेज आपको उन नेविगेशन टैब्स को कॉन्फ़िगर करने देता है जो आपके चर्च के सदस्यों के लिए **B1.church mobile experience (PWA)** में दिखते हैं। आप तय करते हैं कि कौन-से टैब दिखें, वे कहाँ लिंक करें, और उन्हें कैसे प्रदर्शित किया जाए।
 
 </div>
 
-:::info मूल B1 Mobile ऐप अब उपयोग में नहीं है
-यहां configure किए गए tabs [B1.church Progressive Web App (PWA)](/docs/b1-church/getting-started/installing-pwa) के ज़रिए दिए जाते हैं, जिसने मूल B1 Mobile ऐप की जगह ले ली है। अपने सदस्यों के साथ अपने चर्च का install page साझा करें — `https://yourchurchname.b1.church/mobile/install` — यह उन्हें अपने device पर ऐप install करने के चरण बताता है, और इसके लिए App Store या Google Play से download की ज़रूरत नहीं है।
+:::info नेटिव B1 Mobile ऐप अब अप्रचलित है
+यहाँ कॉन्फ़िगर किए गए टैब [B1.church Progressive Web App (PWA)](/docs/b1-church/getting-started/installing-pwa) के ज़रिए दिए जाते हैं, जिसने नेटिव B1 Mobile ऐप की जगह ले ली है। अपने सदस्यों के साथ अपने चर्च का install पेज साझा करें — `https://yourchurchname.b1.church/mobile/install` — यह उन्हें अपने डिवाइस पर ऐप इंस्टॉल करने के चरण बताता है, और App Store या Google Play से डाउनलोड की ज़रूरत नहीं होती।
 :::
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- आपको "Edit Church Settings" की अनुमति चाहिए। अगर आपके पास पहुंच नहीं है, तो [भूमिकाएं और अनुमतियां](./roles-permissions.md) देखें।
-- पहले अपनी [चर्च सेटिंग्स](./church-settings.md) configure करें, जिसमें आपके चर्च का नाम और branding शामिल है
+- आपके पास "Edit Church Settings" अनुमति होनी चाहिए। अगर आपके पास पहुँच नहीं है, तो देखें [Roles & Permissions](./roles-permissions.md)।
+- पहले अपनी [Church Settings](./church-settings.md) कॉन्फ़िगर करें, जिसमें आपके चर्च का नाम और ब्रांडिंग शामिल है
 
 </div>
 
-## Navigation सेटिंग्स तक पहुंचना {#accessing-navigation-settings}
+## नेविगेशन सेटिंग्स तक पहुँचना
 
-1. B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ऊपर-बाईं ओर का search bar) खोलें और **Mobile** को expand करें।
-2. **Navigation** (`/mobile/navigation`) पर click करें।
-3. Navigation पेज आपके मौजूदा app tabs दिखाता है।
+1. B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (ऊपर-बाएँ कोने में search bar) और **Mobile** को विस्तारित करें।
+2. **Navigation** (`/mobile/navigation`) पर क्लिक करें।
+3. Navigation पेज आपके वर्तमान ऐप टैब दिखाता है।
 
-## नया tab जोड़ना {#adding-a-new-tab}
+## नया टैब जोड़ना
 
-1. पेज के ऊपर **Add Tab** button पर click करें।
-2. Tab का विवरण भरें:
-   - **Name** -- वह label जो tab पर दिखता है (उदाहरण के लिए, "Sermons" या "Give")।
-   - **Icon** -- अपने tab के लिए icon चुनने हेतु icon selector पर click करें।
-   - **Image** -- tab को एक फ़ोटो देने के लिए **Select Image** (या **Change Image**) पर click करें। फ़ोटो वाले tabs ऐप की Home screen पर photo tiles के रूप में दिखते हैं -- देखें [Home Screen Tiles](#home-screen-tiles)।
-   - **Tab Type** -- Bible, Live Stream, Donation, Website, और अन्य विकल्पों में से चुनें।
-   - **URL** -- वह web address दर्ज करें जिससे tab link होना चाहिए।
-   - **Visibility** -- नियंत्रित करें कि यह tab कौन देख सकता है (सभी, केवल members, आदि)। **Member Directory** tab के लिए, यह केवल नियंत्रित करता है कि tab कौन देखे; directory कौन खोल सकता है, यह Member portal पेज पर **Show in Directory** से तय होता है (देखें [Member Directory और Messaging सेटिंग्स](#member-directory--messaging-settings))।
-3. अपने ऐप में tab जोड़ने के लिए **Save Tab** पर click करें।
+1. पेज के ऊपर **Add Tab** बटन पर क्लिक करें।
+2. टैब का विवरण भरें:
+   - **Name** -- टैब पर दिखने वाला लेबल (जैसे, "Sermons" या "Give")।
+   - **Icon** -- अपने टैब के लिए आइकन चुनने हेतु icon selector पर क्लिक करें।
+   - **Image** -- टैब को फ़ोटो देने के लिए **Select Image** (या **Change Image**) पर क्लिक करें। फ़ोटो वाले टैब ऐप के Home screen पर फ़ोटो टाइल्स के रूप में दिखते हैं -- देखें [Home Screen Tiles](#home-screen-tiles)।
+   - **Tab Type** -- Bible, Live Stream, Donation, Website और अन्य विकल्पों में से चुनें।
+   - **URL** -- वह वेब पता दर्ज करें जिससे टैब लिंक करे।
+   - **Visibility** -- तय करें कि यह टैब कौन देख सकता है (सभी, केवल सदस्य, आदि)। **Member Directory** टैब के लिए, यह केवल तय करता है कि टैब किसे दिखे; डायरेक्टरी कौन खोल सकता है, यह Member portal पेज पर **Show in Directory** से तय होता है (देखें [Member Directory & Messaging Settings](#member-directory--messaging-settings))।
+3. ऐप में जोड़ने के लिए **Save Tab** पर क्लिक करें।
 
-## मौजूदा tab संपादित करना {#editing-an-existing-tab}
+## मौजूदा टैब संपादित करना
 
-1. **App Tabs** सूची में किसी भी मौजूदा tab पर click करें।
-2. Tab का नाम, icon, URL, type, या visibility settings अपडेट करें।
-3. अपने बदलाव लागू करने के लिए **Save Tab** पर click करें।
+1. **App Tabs** सूची में किसी भी मौजूदा टैब पर क्लिक करें।
+2. टैब का नाम, आइकन, URL, प्रकार, या visibility सेटिंग्स अपडेट करें।
+3. बदलाव लागू करने के लिए **Save Tab** पर क्लिक करें।
 
-## Tabs का क्रम बदलना {#reordering-tabs}
+## टैब्स का क्रम बदलना
 
-आप बदल सकते हैं कि tabs mobile app में किस क्रम में दिखें। सूची में tabs को drag and drop करके उन्हें फिर से व्यवस्थित करें। इस पेज पर दिखाया गया क्रम वही है जो आपके सदस्य ऐप में देखेंगे।
+आप बदल सकते हैं कि मोबाइल ऐप में टैब किस क्रम में दिखें। सूची में टैब्स को खींचकर छोड़ें (drag and drop) और उन्हें फिर से व्यवस्थित करें। इस पेज पर दिखने वाला क्रम वही है जो आपके सदस्य ऐप में देखेंगे।
 
 :::info
-कुछ tabs अपने-आप तब दिख सकते हैं जब कुछ शर्तें पूरी हों -- उदाहरण के लिए, जब कोई stream चालू हो, तब Live Stream tab दिख सकता है। हाथ से जोड़े गए tabs आपको यह पूरा नियंत्रण देते हैं कि आपके सदस्य हर समय क्या देखें।
+कुछ टैब कुछ शर्तें पूरी होने पर अपने-आप दिख सकते हैं -- उदाहरण के लिए, जब कोई stream सक्रिय हो तब Live Stream टैब दिख सकता है। मैन्युअल रूप से जोड़े गए टैब आपको यह पूरा नियंत्रण देते हैं कि आपके सदस्य हर समय क्या देखें।
 :::
 
 :::tip
-Tabs की संख्या सीमित रखें। ज़्यादातर चर्चों के लिए तीन से पांच tabs अच्छे रहते हैं। बहुत सारे tabs सदस्यों के लिए navigation को उलझन भरा बना सकते हैं।
+टैब्स की संख्या सीमित रखें। ज़्यादातर चर्चों के लिए तीन से पाँच टैब सबसे अच्छे रहते हैं। बहुत अधिक टैब सदस्यों के लिए नेविगेशन को उलझन भरा बना सकते हैं।
 :::
 
-## Member Directory और Messaging सेटिंग्स {#member-directory--messaging-settings}
+## Member Directory और मैसेजिंग सेटिंग्स
 
-Mobile section में **Member portal** आइटम उन सेटिंग्स को रखता है जो B1.church अनुभव में member directory और private messaging को नियंत्रित करती हैं:
+Mobile सेक्शन के **Member portal** आइटम में वे सेटिंग्स हैं जो B1.church अनुभव में member directory और private messaging को नियंत्रित करती हैं:
 
-- **Directory Approval Group** -- वह group जो member directory के अपडेट, और [account deletion के अनुरोध](../profile/account-deletion.md), लागू होने से पहले उनकी समीक्षा करता है।
-- **Show in Directory** -- कौन member directory खोल सकता है और कौन उसमें सूचीबद्ध होता है: **Staff Only**, **Members & Staff** (डिफ़ॉल्ट), **Regular Attendees & Above**, या **Everyone (Including Visitors)**। जिन लोगों की membership status आपके चुने स्तर से नीचे है, वे directory नहीं देखते और उसमें सूचीबद्ध नहीं होते। People &gt; View अनुमति वाले staff हमेशा directory खोल सकते हैं और सभी को देख सकते हैं, चाहे यह कुछ भी सेट हो।
-- **Visibility Preference** -- उन सदस्यों के लिए चर्च-व्यापी डिफ़ॉल्ट सेट करता है जिन्होंने अभी तक अपनी सेटिंग नहीं चुनी है। **Address**, **Phone Number**, और **Email** में से हर एक का अपना dropdown है, जिसमें वही पांच स्तर उपलब्ध हैं जो visibility configure करने की हर जगह पर हैं:
-  - **Everyone** -- किसी को भी दिखता है, अनाम आगंतुकों सहित
-  - **Members** -- केवल उन लोगों को दिखता है जिनका Member या Staff record है
-  - **Groups Only** -- केवल उन लोगों को दिखता है जो इस व्यक्ति के साथ कोई group साझा करते हैं
-  - **My Group Leaders and Staff** -- केवल उस व्यक्ति के किसी group के leaders को, और staff को दिखता है
-  - **Staff Only** -- केवल People &gt; View अनुमति वाले staff को, और व्यक्ति स्वयं को दिखता है
+- **Directory Approval Group** -- वह ग्रुप जो member directory के अपडेट, और [account deletion requests](../profile/account-deletion.md), प्रभावी होने से पहले उनकी समीक्षा करता है।
+- **Show in Directory** -- कौन member directory खोल सकता है और उसमें कौन सूचीबद्ध है: **Admins Only**, **Members and Above** (डिफ़ॉल्ट), **Regular Attendees and Above**, या **Visitors and Above**। जिन लोगों का membership status आपके चुने स्तर से नीचे है, उन्हें डायरेक्टरी नहीं दिखती और वे उसमें सूचीबद्ध नहीं होते। **Admins Only** डायरेक्टरी को केवल उन स्टाफ़ तक सीमित करता है जिनके पास People > View अनुमति है (अकेला Staff membership status काफ़ी नहीं है); वे हमेशा डायरेक्टरी खोल सकते हैं और सभी को देख सकते हैं, चाहे यह कुछ भी सेट हो। Guests कभी शामिल नहीं होते, क्योंकि ऑनलाइन स्वयं-पंजीकरण करने वाले लोग Guest के रूप में शुरू होते हैं।
+- **Visibility Preference** -- उन सदस्यों के लिए चर्च-व्यापी डिफ़ॉल्ट सेट करता है जिन्होंने अपनी सेटिंग अभी तक नहीं चुनी है। **Address**, **Phone Number**, और **Email** में से हर एक का अपना dropdown है, जिसमें वही पाँच स्तर उपलब्ध हैं जो visibility कॉन्फ़िगर करने के हर स्थान पर होते हैं:
+  - **Everyone** -- किसी को भी दिखता है, अनाम विज़िटर्स सहित
+  - **Members** -- केवल उन लोगों को दिखता है जिनका Member या Staff रिकॉर्ड है
+  - **Groups Only** -- केवल उन लोगों को दिखता है जो इस व्यक्ति के साथ एक ग्रुप साझा करते हैं, साथ में स्टाफ़
+  - **My Group Leaders and Staff** -- केवल उस ग्रुप के लीडर्स को दिखता है जिसका यह व्यक्ति सदस्य है, साथ में स्टाफ़
+  - **Staff Only** -- केवल स्टाफ़ को दिखता है (जिसका membership status Staff है, या जिसके पास People > View अनुमति है), और स्वयं व्यक्ति को
 
-  सदस्य B1.church PWA में अपने profile के **Privacy** tab से अपने record के लिए ये डिफ़ॉल्ट बदल सकते हैं -- देखें [अपनी प्रोफ़ाइल संपादित करना](/docs/b1-church/getting-started/me-page)।
-- **Minimum Age for Private Messages** -- एक child-safety नियंत्रण। जब दोनों में से कोई भी व्यक्ति इस उम्र से कम हो, तो B1 एक **नई** private-message बातचीत शुरू नहीं होने देगा, जन्मतिथि के आधार पर (जन्मतिथि फ़ाइल में न हो तो household role को विकल्प के रूप में इस्तेमाल किया जाता है)। इस उम्र से कम के लोग directory में पूरी तरह दिखते रहते हैं -- केवल direct messaging **दोनों दिशाओं** में बंद होती है, staff सहित सभी के लिए। Group conversations और किसी बच्चे के माता-पिता को message करना अब भी काम करता है। विकल्प Off, 13, 16, या 18 हैं; डिफ़ॉल्ट **18** है। मौजूदा बातचीत पर असर नहीं पड़ता।
+  इन स्तरों में "Staff" का अर्थ है वह कोई भी जिसका membership status Staff है या जिसके पास People > View अनुमति है। ग्रुप से जुड़े बदलाव तुरंत प्रभावी होते हैं: जो व्यक्ति किसी ग्रुप में शामिल होता है, या जिसे ग्रुप लीडर बनाया जाता है, वह बिना साइन आउट और फिर साइन इन किए उस ग्रुप के सदस्यों के मेल खाते **Groups Only** या **My Group Leaders and Staff** विवरण देख सकता है।
+
+  सदस्य B1.church PWA में अपनी प्रोफ़ाइल के **Privacy** टैब से अपने रिकॉर्ड के लिए इन डिफ़ॉल्ट को बदल सकते हैं -- देखें [Editing Your Profile](/docs/b1-church/getting-started/me-page)।
+- **Minimum Age for Private Messages** -- एक बच्चों की सुरक्षा नियंत्रण। जब दोनों में से कोई भी व्यक्ति इस आयु से कम हो, तो B1 एक **नई** private-message बातचीत नहीं खोलेगा, यह जन्मतिथि के आधार पर तय होता है (जन्मतिथि उपलब्ध न हो तो household role को फ़ॉलबैक के रूप में उपयोग किया जाता है)। उस आयु से कम लोग डायरेक्टरी में पूरी तरह दिखते रहते हैं -- केवल सीधी मैसेजिंग **दोनों दिशाओं** में बंद होती है, स्टाफ़ सहित सभी के लिए। ग्रुप बातचीत और किसी बच्चे के माता-पिता को मैसेज करना अब भी काम करते हैं। विकल्प Off, 13, 16, या 18 हैं; डिफ़ॉल्ट **18** है। मौजूदा बातचीत प्रभावित नहीं होतीं।
 
 :::tip
-चूंकि minimum-age जांच जन्मतिथि पर निर्भर करती है, सुनिश्चित करें कि आपके मंडली के बच्चों की जन्मतिथि भरी हुई हो। यह setting उसी child-safety परिवार की है जिसमें [check-in सुरक्षा नियंत्रण](../attendance/checkin-safety.md) आते हैं।
+चूँकि न्यूनतम-आयु जाँच जन्मतिथियों पर निर्भर है, सुनिश्चित करें कि आपकी मंडली के बच्चों की जन्मतिथियाँ भरी हुई हों। यह सेटिंग उसी बाल-सुरक्षा परिवार से है जिससे [check-in safety controls](../attendance/checkin-safety.md) संबंधित हैं।
 :::
 
-### Home Screen Sign-In Prompt {#home-screen-sign-in-prompt}
+### Home Screen Sign-In Prompt
 
-जो आगंतुक साइन इन किए बिना ऐप की [होम स्क्रीन](/docs/b1-church/getting-started/navigating#home) खोलते हैं, उन्हें एक छोटा prompt दिखता है -- डिफ़ॉल्ट रूप से, *"Sign in to see your groups, giving, and more."* -- जिसके साथ एक **Sign In** button होता है। उसी Member portal पेज (`/mobile/b1-mobile`) पर **Home screen sign-in prompt** settings इसे बदलने देती हैं:
+जो विज़िटर बिना साइन इन किए ऐप की [Home screen](/docs/b1-church/getting-started/navigating#home) खोलते हैं, उन्हें एक छोटा prompt दिखता है -- डिफ़ॉल्ट रूप से, *"Sign in to see your groups, giving, and more."* -- जिसके साथ एक **Sign In** बटन होता है। उसी Member portal पेज (`/mobile/b1-mobile`) पर **Home screen sign-in prompt** सेटिंग्स इसे बदलने देती हैं:
 
-- **Show sign-in prompt on the app home screen** -- इसे बंद करने से Home screen से prompt और **Sign In** button दोनों छिप जाते हैं। आगंतुक फिर भी app menu से साइन इन कर सकते हैं।
-- **Sign-in prompt text** -- डिफ़ॉल्ट शब्दों की जगह अपना संदेश रखें (अधिकतम 150 अक्षर)। डिफ़ॉल्ट इस्तेमाल करने के लिए इसे खाली छोड़ें। Prompt बंद होने पर यह box disabled रहता है।
+- **Show sign-in prompt on the app home screen** -- इसे बंद करें ताकि Home screen से prompt और **Sign In** बटन दोनों छिप जाएँ। विज़िटर अब भी ऐप मेनू से साइन इन कर सकते हैं।
+- **Sign-in prompt text** -- डिफ़ॉल्ट शब्दों को अपने संदेश से बदलें (150 अक्षर तक)। डिफ़ॉल्ट उपयोग करने के लिए खाली छोड़ें। prompt बंद होने पर यह बॉक्स अक्षम (disabled) रहता है।
 
-सेव करने के लिए **Save** पर click करें। Save करने पर ऐप की cached settings refresh होती हैं, इसलिए बदलाव अगली बार Home screen लोड होने पर दिखता है।
+लागू करने के लिए **Save** पर क्लिक करें। एक **Saved** संदेश बदलाव की पुष्टि करता है। सेव करने पर ऐप की कैश्ड सेटिंग्स ताज़ा हो जाती हैं, इसलिए बदलाव अगली बार Home screen लोड होने पर दिखता है।
 
-### Home Screen Tiles {#home-screen-tiles}
+### Home Screen Tiles
 
-जिन tabs में फ़ोटो है (देखें [नया tab जोड़ना](#adding-a-new-tab) में **Image**), वे ऐप की [होम स्क्रीन](/docs/b1-church/getting-started/navigating#home) पर photo tiles के रूप में दिखते हैं, जो आपके चर्च के नाम वाले section में होते हैं। इसमें Verse of the Day tab भी शामिल है, अगर आप उसे फ़ोटो देते हैं। फ़ोटो वाले tabs tab bar में भी दिखते रहते हैं।
+जिन टैब्स में फ़ोटो है (देखें [Adding a New Tab](#adding-a-new-tab) के अंतर्गत **Image**), वे ऐप की [Home screen](/docs/b1-church/getting-started/navigating#home) पर फ़ोटो टाइल्स के रूप में दिखते हैं, जो आपके चर्च के नाम वाले सेक्शन में होते हैं। इसमें Verse of the Day टैब भी शामिल है, यदि आप उसे फ़ोटो देते हैं। फ़ोटो वाले टैब टैब बार में भी दिखते रहते हैं।
 
-उसी Member portal पेज (`/mobile/b1-mobile`) पर **Home screen tiles** setting नियंत्रित करती है कि ये tiles कैसे व्यवस्थित हों। एक **Layout** चुनें:
+उसी Member portal पेज (`/mobile/b1-mobile`) पर **Home screen tiles** सेटिंग तय करती है कि वे टाइल्स कैसे लेआउट होंगी। एक **Layout** चुनें:
 
-- **Grid** -- हर पंक्ति में दो tiles (डिफ़ॉल्ट)। जब tiles की संख्या विषम हो, तो पहला tile पूरी चौड़ाई लेता है।
-- **Scrolling row** -- tiles की एक पंक्ति जिसे सदस्य बगल में swipe करते हैं।
-- **List** -- एक सूची जिसमें हर tab के नाम के बगल में एक छोटा फ़ोटो thumbnail होता है।
+- **Grid** -- हर पंक्ति में दो टाइल्स (डिफ़ॉल्ट)। जब टाइल्स की संख्या विषम हो, तो पहली टाइल पूरी चौड़ाई में फैलती है।
+- **Scrolling row** -- टाइल्स की एक पंक्ति जिसे सदस्य बगल में स्वाइप करते हैं।
+- **Scrolling (automatic)** -- वही बगल वाली पंक्ति, लेकिन यह खुद भी चलती है, हर लगभग चार सेकंड में एक टाइल आगे बढ़ती है और अंत में शुरुआत पर वापस लौटती है। जब कोई सदस्य पंक्ति को छूता है, उस पर होवर करता है, या उस पर tab करता है, तो यह रुक जाती है और कुछ सेकंड बाद फिर शुरू होती है। जिन डिवाइस पर reduce motion सेट है, वहाँ पंक्ति स्थिर रहती है और **Scrolling row** की तरह काम करती है।
+- **List** -- एक सूची जिसमें हर टैब के नाम के साथ एक छोटा फ़ोटो थंबनेल होता है।
 
-लागू करने के लिए **Save** पर click करें।
+लागू करने के लिए **Save** पर क्लिक करें।
 
-## ये tabs कहां दिखते हैं {#where-these-tabs-appear}
+### Home Screen Sections
 
-यहां configure किए गए tabs **B1.church PWA** में दिखते हैं, जिसे आपके सदस्य `https://yourchurchname.b1.church` के किसी भी पेज से install करते हैं। इस पेज पर किए गए बदलाव अगली बार सदस्य के ऐप खोलने पर दिखते हैं।
+साइन इन किए हुए सदस्य हमेशा अपनी attendance history और जमा किए गए फ़ॉर्म [Me page](/docs/b1-church/getting-started/me-page) पर देखते हैं। उसी Member portal पेज (`/mobile/b1-mobile`) पर **Home screen sections** के स्विच इन्हें Home screen पर भी दिखा सकते हैं:
 
-फ़ोन पर, नीचे की tab bar में **Home**, आपके अधिकतम तीन tabs, और **More** दिखते हैं; कंप्यूटर पर, header में अधिकतम पांच दिखते हैं। अंतर्निर्मित screens (जैसे Sermons, Giving, या Groups) को पहले स्लॉट मिलते हैं, और **Internal Page** tabs बचे हुए स्लॉट भरते हैं। **External URL** और **Verse of the Day** tabs को कभी स्लॉट नहीं मिलता। हर tab, जिसमें वे भी शामिल हैं जो फ़िट नहीं होते, ऐप के **More** पेज पर सूचीबद्ध होता है। सदस्य क्या देखते हैं, इसके लिए [B1App का नेविगेशन](/docs/b1-church/getting-started/navigating) देखें। (Tabs उन सदस्यों के लिए पुराने [मूल B1 Mobile ऐप](/docs/b1-mobile/) में भी दिखाए जाते हैं जो अभी भी उसे चलाते हैं, लेकिन वह ऐप अब deprecated है और उसे अपडेट नहीं किया जा रहा।)
+- **Show My Attendance on Home** -- एक **My Attendance** सेक्शन जोड़ता है, जिसमें दिखता है कि सदस्य पिछले 90 दिनों में कितनी बार उपस्थित हुआ, उसकी दो सबसे हाल की visits, और पूरी attendance सूची का **History** लिंक।
+- **Show My Forms on Home** -- एक **My Forms** सेक्शन जोड़ता है, जिसमें सदस्य की दो सबसे हाल की form submissions और एक **All forms** लिंक दिखता है।
 
-## अगले कदम {#next-steps}
+दोनों डिफ़ॉल्ट रूप से बंद हैं। कोई सेक्शन केवल उन्हीं सदस्यों को दिखता है जो साइन इन हैं और जिनके पास दिखाने के लिए कम से कम एक रिकॉर्ड है। लागू करने के लिए **Save** पर क्लिक करें।
 
-- [चर्च सेटिंग्स](./church-settings.md) -- अपने चर्च की जानकारी और branding कॉन्फ़िगर करें
-- [भूमिकाएं और अनुमतियां](./roles-permissions.md) -- अपनी टीम के लिए पहुंच प्रबंधित करें
+## ये टैब कहाँ दिखते हैं
+
+यहाँ आप जो टैब कॉन्फ़िगर करते हैं, वे **B1.church PWA** में दिखाए जाते हैं, जिसे आपके सदस्य `https://yourchurchname.b1.church` के किसी भी पेज से इंस्टॉल करते हैं। इस पेज पर किए गए बदलाव अगली बार सदस्य के ऐप खोलने पर दिखते हैं।
+
+फ़ोन पर, नीचे का टैब बार **Home**, आपके अधिकतम तीन टैब, और **More** दिखाता है; कंप्यूटर पर, हेडर अधिकतम पाँच दिखाता है। बिल्ट-इन स्क्रीन (जैसे Sermons, Giving, या Groups) को पहले स्लॉट मिलते हैं, और **Internal Page** टैब बचे हुए स्लॉट भरते हैं। **External URL** और **Verse of the Day** टैब को कभी स्लॉट नहीं मिलता। हर टैब, जिसमें वे भी शामिल हैं जो फ़िट नहीं होते, ऐप के **More** पेज पर सूचीबद्ध होता है। देखें [Navigating B1App](/docs/b1-church/getting-started/navigating) कि सदस्य क्या देखते हैं। (टैब्स उन सदस्यों के लिए पुराने [B1 Mobile native app](/docs/b1-mobile/) में भी दिखाए जाते हैं जो उसे अब भी चलाते हैं, लेकिन वह ऐप अप्रचलित है और अब उसे अपडेट नहीं किया जाता।)
+
+## अगले चरण
+
+- [Church Settings](./church-settings.md) -- अपने चर्च की जानकारी और ब्रांडिंग कॉन्फ़िगर करें
+- [Roles & Permissions](./roles-permissions.md) -- अपनी टीम की पहुँच प्रबंधित करें

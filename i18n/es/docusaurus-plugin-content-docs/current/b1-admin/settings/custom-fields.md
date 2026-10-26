@@ -6,94 +6,98 @@ title: "Campos personalizados"
 
 <div class="article-intro">
 
-**Campos personalizados** te permiten rastrear tu propia información en cada registro de persona: cosas que B1 no tiene un campo incorporado para, como una fecha de vencimiento de verificación de antecedentes, un tamaño de camiseta o un estado de clase de bautismo. Defines un campo una vez en Configuración, luego completa un valor en cada perfil de persona y búsqueda en él. Esto reemplaza la solución alternativa más antigua de crear un formulario de Personas solo para almacenar un único dato personalizado.
+**Los campos personalizados** le permiten registrar su propia información en cada registro de persona: datos que B1 no tiene como campo integrado, como la fecha de vencimiento de una verificación de antecedentes, la talla de camiseta o el estado de una clase de bautismo. Define un campo una sola vez en Configuración, luego completa un valor en el perfil de cada persona y puede buscar o crear listas con él. Esto reemplaza la solución anterior de crear un formulario de Personas solo para guardar un dato personalizado.
 
 </div>
+
+## Video de capacitación
+
+<YouTube id="yUfDEbp2HQ4" title="Campos personalizados, edición masiva y exportación en B1" next="Crear grupos y agregar miembros en B1" nextUrl="/docs/b1-admin/groups/creating-groups" />
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Necesitas permiso de edición **Personas** para definir campos y completar valores, y acceso al área **Configuración**. Cualquiera con permiso de visualización de Personas puede ver los valores. Ver [Roles y permisos](./roles-permissions.md).
-- Decide qué deseas rastrear y qué tipo se ajusta mejor (texto, un número, una fecha, una respuesta de sí/no o una lista de selección) antes de comenzar.
+- Necesita permiso de edición de **Personas** para definir campos y completar valores, y acceso al área de **Configuración**. Cualquier persona con permiso de visualización de Personas puede ver los valores. Consulte [Roles y permisos](./roles-permissions.md).
+- Decida qué desea registrar y qué tipo se ajusta mejor (texto, número, fecha, sí/no o lista de selección) antes de empezar.
 
 </div>
 
-## Abrir campos personalizados
+## Abrir Campos personalizados
 
-En B1 Admin, abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), elige **Configuración > Configuración**, y haz clic en **Campos personalizados** en la lista de la izquierda para desplazarte a la sección **Campos personalizados**. También puedes ir directamente a **/settings/custom-fields**. Verás una lista de todos los campos que has definido, mostrando su **Nombre** y **Tipo de campo**. Si aún no has creado ninguno, el panel dice *"No custom fields have been added yet."*
+En B1 Admin, abra el [menú de salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), elija **Configuración > Configuración** y haga clic en **Campos personalizados** en la lista de la izquierda para desplazarse a la sección **Campos personalizados**. También puede ir directamente a **/settings/custom-fields**. Verá una lista de todos los campos que ha definido, con su **Nombre** y **Tipo de campo**. Si todavía no ha creado ninguno, el panel dice *"Todavía no se han agregado campos personalizados."*
 
 ## Agregar un campo
 
-1. Haz clic en **Agregar campo**.
-2. En el editor que se abre a la derecha, ingresa un **Nombre**: esta es la etiqueta que el personal verá en los perfiles de personas y en búsqueda (por ejemplo, *La verificación de antecedentes expira*).
-3. Elige un **Tipo de campo**:
-   - **Cuadro de texto**: texto corto de forma libre.
-   - **Número entero**: números sin decimales (por ejemplo, un recuento).
+1. Haga clic en **Agregar campo**.
+2. En el editor que se abre a la derecha, escriba un **Nombre**. Es la etiqueta que verá el personal en los perfiles de las personas y en la búsqueda (por ejemplo, *Vencimiento de verificación de antecedentes*).
+3. Elija un **Tipo de campo**:
+   - **Cuadro de texto**: texto corto de formato libre.
+   - **Número entero**: números sin decimales (por ejemplo, un conteo).
    - **Decimal**: números que pueden incluir decimales.
-   - **Fecha**: una fecha de calendario.
+   - **Fecha**: una fecha del calendario.
    - **Sí/No**: una respuesta simple de sí o no.
-   - **Opción múltiple**: una lista de selección. Cuando elijas este tipo, aparece un **editor de opciones** para que puedas agregar cada opción que las personas puedan seleccionar.
-4. Haz clic en **Guardar**.
+   - **Opción múltiple**: una lista de selección. Al elegir este tipo, aparece un **editor de opciones** para agregar cada opción que las personas pueden seleccionar.
+4. Haga clic en **Guardar**.
 
-El campo ahora está disponible en el perfil de cada persona.
+El campo ya está disponible en el perfil de todas las personas.
 
 :::info
-Los tipos de campo son el mismo conjunto utilizado para [preguntas de formulario](../forms/creating-forms.md), por lo que los valores se comportan consistentemente en toda B1.
+Los tipos de campo son los mismos que se usan en las [preguntas de formularios](../forms/creating-forms.md), así que los valores se comportan de forma coherente en todo B1.
 :::
 
 ## Editar un campo
 
-Haz clic en cualquier fila de campo en la lista para reabrirla en el editor. Cambia el nombre, tipo u opciones y haz clic en **Guardar**.
+Haga clic en cualquier fila de campo de la lista para volver a abrirlo en el editor. Cambie el nombre, el tipo o las opciones, y haga clic en **Guardar**.
 
 :::warning
-Cambiar el **Tipo de campo** de un campo que ya tiene valores (por ejemplo, de Cuadro de texto a Fecha) puede dejar valores previamente ingresados en un formato que ya no coincida con el nuevo tipo. Cambia tipos con cuidado una vez que el personal haya comenzado a completar el campo.
+Cambiar el **Tipo de campo** de un campo que ya tiene valores (por ejemplo, de Cuadro de texto a Fecha) puede dejar los valores ingresados anteriormente en un formato que ya no coincide con el nuevo tipo. Cambie los tipos con cuidado una vez que el personal haya empezado a completar el campo.
 :::
 
 ## Eliminar un campo
 
-Abre un campo para editar y haz clic en **Eliminar**. Se te pedirá que confirmes: *"Are you sure you wish to delete this custom field? Its stored values will also be removed."* Eliminar un campo elimina permanentemente **y todos los valores almacenados para ello** en todas las personas: esto no se puede deshacer.
+Abra un campo para editarlo y haga clic en **Eliminar**. Se le pedirá que confirme: *"¿Está seguro de que desea eliminar este campo personalizado? También se eliminarán sus valores almacenados."* Al eliminar un campo, se quita de forma permanente **y se borran todos los valores almacenados** en todas las personas. Esta acción no se puede deshacer.
 
 ## Completar valores en una persona
 
-Una vez que existe al menos un campo personalizado, sus valores viven junto con los detalles incorporados en cada registro de persona: los ves a la izquierda de su perfil, debajo de sus datos de contacto, y los editas en el mismo formulario que usas para el resto de la información de la persona. Nada extra aparece hasta que hayas definido tu primer campo.
+Una vez que exista al menos un campo personalizado, sus valores aparecen junto a los datos integrados en el registro de cada persona: los ve con los datos de contacto de la persona, a la izquierda de su perfil, y los edita en el mismo formulario que usa para el resto de su información. No aparece nada adicional hasta que defina su primer campo.
 
-1. Abre el registro de una persona en **Personas**.
-2. Haz clic en el botón **Editar** a la izquierda del perfil, debajo de los datos de contacto de la persona.
-3. Desplázate hasta el área **Campos personalizados** en la parte inferior del formulario de edición y completa un valor para cada campo. Cada campo muestra la entrada que coincide con su tipo: un selector de fecha para campos de Fecha, un menú desplegable de sí/no para campos Sí/No, una lista de selección para Opción múltiple, etc.
-4. Haz clic en **Guardar**. Tus valores de campo personalizado se guardan junto con el resto de los detalles de la persona.
+1. Abra el registro de una persona en **Personas**.
+2. Haga clic en el botón **Editar** a la izquierda del perfil, debajo de los datos de contacto de la persona.
+3. Desplácese hasta el área de **Campos personalizados**, al final del formulario de edición, y complete un valor para cada campo. Cada campo muestra el control que corresponde a su tipo: un selector de fecha para los campos de Fecha, una lista de sí/no para los campos de Sí/No, una lista de selección para Opción múltiple, etc.
+4. Haga clic en **Guardar**. Los valores de sus campos personalizados se guardan junto con el resto de los datos de la persona.
 
-De vuelta en el perfil, cualquier campo que tenga un valor ahora se muestra debajo de los datos de contacto de la persona como *Nombre del campo: valor* (las respuestas Sí/No se leen como *Sí* o *No*, y Opción múltiple muestra la etiqueta de la opción). Los campos dejados en blanco simplemente se ocultan. Para eliminar un valor, edita a la persona, limpia el campo y guarda: un valor vacío se elimina del registro en lugar de almacenarse como en blanco.
+De vuelta en el perfil, cualquier campo que tenga un valor aparece debajo de los datos de contacto de la persona como *Nombre del campo: valor* (las respuestas de Sí/No se muestran como *Sí* o *No*, y Opción múltiple muestra la etiqueta de la opción). Los campos vacíos simplemente se ocultan. Para quitar un valor, edite la persona, borre el campo y guarde: un valor vacío se elimina del registro en lugar de guardarse como vacío.
 
 :::tip
-El caso de uso clásico es la seguridad de voluntarios: crea un campo **Fecha** llamado *La verificación de antecedentes expira*, registra la fecha de cada voluntario, luego construye una [Lista guardada](../people/lists.md) que marque a cualquiera cuya fecha haya pasado.
+El caso de uso más común es la seguridad de los voluntarios: cree un campo de **Fecha** llamado *Vencimiento de verificación de antecedentes*, registre la fecha de cada voluntario y luego cree una [Lista guardada](../people/lists.md) que marque a quienes ya superaron esa fecha.
 :::
 
-## Buscar y construir listas en campos personalizados
+## Buscar y crear listas con campos personalizados
 
-Los campos personalizados son totalmente buscables:
+Los campos personalizados se pueden buscar por completo:
 
-1. En la página **Personas**, abre la [Búsqueda avanzada](../people/searching-people.md).
-2. Expande la categoría **Campos personalizados**.
-3. Marca el campo en el que deseas filtrar, elige un operador e ingresa un valor. Los operadores ofrecidos coinciden con el tipo del campo:
+1. En la página **Personas**, abra la [Búsqueda avanzada](../people/searching-people.md).
+2. Expanda la categoría **Campos personalizados**.
+3. Marque el campo por el que desea filtrar, elija un operador e ingrese un valor. Los operadores disponibles corresponden al tipo del campo:
    - **Cuadro de texto**: contiene, es igual a, comienza con, termina con.
-   - **Número entero / Decimal**: es igual a, mayor que, mayor que o igual a, menor que, menor que o igual a.
-   - **Fecha**: es igual a, después (mayor que), antes (menor que).
-   - **Sí/No**: es igual a sí o no.
+   - **Número entero / Decimal**: es igual a, mayor que, mayor o igual que, menor que, menor o igual que.
+   - **Fecha**: es igual a, posterior a (mayor que), anterior a (menor que).
+   - **Sí/No**: es igual a Sí o No.
    - **Opción múltiple**: es igual a o contiene una de las opciones.
 
-Guarda cualquier búsqueda de campo personalizado como [Lista](../people/lists.md). Las listas son consultas en vivo, para que una lista construida en *La verificación de antecedentes expira es antes de hoy* vuelva a verificar a cada persona cada vez que la abres: sin mantenimiento manual.
+Puede guardar cualquier búsqueda de campos personalizados como una [Lista](../people/lists.md). Las listas son consultas dinámicas, así que una lista creada con *Vencimiento de verificación de antecedentes es anterior a hoy* vuelve a revisar a todas las personas cada vez que la abre, sin necesidad de mantenimiento manual.
 
 ## Mostrar un campo personalizado como columna
 
-Para ver los valores de un campo para todos a la vez, agrégalo como columna en la página **Personas**. Cambia **View as** a **Table**, haz clic en el icono **Select columns** en el encabezado de la página, cambia a la pestaña **Personalizado** y marca el campo. El valor de cada persona aparece en su propia columna junto a los incorporados. Ver [Mostrar campos personalizados como columnas](../people/searching-people.md#showing-custom-fields-as-columns).
+Para ver los valores de un campo para todos a la vez, agréguelo como columna en la página **Personas**. Cambie **Ver como** a **Tabla**, haga clic en el ícono **Seleccionar columnas** en el encabezado de la página, cambie a la pestaña **Personalizado** y marque el campo. El valor de cada persona aparece en su propia columna junto a las integradas. Consulte [Mostrar campos personalizados como columnas](../people/searching-people.md#showing-custom-fields-as-columns).
 
-## Qué sucede en la fusión
+## Qué sucede al combinar
 
-Cuando [fusionas dos registros de persona](../people/adding-people.md), los valores de campo personalizado se transfieren automáticamente. La persona que mantienes se aferra a sus propios valores; para cualquier campo donde solo la persona eliminada tenía un valor, ese valor se copia para que nada se pierda.
+Al [combinar dos registros de personas](../people/adding-people.md), los valores de los campos personalizados se trasladan automáticamente. La persona que conserva mantiene sus propios valores; para cualquier campo donde solo la persona eliminada tenía un valor, ese valor se copia para que no se pierda nada.
 
 ## Artículos relacionados
 
-- [Búsqueda de personas](../people/searching-people.md) — búsqueda avanzada, incluyendo la categoría Campos personalizados, y mostrar campos personalizados como columnas
-- [Listas guardadas](../people/lists.md) — guarda una búsqueda de campo personalizado y vuelve a ejecutarla en vivo
-- [Roles y permisos](./roles-permissions.md) — quién puede definir campos y editar valores
-- [Crear formularios](../forms/creating-forms.md) — para recopilación de datos de múltiples preguntas donde un formulario completo se ajusta mejor que campos únicos
+- [Buscar personas](../people/searching-people.md): búsqueda avanzada, incluida la categoría Campos personalizados, y cómo mostrar campos personalizados como columnas
+- [Listas guardadas](../people/lists.md): guarde una búsqueda de campos personalizados y vuelva a ejecutarla en tiempo real
+- [Roles y permisos](./roles-permissions.md): quién puede definir campos y editar valores
+- [Crear formularios](../forms/creating-forms.md): para la recopilación de datos con varias preguntas, cuando un formulario completo se ajusta mejor que campos individuales

@@ -6,83 +6,80 @@ title: Introdução ao B1.church
 
 <div class="article-intro">
 
-Obrigado por escolher B1.church! Esta introdução o guiará pelos fundamentos de como começar a usar a plataforma B1.church Admin, desde fazer login e navegar pelo Dashboard até configurar as informações da sua igreja e explorar as ferramentas disponíveis.
+Obrigado por escolher o B1.church! Esta introdução mostra os primeiros passos na plataforma B1.church Admin, desde entrar no sistema e navegar pelo seu Painel até configurar as informações da sua igreja e explorar as ferramentas disponíveis.
 
 </div>
 
 Para mais suporte, envie um e-mail para [support@churchapps.org](mailto:support@churchapps.org).
 
-## Vídeo de Introdução
+## Vídeo de introdução
 
-<video controls width="100%">
-  <source src="/b1Admin/intro/output.mp4" type="video/mp4" />
-  Seu navegador não suporta a tag de vídeo.
-</video>
+<YouTube id="D2iUhe0ZZhI" title="A Tour of B1 Admin" next="A Tour of the B1.church Member App" nextUrl="/docs/b1-church/getting-started/navigating" />
 
-## Passo a Passo
+## Passo a passo
 
-1. Usando Google Chrome, vá para [admin.b1.church](https://admin.b1.church) e faça login com seu nome de usuário e senha.
-2. Isso o levará ao **Dashboard**, a página inicial do B1.church Admin. Ele mostra o serviço desta semana e quem está marcado e servindo, juntamente com **Minhas tarefas** (suas tarefas abertas) e **Meus Grupos**. Use o **menu Jump** (a barra de pesquisa no canto superior esquerdo, veja abaixo) para alcançar Pessoas, Doações, Website e o resto do aplicativo. Clique no pequeno logotipo da igreja ao lado dele para retornar ao Dashboard a qualquer momento.
-3. Abra o menu Jump e escolha **Settings** para configurar as informações da sua igreja, funções administrativas e outros detalhes.
-4. Clique em **Editar** na seção **Informações da Igreja** para configurar as informações da sua igreja.
-5. De volta no domingo, clique no **ícone de interrogação** no canto superior direito para obter ajuda e tutoriais.
-6. Clique em **View Documentation** para ver uma lista de tutoriais para ajudá-lo a começar com B1.church.
-7. Navegue de volta ao Dashboard e clique na **seta ao lado de sua foto de perfil** e escolha **Switch App**.
-8. Escolha **Lessons.church** para gerenciar as lições e currículo online da sua igreja.
-9. Volte ao B1.church clicando na seta ao lado de sua foto de perfil e escolhendo **Switch App** novamente.
-10. Você pode agora acessar B1.church através do **portal de membros** ou do **portal administrativo**. O portal de membros permite que você veja como o B1.church aparece para seus membros, visualize seus grupos e gerencie suas doações pessoais.
+1. Usando o Google Chrome, acesse [admin.b1.church](https://admin.b1.church) e entre com o seu nome de usuário e senha.
+2. Isso levará você ao **Painel**, a página inicial do B1.church Admin. Ela mostra o culto da semana e quem fez check-in e está servindo, além de **Minhas tarefas** (suas tarefas em aberto) e **Meus Grupos**. Use o **menu de atalhos** (a barra de pesquisa no canto superior esquerdo, veja abaixo) para acessar Pessoas, Doações, Site e os demais aplicativos. Clique no pequeno logotipo da igreja ao lado dele para voltar ao Painel a qualquer momento.
+3. Abra o menu de atalhos e escolha **Configurações** para configurar as informações da sua igreja, os papéis administrativos e outros detalhes.
+4. Clique em **Editar** na seção **Informações da Igreja** para configurar os dados da sua igreja.
+5. Em um domingo, clique no **ícone de ponto de interrogação** no canto superior direito para obter ajuda e tutoriais.
+6. Clique em **Ver documentação** para ver uma lista de tutoriais que vão ajudar você a começar com o B1.church.
+7. Volte ao Painel e clique na **seta ao lado da sua foto de perfil**, depois escolha **Trocar de aplicativo**.
+8. Escolha **Lessons.church** para gerenciar as lições e o currículo online da sua igreja.
+9. Volte ao B1.church clicando na seta ao lado da sua foto de perfil e escolhendo **Trocar de aplicativo** novamente.
+10. Agora você pode entrar no B1.church pelo **portal do membro** ou pelo **portal administrativo**. O portal do membro permite ver como o B1.church aparece para os seus membros, visualizar os seus grupos e gerenciar as suas doações pessoais.
 
 :::tip
-Comece pela página [Configurações](./settings/) para configurar o nome da sua igreja, marca e permissões de time. Isso garante que tudo mais que você configurar seja exibido corretamente.
+Comece pela página de [Configurações](./settings/) para configurar o nome da igreja, a identidade visual e as permissões da equipe. Isso garante que tudo o que você configurar depois seja exibido corretamente.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
 
-## Navegando com o menu Jump {#getting-around-with-the-jump-menu}
+## Navegando com o menu de atalhos {#getting-around-with-the-jump-menu}
 
-Todo o B1 Admin é acessado a partir do **menu Jump** no canto superior esquerdo do cabeçalho. Ao lado do pequeno logotipo da igreja (que o leva de volta ao Dashboard) está uma barra de pesquisa que mostra onde você está, como **Doações › Lotes**, juntamente com uma dica de **Ctrl K** (ou **⌘ K**).
+Todo o B1 Admin é acessado pelo **menu de atalhos** no canto superior esquerdo do cabeçalho. Ao lado do pequeno logotipo da igreja (que leva de volta ao Painel) há uma barra de pesquisa que mostra onde você está, como **Doações › Lotes**, junto com a dica **Ctrl K** (ou **⌘ K**).
 
 ### Navegando por seções e páginas
 
-1. Clique na barra de pesquisa, ou pressione **Ctrl+K** (**Cmd+K** em um Mac), ou pressione **/** enquanto você não estiver digitando em um campo de texto.
-2. O menu lista todas as seções que você tem acesso — Dashboard, Pessoas, Doações, Serviços, Sermões, Website, Calendários, Celular e Configurações. A seção em que você está já está expandida e sua página atual está destacada.
-3. Clique em uma seção para expandi-la e ver suas páginas (por exemplo, **Pessoas** contém **Pessoas**, **Grupos**, **Frequência** e **Formulários**). Apenas uma seção é expandida por vez.
-4. Clique em uma página para ir lá.
+1. Clique na barra de pesquisa, pressione **Ctrl+K** (**Cmd+K** em um Mac) ou pressione **/** enquanto não estiver digitando em um campo de texto.
+2. O menu lista todas as seções às quais você tem acesso — Painel, Pessoas, Doações, Serviço, Sermões, Site, Calendários, Mobile e Configurações. A seção em que você está já aparece expandida e a sua página atual fica destacada.
+3. Clique em uma seção para expandi-la e ver as suas páginas (por exemplo, **Pessoas** contém **Pessoas**, **Grupos**, **Presença**, **Formulários** e **Notas**). Apenas uma seção fica expandida por vez.
+4. Clique em uma página para ir até ela.
 
-Você também pode usar o teclado: as setas **Para Cima** e **Para Baixo** se movem pela lista, **Para Direita** expande uma seção, **Para Esquerda** a colapsa e **Enter** abre o item destacado. Pressione **Esc** para fechar o menu sem ir a lugar algum.
+Você também pode usar o teclado: as setas **para cima** e **para baixo** movem-se pela lista, **para a direita** expande uma seção, **para a esquerda** recolhe, e **Enter** abre o item destacado. Pressione **Esc** para fechar o menu sem ir a lugar nenhum.
 
-Nestes documentos, uma etapa como "No menu Jump, escolha **People > Groups**" significa abrir o menu Jump, expandir **People** e clicar em **Groups**.
+Nesta documentação, um passo como "No menu de atalhos, escolha **Pessoas > Grupos**" significa abrir o menu de atalhos, expandir **Pessoas** e clicar em **Grupos**.
 
-### Pesquisa
+### Pesquisando
 
-Em vez de navegar, você pode começar a digitar assim que o menu abre para ir direto a uma pessoa, grupo, plano, fundo ou qualquer página administrativa:
+Em vez de navegar, você pode começar a digitar assim que o menu abrir para ir direto a uma pessoa, grupo, plano, fundo ou qualquer página administrativa:
 
-1. Digite um nome ou a página que você deseja (por exemplo, um nome de pessoa, "batches", "songs" ou "my work").
-2. Os resultados são agrupados por tipo — pessoas, grupos, planos, fundos e páginas para ir. Use as setas para se mover entre resultados e **Enter** para selecionar um, ou clique em um resultado com seu mouse.
+1. Digite um nome ou a página que você procura (por exemplo, o nome de uma pessoa, "lotes", "músicas" ou "meu trabalho"). Toda página dentro de uma seção pode ser encontrada dessa forma, assim como cada etapa de **Ações Rápidas**. Termos comuns também funcionam — "qr code" encontra **Registro de visitantes por QR code**, e "upload logo" encontra **Aparência**. Hífens não importam ("b1 checkin" encontra **Iniciar check-in**), e, se a sua frase exata não encontrar nada, a pesquisa procura resultados que contenham todas as suas palavras em qualquer ordem ("logo igreja" encontra **Adicionar o logotipo da sua igreja**).
+2. Os resultados são agrupados por tipo — pessoas, grupos, planos, fundos e páginas para onde ir. Use as setas do teclado para se mover entre os resultados e **Enter** para selecionar um, ou clique em um resultado com o mouse.
 
-A pesquisa também pode iniciar tarefas comuns. Digite o que você deseja fazer e selecione:
+A pesquisa também pode iniciar tarefas comuns. Digite o que você quer fazer e selecione:
 
-- **Create a page**, **Create a group**, **Set up FreeShow** ou **Set up FreePlay** abre o assistente de configuração rápida correspondente bem onde você está, sem voltar ao Dashboard.
-- **Add a person** abre o formulário de nova pessoa.
-- **Start check-in** abre o aplicativo de check-in.
+- **Criar uma página**, **Criar um grupo**, **Configurar o FreeShow** ou **Configurar o FreePlay** abre o assistente de configuração rápida correspondente bem onde você está, sem precisar voltar ao Painel.
+- **Adicionar uma pessoa** abre o formulário de nova pessoa.
+- **Iniciar check-in** abre o aplicativo de check-in.
 
-As ações que você vê dependem de suas permissões.
+As ações que você vê dependem das suas permissões.
 
-### Ações Rápidas
+### Ações rápidas
 
-O último grupo no menu Jump é **Quick Actions** — os atalhos de configuração que costumavam aparecer no Dashboard. Expanda-o para encontrar etapas como **Add Your Church Logo**, **Create Your First Webpage**, **Set Up Online Giving**, **Create Your First Group** e **Invite Team Members**. As ações de configuração abrem seu assistente de configuração rápida na primeira vez; uma vez que você configure esse recurso, eles o levam à sua página.
+O último grupo do menu de atalhos é **Ações Rápidas** — os atalhos de configuração que costumavam aparecer no Painel. Expanda-o para encontrar etapas como **Adicionar o logotipo da sua igreja**, **Criar sua primeira página da web**, **Configurar doações online**, **Criar seu primeiro grupo** e **Convidar membros da equipe**. As ações de configuração abrem o assistente de configuração rápida na primeira vez; depois que você configurar esse recurso, elas levam direto à página dele.
 
 :::tip
-Pesquisar é frequentemente a maneira mais rápida de alcançar uma página — digite parte do nome da página (como "roles" ou "funds") em vez de expandir Settings, Serving ou Donations à mão.
+A pesquisa costuma ser a forma mais rápida de chegar a uma página — digite parte do nome da página (como "papéis" ou "fundos") em vez de expandir Configurações, Serviço ou Doações manualmente.
 :::
 
-## Próximos Passos
+## Próximos passos
 
-Após assistir a esta introdução, explore esses recursos principais:
+Depois de assistir a esta introdução, explore estes recursos principais:
 
-- [Adicionando Pessoas](./people/adding-people) — Aprenda como adicionar membros ao seu banco de dados
-- [Grupos](./groups/) — Configure e gerencie grupos de igreja
-- [Planos de Serviço](./serving/plans) — Organize seu ministério de serviço
-- [Frequência](./attendance/) — Rastreie frequência e check-in
-- [Website](./website/) — Construa e personalize seu website de igreja
-- [Configurações](./settings/) — Configure suas informações de igreja e permissões
+- [Adicionando pessoas](./people/adding-people) -- Aprenda a adicionar membros ao seu banco de dados
+- [Grupos](./groups/) -- Configure e gerencie os grupos da igreja
+- [Planos de serviço](./serving/plans) -- Organize o seu ministério de serviço
+- [Presença](./attendance/) -- Acompanhe a presença e o check-in
+- [Site](./website/) -- Crie e personalize o site da sua igreja
+- [Configurações](./settings/) -- Configure as informações da igreja e as permissões

@@ -6,129 +6,129 @@ title: "Guide : Gérer les bénévoles du dimanche"
 
 <div class="article-intro">
 
-Configurez vos équipes de bénévoles, créez des plans de service hebdomadaires, assignez des postes, construisez des ordres de service avec des chansons de culte et assignez des tâches du dimanche. À la fin, vos bénévoles verront leurs assignations sur le site Web B1 et l'application mobile, et pourront accepter ou refuser directement.
+Configurez vos équipes de bénévoles, créez des plans de culte hebdomadaires, attribuez les postes, construisez l'ordre du culte avec les chants de louange et assignez les tâches du dimanche. Au terme de ce guide, vos bénévoles verront leurs affectations sur le site web et l'application mobile B1, et pourront les accepter ou les refuser directement.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Compte B1 Admin avec accès administrateur
-- Bénévoles [ajoutés à votre répertoire de personnes](../people/adding-people.md)
+- Un compte B1 Admin disposant d'un accès administrateur
+- Des bénévoles [ajoutés à votre répertoire de personnes](../people/adding-people.md)
 
 </div>
 
-## Étape 1 : créer des équipes de bénévoles
+## Étape 1 : Créer les équipes de bénévoles
 
-Organisez vos bénévoles en équipes pour pouvoir gérer les assignations par domaine ministériel.
+Organisez vos bénévoles en équipes pour gérer les affectations par domaine de ministère.
 
-Suivez les guides [Créer des groupes](../groups/creating-groups.md) et [Membres du groupe](../groups/group-members.md) pour :
+Suivez les guides [Creating Groups](../groups/creating-groups.md) et [Group Members](../groups/group-members.md) pour :
 
 1. Créer une catégorie (par exemple, « Équipes du dimanche matin »)
-2. Créer des groupes comme « Équipe de culte », « Son et médias », « Accueillants », « Bénévoles du ministère des enfants »
-3. Ajouter des bénévoles à chaque groupe en recherchant leur nom et en cliquant sur Ajouter
+2. Créer des groupes comme « Équipe de louange », « Son et médias », « Accueil », « Bénévoles du ministère des enfants »
+3. Ajouter les bénévoles à chaque groupe en recherchant leur nom et en cliquant sur Add
 
 :::tip
-Désignez les responsables d'équipe avec l'icône en forme d'étoile (**Nommer responsable**) dans la liste des membres du groupe (cliquez sur **All members** sur la page du groupe). Les responsables peuvent gérer le calendrier de leur propre groupe et coordonner leur équipe.
+Désignez les responsables d'équipe avec l'icône étoile (**Make Leader**) dans la liste des membres du groupe (cliquez sur **All members** sur la page du groupe). Les responsables peuvent gérer le calendrier de leur groupe et coordonner leur équipe.
 :::
 
-## Étape 2 : créer votre bibliothèque de chansons
+## Étape 2 : Constituer votre bibliothèque de chants
 
-Ajoutez des chansons de culte pour pouvoir les intégrer aux plans de service chaque semaine.
+Ajoutez des chants de louange pour pouvoir les intégrer aux plans de culte chaque semaine.
 
-Suivez le guide [Chansons](../serving/songs.md) pour :
+Suivez le guide [Songs](../serving/songs.md) pour :
 
-1. Ajouter des chansons de culte avec titres, artistes et durée
-2. Pour chaque chanson, ajouter des arrangements avec paroles et désignations de tonalité
-3. Ajouter des liens externes vers les performances YouTube, les diagrammes d'accords ou les partitions
+1. Ajouter des chants de louange avec leur titre, leur auteur et leur durée
+2. Pour chaque chant, ajouter des arrangements avec les paroles et les indications de tonalité
+3. Ajouter des liens externes vers des interprétations sur YouTube, des grilles d'accords ou des partitions
 
 :::info
-Les chansons ajoutées ici peuvent être intégrées à n'importe quel plan de service plus tard. Construisez votre bibliothèque une fois, réutilisez-la chaque semaine.
+Les chants ajoutés ici peuvent être intégrés à n'importe quel plan de culte par la suite. Constituez votre bibliothèque une seule fois, puis réutilisez-la chaque semaine.
 :::
 
-## Étape 3 : créer un plan de service
+## Étape 3 : Créer un plan de culte
 
-Les plans sont les assignations hebdomadaires qui indiquent aux bénévoles où ils sont nécessaires.
+Les plans sont les affectations hebdomadaires qui indiquent aux bénévoles où ils sont nécessaires.
 
 Suivez le guide [Plans](../serving/plans.md) pour :
 
-1. Accédez à Service, sélectionnez votre onglet ministériel, et ouvrez votre type de plan
-2. Cliquez sur **New Plan** et choisissez la date du service. Pour configurer plusieurs dimanches à la fois, copiez depuis le plan précédent et indiquez le nombre de semaines dans **Repeat weekly for this many weeks**
-3. Dans la section **Serving Team Assignments** du plan, ajoutez des postes et assignez-y des bénévoles
-4. Les bénévoles verront leur statut d'assignation (Demandé, Confirmé, En attente)
-5. Activez les [rappels aux bénévoles](../serving/plans.md#volunteer-reminders) pour le type de plan afin que les bénévoles soient rappelés par notification push, e-mail ou texto avant chaque service
+1. Accéder à Serving, sélectionner l'onglet de votre ministère et ouvrir votre type de plan
+2. Cliquer sur **New Plan** et choisir la date du culte. Pour préparer plusieurs dimanches d'un coup, copiez le plan précédent et saisissez le nombre de semaines dans **Repeat weekly for this many weeks**
+3. Dans la section **Serving Team Assignments** du plan, ajouter des postes et y affecter des bénévoles
+4. Les bénévoles verront leur statut d'affectation (Requested, Confirmed, Pending)
+5. Activez les [rappels aux bénévoles](../serving/plans.md#volunteer-reminders) pour le type de plan afin que les bénévoles reçoivent un rappel par notification push, courriel ou message texte avant chaque culte
 
-## Étape 4 : créer l'ordre de service
+## Étape 4 : Construire l'ordre du culte
 
-Définissez le flux de votre service du début à la fin.
+Définissez le déroulement de votre culte, du début à la fin.
 
-Suivez le guide [Ordre de service](../serving/service-order.md) pour :
+Suivez le guide [Service Order](../serving/service-order.md) pour :
 
-1. Ouvrez votre plan et repérez la section **Order of Service** en haut
-2. Cliquez sur **Add** pour ajouter des éléments : chansons de culte (de votre bibliothèque), prières, lectures bibliques, annonces, sermon, offrande, clôture
-3. Faites glisser et déposez les éléments pour réorganiser le flux du service
+1. Ouvrir votre plan et repérer la section **Order of Service** en haut de la page
+2. Cliquer sur **Add** pour ajouter des éléments : chants de louange (issus de votre bibliothèque), prières, lectures bibliques, annonces, sermon, offrande, envoi
+3. Glisser-déposer les éléments pour réorganiser le déroulement du culte
 
 :::info
-Les ordres de service sont spécifiques au plan. Les modifications ici n'affectent pas les autres plans ou la bibliothèque de chansons maître.
+Les ordres de culte sont propres à chaque plan. Les modifications effectuées ici n'affectent ni les autres plans ni la bibliothèque principale de chants.
 :::
 
-## Étape 5 : assignez les tâches du dimanche
+## Étape 5 : Assigner les tâches du dimanche
 
-Suivez les responsabilités du dimanche qui ne relèvent que d'un cas afin que rien ne tombe à travers les mailles du filet.
+Suivez les responsabilités ponctuelles du dimanche afin que rien ne passe entre les mailles du filet.
 
-Suivez le guide [Tâches](../serving/tasks.md) pour :
+Suivez le guide [Tasks](../serving/tasks.md) pour :
 
-1. Créer des tâches pour des responsabilités telles que « Préparer les éléments de communion », « Imprimer les bulletins » ou « Configurer l'équipement sonore »
+1. Créer des tâches pour des responsabilités comme « Préparer les éléments de la communion », « Imprimer les bulletins » ou « Installer le matériel de sonorisation »
 2. Assigner chaque tâche à la personne ou au groupe responsable
-3. Les tâches apparaissent sous **Service > Mon travail**, sur le tableau de bord de l'assignataire et dans l'application mobile
+3. Les tâches apparaissent sous **Serving > My Work**, sur le tableau de bord de la personne assignée et dans l'application mobile
 
 :::info
-B1 Admin ne crée plus de tâches selon un calendrier répétitif. Pour les processus répétitifs qui font passer les gens à travers des étapes, utilisez les [flux de travail](../serving/workflows.md) avec un déclencheur de calendrier.
+B1 Admin ne crée plus de tâches selon un calendrier récurrent. Pour les processus répétitifs qui font passer des personnes par différentes étapes, utilisez les [Workflows](../serving/workflows.md) avec un déclencheur de calendrier.
 :::
 
-## Étape 6 : activer l'auto-inscription (facultatif)
+## Étape 6 : Activer l'inscription en libre-service (facultatif)
 
-Laissez les bénévoles s'inscrire pour les positions eux-mêmes au lieu d'attendre les assignations administrateur.
+Permettez aux bénévoles de s'inscrire eux-mêmes aux postes plutôt que d'attendre les affectations de l'administration.
 
-1. Lors de la création ou de la modification d'un plan, définissez une **Date limite d'inscription** (heures avant le service) pour contrôler quand l'auto-inscription se ferme. Laissez vide pour pas de limite. Les nouveaux plans reprennent la date limite du plan précédent.
-2. Basculez éventuellement **Afficher les noms des bénévoles sur la page d'inscription** pour permettre aux bénévoles de voir qui d'autre est inscrit.
-3. Pour chaque position, cochez la case **Autoriser l'auto-inscription** pour la rendre disponible pour le libre-service.
-4. Ajoutez une **Description** à chaque position afin que les bénévoles sachent en quoi consiste le rôle.
+1. Lors de la création ou de la modification d'un plan, définissez une **Signup Deadline** (nombre d'heures avant le culte) pour déterminer la date limite des inscriptions en libre-service. Les heures sont décomptées à partir de la première heure de culte du plan. Laissez vide s'il n'y a pas de date limite. Les nouveaux plans reprennent la date limite du plan précédent.
+2. Vous pouvez également activer **Show volunteer names on signup page** pour permettre aux bénévoles de voir qui d'autre s'est inscrit.
+3. Pour chaque poste, cochez la case **Allow Self-Signup** pour le rendre disponible en libre-service.
+4. Ajoutez une **Description** à chaque poste pour que les bénévoles sachent en quoi consiste le rôle.
 
-Une fois que les positions d'auto-inscription sont créées, elles apparaissent automatiquement sur les pages d'inscription des bénévoles sur [B1.church](../../b1-church/serving/volunteer-signup) et l'[application mobile B1](../../b1-mobile/serving/volunteer-signup). Les membres peuvent parcourir les positions ouvertes, voir combien de places restent et s'inscrire en un seul clic.
+Une fois les postes en libre-service créés, ils apparaissent automatiquement sur les pages d'inscription des bénévoles sur [B1.church](../../b1-church/serving/volunteer-signup) et dans l'[application mobile B1](../../b1-mobile/serving/volunteer-signup). Les membres peuvent consulter les postes ouverts, voir le nombre de places restantes et s'inscrire en un seul clic.
 
 :::tip
-Mélangez les positions assignées par l'administrateur et les positions d'auto-inscription dans le même plan. Par exemple, assignez directement votre leader de culte, mais laissez les accueillants et les serveurs de café s'auto-sélectionner.
+Combinez des postes attribués par l'administration et des postes en libre-service dans un même plan. Par exemple, assignez directement votre responsable de louange, mais laissez les personnes de l'accueil et les serveurs de café se porter volontaires.
 :::
 
-## Étape 7 : informer les bénévoles
+## Étape 7 : Informer les bénévoles
 
-Les bénévoles assignés voient automatiquement leurs plans et peuvent répondre.
+Les bénévoles assignés voient automatiquement leurs plans et peuvent y répondre.
 
-1. Les bénévoles voient leurs plans sur [B1.church](../../b1-church/plans/viewing-plans.md) et l'[application mobile B1](../../b1-mobile/serving/viewing-plans.md)
-2. Ils peuvent accepter ou refuser les assignations directement à partir de l'une ou l'autre plateforme
-3. Ils peuvent définir des dates de blocage pour les semaines où ils ne sont pas disponibles
-4. Les plans peuvent être imprimés pour les répétitions ou affichés en coulisse
-5. Les bénévoles peuvent parcourir et s'inscrire pour les positions ouvertes via la [page d'inscription des bénévoles](../../b1-church/serving/volunteer-signup)
+1. Les bénévoles consultent leurs plans sur [B1.church](../../b1-church/plans/viewing-plans.md) et dans l'[application mobile B1](../../b1-mobile/serving/viewing-plans.md)
+2. Ils peuvent accepter ou refuser leurs affectations directement depuis l'une ou l'autre plateforme
+3. Ils peuvent indiquer des dates d'indisponibilité pour les semaines où ils ne sont pas disponibles
+4. Les plans peuvent être imprimés pour les répétitions ou affichés en coulisses
+5. Les bénévoles peuvent parcourir les postes ouverts et s'y inscrire via la [page d'inscription des bénévoles](../../b1-church/serving/volunteer-signup)
 
 :::tip
-Les notifications push sur l'application mobile alertent les bénévoles lorsqu'ils reçoivent de nouvelles assignations ou lorsque les plans changent.
+Les notifications push de l'application mobile alertent les bénévoles lorsqu'ils reçoivent de nouvelles affectations ou lorsque les plans changent.
 :::
 
-## C'est fini !
+## Terminé !
 
-Votre système de gestion des bénévoles est configuré. Chaque semaine, créez un nouveau plan, assignez des postes, et votre équipe voit tout sur son téléphone ou son ordinateur.
+Votre système de gestion des bénévoles est en place. Chaque semaine, créez un nouveau plan, attribuez les postes, et votre équipe retrouve toutes les informations sur son téléphone ou son ordinateur.
 
 ## Articles connexes
 
-- [Créer des groupes](../groups/creating-groups.md) — configurer des équipes et des catégories
-- [Membres du groupe](../groups/group-members.md) — ajouter et gérer les membres de l'équipe
-- [Plans](../serving/plans.md) — créer et gérer les plans de service
-- [Ordre de service](../serving/service-order.md) — construire le flux d'un service
-- [Chansons](../serving/songs.md) — gérer votre bibliothèque de chansons de culte
-- [Tâches](../serving/tasks.md) — assigner des éléments d'action aux personnes ou aux groupes
-- [Flux de travail](../serving/workflows.md) — faire passer les gens à travers des processus répétables avec des déclencheurs et des étapes automatisées
-- [Affichage des plans (Web)](../../b1-church/plans/viewing-plans.md) — comment les bénévoles voient les plans en ligne
-- [Affichage des plans (Mobile)](../../b1-mobile/serving/viewing-plans.md) — comment les bénévoles voient les plans sur mobile
-- [Inscription des bénévoles (Web)](../../b1-church/serving/volunteer-signup) — comment les membres s'auto-sélectionnent les positions de bénévole
-- [Inscription des bénévoles (Mobile)](../../b1-mobile/serving/volunteer-signup) — auto-inscription des bénévoles sur mobile
+- [Creating Groups](../groups/creating-groups.md) — créer des équipes et des catégories
+- [Group Members](../groups/group-members.md) — ajouter et gérer les membres d'une équipe
+- [Plans](../serving/plans.md) — créer et gérer les plans de culte
+- [Service Order](../serving/service-order.md) — construire le déroulement d'un culte
+- [Songs](../serving/songs.md) — gérer votre bibliothèque de chants de louange
+- [Tasks](../serving/tasks.md) — assigner des actions à des personnes ou à des groupes
+- [Workflows](../serving/workflows.md) — faire progresser les personnes dans des processus répétables grâce à des déclencheurs et des étapes automatisées
+- [Viewing Plans (Web)](../../b1-church/plans/viewing-plans.md) — comment les bénévoles consultent les plans en ligne
+- [Viewing Plans (Mobile)](../../b1-mobile/serving/viewing-plans.md) — comment les bénévoles consultent les plans sur mobile
+- [Volunteer Signup (Web)](../../b1-church/serving/volunteer-signup) — comment les membres choisissent eux-mêmes un poste de bénévole
+- [Volunteer Signup (Mobile)](../../b1-mobile/serving/volunteer-signup) — inscription de bénévoles en libre-service sur mobile

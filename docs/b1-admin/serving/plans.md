@@ -38,7 +38,7 @@ Full admin access is not required to manage plans. Anyone who is a member of a m
 3. If your ministry has [templates](./plan-templates.md), you can pick one under **Start from template** to fill in the order of service, positions, and notes in one step.
 4. Otherwise, if you would like to copy from a previous plan, use **Copy from Previous Plan** to choose **Positions Only** or **Positions and Assignments**. If you do not want to copy, choose **Nothing**. You can also check **Copy Order of Service**. When you copy from a previous plan, the new plan also keeps that plan's **Notes**, **Signup Deadline**, **Show volunteer names on signup page**, and automatic-replacement setting, so you don't have to re-enter them each week. You can change any of them in the new plan's settings.
 5. To set up several weeks at once while copying, enter a number in **Repeat weekly for this many weeks** (up to 12). B1 creates one plan per week, each copied from the one before it. If the plan is named after its date, each new plan is named after its own date.
-6. Optionally set the **Signup Deadline (hours before service)**. A new plan starts with the previous plan's deadline, and you can change it here. Leave it blank for no deadline.
+6. Optionally set the **Signup Deadline (hours before service)**. A new plan starts with the previous plan's deadline, and you can change it here. Leave it blank for no deadline. See [Plan Settings](#plan-settings) for how the deadline is counted.
 7. Save the plan. You can now begin assigning team members and building out the [service order](./service-order.md).
 
 :::tip
@@ -59,7 +59,7 @@ When you open a plan, the plan's name, ministry, plan type, and service date app
 3. Click on **People Needed** and choose volunteers to fill that position. If the position has a **Volunteer Group**, you choose from that group's members. If its Volunteer Group is set to **None**, you can search for anyone in your church instead.
 4. Add members from your team roster by clicking **Add**.
 5. Assigned members will appear under their team with their assignment status.
-6. Click notify volunteers to notify them within the B1 app or via email.
+6. Click notify volunteers to notify them within the B1 app or via email. If the plan uses a [confirmation workflow](#plan-settings), notifying also starts a workflow card that follows up on each request until the volunteer responds.
 
 Each position shows a count chip (for example, "2/3") so you can see how many spots are filled at a glance. Under the **Serving Team Assignments** heading, a summary ("X of Y positions filled") shows your overall staffing for the plan, along with how many are still needed, switching to **Fully staffed** once every position is covered.
 
@@ -75,7 +75,8 @@ If a plan has no positions yet and there is an earlier plan of the same type, a 
 
 Each plan has additional settings you can configure by clicking **Edit** next to the plan in the plan type's list, or the **Edit** button at the top of the plan page. Click **Done** (or the plan's name) to return to the plan. These include:
 
-- **Signup Deadline (hours before service)** — the number of hours before the service when volunteer signups close. Enter a negative number to keep signups open past the service start time. Leave it blank for no deadline.
+- **Signup Deadline (hours before service)** — the number of hours before the service when volunteer signups close. The hours are counted back from the plan's first **Service** time (rehearsals and other times are skipped unless the plan has nothing else), so a 2-hour deadline on a 10:00 AM service closes signups at 8:00 AM that morning. If the plan has no times, the deadline is counted from 9:00 AM on the service date in your church's time zone. Once it passes, volunteers can neither sign up nor remove themselves. Enter a negative number to keep signups open past the service start time. Leave it blank, or clear it, for no deadline.
+- **Confirmation workflow** — choose a [Serving Assignment Confirmation workflow](./workflows.md#serving-assignment-confirmations) to follow up on this plan's serving requests by email and text until each volunteer accepts or declines. When you **Notify** volunteers on the published plan, each new request gets its own card on that workflow's board, and a note above the notify link says *"New requests use the confirmation workflow."* Leave it on **Use existing assignment notifications** to keep the usual notifications. Only active confirmation workflows appear in the list; create one under **Serving > Workflows** first.
 - **Show volunteer names on signup page** — when checked, signed-in volunteers can see who else is already signed up for each position on the B1.church signup page. Names are never shown to visitors who aren't signed in.
 - **Penciled in** — hides assignments from volunteers until you are ready to publish the schedule.
 - **Automatically schedule a replacement when a volunteer declines** — when checked, if an assigned volunteer declines their position B1 will automatically contact the next available person on the team roster and ask if they can serve. This continues down the list until someone accepts, keeping your positions filled without manual follow-up.
@@ -86,7 +87,7 @@ On the member signup page, each plan's open positions are listed by category and
 
 ## Volunteer Reminders {#volunteer-reminders}
 
-B1 can automatically remind volunteers ahead of the services they are scheduled for, so you do not have to chase down your team each week. Reminders go to **everyone scheduled** — both those who have confirmed and those who have not yet responded. Each reminder email includes the volunteer's position(s), the service date, the plan notes, and your custom message.
+B1 can automatically remind volunteers ahead of the services they are scheduled for, so you do not have to chase down your team each week. Reminders go to **everyone scheduled** — both those who have confirmed and those who have not yet responded. The exception is a request sent through a [confirmation workflow](./workflows.md#serving-assignment-confirmations): that volunteer gets reminders only after they accept, since the workflow handles following up until then. Each reminder email includes the volunteer's position(s), the service date, the plan notes, and your custom message.
 
 Reminder timing and content are set per **plan type**, so each kind of service can keep its own schedule.
 

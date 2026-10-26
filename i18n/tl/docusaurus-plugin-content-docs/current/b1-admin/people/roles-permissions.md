@@ -1,73 +1,73 @@
 ---
-title: "Pagtatalaga ng mga Role"
+title: "Pagtatalaga ng Tungkulin"
 ---
 
-# Pagtatalaga ng mga Role
+# Pagtatalaga ng Tungkulin
 
 <div class="article-intro">
 
-Gumagamit ang B1 Admin ng role-based na sistema ng mga permission para kontrolin kung ano ang makikita at magagawa ng bawat user sa inyong team. Sa pagtatalaga ng mga role, maibibigay ninyo sa mga staff at volunteer ang access sa mga bahaging kailangan lang nila -- wala nang iba. Ang maayos na pamamahala ng mga role ay nagpapanatiling ligtas ng datos ng inyong simbahan habang natutulungan ang inyong team na magtrabaho nang mahusay.
+Gumagamit ang B1 Admin ng sistema ng pahintulot na nakabatay sa tungkulin para kontrolin kung ano ang nakikita at magagawa ng bawat user sa iyong team. Sa pagtatalaga ng mga tungkulin, mabibigyan mo ang mga staff at boluntaryo ng access sa eksaktong mga lugar na kailangan nila — at wala nang higit pa. Ang maayos na pamamahala ng tungkulin ay nagpapanatiling ligtas ang datos ng iyong simbahan habang pinapagana ang iyong team na magtrabaho nang mahusay.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Kailangan ninyo ng **Domain Admin** access o isang role na may permission na mamahala ng **Settings** sa B1 Admin.
-- Ang mga taong gusto ninyong bigyan ng role ay dapat nasa inyong directory na. Tingnan ang [Pagdaragdag ng mga Tao](adding-people.md) kung kailangan muna ninyo silang idagdag.
+- Kailangan mo ng **Domain Admin** na access o tungkuling may pahintulot na pamahalaan ang **Settings** sa B1 Admin.
+- Ang mga taong gusto mong bigyan ng tungkulin ay dapat nang nasa iyong directory. Tingnan ang [Adding People](adding-people.md) kung kailangan mo pa silang idagdag.
 
 </div>
 
-## Pag-unawa sa mga Role
+## Pag-unawa sa mga Tungkulin
 
-Ang role ay isang set ng mga permission na itinatalaga ninyo sa isa o higit pang user. Halimbawa, maaari kayong gumawa ng role na "Finance Team" na may access sa [mga talaan ng donasyon](../donations/recording-donations.md), o role na "Check-In Volunteer" na may access lang sa [mga feature ng attendance](../attendance/check-in.md).
+Ang tungkulin ay hanay ng mga pahintulot na itinatalaga mo sa isa o higit pang user. Halimbawa, maaari kang gumawa ng tungkuling "Finance Team" na nagbibigay ng access sa [mga tala ng donasyon](../donations/recording-donations.md), o tungkuling "Check-In Volunteer" na nagpapahintulot lamang sa [mga feature ng attendance](../attendance/check-in.md).
 
-Kinokontrol ng bawat role ang access sa mga partikular na bahagi ng B1 Admin, kabilang ang:
+Kinokontrol ng bawat tungkulin ang access sa mga partikular na lugar ng B1 Admin, kabilang ang:
 
-- **People** -- pagtingin at pag-edit ng mga profile ng miyembro. Ang seksyong Notes sa record ng isang tao ay nangangailangan ng **Edit People**, at hiwalay na permission na **View Confidential Notes** ang kumokontrol sa access sa seksyong Confidential Notes (para sa pastoral care, personal na kasaysayan, at iba pang katulad na sensitibong tala). Pinapayagan ng **View People Names Only** ang isang tao na maghanap ng mga tao ayon sa pangalan (nakikita lang ang pangalan, larawan, at membership status) nang walang access sa buong directory.
-- **Donations** -- pamamahala ng mga handog at financial report. Ang **Enter Donations** ay mas makitid na opsyon para sa mga counting team: pinapayagan nitong maglagay ng handog ang isang tao, pero sa mga [batch](../donations/batches.md#who-can-change-a-batch) lang na bukas pa.
-- **Attendance** -- pagtatala at pagtingin ng datos ng attendance
-- **Forms** -- paggawa at pamamahala ng [mga custom form](../forms/creating-forms.md)
-- **Groups** -- pamamahala ng [mga membership ng group](../groups/group-members.md) at mga kalendaryo
-- **Settings** -- pag-configure ng mga setting ng buong simbahan
+- **People** -- pagtingin at pag-e-edit ng mga profile ng miyembro. Kailangan ng seksyong Notes sa tala ng tao ang **Edit People**, at kinokontrol ng hiwalay na pahintulot na **View Confidential Notes** ang access sa seksyong Confidential Notes (para sa pastoral care, personal na kasaysayan, at katulad na sensitibong tala). Pinapayagan ng **View People Names Only** ang isang tao na maghanap ng mga tao sa pamamagitan ng pangalan (nakikita lamang ang pangalan, larawan, at membership status) nang hindi nakikita ang buong directory. Kasama ng **View Attendance** o **Edit Attendance**, pinapayagan nito ang isang boluntaryo na buksan ang **Groups** at makita ang mga class roster ayon sa pangalan; sa **Edit Attendance**, maaari rin nilang [itala ang attendance](../attendance/recording-attendance.md). Tingnan ang [People Names Only](../settings/roles-permissions.md#people-names-only).
+- **Donations** -- pamamahala ng mga kontribusyon at ulat pinansyal. Ang **Enter Donations** ay mas makitid na opsyon para sa mga counting team: pinapayagan nitong maglagay ng regalo ang isang tao, pero sa mga [batch](../donations/batches.md#who-can-change-a-batch) lamang na bukas pa.
+- **Attendance** -- pagtatala at pagtingin sa datos ng attendance
+- **Forms** -- paggawa at pamamahala ng [custom forms](../forms/creating-forms.md)
+- **Groups** -- pamamahala ng [group memberships](../groups/group-members.md) at calendars
+- **Settings** -- pag-configure ng mga setting para sa buong simbahan
 
 :::warning
-Ang **Domain Admin** ay may buong access sa bawat bahagi ng B1 Admin. Hindi maaaring i-edit o higpitan ang kanilang mga permission. Gamitin lang ang role na ito para sa mga pangunahin ninyong administrator.
+May buong access ang **Domain Admins** sa bawat lugar ng B1 Admin. Hindi maaaring i-edit o paghigpitan ang kanilang mga pahintulot. Gamitin lamang ang tungkuling ito para sa iyong mga pangunahing administrador.
 :::
 
-## Pagtingin at Pamamahala ng mga Role
+## Pagtingin at Pamamahala ng mga Tungkulin
 
-1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin) at i-expand ang **Settings**.
+1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin) at buksan ang **Settings**.
 2. I-click ang **Roles**.
-3. Makikita ninyo ang listahan ng lahat ng role na naka-configure para sa inyong simbahan.
-4. I-click ang anumang role para tingnan ang mga miyembro at permission nito.
+3. Makikita mo ang listahan ng lahat ng tungkuling naka-configure para sa iyong simbahan, na may column na **Members** na nagpapakita kung ilan ang user sa bawat tungkulin.
+4. I-click ang anumang tungkulin para makita ang mga miyembro at pahintulot nito.
 
-## Pagdagdag ng mga User sa Role
-
-1. Sa Jump menu, piliin ang **Settings > Roles**.
-2. I-click ang role na gusto ninyong dagdagan ng user.
-3. Sa seksyong **Members**, hanapin ang tao sa pamamagitan ng pangalan.
-4. I-click ang **Add** para italaga siya sa role.
-
-Magkakaroon na ng lahat ng permission na kaugnay ng role na iyon ang user sa susunod niyang pag-login.
-
-## Pag-edit ng mga Permission ng Role
+## Pagdaragdag ng mga User sa Tungkulin
 
 1. Sa Jump menu, piliin ang **Settings > Roles**.
-2. I-click ang role na gusto ninyong baguhin.
-3. Sa seksyong **Permissions**, lagyan ng check o alisin ang check sa mga bahaging gusto ninyong maabot ng role.
-4. I-click ang **Save** para ilapat ang mga pagbabago.
+2. I-click ang tungkuling gusto mong idagdagan ng user.
+3. Sa seksyong **Members**, hanapin ang tao ayon sa pangalan.
+4. I-click ang **Add** para italaga siya sa tungkulin.
+
+Taglay na ng user ang lahat ng pahintulot na kaugnay ng tungkuling iyon sa susunod niyang pag-log in.
+
+## Pag-e-edit ng mga Pahintulot ng Tungkulin
+
+1. Sa Jump menu, piliin ang **Settings > Roles**.
+2. I-click ang tungkuling gusto mong baguhin.
+3. Sa seksyong **Permissions**, lagyan o alisin ang check ng mga lugar na gusto mong pag-access ng tungkulin. Ipinapakita ng bawat pangkat ng pahintulot kung ilan sa mga pahintulot nito ang naka-check (halimbawa, **2 of 5**).
+4. Agad na nase-save ang bawat pagbabago kapag naglagay o nag-alis ka ng check sa isang kahon.
 
 :::tip
-Sundin ang prinsipyo ng least privilege -- bigyan ang bawat role ng mga permission lang na talagang kailangan nito. Pinapanatili nitong ligtas ang inyong datos at binabawasan ang tsansang may aksidenteng pagbabago.
+Sundin ang prinsipyo ng least privilege — bigyan ang bawat tungkulin ng mga pahintulot na talagang kailangan lamang nito. Pinapanatili nitong ligtas ang iyong datos at binabawasan ang posibilidad ng hindi sinasadyang pagbabago.
 :::
 
-## Mga Karaniwang Halimbawa ng Role
+## Karaniwang Halimbawa ng Tungkulin
 
 - **Office Staff** -- access sa People, Donations, Attendance, at Forms
-- **Group Leaders** -- access sa [Groups](../groups/creating-groups.md) lang
-- **Check-In Volunteers** -- access sa [Attendance](../attendance/check-in.md) lang
-- **Finance Team** -- access sa [Donations](../donations/recording-donations.md) at reporting
-- **Counting Team** -- **Enter Donations** at **View Donations**, para makapaglagay ng handog ang mga volunteer sa mga bukas na batch nang hindi nakikita ang mga buod ng giving
+- **Group Leaders** -- access sa [Groups](../groups/creating-groups.md) lamang
+- **Check-In Volunteers** -- access sa [Attendance](../attendance/check-in.md) lamang
+- **Finance Team** -- access sa [Donations](../donations/recording-donations.md) at pag-uulat
+- **Counting Team** -- **Enter Donations** at **View Donations**, para makapaglagay ang mga boluntaryo ng handog sa mga bukas na batch nang hindi nakikita ang mga buod ng giving
 
-Tingnan ang [Roles & Permissions](../settings/roles-permissions.md) para sa mas malalim na pagtingin sa mga permission ng donasyon at tao.
+Tingnan ang [Roles & Permissions](../settings/roles-permissions.md) para sa mas malapitang pagtingin sa mga pahintulot sa donasyon at tao.

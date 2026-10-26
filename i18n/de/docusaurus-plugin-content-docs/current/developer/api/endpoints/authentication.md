@@ -1,12 +1,12 @@
 ---
-title: "Authentifizierung & Berechtigungen"
+title: "Authentifizierung und Berechtigungen"
 ---
 
-# Authentifizierung & Berechtigungen
+# Authentifizierung und Berechtigungen
 
 <div class="article-intro">
 
-Die ChurchApps-API verwendet eine JWT-basierte Authentifizierung. Benutzer melden sich an und erhalten ein Token, das ihre Identität, Kirchenzugehörigkeit und Berechtigungen enthält. Diese Seite beschreibt den Anmeldeablauf, das Berechtigungsmodell und die OAuth-Unterstützung.
+Die ChurchApps-API verwendet JWT-basierte Authentifizierung. Benutzer melden sich an und erhalten ein Token, das ihre Identität, Kirchenzugehörigkeit und Berechtigungen enthält. Diese Seite beschreibt den Anmeldeablauf, das Berechtigungsmodell und die OAuth-Unterstützung.
 
 </div>
 
@@ -18,15 +18,15 @@ Die ChurchApps-API verwendet eine JWT-basierte Authentifizierung. Benutzer melde
 POST /membership/users/login
 ```
 
-**Auth:** öffentlich
+**Authentifizierung:** Öffentlich
 
-Akzeptiert eine von drei Arten von Zugangsdaten:
+Akzeptiert einen von drei Anmeldedatentypen:
 
 | Feld | Beschreibung |
 |-------|-------------|
 | `email` + `password` | Standardanmeldung mit E-Mail-Adresse und Passwort |
 | `jwt` | Erneute Authentifizierung mit einem vorhandenen JWT |
-| `authGuid` | Einmaliger Authentifizierungslink (verwendet in Willkommens- und Zurücksetzen-E-Mails) |
+| `authGuid` | Einmaliger Authentifizierungslink (wird in Willkommens- und Zurücksetzungs-E-Mails verwendet) |
 
 **Antwort:**
 
@@ -63,24 +63,24 @@ Das Feld `token` ist ein JWT, das bei allen weiteren Anfragen als `Authorization
 ### Inhalt des Tokens
 
 Das JWT enthält:
-- `id` – Benutzer-ID
-- `churchId` – aktuell ausgewählte Kirche
-- `personId` – Personendatensatz für die ausgewählte Kirche
-- Berechtigungs-Arrays pro API
+- `id` — Benutzer-ID
+- `churchId` — Aktuell ausgewählte Kirche
+- `personId` — Personendatensatz für die ausgewählte Kirche
+- Berechtigungsarrays pro API
 
 ### Auswahl der Kirche
 
-Benutzer können mehreren Kirchen angehören. Die Antwort der Anmeldung enthält alle Kirchen mit ihren Berechtigungen. Um die Kirche zu wechseln, erzeugt der Client anhand der Daten der Anmeldeantwort ein neues JWT für eine andere Kirche.
+Benutzer können mehreren Kirchen angehören. Die Antwort der Anmeldung enthält alle Kirchen mit ihren Berechtigungen. Um die Kirche zu wechseln, erzeugt der Client aus den Anmeldedaten ein neues JWT, das auf eine andere Kirche aus der Antwort beschränkt ist.
 
 ## Benutzerregistrierung
 
-### Einen neuen Benutzer registrieren
+### Neuen Benutzer registrieren
 
 ```
 POST /membership/users/register
 ```
 
-**Auth:** öffentlich
+**Authentifizierung:** Öffentlich
 
 ```json
 {
@@ -92,74 +92,74 @@ POST /membership/users/register
 }
 ```
 
-Legt einen Benutzer mit einem temporären Passwort an und sendet eine Willkommens-E-Mail mit einem Authentifizierungslink. Der erste auf einer neuen Instanz registrierte Benutzer erhält automatisch Serveradministrationszugriff.
+Legt einen Benutzer mit einem temporären Passwort an und sendet eine Willkommens-E-Mail mit einem Authentifizierungslink. Der erste auf einer neuen Instanz registrierte Benutzer erhält automatisch Serveradministrator-Zugriff.
 
-Zwei optionale Felder dienen als Bot-Falle: `website` (ein verstecktes Honeypot-Feld, das echte Benutzer leer lassen) und `fillMs` (wie lange das Formular geöffnet war, in Millisekunden). Ist `website` ausgefüllt oder ist `fillMs` kleiner als 2000, wird kein Konto angelegt. Der Endpunkt antwortet dennoch mit einem normal aussehenden `200`, damit Bots nicht erkennen können, dass sie abgelehnt wurden. Clients, die beide Felder weglassen, registrieren sich wie üblich.
+Zwei optionale Felder gegen Bots werden akzeptiert: `website` (ein verborgenes Honeypot-Feld, das echte Benutzer leer lassen) und `fillMs` (wie lange das Formular geöffnet war, in Millisekunden). Ist `website` ausgefüllt oder ist `fillMs` kleiner als 2000, wird kein Konto angelegt, der Endpunkt gibt aber dennoch eine normal aussehende Antwort `200` zurück, damit Bots nicht erkennen können, dass sie abgelehnt wurden. Clients, die beide Felder weglassen, registrieren sich wie gewohnt.
 
-### Eine neue Kirche registrieren
+### Neue Kirche registrieren
 
 ```
 POST /membership/churches/add
 ```
 
-**Auth:** JWT
+**Authentifizierung:** JWT
 
-Nachdem Sie einen Benutzer registriert haben, rufen Sie diesen Endpunkt auf, um eine Kirche anzulegen und den Benutzer ihr zuzuordnen.
+Rufen Sie nach der Registrierung eines Benutzers diesen Endpunkt auf, um eine Kirche anzulegen und den Benutzer ihr zuzuordnen.
 
 ## Passwortverwaltung
 
-| Methode | Pfad | Auth | Beschreibung |
+| Methode | Pfad | Authentifizierung | Beschreibung |
 |--------|------|------|-------------|
-| POST | `/membership/users/forgot` | Öffentlich | Sendet eine E-Mail zum Zurücksetzen des Passworts. Body: `{ "userEmail": "...", "appName": "...", "appUrl": "..." }` |
-| POST | `/membership/users/setPasswordGuid` | Öffentlich | Setzt ein neues Passwort mit einer Auth-GUID aus der Zurücksetzen-E-Mail. Body: `{ "authGuid": "...", "newPassword": "..." }` |
-| POST | `/membership/users/updatePassword` | JWT | Ändert das Passwort des aktuellen Benutzers. Body: `{ "newPassword": "..." }` |
+| POST | `/membership/users/forgot` | Öffentlich | Eine E-Mail zum Zurücksetzen des Passworts senden. Body: `{ "userEmail": "...", "appName": "...", "appUrl": "..." }` |
+| POST | `/membership/users/setPasswordGuid` | Öffentlich | Ein neues Passwort mit einer Authentifizierungs-GUID aus einer Zurücksetzungs-E-Mail festlegen. Body: `{ "authGuid": "...", "newPassword": "..." }` |
+| POST | `/membership/users/updatePassword` | JWT | Das Passwort des aktuellen Benutzers ändern. Body: `{ "newPassword": "..." }` |
 
 ## Berechtigungsmodell
 
-Berechtigungen sind nach Modul gegliedert und über Rollen Benutzern zugewiesen. Jede Berechtigung hat einen **Inhaltstyp** und eine **Aktion**.
+Berechtigungen sind nach Modul gegliedert und Benutzern über Rollen zugewiesen. Jede Berechtigung hat einen **Inhaltstyp** und eine **Aktion**.
 
-### Referenz der Berechtigungen
+### Berechtigungsübersicht
 
 | Anzeigebereich | Inhaltstyp | Aktion | Beschreibung |
 |----------------|--------------|--------|-------------|
 | **Anwesenheit** | Attendance | Checkin | Mitglieder bei Gottesdiensten einchecken |
 | | Attendance | Edit | Anwesenheitsdatensätze bearbeiten |
 | | Services | Edit | Gottesdienste und Gottesdienstzeiten verwalten |
-| | Attendance | View | Anwesenheitsdatensätze anzeigen |
-| | Attendance | View Summary | Anwesenheitszusammenfassungen und Berichte anzeigen |
-| **Spenden** | Donations | Edit | Spendenbuchungen erstellen und bearbeiten |
-| | Settings | Edit | Einstellungen zu Spenden und Zahlungen bearbeiten |
-| | Donations | View Summary | Spendenübersichten anzeigen |
-| | Donations | View | Einzelne Spendenbuchungen anzeigen |
-| **Personen und Gruppen** | Forms | Admin | Vollständige Verwaltung der Formulare |
+| | Attendance | View | Anwesenheitsdatensätze einsehen |
+| | Attendance | View Summary | Anwesenheitszusammenfassungen und Berichte einsehen |
+| **Spenden** | Donations | Edit | Spendendatensätze erstellen und bearbeiten |
+| | Settings | Edit | Einstellungen für Spenden und Zahlungen bearbeiten |
+| | Donations | View Summary | Spendenübersichtsberichte einsehen |
+| | Donations | View | Einzelne Spendendatensätze einsehen |
+| **Personen und Gruppen** | Forms | Admin | Vollständige Verwaltung von Formularen |
 | | Forms | Edit | Formulardefinitionen bearbeiten |
 | | Plans | Edit | Dienstpläne bearbeiten |
-| | Group Members | Edit | Gruppenmitglieder hinzufügen und entfernen |
+| | Group Members | Edit | Gruppenmitglieder hinzufügen/entfernen |
 | | Groups | Edit | Gruppen erstellen und bearbeiten |
 | | Households | Edit | Haushaltszuordnungen bearbeiten |
 | | People | Edit | Jeden Personendatensatz bearbeiten |
 | | People | Edit Self | Nur den eigenen Personendatensatz bearbeiten |
-| | Roles | Edit | Rollen und Benutzerzuordnungen verwalten |
-| | Group Members | View | Gruppenmitgliederlisten anzeigen |
-| | People | View Members | Nur Mitglieder (keine Gäste) anzeigen |
-| | People | View | Alle Personen anzeigen |
-| | Roles | View | Rollen und Zuordnungen anzeigen |
+| | Roles | Edit | Rollen und Benutzerzuweisungen verwalten |
+| | Group Members | View | Gruppenmitgliederlisten einsehen |
+| | People | View Members | Nur Mitglieder einsehen (keine Besucher) |
+| | People | View | Alle Personen einsehen |
+| | Roles | View | Rollen und Zuweisungen einsehen |
 | | Settings | Edit | Kircheneinstellungen bearbeiten |
 | **Inhalte** | Content | Edit | Seiten, Abschnitte und Elemente bearbeiten |
 | | Settings | Edit | Inhaltseinstellungen bearbeiten |
 | | StreamingServices | Edit | Konfiguration der Streaming-Dienste verwalten |
-| | Chat | Host | Chatsitzungen moderieren und leiten |
-| **Nachrichten** | Texting | Send | SMS-Nachrichten senden |
+| | Chat | Host | Chat-Sitzungen hosten/moderieren |
+| **Nachrichten** | Texting | Send | SMS-Textnachrichten senden |
 
-### Wie Berechtigungen geprüft werden
+### So werden Berechtigungen geprüft
 
-In den Controllern werden Berechtigungen über die Methode `au.checkAccess()` geprüft:
+In Controllern werden Berechtigungen mit der Methode `au.checkAccess()` geprüft:
 
 ```typescript
 // Bestimmte Berechtigung verlangen
 if (!au.checkAccess(Permissions.people.edit)) return this.json({}, 401);
 
-// Oder innerhalb von actionWrapper – das CRUD-System prüft automatisch
+// Oder innerhalb von actionWrapper — das CRUD-System prüft automatisch
 crudSettings: {
   permissions: {
     view: Permissions.people.view,
@@ -170,25 +170,25 @@ crudSettings: {
 
 ### Serveradministrator
 
-Die Berechtigung `Server.Admin` gewährt vollen Zugriff auf alle Kirchen. Sie wird dem ersten registrierten Benutzer zugewiesen und kann über die Serverrolle an andere vergeben werden.
+Die Berechtigung `Server.Admin` gewährt vollen Zugriff auf alle Kirchen. Sie wird dem ersten registrierten Benutzer zugewiesen und kann über die Serveradministrator-Rolle an andere vergeben werden.
 
 ## OAuth 2.0
 
-Die API unterstützt OAuth 2.0 für Drittanbieter-Integrationen. Zwei Grant-Typen stehen zur Verfügung.
+Die API unterstützt OAuth 2.0 für Integrationen von Drittanbietern. Es stehen zwei Grant-Typen zur Verfügung.
 
-### Authorization-Code-Ablauf
+### Autorisierungscode-Ablauf
 
 1. **Autorisieren:** `POST /membership/oauth/authorize` (JWT erforderlich)
    - Body: `{ "client_id": "...", "redirect_uri": "...", "response_type": "code", "scope": "...", "state": "...", "code_challenge": "...", "code_challenge_method": "S256" }`
    - `code_challenge` / `code_challenge_method` (PKCE, nur `S256`) sind für öffentliche Clients ohne Geheimnis erforderlich
    - Rückgabe: `{ "code": "...", "state": "..." }`
 
-2. **Code gegen Token tauschen:** `POST /membership/oauth/token` (öffentlich)
+2. **Code gegen Token tauschen:** `POST /membership/oauth/token` (Öffentlich)
    - Body: `{ "grant_type": "authorization_code", "code": "...", "client_id": "...", "client_secret": "...", "redirect_uri": "...", "code_verifier": "..." }`
-   - Senden Sie `code_verifier`, wenn der Autorisierungsschritt eine `code_challenge` verwendet hat. Öffentliche Clients lassen `client_secret` weg. JSON- oder form-kodierte Anfragekörper werden akzeptiert.
+   - Senden Sie `code_verifier`, wenn beim Autorisierungsschritt ein `code_challenge` verwendet wurde; öffentliche Clients lassen `client_secret` weg. JSON- und formularkodierte Bodies werden akzeptiert
    - Rückgabe: `{ "access_token": "...", "token_type": "Bearer", "expires_in": 43200, "refresh_token": "...", "scope": "..." }`
 
-3. **Refresh-Token:** `POST /membership/oauth/token` (öffentlich)
+3. **Token erneuern:** `POST /membership/oauth/token` (Öffentlich)
    - Body: `{ "grant_type": "refresh_token", "refresh_token": "...", "client_id": "...", "client_secret": "..." }`
 
 Zugriffstoken laufen nach **12 Stunden** ab.
@@ -197,45 +197,45 @@ Zugriffstoken laufen nach **12 Stunden** ab.
 
 Für Geräte ohne Browser (TV-Apps, Kioske):
 
-1. **Gerätecode anfordern:** `POST /membership/oauth/device/authorize` (öffentlich)
+1. **Gerätecode anfordern:** `POST /membership/oauth/device/authorize` (Öffentlich)
    - Body: `{ "client_id": "...", "scope": "..." }`
    - Rückgabe: `{ "device_code": "...", "user_code": "ABCD-1234", "verification_uri": "https://app.b1.church/device", "expires_in": 900, "interval": 5 }`
 
-2. **Der Benutzer gibt den Code** an der Verifizierungs-URI ein und genehmigt oder lehnt ab.
+2. **Benutzer gibt den Code ein** auf der Verifizierungsseite und genehmigt oder lehnt ab
 
-3. **Auf das Token warten:** `POST /membership/oauth/token` (öffentlich)
+3. **Auf Token warten:** `POST /membership/oauth/token` (Öffentlich)
    - Body: `{ "grant_type": "urn:ietf:params:oauth:grant-type:device_code", "device_code": "...", "client_id": "..." }`
-   - Liefert `authorization_pending`, bis genehmigt wird, und danach das Zugriffstoken
+   - Gibt `authorization_pending` zurück, bis die Freigabe erfolgt, und danach das Zugriffstoken
 
-### Verwaltung der OAuth-Clients
+### Verwaltung von OAuth-Clients
 
-| Methode | Pfad | Auth | Berechtigung | Beschreibung |
+| Methode | Pfad | Authentifizierung | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
 | GET | `/membership/oauth/clients` | JWT | Server.Admin | Alle OAuth-Clients auflisten |
 | GET | `/membership/oauth/clients/:id` | JWT | Server.Admin | Client anhand der ID abrufen |
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Client anhand der Client-ID abrufen (Geheimnis ausgeblendet) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Client erstellen oder aktualisieren |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Client löschen |
-| POST | `/membership/oauth/register` | Öffentlich | — | Dynamische Client-Registrierung (RFC 7591) für öffentliche Clients wie MCP-Connectoren. Siehe [Verbundene Apps](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Öffentlich | — | Dynamische Client-Registrierung (RFC 7591) für öffentliche Clients wie MCP-Konnektoren. Siehe [Verbundene Apps](../connected-apps#dynamic-client-registration) |
 
-### Endpunkte zur Genehmigung von Geräten
+### Endpunkte zur Gerätefreigabe
 
-| Methode | Pfad | Auth | Beschreibung |
+| Methode | Pfad | Authentifizierung | Beschreibung |
 |--------|------|------|-------------|
-| GET | `/membership/oauth/device/pending/:userCode` | JWT | Informationen zu einem ausstehenden Gerätecode für die Genehmigungsoberfläche abrufen |
+| GET | `/membership/oauth/device/pending/:userCode` | JWT | Informationen zum ausstehenden Gerätecode für die Freigabeoberfläche abrufen |
 | POST | `/membership/oauth/device/approve` | JWT | Eine Geräteautorisierung genehmigen. Body: `{ "user_code": "...", "church_id": "..." }` |
 | POST | `/membership/oauth/device/deny` | JWT | Eine Geräteautorisierung ablehnen. Body: `{ "user_code": "..." }` |
 
 ## Öffentliche und authentifizierte Endpunkte
 
-Die API verwendet zwei Wrapper-Funktionen, die die Authentifizierungsanforderungen festlegen:
+Die API verwendet zwei Wrapper-Funktionen, die bestimmen, ob eine Authentifizierung erforderlich ist:
 
-- **`actionWrapper`** – Erfordert ein gültiges JWT. Der authentifizierte Benutzer (`au`) ist mit `churchId`, `userId` und Berechtigungsprüfungen verfügbar.
-- **`actionWrapperAnon`** – Keine Authentifizierung nötig. Verwendet für Anmeldung, Registrierung, öffentliche Inhaltsabfragen und Webhook-Empfänger.
+- **`actionWrapper`** — Verlangt ein gültiges JWT. Das authentifizierte Benutzerobjekt (`au`) steht mit `churchId`, `userId` und Berechtigungsprüfungen zur Verfügung.
+- **`actionWrapperAnon`** — Keine Authentifizierung erforderlich. Wird für Anmeldung, Registrierung, öffentliche Inhaltsabfragen und Webhook-Empfänger verwendet.
 
-In den Endpunkttabellen dieser Dokumentation sind diese in der Spalte Auth als **JWT** bzw. **Öffentlich** gekennzeichnet.
+In den Endpunkttabellen dieser Dokumentation werden diese in der Spalte Authentifizierung als **JWT** bzw. **Öffentlich** gekennzeichnet.
 
 ## Verwandte Seiten
 
-- [Modulstruktur](../module-structure) – Aufbau von Controllern, Repositories und Modellen
-- [Lokale Einrichtung](../local-setup) – Die API für die Entwicklung lokal ausführen
+- [Modulstruktur](../module-structure) — Wie Controller, Repositories und Modelle organisiert sind
+- [Lokale Einrichtung](../local-setup) — Ausführen der API für die lokale Entwicklung

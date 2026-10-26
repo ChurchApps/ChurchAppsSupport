@@ -1,64 +1,64 @@
 ---
-title: "Importación en Lote"
+title: "Importación masiva"
 ---
 
-# Importación en Lote
+# Importación masiva
 
 <div class="article-intro">
 
-La página Bulk Import te permite rellenar rápidamente tu biblioteca de sermones importando videos de YouTube o Vimeo. Esta es la forma más rápida de traer tu contenido de sermones existente en lugar de agregar cada video uno a la vez.
+La página de Importación masiva te permite llenar rápidamente tu biblioteca de sermones importando videos de YouTube o Vimeo. Es la forma más rápida de incorporar tu contenido de sermones existente, en lugar de agregar cada video uno por uno.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de empezar</h4>
 
-- Necesitas el permiso **contentApi.streamingServices.edit**. Consulta [Roles y Permisos](../settings/roles-permissions.md) si no tienes acceso.
-- Crea al menos una [lista de reproducción](playlists) para importar tus sermones
-- Ten tu ID de canal de YouTube o información de cuenta de Vimeo lista
+- Necesitas el permiso **contentApi.streamingServices.edit**. Consulta [Roles y permisos](../settings/roles-permissions.md) si no tienes acceso.
+- Crea al menos una [lista de reproducción](playlists) donde importar tus sermones
+- Ten listo tu ID de canal de YouTube o la información de tu cuenta de Vimeo
 
 </div>
 
-## Elegir Tu Fuente
+## Elegir tu origen
 
-1. En B1 Admin, abre el [Menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expande **Sermons** y haz clic en **Sermons**. Haz clic en **Add Sermon** y elige **Bulk Import** del menú.
-2. Bajo **Choose Import Source**, verás dos opciones:
-   - **YouTube** -- Importa videos de un canal de YouTube
-   - **Vimeo** -- Importa videos de una cuenta de Vimeo
-3. Haz clic en la opción de la plataforma donde se alojan tus sermones (o haz clic en **Import from YouTube** / **Import from Vimeo** debajo de su descripción). Haz clic en **Back** en la parte superior de la página para volver a la elección de fuente.
+1. En B1 Admin, abre el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expande **Sermones** y haz clic en **Sermones**. Haz clic en **Agregar sermón** y elige **Importación masiva** del menú.
+2. En **Elegir origen de importación** verás dos opciones:
+   - **YouTube**: importa videos de un canal de YouTube
+   - **Vimeo**: importa videos de una cuenta de Vimeo
+3. Haz clic en la opción de la plataforma donde están alojados tus sermones (o haz clic en **Importar desde YouTube** / **Importar desde Vimeo** debajo de su descripción). Haz clic en **Atrás** en la parte superior de la página para volver a la elección de origen.
 
 :::tip
-Puedes volver y cambiar de fuente en cualquier momento si tienes videos en ambas plataformas.
+Puedes volver atrás y cambiar de origen en cualquier momento si tienes videos en ambas plataformas.
 :::
 
-## Antes de Importar
+## Antes de importar
 
-Antes de importar videos, necesitas al menos una lista de reproducción para organizarlos. Si aún no has creado ninguna lista de reproducción:
+Antes de importar videos, necesitas al menos una lista de reproducción donde organizarlos. Si todavía no has creado ninguna:
 
-1. Vuelve a la página **Sermons** y encuentra el panel **Playlists**.
-2. Haz clic en **Create First Playlist** y completa el nombre, descripción, fecha de publicación y miniatura.
-3. Haz clic en **Save**, luego vuelve a Bulk Import haciendo clic en **Add Sermon** y eligiendo **Bulk Import**.
+1. Vuelve a la página de **Sermones** y busca el panel de **Listas de reproducción**.
+2. Haz clic en **Crear primera lista de reproducción** y completa el nombre, la descripción, la fecha de publicación y la miniatura.
+3. Haz clic en **Guardar** y luego regresa a Importación masiva haciendo clic en **Agregar sermón** y eligiendo **Importación masiva**.
 
-Consulta [Playlists](playlists) para obtener instrucciones detalladas sobre creación y gestión de listas de reproducción.
+Consulta [Listas de reproducción](playlists) para instrucciones detalladas sobre cómo crear y administrar listas de reproducción.
 
-## Importar Videos
+## Importar videos
 
-1. Después de seleccionar YouTube o Vimeo, ingresa tu **YouTube Channel ID** o **información de cuenta de Vimeo** en el campo proporcionado.
-2. Haz clic en el botón **Fetch** para recuperar todos los videos disponibles de tu canal o cuenta.
-3. Después de recuperar, verás una lista de todos tus videos con casillas de verificación.
-4. Marca las casillas al lado de los videos que deseas importar. Puedes seleccionar todos o elegir específicos.
-5. Opcionalmente, activa **Auto Import New Videos** para agregar automáticamente futuras cargas a tu biblioteca.
-6. Haz clic en el desplegable **Import Into Playlist** para elegir en qué lista de reproducción se deben agregar estos videos.
-7. Haz clic en el botón **Import** para completar la importación en lote.
+1. Después de elegir YouTube o Vimeo, escribe tu **ID de canal de YouTube** o la **información de tu cuenta de Vimeo** en el campo correspondiente.
+2. Haz clic en el botón **Obtener** para recuperar todos los videos disponibles de tu canal o cuenta.
+3. Después de obtenerlos, verás una lista de todos tus videos con casillas de verificación.
+4. Marca las casillas junto a los videos que quieres importar. Puedes seleccionar todos o elegir algunos específicos.
+5. Opcionalmente, activa **Importar automáticamente videos nuevos** para agregar automáticamente a tu biblioteca las futuras publicaciones.
+6. Haz clic en el menú desplegable **Importar a la lista de reproducción** para elegir a qué lista de reproducción se agregarán estos videos.
+7. Haz clic en el botón **Importar** para completar la importación masiva.
 
-Tus videos se importarán con todos sus detalles, incluyendo títulos, descripciones, fechas y miniaturas.
+Tus videos se importarán con todos sus detalles, incluidos títulos, descripciones, fechas y miniaturas. Los caracteres especiales en los títulos y descripciones de YouTube, como `&`, apóstrofes y comillas, se importan tal como están escritos, en lugar de aparecer como códigos como `&amp;`.
 
 :::info
-La importación en lote es ideal para comenzar cuando estás migrando desde otra plataforma. Para agregar sermones individuales en el futuro, usa la página [Managing Sermons](managing-sermons) en su lugar.
+La importación masiva es ideal para empezar cuando migras desde otra plataforma. Para agregar sermones individuales en el futuro, usa la página de [Administrar sermones](managing-sermons) en su lugar.
 :::
 
-## Próximos Pasos
+## Próximos pasos
 
-- [Managing Sermons](managing-sermons) -- Edita detalles del sermón importado
-- [Playlists](playlists) -- Crea y gestiona series de sermones
-- [Live Streaming](live-streaming) -- Configura transmisión en vivo para tus servicios
+- [Administrar sermones](managing-sermons): edita los detalles de los sermones importados
+- [Listas de reproducción](playlists): crea y administra series de sermones
+- [Transmisión en vivo](live-streaming): configura la transmisión en vivo de tus servicios

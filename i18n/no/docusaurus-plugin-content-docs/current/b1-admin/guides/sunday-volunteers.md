@@ -1,134 +1,134 @@
 ---
-title: "Veiledning: Administrer søndagsfrivillige"
+title: "Guide: Administrer søndagsfrivillige"
 ---
 
 # Administrer søndagsfrivillige
 
 <div class="article-intro">
 
-Sett opp frivillige hold, opprett ukentlige serviceplanlegger, tildel posisjoner, bygg servicerekkefølge med sange, og tildel søndagsoppgaver. Til slutten vil frivillige dine se oppdraget sitt på B1-nettstedet og mobilappen, og kan godta eller avslå direkte.
+Sett opp teamene dine med frivillige, lag ukentlige tjenesteplaner, tildel posisjoner, bygg gudstjenesteordener med lovsanger, og tildel oppgaver for søndagen. Når du er ferdig, ser de frivillige sine oppdrag på B1-nettsiden og i mobilappen, og kan godta eller avslå direkte der.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- B1 Admin-konto med administratorkontroll
-- Frivillige [lagt til personmappen din](../people/adding-people.md)
+- B1 Admin-konto med administratortilgang
+- Frivillige [lagt til i personregisteret ditt](../people/adding-people.md)
 
 </div>
 
-## Trinn 1: Opprett frivillige hold
+## Steg 1: Opprett frivillige team
 
-Organiser frivillige dine i hold slik at du kan administrere oppdraget etter ministerieområde.
+Organiser de frivillige i team, slik at du kan administrere oppdrag etter tjenesteområde.
 
-Følg [Opprett grupper](../groups/creating-groups.md) og [Gruppemedlemmer](../groups/group-members.md)-veiledningene for å:
+Følg veiledningene [Creating Groups](../groups/creating-groups.md) og [Group Members](../groups/group-members.md) for å:
 
-1. Opprette en kategori (f.eks. "Søndagsmorgen hold")
-2. Opprett grupper som "Worshipteam", "Lyd og media", "Gjester", "Barne-ministerie frivillige"
-3. Legg frivillige til hver gruppe ved å søke etter navnet deres og klikke Legg til
-
-:::tip
-Utnevn teamledere med stjerneikonet (**Gjør til leder**) i gruppens medlemsliste (klikk på **Alle medlemmer** på gruppesiden). Ledere kan administrere sitt eget gruppens kalender og koordinere sitt team.
-:::
-
-## Trinn 2: Bygg sangbiblioteket ditt
-
-Legg til worshipsanger slik at du kan trekke dem inn i serviceplaner hver uke.
-
-Følg [Sanger](../serving/songs.md)-veiledningen for å:
-
-1. Legg til worshipsanger med titler, artister og varighet
-2. For hver sang, legg til arrangementer med tekster og nokeltildelinger
-3. Legg til eksterne lenker til YouTube-fremføringer, akkorddiagram eller notark
-
-:::info
-Sanger som legges til her kan trekkes inn i en serviceplan senere. Bygg biblioteket ditt en gang, gjenbruk det hver uke.
-:::
-
-## Trinn 3: Opprett en serviceplan
-
-Planer er ukentlige oppdraget som forteller frivillige hvor de er nødvendig.
-
-Følg [Planer](../serving/plans.md)-veiledningen for å:
-
-1. Gå til Tjenestegørende, velg ministeriet ditt og åpne plantypen din
-2. Klikk **Ny plan** og velg datoen for gudstjenesten. For å sette opp flere søndager samtidig kopierer du fra forrige plan og angir antall uker i **Gjenta ukentlig for dette antall uker**
-3. I planens seksjon **Tjenesteteamtildelinger** legger du til posisjoner og tildeler frivillige til dem
-4. Frivillige vil se oppdrags-status (Forespurt, Bekreftet, Venter)
-5. Slå på [påminnelser til frivillige](../serving/plans.md#volunteer-reminders) for plantypen, slik at frivillige får påminnelse via push, e-post eller tekstmelding før hver gudstjeneste
-
-## Trinn 4: Bygg servicerekkefølgen
-
-Legg ut flyten av servicen din fra start til slutt.
-
-Følg [Servicerekkefølge](../serving/service-order.md)-veiledningen for å:
-
-1. Åpne planen din og finn seksjonen **Servicerekkefølge** øverst
-2. Klikk **Legg til** for å legge til elementer: worshipsanger (fra biblioteket ditt), bønner, skriftlesinger, kunngjøringer, preken, kollekt, avslutning
-3. Dra og slipp elementer for å omordne serviceflyt
-
-:::info
-Servicerekkefølger er planspesifikke. Endringer her påvirker ikke andre planer eller det overordnede sangbiblioteket.
-:::
-
-## Trinn 5: Tildel søndagsoppgaver
-
-Spor engangs søndagsansvar slik at ingenting faller gjennom eller spr.
-
-Følg [Oppgaver](../serving/tasks.md)-veiledningen for å:
-
-1. Opprett oppgaver for ansvar som "Forbered nattverdarrangementer", "Skriv ut bulletiner", eller "Sett opp lydkvalitet"
-2. Tildel hver oppgave til ansvarlig person eller gruppe
-3. Oppgaver vises under **Tjenestegørende > Mitt arbeid**, på tillitsmennens instrumentbord og i mobilappen
-
-:::info
-B1 Admin oppretter ikke lenger oppgaver på en gjentakende tidsplan. For gjentakende prosesser som flytter mennesker gjennom trinn, bruk [Arbeidsflyter](../serving/workflows.md) med en planlagte utløser.
-:::
-
-## Trinn 6: Aktiver selvbetjeningen (Valgfritt)
-
-La frivillige melde seg på posisjoner selv i stedet for å vente på administratoroppdraget.
-
-1. Når du oppretter eller redigerer en plan, angi en **Påmeldingsfrist** (timer før gudstjenesten) for å kontrollere når selvpåmeldingen stenger. La stå tomt for ingen frist. Nye planer starter med forrige plans påmeldingsfrist.
-2. Velg eventuelt å **Vis frivilligenes navn på påmeldingssiden** for å la frivillige se hvem andre som har meldt seg på.
-3. For hver posisjon, merk **Tillat egenpåmelding**-avkryssingsboksen for å gjøre den tilgjengelig for selvbetjening.
-4. Legg til en **Beskrivelse** for hver posisjon slik at frivillige vet hva rollen innebærer.
-
-Når selvpåmeldingsposisjoner er opprettet, vises de automatisk på frivillig påmeldingssidene på [B1.church](../../b1-church/serving/volunteer-signup) og [B1-mobilappen](../../b1-mobile/serving/volunteer-signup). Medlemmer kan bla gjennom åpne posisjoner, se hvor mange plasser som gjenstår, og melde seg på med ett klikk.
+1. Opprette en kategori (for eksempel "Søndagsmorgenteam")
+2. Opprette grupper som "Lovsangsteam", "Lyd og media", "Vertskap", "Frivillige i barnearbeidet"
+3. Legge til frivillige i hver gruppe ved å søke etter navnet deres og klikke på Add
 
 :::tip
-Blande administratortildelingsposisjoner og selvpåmeldingsposisjoner i samme plan. For eksempel, tildel worshiplederen direkte, men la gjestene og kaffetjenerne selvvelge.
+Utpek teamledere med stjerneikonet (**Make Leader**) i gruppens medlemsliste (klikk på **All members** på gruppesiden). Ledere kan administrere sin egen gruppekalender og koordinere teamet sitt.
 :::
 
-## Trinn 7: Gi frivillige beskjed
+## Steg 2: Bygg ditt sangbibliotek
 
-Tildelte frivillige ser automatisk planene sine og kan svare.
+Legg til lovsanger, slik at du kan hente dem inn i tjenesteplaner hver uke.
 
-1. Frivillige ser planene sine på [B1.church](../../b1-church/plans/viewing-plans.md) og [B1-mobilappen](../../b1-mobile/serving/viewing-plans.md)
-2. De kan godta eller avslå oppdraget direkte fra enten plattform
-3. De kan angi sperre datoen for uker de ikke er tilgjengelige
-4. Planer kan skrives ut for øvelser eller hengt på backstage
-5. Frivillige kan bla gjennom og melde seg på åpne posisjoner via [frivillig påmeldingssiden](../../b1-church/serving/volunteer-signup)
+Følg veiledningen [Songs](../serving/songs.md) for å:
+
+1. Legge til lovsanger med titler, artister og varighet
+2. For hver sang legge til arrangementer med tekster og tonearter
+3. Legge til eksterne lenker til YouTube-opptredener, akkordark eller noteark
+
+:::info
+Sanger som legges til her, kan hentes inn i enhver tjenesteplan senere. Bygg biblioteket én gang, og bruk det hver uke.
+:::
+
+## Steg 3: Opprett en tjenesteplan
+
+Planer er de ukentlige oppdragene som forteller de frivillige hvor de trengs.
+
+Følg veiledningen [Plans](../serving/plans.md) for å:
+
+1. Gå til Serving, velg din tjenesteflik og åpne plantypen din
+2. Klikk på **New Plan** og velg tjenestedatoen. For å sette opp flere søndager på en gang, kopier fra forrige plan og angi hvor mange uker i **Repeat weekly for this many weeks**
+3. I planens seksjon **Serving Team Assignments** legger du til posisjoner og tildeler frivillige til dem
+4. De frivillige vil se statusen på oppdraget sitt (Requested, Confirmed, Pending)
+5. Slå på [påminnelser til frivillige](../serving/plans.md#volunteer-reminders) for plantypen, slik at de frivillige får påminnelser via push, e-post eller tekstmelding før hver gudstjeneste
+
+## Steg 4: Bygg gudstjenesteordenen
+
+Legg opp flyten i gudstjenesten fra start til slutt.
+
+Følg veiledningen [Service Order](../serving/service-order.md) for å:
+
+1. Åpne planen din og finn seksjonen **Order of Service** øverst
+2. Klikk på **Add** for å legge til elementer: lovsanger (fra biblioteket ditt), bønner, skriftlesninger, kunngjøringer, preken, offer, avslutning
+3. Dra og slipp elementer for å endre rekkefølgen på gudstjenesten
+
+:::info
+Gudstjenesteordener er knyttet til den enkelte planen. Endringer her påvirker ikke andre planer eller det felles sangbiblioteket.
+:::
+
+## Steg 5: Tildel oppgaver for søndagen
+
+Følg opp enkeltstående oppgaver for søndagen, slik at ingenting glipper.
+
+Følg veiledningen [Tasks](../serving/tasks.md) for å:
+
+1. Opprette oppgaver for ansvar som "Klargjøre nattverdelementene", "Skrive ut menighetsbladet" eller "Sette opp lydutstyret"
+2. Tildele hver oppgave til ansvarlig person eller gruppe
+3. Oppgaver vises under **Serving > My Work**, på mottakerens oversikt og i mobilappen
+
+:::info
+B1 Admin oppretter ikke lenger oppgaver etter en gjentakende plan. For gjentakende prosesser som flytter personer gjennom steg, bruk [Arbeidsflyter](../serving/workflows.md) med en tidsplan som utløser.
+:::
+
+## Steg 6: Aktiver selvbetjent påmelding (valgfritt)
+
+La de frivillige melde seg på posisjoner selv, i stedet for å vente på tildelinger fra administrasjonen.
+
+1. Når du oppretter eller redigerer en plan, angi en **Signup Deadline** (antall timer før gudstjenesten) for å bestemme når selvbetjent påmelding stenger. Timene telles tilbake fra planens første gudstjenestetidspunkt. La feltet stå tomt for ingen frist. Nye planer starter med forrige plans frist.
+2. Eventuelt slå på **Show volunteer names on signup page** for at de frivillige skal se hvem andre som er påmeldt.
+3. For hver posisjon krysser du av i boksen **Allow Self-Signup** for å gjøre den tilgjengelig for selvbetjening.
+4. Legg til en **Description** for hver posisjon, slik at de frivillige vet hva rollen innebærer.
+
+Når posisjoner for selvbetjent påmelding er opprettet, vises de automatisk på påmeldingssidene for frivillige på [B1.church](../../b1-church/serving/volunteer-signup) og i [B1 Mobile-appen](../../b1-mobile/serving/volunteer-signup). Medlemmer kan bla gjennom ledige posisjoner, se hvor mange plasser som er igjen, og melde seg på med ett klikk.
 
 :::tip
-Pushvarsler på mobilappen varsler frivillige når de mottar nye oppdraget eller når planene endres.
+Bland posisjoner som tildeles av administrasjonen med posisjoner for selvbetjent påmelding i samme plan. For eksempel kan du tildele worship-lederen direkte, men la vertene og de som serverer kaffe velge selv.
+:::
+
+## Steg 7: Gi beskjed til de frivillige
+
+Frivillige med tildelte oppdrag ser planene sine automatisk og kan svare.
+
+1. De frivillige ser planene sine på [B1.church](../../b1-church/plans/viewing-plans.md) og i [B1 Mobile-appen](../../b1-mobile/serving/viewing-plans.md)
+2. De kan godta eller avslå oppdrag direkte fra begge plattformene
+3. De kan angi blokkeringsdatoer for uker de ikke er tilgjengelige
+4. Planer kan skrives ut til øvelser eller henges opp bak scenen
+5. De frivillige kan bla gjennom og melde seg på ledige posisjoner via [påmeldingssiden for frivillige](../../b1-church/serving/volunteer-signup)
+
+:::tip
+Push-varsler i mobilappen varsler de frivillige når de får nye oppdrag, eller når planene endres.
 :::
 
 ## Du er ferdig!
 
-Ditt frivilligs ledelsessystem er satt opp. Hver uke, opprett en ny plan, tildel posisjoner, og teamet ditt ser alt på telefonen eller datamaskinen sin.
+Systemet ditt for administrasjon av frivillige er satt opp. Hver uke oppretter du en ny plan, tildeler posisjoner, og teamet ditt ser alt på telefonen eller datamaskinen sin.
 
 ## Relaterte artikler
 
-- [Opprett grupper](../groups/creating-groups.md) -- sett opp hold og kategorier
-- [Gruppemedlemmer](../groups/group-members.md) -- legg til og administrer teammedlemmer
-- [Planer](../serving/plans.md) -- opprett og administrer serviceplaner
-- [Servicerekkefølge](../serving/service-order.md) -- bygg flyten av en service
-- [Sanger](../serving/songs.md) -- administrer ditt worshipsangerbibliotek
-- [Oppgaver](../serving/tasks.md) -- tildel handlinger til mennesker eller grupper
-- [Arbeitsflyter](../serving/workflows.md) -- flytt mennesker gjennom gjenbrukbare prosesser med utløsere og automatiserte trinn
-- [Visning av planer (nett)](../../b1-church/plans/viewing-plans.md) -- hvordan frivillige ser planer på nettet
-- [Visning av planer (mobil)](../../b1-mobile/serving/viewing-plans.md) -- hvordan frivillige ser planer på mobil
-- [Frivillig påmelding (nett)](../../b1-church/serving/volunteer-signup) -- hvordan medlemmer selvvelger frivilligposisjoner
-- [Frivillig påmelding (mobil)](../../b1-mobile/serving/volunteer-signup) -- frivillig selvpåmelding på mobil
+- [Creating Groups](../groups/creating-groups.md) — sett opp team og kategorier
+- [Group Members](../groups/group-members.md) — legg til og administrer teammedlemmer
+- [Plans](../serving/plans.md) — opprett og administrer tjenesteplaner
+- [Service Order](../serving/service-order.md) — bygg flyten i en gudstjeneste
+- [Songs](../serving/songs.md) — administrer sangbiblioteket for lovsang
+- [Tasks](../serving/tasks.md) — tildel oppgaver til personer eller grupper
+- [Workflows](../serving/workflows.md) — før personer gjennom gjentakende prosesser med utløsere og automatiske steg
+- [Viewing Plans (Web)](../../b1-church/plans/viewing-plans.md) — hvordan frivillige ser planer på nett
+- [Viewing Plans (Mobile)](../../b1-mobile/serving/viewing-plans.md) — hvordan frivillige ser planer på mobil
+- [Volunteer Signup (Web)](../../b1-church/serving/volunteer-signup) — hvordan medlemmer selv velger frivillige posisjoner
+- [Volunteer Signup (Mobile)](../../b1-mobile/serving/volunteer-signup) — selvbetjent påmelding for frivillige på mobil

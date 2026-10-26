@@ -1,29 +1,33 @@
 ---
-title: "Reports"
+title: "Report"
 ---
 
-# Rapporti
+# Report
 
 <div class="article-intro">
 
-B1 Admin gives you several ways Per pull data about your congregation, Frequenza, and giving. Reporting is built into the relevant sections of the app rather than a single Rapporti page.
+B1 Admin ti offre diversi modi per estrarre dati sulla tua comunità, sulle presenze e sulle donazioni. La reportistica è integrata nelle sezioni pertinenti dell'app anziché in un'unica pagina Report.
 
 </div>
 
-## Where Per Trova Rapporti
+## Video di formazione
 
-### People
-- **[Birthday & Anniversary Lists](./birthday-report)** -- Filter by Birth Mese or Anniversary Mese in **People → Advanced Cerca** Per get a list of upcoming birthdays or anniversaries.
+<YouTube id="q3k8ty_V610" title="Running Reports in B1" />
 
-### Frequenza
-- **[Attendance Reports](./attendance-reports)** -- Frequenza trends and Gruppo Frequenza data are found in the **Frequenza** section.
+## Dove trovare i report
 
-### Donations
-- **[Donation Summary](./donation-summary)** -- Giving totals and fund breakdowns are found in the **Donations** section.
+### Persone
+- **[Elenchi di compleanni e anniversari](./birthday-report)** -- Filtra per Mese di nascita o Mese dell'anniversario in **Persone → Ricerca avanzata** per ottenere un elenco dei prossimi compleanni o anniversari.
+
+### Presenze
+- **[Report sulle presenze](./attendance-reports)** -- Le tendenze delle presenze e i dati sulle presenze per gruppo si trovano nella sezione **Presenze**.
+
+### Donazioni
+- **[Riepilogo delle donazioni](./donation-summary)** -- I totali delle offerte e la suddivisione per fondo si trovano nella sezione **Donazioni**.
 
 ### Impostazioni
-- **[Audit Log](./audit-log)** -- Track all changes and actions across your church management system (found under **Impostazioni → Audit Log**).
+- **[Registro di controllo](./audit-log)** -- Tieni traccia di tutte le modifiche e le azioni nel tuo sistema di gestione della chiesa (si trova in **Impostazioni → Registro di controllo**).
 
 :::info
-Rapporto data depends on consistent data entry. Make sure your team is [tracking attendance](../attendance/tracking-attendance.md), [recording donations](../donations/recording-donations.md), and keeping [people records](../people/adding-people.md) up Per Data for the most accurate results.
+I dati dei report dipendono da un inserimento costante. Assicurati che il tuo team [registri le presenze](../attendance/tracking-attendance.md), [registri le donazioni](../donations/recording-donations.md) e mantenga [aggiornate le schede delle persone](../people/adding-people.md) per ottenere risultati più accurati.
 :::

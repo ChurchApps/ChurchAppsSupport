@@ -1,99 +1,103 @@
 ---
-title: "Custom Fields"
+title: "Mga Custom Field"
 ---
 
-# Custom Fields
+# Mga Custom Field
 
 <div class="article-intro">
 
-Hinahayaan ka ng **Custom Fields** na subaybayan ang sarili mong impormasyon sa bawat record ng tao — mga bagay na walang built-in na field ang B1, tulad ng petsa ng pag-expire ng background check, sukat ng T-shirt, o katayuan sa baptism class. Isang beses mo lang ide-define ang field sa Settings, pagkatapos ay maglalagay ka ng value sa profile ng bawat tao at maaari kang maghanap o bumuo ng mga listahan batay dito. Pinapalitan nito ang dating paraan ng paggawa ng People form para lang mag-imbak ng iisang custom na datos.
+Ang **Custom Field** ay nagbibigay-daan sa iyong subaybayan ang sarili mong impormasyon sa bawat person record -- mga bagay na walang built-in na field sa B1, tulad ng petsa ng pag-expire ng background check, laki ng T-shirt, o status ng baptism class. Itinatakda mo ang field nang isang beses sa Settings, pagkatapos ay punan ang value sa profile ng bawat tao at maghanap o gumawa ng mga listahan batay dito. Pinapalitan nito ang lumang paraan ng paggawa ng People form para lamang mag-imbak ng iisang custom na datos.
 
 </div>
 
-<div class="prereqs">
-<h4>Bago Magsimula</h4>
+## Training Video
 
-- Kailangan mo ng pahintulot na mag-edit sa **People** para mag-define ng mga field at maglagay ng mga value, at access sa lugar ng **Settings**. Makikita ng sinumang may pahintulot na tumingin sa People ang mga value. Tingnan ang [Mga Tungkulin at Pahintulot](./roles-permissions.md).
-- Magpasya muna kung ano ang gusto mong subaybayan at kung anong uri ang pinakaangkop (text, numero, petsa, sagot na oo/hindi, o pick-list) bago magsimula.
+<YouTube id="yUfDEbp2HQ4" title="Custom Fields, Bulk Editing, and Exporting in B1" next="Creating Groups and Adding Members in B1" nextUrl="/docs/b1-admin/groups/creating-groups" />
+
+<div class="prereqs">
+<h4>Bago Ka Magsimula</h4>
+
+- Kailangan mo ng **People** edit permission para magtakda ng mga field at maglagay ng value, at access sa **Settings** area. Ang sinumang may People view permission ay makakakita ng mga value. Tingnan ang [Roles & Permissions](./roles-permissions.md).
+- Magpasya kung ano ang gusto mong subaybayan at kung aling uri ang pinakabagay (text, numero, petsa, oo/hindi, o pick-list) bago ka magsimula.
 
 </div>
 
 ## Pagbubukas ng Custom Fields
 
-Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas na kaliwa), piliin ang **Settings > Settings**, at i-click ang **Custom Fields** sa listahan sa kaliwa para mag-scroll sa seksyong **Custom Fields**. Maaari ka ring dumiretso rito sa **/settings/custom-fields**. Makikita mo ang listahan ng bawat field na na-define mo, na nagpapakita ng **Name** at **Field Type** nito. Kung wala ka pang nagagawa, ang nakasulat sa panel ay *"No custom fields have been added yet."*
+Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), piliin ang **Settings > Settings**, at i-click ang **Custom Fields** sa listahan sa kaliwa para mapunta sa seksyong **Custom Fields**. Maaari mo rin itong puntahan nang direkta sa **/settings/custom-fields**. Makikita mo ang listahan ng lahat ng field na iyong ginawa, na nagpapakita ng **Name** at **Field Type**. Kung wala ka pang nagawa, ang panel ay magsasabing *"No custom fields have been added yet."*
 
 ## Pagdaragdag ng Field
 
 1. I-click ang **Add Field**.
-2. Sa editor na bubukas sa kanan, maglagay ng **Name** — ito ang label na makikita ng staff sa mga profile ng tao at sa paghahanap (halimbawa, *Background check expires*).
+2. Sa editor na lalabas sa kanan, ilagay ang **Name** -- ito ang label na makikita ng staff sa mga profile ng tao at sa paghahanap (halimbawa, *Background check expires*).
 3. Pumili ng **Field Type**:
-   - **Textbox** — malayang maikling text.
-   - **Whole Number** — mga numerong walang decimal (halimbawa, bilang).
-   - **Decimal** — mga numerong maaaring may decimal.
-   - **Date** — petsa sa kalendaryo.
-   - **Yes/No** — simpleng sagot na oo o hindi.
-   - **Multiple Choice** — isang pick-list. Kapag pinili mo ang uring ito, lilitaw ang isang **choices editor** para maidagdag mo ang bawat opsyong mapipili ng mga tao.
+   - **Textbox** -- maikling text na malayang maisusulat.
+   - **Whole Number** -- mga numerong walang decimal (halimbawa, bilang).
+   - **Decimal** -- mga numerong maaaring may decimal.
+   - **Date** -- isang petsa sa kalendaryo.
+   - **Yes/No** -- simpleng oo o hindi na sagot.
+   - **Multiple Choice** -- isang pick-list. Kapag ito ang pinili mo, lalabas ang **choices editor** para makapagdagdag ka ng bawat opsyong maaaring piliin ng mga tao.
 4. I-click ang **Save**.
 
-Magagamit na ngayon ang field sa profile ng bawat tao.
+Makikita na ang field sa profile ng bawat tao.
 
 :::info
-Ang mga uri ng field ay kapareho ng set na ginagamit sa [mga tanong ng form](../forms/creating-forms.md), kaya pare-pareho ang kilos ng mga value sa buong B1.
+Ang mga uri ng field ay kapareho ng mga ginagamit sa [form questions](../forms/creating-forms.md), kaya magkakapareho ang kilos ng mga value sa buong B1.
 :::
 
-## Pag-edit ng Field
+## Pag-e-edit ng Field
 
-I-click ang anumang hanay ng field sa listahan para buksan ulit ito sa editor. Baguhin ang pangalan, uri, o mga pagpipilian at i-click ang **Save**.
+I-click ang alinmang row ng field sa listahan para buksan itong muli sa editor. Baguhin ang pangalan, uri, o mga pagpipilian at i-click ang **Save**.
 
 :::warning
-Ang pagpapalit ng **Field Type** ng field na may mga value na (halimbawa, mula Textbox patungong Date) ay maaaring mag-iwan ng mga naunang inilagay na value sa format na hindi na tugma sa bagong uri. Mag-ingat sa pagpapalit ng uri kapag nagsimula nang punan ng staff ang field.
+Ang pagbabago ng **Field Type** ng field na may mga value na (halimbawa, mula Textbox patungong Date) ay maaaring mag-iwan ng dating inilagay na mga value sa format na hindi na tugma sa bagong uri. Mag-ingat sa pagbabago ng uri kapag nagsimula nang maglagay ng value ang staff sa field.
 :::
 
 ## Pagbura ng Field
 
-Buksan ang isang field para i-edit at i-click ang **Delete**. Hihingan ka ng kumpirmasyon: *"Are you sure you wish to delete this custom field? Its stored values will also be removed."* Ang pagbura ng field ay permanenteng nag-aalis dito **at ng bawat value na nakaimbak para rito** sa lahat ng tao — hindi na ito mababawi.
+Buksan ang field para i-edit at i-click ang **Delete**. Hihingan ka ng kumpirmasyon: *"Are you sure you wish to delete this custom field? Its stored values will also be removed."* Ang pagbura ng field ay permanenteng magtatanggal dito **at sa bawat value na naka-imbak dito** sa lahat ng tao -- hindi ito maaaring bawiin.
 
-## Paglalagay ng mga Value sa isang Tao
+## Paglalagay ng Value sa Isang Tao
 
-Kapag may kahit isang custom field na, ang mga value nito ay nasa tabi mismo ng mga built-in na detalye sa record ng bawat tao — makikita mo ang mga ito kasama ng contact details ng tao sa kaliwa ng profile at ine-edit sa parehong form na ginagamit mo para sa iba pang impormasyon ng tao. Walang dagdag na lilitaw hangga't hindi mo pa na-define ang unang field mo.
+Kapag mayroon nang kahit isang custom field, ang mga value nito ay nasa tabi mismo ng mga built-in na detalye sa record ng bawat tao -- makikita mo ang mga ito kasama ng contact details ng tao sa kaliwa ng kanyang profile, at mae-edit sa parehong form na ginagamit mo para sa iba pang impormasyon ng tao. Walang lalabas na dagdag hangga't hindi ka pa nakakapagtakda ng unang field.
 
 1. Buksan ang record ng isang tao sa **People**.
-2. I-click ang button na **Edit** sa kaliwa ng profile, sa ibaba ng contact details ng tao.
-3. Mag-scroll sa lugar ng **Custom Fields** sa ibaba ng edit form at maglagay ng value para sa bawat field. Ipinapakita ng bawat field ang input na tugma sa uri nito — date picker para sa mga Date field, yes/no dropdown para sa mga Yes/No field, pick-list para sa Multiple Choice, at iba pa.
-4. I-click ang **Save**. Sabay na sine-save ang iyong mga custom-field value kasama ng iba pang detalye ng tao.
+2. I-click ang **Edit** button sa kaliwa ng profile, sa ibaba ng contact details ng tao.
+3. Mag-scroll sa **Custom Fields** area sa ibaba ng edit form at maglagay ng value para sa bawat field. Ang bawat field ay may input na tugma sa uri nito -- date picker para sa Date fields, yes/no dropdown para sa Yes/No fields, pick-list para sa Multiple Choice, at iba pa.
+4. I-click ang **Save**. Ang mga value ng custom field ay ise-save kasama ng iba pang detalye ng tao.
 
-Pagbalik sa profile, ang anumang field na may value ay makikita na sa ilalim ng contact details ng tao bilang *Field name: value* (ang mga sagot na Yes/No ay mababasa bilang *Yes* o *No*, at ang Multiple Choice ay nagpapakita ng label ng opsyon). Ang mga field na naiwang blangko ay itinatago lang. Para mag-alis ng value, i-edit ang tao, i-clear ang field, at i-save — ang walang lamang value ay binubura sa record sa halip na iimbak bilang blangko.
+Pagbalik sa profile, ang anumang field na may value ay makikita na sa ilalim ng contact details ng tao bilang *Field name: value* (ang sagot na Yes/No ay lalabas bilang *Yes* o *No*, at ang Multiple Choice ay ipapakita ang label ng opsyon). Ang mga field na walang laman ay hindi lang ipinapakita. Para magtanggal ng value, i-edit ang tao, burahin ang field, at i-save -- ang walang lamang value ay tinatanggal sa record sa halip na i-save bilang blangko.
 
 :::tip
-Ang klasikong gamit nito ay kaligtasan ng mga volunteer: gumawa ng **Date** field na tinatawag na *Background check expires*, itala ang petsa ng bawat volunteer, pagkatapos ay bumuo ng [Saved List](../people/lists.md) na magmamarka sa sinumang lumampas na ang petsa.
+Ang klasikong gamit nito ay ang kaligtasan ng mga volunteer: gumawa ng **Date** field na may pangalang *Background check expires*, itala ang petsa ng bawat volunteer, at pagkatapos ay gumawa ng [Saved List](../people/lists.md) na magpapakita ng sinumang lumampas na sa petsa.
 :::
 
-## Paghahanap at Pagbuo ng mga Listahan gamit ang Custom Fields
+## Paghahanap at Paggawa ng Listahan Gamit ang Custom Fields
 
-Ganap na mahahanap ang mga custom field:
+Ganap na maaaring hanapin ang mga custom field:
 
-1. Sa pahina ng **People**, buksan ang [Advanced Search](../people/searching-people.md).
+1. Sa pahinang **People**, buksan ang [Advanced Search](../people/searching-people.md).
 2. I-expand ang kategoryang **Custom Fields**.
-3. Lagyan ng check ang field na gusto mong i-filter, pumili ng operator, at maglagay ng value. Ang mga alok na operator ay tugma sa uri ng field:
-   - **Textbox** — contains, equals, starts with, ends with.
-   - **Whole Number / Decimal** — equals, greater than, greater than or equal, less than, less than or equal.
-   - **Date** — equals, after (greater than), before (less than).
-   - **Yes/No** — equals Yes o No.
-   - **Multiple Choice** — equals o contains ang isa sa mga pagpipilian.
+3. I-check ang field na nais mong salain, pumili ng operator, at maglagay ng value. Ang mga operator na iaalok ay tumutugma sa uri ng field:
+   - **Textbox** -- contains, equals, starts with, ends with.
+   - **Whole Number / Decimal** -- equals, greater than, greater than or equal, less than, less than or equal.
+   - **Date** -- equals, after (greater than), before (less than).
+   - **Yes/No** -- equals Yes o No.
+   - **Multiple Choice** -- equals o contains ng isa sa mga pagpipilian.
 
-I-save ang anumang custom-field na paghahanap bilang [List](../people/lists.md). Ang mga list ay live na query, kaya ang list na binuo sa *Background check expires is before today* ay muling sinusuri ang bawat tao tuwing bubuksan mo ito — walang mano-manong pagmementena.
+I-save ang anumang custom-field search bilang [List](../people/lists.md). Ang mga List ay live na query, kaya ang listahang ginawa sa *Background check expires is before today* ay muling susuriin ang bawat tao tuwing bubuksan mo ito -- walang manual na pag-aalaga.
 
 ## Pagpapakita ng Custom Field bilang Column
 
-Para makita ang mga value ng isang field para sa lahat nang sabay-sabay, idagdag ito bilang column sa pahina ng **People**. Lumipat sa **View as** na **Table**, i-click ang icon na **Select columns** sa header ng pahina, lumipat sa tab na **Custom**, at lagyan ng check ang field. Lalabas ang value ng bawat tao sa sarili nitong column sa tabi ng mga built-in. Tingnan ang [Pagpapakita ng Custom Fields bilang mga Column](../people/searching-people.md#showing-custom-fields-as-columns).
+Para makita ang value ng isang field para sa lahat nang sabay-sabay, idagdag ito bilang column sa pahinang **People**. Palitan ang **View as** sa **Table**, i-click ang **Select columns** icon sa header ng pahina, lumipat sa **Custom** tab, at i-check ang field. Lalabas ang value ng bawat tao sa sarili nitong column katabi ng mga built-in. Tingnan ang [Showing Custom Fields as Columns](../people/searching-people.md#showing-custom-fields-as-columns).
 
-## Ano ang Nangyayari sa Merge
+## Ano ang Mangyayari sa Merge
 
-Kapag [pinagsama mo ang dalawang record ng tao](../people/adding-people.md), awtomatikong nalilipat ang mga custom-field value. Pinananatili ng taong itinatago mo ang sarili niyang mga value; para sa anumang field na ang naalis na tao lang ang may value, kokopyahin ang value na iyon para walang mawala.
+Kapag [pinagsama mo ang dalawang person record](../people/adding-people.md), awtomatikong ililipat ang mga value ng custom field. Ang taong itinatago mo ay mananatili sa sarili niyang mga value; para sa alinmang field na ang inalis na tao lamang ang may value, kokopyahin ang value na iyon upang walang mawala.
 
 ## Mga Kaugnay na Artikulo
 
-- [Paghahanap ng mga Tao](../people/searching-people.md) — advanced search, kasama ang kategoryang Custom Fields, at pagpapakita ng custom field bilang mga column
-- [Mga Saved List](../people/lists.md) — i-save ang custom-field na paghahanap at patakbuhin itong muli nang live
-- [Mga Tungkulin at Pahintulot](./roles-permissions.md) — sino ang maaaring mag-define ng mga field at mag-edit ng mga value
-- [Paggawa ng mga Form](../forms/creating-forms.md) — para sa pangongolekta ng datos na maraming tanong kung saan mas angkop ang buong form kaysa mga solong field
+- [Searching People](../people/searching-people.md) -- advanced search, kabilang ang kategoryang Custom Fields, at pagpapakita ng custom fields bilang columns
+- [Saved Lists](../people/lists.md) -- i-save ang custom-field search at patakbuhin ulit nang live
+- [Roles & Permissions](./roles-permissions.md) -- sino ang maaaring magtakda ng field at mag-edit ng value
+- [Creating Forms](../forms/creating-forms.md) -- para sa maraming tanong na pagkolekta ng datos kung saan mas angkop ang buong form kaysa sa iisang field

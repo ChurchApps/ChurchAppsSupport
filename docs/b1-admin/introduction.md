@@ -43,7 +43,7 @@ All of B1 Admin is reached from the **Jump menu** at the top-left of the header.
 
 1. Click the search bar, or press **Ctrl+K** (**Cmd+K** on a Mac), or press **/** while you are not typing in a text field.
 2. The menu lists every section you have access to -- Dashboard, People, Donations, Serving, Sermons, Website, Calendars, Mobile, and Settings. The section you are in is already expanded and your current page is highlighted.
-3. Click a section to expand it and see its pages (for example, **People** contains **People**, **Groups**, **Attendance**, and **Forms**). Only one section is expanded at a time.
+3. Click a section to expand it and see its pages (for example, **People** contains **People**, **Groups**, **Attendance**, **Forms**, and **Notes**). Only one section is expanded at a time.
 4. Click a page to go there.
 
 You can also use the keyboard: the **Up** and **Down** arrows move through the list, **Right** expands a section, **Left** collapses it, and **Enter** opens the highlighted item. Press **Esc** to close the menu without going anywhere.
@@ -54,7 +54,7 @@ In these docs, a step like "In the Jump menu, choose **People > Groups**" means 
 
 Instead of browsing, you can start typing as soon as the menu opens to jump straight to a person, group, plan, fund, or any admin page:
 
-1. Type a name or the page you want (for example, a person's name, "batches", "songs", or "my work").
+1. Type a name or the page you want (for example, a person's name, "batches", "songs", or "my work"). Every page inside a section can be found this way, along with each **Quick Actions** step. Common terms also work -- "qr code" finds **QR guest registration**, and "upload logo" finds **Appearance**. Hyphens don't matter ("b1 checkin" finds **Start check-in**), and if your exact phrase finds nothing, the search looks for results containing all of your words in any order ("logo church" finds **Add Your Church Logo**).
 2. Results are grouped by type -- people, groups, plans, funds, and pages to jump to. Use the arrow keys to move between results and **Enter** to select one, or click a result with your mouse.
 
 The search can also start common tasks. Type what you want to do and select it:

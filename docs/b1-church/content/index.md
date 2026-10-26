@@ -26,7 +26,7 @@ Read Scripture using the built-in Bible reader. You can navigate through books, 
 
 ### Verse of the Day
 
-View a beautifully formatted Bible verse image that changes every day. The image automatically adjusts to fit your screen.
+View a beautifully formatted Bible verse image that changes every day. The image automatically adjusts to fit your screen. You can also share or download any day's verse and browse the verses from earlier days.
 
 ### Lessons
 

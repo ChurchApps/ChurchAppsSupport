@@ -6,108 +6,109 @@ title: "API 密钥"
 
 <div class="article-intro">
 
-API 密钥（个人访问令牌）是从服务器端脚本、第三方连接器（Zapier、Make、Google Sheets）或完整 OAuth 流多余的任何地方向 B1 API 进行身份验证的最简单方式。密钥绑定到特定教会中的特定人员，并继承该人员的权限，由一组可选范围进行缩小。
+API 密钥（个人访问令牌）是从服务器端脚本、第三方连接器（Zapier、Make、Google Sheets）或任何不需要完整 OAuth 流程的场景中验证 B1 API 身份的最简单方式。密钥绑定到某个教会中的特定人员，并继承该人员的权限，同时可选择性地通过一组权限范围（scope）进行限制。
 
 </div>
 
 <div class="prereqs">
-<h4>开始前</h4>
+<h4>开始之前</h4>
 
-- 具有**编辑设置**权限的教会管理员创建和管理密钥
-- 原始密钥在创建时**显示一次** -- 立即将其存储在安全的地方
-- 所有 API 请求必须使用**HTTPS**
+- 具有**编辑设置**权限的教会管理员可以创建和管理密钥
+- 原始密钥仅在创建时显示**一次**——请立即将其保存到安全的地方
+- 所有 API 请求都必须使用 **HTTPS**
 
 </div>
 
 ## 密钥格式
 
-B1 API 密钥看起来像：
+B1 API 密钥的格式如下：
 
 ```
 cak_<prefix>.<secret>
 ```
 
-- `cak_` -- 固定标识符（认证层匹配的 API 密钥前缀）
-- `<prefix>` -- 8 字符公开查找段
-- `<secret>` -- 48 字符密钥；只有 SHA-256 哈希存储在服务器端
+- `cak_` —— 固定标识符（认证层用于匹配的 API 密钥前缀）
+- `<prefix>` —— 8 个字符的公开查找段
+- `<secret>` —— 48 个字符的密钥；服务器端仅存储 SHA-256 哈希值
 
-完整密钥在标准 bearer 标题中呈现给服务器：
+完整密钥通过标准的 Bearer 请求头发送给服务器：
 
 ```http
 Authorization: Bearer cak_a1b2c3d4.f0e1d2c3b4a5968778695a4b3c2d1e0f1a2b3c4d5e6f7
 ```
 
-API 认证层路由任何以 `cak_` 开头的令牌到 API 密钥路径，哈希密钥，按前缀查找它，并解析密钥人员的当前权限 -- 所以在 B1Admin 中撤销权限在下一个请求时立即生效，密钥永远不会与角色不同步。
+API 认证层会将所有以 `cak_` 开头的令牌路由到 API 密钥处理流程，对密钥进行哈希运算，按前缀查找，并解析该密钥所属人员的当前权限——因此在 B1Admin 中撤销某项权限会在下一次请求时立即生效，密钥与角色之间也不会出现不同步的情况。
 
-## 创建密钥 (B1Admin)
+## 创建密钥（B1Admin）
 
-1. 作为具有**编辑设置**的用户登录 B1Admin。
-2. 打开**设置 → 开发人员 → API 密钥**。
-3. 点击**新 API 密钥**，给它一个可识别的名称（例如"Zapier -- 捐赠同步"），选择密钥应该具有的范围，然后**保存**。
-4. 完整的 `cak_…` 密钥在对话框中**显示一次**。关闭前复制它到您的集成配置 -- 以后无法检索。您可以随时创建新密钥。
+1. 以具有**编辑设置**权限的用户身份登录 B1Admin。
+2. 打开**设置 → 开发者 → API 密钥**。
+3. 点击**新建 API 密钥**，为其取一个便于识别的名称（例如"Zapier —— 奉献同步"），选择密钥应具有的权限范围，然后点击**保存**。
+4. 完整的 `cak_…` 密钥会在对话框中显示**一次**。请在关闭对话框之前将其复制到您集成的配置中——之后无法再次获取。您随时可以创建新的密钥。
 
-## 范围
+## 权限范围（Scopes）
 
-范围**缩小**密钥能做什么 -- 它永远不能授予基础人员没有的权限。无范围 / 没有范围意味着密钥携带该人员的完整权限集。
+权限范围会**限制**密钥的能力——它永远无法授予底层人员不具备的权限。留空或不设置权限范围时，密钥将拥有该人员的全部权限。
 
-| 范围 | 允许 |
+| 权限范围 | 允许的操作 |
 |---|---|
-| `people:read` / `people:write` | 查看 / 编辑人员、家庭、团体成员 |
-| `groups:read` / `groups:write` | 查看 / 编辑团体及其成员 |
-| `donations:read` / `donations:write` | 查看 / 记录捐赠 |
-| `attendance:read` / `attendance:write` | 查看 / 记录出席、会议、签到 |
-| `forms:write` | 管理表单（读访问权限包含在写中） |
-| `content:read` / `content:write` | 查看 / 编辑网站内容、注册、流媒体 |
-| `messaging:read` / `messaging:write` | 读消息；写也允许发送短信 |
+| `people:read` / `people:write` | 查看 / 编辑人员、家庭、小组成员 |
+| `groups:read` / `groups:write` | 查看 / 编辑小组及其成员关系 |
+| `donations:read` / `donations:write` | 查看 / 记录奉献 |
+| `attendance:read` / `attendance:write` | 查看 / 记录出勤、场次、签到 |
+| `forms:write` | 管理表单（读取权限已隐含在写入权限中） |
+| `content:read` / `content:write` | 查看 / 编辑网站内容、报名、直播 |
+| `messaging:read` / `messaging:write` | 读取消息；写入权限还允许发送短信 |
 | `roles:read` / `roles:write` | 查看 / 编辑角色定义 |
-| `settings:read` / `settings:write` | 查看 / 编辑教会设置（**需要**以编程方式注册 webhooks） |
-| `offline_access` | 允许长期刷新令牌（仅 OAuth 流 -- 对 API 密钥无效） |
+| `settings:read` / `settings:write` | 查看 / 编辑教会设置（以编程方式注册 Webhook **必需**） |
+| `workflows:read` / `workflows:write` | 查看工作流和任务 / 运行和编辑工作流。运行工作流可能会发送电子邮件和短信、触发 Webhook 以及更改小组成员关系 |
+| `offline_access` | 允许使用长期有效的刷新令牌（仅适用于 OAuth 流程——对 API 密钥无效） |
 
-`write` 范围隐式包括匹配的 `read`。服务器和域管理员权限故意不作为范围暴露 -- 有范围的凭证永远不能提升为网站管理。
+`write` 权限范围隐含包含对应的 `read` 权限。服务器和域管理员权限被有意排除在权限范围之外——具有范围限制的凭据永远无法提升为网站管理员权限。
 
 :::tip
-如果您将使用密钥注册 webhooks（例如对于 Zapier 或 Make 集成），密钥需要 `settings:write`。一个仅 `people:read` 密钥在 `POST /membership/webhooks` 时无声地 403。
+如果您打算使用该密钥注册 Webhook（例如用于 Zapier 或 Make 集成），密钥需要 `settings:write` 权限。仅具有 `people:read` 权限的密钥在调用 `POST /membership/webhooks` 时会静默返回 403。
 :::
 
 ## 使用密钥
 
-与任何 bearer 令牌相同 -- 每个认证端点接受 API 密钥完全如同它接受 JWT：
+与任何 Bearer 令牌相同——每个需要认证的端点都会像接受 JWT 一样接受 API 密钥：
 
 ```bash
 curl https://api.churchapps.org/membership/people \
   -H "Authorization: Bearer cak_a1b2c3d4.f0e1d2c3b4a5968778695a4b3c2d1e0f1a2b3c4d5e6f7"
 ```
 
-一个密钥范围不足的请求用与任何权限拒绝错误相同的形状响应**403 禁止**。
+如果请求所用密钥的权限范围不足，将返回 **403 Forbidden**，其格式与任何权限拒绝错误相同。
 
 ## 通过 API 管理密钥
 
-所有端点都在会员模块的 `/membership/apiKeys` 路径下，需要来自具有**编辑设置**的教会管理员的 JWT（不是 API 密钥）。
+所有端点都位于 Membership 模块的 `/membership/apiKeys` 路径下，并且需要 JWT（而非 API 密钥），且调用者必须是具有**编辑设置**权限的教会管理员。
 
-| 方法与路径 | 用途 |
+| 方法和路径 | 用途 |
 |---|---|
-| `GET /membership/apiKeys` | 列出教会的密钥（无密钥 -- 仅 `id`、`name`、`prefix`、`scopes`、`lastUsedAt`、`expiresAt`、`createdAt`） |
-| `GET /membership/apiKeys/scopes` | 所有可用范围名称的列表 -- 对于密钥创建 UI |
-| `POST /membership/apiKeys` | 创建新密钥。正文：`{ "name": "...", "scopes": ["people:read"] }`。响应包括原始 `cak_…` 密钥**一次**。 |
-| `DELETE /membership/apiKeys/:id` | 撤销密钥 -- 在下一个请求时生效 |
+| `GET /membership/apiKeys` | 列出教会的密钥（不包含密钥本身——仅返回 `id`、`name`、`prefix`、`scopes`、`lastUsedAt`、`expiresAt`、`createdAt`） |
+| `GET /membership/apiKeys/scopes` | 列出所有可用的权限范围名称——用于密钥创建界面 |
+| `POST /membership/apiKeys` | 创建新密钥。请求体：`{ "name": "...", "scopes": ["people:read"] }`。响应中会包含原始的 `cak_…` 密钥，且仅返回**一次**。 |
+| `DELETE /membership/apiKeys/:id` | 撤销密钥——在下一次请求时生效 |
 
-撤销的密钥立即消失 -- 没有宽限期。
+已撤销的密钥会立即失效——没有宽限期。
 
 ## 最佳实践
 
-- **每个集成一个密钥。** 如果出了问题被泄露，您撤销一个密钥而不破坏其他的。
-- **制造最窄的有效范围。** Google Sheets 导出仅需要 `people:read`，而不是 `settings:write`。
-- **将密钥绑定到服务帐户，而不是真实的员工。** 如果一个员工离开，他们的 B1 访问结束 -- 以及在他们身份下造成的任何密钥。
-- **在密钥管理器中存储密钥**（您的托管提供商的环境变量、AWS 密钥管理器等）-- 永远不要在源控制中。
-- **轮换密钥**如果您怀疑曝露：创建新密钥，更新集成，然后删除旧的。
+- **每个集成使用一个密钥。** 如果某个密钥泄露，您只需撤销该密钥，而不会影响其他集成。
+- **尽量使用满足需求的最小权限范围。** Google Sheets 导出只需要 `people:read`，无需 `settings:write`。
+- **将密钥绑定到服务账户，而非真实的工作人员。** 如果工作人员离职，其 B1 访问权限会结束，并且以其身份创建的所有密钥也会随之失效。
+- **将密钥存储在密钥管理器中**（例如托管服务商的环境变量、AWS Secrets Manager 等）——切勿存入源代码控制系统。
+- **如果怀疑密钥已泄露，请轮换密钥：** 创建新密钥，更新集成配置，然后删除旧密钥。
 
-## 它与 OAuth 的区别
+## 与 OAuth 的区别
 
-API 密钥适用于**您的教会是使用集成的唯一一个**的情况。对于需要访问许多教会且每个都有明确同意的连接器 -- 比如在 B1 社区中共享的 SaaS 应用 -- 使用 [OAuth 和连接应用](./connected-apps) 代替。
+当**您的教会是唯一使用该集成的教会**时，API 密钥是合适的选择。对于需要在每个教会明确同意的情况下访问多个教会数据的连接器——例如在 B1 社区中共享的 SaaS 应用——请改用 [OAuth 与已连接应用](./connected-apps)。
 
 | | API 密钥 | OAuth |
 |---|---|---|
-| 谁安装 | 一个教会管理员 | 每个教会管理员授权应用 |
-| 认证标题 | `Authorization: Bearer cak_…` | `Authorization: Bearer <jwt>` |
-| 令牌寿命 | 直到撤销 | 访问 ≈ 7 天，刷新 ≈ 90 天 |
-| 最佳用途 | 内部脚本、Zapier/Make/Sheets 连接器 | 多租户第三方应用 |
+| 由谁安装 | 一位教会管理员 | 每位教会管理员授权应用 |
+| 认证请求头 | `Authorization: Bearer cak_…` | `Authorization: Bearer <jwt>` |
+| 令牌有效期 | 直至被撤销 | 访问令牌约 7 天，刷新令牌约 90 天 |
+| 最适合 | 内部脚本、Zapier/Make/Sheets 连接器 | 多租户第三方应用 |

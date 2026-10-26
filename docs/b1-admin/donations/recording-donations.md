@@ -43,6 +43,29 @@ If the batch has been [closed](batches.md#closing-and-reopening-a-batch), the en
 You can quickly enter multiple donations in a row without leaving the batch page. The form resets after each entry so you can move through a stack of checks or envelopes efficiently.
 :::
 
+## Importing Donations from a CSV File {#importing-donations-from-a-csv-file}
+
+If your donations are already in a spreadsheet -- for example, an export from another giving system or a counting team's tally sheet -- you can import them into a batch instead of typing each one.
+
+1. Open the batch and click **Import CSV** at the top of the page. (The button appears when you can change the batch and your church has at least one [fund](funds.md).)
+2. Click **Choose CSV File** and pick your file. The file needs a header row, and the columns can be in any order:
+   - **Amount** (required; `Total` also works) -- Currency symbols and commas are ignored, so `$1,250.00` is fine. The amount must be greater than zero.
+   - **Date** -- Use a format like `2026-10-25` or `10/25/2026`. If it is blank, the batch date is used.
+   - **Fund** -- The fund's name, matched without regard to capitalization. If it is blank, your first fund is used.
+   - **Method** -- **Check**, **Cash**, **Card**, or **In-Kind**. If it is blank, **Check** is used.
+   - **Check Number** -- The check number (or other payment detail).
+   - **Notes**
+   - **Email**, **Name**, or **First Name** and **Last Name** -- Used to match the donor to someone in your database. A name written as "Smith, John" is read as "John Smith".
+3. Review the preview. Each row shows its line number, the donor from the file, the **Match**, the fund, and the amount:
+   - A person's name means the donor was matched. B1 matches by email first, then by exact name, and only when exactly one person fits.
+   - **Not found — anonymous** means no single match was found. The gift is imported as anonymous, and "Imported as:" with the donor's name is added to its notes so you can assign it later.
+   - A red message such as **Invalid amount**, **Unknown fund**, **Unknown method**, or **Invalid date** means that row will be skipped. Fix the file and choose it again to include it.
+4. Click **Import** (the button shows how many rows will be imported). The donations are added to the batch.
+
+:::tip
+After importing, use **Edit** on any anonymous donation to pick the right person. The "Imported as:" note tells you who the file said it was from.
+:::
+
 ## Logging a Gift from a Person's Record
 
 To record a single gift without opening a batch, open the donor's record in **People** and click **Log a gift** (in the giving summary, or on the person's giving view).

@@ -6,95 +6,98 @@ title: "Champs personnalisés"
 
 <div class="article-intro">
 
-Les **Champs personnalisés** vous permettent de suivre vos propres informations sur chaque dossier de personne -- les choses que B1 n'a pas de champ intégré pour, comme une date d'expiration de vérification de dossier, une taille de t-shirt, ou un statut de classe de baptême. Vous définissez un champ une fois dans les Paramètres, puis remplissez une valeur sur le profil de chaque personne et recherchez ou construisez des listes dessus. Cela remplace l'ancienne solution de contournement de créer un formulaire de personnes juste pour stocker un seul élément de données personnalisé.
+Les **champs personnalisés** vous permettent de suivre vos propres informations sur chaque fiche de personne, pour tout ce que B1 n'a pas comme champ intégré, comme la date d'expiration d'une vérification des antécédents, une taille de T-shirt ou le statut d'une classe de baptême. Vous définissez un champ une seule fois dans les paramètres, puis vous renseignez une valeur sur le profil de chaque personne et vous effectuez des recherches ou créez des listes à partir de ce champ. Cela remplace l'ancienne solution de contournement qui consistait à créer un formulaire de personne pour stocker une seule donnée personnalisée.
 
 </div>
+
+## Vidéo de formation
+
+<YouTube id="yUfDEbp2HQ4" title="Champs personnalisés, modification en masse et exportation dans B1" next="Créer des groupes et ajouter des membres dans B1" nextUrl="/docs/b1-admin/groups/creating-groups" />
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vous avez besoin de la permission **Personnes** pour définir des champs et remplir des valeurs, et d'accès à la zone **Paramètres**. Quiconque a la permission de voir les Personnes peut voir les valeurs. Voir [Rôles et autorisations](./roles-permissions.md).
-- Décidez de ce que vous souhaitez suivre et quel type conviendrait le mieux (texte, un nombre, une date, une réponse oui/non, ou une liste de choix) avant de commencer.
+- Vous devez avoir l'autorisation **Personnes** en modification pour définir les champs et renseigner les valeurs, ainsi qu'un accès à la zone **Paramètres**. Toute personne disposant de l'autorisation Personnes en affichage peut voir les valeurs. Voir [Rôles et autorisations](./roles-permissions.md).
+- Avant de commencer, décidez ce que vous voulez suivre et quel type convient le mieux (texte, nombre, date, réponse oui/non ou liste de choix).
 
 </div>
 
-## Ouverture des champs personnalisés
+## Ouvrir les champs personnalisés
 
-Dans B1 Admin, ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), choisissez **Paramètres > Paramètres**, et cliquez sur **Champs personnalisés** dans la liste de gauche pour défiler jusqu'à la section **Champs personnalisés**. Vous pouvez également y aller directement à **/settings/custom-fields**. Vous verrez une liste de chaque champ que vous avez défini, affichant son **Nom** et son **Type de champ**. Si vous n'en avez pas encore créé, le panneau lit *« Aucun champ personnalisé n'a été ajouté pour le moment. »*
+Dans B1 Admin, ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), choisissez **Paramètres > Paramètres**, puis cliquez sur **Champs personnalisés** dans la liste de gauche pour atteindre la section **Champs personnalisés**. Vous pouvez aussi accéder directement à **/settings/custom-fields**. Vous verrez la liste de tous les champs que vous avez définis, avec leur **Nom** et leur **Type de champ**. Si vous n'en avez encore créé aucun, le panneau affiche *« No custom fields have been added yet. »*
 
-## Ajout d'un champ
+## Ajouter un champ
 
 1. Cliquez sur **Ajouter un champ**.
-2. Dans l'éditeur qui s'ouvre à droite, entrez un **Nom** -- c'est le libellé que le personnel verra sur les profils des personnes et dans la recherche (par exemple, *Vérification de dossier expire*).
+2. Dans l'éditeur qui s'ouvre à droite, saisissez un **Nom** : c'est l'intitulé que verra le personnel sur les fiches de personnes et dans la recherche (par exemple, *Expiration de la vérification des antécédents*).
 3. Choisissez un **Type de champ** :
-   - **Zone de texte** — texte court forme libre.
-   - **Nombre entier** — nombres sans décimales (par exemple, un décompte).
-   - **Décimal** — nombres qui peuvent inclure des décimales.
-   - **Date** -- une date du calendrier.
-   - **Oui/Non** -- une réponse simple oui ou non.
-   - **Choix multiples** -- une liste de choix. Lorsque vous choisissez ce type, un **éditeur de choix** apparaît pour que vous puissiez ajouter chaque option que les gens peuvent sélectionner.
+   - **Zone de texte** : texte court libre.
+   - **Nombre entier** : nombres sans décimales (par exemple, un nombre d'occurrences).
+   - **Décimal** : nombres pouvant comporter des décimales.
+   - **Date** : une date du calendrier.
+   - **Oui/Non** : une réponse simple par oui ou par non.
+   - **Choix multiple** : une liste de choix. Lorsque vous sélectionnez ce type, un **éditeur de choix** apparaît pour vous permettre d'ajouter chaque option que les personnes peuvent sélectionner.
 4. Cliquez sur **Enregistrer**.
 
 Le champ est maintenant disponible sur le profil de chaque personne.
 
 :::info
-Les types de champs sont le même ensemble utilisé pour les [questions de formulaire](../forms/creating-forms.md), de sorte que les valeurs se comportent de manière cohérente dans B1.
+Les types de champs sont les mêmes que ceux utilisés pour les [questions de formulaire](../forms/creating-forms.md), ce qui garantit un comportement cohérent des valeurs dans B1.
 :::
 
-## Modification d'un champ
+## Modifier un champ
 
-Cliquez sur n'importe quelle ligne de champ dans la liste pour la rouvrir dans l'éditeur. Modifiez le nom, le type ou les choix et cliquez sur **Enregistrer**.
+Cliquez sur la ligne d'un champ dans la liste pour le rouvrir dans l'éditeur. Modifiez le nom, le type ou les choix, puis cliquez sur **Enregistrer**.
 
 :::warning
-Changer le **Type de champ** d'un champ qui a déjà des valeurs (par exemple, de Zone de texte à Date) peut laisser les valeurs précédemment entrées dans un format qui ne correspond plus au nouveau type. Modifiez les types avec soin une fois que le personnel a commencé à remplir le champ.
+Modifier le **Type de champ** d'un champ qui contient déjà des valeurs (par exemple, de Zone de texte à Date) peut laisser les valeurs saisies précédemment dans un format qui ne correspond plus au nouveau type. Modifiez les types avec précaution une fois que le personnel a commencé à remplir le champ.
 :::
 
-## Suppression d'un champ
+## Supprimer un champ
 
-Ouvrez un champ pour le modifier et cliquez sur **Supprimer**. Vous serez invité à confirmer : *« Êtes-vous sûr de vouloir supprimer ce champ personnalisé ? Ses valeurs stockées seront également supprimées. »* La suppression d'un champ supprime définitivement **chaque valeur stockée pour lui** sur toutes les personnes -- cela ne peut pas être annulé.
+Ouvrez un champ pour le modifier, puis cliquez sur **Supprimer**. Une demande de confirmation s'affiche : *« Are you sure you wish to delete this custom field? Its stored values will also be removed. »* La suppression d'un champ l'efface **définitivement, ainsi que toutes les valeurs enregistrées pour ce champ** sur l'ensemble des personnes. Cette action est irréversible.
 
-## Remplissage des valeurs sur une personne
+## Renseigner les valeurs d'une personne
 
-Une fois qu'au moins un champ personnalisé existe, ses valeurs vivent juste à côté des détails intégrés sur chaque dossier de personne -- vous les regardez à gauche du profil, avec les coordonnées de la personne, et les modifiez sur le même formulaire que vous utilisez pour le reste des informations de la personne. Rien d'extra n'apparaît jusqu'à ce que vous ayez défini votre premier champ.
+Dès qu'au moins un champ personnalisé existe, ses valeurs apparaissent directement à côté des informations intégrées sur la fiche de chaque personne : vous les consultez avec les coordonnées de la personne, à gauche de son profil, et vous les modifiez dans le même formulaire que celui utilisé pour le reste de ses informations. Rien de supplémentaire n'apparaît tant que vous n'avez pas défini votre premier champ.
 
-1. Ouvrez un dossier de personne dans **Personnes**.
+1. Ouvrez la fiche d'une personne dans **Personnes**.
 2. Cliquez sur le bouton **Modifier** à gauche du profil, sous les coordonnées de la personne.
-3. Faites défiler la zone **Champs personnalisés** au bas du formulaire de modification et remplissez une valeur pour chaque champ. Chaque champ affiche l'entrée qui correspond à son type -- un sélecteur de date pour les champs Date, une liste déroulante oui/non pour les champs Oui/Non, une liste de choix pour Choix multiples, etc.
-4. Cliquez sur **Enregistrer**. Vos valeurs de champ personnalisé sont enregistrées avec le reste des détails de la personne.
+3. Faites défiler jusqu'à la zone **Champs personnalisés**, en bas du formulaire de modification, puis renseignez une valeur pour chaque champ. Chaque champ affiche la saisie correspondant à son type : un sélecteur de date pour les champs Date, une liste déroulante oui/non pour les champs Oui/Non, une liste de choix pour Choix multiple, et ainsi de suite.
+4. Cliquez sur **Enregistrer**. Les valeurs de vos champs personnalisés sont enregistrées avec le reste des informations de la personne.
 
-De retour sur le profil, tout champ qui a une valeur apparaît maintenant sous les coordonnées de la personne, au format *Nom du champ : valeur* (les réponses Oui/Non se lisent comme *Oui* ou *Non*, et Choix multiples affiche le libellé de l'option). Les champs laissés vierges sont simplement masqués. Pour supprimer une valeur, modifiez la personne, effacez le champ et enregistrez -- une valeur vide est supprimée du dossier plutôt que stockée en tant que vierge.
+De retour sur le profil, tout champ ayant une valeur s'affiche désormais sous les coordonnées de la personne sous la forme *Nom du champ : valeur* (les réponses Oui/Non s'affichent comme *Oui* ou *Non*, et les Choix multiples affichent le libellé de l'option). Les champs laissés vides sont simplement masqués. Pour supprimer une valeur, modifiez la personne, videz le champ et enregistrez : une valeur vide est supprimée de la fiche plutôt qu'enregistrée comme vide.
 
 :::tip
-Le cas d'usage classique est la sécurité des bénévoles : créez un champ **Date** appelé *Vérification de dossier expire*, enregistrez la date de chaque bénévole, puis construisez une [Liste enregistrée](../people/lists.md) qui signale toute personne dont la date a dépassé.
+Le cas d'usage classique concerne la sécurité des bénévoles : créez un champ **Date** intitulé *Expiration de la vérification des antécédents*, saisissez la date de chaque bénévole, puis créez une [liste enregistrée](../people/lists.md) qui signale toute personne dont la date est dépassée.
 :::
 
-## Recherche et création de listes sur les champs personnalisés
+## Rechercher et créer des listes à partir des champs personnalisés
 
 Les champs personnalisés sont entièrement consultables :
 
-1. Sur la page **Personnes**, ouvrez la [Recherche avancée](../people/searching-people.md).
+1. Sur la page **Personnes**, ouvrez la [recherche avancée](../people/searching-people.md).
 2. Développez la catégorie **Champs personnalisés**.
-3. Cochez le champ sur lequel vous souhaitez filtrer, choisissez un opérateur et entrez une valeur. Les opérateurs offerts correspondent au type du champ :
-   - **Zone de texte** — contient, égale, commence par, se termine par.
-   - **Nombre entier / Décimal** — égale, supérieur à, supérieur ou égal, inférieur à, inférieur ou égal.
-   - **Date** — égale, après (supérieur à), avant (inférieur à).
-   - **Oui/Non** — égale Oui ou Non.
-   - **Choix multiples** — égale ou contient l'un des choix.
+3. Cochez le champ à filtrer, choisissez un opérateur et saisissez une valeur. Les opérateurs proposés correspondent au type du champ :
+   - **Zone de texte** : contient, est égal à, commence par, se termine par.
+   - **Nombre entier / Décimal** : est égal à, supérieur à, supérieur ou égal à, inférieur à, inférieur ou égal à.
+   - **Date** : est égal à, après (supérieur à), avant (inférieur à).
+   - **Oui/Non** : est égal à Oui ou Non.
+   - **Choix multiple** : est égal à ou contient l'un des choix.
 
-Enregistrez tout recherche de champ personnalisé comme une [Liste](../people/lists.md). Les listes sont des requêtes en direct, donc une liste construite sur *Vérification de dossier expire avant aujourd'hui* re-vérifie chaque personne chaque fois que vous l'ouvrez -- pas d'entretien manuel.
+Enregistrez toute recherche sur champ personnalisé sous forme de [liste](../people/lists.md). Les listes sont des requêtes dynamiques : une liste créée à partir de *Expiration de la vérification des antécédents est avant aujourd'hui* réévalue chaque personne à chaque ouverture, sans intervention manuelle.
 
-## Affichage d'un champ personnalisé en tant que colonne
+## Afficher un champ personnalisé en colonne
 
-Pour voir les valeurs d'un champ pour tout le monde à la fois, ajoutez-le en tant que colonne sur la page **Personnes**. Définissez **Afficher en tant que** sur **Tableau**, cliquez sur l'icône **Sélectionner les colonnes** dans l'en-tête de la page, passez à l'onglet **Personnalisé**, et cochez le champ. La valeur de chaque personne apparaît dans sa propre colonne à côté des champs intégrés. Voir [Affichage des champs personnalisés en tant que colonnes](../people/searching-people.md#showing-custom-fields-as-columns).
+Pour voir les valeurs d'un champ pour tout le monde en même temps, ajoutez-le comme colonne sur la page **Personnes**. Passez **Afficher sous forme** en **Tableau**, cliquez sur l'icône **Sélectionner les colonnes** dans l'en-tête de la page, passez à l'onglet **Personnalisé**, puis cochez le champ. La valeur de chaque personne apparaît dans sa propre colonne, à côté des colonnes intégrées. Voir [Afficher les champs personnalisés en colonnes](../people/searching-people.md#showing-custom-fields-as-columns).
 
 ## Ce qui se passe lors d'une fusion
 
-Lorsque vous [fusionnez deux dossiers de personnes](../people/adding-people.md), les valeurs de champ personnalisé se transfèrent automatiquement. La personne que vous conservez conserve ses propres valeurs ; pour tout champ où seule la personne supprimée avait une valeur, cette valeur est copiée afin que rien ne soit perdu.
+Lorsque vous [fusionnez deux fiches de personnes](../people/adding-people.md), les valeurs des champs personnalisés sont reprises automatiquement. La personne conservée garde ses propres valeurs ; pour tout champ pour lequel seule la personne supprimée avait une valeur, cette valeur est copiée afin que rien ne soit perdu.
 
 ## Articles connexes
 
-- [Recherche de personnes](../people/searching-people.md) — recherche avancée, y compris la catégorie Champs personnalisés, et affichage des champs personnalisés en tant que colonnes
-- [Listes enregistrées](../people/lists.md) — enregistrer une recherche de champ personnalisé et la réexécuter en direct
-- [Rôles et autorisations](./roles-permissions.md) — qui peut définir des champs et modifier les valeurs
-- [Création de formulaires](../forms/creating-forms.md) -- pour la collecte de données multi-questions où un formulaire complet convient mieux que des champs uniques
-
+- [Rechercher des personnes](../people/searching-people.md) : recherche avancée, y compris la catégorie Champs personnalisés, et affichage des champs personnalisés en colonnes
+- [Listes enregistrées](../people/lists.md) : enregistrer une recherche sur champ personnalisé et la réexécuter en direct
+- [Rôles et autorisations](./roles-permissions.md) : qui peut définir des champs et modifier les valeurs
+- [Créer des formulaires](../forms/creating-forms.md) : pour la collecte de données en plusieurs questions, lorsqu'un formulaire complet convient mieux que des champs isolés

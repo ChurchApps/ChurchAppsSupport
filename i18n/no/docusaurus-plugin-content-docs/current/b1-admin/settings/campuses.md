@@ -2,11 +2,11 @@
 title: "Campuser"
 ---
 
-# Campuser {#campuses}
+# Campuser
 
 <div class="article-intro">
 
-Hvis kirken din samles på mer enn ett sted, lar **Campuser** deg følge med på hvilket sted hver person og gruppe tilhører. Når campusene er konfigurert, vises de som et alternativ på personprofiler, i oppmøteoppsett og på demografidashbordet. Kirker med flere lokasjoner kan filtrere, søke og rapportere etter campus i hele B1 Admin.
+Hvis kirken din samles på mer enn ett sted, lar **Campuser** deg holde styr på hvilket sted hver person og gruppe tilhører. Når de er satt opp, vises campuser som et valg på personprofiler, i oppmøteoppsett og på demografidashbordet. Kirker med flere lokasjoner kan filtrere, søke og rapportere etter campus i hele B1 Admin.
 
 </div>
 
@@ -17,55 +17,55 @@ Hvis kirken din samles på mer enn ett sted, lar **Campuser** deg følge med på
 
 </div>
 
-## Åpne campusinnstillingene {#opening-campus-settings}
+## Åpne campusinnstillingene
 
-I B1 Admin åpner du [Hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), velger **Innstillinger > Innstillinger**, og klikker på **Campuser** i listen til venstre for å bla til delen **Campuser**. Du kan også gå direkte dit på **/settings/campuses**. Du ser en liste over alle konfigurerte campuser med navn, sted og tidssone.
+I B1 Admin åpner du [Hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), velger **Innstillinger > Innstillinger** og klikker på **Campuser** i listen til venstre for å rulle til seksjonen **Campuser**. Du kan også gå direkte dit på **/settings/campuses**. Du ser en liste over alle konfigurerte campuser med navn, plassering og tidssone.
 
-## Legge til et campus {#adding-a-campus}
+## Legge til en campus
 
 1. Klikk på **Legg til campus**.
-2. Fyll inn detaljene for campus:
-   - **Navn** *(påkrevd)* – visningsnavnet som vises i hele B1 Admin (for eksempel «Hovedcampus» eller «Nordcampus»).
-   - **Adresse** – gatenavnet for campus (brukes til informasjon; er ikke det samme som hovedadressen til kirken din i Kirkeinnstillinger).
-   - **By / Fylke / Postnummer** – plasseringen til campus.
-   - **Tidssone** – IANA-tidssonen for dette campuset (for eksempel *America/Chicago*). [Innsjekkplaner](../attendance/setup.md#setting-a-check-in-schedule) for gudstjenester på dette campuset åpner og lukker i denne tidssonen. Hvis den er satt til **Ingen**, brukes kirkens [tidssone](./church-settings.md#time-zone) i stedet. Nyttig når campusene ligger i forskjellige tidssoner.
-   - **Nettside** – en valgfri URL for campusets egen nettside.
+2. Fyll ut opplysningene om campusen:
+   - **Navn** *(påkrevd)* — visningsnavnet som vises i hele B1 Admin (for eksempel «Hovedcampus» eller «Nord-campus»).
+   - **Adresse** — gateadressen til campusen (brukes til informasjon; er ikke det samme som hovedadressen til kirken din i kirkeinnstillingene).
+   - **By / Fylke / Postnummer** — campusens plassering.
+   - **Tidssone** — IANA-tidssonen for denne campusen (for eksempel *America/Chicago*). [Innsjekkingsplaner](../attendance/setup.md#setting-a-check-in-schedule) for gudstjenester på denne campusen åpner og stenger i denne tidssonen. Hvis den er satt til **Ingen**, brukes kirkens [tidssone](./church-settings.md#time-zone) i stedet. Nyttig når campuser ligger i ulike tidssoner.
+   - **Nettside** — en valgfri URL for campusens egen nettilstedeværelse.
 3. Klikk på **Lagre**.
 
-## Redigere et campus {#editing-a-campus}
+## Redigere en campus
 
 Klikk på en campusrad i listen for å åpne redigeringsverktøyet i panelet til høyre. Oppdater feltene og klikk på **Lagre**.
 
-## Slette et campus {#deleting-a-campus}
+## Slette en campus
 
-Åpne et campus for redigering og klikk på **Slett**. Du blir bedt om å bekrefte. Å slette et campus fjerner ikke personene som er tilknyttet det – feltet for campus deres blir bare tomt.
+Åpne en campus for redigering og klikk på **Slett**. Du blir bedt om å bekrefte. Å slette en campus fjerner ikke personene som er tilordnet den — campusfeltet deres blir bare tomt.
 
-## Tildele personer til et campus {#assigning-people-to-a-campus}
+## Tilordne personer til en campus
 
-Etter at du har opprettet campuser, kan ansatte tildele en person til et campus fra profilen deres:
+Etter at du har opprettet campuser, kan ansatte tilordne en person til en campus fra profilen sin:
 
-1. Åpne en persons post under **Personer**.
+1. Åpne en persons post i **Personer**.
 2. Klikk på **Rediger**.
-3. Velg campuset i nedtrekkslisten **Campus**.
+3. Velg campusen fra rullegardinlisten **Campus**.
 4. Klikk på **Lagre**.
 
-Du kan også oppdatere campus for mange samtidig fra siden Personer. Velg flere personer, bruk **Massredigering**, og angi feltet Campus for alle på én gang.
+Du kan også oppdatere campus for mange samtidig fra siden Personer. Velg flere personer, bruk **Masseredigering**, og angi campusfeltet for alle på én gang.
 
-## Filtrere etter campus {#filtering-by-campus}
+## Filtrere etter campus
 
-Når campusene er satt opp, kan du filtrere på tvers av B1 Admin etter campus:
+Når campuser er satt opp, kan du filtrere på tvers av B1 Admin etter campus:
 
-- **Personsøk** – legg til en betingelse for Campus i det avanserte søket, eller last inn en [lagret liste](../people/lists.md) som er avgrenset til et campus.
-- **Demografi** – [demografidashbordet](../people/demographics.md) viser et ringdiagram for Campus når minst én person har et campus tilordnet.
-- **Oppmøteoppsett** – hver gudstjenestetid i Oppmøte kan knyttes til et campus.
+- **Personsøk** — legg til en betingelse for Campus i det avanserte søket, eller last inn en [lagret liste](../people/lists.md) avgrenset til en campus.
+- **Demografi** — [demografidashbordet](../people/demographics.md) viser et ringdiagram for campus når minst én person har en campus tilordnet.
+- **Oppmøteoppsett** — hver gudstjenestetid i Oppmøte kan knyttes til en campus.
 
 :::tip
-Kirker med ett sted trenger ikke å konfigurere campuser. Alle campusfunksjoner er valgfrie – hvis ingen campuser finnes, vises ikke campusfeltene og -diagrammene.
+Kirker med ett sted trenger ikke sette opp campuser. Alle campusfunksjoner er valgfrie — hvis det ikke finnes noen campuser, vises ikke campusfeltene og diagrammene.
 :::
 
-## Relaterte artikler {#related-articles}
+## Relaterte artikler
 
-- [Kirkeinnstillinger](./church-settings.md) – hovedadressen og profileringen til kirken din (adskilt fra campusadresser)
-- [Demografi](../people/demographics.md) – diagrammet for fordeling etter campus
-- [Oppmøteoppsett](../attendance/setup.md) – knytt gudstjenestetider til et campus
-- [Massredigering](../people/bulk-editing.md) – tildel campus til mange personer samtidig
+- [Kirkeinnstillinger](./church-settings.md) — hovedadressen og merkevaren til kirken din (skilt fra campusadressene)
+- [Demografi](../people/demographics.md) — diagrammet for fordeling på campus
+- [Oppmøteoppsett](../attendance/setup.md) — koble gudstjenestetider til en campus
+- [Masseredigering](../people/bulk-editing.md) — tilordne campus til mange personer samtidig

@@ -175,11 +175,11 @@ Base path: `/content/sermons`
 | GET | `/lookup?videoType=&videoData=` | Public | — | Look up sermon metadata from YouTube or Vimeo |
 | GET | `/socialSuggestions?youtubeVideoId=` | JWT | — | Generate AI social media post suggestions from sermon subtitles |
 | GET | `/outline?url=&title=&author=` | JWT | — | Generate AI lesson outline from a URL |
-| GET | `/youtubeImport/:channelId` | JWT | — | Import videos from a YouTube channel |
+| GET | `/youtubeImport/:channelId` | JWT | — | Import videos from a YouTube channel. HTML entities that YouTube's search API puts in titles and descriptions (such as `&amp;` and `&#39;`) are decoded |
 | GET | `/vimeoImport/:channelId` | JWT | — | Import videos from a Vimeo channel |
 | GET | `/:id` | JWT | — | Get a sermon by ID |
 | GET | `/` | JWT | — | List all sermons |
-| POST | `/` | JWT | StreamingServices.Edit | Create or update sermons (batch, supports base64 thumbnail upload) |
+| POST | `/` | JWT | StreamingServices.Edit | Create or update sermons. Accepts an array or a single sermon object (always returns an array); an empty body returns 400. Supports base64 thumbnail upload |
 | DELETE | `/:id` | JWT | StreamingServices.Edit | Delete a sermon |
 
 ### Example: Look Up a YouTube Sermon
@@ -306,7 +306,7 @@ Base path: `/content/gallery`
 
 Base path: `/content/bibles`
 
-All Bible endpoints are public (no authentication required). Data is fetched from external sources and cached locally.
+All Bible endpoints are public (no authentication required). Data is fetched from external sources and cached locally. Requests to api.bible time out after 15 seconds; a timeout returns **504**.
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|

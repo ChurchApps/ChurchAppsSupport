@@ -6,51 +6,51 @@ title: "Geplanter Modus"
 
 <div class="article-intro">
 
-Im geplanten Modus läuft ein FreePlay-Fernseher von allein. Sie erstellen Wiedergabelisten und setzen sie in **FreePlay Admin** unter [admin.freeplay.church](https://admin.freeplay.church) in einen Kalender. Jeder Fernseher, der mit diesem Kalender gekoppelt ist, lädt die kommende Woche herunter und spielt zur festgelegten Zeit ab, was eingeplant ist – ohne dass jemand auf Start drücken muss. Da die Dateien bereits heruntergeladen sind, läuft die Wiedergabe weiter, selbst wenn das WLAN ausfällt.
+Mit dem geplanten Modus kann ein FreePlay-TV selbstständig laufen. Sie erstellen Playlists und legen sie in **FreePlay Admin** unter [admin.freeplay.church](https://admin.freeplay.church) in einen Kalender. Jeder TV, der mit diesem Kalender gekoppelt ist, lädt die kommende Woche herunter und spielt zur geplanten Uhrzeit ab, was dafür vorgesehen ist – ohne dass jemand auf Start drückt. Da die Dateien bereits heruntergeladen sind, läuft die Wiedergabe auch dann weiter, wenn das WLAN ausfällt.
 
 </div>
 
 :::tip
-FreePlay Admin verwendet Ihre Anmeldung bei ChurchApps – dieselbe, die Sie für B1 Admin nutzen. Ein eigenes Konto müssen Sie nicht anlegen.
+FreePlay Admin verwendet Ihren ChurchApps-Login, denselben, den Sie auch für B1 Admin nutzen. Es muss kein separates Konto angelegt werden.
 :::
 
-## So greifen die Teile ineinander
+## So greift alles ineinander
 
 FreePlay Admin hat vier Hauptseiten, die oben auf der Website aufgelistet sind:
 
-- **[Bildschirme](./managing-screens)** – die gekoppelten Fernseher, ihr Status und die **Bildschirmgruppen**, zu denen sie gehören. Bildschirme in einer Gruppe teilen sich einen Kalender und eine Standardschleife.
-- **[Wiedergabelisten](./building-playlists)** – Schleifen aus Bildern und Videos, die Sie aus Ihren Inhaltsanbietern auswählen
-- **[Kalender](./scheduling-the-calendar)** – was jede Bildschirmgruppe wann abspielt
-- **[Anbieter](./building-playlists#connecting-providers)** – die Inhaltsquellen, aus denen Ihre Wiedergabelisten stammen. Sie verbinden jede Quelle einmal für die gesamte Kirche.
+- **[Bildschirme](./managing-screens)** – Die TVs, die Sie gekoppelt haben, ihr Status und die **Bildschirmgruppen**, zu denen sie gehören. Bildschirme in einer Gruppe teilen sich einen Kalender und eine Standard-Schleife
+- **[Playlists](./building-playlists)** – Schleifen aus Bildern und Videos, die Sie aus Ihren Inhaltsanbietern auswählen
+- **[Kalender](./scheduling-the-calendar)** – Was jede Bildschirmgruppe wann abspielt
+- **[Anbieter](./building-playlists#connecting-providers)** – Die Inhaltsquellen, aus denen Ihre Playlists schöpfen. Sie verbinden jeden Anbieter einmal für die gesamte Gemeinde
 
-Ist nichts eingeplant, spielt eine Bildschirmgruppe ihre **Standardschleife**. Hat die Gruppe keine Standardschleife, bleiben die Bildschirme dunkel.
+Wenn nichts geplant ist, spielen die Bildschirme einer Gruppe ihre **Standard-Schleife** ab. Hat die Gruppe keine Standard-Schleife, bleiben die Bildschirme dunkel.
 
 ## Unterschied zum Planmodus
 
-- **[Planmodus](../plan-mode/)** folgt einem Plantyp aus B1 Admin. Jemand drückt am Fernseher auf **Plan starten**, und die Lektion läuft, sobald das geschieht.
-- **Geplanter Modus** folgt einem Kalender. Inhalte beginnen und enden zu den Zeiten, die Sie festlegen. Das eignet sich gut für Beschilderung in der Lobby, Ankündigungsschleifen und Klassenräume, in denen die Lektion schon laufen soll, bevor jemand hereinkommt.
+- **[Planmodus](../plan-mode/)** folgt einem Gottesdienstplantyp aus B1 Admin. Jemand drückt auf dem TV auf **Start Plan**, und die Lektion beginnt, sobald diese Person es tut
+- **Geplanter Modus** folgt einem Kalender. Inhalte beginnen und enden zu den von Ihnen festgelegten Zeiten, daher eignet er sich gut für Eingangsbereich-Beschilderung, Ansage-Schleifen und Klassenräume, in denen die Lektion schon laufen soll, bevor jemand hereinkommt
 
-Ein Kalendereintrag kann weiterhin einen Gottesdienstplan abspielen. Wählen Sie beim Hinzufügen eines Zeitplans den Plantyp unter **Gottesdienstpläne**, und der Bildschirm spielt den Plan ab, der in B1 Admin in dieser Woche aktuell ist. Dazu gehören auch Lektionen von Go Curriculum, selbst wenn Sie sie im Plan angepasst haben. Der Bildschirm verwendet die Go-Curriculum-Anmeldung, die dem Dienstbereich des Plantyps in B1 Admin zugeordnet ist, oder die Go-Curriculum-Verbindung der Kirche, falls der Dienstbereich keine hat.
+Ein Kalendereintrag kann trotzdem einen Gottesdienstplan abspielen. Wählen Sie beim Hinzufügen eines Termins unter **Service plans** den Plantyp aus, und der Bildschirm spielt den Plan ab, der in B1 Admin in dieser Woche aktuell ist. Dazu gehören auch Go-Curriculum-Lektionen, selbst wenn Sie sie im Plan angepasst haben. Der Bildschirm verwendet den Go-Curriculum-Login, der dem Dienstbereich des Plantyps in B1 Admin zugeordnet ist, oder die Go-Curriculum-Verbindung der Gemeinde, falls der Dienstbereich keine hat.
 
 ## Erste Schritte
 
-Bis Sie jeden dieser Schritte erledigt haben, zeigt die Seite **Bildschirme** eine Checkliste **Erste Schritte** mit einem Link zu jedem Schritt:
+Solange Sie keinen dieser Schritte abgeschlossen haben, zeigt die Seite **Bildschirme** eine Checkliste **Get started** mit einem Link für jeden Schritt:
 
-1. **Einen Anbieter verbinden** – Verknüpfen Sie Dropbox, OneDrive, Lessons.church oder eine andere Quelle auf der Seite **Anbieter**
-2. **Eine Wiedergabeliste erstellen** – Wählen Sie Bilder und Videos aus einem Anbieter
-3. **In den Kalender setzen** – Legen Sie fest, was wann läuft, oder setzen Sie eine Standardschleife für die Gruppe
-4. **Einen Bildschirm koppeln** – Geben Sie den vierstelligen Code ein, der auf dem Fernseher angezeigt wird
+1. **Anbieter verbinden** – Verknüpfen Sie Dropbox, OneDrive, Lessons.church oder eine andere Quelle auf der Seite **Anbieter**
+2. **Playlist erstellen** – Wählen Sie Bilder und Videos von einem Anbieter aus
+3. **In den Kalender eintragen** – Legen Sie fest, was wann gespielt wird, oder setzen Sie eine Standard-Schleife für die Gruppe
+4. **Bildschirm koppeln** – Geben Sie den vierstelligen Code ein, der auf dem TV angezeigt wird
 
-Klicken Sie auf **Ausblenden**, um die Checkliste zu schließen.
+Klicken Sie auf **Hide**, um die Checkliste auszublenden.
 
 :::tip
-Drücken Sie **Strg+K** (**⌘K** auf dem Mac) oder klicken Sie auf das Suchfeld im Kopfbereich, um die Befehlspalette zu öffnen. Von dort aus springen Sie zu jeder Seite oder starten eine Aktion wie **Bildschirm koppeln**, **Wiedergabeliste hinzufügen** oder **Zeitplan hinzufügen**.
+Drücken Sie **Strg+K** (**⌘K** auf dem Mac) oder klicken Sie auf das Suchfeld in der Kopfzeile, um die Befehlspalette zu öffnen. Von dort aus können Sie zu jeder Seite springen oder eine Aktion starten, etwa **Pair screen**, **Add playlist** oder **Add schedule**.
 :::
 
-## In diesem Abschnitt
+## In diesem Bereich
 
-- **[Einen Bildschirm koppeln](./pairing-a-screen)** – Zeigen Sie den Code auf dem Fernseher an und koppeln Sie ihn in FreePlay Admin
-- **[Bildschirme und Gruppen verwalten](./managing-screens)** – Status und Downloads prüfen und Bildschirme in Gruppen ordnen
-- **[Anbieter verbinden und Wiedergabelisten erstellen](./building-playlists)** – Inhaltsquellen verknüpfen und Schleifen aus Bildern und Videos erstellen
-- **[Den Kalender planen](./scheduling-the-calendar)** – festlegen, was wann läuft und was geschieht, wenn es früher endet
-- **[Geplante Wiedergabe auf dem Fernseher](./scheduled-playback)** – was der Fernseher selbst tut und wie Sie die Fernbedienung während der Wiedergabe verwenden
+- **[Bildschirm koppeln](./pairing-a-screen)** – Den Code auf dem TV anzeigen und in FreePlay Admin koppeln
+- **[Bildschirme und Gruppen verwalten](./managing-screens)** – Status und Downloads prüfen sowie Bildschirme in Gruppen organisieren
+- **[Anbieter verbinden und Playlists erstellen](./building-playlists)** – Inhaltsquellen verknüpfen und Schleifen aus Bildern und Videos aufbauen
+- **[Den Kalender planen](./scheduling-the-calendar)** – Festlegen, was wann läuft und was passiert, wenn ein Inhalt früher endet
+- **[Geplante Wiedergabe auf dem TV](./scheduled-playback)** – Was der TV selbstständig tut und wie Sie die Fernbedienung während der Wiedergabe verwenden

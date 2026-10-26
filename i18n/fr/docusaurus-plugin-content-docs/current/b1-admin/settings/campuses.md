@@ -1,71 +1,71 @@
 ---
-title: "Lieux d'implantation"
+title: "Campus"
 ---
 
-# Lieux d'implantation {#campuses}
+# Campus
 
 <div class="article-intro">
 
-Si votre église se réunit dans plus d'un lieu, les **lieux d'implantation** vous permettent de suivre à quel site appartient chaque personne et chaque groupe. Une fois configurés, les lieux d'implantation apparaissent comme option sur les fiches de personnes, dans la configuration de la présence et dans le tableau de bord Démographie. Les églises multi-sites peuvent filtrer, rechercher et établir des rapports par lieu d'implantation dans toute B1 Admin.
+Si votre église se réunit dans plusieurs lieux, les **Campus** vous permettent de suivre à quel site appartient chaque personne et chaque groupe. Une fois configurés, les campus apparaissent comme option dans les fiches des personnes, dans la configuration de la présence et dans le tableau de bord Demographics. Les églises multi-sites peuvent filtrer, rechercher et établir des rapports par campus dans toute l'interface B1 Admin.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vous devez disposer de l'autorisation **Modifier les paramètres de l'église** pour gérer les lieux d'implantation. Voir [Rôles et permissions](./roles-permissions.md).
+- Vous devez disposer de l'autorisation **Edit Church Settings** pour gérer les campus. Consultez [Rôles et autorisations](./roles-permissions.md).
 
 </div>
 
-## Accéder aux paramètres des lieux d'implantation {#opening-campus-settings}
+## Ouvrir les paramètres des campus
 
-Dans B1 Admin, ouvrez le [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), choisissez **Paramètres > Paramètres**, puis cliquez sur **Lieux d'implantation** dans la liste de gauche pour atteindre la section **Lieux d'implantation**. Vous pouvez aussi y accéder directement à l'adresse **/settings/campuses**. Vous verrez la liste de tous les lieux d'implantation configurés, avec leur nom, leur emplacement et leur fuseau horaire.
+Dans B1 Admin, ouvrez le [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), choisissez **Settings > Settings**, puis cliquez sur **Campuses** dans la liste de gauche pour atteindre la section **Campuses**. Vous pouvez aussi y accéder directement à l'adresse **/settings/campuses**. Vous verrez la liste de tous les campus configurés avec leur nom, leur emplacement et leur fuseau horaire.
 
-## Ajouter un lieu d'implantation {#adding-a-campus}
+## Ajouter un campus
 
-1. Cliquez sur **Ajouter un lieu d'implantation**.
-2. Renseignez les détails du lieu :
-   - **Nom** *(obligatoire)* : le nom affiché dans toute B1 Admin (par exemple, « Campus principal » ou « Campus Nord »).
-   - **Adresse** : l'adresse postale du lieu (à titre informatif ; ce n'est pas l'adresse principale de votre église, qui figure dans les Paramètres de l'église).
-   - **Ville / Région / Code postal** : l'emplacement du lieu.
-   - **Fuseau horaire** : le fuseau horaire IANA de ce lieu (par exemple, *America/Chicago*). Les [horaires d'enregistrement](../attendance/setup.md#setting-a-check-in-schedule) des services de ce lieu s'ouvrent et se ferment selon ce fuseau. S'il est réglé sur **Aucun**, le [fuseau horaire](./church-settings.md#time-zone) de votre église est utilisé à la place. Utile lorsque les lieux se trouvent dans des fuseaux horaires différents.
-   - **Site web** : une URL facultative pour la présence web propre à ce lieu.
-3. Cliquez sur **Enregistrer**.
+1. Cliquez sur **Add Campus**.
+2. Renseignez les informations du campus :
+   - **Name** *(obligatoire)* — le nom affiché partout dans B1 Admin (par exemple « Campus principal » ou « Campus Nord »).
+   - **Address** — l'adresse postale du campus (utilisée à titre informatif ; elle n'est pas la même que l'adresse principale de votre église dans les Paramètres de l'église).
+   - **City / State / Zip** — l'emplacement du campus.
+   - **Time Zone** — le fuseau horaire IANA de ce campus (par exemple *America/Chicago*). Les [horaires de pointage](../attendance/setup.md#setting-a-check-in-schedule) des services de ce campus s'ouvrent et se ferment selon ce fuseau horaire. S'il est défini sur **None**, c'est le [fuseau horaire](./church-settings.md#time-zone) de votre église qui est utilisé à la place. Utile lorsque les campus se trouvent dans des fuseaux horaires différents.
+   - **Website** — une URL facultative pour la présence web propre à ce campus.
+3. Cliquez sur **Save**.
 
-## Modifier un lieu d'implantation {#editing-a-campus}
+## Modifier un campus
 
-Cliquez sur n'importe quelle ligne de lieu dans la liste pour ouvrir son éditeur dans le panneau de droite. Mettez à jour les champs puis cliquez sur **Enregistrer**.
+Cliquez sur n'importe quelle ligne de campus dans la liste pour ouvrir son éditeur dans le panneau à droite. Mettez à jour les champs puis cliquez sur **Save**.
 
-## Supprimer un lieu d'implantation {#deleting-a-campus}
+## Supprimer un campus
 
-Ouvrez un lieu pour le modifier et cliquez sur **Supprimer**. Une confirmation vous sera demandée. La suppression d'un lieu n'efface pas les personnes qui y sont rattachées : leur champ de lieu devient simplement vide.
+Ouvrez un campus pour le modifier et cliquez sur **Delete**. Vous devrez confirmer l'action. La suppression d'un campus ne retire pas les personnes qui y sont rattachées : leur champ campus devient simplement vide.
 
-## Attribuer des personnes à un lieu d'implantation {#assigning-people-to-a-campus}
+## Affecter des personnes à un campus
 
-Après avoir créé les lieux, le personnel peut attribuer une personne à un lieu depuis son profil :
+Une fois les campus créés, le personnel peut affecter une personne à un campus depuis son profil :
 
-1. Ouvrez la fiche d'une personne dans **Personnes**.
-2. Cliquez sur **Modifier**.
-3. Choisissez le lieu dans la liste déroulante **Lieu d'implantation**.
-4. Cliquez sur **Enregistrer**.
+1. Ouvrez la fiche d'une personne dans **People**.
+2. Cliquez sur **Edit**.
+3. Choisissez le campus dans la liste déroulante **Campus**.
+4. Cliquez sur **Save**.
 
-Vous pouvez aussi mettre à jour le lieu en lot depuis la page Personnes. Sélectionnez plusieurs personnes, utilisez **Modification groupée**, puis définissez le champ Lieu d'implantation pour tout le monde à la fois.
+Vous pouvez également mettre à jour le campus en masse depuis la page People. Sélectionnez plusieurs personnes, utilisez **Bulk Edit** et définissez le champ Campus pour tout le monde en une fois.
 
-## Filtrer par lieu d'implantation {#filtering-by-campus}
+## Filtrer par campus
 
-Une fois les lieux configurés, vous pouvez filtrer B1 Admin par lieu :
+Une fois les campus configurés, vous pouvez filtrer dans toute l'interface B1 Admin par campus :
 
-- **Recherche de personnes** : ajoutez une condition Lieu d'implantation dans la recherche avancée, ou chargez une [liste enregistrée](../people/lists.md) limitée à un lieu.
-- **Démographie** : le [tableau de bord Démographie](../people/demographics.md) affiche un graphique en anneau Lieu d'implantation dès qu'au moins une personne a un lieu attribué.
-- **Configuration de la présence** : chaque horaire de service dans la Présence peut être lié à un lieu.
+- **Recherche de personnes** — ajoutez une condition Campus dans la recherche avancée, ou chargez une [liste enregistrée](../people/lists.md) limitée à un campus.
+- **Demographics** — le [tableau de bord Demographics](../people/demographics.md) affiche un graphique en anneau Campus dès qu'au moins une personne a un campus attribué.
+- **Configuration de la présence** — chaque créneau de service dans Attendance peut être rattaché à un campus.
 
 :::tip
-Les églises à site unique n'ont pas besoin de configurer des lieux d'implantation. Toutes les fonctionnalités liées aux lieux sont facultatives : si aucun lieu n'existe, les champs et graphiques correspondants n'apparaissent tout simplement pas.
+Les églises à site unique n'ont pas besoin de configurer des campus. Toutes les fonctionnalités liées aux campus sont facultatives : si aucun campus n'existe, les champs et graphiques liés aux campus n'apparaissent tout simplement pas.
 :::
 
-## Articles connexes {#related-articles}
+## Articles connexes
 
-- [Paramètres de l'église](./church-settings.md) : l'adresse principale de votre église et son image de marque (distincte des adresses des lieux)
-- [Démographie](../people/demographics.md) : le graphique de répartition par lieu d'implantation
-- [Configuration de la présence](../attendance/setup.md) : lier les horaires de service à un lieu
-- [Modification groupée](../people/bulk-editing.md) : attribuer un lieu à plusieurs personnes à la fois
+- [Paramètres de l'église](./church-settings.md) — l'adresse principale de votre église et son image de marque (distincte des adresses des campus)
+- [Demographics](../people/demographics.md) — le graphique de répartition par campus
+- [Configuration de la présence](../attendance/setup.md) — rattacher les créneaux de service à un campus
+- [Modification en masse](../people/bulk-editing.md) — affecter un campus à plusieurs personnes à la fois

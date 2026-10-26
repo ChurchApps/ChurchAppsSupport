@@ -6,63 +6,63 @@ title: "Integrações"
 
 <div class="article-intro">
 
-B1 se conecta às ferramentas que sua equipe já usa. Conecte Slack ou Discord para notificações da equipe, automatize fluxos de trabalho no Zapier ou Make, ou exporte dados sob demanda para o Google Sheets — sem pagar por uma plataforma de integração separada e sem ChurchApps hospedar nada extras. Cada integração funciona na infraestrutura própria do terceiro e se comunica com sua igreja através dos webhooks ou API REST de B1.
+O B1 se conecta às ferramentas que a sua equipe já usa. Conecte o Slack ou o Discord para notificações da equipe, automatize fluxos de trabalho no Zapier ou no Make, ou exporte dados sob demanda para o Google Sheets — sem pagar por uma plataforma de integração separada e sem que a ChurchApps hospede nada extra. Cada integração roda na infraestrutura do próprio terceiro e se comunica com a sua igreja por meio dos webhooks ou da API REST do B1.
 
 </div>
 
-## O Que Está Disponível
+## O que está disponível
 
 | Integração | O que faz | Direção | Esforço para configurar |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | Postar notificações legíveis (novas pessoas, doações, inscrições, …) em um canal Slack | B1 → Slack | 2 minutos |
-| **[Discord](./slack-discord)** | Mesmo, em um canal Discord | B1 → Discord | 2 minutos |
-| **[Zapier](./zapier)** | Use eventos B1 como gatilhos e ações B1 em qualquer um dos 7.000+ aplicativos do Zapier | Ambas | 5–10 min por Zap |
-| **[Make](./make)** | Mesma ideia do Zapier, no construtor de cenários visual do Make | Ambas | 5–10 min por cenário |
-| **[Google Sheets](./google-sheets)** | Exportar Pessoas / Doações / Grupos / Frequência para uma planilha sob demanda | B1 → Sheet | 5 minutos |
-| **[Claude](./claude)** | Faça perguntas ao Claude da Anthropic sobre os dados da sua igreja, limitado às suas permissões — grátis para experimentar, recomendado | Ambas | Menos de 3 minutos |
-| **[ChatGPT](./chatgpt)** | Mesma ideia com ChatGPT da OpenAI (requer um plano pago do ChatGPT) | Ambas | 10 minutos |
-| **[Serviços Conectados](./services/)** | Receitas selecionadas para Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Varia | 5–10 min cada |
+| **[Slack](./slack-discord)** | Publica notificações legíveis (novas pessoas, doações, inscrições, …) em um canal do Slack | B1 → Slack | 2 minutos |
+| **[Discord](./slack-discord)** | O mesmo, em um canal do Discord | B1 → Discord | 2 minutos |
+| **[Zapier](./zapier)** | Use eventos do B1 como gatilhos e ações do B1 em qualquer um dos mais de 7.000 aplicativos do Zapier | Ambos | 5–10 min por Zap |
+| **[Make](./make)** | A mesma ideia do Zapier, no construtor visual de cenários do Make | Ambos | 5–10 min por cenário |
+| **[Google Sheets](./google-sheets)** | Exporta Pessoas / Doações / Grupos / Presença para uma planilha sob demanda | B1 → Planilha | 5 minutos |
+| **[Claude](./claude)** | Faça perguntas ao Claude, da Anthropic, sobre os dados da sua igreja, limitadas às suas permissões — gratuito para testar, recomendado | Ambos | Menos de 3 minutos |
+| **[ChatGPT](./chatgpt)** | A mesma ideia com o ChatGPT, da OpenAI (requer um plano pago do ChatGPT) | Ambos | 10 minutos |
+| **[Serviços conectados](./services/)** | Receitas selecionadas para Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Varia | 5–10 min cada |
 
-## Como Escolher
+## Como escolher
 
-- **Quer apenas uma notificação em chat?** Use **Slack** ou **Discord** — sem conta de terceiro, sem Zap para manter. Configurado inteiramente dentro de B1Admin.
-- **Quer automatizar algo entre aplicativos** (por ex. "quando alguém doa, adicione à minha lista Mailchimp e Slack #donations")? Use **Zapier** ou **Make**. Zapier é mais amigável; Make é mais barato em escala e tem lógica mais flexível.
-- **Precisa de um pull de dados único ou relatório agendado?** Use **Google Sheets** — cole uma chave de API na barra lateral do complemento e clique em Exportar.
-- **Quer fazer perguntas em inglês comum** ("quantos visitantes pela primeira vez no domingo passado?", "resuma doações este mês")? Comece com o **[Claude](./claude)** — é grátis para experimentar e é configurado em menos de 3 minutos. O **[ChatGPT](./chatgpt)** também funciona com um plano pago. O Claude se conecta fazendo login com sua conta do B1; o ChatGPT usa uma chave de API do B1.
-- **Criando sua própria integração personalizada?** Nenhuma das acima — fale com a [API REST](/docs/developer/api) diretamente com uma [chave de API](/docs/developer/api/api-keys), ou inscreva um servidor que você controla em [webhooks](/docs/developer/api/webhooks).
+- **Quer apenas uma notificação no chat?** Use o **Slack** ou o **Discord** — sem conta de terceiros, sem Zap para manter. Configurado inteiramente dentro do B1Admin.
+- **Quer automatizar algo entre aplicativos** (por exemplo, "quando alguém doar, adicione-o à minha lista do Mailchimp e ao canal #doacoes do Slack")? Use o **Zapier** ou o **Make**. O Zapier é mais amigável; o Make é mais barato em escala e tem uma lógica mais flexível.
+- **Precisa de uma extração de dados pontual ou de um relatório programado?** Use o **Google Sheets** — cole uma chave de API na barra lateral do complemento e clique em Exportar.
+- **Quer fazer perguntas em linguagem simples** ("quantos visitantes de primeira vez vieram no domingo passado?", "resuma as doações deste mês")? Comece com o **[Claude](./claude)** — é gratuito para testar e leva menos de 3 minutos para configurar. O **[ChatGPT](./chatgpt)** também funciona com um plano pago. O Claude se conecta fazendo login com a sua conta do B1; o ChatGPT usa uma chave de API do B1.
+- **Quer criar a sua própria integração personalizada?** Nenhuma das opções acima — fale diretamente com a [API REST](/docs/developer/api) usando uma [chave de API](/docs/developer/api/api-keys), ou assine um servidor que você controla nos [webhooks](/docs/developer/api/webhooks).
 
-## O Que Eles Têm em Comum
+## O que todas têm em comum
 
-Cada integração autentica com uma **chave de API B1**, criada em B1Admin em **Configurações → Desenvolvedor → Chaves de API**. A chave:
+Toda integração se autentica com uma **chave de API do B1**, criada no B1Admin em **Configurações → Desenvolvedor → Chaves de API**. A chave:
 
-- É vinculada a uma pessoa específica na sua igreja e herda as permissões dessa pessoa
-- Pode ser estreitada com **escopos** — por exemplo uma exportação Google Sheets apenas precisa de `people:read`, não `settings:write`
-- Pode ser revogada a qualquer momento, cortando instantaneamente o acesso da integração sem afetar nada mais
+- Está vinculada a uma pessoa específica da sua igreja e herda as permissões dessa pessoa
+- Pode ser restringida com **escopos** — por exemplo, uma exportação para o Google Sheets só precisa de `people:read`, não de `settings:write`
+- Pode ser revogada a qualquer momento, cortando imediatamente o acesso da integração sem afetar mais nada
 
-Alguns conectores (Zapier, Make) também registram um [webhook](/docs/developer/api/webhooks) em seu nome quando o Zap ou cenário é ativado, e o removem quando você desativa — você não gerencia a URL do webhook.
+Alguns conectores (Zapier, Make) também registram um [webhook](/docs/developer/api/webhooks) em seu nome quando o Zap ou o cenário é ativado, e o removem quando você desativa o Zap — você não precisa gerenciar a URL do webhook.
 
 :::tip
-Para Zapier e Make registrarem webhooks automaticamente, a chave de API precisa do escopo **`settings:write`** (mais os escopos de recurso para o que a integração toca). Uma chave apenas leitura funciona para ações e exportações mas não para gatilhos.
+Para que o Zapier e o Make registrem webhooks automaticamente, a chave de API precisa do escopo **`settings:write`** (além dos escopos de recurso para o que a integração utiliza). Uma chave somente leitura funciona para ações e exportações, mas não para gatilhos.
 :::
 
 ## Custo
 
-ChurchApps é gratuito e de código aberto. Slack/Discord, o [`@churchapps/integration-sdk`](https://www.npmjs.com/package/@churchapps/integration-sdk), e os conectores oficiais Zapier / Make / Google Sheets são também gratuitos do nosso lado. Terceiros podem cobrar por suas próprias plataformas (Zapier e Make ambos têm níveis gratuitos generosos; Slack, Discord, e Google Sheets são gratuitos para este propósito).
+A ChurchApps é gratuita e de código aberto. O Slack/Discord, o [`@churchapps/integration-sdk`](https://www.npmjs.com/package/@churchapps/integration-sdk), e os conectores oficiais do Zapier / Make / Google Sheets também são gratuitos do nosso lado. Os terceiros podem cobrar pelas próprias plataformas (o Zapier e o Make têm planos gratuitos generosos; o Slack, o Discord e o Google Sheets são gratuitos para essa finalidade).
 
-## Construir o Seu Próprio
+## Criando a sua própria
 
-Se nenhuma das acima se encaixa, cada superfície B1 está aberta:
+Se nada acima se encaixar, toda a superfície do B1 está aberta:
 
-- **[API REST](/docs/developer/api)** — chame B1 de qualquer linguagem com um cabeçalho `Authorization: Bearer cak_…`
-- **[Webhooks](/docs/developer/api/webhooks)** — inscreva um endpoint HTTPS público a um ou mais tipos de evento e receba payloads JSON assinados
-- **[OAuth + Aplicativos Conectados](/docs/developer/api/connected-apps)** — se você estiver construindo um produto SaaS usado por muitas igrejas
+- **[API REST](/docs/developer/api)** — chame o B1 a partir de qualquer linguagem com um cabeçalho `Authorization: Bearer cak_…`
+- **[Webhooks](/docs/developer/api/webhooks)** — assine um endpoint HTTPS público para um ou mais tipos de evento e receba payloads JSON assinados
+- **[OAuth + Aplicativos Conectados](/docs/developer/api/connected-apps)** — se você estiver criando um produto SaaS usado por muitas igrejas
 
-## Próximos Passos
+## Próximos passos
 
-- [Slack & Discord](./slack-discord) — postar notificações de chat
-- [Zapier](./zapier) — conectar a 7.000+ aplicativos
-- [Make](./make) — automação de fluxo de trabalho visual
-- [Google Sheets](./google-sheets) — exportar para planilhas
-- [Claude](./claude) — peça ao Claude da Anthropic sobre os dados da sua igreja
-- [ChatGPT](./chatgpt) — peça ao ChatGPT da OpenAI sobre os dados da sua igreja
-- [Serviços Conectados](./services/) — receitas por serviço (Mailchimp, Donorbox, Clearstream, …)
+- [Slack e Discord](./slack-discord) — publique notificações no chat
+- [Zapier](./zapier) — conecte-se a mais de 7.000 aplicativos
+- [Make](./make) — automação visual de fluxos de trabalho
+- [Google Sheets](./google-sheets) — exporte para planilhas
+- [Claude](./claude) — pergunte ao Claude sobre os dados da sua igreja
+- [ChatGPT](./chatgpt) — pergunte ao ChatGPT da OpenAI sobre os dados da sua igreja
+- [Serviços conectados](./services/) — receitas por serviço (Mailchimp, Donorbox, Clearstream, …)

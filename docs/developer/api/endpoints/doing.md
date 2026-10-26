@@ -24,12 +24,14 @@ Base path: `/doing/plans`
 | GET | `/types/:planTypeId` | JWT | — | Get plans by plan type |
 | GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + ministry edit | Preview the serving overview **Text Volunteers** send: `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }` for the volunteers assigned in the range (one per person, opted-out and missing numbers skipped, shared numbers deduplicated, capped at 200) |
 | GET | `/presenter` | JWT | — | Get plans for the next 7 days (presenter view) |
+| GET | `/confirmationWorkflows?ministryId=` | JWT | Ministry edit | Active serving assignment confirmation workflows (`workflowType = "assignmentConfirmation"`) a plan can select: `[{ id, name }]` |
 | GET | `/public/current/:planTypeId` | Public | — | Get the current plan for a plan type |
-| GET | `/public/signup/:churchId` | Public | — | Plans open for self-signup, soonest first, each with its self-signup positions (sorted by `categoryName`, then `name`, plus `filledCount` of Accepted/Unconfirmed assignments) and times. No volunteer names. When the church setting `volunteerSignupNextOnly` is `"true"`, only the first plan of each plan type is returned |
+| GET | `/public/signup/:churchId` | Public | — | Plans open for self-signup, soonest first, each with its self-signup positions (sorted by `categoryName`, then `name`, plus `filledCount` of Accepted/Unconfirmed assignments) and times. No volunteer names. When the church setting `volunteerSignupNextOnly` is `"true"`, only the first plan of each plan type is returned. Each `plan` includes a computed `signupDeadline` (ISO instant, or `null`): `signupDeadlineHours` before the plan's earliest `service`-type time (any timed entry if there is no service time; 9:00 in the church's time zone on `serviceDate` if the plan has no times) |
 | GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` for the plan's self-signup positions (display names of Accepted/Unconfirmed assignees). Returns `[]` unless the plan's `showVolunteerNames` is on |
-| POST | `/` | JWT | — | Create or update plans (accepts single object or array) |
+| POST | `/` | JWT | — | Create or update plans (accepts single object or array). Set `confirmationWorkflowId` to opt the plan into a serving confirmation workflow, or `null` to opt out for future requests. Send `signupDeadlineHours: null` to clear a deadline; omitting the field keeps the saved value |
 | POST | `/copy/:id` | JWT | Ministry edit | Copy a plan including positions, times, assignments, and service order items. Body includes `ministryId`, `serviceDate`, `copyMode` ("none", "positions", "all") and `copyServiceOrder` (boolean). Without `targetPlanId` a new plan is created, and `notes`, `signupDeadlineHours`, `showVolunteerNames`, and `autoReplaceOnDecline` carry over from the source plan unless the body supplies them. With `targetPlanId`, the copy fills that existing plan instead (the caller must be able to edit it). B1Admin's **Repeat weekly** option calls this once per week, each time copying from the plan created the week before |
 | POST | `/textRange` | JWT | `texting.send` + ministry edit | Text every volunteer assigned in a date range through the church's texting provider. Body: `{ startDate, endDate, ministryId, planTypeId?, message }` (message up to 1600 characters; merge fields resolved per recipient). Returns the preview counts plus `recipientCount`, `successCount`, `failCount`, and `error` (`no_provider` or `insufficient_credits`) when sending stops early |
+| POST | `/:id/issueRequests` | JWT | Plan edit | Issue the plan's new Unconfirmed, not-yet-notified assignments through its confirmation workflow: marks each notified and starts one workflow card per assignment. Empty body; returns `{ issued }`. Fails unless the plan is published (not `prepared`), has an active `confirmationWorkflowId` with at least one step, and its response deadline hasn't passed |
 | POST | `/autofill/:id` | JWT | — | Auto-fill volunteer assignments for a plan. Body: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Delete a plan and all related times, assignments, positions, and plan items |
 
@@ -137,6 +139,8 @@ Base path: `/doing/assignments`
 | POST | `/` | JWT | — | Create or update assignments (defaults status to "Unconfirmed") |
 | POST | `/accept/:id` | JWT | — | Accept an assignment (must be the assigned person) |
 | POST | `/decline/:id` | JWT | — | Decline an assignment (must be the assigned person) |
+| POST | `/signup` | JWT | — | Self-signup for a position. Body: `{ positionId }`. The position must allow self-signup and have room; creates an Accepted assignment. Rejected with "Signup deadline has passed" once the plan's signup deadline (counted back from its first service time, as above) has passed |
+| DELETE | `/signup/:id` | JWT | — | Remove your own self-signup. Rejected with "Removal deadline has passed" after the plan's signup deadline |
 | DELETE | `/:id` | JWT | — | Delete an assignment |
 
 ### Example: Accept an Assignment

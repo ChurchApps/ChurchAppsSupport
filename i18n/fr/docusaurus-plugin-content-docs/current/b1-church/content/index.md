@@ -6,49 +6,49 @@ title: "Contenu"
 
 <div class="article-intro">
 
-B1.church donne à votre congrégation un endroit central pour accéder au contenu que votre église partage. Selon ce que votre église a configuré, vous pouvez avoir accès aux sermons, la diffusion en direct, la lecture biblique, un verset quotidien et les matériaux de leçon — tout dans le portail des membres.
+B1.church offre à votre communauté un lieu central pour accéder aux contenus que votre église partage. Selon ce que votre église a configuré, vous pouvez avoir accès aux prédications, à la diffusion en direct, à la lecture de la Bible, à un verset du jour et aux supports de leçons, le tout depuis le portail membre.
 
 </div>
 
 ## Fonctionnalités de contenu disponibles
 
-### Sermons
+### Prédications
 
-Parcourez et regardez les sermons enregistrés de votre église. La bibliothèque de sermons de votre église est organisée en listes de lecture et en séries, ce qui facilite la recherche de messages passés.
+Parcourez et regardez les prédications enregistrées de votre église. La bibliothèque de prédications de votre église est organisée en listes de lecture et en séries, ce qui facilite la recherche des messages passés.
 
 ### Diffusion en direct
 
-Regardez la diffusion en direct de votre église directement dans B1.church. Lorsqu'un service est en direct, vous pouvez rejoindre le flux et interagir avec d'autres spectateurs via le chat et les fonctionnalités de prière.
+Regardez la diffusion en direct de votre église directement dans B1.church. Lorsqu'un culte est en direct, vous pouvez rejoindre la diffusion et échanger avec les autres spectateurs via le chat.
 
 ### Bible
 
-Lisez l'Écriture en utilisant le lecteur Bible intégré. Vous pouvez naviguer dans les livres, les chapitres et les versets sans quitter le site.
+Lisez les Écritures à l'aide du lecteur de Bible intégré. Vous pouvez naviguer entre les livres, les chapitres et les versets sans quitter le site.
 
 ### Verset du jour
 
-Consultez une image de verset biblique magnifiquement formatée qui change chaque jour. L'image s'ajuste automatiquement à la taille de votre écran.
+Consultez une image de verset biblique joliment mise en forme, qui change chaque jour. L'image s'adapte automatiquement à la taille de votre écran. Vous pouvez aussi partager ou télécharger le verset de n'importe quel jour et parcourir les versets des jours précédents.
 
 ### Leçons
 
-Consultez les leçons prévues du plan de votre église. Si vous êtes un enseignant ou un leader, vous pouvez utiliser la **Vue d'enseignant** pour voir les leçons dans un format plein écran, facile à naviguer et parfait pour enseigner ou présenter.
+Consultez les leçons planifiées dans les plans de votre église. Si vous êtes enseignant ou responsable, vous pouvez utiliser la **Vue enseignant** pour afficher les leçons en plein écran, dans un format facile à parcourir, idéal pour enseigner ou présenter.
 
-### Leçons (dépréciées - Onglet intégré)
+### Leçons (obsolète - onglet intégré)
 
-L'onglet intégré **Leçons** a été déprécié. La lecture du curriculum vit maintenant dans **[FreePlay](/docs/freeplay/)**, l'application TV gratuite de ChurchApps pour les écrans de salle de classe. Pour parcourir le curriculum sur un téléphone, une tablette ou un ordinateur, connectez-vous directement à [Lessons.church](https://lessons.church). Voir la [page de référence des leçons](./lessons.md) pour plus de détails.
+L'onglet **Leçons** intégré a été rendu obsolète. La lecture des programmes se fait désormais dans **[FreePlay](/docs/freeplay/)**, l'application TV gratuite de ChurchApps pour les écrans de salle de classe. Pour consulter les programmes sur un téléphone, une tablette ou un ordinateur, connectez-vous directement à [Lessons.church](https://lessons.church). Voir la [page de référence des leçons](./lessons.md) pour plus de détails.
 
-## Recherche de contenu
+## Trouver du contenu
 
-Les pages de contenu sont disponibles via la navigation du site de votre église. Votre administrateur d'église décide quelles fonctionnalités de contenu sont activées et comment elles apparaissent dans le menu. Si vous ne voyez pas une fonctionnalité de contenu particulière mentionnée ci-dessus, elle ne peut pas être configurée pour votre église.
+Les pages de contenu sont accessibles depuis la navigation du site de votre église. Votre administrateur d'église décide quelles fonctionnalités de contenu sont activées et comment elles apparaissent dans le menu. Si vous ne voyez pas une fonctionnalité de contenu mentionnée ci-dessus, elle n'est peut-être pas configurée pour votre église.
 
 :::info
-[Les sermons](./sermons.md) et la [Bible](./bible.md) sont disponibles au public. Les autres fonctionnalités peuvent nécessiter que vous soyez [connecté](../getting-started/logging-in.md).
+Les [prédications](./sermons.md) et la [Bible](./bible.md) sont accessibles publiquement. Pour les autres fonctionnalités, il peut être nécessaire d'être [connecté](../getting-started/logging-in.md).
 :::
 
-## Prochaines étapes
+## Étapes suivantes
 
-- [Sermons](./sermons.md) — Parcourez et regardez les sermons enregistrés
-- [Diffusion en direct](./live-streaming.md) — Regardez les diffusions en direct
-- [Bible](./bible.md) — Lisez l'Écriture dans le lecteur intégré
-- [Verset du jour](./verse-of-the-day.md) — Consultez le verset quotidien d'aujourd'hui
-- [Vue d'enseignant](./teacher-view.md) — Utilisez l'interface d'enseignant étendue pour le contenu des leçons
-- [FreePlay](/docs/freeplay/) — Lire les leçons sur les téléviseurs de la salle de classe (remplace l'onglet Leçons dépréciées dans l'application)
+- [Prédications](./sermons.md) : parcourir et regarder les prédications enregistrées
+- [Diffusion en direct](./live-streaming.md) : regarder les diffusions en direct
+- [Bible](./bible.md) : lire les Écritures dans le lecteur intégré
+- [Verset du jour](./verse-of-the-day.md) : voir le verset du jour
+- [Vue enseignant](./teacher-view.md) : utiliser l'interface enseignant élargie pour les contenus de leçons
+- [FreePlay](/docs/freeplay/) : diffuser les leçons sur les téléviseurs de classe (remplace l'onglet Leçons intégré, obsolète)

@@ -6,7 +6,7 @@ description: "Draft B1 church-owned Twilio setup, public signup guidance, campai
 # Church-owned Twilio onboarding draft
 
 :::caution Draft for the proposed integration
-This is a proposed workflow; it does not add Twilio to B1. B1 setup controls, consent mapping, and validation steps below are requirements for a future release, not instructions to find existing Twilio settings. Read the [technical proposal](./twilio-byok-proposal) for scope and dependencies. Twilio sources were checked on October 22, 2026; verify current requirements before submitting a campaign.
+This is a proposed workflow. B1 now has a basic **Twilio** choice under **Settings > Texting** (Account SID, Auth Token, From Number, and the inbound STOP webhook) -- see [Church Settings: Texting](../../b1-admin/settings/church-settings.md#texting). The additional B1 setup controls, consent mapping, and validation steps below are requirements for a future release, not instructions to find existing settings. Read the [technical proposal](./twilio-byok-proposal) for scope and dependencies. Twilio sources were checked on October 22, 2026; verify current requirements before submitting a campaign.
 :::
 
 ## The recommended arrangement

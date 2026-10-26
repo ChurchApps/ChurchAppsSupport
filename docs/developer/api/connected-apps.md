@@ -136,6 +136,8 @@ POST /membership/oauth/token
 
 A new `access_token` and `refresh_token` come back. **Public clients** (no `client_secret`) can omit `client_secret` on refresh — useful for mobile/desktop OAuth apps that can't keep a secret.
 
+Refresh tokens rotate, but the old one is not discarded right away. If a client never receives the refresh reply (for example, a TV that lost power or Wi-Fi mid-request), it can retry with the previous `refresh_token` for up to **7 days**. The retry succeeds only while the replacement token has not been used yet; the unused replacement is then dropped and a fresh pair is issued. Once the replacement has itself been refreshed, the old token returns `invalid_grant`. Revoking a connection also revokes any rotated tokens still in that grace window, and the connected-apps list shows each connection once.
+
 ## Token Shape
 
 An access token is a B1-issued JWT identical to one a user would get from `POST /membership/users/login` — same modular permission claim, same `checkAccess` behavior in every controller — **except** the permissions array has been filtered through the granted scopes at mint time. A scoped access token cannot do anything a similarly-scoped API key cannot, and there is no separate "OAuth path" in any controller; `actionWrapper` is unaware whether the bearer is a person, an API key, or an OAuth client.

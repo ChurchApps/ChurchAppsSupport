@@ -50,6 +50,10 @@ If you open a statement for a year your church hasn't released, you'll see "This
 
 Your church may also add a **giving note** -- a short message such as its refund policy. It appears at the top of the Giving page, the give form, and **All history**, and is printed at the bottom of your giving statements.
 
+## If Your Church Doesn't Offer Online Giving
+
+Even if your church hasn't set up online giving, you can still see the gifts it has recorded for you, such as cash and checks. Open the **Giving** page while signed in and you'll see the note "Online giving isn't set up for this church yet. Your recorded gifts and statements are below." Your yearly total, **Recent activity**, **All history**, and **Print Statement** all work as usual. The **Give** button, **Repeat last gift**, and the **Recurring** and **Payment methods** sections are not shown. The **Giving** section on your Home dashboard also shows your total and **History** link, without the **Give** button.
+
 ## Exporting and Printing Statements
 
 Tap **Print Statement** at the top of the Giving page to open a printable giving statement covering the current calendar year (or the latest year your church has released) in a new tab. To print a different year, open **All history**, pick that year, and tap **Print Statement** next to the total.

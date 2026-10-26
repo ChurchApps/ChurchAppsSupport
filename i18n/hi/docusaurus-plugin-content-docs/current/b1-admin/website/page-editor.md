@@ -2,187 +2,187 @@
 title: "पेज एडिटर का उपयोग"
 ---
 
-# पेज एडिटर का उपयोग {#using-the-page-editor}
+# पेज एडिटर का उपयोग
 
 <div class="article-intro">
 
-B1 पेज एडिटर एक visual drag-and-drop builder है जो आपको बिना कोई code लिखे अपनी church website के पेज डिज़ाइन करने देता है। आप sections और content blocks जोड़ सकते हैं, styles कस्टमाइज़ कर सकते हैं, अपने काम का preview देख सकते हैं, और बदलाव पूर्ववत कर सकते हैं -- यह सब आपके browser के भीतर।
+B1 पेज एडिटर एक दृश्य, ड्रैग-एंड-ड्रॉप बिल्डर है जो आपको बिना कोई कोड लिखे चर्च वेबसाइट के पेज डिज़ाइन करने देता है। आप सेक्शन और कंटेंट ब्लॉक जोड़ सकते हैं, स्टाइल अनुकूलित कर सकते हैं, अपने काम का preview देख सकते हैं, और बदलाव पूर्ववत कर सकते हैं -- यह सब आपके ब्राउज़र के भीतर।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- अपनी website कॉन्फ़िगर करने के लिए [प्रारंभिक सेटअप](initial-setup) पूरा करें
-- [पेज प्रबंधित करना](managing-pages) में कम से कम एक पेज बनाएं
-- एडिटर तक पहुंचने के लिए आपको **content.edit** अनुमति चाहिए
+- अपनी वेबसाइट कॉन्फ़िगर करने के लिए [Initial Setup](initial-setup) पूरा करें
+- [Managing Pages](managing-pages) में कम से कम एक पेज बनाएँ
+- एडिटर तक पहुँचने के लिए आपको **content.edit** अनुमति चाहिए
 
 </div>
 
-## एडिटर खोलना {#opening-the-editor}
+## एडिटर खोलना
 
-1. B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ऊपर-बाईं ओर का search bar) खोलें, **Website** को expand करें, और **Pages** पर click करें।
-2. Pages table में वह पेज ढूंढें जिसे आप संपादित करना चाहते हैं और **Edit Content** पर click करें।
+1. B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (ऊपर-बाएँ कोने में search bar), **Website** को विस्तारित करें, और **Pages** पर क्लिक करें।
+2. Pages तालिका में वह पेज खोजें जिसे संपादित करना है, और **Edit Content** पर क्लिक करें।
 
-एडिटर full-screen मोड में खुलता है। बाईं ओर का panel आपके पेज की संरचना और उपलब्ध content elements दिखाता है; बीच का क्षेत्र आपके पेज का live preview दिखाता है।
+एडिटर फ़ुल-स्क्रीन मोड में खुलता है। बाएँ पैनल में आपके पेज की संरचना और उपलब्ध कंटेंट एलिमेंट्स दिखते हैं; बीच के क्षेत्र में आपके पेज का लाइव preview रहता है।
 
 :::info
-एडिटर हमेशा light mode में दिखता है, चाहे आपकी B1 Admin theme setting कुछ भी हो, और [स्वरूप](appearance) में आपके चुने हुए heading और body fonts का उपयोग करता है। इससे preview सटीक रूप से दिखाता है कि आपका पेज website visitors को कैसा दिखेगा।
+एडिटर आपकी B1 Admin थीम सेटिंग चाहे जो भी हो, हमेशा लाइट मोड में दिखता है, और उन heading और body फ़ॉन्ट्स का उपयोग करता है जो आपने [Appearance](appearance) में चुने हैं। इससे सुनिश्चित होता है कि preview ठीक वैसा दिखे जैसा वेबसाइट के विज़िटर को आपका पेज दिखेगा।
 :::
 
-## पेज संरचना: Sections और Elements {#page-structure-sections-and-elements}
+## पेज संरचना: सेक्शन और एलिमेंट्स
 
 हर पेज दो स्तरों से बनता है:
 
-- **Sections** -- सबसे ऊपर के containers जो आपके पेज को क्षैतिज पट्टियों में बांटते हैं (उदाहरण के लिए, एक hero section, एक content block, या एक footer strip)। सामग्री जोड़ने से पहले हर पेज में कम से कम एक section होना चाहिए।
-- **Elements** -- किसी section के अंदर रखे व्यक्तिगत content टुकड़े, जैसे text, images, buttons, cards, forms, और calendars।
+- **सेक्शन** -- शीर्ष-स्तरीय कंटेनर जो आपके पेज को क्षैतिज पट्टियों में बाँटते हैं (जैसे हीरो सेक्शन, कंटेंट ब्लॉक, या फ़ुटर स्ट्रिप)। कंटेंट जोड़ने से पहले हर पेज में कम से कम एक सेक्शन होना चाहिए।
+- **एलिमेंट्स** -- किसी सेक्शन के भीतर रखे गए व्यक्तिगत कंटेंट टुकड़े, जैसे text, images, buttons, cards, forms, और calendars।
 
-### सेक्शन जोड़ना {#adding-a-section}
+### सेक्शन जोड़ना
 
-1. **Add Section** पर click करें (या बाएं panel के ऊपर **+** button पर)।
-2. चुनें कि कैसे शुरू करना है:
-   - **Template से** -- category (Hero, About, Services, Giving, आदि) के अनुसार व्यवस्थित section template gallery देखें और किसी एक पर click करें ताकि वह पूरी तरह styled, पहले से भरा हुआ section बन जाए। जोड़ने के बाद आप सब कुछ कस्टमाइज़ कर सकते हैं।
-   - **Blank section** -- एक column layout चुनें (single, two columns, three columns, आदि) और शुरू से बनाएं।
-3. नया section preview में दिखता है। उसे चुनने के लिए click करें और उसका background color, padding, और अन्य style options configure करें।
+1. **Add Section** पर क्लिक करें (या बाएँ पैनल के शीर्ष पर **+** बटन)।
+2. शुरू करने का तरीका चुनें:
+   - **Template से** — श्रेणी के अनुसार व्यवस्थित section template gallery (Hero, About, Services, Giving, आदि) देखें और किसी एक पर क्लिक करके उसे पूरी तरह स्टाइल किया हुआ, पहले से भरा हुआ सेक्शन डालें। जोड़ने के बाद आप सब कुछ अनुकूलित कर सकते हैं।
+   - **खाली सेक्शन** — कॉलम लेआउट (एक कॉलम, दो कॉलम, तीन कॉलम, आदि) चुनें और शुरू से बनाएँ।
+3. नया सेक्शन preview में दिखता है। उसे चुनने के लिए उस पर क्लिक करें और उसका बैकग्राउंड रंग, padding, और अन्य स्टाइल विकल्प कॉन्फ़िगर करें।
 
-### सेक्शन का layout बदलना {#switching-a-sections-layout}
+### सेक्शन का लेआउट बदलना
 
-किसी section को पहले से बना लिया है, लेकिन उसकी संरचना बदलनी है? उस section पर layout switcher का उपयोग करें ताकि उसका column arrangement gallery के किसी दूसरे विकल्प से बदला जा सके, और आपकी मौजूदा सामग्री व elements अपनी जगह पर बने रहें।
+अगर आपने कोई सेक्शन पहले से बना लिया है पर उसकी संरचना अलग चाहते हैं, तो उस सेक्शन पर layout switcher का उपयोग करें ताकि गैलरी से उसका कॉलम क्रम बदल सकें, जबकि आपका मौजूदा कंटेंट और एलिमेंट्स अपनी जगह पर रहें।
 
-### सेक्शन में elements जोड़ना {#adding-elements-to-a-section}
+### किसी सेक्शन में एलिमेंट्स जोड़ना
 
-1. Preview में किसी section के अंदर click करके उसे चुनें।
-2. **Add Content** पर click करें और सूची से एक element type चुनें:
-   - **Text** -- Headings, paragraphs, और rich text
-   - **Image** -- एक फ़ोटो अपलोड करें या उसका link दें
-   - **Button** -- एक clickable call-to-action link
-   - **Card** -- एक image जिसके साथ title और description हो
-   - **Form** -- पेज पर सीधे एक [फ़ॉर्म](../forms/creating-forms) embed करें
-   - **Calendar** -- एक event calendar दिखाएं
-   - **FAQ** -- Accordion-style प्रश्न और उत्तर blocks
-   - **Video** -- URL से एक video embed करें
-   - **Groups Browser** -- सभी church groups की एक filterable directory, वैकल्पिक search, category filter, और label filter के साथ
-   - **Icon Feature** -- एक icon जिसके साथ title और छोटा विवरण हो, feature या ministry की highlights के लिए
-   - **Gallery** -- एक multi-photo grid या masonry layout
-   - **Testimonial** -- एक या अधिक quotes, author का नाम, role, और फ़ोटो के साथ
-   - **Social Icons** -- आपके चर्च की social media profiles के linked icons
-   - **Countdown** -- किसी तारीख या साप्ताहिक service time की ओर उल्टी गिनती करने वाला timer
-   - **Stats** -- labels के साथ बड़े नंबरों की एक पंक्ति (सदस्य, वर्ष, campuses)
-   - **Campaign Progress** -- किसी giving campaign के लिए live progress bar, जो fund goal की ओर जुटाई गई कुल राशि दिखाता है
-   - **Staff Grid** -- किसी group के सदस्यों के लिए फ़ोटो cards; group का **public roster** विकल्प चालू होना चाहिए
-   - **Service Times** -- आपके campuses का service schedule, attendance setup से अपने-आप लिया गया
-   - **Sermons** -- आपकी sermon library, पूरे browser के रूप में, या grid, list, या featured-latest layout में
-   - **Map** -- आपके चर्च के address पर केंद्रित एक embedded map
-   - **Table** -- tabular content के लिए rows और columns का एक सरल grid
-   - **Text with Photo** -- Text और एक image साथ-साथ
-   - **Logo** -- आपका चर्च logo, [स्वरूप](appearance) से लिया गया
-   - **Live Stream** -- आपका live stream player, सीधे पेज पर embedded
-   - **Podcast** -- आपके दिए गए बाहरी podcast RSS feed URL से लिए गए episodes की सूची, जिसमें यह सेट करने के विकल्प हैं कि कितने episodes दिखें और तारीखें व विवरण दिखें या नहीं। लाइव साइट पर हर episode में एक audio player और एक **Download** link होता है जो episode की audio file को episode के शीर्षक के नाम से सहेजता है। यह किसी भी podcast feed को अपनी साइट पर दिखाने के लिए है; अपने sermons को podcast के रूप में प्रकाशित करने के लिए इसकी जगह [Sermons प्रबंधित करना](../sermons/managing-sermons.md#your-podcast-feed) देखें।
-   - **Donation** -- एक giving button या embedded donation form
-   - **HTML** -- आपका अपना raw HTML, उन्नत उपयोग के लिए, जैसे किसी तीसरे पक्ष के widget को embed करना (देखें [HTML element का उपयोग](#using-the-html-element))
-   - **iFrame** -- URL से बाहरी सामग्री embed करें
-3. दिखने वाले settings panel से element configure करें।
+1. प्रिव्यू में किसी सेक्शन के भीतर क्लिक करके उसे चुनें।
+2. **Add Content** पर क्लिक करें और सूची से एलिमेंट प्रकार चुनें:
+   - **Text** -- शीर्षक, अनुच्छेद और rich text
+   - **Image** -- फ़ोटो अपलोड करें या उसका लिंक दें
+   - **Button** -- क्लिक करने योग्य call-to-action लिंक
+   - **Card** -- शीर्षक और विवरण के साथ एक छवि
+   - **Form** -- पेज पर सीधे एक [form](../forms/creating-forms) एम्बेड करें। अगर फ़ॉर्म में [header photo](../forms/creating-forms.md#adding-a-header-photo) है, तो वह प्रश्नों के ऊपर दिखती है
+   - **Calendar** -- इवेंट कैलेंडर दिखाएँ
+   - **FAQ** -- अकॉर्डियन-शैली के प्रश्न और उत्तर ब्लॉक
+   - **Video** -- URL से वीडियो एम्बेड करें
+   - **Groups Browser** -- सभी चर्च ग्रुप्स की फ़िल्टर योग्य डायरेक्टरी, वैकल्पिक खोज, श्रेणी फ़िल्टर और लेबल फ़िल्टर के साथ
+   - **Icon Feature** -- एक आइकन, शीर्षक और छोटे विवरण के साथ, फ़ीचर या सेवकाई की प्रमुख बातों के लिए
+   - **Gallery** -- कई फ़ोटो का ग्रिड या masonry लेआउट
+   - **Testimonial** -- लेखक के नाम, भूमिका और फ़ोटो के साथ एक या अधिक उद्धरण
+   - **Social Icons** -- आपके चर्च की सोशल मीडिया प्रोफ़ाइलों के लिंक वाले आइकन: Facebook, Instagram, WhatsApp, YouTube, X, TikTok, Vimeo, और Podcast। जिस हर एक को दिखाना चाहते हैं उसके लिए लिंक भरें; **WhatsApp** के लिए, अपने नंबर वाला `https://wa.me/` लिंक या ग्रुप invite लिंक उपयोग करें
+   - **Countdown** -- किसी तारीख या साप्ताहिक सेवा समय की ओर गिनती करता टाइमर
+   - **Stats** -- लेबल (सदस्य, वर्ष, कैंपस) के साथ बड़े अंकों की पंक्ति
+   - **Campaign Progress** -- किसी giving campaign के लिए लाइव प्रगति पट्टी, जो फ़ंड लक्ष्य की ओर जुटाई गई कुल राशि दिखाती है
+   - **Staff Grid** -- किसी ग्रुप के सदस्यों के लिए फ़ोटो कार्ड; ग्रुप का **public roster** विकल्प चालू होना चाहिए
+   - **Service Times** -- आपके कैंपस का सेवा शेड्यूल, जो attendance setup से अपने-आप लिया जाता है
+   - **Sermons** -- आपकी sermon library, पूर्ण browser के रूप में या grid, list, या featured-latest लेआउट में
+   - **Map** -- आपके चर्च के पते पर केंद्रित एम्बेडेड मानचित्र
+   - **Table** -- तालिकाबद्ध कंटेंट के लिए पंक्तियों और कॉलमों का सरल ग्रिड
+   - **Text with Photo** -- text और एक छवि साथ-साथ
+   - **Logo** -- आपका चर्च लोगो, [Appearance](appearance) से लिया गया
+   - **Live Stream** -- आपका live stream player, सीधे पेज पर एम्बेड किया गया
+   - **Podcast** -- आपके दिए गए बाहरी podcast RSS feed URL से लिए गए एपिसोड की सूची, जिसमें यह तय करने की सेटिंग्स हैं कि कितने एपिसोड दिखें और तारीखें व विवरण दिखाने हैं या नहीं। लाइव साइट पर हर एपिसोड में एक audio player और एक **Download** लिंक होता है जो एपिसोड की audio फ़ाइल को एपिसोड के शीर्षक के नाम से सहेजता है। यह किसी भी podcast feed को अपनी साइट पर दिखाने के लिए है; अपने ही sermons को podcast के रूप में प्रकाशित करने के लिए इसकी जगह देखें [Managing Sermons](../sermons/managing-sermons.md#your-podcast-feed)।
+   - **Donation** -- giving बटन या एम्बेडेड donation फ़ॉर्म
+   - **HTML** -- आपका अपना कच्चा HTML, उन्नत उपयोग के लिए, जैसे किसी third-party widget को एम्बेड करना (देखें [Using the HTML element](#using-the-html-element))
+   - **iFrame** -- URL द्वारा बाहरी कंटेंट एम्बेड करें
+3. प्रकट होने वाले settings पैनल का उपयोग करके एलिमेंट कॉन्फ़िगर करें।
 
-### HTML element का उपयोग {#using-the-html-element}
+### HTML एलिमेंट का उपयोग
 
-**HTML** element में दो boxes होते हैं:
+**HTML** एलिमेंट में दो बॉक्स होते हैं:
 
-- **HTML Content** -- वह markup जो पेज पर दिखाना है। यहां आप जो भी `<script>` tags डालते हैं, वे आपकी लाइव साइट पर चलते हैं।
-- **JavaScript (exclude script tag)** -- Script code जो पेज लोड होने पर चलता है। आप किसी vendor का embed snippet भी यहां उसके `<script>` tags सहित paste कर सकते हैं, और वह लाइव साइट पर चलेगा।
+- **HTML Content** -- वह markup जो पेज पर दिखाया जाएगा। यहाँ आप जो भी `<script>` टैग शामिल करते हैं, वे आपकी लाइव साइट पर चलते हैं।
+- **JavaScript (exclude script tag)** -- पेज लोड होने पर चलने वाला script कोड। आप किसी vendor का embed snippet यहाँ उसके `<script>` टैग सहित भी पेस्ट कर सकते हैं, और वह लाइव साइट पर चलेगा।
 
-अगर आप JavaScript box में केवल एक web address (जैसे कोई image link) paste करते हैं, तो box लाल हो जाता है और चेतावनी दिखती है *"This is a web address, not JavaScript."* उस box में अकेला address कुछ नहीं करता। कोई तस्वीर दिखाने के लिए **Image** element इस्तेमाल करें या **HTML Content** में `<img src="...">` डालें।
+अगर आप JavaScript बॉक्स में केवल कोई वेब पता (जैसे किसी छवि का लिंक) पेस्ट करते हैं, तो बॉक्स लाल हो जाता है और चेतावनी दिखती है *"This is a web address, not JavaScript."* उस बॉक्स में अकेला पता कुछ नहीं करता। कोई चित्र दिखाने के लिए **Image** एलिमेंट उपयोग करें या **HTML Content** में `<img src="...">` डालें।
 
-### Calendar element का उपयोग {#using-the-calendar-element}
+### Calendar एलिमेंट का उपयोग {#using-the-calendar-element}
 
-**Calendar** element आपके किसी calendar के events दिखाता है:
+**Calendar** एलिमेंट आपके किसी एक कैलेंडर के इवेंट दिखाता है:
 
-1. **Select** के अंतर्गत **Group Calendar** चुनें (किसी एक group के events -- सूची में वे groups दिखते हैं जिनके आप सदस्य हैं) या **Curated Calendar** (**Calendars** के अंतर्गत आपके बनाए गए calendar; देखें [क्यूरेटेड Calendar](../calendars/curated-calendar))।
-2. **Select Calendar** के अंतर्गत group या calendar चुनें।
-3. **Display** के अंतर्गत चुनें कि इसे कैसे दिखाना है:
-   - **Month calendar** -- एक महीने का grid जिसमें visitors पन्ने पलट सकते हैं।
-   - **Upcoming events** -- अगले 12 आने वाले events की tiles का grid, जिसमें दोहराने वाला event अपनी अगली तारीख पर एक बार दिखता है। हर tile में event की फ़ोटो (या फ़ोटो न होने पर आपकी theme के dark color पर उसका शीर्षक), एक date badge, दिन और समय, और विवरण की पहली पंक्ति दिखती है। Tiles के ऊपर का **Subscribe** button visitors को calendar का ICS link कॉपी करने या उसे download करने देता है।
-4. केवल कुछ events दिखाने के लिए **Only events tagged** में एक tag टाइप करें -- उदाहरण के लिए, `youth`। केवल वे events दिखते हैं जिनके **Tags** में वह शब्द है। सभी events दिखाने के लिए इसे खाली छोड़ें। Tags हर event पर सेट होते हैं; देखें [इवेंट जोड़ना और संपादित करना](../calendars/creating-calendars.md#adding-and-editing-events)।
+1. **Select** के अंतर्गत **Group Calendar** (एक ग्रुप के इवेंट -- सूची में वे ग्रुप दिखते हैं जिनके आप सदस्य हैं) या **Curated Calendar** (**Calendars** के अंतर्गत बनाया गया कैलेंडर; देखें [Curated Calendar](../calendars/curated-calendar)) चुनें।
+2. **Select Calendar** के अंतर्गत ग्रुप या कैलेंडर चुनें।
+3. **Display** के अंतर्गत चुनें कि कैसे दिखाना है:
+   - **Month calendar** -- एक महीने का ग्रिड जिसमें विज़िटर पन्ने पलट सकते हैं।
+   - **Upcoming events** -- आगामी 12 इवेंट्स के टाइल्स का ग्रिड, जिसमें दोहराने वाला इवेंट अपनी अगली तारीख पर एक बार दिखता है। हर टाइल में इवेंट की फ़ोटो (या फ़ोटो न होने पर आपकी थीम के गहरे रंग पर उसका शीर्षक), तारीख का बैज, दिन और समय, और विवरण की पहली पंक्ति दिखती है। टाइल्स के ऊपर एक **Subscribe** बटन है जिससे विज़िटर कैलेंडर का ICS लिंक कॉपी कर सकते हैं या उसे डाउनलोड कर सकते हैं।
+4. केवल कुछ इवेंट दिखाने के लिए **Only events tagged** में टैग लिखें -- उदाहरण के लिए, `youth`। केवल वही इवेंट दिखते हैं जिनके **Tags** में वह शब्द है। सभी इवेंट दिखाने के लिए इसे खाली छोड़ें। टैग हर इवेंट पर सेट होते हैं; देखें [Adding and Editing Events](../calendars/creating-calendars.md#adding-and-editing-events)।
 
-दोनों display प्रकारों में, किसी event पर click करने से उसका अपना पेज आपकी website पर खुलता है। Event पेज पर event की फ़ोटो, शीर्षक, तारीख और समय, और विवरण दिखता है, साथ ही **When** (दोहराने वाले event के लिए repeat pattern सहित) और **Where** (उसके लिए बुक किए गए rooms) वाला एक box। Registration चालू होने पर इसमें **Register for this Event** button भी होता है, और **Add to my calendar** link होता है जो event को calendar file के रूप में download करता है। पेज ऐसा बना है कि search engines अपने परिणामों में event की तारीख और विवरण दिखा सकें।
+दोनों डिस्प्ले में, किसी इवेंट पर क्लिक करने से वह आपकी वेबसाइट पर अपने ही पेज पर खुलता है। इवेंट पेज में इवेंट की फ़ोटो, शीर्षक, तारीख और समय, और विवरण दिखता है, साथ ही एक बॉक्स जिसमें **When** (दोहराने वाले इवेंट के लिए दोहराव पैटर्न सहित) और **Where** (उसके लिए बुक किए गए कमरे) होते हैं। जब पंजीकरण चालू हो, तब इसमें **Register for this Event** बटन भी होता है, और एक **Add to my calendar** लिंक जो इवेंट को कैलेंडर फ़ाइल के रूप में डाउनलोड करता है। पेज ऐसा बना है कि सर्च इंजन अपने परिणामों में इवेंट की तारीख और विवरण दिखा सकें। आपके पेजों पर दिखाए गए curated calendars के इवेंट पेज (अगले छह महीनों के इवेंट्स के लिए) आपकी साइट के sitemap में भी सूचीबद्ध होते हैं, ताकि सर्च इंजन उन्हें खोज सकें।
 
-### Content को पुनर्व्यवस्थित करना {#reordering-content}
+### कंटेंट का क्रम बदलना
 
-हर item के बाईं ओर के handle icon (छह बिंदु) का उपयोग करके sections या elements को खींचें और उनका क्रम बदलें। आप किसी section के भीतर elements खींच सकते हैं या उन्हें sections के बीच ले जा सकते हैं।
+सेक्शन या एलिमेंट्स को पुनर्व्यवस्थित करने के लिए हर आइटम के बाईं ओर के हैंडल आइकन (छह बिंदु) को खींचें। आप किसी सेक्शन के भीतर एलिमेंट्स खींच सकते हैं या उन्हें सेक्शनों के बीच ले जा सकते हैं।
 
-## अपने पेज को स्टाइल करना {#styling-your-page}
+## पेज की स्टाइलिंग
 
-### Section styles {#section-styles}
+### सेक्शन स्टाइल
 
-किसी भी section पर click करके उसका style panel खोलें। आप सेट कर सकते हैं:
+किसी भी सेक्शन पर क्लिक करके उसका स्टाइल पैनल खोलें। आप ये सेट कर सकते हैं:
 
-- **Background** -- ठोस रंग, gradient, या image। Image background इस्तेमाल करने पर, **Focal Point** picker आपको click करके यह चुनने देता है कि section के scale होने पर image का कौन सा हिस्सा केंद्र में रहे, और **Overlay** color विकल्प आपको image पर एक अर्ध-पारदर्शी tint जोड़ने देता है ताकि text पढ़ने में आसान हो।
-- **Padding** -- section के अंदर ऊपर और नीचे की जगह
-- **Width** -- Full-width या centered/contained
-- **Dividers** -- section के ऊपरी या निचले किनारे पर सजावटी shape dividers (wave, slant, curve, triangle, और अन्य), जिनमें color, height, और flip विकल्प हैं
+- **Background** -- ठोस रंग, ग्रेडिएंट, या छवि। छवि बैकग्राउंड उपयोग करते समय, **Focal Point** पिकर आपको क्लिक करके यह तय करने देता है कि सेक्शन के स्केल होने पर छवि का कौन-सा हिस्सा केंद्र में रहे, और **Overlay** रंग विकल्प आपको छवि पर अर्ध-पारदर्शी रंग की परत जोड़ने देता है ताकि पाठ पढ़ने में आसान हो।
+- **Padding** -- सेक्शन के भीतर ऊपर और नीचे का spacing
+- **Width** -- पूरी चौड़ाई या केंद्रित/सीमित
+- **Dividers** -- सेक्शन के ऊपरी या निचले किनारे पर सजावटी आकार विभाजक (wave, slant, curve, triangle, और अन्य), जिनमें रंग, ऊँचाई और flip विकल्प हैं
 
-### Element styles {#element-styles}
+### एलिमेंट स्टाइल
 
-किसी भी element पर click करके उसका style panel खोलें। आम विकल्पों में font size, color, alignment, margin, और padding शामिल हैं। Images के लिए, आप alt text और link targets सेट कर सकते हैं।
+किसी भी एलिमेंट पर क्लिक करके उसका स्टाइल पैनल खोलें। सामान्य विकल्पों में फ़ॉन्ट आकार, रंग, संरेखण, margin, और padding शामिल हैं। छवियों के लिए आप alt text और link targets सेट कर सकते हैं।
 
-### Custom CSS {#custom-css}
+### Custom CSS
 
-उन्नत styling के लिए, हर section और element में एक **Custom CSS** field है जहां आप अपने CSS rules लिख सकते हैं। ये उसी element तक सीमित रहते हैं, इसलिए ये पेज के बाकी हिस्से को अनजाने में प्रभावित नहीं करेंगे।
+उन्नत स्टाइलिंग के लिए, हर सेक्शन और एलिमेंट में एक **Custom CSS** फ़ील्ड है जहाँ आप अपने CSS नियम लिख सकते हैं। ये उस एलिमेंट तक सीमित रहते हैं, इसलिए पेज के बाकी हिस्से पर अनजाने में असर नहीं डालते।
 
 :::tip
-अगर आपको पूरी साइट पर styles लागू करने हैं -- जैसे कोई custom font या global color -- तो व्यक्तिगत पेजों पर custom CSS की जगह [स्वरूप](appearance) settings का उपयोग करें।
+अगर आपको पूरी साइट पर स्टाइल लागू करनी है -- जैसे कोई कस्टम फ़ॉन्ट या वैश्विक रंग -- तो व्यक्तिगत पेजों पर custom CSS की जगह [Appearance](appearance) सेटिंग्स का उपयोग करें।
 :::
 
-## अपने पेज का preview देखना {#previewing-your-page}
+## अपने पेज का Preview
 
-अलग-अलग screen sizes पर अपना पेज कैसा दिखता है, यह जांचने के लिए toolbar के preview controls का उपयोग करें:
+पेज को विभिन्न स्क्रीन आकारों पर देखने के लिए टूलबार के preview नियंत्रणों का उपयोग करें:
 
-- **Desktop** -- पूरी चौड़ाई वाला browser view
-- **Mobile** -- संकरा फ़ोन-आकार का view
+- **Desktop** -- पूरी चौड़ाई वाला ब्राउज़र दृश्य
+- **Mobile** -- संकरा फ़ोन-आकार का दृश्य
 
-लाइव पेज को ठीक वैसा देखने के लिए, जैसा visitors देखेंगे, Pages सूची पर वापस जाएं और पेज के path पर click करें। वह एक नए browser tab में खुलता है।
+लाइव पेज ठीक वैसा देखने के लिए जैसा विज़िटर देखेंगे, Pages सूची पर वापस जाएँ और पेज के path पर क्लिक करें। वह एक नए ब्राउज़र टैब में खुलता है।
 
-## Accessibility की जांच {#checking-accessibility}
+## एक्सेसिबिलिटी जाँचना
 
-सामान्य समस्याओं की त्वरित जांच के लिए toolbar में **Accessibility** icon पर click करें -- जैसे alt text के बिना images, कम color contrast, या क्रम से बाहर headings। हर समस्या सीधे उस element से link होती है जिसे ध्यान चाहिए, ताकि आप उसे वहीं ठीक कर सकें।
+आम समस्याओं की त्वरित जाँच के लिए टूलबार में **Accessibility** आइकन पर क्लिक करें -- जैसे alt text के बिना छवियाँ, कम रंग कंट्रास्ट, या क्रम से बाहर शीर्षक। हर समस्या सीधे उस एलिमेंट से लिंक होती है जिसे ध्यान चाहिए, ताकि आप उसे वहीं ठीक कर सकें।
 
-## बदलाव पूर्ववत करना {#undoing-changes}
+## बदलाव पूर्ववत करना
 
-एडिटर आपका editing इतिहास अपने-आप ट्रैक करता है। नेविगेट करने के लिए toolbar buttons या keyboard shortcuts का उपयोग करें:
+एडिटर आपका संपादन इतिहास अपने-आप रखता है। नेविगेट करने के लिए टूलबार बटन या कीबोर्ड शॉर्टकट का उपयोग करें:
 
-- **Undo** (Ctrl+Z / Cmd+Z) -- आपकी आखिरी क्रिया को वापस लें
-- **Redo** (Ctrl+Shift+Z या Ctrl+Y / Cmd+Shift+Z) -- पूर्ववत की गई क्रिया को फिर से लागू करें
+- **Undo** (Ctrl+Z / Cmd+Z) -- आपकी अंतिम कार्रवाई वापस लें
+- **Redo** (Ctrl+Shift+Z या Ctrl+Y / Cmd+Shift+Z) -- पूर्ववत की गई कार्रवाई फिर से लागू करें
 
-आप पेज को किसी पिछले snapshot पर भी restore कर सकते हैं। सहेजे गए snapshots की विवरण सहित सूची देखने के लिए toolbar में **View history** पर click करें, और उस बिंदु पर वापस जाने के लिए किसी भी entry पर click करें।
+आप पेज को किसी पिछले snapshot पर भी वापस ला सकते हैं। सहेजे गए snapshots की विवरण सहित सूची देखने के लिए टूलबार में **View history** पर क्लिक करें, और किसी भी प्रविष्टि पर क्लिक करके उस बिंदु पर लौटें।
 
 :::warning
-Snapshot restore करने से आपकी मौजूदा पेज सामग्री snapshot वाले version से बदल जाती है। इसे सामान्य undo button से वापस नहीं लाया जा सकता। अगर आप वापस जाने का विकल्प रखना चाहते हैं, तो कोई पुराना snapshot restore करने से पहले अपनी मौजूदा स्थिति का snapshot सहेजें।
+Snapshot बहाल करने से आपकी मौजूदा पेज सामग्री snapshot वाले संस्करण से बदल जाती है। यह standard undo बटन से वापस नहीं हो सकता। अगर आप पुराने snapshot को बहाल करने से पहले उसे वापस पाने का विकल्प रखना चाहते हैं, तो अपनी मौजूदा स्थिति का snapshot पहले सहेजें।
 :::
 
-## सेव करना और प्रकाशित करना {#saving-and-publishing}
+## सहेजना और प्रकाशित करना
 
-आप जैसे-जैसे काम करते हैं, बदलाव अपने-आप सेव होते हैं। Toolbar में एक status indicator दिखाता है कि आपके बदलाव सेव हुए हैं या नहीं।
+आपके काम के दौरान बदलाव अपने-आप सहेजे जाते हैं। टूलबार में एक स्थिति संकेतक दिखाता है कि आपके बदलाव सहेजे गए हैं या नहीं।
 
-### Draft और published स्थिति {#draft-and-published-state}
+### ड्राफ़्ट और प्रकाशित स्थिति
 
-पेजों की **published** स्थिति हो सकती है, जो नियंत्रित करती है कि visitors आपके बदलाव कब देखें। Toolbar वर्तमान स्थिति दिखाने वाला status chip प्रदर्शित करता है:
+पेज की **published** स्थिति हो सकती है, जो तय करती है कि विज़िटर आपके बदलाव कब देखें। टूलबार वर्तमान स्थिति दिखाने वाला एक status chip प्रदर्शित करता है:
 
-- **Live on save** -- पेज publish workflow का उपयोग नहीं करता। हर सहेजा गया बदलाव तुरंत लाइव हो जाता है। नए पेजों के लिए यही डिफ़ॉल्ट है।
-- **Unpublished changes** -- पेज पहले publish हो चुका है, लेकिन आखिरी publish के बाद आपने बदलाव किए हैं। Visitors अब भी पिछला published version देखते हैं।
-- **Published** -- पेज लाइव है और आपकी सहेजी गई सामग्री वही है जो visitors देखते हैं।
+- **Live on save** -- पेज किसी प्रकाशन प्रक्रिया का उपयोग नहीं करता। हर सहेजा गया बदलाव तुरंत लाइव हो जाता है। नए पेजों के लिए यही डिफ़ॉल्ट है।
+- **Unpublished changes** -- पेज पहले प्रकाशित हो चुका है, लेकिन पिछले प्रकाशन के बाद आपने बदलाव किए हैं। विज़िटर अब भी पिछले प्रकाशित संस्करण को देखते हैं।
+- **Published** -- पेज लाइव है और आपका सहेजा गया कंटेंट वही है जो विज़िटर देखते हैं।
 
-अपने बदलाव publish करने के लिए toolbar में **Publish** button पर click करें। पेज तुरंत लाइव हो जाता है।
+अपने बदलाव प्रकाशित करने के लिए टूलबार में **Publish** बटन पर क्लिक करें। पेज तुरंत लाइव हो जाता है।
 
-Visitors को प्रभावित किए बिना आखिरी published version पर वापस जाने के लिए, overflow menu (⋮) खोलें और **Discard unpublished changes** पर click करें।
+विज़िटर को जो दिखता है उस पर असर डाले बिना अंतिम प्रकाशित संस्करण पर लौटने के लिए, overflow मेनू (⋮) खोलें और **Discard unpublished changes** पर क्लिक करें।
 
-Publish workflow का उपयोग बंद करने के लिए, overflow menu खोलें और **Turn off publishing** पर click करें। फिर बदलाव तुरंत लाइव होने लगते हैं।
+प्रकाशन प्रक्रिया का उपयोग बंद करने के लिए, overflow मेनू खोलें और **Turn off publishing** पर क्लिक करें। फिर संपादन तुरंत फिर से लाइव होने लगते हैं।
 
 :::tip
-Publish workflow का उपयोग तब करें जब आप किसी पेज को तैयार करना चाहते हैं -- उदाहरण के लिए, किसी आने वाले event के लिए -- और उसे सही समय पर ही लाइव करना चाहते हैं। पेज बनाएं और preview करें, फिर तैयार होने पर **Publish** पर click करें।
+ड्राफ़्ट/प्रकाशन प्रक्रिया का उपयोग तब करें जब आप किसी पेज को तैयार करना चाहते हैं -- उदाहरण के लिए, किसी आगामी इवेंट के लिए -- और उसे सही समय पर ही लाइव करना चाहते हैं। पेज बनाएँ और उसका preview देखें, फिर तैयार होने पर Publish पर क्लिक करें।
 :::
 
-## संबंधित लेख {#related-articles}
+## संबंधित लेख
 
-- [पेज प्रबंधित करना](managing-pages) -- पेज बनाएं, URLs सेट करें, और साइट navigation प्रबंधित करें
-- [स्वरूप](appearance) -- साइट-व्यापी colors, fonts, और branding सेट करें
-- [फ़ाइलें](files) -- एडिटर में उपयोग के लिए images और documents अपलोड करें
-- [फ़ॉर्म बनाना](../forms/creating-forms) -- ऐसे forms बनाएं जिन्हें पेजों पर embed किया जा सके
+- [Managing Pages](managing-pages) -- पेज बनाएँ, URL सेट करें, और साइट नेविगेशन प्रबंधित करें
+- [Appearance](appearance) -- साइट-व्यापी रंग, फ़ॉन्ट और ब्रांडिंग सेट करें
+- [Files](files) -- एडिटर में उपयोग के लिए छवियाँ और दस्तावेज़ अपलोड करें
+- [Creating Forms](../forms/creating-forms) -- ऐसे फ़ॉर्म बनाएँ जिन्हें पेजों पर एम्बेड किया जा सके

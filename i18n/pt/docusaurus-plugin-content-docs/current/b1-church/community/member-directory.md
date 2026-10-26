@@ -1,46 +1,46 @@
 ---
-title: "Diretório de Membros"
+title: "Diretório de membros"
 ---
 
-# Diretório de Membros
+# Diretório de membros
 
 <div class="article-intro">
 
-O diretório de membros permite navegar e pesquisar pessoas da sua igreja. Seja para encontrar um colega do grupo ou alguém novo, o diretório facilita a conexão com a família da sua igreja.
+O diretório de membros permite navegar e pesquisar pessoas da sua igreja. Seja para encontrar um colega do grupo ou alguém novo, o diretório facilita a conexão com a sua família da igreja.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
 - Você precisa estar [conectado](../getting-started/logging-in.md) à sua conta do B1.church.
-- O diretório está disponível apenas para **membros e equipe**. Visitantes e frequentadores que ainda não se tornaram membros verão a mensagem "Somente para Membros".
+- Quem pode abrir o diretório segue a configuração **Mostrar no diretório** da sua igreja: **Somente administradores**, **Membros e acima** (o padrão), **Frequentadores regulares e acima** ou **Visitantes e acima**. Pessoas abaixo desse nível veem a mensagem "Somente para membros". A equipe com a permissão Pessoas > Ver sempre pode abrir o diretório e, com **Somente administradores**, são as únicas que podem fazê-lo, mesmo pessoas com status de membresia Equipe não podem. Pessoas com status Visitante ou Inativo nunca podem. Consulte [Configurações do diretório de membros e mensagens](../../b1-admin/settings/mobile-app.md#member-directory--messaging-settings).
 
 </div>
 
-## Acessando o Diretório
+## Acessando o diretório
 
-1. Toque em **Comunidade** na [barra de abas ou na página Mais](../getting-started/navigating.md) (sua igreja pode ter dado outro nome a ela).
-2. O **Diretório** abre com a contagem de pessoas e uma lista de todos os membros visíveis da igreja.
+1. Toque em **Comunidade** na [barra de abas ou na página Mais](../getting-started/navigating.md) (sua igreja pode ter dado a ela outro nome).
+2. O **Diretório** é aberto com a contagem de pessoas e a lista de todos os membros visíveis da igreja.
 
-## Pesquisando Membros
+## Pesquisando membros
 
-Digite um nome na caixa **Pesquisar Membros** no topo da lista. A lista é filtrada conforme você digita, e a parte correspondente de cada nome fica destacada. Limpe a caixa para ver o diretório completo novamente.
+Digite um nome na caixa **Pesquisar membros** no topo da lista. A lista é filtrada conforme você digita, e a parte correspondente de cada nome fica destacada. Limpe a caixa para ver o diretório completo novamente.
 
-## Navegando pelo Diretório
+## Navegando pelo diretório
 
-Os membros são agrupados sob títulos de letras (A, B, C e assim por diante), pela primeira letra do primeiro nome, e ordenados pelo sobrenome dentro de cada letra. Cada item mostra a foto do membro, o nome de exibição e a situação de membresia, facilitando a leitura da lista.
+Os membros são agrupados sob títulos de letras (A, B, C e assim por diante), pela primeira letra do primeiro nome, e ordenados pelo sobrenome dentro de cada letra. Cada entrada mostra a foto do membro, o nome de exibição e o status de membresia, facilitando a leitura da lista.
 
-## Visualizando o Perfil de um Membro
+## Visualizando o perfil de um membro
 
-Toque em qualquer membro da lista para abrir o perfil dele. O perfil mostra o nome, a foto e a situação de membresia do membro, com botões para **Mensagem**, **Ligar** ou enviar um **Texto**, quando essas informações estiverem disponíveis. Abaixo, a seção **Informações de Contato** mostra os dados que a igreja e o membro escolheram compartilhar, como e-mail, telefone e endereço, e **Membros do Domicílio** lista as outras pessoas da família dele.
+Toque em qualquer membro da lista para abrir o perfil dele. O perfil mostra o nome, a foto e o status de membresia do membro, com botões para **Mensagem**, **Ligar** ou enviar um **SMS**, quando essas informações estiverem disponíveis. Abaixo disso, a seção **Informações de contato** mostra os dados que a igreja e o membro escolheram compartilhar, como e-mail, telefone e endereço, e **Membros da família** lista as outras pessoas do domicílio.
 
-Você pode tocar nos membros do domicílio dentro de um perfil para navegar até os perfis deles também. No seu próprio perfil, um botão **Editar perfil** leva a [Editando Seu Perfil](../getting-started/editing-your-profile.md).
+Você pode tocar nos membros da família dentro de um perfil para ir até os perfis deles também. No seu próprio perfil, um botão **Editar perfil** leva a [Editando seu perfil](../getting-started/editing-your-profile.md).
 
 :::info
-As informações visíveis em cada perfil dependem das configurações de privacidade e de diretório da sua igreja. Nem todos os campos podem ser exibidos para cada membro.
+As informações visíveis em cada perfil dependem das configurações de privacidade e do diretório da sua igreja. Nem todos os campos podem ser exibidos para todos os membros.
 :::
 
 :::info
-Membros abaixo da [idade mínima para mensagens privadas](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) da sua igreja continuam visíveis no diretório, mas a opção de enviar a eles uma mensagem privada fica indisponível.
+Os membros abaixo da [idade mínima para mensagens privadas](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) da sua igreja continuam visíveis no diretório, mas a opção de enviar uma mensagem privada a eles fica indisponível.
 :::

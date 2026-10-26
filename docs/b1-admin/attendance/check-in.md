@@ -99,7 +99,7 @@ Use the idle screen to display announcements, upcoming events, or welcome messag
 
 The check-in kiosk can display a QR code that visitors scan to register themselves and their family on their own phone. This speeds up the check-in process for first-time guests.
 
-When a guest scans the QR code, they are taken to a [guest registration page](../../b1-church/checkin/guest-registration) where they enter their name, email, and family members. A volunteer can then look them up on the kiosk and check them in.
+When a guest scans the QR code, they are taken to a [guest registration page](../../b1-church/checkin/guest-registration) where they enter their family's names and whatever other details you choose to ask for. A volunteer can then look them up on the kiosk and check them in.
 
 ### Enabling QR Guest Registration
 
@@ -113,9 +113,47 @@ To turn on the QR code display:
 This setting is under **Mobile > B1 CheckIn** (the same page as the **Kiosk Theme** card), not under Attendance. The **Kiosk** action on the Attendance page has a link to this page.
 :::
 
+Once the toggle is on, the rest of the options below appear in the same **QR Guest Registration** card. Click **Save** on the card after changing any of them.
+
+### Choosing Sign-up Fields
+
+The **Sign-up fields** checklist controls what the registration form asks for. **First Name** and **Last Name** are always on the form and always required for every family member. For each other field, turn on **Include** to add it to the form, then turn on **Required** if guests must fill it in. **Required** can only be turned on for an included field, and turning **Include** off clears it.
+
+| Field | Asked for | Included by default |
+|-------|-----------|---------------------|
+| **Email** | Primary contact only | Yes (optional) |
+| **Phone** | Primary contact only | Yes (optional) |
+| **Home address** | Once for the family -- street, address line 2, city, state, and zip. When required, everything except address line 2 must be filled in. The address is saved on every family member. | No |
+| **Birth date** | Each family member | No |
+| **Gender** | Each family member | No |
+| **Marital status** | Primary contact only | No |
+| **Grade** | Each family member (PreK through 12, or Graduated) | No |
+| **Comments** | Once, in a box below the family members (up to 1,000 characters) | No |
+
+Fields you turn off are never saved, even if someone sends them to the sign-up some other way. Comments are saved as a note on the primary contact's record (posted as "Guest sign-up"), so you can read them in the **Notes** section of their profile.
+
+### Adding Guests to a Group
+
+Use **Add new guests to group** to put everyone who signs up into one of your groups automatically -- for example, a "Newcomers" group or a group for this weekend's event. Choose **None** (the default) to skip this. Guests never see or choose the group; it's set only here. Change it before each event so you can follow up with that event's guests together.
+
+### Recording Attendance
+
+When a group is selected, an **Also record attendance** switch appears. Turn it on to mark guests present the moment they sign up, so you don't have to check them in separately.
+
+Attendance is only recorded when the sign-up happens during one of the selected group's **scheduled** service times:
+
+- The group must be linked to one or more service times, and those service times must have a [check-in schedule](setup.md#setting-a-check-in-schedule) (a **Day** and a **Start Time**).
+- "During" means inside that service time's check-in window -- from the **Open check-in** minutes before the start until the **Close check-in** minutes after the end (or after the start, if no end time is set), in the same time zone the check-in schedule uses.
+- Each family member is marked present in the group for every one of its service times that is open at that moment, on today's date.
+- Sign-ups at any other time, or for a group whose service times have no schedule, are added to the group but are not counted as attending.
+
+### Header Photo
+
+Under **Header photo**, click **Change photo** to pick or upload an image (cropped to a 16:9 shape) to show at the top of the registration page in place of the default icon. Click **Remove** to go back to the icon.
+
 ### Sharing the Registration Link
 
-Once QR Guest Registration is enabled, a **Share registration QR code** section appears below the toggle. This gives you two ways to get guests to the registration form beyond the kiosk QR code:
+Once QR Guest Registration is enabled, a **Share registration QR code** section appears at the bottom of the card. This gives you two ways to get guests to the registration form beyond the kiosk QR code:
 
 - **Copy link** — copies the registration URL so you can paste it on your church website, in emails, or anywhere online.
 - **Download PNG** — downloads the QR code as an image you can print on flyers, bulletins, or signage.
@@ -123,6 +161,12 @@ Once QR Guest Registration is enabled, a **Share registration QR code** section 
 :::tip
 Add the registration link to your church website's "Plan Your Visit" or "I'm New" page so guests can register before they even arrive.
 :::
+
+### What Happens After a Guest Signs Up
+
+Each sign-up creates a new household named after the primary contact's last name, with a person record for every family member. Everyone is added to **People** with the membership status **Visitor**, with the primary contact as head of household.
+
+To follow up automatically, add a [workflow trigger](../serving/workflows.md#triggers) such as **Person · Created** with the condition *Membership Status is Visitor*, or **Group · Member Joined** for the group you chose above.
 
 ## What Gets Recorded
 

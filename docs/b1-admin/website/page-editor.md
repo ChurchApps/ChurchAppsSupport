@@ -57,7 +57,7 @@ Already built out a section but want a different structure? Use the layout switc
    - **Image** -- Upload or link to a photo
    - **Button** -- A clickable call-to-action link
    - **Card** -- An image with a title and description
-   - **Form** -- Embed a [form](../forms/creating-forms) directly on the page
+   - **Form** -- Embed a [form](../forms/creating-forms) directly on the page. If the form has a [header photo](../forms/creating-forms.md#adding-a-header-photo), it shows above the questions
    - **Calendar** -- Display an event calendar
    - **FAQ** -- Accordion-style question and answer blocks
    - **Video** -- Embed a video by URL
@@ -65,7 +65,7 @@ Already built out a section but want a different structure? Use the layout switc
    - **Icon Feature** -- An icon with a title and short description, for feature or ministry highlights
    - **Gallery** -- A multi-photo grid or masonry layout
    - **Testimonial** -- One or more quotes with author name, role, and photo
-   - **Social Icons** -- Linked icons for your church's social media profiles
+   - **Social Icons** -- Linked icons for your church's social media profiles: Facebook, Instagram, WhatsApp, YouTube, X, TikTok, Vimeo, and Podcast. Fill in a link for each one you want to show; for **WhatsApp**, use a `https://wa.me/` link with your number or a group invite link
    - **Countdown** -- A timer counting down to a date or a weekly service time
    - **Stats** -- A row of large numbers with labels (members, years, campuses)
    - **Campaign Progress** -- A live progress bar for a giving campaign, showing the total raised toward a fund goal
@@ -103,7 +103,7 @@ The **Calendar** element shows events from one of your calendars:
    - **Upcoming events** -- A grid of tiles for the next 12 upcoming events, with a repeating event shown once on its next date. Each tile shows the event's photo (or its title on your theme's dark color when it has no photo), a date badge, the day and time, and the first line of its description. A **Subscribe** button above the tiles lets visitors copy the calendar's ICS link or download it.
 4. To show only some events, type a tag in **Only events tagged** -- for example, `youth`. Only events whose **Tags** include that word appear. Leave it empty to show every event. Tags are set on each event; see [Adding and Editing Events](../calendars/creating-calendars.md#adding-and-editing-events).
 
-In either display, clicking an event opens its own page on your website. The event page shows the event photo, title, date and time, and description, plus a box with **When** (including the repeat pattern for a recurring event) and **Where** (the rooms booked for it). It also has a **Register for this Event** button when registration is turned on, and an **Add to my calendar** link that downloads the event as a calendar file. The page is set up so search engines can show the event's date and details in their results.
+In either display, clicking an event opens its own page on your website. The event page shows the event photo, title, date and time, and description, plus a box with **When** (including the repeat pattern for a recurring event) and **Where** (the rooms booked for it). It also has a **Register for this Event** button when registration is turned on, and an **Add to my calendar** link that downloads the event as a calendar file. The page is set up so search engines can show the event's date and details in their results. Event pages from curated calendars shown on your pages (for events in the next six months) are also listed in your site's sitemap, so search engines can find them.
 
 ### Reordering Content
 

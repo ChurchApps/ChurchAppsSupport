@@ -1,80 +1,80 @@
 ---
-title: "Rapporti di Donazione"
+title: "Report sulle donazioni"
 ---
 
-# Rapporti di Donazione
+# Report sulle donazioni
 
 <div class="article-intro">
 
-B1 Admin ti fornisce diversi modi di visualizzare e analizzare i dati sulle donazioni della tua chiesa. La dashboard di donazioni sulla pagina **Riepilogo** fornisce una panoramica visiva con grafici e filtri, mentre la sezione Rapporti offre un rapporto Riepilogo di Donazione più dettagliato. Usa questi strumenti per tracciare le tendenze di donazione, preparati per le riunioni del consiglio, o riconcilia i tuoi record.
+B1 Admin ti offre diversi modi per visualizzare e analizzare i dati delle donazioni della tua chiesa. La dashboard delle donazioni nella pagina **Riepilogo** della sezione Donazioni offre una panoramica visiva con grafici e filtri, mentre la sezione Report offre un report più dettagliato, il Riepilogo donazioni. Usa questi strumenti per monitorare le tendenze delle donazioni, preparare le riunioni del consiglio o riconciliare i tuoi registri.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Assicurati che le donazioni siano state [registrate in lotti](recording-donations.md) o [importate da Stripe](stripe-import.md)
-- Verifica che i tuoi [fondi](funds.md) siano configurati correttamente così le donazioni siano correttamente categorizzate
+- Assicurati che le donazioni siano state [registrate nei lotti](recording-donations.md) oppure [importate da Stripe](stripe-import.md)
+- Verifica che i tuoi [fondi](funds.md) siano configurati correttamente così le donazioni sono classificate nel modo giusto
 
 </div>
 
-## Dashboard di Donazioni
+## Dashboard delle donazioni
 
-La dashboard di donazioni è la vista **Dashboard** della pagina **Riepilogo**, la prima pagina che vedi quando apri la sezione **Donazioni**.
+La dashboard delle donazioni è la vista **Dashboard** della pagina **Riepilogo**, la prima pagina che vedi quando apri la sezione **Donazioni**.
 
-1. Apri il [Menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Donazioni**, e fai clic su **Riepilogo**. La pagina **Riepilogo** si apre sulla vista **Dashboard**. L'interruttore **Vista** in alto a destra passa tra **Dashboard** e **Donatori Inattivi**.
-2. Usa l'interruttore **Settimanale**, **Mensile**, e **Trimestrale** sopra il rapporto per scegliere come le donazioni sono raggruppate.
-3. Nel pannello **Filtra Rapporto**, imposta la **Data di Inizio** e la **Data di Fine** (per impostazione predefinita, l'anno passato fino a ieri) e facoltativamente scegli un **Fondo**, quindi fai clic su **Esegui Rapporto**. Il rapporto viene eseguito automaticamente con i valori predefiniti quando la pagina si apre.
-4. Quattro **schede KPI** visualizzano le metriche di donazione per l'intervallo selezionato:
-   - **Totale Donazioni** -- L'importo totale donato.
-   - **Dono Medio** -- L'importo medio di donazione.
-   - **Donatori Unici** -- Il numero di persone distinte che hanno donato.
-   - **Totale Donazioni** -- Il numero totale di donazioni individuali.
-5. Sotto i KPI, un grafico a barre mostra le donazioni per settimana, mese, o trimestre, suddiviso per fondo.
-6. Fai clic su **Opzioni di Download** e scegli **Riepilogo** per esportare un CSV dei totali per periodo e fondo, o fai clic sull'icona di stampa per stampare il rapporto. Il nome della tua chiesa appare nella parte superiore del rapporto stampato.
+1. Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Donazioni** e fai clic su **Riepilogo**. La pagina **Riepilogo** si apre sulla vista **Dashboard**. Il selettore **Vista** in alto a destra passa tra **Dashboard** e **Donatori inattivi**.
+2. Usa il selettore **Settimanale**, **Mensile** e **Trimestrale** sopra il report per scegliere come raggruppare le donazioni.
+3. Nel pannello **Filtra report** imposta la **Data di inizio** e la **Data di fine** (per impostazione predefinita, dall'ultimo anno fino a ieri) e facoltativamente scegli un **Fondo**, poi fai clic su **Esegui report**. Il report viene eseguito automaticamente con i valori predefiniti quando la pagina si apre.
+4. Quattro **schede KPI** mostrano le tue metriche di donazione per l'intervallo selezionato:
+   - **Donazioni totali** -- L'importo totale donato.
+   - **Donazione media** -- L'importo medio delle donazioni.
+   - **Donatori unici** -- Il numero di persone distinte che hanno donato.
+   - **Donazioni totali** -- Il numero totale di singole donazioni.
+5. Sotto i KPI, un grafico a barre mostra le donazioni per settimana, mese o trimestre, suddivise per fondo.
+6. Fai clic su **Opzioni di download** e scegli **Riepilogo** per esportare un CSV dei totali per periodo e fondo, oppure fai clic sull'icona della stampante per stampare il report. Il logo della tua chiesa (il **Logo per sfondo chiaro** di [Sito web > Aspetto](../website/appearance.md), se ne hai caricato uno) e il nome compaiono centrati in cima al report stampato. La stampa usa testo scuro e un grafico chiaro anche se usi B1 Admin in modalità scura.
 
-Se le donazioni nel periodo sono state fatte in più di una valuta, i totali KPI vengono convertiti nella valuta della tua chiesa e una nota **Convertito ai tassi di cambio attuali** appare sotto le schede. Vedi [Supporto Multi-Valuta](./multi-currency.md#converted-totals) per i dettagli.
+Se le donazioni del periodo sono state fatte in più di una valuta, i totali dei KPI vengono convertiti nella valuta della tua chiesa e sotto le schede compare una nota **Convertito ai tassi di cambio attuali**. Vedi [Supporto multivaluta](./multi-currency.md#converted-totals) per i dettagli.
 
 :::info
-La dashboard mostra i dati aggregati sulle donazioni. Non include i nomi dei singoli donatori. Per i dettagli a livello di donatore, usa la pagina [Lotti](batches.md).
+La dashboard mostra dati aggregati delle donazioni. Non include i nomi dei singoli donatori. Per i dettagli per donatore, usa la pagina [Lotti](batches.md).
 :::
 
-## Donatori Inattivi
+## Donatori inattivi
 
-Scegli **Donatori Inattivi** nell'interruttore **Vista** per elencare le persone che hanno donato durante un periodo ma non da allora. Per impostazione predefinita confronta l'anno solare scorso con questo anno fino ad oggi; cambia uno qualsiasi degli intervalli di data per ampliare o restringere la ricerca. Ogni riga mostra la persona, la data del loro ultimo dono e il totale per il periodo precedente, e **Opzioni di Download > Riepilogo** scarica l'elenco come un CSV per una mailing di follow-up o una lista di chiamate.
+Scegli **Donatori inattivi** nel selettore **Vista** per elencare le persone che hanno donato in un periodo ma non da allora. Per impostazione predefinita confronta l'anno solare scorso con l'anno in corso fino ad oggi; cambia uno dei due intervalli di date per allargare o restringere la ricerca. Ogni riga mostra la persona, la data della sua ultima offerta e il suo totale del periodo precedente, e **Opzioni di download > Riepilogo** scarica l'elenco come CSV per una campagna postale o un elenco di chiamate di follow-up.
 
-## Visualizzazione dei Dettagli a Livello di Donatore
+## Visualizzare i dettagli per donatore
 
-Per un breakdown di chi ha donato, quanto, e a quale fondo:
+Per vedere nel dettaglio chi ha donato, quanto e a quale fondo:
 
-1. Naviga a **Donazioni > Lotti**.
-2. Fai clic su un **nome di lotto** per aprirlo.
-3. La pagina di dettaglio del lotto elenca ogni donazione con il metodo (e il numero dell'assegno o le ultime cifre della carta), il nome del donatore, la data, le note e l'importo, con un totale in fondo.
-4. Fai clic su **Modifica** sulla riga di una donazione per aprire i dettagli completi di quella donazione, incluso il suo fondo.
-5. Fai clic su **Esporta** sopra l'elenco per scaricare un CSV con tutte le informazioni di donatore e donazione per quel lotto.
+1. Vai su **Donazioni > Lotti**.
+2. Fai clic sul **nome di un lotto** per aprirlo.
+3. La pagina di dettaglio del lotto elenca ogni donazione con il suo metodo (e il numero dell'assegno o le ultime cifre della carta), il nome del donatore, la data, le note e l'importo, con un totale in fondo.
+4. Fai clic su **Modifica** nella riga di una donazione per aprire i dettagli completi di quella singola donazione, incluso il suo fondo.
+5. Fai clic su **Esporta** sopra l'elenco per scaricare un CSV con tutte le informazioni su donatori e donazioni di quel lotto.
 
-## Rapporto Riepilogo di Donazione
+## Report riepilogo delle donazioni
 
-I rapporti di donazione sono costruiti direttamente nella sezione Donazioni -- la pagina Riepilogo serve come tuo rapporto di riepilogo di donazione:
+La reportistica delle donazioni è integrata direttamente nella sezione Donazioni -- la pagina Riepilogo funge da report riepilogo delle donazioni:
 
-1. Nel Menu Jump, scegli **Donazioni > Riepilogo**.
-2. Sulla vista **Dashboard**, imposta la **Data di Inizio** e la **Data di Fine** nel pannello **Filtra Rapporto** e fai clic su **Esegui Rapporto**.
-3. Fai clic su **Opzioni di Download** e scegli **Riepilogo** per esportare il rapporto come un file CSV.
+1. Nel menu Jump, scegli **Donazioni > Riepilogo**.
+2. Nella vista **Dashboard**, imposta la **Data di inizio** e la **Data di fine** nel pannello **Filtra report** e fai clic su **Esegui report**.
+3. Fai clic su **Opzioni di download** e scegli **Riepilogo** per esportare il report come file CSV.
 
-## Esportazione dei Dati
+## Esportare i dati
 
-Puoi esportare i dati di donazione da più posti:
+Puoi esportare i dati delle donazioni da più punti:
 
-- **Pagina Riepilogo** -- scarica un CSV dei totali di donazioni per settimana, mese, o trimestre e fondo
-- **Pagina di dettaglio del lotto** -- scarica un CSV di donazioni individuali con dettagli di donatori
-- **Pagina di dettaglio del fondo** -- scarica la cronologia delle donazioni per uno specifico fondo
+- **Pagina Riepilogo** -- scarica un CSV dei totali delle donazioni per settimana, mese o trimestre e per fondo
+- **Pagina di dettaglio del lotto** -- scarica un CSV delle singole donazioni con i dettagli dei donatori
+- **Pagina di dettaglio del fondo** -- scarica lo storico delle donazioni di un fondo specifico
 
 :::tip
-Per il rapporto di fine anno, combina l'esportazione della pagina Riepilogo con lo strumento [Dichiarazioni di Donazione](giving-statements.md) per ottenere sia le tendenze aggregate che le dichiarazioni dei singoli donatori.
+Per la rendicontazione di fine anno, combina l'esportazione della pagina Riepilogo con lo strumento [Ricevute di donazione](giving-statements.md) per ottenere sia le tendenze aggregate sia le ricevute dei singoli donatori.
 :::
 
-## Passaggi Successivi
+## Prossimi passi
 
-- Genera [Dichiarazioni di Donazione](giving-statements.md) per i tuoi donatori a fine anno
+- Genera le [Ricevute di donazione](giving-statements.md) per i tuoi donatori a fine anno
 - Rivedi i singoli [lotti](batches.md) per verificare i dettagli delle donazioni
-- Controlla le pagine di dettaglio del [fondo](funds.md) per i breakdown di donazione per categoria
+- Controlla le pagine di dettaglio dei [fondi](funds.md) per le suddivisioni delle donazioni per categoria

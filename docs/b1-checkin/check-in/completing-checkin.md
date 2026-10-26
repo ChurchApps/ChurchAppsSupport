@@ -55,9 +55,11 @@ If labels do not print, open the Admin Settings by tapping the **church logo** s
 ## What Happens After Check-In
 
 - If a printer is configured, the app prints all labels and then automatically returns to the **lookup screen**, ready for the next family.
-- If no printer is configured, the success screen displays for a few seconds and then automatically returns to the **lookup screen**.
+- If no printer is configured, the app returns to the **lookup screen** automatically as well.
 
-You do not need to tap anything to get back to the lookup screen -- the app handles the transition automatically.
+Either way, the success screen stays up for at least 6 seconds from when it appears (8 seconds when it is celebrating someone's attendance milestone), so families can see that check-in worked. If printing takes longer than that, the app returns about a second and a half after printing finishes.
+
+You do not need to tap anything to get back to the lookup screen -- the app handles the transition automatically. Once the screen has been up for a moment, you can tap it to return right away; a tap in the first second and a half is ignored, so a quick double tap on **Check-in** does not skip it.
 
 :::tip
 The app resets completely after each check-in, so there is no risk of one family seeing another family's information.

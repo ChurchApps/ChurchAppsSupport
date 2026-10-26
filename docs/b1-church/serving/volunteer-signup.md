@@ -22,7 +22,7 @@ Browse available volunteer positions and sign yourself up for upcoming services 
 
 1. Navigate to the **Volunteer** page on your church's B1.church website.
 2. You will see a list of upcoming service plans that have open volunteer positions. Within each plan, positions are listed by category and then by name. If your church shows only the next week of each plan type, later weeks appear once the current one has passed.
-3. Each plan shows the **plan name**, **service date**, and **service times**.
+3. Each plan shows the **plan name**, **service date**, and **service times**. The service date is the plan's actual calendar date, no matter what time zone you are viewing from.
 
 Positions are grouped by category (for example, "Band", "Hospitality", "Kids Ministry"). Each position shows:
 
@@ -53,7 +53,7 @@ If your plans change and you can no longer serve:
 
 ## Deadlines
 
-Your church administrator may set a signup deadline for each plan. The deadline is a set number of hours before the service date. Once the deadline passes:
+Your church administrator may set a signup deadline for each plan. The deadline is a set number of hours before the plan's first service time -- for example, a 2-hour deadline on a 10:00 AM service closes signups at 8:00 AM that morning. Once the deadline passes:
 
 - You cannot sign up for new positions.
 - You cannot remove existing signups.

@@ -6,105 +6,106 @@ title: "Utseende"
 
 <div class="article-intro">
 
-På siden Utseende kan du tilpasse det overordnede uttrykket til kirkens nettsted. Fra farger og skrifttyper til avstander og egendefinert CSS kan du styre alle visuelle sider ved nettstedet fra ett sted.
+Siden Utseende lar deg tilpasse det samlede utseendet og inntrykket av menighetens nettside. Fra farger og skrifttyper til avstand og egen CSS kan du styre alle visuelle sider ved nettstedet fra ett sted.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Fullfør [førstegangsoppsettet](initial-setup) for nettstedet ditt
-- Ha kirkens logo klar i PNG-format med gjennomsiktig bakgrunn og sideforhold 4:1
-- Finn ut hva som er kirkens profilfarger (hex-verdier) hvis dere har en eksisterende designmanual
+- Fullfør [Første oppsett](initial-setup) for nettstedet ditt
+- Ha menighetens logo klar i PNG-format med gjennomsiktig bakgrunn og et sideforhold på 4:1
+- Kjenn til menighetens merkefarger (heksadesimale verdier) hvis du har en eksisterende stilguide
 
 </div>
 
-## Åpne utseendeinnstillingene
+## Åpne innstillinger for utseende
 
-1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre) og utvid **Nettsted**.
+1. I B1 Admin åpner du [Hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) og utvider **Nettsted**.
 2. Klikk på **Utseende**.
-3. Siden **Nettstedsstiler** åpnes. Kortet **Tema, skrifter og bunntekst** viser listen **Stilinnstillinger** til venstre og en forhåndsvisning av et eksempelnettsted til høyre. Under det finner du kortene **Kunngjøring og widgeter** og **Omdirigeringer og statistikk**.
+3. Siden **Stilarter for nettstedet** lastes. Kortet **Tema, skrifter og bunntekst** viser listen **Stilinnstillinger** til venstre og en forhåndsvisning av et eksempelnettsted til høyre. Under den ligger kortene **Kunngjøring og moduler** og **Omdirigeringer og analyse**.
 
 ## Fargepalett {#color-palette}
 
 1. Klikk på **Fargepalett** i panelet Stilinnstillinger.
-2. Du ser **Grunnfarger** (lyse, aksent- og mørke toner) og **Semantiske farger** (primær, sekundær, suksess, advarsel og feil).
-3. Klikk på en fargeprøve for å åpne fargevelgeren. Dra i velgeren eller skriv inn en hex-verdi for å velge farge.
-4. **Forhåndsvisning av fargekombinasjoner** viser hvordan de valgte fargene fungerer sammen.
-5. Bruk **Foreslåtte paletter** for raskt å ta i bruk et ferdig fargevalg.
+2. Du ser **Grunnfarger** (lyse, aksent- og mørke nyanser) og **Semantiske farger** (Primær, Sekundær, Suksess, Advarsel og Feil).
+3. Klikk på en fargeprøve for å åpne fargevelgeren. Dra velgeren eller skriv inn en heksadesimal verdi for å velge fargen din.
+4. Forhåndsvisningen **Fargekombinasjoner** viser hvordan de valgte fargene fungerer sammen.
+5. Bruk **Foreslåtte paletter** for raskt å ta i bruk en ferdig fargeskjema.
 6. Klikk på **Lagre palett** når du er fornøyd.
 
 ## Typografi
 
 1. Klikk på **Skrifter** i panelet Stilinnstillinger.
-2. Klikk på knappen **Overskriftsskrift** eller **Brødtekstskrift** for å åpne skriftleseren. Du kan søke etter navn eller bla gjennom kategorier som Serif, Sans Serif, Display, Håndskrift og Monospace. Du kan også velge en av de **populære skriftkombinasjonene**.
-3. Klikk på **Lagre skrifter** for å ta i bruk skriftvalgene.
-4. For å justere størrelseshierarkiet fra overskrift 1 til overskrift 4, klikker du på **Typografiskala** i panelet Stilinnstillinger. Bruk feltene **Skalafaktor**, **Grunnstørrelse** og **Linjehøyde** til å finjustere, og klikk deretter på **Lagre typografi**.
+2. Klikk på knappen **Overskriftsskrift** eller **Brødtekstskrift** for å åpne skriftleseren. Du kan søke etter navn eller bla i kategorier som Serif, Sans Serif, Dekorativ, Håndskrift og Monospace. Du kan også velge en av **Populære skriftkombinasjoner**.
+3. Klikk på **Lagre skrifter** for å ta i bruk valgene dine.
+4. For å justere størrelseshierarkiet for Overskrift 1 til 4, klikker du på **Typografiskala** i panelet Stilinnstillinger. Bruk feltene **Typeskala-multiplikator**, **Grunnstørrelse** og **Linjehøyde** for å finjustere, og klikk deretter på **Lagre typografi**.
 
-## Avstander
+## Avstand
 
 1. Klikk på **Avstandsskala** i panelet Stilinnstillinger.
-2. Juster avstandsverdiene fra ekstra liten til ekstra stor. Praktiske eksempler viser hvordan hver verdi påvirker oppsettet.
-3. Klikk på **Lagre avstander** for å bruke verdiene på hele nettstedet.
+2. Juster avstandsverdiene fra Ekstra liten til Ekstra stor. Praktiske eksempler viser hvordan hver verdi påvirker oppsettet.
+3. Klikk på **Lagre avstand** for å ta i bruk verdiene på hele nettstedet ditt.
 
 ## Logo og profilering {#logo-and-branding}
 
 1. Klikk på **Logo** i panelet Stilinnstillinger.
-2. Last opp **Logo for lys bakgrunn** og **Logo for mørk bakgrunn**. Bruk bilder med gjennomsiktig bakgrunn og sideforhold 4:1 for best resultat.
-3. Last opp et **Bilde for sosiale medier** til lenkeforhåndsvisninger og et **Favikon** til ikonet i nettleserfanen.
+2. Last opp din **Logo for lys bakgrunn** og **Logo for mørk bakgrunn**. Bruk bilder med gjennomsiktig bakgrunn og et sideforhold på 4:1 for best resultat.
+3. Last opp et **Bilde for sosiale medier** for lenkeforhåndsvisninger og et **Favicon** for ikonet i nettleserfanen.
+4. Klikk på **Lagre endringer**. Opplastede bilder lagres ikke før du lagrer, så hvis du prøver å lukke eller laste nettleserfanen på nytt først, varsler nettleseren deg om at du har ulagrede endringer.
 
 :::tip
-For best resultat bør du bruke en logo med gjennomsiktig bakgrunn i PNG-format. Da ser den bra ut både på lys og mørk bakgrunn, på nettstedet og i [mobilappen](../settings/mobile-app.md).
+For best resultat bruker du en logo med gjennomsiktig bakgrunn i PNG-format. Da ser den bra ut på både lys og mørk bakgrunn på nettstedet ditt og i [mobilappen](../settings/mobile-app.md).
 :::
 
 ## Navigasjonsstiler
 
-Tilpass fargene i nettstedets navigasjonslinje, både for solid og gjennomsiktig modus:
+Tilpass fargene på navigasjonslinjen for nettstedet ditt, både for fast og gjennomsiktig modus:
 
 1. Klikk på **Navigasjon** i panelet Stilinnstillinger
-2. Angi farger for **Topptekst (solid)** og **Topptekst over hovedbilde (gjennomsiktig)**
+2. Konfigurer farger for **Topptekst (fast)** og **Topptekst over hero (gjennomsiktig)**
 3. Klikk på **Lagre navigasjon** for å ta i bruk navigasjonsfargene
 
-Du finner en detaljert veiledning under [Navigasjonsstiler](./navigation-styles.md).
+For detaljerte instruksjoner, se [Navigasjonsstiler](./navigation-styles.md).
 
-## Kunngjøring og widgeter
+## Kunngjøring og moduler
 
-Nettstedswidgeter vises på hver side og svever over sideinnholdet:
+Modulene på nettstedet vises på hver side og flyter over sideinnholdet:
 
-- **Kunngjøringsbanner** -- En stripe øverst på nettstedet som kan lukkes, til tidsbegrensede meldinger, for eksempel et kommende arrangement eller en endring i gudstjenesten.
-- **Hurtigmeny** -- En flytende knapp som åpner en meny med snarveier, for eksempel lenker til gaver, innsjekking eller søndagsbladet.
+- **Kunngjøringsbanner** -- En lukkbar linje øverst på nettstedet for tidssensitive meldinger, for eksempel en kommende hendelse eller en endring i gudstjenesten.
+- **Startknapp** -- En flytende knapp som åpner en hurtigmeny, for eksempel lenker til gave, innsjekking eller visning av menighetsbladet.
 
-1. Finn kortet **Kunngjøring og widgeter** under Stilinnstillingene.
-2. Slå på widgetene du vil bruke, og angi tekst, lenker og farger.
+1. Finn kortet **Kunngjøring og moduler** under panelet Stilinnstillinger.
+2. Slå på modulene du vil bruke, og konfigurer teksten, lenkene og fargene deres.
 3. Klikk på **Lagre**.
 
-## Omdirigeringer og statistikk
+## Omdirigeringer og analyse
 
-Kortet **Omdirigeringer og statistikk** under Stilinnstillingene inneholder to urelaterte, men ofte nødvendige innstillinger:
+Kortet **Omdirigeringer og analyse** (under panelet Stilinnstillinger) inneholder to ulike, men ofte nødvendige innstillinger:
 
-- **Statistikk** -- Legg inn **GA4-målings-ID-en** (formatet `G-XXXXXXXXXX`) for å følge med på besøkstrafikken på nettstedet. Den samme ID-en registrerer også sidevisninger i menighetens B1-app (medlemsportalen på `/mobile`, inkludert den installerte appen), merket med `display_mode` som er `installed` eller `browser`, slik at du kan skille besøk fra den installerte appen fra besøk i nettleseren i Google Analytics.
-- **Omdirigeringer** -- Koble en gammel URL-bane til en ny, slik at lenker til en side du har flyttet eller gitt nytt navn fortsetter å fungere i stedet for å gi 404-feil. Skriv inn den gamle banen under **Fra** og den nye under **Til**, og klikk på **Lagre**. En omdirigering har også forrang over B1s innebygde sider (`/sermons`, `/stream`, `/donate`, `/bible` og `/votd`), slik at du kan sende den adressen et annet sted (for eksempel til din egen prekenside eller en YouTube-kanal). Den overstyrer ikke en side du har bygget selv på samme adresse. Slett den siden først hvis du vil at omdirigeringen skal gjelde.
+- **Analyse** -- Legg til din **GA4-måle-ID** (format `G-XXXXXXXXXX`) for å spore besøkstrafikken på nettstedet ditt. Den samme ID-en sporer også sidevisninger i menighetens B1-app (medlemsportalen på `/mobile`, inkludert den installerte appen), merket med `display_mode` som `installed` eller `browser`, slik at du kan skille besøk fra den installerte appen fra besøk i nettleser i Google Analytics.
+- **Omdirigeringer** -- Knytt en gammel URL-bane til en ny, slik at lenker til en side du har flyttet eller gitt nytt navn fortsatt fungerer i stedet for å gi 404-feil. Skriv inn den gamle banen i **Fra** og den nye banen i **Til**, og klikk deretter på **Lagre**. En omdirigering har også forrang over B1s innebygde sider (`/sermons`, `/stream`, `/donate`, `/bible` og `/votd`), slik at du kan sende den adressen et annet sted (for eksempel til din egen preken-side eller en YouTube-kanal). Den overstyrer ikke en side du har bygget selv på samme adresse. Slett den siden først hvis du vil at omdirigeringen skal gjelde.
 
-## Egendefinert CSS og JavaScript
+## Egen CSS og JavaScript
 
-1. Klikk på **CSS og Javascript** i panelet Stilinnstillinger.
-2. Legg til **Egendefinert CSS** for å overstyre standardstilene ved avansert tilpasning.
-3. Legg til **Egendefinert HTML** for sporingskoder eller andre skript.
-4. Bruk delen **Vanlige JavaScript-eksempler** for kodebiter, for eksempel integrasjon med Google Analytics.
+1. Klikk på **CSS og JavaScript** i panelet Stilinnstillinger.
+2. Legg til **Egen CSS** for å overstyre standardstiler for avansert tilpasning.
+3. Legg til **Egen HTML** for sporingskoder eller andre skript.
+4. Bruk seksjonen **Vanlige JavaScript-eksempler** for kodesnutter, for eksempel integrasjon med Google Analytics.
 
 :::warning
-Egendefinert CSS er kraftig, men kan ødelegge oppsettet på nettstedet hvis det brukes feil. De fleste kirker kan få det utseendet de ønsker med de innebygde kontrollene for farger, skrifttyper og avstander. Bruk bare egendefinert CSS hvis du er komfortabel med webutvikling.
+Egen CSS er kraftig, men kan ødelegge oppsettet på nettstedet ditt hvis den brukes feil. De fleste menigheter kan oppnå det utseendet de ønsker ved hjelp av de innebygde kontrollene for farger, skrifter og avstand. Bruk bare egen CSS hvis du er komfortabel med webutvikling.
 :::
 
 :::info
-Nettstedet ditt bruker en Content Security Policy som blokkerer innebygde skript fra alle andre kilder. Feltet **Egendefinert HTML** her, og [HTML-elementet](page-editor#using-the-html-element) på enkeltsider, er de betrodde unntakene -- kode du lagrer der kjøres som den er, så lim bare inn skript fra kilder du stoler på (analysekoder, chatwidgeter og lignende innbygginger).
+Nettstedet ditt håndhever en innholdssikkerhetspolicy som blokkerer innebygde skript fra alle andre kilder. Feltet **Egen HTML** her, og [HTML-elementet](page-editor#using-the-html-element) på enkeltsider, er de betrodde unntakene -- kode du lagrer der kjøres uendret, så lim bare inn skript fra kilder du stoler på (analysekoder, chat-moduler og lignende innbygginger).
 :::
 
-## Stiltemaer
+## Stilmaler
 
-Hvis du vil ha et raskt utgangspunkt, finner du ferdiglagde temaer under **Foreslåtte paletter** i fargepaletten. De setter koordinerte farger med ett klikk. Du kan alltid finjustere enkeltinnstillinger etter at du har tatt i bruk et tema.
+Hvis du vil ha et raskt utgangspunkt, tilbyr **Foreslåtte paletter** i delen Fargepalett ferdige temaer som setter sammenhengende farger med ett klikk. Du kan alltid finjustere enkeltinnstillinger etter at du har tatt i bruk et tema.
 
 ## Neste steg
 
-- [Administrere sider](managing-pages) -- Bygg og organiser sidene på nettstedet
-- [Filer](files) -- Last opp mediefiler til nettstedet
+- [Administrere sider](managing-pages) -- Bygg og organiser nettstedets sider
+- [Filer](files) -- Last opp mediefiler for nettstedet ditt

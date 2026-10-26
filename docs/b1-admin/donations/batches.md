@@ -41,7 +41,7 @@ Your new batch appears in the list, ready for you to add donations.
 
 ## Working with Batches
 
-- **View donations** -- click a batch name to open it and see all the individual donations it contains. From there you can add, edit, or remove donations.
+- **View donations** -- click a batch name to open it and see all the individual donations it contains. From there you can add, edit, or remove donations, or click **Import CSV** to add many donations at once from a spreadsheet (see [Importing Donations from a CSV File](recording-donations.md#importing-donations-from-a-csv-file)).
 - **Edit batch details** -- click the **Edit** button on a batch row to change its name or date. Only people with **Edit Donations** can delete a batch.
 - **Sort** -- use the column headers to sort batches by name or date.
 - **Export** -- click **Export** at the top of the page to download the batches shown as a spreadsheet (CSV).

@@ -23,7 +23,7 @@ Roles let you control what different users can access within your ChurchApps acc
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left) and expand **Settings**.
 2. Click **Roles**.
-3. The Roles page displays all currently defined roles for your church.
+3. The Roles page displays all currently defined roles for your church. The **Members** column shows how many users are in each role, and the **(Everyone)** row shows **All users**.
 
 ## Understanding the Roles Page
 
@@ -51,7 +51,7 @@ Click on any role name to view and manage its members and permissions.
 
 Each role can be granted access to specific areas of B1 Admin. In the **Edit Permissions** panel, permissions are grouped into sections you can expand, such as **Attendance**, **Content**, **Donations**, **Forms and Plans**, **Lessons**, **Messaging**, **People and Groups**, and **Tasks**. Type in the **Filter permissions** box to show only the permissions that match.
 
-Check or uncheck a permission to grant or remove it for the role.
+Check or uncheck a permission to grant or remove it for the role. Each section heading shows how many of its permissions the role has, such as **2 of 5**, and the count updates as you check and uncheck boxes.
 
 ### Donations Permissions
 

@@ -29,7 +29,7 @@ Before you can track attendance, you need to tell B1 Admin about your church's p
 ## Setting Up Your Attendance Structure
 
 1. Open **B1 Admin**, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), and expand **People**.
-2. Click **Attendance**, then click **Setup** in the left column. The **Service structure** table opens, with counts of your campuses, service times, and scheduled and unscheduled groups across the top.
+2. Click **Attendance**, then click **Setup** in the left column. The **Service structure** table opens, with counts of your campuses, service times, and scheduled and unscheduled groups across the top. The counts update as soon as you add, edit, or remove something in the table.
 3. Click **Manage Campuses** (top right of the **Service structure** panel). This takes you to **Settings → Campuses**. Click **Add Campus**, enter the name of your location (address and time zone are optional), and click **Save**.
 4. Return to **People → Attendance** and click **Setup**. Your campus now appears in the setup table.
 5. Click the **+ button in the Service column** under your campus. Enter a service name such as "Sunday Service" and click **Save**.

@@ -22,6 +22,7 @@ Base path: `/messaging/conversations`
 | GET | `/messages/:contentType/:contentId` | JWT | — | Load conversations for content with paginated messages (`?page=&limit=`) |
 | GET | `/posts` | JWT | — | Get post-type conversations for the current user's groups |
 | GET | `/posts/group/:groupId` | JWT | — | Get post-type conversations for a specific group |
+| GET | `/notes/feed?section=&limit=&before=` | JWT | — | Newest notes across every record for the B1 Admin Notes page. `section` is `people`, `groups`, `events` or `workflows` (400 otherwise); `limit` defaults to 25 (max 100); `before` is the cursor from the previous page. Each note still passes its own type's rule (People Edit / confidential notes permission, leaders of the group, event viewers, workflow card viewers), so callers only see notes they could open. Note text is cut to 300 characters |
 | GET | `/current/:churchId/:contentType/:contentId` | Public | — | Get or create the current conversation for content (auto-decrypts contentId) |
 | GET | `/:churchId/:contentType/:contentId` | Public | — | Load conversations by content type and ID |
 | GET | `/:churchId/:id` | Public | — | Load a single conversation by ID |
@@ -308,6 +309,8 @@ Manages reusable email templates and sending templated emails to groups.
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | Load all email templates for the church |
 | GET | `/:id` | JWT | — | Load a single email template by ID |
+| GET | `/sendStatus` | JWT | `groupMembers.edit` or `tasks.admin` | The church's group email status: `{ approved, paused, remaining, requested }`. B1Admin's Send Email dialog and the workflow **Send email** action use it to warn when email won't go out |
+| POST | `/requestApproval` | JWT | `groupMembers.edit` | Ask support to approve the church for group email (at most once per church per week) |
 | GET | `/preview/:groupId` | JWT | — | Preview email delivery for a group (eligible recipient count, members with no email) |
 | POST | `/` | JWT | — | Create or update email templates (batch) |
 | POST | `/send` | JWT | — | Send a templated email to all members of a group. Body: `{ groupId, subject, htmlContent }` |

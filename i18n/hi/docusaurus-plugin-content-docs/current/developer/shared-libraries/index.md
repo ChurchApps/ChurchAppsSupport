@@ -1,29 +1,29 @@
 ---
-title: "साझा पुस्तकालय"
+title: "साझा लाइब्रेरी"
 ---
 
-# साझा पुस्तकालय
+# साझा लाइब्रेरी
 
 <div class="article-intro">
 
-ChurchApps साझा कोड npm पर `@churchapps/*` स्कोप के तहत प्रकाशित किया जाता है। सभी साझा पैकेज एक एकल रिपोजिटरी में रहते हैं -- [Packages](https://github.com/ChurchApps/Packages) -- Yarn (Berry) वर्कस्पेस के रूप में प्रबंधित और [changesets](https://github.com/changesets/changesets) के साथ संस्करण किए गए।
+ChurchApps का साझा कोड `@churchapps/*` स्कोप के अंतर्गत npm पर प्रकाशित होता है। सभी साझा पैकेज एक ही रिपॉज़िटरी में रहते हैं -- [Packages](https://github.com/ChurchApps/Packages) -- जो एक Yarn (Berry) workspace के रूप में प्रबंधित होती है और [changesets](https://github.com/changesets/changesets) से संस्करणित की जाती है।
 
 </div>
 
 ## पैकेज
 
-| पैकेज | विवरण | द्वारा उपयोग |
-|---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | फाउंडेशन लेयर: फ्रेमवर्क-मुक्त सहायक कार्य और साझा TypeScript इंटरफेस जो क्रॉस-ऐप डेटा कॉन्ट्रैक्ट बनाते हैं | सभी परियोजनाएं |
-| [`@churchapps/apihelper`](./api-helper) | सर्वर-साइड Express उपयोगिताएं: प्रमाणीकरण, आधार नियंत्रक, डेटाबेस पहुंच, AWS और ईमेल एकीकरण | सभी API |
-| [`@churchapps/apphelper`](./app-helper) | साझा React घटक और विशेषता मॉड्यूल (लॉगिन, दान, फॉर्म, मार्कडाउन, वेबसाइट) | सभी वेब ऐप्स |
-| `@churchapps/content-providers` | तीसरे पक्ष की सामग्री प्रदाताओं पर अमूर्तता (Lessons.church, Planning Center, Dropbox, और अन्य) | Api, B1Admin, B1App, FreePlay |
-| `@churchapps/integration-sdk` | B1.church एकीकरण बनाने के लिए टूलकिट: webhook सत्यापन, टाइप किया गया REST क्लाइंट, OAuth सहायक | बाहरी एकीकरण डेवलपर्स |
-| `@churchapps/texting` | SMS प्रदाता अमूर्तता (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions) | Api |
+| पैकेज | विवरण | उपयोग करने वाले |
+|---------|-------------|-----------------|
+| [`@churchapps/helpers`](./helpers) | आधार परत: फ़्रेमवर्क-मुक्त हेल्पर फ़ंक्शन और साझा TypeScript इंटरफ़ेस जो ऐप्स के बीच डेटा अनुबंध बनाते हैं | सभी प्रोजेक्ट |
+| [`@churchapps/apihelper`](./api-helper) | सर्वर-साइड Express उपयोगिताएँ: auth, बेस कंट्रोलर, डेटाबेस एक्सेस, AWS और ईमेल एकीकरण | सभी APIs |
+| [`@churchapps/apphelper`](./app-helper) | साझा React कंपोनेंट और फ़ीचर मॉड्यूल (लॉगिन, दान, फ़ॉर्म, markdown, वेबसाइट) | सभी वेब ऐप्स |
+| `@churchapps/content-providers` | तृतीय-पक्ष कंटेंट प्रदाताओं (Lessons.church, Planning Center, Dropbox, और अन्य) के लिए एब्स्ट्रैक्शन | Api, B1Admin, B1App, FreePlay |
+| `@churchapps/integration-sdk` | B1.church एकीकरण बनाने के लिए टूलकिट: webhook सत्यापन, टाइप्ड REST क्लाइंट, OAuth हेल्पर | बाहरी एकीकरण डेवलपर |
+| `@churchapps/texting` | SMS प्रदाता एब्स्ट्रैक्शन (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |
 
-निर्भरता दिशा सख्ती से नीचे की ओर है: ऐप्स `apihelper` और `apphelper` पर निर्भर करते हैं, जो `@churchapps/helpers` को **peer dependency** के रूप में घोषित करते हैं ताकि प्रत्येक ऐप इसकी केवल एक प्रति को हल करे।
+निर्भरता की दिशा सख़्ती से नीचे की ओर है: ऐप्स `apihelper` और `apphelper` पर निर्भर करते हैं, और ये दोनों `@churchapps/helpers` को **peer dependency** के रूप में घोषित करते हैं ताकि हर ऐप ठीक एक प्रति को हल करे।
 
-## वर्कस्पेस सेटअप
+## Workspace सेटअप
 
 ```bash
 git clone https://github.com/ChurchApps/Packages.git
@@ -32,33 +32,33 @@ yarn install
 yarn build
 ```
 
-रिपोजिटरी Yarn Berry का उपयोग करता है (रूट `packageManager` फील्ड अधिकारी है) एक एकल लॉकफाइल के साथ। `yarn build` निर्भरता क्रम में हर पैकेज बनाता है; `yarn test` सभी पैकेज परीक्षण चलाता है।
+रिपॉज़िटरी Yarn Berry का उपयोग करती है (रूट `packageManager` फ़ील्ड अधिकृत है) और एक ही lockfile रखती है। `yarn build` निर्भरता क्रम में हर पैकेज बनाता है; `yarn test` सभी पैकेज परीक्षण चलाता है।
 
-## Changesets के साथ जारी करना
+## Changesets से रिलीज़ करना
 
-पैकेज में हर परिवर्तन एक changeset के साथ आता है:
+पैकेज में हर बदलाव एक changeset के साथ जाता है:
 
-1. वर्कस्पेस रूट पर `yarn changeset` चलाएं। जिन पैकेज को आप स्पर्श किए हैं उन्हें चुनें, बम्प टाइप (patch = fix, minor = नया निर्यात या सुविधा, major = breaking), और एक-पंक्ति सारांश लिखें -- यह CHANGELOG प्रविष्टि बन जाता है।
-2. उत्पन्न `.changeset/*.md` फाइल को अपने कोड परिवर्तन के साथ प्रतिबद्ध करें। एक pre-commit हुक प्रतिबद्धता को ब्लॉक करता है जो एक पैकेज के स्रोत को बदलते हैं बिना एक स्टेज किए गए changeset के।
-3. जारी करने के लिए तैयार होने पर, रूट पर `yarn publish-all` चलाएं। यह लंबित changesets का उपभोग करता है (संस्करण बम्प, CHANGELOG लिखना, आंतरिक निर्भरता रेंज सिंक करना), निर्भरता क्रम में सब कुछ बनाता है, और बम्प किए गए पैकेज को npm पर प्रकाशित करता है। फिर संस्करण बम्प को प्रतिबद्ध और धक्का दें।
+1. workspace रूट पर `yarn changeset` चलाएँ। जो पैकेज आपने छुए हैं उन्हें चुनें, बंप प्रकार चुनें (patch = fix, minor = नया export या फ़ीचर, major = breaking), और एक पंक्ति का सारांश लिखें -- यही CHANGELOG प्रविष्टि बनता है।
+2. उत्पन्न `.changeset/*.md` फ़ाइल को अपने कोड बदलाव के साथ commit करें। एक pre-commit hook उन commits को रोकता है जो बिना staged changeset के किसी पैकेज का सोर्स बदलते हैं।
+3. प्रकाशित करने के लिए तैयार होने पर रूट पर `yarn publish-all` चलाएँ। यह लंबित changesets को खपाता है (संस्करण बढ़ाना, CHANGELOG लिखना, आंतरिक निर्भरता रेंज सिंक करना), निर्भरता क्रम में सब कुछ बनाता है, और बढ़े हुए पैकेज npm पर प्रकाशित करता है। फिर संस्करण बढ़ोतरी commit और push करें।
 
 :::warning
-कभी भी एक एकल पैकेज के अंदर कच्चे `npm publish` को न चलाएं -- यह बिल्ड क्रम और संस्करण बुककीपिंग को छोड़ देता है जो रिलीज स्क्रिप्ट को संभालती है। प्रकाशन के लिए `@churchapps` स्कोप के लिए प्रकाशन अधिकारों के साथ एक npm खाता आवश्यक है।
+किसी एक पैकेज के अंदर कच्चा `npm publish` कभी न चलाएँ -- यह build क्रम और उन संस्करण बहीखातों को छोड़ देता है जिन्हें रिलीज़ स्क्रिप्ट संभालती है। प्रकाशन के लिए `@churchapps` स्कोप पर प्रकाशन अधिकार वाला npm खाता चाहिए।
 :::
 
-## एक उपभोग करने वाली ऐप के विरुद्ध स्थानीय विकास {#local-development-against-a-consuming-app}
+## उपभोक्ता ऐप के विरुद्ध स्थानीय विकास
 
-वर्कस्पेस के अंदर, पैकेज सीधे अपने भाई-बहनों के विरुद्ध बनाते हैं -- कोई लिंकिंग आवश्यक नहीं है। एक उपभोग करने वाली ऐप (B1Admin, B1App, आदि) के अंदर एक अप्रकाशित पैकेज बिल्ड को परीक्षण करने के लिए, उपभोक्ता में एक अस्थायी Yarn पोर्टल जोड़ें:
+workspace के भीतर पैकेज अपने सहोदरों के विरुद्ध सीधे बनते हैं -- किसी linking की आवश्यकता नहीं। किसी अप्रकाशित पैकेज build का परीक्षण उपभोक्ता ऐप (B1Admin, B1App, आदि) के अंदर करने के लिए, उपभोक्ता में एक अस्थायी Yarn portal जोड़ें:
 
 ```bash
-# उपभोग करने वाली परियोजना में
+# in the consuming project
 yarn link ../Packages/helpers
-# ... परीक्षण ...
+# ... test ...
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-पहले पैकेज को बनाएं (`yarn build` वर्कस्पेस रूट पर) -- उपभोक्ता संकलित `dist/` आउटपुट पढ़ता है, स्रोत नहीं।
+पहले पैकेज बनाएँ (workspace रूट पर `yarn build`) -- उपभोक्ता सोर्स के बजाय संकलित `dist/` आउटपुट पढ़ता है।
 
 :::warning
-`yarn link` उपभोक्ता के `package.json` में एक पोर्टल संकल्प लिखता है। इसे कभी भी प्रतिबद्ध न करें -- हमेशा `yarn unlink` करें और पूर्ण होने पर फिर से इंस्टॉल करें।
+`yarn link` उपभोक्ता के `package.json` में एक portal resolution लिखता है। इसे कभी commit न करें -- काम खत्म होने पर हमेशा `yarn unlink` करें और फिर reinstall करें।
 :::

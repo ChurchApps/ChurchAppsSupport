@@ -2,11 +2,11 @@
 title: "Gestire il tuo profilo"
 ---
 
-# Gestire il tuo profilo {#managing-your-profile}
+# Gestire il tuo profilo
 
 <div class="article-intro">
 
-La pagina Profilo ti permette di modificare le impostazioni personali del tuo account. Il tuo profilo è condiviso tra tutti i prodotti ChurchApps, quindi qualsiasi modifica che apporti qui si rifletterà ovunque utilizzi ChurchApps.
+La pagina Profilo ti permette di modificare le impostazioni personali del tuo account. Il tuo profilo è condiviso tra tutti i prodotti ChurchApps, quindi le modifiche che fai qui si riflettono ovunque usi ChurchApps.
 
 </div>
 
@@ -18,65 +18,65 @@ La pagina Profilo ti permette di modificare le impostazioni personali del tuo ac
 
 </div>
 
-## Informazioni del profilo {#profile-information}
+## Informazioni del profilo
 
-La pagina Profilo mostra il tuo nome e il tuo indirizzo email a sinistra, con un pulsante **Modifica** sotto di essi. Fai clic su **Modifica** per aprire il modulo **Modifica account**, che contiene i dettagli di base del tuo account:
+La pagina Profilo mostra il tuo nome e l'indirizzo email a sinistra, con sotto un pulsante **Modifica**. Clicca su **Modifica** per aprire il modulo **Modifica account**, che contiene i dati base del tuo account:
 
-1. **Email** -- Il tuo indirizzo email, usato per l'accesso e per la ricezione delle notifiche.
-2. **Nome** e **Cognome** -- Il nome visualizzato in tutti i prodotti ChurchApps.
+1. **Email** -- Il tuo indirizzo email, usato per l'accesso e per ricevere le notifiche.
+2. **Nome** e **Cognome** -- Il tuo nome visualizzato in tutto ChurchApps.
 3. **Password** -- Aggiorna la password del tuo account.
 
-Per aggiornare le tue informazioni, modifica i campi e fai clic sul pulsante **Salva modifiche**. Fai clic su **Annulla** (oppure sul link **Torna a** con il tuo nome) per tornare al tuo profilo senza salvare.
+Per aggiornare i tuoi dati, modifica i campi e clicca sul pulsante **Salva modifiche**. Clicca su **Annulla** (oppure sul link **Torna a** con il tuo nome) per tornare al tuo profilo senza salvare.
 
-## Cambiare la password {#changing-your-password}
+## Cambiare la password
 
-1. Nella pagina Profilo, fai clic su **Modifica**.
+1. Nella pagina Profilo, clicca su **Modifica**.
 2. Inserisci la tua **Password attuale**.
 3. Inserisci la nuova password nel campo **Nuova password**.
-4. Reinseriscila nel campo **Verifica password**.
-5. Fai clic su **Salva modifiche**.
+4. Riscrivila nel campo **Verifica password**.
+5. Clicca su **Salva modifiche**.
 
 :::info
-La password deve contenere almeno 8 caratteri. Assicurati che i campi della password e della conferma corrispondano esattamente. Devi confermare la password attuale per cambiarla: se non la ricordi, usa il link **Password dimenticata** nella pagina di accesso.
+La password deve essere lunga almeno 8 caratteri. Assicurati che i campi della password e della conferma corrispondano esattamente. Per cambiare la password devi confermare quella attuale — se non la ricordi, usa invece il link **Password dimenticata** nella pagina di accesso.
 :::
 
-## Account collegati {#linked-accounts}
+## Account collegati
 
-La sezione **Account collegati** mostra eventuali servizi esterni collegati al tuo account ChurchApps. Da questa sezione puoi vedere quali account sono collegati e gestire tali collegamenti.
+La sezione **Account collegati** mostra i servizi esterni collegati al tuo account ChurchApps. Da questa sezione puoi vedere quali account sono collegati e gestire tali collegamenti.
 
-## Preferenze del tema {#theme-preferences}
+## Preferenze del tema
 
 B1 Admin ti permette di scegliere un tema di colore e una modalità di visualizzazione chiara o scura:
 
-1. Fai clic sulla tua foto profilo nell'angolo in alto a destra di B1 Admin per aprire il menu utente.
-2. In **Preferenze del tema**, scegli un tema:
+1. Clicca sulla tua foto profilo nell'angolo in alto a destra di B1 Admin per aprire il menu utente.
+2. Nella sezione **Preferenze del tema**, scegli un tema:
    - **Predefinito** -- L'aspetto attuale di B1 Admin: pannelli con bordo su uno sfondo pulito. I nuovi utenti vedono questo tema finché non ne scelgono un altro.
-   - **Classico** -- L'aspetto precedente di B1 Admin, con un banner di pagina colorato, schede con ombra e sfondo grigio. Se hai usato B1 Admin su questo dispositivo prima dell'arrivo del nuovo aspetto e non hai mai scelto un tema, rimani su Classico.
-   - **Personalizzato** -- L'aspetto Predefinito costruito con il colore della tua chiesa. Usa il colore primario della modalità chiara in **Mobile > Tema dell'app**, oppure il colore primario del tuo sito web se non è impostato alcun colore per l'app, così B1 Admin corrisponde all'app dei membri.
+   - **Classico** -- L'aspetto precedente di B1 Admin, con un banner colorato nella pagina, schede con ombra e uno sfondo grigio. Se usavi B1 Admin su questo dispositivo prima dell'arrivo del nuovo aspetto e non hai mai scelto un tema, rimani sul Classico.
+   - **Personalizzato** -- L'aspetto Predefinito costruito con il colore principale della tua chiesa. Usa il colore principale della modalità chiara da **Mobile > Tema dell'app**, oppure il colore principale del tuo sito web se non è impostato alcun colore per l'app, così B1 Admin corrisponde alla tua app per i membri.
 3. Sotto i temi, scegli **Modalità chiara** o **Modalità scura**.
-4. L'interfaccia si aggiorna immediatamente per riflettere la tua scelta.
+4. L'interfaccia si aggiorna subito in base alla tua scelta.
 
-Le tue scelte vengono ricordate su quel dispositivo e browser.
+Le tue scelte vengono ricordate su questo dispositivo e in questo browser.
 
-## Eliminazione dell'account {#account-deletion}
+## Eliminazione dell'account
 
-Nella sezione **Eliminazione dell'account** della pagina Profilo troverai l'opzione per eliminare il tuo account.
+Nella sezione **Eliminazione account** della pagina Profilo trovi l'opzione per eliminare il tuo account.
 
-- Se la tua chiesa **non** ha configurato un gruppo di approvazione della rubrica, facendo clic su **Elimina il mio account** il tuo account e i dati associati vengono rimossi immediatamente, e l'operazione non può essere annullata.
-- Se la tua chiesa **ha** configurato un gruppo di approvazione della rubrica, la richiesta viene inviata a quel gruppo per la revisione. Il pulsante è disabilitato mentre la richiesta è in attesa, e riceverai una notifica quando la chiesa approverà o rifiuterà la richiesta. Consulta [Revisione delle richieste di eliminazione dell'account](./account-deletion.md) per sapere cosa succede dopo.
+- Se la tua chiesa **non** ha configurato un Gruppo di approvazione dell'elenco, cliccando su **Elimina il mio account** l'account e i dati associati vengono rimossi immediatamente, e l'operazione non può essere annullata.
+- Se la tua chiesa **ha** configurato un Gruppo di approvazione dell'elenco, la tua richiesta viene inviata a quel gruppo per la revisione. Il pulsante è disabilitato finché la richiesta è in sospeso, e riceverai una notifica quando la chiesa la approverà o la rifiuterà. Consulta [Revisione delle richieste di eliminazione account](./account-deletion.md) per sapere cosa succede dopo.
 
 :::warning
-L'eliminazione dell'account, che sia immediata o approvata dalla tua chiesa, è permanente e non può essere annullata.
+L'eliminazione dell'account — sia immediata sia approvata dalla tua chiesa — è permanente e non può essere annullata.
 :::
 
 :::info
-Se sei un **Domain Admin**, assicurati di trasferire le responsabilità amministrative a un altro utente prima di eliminare il tuo account. Consulta [Ruoli e permessi](../settings/roles-permissions.md) per i dettagli sulla gestione dei ruoli amministrativi.
+Se sei un **Amministratore di dominio**, assicurati di trasferire le responsabilità amministrative a un altro utente prima di eliminare il tuo account. Consulta [Ruoli e permessi](../settings/roles-permissions.md) per i dettagli sulla gestione dei ruoli di amministratore.
 :::
 
 :::info
-La modifica del profilo è disabilitata in modalità demo. Se stai usando un account demo, non potrai apportare modifiche alle impostazioni del profilo.
+La modifica del profilo è disabilitata in modalità demo. Se stai usando un account demo, non potrai apportare modifiche alle impostazioni del tuo profilo.
 :::
 
-## Passaggi successivi {#next-steps}
+## Passi successivi
 
 - [Gestire i dispositivi](./devices.md) -- Visualizza e gestisci i dispositivi ChurchAppsPlayer collegati

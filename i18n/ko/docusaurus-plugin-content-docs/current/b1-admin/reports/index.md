@@ -6,40 +6,28 @@ title: "보고서"
 
 <div class="article-intro">
 
-보고서 페이지는 교회 데이터를 이해하는 데 도움이 되는 사전 구성된 보고서에 빠르게 액세스할 수 있습니다. 이 보고서를 사용하여 참석 추세를 추적하고, 기부 활동을 모니터링하며, 생일 축하를 통해 회중과의 연결을 유지합니다.
+B1 Admin은 교인, 출석, 헌금에 관한 데이터를 가져올 수 있는 여러 방법을 제공합니다. 보고는 하나의 보고서 페이지가 아니라, 앱의 관련 섹션에 내장되어 있습니다.
 
 </div>
 
-## 사용 가능한 보고서
+## 교육 영상
 
-보고서는 B1 Admin 탐색 메뉴에 항목이 없으므로, 원하는 보고서의 URL로 직접 이동하십시오 (북마크하는 것이 돌아오는 가장 쉬운 방법입니다). 각 보고서는 필터를 바로 표시합니다.
+<YouTube id="q3k8ty_V610" title="Running Reports in B1" />
 
-- **[생일 보고서](./birthday-report)** (`admin.b1.church/reports/birthdays`) - 회중 회원의 예정된 생일을 봅니다.
-- **[기념일 보고서](./anniversary-report)** (`admin.b1.church/reports/anniversaries`) - 회중 회원의 예정된 결혼 기념일을 봅니다.
-- **[참석 추세](./attendance-reports)** (`admin.b1.church/reports/attendanceTrend`) - 서비스 전반의 참석 패턴이 시간에 따라 어떻게 변하는지 봅니다.
-- **[그룹 참석](./attendance-reports)** (`admin.b1.church/reports/groupAttendance`) - 선택한 날짜 범위에 대한 그룹별 참석 합계를 봅니다.
-- **[일일 그룹 참석](./attendance-reports)** (`admin.b1.church/reports/dailyGroupAttendance`) - 그룹 참석 데이터를 날짜별로 분석합니다.
-- **[기부금 요약](./donation-summary)** (`admin.b1.church/reports/donationSummary`) - 재무 계획을 위한 기부금 합계 및 추세를 검토합니다.
-- **[감사 로그](./audit-log)** - 교회 관리 시스템 전반의 모든 변경 사항 및 작업을 추적합니다 (설정 > 감사 로그에 있음).
+## 보고서 찾는 곳
 
-## 보고서 사용
+### People
+- **[생일 및 기념일 목록](./birthday-report)** -- **People → Advanced Search**에서 Birth Month 또는 Anniversary Month로 필터링하면 다가오는 생일이나 기념일 목록을 얻을 수 있습니다.
 
-1. **admin.b1.church/reports/birthdays** 같은 보고서의 URL로 직접 이동합니다.
-2. 보고서 상단의 **필터**를 사용하여 날짜 범위, 그룹, 서비스 또는 기타 기준으로 데이터를 좁힙니다.
-3. 보고서에 표시된 결과를 검토합니다.
+### Attendance
+- **[출석 보고서](./attendance-reports)** -- 출석 추세와 그룹 출석 데이터는 **Attendance** 섹션에서 찾을 수 있습니다.
 
-:::tip
-보고서를 정기적으로 실행하여 참석 추세, 예정된 생일 및 기부 패턴을 최신 상태로 유지합니다. 이 데이터는 사역 및 봉사활동을 더 효과적으로 계획하는 데 도움이 됩니다.
-:::
+### Donations
+- **[헌금 요약](./donation-summary)** -- 헌금 총액과 펀드별 내역은 **Donations** 섹션에서 찾을 수 있습니다.
+
+### Settings
+- **[감사 로그](./audit-log)** -- 교회 관리 시스템 전반의 모든 변경 사항과 작업을 추적합니다(**Settings → Audit Log**에서 확인할 수 있습니다).
 
 :::info
-보고서 데이터는 일관된 데이터 입력에 따라 다릅니다. 팀이 [참석을 추적](../attendance/tracking-attendance.md)하고, [기부금을 기록](../donations/recording-donations.md)하며, [사람 기록](../people/adding-people.md)을 최신 상태로 유지하는지 확인합니다. 그래야 가장 정확한 결과를 얻을 수 있습니다.
+보고서 데이터는 일관된 데이터 입력에 달려 있습니다. 가장 정확한 결과를 얻으려면 팀이 [출석을 추적](../attendance/tracking-attendance.md)하고, [헌금을 기록](../donations/recording-donations.md)하며, [사람 기록](../people/adding-people.md)을 최신 상태로 유지하는지 확인하세요.
 :::
-
-## 자세히 알아보기
-
-- [생일 보고서](./birthday-report) - 생일 데이터 찾기 및 사용.
-- [기념일 보고서](./anniversary-report) - 기념일 데이터 찾기 및 사용.
-- [참석 보고서](./attendance-reports) - 세 가지 참석 보고서 이해.
-- [기부금 요약](./donation-summary) - 기부 데이터 및 재무 요약 검토.
-- [감사 로그](./audit-log) - 시스템 활동 및 변경 사항 추적.

@@ -1,59 +1,59 @@
 ---
-title: "Demografische Daten"
+title: "Demografie"
 ---
 
-# Demografische Daten
+# Demografie
 
 <div class="article-intro">
 
-Das Dashboard **Demographics** bietet Ihnen einen visuellen Überblick über Ihre Gemeinde — wer sie sind, wie viele es gibt und wie Ihre Mitgliedschaft in verschiedenen Altersgruppen, Geschlechtern, Familienständen und Campussen verteilt ist. Jedes Diagramm ist interaktiv: Klicken Sie auf ein beliebiges Segment, um direkt zu einer gefilterten Personensuche zu springen, die genau diese Personen zeigt.
+Das Dashboard **Demografie** bietet Ihnen einen anschaulichen Überblick über Ihre Gemeinde -- wer sie ist, wie viele Menschen dazugehören und wie sich Ihre Mitgliedschaft auf Altersgruppen, Geschlechter, Familienstände und Standorte verteilt. Jedes Diagramm ist interaktiv: Klicken Sie auf einen beliebigen Abschnitt, um direkt zu einer gefilterten Personensuche zu gelangen, die genau diese Personen anzeigt.
 
 </div>
 
 <div class="prereqs">
-<h4>Vor dem Start</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Personen müssen in Ihrem Verzeichnis vorhanden sein. Siehe [Adding People](./adding-people.md) oder [Importing Data](./importing-data.md) um zu beginnen.
-- Um das Campus-Diagramm zu sehen, müssen Sie zuerst Campuses in [Settings → Campuses](../settings/campuses.md) konfigurieren.
+- Personen müssen in Ihrem Verzeichnis vorhanden sein. Siehe [Personen hinzufügen](./adding-people.md) oder [Daten importieren](./importing-data.md), um loszulegen.
+- Um das Diagramm **Standort** zu sehen, müssen Sie zuerst Standorte unter [Einstellungen → Standorte](../settings/campuses.md) konfiguriert haben.
 
 </div>
 
-## Öffnen von Demografische Daten
+## Demografie öffnen
 
-Klicken Sie auf der Seite **People** in der Seitenkopfzeile auf **Demographics**. Die Seite zeigt Ihre Gesamtpersonenzahl oben, gefolgt von den unten beschriebenen Diagrammen.
+Klicken Sie auf der Seite **Personen** in der Kopfzeile auf **Demografie**. Die Seite zeigt oben die Gesamtzahl Ihrer Personen, gefolgt von den unten beschriebenen Diagrammen.
 
 ## Diagramme
 
 ### Altersverteilung
 
-Ein Gruppenstabdiagramm, das zeigt, wie viele Personen in jede Altersgruppe fallen (z. B. 0–9, 10–17, 18–24 und so weiter bis 65+). Jeder Balken ist in drei Serien unterteilt — **Female**, **Male** und **Unassigned** — damit Sie die Geschlechterverteilung in jeder Altersgruppe auf einen Blick sehen können.
+Ein gruppiertes Balkendiagramm, das zeigt, wie viele Personen in jede Altersgruppe fallen (zum Beispiel 0–9, 10–17, 18–24 und so weiter bis 65+). Jeder Balken ist in drei Reihen aufgeteilt -- **Weiblich**, **Männlich** und **Nicht angegeben** -- sodass Sie die Geschlechterverteilung innerhalb jeder Altersgruppe auf einen Blick erkennen.
 
-### Mitgliedschaftsstatus
+### Mitgliedsstatus
 
-Ein Donut-Diagramm, das Ihre Gemeinde nach Mitgliedschaftsstatus aufteilt (z. B. Member, Regular Attender, Visitor usw.).
+Ein Ringdiagramm, das Ihre Gemeinde nach Mitgliedsstatus aufschlüsselt (zum Beispiel Mitglied, Regelmäßiger Teilnehmer, Besucher und so weiter).
 
 ### Geschlecht
 
-Ein Donut-Diagramm, das den Anteil weiblicher, männlicher und nicht zugeordneter Datensätze in Ihrem Verzeichnis zeigt.
+Ein Ringdiagramm, das den Anteil der weiblichen, männlichen und nicht angegebenen Datensätze in Ihrem Verzeichnis zeigt.
 
 ### Familienstand
 
-Ein Donut-Diagramm, das die Aufteilung nach Familienstandswerten zeigt (z. B. Verheiratet, Single, Verwitwet).
+Ein Ringdiagramm, das die Verteilung auf die Werte des Familienstands zeigt (zum Beispiel verheiratet, ledig, verwitwet).
 
-### Campus
+### Standort
 
-Ein Donut-Diagramm, das zeigt, wie Personen auf den Campussen Ihrer Kirche verteilt sind. Dieses Diagramm wird nur angezeigt, wenn Sie Campuses konfiguriert haben und mindestens eine Person einem Campus zugewiesen ist. Personen ohne zugewiesenen Campus werden als **Unassigned** angezeigt.
+Ein Ringdiagramm, das zeigt, wie Personen auf die Standorte Ihrer Kirche verteilt sind. Dieses Diagramm erscheint nur, wenn Sie Standorte konfiguriert haben und mindestens einer Person einen Standort zugewiesen ist. Personen ohne zugewiesenen Standort erscheinen als **Nicht zugeordnet**.
 
-## Einzug in die Daten
+## In die Daten eintauchen
 
-Klicken Sie auf einen beliebigen Sektor eines Donut-Diagramms oder ein beliebiges Balkensegment im Altersdiagramm, um zur Seite **People** zu navigieren, die gefiltert ist, um genau diese Personen anzuzeigen. Verwenden Sie dies, um schnell eine Kontaktliste zu erstellen, eine Massenaktion auszuführen oder ein Segment zu exportieren — klicken Sie beispielsweise auf die **Visitor**-Scheibe in Membership Status, um alle Besucher anzuzeigen und senden Sie sie dann an einen Workflow.
+Klicken Sie auf einen beliebigen Abschnitt eines Ringdiagramms oder auf einen Balkenabschnitt des Altersdiagramms, um zur Seite **Personen** zu gelangen, die bereits genau diese Personen anzeigt. Der Filter bleibt beim Laden der Seite aktiv, und die Anzahl über der Liste zeigt, wie viele Haushalte und Personen zutreffen. Nutzen Sie dies, um schnell eine Kontaktliste zu erstellen, eine Sammelaktion auszuführen oder ein Segment zu exportieren -- klicken Sie zum Beispiel auf den Abschnitt **Besucher** im Mitgliedsstatus, um alle Besucher zu sehen und sie anschließend einem Workflow zuzuweisen.
 
 :::tip
-Nach dem Einzug in ein gefiltertes Ergebnis verwenden Sie **Save as List** in der People-Suche, um diesen Filter für die zukünftige Verwendung zu speichern. Siehe [Saved Lists](./lists.md).
+Nachdem Sie ein gefiltertes Ergebnis geöffnet haben, verwenden Sie **Als Liste speichern** in der Personensuche, um diesen Filter für die Zukunft zu sichern. Siehe [Gespeicherte Listen](./lists.md).
 :::
 
 ## Verwandte Artikel
 
-- [Searching People](./searching-people.md) — die People-Seite, auf der Sie landen, wenn Sie in ein Diagramm einzah
-- [Saved Lists](./lists.md) — speichern Sie ein demografisches Segment als wiederverwendbare Liste
-- [Campuses](../settings/campuses.md) — konfigurieren Sie Campuses, damit das Campus-Diagramm angezeigt wird
+- [Personen suchen](./searching-people.md) -- die Seite Personen, auf der Sie landen, wenn Sie ein Diagramm anklicken
+- [Gespeicherte Listen](./lists.md) -- ein demografisches Segment als wiederverwendbare Liste speichern
+- [Standorte](../settings/campuses.md) -- Standorte einrichten, damit das Diagramm Standort erscheint

@@ -1,29 +1,33 @@
 ---
-title: "Reports"
+title: "रिपोर्ट"
 ---
 
-# Reports
+# रिपोर्ट
 
 <div class="article-intro">
 
-B1 Admin gives you several ways to pull data about your congregation, attendance, and giving. Reporting is built into the relevant sections of the app rather than a single Reports page.
+B1 Admin आपके सदस्यों, उपस्थिति और giving के बारे में डेटा निकालने के कई तरीके देता है। रिपोर्टिंग एक single Reports पेज के बजाय ऐप के संबंधित सेक्शनों में बनी हुई है।
 
 </div>
 
-## Where to Find Reports
+## प्रशिक्षण वीडियो
+
+<YouTube id="q3k8ty_V610" title="Running Reports in B1" />
+
+## रिपोर्ट कहाँ मिलेंगी
 
 ### People
-- **[Birthday & Anniversary Lists](./birthday-report)** -- Filter by Birth Month or Anniversary Month in **People → Advanced Search** to get a list of upcoming birthdays or anniversaries.
+- **[जन्मदिन और वर्षगाँठ सूचियाँ](./birthday-report)** -- आगामी जन्मदिन या वर्षगाँठों की सूची पाने के लिए **People → Advanced Search** में Birth Month या Anniversary Month से फ़िल्टर करें।
 
 ### Attendance
-- **[Attendance Reports](./attendance-reports)** -- Attendance trends and group attendance data are found in the **Attendance** section.
+- **[उपस्थिति रिपोर्ट](./attendance-reports)** -- attendance रुझान और ग्रुप attendance डेटा **Attendance** सेक्शन में मिलते हैं।
 
 ### Donations
-- **[Donation Summary](./donation-summary)** -- Giving totals and fund breakdowns are found in the **Donations** section.
+- **[Donation Summary](./donation-summary)** -- giving के कुल योग और fund विवरण **Donations** सेक्शन में मिलते हैं।
 
 ### Settings
-- **[Audit Log](./audit-log)** -- Track all changes and actions across your church management system (found under **Settings → Audit Log**).
+- **[Audit Log](./audit-log)** -- आपके चर्च प्रबंधन सिस्टम में हर बदलाव और क्रिया को ट्रैक करें (**Settings → Audit Log** के अंतर्गत मिलता है)।
 
 :::info
-Report data depends on consistent data entry. Make sure your team is [tracking attendance](../attendance/tracking-attendance.md), [recording donations](../donations/recording-donations.md), and keeping [people records](../people/adding-people.md) up to date for the most accurate results.
+रिपोर्ट का डेटा लगातार डेटा प्रविष्टि पर निर्भर करता है। सबसे सटीक परिणामों के लिए सुनिश्चित करें कि आपकी टीम [attendance ट्रैक](../attendance/tracking-attendance.md) कर रही है, [donations दर्ज](../donations/recording-donations.md) कर रही है, और [people रिकॉर्ड](../people/adding-people.md) अद्यतन रख रही है।
 :::

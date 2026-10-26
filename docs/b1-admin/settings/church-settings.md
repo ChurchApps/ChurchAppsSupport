@@ -98,6 +98,7 @@ Connect a texting provider to send SMS messages to a person or a whole group fro
    - **Clearstream** -- enter an **API Key**. Create one in your Clearstream Account Settings under API Keys.
    - **Text In Church** -- enter an **API Key**. Ask Text In Church Support for developer API access first, then create a key in your Account Settings > Developer API section.
    - **Nalo Solutions** (Ghana) -- enter the auth key from your Nalo Solutions account as the **API Key**, and a **Sender ID** (up to 11 characters) that Nalo has approved for you.
+   - **Twilio** -- use your church's own Twilio account; Twilio bills you directly. Copy the **Account SID** and **Auth Token** from the [Twilio Console](https://console.twilio.com), and enter a **From Number** -- a Twilio phone number registered for A2P 10DLC, in a format like `+15551234567`. After saving, paste the inbound webhook URL (see below) into the number's **A message comes in** webhook in Twilio so STOP replies are recorded in B1 too.
 3. Click **Save**.
 
 To stop texting, set **Provider** to **None** and save. This removes the saved provider.

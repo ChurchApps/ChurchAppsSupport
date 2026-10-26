@@ -40,6 +40,7 @@ The page is one sheet of sections. Each shows a short preview, and a link in the
 - **This week's lesson** -- If your group is associated with a Lessons.church plan type and this week's lesson has parent take-home content, it appears under **Next event** (members only).
 - **Meetings** -- The group's recent meetings, newest first. Each one shows the date, how many people were there (for example, "8 of 12 there") or **Upcoming** for a future date, and the leader's note for that meeting, with any bold text, lists, and links kept. Tap **All meetings** to see them all. A meeting only appears once it has a note or attendance. See [Meeting Notes and Attendance](#meeting-notes-and-attendance) below.
 - **Leader notes** -- Visible to the group's leaders only. Shows the two newest leader notes; tap **Open notes** to read them all and post a new one. See [Leader Notes](#leader-notes) below.
+- **Forms** -- Forms your church has linked to the group, up to three at a time. Members see the forms that are open, each with a **Fill out** button. Leaders also see closed forms (marked **Closed**), how many answers each has, and the registration forms of the group's events (marked **Event registration**). Tap **All forms** to see them all. Only shown when the group has linked forms. See [Linked Forms](#linked-forms) below.
 - **Messages** -- The latest messages from the group chat. Tap **Open chat** to read and post. Only shown to members, and only if your church has turned on group chat for this group. See [Group Conversations](./conversations.md) for more details.
 - **Members** -- A preview of the group's members (leaders first) and a count of members and leaders. Tap **All members** for the full list, which you can search with **Search Members**. Tap a member's name to visit their profile in the [member directory](../community/member-directory.md).
 - **Resources** -- The first few shared files and links posted for the group. Tap **All resources** to see them all; you can download uploaded files or open linked resources.
@@ -59,6 +60,7 @@ If you are a leader of the group, you have additional editing capabilities:
 - **Manage resources** -- Upload files (up to 100 MB of storage), add links, or delete existing resources.
 - **Write meeting notes and track attendance** -- Use **Add note** and **Take attendance** in the **Meetings** section. See [Meeting Notes and Attendance](#meeting-notes-and-attendance).
 - **Keep private leader notes** -- Use the **Leader notes** section. See [Leader Notes](#leader-notes).
+- **Read and print form answers** -- Use the **Forms** section. See [Linked Forms](#linked-forms).
 
 To change the group's name, description, or member list, use B1 Admin. See [Group Members](../../b1-admin/groups/group-members.md).
 
@@ -83,6 +85,19 @@ If the date already has a note, it opens so you can edit it. The **Take attendan
 2. Type your note in the box at the bottom and send it.
 
 Until someone posts, the feed shows "No notes yet" with the reminder "Only this group's leaders can see these notes." Leaders see the same notes on the group's page in B1 Admin -- see [Group Members](../../b1-admin/groups/group-members.md#leader-notes).
+
+### Linked Forms {#linked-forms}
+
+Church staff can link a form to your group in B1 Admin -- for example, a prayer request card or a trip permission slip (see [Linking a Form to a Group](../../b1-admin/forms/creating-forms.md#linking-a-form-to-a-group)). Linked forms appear in the group's **Forms** section. Members tap **Fill out** to open a form and submit it.
+
+Leaders can also read and print the answers:
+
+1. In the **Forms** section, tap a form (or tap **All forms** and pick one). Registrations for the group's events that ask registration questions are listed here too.
+2. The list shows each person who answered and the date they submitted. Answers from people who weren't signed in show as **Anonymous**.
+3. Tap a person to see their answers, with each question shown above its answer.
+4. Tap **Print** to print that person's answers, or tap **Print all** above the list to print every answer for the form.
+
+The printout has your church's logo (the **Light Background Logo** set in B1 Admin, if one was uploaded) and name centered at the top, then the form name, then each person's answers headed with their name and submission date. Leaders can read answers but can't change them or edit the form. Tap **All forms** to go back to the list.
 
 ## Joining a Group
 

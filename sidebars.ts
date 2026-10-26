@@ -28,6 +28,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/people/ai-search',
             'b1-admin/people/lists',
             'b1-admin/people/demographics',
+            'b1-admin/people/notes',
             'b1-admin/people/bulk-editing',
             'b1-admin/people/importing-data',
             'b1-admin/people/exporting-data',

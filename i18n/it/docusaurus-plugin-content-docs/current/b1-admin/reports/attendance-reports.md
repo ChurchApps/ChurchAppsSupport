@@ -1,76 +1,75 @@
 ---
-title: "Rapporti di Presenza"
+title: "Report sulle presenze"
 ---
 
-# Rapporti di Presenza
+# Report sulle presenze
 
 <div class="article-intro">
 
-B1 Admin fornisce tre rapporti di presenza per aiutarti a capire come le persone si stanno impegnando con i tuoi servizi e gruppi. Ogni rapporto offre una prospettiva diversa sui tuoi dati di presenza, dalle tendenze ad alto livello ai dettagli giornalieri.
+B1 Admin offre tre report sulle presenze per aiutarti a capire come le persone partecipano ai tuoi servizi e ai tuoi gruppi. Ogni report offre una prospettiva diversa sui dati di presenza, dalle tendenze generali alle suddivisioni giornaliere.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Assicurati che la presenza sia [tracciata in modo coerente](../attendance/tracking-attendance.md) per i tuoi servizi e gruppi
-- Assicurati che i tuoi [gruppi](../groups/creating-groups.md) e servizi siano configurati in B1 Admin
-- Hai bisogno delle appropriate [autorizzazioni](../settings/roles-permissions.md) per accedere ai rapporti
+- Assicurati che le presenze siano [registrate in modo costante](../attendance/tracking-attendance.md) per i tuoi servizi e i tuoi gruppi
+- Verifica che i tuoi [gruppi](../groups/creating-groups.md) e i servizi siano configurati in B1 Admin
+- Ti servono i [permessi](../settings/roles-permissions.md) appropriati per accedere ai report
 
 </div>
 
-## Trend di Presenza
+## Tendenza delle presenze
 
-Il rapporto Attendance Trend mostra come la presenza cambia nel tempo per i tuoi servizi.
+Il report Tendenza delle presenze mostra come cambiano nel tempo le presenze ai tuoi servizi.
 
-1. Vai direttamente a **admin.b1.church/reports/attendanceTrend** nel tuo browser (i rapporti non hanno una voce nel menu di navigazione — aggiungere l'indirizzo ai segnalibri è il modo più semplice per tornare indietro). Lo stesso rapporto è anche nella pagina Attendance: fai clic su **All years**, quindi scegli la scheda **Attendance Trend**.
-2. Opzionalmente seleziona un **Campus**, **Service**, **Service Time**, o **Group** per filtrare i risultati.
-3. Imposta la **Start Date** e la **End Date**. Per impostazione predefinita il rapporto copre l'anno scorso, da un anno fa ad oggi, e la data di fine è inclusa completamente. Fai clic su **Run Report**.
-4. Il rapporto visualizza un grafico a barre e una tabella delle visite totali per settimana. Ogni settimana è etichettata con la data della domenica di quella settimana, e la colonna **Session Dates** della tabella elenca le date effettive in quella settimana che avevano presenza (ad esempio, "9/27, 9/30").
+1. Vai direttamente all'indirizzo **admin.b1.church/reports/attendanceTrend** nel browser (i report non hanno una voce nel menu di navigazione — salvare l'indirizzo nei preferiti è il modo più semplice per tornarci). Lo stesso report è disponibile anche nella pagina Presenze: clicca su **Tutti gli anni**, poi scegli la scheda **Tendenza delle presenze**.
+2. Facoltativamente, seleziona un **Campus**, un **Servizio**, un **Orario del servizio** o un **Gruppo** per filtrare i risultati.
+3. Imposta la **Data di inizio** e la **Data di fine**. Per impostazione predefinita il report copre l'ultimo anno, da un anno fa fino a oggi, e la data di fine è inclusa per intero. Clicca su **Esegui report**.
+4. Il report mostra un grafico a barre e una tabella con il totale delle visite per settimana. Ogni settimana è etichettata con la data della domenica di quella settimana, e la colonna **Date delle sessioni** della tabella elenca le date effettive di quella settimana in cui c'erano presenze (ad esempio "27/9, 30/9").
 
-Questo rapporto è utile per individuare modelli come cali stagionali, tendenze di crescita, o l'impatto di eventi speciali.
+Questo report è utile per individuare schemi come cali stagionali, trend di crescita o l'impatto di eventi speciali.
 
-## Presenza nei Gruppi {#group-attendance}
+## Presenze per gruppo
 
-Il rapporto Group Attendance mostra chi ha partecipato a ogni sessione di gruppo in un intervallo di date.
+Il report Presenze per gruppo mostra chi ha partecipato a ciascuna sessione di gruppo in un intervallo di date.
 
-1. Vai direttamente a **admin.b1.church/reports/groupAttendance** nel tuo browser, oppure nella pagina Attendance fai clic su **All years** e scegli la scheda **Group Attendance**.
-2. Opzionalmente seleziona un **Campus** e **Service**.
-3. Imposta la **Start Date** e la **End Date**. Per impostazione predefinita il rapporto copre l'ultima domenica ad oggi, e la data di fine è inclusa completamente.
-4. Fai clic su **Run Report**.
+1. Vai direttamente all'indirizzo **admin.b1.church/reports/groupAttendance** nel browser, oppure nella pagina Presenze clicca su **Tutti gli anni** e scegli la scheda **Presenze per gruppo**.
+2. Facoltativamente, seleziona un **Campus** e un **Servizio**.
+3. Imposta la **Data di inizio** e la **Data di fine**. Per impostazione predefinita il report copre dall'ultima domenica fino a oggi, e la data di fine è inclusa per intero.
+4. Clicca su **Esegui report**.
 
-I risultati sono raggruppati per data di sessione, quindi per orario di servizio, quindi per gruppo, con le persone che hanno partecipato elencate sotto ogni gruppo. Gli orari di servizio, i gruppi e i nomi sono ordinati alfabeticamente. Accanto al nome di ogni persona, la colonna **Checked In** mostra l'ora in cui la loro presenza è stata registrata (vuota quando non è presente un'ora) e la colonna **Membership Status** mostra il loro stato, come Membro o Visitatore.
+I risultati sono raggruppati per data della sessione, poi per orario del servizio, poi per gruppo, con sotto ciascun gruppo le persone che hanno partecipato. Orari del servizio, gruppi e nomi sono ordinati in ordine alfabetico. Accanto al nome di ogni persona, la colonna **Registrato alle** mostra l'orario in cui è stata registrata la presenza (vuoto quando non c'è un orario disponibile) e la colonna **Stato di appartenenza** mostra il suo stato, come Membro o Visitatore.
 
-Per scaricare un foglio di calcolo, fai clic su **Download Options** e scegli **Summary**. Il CSV ha:
+Per scaricare un foglio di calcolo, clicca su **Opzioni di download** e scegli **Riepilogo**. Il file CSV contiene:
 
-- Una riga per ogni membro di ogni gruppo che si è riunito nell'intervallo di date, ordinati per gruppo e quindi per nome.
+- Una riga per ogni membro di ciascun gruppo che si è riunito nell'intervallo di date, ordinate per gruppo e poi per nome.
 - Il nome della persona e il nome del gruppo nelle prime colonne.
-- Una colonna per ogni sessione datata, denominata con il servizio, l'orario di servizio e la data (ad esempio, "Sunday - 9:00 AM (2026-09-27)"), con ogni persona contrassegnata come **present** o **absent**.
+- Una colonna per ogni sessione con data, denominata con il servizio, l'orario del servizio e la data (ad esempio "Domenica - 9:00 (2026-09-27)"), con ogni persona contrassegnata come **presente** o **assente**.
 
-Usa questo rapporto per confrontare la presenza tra i gruppi e identificare quali gruppi stanno crescendo o hanno bisogno di attenzione.
+Usa questo report per confrontare le presenze tra i gruppi e individuare quali gruppi stanno crescendo o richiedono attenzione.
 
-## Presenza Giornaliera nei Gruppi
+## Presenze giornaliere per gruppo
 
-Il rapporto Daily Group Attendance fornisce una ripartizione giorno per giorno dei dati di presenza per i tuoi gruppi.
+Il report Presenze giornaliere per gruppo (intitolato **Presenze per gruppo per giorno**) fornisce un conteggio giorno per giorno di quante persone hanno partecipato a un gruppo.
 
-1. Vai direttamente a **admin.b1.church/reports/dailyGroupAttendance** nel tuo browser.
-2. Imposta l'**intervallo di date** per il rapporto.
-3. Seleziona il o i **gruppi** che vuoi rivedere.
-4. Il rapporto mostra i numeri di presenza per ogni singolo giorno all'interno dell'intervallo.
+1. Vai direttamente all'indirizzo **admin.b1.church/reports/dailyGroupAttendance** nel browser.
+2. Usa i menu a tendina **Campus**, **Servizio** e **Orario del servizio** per restringere l'elenco, poi scegli il **Gruppo** che vuoi esaminare.
+3. Esegui il report. Elenca ogni giorno in cui il gruppo si è riunito, dal più vecchio al più recente, con la **Data** e il numero di **Partecipanti** registrati quel giorno.
 
-Questo rapporto ti dà dettagli granulari, che sono utili per capire la variazione da settimana a settimana o per identificare giorni specifici con presenza insolitamente alta o bassa.
+Questo report offre un dettaglio granulare, utile per capire le variazioni di settimana in settimana o per individuare giorni specifici con presenze insolitamente alte o basse.
 
 :::tip
-Usa il rapporto Attendance Trend per una panoramica ad alto livello e il rapporto Daily Group Attendance quando hai bisogno di approfondire date specifiche.
+Usa il report Tendenza delle presenze per una panoramica generale e il report Presenze giornaliere per gruppo quando devi approfondire date specifiche.
 :::
 
-## Usi Pratici
+## Usi pratici
 
-- **Pianificazione** -- Usa le tendenze di presenza per pianificare i posti a sedere, il personale e le risorse per i servizi imminenti.
-- **Sensibilizzazione** -- Identifica i modelli di partecipazione in declino in anticipo in modo da poter fare un follow-up con i membri.
-- **Rapporti della giunta** -- Includi i dati di presenza nei tuoi rapporti di leadership regolari per mostrare la salute del ministero.
-- **Valutazione dell'evento** -- Confronta la presenza prima e dopo gli eventi speciali per misurare il loro impatto.
+- **Pianificazione** -- Usa le tendenze delle presenze per pianificare posti a sedere, personale e risorse per i prossimi servizi.
+- **Attività di sensibilizzazione** -- Individua tempestivamente i cali di presenza per poter contattare i membri.
+- **Relazioni per il consiglio** -- Includi i dati sulle presenze nelle relazioni periodiche alla dirigenza per mostrare lo stato del ministero.
+- **Valutazione degli eventi** -- Confronta le presenze prima e dopo eventi speciali per misurarne l'impatto.
 
 :::warning
-I dati di presenza sono registrati attraverso i tuoi processi di check-in per servizi e gruppi. Se la presenza non viene tracciata in modo coerente, i tuoi rapporti non rifletteranno accuratamente la partecipazione effettiva. Vedi [Tracciamento della Presenza](../attendance/tracking-attendance.md) per le istruzioni di configurazione.
+I dati sulle presenze vengono registrati tramite i processi di check-in dei tuoi gruppi e servizi. Se le presenze non vengono registrate in modo costante, i report non rifletteranno con precisione la partecipazione reale. Consulta [Monitorare le presenze](../attendance/tracking-attendance.md) per le istruzioni di configurazione.
 :::

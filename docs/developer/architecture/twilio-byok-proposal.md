@@ -6,7 +6,7 @@ description: "Proposed church-owned Twilio integration, consent model, implement
 # Twilio BYOK integration proposal
 
 :::caution Proposal — not an available integration
-This is a design for maintainer review, based on public source and Twilio documentation reviewed on October 22, 2026. It does not enable Twilio in B1 or describe a tested production integration. The companion [church onboarding draft](./twilio-byok-onboarding-draft) contains proposed setup guidance and church-specific examples.
+This is a design for maintainer review, based on public source and Twilio documentation reviewed on October 22, 2026. Since then, a basic Twilio provider has shipped (`@churchapps/texting` 0.6.0 and B1 Admin **Settings > Texting**): the church enters its Account SID, Auth Token, and a From number (the provider also accepts a Messaging Service SID starting with `MG`, but the `fromNumber` column is still `varchar(20)`, too short for a 34-character SID), texts go out one request per recipient through Twilio's Messages API, and STOP replies reach B1 through the existing inbound webhook. See [Church Settings: Texting](../../b1-admin/settings/church-settings.md#texting). The consent model, Advanced Opt-Out handling, delivery status, and setup-readiness checks below are still proposals, not shipped behavior. The companion [church onboarding draft](./twilio-byok-onboarding-draft) contains proposed setup guidance and church-specific examples.
 :::
 
 ## Recommended path

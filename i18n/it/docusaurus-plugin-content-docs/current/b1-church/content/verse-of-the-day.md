@@ -1,52 +1,66 @@
 ---
-title: "Versetto del Giorno"
+title: "Versetto del giorno"
 ---
 
-# Versetto del Giorno
+# Versetto del giorno
 
 <div class="article-intro">
 
-La pagina Versetto del Giorno visualizza un versetto della Bibbia giornaliero come un'immagine bellamente formattata. È un modo semplice per iniziare la giornata con la Scrittura o trovare incoraggiamento durante la settimana.
+La pagina Versetto del giorno mostra un versetto biblico giornaliero come immagine dal formato curato. È un modo semplice per iniziare la giornata con la Scrittura o trovare incoraggiamento durante la settimana.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Non è richiesto alcun accesso per visualizzare il Versetto del Giorno. La pagina è accessibile al pubblico.
-- La tua chiesa deve aver aggiunto una pagina Versetto del Giorno alla navigazione del loro sito.
+- Non è necessario effettuare l'accesso per visualizzare il Versetto del giorno. La pagina è accessibile a tutti.
+- La tua chiesa deve aver aggiunto una pagina Versetto del giorno alla navigazione del sito.
 
 </div>
 
-## Visualizzazione del Versetto
+## Visualizzare il versetto
 
-1. Accedi alla pagina **Versetto del Giorno** dalla navigazione del sito della tua chiesa.
-2. La pagina visualizza il versetto di oggi come un'immagine.
+1. Vai alla pagina **Versetto del giorno** dalla navigazione del sito della tua chiesa.
+2. La pagina mostra il versetto di oggi come immagine, con il testo del versetto, il suo riferimento e la data di oggi accanto o sotto di essa.
 3. Un nuovo versetto appare automaticamente ogni giorno.
 
-Non c'è niente che tu debba fare -- visita semplicemente la pagina e il versetto del giorno corrente sarà visualizzato.
+Non devi fare nulla: basta visitare la pagina e verrà mostrato il versetto del giorno corrente.
 
-## Visualizzazione Reattiva
+## Versetti precedenti
 
-L'immagine del versetto si adatta automaticamente al tuo schermo. A seconda del tuo dispositivo e dimensione della finestra, vedrai uno di tre formati:
+Sotto il versetto di oggi, la sezione **Questa settimana** mostra i versetti dei giorni precedenti:
 
-- **Widescreen (16:9)** -- Migliore per monitor desktop e laptop
-- **Quadrato (1:1)** -- Adatto per schermi di dimensioni tablet
-- **Ritratto (9:16)** -- Ottimizzato per telefoni tenuti verticalmente
+- Sul sito web della tua chiesa, i sei giorni precedenti appaiono come una fila di schede con immagini che scorre lentamente da sola (si ferma quando passi sopra con il mouse o la tocchi).
+- Nel portale dei membri (`/mobile`), i tre giorni precedenti sono elencati con il riferimento di ciascun versetto, la data e il testo.
 
-La pagina rileva le dimensioni del tuo schermo e seleziona il miglior formato, quindi il versetto appare sempre bene indipendentemente da come lo stai visualizzando. Se ridimensioni la finestra del tuo browser, l'immagine si aggiornerà per adattarsi alle nuove dimensioni.
+Fai clic o tocca un giorno qualsiasi per aprirlo con la sua immagine, il versetto completo e gli stessi pulsanti di condivisione e download del versetto di oggi.
 
-## Condivisione del Versetto
+Fai clic su **Versetti passati** per vedere i versetti di ogni giorno, dal 1° gennaio di quest'anno fino a ieri, raggruppati per mese con i più recenti per primi. Sul sito web l'elenco si apre sotto la fila **Questa settimana** (fai di nuovo clic su **Versetti passati** per nasconderlo); nel portale dei membri si apre in una schermata propria con un link per tornare indietro. Fai clic su una data qualsiasi per aprire il versetto di quel giorno.
 
-Nel portale dei membri (`/mobile`), la schermata Versetto del Giorno ha due pulsanti sotto il versetto:
+## Visualizzazione adattiva
 
-- **Condividi immagine** -- condivide l'immagine del versetto stesso, in modo da poterla pubblicare o inviarla in un messaggio. Sui dispositivi che non possono condividere file (come la maggior parte dei browser desktop), l'immagine viene scaricata invece.
-- **Condividi** -- condivide il testo del versetto, il riferimento e un collegamento alla pagina. Se il tuo dispositivo non ha un menu di condivisione, il testo e il collegamento vengono copiati negli appunti.
+L'immagine del versetto si adatta automaticamente allo schermo. A seconda del dispositivo e delle dimensioni della finestra, vedrai uno di tre formati:
+
+- **Widescreen (16:9)** -- Ideale per monitor desktop e laptop
+- **Quadrato (1:1)** -- Adatto agli schermi di dimensioni tablet
+- **Verticale (9:16)** -- Ottimizzato per i telefoni tenuti in verticale
+
+La pagina rileva le dimensioni dello schermo e seleziona il formato migliore, così il versetto appare sempre bene indipendentemente da come lo stai visualizzando. Se ridimensioni la finestra del browser, l'immagine si aggiorna per adattarsi alle nuove dimensioni. Sul sito web della tua chiesa, uno schermo di telefono alto mostra l'immagine quadrata invece di quella verticale, così il versetto non viene schiacciato in una striscia stretta.
+
+## Condividere il versetto
+
+Il versetto di oggi, e qualsiasi giorno precedente che apri, ha tre pulsanti:
+
+- **Condividi** -- condivide il testo del versetto, il riferimento e un link all'immagine del versetto. Se il tuo dispositivo non ha un menu di condivisione, il testo e il link vengono copiati negli appunti.
+- **Condividi immagine** -- condivide l'immagine del versetto stessa, così puoi pubblicarla o inviarla in un messaggio. Sui dispositivi che non possono condividere file (come la maggior parte dei browser desktop), l'immagine viene invece scaricata.
+- **Scarica** -- salva l'immagine del versetto sul tuo dispositivo.
+
+Sul sito web della tua chiesa questi pulsanti usano sempre l'immagine widescreen (16:9). Nel portale dei membri usano il formato adatto al tuo schermo.
 
 :::tip
-Fai l'abitudine di controllare il Versetto del Giorno ogni giorno, quindi esplora il passaggio ulteriormente nel [lettore della Bibbia](./bible.md).
+Fai l'abitudine quotidiana di consultare il Versetto del giorno, poi approfondisci il brano nel [lettore della Bibbia](./bible.md).
 :::
 
 ## Disponibilità
 
-Il Versetto del Giorno è una funzione di contenuto incorporata di B1.church. Se non lo vedi nella navigazione della tua chiesa, l'amministratore della tua chiesa potrebbe non averlo aggiunto al menu del sito. Contatta l'amministratore della tua chiesa per richiedere che sia aggiunto.
+Il Versetto del giorno è una funzione di contenuto integrata di B1.church. Se non lo vedi nella navigazione della tua chiesa, l'amministratore della chiesa potrebbe non averlo aggiunto al menu del sito. Contatta l'amministratore della tua chiesa per richiederlo.

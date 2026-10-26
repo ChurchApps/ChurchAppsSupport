@@ -1,76 +1,75 @@
 ---
-title: "Attendance Reports"
+title: "उपस्थिति रिपोर्ट"
 ---
 
-# Attendance Reports
+# उपस्थिति रिपोर्ट
 
 <div class="article-intro">
 
-B1 Admin attendance को समझने में मदद करने के लिए तीन attendance reports प्रदान करता है कि लोग आपकी services और groups के साथ कैसे engage कर रहे हैं। हर report आपके attendance data पर एक different perspective प्रदान करता है, high-level trends से लेकर daily breakdowns तक।
+B1 Admin आपको यह समझने में मदद करने के लिए तीन उपस्थिति रिपोर्ट देता है कि लोग आपकी सेवाओं और ग्रुपों में कैसे भाग ले रहे हैं। हर रिपोर्ट आपके attendance डेटा का एक अलग दृष्टिकोण देती है, उच्च-स्तरीय रुझानों से लेकर दैनिक विवरण तक।
 
 </div>
 
 <div class="prereqs">
-<h4>शुरुआत करने से पहले</h4>
+<h4>शुरू करने से पहले</h4>
 
-- सुनिश्चित करें कि attendance को आपकी services और groups के लिए [consistently tracked](../attendance/tracking-attendance.md) किया जा रहा है
-- सुनिश्चित करें कि आपके [groups](../groups/creating-groups.md) और services B1 Admin में configure किए गए हैं
-- आपको reports को access करने के लिए appropriate [permissions](../settings/roles-permissions.md) की आवश्यकता है
+- सुनिश्चित करें कि आपकी सेवाओं और ग्रुपों के लिए attendance [लगातार ट्रैक](../attendance/tracking-attendance.md) किया जा रहा है
+- सुनिश्चित करें कि आपके [ग्रुप](../groups/creating-groups.md) और सेवाएँ B1 Admin में कॉन्फ़िगर हैं
+- रिपोर्ट देखने के लिए आपके पास उचित [अनुमतियाँ](../settings/roles-permissions.md) होनी चाहिए
 
 </div>
 
 ## Attendance Trend
 
-Attendance Trend report दिखाता है कि आपकी services के लिए attendance समय के साथ कैसे बदलता है।
+Attendance Trend रिपोर्ट दिखाती है कि आपकी सेवाओं के लिए समय के साथ attendance कैसे बदलती है।
 
-1. अपने browser में सीधे **admin.b1.church/reports/attendanceTrend** पर जाएं (reports के navigation menu में कोई entry नहीं है — address को bookmark करना सबसे आसान तरीका है इस पर वापस आने के लिए)। समान report Attendance page पर भी है: **All years** पर क्लिक करें, फिर **Attendance Trend** tab चुनें।
-2. Optional रूप से परिणामों को filter करने के लिए **Campus**, **Service**, **Service Time**, या **Group** चुनें।
-3. **Start Date** और **End Date** सेट करें। Default रूप से report पिछले year को cover करता है, एक year ago से लेकर आज तक, और end date को पूरी तरह से include किया जाता है। **Run Report** पर क्लिक करें।
-4. Report एक bar chart और total visits per week की table दिखाता है। हर week को उस week के Sunday के date के साथ label किया जाता है, और table का **Session Dates** column actual dates को list करता है जिन्हें attendance था उस week में (उदाहरण के लिए, "9/27, 9/30")।
+1. अपने ब्राउज़र में सीधे **admin.b1.church/reports/attendanceTrend** पर जाएँ (रिपोर्ट का नेविगेशन मेनू में कोई प्रविष्टि नहीं है — इस पते को बुकमार्क करना वापस पहुँचने का सबसे आसान तरीका है)। यही रिपोर्ट Attendance पेज पर भी है: **All years** पर क्लिक करें, फिर **Attendance Trend** टैब चुनें।
+2. परिणाम फ़िल्टर करने के लिए वैकल्पिक रूप से **Campus**, **Service**, **Service Time**, या **Group** चुनें।
+3. **Start Date** और **End Date** सेट करें। डिफ़ॉल्ट रूप से रिपोर्ट पिछले एक साल को कवर करती है, एक साल पहले से आज तक, और end date पूरी तरह शामिल होती है। **Run Report** पर क्लिक करें।
+4. रिपोर्ट हर सप्ताह के कुल visits का बार चार्ट और तालिका दिखाती है। हर सप्ताह को उस सप्ताह के रविवार की तारीख से लेबल किया जाता है, और तालिका का **Session Dates** कॉलम उस सप्ताह की वास्तविक तारीखें सूचीबद्ध करता है जिनमें attendance था (उदाहरण के लिए, "9/27, 9/30")।
 
-यह report seasonal dips, growth trends, या special events के impact जैसे patterns को spot करने के लिए उपयोगी है।
+यह रिपोर्ट मौसमी गिरावट, विकास के रुझान, या विशेष कार्यक्रमों के प्रभाव जैसे पैटर्न पहचानने में उपयोगी है।
 
 ## Group Attendance
 
-Group Attendance report दिखाता है कि date range में हर group session को किसने attend किया।
+Group Attendance रिपोर्ट दिखाती है कि एक तारीख सीमा में हर ग्रुप सत्र में कौन उपस्थित था।
 
-1. अपने browser में सीधे **admin.b1.church/reports/groupAttendance** पर जाएं, या Attendance page पर **All years** पर क्लिक करके **Group Attendance** tab चुनें।
-2. Optional रूप से **Campus** और **Service** चुनें।
-3. **Start Date** और **End Date** सेट करें। Default रूप से report last Sunday से लेकर आज तक को cover करता है, और end date को पूरी तरह से include किया जाता है।
+1. अपने ब्राउज़र में सीधे **admin.b1.church/reports/groupAttendance** पर जाएँ, या Attendance पेज पर **All years** क्लिक करके **Group Attendance** टैब चुनें।
+2. वैकल्पिक रूप से **Campus** और **Service** चुनें।
+3. **Start Date** और **End Date** सेट करें। डिफ़ॉल्ट रूप से रिपोर्ट पिछले रविवार से आज तक को कवर करती है, और end date पूरी तरह शामिल होती है।
 4. **Run Report** पर क्लिक करें।
 
-परिणाम session date के अनुसार grouped हैं, फिर service time के अनुसार, फिर group के अनुसार, जिसमें उन लोगों को listed किया गया है जिन्होंने हर group को attend किया। Service times, groups, और names alphabetically sorted हैं। हर व्यक्ति के नाम के बगल में, **Checked In** column उस समय को दिखाता है जब उनकी attendance record की गई थी (blank जब कोई time file पर नहीं है) और **Membership Status** column उनकी status दिखाता है, जैसे Member या Visitor।
+परिणाम सत्र की तारीख, फिर service time, फिर ग्रुप के अनुसार समूहित होते हैं, और हर ग्रुप के नीचे उपस्थित लोग सूचीबद्ध होते हैं। Service times, ग्रुप और नाम वर्णानुक्रम में क्रमबद्ध होते हैं। हर व्यक्ति के नाम के आगे **Checked In** कॉलम दिखाता है कि उनकी attendance कब दर्ज हुई थी (अगर कोई समय दर्ज नहीं है तो खाली), और **Membership Status** कॉलम उनकी स्थिति दिखाता है, जैसे Member या Visitor।
 
-एक spreadsheet download करने के लिए, **Download Options** पर क्लिक करें और **Summary** चुनें। CSV में है:
+स्प्रेडशीट डाउनलोड करने के लिए **Download Options** पर क्लिक करें और **Summary** चुनें। CSV में होता है:
 
-- Date range में मिलने वाले हर group के एक सदस्य के लिए एक row, group के अनुसार और फिर name के अनुसार sorted।
-- पहले columns में व्यक्ति का नाम और group का नाम।
-- हर dated session के लिए एक column, service, service time, और date के साथ named (उदाहरण के लिए, "Sunday - 9:00 AM (2026-09-27)"), हर व्यक्ति को **present** या **absent** के साथ marked।
+- तारीख सीमा में मिले हर ग्रुप के हर सदस्य के लिए एक पंक्ति, ग्रुप और फिर नाम के अनुसार क्रमबद्ध।
+- पहले कॉलमों में व्यक्ति का नाम और ग्रुप का नाम।
+- हर दिनांकित सत्र के लिए एक कॉलम, जिसका नाम service, service time और तारीख से बना है (उदाहरण के लिए, "Sunday - 9:00 AM (2026-09-27)"), और हर व्यक्ति **present** या **absent** चिह्नित।
 
-इस report का उपयोग groups के पार attendance को compare करने और identify करने के लिए करें कि कौन से groups बढ़ रहे हैं या attention की आवश्यकता है।
+ग्रुपों के बीच attendance की तुलना करने और यह पहचानने के लिए इस रिपोर्ट का उपयोग करें कि कौन-से ग्रुप बढ़ रहे हैं या ध्यान की ज़रूरत है।
 
 ## Daily Group Attendance
 
-Daily Group Attendance report आपके groups के लिए attendance data का एक day-by-day breakdown प्रदान करता है।
+Daily Group Attendance रिपोर्ट (जिसका शीर्षक **Group attendance by day** है) एक ग्रुप में कितने लोग किस दिन आए, इसकी दैनिक गिनती देती है।
 
-1. अपने browser में सीधे **admin.b1.church/reports/dailyGroupAttendance** पर जाएं।
-2. Report के लिए **date range** सेट करें।
-3. जिन **group(s)** को आप review करना चाहते हैं उन्हें चुनें।
-4. Report range के भीतर हर individual day के लिए attendance numbers दिखाता है।
+1. अपने ब्राउज़र में सीधे **admin.b1.church/reports/dailyGroupAttendance** पर जाएँ।
+2. सूची को सीमित करने के लिए **Campus**, **Service**, और **Service Time** ड्रॉपडाउन का उपयोग करें, फिर वह **Group** चुनें जिसकी समीक्षा करनी है।
+3. रिपोर्ट चलाएँ। यह हर उस दिन की सूची देती है जब ग्रुप मिला, सबसे पुराने से पहले, **Date** और उस दिन दर्ज **Attendees** की संख्या के साथ।
 
-यह report granular detail देता है, जो week-to-week variation को समझने या unusually high या low attendance वाले specific days को identify करने के लिए helpful है।
+यह रिपोर्ट विस्तृत जानकारी देती है, जो सप्ताह-दर-सप्ताह के उतार-चढ़ाव को समझने या असामान्य रूप से अधिक या कम attendance वाले विशिष्ट दिनों की पहचान करने में उपयोगी है।
 
 :::tip
-High-level overview के लिए Attendance Trend report का उपयोग करें और Daily Group Attendance report का उपयोग करें जब आपको specific dates में drill करने की आवश्यकता हो।
+उच्च-स्तरीय सिंहावलोकन के लिए Attendance Trend रिपोर्ट का और विशिष्ट तारीखों में गहराई से जाने के लिए Daily Group Attendance रिपोर्ट का उपयोग करें।
 :::
 
 ## व्यावहारिक उपयोग
 
-- **Planning** -- Upcoming services के लिए seating, staffing, और resources को plan करने के लिए attendance trends का उपयोग करें।
-- **Outreach** -- Attendance patterns को decline करते हुए जल्दी identify करें ताकि आप सदस्यों को follow up कर सकें।
-- **Board reports** -- Ministry health को दिखाने के लिए अपनी regular leadership reports में attendance data को include करें।
-- **Event evaluation** -- Special events से पहले और बाद में attendance को compare करें उनके impact को measure करने के लिए।
+- **योजना** -- आगामी सेवाओं के लिए बैठक व्यवस्था, स्टाफ़िंग और संसाधनों की योजना बनाने के लिए attendance रुझानों का उपयोग करें।
+- **आउटरीच** -- घटती attendance के पैटर्न को जल्दी पहचानें, ताकि आप सदस्यों से संपर्क कर सकें।
+- **बोर्ड रिपोर्ट** -- मंत्रालय की स्वस्थ स्थिति दिखाने के लिए अपनी नियमित नेतृत्व रिपोर्टों में attendance डेटा शामिल करें।
+- **कार्यक्रम का मूल्यांकन** -- किसी विशेष कार्यक्रम से पहले और बाद की attendance की तुलना करके उसके प्रभाव को मापें।
 
 :::warning
-Attendance data आपकी group और service check-in processes के माध्यम से record किया जाता है। यदि attendance को consistently track नहीं किया जा रहा है, तो आपकी reports actual participation को accurately reflect नहीं करेंगे। Setup instructions के लिए [Tracking Attendance](../attendance/tracking-attendance.md) देखें।
+Attendance डेटा आपकी ग्रुप और सेवा check-in प्रक्रियाओं के माध्यम से दर्ज होता है। अगर attendance लगातार ट्रैक नहीं की जा रही, तो आपकी रिपोर्टें वास्तविक भागीदारी को सटीक रूप से नहीं दिखाएँगी। सेटअप निर्देशों के लिए [Tracking Attendance](../attendance/tracking-attendance.md) देखें।
 :::

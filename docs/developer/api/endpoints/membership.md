@@ -25,6 +25,7 @@ Base path: `/membership/people`
 | GET | `/names?ids=` | JWT | Any church permission | `[{ id, name: { display, first, last }, photo }]`, sorted by last name then first name, for comma-separated ids the caller already has, so roles without People.View (donations, attendance) can label people. No search, no directory filter |
 | POST | `/names` | JWT | Any church permission | Same as `GET /names`. Body: `{ peopleIds }` (or `{ ids }`) |
 | GET | `/recent` | JWT | People.View, Member, or People.ViewNames | Recently added people. People.ViewNames callers without People.View (even members with directory access) get the basic model (`id`, `name.display`, `photo`, `membershipStatus`) with opted-out people left out |
+| GET | `/guest-register/options?churchId=` | Public | — | QR guest sign-up checklist: returns `{ email, phone, address, birthDate, gender, maritalStatus, grade, comments }`, each `"off"`, `"optional"`, or `"required"` (parsed from the public `guestRegistrationFields` setting; missing or malformed values fall back to email/phone optional, the rest off). Requires `enableQRGuestRegistration` unless the request carries a matching site/church token; rate limited (429) |
 | GET | `/search?term=&email=` | JWT | People.View, Member, or People.ViewNames | Search people by name or email (up to 100, sorted by last name then first name). People.ViewNames callers without People.View (even members with directory access) get a name search returning the basic model; an `email` search returns `[]` |
 | GET | `/search/phone?number=` | JWT | People.View or Member | Search by phone number |
 | GET | `/search/group?groupId=` | JWT | People.View or Member | Get people in a specific group |
@@ -35,8 +36,9 @@ Base path: `/membership/people`
 | GET | `/claim/:churchId` | JWT | — | Claim a person record for the current user at a church |
 | POST | `/` | JWT | People.Edit or EditSelf | Create or update people (batch) |
 | POST | `/search` | JWT | People.View, Member, or People.ViewNames | Search people (POST variant). Body: `{ term }` or `{ email }`; same names-only rules as `GET /search` |
-| POST | `/advancedSearch` | JWT | People.View or Member | Multi-condition search (age, birthMonth, membershipStatus, etc.) |
+| POST | `/advancedSearch` | JWT | People.View or Member | Multi-condition search (age, birthMonth, membershipStatus, etc.). Body is an array of conditions; an empty body means no conditions, and any other non-array body returns 400 |
 | POST | `/loadOrCreate` | Public | — | Find or create a person by email. Body: `{ churchId, email, firstName, lastName }` |
+| POST | `/guest-register` | Public | — | QR guest sign-up. Body: `{ churchId, members: [{ firstName, lastName, email?, phone?, birthDate?, gender?, grade? }], address?, maritalStatus?, comments? }` (1–10 members; email/phone/maritalStatus apply to the first member only). Fields the church turned off are dropped; missing required or invalid values return 400. Creates a new household (named for the first member's last name) with every member as `membershipStatus: "Visitor"`, shares `address` across all members, saves `comments` as a note on the head, adds everyone to the private `guestRegistrationGroupId` group if set, and — when `guestRegistrationRecordAttendance` is `"true"` — records attendance for that group's scheduled service times whose check-in window is open now. Returns `{ householdId, people: [{ id, name }] }`. Same opt-in/token and rate-limit rules as the options call |
 | POST | `/household/:householdId` | JWT | People.Edit | Update household member assignments |
 | POST | `/public/email` | Public | — | Send an email to a person. Body: `{ churchId, personId, subject, body, appName }` |
 | POST | `/apiEmails` | Internal | — | Load person emails by IDs (server-to-server, requires jwtSecret) |
@@ -170,7 +172,7 @@ Base path: `/membership/roles`
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
 | GET | `/:id` | JWT | Roles.View | Get role by ID |
-| GET | `/church/:churchId` | JWT | Roles.View | Get all roles for a church |
+| GET | `/church/:churchId` | JWT | Roles.View | Get all roles for a church. Each role includes `memberCount`, the number of distinct users in it |
 | POST | `/` | JWT | Roles.Edit | Create or update roles |
 | DELETE | `/:id` | JWT | Roles.Edit | Delete a role (also removes its permissions and members) |
 
@@ -214,8 +216,9 @@ Base path: `/membership/forms`
 | GET | `/` | JWT | Forms.Admin or Forms.Edit | List all forms (admin sees all; editors see assigned + non-member forms) |
 | GET | `/:id` | JWT | Form access | Get a form by ID |
 | GET | `/archived` | JWT | Forms.Admin or Forms.Edit | List archived forms |
+| GET | `/group/:groupId` | JWT | Group member, group leader, or Forms.Admin | Stand-alone forms linked to the group (`forms.groupId`), excluding archived ones, sorted by name. Returns `id`, `name`, `description`, and `open` (within the availability window). Members get only open forms; leaders and forms admins also get closed ones. Backs the group page's linked forms |
 | GET | `/standalone/:id?churchId=` | JWT | — | Get a standalone form (restricted forms require auth) |
-| POST | `/` | JWT | Forms.Admin or Forms.Edit | Create or update forms |
+| POST | `/` | JWT | Forms.Admin or Forms.Edit | Create or update forms. Stand-alone forms accept an optional `photoUrl` (header photo shown above the form) and `groupId` (linked group) |
 | DELETE | `/:id` | JWT | Form access | Delete a form |
 
 ## Form Submissions
@@ -225,10 +228,11 @@ Base path: `/membership/formsubmissions`
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | Forms.Admin or Forms.Edit | List submissions. Filter by `?personId=` or `?formId=` |
-| GET | `/my?include=questions,answers` | JWT | — | Self-scoped: up to 50 stand-alone form submissions (not person forms) the signed-in member submitted, newest first, each with `form.name`. `include` attaches each form's questions and the submission's answers. Returns `401` if the user isn't linked to a person. Backs the **My Forms** section of the B1 Me page |
-| GET | `/:id` | JWT | Forms.Admin or Forms.Edit | Get submission by ID. Add `?include=form,questions,answers` |
-| GET | `/formId/:formId` | JWT | Form access | Get all submissions for a form (includes form, questions, answers) |
-| POST | `/` | JWT | — | Submit form answers (handles restricted/unrestricted forms, sends email notifications). When the form has `autoCreatePerson`, finds-or-creates a Guest person by email and links the submission; when `followUpSubject`/`followUpBody` are set, sends a templated follow-up email to the submitter. Unless the caller can manage the form, `submittedBy` is always set to the signed-in member's person (or left empty for anonymous submissions) |
+| GET | `/my?include=questions,answers` | JWT | — | Self-scoped: up to 50 stand-alone form submissions (not person forms) the signed-in member submitted or that are linked to their person (`contentType` `person`, `contentId` = their person id -- for example, after an admin's change person), newest first, each with `form.name`. `include` attaches each form's questions and the submission's answers. Returns `401` if the user isn't linked to a person. Backs the **My Forms** section of the B1 Me page |
+| GET | `/group/:groupId` | JWT | Leader of the group | Answers for the group's leaders: one entry per linked form and per group event with a registration form, each with `form`, `event` (`id`, `title`, `start`; event entries only), `questions`, and `submissions` (with `answers` and `personName`, `null` when anonymous) |
+| GET | `/:id` | JWT | Forms.Admin, Forms.Edit, or view access | Get submission by ID. Add `?include=form,questions,answers`. Leaders of the form's linked group, and leaders of the group an event registration belongs to, can also read it |
+| GET | `/formId/:formId` | JWT | Form access (view) | Get all submissions for a form (includes form, questions, answers). Leaders of the form's linked group have view access |
+| POST | `/` | JWT | — | Submit form answers (handles restricted/unrestricted forms, sends email notifications). When the form has `autoCreatePerson`, finds-or-creates a Guest person by email and links the submission; when the form also has a `groupId`, adds that person to the group; when `followUpSubject`/`followUpBody` are set, sends a templated follow-up email to the submitter. Unless the caller can manage the form, `submittedBy` is always set to the signed-in member's person (or left empty for anonymous submissions) |
 | DELETE | `/:id` | JWT | Forms.Admin or Forms.Edit | Delete a submission and its answers |
 
 ## Questions

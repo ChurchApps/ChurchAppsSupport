@@ -6,105 +6,106 @@ title: "Apariencia"
 
 <div class="article-intro">
 
-La página Apariencia te permite personalizar la apariencia general de tu sitio web de iglesia. Desde colores y fuentes hasta espaciado y CSS personalizado, puedes controlar cada aspecto visual de tu sitio desde un solo lugar.
+La página de Apariencia le permite personalizar el aspecto general de su sitio web de la iglesia. Desde los colores y las fuentes hasta el espaciado y el CSS personalizado, puede controlar cada aspecto visual de su sitio desde un solo lugar.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Completa la [Configuración Inicial](initial-setup) de tu sitio web
-- Ten tu logo de iglesia listo en formato PNG con un fondo transparente y una relación de aspecto de 4:1
-- Conoce los colores de marca de tu iglesia (valores hexadecimales) si tienes una guía de estilo existente
+- Complete la [Configuración inicial](initial-setup) de su sitio web
+- Tenga listo el logotipo de su iglesia en formato PNG, con fondo transparente y una relación de aspecto de 4:1
+- Conozca los colores de marca de su iglesia (valores hexadecimales) si tiene una guía de estilo existente
 
 </div>
 
-## Acceso a la Configuración de Apariencia
+## Acceder a la configuración de apariencia
 
-1. En B1 Admin, abre el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda) y expande **Website**.
-2. Haz clic en **Appearance**.
-3. La página **Site Styles** se carga. La tarjeta **Theme, fonts & footer** muestra la lista de **Style Settings** a la izquierda y una vista previa de un sitio de ejemplo a la derecha. Debajo están las tarjetas **Announcement & widgets** y **Redirects & analytics**.
+1. En B1 Admin, abra el [menú de salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda) y expanda **Sitio web**.
+2. Haga clic en **Apariencia**.
+3. Se carga la página **Estilos del sitio**. La tarjeta **Tema, fuentes y pie de página** muestra la lista de **Configuración de estilos** a la izquierda y una vista previa de un sitio de ejemplo a la derecha. Debajo se encuentran las tarjetas **Anuncios y widgets** y **Redirecciones y analítica**.
 
-## Paleta de Colores {#color-palette}
+## Paleta de colores {#color-palette}
 
-1. Haz clic en **Color Palette** en el panel Style Settings.
-2. Verás **Base Colors** (tonos claros, acentos y oscuros) y **Semantic Colors** (Primary, Secondary, Success, Warning, y Error).
-3. Haz clic en cualquier muestra de color para abrir el selector de colores. Arrastra el selector o ingresa un valor hexadecimal para elegir tu color.
-4. La **Color Combinations Preview** muestra cómo tus colores seleccionados funcionan juntos.
-5. Usa **Suggested Palettes** para aplicar rápidamente un esquema de colores prediseñado.
-6. Haz clic en **Save Palette** cuando estés satisfecho.
+1. Haga clic en **Paleta de colores** en el panel de Configuración de estilos.
+2. Verá los **Colores base** (tonos claro, de acento y oscuro) y los **Colores semánticos** (Principal, Secundario, Éxito, Advertencia y Error).
+3. Haga clic en cualquier muestra de color para abrir el selector de color. Arrastre el selector o ingrese un valor hexadecimal para elegir su color.
+4. La **Vista previa de combinaciones de colores** muestra cómo funcionan juntos los colores que seleccionó.
+5. Use las **Paletas sugeridas** para aplicar rápidamente un esquema de colores predefinido.
+6. Haga clic en **Guardar paleta** cuando esté satisfecho.
 
 ## Tipografía
 
-1. Haz clic en **Fonts** en el panel Style Settings.
-2. Haz clic en el botón **Heading Font** o **Body Font** para abrir el navegador de fuentes. Puedes buscar por nombre o explorar categorías como Serif, Sans Serif, Display, Handwriting, y Monospace. También puedes elegir una de las **Popular Font Combinations**.
-3. Haz clic en **Save Fonts** para aplicar tus selecciones de fuente.
-4. Para ajustar la jerarquía de tamaños para Encabezado 1 a Encabezado 4, haz clic en **Typography Scale** en el panel Style Settings. Usa los campos **Type Scale** (multiplicador), **Base Size** y **Line Height** para ajustar, luego haz clic en **Save Typography**.
+1. Haga clic en **Fuentes** en el panel de Configuración de estilos.
+2. Haga clic en el botón **Fuente de encabezados** o **Fuente del cuerpo** para abrir el explorador de fuentes. Puede buscar por nombre o explorar categorías como Serif, Sans Serif, Display, Manuscrita y Monoespaciada. También puede elegir una de las **Combinaciones de fuentes populares**.
+3. Haga clic en **Guardar fuentes** para aplicar sus elecciones de fuentes.
+4. Para ajustar la jerarquía de tamaños de los Encabezados 1 a 4, haga clic en **Escala tipográfica** en el panel de Configuración de estilos. Use los campos **Multiplicador de tipo**, **Tamaño base** y **Altura de línea** para afinar los valores, y luego haga clic en **Guardar tipografía**.
 
 ## Espaciado
 
-1. Haz clic en **Spacing Scale** en el panel Style Settings.
-2. Ajusta valores de espaciado de Extra Pequeño a Extra Grande. Los ejemplos prácticos muestran cómo cada valor afecta el diseño.
-3. Haz clic en **Save Spacing** para aplicar los valores en todo tu sitio.
+1. Haga clic en **Escala de espaciado** en el panel de Configuración de estilos.
+2. Ajuste los valores de espaciado desde Extra pequeño hasta Extra grande. Ejemplos prácticos muestran cómo afecta cada valor al diseño.
+3. Haga clic en **Guardar espaciado** para aplicar los valores en todo su sitio.
 
-## Logo y Marca {#logo-and-branding}
+## Logotipo e identidad visual {#logo-and-branding}
 
-1. Haz clic en **Logo** en el panel Style Settings.
-2. Carga tu **Light Background Logo** y **Dark Background Logo**. Usa imágenes con un fondo transparente y una relación de aspecto de 4:1 para obtener los mejores resultados.
-3. Carga una **Social Media Image** para vistas previas de enlaces y un **Favicon** para el icono de la pestaña del navegador.
+1. Haga clic en **Logotipo** en el panel de Configuración de estilos.
+2. Suba su **Logotipo para fondo claro** y su **Logotipo para fondo oscuro**. Para mejores resultados, use imágenes con fondo transparente y una relación de aspecto de 4:1.
+3. Suba una **Imagen para redes sociales** para las vistas previas de enlaces y un **Favicon** para el ícono de la pestaña del navegador.
+4. Haga clic en **Guardar cambios**. Las imágenes subidas no se almacenan hasta que guarde, así que si intenta cerrar o recargar primero la pestaña del navegador, este le advertirá que tiene cambios sin guardar.
 
 :::tip
-Para obtener los mejores resultados, usa un logo con un fondo transparente en formato PNG. Esto asegura que se vea muy bien en fondos claros y oscuros en todo tu sitio web y [aplicación móvil](../settings/mobile-app.md).
+Para obtener los mejores resultados, use un logotipo con fondo transparente en formato PNG. Así se verá bien tanto en fondos claros como oscuros, en su sitio web y en la [aplicación móvil](../settings/mobile-app.md).
 :::
 
-## Estilos de Navegación
+## Estilos de navegación
 
-Personaliza los colores de la barra de navegación de tu sitio web para modos sólido y transparente:
+Personalice los colores de la barra de navegación de su sitio web para los modos sólido y transparente:
 
-1. Haz clic en **Navigation** en el panel Style Settings
-2. Configura colores para **Header (solid)** y **Header over hero (transparent)**
-3. Haz clic en **Save Navigation** para aplicar tus colores de navegación
+1. Haga clic en **Navegación** en el panel de Configuración de estilos
+2. Configure los colores de **Encabezado (sólido)** y **Encabezado sobre la sección principal (transparente)**
+3. Haga clic en **Guardar navegación** para aplicar los colores de navegación
 
-Para obtener instrucciones detalladas, consulta [Estilos de Navegación](./navigation-styles.md).
+Para obtener instrucciones detalladas, consulte [Estilos de navegación](./navigation-styles.md).
 
-## Anuncios y Widgets
+## Anuncios y widgets
 
-Los widgets del sitio aparecen en cada página de tu sitio, flotando sobre el contenido de la página:
+Los widgets del sitio aparecen en todas las páginas de su sitio, flotando sobre el contenido de la página:
 
-- **Announcement Banner** -- Una barra descartable en la parte superior de tu sitio para mensajes sensibles al tiempo, como un próximo evento o un cambio de servicio.
-- **Launcher** -- Un botón flotante que abre un menú de acceso rápido, por ejemplo enlaces para dar, registrarse o ver el boletín.
+- **Banner de anuncios**: una barra descartable en la parte superior de su sitio para mensajes urgentes, como un próximo evento o un cambio de servicio.
+- **Lanzador**: un botón flotante que abre un menú de acceso rápido, por ejemplo, enlaces para dar, registrarse en el registro de entrada o ver el boletín.
 
-1. Busca la tarjeta **Announcement & widgets** debajo de Style Settings.
-2. Activa los widgets que desees y configura su texto, enlaces y colores.
-3. Haz clic en **Save**.
+1. Busque la tarjeta **Anuncios y widgets** debajo de la Configuración de estilos.
+2. Active los widgets que desee y configure su texto, enlaces y colores.
+3. Haga clic en **Guardar**.
 
-## Redireccionamientos y Análisis
+## Redirecciones y analítica
 
-La tarjeta **Redirects & analytics** (debajo de Style Settings) contiene dos configuraciones no relacionadas pero comúnmente necesarias:
+La tarjeta **Redirecciones y analítica** (debajo de la Configuración de estilos) contiene dos configuraciones no relacionadas entre sí pero que se necesitan con frecuencia:
 
-- **Analytics** -- Agrega tu **GA4 Measurement ID** (formato `G-XXXXXXXXXX`) para rastrear el tráfico de visitantes en tu sitio web. El mismo ID también rastrea las vistas de página en la aplicación B1 de tu iglesia (el portal de miembros en `/mobile`, incluida la aplicación instalada), etiquetadas con un `display_mode` de `installed` o `browser` para que puedas distinguir las visitas desde la aplicación instalada de las visitas desde el navegador en Google Analytics.
-- **Redirects** -- Mapea una ruta de URL antigua a una nueva, para que los enlaces a una página que moviste o renombraste sigan funcionando en lugar de mostrar 404. Ingresa la ruta **From** antigua y la ruta **To** nueva, luego haz clic en **Save**. Un redireccionamiento también tiene prioridad sobre las páginas integradas de B1 (`/sermons`, `/stream`, `/donate`, `/bible` y `/votd`), por lo que puedes enviar esa dirección a otro lugar (por ejemplo, a tu propia página de sermones o a un canal de YouTube). No reemplaza una página que hayas creado tú mismo en la misma dirección. Elimina primero esa página si quieres que se aplique el redireccionamiento.
+- **Analítica**: agregue su **ID de medición de GA4** (formato `G-XXXXXXXXXX`) para registrar el tráfico de visitantes a su sitio web. El mismo ID también registra las vistas de página en la aplicación de B1 de su iglesia (el portal de miembros en `/mobile`, incluida la aplicación instalada), etiquetadas con un `display_mode` de `installed` o `browser`, para que pueda distinguir las visitas desde la aplicación instalada de las visitas desde el navegador en Google Analytics.
+- **Redirecciones**: asigne una ruta de URL antigua a una nueva, para que los enlaces a una página que movió o renombró sigan funcionando en lugar de devolver un error 404. Ingrese la ruta **Desde** antigua y la ruta **Hacia** nueva, y luego haga clic en **Guardar**. Una redirección también tiene prioridad sobre las páginas integradas de B1 (`/sermons`, `/stream`, `/donate`, `/bible` y `/votd`), así que puede enviar esa dirección a otro lugar (por ejemplo, a su propia página de sermones o a un canal de YouTube). No reemplaza una página que usted creó en la misma dirección. Elimine primero esa página si desea que la redirección se aplique.
 
-## CSS y JavaScript Personalizados
+## CSS personalizado y JavaScript
 
-1. Haz clic en **CSS & Javascript** en el panel Style Settings.
-2. Agrega **Custom CSS** para anular estilos predeterminados para personalización avanzada.
-3. Agrega **Custom HTML** para códigos de seguimiento u otros scripts.
-4. Usa la sección **Common JavaScript Examples** para fragmentos como la integración de Google Analytics.
+1. Haga clic en **CSS y Javascript** en el panel de Configuración de estilos.
+2. Agregue **CSS personalizado** para reemplazar los estilos predeterminados con personalizaciones avanzadas.
+3. Agregue **HTML personalizado** para códigos de seguimiento u otros scripts.
+4. Use la sección **Ejemplos comunes de JavaScript** para fragmentos como la integración de Google Analytics.
 
 :::warning
-CSS personalizado es poderoso pero puede romper el diseño de tu sitio si se usa incorrectamente. La mayoría de las iglesias pueden lograr la apariencia que desean usando los controles integrados de color, fuente y espaciado. Solo usa CSS personalizado si te sientes cómodo con el desarrollo web.
+El CSS personalizado es poderoso, pero puede romper el diseño de su sitio si se usa de forma incorrecta. La mayoría de las iglesias pueden lograr el aspecto que desean con los controles integrados de color, fuente y espaciado. Use CSS personalizado solo si se siente cómodo con el desarrollo web.
 :::
 
 :::info
-Tu sitio aplica una Política de Seguridad de Contenido que bloquea scripts en línea de cualquier otra fuente. El campo **Custom HTML** aquí, y el [elemento HTML](page-editor#using-the-html-element) en páginas individuales, son las excepciones de confianza -- el código que guardes allí se ejecuta tal cual, así que solo pega scripts de fuentes en las que confíes (etiquetas de análisis, widgets de chat e incrustaciones similares).
+Su sitio aplica una Política de seguridad de contenido que bloquea los scripts en línea provenientes de cualquier otra fuente. El campo **HTML personalizado** de aquí, y el [elemento HTML](page-editor#using-the-html-element) de páginas individuales, son las excepciones de confianza: el código que guarde allí se ejecuta tal cual, así que pegue solo scripts de fuentes en las que confíe (etiquetas de analítica, widgets de chat y similares).
 :::
 
-## Temas de Estilo
+## Temas de estilo
 
-Si deseas un punto de partida rápido, las **Suggested Palettes** en la sección Color Palette ofrecen temas preconstructidos que establecen colores coordinados en un clic. Siempre puedes ajustar la configuración individual después de aplicar un tema.
+Si quiere un punto de partida rápido, las **Paletas sugeridas** de la sección Paleta de colores ofrecen temas predefinidos que establecen colores coordinados con un solo clic. Siempre puede ajustar cada configuración después de aplicar un tema.
 
-## Próximos Pasos
+## Próximos pasos
 
-- [Administración de Páginas](managing-pages) -- Construye y organiza tus páginas web
-- [Archivos](files) -- Carga activos multimedia para tu sitio
+- [Administrar páginas](managing-pages): cree y organice las páginas de su sitio web
+- [Archivos](files): suba recursos multimedia para su sitio

@@ -31,7 +31,7 @@ The giving dashboard is the **Dashboard** view of the **Summary** page, the firs
    - **Unique Donors** -- The number of distinct people who gave.
    - **Total Donations** -- The total number of individual donations.
 5. Below the KPIs, a bar chart shows giving per week, month, or quarter, broken out by fund.
-6. Click **Download Options** and choose **Summary** to export a CSV of the totals by period and fund, or click the print icon to print the report. Your church's name appears at the top of the printed report.
+6. Click **Download Options** and choose **Summary** to export a CSV of the totals by period and fund, or click the print icon to print the report. Your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) and name appear centered at the top of the printed report. The printout uses dark text and a light chart even if you use B1 Admin in dark mode.
 
 If donations in the period were given in more than one currency, the KPI totals are converted to your church currency and a **Converted at current exchange rates** note appears below the cards. See [Multi-Currency Support](./multi-currency.md#converted-totals) for details.
 

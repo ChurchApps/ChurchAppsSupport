@@ -30,7 +30,7 @@ Once you have created a group, the next step is adding members. From a group's d
 Before you type anything, the **Add Person** box shows a short list of **Recent people** you can add with one click.
 :::
 
-When you are done, click the **Back to** link with the group's name to return to the group page. The group page shows a summary of the group's **Members**, **Sessions**, **Calendar**, and **Health**, each with a link to its full view. If you are one of the group's leaders, it also shows **Leader notes** (see [Leader Notes](#leader-notes) below).
+When you are done, click the **Back to** link with the group's name to return to the group page. The group page shows a summary of the group's **Members**, **Sessions**, **Calendar**, and **Health**, each with a link to its full view. If you are one of the group's leaders, it also shows **Leader notes** (see [Leader Notes](#leader-notes) below). When forms are linked to the group, a **Linked forms** section appears too (see [Linked Forms](#linked-forms) below).
 
 ### Adding Someone Who Isn't in B1 Yet
 
@@ -50,6 +50,12 @@ To remove leader status, click the star icon (**Remove Leader Access**) again.
 Any group member can view the group calendar and events, but only leaders can add or edit calendar events.
 :::
 
+## Linked Forms {#linked-forms}
+
+When a Stand Alone form is [linked to the group](../forms/creating-forms.md#linking-a-form-to-a-group), the group page shows a **Linked forms** section with each form's name, whether it is **Open** or **Closed**, and how many forms are linked. The section appears only for the group's leaders and for people who can administer forms, and only when at least one form is linked. Forms administrators can click a form's name to open it, or click **All forms** to go to the Forms page.
+
+Group leaders read and print the answers to these forms from the group's page on [B1.church](../../b1-church/groups/group-details.md#linked-forms).
+
 ## Leader Notes {#leader-notes}
 
 Group leaders can keep private notes about the group -- for example, follow-ups, prayer needs, or pastoral concerns -- that the rest of the group never sees.
@@ -57,11 +63,11 @@ Group leaders can keep private notes about the group -- for example, follow-ups,
 The **Leader notes** section appears on the group page only for people who are leaders of that group. It shows the newest note, who wrote it and when, and how many notes there are.
 
 1. On the group page, click **All notes** in the **Leader notes** section.
-2. Type your note in the box and post it. Notes are listed with the author's name and photo.
+2. Type your note in the box and post it. Notes are listed with the author's name and photo and the date and time each was posted.
 3. Click the **Back to** link with the group's name to return to the group page.
 
 :::info
-Leader notes are visible only to the group's leaders. Other members can't see them, and neither can staff or administrators -- even with full permissions -- unless they are also leaders of that group. To give another person access, [make them a leader](#designating-group-leaders). Leaders also see these notes in the **Leader notes** section of the group's page on [B1.church](../../b1-church/groups/group-details.md#leader-notes).
+Leader notes are visible only to the group's leaders. Other members can't see them, and neither can staff or administrators -- even with full permissions -- unless they are also leaders of that group. To give another person access, [make them a leader](#designating-group-leaders). Leaders also see these notes in the **Leader notes** section of the group's page on [B1.church](../../b1-church/groups/group-details.md#leader-notes), and on the **Groups** tab of the [Notes](../people/notes.md) page in B1 Admin.
 :::
 
 ## Sending Messages to Group Members

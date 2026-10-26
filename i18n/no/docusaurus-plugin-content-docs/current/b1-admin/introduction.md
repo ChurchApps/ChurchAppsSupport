@@ -6,83 +6,80 @@ title: Introduksjon til B1.church
 
 <div class="article-intro">
 
-Takk for at du valgte B1.church! Denne introduksjonen tar deg gjennom det grunnleggende for å komme i gang med administrasjonsplattformen B1.church Admin, fra innlogging og navigering på Dashboard til å sette opp menighetens informasjon og utforske verktøyene som er tilgjengelige.
+Takk for at du valgte B1.church! Denne introduksjonen gir deg et grunnleggende innblikk i hvordan du kommer i gang med B1.church Admin-plattformen — fra innlogging og navigering på dashbordet til å sette opp menighetens informasjon og utforske verktøyene som finnes.
 
 </div>
 
-Hvis du trenger mer hjelp, kan du sende e-post til [support@churchapps.org](mailto:support@churchapps.org).
+For videre hjelp, send en e-post til [support@churchapps.org](mailto:support@churchapps.org).
 
 ## Introduksjonsvideo
 
-<video controls width="100%">
-  <source src="/b1Admin/intro/output.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
+<YouTube id="D2iUhe0ZZhI" title="A Tour of B1 Admin" next="A Tour of the B1.church Member App" nextUrl="/docs/b1-church/getting-started/navigating" />
 
 ## Gjennomgang
 
-1. Gå til [admin.b1.church](https://admin.b1.church) i Google Chrome og logg inn med brukernavn og passord.
-2. Da kommer du til **Dashboard**, startsiden i B1.church Admin. Her ser du denne ukens gudstjeneste og hvem som er sjekket inn og tjenestegjør, sammen med **Mine oppgaver** (dine åpne oppgaver) og **Mine grupper**. Bruk **Jump-menyen** (søkefeltet øverst til venstre, se nedenfor) for å komme til Personer, Gaver, Nettsted og resten av appen. Klikk på den lille menighetslogoen ved siden av for å gå tilbake til Dashboard når som helst.
-3. Åpne Jump-menyen og velg **Innstillinger** for å sette opp menighetens informasjon, administrative roller og andre detaljer.
-4. Klikk på **Rediger** i seksjonen **Menighetsinformasjon** for å sette opp menighetsinformasjonen.
-5. Tilbake på søndag klikker du på **spørsmålstegnet** øverst til høyre for å få hjelp og opplæring.
-6. Klikk på **Vis dokumentasjon** for å se en liste over veiledninger som hjelper deg i gang med B1.church.
-7. Gå tilbake til Dashboard, klikk på **pilen ved siden av profilbildet ditt** og velg **Bytt app**.
-8. Velg **Lessons.church** for å administrere menighetens nettbaserte leksjoner og undervisningsopplegg.
-9. Bytt tilbake til B1.church ved å klikke på pilen ved siden av profilbildet og velge **Bytt app** igjen.
-10. Nå kan du gå inn i B1.church via **medlemsportalen** eller **administrasjonsportalen**. I medlemsportalen kan du se hvordan B1.church ser ut for medlemmene dine, se gruppene dine og administrere dine personlige gaver.
+1. Bruk Google Chrome, gå til [admin.b1.church](https://admin.b1.church) og logg inn med brukernavn og passord.
+2. Dette tar deg til **Dashboard**, startsiden for B1.church Admin. Her vises ukens gudstjeneste og hvem som er innsjekket og tjenestegjør, sammen med **My tasks** (dine åpne oppgaver) og **My Groups**. Bruk **Jump-menyen** (søkefeltet øverst til venstre, se under) for å komme til People, Donations, Website og resten av appen. Klikk på det lille menighetslogoen ved siden av for å gå tilbake til Dashboard når som helst.
+3. Åpne Jump-menyen og velg **Settings** for å sette opp menighetens informasjon, administrative roller og andre detaljer.
+4. Klikk på **Edit** i delen **Church Information** for å legge inn informasjon om menigheten.
+5. Tilbake på søndag: klikk på **spørsmålstegn-ikonet** øverst til høyre for hjelp og opplæringsvideoer.
+6. Klikk på **View Documentation** for å se en liste over veiledninger som hjelper deg i gang med B1.church.
+7. Gå tilbake til Dashboard og klikk på **pilen ved siden av profilbildet ditt**, og velg **Switch App**.
+8. Velg **Lessons.church** for å administrere menighetens nettbaserte leksjoner og læreplan.
+9. Bytt tilbake til B1.church ved å klikke på pilen ved siden av profilbildet ditt og velge **Switch App** igjen.
+10. Nå kan du gå inn i B1.church gjennom **medlemsportalen** eller **admin-portalen**. Medlemsportalen lar deg se hvordan B1.church ser ut for medlemmene dine, se gruppene dine og administrere dine egne gaver.
 
 :::tip
-Start med siden [Innstillinger](./settings/) for å konfigurere menighetens navn, profilering og teamets tillatelser. Da blir alt annet du setter opp, vist riktig.
+Start med [Settings](./settings/)-siden for å sette opp menighetens navn, profilering og teamtillatelser. Dette sikrer at alt annet du setter opp vises riktig.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
 
-## Finn fram med Jump-menyen {#getting-around-with-the-jump-menu}
+## Navigere med Jump-menyen {#getting-around-with-the-jump-menu}
 
-Hele B1 Admin nås fra **Jump-menyen** øverst til venstre i toppfeltet. Ved siden av den lille menighetslogoen (som tar deg tilbake til Dashboard) finner du et søkefelt som viser hvor du er, for eksempel **Gaver › Gavebunter**, sammen med et hint om **Ctrl K** (eller **⌘ K**).
+Hele B1 Admin nås fra **Jump-menyen** øverst til venstre i hodet. Ved siden av det lille menighetslogoen (som tar deg tilbake til Dashboard) finnes et søkefelt som viser hvor du er, for eksempel **Donations › Batches**, sammen med en hint om **Ctrl K** (eller **⌘ K**).
 
-### Bla gjennom deler og sider
+### Bla gjennom seksjoner og sider
 
-1. Klikk på søkefeltet, trykk **Ctrl+K** (**Cmd+K** på Mac), eller trykk **/** mens du ikke skriver i et tekstfelt.
-2. Menyen viser alle deler du har tilgang til -- Dashboard, Personer, Gaver, Tjeneste, Prekener, Nettsted, Kalendere, Mobil og Innstillinger. Delen du er i, er allerede utvidet, og gjeldende side er uthevet.
-3. Klikk på en del for å utvide den og se sidene (for eksempel inneholder **Personer** **Personer**, **Grupper**, **Oppmøte** og **Skjemaer**). Bare én del er utvidet om gangen.
+1. Klikk på søkefeltet, eller trykk **Ctrl+K** (**Cmd+K** på en Mac), eller trykk **/** når du ikke skriver i et tekstfelt.
+2. Menyen lister hver seksjon du har tilgang til — Dashboard, People, Donations, Serving, Sermons, Website, Calendars, Mobile og Settings. Seksjonen du er i, er allerede utvidet, og den gjeldende siden er uthevet.
+3. Klikk på en seksjon for å utvide den og se sidene (for eksempel inneholder **People** sidene **People**, **Groups**, **Attendance**, **Forms** og **Notes**). Bare én seksjon er utvidet om gangen.
 4. Klikk på en side for å gå dit.
 
-Du kan også bruke tastaturet: piltastene **Opp** og **Ned** flytter deg gjennom listen, **Høyre** utvider en del, **Venstre** lukker den, og **Enter** åpner det uthevede elementet. Trykk **Esc** for å lukke menyen uten å gå noe sted.
+Du kan også bruke tastaturet: piltastene **opp** og **ned** flytter gjennom listen, **høyre** utvider en seksjon, **venstre** skjuler den, og **Enter** åpner det uthevede elementet. Trykk **Esc** for å lukke menyen uten å gå noe sted.
 
-I denne dokumentasjonen betyr et trinn som «I Jump-menyen velger du **Personer > Grupper**» at du åpner Jump-menyen, utvider **Personer** og klikker på **Grupper**.
+I disse dokumentene betyr et steg som «I Jump-menyen, velg **People > Groups**» at du åpner Jump-menyen, utvider **People** og klikker på **Groups**.
 
 ### Søke
 
-I stedet for å bla kan du begynne å skrive med en gang menyen åpnes, for å hoppe rett til en person, gruppe, plan, fond eller en hvilken som helst administrasjonsside:
+I stedet for å bla kan du begynne å skrive så snart menyen åpnes, for å hoppe rett til en person, gruppe, plan, fond eller en hvilken som helst administrativ side:
 
-1. Skriv inn et navn eller siden du vil til (for eksempel navnet på en person, «gavebunter», «sanger» eller «mitt arbeid»).
-2. Resultatene er gruppert etter type -- personer, grupper, planer, fond og sider du kan hoppe til. Bruk piltastene for å flytte mellom resultatene og **Enter** for å velge ett, eller klikk på et resultat med musen.
+1. Skriv et navn eller siden du vil ha (for eksempel en persons navn, «batches», «songs» eller «my work»). Hver side i en seksjon kan finnes på denne måten, sammen med hvert steg under **Quick Actions**. Vanlige uttrykk fungerer også — «qr code» finner **QR guest registration», og «upload logo» finner **Appearance**. Bindestreker har ingen betydning («b1 checkin» finner **Start check-in**), og hvis den eksakte frasen ikke gir treff, ser søket etter resultater som inneholder alle ordene dine i hvilken som helst rekkefølge («logo church» finner **Add Your Church Logo**).
+2. Resultatene grupperes etter type — personer, grupper, planer, fond og sider du kan hoppe til. Bruk piltastene for å flytte mellom resultatene og **Enter** for å velge ett, eller klikk på et resultat med musen.
 
-Søket kan også starte vanlige oppgaver. Skriv inn hva du vil gjøre, og velg det:
+Søket kan også starte vanlige oppgaver. Skriv det du vil gjøre, og velg det:
 
-- **Opprett en side**, **Opprett en gruppe**, **Sett opp FreeShow** eller **Sett opp FreePlay** åpner den aktuelle hurtigoppsettveiviseren akkurat der du er, uten at du må tilbake til Dashboard.
-- **Legg til en person** åpner skjemaet for ny person.
-- **Start innsjekking** åpner innsjekkingsappen.
+- **Create a page**, **Create a group**, **Set up FreeShow** eller **Set up FreePlay** åpner den tilsvarende hurtigoppsettveiviseren der du står, uten å gå tilbake til Dashboard.
+- **Add a person** åpner skjemaet for ny person.
+- **Start check-in** åpner innsjekkingsappen.
 
-Hvilke handlinger du ser, avhenger av tillatelsene dine.
+Handlingene du ser, avhenger av tillatelsene dine.
 
-### Hurtighandlinger
+### Quick Actions
 
-Den siste gruppen i Jump-menyen er **Hurtighandlinger** -- oppsettssnarveiene som tidligere sto på Dashboard. Utvid den for å finne trinn som **Legg til menighetens logo**, **Opprett din første nettside**, **Sett opp nettbasert giving**, **Opprett din første gruppe** og **Inviter teammedlemmer**. Oppsettshandlinger åpner hurtigoppsettveiviseren første gang. Når du har satt opp funksjonen, tar de deg i stedet til siden for den.
+Den siste gruppen i Jump-menyen er **Quick Actions** — oppsettssnarveiene som pleide å vises på Dashboard. Utvid den for å finne steg som **Add Your Church Logo**, **Create Your First Webpage**, **Set Up Online Giving**, **Create Your First Group** og **Invite Team Members**. Oppsettshandlinger åpner hurtigoppsettveiviseren første gang; når du har satt opp funksjonen, tar de deg til siden for den i stedet.
 
 :::tip
-Søk er ofte den raskeste måten å komme til en side på -- skriv inn en del av sidenavnet (for eksempel «roller» eller «fond») i stedet for å utvide Innstillinger, Tjeneste eller Gaver for hånd.
+Søk er ofte den raskeste måten å komme til en side på — skriv en del av sidenavnet (for eksempel «roles» eller «funds») i stedet for å utvide Settings, Serving eller Donations manuelt.
 :::
 
 ## Neste steg
 
-Etter å ha sett denne introduksjonen kan du utforske disse hovedfunksjonene:
+Etter at du har sett denne introduksjonen, bør du utforske disse sentrale funksjonene:
 
-- [Legge til personer](./people/adding-people) -- Lær hvordan du legger til medlemmer i databasen din
+- [Legge til personer](./people/adding-people) -- Lær hvordan du legger medlemmer inn i databasen din
 - [Grupper](./groups/) -- Sett opp og administrer menighetens grupper
-- [Tjenesteplaner](./serving/plans) -- Organiser tjenestearbeidet ditt
-- [Oppmøte](./attendance/) -- Følg opp oppmøte og innsjekking
+- [Tjenesteplaner](./serving/plans) -- Organiser tjenesteområdet ditt
+- [Oppmøte](./attendance/) -- Før oversikt over oppmøte og innsjekking
 - [Nettsted](./website/) -- Bygg og tilpass menighetens nettsted
-- [Innstillinger](./settings/) -- Konfigurer menighetsinformasjon og tillatelser
+- [Settings](./settings/) -- Konfigurer menighetens informasjon og tillatelser

@@ -6,16 +6,16 @@ title: "Servidor MCP"
 
 <div class="article-intro">
 
-A API B1 envia um servidor [MCP (Model Context Protocol)](https://modelcontextprotocol.io) em `/mcp`. Qualquer cliente de IA ciente de MCP -- Claude Code, Claude Desktop, o OpenAI Agents SDK, Cursor, ou seu próprio -- pode se conectar a ele e chamar a API REST subjacente em nome de um usuário de igreja autenticado. É um invólucro fino e genérico: três ferramentas genéricas expõem toda a superfície da API dinamicamente em vez de modelar manualmente cada endpoint, mais uma ferramenta de guia de domínio para o construtor de website.
+A API do B1 disponibiliza um servidor [MCP (Model Context Protocol)](https://modelcontextprotocol.io) em `/mcp`. Qualquer cliente de IA compatível com MCP -- conectores personalizados do claude.ai, Claude Code, Claude Desktop, o OpenAI Agents SDK, Cursor ou um cliente próprio -- pode se conectar a ele e chamar a API REST subjacente em nome de um usuário autenticado da igreja. É um wrapper genérico e enxuto: três ferramentas genéricas expõem toda a superfície da API de forma dinâmica, em vez de modelar manualmente cada endpoint, além de uma ferramenta de guia de domínio para o construtor de sites.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Uma [chave de API B1](./api-keys) (`cak_…`) com os escopos que o cliente deve ter
-- Um host de API B1 acessível -- `https://api.churchapps.org` para igrejas hospedadas, ou sua própria implantação
-- Um cliente MCP. Veja [Claude](/docs/b1-admin/integrations/claude) e [ChatGPT](/docs/b1-admin/integrations/chatgpt) para configuração de usuário final
+- Uma [chave de API do B1](./api-keys) (`cak_…`) com os escopos que o cliente deve ter, ou um cliente MCP que consiga fazer login com OAuth (consulte [Descoberta OAuth](#oauth-discovery))
+- Um host da API do B1 acessível -- `https://api.churchapps.org` para igrejas hospedadas, ou a sua própria implantação
+- Um cliente MCP. Consulte [Claude](/docs/b1-admin/integrations/claude) e [ChatGPT](/docs/b1-admin/integrations/chatgpt) para a configuração do usuário final
 
 </div>
 
@@ -31,35 +31,37 @@ Authorization: Bearer cak_<prefix>.<secret>
 | Aspecto | Valor |
 |---|---|
 | **Caminho** | `/mcp` (relativo ao host da API) |
-| **Método** | Apenas `POST` -- solicitação/resposta e streaming SSE acontecem no mesmo endpoint |
+| **Método** | Somente `POST` -- requisição/resposta e streaming SSE acontecem no mesmo endpoint |
 | **Transporte** | [MCP Streamable HTTP](https://modelcontextprotocol.io/specification/2025-11-25/basic/transports) |
-| **Modelo de sessão** | Sem estado. Uma instância de servidor MCP fresca é construída por solicitação -- sem id de sessão, sem retomação |
-| **Auth** | Token portador. Chaves de API `cak_…` e JWTs B1 funcionam; a resolução é a mesma que qualquer outro endpoint autenticado |
+| **Modelo de sessão** | Sem estado. Uma nova instância do servidor MCP é criada por requisição -- sem ID de sessão, sem retomada |
+| **Autenticação** | Bearer token. Chaves de API `cak_…` e JWTs do B1 (incluindo tokens de acesso OAuth) funcionam; a resolução é a mesma de qualquer outro endpoint autenticado |
 
-Uma solicitação cujo header `Authorization` está faltando ou inválido retorna:
+Uma requisição cujo cabeçalho `Authorization` esteja ausente ou seja inválido retorna:
 
 ```json
 { "error": "Unauthorized — MCP requires a valid bearer token (cak_* API key or JWT)." }
 ```
 
-com HTTP 401.
+com HTTP 401 e um cabeçalho `WWW-Authenticate: Bearer resource_metadata="<api>/.well-known/oauth-protected-resource"`, que clientes compatíveis com OAuth seguem para iniciar o login.
+
+Na API hospedada (produção e demo), `/mcp` é servido por meio de uma API HTTP do API Gateway, e não pela API REST usada nos demais endpoints. A API REST renomeia `WWW-Authenticate` para `x-amzn-remapped-www-authenticate` nas respostas de proxy do Lambda, o que deixava clientes como o ChatGPT com um 401 sem qualquer forma de iniciar o login; a API HTTP repassa o cabeçalho sem alterações.
 
 ## Ferramentas
 
-Três ferramentas genéricas mais uma de guia. O modelo usa `list_endpoints` para descoberta, `describe_endpoint` para aprender uma forma de payload, `api_call` para realmente invocar a API, e `describe_page_builder` quando a tarefa envolve conteúdo de website.
+Três ferramentas genéricas e um guia. O modelo usa `list_endpoints` para descobrir os endpoints, `describe_endpoint` para conhecer o formato de um payload, `api_call` para de fato invocar a API e `describe_page_builder` quando a tarefa envolve conteúdo de sites.
 
 ### `list_endpoints`
 
-Retorna o inventário completo de rotas REST registradas, filtrado por um substring opcional e/ou verbo HTTP. Cada entrada inclui o nome do controlador e os escopos de chave de API mais prováveis necessários.
+Retorna o inventário completo das rotas REST registradas, filtrado por um substring opcional e/ou por verbo HTTP. Cada item inclui o nome do controlador e os escopos de chave de API mais prováveis de serem necessários.
 
 **Entrada:**
 
 | Campo | Tipo | Descrição |
 |---|---|---|
-| `filter` | string (opcional) | Substring casado insensível a caso contra o caminho, por ex. `"people"` |
+| `filter` | string (opcional) | Substring sem diferenciação de maiúsculas e minúsculas, comparado com o caminho, por exemplo `"people"` |
 | `method` | enum (opcional) | `GET` / `POST` / `PUT` / `DELETE` / `PATCH` |
 
-**Saída:** um documento JSON da forma
+**Saída:** um documento JSON com a seguinte forma:
 
 ```json
 {
@@ -75,33 +77,33 @@ Retorna o inventário completo de rotas REST registradas, filtrado por um substr
 }
 ```
 
-O inventário é construído uma vez na inicialização da API da tabela de rota ao vivo -- qualquer coisa que você possa atingir com `curl` aparece aqui.
+O inventário é construído uma única vez, na inicialização da API, a partir da tabela de rotas em execução -- tudo o que você consegue acessar com `curl` aparece aqui.
 
 ### `describe_endpoint`
 
-Retorna um resumo curto mais, onde disponível, um request body e resposta de amostra curados manualmente para um endpoint.
+Retorna um resumo curto e, quando disponível, um corpo de requisição e um exemplo de resposta definidos manualmente para um endpoint.
 
 **Entrada:**
 
 | Campo | Tipo | Descrição |
 |---|---|---|
 | `method` | string | Verbo HTTP |
-| `path` | string | Caminho completo como retornado por `list_endpoints` |
+| `path` | string | Caminho completo, conforme retornado por `list_endpoints` |
 
-**Saída:** para endpoints curados, um exemplo com `summary`, `requestBody`, e `responseSample`. Para endpoints sem cura, uma mensagem de fallback instruindo o modelo a chamar `GET` primeiro para ver a forma. Cerca de uma dúzia de rotas de alto tráfego (people, groups, donations, attendance, funds) estão curadas.
+**Saída:** para endpoints com curadoria, um exemplo com `summary`, `requestBody` e `responseSample`. Para endpoints sem curadoria, uma mensagem de fallback orientando o modelo a chamar `GET` primeiro para ver o formato. Cerca de uma dúzia de rotas de alto tráfego (pessoas, grupos, doações, presença, fundos) têm curadoria.
 
 ### `api_call`
 
-Invoca o endpoint REST escolhido, em processo, através da mesma pilha de middleware Express que uma solicitação HTTP normal -- autenticação, análise de corpo, logging de auditoria, e escoping por-igreja aplicam-se todos.
+Invoca o endpoint REST escolhido, em processo, pela mesma pilha de middleware do Express usada em uma requisição HTTP normal -- autenticação, leitura do corpo, registro de auditoria e isolamento por igreja são aplicados.
 
 **Entrada:**
 
 | Campo | Tipo | Descrição |
 |---|---|---|
 | `method` | enum | `GET` / `POST` / `PUT` / `DELETE` / `PATCH` |
-| `path` | string | Caminho incluindo qualquer prefixo de módulo, por ex. `/membership/people` |
-| `query` | object (opcional) | Objeto plano de parâmetros de string de consulta |
-| `body` | any (opcional) | Corpo de solicitação JSON -- tipicamente um array de objetos de modelo para `POST` |
+| `path` | string | Caminho incluindo o prefixo do módulo, por exemplo `/membership/people` |
+| `query` | object (opcional) | Objeto simples com parâmetros da query string |
+| `body` | any (opcional) | Corpo JSON da requisição -- normalmente um array de objetos de modelo em `POST` |
 
 **Saída:**
 
@@ -109,55 +111,71 @@ Invoca o endpoint REST escolhido, em processo, através da mesma pilha de middle
 {
   "status": 200,
   "truncated": false,
-  "body": [ /* a resposta JSON do controlador */ ]
+  "body": [ /* the controller's JSON response */ ]
 }
 ```
 
-O resultado da ferramenta é marcado `isError: true` para qualquer resposta com status ≥ 400.
+O resultado da ferramenta é marcado com `isError: true` para qualquer resposta com status ≥ 400.
 
 ### `describe_page_builder`
 
-A ferramenta única não-genérica: um guia estático e independente para construir páginas de website através dos endpoints `/content/*` -- o modelo de dados Page → Section → Element, o fluxo de criação, cada `elementType` com sua forma `answersJSON`, configurações no nível de seção como a forma dos divisores `dividerTop`/`dividerBottom`, e um exemplo de ponta a ponta trabalhado. Não recebe entrada e espelha o catálogo de elementos mantido no editor B1Admin (veja [Website Builder Architecture](../architecture/website-builder)). Espera-se que agentes o chamem uma vez antes de criar ou editar conteúdo de página, depois atuem via `api_call`.
+A única ferramenta não genérica: um guia estático e autocontido para criar páginas de sites pelos endpoints `/content/*` -- o modelo de dados Página → Seção → Elemento, o fluxo de criação, cada `elementType` com o formato de `answersJSON`, configurações no nível da seção, como os divisores de forma `dividerTop`/`dividerBottom`, e um exemplo completo e trabalhado. Não recebe entrada e espelha o catálogo de elementos mantido no editor do B1Admin (consulte [Arquitetura do construtor de sites](../architecture/website-builder)). Espera-se que os agentes a chamem uma vez antes de criar ou editar conteúdo de página e, depois, atuem por meio de `api_call`.
 
-## Modelo de Autenticação
+## Modelo de autenticação
 
-A solicitação MCP em si é executada através de `CustomAuthProvider.getUser()` -- o mesmo caminho que todo endpoint B1 autenticado usa. Um portador `cak_…` resolve para um `Principal` cujas permissões são o RBAC atual da pessoa emissora, **intersectado** com os escopos concedidos da chave. Essa intersecção é recomputada em cada solicitação, portanto:
+A própria requisição MCP passa por `CustomAuthProvider.getUser()` -- o mesmo caminho que todo endpoint autenticado do B1 utiliza. Um bearer `cak_…` resolve para um `Principal` cujas permissões são o RBAC atual da pessoa que emitiu a chave, **intersectado** com os escopos concedidos à chave. Essa interseção é recalculada a cada requisição, portanto:
 
-- Remover um escopo de uma chave (deletando e recriando-a) corta acesso na próxima chamada.
-- Remover uma permissão da pessoa subjacente em B1Admin corta acesso na próxima chamada, mesmo que a chave ainda exista.
+- Remover um escopo de uma chave (excluindo-a e recriando-a) corta o acesso na próxima chamada.
+- Remover uma permissão da pessoa subjacente no B1Admin corta o acesso na próxima chamada, mesmo que a chave ainda exista.
 
-Para invocações `api_call` aninhadas, o header `Authorization` original é copiado para a solicitação sintética, então `CustomAuthProvider` é executado novamente e a intersecção de escopo é re-aplicada por chamada. Não há cache de token.
+Para invocações `api_call` aninhadas, o cabeçalho `Authorization` original é copiado para a requisição sintética, de modo que o `CustomAuthProvider` é executado novamente e a interseção de escopos é reaplicada em cada chamada. Não há cache de tokens.
 
-## Lista de Bloqueio de Caminho
+## Lista de bloqueio de caminhos
 
-Um pequeno conjunto de rotas não são acessíveis via `api_call`, mesmo com uma chave válida:
+Um pequeno conjunto de rotas não é acessível via `api_call`, mesmo com uma chave válida:
 
-| Padrão | Por quê |
+| Padrão | Motivo |
 |---|---|
-| `/giving/donate/webhook/*` | Endpoints de webhook do provedor esperam corpos assinados e verificados brutos de Stripe/PayPal -- não chamadores gerais |
-| `/membership/oauth/clients*` | O registro de cliente OAuth é apenas do operador |
-| `/membership/people/apiEmails` | Fechado pelo `jwtSecret` do operador, não permissões de usuário |
-| Qualquer rota esperando `multipart/form-data` | Uploads de arquivo não são amigáveis a JSON-RPC |
+| `/giving/donate/webhook/*` | Os endpoints de webhook do provedor esperam corpos brutos com assinatura verificada, vindos do Stripe/PayPal -- não de chamadores em geral |
+| `/membership/oauth/clients*` | O registro de clientes OAuth é exclusivo do operador |
+| `/membership/people/apiEmails` | Protegido pelo `jwtSecret` do operador, e não pelas permissões do usuário |
+| Qualquer rota que espere `multipart/form-data` | Uploads de arquivos não são compatíveis com JSON-RPC |
 
-Um caminho bloqueado retorna um resultado de ferramenta `isError: true` com uma mensagem descritiva; a rota subjacente nunca é invocada.
+Um caminho bloqueado retorna um resultado de ferramenta com `isError: true` e uma mensagem descritiva; a rota subjacente nunca é invocada.
 
-## Limite de Tamanho de Resposta
+## Limite de tamanho da resposta
 
-Cada resposta `api_call` é limitada em **64 KB** de saída capturada. Se uma consulta exceder o limite, a resposta carrega `"truncated": true` e o modelo espera-se que repita com parâmetros de consulta mais estreitos. Isso impede que uma resposta de ferramenta única exploda a janela de contexto do cliente.
+O corpo de cada resposta de `api_call` é limitado a **64 KB** de saída capturada. Se uma consulta exceder o limite, a resposta traz `"truncated": true` e espera-se que o modelo repita a chamada com parâmetros de consulta mais restritos. Isso evita que uma única resposta de ferramenta estoure a janela de contexto do cliente.
 
-## Limite de Taxa
+## Limite de taxa
 
-Não há limite de taxa no nível de aplicação em `/mcp`. Aceleração é adiada para API Gateway / concorrência Lambda em produção, e para tudo que seu proxy reverso impõe em implantações auto-hospedadas.
+Não há limite de taxa no nível da aplicação em `/mcp`. A limitação fica a cargo da concorrência do API Gateway / Lambda em produção e do que o seu proxy reverso impuser em implantações self-hosted.
 
-## Descoberta OAuth
+## Descoberta OAuth {#oauth-discovery}
 
-O servidor MCP **não** anuncia metadados OAuth 2.1 (`/.well-known/oauth-authorization-server`, registro dinâmico de cliente, fluxo PKCE). Clientes que requerem servidores MCP descobertos por OAuth -- notavelmente a UI "Add custom connector" do Claude.ai e o recurso "Connectors" do ChatGPT -- não podem se conectar sem essa superfície.
+O servidor MCP anuncia metadados OAuth 2.1, para que clientes que se conectam apenas a servidores descobertos via OAuth -- em especial a interface "Add custom connector" do Claude.ai -- possam autenticar um usuário sem uma chave colada manualmente. `/mcp` é o recurso protegido, o [provedor OAuth](./connected-apps) em `/membership/oauth` é o servidor de autorização, e a página `/oauth` do B1Admin é a tela de consentimento.
 
-Clientes que aceitam um token portador estático em sua configuração -- Claude Code, Claude Desktop, OpenAI Agents SDK, Cursor, código customizado -- funcionam hoje. O [OAuthController](/docs/developer/api/connected-apps) existente já emite tokens via código de autorização + PKCE para aplicações de terceiros; uma camada de descoberta conforme MCP-spec em cima disso fecharia a lacuna.
+| Endpoint | Finalidade |
+|---|---|
+| `GET /.well-known/oauth-protected-resource` (também `/.well-known/oauth-protected-resource/mcp`) | Metadados do recurso protegido (RFC 9728): `resource` é `<api>/mcp`, `authorization_servers` é a raiz da API, `scopes_supported` lista todos os [escopos de chave de API](./api-keys#scopes) |
+| `GET /.well-known/oauth-authorization-server` | Metadados do servidor de autorização (RFC 8414): `authorization_endpoint` é a página `/oauth` do B1Admin, `token_endpoint` é `/membership/oauth/token` e `registration_endpoint` é `/membership/oauth/register` |
+| `POST /membership/oauth/register` | Registro dinâmico de clientes (RFC 7591) |
 
-## Desenvolvimento Local
+O fluxo executado por um cliente como o claude.ai:
 
-O endpoint MCP monta junto com tudo mais quando a API executa localmente:
+1. `POST /mcp` sem token retorna 401 com o cabeçalho `WWW-Authenticate` apontando para os metadados do recurso protegido.
+2. O cliente lê os dois documentos de metadados e se registra com `POST /membership/oauth/register`, enviando `client_name`, `redirect_uris` e, opcionalmente, `scope`. Todo cliente auto-registrado é um cliente **público**: nenhum segredo é emitido e a resposta traz `token_endpoint_auth_method: "none"`. As URIs de redirecionamento devem ser `https`, ou `http` em um endereço de loopback (`localhost`, `127.0.0.1`, `[::1]`); no máximo 10 por cliente. O registro tem limite de 20 por hora por IP.
+3. O usuário é enviado para a página `/oauth` do B1Admin com `code_challenge` e `code_challenge_method=S256`. A página de consentimento lista cada escopo solicitado em linguagem simples (ou "Tudo o que a sua conta do B1 pode acessar" quando nenhum foi solicitado), mostra o host para o qual o usuário será redirecionado e indica quando o aplicativo se registrou sozinho. O usuário clica em **Allow**.
+4. O cliente troca o código em `/membership/oauth/token` com `grant_type=authorization_code` e seu `code_verifier`, e depois renova com `grant_type=refresh_token`. Corpos codificados em formulário e em JSON são aceitos.
+5. O token de acesso resultante é um JWT do B1 com escopo, usado como bearer em `/mcp`.
+
+Regras de PKCE: somente `S256` é aceito. Um cliente sem segredo deve enviar um `code_challenge` na autorização e o `code_verifier` correspondente na troca do token; clientes confidenciais (com segredo) ainda podem usar apenas o segredo. As URIs de redirecionamento devem corresponder exatamente a uma URI registrada.
+
+Clientes que aceitam um bearer token estático na configuração -- Claude Code, Claude Desktop, OpenAI Agents SDK, Cursor, código próprio -- podem continuar usando uma chave `cak_…`.
+
+## Desenvolvimento local
+
+O endpoint MCP é montado junto com todo o restante quando a API roda localmente:
 
 ```bash
 cd Api
@@ -165,33 +183,34 @@ npm run dev
 # Server listening on http://localhost:8084
 ```
 
-Na inicialização a linha de log `📡 MCP server ready at /mcp — N routes in inventory` confirma que o inventário foi construído.
+Na inicialização, a linha de log `📡 MCP server ready at /mcp — N routes in inventory` confirma que o inventário foi construído.
 
-Sonde-o com o MCP Inspector:
+Teste-o com o MCP Inspector:
 
 ```bash
 npx @modelcontextprotocol/inspector
 ```
 
-Na UI do Inspector, aponte para `http://localhost:8084/mcp` e defina o header `Authorization` para `Bearer cak_<prefix>.<secret>`. Chame `list_endpoints` primeiro; você deveria ver a lista de rota completa. Então `api_call({ method: "GET", path: "/membership/people" })` deveria retornar suas pessoas de seed locais.
+Na interface do Inspector, aponte para `http://localhost:8084/mcp` e defina o cabeçalho `Authorization` como `Bearer cak_<prefix>.<secret>`. Chame `list_endpoints` primeiro; você deverá ver a lista completa de rotas. Em seguida, `api_call({ method: "GET", path: "/membership/people" })` deverá retornar as pessoas de exemplo do seu ambiente local.
 
-## Layout de Código
+## Estrutura do código
 
-O servidor MCP vive em `src/modules/mcp/` no repo Api. Arquivos notáveis:
+O servidor MCP fica em `src/modules/mcp/` no repositório Api. Arquivos relevantes:
 
-| Arquivo | Propósito |
+| Arquivo | Finalidade |
 |---|---|
-| `McpController.ts` | `@controller("/mcp")`; fiação `StreamableHTTPServerTransport` por solicitação |
-| `McpServer.ts` | Constrói um MCP `Server`, registra as quatro ferramentas |
-| `RouteInventory.ts` | Caminha pelos metadados de inversify-express-utils na inicialização para enumerar rotas |
-| `internalDispatch.ts` | `req`/`res` sintético que re-entra no app Express em processo |
+| `McpController.ts` | `@controller("/mcp")`; cria um `StreamableHTTPServerTransport` por requisição e envia o desafio `WWW-Authenticate` em caso de 401 |
+| `WellKnownController.ts` / `OAuthMetadata.ts` | Serve os documentos de descoberta OAuth em `/.well-known` |
+| `McpServer.ts` | Cria um `Server` MCP e registra as quatro ferramentas |
+| `RouteInventory.ts` | Percorre os metadados do inversify-express-utils na inicialização para enumerar as rotas |
+| `internalDispatch.ts` | `req`/`res` sintéticos que reentram na aplicação Express em processo |
 | `tools/` | `listEndpoints.ts`, `describeEndpoint.ts`, `apiCall.ts`, `describePageBuilder.ts` |
-| `examples.ts` | Amostras de request/response curadas para endpoints de alto tráfego |
+| `examples.ts` | Exemplos de requisição/resposta com curadoria para endpoints de alto tráfego |
 
-## Relacionado
+## Relacionados
 
 - [Chaves de API](./api-keys)
 - [Webhooks](./webhooks)
-- [Aplicativos Conectados (OAuth)](./connected-apps)
-- [Claude -- configuração de usuário final](/docs/b1-admin/integrations/claude)
-- [ChatGPT -- configuração de usuário final](/docs/b1-admin/integrations/chatgpt)
+- [Aplicativos conectados (OAuth)](./connected-apps)
+- [Claude — configuração para o usuário final](/docs/b1-admin/integrations/claude)
+- [ChatGPT — configuração para o usuário final](/docs/b1-admin/integrations/chatgpt)

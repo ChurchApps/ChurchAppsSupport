@@ -51,12 +51,11 @@ Use this report to compare attendance across groups and identify which groups ar
 
 ## Daily Group Attendance
 
-The Daily Group Attendance report provides a day-by-day breakdown of attendance data for your groups.
+The Daily Group Attendance report (titled **Group attendance by day**) gives a day-by-day count of how many people attended one group.
 
 1. Go directly to **admin.b1.church/reports/dailyGroupAttendance** in your browser.
-2. Set the **date range** for the report.
-3. Select the **group(s)** you want to review.
-4. The report shows attendance numbers for each individual day within the range.
+2. Use the **Campus**, **Service**, and **Service Time** dropdowns to narrow the list, then pick the **Group** you want to review.
+3. Run the report. It lists every day the group met, oldest first, with the **Date** and the number of **Attendees** recorded that day.
 
 This report gives you granular detail, which is helpful for understanding week-to-week variation or identifying specific days with unusually high or low attendance.
 

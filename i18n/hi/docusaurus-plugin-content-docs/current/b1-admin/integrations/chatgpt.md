@@ -6,129 +6,129 @@ title: "ChatGPT"
 
 <div class="article-intro">
 
-ChatGPT को अपने चर्च के B1 डेटा से कनेक्ट करें और उससे सरल भाषा में प्रश्न पूछें — यह आपके लाइव चर्च रिकॉर्ड से जवाब देता है। आप उससे उन कामों में मदद भी मांग सकते हैं जिनमें B1 Admin में कई चरण लगेंगे।
+ChatGPT को अपने church के B1 डेटा से जोड़ें और उससे सादी भाषा में सवाल पूछें -- यह आपके live church रिकॉर्ड से उत्तर देता है। आप उससे ऐसे कामों में भी मदद मांग सकते हैं जिनमें B1 Admin में कई चरण लगेंगे।
 
-**कुछ चीजें जो आप पूछ सकते हैं:**
-- *"मुझे वे सभी लोग दिखाएं जो पिछले हफ्ते आए लेकिन किसी छोटे समूह को असाइन नहीं किए गए हैं"*
-- *"इस महीने के दान को निधि के अनुसार सारांशित करें"*
-- *"हमारे नए सदस्य कौन हैं और क्या हमने उनके साथ अनुवर्ती कार्रवाई की है?"*
-- *"मैं B1 में X कैसे करें यह पता नहीं लगा पा रहा हूं — क्या आप मुझे इसके चरण बता सकते हैं?"*
+**आप ये पूछ सकते हैं:**
+- *"पिछले हफ्ते जो लोग आए थे पर किसी small group को असाइन नहीं हुए, उन सब को दिखाओ"*
+- *"इस महीने के giving का सार fund के अनुसार बताओ"*
+- *"हमारे सबसे नए सदस्य कौन हैं और क्या हमने उनसे follow-up किया है?"*
+- *"मैं B1 में X कैसे करूं, समझ नहीं आ रहा -- मुझे कदम-दर-कदम बताओ?"*
 
 </div>
 
 <div class="prereqs">
 <h4>आपको क्या चाहिए</h4>
 
-- Mac या Windows के लिए **ChatGPT डेस्कटॉप ऐप**
-- **एक सशुल्क ChatGPT प्लान** (Plus या उससे ऊपर)। मुफ़्त ChatGPT खाते B1 से कनेक्ट नहीं हो सकते।
-- चर्च सेटिंग्स प्रबंधित करने की अनुमति के साथ **आपका B1 लॉगिन** (कुंजी बनाने के लिए आवश्यक)। आपके पास नहीं है? अपने चर्च के B1 व्यवस्थापक से पूछें।
+- Mac या Windows के लिए **ChatGPT desktop app**
+- **एक भुगतान वाला ChatGPT plan** (Plus या उससे ऊपर)। मुफ़्त ChatGPT accounts B1 से कनेक्ट नहीं हो सकते।
+- **आपका B1 login**, church settings प्रबंधित करने की अनुमति के साथ (key बनाने के लिए ज़रूरी)। यह नहीं है? अपने church के B1 administrator से पूछें।
 
 </div>
 
-:::tip अनुशंसित: पहले Claude आज़माएं — यह मुफ़्त है
-[Claude](./claude) अपने **मुफ़्त प्लान** पर B1 से कनेक्ट होता है और 3 मिनट से भी कम में सेट हो जाता है — बस B1 को एक कनेक्टर के रूप में जोड़ें और अपने B1 खाते से साइन इन करें। किसी कुंजी की ज़रूरत नहीं। किसी भी चीज़ के लिए भुगतान करने से पहले आपके चर्च के लिए B1 के साथ AI आज़माने का यह सबसे आसान तरीका है।
+:::tip सुझाव: पहले Claude आज़माएं -- यह मुफ़्त है
+[Claude](./claude) B1 से अपने **मुफ़्त plan** पर कनेक्ट होता है और 3 मिनट से कम में सेट हो जाता है -- बस B1 को connector के रूप में जोड़ें और अपने B1 account से sign in करें। किसी key की ज़रूरत नहीं। किसी भी चीज़ के लिए भुगतान करने से पहले आपके church के लिए AI को B1 के साथ आज़माने का यह सबसे आसान तरीका है।
 :::
 
-## इसे सेट अप करें
+## सेट करें
 
-आपके ChatGPT संस्करण में स्क्रीन थोड़ी अलग दिख सकती हैं।
-
----
-
-**चरण 1 — अपनी B1 कुंजी बनाएं**
-
-कुंजी ही वह चीज़ है जो ChatGPT को *आपके* चर्च के B1 में आने देती है — इसे केवल ChatGPT के लिए एक पासवर्ड की तरह समझें।
-
-1. [B1 Admin](https://admin.b1.church) में लॉग इन करें और [Settings → Developer](https://admin.b1.church/settings/developer) पर जाएं।
-2. **API Keys** टैब पर, **New API Key** पर क्लिक करें और इसका नाम `ChatGPT` रखें।
-3. **Scopes:** चुनें कि ChatGPT क्या कर सकता है। हर क्षेत्र में एक **read** बॉक्स (केवल देखना) और एक **write** बॉक्स (बदलाव करना) होता है। निश्चित नहीं हैं? शुरुआत में केवल **read** बॉक्स चुनें।
-4. **Save** पर क्लिक करें, फिर कुंजी को **Copy** करें (यह `cak_` से शुरू होती है)। यह केवल एक बार दिखाई जाती है।
+आपके ChatGPT के संस्करण में स्क्रीन थोड़ी अलग दिख सकती हैं।
 
 ---
 
-**चरण 2 — ChatGPT के निचले-बाएं कोने में अपने नाम पर क्लिक करें**
+**चरण 1 — अपनी B1 key बनाएं**
 
-![अपने प्रोफ़ाइल नाम पर क्लिक करें](/img/guides/chatgpt-mcp/01.png)
+key वह चीज़ है जो ChatGPT को *आपके* church के B1 में प्रवेश देती है -- इसे सिर्फ़ ChatGPT के लिए एक password समझें।
 
----
-
-**चरण 3 — Settings (सेटिंग्स) पर क्लिक करें**
-
-![मेनू से Settings पर क्लिक करें](/img/guides/chatgpt-mcp/02.png)
-
----
-
-**चरण 4 — बाईं साइडबार में Plugins पर क्लिक करें**
-
-![Integrations के अंतर्गत Plugins पर क्लिक करें](/img/guides/chatgpt-mcp/03.png)
+1. [B1 Admin](https://admin.b1.church) में sign in करें और [Settings → Developer](https://admin.b1.church/settings/developer) पर जाएं।
+2. **API Keys** tab पर, **New API Key** पर click करें और उसका नाम `ChatGPT` रखें।
+3. **Scopes:** चुनें कि ChatGPT क्या कर सकता है। हर क्षेत्र में एक **read** बॉक्स (केवल देखने के लिए) और एक **write** बॉक्स (बदलाव करने के लिए) है। पता नहीं? शुरू में केवल **read** बॉक्स चिह्नित करें।
+4. **Save** पर click करें, फिर key को **Copy** करें (यह `cak_` से शुरू होती है)। यह केवल एक बार दिखती है।
 
 ---
 
-**चरण 5 — MCPs टैब पर क्लिक करें**
+**चरण 2 — ChatGPT के नीचे-बाईं ओर अपने नाम पर click करें**
 
-![MCPs टैब पर क्लिक करें](/img/guides/chatgpt-mcp/04.png)
-
-आपके द्वारा पहले से जोड़े गए सभी MCP सर्वर आपको यहां दिखाई देंगे।
+![अपना profile नाम क्लिक करें](/img/guides/chatgpt-mcp/01.png)
 
 ---
 
-**चरण 6 — Add → Add MCP server पर क्लिक करें**
+**चरण 3 — Settings पर click करें**
 
-![Add पर क्लिक करें फिर Add MCP server](/img/guides/chatgpt-mcp/06.png)
+![मेनू से Settings पर click करें](/img/guides/chatgpt-mcp/02.png)
 
 ---
 
-**चरण 7 — फ़ॉर्म भरें और Save पर क्लिक करें**
+**चरण 4 — बाईं sidebar में Plugins पर click करें**
 
-![कस्टम MCP से कनेक्ट करने का फ़ॉर्म](/img/guides/chatgpt-mcp/07.png)
+![Integrations के अंतर्गत Plugins पर click करें](/img/guides/chatgpt-mcp/03.png)
 
-**Streamable HTTP** पर क्लिक करें, फिर भरें:
+---
 
-| फ़ील्ड | क्या दर्ज करें |
+**चरण 5 — MCPs tab पर click करें**
+
+![MCPs tab पर click करें](/img/guides/chatgpt-mcp/04.png)
+
+आपने जो MCP servers पहले जोड़े हैं, वे यहां दिखेंगे।
+
+---
+
+**चरण 6 — Add → Add MCP server पर click करें**
+
+![Add और फिर Add MCP server पर click करें](/img/guides/chatgpt-mcp/06.png)
+
+---
+
+**चरण 7 — form भरें और Save पर click करें**
+
+![Custom MCP form से कनेक्ट करें](/img/guides/chatgpt-mcp/07.png)
+
+**Streamable HTTP** पर click करें, फिर भरें:
+
+| Field | क्या डालें |
 |---|---|
-| **Name** | `B1 Church` (या आपकी पसंद का कोई भी नाम) |
-| **Type** | **Streamable HTTP** पर क्लिक करें |
+| **Name** | `B1 Church` (या कोई भी नाम जो आपको पसंद हो) |
+| **Type** | **Streamable HTTP** पर click करें |
 | **URL** | `https://api.churchapps.org/mcp` |
-| **Bearer token env var** | खाली छोड़ दें |
-| **Headers** | **+ Add header** पर क्लिक करें → Key: `Authorization` → Value: नीचे देखें |
+| **Bearer token env var** | खाली छोड़ें |
+| **Headers** | **+ Add header** पर click करें → Key: `Authorization` → Value: नीचे देखें |
 
-![भरा हुआ उदाहरण जिसमें Key में Authorization और Value में Bearer कुंजी दिखाई गई है](/img/guides/chatgpt-mcp/08.png)
+![उदाहरण: Key में Authorization और Value में Bearer key दिख रही है](/img/guides/chatgpt-mcp/08.png)
 
 - **Key:** `Authorization`
-- **Value:** `Bearer cak_yourkey` — शब्द Bearer, एक स्पेस, फिर आपकी कुंजी
+- **Value:** `Bearer cak_yourkey` -- शब्द Bearer, एक space, फिर आपकी key
 
-**Save** पर क्लिक करें।
+**Save** पर click करें।
 
-बस इतना ही! किसी चैट पर वापस जाएं और कुछ ऐसा पूछें जैसे *"हमारे चर्च में कितने लोग हैं?"* और ChatGPT सीधे B1 से जवाब लाएगा।
+बस हो गया! किसी chat में वापस जाएं और कुछ ऐसा पूछें जैसे *"हमारे church में कितने लोग हैं?"* और ChatGPT सीधे B1 से उत्तर लाएगा।
 
 ---
 
 ## क्या यह सुरक्षित है?
 
-- ChatGPT केवल **आपके चर्च का** डेटा देख सकता है।
-- यह केवल वही कर सकता है जो आपकी कुंजी अनुमति देती है — केवल **read** बॉक्स वाली कुंजी देख सकती है लेकिन कभी कुछ नहीं बदल सकती।
-- इसे बंद करने के लिए, B1 Admin में **Settings → Developer** के अंतर्गत कुंजी हटा दें। पहुंच तुरंत बंद हो जाती है।
+- ChatGPT केवल **आपके church** का डेटा देख सकता है।
+- वह केवल वही कर सकता है जो आपकी key अनुमति देती है -- केवल **read** बॉक्स वाली key देख सकती है, पर कभी कुछ बदल नहीं सकती।
+- इसे बंद करने के लिए, B1 Admin में **Settings → Developer** के अंतर्गत key हटाएं। पहुंच तुरंत बंद हो जाती है।
 
-## इसकी लागत क्या है?
+## इसकी लागत कितनी है?
 
-B1 कनेक्शन मुफ़्त है — यह ChurchApps का हिस्सा है। कनेक्ट करने के लिए ChatGPT को एक सशुल्क प्लान (Plus या उससे ऊपर) की आवश्यकता होती है; OpenAI का मूल्य निर्धारण देखें।
+B1 कनेक्शन मुफ़्त है -- यह ChurchApps का हिस्सा है। ChatGPT को कनेक्ट करने के लिए एक भुगतान वाला plan (Plus या उससे ऊपर) चाहिए; OpenAI की pricing देखें।
 
 ## तकनीकी विवरण
 
-इस पेज का बाकी हिस्सा तकनीकी उपयोगकर्ताओं और AI सहायकों के लिए है। B1 का MCP सर्वर `https://api.churchapps.org/mcp` (Streamable HTTP) पर है और API कुंजी को `Authorization: Bearer cak_…` हेडर के रूप में लेता है। [MCP सर्वर डेवलपर संदर्भ](/docs/developer/api/mcp) देखें।
+इस पेज का बाकी हिस्सा तकनीकी उपयोगकर्ताओं और AI assistants के लिए है। B1 का MCP server `https://api.churchapps.org/mcp` पर है (Streamable HTTP) और API key को `Authorization: Bearer cak_…` header के रूप में लेता है। देखें [MCP Server developer reference](/docs/developer/api/mcp)।
 
-### Actions के साथ कस्टम GPT
+### Actions वाला Custom GPT
 
-एक कस्टम GPT आपको एक समर्पित सहायक बनाने देता है जिसे आपकी पूरी टीम साझा कर सकती है — वे एक लिंक खोलते हैं और बिना किसी सेटअप के प्रश्न पूछना शुरू कर देते हैं। इसके लिए ChatGPT Plus, Team, या Enterprise खाते और लगभग 10 मिनट की आवश्यकता होती है।
+Custom GPT से आप एक समर्पित assistant बना सकते हैं जिसे आपकी पूरी team साझा कर सकती है -- वे एक link खोलते हैं और उनकी ओर से बिना किसी setup के सवाल पूछना शुरू कर देते हैं। इसके लिए ChatGPT Plus, Team, या Enterprise account और लगभग 10 मिनट चाहिए।
 
-#### 1. एक API कुंजी बनाएं
+#### 1. API key बनाएं
 
-यदि आपने पहले से नहीं किया है, तो ऊपर "इसे सेट अप करें" का चरण 1 फ़ॉलो करें।
+अगर आपने पहले से नहीं किया है, तो ऊपर "सेट करें" के चरण 1 का पालन करें।
 
-#### 2. कस्टम GPT बनाएं
+#### 2. Custom GPT बनाएं
 
-1. ChatGPT में, अपनी प्रोफ़ाइल → **My GPTs** → **Create a GPT** पर क्लिक करें।
-2. **Configure** टैब पर जाएं, GPT को एक नाम दें (जैसे "B1 Assistant") और निर्देश जोड़ें:
+1. ChatGPT में, अपने profile → **My GPTs** → **Create a GPT** पर click करें।
+2. **Configure** tab पर जाएं, GPT को नाम दें (जैसे "B1 Assistant") और निर्देश जोड़ें:
 
    ```
    You help church staff query their B1 records. Use the B1 API actions to
@@ -136,13 +136,13 @@ B1 कनेक्शन मुफ़्त है — यह ChurchApps का 
    answers to data the user has permission to see. Be concise.
    ```
 
-3. **Actions** → **Create new action** → **Authentication** तक स्क्रॉल करें।
+3. **Actions** → **Create new action** → **Authentication** तक scroll करें।
    - **Authentication type:** API Key
-   - **API Key:** अपनी `cak_…` कुंजी पेस्ट करें
+   - **API Key:** अपनी `cak_…` key डालें
    - **Auth Type:** Bearer
-   - सेव करें।
+   - Save करें।
 
-4. **Schema** बॉक्स में, यह शुरुआती OpenAPI स्पेक पेस्ट करें:
+4. **Schema** box में यह starter OpenAPI spec डालें:
 
    ```yaml
    openapi: 3.1.0
@@ -221,38 +221,38 @@ B1 कनेक्शन मुफ़्त है — यह ChurchApps का 
              description: OK
    ```
 
-5. action को सेव करें। इसे टेस्ट करें: *"how many people are in the church?"* — ChatGPT `listPeople` को कॉल करता है और जवाब देता है।
-6. GPT को **Publish** (प्रकाशित) करें (Only me / Anyone with link / Organization) और लिंक अपनी टीम के साथ साझा करें।
+5. action सेव करें। उसे जांचें: *"चर्च में कितने लोग हैं?"* -- ChatGPT `listPeople` को कॉल करेगा और उत्तर देगा।
+6. GPT को **Publish** करें (Only me / Anyone with link / Organization) और link अपनी team के साथ साझा करें।
 
 #### 3. इसका उपयोग करें
 
-लिंक वाला कोई भी व्यक्ति सामान्य भाषा में प्रश्न पूछ सकता है। कुंजी के स्कोप फिर भी लागू होते हैं — केवल-पढ़ने वाली कुंजी लिखने से इनकार करती है, चाहे action स्कीमा कुछ भी कहे।
+जिसके पास भी link है, वह सादी भाषा में सवाल पूछ सकता है। key के scopes फिर भी लागू होते हैं -- केवल-read key write-अनुरोधों को अस्वीकार करती है, भले ही action schema कुछ भी कहे।
 
 ---
 
 ### सुरक्षा और सीमाएं
 
-- **प्रति-चर्च अलगाव।** API कुंजी केवल एक चर्च से जुड़ी होती है। ChatGPT अन्य चर्चों का डेटा नहीं देख सकता।
-- **अनुमति-सीमित।** कुंजी में केवल वही स्कोप होते हैं जो आपने दिए हैं। किसी स्कोप को हटाने से (कुंजी हटाकर और फिर से बनाकर) अगली कॉल पर वह पहुंच कट जाती है।
-- **तुरंत रद्द करने योग्य।** **Settings → Developer → API Keys** में कुंजी हटाएं और पहुंच तुरंत समाप्त हो जाती है।
-- **कस्टम GPT साझा करने से डेटा भी साझा होता है।** GPT तक पहुंच रखने वाला हर कोई वह सब देख सकता है जिसकी कुंजी के स्कोप अनुमति देते हैं। व्यापक रूप से साझा किए गए GPT के लिए सीमित स्कोप चुनें (जैसे `donations:read` छोड़ दें)।
-- **ऑडिट ट्रेल।** ChatGPT के माध्यम से किए गए सभी बदलाव उसी ऑडिट लॉग से गुज़रते हैं जिससे B1 Admin की कार्रवाइयां गुज़रती हैं — उन्हें **Settings → Audit Log** के अंतर्गत देखें।
+- **प्रति-church अलगाव।** API key केवल एक church को पहचानती है। ChatGPT दूसरे churches का डेटा नहीं देख सकता।
+- **अनुमति-सीमित।** key केवल वही scopes लेकर चलती है जो आपने दिए हैं। किसी scope को हटाने (key को हटाकर फिर से बनाने) से अगले call पर वह पहुंच बंद हो जाती है।
+- **तुरंत रद्द करने योग्य।** **Settings → Developer → API Keys** में key हटाएं और पहुंच तुरंत खत्म हो जाती है।
+- **Custom GPT साझा करने से डेटा भी साझा होता है।** GPT तक पहुंच रखने वाला हर व्यक्ति वह सब देख सकता है जो key के scopes अनुमति देते हैं। व्यापक रूप से साझा किए गए GPTs के लिए संकीर्ण scopes चुनें (जैसे `donations:read` छोड़ दें)।
+- **Audit trail।** ChatGPT के ज़रिए किए गए किसी भी बदलाव का वही audit log होता है जो B1 Admin की कार्रवाइयों का होता है -- उन्हें **Settings → Audit Log** के अंतर्गत देखें।
 
 ### समस्या निवारण
 
-**MCP कनेक्टर "Unauthorized" कहता है या 401 त्रुटि दिखाता है:** आपकी API कुंजी गायब है या गलत है। कनेक्टर सेटिंग्स खोलें और **Authorization** हेडर जांचें: मान में शब्द `Bearer` , एक स्पेस, फिर पूरी `cak_…` कुंजी होनी चाहिए, बिना किसी अतिरिक्त स्पेस के।
+**MCP connector "Unauthorized" कहता है या 401 error दिखाता है:** आपकी API key गायब है या गलत है। connector settings खोलें और **Authorization** header जांचें: मान शब्द `Bearer`, एक space, फिर पूरी `cak_…` key होनी चाहिए, बिना किसी अतिरिक्त space के।
 
-**ChatGPT कहता है कि उसे कुछ डेटा नहीं मिल रहा:** हो सकता है कुंजी के पास सही स्कोप न हों। **Settings → Developer → API Keys** में अतिरिक्त स्कोप के साथ एक नई कुंजी बनाएं और कनेक्टर अपडेट करें।
+**ChatGPT कहता है कि उसे कुछ डेटा नहीं मिल रहा:** key में शायद सही scopes नहीं हैं। **Settings → Developer → API Keys** में अतिरिक्त scopes के साथ नई key बनाएं और connector अपडेट करें।
 
-**कस्टम GPT action 401 लौटाता है:** action के प्रमाणीकरण पैनल में पुष्टि करें कि **Auth Type: Bearer** चुना गया है और कुंजी में शब्द `Bearer` शामिल नहीं है (ChatGPT इसे स्वचालित रूप से जोड़ता है)।
+**Custom GPT action 401 लौटाता है:** action की authentication panel में पुष्टि करें कि **Auth Type: Bearer** चुना गया है, और key में शब्द `Bearer` शामिल नहीं है (ChatGPT उसे अपने-आप जोड़ता है)।
 
-**कस्टम GPT action 403 लौटाता है:** कुंजी के पास उस endpoint का स्कोप नहीं है। सही स्कोप के साथ एक नई कुंजी बनाएं और GPT अपडेट करें।
+**Custom GPT action 403 लौटाता है:** key के पास उस endpoint का scope नहीं है। सही scopes के साथ नई key बनाएं और GPT अपडेट करें।
 
-**action स्कीमा अस्वीकार कर दिया जाता है:** ChatGPT को कम से कम एक `paths` प्रविष्टि और एक `servers` URL के साथ OpenAPI 3.1 चाहिए। पेस्ट करने से पहले YAML को [editor.swagger.io](https://editor.swagger.io) पर सत्यापित करें।
+**Action schema अस्वीकार हो जाता है:** ChatGPT को OpenAPI 3.1 चाहिए, जिसमें कम से कम एक `paths` entry और एक `servers` URL हो। चिपकाने से पहले YAML को [editor.swagger.io](https://editor.swagger.io) पर जांचें।
 
 ## संबंधित
 
-- [API Keys](/docs/developer/api/api-keys) — पूर्ण स्कोप संदर्भ
-- [MCP सर्वर (डेवलपर संदर्भ)](/docs/developer/api/mcp) — प्रोटोकॉल विवरण और टूल स्कीमा
-- [Claude](./claude) — वही विचार, Anthropic के मॉडल के लिए
-- [REST API संदर्भ](/docs/developer/api/endpoints) — हर endpoint जिसे एक कस्टम GPT action कॉल कर सकता है
+- [API Keys](/docs/developer/api/api-keys) — पूर्ण scope संदर्भ
+- [MCP Server (developer reference)](/docs/developer/api/mcp) — protocol विवरण और tool schemas
+- [Claude](./claude) — वही विचार, Anthropic के models के लिए
+- [REST API reference](/docs/developer/api/endpoints) — हर endpoint जिसे Custom GPT action कॉल कर सकता है

@@ -60,7 +60,7 @@ Select a session to see its attendance list. Every group member is listed with a
 
 1. Check the box next to each person who attended. Use **Select All** or **Select None** to change everyone at once.
 2. The count above the list (for example, "12 of 15 present") updates as you check boxes.
-3. Click **Save Attendance**. Nothing is recorded until you save, and a message confirms when the save is done.
+3. Click **Save Attendance**. Nothing is recorded until you save, and a message confirms when the save is done. If you try to close or reload the browser tab while a save is still going, your browser warns you first so the changes are not lost.
 
 Unchecking someone who was already recorded as present and then saving removes them from the session.
 

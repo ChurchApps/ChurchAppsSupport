@@ -46,7 +46,7 @@ A donut chart showing how people are distributed across your church's campuses. 
 
 ## Drilling Into the Data
 
-Click any slice of a donut chart or any bar segment on the age chart to navigate to the **People** page pre-filtered to show exactly those people. Use this to quickly build a contact list, run a bulk action, or export a segment — for example, click the **Visitor** slice in Membership Status to see all visitors and then send them to a workflow.
+Click any slice of a donut chart or any bar segment on the age chart to navigate to the **People** page pre-filtered to show exactly those people. The filter stays applied when the page finishes loading, and the count above the list shows how many households and people matched. Use this to quickly build a contact list, run a bulk action, or export a segment — for example, click the **Visitor** slice in Membership Status to see all visitors and then send them to a workflow.
 
 :::tip
 After drilling into a filtered result, use **Save as List** in the People search to save that filter for future use. See [Saved Lists](./lists.md).

@@ -44,6 +44,8 @@ A request whose `Authorization` header is missing or invalid returns:
 
 with HTTP 401 and a `WWW-Authenticate: Bearer resource_metadata="<api>/.well-known/oauth-protected-resource"` header, which OAuth-capable clients follow to start sign-in.
 
+On the hosted API (production and demo), `/mcp` is served through an API Gateway HTTP API rather than the REST API used for the rest of the endpoints. The REST API renames `WWW-Authenticate` to `x-amzn-remapped-www-authenticate` on Lambda proxy responses, which left clients such as ChatGPT with a bare 401 and no way to start sign-in; the HTTP API passes the header through unchanged.
+
 ## Tools
 
 Three generic tools plus one guide. The model uses `list_endpoints` for discovery, `describe_endpoint` to learn a payload shape, `api_call` to actually invoke the API, and `describe_page_builder` when the task involves website content.

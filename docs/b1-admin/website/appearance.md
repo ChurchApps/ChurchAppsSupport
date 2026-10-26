@@ -52,6 +52,7 @@ The Appearance page lets you customize the overall look and feel of your church 
 1. Click **Logo** in the Style Settings panel.
 2. Upload your **Light Background Logo** and **Dark Background Logo**. Use images with a transparent background and a 4:1 aspect ratio for best results.
 3. Upload a **Social Media Image** for link previews and a **Favicon** for the browser tab icon.
+4. Click **Save Changes**. Uploaded images aren't stored until you save, so if you try to close or reload the browser tab first, your browser warns you that you have unsaved changes.
 
 :::tip
 For best results, use a logo with a transparent background in PNG format. This ensures it looks great on both light and dark backgrounds across your website and [mobile app](../settings/mobile-app.md).

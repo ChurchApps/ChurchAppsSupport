@@ -29,7 +29,7 @@ Each household member appears as a card with:
 
 ## Expanding a Member
 
-Tap a member's card to expand it. When expanded, you will see a row for each **service time** within the selected service. Each row shows:
+Tap a member's card to expand it. When expanded, you will see a row for each **service time** within the selected service, earliest first. Service times are ordered by their scheduled day and start time when one is set, otherwise by the time in their name (so "9:00 AM" comes before "10:30 AM"); service times with no time in their name come last, alphabetically. Each row shows:
 
 - The **service time name** (for example, "9:00 AM" or "11:00 AM")
 - The **groups offered** at that service time, listed below the name (for example, "Nursery, Preschool, Adult Bible Class"), so you can see which classes are available before you choose

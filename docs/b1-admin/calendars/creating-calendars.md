@@ -38,9 +38,19 @@ After creating a calendar, click **Manage Events** on its row to open the detail
 Groups that have events in the calendar automatically appear in the **Groups in Calendar** list on the left side of the detail page.
 
 1. Click **Add Group** above the calendar to associate a group with your calendar.
-2. Select the group from the dropdown.
+2. Select the group from the dropdown. The list includes every group in your church, not just the groups you belong to.
 3. Choose whether to include **all events** from that group or only **specific events**.
 4. Click **Save**.
+
+Each event appears on the calendar only once. If you add a whole group, any of its events you had already added one at a time are folded into the group entry, and picking specific events from a group that is already on the calendar adds nothing new. Only groups added as a whole are listed under **Groups in Calendar**.
+
+### Importing an .ics File
+
+Click **Import .ics** to bring in events from another calendar. Choose the **Group** the events should belong to, then click **Choose .ics file** or paste the file's contents, and click **Import**. The events are created in that group, and the group is added to the calendar you imported from, so the events show up there right away.
+
+### Removing an Event from the Calendar
+
+Click an event on the calendar, then click **Remove from Calendar**. This only takes the event off this calendar -- the event itself stays in its group. If the event is on the calendar because its whole group was added, removing it takes all of that group's events off this calendar (the events still stay in the group). To delete an event for good, delete it from the [group's calendar](../groups/group-calendar.md).
 
 :::tip
 Connecting groups to your calendar is a powerful way to automatically aggregate events. When a group leader adds an event to their [group](../groups/creating-groups.md), it can flow into your church-wide calendar without any extra work from you.

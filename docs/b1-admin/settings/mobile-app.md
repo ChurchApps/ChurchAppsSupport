@@ -63,13 +63,15 @@ Keep your tab count manageable. Three to five tabs works well for most churches.
 The **Member portal** item in the same Mobile section holds the settings that govern the member directory and private messaging in the B1.church experience:
 
 - **Directory Approval Group** -- The group that reviews member directory updates, and [account deletion requests](../profile/account-deletion.md), before they take effect.
-- **Show in Directory** -- Who can open the member directory and who is listed in it: **Admins Only**, **Members and Above** (the default), **Regular Attendees and Above**, or **Visitors and Above**. People whose membership status is below the level you pick don't see the directory and aren't listed in it. **Admins Only** closes the directory to everyone except staff with the People &gt; View permission, who can always open the directory and see everyone, whatever this is set to. Guests are never included, since anyone who self-registers online starts out as a guest.
+- **Show in Directory** -- Who can open the member directory and who is listed in it: **Admins Only**, **Members and Above** (the default), **Regular Attendees and Above**, or **Visitors and Above**. People whose membership status is below the level you pick don't see the directory and aren't listed in it. **Admins Only** closes the directory to everyone except staff with the People &gt; View permission (a Staff membership status alone isn't enough), who can always open the directory and see everyone, whatever this is set to. Guests are never included, since anyone who self-registers online starts out as a guest.
 - **Visibility Preference** -- Sets the church-wide default for members who haven't chosen their own setting yet. **Address**, **Phone Number**, and **Email** each have their own dropdown, with the same five levels available everywhere visibility is configured:
   - **Everyone** -- visible to anyone, including anonymous visitors
   - **Members** -- visible only to people with a Member or Staff record
   - **Groups Only** -- visible only to people who share a group with this person, plus staff
   - **My Group Leaders and Staff** -- visible only to leaders of a group this person belongs to, plus staff
   - **Staff Only** -- visible only to staff (anyone whose membership status is Staff, or who has the People &gt; View permission), and to the person themselves
+
+  "Staff" in these levels means anyone whose membership status is Staff or who has the People &gt; View permission. Group changes take effect right away: someone who joins a group, or is made a group leader, can see the matching **Groups Only** or **My Group Leaders and Staff** details of that group's members without signing out and back in.
 
   Members can override these defaults for their own record from the **Privacy** tab of their profile in the B1.church PWA -- see [Editing Your Profile](/docs/b1-church/getting-started/me-page).
 - **Minimum Age for Private Messages** -- A child-safety control. B1 will not open a **new** private-message conversation when either person is under this age, based on their birthdate (household role is used as a fallback when no birthdate is on file). People under the age remain fully visible in the directory -- only direct messaging is blocked, in **both directions**, for everyone including staff. Group conversations and messaging a child's parents still work. Options are Off, 13, 16, or 18; the default is **18**. Existing conversations are not affected.
@@ -85,7 +87,7 @@ Visitors who open the app's [Home screen](/docs/b1-church/getting-started/naviga
 - **Show sign-in prompt on the app home screen** -- Turn this off to hide both the prompt and the **Sign In** button from the Home screen. Visitors can still sign in from the app menu.
 - **Sign-in prompt text** -- Replace the default wording with your own message (up to 150 characters). Leave it blank to use the default. This box is disabled while the prompt is turned off.
 
-Click **Save** to apply. Saving refreshes the app's cached settings, so the change shows up the next time the Home screen loads.
+Click **Save** to apply. A **Saved** message confirms the change. Saving refreshes the app's cached settings, so the change shows up the next time the Home screen loads.
 
 ### Home Screen Tiles
 
@@ -95,9 +97,19 @@ The **Home screen tiles** setting on the same Member portal page (`/mobile/b1-mo
 
 - **Grid** -- Two tiles per row (the default). When the number of tiles is odd, the first tile spans the full width.
 - **Scrolling row** -- One row of tiles that members swipe sideways.
+- **Scrolling (automatic)** -- The same sideways row, but it also moves on its own, advancing one tile about every four seconds and looping back to the start at the end. It pauses while a member touches, hovers over, or tabs into the row and picks up again a few seconds later. On devices set to reduce motion, the row stays still and works like **Scrolling row**.
 - **List** -- A list with a small photo thumbnail next to each tab's name.
 
 Click **Save** to apply.
+
+### Home Screen Sections
+
+Signed-in members always see their own attendance history and submitted forms on the [Me page](/docs/b1-church/getting-started/me-page). The **Home screen sections** switches on the same Member portal page (`/mobile/b1-mobile`) can show them on the Home screen too:
+
+- **Show My Attendance on Home** -- Adds a **My Attendance** section with how many times the member attended in the last 90 days, their two most recent visits, and a **History** link to their full attendance list.
+- **Show My Forms on Home** -- Adds a **My Forms** section with the member's two most recent form submissions and an **All forms** link.
+
+Both are off by default. A section only appears for members who are signed in and have at least one record to show. Click **Save** to apply.
 
 ## Where These Tabs Appear
 

@@ -6,24 +6,28 @@ title: "Berichte"
 
 <div class="article-intro">
 
-B1 Admin bietet mehrere Möglichkeiten, Daten über Ihre Gemeinde, Anwesenheit und Spenden zu ziehen. Die Berichterstattung ist in die relevanten Abschnitte der App integriert, anstatt sich auf einer einzelnen Seite für Berichte zu befinden.
+B1 Admin bietet Ihnen mehrere Wege, Daten zu Ihrer Gemeinde, zur Anwesenheit und zu Spenden abzurufen. Die Berichte sind in die jeweiligen Bereiche der App eingebaut und nicht auf einer einzelnen Berichtsseite zusammengefasst.
 
 </div>
 
-## Wo befinden sich die Berichte?
+## Einführungsvideo
+
+<YouTube id="q3k8ty_V610" title="Berichte in B1 ausführen" />
+
+## Wo Sie Berichte finden
 
 ### Personen
-- **[Geburtstags- und Jahrestaglisten](./birthday-report)** – Filtern Sie nach Geburtsmonat oder Jahrestag-Monat in **Personen → Erweiterte Suche**, um eine Liste der bevorstehenden Geburtstage oder Jahrestage zu erhalten.
+- **[Geburtstags- und Jubiläumslisten](./birthday-report)** -- Filtern Sie nach Geburtsmonat oder Jubiläumsmonat unter **Personen → Erweiterte Suche**, um eine Liste der anstehenden Geburtstage oder Jubiläen zu erhalten.
 
 ### Anwesenheit
-- **[Anwesenheitsberichte](./attendance-reports)** – Anwesenheitstrends und Gruppenteilnahmedaten finden Sie im Abschnitt **Anwesenheit**.
+- **[Anwesenheitsberichte](./attendance-reports)** -- Anwesenheitstrends und Gruppenanwesenheit finden Sie im Bereich **Anwesenheit**.
 
 ### Spenden
-- **[Spendendaten-Zusammenfassung](./donation-summary)** – Spendensummen und Fonds-Aufschlüsselungen finden Sie im Abschnitt **Spenden**.
+- **[Spendenübersicht](./donation-summary)** -- Gesamtbeträge und Aufschlüsselungen nach Fonds finden Sie im Bereich **Spenden**.
 
 ### Einstellungen
-- **[Audit-Protokoll](./audit-log)** – Verfolgen Sie alle Änderungen und Aktionen in Ihrem Kirchenverteilungssystem (found unter **Einstellungen → Audit-Protokoll**).
+- **[Audit-Log](./audit-log)** -- Verfolgen Sie alle Änderungen und Aktionen in Ihrem Gemeindeverwaltungssystem (zu finden unter **Einstellungen → Audit-Log**).
 
 :::info
-Berichtsdaten hängen von konsistenter Dateneingabe ab. Stellen Sie sicher, dass Ihr Team [Anwesenheit verfolgt](../attendance/tracking-attendance.md), [Spenden erfasst](../donations/recording-donations.md) und [Personendatensätze](../people/adding-people.md) auf dem neuesten Stand hält, um die genauesten Ergebnisse zu erhalten.
+Die Aussagekraft der Berichte hängt von einer konsequenten Datenerfassung ab. Stellen Sie sicher, dass Ihr Team [die Anwesenheit erfasst](../attendance/tracking-attendance.md), [Spenden einträgt](../donations/recording-donations.md) und die [Personendatensätze](../people/adding-people.md) auf dem neuesten Stand hält, damit die Ergebnisse möglichst genau sind.
 :::

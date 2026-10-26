@@ -67,6 +67,8 @@ Changed your mind after declining? Open the plan; under your position, which sho
 
 The **Decline** and **Accept** links are only available until your service time is over -- after that, your assignment can no longer be changed from the plan page.
 
+If you never responded to an assignment and its service time has passed, the plan page shows a **Response closed** badge instead of **Accept** and **Decline**, with the note *"This serving time has passed, so you can no longer respond."*
+
 :::tip
 If you have multiple assignments across different plans, the list is sorted by date so your upcoming commitments appear first. Check back regularly to stay on top of your schedule.
 :::

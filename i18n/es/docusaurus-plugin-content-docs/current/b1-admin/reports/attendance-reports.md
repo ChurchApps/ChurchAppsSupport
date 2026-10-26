@@ -1,76 +1,75 @@
 ---
-title: "Informes de Asistencia"
+title: "Informes de asistencia"
 ---
 
-# Informes de Asistencia
+# Informes de asistencia
 
 <div class="article-intro">
 
-B1 Admin proporciona tres informes de asistencia para ayudarte a entender cómo las personas se están involucrando con tus servicios y grupos. Cada informe ofrece una perspectiva diferente sobre tus datos de asistencia, desde tendencias de alto nivel hasta desglose diarios.
+B1 Admin ofrece tres informes de asistencia para ayudarte a entender cómo participan las personas en tus servicios y grupos. Cada informe ofrece una perspectiva diferente de tus datos de asistencia, desde tendencias generales hasta desgloses diarios.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de empezar</h4>
 
-- Asegúrate de que la asistencia se [rastrea consistentemente](../attendance/tracking-attendance.md) para tus servicios y grupos
+- Asegúrate de que la asistencia se [registre de forma consistente](../attendance/tracking-attendance.md) para tus servicios y grupos
 - Asegúrate de que tus [grupos](../groups/creating-groups.md) y servicios estén configurados en B1 Admin
-- Necesitas los [permisos](../settings/roles-permissions.md) apropiados para acceder a informes
+- Necesitas los [permisos](../settings/roles-permissions.md) adecuados para acceder a los informes
 
 </div>
 
-## Tendencia de Asistencia
+## Tendencia de asistencia
 
-El informe Attendance Trend muestra cómo cambia la asistencia a lo largo del tiempo para tus servicios.
+El informe de Tendencia de asistencia muestra cómo cambia la asistencia a tus servicios a lo largo del tiempo.
 
-1. Ve directamente a **admin.b1.church/reports/attendanceTrend** en tu navegador (los informes no tienen entrada en el menú de navegación -- marcar la dirección es la forma más fácil de volver a ella). El mismo informe también está en la página Attendance: haz clic en **All years**, luego elige la pestaña **Attendance Trend**.
-2. Opcionalmente, selecciona un **Campus**, **Service**, **Service Time** o **Group** para filtrar los resultados.
-3. Establece la **Start Date** y **End Date**. De forma predeterminada, el informe cubre el año pasado, desde hace un año hasta hoy, y la fecha de finalización se incluye completamente. Haz clic en **Run Report**.
-4. El informe muestra un gráfico de barras y tabla del total de visitas por semana. Cada semana se etiqueta con la fecha del domingo de esa semana, y la columna **Session Dates** de la tabla enumera las fechas reales en esa semana que tuvieron asistencia (por ejemplo, "9/27, 9/30").
+1. Ve directamente a **admin.b1.church/reports/attendanceTrend** en tu navegador (los informes no aparecen en el menú de navegación; guardar la dirección en tus favoritos es la forma más fácil de volver a ellos). El mismo informe también está en la página de Asistencia: haz clic en **Todos los años** y luego elige la pestaña **Tendencia de asistencia**.
+2. Opcionalmente, selecciona un **Campus**, **Servicio**, **Horario de servicio** o **Grupo** para filtrar los resultados.
+3. Establece la **Fecha de inicio** y la **Fecha de fin**. Por defecto, el informe abarca el último año, desde hace un año hasta hoy, e incluye la fecha de fin completa. Haz clic en **Ejecutar informe**.
+4. El informe muestra un gráfico de barras y una tabla con el total de visitas por semana. Cada semana está etiquetada con la fecha del domingo de esa semana, y la columna **Fechas de sesión** de la tabla enumera las fechas reales de esa semana que tuvieron asistencia (por ejemplo, "9/27, 9/30").
 
-Este informe es útil para detectar patrones como caídas estacionales, tendencias de crecimiento o el impacto de eventos especiales.
+Este informe es útil para detectar patrones como bajas estacionales, tendencias de crecimiento o el impacto de eventos especiales.
 
-## Asistencia de Grupo {#group-attendance}
+## Asistencia de grupos
 
-El informe Group Attendance muestra quién asistió a cada sesión de grupo en un rango de fechas.
+El informe de Asistencia de grupos muestra quién asistió a cada sesión de grupo dentro de un rango de fechas.
 
-1. Ve directamente a **admin.b1.church/reports/groupAttendance** en tu navegador, o en la página Attendance haz clic en **All years** y elige la pestaña **Group Attendance**.
-2. Opcionalmente, selecciona un **Campus** y **Service**.
-3. Establece la **Start Date** y **End Date**. De forma predeterminada, el informe cubre desde el último domingo hasta hoy, y la fecha de finalización se incluye completamente.
-4. Haz clic en **Run Report**.
+1. Ve directamente a **admin.b1.church/reports/groupAttendance** en tu navegador, o en la página de Asistencia haz clic en **Todos los años** y elige la pestaña **Asistencia de grupos**.
+2. Opcionalmente, selecciona un **Campus** y un **Servicio**.
+3. Establece la **Fecha de inicio** y la **Fecha de fin**. Por defecto, el informe abarca desde el domingo pasado hasta hoy, e incluye la fecha de fin completa.
+4. Haz clic en **Ejecutar informe**.
 
-Los resultados se agrupan por fecha de sesión, luego por hora de servicio, luego por grupo, con las personas que asistieron enumeradas bajo cada grupo. Los horarios de servicio, grupos y nombres se ordenan alfabéticamente. Al lado del nombre de cada persona, la columna **Checked In** muestra la hora en que se registró su asistencia (en blanco cuando no hay hora en el archivo) y la columna **Membership Status** muestra su estado, como Miembro o Visitante.
+Los resultados se agrupan por fecha de sesión, luego por horario de servicio, luego por grupo, con las personas que asistieron enumeradas debajo de cada grupo. Los horarios de servicio, grupos y nombres se ordenan alfabéticamente. Junto al nombre de cada persona, la columna **Registrado** muestra la hora en que se registró su asistencia (en blanco cuando no hay hora registrada) y la columna **Estado de membresía** muestra su estado, como Miembro o Visitante.
 
-Para descargar una hoja de cálculo, haz clic en **Download Options** y elige **Summary**. El CSV tiene:
+Para descargar una hoja de cálculo, haz clic en **Opciones de descarga** y elige **Resumen**. El CSV contiene:
 
-- Una fila por miembro de cada grupo que se reunió en el rango de fechas, ordenado por grupo y luego por nombre.
+- Una fila por cada miembro de cada grupo que se reunió en el rango de fechas, ordenadas por grupo y luego por nombre.
 - El nombre de la persona y el nombre del grupo en las primeras columnas.
-- Una columna por sesión fechada, nombrada con el servicio, hora de servicio y fecha (por ejemplo, "Sunday - 9:00 AM (2026-09-27)"), con cada persona marcada como **present** o **absent**.
+- Una columna por cada sesión con fecha, con el nombre del servicio, el horario de servicio y la fecha (por ejemplo, "Domingo - 9:00 AM (2026-09-27)"), y cada persona marcada como **presente** o **ausente**.
 
 Usa este informe para comparar la asistencia entre grupos e identificar qué grupos están creciendo o necesitan atención.
 
-## Asistencia Diaria de Grupo
+## Asistencia diaria de grupo
 
-El informe Daily Group Attendance proporciona un desglose día a día de datos de asistencia para tus grupos.
+El informe de Asistencia diaria de grupo (titulado **Asistencia de grupo por día**) ofrece un conteo día por día de cuántas personas asistieron a un grupo.
 
 1. Ve directamente a **admin.b1.church/reports/dailyGroupAttendance** en tu navegador.
-2. Establece el **rango de fechas** para el informe.
-3. Selecciona el o los **grupos** que deseas revisar.
-4. El informe muestra números de asistencia para cada día individual dentro del rango.
+2. Usa los menús desplegables de **Campus**, **Servicio** y **Horario de servicio** para reducir la lista, luego elige el **Grupo** que quieres revisar.
+3. Ejecuta el informe. Enumera cada día en que se reunió el grupo, del más antiguo al más reciente, con la **Fecha** y el número de **Asistentes** registrados ese día.
 
-Este informe te proporciona detalle granular, que es útil para entender la variación de semana a semana o identificar días específicos con asistencia inusualmente alta o baja.
+Este informe te da un detalle muy específico, útil para entender las variaciones de una semana a otra o para identificar días concretos con asistencia inusualmente alta o baja.
 
 :::tip
-Usa el informe Attendance Trend para una visión general de alto nivel y el informe Daily Group Attendance cuando necesites profundizar en fechas específicas.
+Usa el informe de Tendencia de asistencia para una visión general y el informe de Asistencia diaria de grupo cuando necesites profundizar en fechas específicas.
 :::
 
-## Usos Prácticos
+## Usos prácticos
 
-- **Planificación** -- Usa las tendencias de asistencia para planificar asientos, personal y recursos para los próximos servicios.
-- **Divulgación** -- Identifica patrones de asistencia decreciente temprano para que puedas hacer seguimiento con los miembros.
-- **Informes de junta** -- Incluye datos de asistencia en tus informes regulares de liderazgo para mostrar la salud del ministerio.
-- **Evaluación de eventos** -- Compara la asistencia antes y después de eventos especiales para medir su impacto.
+- **Planificación**: usa las tendencias de asistencia para planear la distribución de asientos, el personal y los recursos de los próximos servicios.
+- **Alcance**: identifica a tiempo los patrones de caída de asistencia para poder dar seguimiento a los miembros.
+- **Informes para la junta**: incluye los datos de asistencia en tus informes periódicos de liderazgo para mostrar la salud del ministerio.
+- **Evaluación de eventos**: compara la asistencia antes y después de eventos especiales para medir su impacto.
 
 :::warning
-Los datos de asistencia se registran a través de tus procesos de check-in de grupo y servicio. Si la asistencia no se rastrea consistentemente, tus informes no reflejarán con precisión la participación real. Consulta [Tracking Attendance](../attendance/tracking-attendance.md) para las instrucciones de configuración.
+Los datos de asistencia se registran a través de los procesos de registro de tus grupos y servicios. Si la asistencia no se registra de forma consistente, tus informes no reflejarán con precisión la participación real. Consulta [Registrar la asistencia](../attendance/tracking-attendance.md) para ver las instrucciones de configuración.
 :::

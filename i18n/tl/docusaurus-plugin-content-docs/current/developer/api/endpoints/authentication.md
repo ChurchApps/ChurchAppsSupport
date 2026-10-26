@@ -6,27 +6,27 @@ title: "Authentication at Mga Pahintulot"
 
 <div class="article-intro">
 
-Gumagamit ang ChurchApps API ng JWT-based na authentication. Nagla-login ang mga gumagamit upang makatanggap ng token na nag-e-encode ng kanilang pagkakakilanlan, membership sa simbahan, at mga pahintulot. Sinasaklaw ng pahinang ito ang daloy ng auth, modelo ng pahintulot, at suporta sa OAuth.
+Gumagamit ang ChurchApps API ng JWT-based na authentication. Nag-log in ang mga user para makatanggap ng token na naglalaman ng kanilang pagkakakilanlan, pagiging miyembro sa simbahan, at mga pahintulot. Tinatalakay ng pahinang ito ang daloy ng auth, ang modelo ng pahintulot, at ang suporta sa OAuth.
 
 </div>
 
-## Daloy ng Pag-login
+## Daloy ng Login
 
-### Karaniwang Pag-login
+### Karaniwang Login
 
 ```
 POST /membership/users/login
 ```
 
-**Auth:** Pampubliko
+**Auth:** Public
 
 Tumatanggap ng isa sa tatlong uri ng kredensyal:
 
 | Field | Paglalarawan |
 |-------|-------------|
-| `email` + `password` | Karaniwang pag-login gamit ang email/password |
-| `jwt` | Muling pag-authenticate gamit ang umiiral na JWT |
-| `authGuid` | Isang beses na auth link (ginagamit sa mga welcome/reset na email) |
+| `email` + `password` | Karaniwang login gamit ang email at password |
+| `jwt` | Mag-authenticate muli gamit ang umiiral nang JWT |
+| `authGuid` | Isang beses na auth link (ginagamit sa mga welcome at reset email) |
 
 **Tugon:**
 
@@ -58,29 +58,29 @@ Tumatanggap ng isa sa tatlong uri ng kredensyal:
 }
 ```
 
-Ang field na `token` ay isang JWT na dapat ipadala bilang `Authorization: Bearer <token>` sa mga susunod na kahilingan.
+Ang field na `token` ay isang JWT na dapat ipadala bilang `Authorization: Bearer <token>` sa mga kasunod na request.
 
 ### Nilalaman ng Token
 
-Ang JWT ay nag-e-encode ng:
-- `id` — ID ng Gumagamit
-- `churchId` — Kasalukuyang napiling simbahan
-- `personId` — Talaan ng tao para sa napiling simbahan
+Ini-encode ng JWT ang:
+- `id` — ID ng user
+- `churchId` — Kasalukuyang piniling simbahan
+- `personId` — Record ng tao para sa napiling simbahan
 - Mga array ng pahintulot bawat API
 
 ### Pagpili ng Simbahan
 
-Ang mga gumagamit ay maaaring kabilang sa maraming simbahan. Kasama sa tugon ng pag-login ang lahat ng simbahan kasama ang kanilang mga pahintulot. Upang lumipat ng simbahan, ang client ay bumubuo ng bagong JWT na naka-scope sa ibang simbahan mula sa data ng tugon ng pag-login.
+Maaaring kabilang ang mga user sa maraming simbahan. Kasama sa tugon ng login ang lahat ng simbahan at ang kanilang mga pahintulot. Para magpalipat ng simbahan, gagawa ang client ng bagong JWT na nakasaklaw sa ibang simbahan mula sa datos ng tugon ng login.
 
-## Pagpaparehistro ng Gumagamit
+## Pagpaparehistro ng User
 
-### Magrehistro ng Bagong Gumagamit
+### Magrehistro ng Bagong User
 
 ```
 POST /membership/users/register
 ```
 
-**Auth:** Pampubliko
+**Auth:** Public
 
 ```json
 {
@@ -92,9 +92,9 @@ POST /membership/users/register
 }
 ```
 
-Lumilikha ng gumagamit na may pansamantalang password at nagpapadala ng welcome email na may auth link. Ang unang gumagamit na nagrehistro sa bagong instance ay awtomatikong binibigyan ng server admin access.
+Gumagawa ng user na may pansamantalang password at nagpapadala ng welcome email na may auth link. Ang unang user na nairehistro sa bagong instance ay awtomatikong binibigyan ng access bilang server admin.
 
-Dalawang opsyonal na bot-trap field ang tinatanggap: `website` (isang nakatagong honeypot field na iniiwang walang laman ng mga totoong user) at `fillMs` (gaano katagal bukas ang form, sa milliseconds). Kapag may laman ang `website` o mas mababa sa 2000 ang `fillMs`, walang account na nalilikha, ngunit nagbabalik pa rin ang endpoint ng normal na mukhang `200` para hindi malaman ng mga bot na tinanggihan sila. Ang mga client na walang ibinibigay sa dalawang field na ito ay nagre-register gaya ng dati.
+Dalawang opsyonal na bot-trap field ang tinatanggap: `website` (isang nakatagong honeypot field na iniiwan ng totoong user na walang laman) at `fillMs` (gaano katagal bukas ang form, sa milliseconds). Kapag may laman ang `website` o mas mababa sa 2000 ang `fillMs`, walang gagawing account, pero nagbabalik pa rin ang endpoint ng karaniwang `200` para hindi malaman ng mga bot na tinanggihan sila. Ang mga client na hindi nagpapadala ng dalawang field na ito ay nakakarehistro nang normal.
 
 ### Magrehistro ng Bagong Simbahan
 
@@ -104,52 +104,52 @@ POST /membership/churches/add
 
 **Auth:** JWT
 
-Pagkatapos magrehistro ng gumagamit, tawagan ang endpoint na ito upang lumikha ng simbahan at iugnay ang gumagamit dito.
+Pagkatapos magrehistro ng user, tawagin ang endpoint na ito para gumawa ng simbahan at iugnay ang user dito.
 
 ## Pamamahala ng Password
 
 | Method | Path | Auth | Paglalarawan |
 |--------|------|------|-------------|
-| POST | `/membership/users/forgot` | Pampubliko | Magpadala ng email para sa pag-reset ng password. Body: `{ "userEmail": "...", "appName": "...", "appUrl": "..." }` |
-| POST | `/membership/users/setPasswordGuid` | Pampubliko | Magtakda ng bagong password gamit ang auth GUID mula sa reset email. Body: `{ "authGuid": "...", "newPassword": "..." }` |
-| POST | `/membership/users/updatePassword` | JWT | Baguhin ang password ng kasalukuyang gumagamit. Body: `{ "newPassword": "..." }` |
+| POST | `/membership/users/forgot` | Public | Magpadala ng email para sa pag-reset ng password. Body: `{ "userEmail": "...", "appName": "...", "appUrl": "..." }` |
+| POST | `/membership/users/setPasswordGuid` | Public | Magtakda ng bagong password gamit ang auth GUID mula sa reset email. Body: `{ "authGuid": "...", "newPassword": "..." }` |
+| POST | `/membership/users/updatePassword` | JWT | Palitan ang password ng kasalukuyang user. Body: `{ "newPassword": "..." }` |
 
 ## Modelo ng Pahintulot
 
-Ang mga pahintulot ay inorganisa ayon sa module at itinatalaga sa mga gumagamit sa pamamagitan ng mga tungkulin. Ang bawat pahintulot ay may **uri ng nilalaman** at isang **aksyon**.
+Nakaayos ang mga pahintulot ayon sa module at itinatalaga sa mga user sa pamamagitan ng mga tungkulin. Ang bawat pahintulot ay may **content type** at isang **action**.
 
 ### Sanggunian ng Pahintulot
 
-| Seksyon ng Display | Uri ng Nilalaman | Aksyon | Paglalarawan |
+| Seksyon sa Display | Content Type | Action | Paglalarawan |
 |----------------|--------------|--------|-------------|
-| **Attendance** | Attendance | Checkin | Mag-check in ng mga miyembro sa mga serbisyo |
-| | Attendance | Edit | Mag-edit ng mga talaan ng attendance |
+| **Attendance** | Attendance | Checkin | I-check in ang mga miyembro sa mga serbisyo |
+| | Attendance | Edit | I-edit ang mga attendance record |
 | | Services | Edit | Pamahalaan ang mga serbisyo at oras ng serbisyo |
-| | Attendance | View | Tingnan ang mga talaan ng attendance |
+| | Attendance | View | Tingnan ang mga attendance record |
 | | Attendance | View Summary | Tingnan ang mga buod at ulat ng attendance |
-| **Mga Donasyon** | Donations | Edit | Lumikha at mag-edit ng mga talaan ng donasyon |
-| | Settings | Edit | Mag-edit ng mga setting ng pagbibigay/bayad |
-| | Donations | View Summary | Tingnan ang mga buod na ulat ng donasyon |
-| | Donations | View | Tingnan ang mga indibidwal na talaan ng donasyon |
-| **Mga Tao at Grupo** | Forms | Admin | Buong administrasyon ng form |
-| | Forms | Edit | Mag-edit ng mga kahulugan ng form |
-| | Plans | Edit | Mag-edit ng mga plano ng serbisyo |
-| | Group Members | Edit | Magdagdag/mag-alis ng mga miyembro ng grupo |
-| | Groups | Edit | Lumikha at mag-edit ng mga grupo |
-| | Households | Edit | Mag-edit ng mga takdang-aralin sa sambahayan |
-| | People | Edit | Mag-edit ng anumang talaan ng tao |
-| | People | Edit Self | Mag-edit lamang ng sariling talaan ng tao |
-| | Roles | Edit | Pamahalaan ang mga tungkulin at takdang-aralin ng gumagamit |
+| **Donations** | Donations | Edit | Gumawa at mag-edit ng mga donation record |
+| | Settings | Edit | I-edit ang mga setting ng pagbibigay/pagbabayad |
+| | Donations | View Summary | Tingnan ang mga ulat ng buod ng donasyon |
+| | Donations | View | Tingnan ang mga indibidwal na donation record |
+| **People and Groups** | Forms | Admin | Buong pamamahala ng form |
+| | Forms | Edit | I-edit ang mga kahulugan ng form |
+| | Plans | Edit | I-edit ang mga plano ng serbisyo |
+| | Group Members | Edit | Magdagdag/mag-alis ng miyembro ng grupo |
+| | Groups | Edit | Gumawa at mag-edit ng mga grupo |
+| | Households | Edit | I-edit ang mga takdang sambahayan |
+| | People | Edit | I-edit ang anumang record ng tao |
+| | People | Edit Self | I-edit ang sarili mong record ng tao lamang |
+| | Roles | Edit | Pamahalaan ang mga tungkulin at takdang user |
 | | Group Members | View | Tingnan ang mga listahan ng miyembro ng grupo |
-| | People | View Members | Tingnan lamang ang mga miyembro (hindi mga bisita) |
+| | People | View Members | Tingnan ang mga miyembro lamang (hindi mga bisita) |
 | | People | View | Tingnan ang lahat ng tao |
-| | Roles | View | Tingnan ang mga tungkulin at takdang-aralin |
-| | Settings | Edit | Mag-edit ng mga setting ng simbahan |
-| **Nilalaman** | Content | Edit | Mag-edit ng mga pahina, seksyon, elemento |
-| | Settings | Edit | Mag-edit ng mga setting ng nilalaman |
+| | Roles | View | Tingnan ang mga tungkulin at takdang |
+| | Settings | Edit | I-edit ang mga setting ng simbahan |
+| **Content** | Content | Edit | I-edit ang mga pahina, seksyon, elemento |
+| | Settings | Edit | I-edit ang mga setting ng nilalaman |
 | | StreamingServices | Edit | Pamahalaan ang configuration ng streaming service |
-| | Chat | Host | Mag-host/mag-moderate ng mga sesyon ng chat |
-| **Pagmemensahe** | Texting | Send | Magpadala ng mga SMS text message |
+| | Chat | Host | I-host/i-moderate ang mga chat session |
+| **Messaging** | Texting | Send | Magpadala ng SMS text message |
 
 ### Paano Sinusuri ang mga Pahintulot
 
@@ -170,40 +170,42 @@ crudSettings: {
 
 ### Server Admin
 
-Ang pahintulot na `Server.Admin` ay nagbibigay ng ganap na access sa lahat ng simbahan. Ito ay itinatalaga sa unang nagrehistrong gumagamit at maaaring ibigay sa iba sa pamamagitan ng tungkulin ng server admin.
+Ang pahintulot na `Server.Admin` ay nagbibigay ng buong access sa lahat ng simbahan. Ito ay itinatalaga sa unang nairehistrong user at maaaring ibigay sa iba sa pamamagitan ng server admin role.
 
 ## OAuth 2.0
 
-Sinusuportahan ng API ang OAuth 2.0 para sa mga third-party na integrasyon. Dalawang uri ng grant ang magagamit.
+Sinusuportahan ng API ang OAuth 2.0 para sa mga third-party integration. May dalawang grant type na available.
 
 ### Authorization Code Flow
 
-1. **Authorize:** `POST /membership/oauth/authorize` (kailangan ng JWT)
-   - Body: `{ "client_id": "...", "redirect_uri": "...", "response_type": "code", "scope": "...", "state": "..." }`
-   - Nagbabalik: `{ "code": "...", "state": "..." }`
+1. **Authorize:** `POST /membership/oauth/authorize` (kailangan ang JWT)
+   - Body: `{ "client_id": "...", "redirect_uri": "...", "response_type": "code", "scope": "...", "state": "...", "code_challenge": "...", "code_challenge_method": "S256" }`
+   - Ang `code_challenge` / `code_challenge_method` (PKCE, `S256` lamang) ay kinakailangan para sa mga public client na walang secret
+   - Nagbabalik ng: `{ "code": "...", "state": "..." }`
 
-2. **Ipagpalit ang code para sa token:** `POST /membership/oauth/token` (Pampubliko)
-   - Body: `{ "grant_type": "authorization_code", "code": "...", "client_id": "...", "client_secret": "...", "redirect_uri": "..." }`
-   - Nagbabalik: `{ "access_token": "...", "token_type": "Bearer", "expires_in": 43200, "refresh_token": "...", "scope": "..." }`
+2. **Palitan ang code ng token:** `POST /membership/oauth/token` (Public)
+   - Body: `{ "grant_type": "authorization_code", "code": "...", "client_id": "...", "client_secret": "...", "redirect_uri": "...", "code_verifier": "..." }`
+   - Ipadala ang `code_verifier` kapag may `code_challenge` ang hakbang ng authorize; hindi isinasama ng mga public client ang `client_secret`. Tinatanggap ang JSON o form-encoded na body
+   - Nagbabalik ng: `{ "access_token": "...", "token_type": "Bearer", "expires_in": 43200, "refresh_token": "...", "scope": "..." }`
 
-3. **Refresh token:** `POST /membership/oauth/token` (Pampubliko)
+3. **I-refresh ang token:** `POST /membership/oauth/token` (Public)
    - Body: `{ "grant_type": "refresh_token", "refresh_token": "...", "client_id": "...", "client_secret": "..." }`
 
-Ang mga access token ay nag-e-expire pagkatapos ng **12 oras**.
+Nag-e-expire ang mga access token pagkalipas ng **12 oras**.
 
 ### Device Code Flow (RFC 8628)
 
 Para sa mga device na walang browser (mga TV app, kiosk):
 
-1. **Humiling ng device code:** `POST /membership/oauth/device/authorize` (Pampubliko)
+1. **Humiling ng device code:** `POST /membership/oauth/device/authorize` (Public)
    - Body: `{ "client_id": "...", "scope": "..." }`
-   - Nagbabalik: `{ "device_code": "...", "user_code": "ABCD-1234", "verification_uri": "https://app.b1.church/device", "expires_in": 900, "interval": 5 }`
+   - Nagbabalik ng: `{ "device_code": "...", "user_code": "ABCD-1234", "verification_uri": "https://app.b1.church/device", "expires_in": 900, "interval": 5 }`
 
-2. **Ilagay ng gumagamit ang code** sa verification URI at mag-approve o mag-deny
+2. **Ilalagay ng user ang code** sa verification URI at aaprubahan o tatanggihan ito
 
-3. **Mag-poll para sa token:** `POST /membership/oauth/token` (Pampubliko)
+3. **Mag-poll para sa token:** `POST /membership/oauth/token` (Public)
    - Body: `{ "grant_type": "urn:ietf:params:oauth:grant-type:device_code", "device_code": "...", "client_id": "..." }`
-   - Nagbabalik ng `authorization_pending` hanggang sa ma-approve, pagkatapos ay nagbabalik ng access token
+   - Nagbabalik ng `authorization_pending` hanggang maaprubahan, at saka ibinabalik ang access token
 
 ### Pamamahala ng OAuth Client
 
@@ -212,27 +214,28 @@ Para sa mga device na walang browser (mga TV app, kiosk):
 | GET | `/membership/oauth/clients` | JWT | Server.Admin | Ilista ang lahat ng OAuth client |
 | GET | `/membership/oauth/clients/:id` | JWT | Server.Admin | Kunin ang client ayon sa ID |
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Kunin ang client ayon sa client ID (nakatago ang secret) |
-| POST | `/membership/oauth/clients` | JWT | Server.Admin | Lumikha o mag-update ng isang client |
+| POST | `/membership/oauth/clients` | JWT | Server.Admin | Gumawa o mag-update ng client |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Burahin ang isang client |
+| POST | `/membership/oauth/register` | Public | — | Dynamic client registration (RFC 7591) para sa mga public client gaya ng MCP connector. Tingnan ang [Connected Apps](../connected-apps#dynamic-client-registration) |
 
-### Mga Endpoint ng Pag-approve ng Device
+### Mga Endpoint ng Pag-apruba ng Device
 
 | Method | Path | Auth | Paglalarawan |
 |--------|------|------|-------------|
-| GET | `/membership/oauth/device/pending/:userCode` | JWT | Kunin ang impormasyon ng naghihintay na device code para sa approval UI |
+| GET | `/membership/oauth/device/pending/:userCode` | JWT | Kunin ang impormasyon ng nakabinbing device code para sa UI ng pag-apruba |
 | POST | `/membership/oauth/device/approve` | JWT | Aprubahan ang isang device authorization. Body: `{ "user_code": "...", "church_id": "..." }` |
 | POST | `/membership/oauth/device/deny` | JWT | Tanggihan ang isang device authorization. Body: `{ "user_code": "..." }` |
 
-## Mga Pampubliko vs Naka-authenticate na Endpoint
+## Mga Public vs. Naka-authenticate na Endpoint
 
-Gumagamit ang API ng dalawang wrapper function na tumutukoy sa mga kinakailangan sa authentication:
+Gumagamit ang API ng dalawang wrapper function na nagtatakda ng mga kinakailangan sa authentication:
 
-- **`actionWrapper`** — Nangangailangan ng valid na JWT. Ang authenticated user object (`au`) ay magagamit na may `churchId`, `userId`, at mga pagsusuri ng pahintulot.
-- **`actionWrapperAnon`** — Hindi kailangan ng authentication. Ginagamit para sa pag-login, pagpaparehistro, mga pampublikong paghahanap ng nilalaman, at mga tumatanggap ng webhook.
+- **`actionWrapper`** — Nangangailangan ng balidong JWT. Available ang naka-authenticate na user object (`au`) na may `churchId`, `userId`, at mga pagsusuri ng pahintulot.
+- **`actionWrapperAnon`** — Walang kinakailangang authentication. Ginagamit para sa login, pagpaparehistro, mga public na paghahanap ng content, at mga webhook receiver.
 
-Sa mga talahanayan ng endpoint sa buong dokumentasyong ito, ang mga ito ay ipinapakita bilang **JWT** at **Pampubliko** ayon sa pagkakabanggit sa kolum ng Auth.
+Sa mga talahanayan ng endpoint sa buong dokumentasyong ito, ang mga ito ay ipinapakita bilang **JWT** at **Public** sa column na Auth.
 
 ## Mga Kaugnay na Pahina
 
-- [Istraktura ng Module](../module-structure) — Kung paano inorganisa ang mga controller, repository, at modelo
-- [Lokal na Pag-setup](../local-setup) — Pagpapatakbo ng API nang lokal para sa development
+- [Module Structure](../module-structure) — Paano inaayos ang mga controller, repository, at model
+- [Local Setup](../local-setup) — Pagpapatakbo ng API nang lokal para sa development

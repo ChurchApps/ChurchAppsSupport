@@ -1,73 +1,73 @@
 ---
-title: "भूमिकाएं असाइन करना"
+title: "भूमिकाएँ सौंपना"
 ---
 
-# भूमिकाएं असाइन करना {#assigning-roles}
+# भूमिकाएँ सौंपना
 
 <div class="article-intro">
 
-B1 Admin आपकी team के हर उपयोगकर्ता के लिए role-based permission system का उपयोग करता है, ताकि नियंत्रित रहे कि वे क्या देख और कर सकते हैं। भूमिकाएं असाइन करके, आप staff और volunteers को ठीक उन्हीं क्षेत्रों तक पहुंच दे सकते हैं जिनकी उन्हें आवश्यकता है — और उससे अधिक नहीं। सही भूमिका प्रबंधन आपके church के data को सुरक्षित रखता है और आपकी team को कुशलता से काम करने देता है।
+B1 Admin यह नियंत्रित करने के लिए भूमिका-आधारित अनुमति प्रणाली का उपयोग करता है कि आपकी टीम का हर उपयोगकर्ता क्या देख और क्या कर सकता है। भूमिकाएँ सौंपकर, आप स्टाफ़ और स्वयंसेवकों को ठीक उन्हीं क्षेत्रों तक पहुँच दे सकते हैं जिनकी उन्हें ज़रूरत है — उससे अधिक नहीं। अच्छा भूमिका प्रबंधन आपके चर्च के डेटा को सुरक्षित रखता है और आपकी टीम को कुशलता से काम करने का अधिकार देता है।
 
 </div>
 
 <div class="prereqs">
-<h4>शुरुआत करने से पहले</h4>
+<h4>शुरू करने से पहले</h4>
 
-- आपको **Domain Admin** access चाहिए या B1 Admin में **Settings** को प्रबंधित करने की अनुमति वाली भूमिका।
-- जिन लोगों को आप भूमिकाएं देना चाहते हैं, वे पहले से आपकी directory में होने चाहिए। यदि आपको उन्हें पहले जोड़ना है, तो [लोगों को जोड़ना](adding-people.md) देखें।
+- आपको **Domain Admin** पहुँच या B1 Admin में **Settings** प्रबंधित करने की अनुमति वाली भूमिका चाहिए।
+- जिन लोगों को आप भूमिकाएँ सौंपना चाहते हैं, वे पहले से आपकी डायरेक्टरी में होने चाहिए। अगर आपको पहले उन्हें जोड़ना है, तो [लोगों को जोड़ना](adding-people.md) देखें।
 
 </div>
 
-## भूमिकाओं को समझना {#understanding-roles}
+## भूमिकाओं को समझना
 
-भूमिका अनुमतियों का एक set है जिसे आप एक या अधिक उपयोगकर्ताओं को देते हैं। उदाहरण के लिए, आप एक "Finance Team" भूमिका बना सकते हैं जो [donation records](../donations/recording-donations.md) तक पहुंच देती है, या एक "Check-In Volunteer" भूमिका जो केवल [attendance features](../attendance/check-in.md) तक पहुंच देती है।
+भूमिका उन अनुमतियों का एक समूह है जो आप एक या अधिक उपयोगकर्ताओं को सौंपते हैं। उदाहरण के लिए, आप एक "Finance Team" भूमिका बना सकते हैं जो [donation रिकॉर्ड](../donations/recording-donations.md) तक पहुँच देती है, या एक "Check-In Volunteer" भूमिका जो केवल [attendance सुविधाओं](../attendance/check-in.md) की अनुमति देती है।
 
-हर भूमिका B1 Admin के विशिष्ट क्षेत्रों तक पहुंच नियंत्रित करती है, जिनमें शामिल हैं:
+हर भूमिका B1 Admin के विशिष्ट क्षेत्रों तक पहुँच नियंत्रित करती है, जिनमें शामिल हैं:
 
-- **People** -- सदस्य profiles देखना और संपादित करना। किसी व्यक्ति के record पर Notes section के लिए **Edit People** चाहिए, और एक अलग **View Confidential Notes** अनुमति Confidential Notes section (pastoral care, personal history, और इसी तरह के संवेदनशील notes के लिए) तक पहुंच नियंत्रित करती है। **View People Names Only** किसी को नाम से लोगों को खोजने देती है (केवल नाम, फ़ोटो, और सदस्यता स्थिति देखते हुए), बिना पूरी directory तक पहुंच के। **View Attendance** या **Edit Attendance** के साथ मिलाकर, यह एक volunteer को **Groups** खोलकर नाम से class rosters देखने देती है; **Edit Attendance** के साथ वे [attendance दर्ज](../attendance/recording-attendance.md) भी कर सकते हैं। देखें [People Names Only](../settings/roles-permissions.md#people-names-only)।
-- **Donations** -- योगदान और वित्तीय रिपोर्ट प्रबंधित करना। **Enter Donations** counting teams के लिए एक संकीर्ण विकल्प है: यह किसी को दान दर्ज करने देता है, लेकिन केवल उन [batches](../donations/batches.md#who-can-change-a-batch) में जो अभी भी खुले हैं।
+- **People** -- सदस्य प्रोफ़ाइल देखना और संपादित करना। किसी व्यक्ति रिकॉर्ड के Notes सेक्शन के लिए **Edit People** चाहिए, और एक अलग **View Confidential Notes** अनुमति Confidential Notes सेक्शन तक पहुँच नियंत्रित करती है (पास्टोरल केयर, निजी इतिहास और इसी तरह के संवेदनशील नोट्स के लिए)। **View People Names Only** किसी को पूरी डायरेक्टरी के बिना केवल नाम से लोगों को खोजने देती है (केवल नाम, फ़ोटो और सदस्यता स्थिति दिखती है)। इसे **View Attendance** या **Edit Attendance** के साथ मिलाने पर, एक स्वयंसेवक **Groups** खोलकर नाम से क्लास की रोल लिस्ट देख सकता है; **Edit Attendance** के साथ वे [attendance दर्ज](../attendance/recording-attendance.md) भी कर सकते हैं। देखें [People Names Only](../settings/roles-permissions.md#people-names-only)।
+- **Donations** -- योगदान और वित्तीय रिपोर्ट प्रबंधित करना। **Enter Donations** गिनती टीमों के लिए एक सीमित विकल्प है: यह किसी को उपहार दर्ज करने देता है, लेकिन केवल उन [batches](../donations/batches.md#who-can-change-a-batch) में जो अभी भी खुले हों।
 - **Attendance** -- attendance डेटा दर्ज करना और देखना
-- **Forms** -- [custom forms](../forms/creating-forms.md) बनाना और प्रबंधित करना
-- **Groups** -- [group memberships](../groups/group-members.md) और calendars प्रबंधित करना
-- **Settings** -- पूरे church की सेटिंग्स कॉन्फ़िगर करना
+- **Forms** -- [कस्टम फ़ॉर्म](../forms/creating-forms.md) बनाना और प्रबंधित करना
+- **Groups** -- [group सदस्यताएँ](../groups/group-members.md) और कैलेंडर प्रबंधित करना
+- **Settings** -- चर्च-व्यापी सेटिंग्स कॉन्फ़िगर करना
 
 :::warning
-**Domain Admins** के पास B1 Admin के हर क्षेत्र तक पूरी पहुंच होती है। उनकी अनुमतियां संपादित या सीमित नहीं की जा सकतीं। इस भूमिका का उपयोग केवल अपने मुख्य administrators के लिए करें।
+**Domain Admins** के पास B1 Admin के हर क्षेत्र की पूरी पहुँच होती है। उनकी अनुमतियाँ न संपादित की जा सकती हैं, न सीमित। इस भूमिका का उपयोग केवल अपने प्राथमिक administrators के लिए करें।
 :::
 
-## भूमिकाएं देखना और प्रबंधित करना {#viewing-and-managing-roles}
+## भूमिकाएँ देखना और प्रबंधित करना
 
-1. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin के ऊपर-बाएं कोने में खोज बार) और **Settings** को expand करें।
-2. **Roles** पर click करें।
-3. आपको अपने church के लिए कॉन्फ़िगर की गई सभी भूमिकाओं की सूची दिखेगी।
-4. किसी भी भूमिका पर click करें और उसके सदस्य व अनुमतियां देखें।
+1. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin के ऊपर-बाईं ओर का सर्च बार) और **Settings** को खोलें।
+2. **Roles** पर क्लिक करें।
+3. आपको आपके चर्च के लिए कॉन्फ़िगर की गई सभी भूमिकाओं की सूची दिखेगी, जिसमें **Members** कॉलम होगा जो दिखाता है कि हर भूमिका में कितने उपयोगकर्ता हैं।
+4. उसके सदस्य और अनुमतियाँ देखने के लिए किसी भी भूमिका पर क्लिक करें।
 
-## भूमिका में उपयोगकर्ता जोड़ना {#adding-users-to-a-role}
+## भूमिका में उपयोगकर्ता जोड़ना
 
-1. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) में, **Settings > Roles** चुनें।
-2. वह भूमिका चुनें जिसमें आप उपयोगकर्ता जोड़ना चाहते हैं।
-3. **Members** section में, व्यक्ति को नाम से खोजें।
-4. उन्हें भूमिका में असाइन करने के लिए **Add** पर click करें।
+1. Jump menu में, **Settings > Roles** चुनें।
+2. जिस भूमिका में उपयोगकर्ता जोड़ना है, उस पर क्लिक करें।
+3. **Members** सेक्शन में, नाम से व्यक्ति को खोजें।
+4. उन्हें भूमिका सौंपने के लिए **Add** पर क्लिक करें।
 
-उपयोगकर्ता अगली बार लॉग इन करने पर उस भूमिका से जुड़ी सभी अनुमतियां पा जाएगा।
+अगली बार लॉग इन करने पर उपयोगकर्ता के पास उस भूमिका से जुड़ी सभी अनुमतियाँ होंगी।
 
-## भूमिका की अनुमतियां संपादित करना {#editing-role-permissions}
+## भूमिका की अनुमतियाँ संपादित करना
 
-1. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) में, **Settings > Roles** चुनें।
-2. वह भूमिका चुनें जिसे आप संशोधित करना चाहते हैं।
-3. **Permissions** section में, जिन क्षेत्रों तक भूमिका की पहुंच चाहिए उन्हें check या uncheck करें।
-4. अपने बदलाव लागू करने के लिए **Save** पर click करें।
+1. Jump menu में, **Settings > Roles** चुनें।
+2. जिस भूमिका को बदलना है, उस पर क्लिक करें।
+3. **Permissions** सेक्शन में, जिन क्षेत्रों तक भूमिका की पहुँच चाहिए उन्हें चेक या अनचेक करें। हर अनुमति समूह दिखाता है कि उसकी कितनी अनुमतियाँ चेक हैं (उदाहरण के लिए, **2 of 5**)।
+4. हर बदलाव तुरंत सेव हो जाता है, जैसे ही आप कोई बॉक्स चेक या अनचेक करते हैं।
 
 :::tip
-Least privilege के सिद्धांत का पालन करें — हर भूमिका को केवल वही अनुमतियां दें जिनकी उसे सच में आवश्यकता है। इससे आपका data सुरक्षित रहता है और गलती से होने वाले बदलावों की संभावना कम होती है।
+न्यूनतम विशेषाधिकार के सिद्धांत का पालन करें -- हर भूमिका को केवल वही अनुमतियाँ दें जिनकी उसे सच में ज़रूरत है। इससे आपका डेटा सुरक्षित रहता है और गलती से बदलाव होने की संभावना कम होती है।
 :::
 
-## सामान्य भूमिका उदाहरण {#common-role-examples}
+## आम भूमिका उदाहरण
 
-- **Office Staff** -- People, Donations, Attendance, और Forms तक पहुंच
-- **Group Leaders** -- केवल [Groups](../groups/creating-groups.md) तक पहुंच
-- **Check-In Volunteers** -- केवल [Attendance](../attendance/check-in.md) तक पहुंच
-- **Finance Team** -- [Donations](../donations/recording-donations.md) और रिपोर्टिंग तक पहुंच
-- **Counting Team** -- **Enter Donations** और **View Donations**, ताकि volunteers giving summaries देखे बिना खुले batches में offering दर्ज कर सकें
+- **Office Staff** -- People, Donations, Attendance, और Forms तक पहुँच
+- **Group Leaders** -- केवल [Groups](../groups/creating-groups.md) तक पहुँच
+- **Check-In Volunteers** -- केवल [Attendance](../attendance/check-in.md) तक पहुँच
+- **Finance Team** -- [Donations](../donations/recording-donations.md) और रिपोर्टिंग तक पहुँच
+- **Counting Team** -- **Enter Donations** और **View Donations**, ताकि स्वयंसेवक giving सारांश देखे बिना खुले batches में offering दर्ज कर सकें
 
-People और donations की अनुमतियों पर करीबी नज़र के लिए [भूमिकाएं और अनुमतियां](../settings/roles-permissions.md) देखें।
+donation और people अनुमतियों पर अधिक विस्तार से जानने के लिए [Roles & Permissions](../settings/roles-permissions.md) देखें।

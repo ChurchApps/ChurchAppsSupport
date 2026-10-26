@@ -6,94 +6,98 @@ title: "Egendefinerte felt"
 
 <div class="article-intro">
 
-Med **Egendefinerte felt** kan du registrere din egen informasjon på hver personprofil — ting B1 ikke har et innebygd felt for, som utløpsdato for politiattest, T-skjortestørrelse eller status på dåpskurs. Du definerer et felt én gang under Innstillinger, fyller deretter inn en verdi på hver persons profil og kan søke og bygge lister på det. Dette erstatter den eldre nødløsningen med å opprette et Personer-skjema bare for å lagre én enkelt opplysning.
+**Egendefinerte felt** lar deg spore din egen informasjon på hver personpost — ting B1 ikke har et innebygd felt for, som en utløpsdato for bakgrunnssjekk, T-skjortestørrelse eller status for dåpsundervisning. Du definerer et felt én gang under Innstillinger, og fyller deretter inn en verdi på hver persons profil, og kan søke etter eller lage lister basert på feltet. Dette erstatter den eldre løsningen med å lage et personskjema bare for å lagre ett enkelt egendefinert datafelt.
 
 </div>
+
+## Opplæringsvideo
+
+<YouTube id="yUfDEbp2HQ4" title="Custom Fields, Bulk Editing, and Exporting in B1" next="Creating Groups and Adding Members in B1" nextUrl="/docs/b1-admin/groups/creating-groups" />
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger redigeringstillatelse for **Personer** for å definere felt og fylle inn verdier, samt tilgang til området **Innstillinger**. Alle med visningstillatelse for Personer kan se verdiene. Se [Roller og tillatelser](./roles-permissions.md).
-- Bestem hva du vil registrere og hvilken type som passer best (tekst, et tall, en dato, et ja/nei-svar eller en nedtrekksliste) før du starter.
+- Du trenger redigeringstillatelsen **Personer** for å definere felt og fylle inn verdier, og tilgang til området **Innstillinger**. Alle med visningstillatelse for Personer kan se verdiene. Se [Roller og tillatelser](./roles-permissions.md).
+- Bestem hva du vil spore, og hvilken type som passer best (tekst, et tall, en dato, et ja/nei-svar eller en nedtrekksliste), før du begynner.
 
 </div>
 
 ## Åpne egendefinerte felt
 
-I B1 Admin åpner du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), velger **Innstillinger > Innstillinger** og klikker på **Egendefinerte felt** i listen til venstre for å gå til seksjonen **Egendefinerte felt**. Du kan også gå direkte til **/settings/custom-fields**. Du ser en liste over alle feltene du har definert, med **Navn** og **Felttype**. Hvis du ikke har opprettet noen ennå, står det *«Ingen egendefinerte felt er lagt til ennå.»*
+I B1 Admin åpner du [Hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), velger **Innstillinger > Innstillinger** og klikker på **Egendefinerte felt** i listen til venstre for å gå til seksjonen **Egendefinerte felt**. Du kan også gå direkte dit på **/settings/custom-fields**. Du ser en liste over alle feltene du har definert, med **Navn** og **Felttype**. Hvis du ikke har laget noen ennå, står det i panelet *"Ingen egendefinerte felt er lagt til ennå."*
 
 ## Legge til et felt
 
 1. Klikk på **Legg til felt**.
-2. I redigeringsvinduet som åpnes til høyre skriver du inn et **Navn** — dette er etiketten medarbeiderne ser på personprofiler og i søk (for eksempel *Politiattest utløper*).
+2. I redigeringsverktøyet som åpnes til høyre, skriv inn et **Navn** — dette er etiketten medarbeiderne ser på personprofiler og i søk (for eksempel *Bakgrunnssjekk utløper*).
 3. Velg en **Felttype**:
-   - **Tekstfelt** — kort fritekst.
-   - **Heltall** — tall uten desimaler (for eksempel et antall).
-   - **Desimaltall** — tall som kan ha desimaler.
+   - **Tekstboks** — fri korttekst.
+   - **Heltall** — tall uten desimaler (for eksempel en telling).
+   - **Desimaltall** — tall som kan inneholde desimaler.
    - **Dato** — en kalenderdato.
    - **Ja/Nei** — et enkelt ja- eller nei-svar.
-   - **Flervalg** — en nedtrekksliste. Når du velger denne typen, vises en **valgredigerer** der du legger til hvert alternativ man kan velge mellom.
+   - **Flervalg** — en nedtrekksliste. Når du velger denne typen, vises en **redigering for valgalternativer**, slik at du kan legge til hvert alternativ folk kan velge mellom.
 4. Klikk på **Lagre**.
 
-Feltet er nå tilgjengelig på alle personers profiler.
+Feltet er nå tilgjengelig på hver persons profil.
 
 :::info
-Felttypene er de samme som brukes for [skjemaspørsmål](../forms/creating-forms.md), så verdiene oppfører seg likt i hele B1.
+Felttypene er de samme som brukes for [skjemaspørsmål](../forms/creating-forms.md), slik at verdiene oppfører seg likt i hele B1.
 :::
 
 ## Redigere et felt
 
-Klikk på en rad i listen for å åpne feltet i redigeringsvinduet igjen. Endre navn, type eller valg og klikk på **Lagre**.
+Klikk på en feltrad i listen for å åpne den igjen i redigeringsverktøyet. Endre navn, type eller valgalternativer, og klikk på **Lagre**.
 
 :::warning
-Hvis du endrer **Felttype** for et felt som allerede har verdier (for eksempel fra Tekstfelt til Dato), kan tidligere innskrevne verdier få et format som ikke lenger passer til den nye typen. Vær forsiktig med å endre typer når medarbeiderne har begynt å fylle ut feltet.
+Hvis du endrer **Felttypen** på et felt som allerede har verdier (for eksempel fra Tekstboks til Dato), kan tidligere registrerte verdier ende opp i et format som ikke passer lenger til den nye typen. Endre typer med forsiktighet når medarbeiderne har begynt å fylle ut feltet.
 :::
 
 ## Slette et felt
 
-Åpne et felt for redigering og klikk på **Slett**. Du blir bedt om å bekrefte: *«Er du sikker på at du vil slette dette egendefinerte feltet? De lagrede verdiene fjernes også.»* Når du sletter et felt, fjernes det permanent **sammen med alle verdier som er lagret for det** hos alle personer — dette kan ikke angres.
+Åpne et felt for redigering og klikk på **Slett**. Du blir bedt om å bekrefte: *"Are you sure you wish to delete this custom field? Its stored values will also be removed."* → *"Er du sikker på at du vil slette dette egendefinerte feltet? Lagrede verdier vil også bli fjernet."* Når du sletter et felt, fjernes det permanent, **og alle verdier som er lagret for det** på alle personer. Dette kan ikke angres.
 
 ## Fylle inn verdier på en person
 
-Så snart det finnes minst ett egendefinert felt, ligger verdiene rett ved siden av de innebygde opplysningene på hver persons profil — du ser dem sammen med personens kontaktopplysninger til venstre på profilen, og redigerer dem i samme skjema som resten av personens informasjon. Ingenting ekstra vises før du har definert det første feltet.
+Når minst ett egendefinert felt finnes, ligger verdiene dets rett ved siden av de innebygde opplysningene på hver persons post — du ser dem sammen med personens kontaktopplysninger til venstre på profilen, og redigerer dem på samme skjema som du bruker for resten av personens informasjon. Ingenting ekstra vises før du har definert ditt første felt.
 
-1. Åpne personens profil under **Personer**.
-2. Klikk på **Rediger**-knappen til venstre på profilen, under personens kontaktopplysninger.
-3. Bla til området **Egendefinerte felt** nederst i redigeringsskjemaet og fyll inn en verdi for hvert felt. Hvert felt viser inndataelementet som passer til typen — en datovelger for Dato-felt, en ja/nei-nedtrekksmeny for Ja/Nei-felt, en nedtrekksliste for Flervalg, og så videre.
-4. Klikk på **Lagre**. Verdiene i de egendefinerte feltene lagres sammen med resten av personens opplysninger.
+1. Åpne en persons post under **Personer**.
+2. Klikk på knappen **Rediger** til venstre på profilen, under personens kontaktopplysninger.
+3. Bla ned til området **Egendefinerte felt** nederst i redigeringsskjemaet, og fyll inn en verdi for hvert felt. Hvert felt viser inndatafeltet som passer til typen sin — en datovelger for datofelt, en nedtrekksliste for ja/nei-felt, en liste over valg for flervalgsfelt, og så videre.
+4. Klikk på **Lagre**. Verdiene for dine egendefinerte felt lagres sammen med resten av personens opplysninger.
 
-Tilbake på profilen vises alle felt som har en verdi nå under personens kontaktopplysninger, på formen *Feltnavn: verdi* (Ja/Nei-svar vises som *Ja* eller *Nei*, og Flervalg viser alternativets etikett). Felt som er tomme, skjules. For å fjerne en verdi redigerer du personen, tømmer feltet og lagrer — en tom verdi slettes fra posten i stedet for å lagres som tom.
+Tilbake på profilen vises alle felt som har en verdi nå under personens kontaktopplysninger, som *Feltnavn: verdi* (ja/nei-svar vises som *Ja* eller *Nei*, og flervalg viser valgalternativets etikett). Felt som er tomme, skjules. For å fjerne en verdi, redigerer du personen, tømmer feltet og lagrer — en tom verdi slettes fra posten i stedet for å lagres som tom.
 
 :::tip
-Det klassiske bruksområdet er frivilliges sikkerhet: opprett et **Dato**-felt kalt *Politiattest utløper*, registrer datoen for hver frivillig, og bygg deretter en [lagret liste](../people/lists.md) som markerer alle som har passert datoen.
+Det klassiske bruksområdet er sikkerhet for frivillige: lag et **Dato**-felt som heter *Bakgrunnssjekk utløper*, registrer datoen for hver frivillig, og bygg deretter en [lagret liste](../people/lists.md) som markerer alle hvis dato har passert.
 :::
 
-## Søke og bygge lister på egendefinerte felt
+## Søke og lage lister basert på egendefinerte felt
 
-Egendefinerte felt er fullt søkbare:
+Egendefinerte felt kan søkes i fullt ut:
 
-1. På siden **Personer** åpner du [avansert søk](../people/searching-people.md).
+1. På siden **Personer** åpner du [Avansert søk](../people/searching-people.md).
 2. Utvid kategorien **Egendefinerte felt**.
-3. Kryss av for feltet du vil filtrere på, velg en operator og skriv inn en verdi. Operatorene som tilbys, passer til feltets type:
-   - **Tekstfelt** — inneholder, er lik, begynner med, slutter med.
+3. Kryss av for feltet du vil filtrere på, velg en operator, og skriv inn en verdi. Operatorene som tilbys samsvarer med feltets type:
+   - **Tekstboks** — inneholder, er lik, begynner med, slutter med.
    - **Heltall / Desimaltall** — er lik, større enn, større enn eller lik, mindre enn, mindre enn eller lik.
    - **Dato** — er lik, etter (større enn), før (mindre enn).
    - **Ja/Nei** — er lik Ja eller Nei.
-   - **Flervalg** — er lik eller inneholder ett av valgene.
+   - **Flervalg** — er lik eller inneholder ett av valgalternativene.
 
-Lagre ethvert søk på egendefinerte felt som en [liste](../people/lists.md). Lister er levende spørringer, så en liste bygget på *Politiattest utløper er før i dag* sjekker alle personer på nytt hver gang du åpner den — uten manuelt vedlikehold.
+Lagre ethvert søk på egendefinerte felt som en [liste](../people/lists.md). Lister er levende spørringer, så en liste bygget på *Bakgrunnssjekk utløper er før i dag* sjekker hver person på nytt hver gang du åpner den — uten manuelt vedlikehold.
 
 ## Vise et egendefinert felt som kolonne
 
-For å se et felts verdier for alle på én gang legger du det til som kolonne på siden **Personer**. Sett **Vis som** til **Tabell**, klikk på ikonet **Velg kolonner** i sidehodet, bytt til fanen **Egendefinert** og kryss av for feltet. Hver persons verdi vises i en egen kolonne ved siden av de innebygde. Se [Vise egendefinerte felt som kolonner](../people/searching-people.md#showing-custom-fields-as-columns).
+For å se et felts verdier for alle på én gang, legger du det til som en kolonne på siden **Personer**. Endre **Vis som** til **Tabell**, klikk på ikonet **Velg kolonner** i sidehodet, bytt til fanen **Egendefinert**, og kryss av for feltet. Hver persons verdi vises i sin egen kolonne ved siden av de innebygde. Se [Vise egendefinerte felt som kolonner](../people/searching-people.md#showing-custom-fields-as-columns).
 
 ## Hva skjer ved sammenslåing
 
-Når du [slår sammen to personposter](../people/adding-people.md), følger verdiene i egendefinerte felt automatisk med. Personen du beholder, beholder sine egne verdier; for felt der bare den fjernede personen hadde en verdi, kopieres den verdien over slik at ingenting går tapt.
+Når du [slår sammen to personposter](../people/adding-people.md), overføres verdiene for egendefinerte felt automatisk. Personen du beholder, beholder sine egne verdier; for ethvert felt der bare den fjernede personen hadde en verdi, kopieres den verdien over, slik at ingenting går tapt.
 
 ## Relaterte artikler
 
 - [Søke etter personer](../people/searching-people.md) — avansert søk, inkludert kategorien Egendefinerte felt, og visning av egendefinerte felt som kolonner
 - [Lagrede lister](../people/lists.md) — lagre et søk på egendefinerte felt og kjør det på nytt live
 - [Roller og tillatelser](./roles-permissions.md) — hvem som kan definere felt og redigere verdier
-- [Opprette skjemaer](../forms/creating-forms.md) — for innsamling av data med flere spørsmål der et fullt skjema passer bedre enn enkeltfelt
+- [Lage skjemaer](../forms/creating-forms.md) — for innsamling av data med flere spørsmål, der et helt skjema passer bedre enn enkeltfelt

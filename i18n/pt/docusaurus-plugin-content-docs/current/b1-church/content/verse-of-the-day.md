@@ -6,47 +6,61 @@ title: "Versículo do Dia"
 
 <div class="article-intro">
 
-A página Versículo do Dia exibe um versículo da Bíblia diário como uma imagem belamente formatada. É uma forma simples de começar seu dia com a Escritura ou encontrar encorajamento ao longo da semana.
+A página Versículo do Dia exibe um versículo bíblico diário como uma imagem bem formatada. É uma maneira simples de começar o dia com as Escrituras ou encontrar encorajamento ao longo da semana.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Nenhum login é necessário para ver o Versículo do Dia. A página é acessível ao público.
-- Sua igreja deve ter adicionado uma página Versículo do Dia à sua navegação de site.
+- Não é necessário fazer login para ver o Versículo do Dia. A página é de acesso público.
+- Sua igreja precisa ter adicionado uma página Versículo do Dia à navegação do site.
 
 </div>
 
-## Visualizando o Versículo
+## Visualizando o versículo
 
-1. Navegue para a página **Versículo do Dia** a partir da navegação de site da sua igreja.
-2. A página exibe o versículo de hoje como uma imagem.
-3. Um novo versículo aparece automaticamente a cada dia.
+1. Acesse a página **Versículo do Dia** pela navegação do site da sua igreja.
+2. A página exibe o versículo de hoje como uma imagem, com o texto do versículo, sua referência e a data de hoje ao lado ou abaixo dele.
+3. Um novo versículo aparece automaticamente todos os dias.
 
-Não há nada que você precisa fazer -- apenas visite a página e o versículo do dia atual será exibido.
+Você não precisa fazer nada -- basta visitar a página, e o versículo do dia atual será exibido.
 
-## Exibição Responsiva
+## Versículos anteriores
 
-A imagem do versículo se ajusta automaticamente para caber na sua tela. Dependendo do seu dispositivo e tamanho da janela, você verá um dos três formatos:
+Abaixo do versículo de hoje, a seção **Esta semana** mostra os versículos dos dias anteriores:
 
-- **Widescreen (16:9)** -- Melhor para monitores de desktop e laptops
-- **Quadrado (1:1)** -- Adequado para telas do tamanho de tablet
-- **Retrato (9:16)** -- Otimizado para telefones segurados verticalmente
+- No site da sua igreja, os seis dias anteriores aparecem como uma fileira de cartões com imagens, que rola lentamente sozinha (ela pausa enquanto você passa o mouse ou toca sobre ela).
+- No portal de membros (`/mobile`), os três dias anteriores aparecem em uma lista com a referência, a data e o texto de cada versículo.
 
-A página detecta as dimensões da sua tela e seleciona o melhor formato, de modo que o versículo sempre se pareça bem independentemente de como você o está visualizando. Se você redimensionar sua janela do navegador, a imagem será atualizada para corresponder às novas dimensões.
+Clique ou toque em qualquer dia para abri-lo com sua imagem, o versículo completo e os mesmos botões de compartilhar e baixar do versículo de hoje.
 
-## Compartilhando o Versículo
+Clique em **Versículos anteriores** para ver o versículo de cada dia, de 1º de janeiro deste ano até ontem, agrupados por mês, com os mais recentes primeiro. No site, a lista se abre abaixo da fileira **Esta semana** (clique em **Versículos anteriores** novamente para ocultá-la); no portal de membros, ela se abre em uma tela própria, com um link de volta. Clique em qualquer data para abrir o versículo desse dia.
 
-No portal de membros (`/mobile`), a tela Versículo do Dia tem dois botões abaixo do versículo:
+## Exibição responsiva
 
-- **Compartilhar imagem** -- compartilha a imagem do versículo em si, para que você possa postar ou enviar em uma mensagem. Em dispositivos que não podem compartilhar arquivos (como a maioria dos navegadores de desktop), a imagem é baixada.
-- **Compartilhar** -- compartilha o texto do versículo, referência e um link para a página. Se seu dispositivo não tem menu de compartilhamento, o texto e o link são copiados para sua área de transferência.
+A imagem do versículo se ajusta automaticamente ao tamanho da sua tela. Dependendo do seu dispositivo e do tamanho da janela, você verá um dentre três formatos:
+
+- **Widescreen (16:9)** -- Ideal para monitores de desktop e notebooks
+- **Quadrado (1:1)** -- Adequado para telas de tablet
+- **Retrato (9:16)** -- Otimizado para celulares na vertical
+
+A página detecta as dimensões da sua tela e escolhe o melhor formato, para que o versículo sempre fique bem, independentemente de como você o estiver visualizando. Se redimensionar a janela do navegador, a imagem será atualizada para as novas dimensões. No site da sua igreja, uma tela alta de celular exibe a imagem quadrada em vez da imagem em retrato, para que o versículo não fique espremido em uma faixa estreita.
+
+## Compartilhando o versículo
+
+O versículo de hoje, e qualquer dia anterior que você abrir, tem três botões:
+
+- **Compartilhar** -- compartilha o texto do versículo, a referência e um link para a imagem do versículo. Se o seu dispositivo não tiver menu de compartilhamento, o texto e o link são copiados para a área de transferência.
+- **Compartilhar imagem** -- compartilha a própria imagem do versículo, para que você possa publicá-la ou enviá-la em uma mensagem. Em dispositivos que não conseguem compartilhar arquivos (como a maioria dos navegadores de desktop), a imagem é baixada.
+- **Baixar** -- salva a imagem do versículo no seu dispositivo.
+
+No site da sua igreja, esses botões sempre usam a imagem widescreen (16:9). No portal de membros, eles usam o formato que se encaixa na sua tela.
 
 :::tip
-Faça do Versículo do Dia um hábito diário, depois explore a passagem mais a fundo no [leitor de Bíblia](./bible.md).
+Crie o hábito diário de conferir o Versículo do Dia e, depois, explorar a passagem com mais profundidade no [leitor da Bíblia](./bible.md).
 :::
 
 ## Disponibilidade
 
-Versículo do Dia é um recurso de conteúdo incorporado de B1.church. Se você não o vê na navegação da sua igreja, o administrador da sua igreja pode não tê-lo adicionado ao menu do site. Contate o administrador da sua igreja para solicitar.
+O Versículo do Dia é um recurso de conteúdo integrado ao B1.church. Se você não o vir na navegação da sua igreja, o administrador pode não tê-lo adicionado ao menu do site. Entre em contato com o administrador da sua igreja para solicitá-lo.

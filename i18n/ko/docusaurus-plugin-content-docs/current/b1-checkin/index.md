@@ -1,43 +1,47 @@
 ---
-title: "B1 Church 체크인 개요"
+title: "B1 Church Checkin 개요"
 ---
 
-# B1 Church 체크인 개요
+# B1 Church Checkin 개요
 
 <div class="article-intro">
 
-B1 Church Checkin은 iPad 및 Android 태블릿용 셀프 서비스 키오스크 앱입니다. 교회 회원들이 가족을 찾고, 아이들을 그룹이나 반에 배치하고, 이름표와 부모 픽업 전표를 인쇄할 수 있습니다. 데스크에 자원봉사자가 있을 필요가 없습니다.
+B1 Church Checkin은 iPad와 Android 태블릿용 셀프 서비스 키오스크 앱입니다. 교인이 가족을 찾고, 자녀를 그룹이나 수업에 배정하고, 이름표와 부모 픽업 쪽지를 인쇄할 수 있게 해 줍니다. 데스크에 자원봉사자가 없어도 모두 가능합니다.
 
 </div>
 
+## 투어 동영상
+
+<YouTube id="fNZsJi9F-jc" title="A Tour of B1 Check-In" />
+
 ## 작동 방식
 
-iPad 또는 Android 태블릿을 교회 로비나 환영 공간에 배치합니다. 회원들이 다가와 전화번호나 성으로 가정을 검색하고, 가족을 검토한 다음, 각 사람이 참석할 그룹을 선택하고 **체크인**을 탭합니다. 앱이 이름표와 픽업 전표를 자동으로 인쇄한 후 다음 가족을 위해 초기 화면으로 돌아갑니다.
+로비나 환영 구역에 iPad 또는 Android 태블릿을 설치하세요. 교인이 다가와 전화번호나 성으로 가족을 검색하고, 가족을 검토한 뒤, 각 사람이 참석할 그룹을 고르고, **Check-in**을 누릅니다. 앱은 이름표와 픽업 쪽지를 자동으로 인쇄한 다음 다음 가족을 위해 초기 상태로 돌아갑니다.
 
 ## 주요 기능
 
-- **셀프 서비스 회원 조회** -- 전화번호나 성으로 검색하여 가정을 빠르게 찾습니다.
-- **가정 검토** -- 사진과 현재 그룹 할당이 함께 모든 가족 구성원을 한눈에 봅니다.
-- **그룹 배치** -- 선택한 서비스 시간에 맞는 올바른 반이나 그룹에 각 가족 구성원을 배치합니다.
-- **손님 체크인** -- 직접 이름과 성으로 손님을 가정에 추가합니다.
-- **QR 손님 등록** -- 방문자가 스캔하여 체크인하기 전에 휴대폰에서 [자신을 등록](../b1-church/checkin/guest-registration) 할 수 있는 QR 코드를 표시하거나, **여기에 등록**을 탭하여 키오스크에서 같은 양식을 작성하도록 합니다.
-- **레이블 인쇄** -- 아이들을 위한 이름표와 고유한 보안 코드가 있는 부모 픽업 전표를 인쇄합니다.
-- **네트워크 프린터 지원** -- 앱에서 직접 네트워크 프린터를 발견하고 구성합니다.
-- **자동 로그인** -- 첫 번째 로그인 후 앱이 자격 증명을 기억하고 다음에 실행할 때 서비스 화면으로 바로 이동합니다.
-- **다중 교회 지원** -- 계정이 두 개 이상의 교회에 연결된 경우 체크인할 교회를 선택할 수 있습니다.
-- **교회 브랜딩** -- 교회를 선택하면 앱이 헤더에 교회 로고를 표시합니다.
+- **셀프 서비스 구성원 조회** -- 전화번호나 성으로 검색하여 가족을 빠르게 찾습니다.
+- **가족 검토** -- 가족 구성원의 사진과 현재 그룹 배정을 한눈에 확인합니다.
+- **그룹 배정** -- 선택한 예배 시간에 각 가족 구성원을 알맞은 수업이나 그룹에 배정합니다.
+- **손님 체크인** -- 이름과 성을 입력하여 그 자리에서 가족에 손님을 추가합니다.
+- **QR 손님 등록** -- 방문자가 체크인 전에 자신의 휴대폰으로 [직접 등록](../b1-church/checkin/guest-registration)할 수 있도록 QR 코드를 표시합니다. 또는 방문자가 **Register here**를 눌러 키오스크에서 같은 양식을 작성하게 할 수도 있습니다.
+- **이름표 인쇄** -- 자녀의 이름표와 고유 보안 코드가 있는 부모 픽업 쪽지를 인쇄합니다.
+- **네트워크 프린터 지원** -- 앱에서 네트워크 프린터를 찾아 직접 구성합니다.
+- **자동 로그인** -- 처음 로그인한 뒤에는 앱이 인증 정보를 기억하여, 다음 실행부터 바로 서비스 화면으로 이동합니다.
+- **여러 교회 지원** -- 계정이 두 개 이상의 교회에 연결되어 있으면 체크인할 교회를 고를 수 있습니다.
+- **교회 브랜딩** -- 교회를 선택하면 앱 헤더에 교회 로고가 표시됩니다.
 
-## 문서 섹션
+## 문서 구성
 
-- **[시작하기](./getting-started/)** -- 앱 설치, 로그인 및 프린터 설정.
-- **[체크인 워크플로우](./check-in/)** -- 서비스 선택부터 레이블 인쇄까지의 전체 체크인 흐름.
+- **[시작하기](./getting-started/)** -- 앱 설치, 로그인, 프린터 설정
+- **[체크인 작업 흐름](./check-in/)** -- 예배 선택부터 라벨 인쇄까지 전체 체크인 과정
 
 :::tip
-B1 Church Checkin은 가족이 쉽게 접근할 수 있도록 가로 방향으로 장착된 10인치 태블릿(iPad 또는 Android)에서 가장 잘 작동합니다. [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) 또는 [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)에서 앱을 가져옵니다.
+B1 Church Checkin은 10인치 태블릿(iPad 또는 Android)을 가로 방향으로 설치하여, 가족이 쉽게 닿을 수 있는 위치에 둘 때 가장 잘 작동합니다. 앱은 [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin), 또는 [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)에서 받을 수 있습니다.
 :::
 
 :::info
-B1 Church Checkin을 사용하기 전에 교회 관리자가 B1 Admin에서 서비스, 서비스 시간 및 그룹을 구성해야 합니다. 자세한 내용은 [출석 설정 가이드](../b1-admin/attendance/setup.md)를 참조하세요.
+B1 Church Checkin을 사용하기 전에 교회 관리자가 B1 Admin에서 예배, 예배 시간, 그룹을 설정해야 합니다. 자세한 내용은 [출석 설정 가이드](../b1-admin/attendance/setup.md)를 참고하세요.
 :::
 
-지원을 받으려면 [support@churchapps.org](mailto:support@churchapps.org)로 이메일을 보내세요.
+지원이 필요하면 [support@churchapps.org](mailto:support@churchapps.org)로 이메일을 보내 주세요.

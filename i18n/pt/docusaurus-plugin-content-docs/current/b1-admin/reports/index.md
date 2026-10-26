@@ -6,24 +6,28 @@ title: "Relatórios"
 
 <div class="article-intro">
 
-B1 Admin gives you several ways to pull data about your congregation, attendance, and giving. Reporting is built into the relevant sections of the app rather than a single Reports page.
+O B1 Admin oferece várias formas de extrair dados sobre a sua congregação, a presença e as doações. Os relatórios estão integrados às seções relevantes do aplicativo, em vez de existirem em uma única página de Relatórios.
 
 </div>
 
-## Where to Find Reports
+## Vídeo de treinamento
 
-### People
-- **[Birthday & Anniversary Lists](./birthday-report)** -- Filter by Birth Month or Anniversary Month in **People → Advanced Search** to get a list of upcoming birthdays or anniversaries.
+<YouTube id="q3k8ty_V610" title="Running Reports in B1" />
 
-### Attendance
-- **[Attendance Reports](./attendance-reports)** -- Attendance trends and group attendance data are found in the **Attendance** section.
+## Onde encontrar os relatórios
+
+### Pessoas
+- **[Listas de aniversários e aniversários de casamento](./birthday-report)** -- Filtre por Mês de nascimento ou Mês de aniversário de casamento em **Pessoas → Pesquisa avançada** para obter uma lista dos próximos aniversários ou aniversários de casamento.
+
+### Presença
+- **[Relatórios de presença](./attendance-reports)** -- Os relatórios de tendência de presença e os dados de presença por grupo estão na seção **Presença**.
 
 ### Doações
-- **[Donation Summary](./donation-summary)** -- Giving totals and fund breakdowns are found in the **Donations** section.
+- **[Resumo de doações](./donation-summary)** -- Os totais de contribuições e a divisão por fundo estão na seção **Doações**.
 
 ### Configurações
-- **[Audit Log](./audit-log)** -- Track all changes and actions across your church management system (found under **Settings → Audit Log**).
+- **[Log de auditoria](./audit-log)** -- Acompanhe todas as alterações e ações no seu sistema de gestão da igreja (encontrado em **Configurações → Log de auditoria**).
 
 :::info
-Report data depends on consistent data entry. Make sure your team is [tracking attendance](../attendance/tracking-attendance.md), [recording donations](../donations/recording-donations.md), and keeping [people records](../people/adding-people.md) up to date for the most accurate results.
+Os dados dos relatórios dependem de um registro consistente. Certifique-se de que a sua equipe está [registrando a presença](../attendance/tracking-attendance.md), [lançando as doações](../donations/recording-donations.md) e mantendo os [registros de pessoas](../people/adding-people.md) atualizados para obter os resultados mais precisos.
 :::

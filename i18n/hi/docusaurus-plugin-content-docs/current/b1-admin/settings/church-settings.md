@@ -1,185 +1,186 @@
 ---
-title: "चर्च सेटिंग्स"
+title: "चर्च सेटिंग"
 ---
 
-# चर्च सेटिंग्स {#church-settings}
+# चर्च सेटिंग
 
 <div class="article-intro">
 
-Church Settings पेज वह जगह है जहां आप अपने चर्च की basic जानकारी, contact विवरण और branding configure करते हैं। ये विवरण ChurchApps के सभी tools में इस्तेमाल होते हैं, जिनमें आपकी B1.church website और B1 Mobile app शामिल हैं।
+चर्च सेटिंग पेज वह जगह है जहाँ आप अपने चर्च की बुनियादी जानकारी, संपर्क विवरण और ब्रांडिंग कॉन्फ़िगर करते हैं। ये विवरण सभी ChurchApps टूल में उपयोग होते हैं, जिनमें आपकी B1.church वेबसाइट और B1 Mobile ऐप शामिल हैं।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- आपको "Edit Church Settings" की अनुमति चाहिए। अगर आपके पास पहुंच नहीं है, तो [भूमिकाएं और अनुमतियां](./roles-permissions.md) देखें।
-- अपने चर्च का address, contact जानकारी और logo तैयार रखें
+- आपको "Edit Church Settings" अनुमति चाहिए। यदि आपके पास पहुँच नहीं है, तो देखें [Roles & Permissions](./roles-permissions.md)।
+- अपने चर्च का पता, संपर्क जानकारी और लोगो तैयार रखें
 
 </div>
 
-## चर्च की जानकारी संपादित करना {#editing-your-church-information}
+## अपने चर्च की जानकारी संपादित करना
 
-1. B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ऊपर-बाईं ओर का search bar) खोलें, **Settings** को expand करें, और **Settings** पर click करें।
-2. पेज के सबसे ऊपर **Church Information** section में **Edit** पर click करें।
-3. इनमें से कोई भी field अपडेट करें:
-   - **Church Name** -- वह नाम जो सभी ChurchApps products में दिखता है।
-   - **Address** -- आपके चर्च का भौतिक address।
-   - **Contact Information** -- फ़ोन नंबर, email और अन्य contact विवरण।
-   - **Time Zone** -- आपके चर्च का time zone। नीचे [समय क्षेत्र](#time-zone) देखें।
-4. अपने बदलाव लागू करने के लिए **Save** पर click करें।
+1. B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (ऊपर-बाईं ओर का सर्च बार), **Settings** का विस्तार करें, और **Settings** पर क्लिक करें।
+2. **Church Information** अनुभाग में (पेज के शीर्ष पर), **Edit** पर क्लिक करें।
+3. इनमें से कोई भी फ़ील्ड अपडेट करें:
+   - **Church Name** -- वह नाम जो सभी ChurchApps उत्पादों में दिखता है।
+   - **Address** -- आपके चर्च का भौतिक पता।
+   - **Contact Information** -- फ़ोन नंबर, ईमेल, और अन्य संपर्क विवरण।
+   - **Time Zone** -- आपके चर्च का समय क्षेत्र। नीचे [Time Zone](#time-zone) देखें।
+4. अपने बदलाव लागू करने के लिए **Save** पर क्लिक करें।
 
-## अपना subdomain सेट करना {#setting-up-your-subdomain}
+## अपना सबडोमेन सेट करना
 
-आपके चर्च को **yourchurch.1.church** पर एक मुफ़्त subdomain मिलता है। यही वह web address है जहां सदस्य और आगंतुक आपके चर्च की online उपस्थिति तक पहुंच सकते हैं।
+आपके चर्च को **yourchurch.1.church** पर एक मुफ़्त सबडोमेन मिलता है। यह वह वेब पता है जहाँ सदस्य और आगंतुक आपके चर्च की ऑनलाइन उपस्थिति तक पहुँच सकते हैं।
 
-1. Settings पेज पर, **Church Information** section में **Edit** पर click करें और **Subdomain** field ढूंढें।
-2. अपना पसंदीदा subdomain दर्ज करें (उदाहरण के लिए, gracechurch.1.church के लिए "gracechurch")।
-3. अपने बदलाव save करें।
+1. Settings पेज पर, **Church Information** अनुभाग में **Edit** पर क्लिक करें और **Subdomain** फ़ील्ड खोजें।
+2. अपना पसंदीदा सबडोमेन दर्ज करें (उदाहरण के लिए, gracechurch.1.church के लिए "gracechurch")।
+3. अपने बदलाव सहेजें।
 
 :::info
-आपका subdomain सभी ChurchApps चर्चों में अनोखा होना चाहिए। अगर आपका पसंदीदा नाम पहले से लिया गया है, तो अपने शहर या राज्य का नाम जोड़कर देखें (उदाहरण के लिए, "gracechurch-dallas")।
+आपका सबडोमेन सभी ChurchApps चर्चों में अनोखा होना चाहिए। यदि आपका पसंदीदा नाम पहले से लिया गया है, तो अपने शहर या राज्य को जोड़कर देखें (उदाहरण के लिए, "gracechurch-dallas")।
 :::
 
-अगर आप चाहते हैं कि आगंतुक आपकी साइट अपने खुद के domain पर देखें (उदाहरण के लिए, **www.gracechurch.org**), तो [कस्टम डोमेन](./custom-domain.md) देखें।
+यदि आप चाहते हैं कि आगंतुक आपकी साइट अपने ही डोमेन पर पहुँचें (उदाहरण के लिए, **www.gracechurch.org**), तो देखें [Custom Domain](./custom-domain.md)।
 
-## Branding कॉन्फ़िगर करना {#configuring-branding}
+## ब्रांडिंग कॉन्फ़िगर करना
 
-सभी ChurchApps tools में अपने चर्च के दिखने का तरीका बदलें:
+ChurchApps के सभी टूल में अपने चर्च की प्रस्तुति को अनुकूलित करें:
 
-1. **church logo** वाले क्षेत्र पर click करके और एक image file चुनकर अपना चर्च logo अपलोड करें।
-2. आपकी website और [mobile app](./mobile-app.md) पर इस्तेमाल होने वाली अतिरिक्त **church images** जोड़ें।
+1. लोगो क्षेत्र पर क्लिक करके और कोई छवि फ़ाइल चुनकर अपना **church logo** अपलोड करें।
+2. अपनी वेबसाइट और [मोबाइल ऐप](./mobile-app.md) पर उपयोग होने वाली कोई अतिरिक्त **church images** जोड़ें।
 
 :::tip
-सबसे अच्छे परिणाम के लिए, PNG format में पारदर्शी background वाला logo इस्तेमाल करें। इससे वह light और dark दोनों backgrounds पर अच्छा दिखेगा।
+सबसे अच्छे परिणाम के लिए, PNG प्रारूप में पारदर्शी पृष्ठभूमि वाला लोगो उपयोग करें। इससे वह हल्की और गहरी दोनों पृष्ठभूमियों पर अच्छा दिखता है।
 :::
 
-## सप्ताह का पहला दिन {#first-day-of-week}
+## सप्ताह का पहला दिन
 
-चुनें कि आपके calendars किस दिन से शुरू होने चाहिए। **Church Info** section में **First Day of Week** dropdown डिफ़ॉल्ट रूप से **Sunday** पर होता है, लेकिन इसे किसी भी दिन पर सेट किया जा सकता है। एक बार बदलने के बाद, यह B1 Admin और B1.church member portal के calendar grids में लागू होता है -- group calendars, curated calendars, और event editor सभी आपके चुने दिन से शुरू होने वाले हफ्ते दिखाते हैं।
+चुनें कि आपके कैलेंडर किस दिन से शुरू हों। Church Info अनुभाग पर **First Day of Week** ड्रॉपडाउन डिफ़ॉल्ट रूप से **Sunday** पर होता है, लेकिन किसी भी दिन पर सेट किया जा सकता है। एक बार बदलने के बाद, यह B1 Admin और B1.church सदस्य पोर्टल के कैलेंडर ग्रिड में लागू होता है -- ग्रुप कैलेंडर, क्यूरेटेड कैलेंडर, और इवेंट संपादक सभी हफ़्ते को आपके चुने दिन से शुरू करके दिखाते हैं।
 
-## समय क्षेत्र {#time-zone}
+## समय क्षेत्र
 
-**Church Information** section में **Time Zone** dropdown आपके चर्च का time zone सेट करता है (उदाहरण के लिए, *America/Chicago*)। खाली छोड़ने के लिए **None** चुनें। सेव होने के बाद, यह zone Church Information summary में दिखता है।
+Church Information अनुभाग में **Time Zone** ड्रॉपडाउन आपके चर्च का समय क्षेत्र सेट करता है (जैसे *America/Chicago*)। खाली छोड़ने के लिए **None** चुनें। सहेजने के बाद, यह क्षेत्र Church Information सारांश में दिखता है।
 
-B1 इस time zone का उपयोग पूरे चर्च के समय के लिए करता है, जैसे event reminders और आपके [FreePlay](../../freeplay/scheduled-mode/scheduling-the-calendar.md) TVs के schedules। [चेक-इन schedule](../attendance/setup.md#setting-a-check-in-schedule) सबसे पहले सेवा के [कैंपस](./campuses.md) के time zone में मापे जाते हैं, और चर्च के time zone का इस्तेमाल तभी होता है जब उस campus का कोई time zone न हो। अगर आपके सभी campuses एक ही time zone में हैं, तो इसे चर्च और हर campus दोनों पर सेट करें।
+B1 इस समय क्षेत्र का उपयोग चर्च-व्यापी समय के लिए करता है, जैसे इवेंट अनुस्मारक और आपके [FreePlay](../../freeplay/scheduled-mode/scheduling-the-calendar.md) टीवी के शेड्यूल। [चेक-इन शेड्यूल](../attendance/setup.md#setting-a-check-in-schedule) सेवा के [कैंपस](./campuses.md) के समय क्षेत्र में मापे जाते हैं, और चर्च के समय क्षेत्र का उपयोग तभी होता है जब उस कैंपस का कोई समय क्षेत्र न हो। यदि आपके सभी कैंपस एक ही समय क्षेत्र में हैं, तो इसे चर्च और हर कैंपस दोनों पर सेट करें।
 
-## क्षेत्र (तारीख और फ़ोन फ़ॉर्मेट) {#region-date-and-phone-format}
+## क्षेत्र (तारीख और फ़ोन प्रारूप)
 
-**Region** setting नियंत्रित करती है कि B1 में तारीखें और समय कैसे लिखे जाते हैं। डिफ़ॉल्ट रूप से तारीखें United States format में होती हैं (उदाहरण के लिए, "Sep 28, 2026" और "9/28/2026")। अमेरिका के बाहर के चर्च अपना format चुन सकते हैं -- उदाहरण के लिए, English (United Kingdom) चुनने पर "28 Sept 2026" और "28/09/2026" दिखते हैं।
+**Region** सेटिंग नियंत्रित करती है कि B1 में तारीखें और समय कैसे लिखे जाते हैं। डिफ़ॉल्ट रूप से तारीखें अमेरिकी प्रारूप में होती हैं (जैसे "Sep 28, 2026" और "9/28/2026")। अमेरिका के बाहर के चर्च अपना प्रारूप चुन सकते हैं -- उदाहरण के लिए, English (United Kingdom) चुनने पर "28 Sept 2026" और "28/09/2026" दिखते हैं।
 
-1. Settings पेज पर, बाईं ओर की सूची में **Region** पर click करें, फिर **Region** section में **Edit** पर click करें।
-2. **Region** dropdown से अपना region चुनें। हर विकल्प एक नमूना तारीख दिखाता है ताकि आप देख सकें कि तारीखें कैसी दिखेंगी।
-3. **Save** पर click करें।
+1. Settings पेज पर, बाईं ओर की सूची में **Region** पर क्लिक करें, फिर **Region** अनुभाग में **Edit** पर क्लिक करें।
+2. **Region** ड्रॉपडाउन से अपना क्षेत्र चुनें। हर विकल्प एक नमूना तारीख दिखाता है ताकि आप देख सकें कि तारीखें वास्तव में कैसी दिखेंगी।
+3. **Save** पर क्लिक करें।
 
-Region section फिर आपका चुना हुआ region, **Date format** का नमूना और आपका **Phone numbers** format दिखाता है।
+Region अनुभाग फिर आपका चुना क्षेत्र, **Date format** का एक नमूना, और आपका **Phone numbers** प्रारूप दिखाता है।
 
-### फ़ोन नंबर फ़ॉर्मेट {#phone-number-format}
+### फ़ोन नंबर प्रारूप
 
-उसी Region section में एक **Phone numbers** setting है, जो नियंत्रित करती है कि किसी व्यक्ति के record पर फ़ोन नंबर कैसे दर्ज किए जाते हैं:
+उसी Region अनुभाग में एक **Phone numbers** सेटिंग है, जो नियंत्रित करती है कि किसी व्यक्ति के रिकॉर्ड पर फ़ोन नंबर कैसे दर्ज किए जाते हैं:
 
-- **International (with country code)** -- डिफ़ॉल्ट। फ़ोन fields में country flag picker दिखता है और नंबर country code के साथ सेव होते हैं (उदाहरण के लिए, +1 918 555 1234)।
-- **Local (as typed)** -- फ़ोन fields सादे text boxes बन जाते हैं और नंबर वैसे ही सेव होते हैं जैसे आप टाइप करते हैं, बिना country code जोड़े (उदाहरण के लिए, 0701 234 5678)। यह चुनें अगर आपका चर्च स्थानीय format में नंबर लिखता है और B1 को country code जोड़ने नहीं देना चाहता।
+- **International (with country code)** -- डिफ़ॉल्ट। फ़ोन फ़ील्ड में एक देश-ध्वज चयनकर्ता दिखता है और नंबर देश कोड के साथ सहेजे जाते हैं (उदाहरण के लिए, +1 918 555 1234)।
+- **Local (as typed)** -- फ़ोन फ़ील्ड सादे टेक्स्ट बॉक्स बन जाते हैं और नंबर वैसे ही सहेजे जाते हैं जैसे आप टाइप करते हैं, बिना देश कोड जोड़े (उदाहरण के लिए, 0701 234 5678)। इसे चुनें यदि आपका चर्च स्थानीय प्रारूप में नंबर लिखता है और नहीं चाहता कि B1 देश कोड जोड़े।
 
-जब **Local** चुना होता है, तो Region section आपके region के बगल में "Local phone numbers" भी दिखाता है।
+जब **Local** चुना होता है, तो Region अनुभाग आपके क्षेत्र के आगे "Local phone numbers" भी दिखाता है।
 
 :::tip
-Texting सबसे अच्छा तब काम करती है जब नंबरों में country code हो। अगर आप B1 से texts भेजते हैं, तो **International** format रखें, या Local mode में टाइप किए गए नंबरों में country code सुनिश्चित करें।
+टेक्स्टिंग तब सबसे अच्छी काम करती है जब नंबरों में देश कोड हो। यदि आप B1 से टेक्स्ट भेजते हैं, तो **International** प्रारूप रखें, या सुनिश्चित करें कि Local मोड में आप जो नंबर टाइप करते हैं उनमें देश कोड हो।
 :::
 
-आपका region पूरे B1 Admin और आपकी B1.church website तथा member portal पर तारीखों और समय पर लागू होता है, जिसमें sermons, blog posts, group calendars और serving plans शामिल हैं, ताकि सदस्य भी वही तारीख format देखें जो आपका staff देखता है।
+आपका क्षेत्र पूरे B1 Admin और आपकी B1.church वेबसाइट और सदस्य पोर्टल पर तारीखों और समय पर लागू होता है, जिसमें सरमन, ब्लॉग पोस्ट, ग्रुप कैलेंडर, और सेवा प्लान शामिल हैं, ताकि सदस्य उसी प्रारूप में तारीखें देखें जिसमें आपका स्टाफ़ देखता है।
 
 ## टेक्स्टिंग {#texting}
 
-B1 Admin से किसी व्यक्ति या पूरे group को SMS भेजने के लिए एक texting provider जोड़ें। Texts आपके provider के अपने account से भेजे जाते हैं, इसलिए उनकी कीमतें और सीमाएं लागू होती हैं।
+B1 Admin से किसी व्यक्ति या पूरे ग्रुप को SMS भेजने के लिए एक टेक्स्टिंग प्रदाता कनेक्ट करें। टेक्स्ट प्रदाता के साथ आपके अपने खाते से भेजे जाते हैं, इसलिए उनकी कीमतें और सीमाएँ लागू होती हैं।
 
-1. Settings पेज पर, बाईं ओर की सूची में **Texting** पर click करें, फिर **Texting** section में **Edit** पर click करें।
+1. Settings पेज पर, बाईं ओर की सूची में **Texting** पर क्लिक करें, फिर **Texting** अनुभाग में **Edit** पर क्लिक करें।
 2. एक **Provider** चुनें:
-   - **Clearstream** -- एक **API Key** दर्ज करें। इसे अपने Clearstream Account Settings में API Keys के अंतर्गत बनाएं।
-   - **Text In Church** -- एक **API Key** दर्ज करें। पहले Text In Church Support से developer API access मांगें, फिर अपने Account Settings > Developer API section में key बनाएं।
-   - **Nalo Solutions** (Ghana) -- अपने Nalo Solutions account की auth key को **API Key** के रूप में दर्ज करें, और एक **Sender ID** (अधिकतम 11 अक्षर) जो Nalo ने आपके लिए approve किया हो।
-3. **Save** पर click करें।
+   - **Clearstream** -- एक **API Key** दर्ज करें। इसे अपने Clearstream Account Settings में API Keys के अंतर्गत बनाएँ।
+   - **Text In Church** -- एक **API Key** दर्ज करें। पहले Text In Church Support से developer API access माँगें, फिर अपनी Account Settings > Developer API अनुभाग में एक key बनाएँ।
+   - **Nalo Solutions** (घाना) -- अपने Nalo Solutions खाते से auth key को **API Key** के रूप में दर्ज करें, और एक **Sender ID** (अधिकतम 11 अक्षर) जिसे Nalo ने आपके लिए स्वीकृत किया है।
+   - **Twilio** -- अपने चर्च का Twilio खाता उपयोग करें; Twilio सीधे आपसे शुल्क लेता है। [Twilio Console](https://console.twilio.com) से **Account SID** और **Auth Token** कॉपी करें, और एक **From Number** दर्ज करें -- एक Twilio फ़ोन नंबर जो A2P 10DLC के लिए पंजीकृत हो, `+15551234567` जैसे प्रारूप में। सहेजने के बाद, इनबाउंड वेबहुक URL (नीचे देखें) को Twilio में नंबर के **A message comes in** वेबहुक में चिपकाएँ, ताकि STOP के जवाब B1 में भी दर्ज हों।
+3. **Save** पर क्लिक करें।
 
-Texting बंद करने के लिए **Provider** को **None** पर सेट करें और save करें। इससे सेव किया गया provider हट जाता है।
+टेक्स्टिंग बंद करने के लिए, **Provider** को **None** पर सेट करें और सहेजें। इससे सहेजा हुआ प्रदाता हट जाता है।
 
-### STOP लिखने वाले लोगों को opt out करना {#opting-out-people-who-reply-stop}
+### STOP लिखने वाले लोगों को ऑप्ट-आउट करना
 
-एक बार provider सेव हो जाने पर, **Edit** से Texting section दोबारा खोलें। Provider settings के नीचे, एक केवल-पढ़ने योग्य **Inbound (STOP) webhook URL** field दिखता है, जिसमें एक web address होता है जो आपके चर्च के लिए अनोखा है। Address चुनने के लिए field पर click करें, उसे copy करें, और अपने texting provider की inbound message (reply) webhook setting में paste करें। यह ऊपर दिए गए किसी भी provider के साथ काम करता है जो incoming replies को webhook पर भेज सकता है।
+एक बार प्रदाता सहेजने के बाद, **Edit** से Texting अनुभाग फिर खोलें। प्रदाता सेटिंग के नीचे, एक केवल-पढ़ने योग्य **Inbound (STOP) webhook URL** फ़ील्ड आपके चर्च के लिए अनोखा एक वेब पता दिखाता है। पता चुनने के लिए फ़ील्ड पर क्लिक करें, उसे कॉपी करें, और अपने टेक्स्टिंग प्रदाता की inbound message (reply) webhook सेटिंग में चिपकाएँ। यह ऊपर के उन किसी भी प्रदाता के साथ काम करता है जो आने वाले जवाबों को webhook पर भेज सकता है।
 
-इसके बाद, जब कोई आपके किसी text के जवाब में **STOP** (या STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT, या REVOKE) लिखता है, तो B1 हर उस व्यक्ति को ढूंढता है जिसका mobile नंबर मेल खाता है, उसे opted out चिह्नित करता है, और उसके text reminders बंद कर देता है। फिर वे group texts में छोड़ दिए जाते हैं। बाकी replies अनदेखे रहते हैं।
-
-:::info
-यह वही opt-out setting इस्तेमाल करता है जो **Hide me from the member directory** के लिए है, इसलिए STOP लिखने वाले लोग अपने profile पर **Hidden from directory** भी दिखते हैं। यह field केवल तभी दिखता है जब सेव किया गया provider चुना हो -- अगर आप dropdown को किसी दूसरे provider पर बदलते हैं, तो URL दोबारा देखने के लिए पहले save करें।
-:::
-
-एक बार provider connect हो जाने पर, texts भेजने की अनुमति वाले staff को किसी group के पेज (**Text this group**) और मोबाइल नंबर वाले व्यक्ति के पेज (**Send text message**) पर **Text** button दिखता है। अपना message टाइप करें और **Send** पर click करें। Dialog characters और SMS segments गिनता है। किसी group के लिए, भेजने से पहले यह दिखाता है कि कितने सदस्यों को text मिलेगा:
-
-- जिन सदस्यों का mobile नंबर फ़ाइल में नहीं है, उन्हें छोड़ दिया जाता है।
-- जिन सदस्यों ने **Hide me from the member directory** चुना है, वे opted out माने जाते हैं और छोड़ दिए जाते हैं।
-- एक ही mobile नंबर साझा करने वाले परिवार के सदस्यों को text केवल एक बार मिलता है।
-
-### Merge Fields से texts को personalize करना {#personalizing-texts-with-merge-fields}
-
-Message box के नीचे, Text dialog placeholder chips दिखाता है: **First Name**, **Last Name**, **Display Name**, और **Church Name**। किसी chip पर click करें ताकि उसका placeholder (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, या `{{churchName}}`) आपके cursor पर डाला जाए। Text भेजे जाने पर, हर placeholder प्राप्तकर्ता के विवरण से बदल दिया जाता है, इसलिए `Hi {{firstName}}, see you Sunday!` जैसा group text हर सदस्य तक उसके अपने नाम के साथ पहुंचता है। Placeholders group texts और किसी एक व्यक्ति को भेजे गए texts, दोनों में काम करते हैं।
+इसके बाद, जब कोई आपके किसी टेक्स्ट का जवाब **STOP** (या STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT, या REVOKE) देता है, तो B1 उन सभी को खोजता है जिनका मोबाइल नंबर मेल खाता है, उन्हें ऑप्ट-आउट चिह्नित करता है, और उनके टेक्स्ट अनुस्मारक बंद कर देता है। फिर वे ग्रुप टेक्स्ट में छोड़ दिए जाते हैं। अन्य जवाब अनदेखे किए जाते हैं।
 
 :::info
-1,600 अक्षरों की सीमा उस message पर लागू होती है जैसा आप उसे टाइप करते हैं। Placeholders भरने के बाद, 1,600 अक्षरों से लंबा कोई भी text उस लंबाई पर काट दिया जाता है।
+यह वही ऑप्ट-आउट सेटिंग उपयोग करता है जो **Hide me from the member directory** के लिए है, इसलिए जो लोग STOP लिखते हैं वे अपनी प्रोफ़ाइल पर **Hidden from directory** भी दिखते हैं। यह फ़ील्ड केवल तब दिखता है जब सहेजा हुआ प्रदाता चुना हो -- यदि आप ड्रॉपडाउन को किसी दूसरे प्रदाता पर स्विच करते हैं, तो URL फिर से देखने के लिए पहले सहेजें।
 :::
 
-Texts [वर्कफ़्लो](../serving/workflows.md#sending-a-text) के **Send Text** step से भी अपने-आप भेजे जा सकते हैं, जो वही provider और placeholders इस्तेमाल करता है।
+एक बार प्रदाता कनेक्ट हो जाने पर, टेक्स्ट भेजने की अनुमति वाले स्टाफ़ को किसी ग्रुप के पेज (**Text this group**) और मोबाइल फ़ोन वाले किसी व्यक्ति के पेज (**Send text message**) पर **Text** बटन दिखता है। अपना संदेश लिखें और **Send** पर क्लिक करें। डायलॉग अक्षरों और SMS segments की गिनती करता है। किसी ग्रुप के लिए, यह भेजने से पहले दिखाता है कि कितने सदस्यों को टेक्स्ट मिलेगा:
 
-## फ़ाइल स्टोरेज {#file-storage}
+- जिन सदस्यों के रिकॉर्ड पर कोई मोबाइल फ़ोन नहीं है, उन्हें छोड़ दिया जाता है।
+- जिन सदस्यों ने **Hide me from the member directory** चुना है, उन्हें ऑप्ट-आउट माना जाता है और छोड़ दिया जाता है।
+- जो परिवार के सदस्य एक ही मोबाइल नंबर साझा करते हैं, उन्हें टेक्स्ट केवल एक बार मिलता है।
 
-डिफ़ॉल्ट रूप से, आपकी website पर [फ़ाइलें](../website/files.md) के ज़रिए अपलोड की गई फ़ाइलें और अन्य content क्षेत्र B1 की मुफ़्त hosted storage का उपयोग करते हैं, जो 100MB तक है। अगर आपको और जगह चाहिए, तो इसकी जगह अपना cloud storage जोड़ सकते हैं -- नए uploads सीधे आपके account में जाएंगे, बिना किसी platform सीमा के।
+### मर्ज फ़ील्ड से टेक्स्ट को व्यक्तिगत बनाना {#personalizing-texts-with-merge-fields}
 
-1. Settings पेज पर, बाईं ओर की सूची में **File Storage** पर click करें, फिर **File Storage** section में **Edit** पर click करें।
-2. एक provider चुनें: **Google Drive**, **Dropbox**, **OneDrive**, या एक **S3-compatible bucket** (AWS S3, Cloudflare R2, Backblaze B2, आदि)।
-3. Google Drive, Dropbox, या OneDrive के लिए **Connect** पर click करें और access अधिकृत करने के लिए sign in करें। S3-compatible bucket के लिए, अपना access key, secret, bucket name, और public URL base दर्ज करें।
-4. **Save** पर click करें।
+संदेश बॉक्स के नीचे, Text डायलॉग प्लेसहोल्डर चिप दिखाता है: **First Name**, **Last Name**, **Display Name**, और **Church Name**। किसी चिप पर क्लिक करने से उसका प्लेसहोल्डर (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, या `{{churchName}}`) आपके कर्सर पर डल जाता है। टेक्स्ट भेजते समय, हर प्लेसहोल्डर उस प्राप्तकर्ता के विवरण से बदल दिया जाता है, इसलिए `Hi {{firstName}}, see you Sunday!` जैसा ग्रुप टेक्स्ट हर सदस्य तक उसके अपने नाम के साथ पहुँचता है। प्लेसहोल्डर ग्रुप टेक्स्ट और किसी एक व्यक्ति को भेजे गए टेक्स्ट, दोनों में काम करते हैं।
 
 :::info
-यह केवल आपकी website Files और ऐसे ही अन्य content क्षेत्रों में होने वाले नए uploads को प्रभावित करता है। Gallery images, thumbnails, logos, और person photos हमेशा B1 के डिफ़ॉल्ट storage पर रहते हैं।
+1,600 अक्षरों की सीमा उस संदेश पर लागू होती है जैसा आप उसे टाइप करते हैं। प्लेसहोल्डर भरे जाने के बाद, 1,600 अक्षरों से लंबा कोई भी टेक्स्ट उस लंबाई पर काट दिया जाता है।
 :::
 
-## ग्रेड प्रमोशन {#grade-promotion}
+टेक्स्ट [वर्कफ़्लो](../serving/workflows.md#sending-a-text) चरण से **Send Text** क्रिया के साथ भी स्वचालित रूप से भेजे जा सकते हैं, जो वही प्रदाता और प्लेसहोल्डर उपयोग करता है।
 
-अगर आप बच्चों और students पर **Grade** ट्रैक करते हैं, तो B1 आपके चुनी हुई तारीख (उदाहरण के लिए, 1 अगस्त) पर सभी को अपने-आप एक ग्रेड ऊपर कर सकता है, बजाय इसके कि आपको हर profile हाथ से edit करना पड़े।
+## फ़ाइल स्टोरेज
 
-1. Settings पेज पर, बाईं ओर की सूची में **Grade Promotion** पर click करें, फिर **Grade Promotion** section में **Edit** पर click करें।
-2. Switch चालू करें (यह **Enabled** दिखाता है) और हर साल grades promote करने के लिए **Month** और **Day** चुनें। उस तारीख को, जिस किसी का grade है वह एक ग्रेड ऊपर जाता है, और 12th grade के students **Graduated** हो जाते हैं।
-3. अपने बदलाव save करें।
+डिफ़ॉल्ट रूप से, आप अपनी वेबसाइट पर ([Files](../website/files.md) के माध्यम से) और अन्य सामग्री क्षेत्रों में जो फ़ाइलें अपलोड करते हैं, वे B1 के मुफ़्त होस्टेड स्टोरेज का उपयोग करती हैं, 100MB तक। यदि आपको अधिक जगह चाहिए, तो आप इसके बजाय अपना क्लाउड स्टोरेज कनेक्ट कर सकते हैं -- नए अपलोड फिर सीधे आपके खाते में जाते हैं, बिना किसी प्लेटफ़ॉर्म सीमा के।
 
-अपने-आप प्रमोशन रोकने के लिए, switch बंद करें ताकि वह **Disabled** दिखाए, और save करें। Promotion की तारीख हट जाती है और grades अपने-आप नहीं बदलेंगे।
+1. Settings पेज पर, बाईं ओर की सूची में **File Storage** पर क्लिक करें, फिर **File Storage** अनुभाग में **Edit** पर क्लिक करें।
+2. एक प्रदाता चुनें: **Google Drive**, **Dropbox**, **OneDrive**, या एक **S3-compatible bucket** (AWS S3, Cloudflare R2, Backblaze B2, आदि)।
+3. Google Drive, Dropbox, या OneDrive के लिए, **Connect** पर क्लिक करें और पहुँच अधिकृत करने के लिए साइन इन करें। S3-compatible bucket के लिए, अपनी access key, secret, bucket नाम, और public URL base दर्ज करें।
+4. **Save** पर क्लिक करें।
 
-## स्वयंसेवक साइन-अप {#volunteer-signup}
+:::info
+यह केवल आपकी वेबसाइट Files और समान सामग्री क्षेत्रों में नए अपलोड को प्रभावित करता है। गैलरी छवियाँ, थंबनेल, लोगो, और व्यक्ति के फ़ोटो हमेशा B1 के डिफ़ॉल्ट स्टोरेज पर रहते हैं।
+:::
 
-डिफ़ॉल्ट रूप से, [स्वयंसेवक साइन-अप](../../b1-church/serving/volunteer-signup.md) देखने वाले सदस्य हर आने वाला ऐसा हफ्ता देखते हैं जिसमें खाली पद हों। अगर यह सूची लंबी हो जाती है, तो आप हर plan type का केवल अगला हफ्ता दिखा सकते हैं।
+## ग्रेड प्रमोशन
 
-1. Settings पेज पर, बाईं ओर की सूची में **Volunteer Signup** पर click करें, फिर **Volunteer Signup** section में **Edit** पर click करें।
+यदि आप बच्चों और छात्रों का **Grade** रखते हैं, तो B1 आपकी चुनी तारीख (जैसे 1 अगस्त) पर सभी को अपने आप एक ग्रेड ऊपर कर सकता है, बजाय इसके कि आप हर प्रोफ़ाइल हाथ से संपादित करें।
+
+1. Settings पेज पर, बाईं ओर की सूची में **Grade Promotion** पर क्लिक करें, फिर **Grade Promotion** अनुभाग में **Edit** पर क्लिक करें।
+2. स्विच चालू करें (यह **Enabled** दिखाएगा) और हर वर्ष ग्रेड प्रमोट करने के लिए **Month** और **Day** चुनें। उस तारीख पर, जिसका भी ग्रेड है वह एक ग्रेड ऊपर जाता है, और 12वीं कक्षा के छात्र **Graduated** हो जाते हैं।
+3. अपने बदलाव सहेजें।
+
+स्वचालित प्रमोशन रोकने के लिए, स्विच बंद करें ताकि वह **Disabled** दिखाए, और सहेजें। प्रमोशन की तारीख हट जाती है और ग्रेड अपने आप नहीं बदलेंगे।
+
+## वॉलंटियर साइनअप {#volunteer-signup}
+
+डिफ़ॉल्ट रूप से, [वॉलंटियर साइनअप](../../b1-church/serving/volunteer-signup.md) ब्राउज़ करने वाले सदस्य हर आने वाला ऐसा हफ़्ता देखते हैं जिसमें खुले पद हैं। यदि यह सूची लंबी हो जाती है, तो आप इसके बजाय हर प्लान प्रकार का केवल अगला हफ़्ता दिखा सकते हैं।
+
+1. Settings पेज पर, बाईं ओर की सूची में **Volunteer Signup** पर क्लिक करें, फिर **Volunteer Signup** अनुभाग में **Edit** पर क्लिक करें।
 2. **Show only the next week of each plan type** चालू करें।
-3. अपने बदलाव save करें।
+3. अपने बदलाव सहेजें।
 
-इसके चालू होने पर, हर plan type केवल अपना अगला आने वाला plan दिखाता है। अगला हफ्ता तब दिखता है जब वर्तमान तारीख बीत जाती है। Section की **Weeks shown** पंक्ति **Only the next week of each plan type** या **All upcoming weeks** पढ़ती है।
+इसके चालू होने पर, हर प्लान प्रकार केवल अपना अगला आने वाला प्लान दिखाता है। अगला हफ़्ता तब दिखता है जब वर्तमान तारीख निकल जाए। अनुभाग की **Weeks shown** पंक्ति **Only the next week of each plan type** या **All upcoming weeks** पढ़ती है।
 
-## दान की गोपनीयता {#giving-privacy}
+## गिविंग गोपनीयता {#giving-privacy}
 
-जिन लोगों को giving की पहुंच है, वे आम तौर पर किसी व्यक्ति के [व्यक्ति का record](../people/adding-people.md#editing-details) पर उसके giving totals देखते हैं। अगर आप नहीं चाहते कि हर बार record खोलने पर राशि स्क्रीन पर दिखे, तो आप उन्हें तब तक छिपा सकते हैं जब तक कोई उसे मांगे।
+जिन लोगों के पास गिविंग तक पहुँच है, वे सामान्यतः किसी व्यक्ति के [व्यक्ति रिकॉर्ड](../people/adding-people.md#editing-details) पर उसके दान के कुल योग देखते हैं। यदि आप नहीं चाहते कि हर बार रिकॉर्ड खुलने पर राशि स्क्रीन पर दिखे, तो आप इन्हें तब तक छिपा सकते हैं जब तक कोई माँग न करे।
 
-1. Settings पेज पर, बाईं ओर की सूची में **Giving privacy** पर click करें, फिर **Giving privacy** section में **Edit** पर click करें।
+1. Settings पेज पर, बाईं ओर की सूची में **Giving privacy** पर क्लिक करें, फिर **Giving privacy** अनुभाग में **Edit** पर क्लिक करें।
 2. **Hide giving on person records until clicked** चालू करें।
-3. अपने बदलाव save करें।
+3. अपने बदलाव सहेजें।
 
-इसके चालू होने पर, person record पर giving card कहता है "Giving is hidden on person records." उस व्यक्ति की giving लोड करके दिखाने के लिए **Show giving** पर click करें। किसी दूसरे व्यक्ति का record खोलने पर यह फिर छिप जाती है। कौन giving देख सकता है, यह नहीं बदलता: केवल giving की पहुंच वाले लोग ही card देखते हैं।
+इसके चालू होने पर, व्यक्ति रिकॉर्ड पर गिविंग कार्ड कहता है "Giving is hidden on person records." उस व्यक्ति का दान लोड और प्रदर्शित करने के लिए **Show giving** पर क्लिक करें। जब आप कोई दूसरा व्यक्ति खोलते हैं तो यह फिर छिप जाता है। कौन गिविंग देख सकता है, यह नहीं बदलता: केवल गिविंग पहुँच वाले लोग ही कार्ड देखते हैं।
 
-## Import और Export {#import-and-export}
+## आयात और निर्यात
 
-Settings पेज पर आपके चर्च के नाम के नीचे **Import/Export** link एक नई browser window में एक विशेष tool खोलता है। इसका उपयोग इन कामों के लिए करें:
+Settings पेज पर आपके चर्च के नाम के नीचे का **Import/Export** लिंक एक नई ब्राउज़र विंडो में एक समर्पित टूल खोलता है। इसका उपयोग इन कामों के लिए करें:
 
-- किसी दूसरे church management system से सदस्यों का डेटा import करना।
-- बैकअप या migration के उद्देश्य से अपना ChurchApps डेटा export करना।
+- किसी अन्य चर्च प्रबंधन सिस्टम से सदस्य डेटा आयात करना।
+- बैकअप या माइग्रेशन के लिए अपना ChurchApps डेटा निर्यात करना।
 
-जब आप पहली बार अपना चर्च सेट कर रहे हों और मौजूदा records को ChurchApps में लाने की ज़रूरत हो, तब यह विशेष रूप से मददगार है।
+जब आप पहली बार अपना चर्च सेट कर रहे हों और मौजूदा रिकॉर्ड ChurchApps में ले जाने हों, तब यह विशेष रूप से उपयोगी है।
 
 :::warning
-डेटा import करते समय, हमेशा पहले अपने मौजूदा records का बैकअप लें। Import operations आपके system में डेटा जोड़ते हैं और बार-बार चलाने पर duplicate entries बना सकते हैं।
+डेटा आयात करते समय, हमेशा पहले अपने मौजूदा रिकॉर्ड का बैकअप लें। आयात संचालन आपके सिस्टम में डेटा जोड़ते हैं और कई बार चलाने पर डुप्लिकेट प्रविष्टियाँ बना सकते हैं।
 :::

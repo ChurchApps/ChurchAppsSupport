@@ -6,16 +6,16 @@ title: "MCP-Server"
 
 <div class="article-intro">
 
-Die B1-API stellt einen [MCP-Server (Model Context Protocol)](https://modelcontextprotocol.io) unter `/mcp` bereit. Jeder MCP-fähige KI-Client – claude.ai-Custom-Connectors, Claude Code, Claude Desktop, das OpenAI Agents SDK, Cursor oder ein eigener Client – kann sich damit verbinden und im Namen eines angemeldeten Benutzers der Kirche die zugrunde liegende REST-API aufrufen. Es handelt sich um einen schlanken, generischen Wrapper: Drei generische Werkzeuge machen die gesamte API-Oberfläche dynamisch verfügbar, statt jeden Endpunkt einzeln nachzubilden. Hinzu kommt ein Werkzeug mit Anleitung für den Website-Baukasten.
+Die B1-API stellt unter `/mcp` einen [MCP-Server (Model Context Protocol)](https://modelcontextprotocol.io) bereit. Jeder MCP-fähige KI-Client – claude.ai-Custom-Connectors, Claude Code, Claude Desktop, das OpenAI Agents SDK, Cursor oder ein eigener Client – kann sich damit verbinden und die zugrunde liegende REST-API im Auftrag eines angemeldeten Kirchenbenutzers aufrufen. Es handelt sich um einen schlanken, generischen Wrapper: Drei generische Tools stellen die gesamte API-Oberfläche dynamisch bereit, statt jeden Endpunkt einzeln nachzubilden, dazu kommt ein Leitfaden-Tool für den Website-Builder.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Vor dem Start</h4>
 
-- Ein [B1-API-Schlüssel](./api-keys) (`cak_…`) mit den Scopes, die der Client haben soll, oder ein MCP-Client, der sich per OAuth anmelden kann (siehe [OAuth-Erkennung](#oauth-discovery))
-- Ein erreichbarer B1-API-Host – `https://api.churchapps.org` für gehostete Kirchen oder Ihre eigene Installation
-- Ein MCP-Client. Die Einrichtung für Endanwender finden Sie unter [Claude](/docs/b1-admin/integrations/claude) und [ChatGPT](/docs/b1-admin/integrations/chatgpt)
+- Ein [B1-API-Schlüssel](./api-keys) (`cak_…`) mit den Bereichen, die der Client haben soll, oder ein MCP-Client, der sich per OAuth anmelden kann (siehe [OAuth-Erkennung](#oauth-discovery))
+- Ein erreichbarer B1-API-Host – `https://api.churchapps.org` für gehostete Kirchen oder Ihre eigene Bereitstellung
+- Ein MCP-Client. Anleitungen für Endbenutzer finden Sie unter [Claude](/docs/b1-admin/integrations/claude) und [ChatGPT](/docs/b1-admin/integrations/chatgpt)
 
 </div>
 
@@ -31,12 +31,12 @@ Authorization: Bearer cak_<prefix>.<secret>
 | Aspekt | Wert |
 |---|---|
 | **Pfad** | `/mcp` (relativ zum API-Host) |
-| **Methode** | Nur `POST` – Anfrage/Antwort und SSE-Streaming laufen über denselben Endpunkt |
+| **Methode** | Nur `POST` – Anfrage/Antwort und SSE-Streaming laufen beide über denselben Endpunkt |
 | **Transport** | [MCP Streamable HTTP](https://modelcontextprotocol.io/specification/2025-11-25/basic/transports) |
-| **Sitzungsmodell** | Zustandslos. Pro Anfrage wird eine neue MCP-Serverinstanz erzeugt – keine Sitzungs-ID, keine Wiederaufnahme |
-| **Auth** | Bearer-Token. `cak_…`-API-Schlüssel und B1-JWTs (einschließlich OAuth-Zugriffstoken) funktionieren gleichermaßen; die Auflösung ist dieselbe wie bei jedem anderen authentifizierten Endpunkt |
+| **Sitzungsmodell** | Zustandslos. Pro Anfrage wird eine neue MCP-Serverinstanz erstellt – keine Sitzungs-ID, keine Wiederaufnahme |
+| **Authentifizierung** | Bearer-Token. `cak_…`-API-Schlüssel und B1-JWTs (einschließlich OAuth-Zugriffstoken) funktionieren gleichermaßen; die Auflösung entspricht der jedes anderen authentifizierten Endpunkts |
 
-Eine Anfrage, deren Header `Authorization` fehlt oder ungültig ist, liefert:
+Eine Anfrage, deren `Authorization`-Header fehlt oder ungültig ist, gibt Folgendes zurück:
 
 ```json
 { "error": "Unauthorized — MCP requires a valid bearer token (cak_* API key or JWT)." }
@@ -44,20 +44,22 @@ Eine Anfrage, deren Header `Authorization` fehlt oder ungültig ist, liefert:
 
 mit HTTP 401 und dem Header `WWW-Authenticate: Bearer resource_metadata="<api>/.well-known/oauth-protected-resource"`. OAuth-fähige Clients folgen diesem Header, um die Anmeldung zu starten.
 
-## Werkzeuge
+Auf der gehosteten API (Produktion und Demo) wird `/mcp` über eine API-Gateway-HTTP-API ausgeliefert und nicht über die REST-API, die für die übrigen Endpunkte verwendet wird. Die REST-API benennt `WWW-Authenticate` bei Lambda-Proxy-Antworten in `x-amzn-remapped-www-authenticate` um. Dadurch erhielten Clients wie ChatGPT nur eine nackte 401-Antwort ohne Möglichkeit, die Anmeldung zu starten; die HTTP-API leitet den Header unverändert weiter.
 
-Drei generische Werkzeuge und eine Anleitung. Das Modell verwendet `list_endpoints` zur Erkundung, `describe_endpoint`, um das Format einer Nutzlast kennenzulernen, `api_call`, um die API tatsächlich aufzurufen, und `describe_page_builder`, wenn es um Website-Inhalte geht.
+## Tools
+
+Drei generische Tools und ein Leitfaden. Das Modell verwendet `list_endpoints` zur Suche, `describe_endpoint`, um die Struktur einer Nutzlast zu erfahren, `api_call`, um die API tatsächlich aufzurufen, und `describe_page_builder`, wenn es um Website-Inhalte geht.
 
 ### `list_endpoints`
 
-Liefert das vollständige Verzeichnis der registrierten REST-Routen, gefiltert nach einer optionalen Teilzeichenkette und/oder einem HTTP-Verb. Jeder Eintrag enthält den Namen des Controllers und die API-Key-Scopes, die voraussichtlich benötigt werden.
+Gibt das vollständige Verzeichnis der registrierten REST-Routen zurück, optional gefiltert nach einer Teilzeichenfolge und/oder einem HTTP-Verb. Jeder Eintrag enthält den Controller-Namen und die API-Schlüsselbereiche, die voraussichtlich benötigt werden.
 
 **Eingabe:**
 
 | Feld | Typ | Beschreibung |
 |---|---|---|
-| `filter` | Zeichenkette (optional) | Teilzeichenkette ohne Berücksichtigung der Groß-/Kleinschreibung, die mit dem Pfad verglichen wird, z. B. `"people"` |
-| `method` | Aufzählung (optional) | `GET` / `POST` / `PUT` / `DELETE` / `PATCH` |
+| `filter` | string (optional) | Teilzeichenfolge, die ohne Beachtung der Groß-/Kleinschreibung im Pfad gesucht wird, z. B. `"people"` |
+| `method` | enum (optional) | `GET` / `POST` / `PUT` / `DELETE` / `PATCH` |
 
 **Ausgabe:** ein JSON-Dokument der Form
 
@@ -75,33 +77,33 @@ Liefert das vollständige Verzeichnis der registrierten REST-Routen, gefiltert n
 }
 ```
 
-Das Verzeichnis wird einmal beim Start der API aus der laufenden Routentabelle erstellt – alles, was Sie mit `curl` erreichen können, erscheint hier.
+Das Verzeichnis wird einmal beim Start der API aus der aktiven Routentabelle erstellt – alles, was Sie mit `curl` erreichen können, erscheint hier.
 
 ### `describe_endpoint`
 
-Liefert eine kurze Zusammenfassung und, sofern verfügbar, einen von Hand kuratierten Beispielkörper der Anfrage und eine Beispielantwort für einen Endpunkt.
+Gibt eine kurze Zusammenfassung zurück sowie – sofern verfügbar – einen manuell kuratierten Beispiel-Request-Body und eine Beispielantwort für einen Endpunkt.
 
 **Eingabe:**
 
 | Feld | Typ | Beschreibung |
 |---|---|---|
-| `method` | Zeichenkette | HTTP-Verb |
-| `path` | Zeichenkette | Vollständiger Pfad, wie ihn `list_endpoints` zurückgibt |
+| `method` | string | HTTP-Verb |
+| `path` | string | Vollständiger Pfad, wie von `list_endpoints` zurückgegeben |
 
-**Ausgabe:** Bei kuratierten Endpunkten ein Beispiel mit `summary`, `requestBody` und `responseSample`. Bei nicht kuratierten Endpunkten eine Ersatzmeldung, die das Modell anweist, zuerst `GET` aufzurufen, um das Format zu sehen. Rund ein Dutzend stark genutzter Routen (Personen, Gruppen, Spenden, Anwesenheit, Fonds) sind kuratiert.
+**Ausgabe:** Bei kuratierten Endpunkten ein Beispiel mit `summary`, `requestBody` und `responseSample`. Bei nicht kuratierten Endpunkten eine Ersatzmeldung, die das Modell anweist, zuerst ein `GET` aufzurufen, um die Struktur zu sehen. Etwa ein Dutzend stark genutzter Routen (Personen, Gruppen, Spenden, Anwesenheit, Fonds) sind kuratiert.
 
 ### `api_call`
 
-Ruft den gewählten REST-Endpunkt im selben Prozess über denselben Express-Middleware-Stack auf wie eine normale HTTP-Anfrage. Authentifizierung, Verarbeitung des Request-Körpers, Audit-Protokollierung und die Begrenzung auf die jeweilige Kirche gelten vollständig.
+Ruft den gewählten REST-Endpunkt im selben Prozess auf, und zwar über denselben Express-Middleware-Stack wie eine normale HTTP-Anfrage – Authentifizierung, Body-Parsing, Audit-Protokollierung und die Zuordnung zur jeweiligen Kirche gelten alle.
 
 **Eingabe:**
 
 | Feld | Typ | Beschreibung |
 |---|---|---|
-| `method` | Aufzählung | `GET` / `POST` / `PUT` / `DELETE` / `PATCH` |
-| `path` | Zeichenkette | Pfad einschließlich Modulpräfix, z. B. `/membership/people` |
-| `query` | Objekt (optional) | Flaches Objekt mit Query-String-Parametern |
-| `body` | beliebig (optional) | JSON-Körper der Anfrage – bei `POST` typischerweise ein Array von Modellobjekten |
+| `method` | enum | `GET` / `POST` / `PUT` / `DELETE` / `PATCH` |
+| `path` | string | Pfad einschließlich des Modulpräfixes, z. B. `/membership/people` |
+| `query` | object (optional) | Flaches Objekt mit Query-String-Parametern |
+| `body` | any (optional) | JSON-Request-Body – bei `POST` typischerweise ein Array von Modellobjekten |
 
 **Ausgabe:**
 
@@ -113,67 +115,67 @@ Ruft den gewählten REST-Endpunkt im selben Prozess über denselben Express-Midd
 }
 ```
 
-Das Werkzeugergebnis ist mit `isError: true` markiert, sobald die Antwort einen Status ≥ 400 hat.
+Das Toolergebnis wird für jede Antwort mit Status ≥ 400 als `isError: true` markiert.
 
 ### `describe_page_builder`
 
-Das einzige nicht generische Werkzeug: eine statische, in sich geschlossene Anleitung zum Aufbau von Website-Seiten über die Endpunkte `/content/*` – das Datenmodell Seite → Abschnitt → Element, der Ablauf zum Anlegen, jeder `elementType` mit seinem Format `answersJSON`, Einstellungen auf Abschnittsebene wie die Formtrenner `dividerTop`/`dividerBottom` sowie ein durchgängiges Beispiel. Es nimmt keine Eingabe entgegen und spiegelt den Elementkatalog des Editors in B1 Admin wider (siehe [Architektur des Website-Baukastens](../architecture/website-builder)). Agenten sollen es einmal aufrufen, bevor sie Seiteninhalte anlegen oder bearbeiten, und dann über `api_call` handeln.
+Das einzige nicht generische Tool: ein statischer, in sich geschlossener Leitfaden zum Erstellen von Website-Seiten über die `/content/*`-Endpunkte – das Datenmodell Page → Section → Element, der Erstellungsablauf, jeder `elementType` mit der Struktur seines `answersJSON`, abschnittsbezogene Einstellungen wie die Formteiler `dividerTop`/`dividerBottom` sowie ein durchgängiges Beispiel. Das Tool hat keine Eingabe und spiegelt den Elementkatalog, der im B1Admin-Editor gepflegt wird (siehe [Architektur des Website-Builders](../architecture/website-builder)). Agenten sollen es einmal aufrufen, bevor sie Seiteninhalte erstellen oder bearbeiten, und danach über `api_call` handeln.
 
 ## Auth-Modell
 
-Die MCP-Anfrage selbst läuft über `CustomAuthProvider.getUser()` – denselben Weg, den jeder authentifizierte B1-Endpunkt nutzt. Ein `cak_…`-Bearer-Token wird zu einem `Principal`, dessen Berechtigungen die aktuelle RBAC der ausstellenden Person sind, **geschnitten mit** den gewährten Scopes des Schlüssels. Diese Schnittmenge wird bei jeder Anfrage neu berechnet, daher gilt:
+Die MCP-Anfrage selbst läuft über `CustomAuthProvider.getUser()` – denselben Pfad, den jeder authentifizierte B1-Endpunkt nutzt. Ein `cak_…`-Bearer wird zu einem `Principal`, dessen Berechtigungen die aktuelle RBAC der ausstellenden Person sind, **geschnitten** mit den gewährten Bereichen des Schlüssels. Diese Schnittmenge wird bei jeder Anfrage neu berechnet, daher gilt:
 
-- Wird ein Scope aus einem Schlüssel entfernt (indem er gelöscht und neu erstellt wird), endet der Zugriff bei der nächsten Anfrage.
-- Wird der zugrunde liegenden Person in B1 Admin eine Berechtigung entzogen, endet der Zugriff bei der nächsten Anfrage – selbst wenn der Schlüssel noch existiert.
+- Wird ein Bereich aus einem Schlüssel entfernt (durch Löschen und Neuerstellen), endet der Zugriff beim nächsten Aufruf.
+- Wird einer zugrunde liegenden Person in B1Admin eine Berechtigung entzogen, endet der Zugriff beim nächsten Aufruf – auch wenn der Schlüssel noch existiert.
 
-Bei verschachtelten `api_call`-Aufrufen wird der ursprüngliche Header `Authorization` in die synthetische Anfrage kopiert. Dadurch läuft `CustomAuthProvider` erneut, und die Schnittmenge der Scopes wird pro Aufruf erneut angewendet. Es gibt kein Zwischenspeichern von Token.
+Bei verschachtelten `api_call`-Aufrufen wird der ursprüngliche `Authorization`-Header in die synthetische Anfrage kopiert, sodass `CustomAuthProvider` erneut läuft und die Bereichsschnittmenge pro Aufruf erneut angewendet wird. Es gibt kein Token-Caching.
 
-## Pfadsperrliste
+## Pfad-Sperrliste
 
 Einige wenige Routen sind über `api_call` nicht erreichbar, selbst mit einem gültigen Schlüssel:
 
 | Muster | Grund |
 |---|---|
-| `/giving/donate/webhook/*` | Webhook-Endpunkte von Anbietern erwarten unveränderte, signaturgeprüfte Nachrichtenkörper von Stripe/PayPal – nicht von allgemeinen Aufrufern |
-| `/membership/oauth/clients*` | Die Registrierung von OAuth-Clients ist nur dem Betreiber vorbehalten |
-| `/membership/people/apiEmails` | Gesteuert durch das `jwtSecret` des Betreibers, nicht durch Benutzerberechtigungen |
-| Jede Route, die `multipart/form-data` erwartet | Datei-Uploads eignen sich nicht für JSON-RPC |
+| `/giving/donate/webhook/*` | Webhook-Endpunkte von Anbietern erwarten rohe, signaturgeprüfte Bodies von Stripe/PayPal – nicht für allgemeine Aufrufer bestimmt |
+| `/membership/oauth/clients*` | Die Registrierung von OAuth-Clients ist dem Betreiber vorbehalten |
+| `/membership/people/apiEmails` | Durch das Betreiber-`jwtSecret` geschützt, nicht durch Benutzerberechtigungen |
+| Jede Route, die `multipart/form-data` erwartet | Datei-Uploads sind nicht JSON-RPC-freundlich |
 
-Ein gesperrter Pfad liefert ein Werkzeugergebnis mit `isError: true` und einer beschreibenden Meldung; die zugrunde liegende Route wird nie aufgerufen.
+Ein gesperrter Pfad gibt ein Toolergebnis mit `isError: true` und einer beschreibenden Meldung zurück; die zugrunde liegende Route wird nie aufgerufen.
 
-## Begrenzung der Antwortgröße
+## Größenbeschränkung der Antwort
 
-Der Körper jeder `api_call`-Antwort ist auf **64 KB** erfasster Ausgabe begrenzt. Überschreitet eine Abfrage diese Grenze, enthält die Antwort `"truncated": true`, und das Modell soll den Aufruf mit enger gefassten Query-Parametern wiederholen. So sprengt eine einzelne Werkzeugantwort nicht das Kontextfenster des Clients.
+Jeder `api_call`-Antwort-Body ist auf **64 KB** erfasster Ausgabe begrenzt. Überschreitet eine Abfrage die Grenze, enthält die Antwort `"truncated": true`, und das Modell soll den Aufruf mit engeren Query-Parametern wiederholen. So wird verhindert, dass eine einzelne Toolantwort das Kontextfenster des Clients sprengt.
 
 ## Ratenbegrenzung
 
-Auf `/mcp` gibt es keine Ratenbegrenzung auf Anwendungsebene. In der Produktion wird die Drosselung an API Gateway bzw. die Parallelität von Lambda übertragen, bei selbst gehosteten Installationen an das, was Ihr Reverse Proxy durchsetzt.
+Für `/mcp` gibt es keine Ratenbegrenzung auf Anwendungsebene. In der Produktion erfolgt die Drosselung über die Parallelität von API Gateway bzw. Lambda, bei selbst gehosteten Bereitstellungen über den Reverse-Proxy.
 
-## OAuth-Erkennung {#oauth-discovery}
+## OAuth-Erkennung
 
-Der MCP-Server kündigt OAuth-2.1-Metadaten an, damit Clients, die sich nur mit per OAuth erkannten Servern verbinden – insbesondere die Oberfläche „Benutzerdefinierten Connector hinzufügen“ von Claude.ai –, einen Benutzer ohne eingefügten Schlüssel anmelden können. `/mcp` ist die geschützte Ressource, der bestehende [OAuth-Anbieter](./connected-apps) unter `/membership/oauth` ist der Autorisierungsserver, und die Seite `/oauth` in B1 Admin ist der Zustimmungsbildschirm.
+Der MCP-Server veröffentlicht OAuth-2.1-Metadaten, damit Clients, die nur mit per OAuth erkannten Servern verbinden – insbesondere die Oberfläche „Add custom connector“ von Claude.ai –, eine Benutzeranmeldung ohne eingefügten Schlüssel durchführen können. `/mcp` ist die geschützte Ressource, der bestehende [OAuth-Provider](./connected-apps) unter `/membership/oauth` ist der Autorisierungsserver, und die Seite `/oauth` in B1Admin ist der Zustimmungsbildschirm.
 
 | Endpunkt | Zweck |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (auch `/.well-known/oauth-protected-resource/mcp`) | Metadaten der geschützten Ressource (RFC 9728): `resource` ist `<api>/mcp`, `authorization_servers` ist die Wurzel der API, `scopes_supported` listet jeden [Scope eines API-Schlüssels](./api-keys#scopes) |
-| `GET /.well-known/oauth-authorization-server` | Metadaten des Autorisierungsservers (RFC 8414): `authorization_endpoint` ist `/oauth` in B1 Admin, `token_endpoint` ist `/membership/oauth/token`, `registration_endpoint` ist `/membership/oauth/register` |
+| `GET /.well-known/oauth-protected-resource` (auch `/.well-known/oauth-protected-resource/mcp`) | Metadaten der geschützten Ressource (RFC 9728): `resource` ist `<api>/mcp`, `authorization_servers` ist die API-Wurzel, `scopes_supported` listet jeden [API-Schlüsselbereich](./api-keys#scopes) |
+| `GET /.well-known/oauth-authorization-server` | Metadaten des Autorisierungsservers (RFC 8414): `authorization_endpoint` ist B1Admin `/oauth`, `token_endpoint` ist `/membership/oauth/token`, `registration_endpoint` ist `/membership/oauth/register` |
 | `POST /membership/oauth/register` | Dynamische Client-Registrierung (RFC 7591) |
 
 Der Ablauf, den ein Client wie claude.ai durchläuft:
 
-1. `POST /mcp` ohne Token liefert 401 mit dem Header `WWW-Authenticate`, der auf die Metadaten der geschützten Ressource verweist.
-2. Der Client liest beide Metadatendokumente und registriert sich selbst mit `POST /membership/oauth/register`; er sendet `client_name`, `redirect_uris` und optional `scope`. Jeder selbst registrierte Client ist ein **öffentlicher** Client: Es wird kein Geheimnis ausgegeben, und die Antwort enthält `token_endpoint_auth_method: "none"`. Redirect-URIs müssen `https` sein oder `http` auf einer Loopback-Adresse (`localhost`, `127.0.0.1`, `[::1]`); höchstens 10 pro Client. Die Registrierung ist auf 20 pro Stunde und IP-Adresse begrenzt.
-3. Der Benutzer wird mit `code_challenge` und `code_challenge_method=S256` zu `/oauth` in B1 Admin geschickt. Die Zustimmungsseite listet jeden angeforderten Scope in verständlicher Sprache auf (oder „Alles, worauf Ihr B1-Konto zugreifen kann“, wenn keiner angefordert wurde), zeigt den Host, zu dem der Benutzer zurückgeleitet wird, und weist darauf hin, wenn sich die App selbst registriert hat. Der Benutzer klickt auf **Erlauben**.
-4. Der Client tauscht den Code am Endpunkt `/membership/oauth/token` mit `grant_type=authorization_code` und seinem `code_verifier` ein und erneuert das Token später mit `grant_type=refresh_token`. Form-kodierte und JSON-Körper werden beide akzeptiert.
-5. Das daraus entstehende Zugriffstoken ist ein Scope-begrenzter B1-JWT und wird als Bearer-Token auf `/mcp` verwendet.
+1. `POST /mcp` ohne Token gibt 401 mit dem Header `WWW-Authenticate` zurück, der auf die Metadaten der geschützten Ressource verweist.
+2. Der Client liest beide Metadatendokumente und registriert sich dann mit `POST /membership/oauth/register`; er sendet `client_name`, `redirect_uris` und optional `scope`. Jeder selbst registrierte Client ist ein **öffentlicher** Client: Es wird kein Geheimnis ausgegeben, und die Antwort enthält `token_endpoint_auth_method: "none"`. Redirect-URIs müssen `https` sein oder `http` auf einer Loopback-Adresse (`localhost`, `127.0.0.1`, `[::1]`); höchstens 10 pro Client. Die Registrierung ist auf 20 pro Stunde und IP-Adresse begrenzt.
+3. Der Benutzer wird mit `code_challenge` und `code_challenge_method=S256` zu B1Admin `/oauth` geschickt. Die Zustimmungsseite listet jeden angeforderten Bereich in verständlicher Sprache auf (oder „Everything your B1 account can access“, wenn keiner angefordert wurde), zeigt den Host, zu dem der Benutzer zurückgeleitet wird, und weist darauf hin, wenn sich die App selbst registriert hat. Der Benutzer klickt auf **Allow**.
+4. Der Client tauscht den Code unter `/membership/oauth/token` mit `grant_type=authorization_code` und seinem `code_verifier` gegen ein Token ein und erneuert es später mit `grant_type=refresh_token`. Formularkodierte und JSON-Bodies werden beide akzeptiert.
+5. Das resultierende Zugriffstoken ist ein bereichsbeschränktes B1-JWT und dient als Bearer-Token für `/mcp`.
 
-PKCE-Regeln: Es wird nur `S256` akzeptiert. Ein Client ohne Geheimnis muss beim Autorisieren eine `code_challenge` und beim Token-Tausch den passenden `code_verifier` senden; vertrauliche Clients (mit Geheimnis) können weiterhin nur das Geheimnis verwenden. Redirect-URIs müssen exakt einer registrierten URI entsprechen.
+PKCE-Regeln: Es wird nur `S256` akzeptiert. Ein Client ohne Geheimnis muss beim Autorisieren ein `code_challenge` senden und beim Token-Austausch den passenden `code_verifier`; vertrauliche Clients (mit Geheimnis) dürfen weiterhin nur das Geheimnis verwenden. Redirect-URIs müssen einer registrierten URI exakt entsprechen.
 
-Clients, die ein statisches Bearer-Token in ihrer Konfiguration akzeptieren – Claude Code, Claude Desktop, das OpenAI Agents SDK, Cursor oder eigener Code –, können stattdessen weiterhin einen Schlüssel `cak_…` verwenden.
+Clients, die ein statisches Bearer-Token in ihrer Konfiguration akzeptieren – Claude Code, Claude Desktop, das OpenAI Agents SDK, Cursor, eigener Code –, können stattdessen weiterhin einen `cak_…`-Schlüssel verwenden.
 
 ## Lokale Entwicklung
 
-Der MCP-Endpunkt wird zusammen mit allen anderen Teilen eingebunden, wenn die API lokal läuft:
+Der MCP-Endpunkt wird zusammen mit allem anderen eingebunden, wenn die API lokal läuft:
 
 ```bash
 cd Api
@@ -181,34 +183,34 @@ npm run dev
 # Server listening on http://localhost:8084
 ```
 
-Beim Start bestätigt die Protokollzeile `📡 MCP server ready at /mcp — N routes in inventory`, dass das Verzeichnis erstellt wurde.
+Beim Start bestätigt die Logzeile `📡 MCP server ready at /mcp — N routes in inventory`, dass das Verzeichnis erstellt wurde.
 
-Zum Testen eignet sich der MCP Inspector:
+Testen Sie den Endpunkt mit dem MCP Inspector:
 
 ```bash
 npx @modelcontextprotocol/inspector
 ```
 
-Richten Sie ihn in der Oberfläche des Inspectors auf `http://localhost:8084/mcp` und setzen Sie den Header `Authorization` auf `Bearer cak_<prefix>.<secret>`. Rufen Sie zuerst `list_endpoints` auf; Sie sollten die vollständige Routenliste sehen. Danach sollte `api_call({ method: "GET", path: "/membership/people" })` Ihre lokalen Beispielpersonen zurückliefern.
+Richten Sie den Inspector auf `http://localhost:8084/mcp` und setzen Sie den Header `Authorization` auf `Bearer cak_<prefix>.<secret>`. Rufen Sie zuerst `list_endpoints` auf; Sie sollten die vollständige Routenliste sehen. Danach sollte `api_call({ method: "GET", path: "/membership/people" })` Ihre lokalen Seed-Personen zurückgeben.
 
-## Code-Aufbau
+## Code-Struktur
 
-Der MCP-Server liegt im Repository der API unter `src/modules/mcp/`. Wichtige Dateien:
+Der MCP-Server befindet sich im Repository der API unter `src/modules/mcp/`. Wichtige Dateien:
 
 | Datei | Zweck |
 |---|---|
-| `McpController.ts` | `@controller("/mcp")`; erzeugt pro Anfrage einen `StreamableHTTPServerTransport` und sendet bei 401 die Herausforderung `WWW-Authenticate` |
+| `McpController.ts` | `@controller("/mcp")`; bindet pro Anfrage `StreamableHTTPServerTransport` ein und sendet bei 401 die Challenge `WWW-Authenticate` |
 | `WellKnownController.ts` / `OAuthMetadata.ts` | Liefert die OAuth-Erkennungsdokumente unter `/.well-known` |
-| `McpServer.ts` | Erstellt einen MCP-`Server` und registriert die vier Werkzeuge |
-| `RouteInventory.ts` | Durchläuft beim Start die Metadaten von inversify-express-utils, um die Routen aufzuzählen |
-| `internalDispatch.ts` | Synthetische `req`/`res`-Objekte, die die Express-App im selben Prozess erneut aufrufen |
+| `McpServer.ts` | Erstellt einen MCP-`Server` und registriert die vier Tools |
+| `RouteInventory.ts` | Durchläuft beim Start die Metadaten von inversify-express-utils, um die Routen aufzulisten |
+| `internalDispatch.ts` | Synthetisches `req`/`res`, das die Express-App im selben Prozess erneut betritt |
 | `tools/` | `listEndpoints.ts`, `describeEndpoint.ts`, `apiCall.ts`, `describePageBuilder.ts` |
-| `examples.ts` | Kuratierte Anfrage- und Antwortbeispiele für stark genutzte Endpunkte |
+| `examples.ts` | Kuratierte Anfrage-/Antwortbeispiele für stark genutzte Endpunkte |
 
-## Verwandt
+## Verwandte Seiten
 
 - [API-Schlüssel](./api-keys)
 - [Webhooks](./webhooks)
 - [Verbundene Apps (OAuth)](./connected-apps)
-- [Claude – Einrichtung für Endanwender](/docs/b1-admin/integrations/claude)
-- [ChatGPT – Einrichtung für Endanwender](/docs/b1-admin/integrations/chatgpt)
+- [Claude – Einrichtung für Endbenutzer](/docs/b1-admin/integrations/claude)
+- [ChatGPT – Einrichtung für Endbenutzer](/docs/b1-admin/integrations/chatgpt)

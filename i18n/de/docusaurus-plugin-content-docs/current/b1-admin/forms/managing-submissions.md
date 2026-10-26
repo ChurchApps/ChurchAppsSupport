@@ -1,12 +1,12 @@
 ---
-title: "Einsendungen verwalten"
+title: "Eingaben verwalten"
 ---
 
-# Einsendungen verwalten
+# Eingaben verwalten
 
 <div class="article-intro">
 
-Sobald Ihr Formular online ist, treffen die ersten Einsendungen ein. Der Tab **Formulareinsendungen** ermöglicht es Ihnen, jede Antwort zu prüfen, nachzuverfolgen, wer das Formular ausgefüllt hat, und die Daten zu nutzen, um zeitnah auf Ihre Gemeinde zuzugehen.
+Sobald Ihr Formular live ist, kommen Eingaben herein. Über den Reiter **Form Submissions** können Sie jede Antwort prüfen, nachverfolgen, wer das Formular ausgefüllt hat, und die Daten nutzen, um sich zeitnah bei Ihrer Gemeinde zu melden.
 
 </div>
 
@@ -14,69 +14,73 @@ Sobald Ihr Formular online ist, treffen die ersten Einsendungen ein. Der Tab **F
 <h4>Bevor Sie beginnen</h4>
 
 - [Erstellen Sie ein Formular](./creating-forms.md) mit mindestens einer Frage
-- Teilen Sie das Formular über seine öffentliche URL oder binden Sie es in Ihre [Website](../website/managing-pages.md) ein
+- Teilen Sie das Formular über die öffentliche URL oder betten Sie es auf Ihrer [Website](../website/managing-pages.md) ein
 
 </div>
 
-## Einsendungen einsehen
+## Eingaben ansehen
 
-1. Öffnen Sie das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (das Suchfeld oben links in B1 Admin), klappen Sie **Personen** auf und klicken Sie auf **Formulare**.
+1. Öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (das Suchfeld oben links in B1 Admin), klappen Sie **People** auf und klicken Sie auf **Forms**.
 2. Klicken Sie auf das Formular, das Sie prüfen möchten.
-3. Wechseln Sie zum Tab **Formulareinsendungen**.
+3. Wechseln Sie zum Reiter **Form Submissions**.
 
-Sie sehen eine Liste aller Antworten, die für dieses Formular eingegangen sind. Jede Einsendung zeigt die Informationen der antwortenden Person und das Datum der Einsendung, gefolgt von einer Spalte für jede Frage im Formular. Wenn Ihr Formular viele Fragen enthält, scrollen Sie die Tabelle seitlich, um die übrigen Spalten zu sehen.
+Sie sehen eine Liste aller Antworten, die für dieses Formular eingegangen sind. Jede Eingabe zeigt die Angaben der absendenden Person und das Datum der Absendung, gefolgt von einer Spalte für jede Frage des Formulars. Hat Ihr Formular viele Fragen, können Sie die Tabelle seitlich scrollen, um die übrigen Spalten zu sehen.
 
-## Einzelne Einsendungen prüfen
+## Einzelne Eingaben prüfen
 
-Klicken Sie auf eine beliebige Einsendung, um alle Details anzuzeigen. Sie sehen alle Antworten, die die Person zu den einzelnen Fragen des Formulars gegeben hat.
+Klicken Sie auf eine beliebige Eingabe, um alle Details anzuzeigen. Sie sehen alle Antworten, die die Person zu jeder Frage des Formulars gegeben hat.
 
-Klicken Sie neben der Einsendung auf das **Druck-Symbol**, um die ausgefüllten Antworten dieser Person zu drucken – nützlich für eine Papierakte oder eine unterschriebene Einverständniserklärung, die Sie griffbereit halten müssen. Der Ausdruck zeigt oben Ihr Gemeindelogo (das **Logo für helle Hintergründe** aus [Website > Erscheinungsbild](../website/appearance.md), falls Sie eines hochgeladen haben), darunter den Namen Ihrer Gemeinde. Dies ist unabhängig vom [Drucken eines leeren Formulars](./creating-forms.md#printing-a-blank-form); hier wird nur die bereits übermittelte Antwort einer Person gedruckt, nicht ein leeres Exemplar. Das Druck-Symbol erscheint überall dort, wo eine Einsendung angezeigt wird, auch im [Profil einer Person](../people/adding-people.md#working-with-forms).
+Klicken Sie neben der Eingabe auf das **Druckersymbol**, um die ausgefüllten Antworten dieser Person zu drucken – nützlich für eine Papierablage oder eine unterschriebene Einverständniserklärung, die Sie aufbewahren müssen. Der Ausdruck zeigt oben mittig das Logo Ihrer Gemeinde (das **Light Background Logo** aus [Website > Appearance](../website/appearance.md), falls Sie eines hochgeladen haben) mit dem Namen Ihrer Gemeinde darunter. Ausdrucke erscheinen immer mit dunkler Schrift auf weißem Papier, auch wenn Sie B1 Admin im Dunkelmodus verwenden. Das ist unabhängig vom [Drucken eines leeren Formulars](./creating-forms.md#printing-a-blank-form); hier wird nur die bereits eingereichte Antwort einer Person gedruckt, nicht eine leere Kopie. Das Druckersymbol erscheint überall dort, wo eine Eingabe angezeigt wird, auch im [Profil einer Person](../people/adding-people.md#working-with-forms).
 
-## Die Person einer Einsendung ändern {#changing-the-person-on-a-submission}
+## Die Person einer Eingabe ändern
 
-Wenn eine Einsendung der falschen Person zugeordnet ist – etwa weil zwei Familienmitglieder dieselbe E-Mail-Adresse verwenden –, können Sie sie der richtigen Person zuordnen oder die Verknüpfung aufheben.
+Wenn eine Eingabe der falschen Person zugeordnet ist – etwa weil zwei Familienmitglieder dieselbe E-Mail-Adresse verwenden –, können Sie sie der richtigen Person zuordnen oder die Verknüpfung lösen.
 
-1. Klicken Sie im Tab **Formulareinsendungen** neben dem Namen der Person auf das Symbol **Person ändern** (zwei Pfeile). Dasselbe Symbol erscheint neben einer Einsendung im [Profil einer Person](../people/adding-people.md#working-with-forms).
-2. Suchen Sie im Dialog **Person ändern** nach der richtigen Person und klicken Sie auf **Dieser Person zuordnen**.
-3. Alternativ klicken Sie auf **Verknüpfung aufheben (Anonym)**, um die Einsendung von jeder Person zu lösen. Sie wird dann als **Anonym** angezeigt.
+1. Klicken Sie im Reiter **Form Submissions** auf das Symbol **Change person** (zwei Pfeile) neben dem Namen der Person. Dasselbe Symbol erscheint neben einer Eingabe im [Profil einer Person](../people/adding-people.md#working-with-forms).
+2. Suchen Sie im Dialog **Change person** die richtige Person und klicken Sie auf **Move to this person**.
+3. Oder klicken Sie auf **Unlink (Anonymous)**, um die Eingabe von jeder Person zu lösen. Sie wird dann als **Anonymous** angezeigt.
 
-Nur die Verknüpfung ändert sich. Die Antworten bleiben gleich, und es werden keine Nachfass-E-Mails erneut versendet.
+Nur die Verknüpfung ändert sich. Die Antworten bleiben gleich, und es werden keine Nachfolge-E-Mails erneut versendet.
 
 :::info
-Bei Formularen, die einen Personendatensatz erstellen, wird die Einsendung dann mit dem eigenen Datensatz der Person verknüpft, wenn sie beim Absenden auf der Website Ihrer Gemeinde angemeldet ist – auch dann, wenn eine andere Person in Ihrer Datenbank dieselbe E-Mail-Adresse hat. Wenn Sie [zwei Personendatensätze zusammenführen](../people/adding-people.md), werden die Formulareinsendungen der entfernten Person zu der Person übertragen, die Sie behalten.
+Bei Formularen, die einen Personendatensatz anlegen, wird eine Eingabe – wenn jemand beim Absenden auf der Website Ihrer Gemeinde angemeldet ist – mit dessen eigenem Datensatz verknüpft, auch wenn eine andere Person in Ihrer Datenbank dieselbe E-Mail-Adresse hat. Wenn Sie [zwei Personendatensätze zusammenführen](../people/adding-people.md), werden die Formulareingaben der entfernten Person auf die Person übertragen, die Sie behalten.
 :::
 
-## So werden Einsendungen erfasst
+## Wie Eingaben erfasst werden
 
-Einsendungen können über mehrere Kanäle eingehen:
+Eingaben können über mehrere Wege eingehen:
 
-- **Öffentliche URL** – Wenn Ihr Formular eine öffentliche URL hat (eigenständige Formulare), kann jeder, der den Link besitzt, eine Antwort einsenden. Teilen Sie die URL per E-Mail, in sozialen Medien oder per Textnachricht.
-- **Auf Ihrer Website eingebettet** – Formulare, die in Ihre B1-Website eingebettet sind, erfassen Einsendungen automatisch, sobald Besucher sie ausfüllen.
-- **Interne Nutzung** – Mitarbeiter und Ehrenamtliche können Formulare auch direkt in B1 Admin im Auftrag anderer absenden.
+- **Öffentliche URL** -- Wenn Ihr Formular eine öffentliche URL hat (Stand-Alone-Formulare), kann jeder mit dem Link eine Antwort absenden. Teilen Sie die URL per E-Mail, in sozialen Netzwerken oder per Textnachricht.
+- **Auf Ihrer Website eingebettet** -- Formulare, die auf Ihrer B1-Website eingebettet sind, erfassen Eingaben automatisch, sobald Besucher sie ausfüllen.
+- **Interne Nutzung** -- Mitarbeitende und Ehrenamtliche können Formulare auch direkt in B1 Admin im Namen anderer absenden.
 
 :::tip
-Prüfen Sie regelmäßig den Tab **Formulareinsendungen** bei Formularen wie Besucherkarten oder Gebetsanliegen, damit Sie zeitnah nachfassen können.
+Prüfen Sie regelmäßig den Reiter **Form Submissions** bei Formularen wie Besucherkarten oder Gebetsanliegen, damit Sie zeitnah nachfassen können.
 :::
 
 ## Die Formulardaten nutzen
 
-Die über Formulare erfassten Daten können Ihnen helfen,
+Die über Formulare erfassten Daten helfen Ihnen dabei,
 
-- Veranstaltungsanmeldungen nachzuverfolgen und entsprechend zu planen
-- Besucher oder neue Mitglieder zu begleiten
-- Umfragefeedback für die Planung des Dienstes zu sammeln
+- Veranstaltungsanmeldungen auszuwerten und entsprechend zu planen
+- Besucher oder neue Mitglieder nachzubetreuen
+- Umfrageergebnisse für die Planung der Dienste zu sammeln
 - Zahlungen für Veranstaltungen oder Programme abzuwickeln
 
 :::info
-Formularmitglieder mit der Rolle **Administrator** oder **Nur Ansicht** können auf den Tab **Formulareinsendungen** zugreifen. Achten Sie darauf, dass die richtigen Personen in Ihrem Team Zugriff auf die Formulare haben, die sie benötigen, und verwalten Sie die Rollen im Tab **Formularmitglieder**.
+Formularmitglieder mit der Rolle **Admin** oder **View Only** können auf den Reiter **Form Submissions** zugreifen. Achten Sie darauf, dass die richtigen Personen in Ihrem Team Zugang zu den Formularen haben, die sie benötigen, indem Sie die Rollen im Reiter **Form Members** verwalten.
+:::
+
+:::info
+Wenn ein Stand-Alone-Formular [mit einer Gruppe verknüpft](./creating-forms.md#linking-a-form-to-a-group) ist, können die Leitungen dieser Gruppe die Eingaben auf der Seite der Gruppe auf B1.church lesen und drucken, ohne Formularmitglieder zu sein. Die Leitungen können dort auch die Antworten auf Anmeldefragen für Veranstaltungen ihrer Gruppe lesen. Siehe [Gruppendetails](../../b1-church/groups/group-details.md#linked-forms).
 :::
 
 :::tip
-Wenn ein **Eigenständiges** Formular so eingestellt ist, dass ein Personendatensatz erstellt wird, erscheinen Einsendungen, die einer bestehenden Person zugeordnet wurden, auch im Bereich **Formulare** auf der Seite dieser Person im Bereich Personen – nicht nur bei Formularen vom Typ „Personen“.
+Wenn ein **Stand-Alone**-Formular so eingestellt ist, dass ein Personendatensatz angelegt wird, erscheinen Eingaben, die einer bereits vorhandenen Person zugeordnet wurden, auch im Abschnitt **Forms** auf der Seite dieser Person unter People – nicht nur bei Formularen vom Typ People.
 :::
 
 ## Nächste Schritte
 
-- Erfahren Sie, wie Sie Formulare erstellen und anpassen, unter [Formulare erstellen](./creating-forms.md)
-- Fügen Sie Personen aus Formulareinsendungen Ihrem [Personenverzeichnis](../people/adding-people.md) hinzu, um sie weiter zu betreuen
-- [Absender automatisch einer Gruppe hinzufügen](./creating-forms.md#automatically-adding-submitters-to-a-group), damit ein eigenständiges Anmeldeformular seine eigene Teilnehmerliste aufbaut
+- Erfahren Sie in [Formulare erstellen](./creating-forms.md), wie Sie Formulare entwerfen und anpassen
+- Fügen Sie Personen aus Formulareingaben Ihrem [Personenverzeichnis](../people/adding-people.md) hinzu, um sie weiter zu betreuen
+- [Verknüpfen Sie ein Formular mit einer Gruppe](./creating-forms.md#linking-a-form-to-a-group), damit deren Leitungen die Antworten lesen können, oder [fügen Sie Absender automatisch der Gruppe hinzu](./creating-forms.md#automatically-adding-submitters-to-a-group), damit ein eigenständiges Anmeldeformular seine eigene Teilnehmerliste aufbaut

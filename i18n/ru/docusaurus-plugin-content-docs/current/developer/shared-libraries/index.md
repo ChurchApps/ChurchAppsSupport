@@ -6,24 +6,24 @@ title: "Общие библиотеки"
 
 <div class="article-intro">
 
-Общегиповый код ChurchApps опубликован на npm под scope `@churchapps/*`. Все общегиповые пакеты находятся в одном repository -- [Packages](https://github.com/ChurchApps/Packages) -- управляется как Yarn (Berry) workspace и версионирован с [changesets](https://github.com/changesets/changesets).
+Общий код ChurchApps публикуется в npm в области `@churchapps/*`. Все общие пакеты находятся в одном репозитории — [Packages](https://github.com/ChurchApps/Packages) — который управляется как рабочее пространство Yarn (Berry) и версионируется с помощью [changesets](https://github.com/changesets/changesets).
 
 </div>
 
 ## Пакеты
 
-| Package | Description | Used By |
+| Пакет | Описание | Используется в |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | Слой основания: функции вспомогательные без фреймворка и общегиповые интерфейсы TypeScript, которые формируют контракт данных cross-app | All projects |
-| [`@churchapps/apihelper`](./api-helper) | Утилиты Express на стороне сервера: auth, base controllers, database access, AWS и email integrations | All APIs |
-| [`@churchapps/apphelper`](./app-helper) | Общегиповые React components и feature modules (login, donations, forms, markdown, website) | All web apps |
-| `@churchapps/content-providers` | Абстракция над поставщиками контента третьих сторон (Lessons.church, Planning Center, Dropbox и другие) | Api, B1Admin, B1App, FreePlay |
-| `@churchapps/integration-sdk` | Toolkit для создания B1.church integrations: webhook verification, typed REST client, OAuth helpers | External integration developers |
-| `@churchapps/texting` | Абстракция SMS provider (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions) | Api |
+| [`@churchapps/helpers`](./helpers) | Базовый уровень: вспомогательные функции без привязки к фреймворку и общие интерфейсы TypeScript, которые формируют межприложенческий контракт данных | Все проекты |
+| [`@churchapps/apihelper`](./api-helper) | Серверные утилиты для Express: аутентификация, базовые контроллеры, доступ к базе данных, интеграции с AWS и email | Все API |
+| [`@churchapps/apphelper`](./app-helper) | Общие React-компоненты и модули функций (вход, пожертвования, формы, markdown, сайт) | Все веб-приложения |
+| `@churchapps/content-providers` | Абстракция над сторонними поставщиками контента (Lessons.church, Planning Center, Dropbox и другие) | Api, B1Admin, B1App, FreePlay |
+| `@churchapps/integration-sdk` | Инструментарий для создания интеграций B1.church: проверка webhook, типизированный REST-клиент, помощники OAuth | Внешние разработчики интеграций |
+| `@churchapps/texting` | Абстракция над провайдерами SMS (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |
 
-Направление зависимости строго вниз: приложения зависят от `apihelper` и `apphelper`, которые объявляют `@churchapps/helpers` как **peer dependency**, поэтому каждое приложение разрешает ровно одну копию.
+Направление зависимостей строго нисходящее: приложения зависят от `apihelper` и `apphelper`, которые объявляют `@churchapps/helpers` как **peer dependency**, чтобы каждое приложение использовало ровно одну копию пакета.
 
-## Настройка Workspace
+## Настройка рабочего пространства
 
 ```bash
 git clone https://github.com/ChurchApps/Packages.git
@@ -32,23 +32,23 @@ yarn install
 yarn build
 ```
 
-Repo использует Yarn Berry (корневое поле `packageManager` авторитетно) с одним lockfile. `yarn build` строит каждый пакет в порядке зависимости; `yarn test` запускает все тесты пакета.
+Репозиторий использует Yarn Berry (поле `packageManager` в корне является определяющим) с одним файлом блокировки. `yarn build` собирает все пакеты в порядке зависимостей; `yarn test` запускает тесты всех пакетов.
 
-## Выпуск с Changesets
+## Публикация с помощью Changesets
 
-Каждое изменение в пакет поставляется с changeset:
+Каждое изменение пакета поставляется вместе с changeset:
 
-1. Запустите `yarn changeset` в корне workspace. Выберите пакет(ы), которые вы касались, тип bump (patch = fix, minor = new export или feature, major = breaking) и напишите однострочную сводку -- она становится записью CHANGELOG.
-2. Закоммитьте сгенерированный файл `.changeset/*.md` вместе с вашим изменением кода. Pre-commit hook блокирует коммиты, которые изменяют исходный код пакета без staged changeset.
-3. Когда готово к публикации, запустите `yarn publish-all` в корне. Это потребляет pending changesets (bumping версии, написание CHANGELOGs, синхронизация внутренних диапазонов зависимостей), строит все в порядке зависимости и публикует bumped пакеты на npm. Затем закоммитьте и отправьте version bumps.
+1. Выполните `yarn changeset` в корне рабочего пространства. Выберите затронутые пакеты, тип увеличения версии (patch — исправление, minor — новый экспорт или функция, major — несовместимое изменение) и напишите краткое описание в одну строку — оно станет записью в CHANGELOG.
+2. Зафиксируйте сгенерированный файл `.changeset/*.md` вместе с изменением кода. Хук pre-commit блокирует коммиты, которые меняют исходный код пакета без индексированного changeset.
+3. Когда будете готовы к публикации, выполните `yarn publish-all` в корне. Команда использует ожидающие changesets (повышает версии, обновляет CHANGELOG, синхронизирует диапазоны внутренних зависимостей), собирает всё в порядке зависимостей и публикует повышенные пакеты в npm. Затем зафиксируйте и отправьте повышения версий.
 
 :::warning
-Никогда не запускайте raw `npm publish` внутри одного пакета -- это пропускает build ordering и bookkeeping версии, который обрабатывает release скрипт. Публикация требует npm аккаунт с правами публикации на scope `@churchapps`.
+Никогда не запускайте голый `npm publish` внутри отдельного пакета — он пропускает порядок сборки и ведение версий, которым занимается скрипт выпуска. Для публикации нужна учётная запись npm с правами публикации в область `@churchapps`.
 :::
 
-## Локальная разработка против потребляющего приложения {#local-development-against-a-consuming-app}
+## Локальная разработка с подключённым приложением
 
-Внутри workspace пакеты строят напрямую против своих соседей -- linking не требуется. Для тестирования непубликуемого build пакета внутри потребляющего приложения (B1Admin, B1App, и т.д.), добавьте временный Yarn portal в потребителя:
+Внутри рабочего пространства пакеты собираются напрямую относительно соседних пакетов — связывать ничего не нужно. Чтобы протестировать неопубликованную сборку пакета внутри приложения-потребителя (B1Admin, B1App и т. д.), добавьте во временный проект-потребитель Yarn portal:
 
 ```bash
 # in the consuming project
@@ -57,8 +57,8 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Сначала выстройте пакет (`yarn build` в корне workspace) -- потребитель читает скомпилированный `dist/` output, не исходный.
+Сначала соберите пакет (`yarn build` в корне рабочего пространства) — потребитель читает скомпилированный вывод `dist/`, а не исходный код.
 
 :::warning
-`yarn link` записывает разрешение portal в `package.json` потребителя. Никогда не коммитьте это -- всегда `yarn unlink` и переустановите, когда закончено.
+`yarn link` записывает разрешение portal в `package.json` потребителя. Никогда не фиксируйте его — всегда выполняйте `yarn unlink` и переустанавливайте зависимости, когда закончите.
 :::

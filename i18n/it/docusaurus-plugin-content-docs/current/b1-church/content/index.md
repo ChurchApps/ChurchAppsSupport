@@ -1,54 +1,54 @@
 ---
-title: "Contenuto"
+title: "Contenuti"
 ---
 
-# Contenuto
+# Contenuti
 
 <div class="article-intro">
 
-B1.church dà alla tua congregazione un luogo centrale per accedere al contenuto che la tua chiesa condivide. A seconda di quello che la tua chiesa ha configurato, potresti avere accesso a sermoni, streaming in diretta, lettura Bibbia, un versetto giornaliero e materiali di lezione -- tutto dal portale dei membri.
+B1.church offre alla tua comunità un punto centrale per accedere ai contenuti che la chiesa condivide. A seconda di ciò che la tua chiesa ha configurato, potresti avere accesso a predicazioni, dirette streaming, lettura della Bibbia, un versetto del giorno e materiali delle lezioni, il tutto dall'interno del portale membri.
 
 </div>
 
-## Funzioni di Contenuto Disponibili
+## Funzionalità dei contenuti disponibili
 
-### Sermoni
+### Predicazioni
 
-Sfoglia e guarda i sermoni registrati dalla tua chiesa. La biblioteca di sermoni della tua chiesa è organizzata in playlist e serie, rendendo facile trovare i messaggi passati.
+Sfoglia e guarda le predicazioni registrate della tua chiesa. La libreria delle predicazioni della chiesa è organizzata in playlist e serie, così è facile trovare i messaggi passati.
 
-### Streaming in Diretta
+### Diretta streaming
 
-Guarda la trasmissione in diretta della tua chiesa direttamente in B1.church. Quando un servizio è in diretta, puoi unirti allo stream e interagire con altri spettatori tramite chat e funzioni di preghiera.
+Guarda la diretta della tua chiesa direttamente su B1.church. Quando un culto è in onda, puoi unirti alla diretta e interagire con gli altri spettatori tramite la chat.
 
 ### Bibbia
 
-Leggi le Scritture usando il lettore Bibbia integrato. Puoi navigare attraverso libri, capitoli e versetti senza lasciare il sito.
+Leggi le Scritture con il lettore biblico integrato. Puoi spostarti tra libri, capitoli e versetti senza lasciare il sito.
 
-### Versetto del Giorno
+### Versetto del giorno
 
-Visualizza un'immagine di versetto Bibbia bellamente formattata che cambia ogni giorno. L'immagine si adatta automaticamente al tuo schermo.
+Visualizza un'immagine di un versetto biblico, formattata con cura, che cambia ogni giorno. L'immagine si adatta automaticamente allo schermo. Puoi anche condividere o scaricare il versetto di qualsiasi giorno e sfogliare i versetti dei giorni precedenti.
 
 ### Lezioni
 
-Visualizza le lezioni pianificate dai piani della tua chiesa. Se sei un insegnante o un leader, puoi usare la **Visualizzazione Insegnante** per vedere le lezioni in un formato a schermo intero, facile da navigare, perfetto per insegnare o presentare.
+Visualizza le lezioni in programma dai piani della tua chiesa. Se sei un insegnante o un leader, puoi usare la **Vista insegnante** per vedere le lezioni a schermo intero, in un formato facile da navigare, perfetto per insegnare o presentare.
 
-### Lezioni (Deprecato - Scheda Incorporata)
+### Lezioni (obsoleta: scheda incorporata)
 
-La scheda **Lezioni** incorporata è stata deprecata. La riproduzione del curriculum si trova ora in **[FreePlay](/docs/freeplay/)**, l'app TV gratuita di ChurchApps per schermi in classe. Per sfogliare il curriculum su un telefono, tablet o computer, accedi direttamente a [Lessons.church](https://lessons.church). Vedi la [pagina di riferimento Lezioni](./lessons.md) per i dettagli.
+La scheda **Lezioni** incorporata è stata dismessa. La riproduzione dei materiali didattici ora avviene in **[FreePlay](/docs/freeplay/)**, l'app TV gratuita di ChurchApps per gli schermi delle aule. Per sfogliare i materiali didattici da telefono, tablet o computer, accedi direttamente a [Lessons.church](https://lessons.church). Vedi la [pagina di riferimento sulle Lezioni](./lessons.md) per i dettagli.
 
-## Ricerca di Contenuto
+## Trovare i contenuti
 
-Le pagine di contenuto sono disponibili attraverso la navigazione del sito della tua chiesa. L'amministratore della tua chiesa decide quali funzioni di contenuto sono abilitate e come appaiono nel menu. Se non vedi una particolare funzione di contenuto elencata sopra, potrebbe non essere configurata per la tua chiesa.
+Le pagine dei contenuti sono disponibili tramite la navigazione del sito della tua chiesa. L'amministratore della chiesa decide quali funzionalità dei contenuti sono attive e come compaiono nel menu. Se non vedi una particolare funzionalità dei contenuti elencata sopra, potrebbe non essere configurata per la tua chiesa.
 
 :::info
-[Sermoni](./sermons.md) e la [Bibbia](./bible.md) sono disponibili pubblicamente. Altre funzioni potrebbero richiedere l'accesso [registrato](../getting-started/logging-in.md).
+[Predicazioni](./sermons.md) e [Bibbia](./bible.md) sono disponibili pubblicamente. Altre funzionalità potrebbero richiedere che tu abbia [effettuato l'accesso](../getting-started/logging-in.md).
 :::
 
-## Prossimi Passi
+## Passaggi successivi
 
-- [Sermoni](./sermons.md) -- Sfoglia e guarda i sermoni registrati
-- [Streaming in Diretta](./live-streaming.md) -- Guarda le trasmissioni in diretta
-- [Bibbia](./bible.md) -- Leggi le Scritture nel lettore integrato
-- [Versetto del Giorno](./verse-of-the-day.md) -- Vedi il versetto di oggi
-- [Visualizzazione Insegnante](./teacher-view.md) -- Usa l'interfaccia insegnante espansa per il contenuto delle lezioni
-- [FreePlay](/docs/freeplay/) -- Riproduci le lezioni sui TV in classe (sostituisce la scheda Lezioni in-app deprecata)
+- [Predicazioni](./sermons.md): sfoglia e guarda le predicazioni registrate
+- [Diretta streaming](./live-streaming.md): guarda le dirette
+- [Bibbia](./bible.md): leggi le Scritture nel lettore integrato
+- [Versetto del giorno](./verse-of-the-day.md): leggi il versetto di oggi
+- [Vista insegnante](./teacher-view.md): usa l'interfaccia estesa per il contenuto delle lezioni
+- [FreePlay](/docs/freeplay/): riproduci le lezioni sulle TV delle aule (sostituisce la scheda Lezioni obsoleta nell'app)

@@ -6,108 +6,109 @@ title: "Chaves de API"
 
 <div class="article-intro">
 
-Chaves de API (tokens de acesso pessoal) são a maneira mais simples de autenticar contra a API B1 a partir de um script do lado do servidor, um conector de terceiros (Zapier, Make, Google Sheets), ou em qualquer lugar onde um fluxo OAuth completo é excessivo. Uma chave é vinculada a uma pessoa específica em uma igreja específica e herda as permissões dessa pessoa, estreitadas por um conjunto opcional de escopos.
+As chaves de API (tokens de acesso pessoal) são a forma mais simples de se autenticar na API do B1 a partir de um script do lado do servidor, de um conector de terceiros (Zapier, Make, Google Sheets) ou em qualquer situação em que um fluxo OAuth completo seja excessivo. Uma chave é vinculada a uma pessoa específica em uma igreja específica e herda as permissões dessa pessoa, restringidas por um conjunto opcional de escopos.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Um administrador da igreja com a permissão **Editar Configurações** cria e gerencia chaves
-- A chave bruta é mostrada **uma vez** na criação -- armazene-a em um lugar seguro imediatamente
-- Todas as solicitações de API devem usar **HTTPS**
+- Um administrador da igreja com a permissão **Editar configurações** cria e gerencia as chaves
+- A chave completa é exibida **uma única vez** na criação -- armazene-a em um lugar seguro imediatamente
+- Todas as requisições à API devem usar **HTTPS**
 
 </div>
 
-## Formato de Chave
+## Formato da chave
 
-Uma chave de API B1 se parece com:
+Uma chave de API do B1 tem a seguinte aparência:
 
 ```
 cak_<prefix>.<secret>
 ```
 
-- `cak_` -- identificador fixo (o prefixo de chave de API que a camada de autenticação corresponde)
-- `<prefix>` -- segmento de lookup público de 8 caracteres
-- `<secret>` -- segredo de 48 caracteres; apenas um hash SHA-256 é armazenado no lado do servidor
+- `cak_` -- identificador fixo (o prefixo da chave de API que a camada de autenticação reconhece)
+- `<prefix>` -- segmento público de busca de 8 caracteres
+- `<secret>` -- segredo de 48 caracteres; apenas um hash SHA-256 é armazenado no servidor
 
-A chave completa é apresentada ao servidor no header de portador padrão:
+A chave completa é apresentada ao servidor no cabeçalho bearer padrão:
 
 ```http
 Authorization: Bearer cak_a1b2c3d4.f0e1d2c3b4a5968778695a4b3c2d1e0f1a2b3c4d5e6f7
 ```
 
-A camada de autenticação de API roteia qualquer token começando com `cak_` para o caminho de chave de API, faz hash do segredo, o procura por prefixo e resolve as permissões atuais da pessoa da chave -- então revogar uma permissão em B1Admin entra em vigor na próxima solicitação, e a chave nunca fica fora de sincronia com a função.
+A camada de autenticação da API direciona qualquer token que comece com `cak_` para o fluxo de chave de API, gera o hash do segredo, busca a chave pelo prefixo e resolve as permissões atuais da pessoa dona da chave -- portanto, revogar uma permissão no B1Admin tem efeito na próxima requisição, e a chave nunca fica fora de sincronia com a função.
 
-## Criando uma Chave (B1Admin)
+## Criando uma chave (B1Admin)
 
-1. Entre no B1Admin como um usuário com **Editar Configurações**.
+1. Entre no B1Admin com um usuário que tenha a permissão **Editar configurações**.
 2. Abra **Configurações → Desenvolvedor → Chaves de API**.
-3. Clique em **Nova Chave de API**, dê um nome reconhecível (por ex. "Zapier — donations sync"), selecione os escopos que a chave deve ter, e **Salve**.
-4. A chave `cak_…` completa é mostrada **uma vez** em um diálogo. Copie-a na configuração da sua integração antes de fechar -- não há maneira de recuperá-la depois. Você sempre pode criar uma nova chave.
+3. Clique em **Nova chave de API**, dê a ela um nome reconhecível (por exemplo, "Zapier -- sincronização de doações"), selecione os escopos que a chave deve ter e clique em **Salvar**.
+4. A chave `cak_…` completa é exibida **uma única vez** em uma caixa de diálogo. Copie-a para a configuração da sua integração antes de fechar -- não há como recuperá-la depois. Você sempre pode criar uma nova chave.
 
-## Escopos
+## Escopos {#scopes}
 
-Um escopo **estreita** o que uma chave pode fazer -- nunca pode conceder uma permissão que a pessoa subjacente não tem. Escopos vazios / sem escopos significa que a chave carrega o conjunto de permissão completo da pessoa.
+Um escopo **restringe** o que uma chave pode fazer -- ele nunca pode conceder uma permissão que a pessoa subjacente não tenha. Sem escopos (ou com a lista vazia), a chave tem o conjunto completo de permissões da pessoa.
 
 | Escopo | Permite |
 |---|---|
-| `people:read` / `people:write` | Ver / editar pessoas, residências, membros do grupo |
-| `groups:read` / `groups:write` | Ver / editar grupos e sua membressia |
+| `people:read` / `people:write` | Ver / editar pessoas, famílias, membros de grupos |
+| `groups:read` / `groups:write` | Ver / editar grupos e sua participação |
 | `donations:read` / `donations:write` | Ver / registrar doações |
-| `attendance:read` / `attendance:write` | Ver / registrar attendance, sessões, check-ins |
-| `forms:write` | Gerenciar formulários (acesso de leitura é implícito na escrita) |
-| `content:read` / `content:write` | Ver / editar conteúdo do website, registros, streaming |
-| `messaging:read` / `messaging:write` | Ler messaging; escrever também permite enviar SMS |
-| `roles:read` / `roles:write` | Ver / editar definições de função |
+| `attendance:read` / `attendance:write` | Ver / registrar presença, sessões, check-ins |
+| `forms:write` | Gerenciar formulários (o acesso de leitura está implícito na escrita) |
+| `content:read` / `content:write` | Ver / editar conteúdo do site, inscrições, transmissões |
+| `messaging:read` / `messaging:write` | Ler mensagens; a escrita também permite enviar SMS |
+| `roles:read` / `roles:write` | Ver / editar definições de funções |
 | `settings:read` / `settings:write` | Ver / editar configurações da igreja (**necessário** para registrar webhooks programaticamente) |
-| `offline_access` | Permitir tokens de atualização de longa vida (apenas fluxos OAuth -- não tem efeito em chaves de API) |
+| `workflows:read` / `workflows:write` | Ver fluxos de trabalho e tarefas / executar e editar fluxos. Executar um fluxo pode enviar e-mails e mensagens de texto, disparar webhooks e alterar a participação em grupos |
+| `offline_access` | Permite tokens de atualização de longa duração (somente fluxos OAuth -- não tem efeito em chaves de API) |
 
-Escopos `write` implicitamente incluem o `read` correspondente. Permissões de administrador de servidor e domínio deliberadamente não são expostas como escopos -- uma credencial com escopo nunca pode elevar para administração do site.
+Os escopos de `write` incluem implicitamente o `read` correspondente. Permissões de administrador do servidor e do domínio são deliberadamente não expostas como escopos -- uma credencial com escopo nunca pode ser elevada à administração do site.
 
 :::tip
-Se você usar a chave para registrar webhooks (por ex. para uma integração Zapier ou Make), a chave precisa de `settings:write`. Uma chave apenas `people:read` silenciosamente 403s em `POST /membership/webhooks`.
+Se você for usar a chave para registrar webhooks (por exemplo, para uma integração com Zapier ou Make), a chave precisa de `settings:write`. Uma chave apenas com `people:read` recebe um 403 silencioso em `POST /membership/webhooks`.
 :::
 
-## Usando uma Chave
+## Usando uma chave
 
-Igual a qualquer token portador -- cada endpoint autenticado aceita chaves de API exatamente como aceita JWTs:
+Igual a qualquer token bearer -- todo endpoint autenticado aceita chaves de API exatamente como aceita JWTs:
 
 ```bash
 curl https://api.churchapps.org/membership/people \
   -H "Authorization: Bearer cak_a1b2c3d4.f0e1d2c3b4a5968778695a4b3c2d1e0f1a2b3c4d5e6f7"
 ```
 
-Uma solicitação cuja chave não tem escopos suficientes responde **403 Forbidden** com a mesma forma que qualquer erro de acesso negado usa.
+Uma requisição cuja chave tenha escopos insuficientes recebe **403 Forbidden**, com o mesmo formato usado em qualquer erro de permissão negada.
 
-## Gerenciando Chaves via a API
+## Gerenciando chaves pela API
 
-Todos os endpoints estão sob o caminho `/membership/apiKeys` do módulo de Membership e requerem um JWT (não uma chave de API) de um administrador da igreja com **Editar Configurações**.
+Todos os endpoints ficam sob o caminho `/membership/apiKeys` do módulo Membership e exigem um JWT (não uma chave de API) de um administrador da igreja com a permissão **Editar configurações**.
 
-| Método & Caminho | Propósito |
+| Método e caminho | Finalidade |
 |---|---|
-| `GET /membership/apiKeys` | Liste as chaves da igreja (sem segredo -- apenas `id`, `name`, `prefix`, `scopes`, `lastUsedAt`, `expiresAt`, `createdAt`) |
-| `GET /membership/apiKeys/scopes` | Lista de todos os nomes de escopo disponíveis -- para uma UI de criação de chave |
-| `POST /membership/apiKeys` | Crie uma nova chave. Corpo: `{ "name": "...", "scopes": ["people:read"] }`. A resposta inclui a chave `cak_…` bruta **uma vez**. |
-| `DELETE /membership/apiKeys/:id` | Revogue uma chave -- entra em vigor na próxima solicitação |
+| `GET /membership/apiKeys` | Lista as chaves da igreja (sem o segredo -- apenas `id`, `name`, `prefix`, `scopes`, `lastUsedAt`, `expiresAt`, `createdAt`) |
+| `GET /membership/apiKeys/scopes` | Lista de todos os nomes de escopos disponíveis -- para uma interface de criação de chaves |
+| `POST /membership/apiKeys` | Cria uma nova chave. Corpo: `{ "name": "...", "scopes": ["people:read"] }`. A resposta inclui a chave `cak_…` completa **uma única vez**. |
+| `DELETE /membership/apiKeys/:id` | Revoga uma chave -- tem efeito na próxima requisição |
 
-Uma chave revogada é removida imediatamente -- não há período de carência.
+Uma chave revogada deixa de funcionar imediatamente -- não há período de carência.
 
-## Melhores Práticas
+## Boas práticas
 
-- **Uma chave por integração.** Se algo é comprometido você revoga uma única chave sem quebrar as outras.
-- **Cunhe os escopos mais estreitos que funcionam.** Uma exportação do Google Sheets precisa apenas de `people:read`, não de `settings:write`.
-- **Vinculando a chave a uma conta de serviço, não a um membro de equipe real.** Se um membro de equipe sai, seu acesso B1 termina -- e assim fazem quaisquer chaves cunhadas sob sua identidade.
-- **Armazene as chaves em um gerenciador de segredos** (variáveis de ambiente do seu provedor de hospedagem, AWS Secrets Manager, etc.) -- nunca em controle de código-fonte.
-- **Rode chaves** se você suspeitar de exposição: crie uma nova chave, atualize a integração, então delete a antiga.
+- **Uma chave por integração.** Se algo for comprometido, você revoga uma única chave sem quebrar as outras.
+- **Crie os escopos mais restritos que funcionem.** Uma exportação para o Google Sheets precisa apenas de `people:read`, não de `settings:write`.
+- **Vincule a chave a uma conta de serviço, não a um membro real da equipe.** Se um membro da equipe sair, o acesso dele ao B1 termina -- e também terminam as chaves criadas sob a identidade dele.
+- **Armazene as chaves em um gerenciador de segredos** (variáveis de ambiente do seu provedor de hospedagem, AWS Secrets Manager etc.) -- nunca no controle de versão.
+- **Rotacione as chaves** se suspeitar de exposição: crie uma nova chave, atualize a integração e depois exclua a antiga.
 
-## Como Difere do OAuth
+## Como ela difere do OAuth
 
-Chaves de API são apropriadas quando **sua igreja é a única usando a integração**. Para um conector que precisa acessar muitas igrejas com consentimento explícito de cada uma -- como uma app SaaS compartilhada entre a comunidade B1 -- use [OAuth e Aplicativos Conectados](./connected-apps) ao invés.
+As chaves de API são adequadas quando **a sua igreja é a única que usa a integração**. Para um conector que precisa acessar muitas igrejas, cada uma com consentimento explícito -- como um aplicativo SaaS compartilhado pela comunidade do B1 --, use [OAuth e aplicativos conectados](./connected-apps) em vez disso.
 
 | | Chave de API | OAuth |
 |---|---|---|
-| Quem a instala | Um administrador da igreja | Cada administrador da igreja autoriza a app |
-| Header de autenticação | `Authorization: Bearer cak_…` | `Authorization: Bearer <jwt>` |
-| Vida útil do token | Até ser revogado | Acesso ≈ 7 dias, atualização ≈ 90 dias |
-| Melhor para | Scripts internos, conectores Zapier/Make/Sheets | Apps de terceiros multi-locatários |
+| Quem instala | Um administrador da igreja | Cada administrador da igreja autoriza o aplicativo |
+| Cabeçalho de autenticação | `Authorization: Bearer cak_…` | `Authorization: Bearer <jwt>` |
+| Validade do token | Até ser revogado | Acesso ≈ 7 dias, atualização ≈ 90 dias |
+| Ideal para | Scripts internos, conectores Zapier/Make/Sheets | Aplicativos de terceiros multi-inquilino |

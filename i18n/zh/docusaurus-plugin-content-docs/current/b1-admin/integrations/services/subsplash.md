@@ -6,91 +6,91 @@ title: "Subsplash"
 
 <div class="article-intro">
 
-如果您使用 Subsplash 获取教会应用、捐款或表单，但希望 B1 作为人员和捐款的系统记录，Subsplash 的 Zapier 应用可以实时将捐款、新资料和表单回复导入 B1。请注意，Subsplash 的 Zapier 应用目前是 **仅触发器** — 连接方式是单向的（Subsplash → B1）。
+如果您使用 Subsplash 来提供教会应用、奉献或表单服务，但希望以 B1 作为人员和奉献的主记录系统，Subsplash 的 Zapier 应用可以实时将奉献、新建的个人资料和表单回复导入 B1。请注意，Subsplash 的 Zapier 应用目前**仅支持触发器**，因此连接是单向的（Subsplash → B1）。
 
 </div>
 
 <div class="prereqs">
-<h4>开始前</h4>
+<h4>开始之前</h4>
 
-- 一个在包括 **API + Zapier** 访问权限的计划上的 Subsplash 账户（与您的 Subsplash 客户成功经理检查 — 这些在计划层后面）
+- 一个 Subsplash 账户，且套餐包含 **API + Zapier** 访问权限（请咨询您的 Subsplash 客户成功经理，这些功能取决于套餐级别）
 - 一个 [Zapier](https://zapier.com) 账户
-- 一个具有 **编辑设置** 权限的 B1Admin 用户
+- 一个具有 **Edit Settings** 权限的 B1Admin 用户
 
 </div>
 
-## 您可以连接什么
+## 您可以设置的连接
 
-下面的所有触发器都是 Subsplash 的。操作是 B1 的。
+以下所有触发器均来自 Subsplash，操作则来自 B1。
 
 | Subsplash 触发器 | B1 操作 |
 |---|---|
-| 新捐款 | 查找人员 → 添加捐款（如果缺失，创建人员） |
-| 新承诺 | 添加捐款（带 `notes` = "承诺：…"） |
-| 新人员创建 | 创建人员 |
-| 人员更新资料 | （无直接 B1 操作 — 记录到 Google Sheet 供手动审查） |
-| 新表格响应 | 创建人员 + （可选）基于表单添加小组成员 |
+| New Donation（新奉献） | Find Person（查找人员）→ Add Donation（添加奉献）（如果人员不存在，则 Create Person（创建人员）） |
+| New Pledge（新认捐） | Add Donation（添加奉献）（`notes` 为 "Pledge: …"） |
+| New Person Created（新建人员） | Create Person（创建人员） |
+| Person Updated Profile（人员资料已更新） | （无直接对应的 B1 操作，可记录到 Google Sheet 供人工审核） |
+| New Form Response（新表单回复） | Create Person（创建人员）+（可选）根据表单添加 Group Member（添加小组成员） |
 
-Subsplash → B1 是 Subsplash 的应用目前支持的唯一方向。
+目前 Subsplash 的应用仅支持 Subsplash → B1 这一个方向。
 
 ## 设置
 
-### 1. 生成一个 B1 API 密钥
+### 1. 创建 B1 API 密钥
 
-在 B1Admin 中：**设置 → 开发者 → API 密钥 → 新建 API 密钥**。Scopes：
+在 B1Admin 中：**Settings → Developer → API Keys → New API Key**。权限范围：
 
-- `people:read` — 按电子邮件查找捐赠者
-- `people:write` — 如果他们不存在，创建他们
-- `donations:write` — 记录礼物
-- （无需 `settings:write` — Subsplash 不是 B1，拥有触发器这里。）
+- `people:read`：通过电子邮件查找捐赠者
+- `people:write`：如果捐赠者不存在，则为其创建记录
+- `donations:write`：记录该笔奉献
+- （无需 `settings:write`，因为此处的触发器由 Subsplash 而非 B1 负责。）
 
 ### 2. 将 Subsplash 连接到 Zapier
 
-按照 [Subsplash 的 Zapier 集成指南](https://support.subsplash.com/en/articles/9825926-zapier-integration)。他们从 Subsplash Dashboard 内部颁发 API 令牌，Zapier 使用该令牌对触发器侧进行身份验证。
+请按照 [Subsplash 的 Zapier 集成指南](https://support.subsplash.com/en/articles/9825926-zapier-integration) 操作。他们会在 Subsplash 控制台中签发一个 API 令牌，供 Zapier 用于对触发器端进行身份验证。
 
-### 3. 构建"记录捐款"Zap
+### 3. 创建"记录奉献"Zap
 
-1. **触发器** — Subsplash：新捐款
-2. **操作** — B1.church：查找人员（按电子邮件）
-3. **过滤/路径** — 在"找到人员"上分支：
-   - **找到：** B1.church：添加捐款。映射金额、日期、基金、方式 = "在线"、注释 = Subsplash 交易 id。
-   - **未找到：** B1.church：创建人员 → B1.church：添加捐款（使用新创建的人员的 id）。
+1. **触发器**：Subsplash：New Donation（新奉献）
+2. **操作**：B1.church：Find Person（按电子邮件查找）
+3. **筛选器 / 路径**：根据"是否找到人员"进行分支：
+   - **已找到：** B1.church：Add Donation（添加奉献）。映射金额、日期、基金、方式 = "Online"，备注 = Subsplash 交易 ID。
+   - **未找到：** B1.church：Create Person（创建人员）→ B1.church：Add Donation（添加奉献）（使用新创建人员的 ID）。
 
-打开 Zap。未来 Subsplash 捐款在几秒内流入 **B1Admin → 捐款**。
+开启该 Zap。之后，Subsplash 的奉献会在数秒内进入 **B1Admin → Donations**。
 
 ## 常见方案
 
-### 当首次礼物到达时发送感谢
+### 首次奉献到账时发送感谢信
 
-- **触发器** — Subsplash：新捐款
-- **操作** — Zapier 过滤器：仅当它是捐赠者的首次礼物时继续（对捐赠者电子邮件使用 *查找表* 对照 Google Sheet 的过去捐赠者，或在捐赠者创建日期上使用 Zapier *路径* 步骤）
-- **操作** — Mailchimp/SMTP/SendGrid：发送首次礼物感谢消息
-- **操作** — B1.church：添加捐款（如常）
+- **触发器**：Subsplash：New Donation（新奉献）
+- **操作**：Zapier 筛选：仅当这是捐赠者的首次奉献时才继续（可对照记录过往奉献者的 Google Sheet 使用*查找表*，匹配捐赠者电子邮件；或基于捐赠者创建日期使用 Zapier *Paths* 步骤）
+- **操作**：Mailchimp / SMTP / SendGrid：发送首次奉献感谢信
+- **操作**：B1.church：Add Donation（添加奉献）（照常进行）
 
-### 从常规捐款流过滤承诺
+### 将认捐从常规奉献流程中筛选出来
 
-- **触发器** — Subsplash：新承诺
-- **操作** — B1.church：添加捐款，带 `notes = "承诺 — Subsplash"` 和称为 `承诺` 的基金（与您的运营基金分开），以便您可以在 **B1Admin → 捐款 → 报告** 中独立报告承诺。
+- **触发器**：Subsplash：New Pledge（新认捐）
+- **操作**：B1.church：Add Donation（添加奉献），备注为 `notes = "Pledge — Subsplash"`，并使用名为 `Pledges` 的基金（与您的运营基金分开），以便您在 **B1Admin → Donations → Summary** 中单独报告认捐情况。
 
-### 将新应用用户同步为 B1 人员
+### 将新的应用用户同步为 B1 人员
 
-- **触发器** — Subsplash：新人员创建
-- **操作** — B1.church：创建人员，填充名称、电子邮件、电话。通过将新人员添加到"Subsplash 应用用户"之类的小组来在 B1 中标记。
+- **触发器**：Subsplash：New Person Created（新建人员）
+- **操作**：B1.church：Create Person（创建人员），填入姓名、电子邮件、电话。将新人员添加到如 "Subsplash App Users" 之类的小组中，即可在 B1 中为其添加标签。
 
-## 限制和注释
+## 限制与说明
 
-- **Subsplash 的 Zapier 应用仅触发器。** 如果您想要 B1 侧更改（例如新 B1 人员也登陆 Subsplash），您需要从 B1 的 Zapier 应用触发器构建该网桥，调用 Subsplash 的 REST API 通过自定义 *Webhooks by Zapier — POST* 操作。这是自定义集成，而不是方案。
-- **API 访问是计划门控的。** 如果 Zapier 连接失败，显示 `403 禁止`，您的 Subsplash 计划可能不包括 API 访问 — 联系您的客户成功经理。
-- **基金映射是手动的。** Subsplash 传递活动或类别名称；B1 需要数字基金 id。要么在 Zap 中硬编码基金，要么维护 Zapier *查找表* 映射 Subsplash 活动到 B1 基金。
+- **Subsplash 的 Zapier 应用仅支持触发器。** 如果您希望 B1 端的更改（例如新的 B1 人员也同步到 Subsplash），则需要通过 B1 Zapier 应用的触发器，调用 Subsplash 的 REST API，使用自定义的 *Webhooks by Zapier — POST* 操作来搭建这一桥接。这属于定制集成，而不是现成的方案。
+- **API 访问受套餐限制。** 如果 Zapier 连接失败并显示 `403 Forbidden`，则您的 Subsplash 套餐可能不包含 API 访问权限，请联系您的客户成功经理。
+- **基金映射需手动完成。** Subsplash 传递的是活动或类别名称，而 B1 需要数字格式的基金 ID。您可以在 Zap 中硬编码基金，或维护一个将 Subsplash 活动映射到 B1 基金的 Zapier *查找表*。
 
-## 故障排查
+## 故障排除
 
-- **捐款后没有触发器触发** — 验证在 Subsplash 的 Zapier 仪表板中连接仍显示 *已连接*。如果 Subsplash 侧的 API 令牌被轮换，Zap 会无声地停止；重新连接。
-- **B1 *添加捐款* 失败，显示 422** — 通常是缺失或未识别的 `fundId`。在 **B1Admin → 捐款 → 基金** 列出您的基金，并将确切 id 复制到 Zap 步骤。
-- **首次礼物触发两次** — Subsplash 有时如果 Zapier 错过其 ack 会重新交付触发器。添加 *Zapier 过滤器* 对捐款 id（Subsplash 在有效负载中发送一个）以删除重复项。
+- **奉献后没有触发器运行**：在 Subsplash 的 Zapier 控制台中确认连接仍显示为 *Connected*。如果 Subsplash 一侧的 API 令牌已轮换，Zap 会静默停止，此时请重新连接。
+- **B1 *Add Donation* 返回 422**：通常是 `fundId` 缺失或无法识别。请通过 **B1Admin → Donations → Funds** 列出您的基金，并将确切的 ID 复制到 Zap 步骤中。
+- **首次奉献触发了两次**：如果 Zapier 未能确认收到，Subsplash 偶尔会重新投递触发器。请添加基于奉献 ID 的 *Filter by Zapier* 筛选器（Subsplash 会在负载中提供该 ID）以去除重复项。
 
 ## 另请参阅
 
-- [Donorbox](./donorbox) — 相同方案形状，不同的捐款平台
-- [Zapier（概览）](../zapier) — 每个 Zapier 方案的 B1 侧
-- [Subsplash Zapier 集成指南](https://support.subsplash.com/en/articles/9825926-zapier-integration)（Subsplash 的文档）
+- [Donorbox](./donorbox)：方案结构相同，但使用不同的奉献平台
+- [Zapier（概览）](../zapier)：每个 Zapier 方案的 B1 端说明
+- [Subsplash Zapier 集成指南](https://support.subsplash.com/en/articles/9825926-zapier-integration)（Subsplash 官方文档）

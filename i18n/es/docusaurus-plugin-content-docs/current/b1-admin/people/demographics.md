@@ -1,59 +1,59 @@
 ---
-title: "Datos Demográficos"
+title: "Demografía"
 ---
 
-# Datos Demográficos
+# Demografía
 
 <div class="article-intro">
 
-El panel de **Datos Demográficos** te da una vista visual de tu congregación — quiénes son, cuántos hay y cómo se distribuye tu membresía en grupos de edad, géneros, estados civiles y sedes. Cada gráfico es interactivo: haz clic en cualquier segmento para ir directamente a una búsqueda de Personas filtrada mostrando exactamente esas personas.
+El panel de **Demografía** te ofrece una vista visual de tu congregación: quiénes son, cuántos son y cómo se distribuyen los miembros por grupos de edad, géneros, estados civiles y campus. Cada gráfico es interactivo: haz clic en cualquier segmento para ir directamente a una búsqueda filtrada de Personas que muestre exactamente a esas personas.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de empezar</h4>
 
-- Deben existir personas en tu directorio. Ve [Agregando Personas](./adding-people.md) o [Importando Datos](./importing-data.md) para empezar.
-- Para ver el gráfico de Sedes, primero necesitas sedes configuradas en [Configuración → Sedes](../settings/campuses.md).
+- Deben existir personas en tu directorio. Consulta [Agregar personas](./adding-people.md) o [Importar datos](./importing-data.md) para comenzar.
+- Para ver el gráfico de Campus, primero necesitas tener campus configurados en [Configuración → Campus](../settings/campuses.md).
 
 </div>
 
-## Abriendo Datos Demográficos
+## Abrir Demografía
 
-Desde la página **Personas**, haz clic en **Datos Demográficos** en el encabezado de la página. La página muestra tu recuento total de personas en la parte superior, seguida por los gráficos descritos a continuación.
+Desde la página de **Personas**, haz clic en **Demografía** en el encabezado de la página. La página muestra el total de personas en la parte superior, seguido de los gráficos que se describen a continuación.
 
 ## Gráficos
 
-### Distribución de Edad
+### Distribución por edad
 
-Un gráfico de barras agrupadas mostrando cuántas personas caen en cada grupo de edad (por ejemplo, 0-9, 10-17, 18-24, y así sucesivamente hasta 65+). Cada barra se divide en tres series — **Femenino**, **Masculino** e **Indeterminado** — para que puedas ver el desglose de género dentro de cada grupo de edad de un vistazo.
+Un gráfico de barras agrupadas que muestra cuántas personas caen en cada rango de edad (por ejemplo, 0–9, 10–17, 18–24, y así sucesivamente hasta 65+). Cada barra se divide en tres series: **Mujeres**, **Hombres** y **Sin asignar**, para que puedas ver de un vistazo la distribución por género dentro de cada grupo de edad.
 
-### Estado de Membresía
+### Estado de membresía
 
-Un gráfico circular que desglosa tu congregación por estado de membresía (por ejemplo, Miembro, Asistente Regular, Visitante, y así sucesivamente).
+Un gráfico de dona que desglosa tu congregación por estado de membresía (por ejemplo, Miembro, Asistente regular, Visitante, etc.).
 
 ### Género
 
-Un gráfico circular que muestra la proporción de registros femeninos, masculinos e indeterminados en tu directorio.
+Un gráfico de dona que muestra la proporción de registros de mujeres, hombres y sin asignar en tu directorio.
 
-### Estado Civil
+### Estado civil
 
-Un gráfico circular que muestra el desglose de valores de estado civil (por ejemplo, Casado, Soltero, Viudo).
+Un gráfico de dona que muestra la distribución entre los valores de estado civil (por ejemplo, Casado, Soltero, Viudo).
 
-### Sede
+### Campus
 
-Un gráfico circular que muestra cómo se distribuyen las personas en las sedes de tu iglesia. Este gráfico solo aparece si tienes sedes configuradas y al menos una persona asignada a una sede. Las personas sin sede asignada aparecen como **Indeterminado**.
+Un gráfico de dona que muestra cómo se distribuyen las personas entre los campus de tu iglesia. Este gráfico solo aparece si tienes campus configurados y al menos una persona asignada a un campus. Las personas sin campus asignado aparecen como **Sin asignar**.
 
-## Profundizando en los Datos
+## Explorar los datos
 
-Haz clic en cualquier sector de un gráfico circular o en cualquier segmento de barra en el gráfico de edad para navegar a la página **Personas** pre-filtrada para mostrar exactamente esas personas. Usa esto para construir rápidamente una lista de contactos, ejecutar una acción en lote o exportar un segmento — por ejemplo, haz clic en el sector **Visitante** en Estado de Membresía para ver todos los visitantes y luego envíalos a un flujo de trabajo.
+Haz clic en cualquier porción de un gráfico de dona o en cualquier segmento de barra del gráfico de edades para ir a la página de **Personas** prefiltrada con exactamente esas personas. El filtro permanece aplicado cuando la página termina de cargar, y el conteo sobre la lista muestra cuántos hogares y personas coinciden. Úsalo para crear rápidamente una lista de contactos, ejecutar una acción masiva o exportar un segmento; por ejemplo, haz clic en la porción **Visitante** del gráfico de Estado de membresía para ver a todos los visitantes y luego enviarlos a un flujo de trabajo.
 
 :::tip
-Después de profundizar en un resultado filtrado, usa **Guardar como Lista** en la búsqueda de Personas para guardar ese filtro para uso futuro. Ve [Listas Guardadas](./lists.md).
+Después de explorar un resultado filtrado, usa **Guardar como lista** en la búsqueda de Personas para guardar ese filtro para uso futuro. Consulta [Listas guardadas](./lists.md).
 :::
 
-## Artículos Relacionados
+## Artículos relacionados
 
-- [Buscando Personas](./searching-people.md) — la página de Personas en la que llegas al profundizar en un gráfico
-- [Listas Guardadas](./lists.md) — guarda un segmento demográfico como una lista reutilizable
-- [Sedes](../settings/campuses.md) — configura sedes para que aparezca el gráfico de Sedes
+- [Buscar personas](./searching-people.md): la página de Personas a la que llegas al explorar un gráfico
+- [Listas guardadas](./lists.md): guarda un segmento demográfico como lista reutilizable
+- [Campus](../settings/campuses.md): configura los campus para que aparezca el gráfico de Campus

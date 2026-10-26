@@ -2,32 +2,32 @@
 title: "टाइमलाइन"
 ---
 
-# टाइमलाइन {#timeline}
+# टाइमलाइन
 
 <div class="article-intro">
 
-अलग **Timeline** tab अब हटा दिया गया है। सदस्य पोर्टल अब [Home dashboard](../getting-started/navigating.md) पर खुलता है, और जो गतिविधि पहले एक संयुक्त feed में दिखती थी, वह अब उचित जगहों पर दिखती है -- Me पेज पर, notifications में, और हर group के अंदर।
+स्वतंत्र **Timeline** टैब अब बंद किया जा चुका है। सदस्य पोर्टल अब [Home डैशबोर्ड](../getting-started/navigating.md) पर खुलता है, और जो गतिविधि पहले एक संयुक्त फ़ीड में दिखती थी, वह अब उसकी उचित जगह पर दिखती है -- Me पेज पर, सूचनाओं में, और हर ग्रुप के भीतर।
 
 </div>
 
-## Timeline की गतिविधि अब कहां है {#where-timeline-activity-lives-now}
+## टाइमलाइन की गतिविधि अब कहाँ है
 
-| Timeline पर जो आप पहले देखते थे | अब इसे कहां खोजें |
+| जो आप पहले टाइमलाइन पर देखते थे | अब उसे कहाँ खोजें |
 | --- | --- |
-| Group conversations और announcements | हर [group](../groups/conversations.md) के अंदर chat (**Open chat**) |
-| आपके और आपके groups के लिए आने वाले events | **Me** पेज (`/mobile/me`) और हर group का **Next event** सेक्शन |
-| Tasks और serving assignments | **Me** पेज और [Plans](../plans/) |
-| नए sermons | Home पर **Latest sermon** सेक्शन और [Sermons](../content/sermons.md) tab |
-| जो भी आपको ping करता था | ऐप बार में **bell** icon, या `/mobile/notifications` |
+| ग्रुप की बातचीत और घोषणाएँ | हर [ग्रुप](../groups/conversations.md) के भीतर चैट (**Open chat**) |
+| आपके और आपके ग्रुप्स के आगामी इवेंट | **Me** पेज (`/mobile/me`) और हर ग्रुप का **Next event** सेक्शन |
+| कार्य और सेवा असाइनमेंट | **Me** पेज और [Plans](../plans/) |
+| नए sermons | Home पर **Latest sermon** सेक्शन और [Sermons](../content/sermons.md) टैब |
+| जो भी आपको सूचित करता है | ऐप बार में **bell** आइकन, या `/mobile/notifications` |
 
-## Me पेज {#the-me-page}
+## Me पेज
 
-[Me पेज](../getting-started/me-page) पुराने feed का सबसे नज़दीकी विकल्प है। इसमें आपके लिए आने वाली चीज़ों की सूची होती है -- serving assignments, event registrations और group events -- साथ में आपके submitted forms, attendance history और सबसे हाल की notifications, और सीधे आपकी profile, notification preferences, messages, giving और registrations के लिंक।
+[Me पेज](../getting-started/me-page) पुराने फ़ीड का सबसे नज़दीकी विकल्प है। इसमें आपके लिए आने वाली चीज़ें दिखती हैं -- सेवा असाइनमेंट, इवेंट पंजीकरण, और ग्रुप इवेंट -- साथ में आपके द्वारा जमा किए गए फ़ॉर्म, आपका उपस्थिति इतिहास, और आपकी सबसे हाल की सूचनाएँ, और सीधे आपकी प्रोफ़ाइल, सूचना प्राथमिकताओं, संदेशों, giving, और पंजीकरण के लिंक।
 
-## Notifications {#notifications}
+## सूचनाएँ
 
-जो भी चीज़ पहले Timeline item के रूप में दिखती थी और जिस पर आपका ध्यान चाहिए था, अब notification के रूप में आती है। नवीनतम notifications देखने के लिए ऐप बार में bell पर tap करें, या पूरी सूची के लिए **See all** पर tap करें (या `/mobile/notifications` खोलें)। किसी notification पर tap करने से आप उस group, plan या conversation पर पहुंच जाते हैं जहां से वह आई थी। आप कौन सी notifications पाते हैं, और किस तरह, यह [Notification Preferences](../getting-started/notification-preferences.md) में नियंत्रित कर सकते हैं।
+जो भी पहले टाइमलाइन आइटम के रूप में दिखता और आपका ध्यान माँगता, वह अब एक सूचना के रूप में आता है। नवीनतम सूचनाएँ देखने के लिए ऐप बार में bell टैप करें, या पूरी सूची के लिए **See all** टैप करें (या `/mobile/notifications` खोलें)। किसी सूचना पर टैप करने से आप उस ग्रुप, प्लान, या बातचीत पर पहुँचते हैं जहाँ से वह आई थी। आप कौन-सी सूचनाएँ पाते हैं -- और कैसे -- यह [Notification Preferences](../getting-started/notification-preferences.md) के अंतर्गत नियंत्रित कर सकते हैं।
 
 :::tip
-यदि आपका Me पेज खाली दिखता है, तो हो सकता है आप अभी किसी group के सदस्य न हों। join करने के लिए groups खोजने हेतु [Groups](../groups/browsing-groups.md) पेज पर जाएं, या अपने church administrator या group leader से आपको जोड़ने के लिए कहें।
+अगर आपका Me पेज खाली दिखता है, तो हो सकता है आप अभी किसी ग्रुप के सदस्य न हों। ग्रुप ढूँढने के लिए [Groups](../groups/browsing-groups.md) पेज पर जाएँ, या अपने चर्च प्रशासक या ग्रुप लीडर से आपको जोड़ने के लिए कहें।
 :::

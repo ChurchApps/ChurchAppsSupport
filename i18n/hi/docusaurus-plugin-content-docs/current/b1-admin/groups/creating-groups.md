@@ -1,90 +1,94 @@
 ---
-title: "समूह बनाना"
+title: "Groups बनाना"
 ---
 
-# समूह बनाना
+# Groups बनाना
 
 <div class="article-intro">
 
-B1 Admin में एक समूह बनाना सीधा है। आप एक category सेट अप करेंगे, अपने समूह को नाम देंगे, और फिर इसकी सेटिंग को कॉन्फ़िगर करेंगे। समूह आपके चर्च को सार्थक इकाइयों में संगठित करने में मदद करते हैं जैसे छोटे समूह, समितियां, और कक्षाएं।
+B1 Admin में group बनाना सीधा है। आप एक category सेट करेंगे, अपने group को नाम देंगे, और फिर उसकी सेटिंग्स कॉन्फ़िगर करेंगे। Groups आपके church को small groups, committees और classes जैसी सार्थक इकाइयों में व्यवस्थित करने में मदद करते हैं।
 
 </div>
+
+## प्रशिक्षण वीडियो
+
+<YouTube id="uG93pXVreNo" title="Creating Groups and Adding Members in B1" />
 
 <div class="prereqs">
-<h4>शुरुआत से पहले</h4>
+<h4>शुरू करने से पहले</h4>
 
-- आपको एक सक्रिय B1 Admin खाते की आवश्यकता है समूहों को प्रबंधित करने की अनुमति के साथ। यदि आप अपने access level के बारे में निश्चित नहीं हैं तो [Roles & Permissions](../people/roles-permissions.md) देखें।
-- अपने समूहों के लिए एक category structure तय करें (उदाहरण के लिए, "Small Groups," "Ministries," "Committees")। Categories संबंधित समूहों को संगठित रखने में मदद करती हैं।
+- आपके पास groups प्रबंधित करने की अनुमति वाला एक सक्रिय B1 Admin account होना चाहिए। अगर आप अपनी access level के बारे में निश्चित नहीं हैं, तो [Roles & Permissions](../people/roles-permissions.md) देखें।
+- अपने groups के लिए category संरचना तय करें (जैसे "Small Groups", "Ministries", "Committees")। categories संबंधित groups को व्यवस्थित रखने में मदद करती हैं।
 
 </div>
 
-## एक नया समूह जोड़ना
+## नया Group जोड़ना
 
-1. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin के ऊपरी बाईं ओर), **People** को विस्तृत करें, और **Groups** पर क्लिक करें।
-2. पेज हेडर में **Add Group** पर क्लिक करें। सूची के नीचे एक **New Group** फ़ॉर्म खुलता है। एक **Category Name** दर्ज करें। Categories आपको संबंधित समूहों को एक साथ संगठित करने में मदद करते हैं (उदाहरण के लिए, "Small Groups," "Ministries," या "Committees")। यदि एक category पहले से मौजूद है, तो आप इसे सूची से चुन सकते हैं।
-3. समूह का **Name** दर्ज करें।
-4. **Add** पर क्लिक करें। आपका नया समूह सूची में दिखाई देगा, और उसकी category उसके नाम के नीचे दिखेगी।
+1. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin में ऊपर-बाईं ओर का search bar), **People** को expand करें, और **Groups** पर click करें।
+2. पेज के header में **Add Group** पर click करें। सूची के नीचे एक **New Group** form खुलता है। **Category Name** लिखें। Categories संबंधित groups को एक साथ व्यवस्थित करने में मदद करती हैं (जैसे "Small Groups", "Ministries", या "Committees")। अगर कोई category पहले से मौजूद है, तो आप उसे सूची से चुन सकते हैं।
+3. group का **Name** लिखें।
+4. **Add** पर click करें। आपका नया group सूची में दिखेगा, उसके नाम के नीचे उसकी category के साथ।
 
-## समूह सेटिंग कॉन्फ़िगर करना
+## Group सेटिंग्स कॉन्फ़िगर करना
 
-एक बार जब आपका समूह बनाया जा जाता है, तो आप अतिरिक्त विवरण भर सकते हैं:
+एक बार group बन जाए, तो आप उसके अतिरिक्त विवरण भर सकते हैं:
 
-1. सूची में **group name** पर क्लिक करके इसे खोलें।
-2. समूह पेज के बाईं ओर, group विवरण के नीचे **Edit** बटन पर क्लिक करें।
-3. निम्नलिखित विकल्पों को कॉन्फ़िगर करें:
-   - **Description** -- समूह के बारे में एक संक्षिप्त सारांश। यह सदस्यों के लिए दृश्यमान है।
-   - **Meeting Times** -- समूह आम तौर पर कब मिलता है (उदाहरण के लिए, "Wednesdays at 7 PM")।
-   - **Join Policy** -- इस समूह में कौन शामिल हो सकता है चुनें:
-     - **Open** -- कोई भी बिना approval के तुरंत शामिल हो सकता है
-     - **Request** -- लोगों को एक join request submit करना चाहिए जिसे approval की आवश्यकता है ([Group Join Requests](./group-join-requests.md) देखें)
-     - **Closed** -- सदस्यों को leaders या administrators द्वारा मैनुअल रूप से जोड़ा जाना चाहिए
-   - **Labels** -- समूह को एक या अधिक वर्णनात्मक labels असाइन करें (उदाहरण के लिए, "In-Person", "Online", "New Members Welcome")। Labels freeform tags हैं जिन्हें आप define करते हैं; सभी लागू करने वाले को check करें। Labels को Groups Browser website element में समूहों को filter करने के लिए उपयोग किया जा सकता है।
-   - **Confidential group** -- इस समूह और इसके रोस्टर को सार्वजनिक पृष्ठों, समूह finder, और गैर-सदस्यों से छुपाएं। recovery या counseling ministries जैसे संवेदनशील समूहों के लिए इसका उपयोग करें; केवल समूह के सदस्य और चर्च स्टाफ इसे देख सकते हैं।
-   - **Discussions** -- समूह के chat feed को चालू या बंद करता है, जहां कोई भी सदस्य post कर सकता है। Default पर चालू है।
-   - **Announcements** -- एक दूसरा, leader-only chat feed चालू करता है -- सदस्य read और react कर सकते हैं, लेकिन केवल leaders ही post कर सकते हैं। Default पर चालू है।
-   - **Attendance Tracking** -- इसे enable करें यदि आप इस समूह के लिए [attendance](../attendance/tracking-attendance.md) रिकॉर्ड करना चाहते हैं।
-   - **Service Times** -- यदि लागू हो तो समूह को विशिष्ट चर्च service times के साथ associate करें। Service times पर विवरण के लिए [Attendance Setup](../attendance/setup.md) देखें।
-4. अपने changes को लागू करने के लिए **Save** पर क्लिक करें।
+1. सूची में **group name** पर click करके उसे खोलें।
+2. group पेज के बाईं ओर, group के विवरण के नीचे **Edit** बटन पर click करें।
+3. ये विकल्प कॉन्फ़िगर करें:
+   - **Description** -- group किस बारे में है, इसका संक्षिप्त सार। यह सदस्यों को दिखता है।
+   - **Meeting Times** -- group आम तौर पर कब मिलता है (जैसे "Wednesdays at 7 PM")।
+   - **Join Policy** -- चुनें कि इस group में कौन शामिल हो सकता है:
+     - **Open** -- कोई भी तुरंत, बिना मंज़ूरी के शामिल हो सकता है
+     - **Request** -- लोगों को join request भेजनी होती है, जिसके लिए मंज़ूरी चाहिए (देखें [Group Join Requests](./group-join-requests.md))
+     - **Closed** -- सदस्यों को leaders या administrators द्वारा हाथ से जोड़ना होगा
+   - **Labels** -- group को एक या अधिक विवरणात्मक labels असाइन करें (जैसे "In-Person", "Online", "New Members Welcome")। Labels आपके परिभाषित किए गए मुक्त-रूप tags हैं; जो लागू हों उन्हें चिह्नित करें। Labels का उपयोग Groups Browser website element में groups को फ़िल्टर करने के लिए किया जा सकता है।
+   - **Confidential group** -- इस group और उसकी roster को public pages, group finder, और गैर-सदस्यों से छिपाएं। यह recovery या counseling ministries जैसे संवेदनशील groups के लिए उपयोग करें; केवल group के सदस्य और church staff ही उसे देख सकते हैं।
+   - **Discussions** -- group का chat feed चालू या बंद करता है, जहां कोई भी सदस्य पोस्ट कर सकता है। डिफ़ॉल्ट रूप से चालू।
+   - **Announcements** -- एक दूसरा, केवल leaders के लिए chat feed चालू करता है -- सदस्य पढ़ और react कर सकते हैं, लेकिन केवल leaders पोस्ट कर सकते हैं। डिफ़ॉल्ट रूप से चालू।
+   - **Attendance Tracking** -- अगर आप इस group की [उपस्थिति](../attendance/tracking-attendance.md) दर्ज करना चाहते हैं तो इसे चालू करें।
+   - **Service Times** -- लागू हो तो group को विशिष्ट church service times से जोड़ें। service times के विवरण के लिए [Attendance Setup](../attendance/setup.md) देखें।
+4. अपने बदलाव लागू करने के लिए **Save** पर click करें।
 
 :::tip
-एक स्पष्ट description और meeting time जोड़ने से सदस्यों को पता चल जाता है कि जब वे कोई समूह में शामिल होते हैं तो उन्हें क्या उम्मीद करनी चाहिए।
+स्पष्ट description और meeting time जोड़ने से सदस्यों को पता रहता है कि group से जुड़ने पर उन्हें क्या उम्मीद करनी है।
 :::
 
 :::info
-जब आप दोनों Discussions और Announcements को बंद करते हैं तो यह member portal में समूह से Messages टैब को पूरी तरह से हटा देता है। केवल एक को बंद करने से इसके टैब को छुपा दिया जाता है; सदस्य उस feed पर चले जाते हैं जो अभी भी चालू है। Existing messages किसी भी तरह से रखे जाते हैं -- toggles केवल नई posting को नियंत्रित करते हैं।
+Discussions और Announcements दोनों बंद करने पर member portal में group से Messages tab पूरी तरह हट जाता है। केवल एक बंद करने पर उसका tab छिपता है, और सदस्य उस feed पर चले जाते हैं जो अभी भी चालू है। मौजूदा messages दोनों ही स्थितियों में बने रहते हैं -- ये toggles केवल नई posting को नियंत्रित करते हैं।
 :::
 
-## समूह को डुप्लिकेट करना
+## Group की प्रतिलिपि बनाना
 
-एक आवर्ती class या ministry का एक नया session शुरू कर रहे हैं? सभी सेटिंग को फिर से दर्ज करने के बजाय, एक मौजूदा समूह को डुप्लिकेट करें:
+किसी आवर्ती class या ministry का नया session शुरू कर रहे हैं? सारी सेटिंग्स दोबारा भरने के बजाय, मौजूदा group की प्रतिलिपि बनाएं:
 
-1. समूह को खोलें और समूह पेज के बाईं ओर **Edit** बटन के नीचे **Duplicate** पर क्लिक करें।
-2. duplication की पुष्टि करें।
+1. group खोलें और **Duplicate** पर click करें (group पेज के बाईं ओर **Edit** बटन के नीचे)।
+2. पुष्टि करें।
 
-कॉपी original की सेटिंग को ले जाता है -- category, description, meeting time/location, join policy, labels, और campus -- लेकिन **not** इसके सदस्य। नया समूह original के बाद " (Copy)" के साथ नाम दिया जाता है; इसे समूह सेटिंग से rename करें।
+प्रतिलिपि मूल group की सेटिंग्स -- category, description, meeting time/location, join policy, labels, और campus -- साथ ले जाती है, लेकिन उसके **सदस्य** नहीं। नए group का नाम मूल के नाम पर होगा जिसके अंत में " (Copy)" जुड़ा होगा; उसका नाम group सेटिंग्स से बदलें।
 
-## समूह को आर्काइव करना
+## Group को Archive करना
 
-जब कोई समूह सक्रिय नहीं रहता है लेकिन आप इसे हटाने के बजाय इसका history रखना चाहते हैं:
+जब कोई group सक्रिय न रहे लेकिन आप उसका इतिहास रखना चाहें, उसे हटाने के बजाय:
 
-1. समूह को खोलें और इसकी सेटिंग संपादित करने के लिए **Edit** पर क्लिक करें।
-2. **Archive** पर क्लिक करें और पुष्टि करें।
+1. group खोलें और उसकी सेटिंग्स संपादित करने के लिए **Edit** पर click करें।
+2. **Archive** पर click करें और पुष्टि करें।
 
-आर्काइव किए गए समूह मुख्य Groups सूची से दूर चले जाते हैं। फिर से एक को खोजने के लिए, Groups पृष्ठ के शीर्ष पर category बटन के बगल में **Show archived** बटन पर क्लिक करें, फिर समूह को वापस लाने के लिए समूह के बगल में **Restore** पर क्लिक करें।
+Archived groups मुख्य Groups सूची से हट जाते हैं। किसी को फिर से ढूंढने के लिए, Groups पेज के ऊपर category बटनों के बगल में **Show archived** बटन पर click करें, फिर group के बगल में **Restore** पर click करके उसे वापस लाएं।
 
 :::info
-किसी समूह को आर्काइव करने से इसके सदस्य, attendance history, या calendar events नहीं हटते -- यह केवल जब तक आप इसे restore न करें तब तक समूह को default सूची से छुपाता है।
+किसी group को archive करने से उसके सदस्य, उपस्थिति का इतिहास, या calendar events नहीं हटते -- यह केवल group को तब तक डिफ़ॉल्ट सूची से छिपाता है जब तक आप उसे restore न करें।
 :::
 
-## अगले कदम
+## आगे के कदम
 
-अपने समूह को बनाने और कॉन्फ़िगर करने के बाद, आप तैयार हैं:
+group बनाने और कॉन्फ़िगर करने के बाद, आप ये कर सकते हैं:
 
-- **सदस्य जोड़ें** -- लोगों की खोज करें और उन्हें समूह में जोड़ें। star icon (**Make Leader**) का उपयोग करके group leaders को designate करें। [Group Members](./group-members.md) देखें।
-- **एक calendar सेट अप करें** -- समूह के लिए events और recurring meetings बनाएं। [Group Calendar](./group-calendar.md) देखें।
-- **Communicate** -- समूह पृष्ठ से सीधे सभी समूह सदस्यों को संदेश भेजें।
-- **डेटा export करें** -- सदस्य सूची को download करने के लिए समूह की member list के ऊपर **Export** पर क्लिक करें।
+- **सदस्य जोड़ें** -- लोगों को खोजें और उन्हें group में जोड़ें। group leaders नियुक्त करने के लिए star icon (**Make Leader**) का उपयोग करें। देखें [Group Members](./group-members.md)।
+- **Calendar सेट करें** -- group के लिए events और आवर्ती meetings बनाएं। देखें [Group Calendar](./group-calendar.md)।
+- **संवाद करें** -- group पेज से सीधे सभी group सदस्यों को messages भेजें।
+- **डेटा export करें** -- group की सदस्य सूची डाउनलोड करने के लिए उसके ऊपर **Export** पर click करें।
 
 :::info
-हर समूह एक category से संबंधित होता है, और मुख्य Groups पृष्ठ आपको category के अनुसार सूची को filter करने देता है। जब आपका चर्च बढ़ता है तो आप हमेशा categories को पुनर्व्यवस्थित या rename कर सकते हैं।
+हर group एक category में होता है, और मुख्य Groups पेज आपको category के अनुसार सूची फ़िल्टर करने देता है। जैसे-जैसे आपका church बढ़ता है, आप categories को कभी भी पुनर्व्यवस्थित या नाम बदल सकते हैं।
 :::
