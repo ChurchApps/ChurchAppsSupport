@@ -6,7 +6,7 @@ title: "Domínio personalizado"
 
 <div class="article-intro">
 
-Você pode apontar o seu próprio domínio (por exemplo, **www.suaigreja.org**) para o seu site do B1, para que os visitantes acessem o endereço web real da sua igreja, em vez do endereço padrão suaigreja.b1.church.
+Você pode apontar o seu próprio domínio (por exemplo, **`www.suaigreja.org`**) para o seu site do B1, para que os visitantes acessem o endereço web real da sua igreja, em vez do endereço padrão suaigreja.b1.church.
 
 </div>
 

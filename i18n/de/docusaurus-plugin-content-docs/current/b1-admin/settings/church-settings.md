@@ -41,7 +41,7 @@ Ihre Kirche erhält eine kostenlose Subdomain unter **ihrekirche.1.church**. Unt
 Ihre Subdomain muss unter allen Kirchen von ChurchApps eindeutig sein. Ist Ihr Wunschname bereits vergeben, versuchen Sie es mit Ihrer Stadt oder Ihrem Bundesland (zum Beispiel „gracechurch-dallas“).
 :::
 
-Wenn Besucher Ihre Website unter einer eigenen Domain erreichen sollen (zum Beispiel **www.gracechurch.org**), siehe [Eigene Domain](./custom-domain.md).
+Wenn Besucher Ihre Website unter einer eigenen Domain erreichen sollen (zum Beispiel **`www.gracechurch.org`**), siehe [Eigene Domain](./custom-domain.md).
 
 ## Branding einrichten
 

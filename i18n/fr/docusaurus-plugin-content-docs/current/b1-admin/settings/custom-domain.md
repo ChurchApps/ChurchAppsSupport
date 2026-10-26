@@ -6,7 +6,7 @@ title: "Domaine personnalisé"
 
 <div class="article-intro">
 
-Vous pouvez faire pointer votre propre domaine (par exemple, **www.votreeglise.org**) vers votre site B1 afin que les visiteurs accèdent à l'adresse Web réelle de votre église au lieu de l'adresse par défaut votreeglise.b1.church.
+Vous pouvez faire pointer votre propre domaine (par exemple, **`www.votreeglise.org`**) vers votre site B1 afin que les visiteurs accèdent à l'adresse Web réelle de votre église au lieu de l'adresse par défaut votreeglise.b1.church.
 
 </div>
 

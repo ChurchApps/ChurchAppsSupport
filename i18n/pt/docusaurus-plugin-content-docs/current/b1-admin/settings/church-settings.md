@@ -41,7 +41,7 @@ Sua igreja recebe um subdomínio gratuito em **suaigreja.1.church**. Este é o e
 Seu subdomínio precisa ser exclusivo entre todas as igrejas da ChurchApps. Se o nome desejado já estiver em uso, tente acrescentar sua cidade ou estado (por exemplo, "igrejaesperanca-curitiba").
 :::
 
-Se você quiser que os visitantes acessem seu site por um domínio próprio (por exemplo, **www.igrejaesperanca.org.br**), veja [Domínio Personalizado](./custom-domain.md).
+Se você quiser que os visitantes acessem seu site por um domínio próprio (por exemplo, **`www.igrejaesperanca.org.br`**), veja [Domínio Personalizado](./custom-domain.md).
 
 ## Configurando a identidade visual
 

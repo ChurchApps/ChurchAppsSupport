@@ -6,7 +6,7 @@ title: "Eigene Domain"
 
 <div class="article-intro">
 
-Sie können Ihre eigene Domain (zum Beispiel **www.ihregemeinde.org**) auf Ihre B1-Website verweisen lassen, sodass Besucher Ihre echte Internetadresse der Gemeinde erreichen statt der Standardadresse ihregemeinde.b1.church.
+Sie können Ihre eigene Domain (zum Beispiel **`www.ihregemeinde.org`**) auf Ihre B1-Website verweisen lassen, sodass Besucher Ihre echte Internetadresse der Gemeinde erreichen statt der Standardadresse ihregemeinde.b1.church.
 
 </div>
 

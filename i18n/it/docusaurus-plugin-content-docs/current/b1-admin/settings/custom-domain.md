@@ -6,7 +6,7 @@ title: "Dominio personalizzato"
 
 <div class="article-intro">
 
-Puoi puntare un tuo dominio (ad esempio, **www.tuachiesa.org**) al tuo sito B1 così i visitatori raggiungono il sito all'indirizzo web reale della chiesa invece che all'indirizzo predefinito tuachiesa.b1.church.
+Puoi puntare un tuo dominio (ad esempio, **`www.tuachiesa.org`**) al tuo sito B1 così i visitatori raggiungono il sito all'indirizzo web reale della chiesa invece che all'indirizzo predefinito tuachiesa.b1.church.
 
 </div>
 

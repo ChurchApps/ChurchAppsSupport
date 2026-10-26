@@ -6,7 +6,7 @@ title: "自定义域名"
 
 <div class="article-intro">
 
-您可以将自己的域名（例如 **www.yourchurch.org**）指向您的 B1 网站，这样访客就可以通过教会真实的网址访问网站，而无需使用默认的 yourchurch.b1.church 地址。
+您可以将自己的域名（例如 **`www.yourchurch.org`**）指向您的 B1 网站，这样访客就可以通过教会真实的网址访问网站，而无需使用默认的 yourchurch.b1.church 地址。
 
 </div>
 

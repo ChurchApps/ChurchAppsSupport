@@ -6,7 +6,7 @@ title: "Eget domene"
 
 <div class="article-intro">
 
-Du kan peke ditt eget domene (for eksempel **www.yourchurch.org**) til B1-nettstedet ditt, slik at besøkende når det under kirkens faktiske webadresse i stedet for standardadressen yourchurch.b1.church.
+Du kan peke ditt eget domene (for eksempel **`www.yourchurch.org`**) til B1-nettstedet ditt, slik at besøkende når det under kirkens faktiske webadresse i stedet for standardadressen yourchurch.b1.church.
 
 </div>
 

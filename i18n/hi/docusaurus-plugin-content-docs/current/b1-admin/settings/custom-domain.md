@@ -6,7 +6,7 @@ title: "कस्टम डोमेन"
 
 <div class="article-intro">
 
-आप अपना domain (उदाहरण के लिए, **www.yourchurch.org**) अपनी B1 site की ओर point कर सकते हैं, ताकि visitors आपके church के असली web address पर पहुंचें, न कि डिफ़ॉल्ट yourchurch.b1.church address पर।
+आप अपना domain (उदाहरण के लिए, **`www.yourchurch.org`**) अपनी B1 site की ओर point कर सकते हैं, ताकि visitors आपके church के असली web address पर पहुंचें, न कि डिफ़ॉल्ट yourchurch.b1.church address पर।
 
 </div>
 

@@ -41,7 +41,7 @@ Kirken din får et gratis underdomene på **dinkirke.1.church**. Dette er webadr
 Underdomenet ditt må være unikt på tvers av alle ChurchApps-kirker. Hvis navnet du ønsker er tatt, prøv å legge til byen eller fylket ditt (for eksempel «nadenkirke-oslo»).
 :::
 
-Hvis du vil at besøkende skal nå nettstedet ditt på ditt eget domene (for eksempel **www.nadenkirke.no**), se [Eget domene](./custom-domain.md).
+Hvis du vil at besøkende skal nå nettstedet ditt på ditt eget domene (for eksempel **`www.nadenkirke.no`**), se [Eget domene](./custom-domain.md).
 
 ## Konfigurere merkevare
 

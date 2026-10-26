@@ -41,7 +41,7 @@ La tua chiesa ottiene un sottodominio gratuito su **yourchurch.1.church**. Quest
 Il sottodominio deve essere unico tra tutte le chiese ChurchApps. Se il nome che preferisci è già in uso, prova ad aggiungere la tua città o lo stato (ad esempio "gracechurch-dallas").
 :::
 
-Se vuoi che i visitatori raggiungano il tuo sito con un dominio tuo (ad esempio **www.gracechurch.org**), consulta [Dominio personalizzato](./custom-domain.md).
+Se vuoi che i visitatori raggiungano il tuo sito con un dominio tuo (ad esempio **`www.gracechurch.org`**), consulta [Dominio personalizzato](./custom-domain.md).
 
 ## Configurare il branding
 

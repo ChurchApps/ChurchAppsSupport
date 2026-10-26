@@ -6,7 +6,7 @@ title: "사용자 지정 도메인"
 
 <div class="article-intro">
 
-자신의 도메인(예: **www.yourchurch.org**)을 B1 사이트에 연결하면, 방문자가 기본 yourchurch.b1.church 주소 대신 교회의 실제 웹 주소로 사이트에 접속할 수 있습니다.
+자신의 도메인(예: **`www.yourchurch.org`**)을 B1 사이트에 연결하면, 방문자가 기본 yourchurch.b1.church 주소 대신 교회의 실제 웹 주소로 사이트에 접속할 수 있습니다.
 
 </div>
 

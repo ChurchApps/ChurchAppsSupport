@@ -41,7 +41,7 @@ title: "교회 설정"
 서브도메인은 모든 ChurchApps 교회에서 고유해야 합니다. 원하는 이름이 이미 사용 중이라면 도시나 주 이름을 추가해 보세요(예: "gracechurch-dallas").
 :::
 
-방문자가 자체 도메인(예: **www.gracechurch.org**)으로 교회 사이트에 접속하기를 원하면 [사용자 지정 도메인](./custom-domain.md)을 참고하세요.
+방문자가 자체 도메인(예: **`www.gracechurch.org`**)으로 교회 사이트에 접속하기를 원하면 [사용자 지정 도메인](./custom-domain.md)을 참고하세요.
 
 ## 브랜딩 설정하기
 

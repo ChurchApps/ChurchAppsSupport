@@ -41,7 +41,7 @@ Votre église reçoit gratuitement un sous-domaine à l'adresse **votreeglise.1.
 Votre sous-domaine doit être unique parmi toutes les églises ChurchApps. Si le nom souhaité est déjà pris, essayez d'ajouter le nom de votre ville ou de votre région (par exemple « gracechurch-dallas »).
 :::
 
-Si vous souhaitez que les visiteurs accèdent à votre site via votre propre nom de domaine (par exemple **www.gracechurch.org**), consultez [Domaine personnalisé](./custom-domain.md).
+Si vous souhaitez que les visiteurs accèdent à votre site via votre propre nom de domaine (par exemple **`www.gracechurch.org`**), consultez [Domaine personnalisé](./custom-domain.md).
 
 ## Configurer l'image de marque
 

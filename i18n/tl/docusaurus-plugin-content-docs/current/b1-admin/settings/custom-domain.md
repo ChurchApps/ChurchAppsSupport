@@ -6,7 +6,7 @@ title: "Custom Domain"
 
 <div class="article-intro">
 
-Maaari mong ituro ang sarili mong domain (halimbawa, **www.yourchurch.org**) sa iyong B1 site para makarating ang mga bisita sa tunay na web address ng iyong simbahan sa halip na sa default na yourchurch.b1.church.
+Maaari mong ituro ang sarili mong domain (halimbawa, **`www.yourchurch.org`**) sa iyong B1 site para makarating ang mga bisita sa tunay na web address ng iyong simbahan sa halip na sa default na yourchurch.b1.church.
 
 </div>
 

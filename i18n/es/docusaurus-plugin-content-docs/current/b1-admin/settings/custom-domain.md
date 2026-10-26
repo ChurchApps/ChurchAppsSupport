@@ -6,7 +6,7 @@ title: "Dominio personalizado"
 
 <div class="article-intro">
 
-Puedes apuntar tu propio dominio (por ejemplo, **www.tuiglesia.org**) a tu sitio de B1 para que los visitantes lleguen a la dirección web real de tu iglesia en lugar de la dirección predeterminada tuiglesia.b1.church.
+Puedes apuntar tu propio dominio (por ejemplo, **`www.tuiglesia.org`**) a tu sitio de B1 para que los visitantes lleguen a la dirección web real de tu iglesia en lugar de la dirección predeterminada tuiglesia.b1.church.
 
 </div>
 

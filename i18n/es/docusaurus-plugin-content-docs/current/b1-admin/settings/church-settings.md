@@ -41,7 +41,7 @@ Tu iglesia obtiene un subdominio gratuito en **tuiglesia.1.church**. Esta es la 
 Tu subdominio debe ser único en todas las iglesias de ChurchApps. Si el nombre que prefieres ya está en uso, prueba añadiendo tu ciudad o estado (por ejemplo, "iglesiagracia-dallas").
 :::
 
-Si quieres que los visitantes lleguen a tu sitio en tu propio dominio (por ejemplo, **www.iglesiagracia.org**), consulta [Dominio personalizado](./custom-domain.md).
+Si quieres que los visitantes lleguen a tu sitio en tu propio dominio (por ejemplo, **`www.iglesiagracia.org`**), consulta [Dominio personalizado](./custom-domain.md).
 
 ## Configurar la identidad visual
 

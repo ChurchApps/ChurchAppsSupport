@@ -41,7 +41,7 @@ Makakakuha ang simbahan mo ng libreng subdomain sa **yourchurch.1.church**. Ito 
 Dapat natatangi ang subdomain mo sa lahat ng simbahang gumagamit ng ChurchApps. Kung kinuha na ang gusto mong pangalan, subukang idagdag ang lungsod o estado mo (halimbawa, "gracechurch-dallas").
 :::
 
-Kung gusto mong maabot ng mga bisita ang site mo sa sarili mong domain (halimbawa, **www.gracechurch.org**), tingnan ang [Custom Domain](./custom-domain.md).
+Kung gusto mong maabot ng mga bisita ang site mo sa sarili mong domain (halimbawa, **`www.gracechurch.org`**), tingnan ang [Custom Domain](./custom-domain.md).
 
 ## Pag-configure ng Branding
 
