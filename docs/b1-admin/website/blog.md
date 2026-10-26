@@ -61,6 +61,20 @@ Published posts appear at `{yoursite}/blog`, 10 per page with **Older**/**Newer*
 Blog posts are a separate content type from regular website pages -- they are not built in the [page editor](page-editor) and do not appear in the Pages list. This keeps blog authoring fast and focused on writing.
 :::
 
+## Adding Comments Below Posts
+
+B1 doesn't host blog comments itself, but you can add a comments service. You can also put anything else below every post, like a newsletter signup or a giving button.
+
+1. Sign up with a comments service such as [Hyvor Talk](https://talk.hyvor.com), [FastComments](https://fastcomments.com), or [Disqus](https://disqus.com) and copy its embed code.
+2. On the Blog page, scroll to **Below Every Post**.
+3. Paste the embed code and click **Save**.
+
+The code appears below the content of every published post. Your comments service handles moderation and spam filtering, so check its dashboard regularly.
+
+:::tip
+Clear the box and click **Save** to remove the code from every post. Only people who can edit church settings see this box.
+:::
+
 ## Next Steps
 
 - [Managing Pages](managing-pages) -- Add a navigation link to your blog
