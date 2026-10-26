@@ -10,6 +10,10 @@ The Church Settings page is where you configure your church's basic information,
 
 </div>
 
+## Training Video
+
+<YouTube id="634zSbzDkYA" title="Setting Up Church Info and Branding in B1" next="Roles, Permissions, and Inviting Your Team in B1" nextUrl="/docs/b1-admin/settings/roles-permissions" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

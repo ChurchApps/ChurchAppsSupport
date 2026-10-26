@@ -10,6 +10,10 @@ When a group is configured with an approval-based join policy, people can submit
 
 </div>
 
+## Training Video
+
+<YouTube id="1vj-suCiIsE" title="Group Join Requests and Group Calendars in B1" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

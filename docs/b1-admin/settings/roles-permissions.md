@@ -10,6 +10,10 @@ Roles let you control what different users can access within your ChurchApps acc
 
 </div>
 
+## Training Video
+
+<YouTube id="ZzCIkinVMnE" title="Roles, Permissions, and Inviting Your Team in B1" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

@@ -10,6 +10,10 @@ Getting started with ChurchApps begins with creating your account. The process t
 
 </div>
 
+## Training Video
+
+<YouTube id="NdVsNuJPRw0" title="Creating Your Church Account in B1" next="Setting Up Church Info and Branding in B1" nextUrl="/docs/b1-admin/settings/church-settings" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
