@@ -61,7 +61,7 @@ The first time, Claude asks permission to use B1 — click **Allow**.
 
 ## Option 2 — Desktop extension with a B1 key
 
-Use this if you'd rather give Claude a key with limited permissions (for example, look-only). It works in the Claude desktop app for Mac or Windows, and you need permission to manage church settings in B1 to make a key.
+Use this if you'd rather give Claude a key with limited permissions (for example, look-only), or if you want Claude to work with **FreePlay** lessons and classrooms too. It works in the Claude desktop app for Mac or Windows, and you need permission to manage church settings in B1 to make a key.
 
 ### Step 1 — Get the Claude app
 
@@ -82,16 +82,22 @@ The key is what lets Claude into *your* church's B1 — think of it like a passw
 1. [Download the B1 extension](https://github.com/mbyrdLCS/b1-claude-connect/releases/latest/download/b1-churchapps.mcpb).
 2. **Double-click** the downloaded file (`b1-churchapps.mcpb`). Claude opens and shows **B1 (ChurchApps)**.
 3. Click **Install**.
-4. When it asks for your **B1 API key**, paste the key from Step 2 and save.
-5. **Quit Claude completely** (Mac: **Cmd+Q** · Windows: right-click the Claude icon in the taskbar → **Quit**) and open it again.
+4. When it asks for your **B1 API key**, paste the key from Step 2.
+5. **Using FreePlay?** Also enter your **B1 email** and **B1 password**. FreePlay doesn't accept API keys, so Claude signs in to it as you. Not using FreePlay? Leave these two empty.
+6. Click **Save**.
+7. **Quit Claude completely** (Mac: **Cmd+Q** · Windows: right-click the Claude icon in the taskbar → **Quit**) and open it again.
 
 If double-clicking doesn't open Claude, go to **Settings → Extensions → Advanced settings → Install Extension…** in Claude and choose the downloaded file. Then start a new chat and ask it something.
+
+:::tip Already installed the extension?
+Download and install it again to update. Your key stays — just add your B1 email and password if you want FreePlay.
+:::
 
 ## Is It Safe?
 
 - Claude can only see **your church's** data.
 - **Signed in (Option 1):** Claude can never do more than your own B1 login can. The B1 sign-in page lists everything Claude may do before you click **Allow**.
-- **With a key (Option 2):** Claude can only do what the key allows — a key with only **read** boxes checked can look but never change anything.
+- **With a key (Option 2):** Claude can only do what the key allows in B1 — a key with only **read** boxes checked can look but never change anything. In FreePlay, Claude signs in with your email and password, so it can do what your own login can there. Your password stays in the Claude app's secure storage and is only sent to the ChurchApps sign-in.
 - **To turn it off:** in B1 Admin go to **Settings → Developer** and revoke the app under **Connected Apps** (Option 1) or delete the key under **API Keys** (Option 2). Access stops right away. You can also click **Disconnect** on the B1 connector in Claude.
 
 ## What Does It Cost?
@@ -180,6 +186,8 @@ This is the same `/membership/people`, `/giving/donations`, `/attendance/visits`
 - **Audit trail.** Mutations go through the same audit log as B1Admin actions; you can review them under **Settings → Audit Log**.
 
 ### Troubleshooting
+
+**FreePlay says "sign-in failed" or asks for your email and password:** open **Settings → Extensions → B1 (ChurchApps)** in Claude and check the **B1 email** and **B1 password** boxes. They're the same ones you use to log in to B1 Admin.
 
 **Claude reports "Unauthorized" or 401:** the bearer token is missing, malformed, or the key has been revoked. If you used the extension, open **Settings → Extensions → B1 (ChurchApps)** in Claude and paste the key again. Otherwise re-check the `Authorization: Bearer cak_…` header (note the space and the literal `Bearer`).
 
