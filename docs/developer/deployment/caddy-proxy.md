@@ -40,6 +40,7 @@ Both on the Membership API. `authorize` is anonymous; `hostmap` has required the
 2. Caddy terminates TLS. Certificate on hand in S3 → serve; unknown SNI → `authorize` is asked; 200 → issue on demand via Let's Encrypt; 404 → **the handshake is refused** (no certificate, no response — an unknown host gets TLS-refused, not an HTTP error).
 3. The `map` resolves the Host to `{sub}.b1.church`; `www.{apex}` gets a 302 to the apex; an authorized-but-unmapped host (a brand-new domain inside the ≤5-minute sync window) gets a clean 404.
 4. `reverse_proxy` dials `{sub}.b1.church:443` with SNI and Host rewritten to the upstream, so Vercel's edge serves the B1App site.
+   Caddy also sends the visitor's original domain as `X-Church-Host` (Vercel overwrites `X-Forwarded-Host` with the rewritten Host). B1App middleware accepts it only when `/domains/public/lookup/{host}` maps it to the same `{sub}` as the request host, then exposes it as `x-public-host` for the canonical `Link` header, `robots.txt` and `sitemap.xml`; client-sent `x-public-host` is always stripped. Schema.org `ChurchJsonLd` still uses the `b1.church` URL (reading headers there would make pages dynamic).
 5. Port 80 passes ACME HTTP-01 challenges and 308-redirects everything else to https.
 
 New-domain propagation: a domain saved in B1Admin becomes routable within ~5 minutes (the sync task); its certificate is minted on the first HTTPS hit.
