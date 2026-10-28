@@ -10,6 +10,10 @@ This guide walks you through everything needed to get a children's check-in syst
 
 </div>
 
+## Training Video
+
+<YouTube id="Ep9CBUcJwPI" title="Setting Up Children's Check-In in B1" next="Recording and Tracking Attendance in B1" nextUrl="/docs/b1-admin/attendance/recording-attendance" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

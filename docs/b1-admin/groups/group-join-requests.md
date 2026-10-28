@@ -12,7 +12,7 @@ When a group is configured with an approval-based join policy, people can submit
 
 ## Training Video
 
-<YouTube id="1vj-suCiIsE" title="Group Join Requests and Group Calendars in B1" />
+<YouTube id="1vj-suCiIsE" title="Group Join Requests and Group Calendars in B1" next="Setting Up Services and Attendance in B1" nextUrl="/docs/b1-admin/attendance/setup" />
 
 <div class="prereqs">
 <h4>Before You Begin</h4>

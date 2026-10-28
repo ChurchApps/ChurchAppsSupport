@@ -12,7 +12,7 @@ Roles let you control what different users can access within your ChurchApps acc
 
 ## Training Video
 
-<YouTube id="ZzCIkinVMnE" title="Roles, Permissions, and Inviting Your Team in B1" />
+<YouTube id="ZzCIkinVMnE" title="Roles, Permissions, and Inviting Your Team in B1" next="Setting Up Services and Attendance in B1" nextUrl="/docs/b1-admin/attendance/setup" />
 
 <div class="prereqs">
 <h4>Before You Begin</h4>

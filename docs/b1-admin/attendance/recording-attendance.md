@@ -10,6 +10,10 @@ Once your campuses, service times, and groups are set up, you can manually recor
 
 </div>
 
+## Training Video
+
+<YouTube id="gS8h2rhyMys" title="Recording and Tracking Attendance in B1" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

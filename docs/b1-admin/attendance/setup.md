@@ -10,6 +10,10 @@ Before you can track attendance, you need to tell B1 Admin about your church's p
 
 </div>
 
+## Training Video
+
+<YouTube id="LQPc2gVlXvQ" title="Setting Up Services and Attendance in B1" next="Setting Up Children's Check-In in B1" nextUrl="/docs/b1-admin/guides/childrens-checkin" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
