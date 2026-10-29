@@ -135,6 +135,8 @@ If the plans are Lessons.church lessons, members of the associated group also se
 
 You can print a plan for distribution to your team. Open the plan and click **Print** at the top of the page to generate a printable version that includes assignments and the service order. The top of the printout shows your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) with your church's name beneath it, and the plan's name, so loose pages are easy to identify. This is useful for handing out at rehearsals or posting in a common area.
 
+The printout leaves off anything that would be empty. If no volunteers are assigned, there's no team box and the service order uses the full page width. If no items have a length, the **Length** column is left off, and if the plan has no service times and no lengths, so is the **Time** column. To drop the black **Service Order** heading bar with the service date, uncheck **Show Service Order heading** at the top of the print page; B1 Admin remembers your choice on that browser.
+
 :::info
 Plans are organized by ministry. Make sure you are on the correct ministry tab before creating or viewing plans.
 :::

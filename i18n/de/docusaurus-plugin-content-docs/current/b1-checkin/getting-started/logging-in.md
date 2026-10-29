@@ -1,12 +1,12 @@
 ---
-title: "Anmeldung"
+title: "Anmelden"
 ---
 
-# Anmeldung
+# Anmelden
 
 <div class="article-intro">
 
-Bevor der Kiosk zum Einchecken verwendet kann, müssen Sie sich mit einem ChurchApps-Konto anmelden, das Zugriff auf Ihre Kirche hat. Diese Seite behandelt den Erstanmeldungsprozess, Kirchenauswahl, Auto-Anmeldeverhalten und wie Sie sich abmelden.
+Bevor das Kiosk-Terminal für den Check-in genutzt werden kann, müssen Sie sich mit einem ChurchApps-Konto anmelden, das Zugriff auf Ihre Kirche hat. Diese Seite behandelt die erstmalige Anmeldung, die Auswahl der Kirche, das automatische Anmelden und das Abmelden.
 
 </div>
 
@@ -14,61 +14,62 @@ Bevor der Kiosk zum Einchecken verwendet kann, müssen Sie sich mit einem Church
 <h4>Bevor Sie beginnen</h4>
 
 - Installieren Sie B1 Church Checkin auf Ihrem Android-Tablet (siehe [Erste Schritte](./index.md))
-- Haben Sie Ihre ChurchApps-Konto-E-Mail und Passwort bereit
+- Halten Sie E-Mail-Adresse und Passwort Ihres ChurchApps-Kontos bereit
 
 </div>
 
-## Erstanmeldung
+## Erstmalige Anmeldung
 
-1. Öffnen Sie die B1 Church Checkin-App. Nach dem Splash-Bildschirm sehen Sie den Anmeldebildschirm mit dem B1 Church Checkin-Logo.
+1. Öffnen Sie die App B1 Church Checkin. Nach dem Startbildschirm sehen Sie die Anmeldeseite mit dem Logo von B1 Church Checkin.
 2. Geben Sie Ihre **E-Mail-Adresse** im ersten Feld ein.
 3. Geben Sie Ihr **Passwort** im zweiten Feld ein.
 4. Tippen Sie auf die Schaltfläche **Anmelden**.
 
-Die App validiert Ihre Anmeldedaten und meldet Sie an. Wenn die E-Mail oder das Passwort falsch ist, sehen Sie unten auf dem Bildschirm eine Fehlermitteilung.
+Die App prüft Ihre Zugangsdaten und meldet Sie an. Sind E-Mail-Adresse oder Passwort falsch, sehen Sie eine Fehlermeldung unten auf dem Bildschirm.
+
+Ist für das Konto die [Zwei-Faktor-Anmeldung](../../b1-admin/profile/managing-profile.md#two-factor-sign-in) aktiviert, fragt die App anschließend nach einem Code. Geben Sie den 6-stelligen Code aus der Authenticator-App des Kontoinhabers oder einen seiner Sicherungscodes ein und tippen Sie erneut auf **Anmelden**. Den Code brauchen Sie nur bei dieser ersten Anmeldung; danach bleibt das Kiosk-Terminal angemeldet.
 
 :::info
-Dies ist die gleiche E-Mail und das gleiche Passwort, die Sie für B1 Admin oder ein anderes ChurchApps-Produkt verwenden. Sie benötigen kein separates Konto für den Check-in-Kiosk.
+Es handelt sich um dieselbe E-Mail-Adresse und dasselbe Passwort, die Sie für B1 Admin oder ein anderes ChurchApps-Produkt verwenden. Für das Check-in-Kiosk benötigen Sie kein eigenes Konto.
 :::
 
-## Auswahl Ihrer Kirche
+## Die Kirche auswählen
 
-Nach einer erfolgreichen Anmeldung lädt die App eine Liste von Kirchen, die mit Ihrem Konto verknüpft sind. Jede Kirche wird als Karte angezeigt, die den Kirchennamen und das Logo anzeigt (falls in B1 Admin konfiguriert).
+Nach einer erfolgreichen Anmeldung lädt die App eine Liste der Kirchen, die mit Ihrem Konto verknüpft sind. Jede Kirche wird als Karte mit Namen und Logo angezeigt (sofern in B1 Admin ein Logo hinterlegt ist).
 
-- Wenn Ihr Konto nur mit **einer Kirche** verknüpft ist, sehen Sie immer noch den Auswahlbildschirm. Tippen Sie auf Ihre Kirche, um fortzufahren.
-- Wenn Ihr Konto mit **mehreren Kirchen** verknüpft ist, tippen Sie auf die Kirche, der dieser Kiosk dienen soll.
+- Ist Ihr Konto nur mit **einer Kirche** verknüpft, sehen Sie trotzdem die Auswahlseite. Tippen Sie auf Ihre Kirche, um fortzufahren.
+- Ist Ihr Konto mit **mehreren Kirchen** verknüpft, tippen Sie auf die Kirche, die dieses Kiosk-Terminal nutzen soll.
 
-Nachdem Sie eine Kirche ausgewählt haben, lädt die App die Branding- und Erscheinungseinstellungen dieser Kirche. Ihr Kirchenlogo wird in der Kopfzeile auf allen nachfolgenden Bildschirmen angezeigt.
+Sobald Sie eine Kirche gewählt haben, lädt die App deren Erscheinungsbild und Designeinstellungen. Ihr Kirchenlogo erscheint danach in der Kopfzeile aller weiteren Bildschirme.
 
-## Auto-Anmeldung bei Rückkehrsuchenden
+## Automatische Anmeldung bei späteren Besuchen
 
-Die App speichert Ihre E-Mail, Ihr Passwort und die ausgewählte Kirche nach der ersten erfolgreichen Anmeldung. Bei zukünftigen Starts:
+Nach der ersten erfolgreichen Anmeldung speichert die App auf dem Tablet ein sicheres Anmelde-Token und Ihre gewählte Kirche. Ihr Passwort wird nicht gespeichert. Bei künftigen Starts gilt:
 
-- Die App meldet sich automatisch mit Ihren gespeicherten Anmeldedaten an.
-- Wenn Sie zuvor eine Kirche ausgewählt haben, stellt sie diese Auswahl wieder her und bringt Sie direkt zum **Services-Bildschirm**.
-- Wenn die gespeicherten Anmeldedaten nicht mehr gültig sind, kehrt die App zum Anmeldebildschirm zurück, damit Sie sich erneut anmelden können.
+- Die App meldet Sie mit dem gespeicherten Token wieder an.
+- Haben Sie zuvor eine Kirche gewählt, stellt die App diese Auswahl wieder her und führt Sie direkt zum **Gottesdienst-Bildschirm**.
+- Ist die gespeicherte Anmeldung nicht mehr gültig, kehrt die App zur Anmeldeseite zurück, damit Sie sich erneut anmelden können.
 
 :::tip
-Da sich der Kiosk automatisch anmeldet, müssen Sie Anmeldedaten nur einmal während der ersten Einrichtung eingeben. Danach kann das Tablet eingeschaltet werden und es wird einsatzbereit sein.
+Da sich das Kiosk-Terminal automatisch anmeldet, müssen Sie Ihre Zugangsdaten nur einmal bei der Ersteinrichtung eingeben. Danach können Sie das Tablet einschalten und es ist sofort einsatzbereit.
 :::
 
 ## Admin-Einstellungen
 
-Admin-Einstellungen sind absichtlich verborgen, damit Kirchenmitglieder, die den Kiosk verwenden, die Konfiguration nicht versehentlich ändern. Um auf sie zuzugreifen:
+Die Admin-Einstellungen sind bewusst verborgen, damit Mitglieder am Kiosk die Konfiguration nicht versehentlich ändern. So greifen Sie darauf zu:
 
-1. Tippen Sie **sieben Mal** schnell hintereinander (innerhalb von zwei Sekunden) auf das **Kirchen-Logo** in der Kopfzeile.
-2. Wenn eine Kiosk-PIN gesetzt ist, geben Sie die PIN ein, wenn Sie dazu aufgefordert werden.
-3. Der Bildschirm **Admin-Einstellungen** wird mit den folgenden Optionen geöffnet:
-   - **Service ändern** -- Wechseln Sie die ausgewählte Service-Zeit
-   - **Drucker ändern** -- Öffnen Sie die [Druckereinstellungen](./printer-setup), um einen Drucker zu scannen und auszuwählen
-   - **PIN setzen/ändern** -- Stellen Sie die Kiosk-PIN ein oder aktualisieren Sie diese, die den Admin-Zugriff schützt
-   - **Abmelden** -- Melden Sie sich ab und kehren Sie zum Anmeldebildschirm zurück
+1. Tippen Sie **siebenmal** schnell hintereinander (innerhalb von zwei Sekunden) auf das **Kirchenlogo** in der Kopfzeile.
+2. Ist eine Kiosk-PIN festgelegt, geben Sie die PIN ein, wenn Sie danach gefragt werden.
+3. Der Bildschirm **Admin-Einstellungen** öffnet sich mit folgenden Optionen:
+   - **Gottesdienst wechseln** -- die gewählte Gottesdienstzeit ändern
+   - **Drucker wechseln** -- öffnet die [Druckereinstellungen](./printer-setup), um nach einem Drucker zu suchen und einen auszuwählen
+   - **PIN festlegen/ändern** -- die Kiosk-PIN festlegen oder aktualisieren, die den Admin-Zugriff schützt
+   - **Abmelden** -- abmelden und zur Anmeldeseite zurückkehren
 
 :::warning
-Das Abmelden löscht alle gespeicherten Anmeldedaten und die Kirchenauswahl. Sie müssen Ihre E-Mail und Ihr Passwort erneut eingeben, um den Kiosk erneut zu verwenden. Melden Sie sich nur ab, wenn Sie Konten wechseln oder den Kiosk neu konfigurieren müssen.
+Beim Abmelden werden alle gespeicherten Zugangsdaten und die Kirchenauswahl gelöscht. Um das Kiosk-Terminal wieder zu nutzen, müssen Sie E-Mail-Adresse und Passwort erneut eingeben. Melden Sie sich nur ab, wenn Sie das Konto wechseln oder das Kiosk-Terminal neu konfigurieren müssen.
 :::
 
-## Nächste Schritte
+## Wie geht es weiter?
 
-Nach der Anmeldung können Sie einen [Drucker einrichten](./printer-setup) oder direkt zum [Check-in-Workflow](../check-in/) gehen.
-
+Nach der Anmeldung können Sie einen [Drucker einrichten](./printer-setup) oder direkt zum [Check-in-Ablauf](../check-in/) übergehen.

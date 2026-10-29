@@ -6,35 +6,36 @@ title: "Profil"
 
 <div class="article-intro">
 
-Der Abschnitt Profil ermöglicht es Ihnen, Ihre persönlichen Kontoeinstellungen in ChurchApps zu verwalten. Ihr Profil wird in allen ChurchApps-Tools gemeinsam genutzt, daher gelten die hier von Ihnen vorgenommenen Änderungen überall – von B1 Admin bis zur B1 Mobile-App.
+Der Bereich Profil ermöglicht es Ihnen, Ihre persönlichen Kontoeinstellungen in ChurchApps zu verwalten. Ihr Profil wird von allen ChurchApps-Werkzeugen gemeinsam genutzt, daher gelten Änderungen hier überall -- von B1 Admin bis zur App B1 Mobile.
 
 </div>
 
 ## Was Sie tun können
 
-Im Abschnitt Profil können Sie:
+Im Bereich Profil können Sie:
 
-- **Name und E-Mail aktualisieren** – Halten Sie Ihre Kontaktinformationen aktuell.
-- **Passwort ändern** – Legen Sie ein neues Passwort für Ihr Konto fest.
-- **Designs wechseln** – Wechseln Sie zwischen hellem und dunklem Modus über das Benutzermenü (klicken Sie oben rechts auf Ihr Profilbild).
-- **Verbundene Geräte verwalten** – Zeigen Sie an und kontrollieren Sie, welche ChurchAppsPlayer-Geräte mit Ihrem Konto verbunden sind.
-- **Verknüpfte Konten anzeigen** – Sehen und verwalten Sie alle externen Dienste, die mit Ihrem ChurchApps-Konto verbunden sind.
-- **Genehmigen Sie Profiländerungsanfragen** – Überprüfen und wenden Sie von Mitgliedern eingereichte Updates an.
+- **Name und E-Mail-Adresse aktualisieren** -- Halten Sie Ihre Kontaktdaten aktuell.
+- **Ihr Passwort ändern** -- Legen Sie ein neues Passwort für Ihr Konto fest.
+- **Zwei-Faktor-Anmeldung einschalten** -- Verlangen Sie bei der Anmeldung einen Code aus einer Authenticator-App. Siehe [Zwei-Faktor-Anmeldung](./managing-profile.md#two-factor-sign-in).
+- **Designs wechseln** -- Wechseln Sie über das Benutzermenü (klicken Sie oben rechts auf Ihr Profilbild) zwischen hellem und dunklem Modus.
+- **Verbundene Geräte verwalten** -- Sehen und steuern Sie, welche ChurchAppsPlayer-Geräte mit Ihrem Konto verbunden sind.
+- **Verknüpfte Konten einsehen** -- Sehen und verwalten Sie externe Dienste, die mit Ihrem ChurchApps-Konto verbunden sind.
+- **Änderungsanfragen am Profil genehmigen** -- Prüfen und übernehmen Sie Aktualisierungen, die Mitglieder eingereicht haben.
 
-## Profil-Unterbereiche
+## Unterbereiche des Profils
 
-Der Bereich Profil hat die folgenden Seiten:
+Der Bereich Profil umfasst folgende Seiten:
 
-1. **[Verwalten Ihres Profils](./managing-profile.md)** – Bearbeiten Sie Ihre persönlichen Informationen, ändern Sie Ihr Passwort, verwalten Sie verknüpfte Konten, passen Sie Designpräferenzen an und handhaben Sie die Kontolöschung.
-2. **[Genehmigen Sie Profiländerungen](./approving-profile-changes.md)** – Überprüfen und genehmigen Sie von Mitgliedern über B1 Mobile eingereichte Profilaktualisierungsanfragen.
-3. **[Verwaltung von Geräten](./devices.md)** – Zeigen Sie an, fügen Sie hinzu und verwalten Sie ChurchAppsPlayer-Geräte, die mit Ihrem Konto gekoppelt sind.
+1. **[Ihr Profil verwalten](./managing-profile.md)** -- Bearbeiten Sie Ihre persönlichen Angaben, ändern Sie Ihr Passwort, verwalten Sie verknüpfte Konten, schalten Sie die Zwei-Faktor-Anmeldung ein, passen Sie die Designeinstellungen an und löschen Sie bei Bedarf das Konto.
+2. **[Profiländerungen genehmigen](./approving-profile-changes.md)** -- Prüfen und genehmigen Sie Profilaktualisierungen, die Mitglieder über B1 Mobile eingereicht haben.
+3. **[Geräte verwalten](./devices.md)** -- Sehen Sie sich ChurchAppsPlayer-Geräte an, die mit Ihrem Konto gekoppelt sind, fügen Sie welche hinzu und verwalten Sie sie.
 
 :::tip
-Halten Sie Ihre E-Mail-Adresse auf dem neuesten Stand. Sie wird für die Kontowiederherstellung und wichtige Benachrichtigungen von Ihrer Kirche verwendet.
+Halten Sie Ihre E-Mail-Adresse aktuell. Sie wird für die Kontowiederherstellung und wichtige Mitteilungen Ihrer Kirche verwendet.
 :::
 
-## Nächste Schritte
+## Wie geht es weiter?
 
-- [Verwalten Ihres Profils](./managing-profile.md) – Bearbeiten Sie Ihre persönlichen Einstellungen
-- [Genehmigen Sie Profiländerungen](./approving-profile-changes.md) – Überprüfen Sie Anfragen zur Änderung des Memberprofils
-- [Verwaltung von Geräten](./devices.md) – Verwalten Sie verbundene Geräte
+- [Ihr Profil verwalten](./managing-profile.md) -- Bearbeiten Sie Ihre persönlichen Einstellungen
+- [Profiländerungen genehmigen](./approving-profile-changes.md) -- Prüfen Sie Änderungsanfragen von Mitgliedern
+- [Geräte verwalten](./devices.md) -- Verwalten Sie verbundene Geräte

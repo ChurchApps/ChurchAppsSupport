@@ -1,66 +1,68 @@
 ---
-title: "Anmeldung"
+title: "Anmelden"
 ---
 
-# Anmeldung
+# Anmelden
 
 <div class="article-intro">
 
-Die Anmeldung bei B1.church gibt Ihnen Zugriff auf das Mitgliederportal, in dem Sie sehen können, was auf Sie zukommt, Gruppen verwalten, online geben und alle Tools verwenden können, die Ihre Kirche eingerichtet hat. Dieser Artikel behandelt die Anmeldung, Navigation in Ihrem Benutzermenü und Abmeldung.
+Wenn Sie sich bei B1.church anmelden, erhalten Sie Zugang zum Mitgliederbereich, in dem Sie sehen, was für Sie ansteht, Gruppen verwalten, online spenden und alle Werkzeuge nutzen, die Ihre Kirche eingerichtet hat. Dieser Artikel erklärt, wie Sie sich anmelden, Ihr Benutzermenü verwenden und sich abmelden.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie Beginnen</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Sie benötigen ein ChurchApps-Konto. Siehe [Erste Schritte](../getting-started/), um eines zu erstellen.
-- Sie benötigen die B1.church-URL Ihrer Kirche (z. B. `https://yourchurchname.b1.church`).
+- Sie benötigen ein ChurchApps-Konto. Um eines zu erstellen, siehe [Erste Schritte](../getting-started/).
+- Sie benötigen die B1.church-Adresse Ihrer Kirche (zum Beispiel `https://yourchurchname.b1.church`).
 
 </div>
 
-## So Melden Sie Sich An
+## So melden Sie sich an
 
-1. Gehen Sie zur B1.church-URL Ihrer Kirche (z. B. `https://yourchurchname.b1.church`).
-2. Klicken Sie auf die Schaltfläche **Anmeldung** in der oberen rechten Ecke der Kopfzeile.
-3. Geben Sie Ihre **E-Mail-Adresse** und **Ihr Passwort** ein, oder klicken Sie auf **Mit Google fortfahren** oder **Mit Microsoft fortfahren**, falls Ihre Kirche Single Sign-On aktiviert hat.
+1. Rufen Sie die B1.church-Adresse Ihrer Kirche auf (zum Beispiel `https://yourchurchname.b1.church`).
+2. Klicken Sie oben rechts in der Kopfzeile auf die Schaltfläche **Anmelden**.
+3. Geben Sie Ihre **E-Mail-Adresse** und Ihr **Passwort** ein oder klicken Sie auf **Mit Google fortfahren** bzw. **Mit Microsoft fortfahren**, falls Ihre Kirche die Single-Sign-on-Anmeldung aktiviert hat.
 4. Klicken Sie auf **Anmelden**.
 
-Nach der Anmeldung werden Sie auf die Seite zurückgebracht, auf der Sie waren, bevor Sie auf Anmeldung klickten. Falls Sie direkt zu einer Mitgliederportal-Seite navigiert haben, während Sie abgemeldet waren, werden Sie nach der Anmeldung automatisch auf diese Seite zurückgebracht.
+Haben Sie die [Zwei-Faktor-Anmeldung](../../b1-admin/profile/managing-profile.md#two-factor-sign-in) aktiviert, fragt der nächste Bildschirm nach einem Code. Geben Sie den 6-stelligen Code aus Ihrer Authenticator-App oder einen Ihrer Sicherungscodes ein und klicken Sie auf **Code prüfen**. Die App B1.church fragt auf dieselbe Weise nach dem Code.
 
-## Angemeldet Bleiben
+Nach der Anmeldung gelangen Sie zurück zu der Seite, auf der Sie sich vor dem Klick auf Anmelden befanden. Haben Sie eine Seite des Mitgliederbereichs direkt aufgerufen, während Sie abgemeldet waren, werden Sie nach der Anmeldung automatisch dorthin zurückgebracht.
 
-Sie bleiben im gleichen Browser oder in der installierten App angemeldet, bis Sie sich abmelden, auch wenn Sie nicht für eine Weile besuchen – Ihre Sitzung wird für bis zu etwa 30 Tage Inaktivität beibehalten. Die einmalige Anmeldung hält Sie auch angemeldet, wenn Sie zwischen der Website Ihrer Kirche und dem Mitgliederportal (`/mobile`) wechseln, sodass Sie sich nicht an jedem Ort anmelden müssen.
+## Angemeldet bleiben
 
-## Zugriff auf das Mitgliederportal
+Sie bleiben im selben Browser oder in der installierten App angemeldet, bis Sie sich abmelden, auch wenn Sie eine Weile nicht vorbeischauen -- Ihre Sitzung bleibt bei bis zu etwa 30 Tagen Inaktivität erhalten. Eine einmalige Anmeldung hält Sie auch angemeldet, wenn Sie zwischen der Website Ihrer Kirche und dem Mitgliederbereich (`/mobile`) wechseln. Sie müssen sich also nicht an jeder Stelle erneut anmelden.
 
-Nachdem Sie angemeldet sind, können Sie auf das Mitgliederportal zugreifen, indem Sie auf Ihren **Namen** in der oberen rechten Ecke der Seite klicken und **Mitgliederportal** aus dem Menü auswählen. Das Mitgliederportal ist, wo all Ihre persönlichen Kirchentools leben, einschließlich Ihres [Home-Dashboards](./navigating.md), [Me-Seite](./me-page.md), [Gruppen](../groups/), [Spenden](../giving/) und vielem mehr.
+## Auf den Mitgliederbereich zugreifen
+
+Nach der Anmeldung erreichen Sie den Mitgliederbereich, indem Sie oben rechts auf der Seite auf Ihren **Namen** klicken und im Menü **Mitgliederbereich** wählen. Im Mitgliederbereich finden Sie alle Ihre persönlichen Werkzeuge der Kirche, darunter Ihr [Startbildschirm](./navigating.md), die [Seite Ich](./me-page.md), [Gruppen](../groups/), [Spenden](../giving/) und mehr.
 
 ## Ihr Benutzermenü
 
-Nach der Anmeldung wird Ihr Name als Chip in der oberen rechten Ecke angezeigt. Klicken Sie darauf, um ein Menü mit den folgenden Optionen zu öffnen:
+Nach der Anmeldung erscheint Ihr Name oben rechts als Chip. Klicken Sie darauf, um ein Menü mit folgenden Optionen zu öffnen:
 
-- **Mitgliederportal** – Gehen Sie zu Ihrem persönlichen Mitgliederportal-Dashboard.
-- **Profil bearbeiten** – Aktualisieren Sie Ihre Kontoeinstellungen oder bearbeiten Sie Ihr Kirchenprofil.
-- **Abmeldung** – Melden Sie sich von Ihrem Konto ab.
+- **Mitgliederbereich** -- Gehen Sie zu Ihrem persönlichen Startbildschirm des Mitgliederbereichs.
+- **Profil bearbeiten** -- Aktualisieren Sie Ihre Kontoeinstellungen oder bearbeiten Sie Ihr Kirchenprofil.
+- **Abmelden** -- Melden Sie sich von Ihrem Konto ab.
 
-## Admin-Zugang
+## Administratorzugriff
 
-Falls Sie ein Kirchenadministrator mit den entsprechenden Berechtigungen sind, sehen Sie auch eine Option **Admin-Portalseite** in Ihrem Benutzermenü. Klicken Sie darauf, um zu B1 Admin zu gehen, wo Sie die Einstellungen, Personen, Gruppen und Inhalte Ihrer Kirche verwalten können.
+Sind Sie Kirchenadministrator mit den passenden Berechtigungen, sehen Sie in Ihrem Benutzermenü außerdem die Option **Admin-Bereich**. Ein Klick darauf führt Sie zu B1 Admin, wo Sie die Einstellungen, Personen, Gruppen und Inhalte Ihrer Kirche verwalten können.
 
-## Passwort Vergessen
+## Passwort vergessen
 
-Falls Sie Ihr Passwort nicht mehr wissen:
+Wenn Sie sich nicht mehr an Ihr Passwort erinnern:
 
-1. Klicken Sie auf der Anmeldungsseite auf **Passwort vergessen**.
-2. Geben Sie die E-Mail-Adresse ein, die mit Ihrem ChurchApps-Konto verknüpft ist, und senden Sie sie ab.
-3. Überprüfen Sie Ihr E-Mail auf eine Nachricht mit einem **6-stelligen Verifizierungscode**. Der Code ist 15 Minuten lang gültig.
-4. Geben Sie den Code auf dem Verifizierungsbildschirm ein, um sich anzumelden.
-5. Nachdem Sie angemeldet sind, besuchen Sie Ihr Profil, um ein neues Passwort zu wählen.
+1. Klicken Sie auf der Anmeldeseite auf **Passwort vergessen**.
+2. Geben Sie die mit Ihrem ChurchApps-Konto verknüpfte E-Mail-Adresse ein und senden Sie sie ab.
+3. Prüfen Sie Ihr E-Mail-Postfach auf eine Nachricht mit einem **6-stelligen Bestätigungscode**. Der Code ist 15 Minuten gültig.
+4. Geben Sie den Code auf dem Bestätigungsbildschirm ein, um sich anzumelden.
+5. Sobald Sie angemeldet sind, besuchen Sie Ihr Profil, um ein neues Passwort festzulegen.
 
 :::tip
-Falls der Code nicht innerhalb von ein paar Minuten eintrifft, überprüfen Sie Ihren Spam-Ordner. Nach fünf fehlgeschlagenen Versuchen ist der Code gesperrt – fordern Sie einen neuen Code auf der Seite Passwort vergessen an, falls das passiert.
+Kommt der Code nicht innerhalb weniger Minuten an, prüfen Sie Ihren Spam-Ordner. Nach fünf falschen Versuchen wird der Code gesperrt -- fordern Sie in diesem Fall über die Seite Passwort vergessen einen neuen an.
 :::
 
-## Abmeldung
+## Abmelden
 
-Um sich abzumelden, klicken Sie auf Ihren **Namen** in der oberen rechten Ecke und wählen Sie **Abmeldung**. Sie werden abgemeldet und zur öffentlichen Site zurückgebracht.
+Um sich abzumelden, klicken Sie oben rechts auf Ihren **Namen** und wählen Sie **Abmelden**. Sie werden abgemeldet und zur öffentlichen Website zurückgeleitet.

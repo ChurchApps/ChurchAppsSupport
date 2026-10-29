@@ -116,7 +116,7 @@ Choose **Notify Person**, click **Pick person**, and optionally type a **Message
 
 ### Sending a text
 
-Choose **Send Text** and type the **Text message** (up to 1,600 characters). When a card enters the step, the person receives that text on their mobile phone. You can personalize the message with `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, or `{{churchName}}`, which are filled in with the person's details when the text is sent.
+Choose **Send Text** and type the **Text message** (up to 1,600 characters). When a card enters the step, the person receives that text on their mobile phone. To personalize the message, click a chip below the message box -- **First Name**, **Last Name**, **Display Name**, or **Church Name** -- to insert `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, or `{{churchName}}` at your cursor. Each one is filled in with the person's details when the text is sent.
 
 - If the person has no mobile phone on file, no text is sent and the card's history records **Text skipped: no mobile phone**.
 - If the person has opted out, no text is sent and the card's history records **Text skipped: opted out**.
@@ -146,6 +146,8 @@ There are several ways to put people on a board:
 - **From People search** -- Select multiple people and use the bulk **Add to Workflow** action to add them all at once.
 - **Automatically with a trigger** -- Add people when something happens, like a form submission or a first gift (see [Triggers](#triggers) below).
 
+Adding someone by hand, or with an **Add to workflow** step action, never gives them a second open card on the same workflow. If they already have an open card, they're skipped (in a bulk add, only the people without one get new cards). Once their card is closed, you can add them again. Triggers follow their own **Only once per person** setting instead.
+
 ## Working the Board
 
 Open a workflow to see its board. Each card shows the person's name, who it is assigned to, and a due-date or status chip (**Overdue** or **Snoozed**). A step column also shows small badges for any automated actions it runs and annotations for its routing, giving you an at-a-glance map of how cards flow.
@@ -160,6 +162,7 @@ From the card drawer you can:
 - **Send Back** to the previous step or **Skip** to the next step.
 - **Pin assignment** -- keep the same owner on the card even as it moves between steps. By default, moving a card to a new step reassigns it to that step's default assignee; pinning keeps the current person responsible throughout.
 - **Complete** the card to finish it, or choose an **Outcome** button if the step has outcomes configured (see [Routing](#routing-cards-with-outcomes-and-conditions)).
+- **Remove card** -- take a card off the board without finishing it, for example when someone was added by mistake. After you confirm, the card is closed and taken off everyone's list. No outcomes, routes, or step actions run, and its history is kept with a **Removed** entry. For a [serving assignment confirmation](#serving-assignment-confirmations) card, removing it closes the request the same way.
 - **Add notes** and review the card's **Activity** -- a log of automated actions that have run (emails sent, waits, etc.), each with the date and time it happened.
 
 For a card about a person, the drawer also shows that person's mobile phone and email as links you can tap to call or email them, plus a **View profile** link if you have permission to view people. The person a card is assigned to sees the phone and email even without access to People.
@@ -189,6 +192,8 @@ This lets one decision branch the person down different paths.
 Automatic routes move a card onward **the moment it enters a step** (and after its automated actions finish), without anyone clicking, if the person matches a set of conditions. Add a route, choose the target step, and define one or more **conditions** (for example, a person's campus, age, or membership status). Text fields can be matched exactly or with **contains**, **starts with**, or **ends with**. A route with no conditions matches everyone.
 
 Date conditions (Today's Date, Birth Date, or Anniversary) can compare the full date or just part of it -- the day of the week, the **Day of Month**, the **Month**, or years elapsed. For a person's Birth Date or Anniversary, **Day of Month** offers a relative **Today** option, so a condition like *Birth Date · Day of Month = Today* matches people whose birthday falls on today's day of the month. **Month** offers **Previous Month**, **Current Month**, and **Next Month**. Relative values like these are worked out using your church's time zone, so they line up with your church's calendar day rather than the server's.
+
+The **Giving** group of conditions has **Lapsed regular giver**, which finds people who used to give regularly and then stopped. Set three numbers: *Gave in at least* **3** *of the last* **12** *weeks, then nothing in the last* **3** *weeks* (those are the defaults). The weeks are counted back from today in your church's time zone, and a refunded gift doesn't count. It is most useful on a [schedule trigger](#schedule-triggers) -- for example, a weekly rule that adds lapsed givers to a pastoral care follow-up board. The condition only looks at gift dates, never amounts, and cards and alerts never show amounts. Because it reveals who has stopped giving, only people who can view donations see this option and can add, change, or remove it.
 
 If a route's conditions can't be checked for some reason, that route is treated as not matching. The card stays on the step (or follows another route that does match) instead of getting stuck.
 

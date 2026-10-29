@@ -164,7 +164,11 @@ Add the registration link to your church website's "Plan Your Visit" or "I'm New
 
 ### What Happens After a Guest Signs Up
 
-Each sign-up creates a new household named after the primary contact's last name, with a person record for every family member. Everyone is added to **People** with the membership status **Visitor**, with the primary contact as head of household.
+B1 first looks for people who are already in **People**. A family member is matched to an existing person when exactly one person has the same first name and the same email or phone number. A child entered without an email or phone is matched by first name within the household that was matched. Matched people are reused as they are -- the sign-up never changes their details or membership status -- and anyone new joins the matched household.
+
+When nobody matches, the sign-up creates a new household named after the primary contact's last name, with a person record for every family member. Everyone new is added to **People** with the membership status **Visitor**, with the primary contact as head of household.
+
+Matched and new people alike are added to the group you chose (if they aren't in it already) and have their attendance recorded when that is turned on. Comments are saved as a note on the primary contact.
 
 To follow up automatically, add a [workflow trigger](../serving/workflows.md#triggers) such as **Person · Created** with the condition *Membership Status is Visitor*, or **Group · Member Joined** for the group you chose above.
 

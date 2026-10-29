@@ -44,6 +44,39 @@ Your password must be at least 8 characters long. Make sure both the password an
 
 The **Linked Accounts** section shows any external services connected to your ChurchApps account. You can view which accounts are linked and manage those connections from this section.
 
+## Two-Factor Sign-In
+
+Two-factor sign-in adds a second step to logging in: after your password (or Google, Microsoft, or email sign-in link), you also enter a 6-digit code from an authenticator app on your phone, such as Google Authenticator, Microsoft Authenticator, 1Password, or Authy. It is optional and off by default. Once it is on, it applies to every ChurchApps login that uses your account -- B1 Admin, your church's B1.church site and app, B1 Church Checkin, Lessons.church, FreePlay, and the rest.
+
+### Turning It On
+
+1. On the Profile page, find the **Two-Factor Sign-In** section and click **Turn on**.
+2. Scan the QR code with your authenticator app. If you can't scan it, type the key shown under **Can't scan? Enter this key:** into the app instead.
+3. Enter the **6-digit code** your app shows and click **Verify**.
+4. B1 Admin shows ten **backup codes**. Each one signs you in once if you lose your phone. Click **Copy** or write them down, store them somewhere safe, and click **I saved them**.
+
+:::warning
+The backup codes are shown only once. If you lose your phone and have no backup codes left, a ChurchApps server administrator will have to turn two-factor sign-in off for you after confirming who you are.
+:::
+
+When two-factor sign-in is on, the section reads **On** and shows how many backup codes you have left.
+
+### Signing In With a Code
+
+After you enter your password, the login screen asks for a code. Enter the 6-digit code from your authenticator app, or one of your backup codes, and submit it. Each backup code works only once. If the code is wrong, you'll see "That code didn't work. Please try again." After too many wrong codes, logins for your account are paused for a while.
+
+Staying signed in on a device you have already logged in on does not ask for a code again; it only comes up when you log in fresh.
+
+### Turning It Off
+
+1. In the **Two-Factor Sign-In** section, click **Turn off**.
+2. Enter a current code from your authenticator app, or a backup code.
+3. Click **Verify**.
+
+:::info
+Two-factor sign-in can't be set up on demo accounts, so the section is hidden there.
+:::
+
 ## Theme Preferences
 
 B1 Admin lets you pick a color theme and a light or dark display mode:

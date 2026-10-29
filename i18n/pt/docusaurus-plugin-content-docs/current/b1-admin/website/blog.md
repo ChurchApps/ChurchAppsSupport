@@ -6,63 +6,77 @@ title: "Blog"
 
 <div class="article-intro">
 
-A página Blog permite que você publique notícias, atualizações e devocionais no site da sua igreja. Os posts aparecem em uma listagem de cartões em `/blog`, em sua própria URL e em um feed RSS que outras ferramentas (como Zapier) podem monitorar para novos posts.
+A página Blog permite publicar notícias, atualizações e devocionais no site da sua igreja. As postagens aparecem em uma lista de cartões em `/blog`, na sua própria URL e em um feed RSS que outras ferramentas (como o Zapier) podem acompanhar para detectar novas postagens.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Complete a [Configuração Inicial](initial-setup) do seu site
-- Adicione um link de navegação para `/blog` a partir de [Managing Pages](managing-pages) se deseja que visitantes encontrem seu blog no menu
+- Conclua a [Configuração inicial](initial-setup) do seu site
+- Adicione um link de navegação para `/blog` em [Gerenciando páginas](managing-pages) se quiser que os visitantes encontrem o seu blog pelo menu
 
 </div>
 
 ## Acessando o Blog
 
-1. No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo) e expanda **Website**.
+1. No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo) e expanda **Site**.
 2. Clique em **Blog**.
-3. A página Blog lista cada post junto com seu estado e data de publicação.
+3. A página Blog lista todas as postagens, com o estado e a data de publicação de cada uma.
 
-## Adicionando um Post
+## Adicionando uma Postagem
 
-1. Clique em **Add Post** no canto superior direito.
-2. Digite um **Title**. Um **Web address** (endereço web, slug amigável para URL) é gerado automaticamente conforme você digita -- você pode editá-lo diretamente se quiser um endereço diferente.
-3. Adicione um **Excerpt** -- um resumo curto mostrado na listagem de posts, descrições de meta e feed RSS. Se deixar em branco, um é gerado automaticamente a partir do início do conteúdo do seu post.
-4. Escreva o corpo do post no editor **Content** usando Markdown. Clique em **Preview** para ver como o post formatado será exibido.
-5. Escolha uma **Category** (escolha uma existente ou digite uma nova) e **Tags** opcionais separadas por vírgula.
-6. Clique em **Select Image** para escolher uma foto de sua galeria [Files](files), ou envie uma nova. Fotos enviadas abrem em uma ferramenta de corte integrada travada em uma proporção 16:9, para que você possa enquadrar qualquer foto de modo a se ajustar ao cabeçalho do post e aos cartões da listagem.
-7. Defina o **Author** -- padrão é você, mas você pode pesquisar e selecionar qualquer pessoa em seu banco de dados.
-8. Ative **Published** e defina uma **Publish Date** quando estiver pronto para tornar o post público. Deixe desativado para salvar o post como rascunho.
+1. Clique em **Adicionar postagem** no canto superior direito.
+2. Digite um **Título**. Um **Endereço web** amigável para URL (slug) é gerado automaticamente conforme você digita -- você pode editá-lo diretamente se quiser outro endereço.
+3. Adicione um **Resumo** -- um breve texto mostrado na lista de postagens, nas meta descrições e no feed RSS. Se você deixá-lo em branco, um é gerado automaticamente a partir do início do conteúdo da postagem.
+4. Escreva o corpo da postagem no editor de **Conteúdo** usando Markdown. Clique em **Pré-visualizar** para ver como a postagem formatada vai ficar.
+5. Escolha uma **Categoria** (selecione uma existente ou digite uma nova) e, opcionalmente, **Tags** separadas por vírgula.
+6. Clique em **Selecionar imagem** para escolher uma foto da sua galeria de [Arquivos](files), ou envie uma nova. As fotos enviadas abrem em uma ferramenta de recorte integrada, travada na proporção 16:9, para que você enquadre qualquer foto para caber no cabeçalho da postagem e nos cartões da lista.
+7. Defina o **Autor** -- por padrão é você, mas você pode pesquisar e selecionar qualquer pessoa do seu banco de dados.
+8. Ative **Publicado** e defina uma **Data de publicação** quando estiver pronto para tornar a postagem pública. Deixe desativado para salvar a postagem como rascunho.
 
 :::tip
-Defina uma **Publish Date** no futuro para agendar um post. Ele permanece oculto dos visitantes e mostra um chip **Scheduled** na lista Blog até essa data chegar.
+Defina uma **Data de publicação** no futuro para agendar uma postagem. Ela fica oculta dos visitantes e mostra um marcador **Agendado** na lista do Blog até que essa data chegue.
 :::
 
-## Estados de Posts
+## Estados das Postagens
 
-Cada post na lista mostra um de três estados:
+Cada postagem da lista mostra um destes três estados:
 
-- **Draft** -- Não publicado. Visível apenas no admin.
-- **Scheduled** -- Published está ativado, mas a data de publicação é no futuro.
-- **Published** -- Ao vivo no seu site e incluído no feed RSS.
+- **Rascunho** -- Não publicada. Visível somente no painel administrativo.
+- **Agendada** -- Publicado está ativado, mas a data de publicação está no futuro.
+- **Publicada** -- No ar no seu site e incluída no feed RSS.
 
-## Editando, Visualizando e Deletando Posts
+## Editando, Pré-visualizando e Excluindo Postagens
 
-- Clique em **Edit** ao lado de um post para fazer alterações.
-- Clique em **View on Site** (Ver no site) (exibido em posts publicados) para abrir o post ao vivo no seu site em uma nova aba.
-- Clique em **Delete** para remover permanentemente um post.
+- Clique em **Editar** ao lado de uma postagem para fazer alterações.
+- Clique em **Ver no site** (exibido em postagens publicadas) para abrir a postagem ao vivo no seu site, em uma nova aba.
+- Clique em **Excluir** para remover permanentemente uma postagem.
 
-## Como Visitantes Veem Seu Blog
+## Como os Visitantes Veem o Seu Blog
 
-Posts publicados aparecem em `{yoursite}/blog`, 10 por página com links **Older**/**Newer** para navegar pelo seu arquivo, junto com um filtro de categoria e a linha de rodapé e foto de cada post. Tags são renderizadas como chips clicáveis também, permitindo que visitantes filtrem a listagem por tag da mesma forma. Posts individuais estão em `{yoursite}/blog/{slug}` e incluem posts relacionados da mesma categoria. A página de blog também publica um feed RSS, descoberto automaticamente por leitores de feed e ferramentas de automação como Zapier.
+As postagens publicadas aparecem em `{seusite}/blog`, 10 por página, com links **Anteriores**/**Próximas** para navegar pelo arquivo, junto com um filtro por categoria e a assinatura e a foto de cada postagem. As tags também aparecem como chips clicáveis, permitindo que os visitantes filtrem a lista por tag da mesma forma. Cada postagem individual fica em `{seusite}/blog/{slug}` e inclui postagens relacionadas da mesma categoria. A página do blog também publica um feed RSS, detectável automaticamente por leitores de feed e por ferramentas de automação como o Zapier.
 
 :::info
-Posts de blog são um tipo de conteúdo separado de páginas normais de site -- eles não são construídos no [editor de página](page-editor) e não aparecem na lista de Páginas. Isso mantém a autoria de blog rápida e focada na escrita.
+As postagens do blog são um tipo de conteúdo separado das páginas comuns do site -- elas não são criadas no [editor de páginas](page-editor) e não aparecem na lista de Páginas. Isso mantém a escrita de blog rápida e focada no texto.
 :::
 
-## Próximas Etapas
+## Adicionando Comentários Abaixo das Postagens
 
-- [Managing Pages](managing-pages) -- Adicione um link de navegação para seu blog
-- [Files](files) -- Envie fotos para usar em seus posts
-- [Zapier Integration](../integrations/zapier.md) -- Dispare automações quando novos posts são publicados
+O B1 não hospeda comentários de blog, mas você pode adicionar um serviço de comentários. Você também pode colocar qualquer outra coisa abaixo de todas as postagens, como um cadastro para newsletter ou um botão de contribuição.
+
+1. Cadastre-se em um serviço de comentários, como [Hyvor Talk](https://talk.hyvor.com), [FastComments](https://fastcomments.com) ou [Disqus](https://disqus.com), e copie o código de incorporação dele.
+2. Na página Blog, role até **Abaixo de Cada Postagem**.
+3. Cole o código de incorporação e clique em **Salvar**.
+
+O código aparece abaixo do conteúdo de cada postagem publicada. O seu serviço de comentários cuida da moderação e do filtro de spam, então verifique o painel dele regularmente.
+
+:::tip
+Limpe a caixa e clique em **Salvar** para remover o código de todas as postagens. Somente quem pode editar as configurações da igreja vê essa caixa.
+:::
+
+## Próximos Passos
+
+- [Gerenciando páginas](managing-pages) -- Adicione um link de navegação para o seu blog
+- [Arquivos](files) -- Envie fotos para usar nas suas postagens
+- [Integração com Zapier](../integrations/zapier.md) -- Dispare automações quando novas postagens forem publicadas

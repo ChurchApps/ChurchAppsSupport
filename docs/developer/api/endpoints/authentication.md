@@ -60,6 +60,34 @@ Accepts one of three credential types:
 
 The `token` field is a JWT that should be sent as `Authorization: Bearer <token>` on subsequent requests.
 
+### Two-Factor Sign-In
+
+Users can turn on authenticator-app (TOTP) two-factor sign-in. For those users, an `email` + `password`, `authGuid`, or SSO login does not return a token. It answers with a challenge instead:
+
+```json
+{ "mfaRequired": true, "mfaToken": "<challenge-token>" }
+```
+
+The challenge token is good for 5 minutes. Post it back to the same endpoint with the code:
+
+```json
+{ "mfaToken": "<challenge-token>", "mfaCode": "123456" }
+```
+
+`mfaCode` can be the current 6-digit authenticator code or one of the user's ten single-use backup codes. A wrong code returns `Invalid code`, and repeated failures are rate limited per account. A `jwt` re-login is never challenged, so existing sessions keep refreshing. The login response's `user` object carries `mfaEnabled`.
+
+Self-service endpoints (signed-in user only, under `/membership/users/mfa`):
+
+| Endpoint | Description |
+|----------|-------------|
+| `GET /status` | `{ enabled, backupCodesLeft }` |
+| `POST /setup` | Starts setup; returns `{ secret, otpauthUrl }` for the QR code |
+| `POST /enable` | Body `{ code }`; turns it on and returns `{ backupCodes }` once |
+| `POST /disable` | Body `{ code }` (authenticator or backup code); turns it off |
+| `POST /reset/:userId` | Server.Admin only; turns it off for another user |
+
+Secrets are stored encrypted and backup codes are stored as hashes. Enable, disable, and reset are written to the audit log.
+
 ### Token Contents
 
 The JWT encodes:

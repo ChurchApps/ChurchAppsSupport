@@ -1,72 +1,76 @@
 ---
-title: "Erstellen Sie Ihr Konto"
+title: "Ihr Konto erstellen"
 ---
 
-# Erstellen Sie Ihr Konto
+# Ihr Konto erstellen
 
 <div class="article-intro">
 
-Der Einstieg in ChurchApps beginnt mit der Erstellung Ihres Kontos. Der Prozess dauert nur wenige Minuten und gibt Ihnen Zugriff auf alle ChurchApps-Tools, einschließlich B1 Admin, B1.church und Lessons.church.
+Der Einstieg in ChurchApps beginnt mit dem Erstellen Ihres Kontos. Der Vorgang dauert nur wenige Minuten und verschafft Ihnen Zugang zu allen Werkzeugen von ChurchApps, darunter B1 Admin, B1.church und Lessons.church.
 
 </div>
+
+## Schulungsvideo
+
+<YouTube id="NdVsNuJPRw0" title="Ihr Kirchenkonto in B1 erstellen" next="Kirchenangaben und Erscheinungsbild in B1 einrichten" nextUrl="/docs/b1-admin/settings/church-settings" />
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Haben Sie eine gültige E-Mail-Adresse zur Kontoverifizierung bereit
-- Lesen Sie die [Erste-Schritte-Übersicht](./index.md), um zu verstehen, was ChurchApps bietet
+- Halten Sie eine gültige E-Mail-Adresse für die Bestätigung des Kontos bereit
+- Lesen Sie die [Übersicht Erste Schritte](./index.md), um zu verstehen, was ChurchApps bietet
 
 </div>
 
-## Schritt-für-Schritt-Registrierung
+## Schritt für Schritt zur Registrierung
 
-1. Gehen Sie in Ihrem Webbrowser zu [B1.church](https://b1.church).
+1. Rufen Sie [B1.church](https://b1.church) in Ihrem Webbrowser auf.
 2. Klicken Sie auf die Schaltfläche **Registrieren**.
-3. Geben Sie Ihren **Vornamen**, **Nachnamen** und **E-Mail-Adresse** ein – oder, wenn Ihre Kirche Single-Sign-On aktiviert hat, klicken Sie auf **Mit Google fortfahren** oder **Mit Microsoft fortfahren**, um direkt zu Schritt 5 mit Ihrem bestehenden Konto zu springen.
-4. Erstellen Sie ein Passwort für Ihr Konto.
-5. Reichen Sie das Registrierungsformular ein.
+3. Geben Sie Ihren **Vornamen**, **Nachnamen** und Ihre **E-Mail-Adresse** ein -- oder klicken Sie, wenn Ihre Kirche die Single-Sign-on-Anmeldung aktiviert hat, auf **Mit Google fortfahren** oder **Mit Microsoft fortfahren**, um mit Ihrem vorhandenen Konto direkt zu Schritt 5 zu gelangen.
+4. Legen Sie ein Passwort für Ihr Konto fest.
+5. Senden Sie das Registrierungsformular ab.
 
 :::info
-Ein ChurchApps-Konto funktioniert über B1, Lessons.church und die anderen ChurchApps-Anwendungen hinweg. Wenn Sie **Sie haben bereits ein ChurchApps-Konto. Bitte melden Sie sich stattdessen damit an.**, klicken Sie auf **Anmelden** und melden Sie sich mit dieser E-Mail an. Verwenden Sie **Passwort vergessen**, wenn Sie das Passwort nicht erinnern.
+Ein ChurchApps-Konto funktioniert in B1, Lessons.church und den übrigen ChurchApps-Apps. Erscheint **Sie haben bereits ein ChurchApps-Konto. Bitte melden Sie sich stattdessen damit an.**, klicken Sie auf **Anmelden** und melden Sie sich mit dieser E-Mail-Adresse an. Haben Sie das Passwort vergessen, nutzen Sie **Passwort vergessen**.
 :::
 
-## Bestätigung Ihrer E-Mail
+## Ihre E-Mail-Adresse bestätigen
 
-Nach der Registrierung erhalten Sie eine Bestätigungs-E-Mail unter der von Ihnen angegebenen Adresse.
+Nach der Registrierung erhalten Sie eine Bestätigungs-E-Mail an die von Ihnen angegebene Adresse.
 
-1. Überprüfen Sie Ihren Posteingang auf die Bestätigungs-E-Mail von ChurchApps.
-2. Klicken Sie auf den Bestätigungslink in der E-Mail.
-3. Ihr Konto ist nun verifiziert und einsatzbereit.
+1. Prüfen Sie Ihr Postfach auf die Bestätigungs-E-Mail von ChurchApps.
+2. Klicken Sie in der E-Mail auf den Bestätigungslink.
+3. Ihr Konto ist nun bestätigt und einsatzbereit.
 
 :::tip
-Wenn Sie die Bestätigungs-E-Mail nicht sehen, überprüfen Sie Ihren Spam- oder Junk-Ordner. Die E-Mail kommt von ChurchApps und kann ein bis zwei Minuten dauern, bis sie ankommt.
+Erscheint die Bestätigungs-E-Mail nicht, prüfen Sie Ihren Spam- oder Junk-Ordner. Die E-Mail stammt von ChurchApps und kann ein oder zwei Minuten brauchen, bis sie ankommt.
 :::
 
-## Einrichtung Ihrer Kirche
+## Ihre Kirche einrichten
 
-Nach der Bestätigung Ihrer E-Mail und der Anmeldung haben Sie die Möglichkeit, entweder eine neue Kirche zu erstellen oder einer bestehenden beizutreten.
+Nach der Bestätigung Ihrer E-Mail-Adresse und der Anmeldung können Sie entweder eine neue Kirche anlegen oder einer bestehenden Kirche beitreten.
 
-**Zum Erstellen einer neuen Kirche:**
+**So legen Sie eine neue Kirche an:**
 
-1. Wählen Sie die Option zum **Erstellen einer neuen Kirche**.
-2. Geben Sie Ihren **Kirchennamen** und grundlegende Informationen ein. Das Registrierungsformular füllt Ihre Kirchendetails automatisch aus, wenn eine Übereinstimmung gefunden wird.
-3. Schließen Sie den Setup-Prozess ab.
-4. Sie werden zum **Dashboard**, der Startseite von B1 Admin, geleitet, wo Sie mit der Konfiguration Ihrer Kirche beginnen können.
+1. Wählen Sie die Option, **eine neue Kirche anzulegen**.
+2. Geben Sie den **Namen der Kirche** und die grundlegenden Angaben ein. Das Registrierungsformular füllt die Angaben Ihrer Kirche automatisch aus, sofern ein Treffer gefunden wird.
+3. Schließen Sie die Einrichtung ab.
+4. Sie gelangen zum **Dashboard**, der Startseite von B1 Admin, wo Sie Ihre Kirche zu konfigurieren beginnen können.
 
-**Zum Beitreten zu einer bestehenden Kirche:**
+**So treten Sie einer bestehenden Kirche bei:**
 
-1. Wählen Sie die Option zum **Beitreten zu einer bestehenden Kirche**.
-2. Suchen Sie Ihre Kirche nach Namen.
-3. Fordern Sie an, beizutreten. Ein Administrator Ihrer Kirche muss Ihre Anfrage genehmigen.
+1. Wählen Sie die Option, **einer bestehenden Kirche beizutreten**.
+2. Suchen Sie Ihre Kirche nach dem Namen.
+3. Stellen Sie eine Beitrittsanfrage. Ein Administrator Ihrer Kirche muss Ihre Anfrage genehmigen.
 
 :::info
-Wenn Sie versuchen, sich mit einer E-Mail anzumelden, die noch nicht registriert ist, werden Sie automatisch zum Registrierungsfluss geleitet, damit Sie ein Konto erstellen können.
+Versuchen Sie, sich mit einer E-Mail-Adresse anzumelden, die noch nicht registriert ist, werden Sie automatisch zum Registrierungsablauf weitergeleitet, damit Sie ein Konto anlegen können.
 :::
 
 :::info
-Die Person, die eine neue Kirche erstellt, wird automatisch die Rolle **Domain Admin** zugewiesen, die vollständigen Zugriff auf alle Einstellungen und Funktionen gewährt. Sie können später weitere Administratoren von der Seite **Rollen** hinzufügen.
+Die Person, die eine neue Kirche anlegt, erhält automatisch die Rolle **Domänenadministrator**. Sie gewährt vollen Zugriff auf alle Einstellungen und Funktionen. Weitere Administratoren können Sie später auf der Seite **Rollen** hinzufügen.
 :::
 
-## Was kommt als nächstes
+## Wie geht es weiter?
 
-Nachdem Ihre Kirche eingerichtet ist, gehen Sie zum Handbuch [Anfängliche Einrichtung](./initial-setup.md), um die Einstellungen, das Branding und den Teamzugriff Ihrer Kirche zu konfigurieren.
+Sobald Ihre Kirche eingerichtet ist, folgen Sie der Anleitung [Ersteinrichtung](./initial-setup.md), um die Einstellungen, das Erscheinungsbild und den Zugang für Ihr Team zu konfigurieren.

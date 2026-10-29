@@ -70,6 +70,7 @@ Not every piece of information needs to be visible at once. You can choose which
    - **Gender**
    - **Membership Status**
    - **Campus**
+   - **Date Added** -- when the person's record was created
 3. The table updates immediately to reflect your selections. Click **Done** to close the **Select Columns** dialog.
 
 ### Showing Custom Fields as Columns
@@ -94,6 +95,8 @@ For more advanced queries -- like finding everyone who hasn't attended in the la
 ## Advanced Search
 
 Advanced Search lets you build precise filters by combining conditions. Open it by clicking **Advanced** below the search box on the People page, then expand a category and check the fields you want to filter on (you can click the field's name or its checkbox), choosing an operator and value for each. Categories include **Names**, **Demographics**, **Contact**, **Membership**, **Activity** (donations and attendance), and **Custom Fields**.
+
+To find new people, open **Membership** and check **Date Added**. It starts on **in the last N days** with 30 filled in, so you can find everyone added in the last month in one click; change the number of days, or switch to *equals / after / before* to pick a date. **Birth Date** and **Anniversary** also offer **in the last N days**. Date Added is only recorded for people created since late October 2026; people added earlier have no date, so this filter doesn't find them.
 
 The **Custom Fields** category lists your church's [Custom Fields](../settings/custom-fields.md) — the fields you define in Settings to track your own information (such as a background-check expiration date). The operators offered match each field's type: text fields support *contains / equals / starts with / ends with*, number fields support the comparison operators, date fields support *equals / after / before*, and Yes/No and Multiple Choice fields let you pick a value. Any field you can filter on here can be saved as a live [List](./lists.md).
 

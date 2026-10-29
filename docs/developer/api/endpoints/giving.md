@@ -100,7 +100,9 @@ Handles the public-facing donation flow including charges, subscriptions, webhoo
 | POST | `/webhook/:provider` | Public | — | Receive payment webhook events (Stripe, PayPal). Requires `?churchId=` |
 | POST | `/replay-stripe-events` | JWT | Donations.Edit | Replay Stripe events for a date range. Body: `{ startDate, endDate, dryRun }` |
 | POST | `/fee` | Public | — | Calculate transaction fees. Body: `{ type, provider, gatewayId, amount, currency }`. Requires `?churchId=` |
-| POST | `/captcha-verify` | Public | — | Verify reCAPTCHA token. Body: `{ token }` |
+| POST | `/captcha-verify` | Public | — | Verify reCAPTCHA token. Body: `{ token, churchId? }`. A human answer returns `{ response: "human", pass }`, where `pass` is a signed guest-giving pass good for 10 minutes (and only for `churchId` when one is sent) |
+
+When the Api runs with `CAPTCHA_ENFORCE=true`, guest (not signed-in) calls to `/giving/donate/create-order`, `/charge`, `/subscribe`, `/giving/paymentmethods/addcard`, and `/giving/paymentmethods/ach-setup-intent-anon` must include that `captchaPass` in the body, or they return 403 `Captcha verification required`. The pass can be reused until it expires, because the Stripe guest flow makes two calls (add card, then charge). Signed-in calls are not affected. `CAPTCHA_ENFORCE` defaults to `false`; `@churchapps/apphelper`'s guest giving forms send the pass automatically.
 
 ### Example: Process a Donation Charge
 

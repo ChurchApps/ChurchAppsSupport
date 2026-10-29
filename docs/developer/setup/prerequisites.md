@@ -24,7 +24,7 @@ These are required regardless of which project you work on:
 
 | Tool | Version | Notes |
 |------|---------|-------|
-| **Node.js** | 20+ | Version 22+ required for B1App and LessonsApp (Next.js 16) |
+| **Node.js** | 20+ | Version 22+ required for B1App and LessonsApp (Next.js 16); 24+ required for the Api |
 | **npm** | Comes with Node.js | Used as the package manager across all projects |
 | **Git** | Latest | Each project is a separate repository |
 

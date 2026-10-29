@@ -1,97 +1,97 @@
 ---
-title: "Canzoni"
+title: "Canti"
 ---
 
-# Canzoni
+# Canti
 
 <div class="article-intro">
 
-La pagina Canzoni gestisce la tua libreria di canzoni di culto. Mantieni tutti i dettagli della canzone, testi e arrangiamenti in un unico luogo in modo che il tuo team di culto possa facilmente preparare i servizi imminenti e mantenere un repertorio coerente.
+La pagina Canti gestisce la tua libreria di canti di adorazione. Conserva in un unico posto tutti i dettagli dei canti, i testi e gli arrangiamenti, così il tuo gruppo di adorazione può prepararsi facilmente per i prossimi servizi e mantenere un repertorio coerente.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Nel [menu Jump](../introduction.md#getting-around-with-the-jump-menu) in B1 Admin, scegli **Servizio > Canzoni** per accedere alla pagina Canzoni
-- Facoltativamente, avere i tuoi [piani di servizio](./plans.md) configurati in modo da poter collegare le canzoni direttamente nell'[ordine di servizio](./service-order.md)
+- Nel [menu Jump](../introduction.md#getting-around-with-the-jump-menu) di B1 Admin, scegli **Serving > Songs** per accedere alla pagina Canti
+- Facoltativamente, configura i tuoi [piani di servizio](./plans.md) così da poter collegare direttamente i canti all'[ordine del servizio](./service-order.md)
 
 </div>
 
-## Sfoglia la Tua Libreria di Canzoni
+## Sfogliare la tua libreria di canti
 
-Quando apri la pagina **Canzoni**, le tue canzoni sono elencate in una tabella. Ogni riga mostra l'immagine della miniatura della canzone, il titolo, l'artista e la durata. Usa i controlli di pagina sotto l'elenco per scorrere una libreria ampia, oppure cerca quello che ti serve.
+Quando apri la pagina **Songs**, i tuoi canti sono elencati in una tabella. Ogni riga mostra la miniatura del canto, il titolo, l'artista e la durata. Usa i controlli di pagina sotto l'elenco per scorrere una libreria ampia, oppure cerca per trovare ciò che ti serve.
 
-## Ricerca di Canzoni
+## Cercare canti
 
-1. Fai clic nella casella **Search Songs** in alto nella pagina Canzoni.
-2. Digita un **titolo** della canzone o un nome di **artista**.
-3. L'elenco si filtra mentre digiti, mostrando le canzoni corrispondenti dalla tua libreria e quante ne corrispondono. Fai clic su **Clear** per mostrare di nuovo tutte le canzoni.
+1. Clicca nella casella **Search Songs** in cima alla pagina Canti.
+2. Digita il **titolo** di un canto o il nome dell'**artista**.
+3. L'elenco si filtra mentre digiti, mostrando i canti corrispondenti della tua libreria e quanti ne sono stati trovati. Clicca su **Clear** per mostrare di nuovo tutti i canti.
 
-## Aggiunta di una Canzone
+## Aggiungere un canto
 
-1. Fai clic su **Add Song** in alto nella pagina Canzoni.
-2. In **Search for a Song**, cerca nel database esterno di canzoni per **Title or Artist**.
-3. Seleziona la canzone che vuoi aggiungere, oppure fai clic su **Create Manually** se non la trovi.
-4. La canzone verrà aggiunta alla tua libreria con i suoi dettagli di base precompilati.
+1. Clicca su **Add Song** in cima alla pagina Canti.
+2. In **Search for a Song**, cerca nel database esterno dei canti per **Title or Artist**.
+3. Seleziona il canto che vuoi aggiungere, oppure clicca su **Create Manually** se non riesci a trovarlo.
+4. Il canto verrà aggiunto alla tua libreria con i dettagli di base già compilati.
 
 :::tip
-Dopo aver aggiunto una canzone, fai clic su di essa per rivedere e aggiornare i suoi dettagli, aggiungere arrangiamenti o allegare link esterni come video YouTube o grafici degli accordi.
+Dopo aver aggiunto un canto, cliccaci sopra per verificarne e aggiornarne i dettagli, aggiungere arrangiamenti o allegare link esterni, come video di YouTube o spartiti con accordi.
 :::
 
-### Canzoni Gratuite da WorshipCommons
+### Canti gratuiti da WorshipCommons
 
-I tuoi risultati di ricerca possono anche includere una sezione **WorshipCommons — gratis** accanto ai risultati regolari. Queste sono canzoni pronte per il culto domenicale da [WorshipCommons](https://worshipcommons.org) che sono state esaminate e concesse in licenza per l'uso nel culto. Ogni risultato mostra un badge di licenza -- **Gratuito per il culto** o **Pubblico dominio** -- in modo da conoscerti i termini prima di aggiungerlo.
+I risultati della ricerca possono includere anche una sezione **WorshipCommons — free** accanto ai risultati normali. Si tratta di canti pronti per la domenica provenienti da [WorshipCommons](https://worshipcommons.org) che sono stati verificati e concessi in licenza per l'uso nell'adorazione. Ogni risultato mostra un badge di licenza — **Free for worship** oppure **Public domain** — così conosci i termini prima di aggiungerlo.
 
-- Fai clic su un risultato di WorshipCommons per aggiungerlo alla tua libreria, proprio come un risultato di ricerca regolare.
-- Fai clic su **Visualizza su WorshipCommons** per aprire l'elenco originale in una nuova scheda.
+- Clicca su un risultato di WorshipCommons per aggiungerlo alla tua libreria, esattamente come un normale risultato di ricerca.
+- Clicca su **View on WorshipCommons** per aprire la scheda originale in una nuova scheda del browser.
 
-Solo le canzoni che hanno superato il processo di revisione di WorshipCommons appaiono qui, quindi la selezione può essere inferiore al database di canzoni principale.
+Qui compaiono solo i canti che hanno superato la revisione di WorshipCommons, quindi la selezione può essere più piccola del database principale dei canti.
 
-## Eliminazione di Canzoni {#deleting-songs}
+## Eliminare canti
 
-Seleziona la casella accanto a una o più canzoni (oppure la casella nell'intestazione per selezionare ogni canzone mostrata), quindi fai clic su **Delete Selected** nella barra che compare e conferma. Fai clic su **Clear** per deselezionare.
+Seleziona la casella accanto a uno o più canti (oppure la casella nell'intestazione per selezionare tutti i canti mostrati), poi clicca su **Delete Selected** nella barra che appare e conferma. Clicca su **Clear** per deselezionare.
 
-## Visualizzazione e Modifica di una Canzone
+## Visualizzare e modificare un canto
 
-Fai clic sul titolo di una canzone per aprire la sua pagina di dettagli. Il titolo, l'artista e i dettagli come album, chiave, durata, BPM e tempo compaiono a sinistra, insieme agli arrangiamenti e ai link esterni. Da qui puoi:
+Clicca sul titolo di un canto per aprire la sua pagina di dettaglio. Il titolo, l'artista e i dettagli come album, tonalità, durata, BPM e metro compaiono a sinistra, insieme agli arrangiamenti e ai link esterni. Da qui puoi:
 
-- **Modifica dettagli della canzone** -- Fai clic su **Edit** per aggiornare il titolo, l'artista, la durata e altri metadati. Fai clic su **Done** quando hai finito. Per rimuovere la canzone dalla tua libreria, fai clic su **Edit** e poi su **Delete song**.
-- **Gestisci arrangiamenti** -- Ogni canzone può avere più arrangiamenti (ad esempio, chiavi diverse o versioni). Fai clic su **Add Arrangement** per crearne uno, e sul nome di un arrangiamento sotto **Arrangements** per aprirlo.
-- **Aggiungi testi** -- Inserisci o aggiorna i testi per ogni arrangiamento utilizzando la notazione ChordPro (ad esempio, `[G]Amazing grace`). Un'anteprima dal vivo accanto all'editor rende il grafico degli accordi formattato mentre digiti, in modo da poter vedere esattamente quello che il tuo team vedrà.
-- **Imposta la chiave** -- Specifica la chiave musicale per ogni arrangiamento utilizzando il selettore di chiavi accanto ai testi. La modifica della chiave traspone immediatamente gli accordi visualizzati, sia nella pagina dell'arrangiamento che quando si apre la canzone da un piano di servizio, in modo che il tuo team veda sempre gli accordi nella chiave che stanno effettivamente suonando.
-- **Aggiungi link esterni** -- Allega i link alle risorse come video YouTube, grafici degli accordi o fogli musicali ospitati altrove.
+- **Modificare i dettagli del canto** -- Clicca su **Edit** per aggiornare titolo, artista, durata e altri metadati. Clicca su **Done** quando hai finito. Per rimuovere il canto dalla tua libreria, clicca su **Edit** e poi su **Delete song**.
+- **Gestire gli arrangiamenti** -- Ogni canto può avere più arrangiamenti (per esempio tonalità o versioni diverse). Clicca su **Add Arrangement** per crearne uno, e clicca sul nome di un arrangiamento sotto **Arrangements** per aprirlo.
+- **Aggiungere i testi** -- Inserisci o aggiorna i testi di ogni arrangiamento usando la notazione ChordPro (per esempio `[G]Amazing grace`). Un'anteprima dal vivo accanto all'editor mostra la scheda degli accordi formattata mentre digiti, così puoi vedere esattamente ciò che vedrà il tuo gruppo.
+- **Impostare la tonalità** -- Specifica la tonalità musicale di ogni arrangiamento usando il selettore accanto al testo. Il selettore elenca le tonalità nel modo in cui le scrivono di solito i musicisti (C, Db, D, Eb, E, F, F#, G, Ab, A, Bb, B). Cambiare la tonalità trasporta subito gli accordi visualizzati, sia nella pagina dell'arrangiamento sia quando apri il canto da un piano di servizio, così il tuo gruppo vede sempre gli accordi nella tonalità in cui suona davvero. Gli accordi sono scritti in modo coerente con la tonalità: le tonalità con bemolle come Bb o Eb mostrano nomi di accordi con bemolle (Bb, Eb, Ab) invece che con diesis.
+- **Aggiungere link esterni** -- Allega link a risorse come video di YouTube, schede con accordi o spartiti ospitati altrove.
 
 ## Arrangiamenti
 
-Un arrangiamento rappresenta una versione distinta di una canzone -- ad esempio, una versione moderna più veloce rispetto a una versione acustica più lenta, o la stessa canzone in una chiave diversa per un team diverso. Ogni arrangiamento della stessa canzone condivide il titolo e l'artista della canzone ma ha le sue impostazioni indipendenti:
+Un arrangiamento rappresenta una versione distinta di un canto — per esempio una versione moderna più veloce rispetto a una versione acustica più lenta, oppure lo stesso canto in una tonalità diversa per un gruppo diverso. Ogni arrangiamento dello stesso canto condivide il titolo e l'artista, ma ha impostazioni indipendenti:
 
-- **Chiave** -- la chiave musicale in cui l'arrangiamento viene eseguito
-- **BPM** -- tempo in battiti al minuto
-- **Lunghezza** -- durata in secondi
-- **Tempo** -- firma temporale (ad esempio, 4/4, 3/4, 6/8)
-- **Sequenza** -- la struttura accordo/sezione (ad esempio, Intro → Verso → Ritornello → Bridge)
-- **Testi** -- per la visualizzazione o la proiezione
-- **Link esterni** -- grafici degli accordi, registrazioni YouTube, fogli musicali o altre risorse
+- **Key** — la tonalità musicale in cui viene eseguito l'arrangiamento
+- **BPM** — tempo in battiti al minuto
+- **Length** — durata in secondi
+- **Meter** — tempo musicale (per esempio 4/4, 3/4, 6/8)
+- **Sequence** — la struttura di accordi/sezioni (per esempio Intro → Strofa → Ritornello → Ponte)
+- **Lyrics** — per la visualizzazione o la proiezione
+- **External links** — schede con accordi, registrazioni su YouTube, spartiti o altre risorse
 
-Quando aggiungi una canzone a un [Ordine di Servizio](./service-order.md), puoi scegliere quale arrangiamento usare per quel servizio specifico, in modo che il tuo team ripeti sempre e suona la versione corretta.
+Quando aggiungi un canto a un [Ordine del servizio](./service-order.md), puoi scegliere quale arrangiamento usare per quello specifico servizio, così il tuo gruppo prova e suona sempre la versione giusta.
 
-### Audio di Prova
+### Audio di prova
 
-Gli admin del culto possono allegare una traccia audio di prova a un arrangiamento in modo che il team possa ascoltare prima della pratica:
+Gli amministratori dell'adorazione possono allegare a un arrangiamento una traccia audio di prova, così il gruppo può ascoltarla in anticipo rispetto alle prove:
 
-1. Apri la canzone e seleziona l'arrangiamento.
-2. Fai clic su **Carica Audio**.
-3. Scegli un file MP3, M4A o AAC (fino a 25 MB -- WAV non è accettato, per mantenere l'utilizzo dello spazio di archiviazione gestibile).
-4. Salva. La traccia si riproduce in linea ovunque quell'arrangiamento appaia -- nella pagina dell'arrangiamento in B1 Admin e nel piano di servizio quando un membro del team l'apre nel portale dei membri B1.church. Gli elementi del piano con audio mostrano un'icona di nota musicale invece di una miniatura.
+1. Apri il canto e seleziona l'arrangiamento.
+2. Clicca su **Upload Audio**.
+3. Scegli un file MP3, M4A o AAC (fino a 25 MB — il formato WAV non è accettato, per contenere l'uso dello spazio di archiviazione).
+4. Salva. La traccia viene riprodotta direttamente ovunque compaia quell'arrangiamento — nella pagina dell'arrangiamento in B1 Admin e nel piano di servizio quando un membro della squadra lo apre nel portale membri di B1.church. Gli elementi del piano con audio mostrano un'icona di nota musicale al posto della miniatura.
 
-L'eliminazione dell'arrangiamento rimuove anche il suo file audio caricato.
+Eliminare l'arrangiamento rimuove anche il file audio caricato.
 
 :::info
-Le canzoni della tua libreria possono essere aggiunte direttamente a un [Ordine di Servizio](./service-order.md) all'interno di un piano, collegando i dettagli della canzone e l'arrangiamento scelto a quel servizio specifico.
+I canti della tua libreria possono essere aggiunti direttamente a un [Ordine del servizio](./service-order.md) all'interno di un piano, collegando i dettagli del canto e l'arrangiamento scelto a quello specifico servizio.
 :::
 
-## Passi Successivi
+## Prossimi passi
 
-- Aggiungi canzoni al tuo [Ordine di Servizio](./service-order.md) quando costruisci un [piano di servizio](./plans.md)
-- Coordina con il tuo team di culto utilizzando [Attività](./tasks.md) per la preparazione e la pratica della canzone
+- Aggiungi canti al tuo [Ordine del servizio](./service-order.md) quando costruisci un [piano di servizio](./plans.md)
+- Coordina il tuo gruppo di adorazione usando le [Attività](./tasks.md) per la preparazione e la pratica dei canti

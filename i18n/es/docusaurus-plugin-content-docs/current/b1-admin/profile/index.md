@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Perfil"
 ---
 
@@ -6,35 +6,36 @@ title: "Perfil"
 
 <div class="article-intro">
 
-La sección de Perfil te permite manejar la configuración de tu cuenta personal en ChurchApps. Tu perfil se comparte en todas las herramientas de ChurchApps, por lo que los cambios que hagas aquí se aplican en todas partes -- desde B1 Admin hasta la aplicación B1 Mobile.
+La sección de Perfil le permite administrar la configuración de su cuenta personal en ChurchApps. Su perfil se comparte entre todas las herramientas de ChurchApps, así que los cambios que haga aquí se aplican en todas partes, desde B1 Admin hasta la aplicación móvil de B1.
 
 </div>
 
-## Qué Puedes Hacer
+## Qué puede hacer
 
-Desde la sección de Perfil, puedes:
+Desde la sección de Perfil, puede:
 
-- **Actualizar tu nombre y correo electrónico** -- Mantén tu información de contacto actual.
-- **Cambiar tu contraseña** -- Establece una nueva contraseña para tu cuenta.
-- **Cambiar temas** -- Alterna entre modo claro y oscuro desde el menú de usuario (haz clic en tu foto de perfil en la esquina superior derecha).
-- **Manejar dispositivos conectados** -- Ver y controlar qué dispositivos de ChurchAppsPlayer están vinculados a tu cuenta.
-- **Ver cuentas vinculadas** -- Ve y maneja cualquier servicio externo conectado a tu cuenta de ChurchApps.
-- **Aprobar solicitudes de cambio de perfil** -- Revisa y aplica actualizaciones enviadas por miembros.
+- **Actualizar su nombre y correo electrónico**: mantenga su información de contacto al día.
+- **Cambiar su contraseña**: establezca una nueva contraseña para su cuenta.
+- **Activar el inicio de sesión de dos factores**: requiera un código de una aplicación de autenticación al iniciar sesión. Consulte [Inicio de sesión de dos factores](./managing-profile.md#two-factor-sign-in).
+- **Cambiar temas**: alterne entre modo claro y oscuro desde el menú de usuario (haga clic en su foto de perfil en la esquina superior derecha).
+- **Administrar dispositivos conectados**: vea y controle qué dispositivos ChurchAppsPlayer están vinculados a su cuenta.
+- **Ver cuentas vinculadas**: vea y administre los servicios externos conectados a su cuenta de ChurchApps.
+- **Aprobar solicitudes de cambio de perfil**: revise y aplique las actualizaciones enviadas por los miembros.
 
-## Sub-Secciones de Perfil
+## Subsecciones de perfil
 
 El área de Perfil tiene las siguientes páginas:
 
-1. **[Manejar tu Perfil](./managing-profile.md)** -- Edita tu información personal, cambia tu contraseña, maneja cuentas vinculadas, ajusta preferencias de tema, y maneja eliminación de cuenta.
-2. **[Aprobar Cambios de Perfil](./approving-profile-changes.md)** -- Revisa y aprueba solicitudes de actualización de perfil enviadas por miembros a través de B1 Mobile.
-3. **[Manejar Dispositivos](./devices.md)** -- Ver, agregar y manejar dispositivos de ChurchAppsPlayer emparejados con tu cuenta.
+1. **[Administrar su perfil](./managing-profile.md)**: edite su información personal, cambie su contraseña, administre las cuentas vinculadas, active el inicio de sesión de dos factores, ajuste las preferencias de tema y gestione la eliminación de la cuenta.
+2. **[Aprobar cambios de perfil](./approving-profile-changes.md)**: revise y apruebe las solicitudes de actualización de perfil enviadas por los miembros a través de B1 Mobile.
+3. **[Administrar dispositivos](./devices.md)**: vea, agregue y administre los dispositivos ChurchAppsPlayer vinculados a su cuenta.
 
 :::tip
-Mantén tu dirección de correo electrónico actualizada. Se usa para recuperación de cuenta y notificaciones importantes de tu iglesia.
+Mantenga su correo electrónico actualizado. Se usa para recuperar la cuenta y para notificaciones importantes de su iglesia.
 :::
 
-## Próximos Pasos
+## Siguientes pasos
 
-- [Manejar tu Perfil](./managing-profile.md) -- Edita tu configuración personal
-- [Aprobar Cambios de Perfil](./approving-profile-changes.md) -- Revisa solicitudes de cambio de perfil de miembro
-- [Manejar Dispositivos](./devices.md) -- Maneja dispositivos conectados
+- [Administrar su perfil](./managing-profile.md): edite su configuración personal
+- [Aprobar cambios de perfil](./approving-profile-changes.md): revise las solicitudes de cambio de perfil de los miembros
+- [Administrar dispositivos](./devices.md): administre los dispositivos conectados

@@ -25,6 +25,8 @@ Logging in to B1.church gives you access to the member portal where you can see 
 3. Enter your **email address** and **password**, or click **Continue with Google** or **Continue with Microsoft** if your church has single sign-on enabled.
 4. Click **Sign In**.
 
+If you have turned on [two-factor sign-in](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), the next screen asks for a code. Enter the 6-digit code from your authenticator app, or one of your backup codes, and click **Verify code**. The B1.church app asks for the code the same way.
+
 After signing in, you will be taken back to the page you were on before you clicked login. If you navigated directly to a member portal page while logged out, you will be returned to that page automatically after signing in.
 
 ## Staying Signed In

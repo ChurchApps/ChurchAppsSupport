@@ -6,63 +6,77 @@ title: "Blog"
 
 <div class="article-intro">
 
-La pagina Blog ti permette di pubblicare notizie, aggiornamenti e devozionali sul sito web della tua chiesa. I post compaiono in un elenco di schede a `/blog`, al loro URL proprio e in un feed RSS che altri strumenti (come Zapier) possono monitorare per i nuovi post.
+La pagina Blog ti permette di pubblicare notizie, aggiornamenti e meditazioni sul sito web della tua chiesa. Gli articoli appaiono in un elenco a schede su `/blog`, ciascuno al proprio URL, e in un feed RSS che altri strumenti (come Zapier) possono controllare per i nuovi articoli.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Completa la [Configurazione Iniziale](initial-setup) per il tuo sito web
-- Aggiungi un link di navigazione a `/blog` da [Gestione Pagine](managing-pages) se desideri che i visitatori trovino il tuo blog dal menu
+- Completa la [configurazione iniziale](initial-setup) per il tuo sito web
+- Aggiungi un link di navigazione a `/blog` da [Gestire le pagine](managing-pages) se vuoi che i visitatori trovino il blog dal menu
 
 </div>
 
-## Accesso al Blog
+## Accedere al blog
 
-1. In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra) e espandi **Website**.
-2. Fai clic su **Blog**.
-3. La pagina Blog elenca ogni post insieme al suo stato e alla data di pubblicazione.
+1. In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra) ed espandi **Sito web**.
+2. Clicca su **Blog**.
+3. La pagina Blog elenca tutti gli articoli con il loro stato e la data di pubblicazione.
 
-## Aggiunta di un Post
+## Aggiungere un articolo
 
-1. Fai clic su **Aggiungi Post** nell'angolo in alto a destra.
-2. Inserisci un **Titolo**. Un **Web address** (slug) compatibile con gli URL viene generato per te automaticamente mentre digiti -- puoi modificarlo direttamente se desideri un indirizzo diverso.
-3. Aggiungi un **Estratto** -- un breve riassunto mostrato nell'elenco dei post, nelle descrizioni meta e nel feed RSS. Se lo lasci vuoto, uno viene generato automaticamente dall'inizio del contenuto del tuo post.
-4. Scrivi il corpo del post nell'editor **Contenuto** utilizzando Markdown. Fai clic su **Anteprima** per vedere come apparirà il post formattato.
-5. Scegli una **Categoria** (scegline una esistente o digita una nuova) e **Tag** opzionali separati da virgole.
-6. Fai clic su **Seleziona Immagine** per scegliere una foto dalla tua galleria [File](files), o caricane una nuova. Le foto caricate si aprono in uno strumento di ritaglio incorporato bloccato a un rapporto 16:9, in modo che tu possa inquadrare qualsiasi foto per adattarla all'intestazione del post e alle schede di elenco.
-7. Imposta l'**Autore** -- per impostazione predefinita è te, ma puoi cercare e selezionare qualsiasi persona nel tuo database.
-8. Attiva **Pubblicato** e imposta una **Data di Pubblicazione** quando sei pronto a rendere il post pubblico. Lascialo disattivato per salvare il post come bozza.
+1. Clicca su **Aggiungi articolo** in alto a destra.
+2. Inserisci un **Titolo**. Mentre scrivi, viene generato automaticamente un **Indirizzo web** (slug) adatto agli URL -- puoi modificarlo direttamente se vuoi un indirizzo diverso.
+3. Aggiungi un **Estratto** -- un breve riassunto mostrato nell'elenco degli articoli, nelle meta descrizioni e nel feed RSS. Se lo lasci vuoto, ne viene generato uno automaticamente dall'inizio del contenuto dell'articolo.
+4. Scrivi il corpo dell'articolo nell'editor **Contenuto** usando Markdown. Clicca su **Anteprima** per vedere come apparirà l'articolo formattato.
+5. Scegli una **Categoria** (seleziona una esistente o scrivine una nuova) e, facoltativamente, dei **Tag** separati da virgole.
+6. Clicca su **Seleziona immagine** per scegliere una foto dalla tua galleria [File](files), oppure caricane una nuova. Le foto caricate si aprono in uno strumento di ritaglio integrato bloccato al rapporto 16:9, così puoi inquadrare qualsiasi foto per adattarla all'intestazione dell'articolo e alle schede dell'elenco.
+7. Imposta l'**Autore** -- per impostazione predefinita sei tu, ma puoi cercare e selezionare qualsiasi persona nel database.
+8. Attiva **Pubblicato** e imposta una **Data di pubblicazione** quando sei pronto a rendere pubblico l'articolo. Lascialo disattivato per salvare l'articolo come bozza.
 
 :::tip
-Imposta una **Data di Pubblicazione** nel futuro per pianificare un post. Rimane nascosto dai visitatori e mostra un chip **Programmato** nell'elenco Blog fino a quando non arriva quella data.
+Imposta una **Data di pubblicazione** futura per programmare un articolo. Resta nascosto ai visitatori e mostra un'etichetta **Programmato** nell'elenco del Blog fino a quella data.
 :::
 
-## Stati dei Post
+## Stati degli articoli
 
-Ogni post nell'elenco mostra uno di tre stati:
+Ogni articolo nell'elenco mostra uno di tre stati:
 
-- **Bozza** -- Non pubblicato. Visibile solo nell'admin.
+- **Bozza** -- Non pubblicato. Visibile solo nell'area di amministrazione.
 - **Programmato** -- Pubblicato è attivo, ma la data di pubblicazione è nel futuro.
-- **Pubblicato** -- Live sul tuo sito web e incluso nel feed RSS.
+- **Pubblicato** -- Online sul tuo sito web e incluso nel feed RSS.
 
-## Modifica, Anteprima ed Eliminazione di Post
+## Modificare, visualizzare in anteprima ed eliminare gli articoli
 
-- Fai clic su **Edit** accanto a un post per apportare modifiche.
-- Fai clic su **View on Site** (mostrato sui post pubblicati) per aprire il post live sul tuo sito web in una nuova scheda.
-- Fai clic su **Delete** per rimuovere permanentemente un post.
+- Clicca su **Modifica** accanto a un articolo per apportare modifiche.
+- Clicca su **Visualizza sul sito** (mostrato sugli articoli pubblicati) per aprire l'articolo online sul tuo sito web in una nuova scheda.
+- Clicca su **Elimina** per rimuovere definitivamente un articolo.
 
-## Come i Visitatori Vedono il Tuo Blog
+## Come i visitatori vedono il tuo blog
 
-I post pubblicati compaiono a `{tuosito}/blog`, 10 per pagina con link **Precedenti**/**Successivi** per sfogliare il tuo archivio, insieme a un filtro di categoria e la firma e la foto di ogni post. I tag vengono visualizzati anche come schede cliccabili, consentendo ai visitatori di filtrare l'elenco per tag allo stesso modo. I post individuali si trovano a `{tuosito}/blog/{slug}` e includono post correlati dalla stessa categoria. La pagina del blog pubblica anche un feed RSS, auto-rilevabile dai lettori di feed e da strumenti di automazione come Zapier.
+Gli articoli pubblicati appaiono su `{yoursite}/blog`, 10 per pagina, con i link **Precedenti**/**Successivi** per sfogliare l'archivio, insieme a un filtro per categoria e al nome dell'autore e alla foto di ciascun articolo. Anche i tag appaiono come chip cliccabili, permettendo ai visitatori di filtrare l'elenco per tag allo stesso modo. I singoli articoli si trovano su `{yoursite}/blog/{slug}` e includono articoli correlati della stessa categoria. La pagina del blog pubblica anche un feed RSS, rilevato automaticamente dai lettori di feed e da strumenti di automazione come Zapier.
 
 :::info
-I post del blog sono un tipo di contenuto separato dalle normali pagine del sito web -- non sono costruiti nell'[editor di pagine](page-editor) e non compaiono nell'elenco delle Pagine. Questo mantiene la creazione di blog veloce e focalizzata sulla scrittura.
+Gli articoli del blog sono un tipo di contenuto separato dalle normali pagine del sito -- non vengono creati nell'[editor di pagine](page-editor) e non compaiono nell'elenco delle Pagine. Questo rende la scrittura degli articoli rapida e concentrata sul testo.
 :::
 
-## Prossimi Passaggi
+## Aggiungere commenti sotto gli articoli
 
-- [Gestione Pagine](managing-pages) -- Aggiungi un link di navigazione al tuo blog
-- [File](files) -- Carica foto da usare nei tuoi post
-- [Integrazione Zapier](../integrations/zapier.md) -- Attiva automazioni quando vengono pubblicati nuovi post
+B1 non ospita direttamente i commenti del blog, ma puoi aggiungere un servizio di commenti. Puoi anche inserire sotto ogni articolo qualsiasi altro elemento, come un modulo di iscrizione alla newsletter o un pulsante per le offerte.
+
+1. Registrati a un servizio di commenti come [Hyvor Talk](https://talk.hyvor.com), [FastComments](https://fastcomments.com) o [Disqus](https://disqus.com) e copia il suo codice di incorporamento.
+2. Nella pagina Blog, scorri fino a **Sotto ogni articolo**.
+3. Incolla il codice di incorporamento e clicca su **Salva**.
+
+Il codice compare sotto il contenuto di ogni articolo pubblicato. Il tuo servizio di commenti gestisce la moderazione e il filtraggio dello spam, quindi controlla regolarmente la sua dashboard.
+
+:::tip
+Svuota la casella e clicca su **Salva** per rimuovere il codice da tutti gli articoli. Solo le persone che possono modificare le impostazioni della chiesa vedono questa casella.
+:::
+
+## Passi successivi
+
+- [Gestire le pagine](managing-pages) -- Aggiungi un link di navigazione al tuo blog
+- [File](files) -- Carica foto da usare nei tuoi articoli
+- [Integrazione Zapier](../integrations/zapier.md) -- Attiva automazioni quando vengono pubblicati nuovi articoli

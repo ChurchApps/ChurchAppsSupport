@@ -61,7 +61,7 @@ The code on the **Pair this screen** screen also works in B1 Admin. If you enter
 
 Once the TV is paired, the **Pair to a calendar** row in **Settings** shows the name of the screen group it follows. Select the row to open the **Paired to** dialog, which has three options:
 
-- **Keep** - Close the dialog. Nothing changes.
+- **Back to schedule** - Close the dialog and go back to the scheduled player. Nothing about the pairing changes.
 - **Unpair** - Stop following a schedule. FreePlay opens the **Content Providers** screen.
 - **Pair to a different calendar** - Unpair, then show a new pairing code so you can pair the TV again.
 

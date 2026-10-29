@@ -13,7 +13,7 @@ This guide walks you through setting up the ChurchApps API for local development
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Install **Node.js 22+**, **Git**, and **MySQL 8.0+** -- see [Prerequisites](../setup/prerequisites)
+- Install **Node.js 24+**, **Git**, and **MySQL 8.0+** -- see [Prerequisites](../setup/prerequisites)
 - Create a MySQL user with database creation privileges
 - Review the [Environment Variables](../setup/environment-variables) reference for API configuration
 

@@ -59,7 +59,7 @@ Click a song's title to open its detail page. The song's title, artist, and deta
 - **Edit song details** -- Click **Edit** to update the title, artist, duration, and other metadata. Click **Done** when you're finished. To remove the song from your library, click **Edit** and then **Delete song**.
 - **Manage arrangements** -- Each song can have multiple arrangements (for example, different keys or versions). Click **Add Arrangement** to create one, and click an arrangement's name under **Arrangements** to open it.
 - **Add lyrics** -- Enter or update the lyrics for each arrangement using ChordPro notation (for example, `[G]Amazing grace`). A live preview next to the editor renders the formatted chord chart as you type, so you can see exactly what your team will see.
-- **Set the key** -- Specify the musical key for each arrangement using the key picker next to the lyrics. Changing the key transposes the displayed chords immediately, both on the arrangement page and when opening the song from a service plan, so your team always sees chords in the key they're actually playing.
+- **Set the key** -- Specify the musical key for each arrangement using the key picker next to the lyrics. The picker lists keys the way musicians usually write them (C, Db, D, Eb, E, F, F#, G, Ab, A, Bb, B). Changing the key transposes the displayed chords immediately, both on the arrangement page and when opening the song from a service plan, so your team always sees chords in the key they're actually playing. Chords are spelled to match the key: flat keys such as Bb or Eb show flat chord names (Bb, Eb, Ab) instead of sharps.
 - **Add external links** -- Attach links to resources like YouTube videos, chord charts, or sheet music hosted elsewhere.
 
 ## Arrangements

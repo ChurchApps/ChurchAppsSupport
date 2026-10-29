@@ -27,6 +27,8 @@ Before the kiosk can be used for check-in, you need to sign in with a ChurchApps
 
 The app validates your credentials and signs you in. If the email or password is incorrect, you will see an error message at the bottom of the screen.
 
+If the account has [two-factor sign-in](../../b1-admin/profile/managing-profile.md#two-factor-sign-in) turned on, the app then asks for a code. Enter the 6-digit code from the account owner's authenticator app, or one of their backup codes, and tap **Login** again. You only need the code for this first login; after that the kiosk stays signed in.
+
 :::info
 This is the same email and password you use for B1 Admin or any other ChurchApps product. You do not need a separate account for the check-in kiosk.
 :::
@@ -42,11 +44,11 @@ Once you select a church, the app loads that church's branding and appearance se
 
 ## Auto-Login on Return Visits
 
-The app saves your email, password, and selected church after the first successful login. On future launches:
+After the first successful login, the app keeps a secure sign-in token and your selected church on the tablet. It does not store your password. On future launches:
 
-- The app automatically logs in with your saved credentials.
+- The app signs you back in with the saved token.
 - If you previously selected a church, it restores that selection and takes you directly to the **services screen**.
-- If the saved credentials are no longer valid, the app returns to the login screen so you can sign in again.
+- If the saved sign-in is no longer valid, the app returns to the login screen so you can sign in again.
 
 :::tip
 Because the kiosk auto-logs in, you only need to enter credentials once during initial setup. After that, the tablet can be powered on and it will be ready to go.

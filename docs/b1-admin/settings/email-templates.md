@@ -6,7 +6,7 @@ title: "Email Templates"
 
 <div class="article-intro">
 
-Email Templates let you save reusable email content -- a welcome message, an event reminder, a giving thank-you -- so you (or a [workflow](../serving/workflows.md)) can send it in one click instead of writing it from scratch every time.
+Email Templates let you save reusable email content -- a welcome message, an event reminder, a giving thank-you -- so you (or a [workflow](../serving/workflows.md)) can send it in one click instead of writing it from scratch every time. The same list also holds text message templates for the group and person Text windows.
 
 </div>
 
@@ -26,7 +26,7 @@ Email Templates let you save reusable email content -- a welcome message, an eve
 ## Creating a Template
 
 1. Click **New Template**.
-2. Enter a **Template Name** to identify it in the list, and choose a **Category** (General, Events, Groups, Giving, or Welcome) to help organize your templates.
+2. Enter a **Template Name** to identify it in the list, and choose a **Category** (General, Events, Groups, Giving, Welcome, or Text) to help organize your templates. Choose **Text** to make a text message template instead (see [Text Templates](#text-templates) below).
 3. Enter the **Subject** line.
 4. Write the **Body** using the rich text editor.
 5. Click **Save**.
@@ -38,6 +38,17 @@ Click a merge field chip above the Subject or Body to insert it at your cursor -
 - `{{firstName}}`, `{{lastName}}`, `{{displayName}}` -- The recipient's name
 - `{{email}}` -- The recipient's email address
 - `{{churchName}}` -- Your church's name
+
+## Text Templates
+
+A template with the **Text** category is a plain-text message for texting rather than an email:
+
+- It has no subject. The rich text editor is replaced with a plain **Text Message** box that holds up to 1,600 characters.
+- The merge field chips above the box insert `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, or `{{churchName}}` at your cursor.
+- Text templates show up in the **Load Template (optional)** picker of the Text window for a [group](../groups/group-members.md#texting-group-members) or a single person. Picking one fills in the message, and you can still edit it before you send.
+- They are left out of the email template pickers, including the workflow **Send email** action.
+
+Texting requires a connected [texting provider](./church-settings.md#texting).
 
 ## Previewing a Template
 

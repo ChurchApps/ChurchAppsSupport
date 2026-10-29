@@ -44,7 +44,7 @@ The service order is a list of items arranged in the sequence they will occur du
 4. Click **Save**.
 
 :::tip
-You can add songs directly from your [Songs](./songs.md) library. This links the song details, including lyrics and arrangements, to your service plan so your worship team has everything they need.
+You can add songs directly from your [Songs](./songs.md) library. This links the song details, including lyrics and arrangements, to your service plan so your worship team has everything they need. When you pick a song, each key choice shows the arrangement name next to the key, so arrangements that share a key are easy to tell apart.
 :::
 
 ### Importing Multiple Items from an External Provider

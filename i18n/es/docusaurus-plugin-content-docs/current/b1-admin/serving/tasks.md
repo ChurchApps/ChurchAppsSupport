@@ -6,83 +6,85 @@ title: "Tareas"
 
 <div class="article-intro">
 
-Las tareas te permiten asignar elementos de acción a personas o grupos en tu iglesia. Ya sea una tarea única o una responsabilidad recurrente, las tareas te ayudan a realizar un seguimiento de lo que necesita hacerse y quién es responsable para que nada se pase por alto.
+Las tareas le permiten asignar acciones a personas o grupos de su iglesia. Ya sea un pendiente de una sola vez o una responsabilidad recurrente, las tareas le ayudan a dar seguimiento a lo que hay que hacer y a quién le corresponde, para que nada se pase por alto.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Empezar</h4>
+<h4>Antes de comenzar</h4>
 
-- Asegúrate de que las personas o [grupos](../groups/creating-groups.md) a los que quieres asignar tareas existan en B1 Admin
-- En el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu), elige **Servicio > Mi Trabajo** para ver tareas
+- Asegúrese de que las personas o [grupos](../groups/creating-groups.md) a los que desea asignar tareas existan en B1 Admin
+- En el [menú Jump](../introduction.md#getting-around-with-the-jump-menu), elija **Servir > Mi trabajo** para ver las tareas
 
 </div>
 
-## Visualizar Tareas
+## Ver tareas
 
-En el menú Saltar, elige **Servicio > Mi Trabajo** (o busca "Mi Trabajo"). La lista de **Tareas** muestra el título de cada tarea, con quién está relacionada, a quién está asignada, cuándo se abrió y su estado. Tus tarjetas de [flujo de trabajo](./workflows.md) aparecen junto a ella bajo **Mis Tarjetas**.
+En el menú Jump, elija **Servir > Mi trabajo** (o busque "Mi trabajo"). La lista de **Tareas** muestra el título de cada tarea, con quién está asociada, a quién está asignada, cuándo se abrió y su estado. Sus [tarjetas de flujo de trabajo](./workflows.md) aparecen junto a ella bajo **Mis tarjetas**.
 
-Usa las pestañas encima de la lista para alternar entre las tareas **Asignadas a Mí**, **Asignadas a Mis Grupos** y **Solicitadas por Mí**. Cada pestaña muestra cuántas tareas contiene.
-
-:::tip
-Por defecto, solo se muestran las tareas abiertas. Elige **Cerradas** encima de la lista para ver las tareas completadas en su lugar.
-:::
-
-## Crear una Tarea
-
-1. En la página **Mi Trabajo**, haz clic en **Añadir Tarea**. Se abre un formulario **Nueva Tarea**.
-2. Haz clic en la caja **Asociar con** y elige la persona a quien se refiere la tarea.
-3. Haz clic en la caja **Asignar a**. En la ventana **Seleccionar una Persona o Grupo**, busca en la pestaña **Persona**, o cambia a la pestaña **Grupo** y busca un grupo, luego selecciona el resultado.
-4. Ingresa un **Título** para la tarea.
-5. Añade **Notas** con cualquier detalle o instrucción para el asignado.
-6. Haz clic en **Guardar**.
-
-La tarea ahora aparecerá en la lista de tareas y será visible para el asignado en su panel y aplicación móvil.
-
-## Gestionar una Tarea
-
-Haz clic en cualquier tarea para abrir su página de detalle. Desde aquí puedes:
-
-- **Cerrar o reabrir la tarea** -- Haz clic en **Cerrar tarea** cuando el trabajo esté terminado, o en **Reabrir tarea** para abrirla de nuevo.
-- **Reasignar la tarea** -- Haz clic en **Asignar** para elegir una persona o grupo diferente.
-- **Cambiar a quién se refiere** -- Haz clic en **Asociar** para elegir otra persona.
-- **Añadir notas** -- Publica actualizaciones o detalles para el asignado en las notas de la tarea.
-- **Configurar recordatorios** -- Consulta [Recordatorios de Tareas](#task-reminders) más abajo.
-
-## Recordatorios de Tareas {#task-reminders}
-
-Una tarea con fecha de vencimiento puede recordar a su asignado antes de que venza.
-
-1. En la página de la tarea, haz clic en **Editar** junto a **Recordatorios**.
-2. Activa **Enviar recordatorios para esta tarea**.
-3. Bajo **¿Cuándo deben salir los recordatorios?**, elige hasta tres momentos: **7 días antes**, **3 días antes**, **1 día antes** o **El mismo día**.
-4. Establece la **Hora del día** y, opcionalmente, un **Mensaje**.
-5. Bajo **Enviar por**, elige **Push**, **Correo electrónico** y, si tu iglesia tiene un [proveedor de mensajes de texto](../settings/church-settings.md#texting) conectado, **Texto**.
-6. Haz clic en **Guardar Recordatorios**.
-
-Si la tarea no tiene fecha de vencimiento, B1 te avisa de que no se enviarán recordatorios hasta que establezcas una. Los recordatorios de texto solo llegan a las personas que activaron **Mensajes de texto** en sus [Preferencias de Notificación](../../b1-church/getting-started/notification-preferences.md), y cada texto puede costarle a tu iglesia.
-
-## Ciclo de Vida de la Tarea
-
-1. Una nueva tarea comienza con un estado de **Abierto**.
-2. El asignado recibe una notificación y puede ver la tarea desde su panel, **Servicio > Mi Trabajo** o la aplicación móvil.
-3. Una vez que el trabajo está completo, el asignado (o un administrador) hace clic en **Cerrar tarea**.
-4. Las tareas cerradas se eliminan de la vista predeterminada pero aún se pueden encontrar eligiendo **Cerradas** encima de la lista de tareas.
-
-:::info
-B1 Admin ya no crea tareas recurrentes en un horario. Para seguimiento repetido con personas, usa un [flujo de trabajo](./workflows.md) con un [desencadenador de horario](./workflows.md#schedule-triggers).
-:::
+Use las pestañas sobre la lista para cambiar entre las tareas **Asignadas a mí**, **Asignadas a mis grupos** y **Solicitadas por mí**. Cada pestaña muestra cuántas tareas contiene.
 
 :::tip
-Cuando necesites mover muchas personas a través del mismo conjunto de etapas -- como seguimiento de nuevo visitante o un proceso de membresía -- usa [Flujos de Trabajo](./workflows.md). Los flujos de trabajo convierten tareas en tarjetas en un tablero de arrastrar y soltar con pasos, fechas de vencimiento y enrutamiento.
+De forma predeterminada, solo se muestran las tareas abiertas. Elija **Cerradas** sobre la lista para ver las tareas completadas.
+:::
+
+## Crear una tarea
+
+1. En la página **Mi trabajo**, haga clic en **Agregar tarea**. Se abre un formulario de **Nueva tarea**.
+2. Haga clic en el cuadro **Asociar con** y elija la persona a la que se refiere la tarea.
+3. Haga clic en el cuadro **Asignar a**. En la ventana **Seleccione una persona o grupo**, busque en la pestaña **Persona**, o cambie a la pestaña **Grupo** y busque un grupo, luego seleccione el resultado.
+4. Ingrese un **Título** para la tarea.
+5. Opcionalmente, elija una **Fecha de vencimiento**.
+6. Agregue **Notas** con cualquier detalle o instrucción para la persona asignada.
+7. Haga clic en **Guardar**.
+
+La tarea aparecerá ahora en la lista de tareas y será visible para la persona asignada en su panel de inicio y en la aplicación móvil.
+
+## Administrar una tarea
+
+Haga clic en cualquier tarea para abrir su página de detalle. Desde aquí puede:
+
+- **Cerrar o reabrir la tarea** -- Haga clic en **Cerrar tarea** cuando el trabajo esté terminado, o en **Reabrir tarea** para volver a abrirla.
+- **Reasignar la tarea** -- Haga clic en **Asignar** para elegir a otra persona o grupo.
+- **Cambiar a quién se refiere** -- Haga clic en **Asociar** para elegir a otra persona.
+- **Cambiar la fecha de vencimiento** -- Elija una fecha en el campo **Vencimiento**; se guarda cuando hace clic fuera del campo. (Las tareas creadas para una [confirmación de asignación de servicio](./workflows.md#serving-assignment-confirmations) muestran su fecha de vencimiento, pero no se pueden cambiar aquí.)
+- **Agregar notas** -- Publique actualizaciones o detalles para la persona asignada en las notas de la tarea.
+- **Configurar recordatorios** -- Consulte [Recordatorios de tareas](#task-reminders) más abajo.
+
+## Recordatorios de tareas
+
+Una tarea con fecha de vencimiento puede recordar a la persona asignada antes de que venza.
+
+1. En la página de la tarea, haga clic en **Editar** junto a **Recordatorios**.
+2. Active **Enviar recordatorios para esta tarea**.
+3. En **¿Cuándo deben enviarse los recordatorios?**, elija hasta tres momentos: **7 días antes**, **3 días antes**, **1 día antes** o **El mismo día**.
+4. Configure la **Hora del día** y, opcionalmente, un **Mensaje**.
+5. En **Enviar por**, elija **Notificación push**, **Correo electrónico** y, si su iglesia tiene un [proveedor de mensajes de texto](../settings/church-settings.md#texting) conectado, **Mensaje de texto**.
+6. Haga clic en **Guardar recordatorios**.
+
+Si la tarea no tiene fecha de vencimiento, B1 le advierte que no se enviarán recordatorios hasta que se configure una en el campo **Vencimiento**. Los recordatorios por mensaje de texto solo llegan a las personas que activaron **Mensajes de texto** en sus [Preferencias de notificación](../../b1-church/getting-started/notification-preferences.md), y cada mensaje puede costarle a su iglesia.
+
+## Ciclo de vida de una tarea
+
+1. Una tarea nueva comienza con el estado **Abierta**.
+2. La persona asignada recibe una notificación y puede ver la tarea desde su panel de inicio, en **Servir > Mi trabajo** o en la aplicación móvil.
+3. Cuando el trabajo está terminado, la persona asignada (o un administrador) hace clic en **Cerrar tarea**.
+4. Las tareas cerradas se ocultan de la vista predeterminada, pero aún pueden encontrarse eligiendo **Cerradas** sobre la lista de tareas.
+
+:::info
+B1 Admin ya no crea tareas recurrentes según un calendario. Para el seguimiento repetido de personas, use un [flujo de trabajo](./workflows.md) con un [disparador programado](./workflows.md#schedule-triggers).
+:::
+
+:::tip
+Cuando necesite que muchas personas pasen por las mismas etapas, como el seguimiento de nuevos visitantes o un proceso de membresía, use [Flujos de trabajo](./workflows.md). Los flujos de trabajo convierten las tareas en tarjetas de un tablero de arrastrar y soltar, con pasos, fechas de vencimiento y enrutamiento.
 :::
 
 :::info
-Algunas tareas son creadas automáticamente por otras partes de B1 y se abren a una tarjeta de revisión especial en lugar de la vista estándar de nota/reasignar -- [solicitudes de unión a grupo](../groups/group-join-requests.md#approving-from-the-tasks-page), [solicitudes de cambio de perfil](../profile/approving-profile-changes.md) y [solicitudes de eliminación de cuenta](../profile/account-deletion.md) funcionan de esta manera.
+Algunas tareas las crean automáticamente otras partes de B1 y, en lugar de la vista estándar de notas y reasignación, abren una tarjeta especial de revisión: las [solicitudes para unirse a un grupo](../groups/group-join-requests.md#approving-from-the-tasks-page), las [solicitudes de cambio de perfil](../profile/approving-profile-changes.md) y las [solicitudes de eliminación de cuenta](../profile/account-deletion.md) funcionan de esta manera.
 :::
 
-## Próximos Pasos
+## Próximos pasos
 
-- Mueve personas a través de un proceso de múltiples pasos con [Flujos de Trabajo](./workflows.md)
-- Usa [Flujos de Trabajo](./workflows.md) para mover personas a través de procesos repetibles automáticamente
-- Usa tareas junto con [Planes de Servicio](./plans.md) para rastrear elementos de acción de preparación del servicio
+- Guíe a las personas por un proceso de varios pasos con [Flujos de trabajo](./workflows.md)
+- Use [Flujos de trabajo](./workflows.md) para llevar a las personas por procesos repetibles de forma automática
+- Use las tareas junto con los [Planes de servicio](./plans.md) para dar seguimiento a las acciones de preparación del servicio

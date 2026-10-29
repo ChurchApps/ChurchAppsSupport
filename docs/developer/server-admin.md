@@ -22,6 +22,16 @@ Users with Server.Admin permission can access the server admin panel from B1 Adm
 2. Open the [Jump menu](../b1-admin/introduction.md#getting-around-with-the-jump-menu), expand **Settings**, and click **Server Admin**. (You can also go straight to `admin.b1.church/admin`.)
 3. The Server Admin panel lists its sections down the left side in three groups: **Directory** (Churches, Users, Impersonate User), **Operations** (Background Jobs, Commons, Usage Trends), and **System** (Translation Lookups, Server Health, Database Migrations)
 
+## Resetting Two-Factor Sign-In
+
+If a user has [two-factor sign-in](../b1-admin/profile/managing-profile.md#two-factor-sign-in) turned on and has lost both their phone and their backup codes, a server admin can turn it off:
+
+1. Open the **Users** section of the Server Admin panel and look up the user.
+2. Users with two-factor sign-in show a **Two-factor on** badge. Click **Reset 2FA** next to it.
+3. Confirm the prompt. Only do this after confirming who you're talking to.
+
+The user can then log in with just their password and set up two-factor sign-in again from their profile. Resets are written to the audit log as `mfa_reset`. The endpoint is `POST /membership/users/mfa/reset/:userId` and requires Server.Admin.
+
 ## User Impersonation
 
 The impersonation feature allows server admins to log in as another user for support and troubleshooting purposes. This is useful when investigating user-reported issues or helping churches configure their systems.

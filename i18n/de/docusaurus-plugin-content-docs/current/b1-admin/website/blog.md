@@ -6,63 +6,77 @@ title: "Blog"
 
 <div class="article-intro">
 
-Die Blog-Seite ermöglicht es Ihnen, Nachrichten, Updates und Andachten auf Ihrer Kirchenwebsite zu veröffentlichen. Posts werden in einer Kartenliste unter `/blog`, unter ihrer eigenen URL und in einem RSS-Feed angezeigt, den andere Tools (wie Zapier) beobachten können.
+Auf der Seite Blog veröffentlichen Sie Neuigkeiten, Updates und Andachten auf Ihrer Kirchenwebsite. Beiträge erscheinen in einer Kartenliste unter `/blog`, jeweils unter ihrer eigenen Adresse und in einem RSS-Feed, den andere Werkzeuge (etwa Zapier) auf neue Beiträge überwachen können.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Führen Sie die [Initiale Einrichtung](initial-setup) für Ihre Website durch
-- Fügen Sie einen Navigations-Link zu `/blog` von [Managing Pages](managing-pages) hinzu, wenn Sie möchten, dass Besucher Ihren Blog aus dem Menü finden
+- Schließen Sie die [Ersteinrichtung](initial-setup) für Ihre Website ab
+- Fügen Sie über [Seiten verwalten](managing-pages) einen Navigationslink zu `/blog` hinzu, wenn Besucher Ihren Blog über das Menü finden sollen
 
 </div>
 
-## Zugriff auf den Blog
+## Auf den Blog zugreifen
 
-1. Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links) und erweitern Sie **Website**.
+1. Öffnen Sie in B1 Admin das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links) und klappen Sie **Website** auf.
 2. Klicken Sie auf **Blog**.
-3. Die Blog-Seite listet jeden Post zusammen mit seinem Status und Veröffentlichungsdatum auf.
+3. Die Seite Blog listet jeden Beitrag mit seinem Status und Veröffentlichungsdatum auf.
 
-## Einen Post hinzufügen
+## Einen Beitrag hinzufügen
 
-1. Klicken Sie auf **Add Post** in der oberen rechten Ecke.
-2. Geben Sie einen **Title** ein. Eine URL-freundliche **Web address** (Slug) wird beim Tippen automatisch für Sie generiert -- Sie können ihn direkt bearbeiten, wenn Sie eine andere Adresse möchten.
-3. Fügen Sie ein **Excerpt** hinzu -- eine kurze Zusammenfassung, die in der Post-Liste, Meta-Beschreibungen und RSS-Feeds angezeigt wird. Wenn Sie es leer lassen, wird eines automatisch vom Anfang Ihres Post-Inhalts generiert.
-4. Schreiben Sie den Post-Body im **Content**-Editor mit Markdown. Klicken Sie auf **Preview**, um zu sehen, wie der formatierte Post aussieht.
-5. Wählen Sie eine **Category** (wählen Sie eine bestehende oder geben Sie eine neue ein) und optional kommagetrennte **Tags**.
-6. Klicken Sie auf **Select Image**, um ein Foto aus Ihrer [Files](files)-Galerie zu wählen oder laden Sie ein neues hoch. Hochgeladene Fotos werden in einem integrierten Zuschneide-Tool geöffnet, das auf ein 16:9-Verhältnis gesperrt ist, damit Sie jedes Foto so rahmen können, dass es in die Post-Kopfzeile und Listenkartenpasst.
-7. Legen Sie den **Author** fest -- standardmäßig sind Sie es, aber Sie können jede Person in Ihrer Datenbank suchen und auswählen.
-8. Aktivieren Sie **Published** und legen Sie ein **Publish Date** fest, wenn Sie den Post öffentlich machen möchten. Lassen Sie es deaktiviert, um den Post als Entwurf zu speichern.
+1. Klicken Sie oben rechts auf **Beitrag hinzufügen**.
+2. Geben Sie einen **Titel** ein. Eine URL-freundliche **Webadresse** (Slug) wird beim Tippen automatisch erzeugt -- Sie können sie direkt bearbeiten, wenn Sie eine andere Adresse möchten.
+3. Fügen Sie einen **Auszug** hinzu -- eine kurze Zusammenfassung, die in der Beitragsliste, in den Meta-Beschreibungen und im RSS-Feed angezeigt wird. Lassen Sie das Feld leer, wird automatisch ein Auszug aus dem Anfang des Beitragsinhalts erzeugt.
+4. Schreiben Sie den Beitragstext im Editor **Inhalt** mit Markdown. Klicken Sie auf **Vorschau**, um zu sehen, wie der formatierte Beitrag aussieht.
+5. Wählen Sie eine **Kategorie** (eine vorhandene oder eine neue, die Sie eintippen) und optionale, durch Kommas getrennte **Schlagwörter**.
+6. Klicken Sie auf **Bild auswählen**, um ein Foto aus Ihrer Bildergalerie unter [Dateien](files) zu wählen oder ein neues hochzuladen. Hochgeladene Fotos öffnen sich in einem integrierten Zuschneidewerkzeug mit festem Seitenverhältnis 16:9, sodass Sie jedes Foto passend für den Beitragskopf und die Kartenvorschau zuschneiden können.
+7. Legen Sie den **Autor** fest -- standardmäßig sind Sie es selbst, Sie können aber jede Person in Ihrer Datenbank suchen und auswählen.
+8. Aktivieren Sie **Veröffentlicht** und legen Sie ein **Veröffentlichungsdatum** fest, wenn der Beitrag öffentlich werden soll. Lassen Sie es aus, um den Beitrag als Entwurf zu speichern.
 
 :::tip
-Legen Sie ein **Publish Date** in der Zukunft fest, um einen Post zu planen. Er bleibt für Besucher verborgen und zeigt einen **Scheduled**-Chip in der Blog-Liste an, bis dieses Datum erreicht ist.
+Legen Sie ein **Veröffentlichungsdatum** in der Zukunft fest, um einen Beitrag zu planen. Er bleibt Besuchern verborgen und zeigt in der Blogliste einen Chip **Geplant**, bis dieses Datum erreicht ist.
 :::
 
-## Post-Zustände
+## Beitragsstatus
 
-Jeder Post in der Liste zeigt einen von drei Zuständen:
+Jeder Beitrag in der Liste zeigt einen von drei Status:
 
-- **Draft** -- Nicht veröffentlicht. Nur im Admin sichtbar.
-- **Scheduled** -- Published ist aktiviert, aber das Veröffentlichungsdatum liegt in der Zukunft.
-- **Published** -- Live auf Ihrer Website und im RSS-Feed enthalten.
+- **Entwurf** -- Nicht veröffentlicht. Nur im Admin sichtbar.
+- **Geplant** -- Veröffentlicht ist aktiviert, das Veröffentlichungsdatum liegt aber in der Zukunft.
+- **Veröffentlicht** -- Live auf Ihrer Website und im RSS-Feed enthalten.
 
-## Posts bearbeiten, in der Vorschau anzeigen und löschen
+## Beiträge bearbeiten, in der Vorschau ansehen und löschen
 
-- Klicken Sie neben einem Post auf **Edit**, um Änderungen vorzunehmen.
-- Klicken Sie auf **View on Site** (bei veröffentlichten Posts sichtbar), um den Live-Post auf Ihrer Website in einem neuen Tab zu öffnen.
-- Klicken Sie auf **Delete**, um einen Post dauerhaft zu entfernen.
+- Klicken Sie neben einem Beitrag auf **Bearbeiten**, um Änderungen vorzunehmen.
+- Klicken Sie auf **Auf der Website ansehen** (bei veröffentlichten Beiträgen angezeigt), um den live geschalteten Beitrag auf Ihrer Website in einem neuen Tab zu öffnen.
+- Klicken Sie auf **Löschen**, um einen Beitrag endgültig zu entfernen.
 
-## Wie Besucher Ihren Blog sehen
+## So sehen Besucher Ihren Blog
 
-Veröffentlichte Posts werden unter `{yoursite}/blog` angezeigt, 10 pro Seite mit **Ältere**/**Neuere**-Links, um Ihr Archiv zu durchsuchen, zusammen mit einem Kategoriefilter und der Byline und dem Foto jedes Posts. Tags werden auch als anklickbare Chips angezeigt, sodass Besucher die Liste wie bei Kategorien nach Tag filtern können. Individuelle Posts befinden sich unter `{yoursite}/blog/{slug}` und enthalten verwandte Posts aus der gleichen Kategorie. Die Blog-Seite veröffentlicht auch einen RSS-Feed, der von Feed-Readern und Automatisierungstools wie Zapier automatisch erkannt wird.
+Veröffentlichte Beiträge erscheinen unter `{yoursite}/blog`, 10 pro Seite, mit Links **Ältere**/**Neuere**, um durch Ihr Archiv zu blättern, dazu ein Kategoriefilter sowie Autorzeile und Foto jedes Beitrags. Auch Schlagwörter werden als anklickbare Chips dargestellt, sodass Besucher die Liste ebenso nach Schlagwort filtern können. Einzelne Beiträge sind unter `{yoursite}/blog/{slug}` erreichbar und enthalten verwandte Beiträge aus derselben Kategorie. Die Blogseite stellt außerdem einen RSS-Feed bereit, den Feed-Reader und Automatisierungswerkzeuge wie Zapier automatisch finden.
 
 :::info
-Blog-Posts sind ein separater Inhaltstyp von regulären Website-Seiten -- sie werden nicht im [Seiten-Editor](page-editor) erstellt und erscheinen nicht in der Seiten-Liste. Dies hält das Blog-Authoring schnell und konzentriert auf das Schreiben.
+Blogbeiträge sind ein eigener Inhaltstyp neben den regulären Websiteseiten -- sie werden nicht im [Seiteneditor](page-editor) erstellt und erscheinen nicht in der Seitenliste. So bleibt das Verfassen von Beiträgen schnell und konzentriert auf das Schreiben.
 :::
 
-## Nächste Schritte
+## Kommentare unter Beiträgen hinzufügen
 
-- [Managing Pages](managing-pages) -- Fügen Sie einen Navigations-Link zu Ihrem Blog hinzu
-- [Files](files) -- Laden Sie Fotos hoch, um sie in Ihren Posts zu verwenden
-- [Zapier Integration](../integrations/zapier.md) -- Lösen Sie Automatisierungen aus, wenn neue Posts veröffentlicht werden
+B1 hostet selbst keine Blogkommentare, Sie können aber einen Kommentardienst einbinden. Außerdem können Sie unter jedem Beitrag auch etwas anderes platzieren, etwa eine Newsletter-Anmeldung oder einen Spendenbutton.
+
+1. Registrieren Sie sich bei einem Kommentardienst wie [Hyvor Talk](https://talk.hyvor.com), [FastComments](https://fastcomments.com) oder [Disqus](https://disqus.com) und kopieren Sie dessen Einbettungscode.
+2. Scrollen Sie auf der Seite Blog zu **Unter jedem Beitrag**.
+3. Fügen Sie den Einbettungscode ein und klicken Sie auf **Speichern**.
+
+Der Code erscheint unter dem Inhalt jedes veröffentlichten Beitrags. Die Moderation und die Spamfilterung übernimmt Ihr Kommentardienst, daher sollten Sie dessen Dashboard regelmäßig prüfen.
+
+:::tip
+Leeren Sie das Feld und klicken Sie auf **Speichern**, um den Code aus jedem Beitrag zu entfernen. Nur Personen, die Kircheneinstellungen bearbeiten dürfen, sehen dieses Feld.
+:::
+
+## Wie geht es weiter?
+
+- [Seiten verwalten](managing-pages) -- einen Navigationslink zu Ihrem Blog hinzufügen
+- [Dateien](files) -- Fotos für Ihre Beiträge hochladen
+- [Zapier-Integration](../integrations/zapier.md) -- Automatisierungen auslösen, sobald neue Beiträge veröffentlicht werden

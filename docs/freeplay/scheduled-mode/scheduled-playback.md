@@ -43,7 +43,7 @@ The panel also has three buttons:
 - **Settings** - Open FreePlay settings, where you can [unpair or pair to a different calendar](./pairing-a-screen#changing-or-unpairing-from-the-tv)
 
 :::tip
-To go back to the schedule after browsing, close and reopen FreePlay. A paired TV always opens to the scheduled player.
+To go back to the schedule after browsing, press **Back** on the remote from the **Content Providers** screen, or open **Settings**, select **Pair to a calendar**, and choose **Back to schedule**. A paired TV also returns to the scheduled player whenever FreePlay comes back to the foreground, and it always opens to the scheduled player.
 :::
 
 ## Remote Controls

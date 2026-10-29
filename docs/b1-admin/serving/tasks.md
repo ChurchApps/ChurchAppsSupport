@@ -34,8 +34,9 @@ By default, only open tasks are shown. Choose **Closed** above the list to see c
 2. Click the **Associate with** box and choose the person the task is about.
 3. Click the **Assign to** box. In the **Select a Person or Group** window, search on the **Person** tab, or switch to the **Group** tab and search for a group, then select the result.
 4. Enter a **Title** for the task.
-5. Add **Notes** with any details or instructions for the assignee.
-6. Click **Save**.
+5. Optionally pick a **Due date**.
+6. Add **Notes** with any details or instructions for the assignee.
+7. Click **Save**.
 
 The task will now appear in the task list and will be visible to the assignee on their dashboard and mobile app.
 
@@ -46,6 +47,7 @@ Click on any task to open its detail page. From here you can:
 - **Close or reopen the task** -- Click **Close task** when the work is done, or **Reopen task** to open it again.
 - **Reassign the task** -- Click **Assign** to choose a different person or group.
 - **Change who it's about** -- Click **Associate** to pick a different person.
+- **Change the due date** -- Pick a date in the **Due** field; it saves when you click away. (Tasks created for a [serving assignment confirmation](./workflows.md#serving-assignment-confirmations) show their due date but can't be changed here.)
 - **Add notes** -- Post updates or details for the assignee in the task's notes.
 - **Set reminders** -- See [Task Reminders](#task-reminders) below.
 
@@ -60,7 +62,7 @@ A task with a due date can remind its assignee before it is due.
 5. Under **Send By**, choose **Push**, **Email**, and, if your church has a [texting provider](../settings/church-settings.md#texting) connected, **Text**.
 6. Click **Save Reminders**.
 
-If the task has no due date, B1 warns you that no reminders will be sent until one is set. Text reminders only reach people who turned on **Text messages** in their [Notification Preferences](../../b1-church/getting-started/notification-preferences.md), and each text may cost your church.
+If the task has no due date, B1 warns you that no reminders will be sent until one is set in the **Due** field. Text reminders only reach people who turned on **Text messages** in their [Notification Preferences](../../b1-church/getting-started/notification-preferences.md), and each text may cost your church.
 
 ## Task Lifecycle
 

@@ -1,12 +1,12 @@
 ---
-title: "वेबसाइट बिल्डर आर्किटेक्चर"
+title: "Website Builder आर्किटेक्चर"
 ---
 
-# वेबसाइट बिल्डर आर्किटेक्चर
+# Website Builder आर्किटेक्चर
 
 <div class="article-intro">
 
-B1App द्वारा सेवित हर चर्च वेबसाइट एक कंटेंट ट्री से रेंडर होती है — पेज, सेक्शन, एलिमेंट — जो ContentApi में संग्रहीत रहता है और B1Admin में दृश्य रूप से संपादित किया जाता है। एक साझा कंपोनेंट लाइब्रेरी एडिटर का पूर्वावलोकन और लाइव साइट दोनों रेंडर करती है, एक एलिमेंट-टाइप कैटलॉग तय करता है कि पेज पर क्या दिखाई दे सकता है, और एक अलग AI सेवा उस ट्री को बना या दोबारा लिख सकती है। यह पृष्ठ पूरे स्टैक का नक्शा देता है: `@churchapps/helpers` में एलिमेंट कॉन्ट्रैक्ट, रेंडर पाइपलाइन, चर्च-डेटा एलिमेंट, साइट-व्यापी विजेट, ब्लॉग लेयर, एक्सेस-प्रतिबंधित पेज, SEO, AI जनरेशन और बातचीत-शैली के फ़ॉर्म।
+B1App द्वारा परोसी जाने वाली हर चर्च वेबसाइट एक content tree से रेंडर होती है -- pages, sections, elements -- जो ContentApi में संग्रहीत है और B1Admin में दृश्यात्मक रूप से संपादित होती है। एक साझा component library editor preview और लाइव साइट दोनों को रेंडर करती है, एक element-type catalog परिभाषित करता है कि किसी पेज पर क्या आ सकता है, और एक अलग AI सेवा उस tree को generate या rewrite कर सकती है। यह पृष्ठ पूरे स्टैक को मैप करता है: `@churchapps/helpers` में element contract, render pipeline, church-data elements, साइट-व्यापी widgets, blog परत, access-gated pages, SEO, AI generation, और conversational forms।
 
 </div>
 
@@ -36,35 +36,35 @@ B1App द्वारा सेवित हर चर्च वेबसाइ�
 └──────────────────────────────┘             └─────────────────────────────────────────┘
 ```
 
-पूरे स्टैक में तीन नियम लागू होते हैं:
+इस स्टैक में तीन नियम लागू होते हैं:
 
-1. **एक ट्री, दो रेंडरर।** पेज एक `pages → sections → elements` ट्री है, जहाँ हर नोड अपनी सेटिंग्स एक `answers` JSON ब्लॉब में रखता है। वही apphelper कंपोनेंट B1Admin के ड्रैग-एंड-ड्रॉप एडिटर और B1App की सर्वर-रेंडर की गई सार्वजनिक साइट, दोनों को रेंडर करते हैं — कोई अलग "publish format" नहीं है।
-2. **कॉन्ट्रैक्ट `@churchapps/helpers` में रहता है।** `ElementTypes.ts` एलिमेंट टाइप्स का एकमात्र कैटलॉग है; रेंडरर apphelper में एक रजिस्ट्री के माध्यम से रिज़ॉल्व होते हैं; एडिटर फ़ॉर्म B1Admin में रहते हैं। नया एलिमेंट टाइप जोड़ने के लिए इन तीनों को इसी क्रम में छूना होता है।
-3. **सार्वजनिक साइट अनाम एंडपॉइंट पढ़ती है।** B1App को जो कुछ चाहिए — पेज ट्री, सेटिंग्स, ब्लॉग पोस्ट, रीडायरेक्ट, और अन्य मॉड्यूल के चर्च-डेटा एंडपॉइंट — सब सार्वजनिक है। ऑथ वैकल्पिक है: अनाम ट्री एंडपॉइंट पर JWT होने पर केवल सदस्यों-के-लिए पेज खुलते हैं, बाकी कुछ नहीं बदलता।
+1. **एक tree, दो renderers।** एक पेज एक `pages → sections → elements` tree है जहाँ हर नोड अपनी सेटिंग्स एक `answers` JSON blob के रूप में रखता है। वही apphelper components B1Admin का drag-and-drop editor और B1App का सर्वर-रेंडर्ड सार्वजनिक साइट दोनों रेंडर करते हैं -- कोई अलग "publish format" नहीं है।
+2. **contract `@churchapps/helpers` में रहता है।** `ElementTypes.ts` element types की एकमात्र catalog है; renderers apphelper में एक registry के माध्यम से हल होते हैं; editor forms B1Admin में रहते हैं। नया element type जोड़ने का अर्थ है तीनों को इसी क्रम में छूना।
+3. **सार्वजनिक साइट गुमनाम endpoints पढ़ती है।** B1App को जो कुछ भी चाहिए -- pages tree, सेटिंग्स, blog posts, redirects, और अन्य modules के church-data endpoints -- सार्वजनिक है। Auth वैकल्पिक है: गुमनाम tree endpoint पर JWT केवल members-only पेजों को खोलता है, और कुछ नहीं बदलता।
 
-## कंटेंट ट्री
+## Content tree
 
-कंटेंट मॉड्यूल (`Api/src/modules/content`) बिल्डर का डेटा रखता है:
+content module (`Api/src/modules/content`) builder का डेटा रखता है:
 
-| टेबल | भूमिका |
+| Table | भूमिका |
 |-------|------|
-| `pages` | हर URL के लिए एक पेज: `url`, `title`, `layout`, साथ में `visibility`/`groupIds` (एक्सेस गेटिंग) और `metaDescription` (SEO) |
-| `sections` | पेज (या किसी ब्लॉक) पर क्षैतिज पट्टियाँ: बैकग्राउंड, टेक्स्ट रंग, और एक `answersJSON` जिसमें स्टाइलिंग के साथ `dividerTop`/`dividerBottom` शेप-डिवाइडर कॉन्फ़िग रहते हैं |
-| `elements` | सेक्शन के भीतर कंटेंट के टुकड़े: `elementType` + `answersJSON`, लेआउट टाइप्स (row/column, carousel) के लिए एक-दूसरे के भीतर रखे जा सकते हैं |
-| `blocks` | पेजों के बीच साझा होने वाले दोबारा उपयोग योग्य सेक्शन/एलिमेंट समूह (फ़ुटर ब्लॉक, एलिमेंट ब्लॉक) |
-| `posts` | स्वतंत्र ब्लॉग पोस्ट (देखें [ब्लॉग](#blog)) |
-| `redirects` | हर चर्च के लिए `fromPath → toPath` जोड़े, अधिकतम 200 (देखें [SEO](#seo-and-discoverability)) |
-| `settings` | चर्च सेटिंग्स की की-वैल्यू; `public` चिह्नित पंक्तियाँ अनाम रूप से दी जाती हैं और इनमें विजेट/एनालिटिक्स कॉन्फ़िग होता है |
+| `pages` | हर URL के लिए एक पेज: `url`, `title`, `layout`, साथ में `visibility`/`groupIds` (access gating) और `metaDescription` (SEO) |
+| `sections` | एक पेज (या block) पर क्षैतिज पट्टियाँ: background, text color, और एक `answersJSON` जो styling के साथ `dividerTop`/`dividerBottom` shape-divider configs रखता है |
+| `elements` | एक section के भीतर सामग्री टुकड़े: `elementType` + `answersJSON`, layout प्रकारों (row/column, carousel) के लिए nestable |
+| `blocks` | पुन: उपयोग योग्य section/element समूह (footer blocks, element blocks) जो पेजों में साझा होते हैं |
+| `posts` | स्वतंत्र blog posts (देखें [Blog](#blog)) |
+| `redirects` | प्रति-चर्च `fromPath → toPath` जोड़े, 200 तक सीमित (देखें [SEO](#seo-and-discoverability)) |
+| `settings` | key-value चर्च सेटिंग्स; `public` चिह्नित पंक्तियाँ गुमनाम रूप से परोसी जाती हैं और widget/analytics कॉन्फ़िग रखती हैं |
 
-एक URL का पूरा ट्री एक ही अनाम कॉल से वापस आता है — `GET /content/pages/:churchId/tree?url=/about` — और B1App इसी से सर्वर-रेंडर करता है। एडिटर के अनुरोध इसके बजाय id से लाते हैं और आंतरिक id बनाए रखते हैं।
+एक URL के लिए पूरा tree एक एकल गुमनाम कॉल से वापस आता है -- `GET /content/pages/:churchId/tree?url=/about` -- और B1App इसी से सर्वर-रेंडर करता है। editor अनुरोध इसके बजाय id से प्राप्त करते हैं और आंतरिक ids रखते हैं।
 
-## एलिमेंट कॉन्ट्रैक्ट
+## Element contract
 
-### कैटलॉग (`@churchapps/helpers`)
+### Catalog (`@churchapps/helpers`)
 
-`Packages/helpers/src/ElementTypes.ts` हर एलिमेंट टाइप को एक `ElementTypeDefinition` के रूप में परिभाषित करता है: `elementType`, `label`, `category`, `schemaVersion`, `defaults`, और उसके उत्तरों के लिए JSON-schema-शैली का `answersSchema`। `validateElementAnswers()` जानबूझकर उदार है — अज्ञात टाइप और अतिरिक्त कुंजियाँ स्वीकार होती हैं, ताकि कैटलॉग अपग्रेड पर पुराना कंटेंट न टूटे। **आज 35 टाइप शामिल हैं:**
+`Packages/helpers/src/ElementTypes.ts` हर element type को एक `ElementTypeDefinition` के रूप में परिभाषित करता है: `elementType`, `label`, `category`, `schemaVersion`, `defaults`, और उसके answers के लिए एक JSON-schema-शैली `answersSchema`। `validateElementAnswers()` जानबूझकर उदार है -- अज्ञात types और अतिरिक्त keys पास हो जाते हैं, ताकि catalog के अपग्रेड पर पुरानी सामग्री कभी न टूटे। **आज 35 types शिप होते हैं:**
 
-| श्रेणी | एलिमेंट टाइप |
+| Category | Element types |
 |----------|---------------|
 | layout (6) | row, column, box, carousel, whiteSpace, block |
 | content (11) | text, textWithPhoto, card, faq, iconFeature, testimonial, socialIcons, countdown, stats, table, buttonLink |
@@ -72,160 +72,160 @@ B1App द्वारा सेवित हर चर्च वेबसाइ�
 | church (12) | logo, sermons, stream, donation, donateLink, form, calendar, groupList, groups, campaignProgress, staffGrid, serviceTimes |
 | advanced (2) | rawHTML, iframe |
 
-`sermons` एलिमेंट चर्च टाइप्स में सबसे अधिक कॉन्फ़िगर करने योग्य है: `layout` उत्तर `browse` (पुराना पूर्ण ब्राउज़र), `grid`, `list`, या `featuredLatest` चुनता है, और गैर-browse लेआउट को `playlistId`, `itemCount`, `showTitles`, और `showDates` से परिष्कृत किया जाता है।
+`sermons` element चर्च types में सबसे अधिक कॉन्फ़िगर योग्य है: एक `layout` answer `browse` (पुराना पूर्ण browser), `grid`, `list`, या `featuredLatest` चुनता है, जिसमें `playlistId`, `itemCount`, `showTitles`, और `showDates` गैर-browse layouts को परिष्कृत करते हैं।
 
-`rawHTML` एलिमेंट के दो उत्तर हैं: `rawHTML` (मार्कअप) और `javascript`। `innerHTML` के ज़रिए डाली गई स्क्रिप्ट कभी नहीं चलती, इसलिए `RawHTMLElement` मार्कअप में हर `<script>` नोड को एक नए एलिमेंट के रूप में दोबारा बनाता है। ये गैर-parser-inserted नोड CSP के `strict-dynamic` के तहत भरोसेमंद माने जाते हैं। जो `javascript` उत्तर `<` से शुरू होता है (यानी `<script>` टैग समेत पेस्ट किया गया विक्रेता स्निपेट), उसे मार्कअप के रूप में पार्स किया जाता है और उसे वही व्यवहार मिलता है। अन्यथा वह एक सादी इनलाइन स्क्रिप्ट की तरह चलता है। B1Admin JavaScript बॉक्स में अकेले URL को चिह्नित करता है, क्योंकि अकेला URL एक no-op स्क्रिप्ट की तरह चलता है। जब कोई Maps API key कॉन्फ़िगर नहीं होती, तब `map` एलिमेंट कुछ भी रेंडर नहीं करता और Google Maps स्क्रिप्ट लोड नहीं करता।
+`rawHTML` element के दो answers हैं: `rawHTML` (markup) और `javascript`। `innerHTML` के माध्यम से डाली गई scripts कभी execute नहीं होतीं, इसलिए `RawHTMLElement` markup में हर `<script>` node को एक ताज़ा element के रूप में पुनः बनाता है। ये non-parser-inserted nodes CSP के `strict-dynamic` के अंतर्गत विश्वसनीय माने जाते हैं। एक `javascript` answer जो `<` से शुरू होता है (एक vendor snippet जो अपने `<script>` tags के साथ चिपकाया गया है) markup के रूप में parse होता है और वही उपचार पाता है। अन्यथा यह एक साधारण inline script के रूप में चलता है। B1Admin JavaScript बॉक्स में एक अकेले URL को चिह्नित करता है, क्योंकि एक अकेला URL no-op script के रूप में चलता है। `map` element कुछ भी रेंडर नहीं करता, और जब कोई Maps API key कॉन्फ़िगर न हो तो Google Maps script लोड नहीं करता।
 
-### रेंडरर (`@churchapps/apphelper`)
+### Renderers (`@churchapps/apphelper`)
 
-रेंडरर `Packages/apphelper/src/website/components/elementTypes/` में रहते हैं, हर टाइप के लिए एक कंपोनेंट, जो `ElementRegistry.ts` के माध्यम से रिज़ॉल्व होते हैं — यह एक दो-स्तरीय मैप है, जहाँ `Element.tsx` सभी 35 टाइप्स के लिए डिफ़ॉल्ट रेंडरर रजिस्टर करता है (`registerDefaultElementRenderer`), और कोई होस्ट ऐप पैकेज को फ़ोर्क किए बिना रनटाइम पर इनमें से किसी को भी ओवरराइड कर सकता है (`registerElementRenderer`)।
+Renderers `Packages/apphelper/src/website/components/elementTypes/` में रहते हैं, हर type के लिए एक component, `ElementRegistry.ts` के माध्यम से हल होते हैं -- एक दो-परत map जहाँ `Element.tsx` सभी 35 types के लिए डिफ़ॉल्ट renderer register करता है (`registerDefaultElementRenderer`), और एक host app पैकेज को fork किए बिना किसी भी को runtime पर override कर सकता है (`registerElementRenderer`)।
 
-### एडिटर फ़ॉर्म (B1Admin)
+### Editor forms (B1Admin)
 
-एडिटर के हर टाइप के सेटिंग फ़ॉर्म `B1Admin/src/site/admin/elements/` में रहते हैं — `ElementEdit.tsx` एक समर्पित कंपोनेंट (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) या हर टाइप के लिए एक इनलाइन फ़ील्ड बिल्डर को भेजता है। इस कैटलॉग का AI-उन्मुख प्रतिरूप API का MCP टूल `describe_page_builder` है (देखें [MCP Server](../api/mcp))।
+editor के प्रति-type सेटिंग्स forms `B1Admin/src/site/admin/elements/` में रहते हैं -- `ElementEdit.tsx` एक समर्पित component (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) या प्रति type एक inline field builder की ओर भेजता है। इस catalog का AI-facing प्रतिबिंब API का MCP `describe_page_builder` tool है (देखें [MCP Server](../api/mcp))।
 
-एडिटर का पूर्वावलोकन लाइव साइट वाली ही `Theme` माउंट करता है, जो चर्च की ग्लोबल स्टाइल्स से `--headingFont` / `--bodyFont` CSS वेरिएबल सेट करती है। B1App इन वेरिएबल को `pages.css` के माध्यम से लागू करता है, जिसे B1Admin इम्पोर्ट नहीं कर सकता, इसलिए `ContentEditor.tsx` `.page` बॉडी टेक्स्ट और `h1`–`h6` पर इन्हें लागू करने के लिए `EDITOR_PAGE_FONT_CSS` (`src/site/admin/editorCss.ts`) इंजेक्ट करता है। इसके बिना पूर्वावलोकन में हेडिंग एडमिन वाले फ़ॉन्ट में दिखती थीं।
+editor preview वही `Theme` माउंट करता है जो लाइव साइट पर है, जो चर्च की global styles से `--headingFont` / `--bodyFont` CSS variables सेट करता है। B1App इन variables को `pages.css` के माध्यम से लागू करता है, जिसे B1Admin import नहीं कर सकता, इसलिए `ContentEditor.tsx` `EDITOR_PAGE_FONT_CSS` (`src/site/admin/editorCss.ts`) इंजेक्ट करता है ताकि उन्हें `.page` body text और `h1`–`h6` पर लागू किया जा सके। इसके बिना preview में headings admin font में दिखती थीं।
 
-### सेक्शन शेप डिवाइडर
+### Section shape dividers
 
-सेक्शन के किसी भी किनारे पर सजावटी शेप डिवाइडर लग सकते हैं। कॉन्फ़िग सेक्शन के `answersJSON` में `dividerTop` / `dividerBottom` ऑब्जेक्ट के रूप में रहता है — `{ shape, color, height, flip }`, जहाँ `shape` इनमें से एक है: `wave, waves, slant, curve, triangle, peaks`। Apphelper `SectionDivider` कंपोनेंट और `parseDividerConfig()` हेल्पर देता है; दोनों ऐप्स के Section रेंडरर (`B1App/src/components/Section.tsx`, `B1Admin/src/site/admin/Section.tsx`) उत्तर पार्स करके डिवाइडर माउंट करते हैं, और B1Admin का `SectionEdit.tsx` पिकर UI देता है। पैकेज केवल बिल्डिंग ब्लॉक देते हैं — सेक्शन-स्तर की वायरिंग उपभोक्ता ऐप्स का काम है।
+Sections किसी भी किनारे पर सजावटी shape dividers रख सकते हैं। कॉन्फ़िग section के `answersJSON` में `dividerTop` / `dividerBottom` objects के रूप में रहता है -- `{ shape, color, height, flip }` जहाँ `shape` `wave, waves, slant, curve, triangle, peaks` में से एक है। apphelper `SectionDivider` component और `parseDividerConfig()` helper शिप करता है; दोनों apps के Section renderers (`B1App/src/components/Section.tsx`, `B1Admin/src/site/admin/Section.tsx`) answers parse करते हैं और divider माउंट करते हैं, और B1Admin में `SectionEdit.tsx` picker UI देता है। packages केवल building block शिप करते हैं -- section-स्तर की वायरिंग उपभोक्ता apps का काम है।
 
-## चर्च-डेटा एलिमेंट
+## Church-data elements
 
-तीन एलिमेंट टाइप लिखित कंटेंट के बजाय लाइव चर्च डेटा रेंडर करते हैं। मॉड्यूल आइसोलेशन फिर भी लागू होता है — हर एक ब्राउज़र से उस मॉड्यूल का अपना सार्वजनिक एंडपॉइंट कॉल करता है:
+तीन element types लाइव चर्च डेटा रेंडर करते हैं, लिखित सामग्री नहीं। मॉड्यूल अलगाव लागू रहता है -- हर एक ब्राउज़र से मालिक मॉड्यूल का अपना सार्वजनिक endpoint कॉल करता है:
 
-| एलिमेंट | एंडपॉइंट | टिप्पणियाँ |
+| Element | Endpoint | नोट्स |
 |---------|----------|-------|
-| `campaignProgress` | `GET /giving/funds/public/:churchId/:fundId/total` | `{ fundId, totalAmount, donationCount }` लौटाता है, वैकल्पिक `?startDate=&endDate=` अवधि के साथ; एलिमेंट इसकी तुलना अपने `goalAmount` उत्तर से करता है |
-| `staffGrid` | `GET /membership/groupmembers/public/:churchId/:groupId` | **केवल ऑप्ट-इन**: समूह पर `publicRoster` सेट होना चाहिए (डिफ़ॉल्ट बंद)। प्रोजेक्शन जानबूझकर न्यूनतम है — `personId`, `displayName`, `leader`, फ़ोटो — कोई संपर्क या जनसांख्यिकी फ़ील्ड नहीं |
-| `serviceTimes` | `GET /attendance/servicetimes/public/:churchId` | कैंपस → सेवा → समय का ट्री लौटाता है; apphelper रेंडरर इससे सर्वोत्तम-प्रयास वाला schema.org `Event` JSON-LD बनाता है (API सादा डेटा लौटाता है) |
+| `campaignProgress` | `GET /giving/funds/public/:churchId/:fundId/total` | `{ fundId, totalAmount, donationCount }` लौटाता है, वैकल्पिक `?startDate=&endDate=` विंडो के साथ; element इसकी तुलना अपने `goalAmount` answer से करता है |
+| `staffGrid` | `GET /membership/groupmembers/public/:churchId/:groupId` | **केवल opt-in**: समूह पर `publicRoster` सेट होना चाहिए (डिफ़ॉल्ट off)। प्रक्षेपण जानबूझकर न्यूनतम है -- `personId`, `displayName`, `leader`, फ़ोटो -- कोई संपर्क या जनसांख्यिकीय फ़ील्ड नहीं |
+| `serviceTimes` | `GET /attendance/servicetimes/public/:churchId` | campus → service → time tree लौटाता है; apphelper renderer इससे best-effort schema.org `Event` JSON-LD emit करता है (API सादा डेटा लौटाता है) |
 
 :::warning
-`publicRoster` `staffGrid` का गोपनीयता द्वार है। सार्वजनिक ग्रुप-सदस्य प्रोजेक्शन को कभी चौड़ा न करें और न ही इस फ़्लैग को बायपास करें — रोस्टर एंडपॉइंट डिज़ाइन से अनाम है, और न्यूनतम फ़ील्ड सूची ही सुरक्षा का गुण है।
+`publicRoster` `staffGrid` का गोपनीयता द्वार है। सार्वजनिक समूह-सदस्य प्रक्षेपण को कभी चौड़ा न करें या flag को बायपास न करें -- roster endpoint डिज़ाइन से गुमनाम है और न्यूनतम फ़ील्ड सूची ही सुरक्षा गुण है।
 :::
 
-### कैलेंडर एलिमेंट और इवेंट पेज
+### Calendar element और event पेज
 
-`calendar` एलिमेंट के उत्तर हैं `calendarType` (`group` | `curated`), `calendarId`, `display` (`month`, डिफ़ॉल्ट, या `upcoming`), और `tag`। B1App `src/components/Element.tsx` में `registerElementRenderer("calendar", …)` के साथ apphelper रेंडरर को ओवरराइड करता है:
+`calendar` element के answers हैं `calendarType` (`group` | `curated`), `calendarId`, `display` (`month`, डिफ़ॉल्ट, या `upcoming`), और `tag`। B1App `src/components/Element.tsx` में `registerElementRenderer("calendar", …)` के साथ apphelper renderer को override करता है:
 
-- **`display: "upcoming"`** B1App का `UpcomingEventsElement` रेंडर करता है: यह `GET /content/events/public/group/:churchId/:groupId` या `GET /content/curatedEvents/public/calendar/:churchId/:curatedCalendarId` लोड करता है, `buildOccurrences()` (`src/helpers/EventOccurrences.ts`, एक वर्ष के भीतर हर इवेंट के लिए एक घटना) से दोहराव विस्तारित करता है, और पहले 12 को फ़ोटो टाइल्स के रूप में दिखाता है (`events.photoUrl`, फ़ोटो न होने पर थीम के गहरे रंग पर शीर्षक), जो `/events/{id}` से लिंक होती हैं, साथ में कैलेंडर के ICS फ़ीड के लिए एक Subscribe मेनू।
-- **`display: "month"`** apphelper का `CalendarElement` रेंडर करता है, जिसमें एक `eventUrl` कॉलबैक होता है। `GroupCalendar` / `CuratedCalendar` → `EventCalendar` / `CuratedEventCalendar` क्लिक पर विवरण डायलॉग खोलने के बजाय उसी URL पर नेविगेट करते हैं (B1Admin कोई `eventUrl` नहीं देता, इसलिए एडमिन कैलेंडर अपना डायलॉग रखता है)।
-- **`tag`** दोनों डिस्प्ले को `EventHelper.hasTag()` (`@churchapps/helpers`) से फ़िल्टर करता है: कॉमा-से-अलग `events.tags` में केस-इन्सेंसिटिव मिलान; खाली होने पर सब दिखता है। क्यूरेटेड-कैलेंडर जॉइन `e.tags` चुनता है, ताकि क्यूरेटेड इवेंट्स में टैग हों।
+- **`display: "upcoming"`** B1App का `UpcomingEventsElement` रेंडर करता है: यह `GET /content/events/public/group/:churchId/:groupId` या `GET /content/curatedEvents/public/calendar/:churchId/:curatedCalendarId` लोड करता है, `buildOccurrences()` (`src/helpers/EventOccurrences.ts`, एक वर्ष के भीतर हर event के लिए एक occurrence) से पुनरावृत्तियाँ विस्तारित करता है, और पहले 12 को फ़ोटो टाइल्स (`events.photoUrl`, थीम के गहरे रंग पर शीर्षक पर fallback) के रूप में दिखाता है जो `/events/{id}` से लिंक होती हैं, साथ में कैलेंडर के ICS feed के लिए Subscribe मेनू।
+- **`display: "month"`** apphelper का `CalendarElement` रेंडर करता है जिसमें `eventUrl` callback होता है। `GroupCalendar` / `CuratedCalendar` → `EventCalendar` / `CuratedEventCalendar` क्लिक पर विवरण dialog खोलने के बजाय उस URL पर navigate करते हैं (B1Admin `eventUrl` पास नहीं करता, इसलिए admin calendar अपना dialog रखता है)।
+- **`tag`** दोनों displays को `EventHelper.hasTag()` (`@churchapps/helpers`) से फ़िल्टर करता है: comma-separated `events.tags` के विरुद्ध case-insensitive मिलान; खाली होने पर सब कुछ दिखता है। curated-calendar join `e.tags` चुनता है ताकि curated events उन्हें रखें।
 
-क्यूरेटेड इवेंट `realEventId` (`eventPageId()`) से लिंक होते हैं, इसलिए URL हमेशा मूल इवेंट का नाम रखता है। `/{sdSlug}/events/[eventId]` एक समर्पित रूट है (बिल्डर पाइपलाइन नहीं): यह `GET /content/events/public/:churchId/:id` लोड करता है — जो लंबित/अस्वीकृत इवेंट्स और बिना रजिस्ट्रेशन वाले निजी इवेंट्स के लिए `null` लौटाता है, और गैर-अस्वीकृत रूम बुकिंग से `roomNames` जोड़ता है — `EventPageContent` रेंडर करता है (फ़ोटो हीरो, markdown विवरण, When/Where साइडबार, `registrationEnabled` होने पर **Register for this Event**, और `GET .../ical` का **Add to my calendar** लिंक), फ़ोटो को Open Graph इमेज के रूप में उपयोग करता है, और `EventPageJsonLd` के माध्यम से अगली घटना के लिए `Event` JSON-LD देता है। अज्ञात या छिपे इवेंट पर असली 404 लौटता है।
+Curated events `realEventId` (`eventPageId()`) से लिंक होते हैं, इसलिए URL हमेशा अंतर्निहित event का नाम लेता है। `/{sdSlug}/events/[eventId]` एक समर्पित route है (builder pipeline नहीं): यह `GET /content/events/public/:churchId/:id` लोड करता है -- जो pending/rejected events के लिए और बिना registration वाले private events के लिए `null` लौटाता है, और गैर-rejected room bookings से `roomNames` जोड़ता है -- `EventPageContent` रेंडर करता है (फ़ोटो hero, markdown विवरण, When/Where aside, `registrationEnabled` होने पर **Register for this Event**, और `GET /content/events/public/:churchId/:id/ical` के लिए **Add to my calendar** लिंक), फ़ोटो को Open Graph image के रूप में उपयोग करता है, और `EventPageJsonLd` के माध्यम से अगली पुनरावृत्ति के लिए `Event` JSON-LD emit करता है। अज्ञात या छिपा हुआ event एक वास्तविक 404 लौटाता है।
 
-## साइट-व्यापी विजेट
+## साइट-व्यापी widgets
 
-दो विजेट हर सार्वजनिक पेज पर ट्री के भीतर के बजाय रेंडर होते हैं: **AnnouncementBanner** (बंद किया जा सकने वाला ऊपरी पट्टी) और **Launcher** (give/visit/watch-शैली लिंक के लिए फ़्लोटिंग एक्शन हब)। दोनों कंपोनेंट और उनके `parse*Config()` हेल्पर apphelper में आते हैं। कॉन्फ़िगरेशन दो सार्वजनिक settings पंक्तियों में रहता है — कुंजियाँ `announcementBanner` और `launcher` — जो B1Admin का `SiteWidgetsEdit` (Appearance पेज पर) लिखता है और B1App का सार्वजनिक लेआउट `GET /content/settings/public/:churchId` से पढ़ता है। API इन्हें अपारदर्शी की-वैल्यू जोड़ों की तरह लेता है; कुंजी नाम दोनों ऐप्स के बीच की एक परंपरा है।
+दो widgets हर सार्वजनिक पेज पर रेंडर होते हैं, tree के अंदर नहीं: **AnnouncementBanner** (खारिज करने योग्य शीर्ष बार) और **Launcher** (give/visit/watch-शैली लिंकों के लिए फ़्लोटिंग action hub)। दोनों components और उनके `parse*Config()` helpers apphelper में शिप होते हैं। कॉन्फ़िगरेशन दो सार्वजनिक settings पंक्तियाँ हैं -- keys `announcementBanner` और `launcher` -- जो B1Admin के `SiteWidgetsEdit` (Appearance पृष्ठ पर) द्वारा लिखी जाती हैं और B1App की सार्वजनिक layout द्वारा `GET /content/settings/public/:churchId` से पढ़ी जाती हैं। API इन्हें अपारदर्शी key-value जोड़ियों के रूप में मानता है; key नाम दोनों apps के बीच एक परिपाटी हैं।
 
-## ब्लॉग {#blog}
+## Blog
 
-ब्लॉग एक स्वतंत्र कंटेंट टाइप है, बिल्डर पेजों के ऊपर की कोई परत नहीं। `posts` पंक्ति पूरा पोस्ट रखती है: `title`, `slug`, `excerpt`, `content` (markdown बॉडी), `authorId`, `photoUrl`, `publishDate`, `category`, `tags`। सार्वजनिक सतह (सब अनाम, `PostController`):
+blog एक स्वतंत्र content type है, builder पेजों की परत नहीं। एक `posts` पंक्ति पूरा post रखती है: `title`, `slug`, `excerpt`, `content` (markdown body), `authorId`, `photoUrl`, `publishDate`, `category`, `tags`। सार्वजनिक सतह (सभी गुमनाम, `PostController`):
 
-| रूट | उद्देश्य |
+| Route | उद्देश्य |
 |-------|------|
-| `GET /content/posts/public/:churchId` | प्रकाशित पोस्ट, `?category=&tag=` से फ़िल्टर योग्य, पेजिनेटेड |
-| `GET /content/posts/public/:churchId/categories` | प्रकाशित पोस्ट की अलग-अलग श्रेणियाँ |
-| `GET /content/posts/public/:churchId/slug/:slug` | एक प्रकाशित पोस्ट |
-| `GET /content/posts/rss/:churchId?siteUrl=` | RSS 2.0 फ़ीड, चर्च के नाम के शीर्षक के साथ, हर आइटम में श्रेणी और excerpt-या-कंटेंट विवरण |
+| `GET /content/posts/public/:churchId` | प्रकाशित posts, `?category=&tag=` से फ़िल्टर योग्य, पृष्ठांकित |
+| `GET /content/posts/public/:churchId/categories` | प्रकाशित posts में अलग-अलग categories |
+| `GET /content/posts/public/:churchId/slug/:slug` | एक प्रकाशित post |
+| `GET /content/posts/rss/:churchId?siteUrl=` | RSS 2.0 feed, चर्च के नाम पर शीर्षक, प्रति item category और excerpt-या-content विवरण के साथ |
 
-पोस्ट तब "प्रकाशित" होता है जब `publishDate` सेट हो और बीत चुकी हो; भविष्य की `publishDate` एक शेड्यूल्ड पोस्ट है (सार्वजनिक रूप से छिपा, एडमिन में Scheduled चिप के साथ दिखता है)। रीड एंडपॉइंट हर पोस्ट को `authorName` से समृद्ध करते हैं, जो membership मॉड्यूल गेटवे के माध्यम से `authorId` से रिज़ॉल्व होता है। खाली excerpt होने पर लिस्टिंग कार्ड, मेटा विवरण और RSS में markdown-रहित कंटेंट (~160 अक्षर) का उपयोग होता है। B1App `/{sdSlug}/blog` सेवा देता है — एक संपादकीय लिस्टिंग (केंद्रित हेडर, जो फ़िल्टर होने पर सक्रिय श्रेणी/टैग का नाम बन जाता है, श्रेणी-चिप फ़िल्टर पंक्ति, बाईं ओर थंबनेल वाली पोस्ट पंक्तियाँ बायलाइन और excerpt के साथ), और वैकल्पिक लिंक के रूप में RSS फ़ीड का विज्ञापन — और `/{sdSlug}/blog/[postSlug]`, एक समर्पित रूट (Zone/Section पाइपलाइन नहीं), जिसमें केंद्रित हेडर (श्रेणी काइकर, शीर्षक, बायलाइन, primary-color एक्सेंट रूल), कंटेनर चौड़ाई पर 16:9 हीरो, ~720px रीडिंग कॉलम में markdown बॉडी, लेख के फ़ुटर में टैग चिप, `"More in {category}"` संबंधित-पोस्ट पट्टी, और लेखक सहित `BlogPosting` JSON-LD है। दोनों पेज पूरी तरह थीम टोकन से स्टाइल होते हैं, ताकि हर चर्च का पैलेट लागू हो। ब्लॉग URL प्रति-चर्च sitemap में शामिल हैं। B1Admin का लेखन UI (**Site → Blog**) पोस्ट को एक डायलॉग में संपादित करता है: preview टॉगल वाला markdown एडिटर, 16:9 में क्रॉप की गई गैलरी इमेज पिकर, लेखक पर्सन-पिकर (डिफ़ॉल्ट संपादित करने वाला यूज़र), मौजूदा श्रेणियों से सीडेड श्रेणी ऑटोकम्प्लीट, डुप्लिकेट-slug सत्यापन, और प्रकाशन टॉगल; प्रकाशित पंक्तियाँ लाइव पोस्ट से लिंक होती हैं, और पेज एडमिन को `/blog` नेविगेशन लिंक जोड़ने की याद दिलाता है।
+एक post तब "published" है जब `publishDate` सेट और बीत चुकी हो; भविष्य का `publishDate` एक शेड्यूल्ड post है (सार्वजनिक रूप से छिपा, admin में Scheduled चिप के साथ दिखाया गया)। पढ़ने के endpoints हर post को `authorName` से समृद्ध करते हैं, जो membership module gateway के माध्यम से `authorId` से हल होता है। गायब excerpts सूची कार्ड, meta descriptions, और RSS में stripped-markdown content (~160 अक्षर) पर fallback करते हैं। B1App `/{sdSlug}/blog` परोसता है -- एक संपादकीय सूची (केंद्रित header जो फ़िल्टर होने पर सक्रिय category/tag नाम बन जाता है, category-chip फ़िल्टर पंक्ति, बायीं ओर thumbnail वाली post पंक्तियाँ bylines और excerpts के साथ) जिसमें RSS feed एक alternate link के रूप में विज्ञापित है -- और `/{sdSlug}/blog/[postSlug]`, एक समर्पित route (Zone/Section pipeline नहीं) जिसमें केंद्रित header (category kicker, title, byline, primary-color accent rule), container चौड़ाई पर 16:9 hero, ~720px reading column में markdown body, article footer में tag chips, एक `"More in {category}"` related-posts पट्टी, और लेखक सहित `BlogPosting` JSON-LD है। दोनों पेज पूरी तरह theme tokens से style होते हैं ताकि हर चर्च का palette विरासत में मिले। Blog URLs प्रति-चर्च sitemap में शामिल होते हैं। B1Admin का authoring UI (**Site → Blog**) posts को एक dialog में संपादित करता है: preview toggle वाला markdown editor, 16:9-cropped gallery image picker, लेखक person-picker (संपादन करने वाले उपयोगकर्ता पर डिफ़ॉल्ट), मौजूदा categories से seeded category autocomplete, duplicate-slug सत्यापन, और publish toggle; प्रकाशित पंक्तियाँ live post से लिंक होती हैं, और पेज admins को `/blog` navigation लिंक जोड़ने का सुझाव देता है। टिप्पणियाँ तीसरे-पक्ष सेवाओं पर छोड़ी गई हैं: एक चर्च-व्यापी सार्वजनिक content setting `blogFooterHtml` (Blog पृष्ठ पर **Below Every Post** में संपादित, केवल Settings→Edit वालों को दिखता है) हर post के नीचे B1App के `BlogFooterEmbed` द्वारा रेंडर होती है, जो `<script>` tags को फिर से बनाता है ताकि वे `'strict-dynamic'` के अंतर्गत execute हों और उन्हें क्रम से चलाता है (अगली inline script चलने से पहले एक बाहरी `src` पूरा लोड हो जाता है), क्योंकि vendor snippets पहले एक library लोड करते हैं और फिर उसे कॉल करते हैं।
 
-## केवल-सदस्यों के पेज
+## केवल-सदस्य पेज
 
-`pages.visibility` नेविगेशन-लिंक्स का enum दोबारा उपयोग करता है — `everyone` (डिफ़ॉल्ट), `visitors`, `members`, `staff`, `team`, `groups` (`groupIds` के साथ) — लेकिन यह **कठोर एक्सेस गेट** है, नेविगेशन फ़िल्टर नहीं (`PageVisibilityHelper.canViewPage`)। प्रवाह:
+`pages.visibility` navigation-links enum का पुन: उपयोग करता है -- `everyone` (डिफ़ॉल्ट), `visitors`, `members`, `staff`, `team`, `groups` (`groupIds` के साथ) -- लेकिन एक **कठोर access gate** के रूप में, nav filter के रूप में नहीं (`PageVisibilityHelper.canViewPage`)। प्रवाह:
 
-1. अनाम ट्री एंडपॉइंट URL-आधारित फ़ेच पर visibility जाँचता है। गेटेड पेज के अनाम कॉलर को कंटेंट के बजाय `{ restricted: true, visibility }` मिलता है — ट्री कभी लीक नहीं होता।
-2. एंडपॉइंट फिर भी JWT का सम्मान करता है: `CustomAuthProvider` अनाम रूट्स सहित *हर* अनुरोध पर `Authorization` हेडर जाँचता है, इसलिए प्रमाणित सदस्य का उसी URL का फ़ेच सामान्य रूप से रिज़ॉल्व होता है।
-3. `restricted` प्रतिक्रिया पर B1App `RestrictedPage` रेंडर करता है: यह संग्रहीत क्रेडेंशियल से सेशन हाइड्रेट करता है, JWT के साथ ट्री दोबारा फ़ेच करता है और उसे रेंडर करता है — या सेशन न होने पर `returnUrl` के साथ एक लॉगिन गेट दिखाता है।
+1. गुमनाम tree endpoint URL-आधारित fetches पर visibility जाँचता है। एक gated पेज के गुमनाम कॉलर्स को सामग्री के बजाय `{ restricted: true, visibility }` मिलता है -- tree कभी लीक नहीं होता।
+2. endpoint फिर भी JWT का सम्मान करता है: `CustomAuthProvider` *हर* अनुरोध पर `Authorization` header सत्यापित करता है, गुमनाम routes सहित, इसलिए उसी URL का एक प्रमाणित सदस्य का fetch सामान्य रूप से हल होता है।
+3. B1App `restricted` प्रतिक्रिया पर `RestrictedPage` रेंडर करता है: यह संग्रहीत credentials से session hydrate करता है, JWT के साथ tree दोबारा fetch करता है, और उसे रेंडर करता है -- या session न होने पर `returnUrl` के साथ एक login gate दिखाता है।
 
 :::info
-गेट की सूक्ष्मता स्तर के अनुसार अलग है: `groups` टोकन के `groupIds` को पेज की सूची से मिलाता है और `staff` `membershipStatus` जाँचता है, लेकिन `members` और `team` फ़िलहाल चर्च के किसी भी प्रमाणित यूज़र को पास करते हैं। `groups` को कठोर विकल्प मानें।
+gate की सूक्ष्मता स्तर के अनुसार बदलती है: `groups` token के `groupIds` को पेज की सूची से जाँचता है और `staff` `membershipStatus` जाँचता है, लेकिन `members` और `team` वर्तमान में चर्च के किसी भी प्रमाणित उपयोगकर्ता को पास करते हैं। `groups` को सख्त विकल्प मानें।
 :::
 
-## SEO और खोज-योग्यता {#seo-and-discoverability}
+## SEO और खोज योग्यता {#seo-and-discoverability}
 
-यह सब ContentApi डेटा पर B1App-साइड रेंडरिंग है — API संग्रहीत करता है, ऐप उत्सर्जित करता है:
+यह सब ContentApi डेटा पर B1App-side रेंडरिंग है -- API संग्रहीत करता है, ऐप उत्सर्जित करता है:
 
 | विषय | यह कैसे काम करता है |
 |---------|--------------|
-| मेटा विवरण | `pages.metaDescription` (≤300 अक्षर) `MetaHelper.getMetaData()` के माध्यम से हर बिल्डर-रेंडर रूट पर Next.js `Metadata` (description + Open Graph) में जाता है। B1Admin की पेज सेटिंग्स में एक AI "Generate" बटन है (नीचे देखें) |
-| रीडायरेक्ट | प्रति-चर्च `redirects` पंक्तियाँ `/content/redirects` पर प्रबंधित (`content.edit`, 200-पंक्ति सीमा, सामान्यीकृत पाथ)। संभावित 404 पर B1App का पेज रूट पाथ को `GET /content/redirects/public/:churchId` से मिलाता है और Next के `permanentRedirect` से HTTP 308 जारी करता है; बिना मिलान वाले पाथ `notFound()` पर जाते हैं |
-| ब्रांडेड 404 | `not-found.tsx` सामान्य एरर के बजाय चर्च के लोगो, नाम और थीम के साथ `BrandedNotFound` रेंडर करता है। अज्ञात `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]`, और `/volunteer/[planId]` पाथ असली 404 लौटाते हैं, जैसे अज्ञात सबडोमेन और गलत पेज slug (देखें [Website Routing & Multi-Site](./websites)) |
-| स्ट्रक्चर्ड डेटा | blog पोस्ट पर `BlogPosting` JSON-LD; प्रति-सर्मन पेज (`/{sdSlug}/sermons/[sermonId]`) पर और `sermons` एलिमेंट वाले पेजों पर `VideoObject`; बिल्डर पेजों पर calendar/event एलिमेंट और हर `/{sdSlug}/events/[eventId]` पेज पर `Event` (अगली घटना, इवेंट फ़ोटो `image` के रूप में); `serviceTimes` एलिमेंट से schema.org `Event` |
-| सर्मन पेज | हर सार्वजनिक सर्मन को `/sermons/[sermonId]` पर एक क्रॉल योग्य पेज मिलता है, पूर्ण मेटाडेटा के साथ — सर्मन अब क्लाइंट-साइड ब्राउज़र एलिमेंट के अंदर बंद नहीं हैं |
-| एनालिटिक्स | सार्वजनिक settings कुंजी `ga4MeasurementId` (B1Admin में रीडायरेक्ट के साथ प्रबंधित) `next/script` के माध्यम से प्रति-चर्च GA4 gtag इंजेक्ट करती है। B1 ऐप (`/{sdSlug}/mobile`) भी वैध `G-` ID होने पर अपने पेज व्यू उसी ID पर भेजता है, ChurchApps के अपने टैग के साथ (GTM कंटेनर ID केवल वेबसाइट पर रहते हैं)। हर `gtag('config')` में `display_mode` होता है, `installed` या `browser`, जो `navigator.standalone` या `(display-mode: standalone)` मीडिया क्वेरी पर आधारित है (`B1App/src/helpers/mobileAnalytics.ts`) |
-| Sitemap और फ़ीड | प्रति-चर्च `sitemap.xml` रूट में बिल्डर पेज, ब्लॉग URL, और 50 सबसे हाल के सर्मन पेज (हर सर्मन की प्रकाशन तिथि से `<lastmod>` के साथ) शामिल हैं। इसमें बिल्ट-इन `/sermons`, `/groups`, और `/volunteer` पेज भी शामिल हैं जब उनमें कंटेंट हो (सार्वजनिक ग्रुप, सेवा प्लान), जब तक कोई सहेजा गया रीडायरेक्ट उस पाथ को न बदले। चर्च के पास होम पेज न होने पर `/` को छोड़ दिया जाता है, क्योंकि तब `/` अननुमत `/mobile` पर रीडायरेक्ट होता है। ब्लॉग लिस्टिंग RSS फ़ीड का विज्ञापन करती है |
-| एक्सेसिबिलिटी | सार्वजनिक चौखटा हर लेआउट रैपर में `<main id="main-content">` लैंडमार्क की ओर इशारा करने वाला एक स्किप लिंक रेंडर करता है |
+| Meta descriptions | `pages.metaDescription` (≤300 अक्षर) `MetaHelper.getMetaData()` से हर builder-रेंडर्ड route पर Next.js `Metadata` (description + Open Graph) में बहता है। B1Admin की page settings में एक AI "Generate" बटन है (नीचे देखें) |
+| Redirects | `/content/redirects` (`content.edit`, 200-पंक्ति सीमा, normalized paths) पर प्रबंधित प्रति-चर्च `redirects` पंक्तियाँ। संभावित 404 पर, B1App का page route पथ को `GET /content/redirects/public/:churchId` के विरुद्ध हल करता है और Next के `permanentRedirect` के माध्यम से HTTP 308 जारी करता है; बिना मिलान वाले पथ `notFound()` पर गिरते हैं |
+| Branded 404 | `not-found.tsx` सामान्य त्रुटि के बजाय चर्च के लोगो, नाम, और थीम के साथ `BrandedNotFound` रेंडर करता है। अज्ञात `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]`, और `/volunteer/[planId]` पथ एक वास्तविक 404 लौटाते हैं, जैसे अज्ञात subdomains और गलत आकार वाले page slugs (देखें [Website Routing & Multi-Site](./websites)) |
+| Structured data | blog posts पर `BlogPosting` JSON-LD; प्रति-sermon पेजों (`/{sdSlug}/sermons/[sermonId]`) और `sermons` element वाले पेजों पर `VideoObject`; builder पेजों पर calendar/event elements से और हर `/{sdSlug}/events/[eventId]` पेज पर `Event` (अगली पुनरावृत्ति, event की फ़ोटो `image` के रूप में); `serviceTimes` element से schema.org `Event` |
+| Sermon पेज | हर सार्वजनिक sermon को पूर्ण metadata के साथ `/sermons/[sermonId]` पर एक crawlable पेज मिलता है -- sermons अब client-side browser element के अंदर बंद नहीं हैं |
+| Analytics | सार्वजनिक setting key `ga4MeasurementId` (B1Admin में redirects के बगल में प्रबंधित) `next/script` के माध्यम से प्रति-चर्च GA4 gtag इंजेक्ट करती है। B1 ऐप (`/{sdSlug}/mobile`) भी ChurchApps के अपने tag के साथ अपने page views उस ID पर भेजता है, जब वह एक वैध `G-` ID हो (GTM container IDs केवल वेबसाइट पर रहते हैं)। हर `gtag('config')` में `navigator.standalone` या `(display-mode: standalone)` media query के आधार पर `installed` या `browser` का `display_mode` होता है (`B1App/src/helpers/mobileAnalytics.ts`) |
+| Sitemap और feeds | प्रति-चर्च `sitemap.xml` route में builder पेज, blog URLs, और 50 सबसे हाल के sermon पेज (हर sermon की publish तारीख से `<lastmod>` के साथ) शामिल हैं। यह built-in `/sermons`, `/groups`, और `/volunteer` पेज भी सूचीबद्ध करता है जब उनमें सामग्री हो (सार्वजनिक समूह, साइनअप योजनाएँ), जब तक कोई सहेजा गया redirect उस पथ को न बदले। `/` तब छोड़ा जाता है जब चर्च का कोई home पेज न हो, क्योंकि तब `/` अननुमत `/mobile` पर redirect करता है। blog listing RSS feed का विज्ञापन करती है |
+| Accessibility | सार्वजनिक chrome हर layout wrapper में `<main id="main-content">` landmark को लक्षित एक skip link रेंडर करता है |
 
-## AI जनरेशन (AskApi)
+## AI generation (AskApi)
 
-पेज और साइट जनरेशन **AskApi** में चलती है, जो एक अलग सेवा है और `/website` कंट्रोलर के अंतर्गत है। यह उसी `CustomAuthProvider` JWT से प्रमाणित होती है और **कंटेंट के संदर्भ में स्टेटलेस** है: हर एंडपॉइंट JSON लौटाता है और कॉलर (B1Admin) परिणाम ContentApi के माध्यम से सहेजता है (`POST /content/pages/importTree` पूरे नेस्टेड सेक्शन/एलिमेंट ट्री के साथ एक कॉल में पेज बनाता है; यह हमेशा कॉलर के चर्च के अंतर्गत डालता है और बॉडी में दिए ids को अनदेखा करता है)।
+पेज और साइट generation **AskApi**, एक अलग सेवा में चलता है, `/website` controller के अंतर्गत। यह बाकी सब की तरह उसी `CustomAuthProvider` JWT से प्रमाणित होता है और content के संबंध में **stateless** है: हर endpoint JSON लौटाता है और कॉलर (B1Admin) परिणाम को ContentApi के माध्यम से सहेजता है (`POST /content/pages/importTree` एक पेज को उसके पूरे nested section/element tree के साथ एक कॉल में बनाता है; यह हमेशा कॉलर के चर्च में insert करता है और body में ids को अनदेखा करता है)।
 
-### पेज जनरेशन (`planPage` → `writePage`)
+### पेज generation (`planPage` → `writePage`)
 
-B1Admin के `AddPageModal` में "AI" पेज टेम्पलेट एक कम-लागत पाइपलाइन (`AskApi/src/helpers/SiteGenHelper.ts`) उपयोग करता है, जो एक नियम पर बनी है: **कोई भी मॉडल कभी बिल्डर JSON नहीं बनाता**। दो मॉडल Vercel AI Gateway के माध्यम से काम बाँटते हैं (सादा HTTP, SSM key `/{env}/aiGatewayApiKey` या `AI_GATEWAY_API_KEY`):
+B1Admin के `AddPageModal` में "AI" पेज template एक कम-लागत पाइपलाइन (`AskApi/src/helpers/SiteGenHelper.ts`) का उपयोग करता है, जो एक नियम पर बना है: **कोई model कभी builder JSON उत्सर्जित नहीं करता**। दो models Vercel AI Gateway के माध्यम से काम बाँटते हैं (सादा HTTP, SSM key `/{env}/aiGatewayApiKey` या `AI_GATEWAY_API_KEY`):
 
-- **JEV** (`typesafe-ai/jev`) — एक टाइप्ड-निर्णय मॉडल जो संभावनाओं के साथ विकल्प, स्कोर और बूलियन लौटाता है, पर टेक्स्ट नहीं लिख सकता। यह एक निश्चित टेम्पलेट लाइब्रेरी से हर सेक्शन क्रम से चुनता है, लेआउट स्कोर करता है, कॉपी के तथ्य जाँचता है, और स्टॉक फ़ोटो व आइकन चुनता है। इनपुट लगभग $0.04 प्रति मिलियन टोकन है और आउटपुट मुफ़्त है, इसलिए प्रति पेज ~90 कॉल की लागत एक सेंट के अंश भर है।
-- **एक छोटा चैट मॉडल (डिफ़ॉल्ट रूप से GPT-4.1 mini)** — चुने गए टेम्पलेट्स के नामित, लंबाई-सीमित टेक्स्ट स्लॉट भरता है। राइटर एक स्थिरांक है, जिसे `SITEGEN_COPY_MODEL` पर्यावरण चर से बदला जा सकता है (गेटवे पर कोई भी चैट मॉडल ID, उदाहरण `anthropic/claude-haiku-4.5`)। तीन चर्चों पर साइड-बाय-साइड परीक्षण में Claude Haiku 4.5 थोड़ा अधिक गर्मजोशी भरा लगा, लेकिन GPT-4.1 mini लगभग बराबर था, लगभग 4 गुना सस्ता और तेज़ था, इसलिए वही डिफ़ॉल्ट है। तीनों लेआउट वाले पूरे पेज की लागत लगभग 1.3 सेंट है, जिसका ~80% हिस्सा राइटर का है।
+- **JEV** (`typesafe-ai/jev`) — एक typed-decision model जो probabilities के साथ choices, scores, और booleans लौटाता है लेकिन टेक्स्ट नहीं लिख सकता। यह एक निश्चित template library से हर section को बारी-बारी से चुनता है, layouts को स्कोर करता है, copy के तथ्य जाँचता है, और stock फ़ोटो और icons चुनता है। input लगभग $0.04 प्रति मिलियन tokens है और output मुफ़्त है, इसलिए प्रति पेज ~90 calls एक पैसे के अंश की लागत हैं।
+- **एक छोटा chat model (डिफ़ॉल्ट रूप से GPT-4.1 mini)** — चुने गए templates की नामित, लंबाई-सीमित टेक्स्ट slots भरता है। writer एक constant है, जिसे `SITEGEN_COPY_MODEL` environment variable से override किया जा सकता है (gateway पर कोई भी chat model id, जैसे `anthropic/claude-haiku-4.5`)। तीन चर्चों पर एक blind side-by-side में Claude Haiku 4.5 थोड़ा अधिक गर्म पढ़ा गया, लेकिन GPT-4.1 mini करीब था, लगभग 4 गुना सस्ता और तेज़ था, इसलिए यह डिफ़ॉल्ट है। तीनों layouts वाले पूरे पेज की लागत लगभग 1.3 सेंट है, जिसका लगभग 80% writer का है।
 
-| चरण | एंडपॉइंट | क्या होता है |
-|-------|-------|-------|
-| 1 | `POST /website/planPage` | पेज प्रकार (home, visit, about…) वर्गीकृत करता है, फिर JEV की प्रति-राउंड संभावनाओं से 10 उम्मीदवार लेआउट नमूने लेता है (हीरो + सेक्शन संख्या → हर सेक्शन → क्लोज़र), दोहराव हटाता है, JEV से हर एक को फ़िट/फ़्लो/गैप के लिए स्कोर करवाता है, और शीर्ष 3 लौटाता है, साथ में एक लेखन स्वर और `suggestedStyle` (पैलेट + फ़ॉन्ट)। जो उम्मीदवार अब तक एक जैसे सेक्शन साझा करते हैं, वे JEV से एक जैसा प्रश्न पूछते हैं, इसलिए राउंड्स प्रीफ़िक्स के आधार पर मेमोइज़ किए जाते हैं। 6 से कम का सर्वोत्तम स्कोर `lowLayoutScore` के रूप में लॉग होता है — वही लॉग उन टेम्पलेट्स की सूची है जो जोड़ने लायक हैं। ~2 सेकंड |
-| 2 | `POST /website/writePage` (हर उम्मीदवार पर एक कॉल) | राइटर स्लॉट कॉपी को हर कॉल में दो सेक्शन के हिसाब से, समानांतर में भरता है, और पाँच हीरो हेडलाइन लौटाता है जिनमें से JEV चुनता है; JEV हर सेक्शन के तथ्य जाँचता है; जो सेक्शन विफल होते हैं, स्टॉक वाक्यांश इस्तेमाल करते हैं, या किसी पिछले सेक्शन को दोबारा कहते हैं (कोड में जाँचे गए साझा 4-शब्द क्रम), उन्हें कारण सहित समानांतर में दोबारा लिखा जाता है; कोड-स्तर की सफ़ाई उन स्टॉक चर्च-साइट वाक्यों को हटाती है जो चर्च के अपने विवरण में न हों; JEV फ़ोटो विषय, आइकन और हीरो का शेप डिवाइडर चुनता है, और परिणाम स्कोर करता है। सहेजने के लिए तैयार सेक्शन ट्री और स्कोर लौटाता है। ~6–9 सेकंड |
-| 3 | `POST /content/pages/importTree` | B1Admin केवल सर्वोत्तम-रैंक वाला लेआउट लिखता है (लिखना विफल हो तो दूसरा विकल्प फ़ॉलबैक है), उसे सहेजता है और पूर्वावलोकन खोलता है (Save के ~10 सेकंड बाद) |
+| चरण | Endpoint | क्या होता है |
+|-------|----------|--------------|
+| 1 | `POST /website/planPage` | पेज प्रकार (home, visit, about…) को वर्गीकृत करता है, फिर JEV की प्रति-राउंड probabilities से 10 उम्मीदवार layouts नमूना लेता है (hero + section count → हर section → closer), deduplicate करता है, JEV से हर एक को fit/flow/gaps के लिए स्कोर कराता है, और शीर्ष 3 के साथ लेखन voice और `suggestedStyle` (palette + fonts) लौटाता है। अब तक एक ही sections साझा करने वाले उम्मीदवार JEV से एक समान प्रश्न पूछते हैं, इसलिए राउंड prefix द्वारा memoized होते हैं। 6 से कम सर्वोत्तम स्कोर `lowLayoutScore` के रूप में लॉग होता है -- वह लॉग उन templates का backlog है जिन्हें जोड़ना उचित है। ~2s |
+| 2 | `POST /website/writePage` (हर उम्मीदवार पर एक कॉल) | writer slot copy को प्रति कॉल दो sections में, समानांतर में भरता है, और पाँच hero headlines लौटाता है जिनमें से JEV चुनता है; JEV हर section के तथ्य जाँचता है; वे sections जो विफल होते हैं, stock phrase उपयोग करते हैं, या किसी पिछले section को दोहराते हैं (साझा 4-शब्द runs, कोड में जाँचे गए) विशिष्ट कारण के साथ समानांतर में फिर लिखे जाते हैं; एक कोड scrub stock चर्च-साइट वाक्यांशों वाले वाक्य हटाता है (जब तक चर्च का अपना विवरण उन्हें उपयोग न करे); JEV photo subjects, icons, और hero के shape divider चुनता है, और परिणाम स्कोर करता है। एक तैयार-सेव करने योग्य section tree और एक स्कोर लौटाता है। ~6–9s |
+| 3 | `POST /content/pages/importTree` | B1Admin केवल सर्वोच्च-रैंक वाला layout लिखता है (यदि वह लिखना विफल हो तो दूसरा fallback होता है), उसे सहेजता है और preview खोलता है (Save के ~10s बाद) |
 
-हर चरण अपना अलग अनुरोध है, ताकि हर कॉल API Gateway की 29-सेकंड सीमा में रहे। `SiteGenHelper.buildTree` के टेम्पलेट कैटलॉग के निश्चित सेक्शन + एलिमेंट ट्री हैं (`text`, `row`/`column`, `card`, `iconFeature`, `faq`, `table`, `testimonial`, `textWithPhoto`, `box`, `map`, `sermons`) और थीम टोकन (`var(--accent)`, `var(--lightAccent)`…) का संदर्भ देते हैं, इसलिए जनरेट किए गए पेज चर्च की मौजूदा दिखावट सेटिंग्स अपनाते हैं। नया सेक्शन टेम्पलेट जोड़ने का अर्थ है उसकी स्लॉट सूची को `SECTIONS` में और उसका ट्री `buildTree` में जोड़ना; यूनिट टेस्ट हर टेम्पलेट को चलाकर उसके ट्री को सत्यापित करता है।
+हर चरण अपना अनुरोध है ताकि हर कॉल API Gateway की 29-सेकंड सीमा के भीतर रहे। `SiteGenHelper.buildTree` में templates catalog से निश्चित section + element trees हैं (`text`, `row`/`column`, `card`, `iconFeature`, `faq`, `table`, `testimonial`, `textWithPhoto`, `box`, `map`, `sermons`) और theme tokens (`var(--accent)`, `var(--lightAccent)`…) का संदर्भ देते हैं, इसलिए generated पेज चर्च की मौजूदा appearance सेटिंग्स विरासत में लेते हैं। एक section template जोड़ने का अर्थ है उसकी slot सूची को `SECTIONS` में और उसके tree को `buildTree` में जोड़ना; unit test हर template को चलाकर tree को सत्यापित करता है।
 
-**इनपुट।** कॉपी केवल दो स्रोतों के तथ्य कह सकती है: उपयोगकर्ता ने जो टाइप किया, और `churchContext.facts` — वे रिकॉर्ड जो B1Admin योजना से पहले इकट्ठा करता है (सार्वजनिक सेवा समय और सार्वजनिक ग्रुप नाम, साथ में चर्च का नाम और पता)। वही फ़्लैग डेटा-आधारित टेम्पलेट्स को नियंत्रित करते हैं: `times` लाइव `serviceTimes` एलिमेंट रेंडर करता है जब चर्च अपने सेवा समय B1 में रखता है (अन्यथा एक टाइप्ड टेबल), और `groups` व `countdown` केवल तभी पेश होते हैं जब उनके पीछे डेटा हो। JEV कॉल हेजेड हैं — 1.5 सेकंड पर एक डुप्लिकेट कॉल जाती है और पहला उत्तर जीतता है — क्योंकि गेटवे कभी-कभी रुक जाता है और कॉल लगभग मुफ़्त हैं।
+**इनपुट।** copy केवल दो स्रोतों के तथ्य बता सकती है: जो उपयोगकर्ता ने टाइप किया, और `churchContext.facts` -- योजना से पहले B1Admin द्वारा एकत्र किए गए रिकॉर्ड (सार्वजनिक service times और सार्वजनिक समूहों के नाम, साथ में चर्च का नाम और पता)। वही flags data-आधारित templates को गेट करते हैं: `times` तब लाइव `serviceTimes` element रेंडर करता है जब चर्च B1 में service times रखता है (अन्यथा टाइप की गई तालिका); `groups` और `countdown` केवल तभी ऑफ़र होते हैं जब उनके पीछे डेटा हो। JEV कॉल hedged हैं -- 1.5s के बाद एक duplicate fire होता है और पहला उत्तर जीतता है -- क्योंकि gateway कभी-कभी रुकता है और कॉल लगभग मुफ़्त हैं।
 
-**विषय पर बने रहना।** उपयोगकर्ता का प्रॉम्प्ट *पेज का विषय* है, चर्च की पृष्ठभूमि नहीं। `planPage` अनुरोध को वर्गीकृत करता है (`home`, `visit`, `about`, `ministries`, `give`, `contact`, `event`, `topic`), और `event` व `topic` पेजों के लिए सामान्य-चर्च टेम्पलेट्स (पादरी नोट, सर्मन, मंत्रालय, ग्रुप, सामुदायिक प्रभाव, साप्ताहिक समय और काउंटडाउन, वीडियो हीरो) पेश ही नहीं किए जाते, जबकि `details` (कब / कहाँ / क्या लाना) और तारीख वाला `eventCountdown` पेश होते हैं। दोनों जज विषय-संगतता पर स्कोर करते हैं। B1Admin प्लान से `pageType` हर `writePage` कॉल में भेजता है।
+**विषय पर बने रहना।** उपयोगकर्ता का prompt *पेज का विषय* है, चर्च की पृष्ठभूमि नहीं। `planPage` अनुरोध को वर्गीकृत करता है (`home`, `visit`, `about`, `ministries`, `give`, `contact`, `event`, `topic`), और `event` और `topic` पेजों के लिए सामान्य-चर्च templates (pastor note, sermons, ministries, groups, community impact, weekly times and countdown, video hero) ऑफ़र ही नहीं होते, जबकि `details` (कब / कहाँ / क्या लाना) और एक तारीख `eventCountdown` ऑफ़र होते हैं। दोनों judges विषय-संगतता पर स्कोर करते हैं। B1Admin हर `writePage` कॉल में योजना से `pageType` पास करता है।
 
-**छोटे अनुरोधों से पूरे पेज।** पेजों में बीच में तीन से छह सेक्शन होते हैं, उदार स्लॉट लंबाई, कार्ड सेक्शन पर एक परिचय पंक्ति और पाँच-प्रश्न वाला FAQ; मरम्मत पास कोई भी पतला लौटा सेक्शन विस्तारित करता है। जनरेशन एक क्लिक में होती है: कोई फ़ॉलो-अप प्रश्न नहीं होते। जहाँ अनुरोध किसी सामान्य विवरण को छोड़ता है जो पूरे पेज के लिए ज़रूरी है (शुरुआत का समय, कमरा, क्या लाना, कैसे साइन अप करें), वहाँ राइटर एक विश्वसनीय, संयत विकल्प भर देता है, जिसे चर्च संपादित कर सकता है। चूँकि सेक्शन समानांतर लिखे जाते हैं, ये विवरण **एक बार** `planPage` में तय होते हैं (`assumedDetails`, एक छोटी राइटर कॉल जो लेआउट सैंपलिंग के साथ चलती है) और `churchContext.assumedDetails` के माध्यम से हर `writePage` कॉल में वापस भेजे जाते हैं, ताकि एक सेक्शन 5:00 न कहे और दूसरा 5:30। JEV उस सेक्शन की मरम्मत करता है जो अनुरोध, चर्च के रिकॉर्ड या तय विवरणों के विरुद्ध हो। तय विवरण UI में नहीं दिखाए जाते; चर्च पेज की समीक्षा और संपादन बाकी पेज की तरह करता है। कुछ चीज़ें कभी नहीं बनाई जातीं: लोगों के नाम, फ़ोन नंबर, ईमेल और वेब पते, कीमतें, आँकड़े, चर्च का इतिहास, लोगों को दिए गए उद्धरण, और वह सप्ताह का दिन जो अनुरोध ने नहीं दिया हो।
+**छोटे अनुरोधों से पूर्ण पेज।** पेजों में तीन से छह बीच के sections, उदार slot लंबाइयाँ, card sections पर एक परिचय पंक्ति, और पाँच-प्रश्न FAQ होते हैं, और repair pass कोई भी पतला section लौटने पर उसे विस्तारित करता है। generation एक क्लिक है: कोई follow-up प्रश्न नहीं होते। जहाँ अनुरोध कोई सामान्य विवरण छोड़ता है जो एक पूर्ण पेज को चाहिए (एक शुरुआत समय, कमरा, क्या लाना, कैसे साइन अप करें), writer उसे चर्च के संपादित करने के लिए एक विश्वसनीय, सामान्य विकल्प से भरता है। क्योंकि sections समानांतर में लिखे जाते हैं, उन अंतरालों को **एक बार** `planPage` (`assumedDetails`, एक छोटी writer कॉल जो layout नमूने के साथ चलती है) में तय किया जाता है, और `churchContext.assumedDetails` के माध्यम से हर `writePage` कॉल को वापस पास किया जाता है, ताकि एक section 5:00 न कहे जबकि दूसरा 5:30 कहे। JEV किसी भी section को सुधारता है जो अनुरोध, चर्च के रिकॉर्ड, या उन तय विवरणों का विरोध करता है। तय किए गए विवरण UI में नहीं दिखाए जाते; चर्च पेज की समीक्षा और संपादन किसी और पेज की तरह करता है। कुछ चीज़ें कभी गढ़ी नहीं जातीं: लोगों के नाम, फ़ोन नंबर, ईमेल और वेब पते, कीमतें, आँकड़े, चर्च का इतिहास, लोगों को श्रेय दिए गए उद्धरण, और उस तारीख के लिए सप्ताह का दिन जिसके लिए अनुरोध ने दिन नहीं दिया।
 
-**विज़ुअल्स।** टेम्पलेट कभी अपनी फ़ोटो या आइकन का नाम नहीं लेते। वे स्लॉट खुले छोड़ते हैं, और एक सामान्य पास (`SiteGenHelper` में `visualSlots` → `pickVisuals` → `applyVisuals`) तैयार ट्री में चलकर हर स्लॉट भरता है: `auto:photo` चिह्नित सेक्शन बैकग्राउंड या गैलरी एंट्री, `auto:icon`, हीरो का `auto:divider`, और बिना किसी मार्कर के भी कोई भी `textWithPhoto`, `card` या `image` एलिमेंट जिसका `photo` खाली हो। JEV हर एक को उसके बगल के टेक्स्ट से चुनता है (कार्ड की फ़ोटो उस कार्ड के शीर्षक और टेक्स्ट से; बैकग्राउंड सेक्शन की कॉपी से), और एक पेज पर कोई विषय दोहराया नहीं जाता। इसलिए नए टेम्पलेट को मुफ़्त में फ़ोटो मिल जाती हैं। फ़ोटो Pexels खोज विषय हैं जो `pexels:<term>` प्लेसहोल्डर के रूप में जाते हैं, जिन्हें B1Admin `POST /content/stock/search` से हल करता है; जो क्लाइंट `resolvesPhotos` नहीं भेजता, उसे बिल्ट-इन हीरो इमेज, सपाट रंगीन पट्टियाँ और बिना फ़ोटो वाले कार्ड मिलते हैं। जानबूझकर कोई पोर्ट्रेट विषय नहीं होते और पादरी टेम्पलेट में कोई फ़ोटो नहीं होती: कोई स्टॉक अजनबी असली व्यक्ति की जगह नहीं ले सकता। जिस चर्च का अभी कोई पेज नहीं है, B1Admin `suggestedStyle` को ग्लोबल स्टाइल्स पर लागू करता है; मौजूदा साइटें अपना रूप रखती हैं।
+**विज़ुअल।** templates अपने फ़ोटो या icons का नाम नहीं लेते। वे slots खुले छोड़ते हैं, और एक सामान्य pass (`visualSlots` → `pickVisuals` → `applyVisuals` in `SiteGenHelper`) तैयार tree में चलकर हर एक भरता है: `auto:photo` चिह्नित section background या gallery entry, एक `auto:icon`, hero का `auto:divider`, और बिना किसी marker के, कोई भी `textWithPhoto`, `card` या `image` element जिसका `photo` खाली है। JEV हर एक को उसके बगल के टेक्स्ट से चुनता है (एक card की फ़ोटो उस card के शीर्षक और टेक्स्ट से; एक background section की copy से), पेज पर कोई विषय दोहराए बिना। इसलिए एक नया template मुफ़्त में फ़ोटो पाता है। फ़ोटो Pexels search subjects हैं जो `pexels:<term>` placeholders के रूप में उत्सर्जित होते हैं, जिन्हें B1Admin `POST /content/stock/search` के माध्यम से हल करता है; जो client `resolvesPhotos` नहीं भेजता उसे इसके बजाय एक अंतर्निर्मित hero image, सपाट रंगीन पट्टियाँ और बिना फ़ोटो वाले cards मिलते हैं। जानबूझकर कोई portrait subjects नहीं हैं और pastor template में कोई फ़ोटो नहीं होती: एक stock अजनबी कभी किसी असली व्यक्ति की जगह नहीं ले सकता। जिस चर्च के पास अभी कोई पेज नहीं है, B1Admin `suggestedStyle` को global styles पर लागू करता है; मौजूदा साइटें अपना रूप रखती हैं।
 
-### अन्य एंडपॉइंट
+### अन्य endpoints
 
 :::info
-B1Admin में `SectionToolbar` का rewrite बटन और पेज-सूची का "Generate Site" बटन क्लाइंट-साइड पर कमेंट-आउट है। नीचे के AskApi एंडपॉइंट अभी भी जवाब देते हैं; केवल वह UI छिपा है।
+B1Admin में `SectionToolbar` का rewrite बटन और pages-list का "Generate Site" बटन client-side पर टिप्पणी में रहते हैं। नीचे के AskApi endpoints फिर भी प्रतिक्रिया देते हैं; केवल वह UI छिपा है।
 :::
 
-| एंडपॉइंट | उद्देश्य |
+| Endpoint | उद्देश्य |
 |----------|---------|
-| `POST /website/generatePageOutline` → `generateSection` | मूल दो-चरणीय पेज प्रवाह (आउटलाइन, फिर हर सेक्शन के लिए एक LLM कॉल जो एलिमेंट JSON देता है)। लागत के कारण B1Admin में `planPage`/`writePage` से बदल दिया गया; API उपभोक्ताओं के लिए रखा गया है |
-| `POST /website/generateSite` | पूरी-साइट जनरेशन। **डिज़ाइन से दो-चरणीय**: `planOnly: true` कॉल केवल बहु-पेज योजना लौटाता है (एक तेज़ मॉडल कॉल), फिर क्लाइंट पूरा कंटेंट माँगता है — ताकि हर अनुरोध Lambda/API-Gateway टाइमआउट के भीतर रहे |
-| `POST /website/rewriteSection` | संरचना-संरक्षित दोबारा लेखन: मॉडल केवल टेक्स्ट-धारी उत्तर बदल सकता है। पहले और बाद में एक रिकर्सिव संरचना हस्ताक्षर (ids + types + order) की तुलना होती है; कोई असमानता हो तो `fallback: true` के साथ मूल सेक्शन लौटता है, बिगड़ी संरचना के बजाय |
-| `POST /website/generateAltText` | 20 इमेज URL तक पर विज़न कॉल; संक्षिप्त alt टेक्स्ट लौटाता है (≤125 अक्षर, "photo of" उपसर्ग हटाए गए) |
-| `POST /website/generateMetaDescription` | पेज के टेक्स्ट कंटेंट से एक SEO मेटा विवरण (≤155 अक्षर) — B1Admin की पेज सेटिंग्स के Generate बटन से जुड़ा |
+| `POST /website/generatePageOutline` → `generateSection` | मूल दो-चरणीय पेज प्रवाह (outline, फिर हर section के लिए एक LLM कॉल जो element JSON उत्सर्जित करता है)। लागत के कारण B1Admin में `planPage`/`writePage` द्वारा प्रतिस्थापित; API उपभोक्ताओं के लिए रखा गया |
+| `POST /website/generateSite` | पूरी-साइट generation। **डिज़ाइन से दो-चरणीय**: एक `planOnly: true` कॉल केवल बहु-पेज योजना लौटाती है (एक तेज़ model कॉल), फिर क्लाइंट पूरी सामग्री माँगता है -- हर अनुरोध को Lambda/API-Gateway timeout के भीतर रखते हुए |
+| `POST /website/rewriteSection` | संरचना-संरक्षित rewrite: model केवल टेक्स्ट-युक्त answers बदल सकता है। एक recursive संरचना signature (ids + types + order) पहले और बाद में तुलना होती है; कोई भी असंगति मूल section को `fallback: true` के साथ लौटाती है, बिगड़ी हुई संरचना के बजाय |
+| `POST /website/generateAltText` | 20 image URLs तक पर vision कॉल; संक्षिप्त alt text लौटाता है (≤125 अक्षर, "photo of" उपसर्ग हटाए गए) |
+| `POST /website/generateMetaDescription` | पेज के टेक्स्ट सामग्री से एक SEO meta description (≤155 अक्षर) -- B1Admin की page settings पर Generate बटन से जुड़ा |
 
-इन एंडपॉइंट्स के प्रॉम्प्ट `AskApi/config/instructions/` के अंतर्गत markdown फ़ाइलें हैं, जिनमें वह एलिमेंट कैटलॉग भी है जिससे मॉडल जनरेट करता है। दो डिज़ाइन बिंदु इस कैटलॉग को ईमानदार रखते हैं: क्लाइंट हर अनुरोध पर `availableElementTypes` भेजता है (प्रॉम्प्ट केवल उसी सूची के टाइप इस्तेमाल कर सकता है — सर्वर पूरा सेट कभी हार्डकोड नहीं करता), और API का MCP `describe_page_builder` टूल वही गाइड AI एजेंटों के लिए रखता है जो [MCP](../api/mcp) के माध्यम से काम करते हैं। मॉडल OpenRouter के माध्यम से Anthropic Claude हैं — सेक्शन कंटेंट के लिए 3.5 Haiku (विलंब के लिए), आउटलाइन, साइट योजनाओं और विज़न के लिए 3.5 Sonnet — और OpenRouter की कुंजी न होने पर OpenAI फ़ॉलबैक।
+इन endpoints के prompts `AskApi/config/instructions/` के तहत markdown फ़ाइलें हैं, जिनमें वह element catalog भी है जिससे model generate करता है। दो डिज़ाइन बिंदु catalog को ईमानदार रखते हैं: क्लाइंट हर अनुरोध पर `availableElementTypes` पास करता है (prompt केवल उस सूची के types उपयोग कर सकता है -- सर्वर पूरा सेट कभी hardcode नहीं करता), और API का MCP `describe_page_builder` tool [MCP](../api/mcp) के माध्यम से काम करने वाले AI agents के लिए वही गाइड रखता है। models OpenRouter के माध्यम से Anthropic Claude हैं -- section सामग्री के लिए 3.5 Haiku (विलंबता), outlines, साइट योजनाओं, और vision के लिए 3.5 Sonnet -- और OpenRouter key कॉन्फ़िगर न होने पर OpenAI fallback के साथ।
 
-## बातचीत-शैली के फ़ॉर्म
+## Conversational forms
 
-फ़ॉर्म (membership मॉड्यूल) को कनेक्ट-कार्ड-शैली वाले पेजों के लिए एक बातचीत मोड मिला। `forms` पर चार कॉलम इसे चलाते हैं: `displayMode` (`standard` | `conversational`), `autoCreatePerson`, `followUpSubject`, `followUpBody`।
+Forms (membership module) ने connect-card-शैली पेजों के लिए एक conversational मोड प्राप्त किया। `forms` पर चार कॉलम इसे चलाते हैं: `displayMode` (`standard` | `conversational`), `autoCreatePerson`, `followUpSubject`, `followUpBody`।
 
-- **रेंडरिंग** — apphelper का `FormSubmissionEdit`, `displayMode` `conversational` होने पर `ConversationalForm` कंपोनेंट (एक बार में एक प्रश्न) पर स्विच करता है; B1App का फ़ॉर्म पेज मोड को आगे भेजता है। दोनों तरीकों में सबमिशन पेलोड एक ही है।
-- **व्यक्ति अपने-आप बनाना** — `autoCreatePerson` सेट होने पर सबमिशन पर `ConversationalFormHelper.findOrCreatePerson` ईमेल से (केस-इन्सेंसिटिव) डुप्लिकेट जाँचता है, अन्यथा `membershipStatus: "Guest"` के साथ एक household और person बनाता है, फिर सबमिशन को उस person से जोड़ता है।
-- **फ़ॉलो-अप ईमेल** — जब subject और body सेट हों, सबमिट करने वाले को टेम्पलेट वाला ईमेल जाता है (`{firstName}` / `{churchName}` टोकन के साथ) मौजूदा ट्रांज़ैक्शनल पाथ (`TransactionalEmailHelper`) से, कभी notification digest द्वार से नहीं। दोनों साइड-इफ़ेक्ट गैर-घातक हैं: विफलता कभी सबमिशन नहीं खोती।
+- **Rendering** — apphelper का `FormSubmissionEdit`, जब `displayMode` `conversational` हो, `ConversationalForm` component (एक बार में एक प्रश्न) पर स्विच करता है; B1App का form पेज मोड पास करता है। दोनों तरह से वही submission payload।
+- **Auto-create person** — `autoCreatePerson` सेट होने पर सबमिशन के समय, `ConversationalFormHelper.findOrCreatePerson` ईमेल (case-insensitive) से dedup करता है और अन्यथा `membershipStatus: "Guest"` वाला एक household + person बनाता है, फिर सबमिशन को उस व्यक्ति से जोड़ता है।
+- **Follow-up email** — जब subject और body सेट हों, सबमिट करने वाले को मौजूदा transactional पथ (`TransactionalEmailHelper`) के माध्यम से एक टेम्पलेट वाला ईमेल मिलता है (`{firstName}` / `{churchName}` tokens के साथ), कभी notification digest द्वार से नहीं। दोनों side-effects non-fatal हैं: विफलता कभी सबमिशन नहीं खोती।
 
-ये चारों फ़ील्ड आज API के माध्यम से सेट होते हैं; B1Admin फ़ॉर्म एडिटर अभी इन्हें नहीं दिखाता।
+चारों फ़ील्ड आज API से सेट होते हैं; B1Admin फ़ॉर्म एडिटर इन्हें अभी expose नहीं करता।
 
-## सार्वजनिक-साइट कैश
+## सार्वजनिक-साइट cache
 
-B1App का सार्वजनिक रेंडर पाथ चर्च-टैग वाले फ़ेच को कैश करता है (production में `next: { revalidate: 300, tags: [sdSlug] }`; dev में `0`), इसलिए ContentApi लिखे जाने के बाद लाइव पेज पाँच मिनट तक पुराना रह सकता है। B1App पर `POST /api/revalidate/{sdSlug}` `revalidateTag(sdSlug)` कॉल करता है और उस कैश को समय से पहले हटाने का एकमात्र तरीका है।
+B1App का सार्वजनिक render पथ चर्च-टैग वाले fetches को cache करता है (production में `next: { revalidate: 300, tags: [sdSlug] }`; dev में `0`), ताकि ContentApi लिखने के बाद एक लाइव पेज पाँच मिनट तक पुराना रह सकता है। B1App पर `POST /api/revalidate/{sdSlug}` `revalidateTag(sdSlug)` कॉल करता है और उस cache को जल्दी हटाने का एकमात्र तरीका है।
 
-दो लेखक इसे छूते हैं:
+दो लेखक इसे हिट करते हैं:
 
-1. **B1Admin** — `B1Admin/src/site/siteCache.ts` में `clearSiteCache()` एडिटर सेव के बाद POST करता है। यह सक्रिय साइट के सबडोमेन को प्राथमिकता देता है (द्वितीयक साइट को *उसी* टैग को बस्ट करना होता है, चर्च के डिफ़ॉल्ट को नहीं)।
-2. **Api** — ContentApi म्यूटेशन जो B1Admin से नहीं गुज़रते (API keys, MCP, AI) कंटेंट कंट्रोलर्स से `SiteCacheHelper.bump(churchId)` चलाते हैं। यह हेल्पर `SubDomainHelper` से चर्च सबडोमेन रिज़ॉल्व करता है और `{b1AppRoot}/api/revalidate/{sd}` पर POST करता है। विफलताएँ निगल ली जाती हैं, ताकि पहुँच से बाहर B1App सेव को विफल न करे।
+1. **B1Admin** — `clearSiteCache()` (`B1Admin/src/site/siteCache.ts`) editor सेव के बाद POST करता है। यह सक्रिय साइट के subdomain को प्राथमिकता देता है (एक द्वितीयक साइट को *उसी* tag को bust करना चाहिए, चर्च के डिफ़ॉल्ट को नहीं)।
+2. **Api** — ContentApi के बदलाव जो कभी B1Admin से नहीं गुज़रते (API keys, MCP, AI) content controllers से `SiteCacheHelper.bump(churchId)` fire करते हैं। helper `SubDomainHelper` से चर्च का subdomain हल करता है और `{b1AppRoot}/api/revalidate/{sd}` पर POST करता है। विफलताएँ निगल ली जाती हैं ताकि एक अप्राप्य B1App कभी सहेजने को विफल न करे।
 
-बम्प करने वाले कंट्रोलर: pages (save, delete, duplicate, publish, discard, unpublish, AI temp), sections, elements, blocks, links, global styles, posts, और redirects। Dev में `b1AppRoot` `http://{subdomain}.localtest.me:3301` है; demo/prod में `https://{subdomain}.b1.church`।
+bump करने वाले controllers: pages (save, delete, duplicate, publish, discard, unpublish, AI temp), sections, elements, blocks, links, global styles, posts, और redirects। dev में `b1AppRoot` `http://{subdomain}.localtest.me:3301` है; demo/prod में `https://{subdomain}.b1.church`।
 
-## संबंधित पेज
+## संबंधित पृष्ठ
 
-- [Website Routing & Multi-Site](./websites) — अनुरोध चर्च/साइट से कैसे मेल खाता है और कस्टम डोमेन कैसे रूट होते हैं
-- [Content Endpoints](../api/endpoints/content) — पेजों, सेक्शन, एलिमेंट, ब्लॉक, पोस्ट, रीडायरेक्ट और settings का पूरा REST सरफ़ेस
-- [AppHelper](../shared-libraries/app-helper) — npm पैकेज जिसमें रेंडरर, रजिस्ट्री, डिवाइडर और विजेट हैं
-- [MCP Server](../api/mcp) — `describe_page_builder` गाइड टूल समेत
-- [Page Editor (end-user)](/docs/b1-admin/website/page-editor) — स्टाफ़ के लिए एडिटर दस्तावेज़
+- [Website Routing & Multi-Site](./websites) — अनुरोध चर्च/साइट से कैसे हल होता है और कस्टम डोमेन कैसे रूट होते हैं
+- [Content Endpoints](../api/endpoints/content) — पेजों, sections, elements, blocks, posts, redirects, और settings के लिए REST surface
+- [AppHelper](../shared-libraries/app-helper) — npm package जो renderers, registry, dividers, और widgets शिप करता है
+- [MCP Server](../api/mcp) — `describe_page_builder` guide tool सहित
+- [Page Editor (end-user)](/docs/b1-admin/website/page-editor) — staff-facing editor दस्तावेज़ीकरण

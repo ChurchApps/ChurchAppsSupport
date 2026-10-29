@@ -50,13 +50,13 @@ This only checks for duplicates when you're creating a brand-new person — edit
 2. In the **Personal Details** form, fill in additional information such as middle name, membership status (**Visitor**, **Guest**, **Regular Attendee**, **Member**, **Staff**, **Inactive**, or **Deceased**), dates, address, phone numbers, and (for children and students) grade and school.
 3. Click **Save** to store the personal information.
 
-The left side of the profile shows the person's photo, name, membership status, contact details, any [custom field](../settings/custom-fields.md) values, and their household. Click the photo to change it. Below the **Edit** button are a few more actions: **Workflow** (add the person to a [workflow](../serving/workflows.md)), **Merge**, **Export**, and **Export Data**.
+The left side of the profile shows the person's photo, name, membership status, contact details, any [custom field](../settings/custom-fields.md) values, and their household. Below the household, **Added** shows the date the record was created (only for people added since late October 2026). Click the photo to change it. Below the **Edit** button are a few more actions: **Workflow** (add the person to a [workflow](../serving/workflows.md)), **Merge**, **Export**, and **Export Data**.
 
 The rest of the profile shows a summary section for each kind of related information:
 
 - **Attendance** — Shows which of the last several weeks the person attended and their most recent visits. Click **All years** for their full visit history, including the campus, service, service time, group, and a **Checked In** column with the kiosk check-in time (shown as a dash for visits recorded without a kiosk check-in), or **Print** to print it (the printout has your church logo and name centered at the top, above the person's name). For church-wide trends rather than one person's history, see [Tracking Attendance](../attendance/tracking-attendance.md)
 - **Donations** — Shows this year's gifts, including gifts to non-deductible funds. Click **All years** for their full [donation history](../donations/recording-donations.md), or **Log a gift** to record a new one. If your church turned on [Giving Privacy](../settings/church-settings.md#giving-privacy), amounts stay hidden until you click **Show giving**
-- **Groups** — Lists the person's [group memberships](../groups/group-members.md)
+- **Groups** — Lists the person's [group memberships](../groups/group-members.md), with **Joined** and the date they joined each group when it's on file
 - **Notes** — Shows recent notes about the person (pastoral care, follow-ups, etc.). Click **All notes** to read and add notes. Each note shows who wrote it and the date and time it was posted. To see recent notes across everyone at once, use the [Notes](./notes.md) page
 - **Forms** — Lists the person's forms and whether each one has been submitted (see [Working with Forms](#working-with-forms) below)
 
@@ -86,7 +86,7 @@ You can fill out custom forms directly from a person's profile. These are user-d
 2. Click a form's name to open it (or click **All forms** to see the full list).
 3. Click the **edit icon** (pencil) on the form, fill in the details, and click **Save**.
 
-Once a form is submitted, click the **print icon** next to it to print that person's filled-in answers.
+Once a form is submitted, click the **print icon** next to it to print that person's filled-in answers. When the person has a single submission of a form, the form shows **Submitted** with the date above the answers.
 
 If a submission landed on the wrong person, click the **Change person** icon (two arrows) next to it to move it to someone else or unlink it. See [Changing the Person on a Submission](../forms/managing-submissions.md#changing-the-person-on-a-submission).
 

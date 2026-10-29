@@ -1,107 +1,112 @@
 ---
-title: "Guida: Configurare il Check-In per il Ministero dei Bambini"
+title: "Guida: Configurare il check-in del ministero dei bambini"
 ---
 
-# Configurare il Check-In per il Ministero dei Bambini
+# Configurare il check-in del ministero dei bambini
 
 <div class="article-intro">
 
-Questa guida ti accompagna attraverso tutto il necessario per far funzionare un sistema di check-in per bambini nella tua chiesa — dall'inserimento delle famiglie nel database, alla configurazione di gruppi appropriati per età, alla stampa delle etichette con il nome la domenica mattina. Alla fine, i genitori potranno registrare i propri figli presso un tablet kiosk e ricevere un'etichetta di sicurezza corrispondente.
+Questa guida ti accompagna in tutto ciò che serve per avviare un sistema di check-in per i bambini nella tua chiesa — dall'inserimento delle famiglie nel database, alla configurazione dei gruppi per fascia d'età, fino alla stampa dei cartellini con il nome la domenica mattina. Alla fine, i genitori potranno registrare i figli su un tablet kiosk e ricevere un tagliando di sicurezza corrispondente.
 
 </div>
+
+## Video tutorial
+
+<YouTube id="Ep9CBUcJwPI" title="Configurare il check-in dei bambini in B1" next="Registrare e tracciare le presenze in B1" nextUrl="/docs/b1-admin/attendance/recording-attendance" />
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
 - Crea il tuo account della chiesa su [admin.b1.church](https://admin.b1.church)
-- Assicurati di avere l'accesso amministratore — consulta [Ruoli e Permessi](../people/roles-permissions.md) se necessario
-- Facoltativo: Prepara un file CSV delle famiglie se stai migrando da un altro sistema
+- Assicurati di avere l'accesso amministratore — vedi [Ruoli e permessi](../people/roles-permissions.md) se necessario
+- Facoltativo: prepara un file CSV con le famiglie se stai migrando da un altro sistema
 
 </div>
 
-## Passaggio 1: Aggiungi le Famiglie al Tuo Database
+## Passaggio 1: aggiungi le famiglie al database
 
-Prima che il check-in possa funzionare, il sistema deve conoscere le tue famiglie. Ogni bambino deve essere collegato a un genitore tramite la funzione nucleo familiare.
+Prima che il check-in possa funzionare, il sistema deve conoscere le tue famiglie. Ogni bambino deve essere collegato a un genitore tramite la funzione di nucleo familiare.
 
-Segui la guida [Aggiungere Persone](../people/adding-people.md) per aggiungere almeno una famiglia. Assicurati di:
+Segui la guida [Aggiungere persone](../people/adding-people.md) per aggiungere almeno una famiglia. Assicurati di:
 
-- Aggiungere prima il/i genitore/i
-- Aggiungere ogni bambino
+- Aggiungere prima il genitore o i genitori
+- Aggiungere ogni figlio
 - Collegarli nello stesso nucleo familiare usando l'[editor del nucleo familiare](../people/adding-people.md#managing-households)
 
 :::tip
-Se hai più di qualche famiglia da aggiungere, usa lo strumento [Importazione CSV](../people/importing-data.md) invece di aggiungerle una per una. Puoi importare l'intera rubrica in pochi minuti.
+Se hai più di qualche famiglia da inserire, usa lo strumento [Importazione CSV](../people/importing-data.md) invece di aggiungerle una per una. Puoi importare l'intera anagrafica in pochi minuti.
 :::
 
-## Passaggio 2: Crea i Gruppi per Bambini
+## Passaggio 2: crea i gruppi per i bambini
 
-I gruppi definiscono le classi in cui i bambini fanno il check-in. Di solito vorrai un gruppo per ogni fascia d'età.
+I gruppi definiscono le classi in cui i bambini effettuano il check-in. Di solito conviene avere un gruppo per ogni fascia d'età.
 
-Segui la guida [Creare Gruppi](../groups/creating-groups.md) per creare gruppi come:
+Segui la guida [Creare gruppi](../groups/creating-groups.md) per creare gruppi come:
 
-- **Asilo nido** (età 0–2)
-- **Prescuola** (età 3–5)
-- **Scuola elementare** (età 6–10)
+- **Nido** (0–2 anni)
+- **Prescolare** (3–5 anni)
+- **Elementari** (6–10 anni)
 
-Puoi adattare i nomi e le fasce d'età alla struttura del tuo ministero.
+Puoi modificare i nomi e le fasce d'età in base alla struttura del tuo ministero.
 
-## Passaggio 3: Configura Campus e Servizi
+## Passaggio 3: configura sedi e servizi
 
-Il check-in è legato a orari di servizio specifici. Hai bisogno di almeno un campus e un servizio configurati.
+Il check-in è legato a orari di culto specifici. Devi avere configurati almeno una sede e un servizio.
 
-Segui la guida [Configurazione Presenze](../attendance/setup.md) per:
+Segui la guida [Configurazione delle presenze](../attendance/setup.md) per:
 
-1. Aggiungere il tuo campus (es. "Campus Principale")
-2. Aggiungere un servizio (es. "Culto della Domenica Mattina")
-3. Impostare l'orario del servizio (es. "9:00") e, facoltativamente, una [pianificazione del check-in](../attendance/setup.md#setting-a-check-in-schedule) in modo che il check-in si apra automaticamente prima di ogni servizio e si chiuda dopo di esso
-4. Assegnare i tuoi gruppi per bambini al servizio
+1. Aggiungere la tua sede (ad esempio "Sede principale")
+2. Aggiungere un servizio (ad esempio "Domenica mattina")
+3. Impostare l'orario del servizio (ad esempio "9:00") e, facoltativamente, una [pianificazione del check-in](../attendance/setup.md#setting-a-check-in-schedule) così che il check-in si apra automaticamente prima di ogni servizio e si chiuda dopo
+4. Assegnare al servizio i gruppi dei bambini
 
-## Passaggio 4: Configura l'App di Check-In
+## Passaggio 4: configura l'app di check-in
 
 Ora collega tutto installando l'app di check-in su un tablet.
 
-1. Installa l'app **B1 Checkin** — consulta l'articolo [Check-In](../attendance/check-in.md) per i link di download
-2. Accedi con le tue credenziali B1 Admin
-3. Seleziona il tuo campus e l'orario del servizio
+1. Installa l'**app B1 Checkin** — vedi l'articolo [Check-In](../attendance/check-in.md) per i link di download
+2. Accedi con le tue credenziali di B1 Admin
+3. Seleziona la sede e l'orario del servizio
 
 Consulta l'articolo completo [Check-In](../attendance/check-in.md) per i passaggi dettagliati di configurazione.
 
-## Passaggio 5: Procurati l'Hardware
+## Passaggio 5: procurati l'hardware
 
-Hai bisogno di un tablet per il kiosk e opzionalmente di una stampante di etichette Brother per le targhette con il nome.
+Ti serve un tablet per il kiosk e, facoltativamente, una stampante per etichette Brother per i cartellini con il nome.
 
 Come minimo:
+
 - **Un tablet Android o Amazon Fire** — vedi [tablet consigliati](../attendance/check-in.md#recommended-hardware)
-- **Una stampante di etichette Brother** — la QL-1110NWB è consigliata per il supporto Bluetooth e WiFi
+- **Una stampante per etichette Brother** — la QL-1110NWB è consigliata per il supporto Bluetooth e WiFi
 - **Etichette Brother DK-1201** (1-1/7" x 3-1/2")
 
 :::warning
-Solo le stampanti di etichette Brother sono compatibili con l'app B1 Checkin. Altre marche di stampanti non funzioneranno.
+Solo le stampanti per etichette Brother sono compatibili con l'app B1 Checkin. Le stampanti di altre marche non funzioneranno.
 :::
 
-## Passaggio 6: Esegui un Check-In di Prova
+## Passaggio 6: esegui una prova di check-in
 
 Prima della domenica mattina, fai una prova:
 
-1. Apri l'app B1 Checkin sul tuo tablet
-2. Seleziona il tuo campus e l'orario del servizio corretto
-3. Cerca una delle famiglie che hai aggiunto
-4. Registra un bambino e verifica:
-   - La presenza appare in B1 Admin sotto **Presenze**
-   - Se stai usando una stampante, l'etichetta con il nome viene stampata correttamente
+1. Apri l'app B1 Checkin sul tablet
+2. Seleziona la sede e l'orario corretto del servizio
+3. Cerca una delle famiglie che hai inserito
+4. Registra il check-in di un bambino e verifica:
+   - che la presenza compaia in B1 Admin alla voce **Presenze**
+   - se usi una stampante, che il cartellino con il nome venga stampato correttamente
 
 :::tip
-Forma i volontari del team di accoglienza sul processo di check-in prima del lancio. Di solito basta una rapida sessione di 5 minuti.
+Prima del lancio, forma i volontari del team di accoglienza sulla procedura di check-in. Di solito basta un breve briefing di 5 minuti.
 :::
 
-## Fatto!
+## Hai finito!
 
-Il check-in del ministero dei bambini è pronto. I genitori possono cercare la propria famiglia, selezionare i propri figli e registrarsi al kiosk. La presenza viene registrata automaticamente in B1 Admin.
+Il check-in del ministero dei bambini è pronto. I genitori possono cercare la propria famiglia, selezionare i figli e registrarsi al kiosk. Le presenze vengono registrate automaticamente in B1 Admin.
 
-## Articoli Correlati
+## Articoli correlati
 
-- [Aggiungere Persone](../people/adding-people.md) — aggiungi altre famiglie quando visitano
-- [Creare Gruppi](../groups/creating-groups.md) — gestisci i tuoi gruppi per bambini
-- [Configurazione Presenze](../attendance/setup.md) — configura campus e servizi
-- [Check-In](../attendance/check-in.md) — configurazione dettagliata dell'app di check-in e hardware
-- [Monitoraggio Presenze](../attendance/tracking-attendance.md) — visualizza i report di check-in
+- [Aggiungere persone](../people/adding-people.md) — aggiungi altre famiglie man mano che arrivano
+- [Creare gruppi](../groups/creating-groups.md) — gestisci i gruppi dei bambini
+- [Configurazione delle presenze](../attendance/setup.md) — configura sedi e servizi
+- [Check-In](../attendance/check-in.md) — configurazione dettagliata dell'app di check-in e dell'hardware
+- [Tracciare le presenze](../attendance/tracking-attendance.md) — consulta i report di check-in

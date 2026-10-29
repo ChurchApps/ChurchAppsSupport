@@ -6,70 +6,70 @@ title: "Oppmøterapporter"
 
 <div class="article-intro">
 
-B1 Admin tilbyr tre oppmøterapporter som hjelper deg å forstå hvordan folk deltar i gudstjenestene og gruppene dine. Hver rapport gir et annet perspektiv på oppmøtedataene dine, fra overordnede trender til daglige oversikter.
+B1 Admin tilbyr tre oppmøterapporter som hjelper deg å forstå hvordan folk engasjerer seg i gudstjenestene og gruppene dine. Hver rapport gir et annet perspektiv på oppmøtedataene dine, fra overordnede trender til daglige oversikter.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sørg for at oppmøte [registreres konsekvent](../attendance/tracking-attendance.md) for gudstjenestene og gruppene dine
+- Sørg for at oppmøte [føres konsekvent](../attendance/tracking-attendance.md) for gudstjenestene og gruppene dine
 - Sørg for at [gruppene](../groups/creating-groups.md) og gudstjenestene dine er konfigurert i B1 Admin
-- Du trenger de riktige [tillatelsene](../settings/roles-permissions.md) for å åpne rapporter
+- Du trenger de riktige [tillatelsene](../settings/roles-permissions.md) for å åpne rapportene
 
 </div>
 
 ## Oppmøtetrend
 
-Rapporten Attendance Trend viser hvordan oppmøtet endrer seg over tid for gudstjenestene dine.
+Rapporten Oppmøtetrend viser hvordan oppmøtet endrer seg over tid for gudstjenestene dine.
 
-1. Gå direkte til **admin.b1.church/reports/attendanceTrend** i nettleseren din (rapporter har ingen oppføring i navigasjonsmenyen — det enkleste er å bokmerke adressen for å komme tilbake til den). Den samme rapporten finnes også på Attendance-siden: klikk på **All years**, og velg deretter fanen **Attendance Trend**.
-2. Velg eventuelt et **Campus**, en **Service**, et **Service Time** eller en **Group** for å filtrere resultatene.
-3. Angi **Start Date** og **End Date**. Som standard dekker rapporten det siste året, fra ett år siden og til i dag, og sluttdatoen tas med i sin helhet. Klikk på **Run Report**.
-4. Rapporten viser et stolpediagram og en tabell med totalt antall besøk per uke. Hver uke er merket med datoen for den ukens søndag, og tabellens kolonne **Session Dates** lister de faktiske datoene i den uken som hadde oppmøte (for eksempel «9/27, 9/30»).
+1. Gå direkte til **admin.b1.church/reports/attendanceTrend** i nettleseren din (rapporter har ingen oppføring i navigasjonsmenyen — det enkleste er å bokmerke adressen for å komme tilbake til den). Den samme rapporten finnes også på Oppmøte-siden: klikk **Alle år**, og velg deretter fanen **Oppmøtetrend**.
+2. Velg eventuelt en **Kampus**, **Gudstjeneste**, **Gudstjenestetid** eller **Gruppe** for å filtrere resultatene.
+3. Angi **Startdato** og **Sluttdato**. Som standard dekker rapporten det siste året, fra ett år siden til i dag, og sluttdatoen er inkludert i sin helhet. Klikk **Kjør rapport**.
+4. Rapporten viser et stolpediagram og en tabell med totalt antall besøk per uke. Hver uke merkes med datoen for søndagen i den uken, og kolonnen **Øktdatoer** i tabellen lister de faktiske datoene i den uken som hadde oppmøte (for eksempel «27.9, 30.9»).
 
-Denne rapporten er nyttig for å oppdage mønstre som sesongsvingninger, vekst eller effekten av spesielle arrangementer.
+Denne rapporten er nyttig for å oppdage mønstre som sesongmessige nedganger, vekst eller effekten av spesielle arrangementer.
 
 ## Gruppeoppmøte
 
-Rapporten Group Attendance viser hvem som deltok på hver gruppesamling i et datointervall.
+Rapporten Gruppeoppmøte viser hvem som deltok på hver gruppeøkt i et datointervall.
 
-1. Gå direkte til **admin.b1.church/reports/groupAttendance** i nettleseren din, eller klikk på **All years** på Attendance-siden og velg fanen **Group Attendance**.
-2. Velg eventuelt et **Campus** og en **Service**.
-3. Angi **Start Date** og **End Date**. Som standard dekker rapporten fra siste søndag til i dag, og sluttdatoen tas med i sin helhet.
-4. Klikk på **Run Report**.
+1. Gå direkte til **admin.b1.church/reports/groupAttendance** i nettleseren din, eller klikk **Alle år** på Oppmøte-siden og velg fanen **Gruppeoppmøte**.
+2. Velg eventuelt en **Kampus** og **Gudstjeneste**.
+3. Angi **Startdato** og **Sluttdato**. Som standard dekker rapporten fra siste søndag til i dag, og sluttdatoen er inkludert i sin helhet.
+4. Klikk **Kjør rapport**.
 
-Resultatene er gruppert etter samlingsdato, deretter gudstjenestetidspunkt, deretter gruppe, med personene som deltok listet under hver gruppe. Gudstjenestetidspunkter, grupper og navn er sortert alfabetisk. Ved siden av hver persons navn viser kolonnen **Checked In** tidspunktet oppmøtet ble registrert (tomt når det ikke finnes noe tidspunkt), og kolonnen **Membership Status** viser statusen deres, for eksempel Member eller Visitor.
+Resultatene grupperes etter øktdato, deretter gudstjenestetid, deretter gruppe, med personene som deltok listet under hver gruppe. Gudstjenestetider, grupper og navn sorteres alfabetisk. Ved siden av hvert navn viser kolonnen **Innsjekket** tidspunktet oppmøtet ble registrert (tomt når det ikke finnes et tidspunkt), og kolonnen **Medlemsstatus** viser statusen deres, for eksempel Medlem eller Besøkende. Økter for grupper som ikke møtes på en gudstjenestetid er også med; de vises uten gudstjenestetid.
 
-For å laste ned et regneark, klikk på **Download Options** og velg **Summary**. CSV-filen har:
+For å laste ned et regneark, klikk **Nedlastingsalternativer** og velg **Sammendrag**. CSV-filen har:
 
-- En rad per medlem av hver gruppe som møttes i datointervallet, sortert etter gruppe og deretter navn.
+- Én rad per medlem av hver gruppe som møttes i datointervallet, sortert etter gruppe og deretter navn.
 - Personens navn og gruppenavnet i de første kolonnene.
-- En kolonne per datert samling, navngitt med gudstjeneste, gudstjenestetidspunkt og dato (for eksempel «Sunday - 9:00 AM (2026-09-27)»), der hver person er markert som **present** eller **absent**.
+- Én kolonne per datert økt, navngitt med gudstjenesten, gudstjenestetiden og datoen (for eksempel «Søndag - 09:00 (2026-09-27)»), med hver person markert **tilstede** eller **fraværende**. En økt uten gudstjenestetid navngis kun med datoen.
 
-Bruk denne rapporten til å sammenligne oppmøte mellom grupper og identifisere hvilke grupper som vokser eller trenger oppfølging.
+Bruk denne rapporten til å sammenligne oppmøte på tvers av grupper og finne ut hvilke grupper som vokser eller trenger oppmerksomhet.
 
 ## Daglig gruppeoppmøte
 
-Rapporten Daily Group Attendance (med tittelen **Group attendance by day**) gir en teller for hver dag som viser hvor mange som deltok i én gruppe.
+Rapporten Daglig gruppeoppmøte (med tittelen **Gruppeoppmøte etter dag**) gir en dag-for-dag-telling av hvor mange personer som deltok i én gruppe.
 
 1. Gå direkte til **admin.b1.church/reports/dailyGroupAttendance** i nettleseren din.
-2. Bruk nedtrekkslistene **Campus**, **Service** og **Service Time** for å snevre inn listen, og velg deretter **Group** du vil gå gjennom.
-3. Kjør rapporten. Den lister opp hver dag gruppen møttes, eldste først, med **Date** og antallet **Attendees** registrert den dagen.
+2. Bruk nedtrekkslistene **Kampus**, **Gudstjeneste** og **Gudstjenestetid** for å snevre inn listen, og velg deretter **Gruppen** du vil se på.
+3. Kjør rapporten. Den lister opp hver dag gruppen møttes, eldste først, med **Dato** og antallet **Deltakere** registrert den dagen.
 
-Denne rapporten gir detaljert innsikt, som er nyttig for å forstå variasjoner fra uke til uke eller identifisere bestemte dager med uvanlig høyt eller lavt oppmøte.
+Denne rapporten gir detaljert innsikt, og er nyttig for å forstå variasjon fra uke til uke eller for å identifisere spesifikke dager med uvanlig høyt eller lavt oppmøte.
 
 :::tip
-Bruk rapporten Attendance Trend for en overordnet oversikt, og rapporten Daily Group Attendance når du trenger å dykke ned i bestemte datoer.
+Bruk rapporten Oppmøtetrend for en overordnet oversikt, og rapporten Daglig gruppeoppmøte når du trenger å gå i dybden på bestemte datoer.
 :::
 
 ## Praktisk bruk
 
-- **Planlegging** -- Bruk oppmøtetrender til å planlegge sitteplasser, bemanning og ressurser for kommende gudstjenester.
-- **Oppsøkende arbeid** -- Oppdag tidlig nedgang i oppmøtet slik at du kan følge opp medlemmer.
-- **Styrerapporter** -- Ta med oppmøtedata i de regelmessige lederrapportene dine for å vise hvordan menighetens arbeid går.
-- **Evaluering av arrangementer** -- Sammenlign oppmøte før og etter spesielle arrangementer for å måle effekten.
+- **Planlegging** — bruk oppmøtetrender til å planlegge sitteplasser, bemanning og ressurser for kommende gudstjenester.
+- **Oppsøking** — oppdag tegn på synkende oppmøte tidlig, slik at du kan følge opp medlemmer.
+- **Styrerapporter** — ta med oppmøtedata i de regelmessige lederrapportene dine for å vise hvordan tjenesten har det.
+- **Evaluering av arrangementer** — sammenlign oppmøte før og etter spesielle arrangementer for å måle effekten.
 
 :::warning
-Oppmøtedata registreres gjennom innsjekkingsprosessene for gruppene og gudstjenestene dine. Hvis oppmøte ikke registreres konsekvent, vil ikke rapportene dine gjenspeile det faktiske deltakelsesnivået. Se [Følge oppmøte](../attendance/tracking-attendance.md) for oppsettsinstruksjoner.
+Oppmøtedata registreres gjennom innsjekkingsprosessene for gruppene og gudstjenestene dine. Hvis oppmøte ikke føres konsekvent, vil ikke rapportene dine gjenspeile den faktiske deltakelsen. Se [Følge opp oppmøte](../attendance/tracking-attendance.md) for oppsettsinstruksjoner.
 :::

@@ -23,7 +23,7 @@ The ChurchApps API is a **modular monolith** -- a single codebase that serves si
 
 ## Tech Stack
 
-- **Runtime:** Node.js 22.x with TypeScript (ES modules)
+- **Runtime:** Node.js 24.x with TypeScript (ES modules)
 - **Framework:** Express
 - **Dependency Injection:** Inversify (decorator-based routing)
 - **Database:** MySQL -- one database per module, each with its own connection pool

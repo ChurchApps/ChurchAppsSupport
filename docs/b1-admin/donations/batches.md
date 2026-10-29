@@ -80,7 +80,7 @@ A common setup is a "Counting Team" role with **Enter Donations** and **View Don
 
 Open a batch and click **Print** above the donations list to print a paper copy for your counting team or deposit records. The printout includes:
 
-- Your church's name, the batch name, and the batch date
+- Your church's letterhead -- your logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) with your church's name beneath it -- then the batch name and the batch date
 - Every donation in the batch, with the donor's name, method, notes, date, and amount (refunded gifts are crossed out and marked as refunded)
 - **Fund Subtotals** -- the total given to each fund in the batch
 - **Batch Total** -- the combined amount for the whole batch
@@ -89,7 +89,7 @@ The **Print** button only appears once the batch has at least one donation.
 
 ### Printing Several Batches at Once
 
-To print every batch from a period in one go -- for example, all of last month's deposits -- click **Print** at the top of the **Batches** page, next to **Export**. The **Print Batches** page opens with a **Start Date** and **End Date** that default to the last 30 days. Change either date to choose a different range.
+To print every batch from a period in one go -- for example, all of last month's deposits -- click **Print** at the top of the **Batches** page, next to **Export**. The **Print Batches** page opens with a **Start Date** and **End Date** that match the batches on screen: January 1 through December 31 of the year you picked, or from the earliest to the latest batch date when **All** is selected. Change either date to choose a different range.
 
 Every batch dated within the range (including the start and end dates) prints in date order, one batch per page, using the same layout as a single-batch printout. Batches with no donations are left out, and if none of the batches in the range have donations you will see "No batches with donations in this date range." Click **Print** to open your browser's print dialog, or **Close** to return to the batch list.
 

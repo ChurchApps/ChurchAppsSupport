@@ -1,12 +1,12 @@
 ---
-title: "Inicio de sesion"
+title: "Iniciar sesión"
 ---
 
-# Inicio de sesion
+# Iniciar sesión
 
 <div class="article-intro">
 
-Antes de que el quiosco pueda usarse para el registro, necesita iniciar sesion con una cuenta de ChurchApps que tenga acceso a su iglesia. Esta pagina cubre el proceso de inicio de sesion por primera vez, la seleccion de iglesia, el comportamiento de inicio de sesion automatico y como cerrar sesion.
+Antes de que el kiosco pueda usarse para el registro de entrada, debe iniciar sesión con una cuenta de ChurchApps que tenga acceso a su iglesia. Esta página cubre el inicio de sesión por primera vez, la selección de iglesia, el comportamiento del inicio de sesión automático y cómo cerrar sesión.
 
 </div>
 
@@ -14,58 +14,62 @@ Antes de que el quiosco pueda usarse para el registro, necesita iniciar sesion c
 <h4>Antes de comenzar</h4>
 
 - Instale B1 Church Checkin en su tableta Android (consulte [Primeros pasos](./index.md))
-- Tenga listos el correo electronico y la contrasena de su cuenta de ChurchApps
+- Tenga listos el correo electrónico y la contraseña de su cuenta de ChurchApps
 
 </div>
 
-## Primer inicio de sesion
+## Primer inicio de sesión
 
-1. Abra la aplicacion B1 Church Checkin. Despues de la pantalla de inicio, vera la pantalla de inicio de sesion con el logotipo de B1 Church Checkin.
-2. Ingrese su **direccion de correo electronico** en el primer campo.
-3. Ingrese su **contrasena** en el segundo campo.
-4. Toque el boton **Login**.
+1. Abra la aplicación B1 Church Checkin. Después de la pantalla de presentación, verá la pantalla de inicio de sesión con el logotipo de B1 Church Checkin.
+2. Ingrese su **correo electrónico** en el primer campo.
+3. Ingrese su **contraseña** en el segundo campo.
+4. Toque el botón **Iniciar sesión**.
 
-La aplicacion valida sus credenciales e inicia su sesion. Si el correo electronico o la contrasena son incorrectos, vera un mensaje de error en la parte inferior de la pantalla.
+La aplicación valida sus credenciales e inicia su sesión. Si el correo electrónico o la contraseña son incorrectos, verá un mensaje de error en la parte inferior de la pantalla.
+
+Si la cuenta tiene activada la [verificación en dos pasos](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), la aplicación pedirá entonces un código. Ingrese el código de 6 dígitos de la aplicación de autenticación del propietario de la cuenta, o uno de sus códigos de respaldo, y toque **Iniciar sesión** de nuevo. Solo necesita el código para este primer inicio de sesión; después de eso, el kiosco permanece con la sesión iniciada.
 
 :::info
-Este es el mismo correo electronico y contrasena que usa para B1 Admin o cualquier otro producto de ChurchApps. No necesita una cuenta separada para el quiosco de registro.
+Es el mismo correo electrónico y contraseña que usa para B1 Admin o cualquier otro producto de ChurchApps. No necesita una cuenta separada para el kiosco de registro de entrada.
 :::
 
 ## Seleccionar su iglesia
 
-Despues de un inicio de sesion exitoso, la aplicacion carga una lista de iglesias vinculadas a su cuenta. Cada iglesia se muestra como una tarjeta con el nombre de la iglesia y su logotipo (si se ha configurado uno en B1 Admin).
+Después de un inicio de sesión exitoso, la aplicación carga una lista de las iglesias vinculadas a su cuenta. Cada iglesia se muestra como una tarjeta con el nombre y el logotipo de la iglesia (si se ha configurado en B1 Admin).
 
-- Si su cuenta esta vinculada a **una sola iglesia**, igualmente vera la pantalla de seleccion. Toque su iglesia para continuar.
-- Si su cuenta esta vinculada a **varias iglesias**, toque la iglesia que desea que sirva este quiosco.
+- Si su cuenta está vinculada a **solo una iglesia**, igual verá la pantalla de selección. Toque su iglesia para continuar.
+- Si su cuenta está vinculada a **varias iglesias**, toque la iglesia que este kiosco debe atender.
 
-Una vez que seleccione una iglesia, la aplicacion carga la imagen de marca y la configuracion de apariencia de esa iglesia. El logotipo de su iglesia aparecera en el encabezado en todas las pantallas siguientes.
+Una vez que selecciona una iglesia, la aplicación carga la identidad visual y la configuración de apariencia de esa iglesia. El logotipo de su iglesia aparecerá en el encabezado de todas las pantallas siguientes.
 
-## Inicio de sesion automatico en visitas posteriores
+## Inicio de sesión automático en visitas posteriores
 
-La aplicacion guarda su correo electronico, contrasena e iglesia seleccionada despues del primer inicio de sesion exitoso. En futuros inicios:
+Después del primer inicio de sesión exitoso, la aplicación guarda en la tableta un token de sesión seguro y la iglesia seleccionada. No guarda su contraseña. En los siguientes inicios:
 
-- La aplicacion inicia sesion automaticamente con sus credenciales guardadas.
-- Si previamente selecciono una iglesia, restaura esa seleccion y lo lleva directamente a la **pantalla de servicios**.
-- Si las credenciales guardadas ya no son validas, la aplicacion regresa a la pantalla de inicio de sesion para que pueda iniciar sesion nuevamente.
+- La aplicación lo vuelve a conectar con el token guardado.
+- Si previamente seleccionó una iglesia, restaura esa selección y lo lleva directamente a la **pantalla de servicios**.
+- Si la sesión guardada ya no es válida, la aplicación regresa a la pantalla de inicio de sesión para que vuelva a iniciar sesión.
 
 :::tip
-Dado que el quiosco inicia sesion automaticamente, solo necesita ingresar las credenciales una vez durante la configuracion inicial. Despues de eso, la tableta puede encenderse y estara lista para usar.
+Como el kiosco inicia sesión automáticamente, solo necesita ingresar las credenciales una vez durante la configuración inicial. Después de eso, basta con encender la tableta y estará lista para usarse.
 :::
 
-## Cerrar sesion
+## Configuración de administrador
 
-El cierre de sesion esta intencionalmente oculto para que los miembros de la iglesia que usan el quiosco no puedan cerrar sesion accidentalmente. Para cerrar sesion:
+La configuración de administrador está oculta a propósito para que los miembros de la iglesia que usan el kiosco no cambien la configuración por error. Para acceder a ella:
 
-1. Toque el **logotipo de la iglesia** en el encabezado **siete veces** en rapida sucesion (dentro de dos segundos).
-2. Aparecera un cuadro de dialogo de confirmacion preguntando si desea cerrar sesion.
-3. Toque **Logout** para confirmar, o **Cancel** para permanecer con la sesion iniciada.
-
-Esto borra sus credenciales guardadas y lo devuelve a la pantalla de inicio de sesion.
+1. Toque el **logotipo de la iglesia** en el encabezado **siete veces** seguidas (en menos de dos segundos).
+2. Si hay un PIN de kiosco configurado, ingréselo cuando se le solicite.
+3. Se abrirá la pantalla **Configuración de administrador** con las siguientes opciones:
+   - **Cambiar servicio** — cambie el horario de servicio seleccionado
+   - **Cambiar impresora** — abra la [configuración de impresora](./printer-setup) para buscar y seleccionar una impresora
+   - **Establecer/Cambiar PIN** — establezca o actualice el PIN del kiosco que protege el acceso de administrador
+   - **Cerrar sesión** — cierre la sesión y regrese a la pantalla de inicio de sesión
 
 :::warning
-Cerrar sesion borra todas las credenciales guardadas y la seleccion de iglesia. Necesitara volver a ingresar su correo electronico y contrasena para usar el quiosco nuevamente. Solo cierre sesion cuando necesite cambiar de cuenta o reconfigurar el quiosco.
+Cerrar sesión borra todas las credenciales guardadas y la selección de iglesia. Tendrá que volver a ingresar su correo electrónico y contraseña para usar el kiosco de nuevo. Cierre sesión solo cuando necesite cambiar de cuenta o reconfigurar el kiosco.
 :::
 
-## Siguientes pasos
+## Próximos pasos
 
-Una vez que haya iniciado sesion, puede [configurar una impresora](./printer-setup) o ir directamente al [flujo de registro](../check-in/).
+Una vez que inicie sesión, puede [configurar una impresora](./printer-setup) o ir directamente al [flujo de registro de entrada](../check-in/).

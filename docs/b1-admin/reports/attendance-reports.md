@@ -39,13 +39,13 @@ The Group Attendance report shows who attended each group session in a date rang
 3. Set the **Start Date** and **End Date**. By default the report covers last Sunday through today, and the end date is included in full.
 4. Click **Run Report**.
 
-The results are grouped by session date, then service time, then group, with the people who attended listed under each group. Service times, groups, and names are sorted alphabetically. Next to each person's name, the **Checked In** column shows the time their attendance was recorded (blank when no time is on file) and the **Membership Status** column shows their status, such as Member or Visitor.
+The results are grouped by session date, then service time, then group, with the people who attended listed under each group. Service times, groups, and names are sorted alphabetically. Next to each person's name, the **Checked In** column shows the time their attendance was recorded (blank when no time is on file) and the **Membership Status** column shows their status, such as Member or Visitor. Sessions for groups that don't meet at a service time are included too; they appear without a service time.
 
 To download a spreadsheet, click **Download Options** and choose **Summary**. The CSV has:
 
 - One row per member of each group that met in the date range, sorted by group and then name.
 - The person's name and group name in the first columns.
-- One column per dated session, named with the service, service time, and date (for example, "Sunday - 9:00 AM (2026-09-27)"), with each person marked **present** or **absent**.
+- One column per dated session, named with the service, service time, and date (for example, "Sunday - 9:00 AM (2026-09-27)"), with each person marked **present** or **absent**. A session with no service time is named by its date alone.
 
 Use this report to compare attendance across groups and identify which groups are growing or need attention.
 

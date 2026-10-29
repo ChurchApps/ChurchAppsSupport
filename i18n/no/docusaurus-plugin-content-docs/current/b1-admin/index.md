@@ -6,51 +6,51 @@ title: "Oversikt over B1 Admin"
 
 <div class="article-intro">
 
-B1 Admin er ditt kontrollpanel for menighetsadministrasjon. Det gir verktøy for å administrere alle sider ved menighetens drift -- fra medlemsregistre og gaver til nettsidebygging og direktesending -- alt fra ett sted.
+B1 Admin er kirkens administrasjonspanel. Det gir verktøy for å håndtere alle sider av kirkens drift — fra medlemskatalogen og gaver til nettstedsbygging og direktesending — alt samlet på ett sted.
 
 </div>
 
 ## Komme i gang
 
-1. Åpne nettleseren din og gå til [admin.b1.church](https://admin.b1.church)
+1. Åpne nettleseren og gå til [admin.b1.church](https://admin.b1.church)
 2. Logg inn med brukernavn og passord
-3. Du havner på **Dashboard**, startsiden din. Den viser gudstjenestens plan for denne uken, hvem som er innsjekket og tjenestegjør i sanntid, alt som krever oppmerksomheten din (for eksempel ventende godkjenninger eller forespørsler om å bli med i grupper), oppgavene dine og gruppene dine
+3. Du havner på **Dashbordet**, startsiden din. Den viser ukens gudstjenesteprogram, hvem som er innsjekket og tjenestegjør i sanntid, alt som krever din oppmerksomhet (for eksempel ventende godkjenninger eller påmeldingsforespørsler), dine åpne oppgaver og gruppene dine
 
 :::tip
-Ny i B1 Admin? Begynn med [Introduksjonen](./introduction) for en videoveiledning, og gå deretter til [Settings](./settings/) for å konfigurere menighetsinformasjonen din og invitere teamet ditt.
+Ny i B1 Admin? Start med [Introduksjonen](./introduction) for en videogjennomgang, og besøk deretter [Innstillinger](./settings/) for å konfigurere kirkeinformasjonen din og invitere teamet ditt.
 :::
 
-## Ditt dashbord
+## Dashbordet ditt
 
-Dashboardet er startsiden din i B1 Admin (`/`). Det er bygget rundt menighetens ukentlige gudstjeneste:
+Dashbordet er startsiden din i B1 Admin (`/`). Det er bygget rundt kirkens ukentlige gudstjeneste:
 
-- **This week's service** -- navnet på gjeldende eller kommende plan og gudstjenesteordenen, med en lenke inn til hele planen
-- **Live status** -- når folk begynner å sjekke inn søndag, viser siden hvor mange som er i salen, hvem som tjenestegjør denne timen, førstegangsgjester, og en oversikt over rom med kapasitetsindikatorer
-- **Needs Attention** -- ventende godkjenninger og forespørsler om å bli med i grupper som krever handling
-- **My tasks** og **My Groups** -- dine åpne oppgaver (legg til én med **Add Task**, eller klikk på **All tasks** for hele listen) og gruppene du er med i
+- **Denne ukens gudstjeneste** — navnet og gudstjenesteprogrammet for den pågående eller kommende planen, med en lenke inn til hele planen
+- **Live-status** — når folk begynner å sjekke inn på søndag, viser siden hvor mange som er i rommet, hvem som tjenestegjør denne timen, førstegangsgjester, og en oversikt rom for rom med kapasitetsfelt
+- **Krever oppmerksomhet** — ventende godkjenninger og påmeldingsforespørsler til grupper som krever handling
+- **Mine oppgaver** og **Mine grupper** — dine åpne oppgaver (legg til en med **Legg til oppgave**, eller klikk **Alle oppgaver** for hele listen) og gruppene du er medlem av
 
-Hva dashbordet viser, avhenger av [rollen](./settings/roles-permissions.md) din. For eksempel vises lenken inn til hele planen bare hvis du kan åpne den planen (du redigerer planer, tilhører planens tjeneste, eller tjenestegjør på den), og lenken **All groups** vises bare hvis du kan administrere grupper, se gruppemedlemmer eller se personer.
+Hva Dashbordet viser avhenger av [rollen](./settings/roles-permissions.md) din. For eksempel vises lenken inn til hele planen bare hvis du kan åpne den planen (du redigerer planer, tilhører planens tjeneste, eller tjenestegjør på den), og lenken **Alle grupper** vises bare hvis du kan administrere grupper, se gruppemedlemmer eller se personer.
 
 :::tip
-Alle seksjoner, inkludert Sermons, Calendars, Mobile og Settings, finnes i [Hopp til-menyen](./introduction.md#getting-around-with-the-jump-menu) øverst til venstre i B1 Admin. Klikk på den eller trykk **Ctrl+K** (eller **Cmd+K**), og bla eller begynn å skrive.
+Alle seksjoner, inkludert Taler, Kalendere, Mobil og Innstillinger, finnes i [Hurtigmenyen](./introduction.md#getting-around-with-the-jump-menu) øverst til venstre i B1 Admin. Klikk på den eller trykk **Ctrl+K** (eller **Cmd+K**), og bla deretter eller begynn å skrive.
 :::
 
-## Hovedfunksjoner
+## Viktige funksjoner
 
-- **[People](./people/)** - Administrer menighetsregisteret, legg til medlemmer, rediger data i bulk, og bla etter husstand eller som en sorterbar tabell. Hver person åpnes på én profilside med detaljene til venstre og oppsummeringer av oppmøte, gaver, grupper, notater og skjemaer ved siden av. Siden [Notes](./people/notes) lister nylige notater for personer, grupper, arrangementer og arbeidsflytkort
-- **[Groups](./groups/)** - Opprett og organiser grupper i menigheten med forespørsler om å bli med, medlemsadministrasjon, gruppe-e-post, personlige gruppetekster og utskrivbare kontaktlister. Hver gruppe åpnes på én side med handlingene til venstre og oppsummeringer av medlemmer, økter, kalender og helse ved siden av
-- **[Attendance](./attendance/)** - Sett opp campus og gudstjenestetider, før oppmøte med navn og utskrivbare klasselister, se hvilke klasser som fortsatt mangler oppmøte, registrer enkle antall-tellinger med trendrapporter, gi hver gudstjenestetid en innsjekkingsplan slik at selvbetjent innsjekk åpner og lukkes automatisk, i hvert campus sin tidssone, og la førstegangsgjester melde seg på via en [QR-kode](./attendance/check-in#guest-registration-via-qr-code) med feltene du velger
-- **[Donations](./donations/)** - Registrer gaver i flere valutaer, administrer fond, før en enkelt gave fra en persons profil, skriv ut batcher (én om gangen eller alle batcher i et datointervall) med delsummer per fond, lukk batcher når de er telt, importer en batch fra en CSV-fil, la tellelag registrere gaver med tillatelsen **Enter Donations**, og lag giverbekreftelser utskrevet med menighetens logo
-- **[Serving](./serving/)** - Koordiner frivillige, lag tjenesteplaner (eller kopier en fremover ukentlig i opptil 12 uker), send påminnelser via push, e-post eller tekst, send tekst til alle som er planlagt med **Text Volunteers**, administrer oppgaver, og før personer gjennom trinnvise arbeidsflyter som kan sende e-post og tekst, varsle en ansatt, registrere oppmøte, og følge med på om frivillige har bekreftet sine tjenesteoppdrag
-- **[Forms](./forms/)** - Lag egendefinerte skjemaer for påmeldinger og datainnsamling, legg til et overskriftsbilde, del frittstående skjemaer med en QR-kode, og knytt et skjema til en gruppe slik at gruppens ledere kan lese og skrive ut svarene
-- **[Reports](./reports/)** - Se rapporter om bursdager, oppmøte og gaver
-- **[Website](./website/)** - Bygg og administrer menighetens nettside med egendefinerte navigasjonsstiler, følg besøk på nettstedet ditt og B1-appen med GA4-ID-en din, eller slå av den offentlige siden og behold bare medlemsportalen
-- **[Sermons](./sermons/)** - Administrer preke-arkivet ditt, direktesending og en automatisk podcast-strøm
-- **[Calendars](./calendars/)** - Lag kuraterte kalendere, administrer romreservasjoner og ressurser, og se tilgjengelighet
-- **[Settings](./settings/)** - Konfigurer alt på én rullende side med en hurtighoppliste: menighetsinformasjon, region, format for dato og telefonnummer, tekstmeldinger (inkludert din egen Twilio-konto), roller med antall medlemmer, tillatelser og egendefinerte personfelt
+- **[Personer](./people/)** – Administrer kirkens katalog, legg til medlemmer, rediger data i bulk, og bla etter husstand eller som en sorterbar tabell. Hver person åpner til én postside med detaljene på venstre side og oppsummeringer av oppmøte, gaver, grupper, notater og skjemaer ved siden av. Finn personer som nylig er lagt til med søket **Dato lagt til**. Siden [Notater](./people/notes) viser nylige notater på tvers av personer, grupper, arrangementer og arbeidsflytkort
+- **[Grupper](./groups/)** – Opprett og organiser kirkens grupper med påmeldingsforespørsler, medlemsadministrasjon, gruppe-e-post, personlige gruppetekster med gjenbrukbare tekstmaler og en plassholder for Gruppenavn, og utskrivbare kontaktlister. Hver gruppe åpner til én side med handlingene på venstre side og oppsummeringer av medlemmer, økter, kalender og helse ved siden av
+- **[Oppmøte](./attendance/)** – Sett opp kampuser og gudstjenestetider, følg navngitt oppmøte med utskrivbare navnelister for klasser, se hvilke klasser som fortsatt mangler oppmøte, registrer enkle hodetellinger med trendrapporter, gi hver gudstjenestetid en innsjekkingsplan slik at selvinnsjekking åpner og stenger av seg selv, i hver kampus' tidssone, og la førstegangsgjester melde seg på via en [QR-kode](./attendance/check-in#guest-registration-via-qr-code) med feltene du velger
+- **[Gaver](./donations/)** – Registrer gaver i flere valutaer, administrer fond, før inn en enkeltgave fra en persons post, skriv ut partier (ett om gangen eller alle partier i et datointervall) på kirkens brevhode med fondsundersummer, lukk partier når de er talt, importer et parti fra en CSV-fil, la telleteam registrere gaver med tillatelsen **Registrer gaver**, og generer oversikter utskrevet med kirkens logo
+- **[Tjeneste](./serving/)** – Koordiner frivillige, lag gudstjenesteplaner (eller kopier en plan fremover hver uke i opptil 12 uker), send påminnelser via push, e-post eller tekst, send tekst til alle som er planlagt med **Tekst frivillige**, administrer oppgaver, og beveg personer gjennom trinnvise arbeidsflyter som kan sende e-post og tekst, varsle en ansatt, registrere oppmøte og følge med på om frivillige har bekreftet tjenesteoppdragene sine. Planlagte arbeidsflytregler kan finne givere som har sluttet å gi, og utskrevne planer utelater tomme kolonner
+- **[Skjemaer](./forms/)** – Lag egendefinerte skjemaer for påmeldinger og datainnsamling, legg til et toppbilde, del frittstående skjemaer med en QR-kode, og koble et skjema til en gruppe slik at gruppens ledere kan lese og skrive ut svarene
+- **[Rapporter](./reports/)** – Se rapporter om bursdager, oppmøte og gaver
+- **[Nettsted](./website/)** – Bygg og administrer kirkens nettsted med egne navigasjonsstiler, følg besøk på nettstedet og B1-appen med din GA4-ID, eller slå av det offentlige nettstedet og behold bare medlemsportalen
+- **[Taler](./sermons/)** – Administrer taler-biblioteket ditt, direktesending og en automatisk podcast-feed
+- **[Kalendere](./calendars/)** – Lag kuraterte kalendere, administrer romreservasjoner og ressurser, og se tilgjengelighet
+- **[Innstillinger](./settings/)** – Konfigurer alt fra én rullende side med en hurtigliste: kirkeinfo, region, format for dato og telefonnummer, tekstmeldinger (inkludert din egen Twilio-konto), roller med antall medlemmer, tillatelser og egendefinerte personfelt
 
 :::info
-Klikk på spørsmålstegnikonet øverst til høyre på en hvilken som helst side for raskt å få tilgang til hjelp og dokumentasjon. For å endre fargetema (**Default**, **Classic** eller **Custom**) eller bytte mellom lys og mørk modus, åpner du brukermenyen din og bruker **Theme Preferences**.
+Klikk på spørsmålstegn-ikonet øverst til høyre på en hvilken som helst side for raskt å få tilgang til hjelp og dokumentasjon. For å endre fargetemaet (**Standard**, **Klassisk** eller **Egendefinert**) eller bytte mellom lys og mørk modus, åpner du brukermenyen din og bruker **Temainnstillinger**. For å beskytte kontoen din med en kode fra en autentiseringsapp, slå på [Tofaktorpålogging](./profile/managing-profile#two-factor-sign-in) på profilen din.
 :::
 
 For støtte, send e-post til [support@churchapps.org](mailto:support@churchapps.org).

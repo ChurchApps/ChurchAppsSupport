@@ -125,7 +125,9 @@ Once a provider is connected, staff with permission to send texts see a **Text**
 
 ### Personalizing Texts with Merge Fields {#personalizing-texts-with-merge-fields}
 
-Below the message box, the Text dialog shows placeholder chips: **First Name**, **Last Name**, **Display Name**, and **Church Name**. Click a chip to insert its placeholder (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, or `{{churchName}}`) at your cursor. When the text is sent, each placeholder is replaced with that recipient's details, so a group text like `Hi {{firstName}}, see you Sunday!` reaches each member with their own name. Placeholders work for both group texts and texts to a single person.
+Below the message box, the Text dialog shows placeholder chips: **First Name**, **Last Name**, **Display Name**, and **Church Name**. Click a chip to insert its placeholder (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, or `{{churchName}}`) at your cursor. When the text is sent, each placeholder is replaced with that recipient's details, so a group text like `Hi {{firstName}}, see you Sunday!` reaches each member with their own name. Placeholders work for both group texts and texts to a single person. Texts to a group also offer a **Group Name** chip (`{{groupName}}`), which is replaced with the group's name.
+
+To reuse a message, save it as a [text template](./email-templates.md#text-templates) (an email template with the **Text** category) and pick it from **Load Template (optional)** at the top of the Text window.
 
 :::info
 The 1,600-character limit applies to the message as you type it. After the placeholders are filled in, any text longer than 1,600 characters is cut off at that length.

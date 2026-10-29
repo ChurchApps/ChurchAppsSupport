@@ -250,6 +250,8 @@ Extends CRUD base class (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` — no per
 
 Manages OAuth authentication records for external content providers (e.g., presentation software integrations).
 
+`accessToken` and `refreshToken` are encrypted at rest with `EncryptionHelper` and decrypted when read, so the API still returns plain tokens. Rows saved before encryption hold plain text (which never contains `|`); they are returned as-is and encrypted the next time they're saved.
+
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | List all content provider auths |

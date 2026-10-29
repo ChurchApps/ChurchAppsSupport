@@ -6,7 +6,7 @@ title: "API"
 
 <div class="article-intro">
 
-ChurchApps-API-et er en **modulær monolitt** -- en enkelt kodebase som betjener seks datamoduler, hver med sin egen database. Denne arkitekturen gir deg de organisatoriske fordelene til mikrotjenester (klare grenser, uavhengige datalagre) med den operasjonelle enkelheten til en enkelt distribusjon.
+ChurchApps-API-et er en **modulær monolitt** — en enkelt kodebase som betjener seks datamoduler, der hver har sin egen database. Denne arkitekturen gir de organisatoriske fordelene ved mikrotjenester (tydelige grenser, uavhengige datalagre) med den operasjonelle enkelheten til én enkelt utrulling.
 
 </div>
 
@@ -14,21 +14,21 @@ ChurchApps-API-et er en **modulær monolitt** -- en enkelt kodebase som betjener
 
 | Modul | Formål |
 |--------|---------|
-| **Membership** | Personer, grupper, husholdninger, tillatelser |
-| **Attendance** | Gudstjenester, økter, innsjekkingsregistreringer |
-| **Content** | Sider, seksjoner, elementer, strømming |
-| **Giving** | Donasjoner, fond, betalingsbehandling |
+| **Membership** | Personer, grupper, husstander, tillatelser |
+| **Attendance** | Gudstjenester, økter, innsjekkingsposter |
+| **Content** | Sider, seksjoner, elementer, direktesending |
+| **Giving** | Gaver, fond, betalingsbehandling |
 | **Messaging** | Samtaler, varsler, e-post |
 | **Doing** | Oppgaver, planer, tildelinger |
 
-## Teknologistack
+## Teknologistakk
 
-- **Kjøretid:** Node.js 22.x med TypeScript (ES-moduler)
+- **Kjøretid:** Node.js 24.x med TypeScript (ES-moduler)
 - **Rammeverk:** Express
-- **Dependency Injection:** Inversify (dekoratørbasert ruting)
-- **Database:** MySQL -- én database per modul, hver med sin egen tilkoblingspool
+- **Dependency injection:** Inversify (dekoratorbasert ruting)
+- **Database:** MySQL — én database per modul, hver med sin egen tilkoblingspool
 - **Autentisering:** JWT-basert autentisering via `CustomAuthProvider`
-- **Distribusjon:** AWS Lambda via Serverless Framework v3
+- **Utrulling:** AWS Lambda via Serverless Framework v3
 
 ## Porter
 
@@ -39,33 +39,33 @@ ChurchApps-API-et er en **modulær monolitt** -- en enkelt kodebase som betjener
 
 ## Lambda-funksjoner
 
-Når API-et distribueres til AWS, kjører det som seks Lambda-funksjoner:
+Når API-et rulles ut til AWS, kjører det som seks Lambda-funksjoner:
 
-- **`web`** -- Håndterer alle HTTP-forespørsler
-- **`socket`** -- Administrerer WebSocket-tilkoblinger
-- **`timer15Min`** -- Kjører hvert 30. minutt for e-postvarsler (navnet er historisk)
-- **`timerMidnight`** -- Kjører daglig for sammendrags-e-poster og vedlikeholdsoppgaver
-- **`timerScheduledTasks`** -- Kjører daglig for forfalte automatiseringer og behandling av forsinkede arbeidsflyter
-- **`timerWebhooks`** -- Kjører hvert minutt for å levere utgående webhooks i kø
+- **`web`** — håndterer alle HTTP-forespørsler
+- **`socket`** — administrerer WebSocket-tilkoblinger
+- **`timer15Min`** — kjører hvert 30. minutt for e-postvarsler (navnet er historisk)
+- **`timerMidnight`** — kjører daglig for sammendragsmeldinger og vedlikeholdsoppgaver
+- **`timerScheduledTasks`** — kjører daglig for forfalte automatiseringer og forfalte arbeidsflytprosesser
+- **`timerWebhooks`** — kjører hvert minutt for å levere køede utgående webhooks
 
 ## Delte biblioteker
 
 API-et er avhengig av to delte ChurchApps-pakker:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Grunnleggende verktøy (DateHelper, ApiHelper, osv.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Express-serververktøy inkludert autentisering, databasehjelpere og AWS-integrasjoner
+- **[`@churchapps/helpers`](../shared-libraries/helpers)** — grunnleggende verktøy (DateHelper, ApiHelper osv.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** — Express-serververktøy inkludert autentisering, databasehjelpere og AWS-integrasjoner
 
 :::info
-API-et bruker ES-moduler (`"type": "module"` i `package.json`). Sørg for at importene dine bruker ES-modulsyntaks.
+API-et bruker ES-moduler (`"type": "module"` i `package.json`). Sørg for at importene dine bruker ES-modulsyntaksen.
 :::
 
 ## I denne seksjonen
 
-- **[Lokalt oppsett](./local-setup)** -- Klon, konfigurer og kjør API-et lokalt
-- **[Database](./database)** -- Database-per-modul-arkitektur, skjemaskript og datatilgangsmønstre
-- **[Modulstruktur](./module-structure)** -- Kontrollere, repositorier, modeller og autentisering
-- **[API-nøkler](./api-keys)** -- Personlige tilgangstokener for skript og koblinger
-- **[Tilkoblede apper (OAuth)](./connected-apps)** -- Flerleietaker-OAuth-flyt for tredjepartsapper
-- **[Webhooks](./webhooks)** -- Push varselhendelser til eksterne systemer
-- **[MCP-server](./mcp)** -- Model Context Protocol-endepunkt som eksponerer API-et for AI-assistenter
-- **[Endepunktreferanse](./endpoints/)** -- Fullstendig REST-API-dokumentasjon for alle moduler
+- **[Lokalt oppsett](./local-setup)** — klon, konfigurer og kjør API-et lokalt
+- **[Database](./database)** — arkitektur med database per modul, skjemaskript og datatilgangsmønstre
+- **[Modulstruktur](./module-structure)** — kontrollere, repositorier, modeller og autentisering
+- **[API-nøkler](./api-keys)** — personlige tilgangstokener for skript og koblinger
+- **[Tilkoblede apper (OAuth)](./connected-apps)** — flerleietaker OAuth-flyt for tredjepartsapper
+- **[Webhooks](./webhooks)** — send hendelsesvarsler til eksterne systemer
+- **[MCP-server](./mcp)** — Model Context Protocol-endepunkt som eksponerer API-et for KI-assistenter
+- **[Endepunktreferanse](./endpoints/)** — fullstendig REST-API-dokumentasjon for alle moduler

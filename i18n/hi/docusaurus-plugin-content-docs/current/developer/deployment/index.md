@@ -1,35 +1,35 @@
 ---
-title: "डिप्लॉयमेंट"
+title: "Deployment"
 ---
 
-# डिप्लॉयमेंट
+# Deployment
 
 <div class="article-intro">
 
-ChurchApps प्रोजेक्ट के प्रकार के अनुसार अलग-अलग डिप्लॉयमेंट रणनीतियाँ अपनाता है। APIs AWS Lambda पर डिप्लॉय होते हैं, वेब ऐप्स CloudFront के साथ S3 पर स्टैटिक साइट के रूप में डिप्लॉय होते हैं, और मोबाइल ऐप्स Expo EAS और ऐप स्टोर्स के माध्यम से बनाए और वितरित किए जाते हैं।
+ChurchApps प्रोजेक्ट प्रकार के अनुसार अलग deployment रणनीतियाँ उपयोग करता है। APIs AWS Lambda पर deploy होते हैं, वेब ऐप्स S3 + CloudFront पर static sites के रूप में deploy होते हैं, और मोबाइल ऐप्स Expo EAS और ऐप स्टोर के माध्यम से बनाए और वितरित किए जाते हैं।
 
 </div>
 
-## प्रोजेक्ट प्रकार के अनुसार डिप्लॉयमेंट
+## प्रोजेक्ट प्रकार के अनुसार Deployment
 
-| प्रोजेक्ट प्रकार | डिप्लॉयमेंट लक्ष्य | टूलिंग |
+| प्रोजेक्ट प्रकार | Deployment लक्ष्य | टूलिंग |
 |-------------|-------------------|---------|
-| [APIs](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 22.x रनटाइम) |
-| [वेब ऐप्स](./web-apps) | S3 + CloudFront | स्टैटिक बिल्ड, S3 सिंक, CloudFront invalidation |
-| [मोबाइल ऐप्स](./mobile) | ऐप स्टोर्स | Expo EAS Build + OTA Updates |
-| [सेल्फ़-होस्टिंग (Railway)](./railway-template) | Railway | एक-क्लिक टेम्पलेट: MySQL + Api + B1Admin + B1App |
-| [सेल्फ़-होस्टिंग (Docker)](./docker) | कोई भी Docker होस्ट | एक-लाइन इंस्टॉलर; प्रीबिल्ट GHCR इमेज + Caddy, `./deploy/b1` upgrade/backup/rollback |
-| [Caddy कस्टम-डोमेन प्रॉक्सी](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | स्टैटिक Caddyfile + WinSW सर्विस + शेड्यूल्ड मैप सिंक |
-| FreeShow | सीधा डाउनलोड | Electron Builder (क्रॉस-प्लेटफ़ॉर्म बाइनरी) |
+| [APIs](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 24.x runtime) |
+| [Web Apps](./web-apps) | S3 + CloudFront | Static build, S3 sync, CloudFront invalidation |
+| [Mobile Apps](./mobile) | App Stores | Expo EAS Build + OTA Updates |
+| [Self-Hosting (Railway)](./railway-template) | Railway | One-click template: MySQL + Api + B1Admin + B1App |
+| [Self-Hosting (Docker)](./docker) | कोई भी Docker host | One-line installer; prebuilt GHCR images + Caddy, `./deploy/b1` upgrade/backup/rollback |
+| [Caddy Custom-Domain Proxy](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Static Caddyfile + WinSW service + scheduled map sync |
+| FreeShow | सीधा डाउनलोड | Electron Builder (cross-platform binaries) |
 
-## एनवायरनमेंट
+## Environments
 
-| एनवायरनमेंट | उद्देश्य |
-|-------------|---------|
-| `dev` | स्थानीय डेवलपमेंट |
-| `demo` | सार्वजनिक डेमो इंस्टेंस; हर `main` पुश पर डिप्लॉय होता है, इसलिए यह प्री-प्रोडक्शन टेस्टिंग के रूप में भी काम करता है |
-| `prod` | प्रोडक्शन |
+| Environment | उद्देश्य |
+|-------------|-------------|
+| `dev` | स्थानीय विकास |
+| `demo` | सार्वजनिक डेमो इंस्टेंस; `main` पर हर push पर deploy होता है, इसलिए यह pre-production परीक्षण का भी काम करता है |
+| `prod` | Production |
 
 :::info
-हर एनवायरनमेंट के अपने API एंडपॉइंट्स, डेटाबेस और कॉन्फ़िगरेशन होते हैं। एनवायरनमेंट-विशिष्ट सेटिंग्स स्थानीय रूप से `.env` फ़ाइलों के माध्यम से और डिप्लॉय किए गए एनवायरनमेंट में AWS SSM Parameter Store के माध्यम से प्रबंधित होती हैं।
+हर environment के अपने API endpoints, डेटाबेस, और कॉन्फ़िगरेशन होते हैं। Environment-विशिष्ट सेटिंग्स स्थानीय रूप से `.env` फ़ाइलों के माध्यम से और deployed environments में AWS SSM Parameter Store के माध्यम से प्रबंधित होती हैं।
 :::

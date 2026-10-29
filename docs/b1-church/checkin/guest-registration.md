@@ -54,7 +54,7 @@ Your registration creates records in the church database:
 - A church volunteer or administrator can then check your family in using the [B1 Checkin](../../b1-checkin/check-in/looking-up-members) kiosk.
 
 :::info
-Each registration creates a new household, so please register your family only once. If you've already registered, search for your name or phone number on the kiosk instead.
+If you register again with the same first name and the same email or phone number, the church's records recognize you and reuse your existing profile instead of adding a duplicate. Anyone else is added as new. If you've already registered, you can also just search for your name or phone number on the kiosk.
 :::
 
 :::tip

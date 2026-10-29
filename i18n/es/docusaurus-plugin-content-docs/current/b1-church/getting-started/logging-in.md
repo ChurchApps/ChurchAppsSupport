@@ -1,66 +1,68 @@
 ---
-title: "Iniciar Sesión"
+title: "Iniciar sesión"
 ---
 
-# Iniciar Sesión
+# Iniciar sesión
 
 <div class="article-intro">
 
-Iniciar sesión en B1.church te da acceso al portal de miembros donde puedes ver qué se acerca para ti, administrar grupos, dar en línea y usar todas las herramientas que tu iglesia ha configurado. Este artículo cubre cómo iniciar sesión, navegar por tu menú de usuario y cerrar sesión.
+Iniciar sesión en B1.church le da acceso al portal de miembros, donde puede ver lo que viene para usted, administrar sus grupos, dar en línea y usar todas las herramientas que su iglesia ha configurado. Este artículo explica cómo iniciar sesión, navegar por su menú de usuario y cerrar sesión.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Necesitas una cuenta de ChurchApps. Consulta [Primeros Pasos](../getting-started/) para crear una.
-- Necesitas la URL de B1.church de tu iglesia (por ejemplo, `https://yourchurchname.b1.church`).
+- Necesita una cuenta de ChurchApps. Consulte [Primeros pasos](../getting-started/) para crear una.
+- Necesita la URL de B1.church de su iglesia (por ejemplo, `https://yourchurchname.b1.church`).
 
 </div>
 
-## Cómo Iniciar Sesión
+## Cómo iniciar sesión
 
-1. Ve a la URL de B1.church de tu iglesia (por ejemplo, `https://yourchurchname.b1.church`).
-2. Haz clic en el botón **Iniciar Sesión** en la esquina superior derecha del encabezado.
-3. Ingresa tu **dirección de correo electrónico** y **contraseña**, o haz clic en **Continuar con Google** o **Continuar con Microsoft** si tu iglesia tiene el inicio de sesión único habilitado.
-4. Haz clic en **Iniciar Sesión**.
+1. Vaya a la URL de B1.church de su iglesia (por ejemplo, `https://yourchurchname.b1.church`).
+2. Haga clic en el botón **Iniciar sesión** en la esquina superior derecha del encabezado.
+3. Ingrese su **correo electrónico** y **contraseña**, o haga clic en **Continuar con Google** o **Continuar con Microsoft** si su iglesia tiene habilitado el inicio de sesión único.
+4. Haga clic en **Iniciar sesión**.
 
-Después de iniciar sesión, volverás a la página en la que estabas antes de hacer clic en iniciar sesión. Si navegaste directamente a una página del portal de miembros mientras no habías iniciado sesión, se te devolverá a esa página automáticamente después de iniciar sesión.
+Si ha activado la [verificación en dos pasos](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), la siguiente pantalla le pedirá un código. Ingrese el código de 6 dígitos de su aplicación de autenticación, o uno de sus códigos de respaldo, y haga clic en **Verificar código**. La aplicación de B1.church también le pide el código de la misma manera.
 
-## Mantener Sesión Iniciada
+Después de iniciar sesión, volverá a la página en la que estaba antes de hacer clic en iniciar sesión. Si navegó directamente a una página del portal de miembros estando desconectado, se le devolverá a esa página automáticamente después de iniciar sesión.
 
-Permaneces iniciado sesión en el mismo navegador o aplicación instalada hasta que cierres sesión, incluso si no visitas durante un tiempo -- tu sesión se mantiene durante aproximadamente 30 días de inactividad. Iniciar sesión una vez también te mantiene iniciado sesión cuando cambias entre el sitio web de tu iglesia y el portal de miembros (`/mobile`), por lo que no tienes que iniciar sesión de nuevo en cada lugar.
+## Mantenerse conectado
 
-## Accediendo al Portal de Miembros
+Permanece con la sesión iniciada en el mismo navegador o aplicación instalada hasta que cierre sesión, incluso si no la usa durante un tiempo: su sesión se mantiene por hasta unos 30 días de inactividad. Iniciar sesión una vez también le mantiene conectado al pasar entre el sitio web de su iglesia y el portal de miembros (`/mobile`), así que no tiene que volver a iniciar sesión en cada lugar.
 
-Una vez que hayas iniciado sesión, puedes acceder al portal de miembros haciendo clic en tu **nombre** en la esquina superior derecha de la página y seleccionando **Portal de Miembros** en el menú. El portal de miembros es donde residen todas tus herramientas personales de la iglesia, incluyendo tu panel [Inicio](./navigating.md), página [Mi](./me-page.md), [grupos](../groups/), [donaciones](../giving/), y más.
+## Acceder al portal de miembros
 
-## Tu Menú de Usuario
+Una vez que haya iniciado sesión, puede acceder al portal de miembros haciendo clic en su **nombre** en la esquina superior derecha de la página y seleccionando **Portal de miembros** en el menú. El portal de miembros es donde viven todas sus herramientas personales de la iglesia, incluidos su [panel de inicio](./navigating.md), su [página Yo](./me-page.md), los [grupos](../groups/), las [ofrendas](../giving/) y más.
 
-Después de iniciar sesión, tu nombre aparece como una etiqueta en la esquina superior derecha. Haz clic en ella para abrir un menú con las siguientes opciones:
+## Su menú de usuario
 
-- **Portal de Miembros** -- Ve a tu panel personal del portal de miembros.
-- **Editar Perfil** -- Actualiza tu configuración de cuenta o edita tu perfil de iglesia.
-- **Cerrar Sesión** -- Sal de tu cuenta.
+Después de iniciar sesión, su nombre aparece como un chip en la esquina superior derecha. Haga clic en él para abrir un menú con las siguientes opciones:
 
-## Acceso de Administrador
+- **Portal de miembros** -- Vaya a su panel personal del portal de miembros.
+- **Editar perfil** -- Actualice la configuración de su cuenta o edite su perfil en la iglesia.
+- **Cerrar sesión** -- Cierre la sesión de su cuenta.
 
-Si eres un administrador de la iglesia con los permisos apropiados, también verás una opción de **Portal de Administración** en tu menú de usuario. Al hacer clic en ella, te lleva a B1 Admin donde puedes administrar la configuración, las personas, los grupos y el contenido de tu iglesia.
+## Acceso de administrador
 
-## Olvidaste tu Contraseña
+Si es administrador de la iglesia con los permisos correspondientes, también verá la opción **Portal de administración** en su menú de usuario. Al hacer clic en ella, se le lleva a B1 Admin, donde puede administrar la configuración, las personas, los grupos y el contenido de su iglesia.
 
-Si no recuerdas tu contraseña:
+## Olvidé mi contraseña
 
-1. Haz clic en **Olvidé mi Contraseña** en la página de inicio de sesión.
-2. Ingresa la dirección de correo electrónico asociada a tu cuenta de ChurchApps y envía.
-3. Revisa tu correo electrónico para ver un mensaje que contiene un **código de verificación de 6 dígitos**. El código es válido durante 15 minutos.
-4. Ingresa el código en la pantalla de verificación para iniciar sesión.
-5. Una vez que hayas iniciado sesión, visita tu perfil para elegir una nueva contraseña.
+Si no recuerda su contraseña:
+
+1. Haga clic en **Olvidé mi contraseña** en la página de inicio de sesión.
+2. Ingrese el correo electrónico asociado a su cuenta de ChurchApps y envíe el formulario.
+3. Revise su correo electrónico para encontrar un mensaje con un **código de verificación de 6 dígitos**. El código es válido durante 15 minutos.
+4. Ingrese el código en la pantalla de verificación para iniciar sesión.
+5. Una vez que haya iniciado sesión, visite su perfil para elegir una nueva contraseña.
 
 :::tip
-Si el código no llega en un par de minutos, revisa tu carpeta de correo no deseado. Después de cinco intentos incorrectos, el código se bloquea -- solicita uno nuevo desde la página de Olvidé mi Contraseña si esto sucede.
+Si el código no llega en un par de minutos, revise su carpeta de spam. Después de cinco intentos incorrectos, el código se bloquea; si eso sucede, solicite uno nuevo desde la página de Olvidé mi contraseña.
 :::
 
-## Cerrar Sesión
+## Cerrar sesión
 
-Para cerrar sesión, haz clic en tu **nombre** en la esquina superior derecha y selecciona **Cerrar Sesión**. Se cerrará tu sesión y volverás al sitio público.
+Para cerrar sesión, haga clic en su **nombre** en la esquina superior derecha y seleccione **Cerrar sesión**. Se cerrará su sesión y volverá al sitio público.

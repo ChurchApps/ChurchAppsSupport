@@ -6,63 +6,77 @@ title: "Blog"
 
 <div class="article-intro">
 
-La página Blog te permite publicar noticias, actualizaciones y devocionales en tu sitio web de iglesia. Los posts aparecen en una lista de tarjetas en `/blog`, en su propia URL y en un feed RSS que otras herramientas (como Zapier) pueden monitorear para nuevos posts.
+La página de Blog le permite publicar noticias, novedades y devocionales en el sitio web de su iglesia. Las entradas aparecen en un listado de tarjetas en `/blog`, en su propia URL, y en una fuente RSS que otras herramientas (como Zapier) pueden vigilar para detectar nuevas entradas.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Completa la [Configuración Inicial](initial-setup) de tu sitio web
-- Agrega un enlace de navegación a `/blog` desde [Administración de Páginas](managing-pages) si deseas que los visitantes encuentren tu blog desde el menú
+- Complete la [Configuración inicial](initial-setup) de su sitio web
+- Agregue un enlace de navegación a `/blog` desde [Administrar páginas](managing-pages) si quiere que los visitantes encuentren su blog en el menú
 
 </div>
 
-## Acceso al Blog
+## Acceder al blog
 
-1. En B1 Admin, abre el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda) y expande **Website**.
-2. Haz clic en **Blog**.
-3. La página Blog enumera todos los posts junto con su estado y fecha de publicación.
+1. En B1 Admin, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda) y expanda **Sitio web**.
+2. Haga clic en **Blog**.
+3. La página de Blog muestra todas las entradas junto con su estado y fecha de publicación.
 
-## Agregar un Post
+## Agregar una entrada
 
-1. Haz clic en **Add Post** en la esquina superior derecha.
-2. Ingresa un **Title**. Se genera automáticamente una **Dirección web** (slug) amigable con URL mientras escribes -- puedes editarla directamente si deseas una dirección diferente.
-3. Agrega un **Excerpt** -- un resumen corto mostrado en la lista de posts, descripciones meta y feed RSS. Si lo dejas en blanco, se genera uno automáticamente desde el inicio del contenido de tu post.
-4. Escribe el cuerpo del post en el editor **Content** usando Markdown. Haz clic en **Preview** para ver cómo se verá el post formateado.
-5. Elige una **Category** (elige una existente o escribe una nueva) y **Tags** opcionales separadas por comas.
-6. Haz clic en **Select Image** para elegir una foto de tu galería [Files](files), o carga una nueva. Las fotos cargadas se abren en una herramienta de corte integrada bloqueada a una relación de 16:9, para que puedas enmarcar cualquier foto para que se ajuste al encabezado del post y las tarjetas de lista.
-7. Establece el **Author** -- por defecto eres tú, pero puedes buscar y seleccionar a cualquier persona en tu base de datos.
-8. Activa **Published** y establece una **Publish Date** cuando estés listo para hacer el post público. Déjalo desactivado para guardar el post como borrador.
+1. Haga clic en **Agregar entrada** en la esquina superior derecha.
+2. Ingrese un **Título**. Se genera automáticamente una **Dirección web** (slug) amigable para URL mientras escribe; puede editarla directamente si quiere una dirección diferente.
+3. Agregue un **Extracto**: un resumen breve que se muestra en el listado de entradas, en las meta descripciones y en la fuente RSS. Si lo deja en blanco, se genera automáticamente a partir del inicio del contenido de la entrada.
+4. Escriba el cuerpo de la entrada en el editor de **Contenido** usando Markdown. Haga clic en **Vista previa** para ver cómo quedará la entrada con formato.
+5. Elija una **Categoría** (seleccione una existente o escriba una nueva) y, opcionalmente, **Etiquetas** separadas por comas.
+6. Haga clic en **Seleccionar imagen** para elegir una foto de su galería de [Archivos](files), o suba una nueva. Las fotos subidas se abren en una herramienta de recorte integrada bloqueada en una proporción de 16:9, para que pueda encuadrar cualquier foto y ajustarla al encabezado de la entrada y a las tarjetas del listado.
+7. Configure el **Autor**: por defecto es usted, pero puede buscar y seleccionar a cualquier persona de su base de datos.
+8. Active **Publicado** y configure una **Fecha de publicación** cuando esté listo para hacer pública la entrada. Déjelo desactivado para guardar la entrada como borrador.
 
 :::tip
-Establece una **Publish Date** en el futuro para programar un post. Se mantiene oculto para los visitantes y muestra un chip **Scheduled** en la lista Blog hasta que llegue esa fecha.
+Configure una **Fecha de publicación** en el futuro para programar una entrada. Permanece oculta para los visitantes y muestra una etiqueta **Programada** en la lista del Blog hasta que llegue esa fecha.
 :::
 
-## Estados del Post
+## Estados de las entradas
 
-Cada post en la lista muestra uno de tres estados:
+Cada entrada de la lista muestra uno de tres estados:
 
-- **Draft** -- No publicado. Solo visible en admin.
-- **Scheduled** -- Publicado está activado, pero la fecha de publicación está en el futuro.
-- **Published** -- En vivo en tu sitio web e incluido en el feed RSS.
+- **Borrador** -- No publicada. Solo visible en el panel de administración.
+- **Programada** -- Publicada está activado, pero la fecha de publicación es futura.
+- **Publicada** -- En vivo en su sitio web e incluida en la fuente RSS.
 
-## Edición, Vista Previa y Eliminación de Posts
+## Editar, previsualizar y eliminar entradas
 
-- Haz clic en **Edit** junto a un post para hacer cambios.
-- Haz clic en **View on Site** (visible en posts publicados) para abrir el post en vivo en tu sitio web en una nueva pestaña.
-- Haz clic en **Delete** para eliminar permanentemente un post.
+- Haga clic en **Editar** junto a una entrada para hacer cambios.
+- Haga clic en **Ver en el sitio** (que aparece en las entradas publicadas) para abrir la entrada activa en su sitio web en una nueva pestaña.
+- Haga clic en **Eliminar** para borrar una entrada de forma permanente.
 
-## Cómo los Visitantes Ven tu Blog
+## Cómo ven los visitantes su blog
 
-Los posts publicados aparecen en `{yoursite}/blog`, 10 por página con enlaces **Older**/**Newer** para navegar por tu archivo, junto con un filtro de categoría y la línea de firma y foto de cada post. Las etiquetas también se representan como chips clicables, permitiendo a los visitantes filtrar la lista por etiqueta de la misma manera. Los posts individuales se encuentran en `{yoursite}/blog/{slug}` e incluyen posts relacionados de la misma categoría. La página del blog también publica un feed RSS, autodescubierto por lectores de feed y herramientas de automatización como Zapier.
+Las entradas publicadas aparecen en `{yoursite}/blog`, 10 por página, con enlaces **Anteriores**/**Siguientes** para navegar por el archivo, junto con un filtro por categoría y el autor y la foto de cada entrada. Las etiquetas también se muestran como chips en los que se puede hacer clic, lo que permite a los visitantes filtrar la lista por etiqueta de la misma manera. Cada entrada individual está en `{yoursite}/blog/{slug}` e incluye entradas relacionadas de la misma categoría. La página del blog también publica una fuente RSS, que los lectores de feeds y las herramientas de automatización como Zapier detectan automáticamente.
 
 :::info
-Los posts de blog son un tipo de contenido separado de las páginas regulares del sitio web -- no se construyen en el [editor de páginas](page-editor) y no aparecen en la lista Pages. Esto mantiene la escritura de blogs rápida y enfocada en la escritura.
+Las entradas del blog son un tipo de contenido separado de las páginas normales del sitio web: no se crean en el [editor de páginas](page-editor) y no aparecen en la lista de Páginas. Esto mantiene la redacción de blog rápida y centrada en la escritura.
 :::
 
-## Próximos Pasos
+## Agregar comentarios debajo de las entradas
 
-- [Administración de Páginas](managing-pages) -- Agrega un enlace de navegación a tu blog
-- [Archivos](files) -- Carga fotos para usar en tus posts
-- [Integración con Zapier](../integrations/zapier.md) -- Dispara automatizaciones cuando nuevos posts sean publicados
+B1 no aloja por sí mismo los comentarios del blog, pero puede agregar un servicio de comentarios. También puede colocar cualquier otra cosa debajo de cada entrada, como un formulario de suscripción a un boletín o un botón de ofrenda.
+
+1. Regístrese en un servicio de comentarios como [Hyvor Talk](https://talk.hyvor.com), [FastComments](https://fastcomments.com) o [Disqus](https://disqus.com) y copie su código de inserción (embed).
+2. En la página del Blog, desplácese hasta **Debajo de cada entrada**.
+3. Pegue el código de inserción y haga clic en **Guardar**.
+
+El código aparece debajo del contenido de cada entrada publicada. Su servicio de comentarios se encarga de la moderación y del filtrado de spam, así que revise su panel con regularidad.
+
+:::tip
+Borre el cuadro y haga clic en **Guardar** para quitar el código de todas las entradas. Solo las personas que pueden editar la configuración de la iglesia ven este cuadro.
+:::
+
+## Próximos pasos
+
+- [Administrar páginas](managing-pages) -- Agregue un enlace de navegación a su blog
+- [Archivos](files) -- Suba fotos para usar en sus entradas
+- [Integración con Zapier](../integrations/zapier.md) -- Active automatizaciones cuando se publiquen nuevas entradas

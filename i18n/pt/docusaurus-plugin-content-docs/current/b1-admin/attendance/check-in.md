@@ -6,43 +6,43 @@ title: "Check-In"
 
 <div class="article-intro">
 
-O B1 Admin oferece suporte ao autoatendimento de check-in nos cultos por meio do aplicativo complementar **B1 Checkin**. Os membros podem fazer o check-in próprio e de sua família em quiosques ou dispositivos dedicados ao chegar, tornando o processo rápido e reduzindo a carga de trabalho dos seus voluntários. Cada check-in é registrado automaticamente como presença.
+O B1 Admin oferece suporte ao autoatendimento de check-in nos cultos por meio do aplicativo complementar **B1 Checkin**. Os membros podem fazer o check-in de si mesmos e de suas famílias em quiosques ou dispositivos dedicados ao chegar, tornando o processo rápido e reduzindo a carga de trabalho dos seus voluntários. Cada check-in é registrado automaticamente como presença.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de começar</h4>
+<h4>Antes de Começar</h4>
 
-- Seus campi, horários de culto e grupos precisam estar configurados em [Configuração de Presença](setup.md).
-- Você precisa de [pessoas cadastradas no banco de dados](../people/adding-people.md) com [famílias](../people/adding-people.md#managing-households) configuradas para que as famílias possam fazer o check-in juntas.
-- Você vai precisar de um tablet e, opcionalmente, de uma impressora de etiquetas Brother (veja [recomendações de hardware](#recommended-hardware) abaixo).
+- Seus campi, horários de serviço e grupos devem estar configurados em [Configuração de Presença](setup.md).
+- Você precisa de [pessoas cadastradas no seu banco de dados](../people/adding-people.md) com [famílias](../people/adding-people.md#managing-households) configuradas para que as famílias possam fazer check-in juntas.
+- Você vai precisar de um tablet e, opcionalmente, de uma impressora de etiquetas Brother (veja as [recomendações de hardware](#recommended-hardware) abaixo).
 
 </div>
 
-## Como funciona
+## Como Funciona
 
-O aplicativo B1 Checkin se conecta à sua configuração de presença no B1 Admin. Quando um membro faz o check-in, a presença é registrada automaticamente no campus, horário de culto e grupo corretos. Você não precisa lançar a presença manualmente para quem usa o sistema de check-in.
+O aplicativo B1 Checkin se conecta à sua configuração de presença no B1 Admin. Quando um membro faz check-in, sua presença é registrada automaticamente no campus, horário de serviço e grupo corretos. Você não precisa lançar a presença manualmente para quem usa o sistema de check-in.
 
-## Configurando o check-in
+## Configurando o Check-In
 
-1. **Configure primeiro a estrutura de presença.** No B1 Admin, acesse **Pessoas > Presença** e clique em **Configuração** para garantir que seus campi, horários de culto e grupos estejam definidos. O aplicativo de check-in depende dessa configuração. Opcionalmente, defina para cada horário de culto uma [programação de check-in](setup.md#setting-a-check-in-schedule) para que o check-in abra e feche automaticamente toda semana. As programações usam o fuso horário do campus do culto ou, se o campus não tiver um definido, o fuso horário da sua igreja; o quiosque lista como **Fechado** os horários de culto cuja janela está encerrada e informa às famílias quando o check-in será aberto. Consulte [Configuração de Presença](setup.md) para mais detalhes.
+1. **Configure primeiro a estrutura de presença.** No B1 Admin, vá em **Pessoas > Presença** e clique em **Configuração** para garantir que seus campi, horários de serviço e grupos estejam no lugar. O aplicativo de check-in depende dessa configuração. Opcionalmente, defina para cada horário de serviço uma [programação de check-in](setup.md#setting-a-check-in-schedule), para que o check-in abra e feche automaticamente a cada semana. As programações usam o fuso horário do campus do serviço ou o fuso horário da sua igreja, caso o campus não tenha um definido; o quiosque lista como **Fechado** os horários de serviço cujo período está encerrado e informa às famílias quando o check-in será aberto. Consulte [Configuração de Presença](setup.md) para mais detalhes.
 2. **Instale o aplicativo B1 Checkin** nos dispositivos que você pretende usar. O aplicativo está disponível nas seguintes plataformas:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Tablets Android/Samsung:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Tablets Amazon Fire:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
 3. **Entre no aplicativo B1 Checkin** usando as credenciais da conta da sua igreja.
-4. **Selecione o campus e o horário de culto** para a reunião atual.
-5. Os membros agora podem pesquisar o próprio nome no dispositivo e fazer o check-in.
+4. **Selecione o campus e o horário de serviço** do culto atual.
+5. Os membros agora podem pesquisar seu nome no dispositivo e fazer check-in.
 
 :::tip
-Posicione os dispositivos de check-in em locais visíveis e de fácil acesso, como entradas do saguão ou balcões de recepção. Um breve anúncio durante os cultos ajuda os membros a saber que essa opção está disponível.
+Posicione os dispositivos de check-in em locais visíveis e de fácil acesso, como entradas do saguão ou balcões de boas-vindas. Um breve anúncio durante os cultos ajuda os membros a saberem que essa opção está disponível.
 :::
 
 :::tip
-Se a sua igreja tiver vários campi, você precisará repetir a configuração para cada campus em [Configuração de Presença](setup.md). Cada dispositivo de check-in pode ser configurado para um campus diferente.
+Se a sua igreja tem vários campi, você precisará repetir a configuração para cada campus em [Configuração de Presença](setup.md). Cada dispositivo de check-in pode ser configurado para um campus diferente.
 :::
 
-## Hardware recomendado
+## Hardware Recomendado
 
 **Tablets** — qualquer um destes funciona bem com o aplicativo:
 
@@ -50,124 +50,128 @@ Se a sua igreja tiver vários campi, você precisará repetir a configuração p
 - **Tela grande:** Samsung Galaxy Tab A8 10.5"
 - **Econômico:** Amazon Fire HD 10
 
-**Impressoras** — os check-ins funcionam com impressoras de etiquetas Brother para imprimir crachás de identificação:
+**Impressoras** — o check-in funciona com impressoras de etiquetas Brother para imprimir crachás:
 
-- **Melhor opção:** Brother QL-1110NWB (oferece suporte a vários tablets via Bluetooth e WiFi)
-- **Boa opção:** Brother QL-810W (oferece suporte a vários tablets via WiFi)
-- **Econômica:** Brother QL-1100 (somente WiFi)
+- **Melhor opção:** Brother QL-1110NWB (suporta vários tablets via Bluetooth e Wi-Fi)
+- **Boa opção:** Brother QL-810W (suporta vários tablets via Wi-Fi)
+- **Econômica:** Brother QL-1100 (somente Wi-Fi)
 
 **Etiquetas:** Brother DK-1201 (1-1/7" x 3-1/2")
 
 :::warning
-Somente impressoras de etiquetas Brother são compatíveis com o aplicativo B1 Checkin. Outras marcas de impressora não funcionarão para imprimir crachás de identificação.
+Somente impressoras de etiquetas Brother são compatíveis com o aplicativo B1 Checkin. Outras marcas de impressora não funcionarão para imprimir crachás.
 :::
 
 :::info
-Siga as instruções de configuração da sua impressora para conectá-la à mesma rede WiFi do seu tablet. Você pode encontrar os drivers e guias de configuração das impressoras Brother no [site de suporte da Brother](https://support.brother.com).
+Siga as instruções de configuração da sua impressora para conectá-la à mesma rede Wi-Fi do seu tablet. Você pode encontrar drivers e guias de configuração das impressoras Brother no [site de suporte da Brother](https://support.brother.com).
 :::
 
-## Personalizando a aparência do quiosque
+## Personalizando a Aparência do Quiosque
 
-Você pode personalizar a aparência do aplicativo B1 Checkin para combinar com a identidade visual da sua igreja. No B1 Admin, acesse **Mobile > B1 CheckIn** e use o cartão **Tema do quiosque** para configurar:
+Você pode personalizar a aparência do aplicativo B1 Checkin para combinar com a identidade visual da sua igreja. No B1 Admin, vá em **Celular > B1 CheckIn** e use o cartão **Tema do Quiosque** para configurar:
 
 ### Cores
 
 Personalize oito configurações de cor para combinar com a identidade visual da sua igreja:
 
-- **Primária** e **Contraste primário** -- Cor principal da marca e a cor do seu texto.
-- **Secundária** e **Contraste secundário** -- Cor de destaque e a cor do seu texto.
-- **Fundo do cabeçalho** e **Fundo do subcabeçalho** -- Cores das áreas de cabeçalho do quiosque.
-- **Fundo dos botões** e **Texto dos botões** -- Cores dos botões interativos.
+- **Primária** e **Contraste Primário** -- Cor principal da marca e a cor do texto sobre ela.
+- **Secundária** e **Contraste Secundário** -- Cor de destaque e a cor do texto sobre ela.
+- **Fundo do Cabeçalho** e **Fundo do Subcabeçalho** -- Cores das áreas de cabeçalho do quiosque.
+- **Fundo do Botão** e **Texto do Botão** -- Cores dos botões interativos.
 
-### Imagem de fundo
+### Imagem de Fundo
 
-Envie uma imagem de fundo opcional para as telas de boas-vindas e de busca do quiosque. O tamanho recomendado é de 1920x1080 pixels.
+Envie uma imagem de fundo opcional para as telas de boas-vindas e de busca do quiosque. O tamanho recomendado é 1920x1080 pixels.
 
-### Tela de espera / Protetor de tela
+### Tela Inativa / Protetor de Tela
 
 Configure um protetor de tela que é ativado após um período de inatividade:
 
-1. Ative ou desative a tela de espera.
-2. Defina o **tempo limite** (quantos segundos de inatividade antes de o protetor de tela iniciar; mínimo de 10 segundos).
+1. Ative ou desative a tela inativa.
+2. Defina o **tempo limite** (quantos segundos de inatividade antes de o protetor de tela começar, mínimo de 10 segundos).
 3. Adicione um ou mais **slides** -- cada slide tem uma imagem e uma duração de exibição (mínimo de 3 segundos).
 
 :::tip
-Use a tela de espera para exibir anúncios, eventos próximos ou mensagens de boas-vindas quando o quiosque não estiver sendo usado.
+Use a tela inativa para exibir anúncios, eventos futuros ou mensagens de boas-vindas quando o quiosque não estiver sendo usado.
 :::
 
-## Cadastro de visitantes por QR Code
+## Cadastro de Visitantes via QR Code
 
-O quiosque de check-in pode exibir um QR code que os visitantes escaneiam para se cadastrar, com sua família, no próprio celular. Isso agiliza o check-in para visitantes que estão na primeira vez.
+O quiosque de check-in pode exibir um QR code que os visitantes escaneiam para se cadastrar, junto com a família, no próprio celular. Isso agiliza o processo de check-in para visitantes de primeira vez.
 
-Quando um visitante escaneia o QR code, ele é levado a uma [página de cadastro de visitantes](../../b1-church/checkin/guest-registration), onde informa os nomes da família e quaisquer outros dados que você optar por solicitar. Um voluntário pode então localizá-lo no quiosque e fazer o check-in.
+Quando um visitante escaneia o QR code, ele é levado a uma [página de cadastro de visitantes](../../b1-church/checkin/guest-registration) onde informa os nomes da família e quaisquer outros dados que você decidir pedir. Um voluntário pode então localizá-lo no quiosque e fazer o check-in.
 
-### Ativando o cadastro de visitantes por QR Code
+### Ativando o Cadastro de Visitantes via QR Code
 
 Para ativar a exibição do QR code:
 
-1. No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de busca no canto superior esquerdo) e expanda **Mobile**.
+1. No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo) e expanda **Celular**.
 2. Clique em **B1 CheckIn**.
-3. Ative **Cadastro de visitantes por QR** e clique em **Salvar**.
+3. Ative **Cadastro de Visitantes via QR** e clique em **Salvar**.
 
 :::note
-Essa configuração fica em **Mobile > B1 CheckIn** (a mesma página do cartão **Tema do quiosque**), e não em Presença. A ação **Quiosque** na página de Presença tem um link para esta página.
+Esta configuração fica em **Celular > B1 CheckIn** (na mesma página do cartão **Tema do Quiosque**), e não em Presença. A ação **Quiosque** na página de Presença tem um link para esta página.
 :::
 
-Depois que a opção estiver ativada, as demais opções abaixo aparecem no mesmo cartão **Cadastro de visitantes por QR**. Clique em **Salvar** no cartão depois de alterar qualquer uma delas.
+Assim que a opção estiver ativada, as demais opções abaixo aparecem no mesmo cartão **Cadastro de Visitantes via QR**. Clique em **Salvar** no cartão depois de alterar qualquer uma delas.
 
-### Escolhendo os campos do cadastro
+### Escolhendo os Campos do Cadastro
 
-A lista de **Campos de cadastro** controla o que o formulário de cadastro solicita. **Nome** e **Sobrenome** estão sempre no formulário e sempre obrigatórios para todos os membros da família. Para cada um dos outros campos, ative **Incluir** para adicioná-lo ao formulário e, em seguida, ative **Obrigatório** se os visitantes precisarem preencher o campo. **Obrigatório** só pode ser ativado para um campo incluído, e desativar **Incluir** limpa essa opção.
+A lista **Campos do cadastro** controla o que o formulário de inscrição pede. **Nome** e **Sobrenome** sempre aparecem no formulário e são sempre obrigatórios para cada membro da família. Para cada um dos outros campos, ative **Incluir** para adicioná-lo ao formulário e, em seguida, ative **Obrigatório** se os visitantes precisarem preenchê-lo. **Obrigatório** só pode ser ativado para um campo incluído, e desativar **Incluir** limpa essa opção.
 
 | Campo | Solicitado | Incluído por padrão |
 |-------|-----------|---------------------|
-| **E-mail** | Somente do contato principal | Sim (opcional) |
-| **Telefone** | Somente do contato principal | Sim (opcional) |
-| **Endereço residencial** | Uma vez para a família -- rua, complemento, cidade, estado e CEP. Quando obrigatório, tudo, exceto o complemento, precisa ser preenchido. O endereço é salvo em todos os membros da família. | Não |
+| **E-mail** | Somente para o contato principal | Sim (opcional) |
+| **Telefone** | Somente para o contato principal | Sim (opcional) |
+| **Endereço residencial** | Uma vez para a família -- rua, complemento, cidade, estado e CEP. Quando obrigatório, tudo exceto o complemento deve ser preenchido. O endereço é salvo em todos os membros da família. | Não |
 | **Data de nascimento** | Cada membro da família | Não |
 | **Gênero** | Cada membro da família | Não |
-| **Estado civil** | Somente do contato principal | Não |
-| **Série** | Cada membro da família (do Pré-escolar até o 12º ano, ou Formado) | Não |
+| **Estado civil** | Somente para o contato principal | Não |
+| **Série** | Cada membro da família (do Maternal ao 12º ano, ou Formado) | Não |
 | **Comentários** | Uma vez, em uma caixa abaixo dos membros da família (até 1.000 caracteres) | Não |
 
-Os campos desativados nunca são salvos, mesmo que alguém os envie para o cadastro por outro meio. Os comentários são salvos como uma nota no registro do contato principal (publicada como "Cadastro de visitante"), para que você possa lê-los na seção **Notas** do perfil dele.
+Os campos desativados nunca são salvos, mesmo que alguém os envie para o cadastro por outro meio. Os comentários são salvos como uma anotação no registro do contato principal (publicada como "Cadastro de visitante"), para que você possa lê-los na seção **Anotações** do perfil dele.
 
-### Adicionando visitantes a um grupo
+### Adicionando Visitantes a um Grupo
 
-Use **Adicionar novos visitantes ao grupo** para colocar automaticamente todos que se cadastram em um dos seus grupos -- por exemplo, um grupo de "Novos" ou um grupo para o evento deste fim de semana. Escolha **Nenhum** (o padrão) para pular esta etapa. Os visitantes nunca veem nem escolhem o grupo; ele é definido somente aqui. Altere-o antes de cada evento para que você possa acompanhar os visitantes daquele evento em conjunto.
+Use **Adicionar novos visitantes ao grupo** para colocar automaticamente todas as pessoas que se cadastrarem em um dos seus grupos -- por exemplo, um grupo "Novos Visitantes" ou um grupo para o evento deste fim de semana. Escolha **Nenhum** (o padrão) para ignorar esta opção. Os visitantes nunca veem nem escolhem o grupo; ele é definido apenas aqui. Altere-o antes de cada evento para acompanhar os visitantes daquele evento em conjunto.
 
-### Registrando a presença
+### Registrando a Presença
 
-Quando um grupo é selecionado, aparece a opção **Também registrar presença**. Ative-a para marcar os visitantes como presentes no momento em que se cadastram, para que você não precise fazer o check-in deles separadamente.
+Quando um grupo é selecionado, aparece uma chave **Registrar presença também**. Ative-a para marcar os visitantes como presentes no momento em que se cadastram, assim você não precisa fazer o check-in deles separadamente.
 
-A presença só é registrada quando o cadastro acontece durante um dos **horários de culto programados** do grupo selecionado:
+A presença só é registrada quando o cadastro acontece durante um dos horários de serviço **programados** do grupo selecionado:
 
-- O grupo precisa estar vinculado a um ou mais horários de culto, e esses horários precisam ter uma [programação de check-in](setup.md#setting-a-check-in-schedule) (um **Dia** e um **Horário de início**).
-- "Durante" significa dentro da janela de check-in daquele horário de culto -- desde os minutos de **Abrir check-in** antes do início até os minutos de **Fechar check-in** depois do término (ou depois do início, se nenhum horário de término estiver definido), no mesmo fuso horário usado pela programação de check-in.
-- Cada membro da família é marcado como presente no grupo para cada um dos seus horários de culto que estiver aberto naquele momento, na data de hoje.
-- Cadastros feitos em qualquer outro momento, ou para um grupo cujos horários de culto não têm programação, são adicionados ao grupo, mas não são contabilizados como presença.
+- O grupo precisa estar vinculado a um ou mais horários de serviço, e esses horários de serviço precisam ter uma [programação de check-in](setup.md#setting-a-check-in-schedule) (um **Dia** e um **Horário de início**).
+- "Durante" significa dentro da janela de check-in daquele horário de serviço -- desde os minutos de **Abrir check-in** antes do início até os minutos de **Fechar check-in** após o término (ou após o início, caso nenhum horário de término esteja definido), no mesmo fuso horário usado pela programação de check-in.
+- Cada membro da família é marcado como presente no grupo em cada um dos horários de serviço dele que esteja aberto naquele momento, na data de hoje.
+- Cadastros feitos em outros horários, ou para um grupo cujos horários de serviço não têm programação, são adicionados ao grupo, mas não são contados como presença.
 
-### Foto do cabeçalho
+### Foto do Cabeçalho
 
 Em **Foto do cabeçalho**, clique em **Alterar foto** para escolher ou enviar uma imagem (recortada no formato 16:9) que será exibida no topo da página de cadastro, no lugar do ícone padrão. Clique em **Remover** para voltar ao ícone.
 
-### Compartilhando o link de cadastro
+### Compartilhando o Link de Cadastro
 
-Quando o Cadastro de visitantes por QR estiver ativado, a seção **Compartilhar QR code de cadastro** aparece na parte inferior do cartão. Ela oferece duas formas de levar os visitantes ao formulário de cadastro, além do QR code do quiosque:
+Assim que o Cadastro de Visitantes via QR estiver ativado, uma seção **Compartilhar QR code de cadastro** aparece na parte inferior do cartão. Ela oferece duas formas de levar os visitantes ao formulário de cadastro, além do QR code do quiosque:
 
-- **Copiar link** -- copia a URL de cadastro para que você possa colá-la no site da igreja, em e-mails ou em qualquer lugar online.
-- **Baixar PNG** -- baixa o QR code como uma imagem que você pode imprimir em panfletos, boletins ou placas de sinalização.
+- **Copiar link** — copia a URL de cadastro para que você possa colá-la no site da sua igreja, em e-mails ou em qualquer outro lugar online.
+- **Baixar PNG** — baixa o QR code como uma imagem que você pode imprimir em panfletos, boletins ou placas de sinalização.
 
 :::tip
-Adicione o link de cadastro à página "Planeje sua visita" ou "Sou novo" do site da sua igreja para que os visitantes possam se cadastrar antes mesmo de chegar.
+Adicione o link de cadastro à página "Planeje Sua Visita" ou "Sou Novo" do site da sua igreja para que os visitantes possam se cadastrar antes mesmo de chegar.
 :::
 
-### O que acontece depois que um visitante se cadastra
+### O Que Acontece Depois que um Visitante se Cadastra
 
-Cada cadastro cria uma nova família com o sobrenome do contato principal, com um registro de pessoa para cada membro da família. Todos são adicionados em **Pessoas** com o status de membresia **Visitante**, tendo o contato principal como chefe da família.
+O B1 primeiro procura pessoas que já estão em **Pessoas**. Um membro da família é associado a uma pessoa existente quando exatamente uma pessoa tem o mesmo primeiro nome e o mesmo e-mail ou telefone. Uma criança cadastrada sem e-mail nem telefone é associada pelo primeiro nome dentro da família que foi associada. As pessoas associadas são reaproveitadas como estão -- o cadastro nunca altera os dados ou o status de membro delas -- e quem for novo entra na família associada.
 
-Para fazer o acompanhamento automaticamente, adicione um [gatilho de fluxo de trabalho](../serving/workflows.md#triggers), como **Pessoa · Criada** com a condição *Status de membresia é Visitante*, ou **Grupo · Membro entrou** para o grupo que você escolheu acima.
+Quando ninguém é associado, o cadastro cria uma nova família com o sobrenome do contato principal, com um registro de pessoa para cada membro da família. Todos os novos são adicionados a **Pessoas** com o status de membro **Visitante**, tendo o contato principal como chefe da família.
 
-## O que é registrado
+Pessoas associadas e novas são adicionadas ao grupo que você escolheu (se ainda não estiverem nele) e têm a presença registrada quando essa opção está ativada. Os comentários são salvos como uma anotação no contato principal.
 
-Cada check-in cria um registro de presença no B1 Admin. Você pode visualizar esses registros na página de [Presença](tracking-attendance.md) e nas [sessões de cada grupo](../groups/group-members.md), exatamente como a presença lançada manualmente. Não há diferença na forma como os dados aparecem -- ambos os métodos alimentam os mesmos relatórios.
+Para fazer o acompanhamento automaticamente, adicione um [gatilho de fluxo de trabalho](../serving/workflows.md#triggers), como **Pessoa · Criada** com a condição *Status de membro é Visitante*, ou **Grupo · Membro entrou** para o grupo que você escolheu acima.
+
+## O Que é Registrado
+
+Cada check-in cria um registro de presença no B1 Admin. Você pode visualizar esses registros na página [Presença](tracking-attendance.md) e no [histórico de sessões](../groups/group-members.md) de cada grupo, da mesma forma que a presença lançada manualmente. Não há diferença na forma como os dados aparecem -- ambos os métodos alimentam os mesmos relatórios.

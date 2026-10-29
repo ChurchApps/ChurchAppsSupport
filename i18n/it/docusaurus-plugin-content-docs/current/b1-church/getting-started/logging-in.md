@@ -6,61 +6,63 @@ title: "Accesso"
 
 <div class="article-intro">
 
-L'accesso a B1.church ti dà accesso al portale dei membri dove puoi vedere cosa sta arrivando per te, gestire i gruppi, dare online e utilizzare tutti gli strumenti che la tua chiesa ha impostato. Questo articolo copre come accedere, navigare il tuo menu utente e disconnettersi.
+Accedere a B1.church ti dà accesso al portale membri, dove puoi vedere cosa ti aspetta, gestire i gruppi, fare offerte online e usare tutti gli strumenti che la tua chiesa ha configurato. Questo articolo spiega come accedere, come usare il menu utente e come disconnetterti.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Hai bisogno di un account ChurchApps. Consulta [Guida Introduttiva](../getting-started/) per crearne uno.
-- Hai bisogno dell'URL B1.church della tua chiesa (ad esempio, `https://yourchurchname.b1.church`).
+- Ti serve un account ChurchApps. Vedi [Per iniziare](../getting-started/) per crearne uno.
+- Ti serve l'URL di B1.church della tua chiesa (ad esempio `https://yourchurchname.b1.church`).
 
 </div>
 
-## Come Accedere
+## Come accedere
 
-1. Vai all'URL B1.church della tua chiesa (ad esempio, `https://yourchurchname.b1.church`).
-2. Fai clic sul pulsante **Accedi** nell'angolo in alto a destra dell'intestazione.
-3. Inserisci il tuo **indirizzo email** e **password**, oppure fai clic su **Continua con Google** o **Continua con Microsoft** se la tua chiesa ha l'accesso singolo abilitato.
-4. Fai clic su **Accedi**.
+1. Vai all'URL di B1.church della tua chiesa (ad esempio `https://yourchurchname.b1.church`).
+2. Clicca sul pulsante **Accedi** nell'angolo in alto a destra dell'intestazione.
+3. Inserisci il tuo **indirizzo email** e la **password**, oppure clicca su **Continua con Google** o **Continua con Microsoft** se la tua chiesa ha attivato il single sign-on.
+4. Clicca su **Accedi**.
 
-Dopo l'accesso, sarai riportato alla pagina su cui eri prima di fare clic su accesso. Se hai navigato direttamente a una pagina del portale dei membri mentre eri disconnesso, sarai riportato automaticamente a quella pagina dopo l'accesso.
+Se hai attivato l'[accesso a due fattori](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), la schermata successiva chiede un codice. Inserisci il codice a 6 cifre dalla tua app di autenticazione, oppure uno dei tuoi codici di backup, e clicca su **Verifica codice**. L'app di B1.church chiede il codice nello stesso modo.
 
-## Rimani Connesso
+Dopo l'accesso, tornerai alla pagina su cui eri prima di cliccare su accedi. Se hai aperto direttamente una pagina del portale membri mentre non eri connesso, verrai riportato automaticamente a quella pagina dopo l'accesso.
 
-Rimani connesso sullo stesso browser o app installata finché non ti disconnetti, anche se non visiti per un po' -- la tua sessione viene mantenuta per circa 30 giorni di inattività. L'accesso una volta ti mantiene anche connesso quando ti muovi tra il sito web della tua chiesa e il portale dei membri (`/mobile`), quindi non devi accedere di nuovo in ogni luogo.
+## Restare connessi
 
-## Accesso al Portale dei Membri
+Rimani connesso sullo stesso browser o sull'app installata finché non ti disconnetti, anche se non visiti il sito per un po' -- la sessione viene mantenuta per circa 30 giorni di inattività. Accedere una volta ti mantiene connesso anche quando passi dal sito web della tua chiesa al portale membri (`/mobile`), così non devi accedere di nuovo in ciascun punto.
 
-Una volta connesso, puoi accedere al portale dei membri facendo clic sul tuo **nome** nell'angolo in alto a destra della pagina e selezionando **Portale dei Membri** dal menu. Il portale dei membri è dove vivono tutti i tuoi strumenti personali della chiesa, inclusa la tua [dashboard Home](./navigating.md), [pagina Me](./me-page.md), [gruppi](../groups/), [donazioni](../giving/), e altro ancora.
+## Accedere al portale membri
 
-## Il Tuo Menu Utente
+Una volta connesso, puoi accedere al portale membri cliccando sul tuo **nome** nell'angolo in alto a destra della pagina e selezionando **Portale membri** dal menu. Il portale membri è dove si trovano tutti i tuoi strumenti personali della chiesa, tra cui la tua [Dashboard Home](./navigating.md), la [pagina Me](./me-page.md), i [gruppi](../groups/), le [offerte](../giving/) e altro ancora.
 
-Dopo l'accesso, il tuo nome appare come un chip nell'angolo in alto a destra. Fai clic su di esso per aprire un menu con le seguenti opzioni:
+## Il tuo menu utente
 
-- **Portale dei Membri** -- Vai al tuo dashboard del portale dei membri personale.
-- **Modifica Profilo** -- Aggiorna le impostazioni del tuo account o modifica il tuo profilo della chiesa.
-- **Esci** -- Esci dal tuo account.
+Dopo l'accesso, il tuo nome compare come un chip nell'angolo in alto a destra. Cliccalo per aprire un menu con le seguenti opzioni:
 
-## Accesso Amministratore
+- **Portale membri** -- Vai alla tua dashboard personale del portale membri.
+- **Modifica profilo** -- Aggiorna le impostazioni del tuo account o modifica il tuo profilo della chiesa.
+- **Esci** -- Disconnettiti dal tuo account.
 
-Se sei un amministratore della chiesa con le autorizzazioni appropriate, vedrai anche un'opzione **Portale Amministratore** nel tuo menu utente. Facendo clic su di essa ti porta a B1 Admin dove puoi gestire le impostazioni, le persone, i gruppi e i contenuti della tua chiesa.
+## Accesso amministrativo
 
-## Password Dimenticata
+Se sei un amministratore della chiesa con i permessi appropriati, troverai anche un'opzione **Portale amministrazione** nel menu utente. Cliccandola si accede a B1 Admin, dove puoi gestire le impostazioni, le persone, i gruppi e i contenuti della tua chiesa.
 
-Se non ricordi la tua password:
+## Password dimenticata
 
-1. Fai clic su **Password Dimenticata** nella pagina di accesso.
-2. Inserisci l'indirizzo email legato al tuo account ChurchApps e invia.
+Se non ricordi la password:
+
+1. Clicca su **Password dimenticata** nella pagina di accesso.
+2. Inserisci l'indirizzo email associato al tuo account ChurchApps e invia.
 3. Controlla la tua email per un messaggio contenente un **codice di verifica a 6 cifre**. Il codice è valido per 15 minuti.
-4. Inserisci il codice sulla schermata di verifica per accedere.
+4. Inserisci il codice nella schermata di verifica per accedere.
 5. Una volta connesso, visita il tuo profilo per scegliere una nuova password.
 
 :::tip
-Se il codice non arriva entro un paio di minuti, controlla la tua cartella spam. Dopo cinque tentativi non corretti il codice viene bloccato -- richiedi uno nuovo dalla pagina Password Dimenticata se ciò accade.
+Se il codice non arriva entro un paio di minuti, controlla la cartella dello spam. Dopo cinque tentativi errati il codice viene bloccato -- in quel caso richiedine uno nuovo dalla pagina Password dimenticata.
 :::
 
-## Disconnessione
+## Disconnettersi
 
-Per disconnetterti, fai clic sul tuo **nome** nell'angolo in alto a destra e seleziona **Esci**. Sarai disconnesso e riportato al sito pubblico.
+Per disconnetterti, clicca sul tuo **nome** nell'angolo in alto a destra e seleziona **Esci**. Verrai disconnesso e riportato al sito pubblico.

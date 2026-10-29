@@ -6,83 +6,85 @@ title: "Attività"
 
 <div class="article-intro">
 
-Le attività ti permettono di assegnare elementi d'azione alle persone o ai gruppi nella tua chiesa. Che si tratti di un compito una tantum o di una responsabilità ricorrente, le attività ti aiutano a tenere traccia di ciò che deve essere fatto e chi è responsabile in modo che nulla venga tralasciato.
+Le attività ti permettono di assegnare azioni a persone o gruppi della tua chiesa. Che si tratti di un'attività da fare una sola volta o di una responsabilità ricorrente, le attività ti aiutano a tenere traccia di ciò che va fatto e di chi se ne occupa, così nulla viene dimenticato.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Assicurati che le persone o i [gruppi](../groups/creating-groups.md) a cui vuoi assegnare le attività esistano in B1 Admin
-- Nel [menu Jump](../introduction.md#getting-around-with-the-jump-menu), scegli **Servizio > Il Mio Lavoro** per vedere le attività
+- Assicurati che le persone o i [gruppi](../groups/creating-groups.md) a cui vuoi assegnare attività esistano in B1 Admin
+- Nel [menu Jump](../introduction.md#getting-around-with-the-jump-menu), scegli **Serving > My Work** per vedere le attività
 
 </div>
 
-## Visualizzazione delle Attività
+## Visualizzare le attività
 
-Nel menu Jump, scegli **Servizio > Il Mio Lavoro** (o ricerca "Il Mio Lavoro"). Vedrai l'elenco **Tasks** con il titolo di ogni attività, la persona a cui è associata, l'assegnatario, la data di apertura e lo stato. Le tue schede del [flusso di lavoro](./workflows.md) compaiono accanto all'elenco, sotto **My Cards**.
+Nel menu Jump, scegli **Serving > My Work** (oppure cerca "My Work"). L'elenco **Tasks** mostra il titolo di ogni attività, a chi è associata, a chi è assegnata, quando è stata aperta e il suo stato. Le tue schede di [workflow](./workflows.md) compaiono accanto ad essa sotto **My Cards**.
 
 Usa le schede sopra l'elenco per passare tra le attività **Assigned to Me**, **Assigned to My Groups** e **Requested by Me**. Ogni scheda mostra quante attività contiene.
 
 :::tip
-Per impostazione predefinita, vengono mostrate solo le attività aperte. Scegli **Closed** sopra l'elenco per vedere invece le attività completate.
+Per impostazione predefinita vengono mostrate solo le attività aperte. Scegli **Closed** sopra l'elenco per vedere invece le attività completate.
 :::
 
-## Creazione di un'Attività
+## Creare un'attività
 
-1. Nella pagina **My Work**, fai clic su **Aggiungi Attività**. Si apre un modulo **New Task**.
-2. Fai clic sulla casella **Associate with** e scegli la persona a cui si riferisce l'attività.
-3. Fai clic sulla casella **Assign to**. Nella finestra **Select a Person or Group**, cerca nella scheda **Person**, oppure passa alla scheda **Group** e cerca un gruppo, quindi seleziona il risultato.
+1. Nella pagina **My Work**, clicca su **Add Task**. Si apre un modulo **New Task**.
+2. Clicca sulla casella **Associate with** e scegli la persona a cui si riferisce l'attività.
+3. Clicca sulla casella **Assign to**. Nella finestra **Select a Person or Group**, cerca nella scheda **Person**, oppure passa alla scheda **Group** e cerca un gruppo, quindi seleziona il risultato.
 4. Inserisci un **Title** per l'attività.
-5. Aggiungi **Notes** con qualsiasi dettaglio o istruzione per l'assegnatario.
-6. Fai clic su **Salva**.
+5. Facoltativamente, scegli una **Due date**.
+6. Aggiungi delle **Notes** con eventuali dettagli o istruzioni per il destinatario.
+7. Clicca su **Save**.
 
-L'attività apparirà ora nell'elenco delle attività e sarà visibile all'assegnatario sulla loro dashboard e nell'app mobile.
+L'attività comparirà ora nell'elenco delle attività e sarà visibile al destinatario nella sua dashboard e nell'app mobile.
 
-## Gestione di un'Attività
+## Gestire un'attività
 
-Fai clic su qualsiasi attività per aprire la sua pagina di dettagli. Da qui puoi:
+Clicca su un'attività qualsiasi per aprire la sua pagina di dettaglio. Da qui puoi:
 
-- **Chiudi o riapri l'attività** -- Fai clic su **Close task** quando il lavoro è completato, oppure su **Reopen task** per riaprirla.
-- **Riassegna l'attività** -- Fai clic su **Assign** per scegliere un'altra persona o gruppo.
-- **Cambia a chi si riferisce** -- Fai clic su **Associate** per scegliere un'altra persona.
-- **Aggiungi note** -- Pubblica aggiornamenti o dettagli per l'assegnatario nelle note dell'attività.
-- **Imposta promemoria** -- Vedi [Promemoria delle attività](#task-reminders) sotto.
+- **Chiudere o riaprire l'attività** -- Clicca su **Close task** quando il lavoro è completato, oppure su **Reopen task** per riaprirla.
+- **Riassegnare l'attività** -- Clicca su **Assign** per scegliere una persona o un gruppo diverso.
+- **Cambiare a chi si riferisce** -- Clicca su **Associate** per scegliere un'altra persona.
+- **Cambiare la scadenza** -- Scegli una data nel campo **Due**; viene salvata quando clicchi altrove. (Le attività create per una [conferma di assegnazione al servizio](./workflows.md#serving-assignment-confirmations) mostrano la loro scadenza ma non possono essere modificate qui.)
+- **Aggiungere note** -- Pubblica aggiornamenti o dettagli per il destinatario nelle note dell'attività.
+- **Impostare promemoria** -- Vedi [Promemoria delle attività](#task-reminders) più sotto.
 
-## Promemoria delle Attività {#task-reminders}
+## Promemoria delle attività {#task-reminders}
 
-Un'attività con una data di scadenza può ricordare al suo assegnatario la scadenza.
+Un'attività con una scadenza può ricordare al suo destinatario la scadenza prima che arrivi.
 
-1. Nella pagina dell'attività, fai clic su **Edit** accanto a **Reminders**.
+1. Nella pagina dell'attività, clicca su **Edit** accanto a **Reminders**.
 2. Attiva **Send reminders for this task**.
-3. In **When should reminders go out?**, scegli fino a tre tempi: **7 days before**, **3 days before**, **1 day before** o **Day of**.
-4. Imposta il **Time of Day** e, facoltativamente, un **Message**.
-5. In **Send By**, scegli **Push**, **Email** e, se la tua chiesa ha collegato un [provider SMS](../settings/church-settings.md#texting), **Text**.
-6. Fai clic su **Save Reminders**.
+3. In **When should reminders go out?**, scegli fino a tre tempistiche: **7 days before**, **3 days before**, **1 day before** oppure **Day of**.
+4. Imposta l'**Time of Day** e, facoltativamente, un **Message**.
+5. In **Send By**, scegli **Push**, **Email** e, se la tua chiesa ha collegato un [provider di messaggistica](../settings/church-settings.md#texting), **Text**.
+6. Clicca su **Save Reminders**.
 
-Se l'attività non ha una scadenza, B1 ti avvisa che non verrà inviato alcun promemoria finché non ne imposti una. I promemoria via SMS raggiungono solo le persone che hanno attivato **Text messages** nelle loro [Preferenze di notifica](../../b1-church/getting-started/notification-preferences.md), e ogni SMS può comportare un costo per la tua chiesa.
+Se l'attività non ha una scadenza, B1 ti avvisa che non verranno inviati promemoria finché non ne viene impostata una nel campo **Due**. I promemoria via SMS raggiungono solo le persone che hanno attivato **Text messages** nelle proprie [Preferenze di notifica](../../b1-church/getting-started/notification-preferences.md), e ogni SMS può comportare un costo per la chiesa.
 
-## Ciclo di Vita dell'Attività
+## Ciclo di vita di un'attività
 
-1. Una nuova attività inizia con uno stato di **Aperta**.
-2. L'assegnatario riceve una notifica e può visualizzare l'attività dalla sua dashboard, **Servizio > Il Mio Lavoro** o dall'app mobile.
-3. Una volta completato il lavoro, l'assegnatario (o un admin) fa clic su **Close task**.
-4. Le attività chiuse vengono rimosse dalla visualizzazione predefinita ma possono comunque essere trovate scegliendo **Closed** sopra l'elenco delle attività.
+1. Una nuova attività inizia con lo stato **Open**.
+2. Il destinatario riceve una notifica e può visualizzare l'attività dalla sua dashboard, da **Serving > My Work** o dall'app mobile.
+3. Una volta completato il lavoro, il destinatario (o un amministratore) clicca su **Close task**.
+4. Le attività chiuse vengono rimosse dalla vista predefinita, ma possono essere ritrovate scegliendo **Closed** sopra l'elenco delle attività.
 
 :::info
-B1 Admin non crea più attività ricorrenti su un programma. Per il follow-up ripetuto con le persone, utilizza un [flusso di lavoro](./workflows.md) con un [trigger di pianificazione](./workflows.md#schedule-triggers).
+B1 Admin non crea più attività ricorrenti secondo una pianificazione. Per i follow-up ripetuti con le persone, usa un [workflow](./workflows.md) con un [trigger di pianificazione](./workflows.md#schedule-triggers).
 :::
 
 :::tip
-Quando hai bisogno di spostare molte persone attraverso lo stesso insieme di fasi -- come il follow-up del nuovo visitatore o un processo di appartenenza -- utilizza [Flussi di Lavoro](./workflows.md). I flussi di lavoro trasformano le attività in schede su una bacheca con trascinamento con fasi, date di scadenza e instradamento.
+Quando devi far passare molte persone attraverso la stessa serie di fasi — come il follow-up dei nuovi visitatori o un percorso di adesione — usa i [Workflow](./workflows.md). I workflow trasformano le attività in schede su una bacheca drag-and-drop con passaggi, scadenze e instradamento.
 :::
 
 :::info
-Alcune attività vengono create automaticamente da altre parti di B1 e si aprono su una scheda di revisione speciale invece della visualizzazione nota/riassegnazione standard -- [richieste di adesione al gruppo](../groups/group-join-requests.md#approving-from-the-tasks-page), [richieste di modifica del profilo](../profile/approving-profile-changes.md) e [richieste di eliminazione dell'account](../profile/account-deletion.md) funzionano in questo modo.
+Alcune attività vengono create automaticamente da altre parti di B1 e si aprono con una scheda di revisione speciale invece della classica vista di note/riassegnazione — le [richieste di adesione a un gruppo](../groups/group-join-requests.md#approving-from-the-tasks-page), le [richieste di modifica del profilo](../profile/approving-profile-changes.md) e le [richieste di eliminazione dell'account](../profile/account-deletion.md) funzionano tutte in questo modo.
 :::
 
-## Passi Successivi
+## Prossimi passi
 
-- Sposta le persone attraverso un processo multifase con [Flussi di Lavoro](./workflows.md)
-- Utilizza [Flussi di Lavoro](./workflows.md) per spostare le persone attraverso processi ripetibili automaticamente
-- Utilizza le attività insieme a [Piani di Servizio](./plans.md) per tenere traccia degli elementi d'azione di preparazione del servizio
+- Guida le persone attraverso un processo a più passaggi con i [Workflow](./workflows.md)
+- Usa i [Workflow](./workflows.md) per far avanzare automaticamente le persone attraverso processi ripetibili
+- Usa le attività insieme ai [Piani di servizio](./plans.md) per tenere traccia delle azioni di preparazione del servizio

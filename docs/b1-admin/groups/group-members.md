@@ -87,7 +87,7 @@ You can send formatted emails to all members of a group:
 1. From the group detail page, click the **Email** button on the left side of the page.
 2. The Send Email dialog opens, showing how many members will receive the email and how many have no email address on file.
 3. Optionally select an **email template** from the dropdown, or compose a message from scratch. Click **Manage Templates** to create or edit templates.
-4. Enter a **subject line**. You can insert merge fields by clicking the field chips: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`.
+4. Enter a **subject line**. You can insert merge fields by clicking the field chips: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`, and **Group Name** (`{{groupName}}`), which is filled in with the group's name.
 5. Compose the **email body** using the HTML editor. The same merge fields are available here.
 6. Click **Send**.
 7. A summary shows how many emails were sent successfully and how many members were skipped (no email on file).
@@ -118,8 +118,9 @@ Once your church has connected a [texting provider](../settings/church-settings.
 
 1. From the group detail page, click **Text**.
 2. The dialog shows how many members will get the text. Members with no mobile phone on file or who have opted out are skipped.
-3. Type your message. To personalize it, click a placeholder chip below the message box -- **First Name**, **Last Name**, **Display Name**, or **Church Name** -- to insert it at your cursor. Each placeholder is filled in with the recipient's own details when the text is sent.
-4. Click **Send**.
+3. Optionally pick a saved text message from **Load Template (optional)** to fill in the message. The picker appears once your church has [text templates](../settings/email-templates.md#text-templates); people who can edit settings also see a **Manage Templates** link.
+4. Type or edit your message. To personalize it, click a placeholder chip below the message box -- **First Name**, **Last Name**, **Display Name**, **Church Name**, or **Group Name** -- to insert it at your cursor. Each placeholder is filled in with the recipient's own details when the text is sent; **Group Name** becomes the group's name.
+5. Click **Send**.
 
 See [Personalizing Texts with Merge Fields](../settings/church-settings.md#personalizing-texts-with-merge-fields) for more detail.
 

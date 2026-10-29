@@ -92,7 +92,7 @@ Pair this with **Print All Classes** and [adding sessions for every class in a s
 
 A roll sheet is a printable class list that teachers can mark by hand and give back to you to enter later. Each sheet shows your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) with the church name beneath it, the class, a large **Date** line under the class name, and the service time. Members are listed in two columns (read down the left column, then the right) so more names fit on a page, and every member has **Present** and **Absent** boxes. There are blank lines for visitors and a **Teacher / Notes** area.
 
-- **From a session** -- Click the **Print Roll Sheet** (printer) icon at the top of the session's attendance list. The sheet is dated with the session's date.
+- **From a session** -- Click the **Print Roll Sheet** (printer) icon at the top of the session's attendance list. The sheet is dated with the session's date and shows that session's service time.
 - **All classes for a service** -- If the session has a service time, click **Print All Classes** to print one sheet per class assigned to that service time. Each class prints on its own page.
 - **From the member list** -- On the group's page, click **All members**, then click the **Print Roll Sheet** icon above the member list and choose **Attendance Sheet** to print an undated sheet. The same menu has a **Contact Roster** layout with each member's phone, email, and address -- see [Printing the Member List](../groups/group-members.md#printing-the-member-list).
 

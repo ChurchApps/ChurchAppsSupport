@@ -6,36 +6,37 @@ title: "B1.church"
 
 <div class="article-intro">
 
-B1.church è il portale per i membri della tua chiesa. È il luogo in cui la comunità resta in contatto, accede agli strumenti della chiesa e partecipa alla vita della comunità durante la settimana. Ogni chiesa ha il proprio URL all'indirizzo `https://yourchurchname.b1.church`.
+B1.church è il portale per i membri della tua chiesa. È il luogo dove la tua comunità si tiene in contatto, accede agli strumenti della chiesa e partecipa alla vita della comunità durante la settimana. Ogni chiesa ha il proprio URL, nella forma `https://yourchurchname.b1.church`.
 
 </div>
 
-Quando i membri visitano il tuo sito B1.church, vedono il sito pubblico della tua chiesa con la sua identità visiva, i link di navigazione e le pagine di contenuto. Dopo aver effettuato l'accesso, possono accedere al **Portale dei membri**, dove si trovano in un unico posto tutti i loro strumenti personali della chiesa.
+Quando i membri visitano il tuo sito B1.church, vedono il sito pubblico della chiesa con il tuo branding, i link di navigazione e le pagine di contenuto. Dopo l'accesso, possono entrare nel **Portale membri**, dove tutti i loro strumenti personali della chiesa sono raccolti in un unico posto.
 
-## Funzioni principali
+## Funzionalità principali
 
-- **Home e Me** -- Il portale dei membri si apre su una [dashboard Home](./getting-started/navigating.md) con anteprime dei tuoi prossimi incarichi di servizio, dei tuoi gruppi e delle tue donazioni di quest'anno; la [pagina Me](./getting-started/me-page.md) elenca ciò che ti aspetta -- incarichi di servizio, iscrizioni agli eventi, eventi di gruppo -- insieme alle notifiche recenti, ai moduli che hai inviato e alla cronologia delle presenze.
-- **Gruppi** -- Visualizza i gruppi di cui fai parte, consulta i membri del gruppo, partecipa alle conversazioni, registra le presenze e compila i moduli collegati al tuo gruppo (i leader possono leggere e stampare le risposte).
-- **Donazioni** -- Fai donazioni online alla tua chiesa e consulta la cronologia delle donazioni e le ricevute, anche se la tua chiesa non accetta offerte online.
-- **Eventi** -- Consulta gli eventi in programma e iscrivi te stesso e la tua famiglia.
-- **Servizio** -- Visualizza i piani di servizio, i tuoi incarichi di volontariato e iscriviti alle opportunità di volontariato aperte. Scegli di ricevere promemoria per il servizio e gli eventi via SMS nelle tue [preferenze di notifica](./getting-started/notification-preferences.md) (rispondi STOP in qualsiasi momento per interromperli).
-- **Piani** -- Consulta i prossimi piani di servizio, accetta o rifiuta i tuoi incarichi, e accedi ai dettagli dei brani e agli ordini del servizio.
-- **Check-in** -- Effettua il check-in per te stesso e i membri della tua famiglia per servizi ed eventi. Gli ospiti possono registrarsi tramite codice QR.
-- **Rubrica della comunità** -- Consulta la rubrica dei membri della tua chiesa, visualizza i profili e invia messaggi diretti. Controlla chi può vedere i tuoi dati di contatto dalla [sezione Privacy del tuo profilo](./getting-started/editing-your-profile.md#privacy).
-- **Contenuti** -- Accedi ai sermoni, leggi la Bibbia, guarda le dirette streaming e visualizza, condividi o scarica il versetto del giorno (e quelli precedenti), tutto dal sito della tua chiesa. (La riproduzione dei corsi ora è disponibile in [FreePlay](/docs/freeplay/) — la scheda Lezioni interna al portale è obsoleta.)
+- **Home e Me** -- Il portale membri si apre su una [Dashboard Home](./getting-started/navigating.md) con anteprime dei tuoi prossimi incarichi di servizio, dei tuoi gruppi e delle tue offerte di quest'anno. La [pagina Me](./getting-started/me-page.md) elenca ciò che ti aspetta -- incarichi di servizio, iscrizioni agli eventi, eventi di gruppo -- insieme alle notifiche recenti, ai moduli che hai inviato e alla cronologia delle presenze.
+- **Gruppi** -- Visualizza i gruppi di cui fai parte, vedi i membri dei gruppi, partecipa alle conversazioni, tieni traccia delle presenze e compila i moduli collegati al tuo gruppo (i leader possono leggere e stampare le risposte).
+- **Offerte** -- Fai donazioni online alla tua chiesa e visualizza la cronologia delle offerte e gli estratti conto, anche se la tua chiesa non accetta offerte online.
+- **Eventi** -- Sfoglia i prossimi eventi e iscrivi te stesso e la tua famiglia.
+- **Servizio** -- Visualizza i piani di servizio, le tue posizioni da volontario e iscriviti alle opportunità di volontariato aperte. Scegli di ricevere promemoria per servizio ed eventi via SMS nelle tue [preferenze di notifica](./getting-started/notification-preferences.md) (rispondi STOP in qualsiasi momento per disattivarli).
+- **Piani** -- Consulta i prossimi piani di servizio, accetta o rifiuta le posizioni assegnate e accedi ai dettagli dei brani e agli ordini di servizio.
+- **Check-in** -- Fai il check-in per te stesso e per i membri della tua famiglia per servizi ed eventi. Gli ospiti possono registrarsi tramite codice QR, e gli ospiti abituali vengono associati al loro profilo esistente invece di essere aggiunti due volte.
+- **Rubrica della comunità** -- Sfoglia la rubrica dei membri della chiesa, visualizza i profili e invia messaggi diretti. Controlla chi può vedere i tuoi recapiti dalla sezione [Privacy del tuo profilo](./getting-started/editing-your-profile.md#privacy).
+- **Sicurezza dell'accesso** -- Accedi con un codice dell'app di autenticazione oltre alla password, una volta attivato l'[accesso a due fattori](../b1-admin/profile/managing-profile.md#two-factor-sign-in).
+- **Contenuti** -- Accedi alle predicazioni, leggi la Bibbia, guarda le dirette streaming e visualizza, condividi o scarica il versetto del giorno (e quelli precedenti), il tutto dal sito della tua chiesa. (La riproduzione dei programmi di studio è ora disponibile in [FreePlay](/docs/freeplay/) -- la scheda Lezioni nel portale è obsoleta.)
 
 ## Per saperne di più
 
-- [Per iniziare](./getting-started/) -- Crea il tuo account, accedi e scopri come navigare in B1.church.
+- [Per iniziare](./getting-started/) -- Crea il tuo account, accedi e impara a navigare su B1.church.
 - [Gruppi](./groups/) -- Iscriviti e partecipa ai gruppi della tua chiesa.
-- [Donazioni](./giving/) -- Fai donazioni e gestisci le tue offerte.
-- [Eventi](./events/) -- Sfoglia e iscriviti agli eventi della chiesa in programma.
-- [Servizio](./serving/) -- Consulta i piani e iscriviti agli incarichi di volontariato.
-- [Piani](./plans/) -- Consulta i piani di servizio e i tuoi incarichi di volontariato.
-- [Check-in](./checkin/) -- Effettua il check-in per servizi, eventi e la registrazione degli ospiti.
-- [Rubrica della comunità](./community/) -- Trova e stabilisci contatti con gli altri membri.
-- [Contenuti](./content/) -- Sermoni, Bibbia, versetto del giorno e dirette streaming. (La riproduzione delle lezioni è stata spostata in [FreePlay](/docs/freeplay/).)
+- [Offerte](./giving/) -- Fai donazioni e gestisci le tue offerte.
+- [Eventi](./events/) -- Sfoglia e iscriviti ai prossimi eventi della chiesa.
+- [Servizio](./serving/) -- Visualizza i piani e iscriviti alle posizioni da volontario.
+- [Piani](./plans/) -- Visualizza i piani di servizio e le tue posizioni da volontario.
+- [Check-in](./checkin/) -- Fai il check-in per servizi, eventi e registrazione ospiti.
+- [Rubrica della comunità](./community/) -- Trova e connettiti con altri membri.
+- [Contenuti](./content/) -- Predicazioni, Bibbia, versetto del giorno e streaming in diretta. (La riproduzione delle lezioni è passata a [FreePlay](/docs/freeplay/).)
 
 :::info
-B1.church è completamente gratuito per chiese e membri. Il tuo amministratore di chiesa configura e personalizza il sito tramite B1 Admin. Come membro, devi solo visitare l'URL B1.church della tua chiesa per iniziare.
+B1.church è completamente gratuito per chiese e membri. L'amministratore della chiesa configura e personalizza il sito tramite B1 Admin. Come membro, ti basta visitare l'URL di B1.church della tua chiesa per iniziare.
 :::

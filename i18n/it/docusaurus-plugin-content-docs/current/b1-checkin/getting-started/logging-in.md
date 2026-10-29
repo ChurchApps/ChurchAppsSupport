@@ -6,66 +6,70 @@ title: "Accesso"
 
 <div class="article-intro">
 
-Prima che il kiosk possa essere utilizzato per il check-in, devi accedere con un account ChurchApps che ha accesso alla tua chiesa. Questa pagina copre il processo di primo accesso, la selezione della chiesa, il comportamento del login automatico e come disconnettersi.
+Prima che il chiosco possa essere usato per il check-in, devi accedere con un account ChurchApps che abbia accesso alla tua chiesa. Questa pagina descrive il primo accesso, la selezione della chiesa, il comportamento dell'accesso automatico e come disconnettersi.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Installa B1 Church Checkin sul tuo tablet Android (vedi [Per Iniziare](./index.md))
+- Installa B1 Church Checkin sul tuo tablet Android (vedi [Per iniziare](./index.md))
 - Tieni pronti l'email e la password del tuo account ChurchApps
 
 </div>
 
-## Primo Accesso
+## Primo accesso
 
 1. Apri l'app B1 Church Checkin. Dopo la schermata di avvio, vedrai la schermata di accesso con il logo di B1 Church Checkin.
 2. Inserisci il tuo **indirizzo email** nel primo campo.
 3. Inserisci la tua **password** nel secondo campo.
-4. Tocca il pulsante **Login**.
+4. Tocca il pulsante **Accedi**.
 
-L'app verifica le tue credenziali e ti fa accedere. Se l'email o la password non sono corrette, vedrai un messaggio di errore nella parte inferiore dello schermo.
+L'app verifica le tue credenziali e ti accede. Se l'email o la password sono errate, vedrai un messaggio di errore in fondo alla schermata.
+
+Se l'account ha attivato l'[accesso a due fattori](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), l'app chiede poi un codice. Inserisci il codice a 6 cifre dall'app di autenticazione del titolare dell'account, oppure uno dei suoi codici di backup, e tocca di nuovo **Accedi**. Il codice serve solo per questo primo accesso; dopo, il chiosco resta connesso.
 
 :::info
-Questa è la stessa email e password che usi per B1 Admin o qualsiasi altro prodotto ChurchApps. Non hai bisogno di un account separato per il kiosk di check-in.
+È la stessa email e password che usi per B1 Admin o per qualsiasi altro prodotto ChurchApps. Non ti serve un account separato per il chiosco di check-in.
 :::
 
-## Selezione della Chiesa
+## Selezionare la tua chiesa
 
-Dopo un accesso riuscito, l'app carica un elenco di chiese collegate al tuo account. Ogni chiesa viene visualizzata come una scheda che mostra il nome della chiesa e il logo (se ne è stato configurato uno in B1 Admin).
+Dopo un accesso riuscito, l'app carica l'elenco delle chiese collegate al tuo account. Ogni chiesa è mostrata come una scheda con il nome e il logo della chiesa (se configurato in B1 Admin).
 
 - Se il tuo account è collegato a **una sola chiesa**, vedrai comunque la schermata di selezione. Tocca la tua chiesa per continuare.
-- Se il tuo account è collegato a **più chiese**, tocca la chiesa che vuoi che questo kiosk serva.
+- Se il tuo account è collegato a **più chiese**, tocca la chiesa che questo chiosco deve servire.
 
-Una volta selezionata una chiesa, l'app carica il branding e le impostazioni di aspetto di quella chiesa. Il logo della tua chiesa apparirà nell'intestazione di tutte le schermate successive.
+Una volta selezionata la chiesa, l'app carica il branding e l'aspetto di quella chiesa. Il logo della chiesa comparirà nell'intestazione di tutte le schermate successive.
 
-## Login Automatico nelle Visite Successive
+## Accesso automatico nelle visite successive
 
-L'app salva la tua email, password e la chiesa selezionata dopo il primo accesso riuscito. Nei lanci successivi:
+Dopo il primo accesso riuscito, l'app conserva sul tablet un token di accesso sicuro e la chiesa selezionata. Non memorizza la tua password. Ai successivi avvii:
 
-- L'app accede automaticamente con le tue credenziali salvate.
-- Se hai precedentemente selezionato una chiesa, ripristina quella selezione e ti porta direttamente alla **schermata dei servizi**.
-- Se le credenziali salvate non sono più valide, l'app torna alla schermata di accesso per consentirti di accedere di nuovo.
+- L'app ti riaccede automaticamente con il token salvato.
+- Se avevi già selezionato una chiesa, la ripristina e ti porta direttamente alla **schermata dei servizi**.
+- Se l'accesso salvato non è più valido, l'app torna alla schermata di accesso così puoi accedere di nuovo.
 
 :::tip
-Poiché il kiosk accede automaticamente, devi inserire le credenziali solo una volta durante la configurazione iniziale. Dopodiché, il tablet può essere acceso e sarà pronto all'uso.
+Poiché il chiosco accede automaticamente, devi inserire le credenziali solo una volta durante la configurazione iniziale. Dopo, basta accendere il tablet e sarà pronto all'uso.
 :::
 
-## Disconnessione
+## Impostazioni amministratore
 
-La disconnessione è intenzionalmente nascosta in modo che i membri della chiesa che usano il kiosk non possano disconnettersi accidentalmente. Per disconnettersi:
+Le impostazioni amministratore sono volutamente nascoste, così i membri della chiesa che usano il chiosco non possono modificare la configurazione per sbaglio. Per accedervi:
 
-1. Tocca il **logo della chiesa** nell'intestazione **sette volte** in rapida successione (entro due secondi).
-2. Apparirà una finestra di conferma che chiede se vuoi disconnetterti.
-3. Tocca **Logout** per confermare, o **Cancel** per rimanere connesso.
-
-Questo cancella le tue credenziali salvate e ti riporta alla schermata di accesso.
+1. Tocca il **logo della chiesa** nell'intestazione **sette volte** di seguito, rapidamente (entro due secondi).
+2. Se è impostato un PIN del chiosco, inseriscilo quando richiesto.
+3. Si aprirà la schermata **Impostazioni amministratore** con le seguenti opzioni:
+   - **Cambia servizio** — cambia l'orario del servizio selezionato
+   - **Cambia stampante** — apri le [impostazioni della stampante](./printer-setup) per cercare e selezionare una stampante
+   - **Imposta/Cambia PIN** — imposta o aggiorna il PIN del chiosco che protegge l'accesso amministratore
+   - **Esci** — disconnettiti e torna alla schermata di accesso
 
 :::warning
-La disconnessione cancella tutte le credenziali salvate e la selezione della chiesa. Dovrai reinserire la tua email e password per utilizzare nuovamente il kiosk. Disconnettiti solo quando hai bisogno di cambiare account o riconfigurare il kiosk.
+Disconnettersi cancella tutte le credenziali salvate e la selezione della chiesa. Dovrai reinserire l'email e la password per usare di nuovo il chiosco. Disconnettiti solo quando devi cambiare account o riconfigurare il chiosco.
 :::
 
-## Passaggi Successivi
+## Passi successivi
 
-Una volta effettuato l'accesso, puoi [configurare una stampante](./printer-setup) o andare direttamente al [flusso di check-in](../check-in/).
+Una volta effettuato l'accesso, puoi [configurare una stampante](./printer-setup) oppure andare direttamente al [flusso di check-in](../check-in/).

@@ -16,6 +16,7 @@ From the Profile section, you can:
 
 - **Update your name and email** -- Keep your contact information current.
 - **Change your password** -- Set a new password for your account.
+- **Turn on two-factor sign-in** -- Require a code from an authenticator app when you log in. See [Two-Factor Sign-In](./managing-profile.md#two-factor-sign-in).
 - **Switch themes** -- Toggle between light and dark mode from the user menu (click your profile picture in the top right corner).
 - **Manage connected devices** -- View and control which ChurchAppsPlayer devices are linked to your account.
 - **View linked accounts** -- See and manage any external services connected to your ChurchApps account.
@@ -25,7 +26,7 @@ From the Profile section, you can:
 
 The Profile area has the following pages:
 
-1. **[Managing Your Profile](./managing-profile.md)** -- Edit your personal information, change your password, manage linked accounts, adjust theme preferences, and handle account deletion.
+1. **[Managing Your Profile](./managing-profile.md)** -- Edit your personal information, change your password, manage linked accounts, turn on two-factor sign-in, adjust theme preferences, and handle account deletion.
 2. **[Approving Profile Changes](./approving-profile-changes.md)** -- Review and approve profile update requests submitted by members through B1 Mobile.
 3. **[Managing Devices](./devices.md)** -- View, add, and manage ChurchAppsPlayer devices paired with your account.
 
