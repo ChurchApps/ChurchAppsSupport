@@ -195,7 +195,7 @@ These unlock specific features and can all be added later via the Railway dashbo
 | `VIMEO_TOKEN` | Vimeo sermon support |
 | `API_BIBLE_KEY` | Bible verse lookups in lessons and content |
 | `YOUVERSION_API_KEY` | YouVersion Bible integration |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Browser push notifications (generate a VAPID keypair) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Browser push notifications ([generate a VAPID keypair](./docker#push-notifications)) |
 | `HUBSPOT_KEY` | Optional CRM sync for new registrations |
 
 ## Updating
