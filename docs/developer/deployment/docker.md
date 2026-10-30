@@ -97,9 +97,40 @@ These work exactly as on Railway — the same environment variables, set in `.en
 - **[Email / SMTP](./railway-template#1-email-highly-recommended)** — provider walkthroughs for Resend, Brevo, and Gmail
 - **[Multi-site](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — unlimited churches per instance. `/` serves the church whose slug is `DEFAULT_CHURCH_SLUG` (the first church is `church`); point extra domains at the box and map them under **Settings → Domains** in B1Admin
 - **[Online giving](./railway-template#4-online-giving-stripe--paypal)** — configured per church in the admin UI
-- **[Optional integrations](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `WEB_PUSH_*`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[Optional integrations](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[Push notifications](#push-notifications)** — `WEB_PUSH_*`; the installer leaves these blank, so push is off until you add them
 
 Invitations and other church-sent email are enabled automatically on a self-hosted instance (the hosted service gates these behind a manual review to protect its sender reputation).
+
+## Push Notifications
+
+Browser and mobile web push stay off until the server has a VAPID key pair. The installer does not create one. Until you add it, the mobile web app's Notifications page says push isn't turned on for the site.
+
+1. Generate a key pair. This only needs Docker:
+
+   ```bash
+   docker run --rm node:lts-alpine npx --yes web-push generate-vapid-keys
+   ```
+
+2. Add the two values to `.env`. `WEB_PUSH_SUBJECT` is optional, and is the contact address push services see:
+
+   ```bash
+   WEB_PUSH_PUBLIC_KEY=…
+   WEB_PUSH_PRIVATE_KEY=…
+   WEB_PUSH_SUBJECT=mailto:admin@example.org
+   ```
+
+3. Apply them:
+
+   ```bash
+   docker compose up -d
+   ```
+
+4. To confirm, open **Server Admin → Server Health** in B1Admin. Both Web Push keys should show as configured. Members can then turn on notifications from the mobile web app.
+
+:::warning
+Keep the same keys once members have enrolled. Changing them invalidates every existing subscription, and each device has to register again.
+:::
 
 ## Data, Backups, and File Storage
 
@@ -148,6 +179,7 @@ docker compose -f docker-compose.yml -f docker-compose.build.yml up -d --build
 | Browser shows a certificate warning | DNS not pointing here yet, or port 80/443 blocked | fix DNS / firewall; Caddy retries on its own |
 | `/` shows a dashboard instead of the website | no church yet, or `DEFAULT_CHURCH_SLUG` doesn't match | create the church, or set the slug from **Settings → Church** |
 | "Check your email" but no email arrives | `MAIL_SYSTEM=SMTP` with bad credentials | fix credentials, or unset `MAIL_SYSTEM` to disable email |
+| Mobile web app says push notifications aren't turned on | no VAPID keys on the server | add them as described in [Push Notifications](#push-notifications) |
 | Chat / live features silent | websocket blocked by another proxy in front | the socket is on `/api/` over the same port; allow `Upgrade` headers |
 | `install` refuses: "database volume already exists" | leftovers from an earlier install | `docker compose down -v` to wipe, or write a `.env` and use `upgrade` |
 

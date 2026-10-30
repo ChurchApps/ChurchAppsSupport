@@ -40,13 +40,13 @@ NotificationHelper.createNotifications(...) / checkShouldNotify(...) / ReminderE
 
 VAPID keys are stored in `Environment` and must be present for push to be enabled:
 
-| Variable | Description |
-|----------|-------------|
-| `webPushPublicKey` | VAPID public key (base64url). Returned to clients via `GET /messaging/webpush/publicKey` |
-| `webPushPrivateKey` | VAPID private key. Used to sign every outbound push |
-| `webPushSubject` | `mailto:` URI reported to push services. Defaults to `mailto:support@churchapps.org` |
+| Environment variable | `Environment` setting | Description |
+|----------|----------|-------------|
+| `WEB_PUSH_PUBLIC_KEY` | `webPushPublicKey` | VAPID public key (base64url). Returned to clients via `GET /messaging/webpush/publicKey` |
+| `WEB_PUSH_PRIVATE_KEY` | `webPushPrivateKey` | VAPID private key. Used to sign every outbound push |
+| `WEB_PUSH_SUBJECT` | `webPushSubject` | `mailto:` URI reported to push services. Defaults to `mailto:support@churchapps.org` |
 
-`WebPushHelper.isEnabled()` returns `false` when either key is missing — the messaging module continues to operate, push deliveries simply no-op.
+`WebPushHelper.isEnabled()` returns `false` when either key is missing — the messaging module continues to operate, push deliveries simply no-op. The B1App mobile site then tells members that push isn't turned on instead of offering setup.
 
 ### Generating a VAPID key pair
 
