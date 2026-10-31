@@ -12,7 +12,7 @@ Once your campuses, service times, and groups are set up, you can manually recor
 
 ## Training Video
 
-<YouTube id="gS8h2rhyMys" title="Recording and Tracking Attendance in B1" />
+<YouTube id="gS8h2rhyMys" title="Recording and Tracking Attendance in B1" next="Creating Plans and Scheduling Volunteers in B1" nextUrl="/docs/b1-admin/serving/plans" />
 
 <div class="prereqs">
 <h4>Before You Begin</h4>

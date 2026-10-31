@@ -10,6 +10,10 @@ Plan templates let you save a reusable snapshot of a plan's order of service or 
 
 </div>
 
+## Training Video
+
+<YouTube id="p8O9e4y7geA" title="Plan Templates, Tasks, and Workflows in B1" next="Creating Calendars, Events, and Room Bookings in B1" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

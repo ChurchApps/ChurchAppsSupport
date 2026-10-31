@@ -10,6 +10,10 @@ Service plans organize who is serving and when. Each plan is tied to a specific 
 
 </div>
 
+## Training Video
+
+<YouTube id="47DstBXKl74" title="Creating Plans and Scheduling Volunteers in B1" next="Building the Service Order and Song Library in B1" nextUrl="/docs/b1-admin/serving/service-order" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

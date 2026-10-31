@@ -10,6 +10,10 @@ The service order defines the sequence of elements in your worship service. Use 
 
 </div>
 
+## Training Video
+
+<YouTube id="O-xjiLFPOvA" title="Building the Service Order and Song Library in B1" next="Plan Templates, Tasks, and Workflows in B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
