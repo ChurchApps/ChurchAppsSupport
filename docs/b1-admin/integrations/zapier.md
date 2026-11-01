@@ -10,6 +10,10 @@ The official B1.church app on Zapier lets a Zap react to events in your church (
 
 </div>
 
+:::caution Waiting on Zapier's approval
+The B1.church app is built and working, but it is still waiting on Zapier's review before it appears publicly in the Zap editor's app directory. Until it's approved, only invited accounts can use it. Everything below describes how it will work once approved.
+:::
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
