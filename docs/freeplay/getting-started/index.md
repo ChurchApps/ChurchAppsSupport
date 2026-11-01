@@ -21,7 +21,7 @@ Our **<a href="/guides/freeplay-b1admin" target="_blank">step-by-step guide</a>*
 ## Installing FreePlay
 
 :::tip Buying a device?
-Not all streaming sticks can run FreePlay — the newest budget Fire TV models can't. See **[Choosing a Device](./choosing-a-device.md)** for exactly what to buy.
+FreePlay runs on Fire TV (including the newer Vega OS sticks), Android TV and Google TV boxes like the onn, and Apple TV. It does not run on Roku. See **[Choosing a Device](./choosing-a-device.md)** for exactly what to buy.
 :::
 
 ### Android TV / Amazon Fire TV
