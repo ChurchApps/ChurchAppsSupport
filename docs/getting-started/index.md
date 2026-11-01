@@ -25,7 +25,7 @@ Your first 15 minutes:
 
 ### Then pick your first project
 
-- **Kids classrooms:** schedule free [Lessons.church](../lessons-church/index.md) curriculum and play it on the classroom TV with [FreePlay](../freeplay/index.md).
+- **Kids classrooms:** set up a classroom TV that plays worship, then this Sunday's free [Lessons.church](../lessons-church/index.md) lesson, all on its own with [FreePlay](../freeplay/index.md). Follow **<a href="https://mautic.churchapps.org/guides/classroom-tv.html" target="_blank">Your classroom TV, step by step</a>** (8 short videos, about 15 minutes).
 - **Small groups:** [Run small groups](../b1-admin/guides/small-groups.md)
 - **Your church website:** [Launch your website](../b1-admin/guides/launch-website.md)
 - **Online giving:** [Set up online giving](../b1-admin/guides/online-giving.md)

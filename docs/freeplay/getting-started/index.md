@@ -11,6 +11,8 @@ FreePlay is available for Android TV, Amazon Fire TV, and Apple TV. This guide w
 </div>
 
 :::tip New to FreePlay? Start here
+Follow **<a href="https://mautic.churchapps.org/guides/classroom-tv.html" target="_blank">Your classroom TV, step by step</a>**: 8 short videos that take you from no account to a classroom TV that plays worship and this Sunday's lesson on its own.
+
 Watch our **<a href="/guides/freeplay-quickstart" target="_blank">quick start video</a>** — install FreePlay and start playing content in just a few minutes. No tech skills needed.
 :::
 
