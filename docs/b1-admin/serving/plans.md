@@ -41,12 +41,12 @@ Full admin access is not required to manage plans. Anyone who is a member of a m
 2. Give the plan a name or use the date as the name. Select the **date** for the service.
 3. If your ministry has [templates](./plan-templates.md), you can pick one under **Start from template** to fill in the order of service, positions, and notes in one step.
 4. Otherwise, if you would like to copy from a previous plan, use **Copy from Previous Plan** to choose **Positions Only** or **Positions and Assignments**. If you do not want to copy, choose **Nothing**. You can also check **Copy Order of Service**. When you copy from a previous plan, the new plan also keeps that plan's **Notes**, **Signup Deadline**, **Show volunteer names on signup page**, and automatic-replacement setting, so you don't have to re-enter them each week. You can change any of them in the new plan's settings.
-5. To set up several weeks at once while copying, enter a number in **Repeat weekly for this many weeks** (up to 12). B1 creates one plan per week, each copied from the one before it. If the plan is named after its date, each new plan is named after its own date.
+5. To set up several plans at once while copying, choose **Repeat every** and **Frequency** (Day, Week, or Month), then enter the **Number of plans** (up to 12). For Month, **On** lets you keep the same day of the month or the same weekday, such as the second Saturday. B1 lists the dates before you save and creates one plan for each date, each copied from the one before it. If the plan is named after its date, each new plan is named after its own date.
 6. Optionally set the **Signup Deadline (hours before service)**. A new plan starts with the previous plan's deadline, and you can change it here. Leave it blank for no deadline. See [Plan Settings](#plan-settings) for how the deadline is counted.
 7. Save the plan. You can now begin assigning team members and building out the [service order](./service-order.md).
 
 :::tip
-**Repeat weekly for this many weeks** is only available while you are copying something from the previous plan (positions, assignments, or the order of service).
+The repeat settings are only available while you are copying something from the previous plan (positions, assignments, or the order of service).
 :::
 
 ## The Plan Detail Page
