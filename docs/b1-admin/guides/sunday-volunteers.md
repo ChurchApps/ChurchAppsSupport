@@ -53,7 +53,7 @@ Plans are the weekly assignments that tell volunteers where they're needed.
 Follow the [Plans](../serving/plans.md) guide to:
 
 1. Go to Serving, select your ministry tab, and open your plan type
-2. Click **New Plan** and pick the service date. To set up several Sundays at once, copy from the previous plan and enter how many weeks in **Repeat weekly for this many weeks**
+2. Click **New Plan** and pick the service date. To set up several Sundays at once, copy from the previous plan and enter how many in **Number of plans**
 3. In the plan's **Serving Team Assignments** section, add positions and assign volunteers to them
 4. Volunteers will see their assignment status (Requested, Confirmed, Pending)
 5. Turn on [volunteer reminders](../serving/plans.md#volunteer-reminders) for the plan type so volunteers are reminded by push, email, or text before each service
