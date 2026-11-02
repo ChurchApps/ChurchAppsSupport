@@ -28,6 +28,8 @@ The People page lists your directory by **household**, grouped alphabetically. E
 
 Use the **View as** toggle above the list to switch between **Households** and **Table**. The **Table** view lists one person per row and is where you can sort and choose columns (see below). B1 remembers your choice on that device.
 
+In the **Table** view, each person's membership status appears under their name, and each of the seven statuses has its own color, the same one used on the person's profile. Anyone whose household role is set to **Child** also shows a **Child** tag beside the status. To mark someone as a child, set their role in the [household panel](./adding-people.md#managing-households) on their profile.
+
 By default the page loads the first part of your directory. If you have more people, click **Show All Members** below the list to load everyone.
 
 ## Quick Search
