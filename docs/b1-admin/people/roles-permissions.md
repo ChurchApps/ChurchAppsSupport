@@ -66,7 +66,7 @@ Follow the principle of least privilege -- give each role only the permissions i
 
 - **Office Staff** -- access to People, Donations, Attendance, and Forms
 - **Group Leaders** -- access to [Groups](../groups/creating-groups.md) only
-- **Check-In Volunteers** -- access to [Attendance](../attendance/check-in.md) only
+- **Check-In Volunteers** -- the **Checkin** attendance permission, which the account signed in to a [check-in kiosk](../attendance/check-in.md) needs
 - **Finance Team** -- access to [Donations](../donations/recording-donations.md) and reporting
 - **Counting Team** -- **Enter Donations** and **View Donations**, so volunteers can enter the offering into open batches without seeing giving summaries
 

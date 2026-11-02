@@ -1,133 +1,133 @@
 ---
-title: "Trasmissione in Diretta"
+title: "Trasmissione in diretta"
 ---
 
-# Trasmissione in Diretta
+# Trasmissione in diretta
 
 <div class="article-intro">
 
-La pagina Live Stream Times ti consente di configurare il programma di streaming della tua chiesa, gestire gli orari dei servizi e personalizzare l'esperienza dello spettatore. Configura servizi settimanali ricorrenti o eventi una tantum, configura le impostazioni della chat e del video e controlla quando il tuo flusso va in diretta.
+La pagina Orari della diretta ti permette di configurare il calendario delle trasmissioni della tua chiesa, gestire gli orari dei culti e personalizzare l'esperienza degli spettatori. Imposta culti settimanali ricorrenti o eventi una tantum, configura le impostazioni di chat e video e decidi quando la tua diretta va online.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Hai bisogno dell'autorizzazione **contentApi.streamingServices.edit**. Vedi [Ruoli e Autorizzazioni](../settings/roles-permissions.md) se non hai accesso.
-- Tieni pronto il tuo YouTube Channel ID se hai intenzione di utilizzare lo streaming live automatico
-- Aggiungi almeno un [sermone](managing-sermons) o un URL live permanente da utilizzare come fonte del flusso
+- Ti serve il permesso **contentApi.streamingServices.edit**. Vedi [Ruoli e permessi](../settings/roles-permissions.md) se non hai accesso.
+- Tieni pronto il tuo ID canale YouTube se intendi usare la trasmissione in diretta automatica
+- Aggiungi almeno un [sermone](managing-sermons) o un URL di diretta permanente da usare come fonte della trasmissione
 
 </div>
 
-Lo streaming live si gestisce da due pagine nella sezione **Sermons** del Jump menu: **Live Stream Times** per gestire il programma dello streaming live e **Settings** per configurare le schede della tua pagina di streaming.
+La trasmissione in diretta si gestisce da due pagine della sezione **Sermoni** del menu di navigazione rapida: **Orari della diretta** per gestire il calendario delle dirette e **Impostazioni** per configurare le schede della tua pagina di streaming.
 
-## Gestione dei Servizi
+## Gestire i culti
 
-### Aggiunta di un Servizio
+### Aggiungere un culto
 
-1. In B1 Admin, apri il [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Sermons**, e fai clic su **Live Stream Times**.
-2. Fai clic sul pulsante **Add Service** in alto nella pagina per creare un nuovo servizio pianificato. I servizi esistenti sono elencati in una tabella che mostra il nome, l'orario, il fornitore e la durata di ciascun servizio; fai clic sull'icona di modifica su una riga per cambiarlo.
-3. Immetti un **Service Name** (ad esempio, "Sunday Morning").
-4. Imposta il **Service Time** -- scegli il giorno e l'ora in cui inizia il tuo servizio.
-5. Imposta **Recurs Weekly** su **Yes** per i servizi settimanali regolari, o **No** per un evento una tantum.
+1. In B1 Admin, apri il [menu di navigazione rapida](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Sermoni** e clicca su **Orari della diretta**.
+2. Clicca sul pulsante **Aggiungi culto** in cima alla pagina per creare un nuovo culto in programma. I culti esistenti sono elencati in una tabella che mostra il nome, l'orario, il fornitore e la durata di ciascun culto; clicca sull'icona di modifica di una riga per cambiarlo.
+3. Inserisci un **Nome del culto** (ad esempio "Culto della domenica mattina").
+4. Imposta l'**Orario del culto** -- scegli il giorno e l'ora di inizio del culto.
+5. Imposta **Si ripete ogni settimana** su **Sì** per i culti settimanali regolari, oppure su **No** per un evento una tantum.
 
-### Configurazione delle Impostazioni di Chat e Video
+### Configurare le impostazioni di chat e video
 
-6. Sotto **Chat Settings**, imposta quanti minuti prima e dopo il servizio la chat dovrebbe essere abilitata. Questo consente ai visitatori di iniziare a chattare prima che il servizio inizi e continuare in seguito.
-7. Sotto **Video Settings**, imposta quanto tempo prima iniziare il flusso video per il conto alla rovescia o il contenuto pre-servizio.
-8. Seleziona quale sermone riprodurre dal menu a discesa:
-   - **Latest Sermon** -- Riproduce automaticamente il tuo video aggiunto più di recente.
-   - **Current Live Service** -- Riproduce il tuo flusso live attuale da YouTube usando il tuo Channel ID.
-   - Puoi anche scegliere qualsiasi sermone specifico che hai già salvato.
-9. Fai clic su **Save** per pianificare il tuo servizio.
+6. Nella sezione **Impostazioni chat**, imposta quanti minuti prima e dopo il culto la chat deve essere attiva. Così i visitatori possono iniziare a chattare prima dell'inizio del culto e continuare dopo.
+7. Nella sezione **Impostazioni video**, imposta con quanto anticipo avviare il flusso video per il conto alla rovescia o per i contenuti precedenti al culto. La chat si apre quei minuti *prima* dell'inizio anticipato del video, quindi l'orario mostrato accanto all'impostazione dei minuti di chat prima del culto conteggia entrambi i valori. Ad esempio, un culto alle 10:00 con 15 minuti di chat prima e un avvio anticipato di 5 minuti apre la chat alle 9:40.
+8. Seleziona il sermone da riprodurre dal menu a tendina:
+   - **Ultimo sermone** -- Riproduce automaticamente il video aggiunto più di recente.
+   - **Culto in diretta attuale** -- Riproduce la tua diretta attuale da YouTube usando il tuo ID canale.
+   - Puoi anche scegliere un sermone specifico che hai già salvato.
+9. Clicca su **Salva** per programmare il culto.
 
 :::info
-Il tuo servizio si aggiornerà automaticamente ogni settimana se impostato su ricorrente. Puoi aggiungere tanti servizi quanti ne hai bisogno. I visitatori vedranno l'orario del servizio pianificato successivo quando visitano la tua pagina di streaming.
+Se impostato come ricorrente, il culto si aggiorna automaticamente ogni settimana. Resta alla stessa ora locale quando inizia o finisce l'ora legale. Puoi aggiungere tutti i culti che ti servono. I visitatori vedranno il prossimo orario di culto programmato quando visitano la tua pagina di streaming.
 :::
 
-## Impostazioni della Pagina di Streaming
+## Impostazioni della pagina di streaming
 
-Per personalizzare le schede e i link che appaiono accanto al tuo streaming live, apri il Jump menu, espandi **Sermons** e fai clic su **Settings**. La pagina **Stream Settings** mostra il tuo elenco **Content Tabs**.
+Per personalizzare le schede e i link che compaiono accanto alla tua diretta, apri il menu di navigazione rapida, espandi **Sermoni** e clicca su **Impostazioni**. La pagina **Impostazioni streaming** mostra l'elenco delle tue **Schede di contenuto**.
 
-### Aggiunta di Schede
+### Aggiungere schede
 
-1. Fai clic sul pulsante **Add** per aggiungere una nuova scheda alla tua pagina di streaming live.
-2. Scegli un **Link Type**: **External URL** per un link personalizzato, oppure una delle schede predefinite **Chat** o **Prayer**.
-3. Per la scheda Chat, basta assegnarle un nome nella casella **Tab Text** e la configurazione è completa.
-4. Per una scheda collegata, inserisci il nome della scheda, scegli un'icona facendo clic sul pulsante icona, e inserisci l'URL.
-5. Le tue schede configurate appariranno sulla pagina di streaming live per consentire ai visualizzatori di accedere a risorse aggiuntive e funzionalità interattive.
+1. Clicca sul pulsante **Aggiungi** per aggiungere una nuova scheda alla tua pagina di trasmissione in diretta.
+2. Scegli un **Tipo di link**: **URL esterno** per un link personalizzato, oppure una delle schede predefinite **Chat** o **Preghiera**.
+3. Per la scheda Chat, basta inserire un nome nella casella **Testo della scheda** e la configurazione è completa.
+4. Per una scheda con link, inserisci il nome della scheda, scegli un'icona cliccando sul pulsante icona e inserisci l'URL.
+5. Le schede configurate compariranno sulla pagina della trasmissione in diretta, così gli spettatori possono accedere a risorse aggiuntive e funzioni interattive.
 
-### Anteprima del Tuo Streaming
+### Visualizzare in anteprima la tua diretta
 
-Nella pagina **Live Stream Times**, fai clic su **View Your Stream** in alto nella pagina per vedere esattamente come apparirà la tua pagina di streaming live ai visitatori, incluso il tuo logo, gli orari dei servizi e le schede configurate.
+Nella pagina **Orari della diretta**, clicca su **Visualizza la tua diretta** in cima alla pagina per vedere esattamente come apparirà la tua pagina di trasmissione agli ospiti, con il logo, gli orari dei culti e le schede configurate.
 
-## Configurazione del Tuo Streaming Live di YouTube
+## Configurare la diretta YouTube
 
-Per collegare il tuo canale YouTube per lo streaming live automatico:
+Per collegare il tuo canale YouTube per la trasmissione in diretta automatica:
 
-1. Vai a **Sermons** e fai clic su **Add Sermon**, quindi seleziona **Add Permanent Live URL**.
-2. Il fornitore video è predefinito su **Current YouTube Live Stream**. Inserisci il tuo **YouTube Channel ID**.
-3. Aggiungi un titolo e una descrizione, quindi fai clic su **Save**.
-4. In **Live Stream Times**, crea un servizio e seleziona il tuo URL live permanente dal menu a discesa dei sermoni.
+1. Vai su **Sermoni** e clicca su **Aggiungi sermone**, poi seleziona **Aggiungi URL di diretta permanente**.
+2. Il fornitore video è impostato di default su **Diretta YouTube attuale**. Inserisci il tuo **ID canale YouTube**.
+3. Aggiungi un titolo e una descrizione, poi clicca su **Salva**.
+4. In **Orari della diretta**, crea un culto e seleziona il tuo URL di diretta permanente dal menu a tendina dei sermoni.
 
 :::tip
-Per trovare il tuo YouTube Channel ID, vai alle impostazioni avanzate del tuo canale YouTube e copia il valore Channel ID.
+Per trovare il tuo ID canale YouTube, vai nelle impostazioni avanzate del tuo canale YouTube e copia il valore dell'ID canale.
 :::
 
-## Personalizzazione dei Colori e del Logo
+## Personalizzare colori e logo
 
-La tua pagina di streaming live utilizza le impostazioni [Appearance](../website/appearance) del tuo sito web:
+La tua pagina di trasmissione in diretta usa le impostazioni di [Aspetto](../website/appearance) del tuo sito web:
 
-- Il **colore accento leggero** con testo scuro viene utilizzato per l'intestazione.
-- Il **colore accento scuro** con testo leggero viene utilizzato per la barra laterale.
-- Il tuo **Light Background Logo** appare sulla pagina di streaming. Usa un'immagine con uno sfondo trasparente e un rapporto di aspetto 4:1.
+- Il **colore di accento chiaro** con testo scuro è usato per l'intestazione.
+- Il **colore di accento scuro** con testo chiaro è usato per la barra laterale.
+- Il tuo **Logo per sfondo chiaro** compare sulla pagina di streaming. Usa un'immagine con sfondo trasparente e proporzioni 4:1.
 
-Per modificare questi, vai a **Website** quindi **Appearance** e aggiorna le impostazioni della [Color Palette](../website/appearance#color-palette) e del [Logo](../website/appearance#logo-and-branding).
+Per cambiare questi elementi, vai su **Sito web** poi **Aspetto** e aggiorna le impostazioni della tua [Tavolozza dei colori](../website/appearance#color-palette) e del [Logo](../website/appearance#logo-and-branding).
 
-## Aggiunta di Host di Streaming
+## Aggiungere conduttori dello streaming
 
-Per dare ai membri del team accesso alla chat solo per host accanto alla chat pubblica:
+Per dare ai membri del team accesso alla chat riservata ai conduttori, accanto alla chat pubblica:
 
-1. Nel Jump menu, scegli **Settings > Roles**.
-2. Fai clic sul pulsante più e seleziona **Add Custom Role**.
-3. Nomina il ruolo "Streaming Host" e fai clic su **Save**.
-4. Fai clic sul nuovo ruolo, quindi fai clic su **Add** nella sezione Members per aggiungere persone.
-5. Scorri verso il basso fino a **Edit Permissions**, espandi la sezione **Content**, e seleziona **Host Chat**.
+1. Nel menu di navigazione rapida, scegli **Impostazioni > Ruoli**.
+2. Clicca sul pulsante più e seleziona **Aggiungi ruolo personalizzato**.
+3. Assegna al ruolo il nome "Conduttore dello streaming" e clicca su **Salva**.
+4. Clicca sul nuovo ruolo, poi clicca su **Aggiungi** nella sezione Membri per aggiungere persone.
+5. Scorri fino a **Modifica permessi**, espandi la sezione **Contenuti** e seleziona **Chat dei conduttori**.
 
-Quando gli host accedono alla pagina di streaming live, appare una scheda **Host Chat** privata accanto alla chat pubblica per la conversazione solo per lo staff durante la trasmissione.
+Quando i conduttori accedono alla pagina della trasmissione in diretta, accanto alla chat pubblica compare una scheda privata **Chat dei conduttori** per le conversazioni riservate allo staff durante la trasmissione.
 
 :::info
-Per ulteriori dettagli sulla creazione di ruoli e la gestione delle autorizzazioni, vedi [Ruoli e Autorizzazioni](../settings/roles-permissions.md).
+Per maggiori dettagli sulla creazione dei ruoli e la gestione dei permessi, vedi [Ruoli e permessi](../settings/roles-permissions.md).
 :::
 
-## Risoluzione dei Problemi
+## Risoluzione dei problemi
 
-Se il tuo streaming live automatico di YouTube non viene visualizzato correttamente quando usi l'opzione "Current YouTube Live Stream" con il tuo Channel ID, prova quanto segue:
+Se la tua diretta YouTube automatica non viene visualizzata correttamente con l'opzione "Diretta YouTube attuale" e il tuo ID canale, prova quanto segue:
 
 **Sintomi:**
-- L'embed dello streaming live mostra "Video unavailable"
-- La pagina si carica ma non appare alcun video
-- Gli embed di YouTube diretti funzionano, ma lo streaming live del canale automatico no
+- L'incorporamento della diretta mostra "Video non disponibile"
+- La pagina si carica ma non compare alcun video
+- Gli incorporamenti diretti di YouTube funzionano, ma la diretta automatica del canale no
 
 **Soluzione:**
-Controlla il tuo canale YouTube per i flussi live pianificati vecchi o imminenti ed eliminali:
+Controlla il tuo canale YouTube per eventuali dirette vecchie o programmate in futuro ed eliminale:
 
-1. Vai al tuo YouTube Studio.
-2. Naviga a **Content** quindi **Live**.
-3. Cerca eventuali life pianificate vecchie o streaming pianificati imminenti.
-4. Elimina queste voci di streaming live vecchie o pianificate.
-5. Prova di nuovo la tua pagina di streaming live.
+1. Vai su YouTube Studio.
+2. Vai su **Contenuti** poi **Dirette**.
+3. Cerca eventuali dirette vecchie o dirette programmate.
+4. Elimina queste voci di diretta vecchie o programmate.
+5. Testa di nuovo la tua pagina di trasmissione in diretta.
 
 :::warning
-L'embed dello streaming live del canale automatico di YouTube può essere bloccato quando ci sono più voci di streaming live pianificate o passate nel tuo canale. La rimozione di questi consente a YouTube di identificare e servire correttamente il tuo flusso live attuale.
+L'incorporamento automatico della diretta del canale YouTube può essere bloccato quando nel canale ci sono più voci di diretta programmate o passate. Eliminarle permette a YouTube di identificare e servire correttamente la tua diretta attuale.
 :::
 
 **Requisiti aggiuntivi:**
-- Il tuo streaming live deve essere impostato su **Public** (non Unlisted o Private).
-- L'embedding deve essere consentito nelle impostazioni dello streaming di YouTube.
-- Assicurati di utilizzare il fornitore **Current YouTube Live Stream** (con Channel ID), non il fornitore **YouTube** (con Video ID).
+- La tua diretta deve essere impostata come **Pubblica** (non Non in elenco o Privata).
+- Nelle impostazioni di streaming di YouTube deve essere consentito l'incorporamento.
+- Assicurati di usare il fornitore **Diretta YouTube attuale** (con ID canale), non il fornitore **YouTube** (con ID video).
 
-## Passaggi Successivi
+## Passi successivi
 
-- [Managing Sermons](managing-sermons) -- Aggiungi sermoni alla tua libreria
-- [Playlists](playlists) -- Organizza i sermoni in serie
+- [Gestire i sermoni](managing-sermons) -- Aggiungi sermoni alla tua libreria
+- [Playlist](playlists) -- Organizza i sermoni in serie

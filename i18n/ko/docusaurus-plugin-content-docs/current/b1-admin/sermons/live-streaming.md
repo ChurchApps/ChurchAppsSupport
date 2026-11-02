@@ -1,133 +1,133 @@
 ---
-title: "라이브 스트리밍"
+title: "생방송"
 ---
 
-# 라이브 스트리밍
+# 생방송
 
 <div class="article-intro">
 
-Live Stream Times 페이지를 사용하면 교회의 스트리밍 일정을 구성하고, 서비스 시간을 관리하며, 시청자 환경을 사용자 지정할 수 있습니다. 반복되는 주간 서비스 또는 일회성 행사를 설정하고, 채팅 및 동영상 설정을 구성하며, 스트림이 언제 시작되는지 제어하세요.
+Live Stream Times 페이지에서 교회의 송출 일정을 설정하고, 예배 시간을 관리하고, 시청자 화면을 꾸밀 수 있습니다. 매주 반복되는 예배나 일회성 행사를 설정하고, 채팅과 영상 설정을 구성하고, 생방송이 시작되는 시점을 조절하세요.
 
 </div>
 
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- **contentApi.streamingServices.edit** 권한이 필요합니다. 접근권이 없으면 [Roles & Permissions](../settings/roles-permissions.md)을 참고하세요.
-- 자동화된 라이브 스트리밍을 사용하려면 YouTube Channel ID를 준비하세요.
-- 스트림 소스로 사용할 [설교](managing-sermons) 또는 영구 라이브 URL을 최소 하나 추가하세요.
+- **contentApi.streamingServices.edit** 권한이 필요합니다. 접근 권한이 없다면 [역할 및 권한](../settings/roles-permissions.md)을 참고하세요.
+- 자동 생방송을 쓰려면 YouTube 채널 ID를 준비하세요.
+- 송출 원본으로 쓸 [설교](managing-sermons) 또는 고정 생방송 URL을 최소한 하나 추가하세요.
 
 </div>
 
-라이브 스트리밍은 Jump 메뉴의 **Sermons** 섹션에 있는 두 페이지에서 관리합니다: 라이브 스트림 일정을 관리하는 **Live Stream Times**와 스트리밍 페이지의 탭을 구성하는 **Settings**.
+생방송은 점프 메뉴의 **Sermons** 섹션에 있는 두 페이지에서 관리합니다. 생방송 일정을 관리하는 **Live Stream Times**와, 송출 페이지의 탭을 설정하는 **Settings**입니다.
 
-## 서비스 관리
+## 예배 관리하기
 
-### 서비스 추가
+### 예배 추가하기
 
-1. B1 Admin에서 B1 Admin의 왼쪽 상단에 있는 검색 모음인 [Jump 메뉴](../introduction.md#getting-around-with-the-jump-menu)를 열고 **Sermons**을 확장한 다음 **Live Stream Times**를 클릭하세요.
-2. 페이지 상단의 **Add Service** 버튼을 클릭하여 새로운 예약된 서비스를 만드세요. 기존 서비스는 각 서비스의 이름, 시간, 제공자 및 길이를 보여주는 표에 나열됩니다. 변경하려면 행의 편집 아이콘을 클릭하세요.
-3. **Service Name**을 입력하세요(예: "Sunday Morning").
-4. **Service Time**을 설정하세요 -- 서비스가 시작되는 요일과 시간을 선택하세요.
-5. **Recurs Weekly**를 정기적인 주간 서비스의 경우 **Yes**로, 일회성 행사의 경우 **No**로 설정하세요.
+1. B1 Admin에서 [점프 메뉴](../introduction.md#getting-around-with-the-jump-menu)(왼쪽 위의 검색창)를 열고 **Sermons**를 펼친 다음 **Live Stream Times**를 클릭하세요.
+2. 페이지 위의 **Add Service** 버튼을 클릭해 새 예정 예배를 만드세요. 기존 예배는 이름, 시간, 제공자, 길이가 표시된 표로 나열됩니다. 행의 편집 아이콘을 클릭하면 바꿀 수 있습니다.
+3. **Service Name**(예: "Sunday Morning")을 입력하세요.
+4. **Service Time**을 설정하세요. 예배가 시작되는 요일과 시간을 고르세요.
+5. 정기 예배라면 **Recurs Weekly**를 **Yes**로, 일회성 행사라면 **No**로 설정하세요.
 
-### 채팅 및 동영상 설정 구성
+### 채팅과 영상 설정하기
 
-6. **Chat Settings** 아래에서 서비스 전후로 채팅이 활성화되어야 하는 분 수를 설정하세요. 이렇게 하면 방문자가 서비스가 시작되기 전에 채팅을 시작하고 이후에 계속할 수 있습니다.
-7. **Video Settings** 아래에서 카운트다운 또는 서비스 전 콘텐츠를 위해 동영상 스트림을 시작하는 시간을 설정하세요.
-8. 드롭다운에서 재생할 설교를 선택하세요:
-   - **Latest Sermon** -- 자동으로 가장 최근에 추가한 동영상을 재생합니다.
-   - **Current Live Service** -- YouTube Channel ID를 사용하여 YouTube의 현재 라이브 스트림을 재생합니다.
-   - 이미 저장한 특정 설교를 선택할 수도 있습니다.
-9. **Save**를 클릭하여 서비스를 예약하세요.
+6. **Chat Settings**에서 예배 전후 몇 분 동안 채팅을 열어 둘지 설정하세요. 그러면 방문자가 예배 전에 대화를 시작하고 예배 후에도 계속 이야기할 수 있습니다.
+7. **Video Settings**에서 카운트다운이나 예배 전 콘텐츠를 위해 영상을 몇 분 일찍 송출할지 설정하세요. 채팅은 이 일찍 시작하는 영상보다 *먼저* 그만큼 열리므로, 채팅의 '몇 분 전' 설정 옆에 표시되는 시간은 두 숫자를 모두 반영합니다. 예를 들어 10:00 예배에 채팅을 15분 전에 열고 영상을 5분 일찍 시작하면, 채팅은 9:40에 열립니다.
+8. 드롭다운에서 재생할 설교를 고르세요.
+   - **Latest Sermon** -- 가장 최근에 추가된 영상을 자동으로 재생합니다.
+   - **Current Live Service** -- Channel ID를 사용해 YouTube에서 현재 생방송을 재생합니다.
+   - 이미 저장해 둔 특정 설교를 고를 수도 있습니다.
+9. **Save**를 클릭해 예배를 예약하세요.
 
 :::info
-설정이 반복되는 경우 서비스가 매주 자동으로 업데이트됩니다. 필요한 만큼 많은 서비스를 추가할 수 있습니다. 방문자는 스트리밍 페이지를 방문할 때 다음에 예약된 서비스 시간을 볼 수 있습니다.
+반복으로 설정하면 예배가 매주 자동으로 갱신됩니다. 서머타임이 시작되거나 끝나도 현지 시각은 그대로 유지됩니다. 예배는 필요한 만큼 추가할 수 있습니다. 방문자가 송출 페이지를 열면 다음 예정 예배 시간이 보입니다.
 :::
 
-## 스트리밍 페이지 설정
+## 송출 페이지 설정
 
-라이브 스트림 옆에 나타나는 탭 및 링크를 사용자 지정하려면, Jump 메뉴를 열고 **Sermons**를 확장한 다음 **Settings**를 클릭하세요. **Stream Settings** 페이지에 **Content Tabs** 목록이 표시됩니다.
+생방송 옆에 나타나는 탭과 링크를 꾸미려면, 점프 메뉴에서 **Sermons**를 펼치고 **Settings**를 클릭하세요. **Stream Settings** 페이지에 **Content Tabs** 목록이 나타납니다.
 
-### 탭 추가
+### 탭 추가하기
 
-1. **Add** 버튼을 클릭하여 라이브 스트림 페이지에 새 탭을 추가하세요.
-2. **Link Type**을 선택하세요: 사용자 지정 링크의 경우 **External URL**, 또는 미리 설계된 **Chat** 또는 **Prayer** 탭 중 하나.
-3. Chat 탭의 경우, **Tab Text** 상자에 이름만 지정하면 설정이 완료됩니다.
-4. 링크된 탭의 경우, 탭 이름을 입력하고, 아이콘 버튼을 클릭하여 아이콘을 선택하고, URL을 입력하세요.
-5. 구성된 탭이 라이브 스트리밍 페이지에 나타나 시청자가 추가 자원 및 대화형 기능에 접근할 수 있습니다.
+1. **Add** 버튼을 클릭해 생방송 페이지에 새 탭을 추가하세요.
+2. **Link Type**을 고르세요. 사용자 지정 링크라면 **External URL**을, 미리 디자인된 **Chat**(채팅) 또는 **Prayer**(기도) 탭이라면 그중 하나를 고르세요.
+3. Chat 탭은 **Tab Text** 상자에 이름만 입력하면 설정이 끝납니다.
+4. 링크 탭이라면 탭 이름을 입력하고, 아이콘 버튼을 클릭해 아이콘을 고른 다음, URL을 입력하세요.
+5. 설정한 탭은 생방송 페이지에 나타나, 시청자가 추가 자료와 상호작용 기능을 이용할 수 있습니다.
 
-### 스트림 미리보기
+### 송출 미리 보기
 
-**Live Stream Times** 페이지 상단의 **View Your Stream** 버튼을 클릭하여 로고, 서비스 시간 및 구성된 탭을 포함하여 라이브 스트리밍 페이지가 방문자에게 어떻게 보일지 정확히 보세요.
+**Live Stream Times** 페이지 위의 **View Your Stream**을 클릭하면, 로고, 예배 시간, 설정한 탭을 포함해 방문자에게 생방송 페이지가 정확히 어떻게 보일지 확인할 수 있습니다.
 
-## YouTube 라이브 스트림 설정
+## YouTube 생방송 설정하기
 
-자동 라이브 스트리밍을 위해 YouTube 채널을 연결하려면:
+YouTube 채널을 연결해 자동으로 생방송하려면 다음과 같이 하세요.
 
-1. **Sermons**으로 이동하고 **Add Sermon**을 클릭한 다음 **Add Permanent Live URL**을 선택하세요.
-2. 동영상 제공자는 기본값이 **Current YouTube Live Stream**입니다. **YouTube Channel ID**를 입력하세요.
-3. 제목과 설명을 추가한 다음 **Save**를 클릭하세요.
-4. **Live Stream Times**에서 서비스를 만들고 설교 드롭다운에서 영구 라이브 URL을 선택하세요.
+1. **Sermons**로 가서 **Add Sermon**을 클릭한 다음 **Add Permanent Live URL**을 고르세요.
+2. 영상 제공자의 기본값은 **Current YouTube Live Stream**입니다. **YouTube Channel ID**를 입력하세요.
+3. 제목과 설명을 입력한 다음 **Save**를 클릭하세요.
+4. **Live Stream Times**에서 예배를 만들고, 설교 드롭다운에서 고정 생방송 URL을 고르세요.
 
 :::tip
-YouTube Channel ID를 찾으려면, YouTube 채널의 고급 설정으로 이동하여 Channel ID 값을 복사하세요.
+YouTube Channel ID를 찾으려면 YouTube 채널의 고급 설정으로 가서 Channel ID 값을 복사하세요.
 :::
 
-## 색상 및 로고 사용자 지정
+## 색상과 로고 꾸미기
 
-라이브 스트림 페이지는 웹사이트의 [Appearance](../website/appearance) 설정을 사용합니다:
+생방송 페이지는 웹사이트의 [외관](../website/appearance) 설정을 사용합니다.
 
-- **밝은 강조 색상**은 어두운 텍스트와 함께 헤더에 사용됩니다.
-- **어두운 강조 색상**은 밝은 텍스트와 함께 사이드바에 사용됩니다.
-- **Light Background Logo**가 스트리밍 페이지에 나타납니다. 투명한 배경과 4:1 종횡비가 있는 이미지를 사용하세요.
+- 머리글에는 **밝은 강조 색**과 어두운 글자가 쓰입니다.
+- 사이드바에는 **어두운 강조 색**과 밝은 글자가 쓰입니다.
+- 생방송 페이지에 **Light Background Logo**가 나타납니다. 배경이 투명하고 가로세로 비율이 4:1인 이미지를 사용하세요.
 
-이를 변경하려면, **Website** 다음 **Appearance**로 이동하고 [Color Palette](../website/appearance#color-palette) 및 [Logo](../website/appearance#logo-and-branding) 설정을 업데이트하세요.
+이것들을 바꾸려면 **Website**, 그다음 **Appearance**로 가서 [색상 팔레트](../website/appearance#color-palette)와 [로고](../website/appearance#logo-and-branding) 설정을 업데이트하세요.
 
-## 스트리밍 호스트 추가
+## 생방송 진행자 추가하기
 
-팀 멤버에게 공개 채팅 옆에 있는 호스트 전용 채팅에 접근할 수 있도록 하려면:
+팀원에게 공개 채팅과 함께 진행자 전용 채팅을 쓸 수 있게 하려면 다음과 같이 하세요.
 
-1. Jump 메뉴에서 **Settings > Roles**를 선택하세요.
-2. 더하기 버튼을 클릭하고 **Add Custom Role**을 선택하세요.
-3. 역할을 "Streaming Host"로 이름을 지으세요 그리고 **Save**를 클릭하세요.
-4. 새 역할을 클릭한 다음, Members 섹션에서 **Add**를 클릭하여 사람을 추가하세요.
-5. **Edit Permissions**까지 아래로 스크롤하고, **Content** 섹션을 확장한 다음, **Host Chat**을 선택하세요.
+1. 점프 메뉴에서 **Settings > Roles**를 선택하세요.
+2. 더하기 버튼을 클릭하고 **Add Custom Role**을 고르세요.
+3. 역할 이름을 "Streaming Host"로 정하고 **Save**를 클릭하세요.
+4. 새 역할을 클릭한 다음, Members 섹션의 **Add**를 클릭해 사람을 추가하세요.
+5. 아래로 스크롤해 **Edit Permissions**에서 **Content** 섹션을 펼치고 **Host Chat**을 체크하세요.
 
-호스트가 라이브 스트림 페이지에 로그인하면, 공개 채팅 옆에 방송 중 직원 전용 대화를 위한 비공개 **Host Chat** 탭이 나타납니다.
+진행자가 생방송 페이지에 로그인하면, 방송 중 직원끼리만 대화할 수 있는 비공개 **Host Chat** 탭이 공개 채팅 옆에 나타납니다.
 
 :::info
-역할 생성 및 권한 관리에 대한 자세한 내용은 [Roles & Permissions](../settings/roles-permissions.md)을 참고하세요.
+역할을 만들고 권한을 관리하는 자세한 방법은 [역할 및 권한](../settings/roles-permissions.md)을 참고하세요.
 :::
 
 ## 문제 해결
 
-"Current YouTube Live Stream" 옵션을 Channel ID와 함께 사용할 때 자동화된 YouTube 라이브 스트림이 올바르게 표시되지 않으면 다음을 시도하세요:
+채널 ID를 사용하는 "Current YouTube Live Stream" 옵션으로 자동 YouTube 생방송이 제대로 나타나지 않는다면 다음을 시도하세요.
 
 **증상:**
-- 라이브 스트림 임베드가 "Video unavailable" 표시
-- 페이지가 로드되지만 동영상이 나타나지 않음
-- 직접 YouTube 임베드는 작동하지만 자동화된 채널 라이브 스트림은 작동하지 않음
+- 생방송 임베드에 "Video unavailable"이 표시됨
+- 페이지는 로드되지만 영상이 나타나지 않음
+- YouTube 직접 임베드는 작동하지만, 자동 채널 생방송은 작동하지 않음
 
-**해결책:**
-오래된 또는 예정된 예약된 라이브 스트림에 대한 YouTube 채널을 확인하고 삭제하세요:
+**해결 방법:**
+YouTube 채널에서 오래되었거나 예정된 생방송이 있는지 확인하고 삭제하세요.
 
-1. YouTube Studio로 이동하세요.
-2. **Content** 다음 **Live**로 이동하세요.
-3. 오래되었거나 예정된 예약된 라이브 스트림을 찾으세요.
-4. 이 오래된 또는 예정된 라이브 스트림 항목을 삭제하세요.
-5. 라이브 스트림 페이지를 다시 테스트하세요.
+1. YouTube 스튜디오로 가세요.
+2. **Content**, 그다음 **Live**로 이동하세요.
+3. 오래되었거나 예약된 생방송이 있는지 찾으세요.
+4. 이 오래된 항목이나 예약된 생방송 항목을 삭제하세요.
+5. 생방송 페이지를 다시 테스트하세요.
 
 :::warning
-YouTube의 자동화된 채널 라이브 스트림 임베드는 채널에 여러 개의 예약되었거나 과거 라이브 스트림 항목이 있을 때 차단될 수 있습니다. 이를 제거하면 YouTube가 현재 라이브 스트림을 올바르게 식별하고 제공할 수 있게 합니다.
+채널에 예약되었거나 지난 생방송 항목이 여러 개 있으면, YouTube의 자동 채널 생방송 임베드가 차단될 수 있습니다. 이것들을 지우면 YouTube가 현재 생방송을 올바르게 식별하고 제공할 수 있습니다.
 :::
 
-**추가 요구사항:**
-- 라이브 스트림은 **Public**으로 설정해야 합니다(Unlisted 또는 Private이 아님).
-- YouTube 스트림 설정에서 임베딩이 허용되어야 합니다.
-- **Current YouTube Live Stream** 제공자(Channel ID 포함)를 사용하고 있는지 확인하세요. **YouTube** 제공자(Video ID)가 아닙니다.
+**추가 요건:**
+- 생방송은 **Public**(공개)으로 설정되어야 합니다(Unlisted나 Private이 아님).
+- YouTube 송출 설정에서 임베드가 허용되어 있어야 합니다.
+- **Current YouTube Live Stream** 제공자(Channel ID 사용)를 쓰고 있는지 확인하세요. **YouTube** 제공자(Video ID 사용)가 아닙니다.
 
 ## 다음 단계
 
-- [Managing Sermons](managing-sermons) -- 라이브러리에 설교 추가
-- [Playlists](playlists) -- 설교를 시리즈로 구성
+- [설교 관리하기](managing-sermons) -- 설교 자료실에 설교 추가하기
+- [재생 목록](playlists) -- 설교를 시리즈로 정리하기

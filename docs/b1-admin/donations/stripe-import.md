@@ -13,7 +13,7 @@ If you accept online donations through Stripe, the Stripe Import tool lets you p
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Complete the [Online Giving Setup](online-giving-setup.md) to connect your Stripe account to B1 Admin
+- Complete the [Online Giving Setup](online-giving-setup.md) to connect your Stripe account to B1 Admin. The **Stripe Import** menu item and the Batches page button only appear when your church's giving gateway is Stripe, and only for people who can edit donations
 - Verify that you have donations in your Stripe dashboard for the date range you want to import
 
 </div>

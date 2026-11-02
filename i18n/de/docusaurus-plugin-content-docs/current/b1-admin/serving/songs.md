@@ -6,7 +6,7 @@ title: "Lieder"
 
 <div class="article-intro">
 
-Auf der Seite Lieder verwalten Sie Ihre Bibliothek an Lobpreisliedern. Bewahren Sie alle Liedangaben, Texte und Arrangements an einem Ort auf, damit sich Ihr Lobpreisteam auf kommende Gottesdienste vorbereiten und ein gleichbleibendes Repertoire pflegen kann.
+Die Seite Lieder verwaltet Ihre Liedbibliothek für den Lobpreis. Bewahren Sie alle Angaben zu Liedern, Liedtexte und Arrangements an einem Ort auf, damit sich Ihr Lobpreisteam problemlos auf kommende Gottesdienste vorbereiten und ein einheitliches Repertoire pflegen kann.
 
 </div>
 
@@ -14,84 +14,84 @@ Auf der Seite Lieder verwalten Sie Ihre Bibliothek an Lobpreisliedern. Bewahren 
 <h4>Bevor Sie beginnen</h4>
 
 - Wählen Sie im [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) in B1 Admin **Dienst > Lieder**, um zur Seite Lieder zu gelangen
-- Richten Sie optional Ihre [Dienstpläne](./plans.md) ein, damit Sie Lieder direkt in den [Gottesdienstablauf](./service-order.md) einbinden können
+- Optional: Richten Sie Ihre [Dienstpläne](./plans.md) ein, damit Sie Lieder direkt in den [Gottesdienstablauf](./service-order.md) einfügen können
 
 </div>
 
-## Ihre Liedbibliothek durchsehen
+## Ihre Liedbibliothek durchsuchen
 
-Wenn Sie die Seite **Lieder** öffnen, sind Ihre Lieder in einer Tabelle aufgelistet. Jede Zeile zeigt das Vorschaubild, den Titel, den Interpreten und die Dauer des Liedes. Verwenden Sie die Seitensteuerung unterhalb der Liste, um sich durch eine große Bibliothek zu bewegen, oder suchen Sie gezielt nach dem, was Sie brauchen.
+Wenn Sie die Seite **Lieder** öffnen, werden Ihre Lieder in einer Tabelle aufgelistet. Jede Zeile zeigt das Vorschaubild des Liedes, den Titel, den Interpreten und die Dauer. Verwenden Sie die Steuerelemente unter der Liste, um durch eine große Bibliothek zu blättern, oder suchen Sie gezielt nach dem, was Sie brauchen.
 
-## Lieder suchen
+## Nach Liedern suchen
 
-1. Klicken Sie oben auf der Seite Lieder in das Feld **Lieder suchen**.
+1. Klicken Sie in das Feld **Lieder suchen** oben auf der Seite Lieder.
 2. Geben Sie einen **Titel** oder den Namen eines **Interpreten** ein.
-3. Die Liste wird während der Eingabe gefiltert und zeigt passende Lieder aus Ihrer Bibliothek sowie die Anzahl der Treffer. Klicken Sie auf **Leeren**, um wieder alle Lieder anzuzeigen.
+3. Die Liste wird beim Tippen gefiltert und zeigt die passenden Lieder aus Ihrer Bibliothek sowie die Anzahl der Treffer. Klicken Sie auf **Zurücksetzen**, um wieder alle Lieder anzuzeigen.
 
 ## Ein Lied hinzufügen
 
 1. Klicken Sie oben auf der Seite Lieder auf **Lied hinzufügen**.
-2. Suchen Sie unter **Lied suchen** in der externen Liederdatenbank nach **Titel oder Interpret**.
-3. Wählen Sie das gewünschte Lied aus oder klicken Sie auf **Manuell anlegen**, falls Sie es nicht finden.
-4. Das Lied wird mit seinen Grundangaben vorausgefüllt zu Ihrer Bibliothek hinzugefügt.
+2. Suchen Sie unter **Nach einem Lied suchen** in der externen Liederdatenbank nach **Titel oder Interpret**.
+3. Wählen Sie das gewünschte Lied aus oder klicken Sie auf **Manuell anlegen**, wenn Sie es nicht finden.
+4. Das Lied wird mit seinen grundlegenden, bereits ausgefüllten Angaben zu Ihrer Bibliothek hinzugefügt.
 
 :::tip
-Klicken Sie nach dem Hinzufügen eines Liedes darauf, um seine Angaben zu prüfen und zu aktualisieren, Arrangements hinzuzufügen oder externe Links wie YouTube-Videos oder Akkordtabellen anzuhängen.
+Klicken Sie nach dem Hinzufügen auf das Lied, um seine Angaben zu prüfen und zu aktualisieren, Arrangements hinzuzufügen oder externe Links wie YouTube-Videos oder Akkordblätter anzuhängen.
 :::
 
-### Kostenlose Lieder von WorshipCommons
+### Kostenlose Lieder von WorshipCommons {#free-songs-from-worshipcommons}
 
-Ihre Suchergebnisse können neben den regulären Ergebnissen auch einen Bereich **WorshipCommons -- kostenlos** enthalten. Dabei handelt es sich um sonntagstaugliche Lieder von [WorshipCommons](https://worshipcommons.org), die geprüft und für den Gottesdienst lizenziert sind. Jedes Ergebnis zeigt eine Lizenzkennzeichnung -- **Kostenlos für den Gottesdienst** oder **Gemeinfrei** -- damit Sie die Bedingungen kennen, bevor Sie es hinzufügen.
+Ihre Suchergebnisse können neben den regulären Treffern außerdem einen Abschnitt **WorshipCommons – kostenlos** enthalten. Dies sind sonntagstaugliche Lieder von [WorshipCommons](https://worshipcommons.org), die für den Gottesdienst geprüft und lizenziert wurden. Jedes Ergebnis zeigt ein Lizenzabzeichen – **Kostenlos für den Gottesdienst** oder **Gemeinfrei** –, damit Sie die Bedingungen kennen, bevor Sie es hinzufügen.
 
-- Klicken Sie auf ein Ergebnis von WorshipCommons, um es wie ein reguläres Suchergebnis zu Ihrer Bibliothek hinzuzufügen.
+- Klicken Sie auf ein Ergebnis von WorshipCommons, um es Ihrer Bibliothek hinzuzufügen, genau wie bei einem regulären Suchergebnis.
 - Klicken Sie auf **Auf WorshipCommons ansehen**, um den Originaleintrag in einem neuen Tab zu öffnen.
 
-Hier erscheinen nur Lieder, die den Prüfprozess von WorshipCommons durchlaufen haben. Die Auswahl ist deshalb möglicherweise kleiner als die Hauptdatenbank der Lieder.
+Hier erscheinen nur Lieder, die die Prüfung durch WorshipCommons bestanden haben. Die Auswahl kann daher kleiner sein als die Hauptdatenbank der Lieder.
 
 ## Lieder löschen
 
-Setzen Sie ein Häkchen bei einem oder mehreren Liedern (oder bei dem Kästchen in der Kopfzeile, um alle angezeigten Lieder auszuwählen), klicken Sie dann in der erscheinenden Leiste auf **Ausgewählte löschen** und bestätigen Sie. Klicken Sie auf **Leeren**, um die Auswahl aufzuheben.
+Aktivieren Sie das Kästchen neben einem oder mehreren Liedern (oder das Kästchen in der Kopfzeile, um jedes angezeigte Lied auszuwählen) und klicken Sie dann in der erscheinenden Leiste auf **Ausgewählte löschen** und bestätigen Sie. Klicken Sie auf **Zurücksetzen**, um die Auswahl aufzuheben.
 
 ## Ein Lied ansehen und bearbeiten
 
-Klicken Sie auf den Titel eines Liedes, um seine Detailseite zu öffnen. Titel, Interpret und Angaben wie Album, Tonart, Länge, BPM und Takt erscheinen links, zusammen mit seinen Arrangements und externen Links. Von hier aus können Sie:
+Klicken Sie auf den Titel eines Liedes, um seine Detailseite zu öffnen. Titel, Interpret und Angaben wie Album, Tonart, Länge, BPM und Takt stehen links, zusammen mit seinen Arrangements und externen Links. Von hier aus können Sie:
 
-- **Liedangaben bearbeiten** -- Klicken Sie auf **Bearbeiten**, um Titel, Interpret, Dauer und weitere Metadaten zu aktualisieren. Klicken Sie auf **Fertig**, wenn Sie fertig sind. Um das Lied aus Ihrer Bibliothek zu entfernen, klicken Sie auf **Bearbeiten** und dann auf **Lied löschen**.
-- **Arrangements verwalten** -- Jedes Lied kann mehrere Arrangements haben (zum Beispiel verschiedene Tonarten oder Fassungen). Klicken Sie auf **Arrangement hinzufügen**, um eines anzulegen, und auf den Namen eines Arrangements unter **Arrangements**, um es zu öffnen.
-- **Liedtext hinzufügen** -- Geben Sie den Liedtext jedes Arrangements in ChordPro-Notation ein oder aktualisieren Sie ihn (zum Beispiel `[G]Amazing grace`). Eine Live-Vorschau neben dem Editor zeigt die formatierte Akkordtabelle während Sie tippen, sodass Sie genau sehen, was Ihr Team sieht.
-- **Die Tonart festlegen** -- Legen Sie die Tonart jedes Arrangements mit dem Tonart-Auswahlfeld neben dem Liedtext fest. Das Auswahlfeld listet Tonarten so auf, wie Musiker sie üblicherweise schreiben (C, Db, D, Eb, E, F, F#, G, Ab, A, Bb, B). Eine Änderung der Tonart transponiert die angezeigten Akkorde sofort, sowohl auf der Seite des Arrangements als auch beim Öffnen des Liedes aus einem Dienstplan, sodass Ihr Team die Akkorde immer in der Tonart sieht, in der tatsächlich gespielt wird. Die Akkordbezeichnungen richten sich nach der Tonart: Bei b-Tonarten wie B oder Es zeigen die Akkorde b-Bezeichnungen (B, Es, As) statt Kreuzen.
-- **Externe Links hinzufügen** -- Verknüpfen Sie Ressourcen wie YouTube-Videos, Akkordtabellen oder anderswo gehostete Notenblätter.
+- **Angaben zum Lied bearbeiten** – Klicken Sie auf **Bearbeiten**, um Titel, Interpret, Dauer und weitere Metadaten zu aktualisieren. Klicken Sie auf **Fertig**, wenn Sie fertig sind. Um das Lied aus Ihrer Bibliothek zu entfernen, klicken Sie auf **Bearbeiten** und dann auf **Lied löschen**.
+- **Arrangements verwalten** – Jedes Lied kann mehrere Arrangements haben (zum Beispiel verschiedene Tonarten oder Fassungen). Klicken Sie auf **Arrangement hinzufügen**, um eines anzulegen, und klicken Sie auf den Namen eines Arrangements unter **Arrangements**, um es zu öffnen.
+- **Liedtexte hinzufügen** – Geben Sie die Liedtexte jedes Arrangements in ChordPro-Notation ein oder aktualisieren Sie sie (zum Beispiel `[G]Amazing grace`). Eine Live-Vorschau neben dem Editor stellt das formatierte Akkordschema beim Tippen dar, sodass Sie genau sehen, was Ihr Team sehen wird.
+- **Die Tonart festlegen** – Legen Sie die Tonart jedes Arrangements mit der Tonartauswahl neben dem Liedtext fest. Die Auswahl listet Tonarten so auf, wie Musiker sie üblicherweise schreiben (C, Des, D, Es, E, F, Fis, G, As, A, B, H). Eine Änderung der Tonart transponiert die angezeigten Akkorde sofort – sowohl auf der Seite des Arrangements als auch beim Öffnen des Liedes aus einem Dienstplan –, sodass Ihr Team die Akkorde immer in der Tonart sieht, die tatsächlich gespielt wird. Die Akkordschreibweise passt sich der Tonart an: Bei b-Tonarten wie B oder Es werden Akkordnamen mit b (B, Es, As) statt mit Kreuz angezeigt.
+- **Externe Links hinzufügen** – Hängen Sie Links zu Ressourcen an, etwa YouTube-Videos, Akkordblätter oder Notenblätter, die woanders gehostet werden.
 
 ## Arrangements
 
-Ein Arrangement ist eine eigenständige Fassung eines Liedes -- etwa eine schnellere moderne Version im Vergleich zu einer langsameren akustischen Fassung oder dasselbe Lied in einer anderen Tonart für ein anderes Team. Jedes Arrangement desselben Liedes teilt sich Titel und Interpreten, hat aber eigene, unabhängige Einstellungen:
+Ein Arrangement stellt eine eigene Fassung eines Liedes dar – zum Beispiel eine schnellere moderne Version im Vergleich zu einer langsameren akustischen Aufnahme oder dasselbe Lied in einer anderen Tonart für ein anderes Team. Jedes Arrangement desselben Liedes teilt sich Titel und Interpret, hat aber eigene, unabhängige Einstellungen:
 
-- **Tonart** -- die Tonart, in der das Arrangement gespielt wird
-- **BPM** -- Tempo in Schlägen pro Minute
-- **Länge** -- Dauer in Sekunden
-- **Takt** -- Taktart (z. B. 4/4, 3/4, 6/8)
-- **Ablauf** -- die Akkord- und Abschnittsstruktur (z. B. Intro → Strophe → Refrain → Bridge)
-- **Liedtext** -- zur Anzeige oder Projektion
-- **Externe Links** -- Akkordtabellen, YouTube-Aufnahmen, Notenblätter oder andere Ressourcen
+- **Tonart** – die Tonart, in der das Arrangement gespielt wird
+- **BPM** – Tempo in Schlägen pro Minute
+- **Länge** – Dauer in Sekunden
+- **Takt** – Taktart (z. B. 4/4, 3/4, 6/8)
+- **Ablauf** – die Akkord- und Abschnittsstruktur (z. B. Intro → Strophe → Refrain → Bridge)
+- **Liedtext** – zur Anzeige oder Projektion
+- **Externe Links** – Akkordblätter, YouTube-Aufnahmen, Notenblätter oder andere Ressourcen
 
-Wenn Sie ein Lied in einen [Gottesdienstablauf](./service-order.md) aufnehmen, können Sie für diesen bestimmten Gottesdienst wählen, welches Arrangement verwendet wird. So probt und spielt Ihr Team immer die richtige Fassung.
+Wenn Sie ein Lied in einen [Gottesdienstablauf](./service-order.md) einfügen, können Sie für diesen bestimmten Gottesdienst wählen, welches Arrangement verwendet wird. So probt und spielt Ihr Team immer die richtige Fassung.
 
 ### Probenaufnahme
 
-Lobpreis-Administratoren können einem Arrangement eine Probenaufnahme anhängen, damit das Team vor der Probe hineinhören kann:
+Lobpreisverantwortliche können einem Arrangement eine Probenaufnahme anhängen, damit das Team vor der Probe hineinhören kann:
 
 1. Öffnen Sie das Lied und wählen Sie das Arrangement aus.
 2. Klicken Sie auf **Audio hochladen**.
-3. Wählen Sie eine Datei im Format MP3, M4A oder AAC (bis zu 25 MB -- WAV wird nicht akzeptiert, um den Speicherbedarf überschaubar zu halten).
-4. Speichern Sie. Die Aufnahme wird eingebettet überall abgespielt, wo dieses Arrangement erscheint -- auf der Seite des Arrangements in B1 Admin und im Dienstplan, wenn ein Teammitglied ihn im B1.church-Mitgliederbereich öffnet. Plan-Elemente mit Audio zeigen ein Notensymbol statt eines Vorschaubildes.
+3. Wählen Sie eine Datei im Format MP3, M4A oder AAC (bis zu 25 MB – WAV wird nicht akzeptiert, um den Speicherbedarf überschaubar zu halten).
+4. Speichern Sie. Die Aufnahme wird eingebettet abgespielt, überall wo dieses Arrangement erscheint – auf der Seite des Arrangements in B1 Admin und im Dienstplan, wenn ein Teammitglied ihn im B1.church-Mitgliederbereich öffnet. Elemente des Plans mit Audio zeigen ein Notensymbol statt eines Vorschaubildes.
 
-Wenn Sie das Arrangement löschen, wird auch seine hochgeladene Audiodatei entfernt.
+Das Löschen des Arrangements entfernt auch die hochgeladene Audiodatei.
 
 :::info
-Lieder aus Ihrer Bibliothek können innerhalb eines Plans direkt in den [Gottesdienstablauf](./service-order.md) aufgenommen werden. Dabei werden die Liedangaben und das gewählte Arrangement mit diesem bestimmten Gottesdienst verknüpft.
+Lieder aus Ihrer Bibliothek können direkt in einen [Gottesdienstablauf](./service-order.md) innerhalb eines Plans eingefügt werden; dabei werden die Angaben zum Lied und das gewählte Arrangement mit diesem bestimmten Gottesdienst verknüpft.
 :::
 
-## Wie geht es weiter?
+## Nächste Schritte
 
-- Fügen Sie Lieder zu Ihrem [Gottesdienstablauf](./service-order.md) hinzu, wenn Sie einen [Dienstplan](./plans.md) erstellen
-- Stimmen Sie sich mit Ihrem Lobpreisteam über [Aufgaben](./tasks.md) zur Liedvorbereitung und zum Üben ab
+- Fügen Sie Lieder in Ihren [Gottesdienstablauf](./service-order.md) ein, wenn Sie einen [Dienstplan](./plans.md) aufbauen
+- Stimmen Sie sich mit Ihrem Lobpreisteam über [Aufgaben](./tasks.md) zur Vorbereitung und Übung der Lieder ab

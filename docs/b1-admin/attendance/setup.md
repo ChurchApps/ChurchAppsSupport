@@ -17,7 +17,7 @@ Before you can track attendance, you need to tell B1 Admin about your church's p
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- You need an active B1 Admin account with permission to manage attendance. See [Roles & Permissions](../people/roles-permissions.md) if you're unsure about your access level.
+- You need an active B1 Admin account with the **Edit Services** attendance permission. The **Setup** option only appears for people who have it; viewing attendance alone is not enough. See [Roles & Permissions](../people/roles-permissions.md) if you're unsure about your access level.
 - If you plan to assign groups to service times, make sure your [groups are created](../groups/creating-groups.md) first.
 
 </div>

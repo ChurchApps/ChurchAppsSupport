@@ -6,79 +6,79 @@ title: "配对屏幕"
 
 <div class="article-intro">
 
-要将电视加入日程，请使用 **FreePlay Admin** 进行配对。电视会显示一个四位字母代码。你需要在 [admin.freeplay.church](https://admin.freeplay.church) 输入该代码，并选择电视应该跟随的屏幕组日程。每台电视只需配对一次。
+要让一台电视按日历播放，需要将它与 **FreePlay Admin** 配对。电视会显示一个四位字母代码。你在 [admin.freeplay.church](https://admin.freeplay.church) 输入该代码，并选择该电视应当跟随其日历的屏幕组。每台电视只需配对一次。
 
 </div>
 
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 在电视上安装并启动 FreePlay。请参阅[入门指南](../getting-started/)
-- 准备好你教会的 ChurchApps 登录账户，以便登录 FreePlay Admin
-- 可选：先[创建播放列表](./building-playlists)并[安排日程](./scheduling-the-calendar)，这样电视就能立即有内容播放
+- 在电视上安装并启动 FreePlay。参见[入门指南](../getting-started/)
+- 准备好教会的 ChurchApps 登录账号，以便登录 FreePlay Admin
+- 可选：先[创建播放列表](./building-playlists)并[安排日程](./scheduling-the-calendar)，这样电视可以立即播放内容
 
 </div>
 
 ## 在电视上显示代码
 
-1. 在电视上，打开侧边栏底部的 **Settings**。
-2. 选择 **Pair to a calendar**。如果电视尚未配对，该行会显示 **Not paired**。
-3. **Pair this screen** 屏幕会显示一个二维码和一个四位配对代码，并附带提示信息 **Scan with your phone, or go to freeplay.church/pair and enter this code**（用手机扫描，或访问 freeplay.church/pair 并输入此代码）。
-4. 代码下方，**Waiting for confirmation**（等待确认）会在 FreePlay 等待你完成配对时持续闪烁。
+1. 在电视上，打开侧边栏底部的**设置**。
+2. 选择**配对到日历**。电视尚未配对时，该行会显示**未配对**。
+3. **配对此屏幕**界面会显示一个二维码和一个四位字母配对代码，并附有提示信息：**使用手机扫描，或访问 freeplay.church/pair 并输入此代码**。
+4. 在代码下方，**等待确认**会在 FreePlay 等待你完成配对时闪烁。
 
-代码有效期为 15 分钟，其下方的倒计时会显示剩余时间。时间到期后，FreePlay 会自动显示新代码。你也可以选择 **Generate New Code** 获取新代码，或选择 **Cancel** 返回 Settings。
+该代码有效期为 15 分钟，其下方的倒计时会显示剩余时间。时间耗尽后，FreePlay 会自动显示新的代码。你也可以选择**生成新代码**以获取一个新的代码，或选择**取消**返回设置。
 
 ## 在 FreePlay Admin 中配对
 
-1. 用手机扫描二维码，或在任何电脑或手机上访问 **freeplay.church/pair**。如果系统要求登录，请登录。FreePlay Admin 会打开 **Pair screen** 表单，并已自动填入代码。
-   - 你也可以自行打开该表单。在 FreePlay Admin 中进入 **Screens**，然后点击 **Pair screen**。
-2. 检查 **Pairing code**。它就是电视上显示的四个字母。
-3. 输入一个 **Label**，以便区分这台电视与其他电视，例如 "Lobby left"（大厅左侧）。此项为可选。
-4. 在 **Group** 下，选择这台电视应跟随其日程的屏幕组。若要新建一个组，请选择 **＋ New group…**，然后输入 **New group name**。
-5. 在 **Mode** 下，保持选中 **Scheduled**。电视会自动按照该组的日程播放。
-6. 点击 **Pair**。
+1. 用手机扫描二维码，或在任意电脑或手机上访问 **freeplay.church/pair**。如有需要请登录。FreePlay Admin 会打开**配对屏幕**表单，并已自动填入代码。
+   - 你也可以自己打开该表单。在 FreePlay Admin 中进入**屏幕**，然后点击**配对屏幕**。
+2. 核对**配对代码**。它就是电视上显示的四个字母。
+3. 输入**标签**，以便区分这台电视与其他电视，例如"大厅左侧"。此项为可选。
+4. 在**屏幕组**下，选择该电视应跟随其日历的屏幕组。如需新建，请选择 **＋ 新建组…**，然后输入**新组名称**。
+5. 在**模式**下，保持选中**定时**。电视会根据该组的日历自动播放。
+6. 点击**配对**。
 
-电视会显示 **Connected!**，随后显示 **Loading your schedule...**（正在加载你的日程）。它会下载已安排的内容并开始播放。请参阅[电视上的定时播放](./scheduled-playback)。
+电视会先显示**已连接！**，然后显示**正在加载你的日程…**。它会下载已排期的内容并开始播放。参见[电视上的定时播放](./scheduled-playback)。
 
 :::info
-如果 FreePlay Admin 显示 **That code didn't match a TV**（该代码与任何电视都不匹配），请检查屏幕上的代码。如果代码已过期，请使用电视当前显示的新代码。
+如果 FreePlay Admin 提示**该代码与任何电视都不匹配**，请核对屏幕上显示的代码。如果代码已过期，请使用电视当前显示的新代码。
 :::
 
-### 定时模式与手动模式
+### 定时与手动
 
-**Mode** 设置有两个选项：
+**模式**设置有两个选项：
 
-- **Scheduled** —— 按照该组的日程自动播放。无需有人按下 Start。
-- **Manual** —— 由人员使用遥控器选择内容。手动屏幕仍会出现在你的 **Screens** 列表中，但它不跟随日程，因此 **Group** 字段会被禁用。
+- **定时** —— 根据该组的日历自动播放，无需有人按下开始键。
+- **手动** —— 由人员使用遥控器选择内容。手动屏幕仍会出现在你的**屏幕**列表中，但它不跟随日历，因此**屏幕组**字段会被关闭。
 
-你之后可以在[屏幕页面](./managing-screens)中通过 **Edit** 更改屏幕的模式。
+你之后可以在[屏幕页面](./managing-screens)上通过**编辑**来更改屏幕的模式。
 
-## 改为配对到服务计划
+## 改为与服务计划配对
 
-**Pair this screen** 屏幕上的代码在 B1 Admin 中同样有效。如果你在那里输入该代码，并在 **Show Plans For** 下选择计划类型，电视将跟随该计划类型在[计划模式](../plan-mode/)中播放，而不是跟随日程。请参阅[配对你的设备](../plan-mode/device-pairing)。
+**配对此屏幕**界面上的代码也可以在 B1 Admin 中使用。如果你在那里输入该代码，并在**显示计划**下选择一种计划类型，电视将在[计划模式](../plan-mode/)中跟随该计划类型，而不是日历。参见[配对你的设备](../plan-mode/device-pairing)。
 
-## 在电视上更改或取消配对 {#changing-or-unpairing-from-the-tv}
+## 从电视上更改或取消配对 {#changing-or-unpairing-from-the-tv}
 
-电视配对后，**Settings** 中的 **Pair to a calendar** 行会显示它所跟随的屏幕组名称。选择该行即可打开 **Paired to** 对话框，其中有三个选项：
+电视配对之后，**设置**中的**配对到日历**行会显示其所跟随的屏幕组名称。选中该行即可打开**配对到**对话框，其中有三个选项：
 
-- **Keep** —— 关闭对话框。不做任何更改。
-- **Unpair** —— 停止跟随日程。FreePlay 会打开 **Content Providers** 屏幕。
-- **Pair to a different calendar** —— 取消配对，然后显示新的配对代码，以便重新配对电视。
+- **返回日程** —— 关闭对话框，返回定时播放器。配对设置不会发生任何变化。
+- **取消配对** —— 停止跟随日程。FreePlay 会打开**内容服务商**屏幕。
+- **配对到其他日历** —— 先取消配对，然后显示新的配对代码，以便重新配对该电视。
 
 :::warning
-取消配对会删除 FreePlay 为该日程下载的文件。
+取消配对会删除 FreePlay 为该日历下载的文件。
 :::
 
-## 在 FreePlay Admin 中取消配对
+## 从 FreePlay Admin 取消配对
 
-1. 进入 **Screens**，然后点击该屏幕的名称。
-2. 点击 **More**，然后点击 **Unpair**。
-3. 再次点击 **Unpair** 进行确认。
+1. 进入**屏幕**，然后点击该屏幕的标签。
+2. 点击**更多**，然后点击**取消配对**。
+3. 再次点击**取消配对**以确认。
 
-电视会重新显示配对代码。如果你想再次使用它，可以随时重新配对。
+电视会恢复显示配对代码。如需再次使用，请随时重新配对。
 
 ## 相关文章
 
-- **[管理屏幕和屏幕组](./managing-screens)** —— 重命名屏幕、将其移动到其他组，或查看其下载内容
-- **[安排日程](./scheduling-the-calendar)** —— 决定该组屏幕播放的内容
-- **[选择配对模式](../getting-started/pairing-modes)** —— 比较定时模式与计划模式，以及自行浏览内容提供商
+- **[管理屏幕与屏幕组](./managing-screens)** —— 重命名屏幕、将其移至其他组，或查看其下载内容
+- **[安排日历](./scheduling-the-calendar)** —— 决定屏幕组播放的内容
+- **[选择配对模式](../getting-started/pairing-modes)** —— 比较定时模式与计划模式，以及自行浏览服务商

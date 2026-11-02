@@ -21,13 +21,13 @@ A API do ChurchApps é um **monólito modular** -- uma única base de código qu
 | **Messaging** | Conversas, notificações, e-mail |
 | **Doing** | Tarefas, planos, atribuições |
 
-## Stack Tecnológica
+## Stack tecnológica
 
 - **Runtime:** Node.js 24.x com TypeScript (módulos ES)
 - **Framework:** Express
-- **Injeção de Dependências:** Inversify (roteamento baseado em decoradores)
-- **Banco de Dados:** MySQL -- um banco de dados por módulo, cada um com seu próprio pool de conexões
-- **Autenticação:** Autenticação baseada em JWT via `CustomAuthProvider`
+- **Injeção de dependências:** Inversify (roteamento baseado em decoradores)
+- **Banco de dados:** MySQL -- um banco por módulo, cada um com seu próprio pool de conexões
+- **Autenticação:** autenticação JWT via `CustomAuthProvider`
 - **Implantação:** AWS Lambda via Serverless Framework v3
 
 ## Portas
@@ -35,7 +35,7 @@ A API do ChurchApps é um **monólito modular** -- uma única base de código qu
 | Protocolo | Porta | Descrição |
 |-----------|-------|-----------|
 | HTTP | `8084` | API REST principal |
-| WebSocket | `8087` | Conexões de socket em tempo real |
+| WebSocket | `8087` | Conexões socket em tempo real |
 
 ## Funções Lambda
 
@@ -43,12 +43,12 @@ Quando implantada na AWS, a API roda como seis funções Lambda:
 
 - **`web`** -- Trata todas as requisições HTTP
 - **`socket`** -- Gerencia as conexões WebSocket
-- **`timer15Min`** -- Executa a cada 30 minutos para e-mails de notificação (o nome é histórico)
-- **`timerMidnight`** -- Executa diariamente para e-mails de resumo e tarefas de manutenção
-- **`timerScheduledTasks`** -- Executa diariamente para automações vencidas e processamento de fluxos de trabalho atrasados
-- **`timerWebhooks`** -- Executa a cada minuto para entregar webhooks de saída enfileirados
+- **`timer15Min`** -- Roda a cada 30 minutos para notificações por e-mail (o nome é histórico)
+- **`timerMidnight`** -- Roda diariamente para e-mails de resumo e tarefas de manutenção
+- **`timerScheduledTasks`** -- Roda diariamente para automações vencidas e processamento de fluxos de trabalho atrasados
+- **`timerWebhooks`** -- Roda a cada minuto para entregar webhooks de saída enfileirados
 
-## Bibliotecas Compartilhadas
+## Bibliotecas compartilhadas
 
 A API depende de dois pacotes compartilhados do ChurchApps:
 
@@ -56,16 +56,16 @@ A API depende de dois pacotes compartilhados do ChurchApps:
 - **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Utilitários do servidor Express, incluindo autenticação, auxiliares de banco de dados e integrações com a AWS
 
 :::info
-A API usa módulos ES (`"type": "module"` no `package.json`). Certifique-se de que seus imports usem a sintaxe de módulos ES.
+A API usa módulos ES (`"type": "module"` no `package.json`). Certifique-se de que suas importações usem a sintaxe de módulos ES.
 :::
 
-## Nesta Seção
+## Nesta seção
 
-- **[Configuração Local](./local-setup)** -- Clone, configure e execute a API localmente
-- **[Banco de Dados](./database)** -- Arquitetura de um banco por módulo, scripts de esquema e padrões de acesso a dados
-- **[Estrutura de Módulos](./module-structure)** -- Controllers, repositórios, modelos e autenticação
+- **[Configuração local](./local-setup)** -- Clone, configure e execute a API localmente
+- **[Banco de dados](./database)** -- Arquitetura de um banco por módulo, scripts de esquema e padrões de acesso a dados
+- **[Estrutura do módulo](./module-structure)** -- Controllers, repositórios, modelos e autenticação
 - **[Chaves de API](./api-keys)** -- Tokens de acesso pessoais para scripts e conectores
-- **[Aplicativos Conectados (OAuth)](./connected-apps)** -- Fluxo OAuth multi-tenant para aplicativos de terceiros
-- **[Webhooks](./webhooks)** -- Envio de notificações de eventos para sistemas externos
+- **[Aplicativos conectados (OAuth)](./connected-apps)** -- Fluxo OAuth multi-inquilino para aplicativos de terceiros
+- **[Webhooks](./webhooks)** -- Envia notificações de eventos para sistemas externos
 - **[Servidor MCP](./mcp)** -- Endpoint do Model Context Protocol que expõe a API para assistentes de IA
-- **[Referência de Endpoints](./endpoints/)** -- Documentação completa da API REST de todos os módulos
+- **[Referência de endpoints](./endpoints/)** -- Documentação REST completa de todos os módulos

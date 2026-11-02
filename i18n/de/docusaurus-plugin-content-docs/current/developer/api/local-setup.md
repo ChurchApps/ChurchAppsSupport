@@ -6,7 +6,7 @@ title: "Lokale API-Einrichtung"
 
 <div class="article-intro">
 
-Diese Anleitung führt Sie durch die Einrichtung der ChurchApps-API für die lokale Entwicklung. Sie klonen das Repository, konfigurieren die Datenbankverbindungen, initialisieren das Schema und starten den Entwicklungsserver mit Hot Reload.
+Diese Anleitung führt Sie durch die lokale Einrichtung der ChurchApps-API für die Entwicklung. Sie klonen das Repository, konfigurieren die Datenbankverbindungen, initialisieren das Schema und starten den Entwicklungsserver mit Hot Reload.
 
 </div>
 
@@ -14,14 +14,14 @@ Diese Anleitung führt Sie durch die Einrichtung der ChurchApps-API für die lok
 <h4>Bevor Sie beginnen</h4>
 
 - Installieren Sie **Node.js 24+**, **Git** und **MySQL 8.0+** -- siehe [Voraussetzungen](../setup/prerequisites)
-- Legen Sie einen MySQL-Benutzer mit Berechtigung zum Anlegen von Datenbanken an
-- Lesen Sie die Referenz [Umgebungsvariablen](../setup/environment-variables) zur Konfiguration der API
+- Erstellen Sie einen MySQL-Benutzer mit der Berechtigung, Datenbanken anzulegen
+- Lesen Sie die Referenz [Umgebungsvariablen](../setup/environment-variables) für die API-Konfiguration
 
 </div>
 
 ## Schritt für Schritt
 
-### 1. Das Repository klonen
+### 1. Repository klonen
 
 ```bash
 git clone https://github.com/ChurchApps/Api.git
@@ -29,7 +29,7 @@ git clone https://github.com/ChurchApps/Api.git
 
 ### 2. Abhängigkeiten installieren
 
-Das Projekt verwendet Yarn (eine Sperre blockiert `npm install`):
+Das Projekt verwendet Yarn (eine Schutzregel blockiert `npm install`):
 
 ```bash
 cd Api
@@ -50,19 +50,19 @@ mysql://root:password@localhost:3306/dbname
 
 Sie benötigen Verbindungszeichenfolgen für alle sechs Moduldatenbanken (membership, attendance, content, giving, messaging, doing).
 
-### 4. Die Datenbanken initialisieren
+### 4. Datenbanken initialisieren
 
 ```bash
 npm run initdb
 ```
 
-Dies legt alle sechs Datenbanken und ihre Tabellen automatisch an.
+Dies erstellt automatisch alle sechs Datenbanken und ihre Tabellen.
 
 :::tip
-Sie können die Datenbank eines einzelnen Moduls mit `npm run initdb -- --module=membership` initialisieren (oder `attendance`, `content`, `giving`, `messaging`, `doing`).
+Sie können die Datenbank eines einzelnen Moduls mit `npm run initdb -- --module=membership` initialisieren (oder mit `attendance`, `content`, `giving`, `messaging`, `doing`).
 :::
 
-### 5. Den Entwicklungsserver starten
+### 5. Entwicklungsserver starten
 
 ```bash
 npm run dev
@@ -76,32 +76,32 @@ Die API startet mit Hot Reload unter [http://localhost:8084](http://localhost:80
 |---------|-------------|
 | `npm run dev` | Entwicklungsserver mit Hot Reload starten (tsx watch) |
 | `npm run build` | Bereinigen, TypeScript kompilieren und Assets kopieren |
-| `npm run test` | Tests mit Jest ausführen (inkl. Abdeckung) |
+| `npm run test` | Tests mit Jest ausführen (inklusive Coverage) |
 | `npm run test:watch` | Tests im Watch-Modus ausführen |
-| `npm run lint` | ESLint mit automatischer Korrektur ausführen (ESLint ist der einzige Formatierer) |
+| `npm run lint` | ESLint mit automatischer Korrektur ausführen (ESLint ist der alleinige Formatierer) |
 
 ## Bereitstellung
 
-Die Staging-Umgebung wurde eingestellt. Die API wird bei jedem Push auf `main` in die Demo-Umgebung bereitgestellt und über den manuellen Workflow **Deploy Prod** in die Produktion, der außerdem ausstehende Datenbankmigrationen anwendet. Details finden Sie unter [API-Bereitstellung](../deployment/apis).
+Die Staging-Umgebung wurde außer Betrieb genommen. Die API wird bei jedem Push auf `main` in die Demo-Umgebung bereitgestellt und über den manuell auszulösenden Workflow **Deploy Prod** in die Produktion, der außerdem ausstehende Datenbankmigrationen anwendet. Details finden Sie unter [API-Bereitstellung](../deployment/apis).
 
 ## Lokale Bibliotheksentwicklung
 
-Müssen Sie eine gemeinsam genutzte Bibliothek (`@churchapps/helpers` oder `@churchapps/apihelper`) zusammen mit der API entwickeln, bauen Sie sie im Arbeitsbereich [Packages](https://github.com/ChurchApps/Packages) und fügen Sie in der API ein temporäres Yarn-Portal hinzu:
+Wenn Sie eine gemeinsam genutzte Bibliothek (`@churchapps/helpers` oder `@churchapps/apihelper`) zusammen mit der API entwickeln möchten, erstellen Sie sie im Arbeitsbereich [Packages](https://github.com/ChurchApps/Packages) und fügen Sie in der API ein temporäres Yarn-Portal hinzu:
 
 ```bash
-# In the Packages workspace
+# Im Packages-Arbeitsbereich
 yarn build
 
-# In the API directory
+# Im API-Verzeichnis
 yarn link ../Packages/helpers
-# ... test ...
+# ... testen ...
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-So testen Sie Änderungen an der Bibliothek gegen die API, ohne sie in npm zu veröffentlichen. Siehe [Gemeinsam genutzte Bibliotheken](../shared-libraries/#local-development-against-a-consuming-app) für Details -- und committen Sie niemals die Portal-Auflösung, die der Link in `package.json` schreibt.
+So können Sie Änderungen an der Bibliothek testen, ohne sie auf npm zu veröffentlichen. Weitere Informationen finden Sie unter [Gemeinsam genutzte Bibliotheken](../shared-libraries/#local-development-against-a-consuming-app) -- und committen Sie niemals die Portal-Auflösung, die der Link in `package.json` schreibt.
 
 ## Verwandte Artikel
 
 - **[Datenbank](./database)** -- Die Architektur mit einer Datenbank pro Modul verstehen
 - **[Modulstruktur](./module-structure)** -- Wie Controller, Repositories und Modelle organisiert sind
-- **[Gemeinsam genutzte Bibliotheken](../shared-libraries/)** -- Mit `@churchapps/helpers` und `@churchapps/apihelper` arbeiten
+- **[Gemeinsam genutzte Bibliotheken](../shared-libraries/)** -- Arbeiten mit `@churchapps/helpers` und `@churchapps/apihelper`

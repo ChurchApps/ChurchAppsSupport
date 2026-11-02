@@ -47,7 +47,7 @@ This only checks for duplicates when you're creating a brand-new person — edit
 ## Editing Details
 
 1. On the person's profile page, click the **Edit** button below their contact details on the left.
-2. In the **Personal Details** form, fill in additional information such as middle name, membership status (**Visitor**, **Guest**, **Regular Attendee**, **Member**, **Staff**, **Inactive**, or **Deceased**), dates, address, phone numbers, and (for children and students) grade and school.
+2. In the **Personal Details** form, fill in additional information such as a **Title** (pick Mr, Mrs, Miss, Ms, Dr, Prof, Rev, or Pastor from the list, or type your own, up to 10 characters), middle name, membership status (**Visitor**, **Guest**, **Regular Attendee**, **Member**, **Staff**, **Inactive**, or **Deceased**), dates, address, phone numbers, and (for children and students) grade and school.
 3. Click **Save** to store the personal information.
 
 The left side of the profile shows the person's photo, name, membership status, contact details, any [custom field](../settings/custom-fields.md) values, and their household. Below the household, **Added** shows the date the record was created (only for people added since late October 2026). Click the photo to change it. Below the **Edit** button are a few more actions: **Workflow** (add the person to a [workflow](../serving/workflows.md)), **Merge**, **Export**, and **Export Data**.

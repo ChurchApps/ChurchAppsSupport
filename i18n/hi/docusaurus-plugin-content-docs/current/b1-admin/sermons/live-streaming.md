@@ -1,133 +1,133 @@
 ---
-title: "Live Streaming"
+title: "लाइव स्ट्रीमिंग"
 ---
 
-# Live Streaming
+# लाइव स्ट्रीमिंग
 
 <div class="article-intro">
 
-Live Stream Times page आपको अपनी चर्च की streaming schedule को configure करने, service times को manage करने, और viewer experience को customize करने देता है। Recurring weekly services या one-time events को setup करें, chat और video settings को configure करें, और control करें कि आपकी stream कब live जाती है।
+Live Stream Times पृष्ठ आपको अपने चर्च का स्ट्रीमिंग शेड्यूल कॉन्फ़िगर करने, सेवा समय प्रबंधित करने, और दर्शकों के अनुभव को अनुकूलित करने देता है। आवर्ती साप्ताहिक सेवाएँ या एकबारगी कार्यक्रम सेट करें, चैट और वीडियो सेटिंग्स कॉन्फ़िगर करें, और नियंत्रित करें कि आपकी स्ट्रीम कब लाइव हो।
 
 </div>
 
 <div class="prereqs">
-<h4>शुरुआत करने से पहले</h4>
+<h4>शुरू करने से पहले</h4>
 
-- आपको **contentApi.streamingServices.edit** अनुमति की आवश्यकता है। यदि आपको access नहीं है तो [Roles & Permissions](../settings/roles-permissions.md) देखें।
-- यदि आप automated live streaming का उपयोग करने की plan बना रहे हैं तो अपनी YouTube Channel ID तैयार रखें
-- Stream source के रूप में उपयोग करने के लिए कम से कम एक [sermon](managing-sermons) या permanent live URL add करें
+- आपको **contentApi.streamingServices.edit** अनुमति चाहिए। यदि आपके पास पहुँच नहीं है, तो [Roles & Permissions](../settings/roles-permissions.md) देखें।
+- यदि आप स्वचालित लाइव स्ट्रीमिंग का उपयोग करने की योजना बना रहे हैं, तो अपना YouTube Channel ID तैयार रखें
+- अपने स्ट्रीम स्रोत के रूप में उपयोग करने के लिए कम से कम एक [उपदेश](managing-sermons) या स्थायी लाइव URL जोड़ें
 
 </div>
 
-Live streaming को Jump menu में **Sermons** के दो pages से manage किया जाता है: आपकी live stream schedule को manage करने के लिए **Live Stream Times** और आपके streaming page पर tabs को configure करने के लिए **Settings**।
+लाइव स्ट्रीमिंग का प्रबंधन Jump menu के **Sermons** अनुभाग के दो पृष्ठों से होता है: अपने लाइव स्ट्रीम शेड्यूल के प्रबंधन के लिए **Live Stream Times**, और अपने स्ट्रीमिंग पृष्ठ के टैब कॉन्फ़िगर करने के लिए **Settings**।
 
-## Services को Manage करना
+## सेवाएँ प्रबंधित करना
 
-### एक Service जोड़ना
+### सेवा जोड़ना
 
-1. B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (ऊपरी-बाएं में खोज बार), **Sermons** को expand करें, और **Live Stream Times** पर क्लिक करें।
-2. एक नई scheduled service बनाने के लिए page के शीर्ष पर **Add Service** बटन पर क्लिक करें। मौजूदा services एक table में दिखाई जाती हैं जिसमें हर service का name, time, provider, और duration होता है; किसी service को बदलने के लिए उसकी row पर edit icon पर क्लिक करें।
-3. एक **Service Name** enter करें (उदाहरण के लिए, "Sunday Morning")।
-4. **Service Time** सेट करें -- अपनी service शुरू होने का दिन और समय चुनें।
-5. **Recurs Weekly** को **Yes** पर set करें regular weekly services के लिए, या **No** एक one-time event के लिए।
+1. B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ऊपर-बाईं ओर खोज बार) खोलें, **Sermons** का विस्तार करें, और **Live Stream Times** पर क्लिक करें।
+2. एक नई निर्धारित सेवा बनाने के लिए पृष्ठ के शीर्ष पर **Add Service** बटन पर क्लिक करें। मौजूदा सेवाएँ एक तालिका में सूचीबद्ध होती हैं, जिसमें हर सेवा का नाम, समय, प्रदाता और अवधि दिखती है; उसे बदलने के लिए किसी पंक्ति पर संपादन आइकन पर क्लिक करें।
+3. **Service Name** दर्ज करें (उदाहरण के लिए, "Sunday Morning")।
+4. **Service Time** सेट करें -- वह दिन और समय चुनें जब आपकी सेवा शुरू होती है।
+5. नियमित साप्ताहिक सेवाओं के लिए **Recurs Weekly** को **Yes** पर, या एकबारगी कार्यक्रम के लिए **No** पर सेट करें।
 
-### Chat और Video Settings को Configure करना
+### चैट और वीडियो सेटिंग्स कॉन्फ़िगर करना
 
-6. **Chat Settings** के तहत, set करें कि service से पहले और बाद में कितने minutes chat को enable किया जाना चाहिए। यह visitors को service शुरू होने से पहले chat करना शुरू करने और बाद में जारी रखने देता है।
-7. **Video Settings** के तहत, countdown या pre-service content के लिए video stream को कितनी जल्दी शुरू करना है यह set करें।
-8. Dropdown से कौन सा sermon play करना है यह चुनें:
-   - **Latest Sermon** -- स्वचालित रूप से आपके most recently added video को play करता है।
-   - **Current Live Service** -- आपके Channel ID का उपयोग करके YouTube से अपनी current live stream को play करता है।
-   - आप कोई भी specific sermon चुन सकते हैं जिसे आपने already save किया है।
-9. अपनी service को schedule करने के लिए **Save** पर क्लिक करें।
+6. **Chat Settings** के अंतर्गत सेट करें कि सेवा से कितने मिनट पहले और बाद चैट चालू होनी चाहिए। इससे आगंतुक सेवा शुरू होने से पहले बातचीत शुरू कर सकते हैं और बाद में भी जारी रख सकते हैं।
+7. **Video Settings** के अंतर्गत सेट करें कि काउंटडाउन या सेवा-पूर्व सामग्री के लिए वीडियो स्ट्रीम कितनी पहले शुरू हो। चैट उतने मिनट *पहले* खुलती है जितना जल्दी वीडियो शुरू होता है, इसलिए चैट की "minutes-before" सेटिंग के आगे दिखाया गया समय दोनों संख्याएँ गिनता है। उदाहरण के लिए, 10:00 की सेवा जिसमें 15 मिनट पहले चैट और 5 मिनट की जल्दी शुरुआत है, 9:40 पर चैट खोलती है।
+8. ड्रॉपडाउन से चुनें कि कौन सा उपदेश चलाना है:
+   - **Latest Sermon** -- आपका सबसे हाल ही में जोड़ा गया वीडियो अपने आप चलता है।
+   - **Current Live Service** -- आपके Channel ID का उपयोग करके YouTube से आपकी वर्तमान लाइव स्ट्रीम चलाता है।
+   - आप पहले से सहेजा गया कोई भी विशिष्ट उपदेश भी चुन सकते हैं।
+9. अपनी सेवा शेड्यूल करने के लिए **Save** पर क्लिक करें।
 
 :::info
-आपकी service automatically हर week update होगी यदि recurring पर set हो। आप जितनी services चाहें add कर सकते हैं। Visitors को अपने streaming page पर next scheduled service time दिखाई देगा।
+यदि सेवा आवर्ती पर सेट है, तो वह हर सप्ताह अपने आप अपडेट होती है। दिन के उजाले की बचत समय (daylight saving time) शुरू या समाप्त होने पर वह उसी स्थानीय समय पर रहती है। आपको जितनी चाहें उतनी सेवाएँ जोड़ सकते हैं। आपके स्ट्रीमिंग पृष्ठ पर जाने पर आगंतुकों को अगला निर्धारित सेवा समय दिखेगा।
 :::
 
-## Streaming Page Settings
+## स्ट्रीमिंग पृष्ठ सेटिंग्स
 
-अपने live stream के साथ दिखने वाले tabs और links को customize करने के लिए Jump menu खोलें, **Sermons** को expand करें, और **Settings** पर क्लिक करें। **Stream Settings** page पर आपकी **Content Tabs** सूची दिखाई देती है।
+अपनी लाइव स्ट्रीम के साथ दिखने वाले टैब और लिंक अनुकूलित करने के लिए, Jump menu खोलें, **Sermons** का विस्तार करें, और **Settings** पर क्लिक करें। **Stream Settings** पृष्ठ आपकी **Content Tabs** सूची दिखाता है।
 
-### Tabs जोड़ना
+### टैब जोड़ना
 
-1. अपने live stream page में एक नया tab जोड़ने के लिए **Add** बटन पर क्लिक करें।
-2. एक **Link Type** चुनें: कस्टम link के लिए **External URL**, या पूर्व-डिज़ाइन किए गए **Chat** या **Prayer** tabs में से एक।
-3. Chat tab के लिए, बस **Tab Text** box में इसे एक नाम दें और setup complete है।
-4. एक linked tab के लिए, tab का नाम enter करें, icon button पर क्लिक करके एक icon चुनें, और URL enter करें।
-5. आपके configured tabs आपके live streaming page पर viewers के लिए additional resources और interactive features को access करने के लिए दिखाई देंगे।
+1. अपने लाइव स्ट्रीम पृष्ठ पर एक नया टैब जोड़ने के लिए **Add** बटन पर क्लिक करें।
+2. **Link Type** चुनें: कस्टम लिंक के लिए **External URL**, या पूर्व-डिज़ाइन किए गए **Chat** या **Prayer** टैबों में से एक।
+3. Chat टैब के लिए, बस **Tab Text** बॉक्स में उसका नाम दें और सेटअप पूरा हो जाता है।
+4. लिंक वाले टैब के लिए, टैब का नाम दर्ज करें, आइकन बटन पर क्लिक करके एक आइकन चुनें, और URL दर्ज करें।
+5. आपके कॉन्फ़िगर किए गए टैब दर्शकों के लिए लाइव स्ट्रीमिंग पृष्ठ पर दिखेंगे, ताकि वे अतिरिक्त संसाधन और इंटरैक्टिव सुविधाएँ एक्सेस कर सकें।
 
-### अपनी Stream को Preview करना
+### अपनी स्ट्रीम का पूर्वावलोकन
 
-**Live Stream Times** page पर, शीर्ष पर **View Your Stream** बटन पर क्लिक करें ताकि आप देख सकें कि आपका live streaming page visitors को कैसा दिखेगा, जिसमें आपका logo, service times, और configured tabs शामिल हैं।
+**Live Stream Times** पृष्ठ पर, पृष्ठ के शीर्ष पर **View Your Stream** पर क्लिक करें ताकि देख सकें कि आपका लाइव स्ट्रीमिंग पृष्ठ आगंतुकों को कैसा दिखेगा, जिसमें आपका लोगो, सेवा समय और कॉन्फ़िगर किए गए टैब शामिल हैं।
 
-## अपनी YouTube Live Stream को Setup करना
+## अपनी YouTube लाइव स्ट्रीम सेट करना
 
-Automatic live streaming के लिए अपने YouTube channel को connect करने के लिए:
+स्वचालित लाइव स्ट्रीमिंग के लिए अपना YouTube चैनल जोड़ने हेतु:
 
-1. **Sermons** पर जाएं और **Add Sermon** पर क्लिक करें, फिर **Add Permanent Live URL** को चुनें।
-2. Video provider **Current YouTube Live Stream** पर default करता है। अपनी **YouTube Channel ID** enter करें।
-3. एक title और description add करें, फिर **Save** पर क्लिक करें।
-4. **Live Stream Times** में, एक service create करें और sermon dropdown से अपनी permanent live URL को चुनें।
+1. **Sermons** पर जाएँ और **Add Sermon** पर क्लिक करें, फिर **Add Permanent Live URL** चुनें।
+2. वीडियो प्रदाता डिफ़ॉल्ट रूप से **Current YouTube Live Stream** होता है। अपना **YouTube Channel ID** दर्ज करें।
+3. एक शीर्षक और विवरण जोड़ें, फिर **Save** पर क्लिक करें।
+4. **Live Stream Times** में, एक सेवा बनाएँ और उसके उपदेश ड्रॉपडाउन से अपना स्थायी लाइव URL चुनें।
 
 :::tip
-अपनी YouTube Channel ID को खोजने के लिए, अपने YouTube channel के advanced settings पर जाएं और Channel ID value को copy करें।
+अपना YouTube Channel ID खोजने के लिए, अपने YouTube चैनल की उन्नत सेटिंग्स पर जाएँ और Channel ID मान कॉपी करें।
 :::
 
-## Colors और Logo को Customize करना
+## रंग और लोगो अनुकूलित करना
 
-आपका live stream page आपकी website के [Appearance](../website/appearance) settings का उपयोग करता है:
+आपका लाइव स्ट्रीम पृष्ठ आपकी वेबसाइट की [Appearance](../website/appearance) सेटिंग्स का उपयोग करता है:
 
-- **Light accent color** dark text के साथ header के लिए उपयोग किया जाता है।
-- **Dark accent color** light text के साथ sidebar के लिए उपयोग किया जाता है।
-- आपका **Light Background Logo** streaming page पर दिखाई देता है। एक transparent background वाली image का उपयोग करें और 4:1 aspect ratio रखें।
+- **हल्के एक्सेंट रंग** के साथ गहरा टेक्स्ट हेडर के लिए उपयोग होता है।
+- **गहरे एक्सेंट रंग** के साथ हल्का टेक्स्ट साइडबार के लिए उपयोग होता है।
+- आपका **Light Background Logo** स्ट्रीमिंग पृष्ठ पर दिखता है। पारदर्शी पृष्ठभूमि और 4:1 आस्पेक्ट अनुपात वाली इमेज का उपयोग करें।
 
-इन्हें change करने के लिए, **Website** पर जाएं फिर **Appearance** पर जाएं और अपने [Color Palette](../website/appearance#color-palette) और [Logo](../website/appearance#logo-and-branding) settings को update करें।
+इन्हें बदलने के लिए, **Website** फिर **Appearance** पर जाएँ और अपनी [Color Palette](../website/appearance#color-palette) और [Logo](../website/appearance#logo-and-branding) सेटिंग्स अपडेट करें।
 
-## Streaming Hosts जोड़ना
+## स्ट्रीमिंग होस्ट जोड़ना
 
-Team members को host-only chat के साथ public chat के साथ access देने के लिए:
+टीम के सदस्यों को सार्वजनिक चैट के साथ होस्ट-केवल चैट की पहुँच देने के लिए:
 
 1. Jump menu में, **Settings > Roles** चुनें।
-2. Plus button पर क्लिक करें और **Add Custom Role** को चुनें।
-3. Role को "Streaming Host" name दें और **Save** पर क्लिक करें।
-4. नई role पर क्लिक करें, फिर Members section में add करने के लिए **Add** पर क्लिक करें।
-5. **Edit Permissions** तक scroll down करें, **Content** section को expand करें, और **Host Chat** को check करें।
+2. प्लस बटन पर क्लिक करें और **Add Custom Role** चुनें।
+3. भूमिका का नाम "Streaming Host" रखें और **Save** पर क्लिक करें।
+4. नई भूमिका पर क्लिक करें, फिर लोगों को जोड़ने के लिए Members अनुभाग में **Add** पर क्लिक करें।
+5. **Edit Permissions** तक नीचे स्क्रॉल करें, **Content** अनुभाग का विस्तार करें, और **Host Chat** चेक करें।
 
-जब hosts live stream page में login करते हैं, तो public chat के साथ broadcast के दौरान staff-only conversation के लिए एक private **Host Chat** tab दिखाई देता है।
+जब होस्ट लाइव स्ट्रीम पृष्ठ पर लॉग इन करते हैं, तो प्रसारण के दौरान केवल स्टाफ़ की बातचीत के लिए सार्वजनिक चैट के साथ एक निजी **Host Chat** टैब दिखता है।
 
 :::info
-Roles बनाने और permissions को manage करने पर अधिक details के लिए, [Roles & Permissions](../settings/roles-permissions.md) देखें।
+भूमिकाएँ बनाने और अनुमतियाँ प्रबंधित करने के अधिक विवरण के लिए, [Roles & Permissions](../settings/roles-permissions.md) देखें।
 :::
 
-## Troubleshooting
+## समस्या निवारण
 
-यदि आपकी automated YouTube live stream "Current YouTube Live Stream" option का उपयोग करते हुए अपनी Channel ID के साथ correctly display नहीं हो रही है, तो निम्न को try करें:
+यदि "Current YouTube Live Stream" विकल्प के साथ अपने Channel ID का उपयोग करते समय आपकी स्वचालित YouTube लाइव स्ट्रीम सही तरीके से नहीं दिख रही है, तो ये प्रयास करें:
 
-**Symptoms:**
-- Live stream embed "Video unavailable" दिखाता है
-- Page load होता है लेकिन कोई video दिखाई नहीं देता
-- Direct YouTube embeds काम करते हैं, लेकिन automated channel live stream नहीं
+**लक्षण:**
+- लाइव स्ट्रीम एम्बेड "Video unavailable" दिखाता है
+- पृष्ठ लोड होता है लेकिन कोई वीडियो नहीं दिखता
+- सीधे YouTube एम्बेड काम करते हैं, लेकिन स्वचालित चैनल लाइव स्ट्रीम काम नहीं करती
 
-**Solution:**
-पुरानी या upcoming scheduled live streams के लिए अपने YouTube channel को check करें और उन्हें delete करें:
+**समाधान:**
+अपने YouTube चैनल में पुरानी या आगामी निर्धारित लाइव स्ट्रीम जाँचें और उन्हें हटाएँ:
 
-1. अपने YouTube Studio पर जाएं।
-2. **Content** फिर **Live** पर navigate करें।
-3. कोई old scheduled lives या upcoming scheduled streams को look करें।
-4. इन पुरानी या scheduled live stream entries को delete करें।
-5. अपने live stream page को फिर से test करें।
+1. अपना YouTube Studio खोलें।
+2. **Content** फिर **Live** पर जाएँ।
+3. कोई भी पुरानी निर्धारित लाइव या आगामी निर्धारित स्ट्रीम खोजें।
+4. इन पुरानी या निर्धारित लाइव स्ट्रीम प्रविष्टियों को हटाएँ।
+5. अपना लाइव स्ट्रीम पृष्ठ फिर से परखें।
 
 :::warning
-YouTube का automated channel live stream embed multiple scheduled या past live stream entries होने पर आपके channel में block किया जा सकता है। इन्हें remove करने से YouTube को अपनी current live stream को properly identify और serve करने की अनुमति मिलती है।
+जब आपके चैनल में कई निर्धारित या पिछली लाइव स्ट्रीम प्रविष्टियाँ हों, तो YouTube की स्वचालित चैनल लाइव स्ट्रीम एम्बेड अवरुद्ध हो सकती है। इन्हें हटाने से YouTube आपकी वर्तमान लाइव स्ट्रीम को सही ढंग से पहचान और दिखा सकता है।
 :::
 
-**अतिरिक्त requirements:**
-- आपकी live stream को **Public** (Unlisted या Private नहीं) पर set किया जाना चाहिए।
-- Embedding को आपकी YouTube stream settings में allow किया जाना चाहिए।
-- सुनिश्चित करें कि आप **Current YouTube Live Stream** provider (Channel ID के साथ) का उपयोग कर रहे हैं, न कि **YouTube** provider (Video ID के साथ)।
+**अतिरिक्त आवश्यकताएँ:**
+- आपकी लाइव स्ट्रीम **Public** पर सेट होनी चाहिए (Unlisted या Private नहीं)।
+- आपकी YouTube स्ट्रीम सेटिंग्स में एम्बेडिंग की अनुमति होनी चाहिए।
+- सुनिश्चित करें कि आप **Current YouTube Live Stream** प्रदाता (Channel ID के साथ) का उपयोग कर रहे हैं, न कि **YouTube** प्रदाता (Video ID के साथ)।
 
-## अगले कदम
+## अगले चरण
 
-- [Managing Sermons](managing-sermons) -- अपनी library में sermons add करें
-- [Playlists](playlists) -- Sermons को series में organize करें
+- [Managing Sermons](managing-sermons) -- अपनी लाइब्रेरी में उपदेश जोड़ें
+- [Playlists](playlists) -- उपदेशों को श्रृंखलाओं में व्यवस्थित करें

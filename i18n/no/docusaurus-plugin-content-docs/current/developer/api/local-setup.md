@@ -6,16 +6,16 @@ title: "Lokalt oppsett av API"
 
 <div class="article-intro">
 
-Denne veiledningen går gjennom oppsett av ChurchApps-API-et for lokal utvikling. Du klonar repositoriet, konfigurerer databaseforbindelsene, initialiserer skjemaet og starter utviklingsserveren med hot reload.
+Denne veiledningen går gjennom hvordan du setter opp ChurchApps API for lokal utvikling. Du kloner repositoriet, konfigurerer databasetilkoblingene, initialiserer skjemaet og starter utviklingsserveren med hot reload.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Installer **Node.js 24+**, **Git** og **MySQL 8.0+** — se [Forutsetninger](../setup/prerequisites)
-- Opprett en MySQL-bruker med rettigheter til å opprette databaser
-- Gå gjennom referansen [Miljøvariabler](../setup/environment-variables) for API-konfigurasjon
+- Installer **Node.js 24+**, **Git** og **MySQL 8.0+** -- se [Forutsetninger](../setup/prerequisites)
+- Opprett en MySQL-bruker med tillatelse til å opprette databaser
+- Gå gjennom referansen for [miljøvariabler](../setup/environment-variables) for konfigurasjon av API-et
 
 </div>
 
@@ -74,34 +74,34 @@ API-et starter med hot reload på [http://localhost:8084](http://localhost:8084)
 
 | Kommando | Beskrivelse |
 |---------|-------------|
-| `npm run dev` | Start utviklingsserver med hot reload (tsx watch) |
+| `npm run dev` | Start utviklingsserveren med hot reload (tsx watch) |
 | `npm run build` | Rydd, kompiler TypeScript og kopier ressurser |
-| `npm run test` | Kjør tester med Jest (inkluderer dekning) |
+| `npm run test` | Kjør tester med Jest (inkluderer dekningsrapport) |
 | `npm run test:watch` | Kjør tester i watch-modus |
-| `npm run lint` | Kjør ESLint med automatisk retting (ESLint er den eneste formatereren) |
+| `npm run lint` | Kjør ESLint med automatisk retting (ESLint er den eneste formateringsverktøyet) |
 
 ## Utrulling
 
-Staging-miljøet er faset ut. API-et rulles ut til demomiljøet ved hver push til `main`, og til produksjon gjennom den manuelle arbeidsflyten **Deploy Prod**, som også bruker ventende databasemigreringer. Se [API-utrulling](../deployment/apis) for detaljer.
+Staging-miljøet er avviklet. API-et rulles ut til demomiljøet ved hver push til `main`, og til produksjon gjennom den manuelle arbeidsflyten **Deploy Prod**, som også kjører ventende databasemigreringer. Se [API-utrulling](../deployment/apis) for detaljer.
 
 ## Lokal bibliotekutvikling
 
-Hvis du trenger å utvikle et delt bibliotek (`@churchapps/helpers` eller `@churchapps/apihelper`) sammen med API-et, bygg det i [Packages](https://github.com/ChurchApps/Packages)-arbeidsområdet og legg til en midlertidig Yarn-portal i API-et:
+Hvis du trenger å utvikle et delt bibliotek (`@churchapps/helpers` eller `@churchapps/apihelper`) sammen med API-et, bygg det i [Packages](https://github.com/ChurchApps/Packages)-arbeidsområdet og legg til et midlertidig Yarn-portal i API-et:
 
 ```bash
-# In the Packages workspace
+# I Packages-arbeidsområdet
 yarn build
 
-# In the API directory
+# I API-katalogen
 yarn link ../Packages/helpers
 # ... test ...
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Dette lar deg teste endringer i biblioteket mot API-et uten å publisere til npm. Se [Delte biblioteker](../shared-libraries/#local-development-against-a-consuming-app) for detaljer — og committ aldri portal-oppløsningen som lenken skriver til `package.json`.
+Dette lar deg teste endringer i biblioteket mot API-et uten å publisere til npm. Se [Delte biblioteker](../shared-libraries/#local-development-against-a-consuming-app) for detaljer -- og commit aldri portal-oppløsningen som lenken skriver til `package.json`.
 
 ## Relaterte artikler
 
-- **[Database](./database)** — forstå arkitekturen med database per modul
-- **[Modulstruktur](./module-structure)** — hvordan kontrollere, repositorier og modeller er organisert
-- **[Delte biblioteker](../shared-libraries/)** — arbeid med `@churchapps/helpers` og `@churchapps/apihelper`
+- **[Database](./database)** -- Forstå arkitekturen med én database per modul
+- **[Modulstruktur](./module-structure)** -- Hvordan kontrollere, repositorier og modeller er organisert
+- **[Delte biblioteker](../shared-libraries/)** -- Arbeid med `@churchapps/helpers` og `@churchapps/apihelper`

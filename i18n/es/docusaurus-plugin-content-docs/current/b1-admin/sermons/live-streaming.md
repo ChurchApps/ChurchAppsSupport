@@ -1,133 +1,133 @@
 ---
-title: "Transmisión en Vivo"
+title: "Transmisión en vivo"
 ---
 
-# Transmisión en Vivo
+# Transmisión en vivo
 
 <div class="article-intro">
 
-La página Live Stream Times te permite configurar el cronograma de transmisión de tu iglesia, gestionar horarios de servicio y personalizar la experiencia del espectador. Configura servicios semanales recurrentes o eventos únicos, personaliza la configuración de chat y video, y controla cuándo se transmite tu flujo en vivo.
+La página de Horarios de transmisión en vivo le permite configurar el calendario de transmisiones de su iglesia, administrar los horarios de servicio y personalizar la experiencia de los espectadores. Configure servicios semanales recurrentes o eventos únicos, ajuste la configuración del chat y del video, y controle cuándo se activa la transmisión.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Necesitas el permiso **contentApi.streamingServices.edit**. Consulta [Roles y Permisos](../settings/roles-permissions.md) si no tienes acceso.
-- Ten tu ID de canal de YouTube listo si planeas usar transmisión en vivo automatizada
-- Agrega al menos un [sermón](managing-sermons) o URL en vivo permanente para usar como tu fuente de transmisión
+- Necesita el permiso **contentApi.streamingServices.edit**. Consulte [Roles y permisos](../settings/roles-permissions.md) si no tiene acceso.
+- Tenga a mano el ID de su canal de YouTube si planea usar la transmisión en vivo automatizada
+- Agregue al menos un [sermón](managing-sermons) o una URL de transmisión en vivo permanente para usarla como fuente de su transmisión
 
 </div>
 
-La transmisión en vivo se gestiona desde dos páginas en la sección **Sermons** del Menú Jump: **Live Stream Times** para gestionar tu cronograma de transmisión en vivo y **Settings** para configurar las pestañas de tu página de transmisión.
+La transmisión en vivo se administra desde dos páginas de la sección **Sermones** del menú Jump: **Horarios de transmisión en vivo**, para administrar su calendario de transmisiones, y **Configuración**, para configurar las pestañas de su página de transmisión.
 
-## Gestión de Servicios
+## Administrar servicios
 
-### Agregar un Servicio
+### Agregar un servicio
 
-1. En B1 Admin, abre el [Menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expande **Sermons** y haz clic en **Live Stream Times**.
-2. Haz clic en el botón **Add Service** en la parte superior de la página para crear un nuevo servicio programado. Los servicios existentes aparecen en una tabla que muestra el nombre, la hora, el proveedor y la duración de cada servicio; haz clic en el icono de editar de una fila para cambiarlo.
-3. Ingresa un **Service Name** (por ejemplo, "Sunday Morning").
-4. Establece la **Service Time** -- elige el día y la hora en que comienza tu servicio.
-5. Establece **Recurs Weekly** en **Yes** para servicios semanales regulares, o **No** para un evento único.
+1. En B1 Admin, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expanda **Sermones** y haga clic en **Horarios de transmisión en vivo**.
+2. Haga clic en el botón **Agregar servicio** en la parte superior de la página para crear un nuevo servicio programado. Los servicios existentes aparecen en una tabla que muestra el nombre, la hora, el proveedor y la duración de cada servicio; haga clic en el ícono de editar de una fila para cambiarla.
+3. Escriba un **Nombre del servicio** (por ejemplo, "Domingo por la mañana").
+4. Establezca la **Hora del servicio**: elija el día y la hora en que comienza su servicio.
+5. Establezca **Se repite semanalmente** en **Sí** para servicios semanales regulares, o en **No** para un evento único.
 
-### Configuración de Chat y Configuración de Video
+### Configurar el chat y el video
 
-6. Bajo **Chat Settings**, establece cuántos minutos antes y después del servicio el chat debe estar habilitado. Esto permite que los visitantes comiencen a charlar antes de que comience el servicio y continúen después.
-7. Bajo **Video Settings**, establece cuán temprano comenzar la transmisión de video para la cuenta regresiva o contenido previo al servicio.
-8. Selecciona qué sermón reproducir del desplegable:
-   - **Latest Sermon** -- Reproduce automáticamente tu video agregado más recientemente.
-   - **Current Live Service** -- Reproduce tu transmisión en vivo actual de YouTube usando tu ID de canal.
-   - También puedes elegir cualquier sermón específico que ya hayas guardado.
-9. Haz clic en **Save** para programar tu servicio.
+6. En **Configuración del chat**, establezca cuántos minutos antes y después del servicio debe habilitarse el chat. Esto permite que los visitantes empiecen a chatear antes de que comience el servicio y sigan después.
+7. En **Configuración de video**, establezca con cuánta anticipación iniciar la transmisión de video para contenido de cuenta regresiva o previo al servicio. El chat se abre esos minutos *antes* del inicio anticipado del video, así que la hora mostrada junto a la configuración de minutos antes del chat suma ambos números. Por ejemplo, un servicio a las 10:00 con 15 minutos de chat antes y un inicio anticipado de 5 minutos abre el chat a las 9:40.
+8. Seleccione qué sermón reproducir desde el menú desplegable:
+   - **Último sermón**: reproduce automáticamente el video agregado más recientemente.
+   - **Servicio en vivo actual**: reproduce su transmisión en vivo actual desde YouTube usando su ID de canal.
+   - También puede elegir cualquier sermón específico que ya haya guardado.
+9. Haga clic en **Guardar** para programar su servicio.
 
 :::info
-Tu servicio se actualizará automáticamente cada semana si se establece como recurrente. Puedes agregar tantos servicios como necesites. Los visitantes verán la próxima hora de servicio programado cuando visiten tu página de transmisión.
+Su servicio se actualizará automáticamente cada semana si está configurado como recurrente. Mantiene la misma hora local cuando inicia o termina el horario de verano. Puede agregar todos los servicios que necesite. Los visitantes verán la próxima hora de servicio programada cuando visiten su página de transmisión.
 :::
 
-## Configuración de Página de Transmisión
+## Configuración de la página de transmisión
 
-Para personalizar las pestañas y los enlaces que aparecen junto a tu transmisión en vivo, abre el Menú Jump, expande **Sermons** y haz clic en **Settings**. La página **Stream Settings** muestra tu lista de **Content Tabs**.
+Para personalizar las pestañas y los enlaces que aparecen junto a su transmisión en vivo, abra el menú Jump, expanda **Sermones** y haga clic en **Configuración**. La página **Configuración de transmisión** muestra su lista de **Pestañas de contenido**.
 
-### Agregar Pestañas
+### Agregar pestañas
 
-1. Haz clic en el botón **Add** para agregar una nueva pestaña a tu página de transmisión en vivo.
-2. Elige un **Link Type**: **External URL** para un enlace personalizado, o una de las pestañas prediseñadas **Chat** o **Prayer**.
-3. Para la pestaña Chat, solo dale un nombre en la caja **Tab Text** y la configuración está completa.
-4. Para una pestaña vinculada, ingresa el nombre de la pestaña, elige un icono haciendo clic en el botón de icono, e ingresa la URL.
-5. Tus pestañas configuradas aparecerán en la página de transmisión en vivo para que los espectadores accedan a recursos adicionales y características interactivas.
+1. Haga clic en el botón **Agregar** para agregar una nueva pestaña a su página de transmisión en vivo.
+2. Elija un **Tipo de enlace**: **URL externa** para un enlace personalizado, o una de las pestañas predefinidas de **Chat** u **Oración**.
+3. Para la pestaña de Chat, solo escriba un nombre en el cuadro **Texto de la pestaña** y la configuración estará completa.
+4. Para una pestaña con enlace, escriba el nombre de la pestaña, elija un ícono haciendo clic en el botón de ícono e ingrese la URL.
+5. Las pestañas configuradas aparecerán en la página de transmisión en vivo para que los espectadores accedan a recursos adicionales y funciones interactivas.
 
-### Visualización Previa de Tu Transmisión
+### Vista previa de su transmisión
 
-En la página **Live Stream Times**, haz clic en el botón **View Your Stream** en la parte superior de la página para ver exactamente cómo se verá tu página de transmisión en vivo para los visitantes, incluyendo tu logo, horarios de servicio y pestañas configuradas.
+En la página **Horarios de transmisión en vivo**, haga clic en **Ver su transmisión** en la parte superior de la página para ver exactamente cómo se verá su página de transmisión en vivo para los visitantes, incluidos su logotipo, los horarios de servicio y las pestañas configuradas.
 
-## Configurar Tu Transmisión en Vivo de YouTube
+## Configurar su transmisión en vivo de YouTube
 
-Para conectar tu canal de YouTube para transmisión en vivo automatizada:
+Para conectar su canal de YouTube y transmitir en vivo automáticamente:
 
-1. Ve a **Sermons** y haz clic en **Add Sermon**, luego selecciona **Add Permanent Live URL**.
-2. El proveedor de video por defecto es **Current YouTube Live Stream**. Ingresa tu **YouTube Channel ID**.
-3. Agrega un título y descripción, luego haz clic en **Save**.
-4. En **Live Stream Times**, crea un servicio y selecciona tu URL en vivo permanente del desplegable de sermones.
+1. Vaya a **Sermones**, haga clic en **Agregar sermón** y luego seleccione **Agregar URL de transmisión en vivo permanente**.
+2. El proveedor de video predeterminado es **Transmisión en vivo actual de YouTube**. Escriba su **ID del canal de YouTube**.
+3. Agregue un título y una descripción, y luego haga clic en **Guardar**.
+4. En **Horarios de transmisión en vivo**, cree un servicio y seleccione su URL de transmisión en vivo permanente en el menú desplegable de sermones.
 
 :::tip
-Para encontrar tu ID de canal de YouTube, ve a la configuración avanzada de tu canal de YouTube y copia el valor de Channel ID.
+Para encontrar el ID de su canal de YouTube, vaya a la configuración avanzada de su canal de YouTube y copie el valor del ID del canal.
 :::
 
-## Personalizar Colores y Logo
+## Personalizar colores y logotipo
 
-Tu página de transmisión en vivo utiliza la configuración de [Appearance](../website/appearance) de tu sitio web:
+Su página de transmisión en vivo usa la configuración de [Apariencia](../website/appearance) de su sitio web:
 
 - El **color de acento claro** con texto oscuro se usa para el encabezado.
 - El **color de acento oscuro** con texto claro se usa para la barra lateral.
-- Tu **Light Background Logo** aparece en la página de transmisión. Usa una imagen con fondo transparente y proporción de aspecto 4:1.
+- Su **Logotipo para fondo claro** aparece en la página de transmisión. Use una imagen con fondo transparente y una relación de aspecto de 4:1.
 
-Para cambiar estos, ve a **Website** luego **Appearance** y actualiza tus configuraciones de [Color Palette](../website/appearance#color-palette) y [Logo](../website/appearance#logo-and-branding).
+Para cambiar estos elementos, vaya a **Sitio web** y luego a **Apariencia**, y actualice su [Paleta de colores](../website/appearance#color-palette) y su configuración de [Logotipo](../website/appearance#logo-and-branding).
 
-## Agregar Hosts de Transmisión
+## Agregar anfitriones de transmisión
 
-Para dar acceso a los miembros del equipo al chat solo para anfitriones junto con el chat público:
+Para dar acceso a los miembros del equipo al chat exclusivo para anfitriones junto con el chat público:
 
-1. En el Menú Jump, elige **Settings > Roles**.
-2. Haz clic en el botón más y selecciona **Add Custom Role**.
-3. Nombra el rol "Streaming Host" y haz clic en **Save**.
-4. Haz clic en el nuevo rol, luego haz clic en **Add** en la sección Members para agregar personas.
-5. Desplázate hacia abajo a **Edit Permissions**, expande la sección **Content** y marca **Host Chat**.
+1. En el menú Jump, elija **Configuración > Roles**.
+2. Haga clic en el botón de más y seleccione **Agregar rol personalizado**.
+3. Nombre el rol "Anfitrión de transmisión" y haga clic en **Guardar**.
+4. Haga clic en el nuevo rol y luego en **Agregar** en la sección Miembros para agregar personas.
+5. Desplácese hasta **Editar permisos**, expanda la sección **Contenido** y marque **Chat de anfitriones**.
 
-Cuando los anfitriones inician sesión en la página de transmisión en vivo, aparece una pestaña privada **Host Chat** junto al chat público para conversación solo del personal durante la transmisión.
+Cuando los anfitriones inicien sesión en la página de transmisión en vivo, aparecerá una pestaña privada de **Chat de anfitriones** junto al chat público, para conversaciones exclusivas del personal durante la transmisión.
 
 :::info
-Para más detalles sobre la creación de roles y gestión de permisos, consulta [Roles y Permisos](../settings/roles-permissions.md).
+Para más detalles sobre cómo crear roles y administrar permisos, consulte [Roles y permisos](../settings/roles-permissions.md).
 :::
 
-## Resolución de Problemas
+## Solución de problemas
 
-Si tu transmisión en vivo automatizada de YouTube no se muestra correctamente cuando usas la opción "Current YouTube Live Stream" con tu Channel ID, intenta lo siguiente:
+Si su transmisión automatizada de YouTube no se muestra correctamente al usar la opción "Transmisión en vivo actual de YouTube" con su ID de canal, pruebe lo siguiente:
 
 **Síntomas:**
-- La incrustaciónde transmisión en vivo muestra "Video unavailable"
-- La página carga pero no aparece video
-- Los incrustaciones directas de YouTube funcionan, pero la transmisión en vivo del canal automatizada no lo hace
+- El reproductor de la transmisión muestra "Video no disponible"
+- La página carga, pero no aparece ningún video
+- Las inserciones directas de YouTube funcionan, pero la transmisión automatizada del canal no
 
 **Solución:**
-Revisa tu canal de YouTube en busca de transmisiones en vivo antiguas o próximas programadas y elimínalas:
+Revise su canal de YouTube en busca de transmisiones en vivo antiguas o programadas y elimínelas:
 
-1. Ve a tu YouTube Studio.
-2. Navega a **Content** luego **Live**.
-3. Busca cualquier transmisión en vivo antiguo o próximas transmisiones programadas.
-4. Elimina estas entradas de transmisión en vivo antiguas o programadas.
-5. Prueba tu página de transmisión en vivo nuevamente.
+1. Vaya a YouTube Studio.
+2. Navegue a **Contenido** y luego a **En vivo**.
+3. Busque transmisiones antiguas programadas o transmisiones próximas programadas.
+4. Elimine estas entradas de transmisión antiguas o programadas.
+5. Pruebe su página de transmisión en vivo de nuevo.
 
 :::warning
-La incrustaciónautomatizada de transmisión en vivo del canal de YouTube puede ser bloqueada cuando hay múltiples entradas de transmisión en vivo programadas o pasadas en tu canal. Eliminar estas permite que YouTube identifique y sirva correctamente tu transmisión en vivo actual.
+La inserción automatizada de la transmisión del canal de YouTube puede bloquearse cuando hay varias entradas de transmisiones programadas o pasadas en su canal. Eliminarlas permite que YouTube identifique y sirva correctamente su transmisión actual.
 :::
 
 **Requisitos adicionales:**
-- Tu transmisión en vivo debe estar configurada como **Public** (no Unlisted o Private).
-- La incrustaciónmust be allowed en tus configuraciones de transmisión en vivo de YouTube.
-- Asegúrate de estar usando el proveedor **Current YouTube Live Stream** (con Channel ID), no el proveedor **YouTube** (con Video ID).
+- Su transmisión en vivo debe estar configurada como **Pública** (no como No listada ni Privada).
+- Debe permitirse la inserción en la configuración de transmisión de YouTube.
+- Asegúrese de usar el proveedor **Transmisión en vivo actual de YouTube** (con ID de canal), no el proveedor **YouTube** (con ID de video).
 
-## Próximos Pasos
+## Próximos pasos
 
-- [Managing Sermons](managing-sermons) -- Agrega sermones a tu biblioteca
-- [Playlists](playlists) -- Organiza sermones en series
+- [Administrar sermones](managing-sermons) -- Agregue sermones a su biblioteca
+- [Listas de reproducción](playlists) -- Organice los sermones en series

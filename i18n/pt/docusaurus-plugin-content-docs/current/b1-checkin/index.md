@@ -1,47 +1,47 @@
 ---
-title: "Visão Geral do B1 Church Checkin"
+title: "Visão geral do B1 Church Checkin"
 ---
 
-# Visão Geral do B1 Church Checkin
+# Visão geral do B1 Church Checkin
 
 <div class="article-intro">
 
-O B1 Church Checkin é um aplicativo de quiosque de autoatendimento para iPads e tablets Android. Ele permite que os membros da igreja procurem a família, atribuam as crianças a grupos ou turmas e imprimam etiquetas com nome e comprovantes de retirada dos pais -- tudo sem precisar de um voluntário na recepção.
+O B1 Church Checkin é um aplicativo de quiosque de autoatendimento para iPads e tablets Android. Ele permite que os membros da igreja procurem a sua família, designem as crianças para grupos ou turmas e imprimam etiquetas com nomes e comprovantes de busca dos pais — tudo sem precisar de um voluntário na mesa.
 
 </div>
 
-## Vídeo de Apresentação
+## Vídeo de apresentação
 
-<YouTube id="fNZsJi9F-jc" title="A Tour of B1 Check-In" next="Setting Up Services and Attendance in B1" nextUrl="/docs/b1-admin/attendance/setup" />
+<YouTube id="fNZsJi9F-jc" title="Um tour pelo B1 Check-In" next="Configurando cultos e presença no B1" nextUrl="/docs/b1-admin/attendance/setup" />
 
-## Como Funciona
+## Como funciona
 
-Coloque um iPad ou tablet Android no saguão ou na área de boas-vindas. Os membros se aproximam, pesquisam a família pelo número de telefone ou pelo sobrenome, revisam a família, escolhem a qual grupo cada pessoa deve ir e tocam em **Check-in**. O aplicativo imprime automaticamente as etiquetas com nome e os comprovantes de retirada e depois se reinicia para a próxima família.
+Coloque um iPad ou tablet Android no saguão ou na área de recepção. Os membros se aproximam, pesquisam a sua família pelo número de telefone ou pelo sobrenome, revisam a família, escolhem a qual grupo cada pessoa deve ir e tocam em **Fazer check-in**. O aplicativo imprime automaticamente as etiquetas com nomes e os comprovantes de busca, e então se reinicia para a próxima família.
 
-## Principais Recursos
+## Principais recursos
 
-- **Busca de membros em autoatendimento** -- Pesquise pelo número de telefone ou pelo sobrenome para encontrar a sua família rapidamente.
+- **Busca de membros por autoatendimento** -- Pesquise pelo número de telefone ou pelo sobrenome para encontrar a sua família rapidamente.
 - **Revisão da família** -- Veja todos os membros da família com fotos e as atribuições atuais de grupo de relance.
-- **Atribuição de grupos** -- Atribua cada membro da família à turma ou grupo certo para o horário de serviço selecionado.
-- **Check-in de visitantes** -- Adicione um visitante à sua família na hora, com nome e sobrenome.
-- **Cadastro de visitantes via QR** -- Exiba um QR code que os visitantes escaneiam para [se cadastrarem](../b1-church/checkin/guest-registration) no próprio celular antes do check-in, ou deixe que toquem em **Cadastre-se aqui** para preencher o mesmo formulário no quiosque.
-- **Impressão de etiquetas** -- Imprima etiquetas com nome para as crianças e comprovantes de retirada dos pais, com códigos de segurança exclusivos.
+- **Atribuição de grupo** -- Designe cada membro da família à turma ou grupo certo para o horário de culto selecionado.
+- **Check-in de visitantes** -- Adicione um visitante ao domicílio na hora, com nome e sobrenome.
+- **Cadastro de visitantes por QR code** -- Exiba um QR code que os visitantes podem escanear para [se cadastrar](../b1-church/checkin/guest-registration) no próprio celular antes de fazer o check-in, ou deixe que toquem em **Cadastrar aqui** para preencher o mesmo formulário no quiosque.
+- **Impressão de etiquetas** -- Imprima etiquetas com nomes para as crianças e comprovantes de busca para os pais, com códigos de segurança exclusivos.
 - **Suporte a impressoras de rede** -- Encontre e configure impressoras de rede diretamente pelo aplicativo.
-- **Login automático** -- Depois do primeiro login, o aplicativo lembra das suas credenciais e vai direto para a tela de cultos nas próximas aberturas.
+- **Login automático** -- Depois do primeiro login, o aplicativo lembra as suas credenciais e vai direto para a tela de cultos nas próximas aberturas.
 - **Suporte a várias igrejas** -- Se a sua conta estiver vinculada a mais de uma igreja, você pode escolher em qual fazer o check-in.
-- **Identidade visual da igreja** -- O aplicativo exibe o logotipo da sua igreja no cabeçalho assim que uma igreja é selecionada.
+- **Identidade visual da igreja** -- O aplicativo exibe o logotipo da sua igreja no cabeçalho depois que uma igreja é selecionada.
 
-## Seções da Documentação
+## Seções da documentação
 
-- **[Primeiros Passos](./getting-started/)** -- Instalação do aplicativo, login e configuração da impressora.
-- **[Fluxo de Check-In](./check-in/)** -- O fluxo completo de check-in, desde a seleção de um culto até a impressão das etiquetas.
+- **[Primeiros passos](./getting-started/)** -- Instalação do aplicativo, login e configuração da impressora.
+- **[Fluxo de check-in](./check-in/)** -- O fluxo completo de check-in, desde a seleção de um culto até a impressão das etiquetas.
 
 :::tip
-O B1 Church Checkin funciona melhor em um tablet de 10 polegadas (iPad ou Android) fixado na horizontal, em um local onde as famílias consigam alcançá-lo facilmente. Baixe o aplicativo na [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), na [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) ou na [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).
+O B1 Church Checkin funciona melhor em um tablet de 10 polegadas (iPad ou Android) montado na orientação paisagem, em um local onde as famílias consigam alcançá-lo com facilidade. Baixe o aplicativo na [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), na [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) ou na [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).
 :::
 
 :::info
-Antes de usar o B1 Church Checkin, o administrador da sua igreja precisa configurar os cultos, os horários de serviço e os grupos no B1 Admin. Consulte o [guia de configuração de presença](../b1-admin/attendance/setup.md) para mais detalhes.
+Antes de usar o B1 Church Checkin, o administrador da sua igreja precisa configurar os cultos, os horários de culto e os grupos no B1 Admin. Veja o [guia de configuração de presença](../b1-admin/attendance/setup.md) para detalhes. A conta que entra no quiosque precisa da permissão de presença **Checkin**; veja [Contas de quiosque de check-in](../b1-admin/settings/roles-permissions.md#check-in-kiosk-accounts).
 :::
 
 Para suporte, envie um e-mail para [support@churchapps.org](mailto:support@churchapps.org).

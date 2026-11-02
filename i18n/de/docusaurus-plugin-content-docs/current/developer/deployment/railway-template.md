@@ -1,64 +1,64 @@
 ---
-title: "Self-Hosting auf Railway"
+title: "Selbst-Hosting auf Railway"
 ---
 
-# Self-Hosting auf Railway
+# Selbst-Hosting auf Railway
 
 <div class="article-intro">
 
-ChurchApps veröffentlicht eine One-Click-[Railway](https://railway.com)-Vorlage, die Ihrer Kirche eine eigene private Instanz von B1 Admin, dem B1-Mitgliederportal, der API und einer MySQL-Datenbank bereitstellt — alles läuft auf Infrastruktur, die Sie selbst besitzen und direkt bezahlen. Diese Anleitung bringt Sie in etwa 15 Minuten live und führt Sie anschließend durch die Nachkonfiguration, die die meisten Kirchen irgendwann wünschen.
+ChurchApps stellt vorgefertigte Vorlagen für [Railway](https://railway.com) bereit, mit denen Sie per Klick eine eigene, private Instanz von B1 Admin, des B1-Mitgliederportals, der API und einer MySQL-Datenbank erhalten — alles auf einer Infrastruktur, die Sie besitzen und direkt bezahlen. Diese Anleitung bringt Sie in etwa 15 Minuten online und erläutert danach die Konfiguration nach der Bereitstellung, die sich die meisten Gemeinden irgendwann wünschen.
 
 </div>
 
 ## Schnellstart
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/b1-template)
+[![Auf Railway bereitstellen](https://railway.com/button.svg)](https://railway.com/deploy/b1-template)
 
 1. Klicken Sie oben auf die Schaltfläche **Deploy on Railway**.
 2. Melden Sie sich bei Railway an (oder erstellen Sie ein kostenloses Konto) und hinterlegen Sie eine Zahlungsmethode.
 3. Klicken Sie auf **Deploy**, ohne etwas zu ändern — jede Variable hat einen sinnvollen Standardwert.
-4. Warten Sie 5–10 Minuten, bis die vier Dienste grün werden.
-5. Öffnen Sie die URL des **B1Admin**-Dienstes, klicken Sie auf **Register** und legen Sie Ihr Konto an. Das erste Konto wird automatisch zu einem Server-Administrator.
-6. Folgen Sie den Eingabeaufforderungen in der App, um Ihre erste Kirche anzulegen.
+4. Warten Sie 5–10 Minuten, bis die vier Dienste grün sind.
+5. Öffnen Sie die URL des Dienstes **B1Admin**, klicken Sie auf **Register** und legen Sie Ihr Konto an. Das erste Konto wird automatisch Server-Admin.
+6. Folgen Sie den Hinweisen in der Anwendung, um Ihre erste Gemeinde anzulegen.
 
-Das war's. Sie haben jetzt eine voll funktionsfähige ChurchApps-Instanz. Alles Weitere unten ist optionaler Feinschliff.
+Das war's. Sie haben nun eine voll funktionsfähige ChurchApps-Instanz. Alles Weitere unten ist optional.
 
 :::tip
-Das Deployment befindet sich derzeit in der **Beta**. Wenn Sie auf etwas stoßen, das die Dokumentation nicht abdeckt, öffnen Sie bitte ein Issue unter [github.com/ChurchApps/Api/issues](https://github.com/ChurchApps/Api/issues) mit angehängten Deploy-Logs.
+Die Bereitstellung befindet sich derzeit in der **Beta**. Wenn Sie auf etwas stoßen, das in der Dokumentation nicht behandelt wird, eröffnen Sie bitte ein Issue unter [github.com/ChurchApps/Api/issues](https://github.com/ChurchApps/Api/issues) und fügen Sie die Bereitstellungsprotokolle bei.
 :::
 
 <div class="prereqs">
 <h4>Was Sie benötigen</h4>
 
 - Ein kostenloses [Railway](https://railway.com)-Konto
-- Eine bei Railway hinterlegte Kreditkarte (~15–25 $/Monat für eine kleine Gemeinde; siehe [Kosten](#kosten))
-- Etwa 15 Minuten für das anfängliche Deployment
-- *Optional, aber später dringend empfohlen:* SMTP-Zugangsdaten und eine eigene Domain
+- Eine Kreditkarte, die bei Railway hinterlegt ist (etwa 15–25 $ pro Monat für eine kleine Gemeinde; siehe [Kosten](#costs))
+- Etwa 15 Minuten für die erste Bereitstellung
+- *Optional, aber dringend später empfohlen:* SMTP-Zugangsdaten und eine eigene Domain
 
 </div>
 
 ## Was bereitgestellt wird
 
-Die Vorlage stellt vier Dienste in einem einzigen Railway-Projekt bereit:
+Die Vorlage richtet vier Dienste in einem einzigen Railway-Projekt ein:
 
-| Dienst | Zweck | URL nach dem Deployment |
+| Dienst | Zweck | URL nach der Bereitstellung |
 |---------|---------|------------------|
-| **MySQL** | Speichert alle Daten (eine Instanz, mehrere Schemas) | nur intern |
-| **Api** | Backend für Mitgliedschaft, Inhalte, Spenden, Anwesenheit usw. | `https://api-<id>.up.railway.app` |
-| **B1Admin** | Mitarbeiter-/Admin-Webanwendung | `https://b1admin-<id>.up.railway.app` |
-| **B1App** | Mitglieder-Webanwendung und Kirchenwebsite | `https://b1app-<id>.up.railway.app` |
+| **MySQL** | Speichert alle Daten (eine Instanz, mehrere Schemata) | nur intern |
+| **Api** | Backend für Membership, Content, Giving, Attendance usw. | `https://api-<id>.up.railway.app` |
+| **B1Admin** | Web-App für Mitarbeitende und Administration | `https://b1admin-<id>.up.railway.app` |
+| **B1App** | Web-App für Mitglieder und Website der Gemeinde | `https://b1app-<id>.up.railway.app` |
 
-Datenbankschemas werden beim ersten Start automatisch durch die Startmigration der API erstellt.
+Die Datenbankschemata werden beim ersten Start automatisch durch die Startmigration der API angelegt.
 
 ## Erstkonfiguration
 
-Nachdem Sie live sind, hier die Dinge, die die meisten Kirchen als Nächstes einrichten, grob nach Priorität geordnet.
+Jetzt läuft alles. Hier sind die Dinge, die die meisten Gemeinden als Nächstes einrichten, grob nach Priorität geordnet.
 
 ### 1. E-Mail (dringend empfohlen) {#1-email-highly-recommended}
 
-Ohne E-Mail können sich Mitglieder zwar weiterhin registrieren und das System nutzen, aber **sie können vergessene Passwörter nicht zurücksetzen** — ein Administrator muss dies für sie erledigen. Die Einrichtung von SMTP dauert etwa 5 Minuten.
+Ohne E-Mail können sich Mitglieder zwar registrieren und das System nutzen, aber **sie können vergessene Passwörter nicht zurücksetzen** — ein Administrator muss dies für sie übernehmen. Die Einrichtung von SMTP dauert etwa 5 Minuten.
 
-Öffnen Sie im Railway-Dashboard den **Api**-Dienst → **Variables** und fügen Sie hinzu:
+Öffnen Sie im Railway-Dashboard den Dienst **Api** → **Variables** und fügen Sie hinzu:
 
 ```
 MAIL_SYSTEM=SMTP
@@ -69,37 +69,37 @@ SMTP_SECURE=false
 SUPPORT_EMAIL=noreply@yourchurch.org
 ```
 
-Drei Anbieter, die es zu kennen lohnt:
+Drei Anbieter, die sich lohnen:
 
-#### Resend — einfachste kostenlose Option (100 E-Mails/Tag)
+#### Resend — einfachste kostenlose Option (100 E-Mails pro Tag)
 
-1. Registrieren Sie sich bei [resend.com](https://resend.com).
-2. Verifizieren Sie eine Absender-Domain (oder verwenden Sie zunächst den Testabsender `onboarding@resend.dev`).
+1. Registrieren Sie sich unter [resend.com](https://resend.com).
+2. Verifizieren Sie eine Absenderdomain (oder verwenden Sie zum Start den Test-Absender `onboarding@resend.dev`).
 3. Erstellen Sie einen API-Schlüssel.
 4. Setzen Sie `SMTP_HOST=smtp.resend.com`, `SMTP_USER=resend`, `SMTP_PASS=re_xxxxxxxxx`.
 
-#### Gmail — kostenlos für den persönlichen Gebrauch (~500/Tag)
+#### Gmail — kostenlos für den privaten Gebrauch (~500 pro Tag)
 
 1. Aktivieren Sie die Zwei-Faktor-Authentifizierung für das Google-Konto.
 2. Erstellen Sie ein [App-Passwort](https://myaccount.google.com/apppasswords).
 3. Setzen Sie `SMTP_HOST=smtp.gmail.com`, `SMTP_USER=your-address@gmail.com`, `SMTP_PASS=<das 16-stellige App-Passwort>`.
 
-#### AWS SES — am günstigsten bei großem Volumen
+#### AWS SES — am günstigsten im großen Maßstab
 
-1. Verifizieren Sie eine Absender-Domain in AWS.
-2. Verlassen Sie die SES-Sandbox, wenn Sie an nicht verifizierte Adressen senden möchten.
+1. Verifizieren Sie eine Absenderdomain in AWS.
+2. Verlassen Sie die Sandbox von SES, wenn Sie an nicht verifizierte Adressen senden möchten.
 3. Erstellen Sie SMTP-Zugangsdaten unter **SES → SMTP Settings → Create credentials**.
 4. Setzen Sie `SMTP_HOST=email-smtp.us-east-2.amazonaws.com`, `SMTP_USER=AKIA...`, `SMTP_PASS=<SES-SMTP-Passwort>`.
 
-Nach dem Speichern der Variablen wird der Api-Dienst automatisch neu bereitgestellt. Testen Sie es, indem Sie bei einem Testkonto ein Passwort-Reset auslösen.
+Nach dem Speichern der Variablen wird der Dienst Api automatisch neu bereitgestellt. Testen Sie es, indem Sie auf einem Testkonto ein Zurücksetzen des Passworts auslösen.
 
 :::warning
-Wenn Sie `MAIL_SYSTEM=SMTP` mit falschen Zugangsdaten setzen, erscheint die Registrierung erfolgreich, aber die Bestätigungs-E-Mail kommt nie an. Korrigieren Sie entweder die Zugangsdaten, oder entfernen Sie `MAIL_SYSTEM`, um in den E-Mail-losen Modus zurückzufallen.
+Wenn Sie `MAIL_SYSTEM=SMTP` mit falschen Zugangsdaten setzen, scheint die Registrierung zu gelingen, aber die Bestätigungs-E-Mail kommt nie an. Korrigieren Sie entweder die Zugangsdaten oder entfernen Sie `MAIL_SYSTEM`, um in den Modus ohne E-Mail zurückzukehren.
 :::
 
 ### 2. Eigene Domains
 
-Die Standard-URLs `*.up.railway.app` funktionieren, aber die meisten Kirchen möchten eine eigene Domain.
+Die Standard-URLs `*.up.railway.app` funktionieren, aber die meisten Gemeinden möchten eigene.
 
 Für jeden Web-Dienst (B1Admin und B1App):
 
@@ -107,71 +107,71 @@ Für jeden Web-Dienst (B1Admin und B1App):
 2. Klicken Sie auf **+ Custom Domain** und geben Sie den Hostnamen ein:
    - `admin.yourchurch.org` für B1Admin
    - `app.yourchurch.org` (oder `www`) für B1App
-3. Fügen Sie den von Railway angezeigten CNAME-Eintrag bei Ihrem DNS-Anbieter hinzu.
+3. Tragen Sie den CNAME-Eintrag, den Railway anzeigt, bei Ihrem DNS-Anbieter ein.
 4. Warten Sie ein paar Minuten, bis sich das DNS verbreitet hat. Railway stellt das TLS-Zertifikat automatisch bereit.
 
-Aktualisieren Sie anschließend die Variablen des **Api**-Dienstes, damit Links in E-Mails die neuen Domains verwenden:
+Aktualisieren Sie danach die Variablen des Dienstes **Api**, damit Links in E-Mails die neuen Domains verwenden:
 
 ```
 B1ADMIN_ROOT=https://admin.yourchurch.org
 ```
 
-Und beim **B1Admin**-Dienst:
+Und auf dem Dienst **B1Admin**:
 
 ```
-REACT_APP_API_BASE=https://api.yourchurch.org   (falls Sie auch eine eigene API-Domain gesetzt haben)
+REACT_APP_API_BASE=https://api.yourchurch.org   (falls Sie außerdem eine eigene API-Domain setzen)
 REACT_APP_B1_WEBSITE_URL=https://{subdomain}.yourchurch.org
 ```
 
-Das Token `{subdomain}` ist wörtlich zu verstehen — es wird zur Laufzeit durch die Subdomain jeder Kirche ersetzt (siehe Multi-Site unten).
+Der Platzhalter `{subdomain}` ist wörtlich zu verstehen — er wird zur Laufzeit durch die Subdomain jeder Gemeinde ersetzt (siehe Multi-Site unten).
 
-### 3. Multi-Site (mehrere Kirchen auf einer Instanz) {#3-multi-site-multiple-churches-on-one-instance}
+### 3. Multi-Site (mehrere Gemeinden auf einer Instanz) {#3-multi-site-multiple-churches-on-one-instance}
 
-ChurchApps ist von Natur aus mandantenfähig — ein Deployment kann beliebig viele Kirchen hosten, jede mit eigenen Personen, Gruppen und Website. Neue Kirchen werden vollständig über die Admin-Oberfläche hinzugefügt; es sind keine Infrastrukturänderungen nötig.
+ChurchApps ist von Grund auf mandantenfähig — eine Bereitstellung kann beliebig viele Gemeinden beherbergen, jede mit eigenen Personen, Gruppen und einer eigenen Website. Neue Gemeinden werden vollständig über die Administrationsoberfläche angelegt; Änderungen an der Infrastruktur sind nicht nötig.
 
-#### Weitere Kirchen hinzufügen
+#### Weitere Gemeinden hinzufügen
 
 1. Navigieren Sie in **B1 Admin** zu **Settings → Manage Church → Switch Church → Create New**.
-2. Jede Kirche erhält einen eindeutigen **Subdomain-Slug** (z. B. `firstchurch`, `gracecommunity`).
-3. Die neue Kirche erhält ihre eigenen Daten, Mitglieder, Website und Spendeneinrichtung, vollständig isoliert von anderen Kirchen auf derselben Instanz.
+2. Jede Gemeinde hat einen eindeutigen **Subdomain-Slug** (z. B. `firstchurch`, `gracecommunity`).
+3. Die neue Gemeinde erhält eigene Daten, Mitglieder, eine eigene Website und eine eigene Spendeneinrichtung, die vollständig von den anderen Gemeinden auf derselben Instanz getrennt sind.
 
-#### Jede Kirche auf ihre eigene URL routen
+#### Jede Gemeinde unter eigener URL erreichbar machen
 
-Es gibt zwei Möglichkeiten, Kirchen öffentlich verfügbar zu machen:
+Es gibt zwei Möglichkeiten, Gemeinden öffentlich zugänglich zu machen:
 
 | Muster | Beispiel | Einrichtung |
 |---------|---------|-------|
-| **Pfadbasiert** (funktioniert ohne Weiteres) | `app.yourchurch.org/firstchurch` | Keine zusätzliche Einrichtung |
-| **Subdomain-basiert** (sauberere URLs) | `firstchurch.yourchurch.org` | Wildcard-DNS + Wildcard-Custom-Domain |
+| **Pfadbasiert** (funktioniert sofort) | `app.yourchurch.org/firstchurch` | Keine zusätzliche Einrichtung |
+| **Subdomain-basiert** (sauberere URLs) | `firstchurch.yourchurch.org` | Wildcard-DNS + Wildcard-Domain |
 
-Für **Subdomain-basiertes** Routing auf Railway:
+Für das **subdomain-basierte** Routing auf Railway:
 
-1. Erstellen Sie bei Ihrem DNS-Anbieter einen Wildcard-CNAME: `*.yourchurch.org → <b1app railway target>`.
-2. Fügen Sie in Railway beim B1App-Dienst → **Settings → Networking** `*.yourchurch.org` als eigene Domain hinzu.
-3. Setzen Sie beim **B1Admin**-Dienst `REACT_APP_B1_WEBSITE_URL=https://{subdomain}.yourchurch.org`.
+1. Legen Sie bei Ihrem DNS-Anbieter einen Wildcard-CNAME an: `*.yourchurch.org → <b1app railway target>`.
+2. Fügen Sie in Railway beim Dienst B1App unter **Settings → Networking** die Domain `*.yourchurch.org` als Custom Domain hinzu.
+3. Setzen Sie beim Dienst **B1Admin** `REACT_APP_B1_WEBSITE_URL=https://{subdomain}.yourchurch.org`.
 
-Nach dem erneuten Deployment wird die Website jeder Kirche automatisch unter `<ihre-subdomain>.yourchurch.org` ausgeliefert.
+Nach der erneuten Bereitstellung wird die Website jeder Gemeinde automatisch unter `<ihre-subdomain>.yourchurch.org` ausgeliefert.
 
 :::info
-Wildcard-Custom-Domains erfordern einen kostenpflichtigen Railway-Plan. Pfadbasiertes Routing funktioniert bei jedem Plan und ist funktional identisch — nur in der Adressleiste weniger ansehnlich.
+Wildcard-Domains erfordern einen kostenpflichtigen Railway-Tarif. Das pfadbasierte Routing funktioniert in jedem Tarif und ist funktional identisch — es sieht in der Adressleiste nur weniger schön aus.
 :::
 
 ### 4. Online-Spenden (Stripe / PayPal) {#4-online-giving-stripe--paypal}
 
-Spenden werden **pro Kirche innerhalb der Admin-Oberfläche** konfiguriert, nicht über Umgebungsvariablen — so kann jede Kirche ihr eigenes Händlerkonto verwenden.
+Spenden werden **pro Gemeinde innerhalb der Administrationsoberfläche** konfiguriert, nicht über Umgebungsvariablen — so kann jede Gemeinde ihr eigenes Händlerkonto verwenden.
 
-1. Holen Sie sich Entwickler-Zugangsdaten von [Stripe](https://dashboard.stripe.com/) (Developers → API keys) oder [PayPal](https://developer.paypal.com/) (My Apps & Credentials).
+1. Holen Sie sich Entwickler-Zugangsdaten bei [Stripe](https://dashboard.stripe.com/) (Developers → API keys) oder [PayPal](https://developer.paypal.com/) (My Apps & Credentials).
 2. Gehen Sie in B1 Admin zu **Settings → Giving Settings**.
-3. Wählen Sie Ihren Anbieter, fügen Sie die öffentlichen und geheimen Schlüssel ein und konfigurieren Sie die Gebührenbehandlung.
-4. Fügen Sie optional `GOOGLE_RECAPTCHA_SECRET_KEY` beim **Api**-Dienst in Railway hinzu, um öffentliche Spendenformulare vor Bots zu schützen.
+3. Wählen Sie Ihren Anbieter, fügen Sie die öffentlichen und die geheimen Schlüssel ein und konfigurieren Sie die Behandlung der Gebühren.
+4. Optional fügen Sie `GOOGLE_RECAPTCHA_SECRET_KEY` zum Dienst **Api** in Railway hinzu, um öffentliche Spendenformulare vor Bots zu schützen.
 
 ### 5. Dateispeicher {#5-file-storage}
 
-Die Vorlage stellt einen **1-GB-persistenten Datenträger** bereit, der am Api-Dienst gemountet ist, für Mitgliederfotos, Predigtdateien und hochgeladene Dokumente.
+Die Vorlage stellt ein **1 GB großes persistentes Volume** bereit, das am Dienst Api eingehängt ist, für Mitgliederfotos, Predigtdateien und hochgeladene Dokumente.
 
-Um ihn zu vergrößern: Öffnen Sie den Api-Dienst → **Volumes** → passen Sie den Größenregler an.
+Um es zu vergrößern: Öffnen Sie den Dienst Api → **Volumes** und passen Sie den Größenregler an.
 
-Für größere Deployments (100+ GB oder viele gleichzeitige Uploads) wechseln Sie zu S3, indem Sie beim **Api**-Dienst Folgendes setzen:
+Für größere Bereitstellungen (100+ GB oder viele gleichzeitige Uploads) stellen Sie auf S3 um, indem Sie folgende Variablen am Dienst **Api** setzen:
 
 ```
 FILE_STORE=S3
@@ -181,62 +181,62 @@ AWS_SECRET_ACCESS_KEY=<secret>
 AWS_REGION=us-east-2
 ```
 
-Vorhandene Dateien im Datenträger werden nicht automatisch migriert — kopieren Sie sie in den Bucket, bevor Sie die Variable umstellen.
+Vorhandene Dateien im Volume werden nicht automatisch übernommen — kopieren Sie sie in den Bucket, bevor Sie die Variable umstellen.
 
-### 6. Optionale Feature-Integrationen {#6-optional-feature-integrations}
+### 6. Optionale Funktionserweiterungen {#6-optional-feature-integrations}
 
-Diese schalten bestimmte Funktionen frei und können alle später über das Railway-Dashboard hinzugefügt werden. Setzen Sie sie beim **Api**-Dienst.
+Diese schalten bestimmte Funktionen frei und können jederzeit über das Railway-Dashboard ergänzt werden. Setzen Sie sie am Dienst **Api**.
 
 | Variable | Freigeschaltete Funktion |
 |----------|--------------------|
-| `OPENAI_API_KEY` *oder* `OPENROUTER_API_KEY` | KI-gestützte Suche und Inhaltsvorschläge |
-| `YOUTUBE_API_KEY` | YouTube-Predigtsuche und -Einbettung |
-| `PEXELS_KEY` | Bildauswahl für den Website-Baukasten |
-| `VIMEO_TOKEN` | Vimeo-Predigtunterstützung |
-| `API_BIBLE_KEY` | Bibelvers-Nachschlagen in Lektionen und Inhalten |
-| `YOUVERSION_API_KEY` | YouVersion-Bibel-Integration |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Browser-Push-Benachrichtigungen (VAPID-Schlüsselpaar generieren) |
-| `HUBSPOT_KEY` | Optionale CRM-Synchronisierung für neue Registrierungen |
+| `OPENAI_API_KEY` *oder* `OPENROUTER_API_KEY` | KI-gestützte Suche und Vorschläge für Inhalte |
+| `YOUTUBE_API_KEY` | Suche und Einbettung von YouTube-Predigten |
+| `PEXELS_KEY` | Auswahl von Stockfotos für den Website-Builder |
+| `VIMEO_TOKEN` | Unterstützung für Vimeo-Predigten |
+| `API_BIBLE_KEY` | Nachschlagen von Bibelversen in Lektionen und Inhalten |
+| `YOUVERSION_API_KEY` | Integration der YouVersion-Bibel |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Browser-Push-Benachrichtigungen ([VAPID-Schlüsselpaar erzeugen](./docker#push-notifications)) |
+| `HUBSPOT_KEY` | Optionale CRM-Synchronisierung für neue Anmeldungen |
 
-## Aktualisieren
+## Aktualisierung
 
-Jeder Dienst ist mit seinem jeweiligen GitHub-Repository verknüpft. Pushes nach `main` in `ChurchApps/Api`, `ChurchApps/B1Admin` oder `ChurchApps/B1App` lösen automatische erneute Deployments aus.
+Jeder Dienst ist mit dem jeweiligen GitHub-Repository verknüpft. Pushes auf `main` in `ChurchApps/Api`, `ChurchApps/B1Admin` oder `ChurchApps/B1App` lösen automatische Neubereitstellungen aus.
 
-Um eine bestimmte Version festzupinnen, ändern Sie die **Branch**-Einstellung bei jedem Dienst auf einen Tag oder Release-Branch. Dies ist die empfohlene Einrichtung für die Produktion — das automatische Deployment von `main` bedeutet, dass Sie jede laufende Arbeit übernehmen.
+Um eine bestimmte Version festzulegen, ändern Sie bei jedem Dienst die Einstellung **Branch** auf ein Tag oder einen Release-Branch. Dies ist die empfohlene Einrichtung für die Produktion — eine automatische Bereitstellung von `main` übernimmt jede laufende Arbeit, die dort gerade eingecheckt wird.
 
-## Kosten
+## Kosten {#costs}
 
-Realistische Bandbreiten für eine kleine Kirche (unter 200 Mitglieder, geringer Traffic):
+Realistische Größenordnungen für eine kleine Gemeinde (unter 200 Mitglieder, geringer Datenverkehr):
 
 | Komponente | Ungefähre monatliche Kosten |
 |-----------|---------------------|
-| Railway-Basis | $5 |
-| MySQL-Plugin | $5 + ~$1 Speicher |
-| 3 Web-Dienste Compute | $3–10 kombiniert |
-| 1-GB-Datenträger | $0,25 |
-| **Gesamt** | **~$15–25/Monat** |
+| Railway-Grundgebühr | 5 $ |
+| MySQL-Plugin | 5 $ + ~1 $ Speicher |
+| Rechenleistung für 3 Web-Dienste | 3–10 $ zusammen |
+| 1 GB-Volume | 0,25 $ |
+| **Gesamt** | **~15–25 $ pro Monat** |
 
-Die Kosten skalieren linear mit Traffic, Fotouploads und Datenbankgröße. Railway zeigt die Live-Nutzung im **Usage**-Tab des Projekts an — setzen Sie dort Ausgabenlimits, um Ihr Risiko zu begrenzen.
+Die Kosten wachsen linear mit dem Datenverkehr, den Foto-Uploads und der Größe der Datenbank. Railway zeigt die aktuelle Nutzung im Tab **Usage** des Projekts an — setzen Sie dort Ausgabenlimits, um Ihr Risiko zu begrenzen.
 
 ## Fehlerbehebung
 
-| Symptom | Wahrscheinliche Ursache | Behebung |
+| Symptom | Wahrscheinliche Ursache | Lösung |
 |---------|--------------|-----|
-| Build schlägt fehl mit `EBUSY: rmdir '/app/node_modules/.cache'` | Nixpacks-Cache-Mount-Konflikt | Setzen Sie `NIXPACKS_NO_CACHE=true` beim betroffenen Dienst |
-| Build schlägt bei B1Admin fehl mit `Missing: @types/...` | Veraltete `package-lock.json` | Aktuellsten `main`-Stand ziehen |
-| Api-Deployment hängt bei „Deploying" | Healthcheck schlägt fehl — `/health` liefert keine 200 | Deploy-Logs ansehen; meist eine fehlende erforderliche Umgebungsvariable |
-| B1Admin zeigt „check your email", aber keine E-Mail kommt an | `MAIL_SYSTEM=SMTP` gesetzt, aber Zugangsdaten fehlen/falsch | Zugangsdaten korrigieren, oder `MAIL_SYSTEM` entfernen, um E-Mail zu deaktivieren |
-| Login leitet auf `api.churchapps.org` um | `REACT_APP_STAGE` ist `prod` | Setzen Sie `REACT_APP_STAGE=custom` beim B1Admin-Dienst |
-| Subdomain-Kirchen zeigen alle denselben Inhalt | `REACT_APP_B1_WEBSITE_URL` enthält nicht das Token `{subdomain}` | Setzen Sie es z. B. auf `https://{subdomain}.yourchurch.org` |
-| Eigene Domain zeigt „Application not found" | DNS noch nicht verbreitet, oder Railway-Zertifikat ausstehend | 5 Minuten warten; DNS mit `dig admin.yourchurch.org` prüfen |
+| Build schlägt fehl mit `EBUSY: rmdir '/app/node_modules/.cache'` | Konflikt beim Cache-Mount von Nixpacks | Setzen Sie `NIXPACKS_NO_CACHE=true` am betroffenen Dienst |
+| Build von B1Admin schlägt fehl mit `Missing: @types/...` | Veraltete `package-lock.json` | Den neuesten Stand von `main` abrufen |
+| Bereitstellung von Api hängt bei „Deploying“ | Health-Check schlägt fehl — `/health` liefert keine 200 | Bereitstellungsprotokolle ansehen; meist fehlt eine erforderliche Umgebungsvariable |
+| B1Admin zeigt „check your email“, aber keine E-Mail kommt an | `MAIL_SYSTEM=SMTP` gesetzt, aber Zugangsdaten fehlen oder sind falsch | Zugangsdaten korrigieren oder `MAIL_SYSTEM` entfernen, um E-Mail zu deaktivieren |
+| Anmeldung leitet auf `api.churchapps.org` um | `REACT_APP_STAGE` ist `prod` | Setzen Sie `REACT_APP_STAGE=custom` am Dienst B1Admin |
+| Alle Gemeinden mit Subdomain zeigen denselben Inhalt | `REACT_APP_B1_WEBSITE_URL` enthält nicht den Platzhalter `{subdomain}` | Setzen Sie z. B. `https://{subdomain}.yourchurch.org` |
+| Eigene Domain zeigt „Application not found“ | DNS noch nicht verbreitet oder Zertifikat von Railway ausstehend | 5 Minuten warten; DNS mit `dig admin.yourchurch.org` prüfen |
 
-Wenn Sie auf etwas stoßen, das hier nicht aufgeführt ist, öffnen Sie ein Issue unter [github.com/ChurchApps/Api/issues](https://github.com/ChurchApps/Api/issues) mit angehängten Deploy-Logs.
+Falls Sie auf etwas stoßen, das hier nicht aufgeführt ist, eröffnen Sie ein Issue unter [github.com/ChurchApps/Api/issues](https://github.com/ChurchApps/Api/issues) und fügen Sie die Bereitstellungsprotokolle bei.
 
 ## Verwandte Artikel
 
-- **[Self-Hosting mit Docker](./docker)** — Derselbe Stack auf Ihrer eigenen Hardware oder einem VPS
-- **[Ersteinrichtung](../../getting-started/initial-setup)** — Erste Schritte, nachdem Ihre Kirche angelegt wurde
-- **[Website-Ersteinrichtung](../../b1-admin/website/initial-setup)** — Die öffentliche Website Ihrer Kirche konfigurieren
-- **[Spendeneinstellungen](../../b1-admin/donations/online-giving-setup)** — Stripe oder PayPal einrichten
-- **[Lokale API-Einrichtung](../api/local-setup)** — Den Stack lokal für die Entwicklung ausführen
-- **[API-Deployment (AWS)](./apis)** — Wie das offizielle ChurchApps-SaaS bereitgestellt wird
+- **[Selbst-Hosting mit Docker](./docker)** — derselbe Stack auf eigener Hardware oder einem VPS
+- **[Ersteinrichtung](../../getting-started/initial-setup)** — erste Schritte, nachdem Ihre Gemeinde angelegt wurde
+- **[Website-Ersteinrichtung](../../b1-admin/website/initial-setup)** — Konfiguration der öffentlichen Website Ihrer Gemeinde
+- **[Spendeneinstellungen](../../b1-admin/donations/online-giving-setup)** — Stripe oder PayPal anbinden
+- **[Lokale API-Einrichtung](../api/local-setup)** — den Stack lokal für die Entwicklung ausführen
+- **[API-Bereitstellung (AWS)](./apis)** — wie das offizielle SaaS von ChurchApps bereitgestellt wird

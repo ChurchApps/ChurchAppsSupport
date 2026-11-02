@@ -41,7 +41,7 @@ B1 Church Checkin works best on a 10-inch tablet (iPad or Android) mounted in la
 :::
 
 :::info
-Before using B1 Church Checkin, your church administrator needs to configure services, service times, and groups in B1 Admin. See the [attendance setup guide](../b1-admin/attendance/setup.md) for details.
+Before using B1 Church Checkin, your church administrator needs to configure services, service times, and groups in B1 Admin. See the [attendance setup guide](../b1-admin/attendance/setup.md) for details. The account that signs in to the kiosk needs the **Checkin** attendance permission; see [Check-In Kiosk Accounts](../b1-admin/settings/roles-permissions.md#check-in-kiosk-accounts).
 :::
 
 For support, email [support@churchapps.org](mailto:support@churchapps.org).

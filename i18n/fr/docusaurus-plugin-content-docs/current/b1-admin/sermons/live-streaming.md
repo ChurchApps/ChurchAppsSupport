@@ -6,128 +6,128 @@ title: "Diffusion en direct"
 
 <div class="article-intro">
 
-La page Horaires de diffusion en direct vous permet de configurer le calendrier de diffusion de votre église, de gérer les horaires de service et de personnaliser l'expérience des spectateurs. Configurez des services hebdomadaires récurrents ou des événements ponctuels, configurez les paramètres du chat et de la vidéo, et contrôlez quand votre diffusion devient active.
+La page Heures de diffusion en direct vous permet de configurer le calendrier de diffusion de votre église, de gérer les horaires de service et de personnaliser l'expérience des téléspectateurs. Configurez des services hebdomadaires récurrents ou des événements ponctuels, réglez le clavardage et la vidéo, et contrôlez le moment où votre diffusion démarre.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vous avez besoin de la permission **contentApi.streamingServices.edit**. Voir [Rôles et permissions](../settings/roles-permissions.md) si vous n'avez pas accès.
-- Ayez votre identifiant de canal YouTube prêt si vous prévoyez d'utiliser la diffusion en direct automatisée
-- Ajoutez au moins un [sermon](managing-sermons) ou une URL en direct permanente à utiliser comme source de votre flux
+- Vous avez besoin de l'autorisation **contentApi.streamingServices.edit**. Voir [Rôles et autorisations](../settings/roles-permissions.md) si vous n'y avez pas accès.
+- Ayez à portée de main l'identifiant de votre chaîne YouTube si vous prévoyez utiliser la diffusion en direct automatisée
+- Ajoutez au moins un [sermon](managing-sermons) ou une URL de diffusion permanente à utiliser comme source de votre flux
 
 </div>
 
-La diffusion en direct se gère depuis deux pages de la section **Sermons** du menu de saut : **Horaires de diffusion en direct** pour gérer votre calendrier de diffusion en direct et **Paramètres** pour configurer les onglets de votre page de diffusion.
+La diffusion en direct se gère depuis deux pages de la section **Sermons** du menu de navigation rapide : **Heures de diffusion en direct** pour gérer le calendrier de diffusion, et **Paramètres** pour configurer les onglets de votre page de diffusion.
 
-## Gestion des services
+## Gérer les services
 
-### Ajout d'un service
+### Ajouter un service
 
-1. Dans B1 Admin, ouvrez le [menu de saut](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Sermons**, et cliquez sur **Horaires de diffusion en direct**.
-2. Cliquez sur le bouton **Ajouter un service** en haut de la page pour créer un nouveau service planifié. Les services existants sont listés dans un tableau indiquant le nom, l'heure, le fournisseur et la durée de chaque service ; cliquez sur l'icône de modification d'une ligne pour la changer.
-3. Entrez un **Nom du service** (par exemple, « Dimanche matin »).
-4. Définissez l'**Heure du service** -- choisissez le jour et l'heure du début de votre service.
-5. Définissez **Récurrence hebdomadaire** sur **Oui** pour les services hebdomadaires réguliers, ou **Non** pour un événement ponctuel.
+1. Dans B1 Admin, ouvrez le [menu de navigation rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Sermons**, puis cliquez sur **Heures de diffusion en direct**.
+2. Cliquez sur le bouton **Ajouter un service** en haut de la page pour créer un nouveau service planifié. Les services existants sont listés dans un tableau indiquant le nom, l'heure, le fournisseur et la durée de chaque service ; cliquez sur l'icône de modification d'une ligne pour la modifier.
+3. Saisissez un **nom de service** (par exemple « Dimanche matin »).
+4. Réglez l'**heure du service** -- choisissez le jour et l'heure de début de votre service.
+5. Réglez **Se répète chaque semaine** sur **Oui** pour les services hebdomadaires réguliers, ou **Non** pour un événement ponctuel.
 
-### Configuration des paramètres du chat et de la vidéo
+### Configurer le clavardage et la vidéo
 
-6. Sous **Paramètres du chat**, définissez combien de minutes avant et après le service le chat doit être activé. Cela permet aux visiteurs de commencer à discuter avant le début du service et de continuer après.
-7. Sous **Paramètres vidéo**, définissez à quelle distance d'avance pour commencer le flux vidéo pour le compte à rebours ou le contenu avant le service.
-8. Sélectionnez quel sermon jouer dans le menu déroulant :
-   - **Dernier sermon** -- Joue automatiquement votre vidéo la plus récemment ajoutée.
-   - **Service en direct actuel** -- Joue votre diffusion en direct actuelle depuis YouTube en utilisant votre identifiant de canal.
-   - Vous pouvez également choisir n'importe quel sermon spécifique que vous avez déjà enregistré.
+6. Sous **Paramètres du clavardage**, réglez le nombre de minutes avant et après le service pendant lesquelles le clavardage est activé. Cela permet aux visiteurs de commencer à discuter avant le service et de continuer après.
+7. Sous **Paramètres vidéo**, réglez à quel moment démarrer le flux vidéo pour le compte à rebours ou le contenu précédant le service. Le clavardage s'ouvre ce nombre de minutes *avant* le début anticipé de la vidéo ; le temps affiché à côté du réglage des minutes avant le clavardage additionne donc les deux nombres. Par exemple, pour un service à 10 h avec 15 minutes de clavardage avant et un démarrage anticipé de 5 minutes, le clavardage s'ouvre à 9 h 40.
+8. Sélectionnez le sermon à diffuser dans la liste déroulante :
+   - **Dernier sermon** -- Lit automatiquement la vidéo la plus récemment ajoutée.
+   - **Service en direct actuel** -- Diffuse votre flux en direct actuel depuis YouTube à l'aide de votre identifiant de chaîne.
+   - Vous pouvez aussi choisir n'importe quel sermon précis déjà enregistré.
 9. Cliquez sur **Enregistrer** pour planifier votre service.
 
 :::info
-Votre service sera automatiquement mis à jour chaque semaine s'il est défini comme récurrent. Vous pouvez ajouter autant de services que vous le souhaitez. Les visiteurs verront l'heure du prochain service planifié quand ils visiteront votre page de diffusion.
+Votre service se mettra automatiquement à jour chaque semaine s'il est récurrent. Il reste à la même heure locale lors du passage à l'heure avancée ou à l'heure normale. Vous pouvez ajouter autant de services que nécessaire. Les visiteurs verront la prochaine heure de service planifiée lorsqu'ils consulteront votre page de diffusion.
 :::
 
 ## Paramètres de la page de diffusion
 
-Pour personnaliser les onglets et les liens qui apparaissent aux côtés de votre diffusion en direct, ouvrez le menu de saut, développez **Sermons**, et cliquez sur **Paramètres**. La page **Paramètres de diffusion** affiche votre liste **Onglets de contenu**.
+Pour personnaliser les onglets et les liens qui apparaissent à côté de votre diffusion en direct, ouvrez le menu de navigation rapide, développez **Sermons**, et cliquez sur **Paramètres**. La page **Paramètres de diffusion** affiche votre liste **Onglets de contenu**.
 
-### Ajout d'onglets
+### Ajouter des onglets
 
 1. Cliquez sur le bouton **Ajouter** pour ajouter un nouvel onglet à votre page de diffusion en direct.
-2. Choisissez un **Type de lien** : **URL externe** pour un lien personnalisé, ou l'un des onglets prédéfinis **Chat** ou **Prière**.
-3. Pour l'onglet Chat, donnez-lui simplement un nom dans la boîte **Texte de l'onglet** et la configuration est terminée.
-4. Pour un onglet lié, entrez le nom de l'onglet, choisissez une icône en cliquant sur le bouton d'icône, et entrez l'URL.
-5. Vos onglets configurés apparaîtront sur la page de diffusion en direct pour que les spectateurs accèdent aux ressources supplémentaires et aux fonctionnalités interactives.
+2. Choisissez un **type de lien** : **URL externe** pour un lien personnalisé, ou l'un des onglets préconçus **Clavardage** ou **Prière**.
+3. Pour l'onglet Clavardage, il suffit de lui donner un nom dans la zone **Texte de l'onglet** pour terminer la configuration.
+4. Pour un onglet lié, saisissez le nom de l'onglet, choisissez une icône en cliquant sur le bouton d'icône, et saisissez l'URL.
+5. Vos onglets configurés apparaîtront sur la page de diffusion en direct, pour que les téléspectateurs accèdent à des ressources supplémentaires et à des fonctions interactives.
 
-### Aperçu de votre diffusion
+### Prévisualiser votre diffusion
 
-Sur la page **Horaires de diffusion en direct**, cliquez sur le bouton **Voir votre diffusion** en haut de la page pour voir exactement comment votre page de diffusion en direct apparaîtra aux visiteurs, y compris votre logo, les horaires de service et les onglets configurés.
+Sur la page **Heures de diffusion en direct**, cliquez sur **Voir votre diffusion** en haut de la page pour voir exactement l'apparence de votre page de diffusion en direct pour les visiteurs, y compris votre logo, vos horaires de service et vos onglets configurés.
 
-## Configuration de votre diffusion en direct YouTube
+## Configurer votre diffusion YouTube en direct
 
-Pour connecter votre canal YouTube pour la diffusion en direct automatisée :
+Pour connecter votre chaîne YouTube à la diffusion en direct automatisée :
 
-1. Allez à **Sermons** et cliquez sur **Ajouter un sermon**, puis sélectionnez **Ajouter une URL en direct permanente**.
-2. Le fournisseur vidéo a pour défaut **Diffusion en direct YouTube actuelle**. Entrez votre **identifiant de canal YouTube**.
+1. Allez dans **Sermons** et cliquez sur **Ajouter un sermon**, puis sélectionnez **Ajouter une URL de diffusion permanente**.
+2. Le fournisseur vidéo est réglé par défaut sur **Flux YouTube en direct actuel**. Saisissez votre **identifiant de chaîne YouTube**.
 3. Ajoutez un titre et une description, puis cliquez sur **Enregistrer**.
-4. Dans **Horaires de diffusion en direct**, créez un service et sélectionnez votre URL en direct permanente dans le menu déroulant des sermons.
+4. Dans **Heures de diffusion en direct**, créez un service et sélectionnez votre URL de diffusion permanente dans la liste déroulante des sermons.
 
 :::tip
-Pour trouver votre identifiant de canal YouTube, allez aux paramètres avancés de votre canal YouTube et copiez la valeur de l'identifiant de canal.
+Pour trouver l'identifiant de votre chaîne YouTube, allez dans les paramètres avancés de votre chaîne YouTube et copiez la valeur de l'identifiant de chaîne.
 :::
 
-## Personnalisation des couleurs et du logo
+## Personnaliser les couleurs et le logo
 
-Votre page de diffusion en direct utilise les paramètres [Apparence](../website/appearance) de votre site Web :
+Votre page de diffusion en direct utilise les paramètres d'[apparence](../website/appearance) de votre site web :
 
-- La **couleur d'accent clair** avec texte sombre est utilisée pour l'en-tête.
-- La **couleur d'accent sombre** avec texte clair est utilisée pour la barre latérale.
-- Votre **Logo de fond clair** apparaît sur la page de diffusion. Utilisez une image avec un arrière-plan transparent et un rapport d'aspect 4:1.
+- La **couleur d'accent claire** avec un texte foncé est utilisée pour l'en-tête.
+- La **couleur d'accent foncée** avec un texte clair est utilisée pour la barre latérale.
+- Votre **logo pour fond clair** apparaît sur la page de diffusion. Utilisez une image au fond transparent et au ratio 4:1.
 
-Pour modifier ceux-ci, allez à **Site Web** puis à **Apparence** et mettez à jour vos paramètres de [Palette de couleurs](../website/appearance#color-palette) et de [Logo](../website/appearance#logo-and-branding).
+Pour modifier ces éléments, allez dans **Site web**, puis **Apparence**, et mettez à jour vos paramètres de [palette de couleurs](../website/appearance#color-palette) et de [logo](../website/appearance#logo-and-branding).
 
-## Ajout d'animateurs de diffusion
+## Ajouter des animateurs de diffusion
 
-Pour donner aux membres de l'équipe l'accès au chat réservé aux animateurs aux côtés du chat public :
+Pour donner aux membres de l'équipe accès au clavardage réservé aux animateurs, en plus du clavardage public :
 
-1. Dans le menu de saut, choisissez **Paramètres > Rôles**.
+1. Dans le menu de navigation rapide, choisissez **Paramètres > Rôles**.
 2. Cliquez sur le bouton plus et sélectionnez **Ajouter un rôle personnalisé**.
 3. Nommez le rôle « Animateur de diffusion » et cliquez sur **Enregistrer**.
-4. Cliquez sur le nouveau rôle, puis cliquez sur **Ajouter** dans la section Membres pour ajouter des personnes.
-5. Faites défiler vers le bas jusqu'à **Modifier les permissions**, développez la section **Contenu**, et cochez **Chat d'animateur**.
+4. Cliquez sur le nouveau rôle, puis sur **Ajouter** dans la section Membres pour ajouter des personnes.
+5. Faites défiler jusqu'à **Modifier les autorisations**, développez la section **Contenu** et cochez **Clavardage des animateurs**.
 
-Quand les animateurs se connectent à la page de diffusion en direct, un onglet **Chat d'animateur** privé apparaît aux côtés du chat public pour la conversation réservée au personnel pendant la diffusion.
+Lorsque les animateurs se connectent à la page de diffusion en direct, un onglet privé **Clavardage des animateurs** apparaît à côté du clavardage public, pour des échanges réservés au personnel pendant la diffusion.
 
 :::info
-Pour plus de détails sur la création de rôles et la gestion des permissions, voir [Rôles et permissions](../settings/roles-permissions.md).
+Pour plus de détails sur la création de rôles et la gestion des autorisations, consultez [Rôles et autorisations](../settings/roles-permissions.md).
 :::
 
 ## Dépannage
 
-Si votre diffusion en direct YouTube automatisée ne s'affiche pas correctement lors de l'utilisation de l'option « Diffusion en direct YouTube actuelle » avec votre identifiant de canal, essayez les éléments suivants :
+Si votre diffusion YouTube automatisée ne s'affiche pas correctement lorsque vous utilisez l'option « Flux YouTube en direct actuel » avec votre identifiant de chaîne, essayez ce qui suit :
 
 **Symptômes :**
-- L'intégration de diffusion en direct affiche « Vidéo indisponible »
+- L'intégration du flux affiche « Vidéo indisponible »
 - La page se charge mais aucune vidéo n'apparaît
-- Les intégrations YouTube directes fonctionnent, mais la diffusion en direct de canal automatisée ne fonctionne pas
+- Les intégrations YouTube directes fonctionnent, mais le flux automatisé de la chaîne ne fonctionne pas
 
-**Solution**
-Vérifiez votre canal YouTube pour les diffusions en direct anciennes ou à venir programmées et supprimez-les :
+**Solution :**
+Vérifiez dans votre chaîne YouTube s'il existe d'anciens flux en direct ou des flux à venir programmés, et supprimez-les :
 
-1. Allez à votre YouTube Studio.
-2. Accédez à **Contenu** puis à **En direct**.
-3. Recherchez les anciennes diffusions programmées ou les flux en direct programmés à venir.
-4. Supprimez ces anciennes entrées ou entrées de diffusion en direct programmées.
+1. Allez dans YouTube Studio.
+2. Accédez à **Contenu**, puis **En direct**.
+3. Repérez les anciens directs programmés ou les flux programmés à venir.
+4. Supprimez ces anciennes entrées ou ces flux programmés.
 5. Testez à nouveau votre page de diffusion en direct.
 
 :::warning
-L'intégration de diffusion en direct de canal automatisée de YouTube peut être bloquée lorsqu'il y a plusieurs entrées de diffusion en direct programmées ou passées dans votre canal. La suppression de celles-ci permet à YouTube d'identifier correctement et de servir votre diffusion en direct actuelle.
+L'intégration automatisée du flux en direct de la chaîne YouTube peut être bloquée lorsque votre chaîne compte plusieurs entrées de diffusion programmées ou passées. Les supprimer permet à YouTube de bien identifier et de diffuser votre flux en direct actuel.
 :::
 
 **Exigences supplémentaires :**
-- Votre diffusion en direct doit être définie sur **Publique** (pas Non listé ou Privé).
-- L'intégration doit être autorisée dans vos paramètres de diffusion en direct YouTube.
-- Assurez-vous que vous utilisez le fournisseur **Diffusion en direct YouTube actuelle** (avec identifiant de canal), pas le fournisseur **YouTube** (avec identifiant vidéo).
+- Votre flux en direct doit être réglé sur **Public** (et non Non répertorié ou Privé).
+- L'intégration doit être autorisée dans les paramètres de diffusion de votre YouTube.
+- Assurez-vous d'utiliser le fournisseur **Flux YouTube en direct actuel** (avec identifiant de chaîne), et non le fournisseur **YouTube** (avec identifiant vidéo).
 
-## Prochaines étapes
+## Et ensuite
 
-- [Gestion des sermons](managing-sermons) -- Ajoutez des sermons à votre bibliothèque
-- [Listes de lecture](playlists) -- Organisez les sermons en séries
+- [Gérer les sermons](managing-sermons) -- Ajouter des sermons à votre bibliothèque
+- [Listes de lecture](playlists) -- Organiser les sermons en séries

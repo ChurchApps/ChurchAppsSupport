@@ -1,69 +1,69 @@
 ---
-title: "Jumeler un écran"
+title: "Associer un écran"
 ---
 
-# Jumeler un écran
+# Associer un écran
 
 <div class="article-intro">
 
-Pour afficher un calendrier sur un téléviseur, jumelez-le avec **FreePlay Admin**. Le téléviseur affiche un code à quatre lettres. Vous saisissez ce code sur [admin.freeplay.church](https://admin.freeplay.church) et choisissez le groupe d'écrans dont le calendrier doit être suivi. Vous ne faites cette opération qu'une seule fois par téléviseur.
+Pour placer un téléviseur sur un calendrier, associez-le à **FreePlay Admin**. Le téléviseur affiche un code de quatre lettres. Vous saisissez ce code sur [admin.freeplay.church](https://admin.freeplay.church) et choisissez le groupe d'écrans dont le calendrier doit être suivi. Vous ne faites cette opération qu'une seule fois par téléviseur.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Installez et lancez FreePlay sur le téléviseur. Consultez [Premiers pas](../getting-started/)
+- Installez et lancez FreePlay sur le téléviseur. Voir [Pour commencer](../getting-started/)
 - Ayez un compte ChurchApps pour votre église afin de vous connecter à FreePlay Admin
-- Facultatif : [créez une liste de lecture](./building-playlists) et [planifiez-la](./scheduling-the-calendar) d'abord, afin que le téléviseur ait quelque chose à lire immédiatement
+- Facultativement, [créez une liste de lecture](./building-playlists) et [planifiez-la](./scheduling-the-calendar) d'abord, afin que le téléviseur ait quelque chose à lire immédiatement
 
 </div>
 
 ## Afficher le code sur le téléviseur
 
-1. Sur le téléviseur, ouvrez **Paramètres** au bas de la barre latérale.
-2. Sélectionnez **Jumeler à un calendrier**. La ligne affiche **Non jumelé** tant que le téléviseur n'est pas jumelé.
-3. L'écran **Jumeler cet écran** affiche un code QR et un code de jumelage à quatre lettres, avec le message **Scannez avec votre téléphone, ou allez sur freeplay.church/pair et saisissez ce code**.
-4. Sous le code, **En attente de confirmation** pulse pendant que FreePlay attend que vous terminiez le jumelage.
+1. Sur le téléviseur, ouvrez **Paramètres** au bas du panneau latéral.
+2. Sélectionnez **Associer à un calendrier**. La ligne affiche **Non associé** tant que le téléviseur n'est pas associé.
+3. L'écran **Associer cet écran** affiche un code QR et un code d'association de quatre lettres, avec le message **Scannez avec votre téléphone, ou allez à freeplay.church/pair et saisissez ce code**.
+4. Sous le code, **En attente de confirmation** clignote pendant que FreePlay attend que vous terminiez l'association.
 
-Le code est valide 15 minutes, et un compte à rebours sous celui-ci indique le temps restant. Lorsque le temps est écoulé, FreePlay affiche automatiquement un nouveau code. Vous pouvez aussi sélectionner **Générer un nouveau code** pour en obtenir un frais, ou **Annuler** pour revenir aux Paramètres.
+Le code est valable 15 minutes, et un compte à rebours sous le code indique le temps restant. Lorsque le temps est écoulé, FreePlay affiche automatiquement un nouveau code. Vous pouvez aussi sélectionner **Générer un nouveau code** pour en obtenir un neuf, ou **Annuler** pour revenir aux Paramètres.
 
-## Jumeler dans FreePlay Admin
+## Associer dans FreePlay Admin
 
-1. Scannez le code QR avec votre téléphone, ou allez sur **freeplay.church/pair** depuis n'importe quel ordinateur ou téléphone. Connectez-vous si vous y êtes invité. FreePlay Admin ouvre le formulaire **Jumeler un écran** avec le code déjà saisi.
-   - Vous pouvez aussi ouvrir le formulaire vous-même. Rendez-vous dans **Écrans** dans FreePlay Admin et cliquez sur **Jumeler un écran**.
-2. Vérifiez le **code de jumelage**. Ce sont les quatre lettres affichées sur le téléviseur.
-3. Saisissez une **étiquette** pour distinguer ce téléviseur des autres, par exemple « Hall gauche ». Ce champ est facultatif.
-4. Sous **Groupe**, choisissez le groupe d'écrans dont ce téléviseur doit suivre le calendrier. Pour en créer un nouveau, choisissez **＋ Nouveau groupe…** et saisissez un **Nom du nouveau groupe**.
-5. Sous **Mode**, laissez **Planifié** sélectionné. Le téléviseur jouera selon le calendrier du groupe, de lui-même.
-6. Cliquez sur **Jumeler**.
+1. Scannez le code QR avec votre téléphone, ou allez à **freeplay.church/pair** sur n'importe quel ordinateur ou téléphone. Connectez-vous si on vous le demande. FreePlay Admin ouvre le formulaire **Associer un écran** avec le code déjà saisi.
+   - Vous pouvez aussi ouvrir le formulaire vous-même. Allez à **Écrans** dans FreePlay Admin et cliquez sur **Associer un écran**.
+2. Vérifiez le **code d'association**. Ce sont les quatre lettres affichées sur le téléviseur.
+3. Saisissez un **libellé** pour distinguer ce téléviseur des autres, par exemple « Hall gauche ». Ce champ est facultatif.
+4. Sous **Groupe**, choisissez le groupe d'écrans dont ce téléviseur doit suivre le calendrier. Pour en créer un nouveau, choisissez **＋ Nouveau groupe…** et saisissez un **nom du nouveau groupe**.
+5. Sous **Mode**, laissez **Planifié** sélectionné. Le téléviseur jouera selon le calendrier du groupe, de façon autonome.
+6. Cliquez sur **Associer**.
 
-Le téléviseur affiche **Connecté !** puis **Chargement de votre horaire...**. Il télécharge ce qui est planifié et commence la lecture. Consultez [Lecture planifiée sur le téléviseur](./scheduled-playback).
+Le téléviseur affiche **Connecté !** puis **Chargement de votre horaire...**. Il télécharge le contenu planifié et commence la lecture. Voir [Lecture planifiée sur le téléviseur](./scheduled-playback).
 
 :::info
-Si FreePlay Admin affiche **Ce code ne correspond à aucun téléviseur**, vérifiez le code à l'écran. S'il a expiré, utilisez le nouveau code que le téléviseur affiche maintenant.
+Si FreePlay Admin indique **Ce code ne correspond à aucun téléviseur**, vérifiez le code affiché à l'écran. S'il a expiré, utilisez le nouveau code que le téléviseur affiche maintenant.
 :::
 
 ### Planifié ou manuel
 
-L'option **Mode** a deux choix :
+Le paramètre **Mode** propose deux options :
 
-- **Planifié** -- Joue selon le calendrier du groupe, de lui-même. Personne n'a besoin d'appuyer sur Démarrer.
-- **Manuel** -- Quelqu'un choisit le contenu avec la télécommande. Un écran manuel apparaît toujours dans votre liste **Écrans**, mais il ne suit pas de calendrier ; le champ **Groupe** est donc désactivé.
+- **Planifié** - Joue selon le calendrier du groupe, de façon autonome. Personne n'a besoin d'appuyer sur Démarrer.
+- **Manuel** - Une personne choisit le contenu avec la télécommande. Un écran manuel apparaît toujours dans votre liste **Écrans**, mais il ne suit pas de calendrier ; le champ **Groupe** est donc désactivé.
 
 Vous pouvez changer le mode d'un écran plus tard depuis **Modifier** sur la [page Écrans](./managing-screens).
 
-## Jumeler à un plan de service plutôt
+## Associer à un plan de service à la place
 
-Le code de la page **Jumeler cet écran** fonctionne aussi dans B1 Admin. Si vous le saisissez là-bas et choisissez un type de plan sous **Afficher les plans pour**, le téléviseur suit ce type de plan dans le [Mode plan](../plan-mode/) au lieu d'un calendrier. Consultez [Jumeler votre appareil](../plan-mode/device-pairing).
+Le code de l'écran **Associer cet écran** fonctionne aussi dans B1 Admin. Si vous le saisissez là-bas et choisissez un type de plan sous **Afficher les plans pour**, le téléviseur suit ce type de plan dans le [Mode plan](../plan-mode/) au lieu d'un calendrier. Voir [Associer votre appareil](../plan-mode/device-pairing).
 
 ## Changer ou dissocier depuis le téléviseur {#changing-or-unpairing-from-the-tv}
 
-Une fois le téléviseur jumelé, la ligne **Jumeler à un calendrier** dans **Paramètres** affiche le nom du groupe d'écrans qu'il suit. Sélectionnez la ligne pour ouvrir la boîte de dialogue **Jumelé à**, qui propose trois options :
+Une fois le téléviseur associé, la ligne **Associer à un calendrier** dans **Paramètres** affiche le nom du groupe d'écrans qu'il suit. Sélectionnez cette ligne pour ouvrir la boîte de dialogue **Associé à**, qui propose trois options :
 
-- **Retour à l'horaire** -- Ferme la boîte de dialogue et revient au lecteur planifié. Le jumelage ne change pas.
-- **Dissocier** -- Arrête de suivre un calendrier. FreePlay ouvre l'écran **Fournisseurs de contenu**.
-- **Jumeler à un autre calendrier** -- Dissocie, puis affiche un nouveau code de jumelage pour que vous puissiez jumeler de nouveau le téléviseur.
+- **Retour au calendrier** - Ferme la boîte de dialogue et revient au lecteur planifié. L'association ne change pas.
+- **Dissocier** - Arrête de suivre un calendrier. FreePlay ouvre l'écran **Fournisseurs de contenu**.
+- **Associer à un autre calendrier** - Dissocie, puis affiche un nouveau code d'association pour que vous puissiez associer à nouveau le téléviseur.
 
 :::warning
 Dissocier supprime les fichiers que FreePlay a téléchargés pour ce calendrier.
@@ -71,14 +71,14 @@ Dissocier supprime les fichiers que FreePlay a téléchargés pour ce calendrier
 
 ## Dissocier depuis FreePlay Admin
 
-1. Allez dans **Écrans** et cliquez sur l'étiquette de l'écran.
+1. Allez à **Écrans** et cliquez sur le libellé de l'écran.
 2. Cliquez sur **Plus**, puis sur **Dissocier**.
 3. Cliquez de nouveau sur **Dissocier** pour confirmer.
 
-Le téléviseur revient à l'affichage d'un code de jumelage. Jumelez-le à nouveau chaque fois que vous le souhaitez.
+Le téléviseur revient à l'affichage d'un code d'association. Associez-le à nouveau quand vous le souhaitez.
 
 ## Articles connexes
 
 - **[Gérer les écrans et les groupes](./managing-screens)** - Renommer un écran, le déplacer dans un autre groupe ou vérifier ses téléchargements
 - **[Planifier le calendrier](./scheduling-the-calendar)** - Décider ce que jouent les écrans du groupe
-- **[Choisir un mode de jumelage](../getting-started/pairing-modes)** - Comparer le mode planifié, le mode plan et la consultation des fournisseurs par vous-même
+- **[Choisir un mode d'association](../getting-started/pairing-modes)** - Comparer le mode planifié, le mode plan et la navigation manuelle chez les fournisseurs

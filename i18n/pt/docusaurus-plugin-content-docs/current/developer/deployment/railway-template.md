@@ -1,116 +1,116 @@
 ---
-title: "Auto-Hospedagem no Railway"
+title: "Auto-hospedagem no Railway"
 ---
 
-# Auto-Hospedagem no Railway
+# Auto-hospedagem no Railway
 
 <div class="article-intro">
 
-ChurchApps publica um modelo de um clique do [Railway](https://railway.com) que oferece à sua igreja sua própria instância privada do B1 Admin, do portal de membros B1, da API e de um banco de dados MySQL -- tudo funcionando em infraestrutura que você possui e paga diretamente. Este guia o coloca ao vivo em cerca de 15 minutos e depois o orienta pela configuração pós-implantação que a maioria das igrejas eventualmente deseja.
+O ChurchApps publica um modelo de um clique para o [Railway](https://railway.com) que dá à sua igreja uma instância privada do B1 Admin, do portal de membros B1, da API e de um banco de dados MySQL — tudo rodando em uma infraestrutura que você possui e paga diretamente. Este guia coloca tudo no ar em cerca de 15 minutos e depois percorre a configuração pós-implantação que a maioria das igrejas acaba querendo.
 
 </div>
 
-## Início Rápido
+## Início rápido
 
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/b1-template)
 
 1. Clique no botão **Deploy on Railway** acima.
-2. Entre no Railway (ou crie uma conta gratuita) e adicione um método de pagamento.
-3. Clique em **Deploy** sem mudar nada -- cada variável tem um padrão sensato.
-4. Aguarde 5-10 minutos para que os quatro serviços fiquem verdes.
-5. Abra a URL do serviço **B1Admin**, clique em **Register** e crie sua conta. A primeira conta é automaticamente um administrador de servidor.
+2. Entre no Railway (ou crie uma conta gratuita) e adicione uma forma de pagamento.
+3. Clique em **Deploy** sem alterar nada — cada variável tem um padrão sensato.
+4. Espere de 5 a 10 minutos até os quatro serviços ficarem verdes.
+5. Abra a URL do serviço **B1Admin**, clique em **Registrar** e crie sua conta. A primeira conta é automaticamente administradora do servidor.
 6. Siga as instruções no aplicativo para criar sua primeira igreja.
 
-Isso é tudo. Você agora tem uma instância ChurchApps totalmente funcional. Tudo abaixo é polimento opcional.
+Pronto. Você já tem uma instância do ChurchApps totalmente funcional. Tudo abaixo é um acabamento opcional.
 
 :::tip
-A implantação está atualmente em **beta**. Se você encontrar algo que os documentos não cobrem, abra uma issue em [github.com/ChurchApps/Api/issues](https://github.com/ChurchApps/Api/issues) com os logs de implantação anexados.
+A implantação está atualmente em **beta**. Se você encontrar algo que a documentação não cobre, abra uma issue em [github.com/ChurchApps/Api/issues](https://github.com/ChurchApps/Api/issues) com os logs de implantação anexados.
 :::
 
 <div class="prereqs">
-<h4>O Que Você Precisa</h4>
+<h4>O que você precisa</h4>
 
-- Uma conta [Railway](https://railway.com) gratuita
-- Um cartão de crédito registrado no Railway (~$15–25/mês para uma pequena congregação; veja [Custos](#costs))
+- Uma conta gratuita no [Railway](https://railway.com)
+- Um cartão de crédito cadastrado no Railway (cerca de US$ 15–25/mês para uma congregação pequena; veja [Custos](#costs))
 - Cerca de 15 minutos para a implantação inicial
-- *Opcional, mas fortemente recomendado depois:* credenciais SMTP e um domínio customizado
+- *Opcional, mas fortemente recomendado depois:* credenciais SMTP e um domínio personalizado
 
 </div>
 
-## O Que É Implantado
+## O que é implantado
 
-O modelo provisiona quatro serviços em um único projeto Railway:
+O modelo provisiona quatro serviços em um único projeto do Railway:
 
 | Serviço | Finalidade | URL após a implantação |
-|---------|---------|------------------|
-| **MySQL** | Armazena todos os dados (uma instância, múltiplos esquemas) | apenas interno |
-| **Api** | Backend para membership, content, giving, attendance, etc. | `https://api-<id>.up.railway.app` |
-| **B1Admin** | Aplicação web de equipe/administração | `https://b1admin-<id>.up.railway.app` |
-| **B1App** | Aplicação web voltada para membros e site da igreja | `https://b1app-<id>.up.railway.app` |
+|---------|------------|------------------------|
+| **MySQL** | Armazena todos os dados (uma instância, vários esquemas) | somente interna |
+| **Api** | Backend de membership, conteúdo, doações, presença etc. | `https://api-<id>.up.railway.app` |
+| **B1Admin** | Aplicativo web da equipe/administração | `https://b1admin-<id>.up.railway.app` |
+| **B1App** | Aplicativo web para membros e site da igreja | `https://b1app-<id>.up.railway.app` |
 
-Os esquemas do banco de dados são criados automaticamente no primeiro lançamento pela migração de inicialização da API.
+Os esquemas do banco de dados são criados automaticamente no primeiro start pela migração de inicialização da API.
 
-## Configuração Inicial
+## Configuração inicial
 
-Agora que você está funcionando, aqui estão as coisas que a maioria das igrejas configura em seguida, em ordem aproximada de prioridade.
+Agora que está no ar, estas são as coisas que a maioria das igrejas configura em seguida, mais ou menos por ordem de prioridade.
 
-### 1. E-mail (Altamente Recomendado) {#1-email-highly-recommended}
+### 1. E-mail (altamente recomendado) {#1-email-highly-recommended}
 
-Sem e-mail, os membros ainda podem se registrar e usar o sistema, mas **eles não conseguem redefinir senhas esquecidas** -- um administrador precisa fazer isso por eles. Configurar SMTP leva cerca de 5 minutos.
+Sem e-mail, os membros ainda conseguem se cadastrar e usar o sistema, mas **não conseguem redefinir uma senha esquecida** — um administrador precisa fazer isso por eles. Configurar o SMTP leva cerca de 5 minutos.
 
-No painel do Railway, abra o serviço **Api** → **Variables**, e adicione:
+No painel do Railway, abra o serviço **Api** → **Variables** e adicione:
 
 ```
 MAIL_SYSTEM=SMTP
-SMTP_HOST=<host do seu provedor>
-SMTP_USER=<seu nome de usuário>
-SMTP_PASS=<sua senha ou chave de API>
+SMTP_HOST=<your provider host>
+SMTP_USER=<your username>
+SMTP_PASS=<your password or API key>
 SMTP_SECURE=false
-SUPPORT_EMAIL=noreply@suaigreja.org
+SUPPORT_EMAIL=noreply@yourchurch.org
 ```
 
-Três provedores que vale a pena conhecer:
+Três provedores que vale conhecer:
 
-#### Resend -- opção gratuita mais simples (100 e-mails/dia)
+#### Resend — opção gratuita mais simples (100 e-mails/dia)
 
 1. Cadastre-se em [resend.com](https://resend.com).
 2. Verifique um domínio de envio (ou use o remetente de teste `onboarding@resend.dev` para começar).
 3. Crie uma chave de API.
 4. Defina `SMTP_HOST=smtp.resend.com`, `SMTP_USER=resend`, `SMTP_PASS=re_xxxxxxxxx`.
 
-#### Gmail -- gratuito para uso pessoal (~500/dia)
+#### Gmail — gratuito para uso pessoal (~500/dia)
 
-1. Ative a autenticação de dois fatores na conta Google.
-2. Crie uma [Senha de App](https://myaccount.google.com/apppasswords).
+1. Ative a verificação em duas etapas na conta do Google.
+2. Crie uma [Senha de app](https://myaccount.google.com/apppasswords).
 3. Defina `SMTP_HOST=smtp.gmail.com`, `SMTP_USER=seu-endereco@gmail.com`, `SMTP_PASS=<a senha de app de 16 caracteres>`.
 
-#### AWS SES -- mais barato em escala
+#### AWS SES — o mais barato em escala
 
 1. Verifique um domínio de envio na AWS.
-2. Saia do sandbox do SES se você for enviar para endereços não verificados.
+2. Saia do sandbox do SES se for enviar para endereços não verificados.
 3. Crie credenciais SMTP em **SES → SMTP Settings → Create credentials**.
 4. Defina `SMTP_HOST=email-smtp.us-east-2.amazonaws.com`, `SMTP_USER=AKIA...`, `SMTP_PASS=<senha SMTP do SES>`.
 
-Depois de salvar as variáveis, o serviço Api é reimplantado automaticamente. Teste-o acionando uma redefinição de senha em uma conta de teste.
+Depois de salvar as variáveis, o serviço Api é reimplantado automaticamente. Teste disparando uma redefinição de senha em uma conta de teste.
 
 :::warning
-Se você definir `MAIL_SYSTEM=SMTP` com credenciais incorretas, o registro parecerá ter sucesso, mas o e-mail de verificação nunca chega. Corrija as credenciais ou desfaça a definição de `MAIL_SYSTEM` para voltar ao modo sem e-mail.
+Se você definir `MAIL_SYSTEM=SMTP` com credenciais erradas, o cadastro vai parecer bem-sucedido, mas o e-mail de verificação nunca chega. Corrija as credenciais ou remova `MAIL_SYSTEM` para voltar ao modo sem e-mail.
 :::
 
-### 2. Domínios Customizados
+### 2. Domínios personalizados
 
 As URLs padrão `*.up.railway.app` funcionam, mas a maioria das igrejas quer as suas próprias.
 
 Para cada serviço web (B1Admin e B1App):
 
 1. Abra o serviço no Railway → **Settings** → **Networking**.
-2. Clique em **+ Custom Domain** e digite o hostname:
-   - `admin.suaigreja.org` para B1Admin
-   - `app.suaigreja.org` (ou `www`) para B1App
-3. Adicione o registro CNAME que o Railway mostra ao seu provedor de DNS.
-4. Aguarde alguns minutos para o DNS propagar. O Railway provisiona o certificado TLS automaticamente.
+2. Clique em **+ Custom Domain** e informe o nome do host:
+   - `admin.suaigreja.org` para o B1Admin
+   - `app.suaigreja.org` (ou `www`) para o B1App
+3. Adicione o registro CNAME que o Railway mostrar ao seu provedor de DNS.
+4. Aguarde alguns minutos para a propagação do DNS. O Railway provisiona o certificado TLS automaticamente.
 
-Depois atualize as variáveis do serviço **Api** para que os links nos e-mails usem os novos domínios:
+Depois, atualize as variáveis do serviço **Api** para que os links nos e-mails usem os novos domínios:
 
 ```
 B1ADMIN_ROOT=https://admin.suaigreja.org
@@ -119,59 +119,59 @@ B1ADMIN_ROOT=https://admin.suaigreja.org
 E no serviço **B1Admin**:
 
 ```
-REACT_APP_API_BASE=https://api.suaigreja.org   (se você também definiu um domínio de API customizado)
+REACT_APP_API_BASE=https://api.suaigreja.org   (se você também definir um domínio de API personalizado)
 REACT_APP_B1_WEBSITE_URL=https://{subdomain}.suaigreja.org
 ```
 
-O token `{subdomain}` é literal -- ele é substituído em tempo de execução pelo subdomínio de cada igreja (veja Multi-Site abaixo).
+O token `{subdomain}` é literal — ele é substituído em tempo de execução pelo subdomínio de cada igreja (veja Multi-Site abaixo).
 
-### 3. Multi-Site (Múltiplas Igrejas em Uma Instância) {#3-multi-site-multiple-churches-on-one-instance}
+### 3. Multi-site (várias igrejas em uma instância) {#3-multi-site-multiple-churches-on-one-instance}
 
-O ChurchApps é multilocatário por design -- uma implantação pode hospedar qualquer número de igrejas, cada uma com suas próprias pessoas, grupos e website. Novas igrejas são adicionadas inteiramente através da UI de administração; nenhuma alteração de infraestrutura é necessária.
+O ChurchApps é multi-inquilino por design — uma única implantação pode hospedar qualquer número de igrejas, cada uma com suas próprias pessoas, grupos e site. Novas igrejas são adicionadas inteiramente pela interface administrativa; não são necessárias mudanças de infraestrutura.
 
-#### Adicionando igrejas adicionais
+#### Adicionando igrejas extras
 
-1. No **B1 Admin**, navegue até **Settings → Manage Church → Switch Church → Create New**.
-2. Cada igreja tem um **slug de subdomínio** único (por ex. `firstchurch`, `gracecommunity`).
-3. A nova igreja recebe seus próprios dados, membros, website e configuração de doações, totalmente isolados das outras igrejas na mesma instância.
+1. No **B1 Admin**, acesse **Configurações → Gerenciar igreja → Trocar de igreja → Criar nova**.
+2. Cada igreja tem um **slug de subdomínio** exclusivo (por exemplo, `primeiraigreja`, `graca-comunidade`).
+3. A nova igreja recebe seus próprios dados, membros, site e configuração de doações, totalmente isolados das outras igrejas da mesma instância.
 
-#### Roteando cada igreja para sua própria URL
+#### Roteando cada igreja para a sua própria URL
 
-Duas maneiras de expor igrejas publicamente:
+Duas formas de expor as igrejas publicamente:
 
 | Padrão | Exemplo | Configuração |
-|---------|---------|-------|
-| **Baseado em caminho** (funciona pronto para uso) | `app.suaigreja.org/firstchurch` | Nenhuma configuração extra |
-| **Baseado em subdomínio** (URLs mais limpas) | `firstchurch.suaigreja.org` | DNS curinga + domínio customizado curinga |
+|--------|---------|--------------|
+| **Por caminho** (funciona de imediato) | `app.suaigreja.org/primeiraigreja` | Nenhuma configuração extra |
+| **Por subdomínio** (URLs mais limpas) | `primeiraigreja.suaigreja.org` | DNS curinga + domínio personalizado curinga |
 
-Para roteamento **baseado em subdomínio** no Railway:
+Para o roteamento **por subdomínio** no Railway:
 
-1. No seu provedor de DNS, crie um CNAME curinga: `*.suaigreja.org → <alvo railway do b1app>`.
-2. No Railway, no serviço B1App → **Settings → Networking**, adicione `*.suaigreja.org` como domínio customizado.
+1. No seu provedor de DNS, crie um CNAME curinga: `*.suaigreja.org → <destino do railway do b1app>`.
+2. No Railway, no serviço B1App → **Settings → Networking**, adicione `*.suaigreja.org` como domínio personalizado.
 3. No serviço **B1Admin**, defina `REACT_APP_B1_WEBSITE_URL=https://{subdomain}.suaigreja.org`.
 
-Após a reimplantação, o site de cada igreja é servido automaticamente em `<seu-subdominio>.suaigreja.org`.
+Depois de reimplantar, o site de cada igreja fica disponível em `<subdominio-da-igreja>.suaigreja.org` automaticamente.
 
 :::info
-Domínios customizados curinga requerem um plano pago do Railway. O roteamento baseado em caminho funciona em todos os planos e é funcionalmente idêntico -- apenas menos bonito na barra de URL.
+Domínios personalizados curinga exigem um plano pago do Railway. O roteamento por caminho funciona em todos os planos e é funcionalmente idêntico — só menos bonito na barra de endereços.
 :::
 
-### 4. Doações Online (Stripe / PayPal) {#4-online-giving-stripe--paypal}
+### 4. Doações online (Stripe / PayPal) {#4-online-giving-stripe--paypal}
 
-As doações são configuradas **por igreja dentro da UI de administração**, não via variáveis de ambiente -- dessa forma, cada igreja pode usar sua própria conta de comerciante.
+As doações são configuradas **por igreja, dentro da interface administrativa**, e não por variáveis de ambiente — assim cada igreja pode usar a sua própria conta de comerciante.
 
-1. Obtenha credenciais de desenvolvedor do [Stripe](https://dashboard.stripe.com/) (Developers → API keys) ou [PayPal](https://developer.paypal.com/) (My Apps & Credentials).
-2. No B1 Admin, vá para **Settings → Giving Settings**.
-3. Escolha seu provedor, cole as chaves Pública e Secreta, e configure o tratamento de taxas.
-4. Opcionalmente, adicione `GOOGLE_RECAPTCHA_SECRET_KEY` ao serviço **Api** no Railway para proteger formulários de doação públicos contra bots.
+1. Obtenha as credenciais de desenvolvedor no [Stripe](https://dashboard.stripe.com/) (Developers → API keys) ou no [PayPal](https://developer.paypal.com/) (My Apps & Credentials).
+2. No B1 Admin, acesse **Configurações → Configurações de doações**.
+3. Escolha o seu provedor, cole as chaves Pública e Secreta e configure o tratamento das taxas.
+4. Opcionalmente, adicione `GOOGLE_RECAPTCHA_SECRET_KEY` ao serviço **Api** no Railway para proteger os formulários públicos de doação contra robôs.
 
-### 5. Armazenamento de Arquivos {#5-file-storage}
+### 5. Armazenamento de arquivos {#5-file-storage}
 
 O modelo provisiona um **volume persistente de 1 GB** montado no serviço Api para fotos de membros, arquivos de sermões e documentos enviados.
 
-Para aumentá-lo: abra o serviço Api → **Volumes** → ajuste o controle de tamanho.
+Para aumentá-lo: abra o serviço Api → **Volumes** → ajuste o controle deslizante de tamanho.
 
-Para implantações maiores (100+ GB ou muitos uploads simultâneos), mude para S3 definindo o seguinte no serviço **Api**:
+Para implantações maiores (100+ GB ou muitos envios simultâneos), troque para o S3 definindo estas variáveis no serviço **Api**:
 
 ```
 FILE_STORE=S3
@@ -181,62 +181,62 @@ AWS_SECRET_ACCESS_KEY=<segredo>
 AWS_REGION=us-east-2
 ```
 
-Arquivos existentes no volume não migram automaticamente -- copie-os para o bucket antes de alternar a variável.
+Os arquivos já existentes no volume não migram automaticamente — copie-os para o bucket antes de trocar a variável.
 
-### 6. Integrações de Funcionalidades Opcionais {#6-optional-feature-integrations}
+### 6. Integrações opcionais de recursos {#6-optional-feature-integrations}
 
-Elas desbloqueiam funcionalidades específicas e podem ser adicionadas depois via o painel do Railway. Defina-as no serviço **Api**.
+Estas liberam recursos específicos e podem ser adicionadas depois pelo painel do Railway. Defina-as no serviço **Api**.
 
-| Variável | Funcionalidade que habilita |
-|----------|--------------------|
+| Variável | Recurso que habilita |
+|----------|----------------------|
 | `OPENAI_API_KEY` *ou* `OPENROUTER_API_KEY` | Busca assistida por IA e sugestões de conteúdo |
 | `YOUTUBE_API_KEY` | Busca e incorporação de sermões do YouTube |
-| `PEXELS_KEY` | Seletor de imagens de banco para o construtor de website |
+| `PEXELS_KEY` | Seletor de imagens de banco de imagens para o criador de sites |
 | `VIMEO_TOKEN` | Suporte a sermões do Vimeo |
 | `API_BIBLE_KEY` | Consultas de versículos bíblicos em lições e conteúdo |
-| `YOUVERSION_API_KEY` | Integração bíblica YouVersion |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Notificações push no navegador (gere um par de chaves VAPID) |
-| `HUBSPOT_KEY` | Sincronização opcional de CRM para novos registros |
+| `YOUVERSION_API_KEY` | Integração com a Bíblia YouVersion |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Notificações push no navegador ([gere um par de chaves VAPID](./docker#push-notifications)) |
+| `HUBSPOT_KEY` | Sincronização opcional com CRM para novos cadastros |
 
 ## Atualizando
 
-Cada serviço está vinculado ao seu respectivo repositório GitHub. Pushes para `main` em `ChurchApps/Api`, `ChurchApps/B1Admin`, ou `ChurchApps/B1App` acionam reimplantações automáticas.
+Cada serviço está vinculado ao seu repositório do GitHub. Pushes para `main` em `ChurchApps/Api`, `ChurchApps/B1Admin` ou `ChurchApps/B1App` disparam reimplantações automáticas.
 
-Para fixar uma versão específica, mude a configuração de **Branch** em cada serviço para uma tag ou branch de release. Esta é a configuração recomendada para produção -- implantar automaticamente a partir de `main` significa que você herda qualquer trabalho em andamento.
+Para fixar uma versão específica, altere a configuração **Branch** de cada serviço para uma tag ou branch de release. Esta é a configuração recomendada para produção — a implantação automática a partir de `main` faz você herdar qualquer trabalho em andamento.
 
-## Custos
+## Custos {#costs}
 
-Faixas do mundo real para uma pequena igreja (menos de 200 membros, tráfego leve):
+Faixas reais para uma igreja pequena (menos de 200 membros, tráfego leve):
 
 | Componente | Custo mensal aproximado |
-|-----------|---------------------|
-| Base do Railway | $5 |
-| Plugin MySQL | $5 + ~$1 armazenamento |
-| Computação de 3 serviços web | $3–10 combinados |
-| Volume de 1 GB | $0,25 |
-| **Total** | **~$15–25/mês** |
+|------------|-------------------------|
+| Base do Railway | US$ 5 |
+| Plugin MySQL | US$ 5 + ~US$ 1 de armazenamento |
+| Computação dos 3 serviços web | US$ 3–10 no total |
+| Volume de 1 GB | US$ 0,25 |
+| **Total** | **~US$ 15–25/mês** |
 
-Os custos escalam linearmente com tráfego, uploads de fotos e tamanho do banco de dados. O Railway mostra o uso ao vivo na aba **Usage** do projeto -- defina limites de gastos ali para limitar sua exposição.
+Os custos crescem linearmente com o tráfego, os envios de fotos e o tamanho do banco de dados. O Railway mostra o uso em tempo real na aba **Usage** do projeto — defina limites de gasto ali para limitar sua exposição.
 
-## Solução de Problemas
+## Solução de problemas
 
 | Sintoma | Causa provável | Correção |
-|---------|--------------|-----|
-| Build falha com `EBUSY: rmdir '/app/node_modules/.cache'` | Conflito de cache mount do Nixpacks | Defina `NIXPACKS_NO_CACHE=true` no serviço afetado |
-| Build falha no B1Admin com `Missing: @types/...` | `package-lock.json` fora de sincronia | Puxe o `main` mais recente |
-| Implantação da Api trava em "Deploying" | Healthcheck falhando -- `/health` não retorna 200 | Veja os logs de implantação; geralmente é uma variável de ambiente obrigatória ausente |
-| B1Admin mostra "check your email" mas nenhum e-mail chega | `MAIL_SYSTEM=SMTP` definido mas credenciais ausentes/incorretas | Corrija as credenciais, ou desfaça a definição de `MAIL_SYSTEM` para desabilitar e-mail |
-| Login redireciona para `api.churchapps.org` | `REACT_APP_STAGE` é `prod` | Defina `REACT_APP_STAGE=custom` no serviço B1Admin |
-| Igrejas por subdomínio mostram todas o mesmo conteúdo | `REACT_APP_B1_WEBSITE_URL` não inclui o token `{subdomain}` | Defina-o como, por ex., `https://{subdomain}.suaigreja.org` |
-| Domínio customizado mostra "Application not found" | DNS ainda não propagou, ou certificado do Railway pendente | Aguarde 5 minutos; verifique o DNS com `dig admin.suaigreja.org` |
+|---------|----------------|----------|
+| O build falha com `EBUSY: rmdir '/app/node_modules/.cache'` | conflito do cache de montagem do Nixpacks | Defina `NIXPACKS_NO_CACHE=true` no serviço afetado |
+| O build falha no B1Admin com `Missing: @types/...` | `package-lock.json` fora de sincronia | Atualize para o `main` mais recente |
+| O deploy da Api fica preso em "Deploying" | verificação de saúde falhando — `/health` não retorna 200 | Veja os logs de deploy; normalmente falta uma variável obrigatória |
+| O B1Admin mostra "verifique seu e-mail", mas nenhum e-mail chega | `MAIL_SYSTEM=SMTP` definido, mas credenciais ausentes ou erradas | Corrija as credenciais, ou remova `MAIL_SYSTEM` para desativar o e-mail |
+| O login redireciona para `api.churchapps.org` | `REACT_APP_STAGE` está como `prod` | Defina `REACT_APP_STAGE=custom` no serviço B1Admin |
+| Todas as igrejas por subdomínio mostram o mesmo conteúdo | `REACT_APP_B1_WEBSITE_URL` não inclui o token `{subdomain}` | Defina como, por exemplo, `https://{subdomain}.suaigreja.org` |
+| Domínio personalizado mostra "Application not found" | DNS ainda não propagado, ou certificado do Railway pendente | Aguarde 5 minutos; verifique o DNS com `dig admin.suaigreja.org` |
 
 Se você encontrar algo que não está nesta lista, abra uma issue em [github.com/ChurchApps/Api/issues](https://github.com/ChurchApps/Api/issues) com os logs de implantação anexados.
 
-## Artigos Relacionados
+## Artigos relacionados
 
-- **[Auto-Hospedagem com Docker](./docker)** -- A mesma stack em seu próprio hardware ou VPS
-- **[Configuração Inicial](../../getting-started/initial-setup)** -- Primeiros passos após sua igreja ser criada
-- **[Configuração Inicial do Website](../../b1-admin/website/initial-setup)** -- Configure o site público da sua igreja
-- **[Configurações de Doações](../../b1-admin/donations/online-giving-setup)** -- Conecte Stripe ou PayPal
-- **[Configuração Local da API](../api/local-setup)** -- Executando a stack localmente para desenvolvimento
-- **[Implantação da API (AWS)](./apis)** -- Como o SaaS oficial do ChurchApps é implantado
+- **[Auto-hospedagem com Docker](./docker)** — a mesma stack no seu próprio hardware ou VPS
+- **[Configuração inicial](../../getting-started/initial-setup)** — primeiros passos depois que sua igreja é criada
+- **[Configuração inicial do site](../../b1-admin/website/initial-setup)** — configure o site público da sua igreja
+- **[Configurações de doações](../../b1-admin/donations/online-giving-setup)** — conecte o Stripe ou o PayPal
+- **[Configuração local da API](../api/local-setup)** — executando a stack localmente para desenvolvimento
+- **[Implantação da API (AWS)](./apis)** — como o SaaS oficial do ChurchApps é implantado

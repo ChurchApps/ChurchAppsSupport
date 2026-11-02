@@ -59,7 +59,7 @@ Stand Alone forms have a **QR Code** link next to them on the main Forms list (a
 7. Repeat to add more questions.
 
 :::warning
-The **Payment** field type requires Stripe to be configured. If you haven't set up online giving yet, see [Online Giving Setup](../donations/online-giving-setup.md) before adding payment fields.
+The **Payment** field type requires Stripe to be configured. If you haven't set up online giving yet, see [Online Giving Setup](../donations/online-giving-setup.md) before adding payment fields. People who pay on a form without signing in must tick the **I'm not a robot** check before the card is accepted.
 :::
 
 ## Managing Form Members {#managing-form-members}

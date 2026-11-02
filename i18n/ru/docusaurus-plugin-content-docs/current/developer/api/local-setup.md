@@ -13,8 +13,8 @@ title: "Локальная настройка API"
 <div class="prereqs">
 <h4>Перед началом</h4>
 
-- Установите **Node.js 22+**, **Git** и **MySQL 8.0+** -- см. [Требования](../setup/prerequisites)
-- Создайте пользователя MySQL с правами на создание баз данных
+- Установите **Node.js 24+**, **Git** и **MySQL 8.0+** — см. [Требования](../setup/prerequisites)
+- Создайте пользователя MySQL с правом создания баз данных
 - Ознакомьтесь со справочником [Переменные окружения](../setup/environment-variables) для настройки API
 
 </div>
@@ -48,7 +48,7 @@ cp .env.sample .env
 mysql://root:password@localhost:3306/dbname
 ```
 
-Вам понадобятся строки подключения для всех шести баз данных модулей (membership, attendance, content, giving, messaging, doing).
+Понадобятся строки подключения для всех шести баз данных модулей (membership, attendance, content, giving, messaging, doing).
 
 ### 4. Инициализируйте базы данных
 
@@ -59,7 +59,7 @@ npm run initdb
 Эта команда автоматически создаёт все шесть баз данных и их таблицы.
 
 :::tip
-Можно инициализировать базу данных одного модуля командой `npm run initdb -- --module=membership` (или `attendance`, `content`, `giving`, `messaging`, `doing`).
+Инициализировать базу данных одного модуля можно командой `npm run initdb -- --module=membership` (или `attendance`, `content`, `giving`, `messaging`, `doing`).
 :::
 
 ### 5. Запустите сервер разработки
@@ -68,7 +68,7 @@ npm run initdb
 npm run dev
 ```
 
-API запускается с горячей перезагрузкой по адресу [http://localhost:8084](http://localhost:8084).
+API запустится с горячей перезагрузкой по адресу [http://localhost:8084](http://localhost:8084).
 
 ## Основные команды
 
@@ -76,32 +76,32 @@ API запускается с горячей перезагрузкой по а�
 |---------|-------------|
 | `npm run dev` | Запуск сервера разработки с горячей перезагрузкой (tsx watch) |
 | `npm run build` | Очистка, компиляция TypeScript и копирование ресурсов |
-| `npm run test` | Запуск тестов Jest (с покрытием кода) |
+| `npm run test` | Запуск тестов с Jest (включая покрытие) |
 | `npm run test:watch` | Запуск тестов в режиме наблюдения |
 | `npm run lint` | Запуск ESLint с автоисправлением (ESLint — единственный форматировщик) |
 
 ## Развёртывание
 
-Тестовая среда (staging) выведена из эксплуатации. API развёртывается в демо-среде при каждом push в `main`, а в продакшен — через ручной workflow **Deploy Prod**, который также применяет ожидающие миграции базы данных. См. [Развёртывание API](../deployment/apis) для подробностей.
+Окружение staging выведено из эксплуатации. API развёртывается в демо-окружение при каждом push в `main`, а в продакшн — через ручной workflow **Deploy Prod**, который также применяет ожидающие миграции базы данных. Подробности см. в [Развёртывание API](../deployment/apis).
 
 ## Разработка общих библиотек локально
 
-Если вам нужно разрабатывать общую библиотеку (`@churchapps/helpers` или `@churchapps/apihelper`) вместе с API, соберите её в рабочем пространстве [Packages](https://github.com/ChurchApps/Packages) и добавьте временный Yarn-портал в API:
+Если нужно разрабатывать общую библиотеку (`@churchapps/helpers` или `@churchapps/apihelper`) вместе с API, соберите её в рабочем пространстве [Packages](https://github.com/ChurchApps/Packages) и добавьте временную связь Yarn в API:
 
 ```bash
-# In the Packages workspace
+# В рабочем пространстве Packages
 yarn build
 
-# In the API directory
+# В каталоге API
 yarn link ../Packages/helpers
-# ... test ...
+# ... тестирование ...
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Так можно проверить изменения библиотеки с API, не публикуя их в npm. См. [Общие библиотеки](../shared-libraries/#local-development-against-a-consuming-app) — и никогда не коммитьте портальное разрешение, которое link записывает в `package.json`.
+Так можно проверить изменения библиотеки на API, не публикуя их в npm. Подробности см. в разделе [Общие библиотеки](../shared-libraries/#local-development-against-a-consuming-app) — и никогда не коммитьте связь с локальной версией, которую команда записывает в `package.json`.
 
 ## Связанные статьи
 
-- **[База данных](./database)** -- Архитектура базы данных по одной на модуль
-- **[Структура модулей](./module-structure)** -- Как организованы контроллеры, репозитории и модели
-- **[Общие библиотеки](../shared-libraries/)** -- Работа с `@churchapps/helpers` и `@churchapps/apihelper`
+- **[База данных](./database)** — архитектура «одна база на модуль»
+- **[Структура модулей](./module-structure)** — как организованы контроллеры, репозитории и модели
+- **[Общие библиотеки](../shared-libraries/)** — работа с `@churchapps/helpers` и `@churchapps/apihelper`

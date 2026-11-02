@@ -35,6 +35,8 @@ Each note in the list shows:
 
 The list shows the most recent notes first. Click **Load more** at the bottom to see older ones.
 
+Notes written on a person who has since been deleted, or merged into another record, do not appear on the **People** tab.
+
 The Notes page is read-only. To add, edit, or reply to a note, click the record's name to open it.
 
 ## What Each Tab Shows {#what-each-tab-shows}

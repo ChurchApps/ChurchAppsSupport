@@ -1,134 +1,134 @@
 ---
-title: "गाइड: रविवार के Volunteers प्रबंधित करें"
+title: "गाइड: रविवार के स्वयंसेवकों का प्रबंधन"
 ---
 
-# रविवार के Volunteers प्रबंधित करें
+# रविवार के स्वयंसेवकों का प्रबंधन
 
 <div class="article-intro">
 
-अपनी volunteer teams सेट करें, साप्ताहिक service plans बनाएं, positions असाइन करें, worship songs के साथ service orders बनाएं, और रविवार के tasks असाइन करें। अंत तक, आपके volunteers अपने assignments B1 website और mobile app पर देखेंगे, और सीधे स्वीकार या अस्वीकार कर सकेंगे।
+अपनी स्वयंसेवक टीमें सेट करें, साप्ताहिक सेवा योजनाएँ बनाएँ, पद सौंपें, पूजा गीतों के साथ सेवा क्रम बनाएँ, और रविवार के कार्य सौंपें। अंत तक, आपके स्वयंसेवक B1 वेबसाइट और मोबाइल ऐप पर अपने असाइनमेंट देखेंगे, और सीधे स्वीकार या अस्वीकार कर सकेंगे।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- admin पहुंच वाला B1 Admin account
-- [अपनी people directory में जोड़े गए](../people/adding-people.md) volunteers
+- एडमिन पहुँच वाला B1 Admin खाता
+- स्वयंसेवक [अपनी people डायरेक्टरी में जोड़े गए](../people/adding-people.md) हों
 
 </div>
 
-## चरण 1: Volunteer Teams बनाएं
+## चरण 1: स्वयंसेवक टीमें बनाएँ
 
-अपने volunteers को teams में व्यवस्थित करें ताकि आप ministry क्षेत्र के अनुसार assignments प्रबंधित कर सकें।
+अपने स्वयंसेवकों को टीमों में व्यवस्थित करें ताकि आप सेवकाई क्षेत्र के अनुसार असाइनमेंट प्रबंधित कर सकें।
 
-[Creating Groups](../groups/creating-groups.md) और [Group Members](../groups/group-members.md) गाइड का पालन करके:
+निम्नलिखित करने के लिए [Creating Groups](../groups/creating-groups.md) और [Group Members](../groups/group-members.md) गाइड का पालन करें:
 
-1. एक category बनाएं (जैसे "Sunday Morning Teams")
-2. "Worship Team", "Sound & Media", "Greeters", "Kids Ministry Volunteers" जैसे groups बनाएं
-3. हर group में volunteers को उनका नाम खोजकर और Add पर click करके जोड़ें
-
-:::tip
-group की सदस्य सूची में star icon (**Make Leader**) से team leaders नियुक्त करें (group पेज पर **All members** पर click करें)। Leaders अपने group calendar को प्रबंधित कर सकते हैं और अपनी team का समन्वय कर सकते हैं।
-:::
-
-## चरण 2: अपनी Song Library बनाएं
-
-worship songs जोड़ें ताकि आप उन्हें हर हफ्ते service plans में ला सकें।
-
-[Songs](../serving/songs.md) गाइड का पालन करके:
-
-1. शीर्षक, कलाकार, और अवधि के साथ worship songs जोड़ें
-2. हर song के लिए lyrics और key designations के साथ arrangements जोड़ें
-3. YouTube performances, chord charts, या sheet music के external links जोड़ें
-
-:::info
-यहां जोड़े गए songs बाद में किसी भी service plan में लाए जा सकते हैं। एक बार library बनाएं, हर हफ्ते उसका उपयोग करें।
-:::
-
-## चरण 3: Service Plan बनाएं
-
-Plans वे साप्ताहिक assignments हैं जो volunteers को बताते हैं कि उनकी ज़रूरत कहां है।
-
-[Plans](../serving/plans.md) गाइड का पालन करके:
-
-1. Serving पर जाएं, अपना ministry tab चुनें, और अपना plan type खोलें
-2. **New Plan** पर click करें और service की तारीख चुनें। एक साथ कई रविवार सेट करने के लिए, पिछले plan से copy करें और **Repeat weekly for this many weeks** में हफ्तों की संख्या डालें
-3. plan के **Serving Team Assignments** section में positions जोड़ें और उनमें volunteers असाइन करें
-4. volunteers अपनी assignment status देखेंगे (Requested, Confirmed, Pending)
-5. plan type के लिए [volunteer reminders](../serving/plans.md#volunteer-reminders) चालू करें ताकि हर service से पहले volunteers को push, email, या text से याद दिलाया जाए
-
-## चरण 4: Service Order बनाएं
-
-शुरू से अंत तक अपनी service का क्रम तय करें।
-
-[Service Order](../serving/service-order.md) गाइड का पालन करके:
-
-1. अपना plan खोलें और सबसे ऊपर **Order of Service** section ढूंढें
-2. तत्व जोड़ने के लिए **Add** पर click करें: worship songs (आपकी library से), prayers, scripture readings, announcements, sermon, offering, closing
-3. service के क्रम को बदलने के लिए items को drag and drop करें
-
-:::info
-Service orders plan-विशिष्ट होते हैं। यहां किए गए बदलाव दूसरे plans या master song library को प्रभावित नहीं करते।
-:::
-
-## चरण 5: रविवार के Tasks असाइन करें
-
-एक-बार की रविवार की ज़िम्मेदारियों को ट्रैक करें ताकि कुछ भी छूटे नहीं।
-
-[Tasks](../serving/tasks.md) गाइड का पालन करके:
-
-1. "Prepare communion elements", "Print bulletins", या "Set up sound equipment" जैसी ज़िम्मेदारियों के लिए tasks बनाएं
-2. हर task को ज़िम्मेदार व्यक्ति या group को असाइन करें
-3. Tasks **Serving > My Work** के अंतर्गत, असाइनी के dashboard पर, और mobile app में दिखते हैं
-
-:::info
-B1 Admin अब दोहराए जाने वाले schedule पर tasks नहीं बनाता। ऐसी दोहराई जाने वाली प्रक्रियाओं के लिए जो लोगों को चरणों से आगे बढ़ाती हैं, schedule trigger वाले [Workflows](../serving/workflows.md) का उपयोग करें।
-:::
-
-## चरण 6: Self-Service Signup सक्षम करें (वैकल्पिक)
-
-volunteers को admin असाइनमेंट का इंतज़ार करने के बजाय खुद positions के लिए sign up करने दें।
-
-1. plan बनाते या संपादित करते समय **Signup Deadline** सेट करें (सेवा से कितने घंटे पहले)। यह समय plan के पहले service time से पीछे की ओर गिना जाता है। कोई deadline न चाहिए तो खाली छोड़ें। नए plans पिछले plan की deadline से शुरू होते हैं।
-2. वैकल्पिक रूप से **Show volunteer names on signup page** टॉगल करें ताकि volunteers देख सकें कि और कौन sign up है।
-3. हर position के लिए **Allow Self-Signup** checkbox चिह्नित करें ताकि वह self-service के लिए उपलब्ध हो।
-4. हर position में एक **Description** जोड़ें ताकि volunteers जान सकें कि भूमिका में क्या करना है।
-
-एक बार self-signup positions बन जाने पर, वे अपने-आप [B1.church](../../b1-church/serving/volunteer-signup) पर और [B1 Mobile app](../../b1-mobile/serving/volunteer-signup) पर volunteer signup पेजों में दिखने लगती हैं। सदस्य खुली positions ब्राउज़ कर सकते हैं, देख सकते हैं कि कितनी जगहें बची हैं, और एक click में sign up कर सकते हैं।
+1. एक श्रेणी बनाएँ (जैसे "Sunday Morning Teams")
+2. "Worship Team", "Sound & Media", "Greeters", "Kids Ministry Volunteers" जैसे समूह बनाएँ
+3. अपने नाम से खोजकर और Add पर क्लिक करके हर समूह में स्वयंसेवकों को जोड़ें
 
 :::tip
-एक ही plan में admin द्वारा असाइन की गई और self-signup positions मिलाएं। उदाहरण के लिए, अपने worship leader को सीधे असाइन करें, लेकिन greeters और coffee servers को खुद चुनने दें।
+समूह की सदस्य सूची में स्टार आइकन (**Make Leader**) से टीम लीडर नियुक्त करें (समूह पृष्ठ पर **All members** पर क्लिक करें)। लीडर अपना समूह कैलेंडर प्रबंधित कर सकते हैं और अपनी टीम का समन्वय कर सकते हैं।
 :::
 
-## चरण 7: Volunteers को सूचित करें
+## चरण 2: अपनी गीत लाइब्रेरी बनाएँ
 
-असाइन किए गए volunteers अपने-आप अपने plans देखते हैं और जवाब दे सकते हैं।
+पूजा के गीत जोड़ें ताकि आप उन्हें हर सप्ताह सेवा योजनाओं में ला सकें।
 
-1. volunteers अपने plans [B1.church](../../b1-church/plans/viewing-plans.md) और [B1 Mobile app](../../b1-mobile/serving/viewing-plans.md) पर देखते हैं
-2. वे दोनों platforms में से किसी से भी सीधे assignments स्वीकार या अस्वीकार कर सकते हैं
-3. वे उन हफ्तों के लिए blockout dates सेट कर सकते हैं जब वे उपलब्ध नहीं हैं
-4. rehearsals के लिए plans प्रिंट किए जा सकते हैं, या backstage पर लगाए जा सकते हैं
-5. volunteers [volunteer signup page](../../b1-church/serving/volunteer-signup) के ज़रिए खुली positions ब्राउज़ और उनके लिए sign up कर सकते हैं
+निम्नलिखित करने के लिए [Songs](../serving/songs.md) गाइड का पालन करें:
+
+1. शीर्षक, कलाकार और अवधि के साथ पूजा गीत जोड़ें
+2. हर गीत के लिए बोल और कुंजी (key) निर्धारण के साथ व्यवस्थाएँ (arrangements) जोड़ें
+3. YouTube प्रस्तुतियों, कॉर्ड चार्ट, या शीट संगीत के बाहरी लिंक जोड़ें
+
+:::info
+यहाँ जोड़े गए गीतों को बाद में किसी भी सेवा योजना में लाया जा सकता है। एक बार लाइब्रेरी बनाएँ, हर सप्ताह उसका पुन: उपयोग करें।
+:::
+
+## चरण 3: एक सेवा योजना बनाएँ
+
+योजनाएँ साप्ताहिक असाइनमेंट हैं जो स्वयंसेवकों को बताती हैं कि उनकी ज़रूरत कहाँ है।
+
+निम्नलिखित करने के लिए [Plans](../serving/plans.md) गाइड का पालन करें:
+
+1. Serving पर जाएँ, अपना सेवकाई टैब चुनें, और अपना योजना प्रकार खोलें
+2. **New Plan** पर क्लिक करें और सेवा की तारीख चुनें। एक साथ कई रविवार सेट करने के लिए, पिछली योजना से कॉपी करें और **Number of plans** में संख्या दर्ज करें
+3. योजना के **Serving Team Assignments** अनुभाग में, पद जोड़ें और उनमें स्वयंसेवकों को असाइन करें
+4. स्वयंसेवक अपनी असाइनमेंट स्थिति देखेंगे (Requested, Confirmed, Pending)
+5. योजना प्रकार के लिए [स्वयंसेवक अनुस्मारक](../serving/plans.md#volunteer-reminders) चालू करें ताकि स्वयंसेवकों को हर सेवा से पहले push, ईमेल या टेक्स्ट द्वारा याद दिलाया जाए
+
+## चरण 4: सेवा क्रम बनाएँ
+
+शुरू से अंत तक अपनी सेवा का प्रवाह तैयार करें।
+
+निम्नलिखित करने के लिए [Service Order](../serving/service-order.md) गाइड का पालन करें:
+
+1. अपनी योजना खोलें और शीर्ष पर **Order of Service** अनुभाग खोजें
+2. तत्व जोड़ने के लिए **Add** पर क्लिक करें: पूजा गीत (आपकी लाइब्रेरी से), प्रार्थनाएँ, धर्मग्रंथ पाठ, घोषणाएँ, उपदेश, भेंट, समापन
+3. सेवा का प्रवाह बदलने के लिए आइटमों को खींचकर और छोड़कर पुनः क्रमबद्ध करें
+
+:::info
+सेवा क्रम योजना-विशिष्ट होते हैं। यहाँ किए गए बदलाव अन्य योजनाओं या मुख्य गीत लाइब्रेरी को प्रभावित नहीं करते।
+:::
+
+## चरण 5: रविवार के कार्य सौंपें
+
+एक-बारगी रविवार की ज़िम्मेदारियों को ट्रैक करें ताकि कुछ भी छूटे नहीं।
+
+निम्नलिखित करने के लिए [Tasks](../serving/tasks.md) गाइड का पालन करें:
+
+1. ऐसी ज़िम्मेदारियों के लिए कार्य बनाएँ जैसे "Prepare communion elements", "Print bulletins", या "Set up sound equipment"
+2. हर कार्य को ज़िम्मेदार व्यक्ति या समूह को सौंपें
+3. कार्य **Serving > My Work** के अंतर्गत, असाइनी के डैशबोर्ड पर, और मोबाइल ऐप में दिखते हैं
+
+:::info
+B1 Admin अब दोहराने वाले शेड्यूल पर कार्य नहीं बनाता। ऐसी दोहराई जाने वाली प्रक्रियाओं के लिए जो लोगों को चरणों से आगे बढ़ाती हैं, शेड्यूल ट्रिगर के साथ [Workflows](../serving/workflows.md) का उपयोग करें।
+:::
+
+## चरण 6: सेल्फ़-सर्विस साइनअप सक्षम करें (वैकल्पिक)
+
+स्वयंसेवकों को एडमिन असाइनमेंट का इंतज़ार करने के बजाय खुद पदों के लिए साइन अप करने दें।
+
+1. योजना बनाते या संपादित करते समय, **Signup Deadline** सेट करें (सेवा से कितने घंटे पहले) ताकि सेल्फ़-साइनअप कब बंद हो, यह नियंत्रित हो। घंटे योजना के पहले सेवा समय से पीछे की ओर गिने जाते हैं। कोई समय-सीमा न होने पर खाली छोड़ें। नई योजनाएँ पिछली योजना की समय-सीमा से शुरू होती हैं।
+2. वैकल्पिक रूप से **Show volunteer names on signup page** टॉगल करें ताकि स्वयंसेवक देख सकें कि और कौन साइन अप है।
+3. हर पद के लिए, उसे सेल्फ़-सर्विस के लिए उपलब्ध कराने हेतु **Allow Self-Signup** चेकबॉक्स चेक करें।
+4. हर पद में एक **Description** जोड़ें ताकि स्वयंसेवक जान सकें कि भूमिका में क्या शामिल है।
+
+एक बार सेल्फ़-साइनअप पद बन जाने पर, वे अपने आप [B1.church](../../b1-church/serving/volunteer-signup) के स्वयंसेवक साइनअप पृष्ठों और [B1 Mobile app](../../b1-mobile/serving/volunteer-signup) पर दिखते हैं। सदस्य खुले पद देख सकते हैं, बचे हुए स्थान देख सकते हैं, और एक क्लिक में साइन अप कर सकते हैं।
 
 :::tip
-mobile app पर push notifications volunteers को तब सूचित करते हैं जब उन्हें नए assignments मिलते हैं या plans बदलते हैं।
+एक ही योजना में एडमिन-असाइन किए गए और सेल्फ़-साइनअप वाले पद मिलाएँ। उदाहरण के लिए, अपने पूजा नेता को सीधे असाइन करें, लेकिन ग्रीटर और कॉफ़ी सर्वर को स्वयं चुनने दें।
 :::
 
-## हो गया!
+## चरण 7: स्वयंसेवकों को सूचित करें
 
-आपका volunteer management system सेट हो गया है। हर हफ्ते एक नया plan बनाएं, positions असाइन करें, और आपकी team सब कुछ अपने फ़ोन या कंप्यूटर पर देखती है।
+असाइन किए गए स्वयंसेवक अपनी योजनाएँ अपने आप देखते हैं और उत्तर दे सकते हैं।
+
+1. स्वयंसेवक [B1.church](../../b1-church/plans/viewing-plans.md) और [B1 Mobile app](../../b1-mobile/serving/viewing-plans.md) पर अपनी योजनाएँ देखते हैं
+2. वे किसी भी प्लेटफ़ॉर्म से सीधे असाइनमेंट स्वीकार या अस्वीकार कर सकते हैं
+3. वे उन सप्ताहों के लिए ब्लॉकआउट तारीखें सेट कर सकते हैं जब वे उपलब्ध नहीं होंगे
+4. रिहर्सल के लिए या बैकस्टेज पर लगाने के लिए योजनाएँ प्रिंट की जा सकती हैं
+5. स्वयंसेवक [स्वयंसेवक साइनअप पृष्ठ](../../b1-church/serving/volunteer-signup) के माध्यम से खुले पदों को देखकर उनके लिए साइन अप कर सकते हैं
+
+:::tip
+मोबाइल ऐप पर Push notifications स्वयंसेवकों को तब सूचित करते हैं जब उन्हें नए असाइनमेंट मिलते हैं या योजनाएँ बदलती हैं।
+:::
+
+## आप तैयार हैं!
+
+आपकी स्वयंसेवक प्रबंधन प्रणाली सेट हो गई है। हर सप्ताह एक नई योजना बनाएँ, पद असाइन करें, और आपकी टीम अपने फ़ोन या कंप्यूटर पर सब कुछ देखती है।
 
 ## संबंधित लेख
 
-- [Creating Groups](../groups/creating-groups.md) — teams और categories सेट करें
-- [Group Members](../groups/group-members.md) — team सदस्य जोड़ें और प्रबंधित करें
-- [Plans](../serving/plans.md) — service plans बनाएं और प्रबंधित करें
-- [Service Order](../serving/service-order.md) — service का क्रम बनाएं
-- [Songs](../serving/songs.md) — अपनी worship song library प्रबंधित करें
-- [Tasks](../serving/tasks.md) — लोगों या groups को action items असाइन करें
-- [Workflows](../serving/workflows.md) — triggers और स्वचालित चरणों के साथ दोहराई जाने वाली प्रक्रियाओं के ज़रिए लोगों को आगे बढ़ाएं
-- [Viewing Plans (Web)](../../b1-church/plans/viewing-plans.md) — volunteers ऑनलाइन plans कैसे देखते हैं
-- [Viewing Plans (Mobile)](../../b1-mobile/serving/viewing-plans.md) — volunteers mobile पर plans कैसे देखते हैं
-- [Volunteer Signup (Web)](../../b1-church/serving/volunteer-signup) — सदस्य volunteer positions कैसे खुद चुनते हैं
-- [Volunteer Signup (Mobile)](../../b1-mobile/serving/volunteer-signup) — mobile पर volunteer self-signup
+- [Creating Groups](../groups/creating-groups.md) -- टीमें और श्रेणियाँ सेट करें
+- [Group Members](../groups/group-members.md) -- टीम के सदस्य जोड़ें और प्रबंधित करें
+- [Plans](../serving/plans.md) -- सेवा योजनाएँ बनाएँ और प्रबंधित करें
+- [Service Order](../serving/service-order.md) -- सेवा का प्रवाह बनाएँ
+- [Songs](../serving/songs.md) -- अपनी पूजा गीत लाइब्रेरी प्रबंधित करें
+- [Tasks](../serving/tasks.md) -- व्यक्तियों या समूहों को कार्य सौंपें
+- [Workflows](../serving/workflows.md) -- ट्रिगर और स्वचालित चरणों के साथ दोहराई जाने वाली प्रक्रियाओं से लोगों को आगे बढ़ाएँ
+- [Viewing Plans (Web)](../../b1-church/plans/viewing-plans.md) -- स्वयंसेवक ऑनलाइन योजनाएँ कैसे देखते हैं
+- [Viewing Plans (Mobile)](../../b1-mobile/serving/viewing-plans.md) -- स्वयंसेवक मोबाइल पर योजनाएँ कैसे देखते हैं
+- [Volunteer Signup (Web)](../../b1-church/serving/volunteer-signup) -- सदस्य स्वयंसेवक पद कैसे स्वयं चुनते हैं
+- [Volunteer Signup (Mobile)](../../b1-mobile/serving/volunteer-signup) -- मोबाइल पर स्वयंसेवक सेल्फ़-साइनअप

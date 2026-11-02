@@ -30,7 +30,7 @@ The B1 Checkin app connects to your B1 Admin attendance setup. When a member che
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Amazon Fire Tablets:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
-3. **Sign in to the B1 Checkin app** using your church's account credentials.
+3. **Sign in to the B1 Checkin app** using an account that has the **Checkin** attendance permission (or **Edit Attendance**). See [Check-In Kiosk Accounts](../settings/roles-permissions.md#check-in-kiosk-accounts).
 4. **Select the campus and service time** for the current gathering.
 5. Members can now search for their name on the device and check in.
 

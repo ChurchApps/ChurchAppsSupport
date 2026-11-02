@@ -6,66 +6,66 @@ title: "API"
 
 <div class="article-intro">
 
-Ang ChurchApps API ay isang **modular monolith** -- isang code base na nagsisilbi sa anim na data modules, bawat isa ay may sariling database. Ang architecture na ito ay nagbibigay sa iyo ng mga organizational benefits ng microservices (malinaw na boundaries, independent data stores) na may operational simplicity ng isang single deployment.
+Ang ChurchApps API ay isang **modular monolith** -- iisang codebase na naglilingkod sa anim na data module, bawat isa ay may sariling database. Ibinibigay ng arkitekturang ito ang mga benepisyo sa organisasyon ng microservices (malinaw na hangganan, independenteng data store) kasama ang pagiging simple sa operasyon ng iisang deployment.
 
 </div>
 
-## Modules
+## Mga Module
 
-| Module | Purpose |
+| Module | Layunin |
 |--------|---------|
-| **Membership** | Mga tao, grupo, sambahayan, permissions |
-| **Attendance** | Mga serbisyo, sesyon, check-in records |
-| **Content** | Mga pahina, sections, elements, streaming |
-| **Giving** | Mga donasyon, pondo, payment processing |
-| **Messaging** | Mga pag-usap, notipikasyon, email |
-| **Doing** | Mga gawain, plano, assignment |
+| **Membership** | Mga tao, grupo, household, permiso |
+| **Attendance** | Mga serbisyo, session, record ng check-in |
+| **Content** | Mga pahina, seksyon, elemento, streaming |
+| **Giving** | Mga donasyon, fund, pagproseso ng bayad |
+| **Messaging** | Mga usapan, notification, email |
+| **Doing** | Mga task, plan, takda |
 
 ## Tech Stack
 
-- **Runtime:** Node.js 22.x na may TypeScript (ES modules)
+- **Runtime:** Node.js 24.x na may TypeScript (ES modules)
 - **Framework:** Express
-- **Dependency Injection:** Inversify (decorator-based routing)
+- **Dependency Injection:** Inversify (routing na nakabatay sa decorator)
 - **Database:** MySQL -- isang database bawat module, bawat isa ay may sariling connection pool
-- **Auth:** JWT-based authentication sa pamamagitan ng `CustomAuthProvider`
-- **Deployment:** AWS Lambda via Serverless Framework v3
+- **Auth:** JWT-based na authentication sa pamamagitan ng `CustomAuthProvider`
+- **Deployment:** AWS Lambda gamit ang Serverless Framework v3
 
-## Ports
+## Mga Port
 
-| Protocol | Port | Description |
+| Protocol | Port | Paglalarawan |
 |----------|------|-------------|
-| HTTP | `8084` | Main REST API |
-| WebSocket | `8087` | Real-time socket connections |
+| HTTP | `8084` | Pangunahing REST API |
+| WebSocket | `8087` | Real-time na socket connection |
 
-## Lambda Functions
+## Mga Lambda Function
 
-Kapag deployed sa AWS, ang API ay tumatakbo bilang anim na Lambda functions:
+Kapag na-deploy sa AWS, tumatakbo ang API bilang anim na Lambda function:
 
-- **`web`** -- Humawak ng lahat ng HTTP requests
-- **`socket`** -- Namamahala sa WebSocket connections
-- **`timer15Min`** -- Tumatakbo bawat 30 minuto para sa email notifications (ang pangalan ay historical)
-- **`timerMidnight`** -- Tumatakbo araw-araw para sa digest emails at maintenance tasks
-- **`timerScheduledTasks`** -- Tumatakbo araw-araw para sa due automations at overdue workflow processing
-- **`timerWebhooks`** -- Tumatakbo bawat minuto upang maghatid ng queued outbound webhooks
+- **`web`** -- Humahawak sa lahat ng HTTP request
+- **`socket`** -- Namamahala sa mga WebSocket connection
+- **`timer15Min`** -- Tumatakbo kada 30 minuto para sa mga email notification (historikal ang pangalan)
+- **`timerMidnight`** -- Tumatakbo araw-araw para sa digest email at maintenance task
+- **`timerScheduledTasks`** -- Tumatakbo araw-araw para sa mga automation na dapat tumakbo at pagproseso ng overdue na workflow
+- **`timerWebhooks`** -- Tumatakbo kada minuto para ihatid ang mga naka-queue na outbound webhook
 
-## Shared Libraries
+## Mga Shared Library
 
-Ang API ay nakadepende sa dalawang shared ChurchApps packages:
+Umaasa ang API sa dalawang shared ChurchApps package:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Base utilities (DateHelper, ApiHelper, atbp.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Express server utilities kasama ang auth, database helpers, at AWS integrations
+- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Mga pangunahing utility (DateHelper, ApiHelper, atbp.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Mga utility ng Express server kabilang ang auth, database helper, at AWS integration
 
 :::info
-Ang API ay gumagamit ng ES modules (`"type": "module"` sa `package.json`). Siguraduhing ang iyong imports ay gumagamit ng ES module syntax.
+Gumagamit ang API ng ES modules (`"type": "module"` sa `package.json`). Siguraduhing ginagamit ng iyong mga import ang ES module syntax.
 :::
 
-## Sa Seksyong Ito
+## Nasa Seksyong Ito
 
 - **[Local Setup](./local-setup)** -- I-clone, i-configure, at patakbuhin ang API nang lokal
-- **[Database](./database)** -- Database-per-module architecture, schema scripts, at data access patterns
-- **[Module Structure](./module-structure)** -- Controllers, repositories, models, at authentication
-- **[API Keys](./api-keys)** -- Personal access tokens para sa scripts at connectors
-- **[Connected Apps (OAuth)](./connected-apps)** -- Multi-tenant OAuth flow para sa third-party apps
-- **[Webhooks](./webhooks)** -- Push event notifications sa external systems
-- **[MCP Server](./mcp)** -- Model Context Protocol endpoint na nagha-expose ng API sa AI assistants
-- **[Endpoint Reference](./endpoints/)** -- Complete REST API documentation para sa lahat ng modules
+- **[Database](./database)** -- Arkitekturang database-per-module, mga schema script, at mga pattern ng pag-access ng datos
+- **[Module Structure](./module-structure)** -- Mga controller, repository, model, at authentication
+- **[API Keys](./api-keys)** -- Mga personal na access token para sa mga script at connector
+- **[Connected Apps (OAuth)](./connected-apps)** -- Multi-tenant na OAuth flow para sa mga third-party app
+- **[Webhooks](./webhooks)** -- Magpadala ng push notification ng mga event sa mga external na sistema
+- **[MCP Server](./mcp)** -- Model Context Protocol endpoint na naglalantad ng API sa mga AI assistant
+- **[Endpoint Reference](./endpoints/)** -- Kumpletong REST API documentation para sa lahat ng module

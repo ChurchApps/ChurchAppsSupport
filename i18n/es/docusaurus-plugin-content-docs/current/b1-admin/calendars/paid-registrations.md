@@ -1,93 +1,101 @@
 ---
-title: "Registros Pagos"
+title: "Inscripciones pagadas"
 ---
 
-# Registros Pagos
+# Inscripciones pagadas
 
 <div class="article-intro">
 
-El registro de eventos puede ir más allá de un simple conteo de asistentes. Puedes definir tipos de asistentes con precio (como Adulto e Infantil), ofrecer complementos opcionales con sus propios precios y cantidades, crear códigos de descuento y recopilar pagos al registrarse a través del proveedor de donaciones existente de tu iglesia. Cuando un evento se llena, una lista de espera opcional mantiene a los miembros interesados en la fila y los promueve automáticamente cuando se abren lugares.
+La inscripción a eventos puede ir más allá de un simple conteo de asistentes. Puede definir tipos de asistente con precio (como Adulto y Niño), ofrecer complementos opcionales con sus propios precios y cantidades, crear códigos de descuento y cobrar el pago al inscribirse a través del proveedor de donaciones existente de su iglesia. Cuando un evento se llena, una lista de espera opcional mantiene en fila a los miembros interesados y los promueve automáticamente conforme se liberan lugares.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Habilita primero el registro en el evento -- consulta [Creación de Calendarios](creating-calendars#enabling-event-registration)
-- Para recopilar pagos, tu iglesia necesita [donación en línea configurada](../donations/online-giving-setup.md) (Stripe, PayPal o Kingdom Funding). Los eventos gratuitos no necesitan configuración de donaciones.
+- Habilite primero la inscripción en el evento: consulte [Creación de calendarios](creating-calendars#enabling-event-registration)
+- Para cobrar pagos en línea, su iglesia necesita [tener configuradas las donaciones en línea](../donations/online-giving-setup.md) (Stripe, PayPal o Kingdom Funding). Los eventos gratuitos no requieren configuración de donaciones. Sin donaciones en línea, las inscripciones pagadas siguen funcionando, pero las personas pagan directamente a la iglesia; consulte [Iglesias sin donaciones en línea](#churches-without-online-giving).
 
 </div>
 
-## Abriendo la Configuración de Registro
+## Abrir la configuración de inscripción
 
-1. En B1 Admin, abre el [menú Salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), elige **Calendarios > Registros**, y abre tu evento (o abre el evento desde su calendario).
-2. La tarjeta **Configuración de Registro** muestra lo básico -- **Habilitar Registro**, **Capacidad**, **Registro Se Abre/Cierra**, **Etiquetas** y **Preguntas de Registro**.
-3. Debajo de lo básico hay tres acordeones: **Tipos de Asistentes**, **Selecciones** y **Códigos de Descuento**.
+1. En B1 Admin, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), elija **Calendarios > Inscripciones** y abra su evento (o ábralo desde su calendario).
+2. La tarjeta **Configuración de inscripción** muestra lo básico: **Habilitar inscripción**, **Capacidad**, **Apertura/Cierre de inscripciones**, **Etiquetas** y **Preguntas de inscripción**.
+3. Debajo de lo básico hay tres acordeones: **Tipos de asistente**, **Selecciones** y **Códigos de descuento**.
 
-## Tipos de Asistentes
+## Tipos de asistente
 
-Los tipos de asistentes te permiten cobrar diferentes precios para diferentes tipos de asistentes -- y limitar cada uno por separado.
+Los tipos de asistente le permiten cobrar precios diferentes según el tipo de asistente, y limitar cada uno por separado.
 
-1. Expande el acordeón **Tipos de Asistentes** y haz clic en **Agregar Tipo**.
-2. Ingresa un **Nombre** (p. ej., "Adulto", "Infantil", "Estudiante").
-3. Establece un **Precio**. Usa 0 para un tipo gratuito.
-4. Opcionalmente establece una **Capacidad** solo para este tipo (p. ej., solo 20 lugares para Infantil). Déjalo en blanco para sin límite por tipo.
-5. Haz clic en **Guardar**.
+1. Expanda el acordeón **Tipos de asistente** y haga clic en **Agregar tipo**.
+2. Escriba un **Nombre** (por ejemplo, "Adulto", "Niño", "Estudiante").
+3. Establezca un **Precio**. Use 0 para un tipo gratuito.
+4. Opcionalmente, establezca una **Capacidad** solo para este tipo (por ejemplo, solo 20 lugares de Niño). Déjelo en blanco si no hay límite por tipo.
+5. Haga clic en **Guardar**.
 
-Durante el registro, cada asistente elige un tipo; los tipos agotados se muestran como **Agotado** y no pueden ser seleccionados. El registro muestra el tipo de cada asistente y conteos en ejecución por tipo.
+Durante la inscripción, cada asistente elige un tipo; los tipos agotados se muestran como **Agotado** y no se pueden seleccionar. La lista de inscritos muestra el tipo de cada asistente y los conteos acumulados por tipo.
 
 ## Selecciones
 
-Las selecciones son complementos opcionales con precio -- camisetas, planes de comidas, mejoras de actividades.
+Las selecciones son complementos opcionales con precio, como camisetas, planes de comida o mejoras de actividades.
 
-1. Expande el acordeón **Selecciones** y haz clic en **Agregar Selección**.
-2. Ingresa un **Nombre**, **Descripción** opcional y un **Precio** (0 se muestra como "Gratis").
-3. Opcionalmente establece una **Capacidad** (total disponible en todos los registros) y una **Cantidad Máxima** (la cantidad máxima que un registro puede ordenar).
-4. Haz clic en **Guardar**.
+1. Expanda el acordeón **Selecciones** y haga clic en **Agregar selección**.
+2. Escriba un **Nombre**, una **Descripción** opcional y un **Precio** (0 se muestra como "Gratis").
+3. Opcionalmente, establezca una **Capacidad** (total disponible entre todas las inscripciones) y una **Cantidad máxima** (lo máximo que una inscripción puede pedir).
+4. Haga clic en **Guardar**.
 
-Los registrantes eligen cantidades durante la inscripción, y los totales se cuentan contra la capacidad para que nunca tengas sobreventa.
+Los inscritos eligen cantidades durante el registro, y los totales cuentan contra la capacidad para que nunca venda de más.
 
-## Códigos de Descuento
+## Códigos de descuento
 
-1. Expande el acordeón **Códigos de Descuento** y haz clic en **Agregar Código de Descuento**.
-2. Ingresa el **Código** que los registrantes escribirán.
-3. Elige el **Tipo** -- **Porcentaje** o **Monto** -- y su **Valor**.
-4. Opcionalmente limita el código con una **Fecha de Inicio** / **Fecha de Fin**, un **Mínimo de Miembros** (número mínimo de asistentes en el registro) y **Usos Máximos**.
-5. Haz clic en **Guardar**.
+1. Expanda el acordeón **Códigos de descuento** y haga clic en **Agregar código de descuento**.
+2. Escriba el **Código** que los inscritos escribirán.
+3. Elija el **Tipo** -- **Porcentaje** o **Monto** -- y su **Valor**.
+4. Opcionalmente, limite el código con una **Fecha de inicio** / **Fecha de fin**, un **Mínimo de miembros** (número mínimo de asistentes en la inscripción) y **Usos máximos**.
+5. Haga clic en **Guardar**.
 
-Cada código muestra un conteo de **Usos** para que puedas ver con qué frecuencia ha sido canjeado. Los registrantes reciben retroalimentación instantánea cuando aplican un código -- incluyendo mensajes claros cuando un código ha expirado, no ha comenzado o necesita más asistentes.
+Cada código muestra un conteo de **Usos** para que vea cuántas veces se ha canjeado. Los inscritos reciben respuesta inmediata cuando aplican un código, incluidos mensajes claros si el código ha vencido, aún no ha comenzado o requiere más asistentes.
 
-## Lista de Espera {#waitlist}
+## Lista de espera {#waitlist}
 
-Activa **Habilitar Lista de Espera** en la tarjeta de Configuración de Registro. Cuando el evento alcanza capacidad:
+Active **Habilitar lista de espera** en la tarjeta Configuración de inscripción. Cuando el evento alcanza su capacidad:
 
-- A los nuevos registrantes se les ofrece un lugar en la lista de espera en lugar de ser rechazados. Completan el mismo registro (el pago se omite mientras están en lista de espera).
-- Cuando alguien cancela, el registro en lista de espera más antiguo es **promovido automáticamente** y recibe un correo electrónico informando que se abrió un lugar. Si deben un saldo, el correo electrónico los vincula para completar el pago.
-- Puedes promover a alguien manualmente en cualquier momento con la acción **Promover** en una fila en lista de espera -- útil después de aumentar la capacidad del evento.
-
-:::info
-Los registros promovidos permanecen *pendientes* hasta que se pague cualquier saldo; pagar (o no tener nada que pagar) los confirma.
-:::
-
-## El Registro de Registros {#the-registration-roster}
-
-Abre un evento desde la página de Registros para ver cada registro. La tabla muestra **Nombre**, **Miembros**, **Tipo** (tipo de cada asistente), **Pagado / Total** (con una advertencia de saldo cuando aún se debe dinero), **Estado** y **Fecha**, más chips de conteo por tipo sobre la tabla.
-
-- Haz clic en el icono de detalle de una fila para abrir el diálogo de **Detalles de Registro** -- miembros, selecciones, pagado/saldo y una tabla de **Pagos** listando cada cargo (monto, método, fecha).
-- **Exportar CSV** descarga el registro completo con columnas para miembros, tipos de asistentes, selecciones, pagado/total/saldo, estado y una columna por pregunta de registro.
-- **Agregar Asistente** aún te permite registrar inscripciones sin conexión manualmente.
+- A los nuevos inscritos se les ofrece un lugar en la lista de espera en lugar de ser rechazados. Completan el mismo registro (el pago se omite mientras están en lista de espera).
+- Cuando alguien cancela, la inscripción en lista de espera más antigua se **promueve automáticamente** y recibe un correo electrónico avisando que se liberó un lugar. Si tiene un saldo pendiente, el correo lo lleva a [Mis inscripciones](../../b1-church/events/my-registrations) en el sitio B1 de su iglesia, donde puede completar el pago.
+- Puede promover a alguien manualmente en cualquier momento con la acción **Promover** en una fila de lista de espera, lo cual es útil después de aumentar la capacidad del evento.
 
 :::info
-Los reembolsos no se procesan dentro de B1. Si necesitas reembolsar un registro pagado cancelado, emite el reembolso desde el panel de tu proveedor de donaciones (p. ej., Stripe).
+Las inscripciones promovidas permanecen *pendientes* hasta que se pague cualquier saldo; al pagar (o si no hay nada que pagar), se confirman.
 :::
 
-## Cómo Funciona el Pago
+## La lista de inscritos {#the-registration-roster}
 
-Los pagos se realizan a través de la misma puerta de enlace de donaciones que tu iglesia ya usa para donaciones -- los detalles de la tarjeta van directamente al proveedor y nunca tocan los servidores de B1. Los precios siempre se calculan en el servidor desde tus tipos, selecciones y códigos de descuento configurados, por lo que un registrante no puede alterar el total. Los miembros que han iniciado sesión pueden pagar con una tarjeta guardada; los invitados ingresan una tarjeta en el proceso de pago.
+Abra un evento desde la página de Inscripciones para ver todas las inscripciones. El título de la tarjeta muestra cuántas inscripciones ocupan un lugar frente a la capacidad (por ejemplo, *Inscripciones (18 / 20)*). Solo cuentan las inscripciones pendientes y confirmadas; cuando hay personas en lista de espera, el título agrega el número (por ejemplo, *· 3 en lista de espera*), y el mismo conteo aparece debajo de la barra de capacidad. La tabla muestra **Nombre**, **Miembros**, **Tipo** (el tipo de cada asistente), **Pagado / Total** (con una advertencia de saldo cuando aún se debe dinero), **Estado** y **Fecha**, además de las etiquetas de conteo por tipo encima de la tabla.
 
-## Artículos Relacionados
+- Haga clic en el ícono de detalles de una fila para abrir el cuadro de diálogo **Detalles de la inscripción**: miembros, selecciones, pagado/saldo y una tabla de **Pagos** con cada cargo (monto, método, fecha).
+- **Exportar CSV** descarga la lista completa con columnas para miembros, tipos de asistente, selecciones, pagado/total/saldo, estado y una columna por cada pregunta de inscripción.
+- **Agregar asistente** registra una inscripción sin conexión o por teléfono para cualquier persona de su iglesia. Elija a la persona y, en un evento de pago, su tipo de asistente. A su tarjeta no se le cobra nada: una inscripción de pago se guarda como **pendiente** con el monto total como saldo pendiente. Si su iglesia tiene donaciones en línea, la persona puede pagarlo desde [Mis inscripciones](../../b1-church/events/my-registrations); de lo contrario, cóbrelo en persona. Necesita el permiso de edición de Inscripciones para agregar asistentes.
 
-- [Creación de Calendarios](creating-calendars#enabling-event-registration) -- habilita el registro y la configuración básica
-- [Configuración de Donación En Línea](../donations/online-giving-setup.md) -- configura la puerta de enlace de pago utilizada en el proceso de pago
-- [Registrarse en Eventos](../../b1-church/events/registering) -- lo que los miembros ven cuando se registran
-- [Mis Registros](../../b1-church/events/my-registrations) -- cómo los miembros pagan saldos y editan registros
+:::info
+Los reembolsos no se procesan dentro de B1. Si necesita reembolsar una inscripción de pago cancelada, emita el reembolso desde el panel de su proveedor de donaciones (por ejemplo, Stripe).
+:::
+
+## Cómo funciona el pago
+
+Los pagos pasan por la misma pasarela de donaciones que su iglesia ya usa: los datos de la tarjeta van directamente al proveedor y nunca llegan a los servidores de B1. Los precios siempre se calculan en el servidor a partir de los tipos, selecciones y códigos de descuento configurados, así que un inscrito no puede alterar el total. Los miembros que inician sesión pueden pagar con una tarjeta guardada. Los invitados ingresan una tarjeta al pagar y deben marcar la casilla **No soy un robot** antes de pagar.
+
+### Iglesias sin donaciones en línea {#churches-without-online-giving}
+
+Si su iglesia no tiene configurado un proveedor de donaciones, los eventos de pago pueden seguir recibiendo inscripciones. El paso de pago informa a los inscritos que el pago en línea no está disponible y que pueden pagar directamente a la iglesia, y un botón **Inscribirse y pagar después** guarda la inscripción. Se guarda como **pendiente** con el monto total como saldo pendiente, y aparece en la lista con una advertencia de saldo. Cobre el dinero de la forma en que su iglesia normalmente lo hace.
+
+:::info
+B1 no tiene forma de marcar un pago fuera de línea como recibido. El saldo pendiente permanece en la lista y en la tarjeta de [Mis inscripciones](../../b1-church/events/my-registrations) del inscrito después de que usted lo cobre, así que lleve su propio registro de quién ha pagado.
+:::
+
+## Artículos relacionados
+
+- [Creación de calendarios](creating-calendars#enabling-event-registration) — habilitar la inscripción y la configuración básica
+- [Configuración de donaciones en línea](../donations/online-giving-setup.md) — configurar la pasarela de pago que se usa al pagar
+- [Inscribirse a eventos](../../b1-church/events/registering) — lo que ven los miembros al registrarse
+- [Mis inscripciones](../../b1-church/events/my-registrations) — cómo los miembros pagan saldos y editan sus inscripciones

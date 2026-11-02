@@ -6,7 +6,7 @@ title: "Créer votre compte"
 
 <div class="article-intro">
 
-Commencer avec ChurchApps passe par la création de votre compte. La démarche ne prend que quelques minutes et vous donne accès à tous les outils de ChurchApps, y compris B1 Admin, B1.church et Lessons.church.
+Pour commencer avec ChurchApps, il faut d'abord créer votre compte. Le processus ne prend que quelques minutes et vous donne accès à tous les outils ChurchApps, y compris B1 Admin, B1.church et Lessons.church.
 
 </div>
 
@@ -17,43 +17,43 @@ Commencer avec ChurchApps passe par la création de votre compte. La démarche n
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Ayez une adresse e-mail valide pour la vérification du compte
-- Consultez l'[aperçu de Premiers pas](./index.md) pour comprendre ce que ChurchApps offre
+- Ayez une adresse courriel valide pour la vérification du compte
+- Consultez la [vue d'ensemble de Pour commencer](./index.md) pour comprendre ce que ChurchApps offre
 
 </div>
 
 ## Inscription étape par étape
 
-1. Rendez-vous sur [B1.church](https://b1.church) dans votre navigateur web.
+1. Allez sur [B1.church](https://b1.church) dans votre navigateur web.
 2. Cliquez sur le bouton **S'inscrire**.
-3. Saisissez votre **prénom**, votre **nom de famille** et votre **adresse e-mail** -- ou, si votre église a l'authentification unique activée, cliquez sur **Continuer avec Google** ou **Continuer avec Microsoft** pour passer directement à l'étape 5 avec votre compte existant.
+3. Saisissez votre **prénom**, votre **nom** et votre **adresse courriel** — ou, si votre église a activé l'authentification unique, cliquez sur **Continuer avec Google** ou **Continuer avec Microsoft** pour passer directement à l'étape 5 avec votre compte existant.
 4. Créez un mot de passe pour votre compte.
 5. Soumettez le formulaire d'inscription.
 
 :::info
-Un seul compte ChurchApps fonctionne pour B1, Lessons.church et les autres applications ChurchApps. Si vous voyez **Vous avez déjà un compte ChurchApps. Veuillez plutôt vous connecter avec celui-ci.**, cliquez sur **Connexion** et connectez-vous avec cet e-mail. Utilisez **Mot de passe oublié** si vous ne vous souvenez plus du mot de passe.
+Un seul compte ChurchApps fonctionne pour B1, Lessons.church et les autres applications ChurchApps. Si vous voyez **Vous avez déjà un compte ChurchApps. Veuillez plutôt vous connecter avec celui-ci.**, cliquez sur **Connexion** et connectez-vous avec cette adresse courriel. Utilisez **Mot de passe oublié** si vous ne vous souvenez plus du mot de passe.
 :::
 
-## Confirmer votre e-mail
+## Confirmer votre courriel
 
-Après votre inscription, vous recevrez un e-mail de confirmation à l'adresse que vous avez fournie.
+Après l'inscription, vous recevrez un courriel de confirmation à l'adresse que vous avez fournie.
 
-1. Vérifiez votre boîte de réception pour l'e-mail de confirmation de ChurchApps.
-2. Cliquez sur le lien de confirmation dans l'e-mail.
+1. Vérifiez votre boîte de réception pour le courriel de confirmation de ChurchApps.
+2. Cliquez sur le lien de confirmation dans le courriel.
 3. Votre compte est maintenant vérifié et prêt à l'emploi.
 
 :::tip
-Si vous ne voyez pas l'e-mail de confirmation, vérifiez votre dossier de pourriels ou de courriers indésirables. L'e-mail provient de ChurchApps et peut mettre une minute ou deux à arriver.
+Si vous ne voyez pas le courriel de confirmation, vérifiez votre dossier des pourriels ou des courriers indésirables. Le courriel provient de ChurchApps et peut mettre une minute ou deux à arriver.
 :::
 
 ## Configurer votre église
 
-Après avoir confirmé votre e-mail et vous être connecté, vous pourrez choisir de créer une nouvelle église ou de rejoindre une église existante.
+Après avoir confirmé votre courriel et vous être connecté, vous pourrez soit créer une nouvelle église, soit rejoindre une église existante.
 
 **Pour créer une nouvelle église :**
 
 1. Sélectionnez l'option pour **créer une nouvelle église**.
-2. Saisissez le **nom de votre église** et ses renseignements de base. Le formulaire d'inscription remplira automatiquement les détails de votre église si une correspondance est trouvée.
+2. Saisissez le **nom de votre église** et les renseignements de base. Le formulaire d'inscription remplira automatiquement les coordonnées de votre église si une correspondance est trouvée.
 3. Terminez le processus de configuration.
 4. Vous serez dirigé vers le **Tableau de bord**, la page d'accueil de B1 Admin, où vous pourrez commencer à configurer votre église.
 
@@ -61,16 +61,16 @@ Après avoir confirmé votre e-mail et vous être connecté, vous pourrez choisi
 
 1. Sélectionnez l'option pour **rejoindre une église existante**.
 2. Recherchez votre église par son nom.
-3. Demandez à la rejoindre. Un administrateur de votre église devra approuver votre demande.
+3. Demandez à rejoindre l'église. Un administrateur de votre église devra approuver votre demande.
 
 :::info
-Si vous essayez de vous connecter avec un e-mail qui n'est pas encore inscrit, vous serez automatiquement dirigé vers le processus d'inscription afin de créer un compte.
+Si vous essayez de vous connecter avec une adresse courriel qui n'est pas encore inscrite, vous serez automatiquement dirigé vers le processus d'inscription pour créer un compte.
 :::
 
 :::info
-La personne qui crée une nouvelle église reçoit automatiquement le rôle **Administrateur de domaine**, qui donne un accès complet à tous les paramètres et fonctionnalités. Vous pourrez ajouter d'autres administrateurs plus tard depuis la page **Rôles**.
+La personne qui crée une nouvelle église reçoit automatiquement le rôle **Administrateur de domaine**, qui donne un accès complet à tous les paramètres et fonctions. Vous pourrez ajouter d'autres administrateurs plus tard depuis la page **Rôles**.
 :::
 
-## La suite
+## Et ensuite
 
-Une fois votre église configurée, rendez-vous au guide [Configuration initiale](./initial-setup.md) pour configurer les paramètres, l'image de marque et l'accès de l'équipe de votre église.
+Une fois votre église configurée, passez au guide [Configuration initiale](./initial-setup.md) pour configurer les paramètres de votre église, son image de marque et l'accès de votre équipe.

@@ -46,7 +46,7 @@ Your new batch appears in the list, ready for you to add donations.
 - **Sort** -- use the column headers to sort batches by name or date.
 - **Export** -- click **Export** at the top of the page to download the batches shown as a spreadsheet (CSV).
 - **Failed events** -- if your payment gateway has reported problems, a **Failed events** button (with the number of unresolved events) appears at the top of the page. Click it to show or hide the list of events below the batches.
-- **Import from Stripe** -- click **Import missing Stripe transactions** at the top of the page to open the [Stripe Import](stripe-import.md) tool.
+- **Import from Stripe** -- click **Import missing Stripe transactions** at the top of the page to open the [Stripe Import](stripe-import.md) tool. The button only appears when your church's giving gateway is Stripe.
 
 ## Who Entered Each Gift
 

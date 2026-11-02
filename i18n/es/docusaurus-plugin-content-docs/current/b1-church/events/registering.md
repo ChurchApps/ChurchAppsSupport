@@ -1,90 +1,92 @@
 ---
-title: "Inscribirse en Eventos"
+title: "Inscribirse a eventos"
 ---
 
-# Inscribirse en Eventos
+# Inscribirse a eventos
 
 <div class="article-intro">
 
-Cuando tu iglesia habilita la inscripción para un evento, puedes registrarte a través de un sencillo proceso paso a paso. Puedes inscribirte a ti mismo y agregar miembros de la familia, ya sea que tengas una cuenta o estés visitando como invitado. Para eventos de pago, eliges un tipo de asistente, agregas extras opcionales, aplicas un código de descuento y pagas de forma segura al final.
+Cuando su iglesia habilita la inscripción para un evento, puede registrarse mediante un proceso sencillo paso a paso. Puede inscribirse usted y agregar a los miembros de su familia, tanto si tiene una cuenta como si visita como invitado. En los eventos de pago, elige un tipo de asistente, agrega complementos opcionales, aplica un código de descuento y paga de forma segura al final.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Tu iglesia debe tener habilitada la inscripción de eventos para el evento
-- El período de inscripción debe estar abierto (entre las fechas de apertura y cierre establecidas por el administrador)
+- Su iglesia debe tener habilitada la inscripción para el evento
+- El periodo de inscripción debe estar abierto (entre las fechas de apertura y cierre que configuró el administrador)
 
 </div>
 
-## Paso 1: Ingresa Tu Información
+## Paso 1: ingrese sus datos
 
-1. Desde el calendario de la iglesia, abre el evento en el que deseas inscribirte y haz clic en **Inscribirse en este Evento**.
-2. Se carga la página de inscripción mostrando el título, la descripción y la fecha del evento.
-3. Si has **iniciado sesión**, el formulario muestra tu nombre y confirma que te estás inscribiendo con tu cuenta.
-4. Si eres un **invitado** (sin haber iniciado sesión), completa:
+1. En el calendario de la iglesia, abra el evento en el que quiere inscribirse y haga clic en **Inscribirse a este evento**.
+2. Se carga la página de inscripción con el título, la descripción y la fecha del evento. Un evento que dura varios días muestra su fecha de inicio y de fin.
+3. Si **ha iniciado sesión**, el formulario muestra su nombre y confirma que se está inscribiendo con su cuenta.
+4. Si es **invitado** (no ha iniciado sesión), complete:
    - **Nombre** (obligatorio)
    - **Apellido** (obligatorio)
    - **Correo electrónico** (obligatorio)
    - **Teléfono** (opcional)
-5. Si el evento tiene tipos de asistente (por ejemplo, Adulto y Niño a diferentes precios), elige **tu tipo de inscripción**. Cada tipo muestra su precio, y los tipos agotados se muestran como **Agotado**.
+5. Si el evento tiene tipos de asistente (por ejemplo, Adulto y Niño con precios distintos), elija **su tipo de inscripción**. Cada tipo muestra su precio, y los tipos agotados aparecen como **Agotado**.
 
 :::info
-Si el evento tiene un límite de capacidad, una barra de progreso muestra cuántos cupos quedan. Si el evento está completo y tu iglesia ha habilitado una lista de espera, aún puedes completar la inscripción para unirte a la lista de espera -- consulta [Unirse a una Lista de Espera](#joining-a-waitlist) más abajo.
+Si el evento tiene un límite de capacidad, una barra de progreso muestra cuántos lugares quedan. Si el evento está lleno y su iglesia ha habilitado una lista de espera, aún puede completar la inscripción para unirse a la lista; consulte [Unirse a una lista de espera](#joining-a-waitlist) más abajo.
 :::
 
-## Paso 2: Agregar Miembros de la Familia
+## Paso 2: agregue a los miembros de su familia
 
-1. Si deseas inscribir a miembros adicionales de la familia, ingresa su **Nombre** y **Apellido** para cada persona.
-2. Si el evento tiene tipos de asistente, elige un tipo para cada persona que agregues.
-3. Haz clic en **Agregar Miembro** para agregar más personas (hasta 10 en total).
-4. Haz clic en el botón de eliminar junto a cualquier miembro para quitarlo de la inscripción.
-5. Si solo te estás inscribiendo a ti mismo, puedes omitir este paso.
+1. Si quiere inscribir a más miembros de su familia, escriba el **Nombre** y el **Apellido** de cada persona.
+2. Si el evento tiene tipos de asistente, elija un tipo para cada persona que agregue.
+3. Haga clic en **Agregar miembro** para añadir más personas (hasta 10 en total).
+4. Haga clic en el botón de quitar junto a cualquier miembro para retirarlo de la inscripción.
+5. Si solo se inscribe usted, puede omitir este paso.
 
-## Paso 3: Elige Opciones y Selecciones (Si se Ofrecen)
+## Paso 3: elija opciones y selecciones (si se ofrecen)
 
-Algunos eventos ofrecen complementos opcionales de pago — camisetas, comidas, mejoras de actividades.
+Algunos eventos ofrecen complementos opcionales con precio, como camisetas, comidas o mejoras de actividades.
 
-1. Si el evento tiene selecciones, aparece un paso de **Opciones y Selecciones**.
-2. Usa los controles de cantidad para elegir cuántos deseas de cada uno. Las opciones gratuitas se muestran como **Gratis**, y las opciones limitadas muestran cuántas quedan.
-3. Haz clic en **Continuar**.
+1. Si el evento tiene selecciones, aparece un paso de **Opciones y selecciones**.
+2. Use los controles de cantidad para elegir cuántos de cada uno quiere. Las opciones gratuitas aparecen como **Gratis**, y las opciones limitadas muestran cuántas quedan.
+3. Haga clic en **Continuar**.
 
-## Paso 4: Responde Preguntas (Si se Piden)
+## Paso 4: responda preguntas (si se piden)
 
-Algunos eventos piden a los inscritos que respondan algunas preguntas adicionales -- restricciones alimenticias, talla de camiseta, contacto de emergencia y detalles similares.
+Algunos eventos piden a los inscritos que respondan algunas preguntas adicionales: restricciones alimentarias, talla de camiseta, contacto de emergencia y datos similares.
 
-1. Si el evento tiene preguntas asociadas, aparece a continuación un paso de **Preguntas**.
-2. Completa tus respuestas y continúa.
+1. Si el evento tiene preguntas adjuntas, aparece a continuación un paso de **Preguntas**.
+2. Complete sus respuestas y continúe.
 
-Si el evento no tiene preguntas asociadas, este paso se omite automáticamente.
+Si el evento no tiene preguntas adjuntas, este paso se omite automáticamente.
 
-## Paso 5: Pagar (Eventos de Pago)
+## Paso 5: pague (eventos de pago)
 
-Si tu inscripción tiene un costo, el paso de **Pago** muestra un **Resumen del Pedido** que enumera cada asistente, cada selección, cualquier descuento y el **Total**.
+Si su inscripción tiene un costo, el paso de **Pago** muestra un **Resumen del pedido** con cada asistente, cada selección, cualquier descuento y el **Total**.
 
-- **Código de descuento** -- Si tu iglesia te dio un código, ingrésalo y haz clic en **Aplicar**. El descuento se refleja de inmediato, y verás un mensaje claro si el código ha expirado, aún no ha comenzado o requiere más asistentes.
-- Los **miembros con sesión iniciada** pueden pagar con una tarjeta guardada o elegir **Usar una nueva tarjeta**.
-- Los **invitados** ingresan los datos de su tarjeta directamente.
+- **Código de descuento**: si su iglesia le dio un código, escríbalo y haga clic en **Aplicar**. El descuento se refleja de inmediato, y verá un mensaje claro si el código venció, aún no ha comenzado o requiere más asistentes.
+- **Los miembros que han iniciado sesión** pueden pagar con una tarjeta guardada o elegir **Usar una tarjeta nueva**.
+- **Los invitados** ingresan los datos de su tarjeta directamente y marcan la casilla **No soy un robot** antes de pagar.
 
-Haz clic en **Pagar e Inscribirse** para completar el pago y la inscripción en un solo paso. Los datos de tu tarjeta van directamente al proveedor de pagos de la iglesia y nunca son almacenados por B1.
+Haga clic en **Pagar y registrarse** para completar el pago y la inscripción en un solo paso. Los datos de su tarjeta van directamente al proveedor de pagos de la iglesia y B1 nunca los guarda.
 
-Las inscripciones gratuitas omiten este paso y van directamente a la confirmación.
+Las inscripciones gratuitas omiten este paso y pasan directamente a la confirmación.
 
-## Paso 6: Confirmar
+Si su iglesia no cobra pagos en línea, el paso de pago dice *"El pago en línea no está disponible para este evento. Puede inscribirse ahora y pagar directamente a la iglesia."* Haga clic en **Inscribirse y pagar después** para terminar. Su inscripción se guarda con el monto mostrado como saldo pendiente, que paga directamente a la iglesia.
 
-Aparece un mensaje de confirmación con los detalles del evento y una lista de todas las personas que inscribiste. También recibirás un **correo electrónico de confirmación** en la dirección de correo asociada a tu cuenta (o el correo que proporcionaste como invitado).
+## Paso 6: confirme
 
-## Unirse a una Lista de Espera
+Aparece un mensaje de confirmación con los detalles del evento y una lista de todas las personas que inscribió. También recibirá un **correo de confirmación** en la dirección asociada a su cuenta (o en el correo que proporcionó como invitado).
 
-Si el evento está completo y tu iglesia habilitó la lista de espera, el primer paso muestra: *"Este evento está completo. Puedes unirte a la lista de espera y te avisaremos si se libera un cupo."* Completa la inscripción normalmente — el pago se omite mientras estás en la lista de espera. Cuando se libera un cupo, recibes un correo electrónico; si hay un pago pendiente, incluye un enlace para completarlo. También puedes consultar tu estado y pagar desde [Mis Inscripciones](./my-registrations).
+## Unirse a una lista de espera {#joining-a-waitlist}
 
-## Cambiar o Cancelar una Inscripción
+Si el evento está lleno y su iglesia habilitó la lista de espera, el primer paso muestra: *"Este evento está lleno. Puede unirse a la lista de espera y le avisaremos si se libera un lugar."* Complete la inscripción como de costumbre; el pago se omite mientras esté en lista de espera. Cuando se libere un lugar, recibirá un correo; si hay un pago pendiente, incluirá un enlace para completarlo. También puede consultar su estado y pagar desde [Mis inscripciones](./my-registrations).
 
-Si has iniciado sesión, puedes editar o cancelar tu inscripción tú mismo desde la página de **Inscripciones** en el portal de miembros -- consulta [Mis Inscripciones](./my-registrations). Los invitados deben comunicarse con la oficina de la iglesia, y el personal puede hacer el cambio desde la página de inscripciones de B1 Admin.
+## Cambiar o cancelar una inscripción
 
-## Artículos Relacionados
+Si ha iniciado sesión, puede editar o cancelar su inscripción usted mismo desde la página de **Inscripciones** en el portal de miembros; consulte [Mis inscripciones](./my-registrations). Los invitados deben comunicarse con la oficina de la iglesia, y el personal puede hacer el cambio desde la página de inscripciones de B1 Admin.
 
-- [Resumen de Eventos](./index.md) -- Explora los próximos eventos con inscripción
-- [Mis Inscripciones](./my-registrations) -- Ver, editar, pagar saldos y cancelar tus inscripciones
-- [Hacer Donaciones](../giving/making-donations) -- Haz una donación junto con la participación en el evento
+## Artículos relacionados
+
+- [Resumen de eventos](./index.md): explore los próximos eventos con inscripción
+- [Mis inscripciones](./my-registrations): vea, edite, pague saldos y cancele sus inscripciones
+- [Hacer donaciones](../giving/making-donations): haga una donación junto con su participación en un evento

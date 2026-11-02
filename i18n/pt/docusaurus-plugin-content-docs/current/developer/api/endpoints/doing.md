@@ -1,12 +1,12 @@
 ---
-title: "Endpoints do Doing"
+title: "Endpoints de Doing"
 ---
 
-# Endpoints do Doing
+# Endpoints de Doing
 
 <div class="article-intro">
 
-O módulo Doing gerencia o planejamento de cultos, a escala de voluntários, o gerenciamento de tarefas e as automações. Ele oferece ferramentas para criar planos de culto com horários e posições, atribuir voluntários, gerenciar datas de bloqueio, montar os itens da ordem do culto, conectar-se a provedores externos de conteúdo e configurar fluxos automatizados com condições e ações.
+O módulo Doing gerencia o planejamento de cultos, a escala de voluntários, o gerenciamento de tarefas e as automações. Ele oferece ferramentas para criar planos de culto com horários e posições, designar voluntários, gerenciar datas de indisponibilidade, montar itens da ordem do culto, conectar-se a provedores externos de conteúdo e configurar fluxos automatizados com condições e ações.
 
 </div>
 
@@ -21,21 +21,21 @@ Caminho base: `/doing/plans`
 | GET | `/` | JWT | — | Lista todos os planos da igreja |
 | GET | `/:id` | JWT | — | Obtém um plano pelo ID |
 | GET | `/ids?ids=` | JWT | — | Obtém vários planos por IDs separados por vírgula |
-| GET | `/types/:planTypeId` | JWT | — | Obtém os planos por tipo de plano |
-| GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + edição do ministério | Prévia da mensagem **Enviar Texto aos Voluntários** da visão geral de escalas: `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }` para os voluntários escalados no período (uma vez por pessoa; números de quem cancelou a inscrição ou sem telefone são ignorados; números compartilhados são deduplicados; limite de 200) |
-| GET | `/presenter` | JWT | — | Obtém os planos dos próximos 7 dias (visão do apresentador) |
-| GET | `/confirmationWorkflows?ministryId=` | JWT | Edição do ministério | Fluxos de confirmação de escala ativos (`workflowType = "assignmentConfirmation"`) que um plano pode selecionar: `[{ id, name }]` |
+| GET | `/types/:planTypeId` | JWT | — | Obtém os planos de um tipo de plano |
+| GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + edição do ministério | Prévia da mensagem de **Enviar texto aos voluntários** da visão geral de atendimento: `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }` para os voluntários designados no intervalo (um por pessoa, pulando os que cancelaram a inscrição e os sem número, números compartilhados deduplicados, limitado a 200) |
+| GET | `/presenter` | JWT | — | Obtém os planos dos próximos 7 dias (visão de apresentador) |
+| GET | `/confirmationWorkflows?ministryId=` | JWT | Edição do ministério | Fluxos de trabalho ativos de confirmação de atribuição de atendimento (`workflowType = "assignmentConfirmation"`) que um plano pode selecionar: `[{ id, name }]` |
 | GET | `/public/current/:planTypeId` | Pública | — | Obtém o plano atual de um tipo de plano |
-| GET | `/public/signup/:churchId` | Pública | — | Planos abertos para inscrição própria, do mais próximo para o mais distante, cada um com suas posições de inscrição própria (ordenadas por `categoryName` e depois `name`, mais `filledCount` das atribuições Accepted/Unconfirmed) e horários. Sem nomes de voluntários. Quando a configuração da igreja `volunteerSignupNextOnly` é `"true"`, apenas o primeiro plano de cada tipo de plano é retornado. Cada `plan` inclui um `signupDeadline` calculado (instante ISO, ou `null`): `signupDeadlineHours` antes do horário `service` mais cedo do plano (qualquer horário com data, se não houver horário de culto; 9:00 no fuso horário da igreja em `serviceDate`, se o plano não tiver horários) |
-| GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` para as posições de inscrição própria do plano (nomes de exibição dos responsáveis Accepted/Unconfirmed). Retorna `[]`, a menos que `showVolunteerNames` do plano esteja ativado |
-| POST | `/` | JWT | — | Cria ou atualiza planos (aceita um objeto único ou um array). Defina `confirmationWorkflowId` para aderir o plano a um fluxo de confirmação de escala, ou `null` para desistir em solicitações futuras. Envie `signupDeadlineHours: null` para remover um prazo; omitir o campo mantém o valor salvo |
-| POST | `/copy/:id` | JWT | Edição do ministério | Copia um plano, incluindo posições, horários, atribuições e itens da ordem do culto. O corpo inclui `ministryId`, `serviceDate`, `copyMode` ("none", "positions", "all") e `copyServiceOrder` (booleano). Sem `targetPlanId`, um novo plano é criado, e `notes`, `signupDeadlineHours`, `showVolunteerNames` e `autoReplaceOnDecline` são transferidos do plano de origem, a menos que o corpo os informe. Com `targetPlanId`, a cópia preenche esse plano existente (quem chama precisa poder editá-lo). A opção **Repetir semanalmente** do B1Admin chama este endpoint uma vez por semana, copiando sempre do plano criado na semana anterior |
-| POST | `/textRange` | JWT | `texting.send` + edição do ministério | Envia mensagem a cada voluntário escalado em um intervalo de datas, pelo provedor de mensagens de texto da igreja. Corpo: `{ startDate, endDate, ministryId, planTypeId?, message }` (mensagem de até 1600 caracteres; campos de mesclagem resolvidos para cada destinatário). Retorna as contagens da prévia mais `recipientCount`, `successCount`, `failCount` e `error` (`no_provider` ou `insufficient_credits`) quando o envio é interrompido antes do fim |
-| POST | `/:id/issueRequests` | JWT | Edição do plano | Emite as novas atribuições Unconfirmed, ainda não notificadas, do plano pelo seu fluxo de confirmação: marca cada uma como notificada e inicia um cartão de fluxo por atribuição. Corpo vazio; retorna `{ issued }`. Falha, a menos que o plano esteja publicado (não `prepared`), tenha um `confirmationWorkflowId` ativo com pelo menos uma etapa e o prazo de resposta ainda não tenha passado |
+| GET | `/public/signup/:churchId` | Pública | — | Planos abertos para inscrição própria, do mais próximo para o mais distante, cada um com suas posições de inscrição própria (ordenadas por `categoryName` e depois `name`, mais `filledCount` das atribuições Aceitas/Não confirmadas) e horários. Sem nomes de voluntários. Quando a configuração da igreja `volunteerSignupNextOnly` é `"true"`, só o primeiro plano de cada tipo é retornado. Cada `plan` inclui um `signupDeadline` calculado (instante ISO, ou `null`): `signupDeadlineHours` antes do horário `service` mais cedo do plano (qualquer horário com hora, se não houver horário de culto; 9:00 no fuso horário da igreja em `serviceDate` se o plano não tiver horários) |
+| GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` para as posições de inscrição própria do plano (nomes de exibição dos designados Aceitos/Não confirmados). Retorna `[]` a menos que o `showVolunteerNames` do plano esteja ativado |
+| POST | `/` | JWT | — | Cria ou atualiza planos (aceita um objeto único ou uma lista). Defina `confirmationWorkflowId` para aderir a um fluxo de confirmação de atendimento, ou `null` para sair nas próximas solicitações. Envie `signupDeadlineHours: null` para limpar um prazo; omitir o campo mantém o valor salvo |
+| POST | `/copy/:id` | JWT | Edição do ministério | Copia um plano, incluindo posições, horários, atribuições e itens da ordem do culto. O corpo inclui `ministryId`, `serviceDate`, `copyMode` ("none", "positions", "all") e `copyServiceOrder` (booleano). Sem `targetPlanId`, um novo plano é criado, e `notes`, `signupDeadlineHours`, `showVolunteerNames` e `autoReplaceOnDecline` são herdados do plano de origem, a menos que o corpo os informe. Com `targetPlanId`, a cópia preenche esse plano existente (quem chama precisa poder editá-lo). A opção **Repetir semanalmente** do B1Admin chama isso uma vez por semana, copiando sempre do plano criado na semana anterior |
+| POST | `/textRange` | JWT | `texting.send` + edição do ministério | Envia mensagem de texto a todos os voluntários designados em um intervalo de datas pelo provedor de SMS da igreja. Corpo: `{ startDate, endDate, ministryId, planTypeId?, message }` (mensagem de até 1600 caracteres; campos de mesclagem resolvidos por destinatário). Retorna as contagens da prévia, além de `recipientCount`, `successCount`, `failCount` e `error` (`no_provider` ou `insufficient_credits`) quando o envio é interrompido antes do fim |
+| POST | `/:id/issueRequests` | JWT | Edição do plano | Emite as novas atribuições Não confirmadas e ainda não notificadas do plano pelo seu fluxo de confirmação: marca cada uma como notificada e inicia um cartão de fluxo de trabalho por atribuição. Corpo vazio; retorna `{ issued }`. Falha a menos que o plano esteja publicado (não `prepared`), tenha um `confirmationWorkflowId` ativo com pelo menos uma etapa, e o prazo de resposta não tenha passado |
 | POST | `/autofill/:id` | JWT | — | Preenche automaticamente as atribuições de voluntários de um plano. Corpo: `{ teams: [{ positionId, personIds }] }` |
-| DELETE | `/:id` | JWT | — | Exclui um plano e todos os horários, atribuições, posições e itens de plano relacionados |
+| DELETE | `/:id` | JWT | — | Exclui um plano e todos os horários, atribuições, posições e itens do plano relacionados |
 
-### Exemplo: Copiar um Plano
+### Exemplo: copiar um plano
 
 ```
 POST /doing/plans/copy/abc-123
@@ -56,7 +56,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## Tipos de Plano
+## Tipos de plano
 
 Caminho base: `/doing/planTypes`
 
@@ -71,7 +71,7 @@ Estende a classe base CRUD (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` — sem
 | POST | `/` | JWT | — | Cria ou atualiza tipos de plano |
 | DELETE | `/:id` | JWT | — | Exclui um tipo de plano |
 
-## Itens de Plano
+## Itens do plano
 
 Caminho base: `/doing/planItems`
 
@@ -79,23 +79,23 @@ Gerencia os itens da ordem do culto (cabeçalhos, seções, músicas etc.), orga
 
 | Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|---------|--------------|-----------|-----------|
-| GET | `/:id` | JWT | — | Obtém um item de plano pelo ID |
-| GET | `/ids?ids=` | JWT | — | Obtém vários itens de plano por IDs separados por vírgula |
-| GET | `/plan/:planId` | JWT | — | Obtém todos os itens de um plano (retorna estrutura em árvore) |
-| GET | `/presenter/:churchId/:planId` | Pública | — | Obtém os itens de plano para a visão do apresentador (retorna estrutura em árvore) |
-| POST | `/` | JWT | — | Cria ou atualiza itens de plano |
-| POST | `/sort` | JWT | — | Atualiza a ordem de um item de plano (reordena os itens irmãos) |
-| DELETE | `/:id` | JWT | — | Exclui um item de plano |
+| GET | `/:id` | JWT | — | Obtém um item do plano pelo ID |
+| GET | `/ids?ids=` | JWT | — | Obtém vários itens do plano por IDs separados por vírgula |
+| GET | `/plan/:planId` | JWT | — | Obtém todos os itens do plano (retorna estrutura de árvore) |
+| GET | `/presenter/:churchId/:planId` | Pública | — | Obtém os itens do plano para a visão de apresentador (retorna estrutura de árvore) |
+| POST | `/` | JWT | — | Cria ou atualiza itens do plano |
+| POST | `/sort` | JWT | — | Atualiza a ordem de um item do plano (reordena os irmãos) |
+| DELETE | `/:id` | JWT | — | Exclui um item do plano |
 
-## Feed do Plano
+## Feed do plano
 
 Caminho base: `/doing/planFeed`
 
-Fornece os feeds de itens de plano para o apresentador. Se não houver itens de plano, preenche automaticamente a partir do feed de venue do Lessons.church usando o `contentId` do plano.
+Fornece os feeds de itens do plano para o apresentador. Se não houver itens do plano, preenche automaticamente a partir do feed de venue do Lessons.church usando o `contentId` do plano.
 
 | Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|---------|--------------|-----------|-----------|
-| GET | `/presenter/:churchId/:planId` | Pública | — | Obtém o feed do plano para o apresentador (preenche a partir do feed de venue se estiver vazio) |
+| GET | `/presenter/:churchId/:planId` | Pública | — | Obtém o feed do plano para o apresentador (preenche automaticamente a partir do feed de venue se estiver vazio) |
 
 ## Posições
 
@@ -132,18 +132,18 @@ Caminho base: `/doing/assignments`
 | Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|---------|--------------|-----------|-----------|
 | GET | `/my` | JWT | — | Obtém as atribuições do usuário atual |
-| GET | `/my/upcoming` | JWT | — | Até 20 atribuições do usuário atual em planos com data a partir de ontem (planos em rascunho, ou `prepared`, são ignorados), das mais próximas para as mais distantes: `{ assignmentId, status, positionName, planId, planName, serviceDate }`. Alimenta a prévia de escalas na página inicial de membros |
+| GET | `/my/upcoming` | JWT | — | Até 20 atribuições do usuário atual em planos com data a partir de ontem (planos reservados, ou `prepared`, são ignorados), das mais próximas para as mais distantes: `{ assignmentId, status, positionName, planId, planName, serviceDate }`. Alimenta a prévia de atendimento na página inicial do membro |
 | GET | `/:id` | JWT | — | Obtém uma atribuição pelo ID |
 | GET | `/plan/ids?planIds=` | JWT | — | Obtém as atribuições de vários planos por IDs de planos separados por vírgula |
 | GET | `/plan/:planId` | JWT | — | Obtém todas as atribuições de um plano |
-| POST | `/` | JWT | — | Cria ou atualiza atribuições (o status padrão é "Unconfirmed") |
-| POST | `/accept/:id` | JWT | — | Aceita uma atribuição (deve ser a pessoa atribuída) |
-| POST | `/decline/:id` | JWT | — | Recusa uma atribuição (deve ser a pessoa atribuída) |
-| POST | `/signup` | JWT | — | Inscrição própria em uma posição. Corpo: `{ positionId }`. A posição deve permitir inscrição própria e ter vagas; cria uma atribuição Accepted. Rejeitada com "Signup deadline has passed" quando o prazo de inscrição do plano (contado a partir do primeiro horário de culto, como acima) já passou |
-| DELETE | `/signup/:id` | JWT | — | Remove a sua própria inscrição. Rejeitada com "Removal deadline has passed" após o prazo de inscrição do plano |
+| POST | `/` | JWT | — | Cria ou atualiza atribuições (define o status como "Unconfirmed" por padrão) |
+| POST | `/accept/:id` | JWT | — | Aceita uma atribuição (deve ser a pessoa designada) |
+| POST | `/decline/:id` | JWT | — | Recusa uma atribuição (deve ser a pessoa designada) |
+| POST | `/signup` | JWT | — | Inscrição própria em uma posição. Corpo: `{ positionId }`. A posição precisa permitir inscrição própria e ter vaga; cria uma atribuição Aceita. Rejeitada com "Signup deadline has passed" depois que o prazo de inscrição do plano (contado a partir do primeiro horário de culto, como acima) passa |
+| DELETE | `/signup/:id` | JWT | — | Remove a sua própria inscrição. Rejeitada com "Removal deadline has passed" depois do prazo de inscrição do plano |
 | DELETE | `/:id` | JWT | — | Exclui uma atribuição |
 
-### Exemplo: Aceitar uma Atribuição
+### Exemplo: aceitar uma atribuição
 
 ```
 POST /doing/assignments/accept/assign-123
@@ -160,7 +160,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## Datas de Bloqueio
+## Datas de indisponibilidade
 
 Caminho base: `/doing/blockoutDates`
 
@@ -168,12 +168,12 @@ Estende a classe base CRUD (GET `/:id`, DELETE `/:id` — sem verificações de 
 
 | Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|---------|--------------|-----------|-----------|
-| GET | `/:id` | JWT | — | Obtém uma data de bloqueio pelo ID |
-| GET | `/ids?ids=` | JWT | — | Obtém várias datas de bloqueio por IDs separados por vírgula |
-| GET | `/my` | JWT | — | Obtém as datas de bloqueio do usuário atual |
-| GET | `/upcoming` | JWT | — | Obtém todas as próximas datas de bloqueio da igreja |
-| POST | `/` | JWT | — | Cria ou atualiza datas de bloqueio (usa o usuário atual como personId, se não for informado) |
-| DELETE | `/:id` | JWT | — | Exclui uma data de bloqueio |
+| GET | `/:id` | JWT | — | Obtém uma data de indisponibilidade pelo ID |
+| GET | `/ids?ids=` | JWT | — | Obtém várias datas de indisponibilidade por IDs separados por vírgula |
+| GET | `/my` | JWT | — | Obtém as datas de indisponibilidade do usuário atual |
+| GET | `/upcoming` | JWT | — | Obtém todas as datas de indisponibilidade futuras da igreja |
+| POST | `/` | JWT | — | Cria ou atualiza datas de indisponibilidade (define o personId como o usuário atual se não informado) |
+| DELETE | `/:id` | JWT | — | Exclui uma data de indisponibilidade |
 
 ## Tarefas
 
@@ -183,13 +183,13 @@ Caminho base: `/doing/tasks`
 |--------|---------|--------------|-----------|-----------|
 | GET | `/` | JWT | — | Obtém as tarefas abertas do usuário atual |
 | GET | `/:id` | JWT | — | Obtém uma tarefa pelo ID |
-| GET | `/:id/contact` | JWT | Pode visualizar o cartão | Dados de contato da pessoa a que um cartão de fluxo se refere: `{ personId, displayName, mobilePhone, email }`. Permite que um responsável atribuído sem acesso a Pessoas entre em contato com a pessoa |
-| GET | `/closed` | JWT | — | Obtém as tarefas encerradas do usuário atual |
+| GET | `/:id/contact` | JWT | Pode ver o cartão | Informações de contato da pessoa a que um cartão de fluxo de trabalho se refere: `{ personId, displayName, mobilePhone, email }`. Permite que quem chama designado, sem acesso a Pessoas, alcance a pessoa |
+| GET | `/closed` | JWT | — | Obtém as tarefas fechadas do usuário atual |
 | GET | `/timeline?taskIds=` | JWT | — | Obtém os dados de linha do tempo das tarefas por IDs separados por vírgula |
 | GET | `/directoryUpdate/:personId` | JWT | — | Obtém a tarefa de atualização de diretório de uma pessoa |
-| POST | `/` | JWT | — | Cria ou atualiza tarefas. Adicione `?type=directoryUpdate` para tratar tarefas de atualização de diretório (envia as fotos automaticamente) |
-| POST | `/:id/conversation` | JWT | `tasks.edit` ou responsável pelo cartão | Anexa a conversa de anotações a um cartão. Corpo: `{ conversationId }`. A primeira conversa anexada prevalece; chamadas seguintes retornam o cartão sem alteração |
-| POST | `/loadForGroups` | JWT | — | Carrega as tarefas de grupos específicos. Corpo: `{ groupIds: [], status: "Open" }` |
+| POST | `/` | JWT | — | Cria ou atualiza tarefas. Adicione `?type=directoryUpdate` para tratar tarefas de atualização de diretório (envia fotos automaticamente) |
+| POST | `/:id/conversation` | JWT | `tasks.edit` ou responsável pelo cartão | Anexa a conversa de notas ao cartão. Corpo: `{ conversationId }`. A primeira conversa anexada prevalece; chamadas posteriores retornam o cartão sem alteração |
+| POST | `/loadForGroups` | JWT | — | Carrega tarefas de grupos específicos. Corpo: `{ groupIds: [], status: "Open" }` |
 
 ## Automações
 
@@ -233,7 +233,7 @@ As condições definem os critérios que disparam uma automação.
 
 Caminho base: `/doing/conjunctions`
 
-As conjunções combinam várias condições em uma automação (lógica E/OU).
+As conjunções vinculam várias condições em uma automação (lógica E/OU).
 
 | Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|---------|--------------|-----------|-----------|
@@ -242,15 +242,15 @@ As conjunções combinam várias condições em uma automação (lógica E/OU).
 | POST | `/` | JWT | — | Cria ou atualiza conjunções |
 | DELETE | `/:id` | JWT | — | Exclui uma conjunção |
 
-## Autenticações de Provedores de Conteúdo
+## Autenticações de provedores de conteúdo
 
 Caminho base: `/doing/contentProviderAuths`
 
 Estende a classe base CRUD (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` — sem verificações de permissão).
 
-Gerencia os registros de autenticação OAuth para provedores externos de conteúdo (por exemplo, integrações de software de apresentação).
+Gerencia os registros de autenticação OAuth de provedores externos de conteúdo (por exemplo, integrações com softwares de apresentação).
 
-`accessToken` e `refreshToken` são criptografados em repouso com o `EncryptionHelper` e descriptografados na leitura, então a API continua retornando os tokens em texto simples. Registros salvos antes da criptografia contêm texto simples (que nunca inclui `|`); eles são retornados como estão e criptografados na próxima vez que forem salvos.
+`accessToken` e `refreshToken` são criptografados em repouso com `EncryptionHelper` e descriptografados na leitura, então a API ainda retorna os tokens em texto simples. Registros salvos antes da criptografia contêm texto simples (que nunca contém `|`); eles são retornados como estão e criptografados na próxima vez que forem salvos.
 
 | Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|---------|--------------|-----------|-----------|
@@ -262,11 +262,11 @@ Gerencia os registros de autenticação OAuth para provedores externos de conte�
 | POST | `/` | JWT | — | Cria ou atualiza autenticações de provedores de conteúdo |
 | DELETE | `/:id` | JWT | — | Exclui uma autenticação de provedor de conteúdo |
 
-## Proxy de Provedores
+## Proxy de provedor
 
 Caminho base: `/doing/providerProxy`
 
-Encaminha requisições para provedores externos de conteúdo (por exemplo, ProPresenter, EasyWorship). Faz a renovação do token automaticamente quando os tokens expiram.
+Encaminha requisições para provedores externos de conteúdo (por exemplo, ProPresenter, EasyWorship). Renova os tokens automaticamente quando expiram.
 
 | Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|---------|--------------|-----------|-----------|
@@ -276,8 +276,8 @@ Encaminha requisições para provedores externos de conteúdo (por exemplo, ProP
 | POST | `/getInstructions` | JWT | — | Obtém as instruções de um item de conteúdo. Corpo: `{ ministryId, providerId, path }` |
 | POST | `/getExpandedInstructions` | JWT | — | Obtém as instruções expandidas de um item de conteúdo. Corpo: `{ ministryId, providerId, path }` |
 
-## Páginas Relacionadas
+## Páginas relacionadas
 
 - [Endpoints de Membership](./membership) — Pessoas, grupos, funções e permissões
-- [Endpoints de Attendance](./attendance) — Registro de cultos e visitas
-- [Estrutura de Módulos](../module-structure) — Padrões de organização do código
+- [Endpoints de Attendance](./attendance) — Rastreamento de cultos e visitas
+- [Estrutura do módulo](../module-structure) — Padrões de organização do código

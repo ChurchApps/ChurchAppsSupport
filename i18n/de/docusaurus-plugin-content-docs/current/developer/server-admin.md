@@ -1,128 +1,128 @@
 ---
-title: "Serveradministration"
+title: "Serververwaltung"
 ---
 
-# Serveradministration
+# Serververwaltung
 
 <div class="article-intro">
 
-Die Funktionen der Serveradministration in ChurchApps sind nur für Benutzer mit der Berechtigung **Server.Admin** verfügbar. Diese Werkzeuge dienen dem Betrieb der Plattform, dem Support und der Fehlersuche über alle Kirchen im System hinweg.
+Die Funktionen zur Serververwaltung in ChurchApps stehen nur Benutzern mit der Berechtigung **Server.Admin** zur Verfügung. Diese Werkzeuge dienen dem Betrieb der Plattform, dem Support und der Fehlersuche über alle Gemeinden im System hinweg.
 
 </div>
 
 :::warning Zugriff eingeschränkt
-Die auf dieser Seite beschriebenen Funktionen erfordern die Berechtigung **Server.Admin** und stehen regulären Kirchenadministratoren nicht zur Verfügung. Sie sind nur für Betreiber der Plattform und Supportmitarbeitende bestimmt.
+Die auf dieser Seite beschriebenen Funktionen erfordern die Berechtigung **Server.Admin** und stehen regulären Gemeindeadministratoren nicht zur Verfügung. Sie sind ausschließlich für Plattformbetreiber und Supportmitarbeitende bestimmt.
 :::
 
-## Zugriff auf die Serveradministration
+## Zugriff auf die Serververwaltung
 
-Benutzer mit der Berechtigung Server.Admin können das Panel der Serveradministration in B1 Admin öffnen:
+Benutzer mit der Berechtigung Server.Admin können das Panel der Serververwaltung über B1 Admin aufrufen:
 
-1. Melden Sie sich bei [admin.b1.church](https://admin.b1.church) an.
-2. Öffnen Sie das [Sprungmenü](../b1-admin/introduction.md#getting-around-with-the-jump-menu), klappen Sie **Einstellungen** auf und klicken Sie auf **Serveradministration**. (Sie können auch direkt `admin.b1.church/admin` aufrufen.)
-3. Das Panel der Serveradministration listet seine Bereiche links in drei Gruppen auf: **Verzeichnis** (Kirchen, Benutzer, Benutzer imitieren), **Betrieb** (Hintergrundaufgaben, Commons, Nutzungstrends) und **System** (Übersetzungsnachschlagen, Serverzustand, Datenbankmigrationen).
+1. Melden Sie sich unter [admin.b1.church](https://admin.b1.church) an.
+2. Öffnen Sie das [Sprungmenü](../b1-admin/introduction.md#getting-around-with-the-jump-menu), klappen Sie **Settings** (Einstellungen) auf und klicken Sie auf **Server Admin**. (Sie können auch direkt `admin.b1.church/admin` aufrufen.)
+3. Das Panel der Serververwaltung listet seine Bereiche links in drei Gruppen auf: **Directory** (Verzeichnis: Churches, Users, Impersonate User), **Operations** (Betrieb: Background Jobs, Commons, Usage Trends) und **System** (Translation Lookups, Server Health, Database Migrations)
 
 ## Zwei-Faktor-Anmeldung zurücksetzen
 
-Hat ein Benutzer die [Zwei-Faktor-Anmeldung](../b1-admin/profile/managing-profile.md#two-factor-sign-in) aktiviert und sowohl sein Telefon als auch seine Sicherungscodes verloren, kann ein Serveradministrator sie ausschalten:
+Wenn ein Benutzer die [Zwei-Faktor-Anmeldung](../b1-admin/profile/managing-profile.md#two-factor-sign-in) aktiviert hat und sowohl sein Telefon als auch seine Backup-Codes verloren hat, kann ein Server-Admin sie deaktivieren:
 
-1. Öffnen Sie im Panel der Serveradministration den Bereich **Benutzer** und suchen Sie den Benutzer.
-2. Benutzer mit Zwei-Faktor-Anmeldung zeigen das Abzeichen **Zwei-Faktor an**. Klicken Sie daneben auf **2FA zurücksetzen**.
-3. Bestätigen Sie die Abfrage. Tun Sie dies erst, nachdem Sie sicher wissen, mit wem Sie sprechen.
+1. Öffnen Sie im Panel der Serververwaltung den Bereich **Users** und suchen Sie den Benutzer.
+2. Benutzer mit aktivierter Zwei-Faktor-Anmeldung zeigen ein Abzeichen **Two-factor on** an. Klicken Sie daneben auf **Reset 2FA**.
+3. Bestätigen Sie die Abfrage. Tun Sie dies erst, nachdem Sie geprüft haben, mit wem Sie sprechen.
 
-Der Benutzer kann sich danach nur mit seinem Passwort anmelden und die Zwei-Faktor-Anmeldung in seinem Profil erneut einrichten. Zurücksetzungen werden als `mfa_reset` im Audit-Protokoll festgehalten. Der Endpunkt ist `POST /membership/users/mfa/reset/:userId` und erfordert Server.Admin.
+Der Benutzer kann sich danach nur mit seinem Passwort anmelden und die Zwei-Faktor-Anmeldung in seinem Profil erneut einrichten. Zurücksetzungen werden im Audit-Log als `mfa_reset` protokolliert. Der Endpunkt lautet `POST /membership/users/mfa/reset/:userId` und erfordert Server.Admin.
 
-## Benutzer imitieren
+## Identitätsübernahme (Impersonation)
 
-Die Funktion zum Imitieren erlaubt Serveradministratoren, sich zu Support- und Fehlersuchzwecken als anderer Benutzer anzumelden. Das ist hilfreich, wenn von Benutzern gemeldete Probleme untersucht werden oder Kirchen bei der Konfiguration ihrer Systeme geholfen wird.
+Mit der Identitätsübernahme können Server-Admins sich für Support- und Fehlersuchzwecke als ein anderer Benutzer anmelden. Das ist hilfreich, wenn Probleme untersucht werden, die Benutzer gemeldet haben, oder wenn Gemeinden bei der Konfiguration ihres Systems unterstützt werden.
 
-### So imitieren Sie einen Benutzer
+### So übernehmen Sie die Identität eines Benutzers
 
-1. Öffnen Sie den Bereich **Benutzer imitieren** im Panel der Serveradministration.
-2. Geben Sie Namen oder E-Mail-Adresse des Benutzers in das Suchfeld ein.
-3. Klicken Sie auf **Suchen** oder drücken Sie Enter.
-4. Klicken Sie in den Suchergebnissen auf den Benutzer, den Sie imitieren möchten.
-5. Bestätigen Sie die Imitation im erscheinenden Dialog.
-6. Sie sind als dieser Benutzer angemeldet und werden zu dessen Konto weitergeleitet.
+1. Öffnen Sie den Bereich **Impersonate User** im Panel der Serververwaltung.
+2. Geben Sie den Namen oder die E-Mail-Adresse des Benutzers in das Suchfeld ein.
+3. Klicken Sie auf **Search** oder drücken Sie die Eingabetaste.
+4. Klicken Sie in den Suchergebnissen auf den Benutzer, dessen Identität Sie übernehmen möchten.
+5. Bestätigen Sie die Übernahme im angezeigten Dialog.
+6. Sie sind danach als dieser Benutzer angemeldet und werden zu dessen Konto weitergeleitet.
 
 ### Wichtige Hinweise
 
-- Die Imitation erstellt eine neue Sitzung mit den Berechtigungen und dem Kirchenzugang des Zielbenutzers.
-- Ihre ursprüngliche Administratorsitzung endet, sobald Sie einen anderen Benutzer imitieren.
-- Alle Aktionen während der Imitation werden im Prüfprotokoll festgehalten.
-- Um zu Ihrem Administratorkonto zurückzukehren, melden Sie sich ab und mit Ihren Zugangsdaten erneut an.
-- Verwenden Sie die Imitation nur, wenn sie für Supportzwecke nötig ist, und informieren Sie Benutzer immer, wenn Sie für den Support auf ihr Konto zugreifen.
+- Die Übernahme erzeugt eine neue Sitzung mit den Berechtigungen und dem Gemeindezugang des Zielbenutzers.
+- Ihre ursprüngliche Administrator-Sitzung endet, sobald Sie die Identität eines anderen Benutzers übernehmen.
+- Alle Aktionen, die während der Übernahme ausgeführt werden, werden im Prüfprotokoll erfasst.
+- Um zu Ihrem Administratorkonto zurückzukehren, melden Sie sich ab und mit Ihren Zugangsdaten wieder an.
+- Nutzen Sie die Übernahme nur, wenn sie für den Support nötig ist, und informieren Sie die Benutzer immer, wenn Sie auf ihre Konten zugreifen.
 
 ### API-Endpunkt
 
-Die Funktion zum Imitieren wird vom Endpunkt `/users/:userId/impersonate` der Mitgliedschafts-API getragen. Technische Details finden Sie unter [Mitgliedschafts-Endpunkte](/docs/developer/api/endpoints/membership#users).
+Die Funktion zur Identitätsübernahme basiert auf dem Endpunkt `/users/:userId/impersonate` der Membership-API. Technische Einzelheiten finden Sie unter [Membership-Endpunkte](/docs/developer/api/endpoints/membership#users).
 
 ### Sicherheitsaspekte
 
-- Die Imitation erfordert die Berechtigung Server.Admin -- diese Berechtigung sollte sparsam und nur vertrauenswürdigen Betreibern der Plattform vergeben werden.
-- Alle Ereignisse der Imitation werden mit der ID des Administrators und der ID des Zielbenutzers protokolliert.
-- Kirchen werden bei einer Imitation nicht benachrichtigt. Legen Sie daher klare Richtlinien fest, wann und wie diese Funktion genutzt wird.
-- Erwägen Sie, Ereignisse der Imitation in Ihrem System für Supportanfragen zu dokumentieren, um die Nachvollziehbarkeit sicherzustellen.
+- Die Identitätsübernahme erfordert die Berechtigung Server.Admin — diese Berechtigung sollte sparsam und nur vertrauenswürdigen Plattformbetreibern erteilt werden.
+- Alle Ereignisse der Identitätsübernahme werden mit der ID des Administrators und der ID des Zielbenutzers protokolliert.
+- Gemeinden werden nicht benachrichtigt, wenn eine Identitätsübernahme stattfindet. Legen Sie daher klare Richtlinien fest, wann und wie diese Funktion eingesetzt werden darf.
+- Erwägen Sie, Ereignisse der Identitätsübernahme in Ihrem Ticketsystem für den Support zu dokumentieren, um die Nachvollziehbarkeit sicherzustellen.
 
-## Moderation der Commons
+## Moderation von Commons
 
-Commons ist die gemeinsame Moderationswarteschlange für von Benutzern eingereichte Inhalte über Produkte hinweg. WorshipCommons-Lieder, Lessons.church-Lektionen, FreeShow-Vorlagen und Vorlagen des Website-Builders von B1 laufen alle über dieselbe Warteschlange, statt über getrennte Prüfwerkzeuge je Produkt.
+Commons ist die gemeinsame Moderationswarteschlange für nutzerseitig eingereichte Inhalte über mehrere Produkte hinweg. WorshipCommons-Lieder, Lessons.church-Lektionen, FreeShow-Vorlagen und Vorlagen des Website-Builders von B1 laufen alle über dieselbe Warteschlange, statt über getrennte Prüfwerkzeuge für jedes Produkt.
 
 ### Auf Commons zugreifen
 
-1. Öffnen Sie im Panel der Serveradministration den Reiter **Commons**.
-2. Sie sehen drei Unterreiter: **Warteschlange**, **Meldungen** und **Inhalte**.
+1. Öffnen Sie im Panel der Serververwaltung den Tab **Commons**.
+2. Sie sehen drei Unter-Tabs: **Queue** (Warteschlange), **Reports** (Meldungen) und **Assets** (Inhalte).
 
-Ein eingeschränkter Rolle **Musikredakteur** kann ebenfalls die Warteschlange sehen, ist aber davon ausgeschlossen, Einreichungen zu genehmigen, die Rechte oder Lizenzierung eines Liedes ändern.
+Eine eingeschränkte Rolle **Musikbearbeitung** kann ebenfalls den Tab Queue sehen, ist aber daran gehindert, Einreichungen zu genehmigen, die die Rechte oder die Lizenzierung eines Liedes ändern.
 
 ### Warteschlange
 
-Die Warteschlange listet jede ausstehende Einreichung aller Produkte, filterbar nach Produkt und Art des Inhalts. Jede Zeile zeigt, ob die Einreichung ein neues Element ist, eine Änderung durch den ursprünglichen Verfasser oder eine Änderung durch einen Dritten, dazu die Genehmigungsbilanz der einreichenden Person und wie lange die Einreichung schon wartet (ab 72 Stunden markiert).
+Die Queue listet alle ausstehenden Einreichungen aller Produkte auf, filterbar nach Produkt und Inhaltstyp. Jede Zeile zeigt an, ob die Einreichung ein neuer Inhalt, eine Änderung durch den ursprünglichen Autor oder eine Änderung durch einen Dritten ist, außerdem die bisherige Genehmigungsbilanz der einreichenden Person und wie lange die Einreichung wartet (sie wird markiert, sobald sie 72 Stunden überschreitet).
 
-Klicken Sie auf **Prüfen**, um eine Seitenleiste mit Unterschieden je Feld, Dateivorschauen und einer eingebetteten, nur lesbaren Vorschau des Elements zu öffnen. Mit den Tastenkürzeln **a** und **r** genehmigen oder lehnen Sie ab, mit **j** und **k** wechseln Sie zur nächsten oder vorherigen Einreichung, ohne die Seitenleiste zu verlassen. Zum Ablehnen wählen Sie einen Grund (zum Beispiel Qualität, Dublette, Lizenzierung, CCLI, KI oder themenfremd) und schreiben eine Notiz.
+Klicken Sie auf **Review**, um eine Seitenleiste mit Unterschieden auf Feldebene, Dateivorschauen und einer eingebetteten, schreibgeschützten Vorschau des Eintrags zu öffnen. Mit den Tastenkürzeln **a** / **r** genehmigen oder lehnen Sie ab; mit **j** / **k** wechseln Sie zur nächsten bzw. vorherigen Einreichung, ohne die Seitenleiste zu verlassen. Beim Ablehnen müssen Sie einen Grund (zum Beispiel Qualität, Dublette, Lizenzierung, CCLI, KI oder themenfremd) und eine Notiz angeben.
 
 ### Meldungen
 
-Der Reiter Meldungen bearbeitet Meldungen zu Urheberrecht sowie zu Richtlinien und Qualität, die gegen bereits veröffentlichte Inhalte eingereicht wurden. Sie sind getrennt in die Warteschlangen **Urheberrecht** und **Richtlinien und Sonstiges** sowie einen Verlauf **Erledigt**. Übernehmen Sie eine Meldung, um mit der Bearbeitung zu beginnen, und erledigen Sie sie dann mit einer Entscheidung (bestätigt, verworfen oder Dublette) und einer Maßnahme (keine, Veröffentlichung zurücknehmen oder entfernen).
+Der Tab Reports bearbeitet Urheberrechts- und Richtlinien-/Qualitätsmeldungen zu bereits veröffentlichten Inhalten. Sie sind in die getrennten Warteschlangen Copyright und Policy & Other sowie in den Verlauf Resolved aufgeteilt. Übernehmen Sie eine Meldung, um mit der Bearbeitung zu beginnen, und schließen Sie sie dann mit einer Entscheidung (upheld, dismissed oder duplicate) und einer Maßnahme (none, unpublish oder remove) ab.
 
 ### Inhalte
 
-Der Reiter Inhalte ist eine durchsuchbare Übersicht veröffentlichter Inhalte mit Aktionen, um einen Inhalt **hervorzuheben** (er erscheint auf der Startseite des Produkts), ihn **zurückzuziehen**/**wieder zu veröffentlichen** oder **zu entfernen** (mit einem Grund zum Urheberrecht oder zur Richtlinie).
+Der Tab Assets ist eine durchsuchbare Übersicht veröffentlichter Inhalte mit Aktionen, um einen Inhalt **Feature** (auf der Startseite des Produkts hervorzuheben), ihn **Unpublish** / **Republish** (zurückzuziehen bzw. wieder zu veröffentlichen) oder ihn **Remove** (mit einem Grund zu Urheberrecht oder Richtlinie) zu entfernen.
 
-Speziell für Lieder ist dies auch der Ort, an dem ein Lied **sonntagsbereit** wird und in der Liedersuche der B1-Admin einer Kirche erscheinen darf: Eine prüfende Person öffnet den Inhalt und markiert jede veröffentlichte Tonart als **Angehört**, sobald sie es durchgehört und bestätigt hat, dass Notensatz, Akkorde und Folien vollständig sind. Ein Lied wird erst sonntagsbereit, wenn jede Tonart abgehakt ist.
+Speziell für Lieder ist dies auch der Ort, an dem ein Lied **Sunday-ready** wird und in der Liedsuche der B1-Administration einer Gemeinde erscheinen darf: Ein Prüfer öffnet den Inhalt und markiert jede veröffentlichte Tonart als **Listened**, sobald er sie durchgehört und bestätigt hat, dass Noten, Akkorde und Folien vollständig vorhanden sind. Ein Lied wird erst dann Sunday-ready, wenn jede Tonart abgehakt ist.
 
 :::info
-Die Moderation von Commons ist nur für Mitarbeitende des Betreibers bestimmt -- einzelne Kirchen sehen diese Warteschlange nie. Der einzige Ort, an dem die B1-Admin einer einzelnen Kirche Commons-Daten berührt, ist der Bereich "WorshipCommons -- kostenlos" in der [Liedersuche](/docs/b1-admin/serving/songs#free-songs-from-worshipcommons); er zeigt nur Lieder, die diesen Prüfprozess bereits durchlaufen haben.
+Die Moderation von Commons ist nur für Mitarbeitende bestimmt — einzelne Gemeinden sehen diese Warteschlange nie. Die einzige Stelle, an der die B1-Administration einer Gemeinde mit Commons-Daten in Berührung kommt, ist der Bereich „WorshipCommons — free“ in der [Liedsuche](/docs/b1-admin/serving/songs#free-songs-from-worshipcommons). Dort erscheinen nur Lieder, die diesen Prüfprozess bereits durchlaufen haben.
 :::
 
-Siehe die Seite [Architektur der Commons](/docs/developer/architecture/commons) für das zugrunde liegende Datenmodell und den Lebenszyklus der Einreichungen.
+Die zugrunde liegende Datenstruktur und den Lebenszyklus von Einreichungen finden Sie auf der Seite [Architektur von Content Commons](/docs/developer/architecture/commons).
 
-## Genehmigung der E-Mail von Gruppen
+## Genehmigung von E-Mails an Gruppen
 
-Kirchen können von Kirchen verfasste E-Mails (Gruppen-E-Mails, Nachfass-E-Mails zu Formularen, Workflow-E-Mails und Einladungen von Konten) erst versenden, wenn ein Serveradministrator sie genehmigt hat. So nutzen von Bots angemeldete Kirchen die gemeinsame Absendeadresse von ChurchApps nicht für Spam.
+Gemeinden können von Gemeinde verfasste E-Mails (E-Mails an Gruppen, Nachfass-E-Mails aus Formularen, E-Mails aus Workflows und Einladungen zu Konten) erst versenden, nachdem ein Server-Admin sie genehmigt hat. So wird verhindert, dass von Bots registrierte Gemeinden die gemeinsame Absenderadresse von ChurchApps für Spam missbrauchen.
 
-1. Öffnen Sie im Panel der Serveradministration den Reiter **Kirchen**.
-2. Jede Kirche zeigt einen Chip **Gruppen-E-Mail**: **Genehmigt** (grün) oder **Nicht genehmigt** (umrandet).
-3. Klicken Sie auf den Chip und bestätigen Sie, um die Kirche zu genehmigen oder eine Genehmigung zu widerrufen.
+1. Öffnen Sie im Panel der Serververwaltung den Tab **Churches**.
+2. Jede Gemeinde zeigt einen Chip **Group Email**: **Approved** (grün) oder **Not approved** (umrandet).
+3. Klicken Sie auf den Chip und bestätigen Sie, um die Gemeinde zu genehmigen oder eine Genehmigung zu widerrufen.
 
-Die Mitarbeitenden einer Kirche bitten um Genehmigung über die Schaltfläche **Prüfung anfordern** im Dialog E-Mail senden in B1 Admin. Die Anfrage wird an die Support-Adresse gemailt und enthält Namen, ID, Registrierungsdatum und Standort der Kirche sowie die anfragende Person. Eine Kirche kann einmal pro Woche eine Anfrage stellen. Das tägliche Kontingent und die automatische Pause bei Unzustellbarkeiten und Beschwerden finden Sie unter [Limits für von der Kirche verfasste E-Mails](/docs/developer/architecture/notifications#church-authored-email-limits).
+Mitarbeitende einer Gemeinde beantragen die Genehmigung über die Schaltfläche **Request review** im Dialog Send Email der B1-Administration. Die Anfrage wird an die Support-Adresse gesendet und enthält den Namen der Gemeinde, ihre ID, das Registrierungsdatum, den Standort und die anfragende Person. Eine Gemeinde kann einmal pro Woche eine Anfrage stellen. Das tägliche Kontingent und die automatische Pausierung bei Bounces und Beschwerden finden Sie unter [Limits für von Gemeinden verfasste E-Mails](/docs/developer/architecture/notifications#church-authored-email-limits).
 
-## Datenbankmigrationen
+## Datenbankmigrationen {#database-migrations}
 
-Der Workflow **Deploy Prod** wendet ausstehende Migrationen selbst an. Die gehosteten Datenbanken akzeptieren Verbindungen nur aus dem Netzwerk der API, daher kann ein GitHub-Runner sie nicht erreichen. Stattdessen ruft der Workflow direkt nach `serverless deploy` die Lambda-Funktion `migrate` der API auf (`api-Prod-migrate`). Sie führt alle ausstehenden Migrationen jedes Moduls mit demselben Ausführer aus wie dieser Reiter und lässt die Bereitstellung scheitern, wenn ein Modul einen Fehler meldet oder abgelehnt wird. **Rollback Prod** setzt nur den Code der Lambda-Funktion zurück; angewandte Migrationen bleiben angewandt. Der Reiter **Datenbankmigrationen** dient dazu, den Status zu prüfen, alles auszuführen, was eine Bereitstellung nicht ausgeführt hat (zum Beispiel in der Demo-Umgebung, deren Bereitstellung nicht migriert), und Module ohne Verlauf zu baselinen. (Selbst gehostete Docker-Installationen führen Migrationen weiterhin automatisch aus, sobald der Container der API startet.)
+Der Workflow **Deploy Prod** wendet ausstehende Migrationen selbst an. Die gehosteten Datenbanken akzeptieren nur Verbindungen aus dem Netzwerk der API, sodass ein GitHub-Runner sie nicht erreichen kann. Stattdessen ruft der Workflow unmittelbar nach `serverless deploy` die Lambda-Funktion `migrate` der API auf (`api-Prod-migrate`). Diese führt alle ausstehenden Migrationen jedes Moduls mit demselben Runner aus wie dieser Tab und lässt die Bereitstellung fehlschlagen, wenn ein Modul einen Fehler meldet oder abgelehnt wird. **Rollback Prod** setzt nur den Code der Lambda-Funktion zurück; bereits angewendete Migrationen bleiben angewendet. Der Tab **Database Migrations** dient dazu, den Status zu prüfen, alles auszuführen, was eine Bereitstellung nicht ausgeführt hat (zum Beispiel in der Demo-Umgebung, deren Bereitstellung nicht migriert), und Module ohne Verlauf zu initialisieren. (Selbst betriebene Docker-Installationen führen Migrationen weiterhin automatisch beim Start des API-Containers aus.)
 
-Der Reiter zeigt die aktuelle Umgebung und je Modul (Mitgliedschaft, Anwesenheit, Spenden usw.) eine Zeile mit dem Status, der Anzahl angewandter und ausstehender Migrationen und der zuletzt angewandten Migration.
+Der Tab zeigt die aktuelle Umgebung und eine Zeile je Modul (membership, attendance, giving usw.) mit dessen Status, der Anzahl angewendeter und ausstehender Migrationen sowie der zuletzt angewendeten Migration.
 
-- **Ausstehende Migrationen ausführen** wendet jede ausstehende Migration an, Modul für Modul und in Reihenfolge. Bei dem ersten Fehler wird abgebrochen, und es wird angezeigt, was je Modul angewandt wurde.
-- Ein Modul mit der Kennzeichnung **Kein Verlauf** hat eine Datenbank, die älter ist als die Verfolgung der Migrationen. Es wird nie automatisch ausgeführt, da sonst alte Datenmigrationen auf die Live-Tabellen erneut angewandt würden. Klicken Sie bei diesem Modul stattdessen auf **Schema prüfen**. Die API vergleicht die Tabellen, Spalten und Indizes, die jede Migration anlegt, mit der Live-Datenbank und kennzeichnet jede Migration als **Bereits angewandt**, **Fehlt**, **Teilweise angewandt** oder **Nur Daten**. Die Prüfung ändert nichts.
-- In den Prüfergebnissen schreibt **Als bereits angewandt erfassen** die erkannten Migrationen in den Verlauf der Migrationen, ohne sie auszuführen (nach einer Bestätigung). Alles bis zur letzten Migration **Bereits angewandt** wird erfasst, einschließlich der Migrationen **Nur Daten** in diesem Bereich; Migrationen **Fehlt** bleiben ausstehend und können danach normal mit **Ausstehende Migrationen ausführen** angewandt werden.
-- Eine Migration **Teilweise angewandt** verhindert das Erfassen. Ist die Migration gefahrlos erneut ausführbar (lesen Sie sie vorher), setzen Sie das Häkchen **Erneut ausführen**, damit sie ausstehend bleibt und von vorn läuft.
+- **Run Pending Migrations** wendet jede ausstehende Migration an, Modul für Modul und in der richtigen Reihenfolge. Beim ersten Fehler bricht es ab und zeigt, was für jedes Modul angewendet wurde.
+- Ein Modul mit der Markierung **No history** hat eine Datenbank, die älter ist als die Nachverfolgung von Migrationen. Es wird nie automatisch ausgeführt, da dabei alte Datenmigrationen über die Live-Tabellen erneut laufen würden. Klicken Sie stattdessen bei diesem Modul auf **Check Schema**. Die API vergleicht die Tabellen, Spalten und Indizes, die jede Migration anlegt, mit der Live-Datenbank und markiert jede Migration als **Already applied**, **Missing**, **Partly applied** oder **Data only**. Die Prüfung verändert nichts.
+- In den Prüfergebnissen schreibt **Record as Already Applied** die erkannten Migrationen in den Migrationsverlauf, ohne sie auszuführen (nach einer Bestätigung). Alles bis zur letzten Migration mit **Already applied** wird erfasst, einschließlich der **Data only**-Migrationen in diesem Bereich; **Missing**-Migrationen bleiben ausstehend und können danach regulär mit **Run Pending Migrations** ausgeführt werden.
+- Eine **Partly applied**-Migration verhindert das Erfassen. Ist die Migration gefahrlos erneut ausführbar (lesen Sie sie zuerst), setzen Sie den Haken bei **Re-run**, damit sie ausstehend bleibt und von vorn ausgeführt wird.
 
-Das Panel der Serveradministration und die CLI (`yarn migrate:up`) verwenden denselben Migrator von Kysely und dieselbe Tabelle `kysely_migration`, sodass sie immer übereinstimmen, was angewandt wurde. Die dahinterliegenden Endpunkte sind `GET /membership/serverHealth/migrations`, `POST /membership/serverHealth/migrations/:module/run`, `GET .../:module/detect` und `POST .../:module/baseline`; alle sind nur für Server.Admin zugänglich.
+Das Panel der Serververwaltung und die CLI (`yarn migrate:up`) verwenden denselben Kysely-Migrator und dieselbe Tabelle `kysely_migration`, sodass sie immer übereinstimmen, was angewendet wurde. Die zugrunde liegenden Endpunkte sind `GET /membership/serverHealth/migrations`, `POST /membership/serverHealth/migrations/:module/run`, `GET .../:module/detect` und `POST .../:module/baseline`; alle sind nur für Server.Admin verfügbar.
 
 ## Verwandte Seiten
 
-- [Authentifizierung & Berechtigungen](/docs/developer/api/endpoints/authentication) — Berechtigungsmodell und JWT-Authentifizierung
-- [Mitgliedschafts-Endpunkte](/docs/developer/api/endpoints/membership) — API zur Verwaltung von Benutzern und Kirchen
-- [Prüfprotokoll](/docs/b1-admin/reports/audit-log) — Aktivitätsprotokolle einer Kirche einsehen
-- [Architektur der Commons in Inhalten](/docs/developer/architecture/commons) — gemeinsames Modell der Inhalte und Lebenszyklus der Moderation
+- [Authentifizierung und Berechtigungen](/docs/developer/api/endpoints/authentication) — Berechtigungsmodell und JWT-Authentifizierung
+- [Membership-Endpunkte](/docs/developer/api/endpoints/membership) — Verwaltungs-API für Benutzer und Gemeinden
+- [Audit-Log](/docs/b1-admin/reports/audit-log) — Aktivitätsprotokolle einer Gemeinde einsehen
+- [Architektur von Content Commons](/docs/developer/architecture/commons) — gemeinsames Inhaltsmodell und Lebenszyklus der Moderation

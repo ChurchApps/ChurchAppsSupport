@@ -6,60 +6,60 @@ title: "Importazione Stripe"
 
 <div class="article-intro">
 
-Se accetti donazioni online tramite Stripe, lo strumento Importazione Stripe ti consente di importare quelle transazioni in B1 Admin in modo che tutti i tuoi dati sulle donazioni siano in un unico posto. Questo è particolarmente utile per recuperare eventuali transazioni che non sono state sincronizzate automaticamente.
+Se accetti donazioni online tramite Stripe, lo strumento Importazione Stripe ti permette di portare quelle transazioni in B1 Admin così tutti i tuoi dati sulle donazioni si trovano in un unico posto. È particolarmente utile per recuperare le transazioni che non sono state sincronizzate automaticamente.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Completa la [Configurazione donazioni online](online-giving-setup.md) per collegare il tuo account Stripe a B1 Admin
-- Verifica di avere donazioni nella tua dashboard Stripe per l'intervallo di date che desideri importare
+- Completa la [Configurazione delle donazioni online](online-giving-setup.md) per collegare il tuo account Stripe a B1 Admin. La voce di menu **Importazione Stripe** e il pulsante nella pagina Lotti compaiono solo quando il gateway di donazioni della tua chiesa è Stripe, e solo per le persone che possono modificare le donazioni
+- Verifica di avere delle donazioni nella tua dashboard di Stripe per l'intervallo di date che vuoi importare
 
 </div>
 
 ## Come funziona
 
-Il processo di importazione utilizza un flusso di lavoro in due fasi: prima visualizzi l'anteprima di ciò che verrebbe importato, poi confermi l'importazione. Questo approccio di prova ti consente di esaminare tutto prima che vengano creati dati.
+Il processo di importazione usa un flusso in due passaggi: prima visualizzi in anteprima cosa verrebbe importato, poi confermi l'importazione. Questo approccio a prova (dry-run) ti permette di controllare tutto prima che venga creato qualsiasi dato.
 
 ## Importare le transazioni
 
-1. In **B1 Admin**, naviga su **Donazioni > Importazione Stripe**. (Puoi anche fare clic su **Importa transazioni Stripe mancanti** in alto nella pagina **Lotti**.)
+1. In **B1 Admin**, vai su **Donazioni > Importazione Stripe**. (Puoi anche cliccare su **Importa transazioni Stripe mancanti** in cima alla pagina **Lotti**.)
 2. Si apre la pagina **Importazione Stripe**.
-3. Seleziona un **intervallo di date** per le transazioni che desideri importare.
-4. Clicca **Preview** per eseguire un controllo di prova.
+3. Seleziona un **intervallo di date** per le transazioni che vuoi importare.
+4. Clicca su **Anteprima** per eseguire un controllo a prova (dry-run).
 
-## Esaminare l'anteprima
+## Controllare l'anteprima
 
-L'anteprima mostra ogni transazione da Stripe insieme a un indicatore di stato:
+L'anteprima mostra ogni transazione di Stripe con un indicatore di stato:
 
-- **Nuovo** -- questa transazione non è ancora stata importata e verrà inclusa se procedi.
-- **Già importato** -- questa transazione esiste già in B1 Admin e verrà saltata.
-- **Saltato** -- questa transazione è stata esclusa per un altro motivo (ad es., un rimborso o un addebito fallito).
+- **Nuova** -- questa transazione non è ancora stata importata e verrà inclusa se procedi.
+- **Già importata** -- questa transazione esiste già in B1 Admin e verrà saltata.
+- **Saltata** -- questa transazione è stata esclusa per un altro motivo (ad esempio un rimborso o un addebito fallito).
 
-Una sezione di riepilogo in cima mostra il numero totale di transazioni in ogni categoria e gli importi in dollari coinvolti.
+Una sezione di riepilogo in alto mostra il numero totale di transazioni per ogni categoria e gli importi in dollari coinvolti.
 
 :::info
-La fase di anteprima non crea alcun record. È un controllo in sola lettura per verificare cosa accadrà prima di confermare.
+Il passaggio di anteprima non crea alcun record. È un controllo di sola lettura così puoi verificare cosa accadrà prima di procedere.
 :::
 
 ## Completare l'importazione
 
-1. Esamina i risultati dell'anteprima e i totali di riepilogo.
-2. Clicca **Import Missing** per importare tutte le transazioni contrassegnate come **Nuovo**.
-3. Dopo il completamento dell'importazione, i badge di stato accanto a ogni transazione si aggiornano per mostrare il risultato.
+1. Controlla i risultati dell'anteprima e i totali di riepilogo.
+2. Clicca su **Importa mancanti** per importare tutte le transazioni contrassegnate come **Nuove**.
+3. Al termine dell'importazione, gli indicatori di stato accanto a ogni transazione si aggiornano per mostrare il risultato.
 
-## Suggerimenti per l'uso dell'Importazione Stripe
+## Suggerimenti per usare Importazione Stripe
 
 - Esegui l'importazione regolarmente (settimanalmente o mensilmente) per mantenere aggiornati i tuoi registri.
-- Se una transazione mostra **Già importato**, significa che B1 Admin ha già un record corrispondente -- non è necessaria alcuna azione.
-- Usa il filtro per intervallo di date per concentrarti su un periodo specifico se stai cercando transazioni particolari.
+- Se una transazione compare come **Già importata**, significa che B1 Admin ha già un record corrispondente -- non è necessaria alcuna azione.
+- Usa il filtro dell'intervallo di date per concentrarti su un periodo specifico se cerchi determinate transazioni.
 
 :::tip
-Dopo l'importazione, visita la pagina [Lotti](batches.md) per verificare che le donazioni importate appaiano correttamente e che i totali corrispondano a ciò che vedi nella tua dashboard Stripe.
+Dopo l'importazione, visita la pagina [Lotti](batches.md) per verificare che le donazioni importate compaiano correttamente e che i totali corrispondano a quelli che vedi nella tua dashboard di Stripe.
 :::
 
-## Prossimi passi
+## Passi successivi
 
-- Controlla i [Report donazioni](donation-reports.md) per esaminare le transazioni importate insieme ai tuoi altri dati sulle donazioni
-- Assicurati che le donazioni importate siano assegnate ai [fondi](funds.md) corretti per [dichiarazioni di donazione](giving-statements.md) accurate
+- Consulta i [Report sulle donazioni](donation-reports.md) per rivedere le transazioni importate insieme agli altri dati delle donazioni
+- Assicurati che le donazioni importate siano assegnate ai [fondi](funds.md) corretti per [ricevute di donazione](giving-statements.md) accurate

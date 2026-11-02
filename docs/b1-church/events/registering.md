@@ -21,7 +21,7 @@ When your church enables registration for an event, you can sign up through a si
 ## Step 1: Enter Your Information
 
 1. From the church calendar, open the event you want to register for and click **Register for this Event**.
-2. The registration page loads showing the event title, description, and date.
+2. The registration page loads showing the event title, description, and date. An event that runs over several days shows both its start and end dates.
 3. If you are **logged in**, the form shows your name and confirms you are registering under your account.
 4. If you are a **guest** (not logged in), fill in:
    - **First Name** (required)
@@ -65,11 +65,13 @@ If your registration has a cost, the **Payment** step shows an **Order Summary**
 
 - **Discount code** -- If your church gave you a code, enter it and click **Apply**. The discount is reflected immediately, and you'll see a clear message if the code has expired, hasn't started yet, or requires more attendees.
 - **Logged-in members** can pay with a saved card or choose **Use a new card**.
-- **Guests** enter their card details directly.
+- **Guests** enter their card details directly and tick the **I'm not a robot** check before paying.
 
 Click **Pay & Register** to complete the payment and registration in one step. Your card details go directly to the church's payment provider and are never stored by B1.
 
 Free registrations skip this step and go straight to confirmation.
+
+If your church does not take payments online, the payment step says *"Online payment is not available for this event. You can register now and pay the church directly."* Click **Register and Pay Later** to finish. Your registration is saved with the amount shown as a balance due, which you pay to the church directly.
 
 ## Step 6: Confirm
 

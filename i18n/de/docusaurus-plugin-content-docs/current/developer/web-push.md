@@ -6,22 +6,22 @@ title: "Web-Push-Benachrichtigungen"
 
 <div class="article-intro">
 
-ChurchApps-Web-Apps liefern Push-Benachrichtigungen über die W3C-Web-Push-API -- denselben Mechanismus, den Firebase Cloud Messaging serverseitig verwendet, jedoch zugestellt über den nativen `PushManager` des Browsers statt über FCM. Ein einziges VAPID-Schlüsselpaar im MessagingApi deckt alle Nutzer ab (B1Admin, B1App und künftige PWAs).
+Die Web-Apps von ChurchApps liefern Push-Benachrichtigungen über die W3C-Web-Push-API aus — denselben Mechanismus, den Firebase Cloud Messaging auf der Serverseite verwendet, hier aber über die native `PushManager` des Browsers statt über FCM. Ein einziges VAPID-Schlüsselpaar auf der MessagingApi deckt alle Verbraucher ab (B1Admin, B1App und künftige PWAs).
 
 </div>
 
 ## Wann Push ausgelöst wird {#when-push-fires}
 
-Push ist eine Stufe in einem einzigen Zustelldurchlauf innerhalb von `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): zuerst eine Prüfung der In-App-Einstellungen, dann Socket-Zustellung und Push, die im selben Durchlauf versucht werden (jeweils hinter eigenen Einstellungsprüfungen), anschließend E-Mail. Ein Empfänger, der die Kategorie stummgeschaltet hat, erreicht Push nie. Eine erfolgreiche Socket-Zustellung hält Push nicht mehr auf -- jeder Benachrichtigungstyp verhält sich nun so, wie private Nachrichten es schon immer getan haben. Dadurch zeigt eine installierte PWA, die im Hintergrund läuft, auch dann eine Betriebssystem-Benachrichtigung an, wenn eine Socket-Zustellung bereits erfolgt ist; doppelte Banner unterdrückt stattdessen der Service Worker auf dem Client (siehe [Anforderung an den Service Worker](#service-worker-requirement)). Geplante Erinnerungen und von Mitarbeitern ausgelöste Rundsendungen beginnen direkt auf der Push-Stufe und überspringen den Socket-Schritt vollständig. E-Mail bleibt zeitgesteuert: Ungelesene Einträge werden nach eigenem Zeitplan eskaliert und nicht als Teil dieses Durchlaufs.
+Push ist eine Stufe in einem einzigen Zustellungsdurchlauf innerhalb von `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): zuerst eine Sperre nach In-App-Einstellungen, danach werden Socket-Zustellung und Push im selben Durchlauf versucht (jeweils hinter einer eigenen Einstellungssperre), anschließend E-Mail. Ein Empfänger, der die Kategorie stummgeschaltet hat, erreicht Push nie. Eine erfolgreiche Socket-Zustellung stoppt Push nicht mehr — jeder Benachrichtigungstyp verhält sich nun so, wie es bei Direktnachrichten schon immer der Fall war. Eine installierte PWA, die im Hintergrund läuft, zeigt daher auch dann eine Benachrichtigung auf Betriebssystemebene an, wenn die Socket-Zustellung bereits angekommen ist; doppelte Banner unterdrückt stattdessen der Service Worker auf dem Client (siehe [Anforderung an den Service Worker](#service-worker-requirement)). Geplante Erinnerungen und von Mitarbeitenden ausgelöste Rundsendungen starten direkt auf der Push-Stufe und überspringen den Socket-Schritt vollständig. E-Mail bleibt zeitgesteuert: Sie eskaliert ungelesene Einträge nach eigenem Zeitplan und ist kein Teil dieses Durchlaufs.
 
 Die häufigsten Wege, die zu Push führen:
 
-1. **Inhaltsbenachrichtigungen** -- eine Antwort auf eine Unterhaltung, der die Person folgt, eine Erwähnung oder ein anderes Ereignis, das über `NotificationHelper.createNotifications()` geleitet wird.
-2. **Private Nachrichten** -- eine Direktnachricht durchläuft dieselbe Zustellfunktion und versucht immer Push zusammen mit der Socket-Zustellung.
-3. **Geplante Erinnerungen** -- Erinnerungen zu Veranstaltungen, Aufgaben und Diensten, die von der Erinnerungs-Engine expandiert und verschickt werden; sie starten neue Vorkommen direkt auf der Push-Stufe.
-4. **Von Mitarbeitern ausgelöste Pushes** -- `POST /messaging/notifications/create`, `/ping` und `/group/send` für einmalige oder Gruppen-Rundsendungen.
+1. **Inhaltsbenachrichtigungen** — eine Antwort in einer Unterhaltung, der die Person folgt, eine Erwähnung oder ein anderes Ereignis, das über `NotificationHelper.createNotifications()` geleitet wird.
+2. **Direktnachrichten** — eine Direktnachricht durchläuft dieselbe Zustellungsfunktion und versucht immer Push zusätzlich zur Socket-Zustellung.
+3. **Geplante Erinnerungen** — Erinnerungen zu Veranstaltungen, Aufgaben und Diensten, die von der Erinnerungs-Engine aufgelöst und versandt werden; sie starten neue Vorkommen direkt auf der Push-Stufe.
+4. **Von Mitarbeitenden ausgelöste Pushes** — `POST /messaging/notifications/create`, `/ping` und `/group/send` für einmalige oder gruppenbezogene Rundsendungen.
 
-## Serverablauf
+## Ablauf auf dem Server
 
 ```
 NotificationHelper.createNotifications(...) / checkShouldNotify(...) / ReminderEngine.scan(...)
@@ -40,13 +40,13 @@ NotificationHelper.createNotifications(...) / checkShouldNotify(...) / ReminderE
 
 VAPID-Schlüssel werden in `Environment` gespeichert und müssen vorhanden sein, damit Push aktiviert ist:
 
-| Variable | Beschreibung |
-|----------|-------------|
-| `webPushPublicKey` | Öffentlicher VAPID-Schlüssel (base64url). Wird Clients über `GET /messaging/webpush/publicKey` zurückgegeben |
-| `webPushPrivateKey` | Privater VAPID-Schlüssel. Wird verwendet, um jeden ausgehenden Push zu signieren |
-| `webPushSubject` | `mailto:`-URI, die an die Push-Dienste gemeldet wird. Standardwert ist `mailto:support@churchapps.org` |
+| Umgebungsvariable | Einstellung in `Environment` | Beschreibung |
+|----------|----------|-----------|
+| `WEB_PUSH_PUBLIC_KEY` | `webPushPublicKey` | Öffentlicher VAPID-Schlüssel (base64url). Wird Clients über `GET /messaging/webpush/publicKey` zurückgegeben |
+| `WEB_PUSH_PRIVATE_KEY` | `webPushPrivateKey` | Privater VAPID-Schlüssel. Wird verwendet, um jeden ausgehenden Push zu signieren |
+| `WEB_PUSH_SUBJECT` | `webPushSubject` | `mailto:`-URI, die den Push-Diensten angegeben wird. Standard ist `mailto:support@churchapps.org` |
 
-`WebPushHelper.isEnabled()` gibt `false` zurück, wenn einer der beiden Schlüssel fehlt -- das Messaging-Modul funktioniert weiter, Push-Zustellungen werden einfach nicht ausgeführt.
+`WebPushHelper.isEnabled()` liefert `false`, sobald einer der beiden Schlüssel fehlt — das Messaging-Modul arbeitet weiter, Push-Zustellungen werden aber übersprungen. Die mobile Website von B1App teilt Mitgliedern dann mit, dass Push nicht aktiviert ist, statt eine Einrichtung anzubieten.
 
 ### Ein VAPID-Schlüsselpaar erzeugen
 
@@ -54,17 +54,17 @@ VAPID-Schlüssel werden in `Environment` gespeichert und müssen vorhanden sein,
 npx web-push generate-vapid-keys
 ```
 
-Fügen Sie die Ausgabe in Ihre `.env` (lokal) oder den AWS SSM Parameter Store (bereitgestellt) ein. Das Rotieren der Schlüssel macht jedes bestehende Abonnement ungültig -- Clients müssen sich beim nächsten Laden der Seite erneut registrieren.
+Tragen Sie die Ausgabe in Ihre `.env` (lokal) bzw. in den AWS Systems Manager Parameter Store (in bereitgestellten Umgebungen) ein. Ein Wechsel der Schlüssel macht jedes bestehende Abonnement ungültig — Clients müssen sich beim nächsten Laden der Seite erneut registrieren.
 
 ## Speichermodell
 
-Web-Push-Abonnements werden in der bestehenden Tabelle `devices` neben den FCM-Gerätedatensätzen gespeichert. Sie werden über das Präfix `webpush:` in der Spalte `fcmToken` unterschieden:
+Web-Push-Abonnements werden in der bestehenden Tabelle `devices` gespeichert, zusammen mit den FCM-Geräteeinträgen. Sie sind über das Präfix `webpush:` in der Spalte `fcmToken` zu erkennen:
 
 ```
 fcmToken = "webpush:" + JSON.stringify({ endpoint, keys: { p256dh, auth } })
 ```
 
-Dadurch gibt ein einziger Aufruf von `loadByPersonId` alle Geräte zurück, die ein Benutzer registriert hat, unabhängig von der Plattform. `WebPushHelper.isWebPushToken(token)` und `decodeSubscription(token)` übernehmen die Behandlung des Präfixes.
+So liefert ein einziger Aufruf von `loadByPersonId` jedes Gerät, das ein Benutzer registriert hat, unabhängig von der Plattform. `WebPushHelper.isWebPushToken(token)` und `decodeSubscription(token)` übernehmen die Behandlung des Präfixes.
 
 ## Endpunkte
 
@@ -72,14 +72,14 @@ Basispfad: `/messaging/webpush`
 
 | Methode | Pfad | Auth | Beschreibung |
 |--------|------|------|-------------|
-| GET | `/publicKey` | Öffentlich | Gibt `{ publicKey, enabled }` zurück. Clients übergeben `publicKey` an `pushManager.subscribe({ applicationServerKey })` |
+| GET | `/publicKey` | Öffentlich | Liefert `{ publicKey, enabled }`. Clients übergeben `publicKey` an `pushManager.subscribe({ applicationServerKey })` |
 | POST | `/subscribe` | JWT | Registriert (oder aktualisiert) ein Abonnement für den angemeldeten Benutzer. Body: `{ subscription: { endpoint, keys: { p256dh, auth } }, appName?, deviceInfo?, label? }` |
 | POST | `/unsubscribe` | Öffentlich | Löscht jede Gerätezeile, deren `fcmToken` den angegebenen Endpunkt enthält. Body: `{ endpoint }` |
 | DELETE | `/subscription/:id` | JWT | Löscht eine bestimmte Gerätezeile anhand ihrer serverseitigen ID |
 
 ## Client-Baustein: `WebPushHelper`
 
-Der `WebPushHelper` von `@churchapps/apphelper` ist der einzige clientseitige Einstiegspunkt. Hosts konfigurieren ihn einmal beim Start und rufen nach der Anmeldung `subscribe()` auf.
+Der `WebPushHelper` aus `@churchapps/apphelper` ist der einzige clientseitige Einstiegspunkt. Die Host-Anwendung konfiguriert ihn einmal beim Start und ruft nach der Anmeldung `subscribe()` auf.
 
 ```typescript
 import { WebPushHelper } from "@churchapps/apphelper";
@@ -94,17 +94,17 @@ WebPushHelper.configure({
 await WebPushHelper.subscribe();
 ```
 
-Folgendes erhalten Konsumenten automatisch:
+Diese Verhaltensweisen erhalten Verbraucher automatisch:
 
-- **Funktionsprüfung** -- `isSupported()` gibt `false` in Browsern ohne `serviceWorker` / `PushManager` / `Notification` zurück.
-- **Abklingzeit** -- `canPromptNow()` erzwingt zwischen Abfragen über `localStorage` eine Wartezeit von 7 Tagen, damit Nutzer, die die Betriebssystem-Abfrage abgelehnt haben, nicht bei jeder Sitzung erneut gefragt werden.
-- **Abmeldung** -- `setOptedOut(true)` und `unsubscribe()` verhindern erneute Abfragen und entfernen die serverseitige Gerätezeile.
-- **Erkennung der eigenständigen PWA** -- `isStandalone()` ermöglicht es Hosts, iOS-Push-Abfragen davon abhängig zu machen, dass der Nutzer die PWA auf dem Startbildschirm installiert hat (iOS erlaubt Push nur aus installierten PWAs).
-- **Neu registrieren bei Kirchenwechsel** -- `refreshEnrollment()` sendet das bestehende Browser-Abonnement mit dem neuen `userChurch` erneut, ohne den Nutzer erneut zu fragen. Rufen Sie es aus dem Handler für die Änderung von `userChurch` auf.
+- **Prüfung der Fähigkeit** — `isSupported()` liefert `false` in Browsern ohne `serviceWorker` / `PushManager` / `Notification`.
+- **Abkühlzeit** — `canPromptNow()` erzwingt über `localStorage` eine Wartezeit von 7 Tagen zwischen Abfragen, damit Benutzer, die die Abfrage des Betriebssystems abgelehnt haben, nicht bei jeder Sitzung erneut gefragt werden.
+- **Abmelden** — `setOptedOut(true)` und `unsubscribe()` verhindern erneutes Nachfragen und entfernen die Gerätezeile auf dem Server.
+- **Erkennung der eigenständigen PWA** — `isStandalone()` erlaubt Host-Anwendungen, Push-Abfragen auf iOS davon abhängig zu machen, dass der Benutzer die PWA auf dem Startbildschirm installiert hat (iOS erlaubt Push nur aus installierten PWAs).
+- **Erneute Registrierung beim Wechsel der Gemeinde** — `refreshEnrollment()` sendet das bestehende Browser-Abonnement mit der neuen `userChurch` erneut, ohne den Benutzer erneut zu fragen. Rufen Sie es im Handler für die Änderung von `userChurch` auf.
 
 ### Anforderung an den Service Worker {#service-worker-requirement}
 
-Der `PushManager` des Browsers liefert nur dann ein Abonnement, wenn an der konfigurierten Scope ein Service Worker registriert ist. ChurchApps-PWAs verwenden [Serwist](https://serwist.dev/) (Next.js-Apps) oder Workbox zur Erzeugung des Service Workers. Da der Server nun immer versucht, Push zusammen mit der Socket-Zustellung zu senden (siehe [Wann Push ausgelöst wird](#when-push-fires)), ist der Service Worker der Punkt der Duplikatvermeidung: Sein `push`-Handler muss `showNotification` unterdrücken, wenn ein fokussierter oder sichtbarer Client bereits auf das Deep-Link-Ziel der Benachrichtigung zeigt. Das App-Badge sollte aber immer aktualisiert werden, unabhängig davon, ob das Banner angezeigt wurde:
+Der `PushManager` des Browsers löst ein Abonnement nur auf, wenn am konfigurierten Gültigkeitsbereich ein Service Worker registriert ist. Die PWAs von ChurchApps verwenden [Serwist](https://serwist.dev/) (Next.js-Apps) oder Workbox, um den Service Worker zu erzeugen. Da der Server nun immer Push zusammen mit der Socket-Zustellung versucht (siehe [Wann Push ausgelöst wird](#when-push-fires)), ist der Service Worker der Punkt der Deduplizierung: Sein Handler `push` muss `showNotification` unterdrücken, wenn ein fokussierter bzw. sichtbarer Client bereits auf dem Ziel des Deep-Links der Benachrichtigung ist. Das Abzeichen der App muss dagegen immer aktualisiert werden, unabhängig davon, ob das Banner angezeigt wurde.
 
 ```javascript
 // public/sw.js (or whatever Serwist/workbox emits)
@@ -149,18 +149,18 @@ self.addEventListener("notificationclick", (event) => {
 });
 ```
 
-`deepLinkFor` und `clientMatchesTarget` sind anwendungsspezifisch -- die Referenzimplementierung finden Sie in `B1App/src/app/sw.ts`. B1App leitet `privateMessage` an `/mobile/messages/:personId` weiter, B1Admin leitet `notification` an sein Benachrichtigungsfenster weiter usw.
+`deepLinkFor` und `clientMatchesTarget` hängen von der jeweiligen Anwendung ab — die Referenzimplementierung finden Sie in `B1App/src/app/sw.ts`. B1App leitet `privateMessage` nach `/mobile/messages/:personId`, B1Admin leitet `notification` in sein Benachrichtigungsfeld um usw.
 
 ## Betriebshinweise
 
-- **`gone: true`-Ergebnisse** -- `WebPushHelper.sendBulk` gibt pro Empfänger `{ token, success, gone, errorMessage }` zurück. Ein Ergebnis mit `gone: true` (der Push-Dienst antwortete mit `404` oder `410`) bedeutet, dass das Abonnement dauerhaft ungültig ist; nachgelagerter Code in `NotificationHelper` löscht diese Gerätezeilen, damit sie nicht erneut versucht werden.
-- **TTL** -- Push-Nachrichten werden mit `TTL: 86400` (24 Stunden) gesendet. Wenn sich der Browser des Nutzers innerhalb von 24 Stunden nicht mit dem Push-Dienst verbindet, wird der Push verworfen.
-- **Keine Wiederholungen** -- Ein vorübergehender Fehler (Zeitüberschreitung, 5xx) wird protokolliert und nicht wiederholt. Push erfolgt nach bestem Bemühen; die Socket-Verbindung der Seite und die E-Mail-Benachrichtigungsstufe sorgen für die Verlässlichkeit.
-- **Deaktivierte Umgebungen** -- Entwicklungsumgebungen können die VAPID-Schlüssel leer lassen; `WebPushHelper.isEnabled()` gibt dann `false` zurück und Pushes werden sofort übersprungen. Dies ist das beabsichtigte Verhalten für Umgebungen ohne eigene VAPID-Identität.
+- **Ergebnisse mit `gone: true`** — `WebPushHelper.sendBulk` liefert pro Empfänger `{ token, success, gone, errorMessage }`. Ein Ergebnis mit `gone: true` (der Push-Dienst antwortete mit `404` oder `410`) bedeutet, dass das Abonnement dauerhaft ungültig ist; nachgelagerter Code in `NotificationHelper` löscht diese Gerätezeilen, damit sie nicht erneut versucht werden.
+- **TTL** — Push-Nachrichten werden mit `TTL: 86400` (24 Stunden) gesendet. Verbindet sich der Browser des Benutzers innerhalb von 24 Stunden nicht mit dem Push-Dienst, wird die Nachricht verworfen.
+- **Keine Wiederholungen** — ein vorübergehender Fehler (Zeitüberschreitung, 5xx) wird protokolliert und nicht wiederholt. Push ist eine Zustellung nach bestem Bemühen; die Dauerhaftigkeit übernehmen der Socket direkt auf der Seite und die E-Mail-Benachrichtigung.
+- **Deaktivierte Umgebungen** — Entwicklungsumgebungen dürfen die VAPID-Schlüssel leer lassen; `WebPushHelper.isEnabled()` liefert dann `false`, und Pushes werden sofort übersprungen. Dies ist das vorgesehene Verhalten für Umgebungen ohne eigene VAPID-Identität.
 
 ## Verwandte Seiten
 
-- [Benachrichtigungsarchitektur](./architecture/notifications) -- Der vollständige Eskalationstrichter für In-App, Push und E-Mail sowie die Erinnerungs-Engine
-- [Echtzeit-Architektur](./realtime) -- WebSocket-Zustellung; Push wird nun aus demselben In-App-Trichter zusammen mit der Socket-Zustellung im selben Durchlauf ausgelöst, nicht nur als Ersatz, wenn eine Socket-Zustellung nicht ankommt
+- [Benachrichtigungsarchitektur](./architecture/notifications) — die vollständige Eskalation In-App/Push/E-Mail und die Erinnerungs-Engine
+- [Echtzeit-Architektur](./realtime) — WebSocket-Zustellung; Push wird nun zusammen mit der Socket-Zustellung im selben Durchlauf des In-App-Ablaufs ausgelöst, nicht mehr nur als Ersatz, wenn eine Socket-Zustellung nicht ankommt
 - [Messaging-Endpunkte](./api/endpoints/messaging) -- Benachrichtigungen, Geräte und der übrige Messaging-Bereich
 - [AppHelper](./shared-libraries/app-helper) -- Das npm-Paket, das `WebPushHelper` enthält

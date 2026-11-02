@@ -6,32 +6,36 @@ title: "Profile"
 
 <div class="article-intro">
 
-Ang seksyon ng Profile ay nagbibigay-daan sa iyo na pamahalaan ang mga personal na setting ng iyong account sa ChurchApps. Ang iyong profile ay nakabahagi sa lahat ng mga tool ng ChurchApps, kaya ang mga pagbabagong ginawa mo dito ay naaangkop sa lahat ng dako -- mula sa B1 Admin hanggang sa B1 Mobile app.
+Hinahayaan ka ng seksyong Profile na pamahalaan ang mga setting ng iyong personal na account sa ChurchApps. Ibinabahagi ang iyong profile sa lahat ng ChurchApps tool, kaya ang mga pagbabagong gagawin mo rito ay nalalapat saanman -- mula sa B1 Admin hanggang sa B1 Mobile app.
 
 </div>
 
-## Ano ang Magagawa Mo
+## Ano ang Maaari Mong Gawin
 
-Mula sa seksyon ng Profile, maaari kang:
+Mula sa seksyong Profile, maaari mong:
 
-- **Mag-update ng iyong pangalan at email** -- Panatilihing napapanahon ang iyong impormasyon sa pakikipag-ugnayan.
-- **Magpalit ng password** -- Magtakda ng bagong password para sa iyong account.
-- **Magpalit ng tema** -- Lumipat sa pagitan ng light at dark mode mula sa user menu (i-click ang iyong larawan ng profile sa kanang itaas na sulok).
-- **Pamahalaan ang mga nakakonektang device** -- Tingnan at kontrolin kung aling mga ChurchAppsPlayer device ang naka-link sa iyong account.
-- **Tingnan ang mga naka-link na account** -- Tingnan at pamahalaan ang anumang mga panlabas na serbisyo na nakakonekta sa iyong ChurchApps account.
+- **I-update ang iyong pangalan at email** -- Panatilihing napapanahon ang iyong impormasyon sa pakikipag-ugnayan.
+- **Palitan ang iyong password** -- Magtakda ng bagong password para sa iyong account.
+- **I-on ang two-factor sign-in** -- Humingi ng code mula sa authenticator app kapag nag-log in ka. Tingnan ang [Two-Factor Sign-In](./managing-profile.md#two-factor-sign-in).
+- **Magpalit ng theme** -- Lumipat sa pagitan ng light at dark mode mula sa user menu (i-click ang iyong larawan sa profile sa kanang itaas).
+- **Pamahalaan ang mga konektadong device** -- Tingnan at kontrolin kung aling mga ChurchAppsPlayer device ang naka-link sa iyong account.
+- **Tingnan ang mga naka-link na account** -- Makita at pamahalaan ang anumang external na serbisyong nakakonekta sa iyong ChurchApps account.
+- **Aprubahan ang mga request sa pagbabago ng profile** -- Suriin at ilapat ang mga update na isinumite ng mga miyembro.
 
-## Mga Sub-seksyon ng Profile
+## Mga Sub-Seksyon ng Profile
 
-Ang lugar ng Profile ay may mga sumusunod na pahina:
+May mga sumusunod na pahina ang bahagi ng Profile:
 
-1. **[Pamamahala ng Iyong Profile](./managing-profile.md)** -- I-edit ang iyong personal na impormasyon, palitan ang password, pamahalaan ang mga naka-link na account, ayusin ang mga kagustuhan sa tema, at pamahalaan ang pagtanggal ng account.
-2. **[Pamamahala ng mga Device](./devices.md)** -- Tingnan, magdagdag, at pamahalaan ang mga ChurchAppsPlayer device na naka-pair sa iyong account.
+1. **[Managing Your Profile](./managing-profile.md)** -- I-edit ang iyong personal na impormasyon, palitan ang password, pamahalaan ang mga naka-link na account, i-on ang two-factor sign-in, baguhin ang mga theme preference, at hawakan ang pagbura ng account.
+2. **[Approving Profile Changes](./approving-profile-changes.md)** -- Suriin at aprubahan ang mga request sa pag-update ng profile na isinumite ng mga miyembro sa pamamagitan ng B1 Mobile.
+3. **[Managing Devices](./devices.md)** -- Tingnan, idagdag, at pamahalaan ang mga ChurchAppsPlayer device na naka-pair sa iyong account.
 
 :::tip
-Panatilihing napapanahon ang iyong email address. Ito ay ginagamit para sa pagbawi ng account at mahahalagang abiso mula sa iyong simbahan.
+Panatilihing updated ang iyong email address. Ginagamit ito sa pagbawi ng account at sa mahahalagang notification mula sa iyong simbahan.
 :::
 
-## Mga Susunod na Hakbang
+## Ano ang Susunod
 
-- [Pamamahala ng Iyong Profile](./managing-profile.md) -- I-edit ang iyong mga personal na setting
-- [Pamamahala ng mga Device](./devices.md) -- Pamahalaan ang mga nakakonektang device
+- [Managing Your Profile](./managing-profile.md) -- I-edit ang iyong mga personal na setting
+- [Approving Profile Changes](./approving-profile-changes.md) -- Suriin ang mga request sa pagbabago ng profile ng miyembro
+- [Managing Devices](./devices.md) -- Pamahalaan ang mga konektadong device

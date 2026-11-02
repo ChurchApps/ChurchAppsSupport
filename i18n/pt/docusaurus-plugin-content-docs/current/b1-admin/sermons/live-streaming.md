@@ -1,133 +1,133 @@
 ---
-title: "Transmissão ao Vivo"
+title: "Transmissão ao vivo"
 ---
 
-# Transmissão ao Vivo
+# Transmissão ao vivo
 
 <div class="article-intro">
 
-A página Horários de Transmissão ao Vivo permite que você configure o cronograma de transmissão de sua igreja, gerencie horários de serviço e personalize a experiência do espectador. Configure serviços semanais recorrentes ou eventos únicos, configure as configurações de chat e vídeo e controle quando sua transmissão entra no ar.
+A página Horários da transmissão ao vivo permite configurar a agenda de transmissões da sua igreja, gerenciar os horários dos cultos e personalizar a experiência do espectador. Configure cultos semanais recorrentes ou eventos pontuais, defina as configurações de chat e vídeo e controle quando a sua transmissão entra no ar.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Você precisa da permissão **contentApi.streamingServices.edit**. Consulte [Funções e Permissões](../settings/roles-permissions.md) se não tiver acesso.
-- Tenha seu ID de Canal do YouTube pronto se planejar usar transmissão ao vivo automatizada
-- Adicione pelo menos um [sermão](managing-sermons) ou URL de transmissão ao vivo permanente para usar como sua fonte de transmissão
+- Você precisa da permissão **contentApi.streamingServices.edit**. Veja [Funções e permissões](../settings/roles-permissions.md) se você não tiver acesso.
+- Tenha em mãos o ID do seu canal do YouTube caso pretenda usar a transmissão ao vivo automatizada
+- Adicione pelo menos um [sermão](managing-sermons) ou uma URL de transmissão permanente para usar como fonte da sua transmissão
 
 </div>
 
-A transmissão ao vivo é gerenciada em duas páginas da seção **Sermões** do menu Jump: **Horários de Transmissão ao Vivo** para gerenciar seu cronograma de transmissão ao vivo e **Configurações** para configurar as abas da sua página de transmissão.
+A transmissão ao vivo é gerenciada em duas páginas da seção **Sermões** do menu Jump: **Horários da transmissão** para gerenciar a sua agenda de transmissões e **Configurações** para configurar as abas da sua página de transmissão.
 
-## Gerenciando Serviços
+## Gerenciando cultos
 
-### Adicionando um Serviço
+### Adicionando um culto
 
-1. No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Sermões** e clique em **Horários de Transmissão ao Vivo**.
-2. Clique no botão **Adicionar Serviço** no topo da página para criar um novo serviço agendado. Os serviços existentes são listados em uma tabela que mostra o nome, o horário, o provedor e a duração de cada serviço; clique no ícone de edição de uma linha para alterá-la.
-3. Insira um **Nome do Serviço** (por exemplo, "Domingo de Manhã").
-4. Defina o **Horário do Serviço** -- escolha o dia e a hora em que seu serviço começa.
-5. Defina **Recorre Semanalmente** como **Sim** para serviços semanais regulares, ou **Não** para um evento único.
+1. No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Sermões** e clique em **Horários da transmissão**.
+2. Clique no botão **Adicionar culto** no topo da página para criar um novo culto agendado. Os cultos existentes são listados em uma tabela que mostra o nome, o horário, o provedor e a duração de cada culto; clique no ícone de edição de uma linha para alterá-la.
+3. Digite um **Nome do culto** (por exemplo, "Culto de domingo de manhã").
+4. Defina o **Horário do culto** — escolha o dia e a hora em que o culto começa.
+5. Defina **Repete semanalmente** como **Sim** para cultos semanais regulares, ou **Não** para um evento pontual.
 
-### Configurando as Configurações de Chat e Vídeo
+### Configurando as opções de chat e vídeo
 
-6. Em **Configurações de Chat**, defina quantos minutos antes e depois do serviço o chat deve estar habilitado. Isso permite que os visitantes comecem a conversar antes do serviço começar e continuem depois.
-7. Em **Configurações de Vídeo**, defina com que antecedência iniciar a transmissão de vídeo para contagem regressiva ou conteúdo pré-serviço.
-8. Selecione qual sermão reproduzir no dropdown:
-   - **Último Sermão** -- Reproduz automaticamente seu vídeo adicionado mais recentemente.
-   - **Serviço ao Vivo Atual** -- Reproduz sua transmissão ao vivo atual do YouTube usando seu ID de Canal.
-   - Você também pode escolher qualquer sermão específico que já tenha salvo.
-9. Clique em **Salvar** para agendar seu serviço.
+6. Em **Configurações de chat**, defina quantos minutos antes e depois do culto o chat deve estar habilitado. Isso permite que os visitantes comecem a conversar antes do culto e continuem depois.
+7. Em **Configurações de vídeo**, defina com quanta antecedência o vídeo deve começar para conteúdo de contagem regressiva ou pré-culto. O chat abre esse número de minutos *antes* do início antecipado do vídeo, então o horário exibido ao lado da configuração de minutos antes do chat soma os dois números. Por exemplo, um culto às 10:00 com 15 minutos de chat antes e um início antecipado de 5 minutos abre o chat às 9:40.
+8. Selecione qual sermão será reproduzido na lista suspensa:
+   - **Sermão mais recente** -- Reproduz automaticamente o vídeo adicionado mais recentemente.
+   - **Culto ao vivo atual** -- Reproduz a sua transmissão ao vivo atual do YouTube usando o seu ID de canal.
+   - Você também pode escolher qualquer sermão específico que já tenha salvado.
+9. Clique em **Salvar** para agendar o seu culto.
 
 :::info
-Seu serviço será atualizado automaticamente a cada semana se definido como recorrente. Você pode adicionar quantos serviços precisar. Os visitantes verão o próximo horário de serviço agendado quando visitarem sua página de transmissão.
+O seu culto será atualizado automaticamente toda semana se estiver configurado como recorrente. Ele permanece no mesmo horário local quando o horário de verão começa ou termina. Você pode adicionar quantos cultos precisar. Os visitantes verão o próximo horário de culto agendado quando acessarem a sua página de transmissão.
 :::
 
-## Configurações de Página de Transmissão
+## Configurações da página de transmissão
 
-Para personalizar as abas e links que aparecem ao lado de sua transmissão ao vivo, abra o menu Jump, expanda **Sermões** e clique em **Configurações**. A página **Configurações de Transmissão** mostra sua lista de **Abas de Conteúdo**.
+Para personalizar as abas e os links que aparecem ao lado da sua transmissão ao vivo, abra o menu Jump, expanda **Sermões** e clique em **Configurações**. A página **Configurações da transmissão** mostra a lista de **Abas de conteúdo**.
 
-### Adicionando Abas
+### Adicionando abas
 
-1. Clique no botão **Adicionar** para adicionar uma nova aba à sua página de transmissão ao vivo.
-2. Escolha um **Tipo de Link**: **URL Externa** para um link personalizado, ou uma das abas pré-configuradas **Chat** ou **Oração**.
-3. Para a aba Chat, apenas dê a ela um nome na caixa **Texto da Aba** e a configuração estará concluída.
-4. Para uma aba vinculada, insira o nome da aba, escolha um ícone clicando no botão de ícone e insira a URL.
-5. Suas abas configuradas aparecerão na página de transmissão ao vivo para os espectadores acessarem recursos adicionais e recursos interativos.
+1. Clique no botão **Adicionar** para incluir uma nova aba na sua página de transmissão ao vivo.
+2. Escolha um **Tipo de link**: **URL externa** para um link personalizado, ou uma das abas predefinidas de **Chat** ou **Oração**.
+3. Para a aba de Chat, basta dar um nome no campo **Texto da aba** e a configuração estará concluída.
+4. Para uma aba com link, informe o nome da aba, escolha um ícone clicando no botão de ícone e digite a URL.
+5. As abas configuradas aparecerão na página de transmissão ao vivo para que os espectadores acessem recursos adicionais e funcionalidades interativas.
 
-### Visualizando Sua Transmissão
+### Visualizando a sua transmissão
 
-Na página **Horários de Transmissão ao Vivo**, clique em **Visualizar Sua Transmissão** no topo da página para ver exatamente como sua página de transmissão ao vivo parecerá aos visitantes, incluindo seu logotipo, horários de serviço e abas configuradas.
+Na página **Horários da transmissão**, clique em **Ver sua transmissão** no topo da página para ver exatamente como a sua página de transmissão ao vivo aparecerá para os visitantes, incluindo o seu logotipo, os horários dos cultos e as abas configuradas.
 
-## Configurando Sua Transmissão ao Vivo do YouTube
+## Configurando a sua transmissão ao vivo no YouTube
 
-Para conectar seu canal do YouTube para transmissão ao vivo automática:
+Para conectar o seu canal do YouTube para transmissão ao vivo automática:
 
-1. Vá para **Sermões** e clique em **Adicionar Sermão**, em seguida selecione **Adicionar URL de Transmissão ao Vivo Permanente**.
-2. O provedor de vídeo usa como padrão **Transmissão ao Vivo Atual do YouTube**. Insira seu **ID de Canal do YouTube**.
-3. Adicione um título e descrição, em seguida clique em **Salvar**.
-4. Em **Horários de Transmissão ao Vivo**, crie um serviço e selecione sua URL de transmissão ao vivo permanente no dropdown de sermão.
+1. Acesse **Sermões** e clique em **Adicionar sermão**, depois selecione **Adicionar URL de transmissão permanente**.
+2. O provedor de vídeo vem como **Transmissão ao vivo atual do YouTube** por padrão. Digite o seu **ID do canal do YouTube**.
+3. Adicione um título e uma descrição, depois clique em **Salvar**.
+4. Em **Horários da transmissão**, crie um culto e selecione a sua URL de transmissão permanente na lista suspensa de sermões.
 
 :::tip
-Para encontrar seu ID de Canal do YouTube, vá para as configurações avançadas de seu canal do YouTube e copie o valor de ID de Canal.
+Para encontrar o ID do seu canal do YouTube, acesse as configurações avançadas do seu canal e copie o valor do ID do canal.
 :::
 
-## Personalizando Cores e Logotipo
+## Personalizando cores e logotipo
 
-Sua página de transmissão ao vivo usa as configurações de [Aparência](../website/appearance) de seu website:
+A sua página de transmissão ao vivo usa as configurações de [Aparência](../website/appearance) do seu site:
 
 - A **cor de destaque clara** com texto escuro é usada no cabeçalho.
 - A **cor de destaque escura** com texto claro é usada na barra lateral.
-- Seu **Logotipo de Fundo Claro** aparece na página de transmissão. Use uma imagem com fundo transparente e proporção de aspecto 4:1.
+- O seu **Logotipo para fundo claro** aparece na página de transmissão. Use uma imagem com fundo transparente e proporção de 4:1.
 
-Para alterar estes, vá para **Website** e depois **Aparência** e atualize suas configurações de [Paleta de Cores](../website/appearance#color-palette) e [Logotipo](../website/appearance#logo-and-branding).
+Para alterar essas configurações, acesse **Site** e depois **Aparência** e atualize as configurações de [Paleta de cores](../website/appearance#color-palette) e [Logotipo](../website/appearance#logo-and-branding).
 
-## Adicionando Hosts de Transmissão
+## Adicionando apresentadores da transmissão
 
-Para dar aos membros da equipe acesso ao chat apenas para hosts ao lado do chat público:
+Para dar acesso aos membros da equipe ao chat exclusivo dos apresentadores, junto com o chat público:
 
 1. No menu Jump, escolha **Configurações > Funções**.
-2. Clique no botão de mais e selecione **Adicionar Função Personalizada**.
-3. Nomeie a função "Host de Transmissão" e clique em **Salvar**.
-4. Clique na nova função e clique em **Adicionar** na seção Membros para adicionar pessoas.
-5. Role para baixo até **Editar Permissões**, expanda a seção **Conteúdo** e marque **Chat do Host**.
+2. Clique no botão de mais e selecione **Adicionar função personalizada**.
+3. Dê o nome "Apresentador da transmissão" à função e clique em **Salvar**.
+4. Clique na nova função e depois em **Adicionar** na seção Membros para incluir pessoas.
+5. Role até **Editar permissões**, expanda a seção **Conteúdo** e marque **Chat dos apresentadores**.
 
-Quando os hosts fazem login na página de transmissão ao vivo, uma aba **Chat do Host** privada aparece ao lado do chat público para conversa apenas de pessoal durante a transmissão.
+Quando os apresentadores entram na página de transmissão ao vivo, uma aba privada de **Chat dos apresentadores** aparece junto com o chat público, para conversas restritas à equipe durante a transmissão.
 
 :::info
-Para mais detalhes sobre criação de funções e gerenciamento de permissões, consulte [Funções e Permissões](../settings/roles-permissions.md).
+Para mais detalhes sobre como criar funções e gerenciar permissões, veja [Funções e permissões](../settings/roles-permissions.md).
 :::
 
-## Solução de Problemas
+## Solução de problemas
 
-Se sua transmissão ao vivo do YouTube automatizada não está exibindo corretamente ao usar a opção "Transmissão ao Vivo Atual do YouTube" com seu ID de Canal, tente o seguinte:
+Se a sua transmissão automatizada do YouTube não estiver sendo exibida corretamente ao usar a opção "Transmissão ao vivo atual do YouTube" com o seu ID de canal, tente o seguinte:
 
 **Sintomas:**
-- O embed de transmissão ao vivo mostra "Vídeo indisponível"
-- A página carrega mas nenhum vídeo aparece
-- Embeds diretos do YouTube funcionam, mas a transmissão ao vivo do canal automatizada não funciona
+- O player da transmissão mostra "Vídeo indisponível"
+- A página carrega, mas nenhum vídeo aparece
+- Os players diretos do YouTube funcionam, mas a transmissão automatizada do canal não
 
 **Solução:**
-Verifique seu canal do YouTube para transmissões ao vivo antigas ou agendadas e delete-as:
+Verifique no seu canal do YouTube se há transmissões antigas ou agendadas e exclua-as:
 
-1. Vá para seu YouTube Studio.
-2. Navegue até **Conteúdo** e depois **Ao Vivo**.
-3. Procure por lives antigas agendadas ou fluxos agendados próximos.
-4. Delete essas entradas de transmissão ao vivo antigas ou agendadas.
-5. Teste sua página de transmissão ao vivo novamente.
+1. Acesse o seu YouTube Studio.
+2. Navegue até **Conteúdo** e depois **Ao vivo**.
+3. Procure por transmissões antigas agendadas ou transmissões futuras agendadas.
+4. Exclua essas transmissões antigas ou agendadas.
+5. Teste a sua página de transmissão novamente.
 
 :::warning
-O embed de transmissão ao vivo de canal automatizado do YouTube pode ser bloqueado quando há várias entradas de transmissão ao vivo agendadas ou passadas em seu canal. Remover estas permite que o YouTube identifique e sirva adequadamente sua transmissão ao vivo atual.
+O player automatizado da transmissão do canal no YouTube pode ser bloqueado quando há várias entradas de transmissões agendadas ou passadas no seu canal. Removê-las permite que o YouTube identifique e exiba corretamente a sua transmissão atual.
 :::
 
 **Requisitos adicionais:**
-- Sua transmissão ao vivo deve estar definida como **Pública** (não Não listada ou Privada).
-- A incorporação deve ser permitida nas configurações de sua transmissão do YouTube.
-- Certifique-se de que está usando o provedor **Transmissão ao Vivo Atual do YouTube** (com ID de Canal), não o provedor **YouTube** (com ID de Vídeo).
+- Sua transmissão ao vivo deve estar definida como **Pública** (não Não listada nem Privada).
+- A incorporação precisa estar permitida nas configurações de transmissão do seu YouTube.
+- Certifique-se de estar usando o provedor **Transmissão ao vivo atual do YouTube** (com ID de canal), e não o provedor **YouTube** (com ID de vídeo).
 
-## Próximas Etapas
+## Próximos passos
 
-- [Gerenciando Sermões](managing-sermons) -- Adicionar sermões à sua biblioteca
-- [Playlists](playlists) -- Organizar sermões em séries
+- [Gerenciando sermões](managing-sermons) -- Adicione sermões à sua biblioteca
+- [Listas de reprodução](playlists) -- Organize os sermões em séries

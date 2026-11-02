@@ -269,7 +269,7 @@ For requests sent through a confirmation workflow, [volunteer reminders](./plans
 
 ## My Cards
 
-Volunteers and staff do not need to dig through every board to find their work. The **My Cards** list on the **My Work** page shows every card assigned to the current user across all workflows. To get there, click **My Cards** at the top of the Workflows page, or open **Serving > My Work** in the Jump menu. Clicking a card opens the board it belongs to.
+Volunteers and staff do not need to dig through every board to find their work. The **My Cards** list on the **My Work** page shows every card assigned to the current user across all workflows. To get there, click **My Cards** at the top of the Workflows page, or open **Serving > My Work** in the Jump menu. Clicking a card opens its detail panel right on the My Work page, where you can work the card or remove it without leaving the page. If you can view workflows, the panel also has an **Open workflow board** link to the board the card belongs to.
 
 ## Reports
 

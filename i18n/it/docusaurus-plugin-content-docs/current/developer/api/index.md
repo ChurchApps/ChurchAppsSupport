@@ -6,14 +6,14 @@ title: "API"
 
 <div class="article-intro">
 
-L'API di ChurchApps è un **monolite modulare** -- una singola base di codice che serve sei moduli dati, ciascuno con il proprio database. Questa architettura offre i vantaggi organizzativi dei microservizi (confini chiari, archivi dati indipendenti) con la semplicità operativa di un'unica distribuzione.
+L'API di ChurchApps è un **monolite modulare** -- un'unica base di codice che serve sei moduli dati, ciascuno con il proprio database. Questa architettura offre i vantaggi organizzativi dei microservizi (confini chiari, archivi dati indipendenti) con la semplicità operativa di un unico deployment.
 
 </div>
 
 ## Moduli
 
 | Modulo | Scopo |
-|--------|-------|
+|--------|---------|
 | **Membership** | Persone, gruppi, nuclei familiari, permessi |
 | **Attendance** | Culti, sessioni, record di check-in |
 | **Content** | Pagine, sezioni, elementi, streaming |
@@ -25,15 +25,15 @@ L'API di ChurchApps è un **monolite modulare** -- una singola base di codice ch
 
 - **Runtime:** Node.js 24.x con TypeScript (moduli ES)
 - **Framework:** Express
-- **Iniezione delle dipendenze:** Inversify (routing basato su decoratori)
+- **Dependency Injection:** Inversify (routing basato su decoratori)
 - **Database:** MySQL -- un database per modulo, ciascuno con il proprio pool di connessioni
-- **Auth:** Autenticazione basata su JWT tramite `CustomAuthProvider`
-- **Distribuzione:** AWS Lambda con Serverless Framework v3
+- **Autenticazione:** autenticazione basata su JWT tramite `CustomAuthProvider`
+- **Deployment:** AWS Lambda tramite Serverless Framework v3
 
 ## Porte
 
 | Protocollo | Porta | Descrizione |
-|------------|-------|-------------|
+|----------|------|-------------|
 | HTTP | `8084` | API REST principale |
 | WebSocket | `8087` | Connessioni socket in tempo reale |
 
@@ -52,20 +52,20 @@ Quando viene distribuita su AWS, l'API viene eseguita come sei funzioni Lambda:
 
 L'API dipende da due pacchetti condivisi di ChurchApps:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Utility di base (DateHelper, ApiHelper, ecc.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Utility del server Express, comprese autenticazione, helper per il database e integrazioni AWS
+- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Utilità di base (DateHelper, ApiHelper, ecc.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Utilità per il server Express, inclusi autenticazione, helper per il database e integrazioni AWS
 
 :::info
-L'API usa i moduli ES (`"type": "module"` in `package.json`). Assicurati che le tue importazioni usino la sintassi dei moduli ES.
+L'API usa i moduli ES (`"type": "module"` in `package.json`). Assicurati che i tuoi import usino la sintassi dei moduli ES.
 :::
 
 ## In questa sezione
 
-- **[Configurazione locale](./local-setup)** -- Clonare, configurare ed eseguire l'API in locale
+- **[Setup locale](./local-setup)** -- Clona, configura ed esegui l'API in locale
 - **[Database](./database)** -- Architettura con un database per modulo, script dello schema e schemi di accesso ai dati
 - **[Struttura del modulo](./module-structure)** -- Controller, repository, modelli e autenticazione
 - **[Chiavi API](./api-keys)** -- Token di accesso personali per script e connettori
-- **[App connesse (OAuth)](./connected-apps)** -- Flusso OAuth multi-tenant per app di terze parti
+- **[App collegate (OAuth)](./connected-apps)** -- Flusso OAuth multi-tenant per app di terze parti
 - **[Webhook](./webhooks)** -- Invio di notifiche di eventi a sistemi esterni
-- **[Server MCP](./mcp)** -- Endpoint Model Context Protocol che espone l'API agli assistenti AI
-- **[Riferimento degli endpoint](./endpoints/)** -- Documentazione completa dell'API REST per tutti i moduli
+- **[Server MCP](./mcp)** -- Endpoint Model Context Protocol che espone l'API agli assistenti IA
+- **[Riferimento degli endpoint](./endpoints/)** -- Documentazione REST completa dell'API per tutti i moduli

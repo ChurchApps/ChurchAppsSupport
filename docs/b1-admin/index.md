@@ -46,7 +46,7 @@ Every section, including Sermons, Calendars, Mobile, and Settings, is in the [Ju
 - **[Reports](./reports/)** - View birthday, attendance, and donation reports
 - **[Website](./website/)** - Build and manage your church website with custom navigation styles, track visits to your site and your B1 app with your GA4 ID, or turn off the public site and keep only the member portal
 - **[Sermons](./sermons/)** - Manage your sermon library, live streaming, and an automatic podcast feed
-- **[Calendars](./calendars/)** - Create curated calendars, manage room/resource bookings, and view availability
+- **[Calendars](./calendars/)** - Create curated calendars, manage room/resource bookings, and view availability. Take [event registrations](./calendars/paid-registrations) with priced attendee types, add Attendees by hand without charging them, and let people register and pay later when your church has no online giving
 - **[Settings](./settings/)** - Configure everything from one scrolling page with a quick-jump list: church info, region, date and phone number format, texting (including your own Twilio account), roles with member counts, permissions, and custom person fields
 
 :::info

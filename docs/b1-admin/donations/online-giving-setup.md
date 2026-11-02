@@ -91,7 +91,7 @@ Share this link on your website, in emails, or in your bulletin so members know 
 
 ### Links With a Preset Fund and Amount
 
-To send donors straight to a specific fund, go to **Donations > Funds** and click **Giving Link** on the fund. Optionally enter an amount, then copy the link. When a donor opens it, the fund and amount are already selected on the giving page. The link takes the form:
+To send donors straight to a specific fund, go to **Donations > Funds** and click **Giving Link** on the fund. Optionally enter an amount, then copy the link. The dialog also shows a QR code for the same link; click **Download PNG** to save it for a bulletin, slide, or poster. When a donor opens the link or scans the code, the fund and amount are already selected on the giving page. The link takes the form:
 
 `https://yoursubdomain.b1.church/donate?fundId=FUND_ID&amount=25`
 

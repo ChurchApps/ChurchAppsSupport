@@ -61,7 +61,7 @@ Everything is under `/content/registrations` (`controllers/RegistrationControlle
 
 | Route | Access | Purpose |
 |-------|--------|---------|
-| `POST /register` | anonymous | Full submission: guest or member, server pricing, capacity checks, optional charge |
+| `POST /register` | anonymous | Full submission: guest, member, or staff Add Attendee; server pricing, capacity checks, optional charge |
 | `GET /types/event/:eventId`, `GET /selections/event/:eventId` | public | Types/selections with derived `used` / `remainingCapacity` for the wizard |
 | `POST /types`, `DELETE /types/:id` (same for `/selections`, `/coupons`) | `registrations.edit` | Staff settings CRUD |
 | `POST /coupons/validate` | public | Inline discount-code validation during the wizard |
@@ -114,6 +114,13 @@ Tokenization happens in the browser exactly as for donations (see [Giving](./giv
 
 Both entry points route through the same code path: `register` (pay at signup) and `pay` (balance payment / waitlist completion).
 
+`register` skips the charge in two cases and saves the registration as `pending` with `amountPaid = 0`, leaving the full total as a balance due:
+
+- **Staff Add Attendee.** The body carries a `personId` that is not the caller's, no `guestInfo`, and the caller has `registrations.edit` in that church. The person must exist (404 otherwise), the household member filter is bypassed, and no card is charged.
+- **No gateway.** The church has no giving gateway (`hasGateway` checks `gateway.loadAll`). The B1App payment step shows **Register and Pay Later** instead of a card form.
+
+Guest (no `au.id`) priced registrations must carry a `captchaPass` from `POST /giving/donate/captcha-verify`. `CaptchaPass.verify` (now in `shared/helpers`) runs just before the charge, so waitlist and free signups are unaffected. When `CAPTCHA_ENFORCE=true` and the pass is missing or invalid, the new registration is rolled back with `deleteCascade()` and the call returns 403. B1App's `RegistrationPaymentForm` shows the reCAPTCHA checkbox to guests and sends the pass with both the card save and the registration.
+
 ## Waitlist lifecycle
 
 When the event is full and the event's `waitlistEnabled` flag is on, `register` saves the party as `waitlisted` (skipping capacity checks) and sends the normal confirmation email marked as a waitlist spot. Promotion happens three ways — `cancel`, `delete`, and the staff `promote` endpoint — all funneling into `RegistrationRepo.promoteFromWaitlist`, which picks the oldest waitlisted row and flips it atomically:
@@ -124,7 +131,7 @@ UPDATE registrations SET status='pending', waitlistNotifiedDate=NOW()
     AND (…active count for the event…) < ?
 ```
 
-The `status='waitlisted'` guard means concurrent promotions can't double-promote a row, and the capacity subquery means a promotion can't oversell. Promoted rows land on `pending` — not `confirmed` — because a balance may still be owed; `RegistrationHelper.sendWaitlistAvailabilityEmail` tells the registrant their spot opened and, when `totalAmount − amountPaid > 0`, links to the complete-payment page. Paying (or having no balance) confirms them.
+The `status='waitlisted'` guard means concurrent promotions can't double-promote a row, and the capacity subquery means a promotion can't oversell. Promoted rows land on `pending` — not `confirmed` — because a balance may still be owed; `RegistrationHelper.sendWaitlistAvailabilityEmail` tells the registrant their spot opened and, when `totalAmount − amountPaid > 0`, links to the church's B1 `/mobile/registrations` page (My Registrations), built from `B1AppRoot` and the church subdomain. Paying (or having no balance) confirms them.
 
 :::info
 A capacity raise does not auto-promote by itself — staff use the roster's Promote action after raising capacity. Cancels and deletes promote automatically.

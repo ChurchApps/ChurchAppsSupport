@@ -1,25 +1,25 @@
 ---
-title: "Anleitung: Kinder-Check-in einrichten"
+title: "Anleitung: Check-in für die Kinderarbeit einrichten"
 ---
 
-# Kinder-Check-in einrichten
+# Check-in für die Kinderarbeit einrichten
 
 <div class="article-intro">
 
-Diese Anleitung führt Sie durch alles, was nötig ist, damit ein Kinder-Check-in-System in Ihrer Kirche läuft -- von der Erfassung der Familien in der Datenbank über die Einrichtung altersgerechter Gruppen bis zum Drucken der Namensschilder am Sonntagmorgen. Am Ende können Eltern ihre Kinder an einem Kiosk-Tablet einchecken und erhalten eine passende Sicherheitsmarke.
+Diese Anleitung führt Sie durch alles, was nötig ist, damit in Ihrer Kirche ein Check-in-System für Kinder läuft – vom Erfassen der Familien in der Datenbank über die Einrichtung altersgerechter Gruppen bis zum Drucken der Namensschilder am Sonntagmorgen. Am Ende können Eltern ihre Kinder an einem Kiosk-Tablet einchecken und erhalten eine passende Sicherheitsmarke.
 
 </div>
 
 ## Schulungsvideo
 
-<YouTube id="Ep9CBUcJwPI" title="Kinder-Check-in in B1 einrichten" next="Anwesenheit in B1 erfassen und nachverfolgen" nextUrl="/docs/b1-admin/attendance/recording-attendance" />
+<YouTube id="Ep9CBUcJwPI" title="Kinder-Check-in in B1 einrichten" next="Anwesenheit in B1 erfassen und auswerten" nextUrl="/docs/b1-admin/attendance/recording-attendance" />
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Erstellen Sie Ihr Kirchenkonto unter [admin.b1.church](https://admin.b1.church)
-- Stellen Sie sicher, dass Sie Administratorzugriff haben -- siehe bei Bedarf [Rollen & Berechtigungen](../people/roles-permissions.md)
-- Optional: Bereiten Sie eine CSV-Datei mit den Familien vor, falls Sie von einem anderen System umziehen
+- Legen Sie Ihr Kirchenkonto unter [admin.b1.church](https://admin.b1.church) an
+- Stellen Sie sicher, dass Sie Administratorzugriff haben – siehe [Rollen & Berechtigungen](../people/roles-permissions.md), falls nötig
+- Optional: Bereiten Sie eine CSV-Datei mit den Familien vor, wenn Sie von einem anderen System umziehen
 
 </div>
 
@@ -29,23 +29,23 @@ Bevor der Check-in funktionieren kann, muss das System Ihre Familien kennen. Jed
 
 Folgen Sie der Anleitung [Personen hinzufügen](../people/adding-people.md), um mindestens eine Familie anzulegen. Achten Sie darauf:
 
-- Zuerst den bzw. die Elternteile anzulegen
+- Zuerst die Eltern anzulegen
 - Jedes Kind anzulegen
-- Sie im gleichen Haushalt zu verknüpfen, über den [Haushalts-Editor](../people/adding-people.md#managing-households)
+- Sie im selben Haushalt mit dem [Haushalt-Editor](../people/adding-people.md#managing-households) zu verknüpfen
 
 :::tip
-Wenn Sie mehr als eine Handvoll Familien anlegen müssen, verwenden Sie das Werkzeug [CSV-Import](../people/importing-data.md) statt sie einzeln einzugeben. Ihr gesamtes Verzeichnis können Sie so in wenigen Minuten importieren.
+Wenn Sie mehr als eine Handvoll Familien anlegen müssen, verwenden Sie das Werkzeug [CSV-Import](../people/importing-data.md) statt jede Familie einzeln einzugeben. Sie können Ihr gesamtes Verzeichnis in wenigen Minuten importieren.
 :::
 
-## Schritt 2: Kindergruppen anlegen
+## Schritt 2: Gruppen für Kinder anlegen
 
-Gruppen legen die Kurse fest, in die sich Kinder einchecken. Üblicherweise richten Sie eine Gruppe pro Altersspanne ein.
+Gruppen legen die Klassen fest, in die sich Kinder einchecken. Üblicherweise richten Sie eine Gruppe pro Altersspanne ein.
 
-Folgen Sie der Anleitung [Gruppen anlegen](../groups/creating-groups.md), um Gruppen wie diese zu erstellen:
+Folgen Sie der Anleitung [Gruppen erstellen](../groups/creating-groups.md), um Gruppen wie diese anzulegen:
 
-- **Krabbelstube** (0 bis 2 Jahre)
-- **Vorschule** (3 bis 5 Jahre)
-- **Grundschule** (6 bis 10 Jahre)
+- **Krabbelstube** (0–2 Jahre)
+- **Vorschule** (3–5 Jahre)
+- **Grundschule** (6–10 Jahre)
 
 Sie können die Namen und Altersspannen an Ihre Struktur der Kinderarbeit anpassen.
 
@@ -55,57 +55,57 @@ Der Check-in ist an bestimmte Gottesdienstzeiten gebunden. Sie benötigen mindes
 
 Folgen Sie der Anleitung [Anwesenheits-Einrichtung](../attendance/setup.md), um:
 
-1. Ihren Standort anzulegen (z. B. "Hauptstandort")
-2. einen Gottesdienst anzulegen (z. B. "Sonntagvormittag")
-3. die Gottesdienstzeit festzulegen (z. B. "9:00 Uhr") und optional einen [Check-in-Zeitplan](../attendance/setup.md#setting-a-check-in-schedule), damit sich der Check-in automatisch vor jedem Gottesdienst öffnet und danach schließt
-4. die Kindergruppen dem Gottesdienst zuzuweisen
+1. Ihren Standort anzulegen (z. B. „Hauptstandort“)
+2. Einen Gottesdienst anzulegen (z. B. „Sonntagvormittag“)
+3. Die Gottesdienstzeit festzulegen (z. B. „9:00 Uhr“) und optional einen [Check-in-Zeitplan](../attendance/setup.md#setting-a-check-in-schedule), damit der Check-in vor jedem Gottesdienst automatisch öffnet und danach schließt
+4. Die Kindergruppen dem Gottesdienst zuzuweisen
 
 ## Schritt 4: Die Check-in-App einrichten
 
 Verbinden Sie nun alles, indem Sie die Check-in-App auf einem Tablet installieren.
 
-1. Installieren Sie die **App B1 Checkin** -- Download-Links finden Sie im Artikel [Check-in](../attendance/check-in.md)
+1. Installieren Sie die **App B1 Checkin** – Download-Links finden Sie im Artikel [Check-in](../attendance/check-in.md)
 2. Melden Sie sich mit Ihren Zugangsdaten für B1 Admin an
-3. Wählen Sie Ihren Standort und Ihre Gottesdienstzeit aus
+3. Wählen Sie Ihren Standort und Ihre Gottesdienstzeit
 
-Die vollständigen Einrichtungsschritte finden Sie im Artikel [Check-in](../attendance/check-in.md).
+Die vollständigen Schritte zur Einrichtung finden Sie im Artikel [Check-in](../attendance/check-in.md).
 
-## Schritt 5: Hardware beschaffen
+## Schritt 5: Die Hardware besorgen
 
 Sie benötigen ein Tablet für den Kiosk und optional einen Brother-Etikettendrucker für die Namensschilder.
 
 Mindestens:
-- **Ein Android- oder Amazon-Fire-Tablet** -- siehe [empfohlene Tablets](../attendance/check-in.md#recommended-hardware)
-- **Einen Brother-Etikettendrucker** -- der QL-1110NWB wird wegen seiner Bluetooth- und WLAN-Unterstützung empfohlen
+- **Ein Android- oder Amazon-Fire-Tablet** – siehe [empfohlene Tablets](../attendance/check-in.md#recommended-hardware)
+- **Einen Brother-Etikettendrucker** – der QL-1110NWB wird wegen seiner Bluetooth- und WLAN-Unterstützung empfohlen
 - **Brother-DK-1201-Etiketten** (1-1/7" x 3-1/2")
 
 :::warning
 Nur Brother-Etikettendrucker sind mit der App B1 Checkin kompatibel. Drucker anderer Marken funktionieren nicht.
 :::
 
-## Schritt 6: Einen Test-Check-in durchführen
+## Schritt 6: Einen Testdurchlauf des Check-ins machen
 
-Machen Sie vor dem Sonntagmorgen einen Testlauf:
+Führen Sie vor dem Sonntagmorgen einen Testlauf durch:
 
 1. Öffnen Sie die App B1 Checkin auf Ihrem Tablet
-2. Wählen Sie Ihren Standort und die richtige Gottesdienstzeit aus
-3. Suchen Sie eine der Familien, die Sie angelegt haben
+2. Wählen Sie Ihren Standort und die richtige Gottesdienstzeit
+3. Suchen Sie nach einer der Familien, die Sie angelegt haben
 4. Checken Sie ein Kind ein und prüfen Sie:
    - Die Anwesenheit erscheint in B1 Admin unter **Anwesenheit**
-   - Wenn Sie einen Drucker verwenden, wird ein Namensschild korrekt gedruckt
+   - Falls Sie einen Drucker verwenden, wird ein Namensschild korrekt gedruckt
 
 :::tip
-Schulen Sie Ihre Ehrenamtlichen am Empfang im Check-in-Ablauf, bevor Sie starten. Meist genügt eine kurze Einweisung von fünf Minuten.
+Schulen Sie Ihre Ehrenamtlichen im Empfangsteam im Check-in-Ablauf, bevor Sie starten. Meist genügt eine kurze fünfminütige Einweisung.
 :::
 
-## Fertig!
+## Sie sind fertig!
 
-Ihr Kinder-Check-in ist einsatzbereit. Eltern können ihre Familie suchen, ihre Kinder auswählen und am Kiosk einchecken. Die Anwesenheit wird automatisch in B1 Admin erfasst.
+Ihr Check-in für die Kinderarbeit ist bereit. Eltern können ihre Familie suchen, ihre Kinder auswählen und am Kiosk einchecken. Die Anwesenheit wird automatisch in B1 Admin erfasst.
 
 ## Verwandte Artikel
 
-- [Personen hinzufügen](../people/adding-people.md) -- weitere Familien anlegen, sobald sie zu Besuch kommen
-- [Gruppen anlegen](../groups/creating-groups.md) -- Ihre Kindergruppen verwalten
-- [Anwesenheits-Einrichtung](../attendance/setup.md) -- Standorte und Gottesdienste konfigurieren
-- [Check-in](../attendance/check-in.md) -- detaillierte Einrichtung der Check-in-App und Hardware
-- [Anwesenheit nachverfolgen](../attendance/tracking-attendance.md) -- Check-in-Berichte anzeigen
+- [Personen hinzufügen](../people/adding-people.md) – weitere Familien hinzufügen, sobald sie zu Besuch kommen
+- [Gruppen erstellen](../groups/creating-groups.md) – Ihre Kindergruppen verwalten
+- [Anwesenheits-Einrichtung](../attendance/setup.md) – Standorte und Gottesdienste konfigurieren
+- [Check-in](../attendance/check-in.md) – ausführliche Einrichtung der Check-in-App und Hardware
+- [Anwesenheit auswerten](../attendance/tracking-attendance.md) – Check-in-Berichte ansehen

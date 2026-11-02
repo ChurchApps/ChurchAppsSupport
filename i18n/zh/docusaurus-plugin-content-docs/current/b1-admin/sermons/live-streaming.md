@@ -1,133 +1,133 @@
 ---
-title: "直播"
+title: "在线直播"
 ---
 
-# 直播
+# 在线直播
 
 <div class="article-intro">
 
-直播时间页面允许您配置教会的流媒体时间表、管理服务时间并自定义查看者体验。设置定期的每周服务或一次性活动，配置聊天和视频设置，并控制您的流何时上线。
+直播时间页面可让你配置教会的直播时间表、管理礼拜时间，并自定义观众的观看体验。你可以设置每周定期的礼拜或一次性活动，配置聊天和视频设置，并控制直播何时开始。
 
 </div>
 
 <div class="prereqs">
-<h4>开始前</h4>
+<h4>开始之前</h4>
 
-- 您需要 **contentApi.streamingServices.edit** 权限。如果您没有访问权限，请参见 [角色和权限](../settings/roles-permissions.md)。
-- 如果您计划使用自动直播，请准备好您的 YouTube 频道 ID
-- 添加至少一个 [讲道](managing-sermons) 或永久直播 URL 以用作您的流源
+- 你需要 **contentApi.streamingServices.edit** 权限。如果你没有访问权限，请参阅[角色与权限](../settings/roles-permissions.md)。
+- 如果你计划使用自动直播，请准备好你的 YouTube 频道 ID
+- 至少添加一个[讲道](managing-sermons)或永久直播网址，作为直播来源
 
 </div>
 
-直播功能通过 Jump 菜单中 **Sermons** 版块下的两个页面进行管理：**Live Stream Times** 用于管理您的直播时间表，**Settings** 用于配置您流媒体页面上的标签页。
+在线直播通过快速跳转菜单中**讲道**板块下的两个页面进行管理：**Live Stream Times**（直播时间）用于管理直播时间表，**Settings**（设置）用于配置直播页面上的标签页。
 
-## 管理服务
+## 管理礼拜
 
-### 添加服务
+### 添加礼拜
 
-1. 在 B1 Admin 中，打开 [Jump 菜单](../introduction.md#getting-around-with-the-jump-menu)（左上角的搜索栏），展开 **Sermons**，然后点击 **Live Stream Times**。
-2. 点击页面顶部的 **Add Service** 按钮以创建新的预定服务。现有服务以表格形式列出，显示每个服务的名称、时间、提供程序和时长；点击某行的编辑图标即可更改。
-3. 输入 **Service Name**（例如"Sunday Morning"）。
-4. 设置 **Service Time** -- 选择您的服务开始的日期和时间。
-5. 将 **Recurs Weekly** 设置为 **Yes** 以进行定期每周服务，或 **No** 以进行一次性活动。
+1. 在 B1 Admin 中，打开[快速跳转菜单](../introduction.md#getting-around-with-the-jump-menu)（左上角的搜索栏），展开 **Sermons**，然后点击 **Live Stream Times**。
+2. 点击页面顶部的 **Add Service** 按钮，创建一个新的定时礼拜。现有礼拜会以表格形式列出，显示每个礼拜的名称、时间、服务商和时长；点击某一行的编辑图标即可更改。
+3. 输入 **Service Name**（礼拜名称），例如"星期日早间礼拜"。
+4. 设置 **Service Time**（礼拜时间）——选择礼拜开始的日期和时间。
+5. 对于固定的每周礼拜，将 **Recurs Weekly**（每周重复）设为 **Yes**；对于一次性活动，设为 **No**。
 
 ### 配置聊天和视频设置
 
-6. 在 **Chat Settings** 下，设置服务前后多少分钟应启用聊天。这允许访问者在服务开始前开始聊天并在之后继续。
-7. 在 **Video Settings** 下，设置多早开始视频流以用于倒计时或服务前内容。
+6. 在 **Chat Settings**（聊天设置）下，设置礼拜前后多少分钟开启聊天。这样观众可以在礼拜开始前就开始聊天，并在礼拜结束后继续交流。
+7. 在 **Video Settings**（视频设置）下，设置提前多久开始视频直播，以便播放倒计时或礼拜前的内容。聊天会在提前视频开始的那段时间*之前*开放，因此聊天"提前多少分钟"设置旁显示的时间会同时计入这两个数字。例如，一场 10:00 的礼拜，设置聊天提前 15 分钟、视频提前 5 分钟开始，则聊天将在 9:40 开放。
 8. 从下拉菜单中选择要播放的讲道：
-   - **Latest Sermon** -- 自动播放您最近添加的视频。
-   - **Current Live Service** -- 使用您的频道 ID 从 YouTube 播放您当前的直播。
-   - 您也可以选择任何已保存的特定讲道。
-9. 点击 **Save** 以安排您的服务。
+   - **Latest Sermon**（最新讲道）—— 自动播放你最近添加的视频。
+   - **Current Live Service**（当前直播）—— 使用你的频道 ID，播放 YouTube 上正在进行的直播。
+   - 你也可以选择任何已保存的特定讲道。
+9. 点击 **Save** 为礼拜排期。
 
 :::info
-如果设置为定期，您的服务将每周自动更新。您可以根据需要添加尽可能多的服务。访问者在访问您的流媒体页面时将看到下一个预定服务时间。
+如果设置为定期重复，你的礼拜每周都会自动更新。遇到夏令时开始或结束时，它会保持在相同的当地时间。你可以添加任意数量的礼拜。观众访问你的直播页面时，将看到下一场排定的礼拜时间。
 :::
 
-## 流媒体页面设置
+## 直播页面设置
 
-要自定义在直播旁显示的标签页和链接，请打开 Jump 菜单，展开 **Sermons**，然后点击 **Settings**。**Stream Settings** 页面会显示您的 **Content Tabs** 列表。
+若要自定义直播旁边显示的标签页和链接，请打开快速跳转菜单，展开 **Sermons**，然后点击 **Settings**。**Stream Settings**（直播设置）页面会显示你的 **Content Tabs**（内容标签页）列表。
 
 ### 添加标签页
 
-1. 点击 **Add** 按钮为您的直播页面添加新标签页。
-2. 选择 **Link Type**：**External URL** 用于自定义链接，或选择预设计的 **Chat** 或 **Prayer** 标签页之一。
-3. 对于聊天标签页，只需在 **Tab Text** 框中为其提供名称，设置即完成。
-4. 对于链接标签页，输入标签页名称，通过点击图标按钮选择图标，然后输入 URL。
-5. 您配置的标签页将出现在直播页面上，供观众访问其他资源和交互功能。
+1. 点击 **Add** 按钮，为直播页面添加一个新标签页。
+2. 选择 **Link Type**（链接类型）：自定义链接选择 **External URL**（外部网址），或选择预先设计好的 **Chat**（聊天）或 **Prayer**（代祷）标签页之一。
+3. 对于聊天标签页，只需在 **Tab Text**（标签文字）框中为其命名，即完成设置。
+4. 对于链接标签页，输入标签名称，点击图标按钮选择一个图标，然后输入网址。
+5. 你配置的标签页会显示在直播页面上，供观众访问额外的资源和互动功能。
 
-### 预览您的流
+### 预览你的直播
 
-在 **Live Stream Times** 页面上，点击页面顶部的 **View Your Stream** 按钮以准确看到您的直播页面对访问者的样子，包括您的徽标、服务时间和配置的标签页。
+在 **Live Stream Times** 页面，点击页面顶部的 **View Your Stream**（查看你的直播），即可准确看到观众所见的直播页面效果，包括你的标志、礼拜时间和已配置的标签页。
 
-## 设置 YouTube 直播
+## 设置你的 YouTube 直播
 
-要连接 YouTube 频道以进行自动直播：
+要连接你的 YouTube 频道以实现自动直播：
 
-1. 转到 **Sermons** 并点击 **Add Sermon**，然后选择 **Add Permanent Live URL**。
-2. 视频提供程序默认为 **Current YouTube Live Stream**。输入您的 **YouTube 频道 ID**。
+1. 进入 **Sermons**，点击 **Add Sermon**，然后选择 **Add Permanent Live URL**（添加永久直播网址）。
+2. 视频服务商默认为 **Current YouTube Live Stream**（当前 YouTube 直播）。输入你的 **YouTube Channel ID**（YouTube 频道 ID）。
 3. 添加标题和描述，然后点击 **Save**。
-4. 在 **Live Stream Times** 中，创建服务并从讲道下拉菜单中选择您的永久直播 URL。
+4. 在 **Live Stream Times** 中，创建一个礼拜，并从讲道下拉菜单中选择你的永久直播网址。
 
 :::tip
-要查找您的 YouTube 频道 ID，请转到您的 YouTube 频道的高级设置并复制频道 ID 值。
+要找到你的 YouTube 频道 ID，请进入你的 YouTube 频道的高级设置，复制其中的频道 ID 值。
 :::
 
-## 自定义颜色和徽标
+## 自定义颜色和标志
 
-您的直播页面使用您网站的 [Appearance](../website/appearance) 设置：
+你的直播页面使用你网站的[外观](../website/appearance)设置：
 
-- **light accent color** 配合深色文本用于标题。
-- **dark accent color** 配合浅色文本用于侧栏。
-- 您的 **Light Background Logo** 出现在流媒体页面上。使用带有透明背景的图像和 4:1 纵横比。
+- 页眉使用**浅色强调色**搭配深色文字。
+- 侧边栏使用**深色强调色**搭配浅色文字。
+- 你的**浅色背景标志**会显示在直播页面上。请使用背景透明、宽高比为 4:1 的图片。
 
-要更改这些，请转到 **Website** 然后 **Appearance** 并更新您的 [Color Palette](../website/appearance#color-palette) 和 [Logo](../website/appearance#logo-and-branding) 设置。
+若要更改这些设置，请进入 **Website**，然后点击 **Appearance**，更新你的[配色方案](../website/appearance#color-palette)和[标志](../website/appearance#logo-and-branding)设置。
 
-## 添加流媒体主持人
+## 添加直播主持人
 
-要为团队成员提供对主持人专用聊天（以及公共聊天）的访问权限：
+要让团队成员可以在公开聊天之外，使用仅限主持人的聊天功能：
 
-1. 在 Jump 菜单中，选择 **Settings > Roles**。
-2. 点击加号按钮并选择 **Add Custom Role**。
-3. 将角色命名为"Streaming Host"并点击 **Save**。
-4. 点击新角色，然后点击成员部分中的 **Add** 以添加人员。
-5. 向下滚动到 **Edit Permissions**，展开 **Content** 部分，并勾选 **Host Chat**。
+1. 在快速跳转菜单中，选择 **Settings > Roles**。
+2. 点击加号按钮，并选择 **Add Custom Role**（添加自定义角色）。
+3. 将角色命名为"直播主持人"（Streaming Host），然后点击 **Save**。
+4. 点击新角色，然后在 Members（成员）部分点击 **Add** 添加人员。
+5. 向下滚动到 **Edit Permissions**（编辑权限），展开 **Content**（内容）部分，并勾选 **Host Chat**（主持人聊天）。
 
-当主持人登录直播页面时，私人 **Host Chat** 标签页会出现在公共聊天旁，用于广播期间的员工专用对话。
+主持人登录直播页面后，公开聊天旁边会出现一个私密的 **Host Chat** 标签页，供工作人员在直播期间进行仅限内部的交流。
 
 :::info
-有关创建角色和管理权限的更多详情，请参见 [角色和权限](../settings/roles-permissions.md)。
+有关创建角色和管理权限的更多详情，请参阅[角色与权限](../settings/roles-permissions.md)。
 :::
 
 ## 故障排除
 
-如果您的自动 YouTube 直播在使用"Current YouTube Live Stream"选项和您的频道 ID 时显示不正确，请尝试以下操作：
+如果你使用频道 ID 选择"Current YouTube Live Stream"选项时，自动 YouTube 直播没有正常显示，请尝试以下方法：
 
 **症状：**
-- 直播嵌入显示"视频不可用"
-- 页面加载但没有视频出现
-- 直接 YouTube 嵌入有效，但自动频道直播无效
+- 直播嵌入区域显示"Video unavailable"（视频不可用）
+- 页面已加载，但没有出现视频
+- 直接嵌入的 YouTube 视频可以正常播放，但自动的频道直播却不行
 
-**解决方案：**
-检查您的 YouTube 频道中是否有旧的或即将进行的预定直播并删除它们：
+**解决方法：**
+检查你的 YouTube 频道中是否有旧的或即将开始的定时直播，并将其删除：
 
-1. 转到您的 YouTube Studio。
-2. 导航到 **Content** 然后 **Live**。
-3. 查找任何旧的预定直播或即将进行的预定流。
-4. 删除这些旧的或预定的直播条目。
-5. 再次测试您的直播页面。
+1. 进入你的 YouTube Studio。
+2. 导航至 **Content（内容）**，然后点击 **Live（直播）**。
+3. 查找任何旧的定时直播或即将开始的定时直播。
+4. 删除这些旧的或定时的直播条目。
+5. 再次测试你的直播页面。
 
 :::warning
-当您的频道中有多个预定或过去的直播条目时，YouTube 的自动频道直播嵌入可能会被阻止。移除这些允许 YouTube 正确识别并提供您当前的直播。
+当你的频道中存在多个定时或已结束的直播条目时，YouTube 的自动频道直播嵌入可能会被阻止。删除这些条目后，YouTube 便能正确识别并提供你当前的直播。
 :::
 
-**额外要求：**
-- 您的直播必须设置为 **Public**（而非 Unlisted 或 Private）。
-- 必须在您的 YouTube 流设置中允许嵌入。
-- 确保您使用的是 **Current YouTube Live Stream** 提供程序（带频道 ID），而不是 **YouTube** 提供程序（带视频 ID）。
+**其他要求：**
+- 你的直播必须设置为**公开**（Public），而非不公开（Unlisted）或私密（Private）。
+- 你的 YouTube 直播设置中必须允许嵌入。
+- 请确保使用的是 **Current YouTube Live Stream**（带频道 ID）服务商，而非 **YouTube**（带视频 ID）服务商。
 
-## 后续步骤
+## 下一步
 
-- [管理讲道](managing-sermons) -- 向您的库添加讲道
-- [播放列表](playlists) -- 将讲道组织成系列
+- [管理讲道](managing-sermons) —— 向你的讲道库中添加讲道
+- [播放列表](playlists) —— 将讲道整理成系列

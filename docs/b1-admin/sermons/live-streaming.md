@@ -34,7 +34,7 @@ Live streaming is managed from two pages in the **Sermons** section of the Jump 
 ### Configuring Chat and Video Settings
 
 6. Under **Chat Settings**, set how many minutes before and after the service the chat should be enabled. This lets visitors start chatting before service begins and continue afterward.
-7. Under **Video Settings**, set how early to start the video stream for countdown or pre-service content.
+7. Under **Video Settings**, set how early to start the video stream for countdown or pre-service content. Chat opens that many minutes *before* the early video starts, so the time shown next to the chat's minutes-before setting counts both numbers. For example, a 10:00 service with 15 minutes of chat before and a 5-minute early start opens chat at 9:40.
 8. Select which sermon to play from the dropdown:
    - **Latest Sermon** -- Automatically plays your most recently added video.
    - **Current Live Service** -- Plays your current live stream from YouTube using your Channel ID.
@@ -42,7 +42,7 @@ Live streaming is managed from two pages in the **Sermons** section of the Jump 
 9. Click **Save** to schedule your service.
 
 :::info
-Your service will automatically update each week if set to recurring. You can add as many services as you need. Visitors will see the next scheduled service time when they visit your streaming page.
+Your service will automatically update each week if set to recurring. It stays at the same local time when daylight saving time starts or ends. You can add as many services as you need. Visitors will see the next scheduled service time when they visit your streaming page.
 :::
 
 ## Streaming Page Settings

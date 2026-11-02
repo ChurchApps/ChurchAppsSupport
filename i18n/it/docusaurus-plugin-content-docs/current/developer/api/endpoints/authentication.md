@@ -6,27 +6,27 @@ title: "Autenticazione e permessi"
 
 <div class="article-intro">
 
-L'API di ChurchApps usa l'autenticazione basata su JWT. Gli utenti effettuano il login per ricevere un token che codifica la loro identità, l'appartenenza alla chiesa e i permessi. Questa pagina descrive il flusso di autenticazione, il modello dei permessi e il supporto OAuth.
+L'API di ChurchApps usa l'autenticazione basata su JWT. Gli utenti effettuano l'accesso per ricevere un token che codifica la loro identità, l'appartenenza alla chiesa e i permessi. Questa pagina descrive il flusso di autenticazione, il modello dei permessi e il supporto OAuth.
 
 </div>
 
-## Flusso di login
+## Flusso di accesso
 
-### Login standard
+### Accesso standard
 
 ```
 POST /membership/users/login
 ```
 
-**Auth:** Public
+**Autenticazione:** Pubblico
 
 Accetta uno di tre tipi di credenziali:
 
 | Campo | Descrizione |
 |-------|-------------|
-| `email` + `password` | Login standard con email e password |
-| `jwt` | Nuova autenticazione con un JWT esistente |
-| `authGuid` | Link di autenticazione monouso (usato nelle email di benvenuto e di reimpostazione) |
+| `email` + `password` | Accesso standard con email e password |
+| `jwt` | Ri-autenticazione con un JWT esistente |
+| `authGuid` | Link di autenticazione monouso (usato nelle email di benvenuto/reimpostazione) |
 
 **Risposta:**
 
@@ -60,47 +60,47 @@ Accetta uno di tre tipi di credenziali:
 
 Il campo `token` è un JWT che deve essere inviato come `Authorization: Bearer <token>` nelle richieste successive.
 
-### Accesso con verifica in due passaggi
+### Accesso a due fattori {#two-factor-sign-in}
 
-Gli utenti possono attivare la verifica in due passaggi con app di autenticazione (TOTP). Per questi utenti, un login con `email` + `password`, `authGuid` o SSO non restituisce un token. Restituisce invece una sfida:
+Gli utenti possono attivare l'accesso a due fattori con app di autenticazione (TOTP). Per questi utenti, un accesso con `email` + `password`, `authGuid` oppure SSO non restituisce un token. Restituisce invece una richiesta di verifica:
 
 ```json
 { "mfaRequired": true, "mfaToken": "<challenge-token>" }
 ```
 
-Il token di sfida è valido per 5 minuti. Va inviato di nuovo allo stesso endpoint insieme al codice:
+Il token di verifica è valido per 5 minuti. Rinvialo allo stesso endpoint insieme al codice:
 
 ```json
 { "mfaToken": "<challenge-token>", "mfaCode": "123456" }
 ```
 
-`mfaCode` può essere il codice corrente a 6 cifre dell'app di autenticazione oppure uno dei dieci codici di backup monouso dell'utente. Un codice errato restituisce `Invalid code`, e i tentativi falliti ripetuti sono limitati per account. Un nuovo login con `jwt` non viene mai sottoposto a sfida, quindi le sessioni esistenti continuano a essere rinnovate. L'oggetto `user` della risposta di login contiene `mfaEnabled`.
+`mfaCode` può essere il codice attuale a 6 cifre dell'app di autenticazione oppure uno dei dieci codici di backup monouso dell'utente. Un codice errato restituisce `Invalid code`, e i tentativi ripetuti falliti sono limitati per account. Un nuovo accesso con `jwt` non viene mai sottoposto a verifica, quindi le sessioni esistenti continuano a rinnovarsi. L'oggetto `user` della risposta di accesso contiene `mfaEnabled`.
 
-Endpoint self-service (solo per l'utente autenticato, sotto `/membership/users/mfa`):
+Endpoint self-service (solo per l'utente connesso, sotto `/membership/users/mfa`):
 
 | Endpoint | Descrizione |
 |----------|-------------|
 | `GET /status` | `{ enabled, backupCodesLeft }` |
 | `POST /setup` | Avvia la configurazione; restituisce `{ secret, otpauthUrl }` per il codice QR |
-| `POST /enable` | Corpo `{ code }`; attiva la verifica e restituisce `{ backupCodes }` una sola volta |
-| `POST /disable` | Corpo `{ code }` (codice dell'app o codice di backup); la disattiva |
-| `POST /reset/:userId` | Solo Server.Admin; la disattiva per un altro utente |
+| `POST /enable` | Corpo `{ code }`; lo attiva e restituisce `{ backupCodes }` una sola volta |
+| `POST /disable` | Corpo `{ code }` (codice dell'app di autenticazione o di backup); lo disattiva |
+| `POST /reset/:userId` | Solo Server.Admin; lo disattiva per un altro utente |
 
-I segreti sono memorizzati cifrati e i codici di backup sono memorizzati come hash. Attivazione, disattivazione e reimpostazione vengono registrate nel log di audit.
+I segreti sono memorizzati cifrati e i codici di backup sono memorizzati come hash. Attivazione, disattivazione e reimpostazione vengono registrate nel registro di controllo.
 
 ### Contenuto del token
 
 Il JWT codifica:
 - `id` — ID utente
 - `churchId` — Chiesa attualmente selezionata
-- `personId` — Record della persona per la chiesa selezionata
-- Array dei permessi per ogni API
+- `personId` — Scheda persona per la chiesa selezionata
+- Array dei permessi per ciascuna API
 
 ### Selezione della chiesa
 
-Gli utenti possono appartenere a più chiese. La risposta di login include tutte le chiese con i relativi permessi. Per cambiare chiesa, il client genera un nuovo JWT limitato a un'altra chiesa presa dai dati della risposta di login.
+Gli utenti possono appartenere a più chiese. La risposta di accesso include tutte le chiese con i relativi permessi. Per cambiare chiesa, il client genera un nuovo JWT limitato a un'altra chiesa a partire dai dati della risposta di accesso.
 
-## Registrazione utente
+## Registrazione utenti
 
 ### Registrare un nuovo utente
 
@@ -108,7 +108,7 @@ Gli utenti possono appartenere a più chiese. La risposta di login include tutte
 POST /membership/users/register
 ```
 
-**Auth:** Public
+**Autenticazione:** Pubblico
 
 ```json
 {
@@ -122,7 +122,7 @@ POST /membership/users/register
 
 Crea un utente con una password temporanea e invia un'email di benvenuto con un link di autenticazione. Il primo utente registrato su una nuova istanza riceve automaticamente l'accesso di amministratore del server.
 
-Sono accettati due campi facoltativi anti-bot: `website` (un campo honeypot nascosto che gli utenti reali lasciano vuoto) e `fillMs` (quanto tempo è rimasto aperto il modulo, in millisecondi). Se `website` è compilato oppure `fillMs` è inferiore a 2000, non viene creato alcun account, ma l'endpoint restituisce comunque una normale risposta `200`, in modo che i bot non possano capire di essere stati respinti. I client che omettono entrambi i campi si registrano normalmente.
+Sono accettati due campi facoltativi anti-bot: `website` (un campo nascosto trappola che gli utenti reali lasciano vuoto) e `fillMs` (quanto a lungo è stato aperto il modulo, in millisecondi). Se `website` è compilato oppure `fillMs` è inferiore a 2000, non viene creato alcun account, ma l'endpoint restituisce comunque un normale `200`, così i bot non possono capire di essere stati respinti. I client che omettono entrambi i campi si registrano normalmente.
 
 ### Registrare una nuova chiesa
 
@@ -130,16 +130,16 @@ Sono accettati due campi facoltativi anti-bot: `website` (un campo honeypot nasc
 POST /membership/churches/add
 ```
 
-**Auth:** JWT
+**Autenticazione:** JWT
 
 Dopo aver registrato un utente, chiama questo endpoint per creare una chiesa e associarvi l'utente.
 
 ## Gestione delle password
 
-| Metodo | Percorso | Auth | Descrizione |
-|--------|----------|------|-------------|
-| POST | `/membership/users/forgot` | Public | Invia un'email di reimpostazione della password. Corpo: `{ "userEmail": "...", "appName": "...", "appUrl": "..." }` |
-| POST | `/membership/users/setPasswordGuid` | Public | Imposta una nuova password usando un GUID di autenticazione dall'email di reimpostazione. Corpo: `{ "authGuid": "...", "newPassword": "..." }` |
+| Metodo | Percorso | Autenticazione | Descrizione |
+|--------|----------|----------------|-------------|
+| POST | `/membership/users/forgot` | Pubblico | Invia un'email di reimpostazione della password. Corpo: `{ "userEmail": "...", "appName": "...", "appUrl": "..." }` |
+| POST | `/membership/users/setPasswordGuid` | Pubblico | Imposta una nuova password usando un GUID di autenticazione dall'email di reimpostazione. Corpo: `{ "authGuid": "...", "newPassword": "..." }` |
 | POST | `/membership/users/updatePassword` | JWT | Cambia la password dell'utente corrente. Corpo: `{ "newPassword": "..." }` |
 
 ## Modello dei permessi
@@ -149,24 +149,24 @@ I permessi sono organizzati per modulo e assegnati agli utenti tramite i ruoli. 
 ### Riferimento dei permessi
 
 | Sezione visualizzata | Tipo di contenuto | Azione | Descrizione |
-|----------------------|-------------------|--------|-------------|
-| **Presenze** | Attendance | Checkin | Registra la presenza dei membri ai culti |
+|----------------|--------------|--------|-------------|
+| **Presenze** | Attendance | Checkin | Registra i membri al check-in ai culti |
 | | Attendance | Edit | Modifica i record di presenza |
 | | Services | Edit | Gestisce i culti e gli orari dei culti |
 | | Attendance | View | Visualizza i record di presenza |
 | | Attendance | View Summary | Visualizza i riepiloghi e i report delle presenze |
 | **Donazioni** | Donations | Edit | Crea e modifica i record delle donazioni |
 | | Settings | Edit | Modifica le impostazioni di offerte/pagamenti |
-| | Donations | View Summary | Visualizza i report di riepilogo delle donazioni |
+| | Donations | View Summary | Visualizza i report riepilogativi delle donazioni |
 | | Donations | View | Visualizza i singoli record delle donazioni |
 | **Persone e gruppi** | Forms | Admin | Piena amministrazione dei moduli |
 | | Forms | Edit | Modifica le definizioni dei moduli |
 | | Plans | Edit | Modifica i piani di servizio |
-| | Group Members | Edit | Aggiunge/rimuove membri dei gruppi |
+| | Group Members | Edit | Aggiunge/rimuove membri del gruppo |
 | | Groups | Edit | Crea e modifica i gruppi |
-| | Households | Edit | Modifica le assegnazioni dei nuclei familiari |
-| | People | Edit | Modifica qualsiasi record di persona |
-| | People | Edit Self | Modifica solo il proprio record di persona |
+| | Households | Edit | Modifica le assegnazioni ai nuclei familiari |
+| | People | Edit | Modifica qualsiasi scheda persona |
+| | People | Edit Self | Modifica solo la propria scheda persona |
 | | Roles | Edit | Gestisce i ruoli e le assegnazioni degli utenti |
 | | Group Members | View | Visualizza gli elenchi dei membri dei gruppi |
 | | People | View Members | Visualizza solo i membri (non i visitatori) |
@@ -175,19 +175,19 @@ I permessi sono organizzati per modulo e assegnati agli utenti tramite i ruoli. 
 | | Settings | Edit | Modifica le impostazioni della chiesa |
 | **Contenuti** | Content | Edit | Modifica pagine, sezioni, elementi |
 | | Settings | Edit | Modifica le impostazioni dei contenuti |
-| | StreamingServices | Edit | Gestisce la configurazione dei servizi in streaming |
+| | StreamingServices | Edit | Gestisce la configurazione dei servizi di streaming |
 | | Chat | Host | Ospita/modera le sessioni di chat |
-| **Messaggistica** | Texting | Send | Invia messaggi di testo SMS |
+| **Messaggistica** | Texting | Send | Invia messaggi SMS |
 
 ### Come vengono verificati i permessi
 
-Nei controller, i permessi vengono verificati con il metodo `au.checkAccess()`:
+Nei controller, i permessi si verificano con il metodo `au.checkAccess()`:
 
 ```typescript
-// Require specific permission
+// Richiede un permesso specifico
 if (!au.checkAccess(Permissions.people.edit)) return this.json({}, 401);
 
-// Or within actionWrapper — the CRUD system checks automatically
+// Oppure all'interno di actionWrapper — il sistema CRUD verifica automaticamente
 crudSettings: {
   permissions: {
     view: Permissions.people.view,
@@ -211,12 +211,12 @@ L'API supporta OAuth 2.0 per le integrazioni di terze parti. Sono disponibili du
    - `code_challenge` / `code_challenge_method` (PKCE, solo `S256`) sono obbligatori per i client pubblici senza segreto
    - Restituisce: `{ "code": "...", "state": "..." }`
 
-2. **Scambio del codice con un token:** `POST /membership/oauth/token` (Public)
+2. **Scambio del codice con un token:** `POST /membership/oauth/token` (Pubblico)
    - Corpo: `{ "grant_type": "authorization_code", "code": "...", "client_id": "...", "client_secret": "...", "redirect_uri": "...", "code_verifier": "..." }`
    - Invia `code_verifier` quando il passaggio di autorizzazione ha usato un `code_challenge`; i client pubblici omettono `client_secret`. Sono accettati corpi JSON o codificati come form
    - Restituisce: `{ "access_token": "...", "token_type": "Bearer", "expires_in": 43200, "refresh_token": "...", "scope": "..." }`
 
-3. **Token di aggiornamento:** `POST /membership/oauth/token` (Public)
+3. **Rinnovo del token:** `POST /membership/oauth/token` (Pubblico)
    - Corpo: `{ "grant_type": "refresh_token", "refresh_token": "...", "client_id": "...", "client_secret": "..." }`
 
 I token di accesso scadono dopo **12 ore**.
@@ -225,31 +225,31 @@ I token di accesso scadono dopo **12 ore**.
 
 Per i dispositivi senza browser (app per TV, chioschi):
 
-1. **Richiesta del codice dispositivo:** `POST /membership/oauth/device/authorize` (Public)
+1. **Richiesta del codice dispositivo:** `POST /membership/oauth/device/authorize` (Pubblico)
    - Corpo: `{ "client_id": "...", "scope": "..." }`
    - Restituisce: `{ "device_code": "...", "user_code": "ABCD-1234", "verification_uri": "https://app.b1.church/device", "expires_in": 900, "interval": 5 }`
 
-2. **L'utente inserisce il codice** nell'URI di verifica e approva o nega l'accesso
+2. **L'utente inserisce il codice** nell'URI di verifica e approva o nega
 
-3. **Interrogazione per il token:** `POST /membership/oauth/token` (Public)
+3. **Interrogazione per il token:** `POST /membership/oauth/token` (Pubblico)
    - Corpo: `{ "grant_type": "urn:ietf:params:oauth:grant-type:device_code", "device_code": "...", "client_id": "..." }`
-   - Restituisce `authorization_pending` finché non viene approvato, quindi restituisce il token di accesso
+   - Restituisce `authorization_pending` finché non viene approvato, poi restituisce il token di accesso
 
 ### Gestione dei client OAuth
 
-| Metodo | Percorso | Auth | Permesso | Descrizione |
-|--------|----------|------|----------|-------------|
+| Metodo | Percorso | Autenticazione | Permesso | Descrizione |
+|--------|----------|----------------|----------|-------------|
 | GET | `/membership/oauth/clients` | JWT | Server.Admin | Elenca tutti i client OAuth |
-| GET | `/membership/oauth/clients/:id` | JWT | Server.Admin | Ottiene un client tramite ID |
-| GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Ottiene un client tramite client ID (segreto oscurato) |
+| GET | `/membership/oauth/clients/:id` | JWT | Server.Admin | Ottiene un client per ID |
+| GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Ottiene un client per client ID (segreto oscurato) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Crea o aggiorna un client |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Elimina un client |
-| POST | `/membership/oauth/register` | Public | — | Registrazione dinamica del client (RFC 7591) per client pubblici come i connettori MCP. Vedi [App connesse](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Pubblico | — | Registrazione dinamica del client (RFC 7591) per client pubblici come i connettori MCP. Vedi [App collegate](../connected-apps#dynamic-client-registration) |
 
 ### Endpoint di approvazione dei dispositivi
 
-| Metodo | Percorso | Auth | Descrizione |
-|--------|----------|------|-------------|
+| Metodo | Percorso | Autenticazione | Descrizione |
+|--------|----------|----------------|-------------|
 | GET | `/membership/oauth/device/pending/:userCode` | JWT | Ottiene le informazioni sul codice dispositivo in attesa per l'interfaccia di approvazione |
 | POST | `/membership/oauth/device/approve` | JWT | Approva un'autorizzazione del dispositivo. Corpo: `{ "user_code": "...", "church_id": "..." }` |
 | POST | `/membership/oauth/device/deny` | JWT | Nega un'autorizzazione del dispositivo. Corpo: `{ "user_code": "..." }` |
@@ -259,11 +259,11 @@ Per i dispositivi senza browser (app per TV, chioschi):
 L'API usa due funzioni wrapper che determinano i requisiti di autenticazione:
 
 - **`actionWrapper`** — Richiede un JWT valido. L'oggetto utente autenticato (`au`) è disponibile con `churchId`, `userId` e i controlli dei permessi.
-- **`actionWrapperAnon`** — Non richiede autenticazione. Usato per login, registrazione, consultazione di contenuti pubblici e ricevitori di webhook.
+- **`actionWrapperAnon`** — Nessuna autenticazione richiesta. Usato per accesso, registrazione, consultazioni di contenuti pubblici e ricevitori di webhook.
 
-Nelle tabelle degli endpoint di questa documentazione, questi sono indicati rispettivamente come **JWT** e **Public** nella colonna Auth.
+Nelle tabelle degli endpoint di questa documentazione, questi vengono indicati rispettivamente come **JWT** e **Pubblico** nella colonna Autenticazione.
 
 ## Pagine correlate
 
 - [Struttura del modulo](../module-structure) — Come sono organizzati controller, repository e modelli
-- [Configurazione locale](../local-setup) — Eseguire l'API localmente per lo sviluppo
+- [Setup locale](../local-setup) — Eseguire l'API in locale per lo sviluppo

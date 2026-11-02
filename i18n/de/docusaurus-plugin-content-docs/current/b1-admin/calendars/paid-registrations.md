@@ -1,93 +1,101 @@
 ---
-title: "Bezahlte Registrierungen"
+title: "Kostenpflichtige Anmeldungen"
 ---
 
-# Bezahlte Registrierungen
+# Kostenpflichtige Anmeldungen
 
 <div class="article-intro">
 
-Die Ereignisregistrierung kann über einen einfachen Kopfstand hinausgehen. Sie können Preis-Teilnehmertypen (wie Adult und Child) definieren, optionale Add-ons mit eigenen Preisen und Mengen anbieten, Rabattcodes erstellen und Zahlungen bei der Registrierung über Ihren bestehenden Kirchengeber einziehen. Wenn ein Ereignis voll wird, hält eine optionale Warteliste interessierte Mitglieder in der Reihe und befördert sie automatisch, wenn Plätze frei werden.
+Veranstaltungsanmeldungen können mehr sein als eine einfache Teilnehmerzählung. Sie können preisierte Teilnehmertypen definieren (etwa Erwachsener und Kind), optionale Zusatzoptionen mit eigenen Preisen und Mengen anbieten, Rabattcodes erstellen und bei der Anmeldung über den bestehenden Spendenanbieter Ihrer Kirche Zahlungen einziehen. Wenn eine Veranstaltung voll ist, hält eine optionale Warteliste interessierte Mitglieder auf dem Laufenden und rückt sie automatisch nach, sobald Plätze frei werden.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Aktivieren Sie zuerst die Registrierung für das Ereignis -- siehe [Kalender erstellen](creating-calendars#enabling-event-registration)
-- Um Zahlungen einzuziehen, muss Ihre Kirche [Online-Geben konfiguriert](../donations/online-giving-setup.md) (Stripe, PayPal oder Kingdom Funding). Kostenlose Ereignisse benötigen keine Geben-Einrichtung.
+- Aktivieren Sie zuerst die Anmeldung für die Veranstaltung – siehe [Kalender erstellen](creating-calendars#enabling-event-registration)
+- Um Zahlungen online einzuziehen, muss Ihre Kirche [Online-Spenden eingerichtet haben](../donations/online-giving-setup.md) (Stripe, PayPal oder Kingdom Funding). Kostenlose Veranstaltungen benötigen keine Spendeneinrichtung. Ohne Online-Spenden funktionieren kostenpflichtige Anmeldungen trotzdem, die Menschen bezahlen die Kirche jedoch direkt – siehe [Kirchen ohne Online-Spenden](#churches-without-online-giving).
 
 </div>
 
-## Registrierungseinstellungen öffnen
+## Die Anmeldeeinstellungen öffnen
 
-1. In B1 Admin öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), wählen Sie **Kalender > Registrierungen** und öffnen Sie Ihr Ereignis (oder öffnen Sie das Ereignis aus seinem Kalender).
-2. Die Karte **Registrierungseinstellungen** zeigt die Grundlagen -- **Registrierung aktivieren**, **Kapazität**, **Registrierung öffnet/schließt**, **Tags** und **Registrierungsfragen**.
-3. Unter den Grundlagen befinden sich drei Accordion: **Teilnehmertypen**, **Auswahl** und **Rabattcodes**.
+1. Öffnen Sie in B1 Admin das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (das Suchfeld oben links), wählen Sie **Kalender > Anmeldungen** und öffnen Sie Ihre Veranstaltung (oder öffnen Sie sie aus dem zugehörigen Kalender).
+2. Die Karte **Anmeldeeinstellungen** zeigt die Grundlagen – **Anmeldung aktivieren**, **Kapazität**, **Anmeldung öffnet/schließt**, **Schlagwörter** und **Fragen zur Anmeldung**.
+3. Unter den Grundlagen finden Sie drei Akkordeons: **Teilnehmertypen**, **Auswahlmöglichkeiten** und **Rabattcodes**.
 
 ## Teilnehmertypen
 
-Mit Teilnehmertypen können Sie verschiedene Preise für verschiedene Arten von Teilnehmern berechnen -- und jede separat begrenzen.
+Teilnehmertypen erlauben es, für verschiedene Arten von Teilnehmenden unterschiedliche Preise zu verlangen – und jede Art einzeln zu begrenzen.
 
-1. Erweitern Sie das Accordion **Teilnehmertypen** und klicken Sie auf **Typ hinzufügen**.
-2. Geben Sie einen **Namen** ein (z.B. „Adult", „Child", „Student").
+1. Öffnen Sie das Akkordeon **Teilnehmertypen** und klicken Sie auf **Typ hinzufügen**.
+2. Geben Sie einen **Namen** ein (z. B. „Erwachsener“, „Kind“, „Schüler“).
 3. Legen Sie einen **Preis** fest. Verwenden Sie 0 für einen kostenlosen Typ.
-4. Legen Sie optional eine **Kapazität** nur für diesen Typ fest (z.B. nur 20 Child-Plätze). Lassen Sie leer für keine Pro-Typ-Grenze.
+4. Legen Sie optional eine **Kapazität** nur für diesen Typ fest (z. B. nur 20 Plätze für Kinder). Leer lassen für keine Begrenzung pro Typ.
 5. Klicken Sie auf **Speichern**.
 
-Während der Registrierung wählt jeder Teilnehmer einen Typ; ausverkaufte Typen werden als **Ausverkauft** angezeigt und können nicht ausgewählt werden. Die Tabelle zeigt den Typ jedes Teilnehmers und laufende Pro-Typ-Zählungen.
+Bei der Anmeldung wählt jede teilnehmende Person einen Typ; ausverkaufte Typen werden als **Ausverkauft** angezeigt und können nicht ausgewählt werden. Die Teilnehmerliste zeigt den Typ jeder Person und die laufenden Zählungen pro Typ.
 
-## Auswahl
+## Auswahlmöglichkeiten
 
-Auswahl sind optionale Preis-Add-ons -- T-Shirts, Essenpläne, Aktivitäts-Upgrades.
+Auswahlmöglichkeiten sind optionale, kostenpflichtige Zusatzoptionen – T-Shirts, Verpflegungspakete, Aufwertungen von Aktivitäten.
 
-1. Erweitern Sie das Accordion **Auswahl** und klicken Sie auf **Auswahl hinzufügen**.
-2. Geben Sie einen **Namen**, eine optionale **Beschreibung** und einen **Preis** ein (0 wird als „Kostenlos" angezeigt).
-3. Legen Sie optional eine **Kapazität** (Gesamtmenge verfügbar über alle Registrierungen) und eine **Max Menge** (die meiste, die eine Registrierung bestellen kann) fest.
+1. Öffnen Sie das Akkordeon **Auswahlmöglichkeiten** und klicken Sie auf **Auswahl hinzufügen**.
+2. Geben Sie einen **Namen**, optional eine **Beschreibung** und einen **Preis** ein (0 wird als „Kostenlos“ angezeigt).
+3. Legen Sie optional eine **Kapazität** (Gesamtzahl verfügbarer Stück über alle Anmeldungen) und eine **Max. Menge** (die höchste Anzahl, die eine Anmeldung bestellen kann) fest.
 4. Klicken Sie auf **Speichern**.
 
-Registranten wählen Mengen während der Anmeldung, und die Gesamtzahl zählt gegen die Kapazität, damit Sie nie überverkaufen.
+Anmeldende wählen bei der Anmeldung die Mengen, und die Summen werden auf die Kapazität angerechnet, sodass Sie nie überbuchen.
 
 ## Rabattcodes
 
-1. Erweitern Sie das Accordion **Rabattcodes** und klicken Sie auf **Rabattcode hinzufügen**.
-2. Geben Sie den **Code** ein, den Registranten eingeben.
-3. Wählen Sie den **Typ** -- **Prozent** oder **Betrag** -- und seinen **Wert**.
-4. Begrenzen Sie den Code optional mit einem **Startdatum** / **Enddatum**, einer **Mindestmitglieder** (Mindestanzahl von Teilnehmern bei der Registrierung) und **Max Verwendungen**.
+1. Öffnen Sie das Akkordeon **Rabattcodes** und klicken Sie auf **Rabattcode hinzufügen**.
+2. Geben Sie den **Code** ein, den Anmeldende eintippen werden.
+3. Wählen Sie den **Typ** – **Prozent** oder **Betrag** – und dessen **Wert**.
+4. Begrenzen Sie den Code optional mit einem **Startdatum** / **Enddatum**, einer **Mindestanzahl Mitglieder** (die minimale Anzahl Teilnehmender in der Anmeldung) und **Max. Einlösungen**.
 5. Klicken Sie auf **Speichern**.
 
-Jeder Code zeigt eine **Verwendungen**-Zählung, damit Sie sehen können, wie oft er eingelöst wurde. Registranten erhalten sofortige Rückmeldung, wenn sie einen Code anwenden -- einschließlich klarer Meldungen, wenn ein Code abgelaufen ist, nicht gestartet hat oder mehr Teilnehmer benötigt.
+Jeder Code zeigt eine Zählung **Einlösungen**, damit Sie sehen, wie oft er verwendet wurde. Anmeldende erhalten sofort eine Rückmeldung, wenn sie einen Code anwenden – einschließlich klarer Hinweise, wenn ein Code abgelaufen ist, noch nicht gültig ist oder mehr Teilnehmende erfordert.
 
 ## Warteliste {#waitlist}
 
-Schalten Sie **Warteliste aktivieren** in der Karte Registrierungseinstellungen ein. Wenn das Ereignis die Kapazität erreicht:
+Aktivieren Sie **Warteliste aktivieren** in der Karte Anmeldeeinstellungen. Erreicht die Veranstaltung die Kapazität:
 
-- Neue Registranten wird stattdessen ein Wartelisten-Platz angeboten, anstatt abgelehnt zu werden. Sie schließen die gleiche Anmeldung ab (Zahlung wird übersprungen, während sie auf der Warteliste sind).
-- Wenn jemand storniert, wird die älteste Wartelisten-Registrierung **automatisch befördert** und erhält eine E-Mail, dass ein Platz frei wurde. Wenn sie einen Saldo schulden, verlinkt die E-Mail sie zur Zahlung abschließen.
-- Sie können jemanden jederzeit manuell mit der Aktion **Befördern** auf einer Wartelisten-Reihe befördern -- praktisch nach Erhöhung der Ereigniskapazität.
-
-:::info
-Beförderte Registrierungen bleiben *ausstehend*, bis ein Saldo bezahlt wird; Zahlung (oder nichts zu zahlen) bestätigt sie.
-:::
-
-## Die Registrierungstabelle {#the-registration-roster}
-
-Öffnen Sie ein Ereignis von der Seite Registrierungen aus, um jede Registrierung zu sehen. Die Tabelle zeigt **Name**, **Mitglieder**, **Typ** (Typ jedes Teilnehmers), **Bezahlt / Gesamt** (mit einer Saldo-Warnung, wenn Geld noch geschuldet wird), **Status** und **Datum**, plus Pro-Typ-Zählungs-Chips über der Tabelle.
-
-- Klicken Sie auf das Details-Symbol einer Reihe, um den Dialog **Registrierungsdetails** zu öffnen -- Mitglieder, Auswahl, Bezahlt/Saldo und eine Tabelle **Zahlungen**, die jede Ladung auflistet (Betrag, Methode, Datum).
-- **CSV exportieren** lädt die vollständige Tabelle herunter mit Spalten für Mitglieder, Teilnehmertypen, Auswahl, Bezahlt/Saldo/Betrag, Status und eine Spalte pro Registrierungsfrage.
-- **Teilnehmer hinzufügen** ermöglicht es Ihnen weiterhin, Offline-Anmeldungen manuell zu erfassen.
+- Neue Anmeldende erhalten einen Platz auf der Warteliste statt einer Absage. Sie schließen dieselbe Anmeldung ab (die Zahlung wird auf der Warteliste übersprungen).
+- Wenn jemand storniert, rückt die älteste Anmeldung auf der Warteliste **automatisch nach** und erhält eine E-Mail, dass ein Platz frei geworden ist. Schuldet die Person einen Betrag, verlinkt die E-Mail auf [Meine Anmeldungen](../../b1-church/events/my-registrations) auf der B1-Seite Ihrer Kirche, wo die Zahlung abgeschlossen werden kann.
+- Sie können jemanden jederzeit manuell über die Aktion **Nachrücken** in einer Zeile der Warteliste nachrücken lassen – nützlich, nachdem Sie die Kapazität der Veranstaltung erhöht haben.
 
 :::info
-Erstattungen werden nicht innerhalb von B1 verarbeitet. Wenn Sie eine stornierte bezahlte Registrierung erstatten müssen, geben Sie die Erstattung aus dem Dashboard Ihres Gebers aus (z.B. Stripe).
+Nachgerückte Anmeldungen bleiben *ausstehend*, bis ein offener Betrag bezahlt ist; mit der Zahlung (oder wenn nichts zu zahlen ist) werden sie bestätigt.
 :::
 
-## Wie Zahlungen funktionieren
+## Die Teilnehmerliste {#the-registration-roster}
 
-Zahlungen laufen durch das gleiche Geben-Gateway, das Ihre Kirche bereits für Spenden nutzt -- Kartendaten gehen direkt zum Anbieter und berühren niemals B1's Server. Preise werden immer vom Server aus Ihren konfigurierten Typen, Auswahl und Rabattcodes berechnet, daher kann ein Registrant die Gesamtsumme nicht manipulieren. Angemeldete Mitglieder können mit einer gespeicherten Karte bezahlen; Gäste geben eine Karte beim Auschecken ein.
+Öffnen Sie eine Veranstaltung auf der Seite Anmeldungen, um jede Anmeldung zu sehen. Der Kartentitel zeigt, wie viele Anmeldungen gegen die Kapazität einen Platz belegen (zum Beispiel *Anmeldungen (18 / 20)*). Nur ausstehende und bestätigte Anmeldungen zählen; sind Personen auf der Warteliste, ergänzt der Titel die Anzahl (zum Beispiel *· 3 auf der Warteliste*), und dieselbe Anzahl erscheint unter dem Kapazitätsbalken. Die Tabelle zeigt **Name**, **Mitglieder**, **Typ** (den Typ jeder teilnehmenden Person), **Bezahlt / Gesamt** (mit einem Hinweis, wenn noch Geld offen ist), **Status** und **Datum**, zusätzlich Zählungen pro Typ als Chips über der Tabelle.
+
+- Klicken Sie auf das Symbol für Details einer Zeile, um den Dialog **Anmeldedetails** zu öffnen – mit Mitgliedern, Auswahlmöglichkeiten, Bezahlt/Offen und einer Tabelle **Zahlungen**, die jede Buchung auflistet (Betrag, Zahlungsart, Datum).
+- **CSV exportieren** lädt die vollständige Teilnehmerliste mit Spalten für Mitglieder, Teilnehmertypen, Auswahlmöglichkeiten, Bezahlt/Gesamt/Offen, Status und eine Spalte pro Anmeldefrage herunter.
+- **Teilnehmer hinzufügen** erfasst eine Anmeldung offline oder telefonisch für jede Person in Ihrer Kirche. Wählen Sie die Person und bei einer kostenpflichtigen Veranstaltung ihren Teilnehmertyp. Ihre Karte wird nicht belastet: Eine kostenpflichtige Anmeldung wird als **ausstehend** mit dem vollen Betrag als offenem Saldo gespeichert. Hat Ihre Kirche Online-Spenden, kann die Person den Betrag über [Meine Anmeldungen](../../b1-church/events/my-registrations) bezahlen; andernfalls kassieren Sie persönlich. Zum Hinzufügen von Teilnehmenden benötigen Sie die Berechtigung **Anmeldungen bearbeiten**.
+
+:::info
+Rückerstattungen werden in B1 nicht abgewickelt. Müssen Sie eine stornierte kostenpflichtige Anmeldung erstatten, veranlassen Sie die Rückerstattung im Dashboard Ihres Zahlungsanbieters (z. B. Stripe).
+:::
+
+## So funktioniert die Zahlung
+
+Zahlungen laufen über denselben Spendenzahlungsdienst, den Ihre Kirche bereits für Spenden nutzt – Kartendaten gehen direkt an den Anbieter und erreichen nie die Server von B1. Preise werden immer auf dem Server aus Ihren konfigurierten Typen, Auswahlmöglichkeiten und Rabattcodes berechnet, sodass Anmeldende den Gesamtbetrag nicht manipulieren können. Angemeldete Mitglieder können mit einer gespeicherten Karte bezahlen. Gäste geben ihre Karte an der Kasse ein und müssen vor der Zahlung das Kästchen **Ich bin kein Roboter** aktivieren.
+
+### Kirchen ohne Online-Spenden {#churches-without-online-giving}
+
+Hat Ihre Kirche keinen Zahlungsanbieter für Spenden eingerichtet, können kostenpflichtige Veranstaltungen trotzdem Anmeldungen annehmen. Der Zahlungsschritt teilt Anmeldenden mit, dass Online-Zahlung nicht verfügbar ist und sie direkt an die Kirche zahlen können. Eine Schaltfläche **Anmelden und später bezahlen** speichert die Anmeldung. Sie wird als **ausstehend** mit dem vollen Betrag als offenem Saldo gespeichert und erscheint in der Teilnehmerliste mit einem Hinweis auf den offenen Betrag. Ziehen Sie das Geld so ein, wie Ihre Kirche es üblicherweise tut.
+
+:::info
+B1 kann eine Offline-Zahlung nicht als eingegangen markieren. Der offene Betrag bleibt in der Teilnehmerliste und auf der Karte der anmeldenden Person unter [Meine Anmeldungen](../../b1-church/events/my-registrations), auch nachdem Sie ihn eingezogen haben. Führen Sie deshalb eine eigene Aufstellung darüber, wer bezahlt hat.
+:::
 
 ## Verwandte Artikel
 
-- [Kalender erstellen](creating-calendars#enabling-event-registration) -- Aktivieren Sie die Registrierung und die Grundeinstellungen
-- [Online-Geben einrichten](../donations/online-giving-setup.md) -- Konfigurieren Sie das Zahlungsgateway, das beim Auschecken verwendet wird
-- [Registrierung für Ereignisse](../../b1-church/events/registering) -- Was Mitglieder sehen, wenn sie sich anmelden
-- [Meine Registrierungen](../../b1-church/events/my-registrations) -- Wie Mitglieder Salden bezahlen und Registrierungen bearbeiten
+- [Kalender erstellen](creating-calendars#enabling-event-registration) – Anmeldung aktivieren und die grundlegenden Einstellungen
+- [Online-Spenden einrichten](../donations/online-giving-setup.md) – den Zahlungsdienst konfigurieren, der beim Bezahlen genutzt wird
+- [Für Veranstaltungen anmelden](../../b1-church/events/registering) – was Mitglieder bei der Anmeldung sehen
+- [Meine Anmeldungen](../../b1-church/events/my-registrations) – wie Mitglieder Salden bezahlen und Anmeldungen bearbeiten

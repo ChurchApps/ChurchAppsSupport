@@ -100,7 +100,7 @@ The **Calendar** element shows events from one of your calendars:
 2. Under **Select Calendar**, pick the group or calendar.
 3. Under **Display**, choose how to show it:
    - **Month calendar** -- A month grid that visitors can page through.
-   - **Upcoming events** -- A grid of tiles for the next 12 upcoming events, with a repeating event shown once on its next date. Each tile shows the event's photo (or its title on your theme's dark color when it has no photo), a date badge, the day and time, and the first line of its description. A **Subscribe** button above the tiles lets visitors copy the calendar's ICS link or download it.
+   - **Upcoming events** -- A grid of tiles for the next 12 upcoming events, with a repeating event shown once on its next date. Each tile shows the event's photo (or its title on your theme's dark color when it has no photo), a date badge, the day and time, and the first line of its description. A **Subscribe** button above the tiles lets visitors copy the calendar's ICS link or download it. A **Layout** setting appears for this display: **Grid** (the default) or **Scrolling (automatic)**, which puts the tiles in a single row that scrolls along by itself.
 4. To show only some events, type a tag in **Only events tagged** -- for example, `youth`. Only events whose **Tags** include that word appear. Leave it empty to show every event. Tags are set on each event; see [Adding and Editing Events](../calendars/creating-calendars.md#adding-and-editing-events).
 
 In either display, clicking an event opens its own page on your website. The event page shows the event photo, title, date and time, and description, plus a box with **When** (including the repeat pattern for a recurring event) and **Where** (the rooms booked for it). It also has a **Register for this Event** button when registration is turned on, and an **Add to my calendar** link that downloads the event as a calendar file. The page is set up so search engines can show the event's date and details in their results. Event pages from curated calendars shown on your pages (for events in the next six months) are also listed in your site's sitemap, so search engines can find them.
@@ -138,6 +138,8 @@ Use the preview controls in the toolbar to check how your page looks at differen
 
 - **Desktop** -- Full-width browser view
 - **Mobile** -- Narrow phone-sized view
+
+On phones, the columns in a row stack one above the other at full width unless you set a **Mobile Width** for them in the row's settings. Sermon and podcast lists also stack each episode's text under its thumbnail on phones.
 
 To see the live page exactly as visitors will, go back to the Pages list and click the page's path. It opens in a new browser tab.
 

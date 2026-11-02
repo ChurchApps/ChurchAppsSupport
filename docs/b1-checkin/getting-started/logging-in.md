@@ -15,6 +15,7 @@ Before the kiosk can be used for check-in, you need to sign in with a ChurchApps
 
 - Install B1 Church Checkin on your Android tablet (see [Getting Started](./index.md))
 - Have your ChurchApps account email and password ready
+- The account needs the **Checkin** permission (or **Edit Attendance**) at your church. An admin adds it in B1 Admin under **Settings > Roles** — see [Check-In Kiosk Accounts](../../b1-admin/settings/roles-permissions.md#check-in-kiosk-accounts)
 
 </div>
 
@@ -35,7 +36,7 @@ This is the same email and password you use for B1 Admin or any other ChurchApps
 
 ## Selecting Your Church
 
-After a successful login, the app loads a list of churches linked to your account. Each church is displayed as a card showing the church name and logo (if one has been configured in B1 Admin).
+After a successful login, the app loads the churches where your account has the **Checkin** or **Edit Attendance** permission. Churches where you only have other permissions are left out. If none are left, the app shows **No check-in access** and asks you to have your church admin add the Checkin permission to one of your roles. Each church is displayed as a card showing the church name and logo (if one has been configured in B1 Admin).
 
 - If your account is linked to **only one church**, you will still see the selection screen. Tap your church to continue.
 - If your account is linked to **multiple churches**, tap the church you want this kiosk to serve.

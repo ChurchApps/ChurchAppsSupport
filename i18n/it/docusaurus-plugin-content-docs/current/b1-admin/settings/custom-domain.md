@@ -12,9 +12,9 @@ Puoi collegare un tuo dominio (ad esempio **`www.tuachiesa.org`**) al tuo sito B
 
 ## Passo 1 — Aggiungi prima il record DNS
 
-Prima di aggiungere il dominio in B1, devi puntarlo ai server di B1 presso il tuo registrar di domini (GoDaddy, Namecheap, Cloudflare, ecc.).
+Prima di aggiungere il tuo dominio in B1, devi indirizzarlo ai server di B1 presso il tuo registrar di domini (GoDaddy, Namecheap, Cloudflare, ecc.).
 
-Aggiungi uno di questi record — il CNAME è quello consigliato:
+Aggiungi uno di questi record — il CNAME è preferibile:
 
 | Tipo | Host | Valore |
 |------|------|-------|
@@ -23,26 +23,26 @@ Aggiungi uno di questi record — il CNAME è quello consigliato:
 
 Usa il **CNAME** per l'indirizzo `www`. Usa il **record A** se il tuo registrar non supporta il CNAME sul dominio principale (senza www), oppure se vuoi che funzioni anche il dominio principale.
 
-Le modifiche al DNS possono richiedere da pochi minuti a qualche ora per diventare effettive.
+Le modifiche DNS possono richiedere da qualche minuto a qualche ora per avere effetto.
 
 ## Passo 2 — Aggiungi il dominio in B1
 
 Una volta che il DNS punta a B1:
 
 1. Vai su **Impostazioni** in B1 Admin.
-2. Clicca su **Domini** nell'elenco a sinistra, quindi clicca su **Modifica** nella sezione **Domini**.
-3. Scrivi il tuo dominio nel campo e clicca su **Salva**.
+2. Clicca su **Domini** nell'elenco a sinistra, poi clicca su **Modifica** nella sezione **Domini**.
+3. Digita il tuo dominio nel campo e clicca su **Salva**.
 
-Non serve cliccare prima sul pulsante **+** -- un dominio lasciato scritto nel campo viene aggiunto al salvataggio. Usa **+** (o premi **Invio**) quando vuoi aggiungere più domini all'elenco prima di salvare.
+Non serve cliccare prima sul pulsante **+** -- un dominio lasciato digitato nel campo viene aggiunto al salvataggio. Usa **+** (oppure premi **Invio**) quando vuoi aggiungere più domini all'elenco prima di salvare.
 
 B1 gestisce automaticamente il certificato SSL — non serve acquistare alcun certificato.
 
 :::warning
-Se aggiungi il dominio in B1 prima che i record DNS siano attivi, il salvataggio non riesce. Configura sempre prima il DNS.
+Se aggiungi il dominio in B1 prima che i record DNS siano in place, il salvataggio non andrà a buon fine. Configura sempre prima il DNS.
 :::
 
 ## Verificare che funzioni
 
-Dopo il salvataggio, apri il tuo dominio in un browser. Se viene caricato il tuo sito B1, hai finito. Se vedi un errore, il DNS potrebbe essere ancora in propagazione — attendi qualche minuto e riprova.
+Dopo il salvataggio, visita il tuo dominio nel browser. Se si carica il tuo sito B1, hai finito. Se vedi un errore, il DNS potrebbe essere ancora in propagazione — attendi qualche minuto e riprova.
 
-Puoi anche controllare la propagazione DNS su [dnschecker.org](https://dnschecker.org) — cerca il tuo dominio e verifica che compaia il tuo record CNAME o A.
+Puoi anche verificare la propagazione DNS su [dnschecker.org](https://dnschecker.org) — cerca il tuo dominio e controlla che il tuo record CNAME o A risulti visibile.

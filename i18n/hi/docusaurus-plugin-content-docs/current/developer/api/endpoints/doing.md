@@ -6,36 +6,36 @@ title: "Doing Endpoints"
 
 <div class="article-intro">
 
-Doing मॉड्यूल सेवा योजना, स्वयंसेवक शेड्यूलिंग, कार्य प्रबंधन और स्वचालन का प्रबंधन करता है। यह समय और पदों के साथ सेवा योजनाएँ बनाने, स्वयंसेवकों को असाइन करने, ब्लॉकआउट तिथियाँ प्रबंधित करने, सेवा के क्रम के आइटम बनाने, बाहरी सामग्री प्रदाताओं से जुड़ने, और शर्तों व क्रियाओं के साथ स्वचालित वर्कफ़्लो कॉन्फ़िगर करने के उपकरण प्रदान करता है।
+Doing मॉड्यूल सेवा योजना, स्वयंसेवक शेड्यूलिंग, कार्य प्रबंधन और स्वचालन का प्रबंधन करता है। यह समय और पदों के साथ सेवा योजनाएँ बनाने, स्वयंसेवकों को असाइन करने, ब्लॉकआउट तारीखें प्रबंधित करने, सेवा क्रम आइटम बनाने, बाहरी सामग्री प्रदाताओं से जुड़ने, और शर्तों व क्रियाओं के साथ स्वचालित वर्कफ़्लो कॉन्फ़िगर करने के लिए उपकरण देता है।
 
 </div>
 
 **Base path:** `/doing`
 
-## Plans
+## योजनाएँ (Plans)
 
 Base path: `/doing/plans`
 
-| Method | Path | Auth | Permission | विवरण |
-|--------|------|------|------------|-------------|
+| विधि | पथ | Auth | अनुमति | विवरण |
+|------|------|------|------------|-------------|
 | GET | `/` | JWT | — | चर्च की सभी योजनाएँ सूचीबद्ध करें |
 | GET | `/:id` | JWT | — | ID से योजना प्राप्त करें |
 | GET | `/ids?ids=` | JWT | — | अल्पविराम से अलग IDs द्वारा कई योजनाएँ प्राप्त करें |
-| GET | `/types/:planTypeId` | JWT | — | plan type के अनुसार योजनाएँ प्राप्त करें |
-| GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + ministry edit | serving overview **Text Volunteers** के भेजे जाने से पहले का पूर्वावलोकन: `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }`, सीमा में असाइन किए गए स्वयंसेवकों के लिए (प्रति व्यक्ति एक, opted-out और बिना नंबर वाले छोड़े गए, साझा नंबर deduplicated, 200 तक सीमित) |
+| GET | `/types/:planTypeId` | JWT | — | योजना प्रकार के अनुसार योजनाएँ प्राप्त करें |
+| GET | `/textRange?startDate=&endDate=&ministryId=&planTypeId=` | JWT | `texting.send` + ministry edit | सेवा अवलोकन **Text Volunteers** के भेजने से पहले का पूर्वावलोकन: `{ totalMembers, eligibleCount, optedOutCount, noPhoneCount, capped }` सीमा में असाइन स्वयंसेवकों के लिए (हर व्यक्ति के लिए एक, opted-out और बिना नंबर वाले छोड़े गए, साझा नंबर एक बार गिने गए, 200 तक सीमित) |
 | GET | `/presenter` | JWT | — | अगले 7 दिनों की योजनाएँ प्राप्त करें (presenter दृश्य) |
 | GET | `/confirmationWorkflows?ministryId=` | JWT | Ministry edit | सक्रिय सेवा असाइनमेंट पुष्टि वर्कफ़्लो (`workflowType = "assignmentConfirmation"`) जिन्हें योजना चुन सकती है: `[{ id, name }]` |
-| GET | `/public/current/:planTypeId` | Public | — | plan type के लिए वर्तमान योजना प्राप्त करें |
-| GET | `/public/signup/:churchId` | Public | — | स्व-साइनअप के लिए खुली योजनाएँ, सबसे नज़दीक पहले, हर एक के स्व-साइनअप पदों के साथ (`categoryName`, फिर `name` के अनुसार क्रमबद्ध, साथ में Accepted/Unconfirmed असाइनमेंट का `filledCount`) और समय। स्वयंसेवकों के नाम नहीं। जब चर्च सेटिंग `volunteerSignupNextOnly` `"true"` हो, तो हर plan type की केवल पहली योजना लौटती है। हर `plan` में एक गणना की गई `signupDeadline` (ISO instant, या `null`) शामिल है: योजना के सबसे पहले `service`-प्रकार समय से `signupDeadlineHours` पहले (यदि कोई service समय नहीं है तो कोई भी समयबद्ध प्रविष्टि; यदि योजना में कोई समय नहीं है तो चर्च के समय क्षेत्र में `serviceDate` पर 9:00) |
-| GET | `/signup/:planId/volunteers` | JWT | — | योजना के स्व-साइनअप पदों के लिए `[{ positionId, names }]` (Accepted/Unconfirmed असाइनी के प्रदर्शित नाम)। जब तक योजना का `showVolunteerNames` चालू न हो, `[]` लौटता है |
-| POST | `/` | JWT | — | योजनाएँ बनाएँ या अपडेट करें (एकल ऑब्जेक्ट या सरणी स्वीकार्य)। किसी सेवा पुष्टि वर्कफ़्लो में योजना को शामिल करने के लिए `confirmationWorkflowId` सेट करें, या भविष्य के अनुरोधों के लिए बाहर रखने हेतु `null`। डेडलाइन हटाने के लिए `signupDeadlineHours: null` भेजें; फ़ील्ड छोड़ने पर सहेजा गया मान बना रहता है |
-| POST | `/copy/:id` | JWT | Ministry edit | पदों, समयों, असाइनमेंट और सेवा के क्रम के आइटमों सहित योजना कॉपी करें। Body में `ministryId`, `serviceDate`, `copyMode` ("none", "positions", "all") और `copyServiceOrder` (boolean) शामिल हैं। `targetPlanId` के बिना एक नई योजना बनती है, और `notes`, `signupDeadlineHours`, `showVolunteerNames`, और `autoReplaceOnDecline` स्रोत योजना से आते हैं, जब तक body उन्हें न दे। `targetPlanId` के साथ, कॉपी उस मौजूदा योजना को भरती है (कॉलर को उसे संपादित करने में सक्षम होना चाहिए)। B1Admin का **Repeat weekly** विकल्प हर सप्ताह के लिए इसे एक बार कॉल करता है, हर बार पिछले सप्ताह बनाई गई योजना से कॉपी करते हुए |
-| POST | `/textRange` | JWT | `texting.send` + ministry edit | चर्च के टेक्स्टिंग प्रदाता के माध्यम से एक तारीख सीमा में असाइन किए गए हर स्वयंसेवक को टेक्स्ट करें। Body: `{ startDate, endDate, ministryId, planTypeId?, message }` (संदेश 1600 अक्षरों तक; प्रति प्राप्तकर्ता मर्ज फ़ील्ड हल होते हैं)। पूर्वावलोकन गिनती के साथ `recipientCount`, `successCount`, `failCount`, और `error` (`no_provider` या `insufficient_credits`) लौटाता है जब भेजना जल्दी रुकता है |
-| POST | `/:id/issueRequests` | JWT | Plan edit | योजना के नए Unconfirmed, अभी तक सूचित न किए गए असाइनमेंट को उसके पुष्टि वर्कफ़्लो के माध्यम से जारी करें: हर एक को सूचित चिह्नित करता है और हर असाइनमेंट के लिए एक वर्कफ़्लो कार्ड शुरू करता है। खाली body; `{ issued }` लौटाता है। तब तक विफल होता है जब तक योजना प्रकाशित न हो (`prepared` न हो), उसका सक्रिय `confirmationWorkflowId` न हो जिसमें कम से कम एक चरण हो, और उसकी response deadline न निकली हो |
-| POST | `/autofill/:id` | JWT | — | योजना के लिए स्वयंसेवक असाइनमेंट स्वतः भरें। Body: `{ teams: [{ positionId, personIds }] }` |
-| DELETE | `/:id` | JWT | — | योजना और सभी संबंधित समय, असाइनमेंट, पद, और योजना आइटम हटाएँ |
+| GET | `/public/current/:planTypeId` | Public | — | योजना प्रकार के लिए वर्तमान योजना प्राप्त करें |
+| GET | `/public/signup/:churchId` | Public | — | स्व-साइनअप के लिए खुली योजनाएँ, सबसे पहले वाली पहले, हर एक अपने स्व-साइनअप पदों सहित (`categoryName`, फिर `name` के अनुसार क्रमबद्ध, साथ में Accepted/Unconfirmed असाइनमेंट की `filledCount`) और समय। स्वयंसेवकों के नाम नहीं। जब चर्च सेटिंग `volunteerSignupNextOnly` `"true"` हो, तो हर योजना प्रकार की केवल पहली योजना लौटाई जाती है। हर `plan` में एक गणना की गई `signupDeadline` (ISO instant, या `null`) होती है: योजना के सबसे पहले `service`-प्रकार समय से `signupDeadlineHours` पहले (यदि कोई service समय नहीं है तो कोई भी समय वाली प्रविष्टि; यदि योजना में कोई समय नहीं है तो `serviceDate` पर चर्च के समय क्षेत्र में 9:00) |
+| GET | `/signup/:planId/volunteers` | JWT | — | योजना के स्व-साइनअप पदों के लिए `[{ positionId, names }]` (Accepted/Unconfirmed असाइनी के प्रदर्शित नाम)। तब तक `[]` लौटाता है जब तक योजना का `showVolunteerNames` चालू न हो |
+| POST | `/` | JWT | — | योजनाएँ बनाएँ या अपडेट करें (एकल ऑब्जेक्ट या सरणी स्वीकार)। योजना को किसी सेवा पुष्टि वर्कफ़्लो में शामिल करने के लिए `confirmationWorkflowId` सेट करें, या भविष्य के अनुरोधों के लिए बाहर रहने हेतु `null`। समय-सीमा हटाने के लिए `signupDeadlineHours: null` भेजें; फ़ील्ड छोड़ने पर सहेजा गया मान बना रहता है |
+| POST | `/copy/:id` | JWT | Ministry edit | पदों, समयों, असाइनमेंट और सेवा क्रम आइटमों सहित योजना कॉपी करें। बॉडी में `ministryId`, `serviceDate`, `copyMode` ("none", "positions", "all") और `copyServiceOrder` (boolean) होते हैं। `targetPlanId` के बिना एक नई योजना बनती है, और `notes`, `signupDeadlineHours`, `showVolunteerNames`, और `autoReplaceOnDecline` स्रोत योजना से आते हैं जब तक बॉडी उन्हें न दे। `targetPlanId` के साथ, कॉपी उस मौजूदा योजना को भरती है (कॉलर को उसे संपादित करने योग्य होना चाहिए)। B1Admin का **Repeat weekly** विकल्प हर सप्ताह के लिए इसे एक बार कॉल करता है, हर बार पिछले सप्ताह बनी योजना से कॉपी करते हुए |
+| POST | `/textRange` | JWT | `texting.send` + ministry edit | चर्च के टेक्स्टिंग प्रदाता के माध्यम से तारीख सीमा में असाइन हर स्वयंसेवक को टेक्स्ट करें। बॉडी: `{ startDate, endDate, ministryId, planTypeId?, message }` (संदेश 1600 अक्षर तक; मर्ज फ़ील्ड प्रति प्राप्तकर्ता हल होते हैं)। पूर्वावलोकन गिनती के साथ `recipientCount`, `successCount`, `failCount`, और भेजना जल्दी रुकने पर `error` (`no_provider` या `insufficient_credits`) लौटाता है |
+| POST | `/:id/issueRequests` | JWT | Plan edit | योजना के नए Unconfirmed, अभी तक सूचित न किए गए असाइनमेंट को उसके पुष्टि वर्कफ़्लो से जारी करें: हर एक को सूचित चिह्नित करता है और प्रति असाइनमेंट एक वर्कफ़्लो कार्ड शुरू करता है। खाली बॉडी; `{ issued }` लौटाता है। तब तक विफल होता है जब तक योजना प्रकाशित न हो (`prepared` नहीं), उसका सक्रिय `confirmationWorkflowId` कम से कम एक चरण के साथ न हो, और उसकी उत्तर समय-सीमा न बीती हो |
+| POST | `/autofill/:id` | JWT | — | योजना के लिए स्वयंसेवक असाइनमेंट स्वतः भरें। बॉडी: `{ teams: [{ positionId, personIds }] }` |
+| DELETE | `/:id` | JWT | — | योजना और उससे जुड़े सभी समय, असाइनमेंट, पद और योजना आइटम हटाएँ |
 
-### उदाहरण: एक योजना कॉपी करना
+### उदाहरण: योजना कॉपी करना
 
 ```
 POST /doing/plans/copy/abc-123
@@ -56,94 +56,94 @@ Authorization: Bearer <token>
 }
 ```
 
-## Plan Types
+## योजना प्रकार (Plan Types)
 
 Base path: `/doing/planTypes`
 
-Extends CRUD base class (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` — कोई अनुमति जाँच नहीं)।
+CRUD बेस क्लास का विस्तार (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` — कोई अनुमति जाँच नहीं)।
 
-| Method | Path | Auth | Permission | विवरण |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | सभी plan types सूचीबद्ध करें |
-| GET | `/:id` | JWT | — | ID से plan type प्राप्त करें |
-| GET | `/ids?ids=` | JWT | — | अल्पविराम से अलग IDs द्वारा कई plan types प्राप्त करें |
-| GET | `/ministryId/:ministryId` | JWT | — | किसी सेवकाई के लिए plan types प्राप्त करें |
-| POST | `/` | JWT | — | plan types बनाएँ या अपडेट करें |
-| DELETE | `/:id` | JWT | — | plan type हटाएँ |
+| विधि | पथ | Auth | अनुमति | विवरण |
+|------|------|------|------------|-------------|
+| GET | `/` | JWT | — | सभी योजना प्रकार सूचीबद्ध करें |
+| GET | `/:id` | JWT | — | ID से योजना प्रकार प्राप्त करें |
+| GET | `/ids?ids=` | JWT | — | अल्पविराम से अलग IDs द्वारा कई योजना प्रकार प्राप्त करें |
+| GET | `/ministryId/:ministryId` | JWT | — | किसी सेवकाई के योजना प्रकार प्राप्त करें |
+| POST | `/` | JWT | — | योजना प्रकार बनाएँ या अपडेट करें |
+| DELETE | `/:id` | JWT | — | योजना प्रकार हटाएँ |
 
-## Plan Items
+## योजना आइटम (Plan Items)
 
 Base path: `/doing/planItems`
 
-parent-child ट्री संरचना में व्यवस्थित सेवा के क्रम के आइटम (हेडर, अनुभाग, गीत, आदि) प्रबंधित करता है।
+सेवा क्रम आइटम (हेडर, सेक्शन, गीत, आदि) प्रबंधित करता है, जो एक पैरेंट-चाइल्ड ट्री संरचना में व्यवस्थित होते हैं।
 
-| Method | Path | Auth | Permission | विवरण |
-|--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | ID से plan item प्राप्त करें |
-| GET | `/ids?ids=` | JWT | — | अल्पविराम से अलग IDs द्वारा कई plan items प्राप्त करें |
-| GET | `/plan/:planId` | JWT | — | किसी योजना के सभी plan items प्राप्त करें (ट्री संरचना लौटाता है) |
-| GET | `/presenter/:churchId/:planId` | Public | — | presenter दृश्य के लिए plan items प्राप्त करें (ट्री संरचना लौटाता है) |
-| POST | `/` | JWT | — | plan items बनाएँ या अपडेट करें |
-| POST | `/sort` | JWT | — | plan item का सॉर्ट क्रम अपडेट करें (सहोदरों को पुनः क्रमबद्ध करता है) |
-| DELETE | `/:id` | JWT | — | plan item हटाएँ |
+| विधि | पथ | Auth | अनुमति | विवरण |
+|------|------|------|------------|-------------|
+| GET | `/:id` | JWT | — | ID से योजना आइटम प्राप्त करें |
+| GET | `/ids?ids=` | JWT | — | अल्पविराम से अलग IDs द्वारा कई योजना आइटम प्राप्त करें |
+| GET | `/plan/:planId` | JWT | — | किसी योजना के सभी योजना आइटम प्राप्त करें (ट्री संरचना लौटाता है) |
+| GET | `/presenter/:churchId/:planId` | Public | — | presenter दृश्य के लिए योजना आइटम प्राप्त करें (ट्री संरचना लौटाता है) |
+| POST | `/` | JWT | — | योजना आइटम बनाएँ या अपडेट करें |
+| POST | `/sort` | JWT | — | योजना आइटम का सॉर्ट क्रम अपडेट करें (भाई-बहनों को पुनः क्रमबद्ध करता है) |
+| DELETE | `/:id` | JWT | — | योजना आइटम हटाएँ |
 
-## Plan Feed
+## योजना फ़ीड (Plan Feed)
 
 Base path: `/doing/planFeed`
 
-presenter के लिए plan item feeds प्रदान करता है। यदि कोई plan items मौजूद नहीं हैं, तो योजना के `contentId` का उपयोग करके Lessons.church venue feed से स्वतः भरता है।
+presenter के लिए योजना आइटम फ़ीड प्रदान करता है। यदि कोई योजना आइटम मौजूद नहीं हैं, तो योजना के `contentId` का उपयोग करके Lessons.church venue फ़ीड से अपने आप भरता है।
 
-| Method | Path | Auth | Permission | विवरण |
-|--------|------|------|------------|-------------|
-| GET | `/presenter/:churchId/:planId` | Public | — | presenter के लिए plan feed प्राप्त करें (खाली होने पर venue feed से स्वतः भरता है) |
+| विधि | पथ | Auth | अनुमति | विवरण |
+|------|------|------|------------|-------------|
+| GET | `/presenter/:churchId/:planId` | Public | — | presenter के लिए योजना फ़ीड प्राप्त करें (खाली होने पर venue फ़ीड से अपने आप भरता है) |
 
-## Positions
+## पद (Positions)
 
 Base path: `/doing/positions`
 
-Extends CRUD base class (GET `/:id`, POST `/`, DELETE `/:id` — कोई अनुमति जाँच नहीं)।
+CRUD बेस क्लास का विस्तार (GET `/:id`, POST `/`, DELETE `/:id` — कोई अनुमति जाँच नहीं)।
 
-| Method | Path | Auth | Permission | विवरण |
-|--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | ID से position प्राप्त करें |
-| GET | `/ids?ids=` | JWT | — | अल्पविराम से अलग IDs द्वारा कई positions प्राप्त करें |
-| GET | `/plan/ids?planIds=` | JWT | — | अल्पविराम से अलग plan IDs द्वारा कई योजनाओं के positions प्राप्त करें |
-| GET | `/plan/:planId` | JWT | — | किसी योजना के सभी positions प्राप्त करें |
-| POST | `/` | JWT | — | positions बनाएँ या अपडेट करें |
-| DELETE | `/:id` | JWT | — | position हटाएँ |
+| विधि | पथ | Auth | अनुमति | विवरण |
+|------|------|------|------------|-------------|
+| GET | `/:id` | JWT | — | ID से पद प्राप्त करें |
+| GET | `/ids?ids=` | JWT | — | अल्पविराम से अलग IDs द्वारा कई पद प्राप्त करें |
+| GET | `/plan/ids?planIds=` | JWT | — | अल्पविराम से अलग योजना IDs द्वारा कई योजनाओं के पद प्राप्त करें |
+| GET | `/plan/:planId` | JWT | — | किसी योजना के सभी पद प्राप्त करें |
+| POST | `/` | JWT | — | पद बनाएँ या अपडेट करें |
+| DELETE | `/:id` | JWT | — | पद हटाएँ |
 
-## Times
+## समय (Times)
 
 Base path: `/doing/times`
 
-| Method | Path | Auth | Permission | विवरण |
-|--------|------|------|------------|-------------|
-| GET | `/all` | JWT | — | चर्च के लिए सभी समय सूचीबद्ध करें |
+| विधि | पथ | Auth | अनुमति | विवरण |
+|------|------|------|------------|-------------|
+| GET | `/all` | JWT | — | चर्च के सभी समय सूचीबद्ध करें |
 | GET | `/:id` | JWT | — | ID से समय प्राप्त करें |
-| GET | `/plans?planIds=` | JWT | — | अल्पविराम से अलग plan IDs द्वारा कई योजनाओं के समय प्राप्त करें |
+| GET | `/plans?planIds=` | JWT | — | अल्पविराम से अलग योजना IDs द्वारा कई योजनाओं के समय प्राप्त करें |
 | GET | `/plan/:planId` | JWT | — | किसी योजना के सभी समय प्राप्त करें |
 | POST | `/` | JWT | — | समय बनाएँ या अपडेट करें |
 | DELETE | `/:id` | JWT | — | समय हटाएँ |
 
-## Assignments
+## असाइनमेंट (Assignments)
 
 Base path: `/doing/assignments`
 
-| Method | Path | Auth | Permission | विवरण |
-|--------|------|------|------------|-------------|
+| विधि | पथ | Auth | अनुमति | विवरण |
+|------|------|------|------------|-------------|
 | GET | `/my` | JWT | — | वर्तमान उपयोगकर्ता के असाइनमेंट प्राप्त करें |
-| GET | `/my/upcoming` | JWT | — | वर्तमान उपयोगकर्ता के कल से शुरू होने वाली तारीखों की योजनाओं पर अधिकतम 20 असाइनमेंट, सबसे नज़दीक पहले (penciled-in, या `prepared`, योजनाएँ छोड़ी जाती हैं): `{ assignmentId, status, positionName, planId, planName, serviceDate }`। सदस्य होम पृष्ठ पर सेवा पूर्वावलोकन को सपोर्ट करता है |
+| GET | `/my/upcoming` | JWT | — | वर्तमान उपयोगकर्ता के कल से आगे की तारीख वाली योजनाओं के अधिकतम 20 असाइनमेंट (penciled-in, या `prepared`, योजनाएँ छोड़ी जाती हैं), सबसे पहले वाले पहले: `{ assignmentId, status, positionName, planId, planName, serviceDate }`। सदस्य होम पृष्ठ पर सेवा पूर्वावलोकन का समर्थन करता है |
 | GET | `/:id` | JWT | — | ID से असाइनमेंट प्राप्त करें |
-| GET | `/plan/ids?planIds=` | JWT | — | अल्पविराम से अलग plan IDs द्वारा कई योजनाओं के असाइनमेंट प्राप्त करें |
+| GET | `/plan/ids?planIds=` | JWT | — | अल्पविराम से अलग योजना IDs द्वारा कई योजनाओं के असाइनमेंट प्राप्त करें |
 | GET | `/plan/:planId` | JWT | — | किसी योजना के सभी असाइनमेंट प्राप्त करें |
 | POST | `/` | JWT | — | असाइनमेंट बनाएँ या अपडेट करें (स्थिति डिफ़ॉल्ट रूप से "Unconfirmed") |
-| POST | `/accept/:id` | JWT | — | असाइनमेंट स्वीकार करें (असाइन किए गए व्यक्ति को ही होना चाहिए) |
-| POST | `/decline/:id` | JWT | — | असाइनमेंट अस्वीकार करें (असाइन किए गए व्यक्ति को ही होना चाहिए) |
-| POST | `/signup` | JWT | — | किसी पद के लिए स्व-साइनअप। Body: `{ positionId }`। पद को स्व-साइनअप की अनुमति और जगह होनी चाहिए; एक Accepted असाइनमेंट बनाता है। योजना की साइनअप डेडलाइन (जैसा ऊपर, पहले सेवा समय से पीछे गिना गया) बीत जाने पर "Signup deadline has passed" के साथ अस्वीकृत |
-| DELETE | `/signup/:id` | JWT | — | अपना स्व-साइनअप हटाएँ। योजना की साइनअप डेडलाइन के बाद "Removal deadline has passed" के साथ अस्वीकृत |
+| POST | `/accept/:id` | JWT | — | असाइनमेंट स्वीकार करें (असाइन किया गया व्यक्ति ही होना चाहिए) |
+| POST | `/decline/:id` | JWT | — | असाइनमेंट अस्वीकार करें (असाइन किया गया व्यक्ति ही होना चाहिए) |
+| POST | `/signup` | JWT | — | किसी पद के लिए स्व-साइनअप। बॉडी: `{ positionId }`। पद को स्व-साइनअप की अनुमति और जगह होनी चाहिए; एक Accepted असाइनमेंट बनता है। योजना की साइनअप समय-सीमा (ऊपर की तरह उसके पहले सेवा समय से पीछे गिनी गई) बीत जाने पर "Signup deadline has passed" के साथ अस्वीकार |
+| DELETE | `/signup/:id` | JWT | — | अपना स्व-साइनअप हटाएँ। योजना की साइनअप समय-सीमा के बाद "Removal deadline has passed" के साथ अस्वीकार |
 | DELETE | `/:id` | JWT | — | असाइनमेंट हटाएँ |
 
-### उदाहरण: एक असाइनमेंट स्वीकार करना
+### उदाहरण: असाइनमेंट स्वीकार करना
 
 ```
 POST /doing/assignments/accept/assign-123
@@ -160,124 +160,124 @@ Authorization: Bearer <token>
 }
 ```
 
-## Blockout Dates
+## ब्लॉकआउट तारीखें (Blockout Dates)
 
 Base path: `/doing/blockoutDates`
 
-Extends CRUD base class (GET `/:id`, DELETE `/:id` — कोई अनुमति जाँच नहीं)।
+CRUD बेस क्लास का विस्तार (GET `/:id`, DELETE `/:id` — कोई अनुमति जाँच नहीं)।
 
-| Method | Path | Auth | Permission | विवरण |
-|--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | ID से blockout date प्राप्त करें |
-| GET | `/ids?ids=` | JWT | — | अल्पविराम से अलग IDs द्वारा कई blockout dates प्राप्त करें |
-| GET | `/my` | JWT | — | वर्तमान उपयोगकर्ता के blockout dates प्राप्त करें |
-| GET | `/upcoming` | JWT | — | चर्च के लिए सभी आगामी blockout dates प्राप्त करें |
-| POST | `/` | JWT | — | blockout dates बनाएँ या अपडेट करें (personId प्रदान न होने पर डिफ़ॉल्ट रूप से वर्तमान उपयोगकर्ता) |
-| DELETE | `/:id` | JWT | — | blockout date हटाएँ |
+| विधि | पथ | Auth | अनुमति | विवरण |
+|------|------|------|------------|-------------|
+| GET | `/:id` | JWT | — | ID से ब्लॉकआउट तारीख प्राप्त करें |
+| GET | `/ids?ids=` | JWT | — | अल्पविराम से अलग IDs द्वारा कई ब्लॉकआउट तारीखें प्राप्त करें |
+| GET | `/my` | JWT | — | वर्तमान उपयोगकर्ता की ब्लॉकआउट तारीखें प्राप्त करें |
+| GET | `/upcoming` | JWT | — | चर्च की सभी आगामी ब्लॉकआउट तारीखें प्राप्त करें |
+| POST | `/` | JWT | — | ब्लॉकआउट तारीखें बनाएँ या अपडेट करें (personId न मिलने पर डिफ़ॉल्ट रूप से वर्तमान उपयोगकर्ता) |
+| DELETE | `/:id` | JWT | — | ब्लॉकआउट तारीख हटाएँ |
 
-## Tasks
+## कार्य (Tasks)
 
 Base path: `/doing/tasks`
 
-| Method | Path | Auth | Permission | विवरण |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | वर्तमान उपयोगकर्ता के खुले कार्य प्राप्त करें |
+| विधि | पथ | Auth | अनुमति | विवरण |
+|------|------|------|------------|-------------|
+| GET | `/` | JWT | — | वर्तमान उपयोगकर्ता के लिए खुले कार्य प्राप्त करें |
 | GET | `/:id` | JWT | — | ID से कार्य प्राप्त करें |
-| GET | `/:id/contact` | JWT | कार्ड देख सकने की अनुमति | उस व्यक्ति की संपर्क जानकारी जिसके बारे में workflow कार्ड है: `{ personId, displayName, mobilePhone, email }`। People पहुँच के बिना असाइन किए गए कॉलर को व्यक्ति तक पहुँचने देता है |
+| GET | `/:id/contact` | JWT | कार्ड देख सकने वाला | जिस व्यक्ति के बारे में वर्कफ़्लो कार्ड है उसकी संपर्क जानकारी: `{ personId, displayName, mobilePhone, email }`। असाइन किए गए कॉलर को, जिसके पास People पहुँच नहीं है, व्यक्ति से संपर्क करने देता है |
 | GET | `/closed` | JWT | — | वर्तमान उपयोगकर्ता के बंद कार्य प्राप्त करें |
-| GET | `/timeline?taskIds=` | JWT | — | अल्पविराम से अलग task IDs द्वारा कार्यों का timeline डेटा प्राप्त करें |
-| GET | `/directoryUpdate/:personId` | JWT | — | किसी व्यक्ति के लिए directory update कार्य प्राप्त करें |
-| POST | `/` | JWT | — | कार्य बनाएँ या अपडेट करें। directory update कार्यों को संभालने के लिए `?type=directoryUpdate` जोड़ें (फ़ोटो स्वतः अपलोड होती हैं) |
-| POST | `/:id/conversation` | JWT | `tasks.edit` या कार्ड असाइनी | कार्ड से notes conversation जोड़ें। Body: `{ conversationId }`। पहली जुड़ी conversation जीतती है; बाद के कॉल कार्ड को बदले बिना लौटाते हैं |
-| POST | `/loadForGroups` | JWT | — | विशिष्ट समूहों के लिए कार्य लोड करें। Body: `{ groupIds: [], status: "Open" }` |
+| GET | `/timeline?taskIds=` | JWT | — | अल्पविराम से अलग कार्य IDs द्वारा कार्यों का टाइमलाइन डेटा प्राप्त करें |
+| GET | `/directoryUpdate/:personId` | JWT | — | किसी व्यक्ति का डायरेक्टरी अपडेट कार्य प्राप्त करें |
+| POST | `/` | JWT | — | कार्य बनाएँ या अपडेट करें। डायरेक्टरी अपडेट कार्यों को संभालने के लिए `?type=directoryUpdate` जोड़ें (फ़ोटो अपने आप अपलोड होती हैं) |
+| POST | `/:id/conversation` | JWT | `tasks.edit` या कार्ड असाइनी | कार्ड से नोट्स बातचीत जोड़ें। बॉडी: `{ conversationId }`। पहली जुड़ी बातचीत मान्य होती है; बाद की कॉल कार्ड को बिना बदले लौटाती हैं |
+| POST | `/loadForGroups` | JWT | — | विशिष्ट समूहों के लिए कार्य लोड करें। बॉडी: `{ groupIds: [], status: "Open" }` |
 
-## Automations
+## स्वचालन (Automations)
 
 Base path: `/doing/automations`
 
-| Method | Path | Auth | Permission | विवरण |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | चर्च के लिए सभी automations सूचीबद्ध करें |
-| GET | `/:id` | JWT | — | ID से automation प्राप्त करें |
-| GET | `/check` | Public | — | सभी automations की जाँच ट्रिगर करें |
-| POST | `/` | JWT | — | automations बनाएँ या अपडेट करें |
-| DELETE | `/:id` | JWT | — | automation हटाएँ |
+| विधि | पथ | Auth | अनुमति | विवरण |
+|------|------|------|------------|-------------|
+| GET | `/` | JWT | — | चर्च के सभी स्वचालन सूचीबद्ध करें |
+| GET | `/:id` | JWT | — | ID से स्वचालन प्राप्त करें |
+| GET | `/check` | Public | — | सभी स्वचालनों की जाँच शुरू करें |
+| POST | `/` | JWT | — | स्वचालन बनाएँ या अपडेट करें |
+| DELETE | `/:id` | JWT | — | स्वचालन हटाएँ |
 
-## Actions
+## क्रियाएँ (Actions)
 
 Base path: `/doing/actions`
 
-Actions परिभाषित करते हैं कि automation ट्रिगर होने पर क्या होता है।
+क्रियाएँ परिभाषित करती हैं कि स्वचालन ट्रिगर होने पर क्या होता है।
 
-| Method | Path | Auth | Permission | विवरण |
-|--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | ID से action प्राप्त करें |
-| GET | `/automation/:id` | JWT | — | किसी automation की सभी actions प्राप्त करें |
-| POST | `/` | JWT | — | actions बनाएँ या अपडेट करें |
-| DELETE | `/:id` | JWT | — | action हटाएँ |
+| विधि | पथ | Auth | अनुमति | विवरण |
+|------|------|------|------------|-------------|
+| GET | `/:id` | JWT | — | ID से क्रिया प्राप्त करें |
+| GET | `/automation/:id` | JWT | — | किसी स्वचालन की सभी क्रियाएँ प्राप्त करें |
+| POST | `/` | JWT | — | क्रियाएँ बनाएँ या अपडेट करें |
+| DELETE | `/:id` | JWT | — | क्रिया हटाएँ |
 
-## Conditions
+## शर्तें (Conditions)
 
 Base path: `/doing/conditions`
 
-Conditions वे मानदंड परिभाषित करते हैं जो automation को ट्रिगर करते हैं।
+शर्तें वे मानदंड परिभाषित करती हैं जो स्वचालन को ट्रिगर करते हैं।
 
-| Method | Path | Auth | Permission | विवरण |
-|--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | ID से condition प्राप्त करें |
-| GET | `/automation/:id` | JWT | — | किसी automation की सभी conditions प्राप्त करें |
-| POST | `/` | JWT | — | conditions बनाएँ या अपडेट करें |
-| DELETE | `/:id` | JWT | — | condition हटाएँ |
+| विधि | पथ | Auth | अनुमति | विवरण |
+|------|------|------|------------|-------------|
+| GET | `/:id` | JWT | — | ID से शर्त प्राप्त करें |
+| GET | `/automation/:id` | JWT | — | किसी स्वचालन की सभी शर्तें प्राप्त करें |
+| POST | `/` | JWT | — | शर्तें बनाएँ या अपडेट करें |
+| DELETE | `/:id` | JWT | — | शर्त हटाएँ |
 
-## Conjunctions
+## संयोजन (Conjunctions)
 
 Base path: `/doing/conjunctions`
 
-Conjunctions किसी automation में कई conditions को जोड़ते हैं (AND/OR तर्क)।
+संयोजन किसी स्वचालन में कई शर्तों को जोड़ते हैं (AND/OR तर्क)।
 
-| Method | Path | Auth | Permission | विवरण |
-|--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | ID से conjunction प्राप्त करें |
-| GET | `/automation/:id` | JWT | — | किसी automation की सभी conjunctions प्राप्त करें |
-| POST | `/` | JWT | — | conjunctions बनाएँ या अपडेट करें |
-| DELETE | `/:id` | JWT | — | conjunction हटाएँ |
+| विधि | पथ | Auth | अनुमति | विवरण |
+|------|------|------|------------|-------------|
+| GET | `/:id` | JWT | — | ID से संयोजन प्राप्त करें |
+| GET | `/automation/:id` | JWT | — | किसी स्वचालन के सभी संयोजन प्राप्त करें |
+| POST | `/` | JWT | — | संयोजन बनाएँ या अपडेट करें |
+| DELETE | `/:id` | JWT | — | संयोजन हटाएँ |
 
-## Content Provider Auths
+## सामग्री प्रदाता प्रमाणीकरण (Content Provider Auths)
 
 Base path: `/doing/contentProviderAuths`
 
-Extends CRUD base class (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` — कोई अनुमति जाँच नहीं)।
+CRUD बेस क्लास का विस्तार (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` — कोई अनुमति जाँच नहीं)।
 
-बाहरी सामग्री प्रदाताओं (जैसे प्रस्तुति सॉफ़्टवेयर एकीकरण) के लिए OAuth प्रमाणीकरण रिकॉर्ड प्रबंधित करता है।
+बाहरी सामग्री प्रदाताओं (जैसे प्रेज़ेंटेशन सॉफ़्टवेयर एकीकरण) के लिए OAuth प्रमाणीकरण रिकॉर्ड प्रबंधित करता है।
 
-`accessToken` और `refreshToken` `EncryptionHelper` से विश्राम अवस्था में एन्क्रिप्टेड रहते हैं और पढ़ने पर डिक्रिप्ट होते हैं, इसलिए API अब भी सादे टोकन लौटाता है। एन्क्रिप्शन से पहले सहेजी गई पंक्तियों में सादा पाठ होता है (जिसमें कभी `|` नहीं होता); वे जैसी हैं वैसी लौटाई जाती हैं, और अगली बार सहेजे जाने पर एन्क्रिप्ट हो जाती हैं।
+`accessToken` और `refreshToken` को `EncryptionHelper` से संग्रह में एन्क्रिप्ट किया जाता है और पढ़ते समय डिक्रिप्ट किया जाता है, इसलिए API अब भी सादे टोकन लौटाता है। एन्क्रिप्शन से पहले सहेजी गई पंक्तियों में सादा टेक्स्ट है (जिसमें कभी `|` नहीं होता); वे जैसी हैं वैसी लौटाई जाती हैं, और अगली बार सहेजे जाने पर एन्क्रिप्ट हो जाती हैं।
 
-| Method | Path | Auth | Permission | विवरण |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | सभी content provider auths सूचीबद्ध करें |
-| GET | `/:id` | JWT | — | ID से content provider auth प्राप्त करें |
-| GET | `/ids?ids=` | JWT | — | अल्पविराम से अलग IDs द्वारा कई content provider auths प्राप्त करें |
-| GET | `/ministry/:ministryId` | JWT | — | किसी सेवकाई के सभी content provider auths प्राप्त करें |
-| GET | `/ministry/:ministryId/:providerId` | JWT | — | किसी विशिष्ट सेवकाई और प्रदाता के लिए auth रिकॉर्ड प्राप्त करें |
-| POST | `/` | JWT | — | content provider auths बनाएँ या अपडेट करें |
-| DELETE | `/:id` | JWT | — | content provider auth हटाएँ |
+| विधि | पथ | Auth | अनुमति | विवरण |
+|------|------|------|------------|-------------|
+| GET | `/` | JWT | — | सभी सामग्री प्रदाता प्रमाणीकरण सूचीबद्ध करें |
+| GET | `/:id` | JWT | — | ID से सामग्री प्रदाता प्रमाणीकरण प्राप्त करें |
+| GET | `/ids?ids=` | JWT | — | अल्पविराम से अलग IDs द्वारा कई सामग्री प्रदाता प्रमाणीकरण प्राप्त करें |
+| GET | `/ministry/:ministryId` | JWT | — | किसी सेवकाई के सभी सामग्री प्रदाता प्रमाणीकरण प्राप्त करें |
+| GET | `/ministry/:ministryId/:providerId` | JWT | — | किसी विशिष्ट सेवकाई और प्रदाता के लिए प्रमाणीकरण रिकॉर्ड प्राप्त करें |
+| POST | `/` | JWT | — | सामग्री प्रदाता प्रमाणीकरण बनाएँ या अपडेट करें |
+| DELETE | `/:id` | JWT | — | सामग्री प्रदाता प्रमाणीकरण हटाएँ |
 
-## Provider Proxy
+## प्रदाता प्रॉक्सी (Provider Proxy)
 
 Base path: `/doing/providerProxy`
 
-बाहरी सामग्री प्रदाताओं (जैसे ProPresenter, EasyWorship) को अनुरोध प्रॉक्सी करता है। टोकन समाप्त होने पर स्वचालित रूप से टोकन ताज़ा करता है।
+बाहरी सामग्री प्रदाताओं (जैसे ProPresenter, EasyWorship) के लिए अनुरोधों को आगे भेजता है। टोकन समाप्त होने पर टोकन रिफ़्रेश अपने आप संभालता है।
 
-| Method | Path | Auth | Permission | विवरण |
-|--------|------|------|------------|-------------|
-| POST | `/browse` | JWT | — | सामग्री प्रदाता की फ़ाइलें ब्राउज़ करें। Body: `{ ministryId, providerId, path }` |
-| POST | `/getPresentations` | JWT | — | सामग्री प्रदाता से presentations प्राप्त करें। Body: `{ ministryId, providerId, path }` |
-| POST | `/getPlaylist` | JWT | — | सामग्री प्रदाता से playlist प्राप्त करें। Body: `{ ministryId, providerId, path, resolution }` |
-| POST | `/getInstructions` | JWT | — | सामग्री आइटम के लिए निर्देश प्राप्त करें। Body: `{ ministryId, providerId, path }` |
-| POST | `/getExpandedInstructions` | JWT | — | सामग्री आइटम के लिए विस्तारित निर्देश प्राप्त करें। Body: `{ ministryId, providerId, path }` |
+| विधि | पथ | Auth | अनुमति | विवरण |
+|------|------|------|------------|-------------|
+| POST | `/browse` | JWT | — | सामग्री प्रदाता फ़ाइलें ब्राउज़ करें। बॉडी: `{ ministryId, providerId, path }` |
+| POST | `/getPresentations` | JWT | — | सामग्री प्रदाता से प्रेज़ेंटेशन प्राप्त करें। बॉडी: `{ ministryId, providerId, path }` |
+| POST | `/getPlaylist` | JWT | — | सामग्री प्रदाता से प्लेलिस्ट प्राप्त करें। बॉडी: `{ ministryId, providerId, path, resolution }` |
+| POST | `/getInstructions` | JWT | — | किसी सामग्री आइटम के निर्देश प्राप्त करें। बॉडी: `{ ministryId, providerId, path }` |
+| POST | `/getExpandedInstructions` | JWT | — | किसी सामग्री आइटम के विस्तृत निर्देश प्राप्त करें। बॉडी: `{ ministryId, providerId, path }` |
 
 ## संबंधित पृष्ठ
 
-- [Membership Endpoints](./membership) — लोग, समूह, भूमिकाएँ, और अनुमतियाँ
+- [Membership Endpoints](./membership) — लोग, समूह, भूमिकाएँ और अनुमतियाँ
 - [Attendance Endpoints](./attendance) — सेवा और विज़िट ट्रैकिंग
-- [Module Structure](../module-structure) — कोड संगठन पैटर्न
+- [Module Structure](../module-structure) — कोड संगठन के पैटर्न
