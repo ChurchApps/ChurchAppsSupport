@@ -48,6 +48,12 @@ Your new batch appears in the list, ready for you to add donations.
 - **Failed events** -- if your payment gateway has reported problems, a **Failed events** button (with the number of unresolved events) appears at the top of the page. Click it to show or hide the list of events below the batches.
 - **Import from Stripe** -- click **Import missing Stripe transactions** at the top of the page to open the [Stripe Import](stripe-import.md) tool.
 
+## Who Entered Each Gift
+
+Each gift typed into a batch shows **Entered by** and the person's name under the donor's name, so you can tell who entered it without a signature sheet. B1 records this automatically from whoever is signed in, and editing the gift later doesn't change it. Gifts brought in with **Import CSV** show the person who ran the import.
+
+Online gifts, gifts added by the [Stripe Import](stripe-import.md) tool, and gifts entered before this was added in November 2026 don't show a name.
+
 ## Closing and Reopening a Batch
 
 Once a batch has been counted and deposited, close it so its donations stay exactly as they were when you closed it.
@@ -81,7 +87,7 @@ A common setup is a "Counting Team" role with **Enter Donations** and **View Don
 Open a batch and click **Print** above the donations list to print a paper copy for your counting team or deposit records. The printout includes:
 
 - Your church's letterhead -- your logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) with your church's name beneath it -- then the batch name and the batch date
-- Every donation in the batch, with the donor's name, method, notes, date, and amount (refunded gifts are crossed out and marked as refunded)
+- Every donation in the batch, with the donor's name, who entered it, method, notes, date, and amount (refunded gifts are crossed out and marked as refunded)
 - **Fund Subtotals** -- the total given to each fund in the batch
 - **Batch Total** -- the combined amount for the whole batch
 
