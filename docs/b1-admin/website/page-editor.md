@@ -10,6 +10,10 @@ The B1 page editor is a visual drag-and-drop builder that lets you design your c
 
 </div>
 
+## Training Video
+
+<YouTube id="m2B_JxmfFm4" title="Editing Pages and Navigation in B1" next="Connecting a Custom Domain in B1" nextUrl="/docs/b1-admin/settings/custom-domain" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

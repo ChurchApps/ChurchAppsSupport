@@ -10,6 +10,10 @@ B1.church includes a full website builder at no extra cost. This guide walks you
 
 </div>
 
+## Training Video
+
+<YouTube id="aA4UahZpmXg" title="Launching Your Church Website in B1" next="Editing Pages and Navigation in B1" nextUrl="/docs/b1-admin/website/page-editor" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

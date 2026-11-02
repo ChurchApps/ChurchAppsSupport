@@ -10,6 +10,10 @@ You can point your own domain (for example, **`www.yourchurch.org`**) to your B1
 
 </div>
 
+## Training Video
+
+<YouTube id="L5yaDusHts8" title="Connecting a Custom Domain in B1" />
+
 ## Step 1 — Add the DNS Record First
 
 Before adding your domain in B1, you need to point it to B1's servers at your domain registrar (GoDaddy, Namecheap, Cloudflare, etc.).
