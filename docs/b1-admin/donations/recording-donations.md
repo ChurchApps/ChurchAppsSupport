@@ -114,6 +114,24 @@ Refunds are full refunds only -- there is no way to refund a partial amount from
 The **Refund** button only appears for donations that were paid online (they have a gateway transaction) and are still in **Complete** status. Manually entered donations (cash, check) do not have a gateway transaction to refund -- edit or delete those instead.
 :::
 
+## Printing a Receipt for One Gift
+
+When someone hands in a check, pays for an event or t-shirt, or a visiting organization brings a donation, you can print a receipt for just that gift instead of a whole batch or a year-end statement.
+
+1. Open the batch that holds the donation.
+2. Click **Receipt** beside **Edit** on the donation's row. You can also click **Receipt** at the bottom of the Edit Donation form.
+3. Click **Print**, or **Close** to go back.
+
+The receipt uses the same layout as the giving statement: your church and the donor (or "Anonymous"), the gift's date and method, each fund and amount, the note, your Giving Note, and the official receipt block if you have set a **Statement format** (see [Giving Statements](giving-statements.md)). The receipt number in that block is the donation's ID.
+
+:::info
+The "no goods or services" wording is only printed when every fund on the gift is marked tax-deductible. If any part of the gift went to a fund that is not tax-deductible, such as an event fee or a purchase, the receipt leaves that wording off so it reads as a payment rather than a charitable gift.
+:::
+
+:::tip
+Online gifts already get an automatic thank-you email, so the receipt is mostly useful for gifts you enter by hand.
+:::
+
 ## Next Steps
 
 - Review your entries using [Donation Reports](donation-reports.md) to verify accuracy
