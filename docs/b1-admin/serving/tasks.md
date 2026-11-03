@@ -31,7 +31,7 @@ By default, only open tasks are shown. Choose **Closed** above the list to see c
 ## Creating a Task
 
 1. On the **My Work** page, click **Add Task**. A **New Task** form opens.
-2. Click the **Associate with** box and choose the person the task is about.
+2. Optionally click the **Associate with** box and choose the person or group the task is about. Leave it blank for a plain to-do that is not about anyone, such as a reminder for yourself.
 3. Click the **Assign to** box. In the **Select a Person or Group** window, search on the **Person** tab, or switch to the **Group** tab and search for a group, then select the result.
 4. Enter a **Title** for the task.
 5. Optionally pick a **Due date**.
@@ -46,7 +46,7 @@ Click on any task to open its detail page. From here you can:
 
 - **Close or reopen the task** -- Click **Close task** when the work is done, or **Reopen task** to open it again.
 - **Reassign the task** -- Click **Assign** to choose a different person or group.
-- **Change who it's about** -- Click **Associate** to pick a different person.
+- **Change who it's about** -- Click **Associate** to pick a different person or group, or choose **No person or group** to clear it.
 - **Change the due date** -- Pick a date in the **Due** field; it saves when you click away. (Tasks created for a [serving assignment confirmation](./workflows.md#serving-assignment-confirmations) show their due date but can't be changed here.)
 - **Add notes** -- Post updates or details for the assignee in the task's notes.
 - **Set reminders** -- See [Task Reminders](#task-reminders) below.
