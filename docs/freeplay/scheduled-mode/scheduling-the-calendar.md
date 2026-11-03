@@ -89,3 +89,4 @@ Paired screens download everything scheduled for the next 7 days, and they check
 - **[Building Playlists](./building-playlists)** - Create the playlists you schedule
 - **[Scheduled Playback on the TV](./scheduled-playback)** - How teacher paced lessons and the remote work on the TV
 - **[Managing Screens and Groups](./managing-screens)** - Add groups and check each screen's downloads
+- **[Keeping Only Part of Every Lesson](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Trim every scheduled lesson in a plan type to the parts your room plays
