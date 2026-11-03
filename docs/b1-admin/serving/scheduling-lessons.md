@@ -83,6 +83,22 @@ To schedule several lessons from the same series at once, click **Schedule Lesso
 
 For Lessons.church, the list also shows the **Venue** each lesson will use, matched by name to the venue you picked for the starting lesson (if a lesson doesn't have that venue, another is used and marked **substituted**). Providers whose lessons have no venue level, such as Go Curriculum, schedule the lessons directly and the Venue column is hidden.
 
+## Keeping Only Part of Every Lesson
+
+If your classroom uses the same parts of every lesson (for example the opening video, the memory verse, and the story questions) and runs the rest live, you can save that trim once per plan type instead of editing every plan:
+
+1. Open one scheduled lesson's plan and click **Customize**
+2. Delete the sections you don't use, as you normally would. To keep only one step of a section, such as the memory verse video, expand that section into its steps and delete the others
+3. Under the order of service, click **Use this for every lesson in Elementary** (the link names your plan type)
+4. Check the list of parts to keep. Leave **Also trim the upcoming lessons already scheduled** checked to trim the lessons you have already scheduled into this plan type (this replaces their order of service)
+5. Click **Save**
+
+From then on, every lesson scheduled into that plan type with **Schedule Lesson**, **Bulk Schedule**, **Apply Year Plan**, or **Link Lesson** comes out already trimmed to the same parts, so FreePlay plays only those parts on the classroom TV. Parts are matched by name, so a section that is renamed slightly ("Bible Story Questions" instead of "Big Bible Story Questions") is still found. A step inside a section whose name changes every week, like a memory verse video named after its reference, is kept by its place in the section.
+
+When a lesson doesn't fit the pattern (a part is missing, has no video or image that week, or was kept by its place instead of its name), that plan is still trimmed to what matched and is flagged: a warning appears under the plan in the plan list and at the top of the plan page, and the ministry's leaders get a notification. Check that plan's order of service before Sunday. The warning goes away when you edit the order of service or click **Dismiss**. If nothing in a lesson matches, the lesson is left whole and flagged.
+
+Plans that already have an order of service are not changed when they are scheduled. To change the saved trim, customize another plan and click **Replace the saved trim for Elementary** (again named for your plan type). To stop trimming, open the plan type's **Edit** dialog and click **Clear** next to **Lesson trim**.
+
 ## Go Curriculum Leader Guides
 
 When you schedule a Go Curriculum lesson, the plan's service order is built from the lesson's **Large Group** leader guide: each part of the guide becomes a section, and each step inside it is listed with its type (such as say, do, play, or note) and its text. Steps that play a video or other media carry that file with them, so it plays in order. (A lesson without a Large Group guide falls back to a plain list of its media files.)
