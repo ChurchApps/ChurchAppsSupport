@@ -12,7 +12,7 @@ Get your sermon archive online and set up live streaming — from importing your
 
 ## Training Video
 
-<YouTube id="b3B3A25g2Sk" title="Building Your Sermon Library in B1" />
+<YouTube id="b3B3A25g2Sk" title="Building Your Sermon Library in B1" next="Setting Up Live Streaming in B1" nextUrl="/docs/b1-admin/sermons/live-streaming" />
 
 <div class="prereqs">
 <h4>Before You Begin</h4>

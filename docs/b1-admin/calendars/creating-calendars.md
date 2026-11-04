@@ -12,7 +12,7 @@ Creating a calendar in B1 Admin lets you build a curated view of events by conne
 
 ## Training Video
 
-<YouTube id="Ko3kgsCSLFs" title="Creating Calendars, Events, and Room Bookings in B1" />
+<YouTube id="Ko3kgsCSLFs" title="Creating Calendars, Events, and Room Bookings in B1" next="Event Registration and Paid Events in B1" nextUrl="/docs/b1-admin/calendars/paid-registrations" />
 
 <div class="prereqs">
 <h4>Before You Begin</h4>

@@ -10,6 +10,10 @@ Your profile page in the member portal lets you update your contact information,
 
 </div>
 
+## Training Video
+
+<YouTube id="SKqr2A_jdRQ" title="Updating Your Profile and Notifications" next="Joining a Group and Chatting With It" nextUrl="/docs/b1-church/groups/browsing-groups" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

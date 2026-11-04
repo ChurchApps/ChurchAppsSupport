@@ -10,6 +10,10 @@ The Mobile App Settings page lets you configure the navigation tabs that appear 
 
 </div>
 
+## Training Video
+
+<YouTube id="ydY7WGK16fE" title="Customizing Your Church's Member App in B1" />
+
 :::info The native B1 Mobile app is deprecated
 Tabs configured here are delivered through the [B1.church Progressive Web App (PWA)](/docs/b1-church/getting-started/installing-pwa), which has replaced the native B1 Mobile app. Share your church's install page — `https://yourchurchname.b1.church/mobile/install` — with members; it walks them through installing the app on their device, with no App Store or Google Play download required.
 :::
