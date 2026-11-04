@@ -10,6 +10,10 @@ Event registration can go beyond a simple head count. You can define priced atte
 
 </div>
 
+## Training Video
+
+<YouTube id="eGSZv24Dlzk" title="Event Registration and Paid Events in B1" next="Launching Your Church Website in B1" nextUrl="/docs/b1-admin/guides/launch-website" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

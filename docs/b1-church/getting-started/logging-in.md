@@ -10,6 +10,10 @@ Logging in to B1.church gives you access to the member portal where you can see 
 
 </div>
 
+## Training Video
+
+<YouTube id="Y5dVC9D6cLs" title="Logging In and Installing the B1.church App" next="Updating Your Profile and Notifications" nextUrl="/docs/b1-church/getting-started/editing-your-profile" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

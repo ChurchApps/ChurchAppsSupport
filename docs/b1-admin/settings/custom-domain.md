@@ -12,7 +12,7 @@ You can point your own domain (for example, **`www.yourchurch.org`**) to your B1
 
 ## Training Video
 
-<YouTube id="L5yaDusHts8" title="Connecting a Custom Domain in B1" />
+<YouTube id="L5yaDusHts8" title="Connecting a Custom Domain in B1" next="Setting Up Live Streaming in B1" nextUrl="/docs/b1-admin/sermons/live-streaming" />
 
 ## Step 1 — Add the DNS Record First
 

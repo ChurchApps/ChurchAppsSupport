@@ -10,6 +10,10 @@ Your church's public groups page makes it easy to discover groups that interest 
 
 </div>
 
+## Training Video
+
+<YouTube id="2tDaqvzhrng" title="Joining a Group and Chatting With It" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
