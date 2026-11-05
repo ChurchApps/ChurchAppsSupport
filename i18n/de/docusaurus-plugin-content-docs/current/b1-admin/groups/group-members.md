@@ -144,7 +144,7 @@ Klicken Sie in der Mitgliederliste der Gruppe oberhalb der Liste auf das Symbol 
 Eine Kontaktliste enthält persönliche Kontaktdaten der Mitglieder. Geben Sie gedruckte Exemplare nur an die Leitenden der Gruppe und andere weiter, die sie benötigen.
 :::
 
-## Push-Benachrichtigungen an Gruppenmitglieder senden
+## Push-Benachrichtigungen an Gruppenmitglieder senden {#sending-push-notifications-to-group-members}
 
 Sie können eine Push-Benachrichtigung direkt an alle Gruppenmitglieder senden, die die App B1.church auf ihrem Gerät installiert und Push-Benachrichtigungen aktiviert haben.
 

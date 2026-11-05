@@ -1,49 +1,53 @@
 ---
-title: "Bla Gjennom Grupper"
+title: "Bla gjennom grupper"
 ---
 
-# Bla Gjennom Grupper
+# Bla gjennom grupper
 
 <div class="article-intro">
 
-Kirkens offentlige gruppeside gjør det enkelt å oppdage grupper som interesserer deg. Grupper er organisert etter kategori, slik at du raskt kan skanne gjennom ulike typer grupper og finne den rette.
+Menighetens offentlige gruppeside gjør det enkelt å finne grupper som interesserer deg. Gruppene er ordnet etter kategori, slik at du raskt kan gå gjennom ulike typer grupper og finne den som passer deg.
 
 </div>
+
+## Opplæringsvideo
+
+<YouTube id="2tDaqvzhrng" title="Joining a Group and Chatting With It" />
 
 <div class="prereqs">
-<h4>Før Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- Ingen innlogging er nødvendig for å bla gjennom grupper. Men å [logge inn](../getting-started/logging-in.md) gir deg tilgang til tilleggsfunksjoner på hver gruppes detaljside.
+- Du trenger ikke å logge inn for å bla i grupper. Men [innlogging](../getting-started/logging-in.md) gir deg tilgang til flere funksjoner på hver gruppes detaljside.
 
 </div>
 
-## Finne Gruppesiden
+## Finne siden for grupper
 
-Naviger til **Grupper**-siden på kirkens B1.church-nettsted. Denne siden er offentlig tilgjengelig, så du trenger ikke å være logget inn for å bla.
+Gå til siden **Groups** på menighetens B1.church-nettsted. Denne siden er offentlig tilgjengelig, så du trenger ikke å være logget inn for å bla i den.
 
-## Hvordan Grupper Er Organisert
+## Slik er gruppene ordnet
 
-Grupper vises etter **kategori** (også kalt etikett). Kategorier er satt opp av kirkens administratorer og kan inkludere etiketter som "Smågrupper", "Tjenester", "Ungdom" eller "Bibelstudier". Hver kategori viser alle gruppene som tilhører den.
+Grupper vises etter **kategori** (også kalt en etikett). Kategoriene settes opp av menighetens administratorer, og kan for eksempel hete «Small Groups», «Ministries», «Youth» eller «Bible Studies». Hver kategori viser alle gruppene som hører til den.
 
-## Lese Gruppekort
+## Lese gruppekortene
 
 Hver gruppe vises som et kort med følgende informasjon:
 
-- **Gruppebilde** -- Et forsidebilde som representerer gruppen. Hvis ingen bilde er satt, vises et standardbilde.
-- **Gruppenavn** -- Vist fremtredende over bildet.
-- **Møtetid** -- Når gruppen vanligvis møtes (for eksempel "Onsdager kl. 19:00"). Hvis ingen tid er satt, vises en plassholder.
-- **Møtested** -- Hvor gruppen møtes. Hvis ingen sted er satt, vises en plassholder.
-- **Beskrivelse** -- En kort forhåndsvisning av hva gruppen handler om, begrenset til noen få linjer. Klikk på gruppen for å lese fullstendig beskrivelse.
+- **Group photo** -- Et omslagsbilde som representerer gruppen. Hvis det ikke er satt noe bilde, vises et standardbilde.
+- **Group name** -- Vises tydelig over bildet.
+- **Meeting time** -- Når gruppen vanligvis møtes (for eksempel «Wednesdays at 7 PM»). Hvis ingen tid er satt, vises en plassholder.
+- **Meeting location** -- Hvor gruppen møtes. Hvis ingen sted er satt, vises en plassholder.
+- **Description** -- En kort forhåndsvisning av hva gruppen handler om, begrenset til noen få linjer. Klikk på gruppen for å lese hele beskrivelsen.
 
-## Se en Gruppe
+## Se en gruppe
 
-Klikk på et gruppekort for å åpne den fullstendige gruppedetaljsiden. Der finner du fullstendig beskrivelse, informasjon om gruppens ledere, kommende kalenderbegivenheter og en måte å komme i kontakt.
+Klikk på et hvilket som helst gruppekort for å åpne den fullstendige detaljsiden for gruppen. Der finner du hele beskrivelsen, informasjon om gruppens ledere, kommende kalenderarrangementer og en måte å komme i kontakt på.
 
 :::tip
-Hvis du leter etter en spesifikk type gruppe, skann kategorihoverskriftene først. Dette hjelper deg å hoppe direkte til seksjonen som interesserer deg i stedet for å bla gjennom alle grupper.
+Hvis du leter etter en bestemt type gruppe, les overskriftene for kategoriene først. Da kan du hoppe rett til delen som interesserer deg, i stedet for å scrolle gjennom alle gruppene.
 :::
 
-## Neste Steg
+## Neste steg
 
-- [Gruppedetaljer](./group-details.md) -- Lær hva du finner på gruppedetaljsiden
-- [Gruppesamtaler](./conversations.md) -- Se hvordan du deltar i gruppediskusjoner etter at du har blitt med
+- [Gruppedetaljer](./group-details.md) -- hva du finner på detaljsiden for en gruppe
+- [Gruppesamtaler](./conversations.md) -- hvordan du deltar i gruppediskusjoner når du er med i gruppen

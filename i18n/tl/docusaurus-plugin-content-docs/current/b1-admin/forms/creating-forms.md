@@ -12,7 +12,7 @@ Gumawa ng sariling mga form para mangolekta ng impormasyon mula sa iyong kongreg
 
 ## Training Video
 
-<YouTube id="sr9wxEj9ghQ" title="Creating Forms and Managing Submissions in B1" />
+<YouTube id="sr9wxEj9ghQ" title="Creating Forms and Managing Submissions in B1" next="Launching Your Church Website in B1" nextUrl="/docs/b1-admin/guides/launch-website" />
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>

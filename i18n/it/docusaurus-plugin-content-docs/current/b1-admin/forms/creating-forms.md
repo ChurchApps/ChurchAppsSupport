@@ -12,7 +12,7 @@ Crea moduli personalizzati per raccogliere informazioni dalla tua comunità. Puo
 
 ## Video di formazione
 
-<YouTube id="sr9wxEj9ghQ" title="Creare moduli e gestire le risposte in B1" />
+<YouTube id="sr9wxEj9ghQ" title="Creare moduli e gestire le risposte in B1" next="Lanciare il sito web della tua chiesa in B1" nextUrl="/docs/b1-admin/guides/launch-website" />
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
@@ -36,7 +36,7 @@ Il tuo nuovo modulo comparirà nell'elenco. Cliccaci sopra per iniziare ad aggiu
 
 ## Stampare un modulo vuoto {#printing-a-blank-form}
 
-Ti serve una copia cartacea da distribuire -- ad esempio una scheda visitatori per la postazione di accoglienza, oppure un modulo che qualcuno senza accesso a internet può compilare a mano? Clicca su **Stampa** accanto a un modulo nell'elenco principale dei Moduli per aprire un'anteprima, poi clicca su **Stampa**. I campi vuoti vengono stampati con una linea o una casella per ogni domanda così le persone possono compilarli a mano; le domande obbligatorie sono contrassegnate con un asterisco. In cima alla pagina compare il logo della tua chiesa (il **Logo per sfondo chiaro** di [Sito web > Aspetto](../website/appearance.md), se ne hai caricato uno) con il nome della chiesa sotto, poi il nome del modulo. Non ci sono altre opzioni di stampa -- si stampa l'intero modulo oppure niente.
+Ti serve una copia cartacea da distribuire -- ad esempio una scheda visitatori per la postazione di accoglienza, oppure un modulo che qualcuno senza accesso a internet può compilare a mano? Clicca su **Stampa** accanto a un modulo nell'elenco principale dei Moduli per aprire un'anteprima, poi clicca su **Stampa**. I campi vuoti vengono stampati con una linea o una casella per ogni domanda, così le persone possono compilarli a mano; le domande obbligatorie sono contrassegnate con un asterisco. In cima alla pagina compare il logo della tua chiesa (il **Logo per sfondo chiaro** di [Sito web > Aspetto](../website/appearance.md), se ne hai caricato uno) con il nome della chiesa sotto, poi il nome del modulo. Non ci sono altre opzioni di stampa -- si stampa l'intero modulo oppure niente.
 
 ## Condividere un modulo con un codice QR {#sharing-a-form-with-a-qr-code}
 
@@ -50,7 +50,7 @@ I moduli Indipendenti hanno accanto a sé un link **Codice QR** nell'elenco prin
    - **Casella di testo** — Per risposte brevi di testo
    - **Data** — Per la selezione di una data
    - **Email** — Per indirizzi email
-   - **Numero di telefono** — Per l'inserimento di un telefono
+   - **Numero di telefono** — Per l'inserimento di un numero di telefono
    - **Scelta multipla** — Per selezionare tra opzioni predefinite
    - **Pagamento** — Per riscuotere pagamenti
 4. Inserisci un **Titolo** e una **Descrizione** facoltativa per la domanda. La descrizione compare sotto la domanda quando le persone compilano il modulo, quindi usala per dare suggerimenti come "Indica eventuali allergie di cui dovremmo essere a conoscenza."
@@ -81,15 +81,15 @@ Una volta collegato un modulo:
 
 - I **membri del gruppo** vedono il modulo in una sezione **Moduli** nella pagina del gruppo su B1.church finché il modulo è aperto, con un pulsante **Compila** che lo apre (vedi [Dettagli del gruppo](../../b1-church/groups/group-details.md#linked-forms)).
 - I **leader del gruppo** vedono anche i moduli chiusi, e possono leggere le risposte di ogni invio e stamparle (un singolo invio oppure **Stampa tutto**). I leader possono solo visualizzare le risposte -- non possono modificare il modulo a meno che non siano anche [membri del modulo](#managing-form-members).
-- **In B1 Admin**, la pagina del gruppo mostra una sezione **Moduli collegati** che elenca ogni modulo collegato come **Aperto** o **Chiuso**. Compare per i leader del gruppo e per le persone che possono amministrare i moduli. Vedi [Membri del gruppo](../groups/group-members.md#linked-forms).
+- **In B1 Admin**, la pagina del gruppo mostra una sezione **Moduli collegati** che elenca ogni modulo collegato come **Aperto** o **Chiuso**. La sezione compare per i leader del gruppo e per le persone che possono amministrare i moduli. Vedi [Membri del gruppo](../groups/group-members.md#linked-forms).
 
-Un modulo è chiuso quando si trova al di fuori del periodo di disponibilità. I moduli archiviati non vengono mostrati nella pagina del gruppo.
+Un modulo è chiuso quando si trova al di fuori del suo periodo di disponibilità. I moduli archiviati non vengono mostrati nella pagina del gruppo.
 
 ### Aggiungere automaticamente chi invia il modulo a un gruppo {#automatically-adding-submitters-to-a-group}
 
 Collegare un modulo a un gruppo non aggiunge di per sé nessuno al gruppo. Per aggiungere ogni persona che invia il modulo all'elenco del gruppo collegato, attiva anche **Crea una scheda persona dalle risposte** nei dettagli del modulo e clicca su **Salva**.
 
-Ogni volta che qualcuno invia il modulo, la persona abbinata o appena creata viene aggiunta al gruppo (i membri già presenti vengono saltati). Questo è utile per cose come un modulo di iscrizione a un campo estivo che deve creare automaticamente il gruppo elenco del campo.
+Ogni volta che qualcuno invia il modulo, la persona abbinata o appena creata viene aggiunta al gruppo (i membri già presenti vengono saltati). Questo è utile per situazioni come un modulo di iscrizione a un campo estivo che deve creare automaticamente l'elenco del gruppo del campo.
 
 ### Inviare un'email di follow-up {#sending-a-follow-up-email}
 
@@ -118,7 +118,7 @@ I moduli Indipendenti possono mostrare una **Foto di intestazione** in cima al m
 Usa il campo **Messaggio di ringraziamento** per impostare ciò che le persone vedono dopo aver inviato il modulo, anche nella pagina dell'URL pubblico del modulo. Se lo lasci vuoto, vedono "Grazie per aver inviato il modulo!"
 
 :::tip
-I moduli Indipendenti sono ottimi per le iscrizioni agli eventi. Condividi l'URL pubblico via email, sui social media, oppure incorpora il modulo direttamente sul sito web della chiesa.
+I moduli Indipendenti sono ottimi per le iscrizioni agli eventi. Condividi l'URL pubblico via email o sui social media, oppure incorpora il modulo direttamente sul sito web della chiesa.
 :::
 
 :::info

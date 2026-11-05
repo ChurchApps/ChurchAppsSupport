@@ -10,11 +10,15 @@ title: Introducción a B1.church
 
 </div>
 
+## Video de capacitación
+
+<YouTube id="o4KfSQrRooE" title="¿Qué es B1.church?" />
+
 Para más ayuda, escribe a [support@churchapps.org](mailto:support@churchapps.org).
 
 ## Video introductorio
 
-<YouTube id="D2iUhe0ZZhI" title="A Tour of B1 Admin" next="A Tour of the B1.church Member App" nextUrl="/docs/b1-church/getting-started/navigating" />
+<YouTube id="D2iUhe0ZZhI" title="Un recorrido por B1 Admin" next="Un recorrido por la aplicación de miembros de B1.church" nextUrl="/docs/b1-church/getting-started/navigating" />
 
 ## Recorrido
 
@@ -54,32 +58,32 @@ En estos documentos, un paso como "En el menú Jump, elige **Personas > Grupos**
 
 En lugar de explorar, puedes empezar a escribir en cuanto se abra el menú para ir directamente a una persona, grupo, plan, fondo o cualquier página de administración:
 
-1. Escribe un nombre o la página que buscas (por ejemplo, el nombre de una persona, "lotes", "canciones" o "mi trabajo"). Cada página dentro de una sección se puede encontrar así, junto con cada paso de **Acciones rápidas**. Los términos comunes también funcionan: "código QR" encuentra **Registro de invitados con QR**, y "subir logotipo" encuentra **Apariencia**. Los guiones no importan ("b1 checkin" encuentra **Iniciar registro**), y si tu frase exacta no encuentra nada, la búsqueda busca resultados que contengan todas tus palabras en cualquier orden ("logo iglesia" encuentra **Agregar el logotipo de tu iglesia**).
+1. Escribe un nombre o la página que buscas (por ejemplo, el nombre de una persona, "lotes", "canciones" o "mi trabajo"). Cada página dentro de una sección se puede encontrar así, junto con cada paso de **Acciones rápidas**. Los términos comunes también funcionan: "código QR" encuentra **Registro de invitados con QR**, y "subir logotipo" encuentra **Apariencia**. Los guiones no importan ("b1 checkin" encuentra **Iniciar registro**), y si tu frase exacta no encuentra nada, la búsqueda muestra resultados que contengan todas tus palabras en cualquier orden ("logo iglesia" encuentra **Agregar el logotipo de tu iglesia**).
 2. Los resultados se agrupan por tipo: personas, grupos, planes, fondos y páginas a las que puedes ir. Usa las flechas para moverte entre los resultados y **Enter** para seleccionar uno, o haz clic en un resultado con el mouse.
 
 La búsqueda también puede iniciar tareas comunes. Escribe lo que quieres hacer y selecciónalo:
 
 - **Crear una página**, **Crear un grupo**, **Configurar FreeShow** o **Configurar FreePlay** abre el asistente de configuración rápida correspondiente en el lugar donde estás, sin volver al Panel de control.
 - **Agregar una persona** abre el formulario de nueva persona.
-- **Iniciar registro** abre la aplicación de registro.
+- **Iniciar registro** abre la aplicación de registro de entrada.
 
 Las acciones que ves dependen de tus permisos.
 
 ### Acciones rápidas
 
-El último grupo del menú Jump son las **Acciones rápidas**: los atajos de configuración que antes aparecían en el Panel de control. Expándelo para encontrar pasos como **Agregar el logotipo de tu iglesia**, **Crear tu primera página web**, **Configurar las donaciones en línea**, **Crear tu primer grupo** e **Invitar a miembros del equipo**. Las acciones de configuración abren su asistente de configuración la primera vez; una vez que hayas configurado esa función, te llevan a su página.
+El último grupo del menú Jump son las **Acciones rápidas**: los atajos de configuración que antes aparecían en el Panel de control. Expándelo para encontrar pasos como **Agregar el logotipo de tu iglesia**, **Crear tu primera página web**, **Configurar donaciones en línea**, **Crear tu primer grupo** e **Invitar a miembros del equipo**. Las acciones de configuración abren su asistente la primera vez; una vez que has configurado esa función, te llevan a su página.
 
 :::tip
-Buscar suele ser la forma más rápida de llegar a una página. Escribe parte del nombre de la página (como "roles" o "fondos") en lugar de expandir Configuración, Servicio o Donaciones manualmente.
+Buscar suele ser la forma más rápida de llegar a una página: escribe parte del nombre (como "roles" o "fondos") en lugar de expandir Configuración, Servicio o Donaciones manualmente.
 :::
 
 ## Próximos pasos
 
 Después de ver esta introducción, explora estas funciones clave:
 
-- [Agregar personas](./people/adding-people): aprende a agregar miembros a tu base de datos
-- [Grupos](./groups/): configura y administra los grupos de la iglesia
-- [Planes de servicio](./serving/plans): organiza tu ministerio de servicio
-- [Asistencia](./attendance/): registra la asistencia y el registro
-- [Sitio web](./website/): crea y personaliza el sitio web de tu iglesia
-- [Configuración](./settings/): configura la información de tu iglesia y los permisos
+- [Agregar personas](./people/adding-people) -- Aprende a agregar miembros a tu base de datos
+- [Grupos](./groups/) -- Configura y administra los grupos de tu iglesia
+- [Planes de servicio](./serving/plans) -- Organiza tu ministerio de servicio
+- [Asistencia](./attendance/) -- Registra la asistencia y el registro de entrada
+- [Sitio web](./website/) -- Crea y personaliza el sitio web de tu iglesia
+- [Configuración](./settings/) -- Configura la información y los permisos de tu iglesia

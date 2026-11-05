@@ -114,6 +114,24 @@ Buong refund lamang ang maaari -- walang paraan para i-refund ang bahagi lang ng
 Lalabas lang ang button na **Refund** para sa mga donasyong binayaran online (may gateway transaction ang mga ito) at nasa **Complete** status pa rin. Ang mga donasyong manual na inilagay (cash, tseke) ay walang gateway transaction na ma-refund -- i-edit o burahin na lang ang mga iyon.
 :::
 
+## Pag-print ng Resibo para sa Isang Kaloob
+
+Kapag may nag-abot ng tseke, nagbayad para sa event o t-shirt, o may bisitang organisasyon na nagdala ng donasyon, maaari kang mag-print ng resibo para sa kaloob na iyon lamang, sa halip na buong batch o taunang statement.
+
+1. Buksan ang batch na naglalaman ng donasyon.
+2. I-click ang **Receipt** sa tabi ng **Edit** sa row ng donasyon. Maaari mo ring i-click ang **Receipt** sa ibaba ng Edit Donation form.
+3. I-click ang **Print**, o **Close** para bumalik.
+
+Ang resibo ay gumagamit ng parehong layout ng giving statement: ang iyong simbahan at ang donor (o "Anonymous"), ang petsa at paraan ng kaloob, bawat fund at halaga, ang note, ang iyong Giving Note, at ang opisyal na receipt block kung nagtakda ka ng **Statement format** (tingnan ang [Giving Statements](giving-statements.md)). Ang receipt number sa block na iyon ay ang ID ng donasyon.
+
+:::info
+Ang wording na "no goods or services" ay ipinapakita lamang kapag ang bawat fund sa kaloob ay minarkahang tax-deductible. Kung may bahagi ng kaloob na napunta sa fund na hindi tax-deductible, gaya ng event fee o pagbili, aalisin ng resibo ang wording na iyon para mabasa itong bayad at hindi charitable gift.
+:::
+
+:::tip
+Ang mga online na kaloob ay may awtomatikong thank-you email na, kaya ang resibo ay pangunahing kapaki-pakinabang para sa mga kaloob na manu-mano mong inilagay.
+:::
+
 ## Mga Susunod na Hakbang
 
 - Suriin ang mga entry mo gamit ang [Donation Reports](donation-reports.md) para matiyak ang katumpakan

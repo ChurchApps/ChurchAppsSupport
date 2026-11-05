@@ -6,7 +6,7 @@ title: "Pianificare le lezioni"
 
 <div class="article-intro">
 
-B1 Admin si integra direttamente con [Lessons.church](https://lessons.church) così puoi pianificare il curriculum per le tue aule direttamente all'interno dei tuoi piani di servizio. In questo modo tutto -- volontari, assegnazioni e contenuti delle lezioni -- resta in un unico posto.
+B1 Admin si integra direttamente con [Lessons.church](https://lessons.church) così puoi pianificare il curriculum per le tue aule direttamente all'interno dei tuoi piani di servizio. In questo modo tutto — volontari, assegnazioni e contenuti delle lezioni — resta in un unico posto.
 
 </div>
 
@@ -14,7 +14,7 @@ B1 Admin si integra direttamente con [Lessons.church](https://lessons.church) co
 <h4>Prima di iniziare</h4>
 
 - Configura i tuoi ministeri nell'area Serving
-- Disponi di un account attivo su [Lessons.church](https://lessons.church) -- se la tua chiesa non ne ha ancora uno, registrati prima lì
+- Disponi di un account attivo su [Lessons.church](https://lessons.church) — se la tua chiesa non ne ha ancora uno, registrati prima lì
 
 </div>
 
@@ -39,30 +39,30 @@ Questa operazione va fatta una sola volta per ogni ministero. Devi collegare il 
 La sezione Content Providers è specifica per ogni ministero. Se gestisci più ministeri (ad esempio Children's e Youth), dovrai collegare Lessons.church separatamente per ciascuno.
 :::
 
-Lessons.church non è l'unica opzione. Lo stesso elenco **Link New Provider** offre anche altre fonti di curriculum e file, tra cui SignPresenter, The Bible Project, Jesus Film Project, Go Curriculum, Dropbox, Google Drive e OneDrive. Puoi collegarli nello stesso modo, e compaiono come provider a cui passare quando selezioni una lezione.
+Lessons.church non è l'unica opzione. Lo stesso elenco **Link New Provider** offre anche altre fonti di curriculum e di file, tra cui SignPresenter, The Bible Project, Jesus Film Project, Go Curriculum, Dropbox, Google Drive e OneDrive. Collegali allo stesso modo: compariranno come provider a cui passare quando selezioni una lezione.
 
 ## Passo 2 — Pianifica una lezione
 
 Una volta collegato, puoi pianificare le lezioni direttamente da Plans.
 
 1. In B1 Admin, vai su **Serving → Plans**
-2. Seleziona la scheda del tuo ministero e clicca su **Add Plan Type** (oppure **Create Plan Type** se il ministero non ne ha ancora) -- assegna al tipo di piano un nome come Children's Church o Sunday School
+2. Seleziona la scheda del tuo ministero e clicca su **Add Plan Type** (oppure **Create Plan Type** se il ministero non ne ha ancora) — assegna al tipo di piano un nome come Children's Church o Sunday School
 3. Clicca sul tipo di piano appena creato e poi su **Schedule Lesson**. Da questo menu puoi pianificare una singola lezione, pianificare in blocco una serie oppure usare **Apply Year Plan** per inserire una sequenza annuale pubblicata da Lessons.church.
 4. Seleziona la **data** della lezione (predefinita alla prossima domenica)
-5. Clicca su **Select Lesson** -- si apre una finestra per sfogliare i contenuti
+5. Clicca su **Select Lesson** — si apre una finestra per sfogliare i contenuti
 6. La finestra si apre con **Lessons.church** selezionato come provider (oppure con il provider usato per le lezioni precedenti di questo tipo di piano). Se hai collegato altri provider, puoi passare dall'uno all'altro in cima alla finestra
 7. Sfoglia i contenuti:
    - Seleziona un **Program** (ad esempio "Bible Stories for Kids")
    - Seleziona uno **Study** all'interno di quel programma (ad esempio "Creation and Early Stories")
    - Seleziona la **Lesson** specifica
-   - Seleziona il **Venue** -- ovvero la versione della lezione per la fascia d'età
+   - Seleziona il **Venue** — cioè la versione della lezione per la fascia d'età
 
-   Gli altri provider organizzano i contenuti in modo diverso. Ad esempio, **Go Curriculum** parte da **Elementary** o **Preschool**, poi una serie, poi la lezione stessa -- non c'è un Venue da scegliere.
+   Gli altri provider organizzano i contenuti in modo diverso. Ad esempio, **Go Curriculum** parte da **Elementary** o **Preschool**, poi una serie, poi la lezione stessa — non c'è un Venue da scegliere.
 8. Clicca su **Associate Lesson** per confermare
 9. Scegli l'**opzione di copia** per i volontari:
-   - **Nothing** -- piano nuovo, nessun volontario riportato
-   - **Positions Only** -- copia i ruoli dei volontari dal piano precedente ma non chi è assegnato
-   - **Positions and Assignments** -- copia sia i ruoli sia i volontari assegnati *(la più comune)*
+   - **Nothing** — piano nuovo, nessun volontario riportato
+   - **Positions Only** — copia i ruoli dei volontari dal piano precedente ma non chi è assegnato
+   - **Positions and Assignments** — copia sia i ruoli sia i volontari assegnati *(la più comune)*
 10. Clicca su **Save**
 
 Il piano viene creato e denominato automaticamente (ad esempio "Feb 23 - Elementary"). I volontari possono aprire il piano per vedere le proprie assegnazioni e rivedere i contenuti della lezione prima di domenica.
@@ -78,16 +78,32 @@ Per pianificare più lezioni della stessa serie in una volta sola, clicca su **S
 1. Sotto **Starting Lesson**, clicca su **Select Lesson** e scegli la prima lezione da pianificare
 2. Imposta la **Start Date** e scegli un **Interval** (**Weekly** oppure **Bi-Weekly**)
 3. Scegli cosa copiare dal piano precedente (**Nothing**, **Positions Only** oppure **Positions and Assignments**)
-4. Controlla l'elenco -- la lezione di partenza e il resto della sua serie, ciascuna con una data. Deseleziona quelle che vuoi saltare
+4. Controlla l'elenco — la lezione di partenza e il resto della sua serie, ciascuna con una data. Deseleziona quelle che vuoi saltare
 5. Clicca su **Save** per creare un piano per ogni lezione
 
 Per Lessons.church, l'elenco mostra anche il **Venue** che ogni lezione userà, abbinato per nome al Venue scelto per la lezione di partenza (se una lezione non ha quel Venue, ne viene usato un altro e viene contrassegnata come **substituted**). I provider le cui lezioni non hanno un livello Venue, come Go Curriculum, pianificano le lezioni direttamente e la colonna Venue viene nascosta.
 
+## Mantenere solo una parte di ogni lezione {#keeping-only-part-of-every-lesson}
+
+Se la tua aula usa le stesse parti di ogni lezione (ad esempio il video di apertura, il versetto da memorizzare e le domande sulla storia) e svolge il resto dal vivo, puoi salvare questo ritaglio una volta per tipo di piano invece di modificare ogni singolo piano:
+
+1. Apri il piano di una lezione pianificata e clicca su **Customize**
+2. Elimina le sezioni che non usi, come faresti di solito. Per mantenere un solo passo di una sezione, come il video del versetto da memorizzare, espandi quella sezione nei suoi passi ed elimina gli altri
+3. Sotto l'ordine del servizio, clicca su **Use this for every lesson in Elementary** (il link riporta il nome del tuo tipo di piano)
+4. Controlla l'elenco delle parti da mantenere. Lascia selezionata l'opzione **Also trim the upcoming lessons already scheduled** per ritagliare anche le lezioni già pianificate in questo tipo di piano (questo sostituisce il loro ordine del servizio)
+5. Clicca su **Save**
+
+Da quel momento, ogni lezione pianificata in quel tipo di piano con **Schedule Lesson**, **Bulk Schedule**, **Apply Year Plan** o **Link Lesson** arriva già ritagliata alle stesse parti, così FreePlay riproduce sulla TV dell'aula solo quelle. Le parti vengono abbinate per nome, quindi una sezione rinominata leggermente ("Bible Story Questions" invece di "Big Bible Story Questions") viene comunque trovata. Un passo all'interno di una sezione il cui nome cambia ogni settimana, come un video del versetto da memorizzare che prende il nome dal suo riferimento, viene mantenuto in base alla sua posizione nella sezione.
+
+Quando una lezione non rientra nello schema (una parte manca, non ha un video o un'immagine quella settimana, oppure è stata mantenuta in base alla posizione invece che al nome), quel piano viene comunque ritagliato a ciò che è stato abbinato e viene segnalato: compare un avviso sotto il piano nell'elenco dei piani e in cima alla pagina del piano, e i leader del ministero ricevono una notifica. Controlla l'ordine del servizio di quel piano prima di domenica. L'avviso scompare quando modifichi l'ordine del servizio o clicchi su **Dismiss**. Se nulla di una lezione corrisponde, la lezione resta intera e viene segnalata.
+
+I piani che hanno già un ordine del servizio non vengono modificati quando vengono pianificati. Per cambiare il ritaglio salvato, personalizza un altro piano e clicca su **Replace the saved trim for Elementary** (anche in questo caso con il nome del tuo tipo di piano). Per smettere di ritagliare, apri la finestra **Edit** del tipo di piano e clicca su **Clear** accanto a **Lesson trim**.
+
 ## Guide per i leader di Go Curriculum
 
-Quando pianifichi una lezione di Go Curriculum, l'ordine del servizio del piano viene costruito a partire dalla guida per il leader del **Large Group** della lezione: ogni parte della guida diventa una sezione, e ogni passaggio al suo interno viene elencato con il suo tipo (come say, do, play o note) e il suo testo. I passaggi che riproducono un video o altri contenuti multimediali portano con sé quel file, così viene riprodotto in ordine. (Una lezione senza guida Large Group ripiega su un semplice elenco dei suoi file multimediali.)
+Quando pianifichi una lezione di Go Curriculum, l'ordine del servizio del piano viene costruito a partire dalla guida per il leader del **Large Group** della lezione: ogni parte della guida diventa una sezione, e ogni passo al suo interno viene elencato con il suo tipo (come say, do, play o note) e il suo testo. I passi che riproducono un video o altri contenuti multimediali portano con sé quel file, così viene riprodotto in ordine. (Una lezione senza guida Large Group ripiega su un semplice elenco dei suoi file multimediali.)
 
-Ogni serie che ha materiale per piccoli gruppi inizia anche con una cartella **Small Group Guides**. Aprila e scegli una lezione per pianificare la guida **Small Group** di quella lezione, denominata come "Lesson Name - Small Group" -- utile per un tipo di piano separato dedicato ai piccoli gruppi. Le guide per piccoli gruppi sono composte per lo più da passaggi di discussione e di solito non hanno contenuti multimediali. Poiché la cartella compare per prima, la pianificazione in blocco di una serie a partire da una delle sue lezioni non la include mai.
+Ogni serie che ha materiale per piccoli gruppi inizia anche con una cartella **Small Group Guides**. Aprila e scegli una lezione per pianificare la guida **Small Group** di quella lezione, denominata come "Lesson Name - Small Group" -- utile per un tipo di piano separato dedicato ai piccoli gruppi. Le guide per piccoli gruppi sono composte per lo più da passi di discussione e di solito non hanno contenuti multimediali. Poiché la cartella compare per prima, la pianificazione in blocco di una serie a partire da una delle sue lezioni non la include mai.
 ## Applicare un piano annuale
 
 Se un editore di curriculum ha pubblicato un piano annuale su Lessons.church, puoi caricare l'intera sequenza su questo tipo di piano in un solo passaggio:
@@ -97,7 +113,7 @@ Se un editore di curriculum ha pubblicato un piano annuale su Lessons.church, pu
 3. Se il piano è ancorato al calendario (ad esempio Ark Kids), scegli l'**anno di destinazione**. Gli studi di Pasqua e Natale cadono nelle date di quell'anno. Modifica la data della prima e dell'ultima lezione se stai pianificando solo una parte dell'anno
 4. Se il piano non è ancorato al calendario, imposta la data della prima lezione (la settimana 1 cade in quella data; le settimane successive sono distanziate di sette giorni) e quante settimane generare (12, 24, 44 o 52)
 5. Facoltativamente, copia le posizioni dei volontari dal piano precedente
-6. Visualizza l'anteprima dell'elenco. Deseleziona le settimane che non vuoi -- le lezioni successive in quel periodo si spostano alla domenica libera successiva invece di lasciare un vuoto. Le date che hanno già un piano vengono saltate allo stesso modo per i piani ancorati al calendario
+6. Controlla l'anteprima dell'elenco. Deseleziona le settimane che non vuoi -- le lezioni successive in quel periodo si spostano alla domenica libera successiva invece di lasciare un vuoto. Le date che hanno già un piano vengono saltate allo stesso modo per i piani ancorati al calendario
 7. Salva. Ogni settimana diventa un piano di servizio che puoi modificare come al solito -- cambiare la lezione, i volontari o la data -- e FreePlay riprodurrà ciò che si trova nel piano di quella settimana
 
 :::tip
@@ -106,15 +122,15 @@ Se un editore di curriculum ha pubblicato un piano annuale su Lessons.church, pu
 
 ## Personalizzare i contenuti della lezione
 
-Una volta pianificata una lezione, puoi adattarla alla tua aula specifica -- eliminare le sezioni che non servono, nascondere i ruoli che la tua aula non usa oppure riordinare i contenuti per adattarli al flusso che preferisci. Le personalizzazioni possono essere salvate per una sola aula oppure applicate a tutte le aule della tua chiesa.
+Una volta pianificata una lezione, puoi adattarla alla tua aula specifica -- eliminare le sezioni che non si applicano, nascondere i ruoli che la tua aula non usa oppure riordinare i contenuti per adattarli al flusso che preferisci. Le personalizzazioni possono essere salvate per una sola aula oppure applicate a tutte le aule della tua chiesa.
 
 Consulta la guida [Personalizzare le lezioni](/docs/lessons-church/customization/customizing-lessons) per le istruzioni passo passo.
 
 ## Riprodurre le lezioni su una TV dell'aula con FreePlay
 
-Pianificare una lezione in B1 Admin si abbina perfettamente con **[FreePlay](/docs/freeplay/)** -- il lettore multimediale gratuito di ChurchApps per le TV delle aule e i Fire Stick. Quando il piano è configurato, FreePlay può prelevare i contenuti della lezione direttamente da Lessons.church e riprodurli a schermo intero in aula. L'insegnante controlla il ritmo con un telecomando della TV, passando da video e diapositive man mano che la lezione procede.
+Pianificare una lezione in B1 Admin si abbina perfettamente a **[FreePlay](/docs/freeplay/)** — il lettore multimediale gratuito di ChurchApps per le TV delle aule e i Fire Stick. Quando il piano è configurato, FreePlay può prelevare i contenuti della lezione direttamente da Lessons.church e riprodurli a schermo intero in aula. L'insegnante controlla il ritmo con un telecomando della TV, passando da video e diapositive man mano che la lezione procede.
 
-Così i tuoi volontari vedono il piano sul telefono mentre i contenuti vengono riprodotti sulla TV dell'aula -- nessuna configurazione separata, nessuna chiavetta USB, nessun trambusto dell'ultimo minuto.
+Così i tuoi volontari vedono il piano sul telefono mentre i contenuti vengono riprodotti sulla TV dell'aula — nessuna configurazione separata, nessuna chiavetta USB, nessuna corsa all'ultimo minuto.
 
 [Scopri come collegare FreePlay a un provider di contenuti →](/docs/freeplay/content-providers/connecting-providers)
 
@@ -122,7 +138,7 @@ Così i tuoi volontari vedono il piano sul telefono mentre i contenuti vengono r
 
 L'elenco dei provider disponibili è in continua crescita. Se la tua chiesa usa un provider di curriculum che non compare ancora in B1 Admin, contattaci e lavoreremo per aggiungerlo.
 
-Sentiti libero di copiare e inviare direttamente al tuo provider di curriculum il messaggio qui sotto -- una volta che ci contatteranno, configureremo l'integrazione:
+Sentiti libero di copiare e inviare direttamente al tuo provider di curriculum il messaggio qui sotto — una volta che ci avrà contattati, configureremo l'integrazione:
 
 ---
 
@@ -132,9 +148,9 @@ Sentiti libero di copiare e inviare direttamente al tuo provider di curriculum i
 >
 > Amiamo il vostro curriculum e lo usiamo ogni settimana con i nostri ragazzi. Utilizziamo anche ChurchApps per gestire i volontari e i piani di servizio, e usiamo FreePlay (freeplay.church) per riprodurre i contenuti delle lezioni direttamente sulle TV delle nostre aule. Per i nostri insegnanti è stato un cambiamento radicale.
 >
-> Al momento dobbiamo gestire il vostro curriculum separatamente, ma se foste integrati con ChurchApps potremmo pianificare le vostre lezioni direttamente nei nostri piani di servizio e riprodurle tramite FreePlay sugli schermi delle nostre aule -- senza mai uscire dagli strumenti che già utilizziamo.
+> Al momento dobbiamo gestire il vostro curriculum separatamente, ma se foste integrati con ChurchApps potremmo pianificare le vostre lezioni direttamente nei nostri piani di servizio e riprodurle tramite FreePlay sugli schermi delle nostre aule — senza mai uscire dagli strumenti che già utilizziamo.
 >
-> ChurchApps lavora già con diversi provider di curriculum, e il loro team è pronto a lavorare anche con voi. Potreste contattarli all'indirizzo **support@churchapps.org** per avviare la conversazione? Ci piacerebbe molto che questo accadesse!
+> ChurchApps collabora già con diversi provider di curriculum, e il loro team è pronto a lavorare anche con voi. Potreste contattarli all'indirizzo **support@churchapps.org** per avviare la conversazione? Ci piacerebbe molto che questo accadesse!
 >
 > Grazie!
 

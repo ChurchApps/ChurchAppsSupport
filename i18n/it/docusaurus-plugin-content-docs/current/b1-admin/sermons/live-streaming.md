@@ -10,6 +10,10 @@ La pagina Orari della diretta ti permette di configurare il calendario delle tra
 
 </div>
 
+## Video di formazione
+
+<YouTube id="tpEY-sEYW6A" title="Configurare la trasmissione in diretta in B1" next="Personalizzare l'app per i membri della tua chiesa in B1" nextUrl="/docs/b1-admin/settings/mobile-app" />
+
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
@@ -34,7 +38,7 @@ La trasmissione in diretta si gestisce da due pagine della sezione **Sermoni** d
 ### Configurare le impostazioni di chat e video
 
 6. Nella sezione **Impostazioni chat**, imposta quanti minuti prima e dopo il culto la chat deve essere attiva. Così i visitatori possono iniziare a chattare prima dell'inizio del culto e continuare dopo.
-7. Nella sezione **Impostazioni video**, imposta con quanto anticipo avviare il flusso video per il conto alla rovescia o per i contenuti precedenti al culto. La chat si apre quei minuti *prima* dell'inizio anticipato del video, quindi l'orario mostrato accanto all'impostazione dei minuti di chat prima del culto conteggia entrambi i valori. Ad esempio, un culto alle 10:00 con 15 minuti di chat prima e un avvio anticipato di 5 minuti apre la chat alle 9:40.
+7. Nella sezione **Impostazioni video**, imposta con quanto anticipo avviare il flusso video per il conto alla rovescia o per i contenuti precedenti al culto. La chat si apre quei minuti *prima* dell'inizio anticipato del video, quindi l'orario mostrato accanto all'impostazione dei minuti di chat prima del culto tiene conto di entrambi i valori. Ad esempio, un culto alle 10:00 con 15 minuti di chat prima e un avvio anticipato del video di 5 minuti apre la chat alle 9:40.
 8. Seleziona il sermone da riprodurre dal menu a tendina:
    - **Ultimo sermone** -- Riproduce automaticamente il video aggiunto più di recente.
    - **Culto in diretta attuale** -- Riproduce la tua diretta attuale da YouTube usando il tuo ID canale.
@@ -55,7 +59,7 @@ Per personalizzare le schede e i link che compaiono accanto alla tua diretta, ap
 2. Scegli un **Tipo di link**: **URL esterno** per un link personalizzato, oppure una delle schede predefinite **Chat** o **Preghiera**.
 3. Per la scheda Chat, basta inserire un nome nella casella **Testo della scheda** e la configurazione è completa.
 4. Per una scheda con link, inserisci il nome della scheda, scegli un'icona cliccando sul pulsante icona e inserisci l'URL.
-5. Le schede configurate compariranno sulla pagina della trasmissione in diretta, così gli spettatori possono accedere a risorse aggiuntive e funzioni interattive.
+5. Le schede configurate compariranno sulla pagina della trasmissione in diretta, così gli spettatori potranno accedere a risorse aggiuntive e funzioni interattive.
 
 ### Visualizzare in anteprima la tua diretta
 
@@ -114,9 +118,9 @@ Controlla il tuo canale YouTube per eventuali dirette vecchie o programmate in f
 
 1. Vai su YouTube Studio.
 2. Vai su **Contenuti** poi **Dirette**.
-3. Cerca eventuali dirette vecchie o dirette programmate.
+3. Cerca eventuali dirette vecchie o programmate.
 4. Elimina queste voci di diretta vecchie o programmate.
-5. Testa di nuovo la tua pagina di trasmissione in diretta.
+5. Verifica di nuovo la tua pagina di trasmissione in diretta.
 
 :::warning
 L'incorporamento automatico della diretta del canale YouTube può essere bloccato quando nel canale ci sono più voci di diretta programmate o passate. Eliminarle permette a YouTube di identificare e servire correttamente la tua diretta attuale.
@@ -129,5 +133,5 @@ L'incorporamento automatico della diretta del canale YouTube può essere bloccat
 
 ## Passi successivi
 
-- [Gestire i sermoni](managing-sermons) -- Aggiungi sermoni alla tua libreria
-- [Playlist](playlists) -- Organizza i sermoni in serie
+- [Gestire i sermoni](managing-sermons) -- aggiungi sermoni alla tua libreria
+- [Playlist](playlists) -- organizza i sermoni in serie

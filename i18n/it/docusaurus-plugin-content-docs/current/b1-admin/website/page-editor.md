@@ -10,6 +10,10 @@ L'editor di pagine di B1 è un costruttore visivo con trascinamento che ti perme
 
 </div>
 
+## Video tutorial
+
+<YouTube id="m2B_JxmfFm4" title="Modificare pagine e navigazione in B1" next="Collegare un dominio personalizzato in B1" nextUrl="/docs/b1-admin/settings/custom-domain" />
+
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
@@ -27,7 +31,7 @@ L'editor di pagine di B1 è un costruttore visivo con trascinamento che ti perme
 L'editor si apre a schermo intero. Il pannello di sinistra mostra la struttura della pagina e gli elementi di contenuto disponibili; l'area centrale mostra un'anteprima in tempo reale della pagina.
 
 :::info
-L'editor viene sempre visualizzato in modalità chiara, indipendentemente dal tema di B1 Admin, e usa i caratteri per i titoli e per il testo che hai scelto in [Aspetto](appearance). Questo garantisce che l'anteprima corrisponda fedelmente a come apparirà la pagina ai visitatori del sito.
+L'editor viene sempre visualizzato in modalità chiara, indipendentemente dall'impostazione del tema di B1 Admin, e usa i caratteri per i titoli e per il testo che hai scelto in [Aspetto](appearance). Questo garantisce che l'anteprima corrisponda fedelmente a come apparirà la pagina ai visitatori del sito.
 :::
 
 ## Struttura della pagina: sezioni ed elementi
@@ -65,11 +69,11 @@ Hai già costruito una sezione ma vuoi una struttura diversa? Usa il selettore d
    - **Caratteristica con icona** -- Un'icona con un titolo e una breve descrizione, per mettere in evidenza caratteristiche o ministeri
    - **Galleria** -- Una griglia di più foto o una disposizione a mosaico
    - **Testimonianza** -- Una o più citazioni con nome dell'autore, ruolo e foto
-   - **Icone social** -- Icone con link ai profili social della chiesa: Facebook, Instagram, WhatsApp, YouTube, X, TikTok, Vimeo e Podcast. Inserisci un link per ciascuno che vuoi mostrare; per **WhatsApp**, usa un link `https://wa.me/` con il tuo numero oppure un link di invito al gruppo
-   - **Conto alla rovescia** -- Un timer che conta fino a una data oppure a un orario settimanale di culto
+   - **Icone social** -- Icone con link ai profili social della chiesa: Facebook, Instagram, WhatsApp, YouTube, X, TikTok, Vimeo e Podcast. Inserisci un link per ciascuno che vuoi mostrare; per **WhatsApp**, usa un link `https://wa.me/` con il tuo numero oppure un link di invito a un gruppo
+   - **Conto alla rovescia** -- Un timer che conta fino a una data o a un orario settimanale di culto
    - **Statistiche** -- Una riga di numeri grandi con etichette (membri, anni, sedi)
    - **Avanzamento campagna** -- Una barra di avanzamento in tempo reale per una campagna di donazioni, che mostra il totale raccolto verso l'obiettivo di un fondo
-   - **Griglia del personale** -- Schede con foto dei membri di un gruppo; il gruppo deve avere attiva l'opzione di **elenco pubblico**
+   - **Griglia del personale** -- Schede con foto dei membri di un gruppo; il gruppo deve avere attiva l'opzione **elenco pubblico**
    - **Orari dei culti** -- Il calendario dei culti delle tue sedi, ricavato automaticamente dalla configurazione delle presenze
    - **Sermoni** -- La tua libreria di sermoni, come browser completo oppure in layout a griglia, elenco o con l'ultimo in evidenza
    - **Mappa** -- Una mappa incorporata centrata sull'indirizzo della chiesa
@@ -77,7 +81,7 @@ Hai già costruito una sezione ma vuoi una struttura diversa? Usa il selettore d
    - **Testo con foto** -- Testo e un'immagine affiancati
    - **Logo** -- Il logo della tua chiesa, ricavato da [Aspetto](appearance)
    - **Diretta streaming** -- Il lettore della tua diretta, incorporato direttamente nella pagina
-   - **Podcast** -- Un elenco di episodi ricavato dall'URL di un feed RSS di podcast esterno che fornisci, con impostazioni per decidere quanti episodi mostrare e se visualizzare date e descrizioni. Ogni episodio sul sito online ha un lettore audio e un link **Scarica** che salva il file audio dell'episodio con il titolo dell'episodio. Serve per mettere in evidenza un qualsiasi feed di podcast sul tuo sito; per pubblicare i tuoi sermoni come podcast, vedi invece [Gestire i sermoni](../sermons/managing-sermons.md#your-podcast-feed)
+   - **Podcast** -- Un elenco di episodi ricavato dall'URL di un feed RSS di podcast esterno che fornisci, con impostazioni per decidere quanti episodi mostrare e se visualizzare date e descrizioni. Ogni episodio sul sito online ha un lettore audio e un link **Scarica** che salva il file audio dell'episodio con il titolo dell'episodio. Serve per mettere in evidenza un qualsiasi feed di podcast sul tuo sito; per pubblicare i tuoi sermoni come podcast, consulta invece [Gestire i sermoni](../sermons/managing-sermons.md#your-podcast-feed)
    - **Donazione** -- Un pulsante per le offerte oppure un modulo di donazione incorporato
    - **HTML** -- Il tuo HTML grezzo, per usi avanzati come l'incorporamento di un widget di terze parti (vedi [Usare l'elemento HTML](#using-the-html-element))
    - **iFrame** -- Incorpora contenuti esterni tramite URL
@@ -96,14 +100,14 @@ Se incolli nella casella JavaScript solo un indirizzo web (come il link di un'im
 
 L'elemento **Calendario** mostra gli eventi di uno dei tuoi calendari:
 
-1. Sotto **Seleziona**, scegli **Calendario di gruppo** (gli eventi di un solo gruppo -- l'elenco mostra i gruppi di cui fai parte) oppure **Calendario curato** (un calendario che hai creato in **Calendari**; vedi [Calendario curato](../calendars/curated-calendar)).
+1. Sotto **Seleziona**, scegli **Calendario del gruppo** (gli eventi di un solo gruppo -- l'elenco mostra i gruppi di cui fai parte) oppure **Calendario curato** (un calendario che hai creato in **Calendari**; vedi [Calendario curato](../calendars/curated-calendar)).
 2. Sotto **Seleziona calendario**, scegli il gruppo o il calendario.
 3. Sotto **Visualizzazione**, scegli come mostrarlo:
    - **Calendario mensile** -- Una griglia mensile che i visitatori possono sfogliare.
    - **Eventi in programma** -- Una griglia di riquadri per i prossimi 12 eventi, con un evento ricorrente mostrato una sola volta nella sua prossima data. Ogni riquadro mostra la foto dell'evento (oppure il titolo sul colore scuro del tema quando non c'è una foto), un distintivo con la data, il giorno e l'ora e la prima riga della descrizione. Un pulsante **Iscriviti** sopra i riquadri permette ai visitatori di copiare il link ICS del calendario oppure di scaricarlo. Per questa visualizzazione compare un'impostazione **Layout**: **Griglia** (predefinito) oppure **Scorrimento (automatico)**, che mette i riquadri su un'unica riga che scorre da sola.
 4. Per mostrare solo alcuni eventi, digita un tag in **Solo eventi con tag** -- ad esempio `giovani`. Compaiono solo gli eventi i cui **Tag** includono quella parola. Lascia vuoto per mostrare tutti gli eventi. I tag si impostano su ciascun evento; vedi [Aggiungere e modificare eventi](../calendars/creating-calendars.md#adding-and-editing-events).
 
-In entrambe le visualizzazioni, cliccando su un evento si apre la sua pagina dedicata sul tuo sito. La pagina dell'evento mostra la foto, il titolo, la data e l'ora e la descrizione, oltre a un riquadro con **Quando** (compreso lo schema di ripetizione per un evento ricorrente) e **Dove** (le sale prenotate per l'evento). Ha anche un pulsante **Iscriviti a questo evento** quando l'iscrizione è attiva, e un link **Aggiungi al mio calendario** che scarica l'evento come file di calendario. La pagina è impostata in modo che i motori di ricerca possano mostrare data e dettagli dell'evento nei risultati. Anche le pagine degli eventi dei calendari curati mostrati sulle tue pagine (per gli eventi nei prossimi sei mesi) sono elencate nella mappa del sito, così i motori di ricerca possono trovarle.
+In entrambe le visualizzazioni, cliccando su un evento si apre la sua pagina dedicata sul tuo sito. La pagina dell'evento mostra la foto, il titolo, la data, l'ora e la descrizione, oltre a un riquadro con **Quando** (compreso lo schema di ripetizione per un evento ricorrente) e **Dove** (le sale prenotate per l'evento). Ha anche un pulsante **Iscriviti a questo evento** quando l'iscrizione è attiva, e un link **Aggiungi al mio calendario** che scarica l'evento come file di calendario. La pagina è impostata in modo che i motori di ricerca possano mostrare data e dettagli dell'evento nei risultati. Anche le pagine degli eventi dei calendari curati mostrati sulle tue pagine (per gli eventi nei prossimi sei mesi) sono elencate nella mappa del sito, così i motori di ricerca possono trovarle.
 
 ### Riordinare i contenuti
 
@@ -129,7 +133,7 @@ Clicca su un elemento qualsiasi per aprire il suo pannello di stile. Tra le opzi
 Per uno stile avanzato, ogni sezione ed elemento ha un campo **CSS personalizzato** in cui puoi scrivere regole CSS proprie. Sono limitate a quell'elemento, quindi non influenzano involontariamente il resto della pagina.
 
 :::tip
-Se ti serve applicare degli stili a tutto il sito -- come un carattere personalizzato o un colore globale -- usa le impostazioni di [Aspetto](appearance) invece del CSS personalizzato sulle singole pagine.
+Se ti serve applicare stili a tutto il sito -- come un carattere personalizzato o un colore globale -- usa le impostazioni di [Aspetto](appearance) invece del CSS personalizzato sulle singole pagine.
 :::
 
 ## Visualizzare in anteprima la pagina
@@ -145,7 +149,7 @@ Per vedere la pagina online esattamente come la vedranno i visitatori, torna all
 
 ## Verificare l'accessibilità
 
-Clicca sull'icona **Accessibilità** nella barra degli strumenti per eseguire un controllo rapido dei problemi più comuni -- immagini senza testo alternativo, contrasto di colore insufficiente o titoli in ordine errato. Ogni problema rimanda direttamente all'elemento che richiede attenzione, così puoi correggerlo sul posto.
+Clicca sull'icona **Accessibilità** nella barra degli strumenti per eseguire un controllo rapido dei problemi più comuni -- immagini senza testo alternativo, contrasto di colore insufficiente o titoli fuori ordine. Ogni problema rimanda direttamente all'elemento che richiede attenzione, così puoi correggerlo sul posto.
 
 ## Annullare le modifiche
 
@@ -157,7 +161,7 @@ L'editor tiene automaticamente traccia della cronologia delle modifiche. Usa i p
 Puoi anche ripristinare la pagina a un'istantanea precedente. Clicca su **Visualizza cronologia** nella barra degli strumenti per vedere l'elenco delle istantanee salvate con le loro descrizioni, e clicca su una voce qualsiasi per ripristinare la pagina a quel punto.
 
 :::warning
-Ripristinare un'istantanea sostituisce il contenuto attuale della pagina con la versione dell'istantanea. Questo non può essere annullato con il pulsante Annulla standard. Salva un'istantanea dello stato attuale prima di ripristinarne una vecchia, se vuoi mantenere la possibilità di tornare indietro.
+Ripristinare un'istantanea sostituisce il contenuto attuale della pagina con la versione dell'istantanea. Questa operazione non può essere annullata con il pulsante Annulla standard. Salva un'istantanea dello stato attuale prima di ripristinarne una vecchia, se vuoi mantenere la possibilità di tornare indietro.
 :::
 
 ## Salvare e pubblicare
@@ -166,10 +170,10 @@ Le modifiche vengono salvate automaticamente mentre lavori. Un indicatore di sta
 
 ### Stato di bozza e di pubblicazione
 
-Le pagine possono avere uno stato **pubblicato**, che controlla quando i visitatori vedono le tue modifiche. La barra degli strumenti mostra un chip di stato con lo stato attuale:
+Le pagine possono avere uno stato **pubblicato**, che controlla quando i visitatori vedono le tue modifiche. La barra degli strumenti mostra un'etichetta di stato con lo stato attuale:
 
-- **Online al salvataggio** -- La pagina non usa un flusso di pubblicazione. Ogni modifica salvata va online immediatamente. È il predefinito per le nuove pagine.
-- **Modifiche non pubblicate** -- La pagina è già stata pubblicata in passato, ma hai apportato modifiche dall'ultima pubblicazione. I visitatori vedono ancora la versione pubblicata precedentemente.
+- **Online al salvataggio** -- La pagina non usa un flusso di pubblicazione. Ogni modifica salvata va online immediatamente. È il valore predefinito per le nuove pagine.
+- **Modifiche non pubblicate** -- La pagina è già stata pubblicata in passato, ma hai apportato modifiche dall'ultima pubblicazione. I visitatori vedono ancora la versione pubblicata in precedenza.
 - **Pubblicata** -- La pagina è online e il contenuto salvato corrisponde a ciò che vedono i visitatori.
 
 Per pubblicare le modifiche, clicca sul pulsante **Pubblica** nella barra degli strumenti. La pagina va online immediatamente.

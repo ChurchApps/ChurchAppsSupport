@@ -144,7 +144,7 @@ Sa listahan ng miyembro ng grupo, i-click ang icon na **Print Roll Sheet** (prin
 Naglalaman ang contact roster ng personal na impormasyon sa pakikipag-ugnayan ng mga miyembro. Ibahagi lang ang mga naka-print na kopya sa mga leader ng grupo at sa iba pang nangangailangan nito.
 :::
 
-## Pagpapadala ng Push Notification sa Mga Miyembro ng Grupo
+## Pagpapadala ng Push Notification sa Mga Miyembro ng Grupo {#sending-push-notifications-to-group-members}
 
 Maaari kang magpadala ng push notification nang direkta sa lahat ng miyembro ng grupo na naka-install ang B1.church app sa kanilang device at naka-enable ang push notification.
 

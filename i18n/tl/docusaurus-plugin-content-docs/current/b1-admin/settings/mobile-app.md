@@ -10,6 +10,10 @@ Hinahayaan ka ng pahina ng Mobile App Settings na i-configure ang mga navigation
 
 </div>
 
+## Training Video
+
+<YouTube id="ydY7WGK16fE" title="Customizing Your Church's Member App in B1" />
+
 :::info Deprecated na ang native na B1 Mobile app
 Ang mga tab na naka-configure dito ay inihahatid sa pamamagitan ng [B1.church Progressive Web App (PWA)](/docs/b1-church/getting-started/installing-pwa), na pumalit sa native na B1 Mobile app. Ibahagi sa mga miyembro ang install page ng iyong simbahan -- `https://yourchurchname.b1.church/mobile/install` -- na gagabay sa kanila sa pag-install ng app sa kanilang device, nang walang kinakailangang download mula sa App Store o Google Play.
 :::
@@ -28,7 +32,7 @@ Ang mga tab na naka-configure dito ay inihahatid sa pamamagitan ng [B1.church Pr
 2. I-click ang **Navigation** (`/mobile/navigation`).
 3. Ipinapakita ng pahinang Navigation ang kasalukuyan mong mga app tab.
 
-## Pagdaragdag ng Bagong Tab
+## Pagdaragdag ng Bagong Tab {#adding-a-new-tab}
 
 1. I-click ang **Add Tab** button sa itaas ng pahina.
 2. Punan ang mga detalye ng tab:
@@ -58,7 +62,7 @@ Ang ilang tab ay maaaring lumitaw nang kusa kapag natugunan ang ilang kondisyon 
 Panatilihing mapapamahalaan ang bilang ng tab. Tatlo hanggang limang tab ang angkop para sa karamihan ng simbahan. Ang sobrang dami ng tab ay maaaring makalito sa mga miyembro sa pag-navigate.
 :::
 
-## Member Directory at Mga Setting ng Messaging
+## Member Directory at Mga Setting ng Messaging {#member-directory--messaging-settings}
 
 Ang item na **Member portal** sa parehong seksyong Mobile ay naglalaman ng mga setting na namamahala sa member directory at pribadong messaging sa karanasan ng B1.church:
 
@@ -80,7 +84,7 @@ Ang item na **Member portal** sa parehong seksyong Mobile ay naglalaman ng mga s
 Dahil umaasa ang pagsusuri ng minimum age sa mga birthdate, siguraduhing napunan ang mga birthdate ng mga batang nasa iyong kongregasyon. Ang setting na ito ay kabilang sa parehong pamilya ng mga setting para sa kaligtasan ng bata gaya ng [check-in safety controls](../attendance/checkin-safety.md).
 :::
 
-### Sign-In Prompt sa Home Screen
+### Sign-In Prompt sa Home Screen {#home-screen-sign-in-prompt}
 
 Ang mga bisitang magbukas ng [Home screen](/docs/b1-church/getting-started/navigating#home) ng app nang hindi nag-sign in ay makakakita ng maikling prompt -- bilang default, *"Sign in to see your groups, giving, and more."* -- katabi ng **Sign In** button. Binibigyang-daan ka ng mga setting ng **Home screen sign-in prompt** sa parehong pahina ng Member portal (`/mobile/b1-mobile`) na baguhin ito:
 
@@ -89,9 +93,9 @@ Ang mga bisitang magbukas ng [Home screen](/docs/b1-church/getting-started/navig
 
 I-click ang **Save** para ilapat. Ipinapakita ng **Saved** message na naitala ang pagbabago. Ang pag-save ay nagre-refresh ng naka-cache na settings ng app, kaya lalabas ang pagbabago sa susunod na pagbukas ng Home screen.
 
-### Home Screen Tiles
+### Mga Tile sa Home Screen {#home-screen-tiles}
 
-Ang mga tab na may larawan (tingnan ang **Image** sa ilalim ng [Adding a New Tab](#adding-a-new-tab)) ay lumalabas sa [Home screen](/docs/b1-church/getting-started/navigating#home) ng app bilang photo tile, sa isang seksyong may pamagat na pangalan ng iyong simbahan. Kasama rito ang Verse of the Day tab, kung bibigyan mo ito ng larawan. Lumalabas din ang mga photo tab sa tab bar.
+Ang mga tab na may larawan (tingnan ang **Image** sa ilalim ng [Pagdaragdag ng Bagong Tab](#adding-a-new-tab)) ay lumalabas sa [Home screen](/docs/b1-church/getting-started/navigating#home) ng app bilang photo tile, sa isang seksyong may pamagat na pangalan ng iyong simbahan. Kasama rito ang Verse of the Day tab, kung bibigyan mo ito ng larawan. Lumalabas din ang mga photo tab sa tab bar.
 
 Kinokontrol ng setting na **Home screen tiles** sa parehong pahina ng Member portal (`/mobile/b1-mobile`) kung paano nakaayos ang mga tile na iyon. Pumili ng **Layout**:
 
@@ -102,7 +106,7 @@ Kinokontrol ng setting na **Home screen tiles** sa parehong pahina ng Member por
 
 I-click ang **Save** para ilapat.
 
-### Home Screen Sections
+### Mga Seksyon sa Home Screen {#home-screen-sections}
 
 Palaging nakikita ng mga naka-sign in na miyembro ang sarili nilang kasaysayan ng attendance at mga naisumiteng form sa [Me page](/docs/b1-church/getting-started/me-page). Maaaring ipakita rin ng mga switch ng **Home screen sections** sa parehong pahina ng Member portal (`/mobile/b1-mobile`) ang mga ito sa Home screen:
 

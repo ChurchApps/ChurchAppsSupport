@@ -1,90 +1,94 @@
 ---
-title: "Guida: Lancia il Sito Web della Tua Chiesa"
+title: "Guida: Lancia il sito web della tua chiesa"
 ---
 
-# Lancia il Sito Web della Tua Chiesa
+# Lancia il sito web della tua chiesa
 
 <div class="article-intro">
 
-B1.church include un costruttore di siti web completo senza costi aggiuntivi. Questa guida ti guida attraverso la creazione del sito web della tua chiesa da zero - configurazione della tua home page, personalizzazione dell'aspetto e del comportamento, aggiunta di pagine chiave e, facoltativamente, connessione delle donazioni online e dei moduli di registrazione degli eventi.
+B1.church include un costruttore di siti web completo senza costi aggiuntivi. Questa guida ti accompagna nella creazione del sito web della tua chiesa da zero: configurazione della home page, personalizzazione dell'aspetto, aggiunta delle pagine principali e, facoltativamente, collegamento delle donazioni online e dei moduli di iscrizione agli eventi.
 
 </div>
+
+## Video di formazione
+
+<YouTube id="aA4UahZpmXg" title="Lanciare il sito web della tua chiesa in B1" next="Modificare pagine e navigazione in B1" nextUrl="/docs/b1-admin/website/page-editor" />
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Tieni pronto il logo della tua chiesa (PNG con sfondo trasparente funziona meglio)
-- Scegli 2-3 colori del marchio per il tuo sito
-- Se utilizzi un dominio personalizzato (ad es. latuchieisa.com), accedi al tuo provider DNS (GoDaddy, Cloudflare, ecc.)
-- Se desideri le donazioni online sul tuo sito, completa prima [Configurazione delle Donazioni Online](../donations/online-giving-setup.md) (Stripe)
+- Tieni pronto il logo della tua chiesa (un PNG con sfondo trasparente funziona meglio)
+- Scegli 2–3 colori del marchio per il tuo sito
+- Se usi un dominio personalizzato (ad esempio miachiesa.it), assicurati di avere accesso al tuo provider DNS (GoDaddy, Cloudflare, ecc.)
+- Se vuoi le donazioni online sul tuo sito, completa prima la [Configurazione delle donazioni online](../donations/online-giving-setup.md) (Stripe)
 
 </div>
 
-## Passaggio 1: Configurazione Iniziale del Sito Web
+## Passaggio 1: Configurazione iniziale del sito web
 
-Inizia creando la tua home page e la struttura di base del sito.
+Inizia creando la home page e la struttura di base del sito.
 
-Segui la guida [Configurazione Iniziale del Sito Web](../website/initial-setup.md) per:
+Segui la guida [Configurazione iniziale del sito web](../website/initial-setup.md) per:
 
-1. Naviga su **Sito Web** in B1 Admin
-2. Crea la tua home page con una sezione hero, messaggio di benvenuto e informazioni chiave
-3. Aggiungi il nome della tua chiesa e il tuo slogan
+1. Accedere a **Sito web** in B1 Admin
+2. Creare la home page con una sezione hero, un messaggio di benvenuto e le informazioni principali
+3. Aggiungere il nome e lo slogan della tua chiesa
 
-## Passaggio 2: Configura l'Aspetto
+## Passaggio 2: Configurare l'aspetto
 
-Imposta l'identità visiva del tuo sito - colori, caratteri, logo e footer.
+Imposta l'identità visiva del sito -- colori, caratteri, logo e piè di pagina.
 
 Segui la guida [Aspetto](../website/appearance.md) per:
 
-1. Carica il logo della tua chiesa
-2. Imposta i tuoi colori primari e di accento
-3. Configura la barra di navigazione e il footer
-4. Anteprima delle tue modifiche
+1. Caricare il logo della tua chiesa
+2. Impostare i colori principale e di accento
+3. Configurare la barra di navigazione e il piè di pagina
+4. Visualizzare l'anteprima delle modifiche
 
 :::tip
-Mantieni semplice la tua tavolozza di colori - un colore primario più un colore di accento è solitamente sufficiente. Il costruttore di siti web gestirà il resto.
+Mantieni semplice la tua tavolozza di colori -- di solito bastano un colore principale e un colore di accento. Il costruttore di siti web si occuperà del resto.
 :::
 
-## Passaggio 3: Aggiungi Pagine di Contenuto
+## Passaggio 3: Aggiungere le pagine di contenuto
 
-Costruisci le pagine di cui i tuoi visitatori hanno più bisogno.
+Crea le pagine di cui i tuoi visitatori hanno più bisogno.
 
-Segui la guida [Gestione delle Pagine](../website/managing-pages.md) per creare pagine come:
+Segui la guida [Gestire le pagine](../website/managing-pages.md) per creare pagine come:
 
-- **About** - La storia della tua chiesa, le credenze e la leadership
-- **Sermoni** - Collegamento alla tua [biblioteca di sermoni](../sermons/managing-sermons.md)
-- **Eventi** - Eventi imminenti e registrazione
-- **Dona** - Pagina di donazione online (richiede [configurazione Stripe](../donations/online-giving-setup.md))
-- **Contatti** - Posizione, orari del servizio e informazioni di contatto
+- **Chi siamo** -- La storia della tua chiesa, le sue convinzioni e la sua guida
+- **Predicazioni** -- Collegamento alla tua [libreria di predicazioni](../sermons/managing-sermons.md)
+- **Eventi** -- Eventi in programma e iscrizioni
+- **Dona** -- Pagina delle donazioni online (richiede la [configurazione di Stripe](../donations/online-giving-setup.md))
+- **Contatti** -- Sede, orari dei culti e recapiti
 
-## Passaggio 4: Connetti il Tuo Dominio
+## Passaggio 4: Collegare il tuo dominio
 
-Se desideri utilizzare il tuo nome di dominio (come latuchieisa.com) invece dell'URL B1 predefinito:
+Se vuoi usare un tuo nome di dominio (come miachiesa.it) invece dell'URL predefinito di B1:
 
-1. Vai a **Impostazioni** in B1 Admin e apri la sezione **Domini**
+1. Vai su **Impostazioni** in B1 Admin e apri la sezione **Domini**
 2. Inserisci il tuo dominio personalizzato
-3. Aggiorna i tuoi record DNS presso il tuo provider di dominio in modo che puntino a B1
+3. Aggiorna i record DNS presso il tuo provider di dominio perché puntino a B1
 
 :::info
-Le modifiche DNS possono richiedere fino a 48 ore per propagarsi. Il tuo sito potrebbe non essere accessibile dal tuo dominio personalizzato immediatamente. L'URL B1 predefinito continuerà a funzionare durante questo periodo.
+Le modifiche DNS possono richiedere fino a 48 ore per propagarsi. Il sito potrebbe non essere raggiungibile subito dal tuo dominio personalizzato. L'URL predefinito di B1 continuerà a funzionare nel frattempo.
 :::
 
-## Passaggio 5: Aggiungi Donazioni e Moduli
+## Passaggio 5: Aggiungere donazioni e moduli
 
-Migliora il tuo sito con elementi interattivi:
+Arricchisci il sito con elementi interattivi:
 
-- **Donazioni Online** - Aggiungi una sezione di donazione in modo che i membri possano donare direttamente dal tuo sito web. Vedi [Configurazione delle Donazioni Online](../donations/online-giving-setup.md) per configurare prima Stripe.
-- **Moduli di Registrazione** - Incorpora [moduli autonomi](../forms/creating-forms.md) per iscrizioni a eventi, schede visitatori o applicazioni di volontariato. Vedi [Gestione delle Pagine](../website/managing-pages.md) per come aggiungere un elemento modulo a qualsiasi pagina.
+- **Donazioni online** -- Aggiungi una sezione per le donazioni, così i membri possono donare direttamente dal sito web. Vedi [Configurazione delle donazioni online](../donations/online-giving-setup.md) per configurare prima Stripe.
+- **Moduli di iscrizione** -- Incorpora [moduli indipendenti](../forms/creating-forms.md) per iscrizioni a eventi, schede visitatori o candidature di volontariato. Vedi [Gestire le pagine](../website/managing-pages.md) per sapere come aggiungere un elemento modulo a qualsiasi pagina.
 
 ## Fatto!
 
-Il sito web della tua chiesa è live. Condividi l'URL con la tua congregazione e sui social media. Puoi aggiornare il contenuto, aggiungere nuove pagine e regolare l'aspetto in qualsiasi momento dal dashboard di B1 Admin.
+Il sito web della tua chiesa è online. Condividi l'URL con la tua comunità e sui social media. Puoi aggiornare i contenuti, aggiungere nuove pagine e modificare l'aspetto in qualsiasi momento dalla dashboard di B1 Admin.
 
-## Articoli Correlati
+## Articoli correlati
 
-- [Configurazione Iniziale del Sito Web](../website/initial-setup.md) - procedura dettagliata di configurazione
-- [Gestione delle Pagine](../website/managing-pages.md) - aggiungi e modifica le pagine
-- [Aspetto](../website/appearance.md) - colori, logo e layout
-- [Gestione dei File](../website/files.md) - carica immagini e documenti
-- [Configurazione delle Donazioni Online](../donations/online-giving-setup.md) - configura Stripe
-- [Creazione di Moduli](../forms/creating-forms.md) - costruisci moduli di registrazione e sondaggi
+- [Configurazione iniziale del sito web](../website/initial-setup.md) -- procedura dettagliata di configurazione
+- [Gestire le pagine](../website/managing-pages.md) -- aggiungi e modifica le pagine
+- [Aspetto](../website/appearance.md) -- colori, logo e layout
+- [Gestire i file](../website/files.md) -- carica immagini e documenti
+- [Configurazione delle donazioni online](../donations/online-giving-setup.md) -- configura Stripe
+- [Creare moduli](../forms/creating-forms.md) -- crea moduli di iscrizione e sondaggi

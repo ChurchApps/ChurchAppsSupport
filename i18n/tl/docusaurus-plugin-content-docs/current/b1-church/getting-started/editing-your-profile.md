@@ -10,6 +10,10 @@ Sa iyong profile page sa member portal, maaari mong i-update ang iyong contact i
 
 </div>
 
+## Training Video
+
+<YouTube id="SKqr2A_jdRQ" title="Updating Your Profile and Notifications" next="Joining a Group and Chatting With It" nextUrl="/docs/b1-church/groups/browsing-groups" />
+
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
@@ -17,7 +21,7 @@ Sa iyong profile page sa member portal, maaari mong i-update ang iyong contact i
 
 </div>
 
-## Pagbukas ng Iyong Profile
+## Pagbubukas ng Iyong Profile
 
 I-tap ang iyong profile photo sa itaas na app bar, o i-tap ang **Edit Profile** sa itaas ng pahinang **More** o sa iyong [Me page](./me-page.md), para buksan ang **Your profile** sa `/mobile/profileEdit`. Ang pahina ay isang sheet ng mga seksyon -- **Photo & name**, **Contact**, **Household**, **Account**, at **Privacy** -- na bawat isa ay nagpapakita ng iyong kasalukuyang impormasyon kasama ang isang **Edit** link (o **Add Family Member** / **Change**) na nagbubukas ng panel kung saan ka gagawa ng mga pagbabago.
 

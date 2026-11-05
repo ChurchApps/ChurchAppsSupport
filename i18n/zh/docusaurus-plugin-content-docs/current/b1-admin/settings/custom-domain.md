@@ -10,11 +10,15 @@ title: "自定义域名"
 
 </div>
 
+## 培训视频
+
+<YouTube id="L5yaDusHts8" title="Connecting a Custom Domain in B1" next="Setting Up Live Streaming in B1" nextUrl="/docs/b1-admin/sermons/live-streaming" />
+
 ## 第一步 —— 先添加 DNS 记录
 
 在 B1 中添加你的域名之前，你需要在域名注册商（GoDaddy、Namecheap、Cloudflare 等）处，将其指向 B1 的服务器。
 
-添加以下记录之一——优先使用 CNAME：
+添加以下记录之一，优先使用 CNAME：
 
 | 类型 | 主机 | 值 |
 |------|------|-------|
@@ -33,9 +37,9 @@ DNS 指向 B1 之后：
 2. 点击左侧列表中的 **Domains**（域名），然后点击 **Domains** 部分中的 **Edit**。
 3. 在字段中输入你的域名，然后点击 **Save**。
 
-你无需先点击 **+** 按钮——在字段中输入的域名会在保存时被添加。如果你希望在保存前向列表中添加多个域名，请使用 **+**（或按 **Enter**）。
+你无需先点击 **+** 按钮。在字段中输入的域名会在保存时被添加。如果你希望在保存前向列表中添加多个域名，请使用 **+**（或按 **Enter**）。
 
-B1 会自动处理 SSL——无需购买证书。
+B1 会自动处理 SSL，无需购买证书。
 
 :::warning
 如果在 DNS 记录设置好之前就在 B1 中添加域名，该域名将无法保存。请务必先设置 DNS。
@@ -43,6 +47,6 @@ B1 会自动处理 SSL——无需购买证书。
 
 ## 检查是否生效
 
-保存后，在浏览器中访问你的域名。如果能打开你的 B1 网站，就说明已经完成。如果出现错误，DNS 可能仍在传播——请等待几分钟后再试。
+保存后，在浏览器中访问你的域名。如果能打开你的 B1 网站，就说明已经完成。如果出现错误，DNS 可能仍在传播，请等待几分钟后再试。
 
-你也可以在 [dnschecker.org](https://dnschecker.org) 上检查 DNS 传播情况——搜索你的域名，并查看你的 CNAME 或 A 记录是否已显示。
+你也可以在 [dnschecker.org](https://dnschecker.org) 上检查 DNS 传播情况：搜索你的域名，并查看你的 CNAME 或 A 记录是否已显示。

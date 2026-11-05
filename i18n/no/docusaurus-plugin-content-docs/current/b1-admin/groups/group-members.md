@@ -144,7 +144,7 @@ I gruppens medlemsliste klikker du ikonet **Skriv ut navneliste** (skriver) over
 En kontaktliste inneholder medlemmenes personlige kontaktopplysninger. Del utskrevne kopier bare med gruppens ledere og andre som trenger dem.
 :::
 
-## Sende push-varsler til gruppemedlemmer
+## Sende push-varsler til gruppemedlemmer {#sending-push-notifications-to-group-members}
 
 Du kan sende et push-varsel direkte til alle gruppemedlemmer som har B1.church-appen installert på enheten sin med push-varsler slått på.
 

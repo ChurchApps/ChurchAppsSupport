@@ -10,6 +10,10 @@ Maaari mong ituro ang sarili mong domain (halimbawa, **`www.yourchurch.org`**) s
 
 </div>
 
+## Training Video
+
+<YouTube id="L5yaDusHts8" title="Connecting a Custom Domain in B1" next="Setting Up Live Streaming in B1" nextUrl="/docs/b1-admin/sermons/live-streaming" />
+
 ## Hakbang 1 -- Idagdag Muna ang DNS Record
 
 Bago idagdag ang iyong domain sa B1, kailangan mo itong ituro sa mga server ng B1 sa iyong domain registrar (GoDaddy, Namecheap, Cloudflare, atbp.).

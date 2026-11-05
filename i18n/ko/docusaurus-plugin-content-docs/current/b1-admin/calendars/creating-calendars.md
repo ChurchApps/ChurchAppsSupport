@@ -12,7 +12,7 @@ B1 Admin에서 캘린더를 만들면 하나 이상의 그룹을 연결해 행�
 
 ## 교육 동영상
 
-<YouTube id="Ko3kgsCSLFs" title="B1에서 캘린더, 행사, 시설 예약 만들기" />
+<YouTube id="Ko3kgsCSLFs" title="B1에서 캘린더, 행사, 시설 예약 만들기" next="B1의 행사 등록과 유료 행사" nextUrl="/docs/b1-admin/calendars/paid-registrations" />
 
 <div class="prereqs">
 <h4>시작하기 전에</h4>
@@ -66,14 +66,14 @@ B1 Admin에서 캘린더를 만들면 하나 이상의 그룹을 연결해 행�
 
 ## 행사 추가 및 편집 {#adding-and-editing-events}
 
-행사를 추가하려면 캘린더 상세 페이지에서 **New Event**를 클릭하세요. 기존 행사를 바꾸려면 캘린더에서 행사를 클릭한 다음 **Edit**를 클릭하세요. **New Event** / **Edit Event** 양식에는 다음 항목이 있습니다.
+캘린더 상세 페이지에서 **New Event**를 클릭하면 행사를 추가할 수 있습니다. 기존 행사를 바꾸려면 캘린더에서 행사를 클릭한 다음 **Edit**를 클릭하세요. **New Event** / **Edit Event** 양식에는 다음 항목이 있습니다.
 
 - **Group** -- 행사가 속하는 그룹. 교회에 행사 템플릿이 있다면 **Template**을 골라 양식을 채울 수도 있습니다.
 - **Title**
-- **Event photo** -- **Add Photo**(또는 빈 사진 상자)를 클릭해 이미지를 고르거나 업로드하세요. 이미지는 넓은 16:9 모양으로 잘립니다. **Change Photo**를 클릭하면 바꿀 수 있습니다. 이 사진은 웹사이트의 행사 페이지 상단에 표시되며, 캘린더 요소가 **Upcoming events**를 보여 줄 때는 그 타일로 나타납니다([웹사이트에 행사 표시하기](#showing-events-on-your-website) 참고).
+- **Event photo** -- **Add Photo**(또는 빈 사진 상자)를 클릭해 이미지를 고르거나 업로드하세요. 이미지는 넓은 16:9 모양으로 잘립니다. **Change Photo**를 클릭하면 바꿀 수 있습니다. 이 사진은 웹사이트의 행사 페이지 상단에 표시되며, Calendar 요소가 **Upcoming events**를 보여 줄 때는 그 타일로 나타납니다([웹사이트에 행사 표시하기](#showing-events-on-your-website) 참고).
 - **Description** -- 웹사이트의 행사 페이지에 표시됩니다. 굵은 글씨, 목록, 링크를 지원합니다.
 - **Start**와 **End**, **Repeats**, 그리고 **Visibility**(**Public** 또는 **Private**).
-- **Tags** -- `youth, students`처럼 쉼표로 구분된 라벨. 웹사이트의 캘린더 요소를 특정 태그가 있는 행사만 보여 주도록 설정할 수 있습니다. 행사의 등록 설정에 보이는 **Tags** 필드와 같은 필드입니다.
+- **Tags** -- `youth, students`처럼 쉼표로 구분된 라벨. 웹사이트의 Calendar 요소를 특정 태그가 있는 행사만 보여 주도록 설정할 수 있습니다. 행사의 등록 설정에 보이는 **Tags** 필드와 같은 필드입니다.
 - **Who can view notes**와 **Who can post notes** -- 행사 메모를 읽고 쓸 수 있는 사람([행사 메모](#event-notes) 참고). **Staff only**(기본값), **Group leaders**(행사 그룹의 리더), **Group members**(리더를 포함해 행사 그룹의 모든 구성원) 중에서 고르세요.
 - **Rooms**와 **Resources** -- 행사에 필요한 공간과 장비를 예약합니다. [시설, 자원 및 일정 관리](rooms-resources)를 참고하세요.
 
@@ -104,12 +104,12 @@ B1 Admin에서 캘린더를 만들면 하나 이상의 그룹을 연결해 행�
    - **Enable Waitlist** -- 행사가 가득 차면 등록을 거절하는 대신 추가 등록자를 대기자 명단에 올릴 수 있습니다. [유료 등록의 대기자 명단](paid-registrations#waitlist)을 참고하세요.
 4. 행사를 저장하세요.
 
-유료 행사의 경우 같은 설정 페이지에서 가격이 있는 **Attendee Types**(참가자 유형), 선택 사항인 **Selections**(추가 옵션), **Discount Codes**(할인 코드)를 정의할 수 있으며, 결제는 교회의 헌금 제공자를 통해 받습니다. 전체 과정은 [유료 등록](paid-registrations)을 참고하세요.
+유료 행사의 경우 같은 설정 페이지에서 가격이 있는 **Attendee Types**(참가자 유형), 선택 사항인 **Selections**(추가 옵션), **Discount Codes**(할인 코드)를 정의할 수 있으며, 결제는 교회의 헌금 제공업체를 통해 받습니다. 전체 과정은 [유료 등록](paid-registrations)을 참고하세요.
 
-등록을 켜면, 교인이 [B1 웹사이트](../../b1-church/events/registering)나 [B1 모바일 앱](../../b1-mobile/events/registering)에서 행사를 볼 때 **Register for this Event** 버튼이 나타납니다. 양식을 연결했다면 등록자는 등록 중에 **Questions** 단계를 보게 되며, 답변은 등록과 함께 저장됩니다.
+등록을 켜면, 교인이 [B1 웹사이트](../../b1-church/events/registering)나 [B1 Mobile 앱](../../b1-mobile/events/registering)에서 행사를 볼 때 **Register for this Event** 버튼이 나타납니다. 양식을 연결했다면 등록자는 등록 중에 **Questions** 단계를 보게 되며, 답변은 등록과 함께 저장됩니다.
 
 :::info
-등록 질문은 **제한된(Restricted)** 표시가 없는 양식에서만 작동합니다. 제한된 양식은 보여 주지 않고 등록 과정에서 자동으로 건너뛰므로, 행사에 질문을 연결할 때는 제한되지 않은 양식을 사용하세요.
+등록 질문은 **Restricted**(제한됨) 표시가 없는 양식에서만 작동합니다. 제한된 양식은 보여 주지 않고 등록 과정에서 자동으로 건너뛰므로, 행사에 질문을 연결할 때는 제한되지 않은 양식을 사용하세요.
 :::
 
 ### 등록 관리하기
@@ -123,7 +123,7 @@ B1 Admin에서 캘린더를 만들면 하나 이상의 그룹을 연결해 행�
    - **Add Attendee** -- 오프라인이나 전화로 신청한 사람을 직접 등록합니다.
    - 개별 등록을 **Cancel**(취소)합니다.
    - 등록을 영구적으로 **Delete**(삭제)합니다.
-   - 자리가 나면 대기자 명단의 등록을 **Promote**(승격)합니다.
+   - 자리가 나면 대기 중인 등록을 **Promote**(승격)합니다.
    - **Export CSV** -- 참가자 유형, 선택 옵션, 결제 금액, 질문 답변을 포함해 모든 등록을 내려받습니다.
 
 행사에 등록 질문이 연결되어 있으면, 상세 페이지에 **Unanswered questions only** 필터가 나타나 아직 답변하지 않은 등록자를 빠르게 찾을 수 있습니다. 답변한 각 등록에는 **View Answers** 버튼이 있어 응답을 볼 수 있습니다. 유료 행사에는 **Type** 열, **Paid / Total** 열, 유형별 인원수, 결제 상세 대화상자가 추가로 나타납니다. [유료 등록](paid-registrations#the-registration-roster)을 참고하세요.
@@ -134,7 +134,7 @@ B1 Admin에서 캘린더를 만들면 하나 이상의 그룹을 연결해 행�
 
 ## 다음 단계
 
-- [큐레이션 캘린더](curated-calendar) -- 여러 그룹의 행사를 가져오는 캘린더 만들기
+- [큐레이션 캘린더](curated-calendar) -- 여러 그룹에서 행사를 가져오는 캘린더 만들기
 - [유료 등록](paid-registrations) -- 참가자 유형, 추가 옵션, 할인 코드, 결제, 대기자 명단
 - [행사 등록 안내](../guides/event-registration) -- 행사 등록 설정을 단계별로 안내
 - [캘린더 개요](./) -- 캘린더 개요로 돌아가기

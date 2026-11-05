@@ -1,78 +1,82 @@
 ---
-title: "Rediger profilen din"
+title: "Redigere profilen din"
 ---
 
-# Rediger profilen din
+# Redigere profilen din
 
 <div class="article-intro">
 
-Profilsiden din i medlemsportalen lar deg oppdatere kontaktinformasjonen din, administrere husstanden din, endre e-postadressen og passordet for kontoen din, og bestemme hvem som kan se adressen, telefonnummeret og e-postadressen din.
+Profilsiden din i medlemsportalen lar deg oppdatere kontaktinformasjonen din, administrere husstanden din, endre e-postadressen og passordet på kontoen din, og bestemme hvem som kan se adressen, telefonnummeret og e-postadressen din.
 
 </div>
+
+## Opplæringsvideo
+
+<YouTube id="SKqr2A_jdRQ" title="Updating Your Profile and Notifications" next="Joining a Group and Chatting With It" nextUrl="/docs/b1-church/groups/browsing-groups" />
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du må [være logget inn](./logging-in.md). Redigering av profilen krever en konto.
+- Du må være [logget inn](./logging-in.md). Å redigere profilen krever en konto
 
 </div>
 
 ## Åpne profilen din
 
-Trykk på profilbildet ditt i den øverste appfeltet, eller trykk på **Rediger profil** øverst på siden **Mer** eller på [Me-siden](./me-page.md), for å åpne **Din profil** på `/mobile/profileEdit`. Siden består av én side med seksjoner: **Foto og navn**, **Kontakt**, **Husstand**, **Konto** og **Personvern**. Hver seksjon viser gjeldende informasjon med en lenke **Rediger** (eller **Legg til familiemedlem** / **Endre**) som åpner et panel der du kan gjøre endringer.
+Trykk på profilbildet ditt i den øverste appmenyen, eller trykk på **Edit Profile** øverst på siden **More** eller på [Me-siden](./me-page.md) din, for å åpne **Your profile** på `/mobile/profileEdit`. Siden er ett ark med seksjoner -- **Photo & name**, **Contact**, **Household**, **Account** og **Privacy**. Hver viser gjeldende informasjon din med en lenke **Edit** (eller **Add Family Member** / **Change**) som åpner et panel der du gjør endringene.
 
-## Foto og navn og Kontakt
+## Bilde og navn, og kontakt
 
 Disse seksjonene inneholder informasjonen menigheten din ser på personposten din:
 
-- **Foto og navn** -- trykk **Endre bilde** for å laste opp et nytt bilde, og rediger fornavn, mellomnavn og etternavn.
-- **Kontakt** -- e-post, mobiltelefon, hjemmetelefon, jobbtelefon, fødselsdato og adressen din (gate, by, fylke og postnummer). Hvis du slår på tekstpåminnelser i [Varslingsinnstillinger](./notification-preferences.md), sendes de til mobilnummeret ditt.
+- **Photo & name** -- Trykk på **Change Photo** for å laste opp et nytt bilde, og rediger fornavn, mellomnavn og etternavn.
+- **Contact** -- E-post, mobiltelefon, hjemmetelefon, jobbtelefon, fødselsdato og adressen din (gate, by, fylke og postnummer). Hvis du slår på tekstpåminnelser i [varslingsinnstillingene](./notification-preferences.md), sendes de til mobilnummeret ditt.
 
-Gjør endringene i panelet og trykk **Lagre endringer**.
+Gjør endringene dine i panelet, og trykk på **Save Changes**.
 
 :::info
-Hvis menigheten din krever godkjenning av endringer i katalogen, står det på siden "Endringer i profilen din sendes til menighetens ansatte for godkjenning.", og knappen heter **Send inn for godkjenning**. Redigeringene dine sendes da som en forespørsel i stedet for å gjelde umiddelbart. Se [Godkjenne profilendringer](/docs/b1-admin/profile/approving-profile-changes) for hvordan menigheten din går gjennom disse.
+Hvis menigheten din krever godkjenning av endringer i katalogen, står det på siden «Changes to your profile go to church staff for approval.», og knappen heter **Submit for Approval**. Endringene dine sendes da som en forespørsel i stedet for å tre i kraft med en gang. Se [Godkjenne profilendringer](/docs/b1-admin/profile/approving-profile-changes) for hvordan menigheten din går gjennom dette.
 :::
 
 ## Husstand
 
-Husstand-seksjonen viser de andre personene som er koblet til husstanden din, hver med sin husstandsrolle (Hode, Ektefelle, Barn osv.). Trykk på et husstandsmedlem for å se detaljene.
+Seksjonen Household viser de andre personene som er koblet til husstanden din, hver med sin husstandsrolle (Head, Spouse, Child og så videre). Trykk på et husstandsmedlem for å se detaljene.
 
-For å legge til et familiemedlem som ikke finnes i systemet ennå, trykk **Legg til familiemedlem**, skriv inn fornavnet, og trykk **Legg til**. Nye familiemedlemmer legges til på en ventende liste og sendes sammen med de andre profilendringene dine, slik at menigheten kan gå gjennom dem.
+For å legge til et familiemedlem som ikke finnes i systemet ennå, trykker du på **Add Family Member**, skriver inn fornavnet og trykker på **Add**. Nye familiemedlemmer legges til i en ventende liste og sendes sammen med de andre profilendringene dine, slik at menigheten kan gjennomgå dem.
 
 ## Konto
 
-Kontoseksjonen administrerer innloggingen din, ikke menighetsprofilen din. Trykk **Rediger** for å åpne den:
+Seksjonen Account administrerer innloggingen din, ikke kirkeprofilen din. Trykk på **Edit** for å åpne den:
 
-- **Visningsnavn** -- fornavnet og etternavnet som vises på innloggingen din (adskilt fra navnet på menighetsprofilen din).
-- **Endre e-post** -- oppdater e-postadressen du bruker til å logge inn.
-- **Endre passord** -- skriv inn det gjeldende passordet ditt, deretter det nye passordet to ganger. Det nye passordet må være minst 8 tegn.
+- **Display Name** -- Fornavn og etternavn som vises på innloggingen din (adskilt fra navnet på kirkeprofilen din).
+- **Change Email** -- Oppdater e-postadressen du bruker til å logge inn.
+- **Change Password** -- Skriv inn det nåværende passordet ditt, og deretter det nye passordet to ganger. Det nye passordet må være minst 8 tegn.
 
-Hver del har sin egen knapp **Lagre**.
+Hver del har sin egen knapp **Save**.
 
 ## Personvern {#privacy}
 
-Personvern-seksjonen viser hvem som kan se kontaktinformasjonen din på tvers av ChurchApps. Trykk **Endre** for å åpne **Synlighetsinnstillinger**:
+Seksjonen Privacy viser hvem som kan se kontaktinformasjonen din på tvers av ChurchApps. Trykk på **Change** for å åpne **Visibility Preferences**:
 
-- **Skjul meg fra medlemskatalogen** -- en bryter som fjerner deg helt fra [medlemskatalogen](../community/member-directory.md).
-- **Adressesynlighet**, **Telefonsynlighet** og **E-postsynlighet** -- hver har sin egen rullegardinmeny, slik at du for eksempel kan dele e-postadressen din med hele menigheten mens adressen din holdes mer privat. Alternativene er:
+- **Hide me from the member directory** -- En bryter som fjerner deg helt fra [medlemskatalogen](../community/member-directory.md).
+- **Address Visibility**, **Phone Visibility** og **Email Visibility** -- Hver har sin egen nedtrekksliste, slik at du for eksempel kan dele e-postadressen din med hele menigheten, mens adressen din holdes mer privat. Valgene er:
 
 | Nivå | Hvem kan se det |
 |---|---|
-| **Alle** | Synlig for alle som kan se katalogen. |
-| **Kun medlemmer** | Synlig for andre innloggede medlemmer av menigheten. |
-| **Kun mine grupper** | Synlig bare for medlemmer av grupper du tilhører. |
-| **Mine gruppeledere og ansatte** | Synlig bare for menighetens ansatte og lederne av grupper du tilhører. |
-| **Kun ansatte** | Synlig bare for menighetens ansatte (personer med medlemsstatusen Ansatt eller tilgangen «Vis personer»). |
+| **Everyone** | Synlig for alle som kan se katalogen. |
+| **Members Only** | Synlig for andre innloggede medlemmer av menigheten. |
+| **My Groups Only** | Synlig bare for medlemmer av grupper du er med i. |
+| **My Group Leaders and Staff** | Synlig bare for menighetens ansatte og lederne i grupper du er med i. |
+| **Staff Only** | Synlig bare for menighetens ansatte (personer med medlemsstatus Staff eller tillatelsen People view). |
 
-Trykk **Lagre** for å ta i bruk valgene dine. Menigheten din setter en standard for hvert av disse tre feltene (se [Innstillinger for mobilappen](/docs/b1-admin/settings/mobile-app)), men det du velger her overstyrer standarden for din egen post.
+Trykk på **Save** for å bruke valgene dine. Menigheten din setter en standard for hvert av disse tre feltene. Se [Innstillinger for mobilappen](/docs/b1-admin/settings/mobile-app). Det du velger her, overstyrer standarden for din egen post.
 
 :::tip
-Du ser alltid din egen informasjon uavhengig av disse innstillingene, og ansatte med tilgangen «Vis personer» kan alltid se den også.
+Du ser alltid din egen informasjon uavhengig av disse innstillingene, og ansatte med tillatelsen People view kan alltid se den også.
 :::
 
 ## Relaterte artikler
 
-- [Me-siden](./me-page.md) -- Din personlige oversikt
-- [Medlemskatalog](../community/member-directory.md) -- Bla gjennom andre medlemmer
-- [Godkjenne profilendringer](/docs/b1-admin/profile/approving-profile-changes) -- Hvordan menigheten din går gjennom innsendte endringer
+- [Me-siden](./me-page.md) -- din personlige oversikt
+- [Medlemskatalog](../community/member-directory.md) -- bla i andre medlemmer
+- [Godkjenne profilendringer](/docs/b1-admin/profile/approving-profile-changes) -- hvordan menigheten din går gjennom innsendte endringer

@@ -10,6 +10,10 @@ Ang page editor ng B1 ay isang visual na drag-and-drop na builder na nagpapahint
 
 </div>
 
+## Training Video
+
+<YouTube id="m2B_JxmfFm4" title="Editing Pages and Navigation in B1" next="Connecting a Custom Domain in B1" nextUrl="/docs/b1-admin/settings/custom-domain" />
+
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 

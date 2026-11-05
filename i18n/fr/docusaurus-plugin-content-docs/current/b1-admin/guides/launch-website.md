@@ -6,85 +6,89 @@ title: "Guide : Lancer votre site Web d'église"
 
 <div class="article-intro">
 
-B1.church inclut un constructeur de site Web complet sans frais supplémentaires. Ce guide vous montre comment créer votre site Web d'église à partir de zéro - configuration de votre page d'accueil, configuration de votre apparence, ajout de pages clés et, éventuellement, connexion des dons en ligne et des formulaires d'inscription aux événements.
+B1.church comprend un constructeur de sites web complet, sans frais supplémentaires. Ce guide vous accompagne dans la création de votre site web d'église à partir de zéro : configuration de votre page d'accueil, personnalisation de l'apparence, ajout des pages essentielles, et, si vous le souhaitez, connexion des formulaires de dons en ligne et d'inscription aux événements.
 
 </div>
+
+## Vidéo de formation
+
+<YouTube id="aA4UahZpmXg" title="Lancer le site web de votre église dans B1" next="Modifier les pages et la navigation dans B1" nextUrl="/docs/b1-admin/website/page-editor" />
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Ayez votre logo d'église prêt (PNG avec fond transparent fonctionne mieux)
-- Choisissez 2-3 couleurs de marque pour votre site
-- Si vous utilisez un domaine personnalisé (par exemple, votreeglise.com), accédez à votre fournisseur DNS (GoDaddy, Cloudflare, etc.)
-- Si vous souhaitez des dons en ligne sur votre site, complétez d'abord [Configuration des dons en ligne](../donations/online-giving-setup.md) (Stripe)
+- Ayez le logo de votre église prêt (un PNG à fond transparent donne les meilleurs résultats)
+- Choisissez 2 à 3 couleurs de marque pour votre site
+- Si vous utilisez un domaine personnalisé (par exemple votreeglise.ca), ayez accès à votre fournisseur DNS (GoDaddy, Cloudflare, etc.)
+- Si vous souhaitez des dons en ligne sur votre site, effectuez d'abord la [Configuration des dons en ligne](../donations/online-giving-setup.md) (Stripe)
 
 </div>
 
-## Étape 1 : configuration initiale du site Web
+## Étape 1 : configuration initiale du site web
 
-Commencez par créer votre page d'accueil et la structure de base du site.
+Commencez par créer votre page d'accueil et la structure de base de votre site.
 
-Suivez le guide [Configuration initiale du site Web](../website/initial-setup.md) pour :
+Suivez le guide [Configuration initiale du site web](../website/initial-setup.md) pour :
 
-1. Accéder à **Site Web** dans B1 Admin
-2. Créer votre page d'accueil avec une section de héros, un message de bienvenue et des informations clés
+1. Accéder à **Site web** dans B1 Admin
+2. Créer votre page d'accueil avec une section héros, un message de bienvenue et les informations essentielles
 3. Ajouter le nom et la devise de votre église
 
 ## Étape 2 : configurer l'apparence
 
-Définissez l'identité visuelle de votre site - couleurs, polices, logo et pied de page.
+Définissez l'identité visuelle de votre site -- couleurs, polices, logo et pied de page.
 
 Suivez le guide [Apparence](../website/appearance.md) pour :
 
-1. Télécharger votre logo d'église
-2. Définir vos couleurs primaire et d'accent
+1. Téléverser le logo de votre église
+2. Définir vos couleurs principale et d'accent
 3. Configurer la barre de navigation et le pied de page
 4. Prévisualiser vos modifications
 
 :::tip
-Gardez votre palette de couleurs simple - une couleur primaire plus une couleur d'accent suffit généralement. Le constructeur de site Web gérera le reste.
+Gardez une palette de couleurs simple : une couleur principale et une couleur d'accent suffisent généralement. Le constructeur de sites web s'occupe du reste.
 :::
 
 ## Étape 3 : ajouter des pages de contenu
 
-Construisez les pages dont vos visiteurs ont le plus besoin.
+Créez les pages dont vos visiteurs ont le plus besoin.
 
-Suivez le guide [Gestion des pages](../website/managing-pages.md) pour créer des pages comme :
+Suivez le guide [Gérer les pages](../website/managing-pages.md) pour créer des pages comme :
 
-- **À propos** — L'histoire, les croyances et le leadership de votre église
-- **Sermons** — Lien vers votre [bibliothèque de sermons](../sermons/managing-sermons.md)
-- **Événements** — Événements à venir et inscription
-- **Donner** — Page de dons en ligne (nécessite [configuration Stripe](../donations/online-giving-setup.md))
-- **Contact** — Localisation, heures de service et informations de contact
+- **À propos** -- L'histoire, les croyances et la direction de votre église
+- **Sermons** -- Un lien vers votre [bibliothèque de sermons](../sermons/managing-sermons.md)
+- **Événements** -- Les événements à venir et les inscriptions
+- **Dons** -- Page de dons en ligne (nécessite la [configuration de Stripe](../donations/online-giving-setup.md))
+- **Contact** -- Emplacement, horaires des services et coordonnées
 
 ## Étape 4 : connecter votre domaine
 
-Si vous souhaitez utiliser votre propre nom de domaine (comme votreeglise.com) au lieu de l'URL B1 par défaut :
+Si vous voulez utiliser votre propre nom de domaine (comme votreeglise.ca) au lieu de l'adresse B1 par défaut :
 
 1. Allez à **Paramètres** dans B1 Admin et ouvrez la section **Domaines**
-2. Entrez votre domaine personnalisé
-3. Mettez à jour vos enregistrements DNS chez votre fournisseur de domaine pour pointer vers B1
+2. Saisissez votre domaine personnalisé
+3. Mettez à jour les enregistrements DNS chez votre fournisseur de domaine pour pointer vers B1
 
 :::info
-Les modifications DNS peuvent prendre jusqu'à 48 heures pour se propager. Votre site peut ne pas être accessible depuis votre domaine personnalisé immédiatement. L'URL B1 par défaut continuera à fonctionner pendant ce temps.
+Les modifications DNS peuvent prendre jusqu'à 48 heures pour se propager. Votre site peut ne pas être accessible depuis votre domaine personnalisé immédiatement. L'adresse B1 par défaut continuera de fonctionner pendant ce temps.
 :::
 
-## Étape 5 : ajouter des dons et des formulaires
+## Étape 5 : ajouter les dons et les formulaires
 
-Améliorez votre site avec des éléments interactifs :
+Enrichissez votre site avec des éléments interactifs :
 
-- **Dons en ligne** — Ajoutez une section de dons pour que les membres puissent faire des dons directement depuis votre site Web. Voir [Configuration des dons en ligne](../donations/online-giving-setup.md) pour configurer Stripe d'abord.
-- **Formulaires d'inscription** — Intégrez des [formulaires autonomes](../forms/creating-forms.md) pour les inscriptions aux événements, les cartes de visiteur ou les candidatures de bénévoles. Voir [Gestion des pages](../website/managing-pages.md) pour savoir comment ajouter un élément de formulaire à n'importe quelle page.
+- **Dons en ligne** -- Ajoutez une section de dons pour que les membres puissent donner directement depuis votre site web. Consultez la [Configuration des dons en ligne](../donations/online-giving-setup.md) pour configurer Stripe au préalable.
+- **Formulaires d'inscription** -- Intégrez des [formulaires autonomes](../forms/creating-forms.md) pour les inscriptions aux événements, les fiches de visiteurs ou les candidatures de bénévoles. Consultez [Gérer les pages](../website/managing-pages.md) pour savoir comment ajouter un élément formulaire à n'importe quelle page.
 
 ## C'est fini !
 
-Votre site Web d'église est en direct. Partagez l'URL avec votre congrégation et sur les médias sociaux. Vous pouvez mettre à jour le contenu, ajouter de nouvelles pages et ajuster l'apparence à tout moment à partir du tableau de bord B1 Admin.
+Votre site web d'église est en ligne. Partagez l'adresse avec votre communauté et sur les réseaux sociaux. Vous pouvez mettre à jour le contenu, ajouter de nouvelles pages et modifier l'apparence à tout moment depuis le tableau de bord de B1 Admin.
 
 ## Articles connexes
 
-- [Configuration initiale du site Web](../website/initial-setup.md) — guide détaillé de configuration
-- [Gestion des pages](../website/managing-pages.md) — ajouter et modifier des pages
-- [Apparence](../website/appearance.md) — couleurs, logo et mise en page
-- [Gestion des fichiers](../website/files.md) — télécharger des images et des documents
-- [Configuration des dons en ligne](../donations/online-giving-setup.md) — configurer Stripe
-- [Créer des formulaires](../forms/creating-forms.md) — créer des formulaires d'inscription et d'enquête
+- [Configuration initiale du site web](../website/initial-setup.md) -- parcours de configuration détaillé
+- [Gérer les pages](../website/managing-pages.md) -- ajouter et modifier des pages
+- [Apparence](../website/appearance.md) -- couleurs, logo et mise en page
+- [Gérer les fichiers](../website/files.md) -- téléverser des images et des documents
+- [Configuration des dons en ligne](../donations/online-giving-setup.md) -- configurer Stripe
+- [Créer des formulaires](../forms/creating-forms.md) -- créer des formulaires d'inscription et de sondage

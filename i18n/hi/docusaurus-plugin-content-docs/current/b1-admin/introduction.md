@@ -10,6 +10,10 @@ B1.church चुनने के लिए धन्यवाद! यह पर�
 
 </div>
 
+## प्रशिक्षण वीडियो
+
+<YouTube id="o4KfSQrRooE" title="What Is B1.church?" />
+
 और सहायता के लिए, कृपया [support@churchapps.org](mailto:support@churchapps.org) पर ईमेल करें।
 
 ## परिचय वीडियो

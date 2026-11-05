@@ -1,105 +1,105 @@
 ---
-title: "गाइड: अपनी Sermon Library और Live Stream बनाएं"
+title: "गाइड: अपनी प्रवचन लाइब्रेरी और लाइव स्ट्रीम बनाना"
 ---
 
-# अपनी Sermon Library और Live Stream बनाएं
+# अपनी प्रवचन लाइब्रेरी और लाइव स्ट्रीम बनाना
 
 <div class="article-intro">
 
-अपने sermon archive को ऑनलाइन लाएं और live streaming सेट करें -- अपनी मौजूदा YouTube या Vimeo library आयात करने से लेकर interactive chat के साथ नियमित live services शेड्यूल करने तक। अंत तक, आपका congregation पिछले sermons देख सकेगा और आपकी website और mobile app पर live services से जुड़ सकेगा।
+अपनी प्रवचन संग्रह-सामग्री ऑनलाइन लाएँ और लाइव स्ट्रीमिंग सेट करें -- अपनी मौजूदा YouTube या Vimeo लाइब्रेरी आयात करने से लेकर इंटरैक्टिव चैट के साथ नियमित लाइव सेवाएँ शेड्यूल करने तक। अंत तक, आपकी मंडली आपकी वेबसाइट और मोबाइल ऐप पर पुराने प्रवचन देख सकेगी और लाइव सेवाओं में शामिल हो सकेगी।
 
 </div>
 
 ## प्रशिक्षण वीडियो
 
-<YouTube id="b3B3A25g2Sk" title="Building Your Sermon Library in B1" />
+<YouTube id="b3B3A25g2Sk" title="Building Your Sermon Library in B1" next="Setting Up Live Streaming in B1" nextUrl="/docs/b1-admin/sermons/live-streaming" />
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- content प्रबंधन अनुमति वाला B1 Admin account
-- sermon videos वाला YouTube या Vimeo channel (अपना archive आयात करने के लिए)
-- YouTube Channel ID (live streaming के लिए -- इसे अपनी YouTube Studio settings में ढूंढें)
+- कंटेंट प्रबंधन अनुमति वाला B1 Admin खाता
+- प्रवचन वीडियो वाला YouTube या Vimeo चैनल (अपनी संग्रह-सामग्री आयात करने के लिए)
+- YouTube Channel ID (लाइव स्ट्रीमिंग के लिए -- इसे अपनी YouTube Studio सेटिंग में खोजें)
 
 </div>
 
-## चरण 1: Sermon Playlists बनाएं
+## चरण 1: प्रवचन प्लेलिस्ट बनाना
 
-Playlists आपके sermons को आसान ब्राउज़िंग के लिए series और collections में व्यवस्थित करती हैं।
+प्लेलिस्ट आपके प्रवचनों को आसानी से ब्राउज़ करने के लिए सीरीज़ और संग्रहों में व्यवस्थित करती हैं।
 
-[Playlists](../sermons/playlists.md) गाइड का पालन करके:
+इन कामों के लिए [Playlists](../sermons/playlists.md) गाइड का पालन करें:
 
-1. "2024 Sunday Messages", "Marriage Series", "Christmas Services" जैसी series/collections बनाएं
-2. हर playlist के लिए नाम, description, publish date, और thumbnail जोड़ें
+1. "2024 Sunday Messages", "Marriage Series", "Christmas Services" जैसी सीरीज़/संग्रह बनाएँ
+2. हर प्लेलिस्ट के लिए नाम, विवरण, प्रकाशन तारीख, और थंबनेल जोड़ें
 
 :::tip
-sermons जोड़ने से पहले playlists बनाएं। इससे sermons जोड़ते समय उन्हें सही series में व्यवस्थित करना आसान होता है।
+प्रवचन जोड़ने से पहले प्लेलिस्ट बनाएँ। इससे प्रवचन जोड़ते समय उन्हें सही सीरीज़ में व्यवस्थित करना आसान होता है।
 :::
 
-## चरण 2: अपने मौजूदा Sermons आयात करें
+## चरण 2: अपने मौजूदा प्रवचन आयात करना
 
-अगर आपके sermon videos पहले से YouTube या Vimeo पर हैं, तो आप उन्हें एक साथ खींच सकते हैं।
+यदि आपके प्रवचन वीडियो पहले से YouTube या Vimeo पर हैं, तो आप उन सभी को एक साथ ला सकते हैं।
 
-[Bulk Import](../sermons/bulk-import.md) गाइड का पालन करके:
+इन कामों के लिए [Bulk Import](../sermons/bulk-import.md) गाइड का पालन करें:
 
-1. अपना YouTube या Vimeo channel URL डालें
-2. पूर्वावलोकन देखें कि कौन से videos आयात होंगे
-3. एक साथ सब जोड़ने के लिए Import पर click करें
+1. अपना YouTube या Vimeo चैनल URL दर्ज करें
+2. यह देखने के लिए आयात का पूर्वावलोकन करें कि कौन-से वीडियो आयात होंगे
+3. सभी को एक साथ जोड़ने के लिए Import पर क्लिक करें
 
-## चरण 3: अलग-अलग Sermons जोड़ें
+## चरण 3: अलग-अलग प्रवचन जोड़ना
 
-एक-बार के जोड़ों या ऐसे sermons के लिए जो bulk import का हिस्सा नहीं हैं, उन्हें अलग-अलग जोड़ें।
+एक-बार की जोड़ों या ऐसे प्रवचनों के लिए जो बल्क आयात का हिस्सा नहीं हैं, उन्हें अलग-अलग जोड़ें।
 
-[Managing Sermons](../sermons/managing-sermons.md) गाइड का पालन करके:
+इन कामों के लिए [Managing Sermons](../sermons/managing-sermons.md) गाइड का पालन करें:
 
-1. कोई video URL चिपकाएं (YouTube, Vimeo, या Facebook)
-2. शीर्षक, description, thumbnail, और अवधि video metadata से अपने-आप भर जाते हैं
-3. sermon को किसी playlist में असाइन करें
+1. एक वीडियो URL चिपकाएँ (YouTube, Vimeo, या Facebook)
+2. शीर्षक, विवरण, थंबनेल, और अवधि वीडियो की मेटाडेटा से अपने-आप भर जाते हैं
+3. प्रवचन को किसी प्लेलिस्ट में असाइन करें
 
-## चरण 4: Live Streaming सेट करें
+## चरण 4: लाइव स्ट्रीमिंग सेट करना
 
-अपना YouTube channel कनेक्ट करें ताकि आपकी B1 site अपने-आप आपका live stream उठा ले।
+अपना YouTube चैनल जोड़ें, ताकि आपकी B1 साइट आपकी लाइव स्ट्रीम को अपने-आप उठा ले।
 
-[Live Streaming](../sermons/live-streaming.md) गाइड का पालन करके:
+इन कामों के लिए [Live Streaming](../sermons/live-streaming.md) गाइड का पालन करें:
 
-1. streaming settings में अपना YouTube Channel ID डालें
-2. अपनी नियमित service schedule कॉन्फ़िगर करें (जैसे रविवार सुबह 10:00 बजे)
-3. **Sermons > Settings** पेज पर streaming पेज के tabs (Chat, Prayer requests, और custom links) कस्टमाइज़ करें
+1. स्ट्रीमिंग सेटिंग में अपना YouTube Channel ID दर्ज करें
+2. अपनी नियमित सेवा का शेड्यूल कॉन्फ़िगर करें (जैसे रविवार सुबह 10:00 बजे)
+3. **Sermons > Settings** पेज पर स्ट्रीमिंग पेज के टैब (Chat, Prayer requests, और कस्टम लिंक) अनुकूलित करें
 
 :::info
-जब आप YouTube पर live जाते हैं, तो B1 streaming पेज अपने-आप stream उठा लेता है। रविवार सुबह कोई अतिरिक्त कदम नहीं चाहिए।
+जब आप YouTube पर लाइव जाते हैं, तो B1 स्ट्रीमिंग पेज स्ट्रीम को अपने-आप उठा लेता है। रविवार की सुबह किसी अतिरिक्त कदम की ज़रूरत नहीं है।
 :::
 
-## चरण 5: अपनी Website पर दिखाएं
+## चरण 5: अपनी वेबसाइट पर दिखाना
 
-अपनी sermon library और live stream को आगंतुकों के लिए आसानी से उपलब्ध बनाएं।
+अपनी प्रवचन लाइब्रेरी और लाइव स्ट्रीम को विज़िटरों के लिए आसानी से उपलब्ध बनाएँ।
 
-[Managing Pages](../website/managing-pages.md) गाइड का पालन करके:
+इन कामों के लिए [Managing Pages](../website/managing-pages.md) गाइड का पालन करें:
 
-1. अपनी B1 website पर एक Sermons section जोड़ें ताकि आगंतुक library ब्राउज़ कर सकें
-2. live viewing अनुभव के लिए एक Live Stream section जोड़ें
+1. विज़िटरों के ब्राउज़ करने के लिए अपनी B1 वेबसाइट में Sermons सेक्शन जोड़ें
+2. लाइव देखने के अनुभव के लिए Live Stream सेक्शन जोड़ें
 
-## चरण 6: Mobile पर पहुंच
+## चरण 6: मोबाइल पर पहुँच
 
-सदस्य किसी भी डिवाइस से sermons और live services तक पहुंच सकते हैं।
+सदस्य किसी भी डिवाइस से प्रवचन और लाइव सेवाएँ देख सकते हैं।
 
-1. सदस्य [B1 Mobile app](../../b1-mobile/content/sermons.md) में और [B1.church](../../b1-church/content/sermons.md) पर sermons देख सकते हैं
-2. Live streaming के साथ chat दोनों platforms पर काम करता है
+1. सदस्य [B1 Mobile app](../../b1-mobile/content/sermons.md) और [B1.church](../../b1-church/content/sermons.md) पर प्रवचन देख सकते हैं
+2. चैट के साथ लाइव स्ट्रीमिंग दोनों प्लेटफ़ॉर्म पर काम करती है
 
 :::info
-live chat सुविधा आपके ऑनलाइन congregation को वास्तविक समय में भाग लेने देती है, ठीक वैसे ही जैसे वे कमरे में हों।
+लाइव चैट सुविधा आपकी ऑनलाइन मंडली को वास्तविक समय में भाग लेने देती है, बिल्कुल कमरे में होने की तरह।
 :::
 
-## हो गया!
+## आप हो गए!
 
-आपकी sermon library ऑनलाइन है और आपका live stream कॉन्फ़िगर हो गया है। सदस्य कभी भी पिछले sermons देख सकते हैं और कहीं से भी live services से जुड़ सकते हैं। नए sermon uploads अपने-आप sync हो सकते हैं।
+आपकी प्रवचन लाइब्रेरी ऑनलाइन है और आपकी लाइव स्ट्रीम कॉन्फ़िगर हो चुकी है। सदस्य कभी भी पुराने प्रवचन देख सकते हैं और कहीं से भी लाइव सेवाओं में शामिल हो सकते हैं। नए प्रवचन अपलोड अपने-आप सिंक हो सकते हैं।
 
 ## संबंधित लेख
 
-- [Playlists](../sermons/playlists.md) — sermons को series में व्यवस्थित करें
+- [Playlists](../sermons/playlists.md) — प्रवचनों को सीरीज़ में व्यवस्थित करें
 - [Bulk Import](../sermons/bulk-import.md) — YouTube या Vimeo से आयात करें
-- [Managing Sermons](../sermons/managing-sermons.md) — अलग-अलग sermons जोड़ें और संपादित करें
-- [Live Streaming](../sermons/live-streaming.md) — live services कॉन्फ़िगर करें
-- [Sermons (Web)](../../b1-church/content/sermons.md) — सदस्यों के लिए sermon देखने का अनुभव
-- [Live Streaming (Web)](../../b1-church/content/live-streaming.md) — सदस्यों के लिए live stream अनुभव
-- [Sermons (Mobile)](../../b1-mobile/content/sermons.md) — mobile app पर sermons
+- [Managing Sermons](../sermons/managing-sermons.md) — अलग-अलग प्रवचन जोड़ें और संपादित करें
+- [Live Streaming](../sermons/live-streaming.md) — लाइव सेवाएँ कॉन्फ़िगर करें
+- [Sermons (Web)](../../b1-church/content/sermons.md) — सदस्यों के लिए प्रवचन देखने का अनुभव
+- [Live Streaming (Web)](../../b1-church/content/live-streaming.md) — सदस्यों के लिए लाइव स्ट्रीम का अनुभव
+- [Sermons (Mobile)](../../b1-mobile/content/sermons.md) — मोबाइल ऐप पर प्रवचन

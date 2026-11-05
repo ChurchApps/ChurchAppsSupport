@@ -6,7 +6,7 @@ title: "Attività"
 
 <div class="article-intro">
 
-Le attività ti permettono di assegnare azioni a persone o gruppi della tua chiesa. Che si tratti di un'attività una tantum o di una responsabilità ricorrente, le attività ti aiutano a tenere traccia di cosa va fatto e di chi è responsabile, così nulla viene trascurato.
+Le attività ti permettono di assegnare azioni a persone o gruppi della tua chiesa. Che si tratti di un'attività una tantum o di una responsabilità ricorrente, le attività ti aiutano a tenere traccia di cosa va fatto e di chi se ne occupa, così nulla viene trascurato.
 
 </div>
 
@@ -20,25 +20,25 @@ Le attività ti permettono di assegnare azioni a persone o gruppi della tua chie
 
 ## Visualizzare le attività
 
-Nel menu di navigazione rapida, scegli **Servizio > Il mio lavoro** (oppure cerca "Il mio lavoro"). L'elenco **Attività** mostra il titolo di ciascuna attività, a chi è associata, a chi è assegnata, quando è stata aperta e il suo stato. Le tue schede del [flusso di lavoro](./workflows.md) compaiono accanto ad essa in **Le mie schede**.
+Nel menu di navigazione rapida, scegli **Servizio > Il mio lavoro** (oppure cerca "Il mio lavoro"). L'elenco **Attività** mostra il titolo di ciascuna attività, la persona o il gruppo a cui è associata, a chi è assegnata, quando è stata aperta e il suo stato. Le tue schede del [flusso di lavoro](./workflows.md) compaiono accanto all'elenco, sotto **Le mie schede**.
 
 Usa le schede sopra l'elenco per passare tra le attività **Assegnate a me**, **Assegnate ai miei gruppi** e **Richieste da me**. Ogni scheda mostra quante attività contiene.
 
 :::tip
-Per impostazione predefinita, vengono mostrate solo le attività aperte. Scegli **Chiuse** sopra l'elenco per vedere invece le attività completate.
+Per impostazione predefinita vengono mostrate solo le attività aperte. Scegli **Chiuse** sopra l'elenco per vedere invece le attività completate.
 :::
 
 ## Creare un'attività
 
 1. Nella pagina **Il mio lavoro**, clicca su **Aggiungi attività**. Si apre il modulo **Nuova attività**.
-2. Clicca sulla casella **Associa a** e scegli la persona a cui si riferisce l'attività.
+2. Facoltativamente, clicca sulla casella **Associa a** e scegli la persona o il gruppo a cui si riferisce l'attività. Lasciala vuota per un semplice promemoria che non riguarda nessuno in particolare, ad esempio un promemoria per te stesso.
 3. Clicca sulla casella **Assegna a**. Nella finestra **Seleziona una persona o un gruppo**, cerca nella scheda **Persona**, oppure passa alla scheda **Gruppo** e cerca un gruppo, poi seleziona il risultato.
 4. Inserisci un **Titolo** per l'attività.
-5. Facoltativamente scegli una **Data di scadenza**.
+5. Facoltativamente, scegli una **Data di scadenza**.
 6. Aggiungi delle **Note** con eventuali dettagli o istruzioni per chi la riceve.
 7. Clicca su **Salva**.
 
-L'attività comparirà ora nell'elenco delle attività e sarà visibile a chi la riceve nella sua dashboard e nell'app mobile.
+L'attività comparirà ora nell'elenco e sarà visibile a chi la riceve nella sua dashboard e nell'app mobile.
 
 ## Gestire un'attività
 
@@ -46,8 +46,8 @@ Clicca su un'attività qualsiasi per aprire la sua pagina di dettaglio. Da qui p
 
 - **Chiudere o riaprire l'attività** -- Clicca su **Chiudi attività** quando il lavoro è completato, oppure su **Riapri attività** per riaprirla.
 - **Riassegnare l'attività** -- Clicca su **Assegna** per scegliere un'altra persona o un altro gruppo.
-- **Cambiare a chi si riferisce** -- Clicca su **Associa** per scegliere un'altra persona.
-- **Cambiare la data di scadenza** -- Scegli una data nel campo **Scadenza**; viene salvata quando clicchi altrove. (Le attività create per una [conferma di assegnazione di servizio](./workflows.md#serving-assignment-confirmations) mostrano la loro data di scadenza ma non possono essere modificate qui.)
+- **Cambiare a chi si riferisce** -- Clicca su **Associa** per scegliere un'altra persona o un altro gruppo, oppure scegli **Nessuna persona o gruppo** per rimuovere l'associazione.
+- **Cambiare la data di scadenza** -- Scegli una data nel campo **Scadenza**; viene salvata quando clicchi altrove. (Le attività create per una [conferma di assegnazione di servizio](./workflows.md#serving-assignment-confirmations) mostrano la loro data di scadenza, ma qui non può essere modificata.)
 - **Aggiungere note** -- Pubblica aggiornamenti o dettagli per chi riceve l'attività nelle note dell'attività.
 - **Impostare promemoria** -- Vedi [Promemoria delle attività](#task-reminders) più sotto.
 
@@ -62,7 +62,7 @@ Un'attività con una data di scadenza può ricordare a chi la riceve la scadenza
 5. Sotto **Invia tramite**, scegli **Notifica push**, **Email** e, se la tua chiesa ha un [fornitore di SMS](../settings/church-settings.md#texting) collegato, **SMS**.
 6. Clicca su **Salva promemoria**.
 
-Se l'attività non ha una data di scadenza, B1 ti avvisa che non verrà inviato alcun promemoria finché non ne viene impostata una nel campo **Scadenza**. I promemoria via SMS raggiungono solo le persone che hanno attivato i **Messaggi di testo** nelle proprie [Preferenze di notifica](../../b1-church/getting-started/notification-preferences.md), e ogni SMS può avere un costo per la tua chiesa.
+Se l'attività non ha una data di scadenza, B1 ti avvisa che non verrà inviato alcun promemoria finché non ne viene impostata una nel campo **Scadenza**. I promemoria via SMS raggiungono solo le persone che hanno attivato i **Messaggi di testo** nelle proprie [Preferenze di notifica](../../b1-church/getting-started/notification-preferences.md), e ogni SMS può comportare un costo per la tua chiesa.
 
 ## Ciclo di vita di un'attività
 
@@ -76,14 +76,14 @@ B1 Admin non crea più attività ricorrenti secondo una pianificazione. Per un f
 :::
 
 :::tip
-Quando devi far passare molte persone attraverso gli stessi stadi -- come il follow-up dei nuovi visitatori o un processo di adesione come membri -- usa i [Flussi di lavoro](./workflows.md). I flussi di lavoro trasformano le attività in schede su una bacheca drag-and-drop, con passaggi, date di scadenza e instradamento.
+Quando devi far passare molte persone attraverso le stesse fasi -- come il follow-up dei nuovi visitatori o un processo di adesione come membri -- usa i [Flussi di lavoro](./workflows.md). I flussi di lavoro trasformano le attività in schede su una bacheca drag-and-drop, con passaggi, date di scadenza e instradamento.
 :::
 
 :::info
-Alcune attività vengono create automaticamente da altre parti di B1 e si aprono su una scheda di revisione speciale invece che sulla normale vista di note/riassegnazione -- le [richieste di adesione ai gruppi](../groups/group-join-requests.md#approving-from-the-tasks-page), le [richieste di modifica del profilo](../profile/approving-profile-changes.md) e le [richieste di eliminazione dell'account](../profile/account-deletion.md) funzionano tutte così.
+Alcune attività vengono create automaticamente da altre parti di B1 e si aprono su una scheda di revisione speciale invece che sulla normale vista di note/riassegnazione: le [richieste di adesione ai gruppi](../groups/group-join-requests.md#approving-from-the-tasks-page), le [richieste di modifica del profilo](../profile/approving-profile-changes.md) e le [richieste di eliminazione dell'account](../profile/account-deletion.md) funzionano tutte in questo modo.
 :::
 
-## Passi successivi
+## Passaggi successivi
 
 - Fai avanzare le persone attraverso un processo a più passaggi con i [Flussi di lavoro](./workflows.md)
 - Usa i [Flussi di lavoro](./workflows.md) per far avanzare automaticamente le persone attraverso processi ripetibili

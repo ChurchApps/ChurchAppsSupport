@@ -29,19 +29,19 @@ FreePlay Admin 中的 **Calendar** 页面用于控制每个屏幕组播放什么
 
 排程按类型进行颜色编码。图例会说明各种颜色的含义：
 
-- **Default loop**——斜纹背景，当该组设有默认循环时，它会显示在所有内容的后面
+- **Default loop**（默认循环）——斜纹背景，当该组设有默认循环时，它会显示在所有内容的后面
 - **Playlist**（播放列表）
 - **Service plan**（服务计划）
 - **Provider folder**（提供商文件夹）
 
-每个区块都会显示其名称；较高的区块还会显示时间、是否重复（**weekly** 或 **once**），以及内容提前结束时会发生什么。
+每个区块都会显示其名称。较高的区块还会显示时间、是否重复（**weekly** 每周或 **once** 仅一次），以及内容提前结束时会发生什么。
 
 ## 设置默认循环
 
 默认循环会在没有任何排定内容时，在该组的屏幕上播放。
 
 1. 在 **Calendar** 页面中，点击页眉中的 **Default loop…**。如果已设置默认循环，该按钮会显示 **Default loop:**，后跟播放列表的名称。
-2. 选择一个 **Playlist**，或选择 **None — screen goes dark**。
+2. 选择一个 **Playlist**，或选择 **None — screen goes dark**（无，屏幕变暗）。
 3. 点击 **Save**。
 
 ## 添加排程
@@ -54,21 +54,21 @@ FreePlay Admin 中的 **Calendar** 页面用于控制每个屏幕组播放什么
 
 然后填写表单：
 
-1. **Play**——选择要播放的内容：
-   - **Playlists**——你制作的任何播放列表
-   - **Service plans**——来自 B1 Admin 的计划类型，标有 **(current plan)**。屏幕会在每周播放该计划类型当前的计划，包括 Go Curriculum 课程（也包括你自定义的课程），这些课程使用与该计划类型所属事工关联的 Go 登录
-   - **Provider folder…**——打开 **Choose a provider folder**。浏览到某个文件夹并点击 **Use this folder**。若要稍后更换文件夹，请点击 **Change**
-2. **Repeats**——选择该排程播放的星期几。若只需单个日期，请改为开启 **One time** 并选择 **Date**。
-3. **Start** 和 **End**——排程开始和停止的时间。
-4. **If it finishes early**——当内容在结束时间之前播完时的处理方式：
-   - **Loop until the end time**——从头开始重新播放。适合标识循环、公告和倒计时
-   - **Teacher paced**——幻灯片会等待老师的遥控器。课程会一直显示到最后一张幻灯片，即使超过结束时间
-   - **Play once, then go back to the default loop**——播放一次，然后返回默认循环
-5. 对于重复的排程，将 **Starts** 设为第一个日期。在 **Ends** 下，选择 **Never**，或选择 **On date** 并输入 **End date**。
+1. **Play**（播放）——选择要播放的内容：
+   - **Playlists**（播放列表）——你制作的任何播放列表
+   - **Service plans**（服务计划）——来自 B1 Admin 的计划类型，标有 **(current plan)**（当前计划）。屏幕会在每周播放该计划类型当前的计划，包括 Go Curriculum 课程（也包括你自定义的课程），这些课程使用与该计划类型所属事工关联的 Go 登录
+   - **Provider folder…**（提供商文件夹）——打开 **Choose a provider folder**（选择提供商文件夹）。浏览到某个文件夹并点击 **Use this folder**（使用此文件夹）。若要稍后更换文件夹，请点击 **Change**（更改）
+2. **Repeats**（重复）——选择该排程播放的星期几。若只需单个日期，请改为开启 **One time**（仅一次）并选择 **Date**（日期）。
+3. **Start** 和 **End**（开始和结束）——排程开始和停止的时间。
+4. **If it finishes early**（如果提前结束）——当内容在结束时间之前播完时的处理方式：
+   - **Loop until the end time**（循环至结束时间）——从头开始重新播放。适合标识循环、公告和倒计时
+   - **Teacher paced**（教师控制节奏）——幻灯片会等待老师的遥控器。课程会一直显示到最后一张幻灯片，即使超过结束时间
+   - **Play once, then go back to the default loop**（播放一次，然后返回默认循环）
+5. 对于重复的排程，将 **Starts**（开始）设为第一个日期。在 **Ends**（结束）下，选择 **Never**（永不），或选择 **On date**（在指定日期）并输入 **End date**（结束日期）。
 6. 点击 **Save**。
 
 :::info
-**Teacher paced** 取代了较早的“保持最后一张幻灯片”选项。使用该选项保存的排程现在将以 teacher paced 方式播放。
+**Teacher paced** 取代了较早的"保持最后一张幻灯片"选项。使用该选项保存的排程现在将以 Teacher paced 方式播放。
 :::
 
 ## 编辑或删除排程
@@ -82,10 +82,11 @@ FreePlay Admin 中的 **Calendar** 页面用于控制每个屏幕组播放什么
 
 ## 屏幕如何获取更改
 
-已配对的屏幕会下载未来 7 天内排定的所有内容，并会自行检查更改。编辑日历后，你无需再去操作电视。要查看屏幕是否已具备所需的全部内容，请查看 [Screens 页面](./managing-screens)上的 **Ready through**。
+已配对的屏幕会下载未来 7 天内排定的所有内容，并会自行检查更改。编辑日历后，你无需再去操作电视。要查看屏幕是否已具备所需的全部内容，请查看 [Screens 页面](./managing-screens)上的 **Ready through**（已就绪至）。
 
 ## 相关文章
 
 - **[制作播放列表](./building-playlists)**——创建你要排程的播放列表
 - **[电视上的定时播放](./scheduled-playback)**——老师控制节奏的课程以及遥控器在电视上的工作方式
 - **[管理屏幕和组](./managing-screens)**——添加组并检查每个屏幕的下载情况
+- **[保留每节课的部分内容](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)**——将计划类型中每节排定课程裁剪为你的教室播放的部分

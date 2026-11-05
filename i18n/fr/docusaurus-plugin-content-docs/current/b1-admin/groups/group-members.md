@@ -144,7 +144,7 @@ Dans la liste des membres du groupe, cliquez sur l'icône **Imprimer la feuille 
 Une liste de contacts contient les renseignements personnels de contact des membres. Ne partagez les copies imprimées qu'avec les responsables du groupe et les autres personnes qui en ont besoin.
 :::
 
-## Envoyer des notifications push aux membres du groupe
+## Envoyer des notifications push aux membres du groupe {#sending-push-notifications-to-group-members}
 
 Vous pouvez envoyer directement une notification push à tous les membres du groupe qui ont installé l'application B1.church sur leur appareil avec les notifications push activées.
 

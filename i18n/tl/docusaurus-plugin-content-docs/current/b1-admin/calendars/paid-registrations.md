@@ -10,6 +10,10 @@ Maaaring higit pa sa simpleng bilang ng dadalo ang event registration. Maaari ka
 
 </div>
 
+## Training Video
+
+<YouTube id="eGSZv24Dlzk" title="Event Registration and Paid Events in B1" next="Launching Your Church Website in B1" nextUrl="/docs/b1-admin/guides/launch-website" />
+
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 

@@ -1,90 +1,94 @@
 ---
-title: "Anleitung: Starten Sie Ihre Kirchenwebseite"
+title: "Anleitung: Starten Sie Ihre Kirchenwebsite"
 ---
 
-# Starten Sie Ihre Kirchenwebseite
+# Starten Sie Ihre Kirchenwebsite
 
 <div class="article-intro">
 
-B1.church enthält einen kompletten Website-Builder ohne zusätzliche Kosten. Diese Anleitung führt dich durch das Erstellen deiner Kirchenwebseite von Grund auf -- Einrichtung deiner Startseite, Konfiguration deines Aussehens, Hinzufügen von Schlüsselseiten und optionales Verbinden von Online-Spenden und Veranstaltungsregistrierungsformularen.
+B1.church enthält einen vollständigen Website-Baukasten ohne Mehrkosten. Diese Anleitung führt Sie Schritt für Schritt durch die Erstellung Ihrer Kirchenwebsite -- Sie richten Ihre Startseite ein, gestalten das Erscheinungsbild, fügen wichtige Seiten hinzu und verbinden optional Online-Spenden und Anmeldeformulare für Veranstaltungen.
 
 </div>
+
+## Einführungsvideo
+
+<YouTube id="aA4UahZpmXg" title="Starten Ihrer Kirchenwebsite in B1" next="Seiten und Navigation in B1 bearbeiten" nextUrl="/docs/b1-admin/website/page-editor" />
 
 <div class="prereqs">
-<h4>Bevor du beginnst</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Halte dein Kirchenlogo bereit (PNG mit transparentem Hintergrund funktioniert am besten)
-- Wähle 2–3 Markenfabgen für deine Website
-- Wenn du eine benutzerdefinierte Domäne (z. B. deinkirche.de) verwendest, hast du Zugriff auf deinen DNS-Anbieter (GoDaddy, Cloudflare usw.)
-- Wenn du Online-Spenden auf deiner Website möchtest, vervollständige zuerst [Online-Spenden einrichten](../donations/online-giving-setup.md) (Stripe)
+- Halten Sie das Logo Ihrer Kirche bereit (PNG mit transparentem Hintergrund eignet sich am besten)
+- Wählen Sie 2 bis 3 Markenfarben für Ihre Website
+- Wenn Sie eine eigene Domain verwenden (z. B. ihrekirche.de), benötigen Sie Zugang zu Ihrem DNS-Anbieter (GoDaddy, Cloudflare usw.)
+- Wenn Sie auf Ihrer Website Online-Spenden anbieten möchten, schließen Sie zuerst die [Einrichtung von Online-Spenden](../donations/online-giving-setup.md) (Stripe) ab
 
 </div>
 
-## Schritt 1: Erste Website-Einrichtung
+## Schritt 1: Erste Einrichtung der Website
 
-Beginne mit dem Erstellen deiner Startseite und grundlegende Website-Struktur.
+Beginnen Sie mit der Erstellung Ihrer Startseite und der grundlegenden Struktur der Website.
 
-Folge der Anleitung [Erste Website-Einrichtung](../website/initial-setup.md):
+Folgen Sie der Anleitung [Erste Einrichtung der Website](../website/initial-setup.md), um:
 
-1. Navigiere zu **Website** in B1 Admin
-2. Erstelle deine Startseite mit einer Hero-Sektion, Willkommensnachricht und wichtigen Informationen
-3. Füge deinen Kirchennamen und Tagline hinzu
+1. In B1 Admin zu **Website** zu wechseln
+2. Ihre Startseite mit einem Hero-Bereich, einer Willkommensnachricht und wichtigen Informationen anzulegen
+3. Den Namen und den Slogan Ihrer Kirche hinzuzufügen
 
-## Schritt 2: Darstellung konfigurieren
+## Schritt 2: Erscheinungsbild einrichten
 
-Lege die visuelle Identität deiner Website fest -- Farben, Schriftarten, Logo und Fußzeile.
+Legen Sie die visuelle Identität Ihrer Website fest -- Farben, Schriftarten, Logo und Fußzeile.
 
-Folge der Anleitung [Darstellung](../website/appearance.md):
+Folgen Sie der Anleitung [Erscheinungsbild](../website/appearance.md), um:
 
-1. Lade dein Kirchenlogo hoch
-2. Stelle deine primäre und Akzentfarben ein
-3. Konfiguriere die Navigationsleiste und Fußzeile
-4. Überprüfe deine Änderungen
+1. Das Logo Ihrer Kirche hochzuladen
+2. Ihre Haupt- und Akzentfarben festzulegen
+3. Die Navigationsleiste und die Fußzeile einzurichten
+4. Ihre Änderungen in der Vorschau zu prüfen
 
 :::tip
-Halte deine Farbpalette einfach -- eine primäre Farbe plus eine Akzentfarbe reicht normalerweise aus. Der Website-Builder kümmert sich um den Rest.
+Halten Sie Ihre Farbpalette schlicht -- eine Hauptfarbe und eine Akzentfarbe reichen meist aus. Der Website-Baukasten übernimmt den Rest.
 :::
 
 ## Schritt 3: Inhaltsseiten hinzufügen
 
-Erstelle die Seiten, die deine Besucher am meisten brauchen.
+Erstellen Sie die Seiten, die Ihre Besucher am dringendsten brauchen.
 
-Folge der Anleitung [Seiten verwalten](../website/managing-pages.md), um Seiten wie folgende zu erstellen:
+Folgen Sie der Anleitung [Seiten verwalten](../website/managing-pages.md), um Seiten wie diese anzulegen:
 
-- **Über uns** -- Die Geschichte, Überzeugungen und Führung deiner Kirche
-- **Predigten** -- Verknüpfung zu deiner [Predigtbibliothek](../sermons/managing-sermons.md)
-- **Veranstaltungen** -- Bevorstehende Veranstaltungen und Registrierung
-- **Spenden** -- Seite für Online-Spenden (erfordert [Stripe-Setup](../donations/online-giving-setup.md))
-- **Kontakt** -- Ort, Gottesdienstzeiten und Kontaktinformation
+- **Über uns** -- Die Geschichte, Glaubensüberzeugungen und Leitung Ihrer Kirche
+- **Predigten** -- Verlinken Sie Ihre [Predigtbibliothek](../sermons/managing-sermons.md)
+- **Veranstaltungen** -- Kommende Veranstaltungen und Anmeldung
+- **Geben** -- Seite für Online-Spenden (erfordert die [Stripe-Einrichtung](../donations/online-giving-setup.md))
+- **Kontakt** -- Standort, Gottesdienstzeiten und Kontaktdaten
 
-## Schritt 4: Verbinde deine Domäne
+## Schritt 4: Ihre Domain verbinden
 
-Wenn du deinen eigenen Domänennamen (wie deinkirche.de) verwenden möchtest, anstatt die Standard-B1-URL zu verwenden:
+Wenn Sie statt der Standard-B1-Adresse Ihre eigene Domain (wie ihrekirche.de) verwenden möchten:
 
-1. Gehe zu **Einstellungen** in B1 Admin und öffne den Bereich **Domänen**
-2. Gib deine benutzerdefinierte Domäne ein
-3. Aktualisiere deine DNS-Datensätze bei deinem Domänenanbieter, um auf B1 zu verweisen
+1. Öffnen Sie in B1 Admin **Einstellungen** und wechseln Sie in den Bereich **Domains**
+2. Geben Sie Ihre eigene Domain ein
+3. Aktualisieren Sie Ihre DNS-Einträge beim Domainanbieter, sodass sie auf B1 zeigen
 
 :::info
-DNS-Änderungen können bis zu 48 Stunden dauern, bis sie sich ausbreiten. Deine Website ist möglicherweise nicht sofort über deine benutzerdefinierte Domäne erreichbar. Die Standard-B1-URL funktioniert weiterhin in dieser Zeit.
+DNS-Änderungen können bis zu 48 Stunden brauchen, bis sie wirksam sind. Ihre Website ist unter Umständen zunächst nicht über Ihre eigene Domain erreichbar. Die Standard-B1-Adresse funktioniert während dieser Zeit weiterhin.
 :::
 
-## Schritt 5: Spenden und Formulare hinzufügen
+## Schritt 5: Spenden und Formulare einbinden
 
-Erweitere deine Website mit interaktiven Elementen:
+Ergänzen Sie Ihre Website um interaktive Elemente:
 
-- **Online-Spenden** -- Füge einen Spendabschnitt hinzu, damit Mitglieder direkt von deiner Website spenden können. Siehe [Online-Spenden einrichten](../donations/online-giving-setup.md), um Stripe zuerst zu konfigurieren.
-- **Registrierungsformulare** -- Bette [eigenständige Formulare](../forms/creating-forms.md) für Veranstaltungsanmeldungen, Besucherkarten oder Freiwilligenanwendungen ein. Siehe [Seiten verwalten](../website/managing-pages.md), wie du ein Formularelement zu einer beliebigen Seite hinzufügst.
+- **Online-Spenden** -- Fügen Sie einen Bereich für Spenden hinzu, damit Mitglieder direkt über Ihre Website spenden können. Richten Sie zuerst Stripe ein, wie unter [Einrichtung von Online-Spenden](../donations/online-giving-setup.md) beschrieben.
+- **Anmeldeformulare** -- Binden Sie [eigenständige Formulare](../forms/creating-forms.md) für Veranstaltungsanmeldungen, Besucherkarten oder Freiwilligenbewerbungen ein. Wie Sie ein Formular-Element zu einer beliebigen Seite hinzufügen, erfahren Sie unter [Seiten verwalten](../website/managing-pages.md).
 
-## Du bist fertig!
+## Geschafft!
 
-Deine Kirchenwebseite ist online. Teile die URL mit deiner Gemeinde und in sozialen Medien. Du kannst Inhalte aktualisieren, neue Seiten hinzufügen und die Darstellung jederzeit vom B1 Admin-Dashboard aus anpassen.
+Ihre Kirchenwebsite ist online. Teilen Sie die Adresse mit Ihrer Gemeinde und in sozialen Medien. Sie können Inhalte aktualisieren, neue Seiten hinzufügen und das Erscheinungsbild jederzeit über das Dashboard von B1 Admin anpassen.
 
 ## Verwandte Artikel
 
-- [Erste Website-Einrichtung](../website/initial-setup.md) -- detaillierte Einrichtungsanleitung
-- [Seiten verwalten](../website/managing-pages.md) -- füge Seiten hinzu und bearbeite sie
-- [Darstellung](../website/appearance.md) -- Farben, Logo und Layout
-- [Dateien verwalten](../website/files.md) -- lade Bilder und Dokumente hoch
-- [Online-Spenden einrichten](../donations/online-giving-setup.md) -- konfiguriere Stripe
-- [Formulare erstellen](../forms/creating-forms.md) -- baue Registrierungs- und Umfrageformulare
+- [Erste Einrichtung der Website](../website/initial-setup.md) -- ausführliche Anleitung zur Einrichtung
+- [Seiten verwalten](../website/managing-pages.md) -- Seiten hinzufügen und bearbeiten
+- [Erscheinungsbild](../website/appearance.md) -- Farben, Logo und Layout
+- [Dateien verwalten](../website/files.md) -- Bilder und Dokumente hochladen
+- [Einrichtung von Online-Spenden](../donations/online-giving-setup.md) -- Stripe einrichten
+- [Formulare erstellen](../forms/creating-forms.md) -- Anmelde- und Umfrageformulare erstellen

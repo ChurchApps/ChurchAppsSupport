@@ -12,7 +12,7 @@ Ilagay online ang iyong archive ng sermon at mag-set up ng live streaming -- mul
 
 ## Training Video
 
-<YouTube id="b3B3A25g2Sk" title="Building Your Sermon Library in B1" />
+<YouTube id="b3B3A25g2Sk" title="Building Your Sermon Library in B1" next="Setting Up Live Streaming in B1" nextUrl="/docs/b1-admin/sermons/live-streaming" />
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>

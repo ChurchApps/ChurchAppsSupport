@@ -6,85 +6,85 @@ title: "Oppgaver"
 
 <div class="article-intro">
 
-Oppgaver lar deg tildele handlingspunkter til personer eller grupper i kirken din. Enten det er en engangsoppgave eller et gjentakende ansvar, hjelper oppgaver deg å følge med på hva som må gjøres og hvem som har ansvaret, slik at ingenting blir oversett.
+Med oppgaver kan du tildele handlingspunkter til personer eller grupper i menigheten din. Enten det er en engangsoppgave eller et gjentakende ansvar, hjelper oppgaver deg med å følge med på hva som må gjøres og hvem som har ansvaret, slik at ingenting blir oversett.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Kontroller at personene eller [gruppene](../groups/creating-groups.md) du vil tildele oppgaver til finnes i B1 Admin
-- I [hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) velger du **Tjeneste > Mitt arbeid** for å se oppgaver
+- Sørg for at personene eller [gruppene](../groups/creating-groups.md) du vil tildele oppgaver til, finnes i B1 Admin
+- I [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) velger du **Serving > My Work** for å se oppgaver
 
 </div>
 
-## Se oppgaver
+## Vise oppgaver
 
-I hurtigmenyen velger du **Tjeneste > Mitt arbeid** (eller søker etter «Mitt arbeid»). Listen **Oppgaver** viser hver oppgaves tittel, hvem den gjelder, hvem den er tildelt, når den ble åpnet og statusen. Dine [arbeidsflytkort](./workflows.md) vises ved siden av under **Mine kort**.
+I Jump-menyen velger du **Serving > My Work** (eller søker etter «My Work»). Listen **Tasks** viser tittelen på hver oppgave, hvem den gjelder, hvem den er tildelt, når den ble åpnet, og statusen. [Arbeidsflytkortene](./workflows.md) dine vises ved siden av den under **My Cards**.
 
-Bruk fanene over listen for å bytte mellom oppgavene **Tildelt meg**, **Tildelt mine grupper** og **Bedt om av meg**. Hver fane viser hvor mange oppgaver den inneholder.
+Bruk fanene over listen for å bytte mellom oppgavene **Assigned to Me**, **Assigned to My Groups** og **Requested by Me**. Hver fane viser hvor mange oppgaver den inneholder.
 
 :::tip
-Som standard vises bare åpne oppgaver. Velg **Lukket** over listen for å se fullførte oppgaver i stedet.
+Som standard vises bare åpne oppgaver. Velg **Closed** over listen for å se fullførte oppgaver.
 :::
 
 ## Opprette en oppgave
 
-1. På siden **Mitt arbeid** klikker du **Legg til oppgave**. Et skjema for **Ny oppgave** åpnes.
-2. Klikk på boksen **Knytt til** og velg personen oppgaven gjelder.
-3. Klikk på boksen **Tildel til**. I vinduet **Velg en person eller gruppe** søker du på fanen **Person**, eller bytter til fanen **Gruppe** og søker etter en gruppe, og velger deretter resultatet.
-4. Skriv inn en **tittel** for oppgaven.
-5. Velg eventuelt en **frist**.
-6. Legg til **notater** med detaljer eller instruksjoner for den som skal utføre oppgaven.
-7. Klikk **Lagre**.
+1. Klikk på **Add Task** på siden **My Work**. Skjemaet **New Task** åpnes.
+2. Du kan eventuelt klikke i boksen **Associate with** og velge personen eller gruppen oppgaven gjelder. La den stå tom for en enkel huskeliste som ikke gjelder noen, for eksempel en påminnelse til deg selv.
+3. Klikk i boksen **Assign to**. I vinduet **Select a Person or Group** søker du på fanen **Person**, eller bytter til fanen **Group** og søker etter en gruppe. Velg deretter resultatet.
+4. Skriv inn en **Title** for oppgaven.
+5. Velg eventuelt en **Due date**.
+6. Legg til **Notes** med detaljer eller instruksjoner til den som skal utføre oppgaven.
+7. Klikk på **Save**.
 
-Oppgaven vises nå i oppgavelisten, og er synlig for mottakeren på dashbordet og i mobilappen.
+Oppgaven vises nå i oppgavelisten og er synlig for den som er tildelt, på dashbordet og i mobilappen.
 
 ## Administrere en oppgave
 
 Klikk på en oppgave for å åpne detaljsiden. Herfra kan du:
 
-- **Lukke eller gjenåpne oppgaven** -- Klikk **Lukk oppgave** når arbeidet er gjort, eller **Gjenåpne oppgave** for å åpne den igjen.
-- **Tildele oppgaven på nytt** -- Klikk **Tildel** for å velge en annen person eller gruppe.
-- **Endre hvem den gjelder** -- Klikk **Knytt til** for å velge en annen person.
-- **Endre fristen** -- Velg en dato i feltet **Frist**; den lagres når du klikker utenfor. (Oppgaver opprettet for en [bekreftelse av tjenesteoppdrag](./workflows.md#serving-assignment-confirmations) viser fristen sin, men den kan ikke endres her.)
-- **Legge til notater** -- Skriv oppdateringer eller detaljer for den som skal utføre oppgaven i oppgavens notater.
+- **Lukke eller åpne oppgaven igjen** -- Klikk på **Close task** når arbeidet er ferdig, eller på **Reopen task** for å åpne den igjen.
+- **Tildele oppgaven på nytt** -- Klikk på **Assign** for å velge en annen person eller gruppe.
+- **Endre hvem oppgaven gjelder** -- Klikk på **Associate** for å velge en annen person eller gruppe, eller velg **No person or group** for å fjerne koblingen.
+- **Endre forfallsdatoen** -- Velg en dato i feltet **Due**. Den lagres når du klikker utenfor feltet. (Oppgaver som er opprettet for en [bekreftelse av tjenesteoppdrag](./workflows.md#serving-assignment-confirmations) viser forfallsdatoen, men den kan ikke endres her.)
+- **Legge til notater** -- Skriv oppdateringer eller detaljer til den som skal utføre oppgaven, i notatfeltet for oppgaven.
 - **Sette påminnelser** -- Se [Påminnelser for oppgaver](#task-reminders) nedenfor.
 
 ## Påminnelser for oppgaver {#task-reminders}
 
-En oppgave med en frist kan minne den som skal utføre den før fristen.
+En oppgave med forfallsdato kan minne den som er tildelt før den forfaller.
 
-1. På oppgavens side klikker du **Rediger** ved siden av **Påminnelser**.
-2. Slå på **Send påminnelser for denne oppgaven**.
-3. Under **Når skal påminnelsene sendes?** velger du opptil tre tidspunkter: **7 dager før**, **3 dager før**, **1 dag før** eller **Samme dag**.
-4. Angi **klokkeslettet** og eventuelt en **melding**.
-5. Under **Send med** velger du **Push**, **E-post** og, hvis kirken din har en [SMS-leverandør](../settings/church-settings.md#texting) koblet til, **SMS**.
-6. Klikk **Lagre påminnelser**.
+1. Klikk på **Edit** ved siden av **Reminders** på oppgavens side.
+2. Slå på **Send reminders for this task**.
+3. Under **When should reminders go out?** velger du inntil tre tidspunkter: **7 days before**, **3 days before**, **1 day before** eller **Day of**.
+4. Angi **Time of Day** og eventuelt en **Message**.
+5. Under **Send By** velger du **Push**, **Email** og -- hvis menigheten din har en [tekstmeldingsleverandør](../settings/church-settings.md#texting) koblet til -- **Text**.
+6. Klikk på **Save Reminders**.
 
-Hvis oppgaven ikke har noen frist, varsler B1 deg om at ingen påminnelser sendes før en er satt i feltet **Frist**. SMS-påminnelser når bare personer som har slått på **Tekstmeldinger** i sine [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences.md), og hver SMS kan koste kirken din penger.
+Hvis oppgaven ikke har en forfallsdato, varsler B1 deg om at ingen påminnelser sendes før du har satt en dato i feltet **Due**. Tekstpåminnelser når bare personer som har slått på **Text messages** i sine [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences.md), og hver tekstmelding kan koste menigheten din penger.
 
 ## Oppgavens livssyklus
 
-1. En ny oppgave starter med statusen **Åpen**.
-2. Den som oppgaven er tildelt, får et varsel og kan se oppgaven fra dashbordet, **Tjeneste > Mitt arbeid** eller mobilappen.
-3. Når arbeidet er gjort, klikker den som utfører oppgaven (eller en administrator) på **Lukk oppgave**.
-4. Lukkede oppgaver fjernes fra standardvisningen, men kan fortsatt finnes ved å velge **Lukket** over oppgavelisten.
+1. En ny oppgave starter med status **Open**.
+2. Den som er tildelt, får et varsel og kan se oppgaven fra dashbordet sitt, **Serving > My Work** eller mobilappen.
+3. Når arbeidet er ferdig, klikker den som er tildelt (eller en administrator) på **Close task**.
+4. Lukkede oppgaver fjernes fra standardvisningen, men du kan fortsatt finne dem ved å velge **Closed** over oppgavelisten.
 
 :::info
-B1 Admin oppretter ikke lenger gjentakende oppgaver etter en fast plan. For gjentakende oppfølging av personer, bruk en [arbeidsflyt](./workflows.md) med en [tidsplantrigger](./workflows.md#schedule-triggers).
+B1 Admin oppretter ikke lenger gjentakende oppgaver etter en fast plan. For gjentatt oppfølging av personer bruker du en [arbeidsflyt](./workflows.md) med en [tidsplanutløser](./workflows.md#schedule-triggers).
 :::
 
 :::tip
-Når du trenger å flytte mange personer gjennom de samme trinnene -- for eksempel oppfølging av nye besøkende eller en medlemsprosess -- bruk [arbeidsflyter](./workflows.md). Arbeidsflyter gjør oppgaver om til kort på en dra-og-slipp-tavle med steg, frister og ruting.
+Når du trenger å flytte mange personer gjennom de samme stegene -- for eksempel oppfølging av nye besøkende eller en medlemsprosess -- bruk [Workflows](./workflows.md). Arbeidsflyter gjør oppgaver om til kort på et dra-og-slipp-brett, med steg, forfallsdatoer og ruting.
 :::
 
 :::info
-Noen oppgaver opprettes automatisk av andre deler av B1 og åpnes som et spesielt gjennomgangskort i stedet for standardvisningen for notater/omtildeling -- [forespørsler om å bli med i grupper](../groups/group-join-requests.md#approving-from-the-tasks-page), [forespørsler om profilendringer](../profile/approving-profile-changes.md) og [forespørsler om sletting av konto](../profile/account-deletion.md) fungerer alle slik.
+Noen oppgaver opprettes automatisk av andre deler av B1 og åpnes som et spesielt gjennomgangskort i stedet for den vanlige visningen for notater og omtildeling. Dette gjelder [forespørsler om å bli med i en gruppe](../groups/group-join-requests.md#approving-from-the-tasks-page), [forespørsler om endring av profil](../profile/approving-profile-changes.md) og [forespørsler om sletting av konto](../profile/account-deletion.md).
 :::
 
 ## Neste steg
 
-- Flytt personer gjennom en prosess med flere steg ved hjelp av [arbeidsflyter](./workflows.md)
-- Bruk [arbeidsflyter](./workflows.md) for å flytte personer gjennom gjentakende prosesser automatisk
-- Bruk oppgaver sammen med [gudstjenesteplaner](./plans.md) for å følge opp forberedelsene til gudstjenesten
+- Flytt personer gjennom en prosess med flere steg med [Workflows](./workflows.md)
+- Bruk [Workflows](./workflows.md) til å flytte personer gjennom gjentakende prosesser automatisk
+- Bruk oppgaver sammen med [Tjenesteplaner](./plans.md) for å følge opp handlingspunkter i forberedelsen av gudstjenesten

@@ -31,7 +31,7 @@ De forma predeterminada, solo se muestran las tareas abiertas. Elija **Cerradas*
 ## Crear una tarea
 
 1. En la página **Mi trabajo**, haga clic en **Agregar tarea**. Se abre un formulario de **Nueva tarea**.
-2. Haga clic en el cuadro **Relacionada con** y elija la persona a la que se refiere la tarea.
+2. Haga clic en el cuadro **Relacionada con** y elija la persona o el grupo al que se refiere la tarea. Déjelo en blanco para un pendiente general que no se refiere a nadie, como un recordatorio para usted mismo.
 3. Haga clic en el cuadro **Asignar a**. En la ventana **Seleccione una persona o grupo**, busque en la pestaña **Persona**, o cambie a la pestaña **Grupo** y busque un grupo, y luego seleccione el resultado.
 4. Escriba un **Título** para la tarea.
 5. Opcionalmente, elija una **Fecha de vencimiento**.
@@ -46,7 +46,7 @@ Haga clic en cualquier tarea para abrir su página de detalle. Desde aquí puede
 
 - **Cerrar o reabrir la tarea**: haga clic en **Cerrar tarea** cuando el trabajo esté terminado, o en **Reabrir tarea** para volver a abrirla.
 - **Reasignar la tarea**: haga clic en **Asignar** para elegir a otra persona o grupo.
-- **Cambiar a quién se refiere**: haga clic en **Relacionar** para elegir otra persona.
+- **Cambiar a quién se refiere**: haga clic en **Relacionar** para elegir otra persona o grupo, o elija **Ninguna persona ni grupo** para quitarlo.
 - **Cambiar la fecha de vencimiento**: elija una fecha en el campo **Vence**; se guarda al hacer clic fuera del campo. (Las tareas creadas para una [confirmación de asignación de servicio](./workflows.md#serving-assignment-confirmations) muestran su fecha de vencimiento, pero no se pueden cambiar aquí).
 - **Agregar notas**: publique actualizaciones o detalles para la persona asignada en las notas de la tarea.
 - **Configurar recordatorios**: consulte [Recordatorios de tareas](#task-reminders) más abajo.

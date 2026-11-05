@@ -6,43 +6,47 @@ title: "Eigene Domain"
 
 <div class="article-intro">
 
-Sie können Ihre eigene Domain (zum Beispiel **`www.ihrekirche.org`**) auf Ihre B1-Website verweisen lassen, damit Besucher sie unter der echten Webadresse Ihrer Kirche erreichen statt unter der Standardadresse ihrekirche.b1.church.
+Sie können Ihre eigene Domain (zum Beispiel **`www.ihrekirche.de`**) auf Ihre B1-Website verweisen lassen, damit Besucher unter der echten Webadresse Ihrer Kirche ankommen statt unter der Standardadresse ihrekirche.b1.church.
 
 </div>
 
-## Schritt 1 – Zuerst den DNS-Eintrag anlegen
+## Einführungsvideo
 
-Bevor Sie Ihre Domain in B1 hinzufügen, müssen Sie sie bei Ihrem Domain-Registrar (GoDaddy, Namecheap, Cloudflare usw.) auf die Server von B1 zeigen lassen.
+<YouTube id="L5yaDusHts8" title="Eine eigene Domain in B1 verbinden" next="Einrichtung von Livestreaming in B1" nextUrl="/docs/b1-admin/sermons/live-streaming" />
 
-Legen Sie einen dieser Einträge an – CNAME wird bevorzugt:
+## Schritt 1 — Zuerst den DNS-Eintrag anlegen
+
+Bevor Sie Ihre Domain in B1 hinzufügen, müssen Sie sie bei Ihrem Domainanbieter (GoDaddy, Namecheap, Cloudflare usw.) auf die Server von B1 verweisen lassen.
+
+Legen Sie einen dieser Einträge an -- CNAME wird bevorzugt:
 
 | Typ | Host | Wert |
-|------|------|------|
+|------|------|-------|
 | CNAME | `www` | `proxy.b1.church` |
-| A | `ihrekirche.org` | `3.23.251.61` |
+| A | `ihrekirche.de` | `3.23.251.61` |
 
-Verwenden Sie für Ihre `www`-Adresse den **CNAME**. Verwenden Sie den **A-Eintrag**, wenn Ihr Registrar CNAME für eine Root- bzw. Apex-Domain (ohne www) nicht unterstützt oder wenn auch die Root-Domain funktionieren soll.
+Verwenden Sie für Ihre `www`-Adresse den **CNAME**. Verwenden Sie den **A-Eintrag**, wenn Ihr Anbieter CNAME für die Root-Domain (ohne www) nicht unterstützt oder wenn die Root-Domain ebenfalls funktionieren soll.
 
-Änderungen am DNS können einige Minuten bis einige Stunden brauchen, bis sie wirksam sind.
+DNS-Änderungen können einige Minuten bis einige Stunden brauchen, bis sie wirksam sind.
 
-## Schritt 2 – Die Domain in B1 hinzufügen
+## Schritt 2 — Die Domain in B1 hinzufügen
 
-Sobald das DNS auf B1 zeigt:
+Sobald DNS auf B1 zeigt:
 
-1. Gehen Sie in B1 Admin zu **Einstellungen**.
-2. Klicken Sie in der Liste links auf **Domains** und dann im Abschnitt **Domains** auf **Bearbeiten**.
+1. Öffnen Sie in B1 Admin **Einstellungen**.
+2. Klicken Sie in der linken Liste auf **Domains** und dann im Abschnitt **Domains** auf **Bearbeiten**.
 3. Geben Sie Ihre Domain in das Feld ein und klicken Sie auf **Speichern**.
 
-Sie müssen nicht zuerst auf die Schaltfläche **+** klicken – eine Domain, die im Feld steht, wird beim Speichern hinzugefügt. Verwenden Sie **+** (oder drücken Sie **Eingabe**), wenn Sie vor dem Speichern mehrere Domains in die Liste aufnehmen möchten.
+Sie müssen nicht zuerst auf die Schaltfläche **+** klicken -- eine Domain, die im Feld steht, wird beim Speichern hinzugefügt. Verwenden Sie **+** (oder drücken Sie **Enter**), wenn Sie vor dem Speichern mehrere Domains zur Liste hinzufügen möchten.
 
-B1 übernimmt SSL automatisch – Sie müssen kein Zertifikat kaufen.
+B1 übernimmt das SSL-Zertifikat automatisch -- Sie müssen kein Zertifikat kaufen.
 
 :::warning
-Wenn Sie die Domain in B1 hinzufügen, bevor die DNS-Einträge bestehen, wird sie nicht gespeichert. Richten Sie das DNS immer zuerst ein.
+Wenn Sie die Domain in B1 hinzufügen, bevor die DNS-Einträge bestehen, wird sie nicht gespeichert. Richten Sie DNS daher immer zuerst ein.
 :::
 
 ## Prüfen, ob es funktioniert
 
-Rufen Sie Ihre Domain nach dem Speichern in einem Browser auf. Lädt sie Ihre B1-Website, sind Sie fertig. Erscheint ein Fehler, hat sich das DNS vielleicht noch nicht verbreitet – warten Sie ein paar Minuten und versuchen Sie es erneut.
+Besuchen Sie nach dem Speichern Ihre Domain im Browser. Wenn Ihre B1-Website geladen wird, sind Sie fertig. Erscheint eine Fehlermeldung, ist DNS unter Umständen noch in der Verbreitung -- warten Sie einige Minuten und versuchen Sie es erneut.
 
-Die Verbreitung des DNS können Sie außerdem auf [dnschecker.org](https://dnschecker.org) prüfen – suchen Sie nach Ihrer Domain und achten Sie darauf, dass Ihr CNAME- oder A-Eintrag angezeigt wird.
+Sie können die DNS-Verbreitung auch auf [dnschecker.org](https://dnschecker.org) prüfen -- suchen Sie nach Ihrer Domain und achten Sie darauf, dass Ihr CNAME- oder A-Eintrag dort erscheint.

@@ -10,9 +10,13 @@ Vielen Dank, dass Sie sich für B1.church entschieden haben! Diese Einführung f
 
 </div>
 
+## Einführungsvideo
+
+<YouTube id="o4KfSQrRooE" title="Was ist B1.church?" />
+
 Für weitere Unterstützung schreiben Sie bitte an [support@churchapps.org](mailto:support@churchapps.org).
 
-## Einführungsvideo
+## Rundgang-Video
 
 <YouTube id="D2iUhe0ZZhI" title="Ein Rundgang durch B1 Admin" next="Ein Rundgang durch die B1.church-Mitglieder-App" nextUrl="/docs/b1-church/getting-started/navigating" />
 
@@ -54,12 +58,12 @@ In diesen Anleitungen bedeutet ein Schritt wie "Wählen Sie im Sprungmenü **Per
 
 Statt zu blättern, können Sie sofort loslegen, sobald das Menü geöffnet ist, und direkt zu einer Person, einer Gruppe, einem Plan, einem Fonds oder einer beliebigen Admin-Seite springen:
 
-1. Geben Sie einen Namen oder die gewünschte Seite ein (zum Beispiel den Namen einer Person, "Stapel", "Lieder" oder "meine Arbeit"). Jede Seite innerhalb eines Bereichs lässt sich so finden, ebenso jeder Schritt unter **Schnellaktionen**. Auch gebräuchliche Begriffe funktionieren -- "QR-Code" findet **QR-Gastregistrierung**, und "Logo hochladen" findet **Erscheinungsbild**. Bindestriche spielen keine Rolle ("b1 checkin" findet **Check-in starten**), und wenn Ihre genaue Wortfolge nichts findet, sucht die Suche nach Ergebnissen, die alle Ihre Wörter in beliebiger Reihenfolge enthalten ("Logo Kirche" findet **Kirchenlogo hinzufügen**).
+1. Geben Sie einen Namen oder die gewünschte Seite ein (zum Beispiel den Namen einer Person, "Stapel", "Lieder" oder "meine Arbeit"). Jede Seite innerhalb eines Bereichs lässt sich so finden, ebenso jeder Schritt unter **Schnellaktionen**. Auch gebräuchliche Begriffe funktionieren -- "QR-Code" findet **QR-Gastregistrierung**, und "Logo hochladen" findet **Erscheinungsbild**. Bindestriche spielen keine Rolle ("b1 checkin" findet **Check-in starten**). Wenn Ihr genauer Begriff nichts findet, sucht die Suche nach Ergebnissen, die alle Ihre Wörter in beliebiger Reihenfolge enthalten ("Logo Kirche" findet **Ihr Kirchenlogo hinzufügen**).
 2. Die Ergebnisse sind nach Typ gruppiert -- Personen, Gruppen, Pläne, Fonds und Seiten, zu denen Sie springen können. Mit den Pfeiltasten bewegen Sie sich zwischen den Ergebnissen, mit **Enter** wählen Sie eines aus, oder Sie klicken mit der Maus darauf.
 
 Über die Suche lassen sich auch gängige Aufgaben starten. Geben Sie ein, was Sie tun möchten, und wählen Sie es aus:
 
-- **Seite erstellen**, **Gruppe erstellen**, **FreeShow einrichten** oder **FreePlay einrichten** öffnet den passenden Schnell-Einrichtungsassistenten direkt an Ihrer Stelle, ohne dass Sie zum Dashboard zurückkehren müssen.
+- **Seite erstellen**, **Gruppe erstellen**, **FreeShow einrichten** oder **FreePlay einrichten** öffnet den passenden Schnell-Assistenten direkt an der aktuellen Stelle, ohne dass Sie zum Dashboard zurückkehren müssen.
 - **Person hinzufügen** öffnet das Formular für neue Personen.
 - **Check-in starten** öffnet die Check-in-App.
 
@@ -67,7 +71,7 @@ Welche Aktionen Sie sehen, hängt von Ihren Berechtigungen ab.
 
 ### Schnellaktionen
 
-Die letzte Gruppe im Sprungmenü sind die **Schnellaktionen** -- die Einrichtungsverknüpfungen, die früher auf dem Dashboard erschienen. Klappen Sie sie auf, um Schritte wie **Kirchenlogo hinzufügen**, **Erste Webseite erstellen**, **Online-Spenden einrichten**, **Erste Gruppe erstellen** und **Teammitglieder einladen** zu finden. Einrichtungsaktionen öffnen beim ersten Mal ihren Schnell-Einrichtungsassistenten; sobald Sie das jeweilige Merkmal eingerichtet haben, führen sie Sie direkt zu dessen Seite.
+Die letzte Gruppe im Sprungmenü sind die **Schnellaktionen** -- die Einrichtungsverknüpfungen, die früher auf dem Dashboard erschienen. Klappen Sie sie auf, um Schritte wie **Ihr Kirchenlogo hinzufügen**, **Erste Webseite erstellen**, **Online-Spenden einrichten**, **Erste Gruppe erstellen** und **Teammitglieder einladen** zu finden. Einrichtungsaktionen öffnen beim ersten Mal ihren Schnell-Assistenten; sobald Sie die jeweilige Funktion eingerichtet haben, führen sie Sie direkt zur zugehörigen Seite.
 
 :::tip
 Die Suche ist oft der schnellste Weg zu einer Seite -- geben Sie einen Teil des Seitennamens ein (etwa "Rollen" oder "Fonds"), statt Einstellungen, Dienst oder Spenden von Hand aufzuklappen.
@@ -75,11 +79,11 @@ Die Suche ist oft der schnellste Weg zu einer Seite -- geben Sie einen Teil des 
 
 ## Nächste Schritte
 
-Nach dieser Einführung lohnt es sich, diese zentralen Funktionen zu erkunden:
+Nachdem Sie sich dieses Einführungsvideo angesehen haben, lohnen sich diese zentralen Funktionen:
 
-- [Personen hinzufügen](./people/adding-people) -- Erfahren Sie, wie Sie Mitglieder in Ihre Datenbank aufnehmen
-- [Gruppen](./groups/) -- Gruppen der Kirche einrichten und verwalten
+- [Personen hinzufügen](./people/adding-people) -- Lernen Sie, wie Sie Mitglieder zu Ihrer Datenbank hinzufügen
+- [Gruppen](./groups/) -- Kirchengruppen einrichten und verwalten
 - [Dienstpläne](./serving/plans) -- Ihren Dienst organisieren
 - [Anwesenheit](./attendance/) -- Anwesenheit erfassen und Check-in nutzen
-- [Website](./website/) -- Die Website Ihrer Kirche gestalten und anpassen
-- [Einstellungen](./settings/) -- Angaben zur Kirche und Berechtigungen konfigurieren
+- [Website](./website/) -- Ihre Kirchenwebsite gestalten und anpassen
+- [Einstellungen](./settings/) -- Angaben zu Ihrer Kirche und Berechtigungen festlegen

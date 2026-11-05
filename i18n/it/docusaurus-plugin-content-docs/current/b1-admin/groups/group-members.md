@@ -144,7 +144,7 @@ Nell'elenco dei membri del gruppo, clicca sull'icona **Stampa foglio di appello*
 Un elenco di contatti contiene le informazioni personali di contatto dei membri. Condividi le copie stampate solo con i leader del gruppo e con altre persone che ne hanno bisogno.
 :::
 
-## Inviare notifiche push ai membri del gruppo
+## Inviare notifiche push ai membri del gruppo {#sending-push-notifications-to-group-members}
 
 Puoi inviare una notifica push direttamente a tutti i membri del gruppo che hanno installato l'app B1.church sul proprio dispositivo con le notifiche push attive.
 

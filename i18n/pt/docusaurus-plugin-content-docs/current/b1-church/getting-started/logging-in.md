@@ -6,61 +6,65 @@ title: "Entrando"
 
 <div class="article-intro">
 
-Entrar no B1.church dá acesso ao portal de membros, onde você pode ver o que está por vir para você, gerenciar grupos, doar online e usar todas as ferramentas que a sua igreja configurou. Este artigo explica como entrar, navegar pelo menu do usuário e sair.
+Entrar no B1.church dá acesso ao portal do membro, onde você pode ver o que está por vir para você, gerenciar grupos, doar online e usar todas as ferramentas que a sua igreja configurou. Este artigo explica como entrar, navegar pelo menu do usuário e sair.
 
 </div>
+
+## Vídeo de treinamento
+
+<YouTube id="Y5dVC9D6cLs" title="Logging In and Installing the B1.church App" next="Updating Your Profile and Notifications" nextUrl="/docs/b1-church/getting-started/editing-your-profile" />
 
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- Você precisa de uma conta do ChurchApps. Veja [Primeiros passos](../getting-started/) para criar uma.
-- Você precisa do endereço B1.church da sua igreja (por exemplo, `https://suaigreja.b1.church`).
+- Você precisa de uma conta ChurchApps. Consulte [Primeiros passos](../getting-started/) para criar uma.
+- Você precisa do endereço B1.church da sua igreja (por exemplo, `https://yourchurchname.b1.church`).
 
 </div>
 
 ## Como entrar
 
-1. Acesse o endereço B1.church da sua igreja (por exemplo, `https://suaigreja.b1.church`).
+1. Acesse o endereço B1.church da sua igreja (por exemplo, `https://yourchurchname.b1.church`).
 2. Clique no botão **Entrar** no canto superior direito do cabeçalho.
-3. Digite o seu **e-mail** e a sua **senha**, ou clique em **Continuar com o Google** ou **Continuar com a Microsoft** se a sua igreja tiver o login único ativado.
+3. Digite seu **e-mail** e sua **senha**, ou clique em **Continuar com o Google** ou **Continuar com a Microsoft** se a sua igreja tiver o login único ativado.
 4. Clique em **Entrar**.
 
-Se você tiver ativado a [verificação em duas etapas](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), a próxima tela pede um código. Digite o código de 6 dígitos do seu aplicativo autenticador, ou um dos seus códigos de backup, e clique em **Verificar código**. O aplicativo B1.church pede o código da mesma forma.
+Se você tiver ativado a [verificação em duas etapas](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), a próxima tela pedirá um código. Digite o código de 6 dígitos do seu aplicativo autenticador, ou um dos seus códigos de backup, e clique em **Verificar código**. O aplicativo B1.church pede o código da mesma forma.
 
-Depois de entrar, você volta à página em que estava antes de clicar em entrar. Se você acessou diretamente uma página do portal de membros sem estar conectado, será levado automaticamente de volta a essa página depois de entrar.
+Depois de entrar, você voltará à página em que estava antes de clicar em entrar. Se você acessou diretamente uma página do portal do membro sem estar conectado, será levado de volta a ela automaticamente depois de entrar.
 
 ## Permanecendo conectado
 
-Você continua conectado no mesmo navegador ou aplicativo instalado até sair, mesmo que não acesse por um tempo — a sua sessão é mantida por até cerca de 30 dias de inatividade. Entrar uma vez também mantém você conectado ao passar do site da sua igreja para o portal de membros (`/mobile`), para que você não precise entrar de novo em cada lugar.
+Você permanece conectado no mesmo navegador ou aplicativo instalado até sair, mesmo que não o acesse por um tempo — sua sessão é mantida por cerca de 30 dias de inatividade. Entrar uma vez também mantém você conectado ao mover-se entre o site da sua igreja e o portal do membro (`/mobile`), então você não precisa entrar de novo em cada lugar.
 
-## Acessando o portal de membros
+## Acessando o portal do membro
 
-Depois de entrar, você pode acessar o portal de membros clicando no seu **nome** no canto superior direito da página e selecionando **Portal de membros** no menu. O portal de membros é onde ficam todas as suas ferramentas pessoais da igreja, incluindo o seu [painel Início](./navigating.md), a página [Eu](./me-page.md), os [grupos](../groups/), as [doações](../giving/) e muito mais.
+Depois de entrar, você pode acessar o portal do membro clicando no seu **nome** no canto superior direito da página e selecionando **Portal do membro** no menu. O portal do membro é onde ficam todas as suas ferramentas pessoais da igreja, incluindo o seu [painel inicial](./navigating.md), a sua [página Eu](./me-page.md), [grupos](../groups/), [doações](../giving/) e muito mais.
 
 ## Seu menu do usuário
 
-Depois de entrar, o seu nome aparece como um chip no canto superior direito. Clique nele para abrir um menu com as seguintes opções:
+Depois de entrar, seu nome aparece como um chip no canto superior direito. Clique nele para abrir um menu com as seguintes opções:
 
-- **Portal de membros** -- Vá para o seu painel pessoal do portal de membros.
-- **Editar perfil** -- Atualize as configurações da sua conta ou edite o seu perfil na igreja.
-- **Sair** -- Encerre a sua sessão.
+- **Portal do membro** -- Vá para o seu painel pessoal do portal do membro.
+- **Editar perfil** -- Atualize as configurações da sua conta ou edite seu perfil na igreja.
+- **Sair** -- Encerre sua sessão.
 
 ## Acesso administrativo
 
-Se você for administrador da igreja com as permissões adequadas, também verá a opção **Portal administrativo** no seu menu do usuário. Clicar nela leva ao B1 Admin, onde você pode gerenciar as configurações, as pessoas, os grupos e o conteúdo da sua igreja.
+Se você for administrador da igreja com as permissões adequadas, também verá a opção **Portal administrativo** no seu menu do usuário. Clicando nela, você vai ao B1 Admin, onde pode gerenciar as configurações, pessoas, grupos e conteúdos da sua igreja.
 
 ## Esqueci minha senha
 
-Se você não se lembrar da sua senha:
+Se você não consegue lembrar sua senha:
 
 1. Clique em **Esqueci minha senha** na página de login.
-2. Digite o endereço de e-mail vinculado à sua conta do ChurchApps e envie.
-3. Verifique o seu e-mail em busca de uma mensagem com um **código de verificação de 6 dígitos**. O código é válido por 15 minutos.
+2. Digite o endereço de e-mail vinculado à sua conta ChurchApps e envie.
+3. Verifique seu e-mail em busca de uma mensagem com um **código de verificação de 6 dígitos**. O código é válido por 15 minutos.
 4. Digite o código na tela de verificação para entrar.
-5. Depois de entrar, acesse o seu perfil para escolher uma nova senha.
+5. Depois de entrar, acesse seu perfil para escolher uma nova senha.
 
 :::tip
-Se o código não chegar em alguns minutos, verifique a sua pasta de spam. Após cinco tentativas incorretas, o código é bloqueado — nesse caso, solicite um novo na página Esqueci minha senha.
+Se o código não chegar em alguns minutos, verifique a pasta de spam. Após cinco tentativas incorretas, o código é bloqueado — solicite um novo na página Esqueci minha senha se isso acontecer.
 :::
 
 ## Saindo

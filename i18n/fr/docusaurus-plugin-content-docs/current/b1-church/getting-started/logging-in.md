@@ -10,10 +10,14 @@ Se connecter à B1.church vous donne accès au portail des membres, où vous pou
 
 </div>
 
+## Vidéo de formation
+
+<YouTube id="Y5dVC9D6cLs" title="Se connecter et installer l'application B1.church" next="Mettre à jour votre profil et vos notifications" nextUrl="/docs/b1-church/getting-started/editing-your-profile" />
+
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vous avez besoin d'un compte ChurchApps. Voir [Pour commencer](../getting-started/) pour en créer un.
+- Vous avez besoin d'un compte ChurchApps. Consultez [Pour commencer](../getting-started/) pour en créer un.
 - Vous avez besoin de l'adresse B1.church de votre église (par exemple `https://votreeglise.b1.church`).
 
 </div>
@@ -27,7 +31,7 @@ Se connecter à B1.church vous donne accès au portail des membres, où vous pou
 
 Si vous avez activé la [connexion à deux facteurs](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), l'écran suivant demande un code. Saisissez le code à 6 chiffres de votre application d'authentification, ou l'un de vos codes de secours, puis cliquez sur **Vérifier le code**. L'application B1.church demande le code de la même façon.
 
-Après la connexion, vous revenez à la page où vous vous trouviez avant de cliquer sur connexion. Si vous êtes allé directement à une page du portail des membres alors que vous étiez déconnecté, vous y serez automatiquement renvoyé après la connexion.
+Après la connexion, vous revenez à la page où vous vous trouviez avant de cliquer sur Connexion. Si vous êtes allé directement à une page du portail des membres alors que vous étiez déconnecté, vous y serez automatiquement renvoyé après la connexion.
 
 ## Rester connecté
 
@@ -60,7 +64,7 @@ Si vous ne vous souvenez plus de votre mot de passe :
 5. Une fois connecté, rendez-vous sur votre profil pour choisir un nouveau mot de passe.
 
 :::tip
-Si le code n'arrive pas dans les deux minutes, vérifiez votre dossier des pourriels. Après cinq tentatives incorrectes, le code est verrouillé -- demandez-en un nouveau depuis la page Mot de passe oublié si cela se produit.
+Si le code n'arrive pas dans les deux minutes, vérifiez votre dossier de pourriels. Après cinq tentatives incorrectes, le code est verrouillé -- demandez-en un nouveau depuis la page Mot de passe oublié si cela se produit.
 :::
 
 ## Se déconnecter

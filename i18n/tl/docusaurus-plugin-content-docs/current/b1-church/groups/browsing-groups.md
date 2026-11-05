@@ -10,6 +10,10 @@ Ang pampublikong groups page ng iyong simbahan ay nagpapadali ng paghahanap ng m
 
 </div>
 
+## Training Video
+
+<YouTube id="2tDaqvzhrng" title="Joining a Group and Chatting With It" />
+
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
@@ -43,7 +47,7 @@ I-click ang anumang group card para buksan ang buong group detail page. Doon mo 
 Kung naghahanap ka ng partikular na uri ng grupo, i-scan muna ang mga heading ng kategorya. Makakatulong ito para dumiretso ka sa seksyong interesado ka sa halip na mag-scroll sa bawat grupo.
 :::
 
-## Susunod na mga Hakbang
+## Mga Susunod na Hakbang
 
-- [Mga Detalye ng Grupo](./group-details.md) -- Alamin kung ano ang makikita mo sa group detail page
-- [Mga Pag-uusap sa Grupo](./conversations.md) -- Tingnan kung paano makibahagi sa mga group discussion pagkatapos sumali
+- [Group Details](./group-details.md) -- Alamin kung ano ang makikita mo sa group detail page
+- [Group Conversations](./conversations.md) -- Tingnan kung paano makibahagi sa mga group discussion pagkatapos sumali

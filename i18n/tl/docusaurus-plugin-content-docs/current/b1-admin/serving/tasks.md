@@ -31,10 +31,10 @@ Bilang default, bukas na task lang ang ipinapakita. Piliin ang **Closed** sa ita
 ## Paggawa ng Task
 
 1. Sa pahinang **My Work**, i-click ang **Add Task**. Bubukas ang form na **New Task**.
-2. I-click ang kahong **Associate with** at piliin ang taong tinutukoy ng task.
+2. Opsyonal, i-click ang kahong **Associate with** at piliin ang tao o grupong tinutukoy ng task. Iwanang blangko kung ito ay simpleng to-do na walang kinalaman sa sinuman, gaya ng paalala para sa sarili mo.
 3. I-click ang kahong **Assign to**. Sa window na **Select a Person or Group**, maghanap sa tab na **Person**, o lumipat sa tab na **Group** at maghanap ng grupo, pagkatapos piliin ang resulta.
 4. Maglagay ng **Title** para sa task.
-5. Opsyonal na pumili ng **Due date**.
+5. Opsyonal, pumili ng **Due date**.
 6. Magdagdag ng **Notes** na may anumang detalye o tagubilin para sa pinagtalagahan.
 7. I-click ang **Save**.
 
@@ -46,7 +46,7 @@ I-click ang alinmang task para buksan ang detail page nito. Mula rito, maaari mo
 
 - **Isara o buksang muli ang task** -- I-click ang **Close task** kapag tapos na ang gawain, o **Reopen task** para buksan ulit ito.
 - **Ilipat ang task sa iba** -- I-click ang **Assign** para pumili ng ibang tao o grupo.
-- **Baguhin kung sino ang tinutukoy nito** -- I-click ang **Associate** para pumili ng ibang tao.
+- **Baguhin kung sino ang tinutukoy nito** -- I-click ang **Associate** para pumili ng ibang tao o grupo, o piliin ang **No person or group** para alisin ito.
 - **Baguhin ang due date** -- Pumili ng petsa sa field na **Due**; nase-save ito kapag nag-click ka sa labas. (Ang mga task na ginawa para sa [serving assignment confirmation](./workflows.md#serving-assignment-confirmations) ay nagpapakita ng kanilang due date pero hindi ito mababago dito.)
 - **Magdagdag ng note** -- Mag-post ng mga update o detalye para sa pinagtalagahan sa mga note ng task.
 - **Magtakda ng paalala** -- Tingnan ang [Task Reminders](#task-reminders) sa ibaba.

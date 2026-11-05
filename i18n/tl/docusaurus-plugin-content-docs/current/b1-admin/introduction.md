@@ -10,6 +10,10 @@ Salamat sa pagpili ng B1.church! Ginagabayan ka ng panimulang ito sa mga panguna
 
 </div>
 
+## Training Video
+
+<YouTube id="o4KfSQrRooE" title="What Is B1.church?" />
+
 Para sa karagdagang suporta, mag-email sa [support@churchapps.org](mailto:support@churchapps.org).
 
 ## Video ng Panimula
@@ -42,7 +46,7 @@ Ang buong B1 Admin ay naaabot mula sa **Jump menu** sa kaliwang itaas ng header.
 ### Pag-browse ng mga seksyon at pahina
 
 1. I-click ang search bar, o pindutin ang **Ctrl+K** (**Cmd+K** sa Mac), o pindutin ang **/** kapag hindi ka nagta-type sa text field.
-2. Nakalista sa menu ang bawat seksyong may access ka — Dashboard, People, Donations, Serving, Sermons, Website, Calendars, Mobile, at Settings. Nakabukas na ang seksyong kinaroroonan mo at naka-highlight ang kasalukuyan mong pahina.
+2. Nakalista sa menu ang bawat seksyong may access ka -- Dashboard, People, Donations, Serving, Sermons, Website, Calendars, Mobile, at Settings. Nakabukas na ang seksyong kinaroroonan mo at naka-highlight ang kasalukuyan mong pahina.
 3. I-click ang isang seksyon para buksan ito at makita ang mga pahina nito (halimbawa, ang **People** ay naglalaman ng **People**, **Groups**, **Attendance**, **Forms**, at **Notes**). Isang seksyon lang ang bukas sa isang pagkakataon.
 4. I-click ang isang pahina para pumunta roon.
 
@@ -54,8 +58,8 @@ Sa dokumentong ito, ang hakbang na tulad ng "Sa Jump menu, piliin ang **People >
 
 Sa halip na mag-browse, maaari kang magsimulang mag-type sa sandaling bumukas ang menu para direktang pumunta sa isang tao, group, plan, fund, o anumang admin page:
 
-1. I-type ang pangalan ng tao o ang pahinang gusto mo (halimbawa, pangalan ng isang tao, "batches", "songs", o "my work"). Maaaring mahanap sa ganitong paraan ang bawat pahina sa loob ng isang seksyon, kasama ang bawat hakbang ng **Quick Actions**. Gumagana rin ang mga karaniwang termino — ang "qr code" ay nakakahanap ng **QR guest registration**, at ang "upload logo" ay nakakahanap ng **Appearance**. Walang halaga ang gitling (ang "b1 checkin" ay nakakahanap ng **Start check-in**), at kung walang makita ang eksaktong parirala mo, hahanapin ng paghahanap ang mga resultang may lahat ng iyong salita sa anumang pagkakasunod-sunod (ang "logo church" ay nakakahanap ng **Add Your Church Logo**).
-2. Pinagpapangkat ang mga resulta ayon sa uri — mga tao, group, plan, fund, at mga pahina para puntahan. Gamitin ang mga arrow key para lumipat sa pagitan ng mga resulta at ang **Enter** para pumili ng isa, o i-click ang resulta gamit ang mouse.
+1. I-type ang pangalan ng tao o ang pahinang gusto mo (halimbawa, pangalan ng isang tao, "batches", "songs", o "my work"). Maaaring mahanap sa ganitong paraan ang bawat pahina sa loob ng isang seksyon, kasama ang bawat hakbang ng **Quick Actions**. Gumagana rin ang mga karaniwang termino -- ang "qr code" ay nakakahanap ng **QR guest registration**, at ang "upload logo" ay nakakahanap ng **Appearance**. Walang halaga ang gitling (ang "b1 checkin" ay nakakahanap ng **Start check-in**), at kung walang makita ang eksaktong parirala mo, hahanapin ng paghahanap ang mga resultang may lahat ng iyong salita sa anumang pagkakasunod-sunod (ang "logo church" ay nakakahanap ng **Add Your Church Logo**).
+2. Pinagpapangkat ang mga resulta ayon sa uri -- mga tao, group, plan, fund, at mga pahina para puntahan. Gamitin ang mga arrow key para lumipat sa pagitan ng mga resulta at ang **Enter** para pumili ng isa, o i-click ang resulta gamit ang mouse.
 
 Maaari ring simulan ng paghahanap ang mga karaniwang gawain. I-type ang gusto mong gawin at piliin ito:
 
@@ -67,10 +71,10 @@ Nakadepende sa iyong mga pahintulot ang mga aksyong makikita mo.
 
 ### Quick Actions
 
-Ang huling pangkat sa Jump menu ay ang **Quick Actions** — ang mga shortcut sa setup na dating lumalabas sa Dashboard. Buksan ito para mahanap ang mga hakbang tulad ng **Add Your Church Logo**, **Create Your First Webpage**, **Set Up Online Giving**, **Create Your First Group**, at **Invite Team Members**. Ang mga aksyon sa setup ay nagbubukas ng kanilang quick setup wizard sa unang pagkakataon; kapag naisaayos mo na ang feature na iyon, dinadala ka na nila sa pahina nito.
+Ang huling pangkat sa Jump menu ay ang **Quick Actions** -- ang mga shortcut sa setup na dating lumalabas sa Dashboard. Buksan ito para mahanap ang mga hakbang tulad ng **Add Your Church Logo**, **Create Your First Webpage**, **Set Up Online Giving**, **Create Your First Group**, at **Invite Team Members**. Ang mga aksyon sa setup ay nagbubukas ng kanilang quick setup wizard sa unang pagkakataon; kapag naisaayos mo na ang feature na iyon, dinadala ka na nila sa pahina nito.
 
 :::tip
-Madalas na pinakamabilis na paraan ang paghahanap para marating ang isang pahina — i-type ang bahagi ng pangalan ng pahina (tulad ng "roles" o "funds") sa halip na manu-manong buksan ang Settings, Serving, o Donations.
+Madalas na pinakamabilis na paraan ang paghahanap para marating ang isang pahina -- i-type ang bahagi ng pangalan ng pahina (tulad ng "roles" o "funds") sa halip na manu-manong buksan ang Settings, Serving, o Donations.
 :::
 
 ## Mga Susunod na Hakbang

@@ -89,3 +89,4 @@ Dina-download ng mga nakapares na screen ang lahat ng nakaiskedyul sa susunod na
 - **[Pagbuo ng mga Playlist](./building-playlists)** - Gumawa ng mga playlist na iniskedyul mo
 - **[Scheduled Playback sa TV](./scheduled-playback)** - Paano gumagana ang teacher paced na mga lesson at ang remote sa TV
 - **[Pamamahala ng mga Screen at Grupo](./managing-screens)** - Magdagdag ng mga grupo at tingnan ang mga download ng bawat screen
+- **[Pagtatakda ng Lesson na Pinaikli sa Bawat Lesson](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - I-trim ang bawat naka-iskedyul na lesson sa isang plan type sa mga bahaging gagamitin ng iyong room

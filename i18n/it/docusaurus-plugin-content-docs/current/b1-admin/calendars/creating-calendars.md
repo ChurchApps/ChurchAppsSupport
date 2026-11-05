@@ -12,7 +12,7 @@ Creare un calendario in B1 Admin ti permette di costruire una vista curata degli
 
 ## Video di formazione
 
-<YouTube id="Ko3kgsCSLFs" title="Creare calendari, eventi e prenotazioni di sale in B1" />
+<YouTube id="Ko3kgsCSLFs" title="Creare calendari, eventi e prenotazioni di sale in B1" next="Iscrizioni a eventi e a pagamento in B1" nextUrl="/docs/b1-admin/calendars/paid-registrations" />
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
@@ -73,68 +73,68 @@ Clicca su **Nuovo evento** nella pagina di dettaglio del calendario per aggiunge
 - **Foto dell'evento** -- Clicca su **Aggiungi foto** (oppure sulla casella vuota della foto) per scegliere o caricare un'immagine, ritagliata in un formato ampio 16:9. Clicca su **Cambia foto** per sostituirla. La foto viene mostrata in cima alla pagina dell'evento sul tuo sito web e come sua miniatura quando un elemento Calendario mostra i **Prossimi eventi** (vedi [Mostrare gli eventi sul tuo sito web](#showing-events-on-your-website)).
 - **Descrizione** -- Mostrata nella pagina dell'evento sul tuo sito web. Sono supportati testo in grassetto, elenchi e link.
 - **Inizio** e **Fine**, **Ripetizione** e **Visibilità** (**Pubblico** o **Privato**).
-- **Tag** -- Etichette separate da virgole, come `giovani, studenti`. Un elemento Calendario sul tuo sito web può essere impostato per mostrare solo gli eventi con un certo tag. È lo stesso campo **Tag** che compare nelle impostazioni di iscrizione dell'evento.
-- **Chi può vedere le note** e **Chi può pubblicare note** -- Chi può leggere e aggiungere note all'evento (vedi [Note dell'evento](#event-notes)). Scegli **Solo staff** (l'impostazione predefinita), **Leader del gruppo** (i leader del gruppo dell'evento) oppure **Membri del gruppo** (tutti i membri del gruppo dell'evento, compresi i suoi leader).
-- **Sale** e **Risorse** -- Prenota spazi e attrezzature per l'evento. Vedi [Sale, risorse e pianificazione](rooms-resources).
+- **Tag** -- Etichette separate da virgole, come `giovani, studenti`. Un elemento Calendario sul tuo sito web può essere impostato per mostrare solo gli eventi con un certo tag. È lo stesso campo **Tag** mostrato nelle impostazioni di iscrizione dell'evento.
+- **Chi può vedere le note** e **Chi può pubblicare note** -- Chi può leggere e aggiungere note alla discussione dell'evento (vedi [Note dell'evento](#event-notes)). Scegli **Solo staff** (l'impostazione predefinita), **Leader del gruppo** (i leader del gruppo dell'evento) oppure **Membri del gruppo** (tutte le persone del gruppo dell'evento, inclusi i suoi leader).
+- **Sale** e **Risorse** -- Riserva spazi e attrezzature per l'evento. Vedi [Sale, risorse e pianificazione](rooms-resources).
 
-Clicca su **Salva**. Se l'evento si ripete, B1 ti chiede di confermare, perché il salvataggio aggiorna ogni occorrenza della serie.
+Clicca su **Salva**. Se l'evento si ripete, B1 ti chiede di confermare, perché salvare aggiorna ogni occorrenza della serie.
 
 ### Note dell'evento {#event-notes}
 
-Ogni evento ha il proprio thread di note per la pianificazione e il follow-up. Clicca su un evento nella pagina di dettaglio del calendario: la finestra mostra i dettagli dell'evento, i suoi promemoria e le sue **Note** sotto. Scrivi una nota e pubblicala per aggiungerla al thread.
+Ogni evento ha una propria discussione di note per la pianificazione e il follow-up. Clicca su un evento nella pagina di dettaglio del calendario; la finestra mostra i dettagli dell'evento, i suoi promemoria e le sue **Note** qui sotto. Scrivi una nota e pubblicala per aggiungerla alla discussione.
 
-Lo staff con il permesso di modificare i contenuti o di amministrare i calendari può sempre leggere e pubblicare le note degli eventi. Le impostazioni **Chi può vedere le note** e **Chi può pubblicare note** dell'evento decidono se anche i leader o i membri del gruppo dell'evento possono farlo.
+Il personale con il permesso di modificare i contenuti o di amministrare i calendari può sempre leggere e pubblicare le note dell'evento. Le impostazioni **Chi può vedere le note** e **Chi può pubblicare note** dell'evento decidono se anche i leader o i membri del gruppo dell'evento possono farlo.
 
 ### Mostrare gli eventi sul tuo sito web {#showing-events-on-your-website}
 
-Per inserire un calendario sul tuo sito web, aggiungi un elemento **Calendario** a una pagina e scegli questo calendario. L'elemento può mostrare un calendario mensile oppure una griglia di riquadri dei prossimi eventi, e può essere limitato agli eventi con un solo tag. I visitatori che cliccano su un evento aprono la sua pagina dedicata. Vedi [Usare l'elemento Calendario](../website/page-editor.md#using-the-calendar-element).
+Per inserire un calendario sul tuo sito web, aggiungi un elemento **Calendario** a una pagina e scegli questo calendario. L'elemento può mostrare un calendario mensile oppure una griglia di riquadri con i prossimi eventi, e può essere limitato agli eventi con un solo tag. I visitatori che cliccano su un evento aprono la sua pagina dedicata. Vedi [Uso dell'elemento Calendario](../website/page-editor.md#using-the-calendar-element).
 
-## Abilitare l'iscrizione agli eventi {#enabling-event-registration}
+## Attivare l'iscrizione agli eventi {#enabling-event-registration}
 
-Puoi attivare l'iscrizione per qualsiasi evento del calendario, così i membri possono iscriversi tramite il sito web B1 o l'app mobile.
+Puoi attivare le iscrizioni per qualsiasi evento del calendario, così che i membri possano iscriversi tramite il sito web o l'app mobile di B1.
 
 1. Clicca su un evento esistente oppure creane uno nuovo.
 2. Nell'editor dell'evento, attiva **Iscrizione**.
 3. Configura le impostazioni di iscrizione:
-   - **Capienza** (facoltativo) -- Imposta un numero massimo di iscrizioni. Lascia vuoto per nessun limite.
-   - **Apertura iscrizioni** -- La data e l'ora in cui l'iscrizione diventa disponibile.
-   - **Chiusura iscrizioni** -- La data e l'ora in cui l'iscrizione si chiude.
-   - **Tag** -- Etichette separate da virgole (ad esempio "giovani, ritiro, vbs") per aiutare a catalogare gli eventi con iscrizione.
-   - **Domande di iscrizione** -- Facoltativamente allega un [modulo](../forms/creating-forms.md) così chi si iscrive risponde a domande aggiuntive (restrizioni alimentari, taglia della maglietta, contatto d'emergenza, ecc.) come parte dell'iscrizione. Scegli **Nessuno** per non fare domande.
-   - **Attiva lista d'attesa** -- Quando l'evento si riempie, permetti ad altri iscritti di entrare in lista d'attesa invece di essere respinti. Vedi [Iscrizioni a pagamento](paid-registrations#waitlist).
+   - **Capienza** (facoltativa) -- Imposta un numero massimo di iscrizioni. Lascia vuoto per un numero illimitato.
+   - **Apertura iscrizioni** -- La data e l'ora in cui le iscrizioni diventano disponibili.
+   - **Chiusura iscrizioni** -- La data e l'ora in cui le iscrizioni si chiudono.
+   - **Tag** -- Etichette separate da virgole (ad esempio "giovani, ritiro, vbs") per aiutare a categorizzare gli eventi con iscrizione.
+   - **Domande di iscrizione** -- Facoltativamente, allega un [modulo](../forms/creating-forms.md) così chi si iscrive risponde a domande aggiuntive (restrizioni alimentari, taglia della maglietta, contatto d'emergenza, ecc.) durante la registrazione. Scegli **Nessuno** per non fare domande.
+   - **Attiva lista d'attesa** -- Quando l'evento si riempie, consenti agli altri iscritti di entrare in una lista d'attesa invece di essere respinti. Vedi [Iscrizioni a pagamento](paid-registrations#waitlist).
 4. Salva l'evento.
 
-Per gli eventi a pagamento, la stessa pagina di impostazioni ti permette di definire **Tipi di partecipante** con prezzo, **Selezioni** facoltative (extra) e **Codici sconto**, con il pagamento raccolto tramite il fornitore di donazioni della tua chiesa. Vedi [Iscrizioni a pagamento](paid-registrations) per la guida completa.
+Per gli eventi a pagamento, la stessa pagina delle impostazioni ti permette di definire **Tipi di partecipante** con prezzo, **Selezioni** facoltative (extra) e **Codici sconto**, con il pagamento riscosso tramite il fornitore di donazioni della tua chiesa. Vedi [Iscrizioni a pagamento](paid-registrations) per la guida completa.
 
-Una volta attivata l'iscrizione, i membri vedranno un pulsante **Iscriviti a questo evento** quando visualizzano l'evento sul [sito web B1](../../b1-church/events/registering) o nell'[app mobile B1](../../b1-mobile/events/registering). Se hai allegato un modulo, chi si iscrive vede un passaggio **Domande** durante la registrazione e le sue risposte vengono salvate insieme all'iscrizione.
+Una volta attivata l'iscrizione, i membri vedranno un pulsante **Iscriviti a questo evento** quando visualizzano l'evento sul [sito web di B1](../../b1-church/events/registering) o nell'[app mobile di B1](../../b1-mobile/events/registering). Se hai allegato un modulo, chi si iscrive vedrà un passaggio **Domande** durante la registrazione e le sue risposte verranno salvate insieme all'iscrizione.
 
 :::info
-Le Domande di iscrizione funzionano solo con moduli che **non** sono contrassegnati come Riservati. Un modulo riservato viene saltato automaticamente durante l'iscrizione invece di essere mostrato, quindi usa un modulo non riservato quando alleghi domande a un evento.
+Le domande di iscrizione funzionano solo con moduli che **non** sono contrassegnati come Riservati. Un modulo riservato viene saltato automaticamente durante l'iscrizione invece di essere mostrato, quindi usa un modulo non riservato quando alleghi domande a un evento.
 :::
 
 ### Gestire le iscrizioni
 
-Per visualizzare e gestire le iscrizioni ai tuoi eventi:
+Per vedere e gestire le iscrizioni ai tuoi eventi:
 
 1. Nel menu di navigazione rapida, scegli **Calendari > Iscrizioni**.
-2. Vedrai una tabella di tutti gli eventi con l'iscrizione attiva, con il titolo dell'evento, la data, il numero attuale di iscrizioni rispetto alla capienza e i tag.
-3. Clicca su un evento per vedere l'elenco completo delle iscrizioni, con nomi, numero di membri, tipi di partecipante, stato del pagamento e data di iscrizione.
+2. Vedrai una tabella con tutti gli eventi con iscrizione attiva, che mostra il titolo dell'evento, la data, il numero attuale di iscrizioni rispetto alla capienza e i tag.
+3. Clicca su un evento per vedere l'elenco completo delle iscrizioni, inclusi nomi, numero di membri, tipi di partecipante, stato del pagamento e data di iscrizione.
 4. Dalla pagina di dettaglio puoi:
-   - **Aggiungi partecipante** -- Iscrivi manualmente qualcuno che si è registrato offline o per telefono.
+   - **Aggiungi partecipante** -- Registrare manualmente qualcuno che si è iscritto offline o per telefono.
    - **Annulla** le singole iscrizioni
-   - **Elimina** definitivamente le iscrizioni
+   - **Elimina** le iscrizioni in modo definitivo
    - **Promuovi** le iscrizioni in lista d'attesa quando si libera un posto
-   - **Esporta CSV** -- Scarica tutte le iscrizioni, con tipi di partecipante, selezioni, importi pagati e risposte alle domande
+   - **Esporta CSV** -- Scarica tutte le iscrizioni, inclusi tipi di partecipante, selezioni, importi pagati e risposte alle domande
 
-Se all'evento sono allegate Domande di iscrizione, la pagina di dettaglio mostra anche un filtro **Solo domande senza risposta** per trovare rapidamente chi non ha ancora inviato le risposte, e un pulsante **Vedi risposte** su ogni iscrizione con risposte per visualizzarle. Gli eventi a pagamento aggiungono una colonna **Tipo**, una colonna **Pagato / Totale**, i conteggi per tipo e una finestra con i dettagli dei pagamenti -- vedi [Iscrizioni a pagamento](paid-registrations#the-registration-roster).
+Se l'evento ha delle domande di iscrizione allegate, la pagina di dettaglio mostra anche un filtro **Solo domande senza risposta** per trovare rapidamente chi non ha ancora inviato le risposte, e un pulsante **Vedi risposte** su ogni iscrizione con risposte per visualizzarle. Gli eventi a pagamento aggiungono una colonna **Tipo**, una colonna **Pagato / Totale**, i conteggi per tipo e una finestra con i dettagli dei pagamenti -- vedi [Iscrizioni a pagamento](paid-registrations#the-registration-roster).
 
 :::tip
 Usa la barra di avanzamento della capienza per monitorare quanto velocemente si riempiono gli eventi. La barra diventa rossa quando un evento raggiunge o supera la capienza.
 :::
 
-## Passi successivi
+## Passaggi successivi
 
-- [Calendario curato](curated-calendar) -- Crea un calendario che raccoglie da più gruppi
+- [Calendario curato](curated-calendar) -- Crea un calendario che raccoglie eventi da più gruppi
 - [Iscrizioni a pagamento](paid-registrations) -- Tipi di partecipante, selezioni extra, codici sconto, pagamenti e liste d'attesa
-- [Guida alle iscrizioni agli eventi](../guides/event-registration) -- Guida passo passo per configurare l'iscrizione agli eventi
+- [Guida alle iscrizioni agli eventi](../guides/event-registration) -- Guida passo passo per configurare le iscrizioni agli eventi
 - [Panoramica dei calendari](./) -- Torna alla panoramica dei calendari

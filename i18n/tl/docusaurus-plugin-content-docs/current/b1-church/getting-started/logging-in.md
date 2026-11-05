@@ -10,6 +10,10 @@ Ang pag-log in sa B1.church ay nagbibigay sa iyo ng access sa member portal kung
 
 </div>
 
+## Training Video
+
+<YouTube id="Y5dVC9D6cLs" title="Logging In and Installing the B1.church App" next="Updating Your Profile and Notifications" nextUrl="/docs/b1-church/getting-started/editing-your-profile" />
+
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 

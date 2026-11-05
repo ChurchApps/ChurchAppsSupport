@@ -10,6 +10,10 @@ Hinahayaan ka ng pahinang Live Stream Times na i-configure ang iskedyul ng strea
 
 </div>
 
+## Training Video
+
+<YouTube id="tpEY-sEYW6A" title="Setting Up Live Streaming in B1" next="Customizing Your Church's Member App in B1" nextUrl="/docs/b1-admin/settings/mobile-app" />
+
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 

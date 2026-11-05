@@ -1,5 +1,5 @@
 ---
-title: Introdução ao B1.church
+title: "Introdução ao B1.church"
 ---
 
 # Bem-vindo ao B1.church Admin!
@@ -9,6 +9,10 @@ title: Introdução ao B1.church
 Obrigado por escolher o B1.church! Esta introdução mostra os primeiros passos na plataforma B1.church Admin, desde entrar no sistema e navegar pelo seu Painel até configurar as informações da sua igreja e explorar as ferramentas disponíveis.
 
 </div>
+
+## Vídeo de treinamento
+
+<YouTube id="o4KfSQrRooE" title="What Is B1.church?" />
 
 Para mais suporte, envie um e-mail para [support@churchapps.org](mailto:support@churchapps.org).
 
@@ -42,7 +46,7 @@ Todo o B1 Admin é acessado pelo **menu de atalhos** no canto superior esquerdo 
 ### Navegando por seções e páginas
 
 1. Clique na barra de pesquisa, pressione **Ctrl+K** (**Cmd+K** em um Mac) ou pressione **/** enquanto não estiver digitando em um campo de texto.
-2. O menu lista todas as seções às quais você tem acesso — Painel, Pessoas, Doações, Serviço, Sermões, Site, Calendários, Mobile e Configurações. A seção em que você está já aparece expandida e a sua página atual fica destacada.
+2. O menu lista todas as seções às quais você tem acesso — Painel, Pessoas, Doações, Atendimento, Sermões, Site, Calendários, Mobile e Configurações. A seção em que você está já aparece expandida e a sua página atual fica destacada.
 3. Clique em uma seção para expandi-la e ver as suas páginas (por exemplo, **Pessoas** contém **Pessoas**, **Grupos**, **Presença**, **Formulários** e **Notas**). Apenas uma seção fica expandida por vez.
 4. Clique em uma página para ir até ela.
 
@@ -59,27 +63,27 @@ Em vez de navegar, você pode começar a digitar assim que o menu abrir para ir 
 
 A pesquisa também pode iniciar tarefas comuns. Digite o que você quer fazer e selecione:
 
-- **Criar uma página**, **Criar um grupo**, **Configurar o FreeShow** ou **Configurar o FreePlay** abre o assistente de configuração rápida correspondente bem onde você está, sem precisar voltar ao Painel.
-- **Adicionar uma pessoa** abre o formulário de nova pessoa.
+- **Criar uma página**, **Criar um grupo**, **Configurar FreeShow** ou **Configurar FreePlay** abre o assistente de configuração rápida correspondente bem onde você está, sem voltar ao Painel.
+- **Adicionar uma pessoa** abre o novo formulário de pessoa.
 - **Iniciar check-in** abre o aplicativo de check-in.
 
 As ações que você vê dependem das suas permissões.
 
-### Ações rápidas
+### Ações Rápidas
 
 O último grupo do menu de atalhos é **Ações Rápidas** — os atalhos de configuração que costumavam aparecer no Painel. Expanda-o para encontrar etapas como **Adicionar o logotipo da sua igreja**, **Criar sua primeira página da web**, **Configurar doações online**, **Criar seu primeiro grupo** e **Convidar membros da equipe**. As ações de configuração abrem o assistente de configuração rápida na primeira vez; depois que você configurar esse recurso, elas levam direto à página dele.
 
 :::tip
-A pesquisa costuma ser a forma mais rápida de chegar a uma página — digite parte do nome da página (como "papéis" ou "fundos") em vez de expandir Configurações, Serviço ou Doações manualmente.
+Pesquisar costuma ser a forma mais rápida de chegar a uma página -- digite parte do nome da página (como "funções" ou "fundos") em vez de expandir Configurações, Atendimento ou Doações manualmente.
 :::
 
 ## Próximos passos
 
-Depois de assistir a esta introdução, explore estes recursos principais:
+Depois de assistir a esta introdução, conheça estes recursos principais:
 
 - [Adicionando pessoas](./people/adding-people) -- Aprenda a adicionar membros ao seu banco de dados
 - [Grupos](./groups/) -- Configure e gerencie os grupos da igreja
-- [Planos de serviço](./serving/plans) -- Organize o seu ministério de serviço
+- [Planos de culto](./serving/plans) -- Organize o seu ministério de atendimento
 - [Presença](./attendance/) -- Acompanhe a presença e o check-in
 - [Site](./website/) -- Crie e personalize o site da sua igreja
-- [Configurações](./settings/) -- Configure as informações da igreja e as permissões
+- [Configurações](./settings/) -- Configure as informações e permissões da sua igreja

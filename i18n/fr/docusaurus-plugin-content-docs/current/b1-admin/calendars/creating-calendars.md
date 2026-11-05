@@ -12,7 +12,7 @@ Créer un calendrier dans B1 Admin vous permet de composer une vue organisée de
 
 ## Vidéo de formation
 
-<YouTube id="Ko3kgsCSLFs" title="Créer des calendriers, des événements et des réservations de salles dans B1" />
+<YouTube id="Ko3kgsCSLFs" title="Créer des calendriers, des événements et des réservations de salles dans B1" next="Inscriptions aux événements et événements payants dans B1" nextUrl="/docs/b1-admin/calendars/paid-registrations" />
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
@@ -24,7 +24,7 @@ Créer un calendrier dans B1 Admin vous permet de composer une vue organisée de
 
 ## Créer un nouveau calendrier
 
-1. Dans B1 Admin, ouvrez le [menu de navigation rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Calendriers**, et cliquez sur **Calendriers**.
+1. Dans B1 Admin, ouvrez le [menu de navigation rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Calendriers**, puis cliquez sur **Calendriers**.
 2. Cliquez sur **Ajouter un calendrier** en haut de la page. Le formulaire du nouveau calendrier s'ouvre sous la liste des calendriers.
 3. Saisissez un **nom** pour votre calendrier (par exemple « Événements du ministère jeunesse » ou « Calendrier principal de l'église »).
 4. Ajoutez une **description** facultative pour aider votre équipe à comprendre à quoi sert ce calendrier.
@@ -39,29 +39,29 @@ Après avoir créé un calendrier, cliquez sur **Gérer les événements** sur s
 
 ## Relier des groupes
 
-Les groupes qui ont des événements dans le calendrier apparaissent automatiquement dans la liste **Groupes dans le calendrier** à gauche de la page de détail.
+Les groupes qui comptent des événements dans le calendrier apparaissent automatiquement dans la liste **Groupes dans le calendrier**, à gauche de la page de détail.
 
 1. Cliquez sur **Ajouter un groupe** au-dessus du calendrier pour associer un groupe à votre calendrier.
 2. Sélectionnez le groupe dans la liste déroulante. La liste comprend tous les groupes de votre église, et pas seulement ceux dont vous faites partie.
-3. Choisissez d'inclure **tous les événements** de ce groupe ou seulement **des événements précis**.
+3. Choisissez d'inclure **tous les événements** de ce groupe ou seulement **certains événements**.
 4. Cliquez sur **Enregistrer**.
 
 Chaque événement n'apparaît qu'une seule fois dans le calendrier. Si vous ajoutez un groupe entier, les événements de ce groupe que vous aviez déjà ajoutés un à un sont intégrés à l'entrée du groupe, et choisir des événements précis d'un groupe déjà présent dans le calendrier n'ajoute rien de nouveau. Seuls les groupes ajoutés dans leur totalité figurent dans **Groupes dans le calendrier**.
 
 ### Importer un fichier .ics
 
-Cliquez sur **Importer .ics** pour importer des événements depuis un autre calendrier. Choisissez le **groupe** auquel les événements doivent appartenir, puis cliquez sur **Choisir un fichier .ics** ou collez le contenu du fichier, et cliquez sur **Importer**. Les événements sont créés dans ce groupe, et le groupe est ajouté au calendrier à partir duquel vous avez importé, de sorte que les événements apparaissent immédiatement.
+Cliquez sur **Importer .ics** pour importer des événements depuis un autre calendrier. Choisissez le **groupe** auquel les événements doivent appartenir, puis cliquez sur **Choisir un fichier .ics** ou collez le contenu du fichier, puis cliquez sur **Importer**. Les événements sont créés dans ce groupe, et celui-ci est ajouté au calendrier d'où provient l'importation, de sorte que les événements s'y affichent immédiatement.
 
 ### Retirer un événement du calendrier
 
-Cliquez sur un événement du calendrier, puis cliquez sur **Retirer du calendrier**. Cela retire uniquement l'événement de ce calendrier -- l'événement reste dans son groupe. Si l'événement figure dans le calendrier parce que son groupe entier a été ajouté, le retirer supprime tous les événements de ce groupe de ce calendrier (les événements restent dans le groupe). Pour supprimer définitivement un événement, supprimez-le depuis le [calendrier du groupe](../groups/group-calendar.md).
+Cliquez sur un événement du calendrier, puis cliquez sur **Retirer du calendrier**. Cela retire seulement l'événement de ce calendrier -- l'événement reste dans son groupe. Si l'événement figure dans le calendrier parce que son groupe entier a été ajouté, le retirer retire tous les événements de ce groupe du calendrier (ils restent dans le groupe). Pour supprimer définitivement un événement, supprimez-le depuis le [calendrier du groupe](../groups/group-calendar.md).
 
 :::tip
-Relier des groupes à votre calendrier est un excellent moyen de regrouper automatiquement les événements. Lorsqu'un responsable de groupe ajoute un événement à son [groupe](../groups/creating-groups.md), il peut apparaître dans le calendrier général de l'église sans aucun travail supplémentaire de votre part.
+Relier des groupes à votre calendrier est un excellent moyen de regrouper automatiquement les événements. Lorsqu'un responsable de groupe ajoute un événement à son [groupe](../groups/creating-groups.md), celui-ci peut apparaître dans le calendrier général de l'église sans aucun travail supplémentaire de votre part.
 :::
 
 :::info
-Si vous voulez créer un seul calendrier qui reprend les événements de nombreux groupes de votre église, consultez [Calendrier organisé](curated-calendar) pour une méthode simplifiée.
+Si vous voulez créer un seul calendrier qui regroupe les événements de nombreux groupes de votre église, consultez [Calendrier organisé](curated-calendar) pour une méthode simplifiée.
 :::
 
 ## Ajouter et modifier des événements {#adding-and-editing-events}
@@ -70,8 +70,8 @@ Cliquez sur **Nouvel événement** sur la page de détail du calendrier pour ajo
 
 - **Groupe** -- Le groupe auquel appartient l'événement. Si votre église a des modèles d'événements, vous pouvez aussi choisir un **modèle** pour remplir le formulaire.
 - **Titre**
-- **Photo de l'événement** -- Cliquez sur **Ajouter une photo** (ou sur la case photo vide) pour choisir ou téléverser une image, recadrée au format large 16:9. Cliquez sur **Changer la photo** pour la remplacer. La photo s'affiche en haut de la page de l'événement sur votre site web et comme vignette lorsqu'un élément Calendrier affiche les **événements à venir** (voir [Afficher les événements sur votre site web](#showing-events-on-your-website)).
-- **Description** -- Affichée sur la page de l'événement sur votre site web. Le gras, les listes et les liens sont pris en charge.
+- **Photo de l'événement** -- Cliquez sur **Ajouter une photo** (ou sur la case photo vide) pour choisir ou téléverser une image, recadrée au format large 16:9. Cliquez sur **Changer la photo** pour la remplacer. La photo s'affiche en haut de la page de l'événement sur votre site web, ainsi que comme vignette lorsqu'un élément Calendrier affiche les **événements à venir** (voir [Afficher les événements sur votre site web](#showing-events-on-your-website)).
+- **Description** -- Affichée sur la page de l'événement sur votre site web. Le texte en gras, les listes et les liens sont pris en charge.
 - **Début** et **Fin**, **Répétition** et **Visibilité** (**Public** ou **Privé**).
 - **Étiquettes** -- Libellés séparés par des virgules, comme `jeunes, étudiants`. Un élément Calendrier de votre site web peut être configuré pour n'afficher que les événements portant une certaine étiquette. Il s'agit du même champ **Étiquettes** que celui des paramètres d'inscription de l'événement.
 - **Qui peut voir les notes** et **Qui peut publier des notes** -- Qui peut lire et ajouter des notes à l'événement (voir [Notes d'événement](#event-notes)). Choisissez **Personnel seulement** (par défaut), **Responsables de groupe** (responsables du groupe de l'événement) ou **Membres du groupe** (toutes les personnes du groupe de l'événement, y compris ses responsables).
@@ -81,9 +81,9 @@ Cliquez sur **Enregistrer**. Si l'événement se répète, B1 vous demande de co
 
 ### Notes d'événement {#event-notes}
 
-Chaque événement dispose de son propre fil de notes pour la planification et le suivi. Cliquez sur un événement sur la page de détail du calendrier ; la boîte de dialogue affiche les détails de l'événement, ses rappels et ses **Notes** en dessous. Saisissez une note et publiez-la pour l'ajouter au fil.
+Chaque événement dispose de son propre fil de notes pour la planification et le suivi. Cliquez sur un événement sur la page de détail du calendrier : la boîte de dialogue affiche les détails de l'événement, ses rappels et ses **Notes** en dessous. Saisissez une note et publiez-la pour l'ajouter au fil.
 
-Le personnel autorisé à modifier le contenu ou à administrer les calendriers peut toujours lire et publier des notes d'événement. Les paramètres **Qui peut voir les notes** et **Qui peut publier des notes** de l'événement déterminent si les responsables ou les membres du groupe de l'événement le peuvent aussi.
+Le personnel autorisé à modifier le contenu ou à administrer les calendriers peut toujours lire et publier des notes d'événement. Les paramètres **Qui peut voir les notes** et **Qui peut publier des notes** de l'événement déterminent si les responsables ou les membres du groupe de l'événement peuvent aussi le faire.
 
 ### Afficher les événements sur votre site web {#showing-events-on-your-website}
 
@@ -104,12 +104,12 @@ Vous pouvez activer l'inscription pour n'importe quel événement de calendrier 
    - **Activer la liste d'attente** -- Lorsque l'événement se remplit, permet aux inscrits supplémentaires de rejoindre une liste d'attente au lieu d'être refusés. Voir [Inscriptions payantes](paid-registrations#waitlist).
 4. Enregistrez l'événement.
 
-Pour les événements payants, la même page de paramètres vous permet de définir des **types de participants** avec prix, des **options** facultatives (suppléments) et des **codes de réduction**, avec un paiement encaissé via le fournisseur de dons de votre église. Consultez [Inscriptions payantes](paid-registrations) pour le guide complet.
+Pour les événements payants, la même page de paramètres vous permet de définir des **types de participants** avec prix, des **options** facultatives (suppléments) et des **codes de réduction**, le paiement étant encaissé par le fournisseur de dons de votre église. Consultez [Inscriptions payantes](paid-registrations) pour le guide complet.
 
 Une fois l'inscription activée, les membres verront un bouton **S'inscrire à cet événement** lorsqu'ils consulteront l'événement sur le [site web B1](../../b1-church/events/registering) ou l'[application mobile B1](../../b1-mobile/events/registering). Si vous avez joint un formulaire, les inscrits voient une étape **Questions** pendant l'inscription, et leurs réponses sont enregistrées avec leur inscription.
 
 :::info
-Les questions d'inscription ne fonctionnent qu'avec les formulaires qui **ne** sont **pas** marqués comme Restreints. Un formulaire restreint est automatiquement ignoré lors de l'inscription au lieu d'être affiché ; utilisez donc un formulaire non restreint lorsque vous joignez des questions à un événement.
+Les questions d'inscription ne fonctionnent qu'avec les formulaires qui ne sont **pas** marqués comme Restreints. Un formulaire restreint est automatiquement ignoré lors de l'inscription au lieu d'être affiché ; utilisez donc un formulaire non restreint lorsque vous joignez des questions à un événement.
 :::
 
 ### Gérer les inscriptions

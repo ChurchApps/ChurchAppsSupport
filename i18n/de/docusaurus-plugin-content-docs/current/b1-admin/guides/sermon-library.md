@@ -6,45 +6,45 @@ title: "Anleitung: Ihre Predigtbibliothek und Live-Stream aufbauen"
 
 <div class="article-intro">
 
-Machen Sie Ihr Predigtarchiv online verfügbar und richten Sie Live-Streaming ein – vom Import Ihrer bestehenden YouTube- oder Vimeo-Bibliothek bis zur Planung wiederkehrender Live-Gottesdienste mit interaktivem Chat. Am Ende können Ihre Gemeindemitglieder frühere Predigten ansehen und an Live-Gottesdiensten auf Ihrer Website und in Ihrer App teilnehmen.
+Machen Sie Ihr Predigtarchiv online verfügbar und richten Sie Live-Streaming ein -- vom Import Ihrer bestehenden YouTube- oder Vimeo-Bibliothek bis zu regelmäßigen Live-Gottesdiensten mit interaktivem Chat. Am Ende können Ihre Gemeindemitglieder vergangene Predigten ansehen und an Live-Gottesdiensten auf Ihrer Website und in Ihrer App teilnehmen.
 
 </div>
 
-## Schulungsvideo
+## Einführungsvideo
 
-<YouTube id="b3B3A25g2Sk" title="Building Your Sermon Library in B1" />
+<YouTube id="b3B3A25g2Sk" title="Aufbau Ihrer Predigtbibliothek in B1" next="Einrichtung von Livestreaming in B1" nextUrl="/docs/b1-admin/sermons/live-streaming" />
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- B1-Admin-Konto mit der Berechtigung zur Inhaltsverwaltung
-- YouTube- oder Vimeo-Kanal mit Predigtvideos (zum Import Ihres Archivs)
-- YouTube-Kanal-ID (für Live-Streaming – Sie finden sie in Ihren YouTube-Studio-Einstellungen)
+- Ein B1-Admin-Konto mit der Berechtigung zur Verwaltung von Inhalten
+- Ein YouTube- oder Vimeo-Kanal mit Predigtvideos (für den Import Ihres Archivs)
+- Die YouTube-Kanal-ID (für Livestreaming -- Sie finden sie in den Einstellungen Ihres YouTube Studios)
 
 </div>
 
-## Schritt 1: Predigt-Playlists erstellen
+## Schritt 1: Predigtlisten erstellen
 
-Playlists ordnen Ihre Predigten in Reihen und Sammlungen, damit sie leicht zu finden sind.
+Listen (Playlists) ordnen Ihre Predigten in Reihen und Sammlungen, damit sie leicht zu finden sind.
 
-Folgen Sie der Anleitung [Playlists](../sermons/playlists.md), um:
+Folgen Sie der Anleitung [Listen](../sermons/playlists.md), um:
 
-1. Reihen oder Sammlungen wie „Sonntagspredigten 2024“, „Ehe-Reihe“ oder „Weihnachtsgottesdienste“ zu erstellen
-2. Für jede Playlist einen Namen, eine Beschreibung, ein Veröffentlichungsdatum und ein Vorschaubild hinzuzufügen
+1. Reihen und Sammlungen wie "Sonntagspredigten 2024", "Ehe-Reihe" oder "Weihnachtsgottesdienste" anzulegen
+2. Für jede Liste einen Namen, eine Beschreibung, ein Veröffentlichungsdatum und ein Vorschaubild hinzuzufügen
 
 :::tip
-Erstellen Sie Playlists, bevor Sie Predigten hinzufügen. So fällt es leichter, die Predigten beim Hinzufügen der richtigen Reihe zuzuordnen.
+Legen Sie die Listen an, bevor Sie Predigten hinzufügen. So fällt es leichter, die Predigten beim Hinzufügen der richtigen Reihe zuzuordnen.
 :::
 
 ## Schritt 2: Bestehende Predigten importieren
 
-Wenn Sie bereits Predigtvideos auf YouTube oder Vimeo haben, können Sie alle auf einmal übernehmen.
+Wenn Sie Predigtvideos bereits auf YouTube oder Vimeo haben, können Sie alle auf einmal übernehmen.
 
 Folgen Sie der Anleitung [Massenimport](../sermons/bulk-import.md), um:
 
 1. die URL Ihres YouTube- oder Vimeo-Kanals einzugeben
-2. den Import in der Vorschau zu prüfen, um zu sehen, welche Videos übernommen werden
-3. auf Import zu klicken, um alle auf einmal hinzuzufügen
+2. eine Vorschau des Imports zu öffnen, um zu sehen, welche Videos übernommen werden
+3. auf Importieren zu klicken, um alle auf einmal hinzuzufügen
 
 ## Schritt 3: Einzelne Predigten hinzufügen
 
@@ -53,53 +53,53 @@ Für einzelne Ergänzungen oder Predigten, die nicht Teil eines Massenimports si
 Folgen Sie der Anleitung [Predigten verwalten](../sermons/managing-sermons.md), um:
 
 1. eine Video-URL einzufügen (YouTube, Vimeo oder Facebook)
-2. Titel, Beschreibung, Vorschaubild und Dauer werden automatisch aus den Metadaten des Videos übernommen
-3. die Predigt einer Playlist zuzuweisen
+2. Titel, Beschreibung, Vorschaubild und Dauer aus den Metadaten des Videos automatisch übernehmen zu lassen
+3. die Predigt einer Liste zuzuordnen
 
-## Schritt 4: Live-Streaming einrichten
+## Schritt 4: Livestreaming einrichten
 
-Verbinden Sie Ihren YouTube-Kanal, damit Ihre B1-Website Ihren Livestream automatisch übernimmt.
+Verbinden Sie Ihren YouTube-Kanal, damit Ihre B1-Website Ihren Live-Stream automatisch übernimmt.
 
-Folgen Sie der Anleitung [Live-Streaming](../sermons/live-streaming.md), um:
+Folgen Sie der Anleitung [Livestreaming](../sermons/live-streaming.md), um:
 
 1. Ihre YouTube-Kanal-ID in den Streaming-Einstellungen einzugeben
 2. Ihren wiederkehrenden Gottesdienstplan festzulegen (z. B. sonntags um 10:00 Uhr)
-3. die Reiter der Streaming-Seite (Chat, Gebetsanliegen und eigene Links) auf der Seite **Sermons > Settings** anzupassen
+3. die Reiter der Streaming-Seite (Chat, Gebetsanliegen und eigene Links) auf der Seite **Predigten > Einstellungen** anzupassen
 
 :::info
-Sobald Sie auf YouTube live gehen, übernimmt die B1-Streaming-Seite den Stream automatisch. Am Sonntagmorgen sind keine weiteren Schritte nötig.
+Wenn Sie auf YouTube live gehen, übernimmt die B1-Streaming-Seite den Stream automatisch. Am Sonntagmorgen sind keine weiteren Schritte nötig.
 :::
 
 ## Schritt 5: Auf Ihrer Website anzeigen
 
-Machen Sie Ihre Predigtbibliothek und Ihren Livestream für Besucher leicht zugänglich.
+Machen Sie Ihre Predigtbibliothek und den Live-Stream für Besucher leicht zugänglich.
 
 Folgen Sie der Anleitung [Seiten verwalten](../website/managing-pages.md), um:
 
-1. einen Abschnitt **Sermons** zu Ihrer B1-Website hinzuzufügen, damit Besucher die Bibliothek durchsuchen können
-2. einen Abschnitt **Live Stream** für das Live-Erlebnis hinzuzufügen
+1. einen Predigtbereich auf Ihrer B1-Website hinzuzufügen, damit Besucher Ihr Archiv durchstöbern können
+2. einen Live-Stream-Bereich für das Live-Erlebnis hinzuzufügen
 
-## Schritt 6: Mobiler Zugriff
+## Schritt 6: Zugriff über mobile Geräte
 
-Gemeindemitglieder können von jedem Gerät aus auf Predigten und Live-Gottesdienste zugreifen.
+Mitglieder können von jedem Gerät aus auf Predigten und Live-Gottesdienste zugreifen.
 
-1. Mitglieder können Predigten in der [B1-Mobile-App](../../b1-mobile/content/sermons.md) und auf [B1.church](../../b1-church/content/sermons.md) ansehen
-2. Live-Streaming mit Chat funktioniert auf beiden Plattformen
+1. Mitglieder können Predigten in der [B1-Mobile-App](../../b1-mobile/content/sermons.md) und auf [B1.church](../../b1-church/content/sermons.md) ansehen.
+2. Livestreaming mit Chat funktioniert auf beiden Plattformen.
 
 :::info
-Der Live-Chat ermöglicht es Ihrer Online-Gemeinde, in Echtzeit teilzunehmen – fast so, als wäre man im Raum.
+Der Live-Chat ermöglicht es Ihrer Online-Gemeinde, in Echtzeit mitzuwirken, fast so, als wäre sie im Raum.
 :::
 
 ## Geschafft!
 
-Ihre Predigtbibliothek ist online und Ihr Livestream ist eingerichtet. Mitglieder können jederzeit frühere Predigten nachholen und von überall an Live-Gottesdiensten teilnehmen. Neue Predigt-Uploads können sich automatisch synchronisieren.
+Ihre Predigtbibliothek ist online und Ihr Live-Stream ist eingerichtet. Mitglieder können jederzeit vergangene Predigten nachholen und von überall an Live-Gottesdiensten teilnehmen. Neue Predigtvideos können automatisch synchronisiert werden.
 
 ## Verwandte Artikel
 
-- [Playlists](../sermons/playlists.md) — Predigten in Reihen organisieren
-- [Massenimport](../sermons/bulk-import.md) — Import von YouTube oder Vimeo
-- [Predigten verwalten](../sermons/managing-sermons.md) — einzelne Predigten hinzufügen und bearbeiten
-- [Live-Streaming](../sermons/live-streaming.md) — Live-Gottesdienste konfigurieren
-- [Predigten (Web)](../../b1-church/content/sermons.md) — Ansicht der Predigten für Mitglieder im Web
-- [Live-Streaming (Web)](../../b1-church/content/live-streaming.md) — Live-Stream-Erlebnis für Mitglieder
-- [Predigten (Mobil)](../../b1-mobile/content/sermons.md) — Predigten in der mobilen App
+- [Listen](../sermons/playlists.md) -- Predigten in Reihen ordnen
+- [Massenimport](../sermons/bulk-import.md) -- Import von YouTube oder Vimeo
+- [Predigten verwalten](../sermons/managing-sermons.md) -- einzelne Predigten hinzufügen und bearbeiten
+- [Livestreaming](../sermons/live-streaming.md) -- Live-Gottesdienste einrichten
+- [Predigten (Web)](../../b1-church/content/sermons.md) -- Predigtansicht für Mitglieder im Web
+- [Livestreaming (Web)](../../b1-church/content/live-streaming.md) -- Live-Stream-Erlebnis für Mitglieder
+- [Predigten (Mobil)](../../b1-mobile/content/sermons.md) -- Predigten in der mobilen App

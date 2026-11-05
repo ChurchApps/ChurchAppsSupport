@@ -10,69 +10,73 @@ Ihre Profilseite im Mitgliederportal ermöglicht es Ihnen, Ihre Kontaktdaten zu 
 
 </div>
 
+## Einführungsvideo
+
+<YouTube id="SKqr2A_jdRQ" title="Profil und Benachrichtigungen aktualisieren" next="Einer Gruppe beitreten und mit ihr chatten" nextUrl="/docs/b1-church/groups/browsing-groups" />
+
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie müssen [angemeldet](./logging-in.md) sein – zum Bearbeiten des Profils ist ein Konto erforderlich
+- Sie müssen [angemeldet](./logging-in.md) sein -- zum Bearbeiten des Profils ist ein Konto erforderlich
 
 </div>
 
 ## Ihr Profil öffnen
 
-Tippen Sie in der oberen App-Leiste auf Ihr Profilfoto oder auf **Profil bearbeiten** oben auf der Seite **Mehr** bzw. auf Ihrer [Me-Seite](./me-page.md), um **Ihr Profil** unter `/mobile/profileEdit` zu öffnen. Die Seite besteht aus einem Blatt mit Abschnitten – **Foto & Name**, **Kontakt**, **Haushalt**, **Konto** und **Datenschutz** – die jeweils Ihre aktuellen Informationen mit einem Link **Bearbeiten** (bzw. **Familienmitglied hinzufügen** / **Ändern**) anzeigen. Dieser Link öffnet ein Feld, in dem Sie Änderungen vornehmen können.
+Tippen Sie in der oberen App-Leiste auf Ihr Profilfoto oder tippen Sie oben auf der Seite **Mehr** oder auf Ihrer [Me-Seite](./me-page.md) auf **Profil bearbeiten**, um **Ihr Profil** unter `/mobile/profileEdit` zu öffnen. Die Seite besteht aus einer Folge von Abschnitten -- **Foto & Name**, **Kontakt**, **Haushalt**, **Konto** und **Datenschutz** --, die jeweils Ihre aktuellen Angaben mit einem Link **Bearbeiten** (oder **Familienmitglied hinzufügen** / **Ändern**) zeigen. Dieser öffnet ein Feld, in dem Sie Änderungen vornehmen.
 
 ## Foto & Name und Kontakt
 
-Diese Abschnitte enthalten die Informationen, die Ihre Gemeinde in Ihrem Personendatensatz sieht:
+Diese Abschnitte enthalten die Angaben, die Ihre Kirche in Ihrem Personendatensatz sieht:
 
-- **Foto & Name** – tippen Sie auf **Foto ändern**, um ein neues Bild hochzuladen, und bearbeiten Sie Ihren Vornamen, Ihren zweiten Vornamen und Ihren Nachnamen.
-- **Kontakt** – E-Mail, Mobiltelefon, Privattelefon, Diensttelefon, Geburtsdatum und Ihre Adresse (Straße, Ort, Bundesland und Postleitzahl). Wenn Sie in den [Benachrichtigungseinstellungen](./notification-preferences.md) Textnachrichten-Erinnerungen aktivieren, werden diese an Ihre Mobilnummer gesendet.
+- **Foto & Name** -- Tippen Sie auf **Foto ändern**, um ein neues Bild hochzuladen, und bearbeiten Sie Ihren Vornamen, zweiten Vornamen und Nachnamen.
+- **Kontakt** -- E-Mail, Mobiltelefon, Festnetz, Arbeitsnummer, Geburtsdatum und Ihre Adresse (Straße, Ort, Bundesland und Postleitzahl). Wenn Sie in den [Benachrichtigungseinstellungen](./notification-preferences.md) Erinnerungen per Textnachricht aktivieren, gehen sie an Ihre Mobilnummer.
 
 Nehmen Sie Ihre Änderungen im Feld vor und tippen Sie auf **Änderungen speichern**.
 
 :::info
-Wenn Ihre Gemeinde für Verzeichnisänderungen eine Genehmigung verlangt, zeigt die Seite den Hinweis „Änderungen an Ihrem Profil werden von den Mitarbeitenden der Gemeinde geprüft.“ an, und die Schaltfläche lautet **Zur Genehmigung einreichen**. Ihre Änderungen werden dann als Antrag eingereicht und nicht sofort übernommen. Unter [Profiländerungen genehmigen](/docs/b1-admin/profile/approving-profile-changes) erfahren Sie, wie Ihre Gemeinde diese prüft.
+Wenn Ihre Kirche für Verzeichnisänderungen eine Genehmigung verlangt, steht auf der Seite "Änderungen an Ihrem Profil gehen an die Mitarbeiter der Kirche zur Genehmigung." und die Schaltfläche lautet **Zur Genehmigung einreichen** -- Ihre Änderungen werden dann als Anfrage eingereicht, statt sofort übernommen zu werden. Wie Ihre Kirche diese Angaben prüft, erfahren Sie unter [Profiländerungen genehmigen](/docs/b1-admin/profile/approving-profile-changes).
 :::
 
 ## Haushalt
 
-Der Abschnitt Haushalt zeigt die anderen Personen, die mit Ihrem Haushalt verknüpft sind, jeweils mit ihrer Haushaltsrolle (Hauptperson, Ehepartner, Kind usw.). Tippen Sie auf ein Haushaltsmitglied, um dessen Details anzuzeigen.
+Der Abschnitt Haushalt zeigt die anderen Personen, die mit Ihrem Haushalt verbunden sind, jeweils mit ihrer Haushaltsrolle (Haupt, Ehepartner, Kind usw.). Tippen Sie auf ein Haushaltsmitglied, um dessen Details zu sehen.
 
-Um ein Familienmitglied hinzuzufügen, das noch nicht im System ist, tippen Sie auf **Familienmitglied hinzufügen**, geben Sie dessen Vornamen ein und tippen Sie auf **Hinzufügen**. Neue Familienmitglieder werden einer Liste mit ausstehenden Einträgen hinzugefügt und zusammen mit Ihren anderen Profiländerungen zur Prüfung an Ihre Gemeinde übermittelt.
+Um ein Familienmitglied hinzuzufügen, das noch nicht im System ist, tippen Sie auf **Familienmitglied hinzufügen**, geben Sie den Vornamen ein und tippen Sie auf **Hinzufügen**. Neue Familienmitglieder werden einer ausstehenden Liste hinzugefügt und zusammen mit Ihren anderen Profiländerungen eingereicht, damit Ihre Kirche sie prüfen kann.
 
 ## Konto
 
-Der Abschnitt Konto verwaltet Ihre Anmeldung und nicht Ihr Gemeindeprofil. Tippen Sie auf **Bearbeiten**, um ihn zu öffnen:
+Der Abschnitt Konto verwaltet Ihren Login und nicht Ihr Kirchenprofil. Tippen Sie auf **Bearbeiten**, um ihn zu öffnen:
 
-- **Anzeigename** – der Vor- und Nachname, der bei Ihrer Anmeldung angezeigt wird (getrennt vom Namen in Ihrem Gemeindeprofil).
-- **E-Mail ändern** – aktualisieren Sie die E-Mail-Adresse, mit der Sie sich anmelden.
-- **Passwort ändern** – geben Sie Ihr aktuelles Passwort und anschließend zweimal Ihr neues Passwort ein. Ihr neues Passwort muss mindestens 8 Zeichen lang sein.
+- **Anzeigename** -- Vor- und Nachname, die bei Ihrer Anmeldung angezeigt werden (getrennt vom Namen in Ihrem Kirchenprofil).
+- **E-Mail ändern** -- Aktualisieren Sie die E-Mail-Adresse, mit der Sie sich anmelden.
+- **Passwort ändern** -- Geben Sie Ihr aktuelles Passwort ein und danach zweimal Ihr neues Passwort. Ihr neues Passwort muss mindestens 8 Zeichen lang sein.
 
 Jeder Teil hat seine eigene Schaltfläche **Speichern**.
 
-## Datenschutz
+## Datenschutz {#privacy}
 
-Der Abschnitt Datenschutz zeigt, wer Ihre Kontaktdaten in ChurchApps sehen kann. Tippen Sie auf **Ändern**, um die **Sichtbarkeitseinstellungen** zu öffnen:
+Der Abschnitt Datenschutz zeigt, wer Ihre Kontaktdaten über ChurchApps hinweg sehen kann. Tippen Sie auf **Ändern**, um **Sichtbarkeitseinstellungen** zu öffnen:
 
-- **Mich im Mitgliederverzeichnis ausblenden** – ein Schalter, der Sie vollständig aus dem [Mitgliederverzeichnis](../community/member-directory.md) entfernt.
-- **Sichtbarkeit der Adresse**, **Sichtbarkeit der Telefonnummer** und **Sichtbarkeit der E-Mail-Adresse** – jede hat ein eigenes Auswahlmenü, sodass Sie zum Beispiel Ihre E-Mail-Adresse der ganzen Gemeinde zeigen, Ihre Adresse aber stärker schützen können. Folgende Stufen stehen zur Auswahl:
+- **Mich im Mitgliederverzeichnis ausblenden** -- Ein Schalter, der Sie vollständig aus dem [Mitgliederverzeichnis](../community/member-directory.md) entfernt.
+- **Sichtbarkeit der Adresse**, **Sichtbarkeit der Telefonnummer** und **Sichtbarkeit der E-Mail** -- Jede hat ein eigenes Dropdown-Menü, sodass Sie zum Beispiel Ihre E-Mail-Adresse der ganzen Gemeinde zeigen, Ihre Adresse aber privater halten können. Die Optionen sind:
 
-| Stufe | Wer es sehen kann |
+| Stufe | Wer sie sehen kann |
 |---|---|
-| **Alle** | Für alle sichtbar, die das Verzeichnis einsehen können. |
-| **Nur Mitglieder** | Für andere angemeldete Gemeindemitglieder sichtbar. |
-| **Nur meine Gruppen** | Nur für Mitglieder der Gruppen sichtbar, denen Sie angehören. |
-| **Nur meine Gruppenleitungen und Mitarbeitende** | Nur für Mitarbeitende der Gemeinde und die Leitungen der Gruppen sichtbar, denen Sie angehören. |
-| **Nur Mitarbeitende** | Nur für Mitarbeitende der Gemeinde sichtbar (Personen mit dem Mitgliedschaftsstatus „Mitarbeiter“ oder der Berechtigung „Personen anzeigen“). |
+| **Alle** | Sichtbar für jede Person, die das Verzeichnis sehen kann. |
+| **Nur Mitglieder** | Sichtbar nur für andere angemeldete Gemeindemitglieder. |
+| **Nur meine Gruppen** | Sichtbar nur für Mitglieder der Gruppen, denen Sie angehören. |
+| **Meine Gruppenleitungen und Mitarbeiter** | Sichtbar nur für Mitarbeiter der Kirche und die Leitungen der Gruppen, denen Sie angehören. |
+| **Nur Mitarbeiter** | Sichtbar nur für Mitarbeiter der Kirche (Personen mit dem Mitgliedsstatus Mitarbeiter oder der Berechtigung Personen anzeigen). |
 
-Tippen Sie auf **Speichern**, um Ihre Auswahl zu übernehmen. Ihre Gemeinde legt für jedes dieser drei Felder einen Standardwert fest – siehe [Einstellungen der mobilen App](/docs/b1-admin/settings/mobile-app) –, doch was Sie hier wählen, überschreibt diesen Standard für Ihren eigenen Datensatz.
+Tippen Sie auf **Speichern**, um Ihre Auswahl zu übernehmen. Ihre Kirche legt für jedes dieser drei Felder einen Standard fest -- siehe [Einstellungen der mobilen App](/docs/b1-admin/settings/mobile-app) -- Ihre hier getroffene Wahl überschreibt diesen Standard jedoch für Ihren eigenen Datensatz.
 
 :::tip
-Sie sehen immer Ihre eigenen Informationen, unabhängig von diesen Einstellungen, und Mitarbeitende mit der Berechtigung „Personen anzeigen“ können sie ebenfalls immer sehen.
+Ihre eigenen Angaben sehen Sie immer, unabhängig von diesen Einstellungen, und Mitarbeiter mit der Berechtigung, Personen anzuzeigen, sehen sie ebenfalls immer.
 :::
 
 ## Verwandte Artikel
 
-- [Die Me-Seite](./me-page.md) – Ihr persönliches Dashboard
-- [Mitgliederverzeichnis](../community/member-directory.md) – Andere Mitglieder durchsuchen
-- [Profiländerungen genehmigen](/docs/b1-admin/profile/approving-profile-changes) – Wie Ihre Gemeinde eingereichte Änderungen prüft
+- [Die Me-Seite](./me-page.md) -- Ihr persönliches Dashboard
+- [Mitgliederverzeichnis](../community/member-directory.md) -- Andere Mitglieder durchsuchen
+- [Profiländerungen genehmigen](/docs/b1-admin/profile/approving-profile-changes) -- Wie Ihre Kirche eingereichte Änderungen prüft

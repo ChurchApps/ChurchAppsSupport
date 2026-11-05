@@ -84,12 +84,27 @@ Para sabay-sabay na mag-iskedyul ng ilang lesson mula sa iisang series, i-click 
 
 Para sa Lessons.church, ipinapakita rin ng listahan ang **Venue** na gagamitin ng bawat lesson, na itinutugma ayon sa pangalan sa venue na pinili mo para sa panimulang lesson (kung walang ganoong venue ang isang lesson, gagamitin ang iba at mamarkahang **substituted**). Ang mga provider na walang antas ng venue para sa kanilang mga lesson, tulad ng Go Curriculum, ay direktang nag-iiskedyul ng mga lesson at nakatago ang column na Venue.
 
+## Pag-iwan ng Bahagi Lamang ng Bawat Lesson {#keeping-only-part-of-every-lesson}
+
+Kung ginagamit ng iyong classroom ang parehong mga bahagi ng bawat lesson (halimbawa, ang opening video, ang memory verse, at ang mga tanong sa kuwento) at pinapatakbo ang iba nang live, maaari mong i-save nang isang beses bawat uri ng plan ang trim na iyon sa halip na i-edit ang bawat plan:
+
+1. Buksan ang plan ng isang naiskedyul na lesson at i-click ang **Customize**
+2. Burahin ang mga seksyong hindi mo ginagamit, gaya ng karaniwang ginagawa mo. Para panatilihin ang isang hakbang lang sa isang seksyon, gaya ng memory verse video, palawakin ang seksyong iyon sa mga hakbang nito at burahin ang iba
+3. Sa ilalim ng order of service, i-click ang **Use this for every lesson in Elementary** (ang link ay nagbabanggit ng uri ng plan mo)
+4. Suriin ang listahan ng mga bahaging papanatilihin. Iwanang naka-check ang **Also trim the upcoming lessons already scheduled** para i-trim din ang mga lesson na naiskedyul na sa uri ng plan na ito (papalitan nito ang order of service nila)
+5. I-click ang **Save**
+
+Mula noon, ang bawat lesson na naiskedyul sa uri ng plan na iyon gamit ang **Schedule Lesson**, **Bulk Schedule**, **Apply Year Plan**, o **Link Lesson** ay lalabas nang trimmed sa parehong mga bahagi, kaya tanging ang mga bahaging iyon ang tutugtugin ng FreePlay sa TV ng classroom. Itinutugma ang mga bahagi ayon sa pangalan, kaya makikita pa rin ang seksyong bahagyang napalitan ang pangalan (halimbawa, "Bible Story Questions" sa halip na "Big Bible Story Questions"). Ang hakbang sa loob ng seksyong nagbabago ang pangalan kada linggo, gaya ng memory verse video na pinangalanan ayon sa reference nito, ay pinananatili ayon sa posisyon nito sa seksyon.
+
+Kapag hindi tumutugma sa pattern ang isang lesson (may kulang na bahagi, walang video o larawan sa linggong iyon, o pinanatili ayon sa posisyon imbes na pangalan), mananatiling trimmed ang plan sa kung ano lang ang tumugma at mamamarkahan ito: lalabas ang babala sa ilalim ng plan sa listahan ng plan at sa itaas ng pahina ng plan, at makakatanggap ng notification ang mga leader ng ministry. Suriin ang order of service ng plan na iyon bago ang Linggo. Mawawala ang babala kapag in-edit mo ang order of service o i-click ang **Dismiss**. Kung walang tumugma sa isang lesson, mananatili itong buo at mamamarkahan.
+
+Hindi nababago ang mga plan na may order of service na kapag naiskedyul ang mga ito. Para baguhin ang naka-save na trim, i-customize ang ibang plan at i-click ang **Replace the saved trim for Elementary** (muli, nakapangalan ayon sa uri ng plan mo). Para itigil ang pag-trim, buksan ang **Edit** dialog ng uri ng plan at i-click ang **Clear** sa tabi ng **Lesson trim**.
+
 ## Mga Leader Guide ng Go Curriculum
 
 Kapag nag-iskedyul ka ng lesson ng Go Curriculum, binubuo ang order of service ng plan mula sa **Large Group** leader guide ng lesson: bawat bahagi ng guide ay nagiging seksyon, at bawat hakbang sa loob nito ay nakalista kasama ang uri nito (tulad ng say, do, play, o note) at ang teksto nito. Ang mga hakbang na nagpapatugtog ng video o ibang media ay dala ang file na iyon, kaya tumutugtog ito nang sunud-sunod. (Ang lesson na walang Large Group guide ay babalik sa simpleng listahan ng mga media file nito.)
 
 Ang bawat series na may materyal para sa small group ay nagsisimula rin sa folder na **Small Group Guides**. Buksan ito at pumili ng lesson para mag-iskedyul ng **Small Group** guide ng lesson na iyon, na pinangalanang tulad ng "Lesson Name - Small Group" -- kapaki-pakinabang para sa hiwalay na uri ng plan ng small group. Karamihan sa Small Group guide ay mga hakbang ng talakayan at kadalasang walang media. Dahil nauuna ang folder sa listahan, hindi ito kailanman mapipili kapag maramihang nag-iskedyul ka ng series mula sa isa sa mga lesson nito.
-
 ## Mag-apply ng Year Plan
 
 Kung nag-publish ang isang curriculum publisher ng year plan sa Lessons.church, maaari mong i-load ang buong sequence sa uri ng plan na ito sa isang hakbang lamang:

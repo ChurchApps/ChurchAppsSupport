@@ -12,7 +12,7 @@ Sa paggawa ng calendar sa B1 Admin, makakabuo ka ng piniling tanaw ng mga event 
 
 ## Training Video
 
-<YouTube id="Ko3kgsCSLFs" title="Creating Calendars, Events, and Room Bookings in B1" />
+<YouTube id="Ko3kgsCSLFs" title="Creating Calendars, Events, and Room Bookings in B1" next="Event Registration and Paid Events in B1" nextUrl="/docs/b1-admin/calendars/paid-registrations" />
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
