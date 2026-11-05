@@ -143,7 +143,7 @@ When a group is selected, an **Also record attendance** switch appears. Turn it 
 Attendance is only recorded when the sign-up happens during one of the selected group's **scheduled** service times:
 
 - The group must be linked to one or more service times, and those service times must have a [check-in schedule](setup.md#setting-a-check-in-schedule) (a **Day** and a **Start Time**).
-- "During" means inside that service time's check-in window -- from the **Open check-in** minutes before the start until the **Close check-in** minutes after the end (or after the start, if no end time is set), in the same time zone the check-in schedule uses.
+- "During" means inside that service time's check-in window -- from the **Open check-in** minutes before the start until the **Close check-in** minutes after the end (or after the start, if no end time is set; with neither an end time nor close minutes, until the end of that day), in the same time zone the check-in schedule uses.
 - Each family member is marked present in the group for every one of its service times that is open at that moment, on today's date.
 - Sign-ups at any other time, or for a group whose service times have no schedule, are added to the group but are not counted as attending.
 

@@ -65,7 +65,7 @@ Each service time can have an optional check-in schedule so that [self check-in]
 2. Under **Check-in Schedule**, choose the **Day** of the week the service time meets.
 3. Set the **Start Time** and, optionally, the **End Time**.
 4. Enter **Open check-in (minutes before start)** -- for example, `30` opens check-in half an hour before the service starts.
-5. Enter **Close check-in (minutes after end)** -- for example, `15` keeps check-in open for 15 minutes after the end time. If you didn't set an end time, this is counted from the start time.
+5. Enter **Close check-in (minutes after end)** -- for example, `15` keeps check-in open for 15 minutes after the end time. If you didn't set an end time, this is counted from the start time. If you leave both **End Time** and **Close check-in** blank, check-in stays open until the end of that day.
 6. Click **Save**.
 
 The schedule repeats every week and is measured in the time zone of the service's campus. If that campus doesn't have a time zone, your church's [Time Zone](../settings/church-settings.md#time-zone) is used instead, then the time zone of your first campus that has one, and finally Eastern time (America/New_York). If check-in opens at the wrong hour, check the **Time Zone** on the campus in [Campuses](../settings/campuses.md). To remove a schedule, set **Day** back to **No schedule** and click **Save**. A schedule only takes effect when both a **Day** and a **Start Time** are set.
