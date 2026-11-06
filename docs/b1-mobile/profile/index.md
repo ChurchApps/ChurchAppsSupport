@@ -34,6 +34,19 @@ The **Pending** tab shows any profile changes you have submitted that are waitin
 
 The **Account** tab provides access to your security settings.
 
+## My Cards and My Tasks
+
+If your church assigns you [workflow cards](../../b1-admin/serving/workflows.md) or [tasks](../../b1-admin/serving/tasks.md), the **Me** screen shows a **My cards** section and a **My tasks** section, and **Home** shows a short **Your follow-ups** list. These sections only appear when something is assigned to you, and closed tasks never show. Tap **All cards**, **All tasks**, or **All** to see everything assigned to you.
+
+Tap a card to open it. You can:
+
+- See its step, due date, and the person it is about. The person's name opens their directory profile when the directory shows them to you.
+- Tap **Complete** (or the step's outcome button) when the step is done.
+- **Snooze** it for 1, 3, or 7 days.
+- Read and add **Notes**. These are the same notes staff see on the card in B1 Admin.
+
+Tap a plain task to see who it is from, who it is about, and its notes. Closing a plain task still happens in B1 Admin.
+
 ## Getting to Your Profile
 
 1. Open the drawer menu.
