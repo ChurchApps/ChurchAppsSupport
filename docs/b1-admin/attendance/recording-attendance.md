@@ -106,6 +106,8 @@ You can download a record of the session as a CSV file to use in Excel, Numbers,
 2. Click the **Export** button at the top of the attendance list.
 3. Open the downloaded file in your spreadsheet application.
 
+The file has one row per group member with their name and whether they were present or absent, plus the session date and the session's notes.
+
 ## Viewing Recorded Attendance
 
 After recording sessions, the data appears in your attendance reports.
