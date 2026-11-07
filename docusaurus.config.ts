@@ -185,9 +185,9 @@ const config: Config = {
           priority: null,
           ignorePatterns: ['/search/**', '/*/search/**'],
         },
-        // GA4: reports into the ChurchApps.org property (363427908); filter by hostName = support.churchapps.org.
+        // GA4: dedicated ChurchApps Support property (stream for support.churchapps.org).
         gtag: {
-          trackingID: 'G-KQ02ER7SZ9',
+          trackingID: 'G-V7VZZ21HQ9',
           anonymizeIP: true,
         },
       } satisfies Preset.Options,
