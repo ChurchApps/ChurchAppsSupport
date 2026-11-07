@@ -40,9 +40,9 @@ If your church has only turned on one of the two feeds for this group, the chat 
 1. Tap **Open chat** on your group page.
 2. Make sure you are in the **Chat** feed (tap **Back to chat** if you are reading announcements).
 3. Type your message in the **Send a message…** box.
-4. Tap the send button (or press **Enter**) to share it with the group.
+4. Tap the send button to share it with the group. On a phone or tablet, the return key starts a new line; on a computer, **Enter** sends and **Shift+Enter** starts a new line.
 
-Your message will be visible to all members of the group.
+Your message will be visible to all members of the group. Each message shows when it was sent: the time for today's messages, "yesterday" and the time, or the date and time for older ones.
 
 ## Editing or Deleting Your Messages
 
