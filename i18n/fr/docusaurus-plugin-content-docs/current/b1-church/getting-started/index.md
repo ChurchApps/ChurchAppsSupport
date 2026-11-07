@@ -50,7 +50,7 @@ Une fois connecté, le portail membre vous donne accès à :
 B1.church fonctionne dans n'importe quel navigateur mobile. Pour une expérience plus proche d'une application, installez le portail membre de votre église en tant qu'**application web progressive (PWA)** — visitez `https://yourchurchname.b1.church/mobile/install` pour des instructions guidées adaptées à votre appareil, ou ajoutez-le directement à votre écran d'accueil depuis Safari ou Chrome. Aucune boutique d'applications n'est nécessaire. Consultez [Installer en tant qu'application (PWA)](./installing-pwa.md) pour les instructions.
 
 :::info
-L'ancienne application native B1 Mobile a été dépréciée. La PWA est désormais le moyen pris en charge d'utiliser B1.church sur un téléphone — consultez la [page de référence B1 Mobile](/docs/b1-mobile/) pour la documentation historique.
+L'ancienne application native B1 Mobile a été dépréciée. La PWA est désormais le moyen pris en charge d'utiliser B1.church sur un téléphone — consultez la [page de référence B1 Mobile](/docs/b1-church/index.md) pour la documentation historique.
 :::
 
 ## Étapes suivantes

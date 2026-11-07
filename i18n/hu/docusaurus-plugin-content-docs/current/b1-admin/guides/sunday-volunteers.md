@@ -96,7 +96,7 @@ Engedje, hogy az önkéntesek maguk jelentkezzenek pozíciókra, ahelyett, hogy 
 3. Minden pozíciónál pipálja be az **Önkiszolgáló jelentkezés engedélyezése** jelölőnégyzetet, hogy az önkiszolgálóan is elérhető legyen.
 4. Adjon meg egy **Leírást** minden pozícióhoz, hogy az önkéntesek tudják, mit foglal magában a szerep.
 
-Miután létrehozta az önkiszolgáló pozíciókat, azok automatikusan megjelennek a önkéntes-jelentkezési oldalakon a [B1.church](../../b1-church/serving/volunteer-signup.md) oldalon és a [B1 Mobile alkalmazásban](../../b1-mobile/serving/volunteer-signup.md). A tagok böngészhetik a nyitott pozíciókat, láthatják, hány hely maradt, és egy kattintással jelentkezhetnek.
+Miután létrehozta az önkiszolgáló pozíciókat, azok automatikusan megjelennek a önkéntes-jelentkezési oldalakon a [B1.church](../../b1-church/serving/volunteer-signup.md) oldalon és a [B1 Mobile alkalmazásban](../../b1-church/serving/volunteer-signup.md). A tagok böngészhetik a nyitott pozíciókat, láthatják, hány hely maradt, és egy kattintással jelentkezhetnek.
 
 :::tip
 Keverje a adminisztrátor által kiosztott és az önkiszolgáló pozíciókat ugyanabban a tervben. Például a dicsőítésvezetőt közvetlenül rendelje be, de hagyja, hogy az üdvözlők és a kávéfelszolgálók maguk válasszanak.
@@ -106,7 +106,7 @@ Keverje a adminisztrátor által kiosztott és az önkiszolgáló pozíciókat u
 
 A kiosztott önkéntesek automatikusan látják terveiket, és válaszolhatnak rájuk.
 
-1. Az önkéntesek a [B1.church](../../b1-church/plans/viewing-plans.md) oldalon és a [B1 Mobile alkalmazásban](../../b1-mobile/serving/viewing-plans.md) látják terveiket
+1. Az önkéntesek a [B1.church](../../b1-church/plans/viewing-plans.md) oldalon és a [B1 Mobile alkalmazásban](../../b1-church/plans/viewing-plans.md) látják terveiket
 2. Beosztásaikat bármelyik platformon közvetlenül elfogadhatják vagy elutasíthatják
 3. Beállíthatnak tiltott dátumokat azokra a hetekre, amikor nem érnek rá
 4. A terveket kinyomtathatja próbákhoz, vagy kiteheti a színfalak mögé
@@ -130,6 +130,6 @@ Az önkéntesmenedzsment rendszere be van állítva. Minden héten hozzon létre
 - [Feladatok](../serving/tasks.md) — cselekvési elemek kiosztása személyeknek vagy csoportoknak
 - [Munkafolyamatok](../serving/workflows.md) — emberek vezetése ismétlődő folyamatokon indítóeseményekkel és automatizált lépésekkel
 - [Tervek megtekintése (webes)](../../b1-church/plans/viewing-plans.md) — hogyan látják az önkéntesek a terveket online
-- [Tervek megtekintése (mobil)](../../b1-mobile/serving/viewing-plans.md) — hogyan látják az önkéntesek a terveket mobilon
+- [Tervek megtekintése (mobil)](../../b1-church/plans/viewing-plans.md) — hogyan látják az önkéntesek a terveket mobilon
 - [Önkéntes-jelentkezés (webes)](../../b1-church/serving/volunteer-signup.md) — hogyan választhatnak pozíciót a tagok
-- [Önkéntes-jelentkezés (mobil)](../../b1-mobile/serving/volunteer-signup.md) — önkiszolgáló jelentkezés mobilon
+- [Önkéntes-jelentkezés (mobil)](../../b1-church/serving/volunteer-signup.md) — önkiszolgáló jelentkezés mobilon

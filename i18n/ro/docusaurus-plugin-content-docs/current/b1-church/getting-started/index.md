@@ -50,7 +50,7 @@ Odată ce ești autentificat, portalul pentru membri îți oferă acces la:
 B1.church funcționează în orice browser mobil. Pentru o experiență mai asemănătoare cu o aplicație, instalează portalul pentru membri al bisericii ca **Progressive Web App (PWA)** — accesează `https://numebiserica.b1.church/mobile/install` pentru pași ghidați, specifici dispozitivului tău, sau adaugă-l direct pe ecranul principal din Safari sau Chrome. Nu este nevoie de magazinul de aplicații. Consultă [Instalarea ca aplicație (PWA)](./installing-pwa.md) pentru instrucțiuni.
 
 :::info
-Aplicația nativă veche B1 Mobile a fost scoasă din uz. PWA este modalitatea recomandată de a folosi B1.church pe telefon. Pentru documentația istorică, consultă [pagina de referință B1 Mobile](/docs/b1-mobile/).
+Aplicația nativă veche B1 Mobile a fost scoasă din uz. PWA este modalitatea recomandată de a folosi B1.church pe telefon. Pentru documentația istorică, consultă [pagina de referință B1 Mobile](/docs/b1-church/index.md).
 :::
 
 ## Pașii următori

@@ -84,7 +84,7 @@ YouTube에서 라이브를 시작하면 B1 스트리밍 페이지가 자동으�
 
 교인은 어떤 기기에서든 설교와 라이브 예배에 접근할 수 있습니다.
 
-1. 교인은 [B1 Mobile 앱](../../b1-mobile/content/sermons.md)과 [B1.church](../../b1-church/content/sermons.md)에서 설교를 시청할 수 있습니다.
+1. 교인은 [B1 Mobile 앱](../../b1-church/content/sermons.md)과 [B1.church](../../b1-church/content/sermons.md)에서 설교를 시청할 수 있습니다.
 2. 라이브 스트리밍과 채팅은 두 플랫폼 모두에서 작동합니다.
 
 :::info
@@ -103,4 +103,4 @@ YouTube에서 라이브를 시작하면 B1 스트리밍 페이지가 자동으�
 - [Live Streaming(라이브 스트리밍)](../sermons/live-streaming.md) — 라이브 예배 설정하기
 - [Sermons (Web)(설교, 웹)](../../b1-church/content/sermons.md) — 교인의 설교 시청 경험
 - [Live Streaming (Web)(라이브 스트리밍, 웹)](../../b1-church/content/live-streaming.md) — 교인의 라이브 스트림 경험
-- [Sermons (Mobile)(설교, 모바일)](../../b1-mobile/content/sermons.md) — 모바일 앱의 설교
+- [Sermons (Mobile)(설교, 모바일)](../../b1-church/content/sermons.md) — 모바일 앱의 설교

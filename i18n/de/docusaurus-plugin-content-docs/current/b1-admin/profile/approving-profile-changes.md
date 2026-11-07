@@ -63,4 +63,4 @@ Stellen Sie sicher, dass Ihre Genehmiger tatsächlich Mitglieder der konfigurier
 
 - [Profil verwalten](./managing-profile.md) -- Bearbeiten Sie Ihre eigenen Kontoeinstellungen
 - [Kontolöschanforderungen überprüfen](./account-deletion.md) -- Der gleiche Genehmigungsgruppenüberprüfungsablauf für die Kontolöschung
-- [B1 Mobile-Einstellungen](../../b1-mobile/profile/editing-profile.md) -- Was Mitglieder sehen, wenn sie eine Profiländerung absenden
+- [B1 Mobile-Einstellungen](../../b1-church/getting-started/editing-your-profile.md) -- Was Mitglieder sehen, wenn sie eine Profiländerung absenden

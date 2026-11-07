@@ -12,7 +12,7 @@ Skapa ett anmälningsformulär för evenemang, samla in uppgifter om deltagare o
 </div>
 
 :::info
-**Två sätt att hantera eventregistrering:** Den här guiden beskriver **formulärbaserad registrering**, som ger dig full kontroll över anpassade fält och betalningsinsamling. För enklare evenemang där du bara behöver hålla reda på vem som kommer, använd **inbyggd eventregistrering** i kalendern. Se [Skapa kalendrar](../calendars/creating-calendars.md#enabling-event-registration) för installationsanvisningar. Med den inbyggda registreringen kan medlemmar anmäla sig direkt från [B1-webbplatsen](../../b1-church/events/registering.md) och [mobilappen](../../b1-mobile/events/registering.md), med kapacitetsspårning, datumfönster och bekräftelsemejl.
+**Två sätt att hantera eventregistrering:** Den här guiden beskriver **formulärbaserad registrering**, som ger dig full kontroll över anpassade fält och betalningsinsamling. För enklare evenemang där du bara behöver hålla reda på vem som kommer, använd **inbyggd eventregistrering** i kalendern. Se [Skapa kalendrar](../calendars/creating-calendars.md#enabling-event-registration) för installationsanvisningar. Med den inbyggda registreringen kan medlemmar anmäla sig direkt från [B1-webbplatsen](../../b1-church/events/registering.md) och [mobilappen](../../b1-church/events/registering.md), med kapacitetsspårning, datumfönster och bekräftelsemejl.
 :::
 
 <div class="prereqs">

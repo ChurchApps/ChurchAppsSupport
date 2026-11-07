@@ -382,12 +382,6 @@
   "homepage.products.b1website.description": {
     "message": "Verejná webová stránka cirkvi a portál pre členov."
   },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Mobilný"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Staršia aplikácia pre členov na iOS a Android, ktorú nahradila webová aplikácia B1.church."
-  },
   "homepage.products.b1checkin.title": {
     "message": "B1 Prihlásenie"
   },

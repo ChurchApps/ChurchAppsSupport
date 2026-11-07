@@ -120,7 +120,7 @@ Obe sú predvolene vypnuté. Sekcia sa zobrazí iba prihláseným členom, ktor�
 
 Karty, ktoré tu nakonfigurujete, sa zobrazujú v **PWA B1.church**, ktorú si členovia nainštalujú z ľubovoľnej stránky na `https://yourchurchname.b1.church`. Zmeny urobené na tejto stránke sa prejavia, keď člen aplikáciu nabudúce otvorí.
 
-Na telefóne spodná lišta kariet zobrazuje **Domov**, až tri vaše karty a **Viac**. Na počítači hlavička zobrazuje až päť kariet. Vstavané obrazovky (ako Kázne, Dary alebo Skupiny) dostanú miesta ako prvé a karty **Interná stránka** vyplnia zostávajúce voľné miesta. Karty **Externá URL** a **Verš dňa** nikdy nedostanú miesto na lište. Každá karta, vrátane tých, ktoré sa nezmestili, je uvedená na stránke **Viac** v aplikácii. Pozri [Navigácia v B1App](/docs/b1-church/getting-started/navigating), čo vidia členovia. (Karty sa tiež zobrazujú v zastaranej [natívnej aplikácii B1 Mobile](/docs/b1-mobile/) pre členov, ktorí ju ešte používajú, no táto aplikácia je zastaraná a už sa neaktualizuje.)
+Na telefóne spodná lišta kariet zobrazuje **Domov**, až tri vaše karty a **Viac**. Na počítači hlavička zobrazuje až päť kariet. Vstavané obrazovky (ako Kázne, Dary alebo Skupiny) dostanú miesta ako prvé a karty **Interná stránka** vyplnia zostávajúce voľné miesta. Karty **Externá URL** a **Verš dňa** nikdy nedostanú miesto na lište. Každá karta, vrátane tých, ktoré sa nezmestili, je uvedená na stránke **Viac** v aplikácii. Pozri [Navigácia v B1App](/docs/b1-church/getting-started/navigating), čo vidia členovia. (Karty sa tiež zobrazujú v zastaranej [natívnej aplikácii B1 Mobile](/docs/b1-church/index.md) pre členov, ktorí ju ešte používajú, no táto aplikácia je zastaraná a už sa neaktualizuje.)
 
 ## Ďalšie kroky
 

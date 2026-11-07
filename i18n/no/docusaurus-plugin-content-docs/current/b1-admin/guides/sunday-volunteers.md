@@ -96,7 +96,7 @@ La de frivillige melde seg på posisjoner selv i stedet for å vente på at admi
 3. For hver posisjon kryss av i boksen **Tillat selvpåmelding** for å gjøre den tilgjengelig for selvbetjening.
 4. Legg til en **beskrivelse** for hver posisjon, slik at de frivillige vet hva rollen innebærer.
 
-Når posisjonene for selvpåmelding er opprettet, vises de automatisk på påmeldingssidene for frivillige på [B1.church](../../b1-church/serving/volunteer-signup.md) og i [B1-mobilappen](../../b1-mobile/serving/volunteer-signup.md). Medlemmer kan bla gjennom ledige posisjoner, se hvor mange plasser som gjenstår, og melde seg på med ett klikk.
+Når posisjonene for selvpåmelding er opprettet, vises de automatisk på påmeldingssidene for frivillige på [B1.church](../../b1-church/serving/volunteer-signup.md) og i [B1-mobilappen](../../b1-church/serving/volunteer-signup.md). Medlemmer kan bla gjennom ledige posisjoner, se hvor mange plasser som gjenstår, og melde seg på med ett klikk.
 
 :::tip
 Bland posisjoner tildelt av administrator og posisjoner med selvpåmelding i samme plan. For eksempel kan du tilordne lovsangslederen direkte, men la vertskap og kaffeservering velges selv.
@@ -106,7 +106,7 @@ Bland posisjoner tildelt av administrator og posisjoner med selvpåmelding i sam
 
 Tilordnede frivillige ser planene sine automatisk og kan svare.
 
-1. De frivillige ser planene sine på [B1.church](../../b1-church/plans/viewing-plans.md) og i [B1-mobilappen](../../b1-mobile/serving/viewing-plans.md)
+1. De frivillige ser planene sine på [B1.church](../../b1-church/plans/viewing-plans.md) og i [B1-mobilappen](../../b1-church/plans/viewing-plans.md)
 2. De kan godta eller avslå oppdrag direkte fra begge plattformene
 3. De kan angi blokkeringsdatoer for uker de ikke er tilgjengelige
 4. Planer kan skrives ut til øvelser eller henges opp bak scenen
@@ -130,6 +130,6 @@ Systemet ditt for administrasjon av frivillige er satt opp. Hver uke oppretter d
 - [Oppgaver](../serving/tasks.md) — tilordne handlingspunkter til personer eller grupper
 - [Arbeidsflyter](../serving/workflows.md) — flytt personer gjennom gjentakende prosesser med triggere og automatiserte steg
 - [Se planer (web)](../../b1-church/plans/viewing-plans.md) — hvordan frivillige ser planer på nett
-- [Se planer (mobil)](../../b1-mobile/serving/viewing-plans.md) — hvordan frivillige ser planer på mobil
+- [Se planer (mobil)](../../b1-church/plans/viewing-plans.md) — hvordan frivillige ser planer på mobil
 - [Påmelding for frivillige (web)](../../b1-church/serving/volunteer-signup.md) — hvordan medlemmer velger frivillige posisjoner selv
-- [Påmelding for frivillige (mobil)](../../b1-mobile/serving/volunteer-signup.md) — selvpåmelding for frivillige på mobil
+- [Påmelding for frivillige (mobil)](../../b1-church/serving/volunteer-signup.md) — selvpåmelding for frivillige på mobil

@@ -382,12 +382,6 @@
   "homepage.products.b1website.description": {
     "message": "公開教会ウェブサイトとメンバーポータル。"
   },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 モバイル"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "iOS と Android 向けの従来のメンバーアプリ。現在は B1.church のWebアプリに置き換えられています。"
-  },
   "homepage.products.b1checkin.title": {
     "message": "B1 チェックイン"
   },

@@ -95,10 +95,6 @@
     "message": "Obsah",
     "description": "The label for category 'Content' in sidebar 'docsSidebar'"
   },
-  "sidebar.docsSidebar.category.B1 - Mobile": {
-    "message": "B1 - Mobilný",
-    "description": "The label for category 'B1 - Mobile' in sidebar 'docsSidebar'"
-  },
   "sidebar.docsSidebar.category.mobile-getting-started": {
     "message": "Začíname",
     "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
@@ -246,10 +242,6 @@
   "sidebar.docsSidebar.category.church-serving": {
     "message": "Služby",
     "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
-  },
-  "sidebar.docsSidebar.category.B1 - Mobile (Deprecated)": {
-    "message": "B1 - Mobilná aplikácia (zastaraná)",
-    "description": "The label for category 'B1 - Mobile (Deprecated)' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.mobile-events": {
     "message": "Udalosti",

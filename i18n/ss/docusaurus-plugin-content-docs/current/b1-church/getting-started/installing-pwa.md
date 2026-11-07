@@ -76,7 +76,7 @@ I-PWA idzinga kuxhumana ne-inthanethi. Ngalokungafani netinye ta-app tendabuko, 
 
 I-app yendabuko yendabuko **B1 Mobile** ku-iOS nase-Android seyiyekiwe kusetjentiswa futsi ayisakwentiwa. I-PWA yindlela leyeseketwako yekufinyelela iphothali yemalungu ye-B1.church elucingweni kusukela manje kuya embili, futsi imbandzakanya wonkhe umsebenti lokhombiswa emalungu leyayikhona ku-app yendabuko. Nangabe wake wafaka i-app yendabuko, shintjela ku-PWA nome nini nawulungele.
 
-Bona [likhasi lekubhekiswa kwe-B1 Mobile](/docs/b1-mobile/) kutfola imibhalo yayo yasendulo yale-app leseyiyekiwe.
+Bona [likhasi lekubhekiswa kwe-B1 Mobile](/docs/b1-church/index.md) kutfola imibhalo yayo yasendulo yale-app leseyiyekiwe.
 
 ## Imibhalo Lehlobene
 

@@ -107,7 +107,7 @@ description: "在 B1 Admin 中创建日历，关联小组或导入 .ics 文件�
 
 对于付费活动，同一设置页面还允许你定义带价格的 **Attendee Types**（参与者类型）、可选的 **Selections**（附加选项）以及 **Discount Codes**（折扣码），付款通过教会的捐赠服务商收取。完整说明请参见[付费报名](./paid-registrations.md)。
 
-开启报名后，成员在 [B1 网站](../../b1-church/events/registering.md)或 [B1 移动应用](../../b1-mobile/events/registering.md)上查看活动时，会看到 **Register for this Event** 按钮。如果你附加了表单，报名者在报名过程中会看到 **Questions** 步骤，他们的回答会与报名信息一同保存。
+开启报名后，成员在 [B1 网站](../../b1-church/events/registering.md)或 [B1 移动应用](../../b1-church/events/registering.md)上查看活动时，会看到 **Register for this Event** 按钮。如果你附加了表单，报名者在报名过程中会看到 **Questions** 步骤，他们的回答会与报名信息一同保存。
 
 :::info
 报名问题仅适用于**未**标记为受限（Restricted）的表单。受限表单在报名过程中会被自动跳过而不显示，因此在为活动附加问题时，请使用未受限的表单。

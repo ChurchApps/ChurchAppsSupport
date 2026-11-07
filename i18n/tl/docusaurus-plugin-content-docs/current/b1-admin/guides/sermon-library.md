@@ -84,7 +84,7 @@ Sundin ang gabay na [Managing Pages](../website/managing-pages.md) para:
 
 Maaaring ma-access ng mga miyembro ang mga sermon at live service mula sa alinmang device.
 
-1. Maaaring manood ng mga sermon ang mga miyembro sa [B1 Mobile app](../../b1-mobile/content/sermons.md) at sa [B1.church](../../b1-church/content/sermons.md)
+1. Maaaring manood ng mga sermon ang mga miyembro sa [B1 Mobile app](../../b1-church/content/sermons.md) at sa [B1.church](../../b1-church/content/sermons.md)
 2. Gumagana ang live streaming na may chat sa parehong platform
 
 :::info
@@ -103,4 +103,4 @@ Online na ang iyong sermon library at naka-configure na ang iyong live stream. M
 - [Live Streaming](../sermons/live-streaming.md) — i-configure ang mga live service
 - [Sermons (Web)](../../b1-church/content/sermons.md) — karanasan ng miyembro sa pagtingin ng sermon
 - [Live Streaming (Web)](../../b1-church/content/live-streaming.md) — karanasan ng miyembro sa live stream
-- [Sermons (Mobile)](../../b1-mobile/content/sermons.md) — mga sermon sa mobile app
+- [Sermons (Mobile)](../../b1-church/content/sermons.md) — mga sermon sa mobile app

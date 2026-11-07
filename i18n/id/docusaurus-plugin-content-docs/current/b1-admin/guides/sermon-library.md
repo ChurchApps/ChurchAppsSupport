@@ -84,7 +84,7 @@ Ikuti panduan [Mengelola Halaman](../website/managing-pages.md) untuk:
 
 Anggota dapat mengakses khotbah dan layanan langsung dari perangkat apa pun.
 
-1. Anggota dapat menonton khotbah di [aplikasi B1 Mobile](../../b1-mobile/content/sermons.md) dan di [B1.church](../../b1-church/content/sermons.md)
+1. Anggota dapat menonton khotbah di [aplikasi B1 Mobile](../../b1-church/content/sermons.md) dan di [B1.church](../../b1-church/content/sermons.md)
 2. Siaran langsung dengan obrolan berfungsi di kedua platform
 
 :::info
@@ -103,4 +103,4 @@ Perpustakaan khotbah Anda sudah online dan siaran langsung Anda sudah dikonfigur
 - [Siaran Langsung](../sermons/live-streaming.md) — mengonfigurasi layanan langsung
 - [Khotbah (Web)](../../b1-church/content/sermons.md) — pengalaman menonton khotbah bagi anggota
 - [Siaran Langsung (Web)](../../b1-church/content/live-streaming.md) — pengalaman siaran langsung bagi anggota
-- [Khotbah (Seluler)](../../b1-mobile/content/sermons.md) — khotbah di aplikasi seluler
+- [Khotbah (Seluler)](../../b1-church/content/sermons.md) — khotbah di aplikasi seluler

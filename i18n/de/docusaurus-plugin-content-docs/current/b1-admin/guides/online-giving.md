@@ -71,7 +71,7 @@ Verwenden Sie zuerst den Stripe-Testmodus, wenn Sie ohne echte Abbuchungen teste
 Verbreiten Sie die Nachricht, damit Mitglieder wissen, dass sie online spenden können.
 
 1. Teilen Sie die Spenden-URL über Ihre Website, E-Mail-Newsletter, Gemeindebriefe und soziale Medien
-2. Mitglieder können auch über die [B1 Mobile-App](../../b1-mobile/giving/index.md) spenden -- die Spendenfunktion ist integriert
+2. Mitglieder können auch über die [B1 Mobile-App](../../b1-church/giving/index.md) spenden -- die Spendenfunktion ist integriert
 
 :::info
 Mitglieder, die sich anmelden, können Zahlungsmethoden speichern, wiederkehrende Spenden einrichten und ihre Spendenhistorie einsehen. Anonymes Spenden funktioniert auch -- keine Anmeldung erforderlich.
@@ -102,4 +102,4 @@ Ihre Gemeinde akzeptiert jetzt Online-Spenden. Mitglieder können über Ihre Web
 - [Spendenberichte](../donations/donation-reports.md) — Spendentrends und Gesamtsummen einsehen
 - [Spendenbescheinigungen](../donations/giving-statements.md) — Jahresend-Steuerbescheinigungen erstellen
 - [Spenden tätigen (Web)](../../b1-church/giving/making-donations.md) — Die Spendenerfahrung für Mitglieder
-- [Spenden tätigen (Mobil)](../../b1-mobile/giving/making-donations.md) — Spenden über die mobile App
+- [Spenden tätigen (Mobil)](../../b1-church/giving/making-donations.md) — Spenden über die mobile App

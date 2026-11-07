@@ -84,7 +84,7 @@ Vadovaukitės [Puslapių valdymas](../website/managing-pages.md) vadovu, kad:
 
 Nariai gali pasiekti pamokslus ir tiesiogines pamaldas iš bet kurio įrenginio.
 
-1. Nariai gali žiūrėti pamokslus [B1 Mobile programėlėje](../../b1-mobile/content/sermons.md) ir [B1.church](../../b1-church/content/sermons.md)
+1. Nariai gali žiūrėti pamokslus [B1 Mobile programėlėje](../../b1-church/content/sermons.md) ir [B1.church](../../b1-church/content/sermons.md)
 2. Tiesioginė transliacija su pokalbiu veikia abiejose platformose
 
 :::info
@@ -103,4 +103,4 @@ Jūsų pamokslų biblioteka paskelbta internete, o tiesioginė transliacija suko
 - [Tiesioginė transliacija](../sermons/live-streaming.md) — sukonfigūruokite tiesiogines pamaldas
 - [Pamokslai (internete)](../../b1-church/content/sermons.md) — narių pamokslų žiūrėjimo patirtis
 - [Tiesioginė transliacija (internete)](../../b1-church/content/live-streaming.md) — narių tiesioginės transliacijos patirtis
-- [Pamokslai (mobiliesiems)](../../b1-mobile/content/sermons.md) — pamokslai mobiliojoje programėlėje
+- [Pamokslai (mobiliesiems)](../../b1-church/content/sermons.md) — pamokslai mobiliojoje programėlėje

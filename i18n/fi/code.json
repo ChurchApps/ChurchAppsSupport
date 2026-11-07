@@ -382,12 +382,6 @@
   "homepage.products.b1website.description": {
     "message": "Kirkon julkinen verkkosivusto ja jäsenten portaali."
   },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 - Mobiili"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Vanhempi jäsensovellus iOS- ja Android-laitteille, jonka on nyt korvannut B1.church-verkkosovellus."
-  },
   "homepage.products.b1checkin.title": {
     "message": "B1 - Check-In"
   },

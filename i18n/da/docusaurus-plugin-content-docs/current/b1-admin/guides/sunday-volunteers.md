@@ -95,7 +95,7 @@ Lad frivillige selv tilmelde sig positioner i stedet for at vente på administra
 3. For hver position, markér **Tillad selvtilmelding** afkrydsningsboks for at gøre det tilgængeligt for selvbetjening.
 4. Tilføj en **Beskrivelse** til hver position, så frivillige ved hvad rollen indebærer.
 
-Når selvtilmeldingspositioner er oprettet, vises de automatisk på frivilligs tilmeldingssider på [B1.church](../../b1-church/serving/volunteer-signup.md) og [B1 Mobile app](../../b1-mobile/serving/volunteer-signup.md). Medlemmer kan gennemse åbne positioner, se hvor mange pladser der er tilbage, og tilmelde sig med et klik.
+Når selvtilmeldingspositioner er oprettet, vises de automatisk på frivilligs tilmeldingssider på [B1.church](../../b1-church/serving/volunteer-signup.md) og [B1 Mobile app](../../b1-church/serving/volunteer-signup.md). Medlemmer kan gennemse åbne positioner, se hvor mange pladser der er tilbage, og tilmelde sig med et klik.
 
 :::tip
 Mix administratoropgaver og selvtilmelding positioner i samme plan. For eksempel, tildel din lovsangsleder direkte, men lad greeters og kaffeservere selvvælge.
@@ -105,7 +105,7 @@ Mix administratoropgaver og selvtilmelding positioner i samme plan. For eksempel
 
 Tildelte frivillige ser automatisk deres planer og kan svare.
 
-1. Frivillige ser deres planer på [B1.church](../../b1-church/plans/viewing-plans.md) og [B1 Mobile app](../../b1-mobile/serving/viewing-plans.md)
+1. Frivillige ser deres planer på [B1.church](../../b1-church/plans/viewing-plans.md) og [B1 Mobile app](../../b1-church/plans/viewing-plans.md)
 2. De kan acceptere eller afslå opgaver direkte fra begge platforme
 3. De kan indstille blokkeringsdatoer for uger hvor de ikke er disponible
 4. Planer kan printes til øvelser eller sendes backstage
@@ -129,6 +129,6 @@ Dit frivillig administrationssystem er opsat. Hver uge, opret en ny plan, tildel
 - [Opgaver](../serving/tasks.md) — tildel handlingspunkter til personer eller grupper
 - [Automatiseringer](../serving/workflows.md) — automatiser tilbagevendende opgaver
 - [Visning af planer (Web)](../../b1-church/plans/viewing-plans.md) — hvordan frivillige ser planer online
-- [Visning af planer (mobil)](../../b1-mobile/serving/viewing-plans.md) — hvordan frivillige ser planer på mobil
+- [Visning af planer (mobil)](../../b1-church/plans/viewing-plans.md) — hvordan frivillige ser planer på mobil
 - [Frivillig tilmelding (Web)](../../b1-church/serving/volunteer-signup.md) — hvordan medlemmer selv vælger frivilliges positioner
-- [Frivillig tilmelding (mobil)](../../b1-mobile/serving/volunteer-signup.md) — frivillig selvtilmelding på mobil
+- [Frivillig tilmelding (mobil)](../../b1-church/serving/volunteer-signup.md) — frivillig selvtilmelding på mobil

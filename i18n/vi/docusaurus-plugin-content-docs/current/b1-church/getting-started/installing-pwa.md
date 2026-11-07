@@ -98,7 +98,7 @@ PWA yêu cầu kết nối Internet. Khác với một số ứng dụng gốc, 
 
 Ứng dụng gốc **B1 Mobile** trên iOS và Android cũ đã ngừng hỗ trợ và không còn được cập nhật. Từ nay, PWA là cách được hỗ trợ để truy cập cổng thông tin thành viên B1.church trên điện thoại, và PWA bao gồm mọi tính năng dành cho thành viên mà ứng dụng gốc từng có. Nếu bạn đã cài ứng dụng gốc trước đây, hãy chuyển sang PWA khi thuận tiện.
 
-Xem [trang tham khảo B1 Mobile](/docs/b1-mobile/) để biết tài liệu lịch sử về ứng dụng đã ngừng hỗ trợ.
+Xem [trang tham khảo B1 Mobile](/docs/b1-church/index.md) để biết tài liệu lịch sử về ứng dụng đã ngừng hỗ trợ.
 
 ## Bài viết liên quan
 

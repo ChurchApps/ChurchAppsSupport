@@ -84,7 +84,7 @@ description: "在 B1 Admin 中导入您的 YouTube 或 Vimeo 讲道视频，整�
 
 会众可以在任何设备上观看讲道和直播礼拜。
 
-1. 会众可以在 [B1 移动应用](../../b1-mobile/content/sermons.md)和 [B1.church](../../b1-church/content/sermons.md)上观看讲道
+1. 会众可以在 [B1 移动应用](../../b1-church/content/sermons.md)和 [B1.church](../../b1-church/content/sermons.md)上观看讲道
 2. 带聊天功能的直播在两个平台上均可使用
 
 :::info
@@ -103,4 +103,4 @@ description: "在 B1 Admin 中导入您的 YouTube 或 Vimeo 讲道视频，整�
 - [直播](../sermons/live-streaming.md)——配置直播礼拜
 - [讲道（网页版）](../../b1-church/content/sermons.md)——会众的讲道观看体验
 - [直播（网页版）](../../b1-church/content/live-streaming.md)——会众的直播观看体验
-- [讲道（移动版）](../../b1-mobile/content/sermons.md)——移动应用中的讲道
+- [讲道（移动版）](../../b1-church/content/sermons.md)——移动应用中的讲道

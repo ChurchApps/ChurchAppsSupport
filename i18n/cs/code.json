@@ -382,12 +382,6 @@
   "homepage.products.b1website.description": {
     "message": "Veřejné webové stránky kostela a portál pro členy."
   },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 - Mobil"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Starší aplikace pro členy pro iOS a Android, nyní nahrazená webovou aplikací B1.church."
-  },
   "homepage.products.b1checkin.title": {
     "message": "B1 - Registrace"
   },

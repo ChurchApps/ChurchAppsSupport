@@ -71,7 +71,7 @@ Käytä ensin Stripen testitilaa, jos haluat tarkistaa prosessin ilman oikeita v
 Kerro asiasta, jotta jäsenet tietävät voivat antaa lahjoituksia verkossa.
 
 1. Jaa lahjoitusosoite verkkosivuston, sähköposti-uutiskirjeiden, kirkkotiedotteiden ja sosiaalisen median kautta
-2. Jäsenet voivat antaa lahjoituksia myös [B1 Mobile -sovelluksen](../../b1-mobile/giving/index.md) kautta – lahjoitusominaisuus on sovelluksessa valmiina
+2. Jäsenet voivat antaa lahjoituksia myös [B1 Mobile -sovelluksen](../../b1-church/giving/index.md) kautta – lahjoitusominaisuus on sovelluksessa valmiina
 
 :::info
 Kirjautuneet jäsenet voivat tallentaa maksutapoja, asettaa toistuvia lahjoituksia ja tarkastella lahjoitushistoriaansa. Myös anonyymi lahjoittaminen onnistuu – kirjautuminen ei ole pakollista.
@@ -102,4 +102,4 @@ Seurakuntasi vastaanottaa nyt verkkolahjoituksia. Jäsenet voivat antaa lahjoitu
 - [Lahjoitusraportit](../donations/donation-reports.md) – tarkastele lahjoitustrendejä ja summia
 - [Lahjoitustodistukset](../donations/giving-statements.md) – luo vuoden lopun verotodistukset
 - [Lahjoittaminen (web)](../../b1-church/giving/making-donations.md) – jäsenen lahjoituskokemus
-- [Lahjoittaminen (mobiili)](../../b1-mobile/giving/making-donations.md) – lahjoittaminen mobiilisovelluksesta
+- [Lahjoittaminen (mobiili)](../../b1-church/giving/making-donations.md) – lahjoittaminen mobiilisovelluksesta

@@ -16,7 +16,7 @@ B1 Admin automatically checks your plans for problems before Sunday — unfilled
 
 - Create a [service plan](./plans.md) and assign volunteers to positions
 - Add [service times](./plans.md) to the plan so conflict detection can check for overlaps
-- Make sure volunteers have the B1 Mobile app installed to receive push notifications
+- Make sure volunteers have the [B1 App installed](../../b1-church/getting-started/installing-pwa.md) to receive push notifications
 
 </div>
 
@@ -31,7 +31,7 @@ If a position requires more people than are currently assigned, the validation p
 If a volunteer is assigned to two positions that overlap in time within the same plan, the validation panel flags the conflict — for example, *"Jane Smith: time conflict between Worship Leader and Children's Check-in during Sunday Service."* This catches double-bookings before they become a Sunday morning problem.
 
 ### Blockout Dates
-Volunteers can set dates they are unavailable in B1 Mobile. If someone is assigned to a plan that falls within one of their blockout dates, the validation panel surfaces the conflict automatically so you can find a replacement.
+Volunteers can set dates they are unavailable in the B1 App. If someone is assigned to a plan that falls within one of their blockout dates, the validation panel surfaces the conflict automatically so you can find a replacement.
 
 ### Cross-Plan Conflicts
 The validation also checks across all your plans at once. If the same volunteer is assigned in two different plans that overlap in time — for example, a 9am service and a 10am service that both run until 10:30am — B1 Admin will flag that person as double-booked across plans.
@@ -62,7 +62,7 @@ If the plan's settings name a [confirmation workflow](./workflows.md#serving-ass
 - The plan must be published (not penciled in) and the workflow must be active. Otherwise the panel shows *"Requests could not be issued. Check that the selected workflow is active and the plan is published, then try again."*
 
 :::warning
-Volunteers must have the B1.church mobile experience installed (PWA on their home screen, or the deprecated B1 Mobile native app for users who still have it) with notifications enabled to receive push notifications. See [Installing as an App (PWA)](/docs/b1-church/getting-started/installing-pwa) for setup instructions.
+Volunteers must have the B1 App installed on their home screen with notifications enabled to receive push notifications. See [Installing as an App (PWA)](../../b1-church/getting-started/installing-pwa.md) for setup instructions.
 :::
 
 ## Related Articles

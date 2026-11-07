@@ -77,7 +77,7 @@ Generați extrasele la începutul lunii ianuarie, cât timp înregistrările sun
 Asigurați-vă că extrasele ajung la donatorii dvs.
 
 1. Imprimați și trimiteți extrasele prin poștă sau trimiteți prin e-mail fișierele CSV individuale către donatori
-2. Membrii își pot vedea și ei istoricul donațiilor și pot imprima extrasele din [B1.church](../../b1-church/giving/donation-history.md) și din [aplicația B1 Mobile](../../b1-mobile/giving/donation-history.md)
+2. Membrii își pot vedea și ei istoricul donațiilor și pot imprima extrasele din [B1.church](../../b1-church/giving/donation-history.md) și din [aplicația B1 Mobile](../../b1-church/giving/donation-history.md)
 
 ## Ați terminat!
 

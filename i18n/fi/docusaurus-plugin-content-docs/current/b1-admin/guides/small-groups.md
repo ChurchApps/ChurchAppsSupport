@@ -79,7 +79,7 @@ Jäsenet voivat löytää ryhmiä, liittyä niihin ja osallistua puhelimellaan t
 
 1. Jäsenet selaavat ja liittyvät ryhmiin sivustolla [B1.church](../../b1-church/groups/browsing-groups.md)
 2. Ryhmän jäsenet voivat tarkastella ryhmän tietoja ja kalentereita sekä kirjoittaa [keskusteluihin](../../b1-church/groups/conversations.md)
-3. Kaikki ryhmäominaisuudet ovat saatavilla myös [B1 Mobile -sovelluksessa](../../b1-mobile/groups/index.md)
+3. Kaikki ryhmäominaisuudet ovat saatavilla myös [B1 Mobile -sovelluksessa](../../b1-church/groups/index.md)
 
 :::info
 Jäsenet näkevät ryhmänsä, tulevat tapahtumat ja ryhmäkeskustelut sekä verkossa että mobiilisovelluksessa — kaikki pysyy synkronoituna.
@@ -98,4 +98,4 @@ Pienryhmäsi on määritetty ja yhdistetty. Jäsenet voivat löytää ryhmiä, t
 - [Kuratoitu kalenteri](../calendars/curated-calendar.md) — rakenna yhtenäinen seurakunnan kalenteri
 - [Ryhmien selaaminen (verkko)](../../b1-church/groups/browsing-groups.md) — miten jäsenet löytävät ryhmiä
 - [Ryhmäkeskustelut (verkko)](../../b1-church/groups/conversations.md) — ryhmäkeskustelut
-- [Ryhmät (mobiili)](../../b1-mobile/groups/index.md) — ryhmät mobiilisovelluksessa
+- [Ryhmät (mobiili)](../../b1-church/groups/index.md) — ryhmät mobiilisovelluksessa

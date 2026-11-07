@@ -107,7 +107,7 @@ Voit ottaa ilmoittautumisen käyttöön mille tahansa kalenteritapahtumalle, jot
 
 Maksullisten tapahtumien osalta sama asetussivu mahdollistaa hinnoiteltujen **Osallistujatyyppien**, valinnaisten **Valintojen** (lisäpalvelut) ja **Alennuskoodien** määrittämisen. Maksut kerätään seurakuntasi lahjoituspalvelun kautta. Katso koko ohje sivulta [Maksulliset ilmoittautumiset](./paid-registrations.md).
 
-Kun ilmoittautuminen on otettu käyttöön, jäsenet näkevät painikkeen **Ilmoittaudu tähän tapahtumaan**, kun he katsovat tapahtumaa [B1-verkkosivustolla](../../b1-church/events/registering.md) tai [B1-mobiilisovelluksessa](../../b1-mobile/events/registering.md). Jos liität lomakkeen, ilmoittautujat näkevät ilmoittautumisen aikana **Kysymykset**-vaiheen, ja heidän vastauksensa tallennetaan ilmoittautumisen yhteydessä.
+Kun ilmoittautuminen on otettu käyttöön, jäsenet näkevät painikkeen **Ilmoittaudu tähän tapahtumaan**, kun he katsovat tapahtumaa [B1-verkkosivustolla](../../b1-church/events/registering.md) tai [B1-mobiilisovelluksessa](../../b1-church/events/registering.md). Jos liität lomakkeen, ilmoittautujat näkevät ilmoittautumisen aikana **Kysymykset**-vaiheen, ja heidän vastauksensa tallennetaan ilmoittautumisen yhteydessä.
 
 :::info
 Ilmoittautumiskysymykset toimivat vain lomakkeilla, joita **ei** ole merkitty rajoitetuiksi. Rajoitettu lomake ohitetaan automaattisesti ilmoittautumisen aikana eikä sitä näytetä, joten käytä rajoittamatonta lomaketta, kun liität kysymyksiä tapahtumaan.

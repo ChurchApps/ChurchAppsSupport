@@ -77,7 +77,7 @@ Izpiske ustvarite v začetku januarja, dokler so podatki sveži. Tako boste imel
 Izpiske dostavite v roke svojih darovalcev.
 
 1. Izpiske natisnite in pošljite po pošti ali posamezne datoteke CSV pošljite darovalcem po e-pošti
-2. Člani lahko svojo zgodovino darov in izpiske pregledajo ter natisnejo tudi na [B1.church](../../b1-church/giving/donation-history.md) in v [aplikaciji B1 Mobile](../../b1-mobile/giving/donation-history.md)
+2. Člani lahko svojo zgodovino darov in izpiske pregledajo ter natisnejo tudi na [B1.church](../../b1-church/giving/donation-history.md) in v [aplikaciji B1 Mobile](../../b1-church/giving/donation-history.md)
 
 ## Opravljeno!
 

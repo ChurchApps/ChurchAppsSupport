@@ -79,7 +79,7 @@ Leden kunnen groepen van hun telefoon of computer ontdekken, toetreden en deelne
 
 1. Leden bladeren en treden groepen toe op [B1.church](../../b1-church/groups/browsing-groups.md)
 2. Groepsleden kunnen details, agenda's bekijken en [gesprekken](../../b1-church/groups/conversations.md) plaatsen
-3. Alle groepsfuncties zijn ook beschikbaar op de [B1 Mobiele app](../../b1-mobile/groups/index.md)
+3. Alle groepsfuncties zijn ook beschikbaar op de [B1 Mobiele app](../../b1-church/groups/index.md)
 
 :::info
 Leden zien hun groepen, aanstaande events en groepsgesprekken op zowel web als mobiel -- alles blijft in sync.
@@ -98,4 +98,4 @@ Uw kleine groepen zijn ingesteld en verbonden. Leden kunnen groepen ontdekken, e
 - [Gekureerde agenda](../calendars/curated-calendar.md) -- een geünificeerde kerkagenda bouwen
 - [Groepen bladeren (web)](../../b1-church/groups/browsing-groups.md) -- hoe leden groepen vinden
 - [Groepsgesprekken (web)](../../b1-church/groups/conversations.md) -- groepsdiscussies
-- [Groepen (mobiel)](../../b1-mobile/groups/index.md) -- groepen op de mobiele app
+- [Groepen (mobiel)](../../b1-church/groups/index.md) -- groepen op de mobiele app

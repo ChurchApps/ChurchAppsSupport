@@ -98,7 +98,7 @@ A PWA internetkapcsolatot igényel. Egyes natív alkalmazásokkal ellentétben n
 
 Az iOS-en és Androidon használt, natív **B1 Mobile** alkalmazás elavultnak minősül, és már nem frissül. A PWA a támogatott mód arra, hogy telefonon elérd a B1.church tagi portált, és lefedi mindazokat a tagi funkciókat, amelyeket a natív alkalmazás nyújtott. Ha korábban a natív alkalmazást telepítetted, válts a PWA-ra, amikor neked megfelel.
 
-Az elavult alkalmazás történeti dokumentációjáért lásd a [B1 Mobile referenciaoldalt](/docs/b1-mobile/).
+Az elavult alkalmazás történeti dokumentációjáért lásd a [B1 Mobile referenciaoldalt](/docs/b1-church/index.md).
 
 ## Kapcsolódó cikkek
 

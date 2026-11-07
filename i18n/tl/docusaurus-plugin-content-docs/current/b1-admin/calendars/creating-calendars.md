@@ -107,7 +107,7 @@ Maaari mong i-enable ang registration para sa anumang event sa calendar para mak
 
 Para sa mga bayad na event, sa parehong settings page maaari mong tukuyin ang mga **Attendee Types** na may presyo, opsyonal na **Selections** (mga add-on), at **Discount Codes**, kung saan kokolektahin ang bayad sa pamamagitan ng giving provider ng iyong simbahan. Tingnan ang [Paid Registrations](./paid-registrations.md) para sa kumpletong gabay.
 
-Kapag na-enable na ang registration, makikita ng mga miyembro ang butones na **Register for this Event** kapag tiningnan nila ang event sa [B1 website](../../b1-church/events/registering.md) o [B1 Mobile app](../../b1-mobile/events/registering.md). Kung may nakalakip kang form, makikita ng mga magpaparehistro ang hakbang na **Questions** habang nagpaparehistro, at ise-save ang kanilang mga sagot kasama ng kanilang registration.
+Kapag na-enable na ang registration, makikita ng mga miyembro ang butones na **Register for this Event** kapag tiningnan nila ang event sa [B1 website](../../b1-church/events/registering.md) o [B1 Mobile app](../../b1-church/events/registering.md). Kung may nakalakip kang form, makikita ng mga magpaparehistro ang hakbang na **Questions** habang nagpaparehistro, at ise-save ang kanilang mga sagot kasama ng kanilang registration.
 
 :::info
 Ang Registration Questions ay gumagana lang sa mga form na **hindi** minarkahang Restricted. Awtomatikong nilalaktawan ang restricted na form habang nagpaparehistro sa halip na ipakita, kaya gumamit ng unrestricted na form kapag maglalakip ng mga tanong sa isang event.

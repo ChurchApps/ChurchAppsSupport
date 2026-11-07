@@ -95,10 +95,6 @@
     "message": "Вміст",
     "description": "The label for category 'Content' in sidebar 'docsSidebar'"
   },
-  "sidebar.docsSidebar.category.B1 - Mobile": {
-    "message": "B1 - Мобільна",
-    "description": "The label for category 'B1 - Mobile' in sidebar 'docsSidebar'"
-  },
   "sidebar.docsSidebar.category.mobile-getting-started": {
     "message": "Початок",
     "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
@@ -246,10 +242,6 @@
   "sidebar.docsSidebar.category.church-serving": {
     "message": "Служіння",
     "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
-  },
-  "sidebar.docsSidebar.category.B1 - Mobile (Deprecated)": {
-    "message": "B1 - Mobile (застарілий)",
-    "description": "The label for category 'B1 - Mobile (Deprecated)' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.mobile-events": {
     "message": "Події",

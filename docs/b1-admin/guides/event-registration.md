@@ -12,7 +12,7 @@ Create an event registration form, collect attendee information and optional pay
 </div>
 
 :::info
-**Two ways to handle event registration:** This guide covers **forms-based registration**, which gives you full control over custom fields and payment collection. For simpler events where you just need to track who is coming, use **native event registration** built into the calendar -- see [Creating Calendars](../calendars/creating-calendars.md#enabling-event-registration) for setup instructions. Native registration lets members sign up directly from the [B1 website](../../b1-church/events/registering.md) and [mobile app](../../b1-mobile/events/registering.md) with capacity tracking, date windows, and email confirmations.
+**Two ways to handle event registration:** This guide covers **forms-based registration**, which gives you full control over custom fields and payment collection. For simpler events where you just need to track who is coming, use **native event registration** built into the calendar -- see [Creating Calendars](../calendars/creating-calendars.md#enabling-event-registration) for setup instructions. Native registration lets members sign up directly from [B1.church or the B1 App](../../b1-church/events/registering.md) with capacity tracking, date windows, and email confirmations.
 :::
 
 <div class="prereqs">

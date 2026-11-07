@@ -94,12 +94,6 @@ The app icon will show a **notification badge** (a small number badge) when you 
 The PWA requires an internet connection. Unlike some native apps, it does not cache all content for offline use.
 :::
 
-## What About the Old B1 Mobile App?
-
-The legacy native **B1 Mobile** app on iOS and Android has been deprecated and is no longer being updated. The PWA is the supported way to access the B1.church member portal on a phone going forward, and it covers every member-facing feature the native app offered. If you previously installed the native app, switch to the PWA at your convenience.
-
-See the [B1 Mobile reference page](/docs/b1-mobile/) for historical documentation on the deprecated app.
-
 ## Related Articles
 
 - [Logging In](./logging-in.md) — How to sign in to your B1.church account

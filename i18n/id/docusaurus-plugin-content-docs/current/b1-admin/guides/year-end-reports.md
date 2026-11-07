@@ -77,7 +77,7 @@ Buat laporan pada awal Januari selagi catatan masih segar. Ini memberi Anda wakt
 Sampaikan laporan ke tangan donatur Anda.
 
 1. Cetak dan kirim laporan melalui pos, atau kirim file CSV individual melalui email kepada donatur
-2. Anggota juga dapat melihat riwayat pemberian mereka sendiri dan mencetak laporan dari [B1.church](../../b1-church/giving/donation-history.md) dan [Aplikasi B1 Mobile](../../b1-mobile/giving/donation-history.md)
+2. Anggota juga dapat melihat riwayat pemberian mereka sendiri dan mencetak laporan dari [B1.church](../../b1-church/giving/donation-history.md) dan [Aplikasi B1 Mobile](../../b1-church/giving/donation-history.md)
 
 ## Selesai!
 

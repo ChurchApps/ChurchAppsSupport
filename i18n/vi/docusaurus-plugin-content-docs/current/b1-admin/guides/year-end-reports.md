@@ -77,7 +77,7 @@ Hãy tạo giấy xác nhận vào đầu tháng 1 khi dữ liệu còn mới. �
 Đưa giấy xác nhận đến tay nhà tài trợ.
 
 1. In và gửi giấy xác nhận qua đường bưu điện, hoặc gửi email các tệp CSV riêng lẻ cho nhà tài trợ
-2. Thành viên cũng có thể xem lịch sử quyên góp của mình và in giấy xác nhận từ [B1.church](../../b1-church/giving/donation-history.md) và [ứng dụng B1 Mobile](../../b1-mobile/giving/donation-history.md)
+2. Thành viên cũng có thể xem lịch sử quyên góp của mình và in giấy xác nhận từ [B1.church](../../b1-church/giving/donation-history.md) và [ứng dụng B1 Mobile](../../b1-church/giving/donation-history.md)
 
 ## Bạn đã hoàn tất!
 

@@ -51,7 +51,7 @@ Wanneer je bent ingelogd, geeft het lidmaatschapsportaal je toegang tot:
 B1.church werkt in elke mobiele browser, maar je kunt op twee manieren een meer app-achtige ervaring krijgen:
 
 - **Installeer als PWA** -- Voeg je kerk lidmaatschapsportaal direct vanuit je browser aan je startscherm toe. Geen app store vereist. Zie [Installeren als App (PWA)](./installing-pwa.md) voor instructies.
-- **Download B1 Mobile** -- Installeer de native app uit de App Store of Google Play voor de volledige mobiele ervaring, inclusief push-meldingen. Zie [B1 Mobile](/docs/b1-mobile/).
+- **Download B1 Mobile** -- Installeer de native app uit de App Store of Google Play voor de volledige mobiele ervaring, inclusief push-meldingen. Zie [B1 Mobile](/docs/b1-church/index.md).
 
 ## Volgende stappen
 

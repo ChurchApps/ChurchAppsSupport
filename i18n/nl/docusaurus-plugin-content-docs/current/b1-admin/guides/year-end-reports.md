@@ -77,7 +77,7 @@ Genereer verklaringen in begin januari terwijl gegevens vers zijn. Dit geeft u t
 Zorg dat de verklaringen uw donoren bereiken.
 
 1. Druk en verzend verklaringen per post, of e-mail individuele CSV's naar donoren
-2. Leden kunnen ook hun eigen gifthistorie bekijken en verklaringen afdrukken van [B1.church](../../b1-church/giving/donation-history.md) en de [B1 Mobiele app](../../b1-mobile/giving/donation-history.md)
+2. Leden kunnen ook hun eigen gifthistorie bekijken en verklaringen afdrukken van [B1.church](../../b1-church/giving/donation-history.md) en de [B1 Mobiele app](../../b1-church/giving/donation-history.md)
 
 ## U bent klaar!
 

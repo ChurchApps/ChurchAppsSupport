@@ -84,7 +84,7 @@ description: "استورد عظاتك من YouTube أو Vimeo ونظّمها ف�
 
 يمكن للأعضاء الوصول إلى العظات والخدمات المباشرة من أي جهاز.
 
-1. يمكن للأعضاء مشاهدة العظات في [تطبيق B1 Mobile](../../b1-mobile/content/sermons.md) وعلى [B1.church](../../b1-church/content/sermons.md)
+1. يمكن للأعضاء مشاهدة العظات في [تطبيق B1 Mobile](../../b1-church/content/sermons.md) وعلى [B1.church](../../b1-church/content/sermons.md)
 2. يعمل البث المباشر مع الدردشة على المنصتين معاً
 
 :::info
@@ -103,4 +103,4 @@ description: "استورد عظاتك من YouTube أو Vimeo ونظّمها ف�
 - [البث المباشر](../sermons/live-streaming.md) — إعداد الخدمات المباشرة
 - [العظات (الويب)](../../b1-church/content/sermons.md) — تجربة مشاهدة العظات للأعضاء
 - [البث المباشر (الويب)](../../b1-church/content/live-streaming.md) — تجربة البث المباشر للأعضاء
-- [العظات (الجوال)](../../b1-mobile/content/sermons.md) — العظات في تطبيق الجوال
+- [العظات (الجوال)](../../b1-church/content/sermons.md) — العظات في تطبيق الجوال

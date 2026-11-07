@@ -63,4 +63,4 @@ Zorg dat je goedkeurders daadwerkelijk lid zijn van de ingestelde groep — alle
 
 - [Je profiel beheren](./managing-profile.md) — Bewerk je eigen accountinstellingen
 - [Verzoeken tot accountverwijdering beoordelen](./account-deletion.md) — Dezelfde goedkeuringsgroep-beoordelingsstroom voor accountverwijdering
-- [B1 Mobile-instellingen](../../b1-mobile/profile/editing-profile.md) — Wat leden zien wanneer ze een profielwijziging indienen
+- [B1 Mobile-instellingen](../../b1-church/getting-started/editing-your-profile.md) — Wat leden zien wanneer ze een profielwijziging indienen

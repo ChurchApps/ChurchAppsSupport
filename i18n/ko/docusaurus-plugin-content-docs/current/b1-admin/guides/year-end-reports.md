@@ -77,7 +77,7 @@ description: "B1 Admin에서 한 해의 헌금 기록을 마무리하고, 기금
 명세서를 기부자의 손에 넘깁니다.
 
 1. 명세서를 인쇄하고 우편으로 보내거나, 개별 CSV를 기부자에게 이메일로 보냅니다.
-2. 멤버는 [B1.church](../../b1-church/giving/donation-history.md) 및 [B1 모바일 앱](../../b1-mobile/giving/donation-history.md)에서 자신의 기부 기록을 보고 명세서를 인쇄할 수 있습니다.
+2. 멤버는 [B1.church](../../b1-church/giving/donation-history.md) 및 [B1 모바일 앱](../../b1-church/giving/donation-history.md)에서 자신의 기부 기록을 보고 명세서를 인쇄할 수 있습니다.
 
 ## 완료했습니다!
 

@@ -84,7 +84,7 @@ Følg veiledningen [Managing Pages](../website/managing-pages.md) for å:
 
 Medlemmer kan få tilgang til preker og direktesendte gudstjenester fra alle enheter.
 
-1. Medlemmer kan se preker i [B1 Mobile-appen](../../b1-mobile/content/sermons.md) og på [B1.church](../../b1-church/content/sermons.md)
+1. Medlemmer kan se preker i [B1 Mobile-appen](../../b1-church/content/sermons.md) og på [B1.church](../../b1-church/content/sermons.md)
 2. Direktesending med chat fungerer på begge plattformene
 
 :::info
@@ -103,4 +103,4 @@ Preke-arkivet ditt er nå på nett, og direktesendingen din er konfigurert. Medl
 - [Live Streaming](../sermons/live-streaming.md) — konfigurer direktesendte gudstjenester
 - [Sermons (Web)](../../b1-church/content/sermons.md) — medlemmenes opplevelse av preker på nett
 - [Live Streaming (Web)](../../b1-church/content/live-streaming.md) — medlemmenes opplevelse av direktesending
-- [Sermons (Mobile)](../../b1-mobile/content/sermons.md) — preker i mobilappen
+- [Sermons (Mobile)](../../b1-church/content/sermons.md) — preker i mobilappen

@@ -71,7 +71,7 @@ Gebruik Stripe's testmodus eerst als u wilt verifiëren zonder werkelijke kosten
 Verspreid het woord zodat leden weten dat zij online kunnen geven.
 
 1. Deel de geef-URL via uw website, e-mailnieuwsbrieven, bulletins en social media
-2. Leden kunnen ook geven via de [B1 Mobiele app](../../b1-mobile/giving/index.md) -- de geeffunctie is ingebouwd
+2. Leden kunnen ook geven via de [B1 Mobiele app](../../b1-church/giving/index.md) -- de geeffunctie is ingebouwd
 
 :::info
 Leden die inloggen, kunnen betaalmethoden opslaan, terugkerende donaties instellen en hun gifthistorie bekijken. Anoniem geven werkt ook -- geen inloggegevens nodig.
@@ -102,4 +102,4 @@ Uw kerk accepteert nu online donaties. Leden kunnen geven via uw website, de B1 
 - [Donatie-rapporten](../donations/donation-reports.md) -- giftentrends en totalen bekijken
 - [Giftverklaringen](../donations/giving-statements.md) -- jaar-eindbelastingverklaringen genereren
 - [Donaties doen (web)](../../b1-church/giving/making-donations.md) -- de donatiegeving voor leden
-- [Donaties doen (mobiel)](../../b1-mobile/giving/making-donations.md) -- geven van de mobiele app
+- [Donaties doen (mobiel)](../../b1-church/giving/making-donations.md) -- geven van de mobiele app

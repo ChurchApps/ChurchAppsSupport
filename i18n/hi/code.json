@@ -382,12 +382,6 @@
   "homepage.products.b1website.description": {
     "message": "सार्वजनिक चर्च वेबसाइट और सदस्य पोर्टल।"
   },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 मोबाइल"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "iOS और Android के लिए पुराना सदस्य ऐप, जिसे अब B1.church वेब ऐप से बदल दिया गया है।"
-  },
   "homepage.products.b1checkin.title": {
     "message": "B1 चेक-इन"
   },

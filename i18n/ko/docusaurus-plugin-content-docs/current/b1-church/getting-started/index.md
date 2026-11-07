@@ -50,7 +50,7 @@ B1.church는 교회의 온라인 공간입니다. 성도들과 계속 연결되�
 B1.church는 모든 모바일 브라우저에서 작동합니다. 더 앱과 같은 경험을 원한다면 교회의 회원 포털을 **PWA(Progressive Web App)**로 설치하세요. `https://yourchurchname.b1.church/mobile/install`을 방문하면 기기에 맞는 안내를 따라 할 수 있으며, Safari나 Chrome에서 직접 홈 화면에 추가할 수도 있습니다. 앱 스토어가 필요 없습니다. 자세한 내용은 [앱으로 설치하기(PWA)](./installing-pwa.md)를 참조하세요.
 
 :::info
-기존 네이티브 B1 Mobile 앱은 지원이 중단되었습니다. 앞으로 휴대폰에서 B1.church를 이용하는 공식 방법은 PWA입니다. 과거 문서는 [B1 Mobile 참조 페이지](/docs/b1-mobile/)를 참조하세요.
+기존 네이티브 B1 Mobile 앱은 지원이 중단되었습니다. 앞으로 휴대폰에서 B1.church를 이용하는 공식 방법은 PWA입니다. 과거 문서는 [B1 Mobile 참조 페이지](/docs/b1-church/index.md)를 참조하세요.
 :::
 
 ## 다음 단계

@@ -54,11 +54,11 @@ kun frivillige som endnu ikke er underrettet vil være inkluderet. Hvis du tilf�
 :::
 
 :::warning
-frivillige skal have B1 Mobile app installeret og meddelelser aktiveret for at modtage push meddelelser. Se [meddelelser vejledning](/docs/b1-mobile/community/notifications) til hvordan frivillige kan aktivere dette på deres enhed.
+frivillige skal have B1 Mobile app installeret og meddelelser aktiveret for at modtage push meddelelser. Se [meddelelser vejledning](/docs/b1-church/getting-started/notification-preferences.md) til hvordan frivillige kan aktivere dette på deres enhed.
 :::
 
 ## Relaterede artikler
 
 - [tjenesteplaner](./plans.md)
 - [automatiseringer](./workflows.md)
-- [B1 Mobile meddelelser](/docs/b1-mobile/community/notifications)
+- [B1 Mobile meddelelser](/docs/b1-church/getting-started/notification-preferences.md)

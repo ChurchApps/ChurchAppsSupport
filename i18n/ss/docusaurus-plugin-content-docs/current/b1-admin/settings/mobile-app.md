@@ -60,7 +60,7 @@ Gcina inani letema-tab liphatseka. Emathathu kuya kuma-tab lasihlanu asebenta ka
 
 ## Lapho Lama-Tab Abonakala Khona
 
-Ema-tab lawulungisa lapha aboniswa ku- **B1.church PWA** leyifakwa emalunga akho kusuka kunoma ngukuphi likhasi ku-`https://yourchurchname.b1.church`. Tinshintjo lotenta kuleli khasi tiyabonakala ngesikhatsi silunga selunga sivula i-app kabusha. (Ema-tab futsi aboniswa yi- [app yakadzeni ye-B1 Mobile](/docs/b1-mobile/) kunoma ngubani lomalunga losasebentisa yona, kodvwa loyo-app seyisayilelwe ekupheleni futsi ayisabuyekeziwa.)
+Ema-tab lawulungisa lapha aboniswa ku- **B1.church PWA** leyifakwa emalunga akho kusuka kunoma ngukuphi likhasi ku-`https://yourchurchname.b1.church`. Tinshintjo lotenta kuleli khasi tiyabonakala ngesikhatsi silunga selunga sivula i-app kabusha. (Ema-tab futsi aboniswa yi- [app yakadzeni ye-B1 Mobile](/docs/b1-church/index.md) kunoma ngubani lomalunga losasebentisa yona, kodvwa loyo-app seyisayilelwe ekupheleni futsi ayisabuyekeziwa.)
 
 ## Tinyatselo Letilandzelako
 

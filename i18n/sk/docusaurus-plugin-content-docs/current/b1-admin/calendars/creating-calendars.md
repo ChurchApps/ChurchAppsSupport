@@ -107,7 +107,7 @@ Registráciu môžete zapnúť pre ľubovoľnú udalosť v kalendári, aby sa č
 
 Pri platených udalostiach môžete na tej istej stránke nastavení definovať spoplatnené **Typy účastníkov**, voliteľné **Výbery** (doplnkové služby) a **Zľavové kódy**, pričom platby sa prijímajú cez poskytovateľa darov vašej cirkvi. Úplný postup nájdete v [Platené registrácie](./paid-registrations.md).
 
-Keď je registrácia zapnutá, členovia uvidia tlačidlo **Registrovať sa na túto udalosť**, keď si udalosť zobrazia na [webe B1](../../b1-church/events/registering.md) alebo v [mobilnej aplikácii B1](../../b1-mobile/events/registering.md). Ak ste pripojili formulár, registrovaní uvidia počas registrácie krok **Otázky** a ich odpovede sa uložia spolu s ich registráciou.
+Keď je registrácia zapnutá, členovia uvidia tlačidlo **Registrovať sa na túto udalosť**, keď si udalosť zobrazia na [webe B1](../../b1-church/events/registering.md) alebo v [mobilnej aplikácii B1](../../b1-church/events/registering.md). Ak ste pripojili formulár, registrovaní uvidia počas registrácie krok **Otázky** a ich odpovede sa uložia spolu s ich registráciou.
 
 :::info
 Otázky k registrácii fungujú len s formulármi, ktoré **nie sú** označené ako Obmedzené. Obmedzený formulár sa pri registrácii automaticky preskočí a nezobrazí sa, preto pri pripájaní otázok k udalosti používajte neobmedzený formulár.

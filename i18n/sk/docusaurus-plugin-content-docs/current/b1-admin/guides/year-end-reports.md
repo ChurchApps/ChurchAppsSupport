@@ -77,7 +77,7 @@ Výpisy generujte začiatkom januára, kým sú záznamy čerstvé. Získate tak
 Dostaňte výpisy k svojim darcom.
 
 1. Vytlačte a pošlite výpisy poštou alebo posielajte jednotlivé súbory CSV darcom e-mailom
-2. Členovia si môžu pozrieť vlastnú históriu darov a vytlačiť výpisy aj na [B1.church](../../b1-church/giving/donation-history.md) a v aplikácii [B1 Mobile](../../b1-mobile/giving/donation-history.md)
+2. Členovia si môžu pozrieť vlastnú históriu darov a vytlačiť výpisy aj na [B1.church](../../b1-church/giving/donation-history.md) a v aplikácii [B1 Mobile](../../b1-church/giving/donation-history.md)
 
 ## Hotovo!
 

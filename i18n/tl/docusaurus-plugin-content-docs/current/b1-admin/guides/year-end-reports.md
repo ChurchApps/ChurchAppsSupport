@@ -77,7 +77,7 @@ Lumikha ng mga statement sa simula ng Enero habang ang mga record ay sariwa. Ito
 Ihatid ang mga statement sa iyong mga donor.
 
 1. I-print at i-mail ang mga statement, o i-email ang mga indibidwal na CSV sa mga donor
-2. Ang mga miyembro ay maaari ding tingnan ang kanilang sariling kasaysayan ng pagbibigay at i-print ang mga statement mula sa [B1.church](../../b1-church/giving/donation-history.md) at ang [B1 Mobile app](../../b1-mobile/giving/donation-history.md)
+2. Ang mga miyembro ay maaari ding tingnan ang kanilang sariling kasaysayan ng pagbibigay at i-print ang mga statement mula sa [B1.church](../../b1-church/giving/donation-history.md) at ang [B1 Mobile app](../../b1-church/giving/donation-history.md)
 
 ## Tapos Ka Na!
 

@@ -382,12 +382,6 @@
   "homepage.products.b1website.description": {
     "message": "Nyilvános egyházi weboldal és tag portál."
   },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Mobil"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Régi tagi alkalmazás iOS-re és Androidra, amelyet mostantól a B1.church webalkalmazás vált fel."
-  },
   "homepage.products.b1checkin.title": {
     "message": "B1 Bejelentkezés"
   },

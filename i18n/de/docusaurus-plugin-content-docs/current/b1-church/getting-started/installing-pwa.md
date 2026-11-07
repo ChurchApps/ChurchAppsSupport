@@ -98,7 +98,7 @@ Die PWA benötigt eine Internetverbindung. Anders als manche native Apps speiche
 
 Die bisherige native App **B1 Mobile** für iOS und Android wurde eingestellt und wird nicht mehr aktualisiert. Die PWA ist künftig der unterstützte Zugang zum Mitgliederportal von B1.church auf dem Telefon. Sie deckt alle mitgliederseitigen Funktionen ab, die die native App bot. Wenn Sie die native App früher installiert haben, wechseln Sie einfach dann zur PWA, wenn es Ihnen passt.
 
-Historische Informationen zur eingestellten App finden Sie auf der [Referenzseite zu B1 Mobile](/docs/b1-mobile/).
+Historische Informationen zur eingestellten App finden Sie auf der [Referenzseite zu B1 Mobile](/docs/b1-church/index.md).
 
 ## Verwandte Artikel
 

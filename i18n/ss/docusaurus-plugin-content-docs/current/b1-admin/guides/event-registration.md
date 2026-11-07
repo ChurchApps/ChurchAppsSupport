@@ -12,7 +12,7 @@ Yakha ifomu lekubhalisa kwemcimbi, buthelela imininingwane yalabo labatawuba kho
 </div>
 
 :::info
-**Tindlela letimbili tekuphatsa kubhaliswa kwemcimbi:** Lomhlahlandlela ukhulumela **kubhalisa lokusekelwe emafomini**, lokukupha kulawula lokugcwele emabaleni lakhetsekile netinkhokhelo. Kwemicimbi lelula lapho udzinga nje kulandzelela kutsi ngubani lotawuba khona, sebentisa **kubhalisa lokungumdabu kwemcimbi** lokwakhelwe ekhalendeni — buka [Kudala Emakhalenda](../calendars/creating-calendars.md#enabling-event-registration) kutfola tinyatselo tekuhlela. Kubhalisa lokungumdabu kuvumela emalunga kutsi abhalise ngco kusuka [ku-website ye-B1](../../b1-church/events/registering.md) na [ku-app yeselula](../../b1-mobile/events/registering.md) kanye nekulandzelela linani, tikhatsi telusuku, kanye netincomo te-imeyili.
+**Tindlela letimbili tekuphatsa kubhaliswa kwemcimbi:** Lomhlahlandlela ukhulumela **kubhalisa lokusekelwe emafomini**, lokukupha kulawula lokugcwele emabaleni lakhetsekile netinkhokhelo. Kwemicimbi lelula lapho udzinga nje kulandzelela kutsi ngubani lotawuba khona, sebentisa **kubhalisa lokungumdabu kwemcimbi** lokwakhelwe ekhalendeni — buka [Kudala Emakhalenda](../calendars/creating-calendars.md#enabling-event-registration) kutfola tinyatselo tekuhlela. Kubhalisa lokungumdabu kuvumela emalunga kutsi abhalise ngco kusuka [ku-website ye-B1](../../b1-church/events/registering.md) na [ku-app yeselula](../../b1-church/events/registering.md) kanye nekulandzelela linani, tikhatsi telusuku, kanye netincomo te-imeyili.
 :::
 
 <div class="prereqs">

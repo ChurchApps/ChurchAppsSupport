@@ -71,7 +71,7 @@ Ak chcete overiť funkčnosť bez skutočných platieb, najprv použite testovac
 Dajte vedieť, aby členovia vedeli, že môžu darovať online.
 
 1. Zdieľajte adresu URL pre darovanie na svojej webovej stránke, v e-mailových newsletteroch, vo farských ohlasoch a na sociálnych sieťach
-2. Členovia môžu darovať aj cez [aplikáciu B1 Mobile](../../b1-mobile/giving/index.md) — funkcia darovania je v nej zabudovaná
+2. Členovia môžu darovať aj cez [aplikáciu B1 Mobile](../../b1-church/giving/index.md) — funkcia darovania je v nej zabudovaná
 
 :::info
 Prihlásení členovia si môžu uložiť platobné metódy, nastaviť opakované dary a zobraziť si históriu darov. Funguje aj anonymné darovanie — prihlásenie nie je potrebné.
@@ -102,4 +102,4 @@ Váš kostol teraz prijíma online dary. Členovia môžu darovať cez vašu web
 - [Prehľady darov](../donations/donation-reports.md) — zobrazenie trendov a súčtov darovania
 - [Výpisy darov](../donations/giving-statements.md) — generovanie daňových výpisov na konci roka
 - [Darovanie (web)](../../b1-church/giving/making-donations.md) — skúsenosť členov s darovaním
-- [Darovanie (mobil)](../../b1-mobile/giving/making-donations.md) — darovanie z mobilnej aplikácie
+- [Darovanie (mobil)](../../b1-church/giving/making-donations.md) — darovanie z mobilnej aplikácie

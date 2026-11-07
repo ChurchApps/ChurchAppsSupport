@@ -79,7 +79,7 @@ Anggota dapat menemukan, bergabung, dan berpartisipasi dalam kelompok dari ponse
 
 1. Anggota menelusuri dan bergabung dengan kelompok di [B1.church](../../b1-church/groups/browsing-groups.md)
 2. Anggota kelompok dapat melihat detail, kalender, dan memposting di [percakapan](../../b1-church/groups/conversations.md)
-3. Semua fitur kelompok juga tersedia di [aplikasi B1 Mobile](../../b1-mobile/groups/index.md)
+3. Semua fitur kelompok juga tersedia di [aplikasi B1 Mobile](../../b1-church/groups/index.md)
 
 :::info
 Anggota dapat melihat kelompok mereka, acara mendatang, dan percakapan kelompok baik di web maupun di seluler. Semuanya tetap sinkron.
@@ -98,4 +98,4 @@ Kelompok kecil Anda sudah disiapkan dan terhubung. Anggota dapat menemukan kelom
 - [Kalender Kurasi](../calendars/curated-calendar.md): membangun kalender gereja terpadu
 - [Menelusuri Kelompok (Web)](../../b1-church/groups/browsing-groups.md): cara anggota menemukan kelompok
 - [Percakapan Kelompok (Web)](../../b1-church/groups/conversations.md): diskusi kelompok
-- [Kelompok (Seluler)](../../b1-mobile/groups/index.md): kelompok di aplikasi seluler
+- [Kelompok (Seluler)](../../b1-church/groups/index.md): kelompok di aplikasi seluler

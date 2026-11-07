@@ -71,7 +71,7 @@ Gunakan mode uji Stripe terlebih dahulu jika Anda ingin memverifikasi tanpa peng
 Sebarkan informasinya agar anggota tahu bahwa mereka dapat memberi secara online.
 
 1. Bagikan URL pemberian melalui situs web, buletin email, warta jemaat, dan media sosial
-2. Anggota juga dapat memberi melalui [aplikasi B1 Mobile](../../b1-mobile/giving/index.md) — fitur pemberian sudah tersedia di dalamnya
+2. Anggota juga dapat memberi melalui [aplikasi B1 Mobile](../../b1-church/giving/index.md) — fitur pemberian sudah tersedia di dalamnya
 
 :::info
 Anggota yang masuk dapat menyimpan metode pembayaran, mengatur donasi berulang, dan melihat riwayat pemberian mereka. Pemberian anonim juga tersedia — tidak perlu masuk.
@@ -102,4 +102,4 @@ Gereja Anda kini menerima donasi online. Anggota dapat memberi melalui situs web
 - [Laporan Donasi](../donations/donation-reports.md) — melihat tren dan total pemberian
 - [Laporan Pemberian](../donations/giving-statements.md) — membuat laporan pajak akhir tahun
 - [Membuat Donasi (Web)](../../b1-church/giving/making-donations.md) — pengalaman memberi bagi anggota di web
-- [Membuat Donasi (Seluler)](../../b1-mobile/giving/making-donations.md) — memberi dari aplikasi seluler
+- [Membuat Donasi (Seluler)](../../b1-church/giving/making-donations.md) — memberi dari aplikasi seluler

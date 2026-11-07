@@ -50,7 +50,7 @@ registration के बाद, आप log in कर सकते हैं औ�
 B1.church किसी भी mobile browser में काम करता है। अधिक app जैसे अनुभव के लिए, अपने church के member portal को एक **Progressive Web App (PWA)** के रूप में install करें -- निर्देशित, device-विशिष्ट चरणों के लिए `https://yourchurchname.b1.church/mobile/install` पर जाएं, या Safari या Chrome से सीधे अपनी home screen पर जोड़ें। किसी app store की आवश्यकता नहीं है। निर्देशों के लिए देखें [Installing as an App (PWA)](./installing-pwa.md)।
 
 :::info
-पुराना native B1 Mobile app अब deprecated हो चुका है। आगे से phone पर B1.church उपयोग करने का समर्थित तरीका PWA है -- ऐतिहासिक documentation के लिए [B1 Mobile reference page](/docs/b1-mobile/) देखें।
+पुराना native B1 Mobile app अब deprecated हो चुका है। आगे से phone पर B1.church उपयोग करने का समर्थित तरीका PWA है -- ऐतिहासिक documentation के लिए [B1 Mobile reference page](/docs/b1-church/index.md) देखें।
 :::
 
 ## अगले Steps

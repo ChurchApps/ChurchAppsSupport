@@ -107,7 +107,7 @@ Możesz włączyć rejestrację na dowolne wydarzenie w kalendarzu, aby członko
 
 W przypadku płatnych wydarzeń ta sama strona ustawień pozwala zdefiniować płatne **Typy uczestników**, opcjonalne **Wybory** (dodatki) oraz **Kody rabatowe**, a płatności są realizowane przez dostawcę płatności darowizn Twojego kościoła. Pełny opis znajdziesz w [Płatnych rejestracjach](./paid-registrations.md).
 
-Gdy rejestracja jest włączona, członkowie zobaczą przycisk **Zarejestruj się na to wydarzenie**, kiedy wyświetlą wydarzenie na [witrynie B1](../../b1-church/events/registering.md) lub w [aplikacji mobilnej B1](../../b1-mobile/events/registering.md). Jeśli dołączysz formularz, osoby zapisujące się zobaczą krok **Pytania** podczas rejestracji, a ich odpowiedzi zostaną zapisane wraz ze zgłoszeniem.
+Gdy rejestracja jest włączona, członkowie zobaczą przycisk **Zarejestruj się na to wydarzenie**, kiedy wyświetlą wydarzenie na [witrynie B1](../../b1-church/events/registering.md) lub w [aplikacji mobilnej B1](../../b1-church/events/registering.md). Jeśli dołączysz formularz, osoby zapisujące się zobaczą krok **Pytania** podczas rejestracji, a ich odpowiedzi zostaną zapisane wraz ze zgłoszeniem.
 
 :::info
 Pytania rejestracyjne działają tylko z formularzami, które **nie** są oznaczone jako Ograniczone. Formularz ograniczony jest automatycznie pomijany podczas rejestracji, zamiast być wyświetlany, dlatego przy dołączaniu pytań do wydarzenia używaj formularza nieograniczonego.

@@ -12,7 +12,7 @@ description: "B1 Admin에서 행사 등록 양식을 설정해 참석자 정보�
 </div>
 
 :::info
-**이벤트 등록을 처리하는 두 가지 방법:** 이 가이드는 사용자 정의 필드와 결제 수집을 완전히 제어할 수 있는 **양식 기반 등록**을 다룹니다. 참석할 사람만 추적하면 되는 더 간단한 이벤트의 경우 캘린더에 내장된 **기본 이벤트 등록**을 사용합니다 -- 설정 지침은 [캘린더 만들기](../calendars/creating-calendars.md#enabling-event-registration)를 참조하세요. 기본 등록을 통해 회원은 [B1 웹사이트](../../b1-church/events/registering.md) 및 [모바일 앱](../../b1-mobile/events/registering.md)에서 직접 가입할 수 있으며 용량 추적, 날짜 창, 이메일 확인이 있습니다.
+**이벤트 등록을 처리하는 두 가지 방법:** 이 가이드는 사용자 정의 필드와 결제 수집을 완전히 제어할 수 있는 **양식 기반 등록**을 다룹니다. 참석할 사람만 추적하면 되는 더 간단한 이벤트의 경우 캘린더에 내장된 **기본 이벤트 등록**을 사용합니다 -- 설정 지침은 [캘린더 만들기](../calendars/creating-calendars.md#enabling-event-registration)를 참조하세요. 기본 등록을 통해 회원은 [B1 웹사이트](../../b1-church/events/registering.md) 및 [모바일 앱](../../b1-church/events/registering.md)에서 직접 가입할 수 있으며 용량 추적, 날짜 창, 이메일 확인이 있습니다.
 :::
 
 <div class="prereqs">

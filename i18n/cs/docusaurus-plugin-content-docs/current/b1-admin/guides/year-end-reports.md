@@ -77,7 +77,7 @@ Přehledy vygenerujte brzy v lednu, dokud jsou záznamy čerstvé. Budete tak m�
 Doručte přehledy svým dárcům.
 
 1. Přehledy vytiskněte a odešlete poštou, nebo jednotlivé soubory CSV rozešlete e-mailem
-2. Členové si také mohou prohlédnout svou vlastní historii darů a tisknout přehledy na stránkách [B1.church](../../b1-church/giving/donation-history.md) a v aplikaci [B1 Mobile](../../b1-mobile/giving/donation-history.md)
+2. Členové si také mohou prohlédnout svou vlastní historii darů a tisknout přehledy na stránkách [B1.church](../../b1-church/giving/donation-history.md) a v aplikaci [B1 Mobile](../../b1-church/giving/donation-history.md)
 
 ## Hotovo!
 

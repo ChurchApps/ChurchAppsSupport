@@ -12,7 +12,7 @@ Buat formulir pendaftaran acara, kumpulkan informasi peserta dan pembayaran opsi
 </div>
 
 :::info
-**Dua cara menangani pendaftaran acara:** Panduan ini membahas **pendaftaran berbasis formulir**, yang memberi Anda kendali penuh atas kolom khusus dan pengumpulan pembayaran. Untuk acara yang lebih sederhana, di mana Anda hanya perlu mencatat siapa yang akan hadir, gunakan **pendaftaran acara bawaan** yang ada di kalender -- lihat [Membuat Kalender](../calendars/creating-calendars.md#enabling-event-registration) untuk petunjuk pengaturannya. Pendaftaran bawaan memungkinkan anggota mendaftar langsung dari [situs web B1](../../b1-church/events/registering.md) dan [aplikasi seluler](../../b1-mobile/events/registering.md) dengan pelacakan kapasitas, rentang tanggal, dan konfirmasi email.
+**Dua cara menangani pendaftaran acara:** Panduan ini membahas **pendaftaran berbasis formulir**, yang memberi Anda kendali penuh atas kolom khusus dan pengumpulan pembayaran. Untuk acara yang lebih sederhana, di mana Anda hanya perlu mencatat siapa yang akan hadir, gunakan **pendaftaran acara bawaan** yang ada di kalender -- lihat [Membuat Kalender](../calendars/creating-calendars.md#enabling-event-registration) untuk petunjuk pengaturannya. Pendaftaran bawaan memungkinkan anggota mendaftar langsung dari [situs web B1](../../b1-church/events/registering.md) dan [aplikasi seluler](../../b1-church/events/registering.md) dengan pelacakan kapasitas, rentang tanggal, dan konfirmasi email.
 :::
 
 <div class="prereqs">

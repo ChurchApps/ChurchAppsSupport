@@ -50,7 +50,7 @@ Kapag naka-log in ka na, binibigyan ka ng member portal ng access sa:
 Gumagana ang B1.church sa anumang mobile browser. Para sa karanasang mas parang app, i-install ang member portal ng iyong simbahan bilang **Progressive Web App (PWA)** -- bisitahin ang `https://yourchurchname.b1.church/mobile/install` para sa gabay na hakbang-hakbang na naaayon sa iyong device, o idagdag ito sa home screen mo direkta mula sa Safari o Chrome. Hindi kailangan ng app store. Tingnan ang [Installing as an App (PWA)](./installing-pwa.md) para sa mga tagubilin.
 
 :::info
-Hindi na ginagamit ang lumang native na B1 Mobile app. Ang PWA na ang suportadong paraan ng paggamit ng B1.church sa telepono sa hinaharap -- tingnan ang [B1 Mobile reference page](/docs/b1-mobile/) para sa makasaysayang dokumentasyon.
+Hindi na ginagamit ang lumang native na B1 Mobile app. Ang PWA na ang suportadong paraan ng paggamit ng B1.church sa telepono sa hinaharap -- tingnan ang [B1 Mobile reference page](/docs/b1-church/index.md) para sa makasaysayang dokumentasyon.
 :::
 
 ## Mga Susunod na Hakbang

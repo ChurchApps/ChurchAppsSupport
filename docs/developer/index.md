@@ -31,7 +31,7 @@ Key characteristics:
   - [Environment Variables](./setup/environment-variables.md) -- Configuring `.env` files
 - **[API](./api/index.md)** -- Core API local setup, database initialization, and module structure
 - **[Web Apps](./web-apps/index.md)** -- Running B1Admin, B1App, and LessonsApp locally
-- **[Mobile Apps](./mobile/index.md)** -- Building B1Mobile and other Expo apps
+- **[Mobile Apps](./mobile/index.md)** -- Building B1Checkin and other Expo apps
 - **[Shared Libraries](./shared-libraries/index.md)** -- Working with Helpers, ApiHelper, and AppHelper
 - **[Deployment](./deployment/index.md)** -- Deploying APIs, web apps, and mobile apps
 - **[FreePlay Content Provider](./freeplay-content-provider.md)** -- Integrating your lesson library with FreePlay

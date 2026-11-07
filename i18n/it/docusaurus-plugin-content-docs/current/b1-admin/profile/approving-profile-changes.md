@@ -63,4 +63,4 @@ Assicurati che i tuoi approvatori siano effettivamente membri del gruppo configu
 
 - [Gestione del Tuo Profilo](./managing-profile.md) — Modifica le impostazioni del tuo account
 - [Revisione delle Richieste di Eliminazione dell'Account](./account-deletion.md) — Lo stesso flusso di revisione del gruppo di approvazione per l'eliminazione dell'account
-- [Impostazioni di B1 Mobile](../../b1-mobile/profile/editing-profile.md) — Cosa vedono i membri quando inviano una modifica del profilo
+- [Impostazioni di B1 Mobile](../../b1-church/getting-started/editing-your-profile.md) — Cosa vedono i membri quando inviano una modifica del profilo

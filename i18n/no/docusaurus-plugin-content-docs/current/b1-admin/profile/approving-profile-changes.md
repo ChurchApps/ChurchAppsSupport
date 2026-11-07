@@ -63,4 +63,4 @@ Sørg for at godkjennerne dine faktisk er medlemmer av den konfigurerte gruppen 
 
 - [Administrere profilen din](./managing-profile.md) — Rediger dine egne kontoinnstillinger
 - [Behandle forespørsler om sletting av konto](./account-deletion.md) — Samme gjennomgang i godkjenningsgruppen, men for sletting av konto
-- [B1 Mobile-innstillinger](../../b1-mobile/profile/editing-profile.md) — Hva medlemmene ser når de sender inn en profilendring
+- [B1 Mobile-innstillinger](../../b1-church/getting-started/editing-your-profile.md) — Hva medlemmene ser når de sender inn en profilendring

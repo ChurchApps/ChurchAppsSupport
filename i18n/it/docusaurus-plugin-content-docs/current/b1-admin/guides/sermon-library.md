@@ -84,7 +84,7 @@ Segui la guida [Gestire le pagine](../website/managing-pages.md) per:
 
 I membri possono accedere a sermoni e culti in diretta da qualsiasi dispositivo.
 
-1. I membri possono guardare i sermoni nell'[app B1 Mobile](../../b1-mobile/content/sermons.md) e su [B1.church](../../b1-church/content/sermons.md)
+1. I membri possono guardare i sermoni nell'[app B1 Mobile](../../b1-church/content/sermons.md) e su [B1.church](../../b1-church/content/sermons.md)
 2. La diretta streaming con chat funziona su entrambe le piattaforme
 
 :::info
@@ -103,4 +103,4 @@ La tua libreria di sermoni è online e la tua diretta streaming è configurata. 
 - [Diretta streaming](../sermons/live-streaming.md) — configura i culti in diretta
 - [Sermoni (Web)](../../b1-church/content/sermons.md) — l'esperienza di visione dei sermoni per i membri
 - [Diretta streaming (Web)](../../b1-church/content/live-streaming.md) — l'esperienza di diretta per i membri
-- [Sermoni (Mobile)](../../b1-mobile/content/sermons.md) — i sermoni sull'app mobile
+- [Sermoni (Mobile)](../../b1-church/content/sermons.md) — i sermoni sull'app mobile

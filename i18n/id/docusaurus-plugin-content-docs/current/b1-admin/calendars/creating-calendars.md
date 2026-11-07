@@ -107,7 +107,7 @@ Anda dapat mengaktifkan pendaftaran untuk acara kalender mana pun agar anggota d
 
 Untuk acara berbayar, halaman pengaturan yang sama memungkinkan Anda menentukan **Attendee Types** dengan harga, **Selections** (tambahan) opsional, dan **Discount Codes**, dengan pembayaran dikumpulkan melalui penyedia donasi gereja Anda. Lihat [Pendaftaran Berbayar](./paid-registrations.md) untuk panduan lengkapnya.
 
-Setelah pendaftaran diaktifkan, anggota akan melihat tombol **Register for this Event** saat membuka acara di [situs web B1](../../b1-church/events/registering.md) atau [aplikasi seluler B1](../../b1-mobile/events/registering.md). Jika Anda melampirkan formulir, pendaftar akan melihat langkah **Questions** selama pendaftaran dan jawaban mereka akan disimpan bersama pendaftaran mereka.
+Setelah pendaftaran diaktifkan, anggota akan melihat tombol **Register for this Event** saat membuka acara di [situs web B1](../../b1-church/events/registering.md) atau [aplikasi seluler B1](../../b1-church/events/registering.md). Jika Anda melampirkan formulir, pendaftar akan melihat langkah **Questions** selama pendaftaran dan jawaban mereka akan disimpan bersama pendaftaran mereka.
 
 :::info
 Pertanyaan Pendaftaran hanya berfungsi dengan formulir yang **tidak** ditandai sebagai Restricted. Formulir terbatas akan dilewati secara otomatis selama pendaftaran alih-alih ditampilkan, jadi gunakan formulir yang tidak dibatasi saat melampirkan pertanyaan ke acara.

@@ -71,7 +71,7 @@ Stripe 仅显示一次您的 Secret Key。在离开 Stripe 控制面板之前请
 让会众知道他们可以在线奉献。
 
 1. 通过您的网站、电子邮件通讯、教会公告和社交媒体分享奉献链接
-2. 会众还可以通过 [B1 Mobile 应用](../../b1-mobile/giving/index.md)进行奉献——奉献功能已内置
+2. 会众还可以通过 [B1 Mobile 应用](../../b1-church/giving/index.md)进行奉献——奉献功能已内置
 
 :::info
 登录的会众可以保存支付方式、设置定期奉献并查看奉献历史。匿名奉献同样可用——无需登录。
@@ -102,4 +102,4 @@ Stripe 仅显示一次您的 Secret Key。在离开 Stripe 控制面板之前请
 - [捐赠报告](../donations/donation-reports.md)——查看奉献趋势和总额
 - [奉献报告单](../donations/giving-statements.md)——生成年终税务报告
 - [进行捐赠（网页端）](../../b1-church/giving/making-donations.md)——会众的奉献体验
-- [进行捐赠（移动端）](../../b1-mobile/giving/making-donations.md)——通过移动应用奉献
+- [进行捐赠（移动端）](../../b1-church/giving/making-donations.md)——通过移动应用奉献

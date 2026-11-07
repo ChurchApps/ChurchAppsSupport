@@ -71,7 +71,7 @@ Brug Stripe's testilstand først, hvis du vil bekræfte uden rigtige gebyrer, sk
 Spred ordet, så medlemmer ved, at de kan give online.
 
 1. Del giving-URL'en via dit websted, e-mail-nyhedsbreve, bulletiner og sociale medier
-2. Medlemmer kan også give gennem [B1 Mobile-appen](../../b1-mobile/giving/index.md) -- giving-funktionen er indbygget
+2. Medlemmer kan også give gennem [B1 Mobile-appen](../../b1-church/giving/index.md) -- giving-funktionen er indbygget
 
 :::info
 Medlemmer, der logger ind, kan gemme betalingsmetoder, opsætte tilbagevendende donationer og se deres donationshistorik. Anonym giving virker også -- ingen login påkrævet.
@@ -102,4 +102,4 @@ Din kirke accepterer nu onlinedonationer. Medlemmer kan give gennem dit websted,
 - [Donationsrapporter](../donations/donation-reports.md) -- se givertrends og totaler
 - [Giverbekendtelser](../donations/giving-statements.md) -- generer år-slut momsopgørelser
 - [Foretage donationer (Web)](../../b1-church/giving/making-donations.md) -- medlemmernes giving-erfaring
-- [Foretage donationer (Mobil)](../../b1-mobile/giving/making-donations.md) -- giving fra mobilappen
+- [Foretage donationer (Mobil)](../../b1-church/giving/making-donations.md) -- giving fra mobilappen

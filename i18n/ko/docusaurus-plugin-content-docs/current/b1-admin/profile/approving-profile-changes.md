@@ -63,4 +63,4 @@ description: "B1 Admin에서 교인의 프로필 변경 요청을 검토하고 �
 
 - [Managing Your Profile](./managing-profile.md) -- 자신의 계정 설정 편집
 - [Reviewing Account Deletion Requests](./account-deletion.md) -- 계정 삭제에 대한 동일한 승인 그룹 검토 흐름
-- [B1 Mobile Settings](../../b1-mobile/profile/editing-profile.md) -- 회원이 프로필 변경을 제출할 때 보는 내용
+- [B1 Mobile Settings](../../b1-church/getting-started/editing-your-profile.md) -- 회원이 프로필 변경을 제출할 때 보는 내용

@@ -50,7 +50,7 @@ När du är inloggad ger medlemsportalen dig tillgång till:
 B1.church fungerar i alla mobilwebbläsare. För en mer appliknande upplevelse kan du installera kyrkans medlemsportal som en **progressiv webbapp (PWA)**. Besök `https://yourchurchname.b1.church/mobile/install` för steg-för-steg-anvisningar anpassade för din enhet, eller lägg till den på hemskärmen direkt från Safari eller Chrome. Ingen appbutik behövs. Se [Installera som app (PWA)](./installing-pwa.md) för instruktioner.
 
 :::info
-Den äldre inbyggda appen B1 Mobile har utfasats. PWA:n är det stödda sättet att använda B1.church i telefonen framöver. Se [referenssidan för B1 Mobile](/docs/b1-mobile/) för äldre dokumentation.
+Den äldre inbyggda appen B1 Mobile har utfasats. PWA:n är det stödda sättet att använda B1.church i telefonen framöver. Se [referenssidan för B1 Mobile](/docs/b1-church/index.md) för äldre dokumentation.
 :::
 
 ## Nästa steg

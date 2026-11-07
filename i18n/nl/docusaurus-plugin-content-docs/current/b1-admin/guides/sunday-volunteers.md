@@ -95,7 +95,7 @@ Laat vrijwilligers zelf voor posities aanmelden in plaats van te wachten op behe
 3. Selecteer voor elke positie het selectievakje **Zelfbediening aanmelding toestaan** om het beschikbaar te maken voor zelfbediening.
 4. Voeg voor elke positie een **Beschrijving** toe zodat vrijwilligers weten wat de rol inhoudt.
 
-Zodra zelfbediening aanmeldingsposities zijn gemaakt, verschijnen zij automatisch op de vrijwilligersaanmeldingspagina's op [B1.church](../../b1-church/serving/volunteer-signup.md) en de [B1 Mobiele app](../../b1-mobile/serving/volunteer-signup.md). Leden kunnen open posities doorzoeken, zien hoeveel plaatsen er nog beschikbaar zijn en zich met één klik aanmelden.
+Zodra zelfbediening aanmeldingsposities zijn gemaakt, verschijnen zij automatisch op de vrijwilligersaanmeldingspagina's op [B1.church](../../b1-church/serving/volunteer-signup.md) en de [B1 Mobiele app](../../b1-church/serving/volunteer-signup.md). Leden kunnen open posities doorzoeken, zien hoeveel plaatsen er nog beschikbaar zijn en zich met één klik aanmelden.
 
 :::tip
 Meng beheerderstoewijzingen en zelfbediening aanmeldingsposities in dezelfde plan. Wijs bijvoorbeeld uw aanbiddinaleider rechtstreeks toe maar laat greeters en koffie servers zelf kiezen.
@@ -105,7 +105,7 @@ Meng beheerderstoewijzingen en zelfbediening aanmeldingsposities in dezelfde pla
 
 Toegewezen vrijwilligers zien hun plannen automatisch en kunnen reageren.
 
-1. Vrijwilligers zien hun plannen op [B1.church](../../b1-church/plans/viewing-plans.md) en de [B1 Mobiele app](../../b1-mobile/serving/viewing-plans.md)
+1. Vrijwilligers zien hun plannen op [B1.church](../../b1-church/plans/viewing-plans.md) en de [B1 Mobiele app](../../b1-church/plans/viewing-plans.md)
 2. Zij kunnen toewijzingen rechtstreeks van een van beide platforms accepteren of weigeren
 3. Zij kunnen blokkeerdata instellen voor weken waarop zij niet beschikbaar zijn
 4. Planen kunnen voor repetities worden afgedrukt of achter het podium worden geplaatst
@@ -129,6 +129,6 @@ Uw vrijwilligersbeheerssysteem is ingesteld. Elke week maakt u een nieuw plan, w
 - [Taken](../serving/tasks.md) -- actiegegevens aan personen of groepen toewijzen
 - [Automations](../serving/workflows.md) -- terugkerende taken automatiseren
 - [Plannen bekijken (web)](../../b1-church/plans/viewing-plans.md) -- hoe vrijwilligers plannen online zien
-- [Plannen bekijken (mobiel)](../../b1-mobile/serving/viewing-plans.md) -- hoe vrijwilligers plannen op mobiel zien
+- [Plannen bekijken (mobiel)](../../b1-church/plans/viewing-plans.md) -- hoe vrijwilligers plannen op mobiel zien
 - [Vrijwilligersaanmelding (web)](../../b1-church/serving/volunteer-signup.md) -- hoe leden vrijwilligersposities zelf selecteren
-- [Vrijwilligersaanmelding (mobiel)](../../b1-mobile/serving/volunteer-signup.md) -- vrijwilligerszelfbediening aanmelding op mobiel
+- [Vrijwilligersaanmelding (mobiel)](../../b1-church/serving/volunteer-signup.md) -- vrijwilligerszelfbediening aanmelding op mobiel

@@ -107,7 +107,7 @@ Sie können für jede Kalenderveranstaltung eine Anmeldung aktivieren, damit sic
 
 Bei kostenpflichtigen Veranstaltungen können Sie auf derselben Einstellungsseite preisierte **Teilnehmertypen**, optionale **Auswahlmöglichkeiten** (Zusatzoptionen) und **Rabattcodes** festlegen. Die Zahlung wird über den bestehenden Spendenanbieter Ihrer Kirche abgewickelt. Die vollständige Anleitung finden Sie unter [Kostenpflichtige Anmeldungen](./paid-registrations.md).
 
-Sobald die Anmeldung aktiviert ist, sehen Mitglieder eine Schaltfläche **Für diese Veranstaltung anmelden**, wenn sie die Veranstaltung auf der [B1-Website](../../b1-church/events/registering.md) oder in der [B1-Mobile-App](../../b1-mobile/events/registering.md) ansehen. Haben Sie ein Formular angehängt, sehen Angemeldete während der Anmeldung einen Schritt **Fragen**, und ihre Antworten werden mit der Anmeldung gespeichert.
+Sobald die Anmeldung aktiviert ist, sehen Mitglieder eine Schaltfläche **Für diese Veranstaltung anmelden**, wenn sie die Veranstaltung auf der [B1-Website](../../b1-church/events/registering.md) oder in der [B1-Mobile-App](../../b1-church/events/registering.md) ansehen. Haben Sie ein Formular angehängt, sehen Angemeldete während der Anmeldung einen Schritt **Fragen**, und ihre Antworten werden mit der Anmeldung gespeichert.
 
 :::info
 Fragen zur Anmeldung funktionieren nur mit Formularen, die **nicht** als eingeschränkt markiert sind. Ein eingeschränktes Formular wird bei der Anmeldung automatisch übersprungen statt angezeigt. Verwenden Sie daher ein nicht eingeschränktes Formular, wenn Sie Fragen an eine Veranstaltung anhängen.

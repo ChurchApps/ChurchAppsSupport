@@ -71,7 +71,7 @@ Jei norite patikrinti be tikrų mokėjimų, pirmiausia naudokite Stripe testavim
 Praneškite, kad nariai gali aukoti internetu.
 
 1. Bendrinkite aukojimo URL per savo svetainę, el. pašto naujienlaiškius, biuletenius ir socialinius tinklus
-2. Nariai taip pat gali aukoti per [B1 Mobile programėlę](../../b1-mobile/giving/index.md). Aukojimo funkcija jau įtraukta į programėlę.
+2. Nariai taip pat gali aukoti per [B1 Mobile programėlę](../../b1-church/giving/index.md). Aukojimo funkcija jau įtraukta į programėlę.
 
 :::info
 Prisijungę nariai gali išsaugoti mokėjimo būdus, nustatyti pasikartojančias aukas ir peržiūrėti savo aukojimo istoriją. Anoniminis aukojimas taip pat veikia, prisijungti nereikia.
@@ -102,4 +102,4 @@ Jūsų bažnyčia dabar priima internetines aukas. Nariai gali aukoti per jūsų
 - [Aukų ataskaitos](../donations/donation-reports.md): peržiūrėkite aukojimo tendencijas ir sumas
 - [Aukojimo pažymėjimai](../donations/giving-statements.md): generuokite metinius mokesčių pažymėjimus
 - [Aukojimas (internetu)](../../b1-church/giving/making-donations.md): narių aukojimo patirtis
-- [Aukojimas (mobiliesiems)](../../b1-mobile/giving/making-donations.md): aukojimas per mobiliąją programėlę
+- [Aukojimas (mobiliesiems)](../../b1-church/giving/making-donations.md): aukojimas per mobiliąją programėlę

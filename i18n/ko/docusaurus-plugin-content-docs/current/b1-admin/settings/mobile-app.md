@@ -116,7 +116,7 @@ description: "B1.church 교인 앱의 내비게이션 탭, 홈 화면 타일, �
 
 여기서 구성한 탭은 교인들이 `https://yourchurchname.b1.church`의 어느 페이지에서든 설치하는 **B1.church PWA**에 표시됩니다. 이 페이지에서 바꾼 내용은 교인이 앱을 다음에 열 때 반영됩니다.
 
-휴대폰에서는 하단 탭 바에 **Home**, 탭 최대 3개, **More**가 표시되고, 컴퓨터에서는 상단 헤더에 탭 최대 5개가 표시됩니다. Sermons, Giving, Groups 같은 기본 화면이 먼저 자리를 차지하며, **Internal Page** 탭은 남은 자리를 채웁니다. **External URL** 탭과 **Verse of the Day** 탭은 자리를 차지하지 못합니다. 자리에 들어가지 못한 탭을 포함한 모든 탭은 앱의 **More** 페이지에 나열됩니다. 구성원이 보게 되는 화면은 [B1App 둘러보기](/docs/b1-church/getting-started/navigating)를 참고하세요. (아직 이 앱을 사용하는 구성원을 위해 기존 [B1 Mobile 네이티브 앱](/docs/b1-mobile/)에서도 탭이 표시되지만, 해당 앱은 지원이 중단되어 더 이상 업데이트되지 않습니다.)
+휴대폰에서는 하단 탭 바에 **Home**, 탭 최대 3개, **More**가 표시되고, 컴퓨터에서는 상단 헤더에 탭 최대 5개가 표시됩니다. Sermons, Giving, Groups 같은 기본 화면이 먼저 자리를 차지하며, **Internal Page** 탭은 남은 자리를 채웁니다. **External URL** 탭과 **Verse of the Day** 탭은 자리를 차지하지 못합니다. 자리에 들어가지 못한 탭을 포함한 모든 탭은 앱의 **More** 페이지에 나열됩니다. 구성원이 보게 되는 화면은 [B1App 둘러보기](/docs/b1-church/getting-started/navigating)를 참고하세요. (아직 이 앱을 사용하는 구성원을 위해 기존 [B1 Mobile 네이티브 앱](/docs/b1-church/index.md)에서도 탭이 표시되지만, 해당 앱은 지원이 중단되어 더 이상 업데이트되지 않습니다.)
 
 ## 다음 단계
 

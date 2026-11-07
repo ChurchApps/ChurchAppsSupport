@@ -107,7 +107,7 @@ Vous pouvez activer l'inscription pour n'importe quel événement de calendrier 
 
 Pour les événements payants, la même page de paramètres vous permet de définir des **types de participants** avec prix, des **options** facultatives (suppléments) et des **codes de réduction**, avec un paiement encaissé via le fournisseur de dons de votre église. Consultez [Inscriptions payantes](./paid-registrations.md) pour le guide complet.
 
-Une fois l'inscription activée, les membres verront un bouton **S'inscrire à cet événement** lorsqu'ils consulteront l'événement sur le [site web B1](../../b1-church/events/registering.md) ou l'[application mobile B1](../../b1-mobile/events/registering.md). Si vous avez joint un formulaire, les inscrits voient une étape **Questions** pendant l'inscription, et leurs réponses sont enregistrées avec leur inscription.
+Une fois l'inscription activée, les membres verront un bouton **S'inscrire à cet événement** lorsqu'ils consulteront l'événement sur le [site web B1](../../b1-church/events/registering.md) ou l'[application mobile B1](../../b1-church/events/registering.md). Si vous avez joint un formulaire, les inscrits voient une étape **Questions** pendant l'inscription, et leurs réponses sont enregistrées avec leur inscription.
 
 :::info
 Les questions d'inscription ne fonctionnent qu'avec les formulaires qui **ne** sont **pas** marqués comme Restreints. Un formulaire restreint est automatiquement ignoré lors de l'inscription au lieu d'être affiché ; utilisez donc un formulaire non restreint lorsque vous joignez des questions à un événement.

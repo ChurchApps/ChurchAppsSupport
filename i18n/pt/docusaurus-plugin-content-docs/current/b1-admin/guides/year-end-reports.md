@@ -77,7 +77,7 @@ Gere declarações no início de janeiro enquanto os registros estão frescos. I
 Coloque as declarações nas mãos de seus doadores.
 
 1. Imprima e envie declarações por correio ou envie CSVs individuais por e-mail para os doadores
-2. Os membros também podem visualizar seu próprio histórico de doações e imprimir declarações de [B1.church](../../b1-church/giving/donation-history.md) e do [aplicativo B1 Mobile](../../b1-mobile/giving/donation-history.md)
+2. Os membros também podem visualizar seu próprio histórico de doações e imprimir declarações de [B1.church](../../b1-church/giving/donation-history.md) e do [aplicativo B1 Mobile](../../b1-church/giving/donation-history.md)
 
 ## Pronto!
 

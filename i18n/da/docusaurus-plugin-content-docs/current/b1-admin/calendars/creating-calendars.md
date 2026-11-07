@@ -70,7 +70,7 @@ Du kan aktivere registrering for enhver kalenderbegivenhed, så medlemmer kan ti
    - **Mærker** -- Kommaseparerede etiketter (f.eks. "ungdom, retreat, vbs") for at hjælpe med at kategorisere registrerbare begivenheder.
 4. Gem begivenheden.
 
-Når registrering er aktiveret, vil medlemmer se en knap **Registrer dig for denne begivenhed**, når de ser begivenheden på [B1-webstedet](../../b1-church/events/registering.md) eller [B1 Mobile-appen](../../b1-mobile/events/registering.md).
+Når registrering er aktiveret, vil medlemmer se en knap **Registrer dig for denne begivenhed**, når de ser begivenheden på [B1-webstedet](../../b1-church/events/registering.md) eller [B1 Mobile-appen](../../b1-church/events/registering.md).
 
 ### Styring af registreringer
 

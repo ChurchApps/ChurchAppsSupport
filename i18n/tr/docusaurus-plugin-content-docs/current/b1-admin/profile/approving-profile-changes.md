@@ -63,4 +63,4 @@ Onaylayıcılarınızın gerçekten yapılandırılmış grubun üyesi olduğund
 
 - [Profilinizi Yönetme](./managing-profile.md) — Kendi hesap ayarlarınızı düzenleyin
 - [Hesap Silme Taleplerini İnceleme](./account-deletion.md) — Hesap silme için aynı onay grubu inceleme akışı
-- [B1 Mobile Ayarları](../../b1-mobile/profile/editing-profile.md) — Bir profil değişikliği gönderdiklerinde üyelerin gördükleri ekran
+- [B1 Mobile Ayarları](../../b1-church/getting-started/editing-your-profile.md) — Bir profil değişikliği gönderdiklerinde üyelerin gördükleri ekran

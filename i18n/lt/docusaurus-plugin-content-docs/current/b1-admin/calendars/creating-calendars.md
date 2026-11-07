@@ -107,7 +107,7 @@ Galite įjungti registraciją bet kuriam kalendoriaus renginiui, kad nariai gal�
 
 Mokamiems renginiams tame pačiame nustatymų puslapyje galite apibrėžti kainuojamus **Dalyvių tipus**, pasirinktinius **Pasirinkimus** (papildomas paslaugas) ir **Nuolaidų kodus**. Mokėjimai surenkami per jūsų bažnyčios aukojimų teikėją. Išsamų aprašymą rasite [Mokamose registracijose](./paid-registrations.md).
 
-Kai registracija įjungta, nariams, peržiūrintiems renginį [B1 svetainėje](../../b1-church/events/registering.md) arba [B1 mobiliojoje programėlėje](../../b1-mobile/events/registering.md), bus rodomas mygtukas **Registruotis į šį renginį**. Jei pridėjote formą, registruojantys asmenys registracijos metu matys žingsnį **Klausimai**, o jų atsakymai bus išsaugoti kartu su registracija.
+Kai registracija įjungta, nariams, peržiūrintiems renginį [B1 svetainėje](../../b1-church/events/registering.md) arba [B1 mobiliojoje programėlėje](../../b1-church/events/registering.md), bus rodomas mygtukas **Registruotis į šį renginį**. Jei pridėjote formą, registruojantys asmenys registracijos metu matys žingsnį **Klausimai**, o jų atsakymai bus išsaugoti kartu su registracija.
 
 :::info
 Registracijos klausimai veikia tik su formomis, **nepažymėtomis** kaip Apribota. Apribota forma registracijos metu praleidžiama automatiškai, o ne rodoma, todėl pridedant klausimus prie renginio naudokite neapribotą formą.

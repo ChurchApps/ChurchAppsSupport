@@ -382,12 +382,6 @@
   "homepage.products.b1website.description": {
     "message": "Sito web pubblico della chiesa e portale per i membri."
   },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Mobile"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "App per i membri legacy per iOS e Android, ora sostituita dall'app web di B1.church."
-  },
   "homepage.products.b1checkin.title": {
     "message": "B1 Check-in"
   },

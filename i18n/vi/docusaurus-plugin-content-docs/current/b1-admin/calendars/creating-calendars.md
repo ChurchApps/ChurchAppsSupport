@@ -107,7 +107,7 @@ Bạn có thể bật đăng ký cho bất kỳ sự kiện nào trong lịch đ
 
 Với sự kiện có phí, cùng trang cài đặt này cho phép bạn xác định các **Loại người tham dự** có giá, **Lựa chọn** tùy chọn (dịch vụ bổ sung), và **Mã giảm giá**, với việc thanh toán được thu qua nhà cung cấp dịch vụ quyên góp của hội thánh bạn. Xem [Đăng ký có phí](./paid-registrations.md) để biết hướng dẫn đầy đủ.
 
-Khi đã bật đăng ký, thành viên sẽ thấy nút **Đăng ký tham gia sự kiện này** khi xem sự kiện trên [website B1](../../b1-church/events/registering.md) hoặc [ứng dụng di động B1](../../b1-mobile/events/registering.md). Nếu bạn đã đính kèm biểu mẫu, người đăng ký sẽ thấy bước **Câu hỏi** trong quá trình đăng ký và câu trả lời của họ sẽ được lưu cùng với đăng ký.
+Khi đã bật đăng ký, thành viên sẽ thấy nút **Đăng ký tham gia sự kiện này** khi xem sự kiện trên [website B1](../../b1-church/events/registering.md) hoặc [ứng dụng di động B1](../../b1-church/events/registering.md). Nếu bạn đã đính kèm biểu mẫu, người đăng ký sẽ thấy bước **Câu hỏi** trong quá trình đăng ký và câu trả lời của họ sẽ được lưu cùng với đăng ký.
 
 :::info
 Câu hỏi đăng ký chỉ hoạt động với các biểu mẫu **không** được đánh dấu Hạn chế. Biểu mẫu hạn chế sẽ được tự động bỏ qua trong quá trình đăng ký thay vì hiển thị, vì vậy hãy dùng biểu mẫu không hạn chế khi đính kèm câu hỏi cho sự kiện.

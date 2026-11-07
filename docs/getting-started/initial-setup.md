@@ -32,7 +32,7 @@ After creating your account and church, there are a few important steps to confi
 1. In the Jump menu, choose **Website > Appearance**.
 2. Upload your **church logo**.
 3. Configure any additional branding options such as colors and images.
-4. Your branding will appear on your B1.church website and in the B1 Mobile app.
+4. Your branding will appear on your B1.church website and in the B1 App.
 
 :::tip
 Having your logo and branding ready before inviting team members gives a polished first impression when they log in.

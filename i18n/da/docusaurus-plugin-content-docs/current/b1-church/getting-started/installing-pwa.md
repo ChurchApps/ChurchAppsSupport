@@ -76,10 +76,10 @@ Begge muligheder giver dig adgang til B1.church medlemsportalen. Det rigtige val
 | Platform | Enhver enhed med en browser | iOS og Android |
 
 :::tip
-Hvis din kirke bruger gruppekondersationer, og du ønsker push-notifikationer for nye meddelelser og aktivitet, skal du i stedet bruge [B1 Mobile app](/docs/b1-mobile/). Push-notifikationer understøttes for øjeblikket ikke i PWA'en.
+Hvis din kirke bruger gruppekondersationer, og du ønsker push-notifikationer for nye meddelelser og aktivitet, skal du i stedet bruge [B1 Mobile app](/docs/b1-church/index.md). Push-notifikationer understøttes for øjeblikket ikke i PWA'en.
 :::
 
 ## Relaterede artikler
 
 - [Log ind](./logging-in.md) — Sådan logger du ind på din B1.church-konto
-- [B1 Mobile — Installation af appen](/docs/b1-mobile/getting-started/installing) — Download den oprindelige iOS/Android app
+- [B1 Mobile — Installation af appen](/docs/b1-church/getting-started/installing-pwa.md) — Download den oprindelige iOS/Android app

@@ -77,7 +77,7 @@ Generer sætninger tidlig i januar mens registreringer er friske. Dette giver di
 Få sætningerne ind i dine donorers hænder.
 
 1. Print og mail sætninger eller email individuelle CSV-filer til donorer
-2. Medlemmer kan også se deres egen givnings historie og print sætninger fra [B1.church](../../b1-church/giving/donation-history.md) og [B1 Mobile app](../../b1-mobile/giving/donation-history.md)
+2. Medlemmer kan også se deres egen givnings historie og print sætninger fra [B1.church](../../b1-church/giving/donation-history.md) og [B1 Mobile app](../../b1-church/giving/donation-history.md)
 
 ## Du er færdig!
 

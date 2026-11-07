@@ -63,4 +63,4 @@ Poskrbite, da so odobritelji res člani nastavljene skupine – zahteve bodo vid
 
 - [Upravljanje vašega profila](./managing-profile.md) – Uredite nastavitve svojega računa
 - [Pregled zahtev za izbris računa](./account-deletion.md) – Isti postopek pregleda s skupino za odobritev pri izbrisu računa
-- [Nastavitve B1 Mobile](../../b1-mobile/profile/editing-profile.md) – Kaj člani vidijo, ko oddajo spremembo profila
+- [Nastavitve B1 Mobile](../../b1-church/getting-started/editing-your-profile.md) – Kaj člani vidijo, ko oddajo spremembo profila

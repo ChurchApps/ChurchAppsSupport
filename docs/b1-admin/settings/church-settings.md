@@ -7,7 +7,7 @@ description: "Set the name, address, subdomain, time zone, region format, textin
 
 <div class="article-intro">
 
-The Church Settings page is where you configure your church's basic information, contact details, and branding. These details are used across all ChurchApps tools, including your B1.church website and the B1 Mobile app.
+The Church Settings page is where you configure your church's basic information, contact details, and branding. These details are used across all ChurchApps tools, including your B1.church website and the B1 App.
 
 </div>
 

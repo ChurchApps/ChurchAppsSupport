@@ -71,7 +71,7 @@ Pokud chcete ověřit postup bez skutečných plateb, nejprve použijte testovac
 Informujte členy, že mohou dávat online.
 
 1. Sdílejte adresu URL pro dary prostřednictvím webu, e-mailových newsletterů, sborových bulletinů a sociálních sítí
-2. Členové mohou dávat také prostřednictvím [aplikace B1 Mobile](../../b1-mobile/giving/index.md) – funkce darování je její součástí
+2. Členové mohou dávat také prostřednictvím [aplikace B1 Mobile](../../b1-church/giving/index.md) – funkce darování je její součástí
 
 :::info
 Členové, kteří se přihlásí, mohou ukládat platební metody, nastavovat pravidelné dary a prohlížet si historii darů. Funguje i anonymní darování – přihlášení není vyžadováno.
@@ -102,4 +102,4 @@ Váš sbor nyní přijímá online dary. Členové mohou dávat prostřednictví
 - [Přehledy darů](../donations/donation-reports.md) – zobrazení trendů a součtů darování
 - [Výpisy darů](../donations/giving-statements.md) – generování ročních daňových výpisů
 - [Darování (web)](../../b1-church/giving/making-donations.md) – zkušenost členů s darováním na webu
-- [Darování (mobil)](../../b1-mobile/giving/making-donations.md) – darování z mobilní aplikace
+- [Darování (mobil)](../../b1-church/giving/making-donations.md) – darování z mobilní aplikace

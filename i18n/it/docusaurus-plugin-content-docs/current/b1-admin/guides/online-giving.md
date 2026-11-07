@@ -71,7 +71,7 @@ Usa prima la modalità test di Stripe se vuoi verificare senza addebiti reali, p
 Diffondi la notizia in modo che i membri sappiano che possono donare online.
 
 1. Condividi l'URL delle donazioni tramite il tuo sito web, newsletter via email, bollettini e social media
-2. I membri possono anche donare tramite l'[app B1 Mobile](../../b1-mobile/giving/index.md) — la funzione donazioni è integrata
+2. I membri possono anche donare tramite l'[app B1 Mobile](../../b1-church/giving/index.md) — la funzione donazioni è integrata
 
 :::info
 I membri che effettuano l'accesso possono salvare i metodi di pagamento, impostare donazioni ricorrenti e visualizzare la loro cronologia delle offerte. Le donazioni anonime funzionano anche — non è richiesto l'accesso.
@@ -102,4 +102,4 @@ La tua chiesa ora accetta donazioni online. I membri possono donare attraverso i
 - [Report donazioni](../donations/donation-reports.md) — visualizza tendenze e totali delle offerte
 - [Rendiconti delle offerte](../donations/giving-statements.md) — genera rendiconti fiscali di fine anno
 - [Effettuare donazioni (Web)](../../b1-church/giving/making-donations.md) — l'esperienza di donazione per i membri
-- [Effettuare donazioni (Mobile)](../../b1-mobile/giving/making-donations.md) — donare dall'app mobile
+- [Effettuare donazioni (Mobile)](../../b1-church/giving/making-donations.md) — donare dall'app mobile

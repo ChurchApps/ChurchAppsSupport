@@ -55,17 +55,6 @@ const products = [
     color: '#00897B',
   },
   {
-    title: translate({id: 'homepage.products.b1mobile.title', message: 'B1 Mobile'}),
-    description: translate({id: 'homepage.products.b1mobile.description', message: 'Legacy member app for iOS and Android, now replaced by the B1.church web app.'}),
-    link: '/docs/b1-mobile/',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/>
-      </svg>
-    ),
-    color: '#7B1FA2',
-  },
-  {
     title: translate({id: 'homepage.products.b1checkin.title', message: 'B1 Checkin'}),
     description: translate({id: 'homepage.products.b1checkin.description', message: 'Self-service check-in kiosk app for iPad and Android tablets.'}),
     link: '/docs/b1-checkin/',

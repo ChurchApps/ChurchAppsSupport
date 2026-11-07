@@ -84,7 +84,7 @@ sermons जोड़ने से पहले playlists बनाएं। इ�
 
 सदस्य किसी भी डिवाइस से sermons और live services तक पहुंच सकते हैं।
 
-1. सदस्य [B1 Mobile app](../../b1-mobile/content/sermons.md) में और [B1.church](../../b1-church/content/sermons.md) पर sermons देख सकते हैं
+1. सदस्य [B1 Mobile app](../../b1-church/content/sermons.md) में और [B1.church](../../b1-church/content/sermons.md) पर sermons देख सकते हैं
 2. Live streaming के साथ chat दोनों platforms पर काम करता है
 
 :::info
@@ -103,4 +103,4 @@ live chat सुविधा आपके ऑनलाइन congregation को
 - [Live Streaming](../sermons/live-streaming.md) — live services कॉन्फ़िगर करें
 - [Sermons (Web)](../../b1-church/content/sermons.md) — सदस्यों के लिए sermon देखने का अनुभव
 - [Live Streaming (Web)](../../b1-church/content/live-streaming.md) — सदस्यों के लिए live stream अनुभव
-- [Sermons (Mobile)](../../b1-mobile/content/sermons.md) — mobile app पर sermons
+- [Sermons (Mobile)](../../b1-church/content/sermons.md) — mobile app पर sermons

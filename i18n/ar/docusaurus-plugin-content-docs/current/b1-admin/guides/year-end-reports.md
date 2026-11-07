@@ -77,7 +77,7 @@ description: "في B1 Admin، أكمل سجلات تبرعات السنة، وت
 أوصل الكشوف إلى أيدي متبرعيك.
 
 1. اطبع الكشوف وأرسلها بالبريد، أو أرسل ملفات CSV الفردية إلى المتبرعين عبر البريد الإلكتروني
-2. يمكن للأعضاء أيضًا عرض سجل تبرعاتهم وطباعة الكشوف من [B1.church](../../b1-church/giving/donation-history.md) وتطبيق [B1 Mobile](../../b1-mobile/giving/donation-history.md)
+2. يمكن للأعضاء أيضًا عرض سجل تبرعاتهم وطباعة الكشوف من [B1.church](../../b1-church/giving/donation-history.md) وتطبيق [B1 Mobile](../../b1-church/giving/donation-history.md)
 
 ## تهانينا!
 

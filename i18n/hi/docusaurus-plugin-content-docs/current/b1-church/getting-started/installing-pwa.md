@@ -98,7 +98,7 @@ PWA को internet connection की आवश्यकता होती ह�
 
 iOS और Android पर पुराना native **B1 Mobile** app deprecated हो चुका है और अब उसे update नहीं किया जा रहा है। आगे से phone पर B1.church member portal तक पहुंचने का समर्थित तरीका PWA है, और यह native app द्वारा दी गई हर member-facing feature को कवर करता है। यदि आपने पहले native app install किया था, तो अपनी सुविधानुसार PWA पर स्विच कर लें।
 
-deprecated app के ऐतिहासिक documentation के लिए [B1 Mobile reference page](/docs/b1-mobile/) देखें।
+deprecated app के ऐतिहासिक documentation के लिए [B1 Mobile reference page](/docs/b1-church/index.md) देखें।
 
 ## संबंधित लेख
 

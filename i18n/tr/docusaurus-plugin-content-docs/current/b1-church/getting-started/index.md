@@ -50,7 +50,7 @@ Oturum açtığınızda üye portalı size şunlara erişim sağlar:
 B1.church, herhangi bir mobil tarayıcıda çalışır. Daha uygulama benzeri bir deneyim için kilisenizin üye portalını bir **İlerleyici Web Uygulaması (PWA)** olarak yükleyin. Cihazınıza özel adım adım yönergeler için `https://yourchurchname.b1.church/mobile/install` adresini ziyaret edin ya da doğrudan Safari veya Chrome'dan ana ekranınıza ekleyin. Uygulama mağazası gerekmez. Talimatlar için [Uygulama olarak yükleme (PWA)](./installing-pwa.md) bölümüne bakın.
 
 :::info
-Eski yerel B1 Mobile uygulaması kullanımdan kaldırılmıştır. Bundan sonra telefonunuzda B1.church kullanmanın desteklenen yolu PWA'dır. Geçmiş belgeler için [B1 Mobile başvuru sayfasına](/docs/b1-mobile/) bakın.
+Eski yerel B1 Mobile uygulaması kullanımdan kaldırılmıştır. Bundan sonra telefonunuzda B1.church kullanmanın desteklenen yolu PWA'dır. Geçmiş belgeler için [B1 Mobile başvuru sayfasına](/docs/b1-church/index.md) bakın.
 :::
 
 ## Sonraki Adımlar

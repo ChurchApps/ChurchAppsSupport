@@ -84,7 +84,7 @@ Folgen Sie der Anleitung [Seiten verwalten](../website/managing-pages.md), um:
 
 Gemeindemitglieder können von jedem Gerät aus auf Predigten und Live-Gottesdienste zugreifen.
 
-1. Mitglieder können Predigten in der [B1-Mobile-App](../../b1-mobile/content/sermons.md) und auf [B1.church](../../b1-church/content/sermons.md) ansehen
+1. Mitglieder können Predigten in der [B1-Mobile-App](../../b1-church/content/sermons.md) und auf [B1.church](../../b1-church/content/sermons.md) ansehen
 2. Live-Streaming mit Chat funktioniert auf beiden Plattformen
 
 :::info
@@ -103,4 +103,4 @@ Ihre Predigtbibliothek ist online und Ihr Livestream ist eingerichtet. Mitgliede
 - [Live-Streaming](../sermons/live-streaming.md) — Live-Gottesdienste konfigurieren
 - [Predigten (Web)](../../b1-church/content/sermons.md) — Ansicht der Predigten für Mitglieder im Web
 - [Live-Streaming (Web)](../../b1-church/content/live-streaming.md) — Live-Stream-Erlebnis für Mitglieder
-- [Predigten (Mobil)](../../b1-mobile/content/sermons.md) — Predigten in der mobilen App
+- [Predigten (Mobil)](../../b1-church/content/sermons.md) — Predigten in der mobilen App

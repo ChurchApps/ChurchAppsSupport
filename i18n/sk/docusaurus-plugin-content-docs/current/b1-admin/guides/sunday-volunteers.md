@@ -96,7 +96,7 @@ Nechajte dobrovoľníkov prihlásiť sa na pozície samostatne, namiesto čakani
 3. Pri každej pozícii zaškrtnite políčko **Povoliť samoobslužnú registráciu**, aby bola dostupná na samoobslužné prihlásenie.
 4. Ku každej pozícii pridajte **Popis**, aby dobrovoľníci vedeli, čo rola obnáša.
 
-Po vytvorení pozícií so samoobslužnou registráciou sa automaticky zobrazia na stránkach registrácie dobrovoľníkov na [B1.church](../../b1-church/serving/volunteer-signup.md) a v [mobilnej aplikácii B1](../../b1-mobile/serving/volunteer-signup.md). Členovia si môžu prezrieť voľné pozície, vidieť, koľko miest zostáva, a prihlásiť sa jedným kliknutím.
+Po vytvorení pozícií so samoobslužnou registráciou sa automaticky zobrazia na stránkach registrácie dobrovoľníkov na [B1.church](../../b1-church/serving/volunteer-signup.md) a v [mobilnej aplikácii B1](../../b1-church/serving/volunteer-signup.md). Členovia si môžu prezrieť voľné pozície, vidieť, koľko miest zostáva, a prihlásiť sa jedným kliknutím.
 
 :::tip
 Kombinujte pozície s pridelením od administrátora a pozície so samoobslužnou registráciou v tom istom pláne. Napríklad vedúceho chvály priraďte priamo, ale uvítacím a kávovým službám nechajte možnosť vybrať si sami.
@@ -106,7 +106,7 @@ Kombinujte pozície s pridelením od administrátora a pozície so samoobslužno
 
 Priradení dobrovoľníci automaticky vidia svoje plány a môžu reagovať.
 
-1. Dobrovoľníci vidia svoje plány na [B1.church](../../b1-church/plans/viewing-plans.md) a v [mobilnej aplikácii B1](../../b1-mobile/serving/viewing-plans.md)
+1. Dobrovoľníci vidia svoje plány na [B1.church](../../b1-church/plans/viewing-plans.md) a v [mobilnej aplikácii B1](../../b1-church/plans/viewing-plans.md)
 2. Pridelenia môžu priamo prijať alebo odmietnuť z ktorejkoľvek platformy
 3. Môžu nastaviť blokované termíny pre týždne, kedy nemajú čas
 4. Plány možno vytlačiť na nácvik alebo vyvesiť za javiskom
@@ -130,6 +130,6 @@ Váš systém správy dobrovoľníkov je nastavený. Každý týždeň vytvorte 
 - [Úlohy](../serving/tasks.md) — priradenie úloh osobám alebo skupinám
 - [Pracovné postupy](../serving/workflows.md) — posúvanie ľudí cez opakujúce sa procesy pomocou spúšťačov a automatizovaných krokov
 - [Zobrazenie plánov (web)](../../b1-church/plans/viewing-plans.md) — ako dobrovoľníci vidia plány online
-- [Zobrazenie plánov (mobil)](../../b1-mobile/serving/viewing-plans.md) — ako dobrovoľníci vidia plány na mobile
+- [Zobrazenie plánov (mobil)](../../b1-church/plans/viewing-plans.md) — ako dobrovoľníci vidia plány na mobile
 - [Registrácia dobrovoľníkov (web)](../../b1-church/serving/volunteer-signup.md) — ako členovia samostatne vyberajú pozície dobrovoľníkov
-- [Registrácia dobrovoľníkov (mobil)](../../b1-mobile/serving/volunteer-signup.md) — samoobslužná registrácia dobrovoľníkov na mobile
+- [Registrácia dobrovoľníkov (mobil)](../../b1-church/serving/volunteer-signup.md) — samoobslužná registrácia dobrovoľníkov na mobile

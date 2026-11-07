@@ -382,12 +382,6 @@
   "homepage.products.b1website.description": {
     "message": "教会公共网站和会友门户。"
   },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Mobile"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "适用于 iOS 和 Android 的旧版成员应用，现已由 B1.church 网页应用取代。"
-  },
   "homepage.products.b1checkin.title": {
     "message": "B1 Check-in"
   },

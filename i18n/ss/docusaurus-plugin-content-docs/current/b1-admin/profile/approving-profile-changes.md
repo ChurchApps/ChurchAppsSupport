@@ -63,4 +63,4 @@ Qinisekisa kutsi labaphasisi bakho bayili emalungwini aliqembu lelichaziwe — k
 
 - [Kuphatsa Iprofayili Yakho](./managing-profile.md) — Hlela tilungiselelo takho te-akhawunti
 - [Kuhlola Ticelo Tekususa I-Akhawunti](./account-deletion.md) — Inkambu yekuhlola efanako yekususa i-akhawunti
-- [Tilungiselelo te-B1 Mobile](../../b1-mobile/profile/editing-profile.md) — Lesikubonako emalungwini lapho afaka khona tinguquko temaprofayili
+- [Tilungiselelo te-B1 Mobile](../../b1-church/getting-started/editing-your-profile.md) — Lesikubonako emalungwini lapho afaka khona tinguquko temaprofayili

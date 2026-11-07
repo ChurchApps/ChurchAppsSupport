@@ -107,7 +107,7 @@ Prijave lahko omogočite za katerega koli dogodek v koledarju, da se člani lahk
 
 Pri plačljivih dogodkih na isti strani z nastavitvami določite cenovne vrste udeležencev (**Attendee Types**), izbirne dodatke (**Selections**) in popustne kode (**Discount Codes**), plačila pa se zbirajo prek ponudnika darovanj vaše cerkve. Celoten postopek je opisan v [Plačljive prijave](./paid-registrations.md).
 
-Ko so prijave omogočene, bodo člani ob ogledu dogodka na [spletni strani B1](../../b1-church/events/registering.md) ali v [mobilni aplikaciji B1](../../b1-mobile/events/registering.md) videli gumb **Register for this Event**. Če ste priložili obrazec, bodo prijavljenci med prijavo videli korak **Questions**, njihovi odgovori pa bodo shranjeni skupaj s prijavo.
+Ko so prijave omogočene, bodo člani ob ogledu dogodka na [spletni strani B1](../../b1-church/events/registering.md) ali v [mobilni aplikaciji B1](../../b1-church/events/registering.md) videli gumb **Register for this Event**. Če ste priložili obrazec, bodo prijavljenci med prijavo videli korak **Questions**, njihovi odgovori pa bodo shranjeni skupaj s prijavo.
 
 :::info
 Vprašanja ob prijavi delujejo samo z obrazci, ki **niso** označeni kot Restricted. Omejen obrazec se med prijavo samodejno preskoči in ni prikazan, zato za vprašanja pri dogodku uporabite neomejen obrazec.

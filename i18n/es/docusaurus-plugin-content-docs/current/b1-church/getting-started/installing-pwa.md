@@ -98,7 +98,7 @@ La PWA requiere conexión a internet. A diferencia de algunas apps nativas, no g
 
 La antigua app nativa **B1 Mobile** para iOS y Android está obsoleta y ya no se actualiza. La PWA es la forma compatible de acceder al portal de miembros de B1.church desde un teléfono a partir de ahora, y cubre todas las funciones para miembros que ofrecía la app nativa. Si instalaste antes la app nativa, cámbiate a la PWA cuando te convenga.
 
-Consulta la [página de referencia de B1 Mobile](/docs/b1-mobile/) para la documentación histórica de la app obsoleta.
+Consulta la [página de referencia de B1 Mobile](/docs/b1-church/index.md) para la documentación histórica de la app obsoleta.
 
 ## Artículos relacionados
 

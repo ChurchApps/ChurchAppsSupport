@@ -50,7 +50,7 @@ Miután bejelentkeztél, a tagi portálon a következőkhöz férhetsz hozzá:
 A B1.church bármely mobilböngészőben működik. Az alkalmazásszerűbb élményért telepítsd a gyülekezeted tagi portálját **progresszív webalkalmazásként (PWA)** — látogass el a `https://yourchurchname.b1.church/mobile/install` címre az eszközöd típusának megfelelő, lépésenkénti útmutatóért, vagy add hozzá közvetlenül a kezdőképernyődhöz a Safarin vagy a Chrome-on keresztül. Alkalmazásboltra nincs szükség. Az utasításokért lásd: [Telepítés alkalmazásként (PWA)](./installing-pwa.md).
 
 :::info
-A régi, natív B1 Mobile alkalmazás elavult. A PWA a jövőben a támogatott módja annak, hogy telefonon használd a B1.church-öt — a korábbi dokumentációért lásd a [B1 Mobile referenciaoldalt](/docs/b1-mobile/).
+A régi, natív B1 Mobile alkalmazás elavult. A PWA a jövőben a támogatott módja annak, hogy telefonon használd a B1.church-öt — a korábbi dokumentációért lásd a [B1 Mobile referenciaoldalt](/docs/b1-church/index.md).
 :::
 
 ## Következő lépések

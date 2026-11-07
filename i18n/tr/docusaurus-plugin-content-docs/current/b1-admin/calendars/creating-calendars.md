@@ -107,7 +107,7 @@ Takvimi web sitenize eklemek için bir sayfaya bir **Takvim** öğesi ekleyin ve
 
 Ücretli etkinlikler için aynı ayarlar sayfası, fiyatlandırılmış **Katılımcı Türleri**, isteğe bağlı **Seçimler** (ek hizmetler) ve **İndirim Kodları** tanımlamanızı sağlar; ödemeler kilisenizin bağış sağlayıcısı üzerinden alınır. Tam anlatım için bkz. [Ücretli Kayıtlar](./paid-registrations.md).
 
-Kayıt etkinleştirildiğinde, üyeler etkinliği [B1 web sitesinde](../../b1-church/events/registering.md) veya [B1 Mobil uygulamada](../../b1-mobile/events/registering.md) görüntülediklerinde **Bu Etkinlik için Kaydol** düğmesini görecektir. Bir form eklediyseniz, kayıt olanlar kayıt sırasında bir **Sorular** adımını görür ve yanıtları kayıtlarıyla birlikte kaydedilir.
+Kayıt etkinleştirildiğinde, üyeler etkinliği [B1 web sitesinde](../../b1-church/events/registering.md) veya [B1 Mobil uygulamada](../../b1-church/events/registering.md) görüntülediklerinde **Bu Etkinlik için Kaydol** düğmesini görecektir. Bir form eklediyseniz, kayıt olanlar kayıt sırasında bir **Sorular** adımını görür ve yanıtları kayıtlarıyla birlikte kaydedilir.
 
 :::info
 Kayıt Soruları yalnızca **kısıtlı** olarak işaretlenmemiş formlarla çalışır. Kısıtlı bir form, gösterilmek yerine kayıt sırasında otomatik olarak atlanır; bu nedenle etkinliğe soru eklerken kısıtlı olmayan bir form kullanın.

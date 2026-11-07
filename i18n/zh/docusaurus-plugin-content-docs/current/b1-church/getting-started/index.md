@@ -50,7 +50,7 @@ B1.church 是您教会的线上家园。您可以通过它与会众保持联系�
 B1.church 可在任何移动浏览器中使用。如需更接近应用的体验，您可以将教会的会员门户安装为**渐进式网页应用（PWA）**——访问 `https://yourchurchname.b1.church/mobile/install`，即可获取针对您设备的分步指引；也可以直接从 Safari 或 Chrome 将其添加到主屏幕。无需应用商店。详细说明请参阅[安装为应用（PWA）](./installing-pwa.md)。
 
 :::info
-旧版原生 B1 Mobile 应用已停止支持。今后在手机上使用 B1.church 的受支持方式是 PWA——历史文档请参阅 [B1 Mobile 参考页面](/docs/b1-mobile/)。
+旧版原生 B1 Mobile 应用已停止支持。今后在手机上使用 B1.church 的受支持方式是 PWA——历史文档请参阅 [B1 Mobile 参考页面](/docs/b1-church/index.md)。
 :::
 
 ## 后续步骤

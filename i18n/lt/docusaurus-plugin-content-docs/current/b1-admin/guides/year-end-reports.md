@@ -77,7 +77,7 @@ Ataskaitas generuokite ankstyvą sausį, kol įrašai dar šviežūs. Tai suteik
 Pateikite ataskaitas aukotojams.
 
 1. Atspausdinkite ir išsiųskite ataskaitas paštu arba elektroniniu paštu atsiųskite atskirus CSV failus aukotojams
-2. Nariai taip pat gali peržiūrėti savo aukojimo istoriją ir spausdinti ataskaitas iš [B1.church](../../b1-church/giving/donation-history.md) ir [B1 Mobile programėlės](../../b1-mobile/giving/donation-history.md)
+2. Nariai taip pat gali peržiūrėti savo aukojimo istoriją ir spausdinti ataskaitas iš [B1.church](../../b1-church/giving/donation-history.md) ir [B1 Mobile programėlės](../../b1-church/giving/donation-history.md)
 
 ## You're Done!
 

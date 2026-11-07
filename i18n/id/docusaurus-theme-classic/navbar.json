@@ -31,10 +31,6 @@
     "message": "B1 - App",
     "description": "Navbar item with label B1 - App"
   },
-  "item.label.B1 - Mobile": {
-    "message": "B1 - Seluler",
-    "description": "Navbar item with label B1 - Mobile"
-  },
   "item.label.B1 - Checkin": {
     "message": "B1 - Masuk",
     "description": "Navbar item with label B1 - Checkin"

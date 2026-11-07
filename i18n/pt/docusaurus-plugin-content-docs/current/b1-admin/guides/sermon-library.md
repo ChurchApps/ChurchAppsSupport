@@ -84,7 +84,7 @@ Siga o guia [Gerenciando Páginas](../website/managing-pages.md) para:
 
 Os membros podem acessar sermões e cultos ao vivo em qualquer dispositivo.
 
-1. Os membros podem assistir aos sermões no [aplicativo B1 Mobile](../../b1-mobile/content/sermons.md) e no [B1.church](../../b1-church/content/sermons.md)
+1. Os membros podem assistir aos sermões no [aplicativo B1 Mobile](../../b1-church/content/sermons.md) e no [B1.church](../../b1-church/content/sermons.md)
 2. A transmissão ao vivo com chat funciona nas duas plataformas
 
 :::info
@@ -103,4 +103,4 @@ Sua biblioteca de sermões está online e sua transmissão ao vivo está configu
 - [Transmissão ao Vivo](../sermons/live-streaming.md) — configure os cultos ao vivo
 - [Sermões (Web)](../../b1-church/content/sermons.md) — experiência de assistir sermões para membros
 - [Transmissão ao Vivo (Web)](../../b1-church/content/live-streaming.md) — experiência de transmissão ao vivo para membros
-- [Sermões (Mobile)](../../b1-mobile/content/sermons.md) — sermões no aplicativo móvel
+- [Sermões (Mobile)](../../b1-church/content/sermons.md) — sermões no aplicativo móvel

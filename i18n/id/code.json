@@ -382,12 +382,6 @@
   "homepage.products.b1website.description": {
     "message": "Situs web publik gereja dan portal anggota."
   },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Seluler"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Aplikasi anggota lama untuk iOS dan Android, kini digantikan oleh aplikasi web B1.church."
-  },
   "homepage.products.b1checkin.title": {
     "message": "B1 Masuk"
   },

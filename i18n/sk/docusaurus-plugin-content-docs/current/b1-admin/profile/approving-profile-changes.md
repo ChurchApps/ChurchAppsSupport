@@ -63,4 +63,4 @@ Uistite sa, že vaši schvaľovatelia sú skutočne členmi nakonfigurovanej sku
 
 - [Správa vášho profilu](./managing-profile.md) — Úprava nastavení vlastného účtu
 - [Kontrola žiadostí o zrušenie účtu](./account-deletion.md) — Rovnaký postup schvaľovania skupinou pri zrušení účtu
-- [Nastavenia B1 Mobile](../../b1-mobile/profile/editing-profile.md) — Čo členovia vidia pri odoslaní zmeny profilu
+- [Nastavenia B1 Mobile](../../b1-church/getting-started/editing-your-profile.md) — Čo členovia vidia pri odoslaní zmeny profilu

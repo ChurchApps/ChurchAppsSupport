@@ -63,4 +63,4 @@ Ta pati Directory Approval Group peržiūri ir **paskyros ištrynimo prašymus**
 
 - [Jūsų profilio tvarkymas](./managing-profile.md) – Redaguokite savo paskyros nustatymus
 - [Paskyros ištrynimo prašymų peržiūra](./account-deletion.md) – Ta pati patvirtinimo grupės peržiūros eiga paskyros ištrynimui
-- [B1 Mobile nustatymai](../../b1-mobile/profile/editing-profile.md) – Ką nariai mato pateikdami profilio pakeitimą
+- [B1 Mobile nustatymai](../../b1-church/getting-started/editing-your-profile.md) – Ką nariai mato pateikdami profilio pakeitimą

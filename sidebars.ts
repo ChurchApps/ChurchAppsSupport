@@ -345,109 +345,6 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'B1 - Mobile (Deprecated)',
-      link: { type: 'doc', id: 'b1-mobile/index' },
-      items: [
-        {
-          type: 'category',
-          label: 'Getting Started',
-          key: 'mobile-getting-started',
-          link: { type: 'doc', id: 'b1-mobile/getting-started/index' },
-          items: [
-            'b1-mobile/getting-started/installing',
-            'b1-mobile/getting-started/logging-in',
-            'b1-mobile/getting-started/switching-churches',
-          ],
-        },
-        'b1-mobile/dashboard/index',
-        {
-          type: 'category',
-          label: 'Groups',
-          key: 'mobile-groups',
-          link: { type: 'doc', id: 'b1-mobile/groups/index' },
-          items: [
-            'b1-mobile/groups/group-details',
-            'b1-mobile/groups/group-timeline',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Giving',
-          key: 'mobile-giving',
-          link: { type: 'doc', id: 'b1-mobile/giving/index' },
-          items: [
-            'b1-mobile/giving/making-donations',
-            'b1-mobile/giving/managing-payments',
-            'b1-mobile/giving/donation-history',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Events',
-          key: 'mobile-events',
-          link: { type: 'doc', id: 'b1-mobile/events/index' },
-          items: [
-            'b1-mobile/events/registering',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Check-In',
-          key: 'mobile-checkin',
-          link: { type: 'doc', id: 'b1-mobile/checkin/index' },
-          items: [
-            'b1-mobile/checkin/self-checkin',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Serving',
-          key: 'mobile-serving',
-          link: { type: 'doc', id: 'b1-mobile/serving/index' },
-          items: [
-            'b1-mobile/serving/viewing-plans',
-            'b1-mobile/serving/volunteer-signup',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Community',
-          key: 'mobile-community',
-          link: { type: 'doc', id: 'b1-mobile/community/index' },
-          items: [
-            'b1-mobile/community/member-directory',
-            'b1-mobile/community/messaging',
-            'b1-mobile/community/notifications',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Content',
-          key: 'mobile-content',
-          link: { type: 'doc', id: 'b1-mobile/content/index' },
-          items: [
-            'b1-mobile/content/sermons',
-            'b1-mobile/content/live-streaming',
-            'b1-mobile/content/bible',
-            'b1-mobile/content/verse-of-the-day',
-            'b1-mobile/content/lessons',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Profile',
-          key: 'mobile-profile',
-          link: { type: 'doc', id: 'b1-mobile/profile/index' },
-          items: [
-            'b1-mobile/profile/editing-profile',
-            'b1-mobile/profile/household',
-            'b1-mobile/profile/privacy-settings',
-          ],
-        },
-      ],
-    },
-    {
-      type: 'category',
       label: 'B1 - Checkin',
       link: { type: 'doc', id: 'b1-checkin/index' },
       items: [
@@ -688,14 +585,7 @@ const sidebars: SidebarsConfig = {
             'developer/web-apps/lessons-app',
           ],
         },
-        {
-          type: 'category',
-          label: 'Mobile Apps',
-          link: { type: 'doc', id: 'developer/mobile/index' },
-          items: [
-            'developer/mobile/b1-mobile',
-          ],
-        },
+        'developer/mobile/index',
         {
           type: 'category',
           label: 'Shared Libraries',

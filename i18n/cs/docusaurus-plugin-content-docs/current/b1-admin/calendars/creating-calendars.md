@@ -107,7 +107,7 @@ Registraci můžete zapnout u libovolné události v kalendáři, aby se členov
 
 U placených událostí na stejné stránce s nastavením definujete zpoplatněné **Typy účastníků**, volitelné **Výběry** (doplňky) a **Slevové kódy**; platby se přijímají přes poskytovatele darů vašeho sboru. Kompletní postup najdete na stránce [Placené registrace](./paid-registrations.md).
 
-Jakmile je registrace zapnutá, členové uvidí tlačítko **Registrovat se na tuto událost**, když si událost zobrazí na [webu B1](../../b1-church/events/registering.md) nebo v [mobilní aplikaci B1](../../b1-mobile/events/registering.md). Pokud jste připojili formulář, registrující během přihlašování uvidí krok **Otázky** a jejich odpovědi se uloží spolu s registrací.
+Jakmile je registrace zapnutá, členové uvidí tlačítko **Registrovat se na tuto událost**, když si událost zobrazí na [webu B1](../../b1-church/events/registering.md) nebo v [mobilní aplikaci B1](../../b1-church/events/registering.md). Pokud jste připojili formulář, registrující během přihlašování uvidí krok **Otázky** a jejich odpovědi se uloží spolu s registrací.
 
 :::info
 Otázky k registraci fungují pouze s formuláři, které **nejsou** označeny jako Omezený. Omezený formulář se během registrace automaticky přeskočí a nezobrazí se, proto při připojování otázek k události použijte neomezený formulář.

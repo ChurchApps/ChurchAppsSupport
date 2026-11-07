@@ -84,7 +84,7 @@ description: "Увезите проповеди с YouTube или Vimeo, орг�
 
 Чланови могу да приступе проповедима и услугама уживо са било ког уређаја.
 
-1. Чланови могу да гледају проповеди у [B1 Mobile апликацији](../../b1-mobile/content/sermons.md) и на [B1.church](../../b1-church/content/sermons.md)
+1. Чланови могу да гледају проповеди у [B1 Mobile апликацији](../../b1-church/content/sermons.md) и на [B1.church](../../b1-church/content/sermons.md)
 2. Пренос уживо са ћаскањем ради на обе платформе
 
 :::info
@@ -103,4 +103,4 @@ description: "Увезите проповеди с YouTube или Vimeo, орг�
 - [Пренос уживо](../sermons/live-streaming.md) — подешавање услуга уживо
 - [Проповеди (веб)](../../b1-church/content/sermons.md) — искуство гледања проповеди за чланове
 - [Пренос уживо (веб)](../../b1-church/content/live-streaming.md) — искуство гледања преноса уживо за чланове
-- [Проповеди (мобилни)](../../b1-mobile/content/sermons.md) — проповеди у мобилној апликацији
+- [Проповеди (мобилни)](../../b1-church/content/sermons.md) — проповеди у мобилној апликацији

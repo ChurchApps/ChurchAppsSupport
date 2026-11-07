@@ -80,7 +80,7 @@ Volg de gids [Pagina's beheren](../website/managing-pages.md) om:
 
 Leden hebben vanaf elk apparaat toegang tot preken en live services.
 
-1. Leden kunnen preken bekijken in de [B1 Mobiele app](../../b1-mobile/content/sermons.md) en op [B1.church](../../b1-church/content/sermons.md)
+1. Leden kunnen preken bekijken in de [B1 Mobiele app](../../b1-church/content/sermons.md) en op [B1.church](../../b1-church/content/sermons.md)
 2. Live streaming met chat en gebedsverzoeken werkt op beide platforms
 
 :::info
@@ -99,4 +99,4 @@ Uw prekenbibliotheek is online en uw live stream is geconfigureerd. Leden kunnen
 - [Live streaming](../sermons/live-streaming.md) -- live services configureren
 - [Preken (web)](../../b1-church/content/sermons.md) -- ervaring met prekenweergave voor leden
 - [Live streaming (web)](../../b1-church/content/live-streaming.md) -- ervaring met live streaming voor leden
-- [Preken (mobiel)](../../b1-mobile/content/sermons.md) -- preken op de mobiele app
+- [Preken (mobiel)](../../b1-church/content/sermons.md) -- preken op de mobiele app

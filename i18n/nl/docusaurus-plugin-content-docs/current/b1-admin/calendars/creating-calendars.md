@@ -70,7 +70,7 @@ U kunt registratie inschakelen voor elk agenda-event zodat leden zich via de B1-
    - **Tags** -- Met komma's gescheiden labels (bijv. "jongeren, retreat, vbs") om registreerbare events in categorieën in te delen.
 4. Sla het event op.
 
-Zodra registratie is ingeschakeld, zien leden een knop **Registreer voor dit event** wanneer zij het event op de [B1-website](../../b1-church/events/registering.md) of [B1 Mobiele app](../../b1-mobile/events/registering.md) bekijken.
+Zodra registratie is ingeschakeld, zien leden een knop **Registreer voor dit event** wanneer zij het event op de [B1-website](../../b1-church/events/registering.md) of [B1 Mobiele app](../../b1-church/events/registering.md) bekijken.
 
 ### Registraties beheren
 

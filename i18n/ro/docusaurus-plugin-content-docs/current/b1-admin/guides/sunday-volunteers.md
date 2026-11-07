@@ -96,7 +96,7 @@ Lăsați voluntarii să se înscrie singuri pe poziții, în loc să aștepte at
 3. Pentru fiecare poziție, bifați caseta **Permite înscrierea automată** pentru a o face disponibilă pentru auto-înscriere.
 4. Adăugați o **Descriere** la fiecare poziție, ca voluntarii să știe în ce constă rolul.
 
-Odată create pozițiile cu înscriere automată, acestea apar automat pe paginile de înscriere ale voluntarilor de pe [B1.church](../../b1-church/serving/volunteer-signup.md) și din [aplicația mobilă B1](../../b1-mobile/serving/volunteer-signup.md). Membrii pot vedea pozițiile libere, pot vedea câte locuri au rămas și se pot înscrie dintr-un singur clic.
+Odată create pozițiile cu înscriere automată, acestea apar automat pe paginile de înscriere ale voluntarilor de pe [B1.church](../../b1-church/serving/volunteer-signup.md) și din [aplicația mobilă B1](../../b1-church/serving/volunteer-signup.md). Membrii pot vedea pozițiile libere, pot vedea câte locuri au rămas și se pot înscrie dintr-un singur clic.
 
 :::tip
 Combinați în același plan pozițiile atribuite de administrator cu cele cu înscriere automată. De exemplu, atribuiți direct conducătorul de laudă, dar lăsați primitorii și cei care servesc cafeaua să își aleagă singuri locul.
@@ -106,7 +106,7 @@ Combinați în același plan pozițiile atribuite de administrator cu cele cu î
 
 Voluntarii atribuiți își văd automat planurile și pot răspunde.
 
-1. Voluntarii își văd planurile pe [B1.church](../../b1-church/plans/viewing-plans.md) și în [aplicația mobilă B1](../../b1-mobile/serving/viewing-plans.md)
+1. Voluntarii își văd planurile pe [B1.church](../../b1-church/plans/viewing-plans.md) și în [aplicația mobilă B1](../../b1-church/plans/viewing-plans.md)
 2. Pot accepta sau refuza atribuirile direct din oricare platformă
 3. Pot seta date de indisponibilitate pentru săptămânile în care nu sunt disponibili
 4. Planurile pot fi tipărite pentru repetiții sau afișate în spatele scenei
@@ -130,6 +130,6 @@ Sistemul dvs. de gestionare a voluntarilor este configurat. În fiecare săptăm
 - [Sarcini](../serving/tasks.md) — atribuirea acțiunilor persoanelor sau grupurilor
 - [Fluxuri de lucru](../serving/workflows.md) — parcurgerea proceselor repetabile cu declanșatoare și pași automatizați
 - [Vizualizarea planurilor (Web)](../../b1-church/plans/viewing-plans.md) — cum văd voluntarii planurile online
-- [Vizualizarea planurilor (Mobil)](../../b1-mobile/serving/viewing-plans.md) — cum văd voluntarii planurile pe mobil
+- [Vizualizarea planurilor (Mobil)](../../b1-church/plans/viewing-plans.md) — cum văd voluntarii planurile pe mobil
 - [Înscrierea voluntarilor (Web)](../../b1-church/serving/volunteer-signup.md) — cum se pot membrii înscrie singuri pe pozițiile de voluntariat
-- [Înscrierea voluntarilor (Mobil)](../../b1-mobile/serving/volunteer-signup.md) — auto-înscrierea voluntarilor pe mobil
+- [Înscrierea voluntarilor (Mobil)](../../b1-church/serving/volunteer-signup.md) — auto-înscrierea voluntarilor pe mobil

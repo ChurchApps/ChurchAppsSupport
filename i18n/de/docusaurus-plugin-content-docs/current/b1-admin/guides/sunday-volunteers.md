@@ -96,7 +96,7 @@ Lassen Sie Ehrenamtliche sich selbst für Positionen eintragen, statt auf Zuweis
 3. Setzen Sie bei jeder Position das Kästchen **Selbstanmeldung erlauben**, damit sie zur Selbstanmeldung verfügbar ist.
 4. Fügen Sie jeder Position eine **Beschreibung** hinzu, damit Ehrenamtliche wissen, was die Aufgabe umfasst.
 
-Sobald Positionen für die Selbstanmeldung angelegt sind, erscheinen sie automatisch auf den Anmeldeseiten für Ehrenamtliche auf [B1.church](../../b1-church/serving/volunteer-signup.md) und in der [B1-Mobile-App](../../b1-mobile/serving/volunteer-signup.md). Mitglieder können offene Positionen durchsehen, sehen, wie viele Plätze frei sind, und sich mit einem Klick eintragen.
+Sobald Positionen für die Selbstanmeldung angelegt sind, erscheinen sie automatisch auf den Anmeldeseiten für Ehrenamtliche auf [B1.church](../../b1-church/serving/volunteer-signup.md) und in der [B1-Mobile-App](../../b1-church/serving/volunteer-signup.md). Mitglieder können offene Positionen durchsehen, sehen, wie viele Plätze frei sind, und sich mit einem Klick eintragen.
 
 :::tip
 Mischen Sie in einem Plan Positionen mit Zuweisung durch die Verwaltung und Positionen mit Selbstanmeldung. Weisen Sie zum Beispiel Ihre Lobpreisleitung direkt zu, lassen Sie aber Begrüßungsteam und Kaffeeausschank sich selbst eintragen.
@@ -106,7 +106,7 @@ Mischen Sie in einem Plan Positionen mit Zuweisung durch die Verwaltung und Posi
 
 Zugewiesene Ehrenamtliche sehen ihre Pläne automatisch und können darauf antworten.
 
-1. Ehrenamtliche sehen ihre Pläne auf [B1.church](../../b1-church/plans/viewing-plans.md) und in der [B1-Mobile-App](../../b1-mobile/serving/viewing-plans.md)
+1. Ehrenamtliche sehen ihre Pläne auf [B1.church](../../b1-church/plans/viewing-plans.md) und in der [B1-Mobile-App](../../b1-church/plans/viewing-plans.md)
 2. Sie können Einteilungen direkt auf beiden Plattformen zusagen oder absagen
 3. Sie können Sperrtermine für Wochen festlegen, in denen sie nicht verfügbar sind
 4. Pläne können für Proben gedruckt oder hinter der Bühne aufgehängt werden
@@ -130,6 +130,6 @@ Ihr System zur Verwaltung der Ehrenamtlichen ist eingerichtet. Erstellen Sie jed
 - [Aufgaben](../serving/tasks.md) – Aufgaben an Personen oder Gruppen verteilen
 - [Workflows](../serving/workflows.md) – Personen mit Auslösern und automatisierten Schritten durch wiederholbare Abläufe führen
 - [Pläne ansehen (Web)](../../b1-church/plans/viewing-plans.md) – wie Ehrenamtliche Pläne online sehen
-- [Pläne ansehen (Mobil)](../../b1-mobile/serving/viewing-plans.md) – wie Ehrenamtliche Pläne auf dem Handy sehen
+- [Pläne ansehen (Mobil)](../../b1-church/plans/viewing-plans.md) – wie Ehrenamtliche Pläne auf dem Handy sehen
 - [Ehrenamtliche anmelden (Web)](../../b1-church/serving/volunteer-signup.md) – wie Mitglieder Ehrenamts-Positionen selbst auswählen
-- [Ehrenamtliche anmelden (Mobil)](../../b1-mobile/serving/volunteer-signup.md) – Selbstanmeldung für Ehrenamtliche auf dem Handy
+- [Ehrenamtliche anmelden (Mobil)](../../b1-church/serving/volunteer-signup.md) – Selbstanmeldung für Ehrenamtliche auf dem Handy

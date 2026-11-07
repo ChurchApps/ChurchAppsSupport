@@ -80,7 +80,7 @@ Følg vejledningen [Styring af sider](../website/managing-pages.md) for at:
 
 Medlemmer kan få adgang til prædikener og live-tjenester fra enhver enhed.
 
-1. Medlemmer kan se prædikener i [B1 Mobile-appen](../../b1-mobile/content/sermons.md) og på [B1.church](../../b1-church/content/sermons.md)
+1. Medlemmer kan se prædikener i [B1 Mobile-appen](../../b1-church/content/sermons.md) og på [B1.church](../../b1-church/content/sermons.md)
 2. Live streaming med chat og bønheanmodelser virker på begge platforme
 
 :::info
@@ -99,4 +99,4 @@ Dit prædikenbibliothek er online og din live stream er konfigureret. Medlemmer 
 - [Live streaming](../sermons/live-streaming.md) -- konfigurer live-tjenester
 - [Prædikener (Web)](../../b1-church/content/sermons.md) -- medlemmernes prædikenvisningserfaring
 - [Live streaming (Web)](../../b1-church/content/live-streaming.md) -- medlemmernes live stream-erfaring
-- [Prædikener (Mobil)](../../b1-mobile/content/sermons.md) -- prædikener på mobilappen
+- [Prædikener (Mobil)](../../b1-church/content/sermons.md) -- prædikener på mobilappen

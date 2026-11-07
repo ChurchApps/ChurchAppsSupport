@@ -12,7 +12,7 @@ Tạo biểu mẫu đăng ký sự kiện, thu thập thông tin người tham d
 </div>
 
 :::info
-**Hai cách xử lý đăng ký sự kiện:** Hướng dẫn này đề cập đến **đăng ký dựa trên biểu mẫu**, cho phép bạn kiểm soát toàn bộ các trường tùy chỉnh và việc thu thanh toán. Với những sự kiện đơn giản chỉ cần theo dõi ai sẽ tham dự, hãy dùng **đăng ký sự kiện gốc** có sẵn trong lịch -- xem [Tạo lịch](../calendars/creating-calendars.md#enabling-event-registration) để biết hướng dẫn thiết lập. Đăng ký gốc cho phép thành viên đăng ký trực tiếp từ [trang web B1](../../b1-church/events/registering.md) và [ứng dụng di động](../../b1-mobile/events/registering.md), kèm theo theo dõi sức chứa, khoảng thời gian đăng ký và email xác nhận.
+**Hai cách xử lý đăng ký sự kiện:** Hướng dẫn này đề cập đến **đăng ký dựa trên biểu mẫu**, cho phép bạn kiểm soát toàn bộ các trường tùy chỉnh và việc thu thanh toán. Với những sự kiện đơn giản chỉ cần theo dõi ai sẽ tham dự, hãy dùng **đăng ký sự kiện gốc** có sẵn trong lịch -- xem [Tạo lịch](../calendars/creating-calendars.md#enabling-event-registration) để biết hướng dẫn thiết lập. Đăng ký gốc cho phép thành viên đăng ký trực tiếp từ [trang web B1](../../b1-church/events/registering.md) và [ứng dụng di động](../../b1-church/events/registering.md), kèm theo theo dõi sức chứa, khoảng thời gian đăng ký và email xác nhận.
 :::
 
 <div class="prereqs">

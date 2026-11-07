@@ -84,7 +84,7 @@ Sigue la guía de [Administrar páginas](../website/managing-pages.md) para:
 
 Los miembros pueden acceder a los sermones y a los servicios en vivo desde cualquier dispositivo.
 
-1. Los miembros pueden ver los sermones en la [aplicación móvil de B1](../../b1-mobile/content/sermons.md) y en [B1.church](../../b1-church/content/sermons.md)
+1. Los miembros pueden ver los sermones en la [aplicación móvil de B1](../../b1-church/content/sermons.md) y en [B1.church](../../b1-church/content/sermons.md)
 2. La transmisión en vivo con chat funciona en ambas plataformas
 
 :::info
@@ -103,4 +103,4 @@ Tu biblioteca de sermones está en línea y tu transmisión en vivo está config
 - [Transmisión en vivo](../sermons/live-streaming.md): configura los servicios en vivo
 - [Sermones (Web)](../../b1-church/content/sermons.md): experiencia de los miembros para ver sermones
 - [Transmisión en vivo (Web)](../../b1-church/content/live-streaming.md): experiencia de los miembros con la transmisión en vivo
-- [Sermones (móvil)](../../b1-mobile/content/sermons.md): sermones en la aplicación móvil
+- [Sermones (móvil)](../../b1-church/content/sermons.md): sermones en la aplicación móvil

@@ -84,7 +84,7 @@ Urmează ghidul [Gestionarea paginilor](../website/managing-pages.md) pentru a:
 
 Membrii pot accesa predicile și serviciile live de pe orice dispozitiv.
 
-1. Membrii pot viziona predicile în [aplicația B1 Mobile](../../b1-mobile/content/sermons.md) și pe [B1.church](../../b1-church/content/sermons.md)
+1. Membrii pot viziona predicile în [aplicația B1 Mobile](../../b1-church/content/sermons.md) și pe [B1.church](../../b1-church/content/sermons.md)
 2. Transmisiunea live cu chat funcționează pe ambele platforme
 
 :::info
@@ -103,4 +103,4 @@ Biblioteca ta de predici este online, iar transmisiunea live este configurată. 
 - [Transmisiune live](../sermons/live-streaming.md) — configurează serviciile live
 - [Predici (Web)](../../b1-church/content/sermons.md) — experiența membrilor la vizionarea predicilor
 - [Transmisiune live (Web)](../../b1-church/content/live-streaming.md) — experiența membrilor la transmisiunea live
-- [Predici (Mobil)](../../b1-mobile/content/sermons.md) — predici în aplicația mobilă
+- [Predici (Mobil)](../../b1-church/content/sermons.md) — predici în aplicația mobilă

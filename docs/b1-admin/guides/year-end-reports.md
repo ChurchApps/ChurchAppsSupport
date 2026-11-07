@@ -77,7 +77,7 @@ Generate statements early in January while records are fresh. This gives you tim
 Get the statements into your donors' hands.
 
 1. Print and mail statements, or email individual CSVs to donors
-2. Members can also view their own giving history and print statements from [B1.church](../../b1-church/giving/donation-history.md) and the [B1 Mobile app](../../b1-mobile/giving/donation-history.md)
+2. Members can also view their own giving history and print statements on [B1.church or in the B1 App](../../b1-church/giving/donation-history.md)
 
 ## You're Done!
 

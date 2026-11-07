@@ -382,12 +382,6 @@
   "homepage.products.b1website.description": {
     "message": "Javno spletno mesto cerkve in portal za člane."
   },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Mobilni"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Zastarela aplikacija za člane za iOS in Android, ki jo je zdaj nadomestila spletna aplikacija B1.church."
-  },
   "homepage.products.b1checkin.title": {
     "message": "B1 Prijava"
   },

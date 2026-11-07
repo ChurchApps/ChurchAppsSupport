@@ -71,7 +71,7 @@ Jeśli chcesz sprawdzić działanie bez prawdziwych obciążeń, najpierw użyj 
 Poinformuj członków, że mogą już składać darowizny online.
 
 1. Udostępnij adres do darowizn na swojej stronie internetowej, w newsletterach e-mailowych, biuletynach i mediach społecznościowych
-2. Członkowie mogą też składać darowizny w [aplikacji B1 Mobile](../../b1-mobile/giving/index.md) — funkcja darowizn jest w niej wbudowana
+2. Członkowie mogą też składać darowizny w [aplikacji B1 Mobile](../../b1-church/giving/index.md) — funkcja darowizn jest w niej wbudowana
 
 :::info
 Członkowie, którzy się zalogują, mogą zapisywać metody płatności, konfigurować darowizny cykliczne i przeglądać historię swoich darowizn. Darowizny anonimowe również są możliwe — nie jest wymagane logowanie.
@@ -102,4 +102,4 @@ Twój kościół przyjmuje już internetowe darowizny. Członkowie mogą składa
 - [Raporty z darowizn](../donations/donation-reports.md) — przeglądanie trendów i sum darowizn
 - [Zestawienia darowizn](../donations/giving-statements.md) — generowanie rocznych zestawień podatkowych
 - [Składanie darowizn (Web)](../../b1-church/giving/making-donations.md) — doświadczenie darczyńcy na stronie
-- [Składanie darowizn (Mobile)](../../b1-mobile/giving/making-donations.md) — darowizny z aplikacji mobilnej
+- [Składanie darowizn (Mobile)](../../b1-church/giving/making-donations.md) — darowizny z aplikacji mobilnej

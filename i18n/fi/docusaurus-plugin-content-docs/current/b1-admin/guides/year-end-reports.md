@@ -77,7 +77,7 @@ Luo todistukset tammikuun alussa, kun tiedot ovat vielä tuoreita. Näin ehdit k
 Varmista, että todistukset päätyvät lahjoittajille.
 
 1. Tulosta ja postita todistukset tai lähetä yksittäiset CSV-tiedostot lahjoittajille sähköpostitse
-2. Jäsenet voivat myös tarkastella omaa lahjoitushistoriaansa ja tulostaa todistuksia kohdassa [B1.church](../../b1-church/giving/donation-history.md) sekä [B1 Mobile -sovelluksessa](../../b1-mobile/giving/donation-history.md)
+2. Jäsenet voivat myös tarkastella omaa lahjoitushistoriaansa ja tulostaa todistuksia kohdassa [B1.church](../../b1-church/giving/donation-history.md) sekä [B1 Mobile -sovelluksessa](../../b1-church/giving/donation-history.md)
 
 ## Valmista tuli!
 

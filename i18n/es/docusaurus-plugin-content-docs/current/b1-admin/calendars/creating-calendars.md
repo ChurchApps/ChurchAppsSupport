@@ -107,7 +107,7 @@ Puede habilitar la inscripción para cualquier evento del calendario para que lo
 
 Para los eventos de pago, la misma página de configuración le permite definir **Tipos de asistente** con precio, **Selecciones** opcionales (complementos) y **Códigos de descuento**, con el pago cobrado a través del proveedor de donaciones de su iglesia. Consulte [Inscripciones pagadas](./paid-registrations.md) para ver la guía completa.
 
-Una vez habilitada la inscripción, los miembros verán un botón **Inscribirse a este evento** cuando vean el evento en el [sitio web de B1](../../b1-church/events/registering.md) o en la [aplicación móvil de B1](../../b1-mobile/events/registering.md). Si adjuntó un formulario, los inscritos verán un paso de **Preguntas** durante la inscripción, y sus respuestas se guardan junto con su inscripción.
+Una vez habilitada la inscripción, los miembros verán un botón **Inscribirse a este evento** cuando vean el evento en el [sitio web de B1](../../b1-church/events/registering.md) o en la [aplicación móvil de B1](../../b1-church/events/registering.md). Si adjuntó un formulario, los inscritos verán un paso de **Preguntas** durante la inscripción, y sus respuestas se guardan junto con su inscripción.
 
 :::info
 Las preguntas de inscripción solo funcionan con formularios que **no** estén marcados como Restringidos. Un formulario restringido se omite automáticamente durante la inscripción en lugar de mostrarse, así que use un formulario no restringido al adjuntar preguntas a un evento.

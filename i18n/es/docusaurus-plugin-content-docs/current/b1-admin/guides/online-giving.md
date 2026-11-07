@@ -71,7 +71,7 @@ Usa el modo de prueba de Stripe primero si quieres verificar sin cargos reales, 
 Difunde la noticia para que los miembros sepan que pueden dar en línea.
 
 1. Comparte la URL de donaciones a través de tu sitio web, boletines por correo electrónico, hojas informativas y redes sociales
-2. Los miembros también pueden dar a través de la [aplicación B1 Mobile](../../b1-mobile/giving/index.md) — la función de donaciones está integrada
+2. Los miembros también pueden dar a través de la [aplicación B1 Mobile](../../b1-church/giving/index.md) — la función de donaciones está integrada
 
 :::info
 Los miembros que inician sesión pueden guardar métodos de pago, configurar donaciones recurrentes y ver su historial de donaciones. Las donaciones anónimas también funcionan — no se requiere inicio de sesión.
@@ -102,4 +102,4 @@ Tu iglesia ahora acepta donaciones en línea. Los miembros pueden dar a través 
 - [Informes de donaciones](../donations/donation-reports.md) — ver tendencias y totales de donaciones
 - [Estados de cuenta de donaciones](../donations/giving-statements.md) — generar estados de cuenta fiscales de fin de año
 - [Hacer donaciones (Web)](../../b1-church/giving/making-donations.md) — la experiencia del miembro al donar
-- [Hacer donaciones (Móvil)](../../b1-mobile/giving/making-donations.md) — donar desde la aplicación móvil
+- [Hacer donaciones (Móvil)](../../b1-church/giving/making-donations.md) — donar desde la aplicación móvil

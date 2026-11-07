@@ -50,7 +50,7 @@ Po přihlášení vám členský portál nabízí:
 B1.church funguje v libovolném mobilním prohlížeči. Pro zážitek podobný aplikaci nainstalujte členský portál vaší církve jako **progresivní webovou aplikaci (PWA)**. Návod podle typu vašeho zařízení najdete na adrese `https://yourchurchname.b1.church/mobile/install`, nebo můžete web přidat na plochu přímo z Safari či Chrome. Není potřeba žádný obchod s aplikacemi. Postup najdete v článku [Instalace jako aplikace (PWA)](./installing-pwa.md).
 
 :::info
-Starší nativní aplikace B1 Mobile byla zastaralá. Do budoucna je pro používání B1.church v telefonu podporována PWA. Historickou dokumentaci najdete na stránce [Referenční stránka B1 Mobile](/docs/b1-mobile/).
+Starší nativní aplikace B1 Mobile byla zastaralá. Do budoucna je pro používání B1.church v telefonu podporována PWA. Historickou dokumentaci najdete na stránce [Referenční stránka B1 Mobile](/docs/b1-church/index.md).
 :::
 
 ## Další kroky

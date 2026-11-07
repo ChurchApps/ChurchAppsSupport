@@ -95,7 +95,7 @@ Vumela emavolontiya kutibhalisela tikhundla esikhundleni sekulindzela kwabelwa n
 3. Kusikhundla ngasinye, hlolisa lebhokisi le-**Vumela Kubhalisela Ngekutimela** kute sitfolakale kubhalisela ngekutimela.
 4. Faka **Incazelo** kusikhundla ngasinye kute emavolontiya atati kutsi loluluhlobo lomsebenti luhlanganisani.
 
-Nasekwakhiwe tikhundla tekubhalisela ngekutimela, tivela ngekutinelela emakhasini ekubhalisela emavolontiya ku-[B1.church](../../b1-church/serving/volunteer-signup.md) na ku-[app ye-B1 Mobile](../../b1-mobile/serving/volunteer-signup.md). Emalunga angabhonga tikhundla letivulekile, abone kutsi kusale tindzawo letingaki, bese abhalisela ngesigcotjo sinye.
+Nasekwakhiwe tikhundla tekubhalisela ngekutimela, tivela ngekutinelela emakhasini ekubhalisela emavolontiya ku-[B1.church](../../b1-church/serving/volunteer-signup.md) na ku-[app ye-B1 Mobile](../../b1-church/serving/volunteer-signup.md). Emalunga angabhonga tikhundla letivulekile, abone kutsi kusale tindzawo letingaki, bese abhalisela ngesigcotjo sinye.
 
 :::tip
 Hlanganisa tikhundla lezabelwa ngumphatsi nalezekubhalisela ngekutimela kuluhlelo lunye. Sibonelo, wabele umholi wakho wekukhulekela ngco kepha uvumele bemukeli nebasebentisi bekhofi kutibhalisela.
@@ -105,7 +105,7 @@ Hlanganisa tikhundla lezabelwa ngumphatsi nalezekubhalisela ngekutimela kuluhlel
 
 Emavolontiya labelwe abona ngekutinelela emahlelo abo bese bangaphendvula.
 
-1. Emavolontiya abona emahlelo abo ku-[B1.church](../../b1-church/plans/viewing-plans.md) na ku-[app ye-B1 Mobile](../../b1-mobile/serving/viewing-plans.md)
+1. Emavolontiya abona emahlelo abo ku-[B1.church](../../b1-church/plans/viewing-plans.md) na ku-[app ye-B1 Mobile](../../b1-church/plans/viewing-plans.md)
 2. Bangemukela nobe banke lokwabelwe kubo ngco kunome ngukuphi luhlelo lwalobubili
 3. Bangasetinga tikhatsi tekungatfolakali kwemasonto langeke bakhona
 4. Emahlelo angashicilelwa kwekuhlolisa nobe afakwe ngemuva kwendzawo
@@ -129,6 +129,6 @@ Luhlelo lwakho lwekuphatsa emavolontiya selusetiwe. Sonto ngalinye, yakha luhlel
 - [Imisebenti](../serving/tasks.md) — wabele imisebenti kubantfu nobe emacembu
 - [Kuzenzakalisa](../serving/workflows.md) — zenzakalise imisebenti lephindaphindako
 - [Kubuka Emahlelo (Web)](../../b1-church/plans/viewing-plans.md) — indlela emavolontiya abona ngayo emahlelo nge-web
-- [Kubuka Emahlelo (Mobile)](../../b1-mobile/serving/viewing-plans.md) — indlela emavolontiya abona ngayo emahlelo nge-mobile
+- [Kubuka Emahlelo (Mobile)](../../b1-church/plans/viewing-plans.md) — indlela emavolontiya abona ngayo emahlelo nge-mobile
 - [Kubhalisela Emavolontiya (Web)](../../b1-church/serving/volunteer-signup.md) — indlela emalunga atikhetsela ngayo tikhundla temavolontiya
-- [Kubhalisela Emavolontiya (Mobile)](../../b1-mobile/serving/volunteer-signup.md) — kubhalisela emavolontiya nge-mobile
+- [Kubhalisela Emavolontiya (Mobile)](../../b1-church/serving/volunteer-signup.md) — kubhalisela emavolontiya nge-mobile

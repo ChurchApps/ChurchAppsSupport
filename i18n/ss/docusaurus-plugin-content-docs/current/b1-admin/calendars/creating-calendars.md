@@ -68,7 +68,7 @@ Ungakwati kuvula kubhalisa kunoma ngumuphi umcimbi wekhalenda kuze emalunga akwa
 
 Kwimicimbi lekhokhelwako, likhasi lelifanako letinhlelo likuvumela kuchaza **Attendee Types** letinemtsengo, **Selections** letikhetsekako (tintfo letengetiwe), ne-**Discount Codes**, kukhokha kubuthwa ngekusebentisa umniki-msebenti wemnikelo webandla lakho. Buka [Kubhalisa Lokukhokhelwako](./paid-registrations.md) kutfola inchubo lengagcwele.
 
-Nangabe kubhalisa sekuvuliwe, emalunga atawubona inkinobho ye-**Register for this Event** nababuka umcimbi ku-[webusayithi ye-B1](../../b1-church/events/registering.md) nome ku-[app ye-B1 Mobile](../../b1-mobile/events/registering.md). Nangabe uhlanganise ifomu, labhalisile babona sinyatselo se-**Questions** ngesikhatsi sekubhalisa futsi timphendvulo tabo tiyagcinwa nekubhalisa kwabo.
+Nangabe kubhalisa sekuvuliwe, emalunga atawubona inkinobho ye-**Register for this Event** nababuka umcimbi ku-[webusayithi ye-B1](../../b1-church/events/registering.md) nome ku-[app ye-B1 Mobile](../../b1-church/events/registering.md). Nangabe uhlanganise ifomu, labhalisile babona sinyatselo se-**Questions** ngesikhatsi sekubhalisa futsi timphendvulo tabo tiyagcinwa nekubhalisa kwabo.
 
 :::info
 Registration Questions isebenta kuphela nemafomu **langakaphawulwa** njenge Restricted. Ifomu leliphawulwe njenge Restricted liyaeqiwa ngalokutentekelako ngesikhatsi sekubhalisa esikhundleni sekuvezwa, ngako sebentisa ifomu lelingakaphawulwa nawuhlanganisa imibuto kumcimbi.

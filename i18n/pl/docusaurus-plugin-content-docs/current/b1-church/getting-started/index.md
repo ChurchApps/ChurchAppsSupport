@@ -50,7 +50,7 @@ Po zalogowaniu portal członka daje Ci dostęp do:
 B1.church działa w każdej mobilnej przeglądarce. Aby uzyskać bardziej aplikacyjne wrażenia, zainstaluj portal członka kościoła jako **progresywną aplikację internetową (PWA)**. Odwiedź adres `https://nazwakosciola.b1.church/mobile/install`, aby zobaczyć instrukcje dopasowane do Twojego urządzenia, lub dodaj stronę do ekranu głównego bezpośrednio z Safari lub Chrome. Nie potrzebujesz sklepu z aplikacjami. Instrukcje znajdziesz w artykule [Instalacja jako aplikacji (PWA)](./installing-pwa.md).
 
 :::info
-Starsza natywna aplikacja B1 Mobile została wycofana. Od tej pory obsługiwaną metodą korzystania z B1.church na telefonie jest PWA. Dokumentację historyczną znajdziesz na [stronie referencyjnej B1 Mobile](/docs/b1-mobile/).
+Starsza natywna aplikacja B1 Mobile została wycofana. Od tej pory obsługiwaną metodą korzystania z B1.church na telefonie jest PWA. Dokumentację historyczną znajdziesz na [stronie referencyjnej B1 Mobile](/docs/b1-church/index.md).
 :::
 
 ## Następne kroki

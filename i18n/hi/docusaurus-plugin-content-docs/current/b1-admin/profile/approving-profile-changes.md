@@ -63,4 +63,4 @@ Task automatically close हो जाएगा एक बार जब changes 
 
 - [अपने Profile को प्रबंधित करना](./managing-profile.md) — अपनी खुद की account settings को edit करें
 - [Account Deletion Requests को Review करना](./account-deletion.md) — account deletion के लिए समान approval-group review flow
-- [B1 Mobile Settings](../../b1-mobile/profile/editing-profile.md) — जो सदस्य देखते हैं जब वे profile change submit करते हैं
+- [B1 Mobile Settings](../../b1-church/getting-started/editing-your-profile.md) — जो सदस्य देखते हैं जब वे profile change submit करते हैं

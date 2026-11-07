@@ -63,4 +63,4 @@ description: "راجع طلبات تغيير الملف الشخصي للأعض�
 
 - [إدارة ملفك الشخصي](./managing-profile.md) — تعديل إعدادات حسابك الخاص
 - [مراجعة طلبات حذف الحساب](./account-deletion.md) — تدفق المراجعة نفسه عبر مجموعة الموافقة لحذف الحساب
-- [إعدادات B1 Mobile](../../b1-mobile/profile/editing-profile.md) — ما يراه الأعضاء عند تقديم تغيير في الملف الشخصي
+- [إعدادات B1 Mobile](../../b1-church/getting-started/editing-your-profile.md) — ما يراه الأعضاء عند تقديم تغيير في الملف الشخصي

@@ -77,7 +77,7 @@ Generuj zaświadczenia na początku stycznia, gdy dane są jeszcze świeże. Dzi
 Dostarcz zaświadczenia do rąk darczyńców.
 
 1. Wydrukuj i wyślij zaświadczenia pocztą lub prześlij poszczególne pliki CSV darczyńcom e-mailem
-2. Członkowie mogą również przeglądać własną historię darowizn i drukować zaświadczenia w [B1.church](../../b1-church/giving/donation-history.md) oraz w [aplikacji B1 Mobile](../../b1-mobile/giving/donation-history.md)
+2. Członkowie mogą również przeglądać własną historię darowizn i drukować zaświadczenia w [B1.church](../../b1-church/giving/donation-history.md) oraz w [aplikacji B1 Mobile](../../b1-church/giving/donation-history.md)
 
 ## Gotowe!
 

@@ -96,7 +96,7 @@ Gönüllülerin yönetici atamalarını beklemek yerine pozisyonlara kendilerini
 3. Her pozisyon için, kendi kendine kayıt için kullanılabilir olması amacıyla **Kendi Kendine Kayda İzin Ver** kutusunu işaretleyin.
 4. Gönüllülerin rolün neler içerdiğini bilmesi için her pozisyona bir **Açıklama** ekleyin.
 
-Kendi kendine kayıt pozisyonları oluşturulduğunda, [B1.church](../../b1-church/serving/volunteer-signup.md) ve [B1 Mobile uygulamasındaki](../../b1-mobile/serving/volunteer-signup.md) gönüllü kayıt sayfalarında otomatik olarak görünür. Üyeler açık pozisyonlara göz atabilir, kalan yer sayısını görebilir ve tek tıklamayla kaydolabilir.
+Kendi kendine kayıt pozisyonları oluşturulduğunda, [B1.church](../../b1-church/serving/volunteer-signup.md) ve [B1 Mobile uygulamasındaki](../../b1-church/serving/volunteer-signup.md) gönüllü kayıt sayfalarında otomatik olarak görünür. Üyeler açık pozisyonlara göz atabilir, kalan yer sayısını görebilir ve tek tıklamayla kaydolabilir.
 
 :::tip
 Aynı planda yönetici tarafından atanan ve kendi kendine kayıt olunan pozisyonları karıştırın. Örneğin, ibadet liderinizi doğrudan atayın, ancak karşılayıcıların ve kahve servis görevlilerinin kendileri seçmesine izin verin.
@@ -106,7 +106,7 @@ Aynı planda yönetici tarafından atanan ve kendi kendine kayıt olunan pozisyo
 
 Atanan gönüllüler planlarını otomatik olarak görür ve yanıt verebilir.
 
-1. Gönüllüler planlarını [B1.church](../../b1-church/plans/viewing-plans.md) ve [B1 Mobile uygulamasında](../../b1-mobile/serving/viewing-plans.md) görür
+1. Gönüllüler planlarını [B1.church](../../b1-church/plans/viewing-plans.md) ve [B1 Mobile uygulamasında](../../b1-church/plans/viewing-plans.md) görür
 2. Atamaları her iki platformdan doğrudan kabul edebilir veya reddedebilirler
 3. Müsait olmadıkları haftalar için engelleme tarihleri belirleyebilirler
 4. Planlar prova için yazdırılabilir veya sahne arkasına asılabilir
@@ -130,6 +130,6 @@ Gönüllü yönetim sisteminiz kurulmuş durumda. Her hafta yeni bir plan oluşt
 - [Görevler](../serving/tasks.md) — kişilere veya gruplara eylem öğeleri atayın
 - [İş Akışları](../serving/workflows.md) — tetikleyiciler ve otomatik adımlarla kişileri tekrarlanabilir süreçlerden geçirin
 - [Planları Görüntüleme (Web)](../../b1-church/plans/viewing-plans.md) — gönüllülerin planları çevrim içi nasıl gördüğü
-- [Planları Görüntüleme (Mobil)](../../b1-mobile/serving/viewing-plans.md) — gönüllülerin planları mobilde nasıl gördüğü
+- [Planları Görüntüleme (Mobil)](../../b1-church/plans/viewing-plans.md) — gönüllülerin planları mobilde nasıl gördüğü
 - [Gönüllü Kaydı (Web)](../../b1-church/serving/volunteer-signup.md) — üyelerin gönüllü pozisyonlarını kendilerinin seçmesi
-- [Gönüllü Kaydı (Mobil)](../../b1-mobile/serving/volunteer-signup.md) — mobilde gönüllü kendi kendine kaydı
+- [Gönüllü Kaydı (Mobil)](../../b1-church/serving/volunteer-signup.md) — mobilde gönüllü kendi kendine kaydı

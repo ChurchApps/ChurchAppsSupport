@@ -71,7 +71,7 @@ Ha valós terhelés nélkül szeretné ellenőrizni a működést, először has
 Hírdesse meg, hogy a tagok tudjanak online adakozni.
 
 1. Ossza meg az adományozási webcímet a weboldalán, e-mail hírlevelekben, hirdetőlapokon és a közösségi médiában
-2. A tagok a [B1 Mobile alkalmazáson](../../b1-mobile/giving/index.md) keresztül is adakozhatnak – az adományozási funkció beépítve megtalálható
+2. A tagok a [B1 Mobile alkalmazáson](../../b1-church/giving/index.md) keresztül is adakozhatnak – az adományozási funkció beépítve megtalálható
 
 :::info
 A bejelentkezett tagok menthetik fizetési módjaikat, beállíthatnak ismétlődő adományokat, és megtekinthetik adománytörténetüket. Bejelentkezés nélküli, névtelen adakozásra is van lehetőség.
@@ -102,4 +102,4 @@ A gyülekezete mostantól fogad online adományokat. A tagok a weboldalon, a B1 
 - [Adományjelentések](../donations/donation-reports.md) – adakozási tendenciák és összegek megtekintése
 - [Adománykimutatások](../donations/giving-statements.md) – évvégi adóügyi kimutatások készítése
 - [Adakozás (webes)](../../b1-church/giving/making-donations.md) – a tagok adakozási élménye
-- [Adakozás (mobil)](../../b1-mobile/giving/making-donations.md) – adakozás a mobilalkalmazásból
+- [Adakozás (mobil)](../../b1-church/giving/making-donations.md) – adakozás a mobilalkalmazásból

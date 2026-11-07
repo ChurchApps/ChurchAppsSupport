@@ -50,7 +50,7 @@ Kun olet kirjautunut sisään, jäsenportaali antaa sinulle pääsyn seuraaviin:
 B1.church toimii millä tahansa mobiiliselaimella. Sovellusmaisempaa kokemusta varten voit asentaa seurakuntasi jäsenportaalin **progressiiviseksi web-sovellukseksi (PWA)**. Avaa `https://yourchurchname.b1.church/mobile/install` saadaksesi ohjeet laitteellesi, tai lisää sivusto suoraan aloitusnäytölle Safarista tai Chromesta. Sovelluskauppaa ei tarvita. Ohjeet löydät kohdasta [Sovelluksen asentaminen (PWA)](./installing-pwa.md).
 
 :::info
-Vanhentunut natiivi B1 Mobile -sovellus on poistettu käytöstä. Jatkossa PWA on tuettu tapa käyttää B1.churchia puhelimella. Historiallista dokumentaatiota löydät [B1 Mobile -viitesivulta](/docs/b1-mobile/).
+Vanhentunut natiivi B1 Mobile -sovellus on poistettu käytöstä. Jatkossa PWA on tuettu tapa käyttää B1.churchia puhelimella. Historiallista dokumentaatiota löydät [B1 Mobile -viitesivulta](/docs/b1-church/index.md).
 :::
 
 ## Seuraavat vaiheet

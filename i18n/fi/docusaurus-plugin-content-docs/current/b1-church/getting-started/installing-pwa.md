@@ -98,7 +98,7 @@ PWA edellyttää internet-yhteyttä. Toisin kuin jotkin natiivisovellukset, se e
 
 iOS:n ja Androidin vanha natiivi **B1 Mobile** -sovellus on poistettu käytöstä, eikä sitä enää päivitetä. PWA on tästedes tuettu tapa käyttää B1.churchin jäsenportaalia puhelimella, ja se kattaa kaikki jäsenille suunnatut ominaisuudet, joita natiivisovellus tarjosi. Jos olet aiemmin asentanut natiivisovelluksen, siirry PWA:han omaan tahtiisi.
 
-Katso poistetun sovelluksen historiallinen dokumentaatio [B1 Mobile -viitesivulta](/docs/b1-mobile/).
+Katso poistetun sovelluksen historiallinen dokumentaatio [B1 Mobile -viitesivulta](/docs/b1-church/index.md).
 
 ## Aiheeseen liittyvät artikkelit
 

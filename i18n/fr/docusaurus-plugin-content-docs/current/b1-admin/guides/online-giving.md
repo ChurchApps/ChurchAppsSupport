@@ -71,7 +71,7 @@ Utilisez d'abord le mode test de Stripe si vous souhaitez vérifier sans frais r
 Faites passer le mot pour que les membres sachent qu'ils peuvent donner en ligne.
 
 1. Partagez l'URL de dons via votre site web, vos newsletters par e-mail, vos bulletins et les réseaux sociaux
-2. Les membres peuvent également donner via l'[application B1 Mobile](../../b1-mobile/giving/index.md) -- la fonctionnalité de don est intégrée
+2. Les membres peuvent également donner via l'[application B1 Mobile](../../b1-church/giving/index.md) -- la fonctionnalité de don est intégrée
 
 :::info
 Les membres qui se connectent peuvent enregistrer leurs moyens de paiement, configurer des dons récurrents et consulter leur historique de dons. Le don anonyme fonctionne aussi -- aucune connexion requise.
@@ -102,4 +102,4 @@ Votre église accepte désormais les dons en ligne. Les membres peuvent donner v
 - [Rapports de dons](../donations/donation-reports.md) -- consulter les tendances et les totaux des dons
 - [Relevés de dons](../donations/giving-statements.md) -- générer les relevés fiscaux de fin d'année
 - [Effectuer un don (Web)](../../b1-church/giving/making-donations.md) -- l'expérience de don des membres
-- [Effectuer un don (Mobile)](../../b1-mobile/giving/making-donations.md) -- donner depuis l'application mobile
+- [Effectuer un don (Mobile)](../../b1-church/giving/making-donations.md) -- donner depuis l'application mobile

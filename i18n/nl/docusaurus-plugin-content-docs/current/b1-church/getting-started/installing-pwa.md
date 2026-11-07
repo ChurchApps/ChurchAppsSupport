@@ -76,10 +76,10 @@ Beide opties geven je toegang tot het B1.church-lidmaatschapsportaal. De juiste 
 | Platform | Elk apparaat met een browser | iOS en Android |
 
 :::tip
-Als je kerk groepsgesprekken gebruikt en je push-meldingen wilt voor nieuwe berichten en activiteit, gebruik je in plaats daarvan de [B1 Mobile app](/docs/b1-mobile/). Push-meldingen worden momenteel niet ondersteund in de PWA.
+Als je kerk groepsgesprekken gebruikt en je push-meldingen wilt voor nieuwe berichten en activiteit, gebruik je in plaats daarvan de [B1 Mobile app](/docs/b1-church/index.md). Push-meldingen worden momenteel niet ondersteund in de PWA.
 :::
 
 ## Gerelateerde artikelen
 
 - [Aanmelden](./logging-in.md) — Hoe je je bij je B1.church-account aanmeldt
-- [B1 Mobile — App installeren](/docs/b1-mobile/getting-started/installing) — Download de native iOS/Android app
+- [B1 Mobile — App installeren](/docs/b1-church/getting-started/installing-pwa.md) — Download de native iOS/Android app

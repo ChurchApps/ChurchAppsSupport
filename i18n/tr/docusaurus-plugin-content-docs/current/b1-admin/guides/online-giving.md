@@ -71,7 +71,7 @@ Gerçek ücret almadan doğrulamak istiyorsanız önce Stripe'ın test modunu ku
 Üyelerin çevrimiçi bağış yapabileceğini bilmeleri için duyurun.
 
 1. Bağış adresini web siteniz, e-posta bültenleriniz, ibadet bültenleriniz ve sosyal medya hesaplarınız üzerinden paylaşın
-2. Üyeler ayrıca [B1 Mobile uygulaması](../../b1-mobile/giving/index.md) üzerinden bağış yapabilir — bağış özelliği uygulamaya dahildir
+2. Üyeler ayrıca [B1 Mobile uygulaması](../../b1-church/giving/index.md) üzerinden bağış yapabilir — bağış özelliği uygulamaya dahildir
 
 :::info
 Giriş yapan üyeler ödeme yöntemlerini kaydedebilir, düzenli bağışlar ayarlayabilir ve bağış geçmişlerini görüntüleyebilir. Anonim bağış da yapılabilir — giriş yapmak gerekmez.
@@ -102,4 +102,4 @@ Kiliseniz artık çevrimiçi bağış kabul ediyor. Üyeler web siteniz, B1 Mobi
 - [Bağış Raporları](../donations/donation-reports.md) — bağış eğilimlerini ve toplamlarını görüntüleyin
 - [Bağış Belgeleri](../donations/giving-statements.md) — yıl sonu vergi belgeleri oluşturun
 - [Bağış Yapma (Web)](../../b1-church/giving/making-donations.md) — üyelerin bağış deneyimi
-- [Bağış Yapma (Mobil)](../../b1-mobile/giving/making-donations.md) — mobil uygulamadan bağış yapma
+- [Bağış Yapma (Mobil)](../../b1-church/giving/making-donations.md) — mobil uygulamadan bağış yapma

@@ -73,11 +73,11 @@ Migrating from Breeze? The import tool brings everything over in one step — pe
 
 ## Step 5: Configure the Mobile App
 
-Customize the B1 Mobile app experience for your congregation.
+Customize the B1 App experience for your congregation.
 
 Follow the [Mobile App Settings](../settings/mobile-app.md) guide to:
 
-1. Customize which tabs appear in the B1 Mobile app for your members
+1. Customize which tabs appear in the B1 App for your members
 2. Set tab names, icons, and types (Bible, Live Stream, Donation, Website, etc.)
 3. Control which features are visible to your congregation
 

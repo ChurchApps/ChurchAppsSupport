@@ -95,10 +95,6 @@
     "message": "Nilalaman",
     "description": "The label for category 'Content' in sidebar 'docsSidebar'"
   },
-  "sidebar.docsSidebar.category.B1 - Mobile": {
-    "message": "B1 - Mobile",
-    "description": "The label for category 'B1 - Mobile' in sidebar 'docsSidebar'"
-  },
   "sidebar.docsSidebar.category.mobile-getting-started": {
     "message": "Pagsisimula",
     "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
@@ -246,10 +242,6 @@
   "sidebar.docsSidebar.category.church-serving": {
     "message": "Paglilingkod",
     "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
-  },
-  "sidebar.docsSidebar.category.B1 - Mobile (Deprecated)": {
-    "message": "B1 - Mobile (Hindi na Ginagamit)",
-    "description": "The label for category 'B1 - Mobile (Deprecated)' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.mobile-events": {
     "message": "Mga Event",

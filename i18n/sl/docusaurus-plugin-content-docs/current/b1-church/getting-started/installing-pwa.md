@@ -98,7 +98,7 @@ PWA zahteva internetno povezavo. Za razliko od nekaterih pravih aplikacij ne pre
 
 Stara domača aplikacija **B1 Mobile** za iOS in Android je zastarela in se ne posodablja več. PWA je podprt način dostopa do portala za člane B1.church na telefonu, saj pokriva vse funkcije za člane, ki jih je ponujala domača aplikacija. Če ste prej namestili domačo aplikacijo, preklopite na PWA, ko vam ustreza.
 
-Zgodovinsko dokumentacijo o zastareli aplikaciji najdete na [strani z referenco B1 Mobile](/docs/b1-mobile/).
+Zgodovinsko dokumentacijo o zastareli aplikaciji najdete na [strani z referenco B1 Mobile](/docs/b1-church/index.md).
 
 ## Sorodni članki
 

@@ -63,4 +63,4 @@ Tiyaking talagang miyembro ng na-configure na group ang inyong mga taga-apruba �
 
 - [Pamamahala ng Inyong Profile](./managing-profile.md) — I-edit ang sarili ninyong mga setting ng account
 - [Pagsusuri sa mga Kahilingan sa Pagbura ng Account](./account-deletion.md) — Ang parehong proseso ng pagsusuri ng approval group para sa pagbura ng account
-- [Mga Setting ng B1 Mobile](../../b1-mobile/profile/editing-profile.md) — Ang nakikita ng mga miyembro kapag nagsumite sila ng pagbabago sa profile
+- [Mga Setting ng B1 Mobile](../../b1-church/getting-started/editing-your-profile.md) — Ang nakikita ng mga miyembro kapag nagsumite sila ng pagbabago sa profile

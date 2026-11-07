@@ -63,4 +63,4 @@ Asigurați-vă că aprobatorii sunt chiar membri ai grupului configurat — doar
 
 - [Gestionarea profilului dvs.](./managing-profile.md) — Editați setările propriului cont
 - [Analizarea cererilor de ștergere a contului](./account-deletion.md) — Același flux de analiză prin grupul de aprobare pentru ștergerea contului
-- [Setările B1 Mobile](../../b1-mobile/profile/editing-profile.md) — Ce văd membrii atunci când trimit o modificare a profilului
+- [Setările B1 Mobile](../../b1-church/getting-started/editing-your-profile.md) — Ce văd membrii atunci când trimit o modificare a profilului

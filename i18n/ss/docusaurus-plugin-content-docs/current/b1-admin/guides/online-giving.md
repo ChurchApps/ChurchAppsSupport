@@ -71,7 +71,7 @@ Sebentisa simo sekuhlola se-Stripe kucala nangabe ufuna kucinisekisa ngaphandle 
 Sakata indzaba kute emalunga atati kutsi angakwati kunikela nge-inthanethi.
 
 1. Yabelana nge-URL yemnikelo nge-website, ema-imeyili, ticwatibho, kanye ne-social media
-2. Emalunga angakwati futsi kunikela nge-[app ye-B1 Mobile](../../b1-mobile/giving/index.md) — sici semnikelo sakhiwe ngekhatsi
+2. Emalunga angakwati futsi kunikela nge-[app ye-B1 Mobile](../../b1-church/giving/index.md) — sici semnikelo sakhiwe ngekhatsi
 
 :::info
 Emalunga langena angagcina tindlela tekukhokha, ahlele imnikelo lephindaphindakako, futsi abuke umlandvo wawo wemnikelo. Kunikela ngaphandle kwelibito nako kuyasebenta — akudzingeki kungena.
@@ -102,4 +102,4 @@ Libandla lakho selivemukela manje imnikelo ye-inthanethi. Emalunga angakwati kun
 - [Imibiko Yemnikelo](../donations/donation-reports.md) — buka tinjani nemitamba yemnikelo
 - [Tincwadzi Temnikelo](../donations/giving-statements.md) — yenta tincwadzi telicala lomnyaka tentela
 - [Kwenta Imnikelo (Web)](../../b1-church/giving/making-donations.md) — indlela lunga labelene ngayo
-- [Kwenta Imnikelo (Mobile)](../../b1-mobile/giving/making-donations.md) — kunikela kusuka ku-app yeselula
+- [Kwenta Imnikelo (Mobile)](../../b1-church/giving/making-donations.md) — kunikela kusuka ku-app yeselula

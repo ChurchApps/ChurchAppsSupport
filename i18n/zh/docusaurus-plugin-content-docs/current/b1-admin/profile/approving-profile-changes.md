@@ -63,4 +63,4 @@ description: "在 B1 Admin 中审核并批准会员的个人资料变更请求�
 
 - [管理您的资料](./managing-profile.md) -- 编辑您自己的账户设置
 - [审查账户删除请求](./account-deletion.md) -- 相同的批准群组审查流程用于账户删除
-- [B1 Mobile 设置](../../b1-mobile/profile/editing-profile.md) -- 成员在提交资料更改时看到的内容
+- [B1 Mobile 设置](../../b1-church/getting-started/editing-your-profile.md) -- 成员在提交资料更改时看到的内容

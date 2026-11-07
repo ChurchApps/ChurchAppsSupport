@@ -120,7 +120,7 @@ Klik **Save** untuk menerapkan.
 
 Tab yang Anda konfigurasi di sini ditampilkan di **PWA B1.church** yang diinstal anggota Anda dari halaman mana pun di `https://yourchurchname.b1.church`. Perubahan yang Anda buat di halaman ini akan tercermin saat anggota membuka aplikasi berikutnya.
 
-Di ponsel, bilah tab bawah menampilkan **Home**, hingga tiga tab Anda, dan **More**; di komputer, header menampilkan hingga lima. Layar bawaan (seperti Sermons, Giving, atau Groups) mendapat slot lebih dulu, dan tab **Internal Page** mengisi slot yang tersisa. Tab **External URL** dan **Verse of the Day** tidak pernah mendapat slot. Setiap tab, termasuk yang tidak muat, tercantum di halaman **More** aplikasi. Lihat [Menavigasi B1App](/docs/b1-church/getting-started/navigating) untuk melihat apa yang dilihat anggota. (Tab juga ditampilkan oleh [aplikasi native B1 Mobile](/docs/b1-mobile/) lama bagi anggota yang masih menggunakannya, tetapi aplikasi tersebut sudah tidak digunakan lagi dan tidak lagi diperbarui.)
+Di ponsel, bilah tab bawah menampilkan **Home**, hingga tiga tab Anda, dan **More**; di komputer, header menampilkan hingga lima. Layar bawaan (seperti Sermons, Giving, atau Groups) mendapat slot lebih dulu, dan tab **Internal Page** mengisi slot yang tersisa. Tab **External URL** dan **Verse of the Day** tidak pernah mendapat slot. Setiap tab, termasuk yang tidak muat, tercantum di halaman **More** aplikasi. Lihat [Menavigasi B1App](/docs/b1-church/getting-started/navigating) untuk melihat apa yang dilihat anggota. (Tab juga ditampilkan oleh [aplikasi native B1 Mobile](/docs/b1-church/index.md) lama bagi anggota yang masih menggunakannya, tetapi aplikasi tersebut sudah tidak digunakan lagi dan tidak lagi diperbarui.)
 
 ## Langkah Selanjutnya
 

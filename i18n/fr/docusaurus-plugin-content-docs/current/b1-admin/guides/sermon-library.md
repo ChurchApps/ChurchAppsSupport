@@ -84,7 +84,7 @@ Suivez le guide [Managing Pages](../website/managing-pages.md) pour :
 
 Les membres peuvent accéder aux sermons et aux cultes en direct depuis n'importe quel appareil.
 
-1. Les membres peuvent regarder les sermons dans l'[application mobile B1](../../b1-mobile/content/sermons.md) et sur [B1.church](../../b1-church/content/sermons.md)
+1. Les membres peuvent regarder les sermons dans l'[application mobile B1](../../b1-church/content/sermons.md) et sur [B1.church](../../b1-church/content/sermons.md)
 2. La diffusion en direct avec clavardage fonctionne sur les deux plateformes
 
 :::info
@@ -103,4 +103,4 @@ Votre bibliothèque de sermons est en ligne et votre diffusion en direct est con
 - [Live Streaming](../sermons/live-streaming.md) — configurer les cultes en direct
 - [Sermons (Web)](../../b1-church/content/sermons.md) — expérience de visionnage des sermons pour les membres
 - [Live Streaming (Web)](../../b1-church/content/live-streaming.md) — expérience de diffusion en direct pour les membres
-- [Sermons (Mobile)](../../b1-mobile/content/sermons.md) — sermons sur l'application mobile
+- [Sermons (Mobile)](../../b1-church/content/sermons.md) — sermons sur l'application mobile

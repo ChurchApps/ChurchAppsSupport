@@ -96,7 +96,7 @@ Cho phép tình nguyện viên tự đăng ký vào các vị trí thay vì ch�
 3. Với mỗi vị trí, chọn ô **Cho phép tự đăng ký** để vị trí đó sẵn sàng cho việc tự phục vụ.
 4. Thêm **Mô tả** cho từng vị trí để tình nguyện viên biết vai trò đó bao gồm những gì.
 
-Sau khi tạo các vị trí tự đăng ký, chúng sẽ tự động xuất hiện trên các trang đăng ký tình nguyện viên tại [B1.church](../../b1-church/serving/volunteer-signup.md) và [ứng dụng di động B1](../../b1-mobile/serving/volunteer-signup.md). Thành viên có thể xem các vị trí còn trống, biết còn bao nhiêu chỗ và đăng ký chỉ với một lần nhấn.
+Sau khi tạo các vị trí tự đăng ký, chúng sẽ tự động xuất hiện trên các trang đăng ký tình nguyện viên tại [B1.church](../../b1-church/serving/volunteer-signup.md) và [ứng dụng di động B1](../../b1-church/serving/volunteer-signup.md). Thành viên có thể xem các vị trí còn trống, biết còn bao nhiêu chỗ và đăng ký chỉ với một lần nhấn.
 
 :::tip
 Kết hợp các vị trí do quản trị viên phân công và các vị trí tự đăng ký trong cùng một kế hoạch. Ví dụ, phân công trực tiếp người dẫn dắt ngợi khen nhưng để nhóm đón tiếp và nhóm phục vụ cà phê tự chọn vị trí.
@@ -106,7 +106,7 @@ Kết hợp các vị trí do quản trị viên phân công và các vị trí 
 
 Tình nguyện viên được phân công sẽ tự động thấy kế hoạch của mình và có thể phản hồi.
 
-1. Tình nguyện viên xem kế hoạch trên [B1.church](../../b1-church/plans/viewing-plans.md) và [ứng dụng di động B1](../../b1-mobile/serving/viewing-plans.md)
+1. Tình nguyện viên xem kế hoạch trên [B1.church](../../b1-church/plans/viewing-plans.md) và [ứng dụng di động B1](../../b1-church/plans/viewing-plans.md)
 2. Họ có thể chấp nhận hoặc từ chối phân công trực tiếp từ một trong hai nền tảng
 3. Họ có thể đặt ngày bận cho những tuần không tham gia được
 4. Kế hoạch có thể in ra để tập dượt hoặc dán sau sân khấu
@@ -130,6 +130,6 @@ Hệ thống quản lý tình nguyện viên của bạn đã được thiết l
 - [Nhiệm vụ](../serving/tasks.md) — giao các việc cần làm cho người hoặc nhóm
 - [Quy trình tự động](../serving/workflows.md) — đưa người qua các quy trình lặp lại bằng trình kích hoạt và các bước tự động
 - [Xem kế hoạch (Web)](../../b1-church/plans/viewing-plans.md) — cách tình nguyện viên xem kế hoạch trực tuyến
-- [Xem kế hoạch (Di động)](../../b1-mobile/serving/viewing-plans.md) — cách tình nguyện viên xem kế hoạch trên điện thoại
+- [Xem kế hoạch (Di động)](../../b1-church/plans/viewing-plans.md) — cách tình nguyện viên xem kế hoạch trên điện thoại
 - [Đăng ký tình nguyện viên (Web)](../../b1-church/serving/volunteer-signup.md) — cách thành viên tự chọn vị trí tình nguyện
-- [Đăng ký tình nguyện viên (Di động)](../../b1-mobile/serving/volunteer-signup.md) — tự đăng ký tình nguyện trên điện thoại
+- [Đăng ký tình nguyện viên (Di động)](../../b1-church/serving/volunteer-signup.md) — tự đăng ký tình nguyện trên điện thoại

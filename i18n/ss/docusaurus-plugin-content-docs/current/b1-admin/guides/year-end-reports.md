@@ -77,7 +77,7 @@ Yenta tincwadzi ekucaleni kwaJanuwari ngesikhatsi emarekhodi asesha. Loku kukuph
 Faka tincwadzi etandleni tebasunikeli bakho.
 
 1. Shicilela bese utfumela tincwadzi ngeposi, nobe utfumele ema-CSV lahlukene ngeimeyili kubasunikeli
-2. Emalunga angabuka nako umlandvo wawo wemnikelo bese ashicilela tincwadzi kusuka ku-[B1.church](../../b1-church/giving/donation-history.md) naku-[app ye-B1 Mobile](../../b1-mobile/giving/donation-history.md)
+2. Emalunga angabuka nako umlandvo wawo wemnikelo bese ashicilela tincwadzi kusuka ku-[B1.church](../../b1-church/giving/donation-history.md) naku-[app ye-B1 Mobile](../../b1-church/giving/donation-history.md)
 
 ## Usucedzile!
 

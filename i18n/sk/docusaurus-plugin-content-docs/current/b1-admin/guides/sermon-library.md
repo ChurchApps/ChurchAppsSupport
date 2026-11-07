@@ -90,7 +90,7 @@ Podľa návodu [Správa stránok](../website/managing-pages.md) môžete:
 
 Členovia môžu pristupovať ku kázňam a živým bohoslužbám z ľubovoľného zariadenia.
 
-1. Členovia môžu sledovať kázne v aplikácii [B1 Mobile](../../b1-mobile/content/sermons.md) a na [B1.church](../../b1-church/content/sermons.md)
+1. Členovia môžu sledovať kázne v aplikácii [B1 Mobile](../../b1-church/content/sermons.md) a na [B1.church](../../b1-church/content/sermons.md)
 2. Živé vysielanie s chatom funguje na oboch platformách
 
 :::info
@@ -109,4 +109,4 @@ Vaša knižnica kázní je online a živé vysielanie je nastavené. Členovia s
 - [Živé vysielanie](../sermons/live-streaming.md) — nastavenie živých bohoslužieb
 - [Kázne (web)](../../b1-church/content/sermons.md) — prezeranie kázní členmi
 - [Živé vysielanie (web)](../../b1-church/content/live-streaming.md) — sledovanie živého prenosu členmi
-- [Kázne (mobil)](../../b1-mobile/content/sermons.md) — kázne v mobilnej aplikácii
+- [Kázne (mobil)](../../b1-church/content/sermons.md) — kázne v mobilnej aplikácii

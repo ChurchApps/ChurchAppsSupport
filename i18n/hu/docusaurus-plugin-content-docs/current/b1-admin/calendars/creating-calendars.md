@@ -107,7 +107,7 @@ Bármelyik naptáresemény esetén engedélyezheti a regisztrációt, hogy a tag
 
 Fizetős eseményeknél ugyanezen a beállítási oldalon megadhat árazott **résztvevőtípusokat**, opcionális **kiegészítőket** (Selections) és **kedvezménykódokat**. A fizetés a gyülekezete adományozási szolgáltatóján keresztül történik. A teljes útmutatóért lásd: [Fizetős regisztrációk](./paid-registrations.md).
 
-Ha a regisztráció engedélyezve van, a tagok a **Regisztráció erre az eseményre** gombot fogják látni, amikor megtekintik az eseményt a [B1 weboldalon](../../b1-church/events/registering.md) vagy a [B1 mobilalkalmazásban](../../b1-mobile/events/registering.md). Ha csatolt egy űrlapot, a regisztrálók a regisztráció során egy **Kérdések** lépést látnak, és válaszaik a regisztrációjukkal együtt mentésre kerülnek.
+Ha a regisztráció engedélyezve van, a tagok a **Regisztráció erre az eseményre** gombot fogják látni, amikor megtekintik az eseményt a [B1 weboldalon](../../b1-church/events/registering.md) vagy a [B1 mobilalkalmazásban](../../b1-church/events/registering.md). Ha csatolt egy űrlapot, a regisztrálók a regisztráció során egy **Kérdések** lépést látnak, és válaszaik a regisztrációjukkal együtt mentésre kerülnek.
 
 :::info
 A regisztrációs kérdések csak olyan űrlapokkal működnek, amelyek **nincsenek** korlátozottként megjelölve. A korlátozott űrlap regisztráció közben automatikusan kimarad, nem jelenik meg, ezért eseményhez kérdések csatolásakor nem korlátozott űrlapot használjon.

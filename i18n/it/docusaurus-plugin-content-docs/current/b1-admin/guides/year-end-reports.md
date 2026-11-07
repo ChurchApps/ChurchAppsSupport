@@ -77,7 +77,7 @@ Genera dichiarazioni all'inizio di gennaio mentre i record sono freschi. Questo 
 Metti le dichiarazioni nelle mani dei tuoi donatori.
 
 1. Stampa e invia dichiarazioni per posta, o invia CSV individuali ai donatori via email
-2. I membri possono anche visualizzare la loro storia di donazione e stampare dichiarazioni da [B1.church](../../b1-church/giving/donation-history.md) e dall'[app Mobile B1](../../b1-mobile/giving/donation-history.md)
+2. I membri possono anche visualizzare la loro storia di donazione e stampare dichiarazioni da [B1.church](../../b1-church/giving/donation-history.md) e dall'[app Mobile B1](../../b1-church/giving/donation-history.md)
 
 ## Fatto!
 

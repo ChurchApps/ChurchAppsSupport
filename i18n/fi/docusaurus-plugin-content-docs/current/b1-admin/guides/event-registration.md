@@ -12,7 +12,7 @@ Luo tapahtumailmoittautumislomake, kerää osallistujien tiedot ja valinnaiset m
 </div>
 
 :::info
-**Kaksi tapaa hoitaa tapahtumailmoittautumista:** Tämä opas käsittelee **lomakepohjaista ilmoittautumista**, jonka avulla hallitset täysin mukautettuja kenttiä ja maksujen keräämistä. Yksinkertaisempiin tapahtumiin, joissa tarvitset vain tiedon siitä, kuka on tulossa, käytä kalenteriin sisäänrakennettua **natiivia tapahtumailmoittautumista** -- katso asennusohjeet kohdasta [Kalenterien luominen](../calendars/creating-calendars.md#enabling-event-registration). Natiivi ilmoittautuminen mahdollistaa jäsenten ilmoittautumisen suoraan [B1-verkkosivustolta](../../b1-church/events/registering.md) ja [mobiilisovelluksesta](../../b1-mobile/events/registering.md) kapasiteetin seurannalla, päivämääräikkunoilla ja sähköpostivahvistuksilla.
+**Kaksi tapaa hoitaa tapahtumailmoittautumista:** Tämä opas käsittelee **lomakepohjaista ilmoittautumista**, jonka avulla hallitset täysin mukautettuja kenttiä ja maksujen keräämistä. Yksinkertaisempiin tapahtumiin, joissa tarvitset vain tiedon siitä, kuka on tulossa, käytä kalenteriin sisäänrakennettua **natiivia tapahtumailmoittautumista** -- katso asennusohjeet kohdasta [Kalenterien luominen](../calendars/creating-calendars.md#enabling-event-registration). Natiivi ilmoittautuminen mahdollistaa jäsenten ilmoittautumisen suoraan [B1-verkkosivustolta](../../b1-church/events/registering.md) ja [mobiilisovelluksesta](../../b1-church/events/registering.md) kapasiteetin seurannalla, päivämääräikkunoilla ja sähköpostivahvistuksilla.
 :::
 
 <div class="prereqs">

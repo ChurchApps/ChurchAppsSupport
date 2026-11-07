@@ -71,7 +71,7 @@ Hãy dùng chế độ thử nghiệm (test mode) của Stripe trước nếu b�
 Hãy cho mọi người biết để họ biết rằng họ có thể quyên góp trực tuyến.
 
 1. Chia sẻ địa chỉ quyên góp qua website, bản tin email, tờ thông báo và mạng xã hội
-2. Thành viên cũng có thể quyên góp qua [ứng dụng B1 Mobile](../../b1-mobile/giving/index.md) — tính năng quyên góp đã được tích hợp sẵn
+2. Thành viên cũng có thể quyên góp qua [ứng dụng B1 Mobile](../../b1-church/giving/index.md) — tính năng quyên góp đã được tích hợp sẵn
 
 :::info
 Thành viên đã đăng nhập có thể lưu phương thức thanh toán, thiết lập quyên góp định kỳ và xem lịch sử quyên góp. Quyên góp ẩn danh cũng được hỗ trợ — không cần đăng nhập.
@@ -102,4 +102,4 @@ Hội thánh của bạn giờ đã có thể nhận quyên góp trực tuyến.
 - [Báo cáo quyên góp](../donations/donation-reports.md) — xem xu hướng và tổng số quyên góp
 - [Báo cáo quyên góp cuối năm](../donations/giving-statements.md) — tạo báo cáo thuế cuối năm
 - [Quyên góp (Web)](../../b1-church/giving/making-donations.md) — trải nghiệm quyên góp của thành viên trên web
-- [Quyên góp (Mobile)](../../b1-mobile/giving/making-donations.md) — quyên góp từ ứng dụng di động
+- [Quyên góp (Mobile)](../../b1-church/giving/making-donations.md) — quyên góp từ ứng dụng di động

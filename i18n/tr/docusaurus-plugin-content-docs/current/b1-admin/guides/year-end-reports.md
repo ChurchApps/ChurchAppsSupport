@@ -77,7 +77,7 @@ Kayıtlar taze kalırken Ocak ayının başında belgeleri oluşturun. Bu, posta
 Belgeleri bağışçılarınızın eline ulaştırın.
 
 1. Belgeleri yazdırıp postalayın veya ayrı CSV dosyalarını bağışçılara e-posta ile gönderin
-2. Üyeler kendi bağış geçmişlerini görüntüleyebilir ve belgelerini [B1.church](../../b1-church/giving/donation-history.md) ile [B1 Mobile uygulamasından](../../b1-mobile/giving/donation-history.md) yazdırabilir
+2. Üyeler kendi bağış geçmişlerini görüntüleyebilir ve belgelerini [B1.church](../../b1-church/giving/donation-history.md) ile [B1 Mobile uygulamasından](../../b1-church/giving/donation-history.md) yazdırabilir
 
 ## Tamamlandı!
 

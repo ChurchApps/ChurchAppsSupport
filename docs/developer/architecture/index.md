@@ -23,7 +23,7 @@ ChurchApps is ~20 independent repositories (not a monorepo). Client apps talk to
 │  B1App      member portal +    │ ─────────▶ │   giving        messaging     doing          │
 │             church websites    │            │                                              │
 │  B1Checkin  check-in kiosk     │ ◀───WS───▶ │   one MySQL database per module (6 total)    │
-│  B1Mobile   (maintenance-only) │            └──────────────────────────────────────────────┘
+│                                │            └──────────────────────────────────────────────┘
 │  FreePlay   TV content player  │            ┌──────────────────────────────────────────────┐
 └───────────────┬────────────────┘            │  LessonsApi — Lessons.church backend         │
                 │                             └──────────────────────────────────────────────┘

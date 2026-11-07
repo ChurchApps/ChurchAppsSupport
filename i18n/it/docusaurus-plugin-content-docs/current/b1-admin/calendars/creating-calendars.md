@@ -107,7 +107,7 @@ Puoi attivare l'iscrizione per qualsiasi evento del calendario, così i membri p
 
 Per gli eventi a pagamento, la stessa pagina di impostazioni ti permette di definire **Tipi di partecipante** con prezzo, **Selezioni** facoltative (extra) e **Codici sconto**, con il pagamento raccolto tramite il fornitore di donazioni della tua chiesa. Vedi [Iscrizioni a pagamento](./paid-registrations.md) per la guida completa.
 
-Una volta attivata l'iscrizione, i membri vedranno un pulsante **Iscriviti a questo evento** quando visualizzano l'evento sul [sito web B1](../../b1-church/events/registering.md) o nell'[app mobile B1](../../b1-mobile/events/registering.md). Se hai allegato un modulo, chi si iscrive vede un passaggio **Domande** durante la registrazione e le sue risposte vengono salvate insieme all'iscrizione.
+Una volta attivata l'iscrizione, i membri vedranno un pulsante **Iscriviti a questo evento** quando visualizzano l'evento sul [sito web B1](../../b1-church/events/registering.md) o nell'[app mobile B1](../../b1-church/events/registering.md). Se hai allegato un modulo, chi si iscrive vede un passaggio **Domande** durante la registrazione e le sue risposte vengono salvate insieme all'iscrizione.
 
 :::info
 Le Domande di iscrizione funzionano solo con moduli che **non** sono contrassegnati come Riservati. Un modulo riservato viene saltato automaticamente durante l'iscrizione invece di essere mostrato, quindi usa un modulo non riservato quando alleghi domande a un evento.

@@ -95,10 +95,6 @@
     "message": "Nội dung",
     "description": "The label for category 'Content' in sidebar 'docsSidebar'"
   },
-  "sidebar.docsSidebar.category.B1 - Mobile": {
-    "message": "B1 - Di động",
-    "description": "The label for category 'B1 - Mobile' in sidebar 'docsSidebar'"
-  },
   "sidebar.docsSidebar.category.mobile-getting-started": {
     "message": "Bắt đầu",
     "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
@@ -246,10 +242,6 @@
   "sidebar.docsSidebar.category.church-serving": {
     "message": "Phục vụ",
     "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
-  },
-  "sidebar.docsSidebar.category.B1 - Mobile (Deprecated)": {
-    "message": "B1 - Mobile (Không còn hỗ trợ)",
-    "description": "The label for category 'B1 - Mobile (Deprecated)' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.mobile-events": {
     "message": "Sự kiện",

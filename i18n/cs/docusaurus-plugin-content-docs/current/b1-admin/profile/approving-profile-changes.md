@@ -63,4 +63,4 @@ Ujistěte se, že vaši schvalovatelé jsou skutečně členy nakonfigurované s
 
 - [Správa vašeho profilu](./managing-profile.md) — Úprava nastavení vlastního účtu
 - [Kontrola žádostí o smazání účtu](./account-deletion.md) — Stejný postup kontroly schvalovací skupinou pro smazání účtu
-- [Nastavení B1 Mobile](../../b1-mobile/profile/editing-profile.md) — Co členové vidí při odeslání změny profilu
+- [Nastavení B1 Mobile](../../b1-church/getting-started/editing-your-profile.md) — Co členové vidí při odeslání změny profilu

@@ -77,7 +77,7 @@ Générez les relevés en début janvier lorsque les enregistrements sont à jou
 Mettez les relevés entre les mains de vos donateurs.
 
 1. Imprimez et envoyez par la poste les relevés, ou envoyez les CSV individuels par e-mail aux donateurs
-2. Les membres peuvent également consulter leur propre historique de dons et imprimer les relevés à partir de [B1.church](../../b1-church/giving/donation-history.md) et l'[application mobile B1](../../b1-mobile/giving/donation-history.md)
+2. Les membres peuvent également consulter leur propre historique de dons et imprimer les relevés à partir de [B1.church](../../b1-church/giving/donation-history.md) et l'[application mobile B1](../../b1-church/giving/donation-history.md)
 
 ## C'est fini !
 

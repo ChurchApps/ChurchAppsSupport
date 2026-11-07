@@ -71,7 +71,7 @@ Gamitin muna ang test mode ng Stripe kung gusto mong mag-verify nang walang toto
 Ikalat ang balita para malaman ng mga miyembro na maaari na silang magbigay online.
 
 1. Ibahagi ang giving URL sa pamamagitan ng inyong website, email newsletter, bulletin, at social media
-2. Maaari ring magbigay ang mga miyembro sa pamamagitan ng [B1 Mobile app](../../b1-mobile/giving/index.md) — kasama na ang giving feature
+2. Maaari ring magbigay ang mga miyembro sa pamamagitan ng [B1 Mobile app](../../b1-church/giving/index.md) — kasama na ang giving feature
 
 :::info
 Ang mga miyembrong naka-log in ay maaaring mag-save ng paraan ng pagbabayad, mag-set up ng paulit-ulit na donasyon, at tingnan ang kanilang kasaysayan ng pagbibigay. Gumagana rin ang anonymous na pagbibigay — hindi kailangan ng login.
@@ -102,4 +102,4 @@ Tumatanggap na ngayon ng online na donasyon ang inyong simbahan. Maaaring magbig
 - [Mga Ulat ng Donasyon](../donations/donation-reports.md) — tingnan ang mga trend at kabuuan ng pagbibigay
 - [Mga Giving Statement](../donations/giving-statements.md) — gumawa ng mga year-end tax statement
 - [Pagbibigay ng Donasyon (Web)](../../b1-church/giving/making-donations.md) — karanasan ng miyembro sa pagbibigay
-- [Pagbibigay ng Donasyon (Mobile)](../../b1-mobile/giving/making-donations.md) — pagbibigay mula sa mobile app
+- [Pagbibigay ng Donasyon (Mobile)](../../b1-church/giving/making-donations.md) — pagbibigay mula sa mobile app

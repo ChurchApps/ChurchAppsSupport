@@ -77,7 +77,7 @@ Skapa beskeden tidigt i januari medan uppgifterna är färska. Då har du tid at
 Se till att beskeden når dina givare.
 
 1. Skriv ut och skicka beskeden med post, eller skicka individuella CSV-filer till givarna via e-post
-2. Medlemmar kan också se sin egen gävohistorik och skriva ut besked från [B1.church](../../b1-church/giving/donation-history.md) och [B1 Mobile-appen](../../b1-mobile/giving/donation-history.md)
+2. Medlemmar kan också se sin egen gävohistorik och skriva ut besked från [B1.church](../../b1-church/giving/donation-history.md) och [B1 Mobile-appen](../../b1-church/giving/donation-history.md)
 
 ## Klart!
 

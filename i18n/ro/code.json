@@ -382,12 +382,6 @@
   "homepage.products.b1website.description": {
     "message": "Site web public al bisericii și portal pentru membri."
   },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Mobil"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Aplicația veche pentru membri, pentru iOS și Android, înlocuită acum de aplicația web B1.church."
-  },
   "homepage.products.b1checkin.title": {
     "message": "B1 Înregistrare"
   },

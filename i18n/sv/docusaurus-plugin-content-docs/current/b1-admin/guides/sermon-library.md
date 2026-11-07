@@ -84,7 +84,7 @@ Följ guiden [Hantera sidor](../website/managing-pages.md) för att:
 
 Medlemmar kan komma åt predikningar och livegudstjänster från vilken enhet som helst.
 
-1. Medlemmar kan se predikningar i [B1 Mobile-appen](../../b1-mobile/content/sermons.md) och på [B1.church](../../b1-church/content/sermons.md)
+1. Medlemmar kan se predikningar i [B1 Mobile-appen](../../b1-church/content/sermons.md) och på [B1.church](../../b1-church/content/sermons.md)
 2. Livesändning med chatt fungerar på båda plattformarna
 
 :::info
@@ -103,4 +103,4 @@ Ditt predikoarkiv är online och din livesändning är konfigurerad. Medlemmar k
 - [Livesändning](../sermons/live-streaming.md) — konfigurera livegudstjänster
 - [Predikningar (webb)](../../b1-church/content/sermons.md) — medlemmarnas upplevelse av predikningar
 - [Livesändning (webb)](../../b1-church/content/live-streaming.md) — medlemmarnas upplevelse av livesändning
-- [Predikningar (mobil)](../../b1-mobile/content/sermons.md) — predikningar i mobilappen
+- [Predikningar (mobil)](../../b1-church/content/sermons.md) — predikningar i mobilappen

@@ -116,7 +116,7 @@ Begge er av som standard. En seksjon vises bare for medlemmer som er innlogget o
 
 Fanene du konfigurerer her, vises i **B1.church PWA** som medlemmene dine installerer fra en hvilken som helst side på `https://yourchurchname.b1.church`. Endringer du gjør på denne siden, vises neste gang et medlem åpner appen.
 
-På en telefon viser fanelinjen nederst **Hjem**, opptil tre av fanene dine og **Mer**; på en datamaskin viser topptekstlinjen opptil fem. Innebygde skjermer (som Taler, Gaver eller Grupper) får plassene først, og faner for **Intern side** fyller eventuelle ledige plasser. Faner for **Ekstern URL** og **Dagens vers** får aldri en plass. Hver fane, også de som ikke får plass, står oppført på appens side **Mer**. Se [Navigere i B1App](/docs/b1-church/getting-started/navigating) for hva medlemmene ser. (Faner gjengis også av den eldre [B1 Mobile-appen](/docs/b1-mobile/) for medlemmer som fortsatt bruker den, men den appen er utfaset og oppdateres ikke lenger.)
+På en telefon viser fanelinjen nederst **Hjem**, opptil tre av fanene dine og **Mer**; på en datamaskin viser topptekstlinjen opptil fem. Innebygde skjermer (som Taler, Gaver eller Grupper) får plassene først, og faner for **Intern side** fyller eventuelle ledige plasser. Faner for **Ekstern URL** og **Dagens vers** får aldri en plass. Hver fane, også de som ikke får plass, står oppført på appens side **Mer**. Se [Navigere i B1App](/docs/b1-church/getting-started/navigating) for hva medlemmene ser. (Faner gjengis også av den eldre [B1 Mobile-appen](/docs/b1-church/index.md) for medlemmer som fortsatt bruker den, men den appen er utfaset og oppdateres ikke lenger.)
 
 ## Neste steg
 

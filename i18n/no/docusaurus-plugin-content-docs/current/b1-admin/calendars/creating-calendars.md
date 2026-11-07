@@ -107,7 +107,7 @@ Du kan aktivere påmelding for alle kalenderarrangementer, slik at medlemmer kan
 
 For betalte arrangementer lar den samme innstillingssiden deg definere prissatte **deltakertyper**, eventuelle **valg** (tilleggsvarer) og **rabattkoder**, med betaling som innkreves gjennom kirkens giveleverandør. Se [Betalte påmeldinger](./paid-registrations.md) for hele gjennomgangen.
 
-Når påmelding er aktivert, vil medlemmer se en knapp **Meld deg på dette arrangementet** når de viser arrangementet på [B1-nettstedet](../../b1-church/events/registering.md) eller [B1-mobilappen](../../b1-mobile/events/registering.md). Hvis du har knyttet et skjema, får de påmeldte et trinn for **Spørsmål** under påmeldingen, og svarene deres lagres sammen med påmeldingen.
+Når påmelding er aktivert, vil medlemmer se en knapp **Meld deg på dette arrangementet** når de viser arrangementet på [B1-nettstedet](../../b1-church/events/registering.md) eller [B1-mobilappen](../../b1-church/events/registering.md). Hvis du har knyttet et skjema, får de påmeldte et trinn for **Spørsmål** under påmeldingen, og svarene deres lagres sammen med påmeldingen.
 
 :::info
 Påmeldingsspørsmål fungerer bare med skjemaer som **ikke** er merket som begrenset. Et begrenset skjema hoppes automatisk over under påmeldingen i stedet for å vises, så bruk et ubegrenset skjema når du knytter spørsmål til et arrangement.

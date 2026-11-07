@@ -63,4 +63,4 @@ Certifique-se de que seus aprovadores sejam realmente membros do grupo configura
 
 - [Gerenciando Seu Perfil](./managing-profile.md) -- Editar suas próprias configurações de conta
 - [Revisando Solicitações de Exclusão de Conta](./account-deletion.md) -- O mesmo fluxo de revisão do grupo de aprovação para exclusão de conta
-- [Configurações do B1 Mobile](../../b1-mobile/profile/editing-profile.md) -- O que os membros veem quando enviam uma alteração de perfil
+- [Configurações do B1 Mobile](../../b1-church/getting-started/editing-your-profile.md) -- O que os membros veem quando enviam uma alteração de perfil

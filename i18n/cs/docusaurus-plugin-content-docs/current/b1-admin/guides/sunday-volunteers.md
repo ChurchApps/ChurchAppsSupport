@@ -96,7 +96,7 @@ Umožněte dobrovolníkům přihlásit se na pozice sami, místo čekání na p�
 3. U každé pozice zaškrtněte políčko **Povolit přihlášení sám**, aby byla dostupná pro samoobslužné přihlašování.
 4. U každé pozice přidejte **Popis**, aby dobrovolníci věděli, co roli obnáší.
 
-Jakmile jsou pozice pro samoobslužné přihlašování vytvořeny, automaticky se objeví na stránkách pro přihlášení dobrovolníků na [B1.church](../../b1-church/serving/volunteer-signup.md) a v [mobilní aplikaci B1](../../b1-mobile/serving/volunteer-signup.md). Členové mohou procházet volné pozice, vidět, kolik míst zbývá, a přihlásit se jedním kliknutím.
+Jakmile jsou pozice pro samoobslužné přihlašování vytvořeny, automaticky se objeví na stránkách pro přihlášení dobrovolníků na [B1.church](../../b1-church/serving/volunteer-signup.md) a v [mobilní aplikaci B1](../../b1-church/serving/volunteer-signup.md). Členové mohou procházet volné pozice, vidět, kolik míst zbývá, a přihlásit se jedním kliknutím.
 
 :::tip
 Kombinujte pozice přiřazené správcem a pozice pro samoobslužné přihlášení ve stejném plánu. Například vedoucího chval přiřaďte přímo, ale uvítací tým a obsluhu kávy nechte, aby si vybrali sami.
@@ -106,7 +106,7 @@ Kombinujte pozice přiřazené správcem a pozice pro samoobslužné přihláše
 
 Přiřazení dobrovolníci automaticky vidí své plány a mohou na ně reagovat.
 
-1. Dobrovolníci vidí své plány na [B1.church](../../b1-church/plans/viewing-plans.md) a v [mobilní aplikaci B1](../../b1-mobile/serving/viewing-plans.md)
+1. Dobrovolníci vidí své plány na [B1.church](../../b1-church/plans/viewing-plans.md) a v [mobilní aplikaci B1](../../b1-church/plans/viewing-plans.md)
 2. Přiřazení mohou přijmout nebo odmítnout přímo na kterékoli z těchto platforem
 3. Mohou nastavit blokované termíny pro týdny, kdy nemohou sloužit
 4. Plány lze vytisknout pro zkoušky nebo vyvěsit v zákulisí
@@ -130,6 +130,6 @@ Váš systém správy dobrovolníků je nastaven. Každý týden vytvořte nový
 - [Úkoly](../serving/tasks.md) — přidělování akčních úkolů osobám nebo skupinám
 - [Pracovní postupy](../serving/workflows.md) — provádění opakovatelných procesů pomocí spouštěčů a automatických kroků
 - [Zobrazení plánů (web)](../../b1-church/plans/viewing-plans.md) — jak dobrovolníci vidí plány online
-- [Zobrazení plánů (mobil)](../../b1-mobile/serving/viewing-plans.md) — jak dobrovolníci vidí plány v mobilu
+- [Zobrazení plánů (mobil)](../../b1-church/plans/viewing-plans.md) — jak dobrovolníci vidí plány v mobilu
 - [Přihlášení dobrovolníků (web)](../../b1-church/serving/volunteer-signup.md) — jak se členové sami přihlašují na pozice dobrovolníků
-- [Přihlášení dobrovolníků (mobil)](../../b1-mobile/serving/volunteer-signup.md) — samoobslužné přihlašování dobrovolníků v mobilu
+- [Přihlášení dobrovolníků (mobil)](../../b1-church/serving/volunteer-signup.md) — samoobslužné přihlašování dobrovolníků v mobilu

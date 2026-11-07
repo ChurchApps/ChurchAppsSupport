@@ -71,7 +71,7 @@ Use Stripe's test mode first if you want to verify without real charges, then sw
 Spread the word so members know they can give online.
 
 1. Share the giving URL via your website, email newsletters, bulletins, and social media
-2. Members can also give through the [B1 Mobile app](../../b1-mobile/giving/index.md) — the giving feature is built in
+2. Members can also give through the [B1 App](../../b1-church/giving/index.md) — the giving feature is built in
 
 :::info
 Members who log in can save payment methods, set up recurring donations, and view their giving history. Anonymous giving works too — no login required.
@@ -91,7 +91,7 @@ Run Stripe imports at least monthly so your records stay up to date. See the [Ye
 
 ## You're Done!
 
-Your church is now accepting online donations. Members can give through your website, the B1 Mobile app, or any device with a web browser. All donations are automatically tracked in B1 Admin.
+Your church is now accepting online donations. Members can give through your website, the B1 App, or any device with a web browser. All donations are automatically tracked in B1 Admin.
 
 ## Related Articles
 
@@ -101,5 +101,4 @@ Your church is now accepting online donations. Members can give through your web
 - [Stripe Import](../donations/stripe-import.md) — pull online transactions into B1 Admin
 - [Donation Reports](../donations/donation-reports.md) — view giving trends and totals
 - [Giving Statements](../donations/giving-statements.md) — generate year-end tax statements
-- [Making Donations (Web)](../../b1-church/giving/making-donations.md) — the member giving experience
-- [Making Donations (Mobile)](../../b1-mobile/giving/making-donations.md) — giving from the mobile app
+- [Making Donations](../../b1-church/giving/making-donations.md) — the member giving experience on B1.church and in the B1 App

@@ -84,7 +84,7 @@ Sermon kitaplığınızı ve canlı yayınınızı ziyaretçiler için kolayca e
 
 Üyeler sermonlara ve canlı ibadetlere herhangi bir cihazdan erişebilir.
 
-1. Üyeler sermonları [B1 Mobile uygulamasında](../../b1-mobile/content/sermons.md) ve [B1.church](../../b1-church/content/sermons.md) üzerinde izleyebilir
+1. Üyeler sermonları [B1 Mobile uygulamasında](../../b1-church/content/sermons.md) ve [B1.church](../../b1-church/content/sermons.md) üzerinde izleyebilir
 2. Sohbetli canlı yayın her iki platformda da çalışır
 
 :::info
@@ -103,4 +103,4 @@ Sermon kitaplığınız çevrimiçi ve canlı yayınınız yapılandırılmış 
 - [Canlı Yayın](../sermons/live-streaming.md) — canlı ibadetleri yapılandırın
 - [Sermonlar (Web)](../../b1-church/content/sermons.md) — üyelerin sermon izleme deneyimi
 - [Canlı Yayın (Web)](../../b1-church/content/live-streaming.md) — üyelerin canlı yayın deneyimi
-- [Sermonlar (Mobil)](../../b1-mobile/content/sermons.md) — mobil uygulamada sermonlar
+- [Sermonlar (Mobil)](../../b1-church/content/sermons.md) — mobil uygulamada sermonlar

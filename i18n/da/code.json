@@ -382,12 +382,6 @@
   "homepage.products.b1website.description": {
     "message": "Kirkewebsted og medlemsportal."
   },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 - Mobil"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Ældre medlemsapp til iOS og Android, nu erstattet af B1.church-webappen."
-  },
   "homepage.products.b1checkin.title": {
     "message": "B1 - Ind- og udchecking"
   },

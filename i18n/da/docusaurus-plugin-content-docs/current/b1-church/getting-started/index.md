@@ -51,7 +51,7 @@ Når du er logget ind, giver medlemsportalen dig adgang til:
 B1.church fungerer i enhver mobil browser, men du kan også få en mere app-lignende oplevelse på to måder:
 
 - **Installer som PWA** -- Tilføj din kirkes medlemsportal til din hjemmeskærm direkte fra din browser. Ingen appbutik nødvendig. Se [Installation som app (PWA)](./installing-pwa.md) for instruktioner.
-- **Download B1 Mobile** -- Installer den oprindelige app fra App Store eller Google Play for den fulde mobiloplevelse, herunder push-notifikationer. Se [B1 Mobile](/docs/b1-mobile/).
+- **Download B1 Mobile** -- Installer den oprindelige app fra App Store eller Google Play for den fulde mobiloplevelse, herunder push-notifikationer. Se [B1 Mobile](/docs/b1-church/index.md).
 
 ## Næste trin
 

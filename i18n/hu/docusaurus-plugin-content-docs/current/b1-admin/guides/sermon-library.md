@@ -84,7 +84,7 @@ Kövesse a [Oldalak kezelése](../website/managing-pages.md) útmutatót a köve
 
 A tagok bármely eszközről elérhetik az igehirdetéseket és az élő istentiszteleteket.
 
-1. A tagok megnézhetik az igehirdetéseket a [B1 Mobile alkalmazásban](../../b1-mobile/content/sermons.md) és a [B1.church](../../b1-church/content/sermons.md) oldalon
+1. A tagok megnézhetik az igehirdetéseket a [B1 Mobile alkalmazásban](../../b1-church/content/sermons.md) és a [B1.church](../../b1-church/content/sermons.md) oldalon
 2. A csevegéssel kiegészített élő közvetítés mindkét platformon működik
 
 :::info
@@ -103,4 +103,4 @@ Igehirdetési könyvtára online van, és az élő közvetítés be van állítv
 - [Élő közvetítés](../sermons/live-streaming.md) — élő istentiszteletek beállítása
 - [Igehirdetések (Web)](../../b1-church/content/sermons.md) — a tagok igehirdetés-megtekintési élménye
 - [Élő közvetítés (Web)](../../b1-church/content/live-streaming.md) — a tagok élő közvetítési élménye
-- [Igehirdetések (Mobil)](../../b1-mobile/content/sermons.md) — igehirdetések a mobilalkalmazásban
+- [Igehirdetések (Mobil)](../../b1-church/content/sermons.md) — igehirdetések a mobilalkalmazásban

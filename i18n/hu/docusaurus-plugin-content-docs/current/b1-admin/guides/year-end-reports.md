@@ -77,7 +77,7 @@ Készítse el az igazolásokat januárban, amíg az adatok frissek. Így lesz id
 Juttassa el az igazolásokat az adományozókhoz.
 
 1. Nyomtassa ki és postázza az igazolásokat, vagy küldje el az egyes CSV-fájlokat e-mailben az adományozóknak
-2. A tagok a [B1.church](../../b1-church/giving/donation-history.md) oldalon és a [B1 Mobile alkalmazásban](../../b1-mobile/giving/donation-history.md) is megtekinthetik saját adománytörténetüket, és nyomtathatnak igazolásokat
+2. A tagok a [B1.church](../../b1-church/giving/donation-history.md) oldalon és a [B1 Mobile alkalmazásban](../../b1-church/giving/donation-history.md) is megtekinthetik saját adománytörténetüket, és nyomtathatnak igazolásokat
 
 ## Készen van!
 

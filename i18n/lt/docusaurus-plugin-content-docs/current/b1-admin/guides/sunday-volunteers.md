@@ -96,7 +96,7 @@ Leiskite savanoriams patiems registruotis į pareigas, o ne laukti administrator
 3. Kiekvienai pareigai pažymėkite langelį **Leisti savitarnos registraciją**, kad ji būtų prieinama savitarnai.
 4. Kiekvienai pareigai pridėkite **Aprašymą**, kad savanoriai žinotų, ką apima vaidmuo.
 
-Kai savitarnos pareigos sukurtos, jos automatiškai atsiranda savanorių registracijos puslapiuose [B1.church](../../b1-church/serving/volunteer-signup.md) ir [B1 mobiliojoje programėlėje](../../b1-mobile/serving/volunteer-signup.md). Nariai gali peržiūrėti laisvas pareigas, matyti, kiek vietų liko, ir užsiregistruoti vienu paspaudimu.
+Kai savitarnos pareigos sukurtos, jos automatiškai atsiranda savanorių registracijos puslapiuose [B1.church](../../b1-church/serving/volunteer-signup.md) ir [B1 mobiliojoje programėlėje](../../b1-church/serving/volunteer-signup.md). Nariai gali peržiūrėti laisvas pareigas, matyti, kiek vietų liko, ir užsiregistruoti vienu paspaudimu.
 
 :::tip
 Tame pačiame plane derinkite administratoriaus priskirtas ir savitarnos pareigas. Pavyzdžiui, giesmių vadovą priskirkite tiesiogiai, o sveikintojams ir kavos padavėjams leiskite pasirinkti patiems.
@@ -106,7 +106,7 @@ Tame pačiame plane derinkite administratoriaus priskirtas ir savitarnos pareiga
 
 Priskirti savanoriai automatiškai mato savo planus ir gali atsakyti.
 
-1. Savanoriai savo planus mato svetainėje [B1.church](../../b1-church/plans/viewing-plans.md) ir [B1 mobiliojoje programėlėje](../../b1-mobile/serving/viewing-plans.md)
+1. Savanoriai savo planus mato svetainėje [B1.church](../../b1-church/plans/viewing-plans.md) ir [B1 mobiliojoje programėlėje](../../b1-church/plans/viewing-plans.md)
 2. Paskyrimus gali tiesiogiai priimti arba atsisakyti bet kurioje platformoje
 3. Jie gali nurodyti datas, kai nebus laisvi
 4. Planus galima atspausdinti repeticijoms arba iškabinti už scenos
@@ -130,6 +130,6 @@ Jūsų savanorių valdymo sistema nustatyta. Kiekvieną savaitę sukurkite nauj�
 - [Užduotys](../serving/tasks.md) — priskirkite veiksmų elementus asmenims ar grupėms
 - [Darbo eigos](../serving/workflows.md) — vesk žmones per pasikartojančius procesus su paleidikliais ir automatizuotais žingsniais
 - [Planų peržiūra (internete)](../../b1-church/plans/viewing-plans.md) — kaip savanoriai mato planus internete
-- [Planų peržiūra (mobiliesiems)](../../b1-mobile/serving/viewing-plans.md) — kaip savanoriai mato planus mobiliuosiuose įrenginiuose
+- [Planų peržiūra (mobiliesiems)](../../b1-church/plans/viewing-plans.md) — kaip savanoriai mato planus mobiliuosiuose įrenginiuose
 - [Savanorių registracija (internete)](../../b1-church/serving/volunteer-signup.md) — kaip nariai patys pasirenka savanorių pareigas
-- [Savanorių registracija (mobiliesiems)](../../b1-mobile/serving/volunteer-signup.md) — savanorių savitarnos registracija mobiliuosiuose įrenginiuose
+- [Savanorių registracija (mobiliesiems)](../../b1-church/serving/volunteer-signup.md) — savanorių savitarnos registracija mobiliuosiuose įrenginiuose

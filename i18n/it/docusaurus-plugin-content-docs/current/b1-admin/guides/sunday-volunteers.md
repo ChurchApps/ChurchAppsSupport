@@ -96,7 +96,7 @@ Permetti ai volontari di iscriversi autonomamente alle posizioni invece di atten
 3. Per ogni posizione, seleziona la casella **Consenti iscrizione autonoma** per renderla disponibile in autonomia.
 4. Aggiungi una **Descrizione** a ogni posizione così i volontari sanno in cosa consiste il ruolo.
 
-Una volta create le posizioni con iscrizione autonoma, compaiono automaticamente nelle pagine di iscrizione dei volontari su [B1.church](../../b1-church/serving/volunteer-signup.md) e nell'[app mobile B1](../../b1-mobile/serving/volunteer-signup.md). I membri possono sfogliare le posizioni aperte, vedere quanti posti rimangono e iscriversi con un solo clic.
+Una volta create le posizioni con iscrizione autonoma, compaiono automaticamente nelle pagine di iscrizione dei volontari su [B1.church](../../b1-church/serving/volunteer-signup.md) e nell'[app mobile B1](../../b1-church/serving/volunteer-signup.md). I membri possono sfogliare le posizioni aperte, vedere quanti posti rimangono e iscriversi con un solo clic.
 
 :::tip
 Combina posizioni assegnate dall'amministratore e posizioni con iscrizione autonoma nello stesso piano. Ad esempio, assegna direttamente il responsabile della lode ma lascia che accoglienti e addetti al caffè si scelgano da soli.
@@ -106,7 +106,7 @@ Combina posizioni assegnate dall'amministratore e posizioni con iscrizione auton
 
 I volontari assegnati vedono automaticamente i propri piani e possono rispondere.
 
-1. I volontari vedono i propri piani su [B1.church](../../b1-church/plans/viewing-plans.md) e nell'[app mobile B1](../../b1-mobile/serving/viewing-plans.md)
+1. I volontari vedono i propri piani su [B1.church](../../b1-church/plans/viewing-plans.md) e nell'[app mobile B1](../../b1-church/plans/viewing-plans.md)
 2. Possono accettare o rifiutare le assegnazioni direttamente da entrambe le piattaforme
 3. Possono indicare le date di indisponibilità per le settimane in cui non sono disponibili
 4. I piani possono essere stampati per le prove o affissi dietro le quinte
@@ -130,6 +130,6 @@ Il tuo sistema di gestione dei volontari è configurato. Ogni settimana, crea un
 - [Attività](../serving/tasks.md) -- assegna compiti a persone o gruppi
 - [Flussi di lavoro](../serving/workflows.md) -- fai avanzare le persone attraverso processi ripetibili con trigger e passaggi automatici
 - [Visualizzare i piani (web)](../../b1-church/plans/viewing-plans.md) -- come i volontari vedono i piani online
-- [Visualizzare i piani (mobile)](../../b1-mobile/serving/viewing-plans.md) -- come i volontari vedono i piani da mobile
+- [Visualizzare i piani (mobile)](../../b1-church/plans/viewing-plans.md) -- come i volontari vedono i piani da mobile
 - [Iscrizione dei volontari (web)](../../b1-church/serving/volunteer-signup.md) -- come i membri scelgono autonomamente le posizioni di volontariato
-- [Iscrizione dei volontari (mobile)](../../b1-mobile/serving/volunteer-signup.md) -- iscrizione autonoma dei volontari da mobile
+- [Iscrizione dei volontari (mobile)](../../b1-church/serving/volunteer-signup.md) -- iscrizione autonoma dei volontari da mobile

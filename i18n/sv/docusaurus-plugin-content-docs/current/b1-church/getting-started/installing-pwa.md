@@ -98,7 +98,7 @@ PWA:n kräver en internetanslutning. Till skillnad från vissa inbyggda appar sp
 
 Den äldre, inbyggda appen **B1 Mobile** för iOS och Android har blivit föråldrad och uppdateras inte längre. PWA:n är det stödda sättet att komma åt B1.church-medlemsportalen från telefonen framöver, och den täcker alla medlemsfunktioner som den inbyggda appen erbjöd. Om du tidigare installerade den inbyggda appen kan du byta till PWA:n när det passar dig.
 
-Se [referenssidan för B1 Mobile](/docs/b1-mobile/) för historisk dokumentation om den föråldrade appen.
+Se [referenssidan för B1 Mobile](/docs/b1-church/index.md) för historisk dokumentation om den föråldrade appen.
 
 ## Relaterade artiklar
 

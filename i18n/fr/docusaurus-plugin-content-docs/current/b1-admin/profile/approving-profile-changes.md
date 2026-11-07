@@ -63,4 +63,4 @@ Assurez-vous que vos approbateurs sont réellement membres du groupe configuré 
 
 - [Gérer votre profil](./managing-profile.md) — Modifiez vos paramètres de compte
 - [Examiner les demandes de suppression de compte](./account-deletion.md) — Le même flux d'approbation de groupe pour la suppression de compte
-- [Paramètres B1 Mobile](../../b1-mobile/profile/editing-profile.md) — Ce que les membres voient quand ils soumettent une modification de profil
+- [Paramètres B1 Mobile](../../b1-church/getting-started/editing-your-profile.md) — Ce que les membres voient quand ils soumettent une modification de profil

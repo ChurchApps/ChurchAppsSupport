@@ -63,4 +63,4 @@ Varmista, että hyväksyjät todella kuuluvat määritettyyn ryhmään, sillä v
 
 - [Profiilisi hallinta](./managing-profile.md) — Muokkaa omia tilisi asetuksia
 - [Tilin poistopyyntöjen käsitteleminen](./account-deletion.md) — Sama hyväksyntäryhmän tarkistusprosessi tilin poistamiselle
-- [B1 Mobile -asetukset](../../b1-mobile/profile/editing-profile.md) — Mitä jäsenet näkevät lähettäessään profiilimuutoksen
+- [B1 Mobile -asetukset](../../b1-church/getting-started/editing-your-profile.md) — Mitä jäsenet näkevät lähettäessään profiilimuutoksen

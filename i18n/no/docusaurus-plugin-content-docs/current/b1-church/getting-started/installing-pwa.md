@@ -98,7 +98,7 @@ PWA-en krever en internettforbindelse. I motsetning til enkelte native apper buf
 
 Den eldre native appen **B1 Mobile** for iOS og Android er faset ut og oppdateres ikke lenger. PWA-en er den støttede måten å få tilgang til B1.church-medlemsportalen på telefonen fremover, og den dekker alle medlemsfunksjonene som den native appen tilbød. Hvis du tidligere installerte den native appen, bytt til PWA-en når det passer deg.
 
-Se [referansesiden for B1 Mobile](/docs/b1-mobile/) for historisk dokumentasjon om den utfasede appen.
+Se [referansesiden for B1 Mobile](/docs/b1-church/index.md) for historisk dokumentasjon om den utfasede appen.
 
 ## Relaterte artikler
 

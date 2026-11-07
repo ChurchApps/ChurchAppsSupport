@@ -79,7 +79,7 @@ Membrii pot descoperi, se pot alătura și pot participa la grupuri de pe telefo
 
 1. Membrii răsfoiesc și se alătură grupurilor pe [B1.church](../../b1-church/groups/browsing-groups.md)
 2. Membrii grupului pot vedea detaliile, calendarele și pot publica în [conversații](../../b1-church/groups/conversations.md)
-3. Toate funcțiile grupurilor sunt disponibile și în [aplicația B1 Mobile](../../b1-mobile/groups/index.md)
+3. Toate funcțiile grupurilor sunt disponibile și în [aplicația B1 Mobile](../../b1-church/groups/index.md)
 
 :::info
 Membrii își văd grupurile, evenimentele viitoare și conversațiile de grup atât pe web, cât și pe mobil. Totul rămâne sincronizat.
@@ -98,4 +98,4 @@ Grupurile dvs. mici sunt configurate și conectate. Membrii pot descoperi grupur
 - [Calendarul curatoriat](../calendars/curated-calendar.md) — construirea unui calendar unificat al bisericii
 - [Răsfoirea grupurilor (Web)](../../b1-church/groups/browsing-groups.md) — cum găsesc membrii grupuri
 - [Conversațiile grupului (Web)](../../b1-church/groups/conversations.md) — discuții de grup
-- [Grupuri (Mobil)](../../b1-mobile/groups/index.md) — grupuri în aplicația mobilă
+- [Grupuri (Mobil)](../../b1-church/groups/index.md) — grupuri în aplicația mobilă

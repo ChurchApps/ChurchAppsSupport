@@ -227,7 +227,7 @@ Authorization: Bearer <token>
 
 {
   "fcmToken": "firebase-token-abc123",
-  "appName": "B1Mobile",
+  "appName": "B1App",
   "label": "John's iPhone",
   "deviceInfo": "iOS 17, iPhone 15"
 }
@@ -238,7 +238,7 @@ Authorization: Bearer <token>
   "id": "device-001",
   "churchId": "church-789",
   "fcmToken": "firebase-token-abc123",
-  "appName": "B1Mobile",
+  "appName": "B1App",
   "label": "John's iPhone",
   "registrationDate": "2026-02-17T10:00:00.000Z",
   "lastActiveDate": "2026-02-17T10:00:00.000Z"

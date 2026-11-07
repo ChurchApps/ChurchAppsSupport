@@ -98,7 +98,7 @@ PWA wymaga połączenia z internetem. W przeciwieństwie do niektórych natywnyc
 
 Dotychczasowa natywna aplikacja **B1 Mobile** na iOS i Androida została wycofana i nie jest już aktualizowana. PWA jest obsługiwanym sposobem dostępu do portalu członka B1.church na telefonie, a obejmuje wszystkie funkcje dla członków, które oferowała natywna aplikacja. Jeśli wcześniej zainstalowałeś natywną aplikację, przełącz się na PWA, kiedy będzie Ci to odpowiadać.
 
-Informacje historyczne o wycofanej aplikacji znajdziesz na [stronie referencyjnej B1 Mobile](/docs/b1-mobile/).
+Informacje historyczne o wycofanej aplikacji znajdziesz na [stronie referencyjnej B1 Mobile](/docs/b1-church/index.md).
 
 ## Powiązane artykuły
 

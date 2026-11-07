@@ -120,7 +120,7 @@ Båda är avstängda som standard. En sektion visas endast för medlemmar som ä
 
 Flikarna du konfigurerar här visas i **B1.church PWA** som dina medlemmar installerar från valfri sida på `https://yourchurchname.b1.church`. Ändringar du gör på den här sidan syns nästa gång en medlem öppnar appen.
 
-På en telefon visar den nedre flikraden **Startsida**, upp till tre av dina flikar och **Mer**. På en dator visar sidhuvudet upp till fem. Inbyggda skärmar (till exempel Predikningar, Ge eller Grupper) får platserna först, och flikar av typen **Intern sida** fyller eventuella lediga platser. Flikar av typen **Extern URL** och **Dagens vers** får aldrig en plats. Varje flik, även de som inte får plats, visas på appens sida **Mer**. Se [Navigera i B1App](/docs/b1-church/getting-started/navigating) för vad medlemmar ser. (Flikar återges även av den äldre [B1 Mobile-appen](/docs/b1-mobile/) för medlemmar som fortfarande använder den, men den appen är föråldrad och uppdateras inte längre.)
+På en telefon visar den nedre flikraden **Startsida**, upp till tre av dina flikar och **Mer**. På en dator visar sidhuvudet upp till fem. Inbyggda skärmar (till exempel Predikningar, Ge eller Grupper) får platserna först, och flikar av typen **Intern sida** fyller eventuella lediga platser. Flikar av typen **Extern URL** och **Dagens vers** får aldrig en plats. Varje flik, även de som inte får plats, visas på appens sida **Mer**. Se [Navigera i B1App](/docs/b1-church/getting-started/navigating) för vad medlemmar ser. (Flikar återges även av den äldre [B1 Mobile-appen](/docs/b1-church/index.md) för medlemmar som fortfarande använder den, men den appen är föråldrad och uppdateras inte längre.)
 
 ## Nästa steg
 

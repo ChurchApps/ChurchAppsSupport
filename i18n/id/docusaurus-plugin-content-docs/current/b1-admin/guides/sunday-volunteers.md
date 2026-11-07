@@ -96,7 +96,7 @@ Biarkan relawan mendaftar sendiri untuk posisi tertentu, tanpa harus menunggu pe
 3. Untuk setiap posisi, centang kotak **Izinkan Pendaftaran Mandiri** agar posisi tersebut tersedia untuk pendaftaran mandiri.
 4. Tambahkan **Deskripsi** pada setiap posisi agar relawan mengetahui apa saja tugas peran tersebut.
 
-Setelah posisi pendaftaran mandiri dibuat, posisi tersebut akan otomatis muncul di halaman pendaftaran relawan di [B1.church](../../b1-church/serving/volunteer-signup.md) dan [aplikasi seluler B1](../../b1-mobile/serving/volunteer-signup.md). Anggota dapat melihat posisi yang terbuka, melihat berapa tempat yang tersisa, dan mendaftar hanya dengan satu klik.
+Setelah posisi pendaftaran mandiri dibuat, posisi tersebut akan otomatis muncul di halaman pendaftaran relawan di [B1.church](../../b1-church/serving/volunteer-signup.md) dan [aplikasi seluler B1](../../b1-church/serving/volunteer-signup.md). Anggota dapat melihat posisi yang terbuka, melihat berapa tempat yang tersisa, dan mendaftar hanya dengan satu klik.
 
 :::tip
 Campurkan posisi yang ditetapkan admin dan posisi pendaftaran mandiri dalam rencana yang sama. Misalnya, tetapkan pemimpin pujian secara langsung, tetapi biarkan penyambut tamu dan petugas kopi memilih sendiri.
@@ -106,7 +106,7 @@ Campurkan posisi yang ditetapkan admin dan posisi pendaftaran mandiri dalam renc
 
 Relawan yang sudah ditugaskan akan otomatis melihat rencana mereka dan dapat memberikan tanggapan.
 
-1. Relawan dapat melihat rencana mereka di [B1.church](../../b1-church/plans/viewing-plans.md) dan [aplikasi seluler B1](../../b1-mobile/serving/viewing-plans.md)
+1. Relawan dapat melihat rencana mereka di [B1.church](../../b1-church/plans/viewing-plans.md) dan [aplikasi seluler B1](../../b1-church/plans/viewing-plans.md)
 2. Mereka dapat menerima atau menolak penugasan langsung dari kedua platform
 3. Mereka dapat menetapkan tanggal tidak tersedia untuk minggu-minggu ketika mereka tidak bisa melayani
 4. Rencana dapat dicetak untuk latihan atau ditempel di belakang panggung
@@ -130,6 +130,6 @@ Sistem manajemen relawan Anda sudah siap. Setiap minggu, buat rencana baru, teta
 - [Tugas](../serving/tasks.md) — menetapkan item tindakan kepada orang atau grup
 - [Alur Kerja](../serving/workflows.md) — membawa orang melalui proses berulang dengan pemicu dan langkah otomatis
 - [Melihat Rencana (Web)](../../b1-church/plans/viewing-plans.md) — cara relawan melihat rencana secara daring
-- [Melihat Rencana (Seluler)](../../b1-mobile/serving/viewing-plans.md) — cara relawan melihat rencana di ponsel
+- [Melihat Rencana (Seluler)](../../b1-church/plans/viewing-plans.md) — cara relawan melihat rencana di ponsel
 - [Pendaftaran Relawan (Web)](../../b1-church/serving/volunteer-signup.md) — cara anggota memilih posisi relawan sendiri
-- [Pendaftaran Relawan (Seluler)](../../b1-mobile/serving/volunteer-signup.md) — pendaftaran mandiri relawan di ponsel
+- [Pendaftaran Relawan (Seluler)](../../b1-church/serving/volunteer-signup.md) — pendaftaran mandiri relawan di ponsel

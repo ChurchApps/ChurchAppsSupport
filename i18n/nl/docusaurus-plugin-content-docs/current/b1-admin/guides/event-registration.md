@@ -12,7 +12,7 @@ Maak een event-registratieformulier, verzamel deelnemerinformatie en optionele b
 </div>
 
 :::info
-**Twee manieren om event-registratie af te handelen:** Deze gids behandelt **op formulieren gebaseerde registratie**, wat u volledige controle geeft over aangepaste velden en betalingsverzameling. Voor eenvoudiger events waar u gewoon wilt weten wie er komt, gebruikt u **native event-registratie** ingebouwd in de agenda -- zie [Agenda's maken](../calendars/creating-calendars.md#enabling-event-registration) voor setupinstructies. Native registratie stelt leden in staat zich rechtstreeks van de [B1-website](../../b1-church/events/registering.md) en [mobiele app](../../b1-mobile/events/registering.md) aan te melden met capaciteit bijhouden, datumvensters en e-mailbevestigingen.
+**Twee manieren om event-registratie af te handelen:** Deze gids behandelt **op formulieren gebaseerde registratie**, wat u volledige controle geeft over aangepaste velden en betalingsverzameling. Voor eenvoudiger events waar u gewoon wilt weten wie er komt, gebruikt u **native event-registratie** ingebouwd in de agenda -- zie [Agenda's maken](../calendars/creating-calendars.md#enabling-event-registration) voor setupinstructies. Native registratie stelt leden in staat zich rechtstreeks van de [B1-website](../../b1-church/events/registering.md) en [mobiele app](../../b1-church/events/registering.md) aan te melden met capaciteit bijhouden, datumvensters en e-mailbevestigingen.
 :::
 
 <div class="prereqs">

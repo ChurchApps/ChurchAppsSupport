@@ -79,7 +79,7 @@ Sledite vodniku [Upravljanje strani](../website/managing-pages.md), da:
 
 1. Člani si skupine ogledajo in se jim pridružijo na [B1.church](../../b1-church/groups/browsing-groups.md)
 2. Člani skupin lahko pregledujejo podrobnosti, koledarje in objavljajo v [pogovorih](../../b1-church/groups/conversations.md)
-3. Vse funkcije skupin so na voljo tudi v [mobilni aplikaciji B1](../../b1-mobile/groups/index.md)
+3. Vse funkcije skupin so na voljo tudi v [mobilni aplikaciji B1](../../b1-church/groups/index.md)
 
 :::info
 Člani vidijo svoje skupine, prihajajoče dogodke in skupinske pogovore tako na spletu kot v mobilni aplikaciji – vse ostane usklajeno.
@@ -98,4 +98,4 @@ Vaše male skupine so nastavljene in povezane. Člani lahko odkrijejo skupine, s
 - [Kuriran koledar](../calendars/curated-calendar.md) – izdelava enotnega koledarja cerkve
 - [Brskanje po skupinah (splet)](../../b1-church/groups/browsing-groups.md) – kako člani najdejo skupine
 - [Skupinski pogovori (splet)](../../b1-church/groups/conversations.md) – skupinske razprave
-- [Skupine (mobilna aplikacija)](../../b1-mobile/groups/index.md) – skupine v mobilni aplikaciji
+- [Skupine (mobilna aplikacija)](../../b1-church/groups/index.md) – skupine v mobilni aplikaciji

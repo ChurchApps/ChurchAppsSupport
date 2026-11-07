@@ -107,7 +107,7 @@ B1 Admin에서 캘린더를 만들면 하나 이상의 그룹을 연결해 행�
 
 유료 행사의 경우 같은 설정 페이지에서 가격이 있는 **Attendee Types**(참가자 유형), 선택 사항인 **Selections**(추가 옵션), **Discount Codes**(할인 코드)를 정의할 수 있으며, 결제는 교회의 헌금 제공자를 통해 받습니다. 전체 과정은 [유료 등록](./paid-registrations.md)을 참고하세요.
 
-등록을 켜면, 교인이 [B1 웹사이트](../../b1-church/events/registering.md)나 [B1 모바일 앱](../../b1-mobile/events/registering.md)에서 행사를 볼 때 **Register for this Event** 버튼이 나타납니다. 양식을 연결했다면 등록자는 등록 중에 **Questions** 단계를 보게 되며, 답변은 등록과 함께 저장됩니다.
+등록을 켜면, 교인이 [B1 웹사이트](../../b1-church/events/registering.md)나 [B1 모바일 앱](../../b1-church/events/registering.md)에서 행사를 볼 때 **Register for this Event** 버튼이 나타납니다. 양식을 연결했다면 등록자는 등록 중에 **Questions** 단계를 보게 되며, 답변은 등록과 함께 저장됩니다.
 
 :::info
 등록 질문은 **제한된(Restricted)** 표시가 없는 양식에서만 작동합니다. 제한된 양식은 보여 주지 않고 등록 과정에서 자동으로 건너뛰므로, 행사에 질문을 연결할 때는 제한되지 않은 양식을 사용하세요.

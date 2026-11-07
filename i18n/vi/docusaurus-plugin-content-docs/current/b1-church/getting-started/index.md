@@ -50,7 +50,7 @@ Khi đã đăng nhập, cổng thông tin thành viên cho bạn truy cập vào
 B1.church hoạt động trên mọi trình duyệt di động. Để có trải nghiệm giống ứng dụng hơn, hãy cài đặt cổng thông tin thành viên của hội thánh dưới dạng **Ứng dụng web tiến bộ (PWA)** — truy cập `https://yourchurchname.b1.church/mobile/install` để xem hướng dẫn từng bước theo thiết bị, hoặc thêm trực tiếp vào màn hình chính từ Safari hoặc Chrome. Không cần cửa hàng ứng dụng. Xem [Cài đặt như một ứng dụng (PWA)](./installing-pwa.md) để biết hướng dẫn.
 
 :::info
-Ứng dụng B1 Mobile gốc đã ngừng hỗ trợ. PWA là cách được hỗ trợ để sử dụng B1.church trên điện thoại từ nay về sau — xem [trang tham khảo B1 Mobile](/docs/b1-mobile/) để tham khảo tài liệu lịch sử.
+Ứng dụng B1 Mobile gốc đã ngừng hỗ trợ. PWA là cách được hỗ trợ để sử dụng B1.church trên điện thoại từ nay về sau — xem [trang tham khảo B1 Mobile](/docs/b1-church/index.md) để tham khảo tài liệu lịch sử.
 :::
 
 ## Các bước tiếp theo

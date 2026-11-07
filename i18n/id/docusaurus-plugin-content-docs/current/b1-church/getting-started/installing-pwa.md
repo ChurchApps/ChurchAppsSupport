@@ -98,7 +98,7 @@ PWA memerlukan koneksi internet. Berbeda dengan beberapa aplikasi native, PWA ti
 
 Aplikasi native **B1 Mobile** lama untuk iOS dan Android sudah tidak digunakan lagi dan tidak lagi diperbarui. PWA adalah cara resmi untuk mengakses portal anggota B1.church di ponsel ke depannya, dan PWA mencakup setiap fitur yang dulu ditawarkan aplikasi native untuk anggota. Jika sebelumnya Anda sudah menginstal aplikasi native, silakan beralih ke PWA kapan saja Anda siap.
 
-Lihat [Halaman referensi B1 Mobile](/docs/b1-mobile/) untuk dokumentasi historis tentang aplikasi yang sudah tidak digunakan lagi.
+Lihat [Halaman referensi B1 Mobile](/docs/b1-church/index.md) untuk dokumentasi historis tentang aplikasi yang sudah tidak digunakan lagi.
 
 ## Artikel Terkait
 

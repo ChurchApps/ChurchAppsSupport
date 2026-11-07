@@ -107,7 +107,7 @@ Poți activa înregistrarea pentru orice eveniment din calendar, astfel încât 
 
 Pentru evenimentele cu plată, aceeași pagină de setări îți permite să definești **Attendee Types** cu preț, **Selections** opționale (produse suplimentare) și **Discount Codes**, plățile fiind colectate prin furnizorul de donații al bisericii tale. Vezi [Înregistrările cu plată](./paid-registrations.md) pentru ghidul complet.
 
-Odată ce înregistrarea este activată, membrii vor vedea butonul **Register for this Event** atunci când vizualizează evenimentul pe [site-ul B1](../../b1-church/events/registering.md) sau în [aplicația mobilă B1](../../b1-mobile/events/registering.md). Dacă ai atașat un formular, cei înscriși vor vedea un pas **Questions** în timpul înregistrării, iar răspunsurile lor sunt salvate împreună cu înregistrarea.
+Odată ce înregistrarea este activată, membrii vor vedea butonul **Register for this Event** atunci când vizualizează evenimentul pe [site-ul B1](../../b1-church/events/registering.md) sau în [aplicația mobilă B1](../../b1-church/events/registering.md). Dacă ai atașat un formular, cei înscriși vor vedea un pas **Questions** în timpul înregistrării, iar răspunsurile lor sunt salvate împreună cu înregistrarea.
 
 :::info
 Întrebările de înregistrare funcționează doar cu formularele care **nu** sunt marcate ca Restricted. Un formular restricționat este omis automat în timpul înregistrării, în loc să fie afișat, așa că folosește un formular nerestricționat atunci când atașezi întrebări unui eveniment.

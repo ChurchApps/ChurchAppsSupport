@@ -63,4 +63,4 @@ description: "B1 Admin で会員からのプロフィール変更リクエスト
 
 - [プロフィールの管理](./managing-profile.md) — ご自身のアカウント設定を編集する
 - [アカウント削除申請の確認](./account-deletion.md) — アカウント削除にも同じ承認グループによる確認の流れが適用されます
-- [B1 Mobile の設定](../../b1-mobile/profile/editing-profile.md) — 会員がプロフィール変更を送信したときに表示される内容
+- [B1 Mobile の設定](../../b1-church/getting-started/editing-your-profile.md) — 会員がプロフィール変更を送信したときに表示される内容

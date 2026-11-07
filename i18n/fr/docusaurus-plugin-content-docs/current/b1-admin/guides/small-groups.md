@@ -79,7 +79,7 @@ Les membres peuvent découvrir, rejoindre et participer aux groupes depuis leur 
 
 1. Les membres parcourent et rejoignent les groupes sur [B1.church](../../b1-church/groups/browsing-groups.md)
 2. Les membres du groupe peuvent consulter les détails, les calendriers et publier dans les [conversations](../../b1-church/groups/conversations.md)
-3. Toutes les fonctionnalités de groupe sont également disponibles sur l'[application B1 Mobile](../../b1-mobile/groups/index.md)
+3. Toutes les fonctionnalités de groupe sont également disponibles sur l'[application B1 Mobile](../../b1-church/groups/index.md)
 
 :::info
 Les membres voient leurs groupes, les événements à venir et les conversations de groupe à la fois sur le web et sur mobile -- tout reste synchronisé.
@@ -98,4 +98,4 @@ Vos petits groupes sont configurés et connectés. Les membres peuvent découvri
 - [Calendrier organisé](../calendars/curated-calendar.md) -- créer un calendrier unifié pour l'église
 - [Parcourir les groupes (Web)](../../b1-church/groups/browsing-groups.md) -- comment les membres trouvent les groupes
 - [Conversations de groupe (Web)](../../b1-church/groups/conversations.md) -- discussions de groupe
-- [Groupes (Mobile)](../../b1-mobile/groups/index.md) -- les groupes sur l'application mobile
+- [Groupes (Mobile)](../../b1-church/groups/index.md) -- les groupes sur l'application mobile

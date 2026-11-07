@@ -84,7 +84,7 @@ Seuraa [Sivujen hallinta](../website/managing-pages.md)-opasta, jolla:
 
 Jäsenet voivat katsoa saarnoja ja live-jumalanpalveluksia millä tahansa laitteella.
 
-1. Jäsenet voivat katsoa saarnoja [B1 Mobile -sovelluksessa](../../b1-mobile/content/sermons.md) ja [B1.church](../../b1-church/content/sermons.md)-sivustolla
+1. Jäsenet voivat katsoa saarnoja [B1 Mobile -sovelluksessa](../../b1-church/content/sermons.md) ja [B1.church](../../b1-church/content/sermons.md)-sivustolla
 2. Suoratoisto chatilla toimii molemmilla alustoilla
 
 :::info
@@ -103,4 +103,4 @@ Saarnakirjastosi on verkossa ja live-lähetyksesi on määritetty. Jäsenet voiv
 - [Suoratoisto](../sermons/live-streaming.md) — määritä live-jumalanpalvelukset
 - [Saarnat (verkko)](../../b1-church/content/sermons.md) — jäsenten saarnakokemus
 - [Suoratoisto (verkko)](../../b1-church/content/live-streaming.md) — jäsenten live-suoratoistokokemus
-- [Saarnat (mobiili)](../../b1-mobile/content/sermons.md) — saarnat mobiilisovelluksessa
+- [Saarnat (mobiili)](../../b1-church/content/sermons.md) — saarnat mobiilisovelluksessa

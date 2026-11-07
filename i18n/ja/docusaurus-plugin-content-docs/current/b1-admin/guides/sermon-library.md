@@ -84,7 +84,7 @@ YouTube でライブ配信を開始すると、B1 の配信ページに自動的
 
 会員は、どのデバイスからでも説教やライブ礼拝にアクセスできます。
 
-1. 会員は [B1 Mobile アプリ](../../b1-mobile/content/sermons.md)および [B1.church](../../b1-church/content/sermons.md) で説教を視聴できます
+1. 会員は [B1 Mobile アプリ](../../b1-church/content/sermons.md)および [B1.church](../../b1-church/content/sermons.md) で説教を視聴できます
 2. チャット付きのライブ配信は、両方のプラットフォームで利用できます
 
 :::info
@@ -103,4 +103,4 @@ YouTube でライブ配信を開始すると、B1 の配信ページに自動的
 - [ライブ配信](../sermons/live-streaming.md)：ライブ礼拝を設定する
 - [説教（ウェブ）](../../b1-church/content/sermons.md)：会員向けの説教視聴の体験
 - [ライブ配信（ウェブ）](../../b1-church/content/live-streaming.md)：会員向けのライブ配信の体験
-- [説教（モバイル）](../../b1-mobile/content/sermons.md)：モバイルアプリでの説教
+- [説教（モバイル）](../../b1-church/content/sermons.md)：モバイルアプリでの説教

@@ -80,7 +80,7 @@ Landzela umhlahlandlela we-[Kuphatsa Emakhasi](../website/managing-pages.md) kut
 
 Emalunga angafinyelela tintshumayelo netinkonzo letikhona kusuka kunome ngukuphi luchungechunge.
 
-1. Emalunga angabuka tintshumayelo ku-[app ye-B1 Mobile](../../b1-mobile/content/sermons.md) naku-[B1.church](../../b1-church/content/sermons.md)
+1. Emalunga angabuka tintshumayelo ku-[app ye-B1 Mobile](../../b1-church/content/sermons.md) naku-[B1.church](../../b1-church/content/sermons.md)
 2. Kusakata bukhona nencoco kuyasebenta kuletincenye tobabili
 
 :::info
@@ -99,4 +99,4 @@ Luhla lwakho lwetintshumayelo lusesikhatsini sonkhe ku-inthanethi futsi kusakata
 - [Kusakata Bukhona](../sermons/live-streaming.md) — hlela tinkonzo letikhona
 - [Tintshumayelo (Web)](../../b1-church/content/sermons.md) — kuhlangenwe nako kwelilunga kwekubuka intshumayelo
 - [Kusakata Bukhona (Web)](../../b1-church/content/live-streaming.md) — kuhlangenwe nako kwelilunga kwekusakata bukhona
-- [Tintshumayelo (Mobile)](../../b1-mobile/content/sermons.md) — tintshumayelo ku-app yeselula
+- [Tintshumayelo (Mobile)](../../b1-church/content/sermons.md) — tintshumayelo ku-app yeselula

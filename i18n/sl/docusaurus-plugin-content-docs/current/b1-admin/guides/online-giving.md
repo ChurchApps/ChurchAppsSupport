@@ -71,7 +71,7 @@ Preden o tem obvestite svojo skupnost, preverite, ali vse deluje.
 Sporočite članom, da lahko darujejo na spletu.
 
 1. Delite naslov URL za darovanje prek svoje spletne strani, e-poštnih glasil, biltenov in družbenih omrežij
-2. Člani lahko darujejo tudi prek [aplikacije B1 Mobile](../../b1-mobile/giving/index.md); funkcija darovanja je vgrajena
+2. Člani lahko darujejo tudi prek [aplikacije B1 Mobile](../../b1-church/giving/index.md); funkcija darovanja je vgrajena
 
 :::info
 Člani, ki se prijavijo, lahko shranijo načine plačila, nastavijo ponavljajoče se donacije in si ogledajo zgodovino darovanja. Anonimno darovanje prav tako deluje, prijava ni potrebna.
@@ -102,4 +102,4 @@ Vaša cerkev zdaj sprejema spletne donacije. Člani lahko darujejo prek vaše sp
 - [Poročila o donacijah](../donations/donation-reports.md): ogled trendov darovanja in skupnih zneskov
 - [Potrdila o darovanju](../donations/giving-statements.md): ustvarjanje letnih davčnih potrdil
 - [Darovanje (spletno)](../../b1-church/giving/making-donations.md): izkušnja darovanja za člane
-- [Darovanje (mobilno)](../../b1-mobile/giving/making-donations.md): darovanje iz mobilne aplikacije
+- [Darovanje (mobilno)](../../b1-church/giving/making-donations.md): darovanje iz mobilne aplikacije

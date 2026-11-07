@@ -79,7 +79,7 @@ description: "B1 Admin에서 소그룹, 성경 공부, 사역팀을 설정한 �
 
 1. 교인들은 [B1.church](../../b1-church/groups/browsing-groups.md)에서 그룹을 탐색하고 참여합니다
 2. 그룹 구성원은 세부 정보, 캘린더를 확인하고 [대화](../../b1-church/groups/conversations.md)에 글을 올릴 수 있습니다
-3. 모든 그룹 기능은 [B1 모바일 앱](../../b1-mobile/groups/index.md)에서도 이용 가능합니다
+3. 모든 그룹 기능은 [B1 모바일 앱](../../b1-church/groups/index.md)에서도 이용 가능합니다
 
 :::info
 교인들은 웹과 모바일 모두에서 자신의 그룹, 예정된 이벤트 및 그룹 대화를 확인할 수 있습니다 -- 모든 것이 동기화된 상태로 유지됩니다.
@@ -98,4 +98,4 @@ description: "B1 Admin에서 소그룹, 성경 공부, 사역팀을 설정한 �
 - [큐레이션 캘린더](../calendars/curated-calendar.md) — 통합 교회 캘린더를 만듭니다
 - [그룹 탐색 (웹)](../../b1-church/groups/browsing-groups.md) — 교인이 그룹을 찾는 방법
 - [그룹 대화 (웹)](../../b1-church/groups/conversations.md) — 그룹 토론
-- [그룹 (모바일)](../../b1-mobile/groups/index.md) — 모바일 앱에서의 그룹
+- [그룹 (모바일)](../../b1-church/groups/index.md) — 모바일 앱에서의 그룹

@@ -77,7 +77,7 @@ Generer erklæringer tidlig i januar mens postene er friske. Dette gir deg tid t
 Få erklæringene i donatorenes hender.
 
 1. Skriv ut og send per post erklæringer, eller send e-post individuelle CSV-er til donatorer
-2. Medlemmer kan også vise sin egen donasjonhistorie og skrive ut erklæringer fra [B1.church](../../b1-church/giving/donation-history.md) og [B1-mobilappen](../../b1-mobile/giving/donation-history.md)
+2. Medlemmer kan også vise sin egen donasjonhistorie og skrive ut erklæringer fra [B1.church](../../b1-church/giving/donation-history.md) og [B1-mobilappen](../../b1-church/giving/donation-history.md)
 
 ## Du er ferdig!
 

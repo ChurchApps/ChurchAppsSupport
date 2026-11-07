@@ -98,7 +98,7 @@ PWA vyžaduje pripojenie k internetu. Na rozdiel od niektorých natívnych aplik
 
 Pôvodná natívna aplikácia **B1 Mobile** pre iOS a Android je zastaraná a už sa neaktualizuje. PWA je odteraz podporovaný spôsob, ako na telefóne pristupovať k portálu členov B1.church, a pokrýva všetky funkcie pre členov, ktoré ponúkala natívna aplikácia. Ak ste predtým nainštalovali natívnu aplikáciu, prejdite na PWA, keď to bude pre vás vhodné.
 
-Historickú dokumentáciu o zastaranej aplikácii nájdete na stránke [Referencia B1 Mobile](/docs/b1-mobile/).
+Historickú dokumentáciu o zastaranej aplikácii nájdete na stránke [Referencia B1 Mobile](/docs/b1-church/index.md).
 
 ## Súvisiace články
 

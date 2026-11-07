@@ -77,7 +77,7 @@ Generiere Bestätigungen Anfang Januar, während Aufzeichnungen frisch sind. Die
 Bekomme die Bestätigungen in die Hände deiner Spender.
 
 1. Drucke und verschicke Bestätigungen, oder sende einzelne CSVs per E-Mail an Spender
-2. Mitglieder können auch ihre eigene Spendendhistorie einsehen und Bestätigungen von [B1.church](../../b1-church/giving/donation-history.md) und der [B1 Mobile App](../../b1-mobile/giving/donation-history.md) drucken
+2. Mitglieder können auch ihre eigene Spendendhistorie einsehen und Bestätigungen von [B1.church](../../b1-church/giving/donation-history.md) und der [B1 Mobile App](../../b1-church/giving/donation-history.md) drucken
 
 ## Du bist fertig!
 

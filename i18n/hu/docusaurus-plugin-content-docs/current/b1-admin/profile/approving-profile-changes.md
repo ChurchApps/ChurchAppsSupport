@@ -63,4 +63,4 @@ Győződjön meg róla, hogy a jóváhagyói valóban tagjai a beállított csop
 
 - [A profil kezelése](./managing-profile.md) — Saját fiókbeállítások szerkesztése
 - [Fióktörlési kérések áttekintése](./account-deletion.md) — Ugyanaz a jóváhagyó csoportos áttekintési folyamat a fiók törlésére
-- [B1 Mobile beállítások](../../b1-mobile/profile/editing-profile.md) — Amit a tagok látnak, amikor profilmódosítást küldenek be
+- [B1 Mobile beállítások](../../b1-church/getting-started/editing-your-profile.md) — Amit a tagok látnak, amikor profilmódosítást küldenek be

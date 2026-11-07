@@ -63,4 +63,4 @@ Hãy đảm bảo người phê duyệt của bạn thực sự là thành viên
 
 - [Quản lý hồ sơ của bạn](./managing-profile.md) — Chỉnh sửa cài đặt tài khoản của chính bạn
 - [Xem xét yêu cầu xóa tài khoản](./account-deletion.md) — Cùng quy trình xem xét của nhóm phê duyệt đối với việc xóa tài khoản
-- [Cài đặt B1 Mobile](../../b1-mobile/profile/editing-profile.md) — Những gì thành viên thấy khi gửi thay đổi hồ sơ
+- [Cài đặt B1 Mobile](../../b1-church/getting-started/editing-your-profile.md) — Những gì thành viên thấy khi gửi thay đổi hồ sơ

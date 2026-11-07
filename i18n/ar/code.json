@@ -382,12 +382,6 @@
   "homepage.products.b1website.description": {
     "message": "موقع الكنيسة العام وبوابة العضوية."
   },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 - الهاتف المحمول"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "تطبيق الأعضاء القديم لنظامي iOS وAndroid، وقد حل محله الآن تطبيق B1.church على الويب."
-  },
   "homepage.products.b1checkin.title": {
     "message": "B1 - تسجيل الوصول"
   },

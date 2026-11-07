@@ -95,10 +95,6 @@
     "message": "Lokucuketsiwe",
     "description": "The label for category 'Content' in sidebar 'docsSidebar'"
   },
-  "sidebar.docsSidebar.category.B1 - Mobile": {
-    "message": "B1 - Iselula",
-    "description": "The label for category 'B1 - Mobile' in sidebar 'docsSidebar'"
-  },
   "sidebar.docsSidebar.category.mobile-getting-started": {
     "message": "Kucala",
     "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
@@ -246,10 +242,6 @@
   "sidebar.docsSidebar.category.church-serving": {
     "message": "Kusebenta",
     "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
-  },
-  "sidebar.docsSidebar.category.B1 - Mobile (Deprecated)": {
-    "message": "B1 - Mobile (Ayisasebenti)",
-    "description": "The label for category 'B1 - Mobile (Deprecated)' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.mobile-events": {
     "message": "Imicimbi",

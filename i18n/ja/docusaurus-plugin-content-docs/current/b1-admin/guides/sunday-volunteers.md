@@ -96,7 +96,7 @@ B1 Admin では、繰り返しのスケジュールでタスクを作成する�
 3. 各役割について **Allow Self-Signup** のチェックボックスをオンにすると、セルフサービスで申し込めるようになります。
 4. 各役割に **Description** を追加して、どんな奉仕内容かをボランティアに分かるようにします。
 
-セルフサービスの役割を作成すると、[B1.church](../../b1-church/serving/volunteer-signup.md)と [B1 Mobile アプリ](../../b1-mobile/serving/volunteer-signup.md)のボランティア申し込みページに自動的に表示されます。会員は募集中の役割を見て、残りの枠数を確認し、ワンクリックで申し込めます。
+セルフサービスの役割を作成すると、[B1.church](../../b1-church/serving/volunteer-signup.md)と [B1 Mobile アプリ](../../b1-church/serving/volunteer-signup.md)のボランティア申し込みページに自動的に表示されます。会員は募集中の役割を見て、残りの枠数を確認し、ワンクリックで申し込めます。
 
 :::tip
 管理者が割り当てる役割とセルフサービスの役割を、同じプランに組み合わせてください。たとえば、礼拝リーダーは直接割り当て、受付やコーヒーの係は自分で選んで申し込めるようにします。
@@ -106,7 +106,7 @@ B1 Admin では、繰り返しのスケジュールでタスクを作成する�
 
 割り当てられたボランティアは、自分のプランを自動的に確認でき、返答することもできます。
 
-1. ボランティアは [B1.church](../../b1-church/plans/viewing-plans.md)と [B1 Mobile アプリ](../../b1-mobile/serving/viewing-plans.md)でプランを確認できる
+1. ボランティアは [B1.church](../../b1-church/plans/viewing-plans.md)と [B1 Mobile アプリ](../../b1-church/plans/viewing-plans.md)でプランを確認できる
 2. どちらのプラットフォームからでも、割り当てを直接承諾または辞退できる
 3. 都合のつかない週については、ブロックアウト日を設定できる
 4. リハーサル用にプランを印刷したり、舞台裏に掲示したりできる
@@ -130,6 +130,6 @@ B1 Admin では、繰り返しのスケジュールでタスクを作成する�
 - [タスク](../serving/tasks.md)：人やグループに対応項目を割り当てる
 - [ワークフロー](../serving/workflows.md)：トリガーと自動化されたステップで、繰り返し行う業務に人を進める
 - [プランの表示（ウェブ）](../../b1-church/plans/viewing-plans.md)：ボランティアがオンラインでプランを確認する方法
-- [プランの表示（モバイル）](../../b1-mobile/serving/viewing-plans.md)：ボランティアがモバイルでプランを確認する方法
+- [プランの表示（モバイル）](../../b1-church/plans/viewing-plans.md)：ボランティアがモバイルでプランを確認する方法
 - [ボランティア申し込み（ウェブ）](../../b1-church/serving/volunteer-signup.md)：会員がボランティアの役割を自分で選ぶ方法
-- [ボランティア申し込み（モバイル）](../../b1-mobile/serving/volunteer-signup.md)：モバイルでのボランティアのセルフサービス申し込み
+- [ボランティア申し込み（モバイル）](../../b1-church/serving/volunteer-signup.md)：モバイルでのボランティアのセルフサービス申し込み

@@ -50,7 +50,7 @@ Nawusesungenile, iphothali yemalungu ikunika kufinyelela ku:
 I-B1.church isebenta kuwuphi umcwayisi we-inthanethi yelucingo. Kuze utfole live lelifana kakhulu ne-app, faka iphothali yemalungu lelibandla lakini njenge-**Progressive Web App (PWA)** — uyifake ekhasini lekucala lelucingo lakho ngco kusuka ku-Safari nome Chrome, kungadzingeki i-app store. Bona [Kufaka Njenge-App (PWA)](./installing-pwa.md) kutfola imiyalo.
 
 :::info
-I-app leyekucala yendabuko ye-B1 Mobile seyiyekiwe kusetjentiswa. I-PWA yindlela leyeseketwako yekusebentisa i-B1.church elucingweni kusukela manje kuya embili — bona [likhasi lekubhekiswa kwe-B1 Mobile](/docs/b1-mobile/) kutfola imibhalo yayo yasendulo.
+I-app leyekucala yendabuko ye-B1 Mobile seyiyekiwe kusetjentiswa. I-PWA yindlela leyeseketwako yekusebentisa i-B1.church elucingweni kusukela manje kuya embili — bona [likhasi lekubhekiswa kwe-B1 Mobile](/docs/b1-church/index.md) kutfola imibhalo yayo yasendulo.
 :::
 
 ## Tinyatselo Letilandzelako

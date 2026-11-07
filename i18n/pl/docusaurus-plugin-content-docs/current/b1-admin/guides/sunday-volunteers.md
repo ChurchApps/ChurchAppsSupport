@@ -96,7 +96,7 @@ Pozwól wolontariuszom zapisywać się na stanowiska samodzielnie, zamiast czeka
 3. Dla każdego stanowiska zaznacz pole **Zezwól na samodzielne zapisy**, aby było dostępne do samodzielnego zapisu.
 4. Dodaj **Opis** do każdego stanowiska, aby wolontariusze wiedzieli, na czym polega ta rola.
 
-Gdy stanowiska z samodzielnymi zapisami zostaną utworzone, automatycznie pojawią się na stronach zapisów wolontariuszy na [B1.church](../../b1-church/serving/volunteer-signup.md) oraz w [aplikacji mobilnej B1](../../b1-mobile/serving/volunteer-signup.md). Członkowie mogą przeglądać wolne stanowiska, sprawdzić, ile miejsc zostało, i zapisać się jednym kliknięciem.
+Gdy stanowiska z samodzielnymi zapisami zostaną utworzone, automatycznie pojawią się na stronach zapisów wolontariuszy na [B1.church](../../b1-church/serving/volunteer-signup.md) oraz w [aplikacji mobilnej B1](../../b1-church/serving/volunteer-signup.md). Członkowie mogą przeglądać wolne stanowiska, sprawdzić, ile miejsc zostało, i zapisać się jednym kliknięciem.
 
 :::tip
 Łącz w jednym planie stanowiska przydzielane przez administratora z tymi, na które można zapisać się samodzielnie. Na przykład przypisz lidera uwielbienia bezpośrednio, ale pozwól witaczom i osobom serwującym kawę wybrać stanowisko samodzielnie.
@@ -106,7 +106,7 @@ Gdy stanowiska z samodzielnymi zapisami zostaną utworzone, automatycznie pojawi
 
 Przypisani wolontariusze automatycznie widzą swoje plany i mogą na nie odpowiedzieć.
 
-1. Wolontariusze widzą swoje plany na [B1.church](../../b1-church/plans/viewing-plans.md) i w [aplikacji mobilnej B1](../../b1-mobile/serving/viewing-plans.md)
+1. Wolontariusze widzą swoje plany na [B1.church](../../b1-church/plans/viewing-plans.md) i w [aplikacji mobilnej B1](../../b1-church/plans/viewing-plans.md)
 2. Mogą zaakceptować lub odrzucić przydziały bezpośrednio na obu platformach
 3. Mogą ustawić daty niedostępności w tygodniach, w których nie mogą służyć
 4. Plany można wydrukować na próby lub wywiesić za sceną
@@ -130,6 +130,6 @@ Twój system zarządzania wolontariuszami jest skonfigurowany. Każdego tygodnia
 - [Zadania](../serving/tasks.md) — przydzielanie zadań osobom lub grupom
 - [Przepływy pracy](../serving/workflows.md) — prowadzenie osób przez powtarzalne procesy z wyzwalaczami i automatycznymi krokami
 - [Przeglądanie planów (sieć)](../../b1-church/plans/viewing-plans.md) — jak wolontariusze widzą plany online
-- [Przeglądanie planów (mobilnie)](../../b1-mobile/serving/viewing-plans.md) — jak wolontariusze widzą plany w aplikacji mobilnej
+- [Przeglądanie planów (mobilnie)](../../b1-church/plans/viewing-plans.md) — jak wolontariusze widzą plany w aplikacji mobilnej
 - [Zapisy wolontariuszy (sieć)](../../b1-church/serving/volunteer-signup.md) — jak członkowie samodzielnie wybierają stanowiska wolontariuszy
-- [Zapisy wolontariuszy (mobilnie)](../../b1-mobile/serving/volunteer-signup.md) — samodzielne zapisy wolontariuszy w aplikacji mobilnej
+- [Zapisy wolontariuszy (mobilnie)](../../b1-church/serving/volunteer-signup.md) — samodzielne zapisy wolontariuszy w aplikacji mobilnej

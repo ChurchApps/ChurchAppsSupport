@@ -63,4 +63,4 @@ Asegúrate de que tus aprobadores sean realmente miembros del grupo configurado 
 
 - [Managing Your Profile](./managing-profile.md) -- Edita tus propias configuraciones de cuenta
 - [Reviewing Account Deletion Requests](./account-deletion.md) -- El mismo flujo de revisión de grupo de aprobación para eliminación de cuenta
-- [B1 Mobile Settings](../../b1-mobile/profile/editing-profile.md) -- Lo que los miembros ven cuando envían un cambio de perfil
+- [B1 Mobile Settings](../../b1-church/getting-started/editing-your-profile.md) -- Lo que los miembros ven cuando envían un cambio de perfil

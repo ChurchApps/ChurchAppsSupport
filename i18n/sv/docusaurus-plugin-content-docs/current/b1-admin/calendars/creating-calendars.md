@@ -107,7 +107,7 @@ Du kan aktivera registrering för vilken kalenderhändelse som helst så att med
 
 För betalda händelser låter samma inställningssida dig definiera prissatta **Deltagartyper**, valfria **Val** (tillägg) och **Rabattkoder**, med betalning via din kyrkas givartjänst. Se [Betalda registreringar](./paid-registrations.md) för den fullständiga genomgången.
 
-När registrering är aktiverad ser medlemmar en knapp **Registrera dig för denna händelse** när de visar händelsen på [B1-webbplatsen](../../b1-church/events/registering.md) eller [B1-mobilappen](../../b1-mobile/events/registering.md). Om du har bifogat ett formulär ser deltagarna ett steg **Frågor** under registreringen, och deras svar sparas tillsammans med deras registrering.
+När registrering är aktiverad ser medlemmar en knapp **Registrera dig för denna händelse** när de visar händelsen på [B1-webbplatsen](../../b1-church/events/registering.md) eller [B1-mobilappen](../../b1-church/events/registering.md). Om du har bifogat ett formulär ser deltagarna ett steg **Frågor** under registreringen, och deras svar sparas tillsammans med deras registrering.
 
 :::info
 Registreringsfrågor fungerar bara med formulär som **inte** är markerade som begränsade. Ett begränsat formulär hoppas över automatiskt vid registrering i stället för att visas, så använd ett obegränsat formulär när du bifogar frågor till en händelse.

@@ -107,7 +107,7 @@ Você pode ativar inscrições para qualquer evento do calendário, para que os 
 
 Para eventos pagos, a mesma página de configurações permite definir **Tipos de participante** com preço, **Opções** adicionais (complementos opcionais) e **Códigos de desconto**, com o pagamento sendo cobrado pelo provedor de doações da sua igreja. Veja [Inscrições pagas](./paid-registrations.md) para o passo a passo completo.
 
-Depois que as inscrições estiverem ativadas, os membros verão um botão **Inscrever-se neste evento** ao visualizar o evento no [site do B1](../../b1-church/events/registering.md) ou no [aplicativo móvel B1](../../b1-mobile/events/registering.md). Se você anexou um formulário, os inscritos verão uma etapa de **Perguntas** durante a inscrição, e as respostas ficam salvas junto com a inscrição.
+Depois que as inscrições estiverem ativadas, os membros verão um botão **Inscrever-se neste evento** ao visualizar o evento no [site do B1](../../b1-church/events/registering.md) ou no [aplicativo móvel B1](../../b1-church/events/registering.md). Se você anexou um formulário, os inscritos verão uma etapa de **Perguntas** durante a inscrição, e as respostas ficam salvas junto com a inscrição.
 
 :::info
 As Perguntas de inscrição só funcionam com formulários que **não** estão marcados como Restritos. Um formulário restrito é ignorado automaticamente durante a inscrição, em vez de ser exibido; por isso, use um formulário não restrito ao anexar perguntas a um evento.

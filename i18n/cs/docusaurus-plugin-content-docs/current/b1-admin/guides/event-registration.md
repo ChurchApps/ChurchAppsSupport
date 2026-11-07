@@ -12,7 +12,7 @@ Vytvořte formulář pro registraci na akci, shromažďujte údaje o účastníc
 </div>
 
 :::info
-**Dva způsoby, jak řešit registraci na akci:** Tento návod popisuje **registraci pomocí formulářů**, která vám dává plnou kontrolu nad vlastními poli a výběrem plateb. U jednodušších akcí, kde potřebujete jen evidovat, kdo přijde, použijte **nativní registraci na akci** zabudovanou do kalendáře -- pokyny k nastavení najdete v článku [Vytváření kalendářů](../calendars/creating-calendars.md#enabling-event-registration). Nativní registrace umožňuje členům přihlásit se přímo na [webu B1](../../b1-church/events/registering.md) a v [mobilní aplikaci](../../b1-mobile/events/registering.md) s sledováním kapacity, časovými okny a potvrzovacími e-maily.
+**Dva způsoby, jak řešit registraci na akci:** Tento návod popisuje **registraci pomocí formulářů**, která vám dává plnou kontrolu nad vlastními poli a výběrem plateb. U jednodušších akcí, kde potřebujete jen evidovat, kdo přijde, použijte **nativní registraci na akci** zabudovanou do kalendáře -- pokyny k nastavení najdete v článku [Vytváření kalendářů](../calendars/creating-calendars.md#enabling-event-registration). Nativní registrace umožňuje členům přihlásit se přímo na [webu B1](../../b1-church/events/registering.md) a v [mobilní aplikaci](../../b1-church/events/registering.md) s sledováním kapacity, časovými okny a potvrzovacími e-maily.
 :::
 
 <div class="prereqs">

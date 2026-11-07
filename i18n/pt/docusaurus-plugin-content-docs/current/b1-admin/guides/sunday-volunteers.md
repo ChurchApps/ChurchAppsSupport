@@ -96,7 +96,7 @@ Permita que os voluntários se inscrevam nas posições por conta própria, em v
 3. Para cada posição, marque a caixa **Permitir inscrição própria** para disponibilizá-la para autoatendimento.
 4. Adicione uma **Descrição** a cada posição para que os voluntários saibam em que consiste a função.
 
-Depois que as posições de autoatendimento forem criadas, elas aparecem automaticamente nas páginas de inscrição de voluntários no [B1.church](../../b1-church/serving/volunteer-signup.md) e no [aplicativo móvel B1](../../b1-mobile/serving/volunteer-signup.md). Os membros podem ver as posições abertas, saber quantas vagas restam e se inscrever com um clique.
+Depois que as posições de autoatendimento forem criadas, elas aparecem automaticamente nas páginas de inscrição de voluntários no [B1.church](../../b1-church/serving/volunteer-signup.md) e no [aplicativo móvel B1](../../b1-church/serving/volunteer-signup.md). Os membros podem ver as posições abertas, saber quantas vagas restam e se inscrever com um clique.
 
 :::tip
 Misture posições designadas pela administração com posições de autoatendimento no mesmo plano. Por exemplo, designe o seu líder de louvor diretamente, mas deixe que a recepção e os servidores de café escolham por conta própria.
@@ -106,7 +106,7 @@ Misture posições designadas pela administração com posições de autoatendim
 
 Os voluntários designados veem automaticamente os seus planos e podem responder.
 
-1. Os voluntários veem seus planos no [B1.church](../../b1-church/plans/viewing-plans.md) e no [aplicativo móvel B1](../../b1-mobile/serving/viewing-plans.md)
+1. Os voluntários veem seus planos no [B1.church](../../b1-church/plans/viewing-plans.md) e no [aplicativo móvel B1](../../b1-church/plans/viewing-plans.md)
 2. Eles podem aceitar ou recusar as designações diretamente em qualquer uma dessas plataformas
 3. Podem definir datas de indisponibilidade para as semanas em que não estarão disponíveis
 4. Os planos podem ser impressos para os ensaios ou afixados nos bastidores
@@ -130,6 +130,6 @@ Seu sistema de gestão de voluntários está configurado. Toda semana, crie um n
 - [Tarefas](../serving/tasks.md) — atribua itens de ação a pessoas ou grupos
 - [Fluxos de trabalho](../serving/workflows.md) — conduza pessoas por processos repetíveis com gatilhos e etapas automatizadas
 - [Ver planos (Web)](../../b1-church/plans/viewing-plans.md) — como os voluntários veem os planos online
-- [Ver planos (Mobile)](../../b1-mobile/serving/viewing-plans.md) — como os voluntários veem os planos no celular
+- [Ver planos (Mobile)](../../b1-church/plans/viewing-plans.md) — como os voluntários veem os planos no celular
 - [Inscrição de voluntários (Web)](../../b1-church/serving/volunteer-signup.md) — como os membros escolhem posições de voluntariado
-- [Inscrição de voluntários (Mobile)](../../b1-mobile/serving/volunteer-signup.md) — inscrição de voluntários no celular
+- [Inscrição de voluntários (Mobile)](../../b1-church/serving/volunteer-signup.md) — inscrição de voluntários no celular

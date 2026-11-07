@@ -20,12 +20,6 @@
   "homepage.products.b1website.description": {
     "message": "교회 공개 웹사이트 및 교인 포털."
   },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Mobile"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "iOS 및 Android용 레거시 회원 앱입니다. 현재는 B1.church 웹 앱으로 대체되었습니다."
-  },
   "homepage.products.b1checkin.title": {
     "message": "B1 Checkin"
   },

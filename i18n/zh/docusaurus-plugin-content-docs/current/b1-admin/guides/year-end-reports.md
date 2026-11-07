@@ -77,7 +77,7 @@ description: "在 B1 Admin 中完成年度奉献记录、检查基金的税务�
 将报表交付给您的捐赠者。
 
 1. 打印并邮寄报表，或通过电子邮件将单个CSV文件发送给捐赠者
-2. 成员也可以从[B1.church](../../b1-church/giving/donation-history.md)和[B1移动应用](../../b1-mobile/giving/donation-history.md)查看他们自己的捐赠历史并打印报表
+2. 成员也可以从[B1.church](../../b1-church/giving/donation-history.md)和[B1移动应用](../../b1-church/giving/donation-history.md)查看他们自己的捐赠历史并打印报表
 
 ## 完成！
 

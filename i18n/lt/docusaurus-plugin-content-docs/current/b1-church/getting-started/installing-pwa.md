@@ -98,7 +98,7 @@ PWA reikalauja interneto ryšio. Skirtingai nei kai kurios tikrosios programėl�
 
 Pasenusi tikroji **B1 Mobile** programėlė iOS ir Android sistemoms nebepalaikoma ir nebeatnaujinama. PWA ateityje yra palaikomas būdas pasiekti B1.church narių portalą telefone, ir ji apima visas narių funkcijas, kurias siūlė tikroji programėlė. Jei anksčiau įdiegėte tikrąją programėlę, perjunkite į PWA, kai jums patogu.
 
-Istorinę dokumentaciją apie nebepalaikomą programėlę rasite [B1 Mobile nuorodų puslapyje](/docs/b1-mobile/).
+Istorinę dokumentaciją apie nebepalaikomą programėlę rasite [B1 Mobile nuorodų puslapyje](/docs/b1-church/index.md).
 
 ## Susiję straipsniai
 

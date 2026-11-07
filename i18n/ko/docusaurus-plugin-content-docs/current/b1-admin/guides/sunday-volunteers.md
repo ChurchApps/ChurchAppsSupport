@@ -96,7 +96,7 @@ B1 Admin은 더 이상 반복 일정으로 할 일을 만들지 않습니다. �
 3. 각 자리에서 **Allow Self-Signup** 체크박스를 체크해 셀프 서비스로 제공하세요.
 4. 봉사자가 역할의 내용을 알 수 있도록 각 자리에 **Description**(설명)을 추가하세요.
 
-셀프 가입 자리를 만들면, 자동으로 [B1.church](../../b1-church/serving/volunteer-signup.md)와 [B1 모바일 앱](../../b1-mobile/serving/volunteer-signup.md)의 봉사 신청 페이지에 나타납니다. 교인은 모집 중인 자리를 둘러보고, 남은 자리 수를 확인하고, 한 번의 클릭으로 가입할 수 있습니다.
+셀프 가입 자리를 만들면, 자동으로 [B1.church](../../b1-church/serving/volunteer-signup.md)와 [B1 모바일 앱](../../b1-church/serving/volunteer-signup.md)의 봉사 신청 페이지에 나타납니다. 교인은 모집 중인 자리를 둘러보고, 남은 자리 수를 확인하고, 한 번의 클릭으로 가입할 수 있습니다.
 
 :::tip
 같은 계획 안에서 관리자가 배정하는 자리와 셀프 가입 자리를 섞으세요. 예를 들어 찬양 인도자는 직접 배정하고, 안내 위원이나 커피 봉사자는 스스로 고르게 하는 식입니다.
@@ -106,7 +106,7 @@ B1 Admin은 더 이상 반복 일정으로 할 일을 만들지 않습니다. �
 
 배정된 봉사자는 자신의 계획을 자동으로 보고 응답할 수 있습니다.
 
-1. 봉사자는 [B1.church](../../b1-church/plans/viewing-plans.md)와 [B1 모바일 앱](../../b1-mobile/serving/viewing-plans.md)에서 자신의 계획을 볼 수 있습니다.
+1. 봉사자는 [B1.church](../../b1-church/plans/viewing-plans.md)와 [B1 모바일 앱](../../b1-church/plans/viewing-plans.md)에서 자신의 계획을 볼 수 있습니다.
 2. 두 플랫폼 어디에서든 배정을 직접 수락하거나 거절할 수 있습니다.
 3. 봉사할 수 없는 주를 위해 불가능한 날짜(blockout date)를 설정할 수 있습니다.
 4. 계획은 예행연습용으로 인쇄하거나 무대 뒤에 붙일 수 있습니다.
@@ -130,6 +130,6 @@ B1 Admin은 더 이상 반복 일정으로 할 일을 만들지 않습니다. �
 - [할 일](../serving/tasks.md) -- 사람이나 그룹에 할 일 배정하기
 - [워크플로](../serving/workflows.md) -- 트리거와 자동 단계로 반복 절차 진행하기
 - [계획 보기(웹)](../../b1-church/plans/viewing-plans.md) -- 봉사자가 온라인에서 계획을 보는 방법
-- [계획 보기(모바일)](../../b1-mobile/serving/viewing-plans.md) -- 봉사자가 모바일에서 계획을 보는 방법
+- [계획 보기(모바일)](../../b1-church/plans/viewing-plans.md) -- 봉사자가 모바일에서 계획을 보는 방법
 - [봉사 신청(웹)](../../b1-church/serving/volunteer-signup.md) -- 교인이 봉사 자리를 스스로 고르는 방법
-- [봉사 신청(모바일)](../../b1-mobile/serving/volunteer-signup.md) -- 모바일에서 봉사자가 스스로 가입하기
+- [봉사 신청(모바일)](../../b1-church/serving/volunteer-signup.md) -- 모바일에서 봉사자가 스스로 가입하기

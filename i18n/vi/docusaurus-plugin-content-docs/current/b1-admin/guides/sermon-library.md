@@ -84,7 +84,7 @@ Làm theo hướng dẫn [Quản lý trang](../website/managing-pages.md) để:
 
 Thành viên có thể xem bài giảng và các buổi trực tuyến trên mọi thiết bị.
 
-1. Thành viên có thể xem bài giảng trong [ứng dụng B1 Mobile](../../b1-mobile/content/sermons.md) và trên [B1.church](../../b1-church/content/sermons.md)
+1. Thành viên có thể xem bài giảng trong [ứng dụng B1 Mobile](../../b1-church/content/sermons.md) và trên [B1.church](../../b1-church/content/sermons.md)
 2. Phát trực tiếp có trò chuyện hoạt động trên cả hai nền tảng
 
 :::info
@@ -103,4 +103,4 @@ Thư viện bài giảng của bạn đã được đưa lên mạng và luồng
 - [Phát trực tiếp](../sermons/live-streaming.md) — cấu hình các buổi trực tuyến
 - [Bài giảng (Web)](../../b1-church/content/sermons.md) — trải nghiệm xem bài giảng của thành viên
 - [Phát trực tiếp (Web)](../../b1-church/content/live-streaming.md) — trải nghiệm xem phát trực tiếp của thành viên
-- [Bài giảng (Di động)](../../b1-mobile/content/sermons.md) — bài giảng trên ứng dụng di động
+- [Bài giảng (Di động)](../../b1-church/content/sermons.md) — bài giảng trên ứng dụng di động

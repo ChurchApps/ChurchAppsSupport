@@ -50,7 +50,7 @@ Prisijungę prie narių portalo, turite prieigą prie:
 B1.church veikia bet kurioje mobiliojoje naršyklėje. Norėdami patirti labiau programėlei panašią patirtį, įdiekite savo bažnyčios narių portalą kaip **progresyviąją internetinę programėlę (PWA)** – apsilankykite `https://yourchurchname.b1.church/mobile/install`, kur rasite nurodymus, pritaikytus jūsų įrenginiui, arba tiesiog pridėkite svetainę prie pagrindinio ekrano per Safari ar Chrome. Parduotuvės diegti nereikia. Instrukcijų ieškokite skyriuje [Įdiegimas kaip programėlė (PWA)](./installing-pwa.md).
 
 :::info
-Senoji B1 Mobile vietinė programėlė nebepalaikoma. Ateityje PWA bus palaikomas būdas naudotis B1.church telefone – istorinę dokumentaciją rasite [B1 Mobile žinyno puslapyje](/docs/b1-mobile/).
+Senoji B1 Mobile vietinė programėlė nebepalaikoma. Ateityje PWA bus palaikomas būdas naudotis B1.church telefone – istorinę dokumentaciją rasite [B1 Mobile žinyno puslapyje](/docs/b1-church/index.md).
 :::
 
 ## Tolesni žingsniai

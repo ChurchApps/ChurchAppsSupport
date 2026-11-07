@@ -77,7 +77,7 @@ description: "B1 Admin で年間の献金記録を締め、基金の税務設定
 明細書を寄付者の手元に届けます。
 
 1. 明細書を印刷して郵送するか、個々の CSV を寄付者にメールで送付する
-2. メンバーは [B1.church](../../b1-church/giving/donation-history.md) および [B1 Mobile アプリ](../../b1-mobile/giving/donation-history.md)から、自分の寄付履歴を確認したり明細書を印刷したりすることもできます
+2. メンバーは [B1.church](../../b1-church/giving/donation-history.md) および [B1 Mobile アプリ](../../b1-church/giving/donation-history.md)から、自分の寄付履歴を確認したり明細書を印刷したりすることもできます
 
 ## 完了です！
 

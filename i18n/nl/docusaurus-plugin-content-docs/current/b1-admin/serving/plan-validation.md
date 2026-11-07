@@ -54,11 +54,11 @@ Alleen vrijwilligers die nog niet zijn gemelded, zullen worden opgenomen. Als u 
 :::
 
 :::warning
-Vrijwilligers moeten de B1 Mobiele app hebben geïnstalleerd en meldingen hebben ingeschakeld om de push-melding te ontvangen. Zie de [Meldingsgids](/docs/b1-mobile/community/notifications) voor hoe vrijwilligers dit op hun apparaat kunnen inschakelen.
+Vrijwilligers moeten de B1 Mobiele app hebben geïnstalleerd en meldingen hebben ingeschakeld om de push-melding te ontvangen. Zie de [Meldingsgids](/docs/b1-church/getting-started/notification-preferences.md) voor hoe vrijwilligers dit op hun apparaat kunnen inschakelen.
 :::
 
 ## Gerelateerde artikelen
 
 - [Service Plans](./plans.md)
 - [Automations](./workflows.md)
-- [B1 Mobiele meldingen](/docs/b1-mobile/community/notifications)
+- [B1 Mobiele meldingen](/docs/b1-church/getting-started/notification-preferences.md)

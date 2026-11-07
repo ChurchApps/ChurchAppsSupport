@@ -84,7 +84,7 @@ description: "Импортируйте проповеди с YouTube или Vime
 
 Участники могут смотреть проповеди и служения в прямом эфире с любого устройства.
 
-1. Участники могут смотреть проповеди в [мобильном приложении B1](../../b1-mobile/content/sermons.md) и на [B1.church](../../b1-church/content/sermons.md)
+1. Участники могут смотреть проповеди в [мобильном приложении B1](../../b1-church/content/sermons.md) и на [B1.church](../../b1-church/content/sermons.md)
 2. Прямая трансляция с чатом работает на обеих платформах
 
 :::info
@@ -103,4 +103,4 @@ description: "Импортируйте проповеди с YouTube или Vime
 - [Live Streaming](../sermons/live-streaming.md) — настройка прямых служений
 - [Sermons (Web)](../../b1-church/content/sermons.md) — просмотр проповедей участниками на сайте
 - [Live Streaming (Web)](../../b1-church/content/live-streaming.md) — просмотр прямых трансляций участниками
-- [Sermons (Mobile)](../../b1-mobile/content/sermons.md) — проповеди в мобильном приложении
+- [Sermons (Mobile)](../../b1-church/content/sermons.md) — проповеди в мобильном приложении

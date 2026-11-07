@@ -12,7 +12,7 @@ description: "B1 Admin でイベント登録フォームを設定し、参加者
 </div>
 
 :::info
-**イベント登録の方法は2つあります：** このガイドでは**フォームによる登録**を扱います。カスタム項目や支払いの収集を細かく管理できます。参加者を把握するだけの簡単なイベントでは、カレンダーに組み込まれた**ネイティブのイベント登録**を使ってください。設定方法は[カレンダーの作成](../calendars/creating-calendars.md#enabling-event-registration)を参照してください。ネイティブ登録では、メンバーが定員管理、受付期間、確認メールに対応した状態で[B1 Webサイト](../../b1-church/events/registering.md)や[モバイルアプリ](../../b1-mobile/events/registering.md)から直接申し込めます。
+**イベント登録の方法は2つあります：** このガイドでは**フォームによる登録**を扱います。カスタム項目や支払いの収集を細かく管理できます。参加者を把握するだけの簡単なイベントでは、カレンダーに組み込まれた**ネイティブのイベント登録**を使ってください。設定方法は[カレンダーの作成](../calendars/creating-calendars.md#enabling-event-registration)を参照してください。ネイティブ登録では、メンバーが定員管理、受付期間、確認メールに対応した状態で[B1 Webサイト](../../b1-church/events/registering.md)や[モバイルアプリ](../../b1-church/events/registering.md)から直接申し込めます。
 :::
 
 <div class="prereqs">

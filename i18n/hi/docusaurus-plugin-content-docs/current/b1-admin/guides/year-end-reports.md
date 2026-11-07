@@ -77,7 +77,7 @@ description: "B1 Admin में वर्ष के दान रिकॉर�
 विवरण को अपने दाताओं के हाथों में प्राप्त करें।
 
 1. विवरण प्रिंट करें और मेल करें, या अलग-अलग CSV दाताओं को ईमेल करें
-2. सदस्य [B1.church](../../b1-church/giving/donation-history.md) और [B1 मोबाइल ऐप](../../b1-mobile/giving/donation-history.md) से अपना दान इतिहास देख सकते हैं और विवरण प्रिंट कर सकते हैं
+2. सदस्य [B1.church](../../b1-church/giving/donation-history.md) और [B1 मोबाइल ऐप](../../b1-church/giving/donation-history.md) से अपना दान इतिहास देख सकते हैं और विवरण प्रिंट कर सकते हैं
 
 ## आप हो गए!
 

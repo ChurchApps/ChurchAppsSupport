@@ -383,12 +383,6 @@
   "homepage.products.b1website.description": {
     "message": "Kilisinin kamuya açık web sayfası ve üyeler için portal."
   },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Mobil"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "iOS ve Android için eski üye uygulaması; artık B1.church web uygulamasıyla değiştirildi."
-  },
   "homepage.products.b1checkin.title": {
     "message": "B1 Kayıt"
   },

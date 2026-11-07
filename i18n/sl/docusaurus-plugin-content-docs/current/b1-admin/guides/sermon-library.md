@@ -84,7 +84,7 @@ Sledite vodiču [Upravljanje strani](../website/managing-pages.md), da:
 
 Člani lahko pridige in storitve v živo spremljajo z vsake naprave.
 
-1. Člani lahko pridige gledajo v [mobilni aplikaciji B1 Mobile](../../b1-mobile/content/sermons.md) in na [B1.church](../../b1-church/content/sermons.md)
+1. Člani lahko pridige gledajo v [mobilni aplikaciji B1 Mobile](../../b1-church/content/sermons.md) in na [B1.church](../../b1-church/content/sermons.md)
 2. Prenos v živo s klepetom deluje na obeh platformah
 
 :::info
@@ -103,4 +103,4 @@ Vaša knjižnica pridig je na spletu, prenos v živo pa je nastavljen. Člani la
 - [Prenos v živo](../sermons/live-streaming.md) — nastavitev storitev v živo
 - [Pridige (splet)](../../b1-church/content/sermons.md) — izkušnja gledanja pridig za člane
 - [Prenos v živo (splet)](../../b1-church/content/live-streaming.md) — izkušnja prenosa v živo za člane
-- [Pridige (mobilno)](../../b1-mobile/content/sermons.md) — pridige v mobilni aplikaciji
+- [Pridige (mobilno)](../../b1-church/content/sermons.md) — pridige v mobilni aplikaciji

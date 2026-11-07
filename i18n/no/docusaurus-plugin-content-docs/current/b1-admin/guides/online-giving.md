@@ -71,7 +71,7 @@ Bruk Stripes testmodus først hvis du vil verifisere uten ekte trekk, og bytt de
 Spre budskapet slik at medlemmene vet at de kan gi på nett.
 
 1. Del giving-adressen via nettstedet ditt, e-postnyhetsbrev, menighetsblad og sosiale medier
-2. Medlemmer kan også gi via [B1 Mobile-appen](../../b1-mobile/giving/index.md), gitfunksjonen er innebygd
+2. Medlemmer kan også gi via [B1 Mobile-appen](../../b1-church/giving/index.md), gitfunksjonen er innebygd
 
 :::info
 Medlemmer som logger inn, kan lagre betalingsmetoder, sette opp faste gaver og se gavehistorikken sin. Anonym giving fungerer også, uten innlogging.
@@ -102,4 +102,4 @@ Menigheten din tar nå imot nettbaserte gaver. Medlemmene kan gi via nettstedet 
 - [Gaverapporter](../donations/donation-reports.md): se utvikling i giving og totalsummer
 - [Årsoppgaver for gaver](../donations/giving-statements.md): lag skatteoppgaver for hele året
 - [Gi gaver (web)](../../b1-church/giving/making-donations.md): opplevelsen for medlemmene når de gir
-- [Gi gaver (mobil)](../../b1-mobile/giving/making-donations.md): gi via mobilappen
+- [Gi gaver (mobil)](../../b1-church/giving/making-donations.md): gi via mobilappen

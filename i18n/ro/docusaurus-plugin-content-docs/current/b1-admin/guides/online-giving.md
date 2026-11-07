@@ -71,7 +71,7 @@ Folosiți mai întâi modul de test al Stripe dacă doriți să verificați făr
 Vestiți membrii, astfel încât aceștia să știe că pot dona online.
 
 1. Distribuiți adresa URL pentru donații prin site-ul web, buletinele informative prin e-mail, buletinele parohiale și rețelele sociale
-2. Membrii pot dona și prin [aplicația B1 Mobile](../../b1-mobile/giving/index.md) — funcția de donații este integrată
+2. Membrii pot dona și prin [aplicația B1 Mobile](../../b1-church/giving/index.md) — funcția de donații este integrată
 
 :::info
 Membrii autentificați pot salva metode de plată, pot configura donații recurente și pot consulta istoricul donațiilor. Donațiile anonime sunt și ele posibile — nu este necesară autentificarea.
@@ -102,4 +102,4 @@ Biserica dumneavoastră acceptă acum donații online. Membrii pot dona prin sit
 - [Rapoarte de donații](../donations/donation-reports.md) — consultați tendințele și totalurile donațiilor
 - [Extrase de donații](../donations/giving-statements.md) — generați extrasele fiscale de sfârșit de an
 - [Efectuarea donațiilor (web)](../../b1-church/giving/making-donations.md) — experiența de donare a membrilor
-- [Efectuarea donațiilor (mobil)](../../b1-mobile/giving/making-donations.md) — donarea din aplicația mobilă
+- [Efectuarea donațiilor (mobil)](../../b1-church/giving/making-donations.md) — donarea din aplicația mobilă

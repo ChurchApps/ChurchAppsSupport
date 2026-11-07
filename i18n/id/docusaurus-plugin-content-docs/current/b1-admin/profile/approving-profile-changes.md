@@ -63,4 +63,4 @@ Pastikan penyetuju Anda benar-benar anggota grup yang dikonfigurasi — hanya an
 
 - [Mengelola Profil Anda](./managing-profile.md) — Mengedit pengaturan akun Anda sendiri
 - [Meninjau Permintaan Penghapusan Akun](./account-deletion.md) — Alur peninjauan grup persetujuan yang sama untuk penghapusan akun
-- [Pengaturan B1 Mobile](../../b1-mobile/profile/editing-profile.md) — Apa yang dilihat anggota saat mengirimkan perubahan profil
+- [Pengaturan B1 Mobile](../../b1-church/getting-started/editing-your-profile.md) — Apa yang dilihat anggota saat mengirimkan perubahan profil

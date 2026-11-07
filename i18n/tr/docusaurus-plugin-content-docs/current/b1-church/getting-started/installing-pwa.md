@@ -98,7 +98,7 @@ PWA için internet bağlantısı gereklidir. Bazı yerel uygulamaların aksine, 
 
 iOS ve Android'deki yerel **B1 Mobile** uygulaması kullanımdan kaldırılmıştır ve artık güncellenmemektedir. Bundan sonra telefonunuzdan B1.church üye portalına erişmenin desteklenen yolu PWA'dır; yerel uygulamanın sunduğu tüm üyeye yönelik özellikleri kapsar. Daha önce yerel uygulamayı yüklediyseniz, uygun olduğunuz zaman PWA'ya geçebilirsiniz.
 
-Kullanımdan kaldırılan uygulama hakkında geçmişe yönelik belgeler için [B1 Mobile başvuru sayfasına](/docs/b1-mobile/) bakın.
+Kullanımdan kaldırılan uygulama hakkında geçmişe yönelik belgeler için [B1 Mobile başvuru sayfasına](/docs/b1-church/index.md) bakın.
 
 ## İlgili makaleler
 

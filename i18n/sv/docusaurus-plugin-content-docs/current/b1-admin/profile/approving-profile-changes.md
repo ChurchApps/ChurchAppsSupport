@@ -63,4 +63,4 @@ Se till att dina godkännare faktiskt är medlemmar i den konfigurerade gruppen.
 
 - [Hantera din profil](./managing-profile.md) — Redigera dina egna kontoinställningar
 - [Granska förfrågningar om kontoradering](./account-deletion.md) — Samma granskningsflöde via godkännandegruppen för kontoradering
-- [Inställningar i B1 Mobile](../../b1-mobile/profile/editing-profile.md) — Vad medlemmar ser när de skickar en profiländring
+- [Inställningar i B1 Mobile](../../b1-church/getting-started/editing-your-profile.md) — Vad medlemmar ser när de skickar en profiländring

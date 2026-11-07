@@ -84,7 +84,7 @@ Skorzystaj z przewodnika [Zarządzanie stronami](../website/managing-pages.md), 
 
 Członkowie wspólnoty mogą oglądać kazania i nabożeństwa na żywo z dowolnego urządzenia.
 
-1. Członkowie mogą oglądać kazania w [aplikacji B1 Mobile](../../b1-mobile/content/sermons.md) oraz na [B1.church](../../b1-church/content/sermons.md)
+1. Członkowie mogą oglądać kazania w [aplikacji B1 Mobile](../../b1-church/content/sermons.md) oraz na [B1.church](../../b1-church/content/sermons.md)
 2. Transmisja na żywo z czatem działa na obu platformach
 
 :::info
@@ -103,4 +103,4 @@ Twoja biblioteka kazań jest online, a transmisja na żywo jest skonfigurowana. 
 - [Transmisja na żywo](../sermons/live-streaming.md) — konfiguracja nabożeństw na żywo
 - [Kazania (web)](../../b1-church/content/sermons.md) — doświadczenie oglądania kazań przez członków
 - [Transmisja na żywo (web)](../../b1-church/content/live-streaming.md) — doświadczenie transmisji na żywo przez członków
-- [Kazania (mobile)](../../b1-mobile/content/sermons.md) — kazania w aplikacji mobilnej
+- [Kazania (mobile)](../../b1-church/content/sermons.md) — kazania w aplikacji mobilnej

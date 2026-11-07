@@ -12,7 +12,7 @@ Erstellen Sie ein Ereignisregistrierungsformular, sammeln Sie Teilnehmerinformat
 </div>
 
 :::info
-**Zwei Möglichkeiten, um Ereignisregistrierung zu handhaben:** Diese Anleitung behandelt **formularbasierte Registrierung**, die Ihnen vollständige Kontrolle über benutzerdefinierte Felder und Zahlungserfassung gibt. Für einfachere Veranstaltungen, bei denen Sie nur verfolgen müssen, wer kommt, verwenden Sie **native Ereignisregistrierung**, die in den Kalender integriert ist -- siehe [Kalender erstellen](../calendars/creating-calendars.md#enabling-event-registration) für Setupanweisungen. Die native Registrierung ermöglicht es Mitgliedern, sich direkt von der [B1-Website](../../b1-church/events/registering.md) und der [mobilen App](../../b1-mobile/events/registering.md) mit Kapazitätsverfolgung, Zeitfenstern und E-Mail-Bestätigungen anzumelden.
+**Zwei Möglichkeiten, um Ereignisregistrierung zu handhaben:** Diese Anleitung behandelt **formularbasierte Registrierung**, die Ihnen vollständige Kontrolle über benutzerdefinierte Felder und Zahlungserfassung gibt. Für einfachere Veranstaltungen, bei denen Sie nur verfolgen müssen, wer kommt, verwenden Sie **native Ereignisregistrierung**, die in den Kalender integriert ist -- siehe [Kalender erstellen](../calendars/creating-calendars.md#enabling-event-registration) für Setupanweisungen. Die native Registrierung ermöglicht es Mitgliedern, sich direkt von der [B1-Website](../../b1-church/events/registering.md) und der [mobilen App](../../b1-church/events/registering.md) mit Kapazitätsverfolgung, Zeitfenstern und E-Mail-Bestätigungen anzumelden.
 :::
 
 <div class="prereqs">

@@ -96,7 +96,7 @@ Permita que los voluntarios se inscriban por sí mismos a los puestos, en lugar 
 3. Para cada puesto, marque la casilla **Permitir autoinscripción** para que esté disponible para inscripción por cuenta propia.
 4. Agregue una **Descripción** a cada puesto para que los voluntarios sepan en qué consiste el rol.
 
-Una vez creados los puestos con autoinscripción, aparecen automáticamente en las páginas de inscripción de voluntarios de [B1.church](../../b1-church/serving/volunteer-signup.md) y de la [aplicación móvil de B1](../../b1-mobile/serving/volunteer-signup.md). Los miembros pueden ver los puestos abiertos, ver cuántos lugares quedan e inscribirse con un solo clic.
+Una vez creados los puestos con autoinscripción, aparecen automáticamente en las páginas de inscripción de voluntarios de [B1.church](../../b1-church/serving/volunteer-signup.md) y de la [aplicación móvil de B1](../../b1-church/serving/volunteer-signup.md). Los miembros pueden ver los puestos abiertos, ver cuántos lugares quedan e inscribirse con un solo clic.
 
 :::tip
 Combine puestos asignados por el administrador con puestos de autoinscripción en el mismo plan. Por ejemplo, asigne directamente a su líder de adoración, pero deje que los encargados de recibir y de servir café se elijan a sí mismos.
@@ -106,7 +106,7 @@ Combine puestos asignados por el administrador con puestos de autoinscripción e
 
 Los voluntarios asignados ven automáticamente sus planes y pueden responder.
 
-1. Los voluntarios ven sus planes en [B1.church](../../b1-church/plans/viewing-plans.md) y en la [aplicación móvil de B1](../../b1-mobile/serving/viewing-plans.md)
+1. Los voluntarios ven sus planes en [B1.church](../../b1-church/plans/viewing-plans.md) y en la [aplicación móvil de B1](../../b1-church/plans/viewing-plans.md)
 2. Pueden aceptar o rechazar asignaciones directamente desde cualquiera de las dos plataformas
 3. Pueden registrar fechas de no disponibilidad para las semanas en que no puedan servir
 4. Los planes pueden imprimirse para ensayos o publicarse detrás del escenario
@@ -130,6 +130,6 @@ Su sistema de administración de voluntarios ya está configurado. Cada semana, 
 - [Tareas](../serving/tasks.md) — asignar pendientes a personas o grupos
 - [Flujos de trabajo](../serving/workflows.md) — llevar a las personas por procesos repetibles con disparadores y pasos automatizados
 - [Ver planes (web)](../../b1-church/plans/viewing-plans.md) — cómo los voluntarios ven los planes en línea
-- [Ver planes (móvil)](../../b1-mobile/serving/viewing-plans.md) — cómo los voluntarios ven los planes en el móvil
+- [Ver planes (móvil)](../../b1-church/plans/viewing-plans.md) — cómo los voluntarios ven los planes en el móvil
 - [Inscripción de voluntarios (web)](../../b1-church/serving/volunteer-signup.md) — cómo los miembros eligen puestos de voluntario
-- [Inscripción de voluntarios (móvil)](../../b1-mobile/serving/volunteer-signup.md) — autoinscripción de voluntarios en el móvil
+- [Inscripción de voluntarios (móvil)](../../b1-church/serving/volunteer-signup.md) — autoinscripción de voluntarios en el móvil

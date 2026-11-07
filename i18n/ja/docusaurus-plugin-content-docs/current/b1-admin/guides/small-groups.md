@@ -79,7 +79,7 @@ description: "B1 Admin で小グループ、聖書研究会、奉仕チームを
 
 1. メンバーは[B1.church](../../b1-church/groups/browsing-groups.md)でグループを閲覧し、参加できます
 2. グループメンバーは詳細やカレンダーを確認でき、[会話](../../b1-church/groups/conversations.md)に投稿できます
-3. グループの機能はすべて[B1モバイルアプリ](../../b1-mobile/groups/index.md)でも利用できます
+3. グループの機能はすべて[B1モバイルアプリ](../../b1-church/groups/index.md)でも利用できます
 
 :::info
 メンバーは、ウェブでもモバイルでも、自分のグループ、今後のイベント、グループの会話を確認できます。すべてが常に同期されています。
@@ -98,4 +98,4 @@ description: "B1 Admin で小グループ、聖書研究会、奉仕チームを
 - [キュレーションカレンダー](../calendars/curated-calendar.md) — 統合された教会カレンダーを構築する
 - [グループの閲覧（Web）](../../b1-church/groups/browsing-groups.md) — メンバーがグループを見つける方法
 - [グループの会話（Web）](../../b1-church/groups/conversations.md) — グループでのディスカッション
-- [グループ（モバイル）](../../b1-mobile/groups/index.md) — モバイルアプリでのグループ機能
+- [グループ（モバイル）](../../b1-church/groups/index.md) — モバイルアプリでのグループ機能
